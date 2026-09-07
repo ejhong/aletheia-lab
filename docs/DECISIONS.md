@@ -1694,3 +1694,36 @@ proposal remains in intake history; only the corrected candidate enters the
 prospective edition chain, referencing the unchanged draft assessment. This
 distinguishes the authoring history from published editions without discarding
 the correction. The final candidate is edition-2026-09-07-casting-research-update-v2.
+
+## 2026-09-07 — Test repeated case improvement without interactive authoring
+
+The casting candidate was written interactively. Deep Memory had one real
+Gemini investigation and two Astra editing calls, but a manually corrected
+handoff. Neither demonstrates repeated autonomous improvement. The founder
+requested a proper experiment on that question.
+
+Freeze a two-round protocol, full Birdmen input, incumbent and case history.
+Run the same researcher, source-checking editor and existing edition comparison
+on the resulting state twice. Preserve failures and deferred work; do not rescue
+content interactively or modify prompts between rounds. Retaining a sound
+incumbent is valid. Two rounds can expose a useful cycle or a failure, not prove
+indefinite improvement. See docs/AUTONOMY_EXPERIMENT.md.
+
+The reusable Gemini transport resumes the same recorded task, retains provider
+citations and accounts for usage with an explicitly conservative tariff
+estimate. Astra reconciles the complete report into the existing proposal
+schema, with original-source readings and separate checks, including rendered
+PDF pages. The edition drafter receives the whole research handoff as working
+context; consequential article claims must still resolve to the checked ledger.
+No ledger schema or publication gate changes are part of this experiment.
+
+The founder approved the specific $40–60 experiment request with “spending
+rtequrests approved”. Temporarily enable Lab API calls and raise its daily limit
+to $100, retaining the $150 monthly limit, $30 review reserve and existing holds.
+Inspect the first round's actual usage before launching the second. Restore
+paused calls and the $25 daily limit after completion or a stop. Recurring jobs
+stay disabled. The original Aletheia stays frozen and Lab PR 2 remains separate.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-autonomy-experiment-2026-09-07.
+Protocols: case-research-report-v3, research-report-editing-v1 and
+case-improvement-experiment-v1. No new paid round had started at protocol freeze.

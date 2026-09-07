@@ -102,7 +102,7 @@ type Dependencies = {
 /** Two drafts, one comparison, one durable result. No self-scored saturation,
  * repair loop, commit, push, or implicit permission to publish. */
 export async function draftEdition(root: string, key: string,
-  options: { prepare?: boolean; reconsider?: string; reuseDraftsFrom?: string } = {}, dependencies: Dependencies = {}) {
+  options: { prepare?: boolean; reconsider?: string; reuseDraftsFrom?: string; researchContext?: unknown } = {}, dependencies: Dependencies = {}) {
   const now = dependencies.now ?? (() => new Date().toISOString());
   const progress = dependencies.progress ?? (() => {});
   const plan = editionPlan(root, key, now(), options.reconsider);
@@ -139,6 +139,7 @@ export async function draftEdition(root: string, key: string,
     foundingInputs: loaded.narrativeInputs.map(input => ({ ...input, text: fs.readFileSync(input.file.startsWith("inputs/")
       ? path.join(dir, input.file) : path.resolve(root, input.file), "utf8") })),
     corrections: loaded.history,
+    researchContext: options.researchContext ?? null,
     changes: { changed: Object.keys(recordHashes).filter(k => priorHashes[k] !== recordHashes[k]),
       removed: Object.keys(priorHashes).filter(k => !recordHashes[k]),
       initialComparison: !plan.prior, reconsider: options.reconsider ?? null },
