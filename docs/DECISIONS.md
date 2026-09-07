@@ -1607,3 +1607,20 @@ and review provenance still identify the original repository.
 
 AI operator: GPT-6 (OpenAI Codex); run `codex-lab-separation-2026-09-07`;
 prompt: interactive founder instruction, no versioned pipeline prompt.
+
+## 2026-09-07 — Correct the lab repository and directory spelling
+
+The public lab initially used `alethia-lab`, carrying a spelling error into its
+GitHub Pages URL. The founder reported the expected `aletheia-lab` URL returned
+404 and explicitly requested the local directory be renamed as well. The repo,
+public site, local folder, site metadata and local spending destination now use
+`aletheia-lab`. The repository is renamed in place so its history, spending
+records and settings survive. The original `ejhong/aletheia` remains restored.
+
+This completes the founder-requested separation. Canonical case records and
+assessments are unchanged. Paid automation remains paused and publication
+protection settings remain in place. The unpublished research work continues
+on `experiment/research-prompt` in `/Users/eugene/prj/aletheia-lab`.
+
+AI operator: GPT-6 (OpenAI Codex); run `codex-lab-name-2026-09-07`;
+prompt: interactive founder instruction, no versioned pipeline prompt.
