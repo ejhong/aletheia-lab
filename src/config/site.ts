@@ -16,7 +16,7 @@ export const site = {
    * deployment URL is unknown; previews then fall back to crawler
    * heuristics.
    */
-  url: "https://ejhong.github.io/alethia-lab" as string | null,
+  url: "https://ejhong.github.io/aletheia-lab" as string | null,
   /**
    * The social-card image served to link-preview crawlers (og:image /
    * twitter:card). A 1200×630 crop of house cover art, at
@@ -24,7 +24,7 @@ export const site = {
    */
   ogImage: "/images/og-card.png",
   /** Public repository — the ledger every page derives from. */
-  repoUrl: "https://github.com/ejhong/alethia-lab",
+  repoUrl: "https://github.com/ejhong/aletheia-lab",
   // Set when the RFP is live on ResearchHub; rendered only if non-null.
   researchHubRfpUrl: null as string | null,
   researchHubRfpLabel: "Request for Proposals on ResearchHub",

@@ -1,7 +1,7 @@
 > **Aletheia Lab** is the experimental continuation of [Aletheia](https://ejhong.github.io/aletheia/).
 > The original publication is restored to its version before PR #172. This lab
 > preserves the overhaul and continues research and publishing experiments at
-> [its own site](https://ejhong.github.io/alethia-lab/).
+> [its own site](https://ejhong.github.io/aletheia-lab/).
 >
 > Separated at the founder’s request on 2026-09-07 from original commit
 > `defad8f636d639ea4e47abcb1add56fbaab03c7b`. The original restoration tree is

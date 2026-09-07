@@ -37,7 +37,7 @@ if (command === "set") {
     `$${policy.reviewReserveUsd} of the monthly allowance is reserved for independent review.`, "",
     "| Work | Accounted + held |", "| --- | ---: |",
     ...Object.entries(t.byWorkload).map(([work, amount]) => `| ${work} | ${dollars(amount)} |`), "",
-    `Public receipts: https://github.com/${process.env.GITHUB_REPOSITORY || "ejhong/alethia-lab"}/tree/${BUDGET_BRANCH}/months`,
+    `Public receipts: https://github.com/${process.env.GITHUB_REPOSITORY || "ejhong/aletheia-lab"}/tree/${BUDGET_BRANCH}/months`,
     "Conservative recorded-tariff accounting starts with this integration. Earlier bills, subscriptions, and work outside these repository workers are not included.",
   ].join("\n");
   console.log(args.includes("--json") ? JSON.stringify(report, null, 2) : text);
