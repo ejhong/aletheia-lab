@@ -31,7 +31,7 @@ possible: different motifs need not have the same explanation. Modern copying,
 misidentification, and edited imagery are also possible causes of an apparent
 match and must be checked before interpreting it historically.
 
-## Scope and first pass
+## Scope and case improvement
 
 | Strand | Starting leads | First task |
 | --- | --- | --- |
@@ -40,12 +40,21 @@ match and must be checked before interpreting it historically.
 | Culture-bringer traditions | Proposed correspondences among Oannes, Viracocha, Quetzalcoatl, and other teaching figures | Locate early attestations and distinguish episodes, translations, later retellings, and possible contact histories. |
 | Flood traditions | Proposed shared narrative details and memories of catastrophe | Trace individual versions and their dependencies before comparing them; distinguish shared experience from a shared story. |
 
-Start with the visual material. Prioritize one traceable Pillar 43 comparison
-and the handled-shape question; retain the animal comparisons as leads to
-authenticate. Expand the research front as sources and useful questions
-justify it. Culture-bringer and flood traditions belong in this case but
-receive separate claims and assessments. Their results must not be counted
-twice when they depend on the same source or proposed history.
+The founding question includes all of these strands, as well as the sacred-centre,
+hand-posture and serpent comparisons in the complete Birdmen page saved beside
+this brief. Read that page, including its five study summaries and limitations,
+before deciding what the current case needs. Its linked work is available for
+deeper inspection; a link does not mean that work has already been reviewed.
+
+The founder clarified on 2026-09-07 that an incomplete first account is an
+extreme test of the ordinary update process. The current handful of records
+must not dictate the scope. Investigate the whole question sufficiently to
+orient the reader, then deepen the strands most likely to improve understanding.
+Preserve useful findings, objections and unresolved leads beneath a selective
+edition. Keep the separate source histories of images and stories visible;
+do not count results twice when they depend on the same source or proposed
+history. This supersedes the earlier AI proposal to begin with only two visual
+observations and postpone the rest.
 
 The initial case concerns cultural transmission and memory. A geological
 catastrophe mechanism belongs in the existing YDIH case; construction methods
@@ -84,11 +93,13 @@ and [Enclosure B](https://www.dainst.blog/the-tepe-telegrams/2017/02/03/enclosur
 The latter explicitly leaves the reptile/felid identification open. No
 cross-cultural animal pairing is admitted here on the basis of an image alone.
 
-This is a **question-seeded pilot with an empty evidence ledger**. Its scope
-was informed by earlier work, so it cannot be reported as a blind rediscovery
-of that work. Evaluate whether the system can turn the question into a
-traceable comparison, serious alternatives, a useful next test, and a readable
-first edition. A justified correction or unresolved result counts as progress.
+This began as a **question-seeded pilot** and now has a small, incomplete
+ledger. Its scope was informed by earlier work, so it is not a blind
+rediscovery test. Use the same case-improvement process as a mature case:
+preserve the motivation, investigate omissions and stronger explanations,
+check findings, and produce a substantially better account when warranted.
+A justified correction, useful reconsideration or well-supported decision to
+retain an existing account counts as progress.
 
 ## Reader experience
 

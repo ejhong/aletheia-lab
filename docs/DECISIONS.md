@@ -1624,3 +1624,73 @@ on `experiment/research-prompt` in `/Users/eugene/prj/aletheia-lab`.
 
 AI operator: GPT-6 (OpenAI Codex); run `codex-lab-name-2026-09-07`;
 prompt: interactive founder instruction, no versioned pipeline prompt.
+
+
+## 2026-09-07 — Automate the continuing research conversation
+
+The founder clarified the governing product analogy: ongoing conversations with
+ChatGPT or Claude about new happenings and other analyses, followed by a better
+Substack article. The experiment should automate that research, memory and
+presentation. The mature-case update is the primary test. New cases can begin
+through conversation; an incomplete first account is an extreme of the same
+update process, not a reason to build a separate bootstrap engine.
+
+Test megalithic-casting now and Deep Memory as the sparse case. The complete
+Birdmen homepage is retained as MEM-IN002, including its narrative, captions,
+qualifications and five study summaries. The earlier AI-authored two-object
+scope is superseded. Linked pages, datasets and pixels are not claimed to be
+embedded or verified. Founding inputs remain motivation and prior work, not
+privileged evidence. No case schema change was necessary.
+
+The research prompt (case-research-report-v3) commissions the intellectual work:
+investigation, argument, reconsideration, concrete changes and a useful next
+account. Post-processing preserves the complete report, original input and
+provider citations; checks consequential readings; reconciles records; and
+prepares the edition and assessment for independent review. It does not reduce
+the investigation to filling YAML or collecting a quota of new claims. The
+article can improve while its verdict remains unchanged; an unchanged or worse
+candidate can be retained as research memory without replacing the incumbent.
+
+The shared packet builder now supports a no-spend --prepare command, reports
+record changes against a prior comparable input and saves a complete handoff
+on success. It fails before sending an oversized packet. Unknown old packet
+formats are labeled unknown history, not zero changes. Tests cover full-input
+and citation preservation, preparation without a call or intake mutation,
+record-level changes, unavailable historical packets and oversize rejection.
+
+An interactive source-review rehearsal prepared useful casting and Deep Memory
+ledger deltas and an illustrated casting candidate. It preserves the former
+casting article and original assessment as the first edition, then binds the
+new candidate to its own explicitly unratified AI draft. All four documentary
+plates remain; three secondary leads leave the featured set but remain in the
+ledger. Selected checks and deferred leads are recorded in the existing intake
+memory. The rehearsal is not a new unattended provider trial, a blind benchmark,
+an exhaustive review of the archived chats, or proof of repeated improvement.
+The broader Deep Memory edition remains to be investigated and drafted.
+
+Deep research should become infrequent after diminishing verified returns, with
+new inbox material, an important unresolved question or periodic reconsideration
+providing reasons to return. Provider comparisons and a recurring schedule wait
+for useful results from this workflow. Paid automation remains paused; no
+additional repository model API call was made in this rehearsal. Publication
+checks and the original frozen Aletheia repository are unchanged.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-research-update-2026-09-07;
+prompt: interactive founder instruction. Research prompt protocol:
+case-research-report-v3; selected-content rehearsal: two-case-rehearsal-v1.
+
+Verification and authoring correction: all 374 tests, lint, TypeScript and the
+production export passed; all internal links across 584 pages resolved. The
+casting opening, body and assessment were sampled visually at desktop and phone
+widths, with no emulated-phone horizontal overflow and all plates loaded. Three
+historical test assumptions were corrected: preserve the original import's
+80-record provenance while allowing later additions, keep synthetic independent
+checks free of draft treatment, and assert both broken edition bindings and
+stale assessment reviews. No publication check was relaxed.
+
+Source review removed an incorrect attribution of the surface-treatment
+alternative to the founder's on-record conjecture. The original unpublished
+proposal remains in intake history; only the corrected candidate enters the
+prospective edition chain, referencing the unchanged draft assessment. This
+distinguishes the authoring history from published editions without discarding
+the correction. The final candidate is edition-2026-09-07-casting-research-update-v2.

@@ -652,3 +652,94 @@
     extractedBy: "Fable (AI agent)"
     runId: "editorial-methods-2026-08-22"
     date: "2026-08-22"
+
+- id: GEO-E025
+  title: A small granite-treatment experiment
+  claimIds:
+    - GEO-C101
+  sourceId: SRC-YI-2026
+  direction: supports
+  strength: moderate
+  sourceStatement: A 12-gram granite specimen treated with molten sodium carbonate fractured under
+    subsequent blows from a wooden handle.
+  editorInference: Supports this reported demonstration. It motivates testing assisted quarrying; it
+    does not demonstrate casting, ancient use, a practical quarrying rate or chemical benefit beyond
+    thermal shock.
+  exactLocator: "Methods: Molten sodium carbonate applied to granite; Fig. 8"
+  limitations:
+    - Single small specimen described in this experiment.
+    - No matched heat-only granite comparison is described in the three-experiment design.
+    - Monument-scale energy, throughput and material consumption remain untested here.
+  reviewState: ai_extracted
+  origin:
+    ref: "SRC-YI-2026; Methods: Molten sodium carbonate applied to granite; Fig. 8"
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: GEO-E026
+  title: Identified Queen’s Chamber salt
+  claimIds:
+    - GEO-C102
+  sourceId: SRC-SESSA-2026
+  direction: supports
+  strength: moderate
+  sourceStatement: SEM-EDX and XRD identify halite in the sampled Queen’s Chamber efflorescence.
+  editorInference: Supports the local salt identification. It supplies neither a date for medieval
+    deposits nor a diagnosis of the original block-manufacturing process.
+  exactLocator: "Results: Queen’s chamber, Samples investigation: SEM-EDX and XRD analysis; Figs. 5–7"
+  limitations:
+    - The King’s Chamber upper deposits were not sampled, owing to access and permission limitations.
+    - The finding concerns the examined material, not every pyramid deposit.
+  reviewState: ai_extracted
+  origin:
+    ref: "SRC-SESSA-2026; Results: Queen’s chamber, Samples investigation: SEM-EDX and XRD analysis;
+      Figs. 5–7"
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: GEO-E027
+  title: A non-casting account of surface salts
+  claimIds:
+    - GEO-C506
+  sourceId: SRC-SESSA-2026
+  direction: undermines
+  strength: moderate
+  sourceStatement: The study discusses salt-bearing limestone and moisture-driven accumulation as
+    explanations for the deposits.
+  editorInference: Weakens the comparative assertion that salt of this kind is absent from
+    natural-stone settings. It does not quantify every proposed comparison in GEO-C506 or establish
+    the genesis of every monument block.
+  exactLocator: "Results: Queen’s chamber, paragraphs on the stone matrix, salt sources and accumulation"
+  limitations:
+    - Shares the same study as GEO-E026; no additional independent sample campaign.
+    - A surface conservation explanation does not exclude every possible engineered binder.
+  reviewState: ai_extracted
+  origin:
+    ref: "SRC-SESSA-2026; Results: Queen’s chamber, paragraphs on the stone matrix, salt sources and
+      accumulation"
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: GEO-E028
+  title: An earlier quarry interpretation of the shafts
+  claimIds:
+    - GEO-C006
+  sourceId: SRC-ENGELBACH-1922
+  direction: qualifies
+  strength: moderate
+  sourceStatement: Engelbach interprets holes C and D as granite-quality tests and trench holes as
+    serving quality checks and perimeter layout.
+  editorInference: "Gives a specific quarry-related alternative to a processing-vessel interpretation.
+    Function and cutting technique are different questions: this does not directly refute the
+    biomechanical claim in GEO-C006 or identify every shaft in later photographs."
+  exactLocator: Chapter I, section 6 (Test-shafts), printed p. 6; references to Plate I
+  limitations:
+    - The author states an interpretation, not a directly witnessed ancient use.
+    - His named features must not be silently equated with pits excavated later.
+    - No new dimensional survey or experiment on worker movement was performed.
+  reviewState: ai_extracted
+  origin:
+    ref: SRC-ENGELBACH-1922; Chapter I, section 6 (Test-shafts), printed p. 6; references to Plate I
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07

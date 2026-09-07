@@ -1,0 +1,37 @@
+version: 1
+decisions:
+  - id: fc9b1d7a6d31e5397cd2472691a87a353e00e943bfa89bd710841bbc051f7069
+    case: deep-memory
+    stage: research-adoption
+    decision: prepared
+    source: null
+    proposal: null
+    reason: Prepared and production-loader validated on the experiment branch. Publication still
+      requires independent review.
+    date: 2026-09-07
+    generatedAt: 2026-09-07T13:12:19.357Z
+    runId: prepare-deep-memory-2026-09-07
+    model: Proposal materializer (no model call)
+    promptVersion: two-case-rehearsal-v1
+    inputHash: c3aee8455754f2b578e16fef254e89413a5671667276eb650108a29c82741774
+    candidateHash: c4cedf52e83b9cd31bd929735b017a57080d561e276d56e2a9185974a9c86018
+    ref: proposals/intake/7aa12cb522c53cb7a94a5fb643942dadbf85114c545a1fb3c8ac49b1ac79d8c0.yaml#decisions[0]
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      proposalId: 1ec37ef40e11379123baad9f13fa92fbcb6b6d99461486c7c1b0f3f768163d17
+      recordIds:
+        - SRC-MEM-MET-321437
+        - SRC-MEM-ATAKUMAN-2015
+        - MEM-C003
+        - MEM-C004
+        - MEM-C005
+        - MEM-E001
+        - MEM-E002
+        - MEM-E003
+        - MEM-E004
+        - MEM-E005
+        - MEM-R001
+        - MEM-R002

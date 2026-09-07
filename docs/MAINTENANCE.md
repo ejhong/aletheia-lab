@@ -19,14 +19,38 @@ workflow or `npm run ai:budget -- status`; every paid job reports its allowance.
 Initialize the separate spending branch once with `npm run ai:budget -- init`.
 Local paid runs require `BUDGET_GITHUB_TOKEN` as well as the model key.
 
-Manual case investigation: `node scripts/research-case.ts deep-memory` supplies
-the case and prior work to the configured Deep Research model. The request,
-report, citations/tool output and outcome use `proposals/intake/`; readable local
-copies live in `.research-runs/<runId>/`. This is unverified working material,
-with no automatic adoption or schedule. Inspect the report before selecting
-source readings and proposing changes with Astra. Unchanged or interrupted work
-rests; `--reconsider 'specific reason for another investigation'` records a
-deliberate retry. See the limits and reservation in [AI operating policy](../config/README.md).
+Prepare a case investigation before spending:
+
+```sh
+node scripts/research-case.ts megalithic-casting --prepare
+node scripts/research-case.ts deep-memory --prepare
+```
+
+This writes `request.json` (the exact instructions and complete input) and
+`summary.json` (sizes, included founding texts, record counts and changes since
+the previous comparable report) under `.research-runs/<runId>/`. It performs no
+model call, spending reservation or intake mutation, including when the case
+would otherwise rest. Inspect the entire founding input, not just its title.
+The packet is bounded at 800,000 UTF-8 bytes; oversize fails before sending
+instead of silently cutting off the memory. This is a byte limit, not a price
+estimate or research quota.
+
+Omitting `--prepare` commissions the report through the configured OpenAI
+transport and shared allowance; it rebuilds the brief from the then-current
+state. Its `inputHash` identifies the exact content, so a prior preview can be
+compared. The previous OpenAI trial returned model_not_found for this account;
+preparation success does not establish provider access. Lab paid automation is
+paused. Do not clear unresolved holds or change the allowance to make a trial run.
+
+The paid runner records its request before sending and retains the report,
+citations/tool output and outcome in `proposals/intake/`. Give the editor
+`handoff.json`, which binds the original request and complete response, rather
+than a prose-only copy of `report.md`. Local files remain in the run directory.
+The output is unverified working material with no automatic adoption or schedule.
+Unchanged or interrupted work rests; `--reconsider 'specific reason for another
+investigation'` records a deliberate return, including better reasoning about
+old evidence. Source checks, validated proposals and independent publication
+review still apply. See [AI operating policy](../config/README.md).
 
 Shared source reader (Node 22.18+ and `OPENAI_API_KEY` for paid readings):
 

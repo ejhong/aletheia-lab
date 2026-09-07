@@ -1,0 +1,367 @@
+version: 1
+decisions:
+  - id: 1ec37ef40e11379123baad9f13fa92fbcb6b6d99461486c7c1b0f3f768163d17
+    case: deep-memory
+    stage: research-proposal
+    decision: proposed
+    source: null
+    proposal: null
+    research:
+      version: 1
+      case: deep-memory
+      basis:
+        contentHash: 2636e840471f194cf96ee8d9ad94113c1759b0fbddb25dad990c6c2a0dd76f3e
+        inputsHash: cbe1aa7da731a0c6021371074e9614d4e5a9d71d87dfd7ec6c811ed25d158e4d
+      runId: codex-deep-memory-2026-09-07
+      generatedAt: 2026-09-07T13:11:19.026Z
+      model: GPT-6 (OpenAI Codex; interactive research and source review)
+      promptVersion: two-case-rehearsal-v1
+      intent: correct
+      title: Read the motif comparison in context and open a regional test
+      rationale: Use the corrected saved research as leads, add checked object context and a regional
+        continuity model, correct evidence direction, and retain distinct tests of the inheritance
+        argument.
+      priorDecisionIds: []
+      themeAdditions:
+        assyria: Assyrian imagery
+        regional-continuity: Regional continuity
+      changes:
+        - kind: source
+          recordId: SRC-MEM-MET-321437
+          beforeHash: null
+          after:
+            id: SRC-MEM-MET-321437
+            title: Relief panel
+            authors: []
+            sourceType: artifact_record
+            url: https://www.metmuseum.org/art/collection/search/322614
+            identifier: The Metropolitan Museum of Art, accession 32.143.7
+            verification: ai_verified
+            verificationNote: "Read 2026-09-07 by GPT-6 (OpenAI Codex; interactive research and source review):
+              object 32.143.7, description and Object Information. No human review or independent
+              model verification claimed."
+            reliabilityNotes:
+              - Museum catalogue interpretation; the function and apkallu identification are
+                qualified.
+              - The existing licensed photograph was separately inspected.
+            derivedFrom: []
+            background: false
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: source
+          recordId: SRC-MEM-ATAKUMAN-2015
+          beforeHash: null
+          after:
+            id: SRC-MEM-ATAKUMAN-2015
+            title: "From Monuments to Miniatures: Emergence of Stamps and Related Image-bearing Objects during
+              the Neolithic"
+            authors:
+              - Çiğdem Atakuman
+            year: "2015"
+            sourceType: paper
+            url: https://www.researchgate.net/publication/283782270_From_Monuments_to_Miniatures_Emergence_of_Stamps_and_Related_Image-bearing_Objects_during_the_Neolithic
+            identifier: "Cambridge Archaeological Journal 25(4): 759–788. DOI: 10.1017/S0959774315000396"
+            verification: ai_verified
+            verificationNote: "Read 2026-09-07 by GPT-6 (OpenAI Codex; interactive research and source review):
+              author-posted full text: abstract p. 759; discussion and Fig. 18, pp. 778–779. No
+              human review or independent model verification claimed."
+            reliabilityNotes:
+              - Comparative interpretation, not a demonstrated descent of the specific Pillar 43
+                forms into the Nimrud bucket.
+              - Underlying excavation reports and the illustrated object corpus have not been
+                independently audited in this pass.
+            derivedFrom: []
+            background: false
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: claim
+          recordId: MEM-C003
+          beforeHash: null
+          after:
+            id: MEM-C003
+            tier: catalog
+            statement: Met relief 32.143.7 depicts a winged, eagle-headed figure carrying a bucket and a
+              cone-shaped implement.
+            theme: assyria
+            rung: observation
+            claimType: observation
+            sourceAnchor:
+              sourceId: SRC-MEM-MET-321437
+              locator: Description, figure and implements; complete object photograph
+            independenceGroup: Nimrud relief 32.143.7
+            reviewState: ai_extracted
+            origin:
+              ref: SRC-MEM-MET-321437; Description, figure and implements; complete object photograph
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: claim
+          recordId: MEM-C004
+          beforeHash: null
+          after:
+            id: MEM-C004
+            tier: catalog
+            statement: The Met interprets the paired implements on relief 32.143.7 as serving protective or
+              purifying purposes.
+            theme: assyria
+            rung: mechanism
+            claimType: theory_description
+            sourceAnchor:
+              sourceId: SRC-MEM-MET-321437
+              locator: Description, paragraph discussing the implements
+            independenceGroup: Nimrud relief 32.143.7
+            reviewState: ai_extracted
+            origin:
+              ref: SRC-MEM-MET-321437; Description, paragraph discussing the implements
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: claim
+          recordId: MEM-C005
+          beforeHash: null
+          after:
+            id: MEM-C005
+            tier: catalog
+            statement: Atakuman proposes that Later Neolithic stamp imagery developed through transformations of
+              earlier regional imagery.
+            theme: regional-continuity
+            rung: mechanism
+            claimType: theory_description
+            sourceAnchor:
+              sourceId: SRC-MEM-ATAKUMAN-2015
+              locator: Abstract p. 759; Fig. 18 and discussion pp. 778–779
+            independenceGroup: Atakuman 2015 comparative corpus
+            reviewState: ai_extracted
+            origin:
+              ref: SRC-MEM-ATAKUMAN-2015; Abstract p. 759; Fig. 18 and discussion pp. 778–779
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: evidence
+          recordId: MEM-E001
+          beforeHash: c79b893f097acfd82353395bbff565a56e1eab423b0ad720bfc384c70bd44b09
+          after:
+            id: MEM-E001
+            title: Headless male figure on Pillar 43
+            claimIds:
+              - MEM-C001
+            sourceId: SRC-MEM-F07B22F06CD5
+            direction: supports
+            strength: moderate
+            sourceStatement: Dietrich describes a headless male human figure on the shaft of Pillar 43.
+            editorInference: Supports the bounded descriptive claim. Our existing photograph obscures the lower
+              face and does not independently verify this detail. Meaning and transmission remain
+              open.
+            exactLocator: Main article, paragraph beginning “On the shaft of Pillar 43”.
+            limitations:
+              - Excavation-project commentary by Oliver Dietrich; not a substitute for a full audit
+                of the original excavation publication.
+              - Same object and source as the other Pillar 43 record; not an independent line of
+                transmission evidence.
+              - The lower figure is obscured in the current plate.
+            reviewState: ai_extracted
+            origin:
+              ref: https://www.dainst.blog/the-tepe-telegrams/2016/10/14/of-animals-and-a-headless-man-gobekli-tepe-pillar-43/
+                — html-text-v1, characters 2090–2123 (retrieved text; not a printed-page locator);
+                reread and corrected from original extraction
+                sources-2026-09-06-d1f926e2-9a8f-4b81-a66d-bc45f406561f. Earlier record retained in
+                git and prior intake receipts.
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Correct or extend the existing record after source review; prior wording remains in
+            history.
+          passages: []
+        - kind: evidence
+          recordId: MEM-E002
+          beforeHash: e5c4fe424e2d5b946c3fa0f6301513ae6acef64e40f4ddb6ad46de8221736d5e
+          after:
+            id: MEM-E002
+            title: Upper-register rectangular motifs on Pillar 43
+            claimIds:
+              - MEM-C002
+            sourceId: SRC-MEM-F07B22F06CD5
+            direction: supports
+            strength: moderate
+            sourceStatement: Dietrich describes the three arched rectangular forms and their animal associations
+              at the pillar’s top.
+            editorInference: Supports the bounded descriptive claim. The architectural interpretation discussed
+              in the same account is tentative; the source leaves the meaning open.
+            exactLocator: Main article, paragraph beginning “On the pillars top”.
+            limitations:
+              - Excavation-project commentary by Oliver Dietrich; not a substitute for a full audit
+                of the original excavation publication.
+              - Same object and source as the other Pillar 43 record; not an independent line of
+                transmission evidence.
+              - A tentative interpretation must not be confused with the visible outline.
+            reviewState: ai_extracted
+            origin:
+              ref: https://www.dainst.blog/the-tepe-telegrams/2016/10/14/of-animals-and-a-headless-man-gobekli-tepe-pillar-43/
+                — html-text-v1, characters 2596–2660 (retrieved text; not a printed-page locator);
+                reread and corrected from original extraction
+                sources-2026-09-06-a1cd26a2-7470-47a7-a4a8-483fb780f5f9. Earlier record retained in
+                git and prior intake receipts.
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Correct or extend the existing record after source review; prior wording remains in
+            history.
+          passages: []
+        - kind: evidence
+          recordId: MEM-E003
+          beforeHash: null
+          after:
+            id: MEM-E003
+            title: A carried vessel with a paired implement
+            claimIds:
+              - MEM-C003
+            sourceId: SRC-MEM-MET-321437
+            direction: supports
+            strength: moderate
+            sourceStatement: The catalogue identifies a bucket in the figure’s left hand and a cone in its right.
+            editorInference: The complete plate supports the local pairing. It supplies a comparison object, not
+              a historical connection to Pillar 43.
+            exactLocator: "Object 32.143.7: description, second paragraph; existing plate IMG-MEM-P02"
+            limitations:
+              - Same object as MEM-E004; not independent evidence for transmission.
+              - Local object identification does not establish prehistoric meaning.
+            reviewState: ai_extracted
+            origin:
+              ref: "SRC-MEM-MET-321437; Object 32.143.7: description, second paragraph; existing plate
+                IMG-MEM-P02"
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: evidence
+          recordId: MEM-E004
+          beforeHash: null
+          after:
+            id: MEM-E004
+            title: A qualified local interpretation
+            claimIds:
+              - MEM-C004
+            sourceId: SRC-MEM-MET-321437
+            direction: supports
+            strength: moderate
+            sourceStatement: The museum proposes purification or protection; identification of the figure draws
+              on comparisons with ritual figurines.
+            editorInference: This supports an accurate account of the museum’s interpretation. An established
+              local function would neither demonstrate nor exclude an older history.
+            exactLocator: "Object 32.143.7: description, second paragraph"
+            limitations:
+              - The interpretation is qualified, not an explicit label in the relief’s inscription.
+              - Shares the same object and catalogue as MEM-E003.
+            reviewState: ai_extracted
+            origin:
+              ref: "SRC-MEM-MET-321437; Object 32.143.7: description, second paragraph"
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: evidence
+          recordId: MEM-E005
+          beforeHash: null
+          after:
+            id: MEM-E005
+            title: A regional continuity model with named comparanda
+            claimIds:
+              - MEM-C005
+            sourceId: SRC-MEM-ATAKUMAN-2015
+            direction: supports
+            strength: moderate
+            sourceStatement: The article proposes transformations linking earlier regional imagery to later
+              portable objects; Fig. 18 assembles named examples.
+            editorInference: This makes regional continuity a concrete research lead. Support for the
+              description of this model must not be read as proof that its historical reconstruction
+              is correct.
+            exactLocator: Abstract p. 759; discussion and Fig. 18, pp. 778–779
+            limitations:
+              - A selected comparative corpus; object histories and comparison baselines require an
+                audit.
+              - It does not establish a Pillar 43–Nimrud bucket transmission chain.
+            reviewState: ai_extracted
+            origin:
+              ref: SRC-MEM-ATAKUMAN-2015; Abstract p. 759; discussion and Fig. 18, pp. 778–779
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: research
+          recordId: MEM-R001
+          beforeHash: null
+          after:
+            id: MEM-R001
+            title: Test the proposed motif match with complete objects
+            summary: "Freeze a descriptive feature list before widening the comparison: attachment, internal
+              detail, gestures, repetition and neighboring motifs. Register exact objects, dates,
+              uncertain features and dependence groups. Include plausible non-matches and documented
+              transmission examples; do not score hidden details as absent."
+            claimIds:
+              - MEM-C002
+              - MEM-C003
+              - MEM-C004
+            effortTier: desk
+            track: either
+            informationGain: Distinctive shared relationships with an independently supported chronology would
+              favor transmission; common silhouettes or mismatched contexts would weaken this
+              particular comparison.
+            origin:
+              ref: Interactive proposal after current-ledger and primary-source comparison; no study has been
+                performed.
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: research
+          recordId: MEM-R002
+          beforeHash: null
+          after:
+            id: MEM-R002
+            title: Audit the regional route from monuments to portable images
+            summary: Trace the named examples in Atakuman 2015, especially Fig. 18, to their excavation reports
+              and object records. Check dates, contexts and disputed identifications; compare the
+              proposed transformations with plausible alternatives. Record chronological gaps
+              explicitly before asking whether the route extends to Assyrian imagery.
+            claimIds:
+              - MEM-C002
+              - MEM-C003
+              - MEM-C005
+            effortTier: desk
+            track: either
+            informationGain: A supported regional sequence could make inheritance a historical explanation.
+              Broken identifications, inconsistent dates or equally good unrelated matches would
+              weaken that route without settling all motif traditions.
+            origin:
+              ref: Interactive proposal after current-ledger and primary-source comparison; no study has been
+                performed.
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+    reason: Use the corrected saved research as leads, add checked object context and a regional
+      continuity model, correct evidence direction, and retain distinct tests of the inheritance
+      argument.
+    date: 2026-09-07
+    generatedAt: 2026-09-07T13:11:19.026Z
+    runId: codex-deep-memory-2026-09-07
+    model: GPT-6 (OpenAI Codex; interactive research and source review)
+    promptVersion: two-case-rehearsal-v1
+    inputHash: c3aee8455754f2b578e16fef254e89413a5671667276eb650108a29c82741774
+    candidateHash: c4cedf52e83b9cd31bd929735b017a57080d561e276d56e2a9185974a9c86018
+    ref: null
+    caseBasis: 2636e840471f194cf96ee8d9ad94113c1759b0fbddb25dad990c6c2a0dd76f3e
+    recordId: null
+    matchMethod: null
+    retryable: false

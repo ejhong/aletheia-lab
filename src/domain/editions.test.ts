@@ -53,6 +53,9 @@ function reviewedCase() {
     model: `${seat} (Vendor-${seat})`,
     runId: `check-${seat}`,
     review: receipt(draft, loaded.contentHash, loaded.reviewPacketHash),
+    // Independent checks carry verdicts, never the drafter's editorial treatment.
+    claimAssessments: draft.claimAssessments.map(({ claimId, verdict, reasoning, confidence }) =>
+      ({ claimId, verdict, reasoning, confidence })),
   }));
   return { ...loaded, assessmentRuns: [draft, ...checks] };
 }
@@ -145,6 +148,12 @@ describe("edition review receipts", () => {
         synthesis: "A changed argument. ".repeat(10),
       },
     };
+    const edition = loaded.editions.at(-1);
+    if (edition?.assessment) {
+      // A broken binding is rejected before concurrence is even considered.
+      expect(() => ratification(loaded)).toThrow(/missing or changed edition assessment/);
+      edition.assessment.hash = assessmentHash(loaded.assessmentRuns[0]);
+    }
     expect(ratification(loaded)?.panel).toBe(0);
   });
 

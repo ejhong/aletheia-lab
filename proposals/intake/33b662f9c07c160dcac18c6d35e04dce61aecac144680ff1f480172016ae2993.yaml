@@ -1,0 +1,351 @@
+version: 1
+decisions:
+  - id: bb49869200c1b84758ec842b8edaf76be966889339c33104dfa1cd6e0de9c763
+    case: megalithic-casting
+    stage: research-proposal
+    decision: proposed
+    source: null
+    proposal: null
+    research:
+      version: 1
+      case: megalithic-casting
+      basis:
+        contentHash: a2214dcaf68254176a2a56c079be5e2082694b682d79d206e556a8086fda2be2
+        inputsHash: 4704c60223e357cdb346d067c0c097c623200ecd96a710ea56734882e0a933cd
+      runId: codex-megalithic-casting-2026-09-07
+      generatedAt: 2026-09-07T13:12:19.357Z
+      model: GPT-6 (OpenAI Codex; interactive research and source review)
+      promptVersion: two-case-rehearsal-v1
+      intent: correct
+      title: Separate assisted carving, surface salts and whole-block casting
+      rationale: Selected saved-chat leads yield one narrow feasibility result, one salt finding with a
+        corrected scope, and a useful rereading of an existing source. Update the research agenda in
+        both directions without importing the chats as evidence.
+      priorDecisionIds: []
+      themeAdditions: {}
+      changes:
+        - kind: source
+          recordId: SRC-YI-2026
+          beforeHash: null
+          after:
+            id: SRC-YI-2026
+            title: Feasibility of cracking granite with molten sodium carbonate as a mining technique in ancient
+              egypt
+            authors:
+              - Xiang Yi
+            year: "2026"
+            sourceType: paper
+            url: https://www.nature.com/articles/s40494-026-02315-y
+            identifier: "npj Heritage Science 14, 51. DOI: 10.1038/s40494-026-02315-y"
+            verification: ai_verified
+            verificationNote: "Read 2026-09-07 by GPT-6 (OpenAI Codex; interactive research and source review):
+              Methods, third experiment; Fig. 8; Results and Discussion. No human review or
+              independent model verification claimed."
+            reliabilityNotes:
+              - Small laboratory demonstration; neither historical use nor whole-block casting
+                follows.
+              - The proposed inscription and mural readings were not independently verified and are
+                not adopted here.
+              - A matched heat-only comparator is not described among the three experiments.
+            derivedFrom: []
+            background: false
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: source
+          recordId: SRC-SESSA-2026
+          beforeHash: null
+          after:
+            id: SRC-SESSA-2026
+            title: "Material characterization of stone surfaces in the inner chambers of the Khufu (Cheops)
+              Pyramid: towards informed conservation strategies"
+            authors:
+              - Clarimma Sessa
+              - Randa Deraz
+              - Olga Popovych
+              - Mehdi Tayoubi
+              - Mohamed Elkarmoty
+              - Hany Helal
+              - Christian U. Grosse
+            year: "2026"
+            sourceType: paper
+            url: https://www.nature.com/articles/s41598-026-48805-8
+            identifier: "Scientific Reports 16, 12586. DOI: 10.1038/s41598-026-48805-8"
+            verification: ai_verified
+            verificationNote: "Read 2026-09-07 by GPT-6 (OpenAI Codex; interactive research and source review):
+              Results: Queen’s chamber, Samples investigation (SEM-EDX and XRD); King’s chamber,
+              sampling limitation. No human review or independent model verification claimed."
+            reliabilityNotes:
+              - Conservation study of particular surfaces and samples; not a blinded casting test.
+              - The upper King’s Chamber efflorescence was explicitly not sampled.
+            derivedFrom: []
+            background: false
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: source
+          recordId: SRC-ENGELBACH-1922
+          beforeHash: 544b883c0f17dca3f4f3c44501cb402afd75370aa16728f701a8d729d537ecbd
+          after:
+            id: SRC-ENGELBACH-1922
+            title: "The Aswan Obelisk: With Some Remarks on the Ancient Engineering"
+            authors:
+              - Engelbach, R.
+            year: "1922"
+            sourceType: book
+            identifier: "Cairo: Imprimerie de l'Institut Français d'Archéologie Orientale, pp. 1–47"
+            verification: ai_verified
+            verificationNote: "Companion volume: Engelbach (1923), The Problem of the Obelisks, London: T. F.
+              Unwin — the more commonly read expanded version, full text on Internet Archive and
+              Project Gutenberg. Many later citations conflate the two. Additional reading
+              2026-09-07 by GPT-6 (OpenAI Codex; interactive research and source review): Project
+              Gutenberg transcription of chapter I, section 6, printed page 6. Test-shaft functions
+              are Engelbach’s interpretation; no new field survey claimed."
+            reliabilityNotes:
+              - The foundational source of the pounding-stone orthodoxy.
+              - "Methodologically thin by modern standards: one self-conducted 1-hour trial and
+                heuristic workforce estimates."
+              - Section 6 adds an already-published quarry interpretation; it does not measure the
+                worker’s movement in GEO-C006.
+            derivedFrom: []
+            background: false
+            url: https://www.gutenberg.org/files/59320/59320-h/59320-h.htm
+          rationale: Correct or extend the existing record after source review; prior wording remains in
+            history.
+          passages: []
+        - kind: claim
+          recordId: GEO-C101
+          beforeHash: null
+          after:
+            id: GEO-C101
+            tier: catalog
+            statement: Yi reports fragmentation of a small granite specimen following molten sodium carbonate
+              treatment and blows from a wooden handle.
+            theme: replication
+            rung: observation
+            claimType: measurement
+            sourceAnchor:
+              sourceId: SRC-YI-2026
+              locator: "Methods: Molten sodium carbonate applied to granite; Fig. 8"
+            independenceGroup: Yi 2026 granite experiments
+            reviewState: ai_extracted
+            origin:
+              ref: "SRC-YI-2026; Methods: Molten sodium carbonate applied to granite; Fig. 8"
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: claim
+          recordId: GEO-C102
+          beforeHash: null
+          after:
+            id: GEO-C102
+            tier: catalog
+            statement: Halite was identified as the principal efflorescence phase in examined Queen’s Chamber
+              material from the Khufu Pyramid.
+            theme: materials-evidence
+            rung: observation
+            claimType: measurement
+            sourceAnchor:
+              sourceId: SRC-SESSA-2026
+              locator: "Results: Queen’s chamber, Samples investigation: SEM-EDX and XRD analysis; Figs. 5–7"
+            independenceGroup: ScanPyramids 2026 chamber surface campaign
+            reviewState: ai_extracted
+            origin:
+              ref: "SRC-SESSA-2026; Results: Queen’s chamber, Samples investigation: SEM-EDX and XRD analysis;
+                Figs. 5–7"
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: evidence
+          recordId: GEO-E025
+          beforeHash: null
+          after:
+            id: GEO-E025
+            title: A small granite-treatment experiment
+            claimIds:
+              - GEO-C101
+            sourceId: SRC-YI-2026
+            direction: supports
+            strength: moderate
+            sourceStatement: A 12-gram granite specimen treated with molten sodium carbonate fractured under
+              subsequent blows from a wooden handle.
+            editorInference: Supports this reported demonstration. It motivates testing assisted quarrying; it
+              does not demonstrate casting, ancient use, a practical quarrying rate or chemical
+              benefit beyond thermal shock.
+            exactLocator: "Methods: Molten sodium carbonate applied to granite; Fig. 8"
+            limitations:
+              - Single small specimen described in this experiment.
+              - No matched heat-only granite comparison is described in the three-experiment design.
+              - Monument-scale energy, throughput and material consumption remain untested here.
+            reviewState: ai_extracted
+            origin:
+              ref: "SRC-YI-2026; Methods: Molten sodium carbonate applied to granite; Fig. 8"
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: evidence
+          recordId: GEO-E026
+          beforeHash: null
+          after:
+            id: GEO-E026
+            title: Identified Queen’s Chamber salt
+            claimIds:
+              - GEO-C102
+            sourceId: SRC-SESSA-2026
+            direction: supports
+            strength: moderate
+            sourceStatement: SEM-EDX and XRD identify halite in the sampled Queen’s Chamber efflorescence.
+            editorInference: Supports the local salt identification. It supplies neither a date for medieval
+              deposits nor a diagnosis of the original block-manufacturing process.
+            exactLocator: "Results: Queen’s chamber, Samples investigation: SEM-EDX and XRD analysis; Figs. 5–7"
+            limitations:
+              - The King’s Chamber upper deposits were not sampled, owing to access and permission
+                limitations.
+              - The finding concerns the examined material, not every pyramid deposit.
+            reviewState: ai_extracted
+            origin:
+              ref: "SRC-SESSA-2026; Results: Queen’s chamber, Samples investigation: SEM-EDX and XRD analysis;
+                Figs. 5–7"
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: evidence
+          recordId: GEO-E027
+          beforeHash: null
+          after:
+            id: GEO-E027
+            title: A non-casting account of surface salts
+            claimIds:
+              - GEO-C506
+            sourceId: SRC-SESSA-2026
+            direction: undermines
+            strength: moderate
+            sourceStatement: The study discusses salt-bearing limestone and moisture-driven accumulation as
+              explanations for the deposits.
+            editorInference: Weakens the comparative assertion that salt of this kind is absent from
+              natural-stone settings. It does not quantify every proposed comparison in GEO-C506 or
+              establish the genesis of every monument block.
+            exactLocator: "Results: Queen’s chamber, paragraphs on the stone matrix, salt sources and
+              accumulation"
+            limitations:
+              - Shares the same study as GEO-E026; no additional independent sample campaign.
+              - A surface conservation explanation does not exclude every possible engineered binder.
+            reviewState: ai_extracted
+            origin:
+              ref: "SRC-SESSA-2026; Results: Queen’s chamber, paragraphs on the stone matrix, salt sources and
+                accumulation"
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: evidence
+          recordId: GEO-E028
+          beforeHash: null
+          after:
+            id: GEO-E028
+            title: An earlier quarry interpretation of the shafts
+            claimIds:
+              - GEO-C006
+            sourceId: SRC-ENGELBACH-1922
+            direction: qualifies
+            strength: moderate
+            sourceStatement: Engelbach interprets holes C and D as granite-quality tests and trench holes as
+              serving quality checks and perimeter layout.
+            editorInference: "Gives a specific quarry-related alternative to a processing-vessel interpretation.
+              Function and cutting technique are different questions: this does not directly refute
+              the biomechanical claim in GEO-C006 or identify every shaft in later photographs."
+            exactLocator: Chapter I, section 6 (Test-shafts), printed p. 6; references to Plate I
+            limitations:
+              - The author states an interpretation, not a directly witnessed ancient use.
+              - His named features must not be silently equated with pits excavated later.
+              - No new dimensional survey or experiment on worker movement was performed.
+            reviewState: ai_extracted
+            origin:
+              ref: SRC-ENGELBACH-1922; Chapter I, section 6 (Test-shafts), printed p. 6; references to Plate I
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+        - kind: research
+          recordId: GEO-R004
+          beforeHash: 739cb73c114094085065bc0f1c83adbf40dbd2e13759aeb77750695f4700286a
+          after:
+            id: GEO-R004
+            title: Field-test UV fluorescence and efflorescence as cast-stone diagnostics
+            summary: Test UV fluorescence and efflorescence against prespecified criteria using matched natural
+              rock, known artificial binders, ancient mortar, altered surfaces and restoration
+              materials. Identify the mineral phase and sampling depth before treating a salt signal
+              as a casting diagnostic. Use the Queen’s Chamber conservation findings as a warning
+              against extrapolating an elemental signal or a surface deposit to an entire block.
+            claimIds:
+              - GEO-C020
+              - GEO-C021
+              - GEO-C022
+              - GEO-C506
+              - GEO-C102
+            rfpTopicRef: T-091/T-092
+            track: small_grant
+            effortTier: field
+            informationGain: If the diagnostic works on known-cast versus natural test panels, it becomes a
+              scalable field screen for every disputed site; if it fails, a popular class of surface
+              arguments loses standing.
+            origin:
+              ref: GEO-R004 reconsidered after source-checked surface evidence; previous wording and provenance
+                preserved in git. No frozen study criteria changed.
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Correct or extend the existing record after source review; prior wording remains in
+            history.
+          passages: []
+        - kind: research
+          recordId: GEO-R009
+          beforeHash: null
+          after:
+            id: GEO-R009
+            title: Separate chemical assistance from thermal shock in granite working
+            summary: Replicate the reported treatment on matched granite specimens with carbonate-plus-heat,
+              matched heat-only, mechanical and untreated controls. Prespecify removal-rate, energy,
+              reagent-consumption and microstructural measurements; assess repeatability before
+              scaling. This is a proposed protocol, not a performed or funded study.
+            claimIds:
+              - GEO-C101
+              - GEO-C509
+              - GEO-C010
+            effortTier: lab
+            track: either
+            informationGain: A repeatable advantage over matched thermal treatment would strengthen
+              chemical-assistance feasibility. No advantage would narrow the explanation to heating
+              or mechanical effects; neither result alone establishes ancient use or whole-block
+              casting.
+            origin:
+              ref: Interactive proposal after current-ledger and primary-source comparison; no study has been
+                performed.
+              extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+              runId: codex-two-case-2026-09-07
+              date: 2026-09-07
+          rationale: Add a bounded source-anchored record from the selected research lead.
+          passages: []
+    reason: Selected saved-chat leads yield one narrow feasibility result, one salt finding with a
+      corrected scope, and a useful rereading of an existing source. Update the research agenda in
+      both directions without importing the chats as evidence.
+    date: 2026-09-07
+    generatedAt: 2026-09-07T13:12:19.357Z
+    runId: codex-megalithic-casting-2026-09-07
+    model: GPT-6 (OpenAI Codex; interactive research and source review)
+    promptVersion: two-case-rehearsal-v1
+    inputHash: 8d4cecd9289fc5e98655f096d181898956249757abda2079a0dc846c8e6e30fa
+    candidateHash: 6b3054d1ba5919ab956ca35ac126a9f96d40be7fa14de0b749d81dc1c4d3fb83
+    ref: null
+    caseBasis: a2214dcaf68254176a2a56c079be5e2082694b682d79d206e556a8086fda2be2
+    recordId: null
+    matchMethod: null
+    retryable: false

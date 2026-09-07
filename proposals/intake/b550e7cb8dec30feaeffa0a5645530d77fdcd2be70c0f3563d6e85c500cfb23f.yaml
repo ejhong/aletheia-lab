@@ -1,0 +1,104 @@
+version: 1
+decisions:
+  - id: ff80935145949014a7bc1c375a943cd2f1d5633634bbfc90ede99591491bcd57
+    case: deep-memory
+    stage: research-run
+    decision: completed
+    source: null
+    proposal: null
+    reason: Preserve the useful changes, corrections and deferred leads from an interactive rehearsal.
+      No new repository model API call or independent ratification is represented.
+    date: 2026-09-07
+    generatedAt: 2026-09-07T15:40:47.062Z
+    runId: codex-research-rehearsal-2026-09-07-deep-memory
+    model: GPT-6 (OpenAI Codex; interactive research rehearsal)
+    promptVersion: two-case-rehearsal-v1
+    inputHash: null
+    candidateHash: null
+    ref: null
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      kind: interactive-research-rehearsal
+      outcomes:
+        - topic: Assyrian relief and regional continuity
+          outcome: proposed
+          recordIds:
+            - MEM-C003
+            - MEM-C004
+            - MEM-C005
+            - MEM-E003
+            - MEM-E004
+            - MEM-E005
+          reason: The Met object description and Atakuman’s regional model add useful material. The museum’s
+            inscription description does not explain the implements; local function does not prove
+            independent origin. Atakuman’s proposed regional sequence is not an established
+            worldwide chain.
+          sources:
+            - title: Met, object 32.143.7
+              url: https://www.metmuseum.org/art/collection/search/322614
+              locator: Object description and Standard Inscription discussion
+              access: Museum page and existing photographic plate inspected.
+            - title: Atakuman, From Monuments to Miniatures (2015)
+              url: https://www.researchgate.net/publication/283782270_From_Monuments_to_Miniatures_Emergence_of_Stamps_and_Related_Image-bearing_Objects_during_the_Neolithic
+              locator: Abstract p. 759; discussion pp. 778–779, Fig. 18 caption
+              access: Selected full-text passages and caption read; underlying comparative figures and cited
+                excavations not exhaustively audited.
+          reconsiderWhen: Check the actual intermediate objects and alternative chronologies; do not repeat
+            either the universal-origin claim or a universal independent-invention rebuttal.
+        - topic: Culture-bringer texts
+          outcome: deferred
+          reason: Focused source checks found real teaching and water-related correspondences, alongside
+            different protagonists and event orders. These are useful leads for the broad case, not
+            yet adopted records. The work used a delegated GPT-6 research lane, with coordinating
+            checks of Berossus, Sarmiento and Cobo; this is not independent ratification.
+          sources:
+            - title: Berossus through Eusebius, Chronicle I; Bedrosian translation (2008)
+              url: https://www.tertullian.org/fathers/eusebius_chronicon_02_text.htm
+              locator: Sections 4 and 7
+              access: "Text read: Oannes teaches before the later Xisuthrus flood; identifying the preserved books
+                specifically as Oannes’ is bracketed editorial speculation."
+            - title: Sarmiento, History of the Incas (1572), Markham translation (1907)
+              url: https://www.gutenberg.org/cache/epub/20218/pg20218-images.html
+              locator: Chapters VI–VII
+              access: "Text checked: sea departure and future messengers, not a personal-return promise in that
+                passage."
+            - title: Sahagún and Nahua collaborators, Historia general, Book III
+              url: https://www.biblioteca-antologica.org/es/wp-content/uploads/2018/05/SAHAG%C3%9AN-Historia-General-de-la-Nueva-Espa%C3%B1a-I.pdf
+              locator: Chapters III, XIII–XIV; transcription PDF pp. 148, 156–157
+              access: Delegated Spanish-text reading found named crafts and a serpent raft; manuscript images and
+                Nahuatl column not collated.
+            - title: Cieza de León, Crónica del Perú II
+              url: https://www.biblioteca-antologica.org/es/wp-content/uploads/2018/03/CIEZA-DE-LE%C3%93N-Cr%C3%B3nica-del-Per%C3%BA-II.pdf
+              locator: Chapter V; transcription PDF pp. 10–11
+              access: Delegated text reading flags a transition between two similar figures; do not merge their
+                biographies without explanation.
+            - title: Simón, Noticias historiales, later-print OCR
+              url: https://es.scribd.com/document/742918093/Simon-Fray-Pedro-Noticias-Historiales-v-2-2
+              locator: Part II, cuarta noticia, chapters III–IV, printed pp. 284–290
+              access: Delegated OCR reading only; teacher names differ from the explicitly named flood-reliever
+                Bochica. Scan and reprint identity still need checking.
+            - title: Cobo Betancourt, The Coming of the Kingdom (2024)
+              url: https://www.cambridge.org/core/books/coming-of-the-kingdom/muisca-and-the-problem-of-religion/C9B94ED1332E127F99456B03D36962C9
+              locator: Chapter 1, footnotes 115 and 172
+              access: "Footnote 172 checked: colonial analysis allows earlier Indigenous memory; it does not
+                establish blanket fabrication. Underlying archive folios not inspected."
+          reconsiderWhen: Extract a bounded set of source-specific claims, compare actual event sequences, and
+            include independent witnesses and counterexamples before making a shared-origin
+            inference.
+        - topic: Full founding question and remaining strands
+          outcome: deferred
+          reason: The earlier two-object essay is not a comprehensive account of Deep Memory. The complete
+            Birdmen page is now input MEM-IN002. Bird-person imagery beyond the existing objects,
+            pigs/reptiles, hand postures, sacred centres, serpents and flood traditions still need
+            substantive coverage. The five study summaries are prior exploratory work, not
+            independently verified ledger findings.
+          sources:
+            - inputs/birdmen-page.html
+            - inputs/founding-question.md
+          reconsiderWhen: The same update process should reconstruct the incomplete account across this scope.
+            No separate bootstrap engine or new schema is required.
+      scope: Selected primary-source checks and a proposed casting edition; not an exhaustive report or
+        provider comparison.

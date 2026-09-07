@@ -1588,3 +1588,39 @@
     extractedBy: "Fable (AI agent)"
     runId: "geo-catalog-import-2026-08-22"
     date: "2026-08-22"
+
+- id: GEO-C101
+  tier: catalog
+  statement: Yi reports fragmentation of a small granite specimen following molten sodium carbonate
+    treatment and blows from a wooden handle.
+  theme: replication
+  rung: observation
+  claimType: measurement
+  sourceAnchor:
+    sourceId: SRC-YI-2026
+    locator: "Methods: Molten sodium carbonate applied to granite; Fig. 8"
+  independenceGroup: Yi 2026 granite experiments
+  reviewState: ai_extracted
+  origin:
+    ref: "SRC-YI-2026; Methods: Molten sodium carbonate applied to granite; Fig. 8"
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: GEO-C102
+  tier: catalog
+  statement: Halite was identified as the principal efflorescence phase in examined Queen’s Chamber
+    material from the Khufu Pyramid.
+  theme: materials-evidence
+  rung: observation
+  claimType: measurement
+  sourceAnchor:
+    sourceId: SRC-SESSA-2026
+    locator: "Results: Queen’s chamber, Samples investigation: SEM-EDX and XRD analysis; Figs. 5–7"
+  independenceGroup: ScanPyramids 2026 chamber surface campaign
+  reviewState: ai_extracted
+  origin:
+    ref: "SRC-SESSA-2026; Results: Queen’s chamber, Samples investigation: SEM-EDX and XRD analysis;
+      Figs. 5–7"
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07

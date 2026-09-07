@@ -1,0 +1,31 @@
+version: 1
+decisions:
+  - id: d2b8f60bcc4f67412d17eb826c788ea3e84fe76a84cb36e6f8f05122bf3b4683
+    case: megalithic-casting
+    stage: research-run
+    decision: completed
+    source: null
+    proposal: null
+    reason: Corrected an inaccurate attribution during review of an unpublished candidate.
+    date: 2026-09-07
+    generatedAt: 2026-09-07T16:59:29.081Z
+    runId: codex-casting-attribution-correction-2026-09-07
+    model: GPT-6 (OpenAI Codex; interactive research and editing)
+    promptVersion: two-case-rehearsal-v1
+    inputHash: null
+    candidateHash: null
+    ref: null
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      kind: interactive-editorial-correction
+      outcomes:
+        - topic: Founder conjecture GEO-J001
+          outcome: corrected
+          reason: The recorded conjecture is about artificial casting. It does not specifically assert
+            selective joint treatment; do not repeat that attribution from prior conversation
+            summaries.
+          source: content/cases/geopolymer/conjectures.yaml
+          supersededProposal: proposals/intake/6bc7d4fa045d521443eeb7608f0458a94b6a964b6b7c828e5cdab34bcb946f3b.yaml

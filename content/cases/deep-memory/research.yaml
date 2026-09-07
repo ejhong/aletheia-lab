@@ -1,1 +1,45 @@
-[]
+- id: MEM-R001
+  title: Test the proposed motif match with complete objects
+  summary: "Freeze a descriptive feature list before widening the comparison:
+    attachment, internal detail, gestures, repetition and neighboring motifs.
+    Register exact objects, dates, uncertain features and dependence groups.
+    Include plausible non-matches and documented transmission examples; do not
+    score hidden details as absent."
+  claimIds:
+    - MEM-C002
+    - MEM-C003
+    - MEM-C004
+  effortTier: desk
+  track: either
+  informationGain: Distinctive shared relationships with an independently
+    supported chronology would favor transmission; common silhouettes or
+    mismatched contexts would weaken this particular comparison.
+  origin:
+    ref: Interactive proposal after current-ledger and primary-source comparison; no
+      study has been performed.
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: MEM-R002
+  title: Audit the regional route from monuments to portable images
+  summary: Trace the named examples in Atakuman 2015, especially Fig. 18, to their
+    excavation reports and object records. Check dates, contexts and disputed
+    identifications; compare the proposed transformations with plausible
+    alternatives. Record chronological gaps explicitly before asking whether the
+    route extends to Assyrian imagery.
+  claimIds:
+    - MEM-C002
+    - MEM-C003
+    - MEM-C005
+  effortTier: desk
+  track: either
+  informationGain: A supported regional sequence could make inheritance a
+    historical explanation. Broken identifications, inconsistent dates or
+    equally good unrelated matches would weaken that route without settling all
+    motif traditions.
+  origin:
+    ref: Interactive proposal after current-ledger and primary-source comparison; no
+      study has been performed.
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
