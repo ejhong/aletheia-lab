@@ -17,6 +17,7 @@ import { callWithRefusalFallback, pickProvider, parseJsonReply } from "./llm.mjs
 import { VENDORS, callVendor } from "./vendors.mjs";
 import { appendCaseHistory, installCaseFiles } from "./case-files.ts";
 import { COMPARE_SYSTEM, DRAFT_SYSTEM } from "./edition-prompts.ts";
+import { editorialModelPacket } from "./case-research.ts";
 
 const modes = ["revision", "recomposition"] as const;
 const labels = ["A", "B", "C"] as const;
@@ -160,9 +161,9 @@ export async function draftEdition(root: string, key: string,
   }
   for (const option of options.reuseDraftsFrom ? [] : modes) {
     assertCurrent();
-    const user = JSON.stringify({ ...packet, task: option === "revision"
+    const user = JSON.stringify(editorialModelPacket({ ...packet, task: option === "revision"
       ? "Make a focused revision. Preserve what works; reconsider assessments and relevant passages against changed inputs."
-      : "Compose a fresh alternative from the same evidence. Improve the structure, selection and explanation where warranted." });
+      : "Compose a fresh alternative from the same evidence. Improve the structure, selection and explanation where warranted." }));
     const inputHash = fingerprint({ system: DRAFT_SYSTEM, user });
     let model = provider?.model ?? "Injected test author";
     let reply: string | null = null;
@@ -204,9 +205,9 @@ export async function draftEdition(root: string, key: string,
       }
       const { incumbent: ignored, previousDecision: priorIgnored, ...reference } = packet;
       void ignored; void priorIgnored;
-      const user = JSON.stringify({ ...reference, incumbentLabel: labels[order.indexOf("incumbent")],
+      const user = JSON.stringify(editorialModelPacket({ ...reference, incumbentLabel: labels[order.indexOf("incumbent")],
         options: Object.fromEntries(order.map((option, i) => [labels[i], option === "incumbent" ? incumbentView
-          : interpretation(drafts.find(d => d.option === option)!.proposal!)])) });
+          : interpretation(drafts.find(d => d.option === option)!.proposal!)])) }));
       const inputHash = fingerprint({ system: COMPARE_SYSTEM, user });
       const base = { vendor, model: config.model, effort: config.effort, order, inputHash };
       let reply: string | null = null;

@@ -13,7 +13,7 @@ import { researchBasis, resolveResearchCase, recordResearchProposal, validateRes
 import { appendCaseHistory, installCaseFiles } from "./case-files.ts";
 import { readCaseSnapshot } from "./case-snapshot.mjs";
 import { readIntakeDecisions, writeIntakeDecisions } from "./intake-store.mjs";
-import { caseResearchInput } from "./case-research.ts";
+import { caseResearchInput, ResearchHandoffSchema, editorialModelPacket } from "./case-research.ts";
 
 export const REPORT_EDITING_PROTOCOL = "research-report-editing-v1";
 const SYSTEM = fs.readFileSync(new URL("../prompts/research-editing.md", import.meta.url), "utf8");
@@ -37,6 +37,9 @@ export const ReconciliationSchema = z.strictObject({
   })).max(6),
 });
 const SourceReviewSchema = z.strictObject({
+  // Some models repeat the supplied JSON Schema dialect declaration. It is
+  // inert metadata; all record IDs and substantive findings remain mandatory.
+  $schema: z.literal("https://json-schema.org/draft/2020-12/schema").optional(),
   findings: z.array(z.strictObject({ recordId: text, supported: z.boolean(),
     contextPreserved: z.boolean(), inferenceSeparated: z.boolean(), independenceHandled: z.boolean(),
     quoteSupported: z.boolean(), locatorSupported: z.boolean(), reason: text })),
@@ -46,11 +49,6 @@ type Bundle = z.infer<typeof ReconciliationSchema>["bundles"][number];
 type Response = Awaited<ReturnType<typeof openaiResponse>>;
 type Documents = NonNullable<Parameters<typeof openaiResponse>[2]>["documents"];
 type Completion = (system: string, input: string, options: { model: string; documents?: Documents; context: { case: string; runId: string; phase: string } }) => Promise<Response>;
-const Handoff = z.object({ verification: z.literal("unverified working report"),
-  request: z.object({ case: text, runId: text, caseBasis: text, inputHash: text,
-    input: z.string().min(1), instructions: z.string().min(1) }).passthrough(),
-  response: z.object({ model: text, text: z.string().min(1), citations: z.array(z.unknown()) }).passthrough(),
-}).passthrough();
 class InterruptedModelStep extends Error {}
 
 /** Save the exact complete request before sending. Replaying a completed step
@@ -58,7 +56,7 @@ class InterruptedModelStep extends Error {}
 export async function recordedModelStep(directory: string, name: string, system: string, packet: unknown,
   options: Parameters<Completion>[2], complete: Completion = openaiResponse) {
   if (!/^[a-zA-Z0-9-]+$/.test(name)) throw new Error("unsafe editor step name");
-  const input = JSON.stringify(packet);
+  const input = JSON.stringify(editorialModelPacket(packet));
   if (Buffer.byteLength(input + system) > 2000000) throw new Error("Complete editing packet exceeds 2 MB; no truncation or call");
   const request = { system, input, options };
   const requestFile = path.join(directory, `${name}-request.json`);
@@ -76,6 +74,27 @@ export async function recordedModelStep(directory: string, name: string, system:
   catch (error) { throw new InterruptedModelStep(error instanceof Error ? error.message : "Model step interrupted"); }
   fs.writeFileSync(responseFile, JSON.stringify(response, null, 2), { flag: "wx" });
   return response;
+}
+
+/** Explicit recovery of a completed call, never a retry of an unknown one.
+ * The original exact request and response remain authoritative. Only duplicate
+ * provider envelopes and accounting context may differ from the new request. */
+export function replayCompletedModelStep(directory: string, name: string, system: string,
+  input: string, options: Parameters<Completion>[2]): Response {
+  if (!["commission", "reconcile"].includes(name)) throw new Error("Only completed report planning and reconciliation can be replayed");
+  const file = path.join(directory, `${name}-request.json`);
+  const original = JSON.parse(fs.readFileSync(file, "utf8"));
+  const responseFile = path.join(directory, `${name}-response.json`);
+  if (!fs.existsSync(responseFile)) throw new Error("Cannot replay an interrupted model call");
+  const comparable = (request: { system: string; input: string; options: Parameters<Completion>[2] }) => ({
+    system: request.system, input: editorialModelPacket(JSON.parse(request.input)),
+    model: request.options.model, documents: request.options.documents ?? [],
+  });
+  if (fingerprint(comparable(original)) !== fingerprint(comparable({ system, input, options })))
+    throw new Error("Completed response belongs to different evidence, instructions or model inputs");
+  return { ...JSON.parse(fs.readFileSync(responseFile, "utf8")),
+    replay: { originalRequest: file, originalRequestHash: fingerprint(original),
+      originalResponse: responseFile, reason: "Explicit continuation after duplicate-envelope correction; no replacement model call." } };
 }
 
 function sourceFor(captures: Capture[], url: string) {
@@ -151,7 +170,7 @@ export async function editResearchReport(root: string, key: string, rawHandoff: 
   options: { directory: string; maxSources?: number; runId: string; generatedAt: string },
   dependencies: { complete?: Completion; retrieve?: typeof retrieveSource; renderPage?: typeof renderPdfPage;
     progress?: (message: string) => void } = {}) {
-  const handoff = Handoff.parse(rawHandoff);
+  const handoff = ResearchHandoffSchema.parse(rawHandoff);
   const state = caseResearchInput(root, key);
   if (state.case !== handoff.request.case || state.basis !== handoff.request.caseBasis)
     throw new Error("Research handoff is stale or belongs to another case");

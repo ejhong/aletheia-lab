@@ -13,6 +13,37 @@ export const CASE_RESEARCH_PROTOCOL = "case-research-report-v3";
 const KIND = "case-research-report";
 const INSTRUCTIONS = fs.readFileSync(new URL("../prompts/case-research.md", import.meta.url), "utf8");
 const MAX_PACKET_BYTES = 800000;
+export const ResearchHandoffSchema = z.object({ verification: z.literal("unverified working report"),
+  request: z.object({ case: z.string().min(1), runId: z.string().min(1), caseBasis: z.string().min(1), inputHash: z.string().min(1),
+    input: z.string().min(1), instructions: z.string().min(1) }).passthrough(),
+  response: z.object({ model: z.string().min(1), text: z.string().min(1), citations: z.array(z.unknown()) }).passthrough(),
+}).passthrough();
+
+/** Keep the full research input, report and every citation once. Provider
+ * envelopes stay in the immutable receipt: Gemini's output and raw.steps each
+ * repeat the entire commissioning input and report. They are audit data, not
+ * additional evidence to buy context for on every subsequent model call. */
+export function researchHandoffForModels(rawHandoff: unknown) {
+  const handoff = ResearchHandoffSchema.parse(rawHandoff);
+  const { raw, output, ...response } = handoff.response;
+  void raw; void output;
+  return { ...handoff, response, rawResponseHash: handoff.rawResponseHash ?? fingerprint(handoff.response) };
+}
+
+/** Only known handoff positions are projected; source text, case records and
+ * other reference data are never recursively pruned or summarized. */
+export function editorialModelPacket(packet: unknown): unknown {
+  if (!packet || typeof packet !== "object" || Array.isArray(packet)) return packet;
+  const projected = { ...packet } as Record<string, unknown>;
+  if (projected.handoff) projected.handoff = researchHandoffForModels(projected.handoff);
+  const context = projected.researchContext;
+  if (context && typeof context === "object" && !Array.isArray(context)) {
+    const reference = { ...context } as Record<string, unknown>;
+    if (reference.handoff) reference.handoff = researchHandoffForModels(reference.handoff);
+    projected.researchContext = reference;
+  }
+  return projected;
+}
 const LEDGER_SECTIONS = ["sources", "claims", "evidence", "research", "studies"] as const;
 const RecordList = z.array(z.object({ id: z.string() }).passthrough());
 const PreviousPacket = z.object({

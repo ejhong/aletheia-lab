@@ -7,8 +7,8 @@ import { loadCase } from "./load.ts";
 import { geminiResearch, geminiReport, geminiResearchCost, GEMINI_RESEARCH_AGENT } from "../../scripts/lib/gemini-research.mjs";
 import { createBudget } from "../../scripts/lib/ai-budget.mjs";
 import { AI_POLICY } from "../../scripts/lib/ai-policy.mjs";
-import { recordedModelStep, editResearchReport } from "../../scripts/lib/report-editing.ts";
-import { prepareCaseResearch, researchPreparedCase, caseResearchInput } from "../../scripts/lib/case-research.ts";
+import { recordedModelStep, replayCompletedModelStep, editResearchReport } from "../../scripts/lib/report-editing.ts";
+import { prepareCaseResearch, researchPreparedCase, caseResearchInput, researchHandoffForModels, editorialModelPacket } from "../../scripts/lib/case-research.ts";
 import { sha256 } from "../../scripts/lib/source-passages.mjs";
 
 const temporary: string[] = [];
@@ -147,7 +147,7 @@ it("turns a complete report into source-checked records and preserves deferred c
       coverage: [{ strand: "Broader synthetic connection", state: "open", reason: "No connection established by the local observation." }], deferred: [] });
     if (options.context.phase === "reconcile") return modelReply({ rationale: "Record the local fact and preserve the larger open question.",
       bundles: [bundle], deferred: [{ item: "Synthetic historical connection", reason: "No independently checked connection.", reconsiderWhen: "A dated chain can be inspected." }] });
-    return modelReply({ findings: data.changes.map((change: { recordId: string }) => ({ recordId: change.recordId,
+    return modelReply({ $schema: "https://json-schema.org/draft/2020-12/schema", findings: data.changes.map((change: { recordId: string }) => ({ recordId: change.recordId,
       supported: true, contextPreserved: true, inferenceSeparated: true, independenceHandled: true,
       quoteSupported: true, locatorSupported: true, reason: "Supported by the complete synthetic source text." })) });
   });
@@ -161,12 +161,56 @@ it("turns a complete report into source-checked records and preserves deferred c
   expect(loaded.claims[0].reviewState).toBe("ai_extracted");
   expect(loaded.sources[0].verification).toBe("ai_verified");
   expect(loaded.evidence[0].exactLocator).toContain("characters 1–");
-  expect(seen[0]).toMatchObject({ handoff: packet });
-  expect(seen[1]).toMatchObject({ handoff: packet, captures: [expect.objectContaining({ text: sourceText })] });
+  expect(seen[0]).toMatchObject({ handoff: researchHandoffForModels(packet) });
+  expect(seen[1]).toMatchObject({ handoff: researchHandoffForModels(packet), captures: [expect.objectContaining({ text: sourceText })] });
   const next = caseResearchInput(root, "synthetic").packet;
   expect(next.memory.some(entry => entry.deferred?.some((item: { item: string }) => item.item === "Synthetic historical connection"))).toBe(true);
   expect(next.changesSincePreviousReport).toMatchObject({ available: true, ledger: { claims: { added: ["TST-C001"] } } });
   expect(next.previousReport?.text).toBe(packet.response.text);
+});
+
+it("sends the complete handoff once, retaining all citations and source data without provider echoes", async () => {
+  const { root } = fixture(), original = await handoff(root);
+  original.response.raw = { steps: [{ input: original.request.input }, { text: original.response.text }] };
+  original.response.output = original.response.raw.steps;
+  original.response.citations = [{ index: 1, url: "https://example.org/one" }, { index: 2, url: "https://example.org/two" }];
+  const before = JSON.stringify(original), dir = temp();
+  const complete = vi.fn(async (_system: string, input: string) => {
+    const supplied = JSON.parse(input).handoff;
+    expect(supplied.request).toEqual(original.request);
+    expect(supplied.response.text).toBe(original.response.text);
+    expect(supplied.response.citations).toEqual(original.response.citations);
+    expect(supplied.response.raw).toBeUndefined();
+    expect(supplied.response.output).toBeUndefined();
+    return modelReply({ result: "Synthetic" });
+  });
+  await recordedModelStep(dir, "commission", "Synthetic instructions", { handoff: original }, callOptions, complete);
+  expect(JSON.stringify(original)).toBe(before);
+  const projected = researchHandoffForModels(original);
+  expect(researchHandoffForModels(projected)).toEqual(projected);
+  expect(JSON.stringify(projected).length).toBeLessThan(before.length);
+  const source = { text: "Keep the complete original source.", output: "This is source data, not a provider envelope." };
+  expect(editorialModelPacket({ source, researchContext: { handoff: original } }))
+    .toEqual({ source, researchContext: { handoff: projected } });
+});
+
+it("reuses a paid response only when the projected evidence, instructions and model match", async () => {
+  const { root } = fixture(), original = await handoff(root), dir = temp();
+  original.response.raw = { repeatedInput: original.request.input };
+  const request = { system: "Synthetic instructions", input: JSON.stringify({ handoff: original }), options: callOptions };
+  fs.writeFileSync(path.join(dir, "commission-request.json"), JSON.stringify(request));
+  fs.writeFileSync(path.join(dir, "commission-response.json"), JSON.stringify(modelReply({ result: "Original synthetic decision" })));
+  const input = JSON.stringify(editorialModelPacket({ handoff: original }));
+  const replayed = replayCompletedModelStep(dir, "commission", request.system, input,
+    { ...callOptions, context: { ...callOptions.context, runId: "explicit-recovery" } });
+  expect(replayed.text).toContain("Original synthetic decision");
+  expect(replayed).toHaveProperty("replay.originalRequest", path.join(dir, "commission-request.json"));
+  const changed = structuredClone(original); changed.response.citations.push({ url: "https://example.org/new" });
+  expect(() => replayCompletedModelStep(dir, "commission", request.system,
+    JSON.stringify(editorialModelPacket({ handoff: changed })), callOptions)).toThrow(/different evidence/);
+  expect(() => replayCompletedModelStep(dir, "commission", "Different instructions", input, callOptions)).toThrow(/different evidence/);
+  expect(() => replayCompletedModelStep(dir, "commission", request.system, input,
+    { ...callOptions, model: "different-model" })).toThrow(/different evidence/);
 });
 
 it("a source check can reject an otherwise well-formed update without changing the case", async () => {

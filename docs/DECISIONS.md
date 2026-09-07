@@ -1727,3 +1727,24 @@ stay disabled. The original Aletheia stays frozen and Lab PR 2 remains separate.
 AI operator: GPT-6 (OpenAI Codex); run codex-autonomy-experiment-2026-09-07.
 Protocols: case-research-report-v3, research-report-editing-v1 and
 case-improvement-experiment-v1. No new paid round had started at protocol freeze.
+
+## 2026-09-07 — Stop duplicated editorial context and reuse the purchased report
+
+The first live Deep Memory attempt was stopped after its research, two Astra
+calls and two inexpensive source checks. The editorial handoff needlessly
+repeated the complete research input and report inside provider envelopes,
+crossing Astra's long-context pricing threshold. Recorded cost was $37.918564;
+the previous unresolved hold is unaffected. Paid calls returned to paused/$25.
+
+Retain complete raw receipts for inspection, but send the case input, report
+and all citations once to subsequent models. Recover the already purchased
+report and completed editorial decisions explicitly, with input-equivalence
+checks and visible replay provenance. Do not buy a second broad investigation
+until the cost and document-reading failures are addressed. This is a documented
+development continuation, not an uninterrupted two-round success. See
+docs/EXPERIMENT_DEEP_MEMORY_2026-09-07.md for the actual calls and limitations.
+
+No publication or ledger rule was weakened. A source-check response may include
+the explicitly declared JSON Schema dialect metadata; the required findings
+and rejection of unsupported readings remain unchanged. No case content was
+manually repaired to rescue this experiment.
