@@ -1,3 +1,24 @@
+> **Aletheia Lab** is the experimental continuation of [Aletheia](https://ejhong.github.io/aletheia/).
+> The original publication is restored to its version before PR #172. This lab
+> preserves the overhaul and continues research and publishing experiments at
+> [its own site](https://ejhong.github.io/alethia-lab/).
+>
+> Separated at the founder’s request on 2026-09-07 from original commit
+> `defad8f636d639ea4e47abcb1add56fbaab03c7b`. The original restoration tree is
+> `c65fd16d2291accaefd421eeec7d6497936601ef`. Earlier PR and review references
+> belong to `ejhong/aletheia`; their history remains there. Copied governance
+> receipts retain their original provenance.
+>
+> Recurring AI workflows start paused. The spending branch carries forward prior
+> usage and unresolved holds; separating repositories does not reset the allowance.
+> Local AI commands now use this repository’s spending records. Unpublished local
+> research is preserved outside git in `.research-runs/`; migration backups are
+> kept inside `.git/lab-migration/`. The constitution and publication checks
+> remain in force.
+>
+> Separation performed by GPT-6 (OpenAI Codex), run `codex-lab-separation-2026-09-07`,
+> interactive founder instruction (no versioned pipeline prompt).
+
 # Aletheia
 
 **Contested claims, mapped to evidence and experiments.**

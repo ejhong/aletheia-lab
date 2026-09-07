@@ -43,7 +43,7 @@ export async function retrieveSource(url, { fetchImpl = fetch, maxBytes = 200000
   const signal = AbortSignal.timeout(timeoutMs);
   for (let redirects = 0; redirects <= 4; redirects++) {
     response = await fetchImpl(current.href, { redirect: "manual", signal,
-      headers: { "User-Agent": "AletheiaResearch/1.0 (+https://github.com/ejhong/aletheia)" } });
+      headers: { "User-Agent": "AletheiaResearch/1.0 (+https://github.com/ejhong/alethia-lab)" } });
     if (response.status >= 300 && response.status < 400) {
       await response.body?.cancel();
       if (!response.headers.get("location")) throw new Error("source redirect has no location");

@@ -83,7 +83,7 @@ export function createBudget(store, { policy = AI_POLICY, now = () => new Date()
 }
 
 export function githubBudgetStore({ token = process.env.BUDGET_GITHUB_TOKEN || process.env.GH_TOKEN || process.env.GITHUB_TOKEN,
-  repository = process.env.GITHUB_REPOSITORY || "ejhong/aletheia", fetchImpl = fetch } = {}) {
+  repository = process.env.GITHUB_REPOSITORY || "ejhong/alethia-lab", fetchImpl = fetch } = {}) {
   if (!token) throw new BudgetStopped("Budget access is not configured. Set BUDGET_GITHUB_TOKEN (repository contents write); no paid call sent.");
   if (!/^[\w.-]+\/[\w.-]+$/.test(repository)) throw new BudgetStopped("Invalid budget repository.");
   const endpoint = `https://api.github.com/repos/${repository}`;
