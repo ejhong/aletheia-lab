@@ -137,6 +137,25 @@ are enabled. See [Deep Research](https://developers.openai.com/api/docs/guides/d
 and [the model tariff](https://developers.openai.com/api/docs/models/o3-deep-research),
 checked 2026-09-07. The API profile omits Astra's reasoning-effort settings.
 
+The reusable research brief is [case-research.md](../scripts/prompts/case-research.md).
+It asks for useful discoveries, competing arguments and replies, proposed record
+changes, and the shape of a better illustrated account. The case and prior
+decisions inform the inquiry; they do not limit it to the incumbent article.
+
+**Manual trial, 2026-09-07:** the configured OpenAI research call returned 404.
+The founder approved one Gemini Deep Research Max investigation without a hard
+cost cap, with a $10 estimated reservation in the shared ledger and a temporary
+$40 daily allowance. This exception does not change the recurring-worker policy
+or enable a new scheduled provider. The $150 monthly allowance remains; the
+OpenAI reservation remains unresolved. Google's [estimated task costs](https://ai.google.dev/gemini-api/docs/deep-research#availability-and-pricing)
+are not guaranteed charges. See the corresponding decision in
+[DECISIONS.md](../docs/DECISIONS.md) for the trial and restoration of the daily allowance.
+
+The trial completed with 102 search queries. The recorded conservative research
+estimate is $15.07, plus $1.36 for two Astra editorial passes; actual provider
+invoices may differ. The daily allowance has been restored to $25. The old
+$18.88 OpenAI hold remains unresolved and counts toward allowance availability.
+
 Accounting begins with this integration. Earlier bills cannot be reconstructed
 from workers that discarded usage. ChatGPT/Codex subscriptions, this interactive
 development session, unrelated projects using the same API keys, taxes, and
