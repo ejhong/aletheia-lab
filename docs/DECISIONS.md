@@ -1777,3 +1777,31 @@ need further work before more paid research is useful.
 AI operator: GPT-6 (OpenAI Codex); run codex-autonomy-experiment-2026-09-07.
 Generated continuation and edition artifacts record their own models, run IDs
 and prompt versions; dates crossing midnight use UTC.
+
+## 2026-09-07 — Founder authorizes a temporary Lab development review exception
+
+The founder directed: “i think we can just skip the reviews while you proceed
+with trying to get the new system going?” This is a temporary exception for
+founder-directed development in `ejhong/aletheia-lab`, recorded here under this
+log's precedence over conflicting instructions in AGENTS.md. It is not an
+assessment ratification or a claim that the founder reviewed the evidence.
+
+Remove only the required `arbiter` check from the Lab's `main` branch protection.
+Keep `checks` (type checking, lint, tests, production build and links) and
+`classify` required. Mark the development PRs ready
+and merge them in dependency order after those checks pass. Content retains its
+AI provenance and explicit unratified assessment labels; source-reading checks,
+schema validation and record histories remain part of the research experiment.
+The original `ejhong/aletheia` and its protections remain frozen.
+
+The seven-hour wait for PR #2 was not a running arbiter: its workflow was
+disabled after the Lab separation, the Lab has no Actions API secrets, and the
+shared spending allowance is paused. Waiting or marking a PR ready could not
+complete that review. Keep paid and recurring automation paused during this
+development exception. Before enabling unattended content publication, restore
+the arbiter requirement, configure its credentials and allowance, and verify a
+real run. Restoring the required contexts means `arbiter`, `checks`, `classify`,
+each associated with the GitHub Actions app (15368); strict mode was false.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-lab-development-mode-2026-09-07.
+Authorization: the founder's quoted instruction in the active conversation.
