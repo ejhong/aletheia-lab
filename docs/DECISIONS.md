@@ -1831,3 +1831,11 @@ rejection and captures remain historical records. This correction makes no
 paid calls and adds no content or ledger schema.
 
 AI operator: GPT-6 (OpenAI Codex); run codex-source-check-roles-2026-09-07.
+
+## 2026-09-07 — Describe the temporary review exception on the Method page
+
+The public Method page describes the founder-authorized development exception.
+It no longer claims that every current Lab change receives a panel review.
+Actual assessment labels and historical reviews remain unchanged.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-lab-development-mode-2026-09-07.
