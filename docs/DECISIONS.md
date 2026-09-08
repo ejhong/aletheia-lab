@@ -1748,3 +1748,32 @@ No publication or ledger rule was weakened. A source-check response may include
 the explicitly declared JSON Schema dialect metadata; the required findings
 and rejection of unsupported readings remain unchanged. No case content was
 manually repaired to rescue this experiment.
+
+## 2026-09-07 — Preserve the autonomous candidate and the experiment's limits
+
+The explicit saved-report continuation prepared four checked record bundles and
+two Astra article/assessment candidates. Four independent comparison seats
+preferred either candidate to the incumbent; three selected the revision and
+one the recomposition. The fifth seat was blocked by its spending reservation,
+not counted as agreement. The selected Deep Memory candidate has 10 claims,
+10 evidence records, seven sources, six research opportunities and an illustrated
+1,486-word essay; its assessment remains unresolved and unratified. No case
+content was authored or corrected interactively during the continuation.
+
+The continuation cost $6.323076, bringing the recorded experiment total to
+$44.241640. Calls returned to paused/$25 daily; monthly $150 and the existing
+hold remain unchanged. No second broad research run was purchased. Preserve the
+first attempt's stop, reused responses, failures, alternative draft and votes
+as history. This is development recovery, not two unchanged autonomous rounds.
+See docs/EXPERIMENT_DEEP_MEMORY_2026-09-07.md for the result and next experiment.
+
+Correct the demonstrated HTML extraction bug after the run: `html-text-v2`
+preserves a complete main region and never selects just one of several article
+cards. Keep old captures and their v1 locators intact. Distinguish too-short
+and oversized source errors. No ledger schema or publication check changes.
+Source-check applicability, full-document access and comparison reservations
+need further work before more paid research is useful.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-autonomy-experiment-2026-09-07.
+Generated continuation and edition artifacts record their own models, run IDs
+and prompt versions; dates crossing midnight use UTC.

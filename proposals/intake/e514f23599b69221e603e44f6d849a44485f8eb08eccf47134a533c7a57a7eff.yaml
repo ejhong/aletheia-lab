@@ -1,0 +1,261 @@
+version: 1
+decisions:
+  - id: aa58ea99f2bef088547b17119cf04841b9dd725c605241311dee928dc815c344
+    case: deep-memory
+    stage: research-proposal
+    decision: proposed
+    source: null
+    proposal: null
+    research:
+      version: 1
+      case: deep-memory
+      basis:
+        contentHash: d7b1bc1bcd83ed8de7bb97710a0d79d1a08535790412415312654bd2a4ff5e36
+        inputsHash: abb099a6708afe8bded620b2f002675d06e9b788a13ca8cc8811f91a9ad0f44a
+      runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+      generatedAt: 2026-09-08T00:00:06.090Z
+      model: gpt-6-astra
+      promptVersion: research-report-editing-v1
+      intent: add
+      title: Record Thompson's concrete objections while reserving judgment on Witzel
+      rationale: "The retrieved review offers more than a generic warning: it alleges asymmetric
+        classification of missing narrative elements and says Witzel revised an earlier flood
+        distinction. These are useful attributed claims, not verified descriptions of the book or a
+        sufficient basis for rejecting deep inheritance."
+      priorDecisionIds: []
+      themeAdditions: {}
+      changes:
+        - kind: source
+          recordId: SRC-MEM-THOMPSON-2013
+          beforeHash: null
+          after:
+            id: SRC-MEM-THOMPSON-2013
+            title: Review of E.J. Michael Witzel, The Origins of the World's Mythologies
+            authors:
+              - Tok Thompson
+            organization: Journal of Folklore Research Reviews
+            year: "2013"
+            sourceType: webpage
+            url: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998
+            verification: ai_verified
+            verificationNote: Retrieved 2026-09-07T22:37:23.247Z; AI source reading checked separately during
+              report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5. Not
+              human verification.
+            reliabilityNotes:
+              - "A strongly critical scholarly review: primary evidence for the reviewer's
+                arguments, secondary evidence for the book's contents and underlying traditions."
+              - Book page numbers and quotations supplied by the reviewer are not independently
+                verified locators in this update.
+              - Methodological allegations are preserved as attributed criticism; the review's
+                broader evaluative characterizations are not adopted as findings.
+            derivedFrom: []
+            background: false
+          rationale: Use the resolved retrieved URL and preserve the distinction between reading a criticism
+            and verifying its target.
+          passages: []
+        - kind: claim
+          recordId: MEM-C010
+          beforeHash: null
+          after:
+            id: MEM-C010
+            statement: Tok Thompson argues that Witzel applies unequal criteria to missing narrative elements
+              when classifying traditions as Laurasian or Gondwana.
+            theme: myth-comparison
+            rung: attribution
+            reviewState: ai_extracted
+            origin:
+              ref: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998 — html-text-v1,
+                characters 7355–7407 (retrieved text; not a printed-page locator)
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+              date: 2026-09-08
+            tier: catalog
+            sourceAnchor:
+              sourceId: SRC-MEM-THOMPSON-2013
+              locator: html-text-v1, characters 7355–7407 (retrieved text; not a printed-page locator)
+            claimType: theory_description
+            independenceGroup: Thompson 2013 review of Witzel
+          rationale: Record the strongest concrete classification objection without asserting that the alleged
+            asymmetry has been independently established.
+          passages:
+            - sourceId: SRC-MEM-THOMPSON-2013
+              url: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998
+              retrievedAt: 2026-09-07T22:37:23.247Z
+              responseHash: 33c7dfdfac87e244eb6a7c910f1468093227d91f2da542f1527f45b5a3b79df4
+              locator: html-text-v1, characters 7355–7407 (retrieved text; not a printed-page locator)
+              quote: The criteria are not applied equally, but rather only
+              textHash: 5e06f84326f716422de69f761ca10536bfc4635b7f7da49b35ad8f82e90a6c86
+              extractor: html-text-v1
+        - kind: evidence
+          recordId: MEM-E010
+          beforeHash: null
+          after:
+            id: MEM-E010
+            title: An alleged asymmetry in explaining missing parts of the narrative package
+            claimIds:
+              - MEM-C010
+            sourceId: SRC-MEM-THOMPSON-2013
+            direction: supports
+            strength: moderate
+            sourceStatement: Thompson says that Dene and Inuit/Yupiq traditions lack several elements he
+              understands Witzel's Laurasian storyline to require. He argues that missing elements
+              are explained as unrecorded, forgotten or untold for these traditions, while
+              comparable incompleteness is used to classify San traditions as Gondwana.
+            editorInference: This directly supports the attribution of the criticism. If verified against
+              explicit, consistently applied classification rules and adequately documented
+              narratives, such asymmetry would threaten the model's discriminatory value. The
+              substantive inheritance reply—that traditions can lose elements and records can be
+              incomplete—remains possible, but requires independently justified and symmetrical
+              criteria rather than case-by-case rescue. Witzel's actual reply has not been read
+              here.
+            exactLocator: html-text-v1, characters 7355–7407 (retrieved text; not a printed-page locator)
+            limitations:
+              - The book and the underlying narrative corpora were not inspected in this pass.
+              - A reviewer's account of missing motifs is not a systematic absence audit.
+              - The review is one critical interpretation, not an independent replication or
+                consensus assessment.
+              - The conditional reply is editorial reasoning, not words attributed to Witzel.
+            reviewState: ai_extracted
+            origin:
+              ref: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998 — html-text-v1,
+                characters 7355–7407 (retrieved text; not a printed-page locator)
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+              date: 2026-09-08
+          rationale: Explain why the objection matters and what a substantive reply would need to show.
+          passages:
+            - sourceId: SRC-MEM-THOMPSON-2013
+              url: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998
+              retrievedAt: 2026-09-07T22:37:23.247Z
+              responseHash: 33c7dfdfac87e244eb6a7c910f1468093227d91f2da542f1527f45b5a3b79df4
+              locator: html-text-v1, characters 7355–7407 (retrieved text; not a printed-page locator)
+              quote: The criteria are not applied equally, but rather only
+              textHash: 5e06f84326f716422de69f761ca10536bfc4635b7f7da49b35ad8f82e90a6c86
+              extractor: html-text-v1
+        - kind: claim
+          recordId: MEM-C011
+          beforeHash: null
+          after:
+            id: MEM-C011
+            statement: Thompson's review says Witzel's book revises his earlier treatment of flood myths as
+              specifically Laurasian.
+            theme: myth-comparison
+            rung: attribution
+            reviewState: ai_extracted
+            origin:
+              ref: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998 — html-text-v1,
+                characters 4764–4799 (retrieved text; not a printed-page locator)
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+              date: 2026-09-08
+            tier: catalog
+            sourceAnchor:
+              sourceId: SRC-MEM-THOMPSON-2013
+              locator: html-text-v1, characters 4764–4799 (retrieved text; not a printed-page locator)
+            claimType: theory_description
+            independenceGroup: Thompson 2013 review of Witzel
+          rationale: Preserve a consequential source-history lead that the working report's synthesis does not
+            resolve.
+          passages:
+            - sourceId: SRC-MEM-THOMPSON-2013
+              url: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998
+              retrievedAt: 2026-09-07T22:37:23.247Z
+              responseHash: 33c7dfdfac87e244eb6a7c910f1468093227d91f2da542f1527f45b5a3b79df4
+              locator: html-text-v1, characters 4764–4799 (retrieved text; not a printed-page locator)
+              quote: the author now claims the flood myth
+              textHash: 5e06f84326f716422de69f761ca10536bfc4635b7f7da49b35ad8f82e90a6c86
+              extractor: html-text-v1
+        - kind: evidence
+          recordId: MEM-E011
+          beforeHash: null
+          after:
+            id: MEM-E011
+            title: The review describes a revised flood classification
+            claimIds:
+              - MEM-C011
+            sourceId: SRC-MEM-THOMPSON-2013
+            direction: supports
+            strength: moderate
+            sourceStatement: Thompson states that Witzel previously argued Gondwana traditions had no flood
+              myths, but that the book, after discussing Dundes's anthology, treats the flood myth
+              as universal rather than Laurasian. Thompson also disputes the universality claim.
+            editorInference: This supports an accurate account of what the review says. It is a reason not to
+              adopt the report's flood-based division as settled or assume that the review merely
+              alleges ignored counterexamples. A generic flood motif and a particular ordered
+              punitive-flood sequence could still be different propositions; the book must be read
+              to determine whether that distinction answers the apparent conflict.
+            exactLocator: html-text-v1, characters 4764–4799 (retrieved text; not a printed-page locator)
+            limitations:
+              - Witzel's relevant book passage and earlier publications were not retrieved
+                successfully.
+              - The reviewer-supplied book page number is not a verified physical PDF locator.
+              - Generic flood occurrence and a defined narrative sequence must not be conflated.
+              - This shares the same review and target book as MEM-E010 and is not independent
+                confirmation of a historical model.
+            reviewState: ai_extracted
+            origin:
+              ref: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998 — html-text-v1,
+                characters 4764–4799 (retrieved text; not a printed-page locator)
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+              date: 2026-09-08
+          rationale: Correct the path of further investigation without turning a critic's report into a
+            verified claim about all flood traditions.
+          passages:
+            - sourceId: SRC-MEM-THOMPSON-2013
+              url: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998
+              retrievedAt: 2026-09-07T22:37:23.247Z
+              responseHash: 33c7dfdfac87e244eb6a7c910f1468093227d91f2da542f1527f45b5a3b79df4
+              locator: html-text-v1, characters 4764–4799 (retrieved text; not a printed-page locator)
+              quote: the author now claims the flood myth
+              textHash: 5e06f84326f716422de69f761ca10536bfc4635b7f7da49b35ad8f82e90a6c86
+              extractor: html-text-v1
+        - kind: research
+          recordId: MEM-R007
+          beforeHash: null
+          after:
+            id: MEM-R007
+            title: Audit the narrative-package model against its strongest counterexamples
+            summary: Read Witzel's own definitions, relevant earlier formulations and substantive replies before
+              coding a test. Distinguish generic floods from ordered narrative packages and record
+              changes in the proposed classification. Select the Dene, Inuit/Yupiq and San cases
+              raised by Thompson plus positive cases justified by the model. Freeze criteria for
+              package membership, partial preservation, borrowing and missing documentation,
+              applying them symmetrically. Separate support for historical relationships from
+              assumptions used to date them. This is a conditional research proposal, not a
+              completed assessment of the book.
+            claimIds:
+              - MEM-C010
+              - MEM-C011
+            track: either
+            effortTier: desk
+            informationGain: Consistent criteria that recover distinctive ordered packages and predict
+              independent cases could strengthen an inheritance model. Classifications dependent on
+              asymmetric excuses, revised definitions or assumed migration dates would weaken that
+              formulation. Either outcome would leave other forms and timescales of narrative
+              inheritance open.
+            origin:
+              ref: Research report reconciliation
+                report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+              date: 2026-09-08
+          rationale: Keep the affirmative package argument and the critic's specific tests in the same
+            research path, with replies still required.
+          passages: []
+    reason: "The retrieved review offers more than a generic warning: it alleges asymmetric
+      classification of missing narrative elements and says Witzel revised an earlier flood
+      distinction. These are useful attributed claims, not verified descriptions of the book or a
+      sufficient basis for rejecting deep inheritance."
+    date: 2026-09-08
+    generatedAt: 2026-09-08T00:00:06.090Z
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+    model: gpt-6-astra
+    promptVersion: research-report-editing-v1
+    inputHash: b725dac2795af748da4a41a388333f35e6bd34fa2335f5cccd3997f172645ad0
+    candidateHash: 502a7519d64b1bb358f2c472117bd9aa43b415e3c2ecf3ccbdcefed2f0f16515
+    ref: null
+    caseBasis: d7b1bc1bcd83ed8de7bb97710a0d79d1a08535790412415312654bd2a4ff5e36
+    recordId: null
+    matchMethod: null
+    retryable: false

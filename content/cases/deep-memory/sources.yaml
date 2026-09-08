@@ -52,3 +52,87 @@
       been independently audited in this pass.
   derivedFrom: []
   background: false
+- id: SRC-MEM-BIRDMEN-CIVILISERS
+  title: The civilisers — Birdmen source-audit excerpt
+  authors: []
+  sourceType: webpage
+  url: https://ejhong.github.io/birdmen/civilisers.html
+  verification: ai_verified
+  verificationNote: Retrieved 2026-09-07T22:37:06.311Z; AI source reading checked
+    separately during
+    report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1.
+    Not human verification.
+  reliabilityNotes:
+    - Prior exploratory research from the project that supplied the case's
+      founding motivation; not independent archaeological or historical
+      corroboration.
+    - The capture identifies source-entry labels Q1, Q3 and V3 but does not
+      contain those entries.
+    - No new image, quotation permission or primary-text verification is
+      inferred.
+  derivedFrom: []
+  background: false
+- id: SRC-MEM-BIRDMEN-PICTURES
+  title: The pillar & the moai — Birdmen image pilots
+  authors: []
+  sourceType: webpage
+  url: https://ejhong.github.io/birdmen/pictures.html
+  verification: ai_verified
+  verificationNote: Retrieved 2026-09-07T22:37:20.555Z; AI source reading checked
+    separately during
+    report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-2.
+    Not human verification.
+  reliabilityNotes:
+    - Self-report of exploratory AI measurement pilots from the founding project.
+    - Multiple photographs of the same object and uneven corpus coverage are
+      acknowledged by the page.
+    - The page reports review activity; this reconciliation does not establish
+      the reviewer's identity or claim human review.
+    - No statistical reproduction or visual authentication was performed here.
+  derivedFrom: []
+  background: false
+- id: SRC-MEM-BIRDMEN-MYTHS
+  title: Birds, serpents & sacred centres — Birdmen catalogue experiment
+  authors: []
+  sourceType: webpage
+  url: https://ejhong.github.io/birdmen/myths.html
+  verification: ai_verified
+  verificationNote: Retrieved 2026-09-07T22:37:20.993Z; AI source reading checked
+    separately during
+    report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3.
+    Not human verification.
+  reliabilityNotes:
+    - Derivative exploratory analysis from the founding project, described as
+      using a 2016 Berezkin–Duvakin catalogue snapshot parsed by Dmitry
+      Nikolaev.
+    - The page distinguishes broad narrative classes from images and place-name
+      etymologies.
+    - Documentation-preserving randomization does not by itself resolve cultural
+      dependence or date transmission.
+    - Source statements identifying convergence from spatial dispersion require
+      separate assessment.
+  derivedFrom: []
+  background: false
+- id: SRC-MEM-THOMPSON-2013
+  title: Review of E.J. Michael Witzel, The Origins of the World's Mythologies
+  authors:
+    - Tok Thompson
+  organization: Journal of Folklore Research Reviews
+  year: "2013"
+  sourceType: webpage
+  url: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998
+  verification: ai_verified
+  verificationNote: Retrieved 2026-09-07T22:37:23.247Z; AI source reading checked
+    separately during
+    report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5.
+    Not human verification.
+  reliabilityNotes:
+    - "A strongly critical scholarly review: primary evidence for the reviewer's
+      arguments, secondary evidence for the book's contents and underlying
+      traditions."
+    - Book page numbers and quotations supplied by the reviewer are not
+      independently verified locators in this update.
+    - Methodological allegations are preserved as attributed criticism; the
+      review's broader evaluative characterizations are not adopted as findings.
+  derivedFrom: []
+  background: false

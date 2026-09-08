@@ -46,8 +46,28 @@ describe("retrieved source passages", () => {
     expect((await retrieveSource(capture.url, { fetchImpl })).textHash).toBe(sha256(body));
     await expect(retrieveSource(capture.url, { fetchImpl, maxBytes: 10 })).rejects.toThrow(/byte limit/);
     await expect(retrieveSource(capture.url, { fetchImpl, maxText: 20 })).rejects.toThrow(/no truncated reading/);
+    await expect(retrieveSource(capture.url, { fetchImpl: async () => new Response("", { headers: { "content-type": "text/html" } }) })).rejects.toThrow(/too short \(0 characters; minimum 80\)/);
     await expect(retrieveSource(capture.url, { fetchImpl: async () => new Response("missing", { status: 404 }) })).rejects.toThrow(/404/);
     await expect(retrieveSource(capture.url, { fetchImpl: async () => new Response("pdf", { headers: { "content-type": "application/octet-stream" } }) })).rejects.toThrow(/unsupported/);
+  });
+  it("retains later results and surrounding caveats when a main region contains article cards", async () => {
+    const html = `<nav>Unrelated navigation</nav><main><h1>Synthetic audit</h1>
+      <article>A pilot reported a correspondence.</article>
+      <article>A later comparison did not reproduce that correspondence.</article>
+      <p>Both reports used the same selected sample, not independent evidence.</p></main>
+      <footer>Unrelated footer</footer>`;
+    const reading = await retrieveSource(capture.url, { fetchImpl: async () => new Response(html,
+      { headers: { "content-type": "text/html" } }) });
+    expect(reading.text).toBe("Synthetic audit A pilot reported a correspondence. A later comparison did not reproduce that correspondence. Both reports used the same selected sample, not independent evidence.");
+    expect(reading.extractor).toBe("html-text-v2");
+    expect(reading.textHash).toBe(sha256(reading.text));
+    expect(locatePassage(reading, "Both reports used the same selected sample, not independent evidence.", "SRC-TEST").locator).toContain("html-text-v2");
+  });
+  it("retains all article sections without main, including nested articles", () => {
+    expect(extractSourceText(`<body><article>Reported signal.</article><article>Failed replication.</article></body>`))
+      .toBe("Reported signal. Failed replication.");
+    expect(extractSourceText(`<article>Outer context.<article>Nested result.</article>Outer limitation.</article>`))
+      .toBe("Outer context. Nested result. Outer limitation.");
   });
   it("a verbatim quotation cannot override a rejected source reading or a shared-sample warning", async () => {
     const roles: string[] = [];

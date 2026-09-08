@@ -1,0 +1,35 @@
+version: 1
+decisions:
+  - id: e546bcfe418c473f2f808d3b72d3f2cc7cf4e378e6b7c996aa2e0c74da374879
+    case: deep-memory
+    stage: research-adoption
+    decision: prepared
+    source: null
+    proposal: null
+    reason: "The retrieved review offers more than a generic warning: it alleges asymmetric
+      classification of missing narrative elements and says Witzel revised an earlier flood
+      distinction. These are useful attributed claims, not verified descriptions of the book or a
+      sufficient basis for rejecting deep inheritance."
+    date: 2026-09-08
+    generatedAt: 2026-09-08T00:00:06.090Z
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+    model: gpt-6-astra
+    promptVersion: research-report-editing-v1
+    inputHash: b725dac2795af748da4a41a388333f35e6bd34fa2335f5cccd3997f172645ad0
+    candidateHash: 502a7519d64b1bb358f2c472117bd9aa43b415e3c2ecf3ccbdcefed2f0f16515
+    ref: proposals/intake/e514f23599b69221e603e44f6d849a44485f8eb08eccf47134a533c7a57a7eff.yaml#decisions[0]
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      experimental: true
+      proposalId: aa58ea99f2bef088547b17119cf04841b9dd725c605241311dee928dc815c344
+      proposalFile: proposals/intake/e514f23599b69221e603e44f6d849a44485f8eb08eccf47134a533c7a57a7eff.yaml
+      recordIds:
+        - SRC-MEM-THOMPSON-2013
+        - MEM-C010
+        - MEM-E010
+        - MEM-C011
+        - MEM-E011
+        - MEM-R007

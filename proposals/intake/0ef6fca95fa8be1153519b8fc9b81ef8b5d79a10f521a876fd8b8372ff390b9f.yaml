@@ -1,0 +1,474 @@
+version: 1
+decisions:
+  - id: 093c7373b8dfb4a8dfb14e7f4b5d9aead5eb816bd7a1d5c1ad19d6067a709c99
+    case: deep-memory
+    stage: edition-proposal
+    decision: proposed
+    source: null
+    proposal: null
+    edition:
+      case: deep-memory
+      edition:
+        version: 1
+        runId: edition-2026-09-08-e6ab426e-fded-4791-8a11-bae9f03d5805-recomposition
+        generatedAt: 2026-09-08T00:08:41.615Z
+        model: gpt-6-astra
+        promptVersion: edition-drafting-v1
+        rationale: The alternative replaces the incumbent’s two-observation frame with a connected account
+          of the visual, regional and narrative strands now represented in the ledger. Both
+          incumbent claim references and IMG-MEM-P01 are retained. IMG-MEM-P02 is restored because
+          MEM-C003–C004 and their museum source now support its local context; it is not used to
+          establish transmission. No evidence plate or incumbent claim reference is removed, and the
+          generated cover remains outside the evidence. Unsupported assertions about damage and
+          incomplete preservation are replaced by the recorded limitation that the lower figure is
+          obscured in the current plate. The essay preserves affirmative regional and
+          culture-bringer leads, positive as well as negative image-pilot reports, the bounded
+          catalogue null, and Thompson’s specific criticisms without adopting his account as a
+          verified assessment of Witzel. Unadopted report findings, including the flood-pilot bundle
+          and sweeping claims of convergence, colonial invention and Paleolithic inheritance, are
+          not imported. The unchanged unresolved verdict now rests on a broader, explicitly
+          differentiated record rather than the incumbent’s obsolete statement that no myth evidence
+          is present.
+        basis:
+          contentHash: 98c7c7b51bf6896452cb805add5072fc2170255f65505c9a7e6b2f0a509ba64d
+          inputsHash: abb099a6708afe8bded620b2f002675d06e9b788a13ca8cc8811f91a9ad0f44a
+          ledgerHash: 75f9bbd1b963ffb4f594e8827e8524fd5f9d40868b776aff7986e1d0640e3078
+          incumbentHash: f5d16adc1cded7e7a6b97366e921bb578ef68ca3b4aaea2291d61fe2dc4ac0e9
+        previous:
+          runId: edition-2026-09-06-cff21474-98e4-46fc-8992-8b2f58a75bab-recomposition
+          hash: 63c5371cb717e4aaeac9dc531ef5cf39c87358ac973dd54ee787f87b057a3597
+        assessment:
+          runId: edition-2026-09-08-e6ab426e-fded-4791-8a11-bae9f03d5805-recomposition-assessment
+          hash: d03374d7c6b03e225d1f4e8619592f4956334aa8d4858d0cf1e5424cd4dca7bb
+        featuredClaimIds:
+          - MEM-C001
+          - MEM-C002
+          - MEM-C003
+          - MEM-C004
+          - MEM-C005
+          - MEM-C006
+          - MEM-C007
+          - MEM-C008
+          - MEM-C010
+          - MEM-C011
+        article: |-
+          When does a resemblance become a memory? An arch above a rectangle, a bird-headed figure with an implement, a teacher who departs across the sea: each could be the beginning of a historical connection. But resemblance and inheritance are different discoveries. The first identifies a pattern; the second explains how it came to exist.
+
+          The question behind *Deep Memory* is whether shared symbols and myths preserve a common prehistoric inheritance. **The present evidence does not resolve that question.** It does, however, offer several concrete ways into it: an archaeological comparison, a proposed regional history of imagery, a reported correspondence between teaching figures, and exploratory tests that expose difficulties in measuring visual and narrative similarity. These strands need not ultimately have the same explanation.
+
+          ## Two objects, not yet one tradition
+
+          At Göbekli Tepe, [Oliver Dietrich’s excavation-project account](https://www.dainst.blog/the-tepe-telegrams/2016/10/14/of-animals-and-a-headless-man-gobekli-tepe-pillar-43/) describes [three rectangular forms topped with cupola-like arches, each paired with an animal, at the top of Pillar 43]{claim=MEM-C002}. That wording matters. It describes the forms without deciding whether the arches are handles or what the rectangles represent. The architectural interpretation discussed in the account remains tentative.
+
+          {plate:IMG-MEM-P01}
+
+          The plate’s supplied description notes that foreground stones obscure the lower part of the pillar. It therefore cannot independently check another detail in Dietrich’s account: [a human figure shown without a head and with an erect penis]{claim=MEM-C001}. That figure belongs in an eventual reading of the whole scene, but its presence alone does not identify a story or establish a connection elsewhere. Both descriptions concern one object and come through one source.
+
+          The Assyrian comparator has a more definite local identification. The [Metropolitan Museum of Art’s record for relief 32.143.7](https://www.metmuseum.org/art/collection/search/322614) describes [a winged, eagle-headed figure carrying a bucket and a cone-shaped implement]{claim=MEM-C003}. Its description places the bucket in the left hand and the cone in the right.
+
+          {plate:IMG-MEM-P02}
+
+          [The Met interprets the paired implements as serving protective or purifying purposes]{claim=MEM-C004}. This is a qualified museum interpretation, not an explanation explicitly written beside the implements in the relief’s inscription.
+
+          Here the comparison becomes more interesting than a shared outline—and less straightforward. One source describes three repeated forms associated with animals; the other identifies a carried vessel paired with another implement. Calling both “handbags” would decide their identity before testing it. Yet explaining the Assyrian equipment locally would not, by itself, prove that its imagery had no older history. **Function and ancestry are separate questions.**
+
+          A useful comparison would preserve the relationships: repetition, attachment, internal detail, gestures and neighboring figures. It would ask not only what matches, but whether those matches are unusual among appropriately chosen objects. The current records establish the comparison’s starting materials, not a measured resemblance or a transmission chain.
+
+          ## The missing middle may be regional
+
+          A common prehistoric source is not the only historical alternative to independent invention. A regional sequence of borrowing and transformation could explain a particular motif without explaining every distant resemblance.
+
+          [Çiğdem Atakuman proposes that Later Neolithic stamp imagery developed through transformations of earlier regional imagery]{claim=MEM-C005}. Her paper, [*From Monuments to Miniatures*](https://www.researchgate.net/publication/283782270_From_Monuments_to_Miniatures_Emergence_of_Stamps_and_Related_Image-bearing_Objects_during_the_Neolithic), assembles named comparanda in Figure 18 and discusses the proposed transformations on pages 778–779.
+
+          This supplies something a gallery of distant lookalikes cannot: a concrete route for investigating continuity. But the ledger supports the attribution of Atakuman’s model, not a finding that every proposed link is correct. The underlying object histories, dates and comparison baselines still require an audit. Nor does the model establish descent from Pillar 43’s upper forms to the Nimrud bucket.
+
+          The strongest inheritance argument worth pursuing is therefore not “the shapes look alike.” It is that a distinctive set of relationships may survive through changes in medium, scale or local use. Finding dated intermediate examples would strengthen that argument. Finding equally good unrelated comparisons, mistaken identifications or incompatible chronological sequences would weaken the proposed route. Neither outcome would settle all symbolic traditions.
+
+          ## Can resemblance be measured?
+
+          The Pillar 43–moai comparison introduces a different problem: the reliability of the instrument used to judge similarity.
+
+          [Birdmen’s image-pilot account reports substantial disagreement between its Opus and GPT-5.5 judges on the pair’s direct-score assessment]{claim=MEM-C007}. The [page](https://ejhong.github.io/birdmen/pictures.html) describes the pair as unusual under Opus’s direct scoring but ordinary under GPT-5.5’s search comparisons. It also reports a failed feature-coding pilot, an initially positive lineup result explained by object type, and a negative result when the lineup matched object types.
+
+          The positive finding should not disappear behind the negative ones. But neither should the favorable score be treated as archaeological confirmation. The account acknowledges prompts mixing resemblance with historical interpretation, repeated photographs of objects, uneven image presentation and incomplete runs. Raw judgments and calculations have not been reproduced in this ledger, and the models have not been shown to track human resemblance judgments.
+
+          The immediate lesson concerns measurement: changing the judge or comparison conditions can change the answer. A failed instrument does not show that no distinctive resemblance exists. A favorable instrument reading does not show that a tradition travelled. Before using such scores historically, a new test would need authenticated images, equivalent presentation, object-type-matched controls and a clear resemblance-only task.
+
+          ## A teacher leaves by sea
+
+          Stories offer a potentially richer comparison because actions can occur in an order. The relevant question is not merely whether two figures bring knowledge, but what they teach, what happens next and which details belong to each recorded account.
+
+          [The Birdmen culture-bringer audit reports instruction followed by an extraordinary sea departure as a correspondence between its Sahagún and Sarmiento accounts]{claim=MEM-C006}. In the captured [audit excerpt](https://ejhong.github.io/birdmen/civilisers.html), Quetzalcoatl’s account is associated with crafts and departure on a serpent raft; Viracocha’s with instruction followed by walking over the sea with two servants. The audit preserves differences in teaching, companions and travel rather than presenting identical biographies.
+
+          This is a substantive affirmative lead. A teaching–departure sequence is more specific than generic civilizing activity or physical appearance. Its strongest unanswered question is whether the correspondence survives checking the actual witnesses and remains distinctive against other teaching figures.
+
+          The evidential limit is equally concrete: only a short audit excerpt was captured, and the underlying Sahagún and Sarmiento passages were not successfully read in this reconciliation. A selected pair gives no estimate of rarity. The audit also comes from the project that supplied this case’s founding motivation, not an independent historical investigation.
+
+          Common descent, borrowing, independent narrative construction and resemblance introduced by translation or later retelling remain alternatives. Colonial recording calls for examining mediation; it does not itself establish colonial invention. Equally, preserving a genuine correspondence would not identify a lost source civilization. The next step is to compare separate witnesses, not assemble a single composite culture-bringer from their most similar episodes.
+
+          ## Do the motifs travel together?
+
+          A broader inheritance proposal might predict a recurring package rather than isolated similarities. One exploratory analysis asks whether bird-person, cosmic-serpent and world-centre motifs form such a package.
+
+          [Birdmen’s catalogue experiment reports that this bundle does not stand out against its documentation-preserving comparisons]{claim=MEM-C008}. According to the [account](https://ejhong.github.io/birdmen/myths.html), an apparent excess over simple independence disappears when the comparisons preserve features of documentation. In plain terms, the result changes when the analysis accounts for how much material the catalogue records.
+
+          If reproduced, this would count against an unusually co-occurring package of those broad categories in that sample. It is not a test of the exact carvings, “navel” place-name etymologies or a distinctive ordered story. The matrix, class membership and outputs were not checked here. Keyword definitions and mappings between named cultures and catalogue traditions may affect the result; preserving documentation totals does not automatically account for related traditions or contact between them. A sparse catalogue entry is not evidence that a culture lacked a motif.
+
+          This is useful negative evidence with a narrow reach—not a demonstration that all such motifs arose independently. Geographic dispersion alone would not decide that either: an inherited tradition could also become widespread.
+
+          ## What would a deep narrative history have to explain?
+
+          Reconstructing inherited narrative packages faces another test: how consistently does the model treat missing pieces?
+
+          In his [review of Michael Witzel’s *The Origins of the World’s Mythologies*](https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998), [Tok Thompson argues that unequal criteria are applied to missing narrative elements in the Laurasian and Gondwana classifications]{claim=MEM-C010}. He says missing elements in Dene and Inuit/Yupiq traditions are explained as unrecorded, forgotten or untold, while comparable incompleteness helps place San traditions in the other category.
+
+          That is a specific methodological objection, not a verdict established by this edition. The book, underlying narrative corpora and Witzel’s substantive reply have not been inspected here. The strongest inheritance response remains possible: traditions can lose elements, and records can be incomplete. But a discriminating model would need independently justified, symmetrical rules for allowing those losses—not an explanation invented separately for every awkward case.
+
+          Floods require particular care. [Thompson’s review says Witzel’s book revises his earlier treatment of flood myths as specifically Laurasian]{claim=MEM-C011}, instead treating them as universal—a characterization Thompson also disputes. This does not establish the distribution of flood stories. It does warn against treating a flood-based division as settled. A generic flood and a particular ordered punitive-flood sequence are different propositions; checking the book is necessary to determine how that distinction bears on the disagreement.
+
+          Whether a story preserves a local disaster, whether stories share ancestry and whether they remember one common event are also separate questions. The present ledger does not resolve their chronology.
+
+          ## What would change the answer?
+
+          The most informative next work would connect specificity to history:
+
+          - **For images:** freeze descriptive features and fair comparison sets, then audit complete objects and dated intermediates—especially the regional sequence proposed by Atakuman.
+          - **For teaching traditions:** verify the separate passages and compare instruction, companions and departure without merging accounts; include other teaching figures as controls.
+          - **For myth packages:** reproduce the catalogue result and test sensitivity to definitions and cultural dependence; assess ordered narratives separately under consistent rules for missing material.
+
+          Other parts of the question remain open. Animal silhouettes and hand postures need securely identified, contextualized comparanda. Sacred-centre names need linguistic meanings and early attestations, not a substitute category in a mythology catalogue. Specific bird-human and feathered-serpent configurations need more precise treatment than broad motif labels. None has earned a shared-origin verdict here.
+
+          The best current account is therefore plural and unfinished. Local observations are credible; regional inheritance is a concrete research possibility; a teaching–departure correspondence deserves verification; reported negative and unstable results constrain some proposed tests. These do not add up to either a recovered global tradition or a universal explanation by convergence. A lost-civilization account would add further claims about the source’s identity, date and capabilities, none established by the present comparisons.
+
+          The possibility worth keeping is that something more specific than an outline—a relationship, an action, a sequence—may have survived. The task is to find out whether its history survives scrutiny too.
+
+          *This is an AI-generated draft assessment under Aletheia’s constitution, not a ratified judgment or a reviewed human conclusion.*
+      assessment:
+        runId: edition-2026-09-08-e6ab426e-fded-4791-8a11-bae9f03d5805-recomposition-assessment
+        model: gpt-6-astra
+        date: 2026-09-08
+        promptVersion: edition-drafting-v1
+        humanReviewed: false
+        generatedAt: 2026-09-08T00:08:41.615Z
+        inputHash: bda54724995cf836b0a54a61d59b3fc5c14511ddf4ff4d36818e9e8bc26a9610
+        role: draft
+        caseAssessment:
+          verdict: unresolved
+          loadBearing:
+            - MEM-C002
+            - MEM-C003
+            - MEM-C005
+            - MEM-C006
+            - MEM-C007
+            - MEM-C008
+            - MEM-C010
+            - MEM-C011
+          weakestLinks: []
+          synthesis: The ledger supports bounded descriptions of two objects, an attributed regional
+            continuity model, a reported culture-bringer correspondence, exploratory measurement
+            outcomes and a reviewer's methodological criticisms. These bear on the question without
+            establishing a common prehistoric source. MEM-C001–C002 share one pillar and source;
+            MEM-C003–C004 share one relief and catalogue; MEM-C010–C011 share one review. The
+            Birdmen records concern different analyses but share project provenance, and the image
+            pilots also share a target and related corpus. They are not independent archaeological
+            confirmations. The reported image-judge disagreement limits measurement confidence; the
+            catalogue null, if reproduced, would weaken only the sampled broad-bundle proposition.
+            Atakuman's comparanda and the teaching–departure sequence supply affirmative research
+            targets, not demonstrated transmission. Missing links include authenticated and
+            distinctive cross-cultural configurations, verified textual witnesses, defensible
+            baselines, dated intermediates and independent constraints on transmission. No existing
+            claim asserts those missing historical connections, so weakestLinks is empty rather than
+            assigning gaps to otherwise credible descriptive or attribution claims. The broader
+            animal, posture, etymological and environmental-memory strands remain open. Neither
+            universal convergence nor a particular lost civilization nor a Paleolithic narrative
+            lineage is established.
+          steelman: The strongest inheritance argument is that distinctive relationships among motifs or
+            ordered episodes could persist despite changes in medium, local function and narrative
+            detail. Atakuman's regional model and the audit's reported teaching–sea-departure
+            correspondence provide concrete targets for that argument. Local interpretations,
+            regional diversity and missing recorded elements do not logically exclude older
+            inheritance. If these patterns survived primary-source checking, stood out against fair
+            comparisons and predicted dated connecting evidence, transmission could become a
+            stronger explanation. The present negative and unstable pilot reports do not yet answer
+            that more specific case.
+        claimAssessments:
+          - claimId: MEM-C001
+            verdict: well_supported
+            reasoning: The source-anchored claim and MEM-E001 support Dietrich's description of a headless male
+              figure with an erect penis. This is excavation-project commentary rather than an
+              audited original excavation publication. The current plate obscures the lower figure
+              and supplies no independent check of that detail. The observation does not determine
+              meaning or historical transmission.
+            confidence: moderate
+            treatment:
+              plainLanguage: Dietrich describes a headless human figure with an erect penis on Pillar 43.
+              claimType: observation
+              importance: supporting
+              diagnosticity: low
+              diagnosticitySummary: One element of one pillar does not distinguish local invention from inherited
+                imagery.
+              strongestObjection: The supplied photograph cannot check the lower figure, and the original
+                excavation documentation has not been audited here.
+              whatWouldChangeOurMind:
+                - Detailed primary documentation showing a different anatomical or headless
+                  presentation would revise the local assessment.
+                - A distinctive recurring configuration supported by independently contextualized
+                  objects would increase its historical relevance.
+          - claimId: MEM-C002
+            verdict: well_supported
+            reasoning: MEM-E002 directly supports the count, arched rectangular forms and animal associations
+              described by Dietrich. The retrieved-text anchor is not a printed-page locator. The
+              architectural interpretation remains tentative, and the description neither identifies
+              handles nor establishes a match with the Nimrud vessel. This shares provenance with
+              MEM-C001.
+            confidence: moderate
+            treatment:
+              plainLanguage: The pillar's upper register is described as three arch-topped rectangular forms, each
+                associated with an animal.
+              claimType: observation
+              importance: major
+              diagnosticity: low
+              diagnosticitySummary: The configuration defines a comparison target, but its rarity and historical
+                connections have not been established.
+              strongestObjection: Calling the arches handles would import an identity not established by the
+                descriptive evidence.
+              whatWouldChangeOurMind:
+                - Primary object documentation contradicting the count, outlines or animal
+                  associations would change the descriptive assessment.
+                - A predefined comparison recovering unusual shared relationships and dated
+                  intermediates would strengthen an inheritance interpretation.
+          - claimId: MEM-C003
+            verdict: well_supported
+            reasoning: MEM-E003 records the Met catalogue's identification of the bucket and cone on accession
+              32.143.7, with the complete existing plate tied to that object. The institutional
+              object record provides strong support for the bounded description. This assessment
+              relies on the ledger's recorded reading, not a new inspection of pixels. The object is
+              a comparator, not evidence of a demonstrated link to Pillar 43.
+            confidence: high
+            treatment:
+              plainLanguage: The Met relief depicts a winged, eagle-headed figure carrying a bucket and a
+                cone-shaped implement.
+              claimType: observation
+              importance: major
+              diagnosticity: low
+              diagnosticitySummary: Securely identifying one object's equipment does not establish its ancestry or
+                a cross-cultural match.
+              strongestObjection: The comparison can overemphasize the vessel's outline while overlooking its
+                pairing with another implement and its carried position.
+              whatWouldChangeOurMind:
+                - A corrected institutional identification or documentation showing a mismatch
+                  between accession and image would revise the description.
+                - A controlled object comparison and independently supported transmission sequence
+                  would increase its relevance to the wider thesis.
+          - claimId: MEM-C004
+            verdict: well_supported
+            reasoning: MEM-E004 supports the attribution that the Met proposes protective or purifying purposes.
+              It does not establish certain contents or an explicit explanation in the relief's
+              inscription. The interpretation draws on contextual comparisons and remains qualified.
+              It shares its object and catalogue with MEM-C003.
+            confidence: high
+            treatment:
+              plainLanguage: The museum proposes that the bucket and cone served protection or purification.
+              claimType: theory_description
+              importance: supporting
+              diagnosticity: low
+              diagnosticitySummary: A local functional interpretation neither proves independent origin nor
+                demonstrates older inheritance.
+              strongestObjection: The implements' function is a qualified interpretation, not a directly inscribed
+                identification on this relief.
+              whatWouldChangeOurMind:
+                - A fuller catalogue reading or museum correction changing the stated interpretation
+                  would revise the attribution.
+                - Audited ritual texts and object comparisons could strengthen or weaken the
+                  proposed function separately from any ancestry claim.
+          - claimId: MEM-C005
+            verdict: well_supported
+            reasoning: MEM-E005 supports the description of Atakuman's proposal through the abstract and
+              discussion with Figure 18. The attribution is well supported, but the selected
+              comparative corpus and its underlying object histories have not been independently
+              audited. No Pillar 43–Nimrud bucket lineage follows from this record.
+            confidence: high
+            treatment:
+              plainLanguage: Atakuman proposes that later Neolithic stamps transformed imagery already present in
+                the region.
+              claimType: theory_description
+              importance: major
+              diagnosticity: low
+              diagnosticitySummary: The existence of a concrete regional model supplies a research route, not
+                direct confirmation of its historical reconstruction.
+              strongestObjection: Selected comparanda may suggest continuity without showing that the proposed
+                transformations outperform alternative histories.
+              whatWouldChangeOurMind:
+                - A full reading materially changing the scope or content of Atakuman's proposal
+                  would revise the attribution.
+                - An object-level audit confirming chronology, context and distinctive
+                  transformations would strengthen the regional inheritance route.
+                - Misidentifications, chronological breaks or equally strong unrelated comparisons
+                  would weaken that route.
+          - claimId: MEM-C006
+            verdict: well_supported
+            reasoning: "MEM-E006 supports the narrow claim about what the audit reports: teaching followed by
+              extraordinary sea departure, with differences in crafts, companions and travel
+              retained. Only a short excerpt was captured; the underlying Sahagún and Sarmiento
+              accounts were not checked in this reconciliation. The verdict applies to the reported
+              comparison, not its primary-source accuracy, rarity or historical explanation."
+            confidence: moderate
+            treatment:
+              plainLanguage: The audit reports a teaching-then-sea-departure correspondence between its
+                Quetzalcoatl and Viracocha accounts.
+              claimType: methodological
+              importance: major
+              diagnosticity: indeterminate
+              diagnosticitySummary: An ordered sequence could be informative, but unverified witnesses and the
+                absence of a rarity baseline prevent estimating its historical force.
+              strongestObjection: The correspondence may depend on selection, translation or compression; the
+                actual witnesses and other teaching figures have not been compared here.
+              whatWouldChangeOurMind:
+                - Primary passages showing that the audit merged protagonists or altered episode
+                  order would weaken the correspondence.
+                - The same distinctive sequence surviving separate witness checks and fair controls
+                  would strengthen it as a transmission target.
+                - Evidence locating the resemblance in later translation or retelling would favor
+                  mediation over deep inheritance for this pair.
+          - claimId: MEM-C007
+            verdict: well_supported
+            reasoning: MEM-E007 supports the claim that the image-pilot account reports substantial judge
+              disagreement. It also preserves a favorable direct-score account alongside failed
+              coding and negative matched-lineup reports. Raw judgments, images and calculations
+              were not reproduced, and missing numerical fields limit further assessment. This is
+              evidence about reported measurement instability, not a finding that resemblance or
+              inheritance is absent.
+            confidence: moderate
+            treatment:
+              plainLanguage: The project's AI judges gave substantially different assessments of the Pillar
+                43–moai comparison.
+              claimType: methodological
+              importance: major
+              diagnosticity: low
+              diagnosticitySummary: Judge disagreement directly concerns instrument reliability but scarcely
+                distinguishes competing histories of the objects.
+              strongestObjection: Unreproduced results from unevenly presented images and mixed prompts cannot
+                establish a validated measure of resemblance.
+              whatWouldChangeOurMind:
+                - Saved outputs and a reproducible audit contradicting the reported disagreement
+                  would revise this assessment.
+                - Stable resemblance-only rankings under equivalent presentation and appropriate
+                  controls would strengthen measurement validity.
+                - Validation against documented human judgments would clarify what the model scores
+                  measure.
+          - claimId: MEM-C008
+            verdict: well_supported
+            reasoning: MEM-E008 supports the attribution of a reported null under documentation-preserving
+              comparisons. It does not verify the matrix, class rules or calculations. If
+              reproduced, the result would weaken an unusually co-occurring broad bundle in this
+              sample, not specific visual configurations, etymologies or ordered narratives.
+              Documentation controls do not fully address cultural dependence.
+            confidence: moderate
+            treatment:
+              plainLanguage: The catalogue experiment reports no unusual bird-person, cosmic-serpent and
+                world-centre bundle after its documentation controls.
+              claimType: methodological
+              importance: major
+              diagnosticity: low
+              diagnosticitySummary: The reported result is potentially diagnostic against one sampled broad-bundle
+                formulation, but has low reach for prehistoric inheritance generally.
+              strongestObjection: Keyword classes, culture mappings, uneven coverage and unexamined calculations
+                may determine the result.
+              whatWouldChangeOurMind:
+                - Reproducing the exact analysis and finding a robust excess under defensible
+                  controls would change the broad-bundle assessment.
+                - A reproducible null stable across documentation and cultural-dependence
+                  sensitivity checks would strengthen the bounded negative conclusion.
+                - A separate predefined test of distinctive ordered narratives could bear on
+                  inheritance without overturning this broad-category result.
+          - claimId: MEM-C010
+            verdict: well_supported
+            reasoning: MEM-E010 directly supports the attribution of Thompson's criticism about asymmetric
+              treatment of missing narrative elements. The book and underlying corpora were not
+              inspected, so the allegation itself has not been adjudicated. A
+              loss-and-incomplete-recording response remains possible but would require symmetrical,
+              independently justified rules. That response is editorial reasoning, not an attributed
+              reply from Witzel.
+            confidence: high
+            treatment:
+              plainLanguage: Thompson argues that Witzel treats missing story elements differently depending on
+                the classification at stake.
+              claimType: theory_description
+              importance: major
+              diagnosticity: low
+              diagnosticitySummary: If substantiated, the criticism would weaken this classification method, not
+                every hypothesis of inherited mythology.
+              strongestObjection: A critical review alone cannot establish how consistently the book applies its
+                criteria or whether the cited traditions are comparably documented.
+              whatWouldChangeOurMind:
+                - Explicit book criteria and a substantive reply demonstrating consistent treatment
+                  would weaken the criticism's force.
+                - An audit of the named narratives confirming asymmetric exceptions would strengthen
+                  the objection to this formulation.
+                - Symmetrical rules predicting independently selected cases would strengthen the
+                  model's discriminatory value.
+          - claimId: MEM-C011
+            verdict: well_supported
+            reasoning: MEM-E011 supports what Thompson's review says about a revision from specifically
+              Laurasian to universal flood myths. Witzel's book passage and earlier formulations
+              were not retrieved successfully. The record does not establish universality or prove
+              that generic floods and ordered punitive-flood sequences receive the same treatment.
+              It shares provenance with MEM-C010.
+            confidence: high
+            treatment:
+              plainLanguage: Thompson says Witzel's book changed his earlier classification of flood myths as
+                specifically Laurasian.
+              claimType: theory_description
+              importance: supporting
+              diagnosticity: low
+              diagnosticitySummary: A reported classification revision cautions against a settled flood-based
+                division but does not determine the stories' ancestry or age.
+              strongestObjection: The review may compress distinctions between generic flood occurrence and a
+                defined narrative sequence that require checking in the book.
+              whatWouldChangeOurMind:
+                - Reading the book and earlier publications could confirm, narrow or contradict the
+                  review's account of the revision.
+                - A consistent source-grounded distinction between generic floods and ordered
+                  sequences could change the classification's relevance to inheritance.
+    reason: The alternative replaces the incumbent’s two-observation frame with a connected account of
+      the visual, regional and narrative strands now represented in the ledger. Both incumbent claim
+      references and IMG-MEM-P01 are retained. IMG-MEM-P02 is restored because MEM-C003–C004 and
+      their museum source now support its local context; it is not used to establish transmission.
+      No evidence plate or incumbent claim reference is removed, and the generated cover remains
+      outside the evidence. Unsupported assertions about damage and incomplete preservation are
+      replaced by the recorded limitation that the lower figure is obscured in the current plate.
+      The essay preserves affirmative regional and culture-bringer leads, positive as well as
+      negative image-pilot reports, the bounded catalogue null, and Thompson’s specific criticisms
+      without adopting his account as a verified assessment of Witzel. Unadopted report findings,
+      including the flood-pilot bundle and sweeping claims of convergence, colonial invention and
+      Paleolithic inheritance, are not imported. The unchanged unresolved verdict now rests on a
+      broader, explicitly differentiated record rather than the incumbent’s obsolete statement that
+      no myth evidence is present.
+    date: 2026-09-08
+    generatedAt: 2026-09-08T00:08:41.615Z
+    runId: edition-2026-09-08-e6ab426e-fded-4791-8a11-bae9f03d5805-recomposition
+    model: gpt-6-astra
+    promptVersion: edition-drafting-v1
+    inputHash: 862612a5382e99b742251d05b5ff55ce3a9f1d0b58ca499e170d163a396691cc
+    candidateHash: 8faec0c52e05c799c3482d463c1d73b6ef8ec433b744b57e4dcfda70249c81aa
+    ref: null
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      difference:
+        featuredAdded:
+          - MEM-C003
+          - MEM-C004
+          - MEM-C005
+          - MEM-C006
+          - MEM-C007
+          - MEM-C008
+          - MEM-C010
+          - MEM-C011
+        featuredRemoved: []
+        claimReferencesRemoved: []
+        platesRemoved: []
+        articleChanged: true
+        assessmentChanged: true

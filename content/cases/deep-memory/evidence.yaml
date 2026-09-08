@@ -123,3 +123,185 @@
     extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
     runId: codex-two-case-2026-09-07
     date: 2026-09-07
+- id: MEM-E006
+  title: A reported teaching–departure sequence with explicit differences
+  claimIds:
+    - MEM-C006
+  sourceId: SRC-MEM-BIRDMEN-CIVILISERS
+  direction: supports
+  strength: moderate
+  sourceStatement: The excerpt attributes crafts and a serpent-raft departure to
+    Sahagún's Quetzalcoatl account, and instruction followed by walking over the
+    sea with two servants to Sarmiento's Viracocha account. It presents the
+    sequence as a correspondence while distinguishing the teaching, companions
+    and means of travel.
+  editorInference: This supports the claim about the audit's reported comparison.
+    It identifies a more specific research target than generic civilizing
+    activity or physical appearance. Neither common descent nor colonial
+    invention follows from this excerpt; both the correspondence and its
+    differences need checking in the actual witnesses.
+  exactLocator: html-text-v1, characters 248–314 (retrieved text; not a printed-page locator)
+  limitations:
+    - Only a short excerpt was captured, not the full audit or its source
+      passages.
+    - Sarmiento and Sahagún were not successfully read in this reconciliation.
+    - A selected pair supplies no baseline for the rarity of the sequence.
+    - The source is related to the founding project and must not be counted as
+      independent confirmation.
+  reviewState: ai_extracted
+  origin:
+    ref: https://ejhong.github.io/birdmen/civilisers.html — html-text-v1, characters
+      248–314 (retrieved text; not a printed-page locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+    date: 2026-09-08
+- id: MEM-E007
+  title: Reported positive direct scores coexist with judge disagreement and
+    lineup limitations
+  claimIds:
+    - MEM-C007
+  sourceId: SRC-MEM-BIRDMEN-PICTURES
+  direction: supports
+  strength: moderate
+  sourceStatement: The page describes the pair as unusual under Opus's direct
+    scoring but ordinary under GPT-5.5's search comparisons. It separately
+    reports a failed feature-coding pilot, an initially positive lineup result
+    explained by object type, and a negative object-type-matched lineup result.
+    Its qualifications acknowledge prompts mixing resemblance with historical
+    interpretation, repeated-object controls, small candidate images, asymmetric
+    background removal and incomplete runs.
+  editorInference: The reported disagreement is evidence about the proposed
+    measurement instruments, not a resolution of the objects' historical
+    relationship. The positive direct-score finding should remain visible
+    alongside the negative lineup report. A source account of measurement
+    failure cannot establish that humans see no distinctive resemblance, while a
+    favorable model score cannot establish transmission.
+  exactLocator: html-text-v1, characters 6111–6146 (retrieved text; not a
+    printed-page locator)
+  limitations:
+    - Raw judgments, images and calculations were not supplied or reproduced.
+    - Several numerical fields are blank in the retrieved text.
+    - The methods use a selected Commons corpus with uneven object-type and
+      regional coverage.
+    - The page states that the models have not been shown to reproduce human
+      resemblance judgments.
+    - All reported pilots share the project's target comparison and related
+      source corpus; they are not independent archaeological witnesses.
+  reviewState: ai_extracted
+  origin:
+    ref: https://ejhong.github.io/birdmen/pictures.html — html-text-v1, characters
+      6111–6146 (retrieved text; not a printed-page locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-2
+    date: 2026-09-08
+- id: MEM-E008
+  title: A reported bundle null depends on definitions and documentation controls
+  claimIds:
+    - MEM-C008
+  sourceId: SRC-MEM-BIRDMEN-MYTHS
+  direction: supports
+  strength: moderate
+  sourceStatement: The page reports that an excess over simple independence
+    disappears under comparisons preserving documentation. It describes
+    keyword-defined classes, a fixed-margin matrix randomization, random motif
+    bundles and documentation-matched culture sets. It explicitly excludes the
+    specific visual motifs and navel place-name etymologies from what this test
+    establishes and notes thin coverage of several relevant traditions.
+  editorInference: "This supports the claim about the experiment's reported
+    outcome, not verification of its calculations. If reproduced, the result
+    would weaken the claim that these broad categories form an unusually
+    co-occurring package in this sample. It would not exclude inheritance of
+    more specific motifs or sequences. The page's stronger inference from
+    dispersed cosmic-serpent motifs to independent invention is not established
+    by dispersion alone: an old transmitted tradition could also become
+    geographically widespread."
+  exactLocator: html-text-v1, characters 185–273 (retrieved text; not a printed-page locator)
+  limitations:
+    - Matrix, class membership, exclusions and outputs were not checked in this
+      pass.
+    - Several result values are absent from the text capture.
+    - Keyword classes and proxy mappings between named cultures and catalogue
+      traditions may affect the result.
+    - Fixed documentation totals do not automatically control genealogical or
+      contact dependence.
+    - Sparse catalogue absence is not demonstrated absence from a culture.
+  reviewState: ai_extracted
+  origin:
+    ref: https://ejhong.github.io/birdmen/myths.html — html-text-v1, characters
+      185–273 (retrieved text; not a printed-page locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+    date: 2026-09-08
+- id: MEM-E010
+  title: An alleged asymmetry in explaining missing parts of the narrative package
+  claimIds:
+    - MEM-C010
+  sourceId: SRC-MEM-THOMPSON-2013
+  direction: supports
+  strength: moderate
+  sourceStatement: Thompson says that Dene and Inuit/Yupiq traditions lack several
+    elements he understands Witzel's Laurasian storyline to require. He argues
+    that missing elements are explained as unrecorded, forgotten or untold for
+    these traditions, while comparable incompleteness is used to classify San
+    traditions as Gondwana.
+  editorInference: This directly supports the attribution of the criticism. If
+    verified against explicit, consistently applied classification rules and
+    adequately documented narratives, such asymmetry would threaten the model's
+    discriminatory value. The substantive inheritance reply—that traditions can
+    lose elements and records can be incomplete—remains possible, but requires
+    independently justified and symmetrical criteria rather than case-by-case
+    rescue. Witzel's actual reply has not been read here.
+  exactLocator: html-text-v1, characters 7355–7407 (retrieved text; not a
+    printed-page locator)
+  limitations:
+    - The book and the underlying narrative corpora were not inspected in this
+      pass.
+    - A reviewer's account of missing motifs is not a systematic absence audit.
+    - The review is one critical interpretation, not an independent replication
+      or consensus assessment.
+    - The conditional reply is editorial reasoning, not words attributed to
+      Witzel.
+  reviewState: ai_extracted
+  origin:
+    ref: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998 —
+      html-text-v1, characters 7355–7407 (retrieved text; not a printed-page
+      locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+    date: 2026-09-08
+- id: MEM-E011
+  title: The review describes a revised flood classification
+  claimIds:
+    - MEM-C011
+  sourceId: SRC-MEM-THOMPSON-2013
+  direction: supports
+  strength: moderate
+  sourceStatement: Thompson states that Witzel previously argued Gondwana
+    traditions had no flood myths, but that the book, after discussing Dundes's
+    anthology, treats the flood myth as universal rather than Laurasian.
+    Thompson also disputes the universality claim.
+  editorInference: This supports an accurate account of what the review says. It
+    is a reason not to adopt the report's flood-based division as settled or
+    assume that the review merely alleges ignored counterexamples. A generic
+    flood motif and a particular ordered punitive-flood sequence could still be
+    different propositions; the book must be read to determine whether that
+    distinction answers the apparent conflict.
+  exactLocator: html-text-v1, characters 4764–4799 (retrieved text; not a
+    printed-page locator)
+  limitations:
+    - Witzel's relevant book passage and earlier publications were not retrieved
+      successfully.
+    - The reviewer-supplied book page number is not a verified physical PDF
+      locator.
+    - Generic flood occurrence and a defined narrative sequence must not be
+      conflated.
+    - This shares the same review and target book as MEM-E010 and is not
+      independent confirmation of a historical model.
+  reviewState: ai_extracted
+  origin:
+    ref: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998 —
+      html-text-v1, characters 4764–4799 (retrieved text; not a printed-page
+      locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+    date: 2026-09-08

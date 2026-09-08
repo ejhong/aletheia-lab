@@ -88,3 +88,103 @@
     extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
     runId: codex-two-case-2026-09-07
     date: 2026-09-07
+- id: MEM-C006
+  statement: The Birdmen culture-bringer audit reports instruction followed by an
+    extraordinary sea departure as a correspondence between its Sahagún and
+    Sarmiento accounts.
+  theme: culture-bringers
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: https://ejhong.github.io/birdmen/civilisers.html — html-text-v1, characters
+      248–314 (retrieved text; not a printed-page locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+    date: 2026-09-08
+  tier: catalog
+  sourceAnchor:
+    sourceId: SRC-MEM-BIRDMEN-CIVILISERS
+    locator: html-text-v1, characters 248–314 (retrieved text; not a printed-page
+      locator)
+  claimType: methodological
+  independenceGroup: Birdmen culture-bringer source audit
+- id: MEM-C007
+  statement: Birdmen's image-pilot account reports that the direct-score
+    assessment of the Pillar 43–moai pair differs substantially between its Opus
+    and GPT-5.5 judges.
+  theme: visual-comparison
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: https://ejhong.github.io/birdmen/pictures.html — html-text-v1, characters
+      6111–6146 (retrieved text; not a printed-page locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-2
+    date: 2026-09-08
+  tier: catalog
+  sourceAnchor:
+    sourceId: SRC-MEM-BIRDMEN-PICTURES
+    locator: html-text-v1, characters 6111–6146 (retrieved text; not a printed-page
+      locator)
+  claimType: methodological
+  independenceGroup: Birdmen image pilots and shared image corpus
+- id: MEM-C008
+  statement: The Birdmen catalogue experiment reports that its bird-person,
+    cosmic-serpent and world-centre bundle does not stand out against its
+    documentation-preserving comparisons.
+  theme: myth-comparison
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: https://ejhong.github.io/birdmen/myths.html — html-text-v1, characters
+      185–273 (retrieved text; not a printed-page locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+    date: 2026-09-08
+  tier: catalog
+  sourceAnchor:
+    sourceId: SRC-MEM-BIRDMEN-MYTHS
+    locator: html-text-v1, characters 185–273 (retrieved text; not a printed-page
+      locator)
+  claimType: methodological
+  independenceGroup: Birdmen analysis of the 2016 folklore catalogue matrix
+- id: MEM-C010
+  statement: Tok Thompson argues that Witzel applies unequal criteria to missing
+    narrative elements when classifying traditions as Laurasian or Gondwana.
+  theme: myth-comparison
+  rung: attribution
+  reviewState: ai_extracted
+  origin:
+    ref: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998 —
+      html-text-v1, characters 7355–7407 (retrieved text; not a printed-page
+      locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+    date: 2026-09-08
+  tier: catalog
+  sourceAnchor:
+    sourceId: SRC-MEM-THOMPSON-2013
+    locator: html-text-v1, characters 7355–7407 (retrieved text; not a printed-page
+      locator)
+  claimType: theory_description
+  independenceGroup: Thompson 2013 review of Witzel
+- id: MEM-C011
+  statement: Thompson's review says Witzel's book revises his earlier treatment of
+    flood myths as specifically Laurasian.
+  theme: myth-comparison
+  rung: attribution
+  reviewState: ai_extracted
+  origin:
+    ref: https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998 —
+      html-text-v1, characters 4764–4799 (retrieved text; not a printed-page
+      locator)
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+    date: 2026-09-08
+  tier: catalog
+  sourceAnchor:
+    sourceId: SRC-MEM-THOMPSON-2013
+    locator: html-text-v1, characters 4764–4799 (retrieved text; not a printed-page
+      locator)
+  claimType: theory_description
+  independenceGroup: Thompson 2013 review of Witzel
