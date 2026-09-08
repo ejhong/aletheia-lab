@@ -99,13 +99,14 @@ export async function meteredFetch(url, init, { model, workload, inputLimit,
 
 /** The main writer uses the provider's input counter so reserving Astra's
  * million-token context does not prevent a short request. No hidden server
- * state, files or hosted tools are permitted by this text-only client.
- * @param {{model: string, input: string, instructions: string}} body
+ * state or hosted tools are permitted here. Explicit source attachments are
+ * counted by the same provider endpoint, including their images and file text.
+ * @param {{model: string, input: string | Array<object>, instructions: string}} body
  * @param {{apiKey: string, fetchImpl?: typeof fetch}} options
  */
 export async function countResponseInput(body, { apiKey, fetchImpl = fetch }) {
-  if (typeof body.input !== "string" || typeof body.instructions !== "string")
-    throw new BudgetStopped("The drafting client requires an explicit text packet.");
+  if ((typeof body.input !== "string" && !Array.isArray(body.input)) || typeof body.instructions !== "string")
+    throw new BudgetStopped("The drafting client requires an explicit input packet.");
   const res = await fetchImpl("https://api.openai.com/v1/responses/input_tokens", {
     method: "POST", headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
     body: JSON.stringify({ model: body.model, input: body.input, instructions: body.instructions }),

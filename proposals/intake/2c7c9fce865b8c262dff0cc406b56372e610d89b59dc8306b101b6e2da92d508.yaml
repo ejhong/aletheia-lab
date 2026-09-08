@@ -1,0 +1,702 @@
+version: 1
+decisions:
+  - id: 3a9637c0ecb7f5cfa8f53bf429898f3bd4943a06d9f3888e21db7a04badc18b3
+    case: deep-memory
+    stage: research-run
+    decision: partial
+    source: null
+    proposal: null
+    reason: "The available captures warrant a bounded update about prior investigations and a published
+      methodological criticism, not the report's proposed resolution of prehistoric inheritance.
+      Four Birdmen captures recover useful affirmative comparisons, reported negative results and
+      important methodological corrections; they do not independently verify the underlying objects,
+      texts, datasets or experiments. Thompson's review supplies a substantive criticism of Witzel
+      and also challenges the report's account of Witzel's treatment of flood myths, but Witzel's
+      own text and replies remain unread in this pass. Existing MEM-C001–C005, MEM-E001–E005 and
+      their provenance should remain unchanged: failed retrievals do not undo earlier readings. The
+      proposed catalog records distinguish what these sources report from archaeological or
+      historical conclusions. Prospective research retains the strongest inheritance
+      argument—distinctive relationships and ordered narrative packages—while testing selection
+      effects, measurement validity, mediation and alternative histories. The broader animal,
+      hand-posture, sacred-centre, serpent and contact strands remain open rather than being
+      replaced by the narrowly documented bucket comparison. All changes are unratified candidates."
+    date: 2026-09-08
+    generatedAt: 2026-09-08T00:00:06.090Z
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27
+    model: gpt-6-astra
+    promptVersion: research-report-editing-v1
+    inputHash: null
+    candidateHash: null
+    ref: null
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      kind: research-report-editing-v1
+      runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27
+      model: gpt-6-astra
+      promptVersion: research-report-editing-v1
+      researchRunId: case-research-2026-09-07-7a70f8fe-7db2-4822-960e-b05302485556
+      rationale: "The available captures warrant a bounded update about prior investigations and a
+        published methodological criticism, not the report's proposed resolution of prehistoric
+        inheritance. Four Birdmen captures recover useful affirmative comparisons, reported negative
+        results and important methodological corrections; they do not independently verify the
+        underlying objects, texts, datasets or experiments. Thompson's review supplies a substantive
+        criticism of Witzel and also challenges the report's account of Witzel's treatment of flood
+        myths, but Witzel's own text and replies remain unread in this pass. Existing MEM-C001–C005,
+        MEM-E001–E005 and their provenance should remain unchanged: failed retrievals do not undo
+        earlier readings. The proposed catalog records distinguish what these sources report from
+        archaeological or historical conclusions. Prospective research retains the strongest
+        inheritance argument—distinctive relationships and ordered narrative packages—while testing
+        selection effects, measurement validity, mediation and alternative histories. The broader
+        animal, hand-posture, sacred-centre, serpent and contact strands remain open rather than
+        being replaced by the narrowly documented bucket comparison. All changes are unratified
+        candidates."
+      coverage:
+        - strand: Bounded Pillar 43 and Nimrud descriptions
+          state: covered
+          reason: MEM-C001–C004 and their evidence records already supply a limited observational foundation
+            and an attributed museum interpretation. Their provenance and qualifications should be
+            preserved. Covered here means those bounded records exist, not that this commission
+            independently verified them or that transmission has been tested.
+        - strand: Handled forms, local functions and historical inheritance
+          state: investigate
+          reason: The existing pair and MEM-R001 provide a starting point, but the report's
+            functional-independence conclusion exceeds them. Architectural attribution, Assyrian
+            textual support, Halil Rud objects and La Venta's complete context remain consequential
+            checks.
+        - strand: Regional continuity from monuments to portable imagery
+          state: investigate
+          reason: MEM-C005 describes Atakuman's model; MEM-R002 identifies its uncompleted object-level audit.
+            This is substantive affirmative prior work, not a demonstrated lineage or a reason to
+            omit the regional alternative.
+        - strand: Bird-person imagery, bird-and-disc relationships and Rapa Nui
+          state: investigate
+          reason: The founding comparison requires authenticated complete objects and separate treatment of
+            the image pilots. The report's bucket discussion does not answer this strand, and the
+            unidentified supplied bird image remains an authentication problem.
+        - strand: Boars, Lingjiatan and reptile-versus-felid comparisons
+          state: open
+          reason: The report discusses enclosure distributions but does not authenticate the cross-cultural
+            animal pairs. The founding captions and montage are leads only; species, scale, object
+            identity, chronology and comparison baselines remain unresolved.
+        - strand: Culture-bringers and teaching narratives
+          state: investigate
+          reason: Recorded prior work identifies source-specific teaching and water-related correspondences
+            alongside different protagonists and event orders. The primary-text readings and audit
+            should recover that wider argument rather than equating it with claims of European
+            appearance.
+        - strand: White-god narratives, colonial mediation and Indigenous testimony
+          state: investigate
+          reason: This is a distinct criticism within the culture-bringer strand. The report's blanket
+            interpolation claim, attribution to Townsend across regions, and proposed
+            pre-contact/colonial visual contrast require separate checks. Colonial mediation and
+            preservation of older Indigenous material are not mutually exclusive.
+        - strand: Flood narrative transmission and memories of environmental events
+          state: investigate
+          reason: The flood pilot and Berossus offer concrete starting points. Shared narrative descent, local
+            disaster memory and a single worldwide catastrophe require different evidence; regional
+            results alone do not determine the age or origin of a story.
+        - strand: Paleolithic myth reconstruction and oral longevity
+          state: investigate
+          reason: Witzel's model and the identified critique need paired readings. Geographically calibrated
+            claims of millennial environmental memory are a separate promising lead, not proof of
+            intact narrative packages surviving tens of thousands of years.
+        - strand: Sacred centres and navel place names
+          state: open
+          reason: The catalogue experiment can inform broad motif prevalence but cannot establish the
+            meanings, earliest attestations or ancient use of the Greek, Quechua, Rapanui and
+            Turkish expressions. The report leaves this founding strand unanswered.
+        - strand: Hand postures and stone-body conventions
+          state: open
+          reason: The Hoa Hakananai'a reading may establish one comparator, but the regional Anatolian,
+            Polynesian and Andean objects still need complete views. Material constraints are a
+            hypothesis to evaluate, not a demonstrated explanation of every gesture.
+        - strand: Serpents and specifically feathered serpents
+          state: investigate
+          reason: The catalogue audit addresses only broad narrative classes. La Venta, Teotihuacan and Halil
+            Rud require object-specific comparison, and a feathered serpent cannot automatically be
+            identified as the later named Quetzalcoatl.
+        - strand: Lost-source accounts, known contact and mixed histories
+          state: open
+          reason: The report does not reconstruct the strongest proponents' arguments or test a defined
+            lost-source hypothesis. Direct proponent readings and independent contact evidence are
+            needed; neither a local function nor a demonstrated contact episode establishes or
+            excludes the proposed global inheritance.
+        - strand: Indus–rongorongo companion investigation
+          state: open
+          reason: The founding page identifies a separate prior investigation, but its linked results have not
+            been verified here. Its methodological relevance can be inspected without importing a
+            script-descent verdict into this case.
+      deferred:
+        - item: "Direct proponent argument: https://grahamhancock.com/newmanh2/ and the cited passages of
+            Hancock's Magicians of the Gods."
+          reason: Beyond the twelve-reading allowance, but essential to distinguish an inherited symbolic
+            convention or badge-of-office argument from claims about identical technology,
+            astronauts or racial identity. The report's substitutes may not represent the strongest
+            actual argument.
+          reconsiderWhen: Before attributing a particular transmission hypothesis to proponents or proposing a
+            verdict on a lost source; obtain exact passages, cited objects, chronology and
+            substantive replies.
+        - item: "Townsend, Burying the White Gods, via report citation 25:
+            https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpXgHk1t5CoepR25Ez\
+            o5GWNbzhAa3hzL0uyMDSK_OPHVDGw9XB13xsKLJF4Wi-t6vgwSSCOSPYgNikr3agJe6w1Nw0t_c80QvHHKXyXxQ\
+            5b34lWKDT99-O2_cMCQnNZp7iNGVNdCgy5oZ90wzZWWdzo1OBJLgsVy513ONhoCb9dhdkrCFkBIHfoY7EH5ORla\
+            9cy1fwYOgIwMmkwlH7qChAO3J-k__vdKLoUZpS-VECUd13EpxMo8gVG4KR8urJFMAZxsnYF-GA4HhlbZYP2T2vU\
+            tNtDEs="
+          reason: High-priority next reading. Resolve the citation to the original article rather than relying
+            on summaries. A critique of the Cortés-as-Quetzalcoatl story cannot automatically
+            establish the origin of every culture-bringer attribute or an Andean narrative.
+          reconsiderWhen: Before adding any colonial-invention claim; examine Townsend's evidence, scope,
+            source chronology and relevant scholarly replies, including the separately cited Restall
+            work.
+        - item: "Sahagún and Nahua collaborators:
+            https://www.biblioteca-antologica.org/es/wp-content/uploads/2018/05/SAHAG%C3%9AN-Histor\
+            ia-General-de-la-Nueva-Espa%C3%B1a-I.pdf"
+          reason: The previous research lane reported crafts and a serpent-raft departure in Book III, but its
+            transcription locators and original-language relationship remain unchecked here. This is
+            useful affirmative and qualifying material, not merely an example of colonial
+            contamination.
+          reconsiderWhen: After the culture-bringer audit identifies exact passages; collate the transcription
+            with manuscript images and the Nahuatl account where available, preserving collaborators
+            and translation differences.
+        - item: "Cieza de León:
+            https://www.biblioteca-antologica.org/es/wp-content/uploads/2018/03/CIEZA-DE-LE%C3%93N-\
+            Cr%C3%B3nica-del-Per%C3%BA-II.pdf"
+          reason: The recorded chapter V lead flags possible merging of two figures. The report also risks
+            confusing composition and publication dates and distributing a composite set of
+            attributes across chroniclers.
+          reconsiderWhen: Before asserting the earliest appearance of whiteness, beard, book, staff or sea
+            travel; verify each attribute and protagonist in this witness and compare Betanzos and
+            Sarmiento.
+        - item: "Bochica source history:
+            https://es.scribd.com/document/742918093/Simon-Fray-Pedro-Noticias-Historiales-v-2-2 and
+            https://www.cambridge.org/core/books/coming-of-the-kingdom/muisca-and-the-problem-of-re\
+            ligion/C9B94ED1332E127F99456B03D36962C9"
+          reason: Simón's OCR and reprint identity require authentication. The Cobo Betancourt lead is
+            especially valuable for testing both colonial reinterpretation and the survival of
+            Indigenous memory; previously reported footnotes are not newly verified locators.
+          reconsiderWhen: Extend the narrative matrix to Bochica; inspect scans, teacher names, flood-reliever
+            identity, event sequence and Cobo Betancourt's underlying archival references.
+        - item: "Original culture-hero lineups: https://ejhong.github.io/birdmen/heroes.html"
+          reason: The founding page reports a positive similarity signal, but recognisable modern summaries,
+            incomplete runs and the chosen baseline limit interpretation. The V2 audit is not a
+            rerun or independent replication of V1.
+          reconsiderWhen: Before publishing any lineup percentage or proposing a replacement experiment; trace
+            completed trials, prompts, controls and saved outputs.
+        - item: "Pinned prior-work repository and image register:
+            https://github.com/ejhong/birdmen/tree/e9666a7315e1af8d8e00d84e83dc7c2573d9bde3 and
+            https://ejhong.github.io/birdmen/data/image-register.json"
+          reason: These preserve version and discovery routes for the five studies and unidentified
+            photographs. The supplied founding snapshot contains neither linked image pixels nor
+            complete datasets, and its permission does not confer rights in third-party images.
+          reconsiderWhen: A reading relies on a quantitative result, an altered illustration or a supplied
+            animal/bird image; record the exact file version and follow provenance to the original
+            object.
+        - item: "Banning's architectural argument, via report citation 3:
+            https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEXOwcpptxiFPXY2UL\
+            Sz8YwO-sdn-OtelcpPFcIq6jHJEpquwqHf3o9ux-J3phkZE1eRNYPJfGQS93rjWbWz6Q58Mvq2SVRjPbPnwR5Hh\
+            23BiEQeyGDux67wz3BqEebK4uohDI7rNwQbi9S19Bc5Bj9Qzub1NEpJtl4A=="
+          reason: Resolve and read the original paper, accompanying comments and reply. The report may
+            conflate the argument for roofed domestic/sacred buildings with a particular
+            interpretation of the upper motifs.
+          reconsiderWhen: The Dietrich rereading establishes the citation chain, or an architectural claim is
+            proposed. Test roofing and motif identification separately; failure of one roof
+            reconstruction does not force an astronomical interpretation.
+        - item: "Animal context:
+            https://www.dainst.blog/the-tepe-telegrams/2016/07/15/boars-in-gobekli-tepes-enclosure-\
+            c-just-a-story-of-hunters-and-prey/ and
+            https://www.dainst.blog/the-tepe-telegrams/2017/02/03/enclosure-b-a-short-overview/"
+          reason: These are direct excavation-project routes for the neglected animal strand. Check whether
+            distributions are predominances rather than exclusivities and whether clan-marker
+            interpretations are tentative. They cannot by themselves resolve the Lingjiatan
+            comparison.
+          reconsiderWhen: The next allowance permits animal authentication; extract named pillars and
+            sculptures, species uncertainty, complete scenes and the underlying excavation
+            references.
+        - item: Lingjiatan tomb 07M23 pig-form carving and the unidentified museum boar photograph, discovered
+            through the founding image register.
+          reason: The tomb number and 88 kg weight are caption-derived leads. No secure excavation or museum
+            URL for the exact comparator has been supplied, so inventing an object record would be
+            inappropriate.
+          reconsiderWhen: An institutional Chinese excavation report or catalogue identifies the carving and
+            its dimensions, material and context, and the other photograph is securely matched to an
+            object.
+        - item: "Halil Rud wear study: https://ijas.usb.ac.ir/article_1442.html"
+          reason: A potentially informative material test omitted from the report. Read the actual wear
+            observations separately from proposed suspension or function, and inspect acquisition
+            history, archaeological context and whether the studied object is the gallery object.
+          reconsiderWhen: Extend MEM-R001 beyond the existing pair; compare complete geometry, wear and
+            serpent imagery without assuming that a handbag-shaped stone object is a container.
+        - item: "La Venta scholarly context, via report citation 14:
+            https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs0v6Ih9vOMM1qfnG7\
+            MRtL7V1Fp25xTWi5CU0fkfdMjiHPW5XuGbEFN_MZ3cu-ga983u4ArFP4TWqiK2R2s6Du4p4oL664pp86v1_llc0\
+            31ZKn4ZkyX80RvTNikaqeKW_bEZP-oURK6EdF9xu1x2eCXL-NBCZRP7TyZurE21Yhcu-un_5vSmQval37eo-cL5\
+            dIbQtuy9DgqG3SiUYlN-Y3JG7noHJgtg=="
+          reason: Resolve the scholarly source and follow its object documentation. Monument 19's date,
+            carried form, serpent identification and proposed contents are not established by the
+            report's social-media citations or generic Olmec date range.
+          reconsiderWhen: Before adding a La Venta claim or plate; obtain complete institutional photographs
+            and distinguish direct description from copal, hallucinogen or other functional
+            hypotheses.
+        - item: "Mesoamerican bag and bloodletting comparison, report citation 21:
+            https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMiZKEdRJJgfHEDrS0\
+            ffejQjupvSEY_R_LPkzJVKQ0CGQpXhDovNwlio1hivSkqMRYcjnVDi5cBHKefpjFMCWCtJMTySd8ggMvk_2gdJp\
+            F_unsRdzMfqh070zM4U5Qb1bj53T0DfzOGMvTxbjTlry-bTTfAEg="
+          reason: Potentially useful local comparative evidence, but a finding about Classic Maya objects
+            cannot silently establish the contents of an earlier Olmec pouch.
+          reconsiderWhen: The actual publication and illustrated objects are identified; evaluate the proposed
+            historical and iconographic bridge to Monument 19.
+        - item: "Assyrian catalogue:
+            https://resources.metmuseum.org/resources/metpublications/pdf/Assyrian_Reliefs_and_Ivor\
+            ies_in_The_Metropolitan_Museum_of_Art_Palace_Reliefs_of_Assurnasirpal_II_an.pdf"
+          reason: Prior history contains both a rejected out-of-scope extraction and an incorrectly confirmed
+            page locator. Preserve those failures, but do not treat the later model's claim that the
+            accession is absent as an independently verified negative finding.
+          reconsiderWhen: Exact placement or fuller implement context matters; search the whole catalogue and
+            inspect rendered pages, accession captions and printed versus physical pagination.
+            Follow ritual-text references separately from the Standard Inscription.
+        - item: "Archaeoastronomical argument and reply:
+            https://www.dainst.blog/the-tepe-telegrams/2017/07/03/more-than-a-vulture-a-response-to\
+            -sweatman-and-tsikritsis/ and the original Sweatman–Tsikritsis paper linked there."
+          reason: Worth retaining as a competing interpretation, but it should not displace the founding
+            cross-cultural comparisons. Neither the current ledger nor a quoted objection
+            establishes a completed statistical audit.
+          reconsiderWhen: Read the original mappings, date selection, probability calculation, archaeological
+            criticism and subsequent author replies together; test selection freedom and independent
+            predictions without assuming that local symbolism excludes celestial meaning.
+        - item: "Australian coastal-memory research, beginning with report citation 47:
+            https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHF8_4-9XN6SLCoUvK\
+            94LLcro-ObgG4hZkqJsYAD13WgmzbGIChtVBFb_soyRKrMR5vLs69v4g_kVtQ1SbO-7ewsUfao7UA6VJVj7W7S2\
+            JR5GYbuQBr66OchBTX_CawmKROReG3Q1ZdOksOSm_JT6sdpQ1Dwae9BZouKg="
+          reason: A valuable affirmative lead, but the report cites a preprint route for several disparate
+            claims. Identify its actual subject and follow the original coastal-inundation studies,
+            including Nunn and Reid's work, rather than accepting a claim of proved fidelity.
+          reconsiderWhen: A primary study and its recorded traditions are accessible; examine collection
+            history, geographical specificity, sea-level reconstruction, inferred minimum age,
+            alternative explanations and critiques. Do not extrapolate directly to a global
+            Paleolithic flood template.
+        - item: "Underlying folklore catalogue: https://www.ruthenia.ru/folklore/berezkin/; d'Huy's cited
+            comparative-mythology work and its primary analyses."
+          reason: The catalogue provides source chains, not automatically independent traditions or absence
+            data. More specific phylogenetic approaches may offer a useful alternative to Witzel's
+            broad classification, but the founding popular summary does not establish their results.
+          reconsiderWhen: The myth and flood pilots identify consequential entries or a bounded narrative
+            family; inspect original attestations, coding, tree assumptions, horizontal borrowing
+            and sensitivity analyses.
+        - item: "Sacred-centre etymologies: Garcilaso's Cusco gloss, early Rapanui records of Te Pito o te
+            Henua, Greek omphalos attestations, and the history of Göbekli Tepe's modern name.
+            Discovery route:
+            https://imaginarapanui.com/en/easter-island-sightseeing/easter-island-archaeology/ahu-t\
+            e-pito-kura/"
+          reason: The tourism page is only a lead. The four expressions are different kinds of linguistic and
+            historical evidence; translations and place-name antiquity need independent checking.
+          reconsiderWhen: Early texts, dictionaries and specialist linguistic discussions are obtained;
+            distinguish literal navel, centre or end senses, later glosses, physical stones and
+            names used by ancient builders.
+        - item: "Hand-posture comparanda: Enclosure D central pillars, Urfa Man, Karahan Tepe figure, moai and
+            Ponce monolith; source routes in https://ejhong.github.io/birdmen/ and its image
+            register."
+          reason: The founding gallery supplies targets but not verified complete object documentation.
+            Abdomen, groin and chest gestures and held implements must remain distinct; a
+            stone-strength explanation requires evidence or suitable controls.
+          reconsiderWhen: Obtain institutional views and regional corpora matched by medium and preservation,
+            then specify observable features before testing the proposed resemblance.
+        - item: "Broader bird-human and serpent sequences: Lascaux, Nevalı Çori, Egyptian examples, Cacaxtla,
+            Cahokia, Etowah, Orongo, Teotihuacan and the cited codices; discovery routes in
+            https://ejhong.github.io/birdmen/."
+          reason: These remain worthwhile object-specific leads beyond the current allowance. The gallery
+            cannot establish a single global type, and multiple objects within a known regional
+            tradition should not be counted as independent origins.
+          reconsiderWhen: Exact objects, complete scenes, dates and primary catalogues are identified; compare
+            costumes, hybrid anatomy, gestures and associated implements, preserving documented
+            regional transmission as a control.
+        - item: Pre-contact deity identity and facial-hair audit, including the Gate of the Sun staff-bearing
+            figure, named codex images and the founding Moche-vessel leads.
+          reason: The proposed before-and-after Viracocha plate assumes the very identity it needs to
+            establish. Facial hair, ritual paint and stylized anatomy cannot straightforwardly
+            determine ancestry, and absence from a selected gallery cannot prove universal absence.
+          reconsiderWhen: Secure object records and specialist identification arguments are available; test
+            individual attributes and naming histories, not an undefined category of Caucasian
+            appearance.
+        - item: "Independent Pacific contact evidence: Ioannidis et al. (2020), Native American gene flow into
+            Polynesia predating Easter Island settlement; Fehren-Schmitz et al. (2017), Genetic
+            ancestry of Rapanui before and after European contact; subsequent ancient-DNA studies
+            and replies."
+          reason: The founding bibliography identifies consequential evidence for an intermediate contact
+            explanation, but supplies no inspected paper here. Genetic contact would not establish
+            transmission of any particular motif or an Anatolian connection.
+          reconsiderWhen: Before describing the relevant populations as unconnected; verify samples, dating,
+            admixture inference, limitations and how later studies change the earlier results.
+        - item: "Indus–rongorongo prior investigation: https://ejhong.github.io/rongo/"
+          reason: Deferred for scope and allowance, not because convergence has already been demonstrated. It
+            is a separate companion investigation whose image-fidelity and inventory methods may
+            inform this case.
+          reconsiderWhen: A bounded methodological cross-reference would improve the visual test, or a
+            specific script-transmission claim becomes part of the edition; inspect its sources and
+            results without altering frozen studies.
+        - item: Geological catastrophe mechanisms and monument construction methods.
+          reason: These belong primarily to the existing YDIH and megalithic-casting cases. They should not
+            consume this allowance or substitute for demonstrating the source history of a symbol or
+            story.
+          reconsiderWhen: A precisely stated Deep Memory claim depends on an assessed result in either case;
+            record that dependency rather than importing a blanket verdict.
+        - item: https://www.tertullian.org/fathers/eusebius_chronicon_02_text.htm
+          reason: source text outside readable size limits; no truncated reading
+          reconsiderWhen: Read the Oannes and Xisuthrus material in context, beginning with the previously
+            reported sections 4 and 7, whose locators require checking. What arts are taught, when
+            does teaching occur relative to the flood, and what is said about preserving writings?
+            Separate the ancient attributed account, its chain of preservation, translation and
+            bracketed modern editorial speculation.
+        - item: https://www.gutenberg.org/cache/epub/20218/pg20218-images.html
+          reason: source text outside readable size limits; no truncated reading
+          reconsiderWhen: Check Sarmiento's account, especially the previously identified chapters VI–VII,
+            against the edition's introduction and notes. Record the protagonists, creation or
+            catastrophe sequence, actions, sea departure, physical descriptions and future
+            messengers. Does this witness actually promise the figure's personal return? Distinguish
+            composition, publication and translation dates.
+        - item: https://www.metmuseum.org/art/collection/search/322614
+          reason: source HTTP 429
+          reconsiderWhen: Reconsider SRC-MEM-MET-321437 and MEM-C003–C004 in full context. Verify accession,
+            dating, complete scene, hand–handle relationship, and the museum's exact degree of
+            confidence about implements and figure identity. What does its Standard Inscription
+            discussion actually say, and which separate textual or figurine comparisons support
+            purification? Do not infer bucket contents or terminology unless this source supplies
+            them.
+        - item: https://www.dainst.blog/the-tepe-telegrams/2016/10/14/of-animals-and-a-headless-man-gobekli-tepe-pillar-43/
+          reason: fetch failed
+          reconsiderWhen: Reread beyond the short anchors for MEM-C001–C002. What does Dietrich describe about
+            the bird, disc, upper forms and their relationships, and what remains uncertain?
+            Identify the actual attribution and evidentiary basis of architectural interpretations
+            and any proposed later parallels. Separate article text from comments; identify
+            underlying publications and adequate complete photographs.
+        - item: https://www.researchgate.net/publication/283782270_From_Monuments_to_Miniatures_Emergence_of_Stamps_and_Related_Image-bearing_Objects_during_the_Neolithic
+          reason: source HTTP 403
+          reconsiderWhen: Extend the selected reading behind MEM-C005 and MEM-E005 to the argument, comparison
+            criteria and actual figures. Audit the previously cited Fig. 18 and discussion against
+            the article's chronology and references. Which named objects support transformation of
+            regional imagery, which links are inferred, and what alternatives or gaps does Atakuman
+            acknowledge?
+        - item: https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/hoa-hakananaia-a-new-study-of-an-easter-island-statue-in-the-british-museum/E27FFA7F4380AEFA9ECD0861613D6AC7
+          reason: source HTTP 403
+          reconsiderWhen: Obtain the full study if available and verify its bibliographic metadata. What do
+            the documented surface study and complete views establish about Hoa Hakananai'a's bird
+            figures, central forms, hands, belt and carving sequence? Separate the statue's dating
+            from later carving dates, visible relief from reconstruction, and published
+            interpretation from observation. An abstract alone cannot verify the detailed
+            comparison.
+        - item: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHe-vLTXfScRNrFaxipWmWKvNo8V981Jbb5DJkN3z0gNn3eZ5AhIV_qTmv4gFbbVkZzSUGHukk3wXs1_9nDUXH7GMz9vknU5sin13IbNx9Y4_Q-zvzsCT0CFi6aghSYRmgZBzGVSe_XVQN1rhjQBz3m8VDuvZxAa5CD5qeud0kjChfbIVgGlJpeZPyeX7by2s3f
+          reason: source text outside readable size limits; no truncated reading
+          reconsiderWhen: Resolve report citation 41 to its actual Oxford source and seek the relevant text of
+            Witzel's The Origins of the World's Mythologies. What is the strongest argument from
+            ordered narrative packages, what dates are inferred, and what independent evidence
+            constrains them? Verify the claimed role of Nostratic, treatment of borrowing and
+            counterexamples, and whether a publisher summary is all that is accessible.
+        - item: Adopt the report's verdict of resolution against a lost civilization and in favor of
+            Paleolithic inheritance and convergence.
+          reason: The captures do not establish either sweeping conclusion. Local function does not
+            demonstrate independent origin; a reconstruction compatible with migration history is
+            not thereby validated. No completed source-grounded comparison in this update
+            establishes the proposed global history.
+          reconsiderWhen: Defined hypotheses have separately assessed evidence for distinctive resemblance,
+            chronology, transmission and the additional attributes of a proposed source
+            civilization.
+        - item: "Primary culture-bringer readings:
+            https://www.tertullian.org/fathers/eusebius_chronicon_02_text.htm and
+            https://www.gutenberg.org/cache/epub/20218/pg20218-images.html"
+          reason: Both retrievals exceeded readable size limits. The short civilisers capture cannot
+            substitute for Berossus through Eusebius or Sarmiento. Earlier reported sections and
+            chapters remain leads, not newly checked locators.
+          reconsiderWhen: Context-preserving extracts of the Oannes and Xisuthrus passages and Sarmiento
+            chapters VI–VII, with edition introductions and notes, can be read. Check teaching,
+            catastrophe order, preserved writings, protagonists, sea departure and future messengers
+            separately.
+        - item: "Full culture-bringer audit and original lineups:
+            https://ejhong.github.io/birdmen/civilisers.html and
+            https://ejhong.github.io/birdmen/heroes.html"
+          reason: Only a short affirmative passage from the audit was captured. The full passage matrix,
+            revisions, underlying sources and original lineup outputs were not supplied. Neither the
+            reported lineup percentage nor the audit's full coverage is verified.
+          reconsiderWhen: Read the complete audit, Q1/Q3/V3 source entries, V1 prompts and completed trials.
+            Distinguish a source audit from a rerun of the similarity experiment.
+        - item: "Sahagún and Nahua collaborators:
+            https://www.biblioteca-antologica.org/es/wp-content/uploads/2018/05/SAHAG%C3%9AN-Histor\
+            ia-General-de-la-Nueva-Espa%C3%B1a-I.pdf"
+          reason: The reported craft and serpent-raft passages remain primary-source leads. The present
+            capture reports them secondhand and does not verify the transcription or its
+            relationship to the Nahuatl account.
+          reconsiderWhen: Read Book III's relevant passages in context and collate with manuscript images and
+            the Nahuatl text where available, preserving collaborator and translator attribution.
+        - item: "Cieza de León and Betanzos; supplied Cieza route:
+            https://www.biblioteca-antologica.org/es/wp-content/uploads/2018/03/CIEZA-DE-LE%C3%93N-\
+            Cr%C3%B3nica-del-Per%C3%BA-II.pdf"
+          reason: The earlier chapter V lead flags potentially merged protagonists. The report's chronological
+            sequence and composite physical attributes cannot be admitted without checking each
+            witness and distinguishing composition from publication.
+          reconsiderWhen: Each proposed attribute—teaching, sea travel, whiteness, beard, robe, book and
+            staff—is located in an identified witness and compared with Sarmiento without combining
+            biographies silently.
+        - item: "Bochica source history:
+            https://es.scribd.com/document/742918093/Simon-Fray-Pedro-Noticias-Historiales-v-2-2 and
+            https://www.cambridge.org/core/books/coming-of-the-kingdom/muisca-and-the-problem-of-re\
+            ligion/C9B94ED1332E127F99456B03D36962C9"
+          reason: Simón's OCR, edition identity and teacher/flood-reliever names remain unchecked. Cobo
+            Betancourt's reported qualifications about Indigenous memory are valuable leads but were
+            not captured here.
+          reconsiderWhen: Read authenticated scans and the relevant modern analysis, including its archival
+            references, before determining which episodes belong to which named figure.
+        - item: Blanket colonial-invention claim and attribution to Townsend across Mexico and the Andes.
+          reason: Townsend's original article and relevant replies were not captured. A criticism of the
+            Cortés-as-Quetzalcoatl narrative cannot automatically establish the origin of every
+            teaching tradition or Andean attribute. Colonial recording alone does not prove
+            invention.
+          reconsiderWhen: Resolve report citation 25 to Burying the White Gods, read its evidence and scope
+            alongside Restall and the primary witnesses, and formulate separate claims for
+            particular details.
+        - item: "Direct lost-source arguments: https://grahamhancock.com/newmanh2/ and the cited passages of
+            Hancock's Magicians of the Gods."
+          reason: No firsthand proponent account was captured. Arguments about inherited conventions or badges
+            of office must not be replaced with claims about identical technology, astronauts or
+            racial identity.
+          reconsiderWhen: Before attributing or assessing a particular lost-source hypothesis, obtain its
+            exact proposed correspondences, chronology, connecting evidence and replies to
+            criticism.
+        - item: "Reconsider the Met source: https://www.metmuseum.org/art/collection/search/322614"
+          reason: HTTP 429 prevented a new reading. Retain SRC-MEM-MET-321437 and MEM-C003–C004/MEM-E003–E004,
+            including their distinction between a qualified local interpretation and historical
+            origin. Do not add the report's claims about certain contents, terminology or the
+            Standard Inscription.
+          reconsiderWhen: The full museum description, inscription discussion and references are accessible;
+            check which separate ritual texts or figurine comparisons support the implement
+            interpretation.
+        - item: "Reconsider Dietrich's Pillar 43 discussion:
+            https://www.dainst.blog/the-tepe-telegrams/2016/10/14/of-animals-and-a-headless-man-gob\
+            ekli-tepe-pillar-43/"
+          reason: Retrieval failed. Existing descriptions and qualifications remain intact, but no new
+            bird–disc relationship, architectural attribution or later parallel can be extracted
+            from this pass.
+          reconsiderWhen: Read the complete article separately from comments and follow its original
+            publications and photographs; verify the attribution and uncertainty of each proposed
+            interpretation.
+        - item: "Atakuman regional continuity audit:
+            https://www.researchgate.net/publication/283782270_From_Monuments_to_Miniatures_Emergen\
+            ce_of_Stamps_and_Related_Image-bearing_Objects_during_the_Neolithic"
+          reason: HTTP 403 blocked the planned extension. MEM-C005 and MEM-E005 already preserve an
+            affirmative regional model, while MEM-R002 describes the unperformed object-level audit.
+            No duplicate or stronger lineage claim is warranted.
+          reconsiderWhen: The full article and illustrated comparanda can be inspected, especially the
+            previously cited Fig. 18, and traced to excavation records, dates and alternative
+            identifications.
+        - item: "Hoa Hakananai'a primary study:
+            https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/hoa-hakananaia-\
+            a-new-study-of-an-easter-island-statue-in-the-british-museum/E27FFA7F4380AEFA9ECD086161\
+            3D6AC7"
+          reason: HTTP 403 prevented inspection. The image-pilot account does not authenticate the statue's
+            individual motifs, dates or carving sequence.
+          reconsiderWhen: Obtain the full study and complete documented views, separating statue dating from
+            later carvings and observation from reconstruction.
+        - item: "Verify Birdmen image, myth and flood results against saved data:
+            https://github.com/ejhong/birdmen/tree/e9666a7315e1af8d8e00d84e83dc7c2573d9bde3 and
+            https://ejhong.github.io/birdmen/data/image-register.json"
+          reason: The captures contain narrative reports, missing dynamically populated values and no raw
+            outputs or image pixels. They support attributed methodological records, not
+            independently reproduced statistics or verified claims of illustration alteration.
+          reconsiderWhen: Read versioned prompts, images, coding, exclusions and result files and reproduce
+            the relevant calculations. Preserve the distinction between the pinned founding version
+            and later live-page revisions.
+        - item: Witzel's The Origins of the World's Mythologies, report citation 41's Oxford route, and
+            substantive author or defender replies to Thompson.
+          reason: The attempted Oxford reading exceeded readable size limits. Thompson's review is evidence of
+            his criticism, not a substitute for Witzel's argument. Exact narrative definitions,
+            inferred dates, use of Nostratic and treatment of flood myths remain unchecked against
+            the book.
+          reconsiderWhen: Read the relevant book sections, including passages identified by the reviewer as
+            pages 53, 193, 284 and 474, with surrounding context and substantive replies. These are
+            reviewer-supplied locators, not verified page anchors.
+        - item: Thompson's underlying counterexamples and methodological references.
+          reason: The review names Dene, Inuit/Yupiq and San comparisons and cites Dundes, Thompson, and
+            McMillan and Hutchinson, but their primary materials were not captured. The review's
+            forceful evaluative and racial characterizations are not independently established
+            findings here.
+          reconsiderWhen: Check the relevant recorded narratives, classification decisions and original
+            references, including McMillan and Hutchinson's When the Mountain Dwarfs Danced, and
+            assess Witzel's response to the specific objections.
+        - item: Australian coastal-memory research and the preprint behind report citation 47, including the
+            original Nunn and Reid studies.
+          reason: No primary study was captured. The report's claim of proved fidelity and its extrapolation
+            from millennial environmental memory to a global Paleolithic narrative template are
+            unsupported.
+          reconsiderWhen: Inspect recorded traditions, collection histories, geographical specificity,
+            sea-level reconstructions, inferred ages and competing explanations. Assess local memory
+            longevity separately from worldwide narrative descent.
+        - item: "Underlying folklore catalogue and more specific phylogenetic work:
+            https://www.ruthenia.ru/folklore/berezkin/ and the primary analyses behind the cited
+            d'Huy summary."
+          reason: The Birdmen catalogue account is a derivative analysis. Catalogue entries, cultural
+            dependencies, apparent absences and reconstruction assumptions require their own audit.
+          reconsiderWhen: A bounded narrative family or consequential catalogue entry is selected; inspect
+            original attestations, coding, borrowing assumptions and sensitivity to sampling and
+            classification.
+        - item: Banning's architectural argument and the report's proposed decisive roof test.
+          reason: The original paper, comments and reply were not captured. The report may conflate roof
+            feasibility with identification of the upper motifs. Failure of one roof reconstruction
+            would not force an astronomical interpretation.
+          reconsiderWhen: Resolve report citation 3 to the original publication, verify its actual motif
+            proposal, and compare later structural evidence while testing roofing and iconographic
+            identity as separate propositions.
+        - item: "Animal context:
+            https://www.dainst.blog/the-tepe-telegrams/2016/07/15/boars-in-gobekli-tepes-enclosure-\
+            c-just-a-story-of-hunters-and-prey/ and
+            https://www.dainst.blog/the-tepe-telegrams/2017/02/03/enclosure-b-a-short-overview/"
+          reason: Neither source was captured. The report's enclosure distributions, species identifications
+            and clan-marker interpretation remain unverified, especially its shift from predominance
+            to exclusivity.
+          reconsiderWhen: Read the named pillar and sculpture descriptions with complete scenes and underlying
+            excavation references; preserve reptile/felid uncertainty and distinguish distribution
+            from inferred social meaning.
+        - item: Lingjiatan tomb 07M23 pig-form carving and the unidentified museum boar photograph.
+          reason: Object identity, weight, scale, dates and comparative features remain founding-caption
+            leads. No institutional record for the exact pair was captured.
+          reconsiderWhen: Obtain the Chinese excavation or museum record and securely identify the other
+            sculpture; compare both with a defined corpus of pig and boar carvings.
+        - item: "Halil Rud wear study: https://ijas.usb.ac.ir/article_1442.html"
+          reason: No reading was available. Wear, suspension, function and identity with the gallery object
+            must remain distinct questions rather than being inferred from a handbag-like outline.
+          reconsiderWhen: Inspect the studied object, acquisition history, context and actual wear
+            observations before extending MEM-R001 to this comparator.
+        - item: La Venta Monument 19 and the scholarly sources behind report citations 14 and 21.
+          reason: No object record or scholarly text was captured. The report's date range, copal
+            identification, hallucinogen proposal and Classic Maya bloodletting analogy cannot
+            establish the contents of the Olmec object.
+          reconsiderWhen: Resolve the citations, obtain complete institutional photographs and primary
+            documentation, and assess each functional proposal and its chronological bridge
+            separately.
+        - item: "Assyrian catalogue:
+            https://resources.metmuseum.org/resources/metpublications/pdf/Assyrian_Reliefs_and_Ivor\
+            ies_in_The_Metropolitan_Museum_of_Art_Palace_Reliefs_of_Assurnasirpal_II_an.pdf"
+          reason: The historical rejected extraction and incorrect page confirmation must remain preserved.
+            Neither those failures nor a later model's absence assertion establishes whether the
+            catalogue documents accession 32.143.7 or its placement.
+          reconsiderWhen: Inspect the actual rendered accession captions and relevant text with physical and
+            printed pagination distinguished; investigate placement and ritual terminology without
+            substituting inscription repetition for the requested answer.
+        - item: "Archaeoastronomical argument, criticism and reply:
+            https://www.dainst.blog/the-tepe-telegrams/2017/07/03/more-than-a-vulture-a-response-to\
+            -sweatman-and-tsikritsis/ and the original Sweatman–Tsikritsis paper."
+          reason: No relevant source was captured and no statistical audit was performed. Local symbolism and
+            celestial reference need not be mutually exclusive; a phallic detail alone is not a
+            completed test of the astronomical model.
+          reconsiderWhen: Read original mappings, date choices, probability calculations, archaeological
+            objections and subsequent replies together, then test selection freedom and independent
+            predictions. Keep geological mechanism assessment in the YDIH case.
+        - item: "Sacred-centre etymologies: Greek omphalos, Garcilaso's Cusco gloss, Te Pito o te Henua and
+            Göbekli Tepe's naming history; discovery route
+            https://imaginarapanui.com/en/easter-island-sightseeing/easter-island-archaeology/ahu-t\
+            e-pito-kura/"
+          reason: The captured catalogue pilot explicitly does not test these place names. Meanings, earliest
+            attestations and use by ancient builders remain separate historical and linguistic
+            questions.
+          reconsiderWhen: Obtain early texts, dictionaries and specialist discussions that distinguish literal
+            navel, centre and end senses, modern names and later explanatory glosses.
+        - item: "Hand-posture comparanda: Enclosure D pillars, Urfa Man, Karahan Tepe figure, moai and Ponce
+            monolith."
+          reason: No complete object documentation was captured. Abdomen, groin and chest gestures and held
+            implements cannot be collapsed into one pose, and stone-strength constraints remain an
+            explanation to test.
+          reconsiderWhen: Institutional views and regional corpora permit a predeclared comparison matched for
+            medium, preservation and object type.
+        - item: "Broader bird-human and serpent sequences: Lascaux, Nevalı Çori, Egyptian examples, Cacaxtla,
+            Cahokia, Etowah, Orongo, Teotihuacan and named codices."
+          reason: The founding gallery supplies leads but the current captures do not authenticate these
+            objects or their historical relationships. Broad bird-person and cosmic-serpent
+            categories are not equivalent to specific hybrid anatomy, costume or feathered-serpent
+            imagery.
+          reconsiderWhen: Exact objects, complete scenes, dates and primary catalogues are available, with
+            known regional transmission and object dependence retained in the comparison.
+        - item: Pre-contact deity identity and facial-hair audit, including the proposed before-and-after
+            Viracocha plate.
+          reason: The proposed plate assumes identity between an ancient staff-bearing figure and a named
+            colonial deity without captured support. Neither facial hair nor ritual paint
+            establishes ancestry; a selected gallery cannot prove universal absence.
+          reconsiderWhen: Secure the particular illustrations, dates, rights and specialist identification
+            arguments. Test individual attributes and naming histories rather than an undefined
+            category of Caucasian appearance.
+        - item: "Independent Pacific contact evidence: Ioannidis et al. (2020), Fehren-Schmitz et al. (2017),
+            and subsequent ancient-DNA studies and replies."
+          reason: These founding bibliography leads were not read. They may bear on intermediate contact
+            histories, but genetic contact would not itself establish transmission of a motif or an
+            Anatolian connection.
+          reconsiderWhen: Before describing the relevant populations as unconnected, inspect samples, dates,
+            admixture inference, limitations and later revisions.
+        - item: "Indus–rongorongo companion investigation: https://ejhong.github.io/rongo/"
+          reason: No linked study was captured. It is deferred for scope and verification, not because
+            convergence or script independence has been demonstrated.
+          reconsiderWhen: A bounded methodological cross-reference would improve the visual comparison, or a
+            specific script-descent claim is proposed; inspect its sources without altering frozen
+            studies.
+        - item: The report's proposed essay, new plates and stronger captions for IMG-MEM-P01 and IMG-MEM-P02.
+          reason: The proposed narrative converts uncertain interpretations into settled explanations and
+            claims the Standard Inscription resolves the implements. Existing plates can be
+            considered through existing records, but this reconcile operation neither changes the
+            article nor verifies new image rights or pixels.
+          reconsiderWhen: The separate edition process can use the retained local records and newly proposed
+            methodological records without implying that the broad question has been resolved; new
+            plates require exact provenance and rights checks.
+        - item: Geological catastrophe mechanisms and monument construction methods.
+          reason: These primarily belong to the existing YDIH and megalithic-casting cases and cannot
+            substitute for demonstrating a symbol's or story's source history.
+          reconsiderWhen: A specific Deep Memory proposition requires a clearly stated dependency on an
+            assessed result in either case.
+      outcomes:
+        - title: Preserve the affirmative culture-bringer comparison as an attributed research lead
+          outcome: prepared
+          reason: The short retrieved audit passage identifies a substantive teaching–departure correspondence
+            that the report's white-god framing omits. Record precisely what the audit reports,
+            without treating it as verification of either underlying witness.
+          runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+        - title: Record the image pilots' measurement disagreement without a transmission verdict
+          outcome: prepared
+          reason: The image-pilot capture preserves positive and negative reported outcomes, but its strongest
+            usable lesson concerns measurement validity. It does not independently authenticate
+            altered images or reproduce the results.
+          runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-2
+        - title: Keep the catalogue's reported bundle result distinct from global convergence
+          outcome: prepared
+          reason: The myth capture contains a potentially useful negative result under
+            documentation-preserving comparisons, but also stronger spatial claims that do not
+            follow without additional historical tests. Record the bounded report and make its
+            sensitivity test explicit.
+          runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+        - title: Bank the flood pilot's correction to its inheritance prediction
+          outcome: failed
+          reason: "Source check did not support this bundle: SRC-MEM-BIRDMEN-FLOODS: The supplied URL resolves
+            to a webpage that contains a narrative, a description of the coding protocol and an
+            explicit limitations section (coding provenance, reliance on Mark Isaak’s summaries,
+            single-coder/model notes). The source-record verification note (“narrative, coding
+            description and limitations were read…”) accurately reflects the page content. The page
+            itself keeps observed results (distribution of coded summary features) distinct from
+            higher historical inferences and warns about dependence on compiler summaries and
+            post-contact recording. The source record supplied no precise page/paragraph locator, so
+            no locator-level check was possible. MEM-C009: The page’s section on “what the pilot can
+            distinguish” explicitly records that an initial expectation (that an ancient common
+            source would produce little regional structure) is not treated as a necessary
+            consequence of common ancestry, noting that inherited stories can diversify. The
+            extraction preserves the source’s context and its methodological correction rather than
+            turning that correction into a claim of inheritance. The claim’s locator (Section 02)
+            matches the page structure. MEM-E009: The evidence statement accurately paraphrases the
+            webpage: it records that the pilot author(s) note diversification of inherited
+            narratives, that regional clustering does not rule out inheritance, and that
+            concentrations of biblical-like details invite a borrowing hypothesis whose
+            direction/timing require source-history work. The proposed limits (use of Isaak
+            summaries, single-model coding, publication vs collection dates, and the need to trace
+            source history) are all present on the page (sections 02, 06 and 09), so the evidence
+            extraction is supported while preserving the page’s caveats."
+        - title: Record Thompson's concrete objections while reserving judgment on Witzel
+          outcome: prepared
+          reason: "The retrieved review offers more than a generic warning: it alleges asymmetric
+            classification of missing narrative elements and says Witzel revised an earlier flood
+            distinction. These are useful attributed claims, not verified descriptions of the book
+            or a sufficient basis for rejecting deep inheritance."
+          runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+      outcome: partial

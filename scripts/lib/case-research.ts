@@ -13,6 +13,37 @@ export const CASE_RESEARCH_PROTOCOL = "case-research-report-v3";
 const KIND = "case-research-report";
 const INSTRUCTIONS = fs.readFileSync(new URL("../prompts/case-research.md", import.meta.url), "utf8");
 const MAX_PACKET_BYTES = 800000;
+export const ResearchHandoffSchema = z.object({ verification: z.literal("unverified working report"),
+  request: z.object({ case: z.string().min(1), runId: z.string().min(1), caseBasis: z.string().min(1), inputHash: z.string().min(1),
+    input: z.string().min(1), instructions: z.string().min(1) }).passthrough(),
+  response: z.object({ model: z.string().min(1), text: z.string().min(1), citations: z.array(z.unknown()) }).passthrough(),
+}).passthrough();
+
+/** Keep the full research input, report and every citation once. Provider
+ * envelopes stay in the immutable receipt: Gemini's output and raw.steps each
+ * repeat the entire commissioning input and report. They are audit data, not
+ * additional evidence to buy context for on every subsequent model call. */
+export function researchHandoffForModels(rawHandoff: unknown) {
+  const handoff = ResearchHandoffSchema.parse(rawHandoff);
+  const { raw, output, ...response } = handoff.response;
+  void raw; void output;
+  return { ...handoff, response, rawResponseHash: handoff.rawResponseHash ?? fingerprint(handoff.response) };
+}
+
+/** Only known handoff positions are projected; source text, case records and
+ * other reference data are never recursively pruned or summarized. */
+export function editorialModelPacket(packet: unknown): unknown {
+  if (!packet || typeof packet !== "object" || Array.isArray(packet)) return packet;
+  const projected = { ...packet } as Record<string, unknown>;
+  if (projected.handoff) projected.handoff = researchHandoffForModels(projected.handoff);
+  const context = projected.researchContext;
+  if (context && typeof context === "object" && !Array.isArray(context)) {
+    const reference = { ...context } as Record<string, unknown>;
+    if (reference.handoff) reference.handoff = researchHandoffForModels(reference.handoff);
+    projected.researchContext = reference;
+  }
+  return projected;
+}
 const LEDGER_SECTIONS = ["sources", "claims", "evidence", "research", "studies"] as const;
 const RecordList = z.array(z.object({ id: z.string() }).passthrough());
 const PreviousPacket = z.object({
@@ -72,6 +103,7 @@ export function caseResearchInput(root: string, key: string) {
       source: e.source, question: e.discovery?.plan?.question,
       requestedReading: e.stage === "source-request" ? e.details?.context : undefined,
       researchOutcomes: e.details?.outcomes,
+      coverage: e.details?.coverage, deferred: e.details?.deferred,
       changes: e.research?.changes.map((c: ResearchProposal["changes"][number]) => ({ kind: c.kind, recordId: c.recordId, rationale: c.rationale })),
     })),
     previousReport: previous ? { runId: previous.runId, caseBasis: previous.caseBasis, date: previous.date,
@@ -112,18 +144,48 @@ export function prepareCaseResearch(root: string, key: string, options: { recons
 
 /** Manual experiment, using the existing intake record. It never queues every
  * citation, adopts observations, edits an edition or schedules another run. */
+export type CaseResearchResult = { outcome: "rested" | "prepared" | "completed" | "failed";
+  runId?: string; model?: string; report?: string; handoff?: string; intake?: string | null;
+  reason?: string; request?: string; summary?: string; inputHash?: string; restReason?: string | null };
 export async function researchCase(root: string, key: string, options: { reconsider?: string; prepare?: boolean } = {},
-  dependencies: { respond?: typeof openaiResearch; now?: () => string } = {}) {
+  dependencies: { respond?: typeof openaiResearch; now?: () => string } = {}): Promise<CaseResearchResult> {
   const prepared = prepareCaseResearch(root, key, options, dependencies);
   if (prepared.restReason && !options.prepare) return { outcome: "rested", reason: prepared.restReason };
   const { request, summary } = prepared;
-  const { runId, generatedAt, inputHash, input, instructions } = request;
+  const { runId, inputHash } = request;
   const dir = path.join(root, ".research-runs", runId);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "request.json"), JSON.stringify(request, null, 2), { flag: "wx" });
   fs.writeFileSync(path.join(dir, "summary.json"), JSON.stringify(summary, null, 2), { flag: "wx" });
   if (options.prepare) return { outcome: "prepared", request: path.join(dir, "request.json"),
     summary: path.join(dir, "summary.json"), inputHash, restReason: prepared.restReason };
+  return researchPreparedCase(root, prepared, dependencies);
+}
+
+/** Execute the exact saved commission. A resumable provider may explicitly
+ * resume its one recorded task; other transports cannot retry unknown starts. */
+export async function researchPreparedCase(root: string, prepared: ReturnType<typeof prepareCaseResearch>,
+  dependencies: { respond?: typeof openaiResearch; now?: () => string; resume?: boolean } = {}): Promise<CaseResearchResult> {
+  const { request, summary } = prepared;
+  const { runId, generatedAt, inputHash, input, instructions } = request;
+  if (!/^[a-zA-Z0-9][a-zA-Z0-9._-]+$/.test(runId) ||
+      inputHash !== fingerprint({ instructions, input }) ||
+      caseResearchInput(root, request.case).basis !== request.caseBasis)
+    throw new Error("Prepared investigation changed or is stale; no call sent");
+  const dir = path.join(root, ".research-runs", runId);
+  fs.mkdirSync(dir, { recursive: true });
+  const save = (name: string, value: unknown) => {
+    const file = path.join(dir, name);
+    if (fs.existsSync(file)) {
+      if (fingerprint(JSON.parse(fs.readFileSync(file, "utf8"))) !== fingerprint(value))
+        throw new Error(`Conflicting research receipt: ${name}`);
+    } else fs.writeFileSync(file, JSON.stringify(value, null, 2), { flag: "wx" });
+  };
+  save("request.json", request); save("summary.json", summary);
+  const prior = readIntakeDecisions(root).filter(entry => entry.runId === runId && entry.details?.kind === KIND);
+  const responseFile = path.join(dir, "response.json");
+  if (prior.length && !fs.existsSync(responseFile) && !dependencies.resume)
+    throw new Error("An investigation was already attempted; only its resumable provider task may continue");
   // Persist before sending. A process interruption cannot silently make the same
   // request eligible again; inspection and reasoned reconsideration are explicit.
   const stamp = { case: request.case, stage: "research-run", date: generatedAt.slice(0, 10), generatedAt,
@@ -132,15 +194,19 @@ export async function researchCase(root: string, key: string, options: { reconsi
     reason: "Investigation request recorded; no completed report yet. Inspect local/provider receipts before retrying.",
     details: { kind: KIND, request } }]);
   try {
-    const response = await (dependencies.respond ?? openaiResearch)(instructions, input,
-      { context: { case: request.case, runId, phase: KIND } });
-    fs.writeFileSync(path.join(dir, "response.json"), JSON.stringify(response, null, 2), { flag: "wx" });
+    const response = fs.existsSync(responseFile) ? JSON.parse(fs.readFileSync(responseFile, "utf8"))
+      : await (dependencies.respond ?? openaiResearch)(instructions, input,
+        { context: { case: request.case, runId, phase: KIND } });
+    save("response.json", response);
     if (!response.text.trim()) throw new Error("Research returned no report; inspect the saved response");
     // Carry the exact commissioning context and all provider annotations into
     // editing together. A bare prose extract lost citations in the first trial.
     const handoff = path.join(dir, "handoff.json");
-    fs.writeFileSync(handoff, JSON.stringify({ verification: "unverified working report", request, response }, null, 2), { flag: "wx" });
-    fs.writeFileSync(path.join(dir, "report.md"), `<!-- Unverified AI research report; ${runId}; ${response.model}. -->\n\n${response.text}\n`, { flag: "wx" });
+    save("handoff.json", { verification: "unverified working report", request, response });
+    const report = path.join(dir, "report.md");
+    if (!fs.existsSync(report)) fs.writeFileSync(report, `<!-- Unverified AI research report; ${runId}; ${response.model}. -->\n\n${response.text}\n`, { flag: "wx" });
+    if (prior.some(entry => entry.decision === "completed"))
+      return { outcome: "completed", runId, model: response.model, report, handoff };
     const result = writeIntakeDecisions(root, [{ ...stamp, generatedAt: (dependencies.now ?? (() => new Date().toISOString()))(),
       decision: "completed", model: response.model,
       reason: "Web research report retained as working material. Its proposed findings require separate source verification and publication review.",
@@ -148,7 +214,7 @@ export async function researchCase(root: string, key: string, options: { reconsi
     return { outcome: "completed", runId, model: response.model, report: path.join(dir, "report.md"), handoff, intake: result.file };
   } catch (error) {
     const reason = error instanceof Error ? error.message : "Research request failed";
-    fs.writeFileSync(path.join(dir, "failure.json"), JSON.stringify({ reason }), { flag: "wx" });
+    save(`failure-${Date.now()}.json`, { reason });
     writeIntakeDecisions(root, [{ ...stamp, generatedAt: (dependencies.now ?? (() => new Date().toISOString()))(),
       decision: "failed", model: "Research coordinator (no accepted report)", reason, details: { kind: KIND } }]);
     return { outcome: "failed", runId, reason };

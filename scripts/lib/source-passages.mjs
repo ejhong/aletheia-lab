@@ -2,16 +2,19 @@ import { createHash } from "node:crypto";
 import { inspectPdf, PDF_EXTRACTOR, MAX_PDF_BYTES } from "./pdf-passages.mjs";
 
 export const sha256 = value => createHash("sha256").update(value).digest("hex");
-export const EXTRACTOR = "html-text-v1";
+export const EXTRACTOR = "html-text-v2";
 export const normalizePassage = text => String(text).replace(/\s+/gu, " ").trim();
 
-/** Deliberately modest extraction: article/main where present, otherwise the
- * document. No OCR or PDF claims. Unknown named entities remain visible. */
+/** Deliberately modest extraction: the complete main region, a sole article,
+ * or the body/document. Never select one of several article cards and lose
+ * later qualifications. No OCR or PDF claims. Unknown entities stay visible. */
 export function extractSourceText(html) {
   let text = html.replace(/<!--[\s\S]*?-->/g, "")
     .replace(/<(script|style|noscript|svg)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, "");
-  const body = text.match(/<article\b[^>]*>([\s\S]*?)<\/article\s*>/i) ??
-    text.match(/<main\b[^>]*>([\s\S]*?)<\/main\s*>/i);
+  const articleCount = [...text.matchAll(/<article\b[^>]*>/gi)].length;
+  const body = text.match(/<main\b[^>]*>([\s\S]*?)<\/main\s*>/i) ??
+    (articleCount === 1 ? text.match(/<article\b[^>]*>([\s\S]*?)<\/article\s*>/i) : null) ??
+    text.match(/<body\b[^>]*>([\s\S]*?)<\/body\s*>/i);
   if (body) text = body[1];
   text = text.replace(/<[^>]*>/g, " ");
   const entities = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ",
@@ -76,7 +79,8 @@ export async function retrieveSource(url, { fetchImpl = fetch, maxBytes = 200000
   }
   const raw = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
   const text = type.startsWith("text/plain") ? normalizePassage(raw) : extractSourceText(raw);
-  if (text.length < 80 || text.length > maxText) throw new Error("source text outside readable size limits; no truncated reading");
+  if (text.length < 80) throw new Error(`source text too short (${text.length} characters; minimum 80); no usable reading`);
+  if (text.length > maxText) throw new Error(`source text exceeds reading limit (${text.length} characters; maximum ${maxText}); no truncated reading`);
   return { url: current.href, requestedUrl: url, retrievedAt: now(), responseHash: sha256(bytes),
     textHash: sha256(text), extractor: type.startsWith("text/plain") ? "plain-text-v1" : EXTRACTOR, text };
 }

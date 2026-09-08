@@ -1,0 +1,33 @@
+version: 1
+decisions:
+  - id: dddd884d4a4557394ab861b18f2a57d2076acc59db98bf3fa417bb5c32c71cd2
+    case: deep-memory
+    stage: research-adoption
+    decision: prepared
+    source: null
+    proposal: null
+    reason: The myth capture contains a potentially useful negative result under
+      documentation-preserving comparisons, but also stronger spatial claims that do not follow
+      without additional historical tests. Record the bounded report and make its sensitivity test
+      explicit.
+    date: 2026-09-08
+    generatedAt: 2026-09-08T00:00:06.090Z
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+    model: gpt-6-astra
+    promptVersion: research-report-editing-v1
+    inputHash: 2fdddf76ce81ec1f99f36d1b8d7971c6c71d2ecceca5ded674abaac11194f875
+    candidateHash: 29ac821ea083932e18161dc21dd81a48ab338d98b899c71bcbbb30a5e0e8d7de
+    ref: proposals/intake/1b25af0c97027b6b3457158214d2105c9b2d3ff59e2a32c2ec100a02d719c3c8.yaml#decisions[0]
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      experimental: true
+      proposalId: d701f3244239af737193dc0e82c2fc5fbbe38f963155dc5ab0bcf299dde74a88
+      proposalFile: proposals/intake/1b25af0c97027b6b3457158214d2105c9b2d3ff59e2a32c2ec100a02d719c3c8.yaml
+      recordIds:
+        - SRC-MEM-BIRDMEN-MYTHS
+        - MEM-C008
+        - MEM-E008
+        - MEM-R005

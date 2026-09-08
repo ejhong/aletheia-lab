@@ -19,8 +19,15 @@ use an empty weakestLinks list if no recorded claim captures that gap.
 Load-bearing claims must be selected.
 Treat a limited observation as limited; selecting it need not endorse the grand thesis.
 
-Write a lucid, intriguing, self-contained essay of a length the evidence earns;
-roughly 400–900 words is usually enough for a small case. Lead with the question or
+Write a lucid, intriguing, self-contained essay of a length the evidence earns.
+A broad founding question needs an intelligible account of its principal strands,
+including which remain open. Do not let a sparse incumbent restrict the subject
+to its first observations. Research context, when supplied, includes the complete
+working report and the outcomes of checking it: use it to understand the editorial
+opportunity and unresolved questions, while deriving factual assertions from the
+ledger. An unadopted report finding is a lead, not evidence. Preserve the depth in
+the record while making the essay selective; do not add filler to meet a word count.
+Lead with the question or
 object, give the best current account, then what could distinguish the alternatives.
 Prefer concrete observations to boilerplate or repeated caution. Revision history
 belongs in rationale, not the essay. New information need not change the verdict.

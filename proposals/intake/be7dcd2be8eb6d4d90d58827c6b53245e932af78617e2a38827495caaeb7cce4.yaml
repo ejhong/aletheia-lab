@@ -1,0 +1,176 @@
+version: 1
+decisions:
+  - id: 73aba8a188c788207e9027f3bc38ce93a493776616a2e6d05072c2526917975b
+    case: deep-memory
+    stage: research-proposal
+    decision: proposed
+    source: null
+    proposal: null
+    research:
+      version: 1
+      case: deep-memory
+      basis:
+        contentHash: f83bb12d49d316aefac4eec800cacb74021d18dfb445f32c3bec741f462d853d
+        inputsHash: abb099a6708afe8bded620b2f002675d06e9b788a13ca8cc8811f91a9ad0f44a
+      runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+      generatedAt: 2026-09-08T00:00:06.090Z
+      model: gpt-6-astra
+      promptVersion: research-report-editing-v1
+      intent: add
+      title: Preserve the affirmative culture-bringer comparison as an attributed research lead
+      rationale: The short retrieved audit passage identifies a substantive teaching–departure
+        correspondence that the report's white-god framing omits. Record precisely what the audit
+        reports, without treating it as verification of either underlying witness.
+      priorDecisionIds:
+        - ff80935145949014a7bc1c375a943cd2f1d5633634bbfc90ede99591491bcd57
+      themeAdditions:
+        culture-bringers: Culture-bringer traditions
+      changes:
+        - kind: source
+          recordId: SRC-MEM-BIRDMEN-CIVILISERS
+          beforeHash: null
+          after:
+            id: SRC-MEM-BIRDMEN-CIVILISERS
+            title: The civilisers — Birdmen source-audit excerpt
+            authors: []
+            sourceType: webpage
+            url: https://ejhong.github.io/birdmen/civilisers.html
+            verification: ai_verified
+            verificationNote: Retrieved 2026-09-07T22:37:06.311Z; AI source reading checked separately during
+              report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1. Not
+              human verification.
+            reliabilityNotes:
+              - Prior exploratory research from the project that supplied the case's founding
+                motivation; not independent archaeological or historical corroboration.
+              - The capture identifies source-entry labels Q1, Q3 and V3 but does not contain those
+                entries.
+              - No new image, quotation permission or primary-text verification is inferred.
+            derivedFrom: []
+            background: false
+          rationale: Preserve the actual scope of the available capture rather than representing a full source
+            audit as read.
+          passages: []
+        - kind: claim
+          recordId: MEM-C006
+          beforeHash: null
+          after:
+            id: MEM-C006
+            statement: The Birdmen culture-bringer audit reports instruction followed by an extraordinary sea
+              departure as a correspondence between its Sahagún and Sarmiento accounts.
+            theme: culture-bringers
+            rung: observation
+            reviewState: ai_extracted
+            origin:
+              ref: https://ejhong.github.io/birdmen/civilisers.html — html-text-v1, characters 248–314 (retrieved
+                text; not a printed-page locator)
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+              date: 2026-09-08
+            tier: catalog
+            sourceAnchor:
+              sourceId: SRC-MEM-BIRDMEN-CIVILISERS
+              locator: html-text-v1, characters 248–314 (retrieved text; not a printed-page locator)
+            claimType: methodological
+            independenceGroup: Birdmen culture-bringer source audit
+          rationale: Capture an affirmative comparison without asserting that its primary texts or historical
+            interpretation have been verified.
+          passages:
+            - sourceId: SRC-MEM-BIRDMEN-CIVILISERS
+              url: https://ejhong.github.io/birdmen/civilisers.html
+              retrievedAt: 2026-09-07T22:37:06.311Z
+              responseHash: 8961ef6b6c66ec9a28b094f87b6f69e47d8ff0dad1e2755b0faa0af8b79e9a9b
+              locator: html-text-v1, characters 248–314 (retrieved text; not a printed-page locator)
+              quote: Instruction followed by an extraordinary sea departure is a genuine
+              textHash: 02204c6fb7b7331f3eb8890fdd915d17d054c4858f6d53d55347a7fc69aa2743
+              extractor: html-text-v1
+        - kind: evidence
+          recordId: MEM-E006
+          beforeHash: null
+          after:
+            id: MEM-E006
+            title: A reported teaching–departure sequence with explicit differences
+            claimIds:
+              - MEM-C006
+            sourceId: SRC-MEM-BIRDMEN-CIVILISERS
+            direction: supports
+            strength: moderate
+            sourceStatement: The excerpt attributes crafts and a serpent-raft departure to Sahagún's
+              Quetzalcoatl account, and instruction followed by walking over the sea with two
+              servants to Sarmiento's Viracocha account. It presents the sequence as a
+              correspondence while distinguishing the teaching, companions and means of travel.
+            editorInference: This supports the claim about the audit's reported comparison. It identifies a more
+              specific research target than generic civilizing activity or physical appearance.
+              Neither common descent nor colonial invention follows from this excerpt; both the
+              correspondence and its differences need checking in the actual witnesses.
+            exactLocator: html-text-v1, characters 248–314 (retrieved text; not a printed-page locator)
+            limitations:
+              - Only a short excerpt was captured, not the full audit or its source passages.
+              - Sarmiento and Sahagún were not successfully read in this reconciliation.
+              - A selected pair supplies no baseline for the rarity of the sequence.
+              - The source is related to the founding project and must not be counted as independent
+                confirmation.
+            reviewState: ai_extracted
+            origin:
+              ref: https://ejhong.github.io/birdmen/civilisers.html — html-text-v1, characters 248–314 (retrieved
+                text; not a printed-page locator)
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+              date: 2026-09-08
+          rationale: Keep both the affirmative sequence and the substantive differences available beneath a
+            selective article.
+          passages:
+            - sourceId: SRC-MEM-BIRDMEN-CIVILISERS
+              url: https://ejhong.github.io/birdmen/civilisers.html
+              retrievedAt: 2026-09-07T22:37:06.311Z
+              responseHash: 8961ef6b6c66ec9a28b094f87b6f69e47d8ff0dad1e2755b0faa0af8b79e9a9b
+              locator: html-text-v1, characters 248–314 (retrieved text; not a printed-page locator)
+              quote: Instruction followed by an extraordinary sea departure is a genuine
+              textHash: 02204c6fb7b7331f3eb8890fdd915d17d054c4858f6d53d55347a7fc69aa2743
+              extractor: html-text-v1
+        - kind: research
+          recordId: MEM-R003
+          beforeHash: null
+          after:
+            id: MEM-R003
+            title: Test culture-bringer sequences in separate textual witnesses
+            summary: First verify the audit's Q1/Q3/V3 passages in their editions. Build a source-specific
+              matrix for instruction, named crafts, arrival, catastrophe order, companions,
+              departure and return language, extending to Oannes and Bochica only after their
+              witnesses are authenticated. Keep translator additions, narrator statements and
+              chronicler commentary separate. Before expanding the corpus, freeze inclusion rules
+              and a comparison set of other teaching figures; record differences and missing
+              documentation rather than assembling composite biographies. This is a proposed
+              investigation, not a completed test.
+            claimIds:
+              - MEM-C006
+            track: either
+            effortTier: desk
+            informationGain: Distinctive sequences recurring in independently documented witnesses, with
+              connecting historical evidence, would strengthen transmission. Correspondences created
+              by translation or modern compression would weaken that particular comparison. Colonial
+              recording dates alone would not decide invention, and survival of a correspondence
+              would not identify a lost source.
+            origin:
+              ref: Research report reconciliation
+                report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+              date: 2026-09-08
+          rationale: Convert the affirmative lead into a discriminating source-history inquiry rather than
+            accepting or dismissing the whole narrative strand.
+          passages: []
+    reason: The short retrieved audit passage identifies a substantive teaching–departure correspondence
+      that the report's white-god framing omits. Record precisely what the audit reports, without
+      treating it as verification of either underlying witness.
+    date: 2026-09-08
+    generatedAt: 2026-09-08T00:00:06.090Z
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+    model: gpt-6-astra
+    promptVersion: research-report-editing-v1
+    inputHash: 5e667f672b1645e580ee13d196bf9d414a9a93eea5a6ed4718d8274ec1ffc8f1
+    candidateHash: f7f733fe6b606201b1b6e5c7bc428576baf2fee7c4f6e03738a4992da72a031c
+    ref: null
+    caseBasis: f83bb12d49d316aefac4eec800cacb74021d18dfb445f32c3bec741f462d853d
+    recordId: null
+    matchMethod: null
+    retryable: false

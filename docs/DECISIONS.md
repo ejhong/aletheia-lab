@@ -1694,3 +1694,114 @@ proposal remains in intake history; only the corrected candidate enters the
 prospective edition chain, referencing the unchanged draft assessment. This
 distinguishes the authoring history from published editions without discarding
 the correction. The final candidate is edition-2026-09-07-casting-research-update-v2.
+
+## 2026-09-07 — Test repeated case improvement without interactive authoring
+
+The casting candidate was written interactively. Deep Memory had one real
+Gemini investigation and two Astra editing calls, but a manually corrected
+handoff. Neither demonstrates repeated autonomous improvement. The founder
+requested a proper experiment on that question.
+
+Freeze a two-round protocol, full Birdmen input, incumbent and case history.
+Run the same researcher, source-checking editor and existing edition comparison
+on the resulting state twice. Preserve failures and deferred work; do not rescue
+content interactively or modify prompts between rounds. Retaining a sound
+incumbent is valid. Two rounds can expose a useful cycle or a failure, not prove
+indefinite improvement. See docs/AUTONOMY_EXPERIMENT.md.
+
+The reusable Gemini transport resumes the same recorded task, retains provider
+citations and accounts for usage with an explicitly conservative tariff
+estimate. Astra reconciles the complete report into the existing proposal
+schema, with original-source readings and separate checks, including rendered
+PDF pages. The edition drafter receives the whole research handoff as working
+context; consequential article claims must still resolve to the checked ledger.
+No ledger schema or publication gate changes are part of this experiment.
+
+The founder approved the specific $40–60 experiment request with “spending
+rtequrests approved”. Temporarily enable Lab API calls and raise its daily limit
+to $100, retaining the $150 monthly limit, $30 review reserve and existing holds.
+Inspect the first round's actual usage before launching the second. Restore
+paused calls and the $25 daily limit after completion or a stop. Recurring jobs
+stay disabled. The original Aletheia stays frozen and Lab PR 2 remains separate.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-autonomy-experiment-2026-09-07.
+Protocols: case-research-report-v3, research-report-editing-v1 and
+case-improvement-experiment-v1. No new paid round had started at protocol freeze.
+
+## 2026-09-07 — Stop duplicated editorial context and reuse the purchased report
+
+The first live Deep Memory attempt was stopped after its research, two Astra
+calls and two inexpensive source checks. The editorial handoff needlessly
+repeated the complete research input and report inside provider envelopes,
+crossing Astra's long-context pricing threshold. Recorded cost was $37.918564;
+the previous unresolved hold is unaffected. Paid calls returned to paused/$25.
+
+Retain complete raw receipts for inspection, but send the case input, report
+and all citations once to subsequent models. Recover the already purchased
+report and completed editorial decisions explicitly, with input-equivalence
+checks and visible replay provenance. Do not buy a second broad investigation
+until the cost and document-reading failures are addressed. This is a documented
+development continuation, not an uninterrupted two-round success. See
+docs/EXPERIMENT_DEEP_MEMORY_2026-09-07.md for the actual calls and limitations.
+
+No publication or ledger rule was weakened. A source-check response may include
+the explicitly declared JSON Schema dialect metadata; the required findings
+and rejection of unsupported readings remain unchanged. No case content was
+manually repaired to rescue this experiment.
+
+## 2026-09-07 — Preserve the autonomous candidate and the experiment's limits
+
+The explicit saved-report continuation prepared four checked record bundles and
+two Astra article/assessment candidates. Four independent comparison seats
+preferred either candidate to the incumbent; three selected the revision and
+one the recomposition. The fifth seat was blocked by its spending reservation,
+not counted as agreement. The selected Deep Memory candidate has 10 claims,
+10 evidence records, seven sources, six research opportunities and an illustrated
+1,486-word essay; its assessment remains unresolved and unratified. No case
+content was authored or corrected interactively during the continuation.
+
+The continuation cost $6.323076, bringing the recorded experiment total to
+$44.241640. Calls returned to paused/$25 daily; monthly $150 and the existing
+hold remain unchanged. No second broad research run was purchased. Preserve the
+first attempt's stop, reused responses, failures, alternative draft and votes
+as history. This is development recovery, not two unchanged autonomous rounds.
+See docs/EXPERIMENT_DEEP_MEMORY_2026-09-07.md for the result and next experiment.
+
+Correct the demonstrated HTML extraction bug after the run: `html-text-v2`
+preserves a complete main region and never selects just one of several article
+cards. Keep old captures and their v1 locators intact. Distinguish too-short
+and oversized source errors. No ledger schema or publication check changes.
+Source-check applicability, full-document access and comparison reservations
+need further work before more paid research is useful.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-autonomy-experiment-2026-09-07.
+Generated continuation and edition artifacts record their own models, run IDs
+and prompt versions; dates crossing midnight use UTC.
+
+## 2026-09-07 — Founder authorizes a temporary Lab development review exception
+
+The founder directed: “i think we can just skip the reviews while you proceed
+with trying to get the new system going?” This is a temporary exception for
+founder-directed development in `ejhong/aletheia-lab`, recorded here under this
+log's precedence over conflicting instructions in AGENTS.md. It is not an
+assessment ratification or a claim that the founder reviewed the evidence.
+
+Remove only the required `arbiter` check from the Lab's `main` branch protection.
+Keep `checks` (type checking, lint, tests, production build and links) and
+`classify` required. Mark the development PRs ready
+and merge them in dependency order after those checks pass. Content retains its
+AI provenance and explicit unratified assessment labels; source-reading checks,
+schema validation and record histories remain part of the research experiment.
+The original `ejhong/aletheia` and its protections remain frozen.
+
+The seven-hour wait for PR #2 was not a running arbiter: its workflow was
+disabled after the Lab separation, the Lab has no Actions API secrets, and the
+shared spending allowance is paused. Waiting or marking a PR ready could not
+complete that review. Keep paid and recurring automation paused during this
+development exception. Before enabling unattended content publication, restore
+the arbiter requirement, configure its credentials and allowance, and verify a
+real run. Restoring the required contexts means `arbiter`, `checks`, `classify`,
+each associated with the GitHub Actions app (15368); strict mode was false.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-lab-development-mode-2026-09-07.
+Authorization: the founder's quoted instruction in the active conversation.

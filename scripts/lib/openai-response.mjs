@@ -1,6 +1,7 @@
 import { AI_POLICY, BudgetStopped } from "./ai-policy.mjs";
 import { countResponseInput, meteredFetch } from "./metered-model.mjs";
 import { sharedBudget } from "./ai-budget.mjs";
+import { pdfInput, pageImageInput } from "./pdf-passages.mjs";
 
 export class OpenAIRefusalError extends Error {}
 
@@ -10,15 +11,24 @@ export class OpenAIRefusalError extends Error {}
  * @param {string} input
  * @param {{model?: string, effort?: string, maxOutputTokens?: number, workload?: string, search?: boolean,
  * context?: {case: string, runId: string, phase: string}, budget?: ReturnType<typeof import('./ai-budget.mjs').sharedBudget>,
+ * documents?: Array<{data: string, pages: number, pageImages?: Array<{data: string, page: number}>}>,
  * apiKey?: string, fetchImpl?: typeof fetch, timeoutMs?: number}} options */
 export async function openaiResponse(instructions, input, { model = AI_POLICY.main.model,
   effort = AI_POLICY.main.effort, maxOutputTokens = AI_POLICY.main.maxOutputTokens,
-  workload = "drafting", search = false, context, budget,
+  workload = "drafting", search = false, context, budget, documents = [],
   apiKey = process.env.OPENAI_API_KEY, fetchImpl = fetch, timeoutMs = 900000 } = {}) {
   if (!apiKey) throw new Error("OPENAI_API_KEY is not configured");
   if (typeof instructions !== "string" || typeof input !== "string")
     throw new Error("Responses requires an explicit text packet");
-  const body = { model, instructions, input, store: false, service_tier: "default",
+  if (documents.length > 12 || (search && documents.length))
+    throw new Error("Source attachments require a bounded, non-search reading request");
+  const attachments = documents.flatMap((document, index) => [
+    { ...pdfInput(document), filename: `source-${index + 1}.pdf` },
+    ...(document.pageImages ?? []).flatMap(page => pageImageInput(page, document)),
+  ]);
+  const body = { model, instructions,
+    input: attachments.length ? [{ role: "user", content: [...attachments, { type: "input_text", text: input }] }] : input,
+    store: false, service_tier: "default",
     max_output_tokens: maxOutputTokens, reasoning: { effort },
     ...(search ? { tools: [{ type: "web_search", search_context_size: "low" }],
       max_tool_calls: 1, parallel_tool_calls: false, tool_choice: "required",
@@ -46,7 +56,7 @@ export async function openaiResearch(instructions, input, { budget = sharedBudge
   { ...options, budget, workload: "research", searchCalls: config.maxToolCalls });
 }
 
-/** @param {{model: string, instructions: string, input: string, max_output_tokens: number}} body
+/** @param {{model: string, instructions: string, input: string | Array<object>, max_output_tokens: number}} body
  * @param {{workload: string, searchCalls: number, context?: {case: string, runId: string, phase: string},
  * budget?: ReturnType<typeof sharedBudget>, apiKey?: string, fetchImpl?: typeof fetch, timeoutMs?: number}} options */
 async function sendResponse(body, { workload, searchCalls, context, budget,

@@ -1,0 +1,187 @@
+version: 1
+decisions:
+  - id: d701f3244239af737193dc0e82c2fc5fbbe38f963155dc5ab0bcf299dde74a88
+    case: deep-memory
+    stage: research-proposal
+    decision: proposed
+    source: null
+    proposal: null
+    research:
+      version: 1
+      case: deep-memory
+      basis:
+        contentHash: ca7ccb9b7d374201843dcfe72eed6f36df93e4b0782347bdc693139d6a3cbbf7
+        inputsHash: abb099a6708afe8bded620b2f002675d06e9b788a13ca8cc8811f91a9ad0f44a
+      runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+      generatedAt: 2026-09-08T00:00:06.090Z
+      model: gpt-6-astra
+      promptVersion: research-report-editing-v1
+      intent: add
+      title: Keep the catalogue's reported bundle result distinct from global convergence
+      rationale: The myth capture contains a potentially useful negative result under
+        documentation-preserving comparisons, but also stronger spatial claims that do not follow
+        without additional historical tests. Record the bounded report and make its sensitivity test
+        explicit.
+      priorDecisionIds:
+        - 2ad7d002427ff51c33f96454e6307f29b688bec6716cf571e92ac0a3cec08548
+      themeAdditions:
+        myth-comparison: Comparative mythology and narrative inheritance
+      changes:
+        - kind: source
+          recordId: SRC-MEM-BIRDMEN-MYTHS
+          beforeHash: null
+          after:
+            id: SRC-MEM-BIRDMEN-MYTHS
+            title: Birds, serpents & sacred centres — Birdmen catalogue experiment
+            authors: []
+            sourceType: webpage
+            url: https://ejhong.github.io/birdmen/myths.html
+            verification: ai_verified
+            verificationNote: Retrieved 2026-09-07T22:37:20.993Z; AI source reading checked separately during
+              report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3. Not
+              human verification.
+            reliabilityNotes:
+              - Derivative exploratory analysis from the founding project, described as using a 2016
+                Berezkin–Duvakin catalogue snapshot parsed by Dmitry Nikolaev.
+              - The page distinguishes broad narrative classes from images and place-name
+                etymologies.
+              - Documentation-preserving randomization does not by itself resolve cultural
+                dependence or date transmission.
+              - Source statements identifying convergence from spatial dispersion require separate
+                assessment.
+            derivedFrom: []
+            background: false
+          rationale: Register the derivative source without inventing unread dataset records or treating the
+            narrative as verified computation.
+          passages: []
+        - kind: claim
+          recordId: MEM-C008
+          beforeHash: null
+          after:
+            id: MEM-C008
+            statement: The Birdmen catalogue experiment reports that its bird-person, cosmic-serpent and
+              world-centre bundle does not stand out against its documentation-preserving
+              comparisons.
+            theme: myth-comparison
+            rung: observation
+            reviewState: ai_extracted
+            origin:
+              ref: https://ejhong.github.io/birdmen/myths.html — html-text-v1, characters 185–273 (retrieved text;
+                not a printed-page locator)
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+              date: 2026-09-08
+            tier: catalog
+            sourceAnchor:
+              sourceId: SRC-MEM-BIRDMEN-MYTHS
+              locator: html-text-v1, characters 185–273 (retrieved text; not a printed-page locator)
+            claimType: methodological
+            independenceGroup: Birdmen analysis of the 2016 folklore catalogue matrix
+          rationale: Preserve the potentially unfavorable finding with its exact operational scope and
+            reported status.
+          passages:
+            - sourceId: SRC-MEM-BIRDMEN-MYTHS
+              url: https://ejhong.github.io/birdmen/myths.html
+              retrievedAt: 2026-09-07T22:37:20.993Z
+              responseHash: e92905cca1e7cdd36e7092acd83dbb0ad4c7713c7b0e926f732f70717ada2803
+              locator: html-text-v1, characters 185–273 (retrieved text; not a printed-page locator)
+              quote: Their bundle does not stand out against the study's documentation-preserving comparisons.
+              textHash: be9785795bba65d7c3d69b840bdb7eb198e2da8ead1657831fd004dd08456406
+              extractor: html-text-v1
+        - kind: evidence
+          recordId: MEM-E008
+          beforeHash: null
+          after:
+            id: MEM-E008
+            title: A reported bundle null depends on definitions and documentation controls
+            claimIds:
+              - MEM-C008
+            sourceId: SRC-MEM-BIRDMEN-MYTHS
+            direction: supports
+            strength: moderate
+            sourceStatement: The page reports that an excess over simple independence disappears under
+              comparisons preserving documentation. It describes keyword-defined classes, a
+              fixed-margin matrix randomization, random motif bundles and documentation-matched
+              culture sets. It explicitly excludes the specific visual motifs and navel place-name
+              etymologies from what this test establishes and notes thin coverage of several
+              relevant traditions.
+            editorInference: "This supports the claim about the experiment's reported outcome, not verification
+              of its calculations. If reproduced, the result would weaken the claim that these broad
+              categories form an unusually co-occurring package in this sample. It would not exclude
+              inheritance of more specific motifs or sequences. The page's stronger inference from
+              dispersed cosmic-serpent motifs to independent invention is not established by
+              dispersion alone: an old transmitted tradition could also become geographically
+              widespread."
+            exactLocator: html-text-v1, characters 185–273 (retrieved text; not a printed-page locator)
+            limitations:
+              - Matrix, class membership, exclusions and outputs were not checked in this pass.
+              - Several result values are absent from the text capture.
+              - Keyword classes and proxy mappings between named cultures and catalogue traditions
+                may affect the result.
+              - Fixed documentation totals do not automatically control genealogical or contact
+                dependence.
+              - Sparse catalogue absence is not demonstrated absence from a culture.
+            reviewState: ai_extracted
+            origin:
+              ref: https://ejhong.github.io/birdmen/myths.html — html-text-v1, characters 185–273 (retrieved text;
+                not a printed-page locator)
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+              date: 2026-09-08
+          rationale: Keep useful negative evidence and its substantive inheritance reply together without
+            adopting a universal convergence conclusion.
+          passages:
+            - sourceId: SRC-MEM-BIRDMEN-MYTHS
+              url: https://ejhong.github.io/birdmen/myths.html
+              retrievedAt: 2026-09-07T22:37:20.993Z
+              responseHash: e92905cca1e7cdd36e7092acd83dbb0ad4c7713c7b0e926f732f70717ada2803
+              locator: html-text-v1, characters 185–273 (retrieved text; not a printed-page locator)
+              quote: Their bundle does not stand out against the study's documentation-preserving comparisons.
+              textHash: be9785795bba65d7c3d69b840bdb7eb198e2da8ead1657831fd004dd08456406
+              extractor: html-text-v1
+        - kind: research
+          recordId: MEM-R005
+          beforeHash: null
+          after:
+            id: MEM-R005
+            title: Reproduce the catalogue comparison and test its sensitivity
+            summary: Recover the exact matrix, class rules, exclusions, culture mappings and saved outputs
+              before reproducing the reported result. Preserve that original analysis, then
+              predeclare sensitivity variants for documentation thresholds, class specificity and
+              cultural dependence. Separate a test of unordered broad categories from a new test of
+              distinctive ordered narrative sequences. Do not treat a fresh catalogue parse as an
+              independent replication of the same traditions. No calculation has been run in this
+              reconciliation.
+            claimIds:
+              - MEM-C008
+            track: either
+            effortTier: desk
+            informationGain: A robust excess under defensible controls would strengthen a package hypothesis; a
+              reproducible null would weaken the sampled broad-bundle claim. Dependence on keyword
+              choices, proxy cultures or sparse documentation would narrow the conclusion. Neither
+              spatial clustering nor dispersion alone would date or prove transmission.
+            origin:
+              ref: Research report reconciliation
+                report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+              extractedBy: gpt-6-astra
+              runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+              date: 2026-09-08
+          rationale: Make the reported null useful to a discriminating investigation rather than merely adding
+            a caution or another statistic.
+          passages: []
+    reason: The myth capture contains a potentially useful negative result under
+      documentation-preserving comparisons, but also stronger spatial claims that do not follow
+      without additional historical tests. Record the bounded report and make its sensitivity test
+      explicit.
+    date: 2026-09-08
+    generatedAt: 2026-09-08T00:00:06.090Z
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+    model: gpt-6-astra
+    promptVersion: research-report-editing-v1
+    inputHash: 2fdddf76ce81ec1f99f36d1b8d7971c6c71d2ecceca5ded674abaac11194f875
+    candidateHash: 29ac821ea083932e18161dc21dd81a48ab338d98b899c71bcbbb30a5e0e8d7de
+    ref: null
+    caseBasis: ca7ccb9b7d374201843dcfe72eed6f36df93e4b0782347bdc693139d6a3cbbf7
+    recordId: null
+    matchMethod: null
+    retryable: false

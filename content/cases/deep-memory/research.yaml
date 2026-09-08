@@ -43,3 +43,108 @@
     extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
     runId: codex-two-case-2026-09-07
     date: 2026-09-07
+- id: MEM-R003
+  title: Test culture-bringer sequences in separate textual witnesses
+  summary: First verify the audit's Q1/Q3/V3 passages in their editions. Build a
+    source-specific matrix for instruction, named crafts, arrival, catastrophe
+    order, companions, departure and return language, extending to Oannes and
+    Bochica only after their witnesses are authenticated. Keep translator
+    additions, narrator statements and chronicler commentary separate. Before
+    expanding the corpus, freeze inclusion rules and a comparison set of other
+    teaching figures; record differences and missing documentation rather than
+    assembling composite biographies. This is a proposed investigation, not a
+    completed test.
+  claimIds:
+    - MEM-C006
+  track: either
+  effortTier: desk
+  informationGain: Distinctive sequences recurring in independently documented
+    witnesses, with connecting historical evidence, would strengthen
+    transmission. Correspondences created by translation or modern compression
+    would weaken that particular comparison. Colonial recording dates alone
+    would not decide invention, and survival of a correspondence would not
+    identify a lost source.
+  origin:
+    ref: Research report reconciliation
+      report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-1
+    date: 2026-09-08
+- id: MEM-R004
+  title: Validate resemblance measurement before interpreting the Pillar 43–moai
+    comparison
+  summary: Audit saved pilot outputs and authenticate the target images before any
+    rerun. Predeclare a resemblance-only task, separate from historical
+    interpretation. Use comparable image sizes and identical background
+    treatment for every candidate; distinguish objects from photographs and
+    exclude uncertain same-object pairs from independent controls. Include
+    object-type-matched comparisons and independently justified transmission
+    controls. Assess coder agreement and, if a properly documented
+    human-comparison study becomes feasible, test whether model rankings track
+    human judgments. No experiment or recruitment has occurred.
+  claimIds:
+    - MEM-C007
+  track: either
+  effortTier: desk
+  informationGain: Stable rankings across validated instruments and appropriate
+    controls would make resemblance measurable. Persistent disagreement or
+    failure to recover controls would make the instrument uninformative, not
+    refute inheritance. A strong visual match would still require dating and
+    connecting historical evidence.
+  origin:
+    ref: Research report reconciliation
+      report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-2
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-2
+    date: 2026-09-08
+- id: MEM-R005
+  title: Reproduce the catalogue comparison and test its sensitivity
+  summary: Recover the exact matrix, class rules, exclusions, culture mappings and
+    saved outputs before reproducing the reported result. Preserve that original
+    analysis, then predeclare sensitivity variants for documentation thresholds,
+    class specificity and cultural dependence. Separate a test of unordered
+    broad categories from a new test of distinctive ordered narrative sequences.
+    Do not treat a fresh catalogue parse as an independent replication of the
+    same traditions. No calculation has been run in this reconciliation.
+  claimIds:
+    - MEM-C008
+  track: either
+  effortTier: desk
+  informationGain: A robust excess under defensible controls would strengthen a
+    package hypothesis; a reproducible null would weaken the sampled
+    broad-bundle claim. Dependence on keyword choices, proxy cultures or sparse
+    documentation would narrow the conclusion. Neither spatial clustering nor
+    dispersion alone would date or prove transmission.
+  origin:
+    ref: Research report reconciliation
+      report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-3
+    date: 2026-09-08
+- id: MEM-R007
+  title: Audit the narrative-package model against its strongest counterexamples
+  summary: Read Witzel's own definitions, relevant earlier formulations and
+    substantive replies before coding a test. Distinguish generic floods from
+    ordered narrative packages and record changes in the proposed
+    classification. Select the Dene, Inuit/Yupiq and San cases raised by
+    Thompson plus positive cases justified by the model. Freeze criteria for
+    package membership, partial preservation, borrowing and missing
+    documentation, applying them symmetrically. Separate support for historical
+    relationships from assumptions used to date them. This is a conditional
+    research proposal, not a completed assessment of the book.
+  claimIds:
+    - MEM-C010
+    - MEM-C011
+  track: either
+  effortTier: desk
+  informationGain: Consistent criteria that recover distinctive ordered packages
+    and predict independent cases could strengthen an inheritance model.
+    Classifications dependent on asymmetric excuses, revised definitions or
+    assumed migration dates would weaken that formulation. Either outcome would
+    leave other forms and timescales of narrative inheritance open.
+  origin:
+    ref: Research report reconciliation
+      report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+    extractedBy: gpt-6-astra
+    runId: report-continuation-2026-09-08-d0cbe3c4-80d9-4f11-b65e-2c2fc10dab27-bundle-5
+    date: 2026-09-08
