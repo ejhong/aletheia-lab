@@ -1506,6 +1506,107 @@ runId `codex-case-research-report-2026-09-07` (locally assigned session label);
 promptVersion `none` (interactive founder-directed work). The research worker's
 separate protocol is `case-research-report-v1`.
 
+## 2026-09-07 — Judge the research workflow by a useful case improvement
+
+The founder asked us to recover the product's larger purpose and treat the
+research prompt as a central design choice. The reusable prompt now lives in
+`scripts/prompts/case-research.md` (`case-research-report-v2`). It commissions
+an investigation of what would most improve understanding of the case: evidence,
+serious arguments and replies, an assessment of their reach, an illustrated
+editorial direction, and concrete changes to the deeper record. Existing
+sources and decisions provide memory without fixing the scope or conclusion.
+An old source, a corrected reading, or a better argument can justify revisiting
+a decision. Neither a changed verdict nor an increased record count is required.
+Operational failures are explicitly distinguished from negative findings.
+
+The first o3-deep-research request returned HTTP 404; subsequent model metadata
+requests reported model_not_found for both documented OpenAI research models
+with the configured key. No OpenAI Deep Research report was produced. Its
+$18.88 reservation remains unresolved, rather than being represented as a
+confirmed charge or silently cleared. A public Gemini agent metadata lookup
+also returned 404, but an actual Interactions API request was accepted; that
+metadata lookup did not establish that the public agent was unavailable.
+
+The founder explicitly approved one manual Gemini Deep Research Max trial
+(`deep-research-max-preview-04-2026`) without a guaranteed dollar cap, retaining
+the $150 monthly allowance and temporarily raising the daily allowance from
+$25 to $40. The shared ledger records $10 as an **estimated** reservation.
+Google's published $3–7 example is an estimate, not a tariff ceiling or an
+invoice. This is a one-off exception to the recurring workers' model allowlist
+and maximum-liability policy; it does not enable an unbounded scheduled worker.
+The temporary harness saves the exact request and provider interaction ID and
+polls that same task. It supplies the current case and public Birdmen study
+register, uses Google Search and URL Context, and disables generated visuals.
+It imposes no eight-call limit and preserves the result as unverified working
+material. Astra remains the main editor; source checks and publication review
+still apply. Restore the daily allowance after the trial and editorial follow-up.
+
+The product test is a substantially more illuminating proposed Deep Memory
+edition, supported by useful ledger changes. A report or a successful API call
+alone does not demonstrate that result. Further provider infrastructure and
+recurring schedules wait for that evaluation.
+
+Trial outcome: the provider returned a report after 102 search queries, with
+2,650,692 input tokens, 266,913 tool-input tokens, 31,095 output tokens and
+78,478 thought tokens. It contained useful leads but unearned conclusions:
+local interpretations were treated as proof of independent origins, colonial
+mediation as wholesale invention, and a proposed mythological reconstruction
+as established inheritance. The Met source check also contradicted its claim
+that the Standard Inscription explains the relief's implements. No such
+conclusion was adopted. Astra produced a more careful illustrated two-object
+article and specific proposed ledger changes, preserving a serious inheritance
+argument and its limits. Its usable advance mainly concerns already-known
+sources; this trial does not demonstrate reliable discovery across the broader
+case or establish one provider as best.
+
+The first editorial handoff accidentally omitted 29 provider citation
+annotations and the Birdmen register that Gemini had received. Those were
+coordinator errors. The raw provider response was intact; a corrected
+projection and a second Astra memo preserve the correction without another
+research call. Future handoffs must retain the research brief, prior-work
+context and source annotations alongside the report. The reusable prompt is
+necessary but did not make the provider's broad conclusions reliable.
+
+The completed research is accounted at a conservative **$15.070734**, applying
+the [published Gemini 3.1 Pro long-context rates](https://ai.google.dev/gemini-api/docs/pricing)
+to all reported input and tool-input tokens and all output and thought tokens,
+plus 102 search fees, without cache discounts or a free-search credit. Google's
+[agent announcement](https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/)
+identifies the underlying model; per-step context and model details were not
+returned. This is a tariff estimate, not the provider invoice. A supplementary
+allocation records the amount beyond the initial $10 estimate without implying
+a second research call. The two Astra passes account for **$1.35526** together.
+The daily allowance is restored to **$25**; monthly remains **$150**. The old
+OpenAI hold remains unresolved. With today's accounted usage plus that hold
+above $25, further repository model calls wait for allowance availability.
+
+AI execution provenance: model `GPT-6 (OpenAI Codex)`; date `2026-09-07`;
+runId `codex-research-prompt-2026-09-07` (locally assigned session label);
+promptVersion `none` (interactive founder-directed work).
+
+
+## 2026-09-07 — Continue the overhaul in Aletheia Lab
+
+The founder requested a separate GitHub repository and local sibling directory,
+while restoring the original publication and local checkout to their complete
+pre-#172 tree (`c65fd16d2291accaefd421eeec7d6497936601ef`). The lab is
+`ejhong/alethia-lab` at `/Users/eugene/prj/alethia-lab`; its inherited publication
+history ends at original PR #192 (`defad8f`). The original repository is restored
+through a new commit under the founder's rollback/freeze power, preserving all
+history and existing branch protections. Its AI workflows and allowance are
+paused. The lab has its own URLs, publication checks and spending destination.
+Prior spending and unresolved holds are carried forward without resetting the
+allowance. Recurring AI jobs begin paused, and no paid call is part of the move.
+
+The unmerged research prompt and report receipts continue on
+`experiment/research-prompt`; the proposed illustrated article remains an
+unpublished local artifact. Raw trial files and the corrected editorial handoff
+are preserved in `.research-runs/`. A verified full git bundle and local working
+file backup are stored privately under `.git/lab-migration/`. Historical PR links
+and review provenance still identify the original repository.
+
+AI operator: GPT-6 (OpenAI Codex); run `codex-lab-separation-2026-09-07`;
+prompt: interactive founder instruction, no versioned pipeline prompt.
 
 ## 2026-09-07 — Correct the lab repository and directory spelling
 
@@ -1523,3 +1624,73 @@ on `experiment/research-prompt` in `/Users/eugene/prj/aletheia-lab`.
 
 AI operator: GPT-6 (OpenAI Codex); run `codex-lab-name-2026-09-07`;
 prompt: interactive founder instruction, no versioned pipeline prompt.
+
+
+## 2026-09-07 — Automate the continuing research conversation
+
+The founder clarified the governing product analogy: ongoing conversations with
+ChatGPT or Claude about new happenings and other analyses, followed by a better
+Substack article. The experiment should automate that research, memory and
+presentation. The mature-case update is the primary test. New cases can begin
+through conversation; an incomplete first account is an extreme of the same
+update process, not a reason to build a separate bootstrap engine.
+
+Test megalithic-casting now and Deep Memory as the sparse case. The complete
+Birdmen homepage is retained as MEM-IN002, including its narrative, captions,
+qualifications and five study summaries. The earlier AI-authored two-object
+scope is superseded. Linked pages, datasets and pixels are not claimed to be
+embedded or verified. Founding inputs remain motivation and prior work, not
+privileged evidence. No case schema change was necessary.
+
+The research prompt (case-research-report-v3) commissions the intellectual work:
+investigation, argument, reconsideration, concrete changes and a useful next
+account. Post-processing preserves the complete report, original input and
+provider citations; checks consequential readings; reconciles records; and
+prepares the edition and assessment for independent review. It does not reduce
+the investigation to filling YAML or collecting a quota of new claims. The
+article can improve while its verdict remains unchanged; an unchanged or worse
+candidate can be retained as research memory without replacing the incumbent.
+
+The shared packet builder now supports a no-spend --prepare command, reports
+record changes against a prior comparable input and saves a complete handoff
+on success. It fails before sending an oversized packet. Unknown old packet
+formats are labeled unknown history, not zero changes. Tests cover full-input
+and citation preservation, preparation without a call or intake mutation,
+record-level changes, unavailable historical packets and oversize rejection.
+
+An interactive source-review rehearsal prepared useful casting and Deep Memory
+ledger deltas and an illustrated casting candidate. It preserves the former
+casting article and original assessment as the first edition, then binds the
+new candidate to its own explicitly unratified AI draft. All four documentary
+plates remain; three secondary leads leave the featured set but remain in the
+ledger. Selected checks and deferred leads are recorded in the existing intake
+memory. The rehearsal is not a new unattended provider trial, a blind benchmark,
+an exhaustive review of the archived chats, or proof of repeated improvement.
+The broader Deep Memory edition remains to be investigated and drafted.
+
+Deep research should become infrequent after diminishing verified returns, with
+new inbox material, an important unresolved question or periodic reconsideration
+providing reasons to return. Provider comparisons and a recurring schedule wait
+for useful results from this workflow. Paid automation remains paused; no
+additional repository model API call was made in this rehearsal. Publication
+checks and the original frozen Aletheia repository are unchanged.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-research-update-2026-09-07;
+prompt: interactive founder instruction. Research prompt protocol:
+case-research-report-v3; selected-content rehearsal: two-case-rehearsal-v1.
+
+Verification and authoring correction: all 374 tests, lint, TypeScript and the
+production export passed; all internal links across 584 pages resolved. The
+casting opening, body and assessment were sampled visually at desktop and phone
+widths, with no emulated-phone horizontal overflow and all plates loaded. Three
+historical test assumptions were corrected: preserve the original import's
+80-record provenance while allowing later additions, keep synthetic independent
+checks free of draft treatment, and assert both broken edition bindings and
+stale assessment reviews. No publication check was relaxed.
+
+Source review removed an incorrect attribution of the surface-treatment
+alternative to the founder's on-record conjecture. The original unpublished
+proposal remains in intake history; only the corrected candidate enters the
+prospective edition chain, referencing the unchanged draft assessment. This
+distinguishes the authoring history from published editions without discarding
+the correction. The final candidate is edition-2026-09-07-casting-research-update-v2.

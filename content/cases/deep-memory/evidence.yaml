@@ -3,68 +3,123 @@
   claimIds:
     - MEM-C001
   sourceId: SRC-MEM-F07B22F06CD5
-  direction: context
+  direction: supports
   strength: moderate
-  sourceStatement: "The post describing Göbekli Tepe Pillar 43 says that the
-    pillar carries multiple motifs and that a decapitated male human figure is
-    visible on the shaft. The source states: “headless human with an erect
-    penis”."
-  editorInference: Locally, this shows that the pillar's imagery includes explicit
-    human figuration alongside animal and geometric motifs. It does not
-    establish what the figure meant, whether it was ritual, mythic, or
-    narrative, or whether it reflects any shared prehistoric inheritance beyond
-    this pillar.
-  exactLocator: html-text-v1, characters 2090–2123 (retrieved text; not a
-    printed-page locator)
+  sourceStatement: Dietrich describes a headless male human figure on the shaft of Pillar 43.
+  editorInference: Supports the bounded descriptive claim. Our existing photograph
+    obscures the lower face and does not independently verify this detail.
+    Meaning and transmission remain open.
+  exactLocator: Main article, paragraph beginning “On the shaft of Pillar 43”.
   limitations:
-    - The source is a blog summary rather than a primary excavation report.
-    - The pillar is damaged, so the figure is not preserved completely.
-    - The meaning of the image is explicitly uncertain in the source.
-    - A single carved figure cannot support claims about transmission of myths
-      across regions or periods.
-    - "Depends on the same object: Göbekli Tepe Pillar 43 and its carved
-      reliefs. Any other claim about Pillar 43 is not independent of this
-      observation."
+    - Excavation-project commentary by Oliver Dietrich; not a substitute for a
+      full audit of the original excavation publication.
+    - Same object and source as the other Pillar 43 record; not an independent
+      line of transmission evidence.
+    - The lower figure is obscured in the current plate.
   reviewState: ai_extracted
   origin:
     ref: https://www.dainst.blog/the-tepe-telegrams/2016/10/14/of-animals-and-a-headless-man-gobekli-tepe-pillar-43/
       — html-text-v1, characters 2090–2123 (retrieved text; not a printed-page
-      locator)
-    extractedBy: gpt-5.4-mini-2026-03-17
-    runId: sources-2026-09-06-d1f926e2-9a8f-4b81-a66d-bc45f406561f
-    date: 2026-09-06
+      locator); reread and corrected from original extraction
+      sources-2026-09-06-d1f926e2-9a8f-4b81-a66d-bc45f406561f. Earlier record
+      retained in git and prior intake receipts.
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
 - id: MEM-E002
   title: Upper-register rectangular motifs on Pillar 43
   claimIds:
     - MEM-C002
   sourceId: SRC-MEM-F07B22F06CD5
-  direction: context
+  direction: supports
   strength: moderate
-  sourceStatement: "The post says the top of Pillar 43 has three rectangular
-    objects with cupola-like arches, each with an animal added on the arch, and
-    notes that their meaning is hard to guess. The source states: “three
-    rectangular objects with cupola-like ‘arches’ on their tops”."
-  editorInference: Locally, this establishes that Pillar 43 includes a second,
-    distinct cluster of carvings besides the headless human figure. It also
-    shows the author does not know what the upper motifs mean, leaving their
-    function or symbolism open.
-  exactLocator: html-text-v1, characters 2596–2660 (retrieved text; not a
-    printed-page locator)
+  sourceStatement: Dietrich describes the three arched rectangular forms and their
+    animal associations at the pillar’s top.
+  editorInference: Supports the bounded descriptive claim. The architectural
+    interpretation discussed in the same account is tentative; the source leaves
+    the meaning open.
+  exactLocator: Main article, paragraph beginning “On the pillars top”.
   limitations:
-    - The source is a blog summary rather than a primary excavation report.
-    - The text gives only a tentative reading; it explicitly says the meaning is
-      hard to guess.
-    - The passage does not identify the animals or confirm the motifs' function.
-    - A single pillar's carved forms cannot by itself establish shared
-      prehistoric myths or transmission across regions.
-    - "Depends on the same object: Göbekli Tepe Pillar 43 and its uppermost
-      carved motifs. This is not independent from other observations about
-      Pillar 43."
+    - Excavation-project commentary by Oliver Dietrich; not a substitute for a
+      full audit of the original excavation publication.
+    - Same object and source as the other Pillar 43 record; not an independent
+      line of transmission evidence.
+    - A tentative interpretation must not be confused with the visible outline.
   reviewState: ai_extracted
   origin:
     ref: https://www.dainst.blog/the-tepe-telegrams/2016/10/14/of-animals-and-a-headless-man-gobekli-tepe-pillar-43/
       — html-text-v1, characters 2596–2660 (retrieved text; not a printed-page
-      locator)
-    extractedBy: gpt-5.4-mini-2026-03-17
-    runId: sources-2026-09-06-a1cd26a2-7470-47a7-a4a8-483fb780f5f9
-    date: 2026-09-06
+      locator); reread and corrected from original extraction
+      sources-2026-09-06-a1cd26a2-7470-47a7-a4a8-483fb780f5f9. Earlier record
+      retained in git and prior intake receipts.
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: MEM-E003
+  title: A carried vessel with a paired implement
+  claimIds:
+    - MEM-C003
+  sourceId: SRC-MEM-MET-321437
+  direction: supports
+  strength: moderate
+  sourceStatement: The catalogue identifies a bucket in the figure’s left hand and
+    a cone in its right.
+  editorInference: The complete plate supports the local pairing. It supplies a
+    comparison object, not a historical connection to Pillar 43.
+  exactLocator: "Object 32.143.7: description, second paragraph; existing plate IMG-MEM-P02"
+  limitations:
+    - Same object as MEM-E004; not independent evidence for transmission.
+    - Local object identification does not establish prehistoric meaning.
+  reviewState: ai_extracted
+  origin:
+    ref: "SRC-MEM-MET-321437; Object 32.143.7: description, second paragraph;
+      existing plate IMG-MEM-P02"
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: MEM-E004
+  title: A qualified local interpretation
+  claimIds:
+    - MEM-C004
+  sourceId: SRC-MEM-MET-321437
+  direction: supports
+  strength: moderate
+  sourceStatement: The museum proposes purification or protection; identification
+    of the figure draws on comparisons with ritual figurines.
+  editorInference: This supports an accurate account of the museum’s
+    interpretation. An established local function would neither demonstrate nor
+    exclude an older history.
+  exactLocator: "Object 32.143.7: description, second paragraph"
+  limitations:
+    - The interpretation is qualified, not an explicit label in the relief’s
+      inscription.
+    - Shares the same object and catalogue as MEM-E003.
+  reviewState: ai_extracted
+  origin:
+    ref: "SRC-MEM-MET-321437; Object 32.143.7: description, second paragraph"
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: MEM-E005
+  title: A regional continuity model with named comparanda
+  claimIds:
+    - MEM-C005
+  sourceId: SRC-MEM-ATAKUMAN-2015
+  direction: supports
+  strength: moderate
+  sourceStatement: The article proposes transformations linking earlier regional
+    imagery to later portable objects; Fig. 18 assembles named examples.
+  editorInference: This makes regional continuity a concrete research lead.
+    Support for the description of this model must not be read as proof that its
+    historical reconstruction is correct.
+  exactLocator: Abstract p. 759; discussion and Fig. 18, pp. 778–779
+  limitations:
+    - A selected comparative corpus; object histories and comparison baselines
+      require an audit.
+    - It does not establish a Pillar 43–Nimrud bucket transmission chain.
+  reviewState: ai_extracted
+  origin:
+    ref: SRC-MEM-ATAKUMAN-2015; Abstract p. 759; discussion and Fig. 18, pp. 778–779
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07

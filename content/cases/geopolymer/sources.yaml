@@ -18,15 +18,27 @@
 
 - id: SRC-ENGELBACH-1922
   title: "The Aswan Obelisk: With Some Remarks on the Ancient Engineering"
-  authors: ["Engelbach, R."]
+  authors:
+    - Engelbach, R.
   year: "1922"
   sourceType: book
   identifier: "Cairo: Imprimerie de l'Institut Français d'Archéologie Orientale, pp. 1–47"
   verification: ai_verified
-  verificationNote: "Companion volume: Engelbach (1923), The Problem of the Obelisks, London: T. F. Unwin — the more commonly read expanded version, full text on Internet Archive and Project Gutenberg. Many later citations conflate the two."
+  verificationNote: "Companion volume: Engelbach (1923), The Problem of the Obelisks, London: T. F.
+    Unwin — the more commonly read expanded version, full text on Internet Archive and Project
+    Gutenberg. Many later citations conflate the two. Additional reading 2026-09-07 by GPT-6 (OpenAI
+    Codex; interactive research and source review): Project Gutenberg transcription of chapter I,
+    section 6, printed page 6. Test-shaft functions are Engelbach’s interpretation; no new field
+    survey claimed."
   reliabilityNotes:
-    - "The foundational source of the pounding-stone orthodoxy."
-    - "Methodologically thin by modern standards: one self-conducted 1-hour trial and heuristic workforce estimates."
+    - The foundational source of the pounding-stone orthodoxy.
+    - "Methodologically thin by modern standards: one self-conducted 1-hour trial and heuristic
+      workforce estimates."
+    - Section 6 adds an already-published quarry interpretation; it does not measure the worker’s
+      movement in GEO-C006.
+  derivedFrom: []
+  background: false
+  url: https://www.gutenberg.org/files/59320/59320-h/59320-h.htm
 
 - id: SRC-SHORTLAND-2006
   title: "Natron as a flux in the early vitreous materials industry: sources, beginnings and reasons for decline"
@@ -278,3 +290,48 @@
   verificationNote: "DOI previously verified; article read directly by an AI agent (2026-08-22 run) on cen.acs.org."
   reliabilityNotes:
     - "Journalism, not research — used here only to document the scope of Barsoum's claim, the reception, and the absence of a formal journal exchange as of 2008."
+
+- id: SRC-YI-2026
+  title: Feasibility of cracking granite with molten sodium carbonate as a mining technique in ancient
+    egypt
+  authors:
+    - Xiang Yi
+  year: "2026"
+  sourceType: paper
+  url: https://www.nature.com/articles/s40494-026-02315-y
+  identifier: "npj Heritage Science 14, 51. DOI: 10.1038/s40494-026-02315-y"
+  verification: ai_verified
+  verificationNote: "Read 2026-09-07 by GPT-6 (OpenAI Codex; interactive research and source review):
+    Methods, third experiment; Fig. 8; Results and Discussion. No human review or independent model
+    verification claimed."
+  reliabilityNotes:
+    - Small laboratory demonstration; neither historical use nor whole-block casting follows.
+    - The proposed inscription and mural readings were not independently verified and are not
+      adopted here.
+    - A matched heat-only comparator is not described among the three experiments.
+  derivedFrom: []
+  background: false
+- id: SRC-SESSA-2026
+  title: "Material characterization of stone surfaces in the inner chambers of the Khufu (Cheops)
+    Pyramid: towards informed conservation strategies"
+  authors:
+    - Clarimma Sessa
+    - Randa Deraz
+    - Olga Popovych
+    - Mehdi Tayoubi
+    - Mohamed Elkarmoty
+    - Hany Helal
+    - Christian U. Grosse
+  year: "2026"
+  sourceType: paper
+  url: https://www.nature.com/articles/s41598-026-48805-8
+  identifier: "Scientific Reports 16, 12586. DOI: 10.1038/s41598-026-48805-8"
+  verification: ai_verified
+  verificationNote: "Read 2026-09-07 by GPT-6 (OpenAI Codex; interactive research and source review):
+    Results: Queen’s chamber, Samples investigation (SEM-EDX and XRD); King’s chamber, sampling
+    limitation. No human review or independent model verification claimed."
+  reliabilityNotes:
+    - Conservation study of particular surfaces and samples; not a blinded casting test.
+    - The upper King’s Chamber efflorescence was explicitly not sampled.
+  derivedFrom: []
+  background: false

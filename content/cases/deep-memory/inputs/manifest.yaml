@@ -6,8 +6,30 @@
     AI-authored scoping proposal by Codex (GPT-6), 2026-09-06 UTC,
     using the public birdmen site and the public Göbekli Tepe research-project
     publications linked in the brief. The title and sequence are proposed
-    editorial choices, not statements attributed to the founder.
+    editorial choices, not statements attributed to the founder. Revised by the
+    same interactive operator on 2026-09-07 to reflect the founder’s whole-topic
+    scope and shared update-process direction; the earlier scoping text remains
+    in git history.
   license: >-
     Original AI-authored project planning text. No supplied private material,
     images, or verbatim source passages are reproduced. The brief cites public
     web publications; linked material retains its own rights.
+
+- id: MEM-IN002
+  title: Birdmen — complete founding page and five investigation summaries
+  role: founding_research
+  file: inputs/birdmen-page.html
+  origin: >-
+    Exact docs/index.html bytes from the founder's public ejhong/birdmen project,
+    commit e9666a7315e1af8d8e00d84e83dc7c2573d9bde3, captured locally 2026-09-07 by
+    GPT-6 (OpenAI Codex), run codex-research-update-2026-09-07.
+    Public base URL https://ejhong.github.io/birdmen/ resolves relative links.
+    SHA-256 67c4d533091b6126d5a3f8d3fcbdac5d0c2d3359dd3511ba4d1af5fa8f95403b.
+    Includes the complete HTML narrative, study summaries, captions, alt text,
+    qualifications and links. Linked pages, datasets and image pixels are not
+    embedded. The page's prior AI research is unverified working material.
+  license: >-
+    Founder authorized using his public Birdmen page as the case's founding
+    research input in this Codex conversation on 2026-09-07. This text snapshot
+    retains existing attributions and links; it grants no new rights in linked
+    third-party works. No image files or private materials are copied.

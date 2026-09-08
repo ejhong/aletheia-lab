@@ -1,0 +1,257 @@
+version: 1
+decisions:
+  - id: 7f053a7146748f7a637c93587f6b02bb78527e2af8bc2fbee252fc3d6b6e358a
+    case: megalithic-casting
+    stage: edition-proposal
+    decision: proposed
+    source: null
+    proposal: null
+    edition:
+      case: megalithic-casting
+      edition:
+        version: 1
+        runId: edition-2026-09-07-casting-research-update-v2
+        generatedAt: 2026-09-07T16:59:29.081Z
+        model: GPT-6 (OpenAI Codex; interactive research and editing)
+        promptVersion: two-case-rehearsal-v1
+        rationale: A targeted update combines two newly checked papers with a rereading of Engelbach. The
+          essay distinguishes whole-body casting, surface treatment and assisted quarrying;
+          preserves the strongest sample-based affirmative argument and petrographic objection;
+          limits the salt result to what was sampled; and gives all four existing documentary plates
+          a relevant place. The overall verdict is retained. Three supporting anecdotes or
+          interpretive leads (GEO-C002, GEO-C005, GEO-C013) leave the featured selection but remain
+          in the complete ledger with their prior assessments; no load-bearing claim is omitted.
+          This is an interactive candidate, not an independently ratified or automated-provider
+          result. Pre-publication source review removed an inaccurate attribution of the
+          surface-treatment alternative to the founder’s recorded conjecture. That conjecture
+          concerns the broader casting proposition. The first authoring draft survives in its intake
+          proposal; it was never a published edition.
+        basis:
+          contentHash: 79c0eb1d354030656c7be4ad5ea0c746ebec65fc4959c29147d16e22d531cbab
+          inputsHash: 4704c60223e357cdb346d067c0c097c623200ecd96a710ea56734882e0a933cd
+          ledgerHash: dfb15ec6590b40dabcef2dd6eb07f89fb961ae7c43a46aeeb0a189d2ecf276f9
+          incumbentHash: 11dc942bc424435be5bb1120df929baee789833181ae51781ba361bcb1e435bc
+        previous:
+          runId: edition-2026-09-07-legacy-incumbent
+          hash: 7c6073afd8e52bd94cc471a85d184ad3027b9f0bc44b2323570a175383665a33
+        assessment:
+          runId: edition-2026-09-07-casting-research-update-assessment
+          hash: ccc7b554790d2a516ab96f22707e7ac10d6790a49a6dbe3fecea7ca2ad4c61c5
+        featuredClaimIds:
+          - GEO-C022
+          - GEO-C020
+          - GEO-C021
+          - GEO-C030
+          - GEO-C012
+          - GEO-C011
+          - GEO-C010
+          - GEO-C004
+          - GEO-C101
+          - GEO-C001
+          - GEO-C006
+          - GEO-C003
+          - GEO-C102
+        article: >
+          At Aswan, an unfinished obelisk lies in the rock from which it was being freed. The trench
+          around it bears rounded depressions, like enormous scoops. The object gives us evidence of
+          quarrying and a question about technique at the same time: how did workers remove so much
+          hard granite?
+
+
+          {plate:IMG-GEO-P01}
+
+
+          One answer proposes forgotten chemistry. Perhaps builders could weaken rock before working
+          it, treat the joints between natural blocks, or manufacture stone by binding mineral
+          ingredients. These are three different possibilities. **A chemical aid to carving would be
+          a significant discovery, even if no monument block was cast.**
+
+
+          The larger claim—that [at least one major megalithic monument contains man-made cast
+          stone]{claim=GEO-C022}—remains unresolved on this record. The useful progress lies in
+          separating the possibilities and making their tests more precise.
+
+
+          ## The strongest case for casting
+
+
+          The affirmative case rests on more than the appearance of difficult masonry. [Artificial
+          limestone can be made from mineral ingredients using plausible ancient
+          technologies]{claim=GEO-C012}. Egypt had [substantial natron resources]{claim=GEO-C011},
+          and [the required high-temperature chemistry was within the broad reach of ancient
+          pyrotechnology]{claim=GEO-C010}. These observations make a recipe worth investigating;
+          they do not identify an ancient building technique.
+
+
+          The consequential evidence comes from monument samples. Barsoum and colleagues reported
+          microstructural features interpreted as reconstituted limestone in Egyptian pyramid
+          samples. A later NMR study proposed a calcium-silicate binder in a Bent Pyramid casing
+          sample. At Pumapunku, [published analyses report features their authors interpret as
+          inconsistent with natural volcanic andesite]{claim=GEO-C004}. Those results deserve an
+          answer on their own terms: what was measured, what else could produce it, and how securely
+          does each sample belong to the nominated stone?
+
+
+          {plate:IMG-GEO-P04}
+
+
+          The strongest proponent reply concerns provenance. Matching a block's chemistry to a
+          quarry can identify the origin of its ingredients without necessarily identifying how the
+          final block was made. But [the case's broad claim that provenance methods are blind to
+          casting]{claim=GEO-C030} overreaches. Elemental fingerprints and direct examination of
+          mineral phases or microstructure are different kinds of analysis. A quarry match is not a
+          complete manufacturing history; neither is every method incapable of detecting a binder.
+
+
+          ## The strongest case for natural stone
+
+
+          An unfinished monolith still attached to its quarry is direct evidence of extraction. For
+          the Egyptian limestone dispute, the more pointed counterargument comes from petrography:
+          examinations recorded here identify natural sedimentary features in pyramid stone. Jana's
+          comparison included a genuine artificial-stone control and detected its binder
+          characteristics without finding those characteristics in the examined casing samples.
+
+
+          {plate:IMG-GEO-P03}
+
+
+          This challenges [the claim that some Great Pyramid blocks were cast]{claim=GEO-C020}. It
+          also sets the scope of the negative result. Failure to find one proposed binder in
+          particular samples does not test every recipe or every block. The calcium-silicate
+          interpretation requires an appropriately targeted comparison; sample identity and custody
+          matter to both sides.
+
+
+          The Andean dispute has a different weakness. The microscopy and organic-matter reports
+          share a proponent research line, while a cited quarry study concerns sandstone rather than
+          the same andesite specimens. Treating them as equal and opposite tests would misdescribe
+          the disagreement. [The Pumapunku casting attribution]{claim=GEO-C021} needs an independent
+          examination of securely documented material, including natural controls from the relevant
+          geology.
+
+
+          ## Chemistry could matter without casting
+
+
+          A 2026 experiment adds a narrower possibility. [Xiang Yi reports that a small granite
+          specimen fractured after molten sodium carbonate treatment and subsequent blows with a
+          wooden handle]{claim=GEO-C101}. The paper's third experiment used a 12-gram specimen.
+          [Experiment, Methods and Fig. 8](https://www.nature.com/articles/s40494-026-02315-y)
+
+
+          That is a reason to investigate assisted quarrying. It is not a demonstration of an
+          ancient production line, a cast granite block, or an advantage over heat alone. A useful
+          replication would compare carbonate treatment with matched thermal treatment, pounding and
+          untreated controls, measuring energy, material use, removal rate and the resulting
+          surface. Scaling from a small specimen to a quarry face is part of the question.
+
+
+          A [published dolerite-pounding experiment reports a low removal rate under its tested
+          conditions]{claim=GEO-C001}. That gives the technique question a firmer basis than
+          unsurveyed accounts of visitor attempts. A single tool-and-rock configuration still cannot
+          establish the limit of ancient working methods.
+
+
+          The historical argument also benefits from reading a source already in the ledger.
+          Engelbach's 1922 report discusses test shafts as possible probes of granite quality and
+          guides to the obelisk's perimeter. It is his interpretation of identified features, not
+          proof of every shaft's function. But it supplies a concrete alternative to treating
+          unusual geometry as evidence of chemical processing. [Chapter I, section 6, page
+          6](https://www.gutenberg.org/files/59320/59320-h/59320-h.htm)
+
+
+          [The claim that narrow shafts made effective pounding impossible]{claim=GEO-C006} still
+          needs a measured feature and a realistic reconstruction of the working position. A
+          plausible quarry function does not establish the method used to cut a hole; a difficult
+          working position does not establish casting.
+
+
+          ## Salt needs an identity and a history
+
+
+          Salt has also carried more argumentative weight than it can bear. The older case records
+          [an untraced report of salt on chamber walls during Al-Ma'mun's entry]{claim=GEO-C003}.
+          That historical report and a modern chemical analysis answer different questions.
+
+
+          [A 2026 ScanPyramids study identifies halite as the principal efflorescence phase in
+          examined Queen's Chamber material]{claim=GEO-C102}. Crucially, the authors say the upper
+          King's Chamber deposits were not sampled. The result must not be extended to those
+          deposits or projected backwards onto a medieval account. [Results, Queen's Chamber and
+          King's Chamber sections](https://www.nature.com/articles/s41598-026-48805-8)
+
+
+          The modern study gives a conservation account of salt accumulation and migration. It
+          weakens the idea that visible salt or sodium and chlorine alone diagnose manufactured
+          stone. It does not establish the original manufacture of every sampled block. The next
+          test must distinguish soluble surface deposits, weathered natural rock, ancient mortar,
+          restoration materials and a possible original binder.
+
+
+          ## From an intriguing surface to a decisive test
+
+
+          {plate:IMG-GEO-P02}
+
+
+          The fitted masonry at Sacsayhuamán is visually compelling. This plate supplies context; it
+          is not a laboratory result from Pumapunku. Even a demonstrated artificial surface layer
+          would leave open whether the underlying block was quarried. A useful test should establish
+          both the depth of an altered layer and the origin of the underlying stone.
+
+
+          The competing accounts make different predictions. Whole-body casting predicts an
+          engineered fabric through a nominated block. Surface treatment predicts a localized
+          alteration or applied layer with a largely natural interior. Carving and fitting predict
+          natural fabric, with any weathering or restoration accounted for separately. A method
+          should first distinguish known examples before it classifies a disputed monument.
+
+
+          That is the research priority: identify accessible samples with secure custody; record
+          restoration histories; specify the expected signatures before inspection; and include both
+          natural and artificial controls. The proposed work remains open to results in either
+          direction. A failed salt diagnostic could improve the case by retiring a weak argument. A
+          reproducible chemical advantage in granite working could improve it by opening a narrower
+          one.
+
+
+          The aim is a manufacturing history of particular stones. Their difficulty invites the
+          question; their material structure must help answer it.
+    reason: A targeted update combines two newly checked papers with a rereading of Engelbach. The essay
+      distinguishes whole-body casting, surface treatment and assisted quarrying; preserves the
+      strongest sample-based affirmative argument and petrographic objection; limits the salt result
+      to what was sampled; and gives all four existing documentary plates a relevant place. The
+      overall verdict is retained. Three supporting anecdotes or interpretive leads (GEO-C002,
+      GEO-C005, GEO-C013) leave the featured selection but remain in the complete ledger with their
+      prior assessments; no load-bearing claim is omitted. This is an interactive candidate, not an
+      independently ratified or automated-provider result. Pre-publication source review removed an
+      inaccurate attribution of the surface-treatment alternative to the founder’s recorded
+      conjecture. That conjecture concerns the broader casting proposition. The first authoring
+      draft survives in its intake proposal; it was never a published edition.
+    date: 2026-09-07
+    generatedAt: 2026-09-07T16:59:29.081Z
+    runId: edition-2026-09-07-casting-research-update-v2
+    model: GPT-6 (OpenAI Codex; interactive research and editing)
+    promptVersion: two-case-rehearsal-v1
+    inputHash: b7e40fd054f9e62e166b6fcb07ad1c9d37315d03f4f9ebf1c64a0228b2c9a74c
+    candidateHash: d7aa5bd76c91050f7ad7a0d2bea9848d2c514683e5390b80a2cc90ff0cc2d636
+    ref: null
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      difference:
+        featuredAdded:
+          - GEO-C101
+          - GEO-C102
+        featuredRemoved:
+          - GEO-C013
+          - GEO-C002
+          - GEO-C005
+        claimReferencesRemoved:
+          - GEO-C002
+        platesRemoved: []
+        articleChanged: true
+        assessmentChanged: true

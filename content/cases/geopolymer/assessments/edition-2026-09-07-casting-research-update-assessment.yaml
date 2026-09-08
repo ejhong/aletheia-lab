@@ -1,0 +1,216 @@
+runId: edition-2026-09-07-casting-research-update-assessment
+model: GPT-6 (OpenAI Codex; interactive research and editing)
+date: 2026-09-07
+promptVersion: two-case-rehearsal-v1
+humanReviewed: false
+generatedAt: 2026-09-07T14:01:11.293Z
+role: draft
+caseAssessment:
+  verdict: unresolved
+  loadBearing:
+    - GEO-C022
+    - GEO-C020
+    - GEO-C021
+    - GEO-C030
+    - GEO-C012
+  weakestLinks:
+    - GEO-C021
+    - GEO-C004
+    - GEO-C006
+    - GEO-C003
+  synthesis: The overall claim that at least one major monument contains cast
+    stone remains unresolved in this targeted update. The existing Egyptian
+    argument contains competing readings of monument samples and genuine
+    binder-sensitive negative evidence; the proposed calcium-silicate variant
+    and disputed sample histories must be examined on their own terms. The
+    Pumapunku reports remain one proponent line without an independent
+    examination of securely documented andesite. The new granite experiment is a
+    narrow feasibility lead for assisted quarrying, not evidence that a monument
+    was cast; a matched heat-only comparison is needed before attributing the
+    effect specifically to carbonate chemistry. The Queen’s Chamber analysis
+    identifies surface halite but does not identify the manufacture of a whole
+    block, and the study did not sample the upper King’s Chamber deposits.
+    Engelbach’s test-shaft interpretation improves the quarry-function
+    alternatives without settling cutting technique. This pass sharpens the
+    research priorities and removes overextended inferences; it does not claim a
+    fresh verification of every inherited source or a changed overall verdict.
+  steelman: The strongest surviving affirmative case is the combination of
+    feasible artificial-stone recipes with reported binder or microstructural
+    anomalies in nominated monument samples. A quarry match can identify
+    ingredients without always establishing fabrication history; negative
+    evidence for one binder in some samples does not exclude every recipe or
+    every block. Those are substantive replies requiring recipe-specific,
+    provenance-secure tests. They do not neutralize binder-sensitive
+    petrography, remove the need for independent replication, or turn a
+    laboratory demonstration of granite weakening into evidence of historical
+    casting.
+claimAssessments:
+  - claimId: GEO-C022
+    verdict: unresolved
+    reasoning: Existential disjunction whose best-tested instance (Egypt) failed
+      under binder-aware methods with a positive control, while its surviving
+      instance (Pumapunku) has never been independently re-examined. Nothing in
+      the current material changes that structure. Retained from the 2026-08-26
+      assessment as the incumbent interpretation in this targeted update; the
+      underlying sources were not all reread in this pass.
+    confidence: moderate
+  - claimId: GEO-C020
+    verdict: weakly_supported
+    reasoning: GEO-E023 fixes the claim's scope to casings, backing and top blocks —
+      exactly what GEO-E019, GEO-E020 and GEO-E021 examined — so the negatives
+      are on target. Support persists only through two author-overlapping lines
+      (GEO-E012, GEO-E017), an as-yet unrebutted C–S–H variant, and the
+      unresolved Lauer-sample identity dispute; too thin for 'contradicted'
+      against a 'some blocks' claim. Retained from the 2026-08-26 assessment as
+      the incumbent interpretation in this targeted update; the underlying
+      sources were not all reread in this pass.
+    confidence: moderate
+  - claimId: GEO-C021
+    verdict: mixed
+    reasoning: One proponent evidence line (GEO-E006 and GEO-E007 share team and
+      samples) against a 1971 provenance study (GEO-E008) using pre-modern
+      methods on a different lithology. Contested, with no modern independent
+      test on either side. Retained from the 2026-08-26 assessment as the
+      incumbent interpretation in this targeted update; the underlying sources
+      were not all reread in this pass.
+    confidence: moderate
+  - claimId: GEO-C012
+    verdict: provisionally_supported
+    reasoning: GEO-E022 shows a C–S–H binder forms from lime and diatomaceous earth
+      at room temperature, and GEO-E013 reports large demonstration blocks. The
+      claim asserts visual similarity and ancient-feasible materials, not
+      analytical indistinguishability — GEO-E020's control in fact confirms
+      large cast blocks are producible. Retained from the 2026-08-26 assessment
+      as the incumbent interpretation in this targeted update; the underlying
+      sources were not all reread in this pass.
+    confidence: moderate
+  - claimId: GEO-C010
+    verdict: provisionally_supported
+    reasoning: 850 °C is plausibly within charcoal-and-bellows reach, but GEO-E016's
+      Badari precedent is unverified and crucible-scale heat is not
+      industrial-scale processing. GEO-E022 reduces this claim's load-bearing
+      role, since the revised binder needs no firing. Retained from the
+      2026-08-26 assessment as the incumbent interpretation in this targeted
+      update; the underlying sources were not all reread in this pass.
+    confidence: moderate
+  - claimId: GEO-C011
+    verdict: well_supported
+    reasoning: "Mainstream and uncontested (GEO-E010, GEO-E011). Credible but weakly
+      diagnostic: the source literature concerns glass and faience, not building
+      stone. Retained from the 2026-08-26 assessment as the incumbent
+      interpretation in this targeted update; the underlying sources were not
+      all reread in this pass."
+    confidence: high
+  - claimId: GEO-C013
+    verdict: unresolved
+    reasoning: Rests on an unattributed anecdote (GEO-E015) already flagged in the
+      project's own skeptical review, with no controlled replication attempted.
+      Retained from the 2026-08-26 assessment as the incumbent interpretation in
+      this targeted update; the underlying sources were not all reread in this
+      pass.
+    confidence: low
+  - claimId: GEO-C030
+    verdict: mixed
+    reasoning: The H/C/O-blindness core is correct for PXRF and ICP-MS and rightly
+      qualifies quarry-match inferences such as GEO-E009, but the claim as
+      worded also names XRD, which is phase-sensitive and reported no zeolitic
+      binder, and GEO-E024 is one author and one independence group with a
+      methods table that misstates NMR. Human review of the claim text has not
+      altered the evidential balance. Retained from the 2026-08-26 assessment as
+      the incumbent interpretation in this targeted update; the underlying
+      sources were not all reread in this pass.
+    confidence: moderate
+  - claimId: GEO-C001
+    verdict: provisionally_supported
+    reasoning: A single peer-reviewed quantitative measurement (GEO-E001), one team,
+      one tool and rock configuration. Bears on the completeness of the pounding
+      account, not on casting. Retained from the 2026-08-26 assessment as the
+      incumbent interpretation in this targeted update; the underlying sources
+      were not all reread in this pass.
+    confidence: moderate
+  - claimId: GEO-C002
+    verdict: unresolved
+    reasoning: Unquantified anecdote (GEO-E003) with no record of attempt rates,
+      cumulative effort, or test-block wear. Retained from the 2026-08-26
+      assessment as the incumbent interpretation in this targeted update; the
+      underlying sources were not all reread in this pass.
+    confidence: low
+  - claimId: GEO-C006
+    verdict: unresolved
+    reasoning: The working-position claim remains unresolved. GEO-E028 adds
+      Engelbach’s interpretation of named shafts as quarry-quality and layout
+      features, which supplies an alternative function but does not establish
+      how those shafts were cut or identify every later excavation feature. The
+      specific dimensions and biomechanics still need measurement.
+    confidence: low
+  - claimId: GEO-C003
+    verdict: unresolved
+    reasoning: The medieval salt account remains an untraced report. GEO-E026
+      identifies halite in examined modern Queen’s Chamber material; it neither
+      dates those salts to Al-Ma’mun nor samples the upper King’s Chamber
+      deposits. A modern conservation result cannot verify this historical
+      claim.
+    confidence: low
+  - claimId: GEO-C005
+    verdict: unresolved
+    reasoning: A proponent reinterpretation (GEO-E014) of a scene conventionally
+      read as metal casting, with no engagement from Egyptology in either
+      direction. Retained from the 2026-08-26 assessment as the incumbent
+      interpretation in this targeted update; the underlying sources were not
+      all reread in this pass.
+    confidence: low
+  - claimId: GEO-C004
+    verdict: mixed
+    reasoning: GEO-E006 and GEO-E007 form one proponent line with questioned sample
+      provenance and no independent replication; the reported features are
+      credible observations whose diagnosticity against natural volcanic rock
+      has not been blind-tested. Retained from the 2026-08-26 assessment as the
+      incumbent interpretation in this targeted update; the underlying sources
+      were not all reread in this pass.
+    confidence: moderate
+  - claimId: GEO-C101
+    verdict: well_supported
+    reasoning: GEO-E025 directly records the reported 12-gram granite experiment.
+      Confidence concerns the paper’s report, not independent reproducibility or
+      ancient use. The described experiment does not supply the matched thermal
+      control needed to isolate a chemical advantage.
+    confidence: moderate
+    treatment:
+      plainLanguage: A small granite specimen reportedly fractured after molten sodium
+        carbonate treatment and blows with a wooden handle.
+      claimType: observation
+      importance: major
+      diagnosticity: low
+      diagnosticitySummary: Motivates a test of chemical assistance; it does not
+        distinguish ancient casting from quarrying or establish ancient use.
+      strongestObjection: Small-scale treatment, subsequent mechanical blows and the
+        absence of a matched heat-only comparison leave the mechanism, advantage
+        and scalability unresolved.
+      whatWouldChangeOurMind:
+        - Independent replication with matched thermal and mechanical controls.
+        - Failure to reproduce the effect or no advantage over heat alone would
+          narrow the interpretation.
+        - Secure ancient residues and a workable quarry-scale process would
+          change the historical inference.
+  - claimId: GEO-C102
+    verdict: well_supported
+    reasoning: GEO-E026 records the Queen’s Chamber halite identification using
+      SEM/EDX and XRD. It is one sampling study, not independent confirmation of
+      every chamber deposit or a test of all proposed binders.
+    confidence: moderate
+    treatment:
+      plainLanguage: A modern study identifies halite in examined Queen’s Chamber
+        surface deposits.
+      claimType: observation
+      importance: major
+      diagnosticity: low
+      diagnosticitySummary: Challenges the specificity of a salt-only casting
+        argument, while leaving the stone’s manufacturing history unresolved.
+      strongestObjection: A soluble surface phase cannot establish the composition or
+        manufacture of the block interior, and the upper King’s Chamber deposits
+        were not sampled.
+      whatWouldChangeOurMind:
+        - An independently checked phase identification contradicting this
+          result.
+        - Depth-resolved evidence distinguishing surface salts, restoration
+          materials and a proposed original engineered binder.

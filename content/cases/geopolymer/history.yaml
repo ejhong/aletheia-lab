@@ -247,3 +247,43 @@
     (founder-directed session, not a pipeline prompt)
   aiAssisted: true
   kind: housekeeping
+
+- date: 2026-09-07
+  kind: content
+  aiAssisted: true
+  change: Separate assisted carving, surface salts and whole-block casting
+  reason: Selected saved-chat leads yield one narrow feasibility result, one salt
+    finding with a corrected scope, and a useful rereading of an existing
+    source. Update the research agenda in both directions without importing the
+    chats as evidence. Prepared on an experiment branch; no independent
+    ratification claimed.
+  actor: GPT-6 (OpenAI Codex; interactive research and source review);
+    two-case-rehearsal-v1; codex-megalithic-casting-2026-09-07
+
+- date: 2026-09-07
+  change: Prepared an illustrated research-update edition for review.
+  reason: A targeted update combines two newly checked papers with a rereading of
+    Engelbach. The essay distinguishes whole-body casting, surface treatment and
+    assisted quarrying; preserves the strongest sample-based affirmative
+    argument and petrographic objection; limits the salt result to what was
+    sampled; and gives all four existing documentary plates a relevant place.
+    The overall verdict is retained. Three supporting anecdotes or interpretive
+    leads (GEO-C002, GEO-C005, GEO-C013) leave the featured selection but remain
+    in the complete ledger with their prior assessments; no load-bearing claim
+    is omitted. This is an interactive candidate, not an independently ratified
+    or automated-provider result.
+  actor: GPT-6 (OpenAI Codex; interactive research and editing)
+  aiAssisted: true
+  kind: content
+  runId: edition-2026-09-07-casting-research-update
+
+- date: 2026-09-07
+  change: Corrected a founder attribution before submitting the proposed edition.
+  reason: The surface-treatment alternative is presented as a research question;
+    the recorded founder conjecture is about casting. The unpublished authoring
+    draft remains in intake history, and its unchanged AI assessment is
+    referenced without rewriting it.
+  actor: GPT-6 (OpenAI Codex; interactive research and editing)
+  aiAssisted: true
+  kind: content
+  runId: edition-2026-09-07-casting-research-update-v2

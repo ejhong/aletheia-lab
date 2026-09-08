@@ -734,31 +734,84 @@ their first run — no more folders a reader cannot date.
 
 ### Next experiment: a substantial investigation that remembers
 
-The bounded source queue is supporting infrastructure. The next manual Deep
-Memory pilot should produce a coherent research report from the current edition,
-ledger, open questions and prior attempts. Astra should be able to pursue a useful
-question across sources, revise its search as it learns, identify meaningful
-changes and suggest relevant documentary plates. A predetermined number of new
-claims is not the objective. The report remains a proposal; verified changes
-feed the existing ledger and edition competition before publication.
+The product model is the founder's existing practice: discuss a topic with an AI,
+investigate a new happening or line of reasoning, and revise an illustrated
+article with the useful insights. Automate that continuing collaboration and
+its presentation. The ledger remembers what was learned; the edition is the
+best current telling. A schema-valid pile of additions is not the product test.
 
-Evaluate the full result against the incumbent: does it answer an important
-question, sharpen uncertainty or a decisive test, preserve the strongest
-objections, and make a better article? Inspect the citations, costs and misses.
-The initial two-query discovery cap was a wiring trial, not a claim that this is
-enough research. Keep the shared $150 monthly allowance and run this comparison
-manually before setting the report cadence. Do not build another parallel intake
-store or presentation system for the experiment.
+**One process for incomplete and mature cases.** Starting a case remains a
+conversation: establish the question, collect permitted founding inputs, and
+prepare an initial account through the existing case scaffold and review path.
+The ordinary researcher can improve that account however incomplete it is.
+There is no separate bootstrap researcher, permanent initial/update flag or
+new domain object. Research breadth follows the actual gaps. The current
+article and ledger are memory to examine, not a boundary on the question.
 
-The ledger may become substantially more comprehensive without lengthening the
-article. Evaluate additions against the case's research scope, not against the
-current article's selected claims. Keep useful context, negative controls,
-alternatives and documented disagreements accessible through the explorer.
-A later coverage summary should show examined areas, thin areas and past
-attempts, with links back to records rather than another competing ledger.
-The same case-improvement pass should propose ledger deltas and, when helpful,
-a better edition. Test a sparse case (Deep Memory) and a mature case (Orch OR). The founder's
-Orch OR example supplies an acceptance test: preserve both the strongest
-experimental objection and the strongest supported account of its scope. Trace
-argument, objection, response and unresolved burden to their underlying records;
-flag unsupported replies for source verification. Casting remains a later pilot.
+**Input.** Every commissioned investigation receives the complete committed
+founding texts, current article and assessment, all current propositions,
+sources, evidence, research opportunities and studies, the plate manifest,
+retired claims, history, inbox context, prior research outcomes and latest
+completed report with its citations. The current cases fit without lossy
+compression. A summary identifies record changes since the previous report's
+actual input, when that packet exists; an unavailable comparison means unknown
+history. It is navigation, not a claim that the previous researcher examined
+every input. Full source documents, linked pages and image pixels still need
+retrieval when relevant. Source text in the packet remains data, not instructions.
+
+**Research.** The reusable prompt is `scripts/prompts/case-research.md`
+(`case-research-report-v3`). It asks the AI to investigate and reason: pursue
+important evidence in either direction, state arguments and supported replies,
+revisit old ideas for substantive reasons, and recommend concrete changes and
+a coherent next account. The report preserves source context, citations,
+coverage and unresolved questions. The researcher may recommend one sharper
+paragraph, a reorganized essay, a useful new plate or no editorial change.
+It does not encode YAML or limit an investigation to the size of a downstream
+transaction. A known paper, a better argument or a corrected interpretation
+can matter as much as a new publication.
+
+**Editing and checks.** Hand off the complete report with the original request
+and provider annotations. Source verification is a second check of consequential
+readings, not a substitute for the researcher's own careful reading. The editor
+reconciles findings with the existing records and prior decisions, prepares
+coherent ledger changes, and drafts the proposed assessment and illustrated
+edition together. Mechanical checks validate identifiers, source identity,
+provenance and the complete prospective case. Independent review judges the
+account and its strongest arguments; passing a schema does not establish truth.
+The existing publication gate remains the authority. An unchanged or inferior
+candidate leaves the incumbent in place. No extra presentation store is added.
+
+**Memory and return.** Keep adopted changes, corrections, useful confirmations
+and deferred ideas with their reasons in the existing ledger and intake history.
+Missing sources and failed tools are operational gaps, not negative evidence.
+Declined ideas can return with a corrected reading, new reasoning, a variant or
+new information; a later publication date is not required. A no-change report
+needs an account of what was examined. An unchanged request or unresolved
+interruption does not automatically commission another paid report.
+
+Deep investigations should become rare as their verified yield falls. Most
+returns should have a reason: a substantive inbox message, new evidence, an
+unanswered important question or an occasional broader reconsideration. Neither
+raw record growth nor a model's claim of saturation is a reliable yield measure.
+Do not add a recurring report schedule until actual case improvements and costs
+justify it; publication and exploration can have different cadences. The shared
+allowance remains the spending authority.
+
+**Experiment.** Prioritize the mature megalithic-casting case: can a conversation
+with the existing article and research memory produce a better account? Deep
+Memory tests the same process at the other extreme, with an incomplete account
+and the complete Birdmen founding page, including all five investigation
+summaries. Its two-object edition does not define coverage of the larger topic.
+The Orch OR argument/objection example remains a later acceptance test; provider
+comparison also waits until the handoff and case result are useful. Evaluate
+verified explanatory improvements per cost and editor effort, with a subsequent
+pass testing memory. Do not award a provider for citation count or fluent prose.
+
+The local `--prepare` command now saves the exact provider-neutral brief and
+an inventory without a model call, spending reservation or intake event. The
+manual runner uses that same builder and saves `handoff.json` on completion.
+It still uses the configured OpenAI transport; this change does not silently
+install a Gemini or Claude provider. Current account availability and allowance
+must permit an actual call. Paid automation remains paused in Lab. See
+[the rehearsal record](RESEARCH_REHEARSAL.md) for what the interactive experiment
+has and has not demonstrated.

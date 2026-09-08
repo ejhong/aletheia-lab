@@ -52,3 +52,14 @@
   actor: gpt-6-astra; edition-drafting-v1;
     edition-2026-09-06-ddb08c6b-bba7-4f72-8979-04ca8765479a; comparison
     aa04f8dcdf97f00834030d1ec42699819bc362fff7e7ff02d95237848dcd3137
+
+- date: 2026-09-07
+  kind: content
+  aiAssisted: true
+  change: Read the motif comparison in context and open a regional test
+  reason: Use the corrected saved research as leads, add checked object context
+    and a regional continuity model, correct evidence direction, and retain
+    distinct tests of the inheritance argument. Prepared on an experiment
+    branch; no independent ratification claimed.
+  actor: GPT-6 (OpenAI Codex; interactive research and source review);
+    two-case-rehearsal-v1; codex-deep-memory-2026-09-07

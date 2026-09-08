@@ -63,7 +63,9 @@ describe("real content", () => {
 
   it("carries the bulk-imported geo catalog with honest provenance", () => {
     const geo = getCaseBySlug("megalithic-casting");
-    const catalog = catalogClaims(geo);
+    // Pin the original import's provenance; subsequent investigations can
+    // legitimately add catalog records under their own author and run IDs.
+    const catalog = catalogClaims(geo).filter(c => c.origin.runId === "geo-catalog-import-2026-08-22");
     expect(catalog.length).toBe(80);
     expect(featuredClaims(geo).length).toBe(14);
     for (const c of catalog) {

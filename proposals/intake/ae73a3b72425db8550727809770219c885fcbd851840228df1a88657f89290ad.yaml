@@ -1,0 +1,36 @@
+version: 1
+decisions:
+  - id: 13c196d54d99a86377fae89babc49f297552a7c48c914fa603f31fd617a23fe3
+    case: megalithic-casting
+    stage: research-adoption
+    decision: prepared
+    source: null
+    proposal: null
+    reason: Prepared and production-loader validated on the experiment branch. Publication still
+      requires independent review.
+    date: 2026-09-07
+    generatedAt: 2026-09-07T13:12:19.357Z
+    runId: prepare-megalithic-casting-2026-09-07
+    model: Proposal materializer (no model call)
+    promptVersion: two-case-rehearsal-v1
+    inputHash: 8d4cecd9289fc5e98655f096d181898956249757abda2079a0dc846c8e6e30fa
+    candidateHash: 6b3054d1ba5919ab956ca35ac126a9f96d40be7fa14de0b749d81dc1c4d3fb83
+    ref: proposals/intake/33b662f9c07c160dcac18c6d35e04dce61aecac144680ff1f480172016ae2993.yaml#decisions[0]
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      proposalId: bb49869200c1b84758ec842b8edaf76be966889339c33104dfa1cd6e0de9c763
+      recordIds:
+        - SRC-YI-2026
+        - SRC-SESSA-2026
+        - SRC-ENGELBACH-1922
+        - GEO-C101
+        - GEO-C102
+        - GEO-E025
+        - GEO-E026
+        - GEO-E027
+        - GEO-E028
+        - GEO-R004
+        - GEO-R009

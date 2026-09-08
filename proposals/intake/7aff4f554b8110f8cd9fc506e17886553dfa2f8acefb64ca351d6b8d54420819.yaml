@@ -1,0 +1,23 @@
+version: 1
+decisions:
+  - id: 6df54b3d4dc1599933ff43bd2711825a9d7e78d191169865be53b3f137b12b5d
+    case: deep-memory
+    stage: research-run
+    decision: failed
+    source: null
+    proposal: null
+    reason: OpenAI API HTTP 404; reservation retained
+    date: 2026-09-07
+    generatedAt: 2026-09-07T03:45:37.432Z
+    runId: case-research-2026-09-07-789181ad-d37e-43ab-9cc8-7416a13db260
+    model: Research coordinator (no accepted report)
+    promptVersion: case-research-report-v1
+    inputHash: a6f61dd8c95198ddc9b11a142f4619286f6faa648e48b308a703d2cbe504ad23
+    candidateHash: null
+    ref: null
+    caseBasis: ef02e3cfc00f5ee57cb3a87cec56ed5be6468dc18a36ecab5bebcc879dd95d4a
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      kind: case-research-report

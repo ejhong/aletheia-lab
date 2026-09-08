@@ -52,21 +52,30 @@
     whole agenda.
 
 - id: GEO-R004
-  title: "Field-test UV fluorescence and efflorescence as cast-stone diagnostics"
-  summary: >-
-    Test whether inexpensive, non-destructive UV fluorescence photography of
-    surface efflorescence can discriminate cast from natural stone against
-    prespecified criteria, using geologically matched natural controls at
-    multiple megalithic sites. Framed neutrally: the question is whether the
-    method discriminates at all, not whether any prior finding is validated.
-  claimIds: [GEO-C020, GEO-C021, GEO-C022]
-  rfpTopicRef: "T-091/T-092"
+  title: Field-test UV fluorescence and efflorescence as cast-stone diagnostics
+  summary: Test UV fluorescence and efflorescence against prespecified criteria using matched natural
+    rock, known artificial binders, ancient mortar, altered surfaces and restoration materials.
+    Identify the mineral phase and sampling depth before treating a salt signal as a casting
+    diagnostic. Use the Queen’s Chamber conservation findings as a warning against extrapolating an
+    elemental signal or a surface deposit to an entire block.
+  claimIds:
+    - GEO-C020
+    - GEO-C021
+    - GEO-C022
+    - GEO-C506
+    - GEO-C102
+  rfpTopicRef: T-091/T-092
   track: small_grant
   effortTier: field
-  informationGain: >-
-    If the diagnostic works on known-cast versus natural test panels, it
-    becomes a scalable field screen for every disputed site; if it fails,
-    a popular class of surface arguments loses standing.
+  informationGain: If the diagnostic works on known-cast versus natural test panels, it becomes a
+    scalable field screen for every disputed site; if it fails, a popular class of surface arguments
+    loses standing.
+  origin:
+    ref: GEO-R004 reconsidered after source-checked surface evidence; previous wording and provenance
+      preserved in git. No frozen study criteria changed.
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
 
 - id: GEO-R005
   title: "Audit restoration histories at key disputed sites"
@@ -128,3 +137,25 @@
   informationGain: >-
     Either strengthens the conventional reading with modern rigor or
     surfaces the first period depiction consistent with mineral casting.
+
+- id: GEO-R009
+  title: Separate chemical assistance from thermal shock in granite working
+  summary: Replicate the reported treatment on matched granite specimens with carbonate-plus-heat,
+    matched heat-only, mechanical and untreated controls. Prespecify removal-rate, energy,
+    reagent-consumption and microstructural measurements; assess repeatability before scaling. This
+    is a proposed protocol, not a performed or funded study.
+  claimIds:
+    - GEO-C101
+    - GEO-C509
+    - GEO-C010
+  effortTier: lab
+  track: either
+  informationGain: A repeatable advantage over matched thermal treatment would strengthen
+    chemical-assistance feasibility. No advantage would narrow the explanation to heating or
+    mechanical effects; neither result alone establishes ancient use or whole-block casting.
+  origin:
+    ref: Interactive proposal after current-ledger and primary-source comparison; no study has been
+      performed.
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07

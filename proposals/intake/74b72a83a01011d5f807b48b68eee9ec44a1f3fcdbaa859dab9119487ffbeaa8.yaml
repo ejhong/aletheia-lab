@@ -1,0 +1,88 @@
+version: 1
+decisions:
+  - id: 1dd9f6b3816c5dbf6f03eede1bcb88092e1d7b3d3798970a40655994b7779454
+    case: megalithic-casting
+    stage: research-run
+    decision: completed
+    source: null
+    proposal: null
+    reason: Preserve the useful changes, corrections and deferred leads from an interactive rehearsal.
+      No new repository model API call or independent ratification is represented.
+    date: 2026-09-07
+    generatedAt: 2026-09-07T15:40:47.062Z
+    runId: codex-research-rehearsal-2026-09-07-megalithic-casting
+    model: GPT-6 (OpenAI Codex; interactive research rehearsal)
+    promptVersion: two-case-rehearsal-v1
+    inputHash: null
+    candidateHash: null
+    ref: null
+    caseBasis: null
+    recordId: null
+    matchMethod: null
+    retryable: false
+    details:
+      kind: interactive-research-rehearsal
+      outcomes:
+        - topic: Molten carbonate and granite
+          outcome: proposed
+          recordIds:
+            - SRC-YI-2026
+            - GEO-C101
+            - GEO-E025
+            - GEO-R009
+          reason: A small reported experiment motivates controlled replication; neither historical use nor
+            whole-block casting follows. The working edition separates these questions.
+          source:
+            title: Yi, npj Heritage Science (2026)
+            url: https://www.nature.com/articles/s40494-026-02315-y
+            locator: Methods, third experiment; Fig. 8; Discussion
+            access: Full paper text read; small specimen and absent matched heat-only comparison checked.
+          reconsiderWhen: An independent controlled replication, a better thermal comparator, or securely
+            contextualized archaeological residues.
+        - topic: Queen’s and King’s Chamber salts
+          outcome: corrected
+          recordIds:
+            - SRC-SESSA-2026
+            - GEO-C102
+            - GEO-E026
+            - GEO-E027
+            - GEO-R004
+          reason: The chat extended sampling too far. The paper identifies Queen’s Chamber halite; upper
+            King’s Chamber deposits were not sampled. A surface salt phase does not diagnose a whole
+            block’s manufacture.
+          source:
+            title: Sessa et al., Scientific Reports (2026)
+            url: https://www.nature.com/articles/s41598-026-48805-8
+            locator: Results, Queen’s Chamber, Figs. 5–7; King’s Chamber paragraph before Fig. 9
+            access: Full paper text read; sampling limitation checked explicitly.
+          reconsiderWhen: A new authorized sampling study or a specific binder signature distinguished from
+            surface migration and restoration.
+        - topic: Aswan test shafts
+          outcome: proposed
+          recordIds:
+            - SRC-ENGELBACH-1922
+            - GEO-E028
+            - GEO-C006
+          reason: An existing source supplies a quarry-quality and layout interpretation. This revisits a
+            known source rather than merely adding citations. Feature identity and cutting technique
+            remain distinct.
+          source:
+            title: Engelbach, The Aswân Obelisk (1922)
+            url: https://www.gutenberg.org/files/59320/59320-h/59320-h.htm
+            locator: Chapter I, section 6, printed p. 6
+            access: Digitized primary text read; not a new survey of later excavations.
+          reconsiderWhen: Trace the selected chat’s Kelany excavation feature to its primary report and
+            measure the stated working-position constraint.
+        - topic: Other saved-chat leads
+          outcome: deferred
+          reason: ResearchHub replications, the Tributsch surface-treatment proposal, Cusco fragment custody,
+            and further known artificial-stone controls remain discovery leads. The decoded archives
+            were sampled, not exhaustively verified. Their absence from this update is not
+            rejection.
+          sources:
+            - briefs/cast-vs-carved/checkpoint-20260905-6a9c1664.html
+            - briefs/cast-vs-carved/checkpoint-20260905-6a9c161a.html
+          reconsiderWhen: A targeted pass can inspect the primary registration or report. Record the founder’s
+            funding connection if the replication grants are adopted.
+      scope: Selected primary-source checks and a proposed casting edition; not an exhaustive report or
+        provider comparison.

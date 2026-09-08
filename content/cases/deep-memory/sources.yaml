@@ -14,3 +14,41 @@
       observation."
   derivedFrom: []
   background: false
+- id: SRC-MEM-MET-321437
+  title: Relief panel
+  authors: []
+  sourceType: artifact_record
+  url: https://www.metmuseum.org/art/collection/search/322614
+  identifier: The Metropolitan Museum of Art, accession 32.143.7
+  verification: ai_verified
+  verificationNote: "Read 2026-09-07 by GPT-6 (OpenAI Codex; interactive research
+    and source review): object 32.143.7, description and Object Information. No
+    human review or independent model verification claimed."
+  reliabilityNotes:
+    - Museum catalogue interpretation; the function and apkallu identification
+      are qualified.
+    - The existing licensed photograph was separately inspected.
+  derivedFrom: []
+  background: false
+- id: SRC-MEM-ATAKUMAN-2015
+  title: "From Monuments to Miniatures: Emergence of Stamps and Related
+    Image-bearing Objects during the Neolithic"
+  authors:
+    - Çiğdem Atakuman
+  year: "2015"
+  sourceType: paper
+  url: https://www.researchgate.net/publication/283782270_From_Monuments_to_Miniatures_Emergence_of_Stamps_and_Related_Image-bearing_Objects_during_the_Neolithic
+  identifier: "Cambridge Archaeological Journal 25(4): 759–788. DOI:
+    10.1017/S0959774315000396"
+  verification: ai_verified
+  verificationNote: "Read 2026-09-07 by GPT-6 (OpenAI Codex; interactive research
+    and source review): author-posted full text: abstract p. 759; discussion and
+    Fig. 18, pp. 778–779. No human review or independent model verification
+    claimed."
+  reliabilityNotes:
+    - Comparative interpretation, not a demonstrated descent of the specific
+      Pillar 43 forms into the Nimrud bucket.
+    - Underlying excavation reports and the illustrated object corpus have not
+      been independently audited in this pass.
+  derivedFrom: []
+  background: false

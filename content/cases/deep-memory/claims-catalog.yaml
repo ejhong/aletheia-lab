@@ -36,3 +36,55 @@
     locator: html-text-v1, characters 2596–2660 (retrieved text; not a printed-page
       locator)
   independenceGroup: Göbekli Tepe Pillar 43
+- id: MEM-C003
+  tier: catalog
+  statement: Met relief 32.143.7 depicts a winged, eagle-headed figure carrying a
+    bucket and a cone-shaped implement.
+  theme: assyria
+  rung: observation
+  claimType: observation
+  sourceAnchor:
+    sourceId: SRC-MEM-MET-321437
+    locator: Description, figure and implements; complete object photograph
+  independenceGroup: Nimrud relief 32.143.7
+  reviewState: ai_extracted
+  origin:
+    ref: SRC-MEM-MET-321437; Description, figure and implements; complete object
+      photograph
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: MEM-C004
+  tier: catalog
+  statement: The Met interprets the paired implements on relief 32.143.7 as
+    serving protective or purifying purposes.
+  theme: assyria
+  rung: mechanism
+  claimType: theory_description
+  sourceAnchor:
+    sourceId: SRC-MEM-MET-321437
+    locator: Description, paragraph discussing the implements
+  independenceGroup: Nimrud relief 32.143.7
+  reviewState: ai_extracted
+  origin:
+    ref: SRC-MEM-MET-321437; Description, paragraph discussing the implements
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
+- id: MEM-C005
+  tier: catalog
+  statement: Atakuman proposes that Later Neolithic stamp imagery developed
+    through transformations of earlier regional imagery.
+  theme: regional-continuity
+  rung: mechanism
+  claimType: theory_description
+  sourceAnchor:
+    sourceId: SRC-MEM-ATAKUMAN-2015
+    locator: Abstract p. 759; Fig. 18 and discussion pp. 778–779
+  independenceGroup: Atakuman 2015 comparative corpus
+  reviewState: ai_extracted
+  origin:
+    ref: SRC-MEM-ATAKUMAN-2015; Abstract p. 759; Fig. 18 and discussion pp. 778–779
+    extractedBy: GPT-6 (OpenAI Codex; interactive research and source review)
+    runId: codex-two-case-2026-09-07
+    date: 2026-09-07
