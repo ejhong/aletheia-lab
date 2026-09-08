@@ -172,3 +172,20 @@ lint and TypeScript passed, the webpack production export succeeded, and all
 internal links across 594 pages resolved. Desktop and phone previews loaded
 the artwork and both documentary plates with no horizontal overflow. The
 candidate remains explicitly labeled as an AI assessment awaiting review.
+
+## Development follow-up
+
+After the recorded experiment, research editing protocol v2 corrected the
+Source-container check described above. Source metadata still needs affirmative
+support and contextual checks; quote and locator findings are explicitly
+inapplicable only for that record kind. Claims and evidence require both to
+pass. The checker now sees the calculated locator that the coordinator will
+store, using one shared calculation. This fixes the inconsistent treatment of
+model-supplied section labels. Regression fixtures validate the correction;
+the failed live bundle has not been re-run, relabeled or silently adopted.
+
+The founder subsequently authorized a temporary Lab development exception to
+the arbiter merge requirement, recorded in docs/DECISIONS.md. CI and risk
+classification remain required, paid automation remains paused, and published
+Lab assessments retain their unratified labels. This changes the development
+publication policy, not the experiment's outcome or review history.

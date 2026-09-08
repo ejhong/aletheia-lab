@@ -1805,3 +1805,29 @@ each associated with the GitHub Actions app (15368); strict mode was false.
 
 AI operator: GPT-6 (OpenAI Codex); run codex-lab-development-mode-2026-09-07.
 Authorization: the founder's quoted instruction in the active conversation.
+
+## 2026-09-07 — Check source metadata and located assertions according to their roles
+
+The first Deep Memory cycle rejected the flood-pilot bundle because its Source
+container had no passage locator, although the checker supported the located
+claim and evidence. Research editing protocol v2 makes quote and locator
+findings explicitly inapplicable (`null`) for Source records. Bibliographic
+support, context, inference boundaries and independence still must pass.
+Claims and evidence still require affirmative quote and locator checks; null,
+false, omitted, duplicated or substituted findings cannot admit an update.
+
+The source checker now receives the coordinator's calculated locator before it
+votes. The same shared calculation supplies the installed record, avoiding
+the previous mismatch where the checker saw a model-invented section label
+and the installed candidate carried a verified text offset instead. A quote
+must still occur in the retrieved text, or a PDF anchor must receive the
+existing independent page check. No source verification requirement is removed.
+
+Regression fixtures cover the observed Source-container rejection, unsupported
+source metadata, unknown claim/evidence locators, missing qualifications,
+double-counted samples, incomplete findings and replacement of unverified
+section labels with the exact stored locator. The existing experiment's
+rejection and captures remain historical records. This correction makes no
+paid calls and adds no content or ledger schema.
+
+AI operator: GPT-6 (OpenAI Codex); run codex-source-check-roles-2026-09-07.

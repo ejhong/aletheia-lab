@@ -7,7 +7,7 @@ import { loadCase } from "./load.ts";
 import { geminiResearch, geminiReport, geminiResearchCost, GEMINI_RESEARCH_AGENT } from "../../scripts/lib/gemini-research.mjs";
 import { createBudget } from "../../scripts/lib/ai-budget.mjs";
 import { AI_POLICY } from "../../scripts/lib/ai-policy.mjs";
-import { recordedModelStep, replayCompletedModelStep, editResearchReport } from "../../scripts/lib/report-editing.ts";
+import { recordedModelStep, replayCompletedModelStep, editResearchReport, validateReportSourceReview } from "../../scripts/lib/report-editing.ts";
 import { prepareCaseResearch, researchPreparedCase, caseResearchInput, researchHandoffForModels, editorialModelPacket } from "../../scripts/lib/case-research.ts";
 import { sha256 } from "../../scripts/lib/source-passages.mjs";
 
@@ -140,16 +140,23 @@ async function handoff(root: string) {
 it("turns a complete report into source-checked records and preserves deferred coverage for the next round", async () => {
   const { root, dir } = fixture(), packet = await handoff(root);
   const seen: unknown[] = [];
+  const proposed = structuredClone(bundle);
+  Object.assign(proposed.changes[1].after, { sourceAnchor: { sourceId: "SRC-TST-A", locator: "Unverified model-supplied Section 13" } });
+  Object.assign(proposed.changes[2].after, { exactLocator: "Unverified model-supplied Section 13" });
   const complete = vi.fn(async (_system: string, input: string, options: { model: string; context: { phase: string } }) => {
     const data = JSON.parse(input); seen.push(data);
     if (options.context.phase === "commission") return modelReply({ rationale: "Investigate the complete synthetic question.",
       readings: [{ url: capture.url, question: "Inspect the synthetic observation.", importance: "Tests source grounding." }],
       coverage: [{ strand: "Broader synthetic connection", state: "open", reason: "No connection established by the local observation." }], deferred: [] });
     if (options.context.phase === "reconcile") return modelReply({ rationale: "Record the local fact and preserve the larger open question.",
-      bundles: [bundle], deferred: [{ item: "Synthetic historical connection", reason: "No independently checked connection.", reconsiderWhen: "A dated chain can be inspected." }] });
-    return modelReply({ $schema: "https://json-schema.org/draft/2020-12/schema", findings: data.changes.map((change: { recordId: string }) => ({ recordId: change.recordId,
+      bundles: [proposed], deferred: [{ item: "Synthetic historical connection", reason: "No independently checked connection.", reconsiderWhen: "A dated chain can be inspected." }] });
+    expect(data.changes[1].after.sourceAnchor.locator).toContain("characters 1–");
+    expect(data.changes[2].after.exactLocator).toBe(data.changes[1].after.sourceAnchor.locator);
+    expect(JSON.stringify(data.changes)).not.toContain("Section 13");
+    return modelReply({ $schema: "https://json-schema.org/draft/2020-12/schema", findings: data.changes.map((change: { kind: string; recordId: string }) => ({ recordId: change.recordId,
       supported: true, contextPreserved: true, inferenceSeparated: true, independenceHandled: true,
-      quoteSupported: true, locatorSupported: true, reason: "Supported by the complete synthetic source text." })) });
+      quoteSupported: change.kind === "source" ? null : true, locatorSupported: change.kind === "source" ? null : true,
+      reason: "Supported by the complete synthetic source text; source metadata needs no passage locator." })) });
   });
   const result = await editResearchReport(root, "synthetic", packet,
     { directory: path.join(root, "editing"), runId: "synthetic-editor", generatedAt: "2026-09-07T18:00:01.000Z" },
@@ -161,12 +168,43 @@ it("turns a complete report into source-checked records and preserves deferred c
   expect(loaded.claims[0].reviewState).toBe("ai_extracted");
   expect(loaded.sources[0].verification).toBe("ai_verified");
   expect(loaded.evidence[0].exactLocator).toContain("characters 1–");
+  expect(loaded.evidence[0].exactLocator).toBe(loaded.claims[0].sourceAnchor?.locator);
   expect(seen[0]).toMatchObject({ handoff: researchHandoffForModels(packet) });
   expect(seen[1]).toMatchObject({ handoff: researchHandoffForModels(packet), captures: [expect.objectContaining({ text: sourceText })] });
   const next = caseResearchInput(root, "synthetic").packet;
   expect(next.memory.some(entry => entry.deferred?.some((item: { item: string }) => item.item === "Synthetic historical connection"))).toBe(true);
   expect(next.changesSincePreviousReport).toMatchObject({ available: true, ledger: { claims: { added: ["TST-C001"] } } });
   expect(next.previousReport?.text).toBe(packet.response.text);
+});
+
+function sourceFindings() {
+  return { findings: bundle.changes.map(change => ({ recordId: change.recordId, supported: true,
+    contextPreserved: true, inferenceSeparated: true, independenceHandled: true,
+    quoteSupported: change.kind === "source" ? null : true, locatorSupported: change.kind === "source" ? null : true,
+    reason: "Synthetic source supports the applicable checks." })) };
+}
+
+it.each([
+  { index: 0, patch: { supported: false }, reason: "Source metadata is unsupported." },
+  { index: 0, patch: { locatorSupported: true }, reason: "A source container has no passage to verify." },
+  { index: 1, patch: { quoteSupported: null }, reason: "Claim quotation could not be checked." },
+  { index: 2, patch: { locatorSupported: null }, reason: "Evidence locator is unknown." },
+  { index: 2, patch: { contextPreserved: false }, reason: "Evidence omits the source's qualification." },
+  { index: 1, patch: { independenceHandled: false }, reason: "Claim counts a shared sample twice." },
+])("rejects an unsupported or inapplicable source finding: $reason", ({ index, patch, reason }) => {
+  const reply = sourceFindings();
+  Object.assign(reply.findings[index], patch, { reason });
+  expect(() => validateReportSourceReview(reply, bundle.changes)).toThrow(reason);
+});
+
+it("cannot omit a failed record or substitute another record's review", () => {
+  const reply = sourceFindings();
+  expect(() => validateReportSourceReview(reply, bundle.changes)).not.toThrow();
+  expect(() => validateReportSourceReview({ findings: reply.findings.slice(1) }, bundle.changes)).toThrow(/exactly once/);
+  reply.findings[1].recordId = reply.findings[0].recordId;
+  expect(() => validateReportSourceReview(reply, bundle.changes)).toThrow(/exactly once/);
+  reply.findings[1].recordId = "TST-UNREQUESTED";
+  expect(() => validateReportSourceReview(reply, bundle.changes)).toThrow(/exactly once/);
 });
 
 it("sends the complete handoff once, retaining all citations and source data without provider echoes", async () => {
@@ -219,9 +257,10 @@ it("a source check can reject an otherwise well-formed update without changing t
     if (options.context.phase === "commission") return modelReply({ rationale: "Synthetic source check.",
       readings: [{ url: capture.url, question: "Synthetic check.", importance: "Synthetic importance." }], coverage: [], deferred: [] });
     if (options.context.phase === "reconcile") return modelReply({ rationale: "Synthetic candidate.", bundles: [bundle], deferred: [] });
-    return modelReply({ findings: JSON.parse(input).changes.map((change: { recordId: string }) => ({ recordId: change.recordId,
+    return modelReply({ findings: JSON.parse(input).changes.map((change: { kind: string; recordId: string }) => ({ recordId: change.recordId,
       supported: false, contextPreserved: true, inferenceSeparated: true, independenceHandled: true,
-      quoteSupported: true, locatorSupported: true, reason: "Synthetic full assertion exceeds its source." })) });
+      quoteSupported: change.kind === "source" ? null : true, locatorSupported: change.kind === "source" ? null : true,
+      reason: "Synthetic full assertion exceeds its source." })) });
   });
   const result = await editResearchReport(root, "synthetic", packet,
     { directory: path.join(root, "editing"), runId: "synthetic-rejection", generatedAt: "2026-09-07T18:00:01.000Z" },
