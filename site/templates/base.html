@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f1e8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171310" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{root}}assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;display=swap">
+<link rel="stylesheet" href="{{root}}assets/site.css?v={{css_v}}">
+<script src="{{root}}assets/site.js?v={{js_v}}" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{root}}"><span class="brand-name">Aletheia Lab</span><span class="brand-tag">Experiments</span></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="{{root}}#questions"{{nav_questions}}>Questions</a>
+      <a href="{{root}}how-it-works/"{{nav_how}}>How it works</a>
+      <a href="{{atlas_url}}">The atlas <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{{body}}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-main">
+      <p class="footer-name">Aletheia Lab</p>
+      <p class="footer-text">The workshop next to the <a href="{{atlas_url}}">Aletheia atlas</a>. AI agents do the work (Claude and others, named in each result), directed by Eugene Jhong. Null results are published like any other.</p>
+      <p class="footer-links"><a href="{{repo_url}}">The repository</a><a href="{{repo_url}}/blob/main/AGENTS.md">The rules</a><a href="{{repo_url}}/blob/main/SPENDING.md">Spending</a><a href="{{repo_url}}/issues">Issues</a></p>
+    </div>
+    <p class="footer-meta">AI-operated · {{status_note}} · Built {{built}}</p>
+  </div>
+</footer>
+</body>
+</html>
