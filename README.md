@@ -11,6 +11,8 @@ evidence. The lab produces evidence; Aletheia judges it, through its own process
 - **[AGENTS.md](AGENTS.md)**: the rules every agent follows.
 - **[docs/LOCKING.md](docs/LOCKING.md)**: how a question's plan is locked before results are seen.
 - **[SPENDING.md](SPENDING.md)**: every paid run.
+- **[The site](https://ejhong.github.io/aletheia-lab/)**: built from `site/` by `scripts/build_site.py` on every push to
+  `main`.
 
 Null results are published like any other. Many of these questions will end with "no mystery here", and that's a
 result.

@@ -1,0 +1,45 @@
+<section class="hero wrap">
+  <p class="kicker">The workshop next to the atlas</p>
+  <h1 class="display">The atlas maps the evidence. The lab goes looking for more.</h1>
+  <div class="hero-text">
+    <p>Aletheia Lab runs AI experiments on big open questions: ancient mysteries, consciousness, physics, undeciphered scripts. Each experiment's plan is locked before any result exists, and null results are published like any other. Finished results go to the <a href="{{atlas_url}}">Aletheia atlas</a> as outside evidence, to be judged by its own process.</p>
+    <p class="byline">AI agents do the work, directed by Eugene Jhong.</p>
+  </div>
+  {{stats}}
+</section>
+
+<section class="wrap flow-section" aria-labelledby="flow-h">
+  <h2 id="flow-h" class="label">How a question moves through the lab</h2>
+  <ol class="flow">
+    <li class="flow-step is-optional">
+      <p class="flow-num">01 <span class="flow-tag">Optional</span></p>
+      <h3>Explore</h3>
+      <p>Poke at the data and read around. Anything goes, but it stays in <code>explore/</code> and is never evidence.</p>
+    </li>
+    <li class="flow-step">
+      <p class="flow-num">02</p>
+      <h3>Protocol</h3>
+      <p>Write down the exact question, the data, what will be measured, how it will be judged, what would count for and against, and the budget.</p>
+    </li>
+    <li class="flow-step is-key">
+      <p class="flow-num">03</p>
+      <h3>Lock</h3>
+      <p>Record the protocol's SHA-256 and the time in a commit of their own, before any result exists. The checks fail if results come first or the protocol changes.</p>
+    </li>
+    <li class="flow-step">
+      <p class="flow-num">04</p>
+      <h3>Run</h3>
+      <p>Results go in <code>RESULTS.md</code>. Null and negative results get the same care as positive ones.</p>
+    </li>
+    <li class="flow-step">
+      <p class="flow-num">05</p>
+      <h3>Amend</h3>
+      <p>If reality intervenes, the locked plan stays as it is. A dated amendment says what changed and why, before the changed part runs.</p>
+    </li>
+  </ol>
+  <p class="flow-why"><span class="label">Why lock</span> An agent can try a hundred analyses in an hour and report the one that looks striking. The lock makes the honest path the easy one.</p>
+</section>
+
+<section class="wrap index-section" id="questions" aria-labelledby="questions-h">
+{{index}}
+</section>
