@@ -1,0 +1,14 @@
+name = "GodelArgument"
+defaultTargets = ["GodelArgument"]
+
+[leanOptions]
+autoImplicit = false
+
+# Pinned: FormalizedFormalLogic/Foundation at the commit of 2026-11-12 (Lean v4.35.0, Mathlib v4.35.0).
+[[require]]
+name = "Foundation"
+git = "https://github.com/FormalizedFormalLogic/Foundation"
+rev = "fbcfee52cb4a892087fa978366282a9ebd844f29"
+
+[[lean_lib]]
+name = "GodelArgument"
