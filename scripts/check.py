@@ -19,6 +19,10 @@ def first_commit_time(path):
     return int(out[0]) if out else None
 
 
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 for q in sorted((ROOT / "questions").iterdir()):
     if not q.is_dir() or q.name.startswith("_"):
         continue
@@ -29,12 +33,19 @@ for q in sorted((ROOT / "questions").iterdir()):
 
     lock = q / "protocol.lock"
     results = [p for p in (q / "results", q / "RESULTS.md") if p.exists()]
+    locked_statements = {}
 
     if lock.exists():
-        fields = dict(line.split(" ", 1) for line in lock.read_text().splitlines() if " " in line)
-        actual = hashlib.sha256((q / "protocol.md").read_bytes()).hexdigest()
-        if fields.get("sha256") != actual:
+        lines = [line.split() for line in lock.read_text().splitlines()]
+        protocol_sha = next((parts[1] for parts in lines if len(parts) >= 2 and parts[0] == "sha256"), None)
+        if protocol_sha != sha(q / "protocol.md"):
             errors.append(f"{rel}: protocol.md changed after locking (put changes in amendments.md)")
+        locked_statements = {parts[1]: parts[2] for parts in lines if len(parts) >= 3 and parts[0] == "statement"}
+        for path, digest in locked_statements.items():
+            if not (q / path).is_file():
+                errors.append(f"{rel}: locked statement {path} is missing")
+            elif sha(q / path) != digest:
+                errors.append(f"{rel}: {path} changed after locking (add a new statement file via amendments.md)")
 
     if results:
         if not lock.exists():
@@ -48,6 +59,11 @@ for q in sorted((ROOT / "questions").iterdir()):
             r_t = first_commit_time(r.relative_to(ROOT))
             if r_t is not None and r_t <= lock_t:
                 errors.append(f"{rel}: {r.name} was committed no later than the lock")
+        # Proof lane: every formal statement file must be locked before results are reported.
+        for s in sorted((q / "lean").glob("**/Statement*.lean")):
+            path = s.relative_to(q).as_posix()
+            if ".lake" not in s.parts and path not in locked_statements:
+                errors.append(f"{rel}: {path} is not locked (python scripts/lock.py {rel} --statement {path})")
 
 if errors:
     print("\n".join(errors))

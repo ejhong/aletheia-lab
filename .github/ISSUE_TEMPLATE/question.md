@@ -12,4 +12,8 @@ labels: status:proposed
 
 **What would check it:**
 
+**Budget:** dollars, and what they buy
+
+**Done when:**
+
 **First step:**

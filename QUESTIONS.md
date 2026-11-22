@@ -22,3 +22,4 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#16](https://github.com/ejhong/aletheia-lab/issues/16) | Sudden lucidity before death | protocol | `sudden-lucidity` |
 | [#17](https://github.com/ejhong/aletheia-lab/issues/17) | Ask the DMT entities something the subject can't know | protocol | `dmt-entities` |
 | [#18](https://github.com/ejhong/aletheia-lab/issues/18) | Wigner's friend with an AI inside | protocol | `wigner-ai-friend` |
+| [#19](https://github.com/ejhong/aletheia-lab/issues/19) | Machine-check the Gödel argument | proof | `godel-argument` |
