@@ -30,3 +30,9 @@ Dated entries, newest last: what was tried, what happened, what next.
   compiles. Exploration only; the proofs proper are Stage 1, after the lock.
 - Next: Eugene reviews `statement-check/REPORT.md` and the outcome table in protocol.md, then the lock.
 - Eugene reviewed the gate summary and said to continue. Locking with S1e flagged as unchecked against its source.
+- Locked the protocol and `lean/GodelArgument/Statement.lean` (commit e7485ae, 17:49 UTC).
+- Stage 1: proved all 13 statements (`Results.lean`) and 10 non-vacuity instances (`NonVacuity.lean`). Build
+  passes with warnings as errors, locally and in CI (run 45051792273, commit d1968cd); 23 theorems pass the
+  axiom audit. Wrote `RESULTS.md`.
+- Next: Eugene decides on Stage 2. *Shadows of the Mind* §2.5 is still needed to check S1e against its source.
+
