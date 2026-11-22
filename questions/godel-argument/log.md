@@ -29,4 +29,4 @@ Dated entries, newest last: what was tried, what happened, what next.
 - Every statement in the final `Statement.lean` has an exploratory proof in `explore/Stage1Sketch.lean` that
   compiles. Exploration only; the proofs proper are Stage 1, after the lock.
 - Next: Eugene reviews `statement-check/REPORT.md` and the outcome table in protocol.md, then the lock.
-
+- Eugene reviewed the gate summary and said to continue. Locking with S1e flagged as unchecked against its source.

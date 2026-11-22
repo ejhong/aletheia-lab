@@ -90,8 +90,9 @@ Definitions (D) and Stage 1 statements (S). The Lean text is authoritative; the 
 
 6. Prove each S-statement in `lean/GodelArgument/` as `theorem name : Statement.Name`. Where the proof is a
    restatement of a Foundation theorem, the results table names that theorem.
-7. Non-vacuity: for every statement whose hypotheses are assumptions (all of them except the two PA witnesses, S1b(i) and the PA instance inside others),
-   also prove an instance showing the hypotheses can hold together.
+7. Non-vacuity: for every statement that starts from assumptions (all except S1b(i), which is itself a concrete
+   instance), also prove an instance showing the assumptions can hold together. For S1c and S1c′, whose
+   conclusion is inconsistency, the instance shows that assumptions (1)–(3) hold of a consistent system.
 8. Audit: `#assert_standard_axioms` on every headline theorem, inside the build. CI (`.github/workflows/lean.yml`)
    builds with warnings as errors and rejects `sorry`, `admit`, `native_decide` and new `axiom` declarations.
 9. Write `RESULTS.md`: a table of claim / Lean name / premises required / status / source locator; the statement
