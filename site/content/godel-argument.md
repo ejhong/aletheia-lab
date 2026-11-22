@@ -9,7 +9,7 @@ dek: What exactly does the Lucas–Penrose argument prove, and from which premis
 updated: 2026-11-22
 ---
 
-> **Where things stand, 22 November 2026.** Stage 0 is at its gate. Thirteen statements are written in Lean and have been through the statement check by two other vendors' models; they are waiting for Eugene's review before the lock. Nothing has been proved for the record, so there are no results yet.
+> **Where things stand, 22 November 2026.** Stages 0 and 1 are done. All thirteen locked statements are proved in Lean, using only Lean's three standard axioms. In short: the argument shows a mind is not a machine *it knows to be sound*; it does not show a mind is not a machine. Stage 2, where Penrose's later argument lives, waits for Eugene's decision.
 
 ## The question
 
@@ -33,7 +33,7 @@ The lab does not grade the atlas. A finished result is filed with Aletheia as an
 Four stages. Each ends at a gate where Eugene decides what happens next (on GitHub, the label `needs:eugene`). The ticks below mark steps as they are finished.
 
 ### Stage 0 · Statements only
-Status: in progress
+Status: done
 Gate: Eugene reviews the checkers' divergences, then `lean/Statement.lean` is locked.
 
 Write down exactly what will be proved, and check that it says what was meant, before proving anything.
@@ -42,19 +42,19 @@ Write down exactly what will be proved, and check that it says what was meant, b
 - [x] Statements in `lean/GodelArgument/Statement.lean` as `def … : Prop`: 11 definitions and 13 statements, compiling against the pinned Foundation library. Proofs elsewhere must have exactly those types, so the lock covers the statements while proofs stay free to change.
 - [x] The proof-lane Lean CI, set up on the question's branch, with a build-time check that a theorem uses only Lean's three standard axioms.
 - [x] The statement check. OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` each translated every Lean statement back into English blind, then compared it with the source passage. Three deliberately wrong statements were mixed in. In the final round both checkers caught all three. Their criticism in the earlier rounds led to five statements being rewritten. Of 17 items with a source passage, 15 ended as faithful or faithful with caveats from both checkers; two divergences are accepted with reasons and will be reported with the results. One statement, the halting form, could not be checked against its source because *Shadows of the Mind* is not yet in hand.
-- [ ] Eugene reviews the report; then the protocol and the statement file are locked.
+- [x] Eugene reviews the report; then the protocol and the statement file are locked. Locked on 22 November 2026, 17:49 UTC.
 
 ### Stage 1 · Core results in plain arithmetic
-Status: not started
+Status: done
 Gate: A report; Eugene decides on Stage 2.
 
 Thin wrappers: Foundation already proves the underlying theorems (their names are in code type), and `RESULTS.md` must say so.
 
-- [ ] **a. Penrose's conclusion as a conditional.** If K is consistent and is the theorem set of F, then K does not contain Con(F). Stated for every r.e. axiomatization F of K, because Con(F) depends on how F is described. And in the shape the sources give it: a consistent, deductively closed mind that accepts "whatever F proves is so" strictly exceeds F. (`consistent_unprovable`, `craig_consistent_unprovable_of_RE`)
-- [ ] **b. The standard objection**, in three parts. A witness: PA is sound, consistent and a machine's theorem set, and lacks Con(PA). The machine proves the conditional itself, F ⊢ Con(F) → G_F, so the human's only edge is knowing Con(F) (`gödel_iff_con`). And the second machine: for any sound F, F + Con(F) is again a sound machine, with a consistency statement of its own that it cannot prove.
-- [ ] **c. Chalmers's point via Löb.** A system that proves its own soundness for every sentence is inconsistent, with no assumption that it is a machine (`löb_theorem`). By contrast, adding the soundness *of T* to a sound T gives a sound system.
-- [ ] **d. Gödel's disjunction, semantic form.** For any set K of true arithmetic sentences, either no formal system has K as its theorem set, or some true Π₁ sentence is undecided by K. Truth here means truth in ℕ in Lean's own logic.
-- [ ] **e. Penrose's argument in halting form** (optional). No sound r.e. certifier of non-halting certifies its own diagonal computation. The issue recalls this as the form *Shadows of the Mind* §2.5 uses; `unverified` until the book is checked.
+- [x] **a. Penrose's conclusion as a conditional.** If K is consistent and is the theorem set of F, then K does not contain Con(F). Stated for every r.e. axiomatization F of K, because Con(F) depends on how F is described. And in the shape the sources give it: a consistent, deductively closed mind that accepts "whatever F proves is so" strictly exceeds F. (`consistent_unprovable`, `craig_consistent_unprovable_of_RE`)
+- [x] **b. The standard objection**, in three parts. A witness: PA is sound, consistent and a machine's theorem set, and lacks Con(PA). The machine proves the conditional itself, F ⊢ Con(F) → G_F, so the human's only edge is knowing Con(F) (`gödel_iff_con`). And the second machine: for any sound F, F + Con(F) is again a sound machine, with a consistency statement of its own that it cannot prove.
+- [x] **c. Chalmers's point via Löb.** A system that proves its own soundness for every sentence is inconsistent, with no assumption that it is a machine (`löb_theorem`). By contrast, adding the soundness *of T* to a sound T gives a sound system.
+- [x] **d. Gödel's disjunction, semantic form.** For any set K of true arithmetic sentences, either no formal system has K as its theorem set, or some true Π₁ sentence is undecided by K. Truth here means truth in ℕ in Lean's own logic.
+- [x] **e. Penrose's argument in halting form** No sound r.e. certifier of non-halting certifies its own diagonal computation. Proved, but not yet checked against *Shadows of the Mind* §2.5, which is not in hand.
 
 ### Stage 2 · Epistemic arithmetic
 Status: not started
@@ -89,9 +89,45 @@ These come from the lab's proof lane and from issue #19.
 
 ## Results
 
-> **No results yet.** Stage 0 has just started. Nothing on this page is a finding.
+> **Stage 1, 22 November 2026.** All thirteen statements are proved. This is not a verdict on ORCH-C040, and it does not say whether minds are machines.
 
-When Stage 1 is done, this section will hold a table of each claim, its Lean name, the premises it requires, its status and its source locator, with a plain summary of under 300 words of what follows from what, and no verdict on ORCH-C040.
+Model an idealized mind as the set K of arithmetic statements it would ever accept, and a machine as a formal system F whose axioms can be listed mechanically. Then:
+
+- **The conditional holds.** If a consistent K is exactly what F proves, K does not contain F's consistency statement. In the form Penrose's conclusion is usually given: a consistent, logically closed mind that accepts "whatever F proves is so" contains everything F proves and something more. It is not F.
+- **Being a sound machine is not contradictory.** Peano arithmetic is sound, consistent and mechanical, and cannot prove its own true consistency statement. The machine even proves "if I am consistent, my Gödel sentence holds". What a mind would need, to outdo F, is knowledge that F is consistent; supplying it yields a second machine with a blind spot of its own.
+- **The troublesome premise is self-knowledge of soundness, not mechanism.** Any system that can talk about its own beliefs in the standard way and asserts its own consistency is inconsistent, machine or not. Asserting the soundness of a different sound system is harmless.
+- **Gödel's disjunction holds.** If everything in K is true, either no formal system generates K, or some true statement of the simple "for all numbers" kind is undecided by K.
+
+So the argument establishes "not a machine you know to be sound". It does not establish "not a machine".
+
+| Claim | Lean name | Premises required | Status | Source |
+|---|---|---|---|---|
+| A consistent mind that is F's theorem set does not contain Con(F) | `penroseConditional` | K is exactly F's theorems; K consistent; F includes basic arithmetic | Proved | Chalmers 1995, §1; Koellner 2018, p. 345 |
+| No consistent mind is F's theorem set and contains Con(F) | `noConsistentMindKnowsOwnMachineConsistent` | K consistent; F includes basic arithmetic | Proved; stand-in only, see below | Koellner 2018, pp. 358–359 |
+| A mind that accepts F's soundness strictly exceeds F | `knownSoundMachineIsExceeded` | K consistent, logically closed, does basic arithmetic, and contains "if F proves σ then σ" for every σ | Proved | Koellner 2018, pp. 354, 356, quoting Penrose 1994, p. 76 |
+| A sound, consistent machine lacking its own true Con | `standardObjectionWitness` | none: it is about Peano arithmetic | Proved | Chalmers 1995, §1 |
+| F proves "if F is consistent then G_F" | `machineProvesConditional` | F includes basic arithmetic | Proved | Chalmers 1995, §1 |
+| The second machine: F + Con(F) is sound, proves Con(F), cannot prove its own Con | `secondMachine` | F sound; F includes basic arithmetic | Proved | Lucas 1961, pp. 116–117 |
+| A system that asserts its own consistency is inconsistent | `chalmersPoint` | a belief predicate satisfying the three derivability conditions; self-reference available; no machine assumption | Proved | Chalmers 1995, §2 |
+| A system that asserts its own soundness is inconsistent | `selfSoundnessInconsistent` | as above | Proved | Chalmers 1995, §2 |
+| A sound system plus a true statement is sound | `soundPlusTrueIsSound` | T's axioms true; σ true | Proved | Chalmers 1995, §2 |
+| A sound T plus the assertions of T's soundness is sound | `soundPlusItsSoundnessIsSound` | T's axioms true | Proved | the lab's contrast case |
+| Gödel's disjunction | `godelDisjunction` | everything in K is true | Proved | Koellner 2018, p. 349, quoting Gödel 1951, p. 310 |
+| Variant for sets not closed under deduction | `godelDisjunctionRE` | everything in K is true | Proved; a variant | as above |
+| Penrose's argument in halting form | `penroseTuring` | A is a sound, mechanically listable certifier of non-halting | Proved; not checked against its source | Penrose 1994, §2.5, `unverified` |
+
+**How it was checked.** The Lean kernel checked every proof; the build fails if any theorem uses more than Lean's three standard axioms. For each statement there is also a proof that its assumptions can hold together, so nothing is true only because its premises clash. Before anything was proved, models from OpenAI and Google translated each statement back into English blind and compared it with the source; in the final round both caught all three deliberately wrong statements mixed in.
+
+**What is not new.** The underlying theorems (Gödel's two incompleteness theorems, Löb's theorem, reflection) are already proved in the Foundation library. The lab adds the mind-and-machine reading, the source locators and the table of premises.
+
+**Limits that qualify the table.**
+
+- Plain arithmetic cannot say "I am this machine" or "I know". Set membership stands in for knowing. One checker judged the second row a stand-in, not a formalization of Gödel's remark; that is right, and the faithful version needs Stage 2.
+- Penrose's second argument (*Shadows of the Mind*, ch. 3) is not covered. That is Stage 2.
+- Penrose's and Gödel's words are quoted through Koellner; neither book was in hand.
+- Nothing here tests whether a person is well modelled as a consistent, logically closed set of statements.
+
+Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/q/godel-argument/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/q/godel-argument/questions/godel-argument/lean/GodelArgument). Cost: $12.38, all on the statement check.
 
 ## Sources
 
