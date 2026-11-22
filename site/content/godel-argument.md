@@ -9,7 +9,7 @@ dek: What exactly does the Lucas–Penrose argument prove, and from which premis
 updated: 2026-11-22
 ---
 
-> **Where things stand, 22 November 2026.** Stage 0 has just started. There are no results yet.
+> **Where things stand, 22 November 2026.** Stage 0 is at its gate. Thirteen statements are written in Lean and have been through the statement check by two other vendors' models; they are waiting for Eugene's review before the lock. Nothing has been proved for the record, so there are no results yet.
 
 ## The question
 
@@ -38,10 +38,11 @@ Gate: Eugene reviews the checkers' divergences, then `lean/Statement.lean` is lo
 
 Write down exactly what will be proved, and check that it says what was meant, before proving anything.
 
-- [ ] Definitions, each with an English gloss and a locator to the passage it formalizes: formal system as r.e. theory; soundness; consistency; an idealized mind as a set K of sentences; "K is the theorem set of some machine"; "K knows which machine".
-- [ ] Statements in `lean/Statement.lean` as `def … : Prop`. Proofs elsewhere must have exactly those types, so the lock covers the statements while proofs stay free to change.
-- [ ] The proof-lane Lean CI, set up on the question's branch.
-- [ ] The statement check. Models from OpenAI and Google, with xAI as a third if they disagree, each translate the Lean statements back into English blind, then compare their translation with the source passage and list divergences. Two deliberately wrong statements are mixed in to measure whether the checkers catch errors.
+- [x] Definitions, each with an English gloss and a locator to the passage it formalizes: formal system as r.e. theory; soundness; consistency; an idealized mind as a set K of sentences; "K is the theorem set of some machine"; and plain-arithmetic stand-ins for "K knows which machine" and "K knows the machine is sound".
+- [x] Statements in `lean/GodelArgument/Statement.lean` as `def … : Prop`: 11 definitions and 13 statements, compiling against the pinned Foundation library. Proofs elsewhere must have exactly those types, so the lock covers the statements while proofs stay free to change.
+- [x] The proof-lane Lean CI, set up on the question's branch, with a build-time check that a theorem uses only Lean's three standard axioms.
+- [x] The statement check. OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` each translated every Lean statement back into English blind, then compared it with the source passage. Three deliberately wrong statements were mixed in. In the final round both checkers caught all three. Their criticism in the earlier rounds led to five statements being rewritten. Of 17 items with a source passage, 15 ended as faithful or faithful with caveats from both checkers; two divergences are accepted with reasons and will be reported with the results. One statement, the halting form, could not be checked against its source because *Shadows of the Mind* is not yet in hand.
+- [ ] Eugene reviews the report; then the protocol and the statement file are locked.
 
 ### Stage 1 · Core results in plain arithmetic
 Status: not started
@@ -49,10 +50,10 @@ Gate: A report; Eugene decides on Stage 2.
 
 Thin wrappers: Foundation already proves the underlying theorems (their names are in code type), and `RESULTS.md` must say so.
 
-- [ ] **a. Penrose's conclusion as a conditional.** If K is consistent and is the theorem set of F, then K does not contain Con(F). Stated for every r.e. axiomatization F of K, because Con(F) depends on how F is described. (`consistent_unprovable`, `craig_consistent_unprovable_of_RE`)
-- [ ] **b. The standard objection**, in three parts. A witness: PA is sound, consistent and a machine's theorem set, and lacks Con(PA). The machine proves the conditional itself, F ⊢ Con(F) → G_F, so the human's only edge is knowing Con(F) (`gödel_iff_con`). And knowing Con(F) shows only K ≠ F: PA + Con(PA) is again a sound machine (`𝗣𝗔 ⪱ 𝗣𝗔 ∪ 𝗣𝗔.Con ⪱ 𝗧𝗔`).
-- [ ] **c. Chalmers's point via Löb.** A system that proves its own soundness for every sentence is inconsistent, with no assumption that it is a machine (`löb_theorem`). By contrast, adding the soundness *of T* to a sound T is consistent (`consistent_localReflection_of_sound`).
-- [ ] **d. Gödel's disjunction, semantic form.** For any set K of true arithmetic sentences, either K is not r.e. or some true sentence is undecided by K. Truth here means truth in ℕ in Lean's own logic.
+- [ ] **a. Penrose's conclusion as a conditional.** If K is consistent and is the theorem set of F, then K does not contain Con(F). Stated for every r.e. axiomatization F of K, because Con(F) depends on how F is described. And in the shape the sources give it: a consistent, deductively closed mind that accepts "whatever F proves is so" strictly exceeds F. (`consistent_unprovable`, `craig_consistent_unprovable_of_RE`)
+- [ ] **b. The standard objection**, in three parts. A witness: PA is sound, consistent and a machine's theorem set, and lacks Con(PA). The machine proves the conditional itself, F ⊢ Con(F) → G_F, so the human's only edge is knowing Con(F) (`gödel_iff_con`). And the second machine: for any sound F, F + Con(F) is again a sound machine, with a consistency statement of its own that it cannot prove.
+- [ ] **c. Chalmers's point via Löb.** A system that proves its own soundness for every sentence is inconsistent, with no assumption that it is a machine (`löb_theorem`). By contrast, adding the soundness *of T* to a sound T gives a sound system.
+- [ ] **d. Gödel's disjunction, semantic form.** For any set K of true arithmetic sentences, either no formal system has K as its theorem set, or some true Π₁ sentence is undecided by K. Truth here means truth in ℕ in Lean's own logic.
 - [ ] **e. Penrose's argument in halting form** (optional). No sound r.e. certifier of non-halting certifies its own diagonal computation. The issue recalls this as the form *Shadows of the Mind* §2.5 uses; `unverified` until the book is checked.
 
 ### Stage 2 · Epistemic arithmetic
