@@ -1,0 +1,39 @@
+{
+  "id": "DEF-A",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:28:21Z",
+  "target": "abbrev Def1 := Set ArithmeticSentence\n\ndef Def5 (K : Def1) (F : ArithmeticTheory) : Prop := K = F.theory\n\ndef Def6 (K : Def1) : Prop := ∃ F : ArithmeticTheory, F.RE ∧ Def5 K F\n",
+  "usage": [
+    [
+      1624,
+      1006
+    ],
+    [
+      2681,
+      9808
+    ]
+  ],
+  "a_raw": "{\"translation\": \"The target introduces three definitions:\\n\\n1. `Def1` is a type abbreviation for `Set ArithmeticSentence`, the type of sets of closed formulas (sentences) of first-order arithmetic in the language `ℒₒᵣ` (not required to be closed under deduction, consistent, or recursively enumerable).\\n\\n2. `Def5 K F`, for a set of arithmetic sentences `K : Def1` and a set of arithmetic sentences `F : ArithmeticTheory`, is the proposition that `K = F.theory`, i.e., `K` is equal as a set to `{σ | F ⊢ σ}`, the set of all arithmetic sentences derivable from `F` in classical first-order logic. No hypotheses (such as consistency, recursive enumerability, or inclusion of a base theory) are placed on `K` or `F`.\\n\\n3. `Def6 K`, for a set of arithmetic sentences `K : Def1`, is the proposition that there exists an `ArithmeticTheory` `F` (a set of arithmetic sentences) such that `F` is recursively enumerable (`F.RE`) and `Def5 K F` holds (that is, `K` equals the set `F.theory` of all theorems derivable from `F`). Neither `F` nor `K` is required to be consistent, sound/true, `Δ₁`-presented, or to extend any particular base theory; `K` must specifically be the full set of first-order theorems of such an `F` (not merely an arbitrary recursively enumerable set of sentences).\"}",
+  "translation": "The target introduces three definitions:\n\n1. `Def1` is a type abbreviation for `Set ArithmeticSentence`, the type of sets of closed formulas (sentences) of first-order arithmetic in the language `ℒₒᵣ` (not required to be closed under deduction, consistent, or recursively enumerable).\n\n2. `Def5 K F`, for a set of arithmetic sentences `K : Def1` and a set of arithmetic sentences `F : ArithmeticTheory`, is the proposition that `K = F.theory`, i.e., `K` is equal as a set to `{σ | F ⊢ σ}`, the set of all arithmetic sentences derivable from `F` in classical first-order logic. No hypotheses (such as consistency, recursive enumerability, or inclusion of a base theory) are placed on `K` or `F`.\n\n3. `Def6 K`, for a set of arithmetic sentences `K : Def1`, is the proposition that there exists an `ArithmeticTheory` `F` (a set of arithmetic sentences) such that `F` is recursively enumerable (`F.RE`) and `Def5 K F` holds (that is, `K` equals the set `F.theory` of all theorems derivable from `F`). Neither `F` nor `K` is required to be consistent, sound/true, `Δ₁`-presented, or to extend any particular base theory; `K` must specifically be the full set of first-order theorems of such an `F` (not merely an arbitrary recursively enumerable set of sentences).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def1 restricts the language to closed formulas of first-order arithmetic in ℒₒᵣ (`ArithmeticSentence`), and Def5/Def6 fix provability (`F.theory`) to classical first-order derivability, whereas the quoted passages speak more generally of 'sentences' and 'provable relative to a recursive/recursively enumerable set of axioms' without explicitly restricting to ℒₒᵣ or classical first-order logic.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Koellner formulates WMT using an explicit natural-number enumeration of r.e. axiom sets (`∃e (K = F_e)`), whereas Def6 quantifies directly over recursively enumerable axiom sets (`∃ F : ArithmeticTheory, F.RE ∧ K = F.theory`). For WMT itself these are mathematically equivalent, so this is a harmless presentational difference.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def1 models the idealized human mind purely extensionally as an arbitrary set of arithmetic sentences (`Set ArithmeticSentence`); the informal intensional characterization in P-K351 ('absolutely provable' / 'produced by the idealized human mind') cannot be expressed by the type definition alone, and deductive closure is not built into Def1 (which means Def6 matches Koellner's formal `∃e (K = F_e)` directly, while matching his informal 'Turing machine with the same outputs' gloss only when K is deductively closed).\"\n    }\n  ],\n  \"summary\": \"The three Lean definitions faithfully capture the author's claim—representing K as a set of sentences, equating K with the theorem set of an axiom set F, and formulating Koellner's WMT as K being the theorem set of some r.e. axiom set—with only minor formalization choices regarding the restriction to first-order arithmetic in ℒₒᵣ, direct quantification over r.e. theories instead of numerical indices e, and the purely extensional representation of K.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Def1 restricts the language to closed formulas of first-order arithmetic in ℒₒᵣ (`ArithmeticSentence`), and Def5/Def6 fix provability (`F.theory`) to classical first-order derivability, whereas the quoted passages speak more generally of 'sentences' and 'provable relative to a recursive/recursively enumerable set of axioms' without explicitly restricting to ℒₒᵣ or classical first-order logic."
+      },
+      {
+        "severity": "minor",
+        "description": "Koellner formulates WMT using an explicit natural-number enumeration of r.e. axiom sets (`∃e (K = F_e)`), whereas Def6 quantifies directly over recursively enumerable axiom sets (`∃ F : ArithmeticTheory, F.RE ∧ K = F.theory`). For WMT itself these are mathematically equivalent, so this is a harmless presentational difference."
+      },
+      {
+        "severity": "minor",
+        "description": "Def1 models the idealized human mind purely extensionally as an arbitrary set of arithmetic sentences (`Set ArithmeticSentence`); the informal intensional characterization in P-K351 ('absolutely provable' / 'produced by the idealized human mind') cannot be expressed by the type definition alone, and deductive closure is not built into Def1 (which means Def6 matches Koellner's formal `∃e (K = F_e)` directly, while matching his informal 'Turing machine with the same outputs' gloss only when K is deductively closed)."
+      }
+    ],
+    "summary": "The three Lean definitions faithfully capture the author's claim—representing K as a set of sentences, equating K with the theorem set of an axiom set F, and formulating Koellner's WMT as K being the theorem set of some r.e. axiom set—with only minor formalization choices regarding the restriction to first-order arithmetic in ℒₒᵣ, direct quantification over r.e. theories instead of numerical indices e, and the purely extensional representation of K."
+  }
+}

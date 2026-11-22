@@ -13,7 +13,11 @@ the page images. Copies read are listed in `../MANIFEST.md`.
 
 ## P-K345 — Koellner (2018), Part I, pp. 344–345, §I.2
 
-> Theorem 1 (Gödel). Assume that PA is consistent. Then there is a sentence φ in L_PA such that PA cannot prove φ, and PA cannot prove ¬φ. […] Theorem 2 (Gödel). Assume that PA is consistent. Then PA cannot prove Con(PA). Here 'Con(PA)' is a statement in L_PA which formally renders the informal statement that PA is consistent. […] It is important to stress that these theorems are perfectly general. We have stated them for one particular system, namely, PA, but they apply to any sufficiently strong formal system.
+> Theorem 1 (Gödel). Assume that PA is consistent. Then there is a sentence φ in L_PA such that PA cannot prove φ, and PA cannot prove ¬φ. […] Theorem 2 (Gödel). Assume that PA is consistent. Then PA cannot prove Con(PA). Here 'Con(PA)' is a statement in L_PA which formally renders the informal statement that PA is consistent. The point, for present purposes, is that this is a Π⁰₁-statement. […] It is important to stress that these theorems are perfectly general. We have stated them for one particular system, namely, PA, but they apply to any sufficiently strong formal system.
+
+## P-K354 — Koellner (2018), Part I, p. 354, §III.2
+
+> The second claim involves K. It asserts that for any formal system F, K(F ⊆ T) → F ⊊ K. This is also provable in EA_T. In fact, something stronger is provable already in EA. The antecedent of the above conditional is the statement that it is absolutely provable that F is correct (that is, K(F ⊆ T)). But a weaker condition is the scheme asserting that for any φ in L_PA, it is absolutely provable that if F holds of φ then φ holds (that is, for any φ in L_PA, K(F(⌜φ⌝) → φ)). […] Theorem 3 (Reinhardt). Assume that S includes EA. Suppose F(x) is a formula with one free variable and is such that for each sentence φ, S ⊢ K(F(⌜φ⌝) → φ). Then there is a sentence ψ such that S ⊢ Kψ ∧ K¬F(⌜ψ⌝).
 
 ## P-K357 — Koellner (2018), Part I, p. 357, §IV.2
 

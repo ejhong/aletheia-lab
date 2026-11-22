@@ -1,0 +1,35 @@
+{
+  "id": "DEF-C",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:28:55Z",
+  "target": "noncomputable def Def7 (F : ArithmeticTheory) [F.RE] : ArithmeticSentence := F.craig.consistent.val\n\ndef Def8 (K : Def1) (F : ArithmeticTheory) [F.RE] : Prop :=\n  Def5 K F ∧ Def7 F ∈ K\n\ndef Def9 (K : Def1) (F : ArithmeticTheory) [F.RE] : Prop :=\n  F.craig.localReflectionOn Set.univ ⊆ K\n",
+  "usage": [
+    [
+      1644,
+      267
+    ],
+    [
+      2777,
+      3164
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Def7 takes an arithmetic theory F with a recursively enumerable axiom set and noncomputably defines a closed arithmetic sentence: ¬Prov_{F.craig}(⌜⊥⌝). This says that no contradiction is provable from F.craig, the Δ₁-presented theory obtained from F by Craig’s trick, which has exactly the same theorems as F. Defining this sentence does not assume that F is consistent. Def8 takes, in order, a set K of arithmetic sentences and an arithmetic theory F with a recursively enumerable axiom set. It holds exactly when both (1) K is the set of all and only the sentences derivable from F and (2) the sentence Def7 F belongs to K. Thus it requires F to prove that sentence, not that the sentence be true. Def9 takes the same arguments in the same order, with the same recursive enumerability hypothesis on F. It holds exactly when, for every arithmetic sentence σ, the object-language implication Prov_{F.craig}(⌜σ⌝) → σ belongs to K. This is only an inclusion: K may contain other sentences, need not be the theorem set of F or be deductively closed, and F is not required to prove the implications.\"}",
+  "translation": "Def7 takes an arithmetic theory F with a recursively enumerable axiom set and noncomputably defines a closed arithmetic sentence: ¬Prov_{F.craig}(⌜⊥⌝). This says that no contradiction is provable from F.craig, the Δ₁-presented theory obtained from F by Craig’s trick, which has exactly the same theorems as F. Defining this sentence does not assume that F is consistent. Def8 takes, in order, a set K of arithmetic sentences and an arithmetic theory F with a recursively enumerable axiom set. It holds exactly when both (1) K is the set of all and only the sentences derivable from F and (2) the sentence Def7 F belongs to K. Thus it requires F to prove that sentence, not that the sentence be true. Def9 takes the same arguments in the same order, with the same recursive enumerability hypothesis on F. It holds exactly when, for every arithmetic sentence σ, the object-language implication Prov_{F.craig}(⌜σ⌝) → σ belongs to K. This is only an inclusion: K may contain other sentences, need not be the theorem set of F or be deductively closed, and F is not required to prove the implications.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def7 and Def9 fix a particular formula for theoremhood: provability from the Craig presentation of an r.e. theory. This expresses consistency of F because the presentation has exactly F's theorems. Def9 thus gives the machine-theoremhood instance of the pointwise scheme, not a scheme parameterized by an arbitrary supplied formula F(x) as in Reinhardt's formulation. The choice matters syntactically: membership in K need not be invariant under replacing a predicate by a coextensive one.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"As stipulated, membership records acceptance externally. It is not an object-language assertion of absolute provability: Def9 can require each reflection instance to belong to K, but cannot form a sentence applying the knowledge operator to that instance.\"\n    }\n  ],\n  \"summary\": \"On the stated machine reading, Def8 requires actual equality with F's theorem set and acceptance of its consistency sentence, while Def9 requires acceptance of each local reflection implication. Def8 asserts neither knowledge of the equality nor knowledge of full correctness.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Def7 and Def9 fix a particular formula for theoremhood: provability from the Craig presentation of an r.e. theory. This expresses consistency of F because the presentation has exactly F's theorems. Def9 thus gives the machine-theoremhood instance of the pointwise scheme, not a scheme parameterized by an arbitrary supplied formula F(x) as in Reinhardt's formulation. The choice matters syntactically: membership in K need not be invariant under replacing a predicate by a coextensive one."
+      },
+      {
+        "severity": "minor",
+        "description": "As stipulated, membership records acceptance externally. It is not an object-language assertion of absolute provability: Def9 can require each reflection instance to belong to K, but cannot form a sentence applying the knowledge operator to that instance."
+      }
+    ],
+    "summary": "On the stated machine reading, Def8 requires actual equality with F's theorem set and acceptance of its consistency sentence, while Def9 requires acceptance of each local reflection implication. Def8 asserts neither knowledge of the equality nor knowledge of full correctness."
+  }
+}

@@ -1,0 +1,235 @@
+{
+ "real": [
+  {
+   "id": "DEF-A",
+   "names": [
+    "Mind",
+    "IsTheoremSetOf",
+    "IsMechanical"
+   ],
+   "passages": [
+    "P-K350",
+    "P-K351",
+    "P-K357"
+   ],
+   "claim": "These definitions capture: the idealized mind as a set K of sentences; 'K is exactly the set of theorems of F' (F's effectiveness is a separate hypothesis wherever this is used); and 'K is the theorem set of some machine' (Koellner's WMT)."
+  },
+  {
+   "id": "DEF-B",
+   "names": [
+    "IsTrue",
+    "Sound",
+    "Consistent"
+   ],
+   "passages": [
+    "P-K351",
+    "P-K345"
+   ],
+   "claim": "These definitions capture: truth of an arithmetic sentence; soundness of K (K ⊆ T); and consistency."
+  },
+  {
+   "id": "DEF-D",
+   "names": [
+    "IsPi1"
+   ],
+   "passages": [
+    "P-K345"
+   ],
+   "claim": "This definition captures the class of Π⁰₁ statements of arithmetic."
+  },
+  {
+   "id": "DEF-C",
+   "names": [
+    "Con",
+    "KnowsOwnMachineConsistent",
+    "ContainsSoundnessOf"
+   ],
+   "passages": [
+    "P-K345",
+    "P-K354",
+    "P-K359"
+   ],
+   "claim": "The TARGET uses set membership in K as a stand-in for 'K knows/accepts'; plain arithmetic has no knowledge operator, and that limitation is declared separately. Claimed: (i) Con renders the consistency statement Con(F); (ii) KnowsOwnMachineConsistent says K is F's theorem set and contains Con(F); (iii) ContainsSoundnessOf renders Koellner's weaker pointwise scheme 'for any φ, K(F(⌜φ⌝) → φ)' with membership in place of K. It is NOT claimed that these express knowing which machine one is."
+  },
+  {
+   "id": "S1a",
+   "names": [
+    "PenroseConditional"
+   ],
+   "passages": [
+    "P-C1",
+    "P-K345"
+   ],
+   "claim": "This statement captures Chalmers's item (c), generalized by the second incompleteness theorem: if the mind's conclusions are exactly the theorems of a consistent, sufficiently strong formal system F, then F's consistency statement is not among them."
+  },
+  {
+   "id": "S1a2",
+   "names": [
+    "NoConsistentMindKnowsOwnMachineConsistent"
+   ],
+   "passages": [
+    "P-C1",
+    "P-K359"
+   ],
+   "claim": "The TARGET uses set membership in K as a stand-in for 'K knows/accepts'; plain arithmetic has no knowledge operator, and that limitation is declared separately. This statement captures: a consistent mind cannot both be exactly machine F and count F's consistency among its conclusions."
+  },
+  {
+   "id": "S1a3",
+   "names": [
+    "KnownConsistentMachineIsExceeded"
+   ],
+   "passages": [
+    "P-K354",
+    "P-K356"
+   ],
+   "claim": "The TARGET uses set membership in K as a stand-in for 'K knows/accepts'; plain arithmetic has no knowledge operator, and that limitation is declared separately. This statement captures the conditional 'if K knows F is correct then F ⊊ K', with knowledge of F's consistency (a weaker premise than knowledge of soundness) as the antecedent."
+  },
+  {
+   "id": "S1a4",
+   "names": [
+    "KnownSoundMachineIsExceeded"
+   ],
+   "passages": [
+    "P-K354",
+    "P-K356"
+   ],
+   "claim": "The TARGET uses set membership in K as a stand-in for 'K knows/accepts'; plain arithmetic has no knowledge operator, and that limitation is declared separately. This statement captures the conditional 'if K knows F is sound then F ⊊ K', using Koellner's weaker pointwise scheme as the antecedent. This is offered as the arithmetic counterpart of Penrose's conclusion that the mind is not a knowably sound algorithm."
+  },
+  {
+   "id": "S1b1",
+   "names": [
+    "StandardObjectionWitness"
+   ],
+   "passages": [
+    "P-C1",
+    "P-C1b"
+   ],
+   "claim": "This statement gives one concrete instance (Peano arithmetic) of the situation Chalmers describes: a sound, consistent formal system whose consistency statement is true but is not among its theorems. Items (a) and (b) are covered by other statements."
+  },
+  {
+   "id": "S1b2",
+   "names": [
+    "MachineProvesConditional"
+   ],
+   "passages": [
+    "P-C1"
+   ],
+   "claim": "This statement captures Chalmers's item (b): F can prove the conditional 'If F is consistent, then G(F) is true'."
+  },
+  {
+   "id": "S1b3",
+   "names": [
+    "SecondMachine"
+   ],
+   "passages": [
+    "P-L116"
+   ],
+   "claim": "This statement captures Lucas's 'second machine' passage, with the first machine's consistency statement playing the role of its Gödelian formula: the enlarged system is again a machine, proves what the first could not, and has an unprovable formula of its own."
+  },
+  {
+   "id": "S1c",
+   "names": [
+    "ChalmersPoint"
+   ],
+   "passages": [
+    "P-C2"
+   ],
+   "claim": "This statement captures Chalmers's result: assumptions (1)-(3) plus the key assumption (4), that the system asserts it is not inconsistent, lead to a contradiction, with no assumption that the system is computational."
+  },
+  {
+   "id": "S1c2",
+   "names": [
+    "SelfSoundnessInconsistent"
+   ],
+   "passages": [
+    "P-C2b",
+    "P-C2"
+   ],
+   "claim": "This statement is a variant of Chalmers's result with a stronger premise, matching his prose conclusion about soundness: a system that asserts, for every sentence, 'if I believe it then it is so' is inconsistent. It is not claimed to be the result as he derives it from (4)."
+  },
+  {
+   "id": "S1c3",
+   "names": [
+    "SoundPlusTrueIsSound"
+   ],
+   "passages": [
+    "P-C2c"
+   ],
+   "claim": "This statement captures the parenthetical: supplementing a sound system with a true statement yields a sound system."
+  },
+  {
+   "id": "S1c4",
+   "names": [
+    "SoundPlusItsSoundnessIsSound"
+   ],
+   "passages": [
+    "P-C2c",
+    "P-C2b"
+   ],
+   "claim": "This statement is the lab's own contrast case, an application of the parenthetical: adding to a sound system T the (true) assertions of T's soundness yields a sound system. It is meant to show that the contradiction in Chalmers's result needs the system to assert soundness of ITSELF."
+  },
+  {
+   "id": "S1d",
+   "names": [
+    "GodelDisjunction"
+   ],
+   "passages": [
+    "P-K349"
+   ],
+   "claim": "This statement captures Gödel's disjunction as in Koellner's Claim 3, with the premise K ⊆ T from the informal argument made explicit, and with the undecided sentence required to be Π⁰₁ (the logical form of Gödel's 'diophantine problems')."
+  },
+  {
+   "id": "S1d2",
+   "names": [
+    "GodelDisjunctionRE"
+   ],
+   "passages": [
+    "P-K349"
+   ],
+   "claim": "This statement is a variant of Gödel's disjunction for sets K that need not be deductively closed, with 'K is not recursively enumerable' as the first alternative."
+  },
+  {
+   "id": "S1e",
+   "names": [
+    "PenroseTuring"
+   ],
+   "passages": [],
+   "claim": "No passage available; back-translation only."
+  }
+ ],
+ "decoys": [
+  {
+   "id": "X1",
+   "mimics": "DEF-A",
+   "passages": [
+    "P-K350",
+    "P-K351",
+    "P-K357"
+   ],
+   "claim": "These definitions capture: the idealized mind as a set K of sentences; 'K is exactly the set of theorems of F' (F's effectiveness is a separate hypothesis wherever this is used); and 'K is the theorem set of some machine' (Koellner's WMT).",
+   "planted_error": "IsMechanical uses K ⊆ F.theory (the machine proves at least what the mind accepts) instead of equality (the two coincide).",
+   "lean": "abbrev Mind := Set ArithmeticSentence\n\ndef IsTheoremSetOf (K : Mind) (F : ArithmeticTheory) : Prop := K = F.theory\n\ndef IsMechanical (K : Mind) : Prop := ∃ F : ArithmeticTheory, F.RE ∧ K ⊆ F.theory"
+  },
+  {
+   "id": "X2",
+   "mimics": "S1d",
+   "passages": [
+    "P-K349"
+   ],
+   "claim": "This statement captures Gödel's disjunction as in Koellner's Claim 3, with the premise K ⊆ T from the informal argument made explicit, and with the undecided sentence required to be Π⁰₁ (the logical form of Gödel's 'diophantine problems').",
+   "planted_error": "The premise that K is sound (K ⊆ T) is missing, although the claim says it is explicit; without it the statement is false (take K to be all sentences).",
+   "lean": "def GodelDisjunction : Prop :=\n  ∀ K : Mind,\n    (¬ IsMechanical K) ∨ ∃ σ : ArithmeticSentence, IsPi1 σ ∧ IsTrue σ ∧ σ ∉ K ∧ (∼σ) ∉ K"
+  },
+  {
+   "id": "X3",
+   "mimics": "S1a",
+   "passages": [
+    "P-C1",
+    "P-K345"
+   ],
+   "claim": "This statement captures Chalmers's item (c), generalized by the second incompleteness theorem: if the mind's conclusions are exactly the theorems of a consistent, sufficiently strong formal system F, then F's consistency statement is not among them.",
+   "planted_error": "The implication is reversed: it says that if K lacks Con(F) then K is consistent, instead of: if K is consistent then K lacks Con(F).",
+   "lean": "def PenroseConditional : Prop :=\n  ∀ (K : Mind) (F : ArithmeticTheory) [F.RE] [𝗜𝚺₁ ⪯ F],\n    IsTheoremSetOf K F → Con F ∉ K → Consistent K"
+  }
+ ]
+}

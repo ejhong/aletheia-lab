@@ -1,0 +1,16 @@
+{
+  "id": "S1e",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:36:41Z",
+  "target": "def Target : Prop :=\n  ∀ A : ℕ → Prop, REPred A →\n    (∀ n, A n → ¬ ((Denumerable.ofNat Nat.Partrec.Code n).eval n).Dom) →\n    ∃ k, ¬ ((Denumerable.ofNat Nat.Partrec.Code k).eval k).Dom ∧ ¬ A k\n",
+  "usage": [
+    [
+      1704,
+      1598
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"`Target` is defined as the proposition asserting that for every predicate `A` on the natural numbers `ℕ`: if `A` is recursively enumerable (`REPred A`), and if for every natural number `n`, whenever `A n` holds, running the `n`-th partial recursive function code (`Denumerable.ofNat Nat.Partrec.Code n`) on input `n` does not halt, then there exists a natural number `k` such that running the `k`-th partial recursive function code on input `k` does not halt and `A k` does not hold. Note that this is a bare existence statement for `k` (it does not require `k` to be computed effectively from `A` or from a code for `A`), and `Target` does not depend on any of `Def1`–`Def10`.\"}\n```",
+  "translation": "`Target` is defined as the proposition asserting that for every predicate `A` on the natural numbers `ℕ`: if `A` is recursively enumerable (`REPred A`), and if for every natural number `n`, whenever `A n` holds, running the `n`-th partial recursive function code (`Denumerable.ofNat Nat.Partrec.Code n`) on input `n` does not halt, then there exists a natural number `k` such that running the `k`-th partial recursive function code on input `k` does not halt and `A k` does not hold. Note that this is a bare existence statement for `k` (it does not require `k` to be computed effectively from `A` or from a code for `A`), and `Target` does not depend on any of `Def1`–`Def10`."
+}

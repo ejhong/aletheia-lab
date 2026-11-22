@@ -1,0 +1,35 @@
+{
+  "id": "DEF-A",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:28:21Z",
+  "target": "abbrev Def1 := Set ArithmeticSentence\n\ndef Def5 (K : Def1) (F : ArithmeticTheory) : Prop := K = F.theory\n\ndef Def6 (K : Def1) : Prop := ∃ F : ArithmeticTheory, F.RE ∧ Def5 K F\n",
+  "usage": [
+    [
+      1644,
+      175
+    ],
+    [
+      2524,
+      729
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Def1 is an abbreviation for the type of sets of closed arithmetic sentences; it imposes no condition on those sets. For a set K of such sentences and an arithmetic axiom set F, Def5(K, F) means that K is exactly the set of theorems of F: for every arithmetic sentence σ, σ belongs to K if and only if σ is derivable from F. For a given K, Def6(K) means that there exists an arithmetic axiom set F such that F is recursively enumerable and Def5(K, F) holds for that same F. The recursive enumerability condition is on F as an axiom set. F need not equal K or be closed under deduction; it is the full theorem set of F that must equal K. No consistency or truth-in-the-standard-model hypothesis is imposed.\"}",
+  "translation": "Def1 is an abbreviation for the type of sets of closed arithmetic sentences; it imposes no condition on those sets. For a set K of such sentences and an arithmetic axiom set F, Def5(K, F) means that K is exactly the set of theorems of F: for every arithmetic sentence σ, σ belongs to K if and only if σ is derivable from F. For a given K, Def6(K) means that there exists an arithmetic axiom set F such that F is recursively enumerable and Def5(K, F) holds for that same F. The recursive enumerability condition is on F as an axiom set. F need not equal K or be closed under deduction; it is the full theorem set of F that must equal K. No consistency or truth-in-the-standard-model hypothesis is imposed.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def1 fixes the language to first-order arithmetic, whereas the excerpts speak of “sentences” without specifying a language. A parameter K of this type represents the mind’s outputs.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def6 quantifies over a recursively enumerable axiom set F rather than a numerical index e. Koellner’s F_e corresponds to Lean’s F.theory, not to F itself. Since every recursively enumerable axiom set has an index, this changes the presentation but not the existential claim.\"\n    }\n  ],\n  \"summary\": \"Def5 expresses exact equality with the theorem set, leaving effectiveness separate. Def6 requires effectiveness of the same witness F, so it captures WMT as equality of outputs without adding a knowledge requirement.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Def1 fixes the language to first-order arithmetic, whereas the excerpts speak of “sentences” without specifying a language. A parameter K of this type represents the mind’s outputs."
+      },
+      {
+        "severity": "minor",
+        "description": "Def6 quantifies over a recursively enumerable axiom set F rather than a numerical index e. Koellner’s F_e corresponds to Lean’s F.theory, not to F itself. Since every recursively enumerable axiom set has an index, this changes the presentation but not the existential claim."
+      }
+    ],
+    "summary": "Def5 expresses exact equality with the theorem set, leaving effectiveness separate. Def6 requires effectiveness of the same witness F, so it captures WMT as equality of outputs without adding a knowledge requirement."
+  }
+}

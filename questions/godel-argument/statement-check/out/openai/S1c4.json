@@ -1,0 +1,35 @@
+{
+  "id": "S1c4",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:30:33Z",
+  "target": "def Target : Prop :=\n  ∀ (T : ArithmeticTheory) [T.Δ₁], Def3 T → Def3 (T ∪ T.localReflectionOn Set.univ).theory\n",
+  "usage": [
+    [
+      1686,
+      235
+    ],
+    [
+      2227,
+      795
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every arithmetic axiom set T equipped with a Δ₁ definition of its axioms, if every member of T is true in the standard natural numbers, then every sentence derivable from T together with all instances of local reflection for T is true in the standard natural numbers. The added instances are Prov_T(⌜σ⌝) → σ for every arithmetic sentence σ, whether or not T proves σ; the provability predicate is for T, not for the enlarged theory. T need not be deductively closed or extend any specified base theory.\"}",
+  "translation": "Target is the proposition that for every arithmetic axiom set T equipped with a Δ₁ definition of its axioms, if every member of T is true in the standard natural numbers, then every sentence derivable from T together with all instances of local reflection for T is true in the standard natural numbers. The added instances are Prov_T(⌜σ⌝) → σ for every arithmetic sentence σ, whether or not T proves σ; the provability predicate is for T, not for the enlarged theory. T need not be deductively closed or extend any specified base theory.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The Lean statement specializes the parenthetical to first-order arithmetic with truth in the standard natural numbers, and requires a Δ₁ presentation of T to define its provability predicate. The parenthetical itself imposes no such presentation requirement.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Rather than adding one true sentence, the target adds the whole local reflection scheme for T. This is a valid application of the parenthetical: if T's axioms are true, every theorem of T is true, so each instance Prov_T(⌜σ⌝) → σ is true and adding them all preserves soundness.\"\n    }\n  ],\n  \"summary\": \"The target captures the intended contrast: the enlarged theory asserts reflection for the original T, not for the enlarged theory itself. It is an application of Chalmers's parenthetical, not a formalization of his particular “I am F” extension.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The Lean statement specializes the parenthetical to first-order arithmetic with truth in the standard natural numbers, and requires a Δ₁ presentation of T to define its provability predicate. The parenthetical itself imposes no such presentation requirement."
+      },
+      {
+        "severity": "minor",
+        "description": "Rather than adding one true sentence, the target adds the whole local reflection scheme for T. This is a valid application of the parenthetical: if T's axioms are true, every theorem of T is true, so each instance Prov_T(⌜σ⌝) → σ is true and adding them all preserves soundness."
+      }
+    ],
+    "summary": "The target captures the intended contrast: the enlarged theory asserts reflection for the original T, not for the enlarged theory itself. It is an application of Chalmers's parenthetical, not a formalization of his particular “I am F” extension."
+  }
+}

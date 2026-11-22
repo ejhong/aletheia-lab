@@ -1,0 +1,39 @@
+{
+  "id": "S1c2",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:34:01Z",
+  "target": "def Target : Prop :=\n  ∀ (L : Language.{0}) [L.DecidableEq] [L.ReferenceableBy L] (T₀ T : Theory L)\n    [Diagonalization T₀] [T₀ ⪯ T] (𝔅 : Provability T₀ T) [𝔅.HBL],\n    (∀ σ : Sentence L, T ⊢ (𝔅 σ 🡒 σ)) → Entailment.Inconsistent T\n",
+  "usage": [
+    [
+      1723,
+      2000
+    ],
+    [
+      2680,
+      11313
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition asserting that for every language L (in universe 0) having decidable equality of symbols (L.DecidableEq) and Gödel numerals for its own sentences (L.ReferenceableBy L), for every pair of theories T₀ and T in L such that T₀ satisfies diagonalization (for every formula θ(x) there is a sentence γ with T₀ ⊢ γ 🡘 θ(⌜γ⌝)) and every theorem of T₀ is a theorem of T (T₀ ⪯ T), and for every provability predicate 𝔅 : Provability T₀ T (a formula of L satisfying derivability condition D1: whenever T ⊢ σ, T₀ ⊢ 𝔅 σ) that also satisfies the other two derivability conditions 𝔅.HBL (D2: T₀ ⊢ 𝔅 (σ 🡒 τ) 🡒 𝔅 σ 🡒 𝔅 τ, and D3: T₀ ⊢ 𝔅 σ 🡒 𝔅 (𝔅 σ)): if for every sentence σ of L the theory T derives the sentence 𝔅 σ 🡒 σ, then T is inconsistent (derives every sentence). Note that L is not restricted to the language of arithmetic, T₀ and T are not required to be recursively enumerable, Δ₁-presented, or extensions of 𝗜𝚺₁ or 𝗣𝗔, and 𝔅 is not required to be a standard provability predicate or to define a recursively enumerable set.\"}\n```",
+  "translation": "Target is the proposition asserting that for every language L (in universe 0) having decidable equality of symbols (L.DecidableEq) and Gödel numerals for its own sentences (L.ReferenceableBy L), for every pair of theories T₀ and T in L such that T₀ satisfies diagonalization (for every formula θ(x) there is a sentence γ with T₀ ⊢ γ 🡘 θ(⌜γ⌝)) and every theorem of T₀ is a theorem of T (T₀ ⪯ T), and for every provability predicate 𝔅 : Provability T₀ T (a formula of L satisfying derivability condition D1: whenever T ⊢ σ, T₀ ⊢ 𝔅 σ) that also satisfies the other two derivability conditions 𝔅.HBL (D2: T₀ ⊢ 𝔅 (σ 🡒 τ) 🡒 𝔅 σ 🡒 𝔅 τ, and D3: T₀ ⊢ 𝔅 σ 🡒 𝔅 (𝔅 σ)): if for every sentence σ of L the theory T derives the sentence 𝔅 σ 🡒 σ, then T is inconsistent (derives every sentence). Note that L is not restricted to the language of arithmetic, T₀ and T are not required to be recursively enumerable, Δ₁-presented, or extensions of 𝗜𝚺₁ or 𝗣𝗔, and 𝔅 is not required to be a standard provability predicate or to define a recursively enumerable set.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers assumes the system 'has the resources to do Peano arithmetic', whereas TARGET abstracts this to any first-order language L (in universe 0) with decidable equality and Gödel numbering (L.ReferenceableBy L) and a theory T₀ satisfying Diagonalization T₀. This is a harmless generalization (strengthening) of the theorem, matching Chalmers's remark that PA is used for the diagonal construction.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers works with a single assertion system (|-), whereas TARGET quantifies over a pair of theories T₀ ⪯ T, placing Diagonalization and the derivability conditions D1–D3 in T₀ and the reflection premise and inconsistency conclusion in T. Because T₀ is universally quantified, instantiating T₀ = T immediately recovers the single-system case, making this a harmless generalization from the library's Provability API.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers's prose in [P-C2b] speaks epistemically of 'knowing unassailably that we are sound' and [P-C2] treats |- informally as unassailable assertion; TARGET idealizes the system as a classical first-order theory T closed under classical first-order deduction (⊢) and expresses asserting soundness via the local reflection schema (∀ σ, T ⊢ 𝔅 σ 🡒 σ) rather than a single quantified soundness claim with a truth predicate or a factive knowledge modality. This matches the author's stated variant and preserves Chalmers's non-computability feature (neither T nor 𝔅 is required to be recursively enumerable).\"\n    }\n  ],\n  \"summary\": \"TARGET faithfully captures the claimed variant of Chalmers's result—replacing consistency (4) with the local reflection schema while keeping derivability conditions (1)–(3) and avoiding any computability/RE assumptions—with only minor formalization idealizations and generalizations (abstracting PA to Diagonalization, using a two-theory T₀ ⪯ T interface, and modeling unassailable assertion of soundness via classical first-order derivability of the reflection schema).\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Chalmers assumes the system 'has the resources to do Peano arithmetic', whereas TARGET abstracts this to any first-order language L (in universe 0) with decidable equality and Gödel numbering (L.ReferenceableBy L) and a theory T₀ satisfying Diagonalization T₀. This is a harmless generalization (strengthening) of the theorem, matching Chalmers's remark that PA is used for the diagonal construction."
+      },
+      {
+        "severity": "minor",
+        "description": "Chalmers works with a single assertion system (|-), whereas TARGET quantifies over a pair of theories T₀ ⪯ T, placing Diagonalization and the derivability conditions D1–D3 in T₀ and the reflection premise and inconsistency conclusion in T. Because T₀ is universally quantified, instantiating T₀ = T immediately recovers the single-system case, making this a harmless generalization from the library's Provability API."
+      },
+      {
+        "severity": "minor",
+        "description": "Chalmers's prose in [P-C2b] speaks epistemically of 'knowing unassailably that we are sound' and [P-C2] treats |- informally as unassailable assertion; TARGET idealizes the system as a classical first-order theory T closed under classical first-order deduction (⊢) and expresses asserting soundness via the local reflection schema (∀ σ, T ⊢ 𝔅 σ 🡒 σ) rather than a single quantified soundness claim with a truth predicate or a factive knowledge modality. This matches the author's stated variant and preserves Chalmers's non-computability feature (neither T nor 𝔅 is required to be recursively enumerable)."
+      }
+    ],
+    "summary": "TARGET faithfully captures the claimed variant of Chalmers's result—replacing consistency (4) with the local reflection schema while keeping derivability conditions (1)–(3) and avoiding any computability/RE assumptions—with only minor formalization idealizations and generalizations (abstracting PA to Diagonalization, using a two-theory T₀ ⪯ T interface, and modeling unassailable assertion of soundness via classical first-order derivability of the reflection schema)."
+  }
+}

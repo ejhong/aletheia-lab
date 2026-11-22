@@ -1,0 +1,35 @@
+{
+  "id": "DEF-B",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:28:21Z",
+  "target": "def Def2 (σ : ArithmeticSentence) : Prop := ℕ↓[ℒₒᵣ] ⊧ σ\n\ndef Def3 (K : Def1) : Prop := ∀ σ ∈ K, Def2 σ\n\ndef Def4 (K : Def1) : Prop := Entailment.Consistent (K : ArithmeticTheory)\n",
+  "usage": [
+    [
+      1624,
+      977
+    ],
+    [
+      2341,
+      8152
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"The target consists of three definitions:\\n\\n1. Def2 is a predicate on an arithmetic sentence σ (a closed formula of first-order arithmetic in the language ℒₒᵣ) asserting that σ is true in the standard model, the natural numbers (ℕ↓[ℒₒᵣ] ⊧ σ).\\n\\n2. Def3 is a predicate on a set K of arithmetic sentences (K : Def1, where Def1 is Set ArithmeticSentence) asserting that for every sentence σ ∈ K, Def2 σ holds—that is, every sentence in K is true in the standard model of the natural numbers. No additional conditions (such as deductive closure or recursive enumerability) are required of K.\\n\\n3. Def4 is a predicate on a set K of arithmetic sentences (K : Def1), viewed as an ArithmeticTheory (a set of axioms of the same type), asserting that K is consistent (Entailment.Consistent K)—that is, K does not prove a contradiction in classical first-order logic. Again, no other conditions are imposed on K.\"}\n```",
+  "translation": "The target consists of three definitions:\n\n1. Def2 is a predicate on an arithmetic sentence σ (a closed formula of first-order arithmetic in the language ℒₒᵣ) asserting that σ is true in the standard model, the natural numbers (ℕ↓[ℒₒᵣ] ⊧ σ).\n\n2. Def3 is a predicate on a set K of arithmetic sentences (K : Def1, where Def1 is Set ArithmeticSentence) asserting that for every sentence σ ∈ K, Def2 σ holds—that is, every sentence in K is true in the standard model of the natural numbers. No additional conditions (such as deductive closure or recursive enumerability) are required of K.\n\n3. Def4 is a predicate on a set K of arithmetic sentences (K : Def1), viewed as an ArithmeticTheory (a set of axioms of the same type), asserting that K is consistent (Entailment.Consistent K)—that is, K does not prove a contradiction in classical first-order logic. Again, no other conditions are imposed on K.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def2 and Def3 restrict truth (and thus soundness K ⊆ T) to first-order arithmetic sentences in the language ℒₒᵣ interpreted in the standard model ℕ, whereas [P-K351] introduces T informally as the set of sentences that are true without explicitly restricting to first-order arithmetic (though the author's claim itself specifies truth of an arithmetic sentence).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def4 defines consistency specifically as classical first-order deductive consistency of a set of sentences in ℒₒᵣ (Entailment.Consistent K), whereas [P-K345] emphasizes generality across 'any sufficiently strong formal system', which need not be restricted to classical first-order theories in the language of arithmetic.\"\n    }\n  ],\n  \"summary\": \"The three definitions faithfully capture truth of a first-order arithmetic sentence in ℕ, soundness of K (K ⊆ T), and meta-level consistency, with only minor idealizations fixing the language to ℒₒᵣ and the deductive framework to classical first-order logic.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Def2 and Def3 restrict truth (and thus soundness K ⊆ T) to first-order arithmetic sentences in the language ℒₒᵣ interpreted in the standard model ℕ, whereas [P-K351] introduces T informally as the set of sentences that are true without explicitly restricting to first-order arithmetic (though the author's claim itself specifies truth of an arithmetic sentence)."
+      },
+      {
+        "severity": "minor",
+        "description": "Def4 defines consistency specifically as classical first-order deductive consistency of a set of sentences in ℒₒᵣ (Entailment.Consistent K), whereas [P-K345] emphasizes generality across 'any sufficiently strong formal system', which need not be restricted to classical first-order theories in the language of arithmetic."
+      }
+    ],
+    "summary": "The three definitions faithfully capture truth of a first-order arithmetic sentence in ℕ, soundness of K (K ⊆ T), and meta-level consistency, with only minor idealizations fixing the language to ℒₒᵣ and the deductive framework to classical first-order logic."
+  }
+}

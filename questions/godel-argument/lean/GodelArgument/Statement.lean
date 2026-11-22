@@ -12,7 +12,7 @@ Setting: sentences of first-order arithmetic (`ArithmeticSentence`), provability
 logic from a set of axioms `T`, and truth in the standard natural numbers. All of this comes from the Foundation
 library; the lab adds only the definitions and statements below.
 
-Source locators are in `protocol.md`, keyed by the names used here (D1–D7, S1a–S1e).
+Source locators are in `protocol.md`, keyed by the names used here (D1–D10, S1a–S1e).
 -/
 
 namespace GodelArgument
@@ -52,6 +52,19 @@ Arithmetic has no way to say "me"; the first-person version needs the knowledge 
 def KnowsOwnMachineConsistent (K : Mind) (F : ArithmeticTheory) [F.RE] : Prop :=
   IsTheoremSetOf K F ∧ Con F ∈ K
 
+/-- **D8. "K knows that F is sound"**, one sentence at a time: for every sentence `σ`, `K` contains the
+arithmetic sentence "if `F` proves `σ` then `σ`". Arithmetic cannot say "everything `F` proves is true" in a single
+sentence, so this is a schema, read through the same fixed description of `F` as D7. -/
+def ContainsSoundnessOf (K : Mind) (F : ArithmeticTheory) [F.RE] : Prop :=
+  F.craig.localReflectionOn Set.univ ⊆ K
+
+/-- **D9. Π₁ sentence.** `σ` has the logical form "for all numbers, a checkable condition holds". Statements
+that a computation never halts, or that a Diophantine equation has no solution, are of this form. -/
+def IsPi1 (σ : ArithmeticSentence) : Prop := ℬ[<, ℒₒᵣ].Hierarchy 𝚷 1 σ
+
+/-- **D10. Deductively closed.** Whatever follows from `K` by classical first-order logic is already in `K`. -/
+def DeductivelyClosed (K : Mind) : Prop := Theory.theory (K : ArithmeticTheory) ⊆ K
+
 /-! ## Stage 1 statements -/
 
 /-- **S1a. Penrose's conclusion as a conditional.** If a consistent mind `K` is the theorem set of a formal
@@ -66,6 +79,14 @@ arithmetic. -/
 def NoConsistentMindKnowsOwnMachineConsistent : Prop :=
   ∀ (K : Mind) (F : ArithmeticTheory) [F.RE] [𝗜𝚺₁ ⪯ F],
     Consistent K → ¬ KnowsOwnMachineConsistent K F
+
+/-- **S1a″. A mind that knows a machine is sound strictly exceeds it.** Let the mind `K` be consistent,
+deductively closed, and able to do basic arithmetic. Let `F` be a formal system including basic arithmetic. If
+`K` contains, for every sentence `σ`, "if `F` proves `σ` then `σ`" (D8), then `K` contains every theorem of `F`
+and something more: `F`'s theorems are a strict subset of `K`. In particular `K` is not the theorem set of `F`. -/
+def KnownSoundMachineIsExceeded : Prop :=
+  ∀ (K : Mind) (F : ArithmeticTheory) [F.RE] [𝗜𝚺₁ ⪯ F] [𝗜𝚺₁ ⪯ (K : ArithmeticTheory)],
+    DeductivelyClosed K → Consistent K → ContainsSoundnessOf K F → F.theory ⊂ K
 
 /-- **S1b(i). The standard objection, as a witness.** The theorems of Peano arithmetic form a mind that is
 mechanical, sound and consistent, whose machine's consistency statement is true, and which does not contain
@@ -82,11 +103,15 @@ def MachineProvesConditional : Prop :=
   ∀ (F : ArithmeticTheory) [F.Δ₁] [𝗜𝚺₁ ⪯ F],
     F ⊢ (F.consistent.val 🡒 gödel F.standardProvability)
 
-/-- **S1b(iii). Knowing a machine is consistent only shows you are not that machine.** Peano arithmetic plus
-its own consistency statement is again mechanical and sound, and proves strictly more than Peano arithmetic. -/
-def KnowingConOnlySeparates : Prop :=
-  IsMechanical (𝗣𝗔 ∪ 𝗣𝗔.Con).theory ∧ Sound (𝗣𝗔 ∪ 𝗣𝗔.Con).theory ∧
-    𝗣𝗔.consistent.val ∈ (𝗣𝗔 ∪ 𝗣𝗔.Con).theory ∧ 𝗣𝗔.consistent.val ∉ 𝗣𝗔.theory
+/-- **S1b(iii). The second machine.** Take any sound formal system `F` including basic arithmetic, and add its
+consistency statement as a new axiom. The result is again a formal system (recursively enumerable) and again
+sound; it proves the consistency statement of `F`, which `F` could not; and it has a consistency statement of
+its own that it cannot prove. -/
+def SecondMachine : Prop :=
+  ∀ (F : ArithmeticTheory) [F.RE] [𝗜𝚺₁ ⪯ F], Sound F →
+    ∃ _ : Theory.RE (F ∪ {Con F}),
+      Sound (F ∪ {Con F}).theory ∧ Con F ∈ (F ∪ {Con F}).theory ∧ Con F ∉ F.theory ∧
+        Con (F ∪ {Con F}) ∉ (F ∪ {Con F}).theory
 
 /-- **S1c. Chalmers's point.** Take any theory `T` with a belief predicate `𝔅` in its own language satisfying
 Chalmers's assumptions (1)–(3) (the derivability conditions D1–D3) and able to form self-referential sentences
@@ -104,17 +129,28 @@ def SelfSoundnessInconsistent : Prop :=
     [Diagonalization T₀] [T₀ ⪯ T] (𝔅 : Provability T₀ T) [𝔅.HBL],
     (∀ σ : Sentence L, T ⊢ (𝔅 σ 🡒 σ)) → Entailment.Inconsistent T
 
-/-- **S1c″. The contrast.** Asserting the soundness of a system *other than yourself* is harmless: if `T` is
-sound, then `T` together with "whatever `T` proves is so", for every sentence, is consistent. -/
-def SoundnessOfAnotherIsConsistent : Prop :=
-  ∀ (T : ArithmeticTheory) [T.Δ₁], Sound T →
-    Entailment.Consistent (T ∪ T.localReflectionOn Set.univ)
+/-- **S1c″. Adding a true statement to a sound system gives a sound system.** If every axiom of `T` is true and
+`σ` is true, then everything provable from `T` together with `σ` is true. -/
+def SoundPlusTrueIsSound : Prop :=
+  ∀ (T : ArithmeticTheory) (σ : ArithmeticSentence), Sound T → IsTrue σ → Sound (T ∪ {σ}).theory
 
-/-- **S1d. Gödel's disjunction, semantic form.** For any set `K` of true arithmetic sentences: either `K` is not
-recursively enumerable, or some true sentence is undecided by `K` (neither it nor its negation is in `K`).
-"True" is truth in the standard natural numbers, judged in Lean's own logic, not by a truth predicate inside a
-formal theory. -/
-def GodelDisjunctionSemantic : Prop :=
+/-- **S1c‴. Asserting the soundness of a system other than yourself is harmless.** If every axiom of `T` is true,
+then `T` together with "if `T` proves `σ` then `σ`", for every sentence `σ`, proves only truths. The trouble in
+S1c and S1c′ arises only when a system asserts this of itself. -/
+def SoundPlusItsSoundnessIsSound : Prop :=
+  ∀ (T : ArithmeticTheory) [T.Δ₁], Sound T → Sound (T ∪ T.localReflectionOn Set.univ).theory
+
+/-- **S1d. Gödel's disjunction, semantic form.** For any set `K` of true arithmetic sentences: either no formal
+system has exactly `K` as its theorem set, or there is a true Π₁ sentence that `K` leaves undecided (neither it
+nor its negation is in `K`). "True" is truth in the standard natural numbers, judged in Lean's own logic, not by
+a truth predicate inside a formal theory. -/
+def GodelDisjunction : Prop :=
+  ∀ K : Mind, Sound K →
+    (¬ IsMechanical K) ∨ ∃ σ : ArithmeticSentence, IsPi1 σ ∧ IsTrue σ ∧ σ ∉ K ∧ (∼σ) ∉ K
+
+/-- **S1d′. The same for sets that need not be deductively closed.** For any set `K` of true arithmetic
+sentences: either `K` is not recursively enumerable, or some true sentence is undecided by `K`. -/
+def GodelDisjunctionRE : Prop :=
   ∀ K : Mind, Sound K →
     (¬ Theory.RE (K : ArithmeticTheory)) ∨ ∃ σ : ArithmeticSentence, IsTrue σ ∧ σ ∉ K ∧ (∼σ) ∉ K
 

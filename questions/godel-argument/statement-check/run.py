@@ -24,7 +24,7 @@ import urllib.request
 
 HERE = pathlib.Path(__file__).resolve().parent
 STATEMENT = HERE.parent / "lean" / "GodelArgument" / "Statement.lean"
-OUT = HERE / "out"
+OUT = HERE / "out"  # round 2; round 1 is frozen under round1/
 
 # Model IDs and list prices (USD per million tokens, input/output) as of 2026-11-22.
 VENDORS = {
@@ -33,7 +33,8 @@ VENDORS = {
     "xai": {"model": "grok-4.7", "price": (None, None)},
 }
 
-DEFS = ["Mind", "IsTrue", "Sound", "Consistent", "IsTheoremSetOf", "IsMechanical", "Con", "KnowsOwnMachineConsistent"]
+DEFS = ["Mind", "IsTrue", "Sound", "Consistent", "IsTheoremSetOf", "IsMechanical", "Con", "KnowsOwnMachineConsistent",
+        "ContainsSoundnessOf", "IsPi1", "DeductivelyClosed"]
 
 PROMPT_A = """You are checking a formalization in Lean 4. Below are a notation key, some definitions, and one TARGET. \
 Names have been replaced by neutral labels (Def1, Def2, ..., Target) and comments removed, so judge only what the \
@@ -63,6 +64,10 @@ PROMPT_B = """You are checking whether a Lean 4 formalization says what a source
 the source, you translated the TARGET below into English; that translation is included.
 
 The author's claim about the TARGET: {claim}
+
+The TARGET is a definition, or a statement that will be proved separately. Do not count the absence of a proof, \
+of philosophical commentary, or of parts of the passage that the claim does not mention, as a divergence; other \
+parts are covered by other items.
 
 Judge whether the TARGET, as formally written, matches the source passage(s) for that claim. List every divergence: \
 anything the Lean adds, omits, strengthens, weakens, reverses, or gets wrong relative to the passage, and anything \
@@ -151,8 +156,8 @@ def build_items():
     for it in items:
         it["passage_text"] = "\n\n".join(passages[p] for p in it["passages"])
     # Fixed order that interleaves decoys with real items; item ids shown to the model are neutral.
-    order = ["DEF-A", "S1a", "X2", "DEF-B", "S1b1", "X1", "S1b2", "DEF-C", "S1c", "X3", "S1a2", "S1b3", "S1c2",
-             "S1c3", "S1d", "S1e"]
+    order = ["DEF-A", "S1a", "X2", "DEF-B", "S1b1", "X1", "S1b2", "DEF-C", "S1c", "X3", "S1a2", "S1a3", "DEF-D",
+             "S1b3", "S1c2", "S1c3", "S1c4", "S1d", "S1d2", "S1e"]
     return [next(i for i in items if i["id"] == k) for k in order]
 
 
@@ -207,10 +212,13 @@ def run(vendor):
     notation = (HERE / "notation.md").read_text()
     outdir = OUT / vendor
     outdir.mkdir(parents=True, exist_ok=True)
-    for n, it in enumerate(build_items(), 1):
+    items = build_items()
+
+    def one(n_it):
+        n, it = n_it
         path = outdir / f"{it['id']}.json"
         if path.exists():
-            continue
+            return
         rec = {"id": it["id"], "decoy": it["decoy"], "vendor": vendor, "model": VENDORS[vendor]["model"],
                "time": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                "target": it["target"], "usage": []}
@@ -228,7 +236,11 @@ def run(vendor):
             rec["judgement"] = parse_json(text)
         path.write_text(json.dumps(rec, indent=2, ensure_ascii=False) + "\n")
         v = (rec.get("judgement") or {}).get("verdict", "translation only")
-        print(f"[{vendor}] {n:2d}/16 {it['id']:6s} {'(decoy) ' if it['decoy'] else ''}{v}", flush=True)
+        print(f"[{vendor}] {n:2d}/{len(items)} {it['id']:6s} {'(decoy) ' if it['decoy'] else ''}{v}", flush=True)
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(4) as pool:
+        list(pool.map(one, enumerate(items, 1)))
 
 
 def cost(vendor, usage):
@@ -242,7 +254,8 @@ def report():
     spec = json.loads((HERE / "items.json").read_text())
     planted = {d["id"]: d for d in spec["decoys"]}
     lines = ["# Statement check report", "",
-             "Written by `run.py --report` from the raw outputs in `out/`. Verdicts are the checkers' own.", ""]
+             "Round 2. Written by `run.py --report` from the raw outputs in `out/`. Verdicts are the checkers' own.",
+             "Round 1 (first draft of the statements, earlier prompt) is frozen under `round1/`.", ""]
     vendors = [v for v in VENDORS if (OUT / v).is_dir()]
     recs = {v: {p.stem: json.loads(p.read_text()) for p in sorted((OUT / v).glob("*.json"))} for v in vendors}
     lines += ["## Models", ""]

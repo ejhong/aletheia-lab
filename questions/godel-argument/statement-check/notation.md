@@ -23,5 +23,7 @@ The statements are written in Lean 4 using the FormalizedFormalLogic "Foundation
 - `L.ReferenceableBy L`, `L.DecidableEq`: the language L has Gödel numerals for its own sentences, and decidable equality of symbols.
 - `T.localReflectionOn Set.univ`: the set of all sentences `Prov_T(⌜σ⌝) 🡒 σ`, one for every sentence σ.
 - `Nat.Partrec.Code`: codes (programs) for partial recursive functions on ℕ. `Denumerable.ofNat Nat.Partrec.Code n`: the n-th code. `c.eval n`: the result of running c on input n, a partial value; `(c.eval n).Dom` means the run halts.
+- `ℬ[<, ℒₒᵣ].Hierarchy 𝚷 1 σ`: σ is a Π₁ formula of arithmetic (a block of universal quantifiers in front of a formula with only bounded quantifiers), up to the library's syntactic definition of the hierarchy.
+- `A ⊆ B`: A is a subset of B. `A ⊂ B`: A is a strict subset of B (A ⊆ B and not B ⊆ A). `{x}`: the one-element set. `∃ _ : P, Q`: P holds and Q holds (P is a hypothesis needed to state Q).
 - Arguments in square brackets, such as `[F.RE]` or `[𝗜𝚺₁ ⪯ F]`, are hypotheses of the statement.
 - `∀ (x : A), P x` is universal quantification, `∃`, `∧`, `∨`, `¬`, `→` are the usual connectives of the meta-language, `∈`/`∉` set membership, `∪` union.

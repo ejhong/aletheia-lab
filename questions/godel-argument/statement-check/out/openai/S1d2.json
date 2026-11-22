@@ -1,0 +1,35 @@
+{
+  "id": "S1d2",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:30:53Z",
+  "target": "def Target : Prop :=\n  ∀ K : Def1, Def3 K →\n    (¬ Theory.RE (K : ArithmeticTheory)) ∨ ∃ σ : ArithmeticSentence, Def2 σ ∧ σ ∉ K ∧ (∼σ) ∉ K\n",
+  "usage": [
+    [
+      1701,
+      100
+    ],
+    [
+      2377,
+      1014
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every set K of arithmetic sentences, if every member of K is true in the standard natural numbers, then either K itself is not recursively enumerable or there exists an arithmetic sentence σ that is true in the standard natural numbers and for which neither σ nor its formal negation belongs to K. K need not be closed under deduction: recursive enumerability and both nonmembership conditions concern K itself, not the set of sentences derivable from K.\"}",
+  "translation": "Target is the proposition that for every set K of arithmetic sentences, if every member of K is true in the standard natural numbers, then either K itself is not recursively enumerable or there exists an arithmetic sentence σ that is true in the standard natural numbers and for which neither σ nor its formal negation belongs to K. K need not be closed under deduction: recursive enumerability and both nonmembership conditions concern K itself, not the set of sentences derivable from K.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The passage’s first alternative says that no effective formal system has exactly K as its theorem set. Lean instead says that K itself is not recursively enumerable. The Lean condition implies the passage’s condition, but not conversely: the empty set is recursively enumerable, yet cannot be a theorem set because it omits logical validities. Thus for a sound, recursively enumerable, nonclosed K, the passage’s first alternative holds while Lean requires the second.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The passage states the disjunction for its designated K and uses the assumption K ⊆ T. Lean abstracts that assumption into a hypothesis and quantifies over every sound set of arithmetic sentences.\"\n    }\n  ],\n  \"summary\": \"The target is a variant as advertised, but its first alternative is materially stronger than the passage’s for sets that need not be deductively closed. Its second alternative faithfully captures a true sentence such that neither it nor its negation belongs to K.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The passage’s first alternative says that no effective formal system has exactly K as its theorem set. Lean instead says that K itself is not recursively enumerable. The Lean condition implies the passage’s condition, but not conversely: the empty set is recursively enumerable, yet cannot be a theorem set because it omits logical validities. Thus for a sound, recursively enumerable, nonclosed K, the passage’s first alternative holds while Lean requires the second."
+      },
+      {
+        "severity": "minor",
+        "description": "The passage states the disjunction for its designated K and uses the assumption K ⊆ T. Lean abstracts that assumption into a hypothesis and quantifies over every sound set of arithmetic sentences."
+      }
+    ],
+    "summary": "The target is a variant as advertised, but its first alternative is materially stronger than the passage’s for sets that need not be deductively closed. Its second alternative faithfully captures a true sentence such that neither it nor its negation belongs to K."
+  }
+}

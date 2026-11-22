@@ -1,0 +1,39 @@
+{
+  "id": "S1d2",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:36:01Z",
+  "target": "def Target : Prop :=\n  ∀ K : Def1, Def3 K →\n    (¬ Theory.RE (K : ArithmeticTheory)) ∨ ∃ σ : ArithmeticSentence, Def2 σ ∧ σ ∉ K ∧ (∼σ) ∉ K\n",
+  "usage": [
+    [
+      1680,
+      1459
+    ],
+    [
+      2432,
+      10048
+    ]
+  ],
+  "a_raw": "```json\n{\n  \"translation\": \"Target is the proposition that for every set K of arithmetic sentences, if every sentence in K is true in the standard model of arithmetic (the natural numbers), then either (1) K itself (viewed as an arithmetic theory, i.e., a set of arithmetic sentences) is not recursively enumerable, or (2) there exists an arithmetic sentence σ that is true in the standard model of arithmetic such that σ ∉ K and its formal negation ∼σ ∉ K. No hypotheses require K to be closed under first-order deduction or to contain any base arithmetic axioms (such as 𝗜𝚺₁ or 𝗣𝗔), the recursive enumerability condition applies directly to K rather than to an axiom set generating K as its theorems, and the second disjunct asserts set non-membership (σ ∉ K and ∼σ ∉ K) rather than unprovability from K.\"\n}\n```",
+  "translation": "Target is the proposition that for every set K of arithmetic sentences, if every sentence in K is true in the standard model of arithmetic (the natural numbers), then either (1) K itself (viewed as an arithmetic theory, i.e., a set of arithmetic sentences) is not recursively enumerable, or (2) there exists an arithmetic sentence σ that is true in the standard model of arithmetic such that σ ∉ K and its formal negation ∼σ ∉ K. No hypotheses require K to be closed under first-order deduction or to contain any base arithmetic axioms (such as 𝗜𝚺₁ or 𝗣𝗔), the recursive enumerability condition applies directly to K rather than to an axiom set generating K as its theorems, and the second disjunct asserts set non-membership (σ ∉ K and ∼σ ∉ K) rather than unprovability from K.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Relative to Koellner's Claim 3, which uses `¬∃F (F = K)` (no formal system whose theorems equal K), TARGET replaces the first disjunct with `¬ Theory.RE K` (K itself is not recursively enumerable) and drops any requirement that K be deductively closed. This matches the author's explicit description of TARGET as a variant; it is logically equivalent to Claim 3 for deductively closed K and a harmless strengthening for general K ⊆ T.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Relative to Gödel's quote in the passage, which asserts the existence of \\\"diophantine problems of the type specified\\\" (Π₁ sentences), TARGET—following Koellner's Claim 3—only asserts the existence of an arbitrary true arithmetic sentence `σ` with `σ ∉ K` and `∼σ ∉ K`, omitting the Diophantine/Π₁ complexity restriction.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"TARGET restricts the domain from Gödel's \\\"pure mathematics\\\" to first-order arithmetic (`ArithmeticSentence` with truth in `ℕ↓[ℒₒᵣ]`), makes the background assumption `K ⊆ T` (`Def3 K`) an explicit hypothesis, and universally quantifies over all such sets `K`, abstracting away the epistemic and philosophical notions (\\\"human mind\\\", \\\"evident axioms\\\", \\\"absolutely unsolvable\\\") that cannot be expressed in the formal statement.\"\n    }\n  ],\n  \"summary\": \"TARGET faithfully formalizes the claimed variant of Gödel's disjunction (Koellner's Claim 3) for arbitrary sets K of true first-order arithmetic sentences with `¬ Theory.RE K` as the first disjunct. The only divergences from the passage are minor: replacing formal-system equality with recursive enumerability of K (explicitly stated in the claim and equivalent for deductively closed K), omitting the Diophantine/Π₁ restriction from Gödel's quote (as Koellner's Claim 3 also does), and idealizing the mathematical and epistemic notions into universally quantified subsets of true arithmetic.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Relative to Koellner's Claim 3, which uses `¬∃F (F = K)` (no formal system whose theorems equal K), TARGET replaces the first disjunct with `¬ Theory.RE K` (K itself is not recursively enumerable) and drops any requirement that K be deductively closed. This matches the author's explicit description of TARGET as a variant; it is logically equivalent to Claim 3 for deductively closed K and a harmless strengthening for general K ⊆ T."
+      },
+      {
+        "severity": "minor",
+        "description": "Relative to Gödel's quote in the passage, which asserts the existence of \"diophantine problems of the type specified\" (Π₁ sentences), TARGET—following Koellner's Claim 3—only asserts the existence of an arbitrary true arithmetic sentence `σ` with `σ ∉ K` and `∼σ ∉ K`, omitting the Diophantine/Π₁ complexity restriction."
+      },
+      {
+        "severity": "minor",
+        "description": "TARGET restricts the domain from Gödel's \"pure mathematics\" to first-order arithmetic (`ArithmeticSentence` with truth in `ℕ↓[ℒₒᵣ]`), makes the background assumption `K ⊆ T` (`Def3 K`) an explicit hypothesis, and universally quantifies over all such sets `K`, abstracting away the epistemic and philosophical notions (\"human mind\", \"evident axioms\", \"absolutely unsolvable\") that cannot be expressed in the formal statement."
+      }
+    ],
+    "summary": "TARGET faithfully formalizes the claimed variant of Gödel's disjunction (Koellner's Claim 3) for arbitrary sets K of true first-order arithmetic sentences with `¬ Theory.RE K` as the first disjunct. The only divergences from the passage are minor: replacing formal-system equality with recursive enumerability of K (explicitly stated in the claim and equivalent for deductively closed K), omitting the Diophantine/Π₁ restriction from Gödel's quote (as Koellner's Claim 3 also does), and idealizing the mathematical and epistemic notions into universally quantified subsets of true arithmetic."
+  }
+}
