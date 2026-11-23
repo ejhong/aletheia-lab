@@ -1,0 +1,26 @@
+{
+  "id": "S3a",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:42:27Z",
+  "target": "def Target : Prop := ∀ φ : Form, Def14 ∅ φ → Def14 ∅ (K φ)\n",
+  "usage": [
+    [
+      1536,
+      78
+    ],
+    [
+      2201,
+      302
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the proposition that, for every formula φ, if φ is derivable by Def14 from the empty set of hypotheses, then K φ is also derivable by Def14 from the empty set of hypotheses. There is no restriction that φ be closed. The definition does not prove this implication or add it as a derivation rule.\"}",
+  "translation": "Target is defined to be the proposition that, for every formula φ, if φ is derivable by Def14 from the empty set of hypotheses, then K φ is also derivable by Def14 from the empty set of hypotheses. There is no restriction that φ be closed. The definition does not prove this implication or add it as a derivation rule.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"With `K` representing `B`, the target states that whenever `φ` is derivable from the axioms alone, so is `K φ`. The `∅` on both sides keeps this closure property distinct from a rule allowing `K φ` to be inferred under extra hypotheses.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "With `K` representing `B`, the target states that whenever `φ` is derivable from the axioms alone, so is `K φ`. The `∅` on both sides keeps this closure property distinct from a rule allowing `K φ` to be inferred under extra hypotheses."
+  }
+}

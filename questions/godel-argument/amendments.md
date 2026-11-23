@@ -339,3 +339,20 @@ this is Gödel's disjunction in Reinhardt's form. S3a proved: the rule assumed i
   thesis consistent with the logic. That result is Reinhardt's (1981), cited through his Remark 4, not proved.
 - Koellner's Theorems 5 and 6 are stated in EA_T with a truth predicate. These are Reinhardt's schematic forms
   without one.
+
+**Check of tier 2B, round 1 (2026-11-23), and what changed.** Frozen under `statement-check/round1-2b/`. Cost
+$4.51.
+
+- Planted errors: both checkers caught all three, including the one planted in the axioms.
+- The language (D17), S3a to S3e: `faithful` or `faithful_with_caveats` from both. D19 and S3f have no passage
+  and were translated blind only.
+- The proof system (D18): Google `faithful_with_caveats`; OpenAI `divergent`. Its major point: the draft counted
+  as axioms formulas with free variables (a schema under an empty or partial prefix of quantifiers), where
+  Reinhardt takes universal closures, and K of those closed sentences.
+
+Response: accepted, and one of the weaknesses declared above is removed. A sentence is now defined (`Closed`),
+and the axioms are the schemas under a quantifier prefix that leaves no variable free, together with K of each
+such sentence. The trial proofs were redone: every derivation is made from the axioms alone, where every line is
+a sentence, and then carried over to an arbitrary theory. All six still go through. Since the definition of the
+axioms changed, every item is re-checked in round 2.
+

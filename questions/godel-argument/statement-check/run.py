@@ -79,11 +79,12 @@ def use_stage_2b():
     if not STATEMENT.exists():
         STATEMENT = HERE / "Statement4.draft.lean"
     OUT, ITEMS, NOTATION, REPORT = HERE / "out2b", HERE / "items2b.json", HERE / "notation2b.md", HERE / "REPORT-2B.md"
-    REPORT_HEAD = ["Amendment 4, tier 2B. Written by `run.py --stage 2b --report` from the raw outputs in `out2b/`.",
-                   "Verdicts are the checkers' own."]
+    REPORT_HEAD = ["Amendment 4, tier 2B, round 2. Written by `run.py --stage 2b --report` from the raw outputs in",
+                   "`out2b/`. Verdicts are the checkers' own. Round 1 (axioms not yet restricted to sentences) is",
+                   "frozen under `round1-2b/`."]
     ORDER = ["DEF-L1", "S3b", "X11", "DEF-L2", "S3a", "X12", "S3c", "DEF-L3", "X10", "S3d", "S3e", "S3f"]
     DEFS = ["Form", "neg", "and", "iff", "ex", "Free", "subst", "FreeFor", "PropVal", "Tautology", "BaseAx", "Sig",
-            "Axiom", "Proves", "U", "diagAll", "diagQ"]
+            "Closed", "Axiom", "Proves", "U", "diagAll", "diagQ"]
     KEEP = {"Form", "neg", "and", "iff", "ex"}
     PREAMBLE = ""
 

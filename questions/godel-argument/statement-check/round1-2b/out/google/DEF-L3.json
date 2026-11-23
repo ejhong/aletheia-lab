@@ -1,0 +1,16 @@
+{
+  "id": "DEF-L3",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T04:45:59Z",
+  "target": "def Def15 (a b : ℕ) : Form := atom 0 a b\n\ndef Def16 : Form := all 0 (iff (K (neg (Def15 0 0))) (Def15 1 0))\n\ndef Def17 : Form := neg (Def15 1 1)\n",
+  "usage": [
+    [
+      1578,
+      1680
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"The target consists of three definitions of object-language formulas (with no theorem or provability claim asserted): (1) Def15 is a function taking two natural numbers a and b and returning the atomic formula atom 0 a b (with first index 0 and variable arguments a and b in that order). (2) Def16 is a constant of type Form defined as all 0 (iff (K (neg (Def15 0 0))) (Def15 1 0)), i.e., the formula obtained by applying the universal quantifier all for variable 0 to the object-language biconditional (iff, defined via and, neg, imp, and fls) whose left-hand side is K applied to the negation (neg) of atom 0 0 0 and whose right-hand side is atom 0 1 0; variable 0 is bound by all 0, while variable 1 is unbound (occurs free). (3) Def17 is a constant of type Form defined as neg (Def15 1 1), i.e., the object-language negation (imp (atom 0 1 1) fls) of atom 0 1 1, in which variable 1 occurs free.\"}\n```",
+  "translation": "The target consists of three definitions of object-language formulas (with no theorem or provability claim asserted): (1) Def15 is a function taking two natural numbers a and b and returning the atomic formula atom 0 a b (with first index 0 and variable arguments a and b in that order). (2) Def16 is a constant of type Form defined as all 0 (iff (K (neg (Def15 0 0))) (Def15 1 0)), i.e., the formula obtained by applying the universal quantifier all for variable 0 to the object-language biconditional (iff, defined via and, neg, imp, and fls) whose left-hand side is K applied to the negation (neg) of atom 0 0 0 and whose right-hand side is atom 0 1 0; variable 0 is bound by all 0, while variable 1 is unbound (occurs free). (3) Def17 is a constant of type Form defined as neg (Def15 1 1), i.e., the object-language negation (imp (atom 0 1 1) fls) of atom 0 1 1, in which variable 1 occurs free."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "S3d",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:43:21Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def14 T (ex 1 Def16) → Def14 T (ex 1 (and (neg (K Def17)) (neg (K (neg Def17)))))\n",
+  "usage": [
+    [
+      1561,
+      546
+    ],
+    [
+      2680,
+      1793
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Write x for variable 1, y for variable 0, and R(u,v) for the atom with relation index 0 and arguments u,v. Target is the proposition that for every set T of formulas, if the formula ‘there exists x such that for every y, K(¬R(y,y)) if and only if R(x,y)’ is derivable from T, then the formula ‘there exists x such that both ¬K(¬R(x,x)) and ¬K(¬¬R(x,x))’ is derivable from the same T. Derivability here uses members of T and Def13 axioms, with modus ponens as the only inference rule. There is no further condition on T. The implication is between the two derivability claims; the existential quantifiers are internal to their respective formulas and require no explicit or shared witness.\"}",
+  "translation": "Write x for variable 1, y for variable 0, and R(u,v) for the atom with relation index 0 and arguments u,v. Target is the proposition that for every set T of formulas, if the formula ‘there exists x such that for every y, K(¬R(y,y)) if and only if R(x,y)’ is derivable from T, then the formula ‘there exists x such that both ¬K(¬R(x,x)) and ¬K(¬¬R(x,x))’ is derivable from the same T. Derivability here uses members of T and Def13 axioms, with modus ponens as the only inference rule. There is no further condition on T. The implication is between the two derivability claims; the existential quantifiers are internal to their respective formulas and require no explicit or shared witness.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"With U(e,x) = R₀(e,x) and q(z) = ¬R₀(z,z), the premise is exactly a) at p = q, and the conclusion is exactly c): the same T proves ∃e(¬Bq(e) ∧ ¬B¬q(e)). This matches the claimed instance, not the full scheme for arbitrary U and p.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "With U(e,x) = R₀(e,x) and q(z) = ¬R₀(z,z), the premise is exactly a) at p = q, and the conclusion is exactly c): the same T proves ∃e(¬Bq(e) ∧ ¬B¬q(e)). This matches the claimed instance, not the full scheme for arbitrary U and p."
+  }
+}

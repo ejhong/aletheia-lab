@@ -100,8 +100,12 @@ inductive Sig : Form → Prop
   | base {φ : Form} : BaseAx φ → Sig φ
   | gen (x : ℕ) {φ : Form} : Sig φ → Sig (all x φ)
 
-/-- The axioms: every such formula, and `K` of every such formula. -/
-def Axiom (φ : Form) : Prop := Sig φ ∨ ∃ ψ, Sig ψ ∧ φ = K ψ
+/-- A sentence: a formula in which no variable occurs free. -/
+def Closed (φ : Form) : Prop := ∀ x, ¬ Free x φ
+
+/-- The axioms: every sentence obtained in that way (a universal closure of a schema), and `K` of every such
+sentence. -/
+def Axiom (φ : Form) : Prop := (Sig φ ∧ Closed φ) ∨ ∃ ψ, Sig ψ ∧ Closed ψ ∧ φ = K ψ
 
 /-- `Proves T φ`: `φ` is derivable from the axioms and the formulas in `T` by modus ponens alone. -/
 inductive Proves (T : Set Form) : Form → Prop

@@ -1,0 +1,43 @@
+{
+  "id": "S3d",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T04:46:17Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def14 T (ex 1 Def16) → Def14 T (ex 1 (and (neg (K Def17)) (neg (K (neg Def17)))))\n",
+  "usage": [
+    [
+      1633,
+      5426
+    ],
+    [
+      3147,
+      21137
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition stating that for every set of formulas T (with no assumptions on T such as consistency or closure), if T derives the sentence ∃x₁ ∀x₀ (K(¬R₀(x₀, x₀)) ↔ R₀(x₁, x₀)), then T also derives the sentence ∃x₁ (¬K(¬R₀(x₁, x₁)) ∧ ¬K(¬¬R₀(x₁, x₁))). Here the formal language consists of binary atomic formulas atom r a b (with relation index r : ℕ and variables a, b : ℕ, writing R₀(a, b) for atom 0 a b and x₀, x₁ for variables 0 and 1), falsum ⊥, implication →, universal quantification ∀x, and a unary operator K, with ¬φ defined as φ → ⊥, φ ∧ ψ as ¬(φ → ¬ψ), φ ↔ ψ as (φ → ψ) ∧ (ψ → φ), and ∃x φ as ¬∀x ¬φ; note in particular that the second conjunct of the conclusion contains the literal double negation ¬¬R₀(x₁, x₁) inside K rather than R₀(x₁, x₁). Derivability from T is defined inductively as the smallest set of formulas containing T and all logical axioms and closed under modus ponens (from φ → ψ and φ, infer ψ). The logical axioms are all universal generalizations (zero or more applications of ∀x) of the following basic axioms, together with all formulas K ψ where ψ is such a universal generalization (note that neither general necessitation nor arbitrary universal generalization is an inference rule on derivations from T, and K is applied at most once to universally generalized basic axioms): (1) all classical propositional tautologies (formulas true under every valuation v : Form → Prop with ¬v(⊥) and v(φ → ψ) ↔ (v(φ) → v(ψ))); (2) universal instantiation (∀x φ) → φ[x := y] whenever y is free for x in φ (no free occurrence of x lies within the scope of ∀y); (3) quantifier distribution (∀x (φ → ψ)) → ((∀x φ) → (∀x ψ)); (4) vacuous quantification φ → ∀x φ whenever x does not occur free in φ; (5) K(φ → ψ) → (K φ → K ψ); (6) K φ → φ; (7) K φ → K(K φ); and (8) K(∀x φ) → ∀x (K φ).\"}\n```",
+  "translation": "Target is the proposition stating that for every set of formulas T (with no assumptions on T such as consistency or closure), if T derives the sentence ∃x₁ ∀x₀ (K(¬R₀(x₀, x₀)) ↔ R₀(x₁, x₀)), then T also derives the sentence ∃x₁ (¬K(¬R₀(x₁, x₁)) ∧ ¬K(¬¬R₀(x₁, x₁))). Here the formal language consists of binary atomic formulas atom r a b (with relation index r : ℕ and variables a, b : ℕ, writing R₀(a, b) for atom 0 a b and x₀, x₁ for variables 0 and 1), falsum ⊥, implication →, universal quantification ∀x, and a unary operator K, with ¬φ defined as φ → ⊥, φ ∧ ψ as ¬(φ → ¬ψ), φ ↔ ψ as (φ → ψ) ∧ (ψ → φ), and ∃x φ as ¬∀x ¬φ; note in particular that the second conjunct of the conclusion contains the literal double negation ¬¬R₀(x₁, x₁) inside K rather than R₀(x₁, x₁). Derivability from T is defined inductively as the smallest set of formulas containing T and all logical axioms and closed under modus ponens (from φ → ψ and φ, infer ψ). The logical axioms are all universal generalizations (zero or more applications of ∀x) of the following basic axioms, together with all formulas K ψ where ψ is such a universal generalization (note that neither general necessitation nor arbitrary universal generalization is an inference rule on derivations from T, and K is applied at most once to universally generalized basic axioms): (1) all classical propositional tautologies (formulas true under every valuation v : Form → Prop with ¬v(⊥) and v(φ → ψ) ↔ (v(φ) → v(ψ))); (2) universal instantiation (∀x φ) → φ[x := y] whenever y is free for x in φ (no free occurrence of x lies within the scope of ∀y); (3) quantifier distribution (∀x (φ → ψ)) → ((∀x φ) → (∀x ψ)); (4) vacuous quantification φ → ∀x φ whenever x does not occur free in φ; (5) K(φ → ψ) → (K φ → K ψ); (6) K φ → φ; (7) K φ → K(K φ); and (8) K(∀x φ) → ∀x (K φ).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Theorem 3 quantifies over any formula U(e,x) with two free variables, whereas Target hardcodes U(a,b) to a single fixed atomic binary relation symbol (atom 0 a b) and does not formalize uniform substitution to lift the result to arbitrary two-variable formulas in Form. While the claim notes this is 'for the same instance' and an uninterpreted relation symbol is a standard schematic stand-in for pure first-order epistemic deductions, the formal statement literally proves only that atomic instance.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The hypothesis a) in Theorem 3 assumes T ⊢ ∃e∀x(Bp(x) ↔ U(e,x)) for every one-variable formula p, whereas Target assumes only the single instance p(x) = q(x) = ¬U(x,x) (and fixes q(e) to ¬U(e,e) rather than quantifying existentially over q). This weakens the premise (strengthening the implication) and matches the proof's instantiation.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def13 allows K to be prefixed to arbitrary (possibly open) universal generalizations of basic axioms, whereas Reinhardt [P-R323] specifies universal closures (sentences) optionally prefixed by B; in the presence of kall and inst, these are deductively equivalent.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The formal language and base logic omit arithmetic, equality, constants, and function symbols (and their B-prefixed axioms) from [P-R323], so the Post-Turing arithmetic instance of U cannot be expressed; this limitation is declared separately by the author.\"\n    }\n  ],\n  \"summary\": \"Target accurately captures the epistemic-logic passage from a) to c) in the proof of Reinhardt's Theorem 3, including the exact quantifier structure, negation/double-negation structure of ¬Bq(e) & ¬B¬q(e), and Reinhardt's B-axioms without necessitation on T. The main caveats are minor: U(e,x) is specialized to a single fixed atomic binary predicate rather than an arbitrary two-variable formula, the hypothesis is specialized to the single instance p = q (strengthening the implication), and arithmetic/equality are omitted as declared.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Theorem 3 quantifies over any formula U(e,x) with two free variables, whereas Target hardcodes U(a,b) to a single fixed atomic binary relation symbol (atom 0 a b) and does not formalize uniform substitution to lift the result to arbitrary two-variable formulas in Form. While the claim notes this is 'for the same instance' and an uninterpreted relation symbol is a standard schematic stand-in for pure first-order epistemic deductions, the formal statement literally proves only that atomic instance."
+      },
+      {
+        "severity": "minor",
+        "description": "The hypothesis a) in Theorem 3 assumes T ⊢ ∃e∀x(Bp(x) ↔ U(e,x)) for every one-variable formula p, whereas Target assumes only the single instance p(x) = q(x) = ¬U(x,x) (and fixes q(e) to ¬U(e,e) rather than quantifying existentially over q). This weakens the premise (strengthening the implication) and matches the proof's instantiation."
+      },
+      {
+        "severity": "minor",
+        "description": "Def13 allows K to be prefixed to arbitrary (possibly open) universal generalizations of basic axioms, whereas Reinhardt [P-R323] specifies universal closures (sentences) optionally prefixed by B; in the presence of kall and inst, these are deductively equivalent."
+      },
+      {
+        "severity": "minor",
+        "description": "The formal language and base logic omit arithmetic, equality, constants, and function symbols (and their B-prefixed axioms) from [P-R323], so the Post-Turing arithmetic instance of U cannot be expressed; this limitation is declared separately by the author."
+      }
+    ],
+    "summary": "Target accurately captures the epistemic-logic passage from a) to c) in the proof of Reinhardt's Theorem 3, including the exact quantifier structure, negation/double-negation structure of ¬Bq(e) & ¬B¬q(e), and Reinhardt's B-axioms without necessitation on T. The main caveats are minor: U(e,x) is specialized to a single fixed atomic binary predicate rather than an arbitrary two-variable formula, the hypothesis is specialized to the single instance p = q (strengthening the implication), and arithmetic/equality are omitted as declared."
+  }
+}

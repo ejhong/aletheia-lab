@@ -17,44 +17,99 @@ namespace GodelArgument.QEL
 
 open Form
 
-/-! ## Building derivations -/
+/-! ## Building derivations
 
-variable {T : Set Form}
+Axioms must be sentences, so each use of an axiom carries a proof that the formula has no free variable. Every
+derivation below is made from the axioms alone, where every line is a sentence, and is then weakened to an
+arbitrary theory. -/
 
-lemma ofSig {φ : Form} (h : Sig φ) : Proves T φ := .ax (.inl h)
+/-- Discharges "this formula is a sentence" for the concrete formulas used below, which mention only the
+variables 0 and 1. -/
+macro "closed_tac" defs:(ppSpace colGt term:max)* : tactic =>
+  `(tactic| (intro x hx
+             simp only [Form.Free, Form.neg, Form.and, Form.iff, Form.ex, U, diagAll, diagQ, $[$defs:term],*] at hx
+             tauto))
 
-lemma ofBase {φ : Form} (h : BaseAx φ) : Proves T φ := ofSig (.base h)
+lemma ofSig {T : Set Form} {φ : Form} (h : Sig φ) (hc : Closed φ) : Proves T φ := .ax (.inl ⟨h, hc⟩)
 
-lemma ofKSig {φ : Form} (h : Sig φ) : Proves T (K φ) := .ax (.inr ⟨φ, h, rfl⟩)
+lemma ofBase {T : Set Form} {φ : Form} (h : BaseAx φ) (hc : Closed φ) : Proves T φ := ofSig (.base h) hc
+
+lemma ofKSig {T : Set Form} {φ : Form} (h : Sig φ) (hc : Closed φ) : Proves T (K φ) :=
+  .ax (.inr ⟨φ, h, hc, rfl⟩)
 
 /-- What the logic proves outright, every theory proves. -/
-lemma weaken {φ : Form} (h : Proves ∅ φ) : Proves T φ := by
+lemma weaken {T : Set Form} {φ : Form} (h : Proves ∅ φ) : Proves T φ := by
   induction h with
   | ax hax => exact .ax hax
   | hyp hm => exact absurd hm (Set.notMem_empty _)
   | mp _ _ ih₁ ih₂ => exact .mp ih₁ ih₂
 
+/-- Whatever the logic proves outright is a sentence. -/
+lemma closed_of_proves {φ : Form} (h : Proves ∅ φ) : Closed φ := by
+  induction h with
+  | ax hax =>
+    rcases hax with ⟨_, hc⟩ | ⟨ψ, _, hc, rfl⟩
+    · exact hc
+    · exact fun x hx => hc x hx
+  | hyp hm => exact absurd hm (Set.notMem_empty _)
+  | mp _ _ ih₁ _ => exact fun x hx => ih₁ x (Or.inr hx)
+
 /-- Modus ponens under a universal quantifier. -/
-lemma allMP {x : ℕ} {φ ψ : Form} (h : Proves T (all x (imp φ ψ))) (h' : Proves T (all x φ)) :
-    Proves T (all x ψ) :=
-  .mp (.mp (ofBase (.dist x φ ψ)) h) h'
+lemma allMP {x : ℕ} {φ ψ : Form} (h : Proves ∅ (all x (imp φ ψ))) (h' : Proves ∅ (all x φ)) :
+    Proves ∅ (all x ψ) := by
+  have hc : Closed (imp (all x (imp φ ψ)) (imp (all x φ) (all x ψ))) := by
+    intro y hy
+    have := closed_of_proves h y
+    simp only [Form.Free] at hy this
+    tauto
+  exact .mp (.mp (ofBase (.dist x φ ψ) hc) h) h'
 
 /-- An axiom schema, under a universal quantifier. -/
-lemma allBase {x : ℕ} {φ : Form} (h : BaseAx φ) : Proves T (all x φ) := ofSig (.gen x (.base h))
+lemma allBase {x : ℕ} {φ : Form} (h : BaseAx φ) (hc : Closed (all x φ)) : Proves ∅ (all x φ) :=
+  ofSig (.gen x (.base h)) hc
 
 /-- An axiom schema, known, under a universal quantifier: `K∀x φ` is an axiom, and `K∀x φ → ∀x Kφ` is one. -/
-lemma allK {x : ℕ} {φ : Form} (h : BaseAx φ) : Proves T (all x (K φ)) :=
-  .mp (ofBase (.kall x φ)) (ofKSig (.gen x (.base h)))
+lemma allK {x : ℕ} {φ : Form} (h : BaseAx φ) (hc : Closed (all x φ)) : Proves ∅ (all x (K φ)) := by
+  have hc' : Closed (imp (K (all x φ)) (all x (K φ))) := by
+    intro y hy
+    have := hc y
+    simp only [Form.Free] at hy this
+    tauto
+  exact .mp (ofBase (.kall x φ) hc') (ofKSig (.gen x (.base h)) hc)
 
 /-- `∀x (φ → ψ)` gives `∃x φ → ∃x ψ`. -/
-lemma exMono {x : ℕ} {φ ψ : Form} (h : Proves T (all x (imp φ ψ))) : Proves T (imp (ex x φ) (ex x ψ)) := by
+lemma exMono {x : ℕ} {φ ψ : Form} (h : Proves ∅ (all x (imp φ ψ))) : Proves ∅ (imp (ex x φ) (ex x ψ)) := by
+  have hcl := closed_of_proves h
   have ht : Tautology (imp (imp φ ψ) (imp (neg ψ) (neg φ))) := by
     intro v ⟨hf, hi⟩; simp only [Form.neg, hi]; tauto
-  have h1 : Proves T (all x (imp (neg ψ) (neg φ))) := allMP (allBase (.taut ht)) h
-  have h2 : Proves T (imp (all x (neg ψ)) (all x (neg φ))) := .mp (ofBase (.dist x _ _)) h1
+  have hc1 : Closed (all x (imp (imp φ ψ) (imp (neg ψ) (neg φ)))) := by
+    intro y hy
+    have := hcl y
+    simp only [Form.Free, Form.neg] at hy this
+    tauto
+  have h1 : Proves ∅ (all x (imp (neg ψ) (neg φ))) := allMP (allBase (.taut ht) hc1) h
+  have hc2 : Closed (imp (all x (imp (neg ψ) (neg φ))) (imp (all x (neg ψ)) (all x (neg φ)))) := by
+    intro y hy
+    have := hcl y
+    simp only [Form.Free, Form.neg] at hy this
+    tauto
+  have h2 : Proves ∅ (imp (all x (neg ψ)) (all x (neg φ))) := .mp (ofBase (.dist x _ _) hc2) h1
   have ht2 : Tautology (imp (imp (all x (neg ψ)) (all x (neg φ))) (imp (ex x φ) (ex x ψ))) := by
     intro v ⟨hf, hi⟩; simp only [Form.ex, Form.neg, hi]; tauto
-  exact .mp (ofBase (.taut ht2)) h2
+  have hc3 : Closed (imp (imp (all x (neg ψ)) (all x (neg φ))) (imp (ex x φ) (ex x ψ))) := by
+    intro y hy
+    have := hcl y
+    simp only [Form.Free, Form.neg, Form.ex] at hy this
+    tauto
+  exact .mp (ofBase (.taut ht2) hc3) h2
+
+/-- K2 applied to a theorem that is an implication. -/
+lemma k2_of_proves {φ ψ : Form} (h : Proves ∅ (imp φ ψ)) : Proves ∅ (imp (K (imp φ ψ)) (imp (K φ) (K ψ))) := by
+  refine ofBase (.k2 φ ψ) ?_
+  intro y hy
+  have := closed_of_proves h y
+  simp only [Form.Free] at hy this
+  tauto
 
 /-! ## S3a -/
 
@@ -64,11 +119,11 @@ theorem necessitationIsDerived : NecessitationIsDerived := by
   intro φ h
   induction h with
   | ax hax =>
-    rcases hax with hs | ⟨ψ, hs, rfl⟩
-    · exact ofKSig hs
-    · exact .mp (ofBase (.k4 ψ)) (ofKSig hs)
+    rcases hax with ⟨hs, hc⟩ | ⟨ψ, hs, hc, rfl⟩
+    · exact ofKSig hs hc
+    · exact .mp (ofBase (.k4 ψ) (fun x hx => hc x (by simpa [Form.Free] using hx))) (ofKSig hs hc)
   | hyp hm => exact absurd hm (Set.notMem_empty _)
-  | mp _ _ ih₁ ih₂ => exact .mp (.mp (ofBase (.k2 _ _)) ih₁) ih₂
+  | mp h₁ _ ih₁ ih₂ => exact .mp (.mp (k2_of_proves h₁) ih₁) ih₂
 
 /-! ## The diagonal instance -/
 
@@ -95,30 +150,33 @@ lemma all_not_known_diag : Proves ∅ (all 1 (neg (K diagAll))) := by
   let t : Form := imp diagInst (imp fk (neg u))
   have ht : Tautology t := by
     intro v ⟨hf, hi⟩; simp only [t, fk, u, diagInst, Form.iff, Form.and, Form.neg, hi]; tauto
-  have L1 : Proves ∅ (all 1 (K (imp diagAll diagInst))) := allK instDiag
+  have L1 : Proves ∅ (all 1 (K (imp diagAll diagInst))) := allK instDiag (by closed_tac diagInst)
   have L2 : Proves ∅ (all 1 (imp (K (imp diagAll diagInst)) (imp (K diagAll) (K diagInst)))) :=
-    allBase (.k2 _ _)
+    allBase (.k2 _ _) (by closed_tac diagInst)
   have L3 : Proves ∅ (all 1 (imp (K diagAll) (K diagInst))) := allMP L2 L1
-  have L4 : Proves ∅ (all 1 (K t)) := allK (.taut ht)
-  have L5 : Proves ∅ (all 1 (K fk)) := allK (.k3 _)
-  have L6 : Proves ∅ (all 1 (imp (K t) (imp (K diagInst) (K (imp fk (neg u)))))) := allBase (.k2 _ _)
-  have L7 : Proves ∅ (all 1 (imp (K (imp fk (neg u))) (imp (K fk) (K (neg u))))) := allBase (.k2 _ _)
-  have L8 : Proves ∅ (all 1 fk) := allBase (.k3 _)
-  have L9 : Proves ∅ (all 1 (imp (K diagInst) diagInst)) := allBase (.k3 _)
+  have L4 : Proves ∅ (all 1 (K t)) := allK (.taut ht) (by closed_tac t fk u diagInst)
+  have L5 : Proves ∅ (all 1 (K fk)) := allK (.k3 _) (by closed_tac fk u)
+  have L6 : Proves ∅ (all 1 (imp (K t) (imp (K diagInst) (K (imp fk (neg u)))))) :=
+    allBase (.k2 _ _) (by closed_tac t fk u diagInst)
+  have L7 : Proves ∅ (all 1 (imp (K (imp fk (neg u))) (imp (K fk) (K (neg u))))) :=
+    allBase (.k2 _ _) (by closed_tac fk u)
+  have L8 : Proves ∅ (all 1 fk) := allBase (.k3 _) (by closed_tac fk u)
+  have L9 : Proves ∅ (all 1 (imp (K diagInst) diagInst)) := allBase (.k3 _) (by closed_tac diagInst)
   let big : Form := imp (imp (K diagAll) (K diagInst)) (imp (K t) (imp (K fk)
     (imp (imp (K t) (imp (K diagInst) (K (imp fk (neg u)))))
     (imp (imp (K (imp fk (neg u))) (imp (K fk) (K (neg u))))
     (imp fk (imp (imp (K diagInst) diagInst) (neg (K diagAll))))))))
   have hbig : Tautology big := by
     intro v ⟨hf, hi⟩; simp only [big, fk, u, diagInst, Form.iff, Form.and, Form.neg, hi]; tauto
-  exact allMP (allMP (allMP (allMP (allMP (allMP (allMP (allBase (.taut hbig)) L3) L4) L5) L6) L7) L8) L9
+  have L0 : Proves ∅ (all 1 big) := allBase (.taut hbig) (by closed_tac big t fk u diagInst)
+  exact allMP (allMP (allMP (allMP (allMP (allMP (allMP L0 L3) L4) L5) L6) L7) L8) L9
 
 /-- S3b. From `∀e ¬K diagAll` by a tautology. -/
 theorem knowingWhichSetRefuted : KnowingWhichSetRefuted := by
   intro T
   have hdn : Tautology (imp (all 1 (neg (K diagAll))) (neg (ex 1 (K diagAll)))) := by
     intro v ⟨hf, hi⟩; simp only [Form.ex, Form.neg, hi]; tauto
-  exact weaken (.mp (ofBase (.taut hdn)) all_not_known_diag)
+  exact weaken (.mp (ofBase (.taut hdn) (by closed_tac)) all_not_known_diag)
 
 /-! ## S3c, S3d, S3e -/
 
@@ -128,7 +186,8 @@ lemma thesis_imp_unknown : Proves ∅ (imp (ex 1 diagAll) (ex 1 (and diagQ (neg 
   have ht : Tautology (imp (imp diagAll diagInst) (imp (imp (K diagQ) diagQ)
       (imp diagAll (and diagQ (neg (K diagQ)))))) := by
     intro v ⟨hf, hi⟩; simp only [diagInst, diagQ, Form.iff, Form.and, Form.neg, hi]; tauto
-  exact exMono (allMP (allMP (allBase (.taut ht)) (allBase instDiag)) (allBase (.k3 _)))
+  exact exMono (allMP (allMP (allBase (.taut ht) (by closed_tac diagInst))
+    (allBase instDiag (by closed_tac diagInst))) (allBase (.k3 _) (by closed_tac)))
 
 /-- S3c. -/
 theorem thesisGivesUnknownTruth : ThesisGivesUnknownTruth :=
@@ -141,12 +200,14 @@ theorem thesisGivesAbsolutelyUndecidable : ThesisGivesAbsolutelyUndecidable := b
       (imp diagAll (and (neg (K diagQ)) (neg (K (neg diagQ)))))))) := by
     intro v ⟨hf, hi⟩; simp only [diagInst, diagQ, Form.iff, Form.and, Form.neg, hi]; tauto
   have h1 : Proves ∅ (all 1 (imp diagAll (and (neg (K diagQ)) (neg (K (neg diagQ)))))) :=
-    allMP (allMP (allMP (allBase (.taut ht)) (allBase instDiag)) (allBase (.k3 _))) (allBase (.k3 _))
+    allMP (allMP (allMP (allBase (.taut ht) (by closed_tac diagInst)) (allBase instDiag (by closed_tac diagInst)))
+      (allBase (.k3 _) (by closed_tac))) (allBase (.k3 _) (by closed_tac))
   exact .mp (weaken (exMono h1)) h
 
 /-- S3e. Necessitation (S3a) applied to the implication behind S3c, then K2. -/
 theorem knownThesisGivesKnownUnknownTruth : KnownThesisGivesKnownUnknownTruth :=
-  fun _ h => .mp (weaken (.mp (ofBase (.k2 _ _)) (necessitationIsDerived _ thesis_imp_unknown))) h
+  fun _ h => .mp (weaken (.mp (k2_of_proves thesis_imp_unknown)
+    (necessitationIsDerived _ thesis_imp_unknown))) h
 
 /-! ## S3f: consistency, by reading `K φ` as `φ` -/
 
@@ -256,7 +317,7 @@ lemma sound_sig {φ} (h : Sig φ) (𝔐 : Model) : ∀ s : ℕ → 𝔐.D, eval 
 theorem sound {φ} (h : Proves ∅ φ) (𝔐 : Model) : ∀ s : ℕ → 𝔐.D, eval 𝔐 s φ := by
   induction h with
   | ax hax =>
-    rcases hax with hs | ⟨ψ, hs, rfl⟩
+    rcases hax with ⟨hs, _⟩ | ⟨ψ, hs, _, rfl⟩
     · exact sound_sig hs 𝔐
     · exact sound_sig hs 𝔐
   | hyp hm => exact absurd hm (Set.notMem_empty _)
