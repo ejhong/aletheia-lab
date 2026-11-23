@@ -23,3 +23,7 @@
   - **Test B2 (6 swarm years vs. 26 non-swarm years):** Within-year Autumn share `12.70%` vs. `12.96%` (`p = 0.5201`), `≥ 1 kt` `0.33` vs. `0.38/yr` (`p = 0.6876`) → **Not met**.
   - **Joint verdict:** `no_macro_swarm_detected` (`0 of 4` passed).
 - Wrote `RESULTS.md`. Next: build interactive Solar System Orrery, Perihelion Rose, and Satellite Airburst figures (`analysis/make_figures.py`) and site page (`site/content/taurid-swarm.md`).
+
+## 2026-11-23: Figures restyled
+
+- Restyled the orrery, rose and airburst figures, tiles and verdict panel (`analysis/make_figures.py`, `site/figures/taurid-swarm/`) to the site's type, palette and plain wording, matching the ancient-sky-hole figures; no number changed. Regenerated from a fresh NASA/JPL download: the fireball and Encke files matched the manifest hashes, and the NEO file differed but gave the same 331 orbits with identical values.
