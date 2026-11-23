@@ -49,6 +49,9 @@ REPO_URL = "https://github.com/" + REPO
 ATLAS_URL = "https://ejhong.github.io/aletheia/"
 ATLAS_CLAIM_URL = ATLAS_URL + "claims/{}/"
 BASE_PATH = (os.environ.get("SITE_BASE_PATH") or "/aletheia-lab").rstrip("/") + "/"
+# Share images need absolute addresses: a link preview is fetched by X or Slack, not by a browser on the page.
+SITE_ORIGIN = (os.environ.get("SITE_ORIGIN") or "https://ejhong.github.io").rstrip("/")
+CARDS = SITE / "assets" / "cards"
 
 LANES = ["data", "model", "proof", "audit", "protocol", "watch"]
 GROUPS = [("active", "Now running"), ("done", "Done"), ("proposed", "Proposed")]
@@ -828,9 +831,17 @@ class Site:
         self.js_v = short_hash(SITE / "assets" / "site.js")
         self.pages = []
 
-    def write(self, rel, title, description, body, root, nav=""):
+    def write(self, rel, title, description, body, root, nav="", card="default", card_alt=""):
+        # The share image is site/assets/cards/<card>.png (made by scripts/make_cards.py), or the default one.
+        if not (CARDS / (card + ".png")).exists():
+            card, card_alt = "default", ""
+        image = CARDS / (card + ".png")
+        image_url = "%s%sassets/cards/%s.png?v=%s" % (SITE_ORIGIN, BASE_PATH, card, short_hash(image))
+        page_url = SITE_ORIGIN + BASE_PATH + (rel[:-len("index.html")] if rel.endswith("index.html") else rel)
         page = fill(
             self.base, title=esc(title), description=esc(description), root=root, body=body,
+            image_url=esc(image_url), page_url=esc(page_url),
+            image_alt=esc(card_alt or "Aletheia Lab: AI experiments on big open questions."),
             nav_questions=' aria-current="page"' if nav == "questions" else "",
             nav_how=' aria-current="page"' if nav == "how" else "",
             css_v=self.css_v, js_v=self.js_v, status_note=esc(self.status_note), built=esc(self.built),
@@ -911,7 +922,8 @@ def main(argv):
         body = rich_page(q, root) if q["content"] else short_page(q, lanes, root)
         body += pager(by_number[k - 1] if k else None, by_number[k + 1] if k + 1 < len(by_number) else None, root)
         site.write("questions/%s/index.html" % q["slug"], "%s · Aletheia Lab" % plain(q["title"]),
-                   plain(q["gist"]) or plain(q["title"]), body, root)
+                   plain(q["gist"]) or plain(q["title"]), body, root, card=q["slug"],
+                   card_alt=q["meta"].get("card_alt", ""))
 
     # How it works
     lane_rows = "".join(

@@ -8,6 +8,7 @@
 summary: Penrose argued from Gödel's theorem that the mind is not a machine. A proof checker went through the argument. The modest conclusion holds; the proof of the strong one does not.
 dek: Roger Penrose argued from Gödel's theorem that the human mind cannot be a machine. We wrote his argument and the standard replies in Lean 4, where a proof checker verifies every step and every assumption has to be stated.
 updated: 2026-11-23
+card_alt: A line from Gödel's theorem to "not a machine we can know is sound", marked proved, continuing as a dotted line to "not a machine at all", marked not established.
 ---
 
 > **Where things stand, 23 November 2026.** Finished, as far as it was planned. Penrose's modest conclusion is proved. His proof of the stronger one, that the mind is no machine at all, does not hold up. The stronger conclusion itself is neither proved nor refuted, and nothing here touches his physics.
@@ -25,7 +26,7 @@ Four things came out.
 1. **The argument proves something real.** If your mind were a particular machine, you could not also know that machine to be reliable. That is the conclusion Penrose himself states in 1994: mathematicians are not using a "knowably sound algorithm".
 2. **It does not prove that the mind is not a machine.** A machine can be perfectly reliable without being able to know it. Peano arithmetic is one. Knowing its reliability from outside just gives a second machine with the same blind spot.
 3. **The trouble is self-knowledge, not machinery.** The assumption that does the damage is "I know that what I know is true". It is what makes "I know which machine I am" contradictory, for any reasoner. No proof here uses the difference between a mind and a machine.
-4. **Penrose's second, subtler argument is valid but rests on rules that contradict themselves.** With the rules repaired it reaches only this: if I am a machine in my arithmetic, I know something that machine cannot prove.
+4. **Penrose's second, subtler argument is valid but rests on rules that contradict themselves.** With the rules repaired it reaches only this: if I am a machine in my arithmetic, I know something that machine cannot prove. Antonella Corradini and Sergio Galvan showed that on paper in 2022.
 
 In short: the old argument is right about something smaller than it claims. The mathematics is not new; what is new is that a proof checker has been through it, and the table of which assumption does what.
 
@@ -39,22 +40,26 @@ This is easily read as a fight between people who think the mind is a machine an
 
 - **Penrose** gave the proof and holds its conclusion. He also has reasons from physics, which no one on this page examines.
 - **Koellner** is a critic of the proof, not of the conclusion. He wrote the argument out exactly in order to test it, and found two steps that break. One of his own theorems is that his system can prove neither that the mind is a machine nor that it is not.
-- **Corradini and Galvan** accept Koellner's system and answer that he stopped too soon. Take the argument to be about arithmetic only and the two steps hold. But what it then proves is less than Penrose claimed, and they say so.
+- **Corradini and Galvan** accept Koellner's system and answer that he stopped too soon. Take "I am F" to be about arithmetic only and the two steps hold; they prove that in detail. What the argument then shows is less than Penrose claimed, and they say so. They still count it as a real difference between mind and machine.
 - **This check** sides with no one. It confirms that the argument is valid, that its rules are inconsistent as stated, and that a repaired version proves something weaker.
 
 ### What is left of the proof
 
-Two accounts of what survives once the argument is repaired.
+Corradini and Galvan worked out what survives in 2022, on paper. We wrote our statement S4g before reading their papers, knowing only roughly what their abstract concludes. Set side by side, the two are the same result.
 
 {{figure: godel-argument/salvage}}
 
-- **Alike.** Both say: suppose a machine captures all of the mind's arithmetic. Then the mind knows something that machine cannot derive. That is a real result, and it is not "the mind is no machine".
-- **Different.** Ours is proved in a general setting. The five facts of arithmetic it needs are stated as assumptions, and Koellner's system is not built. Theirs is argued inside Koellner's system, in a journal. They also say the thing known lies outside arithmetic. For us that is the reason the argument's last step has to go; it is not itself part of what Lean checked.
-- **Unknown.** Whether the two routes are the same. We wrote our statement from Koellner's texts, without their papers, but already knowing from a search roughly what their abstract concludes. So this is not an independent rediscovery. It is a machine-checked statement whose conclusion agrees with the one their abstract reports, and we do not attribute our proof to them.
+- **The same result, and theirs first.** Their step 7 (2022, p. 490) and our S4g say the same thing of the same sentence. They reached it four years earlier, and the credit for it is theirs.
+- **What they prove and we assume.** The repaired rules apply only to sentences that are definitely true or false. They prove, inside Koellner's system, that the two sentences in question are (Lemmas 1 and 2, pp. 488–490). That is their answer to Koellner and the heart of their paper. Our statement takes both facts as assumptions.
+- **What Lean adds.** Their proof is on paper and in places a sketch. Ours is checked by a kernel, but it is of a thinner statement. Nothing here checks their two lemmas.
+- **Why it stops there.** They give the reason we gave. The known sentence contains "is known", so it is not a sentence of arithmetic, and a machine that matches my arithmetic need not prove it (Note 11, p. 491).
+- **One step further.** They also show that Koellner's system derives "no formal system matches everything I know", arithmetic and beyond (step 8, pp. 490–493). But in that system the sentence is itself neither true nor false, so it cannot be asserted as true, and they say so. We have no counterpart to this step.
 
-Their second paper, by its abstract, adds that the mind's knowledge and any one formal system must differ, in one direction or the other, and that if the system is the larger, its consistency cannot be humanly decided. Reinhardt's theorem of 1985, proved in Stage 2 below, has a similar shape. That likeness is our reading, not their claim.
+They read the result more strongly than we would. A machine may equal the mind in mathematics, they write, but then not in what the mind knows beyond it, and in this sense "the difference between mind and machine is demonstrated" (2024, p. 560). How much weight that carries is a question of philosophy, not of proof.
 
-If the two do match, the open dispute is smaller than it looks. Koellner and his critics would agree on what the repaired argument proves, and differ on how much that matters.
+Their second paper adds a corollary: if a machine proves some arithmetic the mind cannot know, the mind cannot know that machine to be consistent. We have not checked it.
+
+Nothing in their result contradicts Koellner's theorems, as they note themselves (2022, p. 474). So the dispute is smaller than it looks. All sides can agree on what the repaired argument proves, and differ on how much it matters.
 
 ## The first argument
 
@@ -84,6 +89,8 @@ Together these are Gödel's either/or again, now inside a logic of knowledge. A 
 
 ## The second argument
 
+The first argument fails because no one can know that the machine they are is sound. So Penrose went another way round. Do not claim to know it. Suppose, for the sake of argument, that I am the machine F, and see what follows. Chalmers, who thought this the more interesting argument, pointed out that it no longer depends on being able to see that F is sound.
+
 This is the argument meant to reach "I am not the machine F, whatever F is". The logician Peter Koellner set it out in eight steps in 2018. It lets truth and knowledge apply to sentences that themselves speak of truth and knowledge, and it uses two rules, marked below.
 
 {{figure: godel-argument/steps}}
@@ -91,7 +98,11 @@ This is the argument meant to reach "I am not the machine F, whatever F is". The
 - **Rule one fails.** "Whatever is so is true" contradicts "whatever is true is so" as soon as there is a liar sentence, one that says of itself that it is not true.
 - **Rule two fails.** "Whatever is proved is known" contradicts "what is known is true" as soon as a sentence says of itself that it is not known.
 - **The repair.** Restrict both rules to sentences that are definitely true or false. The argument still runs, provided two of its own lines are of that kind. Koellner states as a theorem that they are not. Our reduction shows why: "I am F", taken over the whole language, is not. That last fact is his theorem too, quoted here and not re-proved.
-- **What survives.** Restrict "I am F" to arithmetic, where it is definitely true or false. Then the last step fails, because the sentence the argument produces is no longer a sentence of arithmetic. What is left is weaker: something is known that F does not prove.
+- **What survives.** Restrict "I am F" to arithmetic, where it is definitely true or false. Then the last step fails, because the sentence the argument produces is no longer a sentence of arithmetic. What is left is weaker: something is known that F does not prove. This is Corradini and Galvan's result of 2022.
+
+Put together, there are three ways to run the argument.
+
+{{figure: godel-argument/routes}}
 
 So the proof of the strong claim does not go through. That is not a proof that the strong claim is false. Koellner's further result, also quoted and not re-proved, is that in his system neither side of Gödel's either/or can be proved or refuted.
 
@@ -134,7 +145,8 @@ The theorem was then stated as he states it, checked, and proved. The plan had s
 - **Whether Penrose would accept the eight steps** as his argument. A reconstruction was checked, not his wording.
 - **Whether another theory of truth would save the argument.** One was used, Solomon Feferman's. Koellner argues that others would not help; that was not checked.
 - **The two central theorems of Koellner's analysis** are quoted, not re-proved. Checking them means building his whole system in Lean, which was not done.
-- **Whether our repaired argument is Corradini and Galvan's.** Their two papers reply to Koellner. We have read the abstracts only; the journal's site refused us and Eugene alike. The comparison above rests on those abstracts.
+- **Whether Corradini and Galvan's lemmas hold.** Their answer to Koellner rests on two lemmas proved on paper inside his system. We have read them and not machine-checked them, and our own statement assumes what they prove.
+- **Whether the whole picture is fair to Penrose.** The outside AIs checked each statement against a passage. They were not asked whether a fixed set of accepted sentences, closed under logic, is the right picture of mathematical understanding, which grows and corrects itself. Planted errors test for slips inside a framework, not for the choice of framework.
 - **Anything about physics.** Penrose's proposal that quantum gravity is non-computable, and the Orch OR theory built on it, stand or fall on evidence of another kind.
 
 This is no verdict on the atlas's claim [ORCH-C040](https://ejhong.github.io/aletheia/claims/ORCH-C040/). The lab does not grade the atlas.
@@ -250,7 +262,7 @@ The thirty-five statements, with the name of each proof in the repository. "Prov
 | Knowing every logical validity is inconsistent with self-applicable truth | `knownValiditiesInconsistent` | Proved |
 | With restricted rules the argument works if two named statements are determinate | `penroseArgumentUnderDeterminateness` | Proved |
 | If "I am F" is indeterminate, so are those two statements | `stepsIndeterminateIfThesisIs` | Proved; a reduction of a theorem Koellner states without proof |
-| For a determinate "I am F": something is known that F does not prove | `restrictedThesisGivesUnprovableKnowledge` | Proved; the lab's own |
+| For a determinate "I am F": something is known that F does not prove | `restrictedThesisGivesUnprovableKnowledge` | Proved; in substance Corradini and Galvan's step 7 (2022), found after it was locked |
 
 :::
 
@@ -281,12 +293,12 @@ Full report, with every limit and every disagreement: [`RESULTS.md`](https://git
 
 Named in the objections table but not read by us, so what they argue is not described here beyond their place in the debate: Putnam, "Minds and Machines" (1960); Benacerraf, "God, the Devil, and Gödel", *The Monist* 51 (1967) 9–32; Shapiro, "Incompleteness, Mechanism, and Optimism", *Bulletin of Symbolic Logic* 4 (1998) 273–302; Boolos's introductory note to Gödel's 1951 lecture. Their places are taken from Koellner (Part I, p. 340 and note 7, p. 358 and note 44; Part II, p. 470, note 22) and from Cheng's survey. Gödel's remark to Wang is quoted in Koellner, Part I, pp. 358–359.
 
-#### Abstract read, text not read
+#### Read on 23 November 2026, after every statement was locked and proved
 
-- Corradini and Galvan, "Analysis of Penrose's Second Argument Formalised in DTK System", *Logic and Logical Philosophy* 31(3) (2022) 471–500, [doi:10.12775/LLP.2021.019](https://doi.org/10.12775/LLP.2021.019). Its conclusion, in the abstract's words: if such a formalism exists there is "at least one true non-arithmetic proposition known to the human mind" that the formalism cannot derive.
-- Corradini and Galvan, "A Note on Gödel's First Disjunct Formalised in DTK System", *Logic and Logical Philosophy* 33(4) (2024) 555–565, [doi:10.12775/LLP.2024.025](https://doi.org/10.12775/LLP.2024.025).
+- Corradini and Galvan, "Analysis of Penrose's Second Argument Formalised in DTK System", *Logic and Logical Philosophy* 31(3) (2022) 471–500, [doi:10.12775/LLP.2021.019](https://doi.org/10.12775/LLP.2021.019). Read in full, from a copy supplied by Eugene.
+- Corradini and Galvan, "A Note on Gödel's First Disjunct Formalised in DTK System", *Logic and Logical Philosophy* 33(4) (2024) 555–565, [doi:10.12775/LLP.2024.025](https://doi.org/10.12775/LLP.2024.025). Read in full, from a copy supplied by Eugene.
 
-Both abstracts were read on 23 November 2026 in the publisher's records at Crossref.
+Before that, only their abstracts were known: first roughly, from a search, when statement S4g was written, then exactly, from the publisher's records at Crossref.
 
 #### Bibliographic details verified, text not read
 
