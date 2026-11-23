@@ -65,7 +65,9 @@ The last figure takes the stars one at a time: Ptolemy's southernmost against th
 
 {{figure: ancient-sky-hole/rim}}
 
-On Rhodes in 128 BCE, every one of the southernmost stars in the catalogue cleared the sea horizon, by one to five degrees. Of the twelve brightest missing stars, eleven never rose. At Alexandria in 137 CE four of those missing stars stood three to six degrees up and still went unrecorded. That fits the view of several historians of astronomy that the catalogue's southern limit is mostly Hipparchus's, taken over by Ptolemy. This comparison was made after the results were in and is not part of the locked test.
+On Rhodes in 128 BCE, every one of the 30 southernmost stars in the catalogue cleared the sea horizon, the lowest by about one degree. Of the 30 brightest southern stars that are missing from it, 23 never rose there. At Alexandria in 137 CE only 14 of them never rose, and about a dozen stood more than three degrees up and still went unrecorded. That fits the view of several historians of astronomy that the catalogue's southern limit is mostly Hipparchus's, taken over by Ptolemy.
+
+The fit is not perfect. A few missing stars did rise at Rhodes, and one of them, Mu Velorum, stood well up in the sky at every date tried; we have not found out why it is missing. This comparison was made after the results were in and is not part of the locked test.
 
 ## How it was done
 
