@@ -1,0 +1,15 @@
+{
+  "n_events": 58,
+  "z_all": -1.8322458755,
+  "n_controls": 57,
+  "z_controls": -2.0297741066897736,
+  "sd_controls": 1.0442581754103857,
+  "departure": "no positive excess detected",
+  "size": "smaller than the benchmark",
+  "calibration_in_doubt": false,
+  "paired": {
+    "pairs": 57,
+    "mean_difference": 0.03051520010814009,
+    "p_one_sided_sign_flip": 0.43127284363578183
+  }
+}

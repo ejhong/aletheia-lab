@@ -1,0 +1,13 @@
+events: ours 58, theirs 58, shared 58
+  z: 58/58 agree (worst difference 5e-05)
+  control_z: 57/57 agree (worst difference 4.9e-05)
+  seconds_used: 58/58 agree (worst difference 0)
+  control_seconds_used: 57/58 agree (worst difference 0)
+  eggs_passing: 58/58 agree (worst difference 0)
+  control_eggs_passing: 58/58 agree (worst difference 0)
+events: ours n 58 z -1.832; theirs n 58 z -1.8322458755000273
+controls: ours n 57 z -2.030 sd 1.044; theirs n 57 z -2.0297741066897643 sd 1.0442581754103832
+departure: ours 'no positive excess detected' theirs 'no positive excess detected'
+size: ours 'smaller than the benchmark' theirs 'smaller than the benchmark'
+calibration in doubt: ours False theirs False
+paired: ours {'pairs': 57, 'mean_difference': 0.0305, 't': 0.1744, 'p_one_sided_sign_flip': 0.4313, 'events_higher': 27} theirs {'pairs': 57, 'mean_difference': 0.03051520010813643, 'p_one_sided_sign_flip': 0.43127284363578183}

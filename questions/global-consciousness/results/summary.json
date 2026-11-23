@@ -1,0 +1,194 @@
+{
+ "events_in_list": 58,
+ "not_evaluable": [],
+ "controls_not_evaluable": [
+  "22 April 2022"
+ ],
+ "all": {
+  "events": {
+   "n": 58,
+   "z": -1.8322458755000273,
+   "mean": -0.24058567003384793,
+   "sd": 0.9915371928827643
+  },
+  "controls": {
+   "n": 57,
+   "z": -2.0297741066897643,
+   "mean": -0.2688501481843387,
+   "sd": 1.0442581754103832
+  },
+  "verdicts": {
+   "departure": "no positive excess detected",
+   "size": "smaller than the benchmark",
+   "predicted_at_benchmark": 2.51320512493509,
+   "mean_per_event": -0.2405856700338479,
+   "mean_interval_95": [
+    -0.4979462784389041,
+    0.016774938371208303
+   ]
+  },
+  "paired": {
+   "pairs": 57,
+   "mean_difference": 0.03051520010813643,
+   "t": 0.17441992500523,
+   "p_one_sided_sign_flip": 0.43127284363578183,
+   "events_higher": 27
+  }
+ },
+ "calendar": {
+  "events": {
+   "n": 37,
+   "z": -1.8817540114474425,
+   "mean": -0.30935845383975324,
+   "sd": 0.852498427185532
+  },
+  "controls": {
+   "n": 36,
+   "z": -0.5350837455882469,
+   "mean": -0.08918062426470781,
+   "sd": 0.969753952710198
+  },
+  "verdicts": {
+   "departure": "no positive excess detected",
+   "size": "smaller than the benchmark",
+   "predicted_at_benchmark": 2.0073116349984126,
+   "mean_per_event": -0.30935845383975324,
+   "mean_interval_95": [
+    -0.6315804689582536,
+    0.012863561278747049
+   ]
+  },
+  "paired": {
+   "pairs": 36,
+   "mean_difference": -0.21852454158115941,
+   "t": -1.061434394998175,
+   "p_one_sided_sign_flip": 0.8533707331463343,
+   "events_higher": 15
+  }
+ },
+ "earthquake": {
+  "events": {
+   "n": 21,
+   "z": -0.5472263279038918,
+   "mean": -0.11941457475677664,
+   "sd": 1.2122884135299767
+  },
+  "controls": {
+   "n": 21,
+   "z": -2.6434819148349193,
+   "mean": -0.5768550463322774,
+   "sd": 1.1179777241626727
+  },
+  "verdicts": {
+   "departure": "no positive excess detected",
+   "size": "smaller than the benchmark",
+   "predicted_at_benchmark": 1.5122499793354272,
+   "mean_per_event": -0.11941457475677664,
+   "mean_interval_95": [
+    -0.5471216396193217,
+    0.3082924901057684
+   ]
+  },
+  "paired": {
+   "pairs": 21,
+   "mean_difference": 0.4574404715755008,
+   "t": 1.5160776783967578,
+   "p_one_sided_sign_flip": 0.07203963980180099,
+   "events_higher": 12
+  }
+ },
+ "earthquakes_1000_deaths": {
+  "events": {
+   "n": 6,
+   "z": -1.6108095935008644,
+   "mean": -0.657610262809518,
+   "sd": 0.9350121519882393
+  },
+  "controls": {
+   "n": 6,
+   "z": -0.7863022993224357,
+   "mean": -0.32100656948618905,
+   "sd": 0.9136909831433407
+  },
+  "verdicts": {
+   "departure": "no positive excess detected",
+   "size": "smaller than the benchmark",
+   "predicted_at_benchmark": 0.8083316151184488,
+   "mean_per_event": -0.6576102628095181,
+   "mean_interval_95": [
+    -1.4577769121186896,
+    0.14255638649965352
+   ]
+  },
+  "paired": {
+   "pairs": 6,
+   "mean_difference": -0.3366036933233289,
+   "t": -0.724332870946512,
+   "p_one_sided_sign_flip": 0.781681091594542,
+   "events_higher": 3
+  }
+ },
+ "theoretical_standardising": {
+  "events": {
+   "n": 58,
+   "z": -0.9271796687778631,
+   "mean": -0.12174465492728029,
+   "sd": 0.9884480804728294
+  },
+  "controls": {
+   "n": 57,
+   "z": -1.0629831794111553,
+   "mean": -0.1407955616145952,
+   "sd": 0.9719871127803059
+  },
+  "verdicts": {
+   "departure": "no positive excess detected",
+   "size": "smaller than the benchmark",
+   "predicted_at_benchmark": 2.51320512493509,
+   "mean_per_event": -0.12174465492728027,
+   "mean_interval_95": [
+    -0.37910526333233646,
+    0.13561595347777594
+   ]
+  },
+  "paired": {
+   "pairs": 57,
+   "mean_difference": 0.023412372356175208,
+   "t": 0.1337170294895986,
+   "p_one_sided_sign_flip": 0.44821775891120547,
+   "events_higher": 26
+  }
+ },
+ "cross_egg_part": {
+  "events": {
+   "n": 58,
+   "z": -1.5651138711710453,
+   "mean": -0.20550951944274135,
+   "sd": 1.0050431824675543
+  },
+  "controls": {
+   "n": 57,
+   "z": -1.947559492208174,
+   "mean": -0.25796055647388927,
+   "sd": 0.9353701611939503
+  },
+  "verdicts": {
+   "departure": "no positive excess detected",
+   "size": "smaller than the benchmark",
+   "predicted_at_benchmark": 2.51320512493509,
+   "mean_per_event": -0.20550951944274132,
+   "mean_interval_95": [
+    -0.4628701278477975,
+    0.051851088962314884
+   ]
+  },
+  "paired": {
+   "pairs": 57,
+   "mean_difference": 0.0561204369121296,
+   "t": 0.31435893178169166,
+   "p_one_sided_sign_flip": 0.3764531177344113,
+   "events_higher": 28
+  }
+ },
+ "calibration_in_doubt": false
+}
