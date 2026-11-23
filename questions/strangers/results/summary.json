@@ -1,0 +1,326 @@
+{
+ "people": 12977,
+ "elsewhere": 12249,
+ "american_side": 728,
+ "with_neighbours": {
+  "elsewhere": 11110,
+  "american_side": 473
+ },
+ "tests_in_family": 28163,
+ "threshold": 4.636,
+ "controls": [
+  "EHG",
+  "Han",
+  "Sardinian",
+  "Papuan",
+  "Yoruba"
+ ],
+ "fit_coefficients": {
+  "EHG": 0.3187,
+  "Han": 0.6669,
+  "Sardinian": -0.1099,
+  "Papuan": 0.1387,
+  "Yoruba": -0.0253
+ },
+ "fit_people": 10920,
+ "Z_distributions": {
+  "S": {
+   "n": 11110,
+   "mean": 0.004,
+   "sd": 1.618,
+   "min": -11.5,
+   "max": 64.89,
+   "above_3": 275,
+   "below_minus_3": 235
+  },
+  "S_centred": {
+   "n": 11110,
+   "mean": 0.002,
+   "sd": 1.618,
+   "min": -11.49,
+   "max": 64.9,
+   "above_3": 276,
+   "below_minus_3": 235
+  },
+  "D1": {
+   "n": 12249,
+   "mean": 6.509,
+   "sd": 8.155,
+   "min": -26.5,
+   "max": 56.14,
+   "above_3": 10509,
+   "below_minus_3": 1242
+  },
+  "D2": {
+   "n": 12249,
+   "mean": -12.762,
+   "sd": 14.269,
+   "min": -39.22,
+   "max": 54.67,
+   "above_3": 1569,
+   "below_minus_3": 10310
+  },
+  "E_French": {
+   "n": 473,
+   "mean": -0.039,
+   "sd": 1.076,
+   "min": -2.83,
+   "max": 4.26,
+   "above_3": 1,
+   "below_minus_3": 0
+  },
+  "E_Yoruba": {
+   "n": 473,
+   "mean": -0.02,
+   "sd": 1.012,
+   "min": -2.85,
+   "max": 3.3,
+   "above_3": 2,
+   "below_minus_3": 0
+  },
+  "E_Han": {
+   "n": 473,
+   "mean": -0.117,
+   "sd": 1.124,
+   "min": -5.05,
+   "max": 3.22,
+   "above_3": 4,
+   "below_minus_3": 1
+  },
+  "E_Papuan": {
+   "n": 473,
+   "mean": -0.105,
+   "sd": 1.086,
+   "min": -3.67,
+   "max": 2.78,
+   "above_3": 0,
+   "below_minus_3": 2
+  },
+  "G_French": {
+   "n": 728,
+   "mean": 0.31,
+   "sd": 3.413,
+   "min": -4.03,
+   "max": 29.09,
+   "above_3": 15,
+   "below_minus_3": 5
+  },
+  "G_Yoruba": {
+   "n": 728,
+   "mean": 0.007,
+   "sd": 1.101,
+   "min": -2.75,
+   "max": 3.64,
+   "above_3": 6,
+   "below_minus_3": 0
+  },
+  "G_Han": {
+   "n": 728,
+   "mean": -0.56,
+   "sd": 4.031,
+   "min": -34.33,
+   "max": 7.35,
+   "above_3": 13,
+   "below_minus_3": 30
+  },
+  "G_Papuan": {
+   "n": 728,
+   "mean": -0.279,
+   "sd": 1.881,
+   "min": -13.49,
+   "max": 3.69,
+   "above_3": 1,
+   "below_minus_3": 17
+  }
+ },
+ "hit_rows": 179,
+ "people_hit": 174,
+ "people_hit_robustly": 167,
+ "hits_by_side_and_test": {
+  "elsewhere/neighbours/NA": 95,
+  "elsewhere/absolute/NA": 69,
+  "american/absolute/French": 11,
+  "american/absolute/Han": 4
+ },
+ "norse": {
+  "people": 11,
+  "hit": 11
+ },
+ "centres": {
+  "EGYPT": {
+   "people": 2,
+   "with_neighbours": 1,
+   "tests": {}
+  },
+  "MESOPOTAMIA": {
+   "people": 11,
+   "with_neighbours": 9,
+   "tests": {
+    "S": {
+     "estimate": -3.764032853348584e-05,
+     "Z": -0.47,
+     "centred_Z": -0.49
+    }
+   }
+  },
+  "CHINA_EARLY": {
+   "people": 102,
+   "with_neighbours": 63,
+   "tests": {
+    "S": {
+     "estimate": -0.00023885436538481416,
+     "Z": -5.65,
+     "centred_Z": -5.64
+    }
+   }
+  },
+  "MESOAMERICA": {
+   "people": 33,
+   "with_neighbours": 30,
+   "tests": {
+    "E_French": {
+     "estimate": 0.0002686646608798744,
+     "Z": 2.33,
+     "centred_Z": 2.27
+    },
+    "E_Yoruba": {
+     "estimate": 2.9631717976239993e-05,
+     "Z": 0.5,
+     "centred_Z": 0.47
+    },
+    "E_Han": {
+     "estimate": 0.0003832297781269963,
+     "Z": 3.0,
+     "centred_Z": 2.96
+    },
+    "E_Papuan": {
+     "estimate": 0.00025440635775706127,
+     "Z": 1.72,
+     "centred_Z": 1.69
+    },
+    "toward_EGYPT": {
+     "estimate": 0.0001198097316075685,
+     "Z": 0.81,
+     "centred_Z": 0.74,
+     "people_in_old_centre": 2
+    },
+    "toward_MESOPOTAMIA": {
+     "estimate": 0.0003453501097881971,
+     "Z": 2.77,
+     "centred_Z": 2.72,
+     "people_in_old_centre": 11
+    },
+    "toward_CHINA_EARLY": {
+     "estimate": 0.00033136930492944685,
+     "Z": 2.59,
+     "centred_Z": 2.54,
+     "people_in_old_centre": 102
+    }
+   }
+  },
+  "ANDES": {
+   "people": 66,
+   "with_neighbours": 46,
+   "tests": {
+    "E_French": {
+     "estimate": -1.2244615506102863e-05,
+     "Z": -0.5,
+     "centred_Z": -0.49
+    },
+    "E_Yoruba": {
+     "estimate": 1.139665258882199e-05,
+     "Z": 0.95,
+     "centred_Z": 0.96
+    },
+    "E_Han": {
+     "estimate": -2.764499564225887e-05,
+     "Z": -1.11,
+     "centred_Z": -1.1
+    },
+    "E_Papuan": {
+     "estimate": -4.9206783513428883e-05,
+     "Z": -1.69,
+     "centred_Z": -1.69
+    },
+    "toward_EGYPT": {
+     "estimate": -3.742671857964845e-06,
+     "Z": -0.12,
+     "centred_Z": -0.1,
+     "people_in_old_centre": 2
+    },
+    "toward_MESOPOTAMIA": {
+     "estimate": 1.7422811794616222e-06,
+     "Z": 0.07,
+     "centred_Z": 0.08,
+     "people_in_old_centre": 11
+    },
+    "toward_CHINA_EARLY": {
+     "estimate": -2.2656734947374417e-05,
+     "Z": -0.89,
+     "centred_Z": -0.89,
+     "people_in_old_centre": 102
+    }
+   }
+  }
+ },
+ "centre_tests": 16,
+ "centre_threshold": 2.734,
+ "made_up_strangers": {
+  "native_american_ancestry_elsewhere": {
+   "people": 200,
+   "share_0.0": {
+    "tested": 200,
+    "detected": 0.015,
+    "median_Z": -0.05
+   },
+   "share_0.05": {
+    "tested": 200,
+    "detected": 0.49,
+    "median_Z": 4.55
+   },
+   "share_0.1": {
+    "tested": 200,
+    "detected": 0.955,
+    "median_Z": 7.39
+   },
+   "share_0.25": {
+    "tested": 200,
+    "detected": 0.995,
+    "median_Z": 13.82
+   },
+   "share_1.0": {
+    "tested": 200,
+    "detected": 1.0,
+    "median_Z": 59.11
+   }
+  },
+  "european_ancestry_on_american_side": {
+   "people": 200,
+   "share_0.0": {
+    "tested": 200,
+    "detected": 0.0,
+    "median_Z": 0.06
+   },
+   "share_0.05": {
+    "tested": 200,
+    "detected": 0.1,
+    "median_Z": 2.05
+   },
+   "share_0.1": {
+    "tested": 200,
+    "detected": 0.29,
+    "median_Z": 3.62
+   },
+   "share_0.25": {
+    "tested": 200,
+    "detected": 0.91,
+    "median_Z": 7.91
+   },
+   "share_1.0": {
+    "tested": 200,
+    "detected": 0.935,
+    "median_Z": 23.37
+   }
+  }
+ }
+}
