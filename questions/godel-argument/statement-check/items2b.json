@@ -1,0 +1,150 @@
+{
+ "real": [
+  {
+   "id": "DEF-L1",
+   "names": [
+    "Form",
+    "neg",
+    "and",
+    "iff",
+    "ex",
+    "Free",
+    "subst",
+    "FreeFor"
+   ],
+   "passages": [
+    "P-R323",
+    "P-R323b"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. These definitions give the language (the new formation rule 'if p is a formula, so is Bp', over a purely relational first-order base), the defined connectives, and three standard syntactic notions: a variable occurring free; replacing the free occurrences of one variable by another variable; and one variable being free (substitutable) for another. Check in particular that the three syntactic notions are the standard ones and that substitution goes inside K."
+  },
+  {
+   "id": "DEF-L2",
+   "names": [
+    "PropVal",
+    "Tautology",
+    "BaseAx",
+    "Sig",
+    "Axiom",
+    "Proves"
+   ],
+   "passages": [
+    "P-R323",
+    "P-R323b",
+    "P-R321",
+    "P-K353"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. These definitions give the proof system. 'All the usual schemas of logic' are rendered as: all tautologies (defined by truth assignments that respect falsehood and implication and treat atoms, quantified formulas and K-formulas as unanalysed), universal instantiation by a variable, distribution of the quantifier over implication, and vacuous quantification. The special axioms are Reinhardt's four. 'Universal closures' are rendered as any prefix of universal quantifiers, and 'optionally prefixed by B' / 'Bp for each such sentence p' as: K of any such formula is an axiom (Koellner's Σ ∪ KΣ). The only rule is modus ponens. Formulas are not required to be sentences."
+  },
+  {
+   "id": "DEF-L3",
+   "names": [
+    "U",
+    "diagAll",
+    "diagQ"
+   ],
+   "passages": [],
+   "claim": "No passage; back-translation only. Abbreviations used in the statements."
+  },
+  {
+   "id": "S3a",
+   "names": [
+    "NecessitationIsDerived"
+   ],
+   "passages": [
+    "P-R321",
+    "P-R323b"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. This statement says that the rule 'from p infer Bp' is a derived rule of the logic when there are no extra hypotheses: whatever is derivable from the axioms alone, K of it is derivable from the axioms alone. It is not claimed for theories with extra hypotheses."
+  },
+  {
+   "id": "S3b",
+   "names": [
+    "KnowingWhichSetRefuted"
+   ],
+   "passages": [
+    "P-R327",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. This statement captures Theorem 5 for the instance used in its proof, p(x) := ¬U(x,x): the sentence ∃e B∀x(B¬U(x,x) ↔ U(e,x)) is inconsistent, in the form that every theory T in the logic proves its negation. U is a relation symbol here, where Reinhardt allows any formula with two free variables. x is the variable 0 and e the variable 1."
+  },
+  {
+   "id": "S3c",
+   "names": [
+    "ThesisGivesUnknownTruth"
+   ],
+   "passages": [
+    "P-R326",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. This statement captures Theorem 3, from a) to b), for the instance used in its proof: p(x) := ¬U(x,x) in a), and q(e) := ¬U(e,e) in b). U is a relation symbol here, where Reinhardt allows any formula. T is any set of formulas."
+  },
+  {
+   "id": "S3d",
+   "names": [
+    "ThesisGivesAbsolutelyUndecidable"
+   ],
+   "passages": [
+    "P-R326",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. This statement captures the passage from a) to c) in the proof of Theorem 3, for the same instance: from the thesis, T proves ∃e(¬Bq(e) & ¬B¬q(e)), 'q(e) is absolutely undecidable'."
+  },
+  {
+   "id": "S3e",
+   "names": [
+    "KnownThesisGivesKnownUnknownTruth"
+   ],
+   "passages": [
+    "P-R326",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. This statement captures the 'Moreover' clause of Theorem 3 for the same instance: if a) holds with B prefixed, then so does b)."
+  },
+  {
+   "id": "S3f",
+   "names": [
+    "LogicIsConsistent"
+   ],
+   "passages": [],
+   "claim": "No passage; back-translation only. The author's own non-vacuity statement."
+  }
+ ],
+ "decoys": [
+  {
+   "id": "X10",
+   "mimics": "S3b",
+   "passages": [
+    "P-R327",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. This statement captures Theorem 5 for the instance used in its proof, p(x) := ¬U(x,x): the sentence ∃e B∀x(B¬U(x,x) ↔ U(e,x)) is inconsistent, in the form that every theory T in the logic proves its negation. U is a relation symbol here, where Reinhardt allows any formula with two free variables. x is the variable 0 and e the variable 1.",
+   "planted_error": "The K after 'for some e' is missing: it refutes ∃e∀x(K¬U(x,x) ↔ U(e,x)), the thesis itself, which Reinhardt says is consistent, where Theorem 5 refutes ∃e B∀x(...).",
+   "lean": "def KnowingWhichSetRefuted : Prop := ∀ T : Set Form, Proves T (neg (ex 1 diagAll))"
+  },
+  {
+   "id": "X11",
+   "mimics": "S3c",
+   "passages": [
+    "P-R326",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. This statement captures Theorem 3, from a) to b), for the instance used in its proof: p(x) := ¬U(x,x) in a), and q(e) := ¬U(e,e) in b). U is a relation symbol here, where Reinhardt allows any formula. T is any set of formulas.",
+   "planted_error": "The negation is missing in the conclusion: ∃e(q(e) & Bq(e)) where b) has ∃e(q(e) & ¬Bq(e)).",
+   "lean": "def ThesisGivesUnknownTruth : Prop :=\n  ∀ T : Set Form, Proves T (ex 1 diagAll) → Proves T (ex 1 (and diagQ (K diagQ)))"
+  },
+  {
+   "id": "X12",
+   "mimics": "DEF-L2",
+   "passages": [
+    "P-R323",
+    "P-R323b",
+    "P-R321",
+    "P-K353"
+   ],
+   "claim": "Setting: the TARGET belongs to a small formal logic defined in the context. Formulas are built from binary relation symbols applied to variables (variables are natural numbers), falsehood, implication, the universal quantifier and an operator K. K stands for Reinhardt's operator B, 'it is provable (known) that'. The logic is a fragment of Reinhardt's: it has no function symbols, constants, equality or arithmetic, and that limitation is declared separately. These definitions give the proof system. 'All the usual schemas of logic' are rendered as: all tautologies (defined by truth assignments that respect falsehood and implication and treat atoms, quantified formulas and K-formulas as unanalysed), universal instantiation by a variable, distribution of the quantifier over implication, and vacuous quantification. The special axioms are Reinhardt's four. 'Universal closures' are rendered as any prefix of universal quantifiers, and 'optionally prefixed by B' / 'Bp for each such sentence p' as: K of any such formula is an axiom (Koellner's Σ ∪ KΣ). The only rule is modus ponens. Formulas are not required to be sentences.",
+   "planted_error": "The axiom k3 is reversed: φ → Kφ ('what is so is known') where Reinhardt has Bp → p ('what is known is so').",
+   "lean": "def PropVal (v : Form → Prop) : Prop := ¬ v fls ∧ ∀ φ ψ, v (imp φ ψ) ↔ (v φ → v ψ)\ndef Tautology (φ : Form) : Prop := ∀ v, PropVal v → v φ\ninductive BaseAx : Form → Prop\n  | taut {φ : Form} : Tautology φ → BaseAx φ\n  | inst (x y : ℕ) (φ : Form) : FreeFor y x φ → BaseAx (imp (all x φ) (subst x y φ))\n  | dist (x : ℕ) (φ ψ : Form) : BaseAx (imp (all x (imp φ ψ)) (imp (all x φ) (all x ψ)))\n  | vac (x : ℕ) (φ : Form) : ¬ Free x φ → BaseAx (imp φ (all x φ))\n  | k2 (φ ψ : Form) : BaseAx (imp (K (imp φ ψ)) (imp (K φ) (K ψ)))\n  | k3 (φ : Form) : BaseAx (imp φ (K φ))\n  | k4 (φ : Form) : BaseAx (imp (K φ) (K (K φ)))\n  | kall (x : ℕ) (φ : Form) : BaseAx (imp (K (all x φ)) (all x (K φ)))\ninductive Sig : Form → Prop\n  | base {φ : Form} : BaseAx φ → Sig φ\n  | gen (x : ℕ) {φ : Form} : Sig φ → Sig (all x φ)\ndef Axiom (φ : Form) : Prop := Sig φ ∨ ∃ ψ, Sig ψ ∧ φ = K ψ\ninductive Proves (T : Set Form) : Form → Prop\n  | ax {φ : Form} : Axiom φ → Proves T φ\n  | hyp {φ : Form} : φ ∈ T → Proves T φ\n  | mp {φ ψ : Form} : Proves T (imp φ ψ) → Proves T φ → Proves T ψ"
+  }
+ ]
+}

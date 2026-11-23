@@ -274,3 +274,68 @@ check: $3.78 ($1.14 OpenAI, $2.64 Google). Question total: $25.98 of $50.
 
 `statement-check/Statement3.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement3.lean` and is
 locked there. Neither new statement has been proved for the record before this point.
+
+## Amendment 4 (2026-11-23): tier 2B, a concrete logic of knowledge with quantifiers
+
+**What changed.** On 2026-11-23 Eugene approved the two large tiers ("go ahead on 2"). This amendment covers
+tier 2B, re-scoped after reading Reinhardt's paper. Tier 2C (Penrose's second argument) waits on Koellner's
+Part II, which is not in hand. Written before the statement check below is run and before anything in this
+tier is proved.
+
+**Why the scope changed.** The plan in issue #19 was to build epistemic arithmetic with its arithmetic and its
+truth predicate, then prove Koellner's Theorems 5 and 6. Reinhardt's paper shows that his own forms of those two
+results need no arithmetic: they "do not really depend on the Gödel fixed point construction, but are more
+basic" (p. 325). They are theorems of the logic of the knowledge operator with quantifiers. So this tier builds
+that logic for real and states the two theorems as Reinhardt states them, with "for some e" inside the
+language. That closes the gap the checkers found in Stage 2A, where a quantifier over machines could not be
+expressed. Arithmetic in this language, fixed points and the truth predicate of EA_T are not built.
+
+**Budget.** Inside the question's $50, of which $25.98 is spent. Expected cost of the check: $5 to $10.
+
+**The logic** (drafted in `statement-check/Statement4.draft.lean`; to be locked as
+`lean/GodelArgument/Statement4.lean`). After Reinhardt 1985, pp. 320–323.
+
+- D17, the language: binary relation symbols applied to variables, falsehood, implication, "for all x", and K.
+  Negation, conjunction, biconditional and "for some x" are defined. Free variables, substitution of a variable
+  for a variable, and "free for" are defined.
+- D18, the proof system: the axioms are tautologies, universal instantiation, distribution of the quantifier,
+  vacuous quantification, and Reinhardt's four axioms for the operator (distribution, Bp → p, Bp → BBp,
+  B∀xP → ∀x Bp), each under any prefix of universal quantifiers, and K of each of those. The only rule is modus
+  ponens. `Proves T φ` is derivability from the axioms and the formulas in T.
+- D19, the diagonal formulas: U(a, b), read "b belongs to the a-th set", and the instance of Reinhardt's thesis
+  for p(x) := ¬U(x,x).
+
+**Statements.**
+
+| Name | Gloss | Source |
+|---|---|---|
+| S3a `NecessitationIsDerived` | What the logic proves outright, it proves to be known | Reinhardt 1985, pp. 321, 329 (the rule p / Bp). Stage 2A assumed this as D11 |
+| S3b `KnowingWhichSetRefuted` | Every theory proves ¬∃e K∀x(K¬U(x,x) ↔ U(e,x)) | Reinhardt 1985, pp. 327–328, Theorem 5 |
+| S3c `ThesisGivesUnknownTruth` | If T proves ∃e∀x(K¬U(x,x) ↔ U(e,x)), then T proves ∃e(q(e) ∧ ¬Kq(e)), where q(e) is ¬U(e,e) | Reinhardt 1985, pp. 325–326, Theorem 3, a) to b) |
+| S3d `ThesisGivesAbsolutelyUndecidable` | Under the same hypothesis T proves ∃e(¬Kq(e) ∧ ¬K¬q(e)) | Reinhardt 1985, p. 326, c) |
+| S3e `KnownThesisGivesKnownUnknownTruth` | If T proves K of the hypothesis, it proves K of the conclusion of S3c | Reinhardt 1985, p. 326, "Moreover" |
+| S3f `LogicIsConsistent` | The logic does not prove falsehood | the lab's own; a non-vacuity result |
+
+**Method.** As before. Statement check by the same two checkers, on the definition of the logic as well as on the
+statements, with three planted errors (K dropped after "for some e" in S3b; a negation dropped in the conclusion
+of S3c; "what is known is so" reversed in the axioms). Script: `statement-check/run.py --stage 2b`. Then the lock,
+then proofs in `Results4.lean` and the audit. A trial proof of every draft statement was compiled first
+(`explore/QELSketch.lean`, exploratory).
+
+**What would count.** S3b proved: knowing which set you are is refuted inside the language, quantifier and all.
+S3c to S3e proved: the thesis that the knower is some set yields, inside the language, a truth it cannot know;
+this is Gödel's disjunction in Reinhardt's form. S3a proved: the rule assumed in Stage 2A is derived here.
+
+**Known weaknesses, declared in advance.**
+
+- A fragment. No function symbols, constants, equality or arithmetic. Reinhardt's language is arithmetic with B.
+- U is a relation symbol, where Reinhardt has "any formula with two free variables". Only the one diagonal
+  instance of his schema is stated.
+- Axioms and theories are not restricted to sentences; formulas with free variables are allowed. Reinhardt takes
+  universal closures and sets of sentences.
+- "The usual schemas of logic" are rendered by four schemas, with tautologies defined by truth assignments. That
+  these give exactly the first-order validities of the fragment is not proved here.
+- Consistency (S3f) is shown by reading Kφ as φ. That reading refutes the thesis of S3c, so it cannot show the
+  thesis consistent with the logic. That result is Reinhardt's (1981), cited through his Remark 4, not proved.
+- Koellner's Theorems 5 and 6 are stated in EA_T with a truth predicate. These are Reinhardt's schematic forms
+  without one.
