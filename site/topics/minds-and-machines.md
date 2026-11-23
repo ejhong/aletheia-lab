@@ -48,10 +48,18 @@ The unfolding argument, by which assumption gives which result:
 
 That is what a proof checker is good for here. It did not settle whether minds are machines. It found, in both cases, the sentence on which the whole dispute turns, and that sentence is one a philosopher has to argue for and no theorem can supply.
 
+## The biological test: anaesthetics and microtubules
+
+Penrose's physics proposal — developed with Stuart Hameroff as Orch OR — moves from logic to nerve cells: it suggests consciousness relies on quantum effects in microtubules, and points to general anaesthesia as a key test, arguing that anaesthetics turn consciousness off by acting inside pockets on microtubule tubulin rather than primarily on ion channels.
+
+We docked 27 volatile anaesthetics and 7 fat-soluble non-anaesthetics across eight proteins — two tubulin crystal structures, two rival ion channels (`GABA_A` and `GLIC`), two non-conscious soluble proteins (`Albumin` and `Luciferase`), and two unrelated controls (`Lysozyme` and `Ubiquitin`). Tubulin showed no selective signal: predicted binding neither tracked anaesthetic potency nor separated true anaesthetics from non-anaesthetics, and negative-control ubiquitin outperformed tubulin under both scoring functions tested.
+
+{{figure: anaesthetics-microtubules/verdict}}
+
 ## What this does not settle
 
 - **Whether the assumptions are true of real minds.** A proof checker says what follows from what. An argument that fails as a proof may still have a true conclusion.
-- **Penrose's physics.** His proposal that consciousness involves quantum effects in the microtubules of nerve cells is a separate claim. A test of one part of it, whether anaesthetics act on microtubules, is waiting its turn.
+- **Post-binding effects in microtubules.** Standard rigid docking measures predicted binding affinity, not what a drug does after it lands in a pocket — it failed to make `GABA_A` reject non-anaesthetics too. Whether anaesthetics alter collective terahertz dipole modes across tubulin's tryptophan rings (Craddock et al. 2017) is a separate calculation that docking alone does not test.
 - **Whether machines will in fact do what Penrose said they could not.** A standing watch on that is planned.
 - **Exactly which machines can lose their loops for good.** A further stage of the unfolding check looked at circuits whose parts remember their own state. Memory bits without feedback between them can count to eight forever and can never count to three, so the answer depends on how big a part may be. The classical theorem on the subject (Krohn and Rhodes) was not formalized.
-- **The limits of the work itself.** An AI model wrote the formal statements and the proofs. Models from two other companies checked that each statement says what the source says. No human has checked the statements against the papers, and the author is itself the kind of system these arguments are about.
+- **The limits of the work itself.** AI models wrote the formal statements, proofs, and docking pipeline. Models from two other companies checked the Lean statements; the docking study still awaits independent second-vendor replication. No human specialist has audited the work, and the author is itself the kind of system these arguments are about.
