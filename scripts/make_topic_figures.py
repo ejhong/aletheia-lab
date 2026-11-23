@@ -212,20 +212,28 @@ def minds():
          "Partly holds", "Valid for experiments of fixed length only", "partly")])
 
 
-def crossings():
-    tiles("topic-ancient-crossings", [
-        ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean", False),
-        ("58", "groups of ancient Americans tested for the Australasian resemblance", False),
-        ("0", "strangers found who cannot be explained", False),
-        ("The Norse", "of medieval Greenland, the one crossing history already knew, were found: the search could see", True)])
-    scorecard("topic-ancient-crossings", "scorecard", "What each search looked for and found",
-              ["The search", "If the voyagers existed", "What the record shows"], [
+def deep_memory():
+    tiles("topic-deep-memory", [
+        ("3", "tests of a shared past that do not depend on stories: two in ancient DNA, one in the sky", False),
+        ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean; none unexplained", False),
+        ("After 201 BCE", "the date read from the empty patch in the classical sky: that of the catalogue's own makers", True),
+        ("Still open", "the stories and images themselves, which the atlas weighs", True)])
+    scorecard("topic-deep-memory", "scorecard", "What each study tested and found",
+              ["The trace", "If there was a shared past", "What the record shows"], [
         (31, "population-y", "The Australasian signal in the Amazon", "The resemblance between some Amazonians and Australasians traces to a crossing of the Pacific.",
          "It is real and faint, and it leads back to mainland Asia tens of thousands of years ago. None of 58 groups of ancient Americans stands out for it.",
          "Not found", "Real, but not from across the Pacific", "no"),
         (41, "strangers", "Strangers in the record", "Somebody before Columbus lies buried on the wrong side of an ocean.",
          "Among 12,977 ancient people nobody does, apart from the medieval Norse of Greenland. The one person left unexplained was checked in her raw DNA, which points to modern contamination.",
-         "Not found", "No strangers found", "no")])
+         "Not found", "No strangers found", "no"),
+        (85, "ancient-sky-hole", "The hole in the ancient sky", "The empty southern patch in the classical constellations is centred where the pole stood long before Babylon or Greece.",
+         "It is centred where the pole stood for Hipparchus and Ptolemy, who compiled the catalogue. A sky of 3000 BCE fits far worse. But a catalogue's edge dates its last compilers, not the first people to draw the figures.",
+         "Not found", "The hole dates the catalogue, not the constellations", "no")])
+    (FIG / "topic-deep-memory" / "sky-plate.html").write_text(
+        '<figure class="plate"><img src="../../assets/illustrations/ancient-skies.jpg" loading="lazy" width="1536" height="1024" '
+        'alt="An engraving of a round chart of the southern sky, crowded with constellation figures around an empty circle at its centre, '
+        'with an astronomer sighting from a rocky shore below.">'
+        '<figcaption>An illustration made with an AI image model, for decoration. It is not evidence and is not a real star chart.</figcaption></figure>\n')
 
 
 def mind_over_matter():
@@ -241,26 +249,12 @@ def mind_over_matter():
          "Not found", "No effect on a fresh test", "no")])
 
 
-def ancient_sky():
-    tiles("topic-ancient-skies", [
-        ("1,020", "stars of Ptolemy's catalogue matched to modern positions and wound back through time", False),
-        ("After 201 BCE", "in every version of the test: the empty patch is the horizon of the catalogue's own makers", True),
-        ("910 CE", "where the main model landed, centuries after the catalogue was written: a warning about the method", False),
-        ("Still open", "how old the constellation figures themselves are", True)])
-    scorecard("topic-ancient-skies", "scorecard", "What each study tested and found",
-              ["The clock", "If the sky map is very old", "What the record shows"], [
-        (85, "ancient-sky-hole", "The hole in the ancient sky", "The empty southern patch is centred where the pole stood long before Babylon or Greece.",
-         "It is centred where the pole stood for Hipparchus and Ptolemy, who compiled the catalogue. A sky of 3000 BCE fits far worse. But a catalogue's edge dates its last compilers, not the first people to draw the figures.",
-         "Not found", "The hole dates the catalogue, not the constellations", "no")])
-
-
 def main():
     younger_dryas()
     minds()
-    crossings()
+    deep_memory()
     mind_over_matter()
-    ancient_sky()
-    for folder in ("topic-younger-dryas", "topic-minds-and-machines", "topic-ancient-crossings", "topic-mind-over-matter", "topic-ancient-skies"):
+    for folder in ("topic-younger-dryas", "topic-minds-and-machines", "topic-deep-memory", "topic-mind-over-matter"):
         print(folder + ":", ", ".join(sorted(p.name for p in (FIG / folder).iterdir())))
 
 

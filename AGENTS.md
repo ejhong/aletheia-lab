@@ -93,4 +93,5 @@ never stand in for a photograph, chart or map of anything real, and do not go on
 
 Related questions are grouped on topic pages (`site/topics/<slug>.md`: a title, a one-line summary, the issue
 numbers in reading order, and a short discussion of what the studies add up to). When a result lands, update the
-topic page it belongs to, or start one when two or more questions bear on the same claim.
+topic page it belongs to, or start one when two or more questions bear on the same claim. Where a topic bears on a case
+in the atlas, name the case in the page's front matter (`atlas:`); the page links to it and leaves the judging there.

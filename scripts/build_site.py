@@ -855,6 +855,7 @@ def read_topics(questions):
         topic = {"slug": path.stem, "title": meta.get("title", path.stem), "summary": meta.get("summary", ""),
                  "updated": meta.get("updated"), "order": int(meta.get("order", "99")), "md": md,
                  "image": meta.get("image"), "image_alt": meta.get("image_alt", ""),
+                 "atlas": meta.get("atlas"), "atlas_title": meta.get("atlas_title", ""),
                  "questions": [by_number[n] for n in numbers if n in by_number]}
         topics.append(topic)
         for q in topic["questions"]:
@@ -906,8 +907,11 @@ def topic_page(topic, root):
     head = ('<div class="band"><div class="wrap band-inner">'
             '<nav class="crumbs" aria-label="Breadcrumb"><a href="%s#topics">Topics</a></nav>'
             '<p class="kicker-row"><span class="kicker">Topic</span>%s</p><h1 class="display">%s</h1>'
-            '<p class="dek">%s</p><p class="pills"><span class="topic-count">%s</span></p></div></div>' % (
-                root, updated, inline(topic["title"]), inline(topic["summary"]), esc(topic_counts(topic))))
+            '<p class="dek">%s</p><p class="pills"><span class="topic-count">%s</span>%s</p></div></div>' % (
+                root, updated, inline(topic["title"]), inline(topic["summary"]), esc(topic_counts(topic)),
+                # The atlas case this topic bears on. The lab links to it; the atlas does the judging.
+                '<a class="topic-atlas" href="%scases/%s/">In the atlas: %s <span aria-hidden="true">↗</span></a>' % (
+                    ATLAS_URL, esc(topic["atlas"]), esc(topic["atlas_title"] or topic["atlas"])) if topic["atlas"] else ""))
     rows = "".join(index_row(q, root) for q in topic["questions"])
     art = illustration(topic["image"], root)
     lead = ('<figure class="topic-lead"><img src="%s" alt="%s" width="1536" height="1024">'

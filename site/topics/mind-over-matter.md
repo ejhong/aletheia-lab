@@ -5,6 +5,8 @@ questions: 47, 74, 46
 order: 4
 image: mind-over-matter
 image_alt: An engraving of a globe dotted with tiny lanterns joined by threads, with a coin spinning in the air above it.
+atlas: mpi
+atlas_title: Elusive by Law
 updated: 2026-11-23
 ---
 
