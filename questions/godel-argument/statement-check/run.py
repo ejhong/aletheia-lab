@@ -12,6 +12,7 @@ Planted wrong items ("decoys") are mixed in to measure whether the checker catch
     python3 run.py --stage 2a ...          # the same commands for Stage 2A (Statement2.lean, items2a.json, out2a/)
     python3 run.py --stage 2r ...          # and for Amendment 3 (Statement3.lean, items2r.json, out2r/)
     python3 run.py --stage 2b ...          # and for Amendment 4, tier 2B (Statement4.lean, items2b.json, out2b/)
+    python3 run.py --stage 2c ...          # and for Amendment 5, tier 2C (Statement5.lean, items2c.json, out2c/)
 
 Keys come from the environment: OPENAI_API_KEY, GEMINI_API_KEY, XAI_API_KEY.
 """
@@ -87,6 +88,21 @@ def use_stage_2b():
             "Closed", "Axiom", "Proves", "U", "diagAll", "diagQ"]
     KEEP = {"Form", "neg", "and", "iff", "ex"}
     PREAMBLE = ""
+
+
+def use_stage_2c():
+    """Amendment 5, tier 2C: Penrose's new argument, in the abstract setting of Stage 2A."""
+    global STATEMENT, OUT, ITEMS, NOTATION, REPORT, REPORT_HEAD, ORDER, DEFS, PREAMBLE, KEEP
+    STATEMENT = HERE.parent / "lean" / "GodelArgument" / "Statement5.lean"
+    if not STATEMENT.exists():
+        STATEMENT = HERE / "Statement5.draft.lean"
+    OUT, ITEMS, NOTATION, REPORT = HERE / "out2c", HERE / "items2c.json", HERE / "notation2c.md", HERE / "REPORT-2C.md"
+    REPORT_HEAD = ["Amendment 5, tier 2C. Written by `run.py --stage 2c --report` from the raw outputs in `out2c/`.",
+                   "Verdicts are the checkers' own."]
+    ORDER = ["DEF-M", "S4a", "X15", "DEF-N", "S4b", "S4f", "X13", "S4c", "S4e", "S4d", "X14", "S4g"]
+    DEFS = ["TIn", "TOut", "KIntro", "KnownIsTrue", "DKIntro", "DeterminateTruth", "DeterminateImp", "DeterminateK"]
+    KEEP = set()
+    PREAMBLE = next(line for line in STATEMENT.read_text().splitlines() if line.startswith("variable ")) + "\n"
 
 
 def use_stage_2r():
@@ -399,6 +415,9 @@ if __name__ == "__main__":
         args = args[2:]
     elif args[:2] == ["--stage", "2b"]:
         use_stage_2b()
+        args = args[2:]
+    elif args[:2] == ["--stage", "2c"]:
+        use_stage_2c()
         args = args[2:]
     if args == ["--probe"]:
         for v in ("openai", "google", "xai"):
