@@ -1,0 +1,18 @@
+{
+ "judges": {},
+ "excluded": {
+  "google": "competence check failed: scorpion mean rank 10.80 for the scorpion figure",
+  "openai": "competence check failed: scorpion mean rank 6.40 for the scorpion figure",
+  "xai": "competence check failed: scorpion mean rank 7.80 for the scorpion figure"
+ },
+ "labels": {
+  "reproduction": "not testable",
+  "pairing": "not testable"
+ },
+ "paper": {
+  "P_plus_1": 2,
+  "no_repeats": 2.0041686708353376e-07,
+  "repeats": 9.302721574455114e-09,
+  "claimed_rank_1_count": 7
+ }
+}

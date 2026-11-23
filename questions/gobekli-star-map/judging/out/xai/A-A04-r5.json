@@ -1,0 +1,53 @@
+{
+ "trial": {
+  "id": "A-A04-r5",
+  "task": "A",
+  "target": "A04",
+  "letters": {
+   "A": "S05",
+   "B": "S01",
+   "C": "S10",
+   "D": "S04",
+   "E": "S12",
+   "F": "S11",
+   "G": "S07",
+   "H": "S09",
+   "I": "S06",
+   "J": "S03",
+   "K": "S02",
+   "L": "S08"
+  }
+ },
+ "vendor": "xai",
+ "model": "grok-4.7",
+ "prompt": "You will see one line drawing and twelve photographs labelled A to L. Each photograph shows a shape carved in stone. Rank the twelve photographs by how closely the overall shape of the carved figure resembles the line drawing, from most similar to least similar. Consider shape only; the drawing may match at any size. Do not explain. Reply with JSON only: {\"ranking\": [\"<letter>\", ...]} listing all twelve letters exactly once.",
+ "raw": "{\"ranking\": [\"F\", \"H\", \"C\", \"A\", \"J\", \"I\", \"L\", \"D\", \"B\", \"G\", \"E\", \"K\"]}",
+ "ranking": [
+  "S11",
+  "S09",
+  "S10",
+  "S05",
+  "S03",
+  "S06",
+  "S08",
+  "S04",
+  "S01",
+  "S07",
+  "S12",
+  "S02"
+ ],
+ "valid": true,
+ "attempts": [
+  {
+   "raw": "{\"ranking\": [\"F\", \"H\", \"C\", \"A\", \"J\", \"I\", \"L\", \"D\", \"B\", \"G\", \"E\", \"K\"]}",
+   "input_tokens": 5196,
+   "output_tokens": 39,
+   "valid": true
+  }
+ ],
+ "input_tokens": 5196,
+ "output_tokens": 39,
+ "cost_usd": null,
+ "seconds": 174.9,
+ "utc": "2026-11-23T21:20:56Z"
+}

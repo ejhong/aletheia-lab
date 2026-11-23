@@ -1,0 +1,53 @@
+{
+ "trial": {
+  "id": "A-A07-r5",
+  "task": "A",
+  "target": "A07",
+  "letters": {
+   "A": "S05",
+   "B": "S07",
+   "C": "S11",
+   "D": "S08",
+   "E": "S04",
+   "F": "S02",
+   "G": "S03",
+   "H": "S12",
+   "I": "S10",
+   "J": "S06",
+   "K": "S01",
+   "L": "S09"
+  }
+ },
+ "vendor": "openai",
+ "model": "gpt-6.2-astra",
+ "prompt": "You will see one line drawing and twelve photographs labelled A to L. Each photograph shows a shape carved in stone. Rank the twelve photographs by how closely the overall shape of the carved figure resembles the line drawing, from most similar to least similar. Consider shape only; the drawing may match at any size. Do not explain. Reply with JSON only: {\"ranking\": [\"<letter>\", ...]} listing all twelve letters exactly once.",
+ "raw": "{\"ranking\":[\"J\",\"K\",\"A\",\"E\",\"G\",\"F\",\"B\",\"D\",\"L\",\"I\",\"C\",\"H\"]}",
+ "ranking": [
+  "S06",
+  "S01",
+  "S05",
+  "S04",
+  "S03",
+  "S02",
+  "S07",
+  "S08",
+  "S09",
+  "S10",
+  "S11",
+  "S12"
+ ],
+ "valid": true,
+ "attempts": [
+  {
+   "raw": "{\"ranking\":[\"J\",\"K\",\"A\",\"E\",\"G\",\"F\",\"B\",\"D\",\"L\",\"I\",\"C\",\"H\"]}",
+   "input_tokens": 4133,
+   "output_tokens": 335,
+   "valid": true
+  }
+ ],
+ "input_tokens": 4133,
+ "output_tokens": 335,
+ "cost_usd": 0.046464,
+ "seconds": 17.48,
+ "utc": "2026-11-23T21:06:35Z"
+}

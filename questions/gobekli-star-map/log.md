@@ -37,3 +37,28 @@ Dated entries, newest last: what was tried, what happened, what next.
   paper's formula can exceed 1 with tied tables, which the plan already calls "not a probability".
 - No picture from the paper has been shown to any judge. Next: lock, then the judging.
 
+- Locked 2026-11-23T21:03:35Z. After the lock and before any judging, one line of `analysis/analyse.py` was
+  changed (commit `f1d805a`): the input check I had added just before the lock was too strict for the reader's own
+  unit test. It checks the shape of a ranking, not its content.
+- Judging started about 21:05 UTC. OpenAI and Google finished 80 trials each within minutes, all valid at the
+  first attempt. xAI's model takes about three minutes a trial. To find out what that costs I sent it one request
+  made of the made-up shapes: about 12,900 hidden reasoning tokens, $0.086 by the API's own figure. So xAI's 80
+  trials should cost about $7, and the question stays inside its $20.
+- While checking those token counts I printed one of xAI's replies: a string of twelve letters. Without the
+  trial's letter key it says nothing about which symbol was ranked where, and I did not look the key up.
+- The recognition questions were put to OpenAI and Google once their own ranking trials were done; xAI's follow
+  when its trials finish. Calls are stateless, so one judge's recognition call cannot reach another's rankings.
+- Replication: Google's model wrote its program from the protocol and format notes at 21:10 UTC, before any
+  ranking was analysed. On made-up rankings it agrees with our program on all 23 numbers. One outside vendor for
+  the replication, as Eugene now prefers; the review had already used two.
+- A fifth and sixth sub-agent (Opus 5.5) adapted the replication scripts and wrote the figure script, both on
+  made-up data, told not to open the judging output.
+- xAI finished at 22:12 UTC. All 240 rankings valid at the first attempt. The locked analysis left out all three
+  judges: none ranked the scorpion photograph near the top for the scorpion figure (6.4, 7.8, 10.8). Both labels:
+  "not testable". I had not listed that outcome among my guesses.
+- Checked for a fault of ours before accepting it: the pictures match the paper's printed table (white patches
+  and all), one trial decoded by hand matches `rankings.tsv`, and the made-up-shapes test had passed. None found.
+- Google's replication program gives the same exclusions and labels.
+- Afterwards, and labelled as such: `explore/no_gate.py` runs the locked program with the competence check off,
+  to describe what the judges did. Recognition replies read: all three name the site and the 2017 paper.
+- Figures, site page, Deep memory topic page and scorecard written. Spend about $16.20 of $20.

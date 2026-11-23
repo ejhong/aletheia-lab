@@ -55,4 +55,6 @@ Every paid run. Stop and ask Eugene before going over a question's budget, or ov
 | 2026-11-23 | gcp-audit (#74) | Google Gemini API, `gemini-4-neon` | 1.09 | Pre-lock plan review, two rounds (0.51, 0.58) |
 | 2026-11-23 | gcp-audit (#74) | OpenAI API, `gpt-6.2-astra` | 0.66 | Independent replication program, one call |
 | 2026-11-23 | gcp-audit (#74) | Google Gemini API, `gemini-4-neon` | 0.81 | Independent replication program, one call |
-
+| 2026-11-23 | gobekli-star-map (#92) | OpenAI API, `gpt-6.2-astra` | 3.44 | Plan review (0.28), plumbing test on made-up shapes (about 0.10; the OpenAI and Google tests came to 0.20 together), 80 blind ranking trials (2.99), two recognition questions (0.07) |
+| 2026-11-23 | gobekli-star-map (#92) | Google Gemini API, `gemini-4-neon` | 5.48 | Plan review (0.45), plumbing test (about 0.10), 80 ranking trials (4.43), recognition (0.09), replication program (0.41) |
+| 2026-11-23 | gobekli-star-map (#92) | xAI API, `grok-4.7` | 7.30 | Estimate: 80 ranking trials, recognition and tests at $0.086 a request, the cost one test request reported for itself (about 12,900 hidden reasoning tokens at $2 and $6 per million) |
