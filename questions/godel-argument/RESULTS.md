@@ -1,11 +1,11 @@
 # Machine-check the Gödel argument: results for Stages 1 and 2A
 
-Issue #19 · Lane: proof · Protocol locked 2026-11-22T17:49:01Z · Stage 2A statements locked 2026-11-23T02:52:00Z ·
-Two amendments (2026-11-23)
+Issue #19 · Lane: proof · Protocol locked 2026-11-22T17:49:01Z · Stage 2A statements locked 2026-11-23T02:52:00Z, and two
+more at 03:30:51Z · Three amendments (2026-11-23)
 
 ## Answer
 
-Stage 1: all thirteen locked statements are proved in Lean 4. Stage 2A: all seven are proved as well; see
+Stage 1: all thirteen locked statements are proved in Lean 4. Stage 2A: all nine are proved as well; see
 [Stage 2A](#stage-2a-a-knowledge-operator) below. In both, the conclusion turns on what a reasoner can know about
 its own reliability, and never on whether it is a machine.
 
@@ -142,14 +142,22 @@ Added under Amendment 2. Statements: `lean/GodelArgument/Statement2.lean`. Proof
 
 ### Answer
 
-All seven locked statements are proved in Lean 4, each from Lean's three standard axioms only. The build passes in CI
-with warnings treated as errors
-([run 45102690713](https://github.com/ejhong/aletheia-lab/actions/runs/45102690713), commit `48c66cb`).
+All nine locked statements are proved in Lean 4, each from Lean's three standard axioms only. Seven were locked
+and proved first (CI [run 45102690713](https://github.com/ejhong/aletheia-lab/actions/runs/45102690713), commit
+`48c66cb`). Two more were added once Reinhardt's paper was in hand, under Amendment 3. CI
+[run 45106557605](https://github.com/ejhong/aletheia-lab/actions/runs/45106557605), commit `34e9b07`. Both builds treat
+warnings as errors.
+
+> **Correction (Amendment 3).** The first version of this section said that Koellner's printed Theorem 4 leaves
+> out a condition on the system F, and presented S2b as a repair. That was wrong. Reinhardt's paper, read
+> afterwards, states the theorem with "no derivability conditions on the system". What Koellner's page leaves
+> out is Reinhardt's definition of the consistency statement: no sentence is asserted together with its negation.
+> With that definition the theorem holds for every F. It is now stated and proved as S2f. S2b and S2b′ remain
+> true, but S2b is a different and weaker result, not a repair of Reinhardt's.
 
 Stage 1 could not say "I know". Stage 2A adds an operator K, read "it is known that", and asks which principles
-about K carry the results that Koellner's analysis rests on. Five statements are short derivations in
-propositional logic from explicit assumptions about K. Two show that an assumption cannot be dropped, using
-Peano arithmetic.
+about K carry the results that Koellner's analysis rests on. Seven statements are derivations in propositional
+logic from explicit assumptions about K. Two show that an assumption cannot be dropped, using Peano arithmetic.
 
 The setting is abstract. It is not epistemic arithmetic itself: there is no arithmetic, coding or quantifier in
 it, and what the sources get from arithmetic appears as a stated assumption. Building the real systems is
@@ -163,12 +171,12 @@ F is any system, read through "F holds of φ". It need not be a machine.
    asserts is so, then some sentence is known that F does not assert (S2a, S2a′). This is the knowledge-operator
    form of Penrose's 𝒢.
 2. **A knower that knows a system captures all it knows cannot know that system consistent.** More exactly, it
-   is known that F's consistency is not known (S2b). This needs F to be the kind of system the second
-   incompleteness theorem applies to. Koellner's printed statement omits that condition; without it the statement
-   is false in this setting (S2b′).
+   is known that F's consistency is not known (S2f, Reinhardt's Theorem 6). Nothing is assumed about F.
+   "Consistent" means here that F never asserts a sentence together with its negation. This is the one result
+   that uses "what is known is known to be known".
 3. **Knowing which system you are is contradictory.** If it is known, sentence by sentence, that being known
    coincides with F holding, a contradiction follows (S2c). A logical core of this needs no arithmetic at all
-   (S2d).
+   (S2d); it is the heart of Reinhardt's own proof.
 4. **The assumption that carries it is knowing that your knowledge is true.** Take K to be "Peano arithmetic
    proves". Seen from Peano arithmetic plus "what it proves is so", this K satisfies every assumption of 3
    except that one, it trivially knows which system it is, and no contradiction arises (S2e). So a machine's own
@@ -185,33 +193,37 @@ Kφ", and 𝓢 includes the base. **K2**: knowledge is closed under modus ponens
 
 | Claim | Lean name | Base | K2 | K3 | KK3 | Other assumptions | Status | Source and standing |
 |---|---|---|---|---|---|---|---|---|
-| S2a. If K(F(φ) → φ) for each φ, then for some ψ: Kψ and K¬F(ψ) | `reinhardtTheorem3` | yes | yes | – | – | F has a Gödel sentence over the base | Proved | Koellner 2018a, p. 354, Theorem 3 (attributed to Reinhardt 1985) |
+| S2a. If K(F(φ) → φ) for each φ, then for some ψ: Kψ and K¬F(ψ) | `reinhardtTheorem3` | yes | yes | – | – | F has a Gödel sentence over the base | Proved | Reinhardt 1985, p. 324, Theorem 1, case (i); Koellner 2018a, p. 354, Theorem 3 |
+| S2g. The same from K(F(φ) → Kφ) for each φ | `reinhardtTheorem1Safe` | yes | yes | – | yes | as S2a | Proved | Reinhardt 1985, p. 324, Theorem 1, case (ii) |
 | S2a′. Then something is known that F does not hold of | `knowerExceedsKnownSoundSystem` | yes | yes | yes | – | as S2a | Proved | Koellner 2018a, pp. 354, 356; Penrose 1994, p. 76 |
-| S2b. If K(Kφ → F(φ)) for each φ, then K¬K(Con F) | `absoluteSecondIncompleteness` | yes | yes | – | yes | the base proves "if F holds of Con F then F holds of ⊥" | Proved | Koellner 2018a, p. 354, Theorem 4, with a condition added. A repaired variant, not the printed theorem |
-| S2b′. That added condition cannot be dropped | `secondIncompletenessProvisoCannotBeDropped` | – | – | – | – | none (it exhibits a system) | Proved | the lab's own |
-| S2c. If K(Kφ ↔ F(φ)) for each φ, then 𝓢 proves a contradiction | `knowingWhichSystemIsContradictory` | yes | yes | yes | yes | F has a Gödel sentence over the base | Proved | Koellner 2018a, p. 357, Theorem 6, in the sentence-by-sentence form of Alexander 2014, Theorem 12(3). A counterpart, not Theorem 6 |
-| S2d. For no p is it known that p holds exactly when ¬p is known | `noKnownSelfDiagonal` | yes | yes | yes | yes | none | Proved | the lab's own lemma; informally, the core of refuting one instance of Reinhardt's schema (Alexander 2014, Def. 4) |
+| S2b. If K(Kφ → F(φ)) for each φ, then K¬K(Con F) | `absoluteSecondIncompleteness` | yes | yes | – | yes | Con F read as ¬F(⊥); the base proves "if F holds of Con F then F holds of ⊥" | Proved | the lab's own variant. Not Reinhardt's theorem; see the correction above |
+| S2b′. The added condition of S2b cannot be dropped | `secondIncompletenessProvisoCannotBeDropped` | – | – | – | – | none (it exhibits a system) | Proved | the lab's own |
+| S2f. If K(Kσ → F(σ)) for each σ, then K¬K(Con F), for any F | `reinhardtTheorem6` | yes, and the base proves K2 and K4 | via the base | – | yes | Con F provably implies, for each σ, that F does not hold of both σ and ¬σ; a known fixed point s ↔ K(F(¬s)) | Proved | Reinhardt 1985, pp. 328–330, Theorem 6; Koellner 2018a, p. 354, Theorem 4 |
+| S2c. If K(Kφ ↔ F(φ)) for each φ, then 𝓢 proves a contradiction | `knowingWhichSystemIsContradictory` | yes | yes | yes | yes | F has a Gödel sentence over the base | Proved | Koellner 2018a, p. 357, Theorem 6, in the sentence-by-sentence form of Alexander 2014, Theorem 12(3). A counterpart reached by another route; Reinhardt's own argument is the one in S2d |
+| S2d. For no p is it known that p holds exactly when ¬p is known | `noKnownSelfDiagonal` | yes | yes | yes | yes | none | Proved | the propositional core of Reinhardt's proof of his Theorem 5 (1985, pp. 327–328), from the point where x is taken to be e. The quantifier steps are not formalized |
 | S2e. KK3 cannot be dropped from S2c and S2d: "Peano arithmetic proves" satisfies the rest | `knownFactivityCannotBeDropped` | – | – | – | – | none (it names a system) | Proved | the lab's own; compare Alexander 2014, §1 and Theorem 12 |
 
 What the table shows:
 
 - **Mechanism is never an assumption.** F is arbitrary in S2a to S2c. Koellner makes the same remark about
   Theorem 3 (p. 354).
-- **K4 is never an assumption**, nor is "the knower knows its own code". In the sources K4 serves to derive the
-  rule that the base is closed under necessitation; here that rule is assumed directly.
-- **Factivity and known factivity do different work.** S2a needs neither. S2b needs only the known form. S2c and
+- **K4, "what is known is known to be known", is an assumption of S2f only.** Reinhardt says his proof of that
+  theorem uses it "very strongly" (p. 330). His proof of Theorem 5 "does not use" it (p. 327), and S2d does not.
+- **Factivity and known factivity do different work.** S2a needs neither, as Reinhardt remarks of his Theorem 1
+  (p. 325). S2f, S2g and S2b need only the known form, as Reinhardt remarks of his Theorem 6 (p. 330). S2c and
   S2d need both, and S2e shows the known form cannot be dropped.
-- **Each proof uses one instance** of its sentence-by-sentence assumption: the Gödel sentence of F in S2a and
-  S2c, the consistency statement of F in S2b.
+- **Each proof uses few instances** of its sentence-by-sentence assumption: the Gödel sentence of F in S2a and
+  S2c; the consistency statement of F in S2b; the fixed point and its negation in S2f.
 
-**Non-vacuity.** `lean/GodelArgument/NonVacuity2.lean` gives, for S2a, S2a′ and S2b, a consistent system in which
+**Non-vacuity.** `lean/GodelArgument/NonVacuity2.lean` and `NonVacuity3.lean` give, for S2a, S2a′, S2b, S2f and
+S2g, a consistent system in which
 all assumptions hold, and for S2c and S2d a consistent system in which the assumptions about K and the Gödel
 sentence hold, so that the contradiction in S2c comes from the added scheme. These witnesses use the trivial
 knower, K φ := φ. They show that the assumptions do not clash and nothing more. S2e is the one result here about
 a knower that is not trivial.
 
-**Audit.** Ten theorems (7 results, 3 non-vacuity instances) pass `#assert_standard_axioms` inside the build.
-With Stage 1 that makes 33. No `sorry`, `admit`, `native_decide` or `axiom` in the source.
+**Audit.** Fourteen theorems (9 results, 5 non-vacuity instances) pass `#assert_standard_axioms` inside the build.
+With Stage 1 that makes 37. No `sorry`, `admit`, `native_decide` or `axiom` in the source.
 
 **What Foundation supplies.** S2a to S2d use only its propositional-logic prover. S2e and the witnesses use its
 provability predicate for Peano arithmetic, derivability conditions D1 and D2, its Gödel sentence, and
@@ -230,6 +242,11 @@ rounds beside it, and Amendment 2.
   that…", was satisfied by contrived choices; S2e now names K, F and the system.
 - **How four items were judged.** S2b, S2b′, S2d and S2e are not statements the sources make. They were judged
   against the lab's own claim of what they say, with the passages as context.
+- **Against Reinhardt's own text (Amendment 3).** S2f and S2g were checked in two rounds before their lock; both
+  planted errors were caught; both ended `faithful_with_caveats` from both checkers. Round 1 found the fixed
+  point of S2f assumed in a stronger form than Reinhardt's proof uses; it was weakened to his. S2a and S2d,
+  already locked, were compared again with his Theorem 1 and with his proof of Theorem 5:
+  `faithful_with_caveats` from both. Details: `statement-check/REPORT-2R.md`.
 
 **Unresolved divergence.**
 
@@ -241,13 +258,16 @@ rounds beside it, and Amendment 2.
 
 - **Abstract.** No statement is literally about EA or EA_T. "The base is closed under necessitation" and "F has
   a Gödel sentence" are assumed, where the sources derive them.
-- **Reinhardt's papers were not read.** Every attribution to Reinhardt is through Koellner, Alexander or Cheng,
-  and is `unverified` against his text.
-- **The claim about Theorem 4 is the lab's.** As printed (Koellner 2018a, p. 354; repeated in Cheng 2020,
-  Theorem 4.1), for an arbitrary formula F(x) and with Con(F) read as ¬F(⌜⊥⌝), the theorem fails for
-  F(x) := x ≠ ⌜⊥⌝. That argument is by hand and is not machine-checked: S2b′ shows only that the abstract S2b
-  needs its condition, with F an arbitrary function. Reinhardt may well state the condition; that is
-  `unverified`.
+- **Reinhardt, partly read.** His 1985 *Noûs* paper was read (pp. 320–332) only after the first seven statements
+  were locked. Attributions to it are now checked against his text. His other papers were not read: the
+  consistency of the weak thesis is attributed to them through Koellner, Cheng and Reinhardt's own Remark 4.
+- **Con F is not a formula here.** In S2f it is any sentence that provably implies each instance of "F does not
+  hold of both σ and ¬σ". Reinhardt's is the quantified sentence ∀x¬(q(x) & q(ng(x))).
+- **A reading to avoid.** Koellner's page (and Cheng's Theorem 4.1) print Con(F) without defining it. Read as
+  ¬F(⌜⊥⌝), for an arbitrary formula F(x), the statement fails: take F(x) to be x ≠ ⌜⊥⌝. That argument is by
+  hand. It says nothing against Reinhardt's theorem, which does not use that reading.
+- **Reinhardt's Theorems 2 and 3**, which carry parameters and the "Post-Turing thesis", and his quantifier axiom
+  are not touched. His Theorem 3 is the form of Gödel's disjunction in his system.
 - **S2e is small.** Its knower is Peano arithmetic's provability predicate and F is that same predicate, so
   "knows which system it is" holds trivially. Alexander's machine knows much more.
 - **The consistency side is cited, not proved:** that a truthful knower can be a machine without knowing which
@@ -272,14 +292,20 @@ them, and the limits above. Departures from the plan as first written: the defin
 inclusion became a separate assumption (round 1); two statements were added, S2b′ and S2e (round 1), and S2e was
 then made concrete (round 2).
 
+**Amendment 3 (2026-11-23).** Eugene supplied Reinhardt's 1985 paper after Stage 2A was merged. The amendment was
+written and pushed before the check and the proofs. It records what the paper states, the correction above, the
+confirmation that S2a and S2d match Reinhardt's Theorem 1 and his proof of Theorem 5, and two added statements,
+S2f and S2g. The fixed-point hypothesis of S2f was weakened after round 1 of its check.
+
 ## Spending
 
-$22.20 of the $50 budget, all on statement checks (`SPENDING.md`): $12.38 for Stage 1, $0.32 for Amendment 1,
-$9.50 for Stage 2A.
+$25.98 of the $50 budget, all on statement checks (`SPENDING.md`): $12.38 for Stage 1, $0.32 for Amendment 1,
+$9.50 for Stage 2A, $3.78 for Amendment 3.
 
 ## Who did the work
 
-AI agents did this work, directed by Eugene Jhong, who also supplied the photographs of Penrose's book. Dates are
+AI agents did this work, directed by Eugene Jhong, who also supplied the photographs of Penrose's book and the
+papers by Cheng and Reinhardt. Dates are
 2026-11-22, and 2026-11-23 for Amendment 1.
 
 - **Anthropic, Claude Opus 5.5:** first assessment of the brief; issue #19.
