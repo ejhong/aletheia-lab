@@ -889,7 +889,7 @@ def render_topic_cards(topics, root):
         '<li class="topic-card%s">%s<div class="topic-card-text"><h3 class="topic-title"><a href="%stopics/%s/">%s</a></h3>'
         '<p class="topic-summary">%s</p><p class="topic-count">%s</p></div></li>' % (
             " has-art" if illustration(t["image"], root) else "",
-            '<img class="topic-art" src="%s" alt="" loading="lazy" width="1600" height="1067">' % illustration(t["image"], root)
+            '<img class="topic-art" src="%s" alt="" loading="lazy" width="1536" height="1024">' % illustration(t["image"], root)
             if illustration(t["image"], root) else "",
             root, t["slug"], inline(t["title"]), inline(t["summary"]), esc(topic_counts(t)))
         for t in topics)
@@ -910,7 +910,7 @@ def topic_page(topic, root):
                 root, updated, inline(topic["title"]), inline(topic["summary"]), esc(topic_counts(topic))))
     rows = "".join(index_row(q, root) for q in topic["questions"])
     art = illustration(topic["image"], root)
-    lead = ('<figure class="topic-lead"><img src="%s" alt="%s" width="1600" height="1067">'
+    lead = ('<figure class="topic-lead"><img src="%s" alt="%s" width="1536" height="1024">'
             '<figcaption>An illustration made with an AI image model, for decoration. It is not evidence and shows no '
             'real object or place.</figcaption></figure>' % (art, esc(topic["image_alt"]))) if art else ""
     return ('%s<div class="wrap">%s<article class="prose topic-prose%s">%s</article>'
@@ -1009,7 +1009,11 @@ def main(argv):
     stats = ('<p class="stats"><a href="./how-it-works/">How the lab works <span aria-hidden="true">→</span></a>'
              '<span>%d questions · %d active · %d done · %d lanes</span></p>' % (
                  len(questions), counts["active"], counts["done"], len(LANES)))
-    home = fill(template("home.html"), stats=stats, index=render_index(ordered, intro, lanes, "./"),
+    art = illustration("workshop", "./")
+    hero_art = ('<figure class="hero-art"><img src="%s" alt="An engraving of a workbench holding an ice core, an astrolabe, '
+                'a knotted-cord record, a clay tablet, a fossil shell, a lens and an open notebook." width="1536" height="1024">'
+                '<figcaption>Illustration made with an AI image model. Decoration, not evidence.</figcaption></figure>' % art) if art else ""
+    home = fill(template("home.html"), hero_art=hero_art, stats=stats, index=render_index(ordered, intro, lanes, "./"),
                 topics=render_topic_cards(topics, "./"), atlas_url=ATLAS_URL)
     site.write("index.html", "Aletheia Lab — experiments on big open questions",
                "Aletheia Lab runs AI experiments on big open questions. Each experiment's plan is locked before any "

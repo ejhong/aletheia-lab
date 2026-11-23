@@ -87,6 +87,10 @@ Every question with a result has a site page (`site/content/<slug>.md`) whose fr
 few words) and `result:` (two or three plain sentences). The home page shows them under the question, so readers
 see what was found without opening the page. Keep them current when a result changes.
 
+Pictures made by an image model may decorate a topic page or the home page (`site/assets/illustrations/`, made by
+`scripts/make_illustrations.py`). Each is labelled where it is shown as AI-made decoration. They are never evidence,
+never stand in for a photograph, chart or map of anything real, and do not go on a question's results.
+
 Related questions are grouped on topic pages (`site/topics/<slug>.md`: a title, a one-line summary, the issue
 numbers in reading order, and a short discussion of what the studies add up to). When a result lands, update the
 topic page it belongs to, or start one when two or more questions bear on the same claim.
