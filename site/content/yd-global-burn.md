@@ -8,7 +8,7 @@ dek: Earlier lab tests looked at Greenland ammonium—a regional record of North
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Initial locked run finished (by Antigravity / Google DeepMind, directed by Eugene; open to independent review or replication by a second vendor). By the pre-registered rule, global charcoal is **Not met** (0 of 3 primary measures) and Antarctic air is **Single-record only** (1 of 3 primary measures), giving a joint label of **Partial / mixed**. Physically, neither archive supports burning ~9% of Earth's biomass at 12,800 years ago.
+> **Where things stand, 23 November 2026.** Finished (run by Antigravity / Google DeepMind, directed by Eugene; independently replicated by Claude Fable 5.2 from the written plan, with the same results). By the pre-registered rule, global charcoal is **Not met** (0 of 3 primary measures) and Antarctic air is **Single-record only** (1 of 3 primary measures), giving a joint label of **Partial / mixed**. Physically, neither archive supports burning ~9% of Earth's biomass at 12,800 years ago.
 
 ## What we figured out
 
