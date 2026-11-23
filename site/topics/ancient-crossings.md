@@ -8,9 +8,17 @@ image_alt: An engraving of a double-hulled voyaging canoe on the open ocean at n
 updated: 2026-11-23
 ---
 
+{{figure: topic-ancient-crossings/tiles}}
+
 ## The idea
 
 Stories of lost seafarers, of civilisers who arrived by ship, and of contact between the Old World and the New before Columbus all make a prediction that does not depend on ruins or legends. People who travel and settle leave descendants, and descendants carry their ancestry in their bones. Thousands of ancient people have now had their DNA read and published. If the travellers existed, some of them should be there.
+
+## The scorecard
+
+{{figure: topic-ancient-crossings/scorecard}}
+
+{{figure: strangers/map}}
 
 ## What the studies add up to
 

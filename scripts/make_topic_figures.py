@@ -212,10 +212,41 @@ def minds():
          "Partly holds", "Valid for experiments of fixed length only", "partly")])
 
 
+def crossings():
+    tiles("topic-ancient-crossings", [
+        ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean", False),
+        ("58", "groups of ancient Americans tested for the Australasian resemblance", False),
+        ("0", "strangers found who cannot be explained", False),
+        ("The Norse", "of medieval Greenland, the one crossing history already knew, were found: the search could see", True)])
+    scorecard("topic-ancient-crossings", "scorecard", "What each search looked for and found",
+              ["The search", "If the voyagers existed", "What the record shows"], [
+        (31, "population-y", "The Australasian signal in the Amazon", "The resemblance between some Amazonians and Australasians traces to a crossing of the Pacific.",
+         "It is real and faint, and it leads back to mainland Asia tens of thousands of years ago. None of 58 groups of ancient Americans stands out for it.",
+         "Not found", "Real, but not from across the Pacific", "no"),
+        (41, "strangers", "Strangers in the record", "Somebody before Columbus lies buried on the wrong side of an ocean.",
+         "Among 12,977 ancient people nobody does, apart from the medieval Norse of Greenland. The one person left unexplained was checked in her raw DNA, which points to modern contamination.",
+         "Not found", "No strangers found", "no")])
+
+
+def mind_over_matter():
+    tiles("topic-mind-over-matter", [
+        ("58", "fresh events from 2016 to 2025, chosen by a rule and not by the experimenters", False),
+        ("−1.83", "the combined score, where the project's own record predicts about +2.5", False),
+        ("27 of 57", "events beat their matched ordinary day: no better than a coin", False),
+        ("Next", "an audit of the project's original 500 events from the raw data", True)])
+    scorecard("topic-mind-over-matter", "scorecard", "What each test looked for and found",
+              ["The claim", "If it were real", "What the data show"], [
+        (47, "global-consciousness", "The random-number network", "Random-number devices around the world stray from chance on days of shared emotion.",
+         "On 58 later events, scored with the project's own statistic, the network behaved as it does on ordinary days. Event days and control days cannot be told apart.",
+         "Not found", "No effect on a fresh test", "no")])
+
+
 def main():
     younger_dryas()
     minds()
-    for folder in ("topic-younger-dryas", "topic-minds-and-machines"):
+    crossings()
+    mind_over_matter()
+    for folder in ("topic-younger-dryas", "topic-minds-and-machines", "topic-ancient-crossings", "topic-mind-over-matter"):
         print(folder + ":", ", ".join(sorted(p.name for p in (FIG / folder).iterdir())))
 
 
