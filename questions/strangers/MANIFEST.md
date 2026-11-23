@@ -29,3 +29,9 @@ site and neighbours; `analysis/refs.tsv` lists the reference sets. The others ar
 
 After the lock, one line of `analysis/scan.py` was changed (see `amendments.md`, Amendment 2), so its hash no
 longer matches the one above. The locked version is commit `7e3b0d7`.
+
+## Added for Amendment 3
+
+| Name | URL | Retrieved (UTC) | Licence | SHA-256 | Notes |
+|---|---|---|---|---|---|
+| Mapped reads of PIE069 (`PIE069.A0101.TF1.1_trim2.bam`), ENA study PRJEB62503, run ERR11495483 | <https://ftp.sra.ebi.ac.uk/vol1/run/ERR114/ERR11495483/PIE069.A0101.TF1.1_trim2.bam> | 2026-11-23 | ENA: open access, cite the study (Penske et al. 2023, doi:10.1038/s41586-023-06334-8) | `e56774d45f646b6d71228660f6b2ddd90c2da2668126d128169c914f2c2895eb` | 72,916,233 bytes; MD5 matches ENA's record. In `data/ena_PRJEB62503/`. |
