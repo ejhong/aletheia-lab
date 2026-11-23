@@ -69,4 +69,18 @@ Dated entries, newest last: what was tried, what happened, what next.
   published proposition, now stated in Lean; proved only after the lock.
 - Gate after Stage 0, reported and not waited on (Eugene's instruction to run end to end): twenty statements,
   each with a trial proof that compiles; the outcome table is in `protocol.md`.
+- Locked `protocol.md` and `lean/UnfoldingArgument/Statement.lean` at 18:04:39 UTC (commit 7502087), before any
+  proof file existed under `lean/`.
+- Stages 1 and 2: proofs of all twenty statements (`Results.lean`, `Results2.lean`) and seven non-vacuity and
+  supporting theorems (`NonVacuity.lean`), commit f550f36. They are the trial proofs from `explore/`, moved into
+  module files; the only change is that the hub of the integrated twin now starts set. The build passes with
+  warnings as errors locally and in CI (run 45234539396); 27 theorems pass the axiom audit.
+- A quirk of the audit, found while testing it: if a theorem's *statement* fails to elaborate, Lean records the
+  theorem with a placeholder type and reports no axioms for it, so `#assert_standard_axioms` alone would pass.
+  The build still fails on the elaboration error, so nothing gets through; the audit is a second layer, not the
+  only one.
+- Wrote `RESULTS.md` and the site page. Gates after Stages 1 and 2 reported here and not waited on.
+- Not done: Stage 3 (Krohn–Rhodes with simple components; intervening on the twin's own units); Kleiner and
+  Hoel's Theorem 3.10; a replication of the statements by a second vendor's agent. Filing with Aletheia is
+  Eugene's decision and has not been done.
 
