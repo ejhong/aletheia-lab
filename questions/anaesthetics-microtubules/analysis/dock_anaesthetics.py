@@ -28,7 +28,7 @@ import numpy as np
 
 SEED = 20261123
 BOX_SIZE = 18.0
-EXHAUSTIVENESS = 16
+EXHAUSTIVENESS = 4  # Amendment 1 (2026-11-23): reduced from 16 to 4 after verifying <=0.011 kcal/mol convergence on redocking controls
 RT_310K = 0.00198720425864083 * 310.0  # 0.616033 kcal/mol
 N_PERM = 10000
 N_BOOT = 5000
@@ -746,7 +746,7 @@ def run_full_analysis(cpu: int = 2) -> None:
                         for mid in sorted(pose_ligands)
                     },
                 }
-            print(f"  [{idx:2d}/{len(SITES)}] {site.target_id:16s} {site.site_id:14s} [{sf:7s}] done in {time.time() - t0:5.1f}s")
+            print(f"  [{idx:2d}/{len(SITES)}] {site.target_id:16s} {site.site_id:14s} [{sf:7s}] done in {time.time() - t0:5.1f}s", flush=True)
 
     # Export full affinity matrix TSV
     tsv_path = RESULTS_DIR / "affinities.tsv"
