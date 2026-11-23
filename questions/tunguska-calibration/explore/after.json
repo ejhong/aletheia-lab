@@ -1,0 +1,229 @@
+{
+ "neem_s1": {
+  "site": "NEEM",
+  "peak_date": 1907.2,
+  "peak_over_typical_sample": 3.5,
+  "spike_from": 1907.2,
+  "spike_to": 1907.29,
+  "samples_in_spike": 2,
+  "no3_in_spike_over_typical": 1.9,
+  "bc_in_spike_over_typical": 3.5,
+  "years_to_katmai_sulphur_peak": 6.4,
+  "largest_sample_by_year": {
+   "1906": 1.0,
+   "1907": 3.5,
+   "1908": 0.4,
+   "1909": 1.7,
+   "1910": 2.0
+  }
+ },
+ "tunu2013": {
+  "site": "Tunu",
+  "peak_date": 1910.01,
+  "peak_over_typical_sample": 5.8,
+  "spike_from": 1909.9,
+  "spike_to": 1910.12,
+  "samples_in_spike": 3,
+  "no3_in_spike_over_typical": 1.3,
+  "bc_in_spike_over_typical": 1.9,
+  "years_to_katmai_sulphur_peak": 3.5,
+  "largest_sample_by_year": {
+   "1906": 1.2,
+   "1907": 0.7,
+   "1908": 2.6,
+   "1909": 3.7,
+   "1910": 5.8
+  }
+ },
+ "tunu2022a": {
+  "site": "Tunu",
+  "peak_date": 1908.45,
+  "peak_over_typical_sample": 2.5,
+  "spike_from": 1908.45,
+  "spike_to": 1908.45,
+  "samples_in_spike": 1,
+  "no3_in_spike_over_typical": 1.4,
+  "bc_in_spike_over_typical": 2.0,
+  "years_to_katmai_sulphur_peak": 4.5,
+  "largest_sample_by_year": {
+   "1906": 1.6,
+   "1907": 1.6,
+   "1908": 2.5,
+   "1909": 1.6,
+   "1910": 1.3
+  }
+ },
+ "tunu2022b": {
+  "site": "Tunu",
+  "peak_date": 1906.1,
+  "peak_over_typical_sample": 22.7,
+  "spike_from": 1906.1,
+  "spike_to": 1907.21,
+  "samples_in_spike": 9,
+  "no3_in_spike_over_typical": 2.7,
+  "bc_in_spike_over_typical": 6.2,
+  "years_to_katmai_sulphur_peak": 8.8,
+  "largest_sample_by_year": {
+   "1906": 22.7,
+   "1907": 3.6,
+   "1908": 1.0,
+   "1909": 2.1,
+   "1910": 0.3
+  }
+ },
+ "tunu_n": {
+  "site": "Tunu",
+  "peak_date": 1906.22,
+  "peak_over_typical_sample": 38.6,
+  "spike_from": 1905.9,
+  "spike_to": 1906.34,
+  "samples_in_spike": 8,
+  "no3_in_spike_over_typical": 4.4,
+  "years_to_katmai_sulphur_peak": 9.6,
+  "largest_sample_by_year": {
+   "1906": 38.6,
+   "1907": 3.2,
+   "1908": 1.4,
+   "1909": 8.5,
+   "1910": 0.7
+  }
+ },
+ "humboldt": {
+  "site": "Humboldt",
+  "peak_date": 1909.92,
+  "peak_over_typical_sample": 2.7,
+  "spike_from": 1909.92,
+  "spike_to": 1909.92,
+  "samples_in_spike": 1,
+  "no3_in_spike_over_typical": 0.7,
+  "bc_in_spike_over_typical": 0.4,
+  "years_to_katmai_sulphur_peak": 2.4,
+  "largest_sample_by_year": {
+   "1906": 1.9,
+   "1907": 0.6,
+   "1908": 1.8,
+   "1909": 2.7,
+   "1910": 2.2
+  }
+ },
+ "act11d": {
+  "site": "ACT11d",
+  "peak_date": 1909.74,
+  "peak_over_typical_sample": 8.9,
+  "spike_from": 1909.29,
+  "spike_to": 1909.97,
+  "samples_in_spike": 10,
+  "no3_in_spike_over_typical": 2.1,
+  "years_to_katmai_sulphur_peak": 3.9,
+  "largest_sample_by_year": {
+   "1906": 0.9,
+   "1907": 1.9,
+   "1908": 0.9,
+   "1909": 8.9,
+   "1910": 2.5
+  }
+ },
+ "ht95": {
+  "site": "Hans Tausen",
+  "peak_date": 1908.65,
+  "peak_over_typical_sample": 0.9,
+  "spike_from": 1908.65,
+  "spike_to": 1908.65,
+  "samples_in_spike": 1,
+  "no3_in_spike_over_typical": 1.1,
+  "bc_in_spike_over_typical": 4.1,
+  "years_to_katmai_sulphur_peak": 5.5,
+  "largest_sample_by_year": {
+   "1906": 0.5,
+   "1907": 0.8,
+   "1908": 0.9,
+   "1909": 0.7,
+   "1910": 0.7
+  }
+ },
+ "negis": {
+  "site": "NEGIS",
+  "peak_date": 1908.6,
+  "peak_over_typical_sample": 31.6,
+  "spike_from": 1908.34,
+  "spike_to": 1908.82,
+  "samples_in_spike": 65,
+  "largest_sample_by_year": {
+   "1906": 9.1,
+   "1907": 2.8,
+   "1908": 31.6,
+   "1909": 6.6,
+   "1910": 3.6
+  }
+ },
+ "ngrip1": {
+  "site": "NGRIP",
+  "peak_date": 1909.0,
+  "peak_over_typical_sample": 3.3,
+  "spike_from": 1909.0,
+  "spike_to": 1909.0,
+  "samples_in_spike": 1,
+  "no3_in_spike_over_typical": 1.2,
+  "years_to_katmai_sulphur_peak": 4.3,
+  "largest_sample_by_year": {
+   "1906": 1.9,
+   "1907": 0.9,
+   "1908": 2.2,
+   "1909": 3.3,
+   "1910": 2.1
+  }
+ },
+ "b20": {
+  "site": "B20",
+  "peak_date": 1908.25,
+  "peak_over_typical_sample": 1.7,
+  "spike_from": 1908.25,
+  "spike_to": 1908.25,
+  "samples_in_spike": 1,
+  "no3_in_spike_over_typical": 1.3,
+  "years_to_katmai_sulphur_peak": 7.5,
+  "largest_sample_by_year": {
+   "1906": 1.1,
+   "1907": 0.9,
+   "1908": 1.7,
+   "1909": 1.1,
+   "1910": 1.0
+  }
+ },
+ "summit2010": {
+  "site": "Summit",
+  "peak_date": 1908.98,
+  "peak_over_typical_sample": 50.1,
+  "spike_from": 1908.98,
+  "spike_to": 1909.16,
+  "samples_in_spike": 4,
+  "no3_in_spike_over_typical": 1.7,
+  "bc_in_spike_over_typical": 2.7,
+  "years_to_katmai_sulphur_peak": 4.2,
+  "largest_sample_by_year": {
+   "1906": 2.6,
+   "1907": 1.6,
+   "1908": 50.1,
+   "1909": 24.9,
+   "1910": 2.6
+  }
+ },
+ "summit2023": {
+  "site": "Summit",
+  "peak_date": 1908.44,
+  "peak_over_typical_sample": 15.3,
+  "spike_from": 1908.26,
+  "spike_to": 1908.81,
+  "samples_in_spike": 7,
+  "no3_in_spike_over_typical": 2.1,
+  "bc_in_spike_over_typical": 4.0,
+  "years_to_katmai_sulphur_peak": 4.2,
+  "largest_sample_by_year": {
+   "1906": 5.3,
+   "1907": 1.2,
+   "1908": 15.3,
+   "1909": 2.4,
+   "1910": 1.5
+  }
+ }
+}

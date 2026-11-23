@@ -1,0 +1,142 @@
+{
+ "3-year from 1907, site-max": {
+  "windows": 35,
+  "jitter 0.0, pulse 0.5": [
+   0.01,
+   0.07
+  ],
+  "jitter 0.0, pulse 1.0": [
+   0.04,
+   0.12
+  ],
+  "jitter 0.0, pulse 2.0": [
+   0.36,
+   0.57
+  ],
+  "jitter 0.0, pulse 4.0": [
+   1.0,
+   1.0
+  ],
+  "jitter 0.15, pulse 0.5": [
+   0.05,
+   0.11
+  ],
+  "jitter 0.15, pulse 1.0": [
+   0.05,
+   0.13
+  ],
+  "jitter 0.15, pulse 2.0": [
+   0.19,
+   0.42
+  ],
+  "jitter 0.15, pulse 4.0": [
+   0.85,
+   0.9
+  ]
+ },
+ "3-year from 1907, year-mean": {
+  "windows": 35,
+  "jitter 0.0, pulse 0.5": [
+   0.01,
+   0.07
+  ],
+  "jitter 0.0, pulse 1.0": [
+   0.02,
+   0.17
+  ],
+  "jitter 0.0, pulse 2.0": [
+   0.21,
+   0.71
+  ],
+  "jitter 0.0, pulse 4.0": [
+   1.0,
+   1.0
+  ],
+  "jitter 0.15, pulse 0.5": [
+   0.02,
+   0.09
+  ],
+  "jitter 0.15, pulse 1.0": [
+   0.05,
+   0.11
+  ],
+  "jitter 0.15, pulse 2.0": [
+   0.13,
+   0.32
+  ],
+  "jitter 0.15, pulse 4.0": [
+   0.47,
+   0.7
+  ]
+ },
+ "2-year from 1908, site-max": {
+  "windows": 53,
+  "jitter 0.0, pulse 0.5": [
+   0.0,
+   0.19
+  ],
+  "jitter 0.0, pulse 1.0": [
+   0.0,
+   0.35
+  ],
+  "jitter 0.0, pulse 2.0": [
+   0.03,
+   0.95
+  ],
+  "jitter 0.0, pulse 4.0": [
+   0.56,
+   1.0
+  ],
+  "jitter 0.15, pulse 0.5": [
+   0.0,
+   0.19
+  ],
+  "jitter 0.15, pulse 1.0": [
+   0.0,
+   0.27
+  ],
+  "jitter 0.15, pulse 2.0": [
+   0.02,
+   0.7
+  ],
+  "jitter 0.15, pulse 4.0": [
+   0.3,
+   0.95
+  ]
+ },
+ "2-year from 1908, year-mean": {
+  "windows": 53,
+  "jitter 0.0, pulse 0.5": [
+   0.0,
+   0.19
+  ],
+  "jitter 0.0, pulse 1.0": [
+   0.02,
+   0.33
+  ],
+  "jitter 0.0, pulse 2.0": [
+   0.18,
+   1.0
+  ],
+  "jitter 0.0, pulse 4.0": [
+   0.96,
+   1.0
+  ],
+  "jitter 0.15, pulse 0.5": [
+   0.01,
+   0.11
+  ],
+  "jitter 0.15, pulse 1.0": [
+   0.01,
+   0.29
+  ],
+  "jitter 0.15, pulse 2.0": [
+   0.06,
+   0.57
+  ],
+  "jitter 0.15, pulse 4.0": [
+   0.42,
+   0.87
+  ]
+ }
+}

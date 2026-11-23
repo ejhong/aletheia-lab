@@ -1,0 +1,4 @@
+data/
+.venv
+replication/work/
+__pycache__/

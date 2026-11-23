@@ -3,8 +3,8 @@
 # The scorecard, tiles and timeline are made by scripts/make_topic_figures.py; rerun it when a result changes.
 # "image:" names a picture in site/assets/illustrations/ (made by scripts/make_illustrations.py).
 title: The Younger Dryas impact hypothesis
-summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Six studies each test one mark such an event should have left.
-questions: 43, 60, 69, 75, 76, 40, 100
+summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Seven studies each test one mark such an event should have left.
+questions: 43, 60, 69, 75, 76, 100, 40
 order: 1
 atlas: ydih
 atlas_title: Fire From the Sky
@@ -110,13 +110,15 @@ This version is harder to test, because it predicts no single sharp mark. Set ag
 
 **What would test it properly.** The stream is said to have crossed the Earth's path many times over thousands of years. Each crossing should have left the same marks. Platinum, or the cosmic dust that a disintegrating comet sheds, measured right through the ice age and not only at this one layer, would show whether such crossings happened and whether coolings followed them. Nobody has made that measurement, and it is beyond what public data allow.
 
-One step public data may allow is to calibrate on the airburst we know. Tunguska, in June 1908, fell within the dates of a Taurid shower. If it left a mark in Greenland ice, that mark can be scaled up, and the ice at the start of the Younger Dryas then limits how many such events a year there can have been. If it left none, the ice cannot see single airbursts, and our check for fire spikes says less than it seems to. That study is proposed and not yet run.
+**Calibrating on the airburst we know.** Tunguska, in June 1908, fell within the dates of a Taurid shower, and a published paper says it left an ammonium spike in ice from Greenland's summit. We looked for it in the rest of Greenland, with the test fixed before the layers of 1908 were opened. Averaged over six sites, 1908 is an ordinary year. Site by site it is not: a sharp spike with soot at two of the six and at the summit, nothing in the north-west. That is how smoke arrives, and the ice cannot say whether Tunguska or that summer's forest fires made it.
+
+Either way it bears on this version of the hypothesis. If the spike was Tunguska's, an airburst leaves a sharp spike, and a century of airbursts would fill the ice with them; the ice of that century has fewer than usual. If it was the summer's fires, Tunguska left nothing the ice can see. Read more: [the Tunguska study](../../questions/tunguska-calibration/).
 
 ## What the studies add up to
 
 The records do hold real disturbances around the start of the Younger Dryas: a century of high ammonium, a platinum layer, a heavy run of eruptions. What they do not hold is the signature of a single catastrophic day. The marks that exist are spread over two centuries, they arrive in the wrong order for a trigger, and the ones that can be compared with other coolings turn out to be large examples of something the ice age did repeatedly.
 
-Of the two accounts, the ordinary one fits these six tests better. The strongest single finding in its favour is the run of eruptions just before the cold, and even that is a coincidence in time, not a demonstrated cause.
+Of the two accounts, the ordinary one fits these seven tests better. The strongest single finding in its favour is the run of eruptions just before the cold, and even that is a coincidence in time, not a demonstrated cause.
 
 The hypothesis is not refuted by this. Its fiery, world-burning form finds no support here, whether the fire came in a day or over years. A smaller event or series of events, one that left platinum on the ice and little else, is not excluded by anything on this page.
 
