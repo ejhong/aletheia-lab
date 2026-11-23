@@ -5,3 +5,4 @@ statement lean/GodelArgument/Statement2.lean 350ba9ec29adfc5625451294ad8ed6d2595
 statement lean/GodelArgument/Statement3.lean 67a343bdb51780d328184c995f9ad2a406fe65acddd6798a71343155a92aafa0 2026-11-23T03:30:51Z
 statement lean/GodelArgument/Statement4.lean 060ba8877201c173b9fe8569312a651cd2e299e845dbbc7fd133028862b39098 2026-11-23T05:07:22Z
 statement lean/GodelArgument/Statement5.lean 94cf5173e7479a434b2570b638ec33b102a36385ba938dd2c070e76a6da472d6 2026-11-23T06:35:15Z
+statement lean/GodelArgument/Statement6.lean 7f476a751e3416eb87194ffeb0b0c72b135ebded3914424c29a0ae88431dfda4 2026-11-23T14:51:14Z

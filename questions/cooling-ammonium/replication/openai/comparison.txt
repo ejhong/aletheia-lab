@@ -1,0 +1,13 @@
+rows: ours 100, theirs 100, shared 100
+  D: 100/100 agree
+  D_pct: 100/100 agree
+  P: 100/100 agree
+  P_pct: 100/100 agree
+  R: 100/100 agree
+  R_pct: 100/100 agree
+  H: 84/84 agree
+coolings: same list
+general: ours 'mixed' theirs 'mixed'
+younger_dryas: ours 'among the largest' theirs 'among the largest'
+rank: ours {'NGRIP': 2, 'NEEM': 3} theirs {'NGRIP': 2, 'NEEM': 3}
+quiet times: ours {'ammonium': {'NGRIP': 3054, 'NEEM': 3031}, 'calcium': {'NGRIP': 3072, 'NEEM': 3058}} theirs {'ammonium': {'NGRIP': 3054, 'NEEM': 3031}, 'calcium': {'NGRIP': 3072, 'NEEM': 3058}}

@@ -1,0 +1,35 @@
+{
+  "id": "S5a",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:39:12Z",
+  "target": "def Target : Prop :=\n  ∃ _ : Theory.RE Def9,\n    Def4 Def9.theory ∧ Def2 (Def7 Def9) ∧\n      (∼Def7 𝗣𝗔) ∈ Def9.theory ∧ ¬ Def2 (∼Def7 𝗣𝗔)\n",
+  "usage": [
+    [
+      2948,
+      365
+    ],
+    [
+      4006,
+      530
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For a recursively enumerable arithmetic axiom set A, write C(A) for the arithmetic sentence saying that no contradiction is provable from the Craig presentation of A. Let B be PA with the single additional axiom ¬C(PA). Target says that there exists a witness that B is recursively enumerable such that, using that witness to form C(B), all four conditions hold: (1) the set of all theorems of B, itself used as an axiom set, does not prove a contradiction; (2) C(B) is true in the standard natural numbers; (3) ¬C(PA) belongs to the set of theorems of B; and (4) that same sentence, ¬C(PA), is not true in the standard natural numbers. Condition (2) does not require B to prove C(B).\"}",
+  "translation": "For a recursively enumerable arithmetic axiom set A, write C(A) for the arithmetic sentence saying that no contradiction is provable from the Craig presentation of A. Let B be PA with the single additional axiom ¬C(PA). Target says that there exists a witness that B is recursively enumerable such that, using that witness to form C(B), all four conditions hold: (1) the set of all theorems of B, itself used as an axiom set, does not prove a contradiction; (2) C(B) is true in the standard natural numbers; (3) ¬C(PA) belongs to the set of theorems of B; and (4) that same sentence, ¬C(PA), is not true in the standard natural numbers. Condition (2) does not require B to prove C(B).",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"`Def7` uses the consistency sentence of a Craig presentation, both for PA and for `Def9`. This need not be syntactically identical to a consistency sentence built from the original axioms, but the Craig presentation has the same theorems, so it expresses the intended consistency in the standard model.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"`Def4 Def9.theory` asserts consistency of the theorems of `Def9` used as axioms, rather than consistency of `Def9` directly. These are equivalent because taking deductive closure does not change what is provable.\"\n    }\n  ],\n  \"summary\": \"The target gives the claimed standard-model counterexample: `Def9` is recursively enumerable and consistent, its consistency sentence is true, and it proves the false arithmetic sentence `∼Def7 𝗣𝗔`. Thus the quoted implication fails on the arithmetic-truth reading; the target makes no claim about what DTK proves.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "`Def7` uses the consistency sentence of a Craig presentation, both for PA and for `Def9`. This need not be syntactically identical to a consistency sentence built from the original axioms, but the Craig presentation has the same theorems, so it expresses the intended consistency in the standard model."
+      },
+      {
+        "severity": "minor",
+        "description": "`Def4 Def9.theory` asserts consistency of the theorems of `Def9` used as axioms, rather than consistency of `Def9` directly. These are equivalent because taking deductive closure does not change what is provable."
+      }
+    ],
+    "summary": "The target gives the claimed standard-model counterexample: `Def9` is recursively enumerable and consistent, its consistency sentence is true, and it proves the false arithmetic sentence `∼Def7 𝗣𝗔`. Thus the quoted implication fails on the arithmetic-truth reading; the target makes no claim about what DTK proves."
+  }
+}

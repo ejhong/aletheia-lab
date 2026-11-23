@@ -2,11 +2,13 @@
 # To update this page, edit this file and push to main; the site rebuilds itself.
 # The figures are made by questions/strangers/analysis/make_figures.py from the results files.
 summary: Before Columbus, was anyone buried on one side of an ocean whose DNA belongs on the other? A search of 12,977 ancient people.
+verdict: No strangers found
+result: Among 12,977 ancient people, nobody before Columbus is buried on the wrong side of an ocean except the medieval Norse of Greenland. Ancient Siberians resemble Native Americans through shared Ice Age ancestors, not through travel. The one person left unexplained was checked in her raw DNA, which points to modern contamination.
 dek: If people crossed the oceans in deep antiquity and settled among those they met, some of them should turn up in graves on the far shore with the wrong ancestry for the place. We searched 12,977 ancient people for exactly that, with the plan locked before any result existed.
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Finished. No one is buried on the wrong side of an ocean except people already known to be there, the medieval Norse of Greenland above all. One woman from Copper Age Romania is left unexplained, and she probably is not what the question was looking for.
+> **Where things stand, 23 November 2026.** Finished. No one is buried on the wrong side of an ocean except people already known to be there, the medieval Norse of Greenland above all. The scan left one woman from Copper Age Romania unexplained. A check of her raw DNA, added afterwards, points to modern contamination.
 
 ## What we figured out
 
@@ -16,7 +18,7 @@ We took every usable ancient person in one large public collection of ancient DN
 
 1. **In the Americas, nobody.** Of 728 people, the only ones with Old World ancestry are the 11 medieval Norse of Greenland, whom history already records. Four Arctic people lean toward East Asia, which is their known Siberian ancestry. No European, African or Pacific islander turns up anywhere else before Columbus.
 2. **Outside the Americas, many people resemble Native Americans, and almost none of it is what it looks like.** 163 people were flagged. Nearly all are ancient Siberians and steppe peoples. They resemble Native Americans because both descend from the same Ice Age populations of northern Asia, not because anyone came back across the sea.
-3. **One person is left over.** A woman buried at Pietrele in Romania around 4500 BCE has a small lean toward Native Americans and East Asians that none of our explanations covers. It is about what 3% of such ancestry would give. Contamination by a modern person, or plain chance among thirteen thousand people, are the likely causes. Even taken at face value it points to north-east Asia, not America.
+3. **One person was left over, and her DNA has now been checked.** A woman buried at Pietrele in Romania around 4500 BCE has a small lean toward Native Americans and East Asians that none of our explanations covered. It is about what 3% of such ancestry would give. We went back to her raw DNA: the lean is strong in her long DNA fragments and nearly absent in her short ones. Old DNA is short and modern DNA is long, so this is the mark of a modern person's DNA on the sample, not of her own ancestry.
 4. **The early civilisations share nothing we can detect**, where there is anything to test. Egypt has two people in this collection, Mesopotamia eleven, and no Indus city has any.
 
 In short: where the record lets us look, there are no strangers.
@@ -51,13 +53,30 @@ She was buried at Pietrele on the lower Danube, in a farming community of the Gu
 
 {{figure: strangers/profile}}
 
-Three readings are possible, and the public data cannot choose between them.
+Three readings are possible.
 
-- **Contamination.** A few percent of DNA from a modern person with East Asian or Native American ancestry, picked up in excavation, storage or the laboratory, would look just like this. She is female, so the usual check on the X chromosome does not exist for her.
-- **Chance.** The statistic has heavier tails than it should. Ninety-nine people pass the threshold in this direction and 71 fall as far in the opposite direction, where no explanation by ancestry applies. One oddity of this size among twelve thousand is not strange.
-- **A real trace of north-east Asian ancestry** in Copper Age Europe. That would be a surprise, and a matter for the history of Eurasia. No ocean is involved.
+- **Chance.** This has the best support. The statistic has heavier tails than it should. Ninety-nine people pass the threshold in this direction and 71 fall as far in the opposite direction, where no explanation by ancestry applies. One oddity of this size among twelve thousand is not strange.
+- **Contamination.** A few percent of DNA from a modern person with East Asian or Native American ancestry, picked up in excavation, storage or the laboratory, would look just like this. It is the usual explanation for a small surprise in one person, which is a habit of thought and not a finding. The one check available argues against it: the DNA passed down her mother's line is 99.5 to 99.7% of one type, the same as her neighbours in the cemetery, and a contaminant with that ancestry would usually bring a different type. The check is not decisive, and the usual one, on the X chromosome, does not exist for a woman.
+- **A real trace of north-east Asian ancestry** in Copper Age Europe. Not ruled out. It would be a surprise, and a matter for the history of Eurasia. No ocean is involved.
 
-The laboratory that produced her data could check the first by going back to the raw sequences. Whether to ask them is Eugene's decision.
+**Corrected on 23 November 2026.** The first version of this page called contamination and chance "the likely causes". Eugene asked why a real anomaly had been set aside. He was right that it was an assumption. The check on her mother's line was in the data all along and points against contamination; the list above ranks the three readings as they stood before we looked further.
+
+### Then we looked at her DNA itself
+
+The laboratory that sequenced her put the raw reads in a public archive, so the question could be put to the data.
+
+DNA from someone who died 6,500 years ago survives in short pieces. DNA from a living person who touched the bone, or the sample in the laboratory, is mostly in longer pieces. So we sorted her DNA fragments by length and asked the same question of each pile. If the lean is in her own genome, every pile should show it. If it came from a modern person, it should be in the long pile. The piles, the measure and the rule were written down and published before anything was computed.
+
+{{figure: strangers/fragments}}
+
+- **Her short fragments** show a weak lean that could be nothing (Z = 1.5).
+- **Her long fragments** show a strong one (Z = 6.5), five times the size.
+- **Four other people from the same cemetery**, measured the same way, show nothing in either pile.
+- She also has far more long fragments than they do: 27% of her data, against 5 to 18% of theirs.
+
+This is what DNA from a modern person with Native American or East Asian ancestry would look like. It is not what her own ancestry would look like, and it is not what a chance oddity of her own genome would look like. Contamination is now the best-supported reading, and this time on evidence.
+
+Two things stay open. The check on her mother's line still points the other way; the two fit together if the contaminant happens to share her maternal type, and we have not resolved it. And the more usual test, which looks for the chemical damage of old DNA, could not be run, because the public file hides the part of each fragment where that damage sits.
 
 ## Could the search have missed someone?
 
@@ -89,9 +108,11 @@ Where there were enough people, we asked whether a whole group leans toward the 
 - **Public data.** The Allen Ancient DNA Resource, release v66.p1, in the public domain.
 - **The plan was locked first**, after two other vendors' models had criticised it. Their review showed that the first design could not have seen a foreign community buried together, and could not have seen an African in the Americas at all. The design was rebuilt before anything was computed.
 - **Replicated.** OpenAI's model wrote its own program from the written plan. It gave the same neighbours for all 12,977 people and the same 183 flags.
-- **Cost.** $1.89.
+- **Cost.** $1.89. The later check on her DNA cost nothing.
 
 ## What went wrong
+
+- **We assumed before we tested.** The first write-up put the one leftover person down to contamination as the likely cause, with no evidence for it and one piece of evidence against. Eugene asked why. The reads were public all along; when we tested them, they did point to contamination. The conclusion survived, but it had not been earned.
 
 - **The plan had no way to tell kin from travellers.** It warned that Siberian relatives would be flagged and gave no test for them. One was added after the results were seen, and is labelled as an amendment.
 - **Our program skipped 219 people** in one of the two tests, against the plan's own wording. The replication exposed it. The whole search was rerun with them, which added four flags, all explained. The first run is kept beside the corrected one.

@@ -1,0 +1,26 @@
+{
+  "id": "S5b",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:39:31Z",
+  "target": "def Target : Prop :=\n  ∃ _ : Theory.RE Def9,\n    (∀ K : Def1, Def3 K → ∃ σ, σ ∈ Def9.theory ∧ σ ∉ K) ∧\n    (∃ K : Def1, Def6 K ∧ Def3 K ∧ Def8 K ∧ 𝗣𝗔.theory ⊆ K ∧ Def7 Def9 ∈ K)\n",
+  "usage": [
+    [
+      2971,
+      558
+    ],
+    [
+      4230,
+      680
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For a recursively enumerable arithmetic axiom set F, let C(F) be the arithmetic sentence saying that falsehood is not provable from the Δ₁ axiom presentation obtained by Craig’s trick from F. Let A be the PA axioms together with the single additional axiom ¬C(PA). Target is the proposition that there is a witness that A is recursively enumerable and, with this witness used to form C(A), both of the following hold. (1) For every set K of arithmetic sentences, if every member of K is true in the standard natural numbers, then there is a sentence σ provable from A that is not a member of K. Here σ may depend on K; K need not be effectively presented or deductively closed, and the conclusion is nonmembership, not unprovability from K. (2) There exists a set K of arithmetic sentences such that there exists a recursively enumerable arithmetic axiom set F whose set of theorems is exactly K; every member of K is true in the standard natural numbers; every sentence provable using K as axioms belongs to K; every theorem of PA belongs to K (not necessarily a strict inclusion); and C(A) belongs to K.\"}",
+  "translation": "For a recursively enumerable arithmetic axiom set F, let C(F) be the arithmetic sentence saying that falsehood is not provable from the Δ₁ axiom presentation obtained by Craig’s trick from F. Let A be the PA axioms together with the single additional axiom ¬C(PA). Target is the proposition that there is a witness that A is recursively enumerable and, with this witness used to form C(A), both of the following hold. (1) For every set K of arithmetic sentences, if every member of K is true in the standard natural numbers, then there is a sentence σ provable from A that is not a member of K. Here σ may depend on K; K need not be effectively presented or deductively closed, and the conclusion is nonmembership, not unprovability from K. (2) There exists a set K of arithmetic sentences such that there exists a recursively enumerable arithmetic axiom set F whose set of theorems is exactly K; every member of K is true in the standard natural numbers; every sentence provable using K as axioms belongs to K; every theorem of PA belongs to K (not necessarily a strict inclusion); and C(A) belongs to K.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The TARGET states both (i) and (ii) for the same system A = PA + ¬Con(PA), using Craig presentations for the consistency sentences. Applying (i) to the sound mind K from (ii) gives an A-theorem outside K even though Con(A) belongs to K, contradicting the set-level implication without making any claim about DTK.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The TARGET states both (i) and (ii) for the same system A = PA + ¬Con(PA), using Craig presentations for the consistency sentences. Applying (i) to the sound mind K from (ii) gives an A-theorem outside K even though Con(A) belongs to K, contradicting the set-level implication without making any claim about DTK."
+  }
+}

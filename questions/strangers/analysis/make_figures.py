@@ -83,12 +83,12 @@ def world_map():
     note(-170.4, 66.1, "Chukotka", 16, -22)
     note(84, 53.3, "Siberia and the steppe", 38, -40)
     note(77.8, 21.6, "A Cuban, mis-recorded here", 22, 46)
-    note(26.2, 44.1, "Pietrele: one person unexplained", -34, 58, "end")
+    note(26.2, 44.1, "Pietrele: the one left over", -34, 58, "end")
     o.append("</svg>")
     figure("map", "Where the tested people were buried, and who was flagged", "\n".join(o),
            "Small grey dots: places with at least one of the 12,977 people tested. Copper dots: people flagged by the scan; larger dots "
            "are five or more at one place. Nearly all lie across Siberia and the steppe, where ancient people share Ice Age ancestors "
-           "with Native Americans. The ring marks the one person left unexplained. Hover or focus a dot for who it is.")
+           "with Native Americans. The ring marks the one person the scan left unexplained. Hover or focus a dot for who it is.")
 
 
 def profile():
@@ -125,10 +125,50 @@ def profile():
            "leans toward Japanese and Han almost as much, so it points to north-east Asia in general, not to the Americas.", legend)
 
 
+def fragments():
+    """S by length of DNA fragment: the Pietrele woman and four others from the same cemetery (Amendment 3)."""
+    a = json.load(open(R / "amended3" / "summary.json"))
+    c = json.load(open(R / "amended3" / "controls_exploratory.json"))
+    groups = [("The woman from Pietrele", [("Short fragments (60 or fewer)", a["classes"]["short (60 or fewer)"]["S"]),
+                                           ("Middle (61 to 75)", a["classes"]["middle (61 to 75)"]["S"]),
+                                           ("Long (76: the whole read)", a["classes"]["long (76)"]["S"])])]
+    for gid, d in c.items():
+        groups.append((f"Another person, same cemetery ({gid.split('.')[0]})", [("Short fragments", d["classes"]["short (60 or fewer)"]["S"]),
+                                                                              ("Long", d["classes"]["long (76)"]["S"])]))
+    W, label_w, right, x0, x1 = 720, 232, 640, -1.0, 3.0
+    sx = lambda v: label_w + (v - x0) / (x1 - x0) * (right - label_w)
+    row_h, group_h, top = 26, 30, 4
+    H = top + sum(group_h + row_h * len(rows) for _, rows in groups) + 46
+    bottom = H - 42
+    o = [f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-label="The lean toward Native Americans by length of DNA fragment" xmlns="http://www.w3.org/2000/svg">']
+    for t in (-1, 0, 1, 2, 3):
+        o.append(f'<line class="{"c-zero" if t == 0 else "c-grid"}" x1="{sx(t):.1f}" x2="{sx(t):.1f}" y1="{top + 22}" y2="{bottom}"/>')
+        o.append(f'<text class="c-tick" x="{sx(t):.1f}" y="{bottom + 16}" text-anchor="middle">{str(t).replace("-", "−")}</text>')
+    o.append(f'<text class="c-axis" x="{label_w}" y="{bottom + 34}">Lean toward Native Americans beyond what the neighbours show (S, in thousandths)</text>')
+    y = top
+    for g, (title, rows) in enumerate(groups):
+        o.append(f'<text class="c-group" x="0" y="{y + 20}">{esc(title)}</text>')
+        y += group_h
+        for label, st in rows:
+            v, se, cy = st["f4"] * 1000, st["se"] * 1000, y + row_h / 2
+            tip = esc(f"{title}|{label}|S = {num(v, 2)} ± {num(se, 2)} thousandths|Z = {num(st['z'], 1)}")
+            o.append(f'<g class="c-mark" tabindex="0" data-tip="{tip}"><rect class="c-hit" x="0" y="{y}" width="{W}" height="{row_h}"/>'
+                     f'<text class="c-label" x="12" y="{cy + 4:.1f}">{esc(label)}</text>'
+                     f'<line class="c-whisker" x1="{sx(v - se):.1f}" x2="{sx(v + se):.1f}" y1="{cy:.1f}" y2="{cy:.1f}"/>'
+                     f'<circle class="c-dot{"" if g == 0 else " c-hollow"}" cx="{sx(v):.1f}" cy="{cy:.1f}" r="5"/>'
+                     f'<text class="c-value" x="{right + 14}" y="{cy + 4:.1f}">Z {num(st["z"], 1)}</text></g>')
+            y += row_h
+    o.append("</svg>")
+    figure("fragments", "The lean toward Native Americans by length of DNA fragment", "\n".join(o),
+           "Old DNA is in short pieces; a modern person's is mostly in long ones. If the lean were in her own genome, her short and "
+           "long fragments would show it alike. It is weak in the short fragments and strong in the long ones. Four others from the "
+           "same cemetery, measured the same way, show nothing either way. Bars are one standard error. Hover or focus a row for the numbers.")
+
+
 def tiles():
     s = json.load(open(R / "summary.json"))
     t = [(f"{s['people']:,}", "ancient people tested, all buried before 1450 CE"), ("178", "flagged by the scan"),
-         ("177", "explained: known groups, shared Ice Age ancestry, a recording error"), ("1", "left unexplained")]
+         ("177", "explained: known groups, shared Ice Age ancestry, a recording error"), ("1", "left over by the scan; her raw DNA points to modern contamination")]
     (OUT / "tiles.html").write_text('<div class="tiles">\n' + "\n".join(
         f'<div class="tile"><p class="tile-value">{esc(v)}</p><p class="tile-label">{esc(l)}</p></div>' for v, l in t) + "\n</div>\n")
 
@@ -138,6 +178,7 @@ def main():
     tiles()
     world_map()
     profile()
+    fragments()
     print("wrote", ", ".join(sorted(p.name for p in OUT.iterdir())), [p.stat().st_size for p in sorted(OUT.iterdir())])
 
 

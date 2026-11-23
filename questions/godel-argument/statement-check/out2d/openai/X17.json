@@ -1,0 +1,31 @@
+{
+  "id": "X17",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:39:12Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (conF φ : Fm),\n    Def10 𝓢 K →\n    𝓢 ⊢ conF 🡒 F φ 🡒 φ →\n    𝓢 ⊢ F φ 🡒 K (F φ) →\n    𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF\n",
+  "usage": [
+    [
+      3022,
+      403
+    ],
+    [
+      4394,
+      489
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every sentence type Fm and system type S, with implication, conjunction, disjunction, negation, truth and falsehood on Fm and a provability relation for systems in S on sentences in Fm; for every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens; for every pair of functions K and F from Fm to Fm; and for every pair of sentences conF and φ, suppose that (1) for every pair of sentences α and β, 𝓢 proves K(α → β) → (K(α) → K(β)); (2) 𝓢 proves conF → (F(φ) → φ); and (3) 𝓢 proves F(φ) → K(F(φ)). Then 𝓢 proves (¬K(φ) ∧ F(φ)) → ¬K(conF). All connectives in the displayed formulas are sentence connectives: the conclusion requires a proof of the implication, not a proof of its antecedent. The last two hypotheses concern the chosen sentences, not a scheme for all φ. Nothing requires conF to express consistency, 𝓢 to be consistent, or K to take every provable sentence to a provable sentence.\"}",
+  "translation": "Target is defined to be the following proposition. For every sentence type Fm and system type S, with implication, conjunction, disjunction, negation, truth and falsehood on Fm and a provability relation for systems in S on sentences in Fm; for every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens; for every pair of functions K and F from Fm to Fm; and for every pair of sentences conF and φ, suppose that (1) for every pair of sentences α and β, 𝓢 proves K(α → β) → (K(α) → K(β)); (2) 𝓢 proves conF → (F(φ) → φ); and (3) 𝓢 proves F(φ) → K(F(φ)). Then 𝓢 proves (¬K(φ) ∧ F(φ)) → ¬K(conF). All connectives in the displayed formulas are sentence connectives: the conclusion requires a proof of the implication, not a proof of its antecedent. The last two hypotheses concern the chosen sentences, not a scheme for all φ. Nothing requires conF to express consistency, 𝓢 to be consistent, or K to take every provable sentence to a provable sentence.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The second hypothesis is `𝓢 ⊢ conF 🡒 (F φ 🡒 φ)`, but the claimed single-sentence version of the K-intro line is `𝓢 ⊢ K (conF 🡒 (F φ 🡒 φ))`. Distributivity needs the latter to derive `𝓢 ⊢ K conF 🡒 K (F φ 🡒 φ)`. Neither classical propositional logic nor `Def10` licenses adding the missing outer `K` to a proved sentence.\"\n    }\n  ],\n  \"summary\": \"The distributivity hypothesis, line (∗), and the conclusion match the intended single-sentence rendering. The missing outer `K` is material: the target assumes the implication is provable, not that it is provably known.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The second hypothesis is `𝓢 ⊢ conF 🡒 (F φ 🡒 φ)`, but the claimed single-sentence version of the K-intro line is `𝓢 ⊢ K (conF 🡒 (F φ 🡒 φ))`. Distributivity needs the latter to derive `𝓢 ⊢ K conF 🡒 K (F φ 🡒 φ)`. Neither classical propositional logic nor `Def10` licenses adding the missing outer `K` to a proved sentence."
+      }
+    ],
+    "summary": "The distributivity hypothesis, line (∗), and the conclusion match the intended single-sentence rendering. The missing outer `K` is material: the target assumes the implication is provable, not that it is provably known."
+  }
+}

@@ -876,3 +876,14 @@ details.more > summary:focus-visible { outline: 2px solid var(--copper); outline
   .route-arrow { width: 1.5px; height: 1.4rem; margin-left: .3rem; }
   .route-arrow::after { right: auto; left: 50%; top: auto; bottom: -1px; transform: translateX(-50%) rotate(135deg); }
 }
+
+/* The outcome of a question, shown in the list on the home page. */
+.q-result { margin: .85rem 0 .1rem; padding: .7rem 0 .15rem 1rem; border-left: 2px solid var(--copper); max-width: 46rem; }
+.q-result .label { margin: 0 0 .3rem; color: var(--copper); }
+.q-verdict { margin: 0 0 .3rem; font: 400 1.18rem/1.3 var(--serif); color: var(--ink); letter-spacing: -.005em; }
+.q-result-text { margin: 0; font-size: .95rem; line-height: 1.55; color: var(--ink-soft); }
+.q-group.is-active .q-verdict { font-size: 1.3rem; }
+.chart .c-line { fill: none; stroke: var(--copper); stroke-width: 2; stroke-linejoin: round; }
+.chart .c-line-ctx { fill: none; stroke: var(--faint); stroke-width: 2; stroke-linejoin: round; }
+.chart .c-area-ctx { fill: var(--faint); opacity: .16; stroke: none; }
+.chart .c-dot.c-ctx-hollow { fill: var(--paper); stroke: var(--faint); stroke-width: 1.5; opacity: .75; }

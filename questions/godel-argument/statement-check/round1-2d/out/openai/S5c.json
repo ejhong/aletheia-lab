@@ -1,0 +1,39 @@
+{
+  "id": "S5c",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:39:12Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (conF φ : Fm),\n    Def10 𝓢 K →\n    𝓢 ⊢ K (conF 🡒 F φ 🡒 φ) →\n    𝓢 ⊢ F φ 🡒 K (F φ) →\n    𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF\n",
+  "usage": [
+    [
+      3025,
+      368
+    ],
+    [
+      4384,
+      2250
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the following proposition. For every sentence type Fm and system type S, with implication, conjunction, disjunction, negation, truth and falsehood on Fm and a provability relation on Fm for systems in S; for every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens; for every pair of functions K and F from sentences to sentences; and for every pair of sentences conF and φ, suppose that (1) for every pair of sentences α and β, 𝓢 proves ‘K(α implies β) implies (K(α) implies K(β))’; (2) 𝓢 proves K applied to the entire sentence ‘conF implies (F(φ) implies φ)’; and (3) 𝓢 proves ‘F(φ) implies K(F(φ))’. Then 𝓢 proves the single implication ‘(not K(φ) and F(φ)) implies not K(conF)’. Hypotheses (2) and (3) concern the chosen sentences, not all instances. No consistency assumption on 𝓢, rule taking proofs of α to proofs of K(α), or interpretation of conF as a consistency sentence for F is required.\"}",
+  "translation": "Target is the following proposition. For every sentence type Fm and system type S, with implication, conjunction, disjunction, negation, truth and falsehood on Fm and a provability relation on Fm for systems in S; for every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens; for every pair of functions K and F from sentences to sentences; and for every pair of sentences conF and φ, suppose that (1) for every pair of sentences α and β, 𝓢 proves ‘K(α implies β) implies (K(α) implies K(β))’; (2) 𝓢 proves K applied to the entire sentence ‘conF implies (F(φ) implies φ)’; and (3) 𝓢 proves ‘F(φ) implies K(F(φ))’. Then 𝓢 proves the single implication ‘(not K(φ) and F(φ)) implies not K(conF)’. Hypotheses (2) and (3) concern the chosen sentences, not all instances. No consistency assumption on 𝓢, rule taking proofs of α to proofs of K(α), or interpretation of conF as a consistency sentence for F is required.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source applies K-intro to one sentence, ConsF → (∀φ ∈ L(PA))(Fφ → φ), with the quantifier inside K. It does not literally assert a family of theorems K(ConsF → (Fφ → φ)). Lean assumes this local analogue; obtaining it from the source’s line would require justifying specialization under K, not just ordinary universal elimination.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source concludes a sequent from the existence of an arithmetic witness. Lean proves an object-language implication for a fixed φ: its antecedent supplies the witness properties directly, so neither the membership reasoning using (∗∗) nor the existential step is represented.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The result is schematic over classical systems and uninterpreted K, F and conF. It does not enforce that φ is arithmetic, that F expresses derivability on sentence codes, or that conF expresses consistency of that same formalism.\"\n    }\n  ],\n  \"summary\": \"The target faithfully captures the conditional reasoning for one sentence: given the local known conditional, distributivity and (∗) yield exactly the stated conclusion. It is a propositional analogue of the proof, not a derivation of the local premise from DTK’s quantified K-intro theorem.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The source applies K-intro to one sentence, ConsF → (∀φ ∈ L(PA))(Fφ → φ), with the quantifier inside K. It does not literally assert a family of theorems K(ConsF → (Fφ → φ)). Lean assumes this local analogue; obtaining it from the source’s line would require justifying specialization under K, not just ordinary universal elimination."
+      },
+      {
+        "severity": "minor",
+        "description": "The source concludes a sequent from the existence of an arithmetic witness. Lean proves an object-language implication for a fixed φ: its antecedent supplies the witness properties directly, so neither the membership reasoning using (∗∗) nor the existential step is represented."
+      },
+      {
+        "severity": "minor",
+        "description": "The result is schematic over classical systems and uninterpreted K, F and conF. It does not enforce that φ is arithmetic, that F expresses derivability on sentence codes, or that conF expresses consistency of that same formalism."
+      }
+    ],
+    "summary": "The target faithfully captures the conditional reasoning for one sentence: given the local known conditional, distributivity and (∗) yield exactly the stated conclusion. It is a propositional analogue of the proof, not a derivation of the local premise from DTK’s quantified K-intro theorem."
+  }
+}
