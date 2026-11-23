@@ -9,8 +9,28 @@
     [
       1721,
       92
+    ],
+    [
+      2874,
+      1030
     ]
   ],
   "a_raw": "{\"translation\":\"Target is the proposition that for every predicate A on the natural numbers, if A is recursively enumerable and, for every natural number n, A(n) implies that the n-th program does not halt on input n, then there exists a natural number k such that the k-th program does not halt on input k and A(k) is false. The witness k may depend on A; no procedure for choosing it is required.\"}",
-  "translation": "Target is the proposition that for every predicate A on the natural numbers, if A is recursively enumerable and, for every natural number n, A(n) implies that the n-th program does not halt on input n, then there exists a natural number k such that the k-th program does not halt on input k and A(k) is false. The witness k may depend on A; no procedure for choosing it is required."
+  "translation": "Target is the proposition that for every predicate A on the natural numbers, if A is recursively enumerable and, for every natural number n, A(n) implies that the n-th program does not halt on input n, then there exists a natural number k such that the k-th program does not halt on input k and A(k) is false. The witness k may depend on A; no procedure for choosing it is required.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean assumes only diagonal soundness (I), not soundness on all pairs (H). This does not change the conclusion: every sound binary procedure has a sound diagonal halting predicate, and every sound r.e. diagonal predicate can be realized by a procedure that never halts off the diagonal.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Penrose identifies k as an index for the computation n ↦ A(n,n). Lean requires only that k be a missed case of non-halting; it does not require the k-th program to recognize the predicate A.\"\n    }\n  ],\n  \"summary\": \"The target faithfully states the existential conclusion: every sound r.e. diagonal test misses some genuinely non-halting diagonal run. It abstracts from the identity of Penrose’s witness and makes no epistemic claim.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Lean assumes only diagonal soundness (I), not soundness on all pairs (H). This does not change the conclusion: every sound binary procedure has a sound diagonal halting predicate, and every sound r.e. diagonal predicate can be realized by a procedure that never halts off the diagonal."
+      },
+      {
+        "severity": "minor",
+        "description": "Penrose identifies k as an index for the computation n ↦ A(n,n). Lean requires only that k be a missed case of non-halting; it does not require the k-th program to recognize the predicate A."
+      }
+    ],
+    "summary": "The target faithfully states the existential conclusion: every sound r.e. diagonal test misses some genuinely non-halting diagonal run. It abstracts from the identity of Penrose’s witness and makes no epistemic claim."
+  },
+  "judgement_time": "2026-11-23T01:50:09Z"
 }

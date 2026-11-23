@@ -218,6 +218,20 @@ def run(vendor):
         n, it = n_it
         path = outdir / f"{it['id']}.json"
         if path.exists():
+            # Amendment 1: an item that had no passage when it was translated blind, and has one now, gets
+            # the comparison step only. The blind translation on file is reused unchanged.
+            rec = json.loads(path.read_text())
+            if it["passages"] and "judgement" not in rec:
+                text, tin, tout, raw = call(vendor, PROMPT_B.format(
+                    notation=notation, context=it["context"], target=it["target"], claim=it["claim"],
+                    translation=rec["translation"], passages=it["passage_text"]))
+                rec["usage"].append([tin, tout])
+                rec["b_raw"] = text
+                rec["judgement"] = parse_json(text)
+                rec["judgement_time"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+                path.write_text(json.dumps(rec, indent=2, ensure_ascii=False) + "\n")
+                print(f"[{vendor}] {n:2d}/{len(items)} {it['id']:6s} (comparison only) "
+                      f"{(rec['judgement'] or {}).get('verdict')}", flush=True)
             return
         rec = {"id": it["id"], "decoy": it["decoy"], "vendor": vendor, "model": VENDORS[vendor]["model"],
                "time": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -255,7 +269,9 @@ def report():
     planted = {d["id"]: d for d in spec["decoys"]}
     lines = ["# Statement check report", "",
              "Round 2. Written by `run.py --report` from the raw outputs in `out/`. Verdicts are the checkers' own.",
-             "Round 1 (first draft of the statements, earlier prompt) is frozen under `round1/`.", ""]
+             "Round 1 (first draft of the statements, earlier prompt) is frozen under `round1/`.",
+             "S1e was compared with its source on 2026-11-23 under Amendment 1, once Penrose's text was in hand; its",
+             "blind translations are those of round 2.", ""]
     vendors = [v for v in VENDORS if (OUT / v).is_dir()]
     recs = {v: {p.stem: json.loads(p.read_text()) for p in sorted((OUT / v).glob("*.json"))} for v in vendors}
     lines += ["## Models", ""]

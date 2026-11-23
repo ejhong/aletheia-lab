@@ -54,7 +54,7 @@ Thin wrappers: Foundation already proves the underlying theorems (their names ar
 - [x] **b. The standard objection**, in three parts. A witness: PA is sound, consistent and a machine's theorem set, and lacks Con(PA). The machine proves the conditional itself, F ⊢ Con(F) → G_F, so the human's only edge is knowing Con(F) (`gödel_iff_con`). And the second machine: for any sound F, F + Con(F) is again a sound machine, with a consistency statement of its own that it cannot prove.
 - [x] **c. Chalmers's point via Löb.** A system that proves its own soundness for every sentence is inconsistent, with no assumption that it is a machine (`löb_theorem`). By contrast, adding the soundness *of T* to a sound T gives a sound system.
 - [x] **d. Gödel's disjunction, semantic form.** For any set K of true arithmetic sentences, either no formal system has K as its theorem set, or some true Π₁ sentence is undecided by K. Truth here means truth in ℕ in Lean's own logic.
-- [x] **e. Penrose's argument in halting form** No sound r.e. certifier of non-halting certifies its own diagonal computation. Proved, but not yet checked against *Shadows of the Mind* §2.5, which is not in hand.
+- [x] **e. Penrose's argument in halting form** No sound r.e. certifier of non-halting certifies its own diagonal computation. Proved. Checked against *Shadows of the Mind* §2.5 on 23 November, once the pages were in hand: both checkers found it faithful, with minor caveats.
 
 ### Stage 2 · Epistemic arithmetic
 Status: not started
@@ -114,7 +114,7 @@ So the argument establishes "not a machine you know to be sound". It does not es
 | A sound T plus the assertions of T's soundness is sound | `soundPlusItsSoundnessIsSound` | T's axioms true | Proved | the lab's contrast case |
 | Gödel's disjunction | `godelDisjunction` | everything in K is true | Proved | Koellner 2018, p. 349, quoting Gödel 1951, p. 310 |
 | Variant for sets not closed under deduction | `godelDisjunctionRE` | everything in K is true | Proved; a variant | as above |
-| Penrose's argument in halting form | `penroseTuring` | A is a sound, mechanically listable certifier of non-halting | Proved; not checked against its source | Penrose 1994, §2.5, `unverified` |
+| Penrose's argument in halting form | `penroseTuring` | A is a sound, mechanically listable certifier of non-halting | Proved | Penrose 1994, §2.5, pp. 73–75 |
 
 **How it was checked.** The Lean kernel checked every proof; the build fails if any theorem uses more than Lean's three standard axioms. For each statement there is also a proof that its assumptions can hold together, so nothing is true only because its premises clash. Before anything was proved, models from OpenAI and Google translated each statement back into English blind and compared it with the source; in the final round both caught all three deliberately wrong statements mixed in.
 
@@ -124,7 +124,8 @@ So the argument establishes "not a machine you know to be sound". It does not es
 
 - Plain arithmetic cannot say "I am this machine" or "I know". Set membership stands in for knowing. One checker judged the second row a stand-in, not a formalization of Gödel's remark; that is right, and the faithful version needs Stage 2.
 - Penrose's second argument (*Shadows of the Mind*, ch. 3) is not covered. That is Stage 2.
-- Penrose's and Gödel's words are quoted through Koellner; neither book was in hand.
+- Gödel's words are quoted through Koellner; that book was not in hand. Penrose's were checked against photographs of pp. 72–77 of *Shadows of the Mind*.
+- Penrose's own conclusion on p. 76 is that mathematicians are not using a "knowably sound algorithm". That is the version the proofs support. He calls the claim that thought is non-computational "the stronger deduction".
 - Nothing here tests whether a person is well modelled as a consistent, logically closed set of statements.
 
 Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/q/godel-argument/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/q/godel-argument/questions/godel-argument/lean/GodelArgument). Cost: $12.38, all on the statement check.

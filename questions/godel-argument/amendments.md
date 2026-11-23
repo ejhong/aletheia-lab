@@ -35,3 +35,12 @@ stop" cannot be said in this setting. I expect caveats; (b) may be rated major.
 
 **Erratum.** The locked protocol's first paragraph says "fourteen statements". The locked statement file has
 thirteen: one variant was dropped before the lock and the count was not updated. Nothing of substance changes.
+
+**Outcome (2026-11-23, after the run).** OpenAI `gpt-6.2-astra`: `faithful_with_caveats`, two minor divergences.
+Google `gemini-4-neon`: `faithful_with_caveats`, three minor divergences. Neither rated (b) major. By the rule
+above S1e stands as locked and no S1e′ is added. Koellner's quotation of 𝒢 matches p. 76 of the book word for
+word. Cost $0.32 at list price ($0.06 OpenAI, $0.25 Google).
+
+**Second erratum, found while writing this up.** The locked protocol and the first version of `RESULTS.md` say
+"of 17 real items with a passage". Seventeen was the number of real items; sixteen had a passage, because S1e had
+none. The figures at the lock were 14 of 16 clean from both checkers. With S1e now checked they are 15 of 17.

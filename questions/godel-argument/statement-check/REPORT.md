@@ -2,11 +2,13 @@
 
 Round 2. Written by `run.py --report` from the raw outputs in `out/`. Verdicts are the checkers' own.
 Round 1 (first draft of the statements, earlier prompt) is frozen under `round1/`.
+S1e was compared with its source on 2026-11-23 under Amendment 1, once Penrose's text was in hand; its
+blind translations are those of round 2.
 
 ## Models
 
-- openai: `gpt-6.2-astra`, 20 items, run 2026-11-22T17:28:21Z to 2026-11-22T17:39:10Z, 80,147 input and 29,742 output tokens, about $1.83 at list price
-- google: `gemini-4-neon`, 20 items, run 2026-11-22T17:28:21Z to 2026-11-22T17:39:10Z, 81,157 input and 233,654 output tokens, about $3.75 at list price
+- openai: `gpt-6.2-astra`, 20 items, run 2026-11-22T17:28:21Z to 2026-11-22T17:39:10Z, 83,021 input and 30,772 output tokens, about $1.90 at list price
+- google: `gemini-4-neon`, 20 items, run 2026-11-22T17:28:21Z to 2026-11-22T17:39:10Z, 84,160 input and 249,928 output tokens, about $4.00 at list price
 
 ## Planted errors
 
@@ -38,7 +40,7 @@ A planted error counts as caught when the verdict is `divergent`.
 | S1c4 | `SoundPlusItsSoundnessIsSound` | faithful_with_caveats (0 major, 2 minor) | faithful_with_caveats (0 major, 3 minor) |
 | S1d | `GodelDisjunction` | faithful_with_caveats (0 major, 2 minor) | faithful_with_caveats (0 major, 4 minor) |
 | S1d2 | `GodelDisjunctionRE` | divergent (1 major, 1 minor) | faithful_with_caveats (0 major, 3 minor) |
-| S1e | `PenroseTuring` | translation only | translation only |
+| S1e | `PenroseTuring` | faithful_with_caveats (0 major, 2 minor) | faithful_with_caveats (0 major, 3 minor) |
 
 ## Divergences listed for real items
 
@@ -381,7 +383,16 @@ Verdict: faithful_with_caveats. TARGET faithfully formalizes the claimed variant
 
 Blind translation: Target is the proposition that for every predicate A on the natural numbers, if A is recursively enumerable and, for every natural number n, A(n) implies that the n-th program does not halt on input n, then there exists a natural number k such that the k-th program does not halt on input k and A(k) is false. The witness k may depend on A; no procedure for choosing it is required.
 
+Verdict: faithful_with_caveats. The target faithfully states the existential conclusion: every sound r.e. diagonal test misses some genuinely non-halting diagonal run. It abstracts from the identity of Penrose’s witness and makes no epistemic claim.
+- minor: Lean assumes only diagonal soundness (I), not soundness on all pairs (H). This does not change the conclusion: every sound binary procedure has a sound diagonal halting predicate, and every sound r.e. diagonal predicate can be realized by a procedure that never halts off the diagonal.
+- minor: Penrose identifies k as an index for the computation n ↦ A(n,n). Lean requires only that k be a missed case of non-halting; it does not require the k-th program to recognize the predicate A.
+
 **google (gemini-4-neon)**
 
 Blind translation: `Target` is defined as the proposition asserting that for every predicate `A` on the natural numbers `ℕ`: if `A` is recursively enumerable (`REPred A`), and if for every natural number `n`, whenever `A n` holds, running the `n`-th partial recursive function code (`Denumerable.ofNat Nat.Partrec.Code n`) on input `n` does not halt, then there exists a natural number `k` such that running the `k`-th partial recursive function code on input `k` does not halt and `A k` does not hold. Note that this is a bare existence statement for `k` (it does not require `k` to be computed effectively from `A` or from a code for `A`), and `Target` does not depend on any of `Def1`–`Def10`.
+
+Verdict: faithful_with_caveats. Target accurately captures the non-epistemic mathematical conclusion of Penrose's diagonal argument: every sound r.e. procedure for certifying non-halting misses some non-halting diagonal computation C_k(k). It differs only in minor ways—starting directly at the unary diagonal (I) instead of binary (H), fixing partial recursive codes as the computation model, and asserting bare existence of k rather than tying k to A as an explicit index.
+- minor: Bare existence vs. identified witness k: Penrose's steps (J)–(M) identify k specifically as the index of the computation n ↦ A(n, n) (so A(n, n) = C_k(n)) and conclude that A fails to ascertain the non-stopping of 'this particular computation C_k(k)'. Because Target takes A extensionally as a predicate with REPred A rather than a code/procedure, it only asserts bare existence (∃ k, ...) without stating that C_k realizes A (∀ n, A n ↔ (C_k(n)).Dom) or constructing k effectively from A.
+- minor: Unary diagonal predicate vs. binary procedure: Penrose introduces a two-argument computational procedure A(q, n) satisfying soundness (H) for all pairs (q, n) and specializes to q = n in (I). Target omits (H) and quantifies directly over a unary r.e. predicate A : ℕ → Prop representing 'A(n, n) stops', assuming soundness only on the diagonal (I). This is a harmless simplification (mathematically equivalent to the binary version, and slightly stronger as stated because the hypothesis is weaker) that is acknowledged in the author's claim.
+- minor: Fixed formal model of computation: Penrose refers informally to a listing C_0, C_1, ... of all computations on a natural number, whereas Target fixes Mathlib's concrete enumeration of partial recursive function codes (Denumerable.ofNat Nat.Partrec.Code) and formalizes halting as (c.eval n).Dom.
 

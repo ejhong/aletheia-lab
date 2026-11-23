@@ -40,3 +40,13 @@ Dated entries, newest last: what was tried, what happened, what next.
   branch, to be merged with a merge commit, so the original commits (lock e7485ae at 17:49 UTC, results 045d2ed
   at 18:03 UTC on 2026-11-22) are in `main`'s history. `scripts/check.py` now reads every side of a merge
   (`--full-history`); it still fails on a squash-only history.
+- 2026-11-23: Eugene supplied photographs of *Shadows of the Mind* pp. 72–77, and Cheng's survey
+  (arXiv:1902.05902v2). Wrote Amendment 1 and pushed it (42b4b17) before running anything. Transcribed P-P73 to
+  P-P76; ran the comparison step for S1e with both checkers, reusing their blind translations. Both:
+  `faithful_with_caveats`, no major divergence, so S1e stands as locked. Koellner's quotation of 𝒢 matches the
+  book. `run.py` gained a comparison-only path for an item translated before its passage existed. Cost $0.32.
+- Cheng §4 attributes Koellner's Theorem 3 and the inconsistency of EA_T + SSMT to Reinhardt 1985 (*Noûs* 19(3)),
+  the consistency of EA_T + WMT to a second Reinhardt paper, the disjunction in EA_T to Reinhardt 1986 (*J. Phil.
+  Logic* 15), and the consistency of EA_T + SMT to Carlson 2000. These are Cheng's attributions, not checked
+  against the papers. Useful for Stage 2; the Reinhardt papers themselves are still not in hand.
+
