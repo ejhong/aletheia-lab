@@ -172,3 +172,21 @@ Cost $4.87 at list price.
 Round 3 re-checks only S2b′, S2e and the planted error that mimics S2e. The other items are unchanged since
 round 2. A trial build of proofs for every draft statement passed before round 3 (`explore/Stage2Sketch.lean`,
 exploratory).
+
+**Round 3 (2026-11-23) and the state at the lock.** Cost $0.65. Both checkers: S2e `faithful`; S2b′ `faithful`
+(Google) and `faithful_with_caveats` (OpenAI, one minor note on what "includes" means). Both caught the planted
+error. Final verdicts are in `statement-check/REPORT-2A.md`.
+
+- Planted errors, final: 4 of 4 caught by both checkers.
+- Real items with a comparison (9): 8 are `faithful` or `faithful_with_caveats` from both.
+- Unresolved divergence, carried into the results: S2c, Google `divergent` (it is a sentence-by-sentence, abstract
+  counterpart of Theorem 6, not Theorem 6).
+- D15 has no passage and was translated blind only.
+- S2b, S2b′, S2d and S2e were judged against the lab's own claims, because they are not statements the sources
+  make. S2b is a repaired variant of Theorem 4.
+
+Total for the Stage 2A statement check: $9.50 ($2.96 OpenAI, $6.54 Google). Question total: $22.20 of $50.
+
+`statement-check/Statement2.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement2.lean` and is
+locked there. Nothing in Stage 2A has been proved for the record before this point; the exploratory trial is in
+`explore/Stage2Sketch.lean`.

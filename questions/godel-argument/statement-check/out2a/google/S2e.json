@@ -1,0 +1,26 @@
+{
+  "id": "S2e",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:49:51Z",
+  "target": "def Target : Prop :=\n  let K : ArithmeticSentence → ArithmeticSentence := fun σ => (𝗣𝗔 : ArithmeticTheory).standardProvability σ\n  let F : ArithmeticSentence → ArithmeticSentence := K\n  let 𝓢 : ArithmeticTheory := 𝗣𝗔 ∪ (𝗣𝗔 : ArithmeticTheory).localReflectionOn Set.univ\n  Def1 (𝗣𝗔 : ArithmeticTheory) K ∧ (𝗣𝗔 : ArithmeticTheory) ⪯ 𝓢 ∧\n    Def2 𝓢 K ∧ Def3 𝓢 K ∧\n    Def5 (𝗣𝗔 : ArithmeticTheory) F ∧\n    (∀ φ, 𝓢 ⊢ K (K φ 🡘 F φ)) ∧\n    (∃ p, 𝓢 ⊢ K (K (∼p) 🡘 p)) ∧\n    Entailment.Consistent 𝓢 ∧\n    ¬ Def4 𝓢 K\n",
+  "usage": [
+    [
+      1525,
+      3656
+    ],
+    [
+      2984,
+      5654
+    ]
+  ],
+  "a_raw": "{\"translation\": \"`Target` is a proposition (taking no parameters) that first introduces three local abbreviations:\\n- `K` is the function from arithmetic sentences (closed formulas of first-order arithmetic) to arithmetic sentences sending each sentence `σ` to `Prov_PA(⌜σ⌝)`, the standard Σ₁ provability sentence for Peano arithmetic (`PA`) applied to the Gödel numeral of `σ`.\\n- `F` is defined to be the same function as `K`.\\n- `𝓢` is the arithmetic theory formed by the union of the axioms of `PA` and the set of all local reflection sentences for `PA`, i.e., all sentences `Prov_PA(⌜σ⌝) 🡒 σ` (equivalently `K σ 🡒 σ`) for every arithmetic sentence `σ`.\\n\\nWriting `T ⊢ φ` for derivability of the arithmetic sentence `φ` from the arithmetic theory `T` in classical first-order logic, and `🡒`, `🡘`, `∼` for implication, biconditional, and negation inside the formal language of arithmetic, `Target` asserts the conjunction of the following nine statements:\\n1. (`Def1 PA K`): For every arithmetic sentence `φ`, if `PA` proves `φ`, then `PA` proves `K φ`.\\n2. (`PA ⪯ 𝓢`): Every arithmetic sentence provable in `PA` is provable in `𝓢`.\\n3. (`Def2 𝓢 K`): For all arithmetic sentences `φ` and `ψ`, `𝓢` proves `K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ)`.\\n4. (`Def3 𝓢 K`): For every arithmetic sentence `φ`, `𝓢` proves `K φ 🡒 φ`.\\n5. (`Def5 PA F`): There exists an arithmetic sentence `ψ` such that `PA` proves `ψ 🡘 ∼(F ψ)` (which, since `F` is `K`, is `ψ 🡘 ∼(K ψ)`).\\n6. For every arithmetic sentence `φ`, `𝓢` proves `K (K φ 🡘 F φ)` (which, since `F` is `K`, is `K (K φ 🡘 K φ)`).\\n7. There exists an arithmetic sentence `p` such that `𝓢` proves `K (K (∼p) 🡘 p)`.\\n8. `𝓢` is consistent, meaning `𝓢` does not prove every arithmetic sentence.\\n9. (`¬ Def4 𝓢 K`): It is not the case that for every arithmetic sentence `φ`, `𝓢` proves `K (K φ 🡒 φ)`.\"}",
+  "translation": "`Target` is a proposition (taking no parameters) that first introduces three local abbreviations:\n- `K` is the function from arithmetic sentences (closed formulas of first-order arithmetic) to arithmetic sentences sending each sentence `σ` to `Prov_PA(⌜σ⌝)`, the standard Σ₁ provability sentence for Peano arithmetic (`PA`) applied to the Gödel numeral of `σ`.\n- `F` is defined to be the same function as `K`.\n- `𝓢` is the arithmetic theory formed by the union of the axioms of `PA` and the set of all local reflection sentences for `PA`, i.e., all sentences `Prov_PA(⌜σ⌝) 🡒 σ` (equivalently `K σ 🡒 σ`) for every arithmetic sentence `σ`.\n\nWriting `T ⊢ φ` for derivability of the arithmetic sentence `φ` from the arithmetic theory `T` in classical first-order logic, and `🡒`, `🡘`, `∼` for implication, biconditional, and negation inside the formal language of arithmetic, `Target` asserts the conjunction of the following nine statements:\n1. (`Def1 PA K`): For every arithmetic sentence `φ`, if `PA` proves `φ`, then `PA` proves `K φ`.\n2. (`PA ⪯ 𝓢`): Every arithmetic sentence provable in `PA` is provable in `𝓢`.\n3. (`Def2 𝓢 K`): For all arithmetic sentences `φ` and `ψ`, `𝓢` proves `K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ)`.\n4. (`Def3 𝓢 K`): For every arithmetic sentence `φ`, `𝓢` proves `K φ 🡒 φ`.\n5. (`Def5 PA F`): There exists an arithmetic sentence `ψ` such that `PA` proves `ψ 🡘 ∼(F ψ)` (which, since `F` is `K`, is `ψ 🡘 ∼(K ψ)`).\n6. For every arithmetic sentence `φ`, `𝓢` proves `K (K φ 🡘 F φ)` (which, since `F` is `K`, is `K (K φ 🡘 K φ)`).\n7. There exists an arithmetic sentence `p` such that `𝓢` proves `K (K (∼p) 🡘 p)`.\n8. `𝓢` is consistent, meaning `𝓢` does not prove every arithmetic sentence.\n9. (`¬ Def4 𝓢 K`): It is not the case that for every arithmetic sentence `φ`, `𝓢` proves `K (K φ 🡒 φ)`.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Target defines K, F, and 𝓢 exactly as specified in the author's claim and conjoins nine clauses that correspond one-to-one with claims (i)–(ix), with matching quantifiers, connectives, and systems throughout.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Target defines K, F, and 𝓢 exactly as specified in the author's claim and conjoins nine clauses that correspond one-to-one with claims (i)–(ix), with matching quantifiers, connectives, and systems throughout."
+  }
+}
