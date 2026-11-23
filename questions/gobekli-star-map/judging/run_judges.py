@@ -53,7 +53,7 @@ VENDORS = {  # model id, USD per million tokens (input, output) or None
     "google": ("gemini-4-neon", (3.0, 15.0)),
     "xai": ("grok-4.7", None),
 }
-GEMINI_THINKING_BUDGET = 512
+GEMINI_THINKING_BUDGET = 2048
 
 
 def make_trials(seed, reps, b_symbols):
@@ -132,7 +132,7 @@ def request_for(vendor, parts):
                for k, v in parts]
     body = {"model": model, "messages": [{"role": "user", "content": content}]}
     if vendor == "openai":
-        body["reasoning_effort"] = "low"
+        body["reasoning_effort"] = "medium"
     return (OPENAI_URL if vendor == "openai" else XAI_URL), body
 
 

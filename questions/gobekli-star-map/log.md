@@ -24,3 +24,16 @@ Dated entries, newest last: what was tried, what happened, what next.
 - A second sub-agent (Opus 5.5) extracted the 20 pictures of Table 1 from the PDF; they are stored there as
   separate images, so nothing was cropped. I looked at the contact sheet.
 - Wrote the analysis program and checked its exact enumeration against brute force on a small case.
+- A third sub-agent (Opus 5.5) built the stimuli and the judging script and tested the plumbing on made-up shapes
+  only: all three vendors took images and ranked a triangle outline with the triangle first. Probe cost $0.20
+  plus xAI tokens at an unknown price. I looked at the eight line-only figures: each keeps its whole red drawing.
+- Review, one round, two vendors ($0.73). It separated three questions my first plan had mixed (are the claimed
+  animals ranked first; is the pairing better than a shuffle; what does the paper's formula give), moved the
+  pairing test to the pillar's own animals, added a competence check on the scorpion and a coverage rule, and
+  made the arithmetic exact. Reasoning budgets were raised. `review/README.md` has the list and what was not
+  done.
+- A fourth sub-agent (Opus 5.5) wrote 21 tests for the analysis program, with expected values from brute force.
+  All pass. It found no bug; it noted that rankings were not validated on reading (now asserted) and that the
+  paper's formula can exceed 1 with tied tables, which the plan already calls "not a probability".
+- No picture from the paper has been shown to any judge. Next: lock, then the judging.
+

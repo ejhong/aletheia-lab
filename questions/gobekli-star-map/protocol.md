@@ -73,10 +73,9 @@ This is a judging experiment. The judges are vision models from other vendors, c
 
 ### Judges and tasks
 
-Judges: OpenAI `gpt-6.2-astra` (reasoning effort low), Google `gemini-4-neon` (thinking budget 512 tokens) and
-xAI `grok-4.7` (defaults), all at their default temperature. Each is included only if it returns valid rankings
-in at least 80% of its 80 trials. At least two must be included, or the result is "not testable". All three
-accepted images and ranked made-up shapes sensibly in a plumbing test that used no picture from the paper.
+Judges: OpenAI `gpt-6.2-astra` (reasoning effort medium), Google `gemini-4-neon` (thinking budget 2,048 tokens)
+and xAI `grok-4.7` (defaults), all at their default temperature, with no tools and no memory between calls. All
+three accepted images and ranked made-up shapes sensibly in a plumbing test that used no picture from the paper.
 
 - **Task A, the paper's direction.** The judge sees one figure and the 12 symbols, labelled A to L in a random
   order, and ranks all 12 by how closely the carved shape resembles the line drawing. 8 figures × 5 repetitions,
@@ -85,50 +84,82 @@ accepted images and ranked made-up shapes sensibly in a plumbing test that used 
   random order, and ranks all 8. 8 symbols × 5 repetitions.
 
 The prompts (`PROMPT_A`, `PROMPT_B` in `judging/run_judges.py`) say only that the photographs show shapes carved
-in stone and ask for a ranking by shape. They do not mention animals, stars, constellations, the site or any
-hypothesis. Trial orders come from seed 92 and are the same for every judge (`judging/trials.json`). A reply
-that does not list every option exactly once is asked again, up to twice; if still invalid the trial is dropped.
+in stone and ask for a ranking by overall shape. They do not mention animals, stars, constellations, the site or
+any hypothesis. A request holds the prompt, a short text label before each picture ("Line drawing:",
+"Photograph A:" …) and the pictures themselves as image data; no file name, caption or identifier is sent. Trial
+orders come from seed 92 and are the same for every judge (`judging/trials.json`, 80 trials).
 
-**After all ranking trials**, one more call per judge shows the 8 figures and the 12 symbols and asks what they
-are and where they might come from. It measures whether the judge recognised the material. A judge that knows
-the paper would be biased towards the claimed pairings, so recognition can only help the claim.
+**Invalid replies.** A reply is valid if it lists every option exactly once. An invalid reply is asked again in a
+fresh call with the same pictures and order, up to twice; the first valid reply counts and every attempt is
+kept. If none is valid the trial is dropped.
+
+**Which judges count.** A judge counts for a task only if every target of that task (each figure in Task A, each
+symbol in Task B) has at least 3 valid rankings. A judge must also pass a **competence check**: in Task A it
+must give the scorpion photograph a mean rank of 2.0 or better for the scorpion figure. That pairing is the
+reading's starting point and the one resemblance nobody disputes; a judge that cannot see it is not measuring
+resemblance, and is left out. At least two judges must count for Task A, or the result is "not testable".
+
+**After all ranking trials**, two more calls per judge: one shows the 8 figures and asks what they are and
+whether the judge has seen them before; the other shows the 12 photographs and asks where the carvings are from
+and whether the judge knows of a published claim about them. The replies are reported. They are a rough
+indicator: a judge may hold an association it does not report. A judge that knows the paper would more likely be
+pushed towards its pairings than away from them, so recognition makes a failure to reproduce them more telling
+and a success less.
 
 ### Analysis
 
-For each judge, `M[a][s]` is the mean rank (1 = most similar) that the judge gave symbol `s` for figure `a`,
-over the valid repetitions of Task A. The pooled table is the mean of the judges' tables.
+All arithmetic on ranks is exact (integers; `analysis/analyse.py`).
 
-1. **Main statistic.** `S` = the mean over the 8 figures of the rank of the claimed symbol, `M[a][claimed]`.
-   Chance gives 6.5; a judge who agrees with the paper gives a value near 1.
-2. **Its chance distribution, exactly.** Every way of assigning 8 different symbols out of the 12 to the 8
-   figures (19,958,400 ways, the paper's Q without repeats) gets the same statistic from the same table. `p` is
-   the share of assignments whose statistic is at most that of the claimed one. This is the paper's own
-   question, "how many configurations … are a better fit than the current one", answered with the judges'
-   ranks. It is computed for each judge and for the pooled table.
-3. **The paper's formula with the judges' ranks.** For each figure, the number of symbols with a strictly better
-   mean rank than the claimed one; P+1 is the product of (1 + that number) over the 8 figures; the paper's
-   probability is 2(P+1)/19,958,400 and 2(P+1)/12⁸.
-4. **Without the scorpion.** Scorpion = Scorpius is the reading's starting point, and a scorpion drawing looks
-   like the scorpion stick figure whoever judges it. Items 1 to 3 are repeated for the other 7 figures, with the
-   11 other symbols (assignments of 7 out of 11).
-5. **Task B.** The mean over the 8 pillar symbols of the rank given to the claimed figure (chance 4.5), with its
-   exact chance distribution over the 40,320 orderings of the 8 figures.
-6. For each figure: which symbol each judge ranked first, and the rank of the claimed symbol.
+**Tables.** For a judge, the mean rank of symbol `s` for figure `a` is the mean, over that judge's valid Task A
+rankings of `a`, of the position of `s` (1 = most similar). The pooled table is the mean of the judges' tables,
+each judge counting equally whatever its number of valid rankings.
 
-### Labels fixed in advance
+**Without the scorpion.** The scorpion is the reading's premise, and its match would carry any test alone. For
+the main results the scorpion figure is set aside and the scorpion photograph is removed from every ranking,
+closing the gap, so that the other 11 symbols are ranked 1 to 11; means are then taken as above. This leaves 7
+figures and their 7 claimed symbols among 11.
 
-From the pooled Task A result over all 8 figures (item 2):
+Three things are reported, and they are different questions:
 
-| Label | Condition |
-|---|---|
-| **Blind judges see the claimed matches** | pooled `p ≤ 0.001`, and `p ≤ 0.01` for every included judge |
-| **Blind judges do not see them** | pooled `p > 0.05` |
-| **Weak or mixed** | anything else |
+1. **Do the judges reproduce the paper's ranking?** The paper ranks the claimed symbol first for six of these
+   seven figures and equal second for the seventh. Count the figures, out of 7, for which the claimed symbol
+   has the best pooled mean rank outright (a tie for best does not count). Also given: each figure's best
+   symbol or symbols, the claimed symbol's mean rank, and the same per judge.
 
-A second label, by the same rule, for the 7 figures without the scorpion. Both are reported; the second is the
-one that bears on the paper's argument, since the first can be carried by the scorpion alone.
+   | Label | Condition |
+   |---|---|
+   | **Blind judges largely reproduce the paper's ranking** | 5 or more of 7 |
+   | **Blind judges partly reproduce the paper's ranking** | 3 or 4 |
+   | **Blind judges do not reproduce the paper's ranking** | 2 or fewer |
 
-The number set beside the paper's "one in 5 million" is item 3's 2(P+1)/19,958,400 from the pooled table.
+2. **Is the claimed pairing better than a shuffled one?** Hold the pooled table fixed. Among the 5,040 ways of
+   pairing the 7 figures with the 7 pillar symbols, one to one, `p` is the share whose total mean rank is as
+   good as the claimed pairing's or better (ties count as "as good"). This asks: given the animals that are on
+   the pillar, did the judges put each with its claimed figure? It is a statement about these judges and these
+   pictures; it is not the chance that the pillar's carvings match the sky by accident.
+
+   | Label | Condition |
+   |---|---|
+   | **Blind judges pair the pillar's animals with the claimed figures better than chance** | pooled `p ≤ 0.01`, and `p ≤ 0.05` for each judge |
+   | **Pairing not better than chance in this test** | pooled `p > 0.05` |
+   | **Weak or mixed** | anything else |
+
+   Also given: the same share among all 1,663,200 ways of assigning 7 different symbols out of the 11 (the
+   paper's own way of counting, which also credits the judges for preferring the pillar's animals to the four
+   others), and both shares with the scorpion included (8 figures; 40,320 pairings; 19,958,400 assignments).
+
+3. **The paper's formula with the judges' ranks.** For each of the 8 figures, the number of other symbols whose
+   pooled mean rank is as good as the claimed one's or better; P+1 is the product of (1 + that number);
+   2(P+1)/19,958,400 and 2(P+1)/12⁸. This is what the paper's own arithmetic gives when its ranks are replaced
+   by the judges'. It is shown beside the paper's "one in 5 million" for comparison and is not a probability of
+   anything: the product counts choices that reuse a symbol, and the formula takes the eight constellations as
+   given.
+
+**Task B** is reported the same way from the other direction (for each pillar symbol, the mean rank of each
+figure): the number of symbols whose claimed figure is the outright best, and the share of the 5,040 pairings as
+good as the claimed one, without the scorpion; and both with it. It has no label.
+
+Also reported: the correlation between judges' tables, as a measure of whether they agree with one another.
 
 ### Replication
 
@@ -137,14 +168,16 @@ A model from another vendor writes its own analysis program from this protocol a
 
 ## What would count
 
-- **For the paper's statistical case:** "blind judges see the claimed matches" without the scorpion. The
-  rankings would then be shared by judges who were told nothing. The larger question would remain: the eight
+- **For the paper's statistical case:** "largely reproduce" together with "better than chance". The rankings
+  would then be shared by judges who were told nothing. The larger question would remain: the eight
   constellations, their stick figures and their orientations were chosen by the authors after seeing the
   carvings, from a sky of 88 constellations and more asterisms, and the formula counts none of that. A test of
   it needs decoy constellations drawn in one style, and is not done here.
-- **Against the paper's statistical case:** "blind judges do not see them" without the scorpion. The one-in-5-
-  million figure would then rest on a ranking that independent judges do not reproduce.
-- **Weak or mixed** is reported as it is.
+- **Against the paper's statistical case:** "do not reproduce". The one-in-5-million figure is built on the
+  claimed symbols being ranked first; if independent judges do not rank them first, the figure has no
+  independent support, whatever the pairing test says.
+- **In between:** "partly reproduce", or "do not reproduce" with a pairing that is still better than chance,
+  would mean the judges see some of the resemblances and not the ranking the number needs. Reported as it is.
 
 None of these outcomes shows what the carvers meant. A pillar could record the sky without its animals looking
 like our stick figures, and animals could look like stick figures by accident.
@@ -153,8 +186,11 @@ like our stick figures, and animals could look like stick figures by accident.
 
 - **The judges are models, not people.** They may weigh shapes differently from a human eye. No human panel was
   run.
-- **Models may know the paper.** The recognition question measures this; it cannot remove it. The bias would
-  favour the claim.
+- **Models may know the paper.** The recognition questions give a rough indication; they cannot remove the
+  problem or prove its absence.
+- **Twelve pictures at once is hard for a model.** A judge may attend unevenly to them. The competence check and
+  the agreement between judges are the guards; five repetitions per figure is a small number.
+- **Shared trial orders.** All judges see the same five random orders per target.
 - **The pictures are the paper's.** Small, low-resolution photographs (the frog is 64 × 82 pixels), cropped and
   oriented by the authors, with white patches in three of them. Other photographs of the same carvings might be
   judged differently.
@@ -168,7 +204,12 @@ like our stick figures, and animals could look like stick figures by accident.
 - **One session** designs, runs and writes up the question. A sub-agent of the same vendor gathered the sources
   and built the stimuli and the judging script.
 
+## Review before the lock
+
+One round by OpenAI `gpt-6.2-astra` and Google `gemini-4-neon`; the reviews are in `review/`, and
+`review/README.md` lists what was changed and what was not.
+
 ## Budget
 
-$20. Expected spend under $10: the judging calls, a design review by two other vendors' models, and a
+$20. Expected spend about $12: the judging calls, a design review by two other vendors' models, and a
 replication of the analysis.
