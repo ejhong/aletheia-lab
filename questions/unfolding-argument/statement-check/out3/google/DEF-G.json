@@ -1,0 +1,26 @@
+{
+  "id": "DEF-G",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T19:01:32Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: D25, d26\ndef S1.D25 {X Y : Type} (N : S1 X Y) (k : ℕ) : Prop :=\n  ∀ n, Finite (N.A3 n) ∧ Nat.card (N.A3 n) ≤ k\n\ndef d26 (m : ℕ) [NeZero m] : S1 Bool Bool where\n  A1 := Unit\n  a2 := inferInstance\n  A3 := fun _ => Fin m\n  a4 := fun _ => 0\n  a5 := fun _ σ x => if x then σ () + 1 else σ ()\n  a6 := fun σ => decide (σ () = 0)\n",
+  "usage": [
+    [
+      3251,
+      2567
+    ],
+    [
+      4669,
+      5393
+    ]
+  ],
+  "a_raw": "{\"translation\": \"The TARGET consists of two definitions:\\n\\n1. `S1.D25`: Given types `X` and `Y`, a record `N` of type `S1 X Y`, and a natural number `k`, `S1.D25 N k` defines the proposition that for every element `n` of `N.A1`, the type `N.A3 n` is finite (`Finite (N.A3 n)`) and its cardinality (`Nat.card (N.A3 n)`) is at most `k`. This is only a definition of a proposition (not an assertion or proof). It bounds the size of each individual type `N.A3 n` separately by `k`, and imposes no additional requirements on `X`, `Y`, the cardinality of `N.A1` (beyond `N.A1` already being finite via `N.a2`), or on `N.a4`, `N.a5`, and `N.a6`.\\n\\n2. `d26`: Given a natural number `m` together with the hypothesis that `m ≠ 0` (`[NeZero m]`), `d26 m` constructs a value of type `S1 Bool Bool` (with both input type `X` and output type `Y` equal to `Bool`) defined by the following fields:\\n- `A1` is `Unit` (the one-element type with element `()`), and `a2` is the automatically inferred proof that `Unit` is finite.\\n- `A3` maps every element of `Unit` (i.e., `()`) to `Fin m` (the natural numbers `0, …, m - 1`).\\n- `a4` maps `()` to `0` in `Fin m`.\\n- `a5` takes an element of `Unit`, a function `σ : Unit → Fin m`, and a Boolean `x : Bool`; if `x` is `true`, it returns `σ () + 1` in `Fin m` (addition modulo `m`, wrapping from `m - 1` back to `0`), and if `x` is `false`, it returns `σ ()` unchanged.\\n- `a6` takes a function `σ : Unit → Fin m` and returns the Boolean `true` if `σ () = 0` in `Fin m`, and `false` otherwise.\"}",
+  "translation": "The TARGET consists of two definitions:\n\n1. `S1.D25`: Given types `X` and `Y`, a record `N` of type `S1 X Y`, and a natural number `k`, `S1.D25 N k` defines the proposition that for every element `n` of `N.A1`, the type `N.A3 n` is finite (`Finite (N.A3 n)`) and its cardinality (`Nat.card (N.A3 n)`) is at most `k`. This is only a definition of a proposition (not an assertion or proof). It bounds the size of each individual type `N.A3 n` separately by `k`, and imposes no additional requirements on `X`, `Y`, the cardinality of `N.A1` (beyond `N.A1` already being finite via `N.a2`), or on `N.a4`, `N.a5`, and `N.a6`.\n\n2. `d26`: Given a natural number `m` together with the hypothesis that `m ≠ 0` (`[NeZero m]`), `d26 m` constructs a value of type `S1 Bool Bool` (with both input type `X` and output type `Y` equal to `Bool`) defined by the following fields:\n- `A1` is `Unit` (the one-element type with element `()`), and `a2` is the automatically inferred proof that `Unit` is finite.\n- `A3` maps every element of `Unit` (i.e., `()`) to `Fin m` (the natural numbers `0, …, m - 1`).\n- `a4` maps `()` to `0` in `Fin m`.\n- `a5` takes an element of `Unit`, a function `σ : Unit → Fin m`, and a Boolean `x : Bool`; if `x` is `true`, it returns `σ () + 1` in `Fin m` (addition modulo `m`, wrapping from `m - 1` back to `0`), and if `x` is `false`, it returns `σ ()` unchanged.\n- `a6` takes a function `σ : Unit → Fin m` and returns the Boolean `true` if `σ () = 0` in `Fin m`, and `false` otherwise.",
+  "b_raw": "{\"verdict\": \"faithful\", \"divergences\": [], \"summary\": \"Both definitions in the TARGET (`S1.D25` and `d26`) match the author's description accurately, including the edge cases for `k` and the state, transition, and output behaviour of the modulo-`m` counter (with `m ≠ 0` enforced by `[NeZero m]`, matching the description's range `0` to `m - 1`). The description's account of how these definitions relate to and differ from the quoted passages in Hanson and Walker (2021) is also accurate.\"}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Both definitions in the TARGET (`S1.D25` and `d26`) match the author's description accurately, including the edge cases for `k` and the state, transition, and output behaviour of the modulo-`m` counter (with `m ≠ 0` enforced by `[NeZero m]`, matching the description's range `0` to `m - 1`). The description's account of how these definitions relate to and differ from the quoted passages in Hanson and Walker (2021) is also accurate."
+  }
+}

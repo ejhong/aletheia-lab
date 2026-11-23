@@ -45,3 +45,5 @@ Every paid run. Stop and ask Eugene before going over a question's budget, or ov
 | 2026-11-23 | younger-dryas-crash (#40) | Google Gemini API, `gemini-4-neon` | 0.65 | Independent replication program, one call |
 | 2026-11-23 | unfolding-argument (#66) | OpenAI API, `gpt-6.2-astra` | 6.36 | Statement check, three rounds (3.81, 2.36, 0.19); at list price from logged token counts. Over the daily cap with Eugene's approval |
 | 2026-11-23 | unfolding-argument (#66) | Google Gemini API, `gemini-4-neon` | 17.05 | Statement check, same three rounds (10.21, 6.14, 0.70); at list price from logged token counts |
+| 2026-11-23 | unfolding-argument (#66) | OpenAI API, `gpt-6.2-astra` | 1.30 | Amendment 1 (Stage 3): statement check, three rounds (1.01, 0.17, 0.11); at list price from logged token counts |
+| 2026-11-23 | unfolding-argument (#66) | Google Gemini API, `gemini-4-neon` | 2.35 | Amendment 1 (Stage 3): same check (2.06, 0.15, 0.14) |

@@ -1,0 +1,26 @@
+{
+  "id": "S3a",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T18:54:41Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type) (N : S1 X Y) (k : ℕ), N.D12 → N.D25 k →\n    ∀ (ws : List X) (x : X), ∃ t₀ : ℕ, ∀ t : ℕ, t₀ ≤ t →\n      N.d4 (ws ++ List.replicate (t + k.factorial ^ N.d13) x)\n        = N.d4 (ws ++ List.replicate t x)\n",
+  "usage": [
+    [
+      3043,
+      364
+    ],
+    [
+      4055,
+      522
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every input type X, output type Y, system N of type S1 X Y, and natural number k, suppose first that no two distinct nodes of N are each reachable from the other by a nonempty chain of dependency edges. Here an edge from m to n means that there exist two global states agreeing at every node other than m and a single input on which the update at n differs between those states. The states need not be reachable from the initial state. This hypothesis does not forbid a self-edge. Suppose also that each node’s state type is finite and has at most k elements. Then for every finite list ws of inputs and every input x, there exists a natural number t₀ such that for every natural number t ≥ t₀, the output of N on ws followed by t + (k!)^d copies of x equals its output on ws followed by t copies of x, where d is the number of nodes of N. In each run, N starts in its initial state, updates all nodes from the previous global state on each input in order, and reads the output from the final state. The threshold may depend on ws and x as well as on N and k. Only equality of outputs is required, not equality of final states, and (k!)^d need not be the least eventual period.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every input type X, output type Y, system N of type S1 X Y, and natural number k, suppose first that no two distinct nodes of N are each reachable from the other by a nonempty chain of dependency edges. Here an edge from m to n means that there exist two global states agreeing at every node other than m and a single input on which the update at n differs between those states. The states need not be reachable from the initial state. This hypothesis does not forbid a self-edge. Suppose also that each node’s state type is finite and has at most k elements. Then for every finite list ws of inputs and every input x, there exists a natural number t₀ such that for every natural number t ≥ t₀, the output of N on ws followed by t + (k!)^d copies of x equals its output on ws followed by t copies of x, where d is the number of nodes of N. In each run, N starts in its initial state, updates all nodes from the previous global state on each input in order, and reads the output from the final state. The threshold may depend on ws and x as well as on N and k. Only equality of outputs is required, not equality of final states, and (k!)^d need not be the least eventual period.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"For a finite network, `D12` rules out cycles through distinct units while allowing self-dependence, exactly permitting the stated ordering, and `D25` bounds each unit by k states. Lean defines the claimed eventual output equality with shift (k!)^(number of units); the passages describe the ordering and the binary flip-flops but do not assert that equality.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "For a finite network, `D12` rules out cycles through distinct units while allowing self-dependence, exactly permitting the stated ordering, and `D25` bounds each unit by k states. Lean defines the claimed eventual output equality with shift (k!)^(number of units); the passages describe the ordering and the binary flip-flops but do not assert that equality."
+  }
+}

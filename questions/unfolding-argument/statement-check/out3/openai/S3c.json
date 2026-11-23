@@ -1,0 +1,26 @@
+{
+  "id": "S3c",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T18:55:03Z",
+  "target": "def Target : Prop :=\n  ∃ N : S1 Bool Bool,\n    N.D12 ∧ N.D25 2 ∧ N.d13 = 3 ∧ S1.D6 N (d26 8)\n",
+  "usage": [
+    [
+      2978,
+      422
+    ],
+    [
+      3930,
+      563
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the proposition that there exists a single system N with Boolean inputs and Boolean outputs satisfying all four conditions: (1) For every ordered pair of distinct nodes m and n, there are not both a directed path from m to n and a directed path from n to m. Each path must have at least one edge. An edge from i to j means that there exist two assignments of states to all nodes and one Boolean input such that the assignments agree at every node other than i, but updating j with that same input gives different states under the two assignments. The assignments need not be reachable from the initial state. The path condition does not forbid a self-loop. (2) For every node, its state type is finite and has at most two elements, not necessarily exactly two. (3) N has exactly three nodes. (4) For every finite Boolean input list, with no length bound, the output of N equals that of d26 8: starting from its designated initial states and updating all nodes from the preceding assignment for each input in order, N must output true exactly when the number of true entries is divisible by eight. This includes the empty list, on which the output must be true. Only equality of outputs is required, not equality of internal states or updates.\"}",
+  "translation": "Target defines, but does not prove, the proposition that there exists a single system N with Boolean inputs and Boolean outputs satisfying all four conditions: (1) For every ordered pair of distinct nodes m and n, there are not both a directed path from m to n and a directed path from n to m. Each path must have at least one edge. An edge from i to j means that there exist two assignments of states to all nodes and one Boolean input such that the assignments agree at every node other than i, but updating j with that same input gives different states under the two assignments. The assignments need not be reachable from the initial state. The path condition does not forbid a self-loop. (2) For every node, its state type is finite and has at most two elements, not necessarily exactly two. (3) N has exactly three nodes. (4) For every finite Boolean input list, with no length bound, the output of N equals that of d26 8: starting from its designated initial states and updating all nodes from the preceding assignment for each input in order, N must output true exactly when the number of true entries is divisible by eight. This includes the empty list, on which the output must be true. Only equality of outputs is required, not equality of internal states or updates.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The TARGET defines the stated existence claim: exactly three units, each with at most two states, may depend on themselves but cannot form a cycle through distinct units, and the output is true exactly when the number of true inputs is divisible by eight. The passages support the three-bit feed-forward comparison, and the description correctly distinguishes the TARGET’s zero test from the paper’s full state output.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The TARGET defines the stated existence claim: exactly three units, each with at most two states, may depend on themselves but cannot form a cycle through distinct units, and the output is true exactly when the number of true inputs is divisible by eight. The passages support the three-bit feed-forward comparison, and the description correctly distinguishes the TARGET’s zero test from the paper’s full state output."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "DEF-G",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T19:00:08Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: D25, d26\ndef S1.D25 {X Y : Type} (N : S1 X Y) (k : ℕ) : Prop :=\n  ∀ n, Finite (N.A3 n) ∧ Nat.card (N.A3 n) ≤ k\n\ndef d26 (m : ℕ) [NeZero m] : S1 Bool Bool where\n  A1 := Unit\n  a2 := inferInstance\n  A3 := fun _ => Fin m\n  a4 := fun _ => 0\n  a5 := fun _ σ x => if x then σ () + 1 else σ ()\n  a6 := fun σ => decide (σ () = 0)\n",
+  "usage": [
+    [
+      3251,
+      2310
+    ],
+    [
+      4612,
+      6239
+    ]
+  ],
+  "a_raw": "```json\n{\n  \"translation\": \"The TARGET consists of two definitions: `S1.D25` and `d26`.\\n\\n1. `S1.D25` defines a proposition parameterized by types `X` and `Y`, a record `N : S1 X Y`, and a natural number `k : ℕ`. It holds if and only if for every element `n` of `N.A1`, the type `N.A3 n` is finite (`Finite (N.A3 n)`) and its cardinality (`Nat.card (N.A3 n)`) is less than or equal to `k`. Both finiteness and the cardinality bound are explicitly required (preventing infinite types from passing via `Nat.card` returning `0`). Nothing is required of `N.A1`'s size, `X`, `Y`, `N.a4`, `N.a5`, or `N.a6`, and `k` is an arbitrary natural number.\\n\\n2. `d26` takes a natural number `m : ℕ` together with the hypothesis that `m ≠ 0` (`[NeZero m]`), and constructs a record of type `S1 Bool Bool` with the following fields:\\n- `A1`: the one-element type `Unit` (whose sole element is `()`).\\n- `a2`: the automatically inferred proof that `Unit` is a `Fintype`.\\n- `A3`: the constant family sending every element of `Unit` to `Fin m` (the numbers `0, …, m - 1`).\\n- `a4`: the function sending every element of `Unit` to `0` in `Fin m`.\\n- `a5`: given an element of `Unit` (ignored), a function `σ : Unit → Fin m`, and a Boolean `x : Bool`, it returns `σ () + 1` in `Fin m` (wrapping around from `m - 1` to `0`) if `x` is `true`, and returns `σ ()` unchanged if `x` is `false`.\\n- `a6`: given a function `σ : Unit → Fin m`, it returns the Boolean `true` if `σ () = 0` in `Fin m`, and `false` otherwise.\"\n}\n```",
+  "translation": "The TARGET consists of two definitions: `S1.D25` and `d26`.\n\n1. `S1.D25` defines a proposition parameterized by types `X` and `Y`, a record `N : S1 X Y`, and a natural number `k : ℕ`. It holds if and only if for every element `n` of `N.A1`, the type `N.A3 n` is finite (`Finite (N.A3 n)`) and its cardinality (`Nat.card (N.A3 n)`) is less than or equal to `k`. Both finiteness and the cardinality bound are explicitly required (preventing infinite types from passing via `Nat.card` returning `0`). Nothing is required of `N.A1`'s size, `X`, `Y`, `N.a4`, `N.a5`, or `N.a6`, and `k` is an arbitrary natural number.\n\n2. `d26` takes a natural number `m : ℕ` together with the hypothesis that `m ≠ 0` (`[NeZero m]`), and constructs a record of type `S1 Bool Bool` with the following fields:\n- `A1`: the one-element type `Unit` (whose sole element is `()`).\n- `a2`: the automatically inferred proof that `Unit` is a `Fintype`.\n- `A3`: the constant family sending every element of `Unit` to `Fin m` (the numbers `0, …, m - 1`).\n- `a4`: the function sending every element of `Unit` to `0` in `Fin m`.\n- `a5`: given an element of `Unit` (ignored), a function `σ : Unit → Fin m`, and a Boolean `x : Bool`, it returns `σ () + 1` in `Fin m` (wrapping around from `m - 1` to `0`) if `x` is `true`, and returns `σ ()` unchanged if `x` is `false`.\n- `a6`: given a function `σ : Unit → Fin m`, it returns the Boolean `true` if `σ () = 0` in `Fin m`, and `false` otherwise.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Both definitions in the TARGET match the author's description accurately (including the explicit finiteness requirement in `S1.D25` and the wrap-around, stay-put input, and zero-test output of `d26` for nonzero `m`), and the author's characterization of the cited passages and how these definitions differ from the paper's tollbooth and three-bit circuits is completely faithful.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Both definitions in the TARGET match the author's description accurately (including the explicit finiteness requirement in `S1.D25` and the wrap-around, stay-put input, and zero-test output of `d26` for nonzero `m`), and the author's characterization of the cited passages and how these definitions differ from the paper's tollbooth and three-bit circuits is completely faithful."
+  }
+}

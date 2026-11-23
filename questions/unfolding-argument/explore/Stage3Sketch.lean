@@ -405,7 +405,7 @@ theorem counterHasNoLoopFreeTwin : CounterHasNoLoopFreeTwin := by
     (by simp)
   rw [hagree, hagree, counter_response, counter_response] at h
   have h1 : 1 % m = 1 := Nat.mod_eq_of_lt (by omega)
-  simp [List.count_append, List.count_replicate, h1] at h
+  simp [List.count_replicate, h1] at h
 
 theorem counterIsOneUnitWithMemory : CounterIsOneUnitWithMemory := by
   intro m _

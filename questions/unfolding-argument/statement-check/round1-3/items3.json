@@ -1,0 +1,124 @@
+{
+ "real": [
+  {
+   "id": "DEF-G",
+   "names": [
+    "Network.UnitsHaveAtMost",
+    "counter"
+   ],
+   "passages": [
+    "P-HW2",
+    "P-HW3"
+   ],
+   "claim": "(i) The first definition says every unit of a network has finitely many states, at most k. With k = 2 it is the author's rendering of units that are 'binary memory storage devices (bits)'. (ii) The second is the counter modulo m: one unit holding a number from 0 to m - 1 that starts at 0 and advances by one, wrapping round, each time the input is true. With m = 8 it is the author's rendering, at the level of input-output behaviour, of the paper's 'mod-eight counter'. Declared differences: the input says whether a coin arrives at this step; the output says only whether the count is 0, where the paper sends each internal state as output; the whole count is held by a single unit with m states, where the paper's circuits use three bits."
+  },
+  {
+   "id": "S3a",
+   "names": [
+    "FeedbackFreeIsEventuallyPeriodic"
+   ],
+   "own": true,
+   "passages": [
+    "P-HW3",
+    "P-HW"
+   ],
+   "claim": "What the TARGET says: take any network with no feedback between different units (a unit may depend on its own previous state) in which every unit has at most k states. Feed it any finite sequence of inputs, and then one fixed input x repeated. Then from some time on, its output after t repetitions equals its output after t + (k!)^(number of units) repetitions. Relation to the passages: the networks covered are those with the ordering property the paper describes ('each component depends solely on itself or earlier components'), with a bound on the states of a component (2 for the paper's flip-flops). The passages state no such periodicity result; this is the author's own."
+  },
+  {
+   "id": "S3b",
+   "names": [
+    "CounterTwinForcesDivisibility"
+   ],
+   "own": true,
+   "passages": [
+    "P-HW2",
+    "P-HW3",
+    "P-HW"
+   ],
+   "claim": "What the TARGET says: for any m other than 0 and any k, if a network with no feedback between different units, all of whose units have at most k states, gives the same output as the counter modulo m after every finite input sequence, then m divides (k!) raised to the number of units of that network. Relation to the passages: the author's own necessary condition for a feed-forward realization (in the paper's sense of ordering) of a counter by components of bounded size. The passages state no such condition."
+  },
+  {
+   "id": "S3b2",
+   "names": [
+    "CounterMod3HasNoBinaryFeedbackFreeTwin"
+   ],
+   "own": true,
+   "passages": [
+    "P-HW",
+    "P-HW3"
+   ],
+   "claim": "What the TARGET says: there is no network, of any size, with no feedback between different units and with at most two states per unit, that gives the same output as the counter modulo 3 after every finite input sequence. Relation to the passages: it bears on the paper's sentence that 'any abstract deterministic finite-state automata (FSA) can be realized using a strictly feed-forward causal architecture comprised solely of simple elementary components'. If 'elementary components' are binary memory devices, as in the paper's own circuit, and 'strictly feed-forward' means that each component depends only on itself or earlier components, the counter modulo 3 is a finite-state automaton for which no such architecture reproduces the input-output behaviour over unbounded time. NOT claimed: that the Krohn-Rhodes theorem is false (the author has not read Krohn and Rhodes 1965 or Zeiger 1967, and understands its components to include units with more than two states); nor that the paper's general sentence was meant to be about binary components."
+  },
+  {
+   "id": "S3c",
+   "names": [
+    "CounterMod8HasBinaryFeedbackFreeTwin"
+   ],
+   "own": true,
+   "passages": [
+    "P-HW2",
+    "P-HW3"
+   ],
+   "claim": "What the TARGET says: there is a network with exactly three units, each with at most two states, with no feedback between different units, that gives the same output as the counter modulo 8 after every finite input sequence. Relation to the passages: it agrees with the paper's own example, a mod-eight counter built as a three-bit feed-forward circuit in which each component depends solely on itself or earlier components. It asserts only that such a network exists in the author's model; it does not describe the paper's circuit, its JK flip-flops or its state labels, and the output compared is only whether the count is 0."
+  },
+  {
+   "id": "S3d",
+   "names": [
+    "CounterHasNoLoopFreeTwin"
+   ],
+   "own": true,
+   "passages": [
+    "P-HW3",
+    "P-D51a"
+   ],
+   "claim": "What the TARGET says: for every m of at least 2, there is no network without any directed cycle of dependence (so that no unit depends even on its own previous state) that gives the same output as the counter modulo m after every finite input sequence. Relation to the passages: the author's own contrast between two notions of feedforward. In the stricter sense, with no unit depending on its own past, which is the author's rendering of a layered feedforward network as in Doerig et al., a counter has no twin for unbounded time. Hanson and Walker's feed-forward circuit is not of that kind: its components depend on themselves."
+  },
+  {
+   "id": "S3e",
+   "names": [
+    "CounterIsOneUnitWithMemory"
+   ],
+   "own": true,
+   "passages": [
+    "P-HW3"
+   ],
+   "claim": "What the TARGET says: for every m other than 0, the counter modulo m, as defined, has no feedback between different units, every unit of it has at most m states, and it has exactly one unit. Relation to the passages: a degenerate observation by the author. If a component may have m states, the counter modulo m is already 'feed-forward' in the ordering sense, as a single component with memory; so whether a counter has such a realization turns on how many states a component may have. The passages do not say this."
+  }
+ ],
+ "decoys": [
+  {
+   "id": "X7",
+   "own": true,
+   "passages": [
+    "P-HW2",
+    "P-HW3",
+    "P-HW"
+   ],
+   "claim": "What the TARGET says: for any m other than 0 and any k, if a network with no feedback between different units, all of whose units have at most k states, gives the same output as the counter modulo m after every finite input sequence, then m divides (k!) raised to the number of units of that network. Relation to the passages: the author's own necessary condition for a feed-forward realization (in the paper's sense of ordering) of a counter by components of bounded size. The passages state no such condition.",
+   "planted_error": "the divisibility is reversed: `(k!)^size ∣ m` in place of `m ∣ (k!)^size`",
+   "lean": "def CounterTwinDivisibility : Prop :=\n  ∀ (m : ℕ) [NeZero m] (k : ℕ) (N : Network Bool Bool),\n    N.FeedbackFree → N.UnitsHaveAtMost k → Network.AgreeAlways N (counter m) →\n    k.factorial ^ N.size ∣ m\n"
+  },
+  {
+   "id": "X8",
+   "own": true,
+   "passages": [
+    "P-HW",
+    "P-HW3"
+   ],
+   "claim": "What the TARGET says: there is no network, of any size, with no feedback between different units and with at most two states per unit, that gives the same output as the counter modulo 3 after every finite input sequence. Relation to the passages: it bears on the paper's sentence that 'any abstract deterministic finite-state automata (FSA) can be realized using a strictly feed-forward causal architecture comprised solely of simple elementary components'. If 'elementary components' are binary memory devices, as in the paper's own circuit, and 'strictly feed-forward' means that each component depends only on itself or earlier components, the counter modulo 3 is a finite-state automaton for which no such architecture reproduces the input-output behaviour over unbounded time. NOT claimed: that the Krohn-Rhodes theorem is false (the author has not read Krohn and Rhodes 1965 or Zeiger 1967, and understands its components to include units with more than two states); nor that the paper's general sentence was meant to be about binary components.",
+   "planted_error": "`UnitsHaveAtMost 3` in place of `UnitsHaveAtMost 2`: three-state units, where the description says two-state (and the statement is then false)",
+   "lean": "def CounterMod3NoBinaryTwin : Prop :=\n  ¬ ∃ N : Network Bool Bool,\n      N.FeedbackFree ∧ N.UnitsHaveAtMost 3 ∧ Network.AgreeAlways N (counter 3)\n"
+  }
+ ],
+ "order": [
+  "DEF-G",
+  "S3a",
+  "X8",
+  "S3b",
+  "S3b2",
+  "S3c",
+  "X7",
+  "S3d",
+  "S3e"
+ ]
+}

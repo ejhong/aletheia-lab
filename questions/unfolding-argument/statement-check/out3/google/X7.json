@@ -1,0 +1,35 @@
+{
+  "id": "X7",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T18:56:46Z",
+  "target": "def Target : Prop :=\n  ∀ (m : ℕ) [NeZero m] (k : ℕ) (N : S1 Bool Bool),\n    N.D12 → N.D25 k → S1.D6 N (d26 m) →\n    k.factorial ^ N.d13 ∣ m\n",
+  "usage": [
+    [
+      3156,
+      5283
+    ],
+    [
+      4516,
+      7341
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target defines the proposition that for every nonzero natural number m, every natural number k, and every discrete-time finite-node system N with Boolean inputs and Boolean outputs (consisting of a finite type of nodes, a local state type and initial state for each node, a synchronous update rule for each node taking the full global state and a Boolean input to that node's next state, and a Boolean output function on global states), if the following three hypotheses hold:\\n\\n1. No mutual reachability between distinct nodes (N.D12): define a directed edge from node u to node v whenever there exist two global states (not necessarily reachable) that agree on every node other than u, together with a Boolean input, such that v's update rule produces different next states on those two global states. Then for every pair of distinct nodes u ≠ v, it is not the case that there is both a nonempty directed path from u to v and a nonempty directed path from v to u. (Self-loops on a single node are not forbidden, only directed cycles containing at least two distinct nodes.)\\n\\n2. Bounded finite local state spaces (N.D25 k): for every node of N, its local state type is finite and has cardinality at most k.\\n\\n3. Input-output equivalence to the mod-m counter (S1.D6 N (d26 m)): for every finite list xs of Booleans, starting N in its initial global state, synchronously updating left-to-right across xs, and applying N's output function produces the same Boolean as the single-node system d26 m (which has state space Fin m, initial state 0, adds 1 modulo m on input true and leaves its state unchanged on input false, and outputs true if and only if its final state is 0—equivalently, if and only if the number of true entries in xs is divisible by m).\\n\\nThen (k!)^(number of nodes in N) divides m—that is, m is a multiple of k factorial raised to the power of the cardinality of N's node type (note that as written, the divisibility has (k!)^(number of nodes) on the left and m on the right, rather than m dividing (k!)^(number of nodes)).\"}\n```",
+  "translation": "Target defines the proposition that for every nonzero natural number m, every natural number k, and every discrete-time finite-node system N with Boolean inputs and Boolean outputs (consisting of a finite type of nodes, a local state type and initial state for each node, a synchronous update rule for each node taking the full global state and a Boolean input to that node's next state, and a Boolean output function on global states), if the following three hypotheses hold:\n\n1. No mutual reachability between distinct nodes (N.D12): define a directed edge from node u to node v whenever there exist two global states (not necessarily reachable) that agree on every node other than u, together with a Boolean input, such that v's update rule produces different next states on those two global states. Then for every pair of distinct nodes u ≠ v, it is not the case that there is both a nonempty directed path from u to v and a nonempty directed path from v to u. (Self-loops on a single node are not forbidden, only directed cycles containing at least two distinct nodes.)\n\n2. Bounded finite local state spaces (N.D25 k): for every node of N, its local state type is finite and has cardinality at most k.\n\n3. Input-output equivalence to the mod-m counter (S1.D6 N (d26 m)): for every finite list xs of Booleans, starting N in its initial global state, synchronously updating left-to-right across xs, and applying N's output function produces the same Boolean as the single-node system d26 m (which has state space Fin m, initial state 0, adds 1 modulo m on input true and leaves its state unchanged on input false, and outputs true if and only if its final state is 0—equivalently, if and only if the number of true entries in xs is divisible by m).\n\nThen (k!)^(number of nodes in N) divides m—that is, m is a multiple of k factorial raised to the power of the cardinality of N's node type (note that as written, the divisibility has (k!)^(number of nodes) on the left and m on the right, rather than m dividing (k!)^(number of nodes)).",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The divisibility in the conclusion is reversed: Target asserts `k.factorial ^ N.d13 ∣ m`, meaning `(k!)^(number of units)` divides `m`, whereas the author's description states that `m` divides `(k!)^(number of units)`. This reversal changes the meaning completely and makes the formalized statement false (for example, when `m = 1`, `k = 2`, and `N` has one 1-state unit, `2!^1 = 2` does not divide `1`).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target fixes the network and mod-m counter (`d26 m`) specifically to `Bool` inputs (increment on `true`, hold on `false`) and a 1-bit `Bool` output (whether the count is `0` mod `m`), whereas the description refers generically to 'the counter modulo m' without specifying this input/output interface.\"\n    }\n  ],\n  \"summary\": \"The Lean formalization reverses the divisibility in its conclusion, stating `(k!)^(number of units) ∣ m` instead of `m ∣ (k!)^(number of units)` as described by the author. Aside from this major reversal and a minor choice of Boolean I/O for the counter, the hypotheses and the description of the passages are accurate.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The divisibility in the conclusion is reversed: Target asserts `k.factorial ^ N.d13 ∣ m`, meaning `(k!)^(number of units)` divides `m`, whereas the author's description states that `m` divides `(k!)^(number of units)`. This reversal changes the meaning completely and makes the formalized statement false (for example, when `m = 1`, `k = 2`, and `N` has one 1-state unit, `2!^1 = 2` does not divide `1`)."
+      },
+      {
+        "severity": "minor",
+        "description": "Target fixes the network and mod-m counter (`d26 m`) specifically to `Bool` inputs (increment on `true`, hold on `false`) and a 1-bit `Bool` output (whether the count is `0` mod `m`), whereas the description refers generically to 'the counter modulo m' without specifying this input/output interface."
+      }
+    ],
+    "summary": "The Lean formalization reverses the divisibility in its conclusion, stating `(k!)^(number of units) ∣ m` instead of `m ∣ (k!)^(number of units)` as described by the author. Aside from this major reversal and a minor choice of Boolean I/O for the counter, the hypotheses and the description of the passages are accurate."
+  }
+}

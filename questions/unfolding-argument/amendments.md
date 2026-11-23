@@ -75,3 +75,21 @@ its state would be no easier to build, so the negative result is not weakened by
 (S3c) is about less than the paper's circuit does. "Elementary component" is read as "unit with at most k
 states"; the Krohn–Rhodes theorem, as I understand it second-hand, allows larger units for some machines, and if
 so Hanson and Walker's sentence is true of those and S3b′ is a remark about what "elementary" has to mean.
+
+**Statement check outcome** (written before the lock). Run on 2026-11-23, three rounds, $3.65 (OpenAI $1.30,
+Google $2.35). Detail: `statement-check/REPORT-3.md`, `round1-3/`, `round2-3/`.
+
+- Planted errors: both checkers returned `divergent` on both.
+- The six statements: `faithful` or `faithful_with_caveats` from both checkers in round 1. None was changed.
+- The two definitions (DEF-G): Google `faithful_with_caveats` in round 1; OpenAI `divergent`, because my
+  description called the counter a rendering of the tollbooth's input-output behaviour. It is not: the paper
+  sends each of the eight states as output, and this counter reports only whether the count is 0. The Lean was
+  left as it is, on purpose: a counter that reveals less is harder to tell apart from a twin, so the
+  impossibility results (S3b, S3b′, S3d) are stronger for it, and the existence result (S3c) is weaker. The
+  description was rewritten to say the definitions are the lab's own and how they differ from the paper. Round
+  2: Google `faithful`; OpenAI found one false sentence in the new description (a one-state unit does not
+  satisfy the bound when k = 0). Corrected. Round 3: both `faithful`.
+- Unresolved divergences: none.
+- Caveats both raise (minor, carried into `RESULTS.md`): the counter's interface (inputs `true`/`false`, output
+  "is the count 0") is the lab's; "network" means finitely many units, synchronous and deterministic; dependence
+  is judged over all states, reachable or not.

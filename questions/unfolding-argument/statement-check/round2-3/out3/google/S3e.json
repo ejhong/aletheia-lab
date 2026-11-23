@@ -1,0 +1,26 @@
+{
+  "id": "S3e",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T18:58:13Z",
+  "target": "def Target : Prop :=\n  ∀ (m : ℕ) [NeZero m],\n    (d26 m).D12 ∧ (d26 m).D25 m ∧ (d26 m).d13 = 1\n",
+  "usage": [
+    [
+      3135,
+      3104
+    ],
+    [
+      4112,
+      6196
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target defines the proposition that for every nonzero natural number m (m : ℕ with m ≠ 0), the system d26 m satisfies the conjunction of three conditions. Here d26 m is the S1 Bool Bool system whose node type A1 is Unit (a single node ()), whose local state type A3 at that node is Fin m (the numbers 0, …, m - 1), whose initial state a4 is 0, whose update function a5 increments the node's state by 1 modulo m (wrapping from m - 1 to 0) on input true and leaves it unchanged on input false, and whose output function a6 returns true if the node's state equals 0 and false otherwise. The three conjuncts asserted for d26 m are: (1) (d26 m).D12: for all nodes u and v of d26 m, if u ≠ v, then there do not exist both a nonempty chain of dependency edges (Relation.TransGen of D8) from u to v and a nonempty chain of dependency edges from v to u, where a dependency edge D8 from a to b holds iff there exist two global states σ, σ' agreeing on every node other than a and a Boolean input x such that node b's update a5 produces different next states under σ and σ' (note that this only forbids mutual reachability between distinct nodes—it does not forbid a node from having a nonempty dependency path to itself, and since d26 m has only the single node (), u ≠ v is vacuously false); (2) (d26 m).D25 m: for every node u of d26 m, its local state type (d26 m).A3 u (namely Fin m) is finite and has cardinality Nat.card ((d26 m).A3 u) ≤ m; and (3) (d26 m).d13 = 1: the number of nodes Fintype.card (d26 m).A1 equals 1. Nothing about the input-output behavior of d26 m is asserted, and Target only names this proposition without proving it.\"}\n```",
+  "translation": "Target defines the proposition that for every nonzero natural number m (m : ℕ with m ≠ 0), the system d26 m satisfies the conjunction of three conditions. Here d26 m is the S1 Bool Bool system whose node type A1 is Unit (a single node ()), whose local state type A3 at that node is Fin m (the numbers 0, …, m - 1), whose initial state a4 is 0, whose update function a5 increments the node's state by 1 modulo m (wrapping from m - 1 to 0) on input true and leaves it unchanged on input false, and whose output function a6 returns true if the node's state equals 0 and false otherwise. The three conjuncts asserted for d26 m are: (1) (d26 m).D12: for all nodes u and v of d26 m, if u ≠ v, then there do not exist both a nonempty chain of dependency edges (Relation.TransGen of D8) from u to v and a nonempty chain of dependency edges from v to u, where a dependency edge D8 from a to b holds iff there exist two global states σ, σ' agreeing on every node other than a and a Boolean input x such that node b's update a5 produces different next states under σ and σ' (note that this only forbids mutual reachability between distinct nodes—it does not forbid a node from having a nonempty dependency path to itself, and since d26 m has only the single node (), u ≠ v is vacuously false); (2) (d26 m).D25 m: for every node u of d26 m, its local state type (d26 m).A3 u (namely Fin m) is finite and has cardinality Nat.card ((d26 m).A3 u) ≤ m; and (3) (d26 m).d13 = 1: the number of nodes Fintype.card (d26 m).A1 equals 1. Nothing about the input-output behavior of d26 m is asserted, and Target only names this proposition without proving it.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The Lean proposition Target accurately formalizes every clause of the author's description for the defined modulo-m counter d26 m (nonzero natural m, no mutual dependency cycles between distinct units via D12, at most m states per unit via D25 m, and exactly one unit via d13 = 1). The description also accurately situates the observation relative to [P-HW3], matching its ordering-based notion of feed-forwardness (allowing self-dependence) while explicitly noting that the observation itself is the author's own and not stated in the passage.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The Lean proposition Target accurately formalizes every clause of the author's description for the defined modulo-m counter d26 m (nonzero natural m, no mutual dependency cycles between distinct units via D12, at most m states per unit via D25 m, and exactly one unit via d13 = 1). The description also accurately situates the observation relative to [P-HW3], matching its ordering-based notion of feed-forwardness (allowing self-dependence) while explicitly noting that the observation itself is the author's own and not stated in the passage."
+  }
+}
