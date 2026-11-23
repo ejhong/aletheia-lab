@@ -21,7 +21,8 @@ Inputs
 
 Content files are Markdown with an optional front matter block (key: value lines between --- lines). Inside them,
 a heading "### Stage N · Title" starts a stage of the plan; its first lines may be "Status: done | in progress |
-not started", "Gate: ..." and "Condition: ...". Consecutive stages render as the progress timeline.
+not started", "Gate: ..." and "Condition: ...". Consecutive stages render as the progress timeline. A line
+"::: details Title" opens a folded section and a line ":::" closes it.
 
 The build never fails because GitHub is unreachable.
 """
@@ -99,6 +100,7 @@ LIST_RE = re.compile(r"^(\s*)([-*+]|\d+[.)])\s+(.*)$")
 STAGE_RE = re.compile(r"^###\s+Stage\s+(\w+)\s*[·:.\-–—]\s*(.+?)\s*$")
 PLACEHOLDER_RE = re.compile(r"^\{\{\s*([\w-]+)\s*\}\}$")
 FIGURE_RE = re.compile(r"^\{\{\s*figure:\s*([\w-]+(?:/[\w-]+)*)\s*\}\}$")
+DETAILS_RE = re.compile(r"^:::\s*details\s+(.+?)\s*$")
 
 
 def inline(text, stash=None):
@@ -163,7 +165,7 @@ class Doc:
 
 
 def is_block_start(s):
-    return bool(re.match(r"^(#{1,6}\s|```|>|\||(-{3,}|\*{3,})$)", s)) or bool(LIST_RE.match(s))
+    return bool(re.match(r"^(#{1,6}\s|```|:::|>|\||(-{3,}|\*{3,})$)", s)) or bool(LIST_RE.match(s))
 
 
 def render_list(items, i, indent):
@@ -240,6 +242,17 @@ def blocks(md, doc):
                 code.append(lines[j])
                 j += 1
             out.append("<pre><code>%s</code></pre>" % esc("\n".join(code)))
+            i = j + 1
+            continue
+        m = DETAILS_RE.match(s)
+        if m:
+            # "::: details Title" ... ":::" folds a stretch of the page away behind its title.
+            j, inner = i + 1, []
+            while j < n and lines[j].strip() != ":::":
+                inner.append(lines[j])
+                j += 1
+            out.append('<details class="more"><summary>%s</summary><div class="more-body">%s</div></details>'
+                       % (inline(m.group(1)), blocks("\n".join(inner), doc)))
             i = j + 1
             continue
         m = FIGURE_RE.match(s)

@@ -1,36 +1,106 @@
 ---
 # To update this page, edit this file and push to main; the site rebuilds itself.
+#   The panels and diagrams are HTML fragments in site/figures/godel-argument/, included with {{figure: ...}}.
 #   Tick a step:     change "- [ ]" to "- [x]".
 #   Move a stage:    set its "Status:" line to done, in progress or not started.
-#   Report results:  replace the note under "## Results" with text or a Markdown table.
+#   Fold a section:  "::: details Title" opens it and ":::" closes it.
 #   Also update the "Where things stand" note and the "updated:" date below.
-summary: What exactly does the Lucas–Penrose argument prove, and from which premises?
-dek: What exactly does the Lucas–Penrose argument prove, and from which premises? The plan is to write the argument and its standard replies in Lean 4, so that a proof checker shows which premises carry which conclusion.
+summary: Penrose argued from Gödel's theorem that the mind is not a machine. A proof checker went through the argument. The modest conclusion holds; the proof of the strong one does not.
+dek: Roger Penrose argued from Gödel's theorem that the human mind cannot be a machine. We wrote his argument and the standard replies in Lean 4, where a proof checker verifies every step and every assumption has to be stated.
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Stages 0, 1 and 2 are done. Thirty-five statements are locked and proved in Lean, using only Lean's three standard axioms. In short: Penrose's modest conclusion, that we are not running an algorithm we can know to be sound, is proved. His proof of the stronger conclusion, that the mind is no machine at all, does not establish it: the argument is valid, but two of its rules contradict themselves, and with the rules repaired it reaches only something weaker. The stronger conclusion itself is neither proved nor refuted. Nothing here touches Penrose's physics.
+> **Where things stand, 23 November 2026.** Finished, as far as it was planned. Penrose's modest conclusion is proved. His proof of the stronger one, that the mind is no machine at all, does not hold up. The stronger conclusion itself is neither proved nor refuted, and nothing here touches his physics.
 
-## The question
+## What we figured out
 
-What exactly does the Lucas–Penrose argument prove, and from which premises? The plan is to formalize the argument and its standard analyses in Lean 4, a language in which a small trusted kernel checks every step of a proof, so that the kernel shows which premises carry which conclusion.
+Gödel showed in 1931 that a consistent formal system strong enough for arithmetic cannot prove its own consistency. Since 1961 the philosopher John Lucas, and later the physicist Roger Penrose, have argued that this sets minds apart from machines: a machine is such a system, a mathematician can see what it cannot prove, so the mathematician is not that machine. Logicians have mostly answered that the argument assumes too much. The dispute has run for sixty years, in prose.
 
-This settles what follows from what. It does not settle whether minds are machines.
+We put it to a proof checker. In Lean 4 every assumption must be written into the statement of a theorem, and a small trusted program rejects any proof that leans on anything else. So the checker can say exactly which assumptions carry which conclusion. Thirty-five statements were fixed in advance, each read by AI models from two other companies, and then proved.
 
-Roughly, as the argument is usually summarised: Gödel's second incompleteness theorem says that a consistent formal system strong enough for basic arithmetic, whose axioms a machine can list, cannot prove its own consistency. Lucas and Penrose argued that a human mathematician can see that such a system is consistent, so human mathematical understanding is not the output of any such system. The replies turn on what the human would have to know for that to work: that the system is consistent, and which system it is.
+{{figure: godel-argument/verdict}}
 
-## Why it matters
+Four things came out.
 
-- **The atlas has an open claim on it.** Aletheia's claim [ORCH-C040](https://ejhong.github.io/aletheia/claims/ORCH-C040/), "Human mathematical understanding is not the execution of any knowably sound formal algorithm", is rated Unresolved in the atlas (as read on 22 November 2026). It sits in the atlas case on Orch OR, [Collapse, Not Computation](https://ejhong.github.io/aletheia/cases/orch-or/).
-- **Prose hides premises; a proof checker does not.** In Lean every assumption has to be written into a theorem's statement, and the kernel rejects a proof that leans on anything else. That makes it possible to say exactly which premises each conclusion needs.
-- **Most of the mathematics already exists.** The Foundation library has machine-checked Gödel's first and second incompleteness theorems, Löb's theorem and local reflection. What the lab adds is the mind/machine reading, the source locators, and a table of which premises carry which conclusion.
-- **It appears not to have been done.** Searches on 22 November 2026 found no earlier machine-checked version of the Lucas–Penrose argument, epistemic arithmetic, the knower paradox or Gödel's disjunction. One project planned the same formalization and deferred it (see Sources).
+1. **The argument proves something real.** If your mind were a particular machine, you could not also know that machine to be reliable. That is the conclusion Penrose himself states in 1994: mathematicians are not using a "knowably sound algorithm".
+2. **It does not prove that the mind is not a machine.** A machine can be perfectly reliable without being able to know it. Peano arithmetic is one. Knowing its reliability from outside just gives a second machine with the same blind spot.
+3. **The trouble is self-knowledge, not machinery.** The assumption that does the damage is "I know that what I know is true". It is what makes "I know which machine I am" contradictory, for any reasoner. No proof here uses the difference between a mind and a machine.
+4. **Penrose's second, subtler argument is valid but rests on rules that contradict themselves.** With the rules repaired it reaches only this: if I am a machine in my arithmetic, I know something that machine cannot prove.
 
-The lab does not grade the atlas. A finished result is filed with Aletheia as an outside source, and Stage 1's report gives no verdict on ORCH-C040.
+In short: the old argument is right about something smaller than it claims. The mathematics is not new; what is new is that a proof checker has been through it, and the table of which assumption does what.
+
+{{figure: godel-argument/tiles}}
+
+## The first argument
+
+Model an idealized mind as the set of arithmetic statements it would ever accept, and a machine as a formal system whose axioms can be listed mechanically. Thirteen statements were proved in this setting.
+
+{{figure: godel-argument/reach}}
+
+- **The conditional holds.** If a consistent mind is exactly what machine F proves, it does not contain the statement that F is consistent. Put Penrose's way: a mind that accepts "whatever F proves is so" contains everything F proves and something more.
+- **Being a sound machine is not contradictory.** Peano arithmetic is sound, consistent and mechanical, and cannot prove its own true consistency statement. It even proves "if I am consistent, then my Gödel sentence holds". So all a mind would need, to outdo it, is knowledge that it is consistent.
+- **Supplying that knowledge gives another machine.** Add the consistency statement and you have a second sound machine, with a Gödel sentence of its own. This is the reply Lucas anticipated in 1961.
+- **Asserting your own soundness is contradictory for anyone.** Any system that can talk about its own beliefs in the standard way and asserts that they are all true is inconsistent, machine or not. This is David Chalmers's criticism of 1995, and it holds.
+- **Gödel's own conclusion holds.** If everything a mind accepts is true, then either no formal system generates it, or some true statement of a simple kind is left undecided by it. Gödel claimed this either/or, and no more.
+
+Penrose is careful about this himself. On page 76 of *Shadows of the Mind* he states the modest conclusion as proved, and calls the claim that thought is non-computational "the stronger deduction", to be argued for separately.
+
+## Adding "I know"
+
+Arithmetic cannot say "I know" or "I am this machine". So the second stage adds an operator K, read "it is known that", with the principles that William Reinhardt gave it in 1985. The question is which of those principles each result actually needs.
+
+{{figure: godel-argument/premises}}
+
+Then a small formal language was built in which "there is a machine such that…" can be said inside the language itself. Two of Reinhardt's theorems were proved in it. They differ only in where "I know" stands.
+
+{{figure: godel-argument/which}}
+
+Together these are Gödel's either/or again, now inside a logic of knowledge. A reasoner cannot know which machine it is. It can still be one, and then there are truths it can never know. The proofs do not say which of the two holds. Penrose's second argument is the attempt to rule out being a machine altogether.
+
+## The second argument
+
+This is the argument meant to reach "I am not the machine F, whatever F is". The logician Peter Koellner set it out in eight steps in 2018. It lets truth and knowledge apply to sentences that themselves speak of truth and knowledge, and it uses two rules, marked below.
+
+{{figure: godel-argument/steps}}
+
+- **Rule one fails.** "Whatever is so is true" contradicts "whatever is true is so" as soon as there is a liar sentence, one that says of itself that it is not true.
+- **Rule two fails.** "Whatever is proved is known" contradicts "what is known is true" as soon as a sentence says of itself that it is not known.
+- **The repair.** Restrict both rules to sentences that are definitely true or false. The argument still runs, provided two of its own lines are of that kind. Koellner states as a theorem that they are not. Our reduction shows why: "I am F", taken over the whole language, is not. That last fact is his theorem too, quoted here and not re-proved.
+- **What survives.** Restrict "I am F" to arithmetic, where it is definitely true or false. Then the last step fails, because the sentence the argument produces is no longer a sentence of arithmetic. What is left is weaker: something is known that F does not prove.
+
+So the proof of the strong claim does not go through. That is not a proof that the strong claim is false. Koellner's further result, also quoted and not re-proved, is that in his system neither side of Gödel's either/or can be proved or refuted.
+
+## How it was checked
+
+- **Statements first.** Each claim was written as a formal statement before any proof existed, and tied to the page of the source it formalizes.
+- **Two outside AIs read every statement.** Models from OpenAI and Google translated each one back into English without seeing our explanation, then compared it with the source passage. Deliberately wrong statements were mixed in to test them. In the final rounds both caught all fifteen.
+- **Their objections changed the statements.** More than a dozen were rewritten before being locked, and four disagreements that could not be resolved are reported with the results.
+- **Then the lock.** The statement files were hashed and committed before the proofs. A proof can change freely; it cannot quietly prove something else.
+- **Then the proofs.** Lean's kernel checked each one. The build fails if any theorem uses `sorry` or any assumption beyond Lean's three standard axioms, and for each result there is a proof that its assumptions can hold together.
+
+The underlying theorems of Stage 1 (Gödel's two incompleteness theorems, Löb's theorem) were already proved in the [Foundation](https://github.com/FormalizedFormalLogic/Foundation) library. The work here adds the reading in terms of minds and machines, the links to the sources, and the map of assumptions.
+
+## What we got wrong
+
+One claim of ours was false, and it was published here briefly. Working from a summary of Reinhardt's 1985 paper, we said that his theorem "a knower cannot know consistent a system that captures all it knows" needed an extra condition that the summary had left out, and we offered a repaired version. Then the paper itself arrived. Reinhardt states the theorem with no such condition. What the summary leaves out is his definition of "consistent": that the system never asserts a sentence together with its negation.
+
+The theorem was then stated as he states it, checked, and proved. The plan had said to take statements from the original papers. We went ahead from a summary, and that is where the error came from.
+
+## What this cannot tell you
+
+- **Whether minds are machines.** The proofs show what follows from what. They say nothing about what a brain is.
+- **Whether a person is well described as an ideal reasoner** with a fixed, consistent, logically closed body of knowledge. Every result here is about such idealized reasoners.
+- **Whether Penrose would accept the eight steps** as his argument. A reconstruction was checked, not his wording.
+- **Whether another theory of truth would save the argument.** One was used, Solomon Feferman's. Koellner argues that others would not help; that was not checked.
+- **The two central theorems of Koellner's analysis** are quoted, not re-proved. Checking them means building his whole system in Lean, which was not done.
+- **A published reply to Koellner**, by Corradini and Galvan, could not be obtained and is not covered.
+- **Anything about physics.** Penrose's proposal that quantum gravity is non-computable, and the Orch OR theory built on it, stand or fall on evidence of another kind.
+
+This is no verdict on the atlas's claim [ORCH-C040](https://ejhong.github.io/aletheia/claims/ORCH-C040/). The lab does not grade the atlas.
 
 ## The plan
 
-Four stages. Each ends at a gate where Eugene decides what happens next (on GitHub, the label `needs:eugene`). The ticks below mark steps as they are finished.
+Three stages were planned and a fourth held in reserve. Each ended at a gate where Eugene decided what happened next.
 
 ### Stage 0 · Statements only
 Status: done
@@ -41,7 +111,7 @@ Write down exactly what will be proved, and check that it says what was meant, b
 - [x] Definitions, each with an English gloss and a locator to the passage it formalizes: formal system as r.e. theory; soundness; consistency; an idealized mind as a set K of sentences; "K is the theorem set of some machine"; and plain-arithmetic stand-ins for "K knows which machine" and "K knows the machine is sound".
 - [x] Statements in `lean/GodelArgument/Statement.lean` as `def … : Prop`: 11 definitions and 13 statements, compiling against the pinned Foundation library. Proofs elsewhere must have exactly those types, so the lock covers the statements while proofs stay free to change.
 - [x] The proof-lane Lean CI, set up on the question's branch, with a build-time check that a theorem uses only Lean's three standard axioms.
-- [x] The statement check. OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` each translated every Lean statement back into English blind, then compared it with the source passage. Three deliberately wrong statements were mixed in. In the final round both checkers caught all three. Their criticism in the earlier rounds led to five statements being rewritten. Of 17 items with a source passage, 15 ended as faithful or faithful with caveats from both checkers; two divergences are accepted with reasons and will be reported with the results. One statement, the halting form, could not be checked against its source because *Shadows of the Mind* is not yet in hand.
+- [x] The statement check. OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` each translated every Lean statement back into English blind, then compared it with the source passage. Three deliberately wrong statements were mixed in. In the final round both checkers caught all three. Their criticism in the earlier rounds led to five statements being rewritten. Of 17 items with a source passage, 15 ended as faithful or faithful with caveats from both checkers; two divergences are accepted with reasons and will be reported with the results. One statement, the halting form, had no source in hand at the time; it was checked the next day, when photographs of the pages arrived, and both checkers found it faithful.
 - [x] Eugene reviews the report; then the protocol and the statement file are locked. Locked on 22 November 2026, 17:49 UTC.
 
 ### Stage 1 · Core results in plain arithmetic
@@ -76,29 +146,11 @@ Condition: Only after reporting on the earlier stages.
 
 Out of scope: Carlson's consistency proof, which is cited instead. Dropped for now: the stably-computable version, because its author's own arXiv comment on 2208.04752v3 says "The framework currently has gaps".
 
-## The rules
+## Every result
 
-These come from the lab's proof lane and from issue #19.
+The thirty-five statements, with the name of each proof in the repository. "Proved" means Lean's kernel accepted the proof and the proof uses only Lean's three standard axioms.
 
-- **A statement check by other vendors' models.** Before anything is proved, models from two other vendors translate each formal statement back into English without seeing the lab's gloss or the proof, and list where it differs from the source passage. Deliberately wrong statements are mixed in to test the checkers. Unresolved divergences are reported in `RESULTS.md`.
-- **The lock.** The statements are definitions in `lean/Statement.lean`. Once checked, the file's SHA-256 is committed in `protocol.lock` before any proof. A proof can change freely but cannot quietly prove something else. A corrected statement is a new file plus a dated amendment, never an edit.
-- **No `sorry`.** No `sorry`, no `admit`, no new `axiom`. Each headline theorem may depend only on `propext`, `Classical.choice` and `Quot.sound`, checked inside the build so that a violation fails it.
-- **No vacuous theorems.** Every assumed premise is a hypothesis in the theorem's statement, and each headline theorem comes with an instance showing its hypotheses can hold together (for example PA in the standard model). Nothing may be true only because its premises contradict each other.
-- **Keep "is a machine" and "knows which machine" apart.** The whole dispute lives in that gap. In Koellner's notation: WMT `∃e (K = F_e)`, SMT `K∃e (K = F_e)`, SSMT `∃e K(K = F_e)`. Stage 1 can express "knows which machine" only by proxy, because plain arithmetic has no way to say "me"; each gloss says which side of that trade-off its statement is on.
-- **Credit the library.** Where a result restates a theorem Foundation already proves, `RESULTS.md` names that theorem. Incompleteness is not rebuilt from scratch.
-
-## Results
-
-> **Stage 1, 22 November 2026.** All thirteen statements are proved. This is not a verdict on ORCH-C040, and it does not say whether minds are machines.
-
-Model an idealized mind as the set K of arithmetic statements it would ever accept, and a machine as a formal system F whose axioms can be listed mechanically. Then:
-
-- **The conditional holds.** If a consistent K is exactly what F proves, K does not contain F's consistency statement. In the form Penrose's conclusion is usually given: a consistent, logically closed mind that accepts "whatever F proves is so" contains everything F proves and something more. It is not F.
-- **Being a sound machine is not contradictory.** Peano arithmetic is sound, consistent and mechanical, and cannot prove its own true consistency statement. The machine even proves "if I am consistent, my Gödel sentence holds". What a mind would need, to outdo F, is knowledge that F is consistent; supplying it yields a second machine with a blind spot of its own.
-- **The troublesome premise is self-knowledge of soundness, not mechanism.** Any system that can talk about its own beliefs in the standard way and asserts its own consistency is inconsistent, machine or not. Asserting the soundness of a different sound system is harmless.
-- **Gödel's disjunction holds.** If everything in K is true, either no formal system generates K, or some true statement of the simple "for all numbers" kind is undecided by K.
-
-So the argument establishes "not a machine you know to be sound". It does not establish "not a machine".
+::: details Stage 1: thirteen statements in plain arithmetic
 
 | Claim | Lean name | Premises required | Status | Source |
 |---|---|---|---|---|
@@ -116,27 +168,9 @@ So the argument establishes "not a machine you know to be sound". It does not es
 | Variant for sets not closed under deduction | `godelDisjunctionRE` | everything in K is true | Proved; a variant | as above |
 | Penrose's argument in halting form | `penroseTuring` | A is a sound, mechanically listable certifier of non-halting | Proved | Penrose 1994, §2.5, pp. 73–75 |
 
-**How it was checked.** The Lean kernel checked every proof; the build fails if any theorem uses more than Lean's three standard axioms. For each statement there is also a proof that its assumptions can hold together, so nothing is true only because its premises clash. Before anything was proved, models from OpenAI and Google translated each statement back into English blind and compared it with the source; in the final round both caught all three deliberately wrong statements mixed in.
+:::
 
-**What is not new.** The underlying theorems (Gödel's two incompleteness theorems, Löb's theorem, reflection) are already proved in the Foundation library. The lab adds the mind-and-machine reading, the source locators and the table of premises.
-
-**Limits that qualify the table.**
-
-- Plain arithmetic cannot say "I am this machine" or "I know". Set membership stands in for knowing. One checker judged the second row a stand-in, not a formalization of Gödel's remark; that is right. Stage 2A's third row is the version with a knowledge operator.
-- Penrose's second argument is not covered by Stage 1. Tier 2C of Stage 2 takes it up; see below.
-- Gödel's words are quoted through Koellner; that book was not in hand. Penrose's were checked against photographs of pp. 72–77 of *Shadows of the Mind*.
-- Penrose's own conclusion on p. 76 is that mathematicians are not using a "knowably sound algorithm". That is the version the proofs support. He calls the claim that thought is non-computational "the stronger deduction".
-- Nothing here tests whether a person is well modelled as a consistent, logically closed set of statements.
-
-> **Stage 2A, 23 November 2026.** All nine statements are proved. They are about an abstract knowledge operator, not about epistemic arithmetic itself, and this too is no verdict on ORCH-C040.
-
-Add an operator K, read "it is known that". F is any system; it need not be a machine. Then:
-
-- **A knower exceeds any system it knows to be sound.** If it is known, sentence by sentence, that whatever F asserts is so, then something is known that F does not assert.
-- **A knower that knows a system captures all it knows cannot know that system consistent.** Nothing is assumed about F. "Consistent" means that F never asserts a sentence together with its negation. This is Reinhardt's absolute version of the second incompleteness theorem.
-- **A correction.** This page first said that theorem needed an extra condition on F which the literature leaves out. That was wrong. Reinhardt's own paper states it with no condition; what a later summary leaves out is his definition of "consistent". The statement written before his paper was read is still true, but it is a weaker result, not a repair of his.
-- **Knowing which system you are is contradictory.** A logical core of this needs no arithmetic at all, and is the heart of Reinhardt's own proof.
-- **What carries it is knowing that your knowledge is true.** Take K to be "Peano arithmetic proves". It satisfies every other assumption, trivially knows which system it is, and no contradiction arises. A machine's own notion of proof passes every test of a knower here except knowing that what it proves is true.
+::: details Stage 2A: nine statements about a knowledge operator
 
 | Claim | Lean name | Assumptions about K | Other assumptions | Status |
 |---|---|---|---|---|
@@ -150,19 +184,9 @@ Add an operator K, read "it is known that". F is any system; it need not be a ma
 | For no p is it known that p holds exactly when ¬p is known | `noKnownSelfDiagonal` | all four | none | Proved; the core of Reinhardt's own proof |
 | "Known that what is known is so" cannot be dropped: "Peano arithmetic proves" satisfies the rest | `knownFactivityCannotBeDropped` | none: it names a system | none | Proved |
 
-**How it was checked.** As in Stage 1. The checks ran before each lock and changed the statements three times. Both checkers caught all six planted errors. One divergence stands: Google's model judged the "contradiction follows" row weaker than Reinhardt's theorem, because it works sentence by sentence for a fixed F and has no quantifier over machines inside the language. That is right, and closing the gap is tier 2B.
+:::
 
-**Limits.** The layer is abstract: facts the literature derives from arithmetic are assumed here, and nothing with a quantifier inside the language is expressed. Reinhardt's 1985 paper was read only after the first seven statements were locked; his other papers were not read.
-
-> **Tier 2B, 23 November 2026.** All six statements are proved, in a formal language that has the knowledge operator and real quantifiers. No verdict on ORCH-C040.
-
-Read U(e, x) as "x belongs to the e-th set"; think of the outputs of the e-th machine. Then:
-
-- **Knowing which set you are is refuted, inside the language.** There is no e such that it is known that the things known not to belong to themselves are exactly the e-th set.
-- **Being some set gives a truth you cannot know.** If for some e those things are exactly the e-th set, known or not, then for some e: e is not in the e-th set, and that can never be known. This is Gödel's disjunction: either the knower is no such set, or there are truths it can never know.
-- **"What is proved is known" is derived, not assumed**, and the logic is consistent.
-
-The first two differ only in where "it is known that" stands.
+::: details Stage 2B: six statements in a logic with real quantifiers
 
 | Claim | Lean name | Axioms for K used | Status |
 |---|---|---|---|
@@ -173,18 +197,9 @@ The first two differ only in where "it is known that" stands.
 | The same, known | `knownThesisGivesKnownUnknownTruth` | as the first and third rows | Proved |
 | The logic does not prove falsehood | `logicIsConsistent` | none | Proved |
 
-**How it was checked.** As before, and this time the definition of the logic was checked too. Both checkers caught all three planted errors, one of them inside the axioms. Round 1 found the draft allowed axioms with free variables; they are now sentences. No divergence stands.
+:::
 
-**Limits.** The language is a fragment with no arithmetic, so "the e-th machine" is a reading: nothing says the sets are computable. Only the one diagonal instance of Reinhardt's schema is stated. That "I am some set" is consistent with these axioms is Reinhardt's result, cited, not proved here.
-
-> **Tier 2C, 23 November 2026.** All seven statements are proved. They concern Koellner's eight-step rendering of Penrose's second argument, not Penrose's text, and they give no verdict on ORCH-C040.
-
-Penrose's second argument is the one meant to show "I am not the machine F", for any F. It uses three principles: what is known is true; whatever is so is true; whatever is proved is known. Truth and knowledge are applied to sentences that themselves speak of truth and knowledge.
-
-- **The argument is valid.** From those rules and six facts taken from arithmetic, "I am not F" follows. If it fails, it fails in its rules.
-- **Its rules contradict themselves.** "Whatever is so is true" yields a contradiction as soon as there is a liar sentence. "Whatever is proved is known" yields one as soon as a sentence says of itself that it is not known. From contradictory rules anything follows.
-- **Repaired, it needs something it lacks.** Restrict both rules to sentences that are true or false. The argument then needs two of its own statements to be of that kind. They are not, if "I am F" is not, and Koellner proves that it is not. That theorem is cited, not re-proved here.
-- **For a safe version of "I am F", it stops short.** Restricted to arithmetic, "I am F" is true or false, but then the last step fails. What is left is weaker: something is known that F does not prove.
+::: details Stage 2C: seven statements about the second argument
 
 | Claim | Lean name | Status |
 |---|---|---|
@@ -196,11 +211,9 @@ Penrose's second argument is the one meant to show "I am not the machine F", for
 | If "I am F" is indeterminate, so are those two statements | `stepsIndeterminateIfThesisIs` | Proved; a reduction of a theorem Koellner states without proof |
 | For a determinate "I am F": something is known that F does not prove | `restrictedThesisGivesUnprovableKnowledge` | Proved; the lab's own |
 
-**How it was checked.** As before. Both checkers caught all three planted errors. Round 1 found one statement using the wrong determinateness premises; it now uses the two statements Koellner names. One divergence stands: the third row is stronger than the remark of Koellner's that it supports.
+:::
 
-**Limits.** A reconstruction was checked, not Penrose's own wording. Koellner's system is not built, so three of his theorems are cited, not proved. Only one theory of self-applicable truth is considered. The reply to Koellner by Corradini and Galvan could not be obtained and is not covered.
-
-Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Cost: $40.26, all on statement checks.
+Full report, with every limit and every disagreement: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Changes of plan: [`amendments.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/amendments.md). Cost: $40.26, all for the outside AIs' checks.
 
 ## Sources
 
