@@ -819,3 +819,34 @@ details.more > summary:focus-visible { outline: 2px solid var(--copper); outline
 .chart .c-line5 { stroke: var(--ink); stroke-width: 1.5; }
 .fig-legend .k-tick { stroke: var(--faint); stroke-width: 1.5; }
 .fig-legend .k-line5 { stroke: var(--ink); stroke-width: 1.5; }
+
+/* ---------- Positions table: who says what of a proof and of its conclusion ---------- */
+
+.stances { border: 1px solid var(--line); margin: 2rem 0 1.25rem; }
+.stance {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) minmax(0, 1.3fr); gap: 1.5rem;
+  align-items: start; padding: 1.1rem 1.25rem 1.2rem; background: var(--paper); border-top: 1px solid var(--line);
+}
+.stance:first-child { border-top: 0; }
+.stance.stance-head { padding-block: .6rem; background: var(--paper-deep); }
+.prose .stance-head p {
+  margin: 0; font: 400 10.5px/1.5 var(--mono); text-transform: uppercase; letter-spacing: .16em; color: var(--faint);
+}
+.prose .stance-name { margin: 0; font: 400 1.22rem/1.25 var(--serif); color: var(--ink); letter-spacing: -.005em; }
+.prose .stance-says { margin: 0; font: 400 1.08rem/1.3 var(--serif); color: var(--ink); }
+.prose .stance-note { margin: .4rem 0 0; font-size: .86rem; line-height: 1.5; color: var(--ink-soft); }
+.prose .stance-label { display: none; }
+.stance .verdict-status { min-height: 1.4rem; }
+.stance.is-ours { background: color-mix(in oklab, var(--verdigris) 7%, var(--paper)); }
+.verdict-status.is-part { color: var(--ink); }
+.verdict-status.is-part .dot {
+  background: linear-gradient(90deg, currentColor 50%, transparent 50%); border: 1.5px solid currentColor;
+}
+@media (max-width: 40rem) {
+  .stance { grid-template-columns: 1fr; gap: .9rem; }
+  .stance.stance-head { display: none; }
+  .prose .stance-label {
+    display: block; margin: 0 0 .3rem; font: 400 10px/1.5 var(--mono); text-transform: uppercase;
+    letter-spacing: .16em; color: var(--faint);
+  }
+}
