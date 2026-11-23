@@ -1,6 +1,6 @@
 # Questions
 
-Each has an issue. Eugene marks at most two `status:active`; nothing else is worked on. Text comes from a brainstorm and is unverified until a protocol sources it.
+Each has an issue. Eugene marks the ones to work on `status:active`; nothing else is worked on. Text comes from a brainstorm and is unverified until a protocol sources it.
 
 | # | Question | Lane | Folder |
 |---|---|---|---|

@@ -14,7 +14,7 @@ agents hold no credentials for `ejhong/aletheia`.
 ## 2. One question, one folder, one branch
 
 Each question lives in `questions/<slug>/` and has a GitHub issue. Work on a branch named `q/<slug>`, in a fresh
-session, and open a PR. At most **two** questions are `status:active` at a time; Eugene picks which. Never start a
+session, and open a PR. Any number of questions may be `status:active` at once; Eugene picks which. Never start a
 question Eugene hasn't made active.
 
 ## 3. Lock the plan before looking at results

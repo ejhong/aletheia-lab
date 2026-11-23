@@ -10,7 +10,7 @@ The lab produces evidence; the [Aletheia atlas](https://ejhong.github.io/alethei
 
 ## One question at a time
 
-Each question has a GitHub issue, a folder (`questions/<slug>/`) and a branch (`q/<slug>`), and is worked on in a fresh session that ends in a pull request. At most two questions are active at once, and Eugene picks which. Nothing else is worked on.
+Each question has a GitHub issue, a folder (`questions/<slug>/`) and a branch (`q/<slug>`), and is worked on in a fresh session that ends in a pull request. Several questions can be active at once; Eugene chooses which. Nothing else is worked on.
 
 ## The lock
 

@@ -61,7 +61,7 @@ CARDS = SITE / "assets" / "cards"
 LANES = ["data", "model", "proof", "audit", "protocol", "watch"]
 GROUPS = [("active", "Now running"), ("done", "Done"), ("proposed", "Proposed")]
 STATUS_TEXT = {
-    "active": "Being worked on now. At most two questions are active at a time.",
+    "active": "Being worked on now.",
     "proposed": "Not started. Eugene picks which questions become active, two at most at a time.",
     "done": "Finished: the lane's definition of done has been met.",
 }
