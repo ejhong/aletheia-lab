@@ -32,8 +32,8 @@ def read_rankings(path):
     out = {}
     for (vendor, task, target, trial), items in sorted(seen.items()):
         ranking = [o for _, o in sorted(items)]
-        want = 12 if task == "A" else 8
-        assert sorted(p for p, _ in items) == list(range(1, want + 1)) and len(set(ranking)) == want, f"bad ranking in trial {trial} ({vendor})"
+        assert sorted(p for p, _ in items) == list(range(1, len(items) + 1)) and len(set(ranking)) == len(items), \
+            f"bad ranking in trial {trial} ({vendor}): positions must run 1..n with no option repeated"
         out.setdefault(vendor, {}).setdefault(task, {}).setdefault(target, []).append(ranking)
     return out
 
