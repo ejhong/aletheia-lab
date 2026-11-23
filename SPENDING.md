@@ -20,3 +20,5 @@ Every paid run. Stop and ask Eugene before going over a question's budget, or ov
 | 2026-11-23 | population-y (#31) | OpenAI API, `gpt-6.2-astra` | 0.40 | One review call that timed out with no response; estimate, billing unknown |
 | 2026-11-23 | population-y (#31) | OpenAI API, `gpt-6.2-astra` | 0.60 | Independent replication program, one call; at list price from logged token counts |
 | 2026-11-23 | population-y (#31) | Google Gemini API, `gemini-4-neon` | 1.38 | Independent replication program, two calls (1.02, 0.36; the first was cut off); at list price from logged token counts |
+| 2026-11-23 | strangers (#41) | OpenAI API, `gpt-6.2-astra` | 0.27 | Pre-lock protocol review, one round; at list price from logged token counts |
+| 2026-11-23 | strangers (#41) | Google Gemini API, `gemini-4-neon` | 0.81 | Pre-lock protocol review, one round; at list price from logged token counts |
