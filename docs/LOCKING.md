@@ -44,10 +44,10 @@ it changes no files and puts the original commits back into `main`'s history.
 - **Statements are definitions.** `lean/Statement.lean` holds each claim as `def Name : Prop := …` and nothing
   else that needs proving. Proofs live in other files as `theorem name : Statement.Name := …`. The lock hashes the
   statement file, so a proof can change freely but cannot quietly prove something else.
-- **Statement check before the lock.** Models from two other vendors each get the Lean statement and the
-  definitions it depends on, not our gloss and not the proof. Each translates it back into English, then compares
+- **Statement check before the lock.** A model from another vendor gets the Lean statement and the
+  definitions it depends on, not our gloss and not the proof. It translates each back into English, then compares
   that with the source passage and lists divergences. Mix in a couple of deliberately wrong statements to see
-  whether the checkers catch them. Unresolved divergences go in `RESULTS.md`.
+  whether the checker catches them. Unresolved divergences go in `RESULTS.md`.
 - **Later stages.** A stage that adds new statements puts them in a new file (for example
   `lean/Stage2/Statement.lean`), runs its own statement check, notes it in `amendments.md`, and locks the file
   with `python scripts/lock.py questions/<slug> --statement lean/Stage2/Statement.lean` before proving anything

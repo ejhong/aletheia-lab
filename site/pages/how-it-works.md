@@ -27,7 +27,7 @@ The lab's checks run on every push and pull request. They fail if results exist 
 What gets locked depends on the lane:
 
 - **Data and model:** the full lock. The hypotheses, the exact test, the baseline, the threshold, and what would be concluded either way; for model experiments also the prompts, models, sample sizes and scoring rubric.
-- **Proof:** the Lean compiler is the judge, so only the formal statement is locked, after models from two other vendors have checked that it says what was meant. The proof itself can change freely.
+- **Proof:** the Lean compiler is the judge, so only the formal statement is locked, after a model from another vendor has checked that it says what was meant. The proof itself can change freely.
 - **Audit:** the search scope and the grading rubric, before reading for the answer.
 - **Protocol and watch:** no lock, because nothing is being measured.
 
