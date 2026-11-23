@@ -1,0 +1,39 @@
+{
+  "id": "S2a2",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:23:24Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 𝓢 K → Def2 𝓢 K → Def3 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ ∼F ψ\n",
+  "usage": [
+    [
+      1237,
+      528
+    ],
+    [
+      2471,
+      2224
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, of sentence connectives (implication, conjunction, disjunction and negation) and constants (truth and falsehood) on Fm, and of provability relations on Fm for systems of types S₀ and S, take any 𝓑 : S₀ and 𝓢 : S. Assume that each proves all classical propositional tautologies and is closed under modus ponens. Then for every pair of functions K, F : Fm → Fm, the following hypotheses, in order, imply the conclusion: (1) for every sentence φ, if 𝓑 proves φ, then 𝓢 proves K φ; (2) for every sentence φ and every sentence ψ, 𝓢 proves the sentence K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) for every sentence φ, 𝓢 proves (K φ) 🡒 φ; (4) there exists a sentence χ such that 𝓑 proves the object-language biconditional χ 🡘 ∼(F χ); and (5) for every sentence φ, 𝓢 proves K ((F φ) 🡒 φ). The conclusion is that there exists a sentence ψ such that 𝓢 proves the conjunction (K ψ) ⋏ ∼(F ψ). This ψ is not required to be the witness χ from (4). Hypothesis (5) uses F inside the implication to which K is applied; there is no separate hypothesis that 𝓢 proves K ((K φ) 🡒 φ) for every φ. Neither consistency nor a rule taking 𝓢-proofs of φ to 𝓢-proofs of K φ is assumed.\"}",
+  "translation": "Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, of sentence connectives (implication, conjunction, disjunction and negation) and constants (truth and falsehood) on Fm, and of provability relations on Fm for systems of types S₀ and S, take any 𝓑 : S₀ and 𝓢 : S. Assume that each proves all classical propositional tautologies and is closed under modus ponens. Then for every pair of functions K, F : Fm → Fm, the following hypotheses, in order, imply the conclusion: (1) for every sentence φ, if 𝓑 proves φ, then 𝓢 proves K φ; (2) for every sentence φ and every sentence ψ, 𝓢 proves the sentence K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) for every sentence φ, 𝓢 proves (K φ) 🡒 φ; (4) there exists a sentence χ such that 𝓑 proves the object-language biconditional χ 🡘 ∼(F χ); and (5) for every sentence φ, 𝓢 proves K ((F φ) 🡒 φ). The conclusion is that there exists a sentence ψ such that 𝓢 proves the conjunction (K ψ) ⋏ ∼(F ψ). This ψ is not required to be the witness χ from (4). Hypothesis (5) uses F inside the implication to which K is applied; there is no separate hypothesis that 𝓢 proves K ((K φ) 🡒 φ) for every φ. Neither consistency nor a rule taking 𝓢-proofs of φ to 𝓢-proofs of K φ is assumed.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The scheme ranges over an abstract sentence type. Nothing identifies the arithmetical language or requires `F φ` to arise by substituting the code of φ into a single one-free-variable formula. The scheme represents the cited alternative to `K(F ⊆ T)`, not that global soundness sentence itself.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"`Def5` assumes a base-provable fixed point for the chosen `F`. In the arithmetical setting, diagonalization supplies such a sentence for each eligible formula; in Lean, the result applies to an abstract `F` only if this hypothesis is supplied.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The systems are not literally EA and an extension of EA. `Def1` requires knowledge in 𝓢 of each base theorem, which is stronger than mere theorem inclusion, and `Def2` explicitly supplies distribution of knowledge over implication. The intended theorem inclusion does follow: from `𝓑 ⊢ φ`, `Def1` gives `𝓢 ⊢ K φ`, and `Def3` then gives `𝓢 ⊢ φ`.\"\n    }\n  ],\n  \"summary\": \"The conclusion is the claimed factive consequence: for the witness from Theorem 3, factivity turns `K¬F(⌜ψ⌝)` into `¬F(⌜ψ⌝)` while preserving `Kψ`. This gives the conditional, 𝓢-provable witness to non-inclusion in the correct direction, without asserting `F ⊆ K` or discharging the knowable-soundness premise.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The scheme ranges over an abstract sentence type. Nothing identifies the arithmetical language or requires `F φ` to arise by substituting the code of φ into a single one-free-variable formula. The scheme represents the cited alternative to `K(F ⊆ T)`, not that global soundness sentence itself."
+      },
+      {
+        "severity": "minor",
+        "description": "`Def5` assumes a base-provable fixed point for the chosen `F`. In the arithmetical setting, diagonalization supplies such a sentence for each eligible formula; in Lean, the result applies to an abstract `F` only if this hypothesis is supplied."
+      },
+      {
+        "severity": "minor",
+        "description": "The systems are not literally EA and an extension of EA. `Def1` requires knowledge in 𝓢 of each base theorem, which is stronger than mere theorem inclusion, and `Def2` explicitly supplies distribution of knowledge over implication. The intended theorem inclusion does follow: from `𝓑 ⊢ φ`, `Def1` gives `𝓢 ⊢ K φ`, and `Def3` then gives `𝓢 ⊢ φ`."
+      }
+    ],
+    "summary": "The conclusion is the claimed factive consequence: for the witness from Theorem 3, factivity turns `K¬F(⌜ψ⌝)` into `¬F(⌜ψ⌝)` while preserving `Kψ`. This gives the conditional, 𝓢-provable witness to non-inclusion in the correct direction, without asserting `F ⊆ K` or discharging the knowable-soundness premise."
+  }
+}

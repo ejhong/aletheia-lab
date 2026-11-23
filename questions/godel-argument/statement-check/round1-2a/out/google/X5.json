@@ -1,0 +1,39 @@
+{
+  "id": "X5",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:22:44Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 𝓢 K → Def2 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)\n",
+  "usage": [
+    [
+      1182,
+      4480
+    ],
+    [
+      2852,
+      5074
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting that for all types Fm, S₀, and S; all object-language logical connective structures (🡒, ⋏, ⋎, ∼) and logical constant structures (⊤, ⊥) on Fm (LogicalConnective Fm and LogicalNeutral Fm); all entailment (provability) relations for S₀ and S over Fm (Entailment S₀ Fm and Entailment S Fm); all proof systems 𝓑 : S₀ and 𝓢 : S that each satisfy classical propositional logic (Entailment.Cl 𝓑 and Entailment.Cl 𝓢, meaning each proves every classical propositional tautology and is closed under modus ponens); and all arbitrary functions K : Fm → Fm and F : Fm → Fm, if the following four hypotheses hold: (1) [Def1 𝓑 𝓢 K] for every sentence φ : Fm, if 𝓑 proves φ, then 𝓢 proves K φ; (2) [Def2 𝓢 K] for all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) [Def5 𝓑 F] there exists a sentence ψ : Fm such that 𝓑 proves the biconditional ψ 🡘 ∼(F ψ), i.e., (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ); and (4) for every sentence φ : Fm, 𝓢 proves K (F φ 🡒 φ); then there exists a sentence ψ : Fm such that 𝓢 proves the object-language conjunction (K ψ) ⋏ (K (F ψ)). Note what is written and what is not required: the second conjunct of the conclusion is K (F ψ) with no negation on F ψ or on K (F ψ); the existentially quantified ψ in the conclusion is a freshly quantified sentence not required to be the same as the witness ψ in hypothesis (3); neither Def3 (∀ φ, 𝓢 ⊢ K φ 🡒 φ) nor Def4 (∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)) is assumed; 𝓑 and 𝓢 are not required to be consistent, equal, or even of the same type; 𝓢 is not required to satisfy necessitation for K (𝓢 ⊢ φ → 𝓢 ⊢ K φ); and no further properties are assumed of Fm, 𝓑, 𝓢, K, or F beyond the structures and four hypotheses listed.\"}",
+  "translation": "Target is the proposition asserting that for all types Fm, S₀, and S; all object-language logical connective structures (🡒, ⋏, ⋎, ∼) and logical constant structures (⊤, ⊥) on Fm (LogicalConnective Fm and LogicalNeutral Fm); all entailment (provability) relations for S₀ and S over Fm (Entailment S₀ Fm and Entailment S Fm); all proof systems 𝓑 : S₀ and 𝓢 : S that each satisfy classical propositional logic (Entailment.Cl 𝓑 and Entailment.Cl 𝓢, meaning each proves every classical propositional tautology and is closed under modus ponens); and all arbitrary functions K : Fm → Fm and F : Fm → Fm, if the following four hypotheses hold: (1) [Def1 𝓑 𝓢 K] for every sentence φ : Fm, if 𝓑 proves φ, then 𝓢 proves K φ; (2) [Def2 𝓢 K] for all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) [Def5 𝓑 F] there exists a sentence ψ : Fm such that 𝓑 proves the biconditional ψ 🡘 ∼(F ψ), i.e., (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ); and (4) for every sentence φ : Fm, 𝓢 proves K (F φ 🡒 φ); then there exists a sentence ψ : Fm such that 𝓢 proves the object-language conjunction (K ψ) ⋏ (K (F ψ)). Note what is written and what is not required: the second conjunct of the conclusion is K (F ψ) with no negation on F ψ or on K (F ψ); the existentially quantified ψ in the conclusion is a freshly quantified sentence not required to be the same as the witness ψ in hypothesis (3); neither Def3 (∀ φ, 𝓢 ⊢ K φ 🡒 φ) nor Def4 (∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)) is assumed; 𝓑 and 𝓢 are not required to be consistent, equal, or even of the same type; 𝓢 is not required to satisfy necessitation for K (𝓢 ⊢ φ → 𝓢 ⊢ K φ); and no further properties are assumed of Fm, 𝓑, 𝓢, K, or F beyond the structures and four hypotheses listed.",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The conclusion omits the negation on F ψ: Target concludes `∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)`, whereas Theorem 3 in the source concludes that there is a sentence ψ such that `S ⊢ Kψ ∧ K¬F(⌜ψ⌝)`. Dropping the negation reverses the second conjunct from asserting that it is known that F does not hold of ψ (witnessing F ⊊ K) to asserting that it is known that F does hold of ψ, making the formalized statement both materially different from Theorem 3 and mathematically false as stated.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In line with the declared abstraction, arithmetic, first-order quantifiers, Gödel numbering, and object-language formulas F(x) with one free variable are not modelled: `Fm` is an arbitrary type with propositional connectives and constants, `K` and `F` are arbitrary functions `Fm → Fm`, and the Gödel fixed point for `∼F` (`Def5 𝓑 F`) is assumed as an explicit hypothesis rather than derived via the diagonal lemma in EA.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The assumption that `S` includes `EA` (with PA axioms, first-order logic, and K1–K4) is weakened to abstract classical propositional systems `𝓑` and `𝓢` satisfying only `Def1` (`𝓑 ⊢ φ → 𝓢 ⊢ K φ`) and `Def2` (`𝓢 ⊢ K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ`), without requiring `𝓢` to extend `𝓑` or satisfy `K3` (`Def3`) or `K4`. As a weakening of hypotheses, this is a harmless generalization relative to the intended theorem.\"\n    }\n  ],\n  \"summary\": \"The formalization is divergent because its conclusion `∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)` omits the negation on `F ψ`, contradicting Theorem 3's conclusion `S ⊢ Kψ ∧ K¬F(⌜ψ⌝)` and rendering the statement false. Aside from this major error, the hypotheses capture the intended abstract propositional setting of Theorem 3 with minor, largely declared idealizations.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The conclusion omits the negation on F ψ: Target concludes `∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)`, whereas Theorem 3 in the source concludes that there is a sentence ψ such that `S ⊢ Kψ ∧ K¬F(⌜ψ⌝)`. Dropping the negation reverses the second conjunct from asserting that it is known that F does not hold of ψ (witnessing F ⊊ K) to asserting that it is known that F does hold of ψ, making the formalized statement both materially different from Theorem 3 and mathematically false as stated."
+      },
+      {
+        "severity": "minor",
+        "description": "In line with the declared abstraction, arithmetic, first-order quantifiers, Gödel numbering, and object-language formulas F(x) with one free variable are not modelled: `Fm` is an arbitrary type with propositional connectives and constants, `K` and `F` are arbitrary functions `Fm → Fm`, and the Gödel fixed point for `∼F` (`Def5 𝓑 F`) is assumed as an explicit hypothesis rather than derived via the diagonal lemma in EA."
+      },
+      {
+        "severity": "minor",
+        "description": "The assumption that `S` includes `EA` (with PA axioms, first-order logic, and K1–K4) is weakened to abstract classical propositional systems `𝓑` and `𝓢` satisfying only `Def1` (`𝓑 ⊢ φ → 𝓢 ⊢ K φ`) and `Def2` (`𝓢 ⊢ K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ`), without requiring `𝓢` to extend `𝓑` or satisfy `K3` (`Def3`) or `K4`. As a weakening of hypotheses, this is a harmless generalization relative to the intended theorem."
+      }
+    ],
+    "summary": "The formalization is divergent because its conclusion `∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)` omits the negation on `F ψ`, contradicting Theorem 3's conclusion `S ⊢ Kψ ∧ K¬F(⌜ψ⌝)` and rendering the statement false. Aside from this major error, the hypotheses capture the intended abstract propositional setting of Theorem 3 with minor, largely declared idealizations."
+  }
+}

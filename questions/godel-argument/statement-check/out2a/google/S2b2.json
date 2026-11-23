@@ -1,0 +1,26 @@
+{
+  "id": "S2b2",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:49:51Z",
+  "target": "def Target : Prop :=\n  ∃ (𝓢 : ArithmeticTheory) (K F : ArithmeticSentence → ArithmeticSentence),\n    Def1 (𝗣𝗔 : ArithmeticTheory) K ∧ (𝗣𝗔 : ArithmeticTheory) ⪯ 𝓢 ∧\n    Def2 𝓢 K ∧ Def3 𝓢 K ∧ Def4 𝓢 K ∧\n    (∀ φ, 𝓢 ⊢ K (K φ 🡒 F φ)) ∧\n    ¬ 𝓢 ⊢ K (∼K (∼F ⊥))\n",
+  "usage": [
+    [
+      1447,
+      3146
+    ],
+    [
+      2439,
+      6945
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is a closed proposition (with no hypotheses or free parameters) asserting that there exist an arithmetic theory 𝓢 (a set of closed formulas of first-order arithmetic, with derivability ⊢ in classical first-order logic) and two arbitrary functions K and F from arithmetic sentences to arithmetic sentences such that all of the following seven conditions hold: (1) for every arithmetic sentence φ, if Peano arithmetic (𝗣𝗔) proves φ, then 𝗣𝗔 proves K(φ); (2) every arithmetic sentence provable in 𝗣𝗔 is also provable in 𝓢; (3) for all arithmetic sentences φ and ψ, 𝓢 proves K(φ → ψ) → (K(φ) → K(ψ)); (4) for every arithmetic sentence φ, 𝓢 proves K(φ) → φ; (5) for every arithmetic sentence φ, 𝓢 proves K(K(φ) → φ); (6) for every arithmetic sentence φ, 𝓢 proves K(K(φ) → F(φ)); and (7) 𝓢 does not prove K(¬K(¬F(⊥))), where →, ¬, and ⊥ are the implication, negation, and falsehood symbols inside the formal language of arithmetic. Notably, K and F are completely arbitrary functions on arithmetic sentences and are not required to be represented by arithmetic formulas or to satisfy any definability condition; the fixed-point condition Def5 (existence of a sentence ψ with ψ ↔ ¬F(ψ)) is not required for either 𝗣𝗔 or 𝓢; necessitation (Def1) is required only for 𝗣𝗔 and not for 𝓢; 𝓢 is not required to be recursively enumerable or definable; and no explicit consistency assumption on 𝓢 is stated beyond condition (7) (which implies 𝓢 does not prove every sentence).\"}",
+  "translation": "Target is a closed proposition (with no hypotheses or free parameters) asserting that there exist an arithmetic theory 𝓢 (a set of closed formulas of first-order arithmetic, with derivability ⊢ in classical first-order logic) and two arbitrary functions K and F from arithmetic sentences to arithmetic sentences such that all of the following seven conditions hold: (1) for every arithmetic sentence φ, if Peano arithmetic (𝗣𝗔) proves φ, then 𝗣𝗔 proves K(φ); (2) every arithmetic sentence provable in 𝗣𝗔 is also provable in 𝓢; (3) for all arithmetic sentences φ and ψ, 𝓢 proves K(φ → ψ) → (K(φ) → K(ψ)); (4) for every arithmetic sentence φ, 𝓢 proves K(φ) → φ; (5) for every arithmetic sentence φ, 𝓢 proves K(K(φ) → φ); (6) for every arithmetic sentence φ, 𝓢 proves K(K(φ) → F(φ)); and (7) 𝓢 does not prove K(¬K(¬F(⊥))), where →, ¬, and ⊥ are the implication, negation, and falsehood symbols inside the formal language of arithmetic. Notably, K and F are completely arbitrary functions on arithmetic sentences and are not required to be represented by arithmetic formulas or to satisfy any definability condition; the fixed-point condition Def5 (existence of a sentence ψ with ψ ↔ ¬F(ψ)) is not required for either 𝗣𝗔 or 𝓢; necessitation (Def1) is required only for 𝗣𝗔 and not for 𝓢; 𝓢 is not required to be recursively enumerable or definable; and no explicit consistency assumption on 𝓢 is stated beyond condition (7) (which implies 𝓢 does not prove every sentence).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The Lean definition Target matches all seven clauses (i)–(vii) of the author's claim one-to-one, quantifying existentially over an arithmetic theory 𝓢 and arbitrary functions K, F on arithmetic sentences, with PA necessitation (Def1), deductive inclusion of PA in 𝓢 (⪯), the internalized closure and factivity schemata and K-factivity (Def2–Def4), the pointwise capture schema ∀ φ, 𝓢 ⊢ K(Kφ → Fφ), and the unprovability of K¬K(¬F⊥).\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The Lean definition Target matches all seven clauses (i)–(vii) of the author's claim one-to-one, quantifying existentially over an arithmetic theory 𝓢 and arbitrary functions K, F on arithmetic sentences, with PA necessitation (Def1), deductive inclusion of PA in 𝓢 (⪯), the internalized closure and factivity schemata and K-factivity (Def2–Def4), the pointwise capture schema ∀ φ, 𝓢 ⊢ K(Kφ → Fφ), and the unprovability of K¬K(¬F⊥)."
+  }
+}

@@ -1,8 +1,15 @@
-# Machine-check the Gödel argument: Stage 1 results
+# Machine-check the Gödel argument: results for Stages 1 and 2A
 
-Issue #19 · Lane: proof · Protocol locked 2026-11-22T17:49:01Z · One amendment (2026-11-23)
+Issue #19 · Lane: proof · Protocol locked 2026-11-22T17:49:01Z · Stage 2A statements locked 2026-11-23T02:52:00Z ·
+Two amendments (2026-11-23)
 
 ## Answer
+
+Stage 1: all thirteen locked statements are proved in Lean 4. Stage 2A: all seven are proved as well; see
+[Stage 2A](#stage-2a-a-knowledge-operator) below. In both, the conclusion turns on what a reasoner can know about
+its own reliability, and never on whether it is a machine.
+
+The rest of this section, and everything down to the Stage 2A heading, is about Stage 1.
 
 All thirteen locked statements are proved in Lean 4. Each proof depends only on Lean's three standard axioms, and
 the build passes in CI with warnings treated as errors
@@ -129,6 +136,124 @@ caveats, all rated minor:
   locking, to make sure none was false as written (`explore/Stage1Sketch.lean`). The statements were then fixed by
   the lock and the proofs here were written against them.
 
+## Stage 2A: a knowledge operator
+
+Added under Amendment 2. Statements: `lean/GodelArgument/Statement2.lean`. Proofs: `lean/GodelArgument/Results2.lean`.
+
+### Answer
+
+All seven locked statements are proved in Lean 4, each from Lean's three standard axioms only. The build passes in CI
+with warnings treated as errors
+([run 45102690713](https://github.com/ejhong/aletheia-lab/actions/runs/45102690713), commit `48c66cb`).
+
+Stage 1 could not say "I know". Stage 2A adds an operator K, read "it is known that", and asks which principles
+about K carry the results that Koellner's analysis rests on. Five statements are short derivations in
+propositional logic from explicit assumptions about K. Two show that an assumption cannot be dropped, using
+Peano arithmetic.
+
+The setting is abstract. It is not epistemic arithmetic itself: there is no arithmetic, coding or quantifier in
+it, and what the sources get from arithmetic appears as a stated assumption. Building the real systems is
+tier 2B, not started.
+
+### What follows from what (plain summary)
+
+F is any system, read through "F holds of φ". It need not be a machine.
+
+1. **A knower exceeds any system it knows to be sound.** If it is known, sentence by sentence, that whatever F
+   asserts is so, then some sentence is known that F does not assert (S2a, S2a′). This is the knowledge-operator
+   form of Penrose's 𝒢.
+2. **A knower that knows a system captures all it knows cannot know that system consistent.** More exactly, it
+   is known that F's consistency is not known (S2b). This needs F to be the kind of system the second
+   incompleteness theorem applies to. Koellner's printed statement omits that condition; without it the statement
+   is false in this setting (S2b′).
+3. **Knowing which system you are is contradictory.** If it is known, sentence by sentence, that being known
+   coincides with F holding, a contradiction follows (S2c). A logical core of this needs no arithmetic at all
+   (S2d).
+4. **The assumption that carries it is knowing that your knowledge is true.** Take K to be "Peano arithmetic
+   proves". Seen from Peano arithmetic plus "what it proves is so", this K satisfies every assumption of 3
+   except that one, it trivially knows which system it is, and no contradiction arises (S2e). So a machine's own
+   theoremhood passes every test of a knower here except knowing that what it proves is true.
+
+Point 4 is a small counterpart of Alexander's theorem that a machine can know its own code if it gives up
+knowing its own factivity. It is not that theorem.
+
+### Results table
+
+Assumptions about K, as defined in `Statement2.lean`. **Base**: the base system is closed under "from φ infer
+Kφ", and 𝓢 includes the base. **K2**: knowledge is closed under modus ponens. **K3**: what is known is so.
+**KK3**: it is known that what is known is so. A dash means the assumption is not in the statement.
+
+| Claim | Lean name | Base | K2 | K3 | KK3 | Other assumptions | Status | Source and standing |
+|---|---|---|---|---|---|---|---|---|
+| S2a. If K(F(φ) → φ) for each φ, then for some ψ: Kψ and K¬F(ψ) | `reinhardtTheorem3` | yes | yes | – | – | F has a Gödel sentence over the base | Proved | Koellner 2018a, p. 354, Theorem 3 (attributed to Reinhardt 1985) |
+| S2a′. Then something is known that F does not hold of | `knowerExceedsKnownSoundSystem` | yes | yes | yes | – | as S2a | Proved | Koellner 2018a, pp. 354, 356; Penrose 1994, p. 76 |
+| S2b. If K(Kφ → F(φ)) for each φ, then K¬K(Con F) | `absoluteSecondIncompleteness` | yes | yes | – | yes | the base proves "if F holds of Con F then F holds of ⊥" | Proved | Koellner 2018a, p. 354, Theorem 4, with a condition added. A repaired variant, not the printed theorem |
+| S2b′. That added condition cannot be dropped | `secondIncompletenessProvisoCannotBeDropped` | – | – | – | – | none (it exhibits a system) | Proved | the lab's own |
+| S2c. If K(Kφ ↔ F(φ)) for each φ, then 𝓢 proves a contradiction | `knowingWhichSystemIsContradictory` | yes | yes | yes | yes | F has a Gödel sentence over the base | Proved | Koellner 2018a, p. 357, Theorem 6, in the sentence-by-sentence form of Alexander 2014, Theorem 12(3). A counterpart, not Theorem 6 |
+| S2d. For no p is it known that p holds exactly when ¬p is known | `noKnownSelfDiagonal` | yes | yes | yes | yes | none | Proved | the lab's own lemma; informally, the core of refuting one instance of Reinhardt's schema (Alexander 2014, Def. 4) |
+| S2e. KK3 cannot be dropped from S2c and S2d: "Peano arithmetic proves" satisfies the rest | `knownFactivityCannotBeDropped` | – | – | – | – | none (it names a system) | Proved | the lab's own; compare Alexander 2014, §1 and Theorem 12 |
+
+What the table shows:
+
+- **Mechanism is never an assumption.** F is arbitrary in S2a to S2c. Koellner makes the same remark about
+  Theorem 3 (p. 354).
+- **K4 is never an assumption**, nor is "the knower knows its own code". In the sources K4 serves to derive the
+  rule that the base is closed under necessitation; here that rule is assumed directly.
+- **Factivity and known factivity do different work.** S2a needs neither. S2b needs only the known form. S2c and
+  S2d need both, and S2e shows the known form cannot be dropped.
+- **Each proof uses one instance** of its sentence-by-sentence assumption: the Gödel sentence of F in S2a and
+  S2c, the consistency statement of F in S2b.
+
+**Non-vacuity.** `lean/GodelArgument/NonVacuity2.lean` gives, for S2a, S2a′ and S2b, a consistent system in which
+all assumptions hold, and for S2c and S2d a consistent system in which the assumptions about K and the Gödel
+sentence hold, so that the contradiction in S2c comes from the added scheme. These witnesses use the trivial
+knower, K φ := φ. They show that the assumptions do not clash and nothing more. S2e is the one result here about
+a knower that is not trivial.
+
+**Audit.** Ten theorems (7 results, 3 non-vacuity instances) pass `#assert_standard_axioms` inside the build.
+With Stage 1 that makes 33. No `sorry`, `admit`, `native_decide` or `axiom` in the source.
+
+**What Foundation supplies.** S2a to S2d use only its propositional-logic prover. S2e and the witnesses use its
+provability predicate for Peano arithmetic, derivability conditions D1 and D2, its Gödel sentence, and
+`models_localReflectionOn`.
+
+### Statement check
+
+Same method as Stage 1, three rounds, all before the lock. Details: `statement-check/REPORT-2A.md`, the frozen
+rounds beside it, and Amendment 2.
+
+- **Planted errors:** four, and both checkers caught every one in every round they appeared in.
+- **Final verdicts:** of nine items compared, eight are `faithful` or `faithful_with_caveats` from both checkers.
+  One definition (a Gödel sentence for F) has no passage and was translated blind only.
+- **The check changed the statements.** Round 1 found that nothing required 𝓢 to include the base; inclusion is
+  now an assumption of every statement. Round 2 found that the first form of S2e, "there exist K and F such
+  that…", was satisfied by contrived choices; S2e now names K, F and the system.
+- **How four items were judged.** S2b, S2b′, S2d and S2e are not statements the sources make. They were judged
+  against the lab's own claim of what they say, with the passages as context.
+
+**Unresolved divergence.**
+
+| Item | Divergence | Effect on what is claimed |
+|---|---|---|
+| S2c | Google: `divergent`. Koellner's Theorem 6 refutes the single sentence ∃e K(K = F_e) inside EA_T. The Lean derives a contradiction for each fixed F, sentence by sentence, in an abstract setting with no arithmetic. OpenAI: `faithful_with_caveats`. | S2c is a counterpart of Theorem 6, not a formalization of it. In particular it does not handle a quantifier over machines inside the language. That is tier 2B. |
+
+### Limits of Stage 2A
+
+- **Abstract.** No statement is literally about EA or EA_T. "The base is closed under necessitation" and "F has
+  a Gödel sentence" are assumed, where the sources derive them.
+- **Reinhardt's papers were not read.** Every attribution to Reinhardt is through Koellner, Alexander or Cheng,
+  and is `unverified` against his text.
+- **The claim about Theorem 4 is the lab's.** As printed (Koellner 2018a, p. 354; repeated in Cheng 2020,
+  Theorem 4.1), for an arbitrary formula F(x) and with Con(F) read as ¬F(⌜⊥⌝), the theorem fails for
+  F(x) := x ≠ ⌜⊥⌝. That argument is by hand and is not machine-checked: S2b′ shows only that the abstract S2b
+  needs its condition, with F an arbitrary function. Reinhardt may well state the condition; that is
+  `unverified`.
+- **S2e is small.** Its knower is Peano arithmetic's provability predicate and F is that same predicate, so
+  "knows which system it is" holds trivially. Alexander's machine knows much more.
+- **The consistency side is cited, not proved:** that a truthful knower can be a machine without knowing which
+  (Reinhardt), and can even know that it is some machine (Carlson).
+- **Penrose's second argument** (*Shadows*, ch. 3) is still not covered. That is tier 2C.
+
 ## Amendments
 
 **Amendment 1 (2026-11-23).** Eugene supplied photographs of *Shadows of the Mind*, pp. 72–77. The amendment was
@@ -141,9 +266,16 @@ The amendment also records two slips of counting. The locked protocol says "four
 thirteen. The first version of this document said "of 17 with a source passage, 15" where the figures at the time
 were 14 of 16.
 
+**Amendment 2 (2026-11-23).** Stage 2A, approved by Eugene. Written and pushed before the statement check and
+before any proof. It records the statements and sources, the three check rounds with each change made between
+them, and the limits above. Departures from the plan as first written: the definition of D11 changed and
+inclusion became a separate assumption (round 1); two statements were added, S2b′ and S2e (round 1), and S2e was
+then made concrete (round 2).
+
 ## Spending
 
-$12.70 of the $50 budget, all on the statement check (`SPENDING.md`). Amendment 1 cost $0.32 of it.
+$22.20 of the $50 budget, all on statement checks (`SPENDING.md`): $12.38 for Stage 1, $0.32 for Amendment 1,
+$9.50 for Stage 2A.
 
 ## Who did the work
 
@@ -152,8 +284,8 @@ AI agents did this work, directed by Eugene Jhong, who also supplied the photogr
 
 - **Anthropic, Claude Opus 5.5:** first assessment of the brief; issue #19.
 - **Anthropic, Claude Fable 5.2:** second assessment, source reading, statements, protocol, statement-check
-  design, proofs and this document.
-- **OpenAI, `gpt-6.2-astra`** and **Google, `gemini-4-neon`:** the statement check.
+  design, proofs and this document, for Stage 1 and for Stage 2A.
+- **OpenAI, `gpt-6.2-astra`** and **Google, `gemini-4-neon`:** the statement checks, Stage 1 and Stage 2A.
 - **xAI, `grok-4.7`:** named as tie-breaker; not needed.
 - **The Lean 4 kernel** checked the proofs.
 
@@ -165,5 +297,10 @@ confirms one thing the argument's defenders say: if your mind were a particular 
 that machine to be reliable. It also confirms what the critics say: that is not the same as showing your mind is
 not a machine, because a machine can be perfectly reliable without being able to know it, and because "I know I
 am reliable" leads to contradiction for any reasoner of this kind, machine or not. So the old argument proves
-something real but smaller than its conclusion. Penrose's later, subtler argument is not settled here; that is
-the next stage.
+something real but smaller than its conclusion.
+
+The second stage gave the reasoner a way to say "I know", and the picture held. A knower does outrun any system
+it knows to be reliable. A knower cannot know which system it is. But in every case the step that does the work
+is the same one: knowing that your own knowledge is true. Take that away and a machine's own notion of proof
+passes every other test. Nothing in these proofs uses the difference between a mind and a machine. Penrose's
+later, subtler argument is not settled here; it is a further stage, not started.

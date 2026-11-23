@@ -3,3 +3,6 @@ import GodelArgument.Audit
 import GodelArgument.Basic
 import GodelArgument.Results
 import GodelArgument.NonVacuity
+import GodelArgument.Statement2
+import GodelArgument.Results2
+import GodelArgument.NonVacuity2

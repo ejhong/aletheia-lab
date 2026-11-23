@@ -1,0 +1,26 @@
+{
+  "id": "DEF-E",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:37:00Z",
+  "target": "def Target (𝓑 : S₀) (K : Fm → Fm) : Prop := ∀ φ, 𝓑 ⊢ φ → 𝓑 ⊢ K φ\n",
+  "usage": [
+    [
+      1226,
+      150
+    ],
+    [
+      2179,
+      945
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For any sentence type Fm and system type S₀ with a provability relation on Fm, any system 𝓑 of type S₀, and any function K from Fm to Fm, Target(𝓑, K) is defined to mean: for every sentence φ, if 𝓑 proves φ, then 𝓑 proves K(φ). This is a meta-level implication between provability claims, not a requirement that 𝓑 prove the sentence φ 🡒 K(φ). It imposes no condition on K(φ) when 𝓑 does not prove φ, and requires neither classicality nor consistency of 𝓑.\"}",
+  "translation": "For any sentence type Fm and system type S₀ with a provability relation on Fm, any system 𝓑 of type S₀, and any function K from Fm to Fm, Target(𝓑, K) is defined to mean: for every sentence φ, if 𝓑 proves φ, then 𝓑 proves K(φ). This is a meta-level implication between provability claims, not a requirement that 𝓑 prove the sentence φ 🡒 K(φ). It imposes no condition on K(φ) when 𝓑 does not prove φ, and requires neither classicality nor consistency of 𝓑.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"With 𝓑 interpreted as EA, `Target` states exactly the derived rule: whenever EA proves φ, EA also proves Kφ. This is a meta-level condition on the base theory alone, not an object-language axiom φ → Kφ or a closure requirement on an extension.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "With 𝓑 interpreted as EA, `Target` states exactly the derived rule: whenever EA proves φ, EA also proves Kφ. This is a meta-level condition on the base theory alone, not an object-language axiom φ → Kφ or a closure requirement on an extension."
+  }
+}

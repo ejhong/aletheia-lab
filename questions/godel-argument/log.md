@@ -49,4 +49,21 @@ Dated entries, newest last: what was tried, what happened, what next.
   the consistency of EA_T + WMT to a second Reinhardt paper, the disjunction in EA_T to Reinhardt 1986 (*J. Phil.
   Logic* 15), and the consistency of EA_T + SMT to Carlson 2000. These are Cheng's attributions, not checked
   against the papers. Useful for Stage 2; the Reinhardt papers themselves are still not in hand.
+- 2026-11-23: PR #28 merged with a merge commit; the lab check on `main` passes again.
+- 2026-11-23: Eugene approved Stage 2. Took it as tier 2A. Read Alexander (arXiv:1305.6080v2) in full: it gives
+  Reinhardt's schema, the axioms of epistemic arithmetic, and the remark that every proof that a knower cannot
+  know its own code uses known factivity. That remark set the shape of the stage.
+- Wrote Amendment 2 and pushed it (6e1f93e) before the statement check. Drafted seven statements about an
+  abstract knowledge operator; compiled an exploratory proof of each before each round.
+- Statement check, three rounds, $9.50. Round 1: inclusion of the base was missing (fixed); the proviso in S2b
+  objected to (kept, and S2b′ added to show it is needed); S2d cannot express Reinhardt's schema (now claimed
+  only as a lemma). Added S2e. Round 2: the existential form of S2e was satisfied by contrived choices (made
+  concrete: K is Peano arithmetic's provability predicate). Round 3: clean. One divergence stands, on S2c.
+- Locked `lean/GodelArgument/Statement2.lean` at 02:52 UTC (cddb062). Proofs and non-vacuity instances in
+  `Results2.lean` and `NonVacuity2.lean` (48c66cb); local build passes with warnings as errors; 10 more theorems
+  pass the axiom audit. Stage 2A section added to `RESULTS.md`.
+- The draft statement file was kept under `statement-check/` until the lock, because the lab check treats any
+  `lean/**/Statement*.lean` as something that must already be locked.
+- Not done, and not started: tier 2B (EA and EA_T as real formal systems; Theorem 6 with its quantifier), tier 2C
+  (Penrose's second argument). Reinhardt 1985 and 1986 are still not in hand.
 

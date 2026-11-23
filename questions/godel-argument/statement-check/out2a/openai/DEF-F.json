@@ -1,0 +1,39 @@
+{
+  "id": "DEF-F",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:37:00Z",
+  "target": "def Def2 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ ψ, 𝓢 ⊢ K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ\n\ndef Def3 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K φ 🡒 φ\n\ndef Def4 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)\n",
+  "usage": [
+    [
+      1227,
+      444
+    ],
+    [
+      2267,
+      1067
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Given a sentence type Fm with implication and a system type S with a provability relation on Fm, each definition takes a system 𝓢 : S and then a function K : Fm → Fm. Def2(𝓢, K) means that for every sentence φ and then every sentence ψ, 𝓢 proves the sentence K(φ 🡒 ψ) 🡒 (K φ 🡒 K ψ). Def3(𝓢, K) means that for every sentence φ, 𝓢 proves the sentence (K φ) 🡒 φ. Def4(𝓢, K) means that for every sentence φ, 𝓢 proves the sentence K((K φ) 🡒 φ): the outer K is applied to the entire implication, and there is no separate requirement that 𝓢 prove the implication inside it. All displayed implications are sentence connectives, not hypotheses about what 𝓢 proves. These are separate property definitions, not assertions that the properties hold. None assumes classicality, consistency, or closure of provability under K.\"}",
+  "translation": "Given a sentence type Fm with implication and a system type S with a provability relation on Fm, each definition takes a system 𝓢 : S and then a function K : Fm → Fm. Def2(𝓢, K) means that for every sentence φ and then every sentence ψ, 𝓢 proves the sentence K(φ 🡒 ψ) 🡒 (K φ 🡒 K ψ). Def3(𝓢, K) means that for every sentence φ, 𝓢 proves the sentence (K φ) 🡒 φ. Def4(𝓢, K) means that for every sentence φ, 𝓢 proves the sentence K((K φ) 🡒 φ): the outer K is applied to the entire implication, and there is no separate requirement that 𝓢 prove the implication inside it. All displayed implications are sentence connectives, not hypotheses about what 𝓢 proves. These are separate property definitions, not assertions that the properties hold. None assumes classicality, consistency, or closure of provability under K.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def2 matches Alexander’s E2 literally. Koellner’s K2 uses a conjunctive antecedent rather than nested implications. The two are equivalent in classical logic, though Def2 itself imposes no classicality assumption on 𝓢.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The definitions range over sentences, not potentially open formulas. They therefore capture the closed instances but not the operation of taking universal closure. In particular, for an open K3 instance the source puts the outer K around its universal closure.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The definitions require theoremhood in the supplied 𝓢, not membership in EA’s axiom set. EA and the inclusion 𝓑 ⪯ 𝓢 are not part of these definitions: axiomhood in EA explains why the properties hold in an extension, but the properties do not record that provenance.\"\n    }\n  ],\n  \"summary\": \"At the sentence level, Def2, Def3, and Def4 capture the intended schemata, with Def4 applying K to the entire K3 implication. They express the resulting provability conditions rather than EA’s syntactic axiom construction.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Def2 matches Alexander’s E2 literally. Koellner’s K2 uses a conjunctive antecedent rather than nested implications. The two are equivalent in classical logic, though Def2 itself imposes no classicality assumption on 𝓢."
+      },
+      {
+        "severity": "minor",
+        "description": "The definitions range over sentences, not potentially open formulas. They therefore capture the closed instances but not the operation of taking universal closure. In particular, for an open K3 instance the source puts the outer K around its universal closure."
+      },
+      {
+        "severity": "minor",
+        "description": "The definitions require theoremhood in the supplied 𝓢, not membership in EA’s axiom set. EA and the inclusion 𝓑 ⪯ 𝓢 are not part of these definitions: axiomhood in EA explains why the properties hold in an extension, but the properties do not record that provenance."
+      }
+    ],
+    "summary": "At the sentence level, Def2, Def3, and Def4 capture the intended schemata, with Def4 applying K to the entire K3 implication. They express the resulting provability conditions rather than EA’s syntactic axiom construction."
+  }
+}

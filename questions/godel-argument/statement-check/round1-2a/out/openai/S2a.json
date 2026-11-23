@@ -1,0 +1,39 @@
+{
+  "id": "S2a",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:22:44Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 𝓢 K → Def2 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (∼F ψ)\n",
+  "usage": [
+    [
+      1231,
+      342
+    ],
+    [
+      2667,
+      3332
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, with sentence connectives and truth and falsehood constants on Fm and entailment relations for S₀ and S on Fm, for every 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens, and for every pair of functions K, F : Fm → Fm, assume in order: (1) for every sentence φ, if 𝓑 proves φ then 𝓢 proves K(φ); (2) for every sentence φ and every sentence χ, 𝓢 proves the sentence K(φ 🡒 χ) 🡒 (K(φ) 🡒 K(χ)); (3) there exists a sentence θ such that 𝓑 proves the biconditional θ 🡘 ∼(F(θ)); and (4) for every sentence φ, 𝓢 proves K(F(φ) 🡒 φ). Then there exists a sentence ψ such that 𝓢 proves the conjunction K(ψ) ⋏ K(∼(F(ψ))). The conclusion does not require ψ to be the witness θ from (3). In (4) the implication is inside K, and in the conclusion the negation is inside the second application of K. Neither consistency nor a rule taking 𝓢-proofs of φ to 𝓢-proofs of K(φ) is assumed, and neither Def3 nor Def4 is a hypothesis.\"}",
+  "translation": "Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, with sentence connectives and truth and falsehood constants on Fm and entailment relations for S₀ and S on Fm, for every 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens, and for every pair of functions K, F : Fm → Fm, assume in order: (1) for every sentence φ, if 𝓑 proves φ then 𝓢 proves K(φ); (2) for every sentence φ and every sentence χ, 𝓢 proves the sentence K(φ 🡒 χ) 🡒 (K(φ) 🡒 K(χ)); (3) there exists a sentence θ such that 𝓑 proves the biconditional θ 🡘 ∼(F(θ)); and (4) for every sentence φ, 𝓢 proves K(F(φ) 🡒 φ). Then there exists a sentence ψ such that 𝓢 proves the conjunction K(ψ) ⋏ K(∼(F(ψ))). The conclusion does not require ψ to be the witness θ from (3). In (4) the implication is inside K, and in the conclusion the negation is inside the second application of K. Neither consistency nor a rule taking 𝓢-proofs of φ to 𝓢-proofs of K(φ) is assumed, and neither Def3 nor Def4 is a hypothesis.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The hypotheses do not require 𝓢 to include 𝓑. Inclusion would give `𝓑 ⊢ φ → 𝓢 ⊢ φ`; Def1 gives `𝓑 ⊢ φ → 𝓢 ⊢ K φ` instead. No factivity axiom lets 𝓢 infer φ from K φ, as it could in an extension of EA. Def2 governs K, and Def5 does not mention 𝓢 at all. These hypotheses extract consequences available in the source setting but also admit systems that omit theorems of the base.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source ranges over one-free-variable formulas F(x) of L_EA, for which arithmetic supplies a diagonal sentence. Lean ranges over arbitrary functions `Fm → Fm`: it neither requires F to arise from substituting a sentence code into a formula nor obtains the fixed point from a diagonal lemma. Def5 instead assumes the needed fixed point for the chosen F.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The single type Fm has no distinction between arithmetic sentences of L_PA, mentioned in the lead-in to Theorem 3, and sentences of the expanded language L_EA. The pointwise premise ranges over all of Fm, with no object-language arithmetic or quantifiers.\"\n    }\n  ],\n  \"summary\": \"The scope of K in the pointwise premise and the existential conclusion both match Theorem 3. The target captures an abstract sufficient-conditions version of the theorem, but its conditions are not a rendering of theory inclusion itself.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The hypotheses do not require 𝓢 to include 𝓑. Inclusion would give `𝓑 ⊢ φ → 𝓢 ⊢ φ`; Def1 gives `𝓑 ⊢ φ → 𝓢 ⊢ K φ` instead. No factivity axiom lets 𝓢 infer φ from K φ, as it could in an extension of EA. Def2 governs K, and Def5 does not mention 𝓢 at all. These hypotheses extract consequences available in the source setting but also admit systems that omit theorems of the base."
+      },
+      {
+        "severity": "minor",
+        "description": "The source ranges over one-free-variable formulas F(x) of L_EA, for which arithmetic supplies a diagonal sentence. Lean ranges over arbitrary functions `Fm → Fm`: it neither requires F to arise from substituting a sentence code into a formula nor obtains the fixed point from a diagonal lemma. Def5 instead assumes the needed fixed point for the chosen F."
+      },
+      {
+        "severity": "minor",
+        "description": "The single type Fm has no distinction between arithmetic sentences of L_PA, mentioned in the lead-in to Theorem 3, and sentences of the expanded language L_EA. The pointwise premise ranges over all of Fm, with no object-language arithmetic or quantifiers."
+      }
+    ],
+    "summary": "The scope of K in the pointwise premise and the existential conclusion both match Theorem 3. The target captures an abstract sufficient-conditions version of the theorem, but its conditions are not a rendering of theory inclusion itself."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "DEF-F",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:22:44Z",
+  "target": "def Def2 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ ψ, 𝓢 ⊢ K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ\n\ndef Def3 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K φ 🡒 φ\n\ndef Def4 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)\n",
+  "usage": [
+    [
+      1061,
+      383
+    ],
+    [
+      2082,
+      1391
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Given a sentence type Fm with the indicated connectives and a type S equipped with a provability relation on Fm, the definitions name three separate properties of a system 𝓢 : S and a function K : Fm → Fm. Def2 means that for every sentence φ and then every sentence ψ, 𝓢 proves the sentence K(φ 🡒 ψ) 🡒 (K φ 🡒 K ψ). Neither antecedent is assumed provable; it is the whole nested implication that must be provable. Def3 means that for every sentence φ, 𝓢 proves the implication (K φ) 🡒 φ. Def4 means that for every sentence φ, 𝓢 proves K((K φ) 🡒 φ): K is applied to the whole implication, and the implication itself is not separately required to be provable. These are definitions, not assertions that the properties hold. None takes another property as a hypothesis or requires a second system, a function F, classicality, consistency, or a rule taking proofs of φ to proofs of K φ.\"}",
+  "translation": "Given a sentence type Fm with the indicated connectives and a type S equipped with a provability relation on Fm, the definitions name three separate properties of a system 𝓢 : S and a function K : Fm → Fm. Def2 means that for every sentence φ and then every sentence ψ, 𝓢 proves the sentence K(φ 🡒 ψ) 🡒 (K φ 🡒 K ψ). Neither antecedent is assumed provable; it is the whole nested implication that must be provable. Def3 means that for every sentence φ, 𝓢 proves the implication (K φ) 🡒 φ. Def4 means that for every sentence φ, 𝓢 proves K((K φ) 🡒 φ): K is applied to the whole implication, and the implication itself is not separately required to be provable. These are definitions, not assertions that the properties hold. None takes another property as a hypothesis or requires a second system, a function F, classicality, consistency, or a rule taking proofs of φ to proofs of K φ.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def2 uses Alexander’s E2 verbatim, with two nested implications. Koellner’s K2 instead has a conjunction in the antecedent. The forms are equivalent in classical propositional logic, though Def2 itself assumes no laws of entailment that guarantee this equivalence.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The Lean quantifiers range over sentences at the meta-level. They do not represent the source’s universal closure of instances containing free variables. In particular, Def4 can put K around a closed K3 instance but cannot explicitly put K around the universal closure of an open instance.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The definitions require provability in 𝓢, not membership in a designated axiom set. They do not mention EA or require that 𝓢 extend it. Thus EA’s inclusion of Kσ for each basic axiom σ explains why an EA extension satisfies Def4, but is not part of Def4’s formal content.\"\n    }\n  ],\n  \"summary\": \"The three definitions capture the intended closed-sentence patterns: distribution, factivity, and K applied to the whole factivity instance. They express these as provability conditions rather than as a literal axiomatization of EA.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Def2 uses Alexander’s E2 verbatim, with two nested implications. Koellner’s K2 instead has a conjunction in the antecedent. The forms are equivalent in classical propositional logic, though Def2 itself assumes no laws of entailment that guarantee this equivalence."
+      },
+      {
+        "severity": "minor",
+        "description": "The Lean quantifiers range over sentences at the meta-level. They do not represent the source’s universal closure of instances containing free variables. In particular, Def4 can put K around a closed K3 instance but cannot explicitly put K around the universal closure of an open instance."
+      },
+      {
+        "severity": "minor",
+        "description": "The definitions require provability in 𝓢, not membership in a designated axiom set. They do not mention EA or require that 𝓢 extend it. Thus EA’s inclusion of Kσ for each basic axiom σ explains why an EA extension satisfies Def4, but is not part of Def4’s formal content."
+      }
+    ],
+    "summary": "The three definitions capture the intended closed-sentence patterns: distribution, factivity, and K applied to the whole factivity instance. They express these as provability conditions rather than as a literal axiomatization of EA."
+  }
+}

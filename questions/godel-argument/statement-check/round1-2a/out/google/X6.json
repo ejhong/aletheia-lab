@@ -1,0 +1,47 @@
+{
+  "id": "X6",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:24:12Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 𝓢 K → Def2 𝓢 K → Def4 𝓢 K →\n    𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥ →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 K φ)) →\n    𝓢 ⊢ K (∼K (∼F ⊥))\n",
+  "usage": [
+    [
+      1199,
+      2861
+    ],
+    [
+      2285,
+      8257
+    ]
+  ],
+  "a_raw": "{\"translation\": \"`Target` defines the proposition asserting that for all types `Fm` (sentences), `S₀`, and `S`; all choices of formal propositional connectives (`🡒`, `⋏`, `⋎`, `∼`) and constants (`⊤`, `⊥`) on `Fm`; all provability relations on `S₀` and `S` over `Fm`; all systems `𝓑 : S₀` and `𝓢 : S` that each prove all classical propositional tautologies in those connectives and are closed under modus ponens (`Entailment.Cl 𝓑` and `Entailment.Cl 𝓢`); and all functions `K : Fm → Fm` and `F : Fm → Fm`, if the following five hypotheses hold: (1) `Def1 𝓑 𝓢 K`: for every sentence `φ`, if `𝓑` proves `φ`, then `𝓢` proves `K φ`; (2) `Def2 𝓢 K`: for all sentences `φ` and `ψ`, `𝓢` proves `K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ)`; (3) `Def4 𝓢 K`: for every sentence `φ`, `𝓢` proves `K (K φ 🡒 φ)`; (4) `𝓑` proves `F (∼(F ⊥)) 🡒 F ⊥`; and (5) for every sentence `φ`, `𝓢` proves `K (F φ 🡒 K φ)`, then `𝓢` proves `K (∼(K (∼(F ⊥))))`. Neither `Def3 𝓢 K` (that `𝓢` proves `K φ 🡒 φ` for all `φ`) nor `Def5 𝓑 F` (that there is a sentence `ψ` with `𝓑` proving `ψ 🡘 ∼(F ψ)`) is assumed, nor are consistency of `𝓑` or `𝓢`, closure of `𝓢` under `φ ↦ K φ`, or any other properties of `F`, `K`, `𝓑`, `𝓢`, or `Fm`.\"}",
+  "translation": "`Target` defines the proposition asserting that for all types `Fm` (sentences), `S₀`, and `S`; all choices of formal propositional connectives (`🡒`, `⋏`, `⋎`, `∼`) and constants (`⊤`, `⊥`) on `Fm`; all provability relations on `S₀` and `S` over `Fm`; all systems `𝓑 : S₀` and `𝓢 : S` that each prove all classical propositional tautologies in those connectives and are closed under modus ponens (`Entailment.Cl 𝓑` and `Entailment.Cl 𝓢`); and all functions `K : Fm → Fm` and `F : Fm → Fm`, if the following five hypotheses hold: (1) `Def1 𝓑 𝓢 K`: for every sentence `φ`, if `𝓑` proves `φ`, then `𝓢` proves `K φ`; (2) `Def2 𝓢 K`: for all sentences `φ` and `ψ`, `𝓢` proves `K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ)`; (3) `Def4 𝓢 K`: for every sentence `φ`, `𝓢` proves `K (K φ 🡒 φ)`; (4) `𝓑` proves `F (∼(F ⊥)) 🡒 F ⊥`; and (5) for every sentence `φ`, `𝓢` proves `K (F φ 🡒 K φ)`, then `𝓢` proves `K (∼(K (∼(F ⊥))))`. Neither `Def3 𝓢 K` (that `𝓢` proves `K φ 🡒 φ` for all `φ`) nor `Def5 𝓑 F` (that there is a sentence `ψ` with `𝓑` proving `ψ 🡘 ∼(F ψ)`) is assumed, nor are consistency of `𝓑` or `𝓢`, closure of `𝓢` under `φ ↦ K φ`, or any other properties of `F`, `K`, `𝓑`, `𝓢`, or `Fm`.",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The implication in the main hypothesis relating F and K is reversed: the source assumes that for each sentence φ, S ⊢ K(Kφ → F(⌜φ⌝)) (that F captures everything absolutely provable), whereas TARGET assumes ∀ φ, 𝓢 ⊢ K (F φ 🡒 K φ) (the converse, that everything in F is known). This materially alters the statement and makes TARGET false (for example, taking 𝓑 = 𝓢 to be classical propositional logic, K φ = φ, and F φ = ⊥ satisfies all hypotheses while the conclusion becomes 𝓢 ⊢ ⊥).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"TARGET adds the hypothesis 𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥ (formalized second incompleteness for F in the base theory), which is not stated in the printed source passage, though the author explicitly discloses it as a needed proviso for an arbitrary predicate F.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source writes Con(F) without defining it in the passage, whereas TARGET fixes Con(F) specifically as ∼F ⊥ (as explicitly noted by the author).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source states 'Assume that S includes EA' (with background epistemic axioms for K), whereas TARGET does not require 𝓑 ⊢ φ → 𝓢 ⊢ φ; instead it abstracts 𝓑 and 𝓢 to arbitrary classical propositional systems related by Def1 (𝓑 ⊢ φ → 𝓢 ⊢ K φ), together with Def2 (K-distribution) and Def4 (known factivity).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Object-language arithmetic (EA and L_EA), Gödel numbering (⌜φ⌝), and first-order formulas with one free variable (F(x)) are not modeled; sentences are an arbitrary type with classical propositional connectives and K, F are arbitrary functions Fm → Fm (a limitation declared by the author).\"\n    }\n  ],\n  \"summary\": \"TARGET is divergent because it reverses the key hypothesis from S ⊢ K(Kφ → F(⌜φ⌝)) to 𝓢 ⊢ K (F φ 🡒 K φ), changing the claim's meaning and rendering the formal statement false. Aside from this major error, it exhibits only minor, explicitly declared abstractions and provisos (adding formalized second incompleteness for F, reading Con(F) as ∼F ⊥, and abstracting away arithmetic, Gödel numbering, and direct inclusion of EA in S).\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The implication in the main hypothesis relating F and K is reversed: the source assumes that for each sentence φ, S ⊢ K(Kφ → F(⌜φ⌝)) (that F captures everything absolutely provable), whereas TARGET assumes ∀ φ, 𝓢 ⊢ K (F φ 🡒 K φ) (the converse, that everything in F is known). This materially alters the statement and makes TARGET false (for example, taking 𝓑 = 𝓢 to be classical propositional logic, K φ = φ, and F φ = ⊥ satisfies all hypotheses while the conclusion becomes 𝓢 ⊢ ⊥)."
+      },
+      {
+        "severity": "minor",
+        "description": "TARGET adds the hypothesis 𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥ (formalized second incompleteness for F in the base theory), which is not stated in the printed source passage, though the author explicitly discloses it as a needed proviso for an arbitrary predicate F."
+      },
+      {
+        "severity": "minor",
+        "description": "The source writes Con(F) without defining it in the passage, whereas TARGET fixes Con(F) specifically as ∼F ⊥ (as explicitly noted by the author)."
+      },
+      {
+        "severity": "minor",
+        "description": "The source states 'Assume that S includes EA' (with background epistemic axioms for K), whereas TARGET does not require 𝓑 ⊢ φ → 𝓢 ⊢ φ; instead it abstracts 𝓑 and 𝓢 to arbitrary classical propositional systems related by Def1 (𝓑 ⊢ φ → 𝓢 ⊢ K φ), together with Def2 (K-distribution) and Def4 (known factivity)."
+      },
+      {
+        "severity": "minor",
+        "description": "Object-language arithmetic (EA and L_EA), Gödel numbering (⌜φ⌝), and first-order formulas with one free variable (F(x)) are not modeled; sentences are an arbitrary type with classical propositional connectives and K, F are arbitrary functions Fm → Fm (a limitation declared by the author)."
+      }
+    ],
+    "summary": "TARGET is divergent because it reverses the key hypothesis from S ⊢ K(Kφ → F(⌜φ⌝)) to 𝓢 ⊢ K (F φ 🡒 K φ), changing the claim's meaning and rendering the formal statement false. Aside from this major error, it exhibits only minor, explicitly declared abstractions and provisos (adding formalized second incompleteness for F, reading Con(F) as ∼F ⊥, and abstracting away arithmetic, Gödel numbering, and direct inclusion of EA in S)."
+  }
+}

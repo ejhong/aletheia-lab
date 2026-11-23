@@ -1,0 +1,35 @@
+{
+  "id": "X6",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:38:33Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K → Def4 𝓢 K →\n    𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥ →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 K φ)) →\n    𝓢 ⊢ K (∼K (∼F ⊥))\n",
+  "usage": [
+    [
+      1355,
+      2538
+    ],
+    [
+      2470,
+      6919
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition that for all types Fm (of sentences), S₀, and S (of proof systems), equipped with classical propositional connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼) and constants (truth ⊤, falsehood ⊥) on Fm and with provability relations (⊢) on Fm for S₀ and for S, for all proof systems 𝓑 in S₀ and 𝓢 in S such that both 𝓑 and 𝓢 prove all classical propositional tautologies and are closed under modus ponens, and for all arbitrary functions K, F : Fm → Fm from sentences to sentences, if the following six hypotheses hold:\\n1. (Def1 𝓑 K) For every sentence φ, if 𝓑 proves φ, then 𝓑 proves K φ;\\n2. (𝓑 ⪯ 𝓢) Every sentence provable in 𝓑 is provable in 𝓢;\\n3. (Def2 𝓢 K) For all sentences φ and ψ, 𝓢 proves (K (φ 🡒 ψ)) 🡒 ((K φ) 🡒 (K ψ));\\n4. (Def4 𝓢 K) For every sentence φ, 𝓢 proves K ((K φ) 🡒 φ);\\n5. 𝓑 proves (F (∼(F ⊥))) 🡒 (F ⊥);\\n6. For every sentence φ, 𝓢 proves K ((F φ) 🡒 (K φ));\\nthen 𝓢 proves K (∼(K (∼(F ⊥)))).\\n\\nNothing else is required: in particular, neither 𝓑 nor 𝓢 is assumed to be consistent; Def3 (that 𝓢 proves (K φ) 🡒 φ for all φ) and Def5 (the existence of a sentence ψ such that 𝓑 proves ψ 🡘 ∼(F ψ)) are not assumed; rule Def1 is assumed only for 𝓑 and not for 𝓢; Def2 and Def4 are assumed only for 𝓢 and not for 𝓑; and K and F are arbitrary functions on Fm with no further syntactic, arithmetic, or deductive assumptions beyond those listed.\"}",
+  "translation": "Target is the proposition that for all types Fm (of sentences), S₀, and S (of proof systems), equipped with classical propositional connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼) and constants (truth ⊤, falsehood ⊥) on Fm and with provability relations (⊢) on Fm for S₀ and for S, for all proof systems 𝓑 in S₀ and 𝓢 in S such that both 𝓑 and 𝓢 prove all classical propositional tautologies and are closed under modus ponens, and for all arbitrary functions K, F : Fm → Fm from sentences to sentences, if the following six hypotheses hold:\n1. (Def1 𝓑 K) For every sentence φ, if 𝓑 proves φ, then 𝓑 proves K φ;\n2. (𝓑 ⪯ 𝓢) Every sentence provable in 𝓑 is provable in 𝓢;\n3. (Def2 𝓢 K) For all sentences φ and ψ, 𝓢 proves (K (φ 🡒 ψ)) 🡒 ((K φ) 🡒 (K ψ));\n4. (Def4 𝓢 K) For every sentence φ, 𝓢 proves K ((K φ) 🡒 φ);\n5. 𝓑 proves (F (∼(F ⊥))) 🡒 (F ⊥);\n6. For every sentence φ, 𝓢 proves K ((F φ) 🡒 (K φ));\nthen 𝓢 proves K (∼(K (∼(F ⊥)))).\n\nNothing else is required: in particular, neither 𝓑 nor 𝓢 is assumed to be consistent; Def3 (that 𝓢 proves (K φ) 🡒 φ for all φ) and Def5 (the existence of a sentence ψ such that 𝓑 proves ψ 🡘 ∼(F ψ)) are not assumed; rule Def1 is assumed only for 𝓑 and not for 𝓢; Def2 and Def4 are assumed only for 𝓢 and not for 𝓑; and K and F are arbitrary functions on Fm with no further syntactic, arithmetic, or deductive assumptions beyond those listed.",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The TARGET reverses the implication in Theorem 4's main hypothesis: the source assumes that for each sentence φ, S ⊢ K(Kφ → F(⌜φ⌝)) (that F captures everything known), whereas the TARGET assumes (∀ φ, 𝓢 ⊢ K (F φ 🡒 K φ)) (that everything provable in F is known). This changes the theorem materially and renders the TARGET false as stated (e.g., in classical propositional logic with K φ = φ and F φ = ⊥, all hypotheses hold while the conclusion ∼(∼⊥) fails).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In line with the declared abstract setting, EA and its extension S are represented by arbitrary classical propositional systems 𝓑 and 𝓢 satisfying only necessitation for 𝓑 (Def1) and distribution and known-factivity for 𝓢 (Def2, Def4), omitting arithmetic, Gödel numbering, object-language quantifiers, factivity (Def3), and the requirement that F(x) be a formula of L_EA with one free variable.\"\n    }\n  ],\n  \"summary\": \"Apart from the declared abstract setting and added proviso, the TARGET diverges fatally from Theorem 4 by reversing the implication inside the hypothesis from K(Kφ → F(⌜φ⌝)) to K(F φ 🡒 K φ), which makes the formal statement both unfaithful to the source and false.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The TARGET reverses the implication in Theorem 4's main hypothesis: the source assumes that for each sentence φ, S ⊢ K(Kφ → F(⌜φ⌝)) (that F captures everything known), whereas the TARGET assumes (∀ φ, 𝓢 ⊢ K (F φ 🡒 K φ)) (that everything provable in F is known). This changes the theorem materially and renders the TARGET false as stated (e.g., in classical propositional logic with K φ = φ and F φ = ⊥, all hypotheses hold while the conclusion ∼(∼⊥) fails)."
+      },
+      {
+        "severity": "minor",
+        "description": "In line with the declared abstract setting, EA and its extension S are represented by arbitrary classical propositional systems 𝓑 and 𝓢 satisfying only necessitation for 𝓑 (Def1) and distribution and known-factivity for 𝓢 (Def2, Def4), omitting arithmetic, Gödel numbering, object-language quantifiers, factivity (Def3), and the requirement that F(x) be a formula of L_EA with one free variable."
+      }
+    ],
+    "summary": "Apart from the declared abstract setting and added proviso, the TARGET diverges fatally from Theorem 4 by reversing the implication inside the hypothesis from K(Kφ → F(⌜φ⌝)) to K(F φ 🡒 K φ), which makes the formal statement both unfaithful to the source and false."
+  }
+}

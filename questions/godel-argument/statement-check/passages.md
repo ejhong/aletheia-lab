@@ -79,5 +79,37 @@ the page images. Copies read are listed in `../MANIFEST.md`.
 
 > We have found a computation C_k(k) that we know does not stop; yet the given computational procedure A is not powerful enough to ascertain that fact. This is the Gödel(–Turing) theorem in the form that I require. It applies to any computational procedure A whatever for ascertaining that computations do not stop, so long as we know it to be sound. We deduce that no knowably sound set of computational rules (such as A) can ever suffice for ascertaining that computations do not stop, since there are some non-stopping computations (such as C_k(k)) that must elude these rules. Moreover, since from the knowledge of A and of its soundness, we can actually construct a computation C_k(k) that we can see does not ever stop, we deduce that A cannot be a formalization of the procedures available to mathematicians for ascertaining that computations do not stop, no matter what A is. Hence: 𝒢 Human mathematicians are not using a knowably sound algorithm in order to ascertain mathematical truth.
 
+## P-K352 — Koellner (2018), Part I, pp. 351–352, §II.3
+
+> In the formal setting we will treat 'K' as an operator. The basic axioms of absolute provability are: (K1) Universal closures of formulas of the form Kφ where φ is a first-order validity. (K2) Universal closures of formulas of the form (K(φ → ψ) ∧ Kφ) → Kψ. (K3) Universal closures of formulas of the form Kφ → φ. (K4) Universal closures of formulas of the form Kφ → KKφ.
+
+## P-K353 — Koellner (2018), Part I, p. 353, §II.4
+
+> The language L_EA is L_PA expanded to include an operator 'K' that takes formulae of L_EA as arguments. The axioms of arithmetic are simply those of PA, only now the induction scheme is taken to cover all formulas in L_EA. For a collection Γ of formulas in L_EA, let 'KΓ' denote the collection of formulas 'Kφ' where 'φ' is in Γ. The system EA is the theory axiomatized by Σ ∪ KΣ, where Σ consists of the axioms of PA (in the language L_EA) and the basic axioms of absolute provability.
+
+## P-K354b — Koellner (2018), Part I, p. 354, §III.2, after Theorem 3
+
+> Notice that here 'F(x)' stands for any formula in L_EA with one free variable. It need not be a formula defining what is provable relative to a recursive set of axioms; that is, it need not be a Σ⁰₁-statement. The result applies to even richer notions of relative provability. It is worth mentioning that one also obtains an absolute version of the second incompleteness theorem: Theorem 4 (Reinhardt). Assume that S includes EA. Suppose F(x) is a formula with one free variable and is such that for each sentence φ, S ⊢ K(Kφ → F(⌜φ⌝)). Then S ⊢ K¬K(Con(F)). In other words, if it is absolutely provable (pointwise) that the system F captures everything that is absolutely provable then (it is absolutely provable that) the consistency of F is not absolutely provable.
+
+## P-K357b — Koellner (2018), Part I, p. 357, §IV.2
+
+> Theorem 6 (Reinhardt). 'EA_T + SSMT' is inconsistent. In other words, in the context of EA_T, it is true that there cannot be a Turing machine such that the idealized human mind knows that it coincides with that machine.
+
+## P-A1 — Alexander (2014), arXiv:1305.6080v2, §1
+
+> It is well known that a suitably idealized mechanical "knowing agent" capable of logic, arithmetic, and self-reflection, cannot know the index of a Turing machine that represents its own knowledge. […] However, the proofs always involve (in various guises) the machine knowing its own factivity: that the machine satisfies K(Kφ → φ).
+
+## P-A3 — Alexander (2014), arXiv:1305.6080v2, §2, Definition 3
+
+> The pre-closure axioms of knowledge are given by the following schemata. E1: The universal closure of Kφ whenever φ is valid. E2: The universal closure of K(φ → ψ) → Kφ → Kψ. E3: The universal closure of Kφ → φ. […] E4: The universal closure of Kφ → KKφ. […] The axioms of epistemic arithmetic consist of the pre-closure axioms of knowledge along with Kφ whenever φ is a pre-closure axiom of knowledge or φ is an axiom of Peano arithmetic for L.
+
+## P-A4 — Alexander (2014), arXiv:1305.6080v2, §2, Definition 4; "[10]" is Reinhardt (1985), *Noûs* 19
+
+> By Reinhardt's schema we mean the following schema ([10], p. 327) ∃eK∀x(Kφ ↔ x ∈ W_e), whenever FV(φ) ⊆ {x}. Reinhardt demonstrated that a formalization of "I am a Turing machine and I know which one" cannot be consistent with epistemic arithmetic. To do this, he found a particular instance of Reinhardt's schema that was inconsistent with epistemic arithmetic.
+
+## P-A12 — Alexander (2014), arXiv:1305.6080v2, §3, Theorem 12
+
+> M_Σ(n) satisfies the axioms of epistemic arithmetic mod factivity. […] Additionally, there is a fixed m ∈ N such that M_Σ(n) satisfies the schema K(Kφ ↔ ⌜φ⌝ ∈ W_m), where φ ranges over L-sentences. Thus, the machine that knows the things known by M_Σ(n) is a machine that knows its own code.
+
 *P-P73 to P-P76 were transcribed on 2026-11-23 by Claude Fable 5.2 from photographs of the printed book supplied by
 Eugene (see `MANIFEST.md` and Amendment 1). They could not be checked mechanically against a text file.*
