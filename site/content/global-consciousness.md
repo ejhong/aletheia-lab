@@ -14,7 +14,7 @@ updated: 2026-11-23
 
 The Global Consciousness Project keeps dozens of small electronic devices running in cities around the world. Each one flips 200 electronic coins a second and reports the count. The project calls them eggs. Its claim is that when a great many people are caught up in the same event, the eggs stop behaving quite like coins: taken together, their counts wander a little more than chance allows.
 
-Between 1998 and 2015 the project named 500 events and reports a combined result of more than seven standard deviations, odds of about one in ten trillion. The standing objection is that its own team chose the events and the time windows. The team says each was fixed before the data were looked at. An outsider cannot check that.
+Between 1998 and 2015 the project named 500 events and reports a combined result of more than seven standard deviations, odds of about one in eight trillion by its own reckoning. The standing objection is that its own team chose the events and the time windows. The team says each was fixed before the data were looked at. An outsider cannot check that.
 
 But there is a way round the argument. The formal series stopped at the end of 2015, and the eggs kept running, with the data public. So we tested the ten years since:
 
