@@ -31,3 +31,7 @@ Every paid run. Stop and ask Eugene before going over a question's budget, or ov
 | 2026-11-23 | ice-core-fire (#43) | Google Gemini API, `gemini-4-neon` | 1.00 | Pre-lock plan review, two rounds (0.48, 0.52) |
 | 2026-11-23 | ice-core-fire (#43) | OpenAI API, `gpt-6.2-astra` | 0.39 | Independent replication program, one call |
 | 2026-11-23 | ice-core-fire (#43) | Google Gemini API, `gemini-4-neon` | 0.58 | Independent replication program, one call |
+| 2026-11-23 | cooling-ammonium (#60) | OpenAI API, `gpt-6.2-astra` | 0.75 | Pre-lock plan review, two rounds (0.33, 0.42); list price from logged token counts |
+| 2026-11-23 | cooling-ammonium (#60) | Google Gemini API, `gemini-4-neon` | 1.03 | Pre-lock plan review, two rounds (0.51, 0.52) |
+| 2026-11-23 | cooling-ammonium (#60) | OpenAI API, `gpt-6.2-astra` | 0.27 | Independent replication program, one call |
+| 2026-11-23 | cooling-ammonium (#60) | Google Gemini API, `gemini-4-neon` | 0.43 | Independent replication program, one call |

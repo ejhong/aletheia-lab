@@ -312,7 +312,7 @@ pulses.
 
 - **Concentration, not deposition.** Not corrected for snowfall, which fell at the onset.
 - **Ranks, not probabilities.** Windows are not independent draws; late-glacial windows cluster at the top.
-- **One comparison set.** The window was not compared with other abrupt coolings only.
+- **One comparison set.** The window was not compared with other abrupt coolings only. Question #60 has since done that (`questions/cooling-ammonium/RESULTS.md`): a rise in ammonium after a cooling is common, and the Younger Dryas rise is among the largest of 25, with two others close.
 - **GISP2's timescale** is not tied to the others here, and its anchor depth is unverified. The window was wide
   enough that this did not matter for the ranks.
 - **The background rule matters** at 60 years, where it rests on five bins. See the one-sided variant.

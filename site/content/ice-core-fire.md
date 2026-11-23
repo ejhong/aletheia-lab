@@ -3,7 +3,7 @@
 # The figures are made by questions/ice-core-fire/analysis/make_figures.py from the results files.
 summary: Greenland ice holds a burst of ammonium near the start of the Younger Dryas, 12,900 years ago. Is it exceptional against 100,000 years of the same ice?
 verdict: Unusual, but a slow swell and not a spike
-result: For about a century ammonium in Greenland ice ran higher than at almost any time in 100,000 years, in three ice cores. But it starts thirty to forty years after the cold began, rises in step with the dust, and has neighbours of similar size. It fits a response to the changing climate better than smoke from an impact or an airburst.
+result: For about a century ammonium in Greenland ice ran higher than at almost any time in 100,000 years, in three ice cores. But it starts thirty to forty years after the cold began, rises in step with the dust, and has neighbours of similar size. It fits a response to the changing climate better than smoke from an impact or an airburst. A follow-up found that ammonium commonly rises after sudden coolings, and that this is among the largest cases.
 dek: Supporters of the idea that a comet struck 12,900 years ago point to a burst of ammonium in Greenland ice as the smoke of the fires it lit. We asked whether that stretch of ice stands out from every other stretch, in three ice cores, with the rules fixed before looking.
 updated: 2026-11-23
 ---
@@ -26,6 +26,8 @@ We took the 300 years around the start of the cold in three ice cores and compar
 6. **It is not alone.** The last few thousand years of the ice age hold several highs of similar size. One, about 13,870 years ago, is larger in two of the three cores.
 
 In short: the people who said the ice holds something unusual there were right. What it holds does not look like one day of fire.
+
+**Followed up.** A later question asked whether the other sudden coolings of the ice age leave the same mark. Mostly they do, in a smaller way: [ammonium commonly rises after a cooling](../cooling-ammonium/), and the Younger Dryas is among the largest cases, with two others close behind.
 
 {{figure: ice-core-fire/tiles}}
 
@@ -112,7 +114,7 @@ So the test would have caught a truly enormous single year. It would not have ca
 - **The first plan was flawed.** It compared one core averaged over 60 years with two averaged over 10, and would have let two cores "agree" on peaks centuries apart. The reviewers caught both.
 - **One reason in the plan turned out wrong.** We set plain concentration aside because ammonium is usually higher in warm periods. Here the high is in a cold one. The numbers are reported in full above.
 - **Not corrected for snowfall.** The right measure is fallout per year, not concentration. We did not have the snowfall record to hand.
-- **Only one kind of comparison.** We compared against all stretches, not against other sudden coolings only.
+- **Only one kind of comparison.** We compared against all stretches, not against other sudden coolings only. That comparison has since been made in [a follow-up question](../cooling-ammonium/).
 
 ## What this cannot tell you
 

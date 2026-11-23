@@ -1,0 +1,45 @@
+{
+  "coolings": [
+    "GS-1",
+    "GS-2.1c",
+    "GS-2.2",
+    "GS-3",
+    "GS-4",
+    "GS-5.1",
+    "GS-5.2",
+    "GS-6",
+    "GS-7",
+    "GS-8",
+    "GS-9",
+    "GS-10",
+    "GS-11",
+    "GS-12",
+    "GS-15.1",
+    "GS-15.2",
+    "GS-16.1",
+    "GS-17.1",
+    "GS-17.2",
+    "GS-18",
+    "GS-19.1",
+    "GS-20",
+    "GS-21.2",
+    "GS-22",
+    "GS-23.2"
+  ],
+  "quiet_times": {
+    "ammonium": {
+      "NGRIP": 3054,
+      "NEEM": 3031
+    },
+    "calcium": {
+      "NGRIP": 3072,
+      "NEEM": 3058
+    }
+  },
+  "general": "mixed",
+  "younger_dryas": "among the largest",
+  "rank": {
+    "NGRIP": 2,
+    "NEEM": 3
+  }
+}
