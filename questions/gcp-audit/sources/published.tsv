@@ -1,0 +1,514 @@
+event	event_num	description	timeframe	source	regs	resolution	z	probability	row
+1	1	Embassy Bombings	19980807	Nelson	3	15-min	3.209	0.001	1
+2	2	Omagh Bombings *	19980815	Nelson	4	15-min	-0.675	0.750	2
+3	3	US Airstrikes, Afghanistan	19980820	Nelson	6	15-min	1.146	0.126	3
+4	4	Swissair 111 crash	19980903	Nelson	5	15-min	1.336	0.091	4
+5	5	McGwire, record homerun	19980908	Nelson	9	15-min	1.320	0.093	5
+6	6	Clinton Affair Grand Jury	19980911	Nelson	6	15-min	0.387	0.349	6
+7	7	Nicaragua, Casitas collapse	19981030	Nelson	5	15-min	-1.085	0.861	7
+8	8	Nicaragua, Casitas flooding	19981030	Nelson	5	15-min	1.215	0.113	8
+9	9	Global Peace Vigil, Twyman	19981113	Nelson	5	15-min	1.223	0.111	9
+10	10	Iraq, 11th hour decision *	19981126?	Nelson	4	15-min	-0.412	0.659	10
+11	11	World Peace Prayer	19981210	Nelson	7	15-min	-0.135	0.554	11
+12	12	Iraq, Bombing	19981217	Nelson	7	15-min	-0.535	0.704	12
+13	13	House votes impeachment	19981219	Nelson	7	15-min	-0.934	0.825	13
+14	14	Christmas Eve, UTC	19981224	Etzold	8	15-min	-1.026	0.848	14
+15	15	Christmas Eve, EST	19981224	Etzold	8	15-min	-0.079	0.531	15
+16	16	Christmas Eve, PST	19981224	Etzold	8	15-min	-0.715	0.763	16
+17	17	New Years, 24 hrs	19981231	Nelson	9	1-sec	-0.171	0.568	17
+18	18	New Years, Times Square *	19981231	Nelson	9	1-sec	0.871	0.208	18
+19	19	New Years, Euro vs US **	19981231	Bierman	9	1-sec	0.845	0.199	19
+20	20	New Years, Maxi vs Mini **	19981231	Broughton	9	1-sec (Diff)	1.165	0.122	20
+21	21	Colombia, Armenia Quake	19990125	Nelson	9	15-min	0.823	0.205	21
+22	22	Senate acquits Clinton	19990212	Nelson	10	15-min	0.217	0.414	22
+23	23	Nato Bombs Yugoslavia	19990324	Nelson	12	15-min	1.691	0.045	23
+24	24	Dow Closes Over 10000	19990329	Cohen, Nelson	12	15-min	0.384	0.350	24
+25	25	Praying for Peace	19990403 - 19990503	Taylor	Var	1-min	0.819	0.206	25
+26	26	Littleton School Tragedy	19990420	Polk	11	15-min	-0.844	0.801	26
+27	27	Autonomy, Israel, PLO	19990505	Kraak	17	15-min	-0.057	0.523	27
+28	28	"""Peace at Last"", Headlines"	19990610	Nelson	17	15-min	0.505	0.307	28
+29	29	Yugo War Ends, Milosevic	19990610	Nelson	17	15-min	1.313	0.095	29
+30	30	JFK Jr Crash, 30-min *	19990717	Nelson	21	15-min	0.283	0.389	30
+31	31	JFK Jr Crash, 3 Hours	19990717	Nelson	21	15-min	1.344	0.089	31
+32	32	India, Train Crash	19990801	Nelson	17	15-min	1.813	0.035	32
+33	33	Solar Eclipse *	19990811	Wackermann, Nelson	20	15-min	-0.006	0.502	33
+34	34	Turkey, Earthquake, 30-min *	19990817	Nelson	20	15-min	-0.689	0.754	34
+35	35	Turkey, Earthquake, 4 Hours	19990817	Nelson	20	15-min	-0.171	0.568	35
+36	36	Japan, Nuclear Accident	19990930	Nelson	21	15-min	1.088	0.138	36
+37	37	Billion Person Meditation	19991025	Nelson	21	10-min	2.242	0.012	37
+38	38	Typhoon, India, 2 Hours *	19991029	Nelson	22	15-min	-0.583	0.720	38
+39	39	Typhoon, India, 24 Hours	19991029-30	Nelson	23	15-min	-0.039	0.516	39
+40	40	Earthquake, Turkey II, 2 Hrs ?	19991112	Dunne	21	15-min	-0.105	0.542	40
+41	41	Full Moon, Solstice, 4.8 Min	19991222	Fournier	25	1-sec, epoch	-0.845	0.801	41
+42	42	New Year, Y2K, 24 hrs	19991231	Nelson	28	1-sec, epoch	-0.407	0.658	42
+43	43	New Year, Y2K, Variance	19991231	Radin	27	1-sec, epoch	0.157	0.438	43
+44	44	Hi vs Low Populations, Y2K **	19991231	Nelson	27	1-sec (diffs)	-0.647	0.741	44
+45	45	Just A Minute, 1 Min Epoch	20000101	Srinivasan	27	1-sec, epoch	0.697	0.243	45
+46	46	Papal Visit, Israel	20000321-26	Reinhilde	27-29	1-min	2.428	0.008	46
+47	47	Great Experiment II	20000423	Nelson	26	1-sec	-0.230	0.591	47
+48	48	World Earth Healing Day	20000504	Nelson	26-27	1-sec	-0.413	0.660	48
+49	49	Concorde Crash, Paris	20000725	Reinhilde	23	1-sec	-0.715	0.763	49
+50	50	Kursk Tragedy, 30-min	20000812	Nelson	27	1-sec	1.625	0.052	50
+51	51	Kursk, 10 days	20000812-21	Nelson	24-27	1-min	1.330	0.092	51
+52	52	US TV: Survivors Finale	20000824	Lettieri	26	1-sec	-0.471	0.681	52
+53	53	Peace Summit Relig Spirit	20000828-31	Murali Dhar	26	1-min	-0.446	0.672	53
+54	54	Olympic Opening Ceremony	20000915	Robin Taylor	25	1-sec	0.022	0.491	54
+55	55	Group Mind Meditation	20000924	Nelson	26	1-sec	1.720	0.043	55
+56	56	Pierre Trudeau Funeral	20001003	Chino Srinivasan	29	1-sec	1.982	0.024	56
+57	57	Group Mind Meditation 2	20001022	Matthew Webb	28	1-sec	-2.085	0.981	57
+58	58	US Election 2000	20001107, 8, 9 ...	Paul Bethke	30-32	1-sec	0.159	0.437	58
+59	59	Group Mind Meditation 3	20001112	Matthew Webb	30	1-sec	0.027	0.489	59
+60	60	Group Mind Meditation 4	20001126	Matthew Webb	29	1-sec	-0.028	0.511	60
+61	61	Miss World 2000	20001130	Mukesh Garg	31	1-sec	1.242	0.107	61
+62	62	US Election 2000	20001208	Bethke, Nelson	27	1-sec	0.438	0.331	62
+63	63	US Election 2000, Finality	20001212	Nelson, Bethke	30	1-sec	0.934	0.175	63
+64	64	New Year 2000-2001 Mean	20010101	Nelson	34-35	1-sec	-1.776	0.962	64
+65	65	New Year 2000-2001 Var	20010101	Nelson	34-35	1-sec	-0.709	0.761	65
+66	66	Lovewave 010101 **	20010101	Nelson, Lettieri	34-35	1-sec	2.688	0.004	66
+67	67	Central America Quake	20010113	Nelson	35	1-sec	1.446	0.074	67
+68	68	Bush Inauguration	20010120	Nelson	32	1-sec	-0.550	0.709	68
+69	69	Kumbh Mela, India	20010124	Panchal, Srinivasan	35	1-sec	1.457	0.073	69
+70	70	Western India Quake	20010126	Nelson	33	1-sec	-1.042	0.851	70
+71	71	WorldPuja Webcast	20010331	Joanne Karl, Nelson	36	1-sec	0.591	0.277	71
+72	72	Johrei Ceremonies	20010401	Nelson, Ammar	36	1-sec, epoch	1.419	0.078	72
+73	73	Earth Day, 2001	20010422	Nelson	32	1-sec	1.595	0.055	73
+74	74	Full Moon in Taurus	20010507	Don Watson	28	1-sec	0.948	0.172	74
+75	75	World Peace Meditation	20010520	Masami Kondo	34	1-sec	0.773	0.220	75
+76	76	World Earth Healing Day	20010621	WEHD Organizer	31	1-sec	0.609	0.271	76
+77	77	Roll Your Own Blackout	20010621	Greg, Elissa, Roger	31	1-sec	-0.807	0.790	77
+78	78	Beijing Gets 2008 Olympics	20010713	Peter Bancel	31	1-sec	0.681	0.248	78
+79	79	Buddhist Stupa Ceremony	20010809-17	Peter Bancel	34-37	1-min	-0.213	0.584	79
+80	80	Terrorist Disaster, Sept 11	20010911	Nelson	37	1-sec	1.873	0.031	80
+81	81	Terror, Variance, Sept 11 **	20010911	Dean Radin, Nelson	37	1-sec	1.305	0.096	81
+82	82	Silent Prayer, Sept 14	20010914	Doug Mast	35	1-sec	1.087	0.139	82
+83	83	Sea to Shining Sea	20010922	Paul Bethke	37	1-sec	1.713	0.043	83
+84	84	MUM Peace Meditation	20010923-27	Orme-Johnson	37	1-sec	0.345	0.365	84
+85	85	Begin Afghan Bombing	20011007	Nelson	37	1-sec	0.684	0.247	85
+86	86	Children Pledge Allegiance	20011012	William Braud	34	1-sec	0.568	0.285	86
+87	87	Binding Spell on Bin Laden	20011015	Greg Nelson	35	1-sec	0.616	0.269	87
+88	88	Assassination in Israel	20011017	Joseph Menahem	37	1-sec	1.573	0.058	88
+89	89	World Series, Yankee St	20011031	Lettieri, Nelson	35	1-sec	0.267	0.395	89
+90	90	World-Wide Meditation	20011111	Wolf, Watson	38	1-sec	-0.447	0.673	90
+91	91	Crash of AA 587	20011112	Nick Reiter, Nelson	39	1-sec	-1.123	0.869	91
+92	92	Ramadan Muslim Prayer	20011116	Pasternak, Nelson	37	1-sec	1.836	0.033	92
+93	93	WorldPuja Meditation	20011116	Ferguson, Nelson	37	1-sec	-0.802	0.789	93
+94	94	George Harrison Tribute	20011203	Watson, Nelson	42	1-sec	0.222	0.412	94
+95	95	Sir Peter Blake Murdered	20011206	Peter French	42	1-sec	-0.908	0.818	95
+96	96	Astrological Moments	20011209-14	Anonymous, Nelson	42-43	1-sec	2.207	0.014	96
+97	97	New Year 2001-2002, Mean	20020101	Nelson	44	1-sec	1.466	0.071	97
+98	98	New Year 2002, Var	20020101	Nelson	44	1-sec	0.530	0.298	98
+99	99	Volcanic Eruption, Congo	20020117	Ouko, Nelson	46	1-sec	-0.034	0.514	99
+100	100	Astrid Lindgren Dies	20020128	Suurküla, Nelson	46	1-sec	0.513	0.304	100
+101	101	Winter Olympic Opening	20020209	Nelson	46	1-sec	1.215	0.112	101
+102	102	Sri Lanka Peace Meditation	20020315	Johnson-Lenz	47	1-sec	-0.085	0.534	102
+103	103	Earthquake, Afghanistan	20020325	Nelson	45	1-sec	-0.680	0.752	103
+104	104	Passover Bombing	20020327	Roger Nelson	47	1-sec	-.064	0.526	104
+105	105	Jenin Incursion, Israel	20020403	Hala Azzam, Nelson	47	1-sec	0.487	0.313	105
+106	106	Tiger Woods Triumph	20020414	Ray Anderson	46	1-sec	-0.147	0.558	106
+107	107	Indigo Peace Meditation	20020420	Don Watson	44	1-sec	-1.303	0.904	107
+108	108	Erfurth School Shooting	20020426	Roger Nelson	48	1-sec	0.756	0.225	108
+109	109	World Cup Soccer	20020607	Tobias Bodine	48	1-sec	-0.082	0.533	109
+110	110	Astrological Moments II	20020620-23	Anonymous, Nelson	47-45	1-sec	1.208	0.114	110
+111	111	Summer Solstice 2002	20020621	Joe Giove	45	1-sec	-0.636	0.738	111
+112	112	World Cup Soccer	20020630	Pedro de Oliveira	45	1-sec	0.147	0.442	112
+113	113	World Healing Day	20020822	Tremaine, Giove	50	1-sec	0.993	0.160	113
+114	114	911 Anniversary, March Pred	20020911	Eckhard Etzold	50	1-sec	1.307	0.096	114
+115	115	911 Anniversary, Mean	20020911	Mitchell, Nelson	50	1-sec	-1.599	0.945	115
+116	116	911 Anniversary, Var **	20020911	Nelson	50	1-sec	-0.313	0.623	116
+117	117	Korea's Birthday	20021003	Martin Bucholtz	51	1-sec	-2.060	0.980	117
+118	118	Bali Bombing	20021012	Nelson	50	1-sec	-0.274	0.608	118
+119	119	Twyman in Baghdad	20021012	Multiple Sources	50	1-sec	0.032	0.487	119
+120	120	EarthDance 2002	20021012	Petr Douza	50	1-sec	-0.056	0.522	120
+121	121	Wellstone Crash	20021025	Nelson	51	1-sec	0.489	0.312	121
+122	122	Chechen Hostage Crisis	20021026	Nelson	51	1-sec	0.401	0.344	122
+123	123	Kenyan Terrorist Attacks	20021128	Pasternak	52	1-sec	-0.700	0.758	123
+124	124	Suicide Bombing, Grozny	20021227	Nelson	51	1-sec	-0.036	0.514	124
+125	125	New Year, 2003, Mean	20030101	Roger Nelson	54	1-sec	-1.723	0.958	125
+126	126	New Year, 2003, Var	20030101	Roger Nelson	54	1-sec	-0.303	0.619	126
+127	127	Tel Aviv Bombing	20030105	Gadi Guy	52	1-sec	-0.008	0.503	127
+128	128	Antiwar Protests	20030118	Ashley Young	50	1-sec	1.207	0.114	128
+129	129	Columbia Shuttle Disaster	20030201	Various, Nelson	48	1-sec	-1.014	0.845	129
+130	130	Peace Meditations	20030209	Various, Nelson	48	1-sec	-0.244	0.596	130
+131	131	Global Peace Demonstrations	20030215	Nelson	48	1-sec	1.483	0.069	131
+132	132	Korean Subway Fire	20030218	Nelson	51	1-sec	0.625	0.266	132
+133	133	Lysistrata and Women	20030303	Nelson	50	1-sec	-1.707	0.956	133
+134	134	Gather The Women	20030308	Carol Hansen Grey	50	1-sec	-0.532	0.703	134
+135	135	Serbian Assassination	20030312	Nelson	50	1-sec	-1.243	0.893	135
+136	136	Candlelight Vigil	20030316	Various & Nelson	51	1-sec	1.783	0.037	136
+137	137	War in Iraq	20030320	Nelson	48	1-sec	-0.422	0.663	137
+138	138	GE Prayer for Bush	20030401	Nelson	51	1-sec	-0.155	0.562	138
+139	139	Saddam Falls, War Ends	20030409	Nelson	52	1-sec	1.341	0.090	139
+140	140	Bombing in Riyadh	20030512	Nelson	53	1-sec	0.560	0.288	140
+141	141	Bombing in Morroco	20030516	Nelson	50	1-sec	1.071	0.142	141
+142	142	Earthquake in Algeria	20030521	Nelson	52	1-sec	0.551	0.291	142
+143	143	Aqaba Summit, Middle East	20030604	Nelson	54	1-sec	1.136	0.128	143
+144	144	Rainbow 4th of July	20030704	Nelson	54	1-sec	-0.693	0.756	144
+145	145	Love, Peace, Water	20030725	Nelson	49	1-sec	0.154	0.439	145
+146	146	Manila Coup Attempt	20030727	Beth Macdonald	51	1-sec	1.054	0.146	146
+147	147	Blackout 2003	20030814	Nelson	48	1-sec	-1.205	0.886	147
+148	148	Baghdad, UN Bombing	20030819	Nelson	45	1-sec	-0.175	0.569	148
+149	149	Mars Close Approach	20030827	Adrian Patrut	49-50	1-sec	0.623	0.267	149
+150	150	World Healing 2003	20030910	Various	55	1-sec	-1.082	0.860	150
+151	151	911 Anniversary	20030911	Nelson	55	1-sec	-0.382	0.649	151
+152	152	Typhoon in Korea	20030912	Nelson	55	1-sec	0.365	0.358	152
+153	153	Dalai Lama in NYC	20030921	Nelson	52	1-sec	0.145	0.442	153
+154	154	Harmonic Concordance	20031109	Mirehiel	52	1-sec	0.612	0.270	154
+155	155	Turkish Synagogue Bomb	20031115	Various	53	1-sec	0.425	0.335	155
+156	156	Turkish Bank & Consulate	20031120	Various	52	1-sec	0.091	0.464	156
+157	157	Russian Bombing	20031205	Nelson	50	1-sec	-1.488	0.932	157
+158	158	Saddam Hussein Captured	20031213	Nelson	51	1-sec	0.451	0.326	158
+159	159	Opra Winfrey in Africa	20031218	Nelson	52	1-sec	0.711	0.239	159
+160	160	Earthquake in Bam, Iran	20031226	Nelson	53	1-sec	0.618	0.268	160
+161	161	60 Seconds for Peace	20031227	Craig Hamilton	54	1-sec	1.303	0.096	161
+162	162	New Year, 2004, Mean	20040101	Nelson	54	1-sec	0.180	0.429	162
+163	163	New Year, 2004, Var	20040101	Nelson	54	1-sec	-0.684	0.753	163
+164	164	Hadj Ritual Tragedy	20040201	Nelson	53	1-sec	0.742	0.229	164
+165	165	Iran Train Explosion	20040218	Nelson	52	1-sec	1.226	0.110	165
+166	166	Oscar Ceremonies	20040229	Nelson	57	1-sec	0.159	0.437	166
+167	167	Attacks on Shiites	20040302	Nelson	59	1-sec	0.617	0.269	167
+168	168	Terror Attacks in Madrid	20040311	Nelson, Lassen, Bierman	59	1-sec	-1.971	0.976	168
+169	169	Demonstrations in Spain	20040312	Nelson, Lassen	59	1-sec	1.582	0.057	169
+170	170	Global Day of Peace	20040320	Carl Haag, Nelson	57	1-sec	-1.324	0.907	170
+171	171	Cricket, India vs Pakistan	20040324	Srinivasan, Nelson	60	1-sec	1.243	0.107	171
+172	172	Rantisi Assassination	20040417	Nelson	62	1-sec	-1.110	0.867	172
+173	173	Korean Train Explosion	20040422	Don Watson	60	1-sec	0.746	0.228	173
+174	174	Floods in Haiti	20040524	Nelson	65	1-sec	0.534	0.297	174
+175	175	Iraq Insurgent Bombs	20040624	Nelson	63	1-sec	0.751	0.226	175
+176	176	Train Crash, Turkey	20040722	Don Watson	64	1-sec	-0.854	0.803	176
+177	177	Democratic Conv, Kerry	20040729	Nelson	63	1-sec	1.881	0.030	177
+178	178	Fire in Paraguay	20040801	Nelson	64	1-sec	0.364	0.358	178
+179	179	Bob Morris	20040812	Berger, Nelson	63	1-sec	0.461	0.322	179
+180	180	Olympic Opening Athens	20040813	Axiomakaros, Piliounis, Nelson	61	1-sec	-1.289	0.901	180
+181	181	Day of Violence	20040831	Nelson	64	1-sec	1.401	0.081	181
+182	182	Republican Conv, Bush	20040902	Nelson	57	1-sec	-0.445	0.672	182
+183	183	Russian School Hostages	20040903	Nelson	57	1-sec	2.266	0.012	183
+184	184	Earthdance 2004	20040919	Nelson and Others	60	1-sec	-1.490	0.932	184
+185	185	Peace Vigil + Hurricane	20040921	Nelson and Others	62	1-sec	-1.533	0.937	185
+186	186	Bombing, Taba, Egypt	20041007	Nelson	63	1-sec	1.252	0.105	186
+187	187	US Elections 2004	20041102	Nelson and Others	64, 63	1-sec	-1.223	0.889	187
+188	188	Arafat Dead	20041111	Nelson	64	1-sec	1.583	0.057	188
+189	189	Tsunami Indian Ocean	20041226	Nelson	62	1-sec	0.094	0.462	189
+190	190	New Year, 2005, Mean	20050101	Nelson	57	1-sec	-0.634	0.737	190
+191	191	New Year, 2005, Var	20050101	Nelson	57	1-sec	-1.838	0.967	191
+192	192	Elections in Iraq	20050130	Nelson	62	1-sec	1.606	0.054	192
+193	193	Hariri Assassination	20050214	Nelson	60	1-sec	0.169	0.433	193
+194	194	Siyum Daf Yomi	20050301	Spero	62	1-sec	-0.091	0.536	194
+195	195	Quake, Indian Ocean	20050328	Nelson	64	1-sec	0.244	0.404	195
+196	196	Pope John Paul II Dies	20050402	GCPIONS Group, Patrut, Nelson	66	1-sec	0.057	0.477	196
+197	197	Pope John's Funeral	20050408	Nelson	61	1-sec	1.781	0.037	197
+198	198	Prince Charles' Wedding	20050409	Patrut	65	1-sec	1.495	0.067	198
+199	199	Oraworld Resonance	20050423	Deotto, Nelson	61	1-sec	1.866	0.031	199
+200	200	Live 8 Concert	20050702	Nelson and Others	64	1-sec	-2.003	0.977	200
+201	201	London Bombings	20050707	Nelson and Others	65	1-sec	0.181	0.428	201
+202	202	Hurricane Katrina	20050829	Roffey, Nelson	59	1-sec	-0.726	0.766	202
+203	203	Stampede, Baghdad Bridge	20050831	Nelson	59	1-sec	2.193	0.014	203
+204	204	End the War Rally	20050924	Nelson	63	1-sec	1.638	0.051	204
+205	205	Bali Bombing 2	20051001	Nelson	63	1-sec	1.844	0.033	205
+206	206	Earthquake Pakistan	20051008	Nelson	63	1-sec	1.739	0.041	206
+207	207	India Train Crash	20051029	Nelson	61	1-sec	0.347	0.364	207
+208	208	India Delhi Bombs	20051029	Nelson	61	1-sec	0.125	0.450	208
+209	209	Jordan Bombs	20051109	Nelson	60	1-sec	1.553	0.060	209
+210	210	New Year Dev-Net Var	20051231	Nelson, Bancel	60+	1-sec, Dev-Net	-0.510	0.695	210
+211	211	New Year Covar Min	20051231	Nelson, Bancel	60+	Covar, smooth	0.880	0.189	211
+212	212	Hadj Stoning Stampede	20060112	Nelson	63	1-sec	0.835	0.202	212
+213	213	Mudslide Philippines	20060217	Nelson	61	1-sec	0.771	0.220	213
+214	214	Golden Dome Bombing	20060222	Nelson	62	1-sec	-0.878	0.810	214
+215	215	Planetary Play	20060401	Watson, Nelson	61	1-sec	-0.070	0.528	215
+216	216	Earth Day 2006	20060422	Vera, Nelson	62	1-sec	1.227	0.110	216
+217	217	Indonesian Earthquake	20060527	Nelson	64	1-sec	2.943	0.002	217
+218	218	Zarkawi News Release	20060708	Bancel	68	1-sec	-0.909	0.818	218
+219	219	Bombay Train Bombings	20060711	Nelson	64	1-sec	0.715	0.237	219
+220	220	Avebury Meditations	20060722	Koch, Kyborg, Russell, Nelson	63	1-sec	1.033	0.151	220
+221	221	Qana, Lebanon	20060730	Nelson	65	1-sec	1.739	0.041	221
+222	222	Terror Plot Foiled	20060810	Roffey, Nelson	61	1-sec	1.446	0.074	222
+223	223	TM Resonance	20060729-0909	Nelson, Orme-Johnson	65-67	1-sec	-2.416	0.992	223
+224	224	Oraworld Reconciliation	20061002	Deotto, Nelson	65	1-sec	-0.194	0.577	224
+225	225	Native American Ceremony	20061007	Nelson	68	1-sec	0.883	0.189	225
+226	226	US Election Results 2006	20061108	Roffey, Nelson	64	1-sec	1.429	0.076	226
+227	227	Gemayel Assassination	20061121	Nelson	62	1-sec	-0.662	0.746	227
+228	228	Global Deeksha	20061123	Ardagh, Nelson	64	1-sec	0.006	0.498	228
+229	229	Global Orgasm for Peace	20061123	Sheehan, Nelson	66	1-sec	0.604	0.273	229
+230	230	Saddam's Execution	20061230	Bancel	68	1-sec	-0.091	0.536	230
+231	231	New Year Mean, 2007	20070101	Nelson	65	1-sec	0.610	0.271	231
+232	232	New Year Var, 2007	20070101	Nelson	65	1-sec	0.580	0.281	232
+233	233	European Storms	20070118	Wendt, Nelson	60	1-sec	1.092	0.137	233
+234	234	Iraq Worst Bombing	20070203	Nelson	62	1-sec	1.067	0.143	234
+235	235	World Sound Healing	20070214	Goldman, Nelson	60	1-sec	0.019	0.492	235
+236	236	India Train Fire	20070218	Wendt, Nelson	61	1-sec	-1.073	0.858	236
+237	237	Earth Hour Sydney	20070331	Wendt, Nelson	65	1-sec	-0.729	0.767	237
+238	238	Solomon Islands Quake	20070401	Nelson	64	1-sec	0.445	0.328	238
+239	239	Virginia Tech Massacre	20070416	Wendt, Nelson	61	1-sec	1.015	0.155	239
+240	240	Tai Chi & Chigong Day	20070428	Douglas, Nelson	62	1-sec	0.855	0.196	240
+241	241	Global Peace Day	20070520	Giove, Laszlo, Ferenc, Nelson	60	1-sec	-2.113	0.983	241
+242	242	Lightning and Giuliani	20070606	Nelson	57	1-sec	0.591	0.277	242
+243	243	Palestine Split	20070614	Nelson	60	1-sec	0.751	0.226	243
+244	244	Live Earth	20070707	Nelson	56	1-sec	-0.095	0.538	244
+245	245	Fire the Grid	20070717	Many people	56	1-sec	1.528	0.063	245
+246	246	Bridge Collapse	20070801	Wendt, Nelson	58	1-sec	0.106	0.458	246
+247	247	Peru Earthquake	20070815	Nelson	56	1-sec	0.504	0.307	247
+248	248	Burning Man 2007	20070902	Nelson	61	1-sec	1.541	0.062	248
+249	249	Global OM	20070915	Nelson	61	1-sec	0.265	0.395	249
+250	250	International Day Peace	20070921	Nelson	59	1-sec	-0.897	0.815	250
+251	251	Gore Wins Nobel	20071012	Nelson	62	1-sec	1.501	0.066	251
+252	252	Bomb Bhutto Return	20071018	Nelson	61	1-sec	-1.665	0.952	252
+253	253	Bangladesh Hurricane	20071115-6	Wendt, Nelson	51	1-sec	1.401	0.081	253
+254	254	Algerian Bombs	20071211	Nelson	59	1-sec	-0.150	0.560	254
+255	255	Bhutto Assassination	20071227	Roffey, Patrut, Nelson	59	1-sec	0.035	0.486	255
+256	256	New Year Mean, 2008	20080101	Nelson	60	1-sec	1.427	0.077	256
+257	257	New Year Var, 2008	20080101	Nelson	60	1-sec	1.088	0.138	257
+258	258	Kandahar Bombs	20080217	Nelson	56	1-sec	-0.502	0.692	258
+259	259	Attacks in Gaza	20080301	Nelson	57	1-sec	1.209	0.113	259
+260	260	Tibet Demonstrations	20080314	Nelson	58	1-sec	1.458	0.072	260
+261	261	Earthday 2008	20080422	Giove, Estara, Nelson	58	1-sec	0.595	0.276	261
+262	262	Cyclone in Myanmar	20080503	Wendt, Harke, Nelson	62	1-sec	-0.125	0.550	262
+263	263	World Laughter Day	20080504	Schaeffner, Nelson	62	1-sec	-0.242	0.596	263
+264	264	Earthquake, China	20080512	Nelson	60	1-sec	-1.597	0.945	264
+265	265	3 Min Silence, China	20080519	Schreiber, Nelson	61	1-sec	0.723	0.235	265
+266	266	Obama Wins Nomination	20080603	Weiss, Nelson	58	1-sec	2.153	0.016	266
+267	267	Kabul Car Bombing	20080707	Nelson	52	1-sec	0.214	0.415	267
+268	268	Olympic Opening Beijing	20080808	Nelson	54	1-sec	1.281	0.100	268
+269	269	Georgia War Ends	20080812	Nelson	53	1-sec	-0.318	0.625	269
+270	270	World Meditation	20080816	Domjan, Nelson	53	1-sec	1.194	0.116	270
+271	271	Obama Acceptance Denver	20080829	Zaigraeva, Nelson	53	1-sec	2.039	0.021	271
+272	272	Palin Acceptance Speech	20080903	Bancel, Nelson	62	1-sec	1.695	0.045	272
+273	273	McCain Accepts, St Paul	20080904	Nelson	57	1-sec	-0.273	0.608	273
+274	274	Peace Intention Expt	20080904	McTaggart, Bancel, Nelson	56-58	1-sec	-1.645	0.950	274
+275	275	Islamabad Hotel Bombing	20080920	Wendt, Nelson	57	1-sec	-0.568	0.715	275
+276	276	International Day of Peace	20080921	Many people	55	1-sec	-0.043	0.517	276
+277	277	Bailout Vote Fails	20080929	Nelson	57	1-sec	1.255	0.105	277
+278	278	Temple Stampede Jodhpur	20080930	Wendt, Nelson	57	1-sec	-0.782	0.783	278
+279	279	Phillies Win World Series	20081029	Dunne, Nelson	57	1-sec	1.023	0.153	279
+280	280	US Elections 2008, Obama	20081029	Bancel, Nelson	60	1-sec	1.635	0.051	280
+281	281	Mumbai Terror Attacks	20081126	Bancel, Nelson	54	1-sec	-0.590	0.722	281
+282	282	3rd Annual Global-O	20081221	Sheehan, Nelson	57	1-sec	0.590	0.277	282
+283	283	New Year 2009, Mean	20090101	Nelson	55	1-sec	1.033	0.151	283
+284	284	New year 2009, Variance	20090101	Nelson	55	1-sec	0.505	0.307	284
+285	285	Gaza Incursion	20090103	Nelson	59	1-sec	0.581	0.281	285
+286	286	Miracle on the Hudson	20090115	Nelson	62	1-sec	-1.784	0.963	286
+287	287	Obama Inauguration	20090120	Nelson and others	62	1-sec	-1.356	0.912	287
+288	288	Australian Bushfires	20090207	Nelson	61	1-sec	-1.032	0.849	288
+289	289	Valentine Meditations	20090214	Goldman, McTavish, Nelson	61	1-sec	2.878	0.002	289
+290	290	Winnenden School Shooting	20090311	Wendt, Nelson	65	1-sec	-0.821	0.794	290
+291	291	G20 News Conference	20090402	Nelson	66	1-sec	0.884	0.188	291
+292	292	Binghamton Killing Spree	20090403	Wendt, Nelson	68	1-sec	-0.936	0.825	292
+293	293	Earthquake L'Aquila Italy	20090406	Bancel, Nelson	65	1-sec	-0.261	0.603	293
+294	294	Earthday, 2009	20090422	Nelson	64	1-sec	0.052	0.479	294
+295	295	Swine Flu Panic	20090424	Gallardo	70	1-sec	-0.180	0.571	295
+296	296	India Elections 2009	20090516	Nelson	72	1-sec	0.763	0.223	296
+297	297	Air France Disappearance	20090601	Wendt, Nelson	67	1-sec	0.796	0.213	297
+298	298	Iran Election Protests	20090619	Nelson	66	1-sec	1.552	0.060	298
+299	299	Live H2O Celebration	20090621	Poetschke, Nelson	66	1-sec	0.145	0.442	299
+300	300	Michael Jackson Dies	20090625	Wendt, Braidwood, Schneider, Nelson	69	1-sec	0.914	0.180	300
+301	301	Michael Jackson Memorial	20090707	Radin, Nelson	67	1-sec	-0.163	0.565	301
+302	302	Wansdyke Path 2009	20090725	Otto, Koch, Nelson	67	1-sec	1.537	0.062	302
+303	303	Fire the Grid II	20090728	Fucetola, Nelson	65	1-sec	0.619	0.268	303
+304	304	Typhoon Hits Taiwan	20090807	Nelson	67	1-sec	-0.530	0.702	304
+305	305	Ted Kennedy Dies	20090825	Nelson	66	1-sec	-0.030	0.512	305
+306	306	Earthquake in Java	20090902	Nelson	67	1-sec	1.191	0.117	306
+307	307	Internat Day of Peace	20090921	Nelson and many others	65	1-sec	1.637	0.051	307
+308	308	Tsunami in Samoa	20090929	John Todd, Nelson	62	1-sec	0.195	0.423	308
+309	309	Earthquake in Padang	20090930	Nelson	62	1-sec	1.449	0.074	309
+310	310	Obama Peace Nobel	20091009	Weiss, Bancel, Nelson	64	1-sec	0.4210	0.337	310
+311	311	Action 350 for Climate	20091024	Dowd	64	1-sec	0.052	0.479	311
+312	312	Baghdad Bombings	20091025	Wendt, Nelson	64	1-sec	1.505	0.066	312
+313	313	Fort Hood Massacre	20091106	Nelson	64	1-sec	0.246	0.403	313
+314	314	Haj Arafat Vigil	20091126	Mukesh	69	1-sec	-0.454	0.675	314
+315	315	Haj Stoning Mecca	20091127	Mukesh	68	1-sec	0.830	0.203	315
+316	316	Bomb Attempt Dec 25	20091225	Nelson	64	1-sec	0.276	0.391	316
+~317	317	New Year Mean, 2010	20100101	Nelson	63	1-sec	0.887	0.187	317
+~318	318	New Year Variance, 2010	20100101	Nelson	63	1-sec	0.829	0.203	318
+~319	319	Pakistan Volleyball Bomb	20100101	Nelson	63	1-sec	-1.422	0.923	319
+~320	320	Earthquake Haiti	20100112	Nelson	69	1-sec	-2.060	0.980	320
+~321	321	State of the Union	20100127	Nelson	63	1-sec	0.808	0.210	321
+~322	322	Olympic Opening Vancouver	20100212	Nelson	68	1-sec	-0.957	0.831	322
+~323	323	Chile Quake & Tsunami	20100227	Nelson, Wendt, Erbetta	72	1-sec	1.089	0.138	323
+~324	324	Health Care Reform	20100323	Nelson, Shoup	73	1-sec	1.971	0.024	324
+~325	325	Moscow Subway Bombings	20100329	Nelson	73	1-sec	0.794	0.214	325
+~326	326	Mine Explosion, W Va	20100405	Nelson	66	1-sec	-0.122	0.549	326
+~327	327	Mudslides in Brazil	20100408	Nelson	72	1-sec	-1.165	0.878	327
+~328	328	Polish President Killed	20100410	Nelson	70	1-sec	0.607	0.272	328
+~329	329	Kumbh Mela 2010	20100414	Others, Nelson	73	1-sec	1.578	0.057	329
+~330	330	China Earthquake Aftermath	20100414	Wendt, Nelson	73	1-sec	1.535	0.062	330
+~331	331	Earthday 2010	20100422	Many people	71	1-sec	-0.237	0.594	331
+~332	332	Russian Coal Mine	20100510	Nelson	70	1-sec	1.429	0.077	332
+~333	333	World Shift Day	20100516	Nelson	68	1-sec	-0.415	0.661	333
+~334	334	Lahore Religious Terror	20100528	ASamad Khan	66	1-sec	0.476	0.317	334
+~335	335	Israel Attacks Flotilla	20100531	Inci Erkin	65	1-sec	2.036	0.021	335
+~336	336	World Cup 2010 Begin	20100611	Others, Nelson	64	1-sec	-0.574	0.717	336
+~337	337	World Cup Final 2010	20100711	Others, Nelson	66	1-sec	-0.120	0.548	337
+~338	338	Conscious Convergence	20100717	Many people	70	1-sec	0.447	0.327	338
+~339	339	Love Parade Tragedy	20100724	Matthias Braeunig	67	1-sec	2.168	0.015	339
+~340	340	Pakistani Floods	20100721- 20100801	Abdul Samad Khan	69-70	1-sec	-1.165	0.878	340
+~341	341	Chilean Miners Alive	20100822	Fernando Erbetta Doyharcabal	61	1-sec	2.137	0.016	341
+~342	342	Iraq War Ends	20100831	Roger Nelson	67	1-sec	0.948	0.172	342
+~343	343	Billion Beats	20100918	Carlisle Bergquist	71	1-sec	0.486	0.313	343
+~344	344	Astrology III.1	20100920	Guido Cante	71	1-sec	1.095	0.137	344
+~345	345	Internat Peace Day	20100921	Judith Weiss	68	1-sec	-0.580	0.719	345
+~346	346	10.10.10 Celebrations	20101010	Susan Belchamber	63	1-sec	-0.161	0.564	346
+~347	347	Chilean Miners Rescued	20101013	Doyharcabal, Cammack, Wendt	63	1-sec	-0.810	0.791	347
+~348	348	World Forum 2010	20101013	Roger Nelson	67+	1-sec	1.535	0.062	348
+~349	349	Indonesia Quake Volcano	20101025	Roger Nelson	68+	1-sec	-0.601	0.726	349
+~350	350	US Elections 2010	20101103	Doug D'Elia	74	1-sec	0.487	0.313	350
+~351	351	10.11.11 Meditation	20101111	Many people	69-71	1-sec	1.892	0.029	351
+~352	352	Cambodia Bridge Tragedy	20101122	Wendt, Nelson	70	1-sec	-1.911	0.972	352
+~353	353	North, South Korea Shelling	20101123	Nelson	70	1-sec	1.393	0.082	353
+~354	354	Wikileaks Diplomatic Cables	20101128	Kirsten Neiling, Nelson	71	1-sec	1.188	0.118	354
+~355	355	GoodEarthSingers	20101224	Roger Nelson	75	1-sec	-1.126	0.870	355
+~356	356	New Year Means	20110101	Roger Nelson	74	1-sec	-0.282	0.611	356
+~357	357	New Year Var	20110101	Roger Nelson	74	1-sec	0.412	0.340	357
+~358	358	Egypt Church Bomb	20110101	Wendt, Nelson	74	1-sec	-0.631	0.736	358
+~359	359	Congresswoman Giffords	20110108	Shoup, Nelson	74	1-sec	0.632	0.264	359
+~360	360	Brazilian Mudslides	20110112	Nelson, Michael Duggan	72	1-sec	2.330	0.010	360
+~361	361	Tucson Memorial	20110112	Nelson	72	1-sec	-0.479	0.684	361
+~362	362	Moscow Airport Bomb	20110124	Wendt, Nelson	67	1-sec	0.854	0.197	362
+~363	363	State of the Union 2011	20110125	Nelson	66	1-sec	1.530	0.063	363
+~364	364	Day of Rage, Egypt	20110128	Nelson	66	1-sec	0.088	0.465	364
+~365	365	Egypt Mubarak Protests	20110207	Ahmed Fahmy, Nelson	68	1-sec	1.084	0.139	365
+~366	366	Mubarak Resigns	20110211	Peter Bancel	66	1-sec	-0.666	0.747	366
+~367	367	Quake Christchurch NZ	20110222	Sancho Early Jones	69	1-sec	1.134	0.128	367
+~368	368	Libyan Turmoil Continues	20110302	Nelson	66	1-sec	1.489	0.068	368
+~369	369	Women's Day 2011	20110308	Nelson	66	1-sec	-0.326	0.628	369
+~370	370	Do As One 2011	20110309	Nelson	67	1-sec	0.586	0.279	370
+~371	371	Japan Quake Tsunami	20110311	Tarlaci, Shoup, Nelson	66	1-sec	0.212	0.416	371
+~372	372	Mideast & Japan	20110318	Nelson	67	1-sec	0.418	0.338	372
+~373	373	Water Meditation	20110331	Many people	69	1-sec	-0.485	0.686	373
+~374	374	Earthday 2011	20110422	Many people	71	1-sec	0.282	0.389	374
+~375	375	Sai Baba Dies	20110424	Osipiak, Nelson	69	1-sec	-2.629	0.996	375
+~376	376	Royal Wedding	20110429	Nelson	69	1-sec	-0.102	0.541	376
+~377	377	Pope Paul Beatification	20110501	Nelson	67	1-sec	0.450	0.325	377
+~378	378	Bin Laden Killed	20110502	Radin, Bancel, Shoup, Nelson	68	1-sec	0.363	0.358	378
+~379	379	Tornado Joplin MO	20110522	Nelson	71	1-sec	0.663	0.254	379
+~380	380	Atlantis, Last Launch	20110708	Kyle Hassler	66	1-sec	1.179	0.119	380
+~381	381	Women's World Cup	20110717	Shoup, Nelson	65	1-sec	-0.224	0.589	381
+~382	382	Oslo Bomb, Murder	20110722	Hans Wendt	67	1-sec	1.616	0.053	382
+~383	383	China Train Crash	20110723	Nelson	67	1-sec	0.618	0.268	383
+~384	384	Downgrade+Helicopter	20110805	Nelson	65	1-sec	-0.560	0.712	384
+~385	385	UK Rioting	20110808	Nelson	64	1-sec	0.788	0.215	385
+~386	386	Rain in Tunisia	20110814	Houck, Taylor	68	1-sec	0.878	0.190	386
+~387	387	Libya Day 1	20110821	Nelson	65	1-sec	0.837	0.201	387
+~388	388	East Coast Quake	20110823	Green, Wendt, Keith N, Verheyen	65	1-sec	1.594	0.055	388
+~389	389	Hurricane Irene	20110827	Wendt, Nelson	65	1-sec	1.171	0.121	389
+~390	390	10th Anniversary 9/11	20110911	Many people	67	1-sec	0.136	0.446	390
+~391	391	Internat Peace Day 2011	20110921	Many people	66	1-sec	3.136	0.001	391
+~392	392	Troy Davis Execution	20110922	Carol Morrison	67	1-sec	-0.507	0.694	392
+~393	393	Wall Street Protests	20110924	Dr Goobs	68	1-sec	0.858	0.195	393
+~394	394	Bombing, Mogadishu	20111004	Nelson	65	1-sec	-1.988	0.977	394
+~395	395	Steve Jobs RIP	20111005	Hassler, Conan-Davies, Cheng	65	1-sec	2.145	0.016	395
+~396	396	Thailand and Greece	20111019	Reinhilde Nelson	34	1-sec	-2.935	0.998	396
+~397	397	Gaddafi Killed	20111020	Many people	34	1-sec	2.380	0.009	397
+~398	398	Earthquake Turkey	20111023	Nelson	44	1-sec	1.752	0.040	398
+~399	399	11-11-11 Meditations	20111111	Many people	56	1-sec	-0.124	0.549	399
+~400	400	Kabul Shiite Bombing	20111206	Nelson	60	1-sec	-0.533	0.703	400
+~401	401	Gunman in Liege	20111213	Nelson	61	1-sec	-0.029	0.511	401
+~402	402	Philippine Floods	20111217	Wendt	61	1-sec	0.121	0.452	402
+~403	403	Kim Jong-Il Dies	20111219	Nelson	61	1-sec	0.155	0.438	403
+~404	404	New Year Means	20120101	Roger Nelson	58	1-sec	0.440	0.330	404
+~405	405	New Year Var	20120101	Roger Nelson	58	1-sec	0.898	0.185	405
+~406	406	Cruise Ship Disaster	20120113	Hans Wendt	60	1-sec	-0.476	0.683	406
+~407	407	SOPA Blackout	20120120	Matt Kolasinski	58	1-sec	-1.119	0.885	407
+~408	408	State of the Union 2012	20120124	Roger Nelson	60	1-sec	-0.112	0.545	408
+~409	409	Syrian Tragedy Cont.	20120209	Roger Nelson	62	1-sec	1.084	0.139	409
+~410	410	Honduran Prison Fire	20120214	Roger Nelson	59	1-sec	0.757	0.225	410
+~411	411	Do As One Day 2012	20120310	Roger Nelson	57	1-sec	-2.730	0.997	411
+~412	412	Oakland Shootings	20120402	Wendt, Nelson	53	1-sec	-0.659	0.745	412
+~413	413	Mogadishu Bombing	20120404	Wendt, Nelson	57	1-sec	1.987	0.023	413
+~414	414	Pakistan Avalanche	20120407	Nelson	59	1-sec	0.798	0.212	414
+~415	415	Bengal Ferry Disaster	20120430	Nelson	60	1-sec	-0.486	0.687	415
+~416	416	Climate Impact Day	20120505	Nelson	58	1-sec	1.165	0.122	416
+~417	417	Damascus Bombing	20120510	Nelson	58	1-sec	-0.355	0.639	417
+~418	418	Massacre Syria	20120525	Nelson	61	1-sec	-0.799	0.788	418
+~419	419	Obamacare SCOTUS	20120628	Nelson	62	1-sec	1.222	0.111	419
+~420	420	Mexico Election	20120701	Alejandro Gallardo	61	1-sec	1.429	0.076	420
+~421	421	Massacre, Tremseh	20120712	Nelson	57	1-sec	0.197	0.422	421
+~422	422	Batman Shooting	20120720	Wendt, Nelson	55	1-sec	1.595	0.055	422
+~423	423	Olympic Open, London	20120727	Nelson	49	1-sec	-0.274	0.608	423
+~424	424	Sikh Temple Shootings	20120805	Nelson	53	1-sec	0.341	0.366	424
+~425	425	Romney Acceptance	20120830	Nelson	53	1-sec	0.121	0.452	425
+~426	426	Burning Man 2012	20120901	IONS team, Nelson	54	1-sec	0.783	0.217	426
+~427	427	Obama Acceptance	20120906	Nelson	54	1-sec	-1.031	0.849	427
+~428	428	Karachi Factory Fire	20120911	Nelson	50	1-sec	0.413	0.340	428
+~429	429	Internat Day Peace	20120921	Many People & Orgs	50	1-sec	1.308	0.095	429
+~430	430	Sandy Hits GCP	20121029	Lian Siderov	52	1-sec	-0.164	0.565	430
+~431	431	Obama Re-elected	20121106	Nelson	52	1-sec	1.414	0.079	431
+~432	432	Palestine UN Vote	20121106	Nelson	52	1-sec	-0.855	0.804	432
+~433	433	Philippine Typhoon	20121204	Nelson	57	1-sec	0.580	0.281	433
+~434	434	Mastershift Meditations	20121212	Bethke, Nelson	57	1-sec	0.378	0.353	434
+~435	435	School Shooting CT	20121214	Nelson	56	1-sec	-1.277	0.899	435
+~436	436	End of Mayan Calendar	20121221	Many people	55	1-sec	1.008	0.157	436
+~437	437	Dr. Tomorrow Passes	20121230	Jim Semenick, Nelson	56	1-sec	2.064	0.019	437
+~438	438	New Year Means	20130101	Roger Nelson	56	1-sec	0.444	0.329	438
+~439	439	New Year Var	20130101	Roger Nelson	56	1-sec	-0.176	0.570	439
+~440	440	Quetta Bombing	20130110	Abdulsamad Khan, Nelson	55	1-sec	0.563	0.287	440
+~441	441	Obama 2nd Inauguration	20130120	Reinhilde Nelson	53	1-sec	-1.618	0.947	441
+~442	442	Brazil Club Fire	20130127	Duggan, Wendt, Others	54	1-sec	-0.373	0.646	442
+~443	443	Kumbh Mela 2013	20130210	Nelson, Wendt	51	1-sec	1.116	0.132	443
+~444	444	Pope Benedikt Resigns	20130211	Wendt, Nelson	50	1-sec	1.359	0.087	444
+~445	445	V-day and Toning	20130214	Goldman, Wee, Nelson, others	50	1-sec	0.005	0.498	445
+~446	446	Hugo Chavez Dies	20130305	Michael Duggan	55	1-sec	-0.417	0.662	446
+~447	447	International Women's Day	20130308	Roger Nelson	54	1-sec	0.943	0.173	447
+~448	448	Pope Francis Elected	20130313	Duggan, Nazet, Wendt, Nelson	55	1-sec	0.891	0.186	448
+~449	449	Boston Bombing	20130415	Wendt, Nelson	55	1-sec	-0.723	0.765	449
+~450	450	Thatcher Funeral	20130417	Duggan, Wendt	54	1-sec	-0.260	0.603	450
+~451	451	Earthquake, Sichuan	20130420	Nelson	53	1-sec	1.411	0.079	451
+~452	452	Bangladesh Factory Collapse	20130424	Nelson	55	1-sec	-0.404	0.657	452
+~453	453	Night of Hopes	20130516	Yasin AbedRabboh	50	1-sec	0.907	0.182	453
+~454	454	Oklahoma Tornados	20130520	Hans Wendt	49	1-sec	1.308	0.095	454
+~455	455	Floods North India	20130617	Roger Nelson	52	1-sec	-0.631	0.736	455
+~456	456	Global Meditation Movement	20130623	Elena Popa	51	1-sec	-0.083	0.533	456
+~457	457	Arizona Firefighters Die	20130629	Hans Wendt, Nelson	51	1-sec	-0.777	0.781	457
+~458	458	Egypt, Morsi Ousted	20130703	Roger Nelson	51	1-sec	-1.458	0.928	458
+~459	459	Royal Birth	20130723	Roger Nelson	49	1-sec	1.227	0.110	459
+~460	460	Spanish Train Crash	20130724	Wendt, Nelson	47	1-sec	-1.395	0.917	460
+~461	461	Chaos in Egypt	20130814	Wendt, Nelson	47	1-sec	0.176	0.430	461
+~462	462	Global Meditation	20130825	Anonymous, Nelson	48	1-sec	1.924	0.027	462
+~463	463	Burning Man 2013	20130831	Nelson	50	1-sec	0.986	0.162	463
+~464	464	Washington Shootings	20130916	Nelson	46	1-sec	-0.384	0.650	464
+~465	465	Peace Day 2013	20130921	Many people and groups	45	1-sec	-0.028	0.511	465
+~466	466	Quake, Baluchistan	20130924	Nelson	46	1-sec	0.292	0.385	466
+~467	467	Shipwreck Lampedusa	20131003	Wendt	43	1-sec	0.660	0.255	467
+~468	468	Conscious Evolution	20131012	Eric Allodi	48	1-sec	0.113	0.455	468
+~469	469	Million Mask March	20131105	Oliver McDermott	46	1-sec	1.329	0.092	469
+~470	470	Typhoon Philippines	20131108	Nelson	44	1-sec	0.559	0.288	470
+~471	471	Portal Activation	20131123	Michiel Schotten	45	1-sec	0.503	0.308	471
+~472	472	Nelson Mandela Dies	20131205	Many People	45	1-sec	2.238	0.013	472
+~473	473	New Year Mean	20140101	Roger Nelson	48	1-sec	0.202	0.420	473
+~474	474	New Year Var	20140101	Roger Nelson	48	1-sec	0.338	0.368	474
+~475	475	Winter Olympics, 2014	20140207	Roger Nelson	44	1-sec	0.834	0.202	475
+~476	476	Valentines Day, 2014	20140214	Many people	45	1-sec	-0.579	0.719	476
+~477	477	Malaysian Air MH370	20140308	Nelson	50	1-sec	0.395	0.347	477
+~478	478	Korean Ferry Disaster	20140416	Nelson	47	1-sec	-0.070	0.528	478
+~479	479	Landslide Afghanistan	20140502	Nelson	45	1-sec	-1.476	0.930	479
+~480	480	ISIS in Iraq	20140609	Nelson	46	1-sec	-0.441	0.671	480
+~481	481	Journalists in Egypt	20140623	Nelson	46	1-sec	1.497	0.067	481
+~482	482	Germany vs Brazil	20140708	Niclas Kuper	46	1-sec	1.324	0.093	482
+~483	483	Malaysia Air Crash	20140717	Nelson	48	1-sec	-0.241	0.595	483
+~484	484	Global Peace Meditation	20140808	Alan W, Annette Wolf	42	1-sec	-0.729	0.767	484
+~485	485	Robin Williams Dead	20140811	Dick, Dean, Roger, others	46	1-sec	0.305	0.380	485
+~486	486	Scottish Referendum	20140919	Zack Haines	42	1-sec	0.500	0.309	486
+~487	487	Climate and Peace	20140921	Many people	43	1-sec	2.721	0.003	487
+~488	488	Ottawa Terror	20141022	Nelson	38	1-sec	-0.071	0.528	488
+~489	489	Nigeria Bombing	20141110	Nelson	39	1-sec	-1.388	0.909	489
+~490	490	Sydney Siege	20141215	Anand J, Nelson	38	1-sec	-0.779	0.782	490
+~491	491	Pakistani School Slaughter	20141216	Anand J, Nelson	38	1-sec	0.263	0.396	491
+~492	492	Winter Solstice 2014	20141221	Nelson	38	1-sec	-0.851	0.803	492
+~493	493	Air Asia 8501	20141228	Wendt	40	1-sec	0.765	0.222	493
+~494	494	New Year Mean 2015	20150101	Nelson	40	1-sec	-0.173	0.586	494
+~495	495	New Year Var 2015	20150101	Nelson	40	1-sec	-0.405	0.657	495
+~496	496	Charlie Hebdo & Yemen	20150107	Nelson & several others	40	1-sec	1.069	0.143	496
+~497	497	Rally for Unity	20150111	Nelson	40	1-sec	0.239	0.406	497
+~498	498	Terror in Copenhagen	20150214	Nelson	44	1-sec	-0.752	0.774	498
+~499	499	ISIS Murders Copts	20150215	Nelson	45	1-sec	0.997	0.159	499
+~500	500	Yemen Mosque Bombings	20150320	Nelson	40	1-sec	-0.526	0.701	500
+~501	501	Germanwings Crash	20150324	Wendt, Nelson	41	1-sec	-0.965	0.833	501
+~502	502	Global Meditation	20150422	Kian Tavakoli	38	1-sec	-0.431	0.667	502
+~503	503	Nepal Earthquake	20150425	Nelson	41	1-sec	0.633	0.263	503
+~504	504	Fuji Declaration	20150517	Bente Milton, Fumi Johns, Nelson	42	1-sec	-0.108	0.543	504
+~505	505	Charleston Murders	20150617	Wendt, Nelson	46	1-sec	1.070	0.142	505
+~506	506	Iran Nuclear Deal	20150714	Nelson	38	1-sec	1.328	0.092	506
+~507	507	Mecca Crane Falls	20150911	Wende, Nelson	42	1-sec	0.389	0.348	507
+~508	508	Internat Peace Day 2015	20150921	Cheponis, Nelson, others	39	1-sec	2.072	0.019	508
+~509	509	Hadj Tragedy 2015	20150924	Wendt, Nelson	40	1-sec	1.001	0.156	509
+~510	510	Turkey Peace March Bombing	20151010	Nelson	38	1-sec	0.634	0.263	510
+~511	511	Paris Terror Attacks	20151113	Raffaele Caterino, Nelson	40	1-sec	-0.872	0.808	511
+~512	512	Arba'een 2015	20151212	Yunus Msayib	40	1-sec	-0.117	0.546	512
+~513	513	Climate Agreement, Mass Meditation	20151212	Many individuals	37	1-sec	1.013	0.155	513

@@ -26,10 +26,11 @@ That objection can be met. Where a programme's raw data are public, the claim ca
 
 ## What the studies add up to
 
-- **The random-number network.** The Global Consciousness Project reports a very large effect across 500 events it selected between 1998 and 2015. On 58 later events chosen by rule, scored with the project's own statistic, there is nothing: event days look like ordinary days.
+- **The random-number network, on fresh events.** The Global Consciousness Project reports a very large effect across 500 events it selected between 1998 and 2015. On 58 later events chosen by rule, scored with the project's own statistic, there is nothing: event days look like ordinary days.
+- **The random-number network, the original events.** Recomputed from the raw data, 395 of the project's own events match its published scores and add up to +6.08, where the same hours a week away add up to −0.42. The published result is real arithmetic on real data, and it belongs to the windows the project chose.
 
-That is one test of one programme. The next step is to audit the original 500 events from the raw data, which would show whether the effect is really in those numbers and only the choice of events is in doubt, or whether it comes from the devices and the method. A blind re-judging of the remote-viewing archive is also waiting.
+Put together, the two say something neither says alone. The effect is in the events the project picked and not in events picked by rule. That is what a real effect that needs the right kind of event would look like, and it is also what choosing the windows with some sight of the data would look like. The public record cannot tell them apart; it does not say when each event was written down. A blind re-judging of the remote-viewing archive is waiting.
 
 ## What this does not settle
 
-A fresh test that finds nothing does not show the original result was wrong; it shows the effect did not carry over. Defenders can always say the fresh cases were the wrong ones. What can be asked of any real effect is that it shows up when someone else chooses the cases.
+A fresh test that finds nothing does not show the original result was wrong, and the audit shows it was not: the numbers are there. What the fresh test shows is that the effect did not carry over. Defenders can always say the fresh cases were the wrong ones. What can be asked of any real effect is that it shows up when someone else chooses the cases.

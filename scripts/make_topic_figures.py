@@ -166,7 +166,7 @@ def bin_words(start, width):
 
 def younger_dryas():
     tiles("topic-younger-dryas", [
-        ("7", "studies, each with its test fixed before the data were looked at", False),
+        ("8", "studies, each with its test fixed before the data were looked at", False),
         ("0", "found the sharp, one-off mark that a strike from the sky should leave", False),
         ("4", "eruptions, two of them very large, in the 150 years before the cold: among the heaviest runs in 51,000 years", False),
         ("Still open", "what laid down the platinum, and what happened to the great animals", True)])
@@ -190,6 +190,9 @@ def younger_dryas():
         (100, "tunguska-calibration", "What one airburst leaves", "The one known airburst, Tunguska in 1908, marks the ice in the way the Younger Dryas ice is marked.",
          "Across Greenland 1908 is an ordinary year for ammonium. At some sites there is a sharp, sooty spike, at others nothing. The Younger Dryas century has a steady rise and few spikes.",
          "Not found", "A spike where it shows, not a steady rise", "no"),
+        (103, "taurid-swarm", "A swarm in the Taurid stream", "The stream the Earth crosses each autumn still carries a swarm of large fragments of the broken comet.",
+         "No sign of one among today's asteroids or in 32 years of airbursts seen by satellite. Seventeen large asteroids do line up with the comet, as was known in 2010; smaller ones do not.",
+         "Not found", "No swarm of large fragments today", "no"),
         (40, "younger-dryas-crash", "A crash in human numbers", "Dated traces of people thin out at once, above all in North America.",
          "No drop on three continents. But radiocarbon dating is at its most distorted in exactly those centuries.",
          "Not found", "No sign, though the test was blurred", "no")])
@@ -202,17 +205,20 @@ def younger_dryas():
 def minds():
     tiles("topic-minds-and-machines", [
         ("2", "famous arguments about minds, written out in Lean 4 and checked line by line", False),
-        ("68", "statements fixed in advance, read by models from two other companies, then proved", False),
+        ("68", "statements fixed in advance, read by outside models, then proved", False),
         ("1", "assumption carries each argument once it is written out in full", False),
         ("Both smaller", "than their slogans: each proves something real, and less than is claimed for it", True)])
-    scorecard("topic-minds-and-machines", "scorecard", "What each argument claims and what the proof checker found",
-              ["The argument", "What it claims", "What the checker found"], [
+    scorecard("topic-minds-and-machines", "scorecard", "What each study tested and found",
+              ["The claim", "What it says", "What we found"], [
         (19, "godel-argument", "Penrose and Gödel", "Gödel's theorem shows that human mathematical insight is not the work of any machine.",
          "If your mind were a particular machine, you could not also know that machine to be reliable. That much is proved. It does not follow that the mind is no machine: a machine can be reliable without being able to know it.",
          "Partly holds", "The modest conclusion is proved; the proof of the strong one fails", "partly"),
         (66, "unfolding-argument", "The unfolding argument", "Any system with feedback loops has a loop-free twin that behaves the same, so a theory tying consciousness to loops is false or untestable.",
          "The twin exists for an experiment of fixed length, and needs one more part for every further step. With no limit on time there is no twin. All of it rests on behaviour being the only evidence about consciousness.",
-         "Partly holds", "Valid for experiments of fixed length only", "partly")])
+         "Partly holds", "Valid for experiments of fixed length only", "partly"),
+        (48, "anaesthetics-microtubules", "Anaesthetics and microtubules", "Anaesthetics switch consciousness off by settling into pockets in the microtubules of nerve cells.",
+         "A computer fit of 35 gases into eight proteins shows nothing special about the microtubule protein. But it shows nothing special about the accepted targets either, and an unrelated protein does as well as any. The scores follow the size of the molecule.",
+         "Could not tell", "The method cannot pick out any anaesthetic target", "open")])
 
 
 def deep_memory():
@@ -244,12 +250,15 @@ def mind_over_matter():
         ("58", "fresh events from 2016 to 2025, chosen by a rule and not by the experimenters", False),
         ("−1.83", "the combined score, where the project's own record predicts about +2.5", False),
         ("27 of 57", "events beat their matched ordinary day: no better than a coin", False),
-        ("Next", "an audit of the project's original 500 events from the raw data", True)])
+        ("+6.08", "the combined score of 395 of the project's own events, recomputed from the raw data", True)])
     scorecard("topic-mind-over-matter", "scorecard", "What each test looked for and found",
               ["The claim", "If it were real", "What the data show"], [
         (47, "global-consciousness", "The random-number network", "Random-number devices around the world stray from chance on days of shared emotion.",
          "On 58 later events, scored with the project's own statistic, the network behaved as it does on ordinary days. Event days and control days cannot be told apart.",
-         "Not found", "No effect on a fresh test", "no")])
+         "Not found", "No effect on a fresh test", "no"),
+        (74, "gcp-audit", "The original 500 events", "The project's published result for its own events follows from its public raw data, and is tied to those events.",
+         "Recomputed from the raw data, 395 events match the published scores and add up to +6.08. The same hours a week away add up to −0.42. The numbers are right; how the events were chosen is the open question.",
+         "Found", "The original result is in the data", "yes")])
 
 
 def main():

@@ -51,3 +51,8 @@ Every paid run. Stop and ask Eugene before going over a question's budget, or ov
 | 2026-11-23 | site (topic pages) | OpenAI API, `gpt-image-2.6-sunburst` | 0.05 | One more illustration, for the ancient-sky topic page; estimated from token counts as above |
 | 2026-11-23 | tunguska-calibration (#100) | Google Gemini API, `gemini-4-neon` | 0.96 | Pre-lock plan review, two rounds (0.46, 0.50); list price from logged token counts |
 | 2026-11-23 | tunguska-calibration (#100) | Google Gemini API, `gemini-4-neon` | 0.46 | Independent replication program, one call |
+| 2026-11-23 | gcp-audit (#74) | OpenAI API, `gpt-6.2-astra` | 0.81 | Pre-lock plan review, two rounds (0.32, 0.49); list price from logged token counts. Over the daily cap with Eugene's approval |
+| 2026-11-23 | gcp-audit (#74) | Google Gemini API, `gemini-4-neon` | 1.09 | Pre-lock plan review, two rounds (0.51, 0.58) |
+| 2026-11-23 | gcp-audit (#74) | OpenAI API, `gpt-6.2-astra` | 0.66 | Independent replication program, one call |
+| 2026-11-23 | gcp-audit (#74) | Google Gemini API, `gemini-4-neon` | 0.81 | Independent replication program, one call |
+

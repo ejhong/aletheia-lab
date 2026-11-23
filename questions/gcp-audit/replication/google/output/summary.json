@@ -1,0 +1,28 @@
+{
+  "n_events": 395,
+  "z_all": 6.081341781368089,
+  "n_controls": 396,
+  "z_controls": -0.42233843944786725,
+  "sd_controls": 0.9799970727334911,
+  "pairs": {
+    "n": 395,
+    "z_events": 6.081341781368089,
+    "z_controls": -0.44827596888349314,
+    "sd_controls": 0.9808809989972885,
+    "mean_difference": 0.3285407242714539,
+    "p_one_sided_sign_flip": 4.9999750001249995e-06
+  },
+  "reproduction": {
+    "n": 395,
+    "r": 0.958786981862176,
+    "median_abs_difference": 0.10586620292517934,
+    "combined_ours": 6.081341781368089,
+    "combined_published": 6.605614921882937
+  },
+  "verdicts": {
+    "reproduction": "reproduces closely",
+    "events": "departure",
+    "controls": "no calibration failure detected",
+    "overall": "the excess is in the event windows"
+  }
+}
