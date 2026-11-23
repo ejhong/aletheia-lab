@@ -1,69 +1,119 @@
 <figure class="fig taurid-radar-fig" id="taurid-perihelion-rose">
 <style>
-.taurid-radar-fig { margin: 2.2rem 0 2.6rem; }
-.rad-plate {
-  background: linear-gradient(180deg, #101626 0%, #090d17 100%);
-  border: 1px solid rgba(207, 165, 68, 0.34);
-  border-radius: 6px;
-  color: #f3ecdf;
-  overflow: hidden;
-  box-shadow: 0 18px 46px rgba(12, 10, 8, 0.24);
+
+.fig .sky-panel {
+  --band: #0d1421; --band-soft: #131c2c; --band-line: #2a3750;
+  --band-ink: #f6f1e8; --band-ink-soft: #cdd3de; --band-faint: #8f9bb1; --band-slate: #c9daf0;
+  --band-copper: #d08a5c; --band-verdigris: #7fb39d; --band-ochre: #cfa544;
+  background: var(--band); color: var(--band-ink-soft);
+  border: 1px solid var(--band-line); border-radius: 3px; overflow: hidden;
+  font-family: var(--sans);
 }
-.rad-head {
+.fig .sky-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 0.5rem 1.25rem; padding: 1rem 1.25rem 0.85rem; border-bottom: 1px solid var(--band-line);
+}
+.fig .sky-eyebrow {
+  font: 500 10.5px/1.4 var(--mono); text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--band-faint); margin: 0 0 0.3rem;
+}
+.fig .sky-title { font: 400 1.3rem/1.25 var(--serif); color: var(--band-ink); margin: 0; letter-spacing: -0.005em; }
+.fig .sky-legend {
+  display: flex; flex-wrap: wrap; gap: 0.35rem 1.4rem; margin: 0;
+  padding: 0.6rem 1.25rem 0.7rem; font: 400 0.84rem/1.4 var(--sans); color: var(--band-ink-soft);
+}
+.fig .sky-legend .key { display: inline-flex; align-items: center; gap: 0.4rem; }
+.fig .sky-legend svg { flex: none; }
+.fig .sky-btn {
+  font: 400 0.8rem/1.25 var(--sans); padding: 0.4rem 0.7rem; border-radius: 3px; cursor: pointer;
+  background: transparent; border: 1px solid var(--band-line); color: var(--band-ink-soft);
+}
+.fig .sky-btn:hover { border-color: var(--band-faint); color: var(--band-ink); }
+.fig .sky-btn.is-active, .fig .sky-btn[aria-pressed="true"] {
+  border-color: var(--band-copper); color: var(--band-ink);
+  background: color-mix(in oklab, var(--band-copper) 16%, transparent);
+}
+.fig .sky-panel :focus-visible { outline: 2px solid var(--band-copper); outline-offset: 2px; }
+.fig .sky-panel input[type="checkbox"] { accent-color: var(--band-copper); }
+.fig .sky-panel strong { color: var(--band-ink); font-weight: 600; }
+
+
+.fig .ts-readout { font: 400 0.9rem/1.3 var(--sans); color: var(--band-ink); font-variant-numeric: tabular-nums; }
+.fig .ts-hud {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px;
+  background: var(--band-line); border-top: 1px solid var(--band-line); border-bottom: 1px solid var(--band-line);
+}
+.fig .ts-hud-cell { background: var(--band-soft); padding: 0.7rem 0.9rem; text-align: center; }
+.fig .ts-hud-val { font: 600 1.05rem/1.2 var(--sans); font-variant-numeric: tabular-nums; color: var(--band-ink); }
+.fig .ts-hud-lbl { font: 400 0.78rem/1.4 var(--sans); color: var(--band-ink-soft); margin-top: 0.25rem; }
+.fig .ts-controls {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: 0.6rem 1rem; padding: 1rem 1.35rem 0.85rem;
-  border-bottom: 1px solid rgba(207, 165, 68, 0.18);
+  gap: 0.6rem 1rem; padding: 0.9rem 1.25rem 1.1rem; background: var(--band-soft);
 }
-.rad-tabs { display: flex; flex-wrap: wrap; gap: 0.36rem; }
-.rad-tab {
-  font: 500 11px/1.2 var(--mono); padding: 0.36rem 0.62rem; border-radius: 3px; cursor: pointer;
-  background: rgba(255,255,255,0.04); border: 1px solid rgba(207,165,68,0.22); color: #cfc3ad;
+.fig .ts-tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.fig .ts-bar {
+  padding: 0.7rem 1.25rem 0.9rem; border-top: 1px solid var(--band-line); background: var(--band-soft);
+  font: 400 0.8rem/1.45 var(--sans); color: var(--band-ink-soft); font-variant-numeric: tabular-nums;
 }
-.rad-tab:hover { border-color: rgba(207,165,68,0.6); color: #fff4da; }
-.rad-tab.is-active { background: rgba(207,165,68,0.24); border-color: #e6ba63; color: #fff4da; }
+.fig .ts-note { margin: 0; padding: 0.55rem 1.25rem 0.65rem; font: 400 0.8rem/1.45 var(--sans); color: var(--band-ink-soft); }
+.fig .ts-note:empty { display: none; }
+@media (max-width: 44rem) { .fig .ts-hud { grid-template-columns: 1fr; } }
+
 .rad-stage { display: flex; justify-content: center; padding: 0.8rem 1rem 0.5rem; }
-.rad-stage canvas { display: block; width: 100%; max-width: 680px; height: 340px; }
-.rad-bar {
-  padding: 0.7rem 1.35rem 0.95rem; border-top: 1px solid rgba(207,165,68,0.16);
-  background: rgba(7, 10, 18, 0.75); font: 400 11.5px/1.45 var(--mono); color: #b8c4d8;
-  text-align: center;
-}
-.rad-bar strong { color: #f6d483; }
+.rad-stage canvas { display: block; width: 100%; max-width: 680px; height: 360px; }
 </style>
-<div class="rad-plate">
-  <div class="rad-head">
+<div class="sky-panel">
+  <div class="sky-head">
     <div>
-      <p class="orr-eyebrow" style="margin-bottom:.18rem">Perihelion Rose · Size-Inversion Test</p>
-      <h3 class="orr-title">Taurid Corridor vs. Jupiter's Secular Gravity Pull</h3>
-    </div>
-    <div class="rad-tabs" id="rad-tabs">
-      <button type="button" class="rad-tab is-active" data-k="H_lt_16.5">H &lt; 16.5</button>
-      <button type="button" class="rad-tab" data-k="H_lt_18.0">H &lt; 18.0</button>
-      <button type="button" class="rad-tab" data-k="H_lt_20.0">H &lt; 20.0</button>
-      <button type="button" class="rad-tab" data-k="H_lt_22.0">H &lt; 22.0</button>
-      <button type="button" class="rad-tab" data-k="all_H">All H</button>
+      <p class="sky-eyebrow">Two groups of asteroids, five size ranges</p>
+      <h3 class="sky-title">Which way the orbits point</h3>
     </div>
   </div>
+  <p class="sky-legend">
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M6 11 L1 2 A6 6 0 0 1 11 2 Z" fill="#e9d7a8" fill-opacity="0.5" stroke="#e9d7a8"/></svg>Taurid-like orbits</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><rect x="2" y="2" width="8" height="8" fill="none" stroke="#9aa5b3" stroke-width="1.5"/></svg>Rounder orbits (comparison group)</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#d08a5c" stroke-width="2"/></svg>Encke's direction</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#9aa5b3" stroke-width="1.5" stroke-dasharray="3 3"/></svg>Jupiter's direction</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#cdd3de" stroke-width="1" stroke-dasharray="2 2"/></svg>An even spread (no preferred direction)</span>
+  </p>
   <div class="rad-stage">
-    <canvas id="rad-canvas" aria-label="Polar rose histograms of asteroid longitude of perihelion comparing Napier's Taurid box against Jupiter's moderate-eccentricity secular control across five magnitude tiers."></canvas>
+    <canvas id="rad-canvas" role="img" aria-label="Two rose charts of the direction of each orbit's closest point to the Sun: Taurid-like orbits on one side, rounder orbits as a comparison group on the other, for a chosen size range."></canvas>
   </div>
-  <div class="rad-bar" id="rad-bar">—</div>
+  <div class="ts-bar" id="rad-bar" aria-live="polite">-</div>
+  <div class="ts-controls">
+    <div class="ts-tabs" id="rad-tabs" role="group" aria-label="Size range">
+      <button type="button" class="sky-btn rad-tab is-active" aria-pressed="true" data-k="H_lt_16.5">The largest (about 2 km and up)</button>
+      <button type="button" class="sky-btn rad-tab" aria-pressed="false" data-k="H_lt_18.0">Down to about 1 km</button>
+      <button type="button" class="sky-btn rad-tab" aria-pressed="false" data-k="H_lt_20.0">Down to about 400 m</button>
+      <button type="button" class="sky-btn rad-tab" aria-pressed="false" data-k="H_lt_22.0">Down to about 150 m</button>
+      <button type="button" class="sky-btn rad-tab" aria-pressed="false" data-k="all_H">All sizes</button>
+    </div>
+  </div>
 </div>
-<figcaption>Side-by-side normalized polar distributions of longitude of perihelion (ϖ in 20° wedges). <strong>Left (gold):</strong> Napier's Taurid orbital box (e ≥ 0.63, i ≤ 14°). <strong>Right (sapphire):</strong> Moderate-eccentricity control (0.40 ≤ e &lt; 0.63), which stays permanently locked toward Jupiter's perihelion (14.7°, right). Step from <em>H &lt; 16.5</em> to <em>H &lt; 18.0</em> and <em>H &lt; 20.0</em>: Napier's bright-only bulge toward Encke (161.3°, left) flattens completely to a round circle while Jupiter's secular bulge stays razor-sharp.</figcaption>
+<figcaption>Each wedge shows how many orbits have their closest point to the Sun in that direction, in slices of 20°; a round shape means no preferred direction. Taurid-like orbits are in cream; rounder orbits (comparison group) are in slate, and Jupiter's pull keeps them pointing toward Jupiter's own direction. Among the largest asteroids the cream shape bulges toward Encke, but from about 1 km down it is close to round, while the comparison group keeps its bulge toward Jupiter.</figcaption>
 <script>
 (function() {
   const T = {"H_lt_16.5":{"n_t":17,"c_t":0.55739,"f45_t":0.6471,"p_unif":0.0005,"n_l":37,"c_l":-0.35561,"p_hi":0.005899,"h_t":[1,0,0,1,0,0,4,2,3,1,1,2,2,0,0,0,0,0],"h_l":[1,1,5,0,0,3,2,0,1,0,3,0,3,1,1,5,4,7]},"H_lt_18.0":{"n_t":64,"c_t":-0.001,"f45_t":0.3125,"p_unif":0.50355,"n_l":169,"c_l":-0.32392,"p_hi":0.372663,"h_t":[10,1,3,3,1,1,7,5,3,3,4,4,5,1,3,6,1,3],"h_l":[12,7,12,4,4,7,10,4,4,4,6,5,8,7,21,16,20,18]},"H_lt_20.0":{"n_t":331,"c_t":-0.06789,"f45_t":0.2175,"p_unif":0.960304,"n_l":827,"c_l":-0.33669,"p_hi":0.781322,"h_t":[27,27,17,25,21,18,17,13,19,15,14,17,16,11,20,19,15,20],"h_l":[69,40,59,44,36,31,23,25,12,22,27,31,32,48,74,84,100,70]},"H_lt_22.0":{"n_t":848,"c_t":-0.06804,"f45_t":0.2052,"p_unif":0.9975,"n_l":2255,"c_l":-0.32341,"p_hi":0.753825,"h_t":[62,56,49,58,53,50,43,38,47,34,36,40,44,37,54,51,44,52],"h_l":[177,122,135,119,94,78,75,66,58,59,69,69,103,123,211,264,237,196]},"all_H":{"n_t":2470,"c_t":-0.06818,"f45_t":0.1955,"p_unif":1.0,"n_l":10254,"c_l":-0.18493,"p_hi":0.470953,"h_t":[121,150,156,167,190,169,126,121,113,76,102,101,116,124,181,169,150,138],"h_l":[733,691,625,643,512,455,446,424,421,364,386,394,464,534,706,840,818,798]}};
+  const C = { band: "#0d1421", soft: "#131c2c", line: "#2a3750", ink: "#f6f1e8", inkSoft: "#cdd3de", faint: "#8f9bb1", copper: "#d08a5c", cream: "#e9d7a8", pale: "#c9daf0", slate: "#9aa5b3", ochre: "#cfa544" };
+  const SANS = (getComputedStyle(document.documentElement).getPropertyValue("--sans") || "").trim() || "system-ui, sans-serif";
   const canvas = document.getElementById("rad-canvas");
   const ctx = canvas.getContext("2d");
   const bar = document.getElementById("rad-bar");
   const tabs = Array.from(document.querySelectorAll("#rad-tabs .rad-tab"));
+  const TIER = {
+    "H_lt_16.5": "the largest (about 2 km and up)",
+    "H_lt_18.0": "down to about 1 km",
+    "H_lt_20.0": "down to about 400 m",
+    "H_lt_22.0": "down to about 150 m",
+    "all_H": "all sizes"
+  };
   let key = "H_lt_16.5";
-  let W = 680, H = 340;
+  let W = 680, H = 360;
 
   function resize() {
     const rect = canvas.parentElement.getBoundingClientRect();
-    W = Math.max(300, Math.min(680, Math.round(rect.width - 16)));
-    H = W < 500 ? 520 : 340;
+    W = Math.max(240, Math.min(680, Math.round(rect.width - 16)));
+    H = W < 500 ? 560 : 360;
     canvas.style.height = H + "px";
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = W * dpr; canvas.height = H * dpr;
@@ -71,25 +121,24 @@
     render();
   }
 
-  function drawRose(cx, cy, R, counts, nTot, fillCol, strokeCol, title, sub) {
-    // Background concentric rings (expected uniform = 1/18 = 5.56%, rings at 1x, 2x, 3x uniform)
+  function drawRose(cx, cy, R, counts, nTot, fillCol, strokeCol, title, sub, dashed) {
+    // Even-spread ring: each of 18 slices would hold 1/18 of the orbits
     const expFrac = 1 / 18;
     const maxFrac = Math.max(expFrac * 2.4, ...counts.map(c => (nTot ? c / nTot : 0)));
     ctx.save();
-    for (const mult of [1, 2]) {
-      const rr = R * Math.min(1, (mult * expFrac) / maxFrac);
-      ctx.beginPath(); ctx.arc(cx, cy, rr, 0, Math.PI * 2);
-      ctx.strokeStyle = mult === 1 ? "rgba(255,255,255,0.28)" : "rgba(255,255,255,0.1)";
-      ctx.setLineDash(mult === 1 ? [3, 3] : []);
-      ctx.lineWidth = 1; ctx.stroke();
-    }
+    const rr0 = R * Math.min(1, expFrac / maxFrac);
+    ctx.beginPath(); ctx.arc(cx, cy, rr0, 0, Math.PI * 2);
+    ctx.strokeStyle = "rgba(205, 211, 222, 0.6)"; ctx.setLineDash([2, 2]); ctx.lineWidth = 1; ctx.stroke();
     ctx.setLineDash([]);
+    const rr1 = R * Math.min(1, (2 * expFrac) / maxFrac);
+    ctx.beginPath(); ctx.arc(cx, cy, rr1, 0, Math.PI * 2);
+    ctx.strokeStyle = C.line; ctx.stroke();
 
     // Outer frame circle
     ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2);
-    ctx.strokeStyle = "rgba(207,165,68,0.25)"; ctx.lineWidth = 1; ctx.stroke();
+    ctx.strokeStyle = C.line; ctx.lineWidth = 1; ctx.stroke();
 
-    // 18 wedges (20 deg each)
+    // 18 wedges of 20 degrees
     for (let i = 0; i < 18; i++) {
       const frac = nTot ? counts[i] / nTot : 0;
       const rr = R * (frac / maxFrac);
@@ -106,52 +155,61 @@
       ctx.stroke();
     }
 
-    // Encke (161.3 deg) & Jupiter (14.7 deg) reference spokes
+    // Encke (161.3 deg) and Jupiter (14.7 deg) direction lines
     const eA = -(161.29 * Math.PI) / 180;
-    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + (R + 10) * Math.cos(eA), cy + (R + 10) * Math.sin(eA));
-    ctx.strokeStyle = "#56e0c8"; ctx.lineWidth = 1.8; ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + (R + 8) * Math.cos(eA), cy + (R + 8) * Math.sin(eA));
+    ctx.strokeStyle = C.copper; ctx.lineWidth = 1.8; ctx.stroke();
 
     const jA = -(14.7 * Math.PI) / 180;
-    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + (R + 10) * Math.cos(jA), cy + (R + 10) * Math.sin(jA));
-    ctx.strokeStyle = "#e08652"; ctx.lineWidth = 1.5; ctx.setLineDash([3, 3]); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + (R + 8) * Math.cos(jA), cy + (R + 8) * Math.sin(jA));
+    ctx.strokeStyle = C.slate; ctx.lineWidth = 1.5; ctx.setLineDash([3, 3]); ctx.stroke();
     ctx.setLineDash([]);
 
-    ctx.font = "600 10px " + getComputedStyle(document.body).getPropertyValue("--mono");
-    ctx.fillStyle = "#7cf5df"; ctx.textAlign = "right";
-    ctx.fillText("Encke 161°", cx + (R + 12) * Math.cos(eA) - 2, cy + (R + 12) * Math.sin(eA) + 4);
-    ctx.fillStyle = "#ee9a6a"; ctx.textAlign = "left";
-    ctx.fillText("Jup 15°", cx + (R + 12) * Math.cos(jA) + 3, cy + (R + 12) * Math.sin(jA) + 4);
+    ctx.font = "400 11px " + SANS;
+    // Encke's label above its line, Jupiter's below, so neighbouring roses never collide
+    function lbl(txt, x, y, col, align) {
+      ctx.textAlign = align;
+      ctx.lineWidth = 3; ctx.lineJoin = "round"; ctx.strokeStyle = "rgba(13, 20, 33, 0.9)";
+      ctx.strokeText(txt, x, y);
+      ctx.fillStyle = col; ctx.fillText(txt, x, y);
+    }
+    lbl("Encke, 161°", cx + (R + 8) * Math.cos(eA) + 30, cy + (R + 8) * Math.sin(eA) - 8, C.copper, "right");
+    lbl("Jupiter, 15°", cx + (R + 8) * Math.cos(jA) - 22, cy + (R + 8) * Math.sin(jA) + 18, C.slate, "left");
 
     ctx.textAlign = "center";
-    ctx.font = "500 13px " + getComputedStyle(document.body).getPropertyValue("--serif");
-    ctx.fillStyle = "#f8f0df";
-    ctx.fillText(title, cx, cy - R - 20);
-    ctx.font = "400 10.5px " + getComputedStyle(document.body).getPropertyValue("--mono");
-    ctx.fillStyle = "#a5b2c7";
-    ctx.fillText(sub, cx, cy + R + 22);
+    ctx.font = "400 15px " + (getComputedStyle(document.documentElement).getPropertyValue("--serif") || "Georgia, serif");
+    ctx.fillStyle = C.ink;
+    ctx.fillText(title, cx, cy - R - 22);
+    ctx.font = "400 11px " + SANS;
+    ctx.fillStyle = C.inkSoft;
+    ctx.fillText(sub, cx, cy + R + 24);
     ctx.restore();
   }
+
+  function fmtC(c) { return (c >= 0 ? "+" : "") + c.toFixed(3); }
 
   function render() {
     const d = T[key];
     ctx.clearRect(0, 0, W, H);
     const stacked = W < 500;
-    const R = stacked ? Math.min(100, W * 0.3) : Math.min(112, W * 0.175);
-    const c1 = stacked ? [W / 2, H * 0.26] : [W * 0.27, H * 0.52];
+    const R = stacked ? Math.min(100, W * 0.3) : Math.min(104, W * 0.16);
+    const c1 = stacked ? [W / 2, H * 0.25] : [W * 0.27, H * 0.52];
     const c2 = stacked ? [W / 2, H * 0.75] : [W * 0.73, H * 0.52];
 
-    drawRose(c1[0], c1[1], R, d.h_t, d.n_t, "rgba(245, 203, 117, 0.42)", "rgba(245, 203, 117, 0.9)",
-             "Napier Taurid Box (e ≥ 0.63)", "N=" + d.n_t + " · c̄=" + (d.c_t >= 0 ? "+" : "") + d.c_t.toFixed(3) + " · p=" + d.p_unif.toFixed(4));
-    drawRose(c2[0], c2[1], R, d.h_l, d.n_l, "rgba(114, 180, 250, 0.36)", "rgba(114, 180, 250, 0.88)",
-             "Jupiter Secular Control (0.40 ≤ e < 0.63)", "N=" + d.n_l + " · c̄=" + (d.c_l >= 0 ? "+" : "") + d.c_l.toFixed(3) + " (locked to Jupiter)");
+    drawRose(c1[0], c1[1], R, d.h_t, d.n_t, "rgba(233, 215, 168, 0.6)", C.cream,
+             "Taurid-like orbits", d.n_t + " asteroids, alignment " + fmtC(d.c_t));
+    drawRose(c2[0], c2[1], R, d.h_l, d.n_l, "rgba(154, 165, 179, 0.18)", C.slate,
+             "Rounder orbits (comparison)", d.n_l + " asteroids, alignment " + fmtC(d.c_l));
 
-    bar.innerHTML = 'Tier <strong>' + key.replace("H_lt_", "H < ").replace("all_H", "All H") + '</strong> &nbsp;|&nbsp; Taurid ±45° share: <strong>' + (100 * d.f45_t).toFixed(1) + '%</strong> (random = 25.0%) &nbsp;|&nbsp; vs. Inclined high-e control: <strong>p = ' + d.p_hi.toFixed(3) + '</strong>';
+    bar.innerHTML = 'Showing <strong>' + TIER[key] + '</strong>. Taurid-like orbits within 45° of Encke: <strong>' + (100 * d.f45_t).toFixed(1) + '%</strong> (chance gives 25.0%). ' +
+      'Chance of an alignment this strong if directions were random: <strong>p = ' + d.p_unif.toFixed(4) + '</strong>. ' +
+      'Against more tilted orbits of the same shape: <strong>p = ' + d.p_hi.toFixed(3) + '</strong>.';
   }
 
   tabs.forEach(t => {
     t.addEventListener("click", () => {
       key = t.dataset.k;
-      tabs.forEach(b => b.classList.toggle("is-active", b === t));
+      tabs.forEach(b => { b.classList.toggle("is-active", b === t); b.setAttribute("aria-pressed", b === t ? "true" : "false"); });
       render();
     });
   });

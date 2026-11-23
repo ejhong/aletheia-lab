@@ -1,65 +1,117 @@
 <figure class="fig taurid-fb-fig" id="taurid-fireballs">
 <style>
-.taurid-fb-fig { margin: 2.2rem 0 2.6rem; }
-.fb-plate {
-  background: linear-gradient(180deg, #101626 0%, #090d17 100%);
-  border: 1px solid rgba(207, 165, 68, 0.34);
-  border-radius: 6px;
-  color: #f3ecdf;
-  overflow: hidden;
-  box-shadow: 0 18px 46px rgba(12, 10, 8, 0.24);
+
+.fig .sky-panel {
+  --band: #0d1421; --band-soft: #131c2c; --band-line: #2a3750;
+  --band-ink: #f6f1e8; --band-ink-soft: #cdd3de; --band-faint: #8f9bb1; --band-slate: #c9daf0;
+  --band-copper: #d08a5c; --band-verdigris: #7fb39d; --band-ochre: #cfa544;
+  background: var(--band); color: var(--band-ink-soft);
+  border: 1px solid var(--band-line); border-radius: 3px; overflow: hidden;
+  font-family: var(--sans);
 }
-.fb-head {
+.fig .sky-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 0.5rem 1.25rem; padding: 1rem 1.25rem 0.85rem; border-bottom: 1px solid var(--band-line);
+}
+.fig .sky-eyebrow {
+  font: 500 10.5px/1.4 var(--mono); text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--band-faint); margin: 0 0 0.3rem;
+}
+.fig .sky-title { font: 400 1.3rem/1.25 var(--serif); color: var(--band-ink); margin: 0; letter-spacing: -0.005em; }
+.fig .sky-legend {
+  display: flex; flex-wrap: wrap; gap: 0.35rem 1.4rem; margin: 0;
+  padding: 0.6rem 1.25rem 0.7rem; font: 400 0.84rem/1.4 var(--sans); color: var(--band-ink-soft);
+}
+.fig .sky-legend .key { display: inline-flex; align-items: center; gap: 0.4rem; }
+.fig .sky-legend svg { flex: none; }
+.fig .sky-btn {
+  font: 400 0.8rem/1.25 var(--sans); padding: 0.4rem 0.7rem; border-radius: 3px; cursor: pointer;
+  background: transparent; border: 1px solid var(--band-line); color: var(--band-ink-soft);
+}
+.fig .sky-btn:hover { border-color: var(--band-faint); color: var(--band-ink); }
+.fig .sky-btn.is-active, .fig .sky-btn[aria-pressed="true"] {
+  border-color: var(--band-copper); color: var(--band-ink);
+  background: color-mix(in oklab, var(--band-copper) 16%, transparent);
+}
+.fig .sky-panel :focus-visible { outline: 2px solid var(--band-copper); outline-offset: 2px; }
+.fig .sky-panel input[type="checkbox"] { accent-color: var(--band-copper); }
+.fig .sky-panel strong { color: var(--band-ink); font-weight: 600; }
+
+
+.fig .ts-readout { font: 400 0.9rem/1.3 var(--sans); color: var(--band-ink); font-variant-numeric: tabular-nums; }
+.fig .ts-hud {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px;
+  background: var(--band-line); border-top: 1px solid var(--band-line); border-bottom: 1px solid var(--band-line);
+}
+.fig .ts-hud-cell { background: var(--band-soft); padding: 0.7rem 0.9rem; text-align: center; }
+.fig .ts-hud-val { font: 600 1.05rem/1.2 var(--sans); font-variant-numeric: tabular-nums; color: var(--band-ink); }
+.fig .ts-hud-lbl { font: 400 0.78rem/1.4 var(--sans); color: var(--band-ink-soft); margin-top: 0.25rem; }
+.fig .ts-controls {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: 0.6rem 1rem; padding: 1rem 1.35rem 0.85rem;
-  border-bottom: 1px solid rgba(207, 165, 68, 0.18);
+  gap: 0.6rem 1rem; padding: 0.9rem 1.25rem 1.1rem; background: var(--band-soft);
 }
-.fb-tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-.fb-tab {
-  font: 500 11px/1.2 var(--mono); padding: 0.38rem 0.7rem; border-radius: 3px; cursor: pointer;
-  background: rgba(255,255,255,0.04); border: 1px solid rgba(207,165,68,0.22); color: #cfc3ad;
+.fig .ts-tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.fig .ts-bar {
+  padding: 0.7rem 1.25rem 0.9rem; border-top: 1px solid var(--band-line); background: var(--band-soft);
+  font: 400 0.8rem/1.45 var(--sans); color: var(--band-ink-soft); font-variant-numeric: tabular-nums;
 }
-.fb-tab:hover { border-color: rgba(207,165,68,0.6); color: #fff4da; }
-.fb-tab.is-active { background: rgba(207,165,68,0.24); border-color: #e6ba63; color: #fff4da; }
+.fig .ts-note { margin: 0; padding: 0.55rem 1.25rem 0.65rem; font: 400 0.8rem/1.45 var(--sans); color: var(--band-ink-soft); }
+.fig .ts-note:empty { display: none; }
+@media (max-width: 44rem) { .fig .ts-hud { grid-template-columns: 1fr; } }
+
 .fb-wrap { padding: 0.7rem 1rem 0.35rem; }
 .fb-wrap canvas { display: block; width: 100%; height: 320px; cursor: crosshair; }
-.fb-bar {
-  padding: 0.65rem 1.35rem 0.9rem; border-top: 1px solid rgba(207,165,68,0.16);
-  background: rgba(7, 10, 18, 0.75); font: 400 11.5px/1.4 var(--mono); color: #b8c4d8;
-}
-.fb-bar strong { color: #f6d483; }
+.fb-legend[hidden] { display: none; }
 </style>
-<div class="fb-plate">
-  <div class="fb-head">
+<div class="sky-panel">
+  <div class="sky-head">
     <div>
-      <p class="orr-eyebrow" style="margin-bottom:.18rem">NASA CNEOS Global Satellite Sensors · 1994–2025 (1,045 Airbursts)</p>
-      <h3 class="orr-title">Do Meter-Scale Airbursts Surge During Taurid Swarm Returns?</h3>
+      <p class="sky-eyebrow">NASA/JPL fireball records, 1,045 airbursts</p>
+      <h3 class="sky-title">Airbursts seen by satellite, 1994 to 2025</h3>
     </div>
-    <div class="fb-tabs" id="fb-tabs">
-      <button type="button" class="fb-tab is-active" data-v="swarm">Swarm Return Years (1994–2025)</button>
-      <button type="button" class="fb-tab" data-v="monthly">Calendar Seasonality (Jan–Dec)</button>
+    <div class="ts-tabs" id="fb-tabs" role="group" aria-label="View">
+      <button type="button" class="sky-btn fb-tab is-active" aria-pressed="true" data-v="swarm">Years the swarm was due back</button>
+      <button type="button" class="sky-btn fb-tab" aria-pressed="false" data-v="monthly">Month by month</button>
     </div>
   </div>
+  <p class="sky-legend fb-legend" id="fb-leg-swarm">
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><rect x="2" y="1" width="8" height="11" fill="#d08a5c"/></svg>Years the swarm was due back</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><rect x="2" y="1" width="8" height="11" fill="#9aa5b3" fill-opacity="0.55"/></svg>Other years</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#cdd3de" stroke-width="1.3" stroke-dasharray="4 4"/></svg>What chance gives</span>
+    <span class="key">Bar height: share of the year's airbursts in the autumn Taurid weeks (15 Oct to 30 Nov)</span>
+  </p>
+  <p class="sky-legend fb-legend" id="fb-leg-monthly" hidden>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><rect x="2" y="1" width="8" height="11" fill="#d08a5c"/></svg>October and November (autumn Taurids)</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><rect x="2" y="1" width="8" height="11" fill="#e9d7a8"/></svg>June and July (daytime Taurids)</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><rect x="2" y="1" width="8" height="11" fill="#9aa5b3" fill-opacity="0.55"/></svg>Other months</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#cdd3de" stroke-width="1.3" stroke-dasharray="4 4"/></svg>Average month</span>
+  </p>
   <div class="fb-wrap">
-    <canvas id="fb-canvas" aria-label="Interactive chart of 32 years of NASA CNEOS satellite-detected fireballs comparing published 7:2 Taurid resonant swarm return years against non-swarm years and across all 12 calendar months."></canvas>
+    <canvas id="fb-canvas" tabindex="0" role="img" aria-label="Bar chart of airbursts seen by US government satellites, 1994 to 2025, by year or by month. Focus the chart and use the left and right arrow keys to read each bar."></canvas>
   </div>
-  <div class="fb-bar" id="fb-bar">Hover any bar to inspect exact yearly or monthly satellite bolide counts and impact energy.</div>
+  <div class="ts-bar" id="fb-bar" aria-live="polite">Point at a bar, or select the chart and use the arrow keys, to see its numbers.</div>
 </div>
-<figcaption>US government satellite bolide detections from NASA/JPL CNEOS across 32 complete years (1994–2025; 1,045 events, 1,182 kt total energy). <strong>Swarm Return Years view:</strong> within-year Autumn Taurid bolide share (Oct 15–Nov 30) removes long-term sensor-sensitivity drift; the 6 published 7:2 resonant swarm years (gold bars: 1998, 2005, 2015, 2018, 2022, 2025) average <strong>12.7%</strong> vs. <strong>13.0%</strong> in the 26 non-swarm years (p = 0.520). <strong>Calendar Seasonality view:</strong> both the Autumn Taurids (0.99× expected) and Daytime β-Taurids (0.91× expected) sit completely flat.</figcaption>
+<figcaption>Airbursts recorded by US government satellites in NASA/JPL's fireball list, 32 full years (1994 to 2025; 1,045 events, 1,182 kilotons in all). Each bar in the first view is one year's share of airbursts that came in the autumn Taurid weeks, which cancels out the sensors improving over time. The six years the swarm was due back (copper: 1998, 2005, 2015, 2018, 2022, 2025) average 12.7%, against 13.0% in the other 26 years (p = 0.520, well within chance); by month, neither the autumn Taurids (0.99 times the expected number) nor the daytime Taurids of June and July (0.91 times) stand out.</figcaption>
 <script>
 (function() {
   const D = {"yearly":[{"year":1994,"swarm6":false,"swarm4":false,"n_year":13,"n_aut":4,"s_cnt":0.3077,"n_aut_1kt":2,"e_year_kt":42.09,"e_aut_kt":8.42,"s_eng":0.2},{"year":1995,"swarm6":false,"swarm4":false,"n_year":21,"n_aut":2,"s_cnt":0.0952,"n_aut_1kt":0,"e_year_kt":6.49,"e_aut_kt":0.18,"s_eng":0.0271},{"year":1996,"swarm6":false,"swarm4":false,"n_year":33,"n_aut":6,"s_cnt":0.1818,"n_aut_1kt":0,"e_year_kt":8.92,"e_aut_kt":1.17,"s_eng":0.1308},{"year":1997,"swarm6":false,"swarm4":false,"n_year":21,"n_aut":1,"s_cnt":0.0476,"n_aut_1kt":1,"e_year_kt":10.06,"e_aut_kt":1.9,"s_eng":0.1889},{"year":1998,"swarm6":true,"swarm4":true,"n_year":13,"n_aut":2,"s_cnt":0.1538,"n_aut_1kt":1,"e_year_kt":3.72,"e_aut_kt":1.69,"s_eng":0.4544},{"year":1999,"swarm6":false,"swarm4":false,"n_year":30,"n_aut":4,"s_cnt":0.1333,"n_aut_1kt":0,"e_year_kt":18.37,"e_aut_kt":0.92,"s_eng":0.0501},{"year":2000,"swarm6":false,"swarm4":false,"n_year":38,"n_aut":3,"s_cnt":0.0789,"n_aut_1kt":0,"e_year_kt":22.7,"e_aut_kt":0.78,"s_eng":0.0344},{"year":2001,"swarm6":false,"swarm4":false,"n_year":22,"n_aut":4,"s_cnt":0.1818,"n_aut_1kt":0,"e_year_kt":19.03,"e_aut_kt":1.87,"s_eng":0.0983},{"year":2002,"swarm6":false,"swarm4":false,"n_year":30,"n_aut":4,"s_cnt":0.1333,"n_aut_1kt":1,"e_year_kt":31.28,"e_aut_kt":2.15,"s_eng":0.0687},{"year":2003,"swarm6":false,"swarm4":false,"n_year":37,"n_aut":4,"s_cnt":0.1081,"n_aut_1kt":1,"e_year_kt":18.7,"e_aut_kt":2.42,"s_eng":0.1294},{"year":2004,"swarm6":false,"swarm4":false,"n_year":39,"n_aut":2,"s_cnt":0.0513,"n_aut_1kt":0,"e_year_kt":50.02,"e_aut_kt":1.03,"s_eng":0.0206},{"year":2005,"swarm6":true,"swarm4":true,"n_year":45,"n_aut":7,"s_cnt":0.1556,"n_aut_1kt":0,"e_year_kt":10.58,"e_aut_kt":1.29,"s_eng":0.1218},{"year":2006,"swarm6":false,"swarm4":false,"n_year":37,"n_aut":2,"s_cnt":0.0541,"n_aut_1kt":0,"e_year_kt":37.24,"e_aut_kt":0.7,"s_eng":0.0189},{"year":2007,"swarm6":false,"swarm4":false,"n_year":24,"n_aut":1,"s_cnt":0.0417,"n_aut_1kt":0,"e_year_kt":8.53,"e_aut_kt":0.19,"s_eng":0.0223},{"year":2008,"swarm6":false,"swarm4":false,"n_year":37,"n_aut":5,"s_cnt":0.1351,"n_aut_1kt":0,"e_year_kt":9.3,"e_aut_kt":1.68,"s_eng":0.1805},{"year":2009,"swarm6":false,"swarm4":false,"n_year":35,"n_aut":7,"s_cnt":0.2,"n_aut_1kt":2,"e_year_kt":69.88,"e_aut_kt":22.57,"s_eng":0.323},{"year":2010,"swarm6":false,"swarm4":false,"n_year":36,"n_aut":6,"s_cnt":0.1667,"n_aut_1kt":0,"e_year_kt":40.84,"e_aut_kt":1.45,"s_eng":0.0356},{"year":2011,"swarm6":false,"swarm4":false,"n_year":33,"n_aut":1,"s_cnt":0.0303,"n_aut_1kt":0,"e_year_kt":11.21,"e_aut_kt":0.08,"s_eng":0.0073},{"year":2012,"swarm6":false,"swarm4":false,"n_year":37,"n_aut":4,"s_cnt":0.1081,"n_aut_1kt":0,"e_year_kt":12.63,"e_aut_kt":0.64,"s_eng":0.0506},{"year":2013,"swarm6":false,"swarm4":false,"n_year":25,"n_aut":1,"s_cnt":0.04,"n_aut_1kt":0,"e_year_kt":468.71,"e_aut_kt":0.23,"s_eng":0.0005},{"year":2014,"swarm6":false,"swarm4":false,"n_year":34,"n_aut":7,"s_cnt":0.2059,"n_aut_1kt":1,"e_year_kt":21.83,"e_aut_kt":3.34,"s_eng":0.153},{"year":2015,"swarm6":true,"swarm4":true,"n_year":45,"n_aut":4,"s_cnt":0.0889,"n_aut_1kt":0,"e_year_kt":16.09,"e_aut_kt":1.46,"s_eng":0.0907},{"year":2016,"swarm6":false,"swarm4":false,"n_year":33,"n_aut":3,"s_cnt":0.0909,"n_aut_1kt":0,"e_year_kt":26.42,"e_aut_kt":0.75,"s_eng":0.0284},{"year":2017,"swarm6":false,"swarm4":false,"n_year":30,"n_aut":4,"s_cnt":0.1333,"n_aut_1kt":1,"e_year_kt":20.63,"e_aut_kt":2.0,"s_eng":0.0968},{"year":2018,"swarm6":true,"swarm4":false,"n_year":39,"n_aut":6,"s_cnt":0.1538,"n_aut_1kt":1,"e_year_kt":66.03,"e_aut_kt":2.09,"s_eng":0.0317},{"year":2019,"swarm6":false,"swarm4":false,"n_year":42,"n_aut":5,"s_cnt":0.119,"n_aut_1kt":0,"e_year_kt":20.88,"e_aut_kt":0.93,"s_eng":0.0445},{"year":2020,"swarm6":false,"swarm4":false,"n_year":41,"n_aut":10,"s_cnt":0.2439,"n_aut_1kt":1,"e_year_kt":21.32,"e_aut_kt":2.61,"s_eng":0.1226},{"year":2021,"swarm6":false,"swarm4":false,"n_year":32,"n_aut":7,"s_cnt":0.2188,"n_aut_1kt":0,"e_year_kt":7.58,"e_aut_kt":0.85,"s_eng":0.1116},{"year":2022,"swarm6":true,"swarm4":true,"n_year":42,"n_aut":5,"s_cnt":0.119,"n_aut_1kt":0,"e_year_kt":26.3,"e_aut_kt":0.83,"s_eng":0.0316},{"year":2023,"swarm6":false,"swarm4":false,"n_year":36,"n_aut":5,"s_cnt":0.1389,"n_aut_1kt":0,"e_year_kt":26.38,"e_aut_kt":1.3,"s_eng":0.0494},{"year":2024,"swarm6":false,"swarm4":false,"n_year":32,"n_aut":4,"s_cnt":0.125,"n_aut_1kt":0,"e_year_kt":15.67,"e_aut_kt":0.61,"s_eng":0.0392},{"year":2025,"swarm6":true,"swarm4":false,"n_year":33,"n_aut":3,"s_cnt":0.0909,"n_aut_1kt":0,"e_year_kt":12.26,"e_aut_kt":0.67,"s_eng":0.0549}],"monthly":[{"month":1,"count":90,"count_1kt":9,"energy_kt":49.04},{"month":2,"count":92,"count_1kt":10,"energy_kt":534.47},{"month":3,"count":89,"count_1kt":8,"energy_kt":35.97},{"month":4,"count":90,"count_1kt":10,"energy_kt":60.02},{"month":5,"count":87,"count_1kt":10,"energy_kt":40.01},{"month":6,"count":83,"count_1kt":12,"energy_kt":57.17},{"month":7,"count":87,"count_1kt":10,"energy_kt":51.05},{"month":8,"count":78,"count_1kt":10,"energy_kt":44.64},{"month":9,"count":82,"count_1kt":11,"energy_kt":53.7},{"month":10,"count":95,"count_1kt":7,"energy_kt":80.61},{"month":11,"count":88,"count_1kt":10,"energy_kt":56.0},{"month":12,"count":84,"count_1kt":8,"energy_kt":119.03}],"b1":{"autumn_taurids":{"window":"Oct 15 - Nov 30","expected_frac":0.12868,"count":133,"expected_count":134.47,"rate_ratio":0.989,"p_count":0.56783,"count_1kt":12,"expected_1kt":14.8,"p_1kt":0.819641,"energy_kt":68.8,"p_energy":0.905509,"mean_log10_kt":-0.6367,"p_mean_log_kt":0.883512},"daytime_taurids":{"window":"Jun 10 - Jul 10","expected_frac":0.08487,"count":81,"expected_count":88.69,"rate_ratio":0.913,"p_count":0.817776,"count_1kt":10,"expected_1kt":9.76,"p_1kt":0.516085,"energy_kt":48.71,"p_energy":0.729927,"mean_log10_kt":-0.607,"p_mean_log_kt":0.594841}},"b2":{"n_swarm_years":6,"n_nonswarm_years":26,"s_cnt":{"mean_swarm":0.127,"mean_nonswarm":0.1296,"diff":-0.0026,"p_perm":0.520148},"n_aut":{"mean_swarm":4.5,"mean_nonswarm":4.0769,"diff":0.4231,"p_perm":0.369763},"n_aut_1kt":{"mean_swarm":0.3333,"mean_nonswarm":0.3846,"diff":-0.0513,"p_perm":0.687631},"s_eng":{"mean_swarm":0.1308,"mean_nonswarm":0.0859,"diff":0.045,"p_perm":0.171283}}};
+  const C = { band: "#0d1421", soft: "#131c2c", line: "#2a3750", ink: "#f6f1e8", inkSoft: "#cdd3de", faint: "#8f9bb1", copper: "#d08a5c", cream: "#e9d7a8", pale: "#c9daf0", slate: "#9aa5b3", ochre: "#cfa544" };
+  const SANS = (getComputedStyle(document.documentElement).getPropertyValue("--sans") || "").trim() || "system-ui, sans-serif";
   const canvas = document.getElementById("fb-canvas");
   const ctx = canvas.getContext("2d");
   const bar = document.getElementById("fb-bar");
+  const legSwarm = document.getElementById("fb-leg-swarm");
+  const legMonthly = document.getElementById("fb-leg-monthly");
   const tabs = Array.from(document.querySelectorAll("#fb-tabs .fb-tab"));
+  const DEFAULT = "Point at a bar, or select the chart and use the arrow keys, to see its numbers.";
   let view = "swarm", hoverIdx = -1, W = 700, H = 320;
-  const PAD = { l: 50, r: 20, t: 24, b: 40 };
+  const PAD = { l: 42, r: 12, t: 24, b: 34 };
   const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const MONTHS_LONG = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
   function resize() {
     const rect = canvas.parentElement.getBoundingClientRect();
-    W = Math.max(300, Math.round(rect.width - 32));
+    W = Math.max(240, Math.round(rect.width - 32));
     H = W < 500 ? 290 : 320;
     canvas.style.height = H + "px";
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -68,81 +120,66 @@
     render();
   }
 
+  function grid(yOf, ticks, fmt, pw) {
+    ctx.textAlign = "right";
+    for (const v of ticks) {
+      const y = yOf(v);
+      ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + pw, y);
+      ctx.strokeStyle = C.line; ctx.lineWidth = 1; ctx.stroke();
+      ctx.fillStyle = C.faint; ctx.fillText(fmt(v), PAD.l - 6, y + 4);
+    }
+  }
+
+  function refLine(y, pw, txt) {
+    ctx.save();
+    ctx.setLineDash([4, 4]);
+    ctx.strokeStyle = C.inkSoft; ctx.lineWidth = 1.3;
+    ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + pw, y); ctx.stroke();
+    ctx.restore();
+    if (txt) {
+      // Written above the plot, clear of the bars
+      ctx.textAlign = "right";
+      ctx.fillStyle = C.inkSoft; ctx.fillText(txt, PAD.l + pw, PAD.t - 9);
+    }
+  }
+
   function render() {
     const pw = W - PAD.l - PAD.r, ph = H - PAD.t - PAD.b;
     ctx.clearRect(0, 0, W, H);
-    ctx.font = "400 10px " + getComputedStyle(document.body).getPropertyValue("--mono");
+    ctx.font = "400 11px " + SANS;
 
     if (view === "swarm") {
       const rows = D.yearly;
       const yMax = 0.34;
       const yOf = v => PAD.t + ((yMax - v) / yMax) * ph;
       const bw = pw / rows.length;
-
-      // Grid lines
-      ctx.textAlign = "right";
-      for (const p of [0, 0.10, 0.20, 0.30]) {
-        const y = yOf(p);
-        ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + pw, y);
-        ctx.strokeStyle = "rgba(255,255,255,0.08)"; ctx.stroke();
-        ctx.fillStyle = "#94a2b8"; ctx.fillText(Math.round(p * 100) + "%", PAD.l - 7, y + 3.5);
-      }
-
-      // Expected uniform 12.87% & swarm mean 12.70%
-      const yExp = yOf(0.1287);
-      ctx.save();
-      ctx.setLineDash([4, 4]);
-      ctx.strokeStyle = "rgba(138, 211, 181, 0.65)"; ctx.lineWidth = 1.3;
-      ctx.beginPath(); ctx.moveTo(PAD.l, yExp); ctx.lineTo(PAD.l + pw, yExp); ctx.stroke();
-      ctx.restore();
-      ctx.textAlign = "right"; ctx.fillStyle = "#8ad3b5";
-      ctx.fillText("Expected uniform 12.9% · Swarm avg 12.7%", PAD.l + pw - 4, yExp - 5);
+      grid(yOf, [0, 0.10, 0.20, 0.30], v => Math.round(v * 100) + "%", pw);
 
       rows.forEach((r, i) => {
         const x = PAD.l + i * bw + bw * 0.14;
         const w = Math.max(3, bw * 0.72);
         const y = yOf(r.s_cnt);
         const isHov = i === hoverIdx;
-        ctx.fillStyle = r.swarm6
-          ? (isHov ? "#ffe39e" : "#e8b456")
-          : (isHov ? "#95b9e8" : "rgba(104, 134, 178, 0.55)");
+        ctx.fillStyle = r.swarm6 ? (isHov ? "#e3a57c" : C.copper)
+                                 : (isHov ? "rgba(205, 211, 222, 0.85)" : "rgba(154, 165, 179, 0.55)");
         ctx.fillRect(x, y, w, PAD.t + ph - y);
-        if (r.swarm6) {
-          ctx.fillStyle = "#f7cf78";
+        if (isHov) { ctx.strokeStyle = C.ink; ctx.lineWidth = 1; ctx.strokeRect(x + 0.5, y + 0.5, w - 1, PAD.t + ph - y - 1); }
+        const nearSwarm = (rows[i - 1] && rows[i - 1].swarm6) || (rows[i + 1] && rows[i + 1].swarm6);
+        const showYear = r.swarm6 || (W >= 500 && r.year % 4 === 0 && !nearSwarm);
+        if (showYear) {
+          ctx.fillStyle = r.swarm6 ? C.copper : C.faint;
           ctx.textAlign = "center";
-          ctx.fillText("★", x + w / 2, y - 4);
-        }
-        if (r.year % 4 === 0 || r.swarm6) {
-          ctx.fillStyle = r.swarm6 ? "#f7cf78" : "#8c9ab0";
-          ctx.textAlign = "center";
-          ctx.fillText(String(r.year).slice(2), x + w / 2, PAD.t + ph + 15);
+          ctx.fillText(W >= 640 ? String(r.year) : "'" + String(r.year).slice(2), x + w / 2, PAD.t + ph + 15);
         }
       });
-      ctx.textAlign = "center"; ctx.fillStyle = "#9aa7bd";
-      ctx.fillText("Year (1994–2025 · ★ = Published 7:2 Resonant Swarm Return Years)", PAD.l + pw / 2, H - 6);
+      refLine(yOf(0.1287), pw, W >= 500 ? "Dashed line: chance gives 12.9%; swarm years average 12.7%" : "Dashed line: chance, 12.9%");
     } else {
       const rows = D.monthly;
       const yMax = 115;
       const yOf = v => PAD.t + ((yMax - v) / yMax) * ph;
       const bw = pw / 12;
-
-      // Shaded Taurid season columns (Jun-Jul daytime, Oct-Nov autumn)
-      ctx.fillStyle = "rgba(114, 185, 255, 0.08)";
-      ctx.fillRect(PAD.l + 5.3 * bw, PAD.t, 1.0 * bw, ph);
-      ctx.fillStyle = "rgba(245, 203, 117, 0.09)";
-      ctx.fillRect(PAD.l + 9.45 * bw, PAD.t, 1.55 * bw, ph);
-
-      ctx.textAlign = "right";
-      for (const v of [0, 30, 60, 90]) {
-        const y = yOf(v);
-        ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + pw, y);
-        ctx.strokeStyle = "rgba(255,255,255,0.08)"; ctx.stroke();
-        ctx.fillStyle = "#94a2b8"; ctx.fillText(String(v), PAD.l - 7, y + 3.5);
-      }
-
-      const yAvg = yOf(1045 / 12);
-      ctx.save(); ctx.setLineDash([4, 4]); ctx.strokeStyle = "rgba(138, 211, 181, 0.65)";
-      ctx.beginPath(); ctx.moveTo(PAD.l, yAvg); ctx.lineTo(PAD.l + pw, yAvg); ctx.stroke(); ctx.restore();
+      grid(yOf, [0, 30, 60, 90], v => String(v), pw);
+      refLine(yOf(1045 / 12), pw, "Dashed line: the average month");
 
       rows.forEach((r, i) => {
         const x = PAD.l + i * bw + bw * 0.18;
@@ -151,27 +188,42 @@
         const isAut = (i === 9 || i === 10);
         const isDay = (i === 5 || i === 6);
         const isHov = i === hoverIdx;
-        ctx.fillStyle = isAut ? (isHov ? "#ffe29b" : "#e8b456")
-                     : isDay ? (isHov ? "#a7d5ff" : "#6ca8e6")
-                     : (isHov ? "#9ab0cf" : "rgba(110, 134, 170, 0.52)");
+        ctx.fillStyle = isAut ? (isHov ? "#e3a57c" : C.copper)
+                     : isDay ? (isHov ? "#f6ecd3" : C.cream)
+                     : (isHov ? "rgba(205, 211, 222, 0.85)" : "rgba(154, 165, 179, 0.55)");
         ctx.fillRect(x, y, w, PAD.t + ph - y);
-        ctx.fillStyle = "#e6ebf2"; ctx.textAlign = "center";
+        if (isHov) { ctx.strokeStyle = C.ink; ctx.lineWidth = 1; ctx.strokeRect(x + 0.5, y + 0.5, w - 1, PAD.t + ph - y - 1); }
+        ctx.textAlign = "center";
+        ctx.lineWidth = 3; ctx.lineJoin = "round"; ctx.strokeStyle = "rgba(13, 20, 33, 0.9)";
+        ctx.strokeText(String(r.count), x + w / 2, y - 5);
+        ctx.fillStyle = C.inkSoft;
         ctx.fillText(String(r.count), x + w / 2, y - 5);
-        ctx.fillStyle = isAut ? "#f7cf78" : isDay ? "#8cc7ff" : "#9aa7bd";
-        ctx.fillText(MONTHS[i], x + w / 2, PAD.t + ph + 16);
+        ctx.fillStyle = isAut ? C.copper : isDay ? C.cream : C.faint;
+        ctx.fillText(W >= 420 ? MONTHS[i] : MONTHS[i].charAt(0), x + w / 2, PAD.t + ph + 16);
       });
-      ctx.textAlign = "center"; ctx.fillStyle = "#9aa7bd";
-      ctx.fillText("Calendar Month (1994–2025 · Gold = Oct–Nov Autumn Taurids, Blue = Jun–Jul Daytime β-Taurids)", PAD.l + pw / 2, H - 6);
     }
-    ctx.strokeStyle = "rgba(207, 165, 68, 0.3)"; ctx.lineWidth = 1;
-    ctx.strokeRect(PAD.l, PAD.t, pw, ph);
+    ctx.strokeStyle = C.line; ctx.lineWidth = 1;
+    ctx.strokeRect(PAD.l + 0.5, PAD.t + 0.5, pw - 1, ph - 1);
+  }
+
+  function describe(idx) {
+    if (idx < 0) { bar.textContent = DEFAULT; return; }
+    if (view === "swarm") {
+      const r = D.yearly[idx];
+      bar.innerHTML = '<strong>' + r.year + (r.swarm6 ? ', a year the swarm was due back' : '') + '</strong>. In the autumn Taurid weeks: <strong>' + r.n_aut + ' of ' + r.n_year + ' (' + (100 * r.s_cnt).toFixed(1) + '%)</strong>. Of those, 1 kiloton or more: <strong>' + r.n_aut_1kt + '</strong>. Their energy: <strong>' + r.e_aut_kt.toFixed(2) + ' kilotons</strong>.';
+    } else {
+      const r = D.monthly[idx];
+      bar.innerHTML = '<strong>' + MONTHS_LONG[idx] + ', 1994 to 2025</strong>. Airbursts: <strong>' + r.count + '</strong>. Of those, 1 kiloton or more: <strong>' + r.count_1kt + '</strong>. Total energy: <strong>' + r.energy_kt.toFixed(1) + ' kilotons</strong>.';
+    }
   }
 
   tabs.forEach(t => {
     t.addEventListener("click", () => {
       view = t.dataset.v; hoverIdx = -1;
-      tabs.forEach(b => b.classList.toggle("is-active", b === t));
-      bar.textContent = "Hover any bar to inspect exact yearly or monthly satellite bolide counts and impact energy.";
+      tabs.forEach(b => { b.classList.toggle("is-active", b === t); b.setAttribute("aria-pressed", b === t ? "true" : "false"); });
+      legSwarm.hidden = view !== "swarm";
+      legMonthly.hidden = view === "swarm";
+      describe(-1);
       render();
     });
   });
@@ -180,19 +232,24 @@
     const rect = canvas.getBoundingClientRect();
     const mx = ev.clientX - rect.left;
     const pw = W - PAD.l - PAD.r;
-    if (mx < PAD.l || mx > PAD.l + pw) { hoverIdx = -1; render(); return; }
+    if (mx < PAD.l || mx > PAD.l + pw) { if (hoverIdx !== -1) { hoverIdx = -1; render(); } return; }
     const n = view === "swarm" ? D.yearly.length : 12;
     const idx = Math.min(n - 1, Math.max(0, Math.floor(((mx - PAD.l) / pw) * n)));
-    if (idx !== hoverIdx) { hoverIdx = idx; render(); }
-    if (view === "swarm") {
-      const r = D.yearly[idx];
-      bar.innerHTML = '<strong>' + r.year + (r.swarm6 ? ' ★ (7:2 Swarm Year)' : ' (Non-swarm)') + '</strong> &nbsp;|&nbsp; Autumn Taurids: <strong>' + r.n_aut + '/' + r.n_year + ' (' + (100 * r.s_cnt).toFixed(1) + '%)</strong> &nbsp;|&nbsp; ≥1 kt: <strong>' + r.n_aut_1kt + '</strong> &nbsp;|&nbsp; Autumn energy: <strong>' + r.e_aut_kt.toFixed(2) + ' kt</strong>';
-    } else {
-      const r = D.monthly[idx];
-      bar.innerHTML = '<strong>' + MONTHS[idx] + ' (1994–2025)</strong> &nbsp;|&nbsp; Bolides: <strong>' + r.count + '</strong> &nbsp;|&nbsp; Large (≥1 kt): <strong>' + r.count_1kt + '</strong> &nbsp;|&nbsp; Total energy: <strong>' + r.energy_kt.toFixed(1) + ' kt</strong>';
-    }
+    if (idx !== hoverIdx) { hoverIdx = idx; render(); describe(idx); }
   });
   canvas.addEventListener("mouseleave", () => { hoverIdx = -1; render(); });
+  canvas.addEventListener("keydown", ev => {
+    const n = view === "swarm" ? D.yearly.length : 12;
+    let idx = hoverIdx;
+    if (ev.key === "ArrowRight") idx = idx < 0 ? 0 : Math.min(n - 1, idx + 1);
+    else if (ev.key === "ArrowLeft") idx = idx < 0 ? n - 1 : Math.max(0, idx - 1);
+    else if (ev.key === "Home") idx = 0;
+    else if (ev.key === "End") idx = n - 1;
+    else if (ev.key === "Escape") idx = -1;
+    else return;
+    ev.preventDefault();
+    hoverIdx = idx; render(); describe(idx);
+  });
 
   if (typeof ResizeObserver !== "undefined") {
     new ResizeObserver(resize).observe(canvas.parentElement);
