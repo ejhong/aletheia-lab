@@ -460,3 +460,18 @@ Responses.
   which rule applications DTK licenses, which this setting cannot state. S4e is now claimed as the lab's
   complement to the passage, and S4f is the piece that bears on indeterminacy. Round 2 re-checks S4e only.
 
+**Round 2 and the state at the lock.** Cost $0.40. S4e: `faithful` from both checkers. One Google call was cut off
+when a tool call failed and was run again; if it was billed, that is about $0.30 more, estimated. Final verdicts
+are in `statement-check/REPORT-2C.md`:
+
+- Planted errors: 3 of 3 caught by both checkers.
+- Of the nine real items, eight are `faithful` or `faithful_with_caveats` from both.
+- Unresolved divergence, carried into the results: S4c (OpenAI `divergent`: it is stronger than the remark it
+  supports).
+
+Total for the tier 2C statement check: $5.21 ($1.24 OpenAI, $3.97 Google, the last including the estimated $0.30).
+Question total: $40.26.
+
+`statement-check/Statement5.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement5.lean` and is
+locked there. Nothing in tier 2C has been proved for the record before this point.
+
