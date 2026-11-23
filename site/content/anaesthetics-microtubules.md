@@ -1,82 +1,91 @@
 ---
 # To update this page, edit this file and push to main; the site rebuilds itself.
 # The panels and interactive figures are made by questions/anaesthetics-microtubules/analysis/make_figures.py from the results files.
-summary: One theory of consciousness proposes that general anaesthetics put the brain under by acting on microtubules inside nerve cells rather than on ion channels. Does molecular docking of real anaesthetics and look-alike non-anaesthetics single out microtubules?
-verdict: Standard molecular docking finds no tubulin signal. Non-anaesthetics bind tighter than real drugs, and an unrelated control protein beats tubulin
-result: Across 1,680 dockings of 35 volatile gases onto eight proteins, predicted binding to microtubule tubulin neither tracks clinical potency nor rejects fat-soluble gases that fail to cause anaesthesia. Bulky fluorinated non-anaesthetics score tighter than real drugs on almost every protein because docking rewards heavy-atom count, and even after correcting for size or switching scoring functions, tubulin shows no advantage over ion channels, soluble bystander proteins or ubiquitin. Rigid docking cannot test what a drug does after it lands in a pocket, so post-binding effects remain separate, but docking itself does not pick out microtubules.
-dek: General anaesthesia switches consciousness off cleanly and reversibly, yet how the drugs do it is still argued over. Most neuroscientists point to ion channels at synapses; the Orch OR theory points to hydrophobic pockets inside the cell's microtubule scaffolding. We docked 27 volatile anaesthetics and 7 fat-soluble non-anaesthetics into tubulin and seven comparison proteins, with the rules fixed before looking at the scores.
+summary: One theory of consciousness says general anaesthetics work by acting on microtubules inside nerve cells, not on the channels at their surface. If a computer fits anaesthetic gases into pockets on eight proteins, does the microtubule protein stand out?
+verdict: Could not tell: the calculation does not pick out microtubules, and does not pick out the accepted targets either
+result: A standard calculation of how tightly 35 gases sit in pockets on eight proteins shows nothing special about tubulin, the protein of microtubules: its predicted grip matches anaesthetic strength weakly, and look-alike gases that do not cause anaesthesia score tighter than real ones. But the same is true of the ion channels that anaesthetics are known to act on, and an unrelated protein does as well as any. The scores mostly follow the size of the molecule. So this method cannot tell an anaesthetic target from any other protein, and the result neither supports the microtubule idea nor counts much against it.
+dek: General anaesthesia switches consciousness off cleanly and brings it back, and how the drugs do it is still argued over. Most researchers point to ion channels on the surface of nerve cells. Roger Penrose and Stuart Hameroff's theory points to pockets in the microtubules inside them. We asked a docking program to fit 27 anaesthetic gases and 7 look-alikes into tubulin and seven other proteins, with the rules fixed before looking at the scores.
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Run and written up; awaiting independent replication by a second AI system from the locked plan. Under open molecular docking, microtubule tubulin fails to track anaesthetic potency, fails to reject non-anaesthetics, and is outperformed by an unrelated control protein (ubiquitin).
+> **Where things stand, 23 November 2026.** Finished. Run by Antigravity (Google DeepMind); its statistics were recomputed from the results table by Claude (Anthropic) and matched, though the docking itself was not re-run. Tubulin does not stand out. Neither do the accepted targets, so the method cannot answer the question it was asked.
 
 ## What we figured out {menu: Findings}
 
-For more than a century, anaesthesiologists have known a strange rule: the more easily a volatile gas dissolves in olive oil, the smaller the dose needed to put a patient under. Yet a small family of fat-soluble fluorinated gases breaks that rule completely. They dissolve in oil just fine, reach the brain, and still do not cause anaesthesia. Any serious target for general anaesthesia has to do two things: bind stronger anaesthetics more readily than weaker ones, and treat those look-alike "non-immobilizers" differently.
+For more than a century anaesthetists have known a strange rule: the more easily a gas dissolves in olive oil, the less of it is needed to put a patient under. A small family of gases breaks the rule. They dissolve in oil well, they reach the brain, and they do not cause anaesthesia. Whatever anaesthetics act on has to do two things: hold strong anaesthetics more tightly than weak ones, and treat those look-alikes differently.
 
-Roger Penrose and Stuart Hameroff's Orch OR theory proposes that the crucial target is not an ion channel at the synapse, but αβ-tubulin — the protein brick that builds microtubules inside nerve cells. Prior computational work (Craddock et al. 2012, 2017) mapped eight pockets on tubulin and docked volatile gases into them. We asked a simpler, head-to-head question: **if you run the exact same open docking pipeline on tubulin and seven comparison proteins — two classic ion-channel targets (`GABA_A` and `GLIC`), two non-conscious soluble proteins known to bind anaesthetics (`Albumin` and `Firefly Luciferase`), and two unrelated bystander proteins (`Lysozyme` and `Ubiquitin`) — does tubulin stand out?**
+Penrose and Hameroff's theory, known as Orch OR, says consciousness depends on microtubules, the scaffolding inside nerve cells, and that anaesthetics switch it off by settling into oily pockets in tubulin, the protein microtubules are made of. Earlier work by supporters of the theory mapped eight such pockets and fitted gases into them by computer (Craddock and colleagues, 2012 and 2017).
+
+We ran the same kind of calculation on tubulin and on seven other proteins: two ion channels that are the usual suspects for anaesthesia, two proteins known to hold anaesthetics without having anything to do with consciousness, and two unrelated proteins as a check. If anaesthetics pick out microtubules, tubulin should stand out.
 
 {{figure: anaesthetics-microtubules/tiles}}
 
-Five things came out.
-
-1. **Predicted binding on tubulin does not track how strong an anaesthetic is.** Across 27 volatile anaesthetics (9 familiar clinical gases plus 18 aromatic and cycloalkane gases tested in rats by Fang et al. 1996), primary tubulin (`1JFF`) gives a weak, non-significant correlation with potency (`ρ = +0.29`, `p = 0.146`). A higher-resolution tubulin crystal (`4I4T`, 1.80 Å) gives `ρ = +0.35` (`p = 0.074`), and an alternative scoring function (`Vinardo`) on `1JFF` gives `ρ = +0.28` (`p = 0.151`). Restricting tubulin to its single most-cited pocket (`site 7`) drops the correlation to `ρ = +0.12`.
-2. **Non-anaesthetics actually score tighter than real anaesthetics on almost every protein.** On tubulin (`1JFF`), the seven confirmed non-immobilizers bind with a median affinity of `6.05 kcal/mol`, tighter than the `5.50 kcal/mol` median of the 27 real anaesthetics (`AUC = 0.21`, where `0.50` is a coin flip and values below `0.50` mean non-anaesthetics bind tighter). The same inversion appears on high-resolution tubulin (`AUC = 0.08`), `GABA_A` (`0.08`), Albumin (`0.09`), Luciferase (`0.12`), and Lysozyme (`0.17`).
-3. **Heavy-atom size bias drives the whole show.** Under `AutoDock Vina`, predicted binding strength correlates at `ρ = +0.79` to `+0.97` with the number of heavy atoms in the gas across seven of the eight proteins. Bulky fluorinated non-immobilizers such as `TFMB` (18 heavy atoms, `8.27 kcal/mol` on tubulin) and `perfluoropentane` (17 heavy atoms) pack more atoms into a rigid cavity than compact clinical drugs like halothane (7 heavy atoms) or nitrous oxide (3 heavy atoms). Even on the 9 clinical anaesthetics alone, *none* of the eight proteins tracks clinical potency — reproducing Craddock et al. (2017)'s own published `MOE` docking scores (`ρ = +0.05` across their 8 anaesthetics; our `Vina` scores correlate with their `MOE` scores at `ρ = +0.89`).
-4. **Tubulin has no edge over rival channels or bystander proteins.** Even after removing heavy-atom size bias (`ρ = +0.44` on `1JFF`), tubulin is beaten by `GABA_A` (`+0.55`), `GLIC` (`+0.53`), and negative-control **Ubiquitin** (`+0.52`), and is statistically indistinguishable from non-conscious Albumin (`+0.37`) and Luciferase (`+0.31`). Under `Vinardo` (which reduces size bias), Ubiquitin — a tiny 76-residue protein with no role in consciousness or anaesthesia — finishes first overall on both potency (`ρ = +0.60`, `p = 0.002`) and non-immobilizer separation (`AUC = 0.79`, `p = 0.015`).
-5. **Rigid docking also misses what makes `GABA_A` special, and that is a finding too.** Classic ion channels failed to reject non-immobilizers under rigid docking just as tubulin did. That points straight to the limit of the method: docking measures whether a small greasy molecule fits into a pocket, not whether it props a channel gate open or triggers a collective change once inside.
+1. **Tubulin does not stand out.** Across 27 anaesthetic gases, the predicted grip on tubulin matches their strength only weakly (0.29 on a scale where 1 is a perfect match and 0 is none; it could easily be chance). A sharper structure of tubulin and a second scoring method give much the same.
+2. **The look-alikes score tighter than the real anaesthetics.** On tubulin, a real anaesthetic outscores a look-alike only 21% of the time, where 50% would mean no difference. It should be well above 50%.
+3. **The accepted targets fail the same test.** On the GABA-A channel, which anaesthetics are known to act on, a real anaesthetic outscores a look-alike only 8% of the time. The calculation cannot recognise a target we already know.
+4. **An unrelated protein does as well as any.** Ubiquitin, a small protein with no part in anaesthesia, matches anaesthetic strength better than tubulin and about as well as the channels. With the second scoring method it comes first on both counts.
+5. **The scores follow size.** On seven of the eight proteins the predicted grip tracks the number of atoms in the gas far more closely than it tracks anything else. The look-alikes happen to be bulky.
 
 {{figure: anaesthetics-microtubules/verdict}}
 
-## Explore each protein yourself {menu: Target explorer}
+So the plain reading is not "anaesthetics do not act on microtubules". It is that this calculation cannot say where anaesthetics act. A test that fails on the known answer has no verdict to give on the disputed one.
 
-Pick any of the eight proteins below, switch between the `Vina` and `Vinardo` scoring functions, or change the horizontal axis from anaesthetic potency to olive-oil solubility or heavy-atom count. Notice how tightly the points line up once you switch the axis to **Heavy atoms**, and how the red diamonds (non-immobilizers) sit *above* the gold circles (real anaesthetics) on almost every target.
+## Protein by protein {menu: Each protein}
+
+In the figure below, pick a protein and change what the gases are plotted against. Plotted against size, the points fall almost on a line. The look-alikes sit above the real anaesthetics on nearly every protein.
 
 {{figure: anaesthetics-microtubules/potency}}
 
-## All eight proteins, side by side {menu: All eight proteins}
-
-The scorecard and molecule-by-molecule matrix below line up all 35 compounds across all eight proteins. Click any column header to sort, or switch between raw binding strength and size-adjusted residuals.
+## All eight, side by side {menu: All eight}
 
 {{figure: anaesthetics-microtubules/matrix}}
 
-| Protein (PDB) | Role | Vina Potency `ρ` (`p`) | Vina `ρ` after size (`p`) | Vina Non-Imm `AUC` | Vinardo Potency `ρ` (`p`) | Vinardo Non-Imm `AUC` |
-|---|---|---:|---:|---:|---:|---:|
-| **Tubulin (`1JFF`, 8 sites)** | Primary Orch OR target | `+0.29` (`0.146`) | `+0.44` (`0.027`) | `0.21` | `+0.28` (`0.151`) | `0.46` |
-| **Tubulin (`4I4T`, 1.80 Å)** | High-res replication | `+0.35` (`0.074`) | `+0.44` (`0.023`) | `0.08` | `+0.50` (`0.008`) | `0.27` |
-| **`GABA_A` (`6X3T`, 2 sites)** | Rival ion channel | `+0.42` (`0.030`) | `+0.55` (`0.004`) | `0.08` | `+0.57` (`0.003`) | `0.27` |
-| **`GLIC` (`3P4W`, 1 site)** | Rival ion channel | `+0.38` (`0.050`) | `+0.53` (`0.003`) | `0.30` | `+0.35` (`0.073`) | `0.58` |
-| **Albumin (`1E7B`, 2 sites)** | Non-conscious soluble control | `+0.28` (`0.153`) | `+0.37` (`0.054`) | `0.09` | `+0.51` (`0.007`) | `0.27` |
-| **Luciferase (`1BA3`, 1 site)** | Non-conscious soluble control | `+0.21` (`0.290`) | `+0.31` (`0.116`) | `0.12` | `+0.50` (`0.008`) | `0.28` |
-| **Lysozyme (`1DPX`, 1 site)** | Negative control | `+0.10` (`0.623`) | `−0.02` (`0.942`) | `0.17` | `+0.13` (`0.527`) | `0.34` |
-| **Ubiquitin (`1UBQ`, 1 site)** | Negative control | **`+0.51` (`0.006`)** | **`+0.52` (`0.009`)** | `0.46` | **`+0.60` (`0.002`)** | **`0.79`** |
+| Protein | Why it is here | Match with anaesthetic strength | The same, allowing for size | How often a real anaesthetic outscores a look-alike |
+|---|---|---|---|---|
+| **Tubulin** | The theory's target | 0.29 | 0.44 | 21% |
+| Tubulin, sharper structure | The same, as a repeat | 0.35 | 0.44 | 8% |
+| GABA-A channel | An accepted target | 0.42 | 0.55 | 8% |
+| GLIC channel | An accepted target | 0.38 | 0.53 | 30% |
+| Albumin | Holds anaesthetics; no role in consciousness | 0.28 | 0.37 | 9% |
+| Luciferase | Holds anaesthetics; no role in consciousness | 0.21 | 0.31 | 12% |
+| Lysozyme | Unrelated | 0.10 | −0.02 | 17% |
+| Ubiquitin | Unrelated | 0.51 | 0.52 | 46% |
 
-Splitting the 27 anaesthetics into the two source groups shows what is going on underneath. On the **9 clinical gases alone**, *none* of the eight proteins tracks potency (`1JFF` `ρ = −0.13`, `GABA_A` `−0.07`, `GLIC` `+0.03`). On the **18 homologous aromatic and cycloalkane gases** from Fang et al. (1996), *every single protein* tracks potency under `Vinardo` (`ρ = +0.64` to `+0.88`), including Lysozyme (`+0.77`) and Ubiquitin (`+0.85`). A generic greasy pocket picks up the aromatic series on almost any protein, and misses the clinical gases on all of them.
+First scoring method; 1 is a perfect match and 0 is none; 50% in the last column means no difference.
 
-## Inside the binding pockets {menu: Inside the pockets}
+One split shows what lies underneath. Nine of the 27 anaesthetics are the familiar gases of the operating theatre. On those nine alone, no protein matches their strength at all. The other eighteen are a chemical family tested in rats, each a little larger than the last, and on those every protein matches, the unrelated ones included. A greasy pocket on almost any protein will rank a family of ever-larger molecules in order of size.
 
-Drag to rotate the docked 3D poses inside representative pockets of tubulin (`1JFF` and `4I4T`), `GABA_A`, `GLIC`, Albumin, and Luciferase. You can compare a clinical anaesthetic (`halothane` or `isoflurane`), a bulky non-immobilizer (`F6` or `TFMB`), and the convulsant `flurothyl` sitting inside the same hydrophobic cavity.
+## Inside the pockets {menu: The pockets}
+
+Turn the fitted gases round inside a pocket of each protein, and compare a real anaesthetic with a look-alike in the same place.
 
 {{figure: anaesthetics-microtubules/pockets}}
 
 ## How it was done
 
-- **Public structures and primary sources.** Eight structures downloaded from the RCSB Protein Data Bank (`1JFF`, `4I4T`, `6X3T`, `3P4W`, `1E7B`, `1BA3`, `1DPX`, `1UBQ`), with pocket definitions taken verbatim from Craddock et al. (2012, Tables 2 & 3) and crystallographic ligand coordinates. Potency (`MAC`) and olive-oil solubility values for all 35 gases came directly from Craddock et al. (2017, Table S1), Fang et al. (1996, Tables 1–5), Koblin et al. (1994), and Steffey et al. (1998); molecular geometries came from PubChem.
-- **Checked on known crystal poses first.** Before locking the plan, we stripped the native bound drugs from four co-crystal structures (`GLIC + desflurane`, `GABA_A + propofol`, `Luciferase + bromoform`, `Albumin + halothane`) and redocked them blind. Every one landed within `0.28–1.31 Å` of its experimental position.
-- **Locked first, with one pre-results amendment.** The plan, pockets, molecules, scoring functions (`AutoDock Vina v1.2.5` with `vina` and `vinardo`), random seed, and verdict rules were locked with a SHA-256 hash before running the test panel. One operational amendment (`Amendment 1`) was logged and committed *before* any results were produced or inspected: reducing Vina search exhaustiveness from `16` to `4` after confirming on positive controls that top affinities agreed to `0.000–0.011 kcal/mol`.
-- **1,680 dockings.** Every one of the 35 gases was docked into all 24 pockets under both `vina` and `vinardo`, followed by `10,000`-permutation significance tests and `5,000`-resample paired bootstraps.
-- **Cost.** Nothing: public structural data, open-source docking software (`AutoDock Vina v1.2.5`, `Open Babel 3.1.1`), and local CPU time.
+- **Public structures.** Eight protein structures from the Protein Data Bank. The tubulin pockets are those named in the 2012 paper by the theory's supporters.
+- **The gases.** Twenty-seven that cause anaesthesia, seven look-alikes that do not, and one that causes convulsions, with their strengths taken from published tables.
+- **Checked on known answers first.** Four drugs whose positions in a protein are known from crystals were removed and fitted back blind. Each landed within about an ångström of where it really sits.
+- **Locked first.** Proteins, pockets, gases, both scoring methods and the pass marks were fixed before the run. One change was logged before any result existed: the search was made less exhaustive to save time, after a check that it made no difference on the known answers.
+- **1,680 fits,** with the open program AutoDock Vina, scored two ways.
+- **Spot-checked by a second AI.** Claude recomputed the matches and comparisons above from the table of scores, and they agree. It did not re-run the fitting, which needs software not installed here.
+- **Cost.** Nothing.
 
 ## What this cannot tell you
 
-- **What happens after a drug binds.** Rigid docking estimates how snugly a molecule sits in a static pocket. It cannot simulate ion-channel gating (holding `GABA_A` open) or Craddock et al. (2017)'s post-binding quantum-optical claim that anaesthetics shift collective terahertz oscillations across tubulin's tryptophan rings. Those require different physics and separate tests.
-- **Protein flexibility and water.** Real proteins breathe, pockets expand around bound gases, and displaced water molecules change free energy. Static crystal and cryo-EM snapshots miss induced fit and polymerized microtubule seam geometry.
-- **Independent replication.** One AI system designed, ran, and wrote up this study. A second AI system from another vendor has not yet re-run it from the locked plan, and no human structural biologist has checked it.
+- **Whether anaesthetics act on microtubules.** The method failed on the accepted targets too, so its silence about tubulin means little.
+- **What a drug does once it has settled.** Fitting a molecule into a rigid pocket says nothing about whether it then holds a channel open, or changes how a microtubule behaves. The supporters' own 2017 claim is about the second, and is not tested here.
+- **Real proteins move.** Pockets open and close and water gets in the way. None of that is in a rigid fit.
+- **The fitting itself has not been repeated.** Only the statistics were checked. No structural biologist has looked at any of it.
+
+## What would do better
+
+The experiments that bear on this are not calculations. Does changing the stability of microtubules in a living animal change how much anaesthetic it takes to put it under? That has been tried in tadpoles, rats and mice, with results that point both ways, and the atlas [weighs them](https://ejhong.github.io/aletheia/cases/orch-or/).
 
 ## Files
 
 - [Full results](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-microtubules/RESULTS.md)
-- [The locked plan](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-microtubules/protocol.md) and [amendments](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-microtubules/amendments.md)
-- [Code and tests](https://github.com/ejhong/aletheia-lab/tree/main/questions/anaesthetics-microtubules/analysis)
+- [The locked plan](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-microtubules/protocol.md) and [the one amendment](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-microtubules/amendments.md)
+- [Code](https://github.com/ejhong/aletheia-lab/tree/main/questions/anaesthetics-microtubules/analysis) and the [spot check](https://github.com/ejhong/aletheia-lab/tree/main/questions/anaesthetics-microtubules/replication/fable)
 
-AI did this work: Antigravity (Google DeepMind) extracted the primary data, designed and ran the docking study, built the interactive figures, and wrote this page on 23 November 2026. Eugene directed it.
+AI did this work: Antigravity (Google DeepMind) designed and ran the study and built the figures. Claude (Anthropic) spot-checked the statistics and rewrote this page in the lab's plain style. Eugene directed it.

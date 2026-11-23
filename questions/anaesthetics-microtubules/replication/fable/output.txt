@@ -1,0 +1,18 @@
+== vina
+ gabaa_6x3t       anaesthetics 27, non-immobilizers 7 | potency rho +0.416 | after size +0.548 | AUC 0.079 | clinical only (9) rho -0.067 | score against size +0.79
+ glic_3p4w        anaesthetics 27, non-immobilizers 7 | potency rho +0.380 | after size +0.534 | AUC 0.302 | clinical only (9) rho +0.033 | score against size +0.84
+ hsa_1e7b         anaesthetics 27, non-immobilizers 7 | potency rho +0.279 | after size +0.373 | AUC 0.085 | clinical only (9) rho -0.117 | score against size +0.86
+ luciferase_1ba3  anaesthetics 27, non-immobilizers 7 | potency rho +0.212 | after size +0.313 | AUC 0.116 | clinical only (9) rho +0.033 | score against size +0.93
+ lysozyme_1dpx    anaesthetics 27, non-immobilizers 7 | potency rho +0.099 | after size -0.015 | AUC 0.169 | clinical only (9) rho -0.267 | score against size +0.97
+ tubulin_1jff     anaesthetics 27, non-immobilizers 7 | potency rho +0.285 | after size +0.436 | AUC 0.212 | clinical only (9) rho -0.133 | score against size +0.90
+ tubulin_4i4t     anaesthetics 27, non-immobilizers 7 | potency rho +0.347 | after size +0.441 | AUC 0.079 | clinical only (9) rho -0.200 | score against size +0.80
+ ubiquitin_1ubq   anaesthetics 27, non-immobilizers 7 | potency rho +0.512 | after size +0.519 | AUC 0.460 | clinical only (9) rho +0.000 | score against size +0.42
+== vinardo
+ gabaa_6x3t       anaesthetics 27, non-immobilizers 7 | potency rho +0.571 | after size +0.578 | AUC 0.267 | clinical only (9) rho -0.167 | score against size +0.39
+ glic_3p4w        anaesthetics 27, non-immobilizers 7 | potency rho +0.352 | after size +0.344 | AUC 0.577 | clinical only (9) rho -0.159 | score against size +0.46
+ hsa_1e7b         anaesthetics 27, non-immobilizers 7 | potency rho +0.508 | after size +0.543 | AUC 0.265 | clinical only (9) rho -0.283 | score against size +0.55
+ luciferase_1ba3  anaesthetics 27, non-immobilizers 7 | potency rho +0.500 | after size +0.512 | AUC 0.280 | clinical only (9) rho -0.117 | score against size +0.46
+ lysozyme_1dpx    anaesthetics 27, non-immobilizers 7 | potency rho +0.125 | after size +0.078 | AUC 0.339 | clinical only (9) rho -0.400 | score against size +0.59
+ tubulin_1jff     anaesthetics 27, non-immobilizers 7 | potency rho +0.284 | after size +0.272 | AUC 0.455 | clinical only (9) rho -0.083 | score against size +0.55
+ tubulin_4i4t     anaesthetics 27, non-immobilizers 7 | potency rho +0.501 | after size +0.493 | AUC 0.267 | clinical only (9) rho -0.383 | score against size +0.19
+ ubiquitin_1ubq   anaesthetics 27, non-immobilizers 7 | potency rho +0.596 | after size +0.606 | AUC 0.794 | clinical only (9) rho +0.267 | score against size +0.39
