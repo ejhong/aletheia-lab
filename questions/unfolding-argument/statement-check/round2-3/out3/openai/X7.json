@@ -1,0 +1,31 @@
+{
+  "id": "X7",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T18:55:27Z",
+  "target": "def Target : Prop :=\n  ∀ (m : ℕ) [NeZero m] (k : ℕ) (N : S1 Bool Bool),\n    N.D12 → N.D25 k → S1.D6 N (d26 m) →\n    k.factorial ^ N.d13 ∣ m\n",
+  "usage": [
+    [
+      2997,
+      362
+    ],
+    [
+      4066,
+      590
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every natural number m, assuming m is nonzero, for every natural number k, and for every S1 system N with Boolean inputs and outputs, suppose that: (1) no two distinct nodes of N are each reachable from the other by a nonempty chain of dependency edges. An edge from a to b means that there exist two whole-system states agreeing at every node other than a, and a common Boolean input, for which the updates at b differ. The states need not be reachable from the initial state, and self-edges are not forbidden. (2) For every node, its state type is finite and has at most k elements. (3) On every finite Boolean input list, including the empty list, the output of N after processing the list from its initial state equals that of d26 m: it is true exactly when the number of true entries is divisible by m. Then (k!) raised to the number of nodes of N divides m, not the other way around.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every natural number m, assuming m is nonzero, for every natural number k, and for every S1 system N with Boolean inputs and outputs, suppose that: (1) no two distinct nodes of N are each reachable from the other by a nonempty chain of dependency edges. An edge from a to b means that there exist two whole-system states agreeing at every node other than a, and a common Boolean input, for which the updates at b differ. The states need not be reachable from the initial state, and self-edges are not forbidden. (2) For every node, its state type is finite and has at most k elements. (3) On every finite Boolean input list, including the empty list, the output of N after processing the list from its initial state equals that of d26 m: it is true exactly when the number of true entries is divisible by m. Then (k!) raised to the number of nodes of N divides m, not the other way around.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The divisibility is reversed: Lean says `(k!)^(number of units) ∣ m`, while the author says `m ∣ (k!)^(number of units)`. For example, the one-unit counter `d26 2` satisfies all the hypotheses with `k = 3`. The author's conclusion is then `2 ∣ 6`, which is true, but Lean's is `6 ∣ 2`, which is false.\"\n    }\n  ],\n  \"summary\": \"The hypotheses match the description: self-dependence is allowed, each unit has at most `k` states, and the Boolean outputs agree after every finite input sequence. The description of the passages is accurate: they allow dependence on self or earlier components and state no such divisibility condition.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The divisibility is reversed: Lean says `(k!)^(number of units) ∣ m`, while the author says `m ∣ (k!)^(number of units)`. For example, the one-unit counter `d26 2` satisfies all the hypotheses with `k = 3`. The author's conclusion is then `2 ∣ 6`, which is true, but Lean's is `6 ∣ 2`, which is false."
+      }
+    ],
+    "summary": "The hypotheses match the description: self-dependence is allowed, each unit has at most `k` states, and the Boolean outputs agree after every finite input sequence. The description of the passages is accurate: they allow dependence on self or earlier components and state no such divisibility condition."
+  }
+}

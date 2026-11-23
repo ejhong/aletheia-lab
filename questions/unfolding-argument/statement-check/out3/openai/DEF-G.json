@@ -1,0 +1,26 @@
+{
+  "id": "DEF-G",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T19:01:32Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: D25, d26\ndef S1.D25 {X Y : Type} (N : S1 X Y) (k : ℕ) : Prop :=\n  ∀ n, Finite (N.A3 n) ∧ Nat.card (N.A3 n) ≤ k\n\ndef d26 (m : ℕ) [NeZero m] : S1 Bool Bool where\n  A1 := Unit\n  a2 := inferInstance\n  A3 := fun _ => Fin m\n  a4 := fun _ => 0\n  a5 := fun _ σ x => if x then σ () + 1 else σ ()\n  a6 := fun σ => decide (σ () = 0)\n",
+  "usage": [
+    [
+      3094,
+      349
+    ],
+    [
+      4242,
+      998
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For arbitrary types X and Y, a system N of type S1 X Y, and a natural number k, S1.D25 N k names the following proposition: for every index n in N.A1, the state type N.A3 n is finite and has at most k elements. Finiteness is required explicitly. The bound applies to each index separately, not to the number of indices or to the total number of global states, and the cardinality need not equal k. The definition does not assert that N satisfies this proposition.\\n\\nFor each natural number m with the hypothesis that m is nonzero, d26 m defines a system with Boolean input and Boolean output. Its index type is Unit, with its usual finiteness instance, so there is exactly one index, (). The state type at that index is Fin m (the numbers 0 through m−1), and its initial value is 0. Given a current state assignment σ and input x, the new value at () is σ(()) + 1 modulo m if x is true, and σ(()) if x is false. Given any state assignment σ, the output is true exactly when σ(()) is 0 and false otherwise. No hypothesis stronger than m ≠ 0 is imposed; m = 1 is allowed.\"}",
+  "translation": "For arbitrary types X and Y, a system N of type S1 X Y, and a natural number k, S1.D25 N k names the following proposition: for every index n in N.A1, the state type N.A3 n is finite and has at most k elements. Finiteness is required explicitly. The bound applies to each index separately, not to the number of indices or to the total number of global states, and the cardinality need not equal k. The definition does not assert that N satisfies this proposition.\n\nFor each natural number m with the hypothesis that m is nonzero, d26 m defines a system with Boolean input and Boolean output. Its index type is Unit, with its usual finiteness instance, so there is exactly one index, (). The state type at that index is Fin m (the numbers 0 through m−1), and its initial value is 0. Given a current state assignment σ and input x, the new value at () is σ(()) + 1 modulo m if x is true, and σ(()) if x is false. Given any state assignment σ, the output is true exactly when σ(()) is 0 and false otherwise. No hypothesis stronger than m ≠ 0 is imposed; m = 1 is allowed.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"D25 bounds each unit’s state count from above, and d26 implements the stated counter, with `m ≠ 0` explicit in Lean and implicit in the requirement that the range 0 through m−1 contain the initial state 0. At m = 8 the increment transition shares the paper’s eight-state cycle, but the Boolean zero test is not the paper’s full-state output, the single unit is not its three-bit implementation, and the passages describe no separate no-coin input.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "D25 bounds each unit’s state count from above, and d26 implements the stated counter, with `m ≠ 0` explicit in Lean and implicit in the requirement that the range 0 through m−1 contain the initial state 0. At m = 8 the increment transition shares the paper’s eight-state cycle, but the Boolean zero test is not the paper’s full-state output, the single unit is not its three-bit implementation, and the passages describe no separate no-coin input."
+  }
+}

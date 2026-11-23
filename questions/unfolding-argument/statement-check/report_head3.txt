@@ -1,0 +1,5 @@
+Stage 3 (Amendment 1), final. Written by `run.py --stage 3 --report` from the raw outputs in `out3/`. Verdicts are
+the checkers' own. Three rounds on 2026-11-23, frozen under `round1-3/` and `round2-3/`. Only DEF-G changed
+between rounds, and only in its description; its Lean text is the same in all three. It is from round 3. Every
+other item stands from round 1. All items here are the lab's own definitions and statements, compared with
+`PROMPT_B_OWN`; in round 1 DEF-G was compared with the standard prompt.

@@ -1,0 +1,26 @@
+{
+  "id": "S3b2",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T18:54:59Z",
+  "target": "def Target : Prop :=\n  ¬ ∃ N : S1 Bool Bool,\n      N.D12 ∧ N.D25 2 ∧ S1.D6 N (d26 3)\n",
+  "usage": [
+    [
+      2972,
+      380
+    ],
+    [
+      4056,
+      1174
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target names, but does not prove, the proposition that there is no single Boolean-input, Boolean-output system N with a finite set of nodes satisfying all three conditions below. Define an edge from m to n to mean that there exist two global states and one Boolean input such that the states agree at every node other than m, but the update at n gives different values on those states for that same input. The states need not be reachable from the initial state. (1) For every ordered pair of distinct nodes m and n, it is not the case that there is both a nonempty edge path from m to n and a nonempty edge path from n to m. Self-dependence is not forbidden. (2) For every node, its local state type is finite and has at most two elements. It need not have exactly two elements, and two is not a bound on the number of nodes. (3) For every finite list of Booleans, with no length bound, N's output after processing the list from its initial state equals the output of the counter that starts at zero, increments modulo three on true, stays unchanged on false, and returns true exactly when its final value is zero. Thus the required output is true exactly when the number of true entries is divisible by three, including for the empty list. Only the outputs must agree; the internal states need not match.\"}",
+  "translation": "Target names, but does not prove, the proposition that there is no single Boolean-input, Boolean-output system N with a finite set of nodes satisfying all three conditions below. Define an edge from m to n to mean that there exist two global states and one Boolean input such that the states agree at every node other than m, but the update at n gives different values on those states for that same input. The states need not be reachable from the initial state. (1) For every ordered pair of distinct nodes m and n, it is not the case that there is both a nonempty edge path from m to n and a nonempty edge path from n to m. Self-dependence is not forbidden. (2) For every node, its local state type is finite and has at most two elements. It need not have exactly two elements, and two is not a bound on the number of nodes. (3) For every finite list of Booleans, with no length bound, N's output after processing the list from its initial state equals the output of the counter that starts at zero, increments modulo three on true, stays unchanged on false, and returns true exactly when its final value is zero. Thus the required output is true exactly when the number of true entries is divisible by three, including for the empty list. Only the outputs must agree; the internal states need not match.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The TARGET states, but does not prove, that no network of arbitrary finite size with at most two states per unit and no dependency cycle through distinct units can report, after every Boolean input sequence, whether the number of true inputs is divisible by three. The description accurately distinguishes the paper’s binary flip-flop circuit from its general claim about elementary components: it treats the binary reading of that claim as conditional.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The TARGET states, but does not prove, that no network of arbitrary finite size with at most two states per unit and no dependency cycle through distinct units can report, after every Boolean input sequence, whether the number of true inputs is divisible by three. The description accurately distinguishes the paper’s binary flip-flop circuit from its general claim about elementary components: it treats the binary reading of that claim as conditional."
+  }
+}

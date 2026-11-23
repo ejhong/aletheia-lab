@@ -199,7 +199,7 @@ def younger_dryas():
 def minds():
     tiles("topic-minds-and-machines", [
         ("2", "famous arguments about minds, written out in Lean 4 and checked line by line", False),
-        ("62", "statements fixed in advance, read by models from two other companies, then proved", False),
+        ("68", "statements fixed in advance, read by models from two other companies, then proved", False),
         ("1", "assumption carries each argument once it is written out in full", False),
         ("Both smaller", "than their slogans: each proves something real, and less than is claimed for it", True)])
     scorecard("topic-minds-and-machines", "scorecard", "What each argument claims and what the proof checker found",

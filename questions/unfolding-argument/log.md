@@ -84,3 +84,34 @@ Dated entries, newest last: what was tried, what happened, what next.
   Hoel's Theorem 3.10; a replication of the statements by a second vendor's agent. Filing with Aletheia is
   Eugene's decision and has not been done.
 
+## 2026-11-23, later — Stage 3, first half (Claude Fable 5.2; directed by Eugene)
+
+- PR #81 (Stages 0 to 2) merged with a merge commit; the lab check and both Lean builds pass on `main`. The
+  Gödel project's CI build took about 15 minutes where it used to take 2; my guess, not checked, is that the two
+  Lean projects now evict each other's build cache.
+- Eugene asked whether Stage 3 was worthwhile. I recommended the half about units with memory, with odds, and
+  against the half about intervening on the twin's own units. He said to proceed. He also asked that easy
+  mechanical work go to sub-agents on a fitting model, and that the stronger model be used when in doubt.
+- Sub-agents used: Claude Haiku 5.5 (low effort) pulled verbatim passages from Hanson and Walker with line
+  numbers; I read them in its report and `check_quotes.py` confirmed them against the text. Claude Opus 5.5
+  (medium effort) added the `--stage 3` mode to `run.py`; I checked that the default mode's output is unchanged
+  and that the Stage 3 view is right. The statements, proofs, amendment and write-up are mine.
+- Priors, written into Amendment 1 before the check: feedback-free networks of k-state units settle into cycles
+  whose length divides a power of k!, so a counter to three has no feedback-free twin made of bits.
+- Trial proofs of all six statements compile (`explore/Stage3Sketch.lean`). The periodicity proof went through
+  on the first attempt at the main lemma; the rest was plumbing.
+- Amendment 1 pushed (841089f) before the statement check. Check: three rounds, $3.65. Both planted errors
+  caught by both; all six statements faithful in round 1; the two definitions needed their description rewritten
+  twice (it called the counter a rendering of the paper's tollbooth, and then contained a false aside about
+  k = 0). No unresolved divergence.
+- Question total so far: $27.06 of the $40 approved for today.
+- Locked `Statement3.lean` at 19:03:05 UTC (327ba92). Proofs in `Results3.lean` (34a5de8): the trial proofs moved
+  into a module file, with two proof-only helpers marked noncomputable so that the compiler does not try to
+  generate code for them. Build passes with warnings as errors locally and in CI (run 45244866647); six more
+  theorems pass the axiom audit, 33 in all.
+- Added the Stage 3 section to `RESULTS.md` and updated the site page and the topic page.
+- Not done: the other half of Stage 3 (intervening on the twin's own units); which machines exactly have a
+  feedback-free realization from bits; the Krohn–Rhodes theorem. Krohn and Rhodes (1965) and Zeiger (1967) were
+  not read, so what the results say about Hanson and Walker's general sentence depends on a reading of
+  "elementary components" that is `unverified`.
+

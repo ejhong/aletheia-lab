@@ -1,0 +1,31 @@
+{
+  "id": "S3b",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T18:54:41Z",
+  "target": "def Target : Prop :=\n  ∀ (m : ℕ) [NeZero m] (k : ℕ) (N : S1 Bool Bool),\n    N.D12 → N.D25 k → S1.D6 N (d26 m) →\n    m ∣ k.factorial ^ N.d13\n",
+  "usage": [
+    [
+      2997,
+      454
+    ],
+    [
+      4090,
+      2381
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every natural number m, given that m is nonzero, for every natural number k and every S1 system N with Boolean inputs and outputs, suppose the following three conditions hold. (1) Draw an edge from i to j if there exist two full state assignments that agree at every index other than i and a single Boolean input for which the updates at j from those assignments differ. The assignments need not be reachable from the initial state. For every pair of distinct indices i and j, there cannot be both a nonempty directed path from i to j and a nonempty directed path from j to i. This does not forbid a self-loop. (2) For every index i, its state type N.A3 i is finite and has at most k elements. (3) On every finite Boolean input list, including the empty list, the output of N starting from its initial state equals the output of d26 m: it is true exactly when the number of true entries is divisible by m. Under these hypotheses, m divides (k!) raised to the power given by the number of indices in N.A1.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every natural number m, given that m is nonzero, for every natural number k and every S1 system N with Boolean inputs and outputs, suppose the following three conditions hold. (1) Draw an edge from i to j if there exist two full state assignments that agree at every index other than i and a single Boolean input for which the updates at j from those assignments differ. The assignments need not be reachable from the initial state. For every pair of distinct indices i and j, there cannot be both a nonempty directed path from i to j and a nonempty directed path from j to i. This does not forbid a self-loop. (2) For every index i, its state type N.A3 i is finite and has at most k elements. (3) On every finite Boolean input list, including the empty list, the output of N starting from its initial state equals the output of d26 m: it is true exactly when the number of true entries is divisible by m. Under these hypotheses, m divides (k!) raised to the power given by the number of indices in N.A1.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The description leaves the counter’s interface implicit. Lean counts true inputs modulo m, ignores false inputs, and outputs only whether the residue is zero. Matching that Boolean output is not a requirement to output the full counter state.\"\n    }\n  ],\n  \"summary\": \"With that interface understood, the hypotheses and divisibility conclusion match: forbidding mutual reachability between distinct units permits self-dependence and is equivalent, for finitely many units, to the paper’s self-or-earlier ordering. The passages discuss that ordering and an isomorphic three-bit realization, but state no factorial divisibility condition.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The description leaves the counter’s interface implicit. Lean counts true inputs modulo m, ignores false inputs, and outputs only whether the residue is zero. Matching that Boolean output is not a requirement to output the full counter state."
+      }
+    ],
+    "summary": "With that interface understood, the hypotheses and divisibility conclusion match: forbidding mutual reachability between distinct units permits self-dependence and is equivalent, for finitely many units, to the paper’s self-or-earlier ordering. The passages discuss that ordering and an isomorphic three-bit realization, but state no factorial divisibility condition."
+  }
+}

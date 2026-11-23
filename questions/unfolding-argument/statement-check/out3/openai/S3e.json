@@ -1,0 +1,26 @@
+{
+  "id": "S3e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T18:55:34Z",
+  "target": "def Target : Prop :=\n  ∀ (m : ℕ) [NeZero m],\n    (d26 m).D12 ∧ (d26 m).D25 m ∧ (d26 m).d13 = 1\n",
+  "usage": [
+    [
+      2981,
+      303
+    ],
+    [
+      3676,
+      554
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition: for every natural number m, assuming m ≠ 0, all three conditions hold for d26 m. (1) For every pair of node indices u and v, if u ≠ v, there cannot be both a nonempty chain of dependency steps from u to v and one from v to u. A step from i to j means that there exist two state assignments and a Boolean input such that the assignments agree at every index other than i but give different updates at j on that same input. This condition does not forbid a node from depending on itself. (2) For every node index, its state type is finite and has at most m elements; equality with m is not required by this condition. (3) The number of node indices is exactly one, so the distinct-index condition in (1) is vacuous here.\"}",
+  "translation": "Target defines, but does not prove, the following proposition: for every natural number m, assuming m ≠ 0, all three conditions hold for d26 m. (1) For every pair of node indices u and v, if u ≠ v, there cannot be both a nonempty chain of dependency steps from u to v and one from v to u. A step from i to j means that there exist two state assignments and a Boolean input such that the assignments agree at every index other than i but give different updates at j on that same input. This condition does not forbid a node from depending on itself. (2) For every node index, its state type is finite and has at most m elements; equality with m is not required by this condition. (3) The number of node indices is exactly one, so the distinct-index condition in (1) is vacuous here.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"For every nonzero natural number m, the target specifies exactly one unit with at most m states, so the prohibition on feedback between distinct units holds vacuously. The passage permits self-dependence in its feed-forward ordering but uses binary components in a three-bit architecture; the single m-state realization is the author’s observation.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "For every nonzero natural number m, the target specifies exactly one unit with at most m states, so the prohibition on feedback between distinct units holds vacuously. The passage permits self-dependence in its feed-forward ordering but uses binary components in a three-bit architecture; the single m-state realization is the author’s observation."
+  }
+}
