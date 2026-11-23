@@ -1,0 +1,437 @@
+{
+ "years_with_data": 4466,
+ "samples_per_year_median": 42.0,
+ "windows": [
+  {
+   "k": -14,
+   "from": 14996,
+   "to": 14846,
+   "years": 143,
+   "level": 8.83,
+   "spike_part": 0.0,
+   "spike_years_x3": 3,
+   "spike_years_x5": 2,
+   "spike_years_x10": 0,
+   "largest_ratio": 8.9
+  },
+  {
+   "k": -13,
+   "from": 14846,
+   "to": 14696,
+   "years": 146,
+   "level": 8.21,
+   "spike_part": 0.07,
+   "spike_years_x3": 2,
+   "spike_years_x5": 0,
+   "spike_years_x10": 0,
+   "largest_ratio": 4.0
+  },
+  {
+   "k": -12,
+   "from": 14696,
+   "to": 14546,
+   "years": 148,
+   "level": 6.52,
+   "spike_part": 0.61,
+   "spike_years_x3": 18,
+   "spike_years_x5": 11,
+   "spike_years_x10": 5,
+   "largest_ratio": 33.2
+  },
+  {
+   "k": -11,
+   "from": 14546,
+   "to": 14396,
+   "years": 147,
+   "level": 5.93,
+   "spike_part": 0.9,
+   "spike_years_x3": 28,
+   "spike_years_x5": 19,
+   "spike_years_x10": 6,
+   "largest_ratio": 28.4
+  },
+  {
+   "k": -10,
+   "from": 14396,
+   "to": 14246,
+   "years": 148,
+   "level": 7.64,
+   "spike_part": 1.41,
+   "spike_years_x3": 44,
+   "spike_years_x5": 28,
+   "spike_years_x10": 14,
+   "largest_ratio": 31.0
+  },
+  {
+   "k": -9,
+   "from": 14246,
+   "to": 14096,
+   "years": 147,
+   "level": 9.9,
+   "spike_part": 1.71,
+   "spike_years_x3": 46,
+   "spike_years_x5": 27,
+   "spike_years_x10": 13,
+   "largest_ratio": 30.6
+  },
+  {
+   "k": -8,
+   "from": 14096,
+   "to": 13946,
+   "years": 146,
+   "level": 17.94,
+   "spike_part": 1.49,
+   "spike_years_x3": 37,
+   "spike_years_x5": 18,
+   "spike_years_x10": 7,
+   "largest_ratio": 19.2
+  },
+  {
+   "k": -7,
+   "from": 13946,
+   "to": 13796,
+   "years": 150,
+   "level": 15.6,
+   "spike_part": 2.19,
+   "spike_years_x3": 43,
+   "spike_years_x5": 25,
+   "spike_years_x10": 6,
+   "largest_ratio": 29.5
+  },
+  {
+   "k": -5,
+   "from": 13646,
+   "to": 13496,
+   "years": 131,
+   "level": 11.15,
+   "spike_part": 1.75,
+   "spike_years_x3": 47,
+   "spike_years_x5": 31,
+   "spike_years_x10": 5,
+   "largest_ratio": 18.9
+  },
+  {
+   "k": -4,
+   "from": 13496,
+   "to": 13346,
+   "years": 147,
+   "level": 11.35,
+   "spike_part": 1.66,
+   "spike_years_x3": 53,
+   "spike_years_x5": 29,
+   "spike_years_x10": 11,
+   "largest_ratio": 32.3
+  },
+  {
+   "k": -3,
+   "from": 13346,
+   "to": 13196,
+   "years": 149,
+   "level": 17.48,
+   "spike_part": 2.24,
+   "spike_years_x3": 56,
+   "spike_years_x5": 26,
+   "spike_years_x10": 4,
+   "largest_ratio": 21.2
+  },
+  {
+   "k": -2,
+   "from": 13196,
+   "to": 13046,
+   "years": 147,
+   "level": 18.19,
+   "spike_part": 1.81,
+   "spike_years_x3": 52,
+   "spike_years_x5": 33,
+   "spike_years_x10": 6,
+   "largest_ratio": 18.5
+  },
+  {
+   "k": -1,
+   "from": 13046,
+   "to": 12896,
+   "years": 147,
+   "level": 10.98,
+   "spike_part": 1.36,
+   "spike_years_x3": 43,
+   "spike_years_x5": 18,
+   "spike_years_x10": 5,
+   "largest_ratio": 34.8
+  },
+  {
+   "k": 0,
+   "from": 12896,
+   "to": 12746,
+   "years": 147,
+   "level": 29.66,
+   "spike_part": 0.36,
+   "spike_years_x3": 22,
+   "spike_years_x5": 4,
+   "spike_years_x10": 0,
+   "largest_ratio": 7.5
+  },
+  {
+   "k": 1,
+   "from": 12746,
+   "to": 12596,
+   "years": 145,
+   "level": 23.37,
+   "spike_part": 0.35,
+   "spike_years_x3": 20,
+   "spike_years_x5": 7,
+   "spike_years_x10": 2,
+   "largest_ratio": 13.0
+  },
+  {
+   "k": 2,
+   "from": 12596,
+   "to": 12446,
+   "years": 146,
+   "level": 21.0,
+   "spike_part": 0.46,
+   "spike_years_x3": 36,
+   "spike_years_x5": 13,
+   "spike_years_x10": 2,
+   "largest_ratio": 11.0
+  },
+  {
+   "k": 3,
+   "from": 12446,
+   "to": 12296,
+   "years": 145,
+   "level": 15.48,
+   "spike_part": 0.59,
+   "spike_years_x3": 27,
+   "spike_years_x5": 12,
+   "spike_years_x10": 2,
+   "largest_ratio": 17.7
+  },
+  {
+   "k": 4,
+   "from": 12296,
+   "to": 12146,
+   "years": 140,
+   "level": 17.63,
+   "spike_part": 0.29,
+   "spike_years_x3": 20,
+   "spike_years_x5": 9,
+   "spike_years_x10": 3,
+   "largest_ratio": 15.2
+  },
+  {
+   "k": 5,
+   "from": 12146,
+   "to": 11996,
+   "years": 145,
+   "level": 18.25,
+   "spike_part": 0.37,
+   "spike_years_x3": 26,
+   "spike_years_x5": 4,
+   "spike_years_x10": 0,
+   "largest_ratio": 6.4
+  },
+  {
+   "k": 6,
+   "from": 11996,
+   "to": 11846,
+   "years": 132,
+   "level": 21.68,
+   "spike_part": 0.91,
+   "spike_years_x3": 29,
+   "spike_years_x5": 8,
+   "spike_years_x10": 2,
+   "largest_ratio": 10.9
+  },
+  {
+   "k": 7,
+   "from": 11846,
+   "to": 11696,
+   "years": 149,
+   "level": 26.67,
+   "spike_part": 0.89,
+   "spike_years_x3": 40,
+   "spike_years_x5": 19,
+   "spike_years_x10": 1,
+   "largest_ratio": 10.2
+  },
+  {
+   "k": 8,
+   "from": 11696,
+   "to": 11546,
+   "years": 149,
+   "level": 14.87,
+   "spike_part": 4.05,
+   "spike_years_x3": 62,
+   "spike_years_x5": 33,
+   "spike_years_x10": 7,
+   "largest_ratio": 34.6
+  },
+  {
+   "k": 9,
+   "from": 11546,
+   "to": 11396,
+   "years": 149,
+   "level": 18.87,
+   "spike_part": 3.2,
+   "spike_years_x3": 53,
+   "spike_years_x5": 31,
+   "spike_years_x10": 13,
+   "largest_ratio": 26.5
+  },
+  {
+   "k": 10,
+   "from": 11396,
+   "to": 11246,
+   "years": 148,
+   "level": 13.03,
+   "spike_part": 3.79,
+   "spike_years_x3": 63,
+   "spike_years_x5": 42,
+   "spike_years_x10": 12,
+   "largest_ratio": 23.0
+  },
+  {
+   "k": 11,
+   "from": 11246,
+   "to": 11096,
+   "years": 150,
+   "level": 13.46,
+   "spike_part": 4.54,
+   "spike_years_x3": 74,
+   "spike_years_x5": 42,
+   "spike_years_x10": 16,
+   "largest_ratio": 32.6
+  },
+  {
+   "k": 12,
+   "from": 11096,
+   "to": 10946,
+   "years": 149,
+   "level": 16.51,
+   "spike_part": 2.98,
+   "spike_years_x3": 58,
+   "spike_years_x5": 18,
+   "spike_years_x10": 5,
+   "largest_ratio": 20.5
+  },
+  {
+   "k": 13,
+   "from": 10946,
+   "to": 10796,
+   "years": 150,
+   "level": 24.34,
+   "spike_part": 6.48,
+   "spike_years_x3": 80,
+   "spike_years_x5": 40,
+   "spike_years_x10": 15,
+   "largest_ratio": 30.0
+  },
+  {
+   "k": 14,
+   "from": 10796,
+   "to": 10646,
+   "years": 150,
+   "level": 15.2,
+   "spike_part": 8.77,
+   "spike_years_x3": 95,
+   "spike_years_x5": 60,
+   "spike_years_x10": 21,
+   "largest_ratio": 35.2
+  },
+  {
+   "k": 15,
+   "from": 10646,
+   "to": 10496,
+   "years": 150,
+   "level": 11.03,
+   "spike_part": 5.3,
+   "spike_years_x3": 88,
+   "spike_years_x5": 52,
+   "spike_years_x10": 17,
+   "largest_ratio": 35.4
+  }
+ ],
+ "rank_level": {
+  "after": [
+   1,
+   29,
+   29.66
+  ],
+  "before": [
+   23,
+   29,
+   10.98
+  ]
+ },
+ "median_level": 15.48,
+ "rank_spike_part": {
+  "after": [
+   25,
+   29,
+   0.36
+  ],
+  "before": [
+   17,
+   29,
+   1.36
+  ]
+ },
+ "median_spike_part": 1.49,
+ "rank_spike_years_x3": {
+  "after": [
+   24,
+   29,
+   22
+  ],
+  "before": [
+   15,
+   29,
+   43
+  ]
+ },
+ "median_spike_years_x3": 43.0,
+ "rank_spike_years_x5": {
+  "after": [
+   26,
+   29,
+   4
+  ],
+  "before": [
+   17,
+   29,
+   18
+  ]
+ },
+ "median_spike_years_x5": 19.0,
+ "rank_spike_years_x10": {
+  "after": [
+   26,
+   29,
+   0
+  ],
+  "before": [
+   15,
+   29,
+   5
+  ]
+ },
+ "median_spike_years_x10": 5.0,
+ "rank_largest_ratio": {
+  "after": [
+   27,
+   29,
+   7.5
+  ],
+  "before": [
+   3,
+   29,
+   34.8
+  ]
+ },
+ "median_largest_ratio": 21.2,
+ "after_over_before": {
+  "level": 2.7,
+  "spike_part": 0.26
+ },
+ "share_of_rise_from_level": 1.06
+}
