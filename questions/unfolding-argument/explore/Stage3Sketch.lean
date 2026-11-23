@@ -3,7 +3,7 @@ import Mathlib.Tactic
 import Mathlib.SetTheory.Cardinal.Finite
 
 /-!
-Exploratory. The first part repeats the draft statements of Stage 3 (`statement-check/Statement3.draft.lean`);
+Exploratory. The first part repeats the draft statements of Stage 3 (now locked as `lean/UnfoldingArgument/Statement3.lean`);
 the second part is trial proofs. Nothing here is a finding.
 -/
 
