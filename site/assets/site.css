@@ -698,6 +698,14 @@ tr:first-child td { border-top: 0; }
 @media (max-width: 40rem) {
   .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+.chart .c-coast { fill: none; stroke: var(--line); stroke-width: 1; stroke-linejoin: round; }
+.chart .c-site { fill: var(--faint); opacity: .32; }
+.chart .c-ring { fill: none; stroke: var(--ink); stroke-width: 1.5; }
+.fig-legend { display: flex; flex-wrap: wrap; gap: .35rem 1.4rem; margin: 0 0 .7rem; font-size: .84rem; color: var(--ink-soft); }
+.prose .fig-legend { margin: 0 0 .7rem; }
+.fig-legend .key { display: inline-flex; align-items: center; gap: .4rem; }
+.fig-legend .k-dot { fill: var(--copper); }
+.fig-legend .k-dot.k-hollow { fill: var(--paper); stroke: var(--copper); stroke-width: 2; }
 
 /* ---------- Result panels: verdicts, assumption maps, paired cases, numbered steps, folded sections ---------- */
 

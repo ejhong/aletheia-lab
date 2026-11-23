@@ -1,0 +1,70 @@
+{
+ "people_newly_tested": 219,
+ "elsewhere": 219,
+ "american_side": 0,
+ "family": 28382,
+ "threshold": 4.6377,
+ "locked_threshold": 4.636,
+ "new_hits": [
+  {
+   "genetic_id": "I22199.AG.TW",
+   "group": "Russia_Volgograd_EBA_Berezhnovka",
+   "entity": "Russia",
+   "side": "elsewhere",
+   "date_bp": 6780,
+   "statistic": "S",
+   "f4": 0.0011443946098379128,
+   "Z": 5.613,
+   "centred_Z": 5.609,
+   "hit": true,
+   "tv_ratio": 0.85,
+   "tv_Z": 3.74,
+   "second_ratio": 1.04,
+   "robust": true,
+   "T_Z": 1.76,
+   "T_centred_Z": 1.77,
+   "sex": "M",
+   "mt": "H13a1",
+   "y": "I2a1b1a2a2a2",
+   "library": "ds.half,ds.half,ds.half,ds.half,ds.half,ds.half",
+   "publication": "LazaridisReichNature2025",
+   "lat": "50.303869",
+   "lon": "45.784869",
+   "neighbours": "Russia_Ivanovo_Eneolithic_Volosovo_Lyalovo; Russia_Rostov_Eneolithic; Russia_Samara_Eneolithic; Russia_Samara_Eneolithic-o; Russia_Samara_Eneolithic_Ekaterinovka; Russia_Samara_Eneolithic_Syezzheye; Russia_Saratov_Eneolithic; Russia_Saratov_Eneolithic_Khvalynsk; Russia_Tatarstan_Eneolithic; Ukraine_"
+  },
+  {
+   "genetic_id": "I24277.AG.TW",
+   "group": "Austria_N_LBK",
+   "entity": "Austria",
+   "side": "elsewhere",
+   "date_bp": 7100,
+   "statistic": "S",
+   "f4": 0.0008760855664199128,
+   "Z": 4.823,
+   "centred_Z": 4.818,
+   "hit": true,
+   "tv_ratio": 1.25,
+   "tv_Z": 4.54,
+   "second_ratio": 0.87,
+   "robust": true,
+   "T_Z": 5.38,
+   "T_centred_Z": 5.4,
+   "sex": "M",
+   "mt": "T2b",
+   "y": "C1a2",
+   "library": "ds.half,ds.half",
+   "publication": "AkbariReichNature2026",
+   "lat": "48.579752",
+   "lon": "16.46931",
+   "neighbours": "Bulgaria_Krepost_N; Bulgaria_Yabalkovo_N; France_Yonne_N; Italy_Centro_Central_N; Latvia_EMN_Narva; Netherlands_EN_LateMesolithic_Swifterbant; Netherlands_EN_LateMesolithic_Swifterbant-o; Netherlands_Mesolithic_Swifterbant; Romania_Eneolithic-oEEF; Spain_EN; Ukraine_Kirovohrad_N; Ukraine_Kirovohrad_"
+  }
+ ],
+ "original_hits_below_new_threshold": [
+  [
+   "I11748.AG",
+   "absolute",
+   "NA",
+   "13.8; 4.6"
+  ]
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "people_tested": 152,
+ "threshold": 3.407,
+ "specific_to_native_americans": [
+  "CDE003.AG",
+  "I1524.AG",
+  "I7331.AG",
+  "I7333.AG",
+  "I7338.AG",
+  "I7339.AG",
+  "I7341.SG",
+  "I7342.AG",
+  "I7344.AG",
+  "I7347.AG",
+  "I7349.AG",
+  "I7621.AG",
+  "I7757.AG",
+  "I8294.AG",
+  "KPT002.AG.SG",
+  "Kolyma1.SG",
+  "M0831.SG",
+  "M9984.SG",
+  "NEO234.SG",
+  "NEO241.AG",
+  "NEO242.AG",
+  "NEO243.AG",
+  "NEO250.AG",
+  "PIE069.AG",
+  "R2.SG",
+  "RISE554_alt.SG",
+  "ktg005.SG"
+ ],
+ "centres": {
+  "MESOAMERICA.E_Han": {
+   "Z": 3.0,
+   "passes_rule": true,
+   "tv_ratio": 0.78,
+   "tv_Z": 1.73,
+   "tv_ok": false,
+   "second_ratio": 0.86,
+   "second_ok": true,
+   "robust": false
+  },
+  "MESOAMERICA.toward_MESOPOTAMIA": {
+   "Z": 2.77,
+   "passes_rule": true,
+   "tv_ratio": 1.04,
+   "tv_Z": 2.03,
+   "tv_ok": true,
+   "robust": true
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "MESOAMERICA.E_Han": {
+  "Z": 3.0,
+  "passes_rule": true,
+  "tv_ratio": 0.78,
+  "tv_Z": 1.73,
+  "tv_ok": false,
+  "second_ratio": 0.86,
+  "second_ok": true,
+  "robust": false
+ },
+ "MESOAMERICA.toward_MESOPOTAMIA": {
+  "Z": 2.77,
+  "passes_rule": true,
+  "tv_ratio": 1.04,
+  "tv_Z": 2.03,
+  "tv_ok": true,
+  "robust": true
+ }
+}
