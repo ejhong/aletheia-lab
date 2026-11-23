@@ -1,0 +1,43 @@
+{
+  "id": "S4d",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T06:21:42Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K : Fm → Fm) (lam : Fm),\n    𝓢 ⊢ lam 🡘 ∼T lam →\n    𝓢 ⊢ K (lam ⋎ ∼lam) →\n    𝓢 ⊢ K (lam ⋎ ∼lam) 🡒 T (lam ⋎ ∼lam) →\n    𝓢 ⊢ T (lam ⋎ ∼lam) 🡒 (T lam ⋎ T (∼lam)) →\n    𝓢 ⊢ (T lam ⋎ T (∼lam)) 🡒 (T lam 🡘 lam) →\n    𝓢 ⊢ ⊥\n",
+  "usage": [
+    [
+      1787,
+      2568
+    ],
+    [
+      3286,
+      24001
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"`Target` is the proposition asserting that for every type `Fm` of sentences and every type `S` of proof systems, equipped with formal propositional connectives (`🡒`, `⋏`, `⋎`, `∼`), formal truth/falsehood constants (`⊤`, `⊥`), and a provability relation `⊢` between `S` and `Fm`, for every proof system `𝓢` in `S` that proves all classical propositional tautologies and is closed under modus ponens, for every pair of arbitrary functions `T` and `K` from `Fm` to `Fm`, and for every sentence `lam` in `Fm`: if `𝓢` proves all five of the following sentences: (1) the biconditional `lam 🡘 ∼(T lam)`, (2) `K (lam ⋎ ∼lam)`, (3) the implication `K (lam ⋎ ∼lam) 🡒 T (lam ⋎ ∼lam)`, (4) the implication `T (lam ⋎ ∼lam) 🡒 (T lam ⋎ T (∼lam))`, and (5) the implication `(T lam ⋎ T (∼lam)) 🡒 (T lam 🡘 lam)`, then `𝓢` proves `⊥` (falsehood). None of the general schemas `Def1`–`Def8` are assumed, and no other properties of `𝓢`, `T`, or `K` (such as consistency, arithmetic structure, or rules/axioms quantified over all sentences) are required—only classical propositional logic in `𝓢` and these five specific provability assumptions involving the single sentence `lam`.\"}\n```",
+  "translation": "`Target` is the proposition asserting that for every type `Fm` of sentences and every type `S` of proof systems, equipped with formal propositional connectives (`🡒`, `⋏`, `⋎`, `∼`), formal truth/falsehood constants (`⊤`, `⊥`), and a provability relation `⊢` between `S` and `Fm`, for every proof system `𝓢` in `S` that proves all classical propositional tautologies and is closed under modus ponens, for every pair of arbitrary functions `T` and `K` from `Fm` to `Fm`, and for every sentence `lam` in `Fm`: if `𝓢` proves all five of the following sentences: (1) the biconditional `lam 🡘 ∼(T lam)`, (2) `K (lam ⋎ ∼lam)`, (3) the implication `K (lam ⋎ ∼lam) 🡒 T (lam ⋎ ∼lam)`, (4) the implication `T (lam ⋎ ∼lam) 🡒 (T lam ⋎ T (∼lam))`, and (5) the implication `(T lam ⋎ T (∼lam)) 🡒 (T lam 🡘 lam)`, then `𝓢` proves `⊥` (falsehood). None of the general schemas `Def1`–`Def8` are assumed, and no other properties of `𝓢`, `T`, or `K` (such as consistency, arithmetic structure, or rules/axioms quantified over all sentences) are required—only classical propositional logic in `𝓢` and these five specific provability assumptions involving the single sentence `lam`.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Abstract setting instead of the concrete theory EA_DT: the Lean statement does not formalize PA, Gödel coding, quantifiers, the Diagonal Lemma, or the axioms of DT, EA, and EA_DT. Rather than proving unconditionally that EA_DT is inconsistent, it proves conditionally that any classical propositional system 𝓢 proves ⊥ from five explicit hypotheses about an arbitrary sentence lam and functions T, K; in particular, both the liar sentence and Feferman's Theorem 1 (D(λ) → (T(λ) ↔ λ)) are taken as hypotheses rather than derived. This reflects the declared limitation of the abstract setting.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"E1 and the validity of λ ∨ ¬λ are bypassed: in the source, K(λ ∨ ¬λ) is derived from the first-order validity of λ ∨ ¬λ using E1 ('K of every first-order validity'). Because the abstract setting cannot express first-order validity separately from provability in 𝓢, Target assumes 𝓢 ⊢ K (lam ⋎ ∼lam) directly; this weakens the hypothesis (a harmless logical strengthening of the conditional statement) but omits the inference from validity and E1.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Single instances and a one-way implication instead of full schemas and a biconditional: Target replaces the general schema I (∀ φ, K(φ) → T(φ)), the equivalence T(λ ∨ ¬λ) ↔ T(λ) ∨ T(¬λ) from DT, and the schema D(φ) → (T(φ) ↔ φ) with just the single instances needed for lam, and uses only the forward direction T (lam ⋎ ∼lam) 🡒 (T lam ⋎ T (∼lam)). Weakening the antecedents yields a harmless logical strengthening of the implication.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The predicate D is omitted and inlined: whereas the source explicitly passes through D(λ) via the definition D(x) := T(x) ∨ T(¬x) (and the author's setting note mentions D as a function), Target takes no D : Fm → Fm parameter and directly substitutes T lam ⋎ T (∼lam) into the conditioned truth biconditional. This is a harmless presentational choice.\"\n    }\n  ],\n  \"summary\": \"Target faithfully captures the propositional deductive core of Koellner's quicker inconsistency proof for EA_DT with all connectives and polarities intact, subject to minor caveats: the concrete arithmetical theory EA_DT (along with PA, coding, E1, and the derivation of Feferman's Theorem 1) is idealized into five single-instance hypotheses on an arbitrary classical system, the disjunction truth equivalence is weakened to its needed forward direction, and D(lam) is inlined.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Abstract setting instead of the concrete theory EA_DT: the Lean statement does not formalize PA, Gödel coding, quantifiers, the Diagonal Lemma, or the axioms of DT, EA, and EA_DT. Rather than proving unconditionally that EA_DT is inconsistent, it proves conditionally that any classical propositional system 𝓢 proves ⊥ from five explicit hypotheses about an arbitrary sentence lam and functions T, K; in particular, both the liar sentence and Feferman's Theorem 1 (D(λ) → (T(λ) ↔ λ)) are taken as hypotheses rather than derived. This reflects the declared limitation of the abstract setting."
+      },
+      {
+        "severity": "minor",
+        "description": "E1 and the validity of λ ∨ ¬λ are bypassed: in the source, K(λ ∨ ¬λ) is derived from the first-order validity of λ ∨ ¬λ using E1 ('K of every first-order validity'). Because the abstract setting cannot express first-order validity separately from provability in 𝓢, Target assumes 𝓢 ⊢ K (lam ⋎ ∼lam) directly; this weakens the hypothesis (a harmless logical strengthening of the conditional statement) but omits the inference from validity and E1."
+      },
+      {
+        "severity": "minor",
+        "description": "Single instances and a one-way implication instead of full schemas and a biconditional: Target replaces the general schema I (∀ φ, K(φ) → T(φ)), the equivalence T(λ ∨ ¬λ) ↔ T(λ) ∨ T(¬λ) from DT, and the schema D(φ) → (T(φ) ↔ φ) with just the single instances needed for lam, and uses only the forward direction T (lam ⋎ ∼lam) 🡒 (T lam ⋎ T (∼lam)). Weakening the antecedents yields a harmless logical strengthening of the implication."
+      },
+      {
+        "severity": "minor",
+        "description": "The predicate D is omitted and inlined: whereas the source explicitly passes through D(λ) via the definition D(x) := T(x) ∨ T(¬x) (and the author's setting note mentions D as a function), Target takes no D : Fm → Fm parameter and directly substitutes T lam ⋎ T (∼lam) into the conditioned truth biconditional. This is a harmless presentational choice."
+      }
+    ],
+    "summary": "Target faithfully captures the propositional deductive core of Koellner's quicker inconsistency proof for EA_DT with all connectives and polarities intact, subject to minor caveats: the concrete arithmetical theory EA_DT (along with PA, coding, E1, and the derivation of Feferman's Theorem 1) is idealized into five single-instance hypotheses on an arbitrary classical system, the disjunction truth equivalence is weakened to its needed forward direction, and D(lam) is inlined."
+  }
+}

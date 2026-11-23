@@ -1,0 +1,31 @@
+{
+  "id": "X14",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:17:57Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K D : Fm → Fm) (σ X G : Fm),\n    Def7 𝓢 D T → Def8 𝓢 D K →\n    𝓢 ⊢ ∼D σ →\n    𝓢 ⊢ ∼D (X 🡒 σ) ⋏ ∼D (K (σ 🡒 G))\n",
+  "usage": [
+    [
+      1796,
+      281
+    ],
+    [
+      3276,
+      540
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every sentence type Fm and system type S, with any choice of logical connectives and truth and falsehood constants on Fm and provability relation for S on Fm, take any system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens. For every choice of functions T, K, D from Fm to Fm and then of sentences σ, X, G, suppose, in order, that (1) for every sentence φ and then every sentence ψ, 𝓢 proves the biconditional between D(φ 🡒 ψ) and (D(φ) ⋏ (T(φ) 🡒 D(ψ)))); (2) for every sentence φ, 𝓢 proves the biconditional between D(K(φ)) and D(φ); and (3) 𝓢 proves the negation of D(σ). Then 𝓢 proves the single conjunction (∼D(X 🡒 σ)) ⋏ (∼D(K(σ 🡒 G))). The third hypothesis requires a proof of a negation, not merely a lack of proof of D(σ). No consistency assumption, distinctness of the sentences, or additional condition on the functions is required.\"}",
+  "translation": "Target is defined to be the following proposition. For every sentence type Fm and system type S, with any choice of logical connectives and truth and falsehood constants on Fm and provability relation for S on Fm, take any system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens. For every choice of functions T, K, D from Fm to Fm and then of sentences σ, X, G, suppose, in order, that (1) for every sentence φ and then every sentence ψ, 𝓢 proves the biconditional between D(φ 🡒 ψ) and (D(φ) ⋏ (T(φ) 🡒 D(ψ)))); (2) for every sentence φ, 𝓢 proves the biconditional between D(K(φ)) and D(φ); and (3) 𝓢 proves the negation of D(σ). Then 𝓢 proves the single conjunction (∼D(X 🡒 σ)) ⋏ (∼D(K(σ 🡒 G))). The third hypothesis requires a proof of a negation, not merely a lack of proof of D(σ). No consistency assumption, distinctness of the sentences, or additional condition on the functions is required.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The first conjunct reverses the implication: Lean has `∼D (X 🡒 σ)` instead of `∼D (σ 🡒 X)`. D4 makes determinateness of an implication require determinateness of its antecedent, so provable `∼D σ` yields the intended conclusion when σ is the antecedent. With σ as the consequent, D4 allows the implication to be determinate if X is determinate but not true.\"\n    }\n  ],\n  \"summary\": \"The abstract D4 and D7 hypotheses and the second conjunct `∼D (K (σ 🡒 G))` match the claimed reduction. The reversed first implication does not yield Theorem 7(1) under the intended substitution for X.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The first conjunct reverses the implication: Lean has `∼D (X 🡒 σ)` instead of `∼D (σ 🡒 X)`. D4 makes determinateness of an implication require determinateness of its antecedent, so provable `∼D σ` yields the intended conclusion when σ is the antecedent. With σ as the consequent, D4 allows the implication to be determinate if X is determinate but not true."
+      }
+    ],
+    "summary": "The abstract D4 and D7 hypotheses and the second conjunct `∼D (K (σ 🡒 G))` match the claimed reduction. The reversed first implication does not yield Theorem 7(1) under the intended substitution for X."
+  }
+}

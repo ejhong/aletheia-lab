@@ -1,0 +1,43 @@
+{
+  "id": "X15",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T06:16:48Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T : Fm → Fm),\n    Def1 𝓢 T → Def2 𝓢 T → (∃ lam, 𝓢 ⊢ lam 🡘 T lam) → 𝓢 ⊢ ⊥\n",
+  "usage": [
+    [
+      1684,
+      2695
+    ],
+    [
+      2909,
+      5917
+    ]
+  ],
+  "a_raw": "{\"translation\": \"`Target` is the proposition asserting that for all arbitrary types `Fm` (sentences) and `S` (proof systems), equipped with object-language logical connectives (`🡒`, `⋏`, `⋎`, `∼`) and constants (`⊤`, `⊥`) on `Fm` and a provability relation `⊢` between `S` and `Fm`, for every proof system `𝓢 : S` that is classical (`Entailment.Cl 𝓢`, meaning `𝓢` proves every classical propositional tautology in these connectives and is closed under modus ponens), and for every arbitrary function `T : Fm → Fm`: if (1) for every sentence `φ : Fm`, `𝓢` proves the object-language implication `φ 🡒 T φ` (`Def1 𝓢 T`), (2) for every sentence `φ : Fm`, `𝓢` proves the object-language implication `T φ 🡒 φ` (`Def2 𝓢 T`), and (3) there exists a sentence `lam : Fm` such that `𝓢` proves the object-language biconditional `lam 🡘 T lam` (i.e., `(lam 🡒 T lam) ⋏ (T lam 🡒 lam)`, notably with no negation on either side), then `𝓢` proves the falsehood constant `⊥`. No other assumptions are imposed on `Fm`, `S`, `𝓢`, or `T` (in particular, `T` is an arbitrary function on sentences with no definability or connective-preservation requirements, `𝓢` is not assumed consistent or closed under any extra rules, and `Def3` through `Def8` are not used).\"}",
+  "translation": "`Target` is the proposition asserting that for all arbitrary types `Fm` (sentences) and `S` (proof systems), equipped with object-language logical connectives (`🡒`, `⋏`, `⋎`, `∼`) and constants (`⊤`, `⊥`) on `Fm` and a provability relation `⊢` between `S` and `Fm`, for every proof system `𝓢 : S` that is classical (`Entailment.Cl 𝓢`, meaning `𝓢` proves every classical propositional tautology in these connectives and is closed under modus ponens), and for every arbitrary function `T : Fm → Fm`: if (1) for every sentence `φ : Fm`, `𝓢` proves the object-language implication `φ 🡒 T φ` (`Def1 𝓢 T`), (2) for every sentence `φ : Fm`, `𝓢` proves the object-language implication `T φ 🡒 φ` (`Def2 𝓢 T`), and (3) there exists a sentence `lam : Fm` such that `𝓢` proves the object-language biconditional `lam 🡘 T lam` (i.e., `(lam 🡒 T lam) ⋏ (T lam 🡒 lam)`, notably with no negation on either side), then `𝓢` proves the falsehood constant `⊥`. No other assumptions are imposed on `Fm`, `S`, `𝓢`, or `T` (in particular, `T` is an arbitrary function on sentences with no definability or connective-preservation requirements, `𝓢` is not assumed consistent or closed under any extra rules, and `Def3` through `Def8` are not used).",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The hypothesis `(∃ lam, 𝓢 ⊢ lam 🡘 T lam)` omits negation (`∼`), asserting a truth-teller sentence (`λ ↔ T(λ)`) rather than a liar sentence (`λ ↔ ¬T(λ)` or `λ ↔ T(¬λ)`). Because of this omission, the Lean statement does not capture the liar-based inconsistency argument and is in fact mathematically false (for example, taking `𝓢` to be any consistent classical propositional system and `T` to be the identity function satisfies all three hypotheses while `𝓢 ⊬ ⊥`).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source states that adding both 'T-In' and 'K-Intro' to DTK yields an inconsistent system, whereas `Target` omits 'K-Intro' (as well as `K`, `D`, and the rest of DTK) and only assumes 'T-In' alongside 'T-Out' and the fixed-point hypothesis. With a genuine liar sentence, dropping 'K-Intro' would be a harmless strengthening of the inconsistency claim (and is acknowledged by the author).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In Koellner (2018), 'T-In' is grouped with 'K-Intro' as an inference rule ('these rules'), whereas `Def1 𝓢 T` formalizes 'T-In' as the object-language conditional schema `∀ φ, 𝓢 ⊢ φ 🡒 T φ` rather than the weaker rule `∀ φ, 𝓢 ⊢ φ → 𝓢 ⊢ T φ` (as used for 'K-Intro' in `Def3`). Although Lemma 7.14.4 writes 'T-Out' as a conditional, using the conditional schema for 'T-In' strengthens the hypothesis (weakening the theorem) if the source intended the rule version, which would already suffice with 'T-Out' and a liar sentence.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The formalization abstracts away DTK, arithmetic, Gödel coding, and the diagonal lemma that yields the liar sentence, instead quantifying over an arbitrary classical system `𝓢` and arbitrary function `T : Fm → Fm` with 'T-Out' and the fixed-point sentence assumed as hypotheses (an abstraction declared separately by the author).\"\n    }\n  ],\n  \"summary\": \"The Lean formalization diverges fatally from the claim because the liar-sentence hypothesis is missing a negation, writing `lam 🡘 T lam` (a truth-teller) instead of `lam 🡘 ∼ T lam`, which makes `Target` provably false. Minor divergences also exist in omitting 'K-Intro', formalizing 'T-In' as a conditional schema rather than an inference rule, and abstracting away DTK and arithmetic.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The hypothesis `(∃ lam, 𝓢 ⊢ lam 🡘 T lam)` omits negation (`∼`), asserting a truth-teller sentence (`λ ↔ T(λ)`) rather than a liar sentence (`λ ↔ ¬T(λ)` or `λ ↔ T(¬λ)`). Because of this omission, the Lean statement does not capture the liar-based inconsistency argument and is in fact mathematically false (for example, taking `𝓢` to be any consistent classical propositional system and `T` to be the identity function satisfies all three hypotheses while `𝓢 ⊬ ⊥`)."
+      },
+      {
+        "severity": "minor",
+        "description": "The source states that adding both 'T-In' and 'K-Intro' to DTK yields an inconsistent system, whereas `Target` omits 'K-Intro' (as well as `K`, `D`, and the rest of DTK) and only assumes 'T-In' alongside 'T-Out' and the fixed-point hypothesis. With a genuine liar sentence, dropping 'K-Intro' would be a harmless strengthening of the inconsistency claim (and is acknowledged by the author)."
+      },
+      {
+        "severity": "minor",
+        "description": "In Koellner (2018), 'T-In' is grouped with 'K-Intro' as an inference rule ('these rules'), whereas `Def1 𝓢 T` formalizes 'T-In' as the object-language conditional schema `∀ φ, 𝓢 ⊢ φ 🡒 T φ` rather than the weaker rule `∀ φ, 𝓢 ⊢ φ → 𝓢 ⊢ T φ` (as used for 'K-Intro' in `Def3`). Although Lemma 7.14.4 writes 'T-Out' as a conditional, using the conditional schema for 'T-In' strengthens the hypothesis (weakening the theorem) if the source intended the rule version, which would already suffice with 'T-Out' and a liar sentence."
+      },
+      {
+        "severity": "minor",
+        "description": "The formalization abstracts away DTK, arithmetic, Gödel coding, and the diagonal lemma that yields the liar sentence, instead quantifying over an arbitrary classical system `𝓢` and arbitrary function `T : Fm → Fm` with 'T-Out' and the fixed-point sentence assumed as hypotheses (an abstraction declared separately by the author)."
+      }
+    ],
+    "summary": "The Lean formalization diverges fatally from the claim because the liar-sentence hypothesis is missing a negation, writing `lam 🡘 T lam` (a truth-teller) instead of `lam 🡘 ∼ T lam`, which makes `Target` provably false. Minor divergences also exist in omitting 'K-Intro', formalizing 'T-In' as a conditional schema rather than an inference rule, and abstracting away DTK and arithmetic."
+  }
+}

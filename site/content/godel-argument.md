@@ -9,7 +9,7 @@ dek: What exactly does the Lucas–Penrose argument prove, and from which premis
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Stages 0 and 1 are done, and so are two of the three tiers of Stage 2. Twenty-eight statements are locked and proved in Lean, using only Lean's three standard axioms. In short: the argument shows a mind is not a machine *it knows to be sound*; it does not show a mind is not a machine. With a knowledge operator added, and then with real quantifiers, the same holds: no reasoner can know which machine it is, and a reasoner that is some machine has truths it can never know. What carries each result is a reasoner knowing that its own knowledge is true, never whether it is a machine. Penrose's later argument is the last tier, not started.
+> **Where things stand, 23 November 2026.** Stages 0, 1 and 2 are done. Thirty-five statements are locked and proved in Lean, using only Lean's three standard axioms. In short: Penrose's modest conclusion, that we are not running an algorithm we can know to be sound, is proved. His proof of the stronger conclusion, that the mind is no machine at all, does not establish it: the argument is valid, but two of its rules contradict themselves, and with the rules repaired it reaches only something weaker. The stronger conclusion itself is neither proved nor refuted. Nothing here touches Penrose's physics.
 
 ## The question
 
@@ -57,15 +57,15 @@ Thin wrappers: Foundation already proves the underlying theorems (their names ar
 - [x] **e. Penrose's argument in halting form** No sound r.e. certifier of non-halting certifies its own diagonal computation. Proved. Checked against *Shadows of the Mind* §2.5 on 23 November, once the pages were in hand: both checkers found it faithful, with minor caveats.
 
 ### Stage 2 · Epistemic arithmetic
-Status: in progress
-Condition: Eugene approved it on 23 November 2026. Tiers 2A and 2B are done, inside the original $50 budget. He has approved 2C as well; it is not started.
+Status: done
+Condition: Eugene approved it on 23 November 2026. All three tiers are done, for $27.56 in statement checks.
 Gate: Each tier gets its own statement check, entered through `amendments.md` before anything in it is proved.
 
 This is where the new work is: theories in which the knower K is an operator with its own axioms (K1–K4), as in Reinhardt's epistemic arithmetic. The targets, as stated in Koellner (2018, Part I), are Reinhardt's Theorem 3 (p. 354), Theorem 5 (p. 355) and Theorem 6 (p. 357). Theorems 7 and 8, consistency results by Reinhardt and by Carlson, are cited, not proved. Statements are to be taken from Reinhardt's own papers, since Koellner's summary is informal in places.
 
 - [x] **2A, small.** Done 23 November. An abstract layer: K is an operator on sentences, and each principle about it is a stated assumption. Nine statements locked after statement checks, then proved: Reinhardt's theorem that a knower exceeds any system it knows to be sound; his absolute version of the second incompleteness theorem; a sentence-by-sentence counterpart of his result that knowing which system you are is contradictory, with the core of his own proof; and two results showing which assumptions cannot be dropped. Seven were locked before Reinhardt's 1985 paper was in hand. It arrived the same day, corrected one of them, and two more were added from it.
 - [x] **2B.** Done 23 November, on a smaller scope than first planned. Reinhardt's paper shows that his two central theorems need no arithmetic. So this tier builds a real formal language with the knowledge operator and quantifiers, with his proof system, and proves those two theorems in it: knowing which set you are is refuted, and being some set gives a truth you cannot know. Six statements, locked after two rounds of statement check, then proved. Epistemic arithmetic itself, with its arithmetic and its truth predicate, is not built.
-- [ ] **2C, large.** Penrose's new argument, as Koellner's Part II sets it out in eight steps, written as a derivation with each unlicensed step isolated as a named hypothesis. Part II is now in hand and partly read. It does not give the full axioms of its truth theory; those are in Koellner's 2016 chapter, not yet in hand.
+- [x] **2C.** Done 23 November. Penrose's new argument, in the eight steps Koellner's Part II gives it, in an abstract setting with truth, knowledge and determinateness as operations on sentences. Seven statements, locked after two rounds of statement check, then proved: the argument is valid from its rules; each rule, unrestricted, is inconsistent; with restricted rules the argument needs two statements to be determinate; and for a determinate version of the thesis it yields only something weaker. Koellner's system itself is not built, so his theorems that the thesis is indeterminate and that neither side of the disjunction can be proved are cited, not re-proved.
 
 ### Stage 3 · Stretch
 Status: not started
@@ -123,7 +123,7 @@ So the argument establishes "not a machine you know to be sound". It does not es
 **Limits that qualify the table.**
 
 - Plain arithmetic cannot say "I am this machine" or "I know". Set membership stands in for knowing. One checker judged the second row a stand-in, not a formalization of Gödel's remark; that is right. Stage 2A's third row is the version with a knowledge operator.
-- Penrose's second argument (*Shadows of the Mind*, ch. 3) is not covered. That is tier 2C of Stage 2, not started.
+- Penrose's second argument is not covered by Stage 1. Tier 2C of Stage 2 takes it up; see below.
 - Gödel's words are quoted through Koellner; that book was not in hand. Penrose's were checked against photographs of pp. 72–77 of *Shadows of the Mind*.
 - Penrose's own conclusion on p. 76 is that mathematicians are not using a "knowably sound algorithm". That is the version the proofs support. He calls the claim that thought is non-computational "the stronger deduction".
 - Nothing here tests whether a person is well modelled as a consistent, logically closed set of statements.
@@ -177,7 +177,30 @@ The first two differ only in where "it is known that" stands.
 
 **Limits.** The language is a fragment with no arithmetic, so "the e-th machine" is a reading: nothing says the sets are computable. Only the one diagonal instance of Reinhardt's schema is stated. That "I am some set" is consistent with these axioms is Reinhardt's result, cited, not proved here.
 
-Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Cost: $35.05 of the $50 budget, all on statement checks.
+> **Tier 2C, 23 November 2026.** All seven statements are proved. They concern Koellner's eight-step rendering of Penrose's second argument, not Penrose's text, and they give no verdict on ORCH-C040.
+
+Penrose's second argument is the one meant to show "I am not the machine F", for any F. It uses three principles: what is known is true; whatever is so is true; whatever is proved is known. Truth and knowledge are applied to sentences that themselves speak of truth and knowledge.
+
+- **The argument is valid.** From those rules and six facts taken from arithmetic, "I am not F" follows. If it fails, it fails in its rules.
+- **Its rules contradict themselves.** "Whatever is so is true" yields a contradiction as soon as there is a liar sentence. "Whatever is proved is known" yields one as soon as a sentence says of itself that it is not known. From contradictory rules anything follows.
+- **Repaired, it needs something it lacks.** Restrict both rules to sentences that are true or false. The argument then needs two of its own statements to be of that kind. They are not, if "I am F" is not, and Koellner proves that it is not. That theorem is cited, not re-proved here.
+- **For a safe version of "I am F", it stops short.** Restricted to arithmetic, "I am F" is true or false, but then the last step fails. What is left is weaker: something is known that F does not prove.
+
+| Claim | Lean name | Status |
+|---|---|---|
+| The eight steps yield "I am not F" from the unrestricted rules | `penroseArgumentValid` | Proved |
+| "Whatever is so is true", unrestricted, is inconsistent | `unrestrictedTInInconsistent` | Proved |
+| "Whatever is proved is known", unrestricted, is inconsistent | `unrestrictedKIntroInconsistent` | Proved; stronger than Koellner's remark |
+| Knowing every logical validity is inconsistent with self-applicable truth | `knownValiditiesInconsistent` | Proved |
+| With restricted rules the argument works if two named statements are determinate | `penroseArgumentUnderDeterminateness` | Proved |
+| If "I am F" is indeterminate, so are those two statements | `stepsIndeterminateIfThesisIs` | Proved; a reduction of a theorem Koellner states without proof |
+| For a determinate "I am F": something is known that F does not prove | `restrictedThesisGivesUnprovableKnowledge` | Proved; the lab's own |
+
+**How it was checked.** As before. Both checkers caught all three planted errors. Round 1 found one statement using the wrong determinateness premises; it now uses the two statements Koellner names. One divergence stands: the third row is stronger than the remark of Koellner's that it supports.
+
+**Limits.** A reconstruction was checked, not Penrose's own wording. Koellner's system is not built, so three of his theorems are cited, not proved. Only one theory of self-applicable truth is considered. The reply to Koellner by Corradini and Galvan could not be obtained and is not covered.
+
+Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Cost: $40.26, all on statement checks.
 
 ## Sources
 
@@ -192,7 +215,8 @@ Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/que
 - Alexander, "A machine that knows its own code", [arXiv:1305.6080v2](https://arxiv.org/abs/1305.6080v2), read in full from the PDF.
 - Cheng, "Gödel's incompleteness theorem and the Anti-Mechanist Argument: revisited", [arXiv:1902.05902v2](https://arxiv.org/abs/1902.05902v2). Used for attributions only.
 - Reinhardt, "Absolute Versions of Incompleteness Theorems", *Noûs* 19(3) (1985) 317–346, [JSTOR](https://www.jstor.org/stable/2214945), pp. 320–332, from a scan supplied by Eugene.
-- Koellner, "On the Question of Whether the Mind Can Be Mechanized, II: Penrose's New Argument", *Journal of Philosophy* 115(9) (2018) 453–484, §§I–IV, from a copy supplied by Eugene. Not yet used in any result.
+- Koellner, "On the Question of Whether the Mind Can Be Mechanized, II: Penrose's New Argument", *Journal of Philosophy* 115(9) (2018) 453–484, §§I–IV, from a copy supplied by Eugene.
+- Koellner, "Gödel's Disjunction", in Horsten and Welch (eds.), *Gödel's Disjunction* (OUP, 2016), sections 7.9 to 7.17, read on screen in a Kindle copy bought by Eugene.
 
 #### Bibliographic details verified, text not read
 
@@ -209,7 +233,6 @@ Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/que
 - Penrose, *Shadows of the Mind* (1994) ch. 2–3; "Beyond the Doubting of a Shadow", *Psyche* 2 (1996).
 - Lucas, "Minds, Machines and Gödel", *Philosophy* 36 (1961).
 - Chalmers, "Minds, Machines, and Mathematics", *Psyche* 2 (1995). Lindström, *Journal of Philosophical Logic* 30 (2001). Shapiro, *Journal of Philosophical Logic* 32 (2003).
-- Koellner, "Gödel's Disjunction", in Horsten and Welch (eds.), OUP 2016.
 - Suggested addition: Stern, "Proving that the Mind is Not a Machine?" (2018).
 
 #### Prior art and dependencies, checked 22 November 2026

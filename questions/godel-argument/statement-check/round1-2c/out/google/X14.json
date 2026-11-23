@@ -1,0 +1,39 @@
+{
+  "id": "X14",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T06:23:36Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K D : Fm → Fm) (σ X G : Fm),\n    Def7 𝓢 D T → Def8 𝓢 D K →\n    𝓢 ⊢ ∼D σ →\n    𝓢 ⊢ ∼D (X 🡒 σ) ⋏ ∼D (K (σ 🡒 G))\n",
+  "usage": [
+    [
+      1711,
+      3707
+    ],
+    [
+      3364,
+      6415
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition asserting that for every type Fm of sentences and every type S of proof systems, equipped with formal logical connectives (🡒, ⋏, ⋎, ∼, ⊤, ⊥, with φ 🡘 ψ abbreviating (φ 🡒 ψ) ⋏ (ψ 🡒 φ)) and a provability relation ⊢ between S and Fm, for every proof system 𝓢 : S that proves all classical propositional tautologies and is closed under modus ponens (Entailment.Cl 𝓢), for all arbitrary functions T, K, D : Fm → Fm, and for all arbitrary sentences σ, X, G : Fm, if the following three hypotheses hold: (1) Def7 𝓢 D T: for all sentences φ and ψ, 𝓢 proves D (φ 🡒 ψ) 🡘 (D φ ⋏ (T φ 🡒 D ψ)); (2) Def8 𝓢 D K: for every sentence φ, 𝓢 proves D (K φ) 🡘 D φ; and (3) 𝓢 proves ∼(D σ); then 𝓢 proves the conjunction (∼(D (X 🡒 σ))) ⋏ (∼(D (K (σ 🡒 G)))). Nothing else is required: 𝓢 is not assumed to be consistent or to satisfy any axioms or rules beyond classical propositional logic; none of Def1–Def6 are assumed; T, K, and D are arbitrary functions constrained only by Def7 and Def8; and X and G are completely unconstrained sentences (in particular, no hypothesis is placed on X, T X, or D X, even though the first conjunct of the conclusion is ∼(D (X 🡒 σ)) with σ as the consequent of the implication).\"}\n```",
+  "translation": "Target is the proposition asserting that for every type Fm of sentences and every type S of proof systems, equipped with formal logical connectives (🡒, ⋏, ⋎, ∼, ⊤, ⊥, with φ 🡘 ψ abbreviating (φ 🡒 ψ) ⋏ (ψ 🡒 φ)) and a provability relation ⊢ between S and Fm, for every proof system 𝓢 : S that proves all classical propositional tautologies and is closed under modus ponens (Entailment.Cl 𝓢), for all arbitrary functions T, K, D : Fm → Fm, and for all arbitrary sentences σ, X, G : Fm, if the following three hypotheses hold: (1) Def7 𝓢 D T: for all sentences φ and ψ, 𝓢 proves D (φ 🡒 ψ) 🡘 (D φ ⋏ (T φ 🡒 D ψ)); (2) Def8 𝓢 D K: for every sentence φ, 𝓢 proves D (K φ) 🡘 D φ; and (3) 𝓢 proves ∼(D σ); then 𝓢 proves the conjunction (∼(D (X 🡒 σ))) ⋏ (∼(D (K (σ 🡒 G)))). Nothing else is required: 𝓢 is not assumed to be consistent or to satisfy any axioms or rules beyond classical propositional logic; none of Def1–Def6 are assumed; T, K, and D are arbitrary functions constrained only by Def7 and Def8; and X and G are completely unconstrained sentences (in particular, no hypothesis is placed on X, T X, or D X, even though the first conjunct of the conclusion is ∼(D (X 🡒 σ)) with σ as the consequent of the implication).",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"In the first conjunct of the conclusion, the TARGET writes `∼D (X 🡒 σ)` instead of `∼D (σ 🡒 X)`, reversing the direction of the implication in Koellner's Theorem 7(1) (`¬D(K = F_e → F_e+ ⊆ T)`) as well as in the author's own description (`σ → X`). Because axiom D4 (`Def7`: `D (φ 🡒 ψ) 🡘 (D φ ⋏ (T φ 🡒 D ψ))`) is asymmetric between antecedent and consequent, `∼D σ` implies `∼D (σ 🡒 X)` but does not imply `∼D (X 🡒 σ)` (if `D X` holds and `T X` fails, `D (X 🡒 σ)` holds even when `∼D σ` holds), so the TARGET as written is actually false.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Theorem 7 in Koellner (2018) is an unconditional theorem of the concrete system DTK about the specific sentences `K = F_e`, `F_e+ ⊆ T`, and `G(F_e+)`, whereas the TARGET abstracts to an arbitrary classical propositional system `𝓢` and arbitrary sentences `σ, X, G`, taking `𝓢 ⊢ ∼D σ` as an explicit premise rather than establishing `DTK ⊢ ¬D(K = F_e)` (as acknowledged in the author's claim that this is a reduction).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the source, axioms (D4) and (D7) are single object-language universally quantified axioms over codes of sentences (with `Sent(x)` and Gödel coding), whereas `Def7` and `Def8` model them as meta-level schemas over an abstract sentence type `Fm` with arbitrary functions `T, K, D : Fm → Fm` (a declared limitation of the abstract setting).\"\n    }\n  ],\n  \"summary\": \"The TARGET diverges from both Koellner's Theorem 7(1) and the author's claim by reversing the implication in the first conjunct from `σ 🡒 X` to `X 🡒 σ`. Because axiom D4 (`Def7`) is asymmetric, this reversal makes the formal statement false rather than a valid reduction of Theorem 7.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "In the first conjunct of the conclusion, the TARGET writes `∼D (X 🡒 σ)` instead of `∼D (σ 🡒 X)`, reversing the direction of the implication in Koellner's Theorem 7(1) (`¬D(K = F_e → F_e+ ⊆ T)`) as well as in the author's own description (`σ → X`). Because axiom D4 (`Def7`: `D (φ 🡒 ψ) 🡘 (D φ ⋏ (T φ 🡒 D ψ))`) is asymmetric between antecedent and consequent, `∼D σ` implies `∼D (σ 🡒 X)` but does not imply `∼D (X 🡒 σ)` (if `D X` holds and `T X` fails, `D (X 🡒 σ)` holds even when `∼D σ` holds), so the TARGET as written is actually false."
+      },
+      {
+        "severity": "minor",
+        "description": "Theorem 7 in Koellner (2018) is an unconditional theorem of the concrete system DTK about the specific sentences `K = F_e`, `F_e+ ⊆ T`, and `G(F_e+)`, whereas the TARGET abstracts to an arbitrary classical propositional system `𝓢` and arbitrary sentences `σ, X, G`, taking `𝓢 ⊢ ∼D σ` as an explicit premise rather than establishing `DTK ⊢ ¬D(K = F_e)` (as acknowledged in the author's claim that this is a reduction)."
+      },
+      {
+        "severity": "minor",
+        "description": "In the source, axioms (D4) and (D7) are single object-language universally quantified axioms over codes of sentences (with `Sent(x)` and Gödel coding), whereas `Def7` and `Def8` model them as meta-level schemas over an abstract sentence type `Fm` with arbitrary functions `T, K, D : Fm → Fm` (a declared limitation of the abstract setting)."
+      }
+    ],
+    "summary": "The TARGET diverges from both Koellner's Theorem 7(1) and the author's claim by reversing the implication in the first conjunct from `σ 🡒 X` to `X 🡒 σ`. Because axiom D4 (`Def7`) is asymmetric, this reversal makes the formal statement false rather than a valid reduction of Theorem 7."
+  }
+}

@@ -1,14 +1,19 @@
-# Machine-check the Gödel argument: results for Stages 1, 2A and 2B
+# Machine-check the Gödel argument: results for Stages 1 and 2 (tiers 2A, 2B, 2C)
 
 Issue #19 · Lane: proof · Protocol locked 2026-11-22T17:49:01Z · Stage 2A statements locked 2026-11-23T02:52:00Z, and two
-more at 03:30:51Z · Tier 2B statements locked 2026-11-23T05:07:22Z · Four amendments (2026-11-23)
+more at 03:30:51Z · Tier 2B statements locked 2026-11-23T05:07:22Z · Tier 2C
+statements locked 2026-11-23T06:35:15Z · Five amendments (2026-11-23)
 
 ## Answer
 
 Stage 1: all thirteen locked statements are proved in Lean 4. Stage 2A: all nine are proved as well; see
 [Stage 2A](#stage-2a-a-knowledge-operator) below. Tier 2B: all six are proved; see
-[Tier 2B](#tier-2b-a-logic-of-knowledge-with-quantifiers). That makes twenty-eight. Throughout, the conclusion
-turns on what a reasoner can know about its own reliability, and never on whether it is a machine.
+[Tier 2B](#tier-2b-a-logic-of-knowledge-with-quantifiers). Tier 2C: all seven are proved; see
+[Tier 2C](#tier-2c-penroses-new-argument). That makes thirty-five. Throughout, the conclusion turns on what a
+reasoner can know about its own reliability, and never on whether it is a machine.
+
+In one sentence: Penrose's modest conclusion is proved; his proof of the strong conclusion, that the mind is no
+machine at all, does not establish it; and the strong conclusion itself is neither proved nor refuted here.
 
 The rest of this section, and everything down to the Stage 2A heading, is about Stage 1.
 
@@ -274,7 +279,7 @@ rounds beside it, and Amendment 2.
   "knows which system it is" holds trivially. Alexander's machine knows much more.
 - **The consistency side is cited, not proved:** that a truthful knower can be a machine without knowing which
   (Reinhardt), and can even know that it is some machine (Carlson).
-- **Penrose's second argument** (*Shadows*, ch. 3) is still not covered. That is tier 2C.
+- **Penrose's second argument** is not covered by Stage 2A. Tier 2C takes it up.
 
 ## Tier 2B: a logic of knowledge with quantifiers
 
@@ -367,6 +372,101 @@ Details: `statement-check/REPORT-2B.md` and Amendment 4.
 - **No truth predicate.** Koellner's Theorems 5 and 6 are stated in a system with one; these are Reinhardt's
   forms without it.
 
+## Tier 2C: Penrose's new argument
+
+Added under Amendment 5. Statements: `lean/GodelArgument/Statement5.lean`. Proofs: `lean/GodelArgument/Results5.lean`.
+
+### Answer
+
+All seven locked statements are proved in Lean 4, each from Lean's three standard axioms only. The build passes
+in CI with warnings treated as errors
+([run 45125199915](https://github.com/ejhong/aletheia-lab/actions/runs/45125199915), commit `eb3749f`).
+
+Penrose's second argument is the one meant to reach the strong conclusion: I am not the machine F, for any F.
+Koellner (2018b, pp. 460–461) sets it out in eight steps resting on three principles: what is known is true;
+whatever is so is true (T-In); whatever is proved is known (K-Intro). Truth and knowledge are applied to
+sentences that themselves speak of truth and knowledge. This tier checks the logic of that reconstruction, in
+the abstract setting of Stage 2A. It does not build Koellner's system DTK.
+
+### What follows from what (plain summary)
+
+1. **The argument is valid.** Given T-In, K-Intro and six bridging facts from arithmetic, the conclusion "I am
+   not F" follows (S4a). So if the argument fails, it fails in its rules, not in its logic.
+2. **Its rules are contradictory as they stand.** T-In contradicts "what is true is so" as soon as there is a
+   liar sentence (S4b). K-Intro contradicts "what is known is true" and "what is true is so" as soon as there is
+   a sentence saying of itself that it is not known (S4c). And knowing every logical validity cannot be kept
+   alongside self-applicable truth (S4d). An argument that is valid from contradictory rules proves nothing.
+3. **Repaired, the argument needs something it does not have.** Restrict both rules to sentences that are
+   determinate, that is, true or false. Then the argument still goes through, provided the two statements at
+   which the rules are applied are determinate (S4e). But if "I am F" is not determinate, neither are they
+   (S4f). Koellner proves that "I am F", taken over the whole language, is not determinate. That theorem is
+   cited here, not re-proved.
+4. **For a determinate version of "I am F", the argument stops short.** Restrict "I am F" to arithmetic, where
+   it is determinate. Then the last step fails, because the sentence the argument produces is not arithmetical.
+   What is left is weaker: something is known that F does not prove (S4g).
+
+So the eight steps establish "I am not F" only from rules that prove everything. With consistent rules they
+establish at most that a reasoner who is F in its arithmetic knows something outside arithmetic that F cannot
+prove.
+
+### Results table
+
+σ stands for "K = F_e", I am the machine F_e. "Bridging facts" are the six facts about soundness, the Gödel
+sentence and provability in F_e that the argument takes from arithmetic. They are assumed, not derived.
+
+| Claim | Lean name | Assumptions | Status | Source and standing |
+|---|---|---|---|---|
+| S4a. The eight steps yield ¬σ | `penroseArgumentValid` | T-In at σ; the rule K-Intro; the six bridging facts | Proved | Koellner 2018b, pp. 460–461, steps (1)–(8) |
+| S4b. T-In, unrestricted, is inconsistent | `unrestrictedTInInconsistent` | T-In; "what is true is so"; a liar sentence | Proved | supports Koellner 2018b, p. 467; the derivation is the lab's |
+| S4c. K-Intro, unrestricted, is inconsistent | `unrestrictedKIntroInconsistent` | K-Intro; "what is known is true"; "what is true is so"; a sentence equivalent to its own not being known | Proved | supports Koellner 2018b, p. 467; stronger than his remark, see below |
+| S4d. Knowing the validity "λ or not λ" for a liar λ is inconsistent with type-free truth | `knownValiditiesInconsistent` | that validity is known; the known is true; truth distributes over that disjunction; a sentence that is true or false obeys the truth biconditional | Proved | Koellner 2016, §7.12 (the quicker proof of Theorem 7.12.1); Koellner 2018b, Theorem 2 |
+| S4e. With restricted rules the argument yields ¬σ if "σ → F_e⁺ ⊆ T" and "K(σ → G)" are provably determinate | `penroseArgumentUnderDeterminateness` | the truth biconditional for determinate sentences; DK-Intro; determinateness axioms D4 and D7; the six bridging facts | Proved | the lab's complement to Koellner 2018b, p. 467 |
+| S4f. If σ is provably indeterminate, so are "σ → X" and "K(σ → G)" | `stepsIndeterminateIfThesisIs` | determinateness axioms D4 and D7 | Proved | a reduction of Koellner 2018b, Theorem 7, which he states without proof |
+| S4g. For a determinate σ without the last bridging fact: σ → G is known, and if σ then F_e does not prove σ → G | `restrictedThesisGivesUnprovableKnowledge` | as S4e but with σ and σ → G determinate, and five of the six bridging facts | Proved | the lab's own |
+
+**Non-vacuity.** `lean/GodelArgument/NonVacuity5.lean` gives a consistent system in which every assumption of S4a,
+S4e and S4g holds, and one for S4f. The witnesses are trivial (T and K read as "is so", falsehood for σ). They
+show only that the assumptions do not clash. S4b, S4c and S4d end in a contradiction, so their assumptions
+cannot all hold in a consistent system; that is what they say.
+
+**Audit.** Nine theorems (7 results, 2 non-vacuity instances) pass `#assert_standard_axioms` inside the build;
+52 in all. No `sorry`, `admit`, `native_decide` or `axiom` in the source.
+
+### Statement check
+
+Two rounds, both before the lock. Details: `statement-check/REPORT-2C.md` and Amendment 5.
+
+- **Planted errors:** three; both checkers caught all three.
+- **Final verdicts:** of nine real items, eight are `faithful` or `faithful_with_caveats` from both checkers.
+- **The check changed one statement.** In round 1 both checkers rated S4e `divergent`: it assumed that σ and
+  σ → G are determinate, where Koellner names two other statements. S4e now uses the two he names.
+
+**Unresolved divergence.**
+
+| Item | Divergence | Effect on what is claimed |
+|---|---|---|
+| S4c | OpenAI: `divergent`. Koellner says that adding both T-In and K-Intro to DTK gives inconsistency. The Lean says K-Intro alone does. Google: `faithful_with_caveats`. | S4c is the lab's strengthening. It implies Koellner's remark; it is not his statement, and his own proof was not seen. |
+
+### Limits of tier 2C
+
+- **A reconstruction was checked, not Penrose's text.** The eight steps are Koellner's rendering of the argument
+  Penrose gives in his 1996 reply (§3.2), which Koellner quotes. Whether Penrose would accept the rendering is
+  outside what was checked.
+- **Three results that carry Koellner's verdict are cited, not proved:** that "K = F_e" over the whole language
+  is provably indeterminate, that its restriction to arithmetic is provably determinate (2016, Theorem 7.15.1),
+  and that DTK is consistent and can neither prove nor refute either side of Gödel's disjunction (2018b,
+  Theorems 3 and 11). They need DTK built concretely, with its arithmetic and coding.
+- **One theory of truth.** Koellner uses Feferman's theory of determinate truth. He argues in an appendix that
+  other theories would not help the argument. That appendix was not read closely and nothing here checks it.
+- **Theorem 7 has no proof in the sources read.** S4f is the lab's reduction of it. Whether Koellner proves it
+  that way is `unverified`.
+- **The six bridging facts are assumed.** Three of them rest on the incompleteness theorems for F_e.
+- **S4g is the lab's own.** It agrees with what a search reports of the abstract of Corradini and Galvan (2022),
+  but their papers could not be obtained, so nothing is attributed to them and their reply to Koellner is not
+  covered.
+- **Transcription.** The passages from Koellner's 2016 chapter were read on screen in a Kindle copy and typed
+  out by an AI model. They could not be checked mechanically.
+
 ## Amendments
 
 **Amendment 1 (2026-11-23).** Eugene supplied photographs of *Shadows of the Mind*, pp. 72–77. The amendment was
@@ -395,21 +495,27 @@ It records why the tier was re-scoped (Reinhardt's two central theorems need no 
 statements, and the two check rounds. Departure from the plan as first written: axioms were restricted to
 sentences after round 1.
 
+**Amendment 5 (2026-11-23).** Tier 2C, approved by Eugene. Written and pushed before the check and the proofs.
+It records the sources (Koellner's Part II and his 2016 chapter, both obtained that day), the seven statements,
+the two check rounds, and Eugene's permission to pass the $50 budget. Departure from the plan as first written:
+the determinateness premises of S4e were changed after round 1 to the two statements Koellner names.
+
 ## Spending
 
-$35.05 of the $50 budget, all on statement checks (`SPENDING.md`): $12.38 for Stage 1, $0.32 for Amendment 1,
-$9.50 for Stage 2A, $3.78 for Amendment 3, $9.07 for tier 2B.
+$40.26, all on statement checks (`SPENDING.md`): $12.38 for Stage 1, $0.32 for Amendment 1, $9.50 for Stage 2A,
+$3.78 for Amendment 3, $9.07 for tier 2B, $5.21 for tier 2C. The budget was $50; Eugene lifted that cap on
+2026-11-23, and it was not reached.
 
 ## Who did the work
 
 AI agents did this work, directed by Eugene Jhong, who also supplied the photographs of Penrose's book and the
-papers by Cheng, Reinhardt and Koellner (Part II, not yet used). Dates are
+papers by Cheng, Reinhardt and Koellner, and access to Koellner's 2016 chapter. Dates are
 2026-11-22, and 2026-11-23 for Amendment 1.
 
 - **Anthropic, Claude Opus 5.5:** first assessment of the brief; issue #19.
 - **Anthropic, Claude Fable 5.2:** second assessment, source reading, statements, protocol, statement-check
-  design, proofs and this document, for Stage 1, Stage 2A and tier 2B.
-- **OpenAI, `gpt-6.2-astra`** and **Google, `gemini-4-neon`:** the statement checks, for all three.
+  design, proofs and this document, for Stage 1 and the three tiers of Stage 2.
+- **OpenAI, `gpt-6.2-astra`** and **Google, `gemini-4-neon`:** the statement checks, for all of them.
 - **xAI, `grok-4.7`:** named as tie-breaker; not needed.
 - **The Lean 4 kernel** checked the proofs.
 
@@ -432,4 +538,15 @@ The third step built a small formal language in which "there is a machine such t
 and checked two results in it. One: no reasoner can know which machine it is. Two: if a reasoner is some machine
 without knowing which, then there are truths it can never know. Together these are Gödel's own conclusion, a
 choice between two alternatives, and the proofs do not say which holds. Penrose's later, subtler argument tries
-to rule one of them out. It is not settled here; it is a further stage, not started.
+to rule one of them out.
+
+The last step looked at that argument, in the careful eight-step form the logician Peter Koellner gave it. The
+checker confirms three things. The argument's logic is sound. But it uses two rules, "whatever is so is true"
+and "whatever is proved is known", which contradict themselves once sentences can talk about their own truth,
+as the liar sentence does; and from contradictory rules anything follows. Repair the rules so that they are
+safe, and the argument no longer reaches "I am not a machine". It reaches something smaller: if I am a machine
+in my arithmetic, then I know something that machine cannot prove.
+
+So where does this leave Penrose? His modest claim, that we are not running an algorithm we can know to be
+sound, is proved. His proof of the stronger claim, that the mind is not computable, does not hold up. The
+stronger claim itself is not refuted. Nothing here touches his physics.

@@ -1,0 +1,39 @@
+{
+  "id": "S4c",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T06:20:10Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K : Fm → Fm),\n    Def3 𝓢 K → Def4 𝓢 K T → Def2 𝓢 T → (∃ kap, 𝓢 ⊢ kap 🡘 ∼K kap) → 𝓢 ⊢ ⊥\n",
+  "usage": [
+    [
+      1693,
+      2573
+    ],
+    [
+      3256,
+      7763
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting that for every type Fm of sentences equipped with logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼) and logical constants (truth ⊤ and falsehood ⊥), every type S of proof systems equipped with a provability relation ⊢ on Fm, every proof system 𝓢 : S that is classically propositional (proving all classical propositional tautologies in these connectives and closed under modus ponens), and every pair of arbitrary functions T, K : Fm → Fm, if the following four hypotheses hold: (1) [Def3 𝓢 K] for every sentence φ : Fm, if 𝓢 proves φ then 𝓢 proves K φ (a meta-level rule); (2) [Def4 𝓢 K T] for every sentence φ : Fm, 𝓢 proves the object-level implication (K φ) 🡒 (T φ); (3) [Def2 𝓢 T] for every sentence φ : Fm, 𝓢 proves the object-level implication (T φ) 🡒 φ; and (4) there exists a sentence kap : Fm such that 𝓢 proves the biconditional kap 🡘 ∼(K kap) (abbreviating (kap 🡒 ∼(K kap)) ⋏ (∼(K kap) 🡒 kap)); then 𝓢 proves ⊥ (falsehood). No additional assumptions are imposed on Fm, 𝓢, T, or K—in particular, T and K are arbitrary functions on sentences with no further properties (such as Def1, distribution axioms, or arithmetic definability) assumed, and 𝓢 is not assumed to be consistent or to satisfy any axioms beyond classical propositional logic.\"}",
+  "translation": "Target is the proposition asserting that for every type Fm of sentences equipped with logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼) and logical constants (truth ⊤ and falsehood ⊥), every type S of proof systems equipped with a provability relation ⊢ on Fm, every proof system 𝓢 : S that is classically propositional (proving all classical propositional tautologies in these connectives and closed under modus ponens), and every pair of arbitrary functions T, K : Fm → Fm, if the following four hypotheses hold: (1) [Def3 𝓢 K] for every sentence φ : Fm, if 𝓢 proves φ then 𝓢 proves K φ (a meta-level rule); (2) [Def4 𝓢 K T] for every sentence φ : Fm, 𝓢 proves the object-level implication (K φ) 🡒 (T φ); (3) [Def2 𝓢 T] for every sentence φ : Fm, 𝓢 proves the object-level implication (T φ) 🡒 φ; and (4) there exists a sentence kap : Fm such that 𝓢 proves the biconditional kap 🡘 ∼(K kap) (abbreviating (kap 🡒 ∼(K kap)) ⋏ (∼(K kap) 🡒 kap)); then 𝓢 proves ⊥ (falsehood). No additional assumptions are imposed on Fm, 𝓢, T, or K—in particular, T and K are arbitrary functions on sentences with no further properties (such as Def1, distribution axioms, or arithmetic definability) assumed, and 𝓢 is not assumed to be consistent or to satisfy any axioms beyond classical propositional logic.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Abstract setting instead of concrete DTK: the source passage [P-K2-467] concerns the specific first-order arithmetical system DTK with type-free truth and provability predicates, whereas Target quantifies over an arbitrary classical propositional system 𝓢 and arbitrary sentence operators T and K. As a result, T-Out (Def2), K → T (Def4), and the Knower fixed point (∃ kap, 𝓢 ⊢ kap 🡘 ∼K kap, which in DTK comes from arithmetic via the diagonal lemma) are taken as hypotheses rather than derived from DTK; this abstraction is declared by the author.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Schematic vs. quantified K1: in [P-K2-464], K1 is the object-language universally quantified axiom (∀x)[Sent(x) → (K(x) → T(x))], whereas Def4 𝓢 K T expresses only its meta-level schematic instances ∀ φ, 𝓢 ⊢ K φ 🡒 T φ because quantifiers and coding are not modelled. Because this appears as a hypothesis, it is a harmless strengthening of the theorem.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Omission of T-In: [P-K2-467] remarks that adding 'T-In' and 'K-Intro' to DTK yields an inconsistent system, whereas Target assumes only K-Intro (Def3 𝓢 K) and does not assume T-In. Dropping a hypothesis is a harmless strengthening and matches the author's claim that Target specifically supports the inconsistency from adding 'K-Intro'.\"\n    }\n  ],\n  \"summary\": \"Target faithfully formalizes the abstract Knower-paradox derivation supporting the remark that adding K-Intro to DTK yields an inconsistent system (𝓢 ⊢ ⊥), using K-Intro (Def3), schematic K1 (Def4), T-Out (Def2), and a Knower fixed point. The only divergences are minor: DTK, arithmetic, coding, and quantifiers are abstracted away into hypotheses (as declared), K1 is rendered schematically, and T-In is omitted, which harmlessly strengthens the result.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Abstract setting instead of concrete DTK: the source passage [P-K2-467] concerns the specific first-order arithmetical system DTK with type-free truth and provability predicates, whereas Target quantifies over an arbitrary classical propositional system 𝓢 and arbitrary sentence operators T and K. As a result, T-Out (Def2), K → T (Def4), and the Knower fixed point (∃ kap, 𝓢 ⊢ kap 🡘 ∼K kap, which in DTK comes from arithmetic via the diagonal lemma) are taken as hypotheses rather than derived from DTK; this abstraction is declared by the author."
+      },
+      {
+        "severity": "minor",
+        "description": "Schematic vs. quantified K1: in [P-K2-464], K1 is the object-language universally quantified axiom (∀x)[Sent(x) → (K(x) → T(x))], whereas Def4 𝓢 K T expresses only its meta-level schematic instances ∀ φ, 𝓢 ⊢ K φ 🡒 T φ because quantifiers and coding are not modelled. Because this appears as a hypothesis, it is a harmless strengthening of the theorem."
+      },
+      {
+        "severity": "minor",
+        "description": "Omission of T-In: [P-K2-467] remarks that adding 'T-In' and 'K-Intro' to DTK yields an inconsistent system, whereas Target assumes only K-Intro (Def3 𝓢 K) and does not assume T-In. Dropping a hypothesis is a harmless strengthening and matches the author's claim that Target specifically supports the inconsistency from adding 'K-Intro'."
+      }
+    ],
+    "summary": "Target faithfully formalizes the abstract Knower-paradox derivation supporting the remark that adding K-Intro to DTK yields an inconsistent system (𝓢 ⊢ ⊥), using K-Intro (Def3), schematic K1 (Def4), T-Out (Def2), and a Knower fixed point. The only divergences are minor: DTK, arithmetic, coding, and quantifiers are abstracted away into hypotheses (as declared), K1 is rendered schematically, and T-In is omitted, which harmlessly strengthens the result."
+  }
+}

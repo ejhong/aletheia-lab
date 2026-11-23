@@ -1,0 +1,39 @@
+{
+  "id": "DEF-M",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T06:16:48Z",
+  "target": "def Def1 (𝓢 : S) (T : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ φ 🡒 T φ\n\ndef Def2 (𝓢 : S) (T : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ T φ 🡒 φ\n\ndef Def3 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ φ → 𝓢 ⊢ K φ\n\ndef Def4 (𝓢 : S) (K T : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K φ 🡒 T φ\n",
+  "usage": [
+    [
+      1590,
+      1631
+    ],
+    [
+      2788,
+      14730
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"In the context of arbitrary types Fm (of sentences, equipped with formal logical connectives and constants) and S (of proof systems, equipped with a provability relation ⊢ on Fm), with no assumptions on the proof system 𝓢 (such as classical logic, closure under modus ponens, or consistency) and with T and K arbitrary functions from Fm to Fm, the TARGET defines four propositions:\\n\\n1. Def1 𝓢 T: For every sentence φ : Fm, the system 𝓢 proves the object-level implication φ 🡒 (T φ).\\n\\n2. Def2 𝓢 T: For every sentence φ : Fm, the system 𝓢 proves the object-level implication (T φ) 🡒 φ.\\n\\n3. Def3 𝓢 K: For every sentence φ : Fm, if 𝓢 proves φ, then 𝓢 proves K φ. (This is a meta-level closure rule between provability statements, rather than the provability of the object-level implication φ 🡒 K φ; it uses only the provability relation and no formal connectives.)\\n\\n4. Def4 𝓢 K T: For every sentence φ : Fm, the system 𝓢 proves the object-level implication (K φ) 🡒 (T φ).\"}\n```",
+  "translation": "In the context of arbitrary types Fm (of sentences, equipped with formal logical connectives and constants) and S (of proof systems, equipped with a provability relation ⊢ on Fm), with no assumptions on the proof system 𝓢 (such as classical logic, closure under modus ponens, or consistency) and with T and K arbitrary functions from Fm to Fm, the TARGET defines four propositions:\n\n1. Def1 𝓢 T: For every sentence φ : Fm, the system 𝓢 proves the object-level implication φ 🡒 (T φ).\n\n2. Def2 𝓢 T: For every sentence φ : Fm, the system 𝓢 proves the object-level implication (T φ) 🡒 φ.\n\n3. Def3 𝓢 K: For every sentence φ : Fm, if 𝓢 proves φ, then 𝓢 proves K φ. (This is a meta-level closure rule between provability statements, rather than the provability of the object-level implication φ 🡒 K φ; it uses only the provability relation and no formal connectives.)\n\n4. Def4 𝓢 K T: For every sentence φ : Fm, the system 𝓢 proves the object-level implication (K φ) 🡒 (T φ).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In [P-K2-460], (K → T) is stated as the predicate/set inclusion K ⊆ T—a single universally quantified object-language sentence ∀x (K(x) → T(x)), which the subsequent step (1) uses to infer K = F_e → F_e ⊆ T—whereas Def4 formalizes it as the strictly weaker meta-level scheme ∀ φ, 𝓢 ⊢ K φ 🡒 T φ. Because quantifiers are not modelled in this setting and the author explicitly declares both that limitation and that Def4 states (K → T) sentence by sentence, this is an acknowledged weakening/idealization.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Across Def1–Def4, T and K are arbitrary unary operators Fm → Fm on an abstract type of sentences rather than type-free predicates applied to Gödel codes of sentences (such as sentences of L_DTK in [P-K16-170]), and 𝓢 is an arbitrary proof system rather than DTK or a theory containing arithmetic. This abstraction is explicitly declared as part of the setting.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The variable declaration supplies syntactic connectives and a provability relation ([LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm]) without [Entailment.Cl 𝓢], so classical laws for the connectives are not enforced inside these definitions themselves; this is harmless for stating Def1–Def4, which only use 🡒 and ⊢.\"\n    }\n  ],\n  \"summary\": \"The four definitions faithfully capture (T-In), the T-Out scheme of Lemma 7.14.4, the rule (K-Intro), and the sentence-by-sentence form of (K → T) within the declared quantifier-free abstract setting. The main caveat relative to the source is that Def4 weakens the universally quantified inclusion K ⊆ T to a schematic principle, alongside the declared omission of arithmetic, coding, and specific systems like DTK.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "In [P-K2-460], (K → T) is stated as the predicate/set inclusion K ⊆ T—a single universally quantified object-language sentence ∀x (K(x) → T(x)), which the subsequent step (1) uses to infer K = F_e → F_e ⊆ T—whereas Def4 formalizes it as the strictly weaker meta-level scheme ∀ φ, 𝓢 ⊢ K φ 🡒 T φ. Because quantifiers are not modelled in this setting and the author explicitly declares both that limitation and that Def4 states (K → T) sentence by sentence, this is an acknowledged weakening/idealization."
+      },
+      {
+        "severity": "minor",
+        "description": "Across Def1–Def4, T and K are arbitrary unary operators Fm → Fm on an abstract type of sentences rather than type-free predicates applied to Gödel codes of sentences (such as sentences of L_DTK in [P-K16-170]), and 𝓢 is an arbitrary proof system rather than DTK or a theory containing arithmetic. This abstraction is explicitly declared as part of the setting."
+      },
+      {
+        "severity": "minor",
+        "description": "The variable declaration supplies syntactic connectives and a provability relation ([LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm]) without [Entailment.Cl 𝓢], so classical laws for the connectives are not enforced inside these definitions themselves; this is harmless for stating Def1–Def4, which only use 🡒 and ⊢."
+      }
+    ],
+    "summary": "The four definitions faithfully capture (T-In), the T-Out scheme of Lemma 7.14.4, the rule (K-Intro), and the sentence-by-sentence form of (K → T) within the declared quantifier-free abstract setting. The main caveat relative to the source is that Def4 weakens the universally quantified inclusion K ⊆ T to a schematic principle, alongside the declared omission of arithmetic, coding, and specific systems like DTK."
+  }
+}

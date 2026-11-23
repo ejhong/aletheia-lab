@@ -1,0 +1,39 @@
+{
+  "id": "S4f",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:17:20Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K D : Fm → Fm) (σ X G : Fm),\n    Def7 𝓢 D T → Def8 𝓢 D K →\n    𝓢 ⊢ ∼D σ →\n    𝓢 ⊢ ∼D (σ 🡒 X) ⋏ ∼D (K (σ 🡒 G))\n",
+  "usage": [
+    [
+      1796,
+      330
+    ],
+    [
+      3289,
+      1858
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and provability relation for S on Fm, every system 𝓢 of type S that proves all classical propositional tautologies and is closed under modus ponens, every three functions T, K, D from Fm to Fm, and every three sentences σ, X, G, assume in order: (1) for every sentence φ and then every sentence ψ, 𝓢 proves the biconditional D(φ 🡒 ψ) 🡘 (D(φ) ⋏ (T(φ) 🡒 D(ψ)))); (2) for every sentence φ, 𝓢 proves the biconditional D(K(φ)) 🡘 D(φ); and (3) 𝓢 proves the negation of D(σ), not merely that 𝓢 fails to prove D(σ). Then 𝓢 proves the conjunction (∼D(σ 🡒 X)) ⋏ (∼D(K(σ 🡒 G))). The first conjunct uses X and the second uses G, with no requirement that X and G be equal or distinct. No consistency assumption or rule taking proofs of φ to proofs of K(φ) is required.\"}",
+  "translation": "Target is defined to be the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and provability relation for S on Fm, every system 𝓢 of type S that proves all classical propositional tautologies and is closed under modus ponens, every three functions T, K, D from Fm to Fm, and every three sentences σ, X, G, assume in order: (1) for every sentence φ and then every sentence ψ, 𝓢 proves the biconditional D(φ 🡒 ψ) 🡘 (D(φ) ⋏ (T(φ) 🡒 D(ψ)))); (2) for every sentence φ, 𝓢 proves the biconditional D(K(φ)) 🡘 D(φ); and (3) 𝓢 proves the negation of D(σ), not merely that 𝓢 fails to prove D(σ). Then 𝓢 proves the conjunction (∼D(σ 🡒 X)) ⋏ (∼D(K(σ 🡒 G))). The first conjunct uses X and the second uses G, with no requirement that X and G be equal or distinct. No consistency assumption or rule taking proofs of φ to proofs of K(φ) is required.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean uses D4 and D7 as schemes of provable sentence instances, not as single axioms quantified over codes inside DTK. Restricting the parameters to sentences takes the place of D4’s Sent guards, and D need not have its DTK definition in terms of T.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The conditional applies to arbitrary systems and sentences. Nothing in Lean identifies σ, X, and G with ‘K = F_e’, ‘F_e+ ⊆ T’, and ‘G(F_e+)’, respectively. Applying it to Theorem 7 requires those choices and a DTK proof of ¬Dσ. The cited 2016 excerpt states indeterminacy for WMT, SMT, and SSMT; it does not explicitly state the premise for the fixed sentence ‘K = F_e’.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean concludes provability of one conjunction, whereas Theorem 7 lists two provable sentences. These are equivalent in the assumed classical system.\"\n    }\n  ],\n  \"summary\": \"The target faithfully captures the claimed reduction: by D4, determinateness of σ → Y implies determinateness of σ, and by D7, determinateness of K(σ → G) implies determinateness of σ → G. Thus provable ¬Dσ suffices for both conclusions, without the target asserting Theorem 7 unconditionally.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Lean uses D4 and D7 as schemes of provable sentence instances, not as single axioms quantified over codes inside DTK. Restricting the parameters to sentences takes the place of D4’s Sent guards, and D need not have its DTK definition in terms of T."
+      },
+      {
+        "severity": "minor",
+        "description": "The conditional applies to arbitrary systems and sentences. Nothing in Lean identifies σ, X, and G with ‘K = F_e’, ‘F_e+ ⊆ T’, and ‘G(F_e+)’, respectively. Applying it to Theorem 7 requires those choices and a DTK proof of ¬Dσ. The cited 2016 excerpt states indeterminacy for WMT, SMT, and SSMT; it does not explicitly state the premise for the fixed sentence ‘K = F_e’."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean concludes provability of one conjunction, whereas Theorem 7 lists two provable sentences. These are equivalent in the assumed classical system."
+      }
+    ],
+    "summary": "The target faithfully captures the claimed reduction: by D4, determinateness of σ → Y implies determinateness of σ, and by D7, determinateness of K(σ → G) implies determinateness of σ → G. Thus provable ¬Dσ suffices for both conclusions, without the target asserting Theorem 7 unconditionally."
+  }
+}

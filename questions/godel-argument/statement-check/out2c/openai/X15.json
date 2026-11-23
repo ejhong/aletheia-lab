@@ -1,0 +1,31 @@
+{
+  "id": "X15",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:16:48Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T : Fm → Fm),\n    Def1 𝓢 T → Def2 𝓢 T → (∃ lam, 𝓢 ⊢ lam 🡘 T lam) → 𝓢 ⊢ ⊥\n",
+  "usage": [
+    [
+      1770,
+      283
+    ],
+    [
+      2819,
+      502
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition: for every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and of a provability relation for systems in S on sentences in Fm, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, and every function T from Fm to Fm: if (1) for every sentence φ, 𝓢 proves the implication φ 🡒 T(φ); if also (2) for every sentence φ, 𝓢 proves the implication T(φ) 🡒 φ; and if also (3) there exists a sentence lam such that 𝓢 proves the biconditional lam 🡘 T(lam), then 𝓢 proves ⊥. The biconditional in (3) relates lam to T(lam), not to its negation. Neither lam nor T(lam) is required to be provable on its own, and consistency of 𝓢 is not assumed.\"}",
+  "translation": "Target is defined to be the following proposition: for every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and of a provability relation for systems in S on sentences in Fm, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, and every function T from Fm to Fm: if (1) for every sentence φ, 𝓢 proves the implication φ 🡒 T(φ); if also (2) for every sentence φ, 𝓢 proves the implication T(φ) 🡒 φ; and if also (3) there exists a sentence lam such that 𝓢 proves the biconditional lam 🡘 T(lam), then 𝓢 proves ⊥. The biconditional in (3) relates lam to T(lam), not to its negation. Neither lam nor T(lam) is required to be provable on its own, and consistency of 𝓢 is not assumed.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The liar hypothesis needs `𝓢 ⊢ lam 🡘 ∼(T lam)`, but the target uses `𝓢 ⊢ lam 🡘 T lam`. This positive biconditional already follows for every sentence from T-In and T-Out. For example, taking `T` to be the identity in consistent classical propositional logic satisfies all three hypotheses without making `⊥` provable.\"\n    }\n  ],\n  \"summary\": \"The source states inconsistency after adding both T-In and K-Intro. The intended argument that T-In suffices in DTK uses T-Out and a liar without invoking K-Intro, but the missing negation makes the formal statement false.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The liar hypothesis needs `𝓢 ⊢ lam 🡘 ∼(T lam)`, but the target uses `𝓢 ⊢ lam 🡘 T lam`. This positive biconditional already follows for every sentence from T-In and T-Out. For example, taking `T` to be the identity in consistent classical propositional logic satisfies all three hypotheses without making `⊥` provable."
+      }
+    ],
+    "summary": "The source states inconsistency after adding both T-In and K-Intro. The intended argument that T-In suffices in DTK uses T-Out and a liar without invoking K-Intro, but the missing negation makes the formal statement false."
+  }
+}

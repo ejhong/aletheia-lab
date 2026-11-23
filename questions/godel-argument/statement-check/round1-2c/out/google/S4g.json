@@ -1,0 +1,26 @@
+{
+  "id": "S4g",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T06:23:44Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K D : Fm → Fm) (σ S₀ S' G P Q : Fm),\n    Def6 𝓢 D T → Def5 𝓢 D K →\n    𝓢 ⊢ D σ → 𝓢 ⊢ D (σ 🡒 G) →\n    𝓢 ⊢ σ 🡒 S₀ →\n    𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →\n    𝓢 ⊢ S' 🡒 G →\n    𝓢 ⊢ S' 🡒 ∼P →\n    𝓢 ⊢ Q 🡒 P →\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼Q)\n",
+  "usage": [
+    [
+      1804,
+      2362
+    ],
+    [
+      3127,
+      15031
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition asserting that for every type Fm of sentences equipped with propositional connectives (🡒, ⋏, ⋎, ∼, ⊤, ⊥, with 🡘 abbreviating mutual implication), every type S of proof systems with a provability relation ⊢ on Fm, every proof system 𝓢 in S that is classically complete for propositional tautologies and closed under modus ponens (with no further assumptions such as consistency), every choice of three arbitrary functions T, K, D : Fm → Fm, and every choice of six arbitrary sentences σ, S₀, S', G, P, Q in Fm, if all of the following nine hypotheses hold:\\n1. (Def6 𝓢 D T) for every sentence φ in Fm, 𝓢 proves D φ 🡒 (T φ 🡘 φ) (that is, D φ 🡒 ((T φ 🡒 φ) ⋏ (φ 🡒 T φ)));\\n2. (Def5 𝓢 D K) as a meta-level rule, for every sentence φ in Fm, if 𝓢 proves φ and 𝓢 proves D φ, then 𝓢 proves K φ;\\n3. 𝓢 proves D σ;\\n4. 𝓢 proves D (σ 🡒 G);\\n5. 𝓢 proves σ 🡒 S₀;\\n6. 𝓢 proves S₀ 🡒 (T σ 🡒 S');\\n7. 𝓢 proves S' 🡒 G;\\n8. 𝓢 proves S' 🡒 ∼P;\\n9. 𝓢 proves Q 🡒 P;\\nthen 𝓢 proves the object-level conjunction (K (σ 🡒 G)) ⋏ (σ 🡒 ∼Q). No other properties of 𝓢, T, K, or D (such as consistency, Def1–Def4, Def7, Def8, or any arithmetic/provability-predicate structure) are assumed.\"}\n```",
+  "translation": "Target is the proposition asserting that for every type Fm of sentences equipped with propositional connectives (🡒, ⋏, ⋎, ∼, ⊤, ⊥, with 🡘 abbreviating mutual implication), every type S of proof systems with a provability relation ⊢ on Fm, every proof system 𝓢 in S that is classically complete for propositional tautologies and closed under modus ponens (with no further assumptions such as consistency), every choice of three arbitrary functions T, K, D : Fm → Fm, and every choice of six arbitrary sentences σ, S₀, S', G, P, Q in Fm, if all of the following nine hypotheses hold:\n1. (Def6 𝓢 D T) for every sentence φ in Fm, 𝓢 proves D φ 🡒 (T φ 🡘 φ) (that is, D φ 🡒 ((T φ 🡒 φ) ⋏ (φ 🡒 T φ)));\n2. (Def5 𝓢 D K) as a meta-level rule, for every sentence φ in Fm, if 𝓢 proves φ and 𝓢 proves D φ, then 𝓢 proves K φ;\n3. 𝓢 proves D σ;\n4. 𝓢 proves D (σ 🡒 G);\n5. 𝓢 proves σ 🡒 S₀;\n6. 𝓢 proves S₀ 🡒 (T σ 🡒 S');\n7. 𝓢 proves S' 🡒 G;\n8. 𝓢 proves S' 🡒 ∼P;\n9. 𝓢 proves Q 🡒 P;\nthen 𝓢 proves the object-level conjunction (K (σ 🡒 G)) ⋏ (σ 🡒 ∼Q). No other properties of 𝓢, T, K, or D (such as consistency, Def1–Def4, Def7, Def8, or any arithmetic/provability-predicate structure) are assumed.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Within the declared abstract setting, TARGET matches the author's claim exactly: it keeps all hypotheses of the restricted Penrose argument (Def6, Def5, provable determinacy of σ and σ → G, and the five soundness/Gödel-sentence/deduction implications) while dropping the bridging hypothesis, and concludes 𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼Q), which under classical propositional logic is equivalent to 𝓢 proving K(σ → G) and proving σ → ∼Q.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Within the declared abstract setting, TARGET matches the author's claim exactly: it keeps all hypotheses of the restricted Penrose argument (Def6, Def5, provable determinacy of σ and σ → G, and the five soundness/Gödel-sentence/deduction implications) while dropping the bridging hypothesis, and concludes 𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼Q), which under classical propositional logic is equivalent to 𝓢 proving K(σ → G) and proving σ → ∼Q."
+  }
+}
