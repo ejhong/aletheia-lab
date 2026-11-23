@@ -10,3 +10,9 @@
   time made.
 - **Program and tests** written. On made-up data a planted halving is caught where the calibration curve allows,
   and where a flat stretch of the curve hides it the program reports low power and "cannot tell".
+- **Review, two rounds, two vendors** (`review/README.md`). The made-up reference records were rebuilt to match
+  the real record's make-up; the reference became a parabola; "no drop" became "a halving is excluded" with a
+  stricter test; an aquatic screen was added.
+- **False-alarm check** of the whole procedure on 100 made-up histories with no crash, using North America's real
+  bins and errors: see `explore/calibration.json`.
+- Dates admitted: North America 1,803 (212 screened out as aquatic), Europe 3,527, Asia 1,447.

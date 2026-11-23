@@ -8,3 +8,10 @@ Downloaded on 2026-11-23 (UTC) into the git-ignored `data/` folder.
 | IntCal20 Northern Hemisphere calibration curve (`intcal20.14c`) | <https://intcal.org/curves/intcal20.14c> | 2026-11-23 | Published for use with citation: Reimer et al. 2020, *Radiocarbon* 62, doi:10.1017/RDC.2020.41 | `974a66649f2ac8a53e6c99e256b019ac6982f999b12dcf7193162d4c1c09168e` | 9,501 points, 0–55,000 cal BP |
 
 Tools: Python 3.12 and numpy 2.3.5, in the virtual environment shared with question #31.
+
+## Files as locked
+
+| File | SHA-256 |
+|---|---|
+| `analysis/crash.py` | `476aa184f857911376353760a1fd2b32e3507bced714700469203249df9f522e` |
+| `analysis/test_crash.py` | `9012630cf682152a221fe07805a294bafc928c2622017fdb97c3184f78e29a15` |

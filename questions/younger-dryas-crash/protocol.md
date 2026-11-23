@@ -9,16 +9,16 @@ and beyond, and that human populations fell sharply at that moment. Archaeologis
 dates from human sites through time as a rough head count: more people leave more dated hearths, bones and
 shelters.
 
-**In the largest public database of archaeological radiocarbon dates, does the record of human activity drop at
+**In a large public database of archaeological radiocarbon dates, does the record of human activity drop at
 the Younger Dryas onset, in North America and in Europe and Asia, by more than the dating method and chance
 produce?**
 
 ## Scope
 
 The issue names three lines of evidence. This plan tests one: radiocarbon dates as a head count. The other two,
-population histories read from the DNA of large animals and of people, are not attempted. Such histories blur
-any change over thousands of years and cannot say whether a decline took one century or thirty. They are left
-for a question of their own.
+population histories read from the DNA of large animals and of people, are not attempted. They need other data
+and methods, and most such histories are too smooth to place a change within a few centuries. They are left for
+a question of their own.
 
 ## Why it matters
 
@@ -26,13 +26,13 @@ A sudden, continent-wide loss of people is one of the hypothesis's sharpest pred
 that people adjusted to the cold with little loss, or that declines were local and gradual.
 
 Two earlier tests on North American dates are known to us from memory, neither re-read for this plan, both
-`unverified`: Buchanan, Collard and Edinborough (2008, *PNAS*) reported no decline at the onset; Anderson and
-colleagues (2011, *Quaternary International*) reported one. They used a few hundred to about 1,500 dates. The
-database used here holds several times more.
+`unverified`: Buchanan, Collard and Edinborough (2008, *PNAS*) reported no evidence of the proposed bottleneck;
+Anderson and colleagues (2011, *Quaternary International*) reported signs of a possible decline or
+reorganisation early in the Younger Dryas. There is later work we have not surveyed.
 
 The difficulty all such tests share is the calibration curve. Radiocarbon ages are converted to calendar ages
 by a curve that has flat stretches and steep ones. A flat stretch spreads dates out and a steep one bunches
-them, which draws false dips and peaks in any curve of dates through time. There is such structure near the
+them, which can draw false dips and peaks in a curve of dates through time. There is such structure near the
 Younger Dryas. The test below builds that effect into its yardstick.
 
 ## Data and sources
@@ -42,21 +42,29 @@ Younger Dryas. The test below builds that effect into its yardstick.
 | p3k14c | 173,946 archaeological radiocarbon dates worldwide, with site and continent | <https://github.com/people3k/p3k14c>, release 2025.07, `inst/p3k14c_scrubbed_fuzzed.csv`; data CC-BY-4.0. Bird et al. 2022, *Scientific Data* 9:27 (not read) |
 | IntCal20 | The Northern Hemisphere calibration curve | <https://intcal.org/curves/intcal20.14c>; Reimer et al. 2020, *Radiocarbon* 62 |
 
-Columns used from p3k14c: `Age` (radiocarbon years BP), `Error`, `SiteID`, `SiteName`, `Continent`. In IntCal20,
+Columns used from p3k14c: `Age` (radiocarbon years BP), `Error`, `Material`, `Taxa`, `SiteID`, `SiteName`, `Continent`. In IntCal20,
 the first three fields of each data line: calendar age (cal BP), radiocarbon age, and its error.
 
 **What has been seen** (`explore/structure.py`): the columns, and the number of dates and sites per continent
-with radiocarbon ages from 8,500 to 14,000 (Europe 4,334 dates, North America 2,562, Asia 1,975). No date has
-been calibrated and no curve of dates through time has been made.
+with radiocarbon ages from 8,500 to 14,000 (Europe 4,334 dates, North America 2,562, Asia 1,975). For the
+false-alarm check below, North America's bins and errors were used to shape made-up records. No real date has
+been calibrated and no real curve of dates through time has been made.
 
 ## Method
 
 ### Dates and regions
 
-Three regions, by the `Continent` field: **North America** (the main test), **Europe** and **Asia**. Southern
-continents need a different calibration curve and are left out.
+Three regions, by the `Continent` field: **North America** (the one pre-set test of the hypothesis), **Europe**
+and **Asia** (for the claim that the loss was widespread). The other continents lie largely in the Southern
+Hemisphere, where a different calibration curve applies, and are left out; no date is checked for its
+hemisphere.
 
-A date is used if its `Age` is from 9,000 to 13,800 radiocarbon years inclusive and its `Error` is above zero.
+A date is used if its `Age` is from 9,000 to 13,800 radiocarbon years inclusive, its `Error` is above zero, and
+it passes a screen for aquatic materials. The screen: join `Material`, a space and `Taxa`; remove every match of
+`nut` or `egg` followed by optional spaces and `shell`; the date fails if what is left contains `shell`,
+`marine`, `fish` not followed by `er`, `mollus`, `whale`, `seal`, `otolith` or `coral` (all in any letter case).
+Aquatic materials take up old carbon from water and need corrections the database does not give. The screen
+works on words, so the count it removes is a count of matches, not of confirmed aquatic samples.
 
 ### Calibration
 
@@ -70,8 +78,8 @@ A date with age `A` and error `E` has weight at grid point `t` proportional to
 
 Sites with many dates would otherwise dominate. Dates from one site whose ages fall in the same 200-year span
 (`floor(Age/200)`) form a *bin*, and the bin's curve is the average of its dates' curves. The site is `SiteID`
-if present, otherwise `SiteName` in lower case with surrounding spaces removed; a date with neither is a bin by
-itself. Sites are told apart within a continent only.
+if that field is not blank, otherwise `SiteName` in lower case with surrounding spaces removed (the two kinds
+never match each other); a date with neither is a bin by itself. Sites are told apart within a continent only.
 
 The **summed curve** `S(t)` of a region is the sum of its bins' curves.
 
@@ -81,36 +89,52 @@ For a time `T`, the *step* is
 
 `D(T) = ln( mean of S over [T − 300, T) / mean of S over [T, T + 300) )`,
 
-the 300 years after `T` against the 300 years before it (ages run backwards, so "after" is the smaller numbers).
-A negative step is a drop. The target is `T* = 12,850` cal BP. The Younger Dryas begins at 12,846 cal BP in the
-Greenland ice (12,896 years before 2000; Rasmussen et al. 2014, read for #43).
+the 300 years after `T` against the 300 years before it (ages run backwards, so "after" is the smaller numbers;
+each interval takes the grid points from its lower bound up to but not including its upper). A negative step is
+a drop; `exp(D)` is the ratio of after to before. The target is `T* = 12,850` cal BP. The Younger Dryas begins
+at 12,846 cal BP in the Greenland ice (12,896 years before 2000; Rasmussen et al. 2014, read for #43). That is
+an ice-core date; supporters place the impact layer in sediments within about a century of it. The 300-year
+windows are meant to cover that slack, and targets of 12,750 and 12,950 are reported.
 
 ### What chance and the calibration curve produce
 
-A reference world with no sudden change, run through the same dating process:
+A reference world with no sudden change, run through the same dating process and given the same make-up as the
+real record:
 
-1. **The smooth trend.** A straight line fitted by least squares to `ln S(t)` against `t` over 10,500 to 15,500
-   cal BP gives an exponential trend. Its density over the grid points from 9,500 to 16,500 is the reference.
-2. **One made-up record:** as many calendar ages as the region has bins, drawn from the reference density (grid
-   points, with replacement). Each gets a radiocarbon age: `μ(t)` plus a normal error of standard deviation
-   `σ(t)`, plus a normal laboratory error of standard deviation `E`, where `E` is drawn with replacement from
-   the region's real errors. Each is rounded to the nearest year, calibrated as above (no binning; each is its
-   own bin) and summed.
-3. **1,000 made-up records** per region (`numpy.random.default_rng(40)`, used for the regions in the order
+1. **The smooth trend.** A parabola fitted by least squares to `ln S(t)` against `t` over the grid points from
+   10,500 to 15,500 inclusive. Its exponential, over the grid points from 9,500 to 16,500 inclusive and scaled
+   to sum to 1, is the reference density. A parabola can follow a slow bend over thousands of years; it cannot
+   follow a gradual change confined to a few centuries, which would still register as a step.
+2. **One made-up record.** It starts from the real record's bins, each with as many dates as the real bin and
+   those dates' real errors. Each bin gets one calendar age drawn from the reference density, and one curve
+   error: normal with standard deviation `σ(t)`. Each of its dates gets radiocarbon age `μ(t)` plus the bin's
+   curve error plus a normal laboratory error of that date's own `E`, rounded to the nearest year. A date whose
+   radiocarbon age falls outside 9,000 to 13,800 is dropped, as a real one would be. A bin left with no date is
+   drawn again, calendar age and all, until at least one of its dates survives (up to 50 tries), so that a
+   made-up record has as many bins as the real one. The surviving dates are calibrated, averaged within their
+   bins (the bins are kept as given; they are not re-formed from the made-up ages) and summed.
+3. **2,000 made-up records** per region (`numpy.random.default_rng(40)`, used for the regions in the order
    North America, Europe, Asia). Anything that rests on random draws is compared between programs only loosely.
 
-From these, for every `T` from 10,800 to 15,200 in steps of 50: the mean and standard deviation of the made-up
-steps, and the **z-score** of the real step, `z(T) = (D(T) − mean)/sd`.
+From these, for every `T` from 10,800 to 15,200 in steps of 50: the mean and standard deviation (with `n − 1`)
+of the made-up steps, and the **z-score** of the real step, `z(T) = (D(T) − mean)/sd`.
 
-The **p-value at the target** is the share of made-up records whose step at `T*` is at or below the real one,
-counted as `(number + 1)/(1,001)`.
+The **p-value at the target** is `(k + 1)/(B + 1)`, where `B` is the number of made-up records (2,000 here) and
+`k` the number of them whose step at `T*` is at or below the real one.
 
-### Could a crash have been seen?
+A step counts as a **detected drop** if it is negative and its p-value is 0.01 or less.
+
+### What a crash would look like
 
 The same made-up process with a crash put in: the reference density multiplied by 0.5 over the 300 years after
-`T*` (grid points from 12,550 up to but not including 12,850), then rescaled to sum to 1. 300 such records per
-region. **Power** is the share of them whose step at `T*` is at or below the 1st percentile of the 1,000
-crash-free steps.
+`T*` (grid points from 12,550 up to but not including 12,850) and rescaled to sum to 1. 500 such records per
+region.
+
+- **Power** is the share of them that would count as a detected drop, by the same rule and the same 2,000
+  crash-free records. It is power against this fitted reference, not the power of the whole procedure over
+  repeated histories.
+- **Is a halving ruled out?** The share of the 500 whose step at `T*` is at or above the real step. If it is
+  0.01 or less, the real ratio of after to before is higher than a halving would leave it.
 
 ### Decision rules
 
@@ -118,65 +142,87 @@ For each region:
 
 | Verdict | Condition |
 |---|---|
-| **Drop detected** | The step at `T*` is negative and its p-value is 0.01 or less. |
-| **No drop, and a halving would have shown** | Not detected, and power is 0.8 or more. |
-| **Cannot tell** | Not detected, and power is under 0.8. |
+| **Drop detected** | The real step at `T*` is a detected drop. |
+| **A halving is excluded** | Not that, and at most 1% of halving records have a step at or above the real one. |
+| **Cannot tell** | Anything else. |
 
-Overall, for the hypothesis's prediction:
+Overall, for the hypothesis's prediction of a sharp loss of people in North America:
 
-- **Supported** if a drop is detected in North America.
-- **Supported as widespread** if detected in North America and in at least one of Europe and Asia.
-- **Not supported** if North America is "no drop, and a halving would have shown".
+- **Supported as widespread** if a drop is detected in North America and in at least one of Europe and Asia.
+- **Supported** if a drop is detected in North America and in neither of the others.
+- **Not supported** if a halving is excluded in North America.
 - **Undetermined** if North America is "cannot tell".
+
+"Drop detected" means the dated record is unusually low just after the onset against a smooth trend. It does
+not show that the fall was abrupt, how large the loss of people was, or its cause. The halving for three
+centuries is a yardstick we chose, not a figure taken from the impact literature.
 
 ### Reported alongside, not part of the rules
 
-1. For each region: the summed curve, the reference trend, the real step and z-score at every `T`, and where the
-   target ranks among the 89 times by z-score (1 = the most negative).
-2. The five most negative and five most positive z-scores and their times, per region.
-3. The same with dates of `Error` above 200 left out.
-4. The same with 200-year windows and with 500-year windows in the step.
-5. The same with the target moved to 12,750 and to 12,950.
-6. Power for a crash of 30% (density multiplied by 0.7).
-7. The numbers of dates, bins and sites per region.
+1. For each region: the ratio of after to before, the ratio the reference expects and its 95% range; the
+   z-score at every `T`; where the target ranks among the 89 times (1 = most negative); the five most negative
+   and most positive.
+2. **Other crashes, same detector:** power for a drop of 30%; for a halving that starts 100 years later
+   (12,450–12,750) and 100 years earlier (12,650–12,950).
+3. **Who contributes.** For the 300 years on each side of the target: the summed weight, the number of sites
+   with weight above 0.05, and the share of the weight from the largest site and the largest five.
+4. **Variants**, each rerun in full with 1,000 crash-free and 300 halving records: a straight-line trend in
+   place of the parabola; aquatic materials kept; dates with `Error` above 200 left out; the site with the most
+   dates left out; windows of 200 and of 500 years in the step (the planted halving stays 300 years); the target
+   at 12,750 and at 12,950 (the planted halving moves with it).
+5. The numbers of dates, bins and sites per region, and of aquatic dates left out.
 
 ### Checks on the program, before the lock
 
-Unit tests on made-up data: a single date calibrates to the right calendar age; binning by site; a made-up
-record drawn from a smooth trend gives a step whose p-value is unremarkable, repeated many times; the same with
-a halving planted is detected most of the time; the step has the right sign. No real date is calibrated before
-the lock.
+- **Unit tests on made-up data:** a single date calibrates to the right calendar age; binning by site; the step
+  has the right sign; the trend recovers a known curve; a planted halving is detected about as often as the
+  program's own power figure says; with a flat stretch of the calibration curve laid over the crash, the
+  program reports low power.
+- **False alarms of the whole procedure** (`crash.py --calibrate`): 100 made-up records drawn from a known
+  smooth trend with no crash, given North America's real bins and errors (and nothing else of the real data),
+  each put through the whole procedure with 200 crash-free reference records. Result with the final program (`explore/calibration.json`):
+  5 of the 100 had a p-value at or below 0.05 and 2 at or below 0.01, where 5 and 1 are expected; 2 were flagged
+  as a detected drop; 1 had a p-value at or above 0.95; the median was 0.49. As far as 100 records can show, the
+  procedure raises false alarms at about its nominal rate.
+
+No real date is calibrated and no real curve through time is made before the lock.
 
 ### Replication
 
 A model from another vendor writes its own program from this protocol and the format notes. The real summed
-curves and steps must agree closely (they involve no random draws). Its z-scores, p-values and power will
-differ by random variation and are compared loosely.
+curves and steps involve no random draws and must agree to within 0.001 in the step. Its z-scores, p-values and
+power rest on its own random draws and are compared loosely; the verdicts are compared.
 
 ## What would count
 
 - **For the hypothesis:** "supported", and more so "supported as widespread".
-- **Against, within limits:** "not supported": North America's record shows no drop where a halving lasting
-  three centuries would have been seen.
+- **Against, within limits:** "not supported": North America's dated record is higher just after the onset than
+  a halving lasting three centuries would leave it.
 - **Neither:** "undetermined".
 
-A drop would not show what caused it: sudden cold alone could reduce or move people. No drop would not show
-that nothing happened to people, only that their dated traces did not thin by the amount tested.
+A drop would not show what caused it: sudden cold alone could reduce or move people. "Cannot tell" says nothing
+either way. Only "a halving is excluded" is evidence against a loss of the size tested, and it would not show
+that nothing happened to people.
 
 ## Known weaknesses
 
 - **Dates are not people.** They follow archaeologists' interests and funding as well as past populations. The
   Younger Dryas boundary has been dated intensively because of this very debate, which could raise or lower the
-  count on either side of it.
-- **A crash shorter or smaller than the one tested** could go unseen. The power figures say how much.
-- **The reference is a smooth exponential.** Real populations were not. The step compares neighbouring
-  centuries, which makes it insensitive to the long trend, but a real gradual change in those centuries would
-  count as a step.
-- **Site binning is crude.** Sites with several names, or several sites sharing a name within a continent, are
-  mis-grouped. Coordinates are fuzzed in this release and are not used.
-- **Lab errors are taken as reported**, and old dates with large errors smear across the onset.
-- **Marine and freshwater offsets are ignored;** every date is calibrated as atmospheric.
+  count on either side of it. Nothing in these files can separate that from a change in population.
+- **The reference is fitted to the record it judges.** The trend and the make-up of the made-up records come
+  from the real record. The false-alarm check above shows the whole procedure's rate of false alarms under one
+  made-up history; it is not a proof for every history.
+- **A crash smaller or displaced from the one tested** could go unseen; the power figures say how much. A crash
+  shorter than three centuries is not tested at all.
+- **A smooth parabola is not history.** A real gradual change inside those six centuries would count as a step.
+- **Site binning is crude.** Where a site has no `SiteID`, several names for one site, or one name for several
+  sites within a continent, mis-group dates; fixed 200-year spans split close dates that fall either side of a boundary. A site with many
+  bins is treated as so many independent moments.
+- **Old-carbon and context problems remain.** Aquatic materials are screened by name only; dates on old wood,
+  or on bone of animals unconnected with people, are taken as they come.
+- **One curve error per bin** is a simplification of how the calibration curve's uncertainty is shared.
 - **Movement is not death.** Fewer dates in one region can mean people went elsewhere.
+- **Europe and Asia give two chances** at "widespread".
 - **One session** proposed, designed, runs and writes up the question, knowing the results of #43 and #60.
 
 ## Budget
