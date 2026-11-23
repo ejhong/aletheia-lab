@@ -1,0 +1,35 @@
+{
+  "id": "S2d",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:23:05Z",
+  "target": "def Target : Prop :=\n  ∀ (D Ic Rc E : Type) (u1 : D → Ic) (u2 : D → Rc) (c2 : Ic → Set E) (c4 : Rc → E)\n    (Y V2 : Set D),\n    Y ⊆ V2 → (∀ o ∈ V2, ∃ o' ∈ Y, u2 o' = u2 o) → (∃ f : Rc → Ic, ∀ o ∈ V2, u1 o = f (u2 o)) →\n    ((∃ o ∈ V2, c4 (u2 o) ∉ c2 (u1 o)) ↔ (∃ o ∈ Y, c4 (u2 o) ∉ c2 (u1 o)))\n",
+  "usage": [
+    [
+      2736,
+      247
+    ],
+    [
+      3674,
+      1328
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every choice of types D, Ic, Rc, E, then of functions u1 : D → Ic, u2 : D → Rc, c2 assigning a set of elements of E to each element of Ic, and c4 : Rc → E, and then of sets Y and V2 of elements of D, suppose that (1) Y is a subset of V2; (2) for every o in V2 there exists an o′ in Y with u2(o′) = u2(o); and (3) there exists a single function f : Rc → Ic such that for every o in V2, u1(o) = f(u2(o)). The function f must be defined on all of Rc, but the equation is required only on V2. Under these hypotheses, there exists an o in V2 for which c4(u2(o)) does not belong to c2(u1(o)) if and only if there exists an o in Y for which c4(u2(o)) does not belong to c2(u1(o)). The two existential witnesses need not be the same element.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every choice of types D, Ic, Rc, E, then of functions u1 : D → Ic, u2 : D → Rc, c2 assigning a set of elements of E to each element of Ic, and c4 : Rc → E, and then of sets Y and V2 of elements of D, suppose that (1) Y is a subset of V2; (2) for every o in V2 there exists an o′ in Y with u2(o′) = u2(o); and (3) there exists a single function f : Rc → Ic such that for every o in V2, u1(o) = f(u2(o)). The function f must be defined on all of Rc, but the equation is required only on V2. Under these hypotheses, there exists an o in V2 for which c4(u2(o)) does not belong to c2(u1(o)) if and only if there exists an o in Y for which c4(u2(o)) does not belong to c2(u1(o)). The two existential witnesses need not be the same element.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean makes both O ⊆ O̅ and coverage of the inference contents in O̅ by those in O explicit premises. Coverage does not follow from strict dependence alone; it is the declared reading of the proof’s restriction on possible pairings, not a separate hypothesis in the printed theorem.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean uses total functions on ambient content types: prediction and inference factor through their respective contents, and the dependence function f must be defined even on inference contents not represented in O̅. Definition 4.2 specifies f’s behavior only on represented contents.\"\n    }\n  ],\n  \"summary\": \"The target faithfully states the proof-based equivalence. Coverage supplies a dataset in O with the same inference content as a falsifying dataset in O̅; strict dependence gives it the same prediction content, so it too is a falsification. The reverse direction follows from inclusion.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Lean makes both O ⊆ O̅ and coverage of the inference contents in O̅ by those in O explicit premises. Coverage does not follow from strict dependence alone; it is the declared reading of the proof’s restriction on possible pairings, not a separate hypothesis in the printed theorem."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean uses total functions on ambient content types: prediction and inference factor through their respective contents, and the dependence function f must be defined even on inference contents not represented in O̅. Definition 4.2 specifies f’s behavior only on represented contents."
+      }
+    ],
+    "summary": "The target faithfully states the proof-based equivalence. Coverage supplies a dataset in O with the same inference content as a falsifying dataset in O̅; strict dependence gives it the same prediction content, so it too is a falsification. The reverse direction follows from inclusion."
+  }
+}

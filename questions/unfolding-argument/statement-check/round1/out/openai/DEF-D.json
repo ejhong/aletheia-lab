@@ -1,0 +1,43 @@
+{
+  "id": "DEF-D",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:20:03Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: d14\ndef d14 (N : S1 X Y) (T : ℕ) : S1 X Y where\n  A1 := Fin T × N.A1\n  a2 := inferInstance\n  A3 := fun a => N.A3 a.2\n  a4 := fun a => N.a4 a.2\n  a5 := fun a σ x =>\n    N.a5 a.2 (fun m => if h : a.1.val = 0 then N.a4 m else σ (⟨a.1.val - 1, by omega⟩, m)) x\n  a6 := fun σ =>\n    if h : T = 0 then N.a6 N.a4 else N.a6 (fun m => σ (⟨T - 1, by omega⟩, m))\n",
+  "usage": [
+    [
+      2758,
+      309
+    ],
+    [
+      3595,
+      2559
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For any types X and Y, d14 takes first a record N of type S1 X Y and then a natural number T, which may be zero. It defines a new record of type S1 X Y. Its indices are all pairs (i, n) with 0 ≤ i < T and n an index of N; finiteness of this product is supplied automatically. At every (i, n), the state type is N.A3 n and the initial value is N.a4 n. For each (i, n), each whole state assignment σ of the new record, and each input x in X, the updated value at (i, n) is N.a5 n τ x. Here τ is an assignment on the indices of N: if i = 0, then τ(m) = N.a4 m for every m, independently of σ; if i > 0, then τ(m) = σ(i − 1, m) for every m, using the supplied state rather than any newly updated values. The output for any state assignment σ is N.a6 applied to N.a4 if T = 0 (in which case the new index type is empty), and otherwise is N.a6 applied to the assignment m ↦ σ(T − 1, m). This is a construction for every such N and T, with no additional hypotheses; it does not assert any comparison between the outputs of the new record and those of N on input lists.\"}",
+  "translation": "For any types X and Y, d14 takes first a record N of type S1 X Y and then a natural number T, which may be zero. It defines a new record of type S1 X Y. Its indices are all pairs (i, n) with 0 ≤ i < T and n an index of N; finiteness of this product is supplied automatically. At every (i, n), the state type is N.A3 n and the initial value is N.a4 n. For each (i, n), each whole state assignment σ of the new record, and each input x in X, the updated value at (i, n) is N.a5 n τ x. Here τ is an assignment on the indices of N: if i = 0, then τ(m) = N.a4 m for every m, independently of σ; if i > 0, then τ(m) = σ(i − 1, m) for every m, using the supplied state rather than any newly updated values. The output for any state assignment σ is N.a6 applied to N.a4 if T = 0 (in which case the new index type is empty), and otherwise is N.a6 applied to the assignment m ↦ σ(T − 1, m). This is a construction for every such N and T, with no additional hypotheses; it does not assert any comparison between the outputs of the new record and those of N on input lists.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The passage assigns each copy to a particular simulated timestep: copy 1 computes step 1, then copy 2 uses that result for step 2, and so on. In `d14`, copies represent depths in a running pipeline. At every tick all copies receive the current input; the first starts again from `N.a4`, and each later copy reads its predecessor's state from the previous tick. Copy k at tick k (numbering from 1) does compute the intended step k, but it also runs at other ticks on other inputs. If run past T ticks, the last copy computes from the most recent T inputs starting from `N.a4`, not from the full history.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean initializes every copy to the original starting state and applies the original readout only to the last copy. These are additional conventions: the passage does not specify initial values for copies awaiting their turn or a readout policy.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean covers T = 0, returning the original starting-state readout when there is no last copy. The passage gives no zero-step convention.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Within the `S1` model the construction applies to every network, including already feedforward ones; the passage describes unrolling a recurrent network.\"\n    }\n  ],\n  \"summary\": \"The node copies and predecessor dependencies match the passage, and the intended T-step computation can be followed from copy 1 at tick 1 to copy T at tick T. The declared parallel-update choice nevertheless makes this a repeatedly updated pipeline rather than the passage's sequential evaluation of timestep-specific copies.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The passage assigns each copy to a particular simulated timestep: copy 1 computes step 1, then copy 2 uses that result for step 2, and so on. In `d14`, copies represent depths in a running pipeline. At every tick all copies receive the current input; the first starts again from `N.a4`, and each later copy reads its predecessor's state from the previous tick. Copy k at tick k (numbering from 1) does compute the intended step k, but it also runs at other ticks on other inputs. If run past T ticks, the last copy computes from the most recent T inputs starting from `N.a4`, not from the full history."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean initializes every copy to the original starting state and applies the original readout only to the last copy. These are additional conventions: the passage does not specify initial values for copies awaiting their turn or a readout policy."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean covers T = 0, returning the original starting-state readout when there is no last copy. The passage gives no zero-step convention."
+      },
+      {
+        "severity": "minor",
+        "description": "Within the `S1` model the construction applies to every network, including already feedforward ones; the passage describes unrolling a recurrent network."
+      }
+    ],
+    "summary": "The node copies and predecessor dependencies match the passage, and the intended T-step computation can be followed from copy 1 at tick 1 to copy T at tick T. The declared parallel-update choice nevertheless makes this a repeatedly updated pipeline rather than the passage's sequential evaluation of timestep-specific copies."
+  }
+}

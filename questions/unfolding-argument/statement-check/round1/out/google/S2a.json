@@ -1,0 +1,39 @@
+{
+  "id": "S2a",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:30:26Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R) (r : R),\n    t.D21 r → ∃ o ∈ t.D17, t.c3 o = r ∧ t.D18 o\n",
+  "usage": [
+    [
+      2769,
+      4634
+    ],
+    [
+      3791,
+      20561
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target defines (names, without asserting or proving) the following proposition: For all types P, D, E, and R, for every structure t consisting of four functions c1 : P -> Set D (assigning a subset of D to each element of P), c2 : D -> Set E (assigning a subset of E to each element of D), c3 : D -> R, and c4 : R -> E, and for every element r of R: let A (t.D19 r) be the set of all q in P for which there exists an element o in c1 q with c3 o = r, and for each q in P let U(q) (t.D20 q) be the set of all e in E for which there exists an element o in c1 q with e in c2 o (the union of c2 o over all o in c1 q). If there exist a function S from A to A and an element p in A such that U(p) and U(S p) have empty intersection, then there exists an element o in D such that (1) o belongs to c1 q for at least one q in P, (2) c3 o = r, and (3) c4 (c3 o) is not in c2 o. Note what is and is not required: no finiteness, nonemptiness, or compatibility assumptions are placed on P, D, E, R, or c1, c2, c3, c4; in the hypothesis (t.D21 r), no properties are required of S beyond being a function from A to A, disjointness of U(p) and U(S p) is required only for the single chosen element p (not for all elements of A), and S p is not required to differ from p (so the hypothesis is logically equivalent to the existence of elements p, p' in A, not necessarily distinct, with U(p) disjoint from U(p')); and in the conclusion, the witness q in P showing o in c1 q is not required to be p or S p.\"}",
+  "translation": "Target defines (names, without asserting or proving) the following proposition: For all types P, D, E, and R, for every structure t consisting of four functions c1 : P -> Set D (assigning a subset of D to each element of P), c2 : D -> Set E (assigning a subset of E to each element of D), c3 : D -> R, and c4 : R -> E, and for every element r of R: let A (t.D19 r) be the set of all q in P for which there exists an element o in c1 q with c3 o = r, and for each q in P let U(q) (t.D20 q) be the set of all e in E for which there exists an element o in c1 q with e in c2 o (the union of c2 o over all o in c1 q). If there exist a function S from A to A and an element p in A such that U(p) and U(S p) have empty intersection, then there exists an element o in D such that (1) o belongs to c1 q for at least one q in P, (2) c3 o = r, and (3) c4 (c3 o) is not in c2 o. Note what is and is not required: no finiteness, nonemptiness, or compatibility assumptions are placed on P, D, E, R, or c1, c2, c3, c4; in the hypothesis (t.D21 r), no properties are required of S beyond being a function from A to A, disjointness of U(p) and U(S p) is required only for the single chosen element p (not for all elements of A), and S p is not required to differ from p (so the hypothesis is logically equivalent to the existence of elements p, p' in A, not necessarily distinct, with U(p) disjoint from U(p')); and in the conclusion, the witness q in P showing o in c1 q is not required to be p or S p.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the conclusion, Target requires o ∈ t.D17 (there exists some physical configuration p with o ∈ obs(p)), whereas Lemma 3.3 and Definition 3.4 in the source passage only ask for o ∈ O (the ambient class of datasets). This is a harmless strengthening that is already guaranteed by the proof and matches the author's claim.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Through the ambient structure S3 and the falsification predicate D18, Target idealizes inference content as a total single-valued map c3 : D → R, inference as a total single-valued function c4 : R → E depending solely on inference content, and falsification specifically as c4 (c3 o) ∉ c2 o. The quoted passages do not commit to single-valued (rather than set-valued or partial) inference.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lemma 3.3 and Lemma 3.5 are merged into a single statement corresponding directly to Lemma 3.5, with Lemma 3.3 recoverable as an immediate weakening by dropping the conjunct t.c3 o = r.\"\n    }\n  ],\n  \"summary\": \"Target faithfully formalizes the combined content of Lemma 3.3 and Lemma 3.5—that an o_r-substitution yields a falsification at a dataset with inference content o_r—with only minor modeling idealizations in S3/D18 and a harmless strengthening to realizable datasets.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "In the conclusion, Target requires o ∈ t.D17 (there exists some physical configuration p with o ∈ obs(p)), whereas Lemma 3.3 and Definition 3.4 in the source passage only ask for o ∈ O (the ambient class of datasets). This is a harmless strengthening that is already guaranteed by the proof and matches the author's claim."
+      },
+      {
+        "severity": "minor",
+        "description": "Through the ambient structure S3 and the falsification predicate D18, Target idealizes inference content as a total single-valued map c3 : D → R, inference as a total single-valued function c4 : R → E depending solely on inference content, and falsification specifically as c4 (c3 o) ∉ c2 o. The quoted passages do not commit to single-valued (rather than set-valued or partial) inference."
+      },
+      {
+        "severity": "minor",
+        "description": "Lemma 3.3 and Lemma 3.5 are merged into a single statement corresponding directly to Lemma 3.5, with Lemma 3.3 recoverable as an immediate weakening by dropping the conjunct t.c3 o = r."
+      }
+    ],
+    "summary": "Target faithfully formalizes the combined content of Lemma 3.3 and Lemma 3.5—that an o_r-substitution yields a falsification at a dataset with inference content o_r—with only minor modeling idealizations in S3/D18 and a harmless strengthening to realizable datasets."
+  }
+}

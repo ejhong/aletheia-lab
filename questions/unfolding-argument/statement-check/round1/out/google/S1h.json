@@ -1,0 +1,51 @@
+{
+  "id": "S1h",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:28:23Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type), Nonempty X → ∀ (N : S1 X Y),\n    ∃ N' : S1 X Y, N'.D11 ∧ N'.d13 = N.d13 + 1 ∧ S1.D6 N' N\n",
+  "usage": [
+    [
+      2772,
+      5237
+    ],
+    [
+      4260,
+      17246
+    ]
+  ],
+  "a_raw": "{\"translation\": \"`Target` defines the following proposition (it names the statement without asserting or proving it): For all types `X` and `Y`, assuming `X` is nonempty (has at least one element), and for every record `N` of type `S1 X Y` — where a record of type `S1 X Y` consists of a finite index type `A1`, a family of component state types `A3 n` for each `n` in `A1`, an initial global state `a4 : (n : A1) → A3 n`, a per-component update function `a5 : (n : A1) → ((m : A1) → A3 m) → X → A3 n`, and an output function `a6 : ((m : A1) → A3 m) → Y` — there exists a record `N'` of type `S1 X Y` satisfying all three of the following conditions: (1) `N'.A1` is nonempty, and for every `m` and `n` in `N'.A1` (including when `m = n`), there is a chain `m = c_0, c_1, ..., c_k = n` in `N'.A1` of length `k >= 1` such that at each step `i`, there exist two global states `σ, σ' : (r : N'.A1) → N'.A3 r` agreeing on every `r ≠ c_i` and an input `x : X` with `N'.a5 c_{i+1} σ x ≠ N'.a5 c_{i+1} σ' x` (i.e., the directed dependency graph on `N'.A1`, where an edge `u → v` means changing component `u` alone can change component `v`'s next state for some global state and some input, is nonempty and has a nonempty directed path between every ordered pair of vertices, including a cycle from every vertex back to itself); (2) the number of elements of `N'.A1` equals the number of elements of `N.A1` plus 1 (`Fintype.card N'.A1 = Fintype.card N.A1 + 1`); and (3) for every finite list `xs` of elements of `X` (including the empty list), `N'` and `N` produce the same output in `Y`, where the output on `xs` is obtained by starting at the initial global state `a4`, repeatedly updating all components synchronously via `(σ, x) ↦ (fun n => a5 n σ x)` left to right along `xs`, and finally applying `a6`. No other conditions are assumed or required: in particular, neither `Y` nor `N.A1` is assumed to be nonempty, the component state types `N'.A3` are not required to be finite or related to `N.A3`, and `N'` is not required to share any internal structure with `N` beyond the three conditions above.\"}",
+  "translation": "`Target` defines the following proposition (it names the statement without asserting or proving it): For all types `X` and `Y`, assuming `X` is nonempty (has at least one element), and for every record `N` of type `S1 X Y` — where a record of type `S1 X Y` consists of a finite index type `A1`, a family of component state types `A3 n` for each `n` in `A1`, an initial global state `a4 : (n : A1) → A3 n`, a per-component update function `a5 : (n : A1) → ((m : A1) → A3 m) → X → A3 n`, and an output function `a6 : ((m : A1) → A3 m) → Y` — there exists a record `N'` of type `S1 X Y` satisfying all three of the following conditions: (1) `N'.A1` is nonempty, and for every `m` and `n` in `N'.A1` (including when `m = n`), there is a chain `m = c_0, c_1, ..., c_k = n` in `N'.A1` of length `k >= 1` such that at each step `i`, there exist two global states `σ, σ' : (r : N'.A1) → N'.A3 r` agreeing on every `r ≠ c_i` and an input `x : X` with `N'.a5 c_{i+1} σ x ≠ N'.a5 c_{i+1} σ' x` (i.e., the directed dependency graph on `N'.A1`, where an edge `u → v` means changing component `u` alone can change component `v`'s next state for some global state and some input, is nonempty and has a nonempty directed path between every ordered pair of vertices, including a cycle from every vertex back to itself); (2) the number of elements of `N'.A1` equals the number of elements of `N.A1` plus 1 (`Fintype.card N'.A1 = Fintype.card N.A1 + 1`); and (3) for every finite list `xs` of elements of `X` (including the empty list), `N'` and `N` produce the same output in `Y`, where the output on `xs` is obtained by starting at the initial global state `a4`, repeatedly updating all components synchronously via `(σ, x) ↦ (fun n => a5 n σ x)` left to right along `xs`, and finally applying `a6`. No other conditions are assumed or required: in particular, neither `Y` nor `N.A1` is assumed to be nonempty, the component state types `N'.A3` are not required to be finite or related to `N.A3`, and `N'` is not required to share any internal structure with `N` beyond the three conditions above.",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Replaces IIT's integrated information ϕ (ϕ > 0 in P-D52b and Appendix A) with the binary structural predicate D11 (nonempty, strongly connected functional dependency graph with cycles). Although declared by the author as a stand-in, strong connectivity of the dependency graph neither defines nor implies ϕ > 0 in IIT, so Target establishes a materially different property from the source's claims about ϕ.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Completely omits the central quantitative claim of P-D52b and Appendix A (P-D57) that any input-output function can be implemented with arbitrarily high values of ϕ. Because D11 is a binary predicate and Target asserts only a single twin with fixed unit count N.d13 + 1, there is no quantitative measure and no unboundedness claim at all.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Strengthens the statement relative to the vice-versa half of P2 by quantifying over all systems N : S1 X Y rather than only feedforward ones, requiring all-to-all strong connectivity (D11) rather than mere recurrence (D10), and adding the unit-count requirement N'.d13 = N.d13 + 1 not present in the source.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Idealizes the source's informal notion of networks/systems as deterministic, discrete-time, synchronous finite-unit state machines (S1) with a fixed initial state, and adds the technical assumption Nonempty X (at least one possible input).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Places no restriction on the twin's per-unit state types N'.A3 (which need not be finite or related to N.A3) and defines causal edges (D7) by quantifying over all global states, including states unreachable from the initial state a4. Consequently, D11 with N'.d13 = N.d13 + 1 can be satisfied vacuously on unreachable states by expanding each unit's state space with an unused auxiliary bit, without any recurrent interaction ever occurring during execution.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Asserts only the pure existence of an equivalent system N', omitting Appendix A's specific modification of the original network by inserting a ϕ-increasing device and canceling its functional effect (declared by the author).\"\n    }\n  ],\n  \"summary\": \"Target reasonably captures (and strengthens) the 'vice-versa' half of premise P2 within a deterministic discrete-time system model, but it diverges materially from P-D52b and Appendix A by replacing IIT's ϕ with a binary graph-connectivity stand-in (D11) and completely omitting Appendix A's core claim that ϕ can be made arbitrarily high.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Replaces IIT's integrated information ϕ (ϕ > 0 in P-D52b and Appendix A) with the binary structural predicate D11 (nonempty, strongly connected functional dependency graph with cycles). Although declared by the author as a stand-in, strong connectivity of the dependency graph neither defines nor implies ϕ > 0 in IIT, so Target establishes a materially different property from the source's claims about ϕ."
+      },
+      {
+        "severity": "major",
+        "description": "Completely omits the central quantitative claim of P-D52b and Appendix A (P-D57) that any input-output function can be implemented with arbitrarily high values of ϕ. Because D11 is a binary predicate and Target asserts only a single twin with fixed unit count N.d13 + 1, there is no quantitative measure and no unboundedness claim at all."
+      },
+      {
+        "severity": "minor",
+        "description": "Strengthens the statement relative to the vice-versa half of P2 by quantifying over all systems N : S1 X Y rather than only feedforward ones, requiring all-to-all strong connectivity (D11) rather than mere recurrence (D10), and adding the unit-count requirement N'.d13 = N.d13 + 1 not present in the source."
+      },
+      {
+        "severity": "minor",
+        "description": "Idealizes the source's informal notion of networks/systems as deterministic, discrete-time, synchronous finite-unit state machines (S1) with a fixed initial state, and adds the technical assumption Nonempty X (at least one possible input)."
+      },
+      {
+        "severity": "minor",
+        "description": "Places no restriction on the twin's per-unit state types N'.A3 (which need not be finite or related to N.A3) and defines causal edges (D7) by quantifying over all global states, including states unreachable from the initial state a4. Consequently, D11 with N'.d13 = N.d13 + 1 can be satisfied vacuously on unreachable states by expanding each unit's state space with an unused auxiliary bit, without any recurrent interaction ever occurring during execution."
+      },
+      {
+        "severity": "minor",
+        "description": "Asserts only the pure existence of an equivalent system N', omitting Appendix A's specific modification of the original network by inserting a ϕ-increasing device and canceling its functional effect (declared by the author)."
+      }
+    ],
+    "summary": "Target reasonably captures (and strengthens) the 'vice-versa' half of premise P2 within a deterministic discrete-time system model, but it diverges materially from P-D52b and Appendix A by replacing IIT's ϕ with a binary graph-connectivity stand-in (D11) and completely omitting Appendix A's core claim that ϕ can be made arbitrarily high."
+  }
+}

@@ -242,8 +242,10 @@ variable {P D E R : Type}
 /-- The datasets that can arise from some system. -/
 def Datasets (t : Testing P D E R) : Set D := {o | ∃ p, o ∈ t.obs p}
 
-/-- D16. A falsification at a dataset: the inferred experience is not among the predicted ones. -/
-def FalsificationAt (t : Testing P D E R) (o : D) : Prop := t.inf (t.rep o) ∉ t.pred o
+/-- D16. A falsification at a dataset: the dataset can arise, and the inferred experience is not among
+the predicted ones. -/
+def FalsificationAt (t : Testing P D E R) (o : D) : Prop :=
+  o ∈ t.Datasets ∧ t.inf (t.rep o) ∉ t.pred o
 
 /-- The systems that can give a dataset with inference content `r`. -/
 def Produces (t : Testing P D E R) (r : R) : Set P := {p | ∃ o ∈ t.obs p, t.rep o = r}
@@ -269,20 +271,29 @@ end Testing
 /-- S2a. A substitution gives a falsification, at a dataset with that same inference content. -/
 def SubstitutionGivesFalsification : Prop :=
   ∀ (P D E R : Type) (t : Testing P D E R) (r : R),
-    t.SubstitutionAt r → ∃ o ∈ t.Datasets, t.rep o = r ∧ t.FalsificationAt o
+    t.SubstitutionAt r → ∃ o, t.rep o = r ∧ t.FalsificationAt o
 
 /-- S2b. A universal substitution gives a falsification for every inference content that arises. -/
 def UniversalSubstitutionFalsifiesEveryReport : Prop :=
   ∀ (P D E R : Type) (t : Testing P D E R),
-    t.UniversalSubstitution → ∀ r, t.Arises r → ∃ o ∈ t.Datasets, t.rep o = r ∧ t.FalsificationAt o
+    t.UniversalSubstitution → ∀ r, t.Arises r → ∃ o, t.rep o = r ∧ t.FalsificationAt o
 
 /-- S2c. With a universal substitution, whatever the true experience of each system is: either every
-inference content that arises has a case where the inference is wrong, or some prediction is wrong. -/
+inference content that arises has at least one case where the inference is wrong, or some prediction
+is wrong. -/
 def EveryInferenceWrongOrTheoryWrong : Prop :=
   ∀ (P D E R : Type) (t : Testing P D E R), t.UniversalSubstitution →
     ∀ truth : P → E,
       (∀ r, t.Arises r → ∃ p, ∃ o ∈ t.obs p, t.rep o = r ∧ t.inf r ≠ truth p) ∨
       (∃ p, ∃ o ∈ t.obs p, truth p ∉ t.pred o)
+
+/-- S2c′. "Every inference is wrong" cannot be read more strongly than in S2c. There is a setup with a
+universal substitution, and a true experience for each system, in which every prediction is right and
+some inference is right as well. -/
+def SomeInferenceCanStillBeRight : Prop :=
+  ∃ (P D E R : Type) (t : Testing P D E R) (truth : P → E),
+    t.UniversalSubstitution ∧ (∀ p, ∀ o ∈ t.obs p, truth p ∈ t.pred o) ∧
+    (∃ p, ∃ o ∈ t.obs p, t.inf (t.rep o) = truth p)
 
 /-- S2d. Strict dependence. Take datasets with a prediction content `ic o` and an inference content
 `rc o`, the datasets `O` that can arise in the experiment, and a larger class `Obar` of conceivable

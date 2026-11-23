@@ -17,6 +17,10 @@ numbers, so the locator is the section heading.
 
 > Recurrent neural networks are universal function approximators (Fig. 2; Schäfer & Zimmermann, 2006). That is, any input-output function can be approximated to any degree of accuracy. […] Likewise, the stimuli in a visual masking experiment are inputs, and the outputs may be button presses, verbal reports or any other measure shown to reliably correlate with subjective reports. Importantly, experiments which intervene directly on the brain, for example using implanted electrodes or Transcranial Magnetic Stimulation (TMS) are still input-output functions. The only difference is that part of the input is provided by means of electrodes or TMS rather than through the sensory organs.
 
+## P-D51c — Doerig et al. (2019), pp. 51–52, §2 and the caption of Fig. 2 [source: Doerig-2019-The-unfolding-argument.txt]
+
+> Feedforward neural networks are also universal function approximators (Fig. 2; Hornik, Stinchcombe, & White, 1989). […] Both recurrent networks (middle top) and multilayer feedforward networks (middle bottom) are universal function approximators (Hornik et al., 1989; Schäfer & Zimmermann, 2006). That is, they can be used to generate any desired input-output function to any degree of accuracy using a finite number of neurons. Therefore, for any recurrent network with a given input-output behaviour, there are corresponding feedforward networks with the same characteristics (although feedforward networks often need many more neurons than their recurrent counterparts).
+
 ## P-D52a — Doerig et al. (2019), p. 52, §2 [source: Doerig-2019-The-unfolding-argument.txt]
 
 > Anything that can be done by recurrent networks can also be done in a feedforward manner (Fig. 2). We call this unfolding: any recurrent network can be unfolded into a feedforward network implementing the same function. In particular, any behavioural experiment can be seen as an input-output function, and can thus be implemented by both recurrent and feedforward networks.
@@ -55,7 +59,7 @@ numbers, so the locator is the section heading.
 
 ## P-H11 — Herzog et al. (2022), p. 11, DR5 [source: Herzog-2022-First-person-experience.txt]
 
-> We would like to stress that there are feedforward networks that implement any function, even when time plays a role. First, unrolled networks are used by researchers using machine learning every day to implement temporally extended computations, including for large-scale brain modelling. Second, there are many ways of processing a temporally extended stimulus in feedforward networks.
+> We would like to stress that there are feedforward networks that implement any function, even when time plays a role. First, unrolled networks are used by researchers using machine learning every day to implement temporally extended computations, including for large-scale brain modelling. Second, there are many ways of processing a temporally extended stimulus in feedforward networks. As Usher mentions, one way is to inject later stimuli in deeper layers, but there are many different ways to encode time.
 
 ## P-U — Usher (2021), abstract (the article itself was not in hand) [source: Usher-2021-abstract.txt]
 

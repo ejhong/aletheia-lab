@@ -1,0 +1,31 @@
+{
+  "id": "X3",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:23:45Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R) (r : R),\n    t.D21 r → ∀ o ∈ t.D17, t.c3 o = r → t.D18 o\n",
+  "usage": [
+    [
+      2622,
+      418
+    ],
+    [
+      3425,
+      425
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R, every record t of type S3 P D E R, and every r in R, let Q be the set of p in P for which some d in t.c1(p) has t.c3(d) = r. For each p in P, let U(p) be the union of t.c2(d) over all d in t.c1(p), not just those with t.c3(d) = r. If there exist a function S from Q to Q and a p in Q such that U(p) and U(S(p)) are disjoint, then for every o in D, if o belongs to t.c1(q) for some q in P and t.c3(o) = r, then t.c4(t.c3(o)) does not belong to t.c2(o). The hypothesis requires disjointness only for the chosen p and its image, and does not require S(p) to differ from p. The conclusion is not restricted to objects belonging to t.c1(p) or t.c1(S(p)).\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R, every record t of type S3 P D E R, and every r in R, let Q be the set of p in P for which some d in t.c1(p) has t.c3(d) = r. For each p in P, let U(p) be the union of t.c2(d) over all d in t.c1(p), not just those with t.c3(d) = r. If there exist a function S from Q to Q and a p in Q such that U(p) and U(S(p)) are disjoint, then for every o in D, if o belongs to t.c1(q) for some q in P and t.c3(o) = r, then t.c4(t.c3(o)) does not belong to t.c2(o). The hypothesis requires disjointness only for the chosen p and its image, and does not require S(p) to differ from p. The conclusion is not restricted to objects belonging to t.c1(p) or t.c1(S(p)).",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The source concludes `∃ o ∈ t.D17, t.c3 o = r ∧ t.D18 o`: at least one dataset that can arise with inference content `r` gives a falsification. The TARGET instead requires falsification at every such dataset. The inferred value can agree with a prediction on one side of the substitution while being excluded on the other, so disjointness does not justify the universal conclusion.\"\n    }\n  ],\n  \"summary\": \"The substitution hypothesis matches Definition 3.1, but the TARGET changes the lemmas’ conclusion from “some dataset” to “every dataset” with the specified inference content.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The source concludes `∃ o ∈ t.D17, t.c3 o = r ∧ t.D18 o`: at least one dataset that can arise with inference content `r` gives a falsification. The TARGET instead requires falsification at every such dataset. The inferred value can agree with a prediction on one side of the substitution while being excluded on the other, so disjointness does not justify the universal conclusion."
+      }
+    ],
+    "summary": "The substitution hypothesis matches Definition 3.1, but the TARGET changes the lemmas’ conclusion from “some dataset” to “every dataset” with the specified inference content."
+  }
+}

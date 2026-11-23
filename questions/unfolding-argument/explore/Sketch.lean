@@ -471,13 +471,13 @@ theorem substitutionGivesFalsification : SubstitutionGivesFalsification := by
   obtain ⟨o, ho, hor⟩ := p.2
   obtain ⟨o', ho', hor'⟩ := (S p).2
   by_cases h : t.inf r ∈ t.pred o
-  · refine ⟨o', ⟨_, ho'⟩, hor', ?_⟩
+  · refine ⟨o', hor', ⟨_, ho'⟩, ?_⟩
     intro h'
     rw [hor'] at h'
     have : t.inf r ∈ t.predOf p.1 ∩ t.predOf (S p).1 := ⟨⟨o, ho, h⟩, ⟨o', ho', h'⟩⟩
     rw [hdisj] at this
     exact this
-  · refine ⟨o, ⟨_, ho⟩, hor, ?_⟩
+  · refine ⟨o, hor, ⟨_, ho⟩, ?_⟩
     intro h'
     rw [hor] at h'
     exact h h'
@@ -493,12 +493,47 @@ theorem everyInferenceWrongOrTheoryWrong : EveryInferenceWrongOrTheoryWrong := b
   · left
     push Not at h
     intro r hr
-    obtain ⟨o, ⟨p, hop⟩, hor, hf⟩ := universalSubstitutionFalsifiesEveryReport P D E R t hU r hr
+    obtain ⟨o, hor, ⟨p, hop⟩, hf⟩ := universalSubstitutionFalsifiesEveryReport P D E R t hU r hr
     refine ⟨p, o, hop, hor, ?_⟩
     intro heq
     apply hf
     rw [hor, heq]
     exact h p o hop
+
+/-- A testing setup with a substitution at every inference content: two systems, one report. -/
+def twoSystems : Testing Bool Bool Bool Unit where
+  obs := fun p => {p}
+  pred := fun o => {o}
+  rep := fun _ => ()
+  inf := fun _ => true
+
+theorem twoSystems_substitution : twoSystems.SubstitutionAt () := by
+  have hmem : ∀ b : Bool, b ∈ twoSystems.Produces () := fun b => ⟨b, rfl, rfl⟩
+  refine ⟨fun p => ⟨!p.1, hmem _⟩, ⟨true, hmem _⟩, ?_⟩
+  ext e
+  simp only [Set.mem_inter_iff, Set.mem_empty_iff_false, iff_false, not_and]
+  rintro ⟨o, ho, he⟩ ⟨o', ho', he'⟩
+  have h1 : o = true := ho
+  have h2 : o' = false := ho'
+  have h3 : e = o := he
+  have h4 : e = o' := he'
+  rw [h3, h1] at h4
+  rw [h2] at h4
+  exact Bool.noConfusion h4
+
+theorem twoSystems_universal : twoSystems.UniversalSubstitution := by
+  intro r _
+  cases r
+  exact twoSystems_substitution
+
+theorem twoSystems_arises : twoSystems.Arises () := ⟨true, ⟨true, rfl⟩, rfl⟩
+
+theorem someInferenceCanStillBeRight : SomeInferenceCanStillBeRight := by
+  refine ⟨Bool, Bool, Bool, Unit, twoSystems, id, twoSystems_universal, ?_, ⟨true, true, rfl, rfl⟩⟩
+  intro p o ho
+  have h : o = p := ho
+  rw [h]
+  rfl
 
 theorem strictDependenceLeavesNothingToTest : StrictDependenceLeavesNothingToTest := by
   intro D Ic Rc E ic rc pred inf O Obar hsub hrep ⟨f, hf⟩

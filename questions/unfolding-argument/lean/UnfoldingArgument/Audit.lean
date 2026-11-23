@@ -1,4 +1,6 @@
-import Lean
+module
+
+public meta import Lean
 
 /-!
 # Axiom audit
@@ -7,6 +9,8 @@ import Lean
 standard axioms. `sorry`, `admit` and `native_decide` all show up here as extra axioms, so this one check covers
 them.
 -/
+
+public meta section
 
 open Lean Elab Command
 
@@ -20,3 +24,5 @@ elab "#assert_standard_axioms " ids:ident+ : command => do
     unless extra.isEmpty do
       throwErrorAt id "{name} depends on axioms outside the standard three: {extra}"
     logInfoAt id m!"{name}: standard axioms only"
+
+end

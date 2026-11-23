@@ -1,0 +1,43 @@
+{
+  "id": "S1g",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:21:14Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y P : Type) (N : S1 X Y) (v : P → N.D1 → N.D1) (T : ℕ),\n    ∃ N' : S1 (X × P) Y, N'.D9 ∧ N'.d13 = T ∧\n      ∀ xs : List (X × P), xs.length ≤ T → N'.d4 xs = N.d16 v xs\n",
+  "usage": [
+    [
+      2664,
+      415
+    ],
+    [
+      3511,
+      1326
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every choice of types X, Y and P, every S1 system N with input type X and output type Y, every function v that assigns to each p in P a map from full configurations of N to full configurations of N, and every natural number T (including zero), there exists an S1 system N′ with input type X × P and output type Y satisfying three conditions. First, its update-dependency graph has no directed cycle of positive length, including a self-loop. There is an edge from index m to index n if there exist two full configurations of N′ agreeing at every index other than m and a single paired input for which the updates at n from those configurations differ; the configurations need not be reachable. Second, N′ has exactly T indices, not necessarily T possible configurations. Third, for every list xs of paired inputs of length at most T, including the empty list, the ordinary output of N′ on xs equals the following output of N: start in N’s initial configuration and, for each pair (x, p) from left to right, first update every index of N using the same pre-step configuration and x, then apply v(p) to the resulting full configuration. Apply N’s output map to the final configuration. N′ may depend on all the preceding choices but must work for every such list. Only output equality is required, not agreement of internal configurations, and no output agreement is required on longer lists.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every choice of types X, Y and P, every S1 system N with input type X and output type Y, every function v that assigns to each p in P a map from full configurations of N to full configurations of N, and every natural number T (including zero), there exists an S1 system N′ with input type X × P and output type Y satisfying three conditions. First, its update-dependency graph has no directed cycle of positive length, including a self-loop. There is an edge from index m to index n if there exist two full configurations of N′ agreeing at every index other than m and a single paired input for which the updates at n from those configurations differ; the configurations need not be reachable. Second, N′ has exactly T indices, not necessarily T possible configurations. Third, for every list xs of paired inputs of length at most T, including the empty list, the ordinary output of N′ on xs equals the following output of N: start in N’s initial configuration and, for each pair (x, p) from left to right, first update every index of N using the same pre-step configuration and x, then apply v(p) to the resulting full configuration. Apply N’s output map to the final configuration. N′ may depend on all the preceding choices but must work for every such list. Only output equality is required, not agreement of internal configurations, and no output agreement is required on longer lists.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"`N'.d13 = T` requires exactly T units in the feedforward system, independently of the size of the original system. T is a time horizon in the author's claim; neither the claim nor the passages identify it with a unit count.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"The quoted Doerig remark classifies an intervention experiment as an input-output function. It does not assert that one feedforward system per horizon exactly matches the output on every paired history up to that horizon. The nearby approximation claim concerns recurrent networks; it does not establish this exact feedforward realization.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean chooses a discrete intervention protocol: at each step the original system updates on the ordinary input, then a deterministic map acts on the entire resulting configuration. The passage specifies the route by which an input is delivered, not this timing or the availability of arbitrary state transformations.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"`S1` units have unrestricted state types and update functions, and `D9` tests acyclicity of functional dependencies. This abstracts from neural implementation; in particular, one counted unit can store a whole network configuration.\"\n    }\n  ],\n  \"summary\": \"Giving the feedforward system the intervention as an input faithfully captures Doerig’s input distinction without claiming that the system reacts equivalently to perturbations of its own units. Exact bounded simulation is a further claim, and requiring exactly T units adds a size constraint absent even from the author's stated interpretation.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "`N'.d13 = T` requires exactly T units in the feedforward system, independently of the size of the original system. T is a time horizon in the author's claim; neither the claim nor the passages identify it with a unit count."
+      },
+      {
+        "severity": "major",
+        "description": "The quoted Doerig remark classifies an intervention experiment as an input-output function. It does not assert that one feedforward system per horizon exactly matches the output on every paired history up to that horizon. The nearby approximation claim concerns recurrent networks; it does not establish this exact feedforward realization."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean chooses a discrete intervention protocol: at each step the original system updates on the ordinary input, then a deterministic map acts on the entire resulting configuration. The passage specifies the route by which an input is delivered, not this timing or the availability of arbitrary state transformations."
+      },
+      {
+        "severity": "minor",
+        "description": "`S1` units have unrestricted state types and update functions, and `D9` tests acyclicity of functional dependencies. This abstracts from neural implementation; in particular, one counted unit can store a whole network configuration."
+      }
+    ],
+    "summary": "Giving the feedforward system the intervention as an input faithfully captures Doerig’s input distinction without claiming that the system reacts equivalently to perturbations of its own units. Exact bounded simulation is a further claim, and requiring exactly T units adds a size constraint absent even from the author's stated interpretation."
+  }
+}

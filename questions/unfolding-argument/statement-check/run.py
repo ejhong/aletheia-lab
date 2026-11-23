@@ -124,6 +124,49 @@ Use "divergent" if there is any major divergence.
 
 
 
+PROMPT_B_OWN = """You are checking a Lean 4 formalization. Earlier, without seeing anything else, you translated \
+the TARGET below into English; that translation is included.
+
+The author says the TARGET is the author's OWN statement. It is not offered as a rendering of any passage. The \
+passages below are what it bears on. The author's description of the TARGET, and of how it relates to the passages:
+
+{claim}
+
+Judge two things. (a) Does the TARGET, as formally written, say exactly what the author's description says it \
+says? List anything the Lean adds, omits, strengthens, weakens, reverses or gets wrong relative to that \
+description. (b) Is what the description says about the passages accurate? List anything it misreports about what \
+the passages say or concede. Do not count it as a divergence that the passages do not themselves assert the \
+TARGET, or that the TARGET is stronger or weaker than the passages in a way the description states. Rate each \
+divergence "major" (the Lean says something materially different from the description, or the description \
+misreports a passage, or a reader would be misled about what was established) or "minor" (an idealization or \
+presentational choice). Be strict: a reversed inequality, a dropped hypothesis or a swapped quantifier is major.
+
+Reply with JSON only:
+{{"verdict": "faithful" | "faithful_with_caveats" | "divergent",
+  "divergences": [{{"severity": "major" | "minor", "description": "..."}}],
+  "summary": "<one or two sentences>"}}
+Use "divergent" if there is any major divergence.
+
+# Notation key
+{notation}
+
+# Definitions (context)
+```lean
+{context}
+```
+
+# TARGET
+```lean
+{target}
+```
+
+# Your earlier blind translation of the TARGET
+{translation}
+
+# Passage(s) the statement bears on
+{passages}
+"""
+
 
 def strip_comments(code):
     code = re.sub(r"/-[-!].*?-/\n?", "", code, flags=re.S)
@@ -272,7 +315,7 @@ def run(vendor):
         a = parse_json(text) or {}
         rec["translation"] = a.get("translation", text)
         if it["passages"]:
-            text, tin, tout, raw = call(vendor, PROMPT_B.format(
+            text, tin, tout, raw = call(vendor, (PROMPT_B_OWN if it.get("own") else PROMPT_B).format(
                 notation=notation, context=it["context"], target=it["target"], claim=it["claim"],
                 translation=rec["translation"], passages=it["passage_text"]))
             rec["usage"].append([tin, tout])

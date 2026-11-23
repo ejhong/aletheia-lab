@@ -1,0 +1,39 @@
+{
+  "id": "S2g",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:37:05Z",
+  "target": "def Target : Prop :=\n  ∃ (Q : S1 Bool Bool → Prop) (c4 : (List Bool → Bool) → Prop),\n    (∀ N, N.D9 → ¬ Q N) ∧ (∃ N, Q N) ∧\n    ∀ N : S1 Bool Bool, (Q N ↔ c4 N.d4)\n",
+  "usage": [
+    [
+      2781,
+      3429
+    ],
+    [
+      3856,
+      11140
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target defines a proposition (it names the statement without asserting or proving it). Here, a system N of type S1 Bool Bool consists of a finite type of nodes A1 (individual node state types A3 n are arbitrary types, not required to be finite, though each must be inhabited because of the initial state), an initial global state a4 assigning a state in A3 n to every node n, a synchronous update function a5 giving each node n's next state as a function of the entire current global state and a Bool input, and an output function a6 mapping a global state to a Bool. Its input-output function N.d4 : List Bool → Bool maps any finite sequence of Booleans (with no length bound) to the Bool obtained by starting at the initial global state a4, synchronously updating all nodes from left to right for each input in the list, and applying a6 to the resulting global state. A system N satisfies D9 (acyclicity of its dependency graph) if there is no node n with a nonempty directed chain n = c_0, c_1, ..., c_k = n (k ≥ 1) such that at each step c_{i+1}'s update function depends on c_i's state—meaning there exist two global states differing only at node c_i and a Bool input on which a5 produces different next states for c_{i+1} (in particular, self-loops are excluded). Target is the proposition that there exist a predicate Q on systems of type S1 Bool Bool and a predicate c4 on functions List Bool → Bool (neither predicate is required to be decidable or computable) such that all three of the following hold: (1) for every system N : S1 Bool Bool, if N satisfies D9, then Q N is false; (2) there exists at least one system N : S1 Bool Bool for which Q N is true; and (3) for every system N : S1 Bool Bool, Q N holds if and only if c4 holds of N.d4 (so Q depends on N solely through its input-output function on all finite Boolean input lists).\"}",
+  "translation": "Target defines a proposition (it names the statement without asserting or proving it). Here, a system N of type S1 Bool Bool consists of a finite type of nodes A1 (individual node state types A3 n are arbitrary types, not required to be finite, though each must be inhabited because of the initial state), an initial global state a4 assigning a state in A3 n to every node n, a synchronous update function a5 giving each node n's next state as a function of the entire current global state and a Bool input, and an output function a6 mapping a global state to a Bool. Its input-output function N.d4 : List Bool → Bool maps any finite sequence of Booleans (with no length bound) to the Bool obtained by starting at the initial global state a4, synchronously updating all nodes from left to right for each input in the list, and applying a6 to the resulting global state. A system N satisfies D9 (acyclicity of its dependency graph) if there is no node n with a nonempty directed chain n = c_0, c_1, ..., c_k = n (k ≥ 1) such that at each step c_{i+1}'s update function depends on c_i's state—meaning there exist two global states differing only at node c_i and a Bool input on which a5 produces different next states for c_{i+1} (in particular, self-loops are excluded). Target is the proposition that there exist a predicate Q on systems of type S1 Bool Bool and a predicate c4 on functions List Bool → Bool (neither predicate is required to be decidable or computable) such that all three of the following hold: (1) for every system N : S1 Bool Bool, if N satisfies D9, then Q N is false; (2) there exists at least one system N : S1 Bool Bool for which Q N is true; and (3) for every system N : S1 Bool Bool, Q N holds if and only if c4 holds of N.d4 (so Q depends on N solely through its input-output function on all finite Boolean input lists).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target restricts systems to binary inputs and outputs (S1 Bool Bool) rather than stating the claim for arbitrary non-degenerate input and output types X and Y.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Systems in S1 are idealized as deterministic, synchronous, discrete-time networks with finitely many nodes (Fintype A1), a fixed initial state, and time-invariant update rules, with feedforwardness (D9) defined via acyclicity of the semantic dependency graph (D8). In particular, finiteness of the node set is built into S1 and is essential for the statement to hold over unbounded time, reflecting the finite fixed-parameter network setting of the unfolding argument.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The verdict Q and inference rule c4 : (List Bool → Bool) → Prop are arbitrary two-valued (Prop) mathematical predicates with no computability or finite-experiment observability constraints; while the claim explicitly assumes unbounded-time behaviour counts as evidence, this abstracts away from finite physical experiments as framed in Doerig et al. (2019).\"\n    }\n  ],\n  \"summary\": \"Target faithfully formalizes the author's claim that there exists a binary verdict excluding all feedforward systems and accepting at least one system that agrees on every system with a rule of inference from its entire unbounded-time input-output function. The only caveats are minor modeling choices and specializations, namely fixing inputs and outputs to Bool, restricting to deterministic synchronous finite-node networks, and leaving the inference rule unconstrained over the full function space List Bool → Bool.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Target restricts systems to binary inputs and outputs (S1 Bool Bool) rather than stating the claim for arbitrary non-degenerate input and output types X and Y."
+      },
+      {
+        "severity": "minor",
+        "description": "Systems in S1 are idealized as deterministic, synchronous, discrete-time networks with finitely many nodes (Fintype A1), a fixed initial state, and time-invariant update rules, with feedforwardness (D9) defined via acyclicity of the semantic dependency graph (D8). In particular, finiteness of the node set is built into S1 and is essential for the statement to hold over unbounded time, reflecting the finite fixed-parameter network setting of the unfolding argument."
+      },
+      {
+        "severity": "minor",
+        "description": "The verdict Q and inference rule c4 : (List Bool → Bool) → Prop are arbitrary two-valued (Prop) mathematical predicates with no computability or finite-experiment observability constraints; while the claim explicitly assumes unbounded-time behaviour counts as evidence, this abstracts away from finite physical experiments as framed in Doerig et al. (2019)."
+      }
+    ],
+    "summary": "Target faithfully formalizes the author's claim that there exists a binary verdict excluding all feedforward systems and accepting at least one system that agrees on every system with a rule of inference from its entire unbounded-time input-output function. The only caveats are minor modeling choices and specializations, namely fixing inputs and outputs to Bool, restricting to deterministic synchronous finite-node networks, and leaving the inference rule unconstrained over the full function space List Bool → Bool."
+  }
+}
