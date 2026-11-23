@@ -3,8 +3,8 @@
 # The scorecard, tiles and timeline are made by scripts/make_topic_figures.py; rerun it when a result changes.
 # "image:" names a picture in site/assets/illustrations/ (made by scripts/make_illustrations.py).
 title: The Younger Dryas impact hypothesis
-summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Six studies each test one mark such an event should have left.
-questions: 43, 60, 69, 75, 76, 40, 100
+summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Eight studies each test one mark such an event should have left.
+questions: 43, 60, 69, 75, 76, 100, 103, 40, 104
 order: 1
 atlas: ydih
 atlas_title: Fire From the Sky
@@ -29,7 +29,7 @@ Each study here takes one mark, fixes the test before looking at the data, and a
 
 {{figure: topic-younger-dryas/scorecard}}
 
-Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. Each has been re-run from scratch by a model from a different company, working from the written plan alone, and the numbers matched.
+Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. Each has been checked by a model from a different company: most were re-run from scratch from the written plan alone, the latest was spot-checked, and the numbers matched.
 
 ## The order of events
 
@@ -110,15 +110,37 @@ This version is harder to test, because it predicts no single sharp mark. Set ag
 
 **What would test it properly.** The stream is said to have crossed the Earth's path many times over thousands of years. Each crossing should have left the same marks. Platinum, or the cosmic dust that a disintegrating comet sheds, measured right through the ice age and not only at this one layer, would show whether such crossings happened and whether coolings followed them. Nobody has made that measurement, and it is beyond what public data allow.
 
-One step public data may allow is to calibrate on the airburst we know. Tunguska, in June 1908, fell within the dates of a Taurid shower. If it left a mark in Greenland ice, that mark can be scaled up, and the ice at the start of the Younger Dryas then limits how many such events a year there can have been. If it left none, the ice cannot see single airbursts, and our check for fire spikes says less than it seems to. That study is proposed and not yet run.
+**Calibrating on the airburst we know.** Tunguska, in June 1908, fell within the dates of a Taurid shower, and a published paper says it left an ammonium spike in ice from Greenland's summit. We looked for it in the rest of Greenland, with the test fixed before the layers of 1908 were opened. Averaged over six sites, 1908 is an ordinary year. Site by site it is not: a sharp spike with soot at two of the six and at the summit, nothing in the north-west. That is how smoke arrives, and the ice cannot say whether Tunguska or that summer's forest fires made it.
+
+Either way it bears on this version of the hypothesis. If the spike was Tunguska's, an airburst leaves a sharp spike, and a century of airbursts would fill the ice with them; the ice of that century has fewer than usual. If it was the summer's fires, Tunguska left nothing the ice can see. Read more: [the Tunguska study](../../questions/tunguska-calibration/).
+
+**Looking for the swarm itself.** The theory says the stream still carries large fragments, herded by Jupiter onto orbits that bring them back to the Earth every few years. Two NASA archives can be asked: the catalogue of near-Earth asteroids, and thirty-two years of airbursts seen by satellite. Neither shows a swarm. The evidence first offered for one, that the largest asteroids on such orbits point the same way as the comet, is still there: 11 of 17. But those are the same seventeen bodies as in 2010, and among the hundreds of smaller ones found since, which a break-up should have made in greater numbers, the pattern is absent. Airbursts are no commoner in the Taurid weeks, or in the years the swarm was due back. There is one hint, among asteroids down to about 150 metres, of a few more on the swarm's orbits than chance gives. Read more: [the Taurid swarm study](../../questions/taurid-swarm/).
+
+This is a test of the stream today. A swarm could have broken down in 12,900 years.
 
 ## What the studies add up to
 
-The records do hold real disturbances around the start of the Younger Dryas: a century of high ammonium, a platinum layer, a heavy run of eruptions. What they do not hold is the signature of a single catastrophic day. The marks that exist are spread over two centuries, they arrive in the wrong order for a trigger, and the ones that can be compared with other coolings turn out to be large examples of something the ice age did repeatedly.
+This section is the reading of the AI that ran most of these studies, after all eight. It is not the atlas's judgment, which is made [there](https://ejhong.github.io/aletheia/cases/ydih/) by its own process.
 
-Of the two accounts, the ordinary one fits these six tests better. The strongest single finding in its favour is the run of eruptions just before the cold, and even that is a coincidence in time, not a demonstrated cause.
+**The single day of fire.** This version made the sharpest predictions and they have failed one after another. There is no burn in the world's air or its charcoal. The ammonium in Greenland comes late and builds slowly. The cold itself began more slowly than most of the ice age's sudden coolings and went no deeper. The platinum arrives two or three decades after the cold has started. People's traces do not thin, though that last test was a blurred one. We count this version as very unlikely.
 
-The hypothesis is not refuted by this. Its fiery, world-burning form finds no support here, whether the fire came in a day or over years. A smaller event or series of events, one that left platinum on the ice and little else, is not excluded by anything on this page.
+**The comet that kept coming.** This version dodges the objections about timing, because it predicts no single moment. It has now been tested where it does make predictions, three times, and each went against it.
+
+- Years of fires should fill the ice with short spikes of smoke. The century in question has fewer than usual.
+- The one airburst we know, in 1908, left just such a spike where it left anything, or else it left nothing that can be seen. Neither helps.
+- The swarm of large fragments that is supposed to do the striking does not show in today's sky.
+
+It can still be rescued, by a swarm that has since dispersed and airbursts that lit few fires. But each rescue removes a prediction, and a version with none left cannot be tested. We count it as unlikely, and less well defined than when we started.
+
+**What is left standing.**
+
+- *The platinum.* A real layer, in the right century, with no volcanic sulphate beside it and no accepted source. It is the best remaining ground for the idea that something from space arrived about then. It does not make that something the cause of the cold, which had already begun.
+- *Seventeen aligned asteroids.* A real pattern among the largest bodies on Taurid-like orbits. It is the same evidence as in 2010, no stronger and no weaker.
+- *The size of the ammonium rise.* Among the two or three largest of 25, even though the kind of rise is common.
+
+**What points the other way.** The ordinary account, a slowing of the Atlantic's circulation, needs nothing unusual, and the Younger Dryas looks like the ice age's other coolings in shape, in depth and in what followed. The heavy run of eruptions in the 150 years before it is the one unusual thing found in the critics' favour, and it is a coincidence in time, not a shown cause.
+
+**In one sentence.** After eight tests, a cosmic impact as the *cause* of the Younger Dryas looks unlikely in either form; a lesser event that left platinum on the ice around that time remains open; and nothing here touches the claims we have not tested.
 
 ## What this does not settle
 

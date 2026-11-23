@@ -1,0 +1,8 @@
+near-Earth asteroids with full elements: 43156
+H<16.5: Taurid-like orbits n=17 alignment=0.557 share within 45 deg=0.647 p against uniform about 0.0010 | rounder-orbit comparison (37, -0.356, 0.135)
+H<18.0: Taurid-like orbits n=64 alignment=-0.001 share within 45 deg=0.312 p against uniform about 0.5085 | rounder-orbit comparison (169, -0.324, 0.16)
+H<20.0: Taurid-like orbits n=331 alignment=-0.068 share within 45 deg=0.218 p against uniform about 0.9627 | rounder-orbit comparison (827, -0.337, 0.119)
+H<22.0: Taurid-like orbits n=848 alignment=-0.068 share within 45 deg=0.205 p against uniform about 0.9978 | rounder-orbit comparison (2255, -0.323, 0.132)
+H<99: Taurid-like orbits n=2470 alignment=-0.068 share within 45 deg=0.196 p against uniform about 1.0000 | rounder-orbit comparison (10254, -0.185, 0.181)
+airbursts 1994-2025: 1045; autumn weeks 133 (even spread gives 134.5); summer weeks 81 (88.7); autumn, 1 kt and over: 12 (14.8)
+share of a year's airbursts in the autumn weeks: swarm years 0.127 | other years 0.1296
