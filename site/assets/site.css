@@ -883,3 +883,7 @@ details.more > summary:focus-visible { outline: 2px solid var(--copper); outline
 .q-verdict { margin: 0 0 .3rem; font: 400 1.18rem/1.3 var(--serif); color: var(--ink); letter-spacing: -.005em; }
 .q-result-text { margin: 0; font-size: .95rem; line-height: 1.55; color: var(--ink-soft); }
 .q-group.is-active .q-verdict { font-size: 1.3rem; }
+.chart .c-line { fill: none; stroke: var(--copper); stroke-width: 2; stroke-linejoin: round; }
+.chart .c-line-ctx { fill: none; stroke: var(--faint); stroke-width: 2; stroke-linejoin: round; }
+.chart .c-area-ctx { fill: var(--faint); opacity: .16; stroke: none; }
+.chart .c-dot.c-ctx-hollow { fill: var(--paper); stroke: var(--faint); stroke-width: 1.5; opacity: .75; }

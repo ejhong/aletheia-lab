@@ -13,3 +13,14 @@
   not a century-long rise; the plan was rebuilt around D (years 40 to 160 after the onset against the 100 years
   before). Round 2 found small errors, fixed.
 - Dust control with the final measure: top quarter after 24 of 24 other coolings in NGRIP, 23 of 24 in NEEM.
+
+## 2026-11-23: locked run, replication, write-up (Claude Fable 5.2)
+
+- **Lock:** 2026-11-23T14:58:15Z, commit `60e67e0`. Results committed after it.
+- **Locked run:** a delayed rise is "mixed" (15 of 24 in NGRIP, 17 of 24 in NEEM); the Younger Dryas is "among
+  the largest" (2nd and 3rd of 25).
+- **Replication:** OpenAI and Google programs both ran first time and match every value, verdict and rank.
+- **Exploratory, after the result** (`explore/after.py`): the others step up at once and hold; the Younger Dryas
+  climbs a second time at 60 to 160 years. GS-18 and GS-20 rival it in proportion.
+- **No amendments.** Spent $2.49 of $15.
+- **Lead noted, not pursued:** GS-20 and the Toba eruption (from memory, unverified).
