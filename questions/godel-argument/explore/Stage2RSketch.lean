@@ -1,4 +1,4 @@
-import GodelArgumentDraft3
+import GodelArgument.Statement3
 import GodelArgument.Results2
 /-! Exploratory only. A trial of proofs for the draft statements of Amendment 3, compiled before the lock against
 a copy of `statement-check/Statement3.draft.lean`, to make sure no draft statement is false as written. Not a
