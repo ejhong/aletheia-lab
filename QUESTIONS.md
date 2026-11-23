@@ -56,3 +56,5 @@ Each has an issue. Eugene marks the ones to work on `status:active`; nothing els
 | [#93](https://github.com/ejhong/aletheia-lab/issues/93) | Germs as a census of lost cities | audit | `germs-lost-cities` |
 | [#94](https://github.com/ejhong/aletheia-lab/issues/94) | A compass in the stones | data | `compass-in-stones` |
 | [#100](https://github.com/ejhong/aletheia-lab/issues/100) | Does Tunguska show in the ice? Calibrating what an airburst leaves | data | `tunguska-calibration` |
+| [#103](https://github.com/ejhong/aletheia-lab/issues/103) | Does the Taurid comet stream hide a swarm of large fragments? | data | `taurid-swarm` |
+| [#104](https://github.com/ejhong/aletheia-lab/issues/104) | Did repeated Taurid comet crossings leave a periodic mark across the last 15,000 years? | data | `taurid-holocene-cycles` |
