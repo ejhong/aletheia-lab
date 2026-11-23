@@ -16,6 +16,7 @@ Inputs
   site/templates/            base.html (page shell), home.html (home page prose)
   site/pages/                how-it-works.md
   site/content/<slug>.md     optional full page for a question; replaces the short page built from the issue
+  site/figures/<slug>/       HTML fragments (inline SVG charts) that a content file includes with {{figure: slug/name}}
   site/assets/               CSS, JS, icon
 
 Content files are Markdown with an optional front matter block (key: value lines between --- lines). Inside them,
@@ -97,6 +98,7 @@ SAFE_URL = re.compile(r"^(https?://|mailto:|#|\.{0,2}/|[\w][\w./-]*(#[\w-]*)?$)"
 LIST_RE = re.compile(r"^(\s*)([-*+]|\d+[.)])\s+(.*)$")
 STAGE_RE = re.compile(r"^###\s+Stage\s+(\w+)\s*[·:.\-–—]\s*(.+?)\s*$")
 PLACEHOLDER_RE = re.compile(r"^\{\{\s*([\w-]+)\s*\}\}$")
+FIGURE_RE = re.compile(r"^\{\{\s*figure:\s*([\w-]+(?:/[\w-]+)*)\s*\}\}$")
 
 
 def inline(text, stash=None):
@@ -239,6 +241,13 @@ def blocks(md, doc):
                 j += 1
             out.append("<pre><code>%s</code></pre>" % esc("\n".join(code)))
             i = j + 1
+            continue
+        m = FIGURE_RE.match(s)
+        if m:
+            # {{figure: folder/name}} drops in site/figures/folder/name.html as it stands. These fragments are files
+            # in this repository (inline SVG and captions made by a question's own script), so they are trusted.
+            out.append((SITE / "figures" / (m.group(1) + ".html")).read_text())
+            i += 1
             continue
         m = PLACEHOLDER_RE.match(s)
         if m:

@@ -48,3 +48,47 @@
   });
   legend.setAttribute("aria-label", "Filter questions by lane");
 })();
+
+// Chart tooltips. Every mark with a data-tip attribute shows its numbers on hover and on keyboard focus.
+// The same numbers are in the page's tables, so nothing depends on this script.
+(function () {
+  "use strict";
+  var marks = document.querySelectorAll(".chart [data-tip]");
+  if (!marks.length) return;
+  var tip = document.createElement("div");
+  tip.className = "chart-tip";
+  tip.setAttribute("role", "status");
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function fill(el) {
+    tip.textContent = "";
+    el.getAttribute("data-tip").split("|").forEach(function (line, i) {
+      var node = document.createElement(i === 0 ? "b" : "div");
+      node.textContent = line;
+      tip.appendChild(node);
+    });
+    tip.hidden = false;
+  }
+  function place(x, y) {
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    var left = Math.min(Math.max(8, x + 14), window.innerWidth - w - 8);
+    var top = y + 18 + h > window.innerHeight ? y - h - 12 : y + 18;
+    tip.style.left = left + "px";
+    tip.style.top = Math.max(8, top) + "px";
+  }
+  function hide() { tip.hidden = true; }
+
+  Array.prototype.forEach.call(marks, function (el) {
+    el.addEventListener("pointerenter", function (e) { fill(el); place(e.clientX, e.clientY); });
+    el.addEventListener("pointermove", function (e) { place(e.clientX, e.clientY); });
+    el.addEventListener("pointerleave", hide);
+    el.addEventListener("focus", function () {
+      var r = el.getBoundingClientRect();
+      fill(el);
+      place(r.left + r.width / 2, r.top + r.height / 2);
+    });
+    el.addEventListener("blur", hide);
+  });
+  window.addEventListener("scroll", hide, { passive: true });
+})();
