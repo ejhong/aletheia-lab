@@ -40,3 +40,7 @@
 - Read: Melott et al. 2010 abstract (arXiv); Rasmussen et al. 2014 on how the onset is defined. Not read:
   Reinig et al. 2021 (search summary only).
 - Added "How the main explanations fit" to `RESULTS.md` and a section and figure to the site page.
+- 2026-11-23, later: Eugene asked about the Taurid form of the hypothesis, airbursts year after year. Exploratory
+  check (`explore/repeated_fires.py`) on NGRIP 1 mm ammonium: in the 150 years after the onset the yearly level is
+  the highest of 29 stretches, and spike years are scarcer than usual (4 above five times the level, against 18
+  before and a typical 19). Added "Airbursts year after year" to `RESULTS.md`. Read: Napier 2010 abstract (arXiv).

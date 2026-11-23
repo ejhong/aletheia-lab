@@ -86,17 +86,39 @@ If the catastrophe was real, the dated traces of people should thin out when it 
 
 Read more: [the population study](../../questions/younger-dryas-crash/).
 
+## What if the comet kept coming?
+
+There is another form of the hypothesis with no single day in it. A giant comet broke up in the inner solar system and left a stream of debris, of which the Taurid meteors seen each autumn are the remains. In this account the Earth ran through the thick of the stream, and fragments burst in the air again and again over a long time (Napier 2010, abstract read; the longer account by Clube and Napier was not re-read).
+
+This version is harder to test, because it predicts no single sharp mark. Set against the same records it does better than the single day in some places and no better in others.
+
+| What the record shows | A single day | Airbursts for years |
+|---|---|---|
+| Nothing in the ice marks one instant | Against it | No longer against it |
+| Ammonium high for a century | Against it: smoke should arrive at once | Fits the length |
+| Platinum laid down over a decade or two | Awkward: fallout from one event clears in a few years | Fits better |
+| The cold starts before the platinum and before the ammonium | Cannot be the trigger | Still cannot be the trigger |
+| The century of ammonium is a raised steady level, with fewer fire spikes than usual | Says nothing either way | Against repeated fires |
+| Antarctica did not cool in two centuries, and Greenland's dust rose least of 25 coolings | A winter of a few years would not show | Against a long veil of dust, which would show |
+| The same rise in ammonium follows other coolings | Not needed to explain it | Not needed to explain it |
+
+**The new check.** If fragments set fires year after year, the smoke should reach Greenland as it always does, in plumes that last days. In ice sampled thirty to forty times a year, that means short spikes standing above the year's ordinary level. We looked. In the 150 years after the cold began the ordinary level of ammonium is the highest of 29 such stretches between 10,400 and 15,000 years ago, 2.7 times what it had been. Spikes are scarcer than usual: 4 years with a spike of five times the level, against 18 in the 150 years before and a typical 19. The whole rise is in the steady level, which is what soils, plants and changed winds do, and not what repeated burning does. This was an exploratory look, made after the results were known, in one ice core.
+
+**Where that leaves it.** The drawn-out version survives where the single day does not, mostly because it predicts less. Where it does predict something we could check, a long season of fires and a long veil of dust, the ice shows neither. Its one real point is the platinum: a layer laid down over ten or twenty years is easier to get from repeated input than from one event. But the platinum stops after those years, and it begins after the cold.
+
+**What would test it properly.** The stream is said to have crossed the Earth's path many times over thousands of years. Each crossing should have left the same marks. Platinum, or the cosmic dust that a disintegrating comet sheds, measured right through the ice age and not only at this one layer, would show whether such crossings happened and whether coolings followed them. Nobody has made that measurement, and it is beyond what public data allow.
+
 ## What the studies add up to
 
 The records do hold real disturbances around the start of the Younger Dryas: a century of high ammonium, a platinum layer, a heavy run of eruptions. What they do not hold is the signature of a single catastrophic day. The marks that exist are spread over two centuries, they arrive in the wrong order for a trigger, and the ones that can be compared with other coolings turn out to be large examples of something the ice age did repeatedly.
 
 Of the two accounts, the ordinary one fits these six tests better. The strongest single finding in its favour is the run of eruptions just before the cold, and even that is a coincidence in time, not a demonstrated cause.
 
-The hypothesis is not refuted by this. Its fiery, world-burning form finds no support here. A smaller event, one that left platinum on the ice and little else, is not excluded by anything on this page.
+The hypothesis is not refuted by this. Its fiery, world-burning form finds no support here, whether the fire came in a day or over years. A smaller event or series of events, one that left platinum on the ice and little else, is not excluded by anything on this page.
 
 ## What this does not settle
 
-- **Where the platinum came from.** It has no volcanic sulphate with it and nobody has measured platinum through the ice age's other coolings. This is the one piece that still wants an explanation.
+- **Where the platinum came from.** It has no volcanic sulphate with it and nobody has measured platinum through the ice age's other coolings. This is the one piece that still wants an explanation, and it is the best remaining ground for any version of the hypothesis, the drawn-out one included.
 - **The traces in sediment** claimed for an impact: tiny spherules, nanodiamonds, a dark layer at many sites. None is tested here.
 - **The great animals.** Nothing here bears on when or why they died out.
 - **People.** The one test made was blurred by the dating method. A better method exists and has not been tried.

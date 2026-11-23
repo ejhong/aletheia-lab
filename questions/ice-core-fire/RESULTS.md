@@ -230,6 +230,41 @@ and unseen. Nitrate, which the same paper expects from the shock of an airburst,
 A long series of airbursts over a century cannot be excluded by ammonium. Nothing in the ice asks for it either:
 the rise follows the dust, as a response to the changing climate would.
 
+### Airbursts year after year
+
+Asked by Eugene on 23 November 2026. In another form of the hypothesis there is no single day: the Earth runs
+through the debris of a broken-up comet, the Taurid stream, and fragments burst in the air again and again over
+a long time (Napier 2010, *Monthly Notices of the Royal Astronomical Society*, doi:10.1111/j.1365-2966.2010.16579.x; abstract
+read on arXiv:1003.0744. The fuller account by Clube
+and Napier was not re-read).
+
+A century of high ammonium fits that better than it fits one day. So we looked for the fires
+(`explore/repeated_fires.py`; exploratory, made after the result, one core). Smoke reaches Greenland as a plume
+lasting days. Many fires should show as short spikes standing above the year's ordinary level; a change in the
+steady output of soils and plants raises the ordinary level itself. NGRIP ammonium at 1 mm gives about 30 to 40
+samples a year here. For each year from 10,400 to 15,000 before 2000 we took the median sample as the ordinary
+level, and called a year a "spike year" if its largest sample stood above 3, 5 or 10 times the running level.
+Years were grouped in 29 stretches of 150 years, laid out from the onset.
+
+| | 150 years before the onset | 150 years after | Typical stretch (median of 29) | Rank of "after" (1 = highest) |
+|---|---|---|---|---|
+| Ordinary level, µg/kg | 11.0 | 29.7 | 15.5 | 1 of 29 |
+| Spike years, above 3 times the level | 43 | 22 | 43 | 24 of 29 |
+| Spike years, above 5 times | 18 | 4 | 19 | 26 of 29 |
+| Spike years, above 10 times | 5 | 0 | 5 | 26 of 29 |
+| Largest spike, as a multiple of the level | 34.8 | 7.5 | 21.2 | 27 of 29 |
+| Part of the yearly mean owed to spikes, µg/kg | 1.36 | 0.36 | 1.49 | 25 of 29 |
+
+The whole of the rise is in the ordinary level, which is the highest of any stretch. Spikes became scarcer and
+smaller, in absolute terms as well as against the raised level. This agrees with Fischer et al. 2015, who found
+fire peaks rare in cold phases, the Younger Dryas included.
+
+So the century of high ammonium is **not made of many separate fires**. That counts against repeated burning,
+whatever lit it. It does not exclude airbursts that lit few fires, or fires so regular that they came every
+year in the same weeks, which this measure would read as a raised level. Limits: the measure was chosen after
+the results were known; annual layers are thinner after the onset, which blurs spikes somewhat (31 samples a
+year against 35), though less snow also concentrates what falls; one core.
+
 ### Volcanism
 
 Critics have proposed that an eruption, or several, set off the cooling. An eruption makes sulphate, not
