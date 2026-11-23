@@ -1,0 +1,31 @@
+{
+  "id": "S1g",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:46:11Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y P : Type) (N : S1 X Y) (v : P → N.D1 → N.D1) (T : ℕ),\n    ∃ N' : S1 (X × P) Y, N'.D9 ∧ N'.d13 = T ∧\n      ∀ xs : List (X × P), xs.length ≤ T → N'.d4 xs = N.d16 v xs\n",
+  "usage": [
+    [
+      2673,
+      419
+    ],
+    [
+      3614,
+      1074
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every choice of types X, Y and P, every S1 system N with input type X and output type Y, every function v assigning to each p in P a function from whole states of N to whole states of N, and every natural number T, there exists an S1 system N′ with input type X × P and output type Y satisfying all of the following. First, N′ has no directed dependency cycle, including a self-loop: there is no chain of one or more dependency edges from any node back to itself. An edge from m to n exists if there are two whole states of N′ agreeing at every node other than m and a single input pair for which the update at n differs between the two states; the states need not be reachable. Second, N′ has exactly T nodes, with no finiteness requirement on their individual state types. Third, for every list of input pairs of length at most T, including the empty list, the output of N′ after processing that list from its initial state equals the following output of N: start from N’s initial state and, for each pair (x, p) in order, first update all nodes of N using the current state and x, then apply v(p) to the resulting whole state. Apply N’s output function to the final state. The same N′ must work for every such list; no agreement is required on longer lists, and only outputs, not internal states, are compared.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every choice of types X, Y and P, every S1 system N with input type X and output type Y, every function v assigning to each p in P a function from whole states of N to whole states of N, and every natural number T, there exists an S1 system N′ with input type X × P and output type Y satisfying all of the following. First, N′ has no directed dependency cycle, including a self-loop: there is no chain of one or more dependency edges from any node back to itself. An edge from m to n exists if there are two whole states of N′ agreeing at every node other than m and a single input pair for which the update at n differs between the two states; the states need not be reachable. Second, N′ has exactly T nodes, with no finiteness requirement on their individual state types. Third, for every list of input pairs of length at most T, including the empty list, the output of N′ after processing that list from its initial state equals the following output of N: start from N’s initial state and, for each pair (x, p) in order, first update all nodes of N using the current state and x, then apply v(p) to the resulting whole state. Apply N’s output function to the final state. The same N′ must work for every such list; no agreement is required on longer lists, and only outputs, not internal states, are compared.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The description leaves the timing within each pair implicit. `N.d16` first updates the original system using the ordinary input, then applies the intervention to the resulting state; the final readout is after the last intervention.\"\n    }\n  ],\n  \"summary\": \"Otherwise the TARGET matches the description: one loop-free system with exactly T units must match outputs for every paired history of length at most T. The passage account is accurate: Doerig et al. count direct stimulation as input without asserting this construction, and the TARGET does not compare how the two systems react when their own units are perturbed.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The description leaves the timing within each pair implicit. `N.d16` first updates the original system using the ordinary input, then applies the intervention to the resulting state; the final readout is after the last intervention."
+      }
+    ],
+    "summary": "Otherwise the TARGET matches the description: one loop-free system with exactly T units must match outputs for every paired history of length at most T. The passage account is accurate: Doerig et al. count direct stimulation as input without asserting this construction, and the TARGET does not compare how the two systems react when their own units are perturbed."
+  }
+}

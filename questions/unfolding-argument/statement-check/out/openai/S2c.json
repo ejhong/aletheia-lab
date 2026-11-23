@@ -1,0 +1,31 @@
+{
+  "id": "S2c",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:47:36Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R), t.D23 →\n    ∀ w : P → E,\n      (∀ r, t.D22 r → ∃ p, ∃ o ∈ t.c1 p, t.c3 o = r ∧ t.c4 r ≠ w p) ∨\n      (∃ p, ∃ o ∈ t.c1 p, w p ∉ t.c2 o)\n",
+  "usage": [
+    [
+      2681,
+      392
+    ],
+    [
+      3518,
+      1851
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines a proposition; it does not assert or prove it. For every choice of types P, D, E, R and every record t of type S3 P D E R, call p in P a producer of r in R if some o in t.c1(p) satisfies t.c3(o) = r, and call r realized if it has a producer. For each p, let U(p) be the union of t.c2(o) over all o in t.c1(p), not just those giving a particular r. Suppose that for every realized r there exist a function S from the producers of r to the producers of r and a producer p of r such that U(p) and U(S(p)) are disjoint. This is required only at the chosen p; there is no requirement that S(p) differ from p. Then, for every function w from P to E, at least one of the following holds: (1) for every realized r there exist p in P and o in t.c1(p) such that t.c3(o) = r and t.c4(r) differs from w(p); or (2) there exist p in P and o in t.c1(p) such that w(p) is not in t.c2(o). The disjunction is taken for each w, not separately for each r. In (2), nonmembership is required for the chosen o, not for every o in t.c1(p).\"}",
+  "translation": "Target defines a proposition; it does not assert or prove it. For every choice of types P, D, E, R and every record t of type S3 P D E R, call p in P a producer of r in R if some o in t.c1(p) satisfies t.c3(o) = r, and call r realized if it has a producer. For each p, let U(p) be the union of t.c2(o) over all o in t.c1(p), not just those giving a particular r. Suppose that for every realized r there exist a function S from the producers of r to the producers of r and a producer p of r such that U(p) and U(S(p)) are disjoint. This is required only at the chosen p; there is no requirement that S(p) differ from p. Then, for every function w from P to E, at least one of the following holds: (1) for every realized r there exist p in P and o in t.c1(p) such that t.c3(o) = r and t.c4(r) differs from w(p); or (2) there exist p in P and o in t.c1(p) such that w(p) is not in t.c2(o). The disjunction is taken for each w, not separately for each r. In (2), nonmembership is required for the chosen o, not for every o in t.c1(p).",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean introduces an arbitrary truth assignment `w : P → E`, so all datasets from the same physical system are assessed against the same true experience. The passage appeals to correctness but does not specify that truth is indexed by system rather than by dataset or occasion.\"\n    }\n  ],\n  \"summary\": \"Under that convention, the disjunction matches the stated reading: either each realized inference content has at least one wrong instance, or some dataset’s prediction excludes its system’s true experience. The first alternative does not require every instance of a content to be wrong.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Lean introduces an arbitrary truth assignment `w : P → E`, so all datasets from the same physical system are assessed against the same true experience. The passage appeals to correctness but does not specify that truth is indexed by system rather than by dataset or occasion."
+      }
+    ],
+    "summary": "Under that convention, the disjunction matches the stated reading: either each realized inference content has at least one wrong instance, or some dataset’s prediction excludes its system’s true experience. The first alternative does not require every instance of a content to be wrong."
+  }
+}

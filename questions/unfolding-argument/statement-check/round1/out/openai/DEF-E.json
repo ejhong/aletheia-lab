@@ -1,0 +1,39 @@
+{
+  "id": "DEF-E",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:21:11Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: d15, S2, d3, d4, d16\ndef d15 : S1 Bool Bool where\n  A1 := Unit\n  a2 := inferInstance\n  A3 := fun _ => Bool\n  a4 := fun _ => false\n  a5 := fun _ σ x => σ () || x\n  a6 := fun σ => σ ()\n\nstructure S2 (X Y : Type) where\n    B1 : Type\n    B2 : Type\n    b3 : B1\n    b4 : B2\n    b5 : B1 → B2 → X → B2\n    b6 : B1 → B2 → X → B1\n    a6 : B2 → Y\n\ndef d3 (P : S2 X Y) (xs : List X) : P.B1 × P.B2 :=\n  xs.foldl (fun s x => (P.b6 s.1 s.2 x, P.b5 s.1 s.2 x)) (P.b3, P.b4)\n\ndef d4 (P : S2 X Y) (xs : List X) : Y := P.a6 (P.d3 xs).2\n\ndef S1.d16 {X Y P : Type} (N : S1 X Y) (v : P → N.D1 → N.D1)\n    (xs : List (X × P)) : Y :=\n  N.a6 (xs.foldl (fun σ xp => v xp.2 (N.d2 σ xp.1)) N.a4)\n",
+  "usage": [
+    [
+      2907,
+      588
+    ],
+    [
+      4243,
+      1637
+    ]
+  ],
+  "a_raw": "{\"translation\":\"d15 defines a particular S1 with Boolean inputs and outputs. Its index type is Unit, with its usual finiteness instance. The sole index () has Boolean state, initially false. Given a state assignment σ and input x, its updated state is σ(()) OR x. The output of a state assignment is its value at ().\\n\\nFor any types X and Y, S2 X Y is a record whose data are two types B1 and B2, initial elements b3 of B1 and b4 of B2, a function b5 taking a B1 value, a B2 value and an X input, in that order, to a B2 value, a function b6 taking the same kinds of arguments in the same order to a B1 value, and an output function a6 from B2 to Y. Neither state type is required to be finite, and no laws are imposed on the functions.\\n\\nFor any X and Y, given P of type S2 X Y and then any finite list xs of X inputs, S2.d3 returns a pair in P.B1 × P.B2. It starts at (P.b3, P.b4) and reads xs from left to right. At each input x it replaces the old pair (u, w) by (P.b6 u w x, P.b5 u w x): both functions use the old pair. It returns the final pair, which for the empty list is the initial pair. S2.d4, given the same arguments, returns the Y value obtained by applying P.a6 to the second component of that final pair; the first component is not passed to P.a6.\\n\\nFor any types X, Y and P, S1.d16 takes, in order, an N of type S1 X Y, a function v assigning to each p of type P a function from full state assignments of N to full state assignments of N, and any finite list xs of pairs in X × P. It starts with the assignment N.a4 and processes the pairs from left to right. For each (x, p), from the old assignment σ it first computes N.d2 σ x (the assignment whose value at each index n is N.a5 n σ x), then applies v p to that result. This latter assignment is the state carried forward. After all pairs it applies N.a6 to the final assignment and returns the resulting Y value. For the empty list it returns N.a6 N.a4. No condition on v beyond its type is required.\"}",
+  "translation": "d15 defines a particular S1 with Boolean inputs and outputs. Its index type is Unit, with its usual finiteness instance. The sole index () has Boolean state, initially false. Given a state assignment σ and input x, its updated state is σ(()) OR x. The output of a state assignment is its value at ().\n\nFor any types X and Y, S2 X Y is a record whose data are two types B1 and B2, initial elements b3 of B1 and b4 of B2, a function b5 taking a B1 value, a B2 value and an X input, in that order, to a B2 value, a function b6 taking the same kinds of arguments in the same order to a B1 value, and an output function a6 from B2 to Y. Neither state type is required to be finite, and no laws are imposed on the functions.\n\nFor any X and Y, given P of type S2 X Y and then any finite list xs of X inputs, S2.d3 returns a pair in P.B1 × P.B2. It starts at (P.b3, P.b4) and reads xs from left to right. At each input x it replaces the old pair (u, w) by (P.b6 u w x, P.b5 u w x): both functions use the old pair. It returns the final pair, which for the empty list is the initial pair. S2.d4, given the same arguments, returns the Y value obtained by applying P.a6 to the second component of that final pair; the first component is not passed to P.a6.\n\nFor any types X, Y and P, S1.d16 takes, in order, an N of type S1 X Y, a function v assigning to each p of type P a function from full state assignments of N to full state assignments of N, and any finite list xs of pairs in X × P. It starts with the assignment N.a4 and processes the pairs from left to right. For each (x, p), from the old assignment σ it first computes N.d2 σ x (the assignment whose value at each index n is N.a5 n σ x), then applies v p to that result. This latter assignment is the state carried forward. After all pairs it applies N.a6 to the final assignment and returns the resulting Y value. For the empty list it returns N.a6 N.a4. No condition on v beyond its type is required.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"`S2` permits plasticity but does not require it. Taking `b6 := fun w _ _ => w` leaves the weights fixed at every reachable step, contrary to P-O2's requirement of nontrivial parameter change. Even when `b6` changes the weights, `b5` may ignore them entirely, so the change need not affect the activity or output.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"`S2.d3` computes both new values from the same old weight–activity pair, and `S2.d4` reads out only the activity. These are modeling choices; the passage does not prescribe that update schedule or readout.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"`d16` correctly treats the intervention label as part of the input, but gives it a specific timing and an idealized power: after each ordinary update it can rewrite the entire resulting state, or leave it untouched. P-D51b specifies a direct input channel, not this ordering or unrestricted control of the state.\"\n    }\n  ],\n  \"summary\": \"`d15` matches the claimed example: its single bit permanently records whether a `true` input has occurred. The material mismatch is that running a weight-update rule in `S2` does not entail that any weight ever changes.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "`S2` permits plasticity but does not require it. Taking `b6 := fun w _ _ => w` leaves the weights fixed at every reachable step, contrary to P-O2's requirement of nontrivial parameter change. Even when `b6` changes the weights, `b5` may ignore them entirely, so the change need not affect the activity or output."
+      },
+      {
+        "severity": "minor",
+        "description": "`S2.d3` computes both new values from the same old weight–activity pair, and `S2.d4` reads out only the activity. These are modeling choices; the passage does not prescribe that update schedule or readout."
+      },
+      {
+        "severity": "minor",
+        "description": "`d16` correctly treats the intervention label as part of the input, but gives it a specific timing and an idealized power: after each ordinary update it can rewrite the entire resulting state, or leave it untouched. P-D51b specifies a direct input channel, not this ordering or unrestricted control of the state."
+      }
+    ],
+    "summary": "`d15` matches the claimed example: its single bit permanently records whether a `true` input has occurred. The material mismatch is that running a weight-update rule in `S2` does not entail that any weight ever changes."
+  }
+}

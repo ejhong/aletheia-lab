@@ -1,0 +1,31 @@
+{
+  "id": "X3",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:34:07Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R) (r : R),\n    t.D21 r → ∀ o ∈ t.D17, t.c3 o = r → t.D18 o\n",
+  "usage": [
+    [
+      2768,
+      3157
+    ],
+    [
+      3766,
+      6986
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target defines (without asserting or proving) the following proposition: For all types P, D, E, and R, for every record t of type S3 P D E R—consisting of functions c1 : P → Set D, c2 : D → Set E, c3 : D → R, and c4 : R → E—and for every element r of R, if the hypothesis t.D21 r holds, then for every element o of D such that o belongs to t.D17 (meaning there exists some p' in P with o ∈ t.c1 p') and t.c3 o = r, the condition t.D18 o holds, meaning t.c4 (t.c3 o) ∉ t.c2 o. Here, the hypothesis t.D21 r asserts that—letting t.D19 r be the subset of P consisting of those elements x for which there exists some d ∈ t.c1 x with t.c3 d = r, and letting t.D20 x (for x in P) be the subset of E consisting of those elements e for which there exists some d ∈ t.c1 x with e ∈ t.c2 d (the union of t.c2 d over all d ∈ t.c1 x)—there exist a function S from the set t.D19 r to itself and an element p of t.D19 r such that the intersection of t.D20 p and t.D20 (S p) is empty. Notice what is not required: no conditions are placed on the function S beyond mapping t.D19 r to t.D19 r (and S is only evaluated at the single element p, without even requiring S p ≠ p); the element p' witnessing o ∈ t.c1 p' in the conclusion need not be related to p or S p; and t.c4 does not appear anywhere in the hypothesis t.D21 r.\"}",
+  "translation": "Target defines (without asserting or proving) the following proposition: For all types P, D, E, and R, for every record t of type S3 P D E R—consisting of functions c1 : P → Set D, c2 : D → Set E, c3 : D → R, and c4 : R → E—and for every element r of R, if the hypothesis t.D21 r holds, then for every element o of D such that o belongs to t.D17 (meaning there exists some p' in P with o ∈ t.c1 p') and t.c3 o = r, the condition t.D18 o holds, meaning t.c4 (t.c3 o) ∉ t.c2 o. Here, the hypothesis t.D21 r asserts that—letting t.D19 r be the subset of P consisting of those elements x for which there exists some d ∈ t.c1 x with t.c3 d = r, and letting t.D20 x (for x in P) be the subset of E consisting of those elements e for which there exists some d ∈ t.c1 x with e ∈ t.c2 d (the union of t.c2 d over all d ∈ t.c1 x)—there exist a function S from the set t.D19 r to itself and an element p of t.D19 r such that the intersection of t.D20 p and t.D20 (S p) is empty. Notice what is not required: no conditions are placed on the function S beyond mapping t.D19 r to t.D19 r (and S is only evaluated at the single element p, without even requiring S p ≠ p); the element p' witnessing o ∈ t.c1 p' in the conclusion need not be related to p or S p; and t.c4 does not appear anywhere in the hypothesis t.D21 r.",
+  "b_raw": "{\"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Target universally quantifies over datasets (`∀ o ∈ t.D17, t.c3 o = r → t.D18 o`), asserting that an r-substitution causes every dataset arising from some physical configuration with inference content r to be falsified, rather than existentially asserting that there is some such dataset (`∃ o ∈ t.D17, t.c3 o = r ∧ t.D18 o`) as stated in Lemma 3.3, Definition 3.4, and Lemma 3.5 (and in the author's claim). This makes Target strictly stronger and in fact false: an r-substitution only implies that the inferred experience `t.c4 r` cannot lie in both `t.D20 p` and `t.D20 (S p)`, so a dataset `o` with `t.c3 o = r` arising from `p` (or from some other configuration) can still satisfy `t.c4 r ∈ t.c2 o` and not be falsified.\"\n    }\n  ],\n  \"summary\": \"The Lean formalization diverges fatally from Lemmas 3.3 and 3.5 by replacing the existential conclusion ('there is a falsification at some dataset o ∈ O with inference content o_r') with a universal one ('every arising dataset with inference content r is falsified'), turning the true theorem into a false proposition.\"}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Target universally quantifies over datasets (`∀ o ∈ t.D17, t.c3 o = r → t.D18 o`), asserting that an r-substitution causes every dataset arising from some physical configuration with inference content r to be falsified, rather than existentially asserting that there is some such dataset (`∃ o ∈ t.D17, t.c3 o = r ∧ t.D18 o`) as stated in Lemma 3.3, Definition 3.4, and Lemma 3.5 (and in the author's claim). This makes Target strictly stronger and in fact false: an r-substitution only implies that the inferred experience `t.c4 r` cannot lie in both `t.D20 p` and `t.D20 (S p)`, so a dataset `o` with `t.c3 o = r` arising from `p` (or from some other configuration) can still satisfy `t.c4 r ∈ t.c2 o` and not be falsified."
+      }
+    ],
+    "summary": "The Lean formalization diverges fatally from Lemmas 3.3 and 3.5 by replacing the existential conclusion ('there is a falsification at some dataset o ∈ O with inference content o_r') with a universal one ('every arising dataset with inference content r is falsified'), turning the true theorem into a false proposition."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "S2b",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:22:34Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R),\n    t.D23 → ∀ r, t.D22 r → ∃ o ∈ t.D17, t.c3 o = r ∧ t.D18 o\n",
+  "usage": [
+    [
+      2626,
+      426
+    ],
+    [
+      3649,
+      319
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R and every record t of type S3 P D E R, call an object o in D covered if it belongs to t.c1(p) for some p in P. Call a value r in R realized if some covered o has t.c3(o) = r. Let A(r) be the set of all p in P for which some o in t.c1(p) has t.c3(o) = r, and let U(p) be the union of t.c2(o) over all o in t.c1(p), without any restriction on t.c3(o). Assume that for every s in R, if s is realized, then there exist a function S from A(s) to A(s) and an element p of A(s) such that U(p) and U(S(p)) are disjoint. The disjointness condition is required only at the chosen p, and there is no explicit requirement that S(p) differ from p. Under this hypothesis, for every r in R, if r is realized, then there exists a covered o such that t.c3(o) = r and t.c4(t.c3(o)) does not belong to t.c2(o). Only one such o is required for each realized r; it need not be chosen from the sets indexed by the witnesses p or S(p) in the hypothesis.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R and every record t of type S3 P D E R, call an object o in D covered if it belongs to t.c1(p) for some p in P. Call a value r in R realized if some covered o has t.c3(o) = r. Let A(r) be the set of all p in P for which some o in t.c1(p) has t.c3(o) = r, and let U(p) be the union of t.c2(o) over all o in t.c1(p), without any restriction on t.c3(o). Assume that for every s in R, if s is realized, then there exist a function S from A(s) to A(s) and an element p of A(s) such that U(p) and U(S(p)) are disjoint. The disjointness condition is required only at the chosen p, and there is no explicit requirement that S(p) differ from p. Under this hypothesis, for every r in R, if r is realized, then there exists a covered o such that t.c3(o) = r and t.c4(t.c3(o)) does not belong to t.c2(o). Only one such o is required for each realized r; it need not be chosen from the sets indexed by the witnesses p or S(p) in the hypothesis.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"`D23` requires a substitution for every inference content that can occur in a possible dataset. For each such content `r`, the conclusion requires some possible dataset with content `r` whose inferred experience is not among its predicted experiences, exactly the `r`-falsification asserted by Proposition 3.6.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "`D23` requires a substitution for every inference content that can occur in a possible dataset. For each such content `r`, the conclusion requires some possible dataset with content `r` whose inferred experience is not among its predicted experiences, exactly the `r`-falsification asserted by Proposition 3.6."
+  }
+}

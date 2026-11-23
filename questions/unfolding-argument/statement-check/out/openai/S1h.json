@@ -1,0 +1,26 @@
+{
+  "id": "S1h",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:59:47Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type), Nonempty X → ∀ (N : S1 X Y),\n    ∃ N' : S1 X Y, N'.D11 ∧ N'.d13 = N.d13 + 1 ∧ S1.D6 N' N\n",
+  "usage": [
+    [
+      2639,
+      371
+    ],
+    [
+      3852,
+      619
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every pair of types X and Y, if X is nonempty, then for every system N of type S1 X Y there exists a system N′ of type S1 X Y satisfying all three conditions: (1) N′ has a nonempty node set, and for every ordered pair of its nodes m and n there is a directed chain of one or more steps from m to n. This includes m = n, so each node must have a positive-length chain back to itself. A step from u to v means that there exist two state assignments of N′ agreeing at every node other than u, and a single input x in X, such that updating v with x gives different values for the two assignments. The assignments need not be reachable from the initial assignment. (2) N′ has exactly one more node than N; it need not contain N’s nodes or preserve their updates. (3) For every finite list of inputs from X, including the empty list and with no length bound, N′ and N give equal outputs after processing the list from their respective initial assignments. There is no separate nonemptiness hypothesis on Y or on N’s node set.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every pair of types X and Y, if X is nonempty, then for every system N of type S1 X Y there exists a system N′ of type S1 X Y satisfying all three conditions: (1) N′ has a nonempty node set, and for every ordered pair of its nodes m and n there is a directed chain of one or more steps from m to n. This includes m = n, so each node must have a positive-length chain back to itself. A step from u to v means that there exist two state assignments of N′ agreeing at every node other than u, and a single input x in X, such that updating v with x gives different values for the two assignments. The assignments need not be reachable from the initial assignment. (2) N′ has exactly one more node than N; it need not contain N’s nodes or preserve their updates. (3) For every finite list of inputs from X, including the empty list and with no length bound, N′ and N give equal outputs after processing the list from their respective initial assignments. There is no separate nonemptiness hypothesis on Y or on N’s node set.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"For nonempty X, the TARGET defines but does not prove that every system has a twin with exactly one more unit, positive-length dependency paths between every ordered pair of units, and matching outputs on every finite input history, including the empty one. The description correctly identifies P2’s feedforward-to-recurrent direction and distinguishes the twin’s structural property from the positive ϕ claim in §2.1 and the arbitrarily high ϕ construction in Appendix A.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "For nonempty X, the TARGET defines but does not prove that every system has a twin with exactly one more unit, positive-length dependency paths between every ordered pair of units, and matching outputs on every finite input history, including the empty one. The description correctly identifies P2’s feedforward-to-recurrent direction and distinguishes the twin’s structural property from the positive ϕ claim in §2.1 and the arbitrarily high ϕ construction in Appendix A."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "S2b",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:31:17Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R),\n    t.D23 → ∀ r, t.D22 r → ∃ o ∈ t.D17, t.c3 o = r ∧ t.D18 o\n",
+  "usage": [
+    [
+      2773,
+      5470
+    ],
+    [
+      4036,
+      13882
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target defines (names, without proving or asserting) the following proposition. For all types P, D, E, and R (with no finiteness, nonemptiness, or other conditions) and every record t of type S3 P D E R—consisting of four arbitrary functions c1 : P → Set D, c2 : D → Set E, c3 : D → R, and c4 : R → E—assume that t.D23 holds, namely: for every r in R, if there exists o in D belonging to t.D17 (meaning o ∈ t.c1 p for some p in P) with t.c3 o = r, then there exist a function S from the set t.D19 r = {p in P | ∃ o ∈ t.c1 p, t.c3 o = r} to itself and an element p of t.D19 r such that the sets t.D20 p = {e in E | ∃ o ∈ t.c1 p, e ∈ t.c2 o} and t.D20 (S p) = {e in E | ∃ o ∈ t.c1 (S p), e ∈ t.c2 o} are disjoint (their intersection is empty). Under this hypothesis, the proposition states that for every r in R, if there exists o in t.D17 (i.e., o ∈ t.c1 p for some p in P) with t.c3 o = r, then there exists an element o in t.D17 such that t.c3 o = r and t.c4 (t.c3 o) ∉ t.c2 o (equivalently, t.c4 r ∉ t.c2 o). Note that in the hypothesis t.D23 (via t.D21 r), the function S is only constrained at the single existentially chosen element p—nothing is required of S on any other element of t.D19 r, nor are p and S p required to be distinct (so the condition effectively just asks for two, not necessarily distinct, elements of t.D19 r whose t.D20 sets are disjoint). Also, no conditions at all are imposed on the function t.c4 in the hypotheses (it appears only in the conclusion), and no requirements are imposed on which element p witnesses o ∈ t.D17 in the conclusion.\"}",
+  "translation": "Target defines (names, without proving or asserting) the following proposition. For all types P, D, E, and R (with no finiteness, nonemptiness, or other conditions) and every record t of type S3 P D E R—consisting of four arbitrary functions c1 : P → Set D, c2 : D → Set E, c3 : D → R, and c4 : R → E—assume that t.D23 holds, namely: for every r in R, if there exists o in D belonging to t.D17 (meaning o ∈ t.c1 p for some p in P) with t.c3 o = r, then there exist a function S from the set t.D19 r = {p in P | ∃ o ∈ t.c1 p, t.c3 o = r} to itself and an element p of t.D19 r such that the sets t.D20 p = {e in E | ∃ o ∈ t.c1 p, e ∈ t.c2 o} and t.D20 (S p) = {e in E | ∃ o ∈ t.c1 (S p), e ∈ t.c2 o} are disjoint (their intersection is empty). Under this hypothesis, the proposition states that for every r in R, if there exists o in t.D17 (i.e., o ∈ t.c1 p for some p in P) with t.c3 o = r, then there exists an element o in t.D17 such that t.c3 o = r and t.c4 (t.c3 o) ∉ t.c2 o (equivalently, t.c4 r ∉ t.c2 o). Note that in the hypothesis t.D23 (via t.D21 r), the function S is only constrained at the single existentially chosen element p—nothing is required of S on any other element of t.D19 r, nor are p and S p required to be distinct (so the condition effectively just asks for two, not necessarily distinct, elements of t.D19 r whose t.D20 sets are disjoint). Also, no conditions at all are imposed on the function t.c4 in the hypotheses (it appears only in the conclusion), and no requirements are imposed on which element p witnesses o ∈ t.D17 in the conclusion.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Target faithfully formalizes Proposition 3.6 of Kleiner and Hoel (2021): modeling physical configurations, datasets, experiences, inference contents, obs, pred, and inf in S3, it accurately captures Definitions 3.1, 3.2, and 3.4 (including restricting quantification to possible inference contents realized by some producible dataset) and states that a universal substitution implies an r-falsification for every possible inference content r.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Target faithfully formalizes Proposition 3.6 of Kleiner and Hoel (2021): modeling physical configurations, datasets, experiences, inference contents, obs, pred, and inf in S3, it accurately captures Definitions 3.1, 3.2, and 3.4 (including restricting quantification to possible inference contents realized by some producible dataset) and states that a universal substitution implies an r-falsification for every possible inference content r."
+  }
+}

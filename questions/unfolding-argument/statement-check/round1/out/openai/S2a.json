@@ -1,0 +1,26 @@
+{
+  "id": "S2a",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:22:18Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R) (r : R),\n    t.D21 r → ∃ o ∈ t.D17, t.c3 o = r ∧ t.D18 o\n",
+  "usage": [
+    [
+      2623,
+      339
+    ],
+    [
+      3412,
+      175
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R, every record t of type S3 P D E R, and every r in R, let Q be the set of p in P for which some o in t.c1(p) satisfies t.c3(o) = r. For each p in P, let U(p) be the union of t.c2(o) over all o in t.c1(p), not just those with t.c3(o) = r. Suppose there exists a function S from Q to Q and there exists a p in Q such that U(p) and U(S(p)) are disjoint. Disjointness is required only for that p, and S(p) is not required to differ from p. Then there exists an o in D that belongs to t.c1(q) for some q in P and satisfies both t.c3(o) = r and t.c4(t.c3(o)) ∉ t.c2(o). The conclusion does not require q to be p or S(p).\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R, every record t of type S3 P D E R, and every r in R, let Q be the set of p in P for which some o in t.c1(p) satisfies t.c3(o) = r. For each p in P, let U(p) be the union of t.c2(o) over all o in t.c1(p), not just those with t.c3(o) = r. Suppose there exists a function S from Q to Q and there exists a p in Q such that U(p) and U(S(p)) are disjoint. Disjointness is required only for that p, and S(p) is not required to differ from p. Then there exists an o in D that belongs to t.c1(q) for some q in P and satisfies both t.c3(o) = r and t.c4(t.c3(o)) ∉ t.c2(o). The conclusion does not require q to be p or S(p).",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The hypothesis matches Definition 3.1, and the conclusion gives a dataset that can arise, has inference content r, and exhibits a falsification. This is Lemma 3.5; the same witness establishes Lemma 3.3 without the inference-content requirement.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The hypothesis matches Definition 3.1, and the conclusion gives a dataset that can arise, has inference content r, and exhibits a falsification. This is Lemma 3.5; the same witness establishes Lemma 3.3 without the inference-content requirement."
+  }
+}

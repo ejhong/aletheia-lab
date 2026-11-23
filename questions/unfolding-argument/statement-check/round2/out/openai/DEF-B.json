@@ -1,0 +1,35 @@
+{
+  "id": "DEF-B",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:18:41Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: D7, D8, D9, D10\ndef D7 (N : S1 X Y) (n m : N.A1) : Prop :=\n  ∃ (σ σ' : N.D1) (x : X), (∀ k, k ≠ m → σ k = σ' k) ∧ N.a5 n σ x ≠ N.a5 n σ' x\n\ndef D8 (N : S1 X Y) (m n : N.A1) : Prop := N.D7 n m\n\ndef D9 (N : S1 X Y) : Prop := ∀ n, ¬ Relation.TransGen N.D8 n n\n\ndef D10 (N : S1 X Y) : Prop := ∃ n, Relation.TransGen N.D8 n n\n",
+  "usage": [
+    [
+      2747,
+      337
+    ],
+    [
+      3670,
+      575
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For a given N of type S1 X Y and indices n, m in N.A1 (not necessarily distinct), D7(N,n,m) means that there exist two state assignments σ and σ′, each assigning to every index k a value of type N.A3 k, and an input x in X, such that (1) for every index k, if k ≠ m then σ k = σ′ k, and (2) the update values N.a5 n σ x and N.a5 n σ′ x are unequal for that same x. The assignments need not be reachable from the initial assignment. Inequality at m is not a separate hypothesis; it is forced by agreement elsewhere and the unequal update values. D8(N,m,n) is defined to mean D7(N,n,m): the directed step goes from the index m whose value can affect the update to the index n being updated. D9(N) means that for every index n there is no finite chain of one or more D8 steps from n back to n. D10(N) means that there exists an index n for which there is such a chain. A single step from n to itself counts; a chain of zero steps does not. These definitions name propositions and do not assert that they hold.\"}",
+  "translation": "For a given N of type S1 X Y and indices n, m in N.A1 (not necessarily distinct), D7(N,n,m) means that there exist two state assignments σ and σ′, each assigning to every index k a value of type N.A3 k, and an input x in X, such that (1) for every index k, if k ≠ m then σ k = σ′ k, and (2) the update values N.a5 n σ x and N.a5 n σ′ x are unequal for that same x. The assignments need not be reachable from the initial assignment. Inequality at m is not a separate hypothesis; it is forced by agreement elsewhere and the unequal update values. D8(N,m,n) is defined to mean D7(N,n,m): the directed step goes from the index m whose value can affect the update to the index n being updated. D9(N) means that for every index n there is no finite chain of one or more D8 steps from n back to n. D10(N) means that there exists an index n for which there is such a chain. A single step from n to itself counts; a chain of zero steps does not. These definitions name propositions and do not assert that they hold.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The passage describes causal structure as how elements interact. D7–D8 choose a more specific criterion: there is an edge m → n if changing only m’s current state can change n’s next update at a fixed input. This records the presence of possible influence, not its form, and an unreachable pair of states can witness it.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The passages use “feedforward” and “recurrent” without specifying a cycle test. D9–D10 adopt the standard graph convention: any positive-length return path counts, including a single self-loop. The cycle is structural; its edges need not be witnessed on one trajectory.\"\n    }\n  ],\n  \"summary\": \"The edge direction and cycle tests match the claimed rendering. They are explicit modeling choices consistent with the passages, not definitions stated by the sources.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The passage describes causal structure as how elements interact. D7–D8 choose a more specific criterion: there is an edge m → n if changing only m’s current state can change n’s next update at a fixed input. This records the presence of possible influence, not its form, and an unreachable pair of states can witness it."
+      },
+      {
+        "severity": "minor",
+        "description": "The passages use “feedforward” and “recurrent” without specifying a cycle test. D9–D10 adopt the standard graph convention: any positive-length return path counts, including a single self-loop. The cycle is structural; its edges need not be witnessed on one trajectory."
+      }
+    ],
+    "summary": "The edge direction and cycle tests match the claimed rendering. They are explicit modeling choices consistent with the passages, not definitions stated by the sources."
+  }
+}

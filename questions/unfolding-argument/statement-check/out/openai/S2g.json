@@ -1,0 +1,26 @@
+{
+  "id": "S2g",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:48:14Z",
+  "target": "def Target : Prop :=\n  ∃ (Q : S1 Bool Bool → Prop) (c4 : (List Bool → Bool) → Prop),\n    (∀ N, N.D9 → ¬ Q N) ∧ (∃ N, Q N) ∧\n    ∀ N : S1 Bool Bool, (Q N ↔ c4 N.d4)\n",
+  "usage": [
+    [
+      2652,
+      415
+    ],
+    [
+      3639,
+      2444
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. There exist a predicate Q on S1 systems with Boolean inputs and outputs and a predicate c4 on functions from finite Boolean lists to Booleans such that all three conditions hold: (1) For every such system N, if no node of N has a nonempty chain of dependency edges back to itself, then Q(N) is false. (2) There exists such a system N for which Q(N) is true. (3) For every such system N, Q(N) is true if and only if c4 holds of the function that sends each finite Boolean list to N’s output after processing that list from its initial state, updating all nodes from the previous state at each input. This function includes the empty list, on which the output is the readout of the initial state. A dependency edge from m to n means that there exist two global states agreeing at every node other than m and a single Boolean input for which the two updates at n differ; the states need not be reachable. A self-edge counts as a nonempty chain. The same Q and c4 apply throughout: Q must hold for at least one system, may hold only for systems with a dependency cycle, and must agree on systems with identical output functions on all finite lists. It is not required to hold for every system with a cycle.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. There exist a predicate Q on S1 systems with Boolean inputs and outputs and a predicate c4 on functions from finite Boolean lists to Booleans such that all three conditions hold: (1) For every such system N, if no node of N has a nonempty chain of dependency edges back to itself, then Q(N) is false. (2) There exists such a system N for which Q(N) is true. (3) For every such system N, Q(N) is true if and only if c4 holds of the function that sends each finite Boolean list to N’s output after processing that list from its initial state, updating all nodes from the previous state at each input. This function includes the empty list, on which the output is the readout of the initial state. A dependency edge from m to n means that there exist two global states agreeing at every node other than m and a single Boolean input for which the two updates at n differ; the states need not be reachable. A self-edge counts as a nonempty chain. The same Q and c4 apply throughout: Q must hold for at least one system, may hold only for systems with a dependency cycle, and must agree on systems with identical output functions on all finite lists. It is not required to hold for every system with a cycle.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Within `S1 Bool Bool`, a feedforward system matching a conscious witness on every finite input history would have to be called conscious by the common rule and nonconscious by loop-freeness. This contradicts P2 read as requiring one realization for all horizons, but not the fixed-parameter, finite-horizon reading described by O’Reilly-Shah et al., on which the realization may depend on the horizon.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Within `S1 Bool Bool`, a feedforward system matching a conscious witness on every finite input history would have to be called conscious by the common rule and nonconscious by loop-freeness. This contradicts P2 read as requiring one realization for all horizons, but not the fixed-parameter, finite-horizon reading described by O’Reilly-Shah et al., on which the realization may depend on the horizon."
+  }
+}

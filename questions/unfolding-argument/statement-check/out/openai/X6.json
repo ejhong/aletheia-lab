@@ -1,0 +1,35 @@
+{
+  "id": "X6",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:47:43Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R), t.D23 →\n    ∀ w : P → E,\n      (∃ p, ∃ o ∈ t.c1 p, ∀ r, t.D22 r → t.c3 o = r ∧ t.c4 r ≠ w p) ∨\n      (∃ p, ∃ o ∈ t.c1 p, w p ∉ t.c2 o)\n",
+  "usage": [
+    [
+      2682,
+      452
+    ],
+    [
+      3531,
+      782
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R and every record t of type S3 P D E R, call r in R realized if there exist p in P and o in t.c1 p with t.c3 o = r. Let A(r) be the set of all such p for r, and let U(p) be the union of t.c2 o over all o in t.c1 p, without restriction on t.c3 o. Assume that for every realized r there exist a function S from A(r) to A(r) and an element q of A(r) such that U(q) and U(S(q)) are disjoint. Disjointness is required only for the chosen q, not for every element of A(r), and S(q) is not required to differ from q. Then for every function w from P to E, at least one of the following holds: (1) There exist p in P and o in t.c1 p such that, for every realized r, both t.c3 o = r and t.c4 r ≠ w(p). The same p and o must work for every realized r; the quantifier is not restricted to r equal to t.c3 o. (2) There exist p in P and o in t.c1 p such that w(p) is not in t.c2 o. This requires nonmembership for just that o, not for every o in t.c1 p.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R and every record t of type S3 P D E R, call r in R realized if there exist p in P and o in t.c1 p with t.c3 o = r. Let A(r) be the set of all such p for r, and let U(p) be the union of t.c2 o over all o in t.c1 p, without restriction on t.c3 o. Assume that for every realized r there exist a function S from A(r) to A(r) and an element q of A(r) such that U(q) and U(S(q)) are disjoint. Disjointness is required only for the chosen q, not for every element of A(r), and S(q) is not required to differ from q. Then for every function w from P to E, at least one of the following holds: (1) There exist p in P and o in t.c1 p such that, for every realized r, both t.c3 o = r and t.c4 r ≠ w(p). The same p and o must work for every realized r; the quantifier is not restricted to r equal to t.c3 o. (2) There exist p in P and o in t.c1 p such that w(p) is not in t.c2 o. This requires nonmembership for just that o, not for every o in t.c1 p.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The first alternative chooses one system and dataset before quantifying over realized inference contents. The claimed reading allows a different witness for each content. Because the chosen dataset must have content equal to every realized content, the Lean alternative is impossible when two distinct contents arise, even if each has a witness of error. It also requires a witness when no content arises, whereas the intended universal condition then holds vacuously.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"As declared, `w : P → E` assigns one true experience to each system, shared across all its datasets. This is a modeling choice for interpreting correctness, not an assignment specified by the passage.\"\n    }\n  ],\n  \"summary\": \"The falsification alternative matches the claimed reading: one dataset’s prediction excludes its system’s assigned true experience. The misplaced witness quantifiers materially strengthen the first alternative and hence the disjunction.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The first alternative chooses one system and dataset before quantifying over realized inference contents. The claimed reading allows a different witness for each content. Because the chosen dataset must have content equal to every realized content, the Lean alternative is impossible when two distinct contents arise, even if each has a witness of error. It also requires a witness when no content arises, whereas the intended universal condition then holds vacuously."
+      },
+      {
+        "severity": "minor",
+        "description": "As declared, `w : P → E` assigns one true experience to each system, shared across all its datasets. This is a modeling choice for interpreting correctness, not an assignment specified by the passage."
+      }
+    ],
+    "summary": "The falsification alternative matches the claimed reading: one dataset’s prediction excludes its system’s assigned true experience. The misplaced witness quantifiers materially strengthen the first alternative and hence the disjunction."
+  }
+}

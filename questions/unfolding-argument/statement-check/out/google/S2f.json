@@ -1,0 +1,35 @@
+{
+  "id": "S2f",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:55:26Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type), Nonempty X → ∀ (Q : S1 X Y → Prop),\n    (∀ N, N.D11 → Q N) → (∃ N, ¬ Q N) →\n    ∀ c4 : (List X → Y) → Prop,\n      ∃ N : S1 X Y, ¬ (Q N ↔ c4 N.d4)\n",
+  "usage": [
+    [
+      2806,
+      5715
+    ],
+    [
+      4296,
+      19752
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target defines (without asserting or proving) a proposition about structures of type S1 X Y. For types X and Y, an element N of S1 X Y consists of: a finite type N.A1 (not required to be nonempty); a family of types N.A3 assigning a type N.A3 n (not required to be finite) to each n in N.A1; an initial assignment N.a4 choosing an element N.a4 n of N.A3 n for each n in N.A1; an update function N.a5 taking an element n of N.A1, a full assignment σ mapping every m in N.A1 to an element of N.A3 m, and an input x in X, and returning an element of N.A3 n; and a readout function N.a6 mapping a full assignment to an element of Y. Its induced function N.d4 : List X → Y takes a finite sequence xs of elements of X, starts from the initial assignment N.a4, iteratively replaces the current assignment σ with (fun n => N.a5 n σ x) for each x in xs from left to right (leaving N.a4 unchanged when xs is empty), and applies N.a6 to the resulting assignment. Say that m directly influences n in N (written N.D8 m n, defined as N.D7 n m) if there exist two full assignments σ, σ' agreeing at every k ≠ m and an element x in X such that N.a5 n σ x ≠ N.a5 n σ' x. The property N.D11 holds if N.A1 is nonempty and, for every m and n in N.A1 (including when m = n), there is a finite chain m = c_0, c_1, ..., c_k = n of length k ≥ 1 (at least one step; zero steps do not count) such that c_i directly influences c_{i+1} at every step. Target is the proposition that: for all types X and Y, assuming X is nonempty (with no further assumptions on X or Y), for every predicate Q on S1 X Y such that (1) Q N holds for every N in S1 X Y satisfying N.D11 and (2) there exists at least one N in S1 X Y for which Q N does not hold, and for every predicate c4 on functions List X → Y, there exists some N in S1 X Y (depending on X, Y, Q, and c4, with no extra requirements on N) for which it is not the case that Q N holds if and only if c4 holds of N.d4.\"}\n```",
+  "translation": "Target defines (without asserting or proving) a proposition about structures of type S1 X Y. For types X and Y, an element N of S1 X Y consists of: a finite type N.A1 (not required to be nonempty); a family of types N.A3 assigning a type N.A3 n (not required to be finite) to each n in N.A1; an initial assignment N.a4 choosing an element N.a4 n of N.A3 n for each n in N.A1; an update function N.a5 taking an element n of N.A1, a full assignment σ mapping every m in N.A1 to an element of N.A3 m, and an input x in X, and returning an element of N.A3 n; and a readout function N.a6 mapping a full assignment to an element of Y. Its induced function N.d4 : List X → Y takes a finite sequence xs of elements of X, starts from the initial assignment N.a4, iteratively replaces the current assignment σ with (fun n => N.a5 n σ x) for each x in xs from left to right (leaving N.a4 unchanged when xs is empty), and applies N.a6 to the resulting assignment. Say that m directly influences n in N (written N.D8 m n, defined as N.D7 n m) if there exist two full assignments σ, σ' agreeing at every k ≠ m and an element x in X such that N.a5 n σ x ≠ N.a5 n σ' x. The property N.D11 holds if N.A1 is nonempty and, for every m and n in N.A1 (including when m = n), there is a finite chain m = c_0, c_1, ..., c_k = n of length k ≥ 1 (at least one step; zero steps do not count) such that c_i directly influences c_{i+1} at every step. Target is the proposition that: for all types X and Y, assuming X is nonempty (with no further assumptions on X or Y), for every predicate Q on S1 X Y such that (1) Q N holds for every N in S1 X Y satisfying N.D11 and (2) there exists at least one N in S1 X Y for which Q N does not hold, and for every predicate c4 on functions List X → Y, there exists some N in S1 X Y (depending on X, Y, Q, and c4, with no extra requirements on N) for which it is not the case that Q N holds if and only if c4 holds of N.d4.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The formalization idealizes 'systems' as elements of `S1 X Y`: deterministic, discrete-time, synchronous finite-node transition systems with a single fixed initial state and arbitrary (possibly infinite) per-node state types.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The author's structural stand-in `D11` for 'integrated' (a nonempty set of nodes in which every node has a ≥1-step directed path of direct influence to every node, including itself) is satisfied even by a single-node system with a self-loop, so the hypothesis `∀ N, N.D11 → Q N` requires the verdict `Q` to call even 1-node self-looping systems conscious rather than only multi-part systems.\"\n    }\n  ],\n  \"summary\": \"The Lean statement `Target` faithfully matches the author's description in its hypotheses, quantifiers, and conclusion, and the description accurately reports how it bears on the cited passages. The only caveats are minor idealizations in the formal system model `S1` and the fact that the declared structural stand-in `D11` includes single-node self-looping systems.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The formalization idealizes 'systems' as elements of `S1 X Y`: deterministic, discrete-time, synchronous finite-node transition systems with a single fixed initial state and arbitrary (possibly infinite) per-node state types."
+      },
+      {
+        "severity": "minor",
+        "description": "The author's structural stand-in `D11` for 'integrated' (a nonempty set of nodes in which every node has a ≥1-step directed path of direct influence to every node, including itself) is satisfied even by a single-node system with a self-loop, so the hypothesis `∀ N, N.D11 → Q N` requires the verdict `Q` to call even 1-node self-looping systems conscious rather than only multi-part systems."
+      }
+    ],
+    "summary": "The Lean statement `Target` faithfully matches the author's description in its hypotheses, quantifiers, and conclusion, and the description accurately reports how it bears on the cited passages. The only caveats are minor idealizations in the formal system model `S1` and the fact that the declared structural stand-in `D11` includes single-node self-looping systems."
+  }
+}

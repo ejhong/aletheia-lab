@@ -1,0 +1,35 @@
+{
+  "id": "DEF-F",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:22:11Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: S3, D17, D18, D19, D20, D21, D22, D23\nstructure S3 (P D E R : Type) where\n    c1 : P → Set D\n    c2 : D → Set E\n    c3 : D → R\n    c4 : R → E\n\ndef D17 (t : S3 P D E R) : Set D := {o | ∃ p, o ∈ t.c1 p}\n\ndef D18 (t : S3 P D E R) (o : D) : Prop := t.c4 (t.c3 o) ∉ t.c2 o\n\ndef D19 (t : S3 P D E R) (r : R) : Set P := {p | ∃ o ∈ t.c1 p, t.c3 o = r}\n\ndef D20 (t : S3 P D E R) (p : P) : Set E := {e | ∃ o ∈ t.c1 p, e ∈ t.c2 o}\n\ndef D21 (t : S3 P D E R) (r : R) : Prop :=\n  ∃ (S : t.D19 r → t.D19 r) (p : t.D19 r), t.D20 p.1 ∩ t.D20 (S p).1 = ∅\n\ndef D22 (t : S3 P D E R) (r : R) : Prop := ∃ o ∈ t.D17, t.c3 o = r\n\ndef D23 (t : S3 P D E R) : Prop := ∀ r, t.D22 r → t.D21 r\n",
+  "usage": [
+    [
+      2935,
+      577
+    ],
+    [
+      4252,
+      1123
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For any types P, D, E, and R, S3(P,D,E,R) is the type of records with four fields: c1 assigns a set of elements of D to each p in P; c2 assigns a set of elements of E to each o in D; c3 maps D to R; and c4 maps R to E. No further conditions are imposed on these fields. For a record t, the following are definitions, not claims that the defined propositions hold.\\n\\nD17(t) is the set of all o in D such that there exists p in P with o in t.c1(p).\\n\\nD18(t,o), for any o in D, says that t.c4(t.c3(o)) does not belong to t.c2(o). It does not require o to belong to D17(t).\\n\\nD19(t,r), for r in R, is the set of all p in P such that there exists o in t.c1(p) with t.c3(o) = r.\\n\\nD20(t,p), for p in P, is the set of all e in E such that there exists o in t.c1(p) with e in t.c2(o). It uses all of t.c1(p), without restricting t.c3(o) to any particular value.\\n\\nD21(t,r) says that there exists a function S from the elements of D19(t,r) to the elements of that same set, and there exists an element p of D19(t,r), such that D20(t,p) and D20(t,S(p)) have empty intersection. Here D20 uses the underlying P-values of p and S(p). S must be defined on the whole set, but disjointness is required only for the chosen p. S(p) need not differ from p; if they coincide, disjointness means that D20(t,p) is empty.\\n\\nD22(t,r) says that there exists o in D17(t) with t.c3(o) = r.\\n\\nD23(t) says that for every r in R, if D22(t,r) holds, then D21(t,r) holds. Thus the witnesses S and p may depend on r, and no witnesses are required for an r not attained by t.c3 on D17(t). D18 is neither a hypothesis nor a conclusion of D23.\"}",
+  "translation": "For any types P, D, E, and R, S3(P,D,E,R) is the type of records with four fields: c1 assigns a set of elements of D to each p in P; c2 assigns a set of elements of E to each o in D; c3 maps D to R; and c4 maps R to E. No further conditions are imposed on these fields. For a record t, the following are definitions, not claims that the defined propositions hold.\n\nD17(t) is the set of all o in D such that there exists p in P with o in t.c1(p).\n\nD18(t,o), for any o in D, says that t.c4(t.c3(o)) does not belong to t.c2(o). It does not require o to belong to D17(t).\n\nD19(t,r), for r in R, is the set of all p in P such that there exists o in t.c1(p) with t.c3(o) = r.\n\nD20(t,p), for p in P, is the set of all e in E such that there exists o in t.c1(p) with e in t.c2(o). It uses all of t.c1(p), without restricting t.c3(o) to any particular value.\n\nD21(t,r) says that there exists a function S from the elements of D19(t,r) to the elements of that same set, and there exists an element p of D19(t,r), such that D20(t,p) and D20(t,S(p)) have empty intersection. Here D20 uses the underlying P-values of p and S(p). S must be defined on the whole set, but disjointness is required only for the chosen p. S(p) need not differ from p; if they coincide, disjointness means that D20(t,p) is empty.\n\nD22(t,r) says that there exists o in D17(t) with t.c3(o) = r.\n\nD23(t) says that for every r in R, if D22(t,r) holds, then D21(t,r) holds. Thus the witnesses S and p may depend on r, and no witnesses are required for an r not attained by t.c3 on D17(t). D18 is neither a hypothesis nor a conclusion of D23.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Definition 2.1 restricts falsification to a dataset o ∈ O. D18 neither takes o from D17 nor requires o ∈ D17. For example, if no system can produce o and c2 o is empty, D18 still declares a falsification at o.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"S3 assigns predictions and inference contents to every ambient dataset in D, and an inferred experience to every content in R. This requires values even for datasets and contents that never arise, where the passage does not require them.\"\n    }\n  ],\n  \"summary\": \"On attainable datasets, D18 gives the stated falsification test. The observation, composition, and substitution definitions match the passage under the two declared readings.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Definition 2.1 restricts falsification to a dataset o ∈ O. D18 neither takes o from D17 nor requires o ∈ D17. For example, if no system can produce o and c2 o is empty, D18 still declares a falsification at o."
+      },
+      {
+        "severity": "minor",
+        "description": "S3 assigns predictions and inference contents to every ambient dataset in D, and an inferred experience to every content in R. This requires values even for datasets and contents that never arise, where the passage does not require them."
+      }
+    ],
+    "summary": "On attainable datasets, D18 gives the stated falsification test. The observation, composition, and substitution definitions match the passage under the two declared readings."
+  }
+}

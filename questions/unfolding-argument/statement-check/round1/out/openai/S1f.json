@@ -1,0 +1,43 @@
+{
+  "id": "S1f",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:21:13Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type) (P : S2 X Y) (T : ℕ),\n    ∃ N : S1 X Y, N.D9 ∧ N.d13 = T ∧\n      ∀ xs : List X, xs.length ≤ T → N.d4 xs = P.d4 xs\n",
+  "usage": [
+    [
+      2638,
+      325
+    ],
+    [
+      3392,
+      1733
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every type X, every type Y, every P of type S2 X Y, and every natural number T (including zero), there exists an N of type S1 X Y with exactly T indices and no directed cycle of positive length, not even a self-loop. Here an edge m → n means that there exist two full states of N agreeing at every index other than m, and a single input x in X, for which the updates at n differ. The states witnessing an edge need not be reachable from the initial state. The same N must work for every list xs of inputs from X of length at most T, including the empty list: N and P must give equal outputs on xs. Both process xs from left to right from their respective initial states; N updates all indices from the previous full state and applies its readout to the final full state, while P updates both components from the previous pair and applies its readout only to the final second component. N may depend on X, Y, P, and T, but not on xs. No correspondence of internal states or agreement on longer lists is required.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every type X, every type Y, every P of type S2 X Y, and every natural number T (including zero), there exists an N of type S1 X Y with exactly T indices and no directed cycle of positive length, not even a self-loop. Here an edge m → n means that there exist two full states of N agreeing at every index other than m, and a single input x in X, for which the updates at n differ. The states witnessing an edge need not be reachable from the initial state. The same N must work for every list xs of inputs from X of length at most T, including the empty list: N and P must give equal outputs on xs. Both process xs from left to right from their respective initial states; N updates all indices from the previous full state and applies its readout to the final full state, while P updates both components from the previous pair and applies its readout only to the final second component. N may depend on X, Y, P, and T, but not on xs. No correspondence of internal states or agreement on longer lists is required.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The fixed-parameter qualification is on the wrong side of the comparison. The passage leaves finite-horizon unfolding unrefuted when the recurrent system's parameters are fixed. Lean allows P's parameters to change and still requires a matching fixed-rule N. This is a rival hypothesis to the claimed breakdown under plasticity, not the equivalence the authors say they do not refute.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Equality on histories is not the same test as change of a parameter-dependent input–output map over time. Lean runs both systems from their initial states on each history and compares their final outputs. A fixed-rule N can use its state to track the effects of P's parameter changes, so history-wise agreement is compatible with P having different input–output maps before and after a change.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"S2 does not require a recurrent neural architecture or nontrivial plasticity. Its first component can remain constant or change without affecting the dynamics of the second component. The quantifier thus ranges over arbitrary deterministic two-component systems, without identifying the rapid, function-altering plasticity at issue in the passage.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"The passage gives a time horizon, not a bound of exactly T units independent of the original system's size. Lean requires that exact count but allows each unit an arbitrary state type and update function: a single unit can represent the original system's entire state and parameters. An acyclic simulator with that count need not be a unit-by-unit unfolding of the recurrent network.\"\n    }\n  ],\n  \"summary\": \"The target poses a finite-history simulation question for adaptive systems. It neither stays within the fixed-parameter scope of the unrefuted result nor tests the time-dependent loss of equivalence described in the passage.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The fixed-parameter qualification is on the wrong side of the comparison. The passage leaves finite-horizon unfolding unrefuted when the recurrent system's parameters are fixed. Lean allows P's parameters to change and still requires a matching fixed-rule N. This is a rival hypothesis to the claimed breakdown under plasticity, not the equivalence the authors say they do not refute."
+      },
+      {
+        "severity": "major",
+        "description": "Equality on histories is not the same test as change of a parameter-dependent input–output map over time. Lean runs both systems from their initial states on each history and compares their final outputs. A fixed-rule N can use its state to track the effects of P's parameter changes, so history-wise agreement is compatible with P having different input–output maps before and after a change."
+      },
+      {
+        "severity": "major",
+        "description": "S2 does not require a recurrent neural architecture or nontrivial plasticity. Its first component can remain constant or change without affecting the dynamics of the second component. The quantifier thus ranges over arbitrary deterministic two-component systems, without identifying the rapid, function-altering plasticity at issue in the passage."
+      },
+      {
+        "severity": "major",
+        "description": "The passage gives a time horizon, not a bound of exactly T units independent of the original system's size. Lean requires that exact count but allows each unit an arbitrary state type and update function: a single unit can represent the original system's entire state and parameters. An acyclic simulator with that count need not be a unit-by-unit unfolding of the recurrent network."
+      }
+    ],
+    "summary": "The target poses a finite-history simulation question for adaptive systems. It neither stays within the fixed-parameter scope of the unrefuted result nor tests the time-dependent loss of equivalence described in the passage."
+  }
+}

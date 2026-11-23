@@ -1,0 +1,47 @@
+{
+  "id": "S1h",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:21:25Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type), Nonempty X → ∀ (N : S1 X Y),\n    ∃ N' : S1 X Y, N'.D11 ∧ N'.d13 = N.d13 + 1 ∧ S1.D6 N' N\n",
+  "usage": [
+    [
+      2630,
+      338
+    ],
+    [
+      3722,
+      1722
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target names the following proposition; it does not prove it. For every pair of types X and Y, if X is nonempty, then for every N of type S1 X Y there exists an N′ of type S1 X Y satisfying all three conditions: (1) N′ has a nonempty node set, and for every ordered pair of its nodes m, n there is a directed path of at least one edge from m to n. This includes m = n, so each node must have a positive-length path back to itself. An edge from i to j means that there exist two global state assignments of N′ and a common input x in X such that the assignments agree at every node other than i, but the updates at j on input x differ. The assignments need not be reachable from the initial state. (2) N′ has exactly one more node than N. (3) For every finite list of inputs from X, including the empty list and with no length bound, N′ and N give equal outputs after processing the list from their respective initial states. There is no dependency-graph hypothesis on N, and N′ is not required to contain N or preserve its internal states or edges.\"}",
+  "translation": "Target names the following proposition; it does not prove it. For every pair of types X and Y, if X is nonempty, then for every N of type S1 X Y there exists an N′ of type S1 X Y satisfying all three conditions: (1) N′ has a nonempty node set, and for every ordered pair of its nodes m, n there is a directed path of at least one edge from m to n. This includes m = n, so each node must have a positive-length path back to itself. An edge from i to j means that there exist two global state assignments of N′ and a common input x in X such that the assignments agree at every node other than i, but the updates at j on input x differ. The assignments need not be reachable from the initial state. (2) N′ has exactly one more node than N. (3) For every finite list of inputs from X, including the empty list and with no length bound, N′ and N give equal outputs after processing the list from their respective initial states. There is no dependency-graph hypothesis on N, and N′ is not required to contain N or preserve its internal states or edges.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The vice-versa half of P2 starts with a feedforward system, as does Appendix A. The target has no feedforward hypothesis on N: it promises a twin even for an already recurrent system.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"P2 asks for a recurrent implementation. D11 requires positive-length directed reachability from every unit to every unit, including itself. A recurrent network can have units outside its feedback loops. Appendix A's claim that a device can yield arbitrarily high ϕ does not establish this whole-network connectivity condition, and the declared structural stand-in gives no bound on ϕ.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"The target guarantees exactly one more unit than in the original system. The passage gives no unit-count bound: inserting one device does not mean inserting one unit. Moreover, the Lean equality counts units in two implementations; it does not mean one was obtained by adding a unit to the other.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"D6 requires a single twin to match the output on every finite input history from initialization, including the empty history, with no length bound. Equality is faithful to P2, but this temporal scope is additional: Appendix A describes a map x ↦ F(x), and neither passage explicitly establishes indefinite history-by-history simulation of an arbitrary stateful system.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean models systems as deterministic, synchronously updated networks with finitely many units, fixed initial states, and unrestricted per-unit state types. Its feedback edges are functional dependencies that may be witnessed on unreachable states. The passages do not specify these modeling conventions or explicitly impose the declared nonempty-input assumption.\"\n    }\n  ],\n  \"summary\": \"The target preserves the core idea of a recurrent alternative with equal input-output behavior. Its guarantee for arbitrary starting networks, at all finite horizons, with feedback throughout the twin and exactly one extra unit, is materially stronger than the cited claims.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The vice-versa half of P2 starts with a feedforward system, as does Appendix A. The target has no feedforward hypothesis on N: it promises a twin even for an already recurrent system."
+      },
+      {
+        "severity": "major",
+        "description": "P2 asks for a recurrent implementation. D11 requires positive-length directed reachability from every unit to every unit, including itself. A recurrent network can have units outside its feedback loops. Appendix A's claim that a device can yield arbitrarily high ϕ does not establish this whole-network connectivity condition, and the declared structural stand-in gives no bound on ϕ."
+      },
+      {
+        "severity": "major",
+        "description": "The target guarantees exactly one more unit than in the original system. The passage gives no unit-count bound: inserting one device does not mean inserting one unit. Moreover, the Lean equality counts units in two implementations; it does not mean one was obtained by adding a unit to the other."
+      },
+      {
+        "severity": "major",
+        "description": "D6 requires a single twin to match the output on every finite input history from initialization, including the empty history, with no length bound. Equality is faithful to P2, but this temporal scope is additional: Appendix A describes a map x ↦ F(x), and neither passage explicitly establishes indefinite history-by-history simulation of an arbitrary stateful system."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean models systems as deterministic, synchronously updated networks with finitely many units, fixed initial states, and unrestricted per-unit state types. Its feedback edges are functional dependencies that may be witnessed on unreachable states. The passages do not specify these modeling conventions or explicitly impose the declared nonempty-input assumption."
+      }
+    ],
+    "summary": "The target preserves the core idea of a recurrent alternative with equal input-output behavior. Its guarantee for arbitrary starting networks, at all finite horizons, with feedback throughout the twin and exactly one extra unit, is materially stronger than the cited claims."
+  }
+}

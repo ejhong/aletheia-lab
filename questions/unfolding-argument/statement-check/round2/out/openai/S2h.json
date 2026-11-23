@@ -1,0 +1,26 @@
+{
+  "id": "S2h",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:48:30Z",
+  "target": "def Target : Prop :=\n  ∀ (X1 : Type u) (X2 : Type v) (E : Type w), Nonempty E → ∀ (g : X1 → X2) (c2 : X1 → E),\n    ((∃ c4 : X2 → E, ∀ s, c2 s = c4 (g s)) ↔ (∀ s s', g s = g s' → c2 s = c2 s'))\n",
+  "usage": [
+    [
+      2673,
+      202
+    ],
+    [
+      3564,
+      433
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition: for every type X1 in universe u, every type X2 in universe v, and every type E in universe w, if E is nonempty, then for every function g from X1 to X2 and every function c2 from X1 to E, the following are equivalent: (1) there exists a function c4 from X2 to E such that for every s in X1, c2(s) = c4(g(s)); (2) for every s and s′ in X1, if g(s) = g(s′), then c2(s) = c2(s′). Neither X1 nor X2 is required to be nonempty, and g need not be injective or surjective. The function c4 need not be unique; it must be defined on all of X2, but the equation imposes no condition on its values outside the image of g.\"}",
+  "translation": "Target defines, but does not prove, the following proposition: for every type X1 in universe u, every type X2 in universe v, and every type E in universe w, if E is nonempty, then for every function g from X1 to X2 and every function c2 from X1 to E, the following are equivalent: (1) there exists a function c4 from X2 to E such that for every s in X1, c2(s) = c4(g(s)); (2) for every s and s′ in X1, if g(s) = g(s′), then c2(s) = c2(s′). Neither X1 nor X2 is required to be nonempty, and g need not be injective or surjective. The function c4 need not be unique; it must be defined on all of X2, but the equation imposes no condition on its values outside the image of g.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The Lean proposition says exactly that some inference rule agrees with the theory on every system if and only if systems with the same behaviour receive the same prediction. The description correctly distinguishes this from Kleiner and Hoel’s lemma: a substitution with disjoint prediction sets implies a falsification for the inference rule in use.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The Lean proposition says exactly that some inference rule agrees with the theory on every system if and only if systems with the same behaviour receive the same prediction. The description correctly distinguishes this from Kleiner and Hoel’s lemma: a substitution with disjoint prediction sets implies a falsification for the inference rule in use."
+  }
+}
