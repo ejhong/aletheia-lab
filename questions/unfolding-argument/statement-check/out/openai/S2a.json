@@ -1,0 +1,26 @@
+{
+  "id": "S2a",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:47:12Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R) (r : R),\n    t.D21 r → ∃ o, t.c3 o = r ∧ t.D18 o\n",
+  "usage": [
+    [
+      2627,
+      423
+    ],
+    [
+      3429,
+      560
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every choice of types P, D, E and R, every record t of type S3 P D E R, and every r in R, let A be the set of p in P for which some o in t.c1(p) satisfies t.c3(o) = r. For each p in P, let B(p) be the set of e in E that belong to t.c2(o) for some o in t.c1(p), whether or not t.c3(o) = r. If there exists a function S from A to A and there exists a p in A such that B(p) and B(S(p)) are disjoint, then there exists an o in D such that t.c3(o) = r, o belongs to t.c1(q) for some q in P, and t.c4(t.c3(o)) does not belong to t.c2(o). Disjointness is required only for the witnessing p, not for every member of A; S(p) need not differ from p. The conclusion does not require q to be p or S(p).\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every choice of types P, D, E and R, every record t of type S3 P D E R, and every r in R, let A be the set of p in P for which some o in t.c1(p) satisfies t.c3(o) = r. For each p in P, let B(p) be the set of e in E that belong to t.c2(o) for some o in t.c1(p), whether or not t.c3(o) = r. If there exists a function S from A to A and there exists a p in A such that B(p) and B(S(p)) are disjoint, then there exists an o in D such that t.c3(o) = r, o belongs to t.c1(q) for some q in P, and t.c4(t.c3(o)) does not belong to t.c2(o). Disjointness is required only for the witnessing p, not for every member of A; S(p) need not differ from p. The conclusion does not require q to be p or S(p).",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"D21 matches Definition 3.1: the transformation preserves the class of configurations capable of producing inference content r, and disjoint predictions are required for at least one configuration. The conclusion gives a falsification at a producible dataset with content r, as in Lemma 3.5; dropping the content condition gives Lemma 3.3.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "D21 matches Definition 3.1: the transformation preserves the class of configurations capable of producing inference content r, and disjoint predictions are required for at least one configuration. The conclusion gives a falsification at a producible dataset with content r, as in Lemma 3.5; dropping the content condition gives Lemma 3.3."
+  }
+}

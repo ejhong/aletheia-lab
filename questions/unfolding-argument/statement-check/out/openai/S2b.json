@@ -1,0 +1,26 @@
+{
+  "id": "S2b",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:47:13Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R),\n    t.D23 → ∀ r, t.D22 r → ∃ o, t.c3 o = r ∧ t.D18 o\n",
+  "usage": [
+    [
+      2630,
+      534
+    ],
+    [
+      3670,
+      478
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R and every record t with maps c1 assigning a set in D to each p in P, c2 assigning a set in E to each o in D, c3 from D to R, and c4 from R to E, say that s in R occurs if c3(o) = s for some o belonging to c1(p) for some p. Let Q(s) be the set of all p for which some o in c1(p) has c3(o) = s, and let U(p) be the union of c2(o) over all o in c1(p), without restricting c3(o). Assume that for every s in R, if s occurs, then there exist a function S from Q(s) to Q(s) and an element p of Q(s) such that U(p) and U(S(p)) are disjoint. Disjointness is required only for the chosen p, and S(p) need not be distinct from p. Under that hypothesis, for every r in R, if r occurs, then there exists an o in D such that c3(o) = r, o belongs to c1(q) for some q in P, and c4(c3(o)) does not belong to c2(o). This is required for at least one such o, not for every o giving r; q is not required to be either of the elements p and S(p) from the hypothesis.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every choice of types P, D, E, R and every record t with maps c1 assigning a set in D to each p in P, c2 assigning a set in E to each o in D, c3 from D to R, and c4 from R to E, say that s in R occurs if c3(o) = s for some o belonging to c1(p) for some p. Let Q(s) be the set of all p for which some o in c1(p) has c3(o) = s, and let U(p) be the union of c2(o) over all o in c1(p), without restricting c3(o). Assume that for every s in R, if s occurs, then there exist a function S from Q(s) to Q(s) and an element p of Q(s) such that U(p) and U(S(p)) are disjoint. Disjointness is required only for the chosen p, and S(p) need not be distinct from p. Under that hypothesis, for every r in R, if r occurs, then there exists an o in D such that c3(o) = r, o belongs to c1(q) for some q in P, and c4(c3(o)) does not belong to c2(o). This is required for at least one such o, not for every o giving r; q is not required to be either of the elements p and S(p) from the hypothesis.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"`D23` requires a substitution for every inference content that can occur in a possible observation. The conclusion requires, for each such content, at least one possible observation with that same content whose prediction set excludes the inferred experience—exactly the content-specific falsification asserted by Proposition 3.6.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "`D23` requires a substitution for every inference content that can occur in a possible observation. The conclusion requires, for each such content, at least one possible observation with that same content whose prediction set excludes the inferred experience—exactly the content-specific falsification asserted by Proposition 3.6."
+  }
+}

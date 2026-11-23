@@ -53,3 +53,20 @@ Dated entries, newest last: what was tried, what happened, what next.
   units and the lower bound of S1e is T, so for the latch the bound is exact.
 - Wrote `statement-check/passages.md` (24 passages) and `check_quotes.py`: all 49 quoted pieces are found in the
   extracted texts, letters only.
+- Statement check, round 1 (29 items, 4 planted errors), $14.02. Both checkers caught all four planted errors.
+  OpenAI rated 15 of 25 real items divergent, Google 5. Most of OpenAI's were of one kind: a statement of the
+  lab's own judged as if it rendered a passage. Several were real, listed in `protocol.md`: the reading of
+  Proposition 3.7, a missing restriction in the falsification definition, a wrong passage for S1b, and my
+  misdescription of what the plasticity paper concedes.
+- Round 2 (19 items, 2 new planted errors), $8.50: both caught both. Google: no major divergence left. OpenAI:
+  two, both about how I described a statement (S1f, S1h), not about the Lean. Round 3 (those two items), $0.89:
+  clean.
+- Final: 24 of 26 real items faithful or faithful with caveats from both checkers. Two accepted divergences, both
+  from OpenAI, both the same point: the paper's premise P2 has no time limit and the provable statement has one.
+- Spent $23.41 of the $40 budget (SPENDING.md). The lab's total for today is over the $50 cap, with Eugene's
+  approval given at the start of the session.
+- A new statement came out of the check: S2c′. An outside model's counterexample to a strong reading of a
+  published proposition, now stated in Lean; proved only after the lock.
+- Gate after Stage 0, reported and not waited on (Eugene's instruction to run end to end): twenty statements,
+  each with a trial proof that compiles; the outcome table is in `protocol.md`.
+

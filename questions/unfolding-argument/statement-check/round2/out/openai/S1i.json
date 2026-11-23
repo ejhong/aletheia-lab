@@ -1,0 +1,26 @@
+{
+  "id": "S1i",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:46:50Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type) (N : S1 X Y),\n    ∃ N' : S1 X Y, N'.d13 = 1 ∧ N'.D12 ∧ S1.D6 N' N\n",
+  "usage": [
+    [
+      2629,
+      305
+    ],
+    [
+      3400,
+      517
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition: For every input type X, every output type Y, and every N of type S1 X Y, there exists an N′ of type S1 X Y satisfying all three conditions: (1) N′ has exactly one index; this counts indices, not possible states. (2) For every ordered pair of distinct indices m and n of N′, it is not the case that there is both a nonempty directed chain of dependency steps from m to n and one from n to m. A step from i to j means that there exist two state assignments agreeing at every index other than i, and a common input, for which the updates at j differ. The assignments need not be reachable. Condition (2) is vacuous with one index and does not forbid self-dependence. (3) For every finite list of inputs in X, including the empty list and with no length bound, N′ and N give equal outputs after each starts from its own initial assignment and processes the list from left to right. The same N′ must work for all lists; equality of internal states or update functions is not required.\"}",
+  "translation": "Target defines, but does not prove, the following proposition: For every input type X, every output type Y, and every N of type S1 X Y, there exists an N′ of type S1 X Y satisfying all three conditions: (1) N′ has exactly one index; this counts indices, not possible states. (2) For every ordered pair of distinct indices m and n of N′, it is not the case that there is both a nonempty directed chain of dependency steps from m to n and one from n to m. A step from i to j means that there exist two state assignments agreeing at every index other than i, and a common input, for which the updates at j differ. The assignments need not be reachable. Condition (2) is vacuous with one index and does not forbid self-dependence. (3) For every finite list of inputs in X, including the empty list and with no length bound, N′ and N give equal outputs after each starts from its own initial assignment and processes the list from left to right. The same N′ must work for all lists; equality of internal states or update functions is not required.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"For every modeled system, the TARGET specifies a single one-unit twin that matches its output on every finite input list; the distinct-unit feedback condition is vacuous and permits self-dependence. Storing the whole state in that unit gives a possible witness, though the snippet defines the proposition rather than proving it, and the description correctly distinguishes this observation from Hanson and Walker’s flip-flop hierarchy and its Φ = 0 conclusion.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "For every modeled system, the TARGET specifies a single one-unit twin that matches its output on every finite input list; the distinct-unit feedback condition is vacuous and permits self-dependence. Storing the whole state in that unit gives a possible witness, though the snippet defines the proposition rather than proving it, and the description correctly distinguishes this observation from Hanson and Walker’s flip-flop hierarchy and its Φ = 0 conclusion."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "S2c2",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:47:46Z",
+  "target": "def Target : Prop :=\n  ∃ (P D E R : Type) (t : S3 P D E R) (w : P → E),\n    t.D23 ∧ (∀ p, ∀ o ∈ t.c1 p, w p ∈ t.c2 o) ∧\n    (∃ p, ∃ o ∈ t.c1 p, t.c4 (t.c3 o) = w p)\n",
+  "usage": [
+    [
+      2667,
+      697
+    ],
+    [
+      3541,
+      1758
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. There exist types P, D, E and R, a record t of type S3 P D E R, and a function w from P to E such that all three conditions below hold. Write P_r for the set of p in P such that some o in t.c1(p) has t.c3(o) = r, and U(p) for the union of t.c2(o) over all o in t.c1(p), without restricting o to those with any particular value of t.c3(o).\\n\\n(1) For every r in R, if there exists an o in D that belongs to t.c1(q) for some q in P and has t.c3(o) = r, then there exist a function S from P_r to P_r and a p in P_r such that U(p) and U(S(p)) are disjoint. S and p may depend on r. Disjointness is required at the chosen p, not at every member of P_r, and S is not required to be a permutation.\\n\\n(2) For every p in P and every o in t.c1(p), w(p) belongs to t.c2(o). Thus the same w(p) must work for all such o.\\n\\n(3) There exist a p in P and an o in t.c1(p) such that t.c4(t.c3(o)) = w(p). This equality is required for at least one such pair, not for every pair, and the p here is not required to be a witness chosen in (1).\"}",
+  "translation": "Target defines, but does not prove, the following proposition. There exist types P, D, E and R, a record t of type S3 P D E R, and a function w from P to E such that all three conditions below hold. Write P_r for the set of p in P such that some o in t.c1(p) has t.c3(o) = r, and U(p) for the union of t.c2(o) over all o in t.c1(p), without restricting o to those with any particular value of t.c3(o).\n\n(1) For every r in R, if there exists an o in D that belongs to t.c1(q) for some q in P and has t.c3(o) = r, then there exist a function S from P_r to P_r and a p in P_r such that U(p) and U(S(p)) are disjoint. S and p may depend on r. Disjointness is required at the chosen p, not at every member of P_r, and S is not required to be a permutation.\n\n(2) For every p in P and every o in t.c1(p), w(p) belongs to t.c2(o). Thus the same w(p) must work for all such o.\n\n(3) There exist a p in P and an o in t.c1(p) such that t.c4(t.c3(o)) = w(p). This equality is required for at least one such pair, not for every pair, and the p here is not required to be a witness chosen in (1).",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The TARGET defines the stated existence claim: there is a universal substitution, every prediction on a system’s dataset contains that system’s assigned true experience, and at least one inference is correct. With all predictions correct, the disjoint prediction sets for each realized inference content force its inference to be wrong for at least one system, not necessarily for every system; the description presents this distinction as the author’s argument, not as a concession by the passage.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The TARGET defines the stated existence claim: there is a universal substitution, every prediction on a system’s dataset contains that system’s assigned true experience, and at least one inference is correct. With all predictions correct, the disjoint prediction sets for each realized inference content force its inference to be wrong for at least one system, not necessarily for every system; the description presents this distinction as the author’s argument, not as a concession by the passage."
+  }
+}

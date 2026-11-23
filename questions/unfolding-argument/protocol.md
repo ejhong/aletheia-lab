@@ -4,7 +4,7 @@ Issue: #66 · Lane: proof · Budget: $40 (Stages 0–2: statement checks and any
 
 ## Question
 
-What does the unfolding argument prove, and from which premises? Concretely: which of the nineteen statements
+What does the unfolding argument prove, and from which premises? Concretely: which of the twenty statements
 S1a–S1i and S2a–S2i in `lean/UnfoldingArgument/Statement.lean` are theorems of Lean 4 with the pinned Mathlib,
 using no axioms beyond Lean's standard three?
 
@@ -59,7 +59,7 @@ Definitions (D) and statements (S). The Lean text is authoritative; the gloss is
 | D12 `latch` | One unit, one bit, set for good by an input | the lab's example |
 | D13 `PlasticSystem` | Activity and weights; the weights change by a learning rule | O'Reilly-Shah 2026, "Proofs" |
 | D14 `perturbedResponse` | Responses when the experimenter also intervenes on the internal state | Doerig 2019, p. 51 |
-| D15–D18 `Testing`, `FalsificationAt`, `SubstitutionAt`, `UniversalSubstitution` | Kleiner and Hoel's setup | Kleiner and Hoel 2021, §§2.1–2.4, Defs 2.1, 3.1, 3.2 |
+| D15–D18 `Testing`, `FalsificationAt`, `SubstitutionAt`, `UniversalSubstitution` | Kleiner and Hoel's setup: datasets, predictions, inference from the report part of a dataset; a falsification at a dataset that can arise | Kleiner and Hoel 2021, §§2.1–2.4, Defs 2.1, 3.1, 3.2 |
 | S1a `UnfoldingAtFiniteHorizon` | The unfolded network is loop-free, matches for T steps, and has T times the units | Doerig 2019, pp. 52–53 (P2); Herzog 2022, p. 10 |
 | S1b `EveryBehaviourHasLoopFreeRealizer` | Any input-output function over T steps has a loop-free realizer with T units | Doerig 2019, p. 51; Herzog 2022, p. 11 |
 | S1c `LoopFreeHasFiniteMemory` | A loop-free network with d units forgets everything older than d steps | O'Reilly-Shah 2026, "Proofs" |
@@ -71,7 +71,8 @@ Definitions (D) and statements (S). The Lean text is authoritative; the gloss is
 | S1i `EveryNetworkHasSingleUnitTwin` | If a unit may have memory, a single unit matches any network forever | the lab's; Hanson and Walker 2021 |
 | S2a `SubstitutionGivesFalsification` | A substitution gives a falsification | Kleiner and Hoel 2021, Lemmas 3.3 and 3.5 |
 | S2b `UniversalSubstitutionFalsifiesEveryReport` | A universal substitution gives one for every report | Kleiner and Hoel 2021, Prop. 3.6 |
-| S2c `EveryInferenceWrongOrTheoryWrong` | Then every inference is wrong somewhere, or the theory is | Kleiner and Hoel 2021, Prop. 3.7 |
+| S2c `EveryInferenceWrongOrTheoryWrong` | Then every report is wrong about at least one system, or some prediction is wrong | Kleiner and Hoel 2021, Prop. 3.7 |
+| S2c′ `SomeInferenceCanStillBeRight` | It cannot be read more strongly: with every prediction right, some inference can still be right | the lab's; about Prop. 3.7 |
 | S2d `StrictDependenceLeavesNothingToTest` | Under strict dependence, and if every conceivable report already occurs, experiments add nothing | Kleiner and Hoel 2021, Theorem 4.3 and its proof |
 | S2d′ `StrictDependenceCanStillBeTested` | Without that second assumption the conclusion fails | the lab's; about Theorem 4.3 as printed |
 | S2e `UnfoldingArgumentAtFiniteHorizon` | A theory that excludes loop-free systems disagrees with every rule that infers consciousness from T steps of behaviour | Doerig 2019, p. 53 (P1–P4, C) |
@@ -110,12 +111,15 @@ How the premises of Doerig et al. (2019, p. 53) appear in the Lean:
      and every name the lab chose (definitions, structure fields, bound variables such as `conscious`) replaced
      by a neutral label. It translates the target into English.
    - Phase B: the same checker is shown the source passage(s) and the lab's claim about the target, and returns a
-     verdict (`faithful`, `faithful_with_caveats`, `divergent`) with each divergence rated major or minor.
-   - Four planted wrong items (`statement-check/items.json`, "decoys") are mixed in. A planted error is caught
-     when the verdict is `divergent`.
+     verdict (`faithful`, `faithful_with_caveats`, `divergent`) with each divergence rated major or minor. Where
+     the target is the lab's own statement and not a rendering of a passage, the claim says so, and the checker
+     is asked two things: whether the Lean says what the lab's description says, and whether the description
+     reports the passages accurately.
+   - Planted wrong items (`statement-check/items.json`, "decoys") are mixed in: four in round 1, two more in
+     round 2. A planted error is caught when the verdict is `divergent`.
    - The check may be run in rounds. Each round's inputs and raw outputs are kept (`statement-check/round1/` and
      so on; `statement-check/out/` is the round that the locked statements went through).
-   - The exact prompts are the constants `PROMPT_A` and `PROMPT_B` in `run.py`. The summary is
+   - The exact prompts are the constants `PROMPT_A`, `PROMPT_B` and `PROMPT_B_OWN` in `run.py`. The summary is
      `statement-check/REPORT.md`.
 4. Act on the report before locking:
    - A major divergence on a real item is fixed in `Statement.lean` (and the item re-checked), or accepted with
@@ -137,7 +141,7 @@ How the premises of Doerig et al. (2019, p. 53) appear in the Lean:
 
 ### Stage 2: the falsification argument and the replies
 
-8. Prove S2a–S2i in the same way. Non-vacuity: a setup with a substitution (S2a) and with a universal
+8. Prove S2a–S2i (with S2c′ and S2d′) in `lean/UnfoldingArgument/Results2.lean` in the same way. Non-vacuity: a setup with a substitution (S2a) and with a universal
    substitution (S2b, S2c); a setup satisfying the assumptions of S2d with a falsification on both sides; a
    verdict satisfying the assumptions of S2e, and one satisfying those of S2f.
 9. Audit: `#assert_standard_axioms` on every headline theorem, inside the build. CI
@@ -200,4 +204,52 @@ What a full set of proofs would and would not support, written before any of the
 
 ## Statement check outcome and accepted divergences
 
-To be written after the statement check and before the lock.
+Run on 2026-11-23 with OpenAI `gpt-6.2-astra` and Google `gemini-4-neon`, in three rounds. Full detail:
+`statement-check/REPORT.md` (final), `statement-check/round1/` and `statement-check/round2/`. The tie-breaker was
+not run. Cost: $23.41.
+
+**Planted errors.** Both checkers returned `divergent` on all six: four in round 1, two more in round 2.
+
+**Changes made because of the check.**
+
+- Round 1 found (both checkers) that Proposition 3.7's "every single inference operation is wrong" is stronger
+  than what S2c says, which is that every report is wrong about at least one system. OpenAI gave a setup in which
+  the stronger reading fails. S2c's claim now states the weaker reading, and the setup became a statement of its
+  own, S2c′.
+- Round 1 found (OpenAI) that a falsification was not restricted to datasets that can arise, as Definition 2.1
+  requires. `FalsificationAt` now includes it, and S2a and S2b are stated through it.
+- Round 1 found (both) that my description of S1f was wrong: O'Reilly-Shah et al. concede finite-horizon
+  equivalence for fixed parameters only, so S1f is not "the equivalence they do not refute". It contradicts their
+  claim, under one notion of equivalence and not under theirs. The description now says which.
+- Round 1 found (both) that S1b was tied to the wrong sentence: the one quoted is about recurrent networks. The
+  passage on feedforward networks and the caption of Fig. 2 were added (P-D51c).
+- Round 1 found (Google) that `FeedbackFree` captures only the ordering condition in Hanson and Walker's
+  architecture, not their requirement that the components be simple. The claim now says only that.
+- Round 1 found (OpenAI) that `unfold` is a pipeline in which every copy runs at every step, where the passages
+  describe copy k as evaluated once, for step k. The definition is unchanged; it is now described as a real-time
+  variant, with the differences listed.
+- Round 1 found (OpenAI) that `PlasticSystem` allows a learning rule that changes nothing. Unchanged; the claim
+  now says the class includes plastic systems, not that it is exactly them. Round 2 found (OpenAI) that even
+  "includes every system with plasticity" claimed too much; the description now says the class is offered as a
+  model of plasticity and that nothing shows every plastic system has this form.
+- After round 1 the lab's own statements were marked as such, and compared with a prompt that asks whether the
+  Lean says what the description says and whether the description reports the passages accurately. In round 1
+  the standard prompt had counted "the passage does not assert this" as a major divergence for them.
+- Round 2 found (OpenAI) that my description of S1h called agreement on every finite history a strengthening of
+  P2, which has no time limit to strengthen. Corrected; checked again in round 3.
+
+**Final verdicts.** Of 26 real items, both checkers gave `faithful` or `faithful_with_caveats` on 24. The
+exceptions and the decisions:
+
+| Item | Divergence | Decision |
+|---|---|---|
+| S1a `UnfoldingAtFiniteHorizon` | OpenAI: `divergent`. Premise P2 states no time limit; S1a gives, for each T, a twin that matches for T steps only. "If N computes a running OR", the T-layer twin differs from it on a longer input. Google: `faithful_with_caveats`, with the same point rated minor. | Accepted and carried into `RESULTS.md`. The divergence is the finding: P2 as printed is not what can be proved. S1a is the provable form, S1d says the printed form is false, and the checker's running OR is the latch of S1d. |
+| S2e `UnfoldingArgumentAtFiniteHorizon` | OpenAI: `divergent`, for the same reason: the passage speaks of identical input-output functions without a time bound, and at each fixed T the Lean lets the inference see only T steps. Google: `faithful_with_caveats`. | Accepted and carried into `RESULTS.md`. S2e is the argument in the form the mathematics supports. S2g shows that the form without a time bound fails for a theory that only excludes loop-free systems, and S2f gives the form that does hold without a time bound. |
+
+**Caveats both checkers raise on most items** (all rated minor, all carried into `RESULTS.md`): units are arbitrary
+state machines and not neurons, and equivalence is exact, not approximate; time is discrete, updates are
+synchronous and deterministic, with a fixed starting state; dependence between units is judged over all joint
+states, including ones the system never reaches; `Integrated` is a property of a graph and is not ϕ; a verdict is
+any predicate with the stated properties, so the hypotheses of S2e and S2f are satisfied by "theories" that have
+nothing to do with causal structure; an inference rule is any function of behaviour, whether or not an experiment
+could compute it; the unit counts in S1b, S1f and S1g do not count the complexity of the readout.

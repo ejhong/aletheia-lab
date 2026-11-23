@@ -1,0 +1,26 @@
+{
+  "id": "S1f",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:59:47Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type) (P : S2 X Y) (T : ℕ),\n    ∃ N : S1 X Y, N.D9 ∧ N.d13 = T ∧\n      ∀ xs : List X, xs.length ≤ T → N.d4 xs = P.d4 xs\n",
+  "usage": [
+    [
+      2647,
+      410
+    ],
+    [
+      3660,
+      719
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every type X, every type Y, every S2 record P on X and Y, and every natural number T (including zero), there exists an S1 record N on X and Y satisfying all three conditions below. (1) N has no directed chain of one or more dependency edges from any node back to itself. An edge goes from m to n if there exist two full state assignments that agree at every node other than m, and an input x, such that N's update at n gives different values on the two assignments with that same x. The assignments need not be reachable. (2) N has exactly T nodes; this counts nodes, not their possible state values. (3) For every finite list xs of inputs from X with length at most T, including the empty list, N and P give the same output. N starts at a4, updates every node using a5 from the previous full assignment and the next input, and applies its a6 to the final assignment. P starts at (b3, b4), updates the first and second components using b6 and b5 respectively, both from the previous pair and the next input, and applies its a6 to the final second component. Both process the list from left to right. N may depend on X, Y, P, and T, but the same N must work for every list within the bound. No agreement on longer lists or correspondence between the internal states of N and P is required.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every type X, every type Y, every S2 record P on X and Y, and every natural number T (including zero), there exists an S1 record N on X and Y satisfying all three conditions below. (1) N has no directed chain of one or more dependency edges from any node back to itself. An edge goes from m to n if there exist two full state assignments that agree at every node other than m, and an input x, such that N's update at n gives different values on the two assignments with that same x. The assignments need not be reachable. (2) N has exactly T nodes; this counts nodes, not their possible state values. (3) For every finite list xs of inputs from X with length at most T, including the empty list, N and P give the same output. N starts at a4, updates every node using a5 from the previous full assignment and the next input, and applies its a6 to the final assignment. P starts at (b3, b4), updates the first and second components using b6 and b5 respectively, both from the previous pair and the next input, and applies its a6 to the final second component. Both process the list from left to right. N may depend on X, Y, P, and T, but the same N must work for every list within the bound. No agreement on longer lists or correspondence between the internal states of N and P is required.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"For each two-component system and each horizon T, `Target` states, without proving, that one acyclic system with exactly T units matches the output on every input history of length at most T, starting from the respective initial states. The description accurately distinguishes this history-by-history agreement from the passages’ claim that a static network ceases to match a mapping changed by nontrivial plasticity.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "For each two-component system and each horizon T, `Target` states, without proving, that one acyclic system with exactly T units matches the output on every input history of length at most T, starting from the respective initial states. The description accurately distinguishes this history-by-history agreement from the passages’ claim that a static network ceases to match a mapping changed by nontrivial plasticity."
+  }
+}

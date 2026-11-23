@@ -1,0 +1,31 @@
+{
+  "id": "DEF-C",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:45:10Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: D11, D12, d13\ndef D11 (N : S1 X Y) : Prop :=\n  Nonempty N.A1 ∧ ∀ m n, Relation.TransGen N.D8 m n\n\ndef D12 (N : S1 X Y) : Prop :=\n  ∀ m n, m ≠ n → ¬ (Relation.TransGen N.D8 m n ∧ Relation.TransGen N.D8 n m)\n\ndef d13 (N : S1 X Y) : ℕ := Fintype.card N.A1\n",
+  "usage": [
+    [
+      2702,
+      290
+    ],
+    [
+      3723,
+      1191
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For any types X and Y and any N : S1 X Y, call the elements of N.A1 nodes. A directed step from m to n means that there exist two state assignments σ and σ′ and an input x in X such that the assignments agree at every node other than m, but the updates N.a5 n σ x and N.a5 n σ′ x differ. The assignments need not be reachable from the initial state. A path here is a chain of one or more directed steps; a path of length zero does not count.\\n\\nD11(N) defines the proposition that the node type is nonempty and that, for every node m and every node n, there exists a path from m to n. This includes m = n: every node must have a positive-length path back to itself, though it need not have a direct step to itself.\\n\\nD12(N) defines the proposition that, for every node m and every node n, if m ≠ n then it is not the case that there is both a path from m to n and a path from n to m. For distinct nodes, one direction or neither may exist. No nonemptiness condition is imposed, and a direct step from a node to itself is not forbidden.\\n\\nd13(N) defines a natural number: the number of elements of the finite node type N.A1.\"}",
+  "translation": "For any types X and Y and any N : S1 X Y, call the elements of N.A1 nodes. A directed step from m to n means that there exist two state assignments σ and σ′ and an input x in X such that the assignments agree at every node other than m, but the updates N.a5 n σ x and N.a5 n σ′ x differ. The assignments need not be reachable from the initial state. A path here is a chain of one or more directed steps; a path of length zero does not count.\n\nD11(N) defines the proposition that the node type is nonempty and that, for every node m and every node n, there exists a path from m to n. This includes m = n: every node must have a positive-length path back to itself, though it need not have a direct step to itself.\n\nD12(N) defines the proposition that, for every node m and every node n, if m ≠ n then it is not the case that there is both a path from m to n and a path from n to m. For distinct nodes, one direction or neither may exist. No nonemptiness condition is imposed, and a direct step from a node to itself is not forbidden.\n\nd13(N) defines a natural number: the number of elements of the finite node type N.A1.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"D11 requires feedback throughout the whole network: a recurrent core with a one-way output unit would fail its test. P-D52b does not specify all-pairs reachability for the recurrent systems it discusses. This is the author's stated modeling choice, not a characterization of ϕ > 0.\"\n    }\n  ],\n  \"summary\": \"D11 matches the stated structural proxy, including the requirement of a positive-length return path for each unit. On the finite unit set, D12 is equivalent to the existence of an ordering with no later-to-earlier influence, while allowing self-dependence; d13 counts the units exactly.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "D11 requires feedback throughout the whole network: a recurrent core with a one-way output unit would fail its test. P-D52b does not specify all-pairs reachability for the recurrent systems it discusses. This is the author's stated modeling choice, not a characterization of ϕ > 0."
+      }
+    ],
+    "summary": "D11 matches the stated structural proxy, including the requirement of a positive-length return path for each unit. On the finite unit set, D12 is equivalent to the existence of an ordering with no later-to-earlier influence, while allowing self-dependence; d13 counts the units exactly."
+  }
+}
