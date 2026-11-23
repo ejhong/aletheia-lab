@@ -1,0 +1,112 @@
+event	ngrip_depth_m	age_b2k	kind	definition_uncertainty
+End of 11.4 ka BP event	1476.16	11400	other	
+Start of 11.4 ka BP event	1482.32	11520	other	
+Holocene	1492.45	11703	other	
+GS-1	1526.52	12896	stadial onset	4yr
+GI-1a	1534.5	13099	other	
+GI-1b	1542.1	13311	other	
+GI-1c1	1554.75	13600	other	
+GI-1c2	1557.08	13660	other	
+GI-1c3	1570.5	13954	other	
+GI-1d	1574.8	14075	other	
+GI-1e	1604.64	14692	other	
+GS-2.1a	1669.09	17480	other	c
+GS-2.1b	1745.31	20900	other	c
+GS-2.1c	1783.62	22900	stadial onset	a
+GI-2.1	1786.28	23020	other	
+GS-2.2	1790.26	23220	stadial onset	a
+GI-2.2	1793.19	23340	other	
+GS-3	1861.69	27540	stadial onset	b
+GI-3	1869.12	27780	other	
+GS-4	1882.62	28600	stadial onset	a
+GI-4	1891.57	28900	other	
+GS-5.1	1916.08	30600	stadial onset	b
+GI-5.1	1920.56	30840	other	
+GS-5.2	1939.68	32040	stadial onset	b
+GI-5.2	1951.65	32500	other	
+GS-6	1964.3	33360	stadial onset	b
+GI-6	1974.55	33740	other	
+GS-7	1990.28	34740	stadial onset	b
+GI-7a	1993.79	34880	other	
+GI-7b	1997.04	35020	other	
+GI-7c	2009.44	35480	other	
+GS-8	2026.66	36580	stadial onset	b
+GI-8a	2032.67	36860	other	
+GI-8b	2038.23	37120	other	
+GI-8c	2070.02	38220	other	
+GS-9	2094.64	39900	stadial onset	b
+GI-9	2099.61	40160	other	
+GS-10	2109.71	40800	stadial onset	b
+GI-10	2124.03	41460	other	
+GS-11	2134.99	42240	stadial onset	b
+GI-11	2157.49	43340	other	
+GS-12	2170.0	44280	stadial onset	b
+GI-12a	2174.8	44560	other	
+GI-12b	2176.61	44680	other	
+GI-12c	2222.3	46860	other	
+GS-13	2240.96	48340	stadial onset	d
+GI-13a	2252.8	49060	other	
+GI-13b	2253.84	49120	other	
+GI-13c	2256.89	49280	other	
+GS-14	2261.46	49600	stadial onset	d
+GI-14a	2293.25	51500	other	
+GI-14b	2295.9	51660	other	
+GI-14c	2340.38	53960	other	
+GI-14d	2341.38	54020	other	
+GI-14e	2345.52	54220	other	
+GS-15.1	2353.65	54900	stadial onset	a
+GI-15.1	2355.34	55000	other	
+GS-15.2	2359.64	55400	stadial onset	a
+GI-15.2	2366.32	55800	other	
+GS-16.1	2374.41	56500	stadial onset	b
+GI-16.1a	2396.75	57920	other	
+GI-16.1b	2397.35	57960	other	
+GI-16.1c	2398.78	58040	other	
+GS-16.2	2400.34	58160	stadial onset	a
+GI-16.2	2402.55	58280	other	
+GS-17.1	2406.01	58560	stadial onset	b
+GI-17.1b	2410.65	58840	other	
+GI-17.1c	2415.01	59080	other	
+GS-17.2	2417.66	59300	stadial onset	a
+GI-17.2	2420.44	59440	other	
+GS-18	2461.82	63840	stadial onset	a
+GI-18	2465.85	64100	other	
+GS-19.1	2504.86	69400	stadial onset	b
+GI-19.1	2507.59	69620	other	
+GS-19.2	2512.54	70380	stadial onset	c
+GI-19.2	2535.96	72340	other	
+GS-20	2547.52	74100	stadial onset	b
+GI-20a	2549.63	74320	other	
+GI-20b	2550.96	74440	other	
+GI-20c	2579.13	76440	other	
+GS-21.1	2590.25	77760	stadial onset	d
+GI-21.1a	2594.45	78080	other	
+GI-21.1b	2602.13	78740	other	
+GI-21.1c	2609.14	79240	other	
+GI-21.1d	2614.5	79700	other	
+GI-21.1e	2687.29	84760	other	
+GS-21.2	2689.81	84960	stadial onset	a
+GI-21.2	2691.13	85060	other	
+GS-22	2717.11	87600	stadial onset	b
+GI-22a	2719.69	87820	other	
+GI-22b	2721.56	88000	other	
+GI-22c	2730.94	88800	other	
+GI-22d	2732.29	88920	other	
+GI-22e	2743.58	89800	other	
+GI-22f	2744.08	89840	other	
+GI-22g	2746.53	90040	other	
+GS-23.1	2747.54	90140	stadial onset	b
+GI-23.1	2891.53	104040	other	
+GS-23.2	2894.99	104380	stadial onset	a
+GI-23.2	2896.61	104520	other	
+GS-24.1	2905.05	105440	stadial onset	f
+GI-24.1a	2914.17	106220	other	
+GI-24.1b	2915.31	106320	other	
+GI-24.1c	2920.6	106750	other	
+GS-24.2	2922.06	106900	stadial onset	f
+GI-24.2	2938.19	108280	other	
+GS-25	2954.08	110640	stadial onset	f
+GI-25a	2956.85	110940	other	
+GI-25b	2961.07	111440	other	
+GI-25c	3003.17	115370	other	
+GS-26	3040.89	119140	stadial onset	f
