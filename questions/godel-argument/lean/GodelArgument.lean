@@ -14,3 +14,6 @@ import GodelArgument.Results4
 import GodelArgument.Statement5
 import GodelArgument.Results5
 import GodelArgument.NonVacuity5
+import GodelArgument.Statement6
+import GodelArgument.Results6
+import GodelArgument.NonVacuity6
