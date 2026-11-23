@@ -12,6 +12,11 @@ Planted wrong items ("decoys") are mixed in to measure whether the checker catch
     python3 run.py --vendor openai         # run all items for one vendor (resumes; skips finished items)
     python3 run.py --report                # write REPORT.md from out/
 
+Prefix any of these with `--stage 3` (e.g. `python3 run.py --stage 3 --show`) to check the Stage 3 statements:
+statement files Statement.lean then Statement3.lean (or Statement3.draft.lean here until it exists), items from
+items3.json, outputs in out3/, report REPORT-3.md (head from report_head3.txt). Set UA_ITEMS_OVERRIDE to a path to
+use another items file.
+
 Keys come from the environment: OPENAI_API_KEY, GEMINI_API_KEY, XAI_API_KEY.
 """
 import datetime
@@ -26,11 +31,29 @@ import urllib.request
 
 HERE = pathlib.Path(__file__).resolve().parent
 STATEMENT = HERE.parent / "lean" / "UnfoldingArgument" / "Statement.lean"
+STATEMENTS = [STATEMENT]  # every statement file, read in order; Stage 3 adds a second
+STAGE = 1
 OUT = HERE / "out"  # the round the locked statements went through; earlier rounds are frozen under roundN/
 ITEMS = HERE / "items.json"
 NOTATION = HERE / "notation.md"
 REPORT = HERE / "REPORT.md"
 REPORT_HEAD = [l for l in (HERE / "report_head.txt").read_text().splitlines()] if (HERE / "report_head.txt").exists() else []
+
+
+def configure(stage):
+    """Point the module-level paths at the given stage's files. Stage 1 is the default and changes nothing."""
+    global STAGE, STATEMENTS, OUT, ITEMS, REPORT, REPORT_HEAD
+    STAGE = stage
+    if stage == 3:
+        s3 = HERE.parent / "lean" / "UnfoldingArgument" / "Statement3.lean"
+        STATEMENTS = [STATEMENT, s3 if s3.exists() else HERE / "Statement3.draft.lean"]
+        OUT = HERE / "out3"
+        ITEMS = HERE / "items3.json"
+        REPORT = HERE / "REPORT-3.md"
+        head = HERE / "report_head3.txt"
+        REPORT_HEAD = head.read_text().splitlines() if head.exists() else []
+    if os.environ.get("UA_ITEMS_OVERRIDE"):
+        ITEMS = pathlib.Path(os.environ["UA_ITEMS_OVERRIDE"])
 
 # Model IDs and list prices (USD per million tokens, input/output) as of 2026-11-22.
 VENDORS = {
@@ -54,6 +77,7 @@ RENAME = {
     "UniversalSubstitution": "D23", "behaviourUpTo": "d24",
     "conscious": "Q", "truth": "w", "beh": "g", "extra": "h", "Sys": "X1", "Beh": "X2", "ic": "u1", "rc": "u2",
     "Obar": "V2", "intervene": "v", "I": "X", "O": "Y",
+    "UnitsHaveAtMost": "D25", "counter": "d26",
 }
 
 PROMPT_A = """You are checking a formalization in Lean 4. Below are a notation key, some definitions, and one TARGET. \
@@ -174,14 +198,27 @@ def strip_comments(code):
 
 
 def parse():
-    """Return (prelude, blocks). `prelude` is every definition in the statement file, in order, comments removed,
+    """Return (prelude, blocks). `prelude` is every definition in the statement files, in order, comments removed,
     with the namespace lines kept so that it reads as Lean. `blocks` maps each declared name (qualified by its
-    namespace inside `Unfolding`) to its declaration text."""
+    namespace inside `Unfolding`) to its declaration text. In Stage 3 the statements of the first file (the S items
+    of items.json) are also left out of the prelude."""
     spec = json.loads(ITEMS.read_text())
     statements = {n for it in spec["real"] for n in it["names"] if it["id"].startswith("S")}
-    text = STATEMENT.read_text()
-    body = text[text.index("namespace Unfolding"):text.index("end Unfolding")]
-    blocks, prelude, stack = {}, [], []
+    if STAGE == 3:
+        spec1 = json.loads((HERE / "items.json").read_text())
+        statements |= {n for it in spec1["real"] for n in it["names"] if it["id"].startswith("S")}
+    blocks, prelude = {}, []
+    for path in STATEMENTS:
+        text = path.read_text()
+        body = text[text.index("namespace Unfolding"):text.index("end Unfolding")]
+        parse_body(body, statements, blocks, prelude)
+    return "".join(prelude), blocks
+
+
+def parse_body(body, statements, blocks, prelude):
+    """Add one statement file's declarations (the text between `namespace Unfolding` and `end Unfolding`) to
+    `blocks` and `prelude`."""
+    stack = []
     for chunk in re.split(r"\n(?=/--|/-!)", body):
         code = strip_comments(chunk)
         decl, rest = [], []
@@ -206,7 +243,6 @@ def parse():
                 stack.pop()
             if not line.startswith("universe ") and line != "namespace Unfolding":
                 prelude.append(line + "\n")
-    return "".join(prelude), blocks
 
 
 def anonymize(code, target_names=()):
@@ -389,6 +425,11 @@ def report():
 
 if __name__ == "__main__":
     args = sys.argv[1:]
+    if args[:2] == ["--stage", "3"]:
+        args = args[2:]
+        configure(3)
+    else:
+        configure(1)
     if args == ["--probe"]:
         for v in ("openai", "google"):
             try:

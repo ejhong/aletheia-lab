@@ -30,3 +30,9 @@
 - `∀`, `∃`, `∧`, `∨`, `¬`, `→`, `↔`, `=`, `≠`: the usual logical symbols. `ℕ`: the natural numbers.
 - `universe u v w` and `Type u`: types of arbitrary size; this can be ignored when reading.
 - `inferInstance`: "found automatically"; here, the proof that a type is finite.
+- `k.factorial`: `k!`, the product `1 · 2 · … · k`. `a ^ b`: `a` to the power `b`. `a ∣ b`: `a` divides `b`.
+- `Finite A`: the type `A` has finitely many elements. `Nat.card A`: how many (and `0` if infinitely many).
+- `[NeZero m]`: the hypothesis that `m` is not `0`. For `m` not `0`, `Fin m` has elements `0, …, m - 1`, and
+  `a + 1` in `Fin m` wraps round: it is `0` when `a` is `m - 1`. `(0 : Fin m)` is its element `0`.
+- `decide P`: the Boolean `true` if the proposition `P` holds and `false` if not.
+- `List.replicate t x`: the sequence consisting of `x` repeated `t` times.
