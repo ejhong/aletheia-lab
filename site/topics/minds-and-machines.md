@@ -5,6 +5,8 @@ title: Penrose, Gödel and the machine
 summary: Can mathematics settle whether a mind is a machine, or whether a machine could be conscious? Two famous arguments say yes. A proof checker went through both, line by line.
 questions: 19, 66, 1, 48
 order: 2
+atlas: orch-or
+atlas_title: Collapse, Not Computation
 updated: 2026-11-23
 image: minds-and-machines
 image_alt: An engraving of a human head in profile facing a brass calculating engine, joined by a ribbon that leaves the head as a loop and reaches the machine as a straight chain.

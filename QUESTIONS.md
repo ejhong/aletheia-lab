@@ -55,3 +55,4 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#92](https://github.com/ejhong/aletheia-lab/issues/92) | Göbekli Tepe's star map | data | `gobekli-star-map` |
 | [#93](https://github.com/ejhong/aletheia-lab/issues/93) | Germs as a census of lost cities | audit | `germs-lost-cities` |
 | [#94](https://github.com/ejhong/aletheia-lab/issues/94) | A compass in the stones | data | `compass-in-stones` |
+| [#100](https://github.com/ejhong/aletheia-lab/issues/100) | Does Tunguska show in the ice? Calibrating what an airburst leaves | data | `tunguska-calibration` |
