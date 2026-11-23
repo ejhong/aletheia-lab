@@ -422,7 +422,7 @@ sentence and provability in F_e that the argument takes from arithmetic. They ar
 | S4d. Knowing the validity "λ or not λ" for a liar λ is inconsistent with type-free truth | `knownValiditiesInconsistent` | that validity is known; the known is true; truth distributes over that disjunction; a sentence that is true or false obeys the truth biconditional | Proved | Koellner 2016, §7.12 (the quicker proof of Theorem 7.12.1); Koellner 2018b, Theorem 2 |
 | S4e. With restricted rules the argument yields ¬σ if "σ → F_e⁺ ⊆ T" and "K(σ → G)" are provably determinate | `penroseArgumentUnderDeterminateness` | the truth biconditional for determinate sentences; DK-Intro; determinateness axioms D4 and D7; the six bridging facts | Proved | the lab's complement to Koellner 2018b, p. 467 |
 | S4f. If σ is provably indeterminate, so are "σ → X" and "K(σ → G)" | `stepsIndeterminateIfThesisIs` | determinateness axioms D4 and D7 | Proved | a reduction of Koellner 2018b, Theorem 7, which he states without proof |
-| S4g. For a determinate σ without the last bridging fact: σ → G is known, and if σ then F_e does not prove σ → G | `restrictedThesisGivesUnprovableKnowledge` | as S4e but with σ and σ → G determinate, and five of the six bridging facts | Proved | the lab's own |
+| S4g. For a determinate σ without the last bridging fact: σ → G is known, and if σ then F_e does not prove σ → G | `restrictedThesisGivesUnprovableKnowledge` | as S4e but with σ and σ → G determinate, and five of the six bridging facts | Proved | the lab's own as written; in substance Corradini and Galvan 2022, step 7. See the correction below |
 
 **Non-vacuity.** `lean/GodelArgument/NonVacuity5.lean` gives a consistent system in which every assumption of S4a,
 S4e and S4g holds, and one for S4f. The witnesses are trivial (T and K read as "is so", falsehood for σ). They
@@ -463,7 +463,35 @@ Two rounds, both before the lock. Details: `statement-check/REPORT-2C.md` and Am
 - **The six bridging facts are assumed.** Three of them rest on the incompleteness theorems for F_e.
 - **S4g is the lab's own.** It agrees with what a search reports of the abstract of Corradini and Galvan (2022),
   but their papers could not be obtained, so nothing is attributed to them and their reply to Koellner is not
-  covered.
+  covered. *Superseded: see the correction below.*
+
+### Correction, 23 November 2026: S4g is Corradini and Galvan's result
+
+Written after the results above. Eugene supplied both papers later the same day and they were read in full. No
+statement or proof was changed.
+
+- **S4g is not new.** Corradini and Galvan (2022), step 7, p. 490, derives in DTK, from "K and F agree on
+  arithmetical sentences", that the sentence "if K and F agree on arithmetical sentences, then G(F⁺)" is known
+  and is not derivable in F. Their step 8′ (p. 493) puts it as a single determinate conditional. That is S4g,
+  with σ read as their restricted thesis. They reached it four years earlier, and the result is theirs. "The
+  lab's own", in the table above and in the line before this section, meant only "not taken from Koellner",
+  and it should not stand.
+- **How S4g came to match.** It was written from Koellner's texts by someone who already knew, from a search,
+  roughly what their abstract concludes (Amendment 5 says so). It is not an independent rediscovery.
+- **What they prove and S4g assumes.** S4g takes "σ is determinate" and "σ → G is determinate" as hypotheses.
+  They prove both in DTK, as Lemma 1 (pp. 488–489) and Lemma 2 (p. 490). Those two lemmas are their answer to
+  Koellner's claim that steps (2) and (5) are illegitimate. Nothing here checks them. The five bridging facts
+  S4g assumes are their steps 1 to 4 and 6.
+- **Why the argument stops.** Their Note 11 (p. 491) gives the reason this report gives: the known sentence
+  contains the knowledge predicate, so it is not arithmetical, and it does not contradict the restricted thesis.
+- **What they have and this work does not.** Their step 8 (pp. 490–491) derives in DTK the negation of the
+  unrestricted thesis, "K and F agree on all sentences", and they note that the sentence is indeterminate, so
+  it cannot be declared true (p. 493). Their 2024 note restates the result as Theorem 2, adds a three-way
+  disjunction (Theorem 3) and a corollary on consistency (p. 562). None of these has a counterpart here, and
+  none was checked.
+- **What a source states, and what is inferred.** The page and step numbers above are from the papers. That
+  S4g "is" their step 7 is this report's reading of the two side by side; no model from another vendor has
+  checked that reading.
 - **Transcription.** The passages from Koellner's 2016 chapter were read on screen in a Kindle copy and typed
   out by an AI model. They could not be checked mechanically.
 

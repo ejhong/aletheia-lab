@@ -107,4 +107,14 @@ Dated entries, newest last: what was tried, what happened, what next.
   the round 2 calls were running; the missing Google call was run again. Locked `Statement5.lean` at 06:35 UTC
   (c1e4133); proofs in `Results5.lean` (eb3749f).
 - Eugene lifted the $50 cap while the check ran. Total spent on the question: $40.26.
+- 23 November, later. Eugene supplied both Corradini and Galvan papers as PDFs (hashes in `MANIFEST.md`). Read
+  in full. Their step 7 (2022, p. 490) is S4g; they prove in DTK the two determinateness facts S4g assumes
+  (Lemmas 1 and 2). Recorded as a correction in `RESULTS.md`: S4g is their result, not the lab's. No statement
+  or proof changed. The site page was updated the same day (site PR 57).
+- Not on the site and not in the results, because it has not been through a lock and a statement check: the
+  proof of the corollary in their 2024 note (p. 562) uses "Cons implies Sound" for every arithmetical sentence.
+  As I read it, consistency gives soundness only for Π₁ sentences (PA + ¬Con(PA) is consistent and proves a
+  false sentence), and with the principles the note itself uses that system looks like a counterexample to the
+  corollary as stated. This is one model's reading of a published paper. It is `unverified` until it is stated
+  in Lean, checked by the other vendors' models and proved, and Eugene decides whether to do that.
 
