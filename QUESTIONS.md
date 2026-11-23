@@ -55,3 +55,6 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#92](https://github.com/ejhong/aletheia-lab/issues/92) | Göbekli Tepe's star map | data | `gobekli-star-map` |
 | [#93](https://github.com/ejhong/aletheia-lab/issues/93) | Germs as a census of lost cities | audit | `germs-lost-cities` |
 | [#94](https://github.com/ejhong/aletheia-lab/issues/94) | A compass in the stones | data | `compass-in-stones` |
+| [#103](https://github.com/ejhong/aletheia-lab/issues/103) | Does the Taurid comet stream hide a swarm of large fragments? | data | `taurid-swarm` |
+| [#104](https://github.com/ejhong/aletheia-lab/issues/104) | Did repeated Taurid comet crossings leave a periodic mark across the last 15,000 years? | data | `taurid-holocene-cycles` |
+
