@@ -9,18 +9,19 @@ Issue #31 · Lane: data · Protocol locked 2026-11-23T04:50:31Z · Two amendment
 1. **It is there.** Present-day Suruí and Karitiana share more alleles with Papuans than the Mixe do. The locked
    primary test gives Z = 4.2. On the exact comparison published in 2015, we get D = 0.017 against the paper's
    0.021.
-2. **It holds up to changes of method and of donors.** It appears with every outgroup, Australasian group and SNP
-   class tried, in each community alone, with any one donor removed, in 26 donors the original study did not use,
-   and in two independently processed versions of the same genomes.
+2. **It holds up to changes of method and of donors.** It is positive in 97% of 216 combinations of outgroup,
+   Australasian group, comparison group and SNP class, in each community alone, with any one donor removed, in 26
+   donors outside the original panel, and in two independently processed versions of the same genomes.
 3. **It is only partly specific to Australasians.** Compared with the Mixe, about three quarters of the excess is
    beyond what the Amazonians also share with Han Chinese (Z = 2.8). Compared with the Pima, the Amazonians are
    closer to East Asians in general, and the part specific to Papuans is not significant (Z = 1.4).
 4. **It does not point at Pacific islanders.** The excess is the same toward Onge as toward Papuans, and it is
-   just as strong toward Tianyuan, a man who lived near Beijing 40,000 years ago (Z = 4.0). That is the pattern
-   of an old Asian lineage, not of contact across the Pacific.
+   just as strong toward the Tianyuan individual, who lived in northern China about 40,000 years ago (Z = 4.0).
+   That is the pattern of an old Asian lineage, not of contact across the Pacific.
 5. **No ancient American group stands out for it.** Among 58 ancient sets, none passed. Ancient South Americans
    as a whole show no excess over ancient North and Central Americans; the upper limit is about 5% of the
-   present-day Amazonian excess. The ancient Peruvian coast shows none either (upper limit about 25%). The
+   present-day Amazonian excess. The ancient coast of the central Andes shows none either (upper limit about
+   25%). The
    disputed 10,400-year-old Sumidouro5 individual does not show it in the quality-passed version of his genome.
 6. **One planned check failed for a reason of our own making.** The admixture check could not tell anything, in
    its locked form or its amended form. By the locked rule the headline is therefore "detected, with caveats:
@@ -56,10 +57,10 @@ processing (3 Mixe, 2 Suruí, 3 Karitiana). Panel B is the New York Genome Cente
 
 In the grid, the median Z is lower with the two Pima as the Reference (1.1) than with the Mixe (2.4) or the other
 Mesoamericans (3.8), and lower on transversions (1.9) than on all SNPs (2.9). Suruí shows more than Karitiana,
-though not significantly (Z = −1.8 for Karitiana minus Suruí), so the result is not owed to the Karitiana SNPs
-built into the 1240K set.
+though not significantly (Z = −1.8 for Karitiana minus Suruí). That is not what one would expect if the SNPs
+chosen in a Karitiana, which are part of the 1240K set, were driving the result.
 
-No other American group in panel A differs significantly from the Mixe: Pima Z = 1.8, Mayan 2.2, Piapoco 1.0,
+No other American group in panel A differs from the Mixe at Z = 3: Pima 1.8, Mayan 2.2, Piapoco 1.0,
 Quechua −0.1, other Mesoamericans −1.2.
 
 ### 2. Beyond the original donors
@@ -238,8 +239,8 @@ Andaman Islands that other Native Americans lack. We checked that claim on publi
 resemblance is there, and it does not go away when the method or the donors are changed. But it is smaller and
 blurrier than the headline version. Part of it may be a general lean toward all non-African peoples, and the part
 that is specific to Australasians is less certain than the published figures suggest. It is not a sign of ancient
-voyages across the Pacific: the Amazonians are just as close to a man who lived in China 40,000 years ago, which
-is what you would expect if the ancestry came from an old population of mainland Asia and entered the Americas
+voyages across the Pacific: the Amazonians are just as close to a person who lived in China 40,000 years ago,
+which is what you would expect if the ancestry came from an old population of mainland Asia and entered the Americas
 with everyone else. No ancient skeleton from the Americas tested here clearly carries it, including the people of
 the ancient Peruvian coast, so where it was for the ten thousand years in between is still unknown. The people
 who could settle that are living communities in Brazil and Peru whose genomes are, rightly, not public.

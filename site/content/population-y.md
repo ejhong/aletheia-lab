@@ -18,7 +18,7 @@ We asked four things. Is the excess detectable in public genomes, and does it su
 | Question | Answer | Key number |
 |---|---|---|
 | Is it there? | Yes. | Primary test Z = 4.2. On the 2015 paper's own comparison, D = 0.017 against the published 0.021. |
-| Does it survive changes of method and donors? | Yes. | Positive in 97% of 216 method variants; in each community alone; with any one donor removed; and in 26 donors the 2015 study did not use (Z = 4.2). |
+| Does it survive changes of method and donors? | Yes. | Positive in 97% of 216 method variants; in each community alone; with any one donor removed; and in 26 donors outside the original panel (Z = 4.2). |
 | Is it specific to Australasians? | Partly. | Against the Mixe, about three quarters of the excess is beyond what the Amazonians also share with Han Chinese (Z = 2.8). Against the Pima, the Papuan-specific part is not significant (Z = 1.4). |
 | Closer to Onge or to Papuans? | No difference. | Z = 0.5. |
 | Does a 40,000-year-old East Asian show it? | Yes, just as strongly. | Tianyuan: Z = 4.0. |
@@ -32,7 +32,7 @@ By the rule fixed in advance, the headline is **"detected, with caveats: admixtu
 
 A small group of Amazonian peoples carry a faint genetic resemblance to people from New Guinea, Australia and the Andaman Islands that other Native Americans lack. The resemblance is there, and it does not go away when the method or the donors are changed. But it is smaller and blurrier than the headline version: the part that is specific to Australasians is less certain than the published figures suggest.
 
-It is not a sign of ancient voyages across the Pacific. The Amazonians are just as close to a man who lived in China 40,000 years ago, which is what you would expect if the ancestry came from an old population of mainland Asia and entered the Americas with everyone else.
+It is not a sign of ancient voyages across the Pacific. The Amazonians are just as close to a person who lived in China 40,000 years ago, which is what you would expect if the ancestry came from an old population of mainland Asia and entered the Americas with everyone else.
 
 No ancient skeleton from the Americas tested here clearly carries it, so where it was for the ten thousand years in between is still unknown. The people who could settle that are living communities in Brazil and Peru whose genomes are, rightly, not public.
 
