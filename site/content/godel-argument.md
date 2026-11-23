@@ -4,6 +4,7 @@
 #   Tick a step:     change "- [ ]" to "- [x]".
 #   Move a stage:    set its "Status:" line to done, in progress or not started.
 #   Fold a section:  "::: details Title" opens it and ":::" closes it.
+#   Menu label:      end a "## Heading" with "{menu: Short}" to give it a short name in the page's menu.
 #   Also update the "Where things stand" note and the "updated:" date below.
 summary: Penrose argued from Gödel's theorem that the mind is not a machine. A proof checker went through the argument. The modest conclusion holds; the proof of the strong one does not.
 verdict: The modest conclusion is proved; the proof of the strong one fails
@@ -15,7 +16,7 @@ card_alt: A line from Gödel's theorem to "not a machine we can know is sound", 
 
 > **Where things stand, 23 November 2026.** Finished, as far as it was planned. Penrose's modest conclusion is proved. His proof of the stronger one, that the mind is no machine at all, does not hold up. The stronger conclusion itself is neither proved nor refuted, and nothing here touches his physics.
 
-## What we figured out
+## What we figured out {menu: Findings}
 
 Gödel showed in 1931 that a consistent formal system strong enough for arithmetic cannot prove its own consistency. Since 1961 the philosopher John Lucas, and later the physicist Roger Penrose, have argued that this sets minds apart from machines: a machine is such a system, a mathematician can see what it cannot prove, so the mathematician is not that machine. Logicians have mostly answered that the argument assumes too much. The dispute has run for sixty years, in prose.
 
@@ -34,7 +35,7 @@ In short: the old argument is right about something smaller than it claims. The 
 
 {{figure: godel-argument/tiles}}
 
-## Who stands where
+## Who stands where {menu: Who says what}
 
 This is easily read as a fight between people who think the mind is a machine and people who think it is not. It is not that. Nobody below argues that the mind is a machine. They disagree about a proof, and about how much of it is left standing.
 
@@ -73,7 +74,7 @@ Their second paper adds a corollary (2024, p. 562): if a machine proves some ari
 
 An outside review of this page by a Google model, in a chat Eugene shared, proposed the same counterexample without having been told of our doubt. Two models agreeing is not a check. The check is the proof.
 
-## The first argument
+## The first argument {menu: First argument}
 
 Model an idealized mind as the set of arithmetic statements it would ever accept, and a machine as a formal system whose axioms can be listed mechanically. Thirteen statements were proved in this setting.
 
@@ -88,7 +89,7 @@ Model an idealized mind as the set of arithmetic statements it would ever accept
 
 Penrose is careful about this himself. On page 76 of *Shadows of the Mind* he states the modest conclusion as proved, and calls the claim that thought is non-computational "the stronger deduction", to be argued for separately.
 
-## Adding "I know"
+## Adding "I know" {menu: "I know"}
 
 Arithmetic cannot say "I know" or "I am this machine". So the second stage adds an operator K, read "it is known that", with the principles that William Reinhardt gave it in 1985. The question is which of those principles each result actually needs.
 
@@ -100,7 +101,7 @@ Then a small formal language was built in which "there is a machine such that…
 
 Together these are Gödel's either/or again, now inside a logic of knowledge. A reasoner cannot know which machine it is. It can still be one, and then there are truths it can never know. The proofs do not say which of the two holds. Penrose's second argument is the attempt to rule out being a machine altogether.
 
-## The second argument
+## The second argument {menu: Second argument}
 
 The first argument fails because no one can know that the machine they are is sound. So Penrose went another way round. Do not claim to know it. Suppose, for the sake of argument, that I am the machine F, and see what follows. Chalmers, who thought this the more interesting argument, pointed out that it no longer depends on being able to see that F is sound.
 
@@ -119,7 +120,7 @@ Put together, there are three ways to run the argument.
 
 So the proof of the strong claim does not go through. That is not a proof that the strong claim is false. Koellner's further result, also quoted and not re-proved, is that in his system neither side of Gödel's either/or can be proved or refuted.
 
-## The objections, and what happens to them
+## The objections, and what happens to them {menu: Objections}
 
 Is the best objection Chalmers's or Koellner's? Neither one alone. There are five serious objections, aimed at different steps, and the oldest is still the one that does most of the work. None of them says the mind is a machine. Each says the proof does not show that it is not.
 
@@ -135,7 +136,7 @@ Two things the objections leave standing. The modest claim, that we are not a ma
 
 The case that the mind *is* a machine does not come from logic at all. It comes from physics and biology: the brain is a physical thing, and the known physics of such things can be simulated. Penrose's answer, as Chalmers reports it, is that the physics must then be non-computable. That is a question of evidence, and nothing on this page bears on it.
 
-## How it was checked
+## How it was checked {menu: Method}
 
 - **Statements first.** Each claim was written as a formal statement before any proof existed, and tied to the page of the source it formalizes.
 - **Two outside AIs read every statement.** Models from OpenAI and Google translated each one back into English without seeing our explanation, then compared it with the source passage. Deliberately wrong statements were mixed in to test them. In the final rounds both caught all eighteen.
@@ -145,13 +146,13 @@ The case that the mind *is* a machine does not come from logic at all. It comes 
 
 The underlying theorems of Stage 1 (Gödel's two incompleteness theorems, Löb's theorem) were already proved in the [Foundation](https://github.com/FormalizedFormalLogic/Foundation) library. The work here adds the reading in terms of minds and machines, the links to the sources, and the map of assumptions.
 
-## What we got wrong
+## What we got wrong {menu: Corrections}
 
 One claim of ours was false, and it was published here briefly. Working from a summary of Reinhardt's 1985 paper, we said that his theorem "a knower cannot know consistent a system that captures all it knows" needed an extra condition that the summary had left out, and we offered a repaired version. Then the paper itself arrived. Reinhardt states the theorem with no such condition. What the summary leaves out is his definition of "consistent": that the system never asserts a sentence together with its negation.
 
 The theorem was then stated as he states it, checked, and proved. The plan had said to take statements from the original papers. We went ahead from a summary, and that is where the error came from.
 
-## What this cannot tell you
+## What this cannot tell you {menu: Limits}
 
 - **Whether minds are machines.** The proofs show what follows from what. They say nothing about what a brain is.
 - **Whether a person is well described as an ideal reasoner** with a fixed, consistent, logically closed body of knowledge. Every result here is about such idealized reasoners.
@@ -165,7 +166,7 @@ The theorem was then stated as he states it, checked, and proved. The plan had s
 
 This is no verdict on the atlas's claim [ORCH-C040](https://ejhong.github.io/aletheia/claims/ORCH-C040/). The lab does not grade the atlas.
 
-## The plan
+## The plan {menu: Plan}
 
 Three stages were planned and a fourth held in reserve. Each ended at a gate where Eugene decided what happened next.
 
@@ -214,7 +215,7 @@ Condition: Only after reporting on the earlier stages.
 
 Out of scope: Carlson's consistency proof, which is cited instead. Dropped for now: the stably-computable version, because its author's own arXiv comment on 2208.04752v3 says "The framework currently has gaps".
 
-## Every result
+## Every result {menu: Results}
 
 The forty-two statements, with the name of each proof in the repository. "Proved" means Lean's kernel accepted the proof and the proof uses only Lean's three standard axioms.
 
