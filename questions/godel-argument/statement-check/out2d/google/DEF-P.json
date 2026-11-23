@@ -1,0 +1,31 @@
+{
+  "id": "DEF-P",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:39:12Z",
+  "target": "noncomputable def Target : ArithmeticTheory := 𝗣𝗔 ∪ {∼Def7 𝗣𝗔}\n",
+  "usage": [
+    [
+      2802,
+      2273
+    ],
+    [
+      3766,
+      4421
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target defines an arithmetic theory—a set of sentences of first-order arithmetic (in the language ℒₒᵣ) used as axioms, not closed under deduction by definition—taking no parameters or explicit hypotheses. Specifically, it is the union of Peano arithmetic (PA) and the singleton set containing the object-language negation of the standard consistency sentence of PA.craig. Here PA.craig is the Δ₁-presented axiom set obtained by applying Craig's trick to PA (using that PA is recursively enumerable, yielding a Δ₁-presented theory with the same theorems as PA), and its consistency sentence is the arithmetic sentence ¬Prov_{PA.craig}(⌜⊥⌝), where Prov_{PA.craig} is the standard provability predicate built from PA.craig's Δ₁ presentation. Thus Target is the axiom set PA ∪ {¬(¬Prov_{PA.craig}(⌜⊥⌝))}, where both negations are inside the formal language; notably, the added axiom negates the consistency sentence constructed from the Craig's-trick presentation PA.craig rather than directly from a Δ₁ presentation of PA itself.\"}",
+  "translation": "Target defines an arithmetic theory—a set of sentences of first-order arithmetic (in the language ℒₒᵣ) used as axioms, not closed under deduction by definition—taking no parameters or explicit hypotheses. Specifically, it is the union of Peano arithmetic (PA) and the singleton set containing the object-language negation of the standard consistency sentence of PA.craig. Here PA.craig is the Δ₁-presented axiom set obtained by applying Craig's trick to PA (using that PA is recursively enumerable, yielding a Δ₁-presented theory with the same theorems as PA), and its consistency sentence is the arithmetic sentence ¬Prov_{PA.craig}(⌜⊥⌝), where Prov_{PA.craig} is the standard provability predicate built from PA.craig's Δ₁ presentation. Thus Target is the axiom set PA ∪ {¬(¬Prov_{PA.craig}(⌜⊥⌝))}, where both negations are inside the formal language; notably, the added axiom negates the consistency sentence constructed from the Craig's-trick presentation PA.craig rather than directly from a Δ₁ presentation of PA itself.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Because `Target` uses `Def7 𝗣𝗔` (`𝗣𝗔.craig.consistent.val`), the added sentence is the negation of the consistency statement built from the Craig's-trick Δ₁ re-axiomatization `𝗣𝗔.craig` rather than directly from `𝗣𝗔`'s native Δ₁ presentation (`𝗣𝗔.consistent.val`). Since `𝗣𝗔.craig` has the exact same theorems as `𝗣𝗔`, this is a harmless implementation choice that preserves the intended role of `PA + ¬Con(PA)` as a consistent, recursively enumerable, unsound theory.\"\n    }\n  ],\n  \"summary\": \"The definition faithfully constructs the axiom set `PA ∪ {¬Con(PA)}` as claimed, with only the minor technical caveat that the consistency sentence is formed via Craig's trick (`Def7 𝗣𝗔 = 𝗣𝗔.craig.consistent.val`) rather than directly from `𝗣𝗔`'s native Δ₁ presentation.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Because `Target` uses `Def7 𝗣𝗔` (`𝗣𝗔.craig.consistent.val`), the added sentence is the negation of the consistency statement built from the Craig's-trick Δ₁ re-axiomatization `𝗣𝗔.craig` rather than directly from `𝗣𝗔`'s native Δ₁ presentation (`𝗣𝗔.consistent.val`). Since `𝗣𝗔.craig` has the exact same theorems as `𝗣𝗔`, this is a harmless implementation choice that preserves the intended role of `PA + ¬Con(PA)` as a consistent, recursively enumerable, unsound theory."
+      }
+    ],
+    "summary": "The definition faithfully constructs the axiom set `PA ∪ {¬Con(PA)}` as claimed, with only the minor technical caveat that the consistency sentence is formed via Craig's trick (`Def7 𝗣𝗔 = 𝗣𝗔.craig.consistent.val`) rather than directly from `𝗣𝗔`'s native Δ₁ presentation."
+  }
+}

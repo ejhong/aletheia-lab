@@ -1,0 +1,31 @@
+{
+  "id": "S5a",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:39:12Z",
+  "target": "def Target : Prop :=\n  ∃ _ : Theory.RE Def9,\n    Def4 Def9.theory ∧ Def2 (Def7 Def9) ∧\n      (∼Def7 𝗣𝗔) ∈ Def9.theory ∧ ¬ Def2 (∼Def7 𝗣𝗔)\n",
+  "usage": [
+    [
+      2865,
+      3484
+    ],
+    [
+      3923,
+      8879
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"For any recursively enumerable arithmetic theory F, let Con*(F) denote the arithmetic sentence ¬Prov_{F.craig}(⌜⊥⌝), the standard consistency sentence built from Craig's Δ₁-presented axiom set F.craig (which has the same theorems as F). Let T be the arithmetic theory 𝗣𝗔 ∪ {∼Con*(𝗣𝗔)}, obtained by adjoining the formal negation of Con*(𝗣𝗔) to Peano arithmetic 𝗣𝗔. Target is the proposition (with no hypotheses or outer quantifiers) asserting that: (1) T is recursively enumerable (supplying the hypothesis needed to form Con*(T)); (2) the set of all theorems of T, used as an arithmetic theory, is consistent (does not prove a contradiction in classical first-order logic); (3) the sentence Con*(T) is true in the standard model of arithmetic ℕ; (4) the sentence ∼Con*(𝗣𝗔) belongs to the set of all theorems of T (i.e., is derivable from T); and (5) the sentence ∼Con*(𝗣𝗔) is not true in the standard model of arithmetic ℕ.\"}\n```",
+  "translation": "For any recursively enumerable arithmetic theory F, let Con*(F) denote the arithmetic sentence ¬Prov_{F.craig}(⌜⊥⌝), the standard consistency sentence built from Craig's Δ₁-presented axiom set F.craig (which has the same theorems as F). Let T be the arithmetic theory 𝗣𝗔 ∪ {∼Con*(𝗣𝗔)}, obtained by adjoining the formal negation of Con*(𝗣𝗔) to Peano arithmetic 𝗣𝗔. Target is the proposition (with no hypotheses or outer quantifiers) asserting that: (1) T is recursively enumerable (supplying the hypothesis needed to form Con*(T)); (2) the set of all theorems of T, used as an arithmetic theory, is consistent (does not prove a contradiction in classical first-order logic); (3) the sentence Con*(T) is true in the standard model of arithmetic ℕ; (4) the sentence ∼Con*(𝗣𝗔) belongs to the set of all theorems of T (i.e., is derivable from T); and (5) the sentence ∼Con*(𝗣𝗔) is not true in the standard model of arithmetic ℕ.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def7 constructs consistency sentences uniformly via Craig's trick (F.craig.consistent.val), so ∼Def7 𝗣𝗔 is the inconsistency sentence for the Craig-trick Δ₁ presentation of PA rather than PA's canonical Δ₁ presentation (and similarly Def7 Def9 uses Def9.craig). Because F.craig has the same theorems as F, this is a harmless implementation choice that does not affect the validity of the counterexample.\"\n    }\n  ],\n  \"summary\": \"Target matches all five clauses of the author's claim and provides a valid standard-model counterexample to 'ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ)': Def9 is a consistent, recursively enumerable extension of PA whose consistency sentence is true in ℕ, yet it proves an arithmetic sentence (∼Def7 𝗣𝗔) that is false in ℕ. The only minor caveat is that consistency sentences are formed uniformly via Craig's trick presentations rather than PA's native Δ₁ presentation.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Def7 constructs consistency sentences uniformly via Craig's trick (F.craig.consistent.val), so ∼Def7 𝗣𝗔 is the inconsistency sentence for the Craig-trick Δ₁ presentation of PA rather than PA's canonical Δ₁ presentation (and similarly Def7 Def9 uses Def9.craig). Because F.craig has the same theorems as F, this is a harmless implementation choice that does not affect the validity of the counterexample."
+      }
+    ],
+    "summary": "Target matches all five clauses of the author's claim and provides a valid standard-model counterexample to 'ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ)': Def9 is a consistent, recursively enumerable extension of PA whose consistency sentence is true in ℕ, yet it proves an arithmetic sentence (∼Def7 𝗣𝗔) that is false in ℕ. The only minor caveat is that consistency sentences are formed uniformly via Craig's trick presentations rather than PA's native Δ₁ presentation."
+  }
+}

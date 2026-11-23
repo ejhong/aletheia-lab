@@ -562,3 +562,33 @@ is wrong and that will be reported.
 **My expectation before the run.** S5a, S5b: caveats, with the checkers stressing the gap between the set-level
 reading and DTK. S5c, S5e, S5f: faithful or caveats. S5d and S5g are judged against my own claims.
 
+**Round 1 of the statement check (2026-11-23).** Cost $3.53 ($1.23 OpenAI, $2.30 Google). Frozen under
+`statement-check/round1-2d/`.
+
+- Planted errors: 3 of 3 caught by both checkers.
+- S5a, S5b, S5c, S5f, S5g and D28: `faithful` or `faithful_with_caveats` from both. The caveats: consistency
+  statements are built from Craig presentations; S5c takes the known line at one sentence where the source has
+  the quantifier inside K; the abstract statements do not tie their letters to DTK.
+- S5d: both `divergent`. The note's Conclusion calls the consistency of F "humanly undecidable", which is
+  two-sided, and the draft concluded only that ConsF is not known. I had also left the printed corollary out of
+  the passages for this item.
+- S5e: OpenAI `faithful_with_caveats`, Google `divergent`. Google's points: the draft used an unrelated sentence
+  Q where F applied to σ → G was available; it took one direction of "K = F" at the witness where the source has
+  a biconditional; and, as a major divergence, the statement is a propositional tautology with nothing of DTK in
+  it. Both checkers noted that my claim misreported the passage's last remark: it is ∃F(K = F) and its negation
+  that the source calls indeterminate.
+
+Responses.
+
+- S5d: accepted. It gains K-correctness at ¬ConsF as a hypothesis and a second conclusion: if F is consistent,
+  ¬ConsF is not known either. The printed corollary is added to its passages, and the claim now says which
+  conclusion is the corollary's and which is the note's prose.
+- S5e: accepted on the first two points. Q is now F (σ → G), and the instance of "K = F" at the witness is a
+  biconditional. The claim is corrected about the indeterminacy remark. The third point is the declared limit of
+  the abstract setting, the same as in tier 2C: the statement checks that the last inference is valid from what
+  it rests on, and says so. If the checker still rates it divergent for that reason, the divergence is carried
+  into the results.
+- The planted error X18 mimics S5e, so it is rewritten in the new form and checked again.
+
+Round 2 re-checks S5d, S5e and X18 only.
+

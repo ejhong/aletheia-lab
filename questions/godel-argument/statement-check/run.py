@@ -115,8 +115,9 @@ def use_stage_2d():
         s6 = HERE / "Statement6.draft.lean"
     STATEMENT = [lean / "Statement.lean", lean / "Statement2.lean", lean / "Statement5.lean", s6]
     OUT, ITEMS, NOTATION, REPORT = HERE / "out2d", HERE / "items2d.json", HERE / "notation2d.md", HERE / "REPORT-2D.md"
-    REPORT_HEAD = ["Amendment 6, tier 2D. Written by `run.py --stage 2d --report` from the raw outputs in `out2d/`.",
-                   "Verdicts are the checkers' own."]
+    REPORT_HEAD = ["Amendment 6, tier 2D, round 2. Written by `run.py --stage 2d --report` from the raw outputs in",
+                   "`out2d/`. Verdicts are the checkers' own. Round 1 is frozen under `round1-2d/`; S5d, S5e and the",
+                   "planted error X18 were revised after it and checked again, and the other items stand from round 1."]
     ORDER = ["DEF-P", "S5a", "X17", "S5c", "S5b", "X18", "S5d", "S5e", "X16", "S5f", "S5g"]
     DEFS = ["Mind", "IsTrue", "Sound", "Consistent", "IsTheoremSetOf", "IsMechanical", "Con", "DeductivelyClosed",
             "PAPlusNotCon", "KnowledgeClosedUnderMP", "DeterminateImp"]

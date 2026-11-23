@@ -65,28 +65,30 @@ def CorollaryHoldsWhereConsistencyGivesSoundness : Prop :=
     𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF
 
 /-- **S5d. A mind whose arithmetic lies inside a machine cannot know that machine consistent.** Let `conF`
-stand for "F is consistent". Suppose that if `conF` is known then it is so, that if `conF` is known then F
-proves it, and that if F is consistent then F does not prove `conF` (the second incompleteness theorem for F).
-Then `conF` is not known. -/
+stand for "F is consistent". Suppose that what is known about `conF` is so, in both directions (if `conF` is
+known it holds; if its negation is known, its negation holds); that if `conF` is known then F proves it; and
+that if F is consistent then F does not prove `conF` (the second incompleteness theorem for F). Then `conF` is
+not known; and if F is consistent, the negation of `conF` is not known either. -/
 def MindInsideMachineCannotKnowItConsistent : Prop :=
   ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]
     (K F : Fm → Fm) (conF : Fm),
     𝓢 ⊢ K conF 🡒 conF →
+    𝓢 ⊢ K (∼conF) 🡒 ∼conF →
     𝓢 ⊢ K conF 🡒 F conF →
     𝓢 ⊢ conF 🡒 ∼F conF →
-    𝓢 ⊢ ∼K conF
+    𝓢 ⊢ ∼K conF ⋏ (conF 🡒 ∼K (∼conF))
 
 /-- **S5e. From the restricted result to the refutation of the unrestricted thesis** (Corradini and Galvan's
 step 8). Let `σ` say that knowledge and F agree on arithmetic sentences, and `τ` that they agree on all
-sentences. Suppose the system proves that `σ → G` is known and that, if `σ`, F does not prove `σ → G` (with `Q`
-for "F proves `σ → G`"). Suppose `τ` implies `σ`, and `τ` implies that if `σ → G` is known then F proves it.
-Then the system proves that `τ` fails. -/
+sentences. Suppose the system proves that `σ → G` is known and that, if `σ`, F does not prove `σ → G`. Suppose
+`τ` implies `σ`, and `τ` implies that `σ → G` is known exactly when F proves it. Then the system proves that `τ`
+fails. -/
 def UnrestrictedThesisRefuted : Prop :=
   ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]
-    (K : Fm → Fm) (τ σ G Q : Fm),
-    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼Q) →
+    (K F : Fm → Fm) (τ σ G : Fm),
+    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼F (σ 🡒 G)) →
     𝓢 ⊢ τ 🡒 σ →
-    𝓢 ⊢ τ 🡒 K (σ 🡒 G) 🡒 Q →
+    𝓢 ⊢ τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G)) →
     𝓢 ⊢ ∼τ
 
 /-- **S5f. A conditional with determinate parts is determinate** (Corradini and Galvan's Lemma 2, given

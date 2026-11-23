@@ -1,0 +1,43 @@
+{
+  "id": "S5c",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:39:12Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (conF φ : Fm),\n    Def10 𝓢 K →\n    𝓢 ⊢ K (conF 🡒 F φ 🡒 φ) →\n    𝓢 ⊢ F φ 🡒 K (F φ) →\n    𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF\n",
+  "usage": [
+    [
+      2939,
+      3723
+    ],
+    [
+      4257,
+      11028
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target asserts the following proposition: For all types Fm (of sentences) and S (of proof systems), any choice of formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼, truth ⊤, and falsehood ⊥) on Fm, any provability relation ⊢ between S and Fm, any proof system 𝓢 in S that proves every classical propositional tautology in these connectives and is closed under modus ponens, any functions K and F from Fm to Fm, and any sentences conF and φ in Fm: if (1) for all sentences α and β in Fm, 𝓢 proves K (α 🡒 β) 🡒 (K α 🡒 K β), (2) 𝓢 proves K (conF 🡒 (F φ 🡒 φ)), and (3) 𝓢 proves F φ 🡒 K (F φ), then 𝓢 proves ((∼(K φ)) ⋏ (F φ)) 🡒 ∼(K conF). Nothing else is assumed: 𝓢 is not required to be consistent or closed under any additional rules (such as necessitation for K or F); K and F are arbitrary functions from Fm to Fm with no further properties required; and conF is simply an arbitrary sentence in Fm with no requirement relating it to F or to consistency beyond its appearance in hypothesis (2) and the conclusion.\"}\n```",
+  "translation": "Target asserts the following proposition: For all types Fm (of sentences) and S (of proof systems), any choice of formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼, truth ⊤, and falsehood ⊥) on Fm, any provability relation ⊢ between S and Fm, any proof system 𝓢 in S that proves every classical propositional tautology in these connectives and is closed under modus ponens, any functions K and F from Fm to Fm, and any sentences conF and φ in Fm: if (1) for all sentences α and β in Fm, 𝓢 proves K (α 🡒 β) 🡒 (K α 🡒 K β), (2) 𝓢 proves K (conF 🡒 (F φ 🡒 φ)), and (3) 𝓢 proves F φ 🡒 K (F φ), then 𝓢 proves ((∼(K φ)) ⋏ (F φ)) 🡒 ∼(K conF). Nothing else is assumed: 𝓢 is not required to be consistent or closed under any additional rules (such as necessitation for K or F); K and F are arbitrary functions from Fm to Fm with no further properties required; and conF is simply an arbitrary sentence in Fm with no requirement relating it to F or to consistency beyond its appearance in hypothesis (2) and the conclusion.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Quantifier elimination and omission of line (∗∗): the source derives the corollary from K(ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ)), which requires moving the bounded universal quantifier outside K using line (∗∗) (ϕ ∈ L(PA) → K(ϕ ∈ L(PA))) and a quantifier-modality step (elided in the source's '[…]'). The TARGET instantiates the K-intro line inside K at a single sentence φ—namely K(conF 🡒 F φ 🡒 φ)—omitting the quantifiers, membership in L(PA), line (∗∗), and the quantifier-K interaction step. This is explicitly declared by the author as a single-sentence idealization.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Upstream derivations entered as hypotheses: the source proves line (∗) (Fϕ → K(Fϕ)) from Σ1-completeness and the Rule of mathematical knowledge, and proves the K-intro line from 'Cons implies Sound', determinateness, and the K-intro rule. The TARGET omits those upstream derivations and takes both lines as hypotheses, formalizing only the downstream classical-epistemic deduction to the corollary (as stated in the claim).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Abstract idealization of the system and predicates: 𝓢 is an arbitrary classical propositional system and K, F, conF, φ are arbitrary functions and sentences, with no modelling of arithmetic, Gödel coding, the specific system DTK, or the relationship between conF and F. This is a harmless strengthening/idealization relative to the propositional core of the proof.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Object-level implication vs. derivability from a premise: the source states the corollary as (∃ϕ ∈ L(PA))(¬Kϕ ∧ Fϕ) ⊢DTK ¬K(ConsF), whereas the TARGET concludes with an internal conditional theorem 𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF. Under classical logic this is a harmless presentational choice (and yields the premise-to-conclusion derivability by modus ponens).\"\n    }\n  ],\n  \"summary\": \"As a single-sentence abstract rendering of the downstream proof of the corollary, the TARGET is faithful: its three hypotheses match Distributivity of K, the single-sentence instantiation of the K-intro line, and line (∗), and its conclusion matches the single-sentence form of the corollary. The divergences are minor and largely declared: the Lean omits arithmetic, coding, quantifiers, line (∗∗), the quantifier-K step, and the upstream derivations of (∗) and the K-intro line.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Quantifier elimination and omission of line (∗∗): the source derives the corollary from K(ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ)), which requires moving the bounded universal quantifier outside K using line (∗∗) (ϕ ∈ L(PA) → K(ϕ ∈ L(PA))) and a quantifier-modality step (elided in the source's '[…]'). The TARGET instantiates the K-intro line inside K at a single sentence φ—namely K(conF 🡒 F φ 🡒 φ)—omitting the quantifiers, membership in L(PA), line (∗∗), and the quantifier-K interaction step. This is explicitly declared by the author as a single-sentence idealization."
+      },
+      {
+        "severity": "minor",
+        "description": "Upstream derivations entered as hypotheses: the source proves line (∗) (Fϕ → K(Fϕ)) from Σ1-completeness and the Rule of mathematical knowledge, and proves the K-intro line from 'Cons implies Sound', determinateness, and the K-intro rule. The TARGET omits those upstream derivations and takes both lines as hypotheses, formalizing only the downstream classical-epistemic deduction to the corollary (as stated in the claim)."
+      },
+      {
+        "severity": "minor",
+        "description": "Abstract idealization of the system and predicates: 𝓢 is an arbitrary classical propositional system and K, F, conF, φ are arbitrary functions and sentences, with no modelling of arithmetic, Gödel coding, the specific system DTK, or the relationship between conF and F. This is a harmless strengthening/idealization relative to the propositional core of the proof."
+      },
+      {
+        "severity": "minor",
+        "description": "Object-level implication vs. derivability from a premise: the source states the corollary as (∃ϕ ∈ L(PA))(¬Kϕ ∧ Fϕ) ⊢DTK ¬K(ConsF), whereas the TARGET concludes with an internal conditional theorem 𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF. Under classical logic this is a harmless presentational choice (and yields the premise-to-conclusion derivability by modus ponens)."
+      }
+    ],
+    "summary": "As a single-sentence abstract rendering of the downstream proof of the corollary, the TARGET is faithful: its three hypotheses match Distributivity of K, the single-sentence instantiation of the K-intro line, and line (∗), and its conclusion matches the single-sentence form of the corollary. The divergences are minor and largely declared: the Lean omits arithmetic, coding, quantifiers, line (∗∗), the quantifier-K step, and the upstream derivations of (∗) and the K-intro line."
+  }
+}
