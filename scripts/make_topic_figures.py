@@ -218,7 +218,10 @@ def minds():
          "Partly holds", "Valid for experiments of fixed length only", "partly"),
         (48, "anaesthetics-microtubules", "Anaesthetics and microtubules", "Anaesthetics switch consciousness off by settling into pockets in the microtubules of nerve cells.",
          "A computer fit of 35 gases into eight proteins shows nothing special about the microtubule protein. But it shows nothing special about the accepted targets either, and an unrelated protein does as well as any. The scores follow the size of the molecule.",
-         "Could not tell", "The method cannot pick out any anaesthetic target", "open")])
+         "Could not tell", "The method cannot pick out any anaesthetic target", "open"),
+        (115, "anaesthetics-terahertz", "The vibration in the microtubule protein", "A 2017 calculation found that anaesthetics slow a vibration in the microtubule protein, while look-alike gases that cause no anaesthesia speed it up.",
+         "Rebuilt and run on nine targets, the calculation gives that split for egg-white protein and for rings placed at random: it follows the size of the gas molecule. Scored the paper's own way, anaesthetics do stand out on the microtubule protein, but just as much on a known anaesthetic target and on a blood protein.",
+         "Not special to microtubules", "The calculation gives no reason to pick out microtubules", "no")])
 
 
 def deep_memory():

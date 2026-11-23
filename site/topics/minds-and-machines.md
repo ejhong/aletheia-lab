@@ -2,8 +2,8 @@
 # A topic page. "questions:" lists issue numbers in reading order. Edit and push to main; the site rebuilds itself.
 # The scorecard and tiles are made by scripts/make_topic_figures.py; rerun it when a result changes.
 title: Penrose, Gödel and the machine
-summary: Can mathematics settle whether a mind is a machine, or whether a machine could be conscious? Two famous arguments say yes, and a proof checker went through both. Penrose's own physical theory of consciousness has had a first, inconclusive test.
-questions: 19, 66, 48, 1
+summary: Can mathematics settle whether a mind is a machine, or whether a machine could be conscious? Two famous arguments say yes, and a proof checker went through both. Penrose's own physical theory of consciousness has had two tests on a computer. One could not tell. The other took away a piece of the theory's support and left the theory itself where it was.
+questions: 19, 66, 48, 115, 1
 order: 2
 atlas: orch-or
 atlas_title: Collapse, Not Computation
@@ -50,19 +50,29 @@ That is what a proof checker is good for here. It did not settle whether minds a
 
 ## Penrose's physics: anaesthetics and microtubules
 
-Penrose did not stop at logic. With the anaesthetist Stuart Hameroff he proposed where in the brain the non-mechanical thing happens: in microtubules, the scaffolding inside nerve cells, through an effect of quantum physics. The theory is called Orch OR. One of its plainest claims is about anaesthesia: that the gases which switch consciousness off do so by settling into pockets in the microtubule protein, and not, as most researchers think, by acting on channels at the cell's surface.
+Penrose did not stop at logic. With the anaesthetist Stuart Hameroff he proposed where in the brain the non-mechanical thing happens: in microtubules, the scaffolding inside nerve cells, through an effect of quantum physics. The theory is called Orch OR. One of its plainest claims is about anaesthesia: that the gases which switch consciousness off do so by acting on the microtubule protein, and not, as most researchers think, on channels at the cell's surface.
 
-That part can be approached with a computer. A docking program was asked how tightly 27 anaesthetic gases, and 7 look-alike gases that do not cause anaesthesia, would sit in pockets on the microtubule protein and on seven others. The microtubule protein did not stand out. But neither did the channels that anaesthetics are known to act on, and an unrelated protein did as well as any. The scores mostly followed the size of the molecule.
+Two parts of that can be approached with a computer.
 
-{{figure: anaesthetics-microtubules/verdict}}
+**Do the gases fit?** A docking program was asked how tightly 27 anaesthetic gases, and 7 look-alike gases that do not cause anaesthesia, would sit in pockets on the microtubule protein and on seven others. The microtubule protein did not stand out. But neither did the channels that anaesthetics are known to act on, and the scores mostly followed the size of the molecule. A test that cannot recognise the known answer has nothing to say about the disputed one. Read more: [the docking study](../../questions/anaesthetics-microtubules/).
 
-A test that cannot recognise the known answer has nothing to say about the disputed one. This result neither supports the microtubule idea nor counts much against it. The experiments that do bear on it are on living animals, and the atlas weighs those. Read more: [the docking study](../../questions/anaesthetics-microtubules/).
+**What do they do once they are there?** The theory's supporters point to a calculation published in 2017 by Craddock, Hameroff and colleagues. It treats the ring-shaped parts of the protein as vibrations that tug on one another. In it, eight anaesthetics slowed one of those vibrations, and two look-alike gases sped it up. The authors noted that the same test on other proteins was still needed. The lab ran it, on nine targets and 35 gases.
+
+{{figure: anaesthetics-terahertz/verdict}}
+
+The slowing-or-speeding split turned out to belong to the gases. It appears in egg-white protein and in rings scattered at random, because in this kind of model a small molecule pushes the vibration down and a large one pushes it up, and the paper's two look-alikes were its two largest molecules. With more gases the split fails.
+
+Something does survive. Scored the paper's own way, anaesthetics disturb the vibration more than look-alikes do, and on the microtubule protein the difference is clear. It is just as clear on a channel that anaesthetics are known to act on, and on a blood protein that only carries them. It does not grow with the strength of the drug.
+
+So what does this show about Orch OR? Less than the first write-up of the study claimed, and less than a headline would like. It shows that this calculation cannot be used as evidence that microtubules are where anaesthesia happens, because it does not tell the microtubule protein from other proteins. It does not show that microtubules are the wrong place: on every measure they did as well as the accepted target. And it says nothing about the theory's central claims, which concern quantum physics and gravity. The 2017 model is ordinary classical physics. A supporter of the theory has lost one argument, and an opponent has gained none.
+
+Two cautions. The calculation was rebuilt from a published description that is incomplete, and parts of the original result did not come out, so the rebuilt version may not be the authors' own. And the first write-up's charge that the published method gives different answers when the protein is turned in space depends on one reading of an ambiguous sentence; it has not been shown. Read more: [the vibration study](../../questions/anaesthetics-terahertz/).
 
 ## What this does not settle
 
 - **Whether the assumptions are true of real minds.** A proof checker says what follows from what. An argument that fails as a proof may still have a true conclusion.
-- **Whether anaesthetics act on microtubules.** The one test made here could not tell. It fits molecules into rigid pockets, and says nothing about what a drug does once it has settled, which is what the theory's supporters now claim matters.
+- **Whether anaesthetics act on microtubules.** Neither test could tell the microtubule protein from the accepted targets, in either direction. The evidence that bears on it comes from experiments on living animals and on microtubules in the laboratory, and the atlas weighs those.
 - **The rest of Penrose's physics.** Whether quantum effects survive in warm, wet microtubules, and whether gravity collapses them, are questions for laboratories.
 - **Whether machines will in fact do what Penrose said they could not.** A standing watch on that is planned.
 - **Exactly which machines can lose their loops for good.** A further stage of the unfolding check looked at circuits whose parts remember their own state. Memory bits without feedback between them can count to eight forever and can never count to three, so the answer depends on how big a part may be. The classical theorem on the subject (Krohn and Rhodes) was not formalized.
-- **The limits of the work itself.** AI models wrote the formal statements, the proofs and the docking study. Outside models checked that each formal statement says what its source says; the docking study's statistics were recomputed by a second model, though the docking was not re-run. No human specialist has checked any of it, and the authors are themselves the kind of system these arguments are about.
+- **The limits of the work itself.** AI models wrote the formal statements, the proofs and both anaesthesia studies. Outside models checked that each formal statement says what its source says. For the two anaesthesia studies a second model recomputed the statistics and, for the second, rebuilt part of the calculation; the placing of the gases in the proteins was not repeated. No human specialist has checked any of it, and the authors are themselves the kind of system these arguments are about.
