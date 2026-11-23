@@ -16,6 +16,8 @@ Inputs
   site/templates/            base.html (page shell), home.html (home page prose)
   site/pages/                how-it-works.md
   site/content/<slug>.md     optional full page for a question; replaces the short page built from the issue
+  site/topics/<slug>.md      a topic page: front matter (title, summary, questions: issue numbers in reading order,
+                             updated) and a short discussion of what the listed questions add up to
   site/figures/<slug>/       HTML fragments (inline SVG charts) that a content file includes with {{figure: slug/name}}
   site/assets/               CSS, JS, icon
 
@@ -740,6 +742,8 @@ def band_head(q, root, dek_html, extra=""):
     if updated:
         kicker.append('<span class="kicker-faint">Updated <time datetime="%s">%s</time></span>' % (
             esc(updated), esc(fmt_date(updated))))
+    for t in q.get("topics", []):
+        extra = ('<p class="topic-link">Part of the topic <a href="%stopics/%s/">%s</a></p>' % (root, t["slug"], inline(t["title"]))) + extra
     return (
         '<div class="band"><div class="wrap band-inner">'
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="%s#questions">Questions</a>'
@@ -837,6 +841,64 @@ def short_hash(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()[:10]
 
 
+def read_topics(questions):
+    """Topic pages from site/topics/*.md, each with the questions it lists (in its own order)."""
+    by_number = {q["number"]: q for q in questions}
+    topics = []
+    folder = SITE / "topics"
+    for path in sorted(folder.glob("*.md")) if folder.exists() else []:
+        meta, md = front_matter(path.read_text(encoding="utf-8"))
+        numbers = [int(n) for n in re.findall(r"\d+", meta.get("questions", ""))]
+        missing = [n for n in numbers if n not in by_number]
+        if missing:
+            print("topic %s lists questions not in QUESTIONS.md: %s" % (path.stem, missing), file=sys.stderr)
+        topic = {"slug": path.stem, "title": meta.get("title", path.stem), "summary": meta.get("summary", ""),
+                 "updated": meta.get("updated"), "order": int(meta.get("order", "99")), "md": md,
+                 "questions": [by_number[n] for n in numbers if n in by_number]}
+        topics.append(topic)
+        for q in topic["questions"]:
+            q.setdefault("topics", []).append(topic)
+    return sorted(topics, key=lambda t: (t["order"], t["title"]))
+
+
+def topic_counts(topic):
+    n = len(topic["questions"])
+    done = sum(1 for q in topic["questions"] if q["status"] == "done")
+    active = sum(1 for q in topic["questions"] if q["status"] == "active")
+    parts = ["%d %s" % (n, "study" if n == 1 else "studies"), "%d done" % done]
+    if active:
+        parts.append("%d running" % active)
+    return " · ".join(parts)
+
+
+def render_topic_cards(topics, root):
+    if not topics:
+        return ""
+    cards = "".join(
+        '<li class="topic-card"><h3 class="topic-title"><a href="%stopics/%s/">%s</a></h3><p class="topic-summary">%s</p>'
+        '<p class="topic-count">%s</p></li>' % (root, t["slug"], inline(t["title"]), inline(t["summary"]), esc(topic_counts(t)))
+        for t in topics)
+    return ('<section class="wrap topics-section" id="topics" aria-labelledby="topics-h">'
+            '<div class="index-head"><div><h2 id="topics-h" class="section-title">Topics</h2>'
+            '<p class="index-note">Questions that bear on one another, read together.</p></div></div>'
+            '<ul class="topic-list" role="list">%s</ul></section>' % cards)
+
+
+def topic_page(topic, root):
+    doc = Doc()
+    updated = ('<span class="kicker-faint">Updated <time datetime="%s">%s</time></span>' % (
+        esc(topic["updated"]), esc(fmt_date(topic["updated"])))) if topic["updated"] else ""
+    head = ('<div class="band"><div class="wrap band-inner">'
+            '<nav class="crumbs" aria-label="Breadcrumb"><a href="%s#topics">Topics</a></nav>'
+            '<p class="kicker-row"><span class="kicker">Topic</span>%s</p><h1 class="display">%s</h1>'
+            '<p class="dek">%s</p><p class="pills"><span class="topic-count">%s</span></p></div></div>' % (
+                root, updated, inline(topic["title"]), inline(topic["summary"]), esc(topic_counts(topic))))
+    rows = "".join(index_row(q, root) for q in topic["questions"])
+    return ('%s<div class="wrap"><article class="prose topic-prose">%s</article>'
+            '<section class="topic-studies" aria-labelledby="studies-h"><h2 id="studies-h" class="section-title">The studies</h2>'
+            '<ul class="q-list" role="list">%s</ul></section></div>' % (head, blocks(topic["md"], doc), rows))
+
+
 class Site:
     def __init__(self, status_note, built):
         self.base = template("base.html")
@@ -859,6 +921,7 @@ class Site:
             image_alt=esc(card_alt or "Aletheia Lab: AI experiments on big open questions."),
             nav_questions=' aria-current="page"' if nav == "questions" else "",
             nav_how=' aria-current="page"' if nav == "how" else "",
+            nav_topics=' aria-current="page"' if nav == "topics" else "",
             css_v=self.css_v, js_v=self.js_v, status_note=esc(self.status_note), built=esc(self.built),
             repo_url=REPO_URL, atlas_url=ATLAS_URL)
         path = OUT / rel
@@ -902,6 +965,8 @@ def main(argv):
             q["stages"] = find_stages(q["content"])
         q["gist"] = q["meta"].get("summary") or gist(q["fields"].get("Question", ""))
 
+    topics = read_topics(questions)
+
     if live:
         status_note = "Statuses read from GitHub at build time"
     else:
@@ -925,7 +990,7 @@ def main(argv):
              '<span>%d questions · %d active · %d done · %d lanes</span></p>' % (
                  len(questions), counts["active"], counts["done"], len(LANES)))
     home = fill(template("home.html"), stats=stats, index=render_index(ordered, intro, lanes, "./"),
-                atlas_url=ATLAS_URL)
+                topics=render_topic_cards(topics, "./"), atlas_url=ATLAS_URL)
     site.write("index.html", "Aletheia Lab — experiments on big open questions",
                "Aletheia Lab runs AI experiments on big open questions. Each experiment's plan is locked before any "
                "result exists, and null results are published like any other.", home, "./", nav="questions")
@@ -939,6 +1004,11 @@ def main(argv):
         site.write("questions/%s/index.html" % q["slug"], "%s · Aletheia Lab" % plain(q["title"]),
                    plain(q["gist"]) or plain(q["title"]), body, root, card=q["slug"],
                    card_alt=q["meta"].get("card_alt", ""))
+
+    # Topics
+    for t in topics:
+        site.write("topics/%s/index.html" % t["slug"], "%s · Aletheia Lab" % plain(t["title"]),
+                   plain(t["summary"]) or plain(t["title"]), topic_page(t, "../../"), "../../", nav="topics")
 
     # How it works
     lane_rows = "".join(

@@ -919,3 +919,22 @@ details.more > summary:focus-visible { outline: 2px solid var(--copper); outline
   .is-current .t-status { position: static; width: auto; height: auto; overflow: visible; clip-path: none; flex-basis: 100%; }
   .track-key { display: none; }
 }
+
+/* Topics: groups of questions read together. */
+.topics-section { padding-block: 4rem 0; }
+.topic-list { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.topic-card { position: relative; border: 1px solid var(--line); background: color-mix(in oklab, var(--paper-deep) 45%, transparent); padding: 1.3rem 1.4rem 1.2rem; }
+.topic-card:hover { border-color: color-mix(in oklab, var(--copper) 60%, transparent); }
+.topic-title { margin: 0; font: 400 1.5rem/1.2 var(--serif); letter-spacing: -.01em; }
+.topic-title a { color: var(--ink); text-decoration: none; }
+.topic-title a::after { content: ""; position: absolute; inset: 0; }
+.topic-card:hover .topic-title a { color: var(--copper); }
+.topic-summary { margin: .55rem 0 0; font-size: .97rem; line-height: 1.5; color: var(--ink-soft); }
+.topic-count { margin: .9rem 0 0; font: 400 10.5px/1.4 var(--mono); text-transform: uppercase; letter-spacing: .14em; color: var(--faint); }
+.band .topic-count { margin: 0; color: inherit; opacity: .75; }
+.topic-link { margin: 1rem 0 0; font-size: .92rem; opacity: .85; }
+.topic-link a { color: inherit; text-underline-offset: 4px; }
+.topic-prose { padding-top: 2.5rem; }
+.topic-studies { max-width: 62rem; margin: 3rem auto 0; }
+.topic-studies .section-title { margin-bottom: 1.2rem; }
+@media (max-width: 46rem) { .topic-list { grid-template-columns: 1fr; } }
