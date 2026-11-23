@@ -139,3 +139,14 @@ the same in every class, each should reach about Z = 3.5.
 **What the test cannot tell.** It separates contamination by long modern molecules from a property of her own
 genome. It cannot separate real ancestry from a chance oddity of her genome, since both would show in every
 class. It would also miss contamination by modern DNA that was itself broken into short pieces.
+
+### Amendment 3: result, and what was added after it (2026-11-23)
+
+The check on the calls passed (98.8% agreement; S from all reads Z = 5.62). S by class: short 0.00041 (Z 1.52),
+middle 0.00146 (Z 4.66), long 0.00213 (Z 6.54); long minus short Z = 4.08. Outcome by the rule: **the lean sits
+in the long molecules.** `results/corrected/amended3/summary.json`.
+
+Added after seeing that result, and therefore exploratory: the same split on the four people from her site
+nearest to her in number of SNPs (PIE025, PIE035, PIE048, PIE043), to see whether the method produces such a
+gradient by itself. Their long-minus-short Z values are 1.1, 0.5, −0.1 and 1.2.
+`results/corrected/amended3/controls_exploratory.json`.

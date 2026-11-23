@@ -39,3 +39,16 @@ Dated entries, newest last: what was tried, what happened, what next.
   robust, 1 standing (`PIE069.AG`).
 - **Not done:** asking the laboratory about `PIE069.AG` (outward-facing; Eugene's call). Filing with Aletheia.
 - **Spent:** $1.89 of $30.
+
+## 2026-11-23: the standing hit re-examined (Claude Fable 5.2)
+
+- Eugene asked why the Pietrele woman's lean had been put down to contamination and not taken as possibly real.
+  The first write-up had assumed it. Corrected: the mitochondrial match in the release argues against
+  contamination, and the three readings are now ranked by support.
+- Her reads are public (ENA PRJEB62503, ERR11495483). **Amendment 3** written and pushed, then run: the lean is
+  in her long fragments (Z 6.5) and weak in her short ones (Z 1.5); long minus short Z 4.1. Outcome by the rule:
+  the lean sits in the long molecules, the pattern of modern contamination.
+- Exploratory controls after the result: four site-mates show no gradient (Z 1.1, 0.5, −0.1, 1.2).
+- The damage-based test could not be run: the public file masks the end bases.
+- A download script joined two short pieces into a corrupt file once; caught by size, redone with a checksum
+  check before joining. The archive was slow and dropped connections; no data were affected.

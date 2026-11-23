@@ -3,6 +3,7 @@
 
     .venv/bin/python analysis/amend3.py check      # reproduce her locked statistic from the release's genotypes (no reads needed)
     .venv/bin/python analysis/amend3.py run        # the amended test, from the public reads; writes results/corrected/amended3/
+    .venv/bin/python analysis/amend3.py controls PIE025.AG ...    # exploratory: the same split on other people
 
 Run from questions/strangers. Uses scan.py and the corrected run unchanged. See amendments.md for the rules.
 """
@@ -24,10 +25,10 @@ CODE = {"A": 1, "C": 2, "G": 4, "T": 8}
 SEED = 41
 
 
-def setup():
+def setup(gid=GID):
     corrected_run.patch()
     store, people = scan.Store(), scan.load_people()
-    p = next(q for q in people if q["gid"] == GID)
+    p = next(q for q in people if q["gid"] == gid)
     summary = json.loads((Q / "results" / "corrected" / "summary.json").read_text())
     u = [summary["fit_coefficients"][k] for k in scan.CONTROLS]
     L, valid = scan.left_sides(store, ["NA"] + scan.CONTROLS)
@@ -86,55 +87,78 @@ def show(label, s):
           f" | Han Z {s['toward_Han']['z']:+.2f} | French Z {s['toward_French']['z']:+.2f}")
 
 
-def main():
-    store, p, stats = setup()
-    released = stats(store.x(p["row"]))
-    show("release genotypes", released)
-    if sys.argv[1:] == ["check"]:
-        return
-    table, first, second = snp_table(store)
-    cache = BAM.with_suffix(".obs.npz")
+CLASSES = {"all reads": lambda n: n > 0, "short (60 or fewer)": lambda n: n <= 60, "middle (61 to 75)": lambda n: (n > 60) & (n < 76),
+           "long (76)": lambda n: n == 76}
+
+
+def by_class(store, p, stats, bam, table, first, second):
+    """S and the other leans from all reads and from each length class of one person's reads."""
+    cache = bam.with_suffix(".obs.npz")
     if cache.exists():
         z = np.load(cache)
         snp, base, length = z["snp"], z["base"], z["length"]
     else:
-        snp, base, length, _ = reads.observations(BAM, table)
+        snp, base, length, _ = reads.observations(bam, table)
         np.savez(cache, snp=snp, base=base, length=length)
     rng = np.random.default_rng(SEED)
-    classes = {"all reads": np.ones(snp.size, bool), "short (60 or fewer)": length <= 60, "middle (61 to 75)": (length > 60) & (length < 76),
-               "long (76)": length == 76}
-    out = {"release": released, "observations": int(snp.size), "classes": {}}
+    out = {"observations": int(snp.size), "classes": {}}
     xs = {}
-    for name, keep in classes.items():
+    for name, test in CLASSES.items():
+        keep = test(length)
         xs[name] = genotype(store.n_snp, snp, base, first, second, keep, rng)
         r = stats(xs[name])
         r["S_transversions"] = stats(np.where(store.tv, xs[name], np.nan))["S"]
         r["observations"] = int(keep.sum())
         out["classes"][name] = r
         show(name, r)
-        print(f"{'':34s} S on transversions {r['S_transversions']['f4']:+.5f} (Z {r['S_transversions']['z']:+.2f})")
     rel = store.x(p["row"])
     both = ~np.isnan(rel) & ~np.isnan(xs["all reads"])
-    agree = float(np.mean(rel[both] == xs["all reads"][both]))
-    out["calls_check"] = {"snps_in_both": int(both.sum()), "agreement": agree, "release_only": int((~np.isnan(rel) & np.isnan(xs["all reads"])).sum()),
-                          "reads_only": int((np.isnan(rel) & ~np.isnan(xs["all reads"])).sum())}
+    out["calls_check"] = {"snps_in_both": int(both.sum()), "agreement": float(np.mean(rel[both] == xs["all reads"][both]))}
     S = {k: v["S"] for k, v in out["classes"].items()}
-    a, sh, lo = S["all reads"], S["short (60 or fewer)"], S["long (76)"]
-    dz = (lo["f4"] - sh["f4"]) / np.hypot(lo["se"], sh["se"])
-    if agree < 0.98 or a["z"] < 4:
-        outcome = "not testable"
-    elif sh["f4"] >= 0.5 * a["f4"] and sh["z"] >= 2:
-        outcome = "the lean is in her short molecules too"
-    elif sh["f4"] < 0.5 * a["f4"] and dz >= 2:
-        outcome = "the lean sits in the long molecules"
-    else:
-        outcome = "inconclusive"
-    out.update(outcome=outcome, long_minus_short={"difference": lo["f4"] - sh["f4"], "z": float(dz)}, short_over_all=sh["f4"] / a["f4"], long_over_all=lo["f4"] / a["f4"])
+    sh, lo = S["short (60 or fewer)"], S["long (76)"]
+    out["long_minus_short"] = {"difference": lo["f4"] - sh["f4"], "z": float((lo["f4"] - sh["f4"]) / np.hypot(lo["se"], sh["se"]))}
+    return out
+
+
+def main():
+    mode = sys.argv[1] if len(sys.argv) > 1 else ""
+    store, p, stats = setup()
+    released = stats(store.x(p["row"]))
+    show("release genotypes", released)
+    if mode == "check":
+        return
+    table, first, second = snp_table(store)
     dest = Q / "results" / "corrected" / "amended3"
     dest.mkdir(parents=True, exist_ok=True)
-    json.dump(out, open(dest / "summary.json", "w"), indent=1, default=float)
-    print(f"calls agree with the release at {agree:.4f} of {both.sum()} SNPs; long minus short Z {dz:+.2f}; short/all {out['short_over_all']:.2f}; long/all {out['long_over_all']:.2f}")
-    print("OUTCOME:", outcome)
+    if mode == "run":
+        out = by_class(store, p, stats, BAM, table, first, second)
+        out["release"] = released
+        a, sh = out["classes"]["all reads"]["S"], out["classes"]["short (60 or fewer)"]["S"]
+        dz, agree = out["long_minus_short"]["z"], out["calls_check"]["agreement"]
+        if agree < 0.98 or a["z"] < 4:
+            outcome = "not testable"
+        elif sh["f4"] >= 0.5 * a["f4"] and sh["z"] >= 2:
+            outcome = "the lean is in her short molecules too"
+        elif sh["f4"] < 0.5 * a["f4"] and dz >= 2:
+            outcome = "the lean sits in the long molecules"
+        else:
+            outcome = "inconclusive"
+        out.update(outcome=outcome, short_over_all=sh["f4"] / a["f4"], long_over_all=out["classes"]["long (76)"]["S"]["f4"] / a["f4"])
+        json.dump(out, open(dest / "summary.json", "w"), indent=1, default=float)
+        print(f"calls agree with the release at {agree:.4f} of {out['calls_check']['snps_in_both']} SNPs; long minus short Z {dz:+.2f}; "
+              f"short/all {out['short_over_all']:.2f}; long/all {out['long_over_all']:.2f}")
+        print("OUTCOME:", outcome)
+    elif mode == "controls":      # exploratory, after the amendment's result: the same split on site-mates
+        res = {}
+        for gid in sys.argv[2:]:
+            print("==", gid)
+            _, q, st = setup(gid)
+            bam = BAM.with_name(f"{gid.split('.')[0]}.A0101.TF1.1_trim2.bam")
+            res[gid] = by_class(store, q, st, bam, table, first, second)
+            print(f"   long minus short Z {res[gid]['long_minus_short']['z']:+.2f}; calls agree {res[gid]['calls_check']['agreement']:.4f}")
+        json.dump(res, open(dest / "controls_exploratory.json", "w"), indent=1, default=float)
+    else:
+        sys.exit(__doc__)
 
 
 if __name__ == "__main__":
