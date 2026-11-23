@@ -17,3 +17,13 @@
 - **Validation** on six of the project's own formal events of 2011–2015: our scores are within about 0.4 of the
   published ones, one exact (`explore/validation.json`).
 - **Download** of the 156 day files finished; each has the server's stated length and decompresses fully.
+
+## 2026-11-23: locked run, replication, write-up (Claude Fable 5.2)
+
+- **Lock:** 2026-11-23T15:54:17Z, commit `05de16d`. Results committed after it.
+- **Locked run:** 58 events combine to −1.83; the benchmark predicts +2.51. Controls −2.03. Paired difference
+  +0.03, p = 0.43. Verdicts: no positive excess detected; smaller than the benchmark.
+- **Replication:** OpenAI and Google programs both ran first time and match every score to within 0.0001.
+- **Exploratory** (`explore/pool_check.py`): measuring egg spread only on stable egg-days leaves the slight
+  negative offset of events and controls as it is.
+- **No amendments.** Spent $2.61 of $20, plus up to $0.90 for two failed review calls.
