@@ -1,0 +1,39 @@
+{
+  "id": "S1a3",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:39:10Z",
+  "target": "def Target : Prop :=\n  ∀ (K : Def1) (F : ArithmeticTheory) [F.RE] [𝗜𝚺₁ ⪯ F] [𝗜𝚺₁ ⪯ (K : ArithmeticTheory)],\n    Def11 K → Def4 K → Def9 K F → F.theory ⊂ K\n",
+  "usage": [
+    [
+      1746,
+      314
+    ],
+    [
+      2736,
+      3719
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every set K of arithmetic sentences and every arithmetic axiom set F, assuming that F is recursively enumerable, that every theorem of IΣ₁ is provable from F, and that every theorem of IΣ₁ is provable from K used as axioms, the following holds: if every sentence provable from K belongs to K, if K does not prove a contradiction, and if for every arithmetic sentence σ the implication “if σ is provable from the Craig presentation of F, then σ” belongs to K (with provability expressed inside arithmetic), then every sentence provable from F belongs to K and at least one sentence in K is not provable from F. The IΣ₁ hypotheses concern theorem inclusion, not literal axiom inclusion. K is not required to be recursively enumerable or true in the standard model, and inclusion of F’s theorems in K is a conclusion, not a hypothesis.\"}",
+  "translation": "Target is the proposition that for every set K of arithmetic sentences and every arithmetic axiom set F, assuming that F is recursively enumerable, that every theorem of IΣ₁ is provable from F, and that every theorem of IΣ₁ is provable from K used as axioms, the following holds: if every sentence provable from K belongs to K, if K does not prove a contradiction, and if for every arithmetic sentence σ the implication “if σ is provable from the Craig presentation of F, then σ” belongs to K (with provability expressed inside arithmetic), then every sentence provable from F belongs to K and at least one sentence in K is not provable from F. The IΣ₁ hypotheses concern theorem inclusion, not literal axiom inclusion. K is not required to be recursively enumerable or true in the standard model, and inclusion of F’s theorems in K is a conclusion, not a hypothesis.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The pointwise scheme is external: each arithmetic reflection sentence belongs to the set K. This models acceptance but does not express either the epistemic judgment S ⊢ K(F(⌜φ⌝) → φ) or the uniform known-soundness assertion K(F ⊆ T). Likewise, strictness says that some sentence in K is not provable in F, not that its nonprovability is itself known.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In place of the source’s intended notion of absolute provability, Lean ranges over sets K with explicit background hypotheses: K is deductively closed, is consistent, and proves the theorems of IΣ₁. These conditions are additional to acceptance of the reflection instances. Consistency is also weaker than factivity, so K may contain false arithmetic sentences.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean deliberately restricts F to recursively enumerable axiom sets proving the theorems of IΣ₁ and uses the provability predicate of the Craig presentation of F. That presentation preserves F’s theorems but fixes a particular formula for the reflection instances. Theorem 3 allows an arbitrary F(x); its base-theory requirement is on S, not on F.\"\n    }\n  ],\n  \"summary\": \"Within the stated arithmetic interpretation, the conditional matches: both inclusion of every F-theorem in K and the existence of a sentence in K outside F’s theorems are conclusions. It thus rules out K = F.theory when K accepts the pointwise scheme under the background hypotheses, without ruling out an algorithm for K unconditionally.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The pointwise scheme is external: each arithmetic reflection sentence belongs to the set K. This models acceptance but does not express either the epistemic judgment S ⊢ K(F(⌜φ⌝) → φ) or the uniform known-soundness assertion K(F ⊆ T). Likewise, strictness says that some sentence in K is not provable in F, not that its nonprovability is itself known."
+      },
+      {
+        "severity": "minor",
+        "description": "In place of the source’s intended notion of absolute provability, Lean ranges over sets K with explicit background hypotheses: K is deductively closed, is consistent, and proves the theorems of IΣ₁. These conditions are additional to acceptance of the reflection instances. Consistency is also weaker than factivity, so K may contain false arithmetic sentences."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean deliberately restricts F to recursively enumerable axiom sets proving the theorems of IΣ₁ and uses the provability predicate of the Craig presentation of F. That presentation preserves F’s theorems but fixes a particular formula for the reflection instances. Theorem 3 allows an arbitrary F(x); its base-theory requirement is on S, not on F."
+      }
+    ],
+    "summary": "Within the stated arithmetic interpretation, the conditional matches: both inclusion of every F-theorem in K and the existence of a sentence in K outside F’s theorems are conclusions. It thus rules out K = F.theory when K accepts the pointwise scheme under the background hypotheses, without ruling out an algorithm for K unconditionally."
+  }
+}

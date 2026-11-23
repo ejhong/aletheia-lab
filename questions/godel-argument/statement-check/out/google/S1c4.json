@@ -1,0 +1,39 @@
+{
+  "id": "S1c4",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:35:47Z",
+  "target": "def Target : Prop :=\n  ∀ (T : ArithmeticTheory) [T.Δ₁], Def3 T → Def3 (T ∪ T.localReflectionOn Set.univ).theory\n",
+  "usage": [
+    [
+      1665,
+      952
+    ],
+    [
+      2246,
+      8322
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition that for every set of arithmetic sentences T equipped with a Δ₁ arithmetical definition of its axiom set, if every sentence in T is true in the standard model of arithmetic (the natural numbers), then every arithmetic sentence derivable in classical first-order logic from the union of T and the set of all local reflection sentences for T—that is, all sentences of the form Prov_T(⌜σ⌝) → σ (where Prov_T is the standard provability predicate built from T's Δ₁ presentation) for every arithmetic sentence σ—is also true in the standard model of arithmetic. No further assumptions on T (such as deductive closure or extending IΣ₁ or PA) are required.\"}\n```",
+  "translation": "Target is the proposition that for every set of arithmetic sentences T equipped with a Δ₁ arithmetical definition of its axiom set, if every sentence in T is true in the standard model of arithmetic (the natural numbers), then every arithmetic sentence derivable in classical first-order logic from the union of T and the set of all local reflection sentences for T—that is, all sentences of the form Prov_T(⌜σ⌝) → σ (where Prov_T is the standard provability predicate built from T's Δ₁ presentation) for every arithmetic sentence σ—is also true in the standard model of arithmetic. No further assumptions on T (such as deductive closure or extending IΣ₁ or PA) are required.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The statement is restricted to sets of sentences in first-order arithmetic (ℒₒᵣ) equipped with a Δ₁ presentation ([T.Δ₁]), whereas Chalmers's parenthetical is stated for arbitrary formal systems; moreover, unlike Def6–Def9 (which handle recursively enumerable theories via Craig's trick), Target requires T.Δ₁ directly, though this is harmless since every RE theory has a deductively equivalent Δ₁ axiomatization.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Assertions of T's soundness are formalized as the infinite local reflection schema T.localReflectionOn Set.univ (Prov_T(⌜σ⌝) 🡒 σ for all arithmetic sentences σ) rather than a single soundness statement (which cannot be expressed in ℒₒᵣ) or uniform reflection, and cover only arithmetic truth in the standard model ℕ. This also supplements T with an infinite set of true statements rather than a single true statement as phrased in Chalmers's parenthetical.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The conclusion asserts only semantic soundness (Def3) of the deductive closure (T ∪ T.localReflectionOn Set.univ).theory without explicitly stating that the extended theory is itself a recursively enumerable (formal) system, although this holds automatically given T.Δ₁ and the decidability of the local reflection schema.\"\n    }\n  ],\n  \"summary\": \"The Lean statement faithfully captures the author's claimed contrast case applying Chalmers's parenthetical: supplementing a sound Δ₁-presented arithmetic theory T with the local reflection assertions of T's soundness yields a sound theory. The only divergences are standard minor idealizations inherent to working with Δ₁-presented first-order arithmetic theories and representing soundness via the local reflection schema.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The statement is restricted to sets of sentences in first-order arithmetic (ℒₒᵣ) equipped with a Δ₁ presentation ([T.Δ₁]), whereas Chalmers's parenthetical is stated for arbitrary formal systems; moreover, unlike Def6–Def9 (which handle recursively enumerable theories via Craig's trick), Target requires T.Δ₁ directly, though this is harmless since every RE theory has a deductively equivalent Δ₁ axiomatization."
+      },
+      {
+        "severity": "minor",
+        "description": "Assertions of T's soundness are formalized as the infinite local reflection schema T.localReflectionOn Set.univ (Prov_T(⌜σ⌝) 🡒 σ for all arithmetic sentences σ) rather than a single soundness statement (which cannot be expressed in ℒₒᵣ) or uniform reflection, and cover only arithmetic truth in the standard model ℕ. This also supplements T with an infinite set of true statements rather than a single true statement as phrased in Chalmers's parenthetical."
+      },
+      {
+        "severity": "minor",
+        "description": "The conclusion asserts only semantic soundness (Def3) of the deductive closure (T ∪ T.localReflectionOn Set.univ).theory without explicitly stating that the extended theory is itself a recursively enumerable (formal) system, although this holds automatically given T.Δ₁ and the decidability of the local reflection schema."
+      }
+    ],
+    "summary": "The Lean statement faithfully captures the author's claimed contrast case applying Chalmers's parenthetical: supplementing a sound Δ₁-presented arithmetic theory T with the local reflection assertions of T's soundness yields a sound theory. The only divergences are standard minor idealizations inherent to working with Δ₁-presented first-order arithmetic theories and representing soundness via the local reflection schema."
+  }
+}

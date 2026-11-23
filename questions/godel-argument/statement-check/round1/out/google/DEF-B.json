@@ -1,0 +1,39 @@
+{
+  "id": "DEF-B",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T16:54:07Z",
+  "target": "def Def2 (σ : ArithmeticSentence) : Prop := ℕ↓[ℒₒᵣ] ⊧ σ\n\ndef Def3 (K : Def1) : Prop := ∀ σ ∈ K, Def2 σ\n\ndef Def4 (K : Def1) : Prop := Entailment.Consistent (K : ArithmeticTheory)\n",
+  "usage": [
+    [
+      1420,
+      1056
+    ],
+    [
+      2086,
+      8161
+    ]
+  ],
+  "a_raw": "{\"translation\": \"The TARGET consists of three definitions:\\n\\n1. `Def2` takes an arithmetic sentence `σ` (a closed formula of first-order arithmetic in the language `ℒₒᵣ`) and defines the proposition that `σ` is true in the standard model of arithmetic, the natural numbers.\\n\\n2. `Def3` takes `K : Def1` (a set of arithmetic sentences) and defines the proposition that for every arithmetic sentence `σ`, if `σ ∈ K`, then `Def2 σ` holds—that is, every sentence in `K` is true in the standard model of arithmetic (the natural numbers).\\n\\n3. `Def4` takes `K : Def1` (a set of arithmetic sentences) and defines the proposition that `K`, viewed as an `ArithmeticTheory` (a set of axioms in first-order arithmetic), is consistent in classical first-order logic—that is, `K` does not prove a contradiction.\\n\\nNone of the three definitions imposes any additional hypotheses on `σ` or `K` (in particular, `K` is not required to be closed under deduction or recursively enumerable).\"}",
+  "translation": "The TARGET consists of three definitions:\n\n1. `Def2` takes an arithmetic sentence `σ` (a closed formula of first-order arithmetic in the language `ℒₒᵣ`) and defines the proposition that `σ` is true in the standard model of arithmetic, the natural numbers.\n\n2. `Def3` takes `K : Def1` (a set of arithmetic sentences) and defines the proposition that for every arithmetic sentence `σ`, if `σ ∈ K`, then `Def2 σ` holds—that is, every sentence in `K` is true in the standard model of arithmetic (the natural numbers).\n\n3. `Def4` takes `K : Def1` (a set of arithmetic sentences) and defines the proposition that `K`, viewed as an `ArithmeticTheory` (a set of axioms in first-order arithmetic), is consistent in classical first-order logic—that is, `K` does not prove a contradiction.\n\nNone of the three definitions imposes any additional hypotheses on `σ` or `K` (in particular, `K` is not required to be closed under deduction or recursively enumerable).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Restriction to first-order arithmetic in the signature ℒₒᵣ (0, 1, +, ·, =, <): [P-K351] introduces T and K in an informal setting without fixing a formal language, and [P-K345] states that consistency and Gödel's theorems apply to any sufficiently strong formal system (using L_PA as the example), whereas Def2, Def3, and Def4 specialize truth, soundness, and consistency to sentences and sets of sentences in ℒₒᵣ.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Fixed classical first-order logic for consistency: Def4 defines consistency of K via Entailment.Consistent, i.e., non-derivability of a contradiction from K in classical first-order logic, rather than relative to an arbitrary formal system's deductive apparatus as in [P-K345] (and it implicitly closes K under classical first-order consequence even when K is not assumed deductively closed).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Presentational difference for T: [P-K351] introduces T as a set of true sentences, whereas Def2 defines truth as a predicate on ArithmeticSentence and Def3 expresses K ⊆ T pointwise as ∀ σ ∈ K, Def2 σ.\"\n    }\n  ],\n  \"summary\": \"The three Lean definitions faithfully capture arithmetical truth (in ℕ), soundness of K (K ⊆ T), and meta-level consistency, with only minor idealizations from specializing the informal setting and arbitrary formal systems of the source passages to first-order arithmetic in ℒₒᵣ under classical first-order logic.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Restriction to first-order arithmetic in the signature ℒₒᵣ (0, 1, +, ·, =, <): [P-K351] introduces T and K in an informal setting without fixing a formal language, and [P-K345] states that consistency and Gödel's theorems apply to any sufficiently strong formal system (using L_PA as the example), whereas Def2, Def3, and Def4 specialize truth, soundness, and consistency to sentences and sets of sentences in ℒₒᵣ."
+      },
+      {
+        "severity": "minor",
+        "description": "Fixed classical first-order logic for consistency: Def4 defines consistency of K via Entailment.Consistent, i.e., non-derivability of a contradiction from K in classical first-order logic, rather than relative to an arbitrary formal system's deductive apparatus as in [P-K345] (and it implicitly closes K under classical first-order consequence even when K is not assumed deductively closed)."
+      },
+      {
+        "severity": "minor",
+        "description": "Presentational difference for T: [P-K351] introduces T as a set of true sentences, whereas Def2 defines truth as a predicate on ArithmeticSentence and Def3 expresses K ⊆ T pointwise as ∀ σ ∈ K, Def2 σ."
+      }
+    ],
+    "summary": "The three Lean definitions faithfully capture arithmetical truth (in ℕ), soundness of K (K ⊆ T), and meta-level consistency, with only minor idealizations from specializing the informal setting and arbitrary formal systems of the source passages to first-order arithmetic in ℒₒᵣ under classical first-order logic."
+  }
+}

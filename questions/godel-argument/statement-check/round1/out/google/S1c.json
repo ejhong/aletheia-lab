@@ -1,0 +1,43 @@
+{
+  "id": "S1c",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:04:25Z",
+  "target": "def Target : Prop :=\n  ∀ (L : Language.{0}) [L.DecidableEq] [L.ReferenceableBy L] (T₀ T : Theory L)\n    [Diagonalization T₀] [T₀ ⪯ T] (𝔅 : Provability T₀ T) [𝔅.HBL],\n    T ⊢ 𝔅.con → Entailment.Inconsistent T\n",
+  "usage": [
+    [
+      1506,
+      1329
+    ],
+    [
+      2245,
+      7136
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition that for every language L (at universe level 0) with decidable equality of symbols and Gödel numerals for its own sentences, for all theories T₀ and T in L such that T₀ has the diagonalization property (for every formula θ(x), there is a sentence γ with T₀ ⊢ γ 🡘 θ(⌜γ⌝)) and every theorem of T₀ is a theorem of T, and for every provability predicate 𝔅 for T in T₀ (a formula prov(x) satisfying derivability condition D1: whenever T ⊢ σ, also T₀ ⊢ 𝔅 σ, with no requirement that it be standard or recursively enumerable) that also satisfies the derivability conditions D2 (T₀ ⊢ 𝔅 (σ 🡒 τ) 🡒 𝔅 σ 🡒 𝔅 τ) and D3 (T₀ ⊢ 𝔅 σ 🡒 𝔅 (𝔅 σ)): if T proves the sentence 𝔅.con (that is, ∼𝔅 ⊥), then T is inconsistent (proves every sentence). Neither T₀ nor T is required to be a theory of arithmetic or recursively enumerable.\"}\n```",
+  "translation": "Target is the proposition that for every language L (at universe level 0) with decidable equality of symbols and Gödel numerals for its own sentences, for all theories T₀ and T in L such that T₀ has the diagonalization property (for every formula θ(x), there is a sentence γ with T₀ ⊢ γ 🡘 θ(⌜γ⌝)) and every theorem of T₀ is a theorem of T, and for every provability predicate 𝔅 for T in T₀ (a formula prov(x) satisfying derivability condition D1: whenever T ⊢ σ, also T₀ ⊢ 𝔅 σ, with no requirement that it be standard or recursively enumerable) that also satisfies the derivability conditions D2 (T₀ ⊢ 𝔅 (σ 🡒 τ) 🡒 𝔅 σ 🡒 𝔅 τ) and D3 (T₀ ⊢ 𝔅 σ 🡒 𝔅 (𝔅 σ)): if T proves the sentence 𝔅.con (that is, ∼𝔅 ⊥), then T is inconsistent (proves every sentence). Neither T₀ nor T is required to be a theory of arithmetic or recursively enumerable.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers speaks informally of a 'system' with an epistemic relation of 'unassailable' assertion (|-) and a belief symbol B; the Lean statement idealizes this as a first-order theory T in a first-order language L (with decidable symbol equality) under classical first-order derivability (⊢) and an arbitrary unary formula 𝔅 named 'Provability', implicitly assuming full classical first-order deductive closure.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers assumes the system 'has the resources to do Peano arithmetic' (using this to obtain Gödel numbering and the diagonal sentence G). The Lean statement instead abstracts this into the hypotheses [L.ReferenceableBy L] and [Diagonalization T₀]; this is a harmless generalization capturing the exact role PA plays in the proof, though the statement itself does not assert that PA satisfies these properties.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The Lean statement generalizes from a single system to a pair of theories T₀ and T with T₀ ⪯ T, placing diagonalization and derivability conditions D1–D3 in T₀ while placing the consistency assertion and inconsistency conclusion in T. This is a harmless strengthening, since setting T₀ = T recovers Chalmers's single-system version.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers's assumption (2) is written in conjunctive form (B(A₁) & B(A₁ → A₂) → B(A₂)), whereas 𝔅.HBL states D2 in curried form (𝔅 (σ 🡒 τ) 🡒 𝔅 σ 🡒 𝔅 τ); the two are equivalent in classical logic.\"\n    }\n  ],\n  \"summary\": \"The Lean statement faithfully captures Chalmers's result—including assumptions (1)–(4), the derivation of inconsistency, and the crucial absence of any computability or recursive enumerability assumption on the system or belief predicate—with only minor formalization idealizations and harmless generalizations (notably abstracting Peano arithmetic into diagonalization and generalizing from one theory to T₀ ⪯ T).\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Chalmers speaks informally of a 'system' with an epistemic relation of 'unassailable' assertion (|-) and a belief symbol B; the Lean statement idealizes this as a first-order theory T in a first-order language L (with decidable symbol equality) under classical first-order derivability (⊢) and an arbitrary unary formula 𝔅 named 'Provability', implicitly assuming full classical first-order deductive closure."
+      },
+      {
+        "severity": "minor",
+        "description": "Chalmers assumes the system 'has the resources to do Peano arithmetic' (using this to obtain Gödel numbering and the diagonal sentence G). The Lean statement instead abstracts this into the hypotheses [L.ReferenceableBy L] and [Diagonalization T₀]; this is a harmless generalization capturing the exact role PA plays in the proof, though the statement itself does not assert that PA satisfies these properties."
+      },
+      {
+        "severity": "minor",
+        "description": "The Lean statement generalizes from a single system to a pair of theories T₀ and T with T₀ ⪯ T, placing diagonalization and derivability conditions D1–D3 in T₀ while placing the consistency assertion and inconsistency conclusion in T. This is a harmless strengthening, since setting T₀ = T recovers Chalmers's single-system version."
+      },
+      {
+        "severity": "minor",
+        "description": "Chalmers's assumption (2) is written in conjunctive form (B(A₁) & B(A₁ → A₂) → B(A₂)), whereas 𝔅.HBL states D2 in curried form (𝔅 (σ 🡒 τ) 🡒 𝔅 σ 🡒 𝔅 τ); the two are equivalent in classical logic."
+      }
+    ],
+    "summary": "The Lean statement faithfully captures Chalmers's result—including assumptions (1)–(4), the derivation of inconsistency, and the crucial absence of any computability or recursive enumerability assumption on the system or belief predicate—with only minor formalization idealizations and harmless generalizations (notably abstracting Peano arithmetic into diagonalization and generalizing from one theory to T₀ ⪯ T)."
+  }
+}

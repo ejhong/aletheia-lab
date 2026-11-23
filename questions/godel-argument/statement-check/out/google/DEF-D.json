@@ -1,0 +1,26 @@
+{
+  "id": "DEF-D",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:32:20Z",
+  "target": "def Target (σ : ArithmeticSentence) : Prop := ℬ[<, ℒₒᵣ].Hierarchy 𝚷 1 σ\n",
+  "usage": [
+    [
+      1622,
+      570
+    ],
+    [
+      2111,
+      3447
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is a predicate on an arithmetic sentence σ (a closed formula of first-order arithmetic in the language ℒₒᵣ), with no additional hypotheses. It asserts that σ is a Π₁ formula of arithmetic according to the library's syntactic arithmetical hierarchy (ℬ[<, ℒₒᵣ].Hierarchy 𝚷 1 σ)—that is, a closed formula consisting of a block of universal quantifiers in front of a formula with only bounded quantifiers, up to the library's syntactic definition of the hierarchy.\"}",
+  "translation": "Target is a predicate on an arithmetic sentence σ (a closed formula of first-order arithmetic in the language ℒₒᵣ), with no additional hypotheses. It asserts that σ is a Π₁ formula of arithmetic according to the library's syntactic arithmetical hierarchy (ℬ[<, ℒₒᵣ].Hierarchy 𝚷 1 σ)—that is, a closed formula consisting of a block of universal quantifiers in front of a formula with only bounded quantifiers, up to the library's syntactic definition of the hierarchy.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The Lean definition faithfully captures the class of Π⁰₁ statements of arithmetic as the predicate on closed first-order arithmetic formulas (`ArithmeticSentence`) asserting membership in the syntactic Π₁ level of the arithmetical hierarchy (`ℬ[<, ℒₒᵣ].Hierarchy 𝚷 1`).\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The Lean definition faithfully captures the class of Π⁰₁ statements of arithmetic as the predicate on closed first-order arithmetic formulas (`ArithmeticSentence`) asserting membership in the syntactic Π₁ level of the arithmetical hierarchy (`ℬ[<, ℒₒᵣ].Hierarchy 𝚷 1`)."
+  }
+}

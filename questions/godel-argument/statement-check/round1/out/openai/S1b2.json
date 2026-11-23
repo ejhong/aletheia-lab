@@ -1,0 +1,39 @@
+{
+  "id": "S1b2",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T16:49:13Z",
+  "target": "def Target : Prop :=\n  ∀ (F : ArithmeticTheory) [F.Δ₁] [𝗜𝚺₁ ⪯ F],\n    F ⊢ (F.consistent.val 🡒 gödel F.standardProvability)\n",
+  "usage": [
+    [
+      1487,
+      264
+    ],
+    [
+      2022,
+      863
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every arithmetic axiom set F, given a Δ₁ presentation of F and the hypothesis that every theorem of IΣ₁ is a theorem of F, F proves the arithmetic implication ¬Prov_F(⌜⊥⌝) → γ. Here Prov_F is the standard provability predicate from the given presentation, and γ is its designated Gödel sentence, for which IΣ₁ proves γ ↔ ¬Prov_F(⌜γ⌝). Actual consistency of F is not a hypothesis: the consistency sentence occurs as the antecedent inside the implication that F must prove. F is not required to prove either the antecedent or the consequent separately.\"}",
+  "translation": "Target is the proposition that for every arithmetic axiom set F, given a Δ₁ presentation of F and the hypothesis that every theorem of IΣ₁ is a theorem of F, F proves the arithmetic implication ¬Prov_F(⌜⊥⌝) → γ. Here Prov_F is the standard provability predicate from the given presentation, and γ is its designated Gödel sentence, for which IΣ₁ proves γ ↔ ¬Prov_F(⌜γ⌝). Actual consistency of F is not a hypothesis: the consistency sentence occurs as the antecedent inside the implication that F must prove. F is not required to prove either the antecedent or the consequent separately.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers considers a sound F that might capture our reasoning. Lean assumes neither soundness nor any connection to human reasoning. This harmlessly strengthens item (b): it is the conditional that F proves, even when F is unsound.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean makes a specific choice of scope where the passage says only “formal system”: F must be an arithmetic theory with a Δ₁ axiom presentation that proves every theorem of IΣ₁. The target does not directly cover other presentations or weaker base theories.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean reads “G(F) is true” disquotationally: the consequent is the Gödel sentence itself, not a separate assertion of standard-model truth. This is the usual reading for a fixed arithmetic sentence.\"\n    }\n  ],\n  \"summary\": \"The target preserves the key scope and direction of item (b): F proves the implication from its arithmetized consistency to its Gödel sentence. It does not say that F proves either sentence separately.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Chalmers considers a sound F that might capture our reasoning. Lean assumes neither soundness nor any connection to human reasoning. This harmlessly strengthens item (b): it is the conditional that F proves, even when F is unsound."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean makes a specific choice of scope where the passage says only “formal system”: F must be an arithmetic theory with a Δ₁ axiom presentation that proves every theorem of IΣ₁. The target does not directly cover other presentations or weaker base theories."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean reads “G(F) is true” disquotationally: the consequent is the Gödel sentence itself, not a separate assertion of standard-model truth. This is the usual reading for a fixed arithmetic sentence."
+      }
+    ],
+    "summary": "The target preserves the key scope and direction of item (b): F proves the implication from its arithmetized consistency to its Gödel sentence. It does not say that F proves either sentence separately."
+  }
+}

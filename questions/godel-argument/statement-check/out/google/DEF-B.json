@@ -1,0 +1,26 @@
+{
+  "id": "DEF-B",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:39:10Z",
+  "target": "def Def2 (σ : ArithmeticSentence) : Prop := ℕ↓[ℒₒᵣ] ⊧ σ\n\ndef Def3 (K : Def1) : Prop := ∀ σ ∈ K, Def2 σ\n\ndef Def4 (K : Def1) : Prop := Entailment.Consistent (K : ArithmeticTheory)\n\ndef Def11 (K : Def1) : Prop := Theory.theory (K : ArithmeticTheory) ⊆ K\n",
+  "usage": [
+    [
+      1650,
+      1484
+    ],
+    [
+      2418,
+      12099
+    ]
+  ],
+  "a_raw": "{\"translation\": \"The TARGET defines four predicates (where `Def1` is an abbreviation for `Set ArithmeticSentence`, a set of closed formulas of first-order arithmetic):\\n\\n1. `Def2 (σ : ArithmeticSentence) : Prop`: `σ` is true in the standard model of arithmetic, the natural numbers (`ℕ↓[ℒₒᵣ] ⊧ σ`).\\n\\n2. `Def3 (K : Def1) : Prop`: For every arithmetic sentence `σ ∈ K`, `Def2 σ` holds—that is, every sentence in `K` is true in the standard model of arithmetic.\\n\\n3. `Def4 (K : Def1) : Prop`: `K`, treated as an `ArithmeticTheory` (a set of axioms), is consistent (`Entailment.Consistent K`), meaning that `K` does not prove a contradiction in classical first-order logic.\\n\\n4. `Def11 (K : Def1) : Prop`: The set `Theory.theory K` of all arithmetic sentences derivable from `K` (treated as an `ArithmeticTheory`) in classical first-order logic is a subset of `K`—that is, every arithmetic sentence provable from `K` in classical first-order logic already belongs to `K`.\"}",
+  "translation": "The TARGET defines four predicates (where `Def1` is an abbreviation for `Set ArithmeticSentence`, a set of closed formulas of first-order arithmetic):\n\n1. `Def2 (σ : ArithmeticSentence) : Prop`: `σ` is true in the standard model of arithmetic, the natural numbers (`ℕ↓[ℒₒᵣ] ⊧ σ`).\n\n2. `Def3 (K : Def1) : Prop`: For every arithmetic sentence `σ ∈ K`, `Def2 σ` holds—that is, every sentence in `K` is true in the standard model of arithmetic.\n\n3. `Def4 (K : Def1) : Prop`: `K`, treated as an `ArithmeticTheory` (a set of axioms), is consistent (`Entailment.Consistent K`), meaning that `K` does not prove a contradiction in classical first-order logic.\n\n4. `Def11 (K : Def1) : Prop`: The set `Theory.theory K` of all arithmetic sentences derivable from `K` (treated as an `ArithmeticTheory`) in classical first-order logic is a subset of `K`—that is, every arithmetic sentence provable from `K` in classical first-order logic already belongs to `K`.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"All four definitions directly and accurately formalize the claimed notions in classical first-order arithmetic: truth of an arithmetic sentence in the standard model (Def2), soundness of K as K ⊆ T (Def3), consistency of K (Def4), and closure of K under first-order logical deduction (Def11).\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "All four definitions directly and accurately formalize the claimed notions in classical first-order arithmetic: truth of an arithmetic sentence in the standard model (Def2), soundness of K as K ⊆ T (Def3), consistency of K (Def4), and closure of K under first-order logical deduction (Def11)."
+  }
+}

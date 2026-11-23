@@ -1,0 +1,39 @@
+{
+  "id": "S1b2",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:28:44Z",
+  "target": "def Target : Prop :=\n  ∀ (F : ArithmeticTheory) [F.Δ₁] [𝗜𝚺₁ ⪯ F],\n    F ⊢ (F.consistent.val 🡒 gödel F.standardProvability)\n",
+  "usage": [
+    [
+      1698,
+      138
+    ],
+    [
+      2275,
+      718
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every arithmetic theory F, given a Δ₁ presentation of its axiom set and the hypothesis that every theorem of IΣ₁ is a theorem of F, F proves the single implication “if F's standard provability predicate does not hold of the code of falsehood, then γ,” where γ is the Gödel sentence for that predicate: IΣ₁ proves that γ is equivalent to the assertion that the predicate does not hold of the code of γ. The implication is inside arithmetic. No consistency or soundness of F is assumed, and F is not required to prove the antecedent or the consequent separately.\"}",
+  "translation": "Target is the proposition that for every arithmetic theory F, given a Δ₁ presentation of its axiom set and the hypothesis that every theorem of IΣ₁ is a theorem of F, F proves the single implication “if F's standard provability predicate does not hold of the code of falsehood, then γ,” where γ is the Gödel sentence for that predicate: IΣ₁ proves that γ is equivalent to the assertion that the predicate does not hold of the code of γ. The implication is inside arithmetic. No consistency or soundness of F is assumed, and F is not required to prove the antecedent or the consequent separately.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers considers a sound F. The target does not assume soundness, so it strengthens item (b) to cover unsound theories as well. Soundness is not needed to prove the conditional.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The target fixes a specific setting that the passage leaves implicit: F is an arithmetic theory with a Δ₁ axiom presentation that proves every theorem of IΣ₁.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The consequent is G(F) itself, rather than a separate assertion of its truth. This is the usual disquotational reading of “G(F) is true” for this particular sentence.\"\n    }\n  ],\n  \"summary\": \"The target gets the scope of item (b) right: F proves the whole conditional, with its own consistency as antecedent and its own Gödel sentence as consequent. It does not say that F proves either one separately.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Chalmers considers a sound F. The target does not assume soundness, so it strengthens item (b) to cover unsound theories as well. Soundness is not needed to prove the conditional."
+      },
+      {
+        "severity": "minor",
+        "description": "The target fixes a specific setting that the passage leaves implicit: F is an arithmetic theory with a Δ₁ axiom presentation that proves every theorem of IΣ₁."
+      },
+      {
+        "severity": "minor",
+        "description": "The consequent is G(F) itself, rather than a separate assertion of its truth. This is the usual disquotational reading of “G(F) is true” for this particular sentence."
+      }
+    ],
+    "summary": "The target gets the scope of item (b) right: F proves the whole conditional, with its own consistency as antecedent and its own Gödel sentence as consequent. It does not say that F proves either one separately."
+  }
+}

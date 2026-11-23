@@ -1,0 +1,43 @@
+{
+  "id": "S1b2",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:00:57Z",
+  "target": "def Target : Prop :=\n  ∀ (F : ArithmeticTheory) [F.Δ₁] [𝗜𝚺₁ ⪯ F],\n    F ⊢ (F.consistent.val 🡒 gödel F.standardProvability)\n",
+  "usage": [
+    [
+      1476,
+      1453
+    ],
+    [
+      2124,
+      6228
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting that for every arithmetic theory F (a set of sentences of first-order arithmetic in the language ℒₒᵣ), every Δ₁ arithmetical presentation of F's axiom set (F.Δ₁), and assuming every theorem of 𝗜𝚺₁ (basic arithmetic with Σ₁-induction) is a theorem of F (𝗜𝚺₁ ⪯ F), F derives in classical first-order logic the formal implication `F.consistent.val 🡒 gödel F.standardProvability`—that is, the arithmetic sentence stating that if F's consistency sentence `¬Prov_F(⌜⊥⌝)` (built from F's Δ₁ presentation) holds, then the Gödel sentence γ for F's standard provability predicate (obtained by diagonalization so that `𝗜𝚺₁ ⊢ γ 🡘 ¬Prov_F(⌜γ⌝)`) holds. F is not required to be consistent, true in the standard model, or deductively closed, and only the one-way implication from the consistency sentence to the Gödel sentence is asserted (not the converse or a biconditional).\"}",
+  "translation": "Target is the proposition asserting that for every arithmetic theory F (a set of sentences of first-order arithmetic in the language ℒₒᵣ), every Δ₁ arithmetical presentation of F's axiom set (F.Δ₁), and assuming every theorem of 𝗜𝚺₁ (basic arithmetic with Σ₁-induction) is a theorem of F (𝗜𝚺₁ ⪯ F), F derives in classical first-order logic the formal implication `F.consistent.val 🡒 gödel F.standardProvability`—that is, the arithmetic sentence stating that if F's consistency sentence `¬Prov_F(⌜⊥⌝)` (built from F's Δ₁ presentation) holds, then the Gödel sentence γ for F's standard provability predicate (obtained by diagonalization so that `𝗜𝚺₁ ⊢ γ 🡘 ¬Prov_F(⌜γ⌝)`) holds. F is not required to be consistent, true in the standard model, or deductively closed, and only the one-way implication from the consistency sentence to the Gödel sentence is asserted (not the converse or a biconditional).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers refers broadly to any 'formal system F' capturing human reasoning powers to which Gödel's theorem applies, whereas the Lean statement restricts F to classical first-order theories in the language of arithmetic ℒₒᵣ (ArithmeticTheory) equipped with a Δ₁ axiom presentation ([F.Δ₁]) and extending 𝗜𝚺₁ ([𝗜𝚺₁ ⪯ F]). This is a standard idealization making explicit the arithmetic strength and definability conditions needed for the formalized proof.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers introduces items (a)–(c) under the contextual hypothesis 'what if F is sound?', whereas the Lean statement omits soundness (and consistency). Because the implication is provable in F even without soundness, this is a harmless strengthening that still covers the sound case.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers writes the consequent semantically as 'G(F) is true', while the Lean statement uses the object-language sentence `gödel F.standardProvability` directly without a truth predicate. This is a standard disquotational choice, as first-order arithmetic cannot express its own truth predicate.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Chalmers treats 'F is consistent' and 'G(F)' as canonical properties of F, whereas the Lean statement fixes them to `F.consistent.val` and `gödel F.standardProvability` derived from a specific Δ₁ presentation (though quantifying universally over all Δ₁ presentations `[F.Δ₁]`).\"\n    }\n  ],\n  \"summary\": \"The Lean target accurately captures the mathematical content and direction of Chalmers's item (b): F proves the conditional from its consistency sentence to its Gödel sentence. The only divergences are minor formalization choices and idealizations, notably restricting to Δ₁-presented first-order arithmetic theories extending 𝗜𝚺₁, dropping the unnecessary soundness assumption, and rendering 'G(F) is true' disquotationally.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Chalmers refers broadly to any 'formal system F' capturing human reasoning powers to which Gödel's theorem applies, whereas the Lean statement restricts F to classical first-order theories in the language of arithmetic ℒₒᵣ (ArithmeticTheory) equipped with a Δ₁ axiom presentation ([F.Δ₁]) and extending 𝗜𝚺₁ ([𝗜𝚺₁ ⪯ F]). This is a standard idealization making explicit the arithmetic strength and definability conditions needed for the formalized proof."
+      },
+      {
+        "severity": "minor",
+        "description": "Chalmers introduces items (a)–(c) under the contextual hypothesis 'what if F is sound?', whereas the Lean statement omits soundness (and consistency). Because the implication is provable in F even without soundness, this is a harmless strengthening that still covers the sound case."
+      },
+      {
+        "severity": "minor",
+        "description": "Chalmers writes the consequent semantically as 'G(F) is true', while the Lean statement uses the object-language sentence `gödel F.standardProvability` directly without a truth predicate. This is a standard disquotational choice, as first-order arithmetic cannot express its own truth predicate."
+      },
+      {
+        "severity": "minor",
+        "description": "Chalmers treats 'F is consistent' and 'G(F)' as canonical properties of F, whereas the Lean statement fixes them to `F.consistent.val` and `gödel F.standardProvability` derived from a specific Δ₁ presentation (though quantifying universally over all Δ₁ presentations `[F.Δ₁]`)."
+      }
+    ],
+    "summary": "The Lean target accurately captures the mathematical content and direction of Chalmers's item (b): F proves the conditional from its consistency sentence to its Gödel sentence. The only divergences are minor formalization choices and idealizations, notably restricting to Δ₁-presented first-order arithmetic theories extending 𝗜𝚺₁, dropping the unnecessary soundness assumption, and rendering 'G(F) is true' disquotationally."
+  }
+}

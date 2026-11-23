@@ -1,0 +1,35 @@
+{
+  "id": "X2",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:28:21Z",
+  "target": "def Target : Prop :=\n  ∀ K : Def1,\n    (¬ Def6 K) ∨ ∃ σ : ArithmeticSentence, Def10 σ ∧ Def2 σ ∧ σ ∉ K ∧ (∼σ) ∉ K\n",
+  "usage": [
+    [
+      1698,
+      138
+    ],
+    [
+      2440,
+      1059
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition: for every set K of arithmetic sentences, either there is no recursively enumerable set F of arithmetic axioms whose set of derivable sentences is exactly K, or there exists an arithmetic sentence σ that is Π₁ in the library’s syntactic sense, is true in the standard natural numbers, and satisfies both σ ∉ K and ∼σ ∉ K, where ∼σ is its formal negation. The witness σ may depend on K; none is required if the first disjunct holds. There is no assumption that K is sound or consistent, or that F extends any particular base theory.\"}",
+  "translation": "Target is defined to be the following proposition: for every set K of arithmetic sentences, either there is no recursively enumerable set F of arithmetic axioms whose set of derivable sentences is exactly K, or there exists an arithmetic sentence σ that is Π₁ in the library’s syntactic sense, is true in the standard natural numbers, and satisfies both σ ∉ K and ∼σ ∉ K, where ∼σ is its formal negation. The witness σ may depend on K; none is required if the first disjunct holds. There is no assumption that K is sound or consistent, or that F extends any particular base theory.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The target quantifies over every K without assuming Def3 K, which expresses the source’s premise K ⊆ T. Def2 σ requires only the witness to be true. For example, take K to be all arithmetic sentences: K is the theorem set of the recursively enumerable axiom set {⊥}, so the first disjunct is false, and no σ lies outside K, so the second is false too.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def10 σ restricts the witness to syntactically Π₁ sentences, whereas Koellner’s displayed Claim 3 places no complexity restriction on φ. This is the advertised strengthening motivated by Gödel’s Diophantine wording, not a literal requirement that σ be written as a Diophantine problem.\"\n    }\n  ],\n  \"summary\": \"The disjunction has the intended shape, but the target is false for some K excluded by the source’s soundness premise. The intended statement needs `∀ K : Def1, Def3 K → ...`.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The target quantifies over every K without assuming Def3 K, which expresses the source’s premise K ⊆ T. Def2 σ requires only the witness to be true. For example, take K to be all arithmetic sentences: K is the theorem set of the recursively enumerable axiom set {⊥}, so the first disjunct is false, and no σ lies outside K, so the second is false too."
+      },
+      {
+        "severity": "minor",
+        "description": "Def10 σ restricts the witness to syntactically Π₁ sentences, whereas Koellner’s displayed Claim 3 places no complexity restriction on φ. This is the advertised strengthening motivated by Gödel’s Diophantine wording, not a literal requirement that σ be written as a Diophantine problem."
+      }
+    ],
+    "summary": "The disjunction has the intended shape, but the target is false for some K excluded by the source’s soundness premise. The intended statement needs `∀ K : Def1, Def3 K → ...`."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "S1e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:30:55Z",
+  "target": "def Target : Prop :=\n  ∀ A : ℕ → Prop, REPred A →\n    (∀ n, A n → ¬ ((Denumerable.ofNat Nat.Partrec.Code n).eval n).Dom) →\n    ∃ k, ¬ ((Denumerable.ofNat Nat.Partrec.Code k).eval k).Dom ∧ ¬ A k\n",
+  "usage": [
+    [
+      1721,
+      92
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every predicate A on the natural numbers, if A is recursively enumerable and, for every natural number n, A(n) implies that the n-th program does not halt on input n, then there exists a natural number k such that the k-th program does not halt on input k and A(k) is false. The witness k may depend on A; no procedure for choosing it is required.\"}",
+  "translation": "Target is the proposition that for every predicate A on the natural numbers, if A is recursively enumerable and, for every natural number n, A(n) implies that the n-th program does not halt on input n, then there exists a natural number k such that the k-th program does not halt on input k and A(k) is false. The witness k may depend on A; no procedure for choosing it is required."
+}

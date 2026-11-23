@@ -1,0 +1,26 @@
+{
+  "id": "DEF-D",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:29:53Z",
+  "target": "def Target (σ : ArithmeticSentence) : Prop := ℬ[<, ℒₒᵣ].Hierarchy 𝚷 1 σ\n",
+  "usage": [
+    [
+      1643,
+      102
+    ],
+    [
+      2111,
+      233
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For each closed arithmetic sentence σ, Target(σ) is defined to mean that σ is syntactically Π₁ according to the library’s hierarchy for the language of arithmetic with < (a block of universal quantifiers followed by a formula with only bounded quantifiers). There are no further hypotheses: σ need not be true in the standard natural numbers or provable in any given theory. Merely being logically equivalent to a Π₁ sentence is not the stated criterion.\"}",
+  "translation": "For each closed arithmetic sentence σ, Target(σ) is defined to mean that σ is syntactically Π₁ according to the library’s hierarchy for the language of arithmetic with < (a block of universal quantifiers followed by a formula with only bounded quantifiers). There are no further hypotheses: σ need not be true in the standard natural numbers or provable in any given theory. Merely being logically equivalent to a Π₁ sentence is not the stated criterion.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The target uses the standard syntactic Π⁰₁ criterion for closed arithmetic sentences: a universal quantifier block followed by a bounded formula. This captures the class invoked in the passage without requiring its members to be true or provable.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The target uses the standard syntactic Π⁰₁ criterion for closed arithmetic sentences: a universal quantifier block followed by a bounded formula. This captures the class invoked in the passage without requiring its members to be true or provable."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "S1d",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:30:43Z",
+  "target": "def Target : Prop :=\n  ∀ K : Def1, Def3 K →\n    (¬ Def6 K) ∨ ∃ σ : ArithmeticSentence, Def10 σ ∧ Def2 σ ∧ σ ∉ K ∧ (∼σ) ∉ K\n",
+  "usage": [
+    [
+      1702,
+      159
+    ],
+    [
+      2465,
+      1526
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the following proposition: for every set K of closed arithmetic sentences, if every member of K is true in the standard natural numbers, then at least one of two alternatives holds: (1) there is no recursively enumerable set F of arithmetic axioms such that K is exactly the set of sentences derivable from F; or (2) there exists a closed arithmetic sentence σ that is syntactically Π₁ in the library’s sense, is true in the standard natural numbers, and has neither σ nor its formal negation in K. K is not assumed to be deductively closed. The second alternative concerns nonmembership in K, not nonderivability from K, and no Π₁ condition is imposed on the negation of σ.\"}",
+  "translation": "Target is the following proposition: for every set K of closed arithmetic sentences, if every member of K is true in the standard natural numbers, then at least one of two alternatives holds: (1) there is no recursively enumerable set F of arithmetic axioms such that K is exactly the set of sentences derivable from F; or (2) there exists a closed arithmetic sentence σ that is syntactically Π₁ in the library’s sense, is true in the standard natural numbers, and has neither σ nor its formal negation in K. K is not assumed to be deductively closed. The second alternative concerns nonmembership in K, not nonderivability from K, and no Π₁ condition is imposed on the negation of σ.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Koellner’s displayed Claim 3 does not restrict φ to Π⁰₁. Lean adds that restriction: strict inclusion in T alone gives a missing truth but does not specify its complexity. The restriction reflects the Diophantine motivation without literally requiring σ to assert that a particular polynomial equation has no solution.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean generalizes from the intended K of humanly provable sentences to every sound set of arithmetic sentences. This includes sets that are not deductively closed, for which the first disjunct holds automatically because K cannot equal a full theorem set.\"\n    }\n  ],\n  \"summary\": \"The explicit soundness premise matches K ⊆ T, and Lean preserves both the exact equality in the first disjunct and the two nonmembership conditions in the second. The result is a uniform, Π⁰₁-refined version of Claim 3.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Koellner’s displayed Claim 3 does not restrict φ to Π⁰₁. Lean adds that restriction: strict inclusion in T alone gives a missing truth but does not specify its complexity. The restriction reflects the Diophantine motivation without literally requiring σ to assert that a particular polynomial equation has no solution."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean generalizes from the intended K of humanly provable sentences to every sound set of arithmetic sentences. This includes sets that are not deductively closed, for which the first disjunct holds automatically because K cannot equal a full theorem set."
+      }
+    ],
+    "summary": "The explicit soundness premise matches K ⊆ T, and Lean preserves both the exact equality in the first disjunct and the two nonmembership conditions in the second. The result is a uniform, Π⁰₁-refined version of Claim 3."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "S1e",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:23:07Z",
+  "target": "def Target : Prop :=\n  ∀ A : ℕ → Prop, REPred A →\n    (∀ n, A n → ¬ ((Denumerable.ofNat Nat.Partrec.Code n).eval n).Dom) →\n    ∃ k, ¬ ((Denumerable.ofNat Nat.Partrec.Code k).eval k).Dom ∧ ¬ A k\n",
+  "usage": [
+    [
+      1500,
+      1159
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting that for every predicate A on the natural numbers (A : ℕ → Prop), if A is recursively enumerable (REPred A), and if for every natural number n such that A n holds, running the n-th code for a partial recursive function (Denumerable.ofNat Nat.Partrec.Code n) on input n does not halt, then there exists a natural number k such that running the k-th code for a partial recursive function on input k does not halt and A k does not hold. (In other words, every recursively enumerable subset of the non-halting diagonal set {n ∈ ℕ | the n-th code does not halt on n} misses at least one element k of that set; no effective/computable construction of k from A is required, and none of Def1–Def8 are used.)\"}",
+  "translation": "Target is the proposition asserting that for every predicate A on the natural numbers (A : ℕ → Prop), if A is recursively enumerable (REPred A), and if for every natural number n such that A n holds, running the n-th code for a partial recursive function (Denumerable.ofNat Nat.Partrec.Code n) on input n does not halt, then there exists a natural number k such that running the k-th code for a partial recursive function on input k does not halt and A k does not hold. (In other words, every recursively enumerable subset of the non-halting diagonal set {n ∈ ℕ | the n-th code does not halt on n} misses at least one element k of that set; no effective/computable construction of k from A is required, and none of Def1–Def8 are used.)"
+}

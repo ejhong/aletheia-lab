@@ -1,0 +1,39 @@
+{
+  "id": "S1c3",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:34:49Z",
+  "target": "def Target : Prop :=\n  ∀ (T : ArithmeticTheory) (σ : ArithmeticSentence), Def3 T → Def2 σ → Def3 (T ∪ {σ}).theory\n",
+  "usage": [
+    [
+      1663,
+      778
+    ],
+    [
+      2073,
+      5393
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition that for every set T of arithmetic sentences (an arbitrary arithmetic theory, with no further assumptions such as recursive enumerability or deductive closure) and every arithmetic sentence σ, if every sentence in T is true in the standard model of arithmetic (the natural numbers) and σ is true in the standard model of arithmetic, then every arithmetic sentence derivable in classical first-order logic from the axiom set T ∪ {σ} is true in the standard model of arithmetic.\"}\n```",
+  "translation": "Target is the proposition that for every set T of arithmetic sentences (an arbitrary arithmetic theory, with no further assumptions such as recursive enumerability or deductive closure) and every arithmetic sentence σ, if every sentence in T is true in the standard model of arithmetic (the natural numbers) and σ is true in the standard model of arithmetic, then every arithmetic sentence derivable in classical first-order logic from the axiom set T ∪ {σ} is true in the standard model of arithmetic.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The parenthetical states a general principle about any sound system and any true statement (which the surrounding passage applies to the non-arithmetical assumption 'I am F'), whereas the Lean target specializes it to first-order arithmetic theories (in ℒₒᵣ), arithmetic sentences, truth in the standard model ℕ, and classical first-order deduction (which also builds in truth-preserving inference rules).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the source, 'system' refers to a formal (recursively enumerable) system, whereas the target quantifies over arbitrary sets T of arithmetic sentences without requiring T.RE (a harmless strengthening of the hypothesis) and does not explicitly state in the conclusion that the supplemented system remains recursively enumerable.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The hypothesis assumes soundness of the axiom set T (Def3 T) while the conclusion asserts soundness of the deductive closure (Def3 (T ∪ {σ}).theory); under classical first-order logic Def3 T is equivalent to Def3 T.theory, so this is a presentational difference.\"\n    }\n  ],\n  \"summary\": \"The Lean statement faithfully captures the parenthetical's logical content—adding a true sentence to a sound theory preserves soundness of all derived theorems—specialized to classical first-order arithmetic theories and standard-model truth without tracking recursive enumerability.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The parenthetical states a general principle about any sound system and any true statement (which the surrounding passage applies to the non-arithmetical assumption 'I am F'), whereas the Lean target specializes it to first-order arithmetic theories (in ℒₒᵣ), arithmetic sentences, truth in the standard model ℕ, and classical first-order deduction (which also builds in truth-preserving inference rules)."
+      },
+      {
+        "severity": "minor",
+        "description": "In the source, 'system' refers to a formal (recursively enumerable) system, whereas the target quantifies over arbitrary sets T of arithmetic sentences without requiring T.RE (a harmless strengthening of the hypothesis) and does not explicitly state in the conclusion that the supplemented system remains recursively enumerable."
+      },
+      {
+        "severity": "minor",
+        "description": "The hypothesis assumes soundness of the axiom set T (Def3 T) while the conclusion asserts soundness of the deductive closure (Def3 (T ∪ {σ}).theory); under classical first-order logic Def3 T is equivalent to Def3 T.theory, so this is a presentational difference."
+      }
+    ],
+    "summary": "The Lean statement faithfully captures the parenthetical's logical content—adding a true sentence to a sound theory preserves soundness of all derived theorems—specialized to classical first-order arithmetic theories and standard-model truth without tracking recursive enumerability."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "X1",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T16:59:38Z",
+  "target": "abbrev Def1 := Set ArithmeticSentence\ndef Def5 (K : Def1) (F : ArithmeticTheory) : Prop := K = F.theory\ndef Def6 (K : Def1) : Prop := ∃ F : ArithmeticTheory, F.RE ∧ K ⊆ F.theory\n",
+  "usage": [
+    [
+      1422,
+      1713
+    ],
+    [
+      2367,
+      7124
+    ]
+  ],
+  "a_raw": "```json\n{\n  \"translation\": \"The target defines three items:\\n\\n1. Def1 is an abbreviation for `Set ArithmeticSentence`, the type of arbitrary sets of closed formulas (sentences) of first-order arithmetic (with no closure, consistency, or computability requirements).\\n\\n2. Def5 takes a set of arithmetic sentences `K : Def1` and an arithmetic theory `F : ArithmeticTheory` (with no further hypotheses on `K` or `F`, such as recursive enumerability or consistency) and defines the proposition `K = F.theory`: that `K` is equal as a set to the set of all arithmetic sentences derivable from `F` in classical first-order logic.\\n\\n3. Def6 takes a set of arithmetic sentences `K : Def1` and defines the proposition that there exists an arithmetic theory `F` such that `F` is recursively enumerable (`F.RE`) and `K` is a subset of `F.theory` (every sentence in `K` is derivable from `F`). Notably, `Def6` requires only subset inclusion `K ⊆ F.theory` rather than equality `K = F.theory`, and places no consistency, soundness, or upper-bound requirement on `F` (so any inconsistent recursively enumerable theory `F` witnesses `Def6 K` for every `K`).\"\n}\n```",
+  "translation": "The target defines three items:\n\n1. Def1 is an abbreviation for `Set ArithmeticSentence`, the type of arbitrary sets of closed formulas (sentences) of first-order arithmetic (with no closure, consistency, or computability requirements).\n\n2. Def5 takes a set of arithmetic sentences `K : Def1` and an arithmetic theory `F : ArithmeticTheory` (with no further hypotheses on `K` or `F`, such as recursive enumerability or consistency) and defines the proposition `K = F.theory`: that `K` is equal as a set to the set of all arithmetic sentences derivable from `F` in classical first-order logic.\n\n3. Def6 takes a set of arithmetic sentences `K : Def1` and defines the proposition that there exists an arithmetic theory `F` such that `F` is recursively enumerable (`F.RE`) and `K` is a subset of `F.theory` (every sentence in `K` is derivable from `F`). Notably, `Def6` requires only subset inclusion `K ⊆ F.theory` rather than equality `K = F.theory`, and places no consistency, soundness, or upper-bound requirement on `F` (so any inconsistent recursively enumerable theory `F` witnesses `Def6 K` for every `K`).",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Def6 defines Koellner's weak mechanistic thesis (WMT) using subset inclusion (K ⊆ F.theory) instead of equality (K = F.theory, i.e., Def5 K F). Koellner's WMT (∃e (K = F_e)) asserts that some r.e. formal system has the exact same outputs as K. Moreover, because Def6 places no consistency or soundness restriction on F, Def6 K is vacuously true for every set K of arithmetic sentences (witnessed by any inconsistent r.e. theory such as {⊥}, whose theorem set is all sentences); even if consistency were added, inclusion would remain strictly weaker than equality (e.g., holding for non-r.e. subsets of a consistent r.e. theory's theorems).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def5 takes an arbitrary F : ArithmeticTheory (an arbitrary Set ArithmeticSentence) without requiring F.RE (recursiveness or recursive enumerability). While Koellner explicates 'formal system' via recursive/r.e. axiom sets, Def5 K F holds even for non-r.e. axiom sets F, leaving the formal-system requirement unbundled for callers to supply.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def1 and Def5–Def6 fix the language to first-order arithmetic (ℒₒᵣ) and derivability to classical first-order logic, and Def6 quantifies directly over r.e. axiom sets rather than natural-number indices e for F_e. This is a standard specialization/equivalent formulation for WMT in arithmetic, though the passages speak more broadly of sentences and indexed r.e. systems F_e.\"\n    }\n  ],\n  \"summary\": \"The formalization is divergent because Def6 weakens equality (K = F.theory) to subset inclusion (K ⊆ F.theory), which not only fails to capture Koellner's WMT (∃e (K = F_e)) but makes Def6 trivially true for every K via any inconsistent r.e. theory. Additionally, Def5 omits the recursive-enumerability condition needed for F to be a formal system.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Def6 defines Koellner's weak mechanistic thesis (WMT) using subset inclusion (K ⊆ F.theory) instead of equality (K = F.theory, i.e., Def5 K F). Koellner's WMT (∃e (K = F_e)) asserts that some r.e. formal system has the exact same outputs as K. Moreover, because Def6 places no consistency or soundness restriction on F, Def6 K is vacuously true for every set K of arithmetic sentences (witnessed by any inconsistent r.e. theory such as {⊥}, whose theorem set is all sentences); even if consistency were added, inclusion would remain strictly weaker than equality (e.g., holding for non-r.e. subsets of a consistent r.e. theory's theorems)."
+      },
+      {
+        "severity": "minor",
+        "description": "Def5 takes an arbitrary F : ArithmeticTheory (an arbitrary Set ArithmeticSentence) without requiring F.RE (recursiveness or recursive enumerability). While Koellner explicates 'formal system' via recursive/r.e. axiom sets, Def5 K F holds even for non-r.e. axiom sets F, leaving the formal-system requirement unbundled for callers to supply."
+      },
+      {
+        "severity": "minor",
+        "description": "Def1 and Def5–Def6 fix the language to first-order arithmetic (ℒₒᵣ) and derivability to classical first-order logic, and Def6 quantifies directly over r.e. axiom sets rather than natural-number indices e for F_e. This is a standard specialization/equivalent formulation for WMT in arithmetic, though the passages speak more broadly of sentences and indexed r.e. systems F_e."
+      }
+    ],
+    "summary": "The formalization is divergent because Def6 weakens equality (K = F.theory) to subset inclusion (K ⊆ F.theory), which not only fails to capture Koellner's WMT (∃e (K = F_e)) but makes Def6 trivially true for every K via any inconsistent r.e. theory. Additionally, Def5 omits the recursive-enumerability condition needed for F to be a formal system."
+  }
+}

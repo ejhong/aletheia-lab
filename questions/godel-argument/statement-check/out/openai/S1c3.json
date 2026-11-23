@@ -1,0 +1,31 @@
+{
+  "id": "S1c3",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-22T17:30:14Z",
+  "target": "def Target : Prop :=\n  ∀ (T : ArithmeticTheory) (σ : ArithmeticSentence), Def3 T → Def2 σ → Def3 (T ∪ {σ}).theory\n",
+  "usage": [
+    [
+      1684,
+      89
+    ],
+    [
+      2072,
+      567
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every set T of arithmetic axioms and every arithmetic sentence σ, if every axiom in T is true in the standard natural numbers, then, if σ is also true there, every sentence derivable from T ∪ {σ} is true there. T need not be recursively enumerable or deductively closed, and σ need not be new to T or provable from T.\"}",
+  "translation": "Target is the proposition that for every set T of arithmetic axioms and every arithmetic sentence σ, if every axiom in T is true in the standard natural numbers, then, if σ is also true there, every sentence derivable from T ∪ {σ} is true there. T need not be recursively enumerable or deductively closed, and σ need not be new to T or provable from T.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean specializes the parenthetical to classical first-order arithmetic, with truth evaluated in the standard natural numbers. The parenthetical itself does not specify a language or model.\"\n    }\n  ],\n  \"summary\": \"Within that setting, the preservation claim is exact. Def3 T checks the axioms rather than all theorems, but these soundness conditions are equivalent: every axiom is derivable, and classical first-order deduction preserves truth.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Lean specializes the parenthetical to classical first-order arithmetic, with truth evaluated in the standard natural numbers. The parenthetical itself does not specify a language or model."
+      }
+    ],
+    "summary": "Within that setting, the preservation claim is exact. Def3 T checks the axioms rather than all theorems, but these soundness conditions are equivalent: every axiom is derivable, and classical first-order deduction preserves truth."
+  }
+}

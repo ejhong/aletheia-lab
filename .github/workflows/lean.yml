@@ -1,0 +1,53 @@
+name: Lean
+on:
+  push:
+    paths:
+      - "questions/**/lean/**"
+      - ".github/workflows/lean.yml"
+  pull_request:
+    paths:
+      - "questions/**/lean/**"
+      - ".github/workflows/lean.yml"
+permissions:
+  contents: read
+concurrency:
+  group: lean-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    outputs:
+      projects: ${{ steps.list.outputs.projects }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: |
+          projects=$(find questions -name lakefile.toml -not -path '*/.lake/*' -exec dirname {} \; | sort | python3 -c "import json,sys; print(json.dumps(sys.stdin.read().split()))")
+          echo "projects=$projects" >> "$GITHUB_OUTPUT"
+  build:
+    needs: find
+    if: needs.find.outputs.projects != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      matrix:
+        project: ${{ fromJson(needs.find.outputs.projects) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: No sorry, admit, new axioms or native_decide in the source
+        run: |
+          if grep -rnE --include='*.lean' --exclude-dir=.lake --exclude=Audit.lean \
+              '(^|[^[:alnum:]_])(sorry|admit|native_decide)([^[:alnum:]_]|$)|^[[:space:]]*(private |protected )?axiom[[:space:]]' \
+              "${{ matrix.project }}"; then
+            echo "forbidden token found"; exit 1
+          fi
+      - name: Dependencies are pinned
+        run: test -f "${{ matrix.project }}/lake-manifest.json" && test -f "${{ matrix.project }}/lean-toolchain"
+      # Builds with warnings as errors. Headline theorems are audited inside the build by
+      # `#assert_standard_axioms` (see GodelArgument/Audit.lean), so an unexpected axiom fails this step.
+      - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee # v1
+        with:
+          lake-package-directory: ${{ matrix.project }}
+          build-args: "--wfail"
+          use-mathlib-cache: true

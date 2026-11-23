@@ -1,0 +1,47 @@
+{
+  "id": "S1a3",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T17:31:27Z",
+  "target": "def Target : Prop :=\n  ∀ (K : Def1) (F : ArithmeticTheory) [F.RE] [𝗜𝚺₁ ⪯ F],\n    Def4 F → F.theory ⊆ K → Def7 F ∈ K → F.theory ⊂ K\n",
+  "usage": [
+    [
+      1686,
+      1669
+    ],
+    [
+      2637,
+      23477
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition that for every set K of arithmetic sentences and every arithmetic theory F (i.e., set of arithmetic sentences), assuming that F is recursively enumerable, that every theorem of 𝗜𝚺₁ is a theorem of F, that F is consistent (does not prove a contradiction in classical first-order logic), that the set of all theorems of F is a subset of K, and that the consistency sentence ¬Prov_{F.craig}(⌜⊥⌝) (the sentence built from the standard provability predicate of the Δ₁-presented axiom set F.craig obtained from F by Craig's trick) is an element of K, it follows that the set of all theorems of F is a strict subset of K (i.e., F.theory ⊆ K and not K ⊆ F.theory). No other hypotheses (such as consistency, truth in the standard model ℕ, deductive closure, or recursive enumerability) are required of K.\"}\n```",
+  "translation": "Target is the proposition that for every set K of arithmetic sentences and every arithmetic theory F (i.e., set of arithmetic sentences), assuming that F is recursively enumerable, that every theorem of 𝗜𝚺₁ is a theorem of F, that F is consistent (does not prove a contradiction in classical first-order logic), that the set of all theorems of F is a subset of K, and that the consistency sentence ¬Prov_{F.craig}(⌜⊥⌝) (the sentence built from the standard provability predicate of the Δ₁-presented axiom set F.craig obtained from F by Craig's trick) is an element of K, it follows that the set of all theorems of F is a strict subset of K (i.e., F.theory ⊆ K and not K ⊆ F.theory). No other hypotheses (such as consistency, truth in the standard model ℕ, deductive closure, or recursive enumerability) are required of K.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Adds `F.theory ⊆ K` as an explicit hypothesis. In the source (`K(F ⊆ T) → F ⊊ K`), `F ⊆ K` is part of the conclusion (following from `K` knowing that `F` is sound), not an antecedent. Contrary to the claim that the antecedent is simply knowledge of `F`'s consistency, `Con(F) ∈ K` alone does not entail `F ⊊ K` even for a sound agent `K` (for example, `F = PA + ¬Con(PA)` is consistent and `K` can know `Con(F)` without accepting `¬Con(PA)`). Assuming `F.theory ⊆ K` presupposes the inclusion half of `F.theory ⊂ K`, and because `K` is otherwise unconstrained, `Target` is logically equivalent to bare Gödel's Second Incompleteness Theorem (`Consistent F → Con(F.craig) ∉ F.theory`) with `K` completely eliminable.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Cannot express the source's antecedent `K(F ⊆ T)` (that it is absolutely provable that `F` is sound/correct) or the epistemic structure of `K`. Because `K` is an arbitrary set of arithmetic sentences with no knowledge operator, truth predicate `T`, factivity, or deductive closure, `Target` omits the epistemic content of `K(F ⊆ T)` and replaces it with three separate premises (`Def4 F`, `F.theory ⊆ K`, `Def7 F ∈ K`) rather than capturing the conditional from soundness.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Adds `Def4 F` (`Entailment.Consistent F`) as an external hypothesis. In the source, `F`'s actual consistency follows from `K(F ⊆ T)` (and even from `K(Con(F))`) via factivity of knowledge; because `Target` imposes no soundness/factivity condition on `K`, `Def7 F ∈ K` does not guarantee that `F` is consistent, so `Def4 F` must be assumed separately.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Restricts `F` to recursively enumerable theories in the language of arithmetic extending `𝗜𝚺₁` (`[F.RE] [𝗜𝚺₁ ⪯ F]`). The source states the claim for any formal system `F` (where weak systems still satisfy `F ⊊ K` because `K` contains arithmetic), whereas `Target` requires `𝗜𝚺₁ ⪯ F` so that Gödel's Second Incompleteness Theorem applies directly to `F`.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Fixes the consistency sentence `Def7 F` to the specific Craig-trick `Δ₁` presentation `F.craig.consistent.val`. Because `F` is given extensionally as a set of sentences rather than intensionally via a provability formula `F(x)`, the statement only applies to that particular presentation of `F`.\"\n    }\n  ],\n  \"summary\": \"The formalization diverges materially from the source conditional `K(F ⊆ T) → F ⊊ K` because it cannot express knowledge of soundness and, to substitute knowledge of consistency `Con(F.craig) ∈ K`, adds `F.theory ⊆ K` (along with `Consistent F` and `𝗜𝚺₁ ⪯ F`) as an explicit premise. Because `F.theory ⊆ K` assumes the inclusion half of `F.theory ⊂ K` and `K` is otherwise unconstrained, `Target` collapses logically to Gödel's Second Incompleteness Theorem (`Consistent F → Con(F.craig) ∉ F.theory`) with `K` playing no substantive role.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Adds `F.theory ⊆ K` as an explicit hypothesis. In the source (`K(F ⊆ T) → F ⊊ K`), `F ⊆ K` is part of the conclusion (following from `K` knowing that `F` is sound), not an antecedent. Contrary to the claim that the antecedent is simply knowledge of `F`'s consistency, `Con(F) ∈ K` alone does not entail `F ⊊ K` even for a sound agent `K` (for example, `F = PA + ¬Con(PA)` is consistent and `K` can know `Con(F)` without accepting `¬Con(PA)`). Assuming `F.theory ⊆ K` presupposes the inclusion half of `F.theory ⊂ K`, and because `K` is otherwise unconstrained, `Target` is logically equivalent to bare Gödel's Second Incompleteness Theorem (`Consistent F → Con(F.craig) ∉ F.theory`) with `K` completely eliminable."
+      },
+      {
+        "severity": "major",
+        "description": "Cannot express the source's antecedent `K(F ⊆ T)` (that it is absolutely provable that `F` is sound/correct) or the epistemic structure of `K`. Because `K` is an arbitrary set of arithmetic sentences with no knowledge operator, truth predicate `T`, factivity, or deductive closure, `Target` omits the epistemic content of `K(F ⊆ T)` and replaces it with three separate premises (`Def4 F`, `F.theory ⊆ K`, `Def7 F ∈ K`) rather than capturing the conditional from soundness."
+      },
+      {
+        "severity": "minor",
+        "description": "Adds `Def4 F` (`Entailment.Consistent F`) as an external hypothesis. In the source, `F`'s actual consistency follows from `K(F ⊆ T)` (and even from `K(Con(F))`) via factivity of knowledge; because `Target` imposes no soundness/factivity condition on `K`, `Def7 F ∈ K` does not guarantee that `F` is consistent, so `Def4 F` must be assumed separately."
+      },
+      {
+        "severity": "minor",
+        "description": "Restricts `F` to recursively enumerable theories in the language of arithmetic extending `𝗜𝚺₁` (`[F.RE] [𝗜𝚺₁ ⪯ F]`). The source states the claim for any formal system `F` (where weak systems still satisfy `F ⊊ K` because `K` contains arithmetic), whereas `Target` requires `𝗜𝚺₁ ⪯ F` so that Gödel's Second Incompleteness Theorem applies directly to `F`."
+      },
+      {
+        "severity": "minor",
+        "description": "Fixes the consistency sentence `Def7 F` to the specific Craig-trick `Δ₁` presentation `F.craig.consistent.val`. Because `F` is given extensionally as a set of sentences rather than intensionally via a provability formula `F(x)`, the statement only applies to that particular presentation of `F`."
+      }
+    ],
+    "summary": "The formalization diverges materially from the source conditional `K(F ⊆ T) → F ⊊ K` because it cannot express knowledge of soundness and, to substitute knowledge of consistency `Con(F.craig) ∈ K`, adds `F.theory ⊆ K` (along with `Consistent F` and `𝗜𝚺₁ ⪯ F`) as an explicit premise. Because `F.theory ⊆ K` assumes the inclusion half of `F.theory ⊂ K` and `K` is otherwise unconstrained, `Target` collapses logically to Gödel's Second Incompleteness Theorem (`Consistent F → Con(F.craig) ∉ F.theory`) with `K` playing no substantive role."
+  }
+}

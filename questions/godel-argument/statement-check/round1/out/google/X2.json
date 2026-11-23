@@ -1,0 +1,47 @@
+{
+  "id": "X2",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-22T16:51:07Z",
+  "target": "def Target : Prop :=\n  ∀ K : Def1, Def3 K →\n    (¬ Theory.RE (K : ArithmeticTheory)) ∨ ∃ σ : ArithmeticSentence, Def2 σ ∧ σ ∉ K\n",
+  "usage": [
+    [
+      1468,
+      936
+    ],
+    [
+      2096,
+      20233
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target defines the proposition asserting that for every set K of arithmetic sentences (closed first-order formulas in the language of arithmetic), if every sentence in K is true in the standard model of arithmetic (the natural numbers), then either K is not recursively enumerable, or there exists an arithmetic sentence σ that is true in the standard model of arithmetic and is not a member of K. No deductive closure or base theory (such as IΣ₁ or PA) is required of K, and the second disjunct requires non-membership (σ ∉ K) rather than non-provability from K.\"}\n```",
+  "translation": "Target defines the proposition asserting that for every set K of arithmetic sentences (closed first-order formulas in the language of arithmetic), if every sentence in K is true in the standard model of arithmetic (the natural numbers), then either K is not recursively enumerable, or there exists an arithmetic sentence σ that is true in the standard model of arithmetic and is not a member of K. No deductive closure or base theory (such as IΣ₁ or PA) is required of K, and the second disjunct requires non-membership (σ ∉ K) rather than non-provability from K.",
+  "b_raw": "{\"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The second disjunct of Target omits the explicit clause `∼σ ∉ K` (`¬φ ∉ K`) from Koellner's Claim 3 (`∃φ (φ ∈ T ∧ φ ∉ K ∧ ¬φ ∉ K)`), which represents undecidability/unsolvability and is explicitly derived in Koellner's informal argument. However, under the hypothesis `Def3 K` (`K ⊆ T`), `Def2 σ` (`ℕ ⊧ σ`) immediately implies `∼σ ∉ K`, so the statement is logically equivalent to the version including `∼σ ∉ K`.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The first disjunct uses `¬ Theory.RE K` (bare recursive enumerability of `K`) rather than `¬ Def6 K` (`¬ ∃ F, F.RE ∧ K = F.theory`, matching Claim 3's `¬∃F (F = K)` for formal systems), and `K` is not required to be deductively closed. Because `Def6 K` implies `Theory.RE K` (and the two are equivalent for deductively closed `K`), this is a harmless strengthening that aligns with Gödel's 'finite machine' phrasing and avoids making the first disjunct vacuously true for non-deductively-closed `K`.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Relative to Gödel's quoted statement, Target quantifies over arbitrary first-order arithmetic sentences (`ArithmeticSentence`) rather than specifically 'diophantine problems of the type specified' (Π₁ sentences); however, this matches Koellner's own Claim 3, which likewise abstracts to arbitrary sentences in `T`.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean cannot express the philosophical and epistemic notions in the passage ('evident axioms', 'the human mind', 'absolutely unsolvable', and `K` as the specific set of humanly knowable arithmetical truths). Target instead universally quantifies over all sound sets `K : Set ArithmeticSentence` with `Def3 K` (`K ⊆ T`) as an explicit hypothesis.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Although the author claims Target captures both Claim 3 and the informal argument given for it, Target is only a `Prop` (the theorem statement, incorporating the argument's premise `K ⊆ T`) and does not itself capture the proof steps of Koellner's informal argument (such as the appeal to the incompleteness theorems or the explicit derivation of `¬φ ∉ K`).\"\n    }\n  ],\n  \"summary\": \"Target faithfully captures the mathematical content of Koellner's Claim 3 under the premise `K ⊆ T`, being logically equivalent to it for deductively closed `K` and a harmless strengthening in general. It has minor divergences: it omits the redundant clause `∼σ ∉ K`, uses bare non-r.e.-ness of `K` instead of non-equality with any r.e. formal system's theorems (`Def6`), drops Gödel's Diophantine restriction (following Koellner's Claim 3), abstracts away the epistemic interpretation of `K`, and states only a proposition rather than formalizing the informal argument itself.\"}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The second disjunct of Target omits the explicit clause `∼σ ∉ K` (`¬φ ∉ K`) from Koellner's Claim 3 (`∃φ (φ ∈ T ∧ φ ∉ K ∧ ¬φ ∉ K)`), which represents undecidability/unsolvability and is explicitly derived in Koellner's informal argument. However, under the hypothesis `Def3 K` (`K ⊆ T`), `Def2 σ` (`ℕ ⊧ σ`) immediately implies `∼σ ∉ K`, so the statement is logically equivalent to the version including `∼σ ∉ K`."
+      },
+      {
+        "severity": "minor",
+        "description": "The first disjunct uses `¬ Theory.RE K` (bare recursive enumerability of `K`) rather than `¬ Def6 K` (`¬ ∃ F, F.RE ∧ K = F.theory`, matching Claim 3's `¬∃F (F = K)` for formal systems), and `K` is not required to be deductively closed. Because `Def6 K` implies `Theory.RE K` (and the two are equivalent for deductively closed `K`), this is a harmless strengthening that aligns with Gödel's 'finite machine' phrasing and avoids making the first disjunct vacuously true for non-deductively-closed `K`."
+      },
+      {
+        "severity": "minor",
+        "description": "Relative to Gödel's quoted statement, Target quantifies over arbitrary first-order arithmetic sentences (`ArithmeticSentence`) rather than specifically 'diophantine problems of the type specified' (Π₁ sentences); however, this matches Koellner's own Claim 3, which likewise abstracts to arbitrary sentences in `T`."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean cannot express the philosophical and epistemic notions in the passage ('evident axioms', 'the human mind', 'absolutely unsolvable', and `K` as the specific set of humanly knowable arithmetical truths). Target instead universally quantifies over all sound sets `K : Set ArithmeticSentence` with `Def3 K` (`K ⊆ T`) as an explicit hypothesis."
+      },
+      {
+        "severity": "minor",
+        "description": "Although the author claims Target captures both Claim 3 and the informal argument given for it, Target is only a `Prop` (the theorem statement, incorporating the argument's premise `K ⊆ T`) and does not itself capture the proof steps of Koellner's informal argument (such as the appeal to the incompleteness theorems or the explicit derivation of `¬φ ∉ K`)."
+      }
+    ],
+    "summary": "Target faithfully captures the mathematical content of Koellner's Claim 3 under the premise `K ⊆ T`, being logically equivalent to it for deductively closed `K` and a harmless strengthening in general. It has minor divergences: it omits the redundant clause `∼σ ∉ K`, uses bare non-r.e.-ness of `K` instead of non-equality with any r.e. formal system's theorems (`Def6`), drops Gödel's Diophantine restriction (following Koellner's Claim 3), abstracts away the epistemic interpretation of `K`, and states only a proposition rather than formalizing the informal argument itself."
+  }
+}
