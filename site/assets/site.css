@@ -444,6 +444,19 @@ pre code { background: none; padding: 0; }
   color: var(--ink-soft); text-decoration: none;
 }
 .subnav a:hover { color: var(--copper); text-decoration: underline; text-underline-offset: 6px; }
+/* On a phone: one line that scrolls sideways, fading out at the right edge to show there is more. */
+@media (max-width: 40rem) {
+  .subnav .wrap { padding-right: 0; }
+  .subnav ul {
+    flex-wrap: nowrap; overflow-x: auto; gap: 0 1.35rem; padding: .7rem 2.5rem .7rem 0;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 2.75rem), transparent);
+    mask-image: linear-gradient(90deg, #000 calc(100% - 2.75rem), transparent);
+  }
+  .subnav ul::-webkit-scrollbar { display: none; }
+  .subnav li { flex: none; }
+  .subnav a { white-space: nowrap; display: block; padding: .35rem 0; }
+}
 
 /* ---------- Prose ---------- */
 
@@ -887,3 +900,22 @@ details.more > summary:focus-visible { outline: 2px solid var(--copper); outline
 .chart .c-line-ctx { fill: none; stroke: var(--faint); stroke-width: 2; stroke-linejoin: round; }
 .chart .c-area-ctx { fill: var(--faint); opacity: .16; stroke: none; }
 .chart .c-dot.c-ctx-hollow { fill: var(--paper); stroke: var(--faint); stroke-width: 1.5; opacity: .75; }
+
+/* ---------- Phone: the stage tracker in compact form ----------
+   One line per stage. The dot carries the state, so the status text shows only for the stage in progress,
+   and the key is dropped. The full plan, with every step, is further down the page. */
+@media (max-width: 40rem) {
+  .track { margin-top: 1.5rem; padding-top: 1.1rem; }
+  .track > .label { margin-bottom: 1rem; }
+  .t-stage { padding-bottom: .8rem; }
+  .t-stage:last-child { padding-bottom: 0; }
+  .t-stage:not(:last-child)::after { display: none; }
+  .t-link { display: flex; flex-wrap: wrap; align-items: baseline; gap: .1rem .65rem; }
+  .t-num { flex: none; }
+  .t-title { margin-top: 0; font-size: 1.05rem; }
+  .t-status {
+    position: absolute; width: 1px; height: 1px; margin: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+  }
+  .is-current .t-status { position: static; width: auto; height: auto; overflow: visible; clip-path: none; flex-basis: 100%; }
+  .track-key { display: none; }
+}

@@ -276,9 +276,14 @@ def blocks(md, doc):
         m = re.match(r"^(#{1,6})\s+(.*?)\s*$", s)
         if m:
             level, text = len(m.group(1)), m.group(2)
+            # "## A long heading {menu: Short}" keeps the heading and its id, and uses "Short" in the page's menu.
+            short = ""
+            ms = re.match(r"^(.*?)\s*\{menu:\s*(.+?)\}$", text)
+            if ms:
+                text, short = ms.group(1), ms.group(2)
             hid = doc.uid(text)
             if level == 2:
-                doc.outline.append((hid, plain(text)))
+                doc.outline.append((hid, plain(short or text)))
             out.append('<h%d id="%s">%s</h%d>' % (level, hid, inline(text), level))
             i += 1
             continue
@@ -805,6 +810,7 @@ def rich_page(q, root):
     head = band_head(q, root, dek, track)
     subnav = ""
     if doc.outline:
+        # On a phone the list is one line that scrolls sideways (site.css), so keep the labels short.
         subnav = ('<nav class="subnav" aria-label="On this page"><div class="wrap"><ul>%s</ul></div></nav>' % "".join(
             '<li><a href="#%s">%s</a></li>' % (hid, esc(text)) for hid, text in doc.outline))
     return subnav + head + '<div class="wrap"><article class="prose">%s</article></div>' % article
