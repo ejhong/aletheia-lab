@@ -37,3 +37,5 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#46](https://github.com/ejhong/aletheia-lab/issues/46) | Blind-judging the remote-viewing archive | model | `remote-viewing` |
 | [#47](https://github.com/ejhong/aletheia-lab/issues/47) | Did random-number generators twitch at world events? | data | `global-consciousness` |
 | [#48](https://github.com/ejhong/aletheia-lab/issues/48) | Do anaesthetics pick out microtubules? | data | `anaesthetics-microtubules` |
+| [#66](https://github.com/ejhong/aletheia-lab/issues/66) | Machine-check the unfolding argument | proof | `unfolding-argument` |
+| [#67](https://github.com/ejhong/aletheia-lab/issues/67) | Do the theorems show that capable AI must seek power? | proof | `power-seeking` |
