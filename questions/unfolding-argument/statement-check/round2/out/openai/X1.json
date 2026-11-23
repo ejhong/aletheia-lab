@@ -1,0 +1,43 @@
+{
+  "id": "X1",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:20:27Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type) (N : S1 X Y) (T : ℕ),\n    (N.d14 T).D9 ∧ S1.D6 (N.d14 T) N ∧ (N.d14 T).d13 = T * N.d13\n",
+  "usage": [
+    [
+      2631,
+      503
+    ],
+    [
+      3756,
+      1145
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every input type X, every output type Y, every S1 system N on X and Y, and every natural number T (including zero), let M be N.d14 T. Its coordinates are pairs (i,n), where 0 ≤ i < T and n is a coordinate of N. Each (i,n) has the state type and initial value of n. On input x, it uses N’s update for n with input x and with the following state assignment: N’s initial assignment if i = 0, or the previous state of layer i−1 if i > 0. M applies N’s readout to the state of layer T−1 when T > 0, and to N’s initial assignment when T = 0. All three of the following must hold: (1) For every coordinate of M, there is no chain of one or more dependency edges from it back to itself. An edge from a to b means that there exist two state assignments of M agreeing at every coordinate other than a, and an input x, such that the updates at b on that same x differ. The assignments need not be reachable. (2) For every finite list of inputs from X, M and N give equal outputs after each starts from its own initial assignment and processes the list from left to right. This compares the final outputs, not the state assignments, and there is no length bound: the empty list and lists longer than T are included. (3) The number of coordinates of M equals T times the number of coordinates of N. No acyclicity hypothesis is imposed on N.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every input type X, every output type Y, every S1 system N on X and Y, and every natural number T (including zero), let M be N.d14 T. Its coordinates are pairs (i,n), where 0 ≤ i < T and n is a coordinate of N. Each (i,n) has the state type and initial value of n. On input x, it uses N’s update for n with input x and with the following state assignment: N’s initial assignment if i = 0, or the previous state of layer i−1 if i > 0. M applies N’s readout to the state of layer T−1 when T > 0, and to N’s initial assignment when T = 0. All three of the following must hold: (1) For every coordinate of M, there is no chain of one or more dependency edges from it back to itself. An edge from a to b means that there exist two state assignments of M agreeing at every coordinate other than a, and an input x, such that the updates at b on that same x differ. The assignments need not be reachable. (2) For every finite list of inputs from X, M and N give equal outputs after each starts from its own initial assignment and processes the list from left to right. This compares the final outputs, not the state assignments, and there is no length bound: the empty list and lists longer than T are included. (3) The number of coordinates of M equals T times the number of coordinates of N. No acyclicity hypothesis is imposed on N.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"`S1.D6` requires the depth-`T` unrolling to match the original on every finite input list, not just through `T` steps. This is false even for `T = 1`: on `[true, false]`, the supplied system `d15` remembers the `true`, but its one-layer unrolling returns `false`. The claimed horizon-bounded equality is `S1.D5 T (N.d14 T) N`.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"There is no recurrence hypothesis on `N`, so the target also covers already-feedforward systems. P2's recurrent-to-feedforward direction only requires the result for recurrent systems.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"P2 states existence without specifying a horizon or size. The target selects a particular construction for each natural `T`, including zero, with exactly `T` copies of the units. This is a constructive refinement motivated by the timestep-copying passage, not a size requirement in P2 itself.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The formal model specializes the source's general systems to finitely many units with synchronous deterministic updates and a fixed initial state. It tests feedforwardness by acyclicity of functional update dependencies rather than by a separately specified wiring diagram.\"\n    }\n  ],\n  \"summary\": \"The acyclicity and copy-count clauses capture the layered unrolling. The material error is that `T` bounds the number of layers but does not bound the input histories on which the target demands equal outputs.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "`S1.D6` requires the depth-`T` unrolling to match the original on every finite input list, not just through `T` steps. This is false even for `T = 1`: on `[true, false]`, the supplied system `d15` remembers the `true`, but its one-layer unrolling returns `false`. The claimed horizon-bounded equality is `S1.D5 T (N.d14 T) N`."
+      },
+      {
+        "severity": "minor",
+        "description": "There is no recurrence hypothesis on `N`, so the target also covers already-feedforward systems. P2's recurrent-to-feedforward direction only requires the result for recurrent systems."
+      },
+      {
+        "severity": "minor",
+        "description": "P2 states existence without specifying a horizon or size. The target selects a particular construction for each natural `T`, including zero, with exactly `T` copies of the units. This is a constructive refinement motivated by the timestep-copying passage, not a size requirement in P2 itself."
+      },
+      {
+        "severity": "minor",
+        "description": "The formal model specializes the source's general systems to finitely many units with synchronous deterministic updates and a fixed initial state. It tests feedforwardness by acyclicity of functional update dependencies rather than by a separately specified wiring diagram."
+      }
+    ],
+    "summary": "The acyclicity and copy-count clauses capture the layered unrolling. The material error is that `T` bounds the number of layers but does not bound the input histories on which the target demands equal outputs."
+  }
+}

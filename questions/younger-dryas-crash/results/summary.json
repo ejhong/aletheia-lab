@@ -1,0 +1,507 @@
+{
+ "regions": {
+  "North America": {
+   "dates": 1803,
+   "bins": 1169,
+   "sites": 540,
+   "step_at_target": 0.30328664421077245,
+   "ratio_after_to_before": 1.3543026118128425,
+   "ratio_expected": 1.1321636163123332,
+   "ratio_expected_95": [
+    0.9284338429482084,
+    1.3809674103078755
+   ],
+   "z_at_target": 1.737276558232524,
+   "p_at_target": 0.95952023988006,
+   "rank_of_target_among_times": 68,
+   "times": 89,
+   "most_negative": [
+    [
+     12550,
+     -7.26
+    ],
+    [
+     12500,
+     -6.91
+    ],
+    [
+     12450,
+     -6.36
+    ],
+    [
+     12600,
+     -6.27
+    ],
+    [
+     12400,
+     -5.43
+    ]
+   ],
+   "most_positive": [
+    [
+     10800,
+     5.25
+    ],
+    [
+     10850,
+     4.43
+    ],
+    [
+     11500,
+     3.97
+    ],
+    [
+     11450,
+     3.88
+    ],
+    [
+     11400,
+     3.17
+    ]
+   ],
+   "power_halving": 0.352,
+   "share_of_halvings_with_step_at_or_above_real": 0.0,
+   "power_drop_of_30_percent": 0.11,
+   "power_halving_100_years_later": 0.45,
+   "power_halving_100_years_earlier": 0.044,
+   "verdict": "a halving is excluded",
+   "who_contributes": {
+    "after": {
+     "mass": 107.14762464292545,
+     "sites_with_mass_over_0.05": 189,
+     "share_of_top_site": 0.02015000602709305,
+     "share_of_top_5_sites": 0.09296689381810866
+    },
+    "before": {
+     "mass": 79.1164572144624,
+     "sites_with_mass_over_0.05": 146,
+     "share_of_top_site": 0.023300288441785045,
+     "share_of_top_5_sites": 0.11032516101897276
+    }
+   },
+   "aquatic_dates_left_out": 212
+  },
+  "Europe": {
+   "dates": 3527,
+   "bins": 2642,
+   "sites": 1396,
+   "step_at_target": -0.03440915132405484,
+   "ratio_after_to_before": 0.9661761115199152,
+   "ratio_expected": 0.9768601497582459,
+   "ratio_expected_95": [
+    0.8531109174911627,
+    1.1290207228649112
+   ],
+   "z_at_target": -0.1538903664153686,
+   "p_at_target": 0.4482758620689655,
+   "rank_of_target_among_times": 32,
+   "times": 89,
+   "most_negative": [
+    [
+     12550,
+     -10.88
+    ],
+    [
+     12500,
+     -10.19
+    ],
+    [
+     12600,
+     -9.76
+    ],
+    [
+     12450,
+     -8.68
+    ],
+    [
+     12650,
+     -8.35
+    ]
+   ],
+   "most_positive": [
+    [
+     11500,
+     6.03
+    ],
+    [
+     14300,
+     5.93
+    ],
+    [
+     14250,
+     5.91
+    ],
+    [
+     11450,
+     5.75
+    ],
+    [
+     14350,
+     5.42
+    ]
+   ],
+   "power_halving": 0.702,
+   "share_of_halvings_with_step_at_or_above_real": 0.008,
+   "power_drop_of_30_percent": 0.256,
+   "power_halving_100_years_later": 0.792,
+   "power_halving_100_years_earlier": 0.078,
+   "verdict": "a halving is excluded",
+   "who_contributes": {
+    "after": {
+     "mass": 171.7976395834512,
+     "sites_with_mass_over_0.05": 357,
+     "share_of_top_site": 0.01210928104057975,
+     "share_of_top_5_sites": 0.04975088021008231
+    },
+    "before": {
+     "mass": 177.81193049080065,
+     "sites_with_mass_over_0.05": 333,
+     "share_of_top_site": 0.011659084048966204,
+     "share_of_top_5_sites": 0.0517849779065236
+    }
+   },
+   "aquatic_dates_left_out": 46
+  },
+  "Asia": {
+   "dates": 1447,
+   "bins": 841,
+   "sites": 345,
+   "step_at_target": 0.1742595013032431,
+   "ratio_after_to_before": 1.1903644268638132,
+   "ratio_expected": 1.0363584857534143,
+   "ratio_expected_95": [
+    0.8263527527828312,
+    1.3124431672816481
+   ],
+   "z_at_target": 1.1750150683311327,
+   "p_at_target": 0.8735632183908046,
+   "rank_of_target_among_times": 70,
+   "times": 89,
+   "most_negative": [
+    [
+     12500,
+     -5.2
+    ],
+    [
+     12550,
+     -5.15
+    ],
+    [
+     12450,
+     -4.9
+    ],
+    [
+     12600,
+     -4.42
+    ],
+    [
+     12400,
+     -4.27
+    ]
+   ],
+   "most_positive": [
+    [
+     11450,
+     6.69
+    ],
+    [
+     11400,
+     6.4
+    ],
+    [
+     11500,
+     5.72
+    ],
+    [
+     11350,
+     5.6
+    ],
+    [
+     11300,
+     4.34
+    ]
+   ],
+   "power_halving": 0.14,
+   "share_of_halvings_with_step_at_or_above_real": 0.014,
+   "power_drop_of_30_percent": 0.08,
+   "power_halving_100_years_later": 0.218,
+   "power_halving_100_years_earlier": 0.026,
+   "verdict": "cannot tell",
+   "who_contributes": {
+    "after": {
+     "mass": 56.05559148517913,
+     "sites_with_mass_over_0.05": 112,
+     "share_of_top_site": 0.03317523266864854,
+     "share_of_top_5_sites": 0.15479163390717235
+    },
+    "before": {
+     "mass": 47.09111782923962,
+     "sites_with_mass_over_0.05": 101,
+     "share_of_top_site": 0.03558011219926763,
+     "share_of_top_5_sites": 0.16719238278403886
+    }
+   },
+   "aquatic_dates_left_out": 48
+  }
+ },
+ "overall": "not supported",
+ "target": 12850,
+ "alongside": {
+  "straight_line_trend": {
+   "North America": {
+    "dates": 1803,
+    "bins": 1169,
+    "ratio_after_to_before": 1.3543026118128425,
+    "ratio_expected": 1.1634952020523235,
+    "z_at_target": 1.2589899911427382,
+    "p_at_target": 0.9020979020979021,
+    "power_halving": 0.14,
+    "verdict": "a halving is excluded"
+   },
+   "Europe": {
+    "dates": 3527,
+    "bins": 2642,
+    "ratio_after_to_before": 0.9661761115199152,
+    "ratio_expected": 0.9876681488026166,
+    "z_at_target": -0.2845054201112006,
+    "p_at_target": 0.3916083916083916,
+    "power_halving": 0.5666666666666667,
+    "verdict": "cannot tell"
+   },
+   "Asia": {
+    "dates": 1447,
+    "bins": 841,
+    "ratio_after_to_before": 1.1903644268638132,
+    "ratio_expected": 1.0521528941643528,
+    "z_at_target": 1.021835901041734,
+    "p_at_target": 0.8501498501498501,
+    "power_halving": 0.14333333333333334,
+    "verdict": "cannot tell"
+   }
+  },
+  "aquatic_materials_kept": {
+   "North America": {
+    "dates": 2015,
+    "bins": 1315,
+    "ratio_after_to_before": 1.4657850591763926,
+    "ratio_expected": 1.1621055202131905,
+    "z_at_target": 2.2343028260595914,
+    "p_at_target": 0.987012987012987,
+    "power_halving": 0.30333333333333334,
+    "verdict": "a halving is excluded"
+   },
+   "Europe": {
+    "dates": 3573,
+    "bins": 2677,
+    "ratio_after_to_before": 0.9707840372812396,
+    "ratio_expected": 0.9762574391755247,
+    "z_at_target": -0.07839888036683451,
+    "p_at_target": 0.4875124875124875,
+    "power_halving": 0.5533333333333333,
+    "verdict": "a halving is excluded"
+   },
+   "Asia": {
+    "dates": 1495,
+    "bins": 867,
+    "ratio_after_to_before": 1.149215591522085,
+    "ratio_expected": 1.0455539920708627,
+    "z_at_target": 0.7895149055675197,
+    "p_at_target": 0.7812187812187812,
+    "power_halving": 0.13333333333333333,
+    "verdict": "cannot tell"
+   }
+  },
+  "errors_200_or_less": {
+   "North America": {
+    "dates": 1499,
+    "bins": 954,
+    "ratio_after_to_before": 1.501160470157995,
+    "ratio_expected": 1.1553993784778052,
+    "z_at_target": 1.9901473281897393,
+    "p_at_target": 0.981018981018981,
+    "power_halving": 0.37666666666666665,
+    "verdict": "a halving is excluded"
+   },
+   "Europe": {
+    "dates": 3058,
+    "bins": 2266,
+    "ratio_after_to_before": 1.0024960531614568,
+    "ratio_expected": 0.9808768444268843,
+    "z_at_target": 0.2583511902921295,
+    "p_at_target": 0.6023976023976024,
+    "power_halving": 0.5966666666666667,
+    "verdict": "a halving is excluded"
+   },
+   "Asia": {
+    "dates": 1187,
+    "bins": 651,
+    "ratio_after_to_before": 1.3131376286706786,
+    "ratio_expected": 1.0627265767003422,
+    "z_at_target": 1.4265219635274053,
+    "p_at_target": 0.9120879120879121,
+    "power_halving": 0.17,
+    "verdict": "a halving is excluded"
+   }
+  },
+  "largest_site_left_out": {
+   "North America": {
+    "dates": 1734,
+    "bins": 1152,
+    "ratio_after_to_before": 1.3604084520030038,
+    "ratio_expected": 1.130408360525848,
+    "z_at_target": 1.7373147400465365,
+    "p_at_target": 0.9560439560439561,
+    "power_halving": 0.25333333333333335,
+    "verdict": "a halving is excluded"
+   },
+   "Europe": {
+    "dates": 3492,
+    "bins": 2633,
+    "ratio_after_to_before": 0.967497001720896,
+    "ratio_expected": 0.9768122622956557,
+    "z_at_target": -0.1280148411662338,
+    "p_at_target": 0.4385614385614386,
+    "power_halving": 0.64,
+    "verdict": "a halving is excluded"
+   },
+   "Asia": {
+    "dates": 1394,
+    "bins": 828,
+    "ratio_after_to_before": 1.1742747062027044,
+    "ratio_expected": 1.0387838187704148,
+    "z_at_target": 1.0725889651947942,
+    "p_at_target": 0.8511488511488512,
+    "power_halving": 0.20333333333333334,
+    "verdict": "a halving is excluded"
+   }
+  },
+  "window_200": {
+   "North America": {
+    "dates": 1803,
+    "bins": 1169,
+    "ratio_after_to_before": 1.5271904388400817,
+    "ratio_expected": 1.082155931124209,
+    "z_at_target": 3.193329443470125,
+    "p_at_target": 0.999000999000999,
+    "power_halving": 0.32666666666666666,
+    "verdict": "a halving is excluded"
+   },
+   "Europe": {
+    "dates": 3527,
+    "bins": 2642,
+    "ratio_after_to_before": 1.1879164961017543,
+    "ratio_expected": 0.9826638192437169,
+    "z_at_target": 2.606476356676941,
+    "p_at_target": 0.995004995004995,
+    "power_halving": 0.7,
+    "verdict": "a halving is excluded"
+   },
+   "Asia": {
+    "dates": 1447,
+    "bins": 841,
+    "ratio_after_to_before": 1.3610422627252199,
+    "ratio_expected": 1.0250255991962236,
+    "z_at_target": 2.3685599752553586,
+    "p_at_target": 0.993006993006993,
+    "power_halving": 0.16666666666666666,
+    "verdict": "a halving is excluded"
+   }
+  },
+  "window_500": {
+   "North America": {
+    "dates": 1803,
+    "bins": 1169,
+    "ratio_after_to_before": 1.2489918691030277,
+    "ratio_expected": 1.2314196411132563,
+    "z_at_target": 0.15298211784512533,
+    "p_at_target": 0.5604395604395604,
+    "power_halving": 0.16333333333333333,
+    "verdict": "cannot tell"
+   },
+   "Europe": {
+    "dates": 3527,
+    "bins": 2642,
+    "ratio_after_to_before": 0.7835201815829217,
+    "ratio_expected": 0.9660271886204399,
+    "z_at_target": -3.091083395330096,
+    "p_at_target": 0.000999000999000999,
+    "power_halving": 0.4766666666666667,
+    "verdict": "drop detected"
+   },
+   "Asia": {
+    "dates": 1447,
+    "bins": 841,
+    "ratio_after_to_before": 1.0273783532808003,
+    "ratio_expected": 1.0631086034516455,
+    "z_at_target": -0.3048711839502664,
+    "p_at_target": 0.3756243756243756,
+    "power_halving": 0.10666666666666667,
+    "verdict": "cannot tell"
+   }
+  },
+  "target_12750": {
+   "North America": {
+    "dates": 1803,
+    "bins": 1169,
+    "ratio_after_to_before": 1.0674563137576047,
+    "ratio_expected": 1.1473257247143134,
+    "z_at_target": -0.6123206028756829,
+    "p_at_target": 0.27472527472527475,
+    "power_halving": 0.38666666666666666,
+    "verdict": "cannot tell"
+   },
+   "Europe": {
+    "dates": 3527,
+    "bins": 2642,
+    "ratio_after_to_before": 0.7649728402027638,
+    "ratio_expected": 0.9709208856782804,
+    "z_at_target": -2.8197116655917798,
+    "p_at_target": 0.005994005994005994,
+    "power_halving": 0.8433333333333334,
+    "verdict": "drop detected"
+   },
+   "Asia": {
+    "dates": 1447,
+    "bins": 841,
+    "ratio_after_to_before": 1.0661421453190032,
+    "ratio_expected": 1.0464664020634857,
+    "z_at_target": 0.14345127872719737,
+    "p_at_target": 0.5594405594405595,
+    "power_halving": 0.32,
+    "verdict": "cannot tell"
+   }
+  },
+  "target_12950": {
+   "North America": {
+    "dates": 1803,
+    "bins": 1169,
+    "ratio_after_to_before": 1.4029831300288536,
+    "ratio_expected": 1.1219624686922722,
+    "z_at_target": 2.186889761564708,
+    "p_at_target": 0.987012987012987,
+    "power_halving": 0.30333333333333334,
+    "verdict": "a halving is excluded"
+   },
+   "Europe": {
+    "dates": 3527,
+    "bins": 2642,
+    "ratio_after_to_before": 1.0051510677275797,
+    "ratio_expected": 0.987948800751325,
+    "z_at_target": 0.2714527930131982,
+    "p_at_target": 0.6073926073926074,
+    "power_halving": 0.8133333333333334,
+    "verdict": "a halving is excluded"
+   },
+   "Asia": {
+    "dates": 1447,
+    "bins": 841,
+    "ratio_after_to_before": 1.1396994411173744,
+    "ratio_expected": 1.0327764920475138,
+    "z_at_target": 0.9217824821990466,
+    "p_at_target": 0.8231768231768232,
+    "power_halving": 0.2633333333333333,
+    "verdict": "a halving is excluded"
+   }
+  }
+ }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "S2g",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:24:09Z",
+  "target": "def Target : Prop :=\n  ∃ (Q : S1 Bool Bool → Prop) (c4 : (List Bool → Bool) → Prop),\n    (∀ N, N.D9 → ¬ Q N) ∧ (∃ N, Q N) ∧\n    ∀ N : S1 Bool Bool, (Q N ↔ c4 N.d4)\n",
+  "usage": [
+    [
+      2643,
+      381
+    ],
+    [
+      3539,
+      2494
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target names, but does not prove, the following proposition. There exist a predicate Q on S1 systems with Boolean inputs and Boolean outputs and a predicate c4 on functions from finite Boolean lists to Booleans such that all three conditions hold: (1) For every such system N, if its dependency graph has no directed cycle, then Q(N) is false. Here there is an edge from m to n if there exist two state assignments agreeing at every node other than m and a single Boolean input on which the two assignments give different updated values at n. The assignments need not be reachable. A cycle is a path of one or more edges from a node back to itself, so a self-edge counts. (2) There exists at least one such system N for which Q(N) is true. (3) For every such system N, Q(N) is true if and only if c4 holds of N’s entire input-output function: this function starts from the initial assignment, updates all nodes from the preceding assignment for each input in the list from left to right, and applies the readout to the final assignment. This includes the empty list and has no length bound. Thus systems with the same input-output function must agree on Q. Every system satisfying Q must have a cycle, but not every system with a cycle is required to satisfy Q.\"}",
+  "translation": "Target names, but does not prove, the following proposition. There exist a predicate Q on S1 systems with Boolean inputs and Boolean outputs and a predicate c4 on functions from finite Boolean lists to Booleans such that all three conditions hold: (1) For every such system N, if its dependency graph has no directed cycle, then Q(N) is false. Here there is an edge from m to n if there exist two state assignments agreeing at every node other than m and a single Boolean input on which the two assignments give different updated values at n. The assignments need not be reachable. A cycle is a path of one or more edges from a node back to itself, so a self-edge counts. (2) There exists at least one such system N for which Q(N) is true. (3) For every such system N, Q(N) is true if and only if c4 holds of N’s entire input-output function: this function starts from the initial assignment, updates all nodes from the preceding assignment for each input in the list from left to right, and applies the readout to the final assignment. This includes the empty list and has no length bound. Thus systems with the same input-output function must agree on Q. Every system satisfying Q must have a cycle, but not every system with a cycle is required to satisfy Q.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The TARGET entails that some system has an entire input-output function that no feedforward system realizes: take a system with Q true; a feedforward system with the same function would have to receive the same verdict. P-D53's P2 would rule this out if read as applying to entire functions. On P-O1's finite-horizon reading, having a feedforward match for each horizon neither guarantees nor rules out one match for all horizons. P-O1 reports a failure of equivalence under plasticity, whereas the TARGET requires no plasticity condition. The all-horizons separation is thus a substantive addition to the passages.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"“Every system” ranges over deterministic, finite-node, synchronously updated systems with Boolean inputs and outputs. Feedforwardness means acyclicity of functional dependencies tested even on unreachable state assignments. The passages do not specify these modeling choices.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The inference rule is an unrestricted predicate on the complete table of outputs for all finite input histories. This captures the author's stipulation about unbounded evidence, but agreement with such a predicate does not imply that a verdict can be obtained by a physical measurement of the kind discussed in P-D53.\"\n    }\n  ],\n  \"summary\": \"The TARGET accurately encodes the author's own proposed verdict and does not ascribe it to any published theory. Relative to the cited passages, the material difference is that it requires an all-horizons separation, rather than merely identifying a limit on what finite-horizon equivalence establishes.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The TARGET entails that some system has an entire input-output function that no feedforward system realizes: take a system with Q true; a feedforward system with the same function would have to receive the same verdict. P-D53's P2 would rule this out if read as applying to entire functions. On P-O1's finite-horizon reading, having a feedforward match for each horizon neither guarantees nor rules out one match for all horizons. P-O1 reports a failure of equivalence under plasticity, whereas the TARGET requires no plasticity condition. The all-horizons separation is thus a substantive addition to the passages."
+      },
+      {
+        "severity": "minor",
+        "description": "“Every system” ranges over deterministic, finite-node, synchronously updated systems with Boolean inputs and outputs. Feedforwardness means acyclicity of functional dependencies tested even on unreachable state assignments. The passages do not specify these modeling choices."
+      },
+      {
+        "severity": "minor",
+        "description": "The inference rule is an unrestricted predicate on the complete table of outputs for all finite input histories. This captures the author's stipulation about unbounded evidence, but agreement with such a predicate does not imply that a verdict can be obtained by a physical measurement of the kind discussed in P-D53."
+      }
+    ],
+    "summary": "The TARGET accurately encodes the author's own proposed verdict and does not ascribe it to any published theory. Relative to the cited passages, the material difference is that it requires an all-horizons separation, rather than merely identifying a limit on what finite-horizon equivalence establishes."
+  }
+}

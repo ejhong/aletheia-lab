@@ -1,0 +1,26 @@
+{
+  "id": "S1b",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:45:10Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type) (f : List X → Y) (T : ℕ),\n    ∃ N : S1 X Y, N.D9 ∧ N.d13 = T ∧ ∀ xs : List X, xs.length ≤ T → N.d4 xs = f xs\n",
+  "usage": [
+    [
+      2786,
+      3928
+    ],
+    [
+      4079,
+      10423
+    ]
+  ],
+  "a_raw": "{\"translation\": \"`Target` defines (names, without proving or asserting) the following proposition: For every type `X`, every type `Y`, every function `f : List X → Y` from finite sequences of elements of `X` to `Y`, and every natural number `T : ℕ`, there exists a system `N : S1 X Y` — consisting of a finite type `N.A1` (with a `Fintype` instance), a family of types `N.A3 : N.A1 → Type` (one state type for each element of `N.A1`), an initial global configuration `N.a4 : (n : N.A1) → N.A3 n`, a local update function `N.a5 : (n : N.A1) → ((m : N.A1) → N.A3 m) → X → N.A3 n`, and an output function `N.a6 : ((m : N.A1) → N.A3 m) → Y` — satisfying three conditions: (1) `N.D9`: the influence relation `N.D8` on `N.A1` has no directed cycles of length ≥ 1 (for every `n : N.A1`, there is no chain `n = c₀, c₁, …, cₖ = n` with `k ≥ 1` where each `N.D8 cᵢ cᵢ₊₁` holds; here `N.D8 m n` means there exist configurations `σ, σ' : (k : N.A1) → N.A3 k` agreeing on all `k ≠ m` and an input `x : X` such that `N.a5 n σ x ≠ N.a5 n σ' x`, so neither self-loops nor longer directed cycles are allowed); (2) `N.d13 = T`: the number of elements in `N.A1` (`Fintype.card N.A1`) is equal to `T` (exact equality, not merely `≤ T`); and (3) for every finite sequence `xs : List X` of length at most `T`, `N.d4 xs = f xs`, where `N.d4 xs` applies `N.a6` to the configuration obtained by starting at `N.a4` and folding the synchronous update `fun σ x n => N.a5 n σ x` over `xs` from left to right. The choice of `N` may depend on `X`, `Y`, `f`, and `T`. There are no finiteness, size, or other restrictions on `X`, `Y`, or the local state types `N.A3 n`; `T` may be any natural number (including `0`); and `N.d4 xs` is not constrained for sequences `xs` of length strictly greater than `T`.\"}",
+  "translation": "`Target` defines (names, without proving or asserting) the following proposition: For every type `X`, every type `Y`, every function `f : List X → Y` from finite sequences of elements of `X` to `Y`, and every natural number `T : ℕ`, there exists a system `N : S1 X Y` — consisting of a finite type `N.A1` (with a `Fintype` instance), a family of types `N.A3 : N.A1 → Type` (one state type for each element of `N.A1`), an initial global configuration `N.a4 : (n : N.A1) → N.A3 n`, a local update function `N.a5 : (n : N.A1) → ((m : N.A1) → N.A3 m) → X → N.A3 n`, and an output function `N.a6 : ((m : N.A1) → N.A3 m) → Y` — satisfying three conditions: (1) `N.D9`: the influence relation `N.D8` on `N.A1` has no directed cycles of length ≥ 1 (for every `n : N.A1`, there is no chain `n = c₀, c₁, …, cₖ = n` with `k ≥ 1` where each `N.D8 cᵢ cᵢ₊₁` holds; here `N.D8 m n` means there exist configurations `σ, σ' : (k : N.A1) → N.A3 k` agreeing on all `k ≠ m` and an input `x : X` such that `N.a5 n σ x ≠ N.a5 n σ' x`, so neither self-loops nor longer directed cycles are allowed); (2) `N.d13 = T`: the number of elements in `N.A1` (`Fintype.card N.A1`) is equal to `T` (exact equality, not merely `≤ T`); and (3) for every finite sequence `xs : List X` of length at most `T`, `N.d4 xs = f xs`, where `N.d4 xs` applies `N.a6` to the configuration obtained by starting at `N.a4` and folding the synchronous update `fun σ x n => N.a5 n σ x` over `xs` from left to right. The choice of `N` may depend on `X`, `Y`, `f`, and `T`. There are no finiteness, size, or other restrictions on `X`, `Y`, or the local state types `N.A3 n`; `T` may be any natural number (including `0`); and `N.d4 xs` is not constrained for sequences `xs` of length strictly greater than `T`.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The Lean proposition `Target` matches the author's description in quantifiers, exact unit count `T`, acyclicity (`D9`), and exact input-output agreement on all finite input sequences of length at most `T`. The description also accurately reports and quotes the two passages while candidly noting all respects in which `Target` is an abstract, finite-horizon counterpart rather than a translation of them.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The Lean proposition `Target` matches the author's description in quantifiers, exact unit count `T`, acyclicity (`D9`), and exact input-output agreement on all finite input sequences of length at most `T`. The description also accurately reports and quotes the two passages while candidly noting all respects in which `Target` is an abstract, finite-horizon counterpart rather than a translation of them."
+  }
+}

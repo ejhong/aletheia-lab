@@ -1,0 +1,43 @@
+{
+  "id": "S1c",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:20:35Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type) (N : S1 X Y), N.D9 →\n    ∀ xs ys zs : List X, N.d13 ≤ zs.length → N.d4 (xs ++ zs) = N.d4 (ys ++ zs)\n",
+  "usage": [
+    [
+      2771,
+      3695
+    ],
+    [
+      3561,
+      10037
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target defines the following proposition (it does not prove or assert it): For all types X and Y, and for every system N of type S1 X Y—consisting of a finite type A1 of nodes, a state type A3 n for each node n in A1, an initial global state a4 assigning an element of A3 n to each node n, a synchronous update rule a5 assigning to each node n, global state σ, and input x in X a next state in A3 n, and an output function a6 from global states to Y—if N satisfies the acyclicity condition D9, then for all finite input lists xs, ys, and zs over X such that the length of zs is at least the cardinality of A1 (the number of nodes of N), the output of N on xs ++ zs equals the output of N on ys ++ zs. Here, the output of N on an input list is obtained by starting from the initial global state a4, repeatedly updating all nodes synchronously from left to right for each input in the list via a5, and finally applying a6 to the resulting global state. The acyclicity condition D9 requires that there is no node n in A1 with a non-empty directed chain (one or more steps) from n to itself under the dependency relation D8, where D8 m n holds if and only if there exist two (arbitrary, not necessarily reachable) global states σ and σ' that agree on every node k ≠ m and an input x in X such that a5 n σ x ≠ a5 n σ' x (so self-loops and longer directed cycles are both ruled out). There are no finiteness or nonemptiness requirements on X, Y, or the local state types A3 n; xs and ys are arbitrary lists of possibly different lengths; zs may have length strictly greater than or equal to the number of nodes; and the conclusion asserts only equality of the final outputs in Y, not equality of the resulting internal global states.\"}",
+  "translation": "Target defines the following proposition (it does not prove or assert it): For all types X and Y, and for every system N of type S1 X Y—consisting of a finite type A1 of nodes, a state type A3 n for each node n in A1, an initial global state a4 assigning an element of A3 n to each node n, a synchronous update rule a5 assigning to each node n, global state σ, and input x in X a next state in A3 n, and an output function a6 from global states to Y—if N satisfies the acyclicity condition D9, then for all finite input lists xs, ys, and zs over X such that the length of zs is at least the cardinality of A1 (the number of nodes of N), the output of N on xs ++ zs equals the output of N on ys ++ zs. Here, the output of N on an input list is obtained by starting from the initial global state a4, repeatedly updating all nodes synchronously from left to right for each input in the list via a5, and finally applying a6 to the resulting global state. The acyclicity condition D9 requires that there is no node n in A1 with a non-empty directed chain (one or more steps) from n to itself under the dependency relation D8, where D8 m n holds if and only if there exist two (arbitrary, not necessarily reachable) global states σ and σ' that agree on every node k ≠ m and an input x in X such that a5 n σ x ≠ a5 n σ' x (so self-loops and longer directed cycles are both ruled out). There are no finiteness or nonemptiness requirements on X, Y, or the local state types A3 n; xs and ys are arbitrary lists of possibly different lengths; zs may have length strictly greater than or equal to the number of nodes; and the conclusion asserts only equality of the final outputs in Y, not equality of the resulting internal global states.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source discusses feedforward neural networks (FNNs) with static parameters/weights, whereas S1 X Y with D9 abstracts away all neural-network structure (weights, layers, numerical activations) into an arbitrary finite collection of synchronous units with arbitrary state types and time-invariant transition/readout functions whose dependency graph is acyclic. This is an idealization/generalization (strengthening the statement to a broader class of static acyclic systems).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source states that the forgetting horizon is 'determined by their input window size', whereas S1 has no explicit sliding input window; forgetting arises from synchronous one-step-per-edge propagation through an acyclic graph, and the bound N.d13 (total number of units, explicitly declared as standing in for the input window size) is only an upper bound on the actual forgetting horizon rather than a dedicated window-size parameter.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source contrasts FNNs forgetting input changes with RNNs maintaining persistent traces in their hidden states, whereas Target concludes only equality of outputs (N.d4 (xs ++ zs) = N.d4 (ys ++ zs)) rather than equality of internal states (N.d3 (xs ++ zs) = N.d3 (ys ++ zs)), even though internal-state equality also holds under D9.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target quantifies over completely arbitrary prefixes xs and ys (of possibly different lengths), which is a slight strengthening of the source's 'effects of any input change' (which naturally suggests perturbing an input within a sequence).\"\n    }\n  ],\n  \"summary\": \"The Lean statement faithfully captures the core claim that any static feedforward network forgets earlier inputs once a fixed number of subsequent inputs have arrived, with minor caveats due to abstracting FNNs to arbitrary finite acyclic synchronous systems, using total unit count as a declared stand-in/upper bound for input window size, and stating equality at the output level rather than internal states.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The source discusses feedforward neural networks (FNNs) with static parameters/weights, whereas S1 X Y with D9 abstracts away all neural-network structure (weights, layers, numerical activations) into an arbitrary finite collection of synchronous units with arbitrary state types and time-invariant transition/readout functions whose dependency graph is acyclic. This is an idealization/generalization (strengthening the statement to a broader class of static acyclic systems)."
+      },
+      {
+        "severity": "minor",
+        "description": "The source states that the forgetting horizon is 'determined by their input window size', whereas S1 has no explicit sliding input window; forgetting arises from synchronous one-step-per-edge propagation through an acyclic graph, and the bound N.d13 (total number of units, explicitly declared as standing in for the input window size) is only an upper bound on the actual forgetting horizon rather than a dedicated window-size parameter."
+      },
+      {
+        "severity": "minor",
+        "description": "The source contrasts FNNs forgetting input changes with RNNs maintaining persistent traces in their hidden states, whereas Target concludes only equality of outputs (N.d4 (xs ++ zs) = N.d4 (ys ++ zs)) rather than equality of internal states (N.d3 (xs ++ zs) = N.d3 (ys ++ zs)), even though internal-state equality also holds under D9."
+      },
+      {
+        "severity": "minor",
+        "description": "Target quantifies over completely arbitrary prefixes xs and ys (of possibly different lengths), which is a slight strengthening of the source's 'effects of any input change' (which naturally suggests perturbing an input within a sequence)."
+      }
+    ],
+    "summary": "The Lean statement faithfully captures the core claim that any static feedforward network forgets earlier inputs once a fixed number of subsequent inputs have arrived, with minor caveats due to abstracting FNNs to arbitrary finite acyclic synchronous systems, using total unit count as a declared stand-in/upper bound for input window size, and stating equality at the output level rather than internal states."
+  }
+}

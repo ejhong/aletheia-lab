@@ -1,0 +1,35 @@
+{
+  "id": "S2a",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:51:59Z",
+  "target": "def Target : Prop :=\n  ∀ (P D E R : Type) (t : S3 P D E R) (r : R),\n    t.D21 r → ∃ o, t.c3 o = r ∧ t.D18 o\n",
+  "usage": [
+    [
+      2773,
+      3621
+    ],
+    [
+      4074,
+      11542
+    ]
+  ],
+  "a_raw": "{\"translation\": \"`Target` is defined as a proposition (it is not asserted or proved). It states the following: for all types `P`, `D`, `E`, and `R`, for every record `t` of type `S3 P D E R` consisting of four functions `t.c1 : P → Set D`, `t.c2 : D → Set E`, `t.c3 : D → R`, and `t.c4 : R → E`, and for every element `r : R`, if the hypothesis `t.D21 r` holds, then there exists an element `o : D` such that `t.c3 o = r` and `t.D18 o` holds.\\n\\nUnpacking the definitions used:\\n- `t.D19 r` is the subset of `P` consisting of all `p : P` for which there exists some `o ∈ t.c1 p` with `t.c3 o = r`.\\n- For any `p : P`, `t.D20 p` is the subset of `E` consisting of all `e : E` for which there exists some `o ∈ t.c1 p` with `e ∈ t.c2 o` (the union of `t.c2 o` over all `o ∈ t.c1 p`).\\n- The hypothesis `t.D21 r` asserts that there exist a function `S : t.D19 r → t.D19 r` and an element `p` of `t.D19 r` such that `t.D20 p.1 ∩ t.D20 (S p).1 = ∅` (where `p.1` and `(S p).1` are the underlying elements of `P`), i.e., no element of `E` belongs both to `t.D20 p.1` and to `t.D20 (S p).1`. Note that nothing else is required of `S`: the disjointness condition is only imposed at the single existentially chosen `p` (not for all elements of `t.D19 r`), and `(S p).1` is not required to be distinct from `p.1`.\\n- `t.D17` is the subset of `D` consisting of all `o : D` for which there exists some `p' : P` with `o ∈ t.c1 p'`.\\n- The conclusion `∃ o : D, t.c3 o = r ∧ t.D18 o` asserts that there exists some `o : D` such that:\\n  1. `t.c3 o = r`;\\n  2. `o ∈ t.D17`, i.e., there exists some `p' : P` with `o ∈ t.c1 p'` (this `p'` is not required to be `p.1` or `(S p).1`); and\\n  3. `t.c4 (t.c3 o) ∉ t.c2 o` (which, given `t.c3 o = r`, says `t.c4 r ∉ t.c2 o`).\\n\\nNo additional assumptions (such as finiteness, decidability, or properties of `P`, `D`, `E`, `R`, or `t`) are imposed.\"}",
+  "translation": "`Target` is defined as a proposition (it is not asserted or proved). It states the following: for all types `P`, `D`, `E`, and `R`, for every record `t` of type `S3 P D E R` consisting of four functions `t.c1 : P → Set D`, `t.c2 : D → Set E`, `t.c3 : D → R`, and `t.c4 : R → E`, and for every element `r : R`, if the hypothesis `t.D21 r` holds, then there exists an element `o : D` such that `t.c3 o = r` and `t.D18 o` holds.\n\nUnpacking the definitions used:\n- `t.D19 r` is the subset of `P` consisting of all `p : P` for which there exists some `o ∈ t.c1 p` with `t.c3 o = r`.\n- For any `p : P`, `t.D20 p` is the subset of `E` consisting of all `e : E` for which there exists some `o ∈ t.c1 p` with `e ∈ t.c2 o` (the union of `t.c2 o` over all `o ∈ t.c1 p`).\n- The hypothesis `t.D21 r` asserts that there exist a function `S : t.D19 r → t.D19 r` and an element `p` of `t.D19 r` such that `t.D20 p.1 ∩ t.D20 (S p).1 = ∅` (where `p.1` and `(S p).1` are the underlying elements of `P`), i.e., no element of `E` belongs both to `t.D20 p.1` and to `t.D20 (S p).1`. Note that nothing else is required of `S`: the disjointness condition is only imposed at the single existentially chosen `p` (not for all elements of `t.D19 r`), and `(S p).1` is not required to be distinct from `p.1`.\n- `t.D17` is the subset of `D` consisting of all `o : D` for which there exists some `p' : P` with `o ∈ t.c1 p'`.\n- The conclusion `∃ o : D, t.c3 o = r ∧ t.D18 o` asserts that there exists some `o : D` such that:\n  1. `t.c3 o = r`;\n  2. `o ∈ t.D17`, i.e., there exists some `p' : P` with `o ∈ t.c1 p'` (this `p'` is not required to be `p.1` or `(S p).1`); and\n  3. `t.c4 (t.c3 o) ∉ t.c2 o` (which, given `t.c3 o = r`, says `t.c4 r ∉ t.c2 o`).\n\nNo additional assumptions (such as finiteness, decidability, or properties of `P`, `D`, `E`, `R`, or `t`) are imposed.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The formalization via S3 and D18 idealizes inference content as a total single-valued function c3 : D → R, inferred experience as a total single-valued function c4 : R → E depending only on c3 o, and falsification at o as t.c4 (t.c3 o) ∉ t.c2 o. While the quoted passages do not explicitly define falsification, this commits the theorem to single-valued, always-defined inferred experiences rather than, for instance, a general set-valued inference correspondence.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the conclusion, t.D18 requires o ∈ t.D17 (i.e., o arises from some p : P via obs), whereas Lemma 3.3 and Definition 3.4 write o ∈ O. If O is taken to be an ambient class of datasets larger than the image of obs, this is a harmless strengthening in the conclusion (and matches the claim's wording 'some dataset that can arise').\"\n    }\n  ],\n  \"summary\": \"Target faithfully formalizes Lemma 3.5 (and thereby Lemma 3.3 as an immediate corollary), accurately matching Definition 3.1's o_r-substitution and Definition 3.4's o_r-falsification. The only caveats are minor modeling choices inherited from S3 and D18—most notably treating inference content and inferred experience as total single-valued functions—and strengthening o ∈ O to o being produced by some p ∈ P.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The formalization via S3 and D18 idealizes inference content as a total single-valued function c3 : D → R, inferred experience as a total single-valued function c4 : R → E depending only on c3 o, and falsification at o as t.c4 (t.c3 o) ∉ t.c2 o. While the quoted passages do not explicitly define falsification, this commits the theorem to single-valued, always-defined inferred experiences rather than, for instance, a general set-valued inference correspondence."
+      },
+      {
+        "severity": "minor",
+        "description": "In the conclusion, t.D18 requires o ∈ t.D17 (i.e., o arises from some p : P via obs), whereas Lemma 3.3 and Definition 3.4 write o ∈ O. If O is taken to be an ambient class of datasets larger than the image of obs, this is a harmless strengthening in the conclusion (and matches the claim's wording 'some dataset that can arise')."
+      }
+    ],
+    "summary": "Target faithfully formalizes Lemma 3.5 (and thereby Lemma 3.3 as an immediate corollary), accurately matching Definition 3.1's o_r-substitution and Definition 3.4's o_r-falsification. The only caveats are minor modeling choices inherited from S3 and D18—most notably treating inference content and inferred experience as total single-valued functions—and strengthening o ∈ O to o being produced by some p ∈ P."
+  }
+}

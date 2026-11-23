@@ -1,0 +1,5 @@
+summed curves: 3603 shared points of 3603; worst relative difference 3.3e-05
+overall: ours 'not supported' theirs 'not supported'
+North America: dates 1803/1803, bins 1169/1169, step +0.3033/+0.3033, p 0.9595/0.9445277361319341, power 0.35/0.332, halvings at or above 0.000/0.002, verdict 'a halving is excluded'/'a halving is excluded'
+Europe: dates 3527/3527, bins 2642/2642, step -0.0344/-0.0344, p 0.4483/0.4337831084457771, power 0.70/0.632, halvings at or above 0.008/0.01, verdict 'a halving is excluded'/'a halving is excluded'
+Asia: dates 1447/1447, bins 841/841, step +0.1743/+0.1743, p 0.8736/0.872063968015992, power 0.14/0.188, halvings at or above 0.014/0.01, verdict 'cannot tell'/'a halving is excluded'

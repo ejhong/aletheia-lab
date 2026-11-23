@@ -1,0 +1,43 @@
+{
+  "id": "DEF-A",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:18:41Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: S1, D1, d2, d3, d4, D5, D6\nstructure S1 (X Y : Type) where\n    A1 : Type\n    a2 : Fintype A1\n    A3 : A1 → Type\n    a4 : (n : A1) → A3 n\n    a5 : (n : A1) → ((m : A1) → A3 m) → X → A3 n\n    a6 : ((m : A1) → A3 m) → Y\n\nabbrev D1 (N : S1 X Y) : Type := (m : N.A1) → N.A3 m\n\ndef d2 (N : S1 X Y) (σ : N.D1) (x : X) : N.D1 := fun n => N.a5 n σ x\n\ndef d3 (N : S1 X Y) (xs : List X) : N.D1 := xs.foldl N.d2 N.a4\n\ndef d4 (N : S1 X Y) (xs : List X) : Y := N.a6 (N.d3 xs)\n\ndef D5 (T : ℕ) (N N' : S1 X Y) : Prop :=\n  ∀ xs : List X, xs.length ≤ T → N.d4 xs = N'.d4 xs\n\ndef D6 (N N' : S1 X Y) : Prop := ∀ xs : List X, N.d4 xs = N'.d4 xs\n",
+  "usage": [
+    [
+      2904,
+      489
+    ],
+    [
+      4137,
+      1003
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For any types X and Y, S1 X Y is a record with six fields, in order: an index type A1; finiteness data a2 for A1; a family A3 assigning a state type A3 n to each index n; an initial assignment a4 giving a value a4 n in A3 n for each n; an update function a5 taking, in order, an index n, a whole state assignment σ giving a value σ m in A3 m for every m, and an input x in X, and returning a value in A3 n; and an output function a6 taking a whole state assignment to a value in Y. A1 need not be nonempty, and the state types need not be finite or the same at different indices.\\n\\nFor a record N, D1(N) abbreviates the type of all whole state assignments for N. Given N, then σ in D1(N), then x in X, d2(N, σ, x) is the assignment whose value at each n is N.a5 n σ x. Every index is updated using the same old assignment σ and input x. Given N and a finite list xs of inputs, d3(N, xs) is the assignment obtained by starting at N.a4 and applying d2 with each successive input from left to right. For the empty list it is N.a4. The output d4(N, xs) is N.a6 applied to d3(N, xs).\\n\\nGiven first a natural number T, then records N and N′ of type S1 X Y, D5(T, N, N′) is the proposition that for every finite list xs of elements of X, if its length is at most T, then d4(N, xs) equals d4(N′, xs). This includes the empty list and places no condition on longer lists. Given records N and N′ of type S1 X Y, D6(N, N′) is the proposition that for every finite list xs of elements of X, without a length bound, d4(N, xs) equals d4(N′, xs). Both propositions compare only outputs on the same input list; they do not require matching indices, state types, assignments, or update functions. These definitions name the propositions, not assert that any pair of records satisfies them.\"}",
+  "translation": "For any types X and Y, S1 X Y is a record with six fields, in order: an index type A1; finiteness data a2 for A1; a family A3 assigning a state type A3 n to each index n; an initial assignment a4 giving a value a4 n in A3 n for each n; an update function a5 taking, in order, an index n, a whole state assignment σ giving a value σ m in A3 m for every m, and an input x in X, and returning a value in A3 n; and an output function a6 taking a whole state assignment to a value in Y. A1 need not be nonempty, and the state types need not be finite or the same at different indices.\n\nFor a record N, D1(N) abbreviates the type of all whole state assignments for N. Given N, then σ in D1(N), then x in X, d2(N, σ, x) is the assignment whose value at each n is N.a5 n σ x. Every index is updated using the same old assignment σ and input x. Given N and a finite list xs of inputs, d3(N, xs) is the assignment obtained by starting at N.a4 and applying d2 with each successive input from left to right. For the empty list it is N.a4. The output d4(N, xs) is N.a6 applied to d3(N, xs).\n\nGiven first a natural number T, then records N and N′ of type S1 X Y, D5(T, N, N′) is the proposition that for every finite list xs of elements of X, if its length is at most T, then d4(N, xs) equals d4(N′, xs). This includes the empty list and places no condition on longer lists. Given records N and N′ of type S1 X Y, D6(N, N′) is the proposition that for every finite list xs of elements of X, without a length bound, d4(N, xs) equals d4(N′, xs). Both propositions compare only outputs on the same input list; they do not require matching indices, state types, assignments, or update functions. These definitions name the propositions, not assert that any pair of records satisfies them.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"S1 abstracts from neural implementation. It requires finitely many units (possibly zero), but their state types may differ and need not be finite. Each update is an arbitrary function that may use the entire old state and current input; there is no requirement that it be computed by weighted neural connections.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The model fixes a deterministic, synchronous update rule: one input advances all units one step from the same old state. This fits the timestep simulation in P-H10, but the passages do not prescribe that timing convention for every experimental input-output function.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean reads one output from the state reached after each input history, starting from a designated initial state. D5 therefore compares every prefix length up to T, including the initial output before any input; D6 compares all finite histories from the designated starts. The passages do not specify initialization, readout timing, or an empty-history comparison.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"D5 and D6 use exact output equality, with no notion of error or tolerance. This is a natural reading of ‘implementing the same function’ in P-D52a, but it does not express approximation to arbitrary accuracy in P-D51b, which is a distinct claim.\"\n    }\n  ],\n  \"summary\": \"The target captures functional equivalence as agreement on observable outputs for the same inputs, without requiring matching internal states or structures. It makes the system and timing conventions more specific than the passages do and does not assert exact universal realizability.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "S1 abstracts from neural implementation. It requires finitely many units (possibly zero), but their state types may differ and need not be finite. Each update is an arbitrary function that may use the entire old state and current input; there is no requirement that it be computed by weighted neural connections."
+      },
+      {
+        "severity": "minor",
+        "description": "The model fixes a deterministic, synchronous update rule: one input advances all units one step from the same old state. This fits the timestep simulation in P-H10, but the passages do not prescribe that timing convention for every experimental input-output function."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean reads one output from the state reached after each input history, starting from a designated initial state. D5 therefore compares every prefix length up to T, including the initial output before any input; D6 compares all finite histories from the designated starts. The passages do not specify initialization, readout timing, or an empty-history comparison."
+      },
+      {
+        "severity": "minor",
+        "description": "D5 and D6 use exact output equality, with no notion of error or tolerance. This is a natural reading of ‘implementing the same function’ in P-D52a, but it does not express approximation to arbitrary accuracy in P-D51b, which is a distinct claim."
+      }
+    ],
+    "summary": "The target captures functional equivalence as agreement on observable outputs for the same inputs, without requiring matching internal states or structures. It makes the system and timing conventions more specific than the passages do and does not assert exact universal realizability."
+  }
+}

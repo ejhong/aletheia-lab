@@ -33,6 +33,7 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#43](https://github.com/ejhong/aletheia-lab/issues/43) | Was there an exceptional fire 12,800 years ago? | data | `ice-core-fire` |
 | [#60](https://github.com/ejhong/aletheia-lab/issues/60) | Does ammonium rise after every abrupt cooling? | data | `cooling-ammonium` |
 | [#69](https://github.com/ejhong/aletheia-lab/issues/69) | Did 9% of Earth's biomass burn 12,800 years ago? | data | `yd-global-burn` |
+| [#75](https://github.com/ejhong/aletheia-lab/issues/75) | Was the Younger Dryas cooling different from other abrupt ice-age coolings? | data | `yd-cooling-shape` |
 | [#76](https://github.com/ejhong/aletheia-lab/issues/76) | Did the GISP2 platinum spike precede the Younger Dryas cooling—or follow it during a volcanic cluster? | data | `yd-platinum-volcanism` |
 | [#44](https://github.com/ejhong/aletheia-lab/issues/44) | Do flood myths cluster where land drowned? | data | `flood-myths` |
 | [#45](https://github.com/ejhong/aletheia-lab/issues/45) | Germs and parasites as passports | audit | `pathogen-passports` |
@@ -40,4 +41,18 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#47](https://github.com/ejhong/aletheia-lab/issues/47) | Did random-number generators twitch at world events? | data | `global-consciousness` |
 | [#48](https://github.com/ejhong/aletheia-lab/issues/48) | Do anaesthetics pick out microtubules? | data | `anaesthetics-microtubules` |
 | [#66](https://github.com/ejhong/aletheia-lab/issues/66) | Machine-check the unfolding argument | proof | `unfolding-argument` |
+| [#74](https://github.com/ejhong/aletheia-lab/issues/74) | Audit the random-number network's original 500 events | data | `gcp-audit` |
 | [#67](https://github.com/ejhong/aletheia-lab/issues/67) | Do the theorems show that capable AI must seek power? | proof | `power-seeking` |
+| [#82](https://github.com/ejhong/aletheia-lab/issues/82) | Did anyone smelt metal before the Bronze Age? (ice-core pollution side-channel) | data | `lost-metallurgy` |
+| [#83](https://github.com/ejhong/aletheia-lab/issues/83) | Do hitchhiker genomes record forgotten prehistoric ocean crossings? | data | `hitchhiker-genomes` |
+| [#84](https://github.com/ejhong/aletheia-lab/issues/84) | Are there unmapped stone structures hidden in public Ice Age seafloor sonar? | data | `drowned-walls` |
+| [#85](https://github.com/ejhong/aletheia-lab/issues/85) | The hole in the ancient sky | data | `ancient-sky-hole` |
+| [#86](https://github.com/ejhong/aletheia-lab/issues/86) | Shared words across the oceans | data | `shared-ocean-words` |
+| [#87](https://github.com/ejhong/aletheia-lab/issues/87) | Can drought-year satellite imagery and space lidar uncover unmapped ancient earthworks? | data | `buried-geometry` |
+| [#88](https://github.com/ejhong/aletheia-lab/issues/88) | Farming before the Ice Age ended | data | `ice-age-farming` |
+| [#89](https://github.com/ejhong/aletheia-lab/issues/89) | Do pre-dynastic Egyptian stone vases show lathe-machining geometry? | data | `ancient-lathe-vases` |
+| [#90](https://github.com/ejhong/aletheia-lab/issues/90) | Smelting in the ice | data | `smelting-in-the-ice` |
+| [#91](https://github.com/ejhong/aletheia-lab/issues/91) | Do ancient monument orientations peak at an Ice Age epoch like 10,500 BCE? | data | `precession-clock` |
+| [#92](https://github.com/ejhong/aletheia-lab/issues/92) | Göbekli Tepe's star map | data | `gobekli-star-map` |
+| [#93](https://github.com/ejhong/aletheia-lab/issues/93) | Germs as a census of lost cities | audit | `germs-lost-cities` |
+| [#94](https://github.com/ejhong/aletheia-lab/issues/94) | A compass in the stones | data | `compass-in-stones` |

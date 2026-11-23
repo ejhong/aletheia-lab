@@ -1,0 +1,8 @@
+Final. Written by `run.py --report` from the raw outputs in `out/`. Verdicts are the checkers' own.
+Three rounds, all on 2026-11-23. Round 1 (29 items) is frozen under `round1/`, round 2 under `round2/`.
+DEF-A, DEF-B, S1a, S1c, S1d, S2d, S2d2, S2e, S2i and the planted errors X1 to X4 were not changed after round 1
+and stand from it. Everything else was revised and checked again in round 2, with two new planted errors, X5 and
+X6. S1f and S1h had their descriptions corrected after round 2 and are from round 3; their Lean text is the same
+in rounds 2 and 3. Items whose claim begins "What the TARGET says" are the lab's own statements; for those the
+checker was asked whether the Lean says what the description says and whether the description reports the
+passages accurately (`PROMPT_B_OWN` in `run.py`).

@@ -1,0 +1,39 @@
+{
+  "id": "DEF-C",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:19:09Z",
+  "target": "-- The TARGET is these definitions, which also appear in the context: D11, D12, d13\ndef D11 (N : S1 X Y) : Prop :=\n  Nonempty N.A1 ∧ ∀ m n, Relation.TransGen N.D8 m n\n\ndef D12 (N : S1 X Y) : Prop :=\n  ∀ m n, m ≠ n → ¬ (Relation.TransGen N.D8 m n ∧ Relation.TransGen N.D8 n m)\n\ndef d13 (N : S1 X Y) : ℕ := Fintype.card N.A1\n",
+  "usage": [
+    [
+      2693,
+      323
+    ],
+    [
+      3723,
+      2098
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For any types X and Y and any N : S1 X Y, call m → n a step if there exist two states σ and σ′ (each assigning a value in N.A3 k to every k in N.A1) and an input x in X such that σ and σ′ agree at every k ≠ m, but N.a5 n σ x and N.a5 n σ′ x differ. The states need not be reachable from the initial state. A path is a chain of one or more such steps; zero steps do not count.\\n\\nD11(N) names the proposition that N.A1 is nonempty and, for every m in N.A1 and every n in N.A1, there is a path from m to n. This includes m = n: each element must have a positive-length path back to itself, though not necessarily a direct step to itself.\\n\\nD12(N) names the proposition that, for every m in N.A1 and every n in N.A1, if m ≠ n then it is not the case that there is both a path from m to n and a path from n to m. One direction alone is allowed, and neither is required. D12 does not require N.A1 to be nonempty or forbid a direct step from an element to itself.\\n\\nd13(N) is the natural number of elements of the finite type N.A1. These definitions do not assert that N satisfies D11 or D12, and neither proposition is a prerequisite for d13.\"}",
+  "translation": "For any types X and Y and any N : S1 X Y, call m → n a step if there exist two states σ and σ′ (each assigning a value in N.A3 k to every k in N.A1) and an input x in X such that σ and σ′ agree at every k ≠ m, but N.a5 n σ x and N.a5 n σ′ x differ. The states need not be reachable from the initial state. A path is a chain of one or more such steps; zero steps do not count.\n\nD11(N) names the proposition that N.A1 is nonempty and, for every m in N.A1 and every n in N.A1, there is a path from m to n. This includes m = n: each element must have a positive-length path back to itself, though not necessarily a direct step to itself.\n\nD12(N) names the proposition that, for every m in N.A1 and every n in N.A1, if m ≠ n then it is not the case that there is both a path from m to n and a path from n to m. One direction alone is allowed, and neither is required. D12 does not require N.A1 to be nonempty or forbid a direct step from an element to itself.\n\nd13(N) is the natural number of elements of the finite type N.A1. These definitions do not assert that N satisfies D11 or D12, and neither proposition is a prerequisite for d13.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"D11 is a modeling choice, not a criterion stated by Doerig et al. A recurrent loop with a one-way connection to a downstream unit is still recurrent, but fails D11 because the downstream unit has no path back. The passage does not identify whole-network mutual reachability with positive ϕ.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The structural predicates can overlap: a single self-dependent unit satisfies D11, and it satisfies D12 because there are no distinct units. D12 also holds vacuously for an empty network. Thus the predicates do not by themselves separate the passage’s positive-ϕ and zero-ϕ cases.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The architecture is measured at the chosen unit granularity. An edge means that changing one unit’s state can change another’s update, even on state assignments unreachable from initialization. A unit may have arbitrary internal state, so D12 checks the direction of influence between units, not whether each is an elementary flip-flop.\"\n    }\n  ],\n  \"summary\": \"D11 implements the stated feedback proxy. For finitely many units, D12 is exactly the condition that the units can be ordered with no later unit influencing an earlier one, while allowing self-dependence; d13 counts those units exactly.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "D11 is a modeling choice, not a criterion stated by Doerig et al. A recurrent loop with a one-way connection to a downstream unit is still recurrent, but fails D11 because the downstream unit has no path back. The passage does not identify whole-network mutual reachability with positive ϕ."
+      },
+      {
+        "severity": "minor",
+        "description": "The structural predicates can overlap: a single self-dependent unit satisfies D11, and it satisfies D12 because there are no distinct units. D12 also holds vacuously for an empty network. Thus the predicates do not by themselves separate the passage’s positive-ϕ and zero-ϕ cases."
+      },
+      {
+        "severity": "minor",
+        "description": "The architecture is measured at the chosen unit granularity. An edge means that changing one unit’s state can change another’s update, even on state assignments unreachable from initialization. A unit may have arbitrary internal state, so D12 checks the direction of influence between units, not whether each is an elementary flip-flop."
+      }
+    ],
+    "summary": "D11 implements the stated feedback proxy. For finitely many units, D12 is exactly the condition that the units can be ordered with no later unit influencing an earlier one, while allowing self-dependence; d13 counts those units exactly."
+  }
+}

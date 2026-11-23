@@ -1,0 +1,26 @@
+{
+  "id": "S2f",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:47:56Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type), Nonempty X → ∀ (Q : S1 X Y → Prop),\n    (∀ N, N.D11 → Q N) → (∃ N, ¬ Q N) →\n    ∀ c4 : (List X → Y) → Prop,\n      ∃ N : S1 X Y, ¬ (Q N ↔ c4 N.d4)\n",
+  "usage": [
+    [
+      2665,
+      466
+    ],
+    [
+      3886,
+      1980
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every pair of types X and Y, if X is nonempty, then for every predicate Q on systems of type S1 X Y, suppose first that Q holds for every system N whose index set is nonempty and in which every ordered pair of indices m, n is connected by a directed dependency path from m to n of at least one step. This includes m = n: each index must have a positive-length path back to itself. A dependency step from i to j means that there exist two state assignments agreeing at every index other than i, and a single input x, such that the updates at j from those assignments on x differ; the assignments need not be reachable. Q may also hold for systems without the stated path property. Suppose further that there exists a system for which Q is false. Then for every predicate c4 on functions from finite lists of X to Y, there exists a system N of type S1 X Y for which exactly one of Q(N) and c4(N.d4) holds. Here N.d4 is the entire function that starts at N's initial assignment, updates all indices from the preceding assignment on each input in the list from left to right, and applies N's output function to the final assignment. It includes the empty list and has no length bound. The system witnessing disagreement may depend on c4 and is not required to be the witness from the hypothesis that Q fails somewhere.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every pair of types X and Y, if X is nonempty, then for every predicate Q on systems of type S1 X Y, suppose first that Q holds for every system N whose index set is nonempty and in which every ordered pair of indices m, n is connected by a directed dependency path from m to n of at least one step. This includes m = n: each index must have a positive-length path back to itself. A dependency step from i to j means that there exist two state assignments agreeing at every index other than i, and a single input x, such that the updates at j from those assignments on x differ; the assignments need not be reachable. Q may also hold for systems without the stated path property. Suppose further that there exists a system for which Q is false. Then for every predicate c4 on functions from finite lists of X to Y, there exists a system N of type S1 X Y for which exactly one of Q(N) and c4(N.d4) holds. Here N.d4 is the entire function that starts at N's initial assignment, updates all indices from the preceding assignment on each input in the list from left to right, and applies N's output function to the final assignment. It includes the empty list and has no length bound. The system witnessing disagreement may depend on c4 and is not required to be the witness from the hypothesis that Q fails somewhere.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The Lean assumes that integration is sufficient for a positive verdict and that some system receives a negative verdict; every rule using only behaviour on all finite input lists must then disagree with the verdict somewhere. The cited converse does go from a feedforward system to a behaviourally matching recurrent system with positive ϕ; the structural proxy and the all-histories interpretation are the author’s choices, not a definition of ϕ or an explicit time bound in P2.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The Lean assumes that integration is sufficient for a positive verdict and that some system receives a negative verdict; every rule using only behaviour on all finite input lists must then disagree with the verdict somewhere. The cited converse does go from a feedforward system to a behaviourally matching recurrent system with positive ϕ; the structural proxy and the all-histories interpretation are the author’s choices, not a definition of ϕ or an explicit time bound in P2."
+  }
+}

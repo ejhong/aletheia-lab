@@ -1,0 +1,47 @@
+{
+  "id": "S2e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:23:46Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type) (T : ℕ) (Q : S1 X Y → Prop),\n    (∀ N, N.D9 → ¬ Q N) → (∃ N, Q N) →\n    ∀ c4 : ({xs : List X // xs.length ≤ T} → Y) → Prop,\n      ∃ N : S1 X Y, ¬ (Q N ↔ c4 (N.d24 T))\n",
+  "usage": [
+    [
+      2666,
+      399
+    ],
+    [
+      3754,
+      3045
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every input type X, output type Y, natural number T (including zero), and predicate Q on S1 systems from X to Y, assume first that Q is false of every system whose dependency graph has no directed cycle, and second that Q is true of at least one system. The graph has an edge from m to n if there exist two global states agreeing at every index other than m and a single input x for which the update at n gives different values in the two states. The states need not be reachable. A cycle is a path of one or more edges from an index back to itself, so a self-loop counts. Q need not be true of every system with a cycle. Under those hypotheses, for every predicate c4 on functions from X-lists of length at most T to Y, there exists a system N for which Q(N) and c4 applied to N’s bounded output function have different truth values. That function sends each such list to the output obtained by starting in N’s initial state, updating on the list’s inputs from left to right, and applying N’s output map to the final state. The witness N may depend on c4, and either direction of disagreement suffices.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every input type X, output type Y, natural number T (including zero), and predicate Q on S1 systems from X to Y, assume first that Q is false of every system whose dependency graph has no directed cycle, and second that Q is true of at least one system. The graph has an edge from m to n if there exist two global states agreeing at every index other than m and a single input x for which the update at n gives different values in the two states. The states need not be reachable. A cycle is a path of one or more edges from an index back to itself, so a self-loop counts. Q need not be true of every system with a cycle. Under those hypotheses, for every predicate c4 on functions from X-lists of length at most T to Y, there exists a system N for which Q(N) and c4 applied to N’s bounded output function have different truth values. That function sends each such list to the output obtained by starting in N’s initial state, updating on the list’s inputs from left to right, and applying N’s output map to the final state. The witness N may depend on c4, and either direction of disagreement suffices.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The passage speaks of identical input-output functions without a time bound. At each fixed T, Lean requires the inference to give the same verdict to systems that agree through T even if a longer experiment distinguishes them. Quantifying over every T separately does not establish a mismatch for an inference based on the unrestricted input-output function.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"P1, P3 and P4 are represented only by a restriction on what the inference can depend on. The predicate c4 can be any rule on a whole table of responses to possible inputs; it need not arise from physical measurements or subjective reports. Nor does Lean distinguish the passage's ban on using internal activity as an a-priori indicator from the methodological reasons for that ban.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The hypotheses on Q are sufficient for the mismatch argument, not a characterization of a causal structure theory. Q may distinguish systems for reasons unrelated to how their elements interact, provided it rejects every feedforward system and accepts some system. In particular, it need not accept every recurrent system as the cited ϕ example does.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The systems are idealized as deterministic, synchronous networks with finitely many nodes and a fixed initial state. Feedforwardness is acyclicity of an update-dependence graph whose edges can be witnessed even in unreachable states; the passage does not prescribe that particular test for causal interaction.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Kleiner and Hoel locate a falsification at a possible observation. Lean gives a binary disagreement at a system, with its bounded response table standing in for the inference data. It does not separately identify an observation at which a prediction and an inference conflict.\"\n    }\n  ],\n  \"summary\": \"Lean captures the direction-neutral mismatch: no inference on the bounded behaviour table can agree everywhere with a verdict satisfying the two hypotheses. The material limitation is that this rules out agreement at each finite horizon, not agreement based on the full input-output function invoked in the passage.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The passage speaks of identical input-output functions without a time bound. At each fixed T, Lean requires the inference to give the same verdict to systems that agree through T even if a longer experiment distinguishes them. Quantifying over every T separately does not establish a mismatch for an inference based on the unrestricted input-output function."
+      },
+      {
+        "severity": "minor",
+        "description": "P1, P3 and P4 are represented only by a restriction on what the inference can depend on. The predicate c4 can be any rule on a whole table of responses to possible inputs; it need not arise from physical measurements or subjective reports. Nor does Lean distinguish the passage's ban on using internal activity as an a-priori indicator from the methodological reasons for that ban."
+      },
+      {
+        "severity": "minor",
+        "description": "The hypotheses on Q are sufficient for the mismatch argument, not a characterization of a causal structure theory. Q may distinguish systems for reasons unrelated to how their elements interact, provided it rejects every feedforward system and accepts some system. In particular, it need not accept every recurrent system as the cited ϕ example does."
+      },
+      {
+        "severity": "minor",
+        "description": "The systems are idealized as deterministic, synchronous networks with finitely many nodes and a fixed initial state. Feedforwardness is acyclicity of an update-dependence graph whose edges can be witnessed even in unreachable states; the passage does not prescribe that particular test for causal interaction."
+      },
+      {
+        "severity": "minor",
+        "description": "Kleiner and Hoel locate a falsification at a possible observation. Lean gives a binary disagreement at a system, with its bounded response table standing in for the inference data. It does not separately identify an observation at which a prediction and an inference conflict."
+      }
+    ],
+    "summary": "Lean captures the direction-neutral mismatch: no inference on the bounded behaviour table can agree everywhere with a verdict satisfying the two hypotheses. The material limitation is that this rules out agreement at each finite horizon, not agreement based on the full input-output function invoked in the passage."
+  }
+}

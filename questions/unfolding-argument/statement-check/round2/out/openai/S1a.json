@@ -1,0 +1,43 @@
+{
+  "id": "S1a",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:18:41Z",
+  "target": "def Target : Prop :=\n  ∀ (X Y : Type) (N : S1 X Y) (T : ℕ),\n    (N.d14 T).D9 ∧ S1.D5 T (N.d14 T) N ∧ (N.d14 T).d13 = T * N.d13\n",
+  "usage": [
+    [
+      2632,
+      577
+    ],
+    [
+      3725,
+      1838
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every input type X, every output type Y, every S1 system N on X and Y, and every natural number T (including zero), let M be the specific system N.d14 T. Its indices are pairs (i,n), where 0 ≤ i < T and n is an index of N. Each layer starts with N's initial assignment. On each input, layer i applies N's updates using that input and, as the old assignment, N's fixed initial assignment if i = 0 or the previous state of layer i−1 if i > 0. M applies N's output function to the last layer if T > 0 and to N's initial assignment if T = 0. Three claims hold together: (1) No index of M has a nonempty directed chain of dependency edges back to itself, even a single self-edge. An edge from m to n means that there exist two state assignments of M agreeing at every index other than m, and a common input, for which the two updated values at n differ; the assignments need not be reachable. (2) For every input list of length at most T, including the empty list, M and N give equal outputs after processing the list from their respective initial assignments. Equality of outputs on longer lists is not required. (3) The number of indices of M is exactly T times the number of indices of N. No acyclicity assumption on N is required.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every input type X, every output type Y, every S1 system N on X and Y, and every natural number T (including zero), let M be the specific system N.d14 T. Its indices are pairs (i,n), where 0 ≤ i < T and n is an index of N. Each layer starts with N's initial assignment. On each input, layer i applies N's updates using that input and, as the old assignment, N's fixed initial assignment if i = 0 or the previous state of layer i−1 if i > 0. M applies N's output function to the last layer if T > 0 and to N's initial assignment if T = 0. Three claims hold together: (1) No index of M has a nonempty directed chain of dependency edges back to itself, even a single self-edge. An edge from m to n means that there exist two state assignments of M agreeing at every index other than m, and a common input, for which the two updated values at n differ; the assignments need not be reachable. (2) For every input list of length at most T, including the empty list, M and N give equal outputs after processing the list from their respective initial assignments. Equality of outputs on longer lists is not required. (3) The number of indices of M is exactly T times the number of indices of N. No acyclicity assumption on N is required.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The horizon restriction changes the equivalence asserted by P2. For each T, Lean gives a potentially different feedforward system that agrees with N on lists of length at most T. This is equality of the given function if its domain is already bounded by T, but P2 states no such restriction. For example, if N computes a running OR, then on `true` followed by T copies of `false`, N outputs `true` while its T-layer unrolling outputs `false`.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Within the modeled class, Lean applies the construction to every system, including one that is already feedforward. The source direction only requires a construction for recurrent systems.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean specializes systems to finitely many units with deterministic, synchronous updates from a fixed initial assignment and a state-based readout. It defines feedforwardness by the absence of cycles of functional dependence between units, rather than representing physical wiring separately. The passages do not specify these modeling choices.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Herzog et al. motivate one copy per timestep, but Lean chooses a particular execution schedule: every layer updates on every input, using the previous state of the preceding layer or the fixed initial assignment at layer zero. Reading the last layer gives agreement after every prefix through T, not just at step T. Lean also includes the zero-step case, with no units and the initial readout.\"\n    }\n  ],\n  \"summary\": \"The target faithfully captures the finite-horizon unrolling construction, including acyclicity and one copy of each unit per timestep. It does not establish the unqualified recurrent-to-feedforward direction of P2 unless the input-output function in question is itself defined on a bounded horizon.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The horizon restriction changes the equivalence asserted by P2. For each T, Lean gives a potentially different feedforward system that agrees with N on lists of length at most T. This is equality of the given function if its domain is already bounded by T, but P2 states no such restriction. For example, if N computes a running OR, then on `true` followed by T copies of `false`, N outputs `true` while its T-layer unrolling outputs `false`."
+      },
+      {
+        "severity": "minor",
+        "description": "Within the modeled class, Lean applies the construction to every system, including one that is already feedforward. The source direction only requires a construction for recurrent systems."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean specializes systems to finitely many units with deterministic, synchronous updates from a fixed initial assignment and a state-based readout. It defines feedforwardness by the absence of cycles of functional dependence between units, rather than representing physical wiring separately. The passages do not specify these modeling choices."
+      },
+      {
+        "severity": "minor",
+        "description": "Herzog et al. motivate one copy per timestep, but Lean chooses a particular execution schedule: every layer updates on every input, using the previous state of the preceding layer or the fixed initial assignment at layer zero. Reading the last layer gives agreement after every prefix through T, not just at step T. Lean also includes the zero-step case, with no units and the initial readout."
+      }
+    ],
+    "summary": "The target faithfully captures the finite-horizon unrolling construction, including acyclicity and one copy of each unit per timestep. It does not establish the unqualified recurrent-to-feedforward direction of P2 unless the input-output function in question is itself defined on a bounded horizon."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "S2d2",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:23:15Z",
+  "target": "def Target : Prop :=\n  ∃ (D Ic Rc E : Type) (u1 : D → Ic) (u2 : D → Rc) (c2 : Ic → Set E) (c4 : Rc → E)\n    (Y V2 : Set D),\n    Y ⊆ V2 ∧ (∃ f : Rc → Ic, ∀ o ∈ V2, u1 o = f (u2 o)) ∧\n    (¬ ∃ o ∈ Y, c4 (u2 o) ∉ c2 (u1 o)) ∧ (∃ o ∈ V2, c4 (u2 o) ∉ c2 (u1 o))\n",
+  "usage": [
+    [
+      2714,
+      236
+    ],
+    [
+      3468,
+      1352
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. There exist types D, Ic, Rc, E, then functions u1 from D to Ic, u2 from D to Rc, c2 from Ic to sets of elements of E, and c4 from Rc to E, then subsets Y and V2 of D, such that all four conditions hold: (1) Y is a subset of V2. (2) There exists a single function f from Rc to Ic such that for every o in V2, u1(o) = f(u2(o)). The function is defined on all of Rc, but the equality is required only for o in V2. (3) There is no o in Y for which c4(u2(o)) is outside c2(u1(o)); equivalently, every o in Y satisfies the membership condition. (4) There exists at least one o in V2 for which c4(u2(o)) is outside c2(u1(o)). Such a witness must lie outside Y, so Y is a proper subset of V2, although Y need not be nonempty.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. There exist types D, Ic, Rc, E, then functions u1 from D to Ic, u2 from D to Rc, c2 from Ic to sets of elements of E, and c4 from Rc to E, then subsets Y and V2 of D, such that all four conditions hold: (1) Y is a subset of V2. (2) There exists a single function f from Rc to Ic such that for every o in V2, u1(o) = f(u2(o)). The function is defined on all of Rc, but the equality is required only for o in V2. (3) There is no o in Y for which c4(u2(o)) is outside c2(u1(o)); equivalently, every o in Y satisfies the membership condition. (4) There exists at least one o in V2 for which c4(u2(o)) is outside c2(u1(o)). Such a witness must lie outside Y, so Y is a proper subset of V2, although Y need not be nonempty.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The target requires strict dependence on V2, no falsification on Y, and a falsification on V2, exactly as claimed. The falsifying dataset must have inference content absent from Y: otherwise strict dependence would give a dataset in Y with the same prediction content and hence the same falsification.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The target requires strict dependence on V2, no falsification on Y, and a falsification on V2, exactly as claimed. The falsifying dataset must have inference content absent from Y: otherwise strict dependence would give a dataset in Y with the same prediction content and hence the same falsification."
+  }
+}

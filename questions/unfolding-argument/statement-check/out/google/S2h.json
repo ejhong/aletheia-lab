@@ -1,0 +1,26 @@
+{
+  "id": "S2h",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:57:33Z",
+  "target": "def Target : Prop :=\n  ∀ (X1 : Type u) (X2 : Type v) (E : Type w), Nonempty E → ∀ (g : X1 → X2) (c2 : X1 → E),\n    ((∃ c4 : X2 → E, ∀ s, c2 s = c4 (g s)) ↔ (∀ s s', g s = g s' → c2 s = c2 s'))\n",
+  "usage": [
+    [
+      2812,
+      1972
+    ],
+    [
+      3770,
+      6224
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"`Target` is defined as the proposition stating that for all types `X1`, `X2`, and `E`, assuming `E` is nonempty (has at least one element), and for all functions `g : X1 → X2` and `c2 : X1 → E`, the following two statements are equivalent: (1) there exists a function `c4 : X2 → E` such that for every `s` in `X1`, `c2 s = c4 (g s)`; and (2) for all `s` and `s'` in `X1`, if `g s = g s'`, then `c2 s = c2 s'`. No further assumptions are placed on `X1`, `X2`, `E`, `g`, or `c2` (for example, `X1` and `X2` are not required to be nonempty or finite, `g` need not be surjective, and in (1) the function `c4` is not required to be unique or constrained outside the image of `g`). This definition only names the proposition without proving or asserting it, and it does not use any of the preceding context definitions.\"}\n```",
+  "translation": "`Target` is defined as the proposition stating that for all types `X1`, `X2`, and `E`, assuming `E` is nonempty (has at least one element), and for all functions `g : X1 → X2` and `c2 : X1 → E`, the following two statements are equivalent: (1) there exists a function `c4 : X2 → E` such that for every `s` in `X1`, `c2 s = c4 (g s)`; and (2) for all `s` and `s'` in `X1`, if `g s = g s'`, then `c2 s = c2 s'`. No further assumptions are placed on `X1`, `X2`, `E`, `g`, or `c2` (for example, `X1` and `X2` are not required to be nonempty or finite, `g` need not be surjective, and in (1) the function `c4` is not required to be unique or constrained outside the image of `g`). This definition only names the proposition without proving or asserting it, and it does not use any of the preceding context definitions.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The Lean proposition Target matches the author's English description exactly, including all quantifiers, the nonemptiness hypothesis on E, and the biconditional structure. The author's account of how Target relates to and differs from Kleiner and Hoel's definitions and lemmas in P-K31 and P-K33 is accurate and does not misreport the passages.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The Lean proposition Target matches the author's English description exactly, including all quantifiers, the nonemptiness hypothesis on E, and the biconditional structure. The author's account of how Target relates to and differs from Kleiner and Hoel's definitions and lemmas in P-K31 and P-K33 is accurate and does not misreport the passages."
+  }
+}

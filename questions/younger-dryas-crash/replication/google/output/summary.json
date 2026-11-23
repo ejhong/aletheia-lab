@@ -1,0 +1,32 @@
+{
+  "overall": "not supported",
+  "regions": {
+    "North America": {
+      "dates": 1803,
+      "bins": 1169,
+      "step_at_target": 0.30328664421077295,
+      "p_at_target": 0.9445277361319341,
+      "power_halving": 0.332,
+      "share_of_halvings_with_step_at_or_above_real": 0.002,
+      "verdict": "a halving is excluded"
+    },
+    "Europe": {
+      "dates": 3527,
+      "bins": 2642,
+      "step_at_target": -0.03440915132405484,
+      "p_at_target": 0.4337831084457771,
+      "power_halving": 0.632,
+      "share_of_halvings_with_step_at_or_above_real": 0.01,
+      "verdict": "a halving is excluded"
+    },
+    "Asia": {
+      "dates": 1447,
+      "bins": 841,
+      "step_at_target": 0.1742595013032433,
+      "p_at_target": 0.872063968015992,
+      "power_halving": 0.188,
+      "share_of_halvings_with_step_at_or_above_real": 0.01,
+      "verdict": "a halving is excluded"
+    }
+  }
+}

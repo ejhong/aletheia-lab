@@ -1,0 +1,39 @@
+{
+  "id": "X2",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T17:18:41Z",
+  "target": "def Target : Prop :=\n  ∀ (T : ℕ) (N : S1 Bool Bool), N.D9 → S1.D5 T N d15 → N.d13 ≤ T\n",
+  "usage": [
+    [
+      2605,
+      382
+    ],
+    [
+      3342,
+      764
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines, but does not prove, the following proposition. For every natural number T and every Boolean-input, Boolean-output system N of type S1 Bool Bool: if N has no directed dependency cycle, and if for every Boolean list of length at most T the output of N equals the output of d15, then the total number of indices in N.A1 is at most T. Here there is a dependency edge from m to n if there exist two full state assignments agreeing at every index other than m and a single Boolean input for which the updates at n from those assignments differ. The assignments need not be reachable. A cycle is any nonempty chain of such edges back to its starting index, including a single self-edge. The output of N on a list is read after starting from N.a4 and applying its updates left to right; the output of d15 is true exactly when the list contains true. Thus agreement is required on the empty list (output false) as well as on all other lists of length at most T, but not on longer lists. The conclusion is an upper bound on all indices, not just those that affect the output.\"}",
+  "translation": "Target defines, but does not prove, the following proposition. For every natural number T and every Boolean-input, Boolean-output system N of type S1 Bool Bool: if N has no directed dependency cycle, and if for every Boolean list of length at most T the output of N equals the output of d15, then the total number of indices in N.A1 is at most T. Here there is a dependency edge from m to n if there exist two full state assignments agreeing at every index other than m and a single Boolean input for which the updates at n from those assignments differ. The assignments need not be reachable. A cycle is any nonempty chain of such edges back to its starting index, including a single self-edge. The output of N on a list is read after starting from N.a4 and applying its updates left to right; the output of d15 is true exactly when the list contains true. Thus agreement is required on the empty list (output false) as well as on all other lists of length at most T, but not on longer lists. The conclusion is an upper bound on all indices, not just those that affect the output.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The inequality is reversed. The claimed lower bound is `T ≤ N.d13` (at least T units), but the target requires `N.d13 ≤ T` (at most T units). For example, at T = 1, a unit that stores the current input, starts at false, and supplies the output agrees with `d15` through one step. Adding an unused constant unit preserves agreement and acyclicity but violates the target’s upper bound.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"The target quantifies over every equivalent acyclic system, not just the system built by unrolling. Copying a one-unit network T times gives a particular implementation with T units; it does not bound the size of every implementation in either direction. The source’s qualified observation that feedforward networks generally need more neurons supplies no such bound either. This universal scope is part of the author’s stated extension, not a result from the passages.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The sources do not specify the one-unit Boolean running-OR example or the target’s precise test for equivalence: equal outputs on every Boolean input list of length at most T, including the empty list. These are modeling choices for the author’s example.\"\n    }\n  ],\n  \"summary\": \"The target places a ceiling on network size where the author intended a floor. Reversing the inequality would match the author’s stated lower bound, but that bound would still go beyond the cited passages.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The inequality is reversed. The claimed lower bound is `T ≤ N.d13` (at least T units), but the target requires `N.d13 ≤ T` (at most T units). For example, at T = 1, a unit that stores the current input, starts at false, and supplies the output agrees with `d15` through one step. Adding an unused constant unit preserves agreement and acyclicity but violates the target’s upper bound."
+      },
+      {
+        "severity": "major",
+        "description": "The target quantifies over every equivalent acyclic system, not just the system built by unrolling. Copying a one-unit network T times gives a particular implementation with T units; it does not bound the size of every implementation in either direction. The source’s qualified observation that feedforward networks generally need more neurons supplies no such bound either. This universal scope is part of the author’s stated extension, not a result from the passages."
+      },
+      {
+        "severity": "minor",
+        "description": "The sources do not specify the one-unit Boolean running-OR example or the target’s precise test for equivalence: equal outputs on every Boolean input list of length at most T, including the empty list. These are modeling choices for the author’s example."
+      }
+    ],
+    "summary": "The target places a ceiling on network size where the author intended a floor. Reversing the inequality would match the author’s stated lower bound, but that bound would still go beyond the cited passages."
+  }
+}

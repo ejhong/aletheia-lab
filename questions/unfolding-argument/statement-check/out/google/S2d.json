@@ -1,0 +1,39 @@
+{
+  "id": "S2d",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:33:50Z",
+  "target": "def Target : Prop :=\n  ∀ (D Ic Rc E : Type) (u1 : D → Ic) (u2 : D → Rc) (c2 : Ic → Set E) (c4 : Rc → E)\n    (Y V2 : Set D),\n    Y ⊆ V2 → (∀ o ∈ V2, ∃ o' ∈ Y, u2 o' = u2 o) → (∃ f : Rc → Ic, ∀ o ∈ V2, u1 o = f (u2 o)) →\n    ((∃ o ∈ V2, c4 (u2 o) ∉ c2 (u1 o)) ↔ (∃ o ∈ Y, c4 (u2 o) ∉ c2 (u1 o)))\n",
+  "usage": [
+    [
+      2869,
+      1888
+    ],
+    [
+      3837,
+      12165
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target names the following proposition (defined without reference to any of the earlier definitions): For all types D, Ic, Rc, and E, all functions u1 : D → Ic, u2 : D → Rc, c2 : Ic → Set E (mapping each element of Ic to a set of elements of E), and c4 : Rc → E, and all sets Y and V2 of elements of D, if (1) Y ⊆ V2, (2) for every o ∈ V2 there exists o' ∈ Y such that u2(o') = u2(o), and (3) there exists a function f : Rc → Ic such that u1(o) = f(u2(o)) for every o ∈ V2, then there exists o ∈ V2 such that c4(u2(o)) ∉ c2(u1(o)) if and only if there exists o ∈ Y such that c4(u2(o)) ∉ c2(u1(o)). No further requirements are imposed (for example, none of the types or sets need be finite or nonempty, and the equation u1(o) = f(u2(o)) is only required for o ∈ V2, not for elements of D outside V2).\"}",
+  "translation": "Target names the following proposition (defined without reference to any of the earlier definitions): For all types D, Ic, Rc, and E, all functions u1 : D → Ic, u2 : D → Rc, c2 : Ic → Set E (mapping each element of Ic to a set of elements of E), and c4 : Rc → E, and all sets Y and V2 of elements of D, if (1) Y ⊆ V2, (2) for every o ∈ V2 there exists o' ∈ Y such that u2(o') = u2(o), and (3) there exists a function f : Rc → Ic such that u1(o) = f(u2(o)) for every o ∈ V2, then there exists o ∈ V2 such that c4(u2(o)) ∉ c2(u1(o)) if and only if there exists o ∈ Y such that c4(u2(o)) ∉ c2(u1(o)). No further requirements are imposed (for example, none of the types or sets need be finite or nonempty, and the equation u1(o) = f(u2(o)) is only required for o ∈ V2, not for elements of D outside V2).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Theorem 4.3 as printed does not state O ⊆ O̅ or that every inference content in O̅ already occurs in O; instead, the paper's proof introduces Oi and Or to define the possible pairings in O̅. Because Target leaves V2 (O̅) as an arbitrary set rather than constructing it from pairings of Oi and Or, it adds Y ⊆ V2 and (∀ o ∈ V2, ∃ o' ∈ Y, u2 o' = u2 o) as explicit hypotheses (both declared by the author and faithful to what the proof requires).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Definition 2.1 writes inf(o) ∉ pred(o) as functions of the full dataset o, whereas Target types c2 : Ic → Set E and c4 : Rc → E directly as functions of the prediction content u1 o (oi) and inference content u2 o (or). This reflects the prose description of oi and or as the parts of o used for prediction and inference (and is declared by the author).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Printed Theorem 4.3 is framed in terms of a theory of consciousness implying strict dependence and concludes that the theory is 'either already falsified or empirically unfalsifiable', whereas Target quantifies directly over arbitrary types, maps, and sets without a theory-of-consciousness wrapper and states the biconditional from the end of the proof (falsification over O̅ iff falsification over O). Given O ⊆ O̅ and identifying 'already falsified' with falsification over O, the two conclusions are logically equivalent.\"\n    }\n  ],\n  \"summary\": \"Target accurately formalizes the mathematical content of Theorem 4.3 as supported by its proof, correctly capturing strict dependence (Definition 4.2), falsification (Definition 2.1), and the equivalence between falsification over O̅ and over O. The only divergences are minor, declared formalization choices: making the background/pairing assumptions Y ⊆ V2 and coverage of inference contents explicit hypotheses, factoring pred and inf through oi and or, and abstracting away the informal 'theory of consciousness' framing.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Theorem 4.3 as printed does not state O ⊆ O̅ or that every inference content in O̅ already occurs in O; instead, the paper's proof introduces Oi and Or to define the possible pairings in O̅. Because Target leaves V2 (O̅) as an arbitrary set rather than constructing it from pairings of Oi and Or, it adds Y ⊆ V2 and (∀ o ∈ V2, ∃ o' ∈ Y, u2 o' = u2 o) as explicit hypotheses (both declared by the author and faithful to what the proof requires)."
+      },
+      {
+        "severity": "minor",
+        "description": "Definition 2.1 writes inf(o) ∉ pred(o) as functions of the full dataset o, whereas Target types c2 : Ic → Set E and c4 : Rc → E directly as functions of the prediction content u1 o (oi) and inference content u2 o (or). This reflects the prose description of oi and or as the parts of o used for prediction and inference (and is declared by the author)."
+      },
+      {
+        "severity": "minor",
+        "description": "Printed Theorem 4.3 is framed in terms of a theory of consciousness implying strict dependence and concludes that the theory is 'either already falsified or empirically unfalsifiable', whereas Target quantifies directly over arbitrary types, maps, and sets without a theory-of-consciousness wrapper and states the biconditional from the end of the proof (falsification over O̅ iff falsification over O). Given O ⊆ O̅ and identifying 'already falsified' with falsification over O, the two conclusions are logically equivalent."
+      }
+    ],
+    "summary": "Target accurately formalizes the mathematical content of Theorem 4.3 as supported by its proof, correctly capturing strict dependence (Definition 4.2), falsification (Definition 2.1), and the equivalence between falsification over O̅ and over O. The only divergences are minor, declared formalization choices: making the background/pairing assumptions Y ⊆ V2 and coverage of inference contents explicit hypotheses, factoring pred and inf through oi and or, and abstracting away the informal 'theory of consciousness' framing."
+  }
+}

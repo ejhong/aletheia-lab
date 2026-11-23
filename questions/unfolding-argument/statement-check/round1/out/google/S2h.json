@@ -1,0 +1,39 @@
+{
+  "id": "S2h",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T17:38:48Z",
+  "target": "def Target : Prop :=\n  ∀ (X1 : Type u) (X2 : Type v) (E : Type w), Nonempty E → ∀ (g : X1 → X2) (c2 : X1 → E),\n    ((∃ c4 : X2 → E, ∀ s, c2 s = c4 (g s)) ↔ (∀ s s', g s = g s' → c2 s = c2 s'))\n",
+  "usage": [
+    [
+      2802,
+      972
+    ],
+    [
+      3705,
+      28361
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is defined as the following proposition (it does not depend on any of the preceding definitions): For all types X1, X2, and E (of arbitrary universe levels), assuming that E has at least one element (Nonempty E), and for every function g : X1 → X2 and every function c2 : X1 → E, the following two conditions are equivalent (if and only if): (1) there exists a function c4 : X2 → E such that c2 s = c4 (g s) for every s in X1; and (2) for all s and s' in X1, if g s = g s', then c2 s = c2 s'. No finiteness or nonemptiness is assumed for X1 or X2, and c4 is not required to be unique.\"}\n```",
+  "translation": "Target is defined as the following proposition (it does not depend on any of the preceding definitions): For all types X1, X2, and E (of arbitrary universe levels), assuming that E has at least one element (Nonempty E), and for every function g : X1 → X2 and every function c2 : X1 → E, the following two conditions are equivalent (if and only if): (1) there exists a function c4 : X2 → E such that c2 s = c4 (g s) for every s in X1; and (2) for all s and s' in X1, if g s = g s', then c2 s = c2 s'. No finiteness or nonemptiness is assumed for X1 or X2, and c4 is not required to be unique.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target idealizes both behaviour (g : X1 → X2) and a theory's predictions (c2 : X1 → E) as single-valued functions with agreement expressed as equality (c2 s = c4 (g s)). While this matches the author's summary claim and the deterministic i/o setting of the unfolding argument (P-H4), it restricts away Kleiner & Hoel's set-valued framework (S3, underlying P-K33 and P-K43), where systems produce sets of observations (Set D), theories predict sets of experiences (Set E), and agreement is membership rather than equality. For set-valued predictions, the stated biconditional fails: behaviourally identical systems can receive distinct yet overlapping prediction sets while still admitting an agreeing inference rule (P-K33 requires disjoint predictions / an or-substitution), a theory predicting ∅ everywhere satisfies the RHS without satisfying the LHS, and P-K43's function f maps to prediction contents Oi rather than individual experiences E.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target adds a Nonempty E hypothesis so that c4 : X2 → E can be defined as a total function even on behaviours outside the image of g (only needed in the degenerate case where X1 is empty and X2 is nonempty), whereas P-K43 defines the dependence function only on the class Or of inference contents that actually arise.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target is stated as a purely abstract factorization lemma over arbitrary types X1, X2, and E without referencing the concrete system, i/o behaviour, or observation structures (S1, S3); while this is a harmless generalization that instantiates to deterministic systems and behaviours, the Lean statement itself omits the domain-specific connection to i/o experiments and observations.\"\n    }\n  ],\n  \"summary\": \"Target accurately formalizes the author's summary biconditional—that a behaviour-based inference rule agrees with a theory on every system iff behaviourally identical systems receive the same prediction—as a general factorization lemma. Its main caveat is the idealization to single-valued deterministic predictions and behaviours (plus the harmless Nonempty E technicality), which fits the standard unfolding-argument setting but does not capture Kleiner & Hoel's more general set-valued prediction framework.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Target idealizes both behaviour (g : X1 → X2) and a theory's predictions (c2 : X1 → E) as single-valued functions with agreement expressed as equality (c2 s = c4 (g s)). While this matches the author's summary claim and the deterministic i/o setting of the unfolding argument (P-H4), it restricts away Kleiner & Hoel's set-valued framework (S3, underlying P-K33 and P-K43), where systems produce sets of observations (Set D), theories predict sets of experiences (Set E), and agreement is membership rather than equality. For set-valued predictions, the stated biconditional fails: behaviourally identical systems can receive distinct yet overlapping prediction sets while still admitting an agreeing inference rule (P-K33 requires disjoint predictions / an or-substitution), a theory predicting ∅ everywhere satisfies the RHS without satisfying the LHS, and P-K43's function f maps to prediction contents Oi rather than individual experiences E."
+      },
+      {
+        "severity": "minor",
+        "description": "Target adds a Nonempty E hypothesis so that c4 : X2 → E can be defined as a total function even on behaviours outside the image of g (only needed in the degenerate case where X1 is empty and X2 is nonempty), whereas P-K43 defines the dependence function only on the class Or of inference contents that actually arise."
+      },
+      {
+        "severity": "minor",
+        "description": "Target is stated as a purely abstract factorization lemma over arbitrary types X1, X2, and E without referencing the concrete system, i/o behaviour, or observation structures (S1, S3); while this is a harmless generalization that instantiates to deterministic systems and behaviours, the Lean statement itself omits the domain-specific connection to i/o experiments and observations."
+      }
+    ],
+    "summary": "Target accurately formalizes the author's summary biconditional—that a behaviour-based inference rule agrees with a theory on every system iff behaviourally identical systems receive the same prediction—as a general factorization lemma. Its main caveat is the idealization to single-valued deterministic predictions and behaviours (plus the harmless Nonempty E technicality), which fits the standard unfolding-argument setting but does not capture Kleiner & Hoel's more general set-valued prediction framework."
+  }
+}

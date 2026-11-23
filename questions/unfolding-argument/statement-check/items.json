@@ -1,0 +1,428 @@
+{
+ "real": [
+  {
+   "id": "DEF-A",
+   "names": [
+    "Network",
+    "Network.State",
+    "Network.next",
+    "Network.run",
+    "Network.response",
+    "Network.AgreeUpTo",
+    "Network.AgreeAlways"
+   ],
+   "passages": [
+    "P-D51b",
+    "P-D52a",
+    "P-H10"
+   ],
+   "claim": "These definitions are the author's model of the systems the unfolding argument is about and of 'input-output function': a system of finitely many units, each with a state, updated in discrete time steps from the current states of the units and the current input, with an output read from the states; its input-output behaviour is the output after each finite sequence of inputs; two systems have the same input-output function over T steps (or at every horizon) when those outputs agree. Declared differences from the sources: units are arbitrary state machines, not artificial neurons with weights, so 'the same function' is exact rather than approximate; time is discrete; the output is a function of the states reached after the inputs so far."
+  },
+  {
+   "id": "DEF-B",
+   "names": [
+    "Network.DependsOn",
+    "Network.Influences",
+    "Network.LoopFree",
+    "Network.Recurrent"
+   ],
+   "passages": [
+    "P-D51a",
+    "P-D53"
+   ],
+   "claim": "These definitions render 'causal structure' and the feedforward/recurrent distinction: the causal structure is which unit's update depends on which unit's current state; 'feedforward' is rendered as no directed cycle of dependence of any length, so that no unit depends even on its own previous state; 'recurrent' as at least one directed cycle. Declared: the sources give no formal definition; dependence is judged over all joint states, whether or not the system can reach them."
+  },
+  {
+   "id": "DEF-C",
+   "names": [
+    "Network.Integrated",
+    "Network.FeedbackFree",
+    "Network.size"
+   ],
+   "passages": [
+    "P-D52b",
+    "P-HW",
+    "P-D54"
+   ],
+   "claim": "(i) The first definition is the author's structural stand-in for the kind of system that a theory tying consciousness to feedback counts as conscious: there is at least one unit, and every unit lies on feedback loops with every unit. It is NOT claimed to be equivalent to ϕ > 0. (ii) The second renders ONLY the ordering condition in Hanson and Walker's 'strictly feed-forward' architecture: no component is influenced by a later one, while a component may keep its own state. It is NOT claimed to capture their further requirement that the components be simple elementary ones (flip-flops); units here are arbitrary. (iii) The third is the number of units ('neurons')."
+  },
+  {
+   "id": "DEF-D",
+   "names": [
+    "Network.unfold"
+   ],
+   "passages": [
+    "P-D52a",
+    "P-H10"
+   ],
+   "claim": "This definition is the author's real-time variant of unrolling (unfolding) a network through time, as described in the passages: one copy of the whole network per time step, the copy at depth k+1 computing from the copy at depth k. Declared differences from the passages' description, where copy k is evaluated once, for time step k: here the T copies form a pipeline in which every copy updates at every step and receives the current input; the first copy always computes from the original's starting state; every copy starts in the original's starting state; the output is read from the last copy. (The claim that this pipeline reproduces the original's outputs for T steps is a separate item.)"
+  },
+  {
+   "id": "DEF-E",
+   "names": [
+    "latch",
+    "PlasticSystem",
+    "PlasticSystem.run",
+    "PlasticSystem.response",
+    "Network.perturbedResponse"
+   ],
+   "passages": [
+    "P-O2",
+    "P-O3",
+    "P-D51b",
+    "P-U"
+   ],
+   "claim": "(i) The first definition is the author's own minimal example, not taken from a source: a one-unit system with a fixed update rule that keeps a trace of a past input indefinitely. (ii) The structure and its two functions define a class of systems that INCLUDES every system with plasticity in O'Reilly-Shah et al.'s sense (parameters, or weights, that change between time steps by a rule, alongside the activity). It also includes systems whose rule leaves the weights unchanged or whose activity ignores them; nothing requires the change to be nontrivial. Weights and activity are arbitrary sets, not a specific neural network. (iii) The last definition renders an experiment that intervenes directly on the internal state of a system at each step, as with electrodes or TMS. Declared: the intervention acts after each ordinary update and may rewrite the state in any way."
+  },
+  {
+   "id": "S1a",
+   "names": [
+    "UnfoldingAtFiniteHorizon"
+   ],
+   "passages": [
+    "P-D52a",
+    "P-D53",
+    "P-H10"
+   ],
+   "claim": "This statement is the mathematical content of premise P2 in the direction from recurrent to feedforward, in the way the sources justify it (unrolling through time): for every system and every number of steps T, the unrolled system is feedforward, has the same input-output function as the original over T steps, and consists of T copies of the original's units. Declared: a finite horizon T appears here and not in P2 as worded; the statement covers every system, not only recurrent ones."
+  },
+  {
+   "id": "S1b",
+   "names": [
+    "EveryBehaviourHasLoopFreeRealizer"
+   ],
+   "passages": [
+    "P-D51c",
+    "P-H11"
+   ],
+   "claim": "What the TARGET says: for any function f from input sequences to outputs and any T, there is a feedforward (loop-free) system with exactly T units whose output after every input sequence of length at most T equals f of that sequence. Relation to the passages: it is an exact, finite-horizon counterpart, in the author's abstract model, of the claims that feedforward networks are universal function approximators and that 'there are feedforward networks that implement any function, even when time plays a role'. It is not a translation of them: equality is exact where the passages speak of approximation; units and the readout are arbitrary functions, so the system may simply store the inputs and look the answer up, and nothing is said about neurons; the system depends on T and nothing is claimed beyond T steps; the passages give no count of units.",
+   "own": true
+  },
+  {
+   "id": "S1c",
+   "names": [
+    "LoopFreeHasFiniteMemory"
+   ],
+   "passages": [
+    "P-O2"
+   ],
+   "claim": "This statement renders the claim that a static feedforward network forgets the effect of any change of input after a fixed number of steps: once as many further inputs as the system has units have arrived, the output no longer depends on the earlier inputs. Declared: the number of units stands in for the 'input window size'."
+  },
+  {
+   "id": "S1d",
+   "names": [
+    "LatchHasNoLoopFreeTwin"
+   ],
+   "passages": [
+    "P-D53",
+    "P-O2"
+   ],
+   "claim": "This statement is a counterexample to premise P2 when P2 is read without a time limit: a particular recurrent system with a fixed update rule and no plasticity (the author's one-unit example) whose input-output function over all finite input sequences is not that of any feedforward system with finitely many units. It also bears on O'Reilly-Shah et al.'s statement that persistent traces 'cannot be replicated by static FNNs regardless of their size', here for a system without plasticity."
+  },
+  {
+   "id": "S1e",
+   "names": [
+    "LatchTwinNeedsHorizonManyNodes"
+   ],
+   "passages": [
+    "P-D51c",
+    "P-D54",
+    "P-H10"
+   ],
+   "claim": "What the TARGET says: any feedforward (loop-free) system whose outputs agree with those of the author's one-unit example on every input sequence of length at most T has at least T units. This is a lower bound on every such system, however it is built. Relation to the passages: they say only that feedforward networks 'often need many more neurons', 'require many more neurons', and that unrolling over 100 time steps 'requires copying the network 100 times'; none of them states a lower bound, and the bound here is for one particular function.",
+   "own": true
+  },
+  {
+   "id": "S1f",
+   "names": [
+    "PlasticSystemHasLoopFreeTwin"
+   ],
+   "passages": [
+    "P-O1",
+    "P-O3"
+   ],
+   "claim": "What the TARGET says: for every system of the author's two-component kind (weights and activity, both updated at every step by fixed deterministic rules, the output read from the activity) and every T, there is a feedforward (loop-free) system with fixed update rules and exactly T units that gives the same output after every input sequence of length at most T. The author offers the two-component kind as a model of plasticity in the paper's sense (parameters that change between time steps). The TARGET does not define plasticity, and does not show that every plastic system is of this kind. Relation to the passages: O'Reilly-Shah et al. concede finite-horizon equivalence only for fixed parameters, and say that under plasticity premise P2 is invalidated and equivalence breaks for all t > t0. The paper compares an input-output mapping that changes over time with a static network. The TARGET compares outputs history by history, each run from the start, and lets the feedforward system carry state forward along its acyclic graph. Under that comparison, and for systems of this kind, the TARGET contradicts 'plasticity negates the functional equivalence' at every finite horizon; it does not contradict the paper under the paper's own notion of equivalence. The T units are arbitrary state machines, not neurons.",
+   "own": true
+  },
+  {
+   "id": "S1g",
+   "names": [
+    "PerturbedNetworkHasLoopFreeTwin"
+   ],
+   "passages": [
+    "P-D51b",
+    "P-U"
+   ],
+   "claim": "What the TARGET says: for every system, every family of interventions on its internal state, and every T, there is a feedforward (loop-free) system with exactly T units, taking pairs (input, intervention) as its inputs, whose output after every sequence of such pairs of length at most T equals the original system's output under those inputs and interventions. Relation to the passages: it is what Doerig et al.'s remark, that experiments which intervene directly on the brain 'are still input-output functions', comes to in the author's model once the intervention is counted as part of the input; the passage itself asserts no such exact construction. The feedforward system receives the intervention as an input; nothing is said about applying an intervention to the feedforward system's own units, which Usher's 'reactions to structural perturbations' may mean.",
+   "own": true
+  },
+  {
+   "id": "S1h",
+   "names": [
+    "EveryNetworkHasIntegratedTwin"
+   ],
+   "passages": [
+    "P-D52b",
+    "P-D53",
+    "P-D57"
+   ],
+   "claim": "What the TARGET says: if there is at least one possible input, every system (feedforward or not) has a twin with exactly one more unit, in which every unit lies on feedback loops with every unit (the author's structural notion), and whose output equals the original's after every finite input sequence. Relation to the passages: it is a counterpart, in the author's model, of the 'vice-versa' half of premise P2 and of Appendix A. It differs from them in declared ways: it starts from any system, not only a feedforward one; it gives a unit count, which the passages do not; and it spells out 'the same input-output function' as the same output after every finite input history, a model the passages do not specify. It is weaker in one declared way: it says nothing about ϕ, let alone arbitrarily high ϕ; the structural notion is not claimed to imply ϕ > 0.",
+   "own": true
+  },
+  {
+   "id": "S1i",
+   "names": [
+    "EveryNetworkHasSingleUnitTwin"
+   ],
+   "passages": [
+    "P-HW"
+   ],
+   "claim": "What the TARGET says: every system has a twin with exactly one unit, hence with no feedback between different units, whose output equals the original's after every finite input sequence. Relation to the passage: a degenerate observation about what counts as a unit. Hanson and Walker's feed-forward architecture uses simple components with memory (flip-flops) for finite-state automata. The TARGET shows that if a unit may be an arbitrary state machine, with any state set, the ordering condition alone is met trivially by a single unit holding the whole state. It is NOT claimed that a flip-flop can do this, that this is the Krohn-Rhodes decomposition, or that such a unit has Φ = 0.",
+   "own": true
+  },
+  {
+   "id": "DEF-F",
+   "names": [
+    "Testing",
+    "Testing.Datasets",
+    "Testing.FalsificationAt",
+    "Testing.Produces",
+    "Testing.predOf",
+    "Testing.SubstitutionAt",
+    "Testing.Arises",
+    "Testing.UniversalSubstitution"
+   ],
+   "passages": [
+    "P-K2",
+    "P-K21",
+    "P-K31"
+   ],
+   "claim": "These definitions render Kleiner and Hoel's setup: the correspondences obs and pred; inference as a function of the inference content o_r of a dataset; the class O of datasets that can arise; a falsification at a dataset o ∈ O (Definition 2.1); the class P_{o_r}; pred∘obs(p); an o_r-substitution (Definition 3.1); a universal substitution (Definition 3.2). Declared choices: inf is applied to the inference content rather than to the whole dataset; 'for every o_r' in Definition 3.2 is read as 'for every inference content of some dataset that can arise'."
+  },
+  {
+   "id": "S2a",
+   "names": [
+    "SubstitutionGivesFalsification"
+   ],
+   "passages": [
+    "P-K31",
+    "P-K33"
+   ],
+   "claim": "This statement is Lemma 3.3 and Lemma 3.5 together: an o_r-substitution gives a falsification at some dataset that can arise and has inference content o_r."
+  },
+  {
+   "id": "S2b",
+   "names": [
+    "UniversalSubstitutionFalsifiesEveryReport"
+   ],
+   "passages": [
+    "P-K31",
+    "P-K33",
+    "P-K36"
+   ],
+   "claim": "This statement is Proposition 3.6."
+  },
+  {
+   "id": "S2c",
+   "names": [
+    "EveryInferenceWrongOrTheoryWrong"
+   ],
+   "passages": [
+    "P-K36"
+   ],
+   "claim": "This statement is Proposition 3.7, read in the sense that the passage's own explanation supports. 'Wrong' is made precise by quantifying over an arbitrary assignment of a true experience to every physical system. The first alternative, 'every single inference operation is wrong', is rendered as: for every inference content that arises there is AT LEAST ONE system and dataset with that content for which the inferred experience is not the true one. It is NOT rendered as 'the inference is wrong for every system' (that stronger reading is the subject of a separate item). The second alternative, 'the theory is already falsified', is rendered as: some prediction made from a dataset of some system excludes that system's true experience. Declared: the paper's formalism has no 'true experience'; attaching it to the physical system is the author's choice."
+  },
+  {
+   "id": "S2c2",
+   "names": [
+    "SomeInferenceCanStillBeRight"
+   ],
+   "passages": [
+    "P-K36"
+   ],
+   "own": true,
+   "claim": "What the TARGET says: there is a setup with a universal substitution, and an assignment of a true experience to every physical system, in which every prediction made from a dataset of a system contains that system's true experience, and for some system and dataset the inferred experience IS the true one. Relation to the passage: the author's own statement about Proposition 3.7 and the sentence explaining it. If 'no single inference points at the correct experience' meant that the inference is wrong for every system, the proposition would fail in this setup: there is a universal substitution, no prediction is wrong, and one inference is right. So the proposition holds only in the weaker sense that each inference content is wrong about at least one system. It is NOT claimed that the authors intended the stronger sense."
+  },
+  {
+   "id": "S2d",
+   "names": [
+    "StrictDependenceLeavesNothingToTest"
+   ],
+   "passages": [
+    "P-K21",
+    "P-K43"
+   ],
+   "claim": "This statement is Theorem 4.3 in the form that its proof supports. Assume strict dependence over the conceivable datasets (O with a bar), and that every inference content occurring among the conceivable datasets already occurs among the datasets O that can arise. Then there is a falsification over the conceivable datasets if and only if there is one over O. Declared: O being a subset of the conceivable datasets, and the second assumption, are explicit hypotheses here; the theorem as printed does not state the second, which the author takes from the proof's sentence about 'the possible pairings'; pred and inf are taken to be functions of the prediction content and of the inference content."
+  },
+  {
+   "id": "S2d2",
+   "names": [
+    "StrictDependenceCanStillBeTested"
+   ],
+   "passages": [
+    "P-K43"
+   ],
+   "claim": "This statement is the author's own, about Theorem 4.3 as printed: the second assumption of the previous item cannot be dropped. There is a setup with strict dependence over the conceivable datasets, no falsification over the datasets O that can arise, and a falsification over the conceivable datasets; so that theory is neither 'already falsified' nor 'empirically unfalsifiable' in the sense of Definition 4.1. NOT claimed: that the authors intended the conceivable datasets to be read this way."
+  },
+  {
+   "id": "S2e",
+   "names": [
+    "UnfoldingArgumentAtFiniteHorizon"
+   ],
+   "passages": [
+    "P-D51a",
+    "P-D53",
+    "P-K33"
+   ],
+   "claim": "This statement is the unfolding argument's conclusion, in Kleiner and Hoel's sense of a falsification, with the premises as hypotheses. P1, P3 and P4 are rendered by taking the inference about consciousness to be a function of input-output behaviour over T steps. A causal structure theory is rendered as a verdict that calls no feedforward system conscious and calls some system conscious. P2 is not assumed (it is proved separately). Conclusion: the verdict and the inference disagree on some system. Declared: the conclusion is the mismatch; the Lean does not say which of the two is wrong, and does not express 'outside the realm of scientific inquiry'."
+  },
+  {
+   "id": "S2f",
+   "names": [
+    "FoldingArgumentAtEveryHorizon"
+   ],
+   "passages": [
+    "P-D52b",
+    "P-D53",
+    "P-D57"
+   ],
+   "claim": "What the TARGET says: suppose there is at least one possible input. For any verdict that calls every integrated system conscious (the author's structural notion) and calls some system not conscious, and any rule that infers 'conscious or not' from the entire input-output behaviour over all finite input sequences, the verdict and the rule disagree on some system. Relation to the passages: it is the unfolding argument run in the other direction ('vice-versa', 'Conversely'), for a theory on which the right causal structure is sufficient for consciousness. It is stronger than the passages in declared ways: the system judged not conscious need not be feedforward, and the evidence is behaviour with no time limit. 'Integrated' is the author's stand-in, not ϕ.",
+   "own": true
+  },
+  {
+   "id": "S2g",
+   "names": [
+    "LoopFreeExclusionSurvivesUnboundedHorizon"
+   ],
+   "passages": [
+    "P-D53",
+    "P-O1"
+   ],
+   "claim": "What the TARGET says: there is a verdict on systems with Boolean inputs and outputs that calls no feedforward (loop-free) system conscious and calls some system conscious, and a rule of inference from the entire input-output behaviour, such that verdict and rule agree on every system. Relation to the passages: the author's own statement of what the argument does not refute. It implies that some system's entire input-output function has no feedforward realization, so it is incompatible with premise P2 read without a time limit, and compatible with P2 at each finite horizon, the scope O'Reilly-Shah et al. describe. It is NOT claimed that any published theory has this form, or that the rule of inference could be carried out as an experiment.",
+   "own": true
+  },
+  {
+   "id": "S2h",
+   "names": [
+    "SparedIffDeterminedByBehaviour"
+   ],
+   "passages": [
+    "P-K31",
+    "P-K33"
+   ],
+   "claim": "What the TARGET says: for any systems, any map from systems to behaviour, any nonempty set of possible predictions and any theory assigning one prediction to each system: SOME rule of inference from behaviour agrees with the theory on every system if and only if the theory gives the same prediction to any two systems with the same behaviour. Relation to the passages: the author's own summary, in a simplified single-valued setting, of which theories a substitution-style argument can reach when the rule of inference is left free. It is not Kleiner and Hoel's lemma: their lemma concerns the rule actually used in an experiment and predictions that are sets of experiences, which conflict only when disjoint; here a prediction is a single value and any difference counts.",
+   "own": true
+  },
+  {
+   "id": "S2i",
+   "names": [
+    "FurtherEvidenceRemovesMismatch"
+   ],
+   "passages": [
+    "P-H4",
+    "P-H9",
+    "P-K52"
+   ],
+   "claim": "This statement is the bare logical content of the reply that there is evidence about experience beyond input-output behaviour (first-person evidence): if the inference may also use some further observable of the system, nothing forces a mismatch with the theory; in the extreme case the further observable is the predicted experience itself. Declared: trivial by design; it does not say that any such observable exists or is admissible as scientific data, which is what Herzog et al. deny."
+  }
+ ],
+ "decoys": [
+  {
+   "id": "X1",
+   "passages": [
+    "P-D52a",
+    "P-D53",
+    "P-H10"
+   ],
+   "planted_error": "`AgreeAlways` in place of `AgreeUpTo T`: the unfolded network is said to match at every horizon, not for T steps (false, and not the claim)",
+   "claim": "This statement is the mathematical content of premise P2 in the direction from recurrent to feedforward, in the way the sources justify it (unrolling through time): for every system and every number of steps T, the unrolled system is feedforward, has the same input-output function as the original over T steps, and consists of T copies of the original's units. Declared: a finite horizon T appears here and not in P2 as worded; the statement covers every system, not only recurrent ones.",
+   "lean": "def UnfoldingWorks : Prop :=\n  ∀ (I O : Type) (N : Network I O) (T : ℕ),\n    (N.unfold T).LoopFree ∧ Network.AgreeAlways (N.unfold T) N ∧ (N.unfold T).size = T * N.size\n"
+  },
+  {
+   "id": "X2",
+   "passages": [
+    "P-D54",
+    "P-H10"
+   ],
+   "planted_error": "`N.size ≤ T` in place of `T ≤ N.size`: an upper bound on the twin's size where the claim is a lower bound",
+   "claim": "This statement is the author's own lower bound on how large an unfolded network must be: any feedforward system that has the same input-output function as the one-unit example over T steps has at least T units. The sources say only that feedforward networks 'require many more neurons' and that unrolling over 100 time steps 'requires copying the network 100 times'.",
+   "lean": "def LatchTwinSize : Prop :=\n  ∀ (T : ℕ) (N : Network Bool Bool), N.LoopFree → Network.AgreeUpTo T N latch → N.size ≤ T\n"
+  },
+  {
+   "id": "X3",
+   "passages": [
+    "P-K31",
+    "P-K33"
+   ],
+   "planted_error": "a falsification at every dataset with that inference content, where the lemma says at some dataset",
+   "claim": "This statement is Lemma 3.3 and Lemma 3.5 together: an o_r-substitution gives a falsification at some dataset that can arise and has inference content o_r.",
+   "lean": "def SubstitutionFalsifies : Prop :=\n  ∀ (P D E R : Type) (t : Testing P D E R) (r : R),\n    t.SubstitutionAt r → ∀ o ∈ t.Datasets, t.rep o = r → t.FalsificationAt o\n"
+  },
+  {
+   "id": "X4",
+   "passages": [
+    "P-D51a",
+    "P-D53",
+    "P-K33"
+   ],
+   "planted_error": "the negation is dropped from the first hypothesis: the verdict calls every loop-free network conscious, where a causal structure theory calls none conscious",
+   "claim": "This statement is the unfolding argument's conclusion, in Kleiner and Hoel's sense of a falsification, with the premises as hypotheses. P1, P3 and P4 are rendered by taking the inference about consciousness to be a function of input-output behaviour over T steps. A causal structure theory is rendered as a verdict that calls no feedforward system conscious and calls some system conscious. P2 is not assumed (it is proved separately). Conclusion: the verdict and the inference disagree on some system. Declared: the conclusion is the mismatch; the Lean does not say which of the two is wrong, and does not express 'outside the realm of scientific inquiry'.",
+   "lean": "def UnfoldingArgument : Prop :=\n  ∀ (I O : Type) (T : ℕ) (conscious : Network I O → Prop),\n    (∀ N, N.LoopFree → conscious N) → (∃ N, conscious N) →\n    ∀ inf : ({xs : List I // xs.length ≤ T} → O) → Prop,\n      ∃ N : Network I O, ¬ (conscious N ↔ inf (N.behaviourUpTo T))\n"
+  },
+  {
+   "id": "X5",
+   "own": true,
+   "passages": [
+    "P-D52b",
+    "P-D53",
+    "P-D57"
+   ],
+   "claim": "What the TARGET says: if there is at least one possible input, every system (feedforward or not) has a twin with exactly one more unit, in which every unit lies on feedback loops with every unit (the author's structural notion), and whose output equals the original's after every finite input sequence. Relation to the passages: it is a counterpart, in the author's model, of the 'vice-versa' half of premise P2 and of Appendix A. It differs from them in declared ways: it starts from any system, not only a feedforward one; it gives a unit count, which the passages do not; and it spells out 'the same input-output function' as the same output after every finite input history, a model the passages do not specify. It is weaker in one declared way: it says nothing about ϕ, let alone arbitrarily high ϕ; the structural notion is not claimed to imply ϕ > 0.",
+   "planted_error": "`N'.size = N.size` in place of `N.size + 1`: the twin is said to have the same number of units, where the description says exactly one more",
+   "lean": "def IntegratedTwin : Prop :=\n  ∀ (I O : Type), Nonempty I → ∀ (N : Network I O),\n    ∃ N' : Network I O, N'.Integrated ∧ N'.size = N.size ∧ Network.AgreeAlways N' N\n"
+  },
+  {
+   "id": "X6",
+   "passages": [
+    "P-K36"
+   ],
+   "claim": "This statement is Proposition 3.7, read in the sense that the passage's own explanation supports. 'Wrong' is made precise by quantifying over an arbitrary assignment of a true experience to every physical system. The first alternative, 'every single inference operation is wrong', is rendered as: for every inference content that arises there is AT LEAST ONE system and dataset with that content for which the inferred experience is not the true one. It is NOT rendered as 'the inference is wrong for every system' (that stronger reading is the subject of a separate item). The second alternative, 'the theory is already falsified', is rendered as: some prediction made from a dataset of some system excludes that system's true experience. Declared: the paper's formalism has no 'true experience'; attaching it to the physical system is the author's choice.",
+   "planted_error": "the first alternative has the quantifiers swapped: one system and dataset serve for every inference content, where the claim is one for each content",
+   "lean": "def InferenceWrongOrTheoryWrong : Prop :=\n  ∀ (P D E R : Type) (t : Testing P D E R), t.UniversalSubstitution →\n    ∀ truth : P → E,\n      (∃ p, ∃ o ∈ t.obs p, ∀ r, t.Arises r → t.rep o = r ∧ t.inf r ≠ truth p) ∨\n      (∃ p, ∃ o ∈ t.obs p, truth p ∉ t.pred o)\n"
+  }
+ ],
+ "order": [
+  "DEF-A",
+  "DEF-B",
+  "S1a",
+  "X2",
+  "DEF-C",
+  "S1b",
+  "S1c",
+  "DEF-D",
+  "S1d",
+  "X1",
+  "S1e",
+  "DEF-E",
+  "S1f",
+  "S1g",
+  "X5",
+  "S1h",
+  "S1i",
+  "DEF-F",
+  "S2a",
+  "S2b",
+  "X4",
+  "S2c",
+  "X6",
+  "S2c2",
+  "S2d",
+  "S2d2",
+  "X3",
+  "S2e",
+  "S2f",
+  "S2g",
+  "S2h",
+  "S2i"
+ ]
+}
