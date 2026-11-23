@@ -16,7 +16,7 @@ We took every usable ancient person in one large public collection of ancient DN
 
 1. **In the Americas, nobody.** Of 728 people, the only ones with Old World ancestry are the 11 medieval Norse of Greenland, whom history already records. Four Arctic people lean toward East Asia, which is their known Siberian ancestry. No European, African or Pacific islander turns up anywhere else before Columbus.
 2. **Outside the Americas, many people resemble Native Americans, and almost none of it is what it looks like.** 163 people were flagged. Nearly all are ancient Siberians and steppe peoples. They resemble Native Americans because both descend from the same Ice Age populations of northern Asia, not because anyone came back across the sea.
-3. **One person is left over.** A woman buried at Pietrele in Romania around 4500 BCE has a small lean toward Native Americans and East Asians that none of our explanations covers. It is about what 3% of such ancestry would give. Contamination by a modern person, or plain chance among thirteen thousand people, are the likely causes. Even taken at face value it points to north-east Asia, not America.
+3. **One person is left over.** A woman buried at Pietrele in Romania around 4500 BCE has a small lean toward Native Americans and East Asians that none of our explanations covers. It is about what 3% of such ancestry would give. Plain chance among thirteen thousand people is the best-supported cause. Contamination by a modern person is possible, though the one check available argues against it. A real trace of ancestry from far to the east is not ruled out. Even taken at face value it points to north-east Asia, not America.
 4. **The early civilisations share nothing we can detect**, where there is anything to test. Egypt has two people in this collection, Mesopotamia eleven, and no Indus city has any.
 
 In short: where the record lets us look, there are no strangers.
@@ -51,13 +51,13 @@ She was buried at Pietrele on the lower Danube, in a farming community of the Gu
 
 {{figure: strangers/profile}}
 
-Three readings are possible, and the public data cannot choose between them.
+Three readings are possible.
 
-- **Contamination.** A few percent of DNA from a modern person with East Asian or Native American ancestry, picked up in excavation, storage or the laboratory, would look just like this. She is female, so the usual check on the X chromosome does not exist for her.
-- **Chance.** The statistic has heavier tails than it should. Ninety-nine people pass the threshold in this direction and 71 fall as far in the opposite direction, where no explanation by ancestry applies. One oddity of this size among twelve thousand is not strange.
-- **A real trace of north-east Asian ancestry** in Copper Age Europe. That would be a surprise, and a matter for the history of Eurasia. No ocean is involved.
+- **Chance.** This has the best support. The statistic has heavier tails than it should. Ninety-nine people pass the threshold in this direction and 71 fall as far in the opposite direction, where no explanation by ancestry applies. One oddity of this size among twelve thousand is not strange.
+- **Contamination.** A few percent of DNA from a modern person with East Asian or Native American ancestry, picked up in excavation, storage or the laboratory, would look just like this. It is the usual explanation for a small surprise in one person, which is a habit of thought and not a finding. The one check available argues against it: the DNA passed down her mother's line is 99.5 to 99.7% of one type, the same as her neighbours in the cemetery, and a contaminant with that ancestry would usually bring a different type. The check is not decisive, and the usual one, on the X chromosome, does not exist for a woman.
+- **A real trace of north-east Asian ancestry** in Copper Age Europe. Not ruled out. It would be a surprise, and a matter for the history of Eurasia. No ocean is involved.
 
-The laboratory that produced her data could check the first by going back to the raw sequences. Whether to ask them is Eugene's decision.
+**Corrected on 23 November 2026.** The first version of this page called contamination and chance "the likely causes". Eugene asked why a real anomaly had been set aside. The check on her mother's line was in the data all along and points against contamination; the list above now ranks the three readings by their support.
 
 ## Could the search have missed someone?
 

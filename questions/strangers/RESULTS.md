@@ -17,8 +17,9 @@ We tested 12,977 ancient people from one public release, each dated before 1450 
    Cuban whose longitude was recorded with the wrong sign, which the scan caught as intended.
 3. **One person stands.** A woman buried at Pietrele, Romania, about 4500 BCE (`PIE069.AG`), leans toward Native
    Americans and East Asians more than the 38 other people from her site or anyone near her. The lean is what
-   about 3% of such ancestry would give. It is not specific to the Americas, and contamination by a modern person
-   cannot be ruled out from the public file. She is a person to look at, not evidence of a crossing.
+   about 3% of such ancestry would give. It is not specific to the Americas. Chance is the best-supported
+   explanation; contamination is possible, though the one check in the public file argues against it; a real
+   trace of north-east Asian ancestry is not ruled out. She is a person to look at, not evidence of a crossing.
 4. **The early civilisations: nothing that holds up.** Classic-period Mexico leans slightly toward Mesopotamia by
    the letter of the rule (Z = 2.8), but it leans just as much toward China, the Han and the French, so it is a
    general difference from its neighbours, not a link to Mesopotamia. The Andes show nothing. Egypt has two
@@ -106,6 +107,7 @@ seeing the result and is marked as such.
 | Closer to Native Americans than to Han | Z = 3.3 |
 | The 38 other people from her site | Z between −2.6 and +2.2 |
 | AADR contamination flags | none; she is female, so the X-chromosome estimate does not exist |
+| Mitochondrial reads matching her own type (AADR) | 99.5–99.7%, like the others at her site (99.4–100%) |
 
 Whom she leans toward, compared with her neighbours (exploratory), beside ten made-up strangers built from her
 own neighbours with 3% ancient American ancestry:
@@ -124,19 +126,28 @@ own neighbours with 3% ancient American ancestry:
 
 Her pattern is what about 3% of Native American-like or north-east Asian ancestry looks like. What it could be:
 
+- **Chance.** This has the best support. The residual has heavier tails than a normal curve: 99 people pass the
+  threshold on the positive side and 71 fall as far on the negative side, where no ancestry explanation applies.
+  Among 12,249 people, one unexplained outlier of this size is not strange.
 - **Contamination.** A few percent of DNA from a modern person with Native American or East Asian ancestry, picked
-  up in excavation, storage or the laboratory, would look like this. Nothing in the public file can test it.
-- **A real trace of north-east Asian ancestry** in Copper Age Europe. That would be surprising and would be a
-  Eurasian matter, with no ocean involved.
-- **Chance.** The residual has heavier tails than a normal curve: 99 people pass the threshold on the positive
-  side and 71 fall as far on the negative side, where no ancestry explanation applies. Among 12,249 people, one
-  unexplained outlier of this size is not strange.
+  up in excavation, storage or the laboratory, would look like this. It is the usual explanation for a small
+  unexpected ancestry in one person, and that is a prior, not a finding. The one check available argues against
+  it: 99.5–99.7% of her mitochondrial reads match her own type (H), the same as her site-mates, and a contaminant
+  with that ancestry would usually carry a different type and lower the figure. It is not decisive; a contaminant
+  can share her type. The signal also holds on transversions, so ancient damage is not making it.
+- **A real trace of north-east Asian ancestry** in Copper Age Europe. Not ruled out. It would be surprising and
+  would be a Eurasian matter, with no ocean involved.
 
 What it is not: evidence that anyone crossed the Atlantic. She leans toward Japanese and Han nearly as much as
 toward Native Americans.
 
-The people who could settle it are the laboratory that produced the data, by checking the reads for
-contamination. Asking them is outward-facing and is Eugene's decision.
+**Correction, 23 November 2026.** The first version of this section called contamination and chance "the likely
+ones" and said that nothing in the public file could test contamination. Eugene asked why a real anomaly had
+been set aside. The mitochondrial figure was in the file all along and points against contamination; the text
+above now says so, and ranks the three readings by their support.
+
+Her sequence reads are public (European Nucleotide Archive, study PRJEB62503, run ERR11495483), so a further
+check needs no contact with the laboratory. See Amendment 3.
 
 ### 4. The centres
 
@@ -256,7 +267,7 @@ through nearly thirteen thousand ancient people looking for exactly that. In the
 Greenland, whom everyone knew about, and nobody else. In the Old World we found many people who resemble Native
 Americans, but they are Siberians and steppe peoples who resemble them because they share ancestors from the Ice
 Age, not because anyone came back across the sea. One woman from Copper Age Romania has a small lean we cannot
-explain; the dull explanations, contamination and chance, are the likely ones, and even taken at face value it
-points to Asia, not America. The search has real blind spots: it only sees the people who happen to have been
+explain. Chance is the best-supported reading and contamination is possible; a real trace of ancestry from far
+to the east is not ruled out. Even taken at face value it points to Asia, not America. The search has real blind spots: it only sees the people who happen to have been
 dug up and sequenced, and Egypt, Mesopotamia and the Indus are almost empty. But where it can see, it sees no
 strangers.
