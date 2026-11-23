@@ -42,6 +42,20 @@ people may pass: gene flow back across the Bering Strait is published, and passi
 **What stays the same.** Everything in the locked protocol, its thresholds, and the locked results. This is an
 added description of the hits, post hoc. Computed by `analysis/amend.py` into `results/amended/`.
 
+## Amendment 2 (2026-11-23): 219 people the locked code left out of the neighbours test
+
+**What went wrong.** The protocol sorts people into four data types (capture, shotgun, Twist, other) and gives
+everyone neighbours "of the same side and data type". The locked code built neighbour pools for the first three
+types only, so 219 people of type "other" (mostly merged capture-and-Twist data) got the absolute test but not the
+neighbours test. The independent replication followed the protocol's wording, tested them, and its output showed
+the difference. The mistake is in our code, not in the protocol.
+
+**Change.** The neighbours test is run for those people exactly as the protocol states, with neighbours of type
+"other". The family of tests grows by one for each such person elsewhere and four for each on the American side,
+and the threshold is recomputed for the larger family. The fitted control weights are kept from the locked run
+(these people were not in the fit). Any original hit that falls below the recomputed threshold is reported. New
+hits get the same robustness checks and the Amendment 1 test. Computed by `analysis/amend.py`.
+
 ## Completion, not an amendment (2026-11-23): robustness of the centre statistics
 
 The protocol says a centre statistic counts only if it is robust by the two rules (transversions; second
