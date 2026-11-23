@@ -1,0 +1,82 @@
+{
+ "real": [
+  {
+   "id": "DEF-H",
+   "names": [
+    "KnowledgeSelfReflective"
+   ],
+   "passages": [
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences. K stands for Reinhardt's operator B, 'it is provable (known) that'. F φ stands for F[p] or q[s] in the source: a formula with one free variable applied to the code of a sentence. 𝓑 stands for a base theory with the axioms for B and 𝓢 for the theory T that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This definition is the axiom schema Bp → BBp, stated for one system. Universal closures are not modelled, since there are no free variables in this setting."
+  },
+  {
+   "id": "S2f",
+   "names": [
+    "ReinhardtTheorem6"
+   ],
+   "passages": [
+    "P-R328",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences. K stands for Reinhardt's operator B, 'it is provable (known) that'. F φ stands for F[p] or q[s] in the source: a formula with one free variable applied to the code of a sentence. 𝓑 stands for a base theory with the axioms for B and 𝓢 for the theory T that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement captures Theorem 6. The hypothesis (B ≤ q) is rendered sentence by sentence. Con q is rendered as a sentence conF of which only this is assumed: for each sentence σ the base proves that conF implies that F does not hold of both σ and ∼σ. Those are the instances at sentences of ∀x¬(q(x) & q(ng(x))). The fixed point of the proof is assumed as a hypothesis, in the form the proof states it: T ⊢ B(s ↔ Bq(ng[s])). The logic of B is rendered by: the base is closed under necessitation and proves the distribution axiom and Bp → BBp; 𝓢 includes the base; and 𝓢 proves B(Bp → p) for each p. Plain correctness Bp → p is not assumed, in line with Reinhardt's remark that only B(Bp → p) is used. No condition is placed on F."
+  },
+  {
+   "id": "S2g",
+   "names": [
+    "ReinhardtTheorem1Safe"
+   ],
+   "passages": [
+    "P-R324",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences. K stands for Reinhardt's operator B, 'it is provable (known) that'. F φ stands for F[p] or q[s] in the source: a formula with one free variable applied to the code of a sentence. 𝓑 stands for a base theory with the axioms for B and 𝓢 for the theory T that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement captures case (ii) of Theorem 1. 'T includes Q' is rendered by: the base is closed under necessitation; 𝓢 includes the base; knowledge is closed under modus ponens in 𝓢; and F has a Gödel sentence over the base. The logical principle B(Bp → p), which the proof of case (ii) uses, is a hypothesis."
+  },
+  {
+   "id": "S2aR",
+   "names": [
+    "ReinhardtTheorem3"
+   ],
+   "passages": [
+    "P-R324",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences. K stands for Reinhardt's operator B, 'it is provable (known) that'. F φ stands for F[p] or q[s] in the source: a formula with one free variable applied to the code of a sentence. 𝓑 stands for a base theory with the axioms for B and 𝓢 for the theory T that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement captures case (i) of Theorem 1. 'T includes Q' is rendered by: the base is closed under necessitation; 𝓢 includes the base; knowledge is closed under modus ponens in 𝓢; and F has a Gödel sentence over the base. Neither Bp → p nor Bp → BBp is assumed, in line with Reinhardt's remark on what the argument uses."
+  },
+  {
+   "id": "S2dR",
+   "names": [
+    "NoKnownSelfDiagonal"
+   ],
+   "passages": [
+    "P-R327",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences. K stands for Reinhardt's operator B, 'it is provable (known) that'. F φ stands for F[p] or q[s] in the source: a formula with one free variable applied to the code of a sentence. 𝓑 stands for a base theory with the axioms for B and 𝓢 for the theory T that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement is offered as the propositional core of the proof of Theorem 5, from the point where x is taken to be e. Write P for the sentence U(e,e), so that Reinhardt's 'pe' is ∼P. His two premises there are B(B(∼P) → ∼P), an instance of known correctness, and B(B(∼P) ↔ P), the instance of the schema. The statement says that under the hypotheses about K (necessitation in the base, inclusion, distribution, correctness, known correctness) no sentence P has B(B(∼P) ↔ P): the system proves its negation. The quantifier steps (∃e, ∀x, the B∀ axiom, instantiation at x := e) and the formula U are not formalized."
+  }
+ ],
+ "decoys": [
+  {
+   "id": "X8",
+   "mimics": "S2f",
+   "passages": [
+    "P-R328",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences. K stands for Reinhardt's operator B, 'it is provable (known) that'. F φ stands for F[p] or q[s] in the source: a formula with one free variable applied to the code of a sentence. 𝓑 stands for a base theory with the axioms for B and 𝓢 for the theory T that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement captures Theorem 6. The hypothesis (B ≤ q) is rendered sentence by sentence. Con q is rendered as a sentence conF of which only this is assumed: for each sentence σ the base proves that conF implies that F does not hold of both σ and ∼σ. Those are the instances at sentences of ∀x¬(q(x) & q(ng(x))). The fixed point of the proof is assumed as a hypothesis, in the form the proof states it: T ⊢ B(s ↔ Bq(ng[s])). The logic of B is rendered by: the base is closed under necessitation and proves the distribution axiom and Bp → BBp; 𝓢 includes the base; and 𝓢 proves B(Bp → p) for each p. Plain correctness Bp → p is not assumed, in line with Reinhardt's remark that only B(Bp → p) is used. No condition is placed on F.",
+   "planted_error": "The outer K is missing from the conclusion: it says 𝓢 ⊢ ¬K(conF) where Theorem 6 has T ⊢ B¬B Con q.",
+   "lean": "def ReinhardtTheorem6 : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm) (conF : Fm),\n    ClosedUnderNecessitation 𝓑 K → KnowledgeClosedUnderMP 𝓑 K → KnowledgeSelfReflective 𝓑 K → 𝓑 ⪯ 𝓢 →\n    KnowsOwnFactivity 𝓢 K →\n    (∃ s, 𝓢 ⊢ K (s 🡘 K (F (∼s)))) →\n    (∀ σ, 𝓑 ⊢ conF 🡒 ∼(F σ ⋏ F (∼σ))) →\n    (∀ σ, 𝓢 ⊢ K (K σ 🡒 F σ)) →\n    𝓢 ⊢ ∼K conF"
+  },
+  {
+   "id": "X9",
+   "mimics": "S2g",
+   "passages": [
+    "P-R324",
+    "P-R323"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences. K stands for Reinhardt's operator B, 'it is provable (known) that'. F φ stands for F[p] or q[s] in the source: a formula with one free variable applied to the code of a sentence. 𝓑 stands for a base theory with the axioms for B and 𝓢 for the theory T that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement captures case (ii) of Theorem 1. 'T includes Q' is rendered by: the base is closed under necessitation; 𝓢 includes the base; knowledge is closed under modus ponens in 𝓢; and F has a Gödel sentence over the base. The logical principle B(Bp → p), which the proof of case (ii) uses, is a hypothesis.",
+   "planted_error": "The hypothesis is reversed: K(Kφ → F(φ)), 'whatever is known F holds of', where case (ii) has B(F[p] → Bp), 'whatever F holds of is known'.",
+   "lean": "def ReinhardtTheorem1Safe : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    ClosedUnderNecessitation 𝓑 K → 𝓑 ⪯ 𝓢 → KnowledgeClosedUnderMP 𝓢 K → KnowsOwnFactivity 𝓢 K →\n    HasGödelSentence 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (K φ 🡒 F φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (∼F ψ)"
+  }
+ ]
+}

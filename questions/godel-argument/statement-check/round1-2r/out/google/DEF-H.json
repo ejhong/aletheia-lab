@@ -1,0 +1,39 @@
+{
+  "id": "DEF-H",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T03:17:20Z",
+  "target": "def Target (𝓑 : S₀) (K : Fm → Fm) : Prop := ∀ φ, 𝓑 ⊢ K φ 🡒 K (K φ)\n",
+  "usage": [
+    [
+      1375,
+      1040
+    ],
+    [
+      2057,
+      4273
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Given implicit types `Fm` (of sentences, equipped with logical connectives) and `S₀` (of proof systems, equipped with an entailment relation on `Fm`), `Target` defines a proposition taking a proof system `𝓑 : S₀` and an arbitrary function `K : Fm → Fm`. It asserts that for every sentence `φ : Fm`, the proof system `𝓑` proves the sentence `(K φ) 🡒 (K (K φ))` (the formal-language implication from `K φ` to `K (K φ)`). No further hypotheses are assumed on `𝓑` (such as classical propositional closure or consistency) or on `K`, and no other system type `S` or prior definitions are involved.\"}\n```",
+  "translation": "Given implicit types `Fm` (of sentences, equipped with logical connectives) and `S₀` (of proof systems, equipped with an entailment relation on `Fm`), `Target` defines a proposition taking a proof system `𝓑 : S₀` and an arbitrary function `K : Fm → Fm`. It asserts that for every sentence `φ : Fm`, the proof system `𝓑` proves the sentence `(K φ) 🡒 (K (K φ))` (the formal-language implication from `K φ` to `K (K φ)`). No further hypotheses are assumed on `𝓑` (such as classical propositional closure or consistency) or on `K`, and no other system type `S` or prior definitions are involved.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the source, p ranges over formulas of the language of arithmetic extended with B (potentially containing free variables), and the axioms are the universal closures of Bp → BBp. Because Target is formulated over an arbitrary abstract type Fm of sentences without quantifiers, free variables, or arithmetic syntax, it only expresses the sentence-level schema and cannot express universal closures of open instances (a limitation explicitly declared by the author).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source specifies that the special axiom schemas are 'optionally prefixed by B' (which includes B(Bp → BBp)), whereas Target states only the unprefixed schema K φ 🡒 K (K φ). This matches the author's narrower claim for Bp → BBp alone, and the prefixed form would follow if necessitation (Def1) is assumed for 𝓑.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source introduces Bp → BBp as an axiom schema of the theory, whereas Target states that every instance is provable in the abstract entailment system 𝓑 (𝓑 ⊢ K φ 🡒 K (K φ)), an idealization inherent to modelling a system solely by its provability relation.\"\n    }\n  ],\n  \"summary\": \"Target faithfully formalizes Reinhardt's axiom schema Bp → BBp as provability of K φ 🡒 K (K φ) for all sentences φ in an abstract proof system 𝓑, with minor caveats reflecting the declared omission of open formulas and universal closures, the exclusion of the optional leading B prefix, and the use of provability rather than explicit axiom membership.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "In the source, p ranges over formulas of the language of arithmetic extended with B (potentially containing free variables), and the axioms are the universal closures of Bp → BBp. Because Target is formulated over an arbitrary abstract type Fm of sentences without quantifiers, free variables, or arithmetic syntax, it only expresses the sentence-level schema and cannot express universal closures of open instances (a limitation explicitly declared by the author)."
+      },
+      {
+        "severity": "minor",
+        "description": "The source specifies that the special axiom schemas are 'optionally prefixed by B' (which includes B(Bp → BBp)), whereas Target states only the unprefixed schema K φ 🡒 K (K φ). This matches the author's narrower claim for Bp → BBp alone, and the prefixed form would follow if necessitation (Def1) is assumed for 𝓑."
+      },
+      {
+        "severity": "minor",
+        "description": "The source introduces Bp → BBp as an axiom schema of the theory, whereas Target states that every instance is provable in the abstract entailment system 𝓑 (𝓑 ⊢ K φ 🡒 K (K φ)), an idealization inherent to modelling a system solely by its provability relation."
+      }
+    ],
+    "summary": "Target faithfully formalizes Reinhardt's axiom schema Bp → BBp as provability of K φ 🡒 K (K φ) for all sentences φ in an abstract proof system 𝓑, with minor caveats reflecting the declared omission of open formulas and universal closures, the exclusion of the optional leading B prefix, and the use of provability rather than explicit axiom membership."
+  }
+}

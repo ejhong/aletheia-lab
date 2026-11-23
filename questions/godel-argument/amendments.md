@@ -190,3 +190,87 @@ Total for the Stage 2A statement check: $9.50 ($2.96 OpenAI, $6.54 Google). Ques
 `statement-check/Statement2.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement2.lean` and is
 locked there. Nothing in Stage 2A has been proved for the record before this point; the exploratory trial is in
 `explore/Stage2Sketch.lean`.
+
+## Amendment 3 (2026-11-23): Reinhardt's paper in hand; a correction; two statements added
+
+**What changed.** After Stage 2A was merged, Eugene supplied Reinhardt, "Absolute Versions of Incompleteness
+Theorems", *Noûs* 19(3) (1985) 317–346 (JSTOR scan). Until now every attribution to Reinhardt was second-hand.
+Written before the statement check below is run and before either new statement is proved.
+
+**What the paper states** (pp. 322–330; passages P-R323 to P-R328).
+
+- Axioms (pp. 322–323): Bp → p; B(p → q) → (Bp → Bq); Bp → BBp; B∀xP → ∀x Bp; with Bp for each axiom of logic and
+  arithmetic. B is his operator; Koellner writes K.
+- Theorem 1 (p. 324) is Koellner's Theorem 3. Reinhardt adds a second case, K(F(p) → Kp), and remarks that the
+  argument "uses almost no properties of B: only distributivity over implication and Bp for tautologies".
+- Theorem 5 (pp. 327–328) is the result behind Koellner's Theorem 6 and Alexander's Definition 4: the schema
+  ∃e B∀x(Bp(x) ↔ U(e,x)) is inconsistent. His instance is p(x) := ¬U(x,x). His proof uses known factivity,
+  distribution and factivity, and "does not use the BB axiom".
+- Theorem 6 (pp. 328–330) is Koellner's Theorem 4. Reinhardt writes: "There are no derivability conditions on
+  the system". He defines the consistency statement: "by Con q we mean specifically ∀x¬(q(x) & q(ng(x)))", that
+  is, no sentence is in q together with its negation. He remarks that the proof uses Bp → BBp "very strongly"
+  and that "the correctness of B need not be used, but only B(Bp → p)".
+
+**Correction.** Stage 2A said that Koellner's printed Theorem 4 "omits a condition" on the system F, and offered
+S2b as a repaired variant with a condition added (that the base proves the formalized second incompleteness
+theorem for F). That diagnosis was wrong. What Koellner's page omits is Reinhardt's *definition of Con*. With
+Reinhardt's definition the theorem holds for every F, with no condition on it, exactly as printed.
+
+- Still true: S2b and S2b′ as theorems; and that the printed statement fails if Con(F) is read as ¬F(⌜⊥⌝), the
+  reading I assumed.
+- Withdrawn: that Reinhardt's theorem needs a condition on F, and the description of S2b as a repair of it. S2b
+  is a different, weaker theorem about a different consistency statement.
+- Also changed: Stage 2A said K4 is never an assumption. That holds for S2a to S2e. Reinhardt's Theorem 6 needs
+  it.
+
+**Confirmed against the paper.**
+
+- S2a is case (i) of Reinhardt's Theorem 1, and his remark on what the argument uses matches the premise table
+  (no factivity, no K4).
+- S2d is the propositional core of Reinhardt's own proof of Theorem 5. The instance I had guessed, x ∉ W_x, is
+  his. The derivation is no longer "the lab's own".
+- S2c is not how Reinhardt argues. He refutes the schema directly, through the diagonal instance, with no Gödel
+  sentence. S2c remains a counterpart reached by another route.
+
+**Statements added** (drafted in `statement-check/Statement3.draft.lean`; to be locked as
+`lean/GodelArgument/Statement3.lean`).
+
+| Name | Gloss | Source |
+|---|---|---|
+| D16 `KnowledgeSelfReflective` | K4: what is known is known to be known | Reinhardt 1985, p. 323 (Bp → BBp) |
+| S2f `ReinhardtTheorem6` | If K(Kσ → F(σ)) for each σ, then K¬K(Con F), with no condition on F. Con F is any sentence that provably implies, for each σ, that F does not hold of both σ and ¬σ. Assumes necessitation, K2 and K4 in the base, known factivity, and a fixed point s ↔ K(F(¬s)) | Reinhardt 1985, pp. 328–330, Theorem 6 |
+| S2g `ReinhardtTheorem1Safe` | If K(F(φ) → Kφ) for each φ, then for some ψ: Kψ and K¬F(ψ) | Reinhardt 1985, p. 324, Theorem 1, case (ii) |
+
+**Method.** As before. Statement check by the same two checkers, with two planted errors (the outer K dropped from
+the conclusion of S2f; the hypothesis of S2g reversed). S2a and S2d, which are locked and unchanged, are
+compared again, this time with Reinhardt's own text. Script: `statement-check/run.py --stage 2r`. Then the lock,
+then proofs in `Results3.lean`, a non-vacuity instance, the audit, and corrections to `RESULTS.md` and the site.
+An exploratory proof of both draft statements was compiled first (`explore/Stage2RSketch.lean`).
+
+**Cost.** Expected $1 to $3. Question total so far $22.20 of $50.
+
+**Still not expressed.** S2f is in the same abstract setting as Stage 2A. Con F is not the quantified sentence
+∀x¬(q(x) & q(ng(x))) but any sentence with its instances; the fixed point is assumed; quantifiers are absent.
+Reinhardt's Theorems 2 and 3 (with parameters and the Post-Turing thesis) and his B∀ axiom are not touched.
+
+**Check of the Amendment 3 statements, round 1 (2026-11-23), and what changed.** Frozen under
+`statement-check/round1-2r/`. Cost $2.88.
+
+- Planted errors: both checkers caught both.
+- D16, S2g, and the re-comparisons of S2a and S2d with Reinhardt's text: `faithful_with_caveats` from both.
+- S2f: Google `faithful_with_caveats`; OpenAI `divergent`. Its major point: Reinhardt's proof takes a sentence s
+  with T ⊢ B(s ↔ Bq(ng[s])), a known equivalence proved in T, whereas the draft required the base to prove the
+  equivalence itself, which is a stronger assumption.
+
+Response: accepted. The fixed-point hypothesis of S2f is now 𝓢 ⊢ K(s ↔ K(F(¬s))), as in Reinhardt's proof. The
+exploratory proof was redone with the weaker hypothesis and still goes through. Round 2 re-checks S2f and the
+planted error that mimics it; the other items are unchanged.
+
+
+**Round 2 and the state at the lock.** Cost $0.90. S2f: `faithful_with_caveats` from both checkers; both caught the
+planted error again. Final verdicts are in `statement-check/REPORT-2R.md`: all five real items are
+`faithful_with_caveats` from both checkers, and both planted errors were caught. Total for this amendment's
+check: $3.78 ($1.14 OpenAI, $2.64 Google). Question total: $25.98 of $50.
+
+`statement-check/Statement3.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement3.lean` and is
+locked there. Neither new statement has been proved for the record before this point.

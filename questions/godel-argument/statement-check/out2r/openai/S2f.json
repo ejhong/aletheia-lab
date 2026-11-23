@@ -1,0 +1,43 @@
+{
+  "id": "S2f",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T03:27:14Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm) (conF : Fm),\n    Def1 𝓑 K → Def2 𝓑 K → Def6 𝓑 K → 𝓑 ⪯ 𝓢 →\n    Def4 𝓢 K →\n    (∃ s, 𝓢 ⊢ K (s 🡘 K (F (∼s)))) →\n    (∀ σ, 𝓑 ⊢ conF 🡒 ∼(F σ ⋏ F (∼σ))) →\n    (∀ σ, 𝓢 ⊢ K (K σ 🡒 F σ)) →\n    𝓢 ⊢ K (∼K conF)\n",
+  "usage": [
+    [
+      1671,
+      525
+    ],
+    [
+      3093,
+      2324
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, with sentence connectives and truth and falsehood constants on Fm and provability relations for systems of types S₀ and S on Fm, take any 𝓑 : S₀ and 𝓢 : S, both proving all classical propositional tautologies and closed under modus ponens. For every pair of functions K, F : Fm → Fm and every sentence conF : Fm, assume in order: (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K φ; (2) for every pair of sentences φ, ψ, 𝓑 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) for every sentence φ, 𝓑 proves K φ 🡒 K (K φ); (4) every sentence proved by 𝓑 is proved by 𝓢; (5) for every sentence φ, 𝓢 proves K (K φ 🡒 φ); (6) there exists a sentence s such that 𝓢 proves K (s 🡘 K (F (∼s))); (7) for every sentence σ, 𝓑 proves conF 🡒 ∼(F σ ⋏ F (∼σ)); and (8) for every sentence σ, 𝓢 proves K (K σ 🡒 F σ). Then 𝓢 proves K (∼(K conF)). In (5), (6) and (8), the entire indicated implication or biconditional is inside K; proof of its unprefixed version is not a separate hypothesis. Condition (1) is imposed on 𝓑, not on 𝓢. Neither system is assumed consistent, and conF is not required to be a designated consistency sentence or to be provable. The conclusion is a provability claim about a K-prefixed sentence, not a claim that 𝓢 fails to prove K conF.\"}",
+  "translation": "Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, with sentence connectives and truth and falsehood constants on Fm and provability relations for systems of types S₀ and S on Fm, take any 𝓑 : S₀ and 𝓢 : S, both proving all classical propositional tautologies and closed under modus ponens. For every pair of functions K, F : Fm → Fm and every sentence conF : Fm, assume in order: (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K φ; (2) for every pair of sentences φ, ψ, 𝓑 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) for every sentence φ, 𝓑 proves K φ 🡒 K (K φ); (4) every sentence proved by 𝓑 is proved by 𝓢; (5) for every sentence φ, 𝓢 proves K (K φ 🡒 φ); (6) there exists a sentence s such that 𝓢 proves K (s 🡘 K (F (∼s))); (7) for every sentence σ, 𝓑 proves conF 🡒 ∼(F σ ⋏ F (∼σ)); and (8) for every sentence σ, 𝓢 proves K (K σ 🡒 F σ). Then 𝓢 proves K (∼(K conF)). In (5), (6) and (8), the entire indicated implication or biconditional is inside K; proof of its unprefixed version is not a separate hypothesis. Condition (1) is imposed on 𝓑, not on 𝓢. Neither system is assumed consistent, and conF is not required to be a designated consistency sentence or to be provable. The conclusion is a provability claim about a K-prefixed sentence, not a claim that 𝓢 fails to prove K conF.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"F need not come from a single formula q(x). Lean uses F (∼σ) directly where the source applies q to the result of the arithmetic negation-code operation ng. The abstract language also lacks object-language quantifiers, so its sentence schemas do not express the source's universal closures.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source defines Con q as a specific universal sentence ranging over all numbers. Lean instead allows any conF from which the base proves each noncontradiction instance at a sentence. This suffices when instantiated with the intended Con q, but does not characterize that sentence.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Fixed-point existence is an extra antecedent in Lean. Its boxed biconditional has the correct scope, but the source obtains the witness from the fixed-point theorem rather than requiring it as a hypothesis of Theorem 6.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean packages the source's axioms and their B-prefixed forms as distribution, positive introspection, and necessitation for a separate base whose theorems pass to 𝓢. This is an abstract presentation, not a necessitation requirement on every theorem of T.\"\n    }\n  ],\n  \"summary\": \"As a proof schema, the TARGET preserves both the sentence-by-sentence upper-bound hypothesis and the conclusion T ⊢ B¬B Con q, using boxed rather than plain correctness. It does not itself supply the arithmetical interpretation or the fixed point needed to recover the concrete theorem.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "F need not come from a single formula q(x). Lean uses F (∼σ) directly where the source applies q to the result of the arithmetic negation-code operation ng. The abstract language also lacks object-language quantifiers, so its sentence schemas do not express the source's universal closures."
+      },
+      {
+        "severity": "minor",
+        "description": "The source defines Con q as a specific universal sentence ranging over all numbers. Lean instead allows any conF from which the base proves each noncontradiction instance at a sentence. This suffices when instantiated with the intended Con q, but does not characterize that sentence."
+      },
+      {
+        "severity": "minor",
+        "description": "Fixed-point existence is an extra antecedent in Lean. Its boxed biconditional has the correct scope, but the source obtains the witness from the fixed-point theorem rather than requiring it as a hypothesis of Theorem 6."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean packages the source's axioms and their B-prefixed forms as distribution, positive introspection, and necessitation for a separate base whose theorems pass to 𝓢. This is an abstract presentation, not a necessitation requirement on every theorem of T."
+      }
+    ],
+    "summary": "As a proof schema, the TARGET preserves both the sentence-by-sentence upper-bound hypothesis and the conclusion T ⊢ B¬B Con q, using boxed rather than plain correctness. It does not itself supply the arithmetical interpretation or the fixed point needed to recover the concrete theorem."
+  }
+}

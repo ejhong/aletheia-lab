@@ -10,6 +10,7 @@ Planted wrong items ("decoys") are mixed in to measure whether the checker catch
     python3 run.py --vendor openai         # run all items for one vendor (resumes; skips finished items)
     python3 run.py --report                # write REPORT.md from out/
     python3 run.py --stage 2a ...          # the same commands for Stage 2A (Statement2.lean, items2a.json, out2a/)
+    python3 run.py --stage 2r ...          # and for Amendment 3 (Statement3.lean, items2r.json, out2r/)
 
 Keys come from the environment: OPENAI_API_KEY, GEMINI_API_KEY, XAI_API_KEY.
 """
@@ -67,6 +68,25 @@ def use_stage_2a():
     ORDER = ["DEF-E", "S2a", "X5", "DEF-F", "S2c", "DEF-G", "X6", "S2a2", "S2e", "S2b", "X4", "S2d", "X7", "S2b2"]
     DEFS = ["ClosedUnderNecessitation", "KnowledgeClosedUnderMP", "Factive", "KnowsOwnFactivity", "HasGödelSentence"]
     PREAMBLE = next(line for line in STATEMENT.read_text().splitlines() if line.startswith("variable ")) + "\n"
+
+
+def use_stage_2r():
+    """Amendment 3: statements added after reading Reinhardt (1985), plus two locked Stage 2A statements compared
+    again with his text. Definitions come from Statement2.lean and the new file together."""
+    global STATEMENT, OUT, ITEMS, NOTATION, REPORT, REPORT_HEAD, ORDER, DEFS, PREAMBLE
+    s2 = HERE.parent / "lean" / "GodelArgument" / "Statement2.lean"
+    s3 = HERE.parent / "lean" / "GodelArgument" / "Statement3.lean"
+    if not s3.exists():
+        s3 = HERE / "Statement3.draft.lean"
+    STATEMENT = [s2, s3]
+    OUT, ITEMS, NOTATION, REPORT = HERE / "out2r", HERE / "items2r.json", HERE / "notation2a.md", HERE / "REPORT-2R.md"
+    REPORT_HEAD = ["Amendment 3. Written by `run.py --stage 2r --report` from the raw outputs in `out2r/`. Verdicts",
+                   "are the checkers' own. S2aR and S2dR are the locked Stage 2A statements `ReinhardtTheorem3` and",
+                   "`NoKnownSelfDiagonal`, translated blind again and compared with Reinhardt's own text."]
+    ORDER = ["DEF-H", "S2f", "X9", "S2aR", "S2g", "X8", "S2dR"]
+    DEFS = ["ClosedUnderNecessitation", "KnowledgeClosedUnderMP", "Factive", "KnowsOwnFactivity", "HasGödelSentence",
+            "KnowledgeSelfReflective"]
+    PREAMBLE = next(line for line in s2.read_text().splitlines() if line.startswith("variable ")) + "\n"
 
 
 PROMPT_A = """You are checking a formalization in Lean 4. Below are a notation key, some definitions, and one TARGET. \
@@ -143,12 +163,15 @@ def strip_comments(code):
 
 def lean_blocks():
     """Map each declared name in Statement.lean to its declaration text (docstring removed)."""
-    text = STATEMENT.read_text()
-    body = text[text.index("namespace GodelArgument"):text.index("end GodelArgument")]
+    files = STATEMENT if isinstance(STATEMENT, list) else [STATEMENT]
+    body = ""
+    for f in files:
+        text = f.read_text()
+        body += text[text.index("namespace GodelArgument"):text.index("end GodelArgument")] + "\n"
     blocks = {}
     for chunk in re.split(r"\n(?=/--)", body):
         code = strip_comments(chunk)
-        code = "\n".join(line for line in code.splitlines() if line.strip() not in ("end", "section") and not line.startswith("open ")) + "\n"
+        code = "\n".join(line for line in code.splitlines() if line.strip() not in ("end", "section") and not line.startswith(("open ", "namespace ", "variable "))) + "\n"
         m = re.search(r"^(?:noncomputable )?(?:def|abbrev) (\w+)", code, flags=re.M)
         if m:
             blocks[m.group(1)] = code[m.start():]
@@ -349,6 +372,9 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     if args[:2] == ["--stage", "2a"]:
         use_stage_2a()
+        args = args[2:]
+    elif args[:2] == ["--stage", "2r"]:
+        use_stage_2r()
         args = args[2:]
     if args == ["--probe"]:
         for v in ("openai", "google", "xai"):
