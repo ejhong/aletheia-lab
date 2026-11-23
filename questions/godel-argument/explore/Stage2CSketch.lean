@@ -27,7 +27,9 @@ example : KnownValiditiesInconsistent := by
   cl_prover [hl, h1, h2, h3, h4]
 
 example : PenroseArgumentUnderDeterminateness := by
-  intro Fm S _ _ _ 𝓢 _ T K D σ S₀ S' G P Q hdt hdk dσ dσG b1 b2 b3 b4 b6 b7
+  intro Fm S _ _ _ 𝓢 _ T K D σ S₀ S' G P Q hdt hdk hdi hdK d2 d5 b1 b2 b3 b4 b6 b7
+  have dσ : 𝓢 ⊢ D σ := by cl_prover [hdi σ S', d2]
+  have dσG : 𝓢 ⊢ D (σ 🡒 G) := by cl_prover [hdK (σ 🡒 G), d5]
   have hTin : 𝓢 ⊢ σ 🡒 T σ := by cl_prover [hdt σ, dσ]
   have l3 : 𝓢 ⊢ σ 🡒 G := by cl_prover [hTin, b1, b2, b3]
   have l5 : 𝓢 ⊢ K (σ 🡒 G) := hdk _ l3 dσG

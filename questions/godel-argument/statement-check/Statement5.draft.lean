@@ -105,15 +105,16 @@ def KnownValiditiesInconsistent : Prop :=
     𝓢 ⊢ (T lam ⋎ T (∼lam)) 🡒 (T lam 🡘 lam) →
     𝓢 ⊢ ⊥
 
-/-- **S4e. With the rules restricted to determinate sentences, the argument goes through if `σ` is
-determinate.** Replace T-In by the truth biconditional for determinate sentences and K-Intro by DK-Intro. If
-the system proves that `σ` and `σ → G` are determinate, then from the same six bridging facts it proves that
-`σ` fails. -/
+/-- **S4e. With the rules restricted to determinate sentences, the argument goes through if the two statements
+at which the rules are applied are determinate.** Replace T-In by the truth biconditional for determinate
+sentences and K-Intro by DK-Intro. If the system proves that `σ → S'` and "`σ → G` is known" are determinate,
+then, given the determinateness axioms for conditionals and for knowledge statements and the same six bridging
+facts, it proves that `σ` fails. -/
 def PenroseArgumentUnderDeterminateness : Prop :=
   ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]
     (T K D : Fm → Fm) (σ S₀ S' G P Q : Fm),
-    DeterminateTruth 𝓢 D T → DKIntro 𝓢 D K →
-    𝓢 ⊢ D σ → 𝓢 ⊢ D (σ 🡒 G) →
+    DeterminateTruth 𝓢 D T → DKIntro 𝓢 D K → DeterminateImp 𝓢 D T → DeterminateK 𝓢 D K →
+    𝓢 ⊢ D (σ 🡒 S') → 𝓢 ⊢ D (K (σ 🡒 G)) →
     𝓢 ⊢ σ 🡒 S₀ →
     𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →
     𝓢 ⊢ S' 🡒 G →

@@ -1,0 +1,39 @@
+{
+  "id": "S4b",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T06:18:58Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T : Fm → Fm),\n    Def1 𝓢 T → Def2 𝓢 T → (∃ lam, 𝓢 ⊢ lam 🡘 ∼T lam) → 𝓢 ⊢ ⊥\n",
+  "usage": [
+    [
+      1685,
+      1834
+    ],
+    [
+      2855,
+      30766
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"`Target` is the proposition asserting that for every type `Fm` of sentences equipped with logical connectives (`🡒`, `⋏`, `⋎`, `∼`) and logical constants (`⊤`, `⊥`), every type `S` of proof systems equipped with a provability relation `⊢` on `Fm`, every proof system `𝓢 : S` that proves all classical propositional tautologies in these connectives and is closed under modus ponens, and every function `T : Fm → Fm`: if (1) for every sentence `φ : Fm`, `𝓢 ⊢ φ 🡒 T φ` (`Def1 𝓢 T`), (2) for every sentence `φ : Fm`, `𝓢 ⊢ T φ 🡒 φ` (`Def2 𝓢 T`), and (3) there exists a sentence `lam : Fm` such that `𝓢 ⊢ lam 🡘 ∼(T lam)` (i.e., `𝓢` proves `(lam 🡒 ∼(T lam)) ⋏ (∼(T lam) 🡒 lam)`), then `𝓢 ⊢ ⊥` (`𝓢` proves falsehood). Nothing else is assumed about `Fm`, `𝓢`, or `T` (in particular, `T` is an arbitrary function from sentences to sentences, `𝓢` is not assumed consistent, and none of the other definitions `Def3`–`Def8` are invoked).\"}\n```",
+  "translation": "`Target` is the proposition asserting that for every type `Fm` of sentences equipped with logical connectives (`🡒`, `⋏`, `⋎`, `∼`) and logical constants (`⊤`, `⊥`), every type `S` of proof systems equipped with a provability relation `⊢` on `Fm`, every proof system `𝓢 : S` that proves all classical propositional tautologies in these connectives and is closed under modus ponens, and every function `T : Fm → Fm`: if (1) for every sentence `φ : Fm`, `𝓢 ⊢ φ 🡒 T φ` (`Def1 𝓢 T`), (2) for every sentence `φ : Fm`, `𝓢 ⊢ T φ 🡒 φ` (`Def2 𝓢 T`), and (3) there exists a sentence `lam : Fm` such that `𝓢 ⊢ lam 🡘 ∼(T lam)` (i.e., `𝓢` proves `(lam 🡒 ∼(T lam)) ⋏ (∼(T lam) 🡒 lam)`), then `𝓢 ⊢ ⊥` (`𝓢` proves falsehood). Nothing else is assumed about `Fm`, `𝓢`, or `T` (in particular, `T` is an arbitrary function from sentences to sentences, `𝓢` is not assumed consistent, and none of the other definitions `Def3`–`Def8` are invoked).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source concerns adding principles to the concrete first-order theory DTK (which includes arithmetic, Gödel coding, quantifiers, a provable T-Out schema via Lemma 7.14.4, and a liar sentence via the diagonal lemma). Target instead quantifies over an arbitrary abstract classical propositional system 𝓢 and arbitrary function T : Fm → Fm, omits the construction of an extended system DTK + T-In, and assumes T-Out (Def2 𝓢 T) and the existence of a liar sentence (∃ lam, 𝓢 ⊢ lam 🡘 ∼T lam) as hypotheses (an idealization declared in the author's setting).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source states that adding both 'T-In' and 'K-Intro' to DTK yields an inconsistent system, whereas Target omits 'K-Intro' (and does not mention K or D at all), showing that 'T-In' alone suffices for inconsistency. Relative to adding both principles, this is a harmless strengthening (and is explicitly noted by the author).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source repeatedly refers to 'T-In' alongside 'K-Intro' as a 'rule' without writing out its formal definition, while writing '(T Out)' in Lemma 7.14.4 as the object-language implication T(φ) → φ. Target formalizes 'T-In' via Def1 as the object-language implication schema ∀ φ, 𝓢 ⊢ φ 🡒 T φ rather than the weaker proof rule ∀ φ, 𝓢 ⊢ φ → 𝓢 ⊢ T φ (which is used for 'K-Intro' in Def3). If the source intends 'T-In' as a proof rule, Def1 strengthens a hypothesis and weakens the theorem, although 𝓢 ⊢ ⊥ remains provable from the weaker rule as well.\"\n    }\n  ],\n  \"summary\": \"Within its declared abstract propositional setting, Target faithfully captures the logical core of the inconsistency from adding 'T-In' to a system with 'T-Out' and a liar sentence. The main caveats are the abstraction away from DTK and arithmetic, the omission of 'K-Intro' (a harmless strengthening relative to adding both), and the formalization of 'T-In' as an implication schema rather than a proof rule.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The source concerns adding principles to the concrete first-order theory DTK (which includes arithmetic, Gödel coding, quantifiers, a provable T-Out schema via Lemma 7.14.4, and a liar sentence via the diagonal lemma). Target instead quantifies over an arbitrary abstract classical propositional system 𝓢 and arbitrary function T : Fm → Fm, omits the construction of an extended system DTK + T-In, and assumes T-Out (Def2 𝓢 T) and the existence of a liar sentence (∃ lam, 𝓢 ⊢ lam 🡘 ∼T lam) as hypotheses (an idealization declared in the author's setting)."
+      },
+      {
+        "severity": "minor",
+        "description": "The source states that adding both 'T-In' and 'K-Intro' to DTK yields an inconsistent system, whereas Target omits 'K-Intro' (and does not mention K or D at all), showing that 'T-In' alone suffices for inconsistency. Relative to adding both principles, this is a harmless strengthening (and is explicitly noted by the author)."
+      },
+      {
+        "severity": "minor",
+        "description": "The source repeatedly refers to 'T-In' alongside 'K-Intro' as a 'rule' without writing out its formal definition, while writing '(T Out)' in Lemma 7.14.4 as the object-language implication T(φ) → φ. Target formalizes 'T-In' via Def1 as the object-language implication schema ∀ φ, 𝓢 ⊢ φ 🡒 T φ rather than the weaker proof rule ∀ φ, 𝓢 ⊢ φ → 𝓢 ⊢ T φ (which is used for 'K-Intro' in Def3). If the source intends 'T-In' as a proof rule, Def1 strengthens a hypothesis and weakens the theorem, although 𝓢 ⊢ ⊥ remains provable from the weaker rule as well."
+      }
+    ],
+    "summary": "Within its declared abstract propositional setting, Target faithfully captures the logical core of the inconsistency from adding 'T-In' to a system with 'T-Out' and a liar sentence. The main caveats are the abstraction away from DTK and arithmetic, the omission of 'K-Intro' (a harmless strengthening relative to adding both), and the formalization of 'T-In' as an implication schema rather than a proof rule."
+  }
+}

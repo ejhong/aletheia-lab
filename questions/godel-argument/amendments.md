@@ -435,3 +435,28 @@ not prove.
 **My expectation before the run.** S4a to S4d: caveats. S4e and S4f: caveats, perhaps `divergent` on S4f because
 Theorem 7 is unconditional and S4f is conditional. S4g is judged against my own claim.
 
+**Budget (2026-11-23).** While the check was running Eugene wrote: "you can go beyond 50". The question's budget is
+no longer capped at $50. I will not take it past $70 without asking again.
+
+**Check of tier 2C, round 1 (2026-11-23), and what changed.** Frozen under `statement-check/round1-2c/`. Cost
+$4.51.
+
+- Planted errors: both checkers caught all three.
+- D20–D27, S4a, S4b, S4d, S4f: `faithful_with_caveats` from both. S4g: `faithful` from both (judged against the
+  lab's own claim). S4f was not rated divergent, contrary to my expectation.
+- S4c: Google `faithful_with_caveats`; OpenAI `divergent`. Its point: the source says that adding both T-In and
+  K-Intro gives inconsistency; the Lean says K-Intro alone does, which is stronger than the source's remark.
+- S4e: both `divergent`. The source names the statements whose determinateness matters as "K = F_e → F_e+ ⊆ T"
+  and "K(K = F_e → G(F_e+))"; the draft assumed instead that σ and σ → G are determinate. Google added that the
+  source asserts a necessary condition and the draft a sufficient one.
+
+Responses.
+
+- S4c: kept, and the divergence is carried into the results. The Lean is stronger than the remark it supports;
+  the remark follows from it. It is reported as the lab's strengthening, not as Koellner's statement.
+- S4e: accepted on the first point. Its two determinateness premises are now the two statements the source
+  names, and axioms D4 and D7 are added as hypotheses to get from them to what the rules need. On the second
+  point: the Lean does state a sufficient condition, and that is intended. "Legitimate only if" is a remark about
+  which rule applications DTK licenses, which this setting cannot state. S4e is now claimed as the lab's
+  complement to the passage, and S4f is the piece that bears on indeterminacy. Round 2 re-checks S4e only.
+

@@ -1,0 +1,26 @@
+{
+  "id": "S4g",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:18:04Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K D : Fm → Fm) (σ S₀ S' G P Q : Fm),\n    Def6 𝓢 D T → Def5 𝓢 D K →\n    𝓢 ⊢ D σ → 𝓢 ⊢ D (σ 🡒 G) →\n    𝓢 ⊢ σ 🡒 S₀ →\n    𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →\n    𝓢 ⊢ S' 🡒 G →\n    𝓢 ⊢ S' 🡒 ∼P →\n    𝓢 ⊢ Q 🡒 P →\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼Q)\n",
+  "usage": [
+    [
+      1895,
+      381
+    ],
+    [
+      3135,
+      435
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and provability relation for S on Fm, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every three functions T, K, D from Fm to Fm, and every six sentences σ, S₀, S′, G, P, Q, suppose the following hypotheses hold, in order: (1) for every sentence φ, 𝓢 proves D(φ) 🡒 (T(φ) 🡘 φ); (2) for every sentence φ, if 𝓢 proves φ and 𝓢 proves D(φ), then 𝓢 proves K(φ) (a rule about provability, not an implication that 𝓢 must prove); (3) 𝓢 proves D(σ); (4) 𝓢 proves D(σ 🡒 G); (5) 𝓢 proves σ 🡒 S₀; (6) 𝓢 proves S₀ 🡒 (T(σ) 🡒 S′); (7) 𝓢 proves S′ 🡒 G; (8) 𝓢 proves S′ 🡒 ∼P; and (9) 𝓢 proves Q 🡒 P. Then 𝓢 proves the single conjunction K(σ 🡒 G) ⋏ (σ 🡒 ∼Q). Neither consistency of 𝓢 nor provability of σ is assumed, and no rule taking provability of φ alone to provability of K(φ) is required.\"}",
+  "translation": "Target is defined to be the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and provability relation for S on Fm, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every three functions T, K, D from Fm to Fm, and every six sentences σ, S₀, S′, G, P, Q, suppose the following hypotheses hold, in order: (1) for every sentence φ, 𝓢 proves D(φ) 🡒 (T(φ) 🡘 φ); (2) for every sentence φ, if 𝓢 proves φ and 𝓢 proves D(φ), then 𝓢 proves K(φ) (a rule about provability, not an implication that 𝓢 must prove); (3) 𝓢 proves D(σ); (4) 𝓢 proves D(σ 🡒 G); (5) 𝓢 proves σ 🡒 S₀; (6) 𝓢 proves S₀ 🡒 (T(σ) 🡒 S′); (7) 𝓢 proves S′ 🡒 G; (8) 𝓢 proves S′ 🡒 ∼P; and (9) 𝓢 proves Q 🡒 P. Then 𝓢 proves the single conjunction K(σ 🡒 G) ⋏ (σ 🡒 ∼Q). Neither consistency of 𝓢 nor provability of σ is assumed, and no rule taking provability of φ alone to provability of K(φ) is required.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The target retains the stated determinacy and proof hypotheses without assuming the final bridge from knowledge to provability in F_e. In the classical system 𝓢, proving the concluding conjunction is equivalent to proving both claimed results: K(σ → G) and σ → ¬Q, where Q represents “F_e proves σ → G.”\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The target retains the stated determinacy and proof hypotheses without assuming the final bridge from knowledge to provability in F_e. In the classical system 𝓢, proving the concluding conjunction is equivalent to proving both claimed results: K(σ → G) and σ → ¬Q, where Q represents “F_e proves σ → G.”"
+  }
+}
