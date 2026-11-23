@@ -15,7 +15,7 @@ Arguments like these have been disputed for decades, partly because nobody agree
 ## What the studies add up to
 
 - **Gödel and the mind.** Checked by machine. Penrose's modest conclusion is proved. His proof of the stronger one, that the mind is no machine at all, does not hold up. The stronger conclusion itself is neither proved nor refuted, and nothing in the check touches his physics.
-- **The unfolding argument.** Being checked now, in the same way.
+- **The unfolding argument.** Checked by machine. A system with feedback loops does have a loop-free copy that behaves the same, but only for an experiment of fixed length, and the copy needs one more part for every further step. The swap the other way, bolting an idle loop onto a system, lasts forever. So the argument reaches a theory on which loops are enough for consciousness however long one watches, and a theory on which loops are only needed for experiments of fixed length. In both forms it rests on one assumption: that behaviour is the only evidence there is about consciousness.
 
 Two further questions wait their turn: a standing watch on whether machines come to do what Penrose said they could not, and a test of the physical side of his theory, that anaesthetics act on the microtubules inside nerve cells.
 
