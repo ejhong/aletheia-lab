@@ -1,0 +1,16 @@
+{
+  "id": "DEF-L3",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T04:59:11Z",
+  "target": "def Def16 (a b : ℕ) : Form := atom 0 a b\n\ndef Def17 : Form := all 0 (iff (K (neg (Def16 0 0))) (Def16 1 0))\n\ndef Def18 : Form := neg (Def16 1 1)\n",
+  "usage": [
+    [
+      1611,
+      2584
+    ]
+  ],
+  "a_raw": "{\"translation\": \"The target introduces three definitions constructing formulas in the formal language `Form`:\\n\\n1. `Def16` takes two natural numbers `a` and `b` and returns the atomic formula `atom 0 a b` (the binary relation symbol indexed by `0` applied to variables `a` and `b`, in that order).\\n\\n2. `Def17` is the specific formula `all 0 (iff (K (neg (Def16 0 0))) (Def16 1 0))`. Unfolding `Def16`, it is the universal quantification over variable `0` of the formal biconditional (`iff`, defined as the formal conjunction of the two formal implications) between: (left-hand side) the modal operator `K` applied to the formal negation (`neg`, i.e., implication to `fls`) of `atom 0 0 0`, and (right-hand side) `atom 0 1 0`. Writing `R₀` for relation `0` and `x₀, x₁` for variables `0` and `1`, this formula is `∀x₀ (K(¬R₀(x₀, x₀)) ↔ R₀(x₁, x₀))`. Variable `0` is bound by the universal quantifier, whereas variable `1` is not quantified and occurs free in `Def17`. Note also that the `K` operator stands outside the negation (`K(¬R₀(x₀, x₀))`) and that the arguments on the right-hand side are in the order `(1, 0)`.\\n\\n3. `Def18` is the specific formula `neg (Def16 1 1)`, i.e., `imp (atom 0 1 1) fls`, or in standard notation `¬R₀(x₁, x₁)`. It contains no quantifiers or modal operators, and variable `1` occurs free in it.\"}",
+  "translation": "The target introduces three definitions constructing formulas in the formal language `Form`:\n\n1. `Def16` takes two natural numbers `a` and `b` and returns the atomic formula `atom 0 a b` (the binary relation symbol indexed by `0` applied to variables `a` and `b`, in that order).\n\n2. `Def17` is the specific formula `all 0 (iff (K (neg (Def16 0 0))) (Def16 1 0))`. Unfolding `Def16`, it is the universal quantification over variable `0` of the formal biconditional (`iff`, defined as the formal conjunction of the two formal implications) between: (left-hand side) the modal operator `K` applied to the formal negation (`neg`, i.e., implication to `fls`) of `atom 0 0 0`, and (right-hand side) `atom 0 1 0`. Writing `R₀` for relation `0` and `x₀, x₁` for variables `0` and `1`, this formula is `∀x₀ (K(¬R₀(x₀, x₀)) ↔ R₀(x₁, x₀))`. Variable `0` is bound by the universal quantifier, whereas variable `1` is not quantified and occurs free in `Def17`. Note also that the `K` operator stands outside the negation (`K(¬R₀(x₀, x₀))`) and that the arguments on the right-hand side are in the order `(1, 0)`.\n\n3. `Def18` is the specific formula `neg (Def16 1 1)`, i.e., `imp (atom 0 1 1) fls`, or in standard notation `¬R₀(x₁, x₁)`. It contains no quantifiers or modal operators, and variable `1` occurs free in it."
+}

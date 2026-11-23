@@ -1,0 +1,16 @@
+{
+  "id": "S3f",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T05:05:57Z",
+  "target": "def Target : Prop := ¬ Def15 ∅ fls\n",
+  "usage": [
+    [
+      1559,
+      277
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the proposition that there is no derivation of the object-language falsity formula `fls` from the empty set of hypotheses. A derivation may still use axioms: each axiom is either a formula obtained from a `Def11` formula by prefixing zero or more universal quantifiers, with no variable free in the resulting formula, or `K` applied to such a closed formula. No hypothesis leaf is available, since no formula belongs to the empty set. The only rule for combining derivations is modus ponens: from derivations of `imp φ ψ` and `φ`, derive `ψ`. The definition names this non-derivability proposition; it does not prove it.\"}",
+  "translation": "Target is defined to be the proposition that there is no derivation of the object-language falsity formula `fls` from the empty set of hypotheses. A derivation may still use axioms: each axiom is either a formula obtained from a `Def11` formula by prefixing zero or more universal quantifiers, with no variable free in the resulting formula, or `K` applied to such a closed formula. No hypothesis leaf is available, since no formula belongs to the empty set. The only rule for combining derivations is modus ponens: from derivations of `imp φ ψ` and `φ`, derive `ψ`. The definition names this non-derivability proposition; it does not prove it."
+}

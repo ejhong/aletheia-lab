@@ -1,0 +1,31 @@
+{
+  "id": "S3c",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:56:23Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def15 T (ex 1 Def17) → Def15 T (ex 1 (and Def18 (neg (K Def18))))\n",
+  "usage": [
+    [
+      1587,
+      417
+    ],
+    [
+      2723,
+      1291
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Write R(a,b) for atom 0 a b, and let x denote variable 1 and y variable 0. Target defines the following proposition: for every set T of formulas, if “there exists x such that for every y, K(¬R(y,y)) if and only if R(x,y)” is derivable from T, then “there exists x such that both ¬R(x,x) and ¬K(¬R(x,x))” is derivable from that same T. In both places, derivability means using Def14 axioms and members of T, with modus ponens as the only inference rule of Def15. No consistency or closure condition is imposed on T, and neither formula is required to be a member of T. The existential quantifiers are internal to the two formulas; the statement does not require exhibiting a witness or using a common witness.\"}",
+  "translation": "Write R(a,b) for atom 0 a b, and let x denote variable 1 and y variable 0. Target defines the following proposition: for every set T of formulas, if “there exists x such that for every y, K(¬R(y,y)) if and only if R(x,y)” is derivable from T, then “there exists x such that both ¬R(x,x) and ¬K(¬R(x,x))” is derivable from that same T. In both places, derivability means using Def14 axioms and members of T, with modus ponens as the only inference rule of Def15. No consistency or closure condition is imposed on T, and neither formula is required to be a member of T. The existential quantifiers are internal to the two formulas; the statement does not require exhibiting a witness or using a common witness.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"As acknowledged, `Def16` fixes U to the binary predicate `atom 0`. The target does not range over compound formulas U(e,x), even within the fragment, and the fragment cannot express Reinhardt’s arithmetical instances.\"\n    }\n  ],\n  \"summary\": \"For the stated instance, the implication is exact: derivability of a) with p(x) = ¬U(x,x) implies derivability from the same T of b) with q(e) = ¬U(e,e).\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "As acknowledged, `Def16` fixes U to the binary predicate `atom 0`. The target does not range over compound formulas U(e,x), even within the fragment, and the fragment cannot express Reinhardt’s arithmetical instances."
+      }
+    ],
+    "summary": "For the stated instance, the implication is exact: derivability of a) with p(x) = ¬U(x,x) implies derivability from the same T of b) with q(e) = ¬U(e,e)."
+  }
+}

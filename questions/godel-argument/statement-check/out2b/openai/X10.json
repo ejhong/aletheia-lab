@@ -1,0 +1,31 @@
+{
+  "id": "X10",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:56:41Z",
+  "target": "def Target : Prop := ∀ T : Set Form, Def15 T (neg (ex 1 Def17))\n",
+  "usage": [
+    [
+      1569,
+      561
+    ],
+    [
+      2539,
+      1117
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every set T of formulas, with no restriction on T (so T may be empty), the formula ¬∃x₁ ∀x₀ (K(¬R₀(x₀,x₀)) ↔ R₀(x₁,x₀)) is derivable from T in Def15. Here R₀(a,b) denotes atom 0 a b, and the negation, quantifiers, and biconditional are part of the formula to be derived. A derivation may use members of T and the Def14 axioms, with modus ponens as its only inference rule; it is not required to use any member of T. The Def14 axioms are the closed formulas obtained by prefixing zero or more universal quantifiers to a Def11 formula, together with K applied to any such closed formula.\"}",
+  "translation": "Target is the proposition that for every set T of formulas, with no restriction on T (so T may be empty), the formula ¬∃x₁ ∀x₀ (K(¬R₀(x₀,x₀)) ↔ R₀(x₁,x₀)) is derivable from T in Def15. Here R₀(a,b) denotes atom 0 a b, and the negation, quantifiers, and biconditional are part of the formula to be derived. A derivation may use members of T and the Def14 axioms, with modus ponens as its only inference rule; it is not required to use any member of T. The Def14 axioms are the closed formulas obtained by prefixing zero or more universal quantifiers to a Def11 formula, together with K applied to any such closed formula.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The target omits the K immediately after ∃e. It refutes ∃e ∀x (K¬U(x,x) ↔ U(e,x)), whereas Reinhardt refutes ∃e K∀x (K¬U(x,x) ↔ U(e,x)). By correctness of K, the known universal implies the universal itself, so the target refutes a weaker assumption and thus makes a stronger claim. The unboxed universal does not supply the known biconditional used in the proof.\"\n    }\n  ],\n  \"summary\": \"Within the stated fragment, `Def17` has the correct diagonal instance and variable bindings. To match the source, the formula derived from each theory must be `neg (ex 1 (K Def17))`.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The target omits the K immediately after ∃e. It refutes ∃e ∀x (K¬U(x,x) ↔ U(e,x)), whereas Reinhardt refutes ∃e K∀x (K¬U(x,x) ↔ U(e,x)). By correctness of K, the known universal implies the universal itself, so the target refutes a weaker assumption and thus makes a stronger claim. The unboxed universal does not supply the known biconditional used in the proof."
+      }
+    ],
+    "summary": "Within the stated fragment, `Def17` has the correct diagonal instance and variable bindings. To match the source, the formula derived from each theory must be `neg (ex 1 (K Def17))`."
+  }
+}

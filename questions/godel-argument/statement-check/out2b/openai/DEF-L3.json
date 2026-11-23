@@ -1,0 +1,16 @@
+{
+  "id": "DEF-L3",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:56:31Z",
+  "target": "def Def16 (a b : ℕ) : Form := atom 0 a b\n\ndef Def17 : Form := all 0 (iff (K (neg (Def16 0 0))) (Def16 1 0))\n\ndef Def18 : Form := neg (Def16 1 1)\n",
+  "usage": [
+    [
+      1545,
+      295
+    ]
+  ],
+  "a_raw": "{\"translation\":\"These are three formula definitions, not assertions, and none has any hypotheses. Write R₀(xᵢ, xⱼ) for the atom with relation label 0 and variable arguments i and j, in that order. Def16 takes any natural number a and then any natural number b, not necessarily distinct, and returns R₀(xₐ, xᵦ). Def17 is the object-language formula “for every x₀, K(¬R₀(x₀, x₀)) if and only if R₀(x₁, x₀).” The quantifier scopes over the entire biconditional; x₁ is free, and K applies only to the negated atom on the left. Def18 is the object-language formula ¬R₀(x₁, x₁), with both occurrences of x₁ free.\"}",
+  "translation": "These are three formula definitions, not assertions, and none has any hypotheses. Write R₀(xᵢ, xⱼ) for the atom with relation label 0 and variable arguments i and j, in that order. Def16 takes any natural number a and then any natural number b, not necessarily distinct, and returns R₀(xₐ, xᵦ). Def17 is the object-language formula “for every x₀, K(¬R₀(x₀, x₀)) if and only if R₀(x₁, x₀).” The quantifier scopes over the entire biconditional; x₁ is free, and K applies only to the negated atom on the left. Def18 is the object-language formula ¬R₀(x₁, x₁), with both occurrences of x₁ free."
+}

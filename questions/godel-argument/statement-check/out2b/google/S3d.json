@@ -1,0 +1,39 @@
+{
+  "id": "S3d",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T04:59:44Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def15 T (ex 1 Def17) → Def15 T (ex 1 (and (neg (K Def18)) (neg (K (neg Def18)))))\n",
+  "usage": [
+    [
+      1666,
+      5436
+    ],
+    [
+      3143,
+      15871
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is a proposition about a first-order modal language whose formulas are built from binary atomic formulas R_r(a, b) (with relation index r : ℕ and variables a, b : ℕ), falsum, implication, universal quantification over natural-number variables, and a unary modal operator K (with negation ¬φ defined as φ → ⊥, conjunction φ ∧ ψ as ¬(φ → ¬ψ), biconditional φ ↔ ψ as (φ → ψ) ∧ (ψ → φ), and existential quantification ∃x φ as ¬∀x ¬φ). Derivability of a formula φ from a set of formulas T (written Def15 T φ) is defined inductively by three rules: (1) any formula in T is derivable; (2) any axiom in Def14 is derivable, where Def14 consists of every closed formula (having no free variables) obtained by prefixing zero or more universal quantifiers to a base axiom, together with K ψ for every such closed generalized base axiom ψ, and the base axioms are: all propositional tautologies (formulas true under every truth assignment respecting falsum and implication), universal instantiation ∀x φ → φ[y/x] whenever substituting y for free occurrences of x in φ captures no variable, universal distribution ∀x (φ → ψ) → (∀x φ → ∀x ψ), vacuous generalization φ → ∀x φ when x is not free in φ, K(φ → ψ) → (K φ → K ψ), K φ → φ, K φ → K(K φ), and K(∀x φ) → ∀x (K φ); and (3) modus ponens (from φ → ψ and φ, derive ψ). Note that generalization and necessitation are not primitive rules of derivability from T, and Def14 applies K at most once to closed universal generalizations of base axioms. Target asserts that for every set of formulas T (with no conditions such as consistency or being closed formulas imposed on T), if the sentence ∃x₁ ∀x₀ (K(¬R₀(x₀, x₀)) ↔ R₀(x₁, x₀)) (with variables 1 and 0 and relation index 0) is derivable from T, then the sentence ∃x₁ (¬K(¬R₀(x₁, x₁)) ∧ ¬K(¬¬R₀(x₁, x₁))) is also derivable from T.\"}",
+  "translation": "Target is a proposition about a first-order modal language whose formulas are built from binary atomic formulas R_r(a, b) (with relation index r : ℕ and variables a, b : ℕ), falsum, implication, universal quantification over natural-number variables, and a unary modal operator K (with negation ¬φ defined as φ → ⊥, conjunction φ ∧ ψ as ¬(φ → ¬ψ), biconditional φ ↔ ψ as (φ → ψ) ∧ (ψ → φ), and existential quantification ∃x φ as ¬∀x ¬φ). Derivability of a formula φ from a set of formulas T (written Def15 T φ) is defined inductively by three rules: (1) any formula in T is derivable; (2) any axiom in Def14 is derivable, where Def14 consists of every closed formula (having no free variables) obtained by prefixing zero or more universal quantifiers to a base axiom, together with K ψ for every such closed generalized base axiom ψ, and the base axioms are: all propositional tautologies (formulas true under every truth assignment respecting falsum and implication), universal instantiation ∀x φ → φ[y/x] whenever substituting y for free occurrences of x in φ captures no variable, universal distribution ∀x (φ → ψ) → (∀x φ → ∀x ψ), vacuous generalization φ → ∀x φ when x is not free in φ, K(φ → ψ) → (K φ → K ψ), K φ → φ, K φ → K(K φ), and K(∀x φ) → ∀x (K φ); and (3) modus ponens (from φ → ψ and φ, derive ψ). Note that generalization and necessitation are not primitive rules of derivability from T, and Def14 applies K at most once to closed universal generalizations of base axioms. Target asserts that for every set of formulas T (with no conditions such as consistency or being closed formulas imposed on T), if the sentence ∃x₁ ∀x₀ (K(¬R₀(x₀, x₀)) ↔ R₀(x₁, x₀)) (with variables 1 and 0 and relation index 0) is derivable from T, then the sentence ∃x₁ (¬K(¬R₀(x₁, x₁)) ∧ ¬K(¬¬R₀(x₁, x₁))) is also derivable from T.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Theorem 3 in the source states the result for any formula U(e, x) with two free variables e, x, whereas Target fixes U to a single atomic binary predicate (Def16 a b := atom 0 a b) rather than quantifying over arbitrary formulas with two free variables (or even arbitrary relation indices). Because the derivation from a) to c) is purely schematic and never relies on U being atomic, this is a standard idealization/weakening.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target takes as its hypothesis only the single instance p(x) = ¬U(x, x) of thesis a) (ex 1 Def17), rather than the full schema quantified over all one-variable formulas p(x). This is a harmless strengthening (weakening of the antecedent) that reflects the proof's specialization and the claim's qualification 'for the same instance'.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target quantifies over arbitrary sets of formulas T : Set Form without restricting T to sets of sentences. Since Def15 has only modus ponens as a rule of inference, this is a harmless generalization.\"\n    }\n  ],\n  \"summary\": \"Subject to the separately declared restriction to a pure first-order modal fragment without arithmetic or equality, Target faithfully captures the passage from the diagonal instance of thesis a) to conclusion c) in the proof of Reinhardt's Theorem 3, with only minor caveats (fixing U(e, x) to a single atomic binary predicate, assuming only the needed instance of schema a), and allowing arbitrary sets of formulas T).\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Theorem 3 in the source states the result for any formula U(e, x) with two free variables e, x, whereas Target fixes U to a single atomic binary predicate (Def16 a b := atom 0 a b) rather than quantifying over arbitrary formulas with two free variables (or even arbitrary relation indices). Because the derivation from a) to c) is purely schematic and never relies on U being atomic, this is a standard idealization/weakening."
+      },
+      {
+        "severity": "minor",
+        "description": "Target takes as its hypothesis only the single instance p(x) = ¬U(x, x) of thesis a) (ex 1 Def17), rather than the full schema quantified over all one-variable formulas p(x). This is a harmless strengthening (weakening of the antecedent) that reflects the proof's specialization and the claim's qualification 'for the same instance'."
+      },
+      {
+        "severity": "minor",
+        "description": "Target quantifies over arbitrary sets of formulas T : Set Form without restricting T to sets of sentences. Since Def15 has only modus ponens as a rule of inference, this is a harmless generalization."
+      }
+    ],
+    "summary": "Subject to the separately declared restriction to a pure first-order modal fragment without arithmetic or equality, Target faithfully captures the passage from the diagonal instance of thesis a) to conclusion c) in the proof of Reinhardt's Theorem 3, with only minor caveats (fixing U(e, x) to a single atomic binary predicate, assuming only the needed instance of schema a), and allowing arbitrary sets of formulas T)."
+  }
+}

@@ -356,3 +356,17 @@ such sentence. The trial proofs were redone: every derivation is made from the a
 a sentence, and then carried over to an arbitrary theory. All six still go through. Since the definition of the
 axioms changed, every item is re-checked in round 2.
 
+
+**Round 2 and the state at the lock.** Cost $4.46, plus one OpenAI call whose reply was malformed and was
+discarded (about $0.10, estimated, since its token counts were not logged; the item was run again). Final verdicts
+are in `statement-check/REPORT-2B.md`:
+
+- Planted errors: 3 of 3 caught by both checkers, in both rounds.
+- The seven items compared with passages (the language, the proof system, S3a to S3e): all `faithful` or
+  `faithful_with_caveats` from both checkers. No divergence stands.
+- D19 (abbreviations) and S3f (consistency, the lab's own) have no passage and were translated blind only.
+
+Total for the tier 2B statement check: $9.07 ($2.35 OpenAI, $6.72 Google). Question total: $35.05 of $50.
+
+`statement-check/Statement4.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement4.lean` and is
+locked there. Nothing in tier 2B has been proved for the record before this point.
