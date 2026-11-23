@@ -1,0 +1,15 @@
+{
+  "judges_included": [],
+  "judges_excluded": {
+    "google": "failed competence check (A01/S01 mean rank 10.800 > 2.0)",
+    "openai": "failed competence check (A01/S01 mean rank 6.400 > 2.0)",
+    "xai": "failed competence check (A01/S01 mean rank 7.800 > 2.0)"
+  },
+  "without_scorpion": null,
+  "all8": null,
+  "task_b": null,
+  "labels": {
+    "reproduction": "not testable",
+    "pairing": "not testable"
+  }
+}

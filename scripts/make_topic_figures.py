@@ -240,7 +240,10 @@ def deep_memory():
          "Not found", "No strangers found", "no"),
         (85, "ancient-sky-hole", "The hole in the ancient sky", "The empty southern patch in the classical constellations is centred where the pole stood long before Babylon or Greece.",
          "It is centred where the pole stood for Hipparchus and Ptolemy, who compiled the catalogue. A sky of 3000 BCE fits far worse. But a catalogue's edge dates its last compilers, not the first people to draw the figures.",
-         "Not found", "The hole dates the catalogue, not the constellations", "no")])
+         "Not found", "The hole dates the catalogue, not the constellations", "no"),
+        (92, "gobekli-star-map", "The star map on a pillar", "The animals on Pillar 43 at Göbekli Tepe match constellations so well that chance is ruled out.",
+         "Three vision models, shown the paper's pictures blind, could not match even the scorpion to its constellation, so they could not serve as judges. The paper's odds rest on its authors' own ranking, which nobody else has checked.",
+         "Could not tell", "Blind machine judges were not up to it", "open")])
     (FIG / "topic-deep-memory" / "sky-plate.html").write_text(
         '<figure class="plate"><img src="../../assets/illustrations/ancient-skies.jpg" loading="lazy" width="1536" height="1024" '
         'alt="An engraving of a round chart of the southern sky, crowded with constellation figures around an empty circle at its centre, '
