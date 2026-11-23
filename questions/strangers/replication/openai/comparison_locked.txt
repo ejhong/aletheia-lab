@@ -1,0 +1,27 @@
+PEOPLE: ours 12977, theirs 12977, in both 12977
+  same side: 12977 of 12977; same data type: 12977 of 12977
+  neighbours identical: 12758; different sets: 0; only we give neighbours: 0; only they do: 219
+
+STATISTICS (people in both; a statistic counts where both give a value)
+statistic  compared  agree f4 differs Z differs only ours only theirs
+S             11110   5744       5366        36         0         219
+D1            12249  12249          0         0         0           0
+D2            12249  12249          0         0         0           0
+E_French        473    271        202         0         0           0
+E_Yoruba        473    243        230         0         0           0
+E_Han           473    302        171         0         0           0
+E_Papuan        473    377         96         0         0           0
+G_French        728    446        282         0         0           0
+G_Yoruba        728    425        303         0         0           0
+G_Han           728    489        239         0         0           0
+G_Papuan        728    600        128         0         0           0
+all statistics: 33395 agree of 40412 compared
+
+FIT  ours: {'EHG': 0.3187, 'Han': 0.6669, 'Sardinian': -0.1099, 'Papuan': 0.1387, 'Yoruba': -0.0253} 
+     theirs: {'EHG': 0.3158, 'Han': 0.6649, 'Sardinian': -0.1092, 'Papuan': 0.1421, 'Yoruba': -0.0273}
+
+HITS  ours 179, theirs 183, in both 179
+   only theirs: ('C1197.AG', 'neighbours', 'NA')  our S_Z 4.634 their S_Z 4.70433790344044
+   only theirs: ('C390.AG', 'neighbours', 'NA')  our S_Z 4.623 their S_Z 4.65258033805968
+   only theirs: ('I22199.AG.TW', 'neighbours', 'NA')  our S_Z  their S_Z 5.5551173727964
+   only theirs: ('I24277.AG.TW', 'neighbours', 'NA')  our S_Z  their S_Z 4.76336025137432

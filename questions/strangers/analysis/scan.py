@@ -457,7 +457,7 @@ def final():
         for f in (0.0, 0.05, 0.10, 0.25, 1.0):
             got = []
             for p in pick:
-                if not donors[p["type"]]:
+                if not donors.get(p["type"]):   # no donor of this data type (changed after the lock; see amendments.md)
                     continue
                 x = store.x(p["row"])
                 dn = store.x(int(rng.choice(donors[p["type"]])))

@@ -7,6 +7,7 @@ import csv
 import json
 import pathlib
 import statistics
+import sys
 
 import numpy as np
 
@@ -18,6 +19,13 @@ SIB_LABELS = {"Russia_AltaiKrai_N", "Russia_AltaiKrai_Eneolithic"}
 
 
 def main():
+    global OUT
+    RES = Q / "results"
+    if "corrected" in sys.argv:           # Amendment 2 (revised): work from the corrected run
+        import corrected_run
+        corrected_run.patch()
+        RES = scan.OUT
+        OUT = RES / "amended"
     OUT.mkdir(parents=True, exist_ok=True)
     store, people, refs = scan.Store(), scan.load_people(), scan.load_refs()
     by_gid = {p["gid"]: p for p in people}
@@ -30,11 +38,11 @@ def main():
     else_b = [p for p in people if p["side"] == "elsewhere" and f"{p['row']}.b" in blocks]
     est = np.array([[scan.one(blocks[f"{p['row']}.b"], k, kE)["f4"] for k in range(kE)] for p in else_b])
     u, _ = scan.robust_fit(est[:, 0], est[:, 1:])
-    summary = json.loads((Q / "results" / "summary.json").read_text())
+    summary = json.loads((RES / "summary.json").read_text())
     assert all(abs(float(a) - b) < 1e-4 for a, b in zip(u, summary["fit_coefficients"].values())), "fit differs from the locked run"
 
     # ---- Amendment 1: is each robust hit elsewhere closer to Native Americans than to their Siberian relatives? ----
-    hits = [h for h in csv.DictReader(open(Q / "results" / "hits.tsv"), delimiter="\t") if h["side"] == "elsewhere" and h["robust"] == "True"]
+    hits = [h for h in csv.DictReader(open(RES / "hits.tsv"), delimiter="\t") if h["side"] == "elsewhere" and h["robust"] == "True"]
     sib = [p for p in people if p["group"] in SIB_LABELS]
     na, m = store.freq["NA"], store.freq["Mbuti"]
     persons = sorted({h["genetic_id"] for h in hits})

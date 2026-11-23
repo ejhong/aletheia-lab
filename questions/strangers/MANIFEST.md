@@ -26,3 +26,6 @@ site and neighbours; `analysis/refs.tsv` lists the reference sets. The others ar
 | `analysis/scan.py` | `6b49997987a0b38b0f4b872b76dc5ce031818c61093001f8d627eed7d0a4b2b9` |
 | `analysis/f4lib.py` | `cb9a14aa9b582877a441b87c78d33da609bc9356874de007ef3c328ec7f66255` |
 | `analysis/test_scan.py` | `7d30f31317cb7ea05980ea906c24895d47ca24198db2f9f82c68ab8567cc8265` |
+
+After the lock, one line of `analysis/scan.py` was changed (see `amendments.md`, Amendment 2), so its hash no
+longer matches the one above. The locked version is commit `7e3b0d7`.

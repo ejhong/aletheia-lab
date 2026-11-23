@@ -1,0 +1,23 @@
+PEOPLE: ours 12977, theirs 12977, in both 12977
+  same side: 12977 of 12977; same data type: 12977 of 12977
+  neighbours identical: 12977; different sets: 0; only we give neighbours: 0; only they do: 0
+
+STATISTICS (people in both; a statistic counts where both give a value)
+statistic  compared  agree f4 differs Z differs only ours only theirs
+S             11329  11329          0         0         0           0
+D1            12249  12249          0         0         0           0
+D2            12249  12249          0         0         0           0
+E_French        473    271        202         0         0           0
+E_Yoruba        473    243        230         0         0           0
+E_Han           473    302        171         0         0           0
+E_Papuan        473    377         96         0         0           0
+G_French        728    446        282         0         0           0
+G_Yoruba        728    425        303         0         0           0
+G_Han           728    489        239         0         0           0
+G_Papuan        728    600        128         0         0           0
+all statistics: 38980 agree of 40631 compared
+
+FIT  ours: {'EHG': 0.3158, 'Han': 0.6649, 'Sardinian': -0.1092, 'Papuan': 0.1421, 'Yoruba': -0.0273} 
+     theirs: {'EHG': 0.3158, 'Han': 0.6649, 'Sardinian': -0.1092, 'Papuan': 0.1421, 'Yoruba': -0.0273}
+
+HITS  ours 183, theirs 183, in both 183

@@ -66,6 +66,10 @@ reason. So the whole scan is rerun with neighbours for the "other" type, using t
 This run is the protocol as written; the locked run in `results/` is kept as it was. Amendment 1's test and the
 centre checks are then recomputed on the corrected run.
 
+To make that rerun possible, one line of the locked `scan.py` was changed: in the made-up strangers step, a
+recipient whose data type has no donors is now skipped (as the protocol's wording implies) where the locked code
+stopped with an error. The change cannot affect the locked run, which had no such recipient.
+
 One smaller departure of our code from the protocol is left as it is and reported: for the American-side
 statistics our code uses the SNPs where all four foreign references have data, where the protocol gives each
 statistic its own mask.
