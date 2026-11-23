@@ -1,0 +1,844 @@
+{
+ "largest_20yr_excesses_N20": [
+  {
+   "age": 12190.0,
+   "excess": 25.68,
+   "value": 41.3
+  },
+  {
+   "age": 41610.0,
+   "excess": 25.48,
+   "value": 31.54
+  },
+  {
+   "age": 15370.0,
+   "excess": 22.26,
+   "value": 30.43
+  },
+  {
+   "age": 12770.0,
+   "excess": 20.92,
+   "value": 44.82
+  },
+  {
+   "age": 13870.0,
+   "excess": 19.63,
+   "value": 36.63
+  },
+  {
+   "age": 10830.0,
+   "excess": 16.66,
+   "value": 41.99
+  },
+  {
+   "age": 34230.0,
+   "excess": 15.57,
+   "value": 21.31
+  },
+  {
+   "age": 13130.0,
+   "excess": 15.12,
+   "value": 34.35
+  },
+  {
+   "age": 40070.0,
+   "excess": 13.96,
+   "value": 18.01
+  },
+  {
+   "age": 36550.0,
+   "excess": 13.85,
+   "value": 21.56
+  },
+  {
+   "age": 11390.0,
+   "excess": 13.51,
+   "value": 30.35
+  },
+  {
+   "age": 45550.0,
+   "excess": 13.21,
+   "value": 17.59
+  }
+ ],
+ "largest_20yr_excesses_E20": [
+  {
+   "age": 13850.0,
+   "excess": 43.7,
+   "value": 55.68
+  },
+  {
+   "age": 13050.0,
+   "excess": 27.81,
+   "value": 39.13
+  },
+  {
+   "age": 45970.0,
+   "excess": 24.52,
+   "value": 30.47
+  },
+  {
+   "age": 12190.0,
+   "excess": 17.53,
+   "value": 36.22
+  },
+  {
+   "age": 14150.0,
+   "excess": 17.35,
+   "value": 24.51
+  },
+  {
+   "age": 11390.0,
+   "excess": 16.7,
+   "value": 30.22
+  },
+  {
+   "age": 12750.0,
+   "excess": 15.64,
+   "value": 36.3
+  },
+  {
+   "age": 34730.0,
+   "excess": 15.0,
+   "value": 19.95
+  },
+  {
+   "age": 11050.0,
+   "excess": 14.41,
+   "value": 33.36
+  },
+  {
+   "age": 40310.0,
+   "excess": 13.75,
+   "value": 18.36
+  },
+  {
+   "age": 47250.0,
+   "excess": 12.98,
+   "value": 18.71
+  },
+  {
+   "age": 45550.0,
+   "excess": 12.82,
+   "value": 16.37
+  }
+ ],
+ "largest_20yr_excesses_G20": [
+  {
+   "age": 13875.0,
+   "excess": 25.28,
+   "value": 37.46
+  },
+  {
+   "age": 11755.0,
+   "excess": 16.82,
+   "value": 31.56
+  },
+  {
+   "age": 12775.0,
+   "excess": 16.0,
+   "value": 34.88
+  },
+  {
+   "age": 48495.0,
+   "excess": 15.44,
+   "value": 20.48
+  },
+  {
+   "age": 36715.0,
+   "excess": 15.11,
+   "value": 21.75
+  },
+  {
+   "age": 44775.0,
+   "excess": 13.25,
+   "value": 20.26
+  },
+  {
+   "age": 10795.0,
+   "excess": 12.13,
+   "value": 24.89
+  },
+  {
+   "age": 34495.0,
+   "excess": 10.43,
+   "value": 15.18
+  },
+  {
+   "age": 12235.0,
+   "excess": 9.89,
+   "value": 26.6
+  },
+  {
+   "age": 39195.0,
+   "excess": 9.85,
+   "value": 15.95
+  },
+  {
+   "age": 27975.0,
+   "excess": 9.62,
+   "value": 16.02
+  },
+  {
+   "age": 33895.0,
+   "excess": 8.36,
+   "value": 13.63
+  }
+ ],
+ "top10_in_10300_to_15000": {
+  "N10": 2,
+  "E10": 2,
+  "N20": 6,
+  "E20": 8,
+  "G20": 5,
+  "N60": 2,
+  "E60": 3,
+  "G60": 2
+ },
+ "windows_in_10300_to_15000": {
+  "N10": 16,
+  "E10": 16,
+  "N20": 16,
+  "E20": 16,
+  "G20": 16,
+  "N60": 16,
+  "E60": 16,
+  "G60": 16
+ },
+ "ngrip_layer_cm_per_year": {
+  "12750-12890 (after the onset)": 3.01,
+  "12900-13050 (before the onset)": 4.01,
+  "13650-13950": 4.56,
+  "12150-12450": 2.76,
+  "11400-11700": 5.39
+ },
+ "N20_excess_times_layer_thickness_10300_to_15000": [
+  {
+   "start": 10650.0,
+   "E": 16.7,
+   "E_age": 10830.0,
+   "E_x_layer": 106.8
+  },
+  {
+   "start": 13650.0,
+   "E": 19.6,
+   "E_age": 13870.0,
+   "E_x_layer": 92.2
+  },
+  {
+   "start": 11250.0,
+   "E": 13.5,
+   "E_age": 11390.0,
+   "E_x_layer": 72.7
+  },
+  {
+   "start": 12150.0,
+   "E": 25.7,
+   "E_age": 12190.0,
+   "E_x_layer": 69.2
+  },
+  {
+   "start": 12750.0,
+   "E": 20.9,
+   "E_age": 12770.0,
+   "E_x_layer": 59.5
+  },
+  {
+   "start": 10950.0,
+   "E": 8.9,
+   "E_age": 11170.0,
+   "E_x_layer": 52.2
+  },
+  {
+   "start": 12450.0,
+   "E": 17.9,
+   "E_age": 12690.0,
+   "E_x_layer": 51.7
+  },
+  {
+   "start": 13050.0,
+   "E": 15.1,
+   "E_age": 13130.0,
+   "E_x_layer": 51.1
+  },
+  {
+   "start": 10350.0,
+   "E": 6.6,
+   "E_age": 10390.0,
+   "E_x_layer": 44.4
+  },
+  {
+   "start": 13950.0,
+   "E": 10.1,
+   "E_age": 14070.0,
+   "E_x_layer": 39.3
+  },
+  {
+   "start": 11850.0,
+   "E": 12.7,
+   "E_age": 11990.0,
+   "E_x_layer": 37.5
+  },
+  {
+   "start": 11550.0,
+   "E": 11.2,
+   "E_age": 11730.0,
+   "E_x_layer": 36.5
+  },
+  {
+   "start": 13350.0,
+   "E": 7.0,
+   "E_age": 13490.0,
+   "E_x_layer": 31.5
+  },
+  {
+   "start": 14550.0,
+   "E": 4.2,
+   "E_age": 14630.0,
+   "E_x_layer": 18.9
+  },
+  {
+   "start": 14250.0,
+   "E": 2.7,
+   "E_age": 14410.0,
+   "E_x_layer": 13.2
+  },
+  {
+   "start": 14850.0,
+   "E": 3.2,
+   "E_age": 14870.0,
+   "E_x_layer": 8.3
+  }
+ ],
+ "target_bins_N20": [
+  {
+   "start": 12550.0,
+   "value": 22.44,
+   "excess": 0.0
+  },
+  {
+   "start": 12570.0,
+   "value": 23.7,
+   "excess": 1.26
+  },
+  {
+   "start": 12590.0,
+   "value": 19.8,
+   "excess": -2.64
+  },
+  {
+   "start": 12610.0,
+   "value": 22.94,
+   "excess": 0.0
+  },
+  {
+   "start": 12630.0,
+   "value": 17.72,
+   "excess": -5.22
+  },
+  {
+   "start": 12650.0,
+   "value": 23.32,
+   "excess": 0.38
+  },
+  {
+   "start": 12670.0,
+   "value": 19.8,
+   "excess": -3.52
+  },
+  {
+   "start": 12690.0,
+   "value": 41.6,
+   "excess": 17.9
+  },
+  {
+   "start": 12710.0,
+   "value": 17.4,
+   "excess": -6.5
+  },
+  {
+   "start": 12730.0,
+   "value": 29.94,
+   "excess": 6.04
+  },
+  {
+   "start": 12750.0,
+   "value": 37.18,
+   "excess": 13.29
+  },
+  {
+   "start": 12770.0,
+   "value": 44.82,
+   "excess": 20.92
+  },
+  {
+   "start": 12790.0,
+   "value": 31.06,
+   "excess": 7.17
+  },
+  {
+   "start": 12810.0,
+   "value": 34.84,
+   "excess": 10.94
+  },
+  {
+   "start": 12830.0,
+   "value": 23.9,
+   "excess": 0.0
+  },
+  {
+   "start": 12850.0,
+   "value": 27.85,
+   "excess": 8.43
+  },
+  {
+   "start": 12870.0,
+   "value": 12.49,
+   "excess": -6.92
+  },
+  {
+   "start": 12890.0,
+   "value": 11.4,
+   "excess": -8.01
+  },
+  {
+   "start": 12910.0,
+   "value": 8.65,
+   "excess": -9.39
+  },
+  {
+   "start": 12930.0,
+   "value": 19.42,
+   "excess": 4.72
+  },
+  {
+   "start": 12950.0,
+   "value": 8.47,
+   "excess": -6.22
+  },
+  {
+   "start": 12970.0,
+   "value": 7.78,
+   "excess": -6.92
+  },
+  {
+   "start": 12990.0,
+   "value": 8.95,
+   "excess": -5.74
+  },
+  {
+   "start": 13010.0,
+   "value": 14.69,
+   "excess": 0.0
+  },
+  {
+   "start": 13030.0,
+   "value": 22.71,
+   "excess": 7.27
+  },
+  {
+   "start": 13050.0,
+   "value": 18.04,
+   "excess": 0.0
+  },
+  {
+   "start": 13070.0,
+   "value": 10.42,
+   "excess": -7.96
+  },
+  {
+   "start": 13090.0,
+   "value": 15.44,
+   "excess": -2.94
+  },
+  {
+   "start": 13110.0,
+   "value": 18.83,
+   "excess": 0.0
+  },
+  {
+   "start": 13130.0,
+   "value": 34.35,
+   "excess": 15.12
+  },
+  {
+   "start": 13150.0,
+   "value": 25.18,
+   "excess": 5.94
+  },
+  {
+   "start": 13170.0,
+   "value": 18.38,
+   "excess": -0.85
+  },
+  {
+   "start": 13190.0,
+   "value": 24.48,
+   "excess": 5.65
+  },
+  {
+   "start": 13210.0,
+   "value": 19.23,
+   "excess": 0.4
+  },
+  {
+   "start": 13230.0,
+   "value": 23.12,
+   "excess": 4.29
+  }
+ ],
+ "target_bins_E20": [
+  {
+   "start": 12550.0,
+   "value": 17.86,
+   "excess": -1.64
+  },
+  {
+   "start": 12570.0,
+   "value": 21.0,
+   "excess": 1.08
+  },
+  {
+   "start": 12590.0,
+   "value": 20.55,
+   "excess": 0.63
+  },
+  {
+   "start": 12610.0,
+   "value": 19.92,
+   "excess": -0.63
+  },
+  {
+   "start": 12630.0,
+   "value": 19.49,
+   "excess": -1.16
+  },
+  {
+   "start": 12650.0,
+   "value": 17.48,
+   "excess": -3.17
+  },
+  {
+   "start": 12670.0,
+   "value": 13.79,
+   "excess": -7.21
+  },
+  {
+   "start": 12690.0,
+   "value": 25.92,
+   "excess": 4.92
+  },
+  {
+   "start": 12710.0,
+   "value": 20.65,
+   "excess": -0.35
+  },
+  {
+   "start": 12730.0,
+   "value": 22.19,
+   "excess": 1.53
+  },
+  {
+   "start": 12750.0,
+   "value": 36.3,
+   "excess": 15.64
+  },
+  {
+   "start": 12770.0,
+   "value": 25.99,
+   "excess": 5.34
+  },
+  {
+   "start": 12790.0,
+   "value": 47.72,
+   "excess": 27.06
+  },
+  {
+   "start": 12810.0,
+   "value": 41.09,
+   "excess": 20.43
+  },
+  {
+   "start": 12830.0,
+   "value": 26.61,
+   "excess": 5.95
+  },
+  {
+   "start": 12850.0,
+   "value": 16.33,
+   "excess": -2.09
+  },
+  {
+   "start": 12870.0,
+   "value": 18.42,
+   "excess": 2.09
+  },
+  {
+   "start": 12890.0,
+   "value": 14.48,
+   "excess": -1.85
+  },
+  {
+   "start": 12910.0,
+   "value": 10.29,
+   "excess": -6.04
+  },
+  {
+   "start": 12930.0,
+   "value": 11.32,
+   "excess": -3.16
+  },
+  {
+   "start": 12950.0,
+   "value": 9.81,
+   "excess": -1.51
+  },
+  {
+   "start": 12970.0,
+   "value": 8.57,
+   "excess": -2.75
+  },
+  {
+   "start": 12990.0,
+   "value": 4.78,
+   "excess": -6.54
+  },
+  {
+   "start": 13010.0,
+   "value": 8.92,
+   "excess": -2.4
+  },
+  {
+   "start": 13030.0,
+   "value": 28.35,
+   "excess": 17.03
+  },
+  {
+   "start": 13050.0,
+   "value": 39.13,
+   "excess": 27.81
+  },
+  {
+   "start": 13070.0,
+   "value": 9.4,
+   "excess": -3.67
+  },
+  {
+   "start": 13090.0,
+   "value": 10.32,
+   "excess": -5.12
+  },
+  {
+   "start": 13110.0,
+   "value": 13.07,
+   "excess": -4.66
+  },
+  {
+   "start": 13130.0,
+   "value": 28.8,
+   "excess": 10.77
+  },
+  {
+   "start": 13150.0,
+   "value": 24.36,
+   "excess": 6.33
+  },
+  {
+   "start": 13170.0,
+   "value": 15.44,
+   "excess": -2.59
+  },
+  {
+   "start": 13190.0,
+   "value": 18.03,
+   "excess": 0.0
+  },
+  {
+   "start": 13210.0,
+   "value": 18.7,
+   "excess": 0.97
+  },
+  {
+   "start": 13230.0,
+   "value": 21.77,
+   "excess": 3.74
+  }
+ ],
+ "target_bins_G20": [
+  {
+   "start": 12535.0,
+   "value": 20.79,
+   "excess": 3.26
+  },
+  {
+   "start": 12555.0,
+   "value": 17.17,
+   "excess": -1.1
+  },
+  {
+   "start": 12575.0,
+   "value": 18.92,
+   "excess": 0.64
+  },
+  {
+   "start": 12595.0,
+   "value": 16.25,
+   "excess": -2.03
+  },
+  {
+   "start": 12615.0,
+   "value": 14.06,
+   "excess": -4.78
+  },
+  {
+   "start": 12635.0,
+   "value": 19.3,
+   "excess": 0.42
+  },
+  {
+   "start": 12655.0,
+   "value": 18.88,
+   "excess": -0.04
+  },
+  {
+   "start": 12675.0,
+   "value": 14.98,
+   "excess": -3.94
+  },
+  {
+   "start": 12695.0,
+   "value": 18.28,
+   "excess": -0.6
+  },
+  {
+   "start": 12715.0,
+   "value": 17.65,
+   "excess": -1.26
+  },
+  {
+   "start": 12735.0,
+   "value": 25.95,
+   "excess": 7.07
+  },
+  {
+   "start": 12755.0,
+   "value": 31.03,
+   "excess": 12.15
+  },
+  {
+   "start": 12775.0,
+   "value": 34.88,
+   "excess": 16.0
+  },
+  {
+   "start": 12795.0,
+   "value": 26.02,
+   "excess": 7.75
+  },
+  {
+   "start": 12815.0,
+   "value": 24.89,
+   "excess": 6.9
+  },
+  {
+   "start": 12835.0,
+   "value": 17.99,
+   "excess": 0.0
+  },
+  {
+   "start": 12855.0,
+   "value": 19.72,
+   "excess": 2.06
+  },
+  {
+   "start": 12875.0,
+   "value": 14.46,
+   "excess": 0.0
+  },
+  {
+   "start": 12895.0,
+   "value": 12.47,
+   "excess": -1.99
+  },
+  {
+   "start": 12915.0,
+   "value": 9.15,
+   "excess": -5.3
+  },
+  {
+   "start": 12935.0,
+   "value": 12.03,
+   "excess": -0.44
+  },
+  {
+   "start": 12955.0,
+   "value": 9.82,
+   "excess": -2.2
+  },
+  {
+   "start": 12975.0,
+   "value": 6.66,
+   "excess": -5.36
+  },
+  {
+   "start": 12995.0,
+   "value": 6.35,
+   "excess": -5.68
+  },
+  {
+   "start": 13015.0,
+   "value": 9.3,
+   "excess": -2.73
+  },
+  {
+   "start": 13035.0,
+   "value": 15.52,
+   "excess": 3.49
+  },
+  {
+   "start": 13055.0,
+   "value": 17.25,
+   "excess": 5.22
+  },
+  {
+   "start": 13075.0,
+   "value": 11.38,
+   "excess": -1.12
+  },
+  {
+   "start": 13095.0,
+   "value": 11.88,
+   "excess": -2.04
+  },
+  {
+   "start": 13115.0,
+   "value": 17.23,
+   "excess": 3.31
+  },
+  {
+   "start": 13135.0,
+   "value": 13.92,
+   "excess": -0.2
+  },
+  {
+   "start": 13155.0,
+   "value": 18.36,
+   "excess": 4.24
+  },
+  {
+   "start": 13175.0,
+   "value": 12.5,
+   "excess": -1.62
+  },
+  {
+   "start": 13195.0,
+   "value": 14.12,
+   "excess": 0.2
+  },
+  {
+   "start": 13215.0,
+   "value": 19.66,
+   "excess": 5.74
+  }
+ ]
+}
