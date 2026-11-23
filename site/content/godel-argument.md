@@ -17,7 +17,7 @@ card_alt: A line from Gödel's theorem to "not a machine we can know is sound", 
 
 Gödel showed in 1931 that a consistent formal system strong enough for arithmetic cannot prove its own consistency. Since 1961 the philosopher John Lucas, and later the physicist Roger Penrose, have argued that this sets minds apart from machines: a machine is such a system, a mathematician can see what it cannot prove, so the mathematician is not that machine. Logicians have mostly answered that the argument assumes too much. The dispute has run for sixty years, in prose.
 
-We put it to a proof checker. In Lean 4 every assumption must be written into the statement of a theorem, and a small trusted program rejects any proof that leans on anything else. So the checker can say exactly which assumptions carry which conclusion. Thirty-five statements were fixed in advance, each read by AI models from two other companies, and then proved.
+We put it to a proof checker. In Lean 4 every assumption must be written into the statement of a theorem, and a small trusted program rejects any proof that leans on anything else. So the checker can say exactly which assumptions carry which conclusion. Forty-two statements were fixed in advance, each read by AI models from two other companies, and then proved.
 
 {{figure: godel-argument/verdict}}
 
@@ -50,16 +50,26 @@ Corradini and Galvan worked out what survives in 2022, on paper. We wrote our st
 {{figure: godel-argument/salvage}}
 
 - **The same result, and theirs first.** Their step 7 (2022, p. 490) and our S4g say the same thing of the same sentence. They reached it four years earlier, and the credit for it is theirs.
-- **What they prove and we assume.** The repaired rules apply only to sentences that are definitely true or false. They prove, inside Koellner's system, that the two sentences in question are (Lemmas 1 and 2, pp. 488–490). That is their answer to Koellner and the heart of their paper. Our statement takes both facts as assumptions.
+- **What they prove and we assume.** The repaired rules apply only to sentences that are definitely true or false. They prove, inside Koellner's system, that the two sentences in question are (Lemmas 1 and 2, pp. 488–490). That is their answer to Koellner and the heart of their paper. Our statement takes both facts as assumptions. The second lemma follows from the first by one axiom, and that step is now checked in Lean; the first is not.
 - **What Lean adds.** Their proof is on paper and in places a sketch. Ours is checked by a kernel, but it is of a thinner statement. Nothing here checks their two lemmas.
 - **Why it stops there.** They give the reason we gave. The known sentence contains "is known", so it is not a sentence of arithmetic, and a machine that matches my arithmetic need not prove it (Note 11, p. 491).
-- **One step further.** They also show that Koellner's system derives "no formal system matches everything I know", arithmetic and beyond (step 8, pp. 490–493). But in that system the sentence is itself neither true nor false, so it cannot be asserted as true, and they say so. We have no counterpart to this step.
+- **One step further.** They also show that Koellner's system derives "no formal system matches everything I know", arithmetic and beyond (step 8, pp. 490–493). But in that system the sentence is itself neither true nor false, so it cannot be asserted as true, and they say so. The last inference of that step is now checked in Lean.
+- **What their reading rests on.** Not on that sentence. It rests on the restricted form, their step 8′ (2022, p. 493; Theorem 2 of the 2024 note), where both the assumption and the sentence that is known are definitely true or false. That is the form S4g matches.
 
 They read the result more strongly than we would. A machine may equal the mind in mathematics, they write, but then not in what the mind knows beyond it, and in this sense "the difference between mind and machine is demonstrated" (2024, p. 560). How much weight that carries is a question of philosophy, not of proof.
 
-Their second paper adds a corollary: if a machine proves some arithmetic the mind cannot know, the mind cannot know that machine to be consistent. We have not checked it.
-
 Nothing in their result contradicts Koellner's theorems, as they note themselves (2022, p. 474). So the dispute is smaller than it looks. All sides can agree on what the repaired argument proves, and differ on how much it matters.
+
+### A corollary that does not hold as printed
+
+Their second paper adds a corollary (2024, p. 562): if a machine proves some arithmetic the mind does not know, the mind cannot know that machine to be consistent. Its proof uses the step "consistency implies soundness": a machine that never contradicts itself proves only truths. That step is false, and on the most natural reading the corollary falls with it.
+
+- **The counterexample.** Take Peano arithmetic and add the sentence "Peano arithmetic is inconsistent". By Gödel's theorem the result never contradicts itself. Yet it proves a false sentence, the one that was added. No sound mind knows that sentence, since it is false. But a sound mind, itself a machine, can know that this system is consistent.
+- **Where the proof goes wrong.** At that one step and nowhere else. For any sentence for which consistency does guarantee truth, their proof goes through. The simplest statements of arithmetic are of that kind; that is a textbook fact we did not re-prove.
+- **What does hold.** If all the arithmetic the mind knows is provable by the machine, the mind cannot know the machine consistent. And if the machine is in fact consistent, the mind cannot know it inconsistent either. This is close to results of the earlier stages and is not new.
+- **Limits.** These are proofs about arithmetic, and about minds taken as sets of sentences. They do not show that Koellner's system itself refutes the corollary; that would need the system built. The authors' prose speaks of a machine that "surpasses" the mind, so they may have meant a stronger hypothesis than they printed. We have not contacted them.
+
+An outside review of this page by a Google model, in a chat Eugene shared, proposed the same counterexample without having been told of our doubt. Two models agreeing is not a check. The check is the proof.
 
 ## The first argument
 
@@ -72,6 +82,7 @@ Model an idealized mind as the set of arithmetic statements it would ever accept
 - **Supplying that knowledge gives another machine.** Add the consistency statement and you have a second sound machine, with a Gödel sentence of its own. This is the reply Lucas anticipated in 1961.
 - **Asserting your own soundness is contradictory for anyone.** Any system that can talk about its own beliefs in the standard way and asserts that they are all true is inconsistent, machine or not. This is David Chalmers's criticism of 1995, and it holds.
 - **Gödel's own conclusion holds.** If everything a mind accepts is true, then either no formal system generates it, or some true statement of a simple kind is left undecided by it. Gödel claimed this either/or, and no more.
+- **The assumptions do not decide the matter.** Everything this section assumes of a mind is true of one mind that is a machine, Peano arithmetic, and of one that is not, the set of all arithmetic truths. So nothing follows from those assumptions alone about which kind we are.
 
 Penrose is careful about this himself. On page 76 of *Shadows of the Mind* he states the modest conclusion as proved, and calls the claim that thought is non-computational "the stronger deduction", to be argued for separately.
 
@@ -125,7 +136,7 @@ The case that the mind *is* a machine does not come from logic at all. It comes 
 ## How it was checked
 
 - **Statements first.** Each claim was written as a formal statement before any proof existed, and tied to the page of the source it formalizes.
-- **Two outside AIs read every statement.** Models from OpenAI and Google translated each one back into English without seeing our explanation, then compared it with the source passage. Deliberately wrong statements were mixed in to test them. In the final rounds both caught all fifteen.
+- **Two outside AIs read every statement.** Models from OpenAI and Google translated each one back into English without seeing our explanation, then compared it with the source passage. Deliberately wrong statements were mixed in to test them. In the final rounds both caught all eighteen.
 - **Their objections changed the statements.** More than a dozen were rewritten before being locked, and four disagreements that could not be resolved are reported with the results.
 - **Then the lock.** The statement files were hashed and committed before the proofs. A proof can change freely; it cannot quietly prove something else.
 - **Then the proofs.** Lean's kernel checked each one. The build fails if any theorem uses `sorry` or any assumption beyond Lean's three standard axioms, and for each result there is a proof that its assumptions can hold together.
@@ -145,6 +156,7 @@ The theorem was then stated as he states it, checked, and proved. The plan had s
 - **Whether Penrose would accept the eight steps** as his argument. A reconstruction was checked, not his wording.
 - **Whether another theory of truth would save the argument.** One was used, Solomon Feferman's. Koellner argues that others would not help; that was not checked.
 - **The two central theorems of Koellner's analysis** are quoted, not re-proved. Checking them means building his whole system in Lean, which was not done.
+- **Whether Koellner's system refutes that corollary.** Our counterexample is about arithmetic and about minds as sets of sentences. Carrying it into his system needs the system built.
 - **Whether Corradini and Galvan's lemmas hold.** Their answer to Koellner rests on two lemmas proved on paper inside his system. We have read them and not machine-checked them, and our own statement assumes what they prove.
 - **Whether the whole picture is fair to Penrose.** The outside AIs checked each statement against a passage. They were not asked whether a fixed set of accepted sentences, closed under logic, is the right picture of mathematical understanding, which grows and corrects itself. Planted errors test for slips inside a framework, not for the choice of framework.
 - **Anything about physics.** Penrose's proposal that quantum gravity is non-computable, and the Orch OR theory built on it, stand or fall on evidence of another kind.
@@ -181,7 +193,7 @@ Thin wrappers: Foundation already proves the underlying theorems (their names ar
 
 ### Stage 2 · Epistemic arithmetic
 Status: done
-Condition: Eugene approved it on 23 November 2026. All three tiers are done, for $27.56 in statement checks.
+Condition: Eugene approved it on 23 November 2026. All four tiers are done, for $32.25 in statement checks.
 Gate: Each tier gets its own statement check, entered through `amendments.md` before anything in it is proved.
 
 This is where the new work is: theories in which the knower K is an operator with its own axioms (K1–K4), as in Reinhardt's epistemic arithmetic. The targets, as stated in Koellner (2018, Part I), are Reinhardt's Theorem 3 (p. 354), Theorem 5 (p. 355) and Theorem 6 (p. 357). Theorems 7 and 8, consistency results by Reinhardt and by Carlson, are cited, not proved. Statements are to be taken from Reinhardt's own papers, since Koellner's summary is informal in places.
@@ -189,6 +201,7 @@ This is where the new work is: theories in which the knower K is an operator wit
 - [x] **2A, small.** Done 23 November. An abstract layer: K is an operator on sentences, and each principle about it is a stated assumption. Nine statements locked after statement checks, then proved: Reinhardt's theorem that a knower exceeds any system it knows to be sound; his absolute version of the second incompleteness theorem; a sentence-by-sentence counterpart of his result that knowing which system you are is contradictory, with the core of his own proof; and two results showing which assumptions cannot be dropped. Seven were locked before Reinhardt's 1985 paper was in hand. It arrived the same day, corrected one of them, and two more were added from it.
 - [x] **2B.** Done 23 November, on a smaller scope than first planned. Reinhardt's paper shows that his two central theorems need no arithmetic. So this tier builds a real formal language with the knowledge operator and quantifiers, with his proof system, and proves those two theorems in it: knowing which set you are is refuted, and being some set gives a truth you cannot know. Six statements, locked after two rounds of statement check, then proved. Epistemic arithmetic itself, with its arithmetic and its truth predicate, is not built.
 - [x] **2C.** Done 23 November. Penrose's new argument, in the eight steps Koellner's Part II gives it, in an abstract setting with truth, knowledge and determinateness as operations on sentences. Seven statements, locked after two rounds of statement check, then proved: the argument is valid from its rules; each rule, unrestricted, is inconsistent; with restricted rules the argument needs two statements to be determinate; and for a determinate version of the thesis it yields only something weaker. Koellner's system itself is not built, so his theorems that the thesis is indeterminate and that neither side of the disjunction can be proved are cited, not re-proved.
+- [x] **2D.** Done 23 November. Added after Corradini and Galvan's two papers were read. Seven statements, locked after two rounds of statement check, then proved: a step in the proof of their 2024 corollary, "consistency implies soundness", is false, with a counterexample; the corollary fails when a mind is read as a set of sentences; the rest of its proof is sound; a nearby statement holds; and two steps of their 2022 paper follow from what they rest on. Their system is still not built.
 
 ### Stage 3 · Stretch
 Status: not started
@@ -201,7 +214,7 @@ Out of scope: Carlson's consistency proof, which is cited instead. Dropped for n
 
 ## Every result
 
-The thirty-five statements, with the name of each proof in the repository. "Proved" means Lean's kernel accepted the proof and the proof uses only Lean's three standard axioms.
+The forty-two statements, with the name of each proof in the repository. "Proved" means Lean's kernel accepted the proof and the proof uses only Lean's three standard axioms.
 
 ::: details Stage 1: thirteen statements in plain arithmetic
 
@@ -266,7 +279,21 @@ The thirty-five statements, with the name of each proof in the repository. "Prov
 
 :::
 
-Full report, with every limit and every disagreement: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Changes of plan: [`amendments.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/amendments.md). Cost: $40.26, all for the outside AIs' checks.
+::: details Stage 2D: seven statements from Corradini and Galvan's papers
+
+| Claim | Lean name | Status |
+|---|---|---|
+| Peano arithmetic plus "Peano arithmetic is inconsistent" is consistent and proves a false sentence | `consistencyDoesNotGiveSoundness` | Proved; against "Cons implies Sound" (2024, p. 562) |
+| That machine proves what no sound mind knows, yet a sound mind can know it consistent | `machineOutrunsMindThatKnowsItConsistent` | Proved; against the corollary, read at the level of sets |
+| The corollary's proof works for any sentence for which consistency gives soundness | `corollaryHoldsWhereConsistencyGivesSoundness` | Proved |
+| A mind whose arithmetic lies inside a machine cannot know it consistent, nor, if it is consistent, inconsistent | `mindInsideMachineCannotKnowItConsistent` | Proved; the lab's repair, not new |
+| From step 7: no formal system matches everything known | `unrestrictedThesisRefuted` | Proved; the last inference of their step 8 |
+| A conditional with determinate parts is determinate | `conditionalDeterminateIfPartsAre` | Proved; their Lemma 2, given Lemma 1 |
+| The Stage 1 assumptions are met by a machine and by a non-machine | `mindAssumptionsDoNotDecide` | Proved; the lab's own |
+
+:::
+
+Full report, with every limit and every disagreement: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Changes of plan: [`amendments.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/amendments.md). Cost: $44.95, all for the outside AIs' checks.
 
 ## Sources
 

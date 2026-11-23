@@ -1,15 +1,17 @@
-# Machine-check the Gödel argument: results for Stages 1 and 2 (tiers 2A, 2B, 2C)
+# Machine-check the Gödel argument: results for Stages 1 and 2 (tiers 2A, 2B, 2C, 2D)
 
 Issue #19 · Lane: proof · Protocol locked 2026-11-22T17:49:01Z · Stage 2A statements locked 2026-11-23T02:52:00Z, and two
 more at 03:30:51Z · Tier 2B statements locked 2026-11-23T05:07:22Z · Tier 2C
-statements locked 2026-11-23T06:35:15Z · Five amendments (2026-11-23)
+statements locked 2026-11-23T06:35:15Z · Tier 2D statements locked 2026-11-23T14:51:14Z · Six amendments
+(2026-11-23)
 
 ## Answer
 
 Stage 1: all thirteen locked statements are proved in Lean 4. Stage 2A: all nine are proved as well; see
 [Stage 2A](#stage-2a-a-knowledge-operator) below. Tier 2B: all six are proved; see
 [Tier 2B](#tier-2b-a-logic-of-knowledge-with-quantifiers). Tier 2C: all seven are proved; see
-[Tier 2C](#tier-2c-penroses-new-argument). That makes thirty-five. Throughout, the conclusion turns on what a
+[Tier 2C](#tier-2c-penroses-new-argument). Tier 2D: all seven are proved; see
+[Tier 2D](#tier-2d-corradini-and-galvans-steps-and-a-corollary). That makes forty-two. Throughout, the conclusion turns on what a
 reasoner can know about its own reliability, and never on whether it is a machine.
 
 In one sentence: Penrose's modest conclusion is proved; his proof of the strong conclusion, that the mind is no
@@ -488,12 +490,110 @@ statement or proof was changed.
   unrestricted thesis, "K and F agree on all sentences", and they note that the sentence is indeterminate, so
   it cannot be declared true (p. 493). Their 2024 note restates the result as Theorem 2, adds a three-way
   disjunction (Theorem 3) and a corollary on consistency (p. 562). None of these has a counterpart here, and
-  none was checked.
+  none was checked. *Tier 2D, added later the same day, covers step 8, Lemma 2 and the corollary.*
 - **What a source states, and what is inferred.** The page and step numbers above are from the papers. That
   S4g "is" their step 7 is this report's reading of the two side by side; no model from another vendor has
   checked that reading.
 - **Transcription.** The passages from Koellner's 2016 chapter were read on screen in a Kindle copy and typed
   out by an AI model. They could not be checked mechanically.
+
+## Tier 2D: Corradini and Galvan's steps, and a corollary
+
+Added under Amendment 6, after the two Corradini and Galvan papers were read. Statements:
+`lean/GodelArgument/Statement6.lean`. Proofs: `lean/GodelArgument/Results6.lean`.
+
+### Answer
+
+All seven locked statements are proved in Lean 4, each from Lean's three standard axioms only. The build passes
+in CI with warnings treated as errors
+([run 45198787509](https://github.com/ejhong/aletheia-lab/actions/runs/45198787509), commit `e967ba3`).
+
+In one sentence: a line in the proof of the corollary of Corradini and Galvan's 2024 note, "consistency implies
+soundness", is false as a statement about arithmetic, and the corollary as printed fails when a mind is read as
+a set of sentences; the rest of that proof is sound, a nearby statement holds, and two steps of their 2022 paper
+follow from what they rest on.
+
+### What follows from what (plain summary)
+
+The corollary (2024, p. 562) says: if a formal system F derives some arithmetic sentence that is not known, then
+the consistency of F is not known. Its proof uses the line "ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ)", labelled "Cons
+implies Sound", for an arbitrary F.
+
+1. **Consistency does not give soundness.** Take Peano arithmetic and add the single sentence "Peano arithmetic
+   is inconsistent". The result is a formal system. It is consistent, by Gödel's second incompleteness theorem
+   for Peano arithmetic. Its consistency statement is therefore true. And it proves a false sentence, the one
+   that was added (S5a).
+2. **So the corollary as printed has a counterexample, at the level of sets.** That system proves a sentence
+   that no sound mind contains. Yet there is a mind that is sound, deductively closed, contains Peano
+   arithmetic, is itself the theorem set of a machine, and contains the consistency statement of that system
+   (S5b). For that mind the corollary's hypothesis holds and its conclusion fails.
+3. **The fault is confined to that one line.** For any single sentence φ for which it is known that "if F is
+   consistent, then if F proves φ, φ", the corollary's own proof goes through: if φ is not known and F proves φ,
+   the consistency of F is not known (S5c). The textbook fact that consistency does give soundness for Π₁
+   sentences is not proved here.
+4. **A nearby statement holds.** If everything known about F's consistency is so, if F proves its consistency
+   whenever that is known, and if the second incompleteness theorem holds for F, then F's consistency is not
+   known; and if F is consistent, its inconsistency is not known either (S5d). The hypothesis that carries this
+   is that known arithmetic lies inside F, which the printed corollary does not have. It is close to S1a and S2b
+   and is not new.
+5. **Two steps of the 2022 paper follow.** From their step 7, their Lemma 3 and one instance of "K = F", the
+   unrestricted thesis "K = F" is refuted (S5e); this is the last inference of their step 8. And from the
+   determinateness axiom for conditionals, their Lemma 2 follows from their Lemma 1 (S5f).
+6. **The assumptions of Stage 1 do not decide the matter.** They are met by a mind that is a machine's theorem
+   set (Peano arithmetic's) and by one that is no machine's (the set of all true sentences) (S5g).
+
+### Results table
+
+| Claim | Lean name | Assumptions | Status | Source |
+|---|---|---|---|---|
+| S5a. Peano arithmetic plus "Peano arithmetic is inconsistent" is a consistent formal system with a true consistency statement that proves a false sentence | `consistencyDoesNotGiveSoundness` | none: it exhibits a system | Proved | against Corradini and Galvan 2024, p. 562, "Cons implies Sound" |
+| S5b. That system proves a sentence every sound mind lacks; some sound, closed, mechanical mind containing Peano arithmetic contains its consistency statement | `machineOutrunsMindThatKnowsItConsistent` | none: it exhibits a system and a mind | Proved | against the corollary of 2024, p. 562, read at the level of sets |
+| S5c. For one sentence φ: if φ is not known and F proves φ, F's consistency is not known | `corollaryHoldsWhereConsistencyGivesSoundness` | knowledge closed under modus ponens; known: "if F is consistent, then if F proves φ, φ"; if F proves φ, that is known | Proved | Corradini and Galvan 2024, pp. 562–563, the corollary's proof at one sentence |
+| S5d. F's consistency is not known; and if F is consistent, its inconsistency is not known | `mindInsideMachineCannotKnowItConsistent` | what is known about F's consistency is so, both ways; if F's consistency is known, F proves it; the second incompleteness theorem for F | Proved | the lab's repair, after an outside review; compare S1a, S2b |
+| S5e. Not "K = F" | `unrestrictedThesisRefuted` | step 7 (σ → G is known; if σ, F does not prove it); "K = F" implies σ; "K = F" implies σ → G is known exactly when F proves it | Proved | Corradini and Galvan 2022, pp. 490–491, the last inference of step 8 |
+| S5f. If σ and G are determinate, σ → G is determinate | `conditionalDeterminateIfPartsAre` | determinateness axiom D4 | Proved | Corradini and Galvan 2022, p. 490, Lemma 2 given Lemma 1 |
+| S5g. The Stage 1 properties of a mind are met by a mechanical mind and by a non-mechanical one | `mindAssumptionsDoNotDecide` | none: it exhibits two minds | Proved | the lab's own, after an outside review |
+
+**Non-vacuity.** `lean/GodelArgument/NonVacuity6.lean` gives, for each of S5c to S5f, a consistent system in
+which every assumption holds. The witnesses are trivial. S5a, S5b and S5g have no assumptions.
+
+### Statement check
+
+Two rounds, $4.69 ($1.59 OpenAI, $3.10 Google). Report: `statement-check/REPORT-2D.md`; round 1 is frozen under
+`statement-check/round1-2d/`.
+
+- Planted errors: 3 of 3 caught by both checkers, in both rounds.
+- Round 1 rated S5d `divergent` (both checkers) and S5e `divergent` (Google). S5d concluded only that F's
+  consistency is not known, where the note's prose says "undecidable"; it gained a hypothesis and a second
+  conclusion. S5e used an unrelated letter where F applied to the sentence was available, and one direction of
+  "K = F" where the source has both; both were changed.
+- At the lock, all eight real items are `faithful` or `faithful_with_caveats` from both checkers. No divergence
+  is left unresolved.
+
+### Limits
+
+- **S5a and S5b are not statements about DTK.** The corollary is printed as a theorem of DTK about its
+  predicate K. S5b reads "known" as membership in a set of arithmetic sentences. To refute the corollary inside
+  DTK one would need DTK to prove that Con(PA) is known and, through the formalized second incompleteness
+  theorem, that the consistency of the counterexample system is known. Both look routine from the principles
+  the note itself uses (p. 557). Neither is proved here, so "DTK refutes the corollary" is this report's
+  inference and is `unverified`. What is proved: the line the proof rests on is false of arithmetic, and the
+  corollary fails on the set-level reading.
+- **The authors may mean more than they print.** The note's prose speaks of a formalism that "surpasses" the
+  mind. The formal corollary has only "F derives some arithmetic sentence that is not known". The results bear
+  on what is printed. S5d is one true statement nearby, not a claim about what they intended.
+- **No one has told the authors.** Whether to do so is Eugene's decision.
+- **How the question arose.** One model read the proof and doubted the line; a model from another vendor,
+  reviewing the site page in a chat Eugene shared, proposed the same counterexample without having been told of
+  the doubt. That agreement is not a check. The checks are the statement check and the Lean kernel.
+- **Abstract statements.** S5c to S5f model no quantifiers, codes or arithmetic. S5c takes the known line at one
+  sentence, where the source has a quantifier inside K. S5f assumes Lemma 1; checking Lemma 1 needs DTK's
+  syntax, which is not built.
+- **Consistency statements** are built from Craig presentations, as in Stage 1. "The consistency statement of
+  Peano arithmetic" is one particular sentence expressing it.
+- **S5g is weak.** It concerns the set-level picture of Stage 1 only. Peano arithmetic's own notion of proof does
+  not satisfy the knowledge axioms of Stage 2 (S2e), so S5g is not an independence theorem for a theory of
+  knowledge; that is Reinhardt's and Carlson's theorem, cited and not re-proved.
 
 ## Amendments
 
@@ -528,23 +628,32 @@ It records the sources (Koellner's Part II and his 2016 chapter, both obtained t
 the two check rounds, and Eugene's permission to pass the $50 budget. Departure from the plan as first written:
 the determinateness premises of S4e were changed after round 1 to the two statements Koellner names.
 
+**Amendment 6 (2026-11-23).** Tier 2D. Written and pushed before the check and the proofs, after the results
+of tier 2C were published and Corradini and Galvan's papers had been read. Eugene passed on an outside review
+of the site page that asked for the corollary to be checked in Lean. The amendment records the questions, the
+seven statements, the two check rounds, and the limits above. Departures from the plan as first written: S5d
+gained a hypothesis and a second conclusion after round 1, and S5e was restated with F applied to the
+sentence and a biconditional.
+
 ## Spending
 
-$40.26, all on statement checks (`SPENDING.md`): $12.38 for Stage 1, $0.32 for Amendment 1, $9.50 for Stage 2A,
-$3.78 for Amendment 3, $9.07 for tier 2B, $5.21 for tier 2C. The budget was $50; Eugene lifted that cap on
-2026-11-23, and it was not reached.
+$44.95, all on statement checks (`SPENDING.md`): $12.38 for Stage 1, $0.32 for Amendment 1, $9.50 for Stage 2A,
+$3.78 for Amendment 3, $9.07 for tier 2B, $5.21 for tier 2C, $4.69 for tier 2D. The budget was $50; Eugene
+lifted that cap on 2026-11-23, and it was not reached. The ceiling recorded in Amendment 5 is $70.
 
 ## Who did the work
 
 AI agents did this work, directed by Eugene Jhong, who also supplied the photographs of Penrose's book and the
-papers by Cheng, Reinhardt and Koellner, and access to Koellner's 2016 chapter. Dates are
+papers by Cheng, Reinhardt, Koellner, and Corradini and Galvan, and access to Koellner's 2016 chapter. Dates are
 2026-11-22, and 2026-11-23 for Amendment 1.
 
 - **Anthropic, Claude Opus 5.5:** first assessment of the brief; issue #19.
 - **Anthropic, Claude Fable 5.2:** second assessment, source reading, statements, protocol, statement-check
-  design, proofs and this document, for Stage 1 and the three tiers of Stage 2.
+  design, proofs and this document, for Stage 1 and the four tiers of Stage 2.
 - **OpenAI, `gpt-6.2-astra`** and **Google, `gemini-4-neon`:** the statement checks, for all of them.
 - **xAI, `grok-4.7`:** named as tie-breaker; not needed.
+- **Google, Gemini (model not recorded), in a chat shared by Eugene:** an outside review of the site page that
+  proposed the counterexample of tier 2D and the forms of S5d and S5g. Not counted as a check.
 - **The Lean 4 kernel** checked the proofs.
 
 ## What this means
@@ -578,3 +687,12 @@ in my arithmetic, then I know something that machine cannot prove.
 So where does this leave Penrose? His modest claim, that we are not running an algorithm we can know to be
 sound, is proved. His proof of the stronger claim, that the mind is not computable, does not hold up. The
 stronger claim itself is not refuted. Nothing here touches his physics.
+
+A last step came from reading the two philosophers who answered Koellner, Corradini and Galvan. They had
+already shown, on paper, the smaller thing the repaired argument reaches, and the credit for it is theirs.
+Checking their work turned up one flaw in a later note of theirs. A corollary there says that if a machine
+proves some arithmetic a mind does not know, the mind cannot know that machine to be consistent. Its proof
+assumes that a consistent machine proves only truths. That is not so: arithmetic plus the false sentence
+"arithmetic is inconsistent" is a consistent machine. A mind can know that machine consistent and still not
+know what it proves, because what it proves is false. The rest of their proof is sound, and a nearby
+statement holds. None of this changes the main picture.
