@@ -1,0 +1,86 @@
+{
+ "North America": {
+  "real_ratio_after_to_before": 1.354,
+  "real_steep_over_flat": 1.836,
+  "k=1.0": {
+   "expected_ratio_after_to_before": 1.131,
+   "expected_steep_over_flat": 0.887,
+   "z_of_real_step": 1.69,
+   "z_of_real_at_12550": -7.71,
+   "share_of_halvings_at_or_above_real": 0.0,
+   "halving_expected_ratio": 0.927
+  },
+  "k=1.5": {
+   "expected_ratio_after_to_before": 1.207,
+   "expected_steep_over_flat": 1.008,
+   "z_of_real_step": 1.15,
+   "z_of_real_at_12550": -6.04,
+   "share_of_halvings_at_or_above_real": 0.007,
+   "halving_expected_ratio": 1.045
+  },
+  "k=2.0": {
+   "expected_ratio_after_to_before": 1.267,
+   "expected_steep_over_flat": 1.144,
+   "z_of_real_step": 0.7,
+   "z_of_real_at_12550": -5.22,
+   "share_of_halvings_at_or_above_real": 0.04,
+   "halving_expected_ratio": 1.136
+  }
+ },
+ "Europe": {
+  "real_ratio_after_to_before": 0.966,
+  "real_steep_over_flat": 2.312,
+  "k=1.0": {
+   "expected_ratio_after_to_before": 0.976,
+   "expected_steep_over_flat": 1.048,
+   "z_of_real_step": -0.14,
+   "z_of_real_at_12550": -11.49,
+   "share_of_halvings_at_or_above_real": 0.02,
+   "halving_expected_ratio": 0.816
+  },
+  "k=1.5": {
+   "expected_ratio_after_to_before": 1.051,
+   "expected_steep_over_flat": 1.214,
+   "z_of_real_step": -1.22,
+   "z_of_real_at_12550": -9.32,
+   "share_of_halvings_at_or_above_real": 0.187,
+   "halving_expected_ratio": 0.904
+  },
+  "k=2.0": {
+   "expected_ratio_after_to_before": 1.095,
+   "expected_steep_over_flat": 1.367,
+   "z_of_real_step": -1.85,
+   "z_of_real_at_12550": -7.8,
+   "share_of_halvings_at_or_above_real": 0.59,
+   "halving_expected_ratio": 0.985
+  }
+ },
+ "Asia": {
+  "real_ratio_after_to_before": 1.19,
+  "real_steep_over_flat": 1.744,
+  "k=1.0": {
+   "expected_ratio_after_to_before": 1.055,
+   "expected_steep_over_flat": 0.969,
+   "z_of_real_step": 1.09,
+   "z_of_real_at_12550": -5.3,
+   "share_of_halvings_at_or_above_real": 0.013,
+   "halving_expected_ratio": 0.901
+  },
+  "k=1.5": {
+   "expected_ratio_after_to_before": 1.1,
+   "expected_steep_over_flat": 1.117,
+   "z_of_real_step": 0.69,
+   "z_of_real_at_12550": -4.0,
+   "share_of_halvings_at_or_above_real": 0.07,
+   "halving_expected_ratio": 0.995
+  },
+  "k=2.0": {
+   "expected_ratio_after_to_before": 1.146,
+   "expected_steep_over_flat": 1.247,
+   "z_of_real_step": 0.33,
+   "z_of_real_at_12550": -3.12,
+   "share_of_halvings_at_or_above_real": 0.133,
+   "halving_expected_ratio": 1.046
+  }
+ }
+}

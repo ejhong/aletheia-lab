@@ -41,3 +41,5 @@ Every paid run. Stop and ask Eugene before going over a question's budget, or ov
 | 2026-11-23 | global-consciousness (#47) | Google Gemini API, `gemini-4-neon` | 0.58 | Independent replication program, one call |
 | 2026-11-23 | younger-dryas-crash (#40) | OpenAI API, `gpt-6.2-astra` | 0.63 | Pre-lock plan review, two rounds (0.31, 0.33); list price from logged token counts |
 | 2026-11-23 | younger-dryas-crash (#40) | Google Gemini API, `gemini-4-neon` | 1.15 | Pre-lock plan review, two rounds (0.54, 0.61) |
+| 2026-11-23 | younger-dryas-crash (#40) | OpenAI API, `gpt-6.2-astra` | 0.28 | Independent replication program, one call |
+| 2026-11-23 | younger-dryas-crash (#40) | Google Gemini API, `gemini-4-neon` | 0.65 | Independent replication program, one call |

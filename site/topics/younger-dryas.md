@@ -20,10 +20,10 @@ An event like that should leave marks in several records that have nothing to do
 - **Smoke in Greenland's ice.** There is a real mark: about a century of unusually high ammonium, in three ice cores. But it begins thirty to forty years after the cold set in, and it builds slowly. Fire from the sky should mark the ice at once.
 - **The same test at other sudden coolings.** The ice age had two dozen of them. After most, ammonium rises too. The Younger Dryas rise is among the largest, and two much older coolings come close to it. It is the strong end of something the ice does again and again.
 - **A burn across the whole planet.** Antarctic air, which mixes the whole atmosphere, and the best-dated charcoal records worldwide show no sign of one. The shift in the air's carbon is small, late, and matched at other cold spells.
-- **A crash in human numbers.** Being tested now.
+- **A crash in human numbers.** Counts of radiocarbon dates from human sites do not drop when the cold begins, in North America, Europe or Asia. This is the weakest of the four tests: radiocarbon dating is at its most distorted in exactly those centuries, so the dates show no crash but cannot rule one out.
 
-So far the pattern is consistent. The records do hold real disturbances around the start of the Younger Dryas. Each one looks like what a sudden change of climate does by itself, here and at other times, and none is the sharp, one-off, simultaneous mark that the hypothesis predicts.
+The pattern is consistent. The records do hold real disturbances around the start of the Younger Dryas. Each one looks like what a sudden change of climate does by itself, here and at other times, and none is the sharp, one-off, simultaneous mark that the hypothesis predicts. Three of the four tests could have seen such a mark; the fourth could not be sure.
 
 ## What this does not settle
 
-None of these studies looks for the impact itself. The physical traces claimed for it, such as platinum, tiny spherules and nanodiamonds in a thin layer of sediment, are not tested here, and neither is the fate of the large animals. What has been tested is the consequences claimed for the impact: the fires, and soon the loss of people. A comet that struck without setting the continents alight is not ruled out by anything on this page.
+None of these studies looks for the impact itself. The physical traces claimed for it, such as platinum, tiny spherules and nanodiamonds in a thin layer of sediment, are not tested here, and neither is the fate of the large animals. What has been tested is the consequences claimed for the impact: the fires and the loss of people. A comet that struck without setting the continents alight is not ruled out by anything on this page.

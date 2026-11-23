@@ -15,3 +15,5 @@ Tools: Python 3.12 and numpy 2.3.5, in the virtual environment shared with quest
 |---|---|
 | `analysis/crash.py` | `476aa184f857911376353760a1fd2b32e3507bced714700469203249df9f522e` |
 | `analysis/test_crash.py` | `9012630cf682152a221fe07805a294bafc928c2622017fdb97c3184f78e29a15` |
+
+Used only in a check made after the result (`explore/later_drop.py`): the IntCal13 curve, <https://intcal.org/curves/intcal13.14c>, retrieved 2026-11-23 (Reimer et al. 2013).
