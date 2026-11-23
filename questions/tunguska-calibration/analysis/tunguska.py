@@ -421,7 +421,7 @@ def run():
         f.write("species\tsite\twindow_start\tscore\n")
         for r in rows:
             f.write("\t".join(map(str, r)) + "\n")
-    json.dump(out, open(R / "summary.json", "w"), indent=1)
+    json.dump(out, open(R / "summary.json", "w"), indent=1, default=lambda o: o.item())      # numpy numbers to plain ones
     for sp in ("nh4", "no3", "bc", "s"):
         print(sp, out[sp]["verdict"], out[sp]["network"], "| excess:", out[sp]["excess_median_of_sites"], "| sites in own top tenth:", out[sp]["sites_in_own_top_tenth"])
 

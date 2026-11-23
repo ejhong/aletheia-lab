@@ -21,3 +21,7 @@
   (`review/round2`) found one arithmetic slip and one ambiguous phrase, both fixed.
 - Eugene asked for one outside vendor, Google, for review and replication from here on.
 - **Design comparison, blind** (`explore/design_power.py`): two-year window chosen over three-year for sensitivity.
+- **Lock:** 2026-11-23T20:12:12Z (`protocol.lock`, in its own commit).
+- First locked run stopped while writing `results/summary.json`: a numpy integer could not be written as JSON.
+  Nothing had been printed or read. Fixed by converting numpy numbers on output (one line of `analysis/tunguska.py`);
+  no computation changed. Rerun.
