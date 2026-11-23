@@ -1,0 +1,49 @@
+/private/tmp/claude-501/-Users-eugene-prj-aletheia-lab-2/2ec8fc90-c68b-4fd3-9005-5365517ca1a1/scratchpad/pr97/questions/ancient-sky-hole/replication/fable/skyrep.py:345: RuntimeWarning: invalid value encountered in cast
+  sec = np.minimum((lam / (360.0 / n)).astype(int), n - 1)
+calibration {'all48': {'V50': 4.415490932649737, 'sV': 0.3089437760579218, 'loglik': -252.58271918942668, 'n': 690, 'n_cat': 222}, 'in_figure': {'V50': 4.313002800806708, 'sV': 0.37555703769362625, 'loglik': -272.99909407482573, 'n': 690, 'n_cat': 211}, 'aratus_core': {'V50': 4.313002800806708, 'sV': 0.37555703769362625, 'loglik': -272.99909407482573, 'n': 690, 'n_cat': 211}, 'strict_id': {'V50': 4.414834344497425, 'sV': 0.30496570162113523, 'loglik': -249.73262546127006, 'n': 690, 'n_cat': 221}}
+M1 primary {'t': 910.0, 'phi': 25.8, 'loglik': -935.7497696732452, 'coarse_t': 900.0, 'coarse_phi': 26.0, 'coarse_loglik': -935.778342591904, 'at_3000BCE': {'t': -2999.0, 'best_phi': 19.15, 'loglik': -1041.9093643029455, 'dlnL_vs_best': -106.15959462970034}} 0.8462259769439697
+kV 0.15 210.0 33.2
+kV 0.2 880.0 28.0
+kV 0.25 910.0 25.8
+kV 0.3 820.0 24.0
+kV 0.35 720.0 22.5
+def all48 910.0 25.8
+def in_figure 670.0 27.0
+def aratus_core 500.0 28.2
+def strict_id 930.0 25.8
+/private/tmp/claude-501/-Users-eugene-prj-aletheia-lab-2/2ec8fc90-c68b-4fd3-9005-5365517ca1a1/scratchpad/pr97/questions/ancient-sky-hole/replication/fable/skyrep.py:136: RuntimeWarning: divide by zero encountered in log
+  ll = float(np.sum(y * np.log(p) + (1 - y) * np.log(1 - p)))
+/private/tmp/claude-501/-Users-eugene-prj-aletheia-lab-2/2ec8fc90-c68b-4fd3-9005-5365517ca1a1/scratchpad/pr97/questions/ancient-sky-hole/replication/fable/skyrep.py:136: RuntimeWarning: invalid value encountered in multiply
+  ll = float(np.sum(y * np.log(p) + (1 - y) * np.log(1 - p)))
+vcut 4.0 -120.0 31.8
+vcut 4.5 50.0 30.3
+vcut 5.0 610.0 27.0
+vcut 5.5 910.0 25.8
+M2 {'kV': 0.1, 't': 160.0, 'phi': 35.7, 'loglik': -898.4141637777348, 'coarse_t': 200.0, 'coarse_phi': 35.5, 'coarse_loglik': -898.5007652663131} 27.02074384689331
+M3 {'t': -10.0, 'R_cap': 41.5, 'loglik': -874.3207781552184, 'coarse_t': 0.0}
+LOCO =Aqr {'t': 710.0, 'phi': 26.5, 'loglik': -879.4281092966505, 'n_dropped': 43}
+LOCO =Ara {'t': 960.0, 'phi': 26.3, 'loglik': -929.8032763727122, 'n_dropped': 7}
+LOCO =Arg {'t': 980.0, 'phi': 26.5, 'loglik': -901.0801821630108, 'n_dropped': 45}
+LOCO =CMa {'t': 890.0, 'phi': 26.0, 'loglik': -914.0395005508278, 'n_dropped': 29}
+LOCO =Cap {'t': 830.0, 'phi': 26.2, 'loglik': -897.1749187912841, 'n_dropped': 25}
+LOCO =Cen {'t': 1000.0, 'phi': 26.3, 'loglik': -912.2467577115648, 'n_dropped': 36}
+LOCO =Cet {'t': 870.0, 'phi': 26.0, 'loglik': -916.6387407272416, 'n_dropped': 21}
+LOCO =CrA {'t': 880.0, 'phi': 26.3, 'loglik': -908.6172373759852, 'n_dropped': 12}
+LOCO =Crt {'t': 920.0, 'phi': 25.8, 'loglik': -927.9020647638479, 'n_dropped': 7}
+LOCO =Crv {'t': 920.0, 'phi': 25.8, 'loglik': -931.9335789284742, 'n_dropped': 7}
+LOCO =Eri {'t': 720.0, 'phi': 26.5, 'loglik': -901.9979137960939, 'n_dropped': 34}
+LOCO =Hya {'t': 930.0, 'phi': 25.8, 'loglik': -914.3983349251273, 'n_dropped': 27}
+LOCO =Lep {'t': 910.0, 'phi': 25.8, 'loglik': -929.8806665531314, 'n_dropped': 12}
+LOCO =Lib {'t': 930.0, 'phi': 25.8, 'loglik': -916.6393267330448, 'n_dropped': 16}
+LOCO =Lup {'t': 970.0, 'phi': 26.0, 'loglik': -923.9658901144052, 'n_dropped': 18}
+LOCO =Oph {'t': 920.0, 'phi': 25.8, 'loglik': -919.9521562947347, 'n_dropped': 25}
+LOCO =PsA {'t': 680.0, 'phi': 26.7, 'loglik': -901.3487207286876, 'n_dropped': 15}
+LOCO =Sco {'t': 920.0, 'phi': 26.0, 'loglik': -927.1508867138105, 'n_dropped': 24}
+LOCO =Ser {'t': 910.0, 'phi': 25.8, 'loglik': -930.0249403060011, 'n_dropped': 12}
+LOCO =Sgr {'t': 860.0, 'phi': 26.2, 'loglik': -908.8461698125816, 'n_dropped': 30}
+LOCO =Vir {'t': 930.0, 'phi': 25.8, 'loglik': -897.0290340975419, 'n_dropped': 31}
+LOCO [680.0, 1000.0] [25.8, 26.7] =PsA 44.06930184364319
+bootstrap {'B': 500, 'seed': 20261123, 'draw': 'numpy default_rng(seed).integers(0, n_tiles, n_tiles) per resample, all 138 tiles', 't_CI95': [-205.74999999999994, 1000.0], 'phi_CI95': [22.7475, 30.5], 't_CI68': [302.00000000000017, 1000.0], 'phi_CI68': [24.7, 27.831999999999994], 't_median': 900.0, 'phi_median': 26.0, 'frac_t_below_3000BCE': 0.0, 'n_unique_coarse_maxima': 158} 72.61973714828491
+M4 {'M3_free_pole': {'pole_ecl': [298.77203938218133, -67.58957652687718], 'R_cap': 41.5, 'loglik': -873.881615849152, 'offtrack_deg': 1.0529753950119527, 'closest_track_epoch': -46.0, 'two_dlnL': 0.8783246121327011}, 'M1_free_pole': {'pole_ecl': [283.53220329313206, -70.6729416133681], 'phi': 25.3, 'loglik': -931.1556678718295, 'offtrack_deg': 4.11553267177898, 'closest_track_epoch': 1036.0, 'two_dlnL': 9.188203602831436}} 81.98254299163818
+verdict {'rule': '1: excludes pre-3000 BCE', 't_lo': -205.74999999999994, 't_hi': 1000.0, 'offtrack_used': 4.11553267177898, 'offtrack_note': 'max of the M3- and M1-based free-pole offsets (CHOICE)'} {'t': [-205.74999999999994, 1000.0], 'phi': [22.5, 35.7], 't_BCE': [206.74999999999994, -999.0]}
+/Users/eugene/prj/aletheia-lab-2/questions/population-y/.venv/bin/python -I    81.72s user 0.27s system 99% cpu 1:22.06 total

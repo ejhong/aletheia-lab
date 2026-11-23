@@ -1,103 +1,98 @@
 ---
 # To update this page, edit this file and push to main; the site rebuilds itself.
-# The interactive observatory plates are made by questions/ancient-sky-hole/analysis/make_figures.py from locked results.
-summary: Ptolemy's 48 classical constellations leave a circular hole around the ancient South Celestial Pole. Because the pole drifts over 25,772 years, does that empty patch date the constellations before 3000 BCE, or to Classical Antiquity?
-verdict: Excludes pre-3000 BCE; records the Classical Greco-Alexandrian sky (with wide model sensitivity)
-result: Across all 13 pre-registered models, extinction settings, magnitude limits, and constellation subsets—plus all 500 spatial-block bootstrap resamples—the empty southern patch in Ptolemy's Almagest falls after 201 BCE (combined honest range 201 BCE–1000 CE, 21.5°–35.7° N), rejecting a 3000 BCE sky by Δln L = −106.2 (odds > 10^46 : 1). Bright stars (V ≤ 4.0: 121 BCE, 31.8° N), an extinction-free geometric circle (41 BCE), and a free-extinction model (160 CE, 35.7° N) converge on Hipparchus and Ptolemy, while our fixed-extinction primary model overshot to 910 CE—showing how sensitive star-void dates are to horizon haze.
-dek: Ancient star-makers could not draw constellations in the part of the southern sky that never rose above their horizon. As Earth's axis wobbles over 25,772 years, that blank circle drifts across the stars. We locked an astronomical visibility test on Ptolemy's Almagest and ESA's Hipparcos catalogue to see when and where the hole points—and how honest the error bars really are.
+# The panels and interactive figures are made by questions/ancient-sky-hole/analysis/make_figures.py from the results files.
+summary: The classical constellations leave a patch of the southern sky empty, centred on where the south pole stood for whoever set its edge. The pole drifts, so the patch carries a date. Whose date is it?
+verdict: The hole dates the star catalogue, to Greek astronomers of about 130 BCE to 140 CE. It cannot date the first constellations
+result: The empty patch in Ptolemy's star catalogue fits the sky of Hipparchus and Ptolemy, who made the catalogue, and fits a sky of 3000 BCE far worse; by the rule set in advance an origin before 3000 BCE is excluded. But the test dates the people who last filled in the stars, and they catalogued everything down to their own horizon. Whether the figures themselves are older, this record cannot say. The main model also landed at 910 CE, centuries after the catalogue was written, which shows how much such dates lean on what one assumes about haze at the horizon.
+dek: Nobody can draw constellations in sky that never rises. So the 48 classical constellations leave a blank circle around the south pole of their makers, and because the pole drifts through the stars over 26,000 years, the circle's position is a clock. We read that clock from Ptolemy's star catalogue, with the rules fixed before looking at the southern sky.
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Primary locked analysis finished (run by Antigravity / Google DeepMind, directed by Eugene; awaiting an independent replication from the written plan by a second AI vendor to complete the `data` lane). By the pre-registered decision rule, the empty southern patch **excludes an origin before 3000 BCE** (`201 BCE` earliest bound across 500 spatial-block bootstraps and all 13 locked models).
+> **Where things stand, 23 November 2026.** Finished and replicated. A second AI system, working from the written plan alone, reproduced every date and latitude. The empty patch is the horizon of the Greek astronomers who compiled the catalogue. It is not a relic of anything older, and it cannot tell us how old the constellation figures are.
 
 ## What we figured out {menu: Findings}
 
-Look at a map of the 48 classical constellations handed down in Claudius Ptolemy's *Almagest* (c. 137 CE), and an eerie blank disc stares back from the deep south. The constellations we inherited—Orion, Argo Navis, Centaurus, Ara, Eridanus—wrap snugly around an empty patch where modern atlases place Phoenix, Grus, Pavo, Tucana, Hydrus, and the Southern Triangle. Those missing regions were not named by Europeans until Dutch navigators sailed around the Cape of Good Hope in 1595–1597.
+Look at a map of the 48 constellations in Ptolemy's *Almagest*, written about 137 CE, and there is a hole in it. Around the south pole lies a patch with no figures and no catalogued stars. The reason is simple: from the Mediterranean that part of the sky never rises.
 
-Because Earth's spin axis slowly precesses around a 23.4° circle every ~25,772 years, the South Celestial Pole was in a different spot among the stars thousands of years ago. A famous astronomical side-channel asks: **can that blank circle act as a prehistoric timestamp?** If an unknown Ice Age or pre-3000 BCE civilization drew the sky and handed it down untouched, the hole should be centered on the pole of their era.
+The patch is centred on the south pole of the sky. But the pole moves. The Earth's axis wobbles once in about 26,000 years, and the pole traces a circle among the stars as it does. So the centre of the empty patch says *when* its edge was set, and its size says *how far north* the observers stood. Since the 1960s some astronomers have argued that the patch points to about 2600 BCE, long before Greek astronomy (Ovenden 1966, as later sources report it; not read here). If it pointed further back still, it would mean an organised map of the sky older than writing.
 
-We cross-matched all **1,028 entries** of Ptolemy's *Almagest* (Verbunt & van Gent 2012) against **15,537 modern stars** from ESA's Hipparcos catalogue, calibrated Ptolemy's brightness cutoff strictly on the precession-invariant northern ecliptic sky (`β > +30°`), and locked every precession equation (Vondrák et al. 2011), atmospheric extinction model, spatial-block bootstrap, and decision rule before looking at a single southern-sky fit.
+We matched Ptolemy's stars to modern positions, wound the sky back, and asked which date and latitude best explain which stars are in the catalogue and which are missing.
 
 {{figure: ancient-sky-hole/tiles}}
 
-{{figure: ancient-sky-hole/verdict}}
-
 Four things came out.
 
-1. **A pre-3000 BCE sky is overwhelmingly excluded.** Every single one of all 13 pre-registered models, all 21 leave-one-constellation-out jackknife runs, and all 500 spatial-block bootstrap draws lands **after 201 BCE**. At **3000 BCE**, the empty patch is misaligned with the southern horizon by **`Δln L = −106.2`** in Primary M1 (**`−125.6`** under clear skies, **`−96.5`** in the pre-Hipparchan Aratus core)—odds of more than **10^46 to 1 against**. At **9600 BCE** (the era of Göbekli Tepe), the mismatch explodes to **`Δln L = −350.0`**.
-2. **The hole in the *Almagest* records the Classical Greco-Alexandrian sky—not a Bronze Age time capsule.** Strip away overly steep faint-star extinction assumptions and three independent pre-registered tests snap straight onto Hipparchus (Rhodes, 36.4° N, c. 128 BCE) and Ptolemy (Alexandria, 31.2° N, c. 137 CE):
-   - Bright constellation-defining stars (`V ≤ 4.0`): **`121 BCE`, `31.8° N`**.
-   - Pure extinction-free circular void (`M3`, highest log-likelihood of all models at `LL = −874.3`, beating M1 by `2Δln L = +123.0`): **`41 BCE`**, void radius **`41.7°`**.
-   - Free-extinction profile (`M2`, `k_V = 0.10`, beating M1 by `2Δln L = +74.7`): **`160 CE`, `35.7° N`**.
-3. **Individual rim stars carry the unmistakable fingerprint of Rhodes in 128 BCE.** At Rhodes (`36.4° N`, `128 BCE`), every one of Ptolemy's southernmost landmark stars—Canopus (`+0.9°`), Acrux (`+2.2°`), Alpha Centauri (`+2.8°`), Gamma Arae (`+3.1°`), and Acamar (`+3.5°`)—rose above the sea horizon, while **11 of the 12 brightest missing stars** (including Alnair, Tiaki, Ankaa, Peacock, Atria, Miaplacidus, and Achernar) never rose at all. At Alexandria in 137 CE, four of those missing stars rose 3.4°–6.4° high yet stayed uncatalogued—echoing historical studies arguing that Ptolemy's southern limit largely inherits Hipparchus's sky at Rhodes.
-4. **Locking the plan caught a major methodological trap in real time.** Our pre-registered primary model (`M1`, fixed `k_V = 0.25 mag/airmass`, all stars down to `V = 5.5`) overshot to **`910 CE, 25.8° N`**—**773 years after the *Almagest* was written**. Why? Because ancient astronomers selectively hunted down faint 3rd–5th magnitude stars low on the horizon *inside* named figures (Ara, Argo, Centaurus) while leaving brighter 2nd-magnitude stars unrecorded in blank sky (Grus, Phoenix). Forcing a uniform haze penalty onto that asymmetric rim pushes the optimizer south and centuries into the future.
+1. **The patch belongs to the sky of the catalogue's own makers.** Every version of the test puts the date after 201 BCE. A sky of 3000 BCE fits very much worse, and a sky of 9600 BCE worse again. By the rule fixed in advance, an origin before 3000 BCE is excluded.
+2. **That is the known answer.** The catalogue was compiled by Hipparchus on Rhodes about 128 BCE and by Ptolemy at Alexandria about 137 CE. Three versions of the test land in exactly that window: bright stars only (121 BCE), a plain empty circle with no allowance for haze (41 BCE), and a model free to choose its own haze (160 CE).
+3. **So the hole dates the cataloguers, not the constellations.** An astronomer listing stars adds every star he can see to the figures he has inherited. The southern edge of the *stars* is therefore his own horizon, whatever the age of the *figures*. This test recovers a date we already knew, which shows the method works. It does not show the figures are young.
+4. **The main model went wrong, and that is a finding too.** The version we had named in advance as the main one put the date at 910 CE, almost eight centuries after the catalogue was written. That is impossible, and it happened because of one assumption about how much haze dims stars near the horizon. A date from an empty patch of sky can move by a thousand years on that assumption alone.
 
-## Spin the ancient sky yourself {menu: Time machine}
+{{figure: ancient-sky-hole/verdict}}
 
-Before reading another table, look directly at the stars. Drag the **Epoch** slider below—or press **Orbit Precession**—to carry Earth's South Celestial Pole around its 25,772-year circle. Watch the glowing copper horizon ring sweep across Ptolemy's golden constellations and lock cleanly onto the sapphire-blue void right around **Hipparchus (128 BCE)** and **Ptolemy (137 CE)**—and watch how badly it misses at **3000 BCE** or **9600 BCE**.
+## Wind the sky back yourself {menu: The sky}
+
+The figure below is the southern sky, with Ptolemy's stars in gold and the bright stars he left out in a paler tint. Drag the date, or press play, and the pole moves along its circle. The ring is the horizon: everything inside it never rises. At 128 BCE on Rhodes the ring closes neatly around the missing stars. At 3000 BCE or 9600 BCE it does not.
 
 {{figure: ancient-sky-hole/sky_dome}}
 
-## Where the likelihood points—and why extinction shifts it {menu: Likelihood map}
+## Where each version of the test points {menu: The dates}
 
-Earlier studies using the southern sky void (Ovenden 1966; Roy 1984; Schaefer 2002, 2006) often disagreed by centuries or millennia, partly because some analyzed *verbal* constellation descriptions in Aratus's *Phaenomena* rather than the *Almagest* star list, and partly because single-model error bars treat every star as an independent coin flip.
-
-The interactive observatory map below shows our exact locked 2D likelihood surface across epoch and observer latitude. Toggle between **Clear Sky (`k_V = 0.15`)**, **Primary M1 (`k_V = 0.25`)**, **Aratus Core** (excluding Equuleus, Corona Australis, and all 108 *informes* stars outside the figures), and **In-Figure Only**—and flip on **Deep Time** to see how utterly empty the probability landscape is before 3000 BCE.
+The second figure shows how well each date and latitude explains the catalogue, for four versions of the test. The bright patch is the best fit; the dots are 500 reshufflings of the sky that show how far the answer can wander.
 
 {{figure: ancient-sky-hole/contour}}
 
-| Pre-registered variant | Group | Best epoch | Best latitude | `ln L_max` | What it tests |
-|---|---|---:|---:|---:|---|
-| `M1_kv_0.25` *(Primary)* | Extinction | **910 CE** | **25.8° N** | `−935.8` | Fixed haze `k_V = 0.25`, all 48, `V ≤ 5.5` *(anachronistic overshoot)* |
-| `M1_kv_0.15` | Extinction | **210 CE** | **33.2° N** | `−916.3` | Clear dry sky (`+19.5` LL over primary) |
-| `M1_kv_0.20` | Extinction | **880 CE** | **28.0° N** | `−928.1` | Phase jump occurs between `k_V = 0.16` and `0.18` |
-| `M1_kv_0.30` / `0.35` | Extinction | **820 / 720 CE** | **24.0° / 22.5° N** | `−942.4 / −948.2` | Hazier horizons push latitude south |
-| `M2_free_kv` | Model | **160 CE** | **35.7° N** | `−898.5` | Profile MLE hits `k_V = 0.10` (`+37.3` LL over primary) |
-| `M3_geom_cap` | Model | **41 BCE** | *(cap `R = 41.7°`)* | **`−874.3`** | Extinction-free circular void (**highest likelihood**, `+61.5` LL) |
-| `subset_in_figure` | Subset | **670 CE** | **27.0° N** | `−878.1` | Drops 108 *informes* outside-figure stars |
-| `subset_aratus_core` | Subset | **500 CE** | **28.2° N** | `−851.7` | Pre-Hipparchan constellations (`−Equ, −CrA, −informes`) |
-| `subset_strict_id` | Subset | **930 CE** | **25.8° N** | `−929.4` | Secure Hipparcos IDs (`I ≤ 2`) only |
-| `vmag_le_4.0` | Magnitude | **121 BCE** | **31.8° N** | `−93.0` | Bright constellation skeletons (`315` stars) |
-| `vmag_le_4.5` | Magnitude | **50 CE** | **30.3° N** | `−275.9` | Medium-bright stars (`499` stars) |
-| `vmag_le_5.0` | Magnitude | **610 CE** | **27.0° N** | `−601.6` | Deeper sample (`663` stars) |
+| Version of the test | Best date | Best latitude |
+|---|---|---|
+| **Main model as locked** (haze fixed at a typical sea-level value) | **910 CE** | 25.8° N |
+| Clearer air | 210 CE | 33.2° N |
+| Three other haze settings | 720 to 880 CE | 22.5° to 28.0° N |
+| Haze left free | 160 CE | 35.7° N |
+| A plain empty circle, no haze | 41 BCE | not fitted |
+| Stars inside the figures only | 670 CE | 27.0° N |
+| Leaving out two late constellations | 500 CE | 28.2° N |
+| Securely identified stars only | 930 CE | 25.8° N |
+| Bright stars only (magnitude 4.0 and brighter) | 121 BCE | 31.8° N |
+| Magnitude 4.5 and brighter | 50 CE | 30.3° N |
+| Magnitude 5.0 and brighter | 610 CE | 27.0° N |
 
-Even when we lift the constraint that the empty patch must lie on Earth's precession track (**Model M4**, free pole), the unconstrained void center sits at ecliptic `(λ = 283.0°, β = −70.5°)`—**`3.94°` inward** from the precession circle (`β = −66.5°`, `2Δln L = 9.08`). That slight inward pull is the exact geometric signature of an asymmetric or composite boundary rather than a pristine single-night snapshot.
+Hipparchus worked at 36.4° N and Ptolemy at 31.2° N. The versions that fit best are the ones that land nearest them. The main model fits worse than the plain circle and worse than the model with free haze, and its date is one no historian could accept.
 
-## Fingerprints on the horizon {menu: Horizon rim}
+**Why the main model failed.** It assumes a faint star low on the horizon was very unlikely to be recorded. But Ptolemy's catalogue holds faint stars at the very bottom of old figures such as the Altar, the Ship and the Centaur, and leaves out much brighter stars nearby that belong to no figure. The cataloguers were completing pictures, not sweeping the sky evenly. A model that does not know this explains the faint low stars by moving the date and the observer until those stars stand higher.
 
-Nothing makes the verdict clearer than lining up the **12 southernmost bright stars Ptolemy catalogued** directly against the **12 brightest southern stars he missed**. Click between ancient observatories below and watch the two sets of stars rise and sink across the sea horizon.
+## The stars on the rim {menu: The rim}
+
+The last figure takes the stars one at a time: Ptolemy's southernmost against the brightest he missed.
 
 {{figure: ancient-sky-hole/rim}}
 
-At **Rhodes in 128 BCE**, the separation is razor-sharp: **12 of 12** catalogued rim stars clear the horizon, while **11 of 12** missing bright stars stay underground (only Avior grazes `+0.01°`). Jump back to **Crete in 2600 BCE** or **Göbekli Tepe in 9600 BCE**, and the separation collapses—missing stars like Achernar, Alnair, Peacock, and Ankaa soar 10°–40° into the night sky while catalogued stars like Acrux, Alpha Centauri, and Gamma Arae sink below the sea.
+On Rhodes in 128 BCE, every one of the southernmost stars in the catalogue cleared the sea horizon, by one to five degrees. Of the twelve brightest missing stars, eleven never rose. At Alexandria in 137 CE four of those missing stars stood three to six degrees up and still went unrecorded. That fits the view of several historians of astronomy that the catalogue's southern limit is mostly Hipparchus's, taken over by Ptolemy. This comparison was made after the results were in and is not part of the locked test.
 
-## How it was done {menu: Methods}
+## How it was done
 
-- **Primary public catalogues:** Verbunt & van Gent (2012, *A&A* 544, A31; VizieR `J/A+A/544/A31/ptolema`, 1,028 *Almagest* stars with Hipparcos IDs and quality flags), ESA Hipparcos Main Catalogue (VizieR `I/239/hip_main`, `V ≤ 7.0`, 15,537 stars with ICRS coordinates, `Vmag`, and proper motions), and Yale Bright Star Catalogue 5th Ed. (VizieR `V/50/catalog`, for Bayer/Flamsteed labels only). Every download URL and SHA-256 hash is in `MANIFEST.md`.
-- **Long-term precession:** Implemented exact Vondrák, Capitaine & Wallace (2011, *A&A* 534, A22; Corrigendum 2012, *A&A* 541, C1; IAU SOFA/ERFA `eraLtpequ`) valid to arcseconds across ±200,000 years, verified before locking against J2000 obliquity (`23.4393°`), Thuban at 2781 BCE (`0.06°` from pole), and Vega at 12,001 BCE (`2.69°` from pole).
-- **Precession-invariant calibration:** Ptolemy's overhead magnitude completeness curve (`V_50 = 4.42`, slope `s_V = 0.31`) was fitted strictly on the northern ecliptic cap (`β > +30°`, `690` stars) that never enters the southern horizon at any epoch—never refitted on the southern sky.
-- **Simulated-sky validation before locking:** On four synthetic catalogues drawn from real Hipparcos positions at `9600 BCE`, `2500 BCE`, `1200 BCE`, and `137 CE`, the pipeline recovered every true epoch within `130–310 yr` and every latitude within `0.0°–0.7°`. On a patchy sky with constellation-scale rim perturbations, the **Spatial Block Bootstrap** (`B = 500` resamples over `138` equal-area ~15° tiles) properly widened beyond the naive star-level interval and covered ground truth.
-- **Locked first, zero amendments:** `protocol.md` was hashed and pushed to GitHub (`protocol.lock`, SHA-256 `4be6d43dc0bd`, `2026-11-23T18:45:56Z`) before running on real southern-sky labels. Total paid spend: `$0`.
+- **Public data.** Ptolemy's catalogue as matched star by star to the Hipparcos satellite catalogue by Verbunt and van Gent (2012), and Hipparcos itself for positions, brightness and the slow motions of the stars.
+- **Calibrated on the north.** How faint a star the cataloguers bothered to record was measured on the northern sky, which is always visible, and then held fixed.
+- **Checked on made-up skies first.** Catalogues were simulated for four known dates from 9600 BCE to 137 CE; the method recovered each to within about 300 years and one degree of latitude.
+- **Locked first.** The southern sky was not looked at until the plan was fixed, with thirteen versions of the test named in advance and a rule for what would count as excluding a date before 3000 BCE.
+- **Replicated.** Claude Opus 5.5 (Anthropic) wrote its own program from the plan alone, including its own version of the precession formula. The main fit, all thirteen versions and all 21 leave-one-out runs came out identical, and the reshuffled range begins at 207 BCE against 201 BCE. It also listed thirteen points where the plan left a choice open; none changes the answer.
+- **Cost.** Nothing: public data and a laptop.
 
-## What this cannot tell you {menu: Limits}
+## What went wrong
 
-- **When the oldest *myths* or *northern constellations* were first invented.** Some star figures—like the Bull, the Lion, the Scorpion, and the Great Bear—are documented on Mesopotamian seals and tablets centuries to millennia before Hipparchus, and northern folk asterisms leave no southern horizon hole. Our test measures only the **southern boundary preserved in Ptolemy's star catalogue**.
-- **What Aratus's *verbal* descriptions say.** Earlier studies like Ovenden (1966), Roy (1984), and Schaefer (2002) analyzed verbal statements in Aratus's *Phaenomena* (~275 BCE, drawing on Eudoxus ~370 BCE) about which figures touched the celestial equator and tropics. Once Hipparchus and Ptolemy systematically catalogued stars down to their own Mediterranean horizon, they overwrote whatever older empty patch existed in the star list.
-- **A single sharp latitude.** Latitude and horizon haze trade off tightly (`35.7° N` at `k_V = 0.10` vs. `22.5° N` at `k_V = 0.35`), and our locked primary model (`k_V = 0.25`) shows that imposing an inaccurate haze model on faint catalogued stars can bias both epoch and latitude substantially.
-- **Unresolved visual binaries.** Hipparcos lists `α¹ Cen` (`HIP 71683`) and `α² Cen` (`HIP 71681`, 14" apart) separately while Verbunt & van Gent (2012) link Ptolemy's single naked-eye `α Cen` to `HIP 71681`. A post-hoc check merging them into one star (`V = −0.27`) left Primary M1 completely unchanged (`910 CE, 25.8° N`) and shifted `k_V = 0.15` and `M3` by just 10 years (`200 CE` and `51 BCE`).
-- **Second-vendor replication pending.** Under Aletheia Lab's `data` lane rules, this study awaits an independent replication from `protocol.md` by a second vendor's AI.
+- **The main model was misjudged.** We named the fixed-haze model as the main one. It gave an impossible date. The verdict survives because the rule used the whole range of versions, and the whole range lies after 201 BCE.
+- **The range is cut off at 1000 CE.** That was the edge of the search. The true upper end for the main model may lie later still, which makes the same point more strongly.
+- **The question as posed could not be answered by this record.** The issue asked how old the constellations are. A star catalogue answers a different question: when its stars were last listed.
 
-::: details Technical files, checksums, and post-lock diagnostics
-- **Protocol lock:** `questions/ancient-sky-hole/protocol.lock` (`sha256 4be6d43dc0bd6aa66808853167c899697b35450dad12a97ef6da9159a8591776`, locked `2026-11-23T18:45:56Z`, commit `bc04372`). Zero amendments (`amendments.md`).
-- **Leave-one-constellation-out (LOCO) range:** Across all 21 southern constellations dropped individually in Primary M1, epoch spans `680 CE` to `1000 CE` (`25.8°` to `26.7° N`). Dropping Piscis Austrinus (`−230 yr`), Aquarius (`−200 yr`), or Eridanus (`−190 yr`) produces the largest early shift; dropping Centaurus (`+90 yr`) or Argo (`+70 yr`) shifts latest.
-- **Code verification:** `analysis/test_skyhole.py` passes all 4 astrometry, atmosphere, 4-epoch synthetic recovery, and patchy-sky bootstrap tests; `analysis/skyhole.py --decoy` passed pre-lock on a synthetic `1801 BCE, 35.0° N` sky (`1671 BCE, 35.3° N`, free-pole offset `0.44°`).
-:::
+## What this cannot tell you
+
+- **How old the figures are.** Babylonian star lists that name many of them are generally dated about a thousand years before Hipparchus (not checked here), and nothing in this study bears on that or on anything older. A test of the figures' own age would have to use what the old sources say about the figures as wholes, such as which of them rose and set together, and not the positions of single stars.
+- **Whether an older empty patch was overwritten.** If an earlier people left a hole centred elsewhere, the Greek cataloguers filled their own sky in over it. Only the last edge survives.
+- **Anything exact about the date.** The honest range is 201 BCE to 1000 CE, and its upper half is produced by a model we know to be wrong.
+- One AI system designed, ran and wrote up the study, and another re-derived it. No historian of astronomy has checked it.
 
 ## Files
 
 - [Full results](https://github.com/ejhong/aletheia-lab/blob/main/questions/ancient-sky-hole/RESULTS.md)
-- [The locked plan](https://github.com/ejhong/aletheia-lab/blob/main/questions/ancient-sky-hole/protocol.md) and [lock file](https://github.com/ejhong/aletheia-lab/blob/main/questions/ancient-sky-hole/protocol.lock)
-- [Data manifest](https://github.com/ejhong/aletheia-lab/blob/main/questions/ancient-sky-hole/MANIFEST.md) (VizieR URLs and SHA-256 checksums)
-- [Analysis script](https://github.com/ejhong/aletheia-lab/blob/main/questions/ancient-sky-hole/analysis/skyhole.py), [simulated-sky tests](https://github.com/ejhong/aletheia-lab/blob/main/questions/ancient-sky-hole/analysis/test_skyhole.py), and [interactive figure generator](https://github.com/ejhong/aletheia-lab/blob/main/questions/ancient-sky-hole/analysis/make_figures.py)
+- [The locked plan](https://github.com/ejhong/aletheia-lab/blob/main/questions/ancient-sky-hole/protocol.md)
+- [Code](https://github.com/ejhong/aletheia-lab/tree/main/questions/ancient-sky-hole/analysis) and the [replication](https://github.com/ejhong/aletheia-lab/tree/main/questions/ancient-sky-hole/replication/fable)
 
-AI did this work: Antigravity (Google DeepMind), directed by Eugene.
+AI did this work: Antigravity (Google DeepMind) designed and ran the study and built the figures. Claude (Anthropic) replicated it and rewrote this page in the lab's plain style. Eugene directed it.
