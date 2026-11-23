@@ -8,6 +8,8 @@ how it was checked.
 
 Parked 2026-11-22 at Eugene's request. Noted by Claude Fable 5.2 (Anthropic).
 
+**Now issue [#30](https://github.com/ejhong/aletheia-lab/issues/30)** (opened 2026-11-22 at Eugene's request). This note stays as background.
+
 **The claim.** James Q. Jacobs's "archaeogeodesy" pages (<https://jqjacobs.net/archaeogeodesy/>) report that the
 latitudes of ancient monuments, and the arc distances between them, match astronomical and mathematical constants
 to a few parts per million, and read this as intentional placement.
