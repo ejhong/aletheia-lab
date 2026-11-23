@@ -6,6 +6,8 @@
 #   Fold a section:  "::: details Title" opens it and ":::" closes it.
 #   Also update the "Where things stand" note and the "updated:" date below.
 summary: Penrose argued from Gödel's theorem that the mind is not a machine. A proof checker went through the argument. The modest conclusion holds; the proof of the strong one does not.
+verdict: The modest conclusion is proved; the proof of the strong one fails
+result: Penrose's modest conclusion is proved by a proof checker. His proof of the stronger one, that the mind is no machine at all, does not hold up. The stronger conclusion itself is neither proved nor refuted, and nothing here touches his physics.
 dek: Roger Penrose argued from Gödel's theorem that the human mind cannot be a machine. We wrote his argument and the standard replies in Lean 4, where a proof checker verifies every step and every assumption has to be stated.
 updated: 2026-11-23
 card_alt: A line from Gödel's theorem to "not a machine we can know is sound", marked proved, continuing as a dotted line to "not a machine at all", marked not established.
