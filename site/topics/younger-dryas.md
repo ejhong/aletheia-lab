@@ -6,6 +6,8 @@ title: The Younger Dryas impact hypothesis
 summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Six studies each test one mark such an event should have left.
 questions: 43, 60, 69, 75, 76, 40, 100
 order: 1
+atlas: ydih
+atlas_title: Fire From the Sky
 updated: 2026-11-23
 image: younger-dryas
 image_alt: An engraving of a comet breaking up over the edge of an ice sheet, with mammoths on the plain below and an ice core in the foreground.
