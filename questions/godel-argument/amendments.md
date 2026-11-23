@@ -266,3 +266,11 @@ Response: accepted. The fixed-point hypothesis of S2f is now 𝓢 ⊢ K(s ↔ K(
 exploratory proof was redone with the weaker hypothesis and still goes through. Round 2 re-checks S2f and the
 planted error that mimics it; the other items are unchanged.
 
+
+**Round 2 and the state at the lock.** Cost $0.90. S2f: `faithful_with_caveats` from both checkers; both caught the
+planted error again. Final verdicts are in `statement-check/REPORT-2R.md`: all five real items are
+`faithful_with_caveats` from both checkers, and both planted errors were caught. Total for this amendment's
+check: $3.78 ($1.14 OpenAI, $2.64 Google). Question total: $25.98 of $50.
+
+`statement-check/Statement3.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement3.lean` and is
+locked there. Neither new statement has been proved for the record before this point.

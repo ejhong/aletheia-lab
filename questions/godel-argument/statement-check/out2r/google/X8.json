@@ -1,0 +1,43 @@
+{
+  "id": "X8",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T03:27:14Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm) (conF : Fm),\n    Def1 𝓑 K → Def2 𝓑 K → Def6 𝓑 K → 𝓑 ⪯ 𝓢 →\n    Def4 𝓢 K →\n    (∃ s, 𝓢 ⊢ K (s 🡘 K (F (∼s)))) →\n    (∀ σ, 𝓑 ⊢ conF 🡒 ∼(F σ ⋏ F (∼σ))) →\n    (∀ σ, 𝓢 ⊢ K (K σ 🡒 F σ)) →\n    𝓢 ⊢ ∼K conF\n",
+  "usage": [
+    [
+      1586,
+      4088
+    ],
+    [
+      3090,
+      11414
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting that for all types Fm (sentences), S₀, and S (proof systems); all structures giving Fm the object-language connectives 🡒, ⋏, ⋎, ∼ (with φ 🡘 ψ abbreviating (φ 🡒 ψ) ⋏ (ψ 🡒 φ)) and constants ⊤, ⊥; all provability relations on Fm for S₀ and S; all systems 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens; all arbitrary functions K, F : Fm → Fm; and every sentence conF : Fm, if the following eight hypotheses all hold: (1) (Def1 𝓑 K) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K φ; (2) (Def2 𝓑 K) for all sentences φ and ψ, 𝓑 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) (Def6 𝓑 K) for every sentence φ, 𝓑 proves K φ 🡒 K (K φ); (4) (𝓑 ⪯ 𝓢) every sentence provable in 𝓑 is provable in 𝓢; (5) (Def4 𝓢 K) for every sentence φ, 𝓢 proves K (K φ 🡒 φ); (6) there exists a sentence s : Fm such that 𝓢 proves K (s 🡘 K (F (∼s))); (7) for every sentence σ : Fm, 𝓑 proves conF 🡒 ∼(F σ ⋏ F (∼σ)); and (8) for every sentence σ : Fm, 𝓢 proves K (K σ 🡒 F σ); then 𝓢 proves ∼(K conF). Nothing further is required: in particular, neither 𝓑 nor 𝓢 is assumed to be consistent; 𝓢 is not assumed to satisfy Def1 (closure under φ ↦ K φ) or Def3 (∀ φ, 𝓢 ⊢ K φ 🡒 φ); K and F are arbitrary functions constrained only by the listed hypotheses; conF is an arbitrary sentence constrained only by hypothesis (7); and the conclusion asserts provability of the object-language negation ∼(K conF) in 𝓢 (rather than merely that 𝓢 does not prove K conF).\"}",
+  "translation": "Target is the proposition asserting that for all types Fm (sentences), S₀, and S (proof systems); all structures giving Fm the object-language connectives 🡒, ⋏, ⋎, ∼ (with φ 🡘 ψ abbreviating (φ 🡒 ψ) ⋏ (ψ 🡒 φ)) and constants ⊤, ⊥; all provability relations on Fm for S₀ and S; all systems 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens; all arbitrary functions K, F : Fm → Fm; and every sentence conF : Fm, if the following eight hypotheses all hold: (1) (Def1 𝓑 K) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K φ; (2) (Def2 𝓑 K) for all sentences φ and ψ, 𝓑 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) (Def6 𝓑 K) for every sentence φ, 𝓑 proves K φ 🡒 K (K φ); (4) (𝓑 ⪯ 𝓢) every sentence provable in 𝓑 is provable in 𝓢; (5) (Def4 𝓢 K) for every sentence φ, 𝓢 proves K (K φ 🡒 φ); (6) there exists a sentence s : Fm such that 𝓢 proves K (s 🡘 K (F (∼s))); (7) for every sentence σ : Fm, 𝓑 proves conF 🡒 ∼(F σ ⋏ F (∼σ)); and (8) for every sentence σ : Fm, 𝓢 proves K (K σ 🡒 F σ); then 𝓢 proves ∼(K conF). Nothing further is required: in particular, neither 𝓑 nor 𝓢 is assumed to be consistent; 𝓢 is not assumed to satisfy Def1 (closure under φ ↦ K φ) or Def3 (∀ φ, 𝓢 ⊢ K φ 🡒 φ); K and F are arbitrary functions constrained only by the listed hypotheses; conF is an arbitrary sentence constrained only by hypothesis (7); and the conclusion asserts provability of the object-language negation ∼(K conF) in 𝓢 (rather than merely that 𝓢 does not prove K conF).",
+  "b_raw": "{\"verdict\": \"divergent\", \"divergences\": [{\"severity\": \"major\", \"description\": \"The conclusion of TARGET is `𝓢 ⊢ ∼K conF` (corresponding to `T ⊢ ¬B Con q`), omitting the outer `K` (`B`) of Theorem 6's conclusion `T ⊢ B¬B Con q` (which would be `𝓢 ⊢ K (∼K conF)`). Besides changing the conclusion from provable unprovability (`B¬B Con q`) to plain unprovability (`¬B Con q`), this omission makes TARGET false under its stated hypotheses: because `K φ 🡒 φ` (`Def3`) is intentionally omitted, any consistent classical system with `K φ := ⊤` and `F φ := ⊥` satisfies all hypotheses while failing to prove `∼K conF` (`∼⊤`).\"}, {\"severity\": \"minor\", \"description\": \"Because arithmetic, Gödel numbering, and object-language quantifiers are abstracted away (as declared by the author), the fixed point `∃ s, 𝓢 ⊢ K (s 🡘 K (F (∼s)))` is assumed as a hypothesis rather than derived by the diagonal lemma, and `q(ng[s])` is rendered directly as `F (∼s)` without modelling a formula `q(x)` or the primitive recursive negation term `ng`.\"}, {\"severity\": \"minor\", \"description\": \"`Con q`, defined in the source as the quantified arithmetic formula `∀x¬(q(x) & q(ng(x)))`, is replaced by an arbitrary sentence `conF` constrained only by the sentence-level instances `∀ σ, 𝓑 ⊢ conF 🡒 ∼(F σ ⋏ F (∼σ))` in `𝓑`, and `q(x)` is generalized to an arbitrary function `F : Fm → Fm`.\"}, {\"severity\": \"minor\", \"description\": \"Reinhardt's single first-order arithmetic modal theory `T` (which includes arithmetic, quantifiers, and the Barcan schema `B∀xP → ∀x Bp`) is generalized to a pair of abstract classical propositional systems `𝓑 ⪯ 𝓢` with necessitation assumed only on `𝓑`, which weakens the background hypotheses on the theory.\"}], \"summary\": \"TARGET diverges materially from Reinhardt's Theorem 6 because its conclusion `𝓢 ⊢ ∼K conF` drops the outer `K` (`B`) from `T ⊢ B¬B Con q`; combined with the omission of `K φ 🡒 φ`, this renders the formal statement false as written (whereas `𝓢 ⊢ K (∼K conF)` would match the theorem). Aside from this major error, the remaining differences are minor idealizations stemming from the declared abstraction away from arithmetic, Gödel numbering, and quantifiers.\"}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The conclusion of TARGET is `𝓢 ⊢ ∼K conF` (corresponding to `T ⊢ ¬B Con q`), omitting the outer `K` (`B`) of Theorem 6's conclusion `T ⊢ B¬B Con q` (which would be `𝓢 ⊢ K (∼K conF)`). Besides changing the conclusion from provable unprovability (`B¬B Con q`) to plain unprovability (`¬B Con q`), this omission makes TARGET false under its stated hypotheses: because `K φ 🡒 φ` (`Def3`) is intentionally omitted, any consistent classical system with `K φ := ⊤` and `F φ := ⊥` satisfies all hypotheses while failing to prove `∼K conF` (`∼⊤`)."
+      },
+      {
+        "severity": "minor",
+        "description": "Because arithmetic, Gödel numbering, and object-language quantifiers are abstracted away (as declared by the author), the fixed point `∃ s, 𝓢 ⊢ K (s 🡘 K (F (∼s)))` is assumed as a hypothesis rather than derived by the diagonal lemma, and `q(ng[s])` is rendered directly as `F (∼s)` without modelling a formula `q(x)` or the primitive recursive negation term `ng`."
+      },
+      {
+        "severity": "minor",
+        "description": "`Con q`, defined in the source as the quantified arithmetic formula `∀x¬(q(x) & q(ng(x)))`, is replaced by an arbitrary sentence `conF` constrained only by the sentence-level instances `∀ σ, 𝓑 ⊢ conF 🡒 ∼(F σ ⋏ F (∼σ))` in `𝓑`, and `q(x)` is generalized to an arbitrary function `F : Fm → Fm`."
+      },
+      {
+        "severity": "minor",
+        "description": "Reinhardt's single first-order arithmetic modal theory `T` (which includes arithmetic, quantifiers, and the Barcan schema `B∀xP → ∀x Bp`) is generalized to a pair of abstract classical propositional systems `𝓑 ⪯ 𝓢` with necessitation assumed only on `𝓑`, which weakens the background hypotheses on the theory."
+      }
+    ],
+    "summary": "TARGET diverges materially from Reinhardt's Theorem 6 because its conclusion `𝓢 ⊢ ∼K conF` drops the outer `K` (`B`) from `T ⊢ B¬B Con q`; combined with the omission of `K φ 🡒 φ`, this renders the formal statement false as written (whereas `𝓢 ⊢ K (∼K conF)` would match the theorem). Aside from this major error, the remaining differences are minor idealizations stemming from the declared abstraction away from arithmetic, Gödel numbering, and quantifiers."
+  }
+}
