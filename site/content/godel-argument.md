@@ -127,7 +127,7 @@ So the argument establishes "not a machine you know to be sound". It does not es
 - Penrose's and Gödel's words are quoted through Koellner; neither book was in hand.
 - Nothing here tests whether a person is well modelled as a consistent, logically closed set of statements.
 
-Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/q/godel-argument/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/q/godel-argument/questions/godel-argument/lean/GodelArgument). Cost: $12.38, all on the statement check.
+Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Cost: $12.38, all on the statement check.
 
 ## Sources
 
