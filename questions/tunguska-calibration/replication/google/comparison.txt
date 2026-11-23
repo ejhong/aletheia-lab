@@ -1,0 +1,22 @@
+nh4: verdict ordinary / ordinary | network {'value': 1.448, 'rank': 10, 'n': 56, 'fraction': 0.1786} / {'value': 1.4484, 'rank': 10, 'n': 56, 'fraction': 0.1786} | sites same: True | windows 56 / 56
+   by-site differences: none; size differences: none; variant differences: none; variants missing: none; apart differences: none; top five windows same: True
+   power share 1.0, pulse 0.1: ours {'elevated': 0.11, 'exceptional': 0.028} theirs {'elevated': 0.08, 'exceptional': 0.02}
+   power share 1.0, pulse 0.25: ours {'elevated': 0.083, 'exceptional': 0.02} theirs {'elevated': 0.085, 'exceptional': 0.0225}
+   power share 1.0, pulse 0.5: ours {'elevated': 0.113, 'exceptional': 0.043} theirs {'elevated': 0.1175, 'exceptional': 0.05}
+   power share 1.0, pulse 1.0: ours {'elevated': 0.315, 'exceptional': 0.058} theirs {'elevated': 0.3825, 'exceptional': 0.055}
+   power share 1.0, pulse 2.0: ours {'elevated': 0.885, 'exceptional': 0.223} theirs {'elevated': 0.895, 'exceptional': 0.2125}
+   power share 1.0, pulse 4.0: ours {'elevated': 1.0, 'exceptional': 0.96} theirs {'elevated': 1.0, 'exceptional': 0.97}
+   power share 0.5, pulse 0.1: ours {'elevated': 0.077, 'exceptional': 0.025} theirs {'elevated': 0.0875, 'exceptional': 0.0175}
+   power share 0.5, pulse 0.25: ours {'elevated': 0.11, 'exceptional': 0.035} theirs {'elevated': 0.105, 'exceptional': 0.0075}
+   power share 0.5, pulse 0.5: ours {'elevated': 0.105, 'exceptional': 0.03} theirs {'elevated': 0.105, 'exceptional': 0.0275}
+   power share 0.5, pulse 1.0: ours {'elevated': 0.14, 'exceptional': 0.028} theirs {'elevated': 0.16, 'exceptional': 0.03}
+   power share 0.5, pulse 2.0: ours {'elevated': 0.323, 'exceptional': 0.058} theirs {'elevated': 0.275, 'exceptional': 0.08}
+   power share 0.5, pulse 4.0: ours {'elevated': 0.515, 'exceptional': 0.2} theirs {'elevated': 0.515, 'exceptional': 0.2075}
+no3: verdict ordinary / ordinary | network {'value': 1.048, 'rank': 10, 'n': 56, 'fraction': 0.1786} / {'value': 1.0483, 'rank': 10, 'n': 56, 'fraction': 0.1786} | sites same: True | windows 56 / 56
+   by-site differences: none; size differences: none; variant differences: none; variants missing: none; apart differences: none; top five windows same: True
+bc: verdict ordinary / ordinary | network {'value': 1.027, 'rank': 30, 'n': 92, 'fraction': 0.3261} / {'value': 1.0267, 'rank': 30, 'n': 92, 'fraction': 0.3261} | sites same: True | windows 92 / 92
+   by-site differences: none; size differences: none; variant differences: none; variants missing: none; apart differences: none; top five windows same: True
+s: verdict ordinary / ordinary | network {'value': 0.638, 'rank': 23, 'n': 56, 'fraction': 0.4107} / {'value': 0.6376, 'rank': 23, 'n': 56, 'fraction': 0.4107} | sites same: True | windows 56 / 56
+   by-site differences: none; size differences: none; variant differences: none; variants missing: none; apart differences: none; top five windows same: True
+   Katmai window: {'value': 2.464, 'rank': 2, 'n': 56, 'fraction': 0.0357} / {'value': 2.4642, 'rank': 2, 'n': 56, 'fraction': 0.0357}
+ALL AGREE
