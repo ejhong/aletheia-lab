@@ -31,6 +31,31 @@ In short: the old argument is right about something smaller than it claims. The 
 
 {{figure: godel-argument/tiles}}
 
+## Who stands where
+
+This is easily read as a fight between people who think the mind is a machine and people who think it is not. It is not that. Nobody below argues that the mind is a machine. They disagree about a proof, and about how much of it is left standing.
+
+{{figure: godel-argument/stances}}
+
+- **Penrose** gave the proof and holds its conclusion. He also has reasons from physics, which no one on this page examines.
+- **Koellner** is a critic of the proof, not of the conclusion. He wrote the argument out exactly in order to test it, and found two steps that break. One of his own theorems is that his system can prove neither that the mind is a machine nor that it is not.
+- **Corradini and Galvan** accept Koellner's system and answer that he stopped too soon. Take the argument to be about arithmetic only and the two steps hold. But what it then proves is less than Penrose claimed, and they say so.
+- **This check** sides with no one. It confirms that the argument is valid, that its rules are inconsistent as stated, and that a repaired version proves something weaker.
+
+### What is left of the proof
+
+Two accounts of what survives once the argument is repaired.
+
+{{figure: godel-argument/salvage}}
+
+- **Alike.** Both say: suppose a machine captures all of the mind's arithmetic. Then the mind knows something that machine cannot derive. That is a real result, and it is not "the mind is no machine".
+- **Different.** Ours is proved in a general setting. The five facts of arithmetic it needs are stated as assumptions, and Koellner's system is not built. Theirs is argued inside Koellner's system, in a journal. They also say the thing known lies outside arithmetic. For us that is the reason the argument's last step has to go; it is not itself part of what Lean checked.
+- **Unknown.** Whether the two routes are the same. We wrote our statement from Koellner's texts, without their papers, but already knowing from a search roughly what their abstract concludes. So this is not an independent rediscovery. It is a machine-checked statement whose conclusion agrees with the one their abstract reports, and we do not attribute our proof to them.
+
+Their second paper, by its abstract, adds that the mind's knowledge and any one formal system must differ, in one direction or the other, and that if the system is the larger, its consistency cannot be humanly decided. Reinhardt's theorem of 1985, proved in Stage 2 below, has a similar shape. That likeness is our reading, not their claim.
+
+If the two do match, the open dispute is smaller than it looks. Koellner and his critics would agree on what the repaired argument proves, and differ on how much that matters.
+
 ## The first argument
 
 Model an idealized mind as the set of arithmetic statements it would ever accept, and a machine as a formal system whose axioms can be listed mechanically. Thirteen statements were proved in this setting.
@@ -93,7 +118,7 @@ The theorem was then stated as he states it, checked, and proved. The plan had s
 - **Whether Penrose would accept the eight steps** as his argument. A reconstruction was checked, not his wording.
 - **Whether another theory of truth would save the argument.** One was used, Solomon Feferman's. Koellner argues that others would not help; that was not checked.
 - **The two central theorems of Koellner's analysis** are quoted, not re-proved. Checking them means building his whole system in Lean, which was not done.
-- **A published reply to Koellner**, by Corradini and Galvan, could not be obtained and is not covered.
+- **Whether our repaired argument is Corradini and Galvan's.** Their two papers reply to Koellner. We have read the abstracts only; the journal's site refused us and Eugene alike. The comparison above rests on those abstracts.
 - **Anything about physics.** Penrose's proposal that quantum gravity is non-computable, and the Orch OR theory built on it, stand or fall on evidence of another kind.
 
 This is no verdict on the atlas's claim [ORCH-C040](https://ejhong.github.io/aletheia/claims/ORCH-C040/). The lab does not grade the atlas.
@@ -231,6 +256,13 @@ Full report, with every limit and every disagreement: [`RESULTS.md`](https://git
 - Koellner, "On the Question of Whether the Mind Can Be Mechanized, II: Penrose's New Argument", *Journal of Philosophy* 115(9) (2018) 453–484, §§I–IV, from a copy supplied by Eugene.
 - Koellner, "Gödel's Disjunction", in Horsten and Welch (eds.), *Gödel's Disjunction* (OUP, 2016), sections 7.9 to 7.17, read on screen in a Kindle copy bought by Eugene.
 
+#### Abstract read, text not read
+
+- Corradini and Galvan, "Analysis of Penrose's Second Argument Formalised in DTK System", *Logic and Logical Philosophy* 31(3) (2022) 471–500, [doi:10.12775/LLP.2021.019](https://doi.org/10.12775/LLP.2021.019). Its conclusion, in the abstract's words: if such a formalism exists there is "at least one true non-arithmetic proposition known to the human mind" that the formalism cannot derive.
+- Corradini and Galvan, "A Note on Gödel's First Disjunct Formalised in DTK System", *Logic and Logical Philosophy* 33(4) (2024) 555–565, [doi:10.12775/LLP.2024.025](https://doi.org/10.12775/LLP.2024.025).
+
+Both abstracts were read on 23 November 2026 in the publisher's records at Crossref.
+
 #### Bibliographic details verified, text not read
 
 - Koellner, "II: Penrose's New Argument", *Journal of Philosophy* 115(9) (2018) 453–484.
@@ -238,7 +270,6 @@ Full report, with every limit and every disagreement: [`RESULTS.md`](https://git
 - Reinhardt, "Epistemic Theories and the Interpretation of Gödel's Incompleteness Theorems", *Journal of Philosophical Logic* 15(4) (1986) 427–474.
 - Carlson, "Knowledge, Machines, and the Consistency of Reinhardt's Strong Mechanistic Thesis", *Annals of Pure and Applied Logic* 105(1–3) (2000) 51–82.
 - Gödel, "Some Basic Theorems on the Foundations of Mathematics and Their Implications" (1951), in *Collected Works* III (OUP 1995) 304–323; the disjunction is at p. 310 (as cited in Koellner Part I).
-- Corradini and Galvan, "Analysis of Penrose's Second Argument Formalised in DTK System", *Logic and Logical Philosophy* 31(3) (2022) 471–500, [doi:10.12775/LLP.2021.019](https://doi.org/10.12775/LLP.2021.019); a follow-up in the same journal, vol. 33 (2024).
 - Savelyev, [arXiv:2001.07592](https://arxiv.org/abs/2001.07592) (its arXiv comment: "superseded by arxiv:2208.04752") and [arXiv:2208.04752](https://arxiv.org/abs/2208.04752) (comment on v3: "The framework currently has gaps").
 
 #### Unverified until the protocol checks them
