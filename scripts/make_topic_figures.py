@@ -241,12 +241,15 @@ def mind_over_matter():
         ("58", "fresh events from 2016 to 2025, chosen by a rule and not by the experimenters", False),
         ("−1.83", "the combined score, where the project's own record predicts about +2.5", False),
         ("27 of 57", "events beat their matched ordinary day: no better than a coin", False),
-        ("Next", "an audit of the project's original 500 events from the raw data", True)])
+        ("+6.08", "the combined score of 395 of the project's own events, recomputed from the raw data", True)])
     scorecard("topic-mind-over-matter", "scorecard", "What each test looked for and found",
               ["The claim", "If it were real", "What the data show"], [
         (47, "global-consciousness", "The random-number network", "Random-number devices around the world stray from chance on days of shared emotion.",
          "On 58 later events, scored with the project's own statistic, the network behaved as it does on ordinary days. Event days and control days cannot be told apart.",
-         "Not found", "No effect on a fresh test", "no")])
+         "Not found", "No effect on a fresh test", "no"),
+        (74, "gcp-audit", "The original 500 events", "The project's published result for its own events follows from its public raw data, and is tied to those events.",
+         "Recomputed from the raw data, 395 events match the published scores and add up to +6.08. The same hours a week away add up to −0.42. The numbers are right; how the events were chosen is the open question.",
+         "Found", "The original result is in the data", "yes")])
 
 
 def main():
