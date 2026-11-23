@@ -1,0 +1,8 @@
+{
+ "records": 100,
+ "p_at_or_below_0.05": 5,
+ "p_at_or_below_0.01": 2,
+ "p_at_or_above_0.95": 1,
+ "flagged": 2,
+ "median_p": 0.48507462686567165
+}
