@@ -23,6 +23,11 @@ statement file (proof lane, below). `scripts/check.py` (run by CI on every push 
 
 Changes after locking go in `amendments.md`, dated, with the reason, before the changed part runs.
 
+**Merge question branches with a merge commit, never a squash or a rebase.** The evidence that the lock came first
+is the order of commits. A squash folds the lock and the results into one commit and the check then fails on
+`main`. If that happens, open a second PR from the same question branch and merge it with "Create a merge commit";
+it changes no files and puts the original commits back into `main`'s history.
+
 ## By lane
 
 - **data / model:** the full lock. State the hypotheses, the exact test, the null distribution or baseline, the

@@ -35,4 +35,8 @@ Dated entries, newest last: what was tried, what happened, what next.
   passes with warnings as errors, locally and in CI (run 45051792273, commit d1968cd); 23 theorems pass the
   axiom audit. Wrote `RESULTS.md`.
 - Next: Eugene decides on Stage 2. *Shadows of the Mind* §2.5 is still needed to check S1e against its source.
-
+- 2026-11-23: PR #22 was merged as a squash, which put the lock and the results into a single commit on `main`
+  (b571124), and the lab check failed there. Nothing in the question changed. Repair: a second PR from this
+  branch, to be merged with a merge commit, so the original commits (lock e7485ae at 17:49 UTC, results 045d2ed
+  at 18:03 UTC on 2026-11-22) are in `main`'s history. `scripts/check.py` now reads every side of a merge
+  (`--full-history`); it still fails on a squash-only history.
