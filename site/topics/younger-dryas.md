@@ -4,7 +4,7 @@
 # "image:" names a picture in site/assets/illustrations/ (made by scripts/make_illustrations.py).
 title: The Younger Dryas impact hypothesis
 summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Six studies each test one mark such an event should have left.
-questions: 43, 60, 69, 75, 76, 40
+questions: 43, 60, 69, 75, 76, 40, 100
 order: 1
 updated: 2026-11-23
 image: younger-dryas
@@ -107,6 +107,8 @@ This version is harder to test, because it predicts no single sharp mark. Set ag
 **Where that leaves it.** The drawn-out version survives where the single day does not, mostly because it predicts less. Where it does predict something we could check, a long season of fires and a long veil of dust, the ice shows neither. Its one real point is the platinum: a layer laid down over ten or twenty years is easier to get from repeated input than from one event. But the platinum stops after those years, and it begins after the cold.
 
 **What would test it properly.** The stream is said to have crossed the Earth's path many times over thousands of years. Each crossing should have left the same marks. Platinum, or the cosmic dust that a disintegrating comet sheds, measured right through the ice age and not only at this one layer, would show whether such crossings happened and whether coolings followed them. Nobody has made that measurement, and it is beyond what public data allow.
+
+One step public data may allow is to calibrate on the airburst we know. Tunguska, in June 1908, fell within the dates of a Taurid shower. If it left a mark in Greenland ice, that mark can be scaled up, and the ice at the start of the Younger Dryas then limits how many such events a year there can have been. If it left none, the ice cannot see single airbursts, and our check for fire spikes says less than it seems to. That study is proposed and not yet run.
 
 ## What the studies add up to
 
