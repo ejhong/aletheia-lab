@@ -241,12 +241,26 @@ def mind_over_matter():
          "Not found", "No effect on a fresh test", "no")])
 
 
+def ancient_sky():
+    tiles("topic-ancient-skies", [
+        ("1,020", "stars of Ptolemy's catalogue matched to modern positions and wound back through time", False),
+        ("After 201 BCE", "in every version of the test: the empty patch is the horizon of the catalogue's own makers", True),
+        ("910 CE", "where the main model landed, centuries after the catalogue was written: a warning about the method", False),
+        ("Still open", "how old the constellation figures themselves are", True)])
+    scorecard("topic-ancient-skies", "scorecard", "What each study tested and found",
+              ["The clock", "If the sky map is very old", "What the record shows"], [
+        (85, "ancient-sky-hole", "The hole in the ancient sky", "The empty southern patch is centred where the pole stood long before Babylon or Greece.",
+         "It is centred where the pole stood for Hipparchus and Ptolemy, who compiled the catalogue. A sky of 3000 BCE fits far worse. But a catalogue's edge dates its last compilers, not the first people to draw the figures.",
+         "Not found", "The hole dates the catalogue, not the constellations", "no")])
+
+
 def main():
     younger_dryas()
     minds()
     crossings()
     mind_over_matter()
-    for folder in ("topic-younger-dryas", "topic-minds-and-machines", "topic-ancient-crossings", "topic-mind-over-matter"):
+    ancient_sky()
+    for folder in ("topic-younger-dryas", "topic-minds-and-machines", "topic-ancient-crossings", "topic-mind-over-matter", "topic-ancient-skies"):
         print(folder + ":", ", ".join(sorted(p.name for p in (FIG / folder).iterdir())))
 
 
