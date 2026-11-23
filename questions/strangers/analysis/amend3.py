@@ -92,7 +92,49 @@ def main():
     show("release genotypes", released)
     if sys.argv[1:] == ["check"]:
         return
-    sys.exit("the run step is added after the amendment is written")
+    table, first, second = snp_table(store)
+    cache = BAM.with_suffix(".obs.npz")
+    if cache.exists():
+        z = np.load(cache)
+        snp, base, length = z["snp"], z["base"], z["length"]
+    else:
+        snp, base, length, _ = reads.observations(BAM, table)
+        np.savez(cache, snp=snp, base=base, length=length)
+    rng = np.random.default_rng(SEED)
+    classes = {"all reads": np.ones(snp.size, bool), "short (60 or fewer)": length <= 60, "middle (61 to 75)": (length > 60) & (length < 76),
+               "long (76)": length == 76}
+    out = {"release": released, "observations": int(snp.size), "classes": {}}
+    xs = {}
+    for name, keep in classes.items():
+        xs[name] = genotype(store.n_snp, snp, base, first, second, keep, rng)
+        r = stats(xs[name])
+        r["S_transversions"] = stats(np.where(store.tv, xs[name], np.nan))["S"]
+        r["observations"] = int(keep.sum())
+        out["classes"][name] = r
+        show(name, r)
+        print(f"{'':34s} S on transversions {r['S_transversions']['f4']:+.5f} (Z {r['S_transversions']['z']:+.2f})")
+    rel = store.x(p["row"])
+    both = ~np.isnan(rel) & ~np.isnan(xs["all reads"])
+    agree = float(np.mean(rel[both] == xs["all reads"][both]))
+    out["calls_check"] = {"snps_in_both": int(both.sum()), "agreement": agree, "release_only": int((~np.isnan(rel) & np.isnan(xs["all reads"])).sum()),
+                          "reads_only": int((np.isnan(rel) & ~np.isnan(xs["all reads"])).sum())}
+    S = {k: v["S"] for k, v in out["classes"].items()}
+    a, sh, lo = S["all reads"], S["short (60 or fewer)"], S["long (76)"]
+    dz = (lo["f4"] - sh["f4"]) / np.hypot(lo["se"], sh["se"])
+    if agree < 0.98 or a["z"] < 4:
+        outcome = "not testable"
+    elif sh["f4"] >= 0.5 * a["f4"] and sh["z"] >= 2:
+        outcome = "the lean is in her short molecules too"
+    elif sh["f4"] < 0.5 * a["f4"] and dz >= 2:
+        outcome = "the lean sits in the long molecules"
+    else:
+        outcome = "inconclusive"
+    out.update(outcome=outcome, long_minus_short={"difference": lo["f4"] - sh["f4"], "z": float(dz)}, short_over_all=sh["f4"] / a["f4"], long_over_all=lo["f4"] / a["f4"])
+    dest = Q / "results" / "corrected" / "amended3"
+    dest.mkdir(parents=True, exist_ok=True)
+    json.dump(out, open(dest / "summary.json", "w"), indent=1, default=float)
+    print(f"calls agree with the release at {agree:.4f} of {both.sum()} SNPs; long minus short Z {dz:+.2f}; short/all {out['short_over_all']:.2f}; long/all {out['long_over_all']:.2f}")
+    print("OUTCOME:", outcome)
 
 
 if __name__ == "__main__":
