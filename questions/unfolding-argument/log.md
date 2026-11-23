@@ -105,4 +105,13 @@ Dated entries, newest last: what was tried, what happened, what next.
   twice (it called the counter a rendering of the paper's tollbooth, and then contained a false aside about
   k = 0). No unresolved divergence.
 - Question total so far: $27.06 of the $40 approved for today.
+- Locked `Statement3.lean` at 19:03:05 UTC (327ba92). Proofs in `Results3.lean` (34a5de8): the trial proofs moved
+  into a module file, with two proof-only helpers marked noncomputable so that the compiler does not try to
+  generate code for them. Build passes with warnings as errors locally and in CI (run 45244866647); six more
+  theorems pass the axiom audit, 33 in all.
+- Added the Stage 3 section to `RESULTS.md` and updated the site page and the topic page.
+- Not done: the other half of Stage 3 (intervening on the twin's own units); which machines exactly have a
+  feedback-free realization from bits; the Krohn–Rhodes theorem. Krohn and Rhodes (1965) and Zeiger (1967) were
+  not read, so what the results say about Hanson and Walker's general sentence depends on a reading of
+  "elementary components" that is `unverified`.
 

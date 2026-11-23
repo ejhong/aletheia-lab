@@ -93,3 +93,7 @@ Google $2.35). Detail: `statement-check/REPORT-3.md`, `round1-3/`, `round2-3/`.
 - Caveats both raise (minor, carried into `RESULTS.md`): the counter's interface (inputs `true`/`false`, output
   "is the count 0") is the lab's; "network" means finitely many units, synchronous and deterministic; dependence
   is judged over all states, reachable or not.
+
+**Lock.** `lean/UnfoldingArgument/Statement3.lean` locked at 2026-11-23T19:03:05Z (commit 327ba92), before any
+proof of it was in the repository. Proofs: `Results3.lean` (commit 34a5de8); CI run 45244866647 passes.
+

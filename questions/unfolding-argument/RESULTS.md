@@ -1,8 +1,13 @@
-# Machine-check the unfolding argument: results for Stages 0 to 2
+# Machine-check the unfolding argument: results for Stages 0 to 3
 
-Issue #66 · Lane: proof · Protocol and statements locked 2026-11-23T18:04:39Z (commit `7502087`) · No amendments
+Issue #66 · Lane: proof · Protocol and statements locked 2026-11-23T18:04:39Z (commit `7502087`) · Stage 3 statements locked
+2026-11-23T19:03:05Z (commit `327ba92`) · One amendment
 
 ## Answer
+
+Stages 0 to 2: all twenty locked statements are proved in Lean 4. Stage 3: all six are proved as well; see
+[Stage 3](#stage-3-units-with-memory) below. That makes twenty-six. The rest of this section, and everything down
+to the Stage 3 heading, is about Stages 0 to 2.
 
 All twenty locked statements are proved in Lean 4. Each proof depends only on Lean's three standard axioms, and
 the build passes in CI with warnings treated as errors
@@ -128,7 +133,7 @@ Proofs in `lean/UnfoldingArgument/Results2.lean`.
 | **First-person evidence is not behaviour** (Tsuchiya, Andrillon and Haun 2020, as reported by Herzog 2022, p. 9) | P1, P4 | If any evidence beyond behaviour is admitted, no mismatch is forced (S2i). | Nothing. Whether such evidence is admissible is not a mathematical question, and it is the whole dispute. |
 | **The argument proves too much** (Kleiner and Hoel 2021 present it as a generalization: it applies to "any minimally informative theory") | none; it is about scope | Correct in the single-valued setting: every theory that distinguishes two systems with the same behaviour is reached (S2h). | Only theories whose verdict is a function of behaviour are spared. |
 | **Then behaviourist theories are unfalsifiable** (Kleiner and Hoel 2021, Theorem 4.3) | none; the second horn of their dilemma | Holds with a premise the printed theorem does not state: every conceivable report already occurs in the experiment (S2d). Without it the conclusion fails (S2d′). | The dilemma stands for experiments that already see every conceivable report. |
-| **Feed-forward circuits with memory match forever** (Hanson and Walker 2021, via Krohn–Rhodes) | the limit in S1d | If a unit may keep its own state and may be arbitrarily complex, one unit matches any system forever (S1i); the limits S1c–S1e hold only when no unit depends on its own past. | The case that matters, simple units with memory, is Stage 3 and is not formalized. |
+| **Feed-forward circuits with memory match forever** (Hanson and Walker 2021, via Krohn–Rhodes) | the limit in S1d | If a unit may keep its own state and may be arbitrarily complex, one unit matches any system forever (S1i); the limits S1c–S1e hold only when no unit depends on its own past. | Stage 3 takes the case that matters, simple units with memory: a counter to eight has such a circuit of bits (S3c), a counter to three has none (S3b′). |
 
 The issue attributed the "overreach" reply to Usher. That attribution is `unverified`: Usher's article was not in
 hand, and its abstract argues the other points in the table.
@@ -202,9 +207,9 @@ claim. Full detail: `statement-check/REPORT.md`; the history of changes is in `p
   reasonable size is not shown, and S1e says the size cannot stay bounded as the experiment lengthens.
 - **Whether intervening inside the twin tells it apart from the original.** S1g covers interventions that both
   systems receive as inputs. Intervening on the twin's own units is Stage 3.
-- **The case of simple units with memory.** Hanson and Walker's feed-forward circuits are made of flip-flops,
-  and by the Krohn–Rhodes theorem such circuits can match a finite automaton forever. That is outside S1c–S1e,
-  which assume no unit depends on its own past, and is not formalized here. S1i is only the degenerate case.
+- **The full picture for units with memory.** Stage 3 shows that feed-forward circuits of bits match some
+  machines forever and not others. It does not say exactly which machines, and it does not formalize the
+  Krohn–Rhodes theorem.
 - **What the two unread replies say.** Tsuchiya, Andrillon and Haun (2020) and Usher (2021) were not read in the
   original. S1g and S2i formalize descriptions of them by an abstract and by their opponents.
 
@@ -227,9 +232,117 @@ claim. Full detail: `statement-check/REPORT.md`; the history of changes is in `p
   the Lean statements against the papers. The Lean kernel has checked the proofs.
 - The author is an AI model, and the argument bears on whether behaviour could show an AI system to be conscious.
 
+## Stage 3: units with memory
+
+Statements locked 2026-11-23T19:03:05Z (commit `327ba92`), under Amendment 1. Only the first half of the issue's Stage 3 was done; intervening on the
+twin's own units was not started.
+
+### Answer
+
+All six locked statements are proved, on the three standard axioms, and the build passes in CI
+([run 45244866647](https://github.com/ejhong/aletheia-lab/actions/runs/45244866647), commit `34a5de8`).
+
+In one sentence: once a unit may remember its own state, some machines can be built without feedback between
+units for all time and others cannot, and which is which depends on how many states a unit may have.
+
+### What follows from what (plain summary)
+
+Stage 1 called a network loop-free when no unit depends on anything in a cycle, its own past included. Hanson and
+Walker (2021) use a weaker notion, here called feedback-free: a unit may depend on its own past, as a flip-flop
+does, but no two different units influence each other. Their example is a counter that counts to eight, built
+from three flip-flops. They report Φ = 0 for that circuit, so for integrated information theory the weaker
+notion is the one that matters, and the question is whether Stage 1's time limit survives under it. That Φ is
+zero there is taken from them and not checked.
+
+1. **A feedback-free network of small units can only tick in certain rhythms.** If every unit has at most k
+   states, then under one repeated input the network ends up repeating itself with period (k!) to the power of
+   the number of units (S3a). For two-state units that is a power of two.
+2. **So a counter to three cannot be built from two-state units without feedback.** If a feedback-free network
+   with at most k states per unit matches the counter modulo m forever, m divides a power of k! (S3b). With
+   k = 2 and m = 3 that is impossible, however many units are used (S3b′).
+3. **A counter to eight can.** Three two-state units, each depending on itself and the earlier ones, match the
+   counter modulo 8 forever (S3c). This is Hanson and Walker's example, and it checks.
+4. **Neither counter has a loop-free twin for all time** in Stage 1's strict sense (S3d), like the latch.
+5. **With bigger units there is nothing to prove.** The counter modulo m is one unit with m states, and one unit
+   has no feedback between units (S3e).
+
+So the answer to "can the loops be removed for good?" has three layers. With no memory in the units: never, for
+anything that remembers. With memory in arbitrarily large units: always, trivially. With memory in units of a
+fixed size, such as bits: for some machines and not others. By S3b and a line of arithmetic, counting modulo a
+number with a prime factor larger than the unit size is on the wrong side; only the case of three and bits is
+stated as a theorem in Lean.
+
+### Results table
+
+Proofs in `lean/UnfoldingArgument/Results3.lean`.
+
+| | Claim | Lean name | Premises | Status | Source |
+|---|---|---|---|---|---|
+| S3a | A feedback-free network with at most k states per unit, fed any inputs and then one input repeated, ends up repeating its outputs with period (k!)^(number of units) | `FeedbackFreeIsEventuallyPeriodic` | feedback-free; at most k states per unit | proved | the lab's |
+| S3b | If such a network matches the counter modulo m at every horizon, m divides (k!)^(number of units) | `CounterTwinForcesDivisibility` | as S3a; agrees with the counter | proved | the lab's |
+| S3b′ | No feedback-free network of two-state units matches the counter modulo 3 at every horizon | `CounterMod3HasNoBinaryFeedbackFreeTwin` | none | proved | the lab's; bears on Hanson and Walker 2021 |
+| S3c | Some feedback-free network of three two-state units matches the counter modulo 8 at every horizon | `CounterMod8HasBinaryFeedbackFreeTwin` | none | proved | Hanson and Walker 2021, their example |
+| S3d | For m ≥ 2, no loop-free network matches the counter modulo m at every horizon | `CounterHasNoLoopFreeTwin` | m ≥ 2 | proved | the lab's; Stage 1's S1c applied |
+| S3e | The counter modulo m is feedback-free, with one unit of m states | `CounterIsOneUnitWithMemory` | none | proved | the lab's |
+
+Non-vacuity: the premises of S3a and S3b are met by the witness of S3c, a feedback-free network of two-state
+units that matches a counter.
+
+### What this does to the earlier results
+
+- **The reply in the last row of the replies table is now answered in part.** "Feed-forward circuits with memory
+  match forever" is true of Hanson and Walker's counter to eight (S3c) and false, for binary units, of a counter
+  to three (S3b′).
+- **Their general sentence needs a reading.** They write that "any abstract deterministic finite-state automata
+  (FSA) can be realized using a strictly feed-forward causal architecture comprised solely of simple elementary
+  components". If "elementary components" means binary memory devices, as in their circuit, the sentence fails
+  for the counter modulo 3, at the level of input-output behaviour. If it means the components the Krohn–Rhodes
+  theorem actually uses, which as I understand it second-hand include larger units for machines that count
+  modulo a number other than a power of two, the sentence stands, and then "feed-forward" is paid for in the
+  size of the units. Krohn and Rhodes (1965) and Zeiger (1967) were not read, so the second reading is
+  `unverified`.
+- **For a theory that counts units,** this means the choice of what a unit is cannot be left open. The same
+  counter modulo 3 is one unit without feedback, or several bits that must feed back on each other.
+- **Stage 1's limit stands as stated** (S3d): in the strict sense, with no memory in the units, nothing that
+  remembers has a twin for all time.
+
+### Statement check
+
+OpenAI `gpt-6.2-astra` and Google `gemini-4-neon`, 2026-11-23, three rounds, $3.65. Detail:
+`statement-check/REPORT-3.md`; the history is at the end of Amendment 1.
+
+- **Planted errors.** Two; both checkers called both divergent.
+- **Statements.** All six `faithful` or `faithful_with_caveats` from both checkers in the first round. None was
+  changed.
+- **Definitions.** OpenAI rated the two definitions `divergent` in round 1 because my description called the
+  counter a rendering of the paper's tollbooth. It is not: the paper's machine sends its whole state as output
+  and this counter says only whether the count is 0. The Lean was kept, since a counter that reveals less makes
+  the impossibility results stronger; the description was corrected, twice, and both checkers then rated it
+  `faithful`.
+- **Unresolved divergences.** None.
+- **Caveats both raise (minor).** The counter's interface is the lab's own; "network" means finitely many units,
+  updated together and deterministically; dependence is judged over all states, reachable or not.
+
+### Limits of Stage 3
+
+- The comparison is of input-output behaviour, and the counter's output is reduced to "is the count 0". Hanson
+  and Walker realize an automaton state for state. That makes S3b′ stronger than it needs to be and S3c weaker
+  than their circuit.
+- S3a is proved for one repeated input after an arbitrary start. Nothing is proved about periodic inputs with a
+  longer pattern, though the same argument should cover them.
+- The period (k!)^n is an upper bound in the sense of divisibility; it is not claimed to be the least.
+- Nothing here is new to automata theory, where the groups inside a machine are known to be the obstruction to
+  taking it apart. The prior-art search did not look for this result specifically.
+- No ϕ is computed. That a feedback-free network has ϕ = 0, as Hanson and Walker report for their circuit, is
+  taken from them.
+
 ## Amendments
 
-None. Everything changed by the statement check was changed before the lock, and is listed in `protocol.md`.
+- **Amendment 1 (2026-11-23): Stage 3, units with memory.** Six statements in a new file, with their own
+  statement check and lock, written and pushed before the check ran. It covers half of the issue's Stage 3; the
+  other half, intervening on the twin's own units, was not started. Nothing in Stages 0 to 2 was changed by it.
+
+Everything the first statement check changed was changed before the first lock, and is listed in `protocol.md`.
 
 Departures from the lab's process, both at Eugene's direction and recorded in `log.md`: the question was run in
 one session from Stage 0 to Stage 2 without waiting at the gates between stages; and the lab's $50 daily
@@ -237,13 +350,16 @@ spending cap was exceeded.
 
 ## Spending
 
-$23.41 of the $40 budget, all on the statement check: OpenAI $6.36, Google $17.05 (`SPENDING.md`).
+$27.06 in all, all on statement checks (`SPENDING.md`). Stages 0 to 2: $23.41 of a $40 budget (OpenAI $6.36,
+Google $17.05). Stage 3: $3.65 of $15 (OpenAI $1.30, Google $2.35).
 
 ## Who did the work
 
 AI did this work. Claude Fable 5.2 (Anthropic) searched for prior art, read the sources, wrote the definitions,
 statements, proofs and this report, on 2026-11-23. A sub-agent of the same model ran the prior-art search.
-OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` checked the statements on the same day. The Lean 4 kernel
+OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` checked the statements on the same day. For Stage 3, two
+sub-agents did mechanical work: Claude Haiku 5.5 pulled verbatim passages from Hanson and Walker, which were then
+checked mechanically against the text, and Claude Opus 5.5 added a mode to the checking script. The Lean 4 kernel
 (v4.35.0, with Mathlib at commit `56a0058`) checked the proofs. Eugene directed it: he chose the question and
 said to run it end to end.
 
@@ -260,3 +376,8 @@ length and not beyond. Either way the argument has force only if what a system d
 about what it feels. The proofs show that this one assumption carries the whole conclusion, and that with it the
 same reasoning applies to every theory that looks inside, not just to theories about loops. Whether the
 assumption is true is not a question a proof can answer.
+
+Stage 3 adds a twist about what counts as a part. If each part may remember its own state, as a memory bit does,
+then some machines can be built with no feedback between parts and run forever: a counter to eight is one. A
+counter to three is not; with two-state parts it cannot be done at any size. Let a part have three states and it
+is trivial. So "can the loops be removed?" has no answer until one says how big a part may be.
