@@ -1,0 +1,70 @@
+id_site	site_name	macro_region	lat	lon	chosen_unit	med_dt_10_15k	n_samples_10_15k	n_dates_9500_15500	tier
+1	Cygnet	North America	44.6628	-110.6161	X125	22.30	193	3	C1
+3	Burnt Knob	North America	45.7044	-114.9867	X125	46.71	106	3	C1
+9	Bluff	North America	41.3467	-122.5575	X125	48.12	85	3	C1
+12	Mumbo	North America	41.1913	-122.5092	X125	92.44	53	2	C1
+58	Lake Titicaca	South/Central America	-16.13444	-69.155278	CARE	85.66	40	9	C1
+60	Surucucho	South/Central America	-3.0625	-78.0	LT25	116.21	32	0	C3_coarse
+61	Laguna Chorreras	South/Central America	-2.75	-79.166667	C100	198.24	22	5	C3_coarse
+63	Laguna de Chochos	South/Central America	-7.63625	-77.47455	LT1M	258.71	20	4	C3_coarse
+75	Lake Facil	South/Central America	-44.325	-74.2833	PPOL	300.07	21	3	C3_coarse
+92	Trebol Lake	South/Central America	-41.07125	-71.4916	C250	60.00	80	5	C1
+95	17940 core	Asia/Australasia/Africa	20.1167	117.3833	XCM3	258.57	18	8	C3_coarse
+97	Dongganchi site	Asia/Australasia/Africa	40.2	116.0	XCM3	38.95	114	8	C1
+116	Chihuahueños Bog	North America	36.0472	-106.50833	C125	29.41	166	0	C2
+119	Lagoa do Caco	South/Central America	-2.970219	-43.267808	CMGR	150.11	22	6	C3_coarse
+129	Dead Horse Lake	North America	42.5606	-120.7781	C125	77.69	65	2	C1
+132	Coast Trail Pond	North America	37.985277	-122.8	C125	28.65	147	0	C2
+143	El Salto	South/Central America	-41.64	-73.0961	C125	31.90	128	5	C1
+147	Lepue	South/Central America	-42.8	-73.7	C125	19.80	239	8	C1
+149	Laguna Oprasa	South/Central America	-44.35555556	-73.65555556	PPOL	206.94	24	6	C3_coarse
+150	Lago Pollux	South/Central America	-45.6756	-71.8629	C125	30.07	168	11	C1
+158	Rio Rubens	South/Central America	-52.1375	-71.88138889	C125	18.00	262	0	C2
+160	Punta Arenas	South/Central America	-53.15	-70.95	X105	231.37	21	3	C3_coarse
+162	Puerto del Hambre	South/Central America	-53.6	-70.91666667	X106	236.08	19	2	C3_coarse
+170	Puerto Haberton	South/Central America	-54.88333333	-67.16666667	5015	241.39	22	6	C3_coarse
+199	Pixie	North America	48.596389	-124.196667	X150	93.92	42	4	C1
+200	Whyac	North America	48.67222	-124.8444	X150	295.65	15	3	C3_coarse
+221	Xindi	North America	67.111667	-152.491667	X125	14.00	279	4	C1
+258	Lago di Origlio	Europe	46.051166	8.942431	CARE	62.27	42	5	C1
+260	Soppensee	Europe	47.080219	8.08333333	CARE	105.88	49	0	C3_coarse
+261	Lobsigensee	Europe	47.030624	7.298178	CARE	111.92	43	0	C3_coarse
+281	Dublin Bog	Asia/Australasia/Africa	-41.727	146.233	CARE	149.23	29	5	C3_coarse
+285	Haeapugua	Asia/Australasia/Africa	-5.8333	142.7833	OTHE	277.10	16	1	C3_coarse
+323	Sacred Lake	Asia/Australasia/Africa	0.045906	37.52885	X459	204.96	17	5	C3_coarse
+326	Tugupugua	Asia/Australasia/Africa	-5.6691	142.6108	CARE	285.35	17	1	C3_coarse
+357	La Yeguada	South/Central America	8.45	-80.85	OTHE	174.20	22	5	C3_coarse
+359	Mobutu Sese Seko_Lake Albert	Asia/Australasia/Africa	1.8336	31.1672	XCM3	85.00	20	5	C1
+364	Enos	North America	49.28	-124.15	C125	233.49	24	4	C3_coarse
+438	Okarito Pakihi	Asia/Australasia/Africa	-43.241667	170.216667	CARE	345.00	19	0	C3_coarse
+445	Lago della Costa AP1	Europe	45.270226	11.742935	C010	280.24	18	1	C3_coarse
+485	Kettlehole Bog	Asia/Australasia/Africa	-43.0546	171.7862	SQG5	121.00	29	7	C3_coarse
+490	Lago del Greppo	Europe	44.116667	11.666667	C010	134.97	30	2	C3_coarse
+511	Lake Euramoo	Asia/Australasia/Africa	-17.159888	145.628577	X125	70.00	71	11	C1
+542	MD95-2042	Europe	37.75	-10.16667	M2GR	230.00	18	2	C3_coarse
+554	Canal de la Puntilla	South/Central America	-40.95	-72.9	X120	131.00	16	7	C3_coarse
+562	Lake Santa Rosa	South/Central America	-14.476944	-67.874722	XPIX	333.00	15	2	C3_coarse
+586	Horton Plains	Asia/Australasia/Africa	6.8	80.49	X25P	71.97	29	5	C1
+611	Griblje Marsh	Europe	45.569722	15.279167	LT40	315.00	19	3	C3_coarse
+617	Xujianan	Asia/Australasia/Africa	35.5	106.0	GT10	230.00	21	0	C3_coarse
+619	Jiangyangcun	Asia/Australasia/Africa	34.5	108.3	GT10	242.00	19	0	C3_coarse
+631	Lac du Lait	Europe	45.316389	6.813611	XARE	115.00	44	2	C3_coarse
+634	Lago di Gembro	Europe	46.16444	10.15444	C010	76.54	47	4	C1
+684	Cheremushuka bog	Asia/Australasia/Africa	52.75	108.083333	MMML	200.00	24	1	C3_coarse
+686	Tompuda bog	Asia/Australasia/Africa	55.133333	109.766667	MMML	379.50	15	1	C3_coarse
+714	Lago di Pergusa	Europe	37.51667	14.3	X512	233.00	18	3	C3_coarse
+722	Xere Wapo C	Asia/Australasia/Africa	-22.29	166.97	XCM3	172.05	29	1	C3_coarse
+769	Little Lake	North America	44.168015	-123.583526	X125	26.42	183	1	C2
+771	Braamhoek	Asia/Australasia/Africa	-28.2333	25.5833	100P	275.50	19	0	C3_coarse
+772	Eski Acıgöl	Europe	38.55	34.54	PCMY	49.83	97	0	C2
+790	Aguai Ramata	Asia/Australasia/Africa	-6.5639	145.211	XCM3	17.19	173	4	C1
+953	Micalong Swamp	Asia/Australasia/Africa	-35.3333	148.5167	SQC0	311.01	16	3	C3_coarse
+1069	Laguna Lincoln	South/Central America	-45.366667	-74.066667	CPAR	179.50	27	1	C3_coarse
+1070	Laguna Lofel	South/Central America	-44.928844	-74.325333	CPAR	242.00	24	1	C3_coarse
+1071	Laguna Six Minutes	South/Central America	-46.416667	-74.3333	CPAR	330.00	18	2	C3_coarse
+1072	Laguna Stibnite	South/Central America	-46.416667	-74.4	CPAR	213.00	19	3	C3_coarse
+1103	GeoB1023-5	Asia/Australasia/Africa	-17.1572	11.0117	TOM9	148.23	29	3	C3_coarse
+1104	ODP1078C	Asia/Australasia/Africa	-11.9167	13.4	COML	239.65	19	6	C3_coarse
+1128	Three Creeks	North America	44.099033	-121.627288	C125	42.89	116	0	C2
+1131	Bulter Lake	North America	43.662492	-88.13407	C125	17.78	266	0	C2
+1136	Lake Frome	Asia/Australasia/Africa	-30.68	139.78	SQC0	134.80	33	0	C3_coarse
