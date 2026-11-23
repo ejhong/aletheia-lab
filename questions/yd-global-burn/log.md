@@ -1,0 +1,5 @@
+# Log
+
+- **2026-11-23:** Opened Issue #69 and created branch `q/yd-global-burn` at Eugene's request to test the global biomass-burning pillar of the Younger Dryas impact hypothesis (~9% of Earth's biomass burned, Wolbach et al. 2018) across two independent public NOAA WDS Paleoclimatology archives: Antarctic atmospheric CO₂ / δ¹³C-CO₂ (Taylor Glacier, WAIS Divide, Eggleston 155 kyr composite) and the Global Charcoal Database v3 (GCD3).
+- **2026-11-23:** Downloaded all datasets into git-ignored `data/noaa/`, recorded SHA-256 hashes in `MANIFEST.md`, and ran blind structure inspection (`explore/structure.py`) with all values inside `[12,000, 13,600]` cal BP masked.
+- **2026-11-23:** Wrote `protocol.md`, `analysis/burn.py`, and `analysis/test_burn.py`. All 10 unit tests passed (`0.14s`). Ran `python3 analysis/burn.py --decoy` (excluding `k = -1, 0, 1`, scoring decoy `k = -5 [11,150, 11,450)` cal BP) and verified full pipeline + synthetic 100-yr fire-pulse recovery on Tier C1 (`n = 19` sites; 98% top-5% / 95% rank-1 recovery in `E_100` for a 1.5 SD pulse across 50% of sites). Freezing and locking `protocol.md` before viewing `[12,000, 13,600]` cal BP.
