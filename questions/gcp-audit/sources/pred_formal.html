@@ -1,0 +1,6240 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<!-- SSI pageheaders content -->
+<meta charset="utf-8" />
+<meta http-equiv="cleartype" content="on" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="author" content="Roger Nelson" />
+<meta name="keywords" content="consciousness,group consciousness,Global Consciousness Project,Roger Nelson,GCP,resonance,global consciousness,synchronized consciousness,mind,world,global,gaia,anomalies,parapsychology,psi,random event,REG,RNG,subtle energy,millennium" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="Classification" content="science" />
+<meta name="topic" content="consciousness interconnected" />
+<meta name="robots" content="index,follow" />
+<meta name="google-site-verification" content="7XuBdyEQp1Brlf_8MibwMAay-uVMEAMXhDhSyFA2vmg" />
+<meta name="google-site-verification" content="aL9QkWh2kAvRSsBDKcgGkPSGbGz_Trz6PSzJXqlxctE" />
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+<link rel="stylesheet" href="/css/gcpstyles.css" media="screen,print,handheld,all" />
+<link rel="stylesheet" href="/css/handheld.css" media="handheld" />
+<script src="/scripts/functions.js"></script>
+<!-- end SSI_pageheaders -->
+
+<title>GCP Registry of Formal Specifications for Global Events</title>
+<meta name="description" content="Event registry: Global Consciousness Project, scientific research network studying global consciousness" />
+<style media="all">
+<!--
+/* ====== registry table  ======= */
+table {
+  margin: 2em auto auto auto; 
+  max-width:90%;
+}
+table caption {
+  font-weight: normal; 
+}
+table td+td+td, 
+table td+td+td+td { 
+  text-align: right;  /* cols align right  */ 
+}
+table td+td+td+td+td { 
+  text-align: left;   /* cols align left  */
+}
+/* min screen width for registry table  
+   so morph table for mobile squishiness
+*/
+@media only screen and (max-width: 820px)  {
+  table, thead, tbody, tr, th, td { 
+    display: block; 
+    font-size: 16px !important;
+  }
+  /* hide caption as there's no sorting the squishy table */
+  table caption { display: none; } 
+  /* hide table headings (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    margin: 0 0 0.5rem 0;
+  }
+  td { 
+    /* behave like a row */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding: 3px 3px 0 50% !important;
+    text-align: left !important;
+  }
+  td:before { 
+    /* now behave like a table header */
+    position: absolute;
+    /* top/left values mimic padding */
+    top: 3px;
+    left: 0;
+    width: 45%; 
+    padding-right: 3px; 
+    white-space: nowrap; 
+  }
+  table td+td { white-space: normal; }
+  /* data labels  */
+  /* no data-* attribute + content bloats HTML, 
+     this way requires only page-specific CSS 
+  */
+  table td:nth-of-type(1):before { content: "Num"; text-align: right;}
+  table td:nth-of-type(2):before { content: "Description"; text-align: right;}
+  table td:nth-of-type(3):before { content: "Begin"; text-align: right;}
+  table td:nth-of-type(4):before { content: "End"; text-align: right;}
+  table td:nth-of-type(6):before { content: "Resolution"; text-align: right;}
+  table td:nth-of-type(7):before { content: "Recipe"; text-align: right;}
+  table td:nth-of-type(8):before { content: "Statistic"; text-align: right;}
+  table td:nth-of-type(9):before { content: "Include"; text-align: right;}
+}
+@media only screen and (max-width: 500px) {
+  table { 
+    max-width: 98% !important;
+  }
+  table, thead, tbody, tr, th, td { 
+    font-size: 14px !important;
+  }
+}
+-->
+</style>
+<script type="text/javascript" language="JavaScript" src="/scripts/sorttable.js"></script>
+</head><body><a name="top"></a>
+<header>
+  <!-- SSI header content -->
+  <div class="floatL">
+    <h1>
+      <a href="/index.html">The Global Consciousness Project</a>
+    </h1>
+  </div>
+  <div class="gradient">&nbsp;</div>
+  <div class="tagline" id="marquee">
+    What is the nature of Global Consciousness?
+  </div>
+<!-- end SSI_header -->
+</header>
+<section>
+  <article>
+    <!-- ***************** edit below this line ******************* -->
+    <h1>
+      Registry of Formal Hypotheses and Specifications
+    </h1>
+    <!--
+    <ul>
+      <li><a href="./predictions.html">Introduction</a>
+      </li><li><a href="./pred_p2.html">Scheduled Regular Events</a>
+      </li><li><a href="./pred_p3.html">Scheduled Unique Events</a>
+      </li><li><a href="./pred_p4.html">Unpredictable Events</a>
+      </li><li>Formal Specification Registry 
+      </li>
+    </ul>
+    <hr />
+    <p>
+      <b>NOTE: </b>Beginning the 1st of June 2005, the specification of hypotheses for surprise events requires special care because the GCP website now includes a <a href="./gcindex.html">realtime index display</a> that integrates the data in a fashion related to one of our primary analysis methods. Events such as terror attacks or earthquakes will be identified <a href="./pred.algorithm.html">algorithmically</a>, to preclude influence from the GC Index display.
+    </p> 
+    -->
+    <p>The procedures for event selection cannot be strictly formulaic because we are attempting something without precedent, addressing complex issues in a very big world. In brief: Event selection was necessarily flexible at the inception of the Project because we did not have precedents to tell us what kind of events would be useful. We knew nothing about appropriate length or other parameters. Experience has allowed some standardization of the event selection and specification procedures, and for some kinds of events, pre-defined parameters can be applied. For example, events that repeat, such as New Years, Kumbh Mela, or Earth Day, are registered with the same specifications in each instance. For unexpected events like earthquakes and terror attacks, we typically identify a period beginning half an hour to an hour before the moment of occurrence, followed by several hours (e.g., 4 to 8), depending on the type of event. Recent analyses suggest we may not need so much flexibility, and we are testing a simple specification for most events. See a <a href="./event.selection.html">more detailed description</a>.
+    </p><p>All formal events to be included in the comprehensive test of the general hypothesis of the Global Consciousness Project are identified in the following table. It includes specifications for the period of time during which we expect the data will show deviations from expectation, the resolution of the analysis, and the specific analytical recipe to be followed. By convention the period includes the second that begins at the begin time, up to the last second prior to the end time. For example, the the first hour begins with 00:00:00 and ends with 00:59:59. All times are GMT/UTC.
+    </p><p>In the registry, an asterisk by the event number and <q>No</q> in the Include column identifies events that are not included in the <q>rigorous subset</q> of the Formal Results. Brief annotations indicate why they are excluded, usually because the original specification was not adequately detailed, or the event had overlap with another. The notation <q>DB Rank</q> identifies a few events that were used in an experimental analysis procedure involving ranking against random decoys; they are accepted formal events.
+    </p><p>If you need this information for analysis, you can <a href="./cgi-bin/pred_HTML_to_text-CGI.pl">create a text file for download</a>. The file uses a pipe character <q>|</q> for the field separator.
+    </p>
+  
+    <h2 class="center">
+      Registry entries
+    </h2>
+    <table class="sortable striped hilite" id="registry">
+      <caption class="center smallSans">
+        (click on table headings to sort by column)
+        <noscript class="red">
+          (requires enabling javascript)
+        </noscript>
+      </caption>
+      <thead>
+        <tr>
+          <th>Num
+          </th><th>Description
+          </th><th>Begin Date/Time
+          </th><th>End Date/Time
+          </th><th>Resolution
+          </th><th>Recipe
+          </th><th>Statistic
+          </th><th>Include
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1
+          </td><td>Embassy
+          </td><td>1998-08-07 07:15:00
+          </td><td>1998-08-07 10:14:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>2
+          </td><td>Omagh*
+          </td><td>1998-08-15 14:30:00
+          </td><td>1998-08-15 17:29:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Bad data period
+          </td>
+        </tr><tr>
+          <td>3
+          </td><td>Bomb Afghanistan
+          </td><td>1998-08-20 17:15:00
+          </td><td>1998-08-20 17:44:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>4
+          </td><td>Swissair 111 Crash
+          </td><td>1998-09-03 01:00:00
+          </td><td>1998-09-03 03:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>5
+          </td><td>McGwire Record
+          </td><td>1998-09-09 01:00:00
+          </td><td>1998-09-09 01:29:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>6
+          </td><td>Clinton Grand Jury
+          </td><td>1998-09-11 19:00:00
+          </td><td>1998-09-11 22:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>7
+          </td><td>Casitas Collapse
+          </td><td>1998-10-30 15:30:00
+          </td><td>1998-10-30 15:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>8
+          </td><td>Casitas Flood
+          </td><td>1998-10-30 19:00:00
+          </td><td>1998-10-30 21:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>9
+          </td><td>Global Vigil JT
+          </td><td>1998-11-13 16:00:00
+          </td><td>1998-11-13 16:14:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>10
+          </td><td>11th Hour Iraq*
+          </td><td>1998-11-26 19:00:00
+          </td><td>1998-11-26 21:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Not Prespec
+          </td>
+        </tr><tr>
+          <td>11
+          </td><td>World Peace UN
+          </td><td>1998-12-10 23:30:00
+          </td><td>1998-12-11 00:29:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>12
+          </td><td>Iraq Bombing
+          </td><td>1998-12-16 21:30:00
+          </td><td>1998-12-16 22:29:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>13
+          </td><td>Vote Impeachment
+          </td><td>1998-12-19 17:00:00
+          </td><td>1998-12-19 19:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>14
+          </td><td>Christmas Eve UTC
+          </td><td>1998-12-24 16:00:00
+          </td><td>1998-12-24 17:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>15
+          </td><td>Christmas Eve EST
+          </td><td>1998-12-24 21:00:00
+          </td><td>1998-12-24 22:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>16
+          </td><td>Christmas Eve PST
+          </td><td>1998-12-25 00:00:00
+          </td><td>1998-12-25 01:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>17
+          </td><td>New Year Mean 1998-1999
+          </td><td>1998-12-31 09:30:00
+          </td><td>1999-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes? Post Facto Analysis
+          </td>
+        </tr><tr>
+          <td>18
+          </td><td>New Year 1999 Times Sq*
+          </td><td>1999-01-01 04:55:00
+          </td><td>1999-01-01 05:04:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Redundant
+          </td>
+        </tr><tr>
+          <td>19
+          </td><td>New Yr Europe vs US*
+          </td><td>1998-12-31 23:00:00
+            <br />to 23:00:59
+          </td><td>1999-01-01 05:00:00
+            <br />to 05:00:59
+          </td><td>1-sec
+          </td><td>Diff of Sum Variance
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Redundant
+          </td>
+        </tr><tr>
+          <td>20
+          </td><td>New Yr Maxi vs Mini*
+          </td><td>1998-12-31 23:55:00
+            <br />10-min begins
+            <br />+10,+2,+1,0,-3,-5,-6,-8
+          </td><td>1998-12-31 23:55:00
+            <br />10-min begins
+            <br />+12,+5,-1,-2,-9,-11,-12
+          </td><td>1-sec
+          </td><td>Diff of Sig Avg of Var
+            <br />10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Redundant
+          </td>
+        </tr><tr>
+          <td>21
+          </td><td>Earthquake Columbia
+          </td><td>1999-01-25 17:15:00
+          </td><td>1999-01-25 21:14:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>22
+          </td><td>Clinton Acquittal
+          </td><td>1999-02-12 17:30:00
+          </td><td>1999-02-12 18:29:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>23
+          </td><td>Bomb Yugoslavia
+          </td><td>1999-03-24 19:00:00
+          </td><td>1999-03-24 19:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>24
+          </td><td>Dow Tops 10000
+          </td><td>1999-03-29 20:00:00
+          </td><td>1999-03-29 21:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>25
+          </td><td>Pray for Peace
+          </td><td>1999-04-03 20:00:00
+            <br />1999-04-04 19:00:00
+            <br />(DST)
+          </td><td>1999-05-03 19:01:59
+          </td><td>1-sec (orig 1-min?)
+          </td><td>Concat 2-min Z(s) 31 days
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes, Indp Part
+          </td>
+        </tr><tr>
+          <td>26
+          </td><td>Littleton School
+          </td><td>1999-04-20 17:30:00
+          </td><td>1999-04-20 20:29:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>27
+          </td><td>Autonomy PLO
+          </td><td>1999-05-05 22:00:00
+          </td><td>1999-05-05 22:14:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>28
+          </td><td>Peace at Last
+          </td><td>1999-06-10 05:00:00
+          </td><td>1999-06-10 07:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>29
+          </td><td>War Ends Milosevic
+          </td><td>1999-06-10 14:00:00
+          </td><td>1999-06-10 16:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>30
+          </td><td>JFK Jr Crash*
+          </td><td>1999-07-17 01:15:00
+          </td><td>1999-07-17 01:44:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Redundant
+          </td>
+        </tr><tr>
+          <td>31
+          </td><td>JFK Jr Crash
+          </td><td>1999-07-17 01:30:00
+          </td><td>1999-07-17 04:29:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>32
+          </td><td>India Train Crash
+          </td><td>1999-08-01 20:00:00
+          </td><td>1999-08-01 23:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>33
+          </td><td>Solar Eclipse*
+          </td><td>1999-08-11 09:30:00
+          </td><td>1999-08-11 12:35:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Inadeq Spec
+          </td>
+        </tr><tr>
+          <td>34
+          </td><td>Turkey Quake 30-min*
+          </td><td>1999-08-17 00:00:00
+          </td><td>1999-08-17 00:29:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Redundant
+          </td>
+        </tr><tr>
+          <td>35
+          </td><td>Turkey Quake 4-hr
+          </td><td>1999-08-17 00:00:00
+          </td><td>1999-08-17 03:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>36
+          </td><td>Japan Nuclear Accident
+          </td><td>1999-09-30 01:00:00
+          </td><td>1999-09-30 01:59:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>37
+          </td><td>Billion Person Medit
+          </td><td>1999-10-25 04:00:00
+          </td><td>1999-10-25 04:29:59
+          </td><td>10-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>38
+          </td><td>Typhoon India I*
+          </td><td>1999-10-29 04:30:00
+          </td><td>1999-10-29 06:29:59
+          </td><td>15-min
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Redundant
+          </td>
+        </tr><tr>
+          <td>39
+          </td><td>Typhoon India II
+          </td><td>1999-10-29 04:30:00
+          </td><td>1999-10-30 04:29:59
+          </td><td>1-hour
+          </td><td>Sum Variance
+            <br />(Sum block Z&sup2;)
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>40
+          </td><td>Earthquake Turkey II
+          </td><td>1999-11-12 14:59:00
+          </td><td>1999-11-12 18:58:59
+          </td><td>15-min
+          </td><td>Sum Var 1st 2hrs
+            <br />Sum -1*Var 2nd 2hrs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>41
+          </td><td>Full Moon Solstice
+          </td><td>1999-12-22 05:27:36
+          </td><td>1999-12-22 05:32:23
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>42
+          </td><td>New Year Mean 1999-2000
+          </td><td>1999-12-31 09:30:00
+          </td><td>2000-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>43
+          </td><td>New Year Var 99-00
+          </td><td>1999-12-31 09:30:00
+          </td><td>2000-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes, Noted as post hoc
+          </td>
+        </tr><tr>
+          <td>44
+          </td><td>New Year Hi - Lo*
+          </td><td>1999-12-31 09:30:00
+          </td><td>2000-01-01 11:29:59
+          </td><td>1-sec
+          </td><td>Stf Z Diff Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>No, Not Prespec
+          </td>
+        </tr><tr>
+          <td>45
+          </td><td>Just A Minute
+          </td><td>2000-01-01 12:00:00
+          </td><td>2000-01-01 12:00:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>46
+          </td><td>Papal Visit, Israel
+          </td><td>2000-03-21 00:00:00
+          </td><td>2000-03-26 23:59:59
+          </td><td>1-min
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>47
+          </td><td>Great Experiment II
+          </td><td>2000-04-23 19:00:00
+          </td><td>2000-04-23 19:09:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>48
+          </td><td>World Earth Healing Day
+          </td><td>2000-05-04 04:00:00
+            <br />+12:00:00
+            <br />+19:00:00
+          </td><td>2000-05-04 04:19:59
+            <br />+12:19:59
+            <br />+19:19:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />3 20-min Epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>49
+          </td><td>Concorde Crash, Paris
+          </td><td>2000-07-25 15:47:00
+          </td><td>2000-07-25 16:16:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>50
+          </td><td>Kursk Tragedy, 30-min
+          </td><td>2000-08-12 07:28:00
+          </td><td>2000-08-12 07:57:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>51
+          </td><td>Kursk, 10 days
+          </td><td>2000-08-12 07:28:00
+          </td><td>2000-08-21 14:29:59
+          </td><td>1-min
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes, Indp Part
+          </td>
+        </tr><tr>
+          <td>52
+          </td><td>US TV: Survivors Finale
+          </td><td>2000-08-24 00:00:00
+          </td><td>2000-08-24 01:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>53
+          </td><td>Peace Summit Relig Spirit
+          </td><td>2000-08-28 00:00:00
+          </td><td>2000-08-31 23:59:59
+          </td><td>1-min
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>54
+          </td><td>Olympic Opening Ceremony
+          </td><td>2000-09-15 11:00:00
+          </td><td>2000-09-15 11:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>55
+          </td><td>Group Mind Meditation
+          </td><td>2000-09-24 22:00:00
+          </td><td>2000-09-24 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>56
+          </td><td>Pierre Trudeau Funeral
+          </td><td>2000-10-03 15:00:00
+          </td><td>2000-10-03 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>57
+          </td><td>Group Mind Meditation 2
+          </td><td>2000-10-22 22:10:00
+          </td><td>2000-10-22 22:24:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>58
+          </td><td>US Election 2000, a
+          </td><td>2000-11-07 06:17:00
+          </td><td>2000-11-07 10:16:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>59
+          </td><td>Group Mind Meditation 3
+          </td><td>2000-11-12 23:20:00
+          </td><td>2000-11-12 23:39:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>60
+          </td><td>Group Mind Meditation 4
+          </td><td>2000-11-26 23:15:00
+          </td><td>2000-11-26 23:39:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>61
+          </td><td>Miss World 2000
+          </td><td>2000-11-30 22:25:00
+          </td><td>2000-11-30 22:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>62
+          </td><td>US Election 2000, b
+          </td><td>2000-12-08 21:00:00
+          </td><td>2000-12-08 21:04:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>63
+          </td><td>US Election 2000, Finality
+          </td><td>2000-12-12 15:00:00
+          </td><td>2000-12-12 15:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>64
+          </td><td>New Year Mean 2000-2001
+          </td><td>2000-12-31 09:30:00
+          </td><td>2001-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>65
+          </td><td>New Year Var 00-01
+          </td><td>2000-12-31 09:30:00
+          </td><td>2001-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>66
+          </td><td>Lovewave 010101*
+          </td><td>2000-12-31 23:45:00
+          </td><td>2001-01-01 00:14:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Like New Year
+            <br />But UTC centric
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>No, Not Prespec
+          </td>
+        </tr><tr>
+          <td>67
+          </td><td>Central America Quake
+          </td><td>2001-01-13 17:18:29
+          </td><td>2001-01-13 17:48:28
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>68
+          </td><td>Bush Inauguration
+          </td><td>2001-01-20 16:32:00
+          </td><td>2001-01-20 17:31:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>69
+          </td><td>Kumbh Mela, India
+          </td><td>2001-01-24 00:00:00
+          </td><td>2001-01-24 12:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>70
+          </td><td>Western India Quake
+          </td><td>2001-01-26 03:01:41
+          </td><td>2001-01-26 03:31:40
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>71
+          </td><td>WorldPuja Webcast
+          </td><td>2001-03-31 16:45:00
+          </td><td>2001-03-31 17:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>72
+          </td><td>Johrei Ceremonies
+          </td><td>2001-04-01 14:00:00
+            <br />02, 04, 08, 13
+          </td><td>2001-04-01 14:59:59
+            <br />02, 04, 08, 13
+          </td><td>1-sec
+          </td><td>Sig Avg Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>73
+          </td><td>Earth Day, 2001
+          </td><td>2001-04-22 00:00:00
+          </td><td>2001-04-22 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>74
+          </td><td>Full Moon in Taurus
+          </td><td>2001-05-07 13:46:30
+          </td><td>2001-05-07 14:01:29
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>75
+          </td><td>World Peace Meditation
+          </td><td>2001-05-20 01:30:00
+          </td><td>2001-05-20 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>76
+          </td><td>World Earth Healing Day
+          </td><td>2001-06-21 07:30:00
+            <br />11:50:00
+            <br />19:00:00
+          </td><td>2001-06-21 07:49:59
+            <br />12:09:59
+            <br />19:19:59
+          </td><td>1-sec
+          </td><td>Sig Avg Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>77
+          </td><td>Roll Your Own Blackout
+          </td><td>2001-06-21 05:00:00
+          </td><td>2001-06-22 04:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>78
+          </td><td>Beijing Gets 2008 Olympics
+          </td><td>2001-07-13 13:45:00
+          </td><td>2001-07-13 14:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>79
+          </td><td>Buddhist Stupa Ceremony
+          </td><td>2001-08-09 06:30:00
+          </td><td>2001-08-17 14:59:59
+          </td><td>10-min
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>80
+          </td><td>Terrorist Disaster, Sept 11
+          </td><td>2001-09-11 12:35:00
+          </td><td>2001-09-11 16:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>81
+          </td><td>Terror, Sept 11 Variance*
+          </td><td>2001-09-11 04:00:00
+          </td><td>2001-09-11 23:59:59
+          </td><td>1-sec
+          </td><td>Cum Dev Var from Mean Var
+          </td><td>Max in 10000 permutations
+            <br />Chi 600 df
+          </td><td>No, Not Prespec
+          </td>
+        </tr><tr>
+          <td>82
+          </td><td>Silent Prayer, Sept 14
+          </td><td>2001-09-14 10:00:00
+            <br />16:00:00
+          </td><td>2001-09-14 10:00:00
+            <br />16:02:59
+          </td><td>1-sec
+          </td><td>Sig Avg Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>83
+          </td><td>Sea to Shining See
+          </td><td>2001-09-22 01:00:00
+          </td><td>2001-09-22 02:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>84
+          </td><td>MUM Peace Meditation
+          </td><td>2001-09-23 11:45:00
+          </td><td>2001-09-27 23:29:59
+          </td><td>1-sec
+          </td><td>Serial Concatenation Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>85
+          </td><td>Begin Afghan Bombing
+          </td><td>2001-10-07 16:00:00
+          </td><td>2001-10-07 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>86
+          </td><td>Children Pledge Allegiance
+          </td><td>2001-10-12 18:55:00
+          </td><td>2001-10-12 19:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>87
+          </td><td>Binding Spell on Bin Laden
+          </td><td>2001-10-16 01:00:00
+          </td><td>2001-10-16 01:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>88
+          </td><td>Assassination in Israel
+          </td><td>2001-10-17 05:00:00
+          </td><td>2001-10-17 07:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>89
+          </td><td>World Series, Yankee Stadium
+          </td><td>2001-11-01 00:00:00
+          </td><td>2001-11-01 04:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>90
+          </td><td>World-Wide Meditations
+          </td><td>2001-11-11 11:00:00
+          </td><td>2001-11-11 11:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />24 15 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>91
+          </td><td>Crash of AA 587
+          </td><td>2001-11-12 14:00:00
+          </td><td>2001-11-12 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>92
+          </td><td>Ramadan Muslim Prayer
+          </td><td>2001-11-16 11:00:00
+          </td><td>2001-11-16 11:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>93
+          </td><td>World Puja Meditation
+          </td><td>2001-11-16 17:00:00
+          </td><td>2001-11-16 17:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>94
+          </td><td>George Harrison Tribute
+          </td><td>2001-12-03 18:30:00
+          </td><td>2001-12-03 18:30:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>95
+          </td><td>Sir Peter Blake Murder
+          </td><td>2001-12-06 01:00:00
+          </td><td>2001-12-06 04:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>96
+          </td><td>Astrological Moments
+          </td><td>2001-12-09 18:15:00
+            <br />2001-12-14 00:06:00
+            <br />04:35:00
+            <br />05:03:00
+            <br />09:10:00
+          </td><td>2001-12-09 22:14:59
+            <br />2001-12-14 04:05:59
+            <br />08:34:59
+            <br />09:02:59
+            <br />13:09:59
+          </td><td>1-sec
+          </td><td>Composite of 5 Stouffer Z Chisquares
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>97
+          </td><td>New Year Mean 2001-2002
+          </td><td>2001-12-31 09:30:00
+          </td><td>2002-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>98
+          </td><td>New Year Var 01-02
+          </td><td>2001-12-31 09:30:00
+          </td><td>2002-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>99
+          </td><td>Volcanic Eruption, Congo
+          </td><td>2002-01-17 02:45:00
+          </td><td>2002-01-17 06:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>100
+          </td><td>Astrid Lindgren Dies
+          </td><td>2002-01-28 11:00:00
+          </td><td>2002-01-28 14:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>101
+          </td><td>Winter Olympic Opening 02
+          </td><td>2002-02-10 01:00:00
+          </td><td>2002-02-10 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>102
+          </td><td>Sri Lanka Peace Meditation
+          </td><td>2002-03-15 09:40:00
+          </td><td>2002-03-15 10:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>103
+          </td><td>Earthquake Afghanistan
+          </td><td>2002-03-25 14:26:00
+          </td><td>2002-03-25 18:25:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>104
+          </td><td>Passover Bombing, Israel
+          </td><td>2002-03-27 17:00:00
+          </td><td>2002-03-27 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>105
+          </td><td>Jenin Incursion, Israel
+          </td><td>2002-04-03 00:00:00
+          </td><td>2002-04-03 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>106
+          </td><td>Tiger Woods Triumph
+          </td><td>2002-04-14 18:22:00
+          </td><td>2002-04-14 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>107
+          </td><td>Indigo Peace Meditation
+          </td><td>2002-04-20 22:00:00
+          </td><td>2002-04-20 22:09:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>108
+          </td><td>Erfurt School Shooting
+          </td><td>2002-04-26 09:00:00
+          </td><td>2002-04-26 11:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>109
+          </td><td>World Cup Soccer 2002
+          </td><td>2002-06-07 11:30:00
+          </td><td>2002-06-07 13:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>110
+          </td><td>Astrological Moments II
+          </td><td>2002-06-20 15:48:00
+            <br />2002-06-23 15:06:00
+            <br />2002-06-23 18:57:00
+          </td><td>2002-06-20 19:47:59
+            <br />2002-06-23 19:05:59
+            <br />2002-06-23 22:56:59
+          </td><td>1-sec
+          </td><td>Composite of 3 Stouffer Z Chisquares
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>111
+          </td><td>Summer Solstice 2002
+          </td><td>2002-06-21 13:00:00
+          </td><td>2002-06-21 13:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>112
+          </td><td>World Cup Soccer 2002 II
+          </td><td>2002-06-30 11:00:00
+          </td><td>2002-06-30 12:47:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>113
+          </td><td>World Healing Day, 2002
+          </td><td>2002-08-22 12:00:00
+            <br />22:20:00
+          </td><td>2002-08-22 12:19:59
+            <br />22:39:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+            <br />concatenation
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>114
+          </td><td>Etzold 9/11 Anniversary
+          </td><td>2002-09-11 12:45:00
+          </td><td>2002-09-11 15:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>115
+          </td><td>Mitchell 9/11 Anniversary
+          </td><td>2002-09-11 00:00:00
+          </td><td>2002-09-11 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes, Indep Part
+          </td>
+        </tr><tr>
+          <td>116
+          </td><td>9/11 Anniversary Variance*
+          </td><td>2002-09-11 00:00:00
+          </td><td>2002-09-11 23:59:59
+          </td><td>1-sec
+          </td><td>Cum Dev Var from Mean Var
+          </td><td>Max in 10000 permutations
+            <br />Chi 600 df
+          </td><td>No, Inadeq Spec
+          </td>
+        </tr><tr>
+          <td>117
+          </td><td>Korea's Birthday
+          </td><td>2002-10-03 04:00:00
+          </td><td>2002-10-03 09:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>118
+          </td><td>Bali Bombing
+          </td><td>2002-10-12 15:30:00
+          </td><td>2002-10-12 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>119
+          </td><td>Twyman in Baghdad
+          </td><td>2002-10-12 17:00:00
+          </td><td>2002-10-12 17:19:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>120
+          </td><td>Earthdance 2002
+          </td><td>2002-10-12 22:50:00
+          </td><td>2002-10-12 23:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>121
+          </td><td>Wellstone Plane Crash
+          </td><td>2002-10-25 15:00:00
+          </td><td>2002-10-25 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>122
+          </td><td>Chechen Hostage Tragedy
+          </td><td>2002-10-26 02:30:00
+          </td><td>2002-10-26 04:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>123
+          </td><td>Kenyan Terrorist Attacks
+          </td><td>2002-11-28 05:00:00
+          </td><td>2002-11-28 07:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>124
+          </td><td>Suicide Bombing in Grozny
+          </td><td>2002-12-28 11:30:00
+          </td><td>2002-12-28 14:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>125
+          </td><td>New Year Mean 2002-2003
+          </td><td>2002-12-31 09:30:00
+          </td><td>2003-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>126
+          </td><td>New Year Variance
+          </td><td>2002-12-31 09:30:00
+          </td><td>2003-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>127
+          </td><td>Tel Aviv Market Bombing
+          </td><td>2003-01-05 17:00:00
+          </td><td>2003-01-05 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>128
+          </td><td>Antiwar Protests, Jan 18 2003
+          </td><td>2003-01-18 18:30:00
+          </td><td>2003-01-18 20:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>129
+          </td><td>Shuttle Columbia Disaster
+          </td><td>2003-02-01 13:00:00
+          </td><td>2003-02-01 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>130
+          </td><td>Peace Meditation
+          </td><td>2003-02-09 17:00:00
+          </td><td>2003-02-09 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>131
+          </td><td>Global Peace Demonstrations
+          </td><td>2003-02-15 00:00:00
+          </td><td>2003-02-15 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>132
+          </td><td>Korean Subway
+          </td><td>2003-02-18 00:45:00
+          </td><td>2003-02-18 12:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>133
+          </td><td>Lysistrata
+          </td><td>2003-03-03 07:00:00
+          </td><td>2003-03-04 06:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>134
+          </td><td>Gather the Women
+          </td><td>2003-03-08 00:00:00
+          </td><td>2003-03-08 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>135
+          </td><td>Serbia Assassination
+          </td><td>2003-03-12 11:30:00
+          </td><td>2003-03-12 14:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>136
+          </td><td>Candlelight Vigil
+          </td><td>2003-03-16 07:00:00
+          </td><td>2003-03-17 06:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>137
+          </td><td>Begin War on Iraq -4 +4 hours
+          </td><td>2003-03-19 23:15:00
+          </td><td>2003-03-20 07:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>138
+          </td><td>Great Exp IV, Bush Prayer
+          </td><td>2003-04-01 17:00:00
+          </td><td>2003-04-01 17:14:59
+          </td><td>1-sec
+            <br />Europe/US
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />6 15 min epochs
+          </td><td>+1,0,-5,6,7,8
+            <br />Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>139
+          </td><td>Iraq War Ends, Saddam Falls
+          </td><td>2003-04-09 14:30:00
+          </td><td>2003-04-09 15:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>140
+          </td><td>Suicide Bombing in Riyadh
+          </td><td>2003-05-12 19:30:00
+          </td><td>2003-05-12 23:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>141
+          </td><td>Suicide Bombing in Morroco
+          </td><td>2003-05-16 20:20:00
+          </td><td>2003-05-17 00:19:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>142
+          </td><td>Earthquake in Algeria
+          </td><td>2003-05-21 17:45:00
+          </td><td>2003-05-21 21:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>143
+          </td><td>Aqaba Summit, Middle East
+          </td><td>2003-06-04 11:00:00
+          </td><td>2003-06-04 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>144
+          </td><td>Rainbow, 4th July
+          </td><td>2003-07-04 13:00:00
+          </td><td>2003-07-04 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>145
+          </td><td>Love, Peace, Water Day
+          </td><td>2003-07-25 00:00:00
+          </td><td>2003-07-25 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>146
+          </td><td>Coup Attempt, Manila
+          </td><td>2003-07-27 00:00:00
+          </td><td>2003-07-27 10:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>147
+          </td><td>Blackout of 2003
+          </td><td>2003-08-14 19:00:00
+          </td><td>2003-08-14 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>148
+          </td><td>Bombing UN Baghdad
+          </td><td>2003-08-19 11:30:00
+          </td><td>2003-08-19 17:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>149
+          </td><td>Mars and Yang Spiral
+          </td><td>2003-08-27 23:00:00
+          </td><td>2003-08-28 00:47:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes, DB rank
+          </td>
+        </tr><tr>
+          <td>150
+          </td><td>World Healing Day 2003
+          </td><td>2003-09-10 12:00:00
+            <br />14:30:00
+          </td><td>2003-09-10 12:19:59
+            <br />14:49:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+            <br />concatenation
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes, DB rank
+          </td>
+        </tr><tr>
+          <td>151
+          </td><td>911 Anniversary
+          </td><td>2003-09-11 12:00:00
+          </td><td>2003-09-11 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes, DB rank
+          </td>
+        </tr><tr>
+          <td>152
+          </td><td>Typhoon South Korea
+          </td><td>2003-09-12 09:00:00
+          </td><td>2003-09-12 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes, DB rank
+          </td>
+        </tr><tr>
+          <td>153
+          </td><td>Dalai Lama, NYC
+          </td><td>2003-09-21 16:00:00
+          </td><td>2003-09-21 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes, DB rank
+          </td>
+        </tr><tr>
+          <td>154
+          </td><td>Harmonic Concordance
+          </td><td>2003-11-09 01:00:00
+          </td><td>2003-11-09 01:23:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes, DB rank
+          </td>
+        </tr><tr>
+          <td>155
+          </td><td>Turkey Synagogue Bombs
+          </td><td>2003-11-15 04:00:00
+          </td><td>2003-11-15 07:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>156
+          </td><td>Turkey Bank Consul
+          </td><td>2003-11-20 09:00:00
+          </td><td>2003-11-20 12:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>157
+          </td><td>Russia Commuter Train
+          </td><td>2003-12-05 04:00:00
+          </td><td>2003-12-05 07:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>158
+          </td><td>Saddam Captured
+          </td><td>2003-12-13 17:00:00
+          </td><td>2003-12-13 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>159
+          </td><td>Oprah Winfrey in Africa
+          </td><td>2003-12-18 01:00:00
+          </td><td>2003-12-18 01:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>160
+          </td><td>Earthquake in Bam, Iran
+          </td><td>2003-12-26 01:30:00
+          </td><td>2003-12-26 09:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>161
+          </td><td>60 Seconds for Peace
+          </td><td>2003-12-27 21:00:00
+          </td><td>2003-12-27 21:00:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>162
+          </td><td>New Year Mean 2003-2004
+          </td><td>2003-12-31 09:30:00
+          </td><td>2004-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>163
+          </td><td>New Year Variance
+          </td><td>2003-12-31 09:30:00
+          </td><td>2004-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>164
+          </td><td>Hadj Ritual Tragedy
+          </td><td>2004-02-01 05:30:00
+          </td><td>2004-02-01 07:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>165
+          </td><td>Iran Train Explosion
+          </td><td>2004-02-18 00:30:00
+          </td><td>2004-02-18 10:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>166
+          </td><td>Oscar Ceremony 2004
+          </td><td>2004-03-01 01:00:00
+          </td><td>2004-03-01 05:08:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>167
+          </td><td>Attacks on Shiites, Iraq
+          </td><td>2004-03-02 06:30:00
+          </td><td>2004-03-02 10:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>168
+          </td><td>Terror Attacks in Madrid
+          </td><td>2004-03-11 06:00:00
+          </td><td>2004-03-11 10:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>169
+          </td><td>Demonstrations in Spain
+          </td><td>2004-03-12 11:00:00
+          </td><td>2004-03-12 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>170
+          </td><td>Global Day of Peace
+          </td><td>2004-03-20 00:00:00
+          </td><td>2004-03-20 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>171
+          </td><td>Cricket, India vs Pakistan
+          </td><td>2004-03-24 09:00:00
+          </td><td>2004-03-24 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>172
+          </td><td>Rantisi Assassination
+          </td><td>2004-04-17 17:00:00
+          </td><td>2004-04-17 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>173
+          </td><td>Korean Train Explosion
+          </td><td>2004-04-22 03:00:00
+          </td><td>2004-04-22 06:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>174
+          </td><td>Floods in Haiti
+          </td><td>2004-05-24 00:00:00
+          </td><td>2004-05-24 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>175
+          </td><td>Iraq Insurgency Bombs
+          </td><td>2004-06-24 04:30:00
+          </td><td>2004-06-24 08:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>176
+          </td><td>Turkish Train Wreck
+          </td><td>2004-07-22 04:15:00
+          </td><td>2004-07-22 08:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>177
+          </td><td>Democratic Convention, Kerry
+          </td><td>2004-07-30 02:00:00
+          </td><td>2004-07-30 02:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>178
+          </td><td>Fire in Paraguay
+          </td><td>2004-08-01 14:00:00
+          </td><td>2004-08-01 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>179
+          </td><td>Bob Morris Dies
+          </td><td>2004-08-12 04:00:00
+          </td><td>2004-08-12 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>180
+          </td><td>Olympic Opening Athens
+          </td><td>2004-08-13 18:00:00
+          </td><td>2004-08-13 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>181
+          </td><td>Day of Murderous Violence
+          </td><td>2004-08-31 00:00:00
+          </td><td>2004-08-31 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>182
+          </td><td>Republican Convention, Bush
+          </td><td>2004-09-03 02:09:59
+          </td><td>2004-09-03 03:11:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>183
+          </td><td>Russian School Hostage Crisis
+          </td><td>2004-09-03 05:00:00
+          </td><td>2004-09-03 08:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>184
+          </td><td>Earthdance 2004
+          </td><td>2004-09-18 22:50:00
+          </td><td>2004-09-18 23:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>185
+          </td><td>Intnl Day Peace + Hurricane Haiti
+          </td><td>2004-09-21 00:00:00
+          </td><td>2004-09-21 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>186
+          </td><td>Bombing in Taba, Egypt
+          </td><td>2004-10-07 19:00:00
+          </td><td>2004-10-07 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>187
+          </td><td>US Election 2004
+          </td><td>2004-11-02 11:00:00
+          </td><td>2004-11-03 05:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>188
+          </td><td>Arafat Dies
+          </td><td>2004-11-11 02:30:00
+          </td><td>2004-11-11 14:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>189
+          </td><td>Tsunami Indian Ocean
+          </td><td>2004-12-26 00:29:00
+          </td><td>2004-12-26 08:28:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>190
+          </td><td>New Year Mean 2004-2005
+          </td><td>2004-12-31 09:30:00
+          </td><td>2005-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>191
+          </td><td>New Year Variance
+          </td><td>2004-12-31 09:30:00
+          </td><td>2005-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>192
+          </td><td>Elections in Iraq
+          </td><td>2005-01-30 04:00:00
+          </td><td>2005-01-30 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>193
+          </td><td>Hariri Assassination Beirut
+          </td><td>2005-02-14 09:00:00
+          </td><td>2005-02-14 12:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>194
+          </td><td>Siyum Daf Yomi
+          </td><td>2005-03-01 22:45:00
+          </td><td>2005-03-02 01:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>195
+          </td><td>Quake, Indian Ocean
+          </td><td>2005-03-28 16:00:00
+          </td><td>2005-03-28 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>196
+          </td><td>Pope John Paul Dies
+          </td><td>2005-04-02 04:00:00
+          </td><td>2005-04-02 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>197
+          </td><td>Pope Paul's Funeral
+          </td><td>2005-04-08 08:00:00
+          </td><td>2005-04-08 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>198
+          </td><td>Prince Charles' Wedding
+          </td><td>2005-04-09 11:00:00
+          </td><td>2005-04-09 14:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>199
+          </td><td>Oraworld Resonance
+          </td><td>2005-04-23 00:50:00
+          </td><td>2005-04-23 14:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>200
+          </td><td>Live 8 Concert
+          </td><td>2005-07-02 00:00:00
+          </td><td>2005-07-02 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>201
+          </td><td>London Subway Bombs
+          </td><td>2005-07-07 00:00:00
+          </td><td>2005-07-07 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>202
+          </td><td>Hurricane Katrina
+          </td><td>2005-08-29 10:00:00
+          </td><td>2005-08-29 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>203
+          </td><td>Baghdad Bridge Stampede
+          </td><td>2005-08-31 08:00:00
+          </td><td>2005-08-31 12:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>204
+          </td><td>End the War Rally
+          </td><td>2005-09-24 13:00:00
+          </td><td>2005-09-24 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>205
+          </td><td>Bali Bombing 2
+          </td><td>2005-10-01 11:30:00
+          </td><td>2005-10-01 17:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>206
+          </td><td>Earthquake Pakistan
+          </td><td>2005-10-08 03:20:00
+          </td><td>2005-10-08 11:19:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>207
+          </td><td>India Train Crash
+          </td><td>2005-10-28 21:30:00
+          </td><td>2005-10-29 02:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>208
+          </td><td>India Bombs
+          </td><td>2005-10-29 11:08:00
+          </td><td>2005-10-29 16:07:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>209
+          </td><td>Jordan Bombs
+          </td><td>2005-11-09 18:00:00
+          </td><td>2005-11-09 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>210
+          </td><td>New Year Dev-Net Var
+          </td><td>2005-12-31 23:53:00
+          </td><td>2006-01-01 00:00:59
+          </td><td>1-sec
+          </td><td>Devar-Netvar
+            <br />13 Epochs Cumdev
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes Confirm 7-yr Pred
+          </td>
+        </tr><tr>
+          <td>211
+          </td><td>New Year Covar Min
+          </td><td>2005-12-31 23:55:00
+          </td><td>2006-01-01 00:04:59
+          </td><td>1-sec
+          </td><td>Covar, 13 Epoch 4-Min Smooth Dev*Prox
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes Confirm 7-yr Pred
+          </td>
+        </tr><tr>
+          <td>212
+          </td><td>Hadj Stoning 2006
+          </td><td>2006-01-12 08:00:00
+          </td><td>2006-01-12 11:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>213
+          </td><td>Mudslide, Philippines
+          </td><td>2006-02-17 00:00:00
+          </td><td>2006-02-17 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>214
+          </td><td>Golden Dome Bomb
+          </td><td>2006-02-22 03:00:00
+          </td><td>2006-02-22 06:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>215
+          </td><td>Planetary Play
+          </td><td>2006-04-01 17:45:00
+          </td><td>2006-04-01 18:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>216
+          </td><td>Earth Day, 2006
+          </td><td>2006-04-22 00:00:00
+          </td><td>2006-04-22 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>217
+          </td><td>Indonesian Earthquake
+          </td><td>2006-05-26 21:54:00
+          </td><td>2006-05-27 05:53:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>218
+          </td><td>Zarkawi News Release
+          </td><td>2006-06-08 07:00:00
+          </td><td>2006-06-08 14:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>219
+          </td><td>Bombay Train Bombings
+          </td><td>2006-07-11 11:24:00
+          </td><td>2006-07-11 16:23:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>220
+          </td><td>Avebury Meditations
+          </td><td>2006-07-22 22:00:00
+          </td><td>2006-07-22 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>221
+          </td><td>Qana Lebanon
+          </td><td>2006-07-30 01:00:00
+          </td><td>2006-07-30 05:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>222
+          </td><td>British Terror Plot
+          </td><td>2006-08-10 00:00:00
+          </td><td>2006-08-10 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>223
+          </td><td>TM Flyer Aggregation
+          </td><td>2006-07-29 12:30:00
+          </td><td>2006-09-09 23:29:59
+          </td><td>1-sec
+          </td><td>12:30-13:30, 22:30-23:30 on 7 Saturdays
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>224
+          </td><td>Oraworld Reconciliation
+          </td><td>2006-10-02 12:00:00
+          </td><td>2006-10-02 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>225
+          </td><td>Native American Earth Ceremony
+          </td><td>2006-10-07 03:00:00
+          </td><td>2006-10-07 03:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>226
+          </td><td>Election 2006 Results
+          </td><td>2006-11-08 13:00:00
+          </td><td>2006-11-08 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>227
+          </td><td>Gemayel Assassination
+          </td><td>2006-11-21 10:00:00
+          </td><td>2006-11-21 13:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>228
+          </td><td>Global Deeksha
+          </td><td>2006-11-23 16:30:00
+          </td><td>2006-11-23 17:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>229
+          </td><td>Global Orgasm
+          </td><td>2006-12-22 00:00:00
+          </td><td>2006-12-22 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>230
+          </td><td>Saddam's Execution
+          </td><td>2006-12-30 03:00:00
+          </td><td>2006-12-30 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>231
+          </td><td>New Year Mean 2006-2007
+          </td><td>2006-12-31 09:30:00
+          </td><td>2007-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>232
+          </td><td>New Year Variance
+          </td><td>2006-12-31 09:30:00
+          </td><td>2007-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>233
+          </td><td>European Storms
+          </td><td>2007-01-18 00:00:00
+          </td><td>2007-01-18 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>234
+          </td><td>Iraq Worst Bombing
+          </td><td>2007-02-03 16:00:00
+          </td><td>2007-02-03 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>235
+          </td><td>World Sound Healing
+          </td><td>2007-02-14 00:00:00
+          </td><td>2007-02-14 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>236
+          </td><td>India Train Fire
+          </td><td>2007-02-18 17:30:00
+          </td><td>2007-02-18 22:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>237
+          </td><td>Earth Hour
+          </td><td>2007-03-31 09:30:00
+          </td><td>2007-03-31 10:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>238
+          </td><td>Solomon Islands Quake
+          </td><td>2007-04-01 19:00:00
+          </td><td>2007-04-01 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>239
+          </td><td>Massacre at Virginia Tech
+          </td><td>2007-04-16 10:00:00
+          </td><td>2007-04-16 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>240
+          </td><td>Tai Chi Chigong Day
+          </td><td>2007-04-28 00:00:00
+          </td><td>2007-04-28 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>241
+          </td><td>World Meditation Aggregation
+          </td><td>2007-05-20 04:00:00
+            <br />10:00:00
+            <br />21:00:00
+          </td><td>2007-05-20 06:59:59
+            <br />12:59:59
+            <br />23:59:59
+          </td><td>1-sec
+          </td><td>Concatenate 3x3hrs Stouffer Z
+          </td><td>Chisquare
+            <br />Two-tail prediction
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>242
+          </td><td>Lightning Strikes Giuliani
+          </td><td>2007-06-06 23:00:00
+          </td><td>2007-06-06 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>243
+          </td><td>Palestinian Government Falls
+          </td><td>2007-06-14 00:00:00
+          </td><td>2007-06-14 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>244
+          </td><td>Live Earth
+          </td><td>2007-07-07 00:00:00
+          </td><td>2007-07-07 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>245
+          </td><td>Fire The Grid
+          </td><td>2007-07-17 11:11:00
+          </td><td>2007-07-17 12:10:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>246
+          </td><td>Minneapolis Bridge Collapse
+          </td><td>2007-08-01 22:00:00
+          </td><td>2007-08-02 02:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>247
+          </td><td>Peru Earthquake
+          </td><td>2007-08-15 22:40:00
+          </td><td>2007-08-16 22:39:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>248
+          </td><td>Burning Man
+          </td><td>2007-09-02 04:00:00
+          </td><td>2007-09-02 04:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>249
+          </td><td>Global OM
+          </td><td>2007-09-15 22:30:00
+          </td><td>2007-09-15 23:44:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>250
+          </td><td>International Day of Peace
+          </td><td>2007-09-21 00:00:00
+          </td><td>2007-09-21 23:59:59
+          </td><td>1-sec
+          </td><td>Negative Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>251
+          </td><td>Gore wins Nobel
+          </td><td>2007-10-12 16:00:00
+          </td><td>2007-10-12 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>252
+          </td><td>Bomb Bhutto Homecoming
+          </td><td>2007-10-18 18:00:00
+          </td><td>2007-10-18 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>253
+          </td><td>Bangladesh Hurricane
+          </td><td>2007-11-15 15:00:00
+          </td><td>2007-11-16 14:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>254
+          </td><td>Algerian Car Bombs
+          </td><td>2007-12-11 08:00:00
+          </td><td>2007-12-11 13:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>255
+          </td><td>Benazir Bhutto Assassination
+          </td><td>2007-12-27 11:00:00
+          </td><td>2007-12-27 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>256
+          </td><td>New Year Mean, 2008
+          </td><td>2007-12-31 09:30:00
+          </td><td>2008-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>257
+          </td><td>New Year Var, 2008
+          </td><td>2007-12-31 09:30:00
+          </td><td>2008-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>258
+          </td><td>Kandahar Bombs
+          </td><td>2008-02-17 05:30:00
+          </td><td>2008-02-17 11:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>259
+          </td><td>Attacks in Gaza
+          </td><td>2008-03-01 00:00:00
+          </td><td>2008-03-01 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>260
+          </td><td>Demonstrations in Tibet
+          </td><td>2008-03-14 00:00:00
+          </td><td>2008-03-14 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>261
+          </td><td>Earth Day, 2008
+          </td><td>2008-04-22 00:00:00
+          </td><td>2008-04-22 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>262
+          </td><td>Cyclone in Myanmar
+          </td><td>2008-05-03 00:00:00
+          </td><td>2008-05-03 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>263
+          </td><td>World Laughter Day
+          </td><td>2008-05-04 12:00:00
+            <br />13:00:00
+            <br />14:00:00
+            <br />15:00:00
+          </td><td>2008-05-04 12:02:59
+            <br />13:03:59
+            <br />14:02:59
+            <br />15:02:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>264
+          </td><td>Earthquake in China
+          </td><td>2008-05-12 00:00:00
+          </td><td>2008-05-12 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>265
+          </td><td>Silence, China Quake
+          </td><td>2008-05-19 06:00:00
+          </td><td>2008-05-19 07:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>266
+          </td><td>Obama Wins Nomination
+          </td><td>2008-06-04 00:00:00
+          </td><td>2008-06-04 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>267
+          </td><td>Kabul Car Bombing
+          </td><td>2008-07-07 03:00:00
+          </td><td>2008-07-07 07:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>268
+          </td><td>Olympic Opening Beijing
+          </td><td>2008-08-08 12:00:00
+          </td><td>2008-08-08 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>269
+          </td><td>War ends in Georgia
+          </td><td>2008-08-12 10:00:00
+          </td><td>2008-08-12 12:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>270
+          </td><td>World Meditation 080816
+          </td><td>2008-08-16 10:00:00
+          </td><td>2008-08-16 10:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>271
+          </td><td>Obama Acceptance 080828
+          </td><td>2008-08-29 02:00:00
+          </td><td>2008-08-29 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>272
+          </td><td>Palin Acceptance 080903
+          </td><td>2008-09-04 02:00:00
+          </td><td>2008-09-04 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>273
+          </td><td>McCain Acceptance 080904
+          </td><td>2008-09-05 02:00:00
+          </td><td>2008-09-05 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>274
+          </td><td>Peace Intention Experiment
+          </td><td>2008-09-14 15:45:00
+          </td><td>2008-09-20 16:24:59
+          </td><td>1-sec, concatenate
+          </td><td>15:45-16:25 on 7 days
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>275
+          </td><td>Islamabad Hotel Bombing
+          </td><td>2008-09-20 13:00:00
+          </td><td>2008-09-20 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>276
+          </td><td>International Day of Peace
+          </td><td>2008-09-21 00:00:00
+          </td><td>2008-09-21 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>277
+          </td><td>Bailout Vote Fails
+          </td><td>2008-09-29 00:00:00
+          </td><td>2008-09-29 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>278
+          </td><td>Temple Stampede Jodhpur
+          </td><td>2008-09-30 00:00:00
+          </td><td>2008-09-30 04:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>279
+          </td><td>Phillies Win World Series
+          </td><td>2008-10-30 00:00:00
+          </td><td>2008-10-30 02:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>280
+          </td><td>US Election 2008
+          </td><td>2008-11-04 20:00:00
+          </td><td>2008-11-05 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>281
+          </td><td>Mumbai Terror Attacks
+          </td><td>2008-11-26 16:30:00
+          </td><td>2008-11-27 16:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>282
+          </td><td>Global Orgasm III
+          </td><td>2008-12-21 00:00:00
+          </td><td>2008-12-21 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>283
+          </td><td>New Year Mean 2009
+          </td><td>2008-12-31 09:30:00
+          </td><td>2009-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>284
+          </td><td>New Year Variance 2009
+          </td><td>2008-12-31 09:30:00
+          </td><td>2009-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>285
+          </td><td>Gaza Incursion
+          </td><td>2009-01-03 17:00:00
+          </td><td>2009-01-04 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>286
+          </td><td>Miracle on the Hudson
+          </td><td>2009-01-15 20:00:00
+          </td><td>2009-01-15 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>287
+          </td><td>Barack Obama Inauguration
+          </td><td>2009-01-20 11:00:00
+          </td><td>2009-01-21 06:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>288
+          </td><td>Australian Bush Fires
+          </td><td>2009-02-07 00:00:00
+          </td><td>2009-02-07 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>289
+          </td><td>Meditations Valentines Day
+          </td><td>2009-02-14 00:00:00
+          </td><td>2009-02-14 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>290
+          </td><td>Winnenden School Shooting
+          </td><td>2009-03-11 07:30:00
+          </td><td>2009-03-11 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>291
+          </td><td>G20 News Conference
+          </td><td>2009-04-02 17:00:00
+          </td><td>2009-04-02 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>292
+          </td><td>Binghamton Killings
+          </td><td>2009-04-03 13:30:00
+          </td><td>2009-04-03 18:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>293
+          </td><td>Italian Quake
+          </td><td>2009-04-06 00:00:00
+          </td><td>2009-04-06 11:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>294
+          </td><td>Earth Day, 2009
+          </td><td>2009-04-22 00:00:00
+          </td><td>2009-04-22 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>295
+          </td><td>Swine Flu Peak
+          </td><td>2009-04-24 16:00:00
+          </td><td>2009-04-25 00:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>296
+          </td><td>Indian Elections 2009
+          </td><td>2009-05-16 06:29:59
+          </td><td>2009-05-16 18:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>297
+          </td><td>Air France Disappearance
+          </td><td>2009-05-31 22:00:00
+          </td><td>2009-06-01 05:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>298
+          </td><td>Iran Unrest
+          </td><td>2009-06-19 08:29:59
+          </td><td>2009-06-20 08:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>299
+          </td><td>Live H2O event
+          </td><td>2009-06-22 00:00:00
+          </td><td>2009-06-22 01:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>300
+          </td><td>Michael Jackson Dies
+          </td><td>2009-06-25 21:00:00
+          </td><td>2009-06-26 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>301
+          </td><td>Michael Jackson Memorial
+          </td><td>2009-07-07 16:00:00
+          </td><td>2009-07-07 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>302
+          </td><td>Wansdyke Path II
+          </td><td>2009-07-25 18:00:00
+          </td><td>2009-07-26 00:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>303
+          </td><td>Fire the Grid II
+          </td><td>2009-07-28 22:19:00
+          </td><td>2009-07-28 23:18:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>304
+          </td><td>Typhoon Hits Taiwan
+          </td><td>2009-08-07 00:00:00
+          </td><td>2009-08-07 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>305
+          </td><td>Ted Kennedy Dies
+          </td><td>2009-08-26 01:59:59
+          </td><td>2009-08-27 01:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>306
+          </td><td>Earthquake in Java
+          </td><td>2009-09-02 00:00:00
+          </td><td>2009-09-02 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>307
+          </td><td>International Peace Day
+          </td><td>2009-09-21 00:00:00
+          </td><td>2009-09-21 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>308
+          </td><td>Tsunami in Samoa
+          </td><td>2009-09-29 16:00:00
+          </td><td>2009-09-29 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>309
+          </td><td>Earthquake, Padang Indonesia
+          </td><td>2009-09-30 08:00:00
+          </td><td>2009-09-30 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>310
+          </td><td>Obama Wins Nobel Peace Prize
+          </td><td>2009-10-09 08:00:00
+          </td><td>2009-10-09 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>311
+          </td><td>Climate Action 350
+          </td><td>2009-10-24 00:00:00
+          </td><td>2009-10-24 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>312
+          </td><td>Baghdad Bombs
+          </td><td>2009-10-25 06:30:00
+          </td><td>2009-10-25 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>313
+          </td><td>Fort Hood Massacre
+          </td><td>2009-11-06 18:00:00
+          </td><td>2009-11-06 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>314
+          </td><td>Haj Arafat Vigil
+          </td><td>2009-11-26 01:00:00
+          </td><td>2009-11-26 12:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>315
+          </td><td>Haj Stoning
+          </td><td>2009-11-27 01:00:00
+          </td><td>2009-11-27 07:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>316
+          </td><td>Bomb Attempt Dec 25
+          </td><td>2009-12-25 16:00:00
+          </td><td>2009-12-25 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>317
+          </td><td>New Year Mean 2010
+          </td><td>2009-12-31 09:30:00
+          </td><td>2010-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>318
+          </td><td>New Year Variance 2010
+          </td><td>2009-12-31 09:30:00
+          </td><td>2010-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>319
+          </td><td>Pakistan Volleyball Bombing
+          </td><td>2010-01-01 12:00:00
+          </td><td>2010-01-01 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>320
+          </td><td>Haiti Earthquake
+          </td><td>2010-01-12 20:00:00
+          </td><td>2010-01-13 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>321
+          </td><td>State of the Union
+          </td><td>2010-01-28 02:00:00
+          </td><td>2010-01-28 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>322
+          </td><td>Olympic Opening Vancouver
+          </td><td>2010-02-12 02:00:00
+          </td><td>2010-02-12 05:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>323
+          </td><td>Chile Earthquake Tsunami
+          </td><td>2010-02-27 00:00:00
+          </td><td>2010-02-27 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>324
+          </td><td>Health Care is Law
+          </td><td>2010-03-23 15:00:00
+          </td><td>2010-03-23 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>325
+          </td><td>Moscow Train Bombing
+          </td><td>2010-03-29 03:30:00
+          </td><td>2010-03-29 07:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>326
+          </td><td>Mine Disaster, W. Va
+          </td><td>2010-04-05 18:00:00
+          </td><td>2010-04-05 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>327
+          </td><td>Mudslides in Brazil
+          </td><td>2010-04-08 00:00:00
+          </td><td>2010-04-08 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>328
+          </td><td>Polish President Dies
+          </td><td>2010-04-10 06:00:00
+          </td><td>2010-04-10 11:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>329
+          </td><td>Kumbh Mela, India
+          </td><td>2010-04-14 00:00:00
+          </td><td>2010-04-14 12:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>330
+          </td><td>Earthquake West China
+          </td><td>2010-04-14 13:00:00
+          </td><td>2010-04-14 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>331
+          </td><td>Earth Day, 2010
+          </td><td>2010-04-22 00:00:00
+          </td><td>2010-04-22 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>332
+          </td><td>Russian Coal Mine
+          </td><td>2010-05-10 16:55:00
+          </td><td>2010-05-10 23:54:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>333
+          </td><td>World Shift Day
+          </td><td>2010-05-16 01:00:00
+          </td><td>2010-05-17 00:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>334
+          </td><td>Lahore Religious Terror
+          </td><td>2010-05-28 07:15:00
+          </td><td>2010-05-28 13:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>335
+          </td><td>Israel Attacks Flotilla
+          </td><td>2010-05-31 00:30:00
+          </td><td>2010-05-31 06:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>336
+          </td><td>World Cup 2010 Begins
+          </td><td>2010-06-11 14:00:00
+          </td><td>2010-06-11 15:49:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>337
+          </td><td>World Cup 2010 Final
+          </td><td>2010-07-11 18:30:00
+          </td><td>2010-07-11 20:52:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>338
+          </td><td>Conscious Convergence
+          </td><td>2010-07-17 00:00:00
+          </td><td>2010-07-17 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>339
+          </td><td>Love Parade Tragedy
+          </td><td>2010-07-24 15:30:00
+          </td><td>2010-07-24 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>340
+          </td><td>Pakistani Flooding
+          </td><td>2010-07-21 00:00:00
+            <br />2010-07-22
+            <br />2010-07-31
+            <br />2010-08-01
+          </td><td>2010-07-21 23:59:59
+            <br />2010-07-22
+            <br />2010-07-31
+            <br />2010-08-01
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>341
+          </td><td>Chilean Miners Alive
+          </td><td>2010-08-22 11:00:00
+          </td><td>2010-08-22 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>342
+          </td><td>Ending Iraq War
+          </td><td>2010-08-31 23:30:00
+          </td><td>2010-09-01 01:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>343
+          </td><td>Billion Beats
+          </td><td>2010-09-18 00:00:00
+          </td><td>2010-09-18 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>344
+          </td><td>Earthdance 2010
+          </td><td>2010-09-18 22:50:00
+          </td><td>2010-09-18 23:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>345
+          </td><td>Astrological Moment III.1
+          </td><td>2010-09-20 10:15:00
+          </td><td>2010-09-20 14:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>346
+          </td><td>International Day of Peace
+          </td><td>2010-09-21 00:00:00
+          </td><td>2010-09-21 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>347
+          </td><td>World Day of Interconnection
+          </td><td>2010-10-10 00:00:00
+          </td><td>2010-10-10 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>348
+          </td><td>World Forum, Kazakhstan
+          </td><td>2010-10-18 03:00:00
+          </td><td>2010-10-21 02:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>349
+          </td><td>Indonesia, Quake, Volcano
+          </td><td>2010-10-25 14:00:00
+          </td><td>2010-10-26 13:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>350
+          </td><td>Election 2010 Results
+          </td><td>2006-11-04 12:00:00
+          </td><td>2006-11-04 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>351
+          </td><td>New Reality, 11 days
+          </td><td>2010-11-12 04:00:00
+            <br />through 2010-11-22
+          </td><td>2010-11-12 04:59:59
+            <br />through 2010-11-22
+          </td><td>1-sec
+          </td><td>Concatenate 11 Hrs Stouffer Z
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>352
+          </td><td>Cambodia Bridge Tragedy
+          </td><td>2010-11-22 15:00:00
+          </td><td>2010-11-22 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>353
+          </td><td>North South Korea Shelling
+          </td><td>2010-11-23 07:34:00
+          </td><td>2010-11-23 13:33:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>354
+          </td><td>Wikileaks Diplomatic Trove
+          </td><td>2010-11-28 07:00:00
+          </td><td>2010-11-28 14:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>355
+          </td><td>Goodearth Halleluia
+          </td><td>2010-12-24 17:00:00
+          </td><td>2010-12-24 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>356
+          </td><td>New Year Mean 2011
+          </td><td>2010-12-31 09:30:00
+          </td><td>2011-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>357
+          </td><td>New Year Variance 2011
+          </td><td>2010-12-31 09:30:00
+          </td><td>2011-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>358
+          </td><td>Egypt Christian Attack
+          </td><td>2010-12-31 22:00:00
+          </td><td>2011-01-01 00:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>359
+          </td><td>Congresswoman Giffords
+          </td><td>2011-01-08 17:00:00
+          </td><td>2011-01-08 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>360
+          </td><td>Brazilian Mudslides
+          </td><td>2011-01-12 00:00:00
+          </td><td>2011-01-12 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>361
+          </td><td>Tucson Memorial
+          </td><td>2011-01-13 00:00:00
+          </td><td>2011-01-13 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>362
+          </td><td>Moscow Airport Bombing
+          </td><td>2011-01-24 13:00:00
+          </td><td>2011-01-24 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>363
+          </td><td>State of the Union
+          </td><td>2011-01-26 02:00:00
+          </td><td>2011-01-26 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>364
+          </td><td>Egypt Day of Rage
+          </td><td>2011-01-28 00:00:00
+          </td><td>2011-01-28 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>365
+          </td><td>Egypt Continuing Protests
+          </td><td>2011-02-05 10:00:00
+            <br />2011-02-06
+          </td><td>2011-02-05 11:59:59
+            <br />2011-02-06
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>366
+          </td><td>Egypt Mubarak Resigns
+          </td><td>2011-02-11 10:00:00
+          </td><td>2011-02-11 21:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>367
+          </td><td>Earthquake, Christchurch NZ
+          </td><td>2011-02-20 22:00:00
+          </td><td>2011-02-21 21:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>368
+          </td><td>Turmoil in Libya
+          </td><td>2011-03-02 10:00:00
+          </td><td>2011-03-02 21:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>369
+          </td><td>Women's Day 100th
+          </td><td>2011-03-08 00:00:00
+          </td><td>2011-03-08 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>370
+          </td><td>Breathe as One
+          </td><td>2011-03-09 20:00:00
+          </td><td>2011-03-09 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>371
+          </td><td>Tsunami, Japan
+          </td><td>2011-03-11 04:00:00
+          </td><td>2011-03-12 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>372
+          </td><td>Middle East Turmoil
+          </td><td>2011-03-18 00:00:00
+          </td><td>2011-03-18 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>373
+          </td><td>Water Prayer
+          </td><td>2011-03-31 00:00:00
+          </td><td>2011-03-31 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>374
+          </td><td>Earth Day, 2011
+          </td><td>2011-04-22 00:00:00
+          </td><td>2011-04-22 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>375
+          </td><td>Sai Baba Dies
+          </td><td>2011-04-24 01:30:00
+          </td><td>2011-04-24 07:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>376
+          </td><td>William &amp Catherine
+          </td><td>2011-04-29 10:00:00
+          </td><td>2011-04-29 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>377
+          </td><td>Pope Paul Beatification
+          </td><td>2011-05-01 00:00:00
+          </td><td>2011-05-01 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>378
+          </td><td>Osama Bin Laden Killed
+          </td><td>2011-05-02 02:24:00
+          </td><td>2011-05-03 02:23:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>379
+          </td><td>Tornadoes in Missouri
+          </td><td>2011-05-22 22:00:00
+          </td><td>2011-05-23 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>380
+          </td><td>Atlantis Last Launch
+          </td><td>2011-07-08 15:00:00
+          </td><td>2011-07-08 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>381
+          </td><td>Womens World Cup
+          </td><td>2011-07-17 19:21:00
+          </td><td>2011-07-17 21:20:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>382
+          </td><td>Oslo Bombing
+          </td><td>2011-07-22 13:00:00
+          </td><td>2011-07-22 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>383
+          </td><td>China Train Crash
+          </td><td>2011-07-23 12:00:00
+          </td><td>2011-07-23 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>384
+          </td><td>Downgrade &amp; Helicopter Crash
+          </td><td>2011-08-05 18:00:00
+          </td><td>2011-08-05 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>385
+          </td><td>UK Rioting
+          </td><td>2011-08-08 00:00:00
+          </td><td>2011-08-08 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>386
+          </td><td>Rain in Tunisia
+          </td><td>2011-08-14 07:00:00
+          </td><td>2011-08-14 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>387
+          </td><td>Libya Rebel Day 1
+          </td><td>2011-08-21 00:00:00
+          </td><td>2011-08-21 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>388
+          </td><td>Earthquake East Coast
+          </td><td>2011-08-23 17:00:00
+          </td><td>2011-08-23 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>389
+          </td><td>Irene Landfall
+          </td><td>2011-08-27 11:30:00
+          </td><td>2011-08-27 17:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>390
+          </td><td>Anniversary 911 2001
+          </td><td>2011-09-11 08:00:00
+          </td><td>2011-09-12 01:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>391
+          </td><td>Internat Day Peace
+          </td><td>2011-09-21 00:00:00
+          </td><td>2011-09-21 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>392
+          </td><td>Troy Davis Execution
+          </td><td>2011-09-22 00:00:00
+          </td><td>2011-09-21 05:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>393
+          </td><td>Wall Street Protests
+          </td><td>2011-09-24 17:00:00
+          </td><td>2011-09-24 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>394
+          </td><td>Bombing, Mogadishu
+          </td><td>2011-10-04 05:00:00
+          </td><td>2011-10-04 10:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>395
+          </td><td>Steve Jobs Dies
+          </td><td>2011-10-05 17:00:00
+          </td><td>2011-10-05 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>396
+          </td><td>Thailand and Greece
+          </td><td>2011-10-19 00:00:00
+          </td><td>2011-10-19 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>397
+          </td><td>Gaddafi Killed
+          </td><td>2011-10-20 03:30:00
+          </td><td>2011-10-20 15:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>398
+          </td><td>Turkey Quake 7.2
+          </td><td>2011-10-23 10:00:00
+          </td><td>2011-10-24 9:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>399
+          </td><td>11-11-11 Meditations
+          </td><td>2011-11-11 00:00:00
+          </td><td>2011-11-11 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>400
+          </td><td>Kabul Shiite Bombing
+          </td><td>2011-12-06 06:30:00
+          </td><td>2011-12-06 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>401
+          </td><td>Gunman in Liege
+          </td><td>2011-12-13 11:00:00
+          </td><td>2011-12-13 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>402
+          </td><td>Philippine Floods
+          </td><td>2011-12-16 18:00:00
+          </td><td>2011-12-17 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>403
+          </td><td>Kim Jong-Il Dies
+          </td><td>2011-12-19 03:00:00
+          </td><td>2011-12-20 02:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>404
+          </td><td>New Year Mean 2012
+          </td><td>2011-12-31 09:30:00
+          </td><td>2012-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>405
+          </td><td>New Year Variance 2012
+          </td><td>2011-12-31 09:30:00
+          </td><td>2012-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>406
+          </td><td>Cruise Ship Disaster
+          </td><td>2012-01-13 20:30:00
+          </td><td>2012-01-14 02:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>407
+          </td><td>SOPA Protests, Withdrawal
+          </td><td>2012-01-20 18:00:00
+          </td><td>2012-01-20 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>408
+          </td><td>State of the Union
+          </td><td>2012-01-25 02:00:00
+          </td><td>2012-01-25 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>409
+          </td><td>Syrian Tragedy
+          </td><td>2012-02-09 06:00:00
+          </td><td>2012-02-09 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>410
+          </td><td>Honduran Prison
+          </td><td>2012-02-15 05:00:00
+          </td><td>2012-02-15 10:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>411
+          </td><td>Do As One Day
+          </td><td>2012-03-10 00:00:00
+          </td><td>2012-03-10 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>412
+          </td><td>Oakland School Shooting
+          </td><td>2012-04-02 17:00:00
+          </td><td>2012-04-02 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>413
+          </td><td>Mogadishu Bombing
+          </td><td>2012-04-04 09:00:00
+          </td><td>2012-04-04 14:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>414
+          </td><td>Avalanch Pakistan
+          </td><td>2012-04-07 04:00:00
+          </td><td>2012-04-07 09:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>415
+          </td><td>Ferry Bengal
+          </td><td>2012-04-30 13:00:00
+          </td><td>2012-04-30 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>416
+          </td><td>Climate Impact
+          </td><td>2012-05-05 00:00:00
+          </td><td>2012-05-05 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>417
+          </td><td>Damascus Bombing
+          </td><td>2012-05-10 03:00:00
+          </td><td>2012-05-10 08:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>418
+          </td><td>Massacre Syria
+          </td><td>2012-05-25 15:00:00
+          </td><td>2012-05-25 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>419
+          </td><td>Obamacare SCOTUS
+          </td><td>2012-06-28 14:00:00
+          </td><td>2012-06-28 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>420
+          </td><td>Mexico Elections
+          </td><td>2012-07-01 17:00:00
+          </td><td>2012-07-02 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>421
+          </td><td>Massacre Tremseh
+          </td><td>2012-07-12 03:00:00
+          </td><td>2012-07-12 08:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>422
+          </td><td>Batman Shooting
+          </td><td>2012-07-20 06:30:00
+          </td><td>2012-07-20 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>423
+          </td><td>Olmympic Opening
+          </td><td>2012-07-27 20:00:00
+          </td><td>2012-07-28 01:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>424
+          </td><td>Sikh Shootings
+          </td><td>2012-08-05 15:00:00
+          </td><td>2012-08-05 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>425
+          </td><td>Romney Acceptance
+          </td><td>2012-08-31 02:00:00
+          </td><td>2012-08-31 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>426
+          </td><td>Burning Man 2012
+          </td><td>2012-09-02 04:28:00
+          </td><td>2012-09-02 05:27:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>427
+          </td><td>Obama Acceptance
+          </td><td>2012-09-07 02:00:00
+          </td><td>2012-09-07 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>428
+          </td><td>Karachi Factory Fire
+          </td><td>2012-09-11 13:00:00
+          </td><td>2012-09-11 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>429
+          </td><td>Internat Day Peace
+          </td><td>2012-09-21 04:00:00
+          </td><td>2012-09-22 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>430
+          </td><td>Hurricane Sandy
+          </td><td>2012-10-29 22:30:00
+          </td><td>2012-10-30 22:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>431
+          </td><td>Obama Elected 2012
+          </td><td>2012-11-06 20:00:00
+          </td><td>2012-11-07 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>432
+          </td><td>Palestine UN Vote
+          </td><td>2012-11-29 17:00:00
+          </td><td>2012-11-29 22:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>433
+          </td><td>Philippines Typhoon
+          </td><td>2012-12-04 00:00:00
+          </td><td>2012-12-04 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>434
+          </td><td>12.12.12 Meditation
+          </td><td>2012-12-12 12:30:00
+          </td><td>2012-12-12 15:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>435
+          </td><td>School Shooting CT
+          </td><td>2012-12-14 14:00:00
+          </td><td>2012-12-14 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>436
+          </td><td>December 21st 2012
+          </td><td>2012-12-21 10:00:00
+          </td><td>2012-12-22 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>437
+          </td><td>Dr. Tomorrow Passes
+          </td><td>2012-12-30 05:00:00
+          </td><td>2012-12-30 10:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>438
+          </td><td>New Year Mean 2013
+          </td><td>2012-12-31 09:30:00
+          </td><td>2013-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>439
+          </td><td>New Year Variance 2013
+          </td><td>2012-12-31 09:30:00
+          </td><td>2013-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>440
+          </td><td>Bombing Quetta, PK
+          </td><td>2013-01-10 15:00:00
+          </td><td>2013-01-10 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>441
+          </td><td>Obama 2nd Inauguration
+          </td><td>2013-01-20 16:00:00
+          </td><td>2013-01-20 21:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>442
+          </td><td>Brazil Nightclub Fire
+          </td><td>2013-01-27 04:00:00
+          </td><td>2013-01-27 09:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>443
+          </td><td>Kumbh Mela, India
+          </td><td>2013-02-10 00:00:00
+          </td><td>2013-02-10 12:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>444
+          </td><td>Pope Benedikt Resigns
+          </td><td>2013-02-11 10:00:00
+          </td><td>2013-02-11 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>445
+          </td><td>V-day and Toning
+          </td><td>2013-02-14 00:00:00
+          </td><td>2013-02-14 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>446
+          </td><td>Hugo Chavez Dies
+          </td><td>2013-03-05 20:25:00
+          </td><td>2013-03-06 04:24:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>447
+          </td><td>Internat Women's Day
+          </td><td>2013-03-08 00:00:00
+          </td><td>2013-03-08 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>448
+          </td><td>Pope Francis Elected
+          </td><td>2013-03-13 18:07:00
+          </td><td>2013-03-14 00:06:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>449
+          </td><td>Boston Marathon Bombing
+          </td><td>2013-04-15 18:00:00<!--1h-->
+          </td><td>2013-04-15 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>450
+          </td><td>Margaret Thatcher Funeral
+          </td><td>2013-04-17 08:30:00
+          </td><td>2013-04-17 13:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>451
+          </td><td>Earthquake Sichuan China
+          </td><td>2013-04-20 00:00:00<!--1h-->
+          </td><td>2013-04-20 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>452
+          </td><td>Bangladesh Factory Collapse
+          </td><td>2013-04-24 03:00:00
+          </td><td>2013-04-24 08:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>453
+          </td><td>Night of Hopes
+          </td><td>2013-05-16 15:30:00
+          </td><td>2013-05-16 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>454
+          </td><td>Oklahoma Tornados
+          </td><td>2013-05-20 00:00:00
+          </td><td>2013-05-20 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>455
+          </td><td>Flooding in India
+          </td><td>2013-06-17 00:00:00
+          </td><td>2013-06-17 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>456
+          </td><td>Global Meditation Movement
+          </td><td>2013-06-23 15:00:00
+          </td><td>2013-06-23 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>457
+          </td><td>Hotshot Tragedy
+          </td><td>2013-06-30 23:00:00
+          </td><td>2013-07-01 04:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>458
+          </td><td>Morsi Ousted
+          </td><td>2013-07-03 18:00:00
+          </td><td>2013-07-03 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>459
+          </td><td>Royal Birth
+          </td><td>2013-07-22 15:00:00
+          </td><td>2013-07-22 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>460
+          </td><td>Train Crash Spain
+          </td><td>2013-07-24 18:00:00
+          </td><td>2013-07-24 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>461
+          </td><td>Chaos in Egypt
+          </td><td>2013-08-14 04:00:00
+          </td><td>2013-08-14 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>462
+          </td><td>Global Meditation
+          </td><td>2013-08-25 21:00:00
+          </td><td>2013-08-25 21:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>463
+          </td><td>Burning Man 2013
+          </td><td>2013-09-01 04:00:00
+          </td><td>2013-09-01 09:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>464
+          </td><td>Washington Shooting
+          </td><td>2013-09-16 12:00:00
+          </td><td>2013-09-16 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>465
+          </td><td>Internat Day Peace
+          </td><td>2013-09-21 04:00:00
+          </td><td>2013-09-22 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>466
+          </td><td>Quake Baluchistan Pakistan
+          </td><td>2013-09-24 10:00:00
+          </td><td>2013-09-25 09:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>467
+          </td><td>Shipwreck Lampedusa
+          </td><td>2013-10-03 04:00:00
+          </td><td>2013-10-03 09:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>468
+          </td><td>Conscious Evolution
+          </td><td>2013-10-12 11:00:00
+          </td><td>2013-10-12 14:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>469
+          </td><td>Million Mask March
+          </td><td>2013-11-05 09:00:00
+          </td><td>2013-11-05 20:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>470
+          </td><td>Typhoon Philippines
+          </td><td>2013-11-07 20:30:00
+          </td><td>2013-11-08 20:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>471
+          </td><td>Portal Activation
+          </td><td>2013-11-23 21:00:00
+          </td><td>2013-11-23 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>472
+          </td><td>Mandela Dies
+          </td><td>2013-12-05 18:00:00
+          </td><td>2013-12-06 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>473
+          </td><td>New Year Mean 2014
+          </td><td>2013-12-31 09:30:00
+          </td><td>2014-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>474
+          </td><td>New Year Variance 2014
+          </td><td>2013-12-31 09:30:00
+          </td><td>2014-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>475
+          </td><td>Winter Olympics 2014
+          </td><td>2014-02-08 00:00:00
+          </td><td>2014-02-08 03:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>476
+          </td><td>V-day and Toning 2014
+          </td><td>2014-02-14 00:00:00
+          </td><td>2014-02-14 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>477
+          </td><td>Malaysian Flight MH370
+          </td><td>2014-03-07 18:00:00
+          </td><td>2014-03-07 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>478
+          </td><td>Korean Ferry Disaster
+          </td><td>2014-04-16 00:00:00
+          </td><td>2014-04-16 05:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>479
+          </td><td>Landslide Afghanistan
+          </td><td>2014-05-02 07:00:00
+          </td><td>2014-05-03 06:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+  
+        </tr><tr>
+          <td>480
+          </td><td>Isis in Iraq
+          </td><td>2014-06-09 00:00:00
+          </td><td>2014-06-09 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+  
+        </tr><tr>
+          <td>481
+          </td><td>Journalist in Egypt
+          </td><td>2014-06-23 12:00:00
+          </td><td>2014-06-23 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+
+        </tr><tr>
+          <td>482
+          </td><td>World Cup Germany vs Brazil
+          </td><td>2014-07-08 20:00:00
+          </td><td>2014-07-08 21:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+
+        </tr><tr>
+          <td>483
+          </td><td>Malaysia Airline Crash
+          </td><td>2014-07-17 14:00:00
+          </td><td>2014-07-17 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>484
+          </td><td>Global Peace Meditation
+          </td><td>2014-08-08 16:00:00
+          </td><td>2014-08-08 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>485
+          </td><td>Robin Williams Dead
+          </td><td>2014-08-11 19:00:00
+          </td><td>2014-08-12 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>486
+          </td><td>Scottish Referendum
+          </td><td>2014-09-19 03:00:00
+          </td><td>2014-09-19 08:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>487
+          </td><td>September 21
+          </td><td>2014-09-21 00:00:00
+          </td><td>2014-09-21 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>488
+          </td><td>Ottowa Terror Shooting
+          </td><td>2014-09-22 14:00:00
+          </td><td>2014-09-22 19:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>489
+          </td><td>Nigeria School Bombing
+          </td><td>2014-11-10 07:00:00
+          </td><td>2014-11-10 12:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>490
+          </td><td>Sydney Hostage Crisis
+          </td><td>2014-12-14 22:00:00
+          </td><td>2014-12-15 15:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>491
+          </td><td>Pakistani School Slaughter
+          </td><td>2014-12-16 05:00:00
+          </td><td>2014-12-16 14:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>492
+          </td><td>Winter Solstice
+          </td><td>2014-12-21 00:00:00
+          </td><td>2014-12-21 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>493
+          </td><td>Air Asia Loss
+          </td><td>2014-12-28 00:00:00
+          </td><td>2014-12-28 05:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>494
+          </td><td>New Year Mean 2015
+          </td><td>2014-12-31 09:30:00
+          </td><td>2015-01-01 12:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+            <br />Sig Avg
+            <br />37 10 min epochs
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>495
+          </td><td>New Year Variance 2015
+          </td><td>2014-12-31 09:30:00
+          </td><td>2015-01-01 11:29:59
+          </td><td>1-sec
+            <br />4-min knn smooth
+          </td><td>Variance
+            <br />Sig Avg
+            <br />10 min epochs
+          </td><td>Permute 1 hr 10000
+            <br />Dev x Prox (V*T)
+            <br />Chi 600 df
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>496
+          </td><td>Charlie Hebdo & Yemen
+          </td><td>2015-01-07 05:00:00
+          </td><td>2015-01-07 16:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>497
+          </td><td>Millions Rally for Unity
+          </td><td>2015-01-11 12:00:00
+          </td><td>2015-01-11 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>498
+          </td><td>Terror attacks in Denmark
+          </td><td>2015-02-14 14:30:00
+          </td><td>2015-02-15 00:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>499
+          </td><td>ISIS beheads Copts in Libya
+          </td><td>2015-02-15 18:00:00
+          </td><td>2015-02-15 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>500
+          </td><td>Yemen Mosque Bombings
+          </td><td>2015-03-20 08:00:00
+          </td><td>2015-03-20 13:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>501
+          </td><td>Germanwings Crash
+          </td><td>2015-03-24 09:30:00
+          </td><td>2015-03-24 15:29:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>502
+          </td><td>Global Meditation Day
+          </td><td>2015-04-22 03:00:00
+          </td><td>2015-04-22 17:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>503
+          </td><td>Nepal Earthquake
+          </td><td>2015-04-25 05:15:00
+          </td><td>2015-04-26 05:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>504
+          </td><td>Fuji Peace Declaration
+          </td><td>2015-05-17 01:00:00
+          </td><td>2015-05-17 04:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>505
+          </td><td>Charleston Hate Crime
+          </td><td>2015-05-18 00:00:00
+          </td><td>2015-05-18 07:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>506
+          </td><td>Iran Nuclear Deal
+          </td><td>2015-07-14 10:25:00
+          </td><td>2015-07-14 16:24:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>507
+          </td><td>Mecca Crane Falls
+          </td><td>2015-09-11 13:00:00
+          </td><td>2015-09-11 18:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>509
+          </td><td>Hadj Stampede 2015
+          </td><td>2015-09-24 05:00:00
+          </td><td>2015-09-24 08:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>510
+          </td><td>Turkey Peace Bombing
+          </td><td>2015-10-10 09:00:00
+          </td><td>2015-10-10 14:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>511
+          </td><td>Paris Terror
+          </td><td>2015-11-13 20:00:00
+          </td><td>2015-11-14 01:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>512
+          </td><td>Arbaeen, Hussein
+          </td><td>2015-12-03 00:00:00
+          </td><td>2015-12-03 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+        </tr><tr>
+          <td>513
+          </td><td>Climate Agreement, Day 1 World Peace
+          </td><td>2015-12-12 00:00:00
+          </td><td>2015-12-12 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare
+            <br />600 df weight
+          </td><td>Yes
+          </td>
+
+
+<!--  ^^^^^^^^^^^^ new entries go above this line ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        end of list
+  
+        ************ use the following row as a template for entries ************
+  
+        </tr><tr>
+          <td>Number
+          </td><td>Description <a href=""></a> 
+          </td><td>Start
+          </td><td>End
+          </td><td>Resolution
+          </td><td>Recipe
+          </td><td>Statistic
+          </td><td>Include
+          </td>
+    
+          ************ add color class (class="") to the td's if needed *********
+          ************ as needed, use <span class="red">*</span>   ************
+  
+  
+        Guido was not doing astrology for this one, but market predictions, so it was canceled.
+        </tr><tr>
+          <td>347
+          </td><td>Astrological Moment III.2
+          </td><td>2010-10-01 19:15:00
+          </td><td>2010-10-01 21:14:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare<br>600 df weight
+          </td><td>Yes
+          </td>
+    
+        Too small, not globally organized. I misunderstood Fumi.
+        </tr><tr>
+          <td>269
+          </td><td>World Peace & Breathing
+          </td><td>2008-08-09 00:00:00
+          </td><td>2008-08-09 23:59:59
+          </td><td>1-sec
+          </td><td>Stouffer Z
+          </td><td>Chisquare<br>600 df weight
+          </td><td>Yes
+          </td>
+    
+        Following could not be correctly analysed because definition of timezones was illogical and def of duration inconsistent. Put in explorations list.
+        </tr><tr>
+          <td>226
+          </td><td>Cosmic Trigger Event
+          </td><td>2006-10-17 10:17:00
+          </td><td>2006-10-18 01:16:59
+          </td><td>1-sec
+          </td><td>Stouffer Z Meanshift
+          </td><td>Chisquare<br>600 df weight
+          </td><td>Yes
+          </td>
+-->
+        </tr>
+      </tbody>
+    </table>
+
+  <!-- ***************** edit above this line ******************* -->
+  </article>
+</section>
+<footer>
+  <!-- SSI footer content -->
+  <div class="copyright">
+    <a href="/index.html">global-mind.org</a>
+    <div class="small">
+      copyright &copy; Roger Nelson, 1998-2020, all rights reserved
+    </div>
+  </div>
+  <nav>
+    <a href="#top">top</a>
+  </nav>
+<!-- end SSI_footer -->
+
+</footer>
+<div id="sitenav">
+    <!-- SSI sitenav content -->
+  <div><a href="javascript:(void);" onclick="menuDisplay('navpanel');">Menu <img id="menudot" src="/images/01_24x24.png" alt="" /></a></div>
+  <ul id="navpanel">
+    <li class="listhead"><span class="sub1">About</span>
+      <ul class="navsub about">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/introduction.html" title="a short introduction to the Project">Introduction</a></li>
+        <li class="hassub aboutCol"><span class="sub2">Questions</span>
+          <ul class="navsub">
+            <li><a href="/abstract.html">Brief overview</a></li>
+            <li><a href="/for.media.html">For the Media</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/programming.html">Credits</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="mailto:rdnelson@princeton.edu" class="iconMail">Contact</a>
+            </li>
+          </ul>
+        </li>
+        <li class="hassub aboutCol"><span class="sub2">Project history</span>
+          <ul class="navsub">
+            <li><a href="/eggname.html" title="how the EGGs got their name">The egg metaphor</a></li>
+            <li><a href="/story.html" title="the road to the project as a road less-traveled">The egg story</a></li>
+            <li><a href="/planning_doc.html" title="the original Project plan">Original plan</a></li>
+<!--
+            <li><a href="/planning2.html" title="projecy background">Background</a></li>
+            <li><a href="/planning3.html" title="project organization">Organization</a></li>
+            <li><a href="/planning4.html" title="">Logistics</a></li>
+            <li><a href="/planning5.html" title="">Personnel</a></li>
+            <li><a href="/planning6.html" title="">Timeline</a></li>
+            <li><a href="/planning7.html" title="">Budget</a></li>
+-->
+          </ul>
+        </li>
+        <li class="hassub aboutCol"><span class="sub2">Navigation</span>
+          <ul class="navsub">
+            <li>Orange arrows indicate offsite links to related sites.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="listhead"><span class="sub1">Data</span>
+      <ul class="navsub data">
+        <li><a href="/results.html">Main results</a></li>
+        <li><a href="/basketstatus.html">Network status</a></li>
+        <li class="hassub"><span class="sub2">Data displays</span>
+          <ul class="navsub">
+            <li><a href="/egghosts.html" title="map of the EGG network">Network map</a></li>
+            <li><a href="/data/eggsummary/" title="daily data aggregation">Daily tables</a></li>
+            <li><a href="/dailyvideos.html" title="daily data visualization">Daily videos</a></li>
+            <li><a href="/bsktobsrv/basketobserver2.html" title="Java app showing network behavior of random event generators">Realtime display</a></li>
+            <li><a href="https://gcpdot.com/" class="iconExtNav" title="composite network variance, colored 'dots' of aggregated egg activity">GCP DOT variance</a></li>
+            <li><a href="https://www.heartmath.org/gci/gcms/live-data/global-consciousness-project/" class="iconExtNav">Long-term data display</a></li>
+          </ul>
+        </li>
+        <li class="hassub"><span class="sub2" title="different ways to see the data">Data Facilities</span>
+          <ul class="navsub">
+            <li><a href="/gcpdata.html" title="information about the GCP data collection">About the data</a></li>
+            <li><a href="/analysis_chi.html" title="description of data analyses for anomalous shifts of the mean">Data analysis</a></li>
+            <li><a href="/data_access.html" title="description of data access facilities and options">Data access</a></li>
+            <li><a href="/extract.html" title="access raw data for download and analysis">Data extract</a></li>
+            <li><a href="/basket_CSV_v2.html" title="information on data structure and utilities">Data tools</a></li>
+            <li><a href="/wget.html" title="multi-day data, requires arrangement with director">Advanced data access</a></li>
+            <li><a href="/errors.html" title="list of known errors in the GCP database">Data errors</a></li>
+            <li><a href="https://www.fourmilab.ch/eggtools/eggshell/" class="iconExtNav" title="tools and programs for low-level data processing (external site)">Eggshell analysis</a></li>
+            <li><a href="https://www.treurniet.ca/GCP/" class="iconExtNav" title="Windows application for downloading and analyzing egg data (external site)">EggAnalysis app</a></li>
+          </ul>
+         </li>
+        </ul>
+      </li>
+      <li class="listhead"><span class="sub1">Discussion</span>
+       <ul class="navsub discussion">
+        <li><a href="/science2.html">The science</a></li>
+        <li><a href="/procedures.html">Procedures</a></li>
+        <li class="hassub"><span class="sub2">References</span>
+          <ul class="navsub">
+            <li><a href="/references.html" title="references relevant to the GCP/EGG project">Scholarly</a></li>
+            <li><a href="/professional.html" title="societies and research organizations">Professional</a></li>
+            <li><a href="/infolinks.html">Technical</a></li>
+            <li><a href="/abstracts.html" title="abstracts of scientific &amp; technical papers">Abstracts</a></li>
+            <li class="hassub"><span class="sub2">Philosophical</span>
+              <ul class="navsub">
+                <li><a href="/links.html" title="articles and miscellany in context with the work">Linked ideas</a></li>
+                <li><a href="/applications.html" title="what to do with evidence of non-local conciousness; participation in creating the future">Applications</a></li>
+                <li><a href="/political.html" title="resources that may motivate action">Political</a></li>
+              </ul>
+            </li>
+            <li class="hassub"><span class="sub2">Perspectives</span>
+              <ul class="navsub">
+                <li><a href="/poetic.html" title="intuition gives deeper meaning to our work">Poetic history</a></li>
+	        <li><a href="/speculations.html">Speculations</a></li>
+                <li><a href="/music.html" title="music as a conduit to awareness">Musical interlude</a></li>
+                <li><a href="/tapestry.html" title="visual perception of non-local consciousness">Random tapestry</a></li>
+                <li><a href="/brainpaint.html">Global Brain<wbr>paint</a></li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+       <li class="listhead"><span class="sub1">Community</span>
+       <ul class="navsub community">
+        <li><a href="/howtohelp.html">How to help</a></li>
+        <li><a href="/contributions.html">Contributions</a></li>
+        <li class="hassub"><span class="sub2">Multimedia</span>
+        <ul class="navsub">
+            <li><a href="/youtube.html" title="our video page with links to related video">Video list</a></li>
+            <li><a href="/media.html">TV, web, print, radio</a></li>
+            <li><a href="/videos.html">Documentaries</a></li>
+            <li><a href="https://www.youtube.com/user/rdnelson" class="iconExtNav" title="external link to GCPvideos on YouTube">YouTube spots</a></li>
+          </ul>
+        </li>
+        <li class="hassub"><span class="sub2">Participate</span>
+          <ul class="navsub">
+            <li><a href="/todo.html">To-do list</a></li>
+            <li class="hassub"><span class="sub2">Groups</span>
+              <ul class="navsub">
+                <li><a href="/colleagues.html">Colleagues</a>
+                </li><li><a href="https://groups.google.com/forum/#!categories/gcpwork" class="iconExtNav">Google group</a>
+                </li><li><a href="https://www.facebook.com/EGGproject?ref=hl" class="iconExtNav">Facebook</a>
+                </li>
+              </ul>
+            </li>
+            <li class="hassub"><span class="sub2" onclick="javascript:(void);">Egg hosting</span>
+              <ul class="navsub">
+                <li><a href="/egghosts.html">Network of eggs</a></li>
+                <li><a href="/software.html">Software</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+<!-- end SSI_sitenav -->
+
+
+</div>
+<!-- SSI scripts content -->
+<!-- say hello to decrepit browsers -->
+<!--[if lt IE 9]>
+  <script type="text/javascript"> 
+    var mssg = "<div name='aMsg' id='aMsg' class='msg' onclick='hide(this);'>It appears your internet browser is outdated and will have difficulty understanding how to display this site. For safer browsing, and the ability to see this site properly, upgrade your browser to a newer version for free today.<br><br><a href='/upgrade.html'>See our page with upgrade links</a><br><br><a href='/indexIE8.html'>and our temporary home page for old browsers</a></span><br><br><span>Click the dark area to dismiss this message and browse anyway</div>";
+    document.write(mssg);
+  </script>
+<![endif]-->
+<script type="text/javascript">
+<!--
+  // google page analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46907126-1', 'global-mind.org');
+  ga('send', 'pageview');
+//-->
+</script>
+<!-- end SSI_scripts -->
+
+</body></html>
+

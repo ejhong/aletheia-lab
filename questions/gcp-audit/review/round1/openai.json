@@ -1,0 +1,8 @@
+{
+ "vendor": "openai",
+ "model": "gpt-6.2-astra",
+ "utc": "2026-11-23T20:13:02.217649+00:00",
+ "input_tokens": 4953,
+ "output_tokens": 7108,
+ "cost_usd_list_price": 0.3239
+}

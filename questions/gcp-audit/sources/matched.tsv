@@ -1,0 +1,513 @@
+num	description	begin_utc	end_utc	seconds	resolution	recipe	statistic	included	pub_event	pub_description	pub_timeframe	pub_resolution	pub_z	match_rule
+1	Embassy	1998-08-07 07:15:00	1998-08-07 10:14:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	1	Embassy Bombings	19980807	15-min	3.209	num; same date
+2	Omagh*	1998-08-15 14:30:00	1998-08-15 17:29:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	0	2	Omagh Bombings *	19980815	15-min	-0.675	num; same date
+3	Bomb Afghanistan	1998-08-20 17:15:00	1998-08-20 17:44:59	1800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	3	US Airstrikes, Afghanistan	19980820	15-min	1.146	num; same date
+4	Swissair 111 Crash	1998-09-03 01:00:00	1998-09-03 03:59:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	4	Swissair 111 crash	19980903	15-min	1.336	num; same date
+5	McGwire Record	1998-09-09 01:00:00	1998-09-09 01:29:59	1800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	5	McGwire, record homerun	19980908	15-min	1.320	num; 1 day apart
+6	Clinton Grand Jury	1998-09-11 19:00:00	1998-09-11 22:59:59	14400	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	6	Clinton Affair Grand Jury	19980911	15-min	0.387	num; same date
+7	Casitas Collapse	1998-10-30 15:30:00	1998-10-30 15:59:59	1800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	7	Nicaragua, Casitas collapse	19981030	15-min	-1.085	num; same date
+8	Casitas Flood	1998-10-30 19:00:00	1998-10-30 21:59:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	8	Nicaragua, Casitas flooding	19981030	15-min	1.215	num; same date
+9	Global Vigil JT	1998-11-13 16:00:00	1998-11-13 16:14:59	900	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	9	Global Peace Vigil, Twyman	19981113	15-min	1.223	num; same date
+10	11th Hour Iraq*	1998-11-26 19:00:00	1998-11-26 21:59:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	0	10	Iraq, 11th hour decision *	19981126?	15-min	-0.412	num; same date
+11	World Peace UN	1998-12-10 23:30:00	1998-12-11 00:29:59	3600	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	11	World Peace Prayer	19981210	15-min	-0.135	num; same date
+12	Iraq Bombing	1998-12-16 21:30:00	1998-12-16 22:29:59	3600	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	12	Iraq, Bombing	19981217	15-min	-0.535	num; 1 day apart
+13	Vote Impeachment	1998-12-19 17:00:00	1998-12-19 19:59:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	13	House votes impeachment	19981219	15-min	-0.934	num; same date
+14	Christmas Eve UTC	1998-12-24 16:00:00	1998-12-24 17:59:59	7200	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	14	Christmas Eve, UTC	19981224	15-min	-1.026	num; same date
+15	Christmas Eve EST	1998-12-24 21:00:00	1998-12-24 22:59:59	7200	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	15	Christmas Eve, EST	19981224	15-min	-0.079	num; same date
+16	Christmas Eve PST	1998-12-25 00:00:00	1998-12-25 01:59:59	7200	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	16	Christmas Eve, PST	19981224	15-min	-0.715	num; 1 day apart
+17	New Year Mean 1998-1999	1998-12-31 09:30:00	1999-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	17	New Years, 24 hrs	19981231	1-sec	-0.171	num; same date
+18	New Year 1999 Times Sq*	1999-01-01 04:55:00	1999-01-01 05:04:59	600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	0	18	New Years, Times Square *	19981231	1-sec	0.871	num; 1 day apart
+19	New Yr Europe vs US*	1998-12-31 23:00:00 to 23:00:59	1999-01-01 05:00:00 to 05:00:59		1-sec	Diff of Sum Variance	Chisquare 600 df weight	0	19	New Years, Euro vs US **	19981231	1-sec	0.845	num; same date
+20	New Yr Maxi vs Mini*	1998-12-31 23:55:00 10-min begins +10,+2,+1,0,-3,-5,-6,-8	1998-12-31 23:55:00 10-min begins +12,+5,-1,-2,-9,-11,-12		1-sec	Diff of Sig Avg of Var 10 min epochs	Chisquare 600 df weight	0	20	New Years, Maxi vs Mini **	19981231	1-sec (Diff)	1.165	num; same date
+21	Earthquake Columbia	1999-01-25 17:15:00	1999-01-25 21:14:59	14400	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	21	Colombia, Armenia Quake	19990125	15-min	0.823	num; same date
+22	Clinton Acquittal	1999-02-12 17:30:00	1999-02-12 18:29:59	3600	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	22	Senate acquits Clinton	19990212	15-min	0.217	num; same date
+23	Bomb Yugoslavia	1999-03-24 19:00:00	1999-03-24 19:59:59	3600	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	23	Nato Bombs Yugoslavia	19990324	15-min	1.691	num; same date
+24	Dow Tops 10000	1999-03-29 20:00:00	1999-03-29 21:59:59	7200	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	24	Dow Closes Over 10000	19990329	15-min	0.384	num; same date
+25	Pray for Peace	1999-04-03 20:00:00 1999-04-04 19:00:00 (DST)	1999-05-03 19:01:59		1-sec (orig 1-min?)	Concat 2-min Z(s) 31 days	Chisquare 600 df weight	1	25	Praying for Peace	19990403 - 19990503	1-min	0.819	num; same date
+26	Littleton School	1999-04-20 17:30:00	1999-04-20 20:29:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	26	Littleton School Tragedy	19990420	15-min	-0.844	num; same date
+27	Autonomy PLO	1999-05-05 22:00:00	1999-05-05 22:14:59	900	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	27	Autonomy, Israel, PLO	19990505	15-min	-0.057	num; same date
+28	Peace at Last	1999-06-10 05:00:00	1999-06-10 07:59:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	28	"""Peace at Last"", Headlines"	19990610	15-min	0.505	num; same date
+29	War Ends Milosevic	1999-06-10 14:00:00	1999-06-10 16:59:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	29	Yugo War Ends, Milosevic	19990610	15-min	1.313	num; same date
+30	JFK Jr Crash*	1999-07-17 01:15:00	1999-07-17 01:44:59	1800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	0	30	JFK Jr Crash, 30-min *	19990717	15-min	0.283	num; same date
+31	JFK Jr Crash	1999-07-17 01:30:00	1999-07-17 04:29:59	10800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	31	JFK Jr Crash, 3 Hours	19990717	15-min	1.344	num; same date
+32	India Train Crash	1999-08-01 20:00:00	1999-08-01 23:59:59	14400	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	32	India, Train Crash	19990801	15-min	1.813	num; same date
+33	Solar Eclipse*	1999-08-11 09:30:00	1999-08-11 12:35:59	11160	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	0	33	Solar Eclipse *	19990811	15-min	-0.006	num; same date
+34	Turkey Quake 30-min*	1999-08-17 00:00:00	1999-08-17 00:29:59	1800	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	0	34	Turkey, Earthquake, 30-min *	19990817	15-min	-0.689	num; same date
+35	Turkey Quake 4-hr	1999-08-17 00:00:00	1999-08-17 03:59:59	14400	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	35	Turkey, Earthquake, 4 Hours	19990817	15-min	-0.171	num; same date
+36	Japan Nuclear Accident	1999-09-30 01:00:00	1999-09-30 01:59:59	3600	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	36	Japan, Nuclear Accident	19990930	15-min	1.088	num; same date
+37	Billion Person Medit	1999-10-25 04:00:00	1999-10-25 04:29:59	1800	10-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	37	Billion Person Meditation	19991025	10-min	2.242	num; same date
+38	Typhoon India I*	1999-10-29 04:30:00	1999-10-29 06:29:59	7200	15-min	Sum Variance (Sum block Z²)	Chisquare 600 df weight	0	38	Typhoon, India, 2 Hours *	19991029	15-min	-0.583	num; same date
+39	Typhoon India II	1999-10-29 04:30:00	1999-10-30 04:29:59	86400	1-hour	Sum Variance (Sum block Z²)	Chisquare 600 df weight	1	39	Typhoon, India, 24 Hours	19991029-30	15-min	-0.039	num; same date
+40	Earthquake Turkey II	1999-11-12 14:59:00	1999-11-12 18:58:59	14400	15-min	Sum Var 1st 2hrs Sum -1*Var 2nd 2hrs	Chisquare 600 df weight	1	40	Earthquake, Turkey II, 2 Hrs ?	19991112	15-min	-0.105	num; same date
+41	Full Moon Solstice	1999-12-22 05:27:36	1999-12-22 05:32:23	288	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	41	Full Moon, Solstice, 4.8 Min	19991222	1-sec, epoch	-0.845	num; same date
+42	New Year Mean 1999-2000	1999-12-31 09:30:00	2000-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	42	New Year, Y2K, 24 hrs	19991231	1-sec, epoch	-0.407	num; same date
+43	New Year Var 99-00	1999-12-31 09:30:00	2000-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	43	New Year, Y2K, Variance	19991231	1-sec, epoch	0.157	num; same date
+44	New Year Hi - Lo*	1999-12-31 09:30:00	2000-01-01 11:29:59	93600	1-sec	Stf Z Diff Meanshift	Chisquare 600 df weight	0	44	Hi vs Low Populations, Y2K **	19991231	1-sec (diffs)	-0.647	num; same date
+45	Just A Minute	2000-01-01 12:00:00	2000-01-01 12:00:59	60	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	45	Just A Minute, 1 Min Epoch	20000101	1-sec, epoch	0.697	num; same date
+46	Papal Visit, Israel	2000-03-21 00:00:00	2000-03-26 23:59:59	518400	1-min	Stouffer Z Meanshift	Chisquare 600 df weight	1	46	Papal Visit, Israel	20000321-26	1-min	2.428	num; same date
+47	Great Experiment II	2000-04-23 19:00:00	2000-04-23 19:09:59	600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	47	Great Experiment II	20000423	1-sec	-0.230	num; same date
+48	World Earth Healing Day	2000-05-04 04:00:00 +12:00:00 +19:00:00	2000-05-04 04:19:59 +12:19:59 +19:19:59		1-sec	Stouffer Z Sig Avg 3 20-min Epochs	Chisquare 600 df weight	1	48	World Earth Healing Day	20000504	1-sec	-0.413	num; same date
+49	Concorde Crash, Paris	2000-07-25 15:47:00	2000-07-25 16:16:59	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	49	Concorde Crash, Paris	20000725	1-sec	-0.715	num; same date
+50	Kursk Tragedy, 30-min	2000-08-12 07:28:00	2000-08-12 07:57:59	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	50	Kursk Tragedy, 30-min	20000812	1-sec	1.625	num; same date
+51	Kursk, 10 days	2000-08-12 07:28:00	2000-08-21 14:29:59	802920	1-min	Stouffer Z Meanshift	Chisquare 600 df weight	1	51	Kursk, 10 days	20000812-21	1-min	1.330	num; same date
+52	US TV: Survivors Finale	2000-08-24 00:00:00	2000-08-24 01:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	52	US TV: Survivors Finale	20000824	1-sec	-0.471	num; same date
+53	Peace Summit Relig Spirit	2000-08-28 00:00:00	2000-08-31 23:59:59	345600	1-min	Stouffer Z Meanshift	Chisquare 600 df weight	1	53	Peace Summit Relig Spirit	20000828-31	1-min	-0.446	num; same date
+54	Olympic Opening Ceremony	2000-09-15 11:00:00	2000-09-15 11:59:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	54	Olympic Opening Ceremony	20000915	1-sec	0.022	num; same date
+55	Group Mind Meditation	2000-09-24 22:00:00	2000-09-24 22:59:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	55	Group Mind Meditation	20000924	1-sec	1.720	num; same date
+56	Pierre Trudeau Funeral	2000-10-03 15:00:00	2000-10-03 16:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	56	Pierre Trudeau Funeral	20001003	1-sec	1.982	num; same date
+57	Group Mind Meditation 2	2000-10-22 22:10:00	2000-10-22 22:24:59	900	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	57	Group Mind Meditation 2	20001022	1-sec	-2.085	num; same date
+58	US Election 2000, a	2000-11-07 06:17:00	2000-11-07 10:16:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	58	US Election 2000	20001107, 8, 9 ...	1-sec	0.159	num; same date
+59	Group Mind Meditation 3	2000-11-12 23:20:00	2000-11-12 23:39:59	1200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	59	Group Mind Meditation 3	20001112	1-sec	0.027	num; same date
+60	Group Mind Meditation 4	2000-11-26 23:15:00	2000-11-26 23:39:59	1500	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	60	Group Mind Meditation 4	20001126	1-sec	-0.028	num; same date
+61	Miss World 2000	2000-11-30 22:25:00	2000-11-30 22:29:59	300	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	61	Miss World 2000	20001130	1-sec	1.242	num; same date
+62	US Election 2000, b	2000-12-08 21:00:00	2000-12-08 21:04:59	300	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	62	US Election 2000	20001208	1-sec	0.438	num; same date
+63	US Election 2000, Finality	2000-12-12 15:00:00	2000-12-12 15:14:59	900	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	63	US Election 2000, Finality	20001212	1-sec	0.934	num; same date
+64	New Year Mean 2000-2001	2000-12-31 09:30:00	2001-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	64	New Year 2000-2001 Mean	20010101	1-sec	-1.776	num; 1 day apart
+65	New Year Var 00-01	2000-12-31 09:30:00	2001-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	65	New Year 2000-2001 Var	20010101	1-sec	-0.709	num; 1 day apart
+66	Lovewave 010101*	2000-12-31 23:45:00	2001-01-01 00:14:59	1800	1-sec 4-min knn smooth	Variance Like New Year But UTC centric	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	0	66	Lovewave 010101 **	20010101	1-sec	2.688	num; 1 day apart
+67	Central America Quake	2001-01-13 17:18:29	2001-01-13 17:48:28	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	67	Central America Quake	20010113	1-sec	1.446	num; same date
+68	Bush Inauguration	2001-01-20 16:32:00	2001-01-20 17:31:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	68	Bush Inauguration	20010120	1-sec	-0.550	num; same date
+69	Kumbh Mela, India	2001-01-24 00:00:00	2001-01-24 12:59:59	46800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	69	Kumbh Mela, India	20010124	1-sec	1.457	num; same date
+70	Western India Quake	2001-01-26 03:01:41	2001-01-26 03:31:40	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	70	Western India Quake	20010126	1-sec	-1.042	num; same date
+71	WorldPuja Webcast	2001-03-31 16:45:00	2001-03-31 17:44:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	71	WorldPuja Webcast	20010331	1-sec	0.591	num; same date
+72	Johrei Ceremonies	2001-04-01 14:00:00 02, 04, 08, 13	2001-04-01 14:59:59 02, 04, 08, 13		1-sec	Sig Avg Stouffer Z Meanshift	Chisquare 600 df weight	1	72	Johrei Ceremonies	20010401	1-sec, epoch	1.419	num; same date
+73	Earth Day, 2001	2001-04-22 00:00:00	2001-04-22 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	73	Earth Day, 2001	20010422	1-sec	1.595	num; same date
+74	Full Moon in Taurus	2001-05-07 13:46:30	2001-05-07 14:01:29	900	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	74	Full Moon in Taurus	20010507	1-sec	0.948	num; same date
+75	World Peace Meditation	2001-05-20 01:30:00	2001-05-20 03:59:59	9000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	75	World Peace Meditation	20010520	1-sec	0.773	num; same date
+76	World Earth Healing Day	2001-06-21 07:30:00 11:50:00 19:00:00	2001-06-21 07:49:59 12:09:59 19:19:59		1-sec	Sig Avg Stouffer Z Meanshift	Chisquare 600 df weight	1	76	World Earth Healing Day	20010621	1-sec	0.609	num; same date
+77	Roll Your Own Blackout	2001-06-21 05:00:00	2001-06-22 04:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	77	Roll Your Own Blackout	20010621	1-sec	-0.807	num; same date
+78	Beijing Gets 2008 Olympics	2001-07-13 13:45:00	2001-07-13 14:14:59	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	78	Beijing Gets 2008 Olympics	20010713	1-sec	0.681	num; same date
+79	Buddhist Stupa Ceremony	2001-08-09 06:30:00	2001-08-17 14:59:59	721800	10-min	Stouffer Z Meanshift	Chisquare 600 df weight	1	79	Buddhist Stupa Ceremony	20010809-17	1-min	-0.213	num; same date
+80	Terrorist Disaster, Sept 11	2001-09-11 12:35:00	2001-09-11 16:44:59	15000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	80	Terrorist Disaster, Sept 11	20010911	1-sec	1.873	num; same date
+81	Terror, Sept 11 Variance*	2001-09-11 04:00:00	2001-09-11 23:59:59	72000	1-sec	Cum Dev Var from Mean Var	Max in 10000 permutations Chi 600 df	0	81	Terror, Variance, Sept 11 **	20010911	1-sec	1.305	num; same date
+82	Silent Prayer, Sept 14	2001-09-14 10:00:00 16:00:00	2001-09-14 10:00:00 16:02:59		1-sec	Sig Avg Stouffer Z Meanshift	Chisquare 600 df weight	1	82	Silent Prayer, Sept 14	20010914	1-sec	1.087	num; same date
+83	Sea to Shining See	2001-09-22 01:00:00	2001-09-22 02:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	83	Sea to Shining Sea	20010922	1-sec	1.713	num; same date
+84	MUM Peace Meditation	2001-09-23 11:45:00	2001-09-27 23:29:59	387900	1-sec	Serial Concatenation Stouffer Z	Chisquare 600 df weight	1	84	MUM Peace Meditation	20010923-27	1-sec	0.345	num; same date
+85	Begin Afghan Bombing	2001-10-07 16:00:00	2001-10-07 23:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	85	Begin Afghan Bombing	20011007	1-sec	0.684	num; same date
+86	Children Pledge Allegiance	2001-10-12 18:55:00	2001-10-12 19:14:59	1200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	86	Children Pledge Allegiance	20011012	1-sec	0.568	num; same date
+87	Binding Spell on Bin Laden	2001-10-16 01:00:00	2001-10-16 01:29:59	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	87	Binding Spell on Bin Laden	20011015	1-sec	0.616	num; 1 day apart
+88	Assassination in Israel	2001-10-17 05:00:00	2001-10-17 07:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	88	Assassination in Israel	20011017	1-sec	1.573	num; same date
+89	World Series, Yankee Stadium	2001-11-01 00:00:00	2001-11-01 04:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	89	World Series, Yankee St	20011031	1-sec	0.267	num; 1 day apart
+90	World-Wide Meditations	2001-11-11 11:00:00	2001-11-11 11:14:59	900	1-sec	Stouffer Z Sig Avg 24 15 min epochs	Chisquare 600 df weight	1	90	World-Wide Meditation	20011111	1-sec	-0.447	num; same date
+91	Crash of AA 587	2001-11-12 14:00:00	2001-11-12 17:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	91	Crash of AA 587	20011112	1-sec	-1.123	num; same date
+92	Ramadan Muslim Prayer	2001-11-16 11:00:00	2001-11-16 11:29:59	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	92	Ramadan Muslim Prayer	20011116	1-sec	1.836	num; same date
+93	World Puja Meditation	2001-11-16 17:00:00	2001-11-16 17:29:59	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	93	WorldPuja Meditation	20011116	1-sec	-0.802	num; same date
+94	George Harrison Tribute	2001-12-03 18:30:00	2001-12-03 18:30:59	60	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	94	George Harrison Tribute	20011203	1-sec	0.222	num; same date
+95	Sir Peter Blake Murder	2001-12-06 01:00:00	2001-12-06 04:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	95	Sir Peter Blake Murdered	20011206	1-sec	-0.908	num; same date
+96	Astrological Moments	2001-12-09 18:15:00 2001-12-14 00:06:00 04:35:00 05:03:00 09:10:00	2001-12-09 22:14:59 2001-12-14 04:05:59 08:34:59 09:02:59 13:09:59		1-sec	Composite of 5 Stouffer Z Chisquares	Chisquare 600 df weight	1	96	Astrological Moments	20011209-14	1-sec	2.207	num; same date
+97	New Year Mean 2001-2002	2001-12-31 09:30:00	2002-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	97	New Year 2001-2002, Mean	20020101	1-sec	1.466	num; 1 day apart
+98	New Year Var 01-02	2001-12-31 09:30:00	2002-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	98	New Year 2002, Var	20020101	1-sec	0.530	num; 1 day apart
+99	Volcanic Eruption, Congo	2002-01-17 02:45:00	2002-01-17 06:44:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	99	Volcanic Eruption, Congo	20020117	1-sec	-0.034	num; same date
+100	Astrid Lindgren Dies	2002-01-28 11:00:00	2002-01-28 14:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	100	Astrid Lindgren Dies	20020128	1-sec	0.513	num; same date
+101	Winter Olympic Opening 02	2002-02-10 01:00:00	2002-02-10 03:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	101	Winter Olympic Opening	20020209	1-sec	1.215	num; 1 day apart
+102	Sri Lanka Peace Meditation	2002-03-15 09:40:00	2002-03-15 10:44:59	3900	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	102	Sri Lanka Peace Meditation	20020315	1-sec	-0.085	num; same date
+103	Earthquake Afghanistan	2002-03-25 14:26:00	2002-03-25 18:25:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	103	Earthquake, Afghanistan	20020325	1-sec	-0.680	num; same date
+104	Passover Bombing, Israel	2002-03-27 17:00:00	2002-03-27 20:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	104	Passover Bombing	20020327	1-sec	-.064	num; same date
+105	Jenin Incursion, Israel	2002-04-03 00:00:00	2002-04-03 03:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	105	Jenin Incursion, Israel	20020403	1-sec	0.487	num; same date
+106	Tiger Woods Triumph	2002-04-14 18:22:00	2002-04-14 22:59:59	16680	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	106	Tiger Woods Triumph	20020414	1-sec	-0.147	num; same date
+107	Indigo Peace Meditation	2002-04-20 22:00:00	2002-04-20 22:09:59	600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	107	Indigo Peace Meditation	20020420	1-sec	-1.303	num; same date
+108	Erfurt School Shooting	2002-04-26 09:00:00	2002-04-26 11:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	108	Erfurth School Shooting	20020426	1-sec	0.756	num; same date
+109	World Cup Soccer 2002	2002-06-07 11:30:00	2002-06-07 13:29:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	109	World Cup Soccer	20020607	1-sec	-0.082	num; same date
+110	Astrological Moments II	2002-06-20 15:48:00 2002-06-23 15:06:00 2002-06-23 18:57:00	2002-06-20 19:47:59 2002-06-23 19:05:59 2002-06-23 22:56:59		1-sec	Composite of 3 Stouffer Z Chisquares	Chisquare 600 df weight	1	110	Astrological Moments II	20020620-23	1-sec	1.208	num; same date
+111	Summer Solstice 2002	2002-06-21 13:00:00	2002-06-21 13:59:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	111	Summer Solstice 2002	20020621	1-sec	-0.636	num; same date
+112	World Cup Soccer 2002 II	2002-06-30 11:00:00	2002-06-30 12:47:59	6480	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	112	World Cup Soccer	20020630	1-sec	0.147	num; same date
+113	World Healing Day, 2002	2002-08-22 12:00:00 22:20:00	2002-08-22 12:19:59 22:39:59		1-sec	Stouffer Z Meanshift concatenation	Chisquare 600 df weight	1	113	World Healing Day	20020822	1-sec	0.993	num; same date
+114	Etzold 9/11 Anniversary	2002-09-11 12:45:00	2002-09-11 15:44:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	114	911 Anniversary, March Pred	20020911	1-sec	1.307	num; same date
+115	Mitchell 9/11 Anniversary	2002-09-11 00:00:00	2002-09-11 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	115	911 Anniversary, Mean	20020911	1-sec	-1.599	num; same date
+116	9/11 Anniversary Variance*	2002-09-11 00:00:00	2002-09-11 23:59:59	86400	1-sec	Cum Dev Var from Mean Var	Max in 10000 permutations Chi 600 df	0	116	911 Anniversary, Var **	20020911	1-sec	-0.313	num; same date
+117	Korea's Birthday	2002-10-03 04:00:00	2002-10-03 09:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	117	Korea's Birthday	20021003	1-sec	-2.060	num; same date
+118	Bali Bombing	2002-10-12 15:30:00	2002-10-12 17:59:59	9000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	118	Bali Bombing	20021012	1-sec	-0.274	num; same date
+119	Twyman in Baghdad	2002-10-12 17:00:00	2002-10-12 17:19:59	1200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	119	Twyman in Baghdad	20021012	1-sec	0.032	num; same date
+120	Earthdance 2002	2002-10-12 22:50:00	2002-10-12 23:14:59	1500	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	120	EarthDance 2002	20021012	1-sec	-0.056	num; same date
+121	Wellstone Plane Crash	2002-10-25 15:00:00	2002-10-25 16:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	121	Wellstone Crash	20021025	1-sec	0.489	num; same date
+122	Chechen Hostage Tragedy	2002-10-26 02:30:00	2002-10-26 04:59:59	9000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	122	Chechen Hostage Crisis	20021026	1-sec	0.401	num; same date
+123	Kenyan Terrorist Attacks	2002-11-28 05:00:00	2002-11-28 07:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	123	Kenyan Terrorist Attacks	20021128	1-sec	-0.700	num; same date
+124	Suicide Bombing in Grozny	2002-12-28 11:30:00	2002-12-28 14:29:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	124	Suicide Bombing, Grozny	20021227	1-sec	-0.036	num; 1 day apart
+125	New Year Mean 2002-2003	2002-12-31 09:30:00	2003-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	125	New Year, 2003, Mean	20030101	1-sec	-1.723	num; 1 day apart
+126	New Year Variance	2002-12-31 09:30:00	2003-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	126	New Year, 2003, Var	20030101	1-sec	-0.303	num; 1 day apart
+127	Tel Aviv Market Bombing	2003-01-05 17:00:00	2003-01-05 19:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	127	Tel Aviv Bombing	20030105	1-sec	-0.008	num; same date
+128	Antiwar Protests, Jan 18 2003	2003-01-18 18:30:00	2003-01-18 20:29:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	128	Antiwar Protests	20030118	1-sec	1.207	num; same date
+129	Shuttle Columbia Disaster	2003-02-01 13:00:00	2003-02-01 16:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	129	Columbia Shuttle Disaster	20030201	1-sec	-1.014	num; same date
+130	Peace Meditation	2003-02-09 17:00:00	2003-02-09 17:59:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	130	Peace Meditations	20030209	1-sec	-0.244	num; same date
+131	Global Peace Demonstrations	2003-02-15 00:00:00	2003-02-15 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	131	Global Peace Demonstrations	20030215	1-sec	1.483	num; same date
+132	Korean Subway	2003-02-18 00:45:00	2003-02-18 12:44:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	132	Korean Subway Fire	20030218	1-sec	0.625	num; same date
+133	Lysistrata	2003-03-03 07:00:00	2003-03-04 06:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	133	Lysistrata and Women	20030303	1-sec	-1.707	num; same date
+134	Gather the Women	2003-03-08 00:00:00	2003-03-08 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	134	Gather The Women	20030308	1-sec	-0.532	num; same date
+135	Serbia Assassination	2003-03-12 11:30:00	2003-03-12 14:29:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	135	Serbian Assassination	20030312	1-sec	-1.243	num; same date
+136	Candlelight Vigil	2003-03-16 07:00:00	2003-03-17 06:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	136	Candlelight Vigil	20030316	1-sec	1.783	num; same date
+137	Begin War on Iraq -4 +4 hours	2003-03-19 23:15:00	2003-03-20 07:14:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	137	War in Iraq	20030320	1-sec	-0.422	num; 1 day apart
+138	Great Exp IV, Bush Prayer	2003-04-01 17:00:00	2003-04-01 17:14:59	900	1-sec Europe/US	Stouffer Z Sig Avg 6 15 min epochs	+1,0,-5,6,7,8 Chisquare 600 df weight	1	138	GE Prayer for Bush	20030401	1-sec	-0.155	num; same date
+139	Iraq War Ends, Saddam Falls	2003-04-09 14:30:00	2003-04-09 15:29:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	139	Saddam Falls, War Ends	20030409	1-sec	1.341	num; same date
+140	Suicide Bombing in Riyadh	2003-05-12 19:30:00	2003-05-12 23:29:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	140	Bombing in Riyadh	20030512	1-sec	0.560	num; same date
+141	Suicide Bombing in Morroco	2003-05-16 20:20:00	2003-05-17 00:19:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	141	Bombing in Morroco	20030516	1-sec	1.071	num; same date
+142	Earthquake in Algeria	2003-05-21 17:45:00	2003-05-21 21:44:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	142	Earthquake in Algeria	20030521	1-sec	0.551	num; same date
+143	Aqaba Summit, Middle East	2003-06-04 11:00:00	2003-06-04 20:59:59	36000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	143	Aqaba Summit, Middle East	20030604	1-sec	1.136	num; same date
+144	Rainbow, 4th July	2003-07-04 13:00:00	2003-07-04 18:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	144	Rainbow 4th of July	20030704	1-sec	-0.693	num; same date
+145	Love, Peace, Water Day	2003-07-25 00:00:00	2003-07-25 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	145	Love, Peace, Water	20030725	1-sec	0.154	num; same date
+146	Coup Attempt, Manila	2003-07-27 00:00:00	2003-07-27 10:44:59	38700	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	146	Manila Coup Attempt	20030727	1-sec	1.054	num; same date
+147	Blackout of 2003	2003-08-14 19:00:00	2003-08-14 23:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	147	Blackout 2003	20030814	1-sec	-1.205	num; same date
+148	Bombing UN Baghdad	2003-08-19 11:30:00	2003-08-19 17:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	148	Baghdad, UN Bombing	20030819	1-sec	-0.175	num; same date
+149	Mars and Yang Spiral	2003-08-27 23:00:00	2003-08-28 00:47:59	6480	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	149	Mars Close Approach	20030827	1-sec	0.623	num; same date
+150	World Healing Day 2003	2003-09-10 12:00:00 14:30:00	2003-09-10 12:19:59 14:49:59		1-sec	Stouffer Z Meanshift concatenation	Chisquare 600 df weight	1	150	World Healing 2003	20030910	1-sec	-1.082	num; same date
+151	911 Anniversary	2003-09-11 12:00:00	2003-09-11 19:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	151	911 Anniversary	20030911	1-sec	-0.382	num; same date
+152	Typhoon South Korea	2003-09-12 09:00:00	2003-09-12 15:59:59	25200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	152	Typhoon in Korea	20030912	1-sec	0.365	num; same date
+153	Dalai Lama, NYC	2003-09-21 16:00:00	2003-09-21 17:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	153	Dalai Lama in NYC	20030921	1-sec	0.145	num; same date
+154	Harmonic Concordance	2003-11-09 01:00:00	2003-11-09 01:23:59	1440	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	154	Harmonic Concordance	20031109	1-sec	0.612	num; same date
+155	Turkey Synagogue Bombs	2003-11-15 04:00:00	2003-11-15 07:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	155	Turkish Synagogue Bomb	20031115	1-sec	0.425	num; same date
+156	Turkey Bank Consul	2003-11-20 09:00:00	2003-11-20 12:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	156	Turkish Bank & Consulate	20031120	1-sec	0.091	num; same date
+157	Russia Commuter Train	2003-12-05 04:00:00	2003-12-05 07:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	157	Russian Bombing	20031205	1-sec	-1.488	num; same date
+158	Saddam Captured	2003-12-13 17:00:00	2003-12-13 23:59:59	25200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	158	Saddam Hussein Captured	20031213	1-sec	0.451	num; same date
+159	Oprah Winfrey in Africa	2003-12-18 01:00:00	2003-12-18 01:59:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	159	Opra Winfrey in Africa	20031218	1-sec	0.711	num; same date
+160	Earthquake in Bam, Iran	2003-12-26 01:30:00	2003-12-26 09:29:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	160	Earthquake in Bam, Iran	20031226	1-sec	0.618	num; same date
+161	60 Seconds for Peace	2003-12-27 21:00:00	2003-12-27 21:00:59	60	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	161	60 Seconds for Peace	20031227	1-sec	1.303	num; same date
+162	New Year Mean 2003-2004	2003-12-31 09:30:00	2004-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	162	New Year, 2004, Mean	20040101	1-sec	0.180	num; 1 day apart
+163	New Year Variance	2003-12-31 09:30:00	2004-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	163	New Year, 2004, Var	20040101	1-sec	-0.684	num; 1 day apart
+164	Hadj Ritual Tragedy	2004-02-01 05:30:00	2004-02-01 07:29:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	164	Hadj Ritual Tragedy	20040201	1-sec	0.742	num; same date
+165	Iran Train Explosion	2004-02-18 00:30:00	2004-02-18 10:29:59	36000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	165	Iran Train Explosion	20040218	1-sec	1.226	num; same date
+166	Oscar Ceremony 2004	2004-03-01 01:00:00	2004-03-01 05:08:59	14940	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	166	Oscar Ceremonies	20040229	1-sec	0.159	num; 1 day apart
+167	Attacks on Shiites, Iraq	2004-03-02 06:30:00	2004-03-02 10:29:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	167	Attacks on Shiites	20040302	1-sec	0.617	num; same date
+168	Terror Attacks in Madrid	2004-03-11 06:00:00	2004-03-11 10:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	168	Terror Attacks in Madrid	20040311	1-sec	-1.971	num; same date
+169	Demonstrations in Spain	2004-03-12 11:00:00	2004-03-12 22:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	169	Demonstrations in Spain	20040312	1-sec	1.582	num; same date
+170	Global Day of Peace	2004-03-20 00:00:00	2004-03-20 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	170	Global Day of Peace	20040320	1-sec	-1.324	num; same date
+171	Cricket, India vs Pakistan	2004-03-24 09:00:00	2004-03-24 16:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	171	Cricket, India vs Pakistan	20040324	1-sec	1.243	num; same date
+172	Rantisi Assassination	2004-04-17 17:00:00	2004-04-17 20:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	172	Rantisi Assassination	20040417	1-sec	-1.110	num; same date
+173	Korean Train Explosion	2004-04-22 03:00:00	2004-04-22 06:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	173	Korean Train Explosion	20040422	1-sec	0.746	num; same date
+174	Floods in Haiti	2004-05-24 00:00:00	2004-05-24 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	174	Floods in Haiti	20040524	1-sec	0.534	num; same date
+175	Iraq Insurgency Bombs	2004-06-24 04:30:00	2004-06-24 08:29:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	175	Iraq Insurgent Bombs	20040624	1-sec	0.751	num; same date
+176	Turkish Train Wreck	2004-07-22 04:15:00	2004-07-22 08:14:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	176	Train Crash, Turkey	20040722	1-sec	-0.854	num; same date
+177	Democratic Convention, Kerry	2004-07-30 02:00:00	2004-07-30 02:44:59	2700	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	177	Democratic Conv, Kerry	20040729	1-sec	1.881	num; 1 day apart
+178	Fire in Paraguay	2004-08-01 14:00:00	2004-08-01 17:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	178	Fire in Paraguay	20040801	1-sec	0.364	num; same date
+179	Bob Morris Dies	2004-08-12 04:00:00	2004-08-12 19:59:59	57600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	179	Bob Morris	20040812	1-sec	0.461	num; same date
+180	Olympic Opening Athens	2004-08-13 18:00:00	2004-08-13 20:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	180	Olympic Opening Athens	20040813	1-sec	-1.289	num; same date
+181	Day of Murderous Violence	2004-08-31 00:00:00	2004-08-31 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	181	Day of Violence	20040831	1-sec	1.401	num; same date
+182	Republican Convention, Bush	2004-09-03 02:09:59	2004-09-03 03:11:59	3721	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	182	Republican Conv, Bush	20040902	1-sec	-0.445	num; 1 day apart
+183	Russian School Hostage Crisis	2004-09-03 05:00:00	2004-09-03 08:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	183	Russian School Hostages	20040903	1-sec	2.266	num; same date
+184	Earthdance 2004	2004-09-18 22:50:00	2004-09-18 23:14:59	1500	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	184	Earthdance 2004	20040919	1-sec	-1.490	num; 1 day apart
+185	Intnl Day Peace + Hurricane Haiti	2004-09-21 00:00:00	2004-09-21 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	185	Peace Vigil + Hurricane	20040921	1-sec	-1.533	num; same date
+186	Bombing in Taba, Egypt	2004-10-07 19:00:00	2004-10-07 22:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	186	Bombing, Taba, Egypt	20041007	1-sec	1.252	num; same date
+187	US Election 2004	2004-11-02 11:00:00	2004-11-03 05:59:59	68400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	187	US Elections 2004	20041102	1-sec	-1.223	num; same date
+188	Arafat Dies	2004-11-11 02:30:00	2004-11-11 14:29:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	188	Arafat Dead	20041111	1-sec	1.583	num; same date
+189	Tsunami Indian Ocean	2004-12-26 00:29:00	2004-12-26 08:28:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	189	Tsunami Indian Ocean	20041226	1-sec	0.094	num; same date
+190	New Year Mean 2004-2005	2004-12-31 09:30:00	2005-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	190	New Year, 2005, Mean	20050101	1-sec	-0.634	num; 1 day apart
+191	New Year Variance	2004-12-31 09:30:00	2005-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	191	New Year, 2005, Var	20050101	1-sec	-1.838	num; 1 day apart
+192	Elections in Iraq	2005-01-30 04:00:00	2005-01-30 15:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	192	Elections in Iraq	20050130	1-sec	1.606	num; same date
+193	Hariri Assassination Beirut	2005-02-14 09:00:00	2005-02-14 12:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	193	Hariri Assassination	20050214	1-sec	0.169	num; same date
+194	Siyum Daf Yomi	2005-03-01 22:45:00	2005-03-02 01:59:59	11700	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	194	Siyum Daf Yomi	20050301	1-sec	-0.091	num; same date
+195	Quake, Indian Ocean	2005-03-28 16:00:00	2005-03-28 23:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	195	Quake, Indian Ocean	20050328	1-sec	0.244	num; same date
+196	Pope John Paul Dies	2005-04-02 04:00:00	2005-04-02 23:59:59	72000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	196	Pope John Paul II Dies	20050402	1-sec	0.057	num; same date
+197	Pope Paul's Funeral	2005-04-08 08:00:00	2005-04-08 12:29:59	16200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	197	Pope John's Funeral	20050408	1-sec	1.781	num; same date
+198	Prince Charles' Wedding	2005-04-09 11:00:00	2005-04-09 14:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	198	Prince Charles' Wedding	20050409	1-sec	1.495	num; same date
+199	Oraworld Resonance	2005-04-23 00:50:00	2005-04-23 14:44:59	50100	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	199	Oraworld Resonance	20050423	1-sec	1.866	num; same date
+200	Live 8 Concert	2005-07-02 00:00:00	2005-07-02 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	200	Live 8 Concert	20050702	1-sec	-2.003	num; same date
+201	London Subway Bombs	2005-07-07 00:00:00	2005-07-07 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	201	London Bombings	20050707	1-sec	0.181	num; same date
+202	Hurricane Katrina	2005-08-29 10:00:00	2005-08-29 23:59:59	50400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	202	Hurricane Katrina	20050829	1-sec	-0.726	num; same date
+203	Baghdad Bridge Stampede	2005-08-31 08:00:00	2005-08-31 12:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	203	Stampede, Baghdad Bridge	20050831	1-sec	2.193	num; same date
+204	End the War Rally	2005-09-24 13:00:00	2005-09-24 19:59:59	25200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	204	End the War Rally	20050924	1-sec	1.638	num; same date
+205	Bali Bombing 2	2005-10-01 11:30:00	2005-10-01 17:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	205	Bali Bombing 2	20051001	1-sec	1.844	num; same date
+206	Earthquake Pakistan	2005-10-08 03:20:00	2005-10-08 11:19:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	206	Earthquake Pakistan	20051008	1-sec	1.739	num; same date
+207	India Train Crash	2005-10-28 21:30:00	2005-10-29 02:29:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	207	India Train Crash	20051029	1-sec	0.347	num; 1 day apart
+208	India Bombs	2005-10-29 11:08:00	2005-10-29 16:07:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	208	India Delhi Bombs	20051029	1-sec	0.125	num; same date
+209	Jordan Bombs	2005-11-09 18:00:00	2005-11-09 22:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	209	Jordan Bombs	20051109	1-sec	1.553	num; same date
+210	New Year Dev-Net Var	2005-12-31 23:53:00	2006-01-01 00:00:59	480	1-sec	Devar-Netvar 13 Epochs Cumdev	Chisquare 600 df weight	1	210	New Year Dev-Net Var	20051231	1-sec, Dev-Net	-0.510	num; same date
+211	New Year Covar Min	2005-12-31 23:55:00	2006-01-01 00:04:59	600	1-sec	Covar, 13 Epoch 4-Min Smooth Dev*Prox	Chisquare 600 df weight	1	211	New Year Covar Min	20051231	Covar, smooth	0.880	num; same date
+212	Hadj Stoning 2006	2006-01-12 08:00:00	2006-01-12 11:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	212	Hadj Stoning Stampede	20060112	1-sec	0.835	num; same date
+213	Mudslide, Philippines	2006-02-17 00:00:00	2006-02-17 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	213	Mudslide Philippines	20060217	1-sec	0.771	num; same date
+214	Golden Dome Bomb	2006-02-22 03:00:00	2006-02-22 06:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	214	Golden Dome Bombing	20060222	1-sec	-0.878	num; same date
+215	Planetary Play	2006-04-01 17:45:00	2006-04-01 18:14:59	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	215	Planetary Play	20060401	1-sec	-0.070	num; same date
+216	Earth Day, 2006	2006-04-22 00:00:00	2006-04-22 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	216	Earth Day 2006	20060422	1-sec	1.227	num; same date
+217	Indonesian Earthquake	2006-05-26 21:54:00	2006-05-27 05:53:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	217	Indonesian Earthquake	20060527	1-sec	2.943	num; 1 day apart
+218	Zarkawi News Release	2006-06-08 07:00:00	2006-06-08 14:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	218	Zarkawi News Release	20060708	1-sec	-0.909	num; dates 30 days apart
+219	Bombay Train Bombings	2006-07-11 11:24:00	2006-07-11 16:23:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	219	Bombay Train Bombings	20060711	1-sec	0.715	num; same date
+220	Avebury Meditations	2006-07-22 22:00:00	2006-07-22 22:59:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	220	Avebury Meditations	20060722	1-sec	1.033	num; same date
+221	Qana Lebanon	2006-07-30 01:00:00	2006-07-30 05:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	221	Qana, Lebanon	20060730	1-sec	1.739	num; same date
+222	British Terror Plot	2006-08-10 00:00:00	2006-08-10 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	222	Terror Plot Foiled	20060810	1-sec	1.446	num; same date
+223	TM Flyer Aggregation	2006-07-29 12:30:00	2006-09-09 23:29:59	3668400	1-sec	12:30-13:30, 22:30-23:30 on 7 Saturdays	Chisquare 600 df weight	1	223	TM Resonance	20060729-0909	1-sec	-2.416	num; same date
+224	Oraworld Reconciliation	2006-10-02 12:00:00	2006-10-02 23:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	224	Oraworld Reconciliation	20061002	1-sec	-0.194	num; same date
+225	Native American Earth Ceremony	2006-10-07 03:00:00	2006-10-07 03:14:59	900	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	225	Native American Ceremony	20061007	1-sec	0.883	num; same date
+226	Election 2006 Results	2006-11-08 13:00:00	2006-11-08 20:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	226	US Election Results 2006	20061108	1-sec	1.429	num; same date
+227	Gemayel Assassination	2006-11-21 10:00:00	2006-11-21 13:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	227	Gemayel Assassination	20061121	1-sec	-0.662	num; same date
+228	Global Deeksha	2006-11-23 16:30:00	2006-11-23 17:29:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	228	Global Deeksha	20061123	1-sec	0.006	num; same date
+229	Global Orgasm	2006-12-22 00:00:00	2006-12-22 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	229	Global Orgasm for Peace	20061123	1-sec	0.604	num; dates 29 days apart
+230	Saddam's Execution	2006-12-30 03:00:00	2006-12-30 16:59:59	50400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	230	Saddam's Execution	20061230	1-sec	-0.091	num; same date
+231	New Year Mean 2006-2007	2006-12-31 09:30:00	2007-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	231	New Year Mean, 2007	20070101	1-sec	0.610	num; 1 day apart
+232	New Year Variance	2006-12-31 09:30:00	2007-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	232	New Year Var, 2007	20070101	1-sec	0.580	num; 1 day apart
+233	European Storms	2007-01-18 00:00:00	2007-01-18 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	233	European Storms	20070118	1-sec	1.092	num; same date
+234	Iraq Worst Bombing	2007-02-03 16:00:00	2007-02-03 20:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	234	Iraq Worst Bombing	20070203	1-sec	1.067	num; same date
+235	World Sound Healing	2007-02-14 00:00:00	2007-02-14 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	235	World Sound Healing	20070214	1-sec	0.019	num; same date
+236	India Train Fire	2007-02-18 17:30:00	2007-02-18 22:29:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	236	India Train Fire	20070218	1-sec	-1.073	num; same date
+237	Earth Hour	2007-03-31 09:30:00	2007-03-31 10:29:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	237	Earth Hour Sydney	20070331	1-sec	-0.729	num; same date
+238	Solomon Islands Quake	2007-04-01 19:00:00	2007-04-01 23:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	238	Solomon Islands Quake	20070401	1-sec	0.445	num; same date
+239	Massacre at Virginia Tech	2007-04-16 10:00:00	2007-04-16 16:59:59	25200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	239	Virginia Tech Massacre	20070416	1-sec	1.015	num; same date
+240	Tai Chi Chigong Day	2007-04-28 00:00:00	2007-04-28 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	240	Tai Chi & Chigong Day	20070428	1-sec	0.855	num; same date
+241	World Meditation Aggregation	2007-05-20 04:00:00 10:00:00 21:00:00	2007-05-20 06:59:59 12:59:59 23:59:59		1-sec	Concatenate 3x3hrs Stouffer Z	Chisquare Two-tail prediction	1	241	Global Peace Day	20070520	1-sec	-2.113	num; same date
+242	Lightning Strikes Giuliani	2007-06-06 23:00:00	2007-06-06 23:59:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	242	Lightning and Giuliani	20070606	1-sec	0.591	num; same date
+243	Palestinian Government Falls	2007-06-14 00:00:00	2007-06-14 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	243	Palestine Split	20070614	1-sec	0.751	num; same date
+244	Live Earth	2007-07-07 00:00:00	2007-07-07 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	244	Live Earth	20070707	1-sec	-0.095	num; same date
+245	Fire The Grid	2007-07-17 11:11:00	2007-07-17 12:10:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	245	Fire the Grid	20070717	1-sec	1.528	num; same date
+246	Minneapolis Bridge Collapse	2007-08-01 22:00:00	2007-08-02 02:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	246	Bridge Collapse	20070801	1-sec	0.106	num; same date
+247	Peru Earthquake	2007-08-15 22:40:00	2007-08-16 22:39:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	247	Peru Earthquake	20070815	1-sec	0.504	num; same date
+248	Burning Man	2007-09-02 04:00:00	2007-09-02 04:59:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	248	Burning Man 2007	20070902	1-sec	1.541	num; same date
+249	Global OM	2007-09-15 22:30:00	2007-09-15 23:44:59	4500	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	249	Global OM	20070915	1-sec	0.265	num; same date
+250	International Day of Peace	2007-09-21 00:00:00	2007-09-21 23:59:59	86400	1-sec	Negative Stouffer Z	Chisquare 600 df weight	1	250	International Day Peace	20070921	1-sec	-0.897	num; same date
+251	Gore wins Nobel	2007-10-12 16:00:00	2007-10-12 23:59:59	28800	1-sec	Stouffer Z	Chisquare 600 df weight	1	251	Gore Wins Nobel	20071012	1-sec	1.501	num; same date
+252	Bomb Bhutto Homecoming	2007-10-18 18:00:00	2007-10-18 23:59:59	21600	1-sec	Stouffer Z	Chisquare 600 df weight	1	252	Bomb Bhutto Return	20071018	1-sec	-1.665	num; same date
+253	Bangladesh Hurricane	2007-11-15 15:00:00	2007-11-16 14:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	253	Bangladesh Hurricane	20071115-6	1-sec	1.401	num; same date
+254	Algerian Car Bombs	2007-12-11 08:00:00	2007-12-11 13:59:59	21600	1-sec	Stouffer Z	Chisquare 600 df weight	1	254	Algerian Bombs	20071211	1-sec	-0.150	num; same date
+255	Benazir Bhutto Assassination	2007-12-27 11:00:00	2007-12-27 18:59:59	28800	1-sec	Stouffer Z	Chisquare 600 df weight	1	255	Bhutto Assassination	20071227	1-sec	0.035	num; same date
+256	New Year Mean, 2008	2007-12-31 09:30:00	2008-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	256	New Year Mean, 2008	20080101	1-sec	1.427	num; 1 day apart
+257	New Year Var, 2008	2007-12-31 09:30:00	2008-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Chisquare 600 df weight	1	257	New Year Var, 2008	20080101	1-sec	1.088	num; 1 day apart
+258	Kandahar Bombs	2008-02-17 05:30:00	2008-02-17 11:29:59	21600	1-sec	Stouffer Z	Chisquare 600 df weight	1	258	Kandahar Bombs	20080217	1-sec	-0.502	num; same date
+259	Attacks in Gaza	2008-03-01 00:00:00	2008-03-01 23:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	259	Attacks in Gaza	20080301	1-sec	1.209	num; same date
+260	Demonstrations in Tibet	2008-03-14 00:00:00	2008-03-14 23:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	260	Tibet Demonstrations	20080314	1-sec	1.458	num; same date
+261	Earth Day, 2008	2008-04-22 00:00:00	2008-04-22 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	261	Earthday 2008	20080422	1-sec	0.595	num; same date
+262	Cyclone in Myanmar	2008-05-03 00:00:00	2008-05-03 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	262	Cyclone in Myanmar	20080503	1-sec	-0.125	num; same date
+263	World Laughter Day	2008-05-04 12:00:00 13:00:00 14:00:00 15:00:00	2008-05-04 12:02:59 13:03:59 14:02:59 15:02:59		1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	263	World Laughter Day	20080504	1-sec	-0.242	num; same date
+264	Earthquake in China	2008-05-12 00:00:00	2008-05-12 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	264	Earthquake, China	20080512	1-sec	-1.597	num; same date
+265	Silence, China Quake	2008-05-19 06:00:00	2008-05-19 07:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	265	3 Min Silence, China	20080519	1-sec	0.723	num; same date
+266	Obama Wins Nomination	2008-06-04 00:00:00	2008-06-04 23:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	266	Obama Wins Nomination	20080603	1-sec	2.153	num; 1 day apart
+267	Kabul Car Bombing	2008-07-07 03:00:00	2008-07-07 07:29:59	16200	1-sec	Stouffer Z	Chisquare 600 df weight	1	267	Kabul Car Bombing	20080707	1-sec	0.214	num; same date
+268	Olympic Opening Beijing	2008-08-08 12:00:00	2008-08-08 15:59:59	14400	1-sec	Stouffer Z	Chisquare 600 df weight	1	268	Olympic Opening Beijing	20080808	1-sec	1.281	num; same date
+269	War ends in Georgia	2008-08-12 10:00:00	2008-08-12 12:59:59	10800	1-sec	Stouffer Z	Chisquare 600 df weight	1	269	Georgia War Ends	20080812	1-sec	-0.318	num; same date
+270	World Meditation 080816	2008-08-16 10:00:00	2008-08-16 10:59:59	3600	1-sec	Stouffer Z	Chisquare 600 df weight	1	270	World Meditation	20080816	1-sec	1.194	num; same date
+271	Obama Acceptance 080828	2008-08-29 02:00:00	2008-08-29 03:59:59	7200	1-sec	Stouffer Z	Chisquare 600 df weight	1	271	Obama Acceptance Denver	20080829	1-sec	2.039	num; same date
+272	Palin Acceptance 080903	2008-09-04 02:00:00	2008-09-04 03:59:59	7200	1-sec	Stouffer Z	Chisquare 600 df weight	1	272	Palin Acceptance Speech	20080903	1-sec	1.695	num; 1 day apart
+273	McCain Acceptance 080904	2008-09-05 02:00:00	2008-09-05 03:59:59	7200	1-sec	Stouffer Z	Chisquare 600 df weight	1	273	McCain Accepts, St Paul	20080904	1-sec	-0.273	num; 1 day apart
+274	Peace Intention Experiment	2008-09-14 15:45:00	2008-09-20 16:24:59	520800	1-sec, concatenate	15:45-16:25 on 7 days	Chisquare 600 df weight	1	274	Peace Intention Expt	20080904	1-sec	-1.645	num; dates 10 days apart
+275	Islamabad Hotel Bombing	2008-09-20 13:00:00	2008-09-20 17:59:59	18000	1-sec	Stouffer Z	Chisquare 600 df weight	1	275	Islamabad Hotel Bombing	20080920	1-sec	-0.568	num; same date
+276	International Day of Peace	2008-09-21 00:00:00	2008-09-21 23:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	276	International Day of Peace	20080921	1-sec	-0.043	num; same date
+277	Bailout Vote Fails	2008-09-29 00:00:00	2008-09-29 23:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	277	Bailout Vote Fails	20080929	1-sec	1.255	num; same date
+278	Temple Stampede Jodhpur	2008-09-30 00:00:00	2008-09-30 04:59:59	18000	1-sec	Stouffer Z	Chisquare 600 df weight	1	278	Temple Stampede Jodhpur	20080930	1-sec	-0.782	num; same date
+279	Phillies Win World Series	2008-10-30 00:00:00	2008-10-30 02:29:59	9000	1-sec	Stouffer Z	Chisquare 600 df weight	1	279	Phillies Win World Series	20081029	1-sec	1.023	num; 1 day apart
+280	US Election 2008	2008-11-04 20:00:00	2008-11-05 19:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	280	US Elections 2008, Obama	20081029	1-sec	1.635	num; dates 6 days apart
+281	Mumbai Terror Attacks	2008-11-26 16:30:00	2008-11-27 16:29:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	281	Mumbai Terror Attacks	20081126	1-sec	-0.590	num; same date
+282	Global Orgasm III	2008-12-21 00:00:00	2008-12-21 23:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	282	3rd Annual Global-O	20081221	1-sec	0.590	num; same date
+283	New Year Mean 2009	2008-12-31 09:30:00	2009-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	283	New Year 2009, Mean	20090101	1-sec	1.033	num; 1 day apart
+284	New Year Variance 2009	2008-12-31 09:30:00	2009-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	284	New year 2009, Variance	20090101	1-sec	0.505	num; 1 day apart
+285	Gaza Incursion	2009-01-03 17:00:00	2009-01-04 16:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	285	Gaza Incursion	20090103	1-sec	0.581	num; same date
+286	Miracle on the Hudson	2009-01-15 20:00:00	2009-01-15 23:59:59	14400	1-sec	Stouffer Z	Chisquare 600 df weight	1	286	Miracle on the Hudson	20090115	1-sec	-1.784	num; same date
+287	Barack Obama Inauguration	2009-01-20 11:00:00	2009-01-21 06:59:59	72000	1-sec	Stouffer Z	Chisquare 600 df weight	1	287	Obama Inauguration	20090120	1-sec	-1.356	num; same date
+288	Australian Bush Fires	2009-02-07 00:00:00	2009-02-07 23:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	288	Australian Bushfires	20090207	1-sec	-1.032	num; same date
+289	Meditations Valentines Day	2009-02-14 00:00:00	2009-02-14 23:59:59	86400	1-sec	Stouffer Z	Chisquare 600 df weight	1	289	Valentine Meditations	20090214	1-sec	2.878	num; same date
+290	Winnenden School Shooting	2009-03-11 07:30:00	2009-03-11 12:29:59	18000	1-sec	Stouffer Z	Chisquare 600 df weight	1	290	Winnenden School Shooting	20090311	1-sec	-0.821	num; same date
+291	G20 News Conference	2009-04-02 17:00:00	2009-04-02 19:59:59	10800	1-sec	Stouffer Z	Chisquare 600 df weight	1	291	G20 News Conference	20090402	1-sec	0.884	num; same date
+292	Binghamton Killings	2009-04-03 13:30:00	2009-04-03 18:29:59	18000	1-sec	Stouffer Z	Chisquare 600 df weight	1	292	Binghamton Killing Spree	20090403	1-sec	-0.936	num; same date
+293	Italian Quake	2009-04-06 00:00:00	2009-04-06 11:59:59	43200	1-sec	Stouffer Z	Chisquare 600 df weight	1	293	Earthquake L'Aquila Italy	20090406	1-sec	-0.261	num; same date
+294	Earth Day, 2009	2009-04-22 00:00:00	2009-04-22 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	294	Earthday, 2009	20090422	1-sec	0.052	num; same date
+295	Swine Flu Peak	2009-04-24 16:00:00	2009-04-25 00:59:59	32400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	295	Swine Flu Panic	20090424	1-sec	-0.180	num; same date
+296	Indian Elections 2009	2009-05-16 06:29:59	2009-05-16 18:29:59	43201	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	296	India Elections 2009	20090516	1-sec	0.763	num; same date
+297	Air France Disappearance	2009-05-31 22:00:00	2009-06-01 05:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	297	Air France Disappearance	20090601	1-sec	0.796	num; 1 day apart
+298	Iran Unrest	2009-06-19 08:29:59	2009-06-20 08:29:59	86401	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	298	Iran Election Protests	20090619	1-sec	1.552	num; same date
+299	Live H2O event	2009-06-22 00:00:00	2009-06-22 01:29:59	5400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	299	Live H2O Celebration	20090621	1-sec	0.145	num; 1 day apart
+300	Michael Jackson Dies	2009-06-25 21:00:00	2009-06-26 20:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	300	Michael Jackson Dies	20090625	1-sec	0.914	num; same date
+301	Michael Jackson Memorial	2009-07-07 16:00:00	2009-07-07 22:59:59	25200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	301	Michael Jackson Memorial	20090707	1-sec	-0.163	num; same date
+302	Wansdyke Path II	2009-07-25 18:00:00	2009-07-26 00:59:59	25200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	302	Wansdyke Path 2009	20090725	1-sec	1.537	num; same date
+303	Fire the Grid II	2009-07-28 22:19:00	2009-07-28 23:18:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	303	Fire the Grid II	20090728	1-sec	0.619	num; same date
+304	Typhoon Hits Taiwan	2009-08-07 00:00:00	2009-08-07 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	304	Typhoon Hits Taiwan	20090807	1-sec	-0.530	num; same date
+305	Ted Kennedy Dies	2009-08-26 01:59:59	2009-08-27 01:59:59	86401	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	305	Ted Kennedy Dies	20090825	1-sec	-0.030	num; 1 day apart
+306	Earthquake in Java	2009-09-02 00:00:00	2009-09-02 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	306	Earthquake in Java	20090902	1-sec	1.191	num; same date
+307	International Peace Day	2009-09-21 00:00:00	2009-09-21 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	307	Internat Day of Peace	20090921	1-sec	1.637	num; same date
+308	Tsunami in Samoa	2009-09-29 16:00:00	2009-09-29 23:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	308	Tsunami in Samoa	20090929	1-sec	0.195	num; same date
+309	Earthquake, Padang Indonesia	2009-09-30 08:00:00	2009-09-30 15:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	309	Earthquake in Padang	20090930	1-sec	1.449	num; same date
+310	Obama Wins Nobel Peace Prize	2009-10-09 08:00:00	2009-10-09 15:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	310	Obama Peace Nobel	20091009	1-sec	0.4210	num; same date
+311	Climate Action 350	2009-10-24 00:00:00	2009-10-24 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	311	Action 350 for Climate	20091024	1-sec	0.052	num; same date
+312	Baghdad Bombs	2009-10-25 06:30:00	2009-10-25 12:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	312	Baghdad Bombings	20091025	1-sec	1.505	num; same date
+313	Fort Hood Massacre	2009-11-06 18:00:00	2009-11-06 23:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	313	Fort Hood Massacre	20091106	1-sec	0.246	num; same date
+314	Haj Arafat Vigil	2009-11-26 01:00:00	2009-11-26 12:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	314	Haj Arafat Vigil	20091126	1-sec	-0.454	num; same date
+315	Haj Stoning	2009-11-27 01:00:00	2009-11-27 07:59:59	25200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	315	Haj Stoning Mecca	20091127	1-sec	0.830	num; same date
+316	Bomb Attempt Dec 25	2009-12-25 16:00:00	2009-12-25 23:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	316	Bomb Attempt Dec 25	20091225	1-sec	0.276	num; same date
+317	New Year Mean 2010	2009-12-31 09:30:00	2010-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	~317	New Year Mean, 2010	20100101	1-sec	0.887	num; 1 day apart
+318	New Year Variance 2010	2009-12-31 09:30:00	2010-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	~318	New Year Variance, 2010	20100101	1-sec	0.829	num; 1 day apart
+319	Pakistan Volleyball Bombing	2010-01-01 12:00:00	2010-01-01 16:59:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~319	Pakistan Volleyball Bomb	20100101	1-sec	-1.422	num; same date
+320	Haiti Earthquake	2010-01-12 20:00:00	2010-01-13 03:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~320	Earthquake Haiti	20100112	1-sec	-2.060	num; same date
+321	State of the Union	2010-01-28 02:00:00	2010-01-28 03:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~321	State of the Union	20100127	1-sec	0.808	num; 1 day apart
+322	Olympic Opening Vancouver	2010-02-12 02:00:00	2010-02-12 05:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~322	Olympic Opening Vancouver	20100212	1-sec	-0.957	num; same date
+323	Chile Earthquake Tsunami	2010-02-27 00:00:00	2010-02-27 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~323	Chile Quake & Tsunami	20100227	1-sec	1.089	num; same date
+324	Health Care is Law	2010-03-23 15:00:00	2010-03-23 18:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~324	Health Care Reform	20100323	1-sec	1.971	num; same date
+325	Moscow Train Bombing	2010-03-29 03:30:00	2010-03-29 07:29:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~325	Moscow Subway Bombings	20100329	1-sec	0.794	num; same date
+326	Mine Disaster, W. Va	2010-04-05 18:00:00	2010-04-05 23:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~326	Mine Explosion, W Va	20100405	1-sec	-0.122	num; same date
+327	Mudslides in Brazil	2010-04-08 00:00:00	2010-04-08 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~327	Mudslides in Brazil	20100408	1-sec	-1.165	num; same date
+328	Polish President Dies	2010-04-10 06:00:00	2010-04-10 11:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~328	Polish President Killed	20100410	1-sec	0.607	num; same date
+329	Kumbh Mela, India	2010-04-14 00:00:00	2010-04-14 12:59:59	46800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~329	Kumbh Mela 2010	20100414	1-sec	1.578	num; same date
+330	Earthquake West China	2010-04-14 13:00:00	2010-04-14 23:59:59	39600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~330	China Earthquake Aftermath	20100414	1-sec	1.535	num; same date
+331	Earth Day, 2010	2010-04-22 00:00:00	2010-04-22 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~331	Earthday 2010	20100422	1-sec	-0.237	num; same date
+332	Russian Coal Mine	2010-05-10 16:55:00	2010-05-10 23:54:59	25200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~332	Russian Coal Mine	20100510	1-sec	1.429	num; same date
+333	World Shift Day	2010-05-16 01:00:00	2010-05-17 00:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~333	World Shift Day	20100516	1-sec	-0.415	num; same date
+334	Lahore Religious Terror	2010-05-28 07:15:00	2010-05-28 13:14:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~334	Lahore Religious Terror	20100528	1-sec	0.476	num; same date
+335	Israel Attacks Flotilla	2010-05-31 00:30:00	2010-05-31 06:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~335	Israel Attacks Flotilla	20100531	1-sec	2.036	num; same date
+336	World Cup 2010 Begins	2010-06-11 14:00:00	2010-06-11 15:49:59	6600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~336	World Cup 2010 Begin	20100611	1-sec	-0.574	num; same date
+337	World Cup 2010 Final	2010-07-11 18:30:00	2010-07-11 20:52:59	8580	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~337	World Cup Final 2010	20100711	1-sec	-0.120	num; same date
+338	Conscious Convergence	2010-07-17 00:00:00	2010-07-17 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~338	Conscious Convergence	20100717	1-sec	0.447	num; same date
+339	Love Parade Tragedy	2010-07-24 15:30:00	2010-07-24 20:59:59	19800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~339	Love Parade Tragedy	20100724	1-sec	2.168	num; same date
+340	Pakistani Flooding	2010-07-21 00:00:00 2010-07-22 2010-07-31 2010-08-01	2010-07-21 23:59:59 2010-07-22 2010-07-31 2010-08-01		1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~340	Pakistani Floods	20100721- 20100801	1-sec	-1.165	num; same date
+341	Chilean Miners Alive	2010-08-22 11:00:00	2010-08-22 22:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~341	Chilean Miners Alive	20100822	1-sec	2.137	num; same date
+342	Ending Iraq War	2010-08-31 23:30:00	2010-09-01 01:29:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~342	Iraq War Ends	20100831	1-sec	0.948	num; same date
+343	Billion Beats	2010-09-18 00:00:00	2010-09-18 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~343	Billion Beats	20100918	1-sec	0.486	num; same date
+344	Earthdance 2010	2010-09-18 22:50:00	2010-09-18 23:14:59	1500	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1						unmatched
+345	Astrological Moment III.1	2010-09-20 10:15:00	2010-09-20 14:14:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1						unmatched
+346	International Day of Peace	2010-09-21 00:00:00	2010-09-21 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1						unmatched
+347	World Day of Interconnection	2010-10-10 00:00:00	2010-10-10 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1						unmatched
+348	World Forum, Kazakhstan	2010-10-18 03:00:00	2010-10-21 02:59:59	259200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~348	World Forum 2010	20101013	1-sec	1.535	num; dates 5 days apart
+349	Indonesia, Quake, Volcano	2010-10-25 14:00:00	2010-10-26 13:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~349	Indonesia Quake Volcano	20101025	1-sec	-0.601	num; same date
+350	Election 2010 Results	2006-11-04 12:00:00	2006-11-04 19:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~350	US Elections 2010	20101103	1-sec	0.487	num; dates 1460 days apart
+351	New Reality, 11 days	2010-11-12 04:00:00 through 2010-11-22	2010-11-12 04:59:59 through 2010-11-22		1-sec	Concatenate 11 Hrs Stouffer Z	Chisquare 600 df weight	1	~351	10.11.11 Meditation	20101111	1-sec	1.892	num; 1 day apart
+352	Cambodia Bridge Tragedy	2010-11-22 15:00:00	2010-11-22 20:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~352	Cambodia Bridge Tragedy	20101122	1-sec	-1.911	num; same date
+353	North South Korea Shelling	2010-11-23 07:34:00	2010-11-23 13:33:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~353	North, South Korea Shelling	20101123	1-sec	1.393	num; same date
+354	Wikileaks Diplomatic Trove	2010-11-28 07:00:00	2010-11-28 14:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~354	Wikileaks Diplomatic Cables	20101128	1-sec	1.188	num; same date
+355	Goodearth Halleluia	2010-12-24 17:00:00	2010-12-24 18:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~355	GoodEarthSingers	20101224	1-sec	-1.126	num; same date
+356	New Year Mean 2011	2010-12-31 09:30:00	2011-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	~356	New Year Means	20110101	1-sec	-0.282	num; 1 day apart
+357	New Year Variance 2011	2010-12-31 09:30:00	2011-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	~357	New Year Var	20110101	1-sec	0.412	num; 1 day apart
+358	Egypt Christian Attack	2010-12-31 22:00:00	2011-01-01 00:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~358	Egypt Church Bomb	20110101	1-sec	-0.631	num; 1 day apart
+359	Congresswoman Giffords	2011-01-08 17:00:00	2011-01-08 22:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~359	Congresswoman Giffords	20110108	1-sec	0.632	num; same date
+360	Brazilian Mudslides	2011-01-12 00:00:00	2011-01-12 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~360	Brazilian Mudslides	20110112	1-sec	2.330	num; same date
+361	Tucson Memorial	2011-01-13 00:00:00	2011-01-13 03:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~361	Tucson Memorial	20110112	1-sec	-0.479	num; 1 day apart
+362	Moscow Airport Bombing	2011-01-24 13:00:00	2011-01-24 18:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~362	Moscow Airport Bomb	20110124	1-sec	0.854	num; same date
+363	State of the Union	2011-01-26 02:00:00	2011-01-26 03:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~363	State of the Union 2011	20110125	1-sec	1.530	num; 1 day apart
+364	Egypt Day of Rage	2011-01-28 00:00:00	2011-01-28 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~364	Day of Rage, Egypt	20110128	1-sec	0.088	num; same date
+365	Egypt Continuing Protests	2011-02-05 10:00:00 2011-02-06	2011-02-05 11:59:59 2011-02-06		1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~365	Egypt Mubarak Protests	20110207	1-sec	1.084	num; dates 2 days apart
+366	Egypt Mubarak Resigns	2011-02-11 10:00:00	2011-02-11 21:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~366	Mubarak Resigns	20110211	1-sec	-0.666	num; same date
+367	Earthquake, Christchurch NZ	2011-02-20 22:00:00	2011-02-21 21:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~367	Quake Christchurch NZ	20110222	1-sec	1.134	num; dates 2 days apart
+368	Turmoil in Libya	2011-03-02 10:00:00	2011-03-02 21:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~368	Libyan Turmoil Continues	20110302	1-sec	1.489	num; same date
+369	Women's Day 100th	2011-03-08 00:00:00	2011-03-08 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~369	Women's Day 2011	20110308	1-sec	-0.326	num; same date
+370	Breathe as One	2011-03-09 20:00:00	2011-03-09 22:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~370	Do As One 2011	20110309	1-sec	0.586	num; same date
+371	Tsunami, Japan	2011-03-11 04:00:00	2011-03-12 03:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~371	Japan Quake Tsunami	20110311	1-sec	0.212	num; same date
+372	Middle East Turmoil	2011-03-18 00:00:00	2011-03-18 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~372	Mideast & Japan	20110318	1-sec	0.418	num; same date
+373	Water Prayer	2011-03-31 00:00:00	2011-03-31 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~373	Water Meditation	20110331	1-sec	-0.485	num; same date
+374	Earth Day, 2011	2011-04-22 00:00:00	2011-04-22 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~374	Earthday 2011	20110422	1-sec	0.282	num; same date
+375	Sai Baba Dies	2011-04-24 01:30:00	2011-04-24 07:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~375	Sai Baba Dies	20110424	1-sec	-2.629	num; same date
+376	William & Catherine	2011-04-29 10:00:00	2011-04-29 15:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~376	Royal Wedding	20110429	1-sec	-0.102	num; same date
+377	Pope Paul Beatification	2011-05-01 00:00:00	2011-05-01 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~377	Pope Paul Beatification	20110501	1-sec	0.450	num; same date
+378	Osama Bin Laden Killed	2011-05-02 02:24:00	2011-05-03 02:23:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~378	Bin Laden Killed	20110502	1-sec	0.363	num; same date
+379	Tornadoes in Missouri	2011-05-22 22:00:00	2011-05-23 03:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~379	Tornado Joplin MO	20110522	1-sec	0.663	num; same date
+380	Atlantis Last Launch	2011-07-08 15:00:00	2011-07-08 18:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~380	Atlantis, Last Launch	20110708	1-sec	1.179	num; same date
+381	Womens World Cup	2011-07-17 19:21:00	2011-07-17 21:20:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~381	Women's World Cup	20110717	1-sec	-0.224	num; same date
+382	Oslo Bombing	2011-07-22 13:00:00	2011-07-22 18:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~382	Oslo Bomb, Murder	20110722	1-sec	1.616	num; same date
+383	China Train Crash	2011-07-23 12:00:00	2011-07-23 15:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~383	China Train Crash	20110723	1-sec	0.618	num; same date
+384	Downgrade & Helicopter Crash	2011-08-05 18:00:00	2011-08-05 23:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~384	Downgrade+Helicopter	20110805	1-sec	-0.560	num; same date
+385	UK Rioting	2011-08-08 00:00:00	2011-08-08 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~385	UK Rioting	20110808	1-sec	0.788	num; same date
+386	Rain in Tunisia	2011-08-14 07:00:00	2011-08-14 18:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~386	Rain in Tunisia	20110814	1-sec	0.878	num; same date
+387	Libya Rebel Day 1	2011-08-21 00:00:00	2011-08-21 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~387	Libya Day 1	20110821	1-sec	0.837	num; same date
+388	Earthquake East Coast	2011-08-23 17:00:00	2011-08-23 22:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~388	East Coast Quake	20110823	1-sec	1.594	num; same date
+389	Irene Landfall	2011-08-27 11:30:00	2011-08-27 17:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~389	Hurricane Irene	20110827	1-sec	1.171	num; same date
+390	Anniversary 911 2001	2011-09-11 08:00:00	2011-09-12 01:59:59	64800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~390	10th Anniversary 9/11	20110911	1-sec	0.136	num; same date
+391	Internat Day Peace	2011-09-21 00:00:00	2011-09-21 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~391	Internat Peace Day 2011	20110921	1-sec	3.136	num; same date
+392	Troy Davis Execution	2011-09-22 00:00:00	2011-09-21 05:59:59	-64800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~392	Troy Davis Execution	20110922	1-sec	-0.507	num; same date
+393	Wall Street Protests	2011-09-24 17:00:00	2011-09-24 19:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~393	Wall Street Protests	20110924	1-sec	0.858	num; same date
+394	Bombing, Mogadishu	2011-10-04 05:00:00	2011-10-04 10:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~394	Bombing, Mogadishu	20111004	1-sec	-1.988	num; same date
+395	Steve Jobs Dies	2011-10-05 17:00:00	2011-10-05 22:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~395	Steve Jobs RIP	20111005	1-sec	2.145	num; same date
+396	Thailand and Greece	2011-10-19 00:00:00	2011-10-19 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~396	Thailand and Greece	20111019	1-sec	-2.935	num; same date
+397	Gaddafi Killed	2011-10-20 03:30:00	2011-10-20 15:29:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~397	Gaddafi Killed	20111020	1-sec	2.380	num; same date
+398	Turkey Quake 7.2	2011-10-23 10:00:00	2011-10-24 9:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~398	Earthquake Turkey	20111023	1-sec	1.752	num; same date
+399	11-11-11 Meditations	2011-11-11 00:00:00	2011-11-11 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~399	11-11-11 Meditations	20111111	1-sec	-0.124	num; same date
+400	Kabul Shiite Bombing	2011-12-06 06:30:00	2011-12-06 12:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~400	Kabul Shiite Bombing	20111206	1-sec	-0.533	num; same date
+401	Gunman in Liege	2011-12-13 11:00:00	2011-12-13 16:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~401	Gunman in Liege	20111213	1-sec	-0.029	num; same date
+402	Philippine Floods	2011-12-16 18:00:00	2011-12-17 17:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~402	Philippine Floods	20111217	1-sec	0.121	num; 1 day apart
+403	Kim Jong-Il Dies	2011-12-19 03:00:00	2011-12-20 02:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~403	Kim Jong-Il Dies	20111219	1-sec	0.155	num; same date
+404	New Year Mean 2012	2011-12-31 09:30:00	2012-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	~404	New Year Means	20120101	1-sec	0.440	num; 1 day apart
+405	New Year Variance 2012	2011-12-31 09:30:00	2012-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	~405	New Year Var	20120101	1-sec	0.898	num; 1 day apart
+406	Cruise Ship Disaster	2012-01-13 20:30:00	2012-01-14 02:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~406	Cruise Ship Disaster	20120113	1-sec	-0.476	num; same date
+407	SOPA Protests, Withdrawal	2012-01-20 18:00:00	2012-01-20 23:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~407	SOPA Blackout	20120120	1-sec	-1.119	num; same date
+408	State of the Union	2012-01-25 02:00:00	2012-01-25 03:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~408	State of the Union 2012	20120124	1-sec	-0.112	num; 1 day apart
+409	Syrian Tragedy	2012-02-09 06:00:00	2012-02-09 17:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~409	Syrian Tragedy Cont.	20120209	1-sec	1.084	num; same date
+410	Honduran Prison	2012-02-15 05:00:00	2012-02-15 10:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~410	Honduran Prison Fire	20120214	1-sec	0.757	num; 1 day apart
+411	Do As One Day	2012-03-10 00:00:00	2012-03-10 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~411	Do As One Day 2012	20120310	1-sec	-2.730	num; same date
+412	Oakland School Shooting	2012-04-02 17:00:00	2012-04-02 22:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~412	Oakland Shootings	20120402	1-sec	-0.659	num; same date
+413	Mogadishu Bombing	2012-04-04 09:00:00	2012-04-04 14:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~413	Mogadishu Bombing	20120404	1-sec	1.987	num; same date
+414	Avalanch Pakistan	2012-04-07 04:00:00	2012-04-07 09:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~414	Pakistan Avalanche	20120407	1-sec	0.798	num; same date
+415	Ferry Bengal	2012-04-30 13:00:00	2012-04-30 18:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~415	Bengal Ferry Disaster	20120430	1-sec	-0.486	num; same date
+416	Climate Impact	2012-05-05 00:00:00	2012-05-05 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~416	Climate Impact Day	20120505	1-sec	1.165	num; same date
+417	Damascus Bombing	2012-05-10 03:00:00	2012-05-10 08:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~417	Damascus Bombing	20120510	1-sec	-0.355	num; same date
+418	Massacre Syria	2012-05-25 15:00:00	2012-05-25 20:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~418	Massacre Syria	20120525	1-sec	-0.799	num; same date
+419	Obamacare SCOTUS	2012-06-28 14:00:00	2012-06-28 19:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~419	Obamacare SCOTUS	20120628	1-sec	1.222	num; same date
+420	Mexico Elections	2012-07-01 17:00:00	2012-07-02 16:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~420	Mexico Election	20120701	1-sec	1.429	num; same date
+421	Massacre Tremseh	2012-07-12 03:00:00	2012-07-12 08:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~421	Massacre, Tremseh	20120712	1-sec	0.197	num; same date
+422	Batman Shooting	2012-07-20 06:30:00	2012-07-20 12:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~422	Batman Shooting	20120720	1-sec	1.595	num; same date
+423	Olmympic Opening	2012-07-27 20:00:00	2012-07-28 01:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~423	Olympic Open, London	20120727	1-sec	-0.274	num; same date
+424	Sikh Shootings	2012-08-05 15:00:00	2012-08-05 20:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~424	Sikh Temple Shootings	20120805	1-sec	0.341	num; same date
+425	Romney Acceptance	2012-08-31 02:00:00	2012-08-31 03:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~425	Romney Acceptance	20120830	1-sec	0.121	num; 1 day apart
+426	Burning Man 2012	2012-09-02 04:28:00	2012-09-02 05:27:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~426	Burning Man 2012	20120901	1-sec	0.783	num; 1 day apart
+427	Obama Acceptance	2012-09-07 02:00:00	2012-09-07 03:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~427	Obama Acceptance	20120906	1-sec	-1.031	num; 1 day apart
+428	Karachi Factory Fire	2012-09-11 13:00:00	2012-09-11 18:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~428	Karachi Factory Fire	20120911	1-sec	0.413	num; same date
+429	Internat Day Peace	2012-09-21 04:00:00	2012-09-22 03:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~429	Internat Day Peace	20120921	1-sec	1.308	num; same date
+430	Hurricane Sandy	2012-10-29 22:30:00	2012-10-30 22:29:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~430	Sandy Hits GCP	20121029	1-sec	-0.164	num; same date
+431	Obama Elected 2012	2012-11-06 20:00:00	2012-11-07 19:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~431	Obama Re-elected	20121106	1-sec	1.414	num; same date
+432	Palestine UN Vote	2012-11-29 17:00:00	2012-11-29 22:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~432	Palestine UN Vote	20121106	1-sec	-0.855	num; dates 23 days apart
+433	Philippines Typhoon	2012-12-04 00:00:00	2012-12-04 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~433	Philippine Typhoon	20121204	1-sec	0.580	num; same date
+434	12.12.12 Meditation	2012-12-12 12:30:00	2012-12-12 15:29:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~434	Mastershift Meditations	20121212	1-sec	0.378	num; same date
+435	School Shooting CT	2012-12-14 14:00:00	2012-12-14 19:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~435	School Shooting CT	20121214	1-sec	-1.277	num; same date
+436	December 21st 2012	2012-12-21 10:00:00	2012-12-22 19:59:59	122400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~436	End of Mayan Calendar	20121221	1-sec	1.008	num; same date
+437	Dr. Tomorrow Passes	2012-12-30 05:00:00	2012-12-30 10:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~437	Dr. Tomorrow Passes	20121230	1-sec	2.064	num; same date
+438	New Year Mean 2013	2012-12-31 09:30:00	2013-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	~438	New Year Means	20130101	1-sec	0.444	num; 1 day apart
+439	New Year Variance 2013	2012-12-31 09:30:00	2013-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	~439	New Year Var	20130101	1-sec	-0.176	num; 1 day apart
+440	Bombing Quetta, PK	2013-01-10 15:00:00	2013-01-10 20:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~440	Quetta Bombing	20130110	1-sec	0.563	num; same date
+441	Obama 2nd Inauguration	2013-01-20 16:00:00	2013-01-20 21:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~441	Obama 2nd Inauguration	20130120	1-sec	-1.618	num; same date
+442	Brazil Nightclub Fire	2013-01-27 04:00:00	2013-01-27 09:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~442	Brazil Club Fire	20130127	1-sec	-0.373	num; same date
+443	Kumbh Mela, India	2013-02-10 00:00:00	2013-02-10 12:59:59	46800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~443	Kumbh Mela 2013	20130210	1-sec	1.116	num; same date
+444	Pope Benedikt Resigns	2013-02-11 10:00:00	2013-02-11 15:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~444	Pope Benedikt Resigns	20130211	1-sec	1.359	num; same date
+445	V-day and Toning	2013-02-14 00:00:00	2013-02-14 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~445	V-day and Toning	20130214	1-sec	0.005	num; same date
+446	Hugo Chavez Dies	2013-03-05 20:25:00	2013-03-06 04:24:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~446	Hugo Chavez Dies	20130305	1-sec	-0.417	num; same date
+447	Internat Women's Day	2013-03-08 00:00:00	2013-03-08 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~447	International Women's Day	20130308	1-sec	0.943	num; same date
+448	Pope Francis Elected	2013-03-13 18:07:00	2013-03-14 00:06:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~448	Pope Francis Elected	20130313	1-sec	0.891	num; same date
+449	Boston Marathon Bombing	2013-04-15 18:00:00	2013-04-15 23:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~449	Boston Bombing	20130415	1-sec	-0.723	num; same date
+450	Margaret Thatcher Funeral	2013-04-17 08:30:00	2013-04-17 13:29:59	18000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~450	Thatcher Funeral	20130417	1-sec	-0.260	num; same date
+451	Earthquake Sichuan China	2013-04-20 00:00:00	2013-04-20 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~451	Earthquake, Sichuan	20130420	1-sec	1.411	num; same date
+452	Bangladesh Factory Collapse	2013-04-24 03:00:00	2013-04-24 08:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~452	Bangladesh Factory Collapse	20130424	1-sec	-0.404	num; same date
+453	Night of Hopes	2013-05-16 15:30:00	2013-05-16 16:59:59	5400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~453	Night of Hopes	20130516	1-sec	0.907	num; same date
+454	Oklahoma Tornados	2013-05-20 00:00:00	2013-05-20 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~454	Oklahoma Tornados	20130520	1-sec	1.308	num; same date
+455	Flooding in India	2013-06-17 00:00:00	2013-06-17 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~455	Floods North India	20130617	1-sec	-0.631	num; same date
+456	Global Meditation Movement	2013-06-23 15:00:00	2013-06-23 17:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~456	Global Meditation Movement	20130623	1-sec	-0.083	num; same date
+457	Hotshot Tragedy	2013-06-30 23:00:00	2013-07-01 04:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~457	Arizona Firefighters Die	20130629	1-sec	-0.777	num; 1 day apart
+458	Morsi Ousted	2013-07-03 18:00:00	2013-07-03 23:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~458	Egypt, Morsi Ousted	20130703	1-sec	-1.458	num; same date
+459	Royal Birth	2013-07-22 15:00:00	2013-07-22 20:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~459	Royal Birth	20130723	1-sec	1.227	num; 1 day apart
+460	Train Crash Spain	2013-07-24 18:00:00	2013-07-24 23:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~460	Spanish Train Crash	20130724	1-sec	-1.395	num; same date
+461	Chaos in Egypt	2013-08-14 04:00:00	2013-08-14 15:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~461	Chaos in Egypt	20130814	1-sec	0.176	num; same date
+462	Global Meditation	2013-08-25 21:00:00	2013-08-25 21:29:59	1800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~462	Global Meditation	20130825	1-sec	1.924	num; same date
+463	Burning Man 2013	2013-09-01 04:00:00	2013-09-01 09:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~463	Burning Man 2013	20130831	1-sec	0.986	num; 1 day apart
+464	Washington Shooting	2013-09-16 12:00:00	2013-09-16 17:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~464	Washington Shootings	20130916	1-sec	-0.384	num; same date
+465	Internat Day Peace	2013-09-21 04:00:00	2013-09-22 03:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~465	Peace Day 2013	20130921	1-sec	-0.028	num; same date
+466	Quake Baluchistan Pakistan	2013-09-24 10:00:00	2013-09-25 09:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~466	Quake, Baluchistan	20130924	1-sec	0.292	num; same date
+467	Shipwreck Lampedusa	2013-10-03 04:00:00	2013-10-03 09:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~467	Shipwreck Lampedusa	20131003	1-sec	0.660	num; same date
+468	Conscious Evolution	2013-10-12 11:00:00	2013-10-12 14:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~468	Conscious Evolution	20131012	1-sec	0.113	num; same date
+469	Million Mask March	2013-11-05 09:00:00	2013-11-05 20:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~469	Million Mask March	20131105	1-sec	1.329	num; same date
+470	Typhoon Philippines	2013-11-07 20:30:00	2013-11-08 20:29:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~470	Typhoon Philippines	20131108	1-sec	0.559	num; 1 day apart
+471	Portal Activation	2013-11-23 21:00:00	2013-11-23 23:59:59	10800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~471	Portal Activation	20131123	1-sec	0.503	num; same date
+472	Mandela Dies	2013-12-05 18:00:00	2013-12-06 17:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~472	Nelson Mandela Dies	20131205	1-sec	2.238	num; same date
+473	New Year Mean 2014	2013-12-31 09:30:00	2014-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	~473	New Year Mean	20140101	1-sec	0.202	num; 1 day apart
+474	New Year Variance 2014	2013-12-31 09:30:00	2014-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	~474	New Year Var	20140101	1-sec	0.338	num; 1 day apart
+475	Winter Olympics 2014	2014-02-08 00:00:00	2014-02-08 03:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~475	Winter Olympics, 2014	20140207	1-sec	0.834	num; 1 day apart
+476	V-day and Toning 2014	2014-02-14 00:00:00	2014-02-14 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~476	Valentines Day, 2014	20140214	1-sec	-0.579	num; same date
+477	Malaysian Flight MH370	2014-03-07 18:00:00	2014-03-07 23:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~477	Malaysian Air MH370	20140308	1-sec	0.395	num; 1 day apart
+478	Korean Ferry Disaster	2014-04-16 00:00:00	2014-04-16 05:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~478	Korean Ferry Disaster	20140416	1-sec	-0.070	num; same date
+479	Landslide Afghanistan	2014-05-02 07:00:00	2014-05-03 06:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~479	Landslide Afghanistan	20140502	1-sec	-1.476	num; same date
+480	Isis in Iraq	2014-06-09 00:00:00	2014-06-09 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~480	ISIS in Iraq	20140609	1-sec	-0.441	num; same date
+481	Journalist in Egypt	2014-06-23 12:00:00	2014-06-23 17:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~481	Journalists in Egypt	20140623	1-sec	1.497	num; same date
+482	World Cup Germany vs Brazil	2014-07-08 20:00:00	2014-07-08 21:59:59	7200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~482	Germany vs Brazil	20140708	1-sec	1.324	num; same date
+483	Malaysia Airline Crash	2014-07-17 14:00:00	2014-07-17 19:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~483	Malaysia Air Crash	20140717	1-sec	-0.241	num; same date
+484	Global Peace Meditation	2014-08-08 16:00:00	2014-08-08 16:59:59	3600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~484	Global Peace Meditation	20140808	1-sec	-0.729	num; same date
+485	Robin Williams Dead	2014-08-11 19:00:00	2014-08-12 18:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~485	Robin Williams Dead	20140811	1-sec	0.305	num; same date
+486	Scottish Referendum	2014-09-19 03:00:00	2014-09-19 08:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~486	Scottish Referendum	20140919	1-sec	0.500	num; same date
+487	September 21	2014-09-21 00:00:00	2014-09-21 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~487	Climate and Peace	20140921	1-sec	2.721	num; same date
+488	Ottowa Terror Shooting	2014-09-22 14:00:00	2014-09-22 19:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~488	Ottawa Terror	20141022	1-sec	-0.071	num; dates 30 days apart
+489	Nigeria School Bombing	2014-11-10 07:00:00	2014-11-10 12:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~489	Nigeria Bombing	20141110	1-sec	-1.388	num; same date
+490	Sydney Hostage Crisis	2014-12-14 22:00:00	2014-12-15 15:59:59	64800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~490	Sydney Siege	20141215	1-sec	-0.779	num; 1 day apart
+491	Pakistani School Slaughter	2014-12-16 05:00:00	2014-12-16 14:59:59	36000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~491	Pakistani School Slaughter	20141216	1-sec	0.263	num; same date
+492	Winter Solstice	2014-12-21 00:00:00	2014-12-21 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~492	Winter Solstice 2014	20141221	1-sec	-0.851	num; same date
+493	Air Asia Loss	2014-12-28 00:00:00	2014-12-28 05:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~493	Air Asia 8501	20141228	1-sec	0.765	num; same date
+494	New Year Mean 2015	2014-12-31 09:30:00	2015-01-01 12:29:59	97200	1-sec	Stouffer Z Sig Avg 37 10 min epochs	Chisquare 600 df weight	1	~494	New Year Mean 2015	20150101	1-sec	-0.173	num; 1 day apart
+495	New Year Variance 2015	2014-12-31 09:30:00	2015-01-01 11:29:59	93600	1-sec 4-min knn smooth	Variance Sig Avg 10 min epochs	Permute 1 hr 10000 Dev x Prox (V*T) Chi 600 df	1	~495	New Year Var 2015	20150101	1-sec	-0.405	num; 1 day apart
+496	Charlie Hebdo & Yemen	2015-01-07 05:00:00	2015-01-07 16:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~496	Charlie Hebdo & Yemen	20150107	1-sec	1.069	num; same date
+497	Millions Rally for Unity	2015-01-11 12:00:00	2015-01-11 23:59:59	43200	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~497	Rally for Unity	20150111	1-sec	0.239	num; same date
+498	Terror attacks in Denmark	2015-02-14 14:30:00	2015-02-15 00:29:59	36000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~498	Terror in Copenhagen	20150214	1-sec	-0.752	num; same date
+499	ISIS beheads Copts in Libya	2015-02-15 18:00:00	2015-02-15 23:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~499	ISIS Murders Copts	20150215	1-sec	0.997	num; same date
+500	Yemen Mosque Bombings	2015-03-20 08:00:00	2015-03-20 13:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~500	Yemen Mosque Bombings	20150320	1-sec	-0.526	num; same date
+501	Germanwings Crash	2015-03-24 09:30:00	2015-03-24 15:29:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~501	Germanwings Crash	20150324	1-sec	-0.965	num; same date
+502	Global Meditation Day	2015-04-22 03:00:00	2015-04-22 17:59:59	54000	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~502	Global Meditation	20150422	1-sec	-0.431	num; same date
+503	Nepal Earthquake	2015-04-25 05:15:00	2015-04-26 05:14:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~503	Nepal Earthquake	20150425	1-sec	0.633	num; same date
+504	Fuji Peace Declaration	2015-05-17 01:00:00	2015-05-17 04:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~504	Fuji Declaration	20150517	1-sec	-0.108	num; same date
+505	Charleston Hate Crime	2015-05-18 00:00:00	2015-05-18 07:59:59	28800	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~505	Charleston Murders	20150617	1-sec	1.070	num; dates 30 days apart
+506	Iran Nuclear Deal	2015-07-14 10:25:00	2015-07-14 16:24:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~506	Iran Nuclear Deal	20150714	1-sec	1.328	num; same date
+507	Mecca Crane Falls	2015-09-11 13:00:00	2015-09-11 18:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~507	Mecca Crane Falls	20150911	1-sec	0.389	num; same date
+509	Hadj Stampede 2015	2015-09-24 05:00:00	2015-09-24 08:59:59	14400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~509	Hadj Tragedy 2015	20150924	1-sec	1.001	num; same date
+510	Turkey Peace Bombing	2015-10-10 09:00:00	2015-10-10 14:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~510	Turkey Peace March Bombing	20151010	1-sec	0.634	num; same date
+511	Paris Terror	2015-11-13 20:00:00	2015-11-14 01:59:59	21600	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~511	Paris Terror Attacks	20151113	1-sec	-0.872	num; same date
+512	Arbaeen, Hussein	2015-12-03 00:00:00	2015-12-03 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~512	Arba'een 2015	20151212	1-sec	-0.117	num; dates 9 days apart
+513	Climate Agreement, Day 1 World Peace	2015-12-12 00:00:00	2015-12-12 23:59:59	86400	1-sec	Stouffer Z Meanshift	Chisquare 600 df weight	1	~513	Climate Agreement, Mass Meditation	20151212	1-sec	1.013	num; same date
