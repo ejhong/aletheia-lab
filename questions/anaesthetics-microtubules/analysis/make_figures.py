@@ -40,45 +40,61 @@ def fmt_signed(x: float, digits: int = 2) -> str:
     return f"{x:+.{digits}f}".replace("-", "−")
 
 
+# Plain names for the eight proteins (PDB codes stay in small type and tooltips).
+PLAIN_LABEL = {
+    "tubulin_1jff": "Tubulin",
+    "tubulin_4i4t": "Tubulin, sharper structure",
+    "gabaa_6x3t": "GABA-A channel",
+    "glic_3p4w": "GLIC channel",
+    "hsa_1e7b": "Albumin",
+    "luciferase_1ba3": "Luciferase",
+    "lysozyme_1dpx": "Lysozyme",
+    "ubiquitin_1ubq": "Ubiquitin",
+}
+# Two-line column heads for the narrow heatmap columns.
+SHORT_LABEL = {
+    "tubulin_1jff": ["Tubulin", ""],
+    "tubulin_4i4t": ["Tubulin", "sharper"],
+    "gabaa_6x3t": ["GABA-A", "channel"],
+    "glic_3p4w": ["GLIC", "channel"],
+    "hsa_1e7b": ["Albumin", ""],
+    "luciferase_1ba3": ["Luciferase", ""],
+    "lysozyme_1dpx": ["Lysozyme", ""],
+    "ubiquitin_1ubq": ["Ubiquitin", ""],
+}
+
+
+def plain_targets(meta: Dict) -> Dict:
+    """Copy target metadata with plain-language labels; the PDB code is kept separately."""
+    out = {}
+    for tid, m in meta.items():
+        mm = dict(m)
+        mm["label"] = PLAIN_LABEL[tid]
+        mm["short"] = SHORT_LABEL[tid]
+        out[tid] = mm
+    return out
+
+
 def build_tiles(summary: Dict) -> str:
     vina = summary["scoring"]["vina"]
-    t_tub = vina["targets_best"]["tubulin_1jff"]
-    t_gab = vina["targets_best"]["gabaa_6x3t"]
-    t_hsa = vina["targets_best"]["hsa_1e7b"]
-    t_ubq = vina["targets_best"]["ubiquitin_1ubq"]
-    verdict_code = summary["verdict"]["verdict_code"]
+    best = vina["targets_best"]
+    t_tub = best["tubulin_1jff"]
 
-    v_map = {
-        "tubulin_selective": ("Tubulin selective", "microtubule tubulin tracks potency, rejects non-anaesthetics, and beats every control"),
-        "generic_hydrophobic_binding": ("Generic binding", "tubulin tracks potency no better than non-conscious soluble proteins and controls"),
-        "no_potency_or_selectivity": ("No tubulin signal", "predicted binding on tubulin neither tracks clinical potency nor rejects non-anaesthetics"),
-        "mixed_or_scoring_dependent": ("Mixed result", "potency tracking and non-anaesthetic separation split across targets or scoring functions"),
-    }
-    v_word, v_label = v_map[verdict_code]
+    # Trial fits = pockets on all proteins x molecules x scoring methods (24 x 35 x 2 = 1,680).
+    n_pockets = sum(m["n_sites"] for m in summary["target_meta"].values())
+    n_fits = n_pockets * len(summary["molecules"]) * len(summary["scoring"])
+    n_mols = len(summary["molecules"])
+    n_prot = len(summary["target_meta"])
 
-    # Compare tubulin vs best control on rho_pot
-    best_ctrl_rho = max(
-        vina["targets_best"][k]["rho_pot"]
-        for k in ("hsa_1e7b", "luciferase_1ba3", "lysozyme_1dpx", "ubiquitin_1ubq")
-    )
+    # The ubiquitin tile claims it matches potency at least as well as every other protein.
+    assert best["ubiquitin_1ubq"]["rho_pot"] >= max(v["rho_pot"] for v in best.values()), "ubiquitin tile wording no longer holds"
+    assert summary["verdict"]["verdict_code"] == "no_potency_or_selectivity", "verdict tile wording assumes this verdict"
 
     items = [
-        (
-            f"ρ = {fmt_signed(t_tub['rho_pot'])}",
-            f"tubulin (1JFF) potency correlation across 27 volatile anaesthetics ({fmt_p(t_tub['p_rho_pot'])}); negative-control Ubiquitin hits ρ = {fmt_signed(best_ctrl_rho)}",
-            False,
-        ),
-        (
-            f"AUC = {t_tub['auc_sep']:.2f}",
-            f"tubulin separation of 27 anaesthetics above 7 non-immobilizers (0.50 = chance; <0.50 means non-anaesthetics bind tighter)",
-            False,
-        ),
-        (
-            f"ρ = {fmt_signed(t_tub['rho_partial_heavy'])}",
-            f"tubulin potency correlation after removing heavy-atom size bias (GABA_A: {fmt_signed(t_gab['rho_partial_heavy'])}, Ubiquitin: {fmt_signed(t_ubq['rho_partial_heavy'])}, Albumin: {fmt_signed(t_hsa['rho_partial_heavy'])})",
-            False,
-        ),
-        (v_word, v_label, True),
+        (f"{n_fits:,}", f"trial fits of {n_mols} gases into pockets on {'eight' if n_prot == 8 else n_prot} proteins", False),
+        (f"{t_tub['rho_pot']:.2f}", "how well predicted grip on tubulin matches anaesthetic strength, where 1 is perfect and 0 is none", False),
+        ("Ubiquitin", "an unrelated protein, matches anaesthetic strength at least as well as tubulin or the accepted targets", True),
+        ("Cannot tell", "the method does not pick out microtubules, and does not pick out the accepted targets either", True),
     ]
     return '<div class="tiles">\n' + "\n".join(
         f'<div class="tile"><p class="tile-value{" is-word" if is_w else ""}">{esc(val)}</p><p class="tile-label">{esc(lbl)}</p></div>'
@@ -87,55 +103,38 @@ def build_tiles(summary: Dict) -> str:
 
 
 def build_verdict(summary: Dict) -> str:
-    vina = summary["scoring"]["vina"]
-    vdo = summary["scoring"]["vinardo"]
-    t1 = vina["targets_best"]["tubulin_1jff"]
-    t2 = vina["targets_best"]["tubulin_4i4t"]
-    t1_vdo = vdo["targets_best"]["tubulin_1jff"]
-    comps = vina["paired_vs_tubulin_1jff_best"]
+    best = summary["scoring"]["vina"]["targets_best"]
+    t1 = best["tubulin_1jff"]
+    gab = best["gabaa_6x3t"]
     checks = summary["verdict"]["checks"]
 
-    pot_ok = checks["pot_1jff_vina"]
-    rej_ok = checks["rej_1jff_vina"]
-    beats_ctrl = checks["beats_all_4_controls"]
-
-    # Row 1: Potency tracking
-    r1_cls = "is-yes" if pot_ok and t1["rho_partial_heavy"] > 0.25 else ("is-open" if pot_ok else "is-no")
-    r1_chip = "Tracked" if r1_cls == "is-yes" else ("Size-confounded" if pot_ok else "Not tracked")
-    r1_note = (
-        f"Across 27 volatile anaesthetics, 1JFF best-site affinity gives Spearman ρ = {fmt_signed(t1['rho_pot'])} "
-        f"({fmt_p(t1['p_rho_pot'])}; 4I4T: ρ = {fmt_signed(t2['rho_pot'])}; Vinardo: ρ = {fmt_signed(t1_vdo['rho_pot'])}). "
-        f"Controlling for heavy-atom count gives partial ρ = {fmt_signed(t1['rho_partial_heavy'])} ({fmt_p(t1['p_partial_heavy'])}), "
-        f"and controlling for olive-oil solubility gives partial ρ = {fmt_signed(t1['rho_partial_oil'])} ({fmt_p(t1['p_partial_oil'])})."
-    )
-
-    # Row 2: Non-immobilizer rejection
-    r2_cls = "is-yes" if rej_ok else "is-no"
-    r2_chip = "Separated" if rej_ok else "Not separated"
-    r2_note = (
-        f"Raw ROC AUC for binding true anaesthetics tighter than the 7 confirmed non-immobilizers is {t1['auc_sep']:.2f} "
-        f"({fmt_p(t1['p_auc_sep'])}; median −ΔG is {t1['median_B_anaes']:.2f} kcal/mol for anaesthetics vs {t1['median_B_non']:.2f} kcal/mol for non-immobilizers). "
-        f"Residual relative to the olive-oil trend is {fmt_signed(t1['r_non_oil'])} kcal/mol ({fmt_p(t1['p_non_oil'])}); "
-        f"relative to heavy-atom size it is {fmt_signed(t1['r_non_heavy'])} kcal/mol ({fmt_p(t1['p_non_heavy'])})."
-    )
-
-    # Row 3: Target specificity vs rivals & controls
-    ctrl_names = [("hsa_1e7b", "Albumin"), ("luciferase_1ba3", "Luciferase"), ("lysozyme_1dpx", "Lysozyme"), ("ubiquitin_1ubq", "Ubiquitin")]
-    ctrl_bits = ", ".join(
-        f"{nm}: Δρ = {fmt_signed(comps[cid]['delta_rho_pot'])} (95% CI {fmt_signed(comps[cid]['delta_rho_pot_ci95'][0])} to {fmt_signed(comps[cid]['delta_rho_pot_ci95'][1])})"
-        for cid, nm in ctrl_names
-    )
-    r3_cls = "is-yes" if beats_ctrl else "is-no"
-    r3_chip = "Selective" if beats_ctrl else "No advantage"
-    r3_note = (
-        f"Paired bootstrap comparison (Tubulin 1JFF minus control) across 5,000 molecule resamples — {ctrl_bits}. "
-        f"Rival ion channels show GABA_A ρ = {fmt_signed(vina['targets_best']['gabaa_6x3t']['rho_pot'])} and GLIC ρ = {fmt_signed(vina['targets_best']['glic_3p4w']['rho_pot'])}."
-    )
+    # The wording below states these facts; fail loudly if the results ever say otherwise.
+    assert not checks["pot_1jff_vina"] and not checks["rej_1jff_vina"], "row (a) wording assumes the test failed"
+    assert t1["auc_sep"] < 0.5 and gab["auc_sep"] < 0.5, "look-alikes no longer score tighter"
+    assert best["ubiquitin_1ubq"]["rho_pot"] >= max(v["rho_pot"] for v in best.values()), "ubiquitin wording no longer holds"
 
     rows = [
-        ("Potency tracking", "Does predicted tubulin binding follow clinical & in-vivo anaesthetic potency?", r1_note, r1_cls, r1_chip),
-        ("Non-anaesthetic test", "Does tubulin reject fat-soluble non-immobilizers (F6, F8, TFMB, cyclooctane, perfluorocarbons)?", r2_note, r2_cls, r2_chip),
-        ("Target specificity", "Does tubulin outperform non-conscious soluble proteins and negative controls?", r3_note, r3_cls, r3_chip),
+        (
+            "The test fixed in advance",
+            "Does predicted grip on tubulin follow anaesthetic strength, and tell real anaesthetics from look-alikes?",
+            f"No. The match with strength is weak ({t1['rho_pot']:.2f}, {fmt_p(t1['p_rho_pot'])}), and the look-alikes score tighter than the real anaesthetics.",
+            "is-no",
+            "Not found",
+        ),
+        (
+            "The check on the method",
+            "Does the same calculation pick out the ion channels that anaesthetics are known to act on?",
+            "No. On the GABA-A channel the look-alikes also score tighter, and the unrelated protein ubiquitin does as well as any.",
+            "is-no",
+            "Fails too",
+        ),
+        (
+            "What follows",
+            "This kind of calculation cannot tell an anaesthetic target from any other protein",
+            "The scores mostly follow the size of the molecule. So the result neither supports the idea that anaesthetics act on microtubules nor counts much against it.",
+            "is-open",
+            "Cannot tell",
+        ),
     ]
     parts = ['<div class="verdict">']
     for kicker, title, note, cls, chip in rows:
@@ -242,7 +241,7 @@ SHARED_PANEL_CSS = """
 def build_potency_explorer(summary: Dict) -> str:
     payload = {
         "molecules": summary["molecules"],
-        "targets": summary["target_meta"],
+        "targets": plain_targets(summary["target_meta"]),
         "targetOrder": list(summary["target_meta"].keys()),
         "scoring": {
             sf: {
@@ -564,7 +563,7 @@ def build_potency_explorer(summary: Dict) -> str:
 def build_matrix_explorer(summary: Dict) -> str:
     payload = {
         "molecules": summary["molecules"],
-        "targets": summary["target_meta"],
+        "targets": plain_targets(summary["target_meta"]),
         "targetOrder": list(summary["target_meta"].keys()),
         "scoring": {
             sf: {

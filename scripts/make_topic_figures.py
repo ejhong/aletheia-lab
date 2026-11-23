@@ -204,21 +204,21 @@ def younger_dryas():
 # ---------------------------------------------------------------------------------------------------------------------
 def minds():
     tiles("topic-minds-and-machines", [
-        ("3", "studies so far: two famous arguments checked in Lean 4, and one molecular docking test of microtubules", False),
-        ("68", "formal statements checked line by line across Penrose's argument and the unfolding argument", False),
-        ("1,680", "dockings of 35 volatile gases onto microtubule tubulin and seven comparison proteins", False),
-        ("Less than claimed", "both arguments prove less than their slogans, and standard docking finds no tubulin signal", True)])
-    scorecard("topic-minds-and-machines", "scorecard", "What each study claimed and what the lab found",
-              ["The claim", "What it claims", "What we found"], [
+        ("2", "famous arguments about minds, written out in Lean 4 and checked line by line", False),
+        ("68", "statements fixed in advance, read by outside models, then proved", False),
+        ("1", "assumption carries each argument once it is written out in full", False),
+        ("Both smaller", "than their slogans: each proves something real, and less than is claimed for it", True)])
+    scorecard("topic-minds-and-machines", "scorecard", "What each study tested and found",
+              ["The claim", "What it says", "What we found"], [
         (19, "godel-argument", "Penrose and Gödel", "Gödel's theorem shows that human mathematical insight is not the work of any machine.",
          "If your mind were a particular machine, you could not also know that machine to be reliable. That much is proved. It does not follow that the mind is no machine: a machine can be reliable without being able to know it.",
          "Partly holds", "The modest conclusion is proved; the proof of the strong one fails", "partly"),
         (66, "unfolding-argument", "The unfolding argument", "Any system with feedback loops has a loop-free twin that behaves the same, so a theory tying consciousness to loops is false or untestable.",
          "The twin exists for an experiment of fixed length, and needs one more part for every further step. With no limit on time there is no twin. All of it rests on behaviour being the only evidence about consciousness.",
          "Partly holds", "Valid for experiments of fixed length only", "partly"),
-        (48, "anaesthetics-microtubules", "Anaesthetics on microtubules", "General anaesthetics selectively target microtubule tubulin, tracking clinical potency and rejecting fat-soluble non-anaesthetics.",
-         "Across 1,680 dockings of 35 volatile gases onto eight proteins, predicted binding on tubulin neither tracks clinical potency nor rejects non-anaesthetics. Bulky non-anaesthetics bind tighter on almost every protein, and negative-control ubiquitin beats tubulin.",
-         "Not found", "No tubulin signal in standard docking", "no")])
+        (48, "anaesthetics-microtubules", "Anaesthetics and microtubules", "Anaesthetics switch consciousness off by settling into pockets in the microtubules of nerve cells.",
+         "A computer fit of 35 gases into eight proteins shows nothing special about the microtubule protein. But it shows nothing special about the accepted targets either, and an unrelated protein does as well as any. The scores follow the size of the molecule.",
+         "Could not tell", "The method cannot pick out any anaesthetic target", "open")])
 
 
 def deep_memory():

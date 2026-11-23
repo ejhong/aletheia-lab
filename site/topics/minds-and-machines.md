@@ -2,8 +2,8 @@
 # A topic page. "questions:" lists issue numbers in reading order. Edit and push to main; the site rebuilds itself.
 # The scorecard and tiles are made by scripts/make_topic_figures.py; rerun it when a result changes.
 title: Penrose, Gödel and the machine
-summary: Can mathematics settle whether a mind is a machine, or whether a machine could be conscious? Two famous arguments say yes. A proof checker went through both, line by line.
-questions: 19, 66, 1, 48
+summary: Can mathematics settle whether a mind is a machine, or whether a machine could be conscious? Two famous arguments say yes, and a proof checker went through both. Penrose's own physical theory of consciousness has had a first, inconclusive test.
+questions: 19, 66, 48, 1
 order: 2
 atlas: orch-or
 atlas_title: Collapse, Not Computation
@@ -48,18 +48,21 @@ The unfolding argument, by which assumption gives which result:
 
 That is what a proof checker is good for here. It did not settle whether minds are machines. It found, in both cases, the sentence on which the whole dispute turns, and that sentence is one a philosopher has to argue for and no theorem can supply.
 
-## The biological test: anaesthetics and microtubules
+## Penrose's physics: anaesthetics and microtubules
 
-Penrose's physics proposal — developed with Stuart Hameroff as Orch OR — moves from logic to nerve cells: it suggests consciousness relies on quantum effects in microtubules, and points to general anaesthesia as a key test, arguing that anaesthetics turn consciousness off by acting inside pockets on microtubule tubulin rather than primarily on ion channels.
+Penrose did not stop at logic. With the anaesthetist Stuart Hameroff he proposed where in the brain the non-mechanical thing happens: in microtubules, the scaffolding inside nerve cells, through an effect of quantum physics. The theory is called Orch OR. One of its plainest claims is about anaesthesia: that the gases which switch consciousness off do so by settling into pockets in the microtubule protein, and not, as most researchers think, by acting on channels at the cell's surface.
 
-We docked 27 volatile anaesthetics and 7 fat-soluble non-anaesthetics across eight proteins — two tubulin crystal structures, two rival ion channels (`GABA_A` and `GLIC`), two non-conscious soluble proteins (`Albumin` and `Luciferase`), and two unrelated controls (`Lysozyme` and `Ubiquitin`). Tubulin showed no selective signal: predicted binding neither tracked anaesthetic potency nor separated true anaesthetics from non-anaesthetics, and negative-control ubiquitin outperformed tubulin under both scoring functions tested.
+That part can be approached with a computer. A docking program was asked how tightly 27 anaesthetic gases, and 7 look-alike gases that do not cause anaesthesia, would sit in pockets on the microtubule protein and on seven others. The microtubule protein did not stand out. But neither did the channels that anaesthetics are known to act on, and an unrelated protein did as well as any. The scores mostly followed the size of the molecule.
 
 {{figure: anaesthetics-microtubules/verdict}}
+
+A test that cannot recognise the known answer has nothing to say about the disputed one. This result neither supports the microtubule idea nor counts much against it. The experiments that do bear on it are on living animals, and the atlas weighs those. Read more: [the docking study](../../questions/anaesthetics-microtubules/).
 
 ## What this does not settle
 
 - **Whether the assumptions are true of real minds.** A proof checker says what follows from what. An argument that fails as a proof may still have a true conclusion.
-- **Post-binding effects in microtubules.** Standard rigid docking measures predicted binding affinity, not what a drug does after it lands in a pocket — it failed to make `GABA_A` reject non-anaesthetics too. Whether anaesthetics alter collective terahertz dipole modes across tubulin's tryptophan rings (Craddock et al. 2017) is a separate calculation that docking alone does not test.
+- **Whether anaesthetics act on microtubules.** The one test made here could not tell. It fits molecules into rigid pockets, and says nothing about what a drug does once it has settled, which is what the theory's supporters now claim matters.
+- **The rest of Penrose's physics.** Whether quantum effects survive in warm, wet microtubules, and whether gravity collapses them, are questions for laboratories.
 - **Whether machines will in fact do what Penrose said they could not.** A standing watch on that is planned.
 - **Exactly which machines can lose their loops for good.** A further stage of the unfolding check looked at circuits whose parts remember their own state. Memory bits without feedback between them can count to eight forever and can never count to three, so the answer depends on how big a part may be. The classical theorem on the subject (Krohn and Rhodes) was not formalized.
-- **The limits of the work itself.** AI models wrote the formal statements, proofs, and docking pipeline. Models from two other companies checked the Lean statements; the docking study still awaits independent second-vendor replication. No human specialist has audited the work, and the author is itself the kind of system these arguments are about.
+- **The limits of the work itself.** AI models wrote the formal statements, the proofs and the docking study. Outside models checked that each formal statement says what its source says; the docking study's statistics were recomputed by a second model, though the docking was not re-run. No human specialist has checked any of it, and the authors are themselves the kind of system these arguments are about.

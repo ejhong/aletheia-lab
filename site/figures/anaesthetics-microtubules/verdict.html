@@ -1,26 +1,26 @@
 <div class="verdict">
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">Potency tracking</p>
-    <p class="verdict-text">Does predicted tubulin binding follow clinical &amp; in-vivo anaesthetic potency?</p>
-    <p class="verdict-note">Across 27 volatile anaesthetics, 1JFF best-site affinity gives Spearman ρ = +0.29 (p = 0.146; 4I4T: ρ = +0.35; Vinardo: ρ = +0.28). Controlling for heavy-atom count gives partial ρ = +0.44 (p = 0.027), and controlling for olive-oil solubility gives partial ρ = +0.16 (p = 0.439).</p>
+    <p class="verdict-kicker">The test fixed in advance</p>
+    <p class="verdict-text">Does predicted grip on tubulin follow anaesthetic strength, and tell real anaesthetics from look-alikes?</p>
+    <p class="verdict-note">No. The match with strength is weak (0.29, p = 0.146), and the look-alikes score tighter than the real anaesthetics.</p>
   </div>
-  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>Not tracked</p>
+  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>Not found</p>
 </div>
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">Non-anaesthetic test</p>
-    <p class="verdict-text">Does tubulin reject fat-soluble non-immobilizers (F6, F8, TFMB, cyclooctane, perfluorocarbons)?</p>
-    <p class="verdict-note">Raw ROC AUC for binding true anaesthetics tighter than the 7 confirmed non-immobilizers is 0.21 (p = 0.017; median −ΔG is 5.50 kcal/mol for anaesthetics vs 6.05 kcal/mol for non-immobilizers). Residual relative to the olive-oil trend is +1.34 kcal/mol (p = 0.007); relative to heavy-atom size it is −0.76 kcal/mol (p &lt; 0.001).</p>
+    <p class="verdict-kicker">The check on the method</p>
+    <p class="verdict-text">Does the same calculation pick out the ion channels that anaesthetics are known to act on?</p>
+    <p class="verdict-note">No. On the GABA-A channel the look-alikes also score tighter, and the unrelated protein ubiquitin does as well as any.</p>
   </div>
-  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>Not separated</p>
+  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>Fails too</p>
 </div>
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">Target specificity</p>
-    <p class="verdict-text">Does tubulin outperform non-conscious soluble proteins and negative controls?</p>
-    <p class="verdict-note">Paired bootstrap comparison (Tubulin 1JFF minus control) across 5,000 molecule resamples — Albumin: Δρ = +0.01 (95% CI −0.17 to +0.20), Luciferase: Δρ = +0.07 (95% CI −0.06 to +0.25), Lysozyme: Δρ = +0.19 (95% CI +0.01 to +0.40), Ubiquitin: Δρ = −0.23 (95% CI −0.56 to +0.10). Rival ion channels show GABA_A ρ = +0.42 and GLIC ρ = +0.38.</p>
+    <p class="verdict-kicker">What follows</p>
+    <p class="verdict-text">This kind of calculation cannot tell an anaesthetic target from any other protein</p>
+    <p class="verdict-note">The scores mostly follow the size of the molecule. So the result neither supports the idea that anaesthetics act on microtubules nor counts much against it.</p>
   </div>
-  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>No advantage</p>
+  <p class="verdict-status is-open"><span class="dot" aria-hidden="true"></span>Cannot tell</p>
 </div>
 </div>
