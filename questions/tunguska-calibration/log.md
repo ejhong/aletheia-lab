@@ -25,3 +25,11 @@
 - First locked run stopped while writing `results/summary.json`: a numpy integer could not be written as JSON.
   Nothing had been printed or read. Fixed by converting numpy numbers on output (one line of `analysis/tunguska.py`);
   no computation changed. Rerun.
+- **Locked run:** ammonium for 1908–09 ranks 10 of 56 across six sites: ordinary. NEGIS 7.0 times a typical year
+  (1908), ACT11d 3.5 (1909), the others 1.2 to 1.6. Summit, reported apart: 4.7 and 5.7. Sulphur at Katmai ranks
+  2 of 56.
+- **Replication** by Google `gemini-4-neon` (543 lines, ran first time): every rank, score, size and verdict
+  identical; sensitivity within 7 points.
+- **Exploratory, after the result** (`explore/after.py`): the spikes are sharp, carry soot at Summit, and sit 3.9
+  to 4.5 years before each core's Katmai sulphur peak. Two loosely dated Tunu cores hold a larger spike dated 1906.
+- No amendments. Spent $1.42 of $20.

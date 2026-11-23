@@ -12,7 +12,7 @@ updated: 2026-11-23
 
 ## What we figured out
 
-On the morning of 30 June 1908 something exploded several kilometres above the Tunguska river in Siberia and flattened about two thousand square kilometres of forest. It left no crater. It is the one large airburst of which we are certain.
+On the morning of 30 June 1908 something exploded several kilometres above the Tunguska river in Siberia and flattened about two thousand square kilometres of forest. It left no crater. It is the one large airburst of which we are certain. (The size and height are from general accounts and were not checked here.)
 
 One form of the Younger Dryas impact hypothesis says the Earth met many such airbursts, year after year, from the debris of a broken comet. Earlier studies here found a century of high ammonium in Greenland ice after the Younger Dryas cold began. To judge whether airbursts could have put it there, it helps to know what a single airburst leaves. A published paper says Tunguska left an ammonium spike in ice from Greenland's summit. We asked whether the rest of Greenland shows it.
 
