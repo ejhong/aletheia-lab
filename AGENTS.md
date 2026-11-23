@@ -82,3 +82,7 @@ directed it.
 
 Plain language. Lead with the answer, then the evidence, then the limits. Every `RESULTS.md` ends with a short
 "what this means" paragraph a non-specialist can read.
+
+Every question with a result has a site page (`site/content/<slug>.md`) whose front matter carries `verdict:` (a
+few words) and `result:` (two or three plain sentences). The home page shows them under the question, so readers
+see what was found without opening the page. Keep them current when a result changes.

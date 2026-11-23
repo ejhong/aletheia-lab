@@ -2,6 +2,8 @@
 # To update this page, edit this file and push to main; the site rebuilds itself.
 # The figures are made by questions/strangers/analysis/make_figures.py from the results files.
 summary: Before Columbus, was anyone buried on one side of an ocean whose DNA belongs on the other? A search of 12,977 ancient people.
+verdict: No strangers found
+result: Among 12,977 ancient people, nobody before Columbus is buried on the wrong side of an ocean except the medieval Norse of Greenland. Ancient Siberians resemble Native Americans through shared Ice Age ancestors, not through travel. The one person left unexplained was checked in her raw DNA, which points to modern contamination.
 dek: If people crossed the oceans in deep antiquity and settled among those they met, some of them should turn up in graves on the far shore with the wrong ancestry for the place. We searched 12,977 ancient people for exactly that, with the plan locked before any result existed.
 updated: 2026-11-23
 ---
