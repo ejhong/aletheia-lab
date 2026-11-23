@@ -166,7 +166,7 @@ def bin_words(start, width):
 
 def younger_dryas():
     tiles("topic-younger-dryas", [
-        ("7", "studies, each with its test fixed before the data were looked at", False),
+        ("8", "studies, each with its test fixed before the data were looked at", False),
         ("0", "found the sharp, one-off mark that a strike from the sky should leave", False),
         ("4", "eruptions, two of them very large, in the 150 years before the cold: among the heaviest runs in 51,000 years", False),
         ("Still open", "what laid down the platinum, and what happened to the great animals", True)])
@@ -190,6 +190,9 @@ def younger_dryas():
         (100, "tunguska-calibration", "What one airburst leaves", "The one known airburst, Tunguska in 1908, marks the ice in the way the Younger Dryas ice is marked.",
          "Across Greenland 1908 is an ordinary year for ammonium. At some sites there is a sharp, sooty spike, at others nothing. The Younger Dryas century has a steady rise and few spikes.",
          "Not found", "A spike where it shows, not a steady rise", "no"),
+        (103, "taurid-swarm", "A swarm in the Taurid stream", "The stream the Earth crosses each autumn still carries a swarm of large fragments of the broken comet.",
+         "No sign of one among today's asteroids or in 32 years of airbursts seen by satellite. Seventeen large asteroids do line up with the comet, as was known in 2010; smaller ones do not.",
+         "Not found", "No swarm of large fragments today", "no"),
         (40, "younger-dryas-crash", "A crash in human numbers", "Dated traces of people thin out at once, above all in North America.",
          "No drop on three continents. But radiocarbon dating is at its most distorted in exactly those centuries.",
          "Not found", "No sign, though the test was blurred", "no")])
