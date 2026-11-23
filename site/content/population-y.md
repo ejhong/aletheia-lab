@@ -1,62 +1,96 @@
 ---
 # To update this page, edit this file and push to main; the site rebuilds itself.
-summary: Some Amazonian peoples share a faint genetic resemblance with Australasians. Is it real, and what does it show?
-dek: Some Amazonian peoples share slightly more genetic variants with Papuans, Aboriginal Australians and Andaman Islanders than other Native Americans do. We tested that claim on public genomes, with the plan locked before any result existed.
+# The figures are made by questions/population-y/analysis/make_figures.py from the results files.
+summary: A few Amazonian peoples carry a faint genetic resemblance to Australasians. We checked whether it is real, and what it does and does not show.
+dek: A few Amazonian peoples share slightly more DNA variants with New Guineans, Aboriginal Australians and Andaman Islanders than other Native Americans do. We tested that ten-year-old claim on public genomes, with the plan locked before any result existed.
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Done, awaiting Eugene's review. The signal is real in public genomes, and it is weaker and less specific than its reputation. It points to an old Asian lineage, not to voyages across the Pacific. No ancient American group tested clearly carries it. Models from two other vendors reproduced every number from the protocol alone.
+> **Where things stand, 23 November 2026.** Finished. The resemblance is real and faint, and it is older than it looks: it leads back to mainland Asia tens of thousands of years ago, not across the Pacific. No ancient American we could test clearly carries it.
 
-## The question
+## What we figured out
 
-In 2015 two research groups reported that a few Amazonian peoples, the Suruí and Karitiana among them, share slightly more genetic variants with Australasians than other Native Americans do. The proposed source was named "Population Y", or Ypykuéra, "ancestor" in Tupi. Later studies disagreed about whether ancient skeletons carry it, and one raised the chance that it was a false positive.
+In 2015 geneticists reported something odd. The Suruí and Karitiana, two small peoples of the Brazilian Amazon, appeared to be slightly more closely related to New Guineans and Aboriginal Australians than other Native Americans are. An ocean and half a world lie between them. Later studies disagreed about whether ancient skeletons show the same thing, and one raised the chance that it was a statistical accident.
 
-We asked four things. Is the excess detectable in public genomes, and does it survive changes of method? Is it specific to Australasians? Which living lineage is it closest to? And does any ancient American group stand out for it?
+We rechecked the claim on public data, and then asked which explanation the data fit. Four things came out.
 
-## What we found
+1. **The resemblance is real.** It is not an accident of chance, of one laboratory's processing, or of a few donors. It shows up however the test is set up, and three separately written programs give the same numbers.
+2. **It is faint, and fuzzier than its reputation.** Published estimates put it at one to three percent of ancestry. Part of what the standard test picks up turns out to be a general lean of these Amazonians toward all non-African peoples. The part that is specific to Australasians is there, but with less certainty than the headline number suggests.
+3. **It is not really "Australian".** The same Amazonians are just as close to Andaman Islanders, and just as close to a person who lived near what is now Beijing about 40,000 years ago, long before anyone lived in the Americas. What all of these share is descent from a very old population of mainland Asia. The reading that fits is that a little of that old ancestry came into the Americas over land with the first settlers, and happens to survive in a few Amazonian groups.
+4. **It is missing from the ancient bones we could test.** Not one of 58 groups of ancient Americans stands out for it, including people of the ancient Pacific coast. So where it was for ten thousand years, and why it survives in these groups, is still unknown.
 
-| Question | Answer | Key number |
-|---|---|---|
-| Is it there? | Yes. | Primary test Z = 4.2. On the 2015 paper's own comparison, D = 0.017 against the published 0.021. |
-| Does it survive changes of method and donors? | Yes. | Positive in 97% of 216 method variants; in each community alone; with any one donor removed; and in 26 donors outside the original panel (Z = 4.2). |
-| Is it specific to Australasians? | Partly. | Against the Mixe, about three quarters of the excess is beyond what the Amazonians also share with Han Chinese (Z = 2.8). Against the Pima, the Papuan-specific part is not significant (Z = 1.4). |
-| Closer to Onge or to Papuans? | No difference. | Z = 0.5. |
-| Does a 40,000-year-old East Asian show it? | Yes, just as strongly. | Tianyuan: Z = 4.0. |
-| Does any ancient American group stand out? | No. | 75 tests on 58 ancient sets; none passed. Ancient South America as a whole: at most about 5% of the present-day excess over ancient North and Central Americans. |
-| The ancient Pacific coast? | No excess detected. | At most about 25% of the present-day excess; no difference from the inland Andes (Z = 1.6). |
-| The disputed 10,400-year-old Sumidouro5 individual? | Not supported. | Depends on which version of his genome is used; neither passes. |
+In short: a real curiosity with an ordinary explanation. Nothing here points to ancient voyages across the Pacific.
 
-By the rule fixed in advance, the headline is **"detected, with caveats: admixture"**. One planned check, for European or African ancestry in the comparison group, turned out to be unable to tell anything. The simpler statistics show no sign of such ancestry, but a general lean toward non-Africans of about a quarter of the signal cannot be excluded.
+{{figure: population-y/tiles}}
 
-## What it means
+## The signal, tested several ways
 
-A small group of Amazonian peoples carry a faint genetic resemblance to people from New Guinea, Australia and the Andaman Islands that other Native Americans lack. The resemblance is there, and it does not go away when the method or the donors are changed. But it is smaller and blurrier than the headline version: the part that is specific to Australasians is less certain than the published figures suggest.
+The test asks one question at about a million places in the genome. Where Papuans and a distant African group carry different variants, do the Amazonians side with the Papuans more often than a comparison group of Native Americans does? A small, consistent yes is the signal.
 
-It is not a sign of ancient voyages across the Pacific. The Amazonians are just as close to a person who lived in China 40,000 years ago, which is what you would expect if the ancestry came from an old population of mainland Asia and entered the Americas with everyone else.
+{{figure: population-y/tests}}
 
-No ancient skeleton from the Americas tested here clearly carries it, so where it was for the ten thousand years in between is still unknown. The people who could settle that are living communities in Brazil and Peru whose genomes are, rightly, not public.
+- **The excess is there.** The primary test is clearly above zero. So is each community alone, and so are 26 donors who were not part of the original study.
+- **Andaman Islanders and a 40,000-year-old show it too.** Swap Papuans for either and the excess stays the same size or grows.
+- **Han Chinese show a little of it.** That control should sit at zero if the excess were purely Australasian. It sits at about a quarter of the signal: not enough on its own to count, but enough to matter.
+- **Subtract the control and less is left.** Compared with the Mixe of Mexico, about three quarters of the excess survives, at Z = 2.8, just under the usual bar of 3. Compared with the Pima, what survives is not distinguishable from zero.
+
+## Who the Amazonians lean toward
+
+The same test can be run against every population in the public data. If the excess were only about Australasians, they alone would sit apart from a crowd centred on zero.
+
+{{figure: population-y/world}}
+
+Compared with the Mixe, the picture is close to the published one: Papuans and Aboriginal Australians lead, with Andaman Islanders just behind. But the whole crowd sits to the right of zero. Compared with the Pima, East Asian populations lead and the Australasians are scattered among them. The answer to "is it specifically Australasian?" depends on whom the Amazonians are compared with, and we cannot say which comparison group is the unusual one.
+
+## Two explanations, and what each predicts
+
+| | If people crossed the Pacific | If it is an old Asian lineage | What we found |
+|---|---|---|---|
+| Closer to Papuans than to Andaman Islanders? | Yes | No | No difference (Z = 0.5) |
+| Shared with someone who lived in China 40,000 years ago? | No | Yes | Yes, just as strongly (Z = 4.0) |
+| Stronger on the ancient Pacific coast than inland? | Likely | No reason to be | No difference (Z = 1.6) |
+
+The predictions are our own reasoning about what each story implies. The findings are measurements. None of this identifies the source population or dates its arrival; it only shows which story the measurements sit more comfortably with.
+
+## Ancient Americans
+
+If the ancestry came in with early settlers, some ancient group might carry more of it than others. We compared each ancient group only with other ancient people whose DNA was prepared the same way, because ancient DNA differs from modern DNA in ways that can fake or hide so small an effect.
+
+{{figure: population-y/ancient}}
+
+- **No group stands out**, in 75 tests across 58 ancient sets.
+- **Ancient South America as a whole** has at most about 5% of today's Amazonian excess over ancient North and Central Americans.
+- **The ancient Pacific coast** shows none, with an upper limit of about 25%. That bears on a published proposal that the ancestry entered South America along the coast, though it does not settle it.
+- **Sumidouro5**, a 10,400-year-old individual from Brazil reported in 2018 to carry the signal, does not show it in the version of his genome that passes quality control. A version that fails quality control shows it weakly (Z = 1.7). The claim depends on which is used.
+
+This comparison is relative. It shows that no sampled ancient group has more of the excess than ancient northerners do. It cannot show that ancient people had none. For a single ancient genome, the data are simply too thin to tell.
 
 ## How it was done
 
-- **Data.** The Allen Ancient DNA Resource, release v66.p1: 23,089 ancient and present-day people, public domain.
-- **Plan locked first.** The protocol was written, criticised in three rounds by models from OpenAI and Google, and locked in its own commit before any statistic on a Native American genome was computed.
-- **Two amendments, in the open.** The locked run's own controls exposed two mistakes in the plan: 18 ancient people from Guam and the Marianas, and 12 Greenland Norse, had been counted as ancient Americans; and the admixture check could not work. Both corrections were written down before the corrected parts ran. The original results are kept beside the corrected ones.
-- **Replicated.** OpenAI's and Google's models each wrote their own program from the protocol alone. Both matched every sample list and every required statistic.
-- **Cost.** $5.72, all for the other vendors' reviews and replications.
+- **Public data.** The Allen Ancient DNA Resource, release v66.p1: 23,089 ancient and present-day people, in the public domain.
+- **The plan was locked first.** Every test and every decision rule was written down, criticised in three rounds by models from OpenAI and Google, and committed before any statistic on a Native American genome was computed. The reviews caught a reversed sign and a rule that would have mistaken contamination for the signal.
+- **Replicated twice.** OpenAI's and Google's models each wrote their own program from the written plan alone, without seeing our code or numbers. Both matched every list of samples and every required statistic.
+- **Cost.** $5.72, all of it for the other vendors' reviews and replications.
 
-## Limits
+## What went wrong
 
-- Every genome carrying the signal comes from two small, closely related Amazonian communities. The present-day coastal and central-Brazilian groups in the published claims are under controlled access and were not tested.
-- The answer on specificity depends on which group the Amazonians are compared with.
-- Only one kind of method was used, on a set of SNPs built partly from a Karitiana and from Papuans.
-- Nothing here identifies a source population, dates an arrival or traces a route.
-- One session proposed, designed, ran and wrote up the question, after reading the main papers.
+Two mistakes in the locked plan surfaced when it was run. Both corrections were written down and published before the corrected parts ran, and the original results are kept beside the corrected ones.
+
+- **Not everyone in "ancient America" was an ancient American.** The plan selected people by modern country. That let in 18 ancient islanders from Guam and the Marianas, which are United States territory, and 12 medieval Norse from Greenland. The plan's own controls flagged them as impossible, which is how the mistake was found.
+- **One check could not work.** A test for European or African ancestry in the comparison group was built on an equation that carries no information. A repaired version is too imprecise to pass. Simpler statistics show no sign of such ancestry, but by the rule fixed in advance the official headline is "detected, with caveats: admixture".
+
+## What this cannot tell you
+
+- Every genome carrying the signal comes from two small, closely related Amazonian communities. Coastal and central-Brazilian groups named in published claims are, rightly, under controlled access, and were not tested.
+- Only one family of method was used, on a set of DNA markers chosen partly from a Karitiana and from Papuans.
+- Nothing here identifies the source population, dates its arrival or traces its route.
+- One AI session proposed, designed, ran and wrote up the study, after reading the main papers. No human has checked the numbers.
 
 ## Files
 
-- [Results](https://github.com/ejhong/aletheia-lab/blob/main/questions/population-y/RESULTS.md)
-- [Protocol](https://github.com/ejhong/aletheia-lab/blob/main/questions/population-y/protocol.md) and [amendments](https://github.com/ejhong/aletheia-lab/blob/main/questions/population-y/amendments.md)
-- [Pre-lock reviews](https://github.com/ejhong/aletheia-lab/blob/main/questions/population-y/review/README.md)
-- [Analysis code](https://github.com/ejhong/aletheia-lab/tree/main/questions/population-y/analysis) and [replications](https://github.com/ejhong/aletheia-lab/tree/main/questions/population-y/replication)
+- [Full results](https://github.com/ejhong/aletheia-lab/blob/main/questions/population-y/RESULTS.md), with every number behind the figures
+- [The locked plan](https://github.com/ejhong/aletheia-lab/blob/main/questions/population-y/protocol.md) and its [amendments](https://github.com/ejhong/aletheia-lab/blob/main/questions/population-y/amendments.md)
+- [The reviews before the lock](https://github.com/ejhong/aletheia-lab/blob/main/questions/population-y/review/README.md)
+- [Analysis code](https://github.com/ejhong/aletheia-lab/tree/main/questions/population-y/analysis) and the [two replications](https://github.com/ejhong/aletheia-lab/tree/main/questions/population-y/replication)
 
-AI did this work: Claude Opus 5.5 and Claude Fable 5.2 (Anthropic), with OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` as reviewers and replicators. Eugene directed it. No human has checked the numbers.
+AI did this work: Claude Opus 5.5 and Claude Fable 5.2 (Anthropic), with OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` as reviewers and replicators. Eugene directed it.
