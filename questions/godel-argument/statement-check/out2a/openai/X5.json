@@ -1,0 +1,39 @@
+{
+  "id": "X5",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:37:00Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)\n",
+  "usage": [
+    [
+      1403,
+      330
+    ],
+    [
+      2857,
+      1158
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines the following proposition. For every choice of types Fm, S₀ and S, of logical connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S that both prove every classical propositional tautology and are closed under modus ponens. For every pair of functions K, F : Fm → Fm, suppose, in order, that (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K(φ); (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every sentence φ and every sentence χ, 𝓢 proves K(φ 🡒 χ) 🡒 (K(φ) 🡒 K(χ)); (4) there exists a sentence θ such that 𝓑 proves the biconditional θ 🡘 ∼(F(θ)); and (5) for every sentence φ, 𝓢 proves K(F(φ) 🡒 φ), with K applied to the whole implication. Then there exists a sentence ψ such that 𝓢 proves the conjunction K(ψ) ⋏ K(F(ψ)). The conclusion does not require ψ to be the witness θ from (4). Neither system is assumed consistent, and the closure condition in (1) is required of 𝓑, not of 𝓢.\"}",
+  "translation": "Target defines the following proposition. For every choice of types Fm, S₀ and S, of logical connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S that both prove every classical propositional tautology and are closed under modus ponens. For every pair of functions K, F : Fm → Fm, suppose, in order, that (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K(φ); (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every sentence φ and every sentence χ, 𝓢 proves K(φ 🡒 χ) 🡒 (K(φ) 🡒 K(χ)); (4) there exists a sentence θ such that 𝓑 proves the biconditional θ 🡘 ∼(F(θ)); and (5) for every sentence φ, 𝓢 proves K(F(φ) 🡒 φ), with K applied to the whole implication. Then there exists a sentence ψ such that 𝓢 proves the conjunction K(ψ) ⋏ K(F(ψ)). The conclusion does not require ψ to be the witness θ from (4). Neither system is assumed consistent, and the closure condition in (1) is required of 𝓑, not of 𝓢.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The conclusion drops the negation inside the second occurrence of K. Theorem 3 requires `𝓢 ⊢ K ψ ⋏ K (∼(F ψ))`, but the TARGET says `𝓢 ⊢ K ψ ⋏ K (F ψ)`. It asserts knowledge that F holds of the witness rather than knowledge that F does not hold of it.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the declared abstraction, `𝓑 ⪯ 𝓢` expresses inclusion of provable sentences, but `𝓑` is not required to be EA. Arithmetic, object-language quantifiers, and the full EA axioms for K are not represented; base necessitation and the distribution of K over modus ponens in `𝓢` are supplied explicitly.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source obtains every `F(⌜φ⌝)` by instantiating one fixed one-free-variable formula with a sentence code. Lean instead uses a sentence function `F` with no formula-definability requirement and assumes its negative fixed point via `Def5`, rather than obtaining that fixed point by diagonalization.\"\n    }\n  ],\n  \"summary\": \"The pointwise hypothesis correctly places the whole implication `F φ 🡒 φ` under K. Even allowing for the declared abstraction, the missing negation changes what the theorem establishes about its witness.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The conclusion drops the negation inside the second occurrence of K. Theorem 3 requires `𝓢 ⊢ K ψ ⋏ K (∼(F ψ))`, but the TARGET says `𝓢 ⊢ K ψ ⋏ K (F ψ)`. It asserts knowledge that F holds of the witness rather than knowledge that F does not hold of it."
+      },
+      {
+        "severity": "minor",
+        "description": "In the declared abstraction, `𝓑 ⪯ 𝓢` expresses inclusion of provable sentences, but `𝓑` is not required to be EA. Arithmetic, object-language quantifiers, and the full EA axioms for K are not represented; base necessitation and the distribution of K over modus ponens in `𝓢` are supplied explicitly."
+      },
+      {
+        "severity": "minor",
+        "description": "The source obtains every `F(⌜φ⌝)` by instantiating one fixed one-free-variable formula with a sentence code. Lean instead uses a sentence function `F` with no formula-definability requirement and assumes its negative fixed point via `Def5`, rather than obtaining that fixed point by diagonalization."
+      }
+    ],
+    "summary": "The pointwise hypothesis correctly places the whole implication `F φ 🡒 φ` under K. Even allowing for the declared abstraction, the missing negation changes what the theorem establishes about its witness."
+  }
+}

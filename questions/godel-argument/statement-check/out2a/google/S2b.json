@@ -1,0 +1,43 @@
+{
+  "id": "S2b",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:40:01Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K → Def4 𝓢 K →\n    𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥ →\n    (∀ φ, 𝓢 ⊢ K (K φ 🡒 F φ)) →\n    𝓢 ⊢ K (∼K (∼F ⊥))\n",
+  "usage": [
+    [
+      1355,
+      3613
+    ],
+    [
+      2451,
+      11741
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting that for all types Fm (of sentences) and S₀, S (of proof systems), equipped with the formal logical connectives (🡒, ⋏, ⋎, ∼) and constants (⊤, ⊥) on Fm and entailment (provability) relations for S₀ and S on Fm, for all proof systems 𝓑 : S₀ and 𝓢 : S that are classical propositional systems (meaning each proves all classical propositional tautologies in these connectives and is closed under modus ponens), and for all functions K, F : Fm → Fm, if all six of the following hypotheses hold:\\n1. (Def1 𝓑 K) For every sentence φ : Fm, if 𝓑 proves φ, then 𝓑 proves K φ.\\n2. (𝓑 ⪯ 𝓢) Every sentence provable in 𝓑 is provable in 𝓢.\\n3. (Def2 𝓢 K) For all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ).\\n4. (Def4 𝓢 K) For every sentence φ : Fm, 𝓢 proves K ((K φ) 🡒 φ).\\n5. 𝓑 proves (F (∼(F ⊥))) 🡒 (F ⊥).\\n6. For every sentence φ : Fm, 𝓢 proves K ((K φ) 🡒 (F φ)).\\n\\nthen 𝓢 proves K (∼(K (∼(F ⊥)))).\\n\\nNothing else is required: in particular, neither 𝓑 nor 𝓢 is assumed to be consistent; necessitation for K is assumed only in 𝓑, not in 𝓢; 𝓢 is not assumed to prove (K φ) 🡒 φ (only the K-prefixed version K ((K φ) 🡒 φ)); no fixed-point hypothesis on F (such as Def5 𝓑 F) is assumed; and K and F are arbitrary functions on Fm with no additional axioms or structure assumed.\"}",
+  "translation": "Target is the proposition asserting that for all types Fm (of sentences) and S₀, S (of proof systems), equipped with the formal logical connectives (🡒, ⋏, ⋎, ∼) and constants (⊤, ⊥) on Fm and entailment (provability) relations for S₀ and S on Fm, for all proof systems 𝓑 : S₀ and 𝓢 : S that are classical propositional systems (meaning each proves all classical propositional tautologies in these connectives and is closed under modus ponens), and for all functions K, F : Fm → Fm, if all six of the following hypotheses hold:\n1. (Def1 𝓑 K) For every sentence φ : Fm, if 𝓑 proves φ, then 𝓑 proves K φ.\n2. (𝓑 ⪯ 𝓢) Every sentence provable in 𝓑 is provable in 𝓢.\n3. (Def2 𝓢 K) For all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ).\n4. (Def4 𝓢 K) For every sentence φ : Fm, 𝓢 proves K ((K φ) 🡒 φ).\n5. 𝓑 proves (F (∼(F ⊥))) 🡒 (F ⊥).\n6. For every sentence φ : Fm, 𝓢 proves K ((K φ) 🡒 (F φ)).\n\nthen 𝓢 proves K (∼(K (∼(F ⊥)))).\n\nNothing else is required: in particular, neither 𝓑 nor 𝓢 is assumed to be consistent; necessitation for K is assumed only in 𝓑, not in 𝓢; 𝓢 is not assumed to prove (K φ) 🡒 φ (only the K-prefixed version K ((K φ) 🡒 φ)); no fixed-point hypothesis on F (such as Def5 𝓑 F) is assumed; and K and F are arbitrary functions on Fm with no additional axioms or structure assumed.",
+  "b_raw": "{\"verdict\": \"faithful_with_caveats\",\n \"divergences\": [\n   {\"severity\": \"minor\",\n    \"description\": \"Relative to Theorem 4 as printed in the source (which places no provability/derivability restriction on the formula F(x)), TARGET adds the hypothesis `𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥` (that the base theory proves the formalized second incompleteness theorem for F). This is explicitly declared by the author as a repair to the printed theorem, and matches the author's description exactly.\"},\n   {\"severity\": \"minor\",\n    \"description\": \"TARGET works in an abstract propositional setting: sentences are an arbitrary type `Fm`, and `K` and `F` are arbitrary functions `Fm → Fm`, omitting arithmetic, first-order quantifiers, Gödel numbering (`⌜φ⌝`), and syntactic representability of `F(x)` as a one-variable formula in `L_EA`. This limitation is declared separately and, because TARGET quantifies universally over all such structures and functions, yields a more general (stronger) conditional whose instantiation to `L_EA` recovers the concrete form (modulo the added proviso).\"},\n   {\"severity\": \"minor\",\n    \"description\": \"Instead of full Epistemic Arithmetic `EA` (PA plus S4 epistemic axioms and necessitation) and an extending theory `S`, TARGET assumes only classical propositional logic for `𝓑` and `𝓢`, necessitation in `𝓑` (`Def1 𝓑 K`), theorem inclusion `𝓑 ⪯ 𝓢`, K-distribution in `𝓢` (`Def2 𝓢 K`), and necessitated factivity in `𝓢` (`Def4 𝓢 K`), omitting PA, unprefixed factivity (`K φ 🡒 φ`), and positive introspection (`K φ 🡒 K (K φ)`). Because any system `S` including `EA` satisfies these conditions, this is a harmless strengthening.\"},\n   {\"severity\": \"minor\",\n    \"description\": \"`Con(F)` is formalized as `∼F ⊥` using the propositional constant `⊥` rather than an arithmetical falsehood such as `0=1` or a syntactic consistency formula; this choice is explicitly declared and standard in the abstract setting.\"}\n ],\n \"summary\": \"Apart from the explicitly declared formalized-second-incompleteness proviso (`𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥`) and the declared abstract propositional idealization (omitting arithmetic, Gödel numbering, quantifiers, and unused axioms of EA, and reading `Con(F)` as `∼F ⊥`), TARGET faithfully matches Theorem 4's pointwise capture hypothesis and epistemic conclusion.\"}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Relative to Theorem 4 as printed in the source (which places no provability/derivability restriction on the formula F(x)), TARGET adds the hypothesis `𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥` (that the base theory proves the formalized second incompleteness theorem for F). This is explicitly declared by the author as a repair to the printed theorem, and matches the author's description exactly."
+      },
+      {
+        "severity": "minor",
+        "description": "TARGET works in an abstract propositional setting: sentences are an arbitrary type `Fm`, and `K` and `F` are arbitrary functions `Fm → Fm`, omitting arithmetic, first-order quantifiers, Gödel numbering (`⌜φ⌝`), and syntactic representability of `F(x)` as a one-variable formula in `L_EA`. This limitation is declared separately and, because TARGET quantifies universally over all such structures and functions, yields a more general (stronger) conditional whose instantiation to `L_EA` recovers the concrete form (modulo the added proviso)."
+      },
+      {
+        "severity": "minor",
+        "description": "Instead of full Epistemic Arithmetic `EA` (PA plus S4 epistemic axioms and necessitation) and an extending theory `S`, TARGET assumes only classical propositional logic for `𝓑` and `𝓢`, necessitation in `𝓑` (`Def1 𝓑 K`), theorem inclusion `𝓑 ⪯ 𝓢`, K-distribution in `𝓢` (`Def2 𝓢 K`), and necessitated factivity in `𝓢` (`Def4 𝓢 K`), omitting PA, unprefixed factivity (`K φ 🡒 φ`), and positive introspection (`K φ 🡒 K (K φ)`). Because any system `S` including `EA` satisfies these conditions, this is a harmless strengthening."
+      },
+      {
+        "severity": "minor",
+        "description": "`Con(F)` is formalized as `∼F ⊥` using the propositional constant `⊥` rather than an arithmetical falsehood such as `0=1` or a syntactic consistency formula; this choice is explicitly declared and standard in the abstract setting."
+      }
+    ],
+    "summary": "Apart from the explicitly declared formalized-second-incompleteness proviso (`𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥`) and the declared abstract propositional idealization (omitting arithmetic, Gödel numbering, quantifiers, and unused axioms of EA, and reading `Con(F)` as `∼F ⊥`), TARGET faithfully matches Theorem 4's pointwise capture hypothesis and epistemic conclusion."
+  }
+}

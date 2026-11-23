@@ -1,0 +1,39 @@
+{
+  "id": "S2a",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:37:00Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (∼F ψ)\n",
+  "usage": [
+    [
+      1339,
+      3403
+    ],
+    [
+      2986,
+      12210
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition asserting that for all types Fm, S₀, and S, all choices of logical connectives (🡒, ⋏, ⋎, ∼) and logical constants (⊤, ⊥) on Fm, all provability relations on Fm for systems of types S₀ and S, all proof systems 𝓑 : S₀ and 𝓢 : S that each satisfy classical propositional logic (proving all classical propositional tautologies in those connectives and closed under modus ponens), and all functions K, F : Fm → Fm, if the following five hypotheses hold:\\n1. (Def1 𝓑 K) For every sentence φ : Fm, if 𝓑 proves φ, then 𝓑 proves K φ.\\n2. (𝓑 ⪯ 𝓢) Every sentence provable in 𝓑 is provable in 𝓢.\\n3. (Def2 𝓢 K) For all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ).\\n4. (Def5 𝓑 F) There exists a sentence ψ : Fm such that 𝓑 proves ψ 🡘 ∼(F ψ), i.e., (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ).\\n5. For every sentence φ : Fm, 𝓢 proves K (F φ 🡒 φ).\\nthen there exists a sentence ψ : Fm such that 𝓢 proves the conjunction K ψ ⋏ K (∼(F ψ)).\\n\\nWhat is not required: neither 𝓑 nor 𝓢 is assumed to be consistent; necessitation for K (Def1) is assumed only for 𝓑 and not for 𝓢; distribution of K over implication (Def2) is assumed only for 𝓢 and not for 𝓑; neither Def3 (∀ φ, 𝓢 ⊢ K φ 🡒 φ) nor Def4 (∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)) nor ∀ φ, 𝓢 ⊢ F φ 🡒 φ is assumed; K and F are arbitrary functions on Fm with no additional syntactic or arithmetic structure; and the sentence ψ in the conclusion is existentially quantified on its own and is not explicitly constrained in the conclusion to equal the witness of Def5 𝓑 F.\"}\n```",
+  "translation": "Target is the proposition asserting that for all types Fm, S₀, and S, all choices of logical connectives (🡒, ⋏, ⋎, ∼) and logical constants (⊤, ⊥) on Fm, all provability relations on Fm for systems of types S₀ and S, all proof systems 𝓑 : S₀ and 𝓢 : S that each satisfy classical propositional logic (proving all classical propositional tautologies in those connectives and closed under modus ponens), and all functions K, F : Fm → Fm, if the following five hypotheses hold:\n1. (Def1 𝓑 K) For every sentence φ : Fm, if 𝓑 proves φ, then 𝓑 proves K φ.\n2. (𝓑 ⪯ 𝓢) Every sentence provable in 𝓑 is provable in 𝓢.\n3. (Def2 𝓢 K) For all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ).\n4. (Def5 𝓑 F) There exists a sentence ψ : Fm such that 𝓑 proves ψ 🡘 ∼(F ψ), i.e., (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ).\n5. For every sentence φ : Fm, 𝓢 proves K (F φ 🡒 φ).\nthen there exists a sentence ψ : Fm such that 𝓢 proves the conjunction K ψ ⋏ K (∼(F ψ)).\n\nWhat is not required: neither 𝓑 nor 𝓢 is assumed to be consistent; necessitation for K (Def1) is assumed only for 𝓑 and not for 𝓢; distribution of K over implication (Def2) is assumed only for 𝓢 and not for 𝓑; neither Def3 (∀ φ, 𝓢 ⊢ K φ 🡒 φ) nor Def4 (∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)) nor ∀ φ, 𝓢 ⊢ F φ 🡒 φ is assumed; K and F are arbitrary functions on Fm with no additional syntactic or arithmetic structure; and the sentence ψ in the conclusion is existentially quantified on its own and is not explicitly constrained in the conclusion to equal the witness of Def5 𝓑 F.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The formalization cannot express the concrete object language L_EA, first-order quantifiers, Peano arithmetic, Gödel numbering, or that F(x) is a formula with one free variable; instead Fm is an arbitrary sentence type and K, F : Fm → Fm are arbitrary functions (a limitation declared by the author).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Rather than defining the concrete system EA (axiomatized by Σ ∪ KΣ with PA and K1–K4) and proving that it satisfies necessitation and the diagonal lemma, TARGET postulates the necessitation rule for the base (Def1 𝓑 K), K-distribution in 𝓢 (Def2 𝓢 K), and a diagonal sentence for F over the base (Def5 𝓑 F) as explicit hypotheses, leaving the bridge from concrete EA unformalized.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"TARGET assumes only classical propositional logic (Entailment.Cl) and the minimal modal/diagonal hypotheses on arbitrary systems 𝓑 and 𝓢, omitting unused parts of EA such as first-order quantifier logic, PA axioms, K3 (Kφ → φ), and K4 (Kφ → KKφ); this is a harmless generalization of the modal-propositional core of Theorem 3.\"\n    }\n  ],\n  \"summary\": \"TARGET faithfully captures the modal-propositional structure, hypotheses, and conclusion of Theorem 3 (Reinhardt) in the declared abstract setting. The only divergences are minor idealizations inherent to the abstraction: arithmetic, L_EA, Gödel numbering, and the concrete definition of EA are not modelled, so necessitation and the diagonal lemma are assumed as hypotheses while unused axioms of EA are dropped.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The formalization cannot express the concrete object language L_EA, first-order quantifiers, Peano arithmetic, Gödel numbering, or that F(x) is a formula with one free variable; instead Fm is an arbitrary sentence type and K, F : Fm → Fm are arbitrary functions (a limitation declared by the author)."
+      },
+      {
+        "severity": "minor",
+        "description": "Rather than defining the concrete system EA (axiomatized by Σ ∪ KΣ with PA and K1–K4) and proving that it satisfies necessitation and the diagonal lemma, TARGET postulates the necessitation rule for the base (Def1 𝓑 K), K-distribution in 𝓢 (Def2 𝓢 K), and a diagonal sentence for F over the base (Def5 𝓑 F) as explicit hypotheses, leaving the bridge from concrete EA unformalized."
+      },
+      {
+        "severity": "minor",
+        "description": "TARGET assumes only classical propositional logic (Entailment.Cl) and the minimal modal/diagonal hypotheses on arbitrary systems 𝓑 and 𝓢, omitting unused parts of EA such as first-order quantifier logic, PA axioms, K3 (Kφ → φ), and K4 (Kφ → KKφ); this is a harmless generalization of the modal-propositional core of Theorem 3."
+      }
+    ],
+    "summary": "TARGET faithfully captures the modal-propositional structure, hypotheses, and conclusion of Theorem 3 (Reinhardt) in the declared abstract setting. The only divergences are minor idealizations inherent to the abstraction: arithmetic, L_EA, Gödel numbering, and the concrete definition of EA are not modelled, so necessitation and the diagonal lemma are assumed as hypotheses while unused axioms of EA are dropped."
+  }
+}

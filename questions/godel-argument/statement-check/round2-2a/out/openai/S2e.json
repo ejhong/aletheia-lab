@@ -1,0 +1,47 @@
+{
+  "id": "S2e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:37:37Z",
+  "target": "def Target : Prop :=\n  ∃ (𝓢 : ArithmeticTheory) (K F : ArithmeticSentence → ArithmeticSentence),\n    Def1 (𝗣𝗔 : ArithmeticTheory) K ∧ (𝗣𝗔 : ArithmeticTheory) ⪯ 𝓢 ∧\n    Def2 𝓢 K ∧ Def3 𝓢 K ∧\n    Def5 (𝗣𝗔 : ArithmeticTheory) F ∧\n    (∀ φ, 𝓢 ⊢ K (K φ 🡘 F φ)) ∧\n    (∃ p, 𝓢 ⊢ K (K (∼p) 🡘 p)) ∧\n    Entailment.Consistent 𝓢\n",
+  "usage": [
+    [
+      1389,
+      524
+    ],
+    [
+      2464,
+      3893
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that there exist, in order, an arithmetic theory S, a function K from closed arithmetic sentences to closed arithmetic sentences, and another such function F, such that all of the following hold for those same choices. Here →, ↔, and ¬ inside a sentence denote object-language connectives. (1) For every sentence φ, if PA proves φ, then PA proves K(φ). (2) Every sentence provable in PA is provable in S; this is a condition on theorems, not literal inclusion of axiom sets. (3) For every sentence φ and every sentence ψ, S proves K(φ → ψ) → (K(φ) → K(ψ)). (4) For every sentence φ, S proves K(φ) → φ. (5) There exists a sentence ψ such that PA proves ψ ↔ ¬(F(ψ)). (6) For every sentence φ, S proves K(K(φ) ↔ F(φ)). (7) There exists a sentence p such that S proves K(K(¬p) ↔ p). In (6) and (7) the outer K applies to the entire biconditional. The witnesses ψ in (5) and p in (7) are not required to coincide. (8) S does not prove every arithmetic sentence. Neither function is required to be given by a formula, and the closure condition in (1) is imposed on PA, not separately on S.\"}",
+  "translation": "Target is the proposition that there exist, in order, an arithmetic theory S, a function K from closed arithmetic sentences to closed arithmetic sentences, and another such function F, such that all of the following hold for those same choices. Here →, ↔, and ¬ inside a sentence denote object-language connectives. (1) For every sentence φ, if PA proves φ, then PA proves K(φ). (2) Every sentence provable in PA is provable in S; this is a condition on theorems, not literal inclusion of axiom sets. (3) For every sentence φ and every sentence ψ, S proves K(φ → ψ) → (K(φ) → K(ψ)). (4) For every sentence φ, S proves K(φ) → φ. (5) There exists a sentence ψ such that PA proves ψ ↔ ¬(F(ψ)). (6) For every sentence φ, S proves K(K(φ) ↔ F(φ)). (7) There exists a sentence p such that S proves K(K(¬p) ↔ p). In (6) and (7) the outer K applies to the entire biconditional. The witnesses ψ in (5) and p in (7) are not required to coincide. (8) S does not prove every arithmetic sentence. Neither function is required to be given by a formula, and the closure condition in (1) is imposed on PA, not separately on S.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Alexander's witness is a fixed machine index m: the same membership test ⌜φ⌝ ∈ W_m occurs in every instance. Lean preserves the outer K and uses one F for all φ, but F is an arbitrary function on sentences, with no index, effectiveness, or uniform defining formula required. Even taking F = K makes the inner biconditionals tautological. The scheme therefore need not express knowledge of a code or of coincidence with a particular machine in Koellner's sense.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Alexander asserts satisfaction of the axioms of epistemic arithmetic mod factivity in M_Σ(n), with the schema ranging over sentences of the epistemic language. Lean instead asserts provability in a consistent theory of ordinary arithmetic, with K acting externally on closed sentences. Its selected proof conditions are not the model-satisfaction claim; in particular, Def1 requires PA itself to prove Kφ whenever PA proves φ.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Lean requires a witness ψ for which PA proves ψ ↔ ¬F(ψ). The passages do not state this fixed-point clause. For an arithmetically defined membership test one can appeal to diagonalization, but for the arbitrary sentence map in Lean this is a substantive separate requirement.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Lean also asserts that for some p, the theory proves K(K(¬p) ↔ p), with the entire biconditional known. No quoted passage asserts such a sentence; it is an additional conclusion, not an instance of Alexander's machine-index schema.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"‘Containing PA’ is expressed as inclusion of provable sentences, not literal inclusion of PA's axioms in the witnessing axiom set. This suffices for reasoning from PA theorems.\"\n    }\n  ],\n  \"summary\": \"The target matches the advertised abstract conjunction and does leave known factivity out as a hypothesis. As a statement of the source result, however, it replaces the indexed machine and epistemic structure with unconstrained sentence operators and a proof theory, and adds two fixed-point-related claims.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Alexander's witness is a fixed machine index m: the same membership test ⌜φ⌝ ∈ W_m occurs in every instance. Lean preserves the outer K and uses one F for all φ, but F is an arbitrary function on sentences, with no index, effectiveness, or uniform defining formula required. Even taking F = K makes the inner biconditionals tautological. The scheme therefore need not express knowledge of a code or of coincidence with a particular machine in Koellner's sense."
+      },
+      {
+        "severity": "major",
+        "description": "Alexander asserts satisfaction of the axioms of epistemic arithmetic mod factivity in M_Σ(n), with the schema ranging over sentences of the epistemic language. Lean instead asserts provability in a consistent theory of ordinary arithmetic, with K acting externally on closed sentences. Its selected proof conditions are not the model-satisfaction claim; in particular, Def1 requires PA itself to prove Kφ whenever PA proves φ."
+      },
+      {
+        "severity": "major",
+        "description": "Lean requires a witness ψ for which PA proves ψ ↔ ¬F(ψ). The passages do not state this fixed-point clause. For an arithmetically defined membership test one can appeal to diagonalization, but for the arbitrary sentence map in Lean this is a substantive separate requirement."
+      },
+      {
+        "severity": "major",
+        "description": "Lean also asserts that for some p, the theory proves K(K(¬p) ↔ p), with the entire biconditional known. No quoted passage asserts such a sentence; it is an additional conclusion, not an instance of Alexander's machine-index schema."
+      },
+      {
+        "severity": "minor",
+        "description": "‘Containing PA’ is expressed as inclusion of provable sentences, not literal inclusion of PA's axioms in the witnessing axiom set. This suffices for reasoning from PA theorems."
+      }
+    ],
+    "summary": "The target matches the advertised abstract conjunction and does leave known factivity out as a hypothesis. As a statement of the source result, however, it replaces the indexed machine and epistemic structure with unconstrained sentence operators and a proof theory, and adds two fixed-point-related claims."
+  }
+}

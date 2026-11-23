@@ -1,0 +1,16 @@
+{
+  "id": "DEF-G",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:38:27Z",
+  "target": "def Target (𝓑 : S₀) (F : Fm → Fm) : Prop := ∃ ψ, 𝓑 ⊢ ψ 🡘 ∼F ψ\n",
+  "usage": [
+    [
+      1186,
+      1363
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target defines a proposition parametrized by a type of sentences Fm (equipped with formal logical connectives), a type of proof systems S₀ (equipped with an entailment relation on Fm), a proof system 𝓑 of type S₀, and an arbitrary function F : Fm → Fm from sentences to sentences. It asserts that there exists a sentence ψ in Fm such that 𝓑 proves the formal biconditional ψ 🡘 ∼(F ψ)—that is, 𝓑 proves (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ), where ∼ is the formal negation and F ψ is the result of applying F to ψ. This is a property of the specific given system 𝓑 and function F (not a claim for all F). No further assumptions are required on 𝓑 (such as classical propositional logic, modus ponens, or consistency) or on F, and neither the other system type S nor the truth/falsehood constants are used.\"}",
+  "translation": "Target defines a proposition parametrized by a type of sentences Fm (equipped with formal logical connectives), a type of proof systems S₀ (equipped with an entailment relation on Fm), a proof system 𝓑 of type S₀, and an arbitrary function F : Fm → Fm from sentences to sentences. It asserts that there exists a sentence ψ in Fm such that 𝓑 proves the formal biconditional ψ 🡘 ∼(F ψ)—that is, 𝓑 proves (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ), where ∼ is the formal negation and F ψ is the result of applying F to ψ. This is a property of the specific given system 𝓑 and function F (not a claim for all F). No further assumptions are required on 𝓑 (such as classical propositional logic, modus ponens, or consistency) or on F, and neither the other system type S nor the truth/falsehood constants are used."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "X5",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:37:00Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)\n",
+  "usage": [
+    [
+      1338,
+      3622
+    ],
+    [
+      3016,
+      6224
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"`Target` is defined as the proposition asserting the following: for all types `Fm`, `S₀`, and `S`, equipped with logical connectives (`🡒`, `⋏`, `⋎`, `∼`) and logical constants (`⊤`, `⊥`) on `Fm`, and provability (entailment) relations on `Fm` for `S₀` and for `S`; for all proof systems `𝓑 : S₀` and `𝓢 : S` that are both classical propositional systems (each proves every classical propositional tautology in these connectives and is closed under modus ponens); and for all arbitrary functions `K : Fm → Fm` and `F : Fm → Fm`, if all five of the following hypotheses hold:\\n1. (`Def1 𝓑 K`) For every sentence `φ : Fm`, if `𝓑` proves `φ`, then `𝓑` proves `K φ`.\\n2. (`𝓑 ⪯ 𝓢`) Every sentence provable in `𝓑` is provable in `𝓢`.\\n3. (`Def2 𝓢 K`) For all sentences `φ, ψ : Fm`, `𝓢` proves `K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ)`.\\n4. (`Def5 𝓑 F`) There exists a sentence `ψ : Fm` such that `𝓑` proves `ψ 🡘 ∼(F ψ)` (where `a 🡘 b` abbreviates `(a 🡒 b) ⋏ (b 🡒 a)`).\\n5. For every sentence `φ : Fm`, `𝓢` proves `K ((F φ) 🡒 φ)`.\\n\\nThen there exists a sentence `ψ : Fm` such that `𝓢` proves `(K ψ) ⋏ (K (F ψ))` (the conjunction of `K ψ` and `K (F ψ)`, with `F ψ` unnegated).\\n\\nWhat is not required: the `ψ` in the conclusion is existentially quantified independently and is not required to be the same sentence as the witness `ψ` in hypothesis 4; neither `𝓑` nor `𝓢` is required to be consistent; `K` is not required to satisfy necessitation in `𝓢` or distribution (`Def2`) in `𝓑`, nor `Def3` or `Def4` in either system; and `K` and `F` are arbitrary functions from `Fm` to `Fm` with no syntactic or semantic restrictions beyond the stated hypotheses.\"}\n```",
+  "translation": "`Target` is defined as the proposition asserting the following: for all types `Fm`, `S₀`, and `S`, equipped with logical connectives (`🡒`, `⋏`, `⋎`, `∼`) and logical constants (`⊤`, `⊥`) on `Fm`, and provability (entailment) relations on `Fm` for `S₀` and for `S`; for all proof systems `𝓑 : S₀` and `𝓢 : S` that are both classical propositional systems (each proves every classical propositional tautology in these connectives and is closed under modus ponens); and for all arbitrary functions `K : Fm → Fm` and `F : Fm → Fm`, if all five of the following hypotheses hold:\n1. (`Def1 𝓑 K`) For every sentence `φ : Fm`, if `𝓑` proves `φ`, then `𝓑` proves `K φ`.\n2. (`𝓑 ⪯ 𝓢`) Every sentence provable in `𝓑` is provable in `𝓢`.\n3. (`Def2 𝓢 K`) For all sentences `φ, ψ : Fm`, `𝓢` proves `K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ)`.\n4. (`Def5 𝓑 F`) There exists a sentence `ψ : Fm` such that `𝓑` proves `ψ 🡘 ∼(F ψ)` (where `a 🡘 b` abbreviates `(a 🡒 b) ⋏ (b 🡒 a)`).\n5. For every sentence `φ : Fm`, `𝓢` proves `K ((F φ) 🡒 φ)`.\n\nThen there exists a sentence `ψ : Fm` such that `𝓢` proves `(K ψ) ⋏ (K (F ψ))` (the conjunction of `K ψ` and `K (F ψ)`, with `F ψ` unnegated).\n\nWhat is not required: the `ψ` in the conclusion is existentially quantified independently and is not required to be the same sentence as the witness `ψ` in hypothesis 4; neither `𝓑` nor `𝓢` is required to be consistent; `K` is not required to satisfy necessitation in `𝓢` or distribution (`Def2`) in `𝓑`, nor `Def3` or `Def4` in either system; and `K` and `F` are arbitrary functions from `Fm` to `Fm` with no syntactic or semantic restrictions beyond the stated hypotheses.",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The conclusion of Target omits the negation on F ψ: it asserts `∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)` instead of `∃ ψ, 𝓢 ⊢ K ψ ⋏ K (∼F ψ)`. Theorem 3 in the source concludes `S ⊢ Kψ ∧ K¬F(⌜ψ⌝)` (that there is a sentence ψ known to hold and known not to satisfy F). Dropping the negation reverses the second conjunct and makes Target false as stated (for example, taking 𝓑 = 𝓢 to be consistent classical propositional logic, K to be the identity, and F to be constantly ⊥ satisfies all hypotheses—with ψ = ⊤ witnessing Def5—while `∃ ψ, 𝓢 ⊢ ψ ⋏ ⊥` fails).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source states Theorem 3 for a specific first-order language L_EA with arithmetic, Gödel numbering, a formula F(x) of L_EA with one free variable, and a theory S extending EA (axiomatized by Σ ∪ KΣ, including PA and K1–K4). Target abstracts this to arbitrary classical propositional systems 𝓑 and 𝓢 and arbitrary functions K, F : Fm → Fm, replacing 'S includes EA' and the diagonal lemma with the abstract hypotheses Def1 𝓑 K, 𝓑 ⪯ 𝓢, Def2 𝓢 K, and Def5 𝓑 F (an idealization/generalization largely noted in the author's claim).\"\n    }\n  ],\n  \"summary\": \"Target diverges materially from Theorem 3 because its conclusion omits the negation on F ψ, asserting `K ψ ⋏ K (F ψ)` instead of `K ψ ⋏ K (∼F ψ)`, which contradicts the source theorem and renders the formal statement false.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The conclusion of Target omits the negation on F ψ: it asserts `∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)` instead of `∃ ψ, 𝓢 ⊢ K ψ ⋏ K (∼F ψ)`. Theorem 3 in the source concludes `S ⊢ Kψ ∧ K¬F(⌜ψ⌝)` (that there is a sentence ψ known to hold and known not to satisfy F). Dropping the negation reverses the second conjunct and makes Target false as stated (for example, taking 𝓑 = 𝓢 to be consistent classical propositional logic, K to be the identity, and F to be constantly ⊥ satisfies all hypotheses—with ψ = ⊤ witnessing Def5—while `∃ ψ, 𝓢 ⊢ ψ ⋏ ⊥` fails)."
+      },
+      {
+        "severity": "minor",
+        "description": "The source states Theorem 3 for a specific first-order language L_EA with arithmetic, Gödel numbering, a formula F(x) of L_EA with one free variable, and a theory S extending EA (axiomatized by Σ ∪ KΣ, including PA and K1–K4). Target abstracts this to arbitrary classical propositional systems 𝓑 and 𝓢 and arbitrary functions K, F : Fm → Fm, replacing 'S includes EA' and the diagonal lemma with the abstract hypotheses Def1 𝓑 K, 𝓑 ⪯ 𝓢, Def2 𝓢 K, and Def5 𝓑 F (an idealization/generalization largely noted in the author's claim)."
+      }
+    ],
+    "summary": "Target diverges materially from Theorem 3 because its conclusion omits the negation on F ψ, asserting `K ψ ⋏ K (F ψ)` instead of `K ψ ⋏ K (∼F ψ)`, which contradicts the source theorem and renders the formal statement false."
+  }
+}

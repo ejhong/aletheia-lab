@@ -21,9 +21,9 @@ Nothing about arithmetic, coding or quantifiers is built in. Every fact the sour
 (a Gödel sentence, the formalized second incompleteness theorem) and every principle about `K` appears as an
 explicit hypothesis of the statement that uses it.
 
-The last two statements (S2b′, S2e) are of a different kind. They exhibit systems, built from Peano arithmetic,
+The last two statements (S2b′, S2e) are of a different kind. They are about systems built from Peano arithmetic
 in which all hypotheses of an earlier statement but one hold and its conclusion fails. They show that the one
-hypothesis cannot be dropped.
+hypothesis cannot be dropped. S2e names its system; S2b′ only says that one exists.
 
 Source locators are in `amendments.md` (Amendment 2), keyed by the names used here (D11–D15, S2a–S2e).
 -/
@@ -124,19 +124,25 @@ def SecondIncompletenessProvisoCannotBeDropped : Prop :=
     (∀ φ, 𝓢 ⊢ K (K φ 🡒 F φ)) ∧
     ¬ 𝓢 ⊢ K (∼K (∼F ⊥))
 
-open FFL.FirstOrder FFL.FirstOrder.Arithmetic in
-/-- **S2e. Known factivity cannot be dropped from S2c and S2d.** There is a consistent system containing Peano
-arithmetic, with `K` and `F`, in which every hypothesis of S2c holds except that the knower knows its own
-factivity: the base is closed under necessitation, knowledge is closed under modus ponens and is factive, `F`
-has a Gödel sentence, and it is known sentence by sentence that being known coincides with `F` holding. In the
-same system some `p` is known to hold exactly when `∼p` is known, which S2d excludes when factivity is known. -/
+open FFL.FirstOrder FFL.FirstOrder.Arithmetic FFL.FirstOrder.ProvabilityAbstraction in
+/-- **S2e. Known factivity cannot be dropped from S2c and S2d.** Take `K` to be "Peano arithmetic proves", the
+standard provability predicate of Peano arithmetic, take `F` to be the same predicate, and take `𝓢` to be Peano
+arithmetic together with every sentence "if Peano arithmetic proves σ then σ". Then every hypothesis of S2c holds
+except that the knower knows its own factivity: the base (Peano arithmetic) is closed under necessitation, `𝓢`
+includes it, knowledge is closed under modus ponens and is factive, `F` has a Gödel sentence, and it is known
+sentence by sentence that being known coincides with `F` holding. Some `p` is known to hold exactly when `∼p` is
+known, which S2d excludes when factivity is known. `𝓢` is consistent, and this knower does not know its own
+factivity. -/
 def KnownFactivityCannotBeDropped : Prop :=
-  ∃ (𝓢 : ArithmeticTheory) (K F : ArithmeticSentence → ArithmeticSentence),
-    ClosedUnderNecessitation (𝗣𝗔 : ArithmeticTheory) K ∧ (𝗣𝗔 : ArithmeticTheory) ⪯ 𝓢 ∧
+  let K : ArithmeticSentence → ArithmeticSentence := fun σ => (𝗣𝗔 : ArithmeticTheory).standardProvability σ
+  let F : ArithmeticSentence → ArithmeticSentence := K
+  let 𝓢 : ArithmeticTheory := 𝗣𝗔 ∪ (𝗣𝗔 : ArithmeticTheory).localReflectionOn Set.univ
+  ClosedUnderNecessitation (𝗣𝗔 : ArithmeticTheory) K ∧ (𝗣𝗔 : ArithmeticTheory) ⪯ 𝓢 ∧
     KnowledgeClosedUnderMP 𝓢 K ∧ Factive 𝓢 K ∧
     HasGödelSentence (𝗣𝗔 : ArithmeticTheory) F ∧
     (∀ φ, 𝓢 ⊢ K (K φ 🡘 F φ)) ∧
     (∃ p, 𝓢 ⊢ K (K (∼p) 🡘 p)) ∧
-    Entailment.Consistent 𝓢
+    Entailment.Consistent 𝓢 ∧
+    ¬ KnowsOwnFactivity 𝓢 K
 
 end GodelArgument

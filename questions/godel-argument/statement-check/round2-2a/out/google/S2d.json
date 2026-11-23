@@ -1,0 +1,26 @@
+{
+  "id": "S2d",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:41:35Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K → Def3 𝓢 K → Def4 𝓢 K →\n    ∀ p : Fm, 𝓢 ⊢ ∼K (K (∼p) 🡘 p)\n",
+  "usage": [
+    [
+      1327,
+      3558
+    ],
+    [
+      2500,
+      10667
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target defines the following proposition: For all types Fm (of sentences), S₀, and S (of proof systems), equipped with propositional connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼, with biconditional φ 🡘 ψ abbreviating (φ 🡒 ψ) ⋏ (ψ 🡒 φ)) and truth constants (⊤ and ⊥) on Fm, and with provability relations for S₀ on Fm and for S on Fm; for all proof systems 𝓑 of type S₀ and 𝓢 of type S such that both 𝓑 and 𝓢 prove all classical propositional tautologies and are closed under modus ponens; and for every function K : Fm → Fm; if all five of the following hypotheses hold: (1) (Def1 𝓑 K) for every sentence φ in Fm, whenever 𝓑 proves φ, 𝓑 also proves K φ; (2) (𝓑 ⪯ 𝓢) every sentence provable in 𝓑 is also provable in 𝓢; (3) (Def2 𝓢 K) for all sentences φ and ψ in Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 ((K φ) 🡒 (K ψ)); (4) (Def3 𝓢 K) for every sentence φ in Fm, 𝓢 proves (K φ) 🡒 φ; and (5) (Def4 𝓢 K) for every sentence φ in Fm, 𝓢 proves K ((K φ) 🡒 φ); then for every sentence p in Fm, 𝓢 proves ∼(K ((K (∼p)) 🡘 p)), i.e., the negation of K applied to the biconditional between K (∼p) and p. What is not required: neither 𝓑 nor 𝓢 is assumed to be consistent; closure under φ ↦ K φ (Def1) is assumed only for 𝓑 and not for 𝓢, whereas Def2, Def3, and Def4 are assumed only for 𝓢 and not for 𝓑; Def5 is not assumed; no extra structure (such as arithmetic, quantifiers, or definability of K) is assumed; and p is an arbitrary sentence in Fm with no hypotheses on it.\"}",
+  "translation": "Target defines the following proposition: For all types Fm (of sentences), S₀, and S (of proof systems), equipped with propositional connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼, with biconditional φ 🡘 ψ abbreviating (φ 🡒 ψ) ⋏ (ψ 🡒 φ)) and truth constants (⊤ and ⊥) on Fm, and with provability relations for S₀ on Fm and for S on Fm; for all proof systems 𝓑 of type S₀ and 𝓢 of type S such that both 𝓑 and 𝓢 prove all classical propositional tautologies and are closed under modus ponens; and for every function K : Fm → Fm; if all five of the following hypotheses hold: (1) (Def1 𝓑 K) for every sentence φ in Fm, whenever 𝓑 proves φ, 𝓑 also proves K φ; (2) (𝓑 ⪯ 𝓢) every sentence provable in 𝓑 is also provable in 𝓢; (3) (Def2 𝓢 K) for all sentences φ and ψ in Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 ((K φ) 🡒 (K ψ)); (4) (Def3 𝓢 K) for every sentence φ in Fm, 𝓢 proves (K φ) 🡒 φ; and (5) (Def4 𝓢 K) for every sentence φ in Fm, 𝓢 proves K ((K φ) 🡒 φ); then for every sentence p in Fm, 𝓢 proves ∼(K ((K (∼p)) 🡘 p)), i.e., the negation of K applied to the biconditional between K (∼p) and p. What is not required: neither 𝓑 nor 𝓢 is assumed to be consistent; closure under φ ↦ K φ (Def1) is assumed only for 𝓑 and not for 𝓢, whereas Def2, Def3, and Def4 are assumed only for 𝓢 and not for 𝓑; Def5 is not assumed; no extra structure (such as arithmetic, quantifiers, or definability of K) is assumed; and p is an arbitrary sentence in Fm with no hypotheses on it.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Target faithfully formalizes the author's abstract lemma about K: for any classical propositional systems 𝓑 ⪯ 𝓢 satisfying the four epistemic hypotheses (necessitation in 𝓑, and distribution, factivity, and known factivity in 𝓢), 𝓢 proves ∼K (K (∼p) 🡘 p) for every sentence p. This accurately matches the claimed statement within the declared abstract setting.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Target faithfully formalizes the author's abstract lemma about K: for any classical propositional systems 𝓑 ⪯ 𝓢 satisfying the four epistemic hypotheses (necessitation in 𝓑, and distribution, factivity, and known factivity in 𝓢), 𝓢 proves ∼K (K (∼p) 🡘 p) for every sentence p. This accurately matches the claimed statement within the declared abstract setting."
+  }
+}

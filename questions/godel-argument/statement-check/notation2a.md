@@ -13,4 +13,7 @@ These statements use only the abstract part of the FormalizedFormalLogic "Founda
 - `𝓑 ⪯ 𝓢`: every sentence provable in `𝓑` is provable in `𝓢`.
 - `¬ 𝓢 ⊢ φ`: the system `𝓢` does not prove `φ`. `Entailment.Consistent 𝓢`: `𝓢` does not prove every sentence.
 - Two statements are about first-order arithmetic. `ArithmeticSentence`: a closed formula of first-order arithmetic. `ArithmeticTheory`: a set of arithmetic sentences used as axioms; `T ⊢ σ` means σ is derivable from T in classical first-order logic. `𝗣𝗔`: Peano arithmetic. In those statements `K` and `F` are arbitrary functions from arithmetic sentences to arithmetic sentences; they need not be given by formulas.
+- `T.standardProvability σ`, for an arithmetic theory `T` given by a Δ₁ definition of its axioms (such as `𝗣𝗔`): the arithmetic sentence `Prov_T(⌜σ⌝)`, "T proves σ", built from the standard Σ₁ provability predicate of `T` and the Gödel numeral of σ.
+- `T.localReflectionOn Set.univ`: the set of all sentences `Prov_T(⌜σ⌝) 🡒 σ`, one for every sentence σ. `A ∪ B`: union of two sets of axioms.
+- `let x : A := e` followed by a statement: `x` abbreviates `e` in that statement.
 

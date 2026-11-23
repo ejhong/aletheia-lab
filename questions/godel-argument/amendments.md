@@ -151,3 +151,24 @@ New rows for the statements table:
 A fourth planted error is added for round 2: S2e with known factivity put back among the conjuncts, which
 contradicts S2c. All items are re-checked in round 2, since the definitions changed. A proof sketch of each
 revised and new statement was compiled first (`explore/Stage2Sketch.lean`, exploratory).
+
+**Round 2 (2026-11-23), and what changed.** Inputs and outputs are frozen under `statement-check/round2-2a/`.
+Cost $4.87 at list price.
+
+- Planted errors: both checkers caught all four.
+- D11–D14, S2a, S2a′, S2b and S2d: `faithful` or `faithful_with_caveats` from both. The changes after round 1
+  resolved the divergences on D11, S2a, S2b and S2d.
+- S2c: OpenAI `faithful_with_caveats`; Google `divergent`, for two limits declared above (no quantifier over
+  machines inside the language; no arithmetic or EA_T). Google had rated the same points minor in round 1.
+- S2b′: OpenAI `divergent`; Google `faithful_with_caveats`. S2e: both `divergent`.
+
+| Finding | Response |
+|---|---|
+| S2c (Google, major): proving a contradiction for each fixed F is weaker than refuting the single sentence ∃e K(K = F_e) in EA_T. | Accepted as an unresolved divergence, carried into the results. S2c is the abstract, sentence-by-sentence counterpart of Theorem 6. It is not Theorem 6. Closing the gap is tier 2B. |
+| S2e (both, major): with K and F arbitrary functions and only "there exists", the statement is satisfied by contrived choices that have nothing to do with provability or with a machine's code (Google gave one). | Accepted. S2e no longer says "there exist K, F". It names them: K and F are Peano arithmetic's standard provability predicate, a formula that defines a recursively enumerable set, and 𝓢 is Peano arithmetic with local reflection. A conjunct is added: this K does not know its own factivity. |
+| S2e, S2b′ (both): compared with the passages, neither is something the sources state. | Agreed. Both are the lab's own statements about the hypotheses of S2c, S2d and S2b. For round 3 they are checked the way S2d was in round 2: against the lab's own claim of what they say, with the passages as context only. |
+| S2e (both): with F the same as K, "it is known that being known coincides with F" is knowledge of a tautology. | True, and kept. When the knower is by definition a machine's provability predicate, that it coincides with that machine is trivially known. The content of S2e is in the other conjuncts. It is a much smaller thing than Alexander's theorem, and is reported as such. |
+
+Round 3 re-checks only S2b′, S2e and the planted error that mimics S2e. The other items are unchanged since
+round 2. A trial build of proofs for every draft statement passed before round 3 (`explore/Stage2Sketch.lean`,
+exploratory).
