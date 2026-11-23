@@ -153,13 +153,14 @@ def dust():
     """NGRIP: ammonium above, dust (calcium) below, across the onset. Exploratory series from explore/volcanic.json."""
     rows = json.load(open(Q / "explore" / "volcanic.json"))["bins20_NGRIP"]
     lo, hi = 12500, 13300
-    W, left, right, ph, gap, top = 720, 44, 692, 110, 46, 26
+    W, left, right, ph, gap, top = 720, 44, 692, 112, 46, 26
     H = top + 2 * ph + gap + 44
     sx = lambda a: left + (hi - a) / (hi - lo) * (right - left)
     o = [f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-label="Ammonium and dust across the start of the Younger Dryas in NGRIP" xmlns="http://www.w3.org/2000/svg">']
     for p, (key, title, unit, ymax, yticks) in enumerate((("NH4", "Ammonium", "µg/kg", 60, (0, 25, 50)), ("Ca", "Dust (calcium)", "µg/kg", 340, (0, 150, 300)))):
         y0 = top + p * (ph + gap)
         sy = lambda v: y0 + ph - min(v, ymax) / ymax * ph
+        o.append(f'<rect class="c-band" x="{sx(12850):.1f}" y="{y0}" width="{sx(12750) - sx(12850):.1f}" height="{ph}"/>')
         for t in yticks:
             o.append(f'<line class="{"c-zero" if t == 0 else "c-grid"}" x1="{left}" x2="{right}" y1="{sy(t):.1f}" y2="{sy(t):.1f}"/>')
             o.append(f'<text class="c-tick" x="{left - 6}" y="{sy(t) + 4:.1f}" text-anchor="end">{t}</text>')
@@ -176,13 +177,137 @@ def dust():
             o.append(f'<text class="c-tick" x="{sx(t):.1f}" y="{y0 + ph + 15}" text-anchor="middle">{num(t, 0)}</text>')
         o.append(f'<line class="c-onset" x1="{sx(ONSET):.1f}" x2="{sx(ONSET):.1f}" y1="{y0 - 2}" y2="{y0 + ph}"/>')
         if p == 0:
-            o.append(f'<text class="c-label-sm" x="{sx(ONSET + 8):.1f}" y="{y0 + 11}" text-anchor="end">the abrupt shift, 12,896</text>')
-    o.append(f'<text class="c-axis" x="{left}" y="{H - 6}">Years before 2000 CE. Older ice on the left. Copper bars come after the shift.</text>')
+            o.append(f'<text class="c-label-sm" x="{sx(ONSET + 8):.1f}" y="{y0 + 12}" text-anchor="end">abrupt shift, 12,896</text>')
+            o.append(f'<text class="c-label-sm" x="{sx(12800):.1f}" y="{y0 + 12}" text-anchor="middle">both climb</text>')
+            o.append(f'<text class="c-label-sm" x="{sx(12615):.1f}" y="{y0 + 12}" text-anchor="middle">ammonium falls back</text>')
+        else:
+            o.append(f'<text class="c-label-sm" x="{sx(12615):.1f}" y="{y0 + 12}" text-anchor="middle">dust stays high</text>')
+    o.append(f'<text class="c-axis" x="{left}" y="{H - 6}">Years before 2000 CE. Older ice on the left. Copper bars come after the shift; shaded band is the ~100-year high.</text>')
     o.append("</svg>")
     figure("dust", "Ammonium and dust across the start of the Younger Dryas in NGRIP", "\n".join(o),
-           "Exploratory. Dust in the ice rises as the climate turns cold, dry and windy. After the abrupt shift it climbs for about a "
-           "century before settling at its Younger Dryas level, and ammonium climbs with it. Ammonium then falls back part of the way; "
-           "dust does not. The other two cores show the same.")
+           "Exploratory. Dust rises as the climate turns cold, dry and windy, climbing for about a century after the abrupt shift "
+           "and then staying high. Ammonium climbs alongside it during the shaded century, then drops back by roughly half while dust "
+           "remains high. That decoupling is why thinner snow and drier winds alone cannot explain the peak; the other two cores show the same.")
+
+
+def flux():
+    """Late-glacial NGRIP 20-year windows: concentration excess vs snowfall-adjusted flux proxy (explore/after.json)."""
+    rows = json.load(open(Q / "explore" / "after.json"))["N20_excess_times_layer_thickness_10300_to_15000"]
+    by_e = sorted(rows, key=lambda r: -r["E"])
+    by_f = sorted(rows, key=lambda r: -r["E_x_layer"])
+    top_n = 8
+    W, row_h, top = 720, 28, 38
+    H = top + top_n * row_h + 36
+    c1_lab, c1_x0, c1_x1 = 0, 92, 306
+    c2_lab, c2_x0, c2_x1 = 362, 454, 668
+    max_e = max(r["E"] for r in by_e)
+    max_f = max(r["E_x_layer"] for r in by_f)
+    o = [f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-label="Late-glacial NGRIP windows ranked by concentration excess and by snowfall-adjusted flux proxy" xmlns="http://www.w3.org/2000/svg">']
+    o.append(f'<text class="c-group" x="{c1_x0}" y="16">Concentration excess</text>')
+    o.append(f'<text class="c-sub" x="{c1_x1 + 36}" y="16" text-anchor="end">µg/kg</text>')
+    o.append(f'<text class="c-group" x="{c2_x0}" y="16">Flux proxy</text>')
+    o.append(f'<text class="c-sub" x="{c2_x1 + 44}" y="16" text-anchor="end">E × cm/yr</text>')
+    o.append(f'<line class="c-zero" x1="{c1_x0}" x2="{c1_x0}" y1="{top - 6}" y2="{top + top_n * row_h - 4}"/>')
+    o.append(f'<line class="c-zero" x1="{c2_x0}" x2="{c2_x0}" y1="{top - 6}" y2="{top + top_n * row_h - 4}"/>')
+    for i in range(top_n):
+        y = top + i * row_h
+        cy = y + row_h / 2
+        re, rf = by_e[i], by_f[i]
+        for r, val, vmax, lx, x0, x1 in (
+            (re, re["E"], max_e, c1_lab, c1_x0, c1_x1),
+            (rf, rf["E_x_layer"], max_f, c2_lab, c2_x0, c2_x1),
+        ):
+            on = int(r["start"]) == 12750
+            bw = val / vmax * (x1 - x0)
+            st = int(r["start"])
+            label = f"{st:,}" + (" · YD" if on else "")
+            tip = esc(f"Window {st:,}–{st + 300:,} b2k|Peak bin {int(r['E_age']):,} b2k|Excess {num(r['E'])} µg/kg|Excess × layer thickness {num(r['E_x_layer'])}")
+            o.append(f'<g class="c-mark" tabindex="0" data-tip="{tip}">'
+                     f'<rect class="c-hit" x="{lx}" y="{y}" width="{x1 - lx + 48}" height="{row_h}"/>'
+                     f'<text class="{"c-label" if on else "c-tick"}" x="{x0 - 8}" y="{cy + 4:.1f}" text-anchor="end">{esc(label)}</text>'
+                     f'<rect class="c-bar{" is-on" if on else ""}" x="{x0}" y="{y + 5}" width="{bw:.1f}" height="{row_h - 10}" rx="1.5"/>'
+                     f'<text class="c-value" x="{x0 + bw + 6:.1f}" y="{cy + 4:.1f}">{num(val, 1)}</text></g>')
+    o.append(f'<text class="c-axis" x="0" y="{H - 8}">Top 8 of 16 NGRIP 20-year windows (10,300–15,000 b2k). Copper bar is the Younger Dryas onset window (12,750–13,050).</text>')
+    o.append("</svg>")
+    figure("flux", "Concentration excess versus snowfall-adjusted flux proxy in NGRIP late-glacial windows", "\n".join(o),
+           "Exploratory. Because annual ice layers thin after the onset (from 4.01 to 3.01 cm/yr in NGRIP, and 2.75 cm/yr at the "
+           "3-year peak), the same fallout produces a higher concentration. Scaling each late-glacial window's excess by its local "
+           "layer thickness drops the Younger Dryas window from 2nd to 5th of 16. Hover or focus a bar for values.")
+
+
+def gisp2():
+    """Single-core depth stratigraphy in GISP2 (1719.5 m to 1703.5 m), no timescale conversion needed."""
+    lo_m, hi_m = 1703.5, 1719.5  # older/deeper on the left (1719.5), younger/shallower on the right (1703.5)
+    W, left, right = 720, 44, 692
+    H = 212
+    sx = lambda m: left + (hi_m - m) / (hi_m - lo_m) * (right - left)
+    y_axis = 128
+    o = [f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-label="Order of sulphate, cited platinum depth, and ammonium high inside the GISP2 ice core" xmlns="http://www.w3.org/2000/svg">']
+    # Band for the century-long NH4 high (1710.7 to 1708.0 m)
+    o.append(f'<rect class="c-band" x="{sx(1710.7):.1f}" y="28" width="{sx(1708.0) - sx(1710.7):.1f}" height="{y_axis - 28}"/>')
+    o.append(f'<text class="c-group" x="{sx(1709.35):.1f}" y="20" text-anchor="middle">Century-long NH₄ high (1710.7–1708.0 m)</text>')
+    o.append(f'<line class="c-zero" x1="{left}" x2="{right}" y1="{y_axis}" y2="{y_axis}"/>')
+    for m in (1719, 1716, 1713, 1710, 1707, 1704):
+        o.append(f'<line class="c-grid" x1="{sx(m):.1f}" x2="{sx(m):.1f}" y1="{y_axis}" y2="{y_axis + 6}"/>')
+        o.append(f'<text class="c-tick" x="{sx(m):.1f}" y="{y_axis + 20}" text-anchor="middle">{m} m</text>')
+    # Events: (depth, above/below, y_label, anchor, title, sub, is_highlight, tip)
+    events = [
+        (1718.6, "above", 52, "start", "Sulphate spike", "649 ppb · 13,031 BP", False,
+         "1718.6 m (~13,031 BP)|Sulphate 649 ppb (background 58); NH4 9.7 ppb"),
+        (1713.8, "above", 86, "end", "Sulphate spike", "462 ppb · 12,930 BP", False,
+         "1713.8 m (~12,930 BP)|Sulphate 462 ppb (background 60); NH4 6.8 ppb"),
+        (1712.25, "below", 174, "middle", "Cited depth (~1712.2 m)", "NH₄ 31.4 ppb · dust rises", False,
+         "1712.2–1712.3 m (~12,888–12,890 BP)|Reported platinum depth (unverified); NH4 31.4 ppb, surrounded by 9–15 ppb"),
+        (1708.85, "above", 56, "middle", "Peak NH₄ sample", "77.3 ppb · 12,771 BP", True,
+         "1708.8–1708.9 m (~12,771–12,775 BP)|Largest NH4 sample in the window: 77.3 ppb (3.4 m above 1712.2 m)"),
+        (1704.4, "below", 174, "end", "Largest sulphate", "986 ppb · 12,605 BP", False,
+         "1704.4 m (~12,605 BP)|Sulphate 986 ppb (background 181); well inside the Younger Dryas"),
+    ]
+    # Bracket showing 3.4 m gap between 1712.25 m and 1708.85 m
+    x_pt, x_pk = sx(1712.25), sx(1708.85)
+    o.append(f'<line class="c-whisker" x1="{x_pt:.1f}" x2="{x_pk:.1f}" y1="{y_axis - 16}" y2="{y_axis - 16}"/>')
+    o.append(f'<text class="c-label-sm" x="{(x_pt + x_pk) / 2:.1f}" y="{y_axis - 22}" text-anchor="middle">3.4 m higher (~115 yr later)</text>')
+    for m, side, yl, anchor, title, sub, hi, tip in events:
+        x = sx(m)
+        y_end = yl + 16 if side == "above" else yl - 14
+        o.append(f'<g class="c-mark" tabindex="0" data-tip="{esc(tip)}">'
+                 f'<rect class="c-hit" x="{x - 14:.1f}" y="28" width="28" height="{H - 44}"/>'
+                 f'<line class="{"c-ref" if hi else "c-leader"}" x1="{x:.1f}" x2="{x:.1f}" y1="{y_axis}" y2="{y_end}"/>'
+                 f'<circle class="{"c-dot" if hi else "c-dot c-hollow"}" cx="{x:.1f}" cy="{y_axis}" r="{"5.5" if hi else "4.5"}"/>'
+                 f'<text class="c-label-sm" x="{x:.1f}" y="{yl}" text-anchor="{anchor}">{esc(title)}</text>'
+                 f'<text class="c-sub" x="{x:.1f}" y="{yl + 14}" text-anchor="{anchor}">{esc(sub)}</text></g>')
+    o.append(f'<text class="c-axis" x="{left}" y="{H - 4}">GISP2 depth in metres (older ice on the left; ages from Mayewski et al. 1997). All ions come from the same samples.</text>')
+    o.append("</svg>")
+    figure("gisp2", "Order of sulphate spikes, cited platinum depth, and ammonium high inside GISP2", "\n".join(o),
+           "Single-core stratigraphy in GISP2, needing no timescale comparison. At 1712.2–1712.3 m—the depth supporters are "
+           "reported to cite for platinum and fire (unverified)—ammonium is a modest 31.4 ppb, bordered by 9–15 ppb samples. "
+           "The century-long ammonium high sits 2 to 3.5 metres higher in the core, peaking at 77.3 ppb at 1708.8–1708.9 m.")
+
+
+def verdict():
+    rows = [
+        ("The first claim · unusual high near the onset",
+         "Greenland ice holds an unusual ammonium high near the start of the Younger Dryas.",
+         "Ranks 3rd to 7th of 131–323 windows over 20–60 years in all three cores, and 1st to 3rd in raw concentration. Short of the 1% 'exceptional' bar.",
+         "is-yes", "Unusual (top 5%)"),
+        ("The second claim · an onset fire spike",
+         "A cosmic impact or airburst lit a sudden firestorm (or made ammonia) when the cold began.",
+         "Ammonium is low at the onset (12,896 b2k) and for 30–40 years after. Single years are ordinary; in GISP2 the big high sits 2–3.5 m above the cited platinum depth.",
+         "is-no", "Poor fit"),
+        ("The broader hypothesis · whether an impact happened",
+         "A cosmic impact triggered the Younger Dryas.",
+         "This study checks Greenland ammonium only. It removes onset fire smoke as supporting evidence, but cannot rule out an impact on ice or ocean, nor does it test platinum or terrestrial proxies.",
+         "is-open", "Not settled here"),
+    ]
+    out = ['<div class="verdict" role="list" aria-label="Three claims and where each stands">']
+    for kicker, text, note, cls, status in rows:
+        out.append('<div class="verdict-row" role="listitem">')
+        out.append(f'<div><p class="verdict-kicker">{esc(kicker)}</p><p class="verdict-text">{esc(text)}</p>'
+                   f'<p class="verdict-note">{esc(note)}</p></div>')
+        out.append(f'<p class="verdict-status {cls}"><span class="dot"></span>{esc(status)}</p>')
+        out.append('</div>')
+    out.append('</div>\n')
+    (OUT / "verdict.html").write_text("\n".join(out))
 
 
 def tiles():
@@ -198,13 +323,17 @@ def tiles():
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    verdict()
     tiles()
     profile()
     long_view()
     ranks()
     dust()
+    flux()
+    gisp2()
     print("wrote", ", ".join(sorted(p.name for p in OUT.iterdir())), [p.stat().st_size for p in sorted(OUT.iterdir())])
 
 
 if __name__ == "__main__":
     main()
+
