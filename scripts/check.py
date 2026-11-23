@@ -11,12 +11,16 @@ errors = []
 
 
 def first_commit_time(path):
-    """Unix time of the earliest commit that added anything under path, or None if uncommitted."""
+    """Unix time of the earliest commit that added anything under path, or None if uncommitted.
+
+    --full-history looks down every side of a merge. Without it git follows one parent only, and a question
+    branch that was merged alongside a squashed copy of itself would be skipped.
+    """
     out = subprocess.run(
-        ["git", "log", "--diff-filter=A", "--format=%ct", "--reverse", "--", str(path)],
+        ["git", "log", "--full-history", "--diff-filter=A", "--format=%ct", "--", str(path)],
         cwd=ROOT, capture_output=True, text=True, check=True,
     ).stdout.split()
-    return int(out[0]) if out else None
+    return min(map(int, out)) if out else None
 
 
 def sha(path):

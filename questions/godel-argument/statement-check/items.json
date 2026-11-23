@@ -183,8 +183,12 @@
    "names": [
     "PenroseTuring"
    ],
-   "passages": [],
-   "claim": "No passage available; back-translation only."
+   "passages": [
+    "P-P73",
+    "P-P74",
+    "P-P75"
+   ],
+   "claim": "This statement captures the mathematical part of Penrose's argument, steps (H) to (M) and the sentence that follows them: a sound procedure A for ascertaining that computations do not stop fails to ascertain the non-stopping of some computation C_k(k) that in fact does not stop. 'A stops on (n, n)' is rendered as a recursively enumerable property of n. The epistemic step ('if we know that A is sound, then we know that C_k(k) does not stop') is not claimed."
   }
  ],
  "decoys": [

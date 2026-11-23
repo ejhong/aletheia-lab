@@ -1,6 +1,6 @@
 # Machine-check the Gödel argument: Stage 1 results
 
-Issue #19 · Lane: proof · Protocol locked 2026-11-22T17:49:01Z · No amendments
+Issue #19 · Lane: proof · Protocol locked 2026-11-22T17:49:01Z · One amendment (2026-11-23)
 
 ## Answer
 
@@ -33,6 +33,11 @@ system F whose axioms can be listed mechanically.
 So the argument establishes "not a machine you know to be sound". It does not establish "not a machine". Whether
 people are well modelled by such a K is outside what was checked. This is no verdict on ORCH-C040.
 
+Penrose words his own conclusion the same way. His 𝒢 reads: "Human mathematicians are not using a knowably sound
+algorithm in order to ascertain mathematical truth" (*Shadows of the Mind*, p. 76). On the same page he calls the
+further claim, that there is "something fundamentally non-computational in our thought processes", "the stronger
+deduction", and says that chapter 3 will make the case for it. Stage 1 covers 𝒢, not that further argument.
+
 ## Results table
 
 "Premises required" lists every assumption in the theorem statement. F is always a recursively enumerable set of
@@ -53,7 +58,7 @@ axioms unless noted; "includes basic arithmetic" means it proves every theorem o
 | S1c‴. A sound T plus the assertions of T's soundness is sound | `soundPlusItsSoundnessIsSound` | T's axioms true; T has a Δ₁ presentation | Proved | the lab's contrast case; applies Chalmers 1995, §2, step (2) | `models_localReflectionOn` |
 | S1d. Gödel's disjunction | `godelDisjunction` | everything in K is true | Proved | Koellner 2018a, p. 349, quoting Gödel 1951, p. 310 | `craig_consistent_unprovable_of_RE` |
 | S1d′. Variant for sets not closed under deduction | `godelDisjunctionRE` | everything in K is true | Proved | as S1d | `exists_true_but_unprovable_sentence_of_RE_of_sigma1sound` |
-| S1e. Penrose's argument in halting form | `penroseTuring` | A is recursively enumerable; whenever A certifies n, computation n does not halt on input n | Proved | Penrose 1994, §2.5 (`unverified`: book not in hand) | none; Mathlib's `Nat.Partrec.Code` |
+| S1e. Penrose's argument in halting form | `penroseTuring` | A is recursively enumerable; whenever A certifies n, computation n does not halt on input n | Proved | Penrose 1994, §2.5, pp. 73–75, steps (H) to (M) | none; Mathlib's `Nat.Partrec.Code` |
 
 **Non-vacuity.** For every statement that starts from assumptions, `lean/GodelArgument/NonVacuity.lean` proves
 that the assumptions can hold together, with Peano arithmetic as the witness. For S1c and S1c′ it shows that the
@@ -72,7 +77,8 @@ deliberately wrong statements were mixed in. Details: `statement-check/REPORT.md
 
 - **Planted errors:** in the final round both checkers caught all three. In round 1 Google rated one as minor;
   that decoy was badly chosen (it was logically equivalent to the correct statement) and was replaced.
-- **Real items:** of 17 with a source passage, 15 ended as `faithful` or `faithful_with_caveats` from both.
+- **Real items:** of 17, 15 ended as `faithful` or `faithful_with_caveats` from both. Sixteen were compared with
+  their passages before the lock. The seventeenth, S1e, was compared on 2026-11-23 under Amendment 1.
 - **The check changed the statements.** Five were rewritten after round 1, and one of the rewrites again after
   round 2. The protocol lists each change.
 
@@ -82,7 +88,18 @@ deliberately wrong statements were mixed in. Details: `statement-check/REPORT.md
 |---|---|---|
 | S1a′ | OpenAI: `divergent` against Gödel's remark as reported by Wang. The remark is about *knowing* which machine one is and *knowing* that it works correctly. The Lean says K *is* F's theorem set and *contains* a consistency sentence. Google: `faithful_with_caveats`. | S1a′ is a theorem about arithmetic, offered as a stand-in. It is not a formalization of Gödel's remark. That needs a knowledge operator (Koellner's Theorem 6; Stage 2). |
 | S1d′ | OpenAI: `divergent`. "K is not recursively enumerable" is not the passage's "no formal system has K as its theorem set". Google: `faithful_with_caveats`. | S1d′ is a variant. S1d is the statement tied to the passage. |
-| S1e | Not checked against a passage. *Shadows of the Mind* §2.5 was not in hand; Penrose's 1996 reply (§2.1) confirms only that §2.5 exhibits a computation "C_k(k)" obtained from an algorithm A. | S1e is a correct theorem of the right general shape. Whether it matches Penrose's text is unverified. |
+
+**S1e against Penrose's text** (Amendment 1). Both checkers: `faithful_with_caveats`, no major divergence. Their
+caveats, all rated minor:
+
+- Penrose's k is a particular number: the index of the computation n ↦ A(n, n), so that A(k, k) and C_k(k) are
+  the same computation. The Lean says only that some such k exists.
+- Penrose's A takes a pair (q, n) and is sound for every pair. The Lean's A is a property of one number, sound on
+  the diagonal only. This weakens the assumption, so the theorem is, if anything, stronger.
+- Penrose speaks of a listing of all computations. The Lean fixes one: Mathlib's numbering of partial recursive
+  functions.
+- The step "if we know that A is sound, then we know that C_k(k) does not stop" is not claimed. It cannot be said
+  without a knowledge operator.
 
 **Caveats raised on most items**, rated minor by both checkers:
 
@@ -101,8 +118,11 @@ deliberately wrong statements were mixed in. Details: `statement-check/REPORT.md
   axiom and cannot know its own code (Reinhardt), needs Stage 2.
 - **Penrose's second argument is not covered.** The "new argument" of *Shadows* ch. 3, and Koellner's analysis of
   it in a type-free theory of truth, are Stage 2C. Chalmers's reply to it (S1c) is covered.
-- **Secondary quotation.** Penrose's conclusion (p. 76) is quoted through Koellner, and Gödel's disjunction through
-  Koellner. Neither book was in hand.
+- **Secondary quotation.** Gödel's disjunction and Gödel's remark reported by Wang are quoted through Koellner;
+  those books were not in hand. Penrose's conclusion (p. 76) was first quoted through Koellner and has since been
+  compared with the book: the wording is identical.
+- **Transcription.** The passages from *Shadows of the Mind* were transcribed by an AI model from photographs of
+  pp. 72–77. They could not be checked mechanically, as the other passages were.
 - **Idealization.** Nothing here tests whether a person is a consistent, deductively closed set of sentences.
 - **Checked by models.** The statement check was done by language models, calibrated only by three planted errors.
 - **Exploration before the lock.** As the protocol allows, a proof sketch of each statement was compiled before
@@ -111,15 +131,24 @@ deliberately wrong statements were mixed in. Details: `statement-check/REPORT.md
 
 ## Amendments
 
-None.
+**Amendment 1 (2026-11-23).** Eugene supplied photographs of *Shadows of the Mind*, pp. 72–77. The amendment was
+written and pushed before the run. It fixed the rule in advance: if both checkers found no major divergence, S1e
+would stand; if either found one, a closer statement would be written, checked, locked and proved. Both found
+none, so S1e stands as locked and no statement was added. Before the run I had recorded my own expectation that
+the bare "some k exists" might be rated major; neither checker rated it so.
+
+The amendment also records two slips of counting. The locked protocol says "fourteen statements" where there are
+thirteen. The first version of this document said "of 17 with a source passage, 15" where the figures at the time
+were 14 of 16.
 
 ## Spending
 
-$12.38 of the $50 budget, all on the statement check (`SPENDING.md`).
+$12.70 of the $50 budget, all on the statement check (`SPENDING.md`). Amendment 1 cost $0.32 of it.
 
 ## Who did the work
 
-AI agents did this work, directed by Eugene Jhong. All dates are 2026-11-22.
+AI agents did this work, directed by Eugene Jhong, who also supplied the photographs of Penrose's book. Dates are
+2026-11-22, and 2026-11-23 for Amendment 1.
 
 - **Anthropic, Claude Opus 5.5:** first assessment of the brief; issue #19.
 - **Anthropic, Claude Fable 5.2:** second assessment, source reading, statements, protocol, statement-check
