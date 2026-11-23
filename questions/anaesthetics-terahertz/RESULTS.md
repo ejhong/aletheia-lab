@@ -9,6 +9,33 @@
 
 ---
 
+## A second model's check (added 23 November 2026)
+
+Claude (Anthropic) spot-checked this study the day it was run; the record is in
+[`replication/fable/`](./replication/fable/README.md). The numbers in this report were recomputed from the results
+table and match, and the empty-protein spectrum was rebuilt with separate code and matches to the last digit. The
+gas placements were not repeated. The check agrees that the down-or-up split is set by the gas and not by the
+protein, and that the calculation gives no reason to single out tubulin. It reads four things more cautiously than
+the text below, which is left as the first model wrote it:
+
+1. **This is a reconstruction, not the paper's exact calculation.** The published formulas are incomplete and not
+   consistent with each other, the structure and gas placements differ from the original, the shifts found here
+   are far larger than the paper's, and the paper's link between shift and drug strength was not reproduced.
+2. **The rotation finding (point 4 and section 4.2) depends on one reading of the paper's description.** A second
+   reading of the same sentence gives a method that does not change when the structure is turned. The authors'
+   program is not public. "Symmetry bug" and "flaw" below should be read as a weakness of the method as this study
+   read it, not as a demonstrated error in the published numbers.
+3. **On the paper's own measure the wider panel does not break down.** Scored by the largest decrease
+   (`D_down_613`, section 3 below), anaesthetics outscore look-alikes 89% of the time on tubulin 1JFF, and molecular
+   size does not account for it. The GABA-A channel (85%) and albumin (83%) do about as well; the small proteins
+   and the random rings do worse (68 to 75%). So the model responds to where a gas sits in a large protein, but
+   not to tubulin in particular. The comparison is exploratory.
+4. **"Does not support Orch OR" is right; "refutes" would not be.** The result removes this calculation as
+   evidence for microtubules in particular. It is not evidence against them, and the model contains none of the
+   theory's quantum physics.
+
+---
+
 ## 1. Protocol Compliance & Pre-Registered Verdict
 
 - **Lock:** `questions/anaesthetics-terahertz/protocol.lock` (`sha256: 750113e2a758`, locked `2026-11-23T22:50:37Z`, committed in `1936be2` in its own commit before running any ligand-bound protein calculations).

@@ -1,34 +1,42 @@
 <div class="verdict">
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">Craddock&#x27;s original 8 vs 2 gases</p>
-    <p class="verdict-text">Does the model reproduce the 613 THz downward-vs-upward sign split on the original 10 gases?</p>
-    <p class="verdict-note">Yes — on tubulin (7 of 8 clinical anaesthetics downward, 2 of 2 non-anaesthetics F6 and TFMB upward; AUC 0.94). It reproduces identically in egg-white lysozyme (7/8, 2/2; AUC 0.94) and in 81 randomly scattered rings (7/8, 2/2; AUC 0.88).</p>
+    <p class="verdict-kicker">The ten gases of the 2017 paper</p>
+    <p class="verdict-text">Does the rebuilt calculation give the reported split, with anaesthetics slowing the vibration and look-alike gases speeding it up?</p>
+    <p class="verdict-note">Mostly. 7 of the 8 anaesthetics slow it and both look-alike gases speed it up. The paper&#x27;s other result, that stronger drugs shift it more, did not come out (correlation +0.12). The rebuilt version uses a different structure, different positions for the gases and a different estimate of their properties, and its shifts are far larger than the paper&#x27;s, so this is not a full reproduction.</p>
   </div>
-  <p class="verdict-status is-open"><span class="dot" aria-hidden="true"></span>Reproduced everywhere</p>
+  <p class="verdict-status is-open"><span class="dot" aria-hidden="true"></span>Partly reproduced</p>
 </div>
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">Expanded 27 anaesthetics vs 7 look-alikes</p>
-    <p class="verdict-text">Does the 613 THz shift track potency or reject look-alikes across a wider volatile panel?</p>
-    <p class="verdict-note">No. Across 27 volatile anaesthetics on tubulin, potency correlation collapses to ρ = −0.08 (p = 0.705; sharper crystal 4I4T: −0.13). Eleven real anaesthetics shift upward like F6/TFMB, while compact look-alikes (perfluorocyclobutane, CF3CClFCF3) shift downward like clinical drugs (AUC = 0.70, p = 0.114).</p>
+    <p class="verdict-kicker">Other proteins</p>
+    <p class="verdict-text">Is the split special to the microtubule protein?</p>
+    <p class="verdict-note">No. Egg-white lysozyme gives the same 7 of 8 and 2 of 2. So does a cloud of 81 rings placed at random. In 303 of 315 cases across nine targets, the direction of the shift is what the size of the gas molecule alone would give. In the paper&#x27;s list, the two look-alike gases were the two largest molecules.</p>
   </div>
-  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>Breaks down</p>
+  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>Same everywhere</p>
 </div>
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">Specificity to microtubules</p>
-    <p class="verdict-text">Does tubulin outperform unrelated proteins or a random cloud of aromatic rings?</p>
-    <p class="verdict-note">No. Tubulin ties 81 randomly shuffled aromatic rings identically (AUC 0.70 vs 0.70; paired ΔAUC = +0.00, 95% CI −0.13 to +0.13). Across all 9 targets and 35 gases, 303 of 315 shifts (96.2%) follow simple 2-oscillator level repulsion around 613 THz.</p>
+    <p class="verdict-kicker">More gases</p>
+    <p class="verdict-text">Does the down-or-up split hold for 27 anaesthetics and 7 look-alikes?</p>
+    <p class="verdict-note">No. 11 anaesthetics, among them the xylenes and methoxyflurane, speed the vibration up as the look-alikes did, and 2 small look-alikes slow it down. The size of the shift does not follow the strength of the drug (correlation −0.08). Anaesthetics and look-alikes overlap in size, so no rule based on size can sort them.</p>
   </div>
-  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>No tubulin edge</p>
+  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>Does not hold</p>
 </div>
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">Physics check: 3D rotational symmetry</p>
-    <p class="verdict-text">Does the published 2017 Hamiltonian give the same answer when the protein is rotated in empty space?</p>
-    <p class="verdict-note">No. Discarding off-diagonal tensor terms breaks 3D rotational symmetry: rotating tubulin rigidly across 20 random orientations swings isoflurane&#x27;s shift 27-fold (37 to 1018 GHz) and flips TFMB&#x27;s sign (−3703 to +2722 GHz). Fixing the symmetry (full 3N × 3N Drude model) drifts by 10⁻⁹ GHz and still finds no tubulin potency tracking (ρ = −0.12).</p>
+    <p class="verdict-kicker">The paper&#x27;s own measure</p>
+    <p class="verdict-text">Counting only the largest slowing each gas causes, do anaesthetics outscore look-alikes?</p>
+    <p class="verdict-note">Yes on tubulin: an anaesthetic outscores a look-alike 89% of the time, where 50% is chance, and size does not account for it. But a channel that anaesthetics are accepted to act on scores 85% and the blood protein albumin 83%. The small proteins and the random rings score lower (68% to 75%). The score does not rise with the strength of the drug (correlation −0.09). So the model does respond to where a gas sits in a real protein, but not to tubulin in particular.</p>
   </div>
-  <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>Breaks symmetry</p>
+  <p class="verdict-status is-open"><span class="dot" aria-hidden="true"></span>Shared with other proteins</p>
+</div>
+<div class="verdict-row">
+  <div>
+    <p class="verdict-kicker">The method as described</p>
+    <p class="verdict-text">Does the answer depend on which way round the protein file happens to sit?</p>
+    <p class="verdict-note">On our reading of the paper&#x27;s description, yes: turning the whole structure changes the shift, and for one gas reverses it (−3703 to +2722 GHz). A second reading of the same sentence has no such problem, the authors&#x27; program is not public, and the formulas as printed do not give the paper&#x27;s own frequency range. So this is a doubt about the description, not a demonstrated error in the published numbers. A version with the dependence removed sorts the gases better on one tubulin structure (79%) but at chance on the other (51%).</p>
+  </div>
+  <p class="verdict-status is-open"><span class="dot" aria-hidden="true"></span>Unclear</p>
 </div>
 </div>

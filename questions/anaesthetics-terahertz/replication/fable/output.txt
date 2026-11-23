@@ -1,0 +1,22 @@
+== 1. empty-protein spectrum ==
+tubulin 1JFF     reading T: 81 rings {'TRP': 8, 'TYR': 34, 'PHE': 39}  468.0-695.5 THz, 16 modes in 605-621
+tubulin 1JFF     reading V: 81 rings {'TRP': 8, 'TYR': 34, 'PHE': 39}  492.8-696.6 THz, 11 modes in 605-621
+lysozyme 1DPX    reading T: 12 rings {'TRP': 6, 'TYR': 3, 'PHE': 3}  513.2-628.0 THz, 2 modes in 605-621
+lysozyme 1DPX    reading V: 12 rings {'TRP': 6, 'TYR': 3, 'PHE': 3}  503.8-617.0 THz, 2 modes in 605-621
+81 random rings  reading T: 81 rings {'TRP': 8, 'TYR': 34, 'PHE': 39}  524.5-642.8 THz, 23 modes in 605-621
+81 random rings  reading V: 81 rings {'TRP': 8, 'TYR': 34, 'PHE': 39}  516.1-658.3 THz, 21 modes in 605-621
+single rings, principal values: TRP 531 THz, TYR 579 THz, PHE 605 THz
+single rings, formula as printed in Craddock 2017 (root of summed squares): TRP 1519 THz, TYR 1419 THz, PHE 1489 THz
+
+== 2. direction of the 613 THz shift against the size of a featureless probe ==
+tubulin 1JFF     reading T: +++++++++++++++--------------------   rule holds 34/34 (probes within 8 THz of 613 left out)
+tubulin 1JFF     reading V: +++++++++++++++--------------------   rule holds 34/34 (probes within 8 THz of 613 left out)
+lysozyme 1DPX    reading T: ++++++++++++++---------------------   rule holds 34/34 (probes within 8 THz of 613 left out)
+lysozyme 1DPX    reading V: ++++++++++++++++-------------------   rule holds 33/34 (probes within 8 THz of 613 left out)
+81 random rings  reading T: ++++++++++++++++-------------------   rule holds 33/34 (probes within 8 THz of 613 left out)
+81 random rings  reading V: ++++++++++++++++-------------------   rule holds 33/34 (probes within 8 THz of 613 left out)
+sizes 3.0 to 20.0 cubic angstroms left to right; a probe alone sits at 613 THz near 10.0 (exactly 9.86)
+
+== 3. turning the whole structure in space (20 random turns) ==
+reading T: lowest mode 443.7 to 520.7 THz; 613 THz shift for an 8 cubic angstrom probe at one site: 14 of 20 turns downward, median +199 GHz, middle half -98 to +5024 GHz
+reading V: lowest mode 492.8 to 492.8 THz; 613 THz shift for an 8 cubic angstrom probe at one site: 20 of 20 turns downward, median +281 GHz, middle half +281 to +281 GHz

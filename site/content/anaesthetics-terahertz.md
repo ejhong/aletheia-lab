@@ -1,82 +1,99 @@
 ---
 # To update this page, edit this file and push to main; the site rebuilds itself.
 # The panels and interactive figures are made by questions/anaesthetics-terahertz/analysis/make_figures.py from the results files.
-summary: A widely cited 2017 paper for Penrose and Hameroff's microtubule theory claims anaesthetics put the brain under by shifting a 613 THz oscillation in tubulin downward while look-alike gases shift it upward. Does that calculation hold up across more gases and other proteins?
-verdict: No: the 613 THz sign flip is generic two-oscillator physics, happens in egg-white lysozyme and random rings too, breaks on more gases, and fails a rotational symmetry check
-result: We rebuilt the exact collective dipole model from Craddock and colleagues (2017) and ran it across 35 volatile gases and nine targets — two tubulin structures, two ion channels, four unrelated proteins, and 81 randomly scattered rings. It reproduces their original 8-versus-2 sign split on tubulin, and reproduces it just as cleanly in egg-white lysozyme and in random rings: 96% of all shifts simply follow textbook two-oscillator level repulsion around 613 THz set by the gas's polarizability alone. On a wider panel of 27 anaesthetics and 7 look-alikes the split breaks down completely, and the published equations fail a basic check of physics — turning the protein rigidly in empty 3D space flips a look-alike gas from an upward shift to a downward shift.
-dek: Our earlier docking test could not say what a gas does once it settles inside a protein. Supporters of the Orch OR theory pointed to a 2017 calculation in which anaesthetics shift a 613-terahertz vibration across tubulin's aromatic rings downward while look-alike non-anaesthetics shift it upward. We rebuilt those exact equations and tested them on 35 gases, eight real proteins, and a random cloud of rings.
+summary: A 2017 paper, often cited for Penrose and Hameroff's theory, calculated that anaesthetic gases slow a vibration in the microtubule protein while look-alike gases that do not cause anaesthesia speed it up. Does that calculation single out microtubules?
+verdict: Not microtubules in particular: the famous split is a matter of molecule size, and where the calculation does tell anaesthetics apart, a nerve-cell channel and a blood protein do as well
+result: Rebuilt from the paper's description, the calculation gives the paper's split on the microtubule protein, and the same split on egg-white protein and on rings placed at random. Whether a gas slows or speeds the vibration is set by the size of its molecule, and with more gases that split fails. Counted the paper's own way, anaesthetics do disturb the vibration more than look-alikes, but equally in a known anaesthetic target and in a blood protein, and not in step with drug strength. The calculation gives no reason to pick out microtubules. It does not count against them either, and it does not touch the quantum physics of the theory.
+dek: The earlier docking study could not say what a gas does once it has settled in a protein. A 2017 paper said what: it changes how the protein's ring-shaped parts vibrate together, one way for anaesthetics and the other way for look-alike gases. The lab rebuilt that calculation and ran it on more gases and on other proteins, a test the paper's authors said was still needed.
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Run and written up; awaiting independent replication by a second AI system from the locked plan. Unlike the earlier docking study, this test is decisive about the 2017 calculation itself: its signature `613 THz` sign flip is not specific to microtubules, breaks down beyond the original ten gases, and relies on equations that violate 3D rotational symmetry.
+> **Where things stand, 23 November 2026.** Run by one AI system and looked over by a second, which recomputed the statistics and rebuilt part of the calculation with its own code. The two agree on the main finding. They differ on how hard it lands. The first write-up called the paper's result an artefact and its method broken. The second reading, given here, is narrower: the calculation does not single out microtubules, part of it does survive, and an error in the published method has not been shown.
 
 ## What we figured out {menu: Findings}
 
-In our first look at Orch OR anaesthesia ([the docking study](../anaesthetics-microtubules/)), fitting gases into static pockets could not recognise even the ion channels we already know anaesthetics act on. Supporters of the microtubule theory had a natural answer: what matters is not how tightly a gas sticks, but what it *does* once it sits inside tubulin.
+Penrose and Hameroff's theory, Orch OR, places consciousness in microtubules, the scaffolding inside nerve cells. One of its claims is that anaesthetic gases work by acting there. [An earlier study](../anaesthetics-microtubules/) asked how tightly such gases fit into pockets on the microtubule protein, tubulin, and could not tell: the method failed to pick out even the targets everyone accepts.
 
-Their flagship computational paper (Craddock, Kurian, Hameroff, Tuszynski and colleagues, *Scientific Reports* 2017) modelled tubulin's aromatic rings — tryptophan, tyrosine and phenylalanine — as a network of coupled oscillating dipoles vibrating between 480 and 700 terahertz (`THz`). When they added eight clinical anaesthetics to tubulin's pockets, a collective mode near **`613 THz`** shifted downward in proportion to clinical strength; when they added two fat-soluble look-alikes that do *not* cause anaesthesia (`F6` and `TFMB`), that mode shifted upward instead.
+The theory's supporters say fit is not the point. What matters is what the gas does once it is there. A 2017 paper by Craddock, Hameroff and colleagues put numbers on that. It treated the ring-shaped parts of tubulin as a set of electrical vibrations that tug on one another, with a gas molecule added as one more. In the paper, eight anaesthetics slowed a vibration near 613 terahertz, by more for the stronger drugs. Two look-alike gases, fat-soluble like anaesthetics but causing no anaesthesia, sped it up.
 
-Crucially, the 2017 authors never ran the exact same calculation on other proteins, and they tested only eight anaesthetics and two look-alikes. We rebuilt their exact Hamiltonian from the published equations and ran it on **35 volatile gases** (`27` real anaesthetics, `7` confirmed look-alikes, and `1` convulsant) across **nine targets**: two tubulin crystals, two accepted ion channels (`GABA-A` and `GLIC`), four non-conscious or unrelated proteins (`Albumin`, `Firefly luciferase`, `Egg-white lysozyme`, `Ubiquitin`), and a **shuffled control** of 81 aromatic rings scattered randomly in space.
+The paper tried ten gases and one protein, and its authors wrote that tests on other proteins were needed to see whether the effect was "universal or unique to tubulin". The lab rebuilt the calculation from the published description and ran it on 35 gases and nine targets: two structures of tubulin, two channels that anaesthetics are accepted to act on, four unrelated proteins including the lysozyme of egg white, and 81 rings scattered at random.
 
 {{figure: anaesthetics-terahertz/tiles}}
 
-Five things came out.
-
-1. **We reproduced the 2017 sign split — and it happens in egg white and in random rings too.** On the ten gases from the 2017 paper, our implementation reproduces tubulin's baseline range (`468–696 THz` against their `480–700 THz`) and splits 7 of 8 clinical anaesthetics downward against 2 of 2 look-alikes upward (`AUC = 0.94`). But **egg-white lysozyme** gives the exact same `7/8` and `2/2` split (`AUC = 0.94`), **ubiquitin** (with just three aromatic rings) gives `7/8` and `2/2` (`AUC = 0.88`), and **81 randomly placed rings** give `7/8` and `2/2` (`AUC = 0.88`).
-2. **Simple textbook physics explains 96% of all shifts without any biology.** Every protein built from tryptophan (`531 THz`), tyrosine (`579 THz`) and phenylalanine (`605 THz`) has normal modes sitting right around `613 THz`. In the 2017 equations, a gas's own natural frequency falls strictly as the inverse square root of its polarizability. When you couple two oscillators, a higher-frequency gas pushes `613 THz` **down**; a lower-frequency gas pushes `613 THz` **up**. That one rule — checking whether the isolated gas alone sits above or below `613 THz`, knowing nothing about the protein — predicts the sign of **`303` of `315` gas–protein pairs (`96.2%`)**, and `100%` (`35/35`) on sharper tubulin, lysozyme, ubiquitin and random rings.
-3. **The split falls apart as soon as you test more gases.** Craddock's two look-alikes (`F6` and `TFMB`) happened to be more polarizable than all eight clinical gases in their small list, so both sat below `613 THz`. In our wider panel of 27 real anaesthetics and 7 look-alikes, **11 real anaesthetics** — including some of the most potent of all, such as `o-xylene`, `m-xylene`, `p-xylene`, `toluene`, `cycloheptane` and clinical `methoxyflurane` — sit below `613 THz` and shift **upward** like `F6` and `TFMB`. Meanwhile two compact look-alikes (`perfluorocyclobutane` and `CF₃CClFCF₃`) sit above `613 THz` and shift **downward** like clinical drugs. On tubulin, potency correlation collapses to `−0.08` (`p = 0.70`), and separation (`AUC = 0.70`, `p = 0.11`) ties 81 random rings to three decimal places (`0.70` vs `0.70`).
-4. **The new-mode correlation (Figure 3 of the 2017 paper) is just the gas's own polarizability.** Adding a gas adds one mode near its own isolated frequency, so `f_new` correlates with clinical potency across *every* protein — `0.81` on tubulin, `0.93` on egg-white lysozyme, `0.98` on blood albumin, and `0.86` on 81 random rings. Once you allow for the gas's polarizability, the tubulin correlation drops from `0.60` to `0.10`.
-5. **The published 2017 equations fail a basic check of physics: 3D rotational symmetry.** After rotating each ring's polarizability tensor into the protein's crystal coordinates, the 2017 equations discard the off-diagonal entries. Turning the exact same tubulin–gas complex rigidly in empty 3D space (changing no distances or angles) should change nothing; instead, across 20 random orientations, isoflurane's `613 THz` shift swings 27-fold (`+37` to `+1,018 GHz`) and **`TFMB` flips sign** (`−3,703` to `+2,722 GHz`). When we fix that symmetry flaw with a full `3N × 3N` 3D Drude tensor model, all 20 rotations agree to `10⁻⁹ GHz` — and tubulin still fails to track potency (`ρ = −0.12`).
+1. **The split came out, and it came out everywhere.** On tubulin, seven of the eight anaesthetics slowed the vibration and both look-alikes sped it up. Lysozyme gave the same seven and two. So did the random rings.
+2. **The direction of the shift is set by the gas.** Two vibrations that are coupled push each other apart. A gas whose own vibration lies above 613 terahertz pushes the protein's down; one below pushes it up. In this kind of model a gas's own frequency depends only on how easily its electrons are pushed about, which goes with the size of the molecule. That one fact about the gas gives the direction of the shift in 303 of 315 cases, whatever the protein.
+3. **In the 2017 paper the two look-alikes were the two largest molecules.** Its own table shows it, and the paper reports that both look-alikes added a vibration below the band while the anaesthetics added one above. That is the pattern point 2 predicts.
+4. **With more gases the down-or-up split fails.** Eleven of 27 anaesthetics, the xylenes and methoxyflurane among them, are large molecules and speed the vibration up as the look-alikes did. Two of seven look-alikes are small and slow it down. Anaesthetics and look-alikes overlap in size, so nothing that turns on size can sort them.
+5. **Counted the paper's own way, something survives.** The paper scored each gas by the largest slowing it causes anywhere near 613 terahertz, even if its largest effect is a speeding-up. On that score an anaesthetic beats a look-alike 89% of the time on tubulin, where 50% is chance. Size does not explain it: among the large molecules alone the figure is 92%.
+6. **But tubulin shares it.** The GABA-A channel, which anaesthetics are accepted to act on, scores 85%, and albumin, a blood protein that is known to bind these gases, scores 83%. The small proteins and the random rings score 68 to 75%. So in this model it matters where a gas sits in a real protein with real pockets. It does not matter that the protein is tubulin.
+7. **Stronger drugs do not shift it more.** Across the 27 anaesthetics the effect on tubulin does not follow the strength of the drug (correlation −0.08, or −0.09 scored the paper's way). Nor did it across the paper's own eight (+0.12 and +0.29), where the paper reported a near-perfect fit. That part of the paper was not reproduced.
 
 {{figure: anaesthetics-terahertz/verdict}}
 
-## Watch the 613 THz cliff yourself {menu: Level repulsion}
+## How much weight this carries {menu: What it means}
 
-In the figure below, start on **Isolated gas Drude frequency** and toggle between **Craddock's 11 only** and **All 35 gases**. With only Craddock's 11 gases, almost every clinical anaesthetic sits to the right of the `613 THz` dashed cliff (pushed down) and both look-alikes (`F6`, `TFMB`) sit to the left (pushed up). Switch to **All 35 gases** and watch eleven real anaesthetics cross to the left while two compact look-alikes cross to the right. Then swap **Tubulin** for **Lysozyme (egg white)** or **81 random rings** — the exact same cliff stays put.
+**What it shows.** The striking part of the 2017 result, anaesthetics pushing one way and look-alikes the other, is about the size of the molecules and would come out for any protein. What is left once that is set aside is real but modest: in the model, anaesthetics disturb the rings' vibrations more than look-alikes do when they sit in a large protein with pockets. Tubulin is one such protein. A channel that anaesthetics are known to act on is another, and a blood protein that merely carries them is a third. Nothing in the calculation picks tubulin out of that company, so it cannot be used as evidence that microtubules are where anaesthesia happens.
+
+**What it does not show.** It is not evidence against microtubules. Tubulin does as well as the accepted target on every count; the calculation simply cannot choose between them. And none of this bears on the heart of Orch OR, which is a claim about quantum physics and gravity. This model is ordinary classical physics and contains none of that. The paper's authors were also more careful than some who cite it: they asked for exactly this test, and suggested the effect might be common to many proteins. On our numbers that suggestion looks right.
+
+**Three cautions about our own work.**
+
+- *It is a reconstruction.* The paper used a simulated structure that is not public, its own placements of the gases and its own estimate of their properties. Ours differ in all three. The shifts we get are far larger than the paper's, and the link to drug strength did not come out. The printed formulas are also not consistent with each other: taken as printed, one of them puts a single ring at about 1,500 terahertz, far outside the paper's own range of 480 to 700.
+- *The orientation problem is a doubt, not a demonstrated error.* The first write-up of this study said the published method gives different answers when the whole protein is turned in space, which no physical quantity should. That is true of the method on one reading of the paper's description. On another reading of the same sentence it is not, and the authors' program is not public. Our second check rebuilt both readings: the main finding, that the gas sets the direction, holds under either.
+- *The comparison in point 6 was made after the results were in.* The plan fixed in advance judged the study on the direction of the largest shift, not on the paper's own score, and compared tubulin with the other targets only on that. Tubulin's lead over the small proteins and the random rings on the paper's score is larger than chance would easily give (it stays above zero in more than 95 of 100 resamplings of the gases), but it shrinks when the gases are placed by a second docking program, and there are only seven look-alike gases. It should be tested again on gases chosen in advance.
+
+## Try it: which way does each gas push? {menu: Each gas}
+
+Each dot is a gas. Dots above the line slow the vibration near 613 terahertz, which the paper reported for anaesthetics. Dots below speed it up. Switch between all 35 gases and the paper's own eleven, and swap tubulin for lysozyme or for the random rings. With the gas's own frequency along the bottom, the picture is the same for every target: gases to the right of 613 push down, and gases to the left push up.
 
 {{figure: anaesthetics-terahertz/repulsion}}
 
-## Nine targets side by side, and the rotation test {menu: All nine targets}
+## All nine targets, and the turning test {menu: All nine targets}
 
-The top chart compares all nine targets on both the full 35-gas panel (filled dots) and Craddock's original 10-gas split (hollow rings). The bottom strip shows what happens when you rigidly turn the exact same tubulin crystal across 20 random 3D orientations.
+The top chart puts the nine targets side by side. Filled dots are the 35-gas panel and hollow rings are the paper's ten gases. The strip beneath turns the same tubulin and gas to 20 random orientations: under the study's reading of the published method the answer moves about, and under a version built so that it cannot, all 20 fall on one point.
 
 {{figure: anaesthetics-terahertz/proteins}}
 
-| Target | Why it is here | Craddock 8 vs 2 split | Craddock 8 vs 2 AUC | Full 27-gas potency `ρ` | Full 27 vs 7 AUC | Level-repulsion rule |
+| Target | Why it is here | Paper's ten gases: slowed / sped up | Direction given by the gas alone | 27 against 7, by direction | 27 against 7, the paper's score | Link to drug strength |
 |---|---|---:|---:|---:|---:|---:|
-| **Tubulin (`1JFF`)** | The theory's target | `7/8` down · `2/2` up | `94%` | `−0.08` | `70%` | `91%` (`32/35`) |
-| Tubulin (`4I4T`, sharper) | The same, as a repeat | `7/8` down · `2/2` up | `88%` | `−0.13` | `59%` | `100%` (`35/35`) |
-| `GABA-A` channel | Accepted target | `7/8` down · `2/2` up | `88%` | `+0.02` | `60%` | `91%` (`32/35`) |
-| `GLIC` channel | Accepted target | `7/8` down · `2/2` up | `94%` | `−0.10` | `73%` | `100%` (`35/35`) |
-| Albumin | Non-conscious blood protein | `6/8` down · `2/2` up | `88%` | `−0.15` | `57%` | `86%` (`30/35`) |
-| Firefly luciferase | Non-conscious enzyme | `7/8` down · `2/2` up | `88%` | `−0.41` | `67%` | `97%` (`34/35`) |
-| **Lysozyme (egg white)** | Unrelated control | **`7/8` down · `2/2` up** | **`94%`** | `−0.26` | `66%` | **`100%` (`35/35`)** |
-| Ubiquitin (3 rings) | Minimal control | `7/8` down · `2/2` up | `88%` | `−0.16` | `68%` | `100%` (`35/35`) |
-| **81 random rings** | Random geometry control | **`7/8` down · `2/2` up** | **`88%`** | `−0.12` | **`70%`** | **`100%` (`35/35`)** |
+| **Tubulin (1JFF)** | The theory's target | 7/8 · 2/2 | 32 of 35 | 70% | 89% | −0.08 |
+| Tubulin (4I4T, sharper) | The same protein, as a repeat | 7/8 · 2/2 | 35 of 35 | 59% | 77% | −0.13 |
+| GABA-A channel | Accepted target | 7/8 · 2/2 | 32 of 35 | 60% | 85% | +0.02 |
+| GLIC channel | Accepted target | 7/8 · 2/2 | 35 of 35 | 73% | 76% | −0.10 |
+| Albumin | Blood protein that binds these gases | 6/8 · 2/2 | 30 of 35 | 57% | 83% | −0.15 |
+| Firefly luciferase | Enzyme | 7/8 · 2/2 | 34 of 35 | 67% | 70% | −0.41 |
+| **Lysozyme (egg white)** | Small unrelated protein | 7/8 · 2/2 | 35 of 35 | 66% | 69% | −0.26 |
+| Ubiquitin (3 rings) | The smallest network | 7/8 · 2/2 | 35 of 35 | 68% | 68% | −0.16 |
+| **81 random rings** | No protein at all | 7/8 · 2/2 | 35 of 35 | 70% | 75% | −0.12 |
 
-## Inside the aromatic networks and terahertz spectrum {menu: 3D & spectrum}
+The two "27 against 7" columns say how often a randomly chosen anaesthetic outscores a randomly chosen look-alike; 50% is chance. "By direction" uses the largest shift, counted as positive when it slows the vibration. This is the measure the plan fixed in advance, and on it no target is reliably better than chance. "The paper's score" counts only the largest slowing.
 
-Drag on the left to inspect the aromatic ring networks of tubulin, egg-white lysozyme, albumin and `GABA-A`. On the right, pick any gas on tubulin and watch where its isolated Drude frequency (`f_iso`, dashed red line) lands relative to the gold `613 ± 8 THz` band: whenever the dashed line sits to the right, the gold sticks point downward; whenever it sits to the left — whether for `TFMB` or for potent real anaesthetic `o-xylene` — they flip upward.
+## The rings and their vibrations {menu: Rings and spectrum}
+
+On the left, drag to turn the network of rings in tubulin or another protein. On the right, pick a gas and see how it moves each of tubulin's 81 vibrations. The dashed line marks the gas's own frequency and the shaded band is 613 terahertz. When the dashed line is to the right of the band, the band moves down; when it is to the left, the band moves up.
 
 {{figure: anaesthetics-terahertz/spectrum}}
 
 ## How it was done
 
-- **Primary equations verbatim.** Taken directly from the open-access XML and LaTeX sources of Craddock et al. (2017, *Sci. Rep.* 7:9877, `PMC5575257`) and Kurian et al. (2018, *Phys. Lett. A* 382:33–43, `PMC5796540` / `arXiv:1608.08097`), including exact Table III aromatic polarizabilities and Figure 4 ring axes.
-- **Polarizabilities checked against Table S1 first.** Each docked gas's 3×3 polarizability tensor was computed in its docked 3D orientation via the zero-parameter Thole / van Duijnen & Swart (1998) interacting-dipole model (`r = 0.994` against Craddock's 11 Table S1 DFT values), plus an exact Table S1-calibrated check on all 11 gases.
-- **Exact mode matching and symmetry fix.** Protein modes before and after adding a gas were matched 1-to-1 by maximum eigenvector overlap (preventing index-swap errors at level crossings). Alongside the published `N × N` model (`Model A`), we solved the exact rotationally invariant `3N × 3N` 3D Drude tensor model (`Model B`).
-- **Locked before looking at any gas-bound results.** Protocol, targets, models, metrics and verdict rules were locked with a SHA-256 hash (`750113e2a758`) before running any ligand-bound calculations. Zero amendments were needed.
-- **Cost.** Nothing: public PDB structures, locked `#48` poses, and open-source Python/NumPy/SciPy.
+- **The model.** Taken from the two papers that describe it: Craddock and colleagues (*Scientific Reports* 7:9877, 2017) and Kurian and colleagues (*Physics Letters A* 382:33, 2018). Where the two disagree, the formula that reproduces the paper's stated range of frequencies was used. Empty tubulin comes out at 468 to 696 terahertz against the paper's 480 to 700.
+- **The gases.** The 35 gases and their positions in each protein are those of the docking study. How easily each gas's electrons are pushed about was worked out with a standard method and checked against the paper's own table for its eleven gases; the two agree closely.
+- **The plan was fixed first.** What would be measured and how it would be judged were written down and locked before any gas was added to any protein. Nothing was changed afterwards.
+- **A second look.** A second AI system recomputed the statistics from the results table, rebuilt the empty-protein calculation with its own code and got the same numbers, tested the push-apart rule with a probe of adjustable size on three targets, read both source papers, and worked out the comparison on the paper's own score. It did not repeat the placing of the gases, so everything that depends on where each gas sits rests on the first system's run.
+- **Cost.** Nothing: public structures and free software.
 
 ## What this cannot tell you
 
-- **Whether living microtubules play any role in anaesthesia.** This study tests and refutes Craddock et al. (2017)'s specific `613 THz` collective Drude-oscillator calculation. It does not test live-animal experiments with microtubule-stabilizing drugs or laboratory UV fluorescence/superradiance measurements on polymerized microtubules (Kalra et al. 2023).
-- **Independent replication.** One AI system designed, ran and wrote up this study. A second AI system from another vendor has not yet independently reproduced it from the locked plan, and no human physicist has checked it.
+- **Whether anaesthetics act on microtubules in a living brain.** That is a matter for experiments on animals and on microtubules in the laboratory, and the atlas weighs those.
+- **Anything about the quantum side of Orch OR.** The calculation tested here has no quantum physics in it.
+- **Whether the authors' own program has the weaknesses of our rebuilt one.** Only their code and data could show that.
+- **What a specialist would make of it.** Two AI systems did the work and no physicist or pharmacologist has checked it.
 
 ## Files
 
 - [Full results](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-terahertz/RESULTS.md)
-- [The locked plan](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-terahertz/protocol.md) and [manifest](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-terahertz/MANIFEST.md)
-- [Code and physics tests](https://github.com/ejhong/aletheia-lab/tree/main/questions/anaesthetics-terahertz/analysis)
+- [The locked plan](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-terahertz/protocol.md) and [the list of data](https://github.com/ejhong/aletheia-lab/blob/main/questions/anaesthetics-terahertz/MANIFEST.md)
+- [The second system's check](https://github.com/ejhong/aletheia-lab/tree/main/questions/anaesthetics-terahertz/replication/fable)
+- [Code](https://github.com/ejhong/aletheia-lab/tree/main/questions/anaesthetics-terahertz/analysis)
 
-AI did this work: Antigravity (Google DeepMind) extracted the primary equations, wrote and locked the solver, ran all nine targets and symmetry audits, built the interactive figures, and wrote this page on 23 November 2026. Eugene directed it.
+AI did this work. Antigravity (Google DeepMind) designed the study, wrote and ran the calculation and built the figures on 23 November 2026. Claude (Anthropic) checked it the same day and wrote this page. Eugene directed it.

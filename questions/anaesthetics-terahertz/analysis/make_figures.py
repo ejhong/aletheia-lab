@@ -58,28 +58,27 @@ def fmt_p(p: float) -> str:
 def build_tiles(summary: Dict) -> str:
     lr = summary["level_repulsion_audit"]
     s1j = summary["stats"]["vina_A_d613"]["tubulin_1jff"]
-    s_lyz = summary["stats"]["vina_A_d613"]["lysozyme_1dpx"]
-    so3_tfmb = summary["so3_rotation_audit"]["TFMB_site_5"]
-    lo_r, hi_r = so3_tfmb["model_a_range_ghz"]
+    wrong_an = s1j["an_total"] - s1j["an_down_count"]
+    wrong_no = s1j["no_total"] - s1j["no_up_count"]
     items = [
         (
-            f"{lr['overall_frac']*100:.1f}%",
-            f"of all {lr['overall_total']} gas-protein pairs follow simple two-oscillator level repulsion around 613 THz — no protein biology needed",
+            "7 of 8, 2 of 2",
+            "anaesthetics slow the vibration and look-alike gases speed it up on the microtubule protein, much as the 2017 paper reported. Egg-white protein and rings scattered at random give the same split",
             False,
         ),
         (
-            f"{s1j['an_down_count']} of {s1j['an_total']}",
-            f"real anaesthetics shift 613 THz downward on tubulin; the 11 most polarizable (including xylenes and methoxyflurane) shift the wrong way",
+            f"{lr['overall_matches']} of {lr['overall_total']}",
+            "times, the direction of the shift is what the size of the gas molecule alone would give, whatever the protein",
             False,
         ),
         (
-            "7/8 & 2/2",
-            f"egg-white lysozyme and 81 random rings reproduce Craddock's original 8-vs-2 sign split identically to tubulin (AUC {s_lyz['craddock_8v2']['auc_sep']:.2f} vs {s1j['craddock_8v2']['auc_sep']:.2f})",
+            f"{wrong_an} of {s1j['an_total']}",
+            f"anaesthetics push the vibration the way the look-alike gases were said to, once more gases are tried. {wrong_no} of {s1j['no_total']} look-alikes push it the way anaesthetics were said to",
             False,
         ),
         (
-            "Flips sign",
-            f"rotating tubulin rigidly in empty 3D space swings TFMB's 613 THz shift from {fmt_signed(lo_r, 0)} to {fmt_signed(hi_r, 0)} GHz",
+            "Not special",
+            "to microtubules. Where the calculation does tell anaesthetics from look-alikes, it does so as well for a nerve-cell channel and a blood protein",
             True,
         ),
     ]
@@ -91,46 +90,62 @@ def build_tiles(summary: Dict) -> str:
 
 def build_verdict(summary: Dict) -> str:
     s1j = summary["stats"]["vina_A_d613"]["tubulin_1jff"]
-    s4i = summary["stats"]["vina_A_d613"]["tubulin_4i4t"]
-    s_lyz = summary["stats"]["vina_A_d613"]["lysozyme_1dpx"]
-    s_shf = summary["stats"]["vina_A_d613"]["tubulin_1jff_shuffled"]
     lr = summary["level_repulsion_audit"]
-    so3_iso = summary["so3_rotation_audit"]["isoflurane_site_7"]
     so3_tfmb = summary["so3_rotation_audit"]["TFMB_site_5"]
-    pair_shf = summary["paired_vs_1jff"]["vina_A_d613"]["tubulin_1jff_shuffled"]
+    b = summary["stats"]["vina_B_dall"]
+    dd = summary["stats"]["vina_A_ddown613"]
+    pct = lambda t: f"{dd[t]['auc_sep'] * 100:.0f}%"
+    wrong_an = s1j["an_total"] - s1j["an_down_count"]
+    wrong_no = s1j["no_total"] - s1j["no_up_count"]
 
     rows = [
         (
-            "Craddock's original 8 vs 2 gases",
-            "Does the model reproduce the 613 THz downward-vs-upward sign split on the original 10 gases?",
-            f"Yes — on tubulin (7 of 8 clinical anaesthetics downward, 2 of 2 non-anaesthetics F6 and TFMB upward; AUC {s1j['craddock_8v2']['auc_sep']:.2f}). "
-            f"It reproduces identically in egg-white lysozyme (7/8, 2/2; AUC {s_lyz['craddock_8v2']['auc_sep']:.2f}) and in 81 randomly scattered rings (7/8, 2/2; AUC {s_shf['craddock_8v2']['auc_sep']:.2f}).",
+            "The ten gases of the 2017 paper",
+            "Does the rebuilt calculation give the reported split, with anaesthetics slowing the vibration and look-alike gases speeding it up?",
+            f"Mostly. {s1j['craddock_8v2']['an_down_count']} of the 8 anaesthetics slow it and both look-alike gases speed it up. "
+            f"The paper's other result, that stronger drugs shift it more, did not come out (correlation {fmt_signed(s1j['craddock_8v2']['rho_pot'])}). "
+            "The rebuilt version uses a different structure, different positions for the gases and a different estimate of their properties, and its shifts are far larger than the paper's, so this is not a full reproduction.",
             "is-open",
-            "Reproduced everywhere",
+            "Partly reproduced",
         ),
         (
-            "Expanded 27 anaesthetics vs 7 look-alikes",
-            "Does the 613 THz shift track potency or reject look-alikes across a wider volatile panel?",
-            f"No. Across 27 volatile anaesthetics on tubulin, potency correlation collapses to ρ = {fmt_signed(s1j['rho_pot'])} ({fmt_p(s1j['p_rho_pot'])}; sharper crystal 4I4T: {fmt_signed(s4i['rho_pot'])}). "
-            f"Eleven real anaesthetics shift upward like F6/TFMB, while compact look-alikes (perfluorocyclobutane, CF3CClFCF3) shift downward like clinical drugs (AUC = {s1j['auc_sep']:.2f}, {fmt_p(s1j['p_auc_sep'])}).",
+            "Other proteins",
+            "Is the split special to the microtubule protein?",
+            "No. Egg-white lysozyme gives the same 7 of 8 and 2 of 2. So does a cloud of 81 rings placed at random. "
+            f"In {lr['overall_matches']} of {lr['overall_total']} cases across nine targets, the direction of the shift is what the size of the gas molecule alone would give. "
+            "In the paper's list, the two look-alike gases were the two largest molecules.",
             "is-no",
-            "Breaks down",
+            "Same everywhere",
         ),
         (
-            "Specificity to microtubules",
-            "Does tubulin outperform unrelated proteins or a random cloud of aromatic rings?",
-            f"No. Tubulin ties 81 randomly shuffled aromatic rings identically (AUC {s1j['auc_sep']:.2f} vs {s_shf['auc_sep']:.2f}; paired ΔAUC = {fmt_signed(pair_shf['delta_auc'])}, 95% CI {fmt_signed(pair_shf['delta_auc_ci95'][0])} to {fmt_signed(pair_shf['delta_auc_ci95'][1])}). "
-            f"Across all 9 targets and 35 gases, {lr['overall_matches']} of {lr['overall_total']} shifts ({lr['overall_frac']*100:.1f}%) follow simple 2-oscillator level repulsion around 613 THz.",
+            "More gases",
+            f"Does the down-or-up split hold for {s1j['an_total']} anaesthetics and {s1j['no_total']} look-alikes?",
+            f"No. {wrong_an} anaesthetics, among them the xylenes and methoxyflurane, speed the vibration up as the look-alikes did, and {wrong_no} small look-alikes slow it down. "
+            f"The size of the shift does not follow the strength of the drug (correlation {fmt_signed(s1j['rho_pot'])}). "
+            "Anaesthetics and look-alikes overlap in size, so no rule based on size can sort them.",
             "is-no",
-            "No tubulin edge",
+            "Does not hold",
         ),
         (
-            "Physics check: 3D rotational symmetry",
-            "Does the published 2017 Hamiltonian give the same answer when the protein is rotated in empty space?",
-            f"No. Discarding off-diagonal tensor terms breaks 3D rotational symmetry: rotating tubulin rigidly across 20 random orientations swings isoflurane's shift 27-fold ({so3_iso['model_a_range_ghz'][0]:.0f} to {so3_iso['model_a_range_ghz'][1]:.0f} GHz) "
-            f"and flips TFMB's sign ({fmt_signed(so3_tfmb['model_a_range_ghz'][0], 0)} to {fmt_signed(so3_tfmb['model_a_range_ghz'][1], 0)} GHz). Fixing the symmetry (full 3N × 3N Drude model) drifts by 10⁻⁹ GHz and still finds no tubulin potency tracking (ρ = {fmt_signed(summary['stats']['vina_B_dall']['tubulin_1jff']['rho_pot'])}).",
-            "is-no",
-            "Breaks symmetry",
+            "The paper's own measure",
+            "Counting only the largest slowing each gas causes, do anaesthetics outscore look-alikes?",
+            f"Yes on tubulin: an anaesthetic outscores a look-alike {pct('tubulin_1jff')} of the time, where 50% is chance, and size does not account for it. "
+            f"But a channel that anaesthetics are accepted to act on scores {pct('gabaa_6x3t')} and the blood protein albumin {pct('hsa_1e7b')}. "
+            f"The small proteins and the random rings score lower ({pct('ubiquitin_1ubq')} to {pct('tubulin_1jff_shuffled')}). "
+            f"The score does not rise with the strength of the drug (correlation {fmt_signed(dd['tubulin_1jff']['rho_pot'])}). "
+            "So the model does respond to where a gas sits in a real protein, but not to tubulin in particular.",
+            "is-open",
+            "Shared with other proteins",
+        ),
+        (
+            "The method as described",
+            "Does the answer depend on which way round the protein file happens to sit?",
+            f"On our reading of the paper's description, yes: turning the whole structure changes the shift, and for one gas reverses it ({fmt_signed(so3_tfmb['model_a_range_ghz'][0], 0)} to {fmt_signed(so3_tfmb['model_a_range_ghz'][1], 0)} GHz). "
+            "A second reading of the same sentence has no such problem, the authors' program is not public, and the formulas as printed do not give the paper's own frequency range. "
+            "So this is a doubt about the description, not a demonstrated error in the published numbers. "
+            f"A version with the dependence removed sorts the gases better on one tubulin structure ({b['tubulin_1jff']['auc_sep']*100:.0f}%) but at chance on the other ({b['tubulin_4i4t']['auc_sep']*100:.0f}%).",
+            "is-open",
+            "Unclear",
         ),
     ]
     out = ['<div class="verdict">']
@@ -212,6 +227,7 @@ def build_repulsion_explorer(summary: Dict) -> str:
   font:400 12px/1.3 var(--sans,system-ui,sans-serif); color:#c8bfb3;
 }}
 #thz-rep-fig .thz-leg span {{ display:inline-flex; align-items:center; gap:6px; }}
+#thz-rep-fig .thz-leg svg {{ width:12px; height:12px; flex:none; display:inline-block; }}
 </style>
 <div class="thz-bar">
   <div class="thz-ctl">
@@ -237,12 +253,12 @@ def build_repulsion_explorer(summary: Dict) -> str:
   <div class="thz-tip" id="thz-rep-tip"></div>
 </div>
 <div class="thz-leg">
-  <span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#e6b655"/></svg> Clinical anaesthetic (9)</span>
-  <span><svg width="12" height="12"><polygon points="6,1 11,10 1,10" fill="#c97b4b"/></svg> Fang 1996 anaesthetic (18)</span>
-  <span><svg width="12" height="12"><polygon points="6,1 11,6 6,11 1,6" fill="#d95f59"/></svg> Non-anaesthetic look-alike (7)</span>
+  <span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#e6b655"/></svg> Anaesthetic in clinical use (9)</span>
+  <span><svg width="12" height="12"><polygon points="6,1 11,10 1,10" fill="#c97b4b"/></svg> Anaesthetic from laboratory tests (18)</span>
+  <span><svg width="12" height="12"><polygon points="6,1 11,6 6,11 1,6" fill="#d95f59"/></svg> Look-alike gas, no anaesthesia (7)</span>
   <span><svg width="12" height="12"><rect x="2" y="2" width="8" height="8" fill="#7c9eb2"/></svg> Flurothyl (convulsant)</span>
 </div>
-<figcaption>Each gas's largest frequency shift inside the 613 ± 8 THz band (positive = downward shift, Craddock's claimed anaesthetic direction; negative = upward shift). Switch between <strong>Craddock's 11 only</strong> and <strong>All 35 gases</strong>, or swap <strong>Tubulin</strong> for <strong>Lysozyme (egg white)</strong> or <strong>81 random rings</strong>. On the Drude-frequency axis, the vertical cliff at 613 THz splits downward from upward shifts on 96.2% of all pairs — pure two-oscillator level repulsion.</figcaption>
+<figcaption>Each gas's largest frequency shift inside the 613 ± 8 THz band (positive = downward shift, Craddock's claimed anaesthetic direction; negative = upward shift). Switch between <strong>Craddock's 11 only</strong> and <strong>All 35 gases</strong>, or swap <strong>Tubulin</strong> for <strong>Lysozyme (egg white)</strong> or <strong>81 random rings</strong>. On the frequency axis, the line at 613 THz divides downward from upward shifts in 96.2% of all cases. Two coupled vibrations push each other apart: a gas whose own frequency lies above the band pushes the band down, and one below pushes it up. A gas's own frequency in this model is set by its size.</figcaption>
 <script>
 (function(){{
   const DATA = {data_json};
@@ -497,16 +513,16 @@ def build_proteins_and_so3(summary: Dict) -> str:
   <div class="tp-btns" role="group" aria-label="Metric view">
     <button type="button" data-mode="d613" class="is-on">613 THz shift (Craddock Fig. 4)</button>
     <button type="button" data-mode="fnew">New mode f_new (Craddock Fig. 3)</button>
-    <button type="button" data-mode="modelB">Fixed 3D Drude model (3N × 3N)</button>
+    <button type="button" data-mode="modelB">Orientation-proof version (Model B)</button>
   </div>
 </div>
 <div class="tp-body">
   <svg id="thz-prot-svg" viewBox="0 0 760 320" role="img" aria-label="Dot plot comparing tubulin against seven other proteins and 81 random rings"></svg>
-  <p class="tp-sub">Physics audit: rotating tubulin rigidly across 20 random 3D orientations</p>
-  <p class="tp-note">Real physics cannot change when you turn a protein in empty space. Under Craddock &amp; Kurian's diagonal-only approximation (Model A), TFMB flips sign between downward (+) and upward (−). Under the full 3N × 3N Drude tensor (Model B), all 20 rotations sit on a single point (drift 10⁻⁹ GHz).</p>
+  <p class="tp-sub">Turning the whole structure to 20 random orientations</p>
+  <p class="tp-note">Turning a protein and its gas together should change nothing. Under our reading of the published description (Model A), TFMB changes between downward (+) and upward (−). Under a version that keeps the full description of each ring (Model B), all 20 sit on a single point. The description can be read another way that has no such problem, and the authors' program is not public, so this shows a weakness in the method as we read it, not an error in the published numbers.</p>
   <svg id="thz-so3-svg" viewBox="0 0 760 155" role="img" aria-label="20 random 3D rotations showing Model A sign flips versus Model B exact invariance"></svg>
 </div>
-<figcaption>Top: Every protein's potency correlation (left, across 27 volatile anaesthetics) and non-anaesthetic separation (right, ROC AUC where 50% is chance) compared with Craddock's original 8-vs-2 split (hollow ring). Tubulin sits in the middle of the pack — tied with 81 randomly scattered rings and matched by egg-white lysozyme. Bottom: Rigid SO(3) rotation audit of tubulin + isoflurane and tubulin + TFMB across 20 random 3D orientations.</figcaption>
+<figcaption>Top: Every protein's potency correlation (left, across 27 volatile anaesthetics) and non-anaesthetic separation (right, ROC AUC where 50% is chance) compared with Craddock's original 8-vs-2 split (hollow ring). Tubulin sits in the middle of the pack, level with 81 randomly scattered rings and matched by egg-white lysozyme. Bottom: the same tubulin and gas, turned as a whole to 20 random orientations, under our reading of the published method (Model A) and under a version that cannot depend on orientation (Model B).</figcaption>
 <script>
 (function(){{
   const DATA = {data_json};
@@ -599,7 +615,7 @@ def build_proteins_and_so3(summary: Dict) -> str:
 
     const rows = [
       {{ lbl: "Isoflurane (Model A)", vals: DATA.so3.isoflurane_site_7.model_a_d613_ghz, col: "#e6b655", y: 34, note: "27× spread (+37 to +1,018 GHz)" }},
-      {{ lbl: "TFMB (Model A)", vals: DATA.so3.TFMB_site_5.model_a_d613_ghz, col: "#d95f59", y: 74, note: "FLIPS SIGN (−3,703 to +2,722 GHz)" }},
+      {{ lbl: "TFMB (Model A)", vals: DATA.so3.TFMB_site_5.model_a_d613_ghz, col: "#d95f59", y: 74, note: "changes sign (−3,703 to +2,722 GHz)" }},
       {{ lbl: "Isoflurane (Model B 3D)", vals: [DATA.so3.isoflurane_site_7.model_b_dall_range_ghz[0]], col: "#6eb59e", y: 108, note: "Invariant (drift 10⁻⁹ GHz)" }}
     ];
     for (const r of rows) {{
