@@ -111,5 +111,24 @@ the page images. Copies read are listed in `../MANIFEST.md`.
 
 > M_Σ(n) satisfies the axioms of epistemic arithmetic mod factivity. […] Additionally, there is a fixed m ∈ N such that M_Σ(n) satisfies the schema K(Kφ ↔ ⌜φ⌝ ∈ W_m), where φ ranges over L-sentences. Thus, the machine that knows the things known by M_Σ(n) is a machine that knows its own code.
 
+## P-R323 — Reinhardt (1985), *Noûs* 19(3), pp. 322–323 (B is Reinhardt's operator "it is provable that", written K elsewhere here)
+
+> The formal language we consider is that of arithmetic, together with the new formation rule: if p is a formula, so is Bp. […] We adopt all the usual schemas of logic and arithmetic (or rather their universal closures), as well as Bp for each such sentence p. The additional special axioms involving B are given by the following schemas (again, more properly their universal closures, optionally prefixed by B): Bp → p; B(p → q) → (Bp → Bq); Bp → BBp; B∀xP → ∀x Bp.
+
+## P-R324 — Reinhardt (1985), *Noûs* 19(3), pp. 324–325, Theorem 1 and remarks from its proof ([p] is the numeral for the Gödel number of p)
+
+> Theorem 1. Suppose T includes Q. Let F be any formula with one free variable x such that one of the following holds for each sentence p: (i) T ⊢ B(F[p] → p) (i.e., F is intuitively correct, considered as describing e.g. a formal system), or (ii) T ⊢ B(F[p] → Bp) (i.e., F describes a "safe" set of sentences, all of which are knowable). Then there is a sentence s such that T ⊢ Bs & B¬F[s] (i.e., s is intuitively provable, but known not to be provable in F). […] Note that this argument uses almost no properties of B: only distributivity over implication and Bp for tautologies p. The fixed point theorem uses in addition only Bp for the most elementary axioms of arithmetic and the logic of equality. […] We now assume (ii). Using the logical principle B(Bp → p), (i) follows and we are done.
+
+## P-R327 — Reinhardt (1985), *Noûs* 19(3), pp. 327–328, Theorem 5 and its proof (Uex is U(e,x), "x belongs to the e-th set"; pe is p(e))
+
+> Theorem 5. The schema ∃e B∀x(Bp(x) ↔ Uex) is inconsistent. Proof. (Note: the proof does not use the BB axiom.) We show that ∃e∀xB(Bp(x) ↔ Uex) is inconsistent. By the B∀ axiom, this will suffice. Let p(x) be ¬U(x,x). Now by the correctness of B, B(Bp(x) → p(x)), whereas by the assumed schema, B(Bp(x) ↔ Uex). Thus, taking x to be e, B(Bpe → pe), B(Bpe ↔ ¬pe), from which, via tautologies and distributivity of B, we get B(pe & ¬Bpe), and similarly from this, Bpe & B¬Bpe; a final application of the correctness of B yields the contradiction: Bpe & ¬Bpe.
+
+## P-R328 — Reinhardt (1985), *Noûs* 19(3), pp. 328–330, Theorem 6, the definition of Con q, the first step of the proof, and remark (iii)
+
+> There are no derivability conditions on the system; rather the assumption on q is that it is known to be complete for intuitive provability: that is, anything provable in the intuitive sense is provable in the sense of q. […] Theorem 6. Suppose there is a formula q(x) with one free variable x such that for every sentence s of T, (B ≤ q) T ⊢ B(Bs → q[s]) (i.e., q is an intuitive upper bound on what is provable). Then T ⊢ B¬B Con q (i.e., the consistency of q is absolutely unprovable). Here by Con q we mean specifically ∀x¬(q(x) & q(ng(x))), where ng is a primitive recursive term of arithmetic representing negation. Proof. Choose s by the fixed point theorem so that T ⊢ B(s ↔ Bq(ng[s])). […] We have used very strongly the property B → BB. However, examination of the proof shows that the correctness of B need not be used, but only B(Bp → p).
+
+*P-R323 to P-R328 were transcribed on 2026-11-23 by Claude Fable 5.2 from the page images of the JSTOR scan supplied
+by Eugene. The scan's text layer garbles the logical symbols, so only the words could be checked mechanically.*
+
 *P-P73 to P-P76 were transcribed on 2026-11-23 by Claude Fable 5.2 from photographs of the printed book supplied by
 Eugene (see `MANIFEST.md` and Amendment 1). They could not be checked mechanically against a text file.*
