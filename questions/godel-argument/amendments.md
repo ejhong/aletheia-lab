@@ -475,3 +475,90 @@ Question total: $40.26.
 `statement-check/Statement5.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement5.lean` and is
 locked there. Nothing in tier 2C has been proved for the record before this point.
 
+## Amendment 6 (2026-11-23): tier 2D, Corradini and Galvan's steps and a corollary
+
+**What changed.** After the results of tier 2C were published, Eugene supplied Corradini and Galvan's two papers
+(*Logic and Logical Philosophy*, 2022 and 2024; hashes in `MANIFEST.md`). Reading them showed that statement S4g
+is their step 7 (recorded as a correction in `RESULTS.md`). It also raised three things worth stating formally,
+and an outside review of the site page (a Google model, in a chat Eugene shared) raised a fourth. Eugene passed
+on that review with its request to add the Lean check. This amendment is written before the statement check
+below is run and before anything in this tier is proved for the record.
+
+**The questions for this tier.**
+
+1. The proof of the corollary in the 2024 note (p. 562) uses the line "ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ)", labelled
+   "Cons implies Sound", for an arbitrary formalism F. Is that line true? If it is not, does the corollary
+   survive: "if F derives an arithmetic sentence that is not known, the consistency of F is not known"?
+2. For which sentences does the corollary's own proof go through?
+3. Is there a nearby statement that does hold? The outside review proposed one: add the hypothesis that all known
+   arithmetic is derivable in F.
+4. Their step 8 (2022, pp. 490–491) refutes the unrestricted thesis "K = F" from step 7. Does that follow as they
+   say? And does their Lemma 2 follow from Lemma 1 by axiom D4?
+5. The outside review also proposed a theorem that the assumptions made about a mind admit both a machine and a
+   non-machine. For the knowledge-operator axioms of Stage 2 that is Reinhardt's and Carlson's consistency
+   theorem, which is out of scope, and Peano arithmetic's provability is not a model of them (S2e). For the
+   simpler assumptions of Stage 1 it can be stated and is included.
+
+**How I came to question 1.** I read the proof and thought the line false in general: Peano arithmetic with the
+sentence "Peano arithmetic is inconsistent" is consistent and proves a false sentence. The outside review,
+without having that observation from me, proposed the same system as a counterexample. Two models' agreement is
+not a check; the statements below are.
+
+**Setting.** Two settings, both already defined. S5a, S5b and S5g are in the arithmetic setting of Stage 1 (a
+mind is a set of arithmetic sentences; truth is truth in the standard natural numbers). S5c to S5f are in the
+abstract setting of tiers 2A and 2C (K, F, T, D are operations on sentences; each fact from arithmetic is a
+hypothesis). DTK itself is not built.
+
+**Budget.** Eugene lifted the $50 cap on 23 November; Amendment 5 recorded a ceiling of $70 that I will not pass
+without asking. Spent so far: $40.26. Expected cost of this check: $4 to $7 for one round. A second full round is
+within the ceiling.
+
+**Statements** (drafted in `statement-check/Statement6.draft.lean`; to be locked as
+`lean/GodelArgument/Statement6.lean`).
+
+| Name | Gloss | Source |
+|---|---|---|
+| D28 `PAPlusNotCon` | Peano arithmetic with the sentence "Peano arithmetic is inconsistent" | the lab's test case |
+| S5a `ConsistencyDoesNotGiveSoundness` | D28 is a formal system, consistent, with a true consistency statement, and proves a false sentence | against Corradini and Galvan 2024, p. 562, the line "Cons implies Sound" |
+| S5b `MachineOutrunsMindThatKnowsItConsistent` | D28 proves a sentence every sound mind lacks; and some sound, closed, mechanical mind containing Peano arithmetic contains D28's consistency statement | against the corollary of 2024, p. 562, read at the level of sets |
+| S5c `CorollaryHoldsWhereConsistencyGivesSoundness` | The corollary's proof, for one sentence φ, given that "ConsF → (Fφ → φ)" is known | Corradini and Galvan 2024, pp. 562–563 |
+| S5d `MindInsideMachineCannotKnowItConsistent` | If knowing ConsF would make it so and make F derive it, and the second incompleteness theorem holds for F, then ConsF is not known | the lab's repair, after an outside review; compare S1a |
+| S5e `UnrestrictedThesisRefuted` | From step 7, Lemma 3 and the instance of "K = F" at σ → G: not "K = F" | Corradini and Galvan 2022, pp. 490–491, step 8 |
+| S5f `ConditionalDeterminateIfPartsAre` | From axiom D4, D(σ) and D(G): D(σ → G) | Corradini and Galvan 2022, p. 490, Lemma 2 |
+| S5g `MindAssumptionsDoNotDecide` | The Stage 1 properties of a mind are met by a mechanical mind and by a non-mechanical one | the lab's own, after an outside review |
+
+**Method.** As before: statement check by the same two checkers (OpenAI `gpt-6.2-astra`, Google `gemini-4-neon`)
+with three planted errors, then the lock, then proofs in `Results6.lean` and the audit. Script:
+`statement-check/run.py --stage 2d`. A trial proof of every draft statement was compiled first
+(`explore/Stage2DSketch.lean`, exploratory). The Google model that reviewed the page is from the same vendor as
+one of the checkers; its review is not counted as a check.
+
+**What would count.** S5a proved: the line "Cons implies Sound" is false as a statement about arithmetic. S5b
+proved: the corollary, read at the level of sets, has a counterexample. S5c proved: the corollary's proof is
+sound for any sentence for which consistency is known to give soundness, so the fault is confined to that line.
+S5d proved: a nearby statement holds, with a different hypothesis. S5e and S5f proved: those two steps of the
+2022 paper follow as stated, given what they rest on. If S5a or S5b cannot be proved, my reading of the corollary
+is wrong and that will be reported.
+
+**Known weaknesses, declared in advance.**
+
+- **S5a and S5b are not about DTK.** The corollary is stated as a theorem of DTK about its predicate K. S5b
+  reads "known" as membership in a set of arithmetic sentences. To turn it into a refutation inside DTK one
+  needs two further facts: DTK proves K(Con(PA)), and it proves K(ConsF) for this F through the formalized
+  second incompleteness theorem. Both look routine from the principles the note itself uses (p. 557), and
+  neither is proved here. So the result, if proved, is: the line is false, and the corollary fails on the
+  natural set-level reading. That DTK refutes it is my inference, `unverified`.
+- **The authors may intend more than they print.** The prose says "F surpasses K". The formal corollary has only
+  "F derives some arithmetic sentence that is not known". S5a and S5b bear on what is printed. S5d is a guess at
+  a statement that is true, not a claim about what they meant.
+- **S5c to S5f are abstract.** Quantifiers, codes and arithmetic are not modelled. Lemma 1 (that "K =PA F" is
+  determinate) is assumed in S5f, not proved; it needs DTK's syntax.
+- **S5d is close to results already here** (S1a, S2b). It is included because it is the form the outside review
+  proposed, not because it is new.
+- **S5g is weak.** It says only that the Stage 1 assumptions do not settle the matter. It is not an independence
+  theorem for any axiomatic theory of knowledge.
+- No one has told the authors. Whether to do so is Eugene's decision.
+
+**My expectation before the run.** S5a, S5b: caveats, with the checkers stressing the gap between the set-level
+reading and DTK. S5c, S5e, S5f: faithful or caveats. S5d and S5g are judged against my own claims.
+
