@@ -166,7 +166,7 @@ def bin_words(start, width):
 
 def younger_dryas():
     tiles("topic-younger-dryas", [
-        ("6", "studies, each with its test fixed before the data were looked at", False),
+        ("7", "studies, each with its test fixed before the data were looked at", False),
         ("0", "found the sharp, one-off mark that a strike from the sky should leave", False),
         ("4", "eruptions, two of them very large, in the 150 years before the cold: among the heaviest runs in 51,000 years", False),
         ("Still open", "what laid down the platinum, and what happened to the great animals", True)])
@@ -187,6 +187,9 @@ def younger_dryas():
         (76, "yd-platinum-volcanism", "Platinum in the ice", "The platinum layer at or just before the start of the cold.",
          "It lies about 20 to 30 years after the cold began, though before the steepest fall. Four eruptions, two very large, came just before the cold.",
          "Unclear", "Platinum a little late; eruptions unusually heavy", "open"),
+        (100, "tunguska-calibration", "What one airburst leaves", "The one known airburst, Tunguska in 1908, marks the ice in the way the Younger Dryas ice is marked.",
+         "Across Greenland 1908 is an ordinary year for ammonium. At some sites there is a sharp, sooty spike, at others nothing. The Younger Dryas century has a steady rise and few spikes.",
+         "Not found", "A spike where it shows, not a steady rise", "no"),
         (40, "younger-dryas-crash", "A crash in human numbers", "Dated traces of people thin out at once, above all in North America.",
          "No drop on three continents. But radiocarbon dating is at its most distorted in exactly those centuries.",
          "Not found", "No sign, though the test was blurred", "no")])
@@ -212,20 +215,28 @@ def minds():
          "Partly holds", "Valid for experiments of fixed length only", "partly")])
 
 
-def crossings():
-    tiles("topic-ancient-crossings", [
-        ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean", False),
-        ("58", "groups of ancient Americans tested for the Australasian resemblance", False),
-        ("0", "strangers found who cannot be explained", False),
-        ("The Norse", "of medieval Greenland, the one crossing history already knew, were found: the search could see", True)])
-    scorecard("topic-ancient-crossings", "scorecard", "What each search looked for and found",
-              ["The search", "If the voyagers existed", "What the record shows"], [
+def deep_memory():
+    tiles("topic-deep-memory", [
+        ("3", "tests of a shared past that do not depend on stories: two in ancient DNA, one in the sky", False),
+        ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean; none unexplained", False),
+        ("After 201 BCE", "the date read from the empty patch in the classical sky: that of the catalogue's own makers", True),
+        ("Still open", "the stories and images themselves, which the atlas weighs", True)])
+    scorecard("topic-deep-memory", "scorecard", "What each study tested and found",
+              ["The trace", "If there was a shared past", "What the record shows"], [
         (31, "population-y", "The Australasian signal in the Amazon", "The resemblance between some Amazonians and Australasians traces to a crossing of the Pacific.",
          "It is real and faint, and it leads back to mainland Asia tens of thousands of years ago. None of 58 groups of ancient Americans stands out for it.",
          "Not found", "Real, but not from across the Pacific", "no"),
         (41, "strangers", "Strangers in the record", "Somebody before Columbus lies buried on the wrong side of an ocean.",
          "Among 12,977 ancient people nobody does, apart from the medieval Norse of Greenland. The one person left unexplained was checked in her raw DNA, which points to modern contamination.",
-         "Not found", "No strangers found", "no")])
+         "Not found", "No strangers found", "no"),
+        (85, "ancient-sky-hole", "The hole in the ancient sky", "The empty southern patch in the classical constellations is centred where the pole stood long before Babylon or Greece.",
+         "It is centred where the pole stood for Hipparchus and Ptolemy, who compiled the catalogue. A sky of 3000 BCE fits far worse. But a catalogue's edge dates its last compilers, not the first people to draw the figures.",
+         "Not found", "The hole dates the catalogue, not the constellations", "no")])
+    (FIG / "topic-deep-memory" / "sky-plate.html").write_text(
+        '<figure class="plate"><img src="../../assets/illustrations/ancient-skies.jpg" loading="lazy" width="1536" height="1024" '
+        'alt="An engraving of a round chart of the southern sky, crowded with constellation figures around an empty circle at its centre, '
+        'with an astronomer sighting from a rocky shore below.">'
+        '<figcaption>An illustration made with an AI image model, for decoration. It is not evidence and is not a real star chart.</figcaption></figure>\n')
 
 
 def mind_over_matter():
@@ -244,9 +255,9 @@ def mind_over_matter():
 def main():
     younger_dryas()
     minds()
-    crossings()
+    deep_memory()
     mind_over_matter()
-    for folder in ("topic-younger-dryas", "topic-minds-and-machines", "topic-ancient-crossings", "topic-mind-over-matter"):
+    for folder in ("topic-younger-dryas", "topic-minds-and-machines", "topic-deep-memory", "topic-mind-over-matter"):
         print(folder + ":", ", ".join(sorted(p.name for p in (FIG / folder).iterdir())))
 
 

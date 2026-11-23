@@ -14,7 +14,7 @@ agents hold no credentials for `ejhong/aletheia`.
 ## 2. One question, one folder, one branch
 
 Each question lives in `questions/<slug>/` and has a GitHub issue. Work on a branch named `q/<slug>`, in a fresh
-session, and open a PR. At most **two** questions are `status:active` at a time; Eugene picks which. Never start a
+session, and open a PR. Any number of questions may be `status:active` at once; Eugene picks which. Never start a
 question Eugene hasn't made active.
 
 ## 3. Lock the plan before looking at results
@@ -44,7 +44,7 @@ Each question carries one lane label; it decides what "done" looks like.
 |---|---|---|
 | `data` | Re-running the analysis from scratch on public data | Locked protocol, reproducible `analysis/`, `RESULTS.md`, and a replication by a second vendor's agent working from the protocol alone |
 | `model` | Many calls to several vendors' models, scripted | Same as `data`; prompts, model IDs and dates recorded; no single-vendor conclusions |
-| `proof` | The Lean build: compiles with no `sorry`, or doesn't | A Lean project in `questions/<slug>/lean/`, plus a plain statement check by models from two other vendors that the formal statement says what was meant |
+| `proof` | The Lean build: compiles with no `sorry`, or doesn't | A Lean project in `questions/<slug>/lean/`, plus a plain statement check by a model from another vendor that the formal statement says what was meant |
 | `audit` | Sources read in the original, with locators | A sourced table with Aletheia's verification labels; usually belongs in the atlas itself, so the lab only drafts the request |
 | `protocol` | Nothing to run; needs people or a lab | A study design and a request for proposals, costed |
 | `watch` | New publications | A scheduled sweep that files new-evidence notes; no conclusions |
@@ -93,4 +93,5 @@ never stand in for a photograph, chart or map of anything real, and do not go on
 
 Related questions are grouped on topic pages (`site/topics/<slug>.md`: a title, a one-line summary, the issue
 numbers in reading order, and a short discussion of what the studies add up to). When a result lands, update the
-topic page it belongs to, or start one when two or more questions bear on the same claim.
+topic page it belongs to, or start one when two or more questions bear on the same claim. Where a topic bears on a case
+in the atlas, name the case in the page's front matter (`atlas:`); the page links to it and leaves the judging there.

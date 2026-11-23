@@ -1,0 +1,970 @@
+{
+  "nh4": {
+    "sites": [
+      "ACT11d",
+      "Humboldt",
+      "NEEM",
+      "NEGIS",
+      "NGRIP",
+      "Tunu"
+    ],
+    "windows": 56,
+    "network": {
+      "value": 1.4484,
+      "rank": 10,
+      "n": 56,
+      "fraction": 0.1786
+    },
+    "verdict": "ordinary",
+    "by_site": {
+      "ACT11d": {
+        "value": 2.6203,
+        "rank": 7,
+        "n": 67,
+        "fraction": 0.1045
+      },
+      "Humboldt": {
+        "value": 0.7965,
+        "rank": 41,
+        "n": 92,
+        "fraction": 0.4457
+      },
+      "NEEM": {
+        "value": 0.4432,
+        "rank": 48,
+        "n": 94,
+        "fraction": 0.5106
+      },
+      "NEGIS": {
+        "value": 2.8338,
+        "rank": 6,
+        "n": 95,
+        "fraction": 0.0632
+      },
+      "NGRIP": {
+        "value": 1.372,
+        "rank": 21,
+        "n": 84,
+        "fraction": 0.25
+      },
+      "Tunu": {
+        "value": 0.6244,
+        "rank": 42,
+        "n": 95,
+        "fraction": 0.4421
+      }
+    },
+    "excess_over_typical_year": {
+      "ACT11d": 2.4923,
+      "Humboldt": 0.5837,
+      "NEEM": 0.17,
+      "NEGIS": 5.958,
+      "NGRIP": 0.4747,
+      "Tunu": 0.3737
+    },
+    "excess_median_of_sites": 0.5292,
+    "top_windows": [
+      [
+        3.2998,
+        1894
+      ],
+      [
+        2.9387,
+        1888
+      ],
+      [
+        2.7303,
+        1862
+      ],
+      [
+        2.2502,
+        1950
+      ],
+      [
+        2.0742,
+        1870
+      ],
+      [
+        1.8406,
+        1942
+      ],
+      [
+        1.6118,
+        1868
+      ],
+      [
+        1.5221,
+        1936
+      ],
+      [
+        1.5018,
+        1926
+      ],
+      [
+        1.4484,
+        1908
+      ]
+    ],
+    "variants": {
+      "three-year window, 1907 to 1909": {
+        "network": {
+          "value": 1.5158,
+          "rank": 11,
+          "n": 37,
+          "fraction": 0.2973
+        },
+        "verdict": "ordinary"
+      },
+      "largest sample of each year in place of its mean": {
+        "network": {
+          "value": 1.1915,
+          "rank": 14,
+          "n": 56,
+          "fraction": 0.25
+        },
+        "verdict": "ordinary"
+      },
+      "without ACT11d": {
+        "network": {
+          "value": 1.214,
+          "rank": 21,
+          "n": 81,
+          "fraction": 0.2593
+        },
+        "verdict": "ordinary"
+      },
+      "without Humboldt": {
+        "network": {
+          "value": 1.5787,
+          "rank": 10,
+          "n": 56,
+          "fraction": 0.1786
+        },
+        "verdict": "ordinary"
+      },
+      "without NEEM": {
+        "network": {
+          "value": 1.6494,
+          "rank": 8,
+          "n": 56,
+          "fraction": 0.1429
+        },
+        "verdict": "ordinary"
+      },
+      "without NEGIS": {
+        "network": {
+          "value": 1.1713,
+          "rank": 14,
+          "n": 56,
+          "fraction": 0.25
+        },
+        "verdict": "ordinary"
+      },
+      "without NGRIP": {
+        "network": {
+          "value": 1.4636,
+          "rank": 14,
+          "n": 66,
+          "fraction": 0.2121
+        },
+        "verdict": "ordinary"
+      },
+      "without Tunu": {
+        "network": {
+          "value": 1.6132,
+          "rank": 7,
+          "n": 56,
+          "fraction": 0.125
+        },
+        "verdict": "ordinary"
+      },
+      "DRI sites only": {
+        "network": {
+          "value": 1.1211,
+          "rank": 18,
+          "n": 66,
+          "fraction": 0.2727
+        },
+        "verdict": "ordinary"
+      },
+      "other laboratories only": {
+        "network": {
+          "value": 2.1029,
+          "rank": 7,
+          "n": 84,
+          "fraction": 0.0833
+        },
+        "verdict": "elevated"
+      }
+    },
+    "reported_apart": {
+      "summit2010": {
+        "rank": {
+          "value": 2.9468,
+          "rank": 8,
+          "n": 95,
+          "fraction": 0.0842
+        },
+        "excess": 3.7424
+      },
+      "summit2023": {
+        "rank": {
+          "value": 3.5243,
+          "rank": 5,
+          "n": 91,
+          "fraction": 0.0549
+        },
+        "excess": 4.7321
+      },
+      "tunu2022b": {
+        "rank": {
+          "value": -0.5508,
+          "rank": 82,
+          "n": 95,
+          "fraction": 0.8632
+        },
+        "excess": -0.1702
+      },
+      "tunu_n": {
+        "rank": {
+          "value": 1.4645,
+          "rank": 17,
+          "n": 92,
+          "fraction": 0.1848
+        },
+        "excess": 1.2821
+      },
+      "ht95": {
+        "rank": {
+          "value": -1.2748,
+          "rank": 93,
+          "n": 95,
+          "fraction": 0.9789
+        },
+        "excess": -0.336
+      },
+      "b20": {
+        "rank": {
+          "value": 0.3954,
+          "rank": 35,
+          "n": 71,
+          "fraction": 0.493
+        },
+        "excess": 0.1992
+      }
+    },
+    "power": {
+      "share 1.0, pulse 0.1": {
+        "elevated": 0.08,
+        "exceptional": 0.02
+      },
+      "share 1.0, pulse 0.25": {
+        "elevated": 0.085,
+        "exceptional": 0.0225
+      },
+      "share 1.0, pulse 0.5": {
+        "elevated": 0.1175,
+        "exceptional": 0.05
+      },
+      "share 1.0, pulse 1.0": {
+        "elevated": 0.3825,
+        "exceptional": 0.055
+      },
+      "share 1.0, pulse 2.0": {
+        "elevated": 0.895,
+        "exceptional": 0.2125
+      },
+      "share 1.0, pulse 4.0": {
+        "elevated": 1.0,
+        "exceptional": 0.97
+      },
+      "share 0.5, pulse 0.1": {
+        "elevated": 0.0875,
+        "exceptional": 0.0175
+      },
+      "share 0.5, pulse 0.25": {
+        "elevated": 0.105,
+        "exceptional": 0.0075
+      },
+      "share 0.5, pulse 0.5": {
+        "elevated": 0.105,
+        "exceptional": 0.0275
+      },
+      "share 0.5, pulse 1.0": {
+        "elevated": 0.16,
+        "exceptional": 0.03
+      },
+      "share 0.5, pulse 2.0": {
+        "elevated": 0.275,
+        "exceptional": 0.08
+      },
+      "share 0.5, pulse 4.0": {
+        "elevated": 0.515,
+        "exceptional": 0.2075
+      }
+    }
+  },
+  "no3": {
+    "sites": [
+      "ACT11d",
+      "Humboldt",
+      "NEEM",
+      "NGRIP",
+      "Tunu"
+    ],
+    "windows": 56,
+    "network": {
+      "value": 1.0483,
+      "rank": 10,
+      "n": 56,
+      "fraction": 0.1786
+    },
+    "verdict": "ordinary",
+    "by_site": {
+      "ACT11d": {
+        "value": -0.008,
+        "rank": 46,
+        "n": 67,
+        "fraction": 0.6866
+      },
+      "Humboldt": {
+        "value": 0.2094,
+        "rank": 59,
+        "n": 92,
+        "fraction": 0.6413
+      },
+      "NEEM": {
+        "value": 1.8229,
+        "rank": 7,
+        "n": 94,
+        "fraction": 0.0745
+      },
+      "NGRIP": {
+        "value": 2.3251,
+        "rank": 6,
+        "n": 84,
+        "fraction": 0.0714
+      },
+      "Tunu": {
+        "value": 0.8921,
+        "rank": 27,
+        "n": 95,
+        "fraction": 0.2842
+      }
+    },
+    "excess_over_typical_year": {
+      "ACT11d": -0.0029,
+      "Humboldt": 0.0425,
+      "NEEM": 0.3694,
+      "NGRIP": 0.5276,
+      "Tunu": 0.1953
+    },
+    "excess_median_of_sites": 0.1953,
+    "top_windows": [
+      [
+        1.8823,
+        1862
+      ],
+      [
+        1.829,
+        1906
+      ],
+      [
+        1.6642,
+        1894
+      ],
+      [
+        1.4872,
+        1926
+      ],
+      [
+        1.4317,
+        1900
+      ],
+      [
+        1.3662,
+        1960
+      ],
+      [
+        1.3118,
+        1864
+      ],
+      [
+        1.0793,
+        1860
+      ],
+      [
+        1.0493,
+        1884
+      ],
+      [
+        1.0483,
+        1908
+      ]
+    ],
+    "variants": {
+      "three-year window, 1907 to 1909": {
+        "network": {
+          "value": 1.4567,
+          "rank": 3,
+          "n": 37,
+          "fraction": 0.0811
+        },
+        "verdict": "elevated"
+      },
+      "largest sample of each year in place of its mean": {
+        "network": {
+          "value": 0.6728,
+          "rank": 20,
+          "n": 56,
+          "fraction": 0.3571
+        },
+        "verdict": "ordinary"
+      },
+      "without ACT11d": {
+        "network": {
+          "value": 1.3124,
+          "rank": 7,
+          "n": 81,
+          "fraction": 0.0864
+        },
+        "verdict": "elevated"
+      },
+      "without Humboldt": {
+        "network": {
+          "value": 1.2581,
+          "rank": 6,
+          "n": 56,
+          "fraction": 0.1071
+        },
+        "verdict": "ordinary"
+      },
+      "without NEEM": {
+        "network": {
+          "value": 0.8547,
+          "rank": 16,
+          "n": 56,
+          "fraction": 0.2857
+        },
+        "verdict": "ordinary"
+      },
+      "without NGRIP": {
+        "network": {
+          "value": 0.7291,
+          "rank": 19,
+          "n": 66,
+          "fraction": 0.2879
+        },
+        "verdict": "ordinary"
+      },
+      "without Tunu": {
+        "network": {
+          "value": 1.0874,
+          "rank": 11,
+          "n": 56,
+          "fraction": 0.1964
+        },
+        "verdict": "ordinary"
+      },
+      "DRI sites only": {
+        "network": {
+          "value": 0.7291,
+          "rank": 19,
+          "n": 66,
+          "fraction": 0.2879
+        },
+        "verdict": "ordinary"
+      },
+      "other laboratories only": {
+        "network": {
+          "value": 2.3251,
+          "rank": 6,
+          "n": 84,
+          "fraction": 0.0714
+        },
+        "verdict": "elevated"
+      }
+    },
+    "reported_apart": {
+      "summit2010": {
+        "rank": {
+          "value": 3.7969,
+          "rank": 1,
+          "n": 95,
+          "fraction": 0.0105
+        },
+        "excess": 0.777
+      },
+      "summit2023": {
+        "rank": {
+          "value": 1.5234,
+          "rank": 14,
+          "n": 91,
+          "fraction": 0.1538
+        },
+        "excess": 0.3385
+      },
+      "tunu2022b": {
+        "rank": {
+          "value": 0.6538,
+          "rank": 35,
+          "n": 95,
+          "fraction": 0.3684
+        },
+        "excess": 0.1347
+      },
+      "tunu_n": {
+        "rank": {
+          "value": 1.7185,
+          "rank": 15,
+          "n": 92,
+          "fraction": 0.163
+        },
+        "excess": 0.4544
+      },
+      "ht95": {
+        "rank": {
+          "value": 0.1979,
+          "rank": 54,
+          "n": 95,
+          "fraction": 0.5684
+        },
+        "excess": 0.0442
+      },
+      "b20": {
+        "rank": {
+          "value": 0.0149,
+          "rank": 50,
+          "n": 71,
+          "fraction": 0.7042
+        },
+        "excess": 0.0049
+      }
+    }
+  },
+  "bc": {
+    "sites": [
+      "Humboldt",
+      "NEEM",
+      "Tunu"
+    ],
+    "windows": 92,
+    "network": {
+      "value": 1.0267,
+      "rank": 30,
+      "n": 92,
+      "fraction": 0.3261
+    },
+    "verdict": "ordinary",
+    "by_site": {
+      "Humboldt": {
+        "value": -0.0149,
+        "rank": 72,
+        "n": 92,
+        "fraction": 0.7826
+      },
+      "NEEM": {
+        "value": 1.9325,
+        "rank": 14,
+        "n": 95,
+        "fraction": 0.1474
+      },
+      "Tunu": {
+        "value": 1.1625,
+        "rank": 20,
+        "n": 95,
+        "fraction": 0.2105
+      }
+    },
+    "excess_over_typical_year": {
+      "Humboldt": -0.0048,
+      "NEEM": 1.3908,
+      "Tunu": 0.5442
+    },
+    "excess_median_of_sites": 0.5442,
+    "top_windows": [
+      [
+        2.9596,
+        1852
+      ],
+      [
+        2.813,
+        1972
+      ],
+      [
+        2.3969,
+        1918
+      ],
+      [
+        2.2105,
+        1894
+      ],
+      [
+        1.9903,
+        1844
+      ],
+      [
+        1.9688,
+        1934
+      ],
+      [
+        1.9162,
+        1842
+      ],
+      [
+        1.905,
+        1836
+      ],
+      [
+        1.8739,
+        1916
+      ],
+      [
+        1.8674,
+        1806
+      ]
+    ],
+    "variants": {
+      "three-year window, 1907 to 1909": {
+        "network": {
+          "value": 1.1613,
+          "rank": 24,
+          "n": 61,
+          "fraction": 0.3934
+        },
+        "verdict": "ordinary"
+      },
+      "largest sample of each year in place of its mean": {
+        "network": {
+          "value": 0.6122,
+          "rank": 46,
+          "n": 92,
+          "fraction": 0.5
+        },
+        "verdict": "ordinary"
+      },
+      "without Humboldt": {
+        "network": {
+          "value": 1.5475,
+          "rank": 14,
+          "n": 95,
+          "fraction": 0.1474
+        },
+        "verdict": "ordinary"
+      },
+      "without NEEM": {
+        "network": {
+          "value": 0.5738,
+          "rank": 48,
+          "n": 92,
+          "fraction": 0.5217
+        },
+        "verdict": "ordinary"
+      },
+      "without Tunu": {
+        "network": {
+          "value": 0.9588,
+          "rank": 32,
+          "n": 92,
+          "fraction": 0.3478
+        },
+        "verdict": "ordinary"
+      },
+      "DRI sites only": {
+        "network": {
+          "value": 1.0267,
+          "rank": 30,
+          "n": 92,
+          "fraction": 0.3261
+        },
+        "verdict": "ordinary"
+      },
+      "other laboratories only": {
+        "network": null,
+        "verdict": "not testable"
+      }
+    },
+    "reported_apart": {
+      "summit2010": {
+        "rank": {
+          "value": 2.5544,
+          "rank": 6,
+          "n": 95,
+          "fraction": 0.0632
+        },
+        "excess": 1.4016
+      },
+      "summit2023": {
+        "rank": {
+          "value": 2.8978,
+          "rank": 6,
+          "n": 91,
+          "fraction": 0.0659
+        },
+        "excess": 0.9804
+      },
+      "tunu2022b": {
+        "rank": {
+          "value": 0.7331,
+          "rank": 42,
+          "n": 94,
+          "fraction": 0.4468
+        },
+        "excess": 0.2803
+      },
+      "ht95": {
+        "rank": {
+          "value": 0.8656,
+          "rank": 34,
+          "n": 95,
+          "fraction": 0.3579
+        },
+        "excess": 0.7169
+      }
+    }
+  },
+  "s": {
+    "sites": [
+      "ACT11d",
+      "Humboldt",
+      "NEEM",
+      "NGRIP",
+      "Tunu"
+    ],
+    "windows": 56,
+    "network": {
+      "value": 0.6376,
+      "rank": 23,
+      "n": 56,
+      "fraction": 0.4107
+    },
+    "verdict": "ordinary",
+    "by_site": {
+      "ACT11d": {
+        "value": -0.1956,
+        "rank": 52,
+        "n": 67,
+        "fraction": 0.7761
+      },
+      "Humboldt": {
+        "value": 0.0972,
+        "rank": 60,
+        "n": 87,
+        "fraction": 0.6897
+      },
+      "NEEM": {
+        "value": 1.0083,
+        "rank": 28,
+        "n": 95,
+        "fraction": 0.2947
+      },
+      "NGRIP": {
+        "value": 1.8809,
+        "rank": 15,
+        "n": 84,
+        "fraction": 0.1786
+      },
+      "Tunu": {
+        "value": 0.3972,
+        "rank": 51,
+        "n": 95,
+        "fraction": 0.5368
+      }
+    },
+    "excess_over_typical_year": {
+      "ACT11d": -0.1166,
+      "Humboldt": 0.0585,
+      "NEEM": 0.4433,
+      "NGRIP": 0.8249,
+      "Tunu": 0.1696
+    },
+    "excess_median_of_sites": 0.1696,
+    "top_windows": [
+      [
+        3.3592,
+        1884
+      ],
+      [
+        2.4642,
+        1912
+      ],
+      [
+        2.3527,
+        1872
+      ],
+      [
+        2.3081,
+        1862
+      ],
+      [
+        1.9102,
+        1926
+      ],
+      [
+        1.7192,
+        1856
+      ],
+      [
+        1.5679,
+        1882
+      ],
+      [
+        1.5426,
+        1924
+      ],
+      [
+        1.4913,
+        1946
+      ],
+      [
+        1.4273,
+        1918
+      ]
+    ],
+    "variants": {
+      "three-year window, 1907 to 1909": {
+        "network": {
+          "value": 1.2217,
+          "rank": 12,
+          "n": 37,
+          "fraction": 0.3243
+        },
+        "verdict": "ordinary"
+      },
+      "largest sample of each year in place of its mean": {
+        "network": {
+          "value": 0.4512,
+          "rank": 27,
+          "n": 56,
+          "fraction": 0.4821
+        },
+        "verdict": "ordinary"
+      },
+      "without ACT11d": {
+        "network": {
+          "value": 0.8459,
+          "rank": 27,
+          "n": 76,
+          "fraction": 0.3553
+        },
+        "verdict": "ordinary"
+      },
+      "without Humboldt": {
+        "network": {
+          "value": 0.7727,
+          "rank": 21,
+          "n": 56,
+          "fraction": 0.375
+        },
+        "verdict": "ordinary"
+      },
+      "without NEEM": {
+        "network": {
+          "value": 0.5449,
+          "rank": 25,
+          "n": 56,
+          "fraction": 0.4464
+        },
+        "verdict": "ordinary"
+      },
+      "without NGRIP": {
+        "network": {
+          "value": 0.3268,
+          "rank": 43,
+          "n": 67,
+          "fraction": 0.6418
+        },
+        "verdict": "ordinary"
+      },
+      "without Tunu": {
+        "network": {
+          "value": 0.6977,
+          "rank": 20,
+          "n": 56,
+          "fraction": 0.3571
+        },
+        "verdict": "ordinary"
+      },
+      "DRI sites only": {
+        "network": {
+          "value": 0.3268,
+          "rank": 43,
+          "n": 67,
+          "fraction": 0.6418
+        },
+        "verdict": "ordinary"
+      },
+      "other laboratories only": {
+        "network": {
+          "value": 1.8809,
+          "rank": 15,
+          "n": 84,
+          "fraction": 0.1786
+        },
+        "verdict": "ordinary"
+      }
+    },
+    "reported_apart": {
+      "summit2010": {
+        "rank": {
+          "value": 0.9027,
+          "rank": 28,
+          "n": 95,
+          "fraction": 0.2947
+        },
+        "excess": 0.4517
+      },
+      "summit2023": {
+        "rank": {
+          "value": 0.4587,
+          "rank": 46,
+          "n": 91,
+          "fraction": 0.5055
+        },
+        "excess": 0.2068
+      },
+      "tunu2022b": {
+        "rank": {
+          "value": 1.7209,
+          "rank": 13,
+          "n": 95,
+          "fraction": 0.1368
+        },
+        "excess": 0.9324
+      },
+      "tunu_n": {
+        "rank": {
+          "value": 2.3734,
+          "rank": 10,
+          "n": 92,
+          "fraction": 0.1087
+        },
+        "excess": 1.1999
+      },
+      "ht95": {
+        "rank": {
+          "value": 0.7694,
+          "rank": 33,
+          "n": 95,
+          "fraction": 0.3474
+        },
+        "excess": 0.5157
+      },
+      "b20": {
+        "rank": {
+          "value": 0.7942,
+          "rank": 27,
+          "n": 71,
+          "fraction": 0.3803
+        },
+        "excess": 0.6773
+      }
+    },
+    "katmai_window_1912": {
+      "value": 2.4642,
+      "rank": 2,
+      "n": 56,
+      "fraction": 0.0357
+    }
+  }
+}

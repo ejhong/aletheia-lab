@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-"""Generate interactive observatory HTML figures for site/figures/ancient-sky-hole/.
+"""Generate the interactive HTML figures for site/figures/ancient-sky-hole/.
 
-Reads ONLY locked results/ and primary data/ catalogs. Produces four self-contained,
-zero-dependency interactive fragments embedded into site/content/ancient-sky-hole.md:
-  1. tiles.html      - Headline metric tiles
-  2. sky_dome.html   - Interactive Southern Hemisphere Celestial Time Machine (Vondrak 2011)
-  3. contour.html    - Interactive 2D (Epoch x Latitude) Observatory Likelihood & Contour Map
-  4. rim.html        - Interactive Horizon-Elevation Rim Explorer (Ptolemy vs. Missing Stars)
+Reads ONLY locked results/ and primary data/ catalogs. Produces five self-contained,
+zero-dependency fragments embedded into site/content/ancient-sky-hole.md:
+  1. tiles.html      - Headline tiles
+  2. verdict.html    - Verdict panel
+  3. sky_dome.html   - The southern sky at a chosen date (Vondrak 2011 precession)
+  4. contour.html    - How well each date and latitude fits
+  5. rim.html        - The stars on the rim (catalogued vs. left-out stars)
+
+Colours and type follow site/assets/site.css: the dark panels use the site's band tokens
+(warm near-black), never navy. Canvas code uses the same tokens as hex values.
 """
 from __future__ import annotations
 
@@ -175,12 +179,74 @@ def bv_to_hex(bv: float) -> str:
     return "#ffbf80"
 
 
+def fmt_year(t: float) -> str:
+    """Astronomical year (0 = 1 BCE) to a plain BCE/CE label."""
+    y = int(round(t))
+    return f"{1 - y} BCE" if y <= 0 else f"{y} CE"
+
+
+def variant_epoch(summary: Dict, vid: str) -> float:
+    for v in summary["variants"]:
+        if v.get("name") == vid:
+            return float(v["epoch"])
+    raise KeyError(vid)
+
+
+# Shared panel styles for the three dark sky figures: a night-blue plate set into the warm page.
+# The site's band tokens (site/assets/site.css) are re-pointed to blues on the panel only; copper,
+# ochre, verdigris and the cream ink stay the site's. `.fig` prefixes beat `.prose p` / `.prose h3`.
+PANEL_CSS = """
+.fig .sky-panel {
+  --band: #0d1421; --band-soft: #131c2c; --band-line: #2a3750;
+  --band-ink: #f6f1e8; --band-ink-soft: #cdd3de; --band-faint: #8f9bb1; --band-slate: #c9daf0;
+  --band-copper: #d08a5c; --band-verdigris: #7fb39d; --band-ochre: #cfa544;
+  background: var(--band); color: var(--band-ink-soft);
+  border: 1px solid var(--band-line); border-radius: 3px; overflow: hidden;
+  font-family: var(--sans);
+}
+.fig .sky-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 0.5rem 1.25rem; padding: 1rem 1.25rem 0.85rem; border-bottom: 1px solid var(--band-line);
+}
+.fig .sky-eyebrow {
+  font: 500 10.5px/1.4 var(--mono); text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--band-faint); margin: 0 0 0.3rem;
+}
+.fig .sky-title { font: 400 1.3rem/1.25 var(--serif); color: var(--band-ink); margin: 0; letter-spacing: -0.005em; }
+.fig .sky-legend {
+  display: flex; flex-wrap: wrap; gap: 0.35rem 1.4rem; margin: 0;
+  padding: 0.6rem 1.25rem 0.7rem; font: 400 0.84rem/1.4 var(--sans); color: var(--band-ink-soft);
+}
+.fig .sky-legend .key { display: inline-flex; align-items: center; gap: 0.4rem; }
+.fig .sky-legend svg { flex: none; }
+.fig .sky-btn {
+  font: 400 0.8rem/1.25 var(--sans); padding: 0.4rem 0.7rem; border-radius: 3px; cursor: pointer;
+  background: transparent; border: 1px solid var(--band-line); color: var(--band-ink-soft);
+}
+.fig .sky-btn:hover { border-color: var(--band-faint); color: var(--band-ink); }
+.fig .sky-btn.is-active, .fig .sky-btn[aria-pressed="true"] {
+  border-color: var(--band-copper); color: var(--band-ink);
+  background: color-mix(in oklab, var(--band-copper) 16%, transparent);
+}
+.fig .sky-panel :focus-visible { outline: 2px solid var(--band-copper); outline-offset: 2px; }
+.fig .sky-panel input[type="checkbox"] { accent-color: var(--band-copper); }
+.fig .sky-panel strong { color: var(--band-ink); font-weight: 600; }
+"""
+
+
 def build_tiles_html(summary: Dict) -> str:
-    return """<div class="tiles">
-<div class="tile"><p class="tile-value">201 BCE–1000 CE</p><p class="tile-label">combined honest range across 500 spatial-block bootstraps &amp; all 13 locked models</p></div>
-<div class="tile"><p class="tile-value">121 BCE–160 CE</p><p class="tile-label">bright-star (V≤4), geometric-void &amp; free-extinction consensus (Hipparchus to Ptolemy)</p></div>
-<div class="tile"><p class="tile-value">&gt; 10<sup>46</sup> : 1</p><p class="tile-label">likelihood odds against a 3000 BCE sky (Δln L = −106.2 in primary M1; −125.6 clear sky)</p></div>
-<div class="tile"><p class="tile-value">0 of 500</p><p class="tile-label">spatial-block bootstrap resamples landing before 3000 BCE (earliest: 201 BCE)</p></div>
+    earliest = summary["combined_honest_epoch_labels"][0]
+    n_var = len(summary["variants"])
+    n_loco = len(summary["loco_jackknife"])
+    n_boot = int(summary["bootstrap_m1"]["n_boot"])
+    lo = fmt_year(variant_epoch(summary, "vmag_le_4.0"))
+    hi = fmt_year(summary["m2_free_extinction"]["best"]["epoch"])
+    m1 = summary["primary_m1"]["epoch_label"]
+    return f"""<div class="tiles">
+<div class="tile"><p class="tile-value is-word">After {earliest}</p><p class="tile-label">the earliest date in any of {n_var} versions of the test, {n_loco} leave-one-out runs and {n_boot} reshufflings of the sky</p></div>
+<div class="tile"><p class="tile-value is-word">{lo} to {hi}</p><p class="tile-label">where the three best-fitting versions land: the working lives of Hipparchus and Ptolemy</p></div>
+<div class="tile"><p class="tile-value">{m1}</p><p class="tile-label">where the main model landed, almost eight centuries after the catalogue was written</p></div>
+<div class="tile"><p class="tile-value is-word">The catalogue</p><p class="tile-label">is what the empty patch dates, not the first drawing of the constellations</p></div>
 </div>
 """
 
@@ -280,149 +346,76 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
 
     return f"""<figure class="fig sky-obs-fig" id="sky-time-machine">
 <style>
-.sky-obs-fig {{ margin: 2.4rem 0 2.8rem; }}
-.sky-plate {{
-  background: radial-gradient(ellipse at 50% 35%, #151e34 0%, #0d1220 55%, #080b13 100%);
-  border: 1px solid rgba(207, 165, 68, 0.34);
-  border-radius: 6px;
-  color: #f3ecdf;
-  overflow: hidden;
-  box-shadow: 0 22px 54px rgba(12, 10, 8, 0.28), inset 0 0 0 1px rgba(255, 240, 200, 0.05);
-}}
-.sky-head {{
-  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
-  gap: 0.5rem 1.25rem;
-  padding: 1.15rem 1.4rem 0.9rem;
-  border-bottom: 1px solid rgba(207, 165, 68, 0.18);
-  background: linear-gradient(180deg, rgba(207,165,68,0.06) 0%, rgba(0,0,0,0) 100%);
-}}
-.sky-eyebrow {{
-  font: 500 10.5px/1.4 var(--mono); text-transform: uppercase; letter-spacing: 0.2em;
-  color: #d8ad5e; margin: 0 0 0.25rem;
-}}
-.sky-title {{
-  font: 400 1.42rem/1.2 var(--serif); color: #f8f2e6; margin: 0; letter-spacing: -0.01em;
-}}
-.sky-readout-pill {{
+{PANEL_CSS}
+.sky-readout {{
   display: flex; align-items: baseline; gap: 0.85rem;
-  font-family: var(--mono); font-variant-numeric: tabular-nums;
-  background: rgba(8, 11, 19, 0.72); border: 1px solid rgba(207, 165, 68, 0.32);
-  padding: 0.4rem 0.8rem; border-radius: 999px;
+  font: 400 0.9rem/1.3 var(--sans); font-variant-numeric: tabular-nums;
 }}
-.sky-readout-epoch {{ font-size: 1.02rem; font-weight: 600; color: #f4cf82; }}
-.sky-readout-lat {{ font-size: 0.85rem; color: #b9c5d8; }}
-.sky-stage {{
-  position: relative;
-  display: flex; justify-content: center; align-items: center;
-  padding: 0.9rem 1rem 0.6rem;
-}}
-.sky-canvas-wrap {{
-  position: relative; width: 100%; max-width: 660px; aspect-ratio: 1 / 1;
-}}
-.sky-canvas-wrap canvas {{
-  display: block; width: 100%; height: 100%; cursor: crosshair; touch-action: pan-y;
-}}
+.sky-readout-epoch {{ font-weight: 600; color: var(--band-ink); }}
+.sky-readout-lat {{ color: var(--band-ink-soft); }}
+.sky-stage {{ position: relative; display: flex; justify-content: center; padding: 0.9rem 1rem 0.4rem; }}
+.sky-canvas-wrap {{ position: relative; width: 100%; max-width: 660px; aspect-ratio: 1 / 1; }}
+.sky-canvas-wrap canvas {{ display: block; width: 100%; height: 100%; cursor: crosshair; touch-action: pan-y; }}
 .sky-tip {{
   position: absolute; pointer-events: none; z-index: 12;
-  min-width: 175px; max-width: 240px;
-  padding: 0.55rem 0.75rem; border-radius: 4px;
-  background: rgba(10, 14, 24, 0.94);
-  border: 1px solid rgba(207, 165, 68, 0.45);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
-  color: #ede5d4; font: 400 12px/1.45 var(--sans);
+  min-width: 170px; max-width: 240px; padding: 0.55rem 0.7rem; border-radius: 3px;
+  background: var(--band); border: 1px solid var(--band-line);
+  color: var(--band-ink-soft); font: 400 12.5px/1.5 var(--sans);
   opacity: 0; transition: opacity 0.12s ease;
 }}
 .sky-tip.is-on {{ opacity: 1; }}
-.sky-tip-name {{ font: 600 13.5px/1.25 var(--serif); color: #f8e5b8; margin-bottom: 0.15rem; }}
-.sky-tip-tag {{
-  display: inline-block; font: 500 10px/1.2 var(--mono); text-transform: uppercase;
-  letter-spacing: 0.1em; padding: 0.1rem 0.38rem; border-radius: 2px; margin-bottom: 0.35rem;
-}}
-.sky-tip-tag.is-cat {{ background: rgba(240, 193, 98, 0.18); color: #f5cd7c; border: 1px solid rgba(240, 193, 98, 0.35); }}
-.sky-tip-tag.is-void {{ background: rgba(114, 182, 248, 0.16); color: #8cc9ff; border: 1px solid rgba(114, 182, 248, 0.35); }}
-.sky-tip-meta {{ font-family: var(--mono); font-size: 11px; color: #b9c5d8; }}
-.sky-legend {{
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.3rem;
-  padding: 0.45rem 1.2rem 0.75rem;
-  font: 400 11.5px/1.4 var(--sans); color: #b6c1d4;
-}}
-.sky-leg-item {{ display: inline-flex; align-items: center; gap: 0.4rem; }}
-.sky-dot {{ width: 9px; height: 9px; border-radius: 50%; display: inline-block; }}
-.sky-dot.gold {{ background: #f5cb75; box-shadow: 0 0 7px rgba(245, 203, 117, 0.8); }}
-.sky-dot.blue {{ background: #6fb8ff; box-shadow: 0 0 7px rgba(111, 184, 255, 0.75); }}
-.sky-dot.ring {{ width: 14px; height: 2px; border-radius: 0; background: #e08652; }}
-.sky-dot.track {{ width: 14px; height: 0; border-top: 1.5px dashed #cfa544; border-radius: 0; }}
+.sky-tip-name {{ font-weight: 600; color: var(--band-ink); }}
+.sky-tip-name span {{ font-weight: 400; color: var(--band-faint); }}
+.sky-tip-tag {{ margin: 0.1rem 0 0.25rem; }}
+.sky-tip-tag.is-cat {{ color: var(--band-ochre); }}
+.sky-tip-tag.is-void {{ color: var(--band-slate); }}
 .sky-hud {{
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px;
-  background: rgba(207, 165, 68, 0.18);
-  border-top: 1px solid rgba(207, 165, 68, 0.2);
-  border-bottom: 1px solid rgba(207, 165, 68, 0.2);
+  background: var(--band-line); border-top: 1px solid var(--band-line); border-bottom: 1px solid var(--band-line);
 }}
-.sky-hud-cell {{ background: rgba(11, 16, 28, 0.88); padding: 0.7rem 0.9rem; text-align: center; }}
-.sky-hud-val {{ font: 600 1.08rem/1.2 var(--mono); font-variant-numeric: tabular-nums; color: #f6e7c4; }}
-.sky-hud-val.is-good {{ color: #8ad3b5; }}
-.sky-hud-val.is-bad {{ color: #e88565; }}
-.sky-hud-lbl {{ font: 400 10.5px/1.35 var(--sans); color: #9aa7bd; margin-top: 0.2rem; }}
-.sky-controls {{ padding: 1.05rem 1.35rem 1.25rem; background: rgba(8, 11, 19, 0.7); }}
+.sky-hud-cell {{ background: var(--band-soft); padding: 0.7rem 0.9rem; text-align: center; }}
+.sky-hud-val {{ font: 600 1.05rem/1.2 var(--sans); font-variant-numeric: tabular-nums; color: var(--band-ink); }}
+.sky-hud-val.is-good {{ color: var(--band-verdigris); }}
+.sky-hud-val.is-bad {{ color: var(--band-copper); }}
+.sky-hud-lbl {{ font: 400 0.78rem/1.4 var(--sans); color: var(--band-ink-soft); margin-top: 0.25rem; }}
+.sky-controls {{ padding: 1rem 1.25rem 1.15rem; }}
 .sky-sliders {{ display: grid; grid-template-columns: 1.55fr 1fr auto; gap: 0.85rem 1.25rem; align-items: end; }}
 .sky-slider-group label {{
-  display: flex; justify-content: space-between; align-items: baseline;
-  font: 500 11px/1.3 var(--mono); text-transform: uppercase; letter-spacing: 0.12em; color: #c7b89c;
-  margin-bottom: 0.35rem;
+  display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem;
+  font: 400 0.84rem/1.3 var(--sans); color: var(--band-ink-soft); margin-bottom: 0.4rem;
 }}
-.sky-slider-group label strong {{ color: #f5cf81; font-size: 12.5px; letter-spacing: 0.02em; text-transform: none; }}
+.sky-slider-group label strong {{ font-variant-numeric: tabular-nums; }}
 .sky-range {{
-  -webkit-appearance: none; appearance: none; width: 100%; height: 5px;
-  border-radius: 99px; background: rgba(207, 165, 68, 0.26); outline: none;
+  -webkit-appearance: none; appearance: none; width: 100%; height: 4px; margin: 6px 0;
+  border-radius: 2px; background: var(--band-line);
 }}
 .sky-range::-webkit-slider-thumb {{
   -webkit-appearance: none; appearance: none; width: 16px; height: 16px; border-radius: 50%;
-  background: #f2c66d; border: 2px solid #0b0f1b; box-shadow: 0 0 10px rgba(242, 198, 109, 0.7); cursor: pointer;
+  background: var(--band-copper); border: 2px solid var(--band); cursor: pointer;
 }}
 .sky-range::-moz-range-thumb {{
   width: 16px; height: 16px; border-radius: 50%;
-  background: #f2c66d; border: 2px solid #0b0f1b; box-shadow: 0 0 10px rgba(242, 198, 109, 0.7); cursor: pointer;
+  background: var(--band-copper); border: 2px solid var(--band); cursor: pointer;
 }}
-.sky-play-btn {{
-  font: 500 11.5px/1 var(--mono); text-transform: uppercase; letter-spacing: 0.12em;
-  padding: 0.62rem 1rem; border-radius: 4px; cursor: pointer;
-  background: linear-gradient(180deg, rgba(207, 165, 68, 0.25), rgba(149, 87, 48, 0.25));
-  border: 1px solid rgba(207, 165, 68, 0.55); color: #f8e5b8;
-  transition: background 0.15s, border-color 0.15s;
-  white-space: nowrap;
-}}
-.sky-play-btn:hover {{ background: rgba(207, 165, 68, 0.35); border-color: #f2c66d; }}
-.sky-presets {{
-  display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.95rem;
-}}
-.sky-preset {{
-  font: 400 11.5px/1.25 var(--sans); padding: 0.36rem 0.68rem; border-radius: 3px; cursor: pointer;
-  background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(207, 165, 68, 0.22);
-  color: #d6cbb7; transition: all 0.15s;
-}}
-.sky-preset:hover {{ border-color: rgba(207, 165, 68, 0.6); color: #fff5df; background: rgba(207, 165, 68, 0.12); }}
-.sky-preset.is-active {{
-  background: rgba(207, 165, 68, 0.24); border-color: #e6ba63; color: #fff4d6; font-weight: 500;
-}}
+.fig .sky-play-btn {{ white-space: nowrap; color: var(--band-ink); padding: 0.5rem 0.95rem; }}
+.sky-presets {{ display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.95rem; }}
 .sky-toggles {{
   display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; margin-top: 0.85rem; padding-top: 0.75rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  font: 400 11.5px/1.3 var(--mono); color: #a7b4c9;
+  border-top: 1px solid var(--band-line); font: 400 0.8rem/1.3 var(--sans); color: var(--band-ink-soft);
 }}
 .sky-toggles label {{ display: inline-flex; align-items: center; gap: 0.38rem; cursor: pointer; }}
-.sky-toggles input {{ accent-color: #e6ba63; }}
 @media (max-width: 44rem) {{
   .sky-sliders {{ grid-template-columns: 1fr; }}
   .sky-hud {{ grid-template-columns: 1fr; }}
 }}
 </style>
-<div class="sky-plate">
+<div class="sky-panel">
   <div class="sky-head">
     <div>
-      <p class="sky-eyebrow">Interactive Astrolabe · Vondrák (2011) Precession Engine</p>
-      <h3 class="sky-title">The Celestial Time Machine: Southern Sky Void</h3>
+      <p class="sky-eyebrow">The southern sky, wound back</p>
+      <h3 class="sky-title">The southern sky at a chosen date</h3>
     </div>
-    <div class="sky-readout-pill">
+    <div class="sky-readout" aria-live="polite">
       <span class="sky-readout-epoch" id="sky-epoch-out">128 BCE</span>
       <span class="sky-readout-lat" id="sky-lat-out">36.4° N</span>
     </div>
@@ -430,66 +423,66 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
 
   <div class="sky-stage">
     <div class="sky-canvas-wrap">
-      <canvas id="sky-dome-canvas" aria-label="Interactive southern celestial hemisphere map showing Ptolemy's catalogued stars, uncatalogued southern void stars, the 26,000-year precession circle, and the moving southern horizon."></canvas>
+      <canvas id="sky-dome-canvas" role="img" aria-label="Map of the southern sky showing the stars in Ptolemy's catalogue, the bright stars he left out, the circle the sky's south pole traces over 25,772 years, and the horizon for the chosen date and latitude."></canvas>
       <div class="sky-tip" id="sky-tip"></div>
     </div>
   </div>
 
-  <div class="sky-legend">
-    <span class="sky-leg-item"><i class="sky-dot gold"></i>Ptolemy's 48 constellations (<em>Almagest</em>)</span>
-    <span class="sky-leg-item"><i class="sky-dot blue"></i>Uncatalogued bright southern stars (post-1600)</span>
-    <span class="sky-leg-item"><i class="sky-dot ring"></i>Invisible southern horizon (<em>h</em><sub>max</sub> ≤ 0°)</span>
-    <span class="sky-leg-item"><i class="sky-dot track"></i>25,772-yr South Celestial Pole track</span>
-  </div>
+  <p class="sky-legend">
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="#e9d7a8"/></svg>Stars in Ptolemy's catalogue (filled)</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="none" stroke="#c9daf0" stroke-width="1.5"/></svg>Bright stars he left out (rings)</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#d08a5c" stroke-width="2"/></svg>Horizon: stars inside it never rise</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#8f9bb1" stroke-width="1.5" stroke-dasharray="3 3"/></svg>Path of the sky's south pole over 25,772 years</span>
+  </p>
 
   <div class="sky-hud">
     <div class="sky-hud-cell">
-      <div class="sky-hud-val" id="hud-ptol-vis">—</div>
-      <div class="sky-hud-lbl">Bright Ptolemy stars (V≤4.0) above horizon</div>
+      <div class="sky-hud-val" id="hud-ptol-vis">-</div>
+      <div class="sky-hud-lbl">Bright catalogued stars (magnitude 4.0 or brighter) that rise</div>
     </div>
     <div class="sky-hud-cell">
-      <div class="sky-hud-val" id="hud-void-hid">—</div>
-      <div class="sky-hud-lbl">Bright missing stars (V≤3.5) hidden below horizon</div>
+      <div class="sky-hud-val" id="hud-void-hid">-</div>
+      <div class="sky-hud-lbl">Bright left-out stars (magnitude 3.5 or brighter) that never rise</div>
     </div>
     <div class="sky-hud-cell">
-      <div class="sky-hud-val" id="hud-dll">—</div>
-      <div class="sky-hud-lbl">Locked model fit vs. peak (Δln L, clear sky)</div>
+      <div class="sky-hud-val" id="hud-dll">-</div>
+      <div class="sky-hud-lbl">How much worse this date fits than the best (0 is best; light-haze version)</div>
     </div>
   </div>
 
   <div class="sky-controls">
     <div class="sky-sliders">
       <div class="sky-slider-group">
-        <label for="sky-epoch-slider"><span>Epoch (Precession)</span><strong id="sky-epoch-lbl">128 BCE</strong></label>
+        <label for="sky-epoch-slider"><span>Date</span><strong id="sky-epoch-lbl">128 BCE</strong></label>
         <input class="sky-range" id="sky-epoch-slider" type="range" min="-10000" max="2000" step="10" value="-127">
       </div>
       <div class="sky-slider-group">
-        <label for="sky-lat-slider"><span>Observer Latitude</span><strong id="sky-lat-lbl">36.4° N</strong></label>
+        <label for="sky-lat-slider"><span>Observer's latitude</span><strong id="sky-lat-lbl">36.4° N</strong></label>
         <input class="sky-range" id="sky-lat-slider" type="range" min="15" max="45" step="0.2" value="36.4">
       </div>
-      <button type="button" class="sky-play-btn" id="sky-play-btn">&#9654; Orbit Precession</button>
+      <button type="button" class="sky-btn sky-play-btn" id="sky-play-btn" aria-pressed="false">&#9654; Play</button>
     </div>
 
-    <div class="sky-presets" id="sky-presets">
-      <button type="button" class="sky-preset" data-t="-9599" data-lat="37.2">Göbekli Tepe · 9600 BCE</button>
-      <button type="button" class="sky-preset" data-t="-2999" data-lat="31.3">Early Sumer · 3000 BCE</button>
-      <button type="button" class="sky-preset" data-t="-2599" data-lat="35.3">Ovenden / Crete · 2600 BCE</button>
-      <button type="button" class="sky-preset" data-t="-1099" data-lat="32.5">Babylon MUL.APIN · 1100 BCE</button>
-      <button type="button" class="sky-preset is-active" data-t="-127" data-lat="36.4">Hipparchus · Rhodes 128 BCE</button>
-      <button type="button" class="sky-preset" data-t="137" data-lat="31.2">Ptolemy · Alexandria 137 CE</button>
-      <button type="button" class="sky-preset" data-t="910" data-lat="25.8">Primary M1 Overshoot · 910 CE</button>
-      <button type="button" class="sky-preset" data-t="2000" data-lat="36.0">Today · 2000 CE</button>
+    <div class="sky-presets" id="sky-presets" role="group" aria-label="Places and dates">
+      <button type="button" class="sky-btn sky-preset" aria-pressed="false" data-t="-9599" data-lat="37.2">Göbekli Tepe, 9600 BCE</button>
+      <button type="button" class="sky-btn sky-preset" aria-pressed="false" data-t="-2999" data-lat="31.3">Early Sumer, 3000 BCE</button>
+      <button type="button" class="sky-btn sky-preset" aria-pressed="false" data-t="-2599" data-lat="35.3">Crete, 2600 BCE (Ovenden)</button>
+      <button type="button" class="sky-btn sky-preset" aria-pressed="false" data-t="-1099" data-lat="32.5">Babylon, 1100 BCE (MUL.APIN)</button>
+      <button type="button" class="sky-btn sky-preset is-active" aria-pressed="true" data-t="-127" data-lat="36.4">Rhodes, 128 BCE (Hipparchus)</button>
+      <button type="button" class="sky-btn sky-preset" aria-pressed="false" data-t="137" data-lat="31.2">Alexandria, 137 CE (Ptolemy)</button>
+      <button type="button" class="sky-btn sky-preset" aria-pressed="false" data-t="910" data-lat="25.8">Main model's answer, 910 CE</button>
+      <button type="button" class="sky-btn sky-preset" aria-pressed="false" data-t="2000" data-lat="36.0">Today, 2000 CE</button>
     </div>
 
     <div class="sky-toggles">
-      <label><input type="checkbox" id="tog-lines" checked> Constellation filaments</label>
-      <label><input type="checkbox" id="tog-modern" checked> Unmapped modern void figures</label>
-      <label><input type="checkbox" id="tog-labels" checked> Star &amp; epoch labels</label>
-      <label><input type="checkbox" id="tog-haze" checked> Horizon extinction haze (0°–8°)</label>
+      <label><input type="checkbox" id="tog-lines" checked> Constellation lines</label>
+      <label><input type="checkbox" id="tog-modern" checked> Modern constellations in the empty patch</label>
+      <label><input type="checkbox" id="tog-labels" checked> Star and date labels</label>
+      <label><input type="checkbox" id="tog-haze" checked> Haze band just above the horizon (0° to 8°)</label>
     </div>
   </div>
 </div>
-<figcaption>Southern celestial hemisphere in equal-area ecliptic projection centered on the South Ecliptic Pole (1,100+ real Hipparcos stars, V ≤ 5.0, cross-matched to Verbunt &amp; van Gent 2012). Drag the epoch slider or press <em>Orbit Precession</em> to move the South Celestial Pole along Earth's 25,772-year precession circle and watch how the dark never-rising horizon cap locks onto Ptolemy's empty blue void right around Hipparchus (Rhodes, 128 BCE) and Ptolemy (Alexandria, 137 CE)—and completely misses it at 3000 BCE or 9600 BCE. Hover any star to inspect its live maximum altitude.</figcaption>
+<figcaption>The southern half of the sky, drawn as an equal-area map centred on the south pole of the ecliptic (more than 1,100 Hipparcos stars brighter than magnitude 5.0, matched to Ptolemy's catalogue by Verbunt and van Gent, 2012). Move the date slider or press <em>Play</em> to swing the sky's south pole around its 25,772-year circle. The copper ring is the horizon: for an observer at the chosen latitude, stars inside it never rise. Around Hipparchus (Rhodes, 128 BCE) and Ptolemy (Alexandria, 137 CE) the ring sits on the empty patch; at 3000 BCE or 9600 BCE it misses it. Hover over a star to see how high it climbs.</figcaption>
 <script>
 (function() {{
   const DATA = {payload_json};
@@ -622,7 +615,7 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
 
   function resize() {{
     const rect = canvas.parentElement.getBoundingClientRect();
-    const w = Math.max(300, Math.round(rect.width));
+    const w = Math.max(240, Math.round(rect.width));
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = w * dpr;
     canvas.height = w * dpr;
@@ -658,6 +651,19 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
     return pts;
   }}
 
+  // Panel palette as hex for canvas (night-blue plate; copper/ochre/verdigris from site.css)
+  const C = {{
+    band: "#0d1421", bandSoft: "#131c2c", ink: "#f6f1e8", inkSoft: "#cdd3de", faint: "#8f9bb1",
+    line: "#2a3750", copper: "#d08a5c", verdigris: "#7fb39d", ochre: "#cfa544", slate: "#c9daf0"
+  }};
+  const SANS = (getComputedStyle(document.documentElement).getPropertyValue("--sans") || "").trim() || "system-ui, sans-serif";
+  // Catalogued stars: cream (bright) to ochre (faint)
+  function catColor(vmag) {{
+    const f = Math.max(0, Math.min(1, (vmag - 1.0) / 3.5));
+    const a = [246, 241, 232], b = [207, 165, 68];
+    return "rgb(" + a.map((x, k) => Math.round(x + f * (b[k] - x))).join(",") + ")";
+  }}
+
   function render() {{
     const W = state.width;
     const cx = W / 2, cy = W / 2;
@@ -667,15 +673,13 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
 
     ctx.clearRect(0, 0, W, W);
 
-    // Outer engraved brass astrolabe bezel
+    // Outer rim with degree ticks
     ctx.save();
     ctx.beginPath();
     ctx.arc(cx, cy, R + 12, 0, D2PI);
-    ctx.strokeStyle = "rgba(207, 165, 68, 0.25)";
+    ctx.strokeStyle = C.line;
     ctx.lineWidth = 1;
     ctx.stroke();
-
-    // Degree ticks around outer bezel
     for (let d = 0; d < 360; d += 5) {{
       const a = (d * Math.PI) / 180;
       const major = d % 30 === 0;
@@ -683,24 +687,20 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
       ctx.beginPath();
       ctx.moveTo(cx + r0 * Math.cos(a), cy + r0 * Math.sin(a));
       ctx.lineTo(cx + r1 * Math.cos(a), cy + r1 * Math.sin(a));
-      ctx.strokeStyle = major ? "rgba(218, 178, 92, 0.55)" : "rgba(218, 178, 92, 0.2)";
-      ctx.lineWidth = major ? 1.2 : 0.7;
+      ctx.strokeStyle = major ? C.faint : C.line;
+      ctx.lineWidth = major ? 1.1 : 0.7;
       ctx.stroke();
     }}
 
-    // Clip to celestial dome disc
+    // Sky disc (flat night blue) and clip
     ctx.beginPath();
     ctx.arc(cx, cy, R, 0, D2PI);
-    const domeGrad = ctx.createRadialGradient(cx, cy, 0, cx, cy, R);
-    domeGrad.addColorStop(0, "#121b30");
-    domeGrad.addColorStop(0.6, "#0c1324");
-    domeGrad.addColorStop(1, "#070b15");
-    ctx.fillStyle = domeGrad;
+    ctx.fillStyle = C.bandSoft;
     ctx.fill();
     ctx.clip();
 
-    // Subtle ecliptic latitude graticule rings (-60, -30, 0 deg)
-    ctx.strokeStyle = "rgba(180, 198, 228, 0.08)";
+    // Faint ecliptic-latitude rings (-60, -30, 0 deg) and spokes every 30 deg
+    ctx.strokeStyle = "rgba(246, 241, 232, 0.07)";
     ctx.lineWidth = 0.8;
     for (const beta of [-60, -30, 0]) {{
       const colat = ((90 + beta) * Math.PI) / 180;
@@ -709,7 +709,6 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
       ctx.arc(cx, cy, rRing, 0, D2PI);
       ctx.stroke();
     }}
-    // Radial spokes every 30 deg ecliptic longitude
     for (let k = 0; k < 12; k++) {{
       const a = (k * Math.PI) / 6;
       ctx.beginPath();
@@ -718,85 +717,75 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
       ctx.stroke();
     }}
 
-    // Soft ethereal Milky Way ribbon
+    // Milky Way: one broad, faint band along the galactic equator
     ctx.save();
-    for (let i = 0; i < DATA.milkyWay.length; i++) {{
-      const m = DATA.milkyWay[i];
-      const [mx, my, mr] = eqToProj(m[0], m[1], m[2], cx, cy, R);
-      if (mr < 1.15) {{
-        const g = ctx.createRadialGradient(mx, my, 0, mx, my, R * 0.14);
-        g.addColorStop(0, "rgba(176, 198, 240, 0.055)");
-        g.addColorStop(1, "rgba(176, 198, 240, 0)");
-        ctx.fillStyle = g;
-        ctx.beginPath();
-        ctx.arc(mx, my, R * 0.14, 0, D2PI);
-        ctx.fill();
-      }}
-    }}
+    ctx.beginPath();
+    DATA.milkyWay.forEach((m, idx) => {{
+      const [mx, my] = eqToProj(m[0], m[1], m[2], cx, cy, R);
+      if (idx === 0) ctx.moveTo(mx, my); else ctx.lineTo(mx, my);
+    }});
+    ctx.closePath();
+    ctx.strokeStyle = "rgba(246, 241, 232, 0.045)";
+    ctx.lineWidth = R * 0.2;
+    ctx.lineJoin = "round";
+    ctx.stroke();
     ctx.restore();
 
-    // Compute South Celestial Pole at epoch t
+    // South Celestial Pole at epoch t
     const pN = ltpequ(t);
     const pS = [-pN[0], -pN[1], -pN[2]];
     const [scpX, scpY] = eqToProj(pS[0], pS[1], pS[2], cx, cy, R);
 
-    // Draw Horizon Extinction Haze Ring (lat to lat + 8 deg around SCP)
+    // Haze band (lat to lat + 8 deg around the pole)
     if (togHaze.checked) {{
       const hazePts = drawCircleOnSphere(pS, ((lat + 8.0) * Math.PI) / 180, cx, cy, R);
       ctx.beginPath();
       hazePts.forEach((p, idx) => idx === 0 ? ctx.moveTo(p[0], p[1]) : ctx.lineTo(p[0], p[1]));
       ctx.closePath();
-      ctx.fillStyle = "rgba(198, 118, 66, 0.085)";
+      ctx.fillStyle = "rgba(208, 138, 92, 0.07)";
       ctx.fill();
       ctx.setLineDash([3, 4]);
-      ctx.strokeStyle = "rgba(224, 134, 82, 0.32)";
+      ctx.strokeStyle = "rgba(208, 138, 92, 0.4)";
       ctx.lineWidth = 1;
       ctx.stroke();
       ctx.setLineDash([]);
     }}
 
-    // Draw Dark Invisible Southern Horizon Cap (angular radius = lat around SCP)
+    // Never-rising cap (angular radius = lat around the pole): darker fill, copper horizon line
     const horPts = drawCircleOnSphere(pS, (lat * Math.PI) / 180, cx, cy, R);
     ctx.beginPath();
     horPts.forEach((p, idx) => idx === 0 ? ctx.moveTo(p[0], p[1]) : ctx.lineTo(p[0], p[1]));
     ctx.closePath();
-    const capGrad = ctx.createRadialGradient(scpX, scpY, 0, scpX, scpY, R * 0.45);
-    capGrad.addColorStop(0, "rgba(4, 7, 15, 0.72)");
-    capGrad.addColorStop(0.85, "rgba(8, 12, 24, 0.56)");
-    capGrad.addColorStop(1, "rgba(224, 134, 82, 0.14)");
-    ctx.fillStyle = capGrad;
+    ctx.fillStyle = "rgba(5, 9, 17, 0.55)";
     ctx.fill();
-    ctx.strokeStyle = "#e08652";
+    ctx.strokeStyle = C.copper;
     ctx.lineWidth = 2;
-    ctx.shadowColor = "rgba(224, 134, 82, 0.65)";
-    ctx.shadowBlur = 10;
     ctx.stroke();
-    ctx.shadowBlur = 0;
 
-    // Precession circle track (25,772 yrs)
+    // Precession circle (25,772 yr)
     ctx.beginPath();
     precTrack.forEach((pt, idx) => {{
       const [px, py] = eqToProj(pt[0], pt[1], pt[2], cx, cy, R);
       if (idx === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
     }});
     ctx.closePath();
-    ctx.setLineDash([4, 4]);
-    ctx.strokeStyle = "rgba(218, 178, 92, 0.52)";
-    ctx.lineWidth = 1.25;
+    ctx.setLineDash([3, 3]);
+    ctx.strokeStyle = C.faint;
+    ctx.lineWidth = 1.2;
     ctx.stroke();
     ctx.setLineDash([]);
 
-    // Milestone jewels on precession circle
+    // Dated points on the precession circle
     if (togLabels.checked) {{
-      ctx.font = "500 9.5px " + getComputedStyle(document.body).getPropertyValue("--mono");
+      ctx.font = "400 11px " + SANS;
       milestonePoles.forEach(m => {{
         const [mx, my] = eqToProj(m.u[0], m.u[1], m.u[2], cx, cy, R);
         ctx.beginPath();
         ctx.arc(mx, my, 2.5, 0, D2PI);
-        ctx.fillStyle = "rgba(218, 178, 92, 0.78)";
+        ctx.fillStyle = C.faint;
         ctx.fill();
-        ctx.fillStyle = "rgba(228, 200, 140, 0.78)";
-        ctx.fillText(m.lbl, mx + 6, my + 3);
+        ctx.fillStyle = C.inkSoft;
+        ctx.fillText(m.lbl, mx + 6, my + 4);
       }});
     }}
 
@@ -827,10 +816,10 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
       }}
     }}
 
-    // Draw Classical Ptolemy constellation filaments
+    // Ptolemy's constellation lines (ochre)
     if (togLines.checked) {{
-      ctx.strokeStyle = "rgba(240, 195, 108, 0.32)";
-      ctx.lineWidth = 1.05;
+      ctx.strokeStyle = "rgba(207, 165, 68, 0.38)";
+      ctx.lineWidth = 1;
       DATA.classicalLines.forEach(c => {{
         ctx.beginPath();
         c.segs.forEach(([a, b]) => {{
@@ -844,11 +833,11 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
       }});
     }}
 
-    // Draw Unmapped post-1600 southern constellation outlines (inside void)
+    // Constellations drawn after 1600 inside the empty patch (dashed slate)
     if (togModern.checked) {{
       ctx.save();
       ctx.setLineDash([2.5, 3.5]);
-      ctx.strokeStyle = "rgba(118, 186, 250, 0.30)";
+      ctx.strokeStyle = "rgba(201, 218, 240, 0.4)";
       ctx.lineWidth = 0.95;
       DATA.modernLines.forEach(c => {{
         ctx.beginPath();
@@ -864,87 +853,68 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
       ctx.restore();
     }}
 
-    // Draw Stars (golden/warm for Ptolemy, sapphire-blue for uncatalogued)
+    // Stars: catalogued = filled cream-to-gold discs; left out = pale blue-white rings
     for (let i = 0; i < DATA.stars.length; i++) {{
       const s = DATA.stars[i];
       const [sx, sy, hMax, sr] = starXY[i];
       if (sr > 1.01) continue;
       const vmag = s[6], isCat = s[7] === 1;
       const rad = Math.max(0.85, Math.min(4.8, (5.5 - vmag) * 0.72));
-
+      ctx.beginPath();
       if (isCat) {{
-        if (vmag < 2.2) {{
-          const halo = ctx.createRadialGradient(sx, sy, 0, sx, sy, rad * 3.8);
-          halo.addColorStop(0, "rgba(248, 212, 128, 0.55)");
-          halo.addColorStop(1, "rgba(248, 212, 128, 0)");
-          ctx.fillStyle = halo;
-          ctx.beginPath();
-          ctx.arc(sx, sy, rad * 3.8, 0, D2PI);
-          ctx.fill();
-        }}
-        ctx.fillStyle = vmag < 2.8 ? "#fae0a2" : "#e3b462";
-        ctx.globalAlpha = vmag < 3.5 ? 0.96 : 0.74;
-        ctx.beginPath();
+        ctx.fillStyle = catColor(vmag);
+        ctx.globalAlpha = vmag < 3.5 ? 1 : 0.8;
         ctx.arc(sx, sy, rad, 0, D2PI);
         ctx.fill();
       }} else {{
-        if (vmag < 2.5) {{
-          const halo = ctx.createRadialGradient(sx, sy, 0, sx, sy, rad * 3.4);
-          halo.addColorStop(0, "rgba(114, 185, 255, 0.48)");
-          halo.addColorStop(1, "rgba(114, 185, 255, 0)");
-          ctx.fillStyle = halo;
-          ctx.beginPath();
-          ctx.arc(sx, sy, rad * 3.4, 0, D2PI);
-          ctx.fill();
-        }}
-        ctx.fillStyle = vmag < 3.2 ? "#8ccbff" : "#5b8ec4";
-        ctx.globalAlpha = vmag < 3.5 ? 0.92 : 0.45;
-        ctx.beginPath();
-        ctx.arc(sx, sy, rad * 0.92, 0, D2PI);
-        ctx.fill();
+        ctx.strokeStyle = C.slate;
+        ctx.globalAlpha = vmag < 3.5 ? 1 : 0.55;
+        ctx.lineWidth = vmag < 3.5 ? 1.5 : 1;
+        ctx.arc(sx, sy, Math.max(1.6, rad * 0.95), 0, D2PI);
+        ctx.stroke();
       }}
     }}
     ctx.globalAlpha = 1;
 
-    // Key landmark star labels
+    // Labels for landmark stars
     if (togLabels.checked) {{
-      const keyHips = new Set([30438, 60718, 71681, 7588, 13847, 109268, 2081, 45238, 100751, 82273, 85267, 80763, 32349, 113368]);
-      ctx.font = "italic 10.5px " + getComputedStyle(document.body).getPropertyValue("--serif");
+      // Fewer labels on small screens so they do not pile up
+      const keyHips = new Set(W < 460
+        ? [30438, 60718, 7588, 2081, 32349, 113368]
+        : [30438, 60718, 71681, 7588, 13847, 109268, 2081, 45238, 100751, 82273, 85267, 80763, 32349, 113368]);
+      ctx.font = "400 11px " + SANS;
       for (let i = 0; i < DATA.stars.length; i++) {{
         const s = DATA.stars[i];
         if (!keyHips.has(s[12])) continue;
         const [sx, sy, , sr] = starXY[i];
         if (sr > 0.96) continue;
-        ctx.fillStyle = s[7] === 1 ? "rgba(252, 232, 184, 0.88)" : "rgba(148, 206, 255, 0.86)";
+        ctx.fillStyle = s[7] === 1 ? C.ink : C.slate;
         ctx.fillText(s[9].split(" (")[0], sx + 6, sy - 4);
       }}
     }}
 
-    // Active South Celestial Pole glowing compass star
+    // The sky's south pole at this date
     ctx.save();
-    ctx.strokeStyle = "#f8d483";
-    ctx.lineWidth = 1.4;
+    ctx.strokeStyle = C.ink;
+    ctx.lineWidth = 1.2;
     ctx.beginPath();
     ctx.moveTo(scpX - 7, scpY); ctx.lineTo(scpX + 7, scpY);
     ctx.moveTo(scpX, scpY - 7); ctx.lineTo(scpX, scpY + 7);
     ctx.stroke();
     ctx.beginPath();
-    ctx.arc(scpX, scpY, 4.2, 0, D2PI);
-    ctx.fillStyle = "#e08652";
+    ctx.arc(scpX, scpY, 3.5, 0, D2PI);
+    ctx.fillStyle = C.copper;
     ctx.fill();
-    ctx.strokeStyle = "#fff3d1";
-    ctx.lineWidth = 1.2;
-    ctx.stroke();
-    ctx.font = "600 9.5px " + getComputedStyle(document.body).getPropertyValue("--mono");
-    ctx.fillStyle = "#f9dfb0";
-    ctx.fillText("SCP", scpX + 8, scpY - 6);
+    ctx.font = "600 11px " + SANS;
+    ctx.fillStyle = C.ink;
+    ctx.fillText("South pole", scpX + 9, scpY - 6);
     ctx.restore();
 
-    // Hover reticle
+    // Hover marker
     if (state.hoverIdx >= 0) {{
       const [hx, hy] = starXY[state.hoverIdx];
-      ctx.strokeStyle = "#ffffff";
-      ctx.lineWidth = 1.3;
+      ctx.strokeStyle = C.copper;
+      ctx.lineWidth = 1.5;
       ctx.beginPath();
       ctx.arc(hx, hy, 8, 0, D2PI);
       ctx.stroke();
@@ -969,7 +939,7 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
     hudVoid.textContent = pctVoid + "% (" + voidBrightHid + "/" + voidBrightTot + ")";
     hudVoid.className = "sky-hud-val " + (pctVoid >= 75 ? "is-good" : pctVoid < 45 ? "is-bad" : "");
 
-    hudDll.textContent = (dll > -0.1 ? "0.0 (peak)" : dll.toFixed(1));
+    hudDll.textContent = (dll > -0.1 ? "0.0 (best)" : dll.toFixed(1));
     hudDll.className = "sky-hud-val " + (dll > -6 ? "is-good" : dll < -30 ? "is-bad" : "");
   }}
 
@@ -980,7 +950,9 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
     latSlider.value = String(lat);
     presetBtns.forEach(b => {{
       const bt = Number(b.dataset.t), bl = Number(b.dataset.lat);
-      b.classList.toggle("is-active", Math.abs(bt - t) < 35 && Math.abs(bl - lat) < 0.4);
+      const on = Math.abs(bt - t) < 35 && Math.abs(bl - lat) < 0.4;
+      b.classList.toggle("is-active", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
     }});
     render();
   }}
@@ -1002,7 +974,8 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
 
   function stopPlay() {{
     state.playing = false;
-    playBtn.innerHTML = "&#9654; Orbit Precession";
+    playBtn.innerHTML = "&#9654; Play";
+    playBtn.setAttribute("aria-pressed", "false");
     if (rafId) cancelAnimationFrame(rafId);
     rafId = null;
   }}
@@ -1013,14 +986,15 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
       return;
     }}
     state.playing = true;
-    playBtn.innerHTML = "&#9646;&#9646; Pause Orbit";
+    playBtn.innerHTML = "&#10073;&#10073; Pause";
+    playBtn.setAttribute("aria-pressed", "true");
     if (state.t >= 1950) state.t = -10000;
     function step() {{
       if (!state.playing) return;
       state.t += 45;
       if (state.t > 2000) state.t = -10000;
       epSlider.value = String(Math.round(state.t));
-      presetBtns.forEach(b => b.classList.remove("is-active"));
+      presetBtns.forEach(b => {{ b.classList.remove("is-active"); b.setAttribute("aria-pressed", "false"); }});
       render();
       rafId = requestAnimationFrame(step);
     }}
@@ -1050,11 +1024,11 @@ def build_sky_dome_html(cat: Dict, summary: Dict, grids: Dict) -> str:
       const s = DATA.stars[best];
       const hMax = starXY[best][2];
       const isCat = s[7] === 1;
-      const visTxt = hMax > 0 ? ("+" + hMax.toFixed(1) + "° above horizon") : (hMax.toFixed(1) + "° (never rises)");
+      const visTxt = hMax > 0 ? ("+" + hMax.toFixed(1) + "° above the horizon") : (hMax.toFixed(1) + "°, never rises");
       tip.innerHTML =
-        '<div class="sky-tip-name">' + s[9] + (s[10] && s[10] !== s[9] ? ' <span style="opacity:.65;font-size:11px">(' + s[10] + ')</span>' : '') + '</div>' +
-        '<div class="sky-tip-tag ' + (isCat ? 'is-cat' : 'is-void') + '">' + (isCat ? ('Almagest · ' + s[11]) : 'Uncatalogued Void') + '</div>' +
-        '<div class="sky-tip-meta">V = ' + s[6].toFixed(2) + ' mag · HIP ' + s[12] + '<br>Max alt: <strong style="color:' + (hMax > 0 ? '#f4cf82' : '#7ec2ff') + '">' + visTxt + '</strong></div>';
+        '<div class="sky-tip-name">' + s[9] + (s[10] && s[10] !== s[9] ? ' <span>(' + s[10] + ')</span>' : '') + '</div>' +
+        '<div class="sky-tip-tag ' + (isCat ? 'is-cat' : 'is-void') + '">' + (isCat ? ("In Ptolemy's catalogue: " + s[11]) : "Not in Ptolemy's catalogue") + '</div>' +
+        '<div>Magnitude ' + s[6].toFixed(2) + ', HIP ' + s[12] + '<br>Highest point: <strong>' + visTxt + '</strong></div>';
       const tx = Math.min(rect.width - 210, Math.max(10, mx + 16));
       const ty = Math.min(rect.height - 95, Math.max(10, my - 20));
       tip.style.left = tx + "px";
@@ -1103,11 +1077,11 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
         "bootE": grids["boot_epochs"],
         "bootL": grids["boot_lats"],
         "variants": [
-            {"id": "v40", "lbl": "Bright stars (V≤4.0)", "t": -120, "lat": 31.8, "col": "#7fe3bc"},
-            {"id": "v45", "lbl": "Stars (V≤4.5)", "t": 50, "lat": 30.3, "col": "#7fe3bc"},
-            {"id": "m2", "lbl": "M2 Free k_V (0.10)", "t": 160, "lat": 35.7, "col": "#f7d47c"},
-            {"id": "kv15", "lbl": "Clear sky (k_V=0.15)", "t": 210, "lat": 33.2, "col": "#f7d47c"},
-            {"id": "m1", "lbl": "Primary M1 (k_V=0.25)", "t": 910, "lat": 25.8, "col": "#ee825b"},
+            {"id": "v40", "lbl": "Bright stars (magnitude 4.0 or brighter)", "t": -120, "lat": 31.8, "col": "#7fb39d", "shape": "diamond"},
+            {"id": "v45", "lbl": "Stars of magnitude 4.5 or brighter", "t": 50, "lat": 30.3, "col": "#7fb39d", "shape": "diamond"},
+            {"id": "m2", "lbl": "Haze left free (0.10)", "t": 160, "lat": 35.7, "col": "#cfa544", "shape": "square"},
+            {"id": "kv15", "lbl": "Light haze (0.15)", "t": 210, "lat": 33.2, "col": "#cfa544", "shape": "square"},
+            {"id": "m1", "lbl": "Main model (0.25)", "t": 910, "lat": 25.8, "col": "#d08a5c", "shape": "triangle"},
         ],
         "m3Epoch": summary["m3_geometric_cap"]["epoch"],
     }
@@ -1115,82 +1089,52 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
 
     return f"""<figure class="fig sky-contour-fig" id="sky-likelihood-map">
 <style>
-.sky-contour-fig {{ margin: 2.2rem 0 2.6rem; }}
-.con-plate {{
-  background: linear-gradient(180deg, #101626 0%, #090d18 100%);
-  border: 1px solid rgba(207, 165, 68, 0.34);
-  border-radius: 6px;
-  color: #f3ecdf;
-  overflow: hidden;
-  box-shadow: 0 18px 46px rgba(12, 10, 8, 0.24);
-}}
-.con-head {{
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: 0.65rem 1rem;
-  padding: 1rem 1.35rem 0.85rem;
-  border-bottom: 1px solid rgba(207, 165, 68, 0.18);
-}}
-.con-tabs {{ display: flex; flex-wrap: wrap; gap: 0.38rem; }}
-.con-tab {{
-  font: 500 11px/1.2 var(--mono); padding: 0.38rem 0.68rem; border-radius: 3px; cursor: pointer;
-  background: rgba(255,255,255,0.04); border: 1px solid rgba(207,165,68,0.22); color: #cfc3ad;
-}}
-.con-tab:hover {{ border-color: rgba(207,165,68,0.6); color: #fff4da; }}
-.con-tab.is-active {{ background: rgba(207,165,68,0.24); border-color: #e6ba63; color: #fff4da; }}
-.con-legend {{
-  display: flex; flex-wrap: wrap; gap: 0.45rem 1.2rem; align-items: center;
-  padding: 0.55rem 1.35rem 0.2rem;
-  font: 400 11px/1.3 var(--sans); color: #b7c2d6;
-}}
-.con-leg-i {{ display: inline-flex; align-items: center; gap: 0.38rem; }}
-.con-dia {{ width: 8px; height: 8px; display: inline-block; transform: rotate(45deg); }}
+{PANEL_CSS}
+.con-tabs {{ display: flex; flex-wrap: wrap; gap: 0.4rem; }}
 .con-canvas-wrap {{ position: relative; padding: 0.5rem 1rem 0.4rem; }}
 .con-canvas-wrap canvas {{ display: block; width: 100%; height: 390px; cursor: crosshair; }}
 .con-bar {{
   display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
-  gap: 0.5rem 1.2rem;
-  padding: 0.65rem 1.35rem 0.9rem;
-  border-top: 1px solid rgba(207, 165, 68, 0.16);
-  background: rgba(7, 10, 18, 0.72);
-  font: 400 11.5px/1.4 var(--mono); color: #b8c4d8;
+  gap: 0.5rem 1.2rem; padding: 0.7rem 1.25rem 0.9rem;
+  border-top: 1px solid var(--band-line); background: var(--band-soft);
+  font: 400 0.8rem/1.45 var(--sans); color: var(--band-ink-soft);
 }}
-.con-bar strong {{ color: #f6d483; }}
-.con-right-tools {{ display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; }}
+.con-right-tools {{ display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; }}
 .con-right-tools label {{ display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer; }}
-.con-right-tools input {{ accent-color: #e6ba63; }}
 </style>
-<div class="con-plate">
-  <div class="con-head">
+<div class="sky-panel">
+  <div class="sky-head">
     <div>
-      <p class="sky-eyebrow" style="margin-bottom:.2rem">Locked 2D Likelihood Surface · Epoch × Latitude</p>
-      <h3 class="sky-title">Where the Empty Patch Points — and Where Extinction Pulls It</h3>
+      <p class="sky-eyebrow">Fit by date and latitude</p>
+      <h3 class="sky-title">How well each date and latitude fits</h3>
     </div>
-    <div class="con-tabs" id="con-tabs">
-      <button type="button" class="con-tab is-active" data-grid="kv015">Clear Sky (k_V=0.15)</button>
-      <button type="button" class="con-tab" data-grid="kv025">Primary M1 (k_V=0.25)</button>
-      <button type="button" class="con-tab" data-grid="aratus">Aratus Core</button>
-      <button type="button" class="con-tab" data-grid="infig">In-Figure Only</button>
+    <div class="con-tabs" id="con-tabs" role="group" aria-label="Version of the test">
+      <button type="button" class="sky-btn con-tab is-active" aria-pressed="true" data-grid="kv015">Light haze</button>
+      <button type="button" class="sky-btn con-tab" aria-pressed="false" data-grid="kv025">Main model</button>
+      <button type="button" class="sky-btn con-tab" aria-pressed="false" data-grid="aratus">Aratus's stars only</button>
+      <button type="button" class="sky-btn con-tab" aria-pressed="false" data-grid="infig">Stars inside the figures only</button>
     </div>
   </div>
-  <div class="con-legend">
-    <span class="con-leg-i"><i class="con-dia" style="background:#7fe3bc"></i>Bright stars (V≤4.0 / 4.5)</span>
-    <span class="con-leg-i"><i class="con-dia" style="background:#f7d47c"></i>M2 free k_V &amp; Clear sky (k_V=0.15)</span>
-    <span class="con-leg-i"><i class="con-dia" style="background:#ee825b"></i>Primary M1 overshoot (k_V=0.25)</span>
-    <span class="con-leg-i"><span style="display:inline-block;width:13px;border-top:1.5px dotted #7fe3bc"></span>M3 geometric cap (41 BCE)</span>
-    <span class="con-leg-i"><span style="display:inline-block;width:13px;border-top:1.5px dashed #e87856"></span>3000 BCE threshold</span>
-  </div>
+  <p class="sky-legend">
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><rect x="2.5" y="2.5" width="7" height="7" transform="rotate(45 6 6)" fill="#7fb39d" stroke="#0d1421"/></svg>Bright stars only (magnitude 4.0 or 4.5)</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><rect x="2" y="2" width="8" height="8" fill="#cfa544" stroke="#0d1421"/></svg>Haze left free, and light haze</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M6 1 L11 10 L1 10 Z" fill="#d08a5c" stroke="#0d1421"/></svg>Main model (910 CE)</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#7fb39d" stroke-width="1.5" stroke-dasharray="2 3"/></svg>Plain empty circle (41 BCE)</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#f6f1e8" stroke-width="1.5" stroke-dasharray="5 4"/></svg>3000 BCE</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="2.2" fill="#c9daf0"/></svg>Reshuffled skies (main model)</span>
+  </p>
   <div class="con-canvas-wrap">
-    <canvas id="con-canvas" aria-label="Interactive 2D log-likelihood heatmap across epoch and observer latitude showing 3000 BCE threshold, historical sites, and pre-registered model peaks."></canvas>
+    <canvas id="con-canvas" role="img" aria-label="Map of how well each date and observer's latitude fits the empty patch, with the 3000 BCE line, historical sites and the best dates from each version of the test marked."></canvas>
   </div>
   <div class="con-bar">
-    <div id="con-hover-out">Hover anywhere on the map to inspect exact <strong>Δln L</strong> vs. peak.</div>
+    <div id="con-hover-out" aria-live="polite">Hover over the map to see how much worse each point fits than the best (0 is best).</div>
     <div class="con-right-tools">
-      <label><input type="checkbox" id="con-deep"> Deep time (10,000 BCE–1000 CE)</label>
-      <label><input type="checkbox" id="con-boot" checked> 500 block-bootstrap draws (M1)</label>
+      <label><input type="checkbox" id="con-deep"> Show 10,000 BCE to 1000 CE</label>
+      <label><input type="checkbox" id="con-boot" checked> 500 reshuffled skies (main model)</label>
     </div>
   </div>
 </div>
-<figcaption>Exact locked log-likelihood surface across observer latitude (15°–45° N) and epoch. Bright gold regions mark high likelihood; dark indigo regions are ruled out by orders of magnitude. Switch between <em>Clear Sky (k_V = 0.15)</em>—which peaks cleanly on Classical Antiquity (210 CE, 33.2° N) right beside Hipparchus's Rhodes and Ptolemy's Alexandria—and <em>Primary M1 (k_V = 0.25)</em>, where harsh faint-star horizon extinction pulls the peak into the shaded anachronistic zone after 137 CE (910 CE, 25.8° N). Across every model and all 500 bootstrap resamples, 3000 BCE (vertical crimson line) lies deep in the rejected dark zone (Δln L ≤ −96).</figcaption>
+<figcaption>How well each date (across) and observer's latitude (up) fits the empty patch, in the test fixed in advance. Lighter means a better fit; dark blue is worse by many orders of magnitude. The light-haze version peaks at 210 CE, 33.2° N, close to Hipparchus's Rhodes and Ptolemy's Alexandria. The main model assumes thicker haze near the horizon, and that pulls its peak past 137 CE into the shaded zone after the catalogue was written (910 CE, 25.8° N). In every version and all 500 reshuffled skies, 3000 BCE (dashed line) sits deep in the dark zone, at least 96 below the best on this scale (the difference in log-likelihood, Δln L ≤ −96).</figcaption>
 <script>
 (function() {{
   const D = {payload_json};
@@ -1212,16 +1156,17 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
     return y <= 0 ? (1 - y) + " BCE" : y + " CE";
   }}
 
-  // Celestial magma-gold colormap for dLL in [-140, 0]
+  // One smooth ramp for dLL in [-140, 0]: dark night blue (poor fit) through copper to cream (best)
+  const SANS = (getComputedStyle(document.documentElement).getPropertyValue("--sans") || "").trim() || "system-ui, sans-serif";
+  const C = {{ band: "#0d1421", ink: "#f6f1e8", inkSoft: "#cdd3de", faint: "#8f9bb1", line: "#2a3750", copper: "#d08a5c", verdigris: "#7fb39d", slate: "#c9daf0" }};
   function colorForDLL(dll) {{
     const u = Math.max(0, Math.min(1, 1 - Math.sqrt(Math.max(0, -dll) / 140)));
     const stops = [
-      [0.00, 7, 11, 22],
-      [0.35, 22, 37, 74],
-      [0.62, 92, 52, 72],
-      [0.82, 198, 102, 56],
-      [0.94, 244, 196, 98],
-      [1.00, 255, 245, 212]
+      [0.00, 13, 20, 33],
+      [0.45, 52, 46, 62],
+      [0.75, 150, 94, 64],
+      [0.90, 208, 138, 92],
+      [1.00, 246, 241, 232]
     ];
     for (let i = 0; i < stops.length - 1; i++) {{
       if (u >= stops[i][0] && u <= stops[i + 1][0]) {{
@@ -1232,7 +1177,17 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
         return [r, g, b];
       }}
     }}
-    return [255, 245, 212];
+    return [246, 241, 232];
+  }}
+
+  // Text with a thin dark outline so it stays legible over light and dark parts of the map
+  function label(txt, x, y, col) {{
+    ctx.lineWidth = 3;
+    ctx.lineJoin = "round";
+    ctx.strokeStyle = "rgba(13, 20, 33, 0.85)";
+    ctx.strokeText(txt, x, y);
+    ctx.fillStyle = col;
+    ctx.fillText(txt, x, y);
   }}
 
   function interpGrid(grid, t, lat) {{
@@ -1250,7 +1205,7 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
 
   function resize() {{
     const rect = canvas.parentElement.getBoundingClientRect();
-    W = Math.max(320, Math.round(rect.width - 32));
+    W = Math.max(240, Math.round(rect.width - 32));
     H = W < 500 ? 330 : 390;
     canvas.style.height = H + "px";
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -1296,9 +1251,9 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
 
     // Contour outlines (Δln L = -3.0 ~ 95% star-level, -15, -50, -100)
     const levels = [
-      {{ v: -3.0, col: "rgba(255, 246, 214, 0.85)", w: 1.4 }},
-      {{ v: -15.0, col: "rgba(244, 196, 98, 0.45)", w: 1.0 }},
-      {{ v: -50.0, col: "rgba(218, 128, 78, 0.35)", w: 0.9 }}
+      {{ v: -3.0, col: "rgba(13, 20, 33, 0.8)", w: 1.4 }},
+      {{ v: -15.0, col: "rgba(246, 241, 232, 0.45)", w: 1.0 }},
+      {{ v: -50.0, col: "rgba(246, 241, 232, 0.25)", w: 0.9 }}
     ];
     levels.forEach(lv => {{
       ctx.fillStyle = lv.col;
@@ -1316,45 +1271,45 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
       }}
     }});
 
-    // Shaded "After Almagest (> 137 CE)" anachronism zone
+    // Shaded zone after the catalogue was written (> 137 CE)
     const x137 = xOf(137);
-    ctx.fillStyle = "rgba(10, 12, 20, 0.38)";
+    ctx.fillStyle = "rgba(13, 20, 33, 0.4)";
     ctx.fillRect(x137, PAD.t, PAD.l + pw - x137, ph);
     ctx.save();
     ctx.setLineDash([3, 3]);
-    ctx.strokeStyle = "rgba(255, 255, 255, 0.42)";
+    ctx.strokeStyle = "rgba(246, 241, 232, 0.45)";
     ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(x137, PAD.t); ctx.lineTo(x137, PAD.t + ph); ctx.stroke();
     ctx.restore();
-    ctx.font = "500 9.5px " + getComputedStyle(document.body).getPropertyValue("--mono");
-    ctx.fillStyle = "rgba(235, 224, 204, 0.72)";
-    ctx.fillText("After Almagest (137 CE)", Math.min(PAD.l + pw - 128, x137 + 6), PAD.t + 14);
+    ctx.font = "400 11px " + SANS;
+    const aTxt = W < 520 ? "After 137 CE" : "After the catalogue (137 CE)";
+    const aW = ctx.measureText(aTxt).width;
+    label(aTxt, Math.max(PAD.l + 4, Math.min(PAD.l + pw - aW - 4, x137 + 6)), PAD.t + 14, C.inkSoft);
 
     // Vertical 3000 BCE threshold line
     const x3000 = xOf(-2999);
     if (x3000 > PAD.l && x3000 < PAD.l + pw) {{
       ctx.save();
       ctx.setLineDash([5, 4]);
-      ctx.strokeStyle = "#e87856";
-      ctx.lineWidth = 1.6;
+      ctx.strokeStyle = C.ink;
+      ctx.lineWidth = 1.5;
       ctx.beginPath(); ctx.moveTo(x3000, PAD.t); ctx.lineTo(x3000, PAD.t + ph); ctx.stroke();
       ctx.restore();
-      ctx.fillStyle = "#f29b7e";
-      ctx.fillText("3000 BCE threshold", x3000 + 6, PAD.t + 14);
+      label("3000 BCE", x3000 + 6, PAD.t + 14, C.ink);
     }}
 
-    // M3 geometric cap vertical band (41 BCE)
+    // Plain empty circle (M3) best date, 41 BCE
     const xm3 = xOf(D.m3Epoch);
     ctx.save();
     ctx.setLineDash([2, 3]);
-    ctx.strokeStyle = "rgba(127, 227, 188, 0.65)";
+    ctx.strokeStyle = "rgba(127, 179, 157, 0.85)";
     ctx.lineWidth = 1.2;
     ctx.beginPath(); ctx.moveTo(xm3, PAD.t); ctx.lineTo(xm3, PAD.t + ph); ctx.stroke();
     ctx.restore();
 
-    // 500 Spatial Block Bootstrap draws (for Primary M1)
+    // 500 reshuffled skies (spatial-block bootstrap of the main model)
     if (bootBox.checked) {{
-      ctx.fillStyle = "rgba(255, 240, 195, 0.28)";
+      ctx.fillStyle = "rgba(201, 218, 240, 0.55)";
       for (let i = 0; i < D.bootE.length; i++) {{
         const bx = xOf(D.bootE[i]) + (((i * 37) % 11) - 5) * 0.6;
         const by = yOf(D.bootL[i]) + (((i * 53) % 9) - 4) * 0.5;
@@ -1374,55 +1329,65 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
     if (deepBox.checked) {{
       sites.push({{ lbl: "Göbekli Tepe (9600 BCE)", t: -9599, lat: 37.2, dx: 8, dy: -6 }});
     }}
-    ctx.font = "500 10px " + getComputedStyle(document.body).getPropertyValue("--sans");
+    ctx.font = "400 11px " + SANS;
     sites.forEach(s => {{
       const sx = xOf(s.t), sy = yOf(s.lat);
       if (sx < PAD.l || sx > PAD.l + pw) return;
       ctx.beginPath(); ctx.arc(sx, sy, 4, 0, Math.PI * 2);
-      ctx.fillStyle = "#0b0f1b"; ctx.fill();
-      ctx.strokeStyle = "#f4e6c4"; ctx.lineWidth = 1.6; ctx.stroke();
-      ctx.fillStyle = "#f4e6c4";
-      ctx.fillText(s.lbl, sx + s.dx, sy + s.dy);
+      ctx.fillStyle = C.band; ctx.fill();
+      ctx.strokeStyle = C.ink; ctx.lineWidth = 1.6; ctx.stroke();
+      const tw = ctx.measureText(s.lbl).width;
+      const lx = Math.max(PAD.l + 3, Math.min(PAD.l + pw - tw - 3, sx + s.dx));
+      label(s.lbl, lx, sy + s.dy, C.ink);
     }});
 
-    // Model peak diamonds (V<=4.0, M2, M1)
+    // Best date in each version: diamond = bright stars only, square = haze free / light haze, triangle = main model
     D.variants.forEach(v => {{
       const vx = xOf(v.t), vy = yOf(v.lat);
       if (vx < PAD.l || vx > PAD.l + pw) return;
       ctx.save();
       ctx.translate(vx, vy);
-      ctx.rotate(Math.PI / 4);
       ctx.fillStyle = v.col;
-      ctx.strokeStyle = "#090d18";
+      ctx.strokeStyle = C.band;
       ctx.lineWidth = 1.4;
-      ctx.fillRect(-4.5, -4.5, 9, 9);
-      ctx.strokeRect(-4.5, -4.5, 9, 9);
+      ctx.beginPath();
+      if (v.shape === "triangle") {{
+        ctx.moveTo(0, -6); ctx.lineTo(5.5, 4); ctx.lineTo(-5.5, 4); ctx.closePath();
+      }} else if (v.shape === "square") {{
+        ctx.rect(-4.5, -4.5, 9, 9);
+      }} else {{
+        ctx.moveTo(0, -6); ctx.lineTo(6, 0); ctx.lineTo(0, 6); ctx.lineTo(-6, 0); ctx.closePath();
+      }}
+      ctx.fill();
+      ctx.stroke();
       ctx.restore();
     }});
 
     // Axes frame and ticks
-    ctx.strokeStyle = "rgba(207, 165, 68, 0.35)";
+    ctx.strokeStyle = C.line;
     ctx.lineWidth = 1;
     ctx.strokeRect(PAD.l, PAD.t, pw, ph);
 
-    ctx.font = "400 10.5px " + getComputedStyle(document.body).getPropertyValue("--mono");
-    ctx.fillStyle = "#b9c4d6";
+    ctx.font = "400 11px " + SANS;
+    ctx.fillStyle = C.inkSoft;
     ctx.textAlign = "center";
-    const xTicks = deepBox.checked ? [-10000, -8000, -6000, -4000, -2000, 0, 1000] : [-4000, -3000, -2000, -1000, 0, 1000];
+    const xTicks = deepBox.checked
+      ? (W < 520 ? [-10000, -6000, -2000, 1000] : [-10000, -8000, -6000, -4000, -2000, 0, 1000])
+      : (W < 520 ? [-4000, -2000, 0] : [-4000, -3000, -2000, -1000, 0, 1000]);
     xTicks.forEach(tx => {{
       const x = xOf(tx);
       ctx.beginPath(); ctx.moveTo(x, PAD.t + ph); ctx.lineTo(x, PAD.t + ph + 5); ctx.stroke();
       ctx.fillText(tx === 0 ? "1 BCE" : (tx < 0 ? (-tx) + " BCE" : tx + " CE"), x, PAD.t + ph + 18);
     }});
-    ctx.fillStyle = "#9aa7bd";
-    ctx.fillText("Epoch (Precession Date)", PAD.l + pw / 2, H - 6);
+    ctx.fillStyle = C.faint;
+    ctx.fillText("Date", PAD.l + pw / 2, H - 6);
 
     ctx.textAlign = "right";
     for (let ly = 15; ly <= 45; ly += 5) {{
       const y = yOf(ly);
       ctx.beginPath(); ctx.moveTo(PAD.l - 5, y); ctx.lineTo(PAD.l, y); ctx.stroke();
-      ctx.fillStyle = "#b9c4d6";
-      ctx.fillText(ly + "°N", PAD.l - 8, y + 3.5);
+      ctx.fillStyle = C.inkSoft;
+      ctx.fillText(ly + "° N", PAD.l - 8, y + 3.5);
     }}
     ctx.textAlign = "left";
 
@@ -1430,8 +1395,8 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
     if (hoverPt) {{
       const hx = xOf(hoverPt.t), hy = yOf(hoverPt.lat);
       ctx.save();
-      ctx.strokeStyle = "rgba(255, 255, 255, 0.55)";
-      ctx.lineWidth = 0.9;
+      ctx.strokeStyle = C.copper;
+      ctx.lineWidth = 1;
       ctx.setLineDash([3, 3]);
       ctx.beginPath();
       ctx.moveTo(hx, PAD.t); ctx.lineTo(hx, PAD.t + ph);
@@ -1444,7 +1409,7 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
   tabs.forEach(tab => {{
     tab.addEventListener("click", () => {{
       activeKey = tab.dataset.grid;
-      tabs.forEach(t => t.classList.toggle("is-active", t === tab));
+      tabs.forEach(t => {{ t.classList.toggle("is-active", t === tab); t.setAttribute("aria-pressed", t === tab ? "true" : "false"); }});
       render();
     }});
   }});
@@ -1458,7 +1423,7 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
     const pw = W - PAD.l - PAD.r, ph = H - PAD.t - PAD.b;
     if (mx < PAD.l || mx > PAD.l + pw || my < PAD.t || my > PAD.t + ph) {{
       hoverPt = null;
-      hoverOut.innerHTML = 'Hover anywhere on the map to inspect exact <strong>Δln L</strong> vs. peak.';
+      hoverOut.textContent = "Hover over the map to see how much worse each point fits than the best (0 is best).";
       render();
       return;
     }}
@@ -1467,14 +1432,14 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
     const lat = 45 - ((my - PAD.t) / ph) * 30;
     const dll = interpGrid(D.grids[activeKey], t, lat);
     const log10Odds = (-dll / Math.LN10);
-    const oddsStr = log10Odds < 0.15 ? "≈ peak" : (log10Odds < 3 ? ("1 in " + Math.round(Math.pow(10, log10Odds)).toLocaleString()) : ("1 in 10^" + log10Odds.toFixed(1)));
+    const oddsStr = log10Odds < 0.15 ? "about as good as the best" : ("about " + (log10Odds < 3 ? ("1 in " + Math.round(Math.pow(10, log10Odds)).toLocaleString()) : ("1 in 10^" + log10Odds.toFixed(1))) + " as likely as the best");
     hoverPt = {{ t, lat }};
-    hoverOut.innerHTML = '<strong>' + fmtYear(t) + ' · ' + lat.toFixed(1) + '° N</strong> &nbsp;|&nbsp; Δln L = <strong>' + dll.toFixed(1) + '</strong> &nbsp;(' + oddsStr + ' vs. peak)';
+    hoverOut.innerHTML = '<strong>' + fmtYear(t) + ', ' + lat.toFixed(1) + '° N</strong>: <strong>' + dll.toFixed(1) + '</strong> against the best (' + oddsStr + ')';
     render();
   }});
   canvas.addEventListener("mouseleave", () => {{
     hoverPt = null;
-    hoverOut.innerHTML = 'Hover anywhere on the map to inspect exact <strong>Δln L</strong> vs. peak.';
+    hoverOut.textContent = "Hover over the map to see how much worse each point fits than the best (0 is best).";
     render();
   }});
 
@@ -1491,9 +1456,10 @@ def build_contour_html(summary: Dict, grids: Dict) -> str:
 
 
 def build_rim_html(cat: Dict) -> str:
-    # Curated 12 southernmost bright Ptolemy stars vs 12 brightest missing southern stars
+    # 12 of the southernmost bright Ptolemy stars, and the 12 brightest missing southern stars in results/rim_stars.tsv
+    # (Alp1 Cen, HIP 71683, is left out of the second list: it is the close companion of the listed Alp2 Cen).
     ptol_hips = [30438, 60718, 71681, 68702, 85267, 62434, 85258, 83081, 59747, 42913, 45941, 13847]
-    miss_hips = [7588, 45238, 109268, 41037, 82273, 100751, 112122, 45556, 2081, 61585, 52419, 110130]
+    miss_hips = [7588, 45238, 109268, 41037, 82273, 100751, 112122, 45556, 2081, 52727, 61585, 52419]
 
     hip_idx = {int(h): i for i, h in enumerate(cat["hip"])}
     stars_out = []
@@ -1503,7 +1469,7 @@ def build_rim_html(cat: Dict) -> str:
             u = cat["u0"][i]
             v = cat["vel"][i]
             label = COMMON_NAMES.get(hid, str(cat["name"][i])).split(" (")[0]
-            cst = CST_FULL.get(str(cat["cst"][i]), "") if grp == 1 else "Void"
+            cst = CST_FULL.get(str(cat["cst"][i]), "") if grp == 1 else "Left out"
             stars_out.append({
                 "hip": hid,
                 "name": label,
@@ -1520,66 +1486,42 @@ def build_rim_html(cat: Dict) -> str:
 
     return f"""<figure class="fig sky-rim-fig" id="sky-horizon-rim">
 <style>
-.sky-rim-fig {{ margin: 2.2rem 0 2.6rem; }}
-.rim-plate {{
-  background: linear-gradient(180deg, #101627 0%, #090d17 100%);
-  border: 1px solid rgba(207, 165, 68, 0.34);
-  border-radius: 6px;
-  color: #f3ecdf;
-  overflow: hidden;
-  box-shadow: 0 18px 46px rgba(12, 10, 8, 0.24);
-}}
-.rim-head {{
-  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
-  gap: 0.5rem 1rem;
-  padding: 1rem 1.35rem 0.8rem;
-  border-bottom: 1px solid rgba(207, 165, 68, 0.18);
-}}
-.rim-score {{
-  font: 500 11.5px/1.35 var(--mono); color: #d8cdb8;
-  background: rgba(8, 11, 19, 0.72); border: 1px solid rgba(207, 165, 68, 0.28);
-  padding: 0.35rem 0.75rem; border-radius: 999px;
-}}
-.rim-score strong {{ color: #8ad3b5; }}
-.rim-canvas-wrap {{ position: relative; padding: 0.6rem 1rem 0.3rem; }}
+{PANEL_CSS}
+.rim-score {{ font: 400 0.84rem/1.4 var(--sans); color: var(--band-ink-soft); font-variant-numeric: tabular-nums; }}
+.fig .rim-score strong.is-good {{ color: var(--band-verdigris); }}
+.fig .rim-score strong.is-bad {{ color: var(--band-copper); }}
+.rim-canvas-wrap {{ position: relative; padding: 0.4rem 1rem 0.3rem; }}
 .rim-canvas-wrap canvas {{ display: block; width: 100%; height: 340px; }}
-.rim-controls {{
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: 0.6rem 1rem;
-  padding: 0.75rem 1.35rem 1rem;
-  border-top: 1px solid rgba(207, 165, 68, 0.16);
-  background: rgba(7, 10, 18, 0.72);
-}}
+.rim-controls {{ padding: 0.8rem 1.25rem 1rem; border-top: 1px solid var(--band-line); background: var(--band-soft); }}
 .rim-presets {{ display: flex; flex-wrap: wrap; gap: 0.4rem; }}
-.rim-btn {{
-  font: 400 11.5px/1.25 var(--sans); padding: 0.36rem 0.66rem; border-radius: 3px; cursor: pointer;
-  background: rgba(255,255,255,0.04); border: 1px solid rgba(207,165,68,0.22); color: #d6cbb7;
-}}
-.rim-btn:hover {{ border-color: rgba(207,165,68,0.6); color: #fff4da; }}
-.rim-btn.is-active {{ background: rgba(207,165,68,0.24); border-color: #e6ba63; color: #fff4da; font-weight: 500; }}
 </style>
-<div class="rim-plate">
-  <div class="rim-head">
+<div class="sky-panel">
+  <div class="sky-head">
     <div>
-      <p class="sky-eyebrow" style="margin-bottom:.2rem">Horizon Forensics · 24 Landmark Rim Stars</p>
-      <h3 class="sky-title">Fingerprints on the Horizon: Catalogued vs. Missing Stars</h3>
+      <p class="sky-eyebrow">24 stars near the southern horizon</p>
+      <h3 class="sky-title">The stars on the rim</h3>
     </div>
-    <div class="rim-score" id="rim-score">—</div>
+    <div class="rim-score" id="rim-score" aria-live="polite">-</div>
   </div>
+  <p class="sky-legend">
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="#e9d7a8"/></svg>In Ptolemy's catalogue (filled)</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="none" stroke="#c9daf0" stroke-width="2"/></svg>Bright stars he left out (rings)</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#d08a5c" stroke-width="2"/></svg>Horizon</span>
+  </p>
   <div class="rim-canvas-wrap">
-    <canvas id="rim-canvas" aria-label="Interactive horizon elevation profile comparing the 12 southernmost Ptolemy stars against the 12 brightest missing southern stars across ancient sites and epochs."></canvas>
+    <canvas id="rim-canvas" role="img" aria-label="How high the 12 southernmost stars Ptolemy listed and the 12 brightest southern stars he left out climb above or below the horizon, for a chosen place and date."></canvas>
   </div>
   <div class="rim-controls">
-    <div class="rim-presets" id="rim-presets">
-      <button type="button" class="rim-btn is-active" data-t="-127" data-lat="36.4">Rhodes · 128 BCE (Hipparchus)</button>
-      <button type="button" class="rim-btn" data-t="137" data-lat="31.2">Alexandria · 137 CE (Ptolemy)</button>
-      <button type="button" class="rim-btn" data-t="-1099" data-lat="32.5">Babylon · 1100 BCE</button>
-      <button type="button" class="rim-btn" data-t="-2599" data-lat="35.3">Crete · 2600 BCE</button>
-      <button type="button" class="rim-btn" data-t="-9599" data-lat="37.2">Göbekli Tepe · 9600 BCE</button>
+    <div class="rim-presets" id="rim-presets" role="group" aria-label="Places and dates">
+      <button type="button" class="sky-btn rim-btn is-active" aria-pressed="true" data-t="-127" data-lat="36.4">Rhodes, 128 BCE (Hipparchus)</button>
+      <button type="button" class="sky-btn rim-btn" aria-pressed="false" data-t="137" data-lat="31.2">Alexandria, 137 CE (Ptolemy)</button>
+      <button type="button" class="sky-btn rim-btn" aria-pressed="false" data-t="-1099" data-lat="32.5">Babylon, 1100 BCE</button>
+      <button type="button" class="sky-btn rim-btn" aria-pressed="false" data-t="-2599" data-lat="35.3">Crete, 2600 BCE</button>
+      <button type="button" class="sky-btn rim-btn" aria-pressed="false" data-t="-9599" data-lat="37.2">Göbekli Tepe, 9600 BCE</button>
     </div>
   </div>
 </div>
-<figcaption>Maximum southern culmination altitude (degrees above or below the sea horizon) for the 12 southernmost bright stars Ptolemy catalogued (gold circles) versus the 12 brightest southern stars Ptolemy omitted (sapphire diamonds), ordered by Right Ascension. At <strong>Rhodes in 128 BCE</strong>, all 12 catalogued stars rise cleanly above 0° while 11 of 12 missing stars sit below the horizon (only Avior grazes +0.01°). At <strong>Alexandria in 137 CE</strong>, four bright missing stars—Ankaa (+6.4°), Avior (+4.6°), Alnair (+4.5°), and Tiaki (+3.4°)—stand clearly in the sky yet remain uncatalogued. At <strong>2600 BCE</strong> or <strong>9600 BCE</strong>, the two groups scramble completely across the horizon.</figcaption>
+<figcaption>How high each star climbs at its highest point, in degrees above or below the sea horizon, for 12 of the southernmost bright stars Ptolemy listed (filled dots) and the 12 brightest southern stars he left out (rings), placed in order around the sky. Alpha-1 Centauri is not among the rings, because it is the close companion of a listed star. At <strong>Rhodes in 128 BCE</strong> all 12 listed stars rise and 9 of the 12 left-out stars never do. Of the other three, Avior grazes the horizon (+0.01°), Iota Carinae stands 2° up, and Mu Velorum stands 14° up, which we cannot explain. At <strong>Alexandria in 137 CE</strong> seven of the twelve left-out stars stand more than 3° up and are still not in the catalogue. At <strong>2600 BCE</strong> or <strong>9600 BCE</strong> the two groups are mixed on both sides of the horizon. Among the 30 brightest left-out stars in the results file, 23 never rose at Rhodes and 14 at Alexandria.</figcaption>
 <script>
 (function() {{
   const STARS = {payload_json};
@@ -1634,13 +1576,21 @@ def build_rim_html(cat: Dict) -> str:
 
   function resize() {{
     const rect = canvas.parentElement.getBoundingClientRect();
-    W = Math.max(320, Math.round(rect.width - 32));
+    W = Math.max(240, Math.round(rect.width - 32));
     H = W < 500 ? 310 : 340;
     canvas.style.height = H + "px";
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = W * dpr; canvas.height = H * dpr;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     render();
+  }}
+
+  const SANS = (getComputedStyle(document.documentElement).getPropertyValue("--sans") || "").trim() || "system-ui, sans-serif";
+  const C = {{ band: "#0d1421", bandSoft: "#131c2c", ink: "#f6f1e8", inkSoft: "#cdd3de", faint: "#8f9bb1", line: "#2a3750", copper: "#d08a5c", verdigris: "#7fb39d", slate: "#c9daf0" }};
+  function catColor(vmag) {{
+    const f = Math.max(0, Math.min(1, (vmag - 1.0) / 3.5));
+    const a = [246, 241, 232], b = [207, 165, 68];
+    return "rgb(" + a.map((x, k) => Math.round(x + f * (b[k] - x))).join(",") + ")";
   }}
 
   function render() {{
@@ -1651,41 +1601,33 @@ def build_rim_html(cat: Dict) -> str:
 
     ctx.clearRect(0, 0, W, H);
 
-    // Sky above horizon gradient vs underground dark earth below 0 deg
+    // Sky above the horizon (panel blue), haze band 0 to +6 deg, darker ground below
     const y0 = yOf(0);
-    const skyG = ctx.createLinearGradient(0, PAD.t, 0, y0);
-    skyG.addColorStop(0, "#101a32");
-    skyG.addColorStop(0.75, "#172038");
-    skyG.addColorStop(1, "rgba(180, 108, 62, 0.22)");
-    ctx.fillStyle = skyG;
+    ctx.fillStyle = C.bandSoft;
     ctx.fillRect(PAD.l, PAD.t, pw, y0 - PAD.t);
-
-    // Twilight haze band (0 to +6 deg)
     const y6 = yOf(6);
-    ctx.fillStyle = "rgba(224, 134, 82, 0.08)";
+    ctx.fillStyle = "rgba(208, 138, 92, 0.08)";
     ctx.fillRect(PAD.l, y6, pw, y0 - y6);
-
-    // Below-horizon earth/void fill
-    ctx.fillStyle = "rgba(5, 8, 15, 0.78)";
+    ctx.fillStyle = "#080d16";
     ctx.fillRect(PAD.l, y0, pw, PAD.t + ph - y0);
 
     // Horizontal grid lines
-    ctx.font = "400 10px " + getComputedStyle(document.body).getPropertyValue("--mono");
+    ctx.font = "400 11px " + SANS;
     ctx.textAlign = "right";
     for (const h of [-20, -10, 0, 10, 20, 30]) {{
       const y = yOf(h);
       ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + pw, y);
-      ctx.strokeStyle = h === 0 ? "#e08652" : "rgba(255,255,255,0.08)";
+      ctx.strokeStyle = h === 0 ? C.copper : "rgba(246, 241, 232, 0.07)";
       ctx.lineWidth = h === 0 ? 2 : 1;
       ctx.stroke();
-      ctx.fillStyle = h === 0 ? "#f2a472" : "#8f9db3";
+      ctx.fillStyle = h === 0 ? C.copper : C.faint;
       ctx.fillText((h > 0 ? "+" : "") + h + "°", PAD.l - 7, y + 3.5);
     }}
     ctx.textAlign = "left";
-    ctx.fillStyle = "rgba(242, 164, 114, 0.85)";
-    ctx.fillText("SEA HORIZON (0°)", PAD.l + 8, y0 - 6);
-    ctx.fillStyle = "rgba(130, 185, 245, 0.55)";
-    ctx.fillText("NEVER RISES BELOW HORIZON", PAD.l + 8, y0 + 14);
+    ctx.fillStyle = C.faint;
+    ctx.fillText("Above the horizon: rises", PAD.l + 8, PAD.t + 15);
+    ctx.fillText("Below the horizon: never rises", PAD.l + 8, PAD.t + ph - 8);
+    const placed = [];  // label boxes already drawn, to avoid overlaps
 
     // Evaluate stars at (curT, curLat)
     const pN = ltpequ(curT);
@@ -1706,52 +1648,65 @@ def build_rim_html(cat: Dict) -> str:
       const sx = xOf(s.ra), sy = yOf(hMax);
       const rad = Math.max(3.5, Math.min(7.5, (4.4 - s.vmag) * 1.45));
 
-      // Vertical stem to horizon
+      // Stem to the horizon
       ctx.beginPath(); ctx.moveTo(sx, y0); ctx.lineTo(sx, sy);
-      ctx.strokeStyle = s.cat === 1 ? "rgba(244, 198, 102, 0.28)" : "rgba(116, 186, 255, 0.25)";
+      ctx.strokeStyle = s.cat === 1 ? "rgba(207, 165, 68, 0.35)" : "rgba(201, 218, 240, 0.3)";
       ctx.lineWidth = 1;
       ctx.stroke();
 
+      ctx.beginPath(); ctx.arc(sx, sy, rad, 0, D2PI);
       if (s.cat === 1) {{
-        ctx.beginPath(); ctx.arc(sx, sy, rad, 0, D2PI);
-        ctx.fillStyle = hMax > 0 ? "#f6cf7c" : "#e86e4c";
+        // catalogued: filled cream-to-gold disc
+        ctx.fillStyle = catColor(s.vmag);
         ctx.fill();
-        ctx.strokeStyle = "#0a0e1a"; ctx.lineWidth = 1.2; ctx.stroke();
+        ctx.strokeStyle = C.band; ctx.lineWidth = 1.2; ctx.stroke();
       }} else {{
-        ctx.save(); ctx.translate(sx, sy); ctx.rotate(Math.PI / 4);
-        ctx.fillStyle = hMax <= 0.1 ? "#74baff" : "#ff9468";
-        ctx.fillRect(-rad * 0.85, -rad * 0.85, rad * 1.7, rad * 1.7);
-        ctx.strokeStyle = "#0a0e1a"; ctx.lineWidth = 1.1;
-        ctx.strokeRect(-rad * 0.85, -rad * 0.85, rad * 1.7, rad * 1.7);
-        ctx.restore();
+        // left out: pale blue-white ring
+        ctx.fillStyle = C.band; ctx.fill();
+        ctx.strokeStyle = C.slate; ctx.lineWidth = 2; ctx.stroke();
       }}
 
-      // Clean non-cluttered labels for prominent stars
+      // Labels for the brightest stars only, to avoid clutter
       const showLbl = W > 480 ? (s.vmag < 2.95 || s.hip === 85267 || s.hip === 13847) : (s.vmag < 2.2 || s.hip === 2081);
       if (showLbl) {{
-        ctx.font = "500 9.5px " + getComputedStyle(document.body).getPropertyValue("--sans");
-        ctx.fillStyle = s.cat === 1 ? "#fae2ae" : "#9bd0ff";
-        const dy = (idx % 2 === 0 ? -rad - 4 : rad + 11);
+        ctx.font = "400 11px " + SANS;
+        const tw = ctx.measureText(s.name).width;
         const alignR = s.ra > 315;
-        ctx.textAlign = alignR ? "right" : "left";
-        ctx.fillText(s.name, sx + (alignR ? -6 : 6), sy + dy);
+        const first = idx % 2 === 0 ? -rad - 4 : rad + 12;
+        const tries = [first, idx % 2 === 0 ? rad + 12 : -rad - 4, first + (first < 0 ? -12 : 12)];
+        for (const dy of tries) {{
+          const x0 = alignR ? sx - 6 - tw : sx + 6;
+          const box = [x0 - 2, sy + dy - 10, x0 + tw + 2, sy + dy + 3];
+          const hit = placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]));
+          if (hit) continue;
+          placed.push(box);
+          ctx.textAlign = "left";
+          ctx.lineWidth = 3; ctx.lineJoin = "round";
+          ctx.strokeStyle = "rgba(13, 20, 33, 0.85)";
+          ctx.strokeText(s.name, x0, sy + dy);
+          ctx.fillStyle = s.cat === 1 ? C.ink : C.slate;
+          ctx.fillText(s.name, x0, sy + dy);
+          break;
+        }}
       }}
     }});
 
-    // X-axis RA ticks
-    ctx.strokeStyle = "rgba(207, 165, 68, 0.3)";
+    // Frame and x-axis
+    ctx.strokeStyle = C.line;
     ctx.lineWidth = 1;
     ctx.strokeRect(PAD.l, PAD.t, pw, ph);
     ctx.textAlign = "center";
-    ctx.font = "400 10px " + getComputedStyle(document.body).getPropertyValue("--mono");
-    ctx.fillStyle = "#9aa7bd";
+    ctx.font = "400 11px " + SANS;
+    ctx.fillStyle = C.inkSoft;
     for (let hr = 0; hr <= 24; hr += 4) {{
       const x = xOf(hr * 15);
       ctx.fillText(hr + "h", x, PAD.t + ph + 16);
     }}
-    ctx.fillText("Right Ascension (J2000)", PAD.l + pw / 2, H - 5);
+    ctx.fillStyle = C.faint;
+    ctx.fillText(W < 480 ? "Right ascension (hours)" : "Position around the sky (right ascension, hours)", PAD.l + pw / 2, H - 5);
+    ctx.textAlign = "left";
 
-    scoreEl.innerHTML = 'Ptolemy visible: <strong style="color:' + (catUp === 12 ? '#8ad3b5' : '#e88565') + '">' + catUp + '/12</strong> &nbsp;·&nbsp; Missing hidden: <strong style="color:' + (missDown >= 11 ? '#8ad3b5' : '#e88565') + '">' + missDown + '/12</strong>';
+    scoreEl.innerHTML = 'Catalogued stars that rise: <strong class="' + (catUp === 12 ? 'is-good' : 'is-bad') + '">' + catUp + '/12</strong><br>Left-out stars that never rise: <strong class="' + '' + '">' + missDown + '/12</strong>';
   }}
 
   function animateTo(t, lat) {{
@@ -1772,7 +1727,7 @@ def build_rim_html(cat: Dict) -> str:
 
   btns.forEach(btn => {{
     btn.addEventListener("click", () => {{
-      btns.forEach(b => b.classList.toggle("is-active", b === btn));
+      btns.forEach(b => {{ b.classList.toggle("is-active", b === btn); b.setAttribute("aria-pressed", b === btn ? "true" : "false"); }});
       animateTo(Number(btn.dataset.t), Number(btn.dataset.lat));
     }});
   }});
@@ -1790,30 +1745,35 @@ def build_rim_html(cat: Dict) -> str:
 
 
 def build_verdict_html(summary: Dict) -> str:
-    return """<div class="verdict">
+    earliest = summary["combined_honest_epoch_labels"][0]
+    bright = fmt_year(variant_epoch(summary, "vmag_le_4.0"))
+    circle = fmt_year(summary["m3_geometric_cap"]["epoch"])
+    free = fmt_year(summary["m2_free_extinction"]["best"]["epoch"])
+    m1 = summary["primary_m1"]["epoch_label"]
+    return f"""<div class="verdict">
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">Pre-registered test · Issue #85</p>
-    <p class="verdict-text">Does the empty southern patch allow an origin before 3000 BCE?</p>
-    <p class="verdict-note">Every one of all 13 locked models, all 21 leave-one-constellation-out runs, and all 500 spatial-block bootstrap draws falls after 201 BCE. A 3000 BCE sky is rejected by Δln L = −106.2 (odds &gt; 10<sup>46</sup> : 1).</p>
+    <p class="verdict-kicker">The test fixed in advance</p>
+    <p class="verdict-text">Could the empty patch have been set before 3000 BCE?</p>
+    <p class="verdict-note">No. Every version of the test puts it after {earliest}, and a sky of 3000 BCE fits far worse.</p>
   </div>
   <p class="verdict-status is-no"><span class="dot" aria-hidden="true"></span>Excluded</p>
 </div>
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">What the void actually records</p>
-    <p class="verdict-text">Classical Greco-Alexandrian horizon (Hipparchus to Ptolemy, c. 130 BCE–140 CE)</p>
-    <p class="verdict-note">Bright constellation skeletons (V ≤ 4.0: 121 BCE, 31.8° N), the extinction-free circular void (41 BCE, R = 41.7°), and free-extinction profile (160 CE, 35.7° N) converge on the era the catalogue was compiled.</p>
+    <p class="verdict-kicker">What the patch records</p>
+    <p class="verdict-text">The horizon of the Greek astronomers who compiled the catalogue, about 130 BCE to 140 CE</p>
+    <p class="verdict-note">Bright stars alone give {bright}, a plain empty circle {circle}, and a model free to choose its own haze {free}.</p>
   </div>
-  <p class="verdict-status is-yes"><span class="dot" aria-hidden="true"></span>Classical sky</p>
+  <p class="verdict-status is-yes"><span class="dot" aria-hidden="true"></span>The known answer</p>
 </div>
 <div class="verdict-row">
   <div>
-    <p class="verdict-kicker">Methodological stress test</p>
-    <p class="verdict-text">Single-model extinction fits are fragile and can overshoot past 137 CE</p>
-    <p class="verdict-note">Our locked primary model (k_V = 0.25, V ≤ 5.5) overshot to 910 CE (25.8° N)—773 years after the Almagest was written—because ancient observers recorded faint stars inside named southern figures while ignoring brighter stars in blank sky.</p>
+    <p class="verdict-kicker">What it cannot show</p>
+    <p class="verdict-text">How old the constellation figures are</p>
+    <p class="verdict-note">A cataloguer lists every star he can see, so the edge of the listed stars is his own horizon. The main model also gave {m1}, an impossible date, from one assumption about haze.</p>
   </div>
-  <p class="verdict-status is-open"><span class="dot" aria-hidden="true"></span>Wide uncertainty</p>
+  <p class="verdict-status is-open"><span class="dot" aria-hidden="true"></span>Not tested</p>
 </div>
 </div>
 """

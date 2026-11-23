@@ -48,3 +48,6 @@ Every paid run. Stop and ask Eugene before going over a question's budget, or ov
 | 2026-11-23 | site (topic pages) | OpenAI API, `gpt-image-2.6-sunburst` | 0.25 | Five illustrations for the topic pages and home page, one call each, 1536×1024, quality high. Estimated from the token counts in the responses (about 1,400 image tokens each); the model's price list was not checked |
 | 2026-11-23 | unfolding-argument (#66) | OpenAI API, `gpt-6.2-astra` | 1.30 | Amendment 1 (Stage 3): statement check, three rounds (1.01, 0.17, 0.11); at list price from logged token counts |
 | 2026-11-23 | unfolding-argument (#66) | Google Gemini API, `gemini-4-neon` | 2.35 | Amendment 1 (Stage 3): same check (2.06, 0.15, 0.14) |
+| 2026-11-23 | site (topic pages) | OpenAI API, `gpt-image-2.6-sunburst` | 0.05 | One more illustration, for the ancient-sky topic page; estimated from token counts as above |
+| 2026-11-23 | tunguska-calibration (#100) | Google Gemini API, `gemini-4-neon` | 0.96 | Pre-lock plan review, two rounds (0.46, 0.50); list price from logged token counts |
+| 2026-11-23 | tunguska-calibration (#100) | Google Gemini API, `gemini-4-neon` | 0.46 | Independent replication program, one call |

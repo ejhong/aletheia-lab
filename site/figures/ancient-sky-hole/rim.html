@@ -1,68 +1,80 @@
 <figure class="fig sky-rim-fig" id="sky-horizon-rim">
 <style>
-.sky-rim-fig { margin: 2.2rem 0 2.6rem; }
-.rim-plate {
-  background: linear-gradient(180deg, #101627 0%, #090d17 100%);
-  border: 1px solid rgba(207, 165, 68, 0.34);
-  border-radius: 6px;
-  color: #f3ecdf;
-  overflow: hidden;
-  box-shadow: 0 18px 46px rgba(12, 10, 8, 0.24);
+
+.fig .sky-panel {
+  --band: #0d1421; --band-soft: #131c2c; --band-line: #2a3750;
+  --band-ink: #f6f1e8; --band-ink-soft: #cdd3de; --band-faint: #8f9bb1; --band-slate: #c9daf0;
+  --band-copper: #d08a5c; --band-verdigris: #7fb39d; --band-ochre: #cfa544;
+  background: var(--band); color: var(--band-ink-soft);
+  border: 1px solid var(--band-line); border-radius: 3px; overflow: hidden;
+  font-family: var(--sans);
 }
-.rim-head {
+.fig .sky-head {
   display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
-  gap: 0.5rem 1rem;
-  padding: 1rem 1.35rem 0.8rem;
-  border-bottom: 1px solid rgba(207, 165, 68, 0.18);
+  gap: 0.5rem 1.25rem; padding: 1rem 1.25rem 0.85rem; border-bottom: 1px solid var(--band-line);
 }
-.rim-score {
-  font: 500 11.5px/1.35 var(--mono); color: #d8cdb8;
-  background: rgba(8, 11, 19, 0.72); border: 1px solid rgba(207, 165, 68, 0.28);
-  padding: 0.35rem 0.75rem; border-radius: 999px;
+.fig .sky-eyebrow {
+  font: 500 10.5px/1.4 var(--mono); text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--band-faint); margin: 0 0 0.3rem;
 }
-.rim-score strong { color: #8ad3b5; }
-.rim-canvas-wrap { position: relative; padding: 0.6rem 1rem 0.3rem; }
+.fig .sky-title { font: 400 1.3rem/1.25 var(--serif); color: var(--band-ink); margin: 0; letter-spacing: -0.005em; }
+.fig .sky-legend {
+  display: flex; flex-wrap: wrap; gap: 0.35rem 1.4rem; margin: 0;
+  padding: 0.6rem 1.25rem 0.7rem; font: 400 0.84rem/1.4 var(--sans); color: var(--band-ink-soft);
+}
+.fig .sky-legend .key { display: inline-flex; align-items: center; gap: 0.4rem; }
+.fig .sky-legend svg { flex: none; }
+.fig .sky-btn {
+  font: 400 0.8rem/1.25 var(--sans); padding: 0.4rem 0.7rem; border-radius: 3px; cursor: pointer;
+  background: transparent; border: 1px solid var(--band-line); color: var(--band-ink-soft);
+}
+.fig .sky-btn:hover { border-color: var(--band-faint); color: var(--band-ink); }
+.fig .sky-btn.is-active, .fig .sky-btn[aria-pressed="true"] {
+  border-color: var(--band-copper); color: var(--band-ink);
+  background: color-mix(in oklab, var(--band-copper) 16%, transparent);
+}
+.fig .sky-panel :focus-visible { outline: 2px solid var(--band-copper); outline-offset: 2px; }
+.fig .sky-panel input[type="checkbox"] { accent-color: var(--band-copper); }
+.fig .sky-panel strong { color: var(--band-ink); font-weight: 600; }
+
+.rim-score { font: 400 0.84rem/1.4 var(--sans); color: var(--band-ink-soft); font-variant-numeric: tabular-nums; }
+.fig .rim-score strong.is-good { color: var(--band-verdigris); }
+.fig .rim-score strong.is-bad { color: var(--band-copper); }
+.rim-canvas-wrap { position: relative; padding: 0.4rem 1rem 0.3rem; }
 .rim-canvas-wrap canvas { display: block; width: 100%; height: 340px; }
-.rim-controls {
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: 0.6rem 1rem;
-  padding: 0.75rem 1.35rem 1rem;
-  border-top: 1px solid rgba(207, 165, 68, 0.16);
-  background: rgba(7, 10, 18, 0.72);
-}
+.rim-controls { padding: 0.8rem 1.25rem 1rem; border-top: 1px solid var(--band-line); background: var(--band-soft); }
 .rim-presets { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-.rim-btn {
-  font: 400 11.5px/1.25 var(--sans); padding: 0.36rem 0.66rem; border-radius: 3px; cursor: pointer;
-  background: rgba(255,255,255,0.04); border: 1px solid rgba(207,165,68,0.22); color: #d6cbb7;
-}
-.rim-btn:hover { border-color: rgba(207,165,68,0.6); color: #fff4da; }
-.rim-btn.is-active { background: rgba(207,165,68,0.24); border-color: #e6ba63; color: #fff4da; font-weight: 500; }
 </style>
-<div class="rim-plate">
-  <div class="rim-head">
+<div class="sky-panel">
+  <div class="sky-head">
     <div>
-      <p class="sky-eyebrow" style="margin-bottom:.2rem">Horizon Forensics · 24 Landmark Rim Stars</p>
-      <h3 class="sky-title">Fingerprints on the Horizon: Catalogued vs. Missing Stars</h3>
+      <p class="sky-eyebrow">24 stars near the southern horizon</p>
+      <h3 class="sky-title">The stars on the rim</h3>
     </div>
-    <div class="rim-score" id="rim-score">—</div>
+    <div class="rim-score" id="rim-score" aria-live="polite">-</div>
   </div>
+  <p class="sky-legend">
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="#e9d7a8"/></svg>In Ptolemy's catalogue (filled)</span>
+    <span class="key"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="none" stroke="#c9daf0" stroke-width="2"/></svg>Bright stars he left out (rings)</span>
+    <span class="key"><svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><line x1="0" x2="16" y1="6" y2="6" stroke="#d08a5c" stroke-width="2"/></svg>Horizon</span>
+  </p>
   <div class="rim-canvas-wrap">
-    <canvas id="rim-canvas" aria-label="Interactive horizon elevation profile comparing the 12 southernmost Ptolemy stars against the 12 brightest missing southern stars across ancient sites and epochs."></canvas>
+    <canvas id="rim-canvas" role="img" aria-label="How high the 12 southernmost stars Ptolemy listed and the 12 brightest southern stars he left out climb above or below the horizon, for a chosen place and date."></canvas>
   </div>
   <div class="rim-controls">
-    <div class="rim-presets" id="rim-presets">
-      <button type="button" class="rim-btn is-active" data-t="-127" data-lat="36.4">Rhodes · 128 BCE (Hipparchus)</button>
-      <button type="button" class="rim-btn" data-t="137" data-lat="31.2">Alexandria · 137 CE (Ptolemy)</button>
-      <button type="button" class="rim-btn" data-t="-1099" data-lat="32.5">Babylon · 1100 BCE</button>
-      <button type="button" class="rim-btn" data-t="-2599" data-lat="35.3">Crete · 2600 BCE</button>
-      <button type="button" class="rim-btn" data-t="-9599" data-lat="37.2">Göbekli Tepe · 9600 BCE</button>
+    <div class="rim-presets" id="rim-presets" role="group" aria-label="Places and dates">
+      <button type="button" class="sky-btn rim-btn is-active" aria-pressed="true" data-t="-127" data-lat="36.4">Rhodes, 128 BCE (Hipparchus)</button>
+      <button type="button" class="sky-btn rim-btn" aria-pressed="false" data-t="137" data-lat="31.2">Alexandria, 137 CE (Ptolemy)</button>
+      <button type="button" class="sky-btn rim-btn" aria-pressed="false" data-t="-1099" data-lat="32.5">Babylon, 1100 BCE</button>
+      <button type="button" class="sky-btn rim-btn" aria-pressed="false" data-t="-2599" data-lat="35.3">Crete, 2600 BCE</button>
+      <button type="button" class="sky-btn rim-btn" aria-pressed="false" data-t="-9599" data-lat="37.2">Göbekli Tepe, 9600 BCE</button>
     </div>
   </div>
 </div>
-<figcaption>Maximum southern culmination altitude (degrees above or below the sea horizon) for the 12 southernmost bright stars Ptolemy catalogued (gold circles) versus the 12 brightest southern stars Ptolemy omitted (sapphire diamonds), ordered by Right Ascension. At <strong>Rhodes in 128 BCE</strong>, all 12 catalogued stars rise cleanly above 0° while 11 of 12 missing stars sit below the horizon (only Avior grazes +0.01°). At <strong>Alexandria in 137 CE</strong>, four bright missing stars—Ankaa (+6.4°), Avior (+4.6°), Alnair (+4.5°), and Tiaki (+3.4°)—stand clearly in the sky yet remain uncatalogued. At <strong>2600 BCE</strong> or <strong>9600 BCE</strong>, the two groups scramble completely across the horizon.</figcaption>
+<figcaption>How high each star climbs at its highest point, in degrees above or below the sea horizon, for 12 of the southernmost bright stars Ptolemy listed (filled dots) and the 12 brightest southern stars he left out (rings), placed in order around the sky. Alpha-1 Centauri is not among the rings, because it is the close companion of a listed star. At <strong>Rhodes in 128 BCE</strong> all 12 listed stars rise and 9 of the 12 left-out stars never do. Of the other three, Avior grazes the horizon (+0.01°), Iota Carinae stands 2° up, and Mu Velorum stands 14° up, which we cannot explain. At <strong>Alexandria in 137 CE</strong> seven of the twelve left-out stars stand more than 3° up and are still not in the catalogue. At <strong>2600 BCE</strong> or <strong>9600 BCE</strong> the two groups are mixed on both sides of the horizon. Among the 30 brightest left-out stars in the results file, 23 never rose at Rhodes and 14 at Alexandria.</figcaption>
 <script>
 (function() {
-  const STARS = [{"hip":30438,"name":"Canopus","bayer":"Alp Car","cst":"Argo Navis","vmag":-0.62,"ra":95.99,"cat":1,"u":[-0.06322,0.60274,-0.79543],"v":[-0.1059,0.0807,0.0695]},{"hip":60718,"name":"Acrux","bayer":"Alp1Cru","cst":"Centaurus","vmag":0.77,"ra":186.65,"cat":1,"u":[-0.44941,-0.05239,-0.89179],"v":[0.0434,0.1777,-0.0323]},{"hip":71681,"name":"Alpha Centauri","bayer":"Alp2Cen","cst":"Centaurus","vmag":1.35,"ra":219.91,"cat":1,"u":[-0.37373,-0.31264,-0.87326],"v":[-14.2915,10.8017,2.2492]},{"hip":68702,"name":"Hadar","bayer":"Bet Cen","cst":"Centaurus","vmag":0.61,"ra":210.96,"cat":1,"u":[-0.42394,-0.25428,-0.86926],"v":[0.0059,0.1955,-0.0601]},{"hip":85267,"name":"Gamma Arae","bayer":"Gam Ara","cst":"Ara","vmag":3.31,"ra":261.35,"cat":1,"u":[-0.08329,-0.54742,-0.83271],"v":[0.0059,0.0638,-0.0425]},{"hip":62434,"name":"Mimosa","bayer":"Bet Cru","cst":"Centaurus","vmag":1.25,"ra":191.93,"cat":1,"u":[-0.4938,-0.10433,-0.8633],"v":[0.0041,0.2399,-0.0314]},{"hip":85258,"name":"Beta Arae","bayer":"Bet Ara","cst":"Ara","vmag":2.84,"ra":261.32,"cat":1,"u":[-0.08537,-0.5595,-0.82442],"v":[-0.0245,0.1037,-0.0678]},{"hip":83081,"name":"Zeta Arae","bayer":"Zet Ara","cst":"Ara","vmag":3.12,"ra":254.66,"cat":1,"u":[-0.14802,-0.5394,-0.82894],"v":[-0.0481,0.1603,-0.0957]},{"hip":59747,"name":"Imai","bayer":"Del Cru","cst":"Centaurus","vmag":2.79,"ra":183.79,"cat":1,"u":[-0.51766,-0.03426,-0.8549],"v":[0.0326,0.1804,-0.027]},{"hip":42913,"name":"Alsephina","bayer":"Del Vel","cst":"Argo Navis","vmag":1.93,"ra":131.18,"cat":1,"u":[-0.38036,0.43486,-0.81622],"v":[0.1663,-0.402,-0.2917]},{"hip":45941,"name":"Markeb","bayer":"Kap Vel","cst":"Argo Navis","vmag":2.47,"ra":140.53,"cat":1,"u":[-0.44265,0.36452,-0.81926],"v":[-0.0014,0.0685,0.0312]},{"hip":13847,"name":"Acamar","bayer":"The1Eri","cst":"Eridanus","vmag":2.88,"ra":44.57,"cat":1,"u":[0.54332,0.53515,-0.64685],"v":[0.2396,-0.1283,0.0951]},{"hip":7588,"name":"Achernar","bayer":"Alp Eri","cst":"Void","vmag":0.45,"ra":24.43,"cat":0,"u":[0.49273,0.2238,-0.84091],"v":[-0.3252,0.321,-0.1052]},{"hip":45238,"name":"Miaplacidus","bayer":"Bet Car","cst":"Void","vmag":1.67,"ra":138.3,"cat":0,"u":[-0.25883,0.2306,-0.93799],"v":[0.1387,0.9002,0.183]},{"hip":109268,"name":"Alnair","bayer":"Alp Gru","cst":"Void","vmag":1.73,"ra":332.06,"cat":0,"u":[0.60294,-0.31981,-0.73088],"v":[-0.1731,0.7921,-0.4894]},{"hip":41037,"name":"Avior","bayer":"Eps Car","cst":"Void","vmag":1.86,"ra":125.63,"cat":0,"u":[-0.29557,0.41242,-0.86171],"v":[0.0446,0.1487,0.0559]},{"hip":82273,"name":"Atria","bayer":"Alp TrA","cst":"Void","vmag":1.91,"ra":252.17,"cat":0,"u":[-0.10962,-0.34072,-0.93375],"v":[0.128,0.1154,-0.0571]},{"hip":100751,"name":"Peacock","bayer":"Alp Pav","cst":"Void","vmag":1.94,"ra":306.41,"cat":0,"u":[0.32559,-0.44143,-0.83614],"v":[-0.1772,0.3032,-0.2291]},{"hip":112122,"name":"Tiaki","bayer":"Bet Gru","cst":"Void","vmag":2.07,"ra":340.67,"cat":0,"u":[0.64493,-0.22628,-0.72998],"v":[0.2027,0.626,-0.0149]},{"hip":45556,"name":"Aspidiske","bayer":"Iot Car","cst":"Void","vmag":2.21,"ra":139.27,"cat":0,"u":[-0.38718,0.33335,-0.85963],"v":[0.0188,0.1056,0.0325]},{"hip":2081,"name":"Ankaa","bayer":"Alp Phe","cst":"Void","vmag":2.4,"ra":6.57,"cat":0,"u":[0.73471,0.08462,-0.67308],"v":[-1.2755,0.989,-1.268]},{"hip":61585,"name":"Alpha Muscae","bayer":"Alp Mus","cst":"Void","vmag":2.69,"ra":189.3,"cat":0,"u":[-0.35148,-0.05753,-0.93443],"v":[0.0244,0.1999,-0.0215]},{"hip":52419,"name":"Theta Carinae","bayer":"The Car","cst":"Void","vmag":2.74,"ra":160.74,"cat":0,"u":[-0.40798,0.14256,-0.90179],"v":[-0.0196,0.1038,0.0253]},{"hip":110130,"name":"Alpha Tucanae","bayer":"Alp Tuc","cst":"Void","vmag":2.87,"ra":334.63,"cat":0,"u":[0.44822,-0.21258,-0.86828],"v":[-0.2936,-0.2443,-0.0918]}];
+  const STARS = [{"hip":30438,"name":"Canopus","bayer":"Alp Car","cst":"Argo Navis","vmag":-0.62,"ra":95.99,"cat":1,"u":[-0.06322,0.60274,-0.79543],"v":[-0.1059,0.0807,0.0695]},{"hip":60718,"name":"Acrux","bayer":"Alp1Cru","cst":"Centaurus","vmag":0.77,"ra":186.65,"cat":1,"u":[-0.44941,-0.05239,-0.89179],"v":[0.0434,0.1777,-0.0323]},{"hip":71681,"name":"Alpha Centauri","bayer":"Alp2Cen","cst":"Centaurus","vmag":1.35,"ra":219.91,"cat":1,"u":[-0.37373,-0.31264,-0.87326],"v":[-14.2915,10.8017,2.2492]},{"hip":68702,"name":"Hadar","bayer":"Bet Cen","cst":"Centaurus","vmag":0.61,"ra":210.96,"cat":1,"u":[-0.42394,-0.25428,-0.86926],"v":[0.0059,0.1955,-0.0601]},{"hip":85267,"name":"Gamma Arae","bayer":"Gam Ara","cst":"Ara","vmag":3.31,"ra":261.35,"cat":1,"u":[-0.08329,-0.54742,-0.83271],"v":[0.0059,0.0638,-0.0425]},{"hip":62434,"name":"Mimosa","bayer":"Bet Cru","cst":"Centaurus","vmag":1.25,"ra":191.93,"cat":1,"u":[-0.4938,-0.10433,-0.8633],"v":[0.0041,0.2399,-0.0314]},{"hip":85258,"name":"Beta Arae","bayer":"Bet Ara","cst":"Ara","vmag":2.84,"ra":261.32,"cat":1,"u":[-0.08537,-0.5595,-0.82442],"v":[-0.0245,0.1037,-0.0678]},{"hip":83081,"name":"Zeta Arae","bayer":"Zet Ara","cst":"Ara","vmag":3.12,"ra":254.66,"cat":1,"u":[-0.14802,-0.5394,-0.82894],"v":[-0.0481,0.1603,-0.0957]},{"hip":59747,"name":"Imai","bayer":"Del Cru","cst":"Centaurus","vmag":2.79,"ra":183.79,"cat":1,"u":[-0.51766,-0.03426,-0.8549],"v":[0.0326,0.1804,-0.027]},{"hip":42913,"name":"Alsephina","bayer":"Del Vel","cst":"Argo Navis","vmag":1.93,"ra":131.18,"cat":1,"u":[-0.38036,0.43486,-0.81622],"v":[0.1663,-0.402,-0.2917]},{"hip":45941,"name":"Markeb","bayer":"Kap Vel","cst":"Argo Navis","vmag":2.47,"ra":140.53,"cat":1,"u":[-0.44265,0.36452,-0.81926],"v":[-0.0014,0.0685,0.0312]},{"hip":13847,"name":"Acamar","bayer":"The1Eri","cst":"Eridanus","vmag":2.88,"ra":44.57,"cat":1,"u":[0.54332,0.53515,-0.64685],"v":[0.2396,-0.1283,0.0951]},{"hip":7588,"name":"Achernar","bayer":"Alp Eri","cst":"Left out","vmag":0.45,"ra":24.43,"cat":0,"u":[0.49273,0.2238,-0.84091],"v":[-0.3252,0.321,-0.1052]},{"hip":45238,"name":"Miaplacidus","bayer":"Bet Car","cst":"Left out","vmag":1.67,"ra":138.3,"cat":0,"u":[-0.25883,0.2306,-0.93799],"v":[0.1387,0.9002,0.183]},{"hip":109268,"name":"Alnair","bayer":"Alp Gru","cst":"Left out","vmag":1.73,"ra":332.06,"cat":0,"u":[0.60294,-0.31981,-0.73088],"v":[-0.1731,0.7921,-0.4894]},{"hip":41037,"name":"Avior","bayer":"Eps Car","cst":"Left out","vmag":1.86,"ra":125.63,"cat":0,"u":[-0.29557,0.41242,-0.86171],"v":[0.0446,0.1487,0.0559]},{"hip":82273,"name":"Atria","bayer":"Alp TrA","cst":"Left out","vmag":1.91,"ra":252.17,"cat":0,"u":[-0.10962,-0.34072,-0.93375],"v":[0.128,0.1154,-0.0571]},{"hip":100751,"name":"Peacock","bayer":"Alp Pav","cst":"Left out","vmag":1.94,"ra":306.41,"cat":0,"u":[0.32559,-0.44143,-0.83614],"v":[-0.1772,0.3032,-0.2291]},{"hip":112122,"name":"Tiaki","bayer":"Bet Gru","cst":"Left out","vmag":2.07,"ra":340.67,"cat":0,"u":[0.64493,-0.22628,-0.72998],"v":[0.2027,0.626,-0.0149]},{"hip":45556,"name":"Aspidiske","bayer":"Iot Car","cst":"Left out","vmag":2.21,"ra":139.27,"cat":0,"u":[-0.38718,0.33335,-0.85963],"v":[0.0188,0.1056,0.0325]},{"hip":2081,"name":"Ankaa","bayer":"Alp Phe","cst":"Left out","vmag":2.4,"ra":6.57,"cat":0,"u":[0.73471,0.08462,-0.67308],"v":[-1.2755,0.989,-1.268]},{"hip":52727,"name":"Mu Vel","bayer":"Mu Vel","cst":"Left out","vmag":2.69,"ra":161.69,"cat":0,"u":[-0.61758,0.20434,-0.7595],"v":[0.092,-0.3499,-0.1689]},{"hip":61585,"name":"Alpha Muscae","bayer":"Alp Mus","cst":"Left out","vmag":2.69,"ra":189.3,"cat":0,"u":[-0.35148,-0.05753,-0.93443],"v":[0.0244,0.1999,-0.0215]},{"hip":52419,"name":"Theta Carinae","bayer":"The Car","cst":"Left out","vmag":2.74,"ra":160.74,"cat":0,"u":[-0.40798,0.14256,-0.90179],"v":[-0.0196,0.1038,0.0253]}];
   const DAS2R = Math.PI / (180 * 3600);
   const D2PI = 2 * Math.PI;
   const XYPOL = [
@@ -114,13 +126,21 @@
 
   function resize() {
     const rect = canvas.parentElement.getBoundingClientRect();
-    W = Math.max(320, Math.round(rect.width - 32));
+    W = Math.max(240, Math.round(rect.width - 32));
     H = W < 500 ? 310 : 340;
     canvas.style.height = H + "px";
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = W * dpr; canvas.height = H * dpr;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     render();
+  }
+
+  const SANS = (getComputedStyle(document.documentElement).getPropertyValue("--sans") || "").trim() || "system-ui, sans-serif";
+  const C = { band: "#0d1421", bandSoft: "#131c2c", ink: "#f6f1e8", inkSoft: "#cdd3de", faint: "#8f9bb1", line: "#2a3750", copper: "#d08a5c", verdigris: "#7fb39d", slate: "#c9daf0" };
+  function catColor(vmag) {
+    const f = Math.max(0, Math.min(1, (vmag - 1.0) / 3.5));
+    const a = [246, 241, 232], b = [207, 165, 68];
+    return "rgb(" + a.map((x, k) => Math.round(x + f * (b[k] - x))).join(",") + ")";
   }
 
   function render() {
@@ -131,41 +151,33 @@
 
     ctx.clearRect(0, 0, W, H);
 
-    // Sky above horizon gradient vs underground dark earth below 0 deg
+    // Sky above the horizon (panel blue), haze band 0 to +6 deg, darker ground below
     const y0 = yOf(0);
-    const skyG = ctx.createLinearGradient(0, PAD.t, 0, y0);
-    skyG.addColorStop(0, "#101a32");
-    skyG.addColorStop(0.75, "#172038");
-    skyG.addColorStop(1, "rgba(180, 108, 62, 0.22)");
-    ctx.fillStyle = skyG;
+    ctx.fillStyle = C.bandSoft;
     ctx.fillRect(PAD.l, PAD.t, pw, y0 - PAD.t);
-
-    // Twilight haze band (0 to +6 deg)
     const y6 = yOf(6);
-    ctx.fillStyle = "rgba(224, 134, 82, 0.08)";
+    ctx.fillStyle = "rgba(208, 138, 92, 0.08)";
     ctx.fillRect(PAD.l, y6, pw, y0 - y6);
-
-    // Below-horizon earth/void fill
-    ctx.fillStyle = "rgba(5, 8, 15, 0.78)";
+    ctx.fillStyle = "#080d16";
     ctx.fillRect(PAD.l, y0, pw, PAD.t + ph - y0);
 
     // Horizontal grid lines
-    ctx.font = "400 10px " + getComputedStyle(document.body).getPropertyValue("--mono");
+    ctx.font = "400 11px " + SANS;
     ctx.textAlign = "right";
     for (const h of [-20, -10, 0, 10, 20, 30]) {
       const y = yOf(h);
       ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + pw, y);
-      ctx.strokeStyle = h === 0 ? "#e08652" : "rgba(255,255,255,0.08)";
+      ctx.strokeStyle = h === 0 ? C.copper : "rgba(246, 241, 232, 0.07)";
       ctx.lineWidth = h === 0 ? 2 : 1;
       ctx.stroke();
-      ctx.fillStyle = h === 0 ? "#f2a472" : "#8f9db3";
+      ctx.fillStyle = h === 0 ? C.copper : C.faint;
       ctx.fillText((h > 0 ? "+" : "") + h + "°", PAD.l - 7, y + 3.5);
     }
     ctx.textAlign = "left";
-    ctx.fillStyle = "rgba(242, 164, 114, 0.85)";
-    ctx.fillText("SEA HORIZON (0°)", PAD.l + 8, y0 - 6);
-    ctx.fillStyle = "rgba(130, 185, 245, 0.55)";
-    ctx.fillText("NEVER RISES BELOW HORIZON", PAD.l + 8, y0 + 14);
+    ctx.fillStyle = C.faint;
+    ctx.fillText("Above the horizon: rises", PAD.l + 8, PAD.t + 15);
+    ctx.fillText("Below the horizon: never rises", PAD.l + 8, PAD.t + ph - 8);
+    const placed = [];  // label boxes already drawn, to avoid overlaps
 
     // Evaluate stars at (curT, curLat)
     const pN = ltpequ(curT);
@@ -186,52 +198,65 @@
       const sx = xOf(s.ra), sy = yOf(hMax);
       const rad = Math.max(3.5, Math.min(7.5, (4.4 - s.vmag) * 1.45));
 
-      // Vertical stem to horizon
+      // Stem to the horizon
       ctx.beginPath(); ctx.moveTo(sx, y0); ctx.lineTo(sx, sy);
-      ctx.strokeStyle = s.cat === 1 ? "rgba(244, 198, 102, 0.28)" : "rgba(116, 186, 255, 0.25)";
+      ctx.strokeStyle = s.cat === 1 ? "rgba(207, 165, 68, 0.35)" : "rgba(201, 218, 240, 0.3)";
       ctx.lineWidth = 1;
       ctx.stroke();
 
+      ctx.beginPath(); ctx.arc(sx, sy, rad, 0, D2PI);
       if (s.cat === 1) {
-        ctx.beginPath(); ctx.arc(sx, sy, rad, 0, D2PI);
-        ctx.fillStyle = hMax > 0 ? "#f6cf7c" : "#e86e4c";
+        // catalogued: filled cream-to-gold disc
+        ctx.fillStyle = catColor(s.vmag);
         ctx.fill();
-        ctx.strokeStyle = "#0a0e1a"; ctx.lineWidth = 1.2; ctx.stroke();
+        ctx.strokeStyle = C.band; ctx.lineWidth = 1.2; ctx.stroke();
       } else {
-        ctx.save(); ctx.translate(sx, sy); ctx.rotate(Math.PI / 4);
-        ctx.fillStyle = hMax <= 0.1 ? "#74baff" : "#ff9468";
-        ctx.fillRect(-rad * 0.85, -rad * 0.85, rad * 1.7, rad * 1.7);
-        ctx.strokeStyle = "#0a0e1a"; ctx.lineWidth = 1.1;
-        ctx.strokeRect(-rad * 0.85, -rad * 0.85, rad * 1.7, rad * 1.7);
-        ctx.restore();
+        // left out: pale blue-white ring
+        ctx.fillStyle = C.band; ctx.fill();
+        ctx.strokeStyle = C.slate; ctx.lineWidth = 2; ctx.stroke();
       }
 
-      // Clean non-cluttered labels for prominent stars
+      // Labels for the brightest stars only, to avoid clutter
       const showLbl = W > 480 ? (s.vmag < 2.95 || s.hip === 85267 || s.hip === 13847) : (s.vmag < 2.2 || s.hip === 2081);
       if (showLbl) {
-        ctx.font = "500 9.5px " + getComputedStyle(document.body).getPropertyValue("--sans");
-        ctx.fillStyle = s.cat === 1 ? "#fae2ae" : "#9bd0ff";
-        const dy = (idx % 2 === 0 ? -rad - 4 : rad + 11);
+        ctx.font = "400 11px " + SANS;
+        const tw = ctx.measureText(s.name).width;
         const alignR = s.ra > 315;
-        ctx.textAlign = alignR ? "right" : "left";
-        ctx.fillText(s.name, sx + (alignR ? -6 : 6), sy + dy);
+        const first = idx % 2 === 0 ? -rad - 4 : rad + 12;
+        const tries = [first, idx % 2 === 0 ? rad + 12 : -rad - 4, first + (first < 0 ? -12 : 12)];
+        for (const dy of tries) {
+          const x0 = alignR ? sx - 6 - tw : sx + 6;
+          const box = [x0 - 2, sy + dy - 10, x0 + tw + 2, sy + dy + 3];
+          const hit = placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]));
+          if (hit) continue;
+          placed.push(box);
+          ctx.textAlign = "left";
+          ctx.lineWidth = 3; ctx.lineJoin = "round";
+          ctx.strokeStyle = "rgba(13, 20, 33, 0.85)";
+          ctx.strokeText(s.name, x0, sy + dy);
+          ctx.fillStyle = s.cat === 1 ? C.ink : C.slate;
+          ctx.fillText(s.name, x0, sy + dy);
+          break;
+        }
       }
     });
 
-    // X-axis RA ticks
-    ctx.strokeStyle = "rgba(207, 165, 68, 0.3)";
+    // Frame and x-axis
+    ctx.strokeStyle = C.line;
     ctx.lineWidth = 1;
     ctx.strokeRect(PAD.l, PAD.t, pw, ph);
     ctx.textAlign = "center";
-    ctx.font = "400 10px " + getComputedStyle(document.body).getPropertyValue("--mono");
-    ctx.fillStyle = "#9aa7bd";
+    ctx.font = "400 11px " + SANS;
+    ctx.fillStyle = C.inkSoft;
     for (let hr = 0; hr <= 24; hr += 4) {
       const x = xOf(hr * 15);
       ctx.fillText(hr + "h", x, PAD.t + ph + 16);
     }
-    ctx.fillText("Right Ascension (J2000)", PAD.l + pw / 2, H - 5);
+    ctx.fillStyle = C.faint;
+    ctx.fillText(W < 480 ? "Right ascension (hours)" : "Position around the sky (right ascension, hours)", PAD.l + pw / 2, H - 5);
+    ctx.textAlign = "left";
 
-    scoreEl.innerHTML = 'Ptolemy visible: <strong style="color:' + (catUp === 12 ? '#8ad3b5' : '#e88565') + '">' + catUp + '/12</strong> &nbsp;·&nbsp; Missing hidden: <strong style="color:' + (missDown >= 11 ? '#8ad3b5' : '#e88565') + '">' + missDown + '/12</strong>';
+    scoreEl.innerHTML = 'Catalogued stars that rise: <strong class="' + (catUp === 12 ? 'is-good' : 'is-bad') + '">' + catUp + '/12</strong><br>Left-out stars that never rise: <strong class="' + '' + '">' + missDown + '/12</strong>';
   }
 
   function animateTo(t, lat) {
@@ -252,7 +277,7 @@
 
   btns.forEach(btn => {
     btn.addEventListener("click", () => {
-      btns.forEach(b => b.classList.toggle("is-active", b === btn));
+      btns.forEach(b => { b.classList.toggle("is-active", b === btn); b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
       animateTo(Number(btn.dataset.t), Number(btn.dataset.lat));
     });
   });
