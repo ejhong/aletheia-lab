@@ -854,6 +854,7 @@ def read_topics(questions):
             print("topic %s lists questions not in QUESTIONS.md: %s" % (path.stem, missing), file=sys.stderr)
         topic = {"slug": path.stem, "title": meta.get("title", path.stem), "summary": meta.get("summary", ""),
                  "updated": meta.get("updated"), "order": int(meta.get("order", "99")), "md": md,
+                 "image": meta.get("image"), "image_alt": meta.get("image_alt", ""),
                  "questions": [by_number[n] for n in numbers if n in by_number]}
         topics.append(topic)
         for q in topic["questions"]:
@@ -871,12 +872,26 @@ def topic_counts(topic):
     return " · ".join(parts)
 
 
+def illustration(name, root):
+    """The address of site/assets/illustrations/<name>.jpg, or "" if there is no such picture.
+
+    These pictures are made by an image model (scripts/make_illustrations.py) and are decoration. Wherever one is
+    shown at full size the page says so; they are never evidence.
+    """
+    path = SITE / "assets" / "illustrations" / ((name or "") + ".jpg")
+    return "%sassets/illustrations/%s.jpg?v=%s" % (root, name, short_hash(path)) if name and path.exists() else ""
+
+
 def render_topic_cards(topics, root):
     if not topics:
         return ""
     cards = "".join(
-        '<li class="topic-card"><h3 class="topic-title"><a href="%stopics/%s/">%s</a></h3><p class="topic-summary">%s</p>'
-        '<p class="topic-count">%s</p></li>' % (root, t["slug"], inline(t["title"]), inline(t["summary"]), esc(topic_counts(t)))
+        '<li class="topic-card%s">%s<div class="topic-card-text"><h3 class="topic-title"><a href="%stopics/%s/">%s</a></h3>'
+        '<p class="topic-summary">%s</p><p class="topic-count">%s</p></div></li>' % (
+            " has-art" if illustration(t["image"], root) else "",
+            '<img class="topic-art" src="%s" alt="" loading="lazy" width="1536" height="1024">' % illustration(t["image"], root)
+            if illustration(t["image"], root) else "",
+            root, t["slug"], inline(t["title"]), inline(t["summary"]), esc(topic_counts(t)))
         for t in topics)
     return ('<section class="wrap topics-section" id="topics" aria-labelledby="topics-h">'
             '<div class="index-head"><div><h2 id="topics-h" class="section-title">Topics</h2>'
@@ -894,9 +909,14 @@ def topic_page(topic, root):
             '<p class="dek">%s</p><p class="pills"><span class="topic-count">%s</span></p></div></div>' % (
                 root, updated, inline(topic["title"]), inline(topic["summary"]), esc(topic_counts(topic))))
     rows = "".join(index_row(q, root) for q in topic["questions"])
-    return ('%s<div class="wrap"><article class="prose topic-prose">%s</article>'
+    art = illustration(topic["image"], root)
+    lead = ('<figure class="topic-lead"><img src="%s" alt="%s" width="1536" height="1024">'
+            '<figcaption>An illustration made with an AI image model, for decoration. It is not evidence and shows no '
+            'real object or place.</figcaption></figure>' % (art, esc(topic["image_alt"]))) if art else ""
+    return ('%s<div class="wrap">%s<article class="prose topic-prose%s">%s</article>'
             '<section class="topic-studies" aria-labelledby="studies-h"><h2 id="studies-h" class="section-title">The studies</h2>'
-            '<ul class="q-list" role="list">%s</ul></section></div>' % (head, blocks(topic["md"], doc), rows))
+            '<ul class="q-list" role="list">%s</ul></section></div>' % (
+                head, lead, " has-lead" if art else "", blocks(topic["md"], doc), rows))
 
 
 class Site:
@@ -989,7 +1009,11 @@ def main(argv):
     stats = ('<p class="stats"><a href="./how-it-works/">How the lab works <span aria-hidden="true">→</span></a>'
              '<span>%d questions · %d active · %d done · %d lanes</span></p>' % (
                  len(questions), counts["active"], counts["done"], len(LANES)))
-    home = fill(template("home.html"), stats=stats, index=render_index(ordered, intro, lanes, "./"),
+    art = illustration("workshop", "./")
+    hero_art = ('<figure class="hero-art"><img src="%s" alt="An engraving of a workbench holding an ice core, an astrolabe, '
+                'a knotted-cord record, a clay tablet, a fossil shell, a lens and an open notebook." width="1536" height="1024">'
+                '<figcaption>Illustration made with an AI image model. Decoration, not evidence.</figcaption></figure>' % art) if art else ""
+    home = fill(template("home.html"), hero_art=hero_art, stats=stats, index=render_index(ordered, intro, lanes, "./"),
                 topics=render_topic_cards(topics, "./"), atlas_url=ATLAS_URL)
     site.write("index.html", "Aletheia Lab — experiments on big open questions",
                "Aletheia Lab runs AI experiments on big open questions. Each experiment's plan is locked before any "

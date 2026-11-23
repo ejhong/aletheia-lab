@@ -1,0 +1,49 @@
+{
+ "g3_rows": 1042,
+ "g3_age_onset": 12878.4,
+ "g3_lag_onset": 17.6,
+ "g3_age_peak": 12872.8,
+ "g3_lag_peak": 23.2,
+ "g3_age_end": 12867.2,
+ "g3_lag_end": 28.8,
+ "d18o_points_1700_1730": 38,
+ "d_d18o_step": {
+  "between_shallow": 1710.47,
+  "and_deep": 1711.14
+ },
+ "baseline": [
+  -39.004,
+  1.215,
+  10
+ ],
+ "d_d18o_init": 1709.91,
+ "ion_points_1700_1730": 227,
+ "d_ca_step": {
+  "between_shallow": 1709.85,
+  "and_deep": 1709.95
+ },
+ "d_na_step": {
+  "between_shallow": 1710.85,
+  "and_deep": 1710.95
+ },
+ "so4_median_mad_threshold": [
+  110.2,
+  42.2,
+  236.9
+ ],
+ "so4_spikes_1708_1720": [
+  [
+   1708.65,
+   393.8
+  ],
+  [
+   1713.9,
+   462.0
+  ],
+  [
+   1718.7,
+   649.0
+  ]
+ ],
+ "so4_max_in_pt_interval": 90.7
+}

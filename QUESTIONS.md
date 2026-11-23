@@ -51,7 +51,6 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#87](https://github.com/ejhong/aletheia-lab/issues/87) | Can drought-year satellite imagery and space lidar uncover unmapped ancient earthworks? | data | `buried-geometry` |
 | [#88](https://github.com/ejhong/aletheia-lab/issues/88) | Farming before the Ice Age ended | data | `ice-age-farming` |
 | [#89](https://github.com/ejhong/aletheia-lab/issues/89) | Do pre-dynastic Egyptian stone vases show lathe-machining geometry? | data | `ancient-lathe-vases` |
-| [#90](https://github.com/ejhong/aletheia-lab/issues/90) | Smelting in the ice | data | `smelting-in-the-ice` |
 | [#91](https://github.com/ejhong/aletheia-lab/issues/91) | Do ancient monument orientations peak at an Ice Age epoch like 10,500 BCE? | data | `precession-clock` |
 | [#92](https://github.com/ejhong/aletheia-lab/issues/92) | Göbekli Tepe's star map | data | `gobekli-star-map` |
 | [#93](https://github.com/ejhong/aletheia-lab/issues/93) | Germs as a census of lost cities | audit | `germs-lost-cities` |

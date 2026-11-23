@@ -1,0 +1,104 @@
+{
+ "s2_header": {
+  "E": "GISP2 depth(m)",
+  "I": "GICC05 age(b2k)"
+ },
+ "ties": 65,
+ "pt_onset": {
+  "age_b2k": 12869.9,
+  "years_after_onset": 26.1,
+  "between": [
+   1708.64,
+   12754.8,
+   1713.915,
+   12917.3
+  ]
+ },
+ "pt_peak": {
+  "age_b2k": 12864.1,
+  "years_after_onset": 31.9,
+  "between": [
+   1708.64,
+   12754.8,
+   1713.915,
+   12917.3
+  ]
+ },
+ "pt_end": {
+  "age_b2k": 12858.3,
+  "years_after_onset": 37.7,
+  "between": [
+   1708.64,
+   12754.8,
+   1713.915,
+   12917.3
+  ]
+ },
+ "s3_cols": {
+  "12": "Age (b2k)",
+  "13": "Average deposition (kg km-2)"
+ },
+ "s5_cols": {
+  "1": "GICC05 Age (a b2k)",
+  "26": "Average stratospheric aerosol loading (Tg)"
+ },
+ "n_gl": 1113,
+ "n_bi": 85,
+ "VOLC_GL": {
+  "value": 595.9,
+  "count": 4,
+  "rank": 12,
+  "n": 338,
+  "top5_cut": 16,
+  "median": 162.1,
+  "count_rank": 74,
+  "zero_windows": 16,
+  "rank_among_windows_younger_than_16500": [
+   6,
+   49
+  ],
+  "eruptions_per_1000yr": {
+   "9.3-16.5 ka": 32.6,
+   "24.5-60 ka": 19.2
+  }
+ },
+ "VOLC_BI": {
+  "value": 526.6,
+  "count": 4,
+  "rank": 3,
+  "n": 284,
+  "top5_cut": 14,
+  "median": 0,
+  "count_rank": 1,
+  "zero_windows": 208,
+  "rank_among_windows_younger_than_16500": [
+   1,
+   48
+  ],
+  "eruptions_per_1000yr": {
+   "9.3-16.5 ka": 2.8,
+   "24.5-60 ka": 1.8
+  }
+ },
+ "coolings": 19,
+ "mc_all_50": {
+  "obs": 72.3,
+  "null_mean": 66.6,
+  "p": 0.347
+ },
+ "mc_non_yd_50": {
+  "obs": 62.5,
+  "null_mean": 66.9,
+  "p": 0.537
+ },
+ "mc_all_150": {
+  "obs": 149.6,
+  "null_mean": 201.2,
+  "p": 0.924
+ },
+ "mc_non_yd_150": {
+  "obs": 124.8,
+  "null_mean": 200.4,
+  "p": 0.988
+ }
+}

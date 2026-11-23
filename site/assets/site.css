@@ -938,3 +938,40 @@ details.more > summary:focus-visible { outline: 2px solid var(--copper); outline
 .topic-studies { max-width: 62rem; margin: 3rem auto 0; }
 .topic-studies .section-title { margin-bottom: 1.2rem; }
 @media (max-width: 46rem) { .topic-list { grid-template-columns: 1fr; } }
+.topic-lead { max-width: 62rem; margin: 2.5rem auto 0; }
+.topic-lead img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.topic-lead figcaption { margin-top: .6rem; font-size: .8rem; line-height: 1.5; color: var(--faint); }
+.topic-prose.has-lead { padding-top: 1rem; }
+.topic-card.has-art { padding: 0; display: flex; flex-direction: column; }
+.topic-art { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; border-bottom: 1px solid var(--line); }
+.hero:has(.hero-art) { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 2.5rem 3rem; align-items: center; }
+.hero-art { margin: 0; }
+.hero-art img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.hero-art figcaption { margin-top: .5rem; font: 400 10px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--faint); text-align: right; }
+@media (max-width: 60rem) { .hero:has(.hero-art) { grid-template-columns: 1fr; } .hero-art { max-width: 34rem; } }
+.topic-card.has-art .topic-card-text { padding: 1.2rem 1.4rem 1.2rem; }
+
+/* Topic pages: a scorecard of studies (made by scripts/make_topic_figures.py). */
+.score { margin: 2rem 0 2.5rem; border-top: 1px solid var(--ink); }
+.score-head, .score-row { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 1.35fr); gap: 0 1.4rem; }
+.score-head { padding: .55rem 0 .5rem; border-bottom: 1px solid var(--line); font: 500 10.5px/1.4 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+.score-row { padding: 1.05rem 0 1.1rem; border-bottom: 1px solid var(--line); }
+.prose .score p { margin: 0; }
+.prose .score-num { font: 400 10.5px/1.4 var(--mono); letter-spacing: .1em; color: var(--copper); }
+.prose .score-title { margin: .15rem 0 .55rem; font: 400 1.16rem/1.25 var(--serif); letter-spacing: -.005em; }
+.prose .score-title a { color: var(--ink); text-decoration: none; border: 0; background: none; }
+.prose .score-title a:hover { color: var(--copper); text-decoration: underline; text-underline-offset: 3px; }
+.prose .score-chip { display: inline-flex; align-items: center; gap: .45rem; font: 500 10.5px/1.4 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+.score-glyph { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--ink-soft); flex: none; }
+.is-partly .score-glyph { border-color: var(--ochre); background: linear-gradient(90deg, var(--ochre) 50%, transparent 50%); }
+.is-yes .score-glyph { border-color: var(--verdigris); background: var(--verdigris); }
+.is-open .score-glyph { border-style: dashed; border-color: var(--copper); }
+.prose .score-verdict { margin-top: .25rem; font-size: .88rem; line-height: 1.45; color: var(--ink-soft); }
+.prose .score-cell { font-size: .9rem; line-height: 1.5; color: var(--ink-soft); }
+.prose .score-cell + .score-cell { color: var(--ink); }
+@media (max-width: 44rem) {
+  .score-head { display: none; }
+  .score-row { grid-template-columns: 1fr; gap: .7rem 0; }
+  .score-cell::before { content: attr(data-head); display: block; margin-bottom: .15rem; font: 500 10px/1.4 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+}
+.chart .c-plat { opacity: .16; }
