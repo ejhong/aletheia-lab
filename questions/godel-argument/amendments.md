@@ -592,3 +592,24 @@ Responses.
 
 Round 2 re-checks S5d, S5e and X18 only.
 
+**Round 2 and the state at the lock.** Cost $1.16 ($0.36 OpenAI, $0.80 Google). S5d: `faithful` from OpenAI,
+`faithful_with_caveats` from Google. S5e: `faithful_with_caveats` from both; Google no longer rates the abstract
+setting a major divergence now that the claim says the statement checks only the last inference. The rewritten
+planted error X18 was caught by both. Final verdicts are in `statement-check/REPORT-2D.md`:
+
+- Planted errors: 3 of 3 caught by both checkers.
+- Of the eight real items, all eight are `faithful` or `faithful_with_caveats` from both.
+- Unresolved divergences: none.
+
+The caveats that matter for reading the results. S5a and S5b are statements about arithmetic truth and about
+minds as sets of sentences; neither checker takes them as statements about what DTK proves, and they are not
+offered as such. Consistency statements are built from Craig presentations, so "the consistency statement of
+Peano arithmetic" here is one particular sentence expressing it. S5c takes the known line at a single sentence,
+where the source has a quantifier inside K. S5e and S5f do not tie their letters to DTK.
+
+Total for the tier 2D statement check: $4.69 ($1.59 OpenAI, $3.10 Google). Question total: $44.95, inside the
+$70 ceiling.
+
+`statement-check/Statement6.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement6.lean` and is
+locked there. Nothing in tier 2D has been proved for the record before this point.
+

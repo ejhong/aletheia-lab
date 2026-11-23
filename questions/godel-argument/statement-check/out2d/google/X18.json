@@ -1,0 +1,39 @@
+{
+  "id": "X18",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:46:46Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (τ σ G : Fm),\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼F (σ 🡒 G)) →\n    𝓢 ⊢ σ 🡒 τ →\n    𝓢 ⊢ τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G)) →\n    𝓢 ⊢ ∼τ\n",
+  "usage": [
+    [
+      2961,
+      3684
+    ],
+    [
+      4525,
+      4394
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition that for all types Fm (of sentences) and S (of proof systems), equipped with logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼), logical constants (truth ⊤ and falsehood ⊥), and a provability relation ⊢ between systems in S and sentences in Fm; for every proof system 𝓢 in S that is classical (proves all classical propositional tautologies in these connectives and is closed under modus ponens, with no further assumptions on 𝓢 such as consistency); for all arbitrary functions K and F from Fm to Fm (with no axioms or rules assumed for K or F); and for all sentences τ, σ, and G in Fm: if 𝓢 proves (1) the conjunction K (σ 🡒 G) ⋏ (σ 🡒 ∼(F (σ 🡒 G))), (2) the implication σ 🡒 τ (with σ as antecedent and τ as consequent), and (3) the implication τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G)) (where φ 🡘 ψ abbreviates (φ 🡒 ψ) ⋏ (ψ 🡒 φ)), then 𝓢 proves ∼τ. As written, the second hypothesis is 𝓢 ⊢ σ 🡒 τ (rather than τ 🡒 σ) while the conclusion is 𝓢 ⊢ ∼τ (rather than ∼σ); no arithmetic or additional structure is involved, and K, F, and G are completely unconstrained and appear only via the expression σ 🡒 G.\"}",
+  "translation": "Target is the proposition that for all types Fm (of sentences) and S (of proof systems), equipped with logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼), logical constants (truth ⊤ and falsehood ⊥), and a provability relation ⊢ between systems in S and sentences in Fm; for every proof system 𝓢 in S that is classical (proves all classical propositional tautologies in these connectives and is closed under modus ponens, with no further assumptions on 𝓢 such as consistency); for all arbitrary functions K and F from Fm to Fm (with no axioms or rules assumed for K or F); and for all sentences τ, σ, and G in Fm: if 𝓢 proves (1) the conjunction K (σ 🡒 G) ⋏ (σ 🡒 ∼(F (σ 🡒 G))), (2) the implication σ 🡒 τ (with σ as antecedent and τ as consequent), and (3) the implication τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G)) (where φ 🡘 ψ abbreviates (φ 🡒 ψ) ⋏ (ψ 🡒 φ)), then 𝓢 proves ∼τ. As written, the second hypothesis is 𝓢 ⊢ σ 🡒 τ (rather than τ 🡒 σ) while the conclusion is 𝓢 ⊢ ∼τ (rather than ∼σ); no arithmetic or additional structure is involved, and K, F, and G are completely unconstrained and appear only via the expression σ 🡒 G.",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The second hypothesis is written as `𝓢 ⊢ σ 🡒 τ` (`(K =PA F) → (K = F)`), which is the converse of Lemma 3 (`K = F ⊢DTK K =PA F`, i.e., `τ 🡒 σ`). Because this implication is reversed, the formal statement fails to render the source's inference (and contradicts the author's own claim that the hypothesis is `τ → σ`) and is in fact classically invalid: the three hypotheses are jointly consistent with `τ` (e.g., when `τ`, `K (σ 🡒 G)`, and `F (σ 🡒 G)` are true and `σ` is false), so `𝓢 ⊢ ∼τ` does not follow.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Quantifiers, Gödel coding, the syntactic predicates `Sent` and `Sent¬PA`, the existential formulation of step (7), and Lemma 4 are omitted and collapsed into a single named witness `σ 🡒 G` and a propositional biconditional instance `τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G))` (an abstraction acknowledged by the author).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source states step (6), Lemma 3, and the proof steps of step (8) as derivations from assumptions (`φ ⊢DTK ψ`), whereas the Lean target expresses them as provable object-level implications (`𝓢 ⊢ φ 🡒 ψ`) inside an arbitrary classical propositional system `𝓢`.\"\n    }\n  ],\n  \"summary\": \"The formalization is divergent because its second hypothesis `𝓢 ⊢ σ 🡒 τ` reverses Lemma 3 (`K = F ⊢DTK K =PA F`, which should be `τ 🡒 σ`), rendering the formalized inference invalid and false as stated.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The second hypothesis is written as `𝓢 ⊢ σ 🡒 τ` (`(K =PA F) → (K = F)`), which is the converse of Lemma 3 (`K = F ⊢DTK K =PA F`, i.e., `τ 🡒 σ`). Because this implication is reversed, the formal statement fails to render the source's inference (and contradicts the author's own claim that the hypothesis is `τ → σ`) and is in fact classically invalid: the three hypotheses are jointly consistent with `τ` (e.g., when `τ`, `K (σ 🡒 G)`, and `F (σ 🡒 G)` are true and `σ` is false), so `𝓢 ⊢ ∼τ` does not follow."
+      },
+      {
+        "severity": "minor",
+        "description": "Quantifiers, Gödel coding, the syntactic predicates `Sent` and `Sent¬PA`, the existential formulation of step (7), and Lemma 4 are omitted and collapsed into a single named witness `σ 🡒 G` and a propositional biconditional instance `τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G))` (an abstraction acknowledged by the author)."
+      },
+      {
+        "severity": "minor",
+        "description": "The source states step (6), Lemma 3, and the proof steps of step (8) as derivations from assumptions (`φ ⊢DTK ψ`), whereas the Lean target expresses them as provable object-level implications (`𝓢 ⊢ φ 🡒 ψ`) inside an arbitrary classical propositional system `𝓢`."
+      }
+    ],
+    "summary": "The formalization is divergent because its second hypothesis `𝓢 ⊢ σ 🡒 τ` reverses Lemma 3 (`K = F ⊢DTK K =PA F`, which should be `τ 🡒 σ`), rendering the formalized inference invalid and false as stated."
+  }
+}

@@ -22,6 +22,8 @@ Every paid run. Stop and ask Eugene before going over a question's budget, or ov
 | 2026-11-23 | population-y (#31) | Google Gemini API, `gemini-4-neon` | 1.38 | Independent replication program, two calls (1.02, 0.36; the first was cut off); at list price from logged token counts |
 | 2026-11-23 | godel-argument (#19) | OpenAI API, `gpt-6.2-astra` | 1.24 | Amendment 5 (tier 2C): statement check, two rounds; at list price from logged token counts |
 | 2026-11-23 | godel-argument (#19) | Google Gemini API, `gemini-4-neon` | 3.97 | Amendment 5 (tier 2C): same check; 3.67 at list price from logged token counts, plus about 0.30 estimated for one call that was cut off |
+| 2026-11-23 | godel-argument (#19) | OpenAI API, `gpt-6.2-astra` | 1.59 | Amendment 6 (tier 2D): statement check, two rounds; at list price from logged token counts |
+| 2026-11-23 | godel-argument (#19) | Google Gemini API, `gemini-4-neon` | 3.10 | Amendment 6 (tier 2D): same check; at list price from logged token counts |
 | 2026-11-23 | strangers (#41) | OpenAI API, `gpt-6.2-astra` | 0.27 | Pre-lock protocol review, one round; at list price from logged token counts |
 | 2026-11-23 | strangers (#41) | Google Gemini API, `gemini-4-neon` | 0.81 | Pre-lock protocol review, one round; at list price from logged token counts |
 | 2026-11-23 | strangers (#41) | OpenAI API, `gpt-6.2-astra` | 0.81 | Independent replication program, two calls (0.47, 0.34); at list price from logged token counts |
