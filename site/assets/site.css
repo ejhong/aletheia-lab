@@ -850,3 +850,8 @@ details.more > summary:focus-visible { outline: 2px solid var(--copper); outline
     letter-spacing: .16em; color: var(--faint);
   }
 }
+.stances.stances-wide .stance { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) minmax(0, 1.25fr); }
+.stances.stances-wide .stance-note:first-child { margin-top: 0; }
+@media (max-width: 40rem) {
+  .stances.stances-wide .stance { grid-template-columns: 1fr; }
+}
