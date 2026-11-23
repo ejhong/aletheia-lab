@@ -1,0 +1,61 @@
+group	hip	name	cst	vmag	vp	dec_j2000	dec_best	h_max_best	h_max_rhodes_128bce	h_max_alexandria_137ce
+ptolemy_south	60718	Alp1Cru	=Cen	0.77	2	-63.10	-57.03	7.17	2.24	6.01
+ptolemy_south	71681	Alp2Cen	=Cen	1.35	1	-60.84	-55.98	8.22	2.83	6.67
+ptolemy_south	68702	Bet Cen	=Cen	0.61	2	-60.37	-54.74	9.46	4.63	8.34
+ptolemy_south	85267	Gam Ara	=Ara	3.31	4b	-56.38	-54.31	9.89	3.05	7.16
+ptolemy_south	62434	Bet Cru	=Cen	1.25	2	-59.69	-53.64	10.56	5.70	9.46
+ptolemy_south	85258	Bet Ara	=Ara	2.84	4	-55.53	-53.47	10.73	3.87	7.98
+ptolemy_south	83081	Zet Ara	=Ara	3.12	4	-55.99	-53.30	10.90	4.50	8.51
+ptolemy_south	59747	Del Cru	=Cen	2.79	4	-58.75	-52.69	11.51	6.52	10.31
+ptolemy_south	46701	HIP 46701	=Arg	3.16	3	-57.03	-52.47	11.73	4.92	9.21
+ptolemy_south	30438	Alp Car	=Arg	-0.62	1	-52.70	-52.39	11.81	0.91	6.24
+ptolemy_south	63003	Mu 1Cru	=Cen	4.03	4	-57.18	-51.14	13.06	8.22	11.96
+ptolemy_south	42913	Del Vel	=Arg	1.93	2	-54.71	-50.99	13.21	5.54	10.06
+ptolemy_south	61084	Gam Cru	=Cen	1.59	2	-57.11	-50.97	13.23	8.38	12.14
+ptolemy_south	45941	Kap Vel	=Arg	2.47	3	-55.01	-50.62	13.58	6.57	10.91
+ptolemy_south	83153	Eps1Ara	=Ara	4.06	5	-53.16	-50.54	13.66	7.16	11.19
+ptolemy_south	38827	Chi Car	=Arg	3.46	2	-52.98	-50.35	13.85	5.12	9.91
+ptolemy_south	32768	Tau Pup	=Arg	2.94	3b	-50.61	-49.63	14.57	4.24	9.43
+ptolemy_south	42726	HIP 42726	=Arg	4.83	3	-53.11	-49.49	14.71	6.93	11.47
+ptolemy_south	42536	HIP 42536	=Arg	3.60	3	-52.92	-49.35	14.85	7.02	11.58
+ptolemy_south	88714	The Ara	=Ara	3.65	4	-50.09	-49.15	15.05	7.25	11.57
+ptolemy_south	66821	HIP 66821	=Cen	4.99	3	-54.56	-48.76	15.44	10.65	14.36
+ptolemy_south	85792	Alp Ara	=Ara	2.84	4b	-49.88	-48.04	16.16	9.04	13.22
+ptolemy_south	66657	Eps Cen	=Cen	2.29	2	-53.47	-47.66	16.54	11.75	15.46
+ptolemy_south	74395	Zet Lup	=Lup	3.41	5	-52.10	-47.35	16.85	11.65	15.42
+ptolemy_south	59449	Rho Cen	=Cen	3.97	4	-52.37	-46.31	17.89	12.87	16.68
+ptolemy_south	67234	HIP 67234	=Cen	4.64	4	-51.43	-45.67	18.53	13.73	17.44
+ptolemy_south	90422	Alp Tel	=CrA	3.49	4	-45.97	-45.60	18.60	10.26	14.72
+ptolemy_south	95241	Bet1Sgr	=Sgr	3.96	2	-44.46	-45.58	18.62	8.91	13.70
+ptolemy_south	13847	The1Eri	=Eri	2.88	1	-40.30	-45.01	19.19	3.52	10.06
+ptolemy_south	86092	1Sig Ara	=Ara	4.56	5	-46.51	-44.81	19.39	12.11	16.33
+missing_bright	71683	Alp1Cen		-0.01		-60.84	-55.84	8.36	3.11	6.91
+missing_bright	7588	Alp Eri		0.45		-57.24	-62.96	1.24	-15.10	-8.42
+missing_bright	45238	Bet Car		1.67		-69.72	-65.33	-1.13	-7.82	-3.59
+missing_bright	109268	Alp Gru		1.73		-46.96	-51.76	12.44	-1.36	4.50
+missing_bright	41037	Eps Car		1.86		-59.51	-56.22	7.98	0.01	4.59
+missing_bright	82273	Alp TrA		1.91		-69.03	-65.86	-1.66	-7.53	-3.64
+missing_bright	100751	Alp Pav		1.94		-56.73	-59.28	4.92	-5.88	-0.85
+missing_bright	112122	Bet Gru		2.07		-46.88	-52.24	11.96	-2.66	3.43
+missing_bright	45556	Iot Car		2.21		-59.27	-54.94	9.26	2.27	6.60
+missing_bright	2081	Alp Phe		2.40		-42.30	-48.27	15.93	-0.17	6.40
+missing_bright	52727	Mu Vel		2.69		-49.42	-43.86	20.34	14.52	18.56
+missing_bright	61585	Alp Mus		2.69		-69.14	-63.07	1.13	-3.76	0.00
+missing_bright	52419	The Car		2.74		-64.39	-58.85	5.35	-0.37	3.63
+missing_bright	2021	Bet Hyi		2.82		-77.25	-83.38	-19.18	-33.49	-28.07
+missing_bright	77952	Bet TrA		2.83		-63.43	-59.22	4.98	-0.40	3.39
+missing_bright	9236	Alp Hyi		2.86		-61.57	-67.07	-2.87	-19.06	-12.41
+missing_bright	74946	Gam TrA		2.87		-68.68	-63.91	0.29	-4.81	-1.06
+missing_bright	110130	Alp Tuc		2.87		-60.26	-65.18	-0.98	-14.63	-8.86
+missing_bright	48002	Ups Car		2.92		-65.07	-60.20	4.00	-2.38	1.79
+missing_bright	62322	Bet Mus		3.04		-68.11	-62.05	2.15	-2.72	1.04
+missing_bright	56561	Lam Cen		3.11		-63.02	-57.08	7.12	1.88	5.75
+missing_bright	101772	Alp Ind		3.11		-47.29	-50.29	13.91	2.35	7.60
+missing_bright	71908	Alp Cir		3.18		-64.97	-59.69	4.51	-0.38	3.33
+missing_bright	32607	Alp Pic		3.24		-61.94	-60.89	3.31	-6.57	-1.53
+missing_bright	17678	Gam Hyi		3.26		-74.24	-77.34	-13.14	-25.76	-20.17
+missing_bright	50099	Ome Car		3.29		-70.04	-64.77	-0.57	-6.49	-2.45
+missing_bright	21281	Alp Dor		3.30		-55.05	-57.56	6.64	-6.84	-0.86
+missing_bright	51576	HIP 51576		3.30		-61.69	-56.26	7.94	2.06	6.10
+missing_bright	5165	Bet Phe		3.32		-46.72	-52.70	11.50	-4.91	1.77
+missing_bright	19780	Alp Ret		3.33		-62.47	-65.34	-1.14	-14.69	-8.73
