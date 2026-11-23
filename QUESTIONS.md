@@ -33,6 +33,8 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#43](https://github.com/ejhong/aletheia-lab/issues/43) | Was there an exceptional fire 12,800 years ago? | data | `ice-core-fire` |
 | [#60](https://github.com/ejhong/aletheia-lab/issues/60) | Does ammonium rise after every abrupt cooling? | data | `cooling-ammonium` |
 | [#69](https://github.com/ejhong/aletheia-lab/issues/69) | Did 9% of Earth's biomass burn 12,800 years ago? | data | `yd-global-burn` |
+| [#75](https://github.com/ejhong/aletheia-lab/issues/75) | Was the Younger Dryas cooling different from other abrupt ice-age coolings? | data | `yd-cooling-shape` |
+| [#76](https://github.com/ejhong/aletheia-lab/issues/76) | Did the GISP2 platinum spike precede the Younger Dryas cooling—or follow it during a volcanic cluster? | data | `yd-platinum-volcanism` |
 | [#44](https://github.com/ejhong/aletheia-lab/issues/44) | Do flood myths cluster where land drowned? | data | `flood-myths` |
 | [#45](https://github.com/ejhong/aletheia-lab/issues/45) | Germs and parasites as passports | audit | `pathogen-passports` |
 | [#46](https://github.com/ejhong/aletheia-lab/issues/46) | Blind-judging the remote-viewing archive | model | `remote-viewing` |
