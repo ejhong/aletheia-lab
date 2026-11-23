@@ -27,3 +27,6 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#30](https://github.com/ejhong/aletheia-lab/issues/30) | Archaeogeodesy: placement or chance? | data | `archaeogeodesy` |
 | [#31](https://github.com/ejhong/aletheia-lab/issues/31) | The Australasian signal in the Amazon | data | `population-y` |
 | [#32](https://github.com/ejhong/aletheia-lab/issues/32) | Did the civilisers come from the sea? | data | `civilisers` |
+| [#39](https://github.com/ejhong/aletheia-lab/issues/39) | Is any crop older than the end of the Ice Age? | audit | `crops-before-ice` |
+| [#40](https://github.com/ejhong/aletheia-lab/issues/40) | Did populations crash at the Younger Dryas? | data | `younger-dryas-crash` |
+| [#41](https://github.com/ejhong/aletheia-lab/issues/41) | Strangers in the ancient-DNA record | data | `strangers` |
