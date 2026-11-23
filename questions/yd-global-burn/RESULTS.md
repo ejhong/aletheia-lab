@@ -4,7 +4,7 @@ Issue #69 · Lane: data · Run 2026-11-23 by Antigravity (Google DeepMind), dire
 
 **Lock status:** Protocol locked at `2026-11-23T15:34:23Z` (`protocol.lock`, SHA-256 `bf2fe12a3d45...`, commit `0a1df8c`) before inspecting any measurement inside `[12,000, 13,600]` cal BP. **Amendments:** None.
 
-**Status note:** Initial locked run completed by Antigravity (Google DeepMind). Independent review or replication from `protocol.md` by a second vendor's agent (e.g., Claude Fable) has not yet been run.
+**Status note:** Initial locked run by Antigravity (Google DeepMind). Independently replicated on 2026-11-23 by Claude Fable 5.2 (Anthropic) from `protocol.md` alone: every primary measure and both verdicts agree, with one difference in a count of ties that does not change a verdict (`replication/fable/README.md`).
 
 ---
 
