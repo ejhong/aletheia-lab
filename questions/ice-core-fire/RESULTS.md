@@ -39,8 +39,9 @@ window value, every rank and the verdict.
 
 ### A century-long high that starts after the onset
 
-In NGRIP the onset is fixed at 12,896 ± 4 years before 2000 (Rasmussen et al. 2014). Ammonium in 10-year means,
-µg/kg:
+In NGRIP the onset is fixed at 12,896 ± 4 years before 2000 (Rasmussen et al. 2014). It marks an abrupt shift;
+the cooling and the dust build up over the following century (see "How the main explanations fit"). Ammonium in
+10-year means, µg/kg:
 
 | Years before 2000 | NGRIP | NEEM |
 |---|---|---|
@@ -176,6 +177,105 @@ to 800 µg/kg·yr across the tiers.
   does not rule one out.
 - Anything about fires outside the reach of Greenland's air.
 
+## How the main explanations fit
+
+Added on 23 November 2026, after the result, at Eugene's request. Everything here is exploratory
+(`explore/volcanic.py`) or is reasoning about the result; none of it was in the locked plan.
+
+### What marks the onset, and what follows it
+
+The onset at 12,896 years before 2000 is defined mainly from deuterium excess, a sign of where the moisture came
+from, which "is shown to change between states in 1–3 years"; "the shifts in δ18O and [Ca2+] are more gradual
+and begin no more than a couple of decades after" (Rasmussen et al. 2014, read). So the onset is an abrupt shift,
+and the cooling and the dust build up after it.
+
+Ammonium goes with the gradual part. In 20-year means (µg/kg; NGRIP and NEEM in years before 2000, GISP2 on its
+own scale):
+
+| | Century before | The shift and the next ~45 years | 45 to 145 years after | Later in the Younger Dryas |
+|---|---|---|---|---|
+| NGRIP ammonium | 8–19 | 11–28 | 24–45 | 17–42 |
+| NGRIP dust (calcium) | 27–44 | 34–51 | 68–174 | 153–315 |
+| NEEM ammonium | 5–11 | 14–18 | 26–48 | 14–27 |
+| NEEM dust | 27–38 | 31–53 | 70–120 | 138–220 |
+| GISP2 ammonium | 7–12 | 14–20 | 25–35 | 14–21 |
+| GISP2 dust | 23–36 | 38–55 | 60–166 | 131–195 |
+
+Columns for NGRIP and NEEM: 12,910–13,010; 12,850–12,910; 12,750–12,850; 12,510–12,750. For GISP2, the matching
+stretches on its own scale, 15 years younger.
+
+In all three cores ammonium climbs while the dust climbs, over about a century. Ammonium then falls back part of
+the way; dust stays high.
+
+### A single impact that lit fires
+
+Smoke reaches Greenland within days and falls out within weeks. Fires lit at the onset should put an ammonium
+spike at the onset. Ammonium there is low, and the largest single year in the window is ordinary. **Poor fit**,
+on timing and on shape.
+
+### Airbursts, with no crater
+
+The form of the hypothesis in which the object broke up in the air changes how the fires were lit, or, in one
+proposal, makes ammonia directly: Melott et al. 2010 (*Geology* 38:355–358; abstract read on arXiv:0907.1067)
+suggest that "direct input of ammonia from a comet into the atmosphere is adequate for YD ice core data", made by
+"an analog of the Haber process". Either way the ammonium would arrive promptly. Material spread through the
+whole atmosphere does not take decades to come down: the large volcanic eruptions in this same ice, which do
+load the whole atmosphere, appear as sulphate spikes a single sample wide (four to five years).
+
+So an airburst at the onset fits **no better and no worse than an impact**: the ice does not show a prompt
+ammonium pulse of several hundred units (see "What the test could see"). A smaller prompt pulse could be there
+and unseen. Nitrate, which the same paper expects from the shock of an airburst, is high in NGRIP (rank 5 of
+320), ordinary in NEEM (198 of 320) and in between in GISP2, so the cores do not agree on it.
+
+A long series of airbursts over a century cannot be excluded by ammonium. Nothing in the ice asks for it either:
+the rise follows the dust, as a response to the changing climate would.
+
+### Volcanism
+
+Critics have proposed that an eruption, or several, set off the cooling. An eruption makes sulphate, not
+ammonium, so this account predicts no ammonium at the trigger and leaves any ammonium change to be a response of
+land and air to the cold: delayed, gradual, moving with the other climate signs. That is what the ice shows.
+**Good fit for the ammonium**, though the same is true of any trigger that is not itself a source of ammonium.
+
+GISP2 records sulphate in the same samples, so the order of events there needs no timescale:
+
+| Depth (m) | Age on the file's scale | Event |
+|---|---|---|
+| 1718.6 | 13,031 | Sulphate spike, 649 ppb against a background of 58; the third largest between 10,300 and 15,000 |
+| 1713.8 | 12,930 | Sulphate spike, 462 ppb against 60; the sixth largest |
+| about 1712 | about 12,880 | Dust begins to rise |
+| 1710.7 to 1708 | 12,840 to 12,740 | Ammonium high; dust still rising |
+| 1704.4 | 12,605 | The largest sulphate spike of the stretch, 986 ppb, well inside the Younger Dryas |
+
+So two large eruptions precede the dust rise by about 50 and 150 years. That is in the right order for a
+volcanic trigger, and it is weak support: spikes as large as the smaller one come about once in 800 years here,
+so one falling within 50 years before any given moment has roughly a 6% chance. By the window test the sulphate
+around the onset is not unusual (rank 36 of 132 at 20 years, 211 of 323 at 60).
+
+The eruption most often named is Laacher See. Reinig et al. 2021 (*Nature* 595:66–69) date it to 13,006 ± 9 cal
+BP and the Younger Dryas onset to 12,807 ± 12 cal BP, about 200 years apart, and argue against a direct link;
+this is from a search summary of the abstract, `unverified`, and the date has been disputed. We have not
+identified any sulphate spike with any eruption.
+
+### A change in ocean circulation
+
+The standard account is that fresh water slowed the Atlantic circulation (from memory; not sourced here). For
+ammonium it predicts the same as volcanism: nothing at the trigger, a response afterwards. **Good fit**, and no
+test here separates it from volcanism.
+
+### Summary
+
+| Explanation | What it predicts for ammonium | Fit with the ice |
+|---|---|---|
+| One impact that lit fires at the onset | A sharp spike at the onset | Poor: low at the onset; a slow rise later |
+| Airburst at the onset (fires, or ammonia made in the blast) | A prompt pulse, within a few years | Poor, unless the pulse was small |
+| Airbursts spread over a century | Raised ammonium for a century | Not excluded; not called for |
+| Volcanic trigger | None at the trigger; a response to the cold | Good; two large eruptions shortly before, which is weak support |
+| Ocean circulation | None at the trigger; a response to the cold | Good; untested here |
+
+The ammonium high looks like part of the climate's shift into the cold state. It fits explanations in which
+ammonium answers the change better than explanations in which ammonium is the smoke of whatever caused it.
+
 ## Replication
 
 OpenAI `gpt-6.2-astra` (326 lines) and Google `gemini-4-neon` (535 lines) each wrote a program from
@@ -206,7 +306,7 @@ pulses.
   and ammonium peaks reported for GISP2 are unverified.
 - The plan's reason for setting peak height aside ("warm periods have higher ammonium") does not fit this case:
   the high is in a cold period. Peak height is reported in full above.
-- Everything under "exploratory" (`explore/after.py`) was done after seeing the result.
+- Everything under "exploratory" (`explore/after.py`, `explore/volcanic.py`) was done after seeing the result.
 
 ## Limits
 

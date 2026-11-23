@@ -149,6 +149,42 @@ def ranks():
            "top-1% line in every core. Over 10 years it falls just short of the 5% line. Hover or focus a row for the numbers.", legend)
 
 
+def dust():
+    """NGRIP: ammonium above, dust (calcium) below, across the onset. Exploratory series from explore/volcanic.json."""
+    rows = json.load(open(Q / "explore" / "volcanic.json"))["bins20_NGRIP"]
+    lo, hi = 12500, 13300
+    W, left, right, ph, gap, top = 720, 44, 692, 110, 46, 26
+    H = top + 2 * ph + gap + 44
+    sx = lambda a: left + (hi - a) / (hi - lo) * (right - left)
+    o = [f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-label="Ammonium and dust across the start of the Younger Dryas in NGRIP" xmlns="http://www.w3.org/2000/svg">']
+    for p, (key, title, unit, ymax, yticks) in enumerate((("NH4", "Ammonium", "µg/kg", 60, (0, 25, 50)), ("Ca", "Dust (calcium)", "µg/kg", 340, (0, 150, 300)))):
+        y0 = top + p * (ph + gap)
+        sy = lambda v: y0 + ph - min(v, ymax) / ymax * ph
+        for t in yticks:
+            o.append(f'<line class="{"c-zero" if t == 0 else "c-grid"}" x1="{left}" x2="{right}" y1="{sy(t):.1f}" y2="{sy(t):.1f}"/>')
+            o.append(f'<text class="c-tick" x="{left - 6}" y="{sy(t) + 4:.1f}" text-anchor="end">{t}</text>')
+        o.append(f'<text class="c-group" x="{left}" y="{y0 - 9}">{title}</text>')
+        o.append(f'<text class="c-sub" x="{right}" y="{y0 - 9}" text-anchor="end">NGRIP, {unit}, 20-year means</text>')
+        bw = sx(0) - sx(20)
+        for r in rows:
+            a, v = r["start"], r[key]
+            if lo <= a and a + 20 <= hi:
+                tip = esc(f"{title}, {num(a, 0)} to {num(a + 20, 0)}|{num(v)} {unit}")
+                o.append(f'<g class="c-mark" tabindex="0" data-tip="{tip}"><rect class="c-hit" x="{sx(a + 20):.1f}" y="{y0}" width="{bw:.1f}" height="{ph}"/>'
+                         f'<rect class="c-bar{" is-on" if a < ONSET else ""}" x="{sx(a + 20) + 1:.1f}" y="{sy(v):.1f}" width="{bw - 2:.1f}" height="{y0 + ph - sy(v):.1f}" rx="1.5"/></g>')
+        for t in (13300, 13100, 12900, 12700, 12500):
+            o.append(f'<text class="c-tick" x="{sx(t):.1f}" y="{y0 + ph + 15}" text-anchor="middle">{num(t, 0)}</text>')
+        o.append(f'<line class="c-onset" x1="{sx(ONSET):.1f}" x2="{sx(ONSET):.1f}" y1="{y0 - 2}" y2="{y0 + ph}"/>')
+        if p == 0:
+            o.append(f'<text class="c-label-sm" x="{sx(ONSET + 8):.1f}" y="{y0 + 11}" text-anchor="end">the abrupt shift, 12,896</text>')
+    o.append(f'<text class="c-axis" x="{left}" y="{H - 6}">Years before 2000 CE. Older ice on the left. Copper bars come after the shift.</text>')
+    o.append("</svg>")
+    figure("dust", "Ammonium and dust across the start of the Younger Dryas in NGRIP", "\n".join(o),
+           "Exploratory. Dust in the ice rises as the climate turns cold, dry and windy. After the abrupt shift it climbs for about a "
+           "century before settling at its Younger Dryas level, and ammonium climbs with it. Ammonium then falls back part of the way; "
+           "dust does not. The other two cores show the same.")
+
+
 def tiles():
     r = S["ranks"]["E"]
     rk = [r[s]["rank"] for s in ("N20", "E20", "G20", "N60", "E60", "G60")]
@@ -166,6 +202,7 @@ def main():
     profile()
     long_view()
     ranks()
+    dust()
     print("wrote", ", ".join(sorted(p.name for p in OUT.iterdir())), [p.stat().st_size for p in sorted(OUT.iterdir())])
 
 

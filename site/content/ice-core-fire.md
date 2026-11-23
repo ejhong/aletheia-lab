@@ -18,9 +18,10 @@ We took the 300 years around the start of the cold in three ice cores and compar
 
 1. **The ice does stand out, partly.** Measured over 20 or 60 years, the ammonium high in that stretch ranks third to seventh among 131 to 323 stretches, in all three cores. That is the top 1 to 3 in a hundred. By the rule set in advance this is "unusual". It falls short of "exceptional", which needed the top one in a hundred in two cores.
 2. **In plain concentration it is the highest on record.** The 60 years from 12,810 to 12,750 years ago hold more ammonium than any other 60-year stretch we measured in the NGRIP core between 10,300 and 107,620 years ago. The other two cores rank it second and third.
-3. **It does not begin when the cold begins.** At that moment, and for some decades after, ammonium is low. The rise starts thirty to forty years later and peaks seventy to a hundred and forty years later.
-4. **It is a swell, not a spike.** It lasts about a century. Year by year, nothing in it is exceptional; the largest single year in the window comes before the cold and ranks tenth of 31.
-5. **It is not alone.** The last few thousand years of the ice age hold several highs of similar size. One, about 13,870 years ago, is larger in two of the three cores.
+3. **It does not begin when the cold begins.** At that moment, and for some decades after, ammonium is low. The rise starts thirty to forty years later and peaks seventy to a hundred and forty years later, climbing in step with the dust that marks the climate turning.
+4. **That timing fits some explanations better than others.** A fire lit by an impact, or by an airburst with no crater, should mark the ice at once. A cold set off by an eruption or by the ocean predicts what is seen: nothing at the start, and a response afterwards. See "Which explanation fits?" below.
+5. **It is a swell, not a spike.** It lasts about a century. Year by year, nothing in it is exceptional; the largest single year in the window comes before the cold and ranks tenth of 31.
+6. **It is not alone.** The last few thousand years of the ice age hold several highs of similar size. One, about 13,870 years ago, is larger in two of the three cores.
 
 In short: the people who said the ice holds something unusual there were right. What it holds does not look like one day of fire.
 
@@ -52,15 +53,35 @@ The end of the ice age was a busy time for ammonium. Once the first great warmin
 
 So the high at the start of the Younger Dryas has company. That matters for what it means: if highs like it turn up several times in a few thousand years, without a comet each time, a comet is not needed to explain this one.
 
-## What could cause a century of ammonium
+## Which explanation fits?
 
-This study cannot say. It can list what would fit.
+This part was added after the result, at Eugene's request, and is exploratory: reasoning about what was found, plus a look at two other chemicals in the same ice.
+
+First, what "the start" is. The Younger Dryas begins with an abrupt shift, over one to three years, in where Greenland's moisture came from. The cooling and the dust then build up over the following century. Ammonium rises with them.
+
+{{figure: ice-core-fire/dust}}
+
+| Explanation | What it predicts for ammonium | Fit with the ice |
+|---|---|---|
+| One impact that lit fires | A sharp spike at the start | Poor. Ammonium is low at the start; the rise is slow and comes later. |
+| An airburst, with no crater | The same: a pulse within a few years | Poor, unless the pulse was small. |
+| Airbursts spread over a century | Raised ammonium for a century | Not ruled out. Nothing calls for it. |
+| A volcanic eruption set off the cold | Nothing at the start; a response to the cold afterwards | Good. Two large eruptions shortly before, which is weak support. |
+| The ocean's circulation slowed | Nothing at the start; a response to the cold afterwards | Good. Not tested here. |
+
+**Airbursts.** In this form of the idea the object broke up in the air: no crater, and fires lit by heat from above. One paper also proposes that the blast itself made ammonia. Either way the ammonium should arrive at once. Spreading through the whole atmosphere does not delay it by decades: the big volcanic eruptions in this same ice, which do load the whole atmosphere, show as sulphate spikes four or five years wide. So an airburst fits no better and no worse than an impact. A small prompt pulse could be hiding in the noise; a large one is not there. A long series of airbursts over a century cannot be excluded by ammonium alone, but the ammonium moves with the dust, as a response to a changing climate would.
+
+**Volcanism.** Some critics of the impact idea propose that eruptions set off the cold. Volcanoes make sulphate, not ammonium, so this idea predicts no ammonium at the start, and it leaves any later rise to be the land and the air answering the cold. That is the pattern in the ice. The GISP2 core records sulphate in the same samples, and it shows two large eruptions about 50 and 150 years before the dust begins to rise. That is the right order for a volcanic trigger. It is weak support, because eruptions that size turn up about once in 800 years in this ice, so one within 50 years has roughly a 6% chance of being a coincidence, and by the same window test we used for ammonium the sulphate around the start is not unusual.
+
+**The ocean.** The standard account is that fresh water slowed the Atlantic circulation. For ammonium it predicts the same as volcanism, and nothing here separates the two.
+
+**So:** the ammonium fits explanations in which it is an answer to the change in climate better than explanations in which it is the smoke of whatever caused the change. It does not say what the cause was.
+
+What could raise ammonium for a century as the cold sets in? This study cannot say. It can list what would fit.
 
 - **More burning.** A sudden cold kills forest, and dead forest burns. The authors of the main study of fire in this ice suggest that at the rapid warmings of this period fires were fed by vegetation the change had killed. Whether a rapid cooling does the same they do not say.
-- **A change in soils, plants or winds.** Ammonium also comes from living land, and the path the air takes to Greenland changes with climate.
+- **A change in soils, plants or winds.** Ammonium also comes from living land, and the path the air takes to Greenland changes with climate. Dust, which rides the same winds, rises at the same time.
 - **Less snow.** After the cold began, about a quarter less snow fell each year. The same fallout in less snow gives a higher concentration. This alone would raise the numbers by a third; the rise seen is three-fold or more, so it is part of the answer at most.
-
-An impact is not ruled out by any of this. It is just not what the timing points to.
 
 ## Could the test have missed a sharp spike?
 
@@ -104,6 +125,7 @@ So the test would have caught a truly enormous single year. It would not have ca
 - [The locked plan](https://github.com/ejhong/aletheia-lab/blob/main/questions/ice-core-fire/protocol.md)
 - [The review before the lock](https://github.com/ejhong/aletheia-lab/blob/main/questions/ice-core-fire/review/README.md)
 - [Code](https://github.com/ejhong/aletheia-lab/tree/main/questions/ice-core-fire/analysis) and the [replications](https://github.com/ejhong/aletheia-lab/tree/main/questions/ice-core-fire/replication)
+- [The exploratory look at sulphate and dust](https://github.com/ejhong/aletheia-lab/blob/main/questions/ice-core-fire/explore/volcanic.py)
 - [Data sources](https://github.com/ejhong/aletheia-lab/blob/main/questions/ice-core-fire/MANIFEST.md)
 
 AI did this work: Claude Fable 5.2 (Anthropic), with OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` as reviewers and replicators. Eugene directed it.

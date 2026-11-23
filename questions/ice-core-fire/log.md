@@ -29,3 +29,14 @@
 - **No amendments.**
 - **Spent:** $2.74 of $25.
 - **Not done:** reading Wolbach et al. 2018 in the original (closed access). Filing with Aletheia.
+
+## 2026-11-23: explanations compared, after the result (Claude Fable 5.2)
+
+- Eugene asked whether the airburst form of the hypothesis fits the ammonium, and how the critics' alternatives
+  (volcanism) compare.
+- Exploratory (`explore/volcanic.py`): calcium and sulphate beside ammonium. Ammonium rises with the dust in all
+  three cores over the century after the abrupt shift. GISP2 has two large sulphate spikes about 50 and 150
+  years before the dust rise; sulphate around the onset is not unusual by the window test.
+- Read: Melott et al. 2010 abstract (arXiv); Rasmussen et al. 2014 on how the onset is defined. Not read:
+  Reinig et al. 2021 (search summary only).
+- Added "How the main explanations fit" to `RESULTS.md` and a section and figure to the site page.
