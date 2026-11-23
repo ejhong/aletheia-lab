@@ -370,3 +370,108 @@ Total for the tier 2B statement check: $9.07 ($2.35 OpenAI, $6.72 Google). Quest
 
 `statement-check/Statement4.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement4.lean` and is
 locked there. Nothing in tier 2B has been proved for the record before this point.
+
+## Amendment 5 (2026-11-23): tier 2C, Penrose's new argument
+
+**What changed.** Eugene approved the two large tiers on 2026-11-23. This amendment covers tier 2C. Two sources
+came to hand for it the same day: Koellner's Part II (*J. Phil.* 115(9), 2018), as a PDF, and Koellner's chapter
+"Gödel's Disjunction" (in Horsten and Welch, 2016), read on screen in Eugene's Kindle copy. Written before the
+statement check below is run and before anything in this tier is proved.
+
+**The question for this tier.** Penrose's second argument, as Koellner sets it out in eight steps, uses three
+principles: what is known is true; whatever is so is true (T-In); whatever is proved is known (K-Intro). Is the
+argument valid from them? Are they consistent? And when the two rules are restricted to determinate sentences,
+as Koellner's system DTK requires, what exactly does the argument still need, and what does it still yield?
+
+**Setting.** Abstract, as in Stage 2A: sentences are any type with classical connectives, and T, K and D
+("determinate") are operations on sentences. The sentences of the argument (σ for "K = F_e", and five others)
+are parameters. Each arithmetical or bridging fact is a hypothesis. DTK itself is not built.
+
+**Budget.** Inside the question's $50, of which $35.05 is spent. Expected cost of the check: $4 to $6 for one
+round. If a second full round would take the total over $50, I stop and ask first.
+
+**Statements** (drafted in `statement-check/Statement5.draft.lean`; to be locked as
+`lean/GodelArgument/Statement5.lean`).
+
+| Name | Gloss | Source |
+|---|---|---|
+| D20–D23 `TIn`, `TOut`, `KIntro`, `KnownIsTrue` | The unrestricted principles, and T-Out | Koellner 2018b, p. 460; Koellner 2016, Lemma 7.14.4 |
+| D24–D27 `DKIntro`, `DeterminateTruth`, `DeterminateImp`, `DeterminateK` | The restricted rule, the truth biconditional for determinate sentences, and determinateness axioms D4 and D7 | Koellner 2018b, pp. 463–465; Koellner 2016, §7.13 |
+| S4a `PenroseArgumentValid` | From T-In at σ, K-Intro and six bridging facts, the system proves ¬σ | Koellner 2018b, pp. 460–461, steps (1)–(8) |
+| S4b `UnrestrictedTInInconsistent` | T-In with T-Out and a liar sentence proves a contradiction | Koellner 2018b, p. 467 ("if one adds 'T-In' and 'K-Intro' then the resulting system can be shown to be inconsistent") |
+| S4c `UnrestrictedKIntroInconsistent` | K-Intro with K → T, T-Out and a "knower" sentence proves a contradiction | the same |
+| S4d `KnownValiditiesInconsistent` | Knowing the validity "λ or not λ" for a liar λ is inconsistent with type-free truth | Koellner 2016, §7.12, the quicker proof of Theorem 7.12.1; Koellner 2018b, Theorem 2 |
+| S4e `PenroseArgumentUnderDeterminateness` | With the restricted rules, the argument proves ¬σ provided σ and σ → G are provably determinate | Koellner 2018b, p. 467 ("legitimate only if these statements are determinate") |
+| S4f `StepsIndeterminateIfThesisIs` | If σ is provably indeterminate, so are σ → X and K(σ → G) | Koellner 2018b, p. 467, Theorem 7, reduced to the indeterminacy of σ by axioms D4 and D7 |
+| S4g `RestrictedThesisGivesUnprovableKnowledge` | For a determinate σ that does not make K and F_e agree on σ → G: σ → G is known, and if σ then F_e does not prove it | the lab's own reading of what the argument yields for the thesis restricted to arithmetic (Koellner 2018b, pp. 467–468) |
+
+**Method.** As before: statement check by the same two checkers with three planted errors, then the lock, then
+proofs in `Results5.lean`, non-vacuity instances and the audit. Script: `statement-check/run.py --stage 2c`. A
+trial proof of every draft statement was compiled first (`explore/Stage2CSketch.lean`, exploratory).
+
+**What would count.** S4a proved: the argument's logic is sound, so any fault lies in its rules. S4b and S4c
+proved: each rule, unrestricted, is inconsistent with principles DTK itself has, so validity from those rules
+shows nothing. S4e and S4f proved: with restricted rules the argument needs σ determinate, and the two
+statements Koellner names are indeterminate if σ is. S4g proved: for a determinate σ, the argument stops short
+of ¬σ unless σ covers the non-arithmetical sentence σ → G, and it yields instead a known sentence that F_e does
+not prove.
+
+**Known weaknesses, declared in advance.**
+
+- Abstract. DTK, its arithmetic and its coding are not built. In particular the three results that carry
+  Koellner's verdict are **cited, not proved**: that "K = F_e" in the full language is provably indeterminate
+  (2016, Theorem 7.15.1 and the passage before it), that its restriction to arithmetic is provably determinate
+  (the same), and that DTK is consistent and decides neither disjunct (2018b, Theorems 3 and 11).
+- Koellner states Theorem 7 without proof in Part II, and the 2016 chapter has no such theorem. S4f is my
+  reduction of it to the indeterminacy of σ. That the reduction is how Koellner proves it is `unverified`.
+- The six bridging facts of S4a are assumed. Lines (3), (4) and (6) rest on the incompleteness theorems and the
+  deduction theorem for F_e; none of that is derived here.
+- S4b and S4c show each rule inconsistent separately, given a liar or "knower" sentence. Koellner says only
+  that adding both gives inconsistency, without a proof; mine may not be his.
+- S4g is mine. It matches the abstract of Corradini and Galvan (2022) as reported by a search, but their papers
+  could not be obtained, so nothing is attributed to them and their argument is not covered.
+- The passages from the 2016 chapter were transcribed from a screen and cannot be checked mechanically.
+
+**My expectation before the run.** S4a to S4d: caveats. S4e and S4f: caveats, perhaps `divergent` on S4f because
+Theorem 7 is unconditional and S4f is conditional. S4g is judged against my own claim.
+
+**Budget (2026-11-23).** While the check was running Eugene wrote: "you can go beyond 50". The question's budget is
+no longer capped at $50. I will not take it past $70 without asking again.
+
+**Check of tier 2C, round 1 (2026-11-23), and what changed.** Frozen under `statement-check/round1-2c/`. Cost
+$4.51.
+
+- Planted errors: both checkers caught all three.
+- D20–D27, S4a, S4b, S4d, S4f: `faithful_with_caveats` from both. S4g: `faithful` from both (judged against the
+  lab's own claim). S4f was not rated divergent, contrary to my expectation.
+- S4c: Google `faithful_with_caveats`; OpenAI `divergent`. Its point: the source says that adding both T-In and
+  K-Intro gives inconsistency; the Lean says K-Intro alone does, which is stronger than the source's remark.
+- S4e: both `divergent`. The source names the statements whose determinateness matters as "K = F_e → F_e+ ⊆ T"
+  and "K(K = F_e → G(F_e+))"; the draft assumed instead that σ and σ → G are determinate. Google added that the
+  source asserts a necessary condition and the draft a sufficient one.
+
+Responses.
+
+- S4c: kept, and the divergence is carried into the results. The Lean is stronger than the remark it supports;
+  the remark follows from it. It is reported as the lab's strengthening, not as Koellner's statement.
+- S4e: accepted on the first point. Its two determinateness premises are now the two statements the source
+  names, and axioms D4 and D7 are added as hypotheses to get from them to what the rules need. On the second
+  point: the Lean does state a sufficient condition, and that is intended. "Legitimate only if" is a remark about
+  which rule applications DTK licenses, which this setting cannot state. S4e is now claimed as the lab's
+  complement to the passage, and S4f is the piece that bears on indeterminacy. Round 2 re-checks S4e only.
+
+**Round 2 and the state at the lock.** Cost $0.40. S4e: `faithful` from both checkers. One Google call was cut off
+when a tool call failed and was run again; if it was billed, that is about $0.30 more, estimated. Final verdicts
+are in `statement-check/REPORT-2C.md`:
+
+- Planted errors: 3 of 3 caught by both checkers.
+- Of the nine real items, eight are `faithful` or `faithful_with_caveats` from both.
+- Unresolved divergence, carried into the results: S4c (OpenAI `divergent`: it is stronger than the remark it
+  supports).
+
+Total for the tier 2C statement check: $5.21 ($1.24 OpenAI, $3.97 Google, the last including the estimated $0.30).
+Question total: $40.26.
+
+`statement-check/Statement5.draft.lean` now moves, unchanged, to `lean/GodelArgument/Statement5.lean` and is
+locked there. Nothing in tier 2C has been proved for the record before this point.
+

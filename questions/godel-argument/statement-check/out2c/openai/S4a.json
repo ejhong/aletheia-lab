@@ -1,0 +1,39 @@
+{
+  "id": "S4a",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:16:48Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K : Fm → Fm) (σ S₀ S' G P Q : Fm),\n    𝓢 ⊢ σ 🡒 T σ → Def3 𝓢 K →\n    𝓢 ⊢ σ 🡒 S₀ →\n    𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →\n    𝓢 ⊢ S' 🡒 G →\n    𝓢 ⊢ S' 🡒 ∼P →\n    𝓢 ⊢ Q 🡒 P →\n    𝓢 ⊢ σ 🡒 K (σ 🡒 G) 🡒 Q →\n    𝓢 ⊢ ∼σ\n",
+  "usage": [
+    [
+      1881,
+      577
+    ],
+    [
+      3236,
+      1819
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and of a provability relation for systems of type S on Fm, every system 𝓢 of type S that proves all classical propositional tautologies and is closed under modus ponens, every pair of functions T, K from Fm to Fm, and every choice of sentences σ, S₀, S′, G, P, Q, suppose that: (1) 𝓢 proves σ 🡒 T(σ); (2) for every sentence φ, if 𝓢 proves φ then 𝓢 proves K(φ); (3) 𝓢 proves σ 🡒 S₀; (4) 𝓢 proves S₀ 🡒 (T(σ) 🡒 S′); (5) 𝓢 proves S′ 🡒 G; (6) 𝓢 proves S′ 🡒 ∼P; (7) 𝓢 proves Q 🡒 P; and (8) 𝓢 proves σ 🡒 (K(σ 🡒 G) 🡒 Q). Then 𝓢 proves ∼σ. Hypothesis (1) is required only for the chosen σ. Hypothesis (2) is a rule about provability, not a requirement that 𝓢 prove φ 🡒 K(φ). Neither consistency of 𝓢 nor provability of σ is assumed.\"}",
+  "translation": "Target is defined to be the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and of a provability relation for systems of type S on Fm, every system 𝓢 of type S that proves all classical propositional tautologies and is closed under modus ponens, every pair of functions T, K from Fm to Fm, and every choice of sentences σ, S₀, S′, G, P, Q, suppose that: (1) 𝓢 proves σ 🡒 T(σ); (2) for every sentence φ, if 𝓢 proves φ then 𝓢 proves K(φ); (3) 𝓢 proves σ 🡒 S₀; (4) 𝓢 proves S₀ 🡒 (T(σ) 🡒 S′); (5) 𝓢 proves S′ 🡒 G; (6) 𝓢 proves S′ 🡒 ∼P; (7) 𝓢 proves Q 🡒 P; and (8) 𝓢 proves σ 🡒 (K(σ 🡒 G) 🡒 Q). Then 𝓢 proves ∼σ. Hypothesis (1) is required only for the chosen σ. Hypothesis (2) is a rule about provability, not a requirement that 𝓢 prove φ 🡒 K(φ). Neither consistency of 𝓢 nor provability of σ is assumed.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The result is schematic in six sentences rather than indexed by a natural number e. Nothing in their types enforces that σ expresses equality, that F_e+ is F_e extended by σ, or that G, P and Q are the corresponding Gödel and provability sentences. Those readings are supplied by the interpretation.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The premises use only the instance of T-In at σ and line (1), σ → S₀, rather than the full T-In schema and the inclusion K ⊆ T from which the passage obtains (1).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The passage’s justifications for the later steps are packaged as provable bridging implications. For example, S′ → G and S′ → ∼P are assumed without a σ antecedent; Lean can use them under σ but does not establish them by reflection or incompleteness.\"\n    }\n  ],\n  \"summary\": \"The conditional inference is faithful: K-Intro applies to the proved implication σ → G, and under σ the bridges yield both Q and ∼Q, establishing ∼σ. The target thus captures the logical steps without verifying their arithmetic premises.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The result is schematic in six sentences rather than indexed by a natural number e. Nothing in their types enforces that σ expresses equality, that F_e+ is F_e extended by σ, or that G, P and Q are the corresponding Gödel and provability sentences. Those readings are supplied by the interpretation."
+      },
+      {
+        "severity": "minor",
+        "description": "The premises use only the instance of T-In at σ and line (1), σ → S₀, rather than the full T-In schema and the inclusion K ⊆ T from which the passage obtains (1)."
+      },
+      {
+        "severity": "minor",
+        "description": "The passage’s justifications for the later steps are packaged as provable bridging implications. For example, S′ → G and S′ → ∼P are assumed without a σ antecedent; Lean can use them under σ but does not establish them by reflection or incompleteness."
+      }
+    ],
+    "summary": "The conditional inference is faithful: K-Intro applies to the proved implication σ → G, and under σ the bridges yield both Q and ∼Q, establishing ∼σ. The target thus captures the logical steps without verifying their arithmetic premises."
+  }
+}

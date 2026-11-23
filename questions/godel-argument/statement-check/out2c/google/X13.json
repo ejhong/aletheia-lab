@@ -1,0 +1,35 @@
+{
+  "id": "X13",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T06:19:31Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K : Fm → Fm) (σ S₀ S' G P Q : Fm),\n    𝓢 ⊢ σ 🡒 T σ → Def3 𝓢 K →\n    𝓢 ⊢ σ 🡒 S₀ →\n    𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →\n    𝓢 ⊢ S' 🡒 G →\n    𝓢 ⊢ S' 🡒 ∼P →\n    𝓢 ⊢ Q 🡒 P →\n    𝓢 ⊢ ∼σ\n",
+  "usage": [
+    [
+      1764,
+      2304
+    ],
+    [
+      3201,
+      6462
+    ]
+  ],
+  "a_raw": "```json\n{\n  \"translation\": \"Target is the proposition asserting that for every type Fm of sentences and type S of proof systems, equipped with formal-language logical connectives (LogicalConnective Fm), logical constants (LogicalNeutral Fm), and an entailment/provability relation between S and Fm (Entailment S Fm); for every proof system 𝓢 of type S that is classical (Entailment.Cl 𝓢, i.e., proves all classical propositional tautologies and is closed under modus ponens); for every pair of arbitrary functions T, K : Fm → Fm; and for every six sentences σ, S₀, S', G, P, Q : Fm, if all of the following seven hypotheses hold: (1) 𝓢 proves σ 🡒 T σ; (2) Def3 𝓢 K holds, meaning that for every sentence φ : Fm, if 𝓢 proves φ then 𝓢 proves K φ; (3) 𝓢 proves σ 🡒 S₀; (4) 𝓢 proves S₀ 🡒 (T σ 🡒 S'); (5) 𝓢 proves S' 🡒 G; (6) 𝓢 proves S' 🡒 ∼P; and (7) 𝓢 proves Q 🡒 P; then 𝓢 proves ∼σ. No consistency assumption is placed on 𝓢, and no additional properties of T, K, or the six sentences are required. Notably, as written, K appears nowhere outside hypothesis (2), G appears only as the consequent of hypothesis (5), and Q appears only as the antecedent of hypothesis (7), with no hypothesis asserting the provability of Q or P or linking G to Q or P.\"\n}\n```",
+  "translation": "Target is the proposition asserting that for every type Fm of sentences and type S of proof systems, equipped with formal-language logical connectives (LogicalConnective Fm), logical constants (LogicalNeutral Fm), and an entailment/provability relation between S and Fm (Entailment S Fm); for every proof system 𝓢 of type S that is classical (Entailment.Cl 𝓢, i.e., proves all classical propositional tautologies and is closed under modus ponens); for every pair of arbitrary functions T, K : Fm → Fm; and for every six sentences σ, S₀, S', G, P, Q : Fm, if all of the following seven hypotheses hold: (1) 𝓢 proves σ 🡒 T σ; (2) Def3 𝓢 K holds, meaning that for every sentence φ : Fm, if 𝓢 proves φ then 𝓢 proves K φ; (3) 𝓢 proves σ 🡒 S₀; (4) 𝓢 proves S₀ 🡒 (T σ 🡒 S'); (5) 𝓢 proves S' 🡒 G; (6) 𝓢 proves S' 🡒 ∼P; and (7) 𝓢 proves Q 🡒 P; then 𝓢 proves ∼σ. No consistency assumption is placed on 𝓢, and no additional properties of T, K, or the six sentences are required. Notably, as written, K appears nowhere outside hypothesis (2), G appears only as the consequent of hypothesis (5), and Q appears only as the antecedent of hypothesis (7), with no hypothesis asserting the provability of Q or P or linking G to Q or P.",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The bridging hypothesis needed to pass from steps (5) and (6) to step (7)—namely `𝓢 ⊢ σ 🡒 K (σ 🡒 G) 🡒 Q` (that under K = F_e, if K = F_e → G(F_e+) is known then F_e proves it)—is completely omitted from Target, even though the source argument relies on K and F_e disagreeing on `K = F_e → G(F_e+)` under `K = F_e` (and the author's claim says this hypothesis is included). Without it, K, G, and Q never connect back to σ or P, and Target is actually false (refuted by interpreting Fm as Bool with classical truth as provability, T = K = id, σ = S₀ = S' = G = true, and P = Q = false).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Relative to the source passage, T-In is restricted to the single sentence σ rather than stated as a general schema (`Def1 𝓢 T`), and the principle K → T as well as the arithmetical, coding, quantification, reflection, and incompleteness steps justifying lines (1)–(4) and (6) are abstracted into opaque sentence parameters and unproved propositional bridging hypotheses (an abstraction acknowledged in the author's claim).\"\n    }\n  ],\n  \"summary\": \"Target is divergent because it omits the bridging hypothesis `𝓢 ⊢ σ 🡒 K (σ 🡒 G) 🡒 Q` required for step (7) of Koellner's reconstruction of Penrose's argument. Without this premise, K, G, and Q are disconnected from the conclusion and the formalized statement is false.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The bridging hypothesis needed to pass from steps (5) and (6) to step (7)—namely `𝓢 ⊢ σ 🡒 K (σ 🡒 G) 🡒 Q` (that under K = F_e, if K = F_e → G(F_e+) is known then F_e proves it)—is completely omitted from Target, even though the source argument relies on K and F_e disagreeing on `K = F_e → G(F_e+)` under `K = F_e` (and the author's claim says this hypothesis is included). Without it, K, G, and Q never connect back to σ or P, and Target is actually false (refuted by interpreting Fm as Bool with classical truth as provability, T = K = id, σ = S₀ = S' = G = true, and P = Q = false)."
+      },
+      {
+        "severity": "minor",
+        "description": "Relative to the source passage, T-In is restricted to the single sentence σ rather than stated as a general schema (`Def1 𝓢 T`), and the principle K → T as well as the arithmetical, coding, quantification, reflection, and incompleteness steps justifying lines (1)–(4) and (6) are abstracted into opaque sentence parameters and unproved propositional bridging hypotheses (an abstraction acknowledged in the author's claim)."
+      }
+    ],
+    "summary": "Target is divergent because it omits the bridging hypothesis `𝓢 ⊢ σ 🡒 K (σ 🡒 G) 🡒 Q` required for step (7) of Koellner's reconstruction of Penrose's argument. Without this premise, K, G, and Q are disconnected from the conclusion and the formalized statement is false."
+  }
+}

@@ -1,0 +1,152 @@
+{
+ "real": [
+  {
+   "id": "DEF-M",
+   "names": [
+    "TIn",
+    "TOut",
+    "KIntro",
+    "KnownIsTrue"
+   ],
+   "passages": [
+    "P-K2-460",
+    "P-K16-170"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. These four definitions are: the principle (T-In) as a scheme; the principle T-Out of Lemma 7.14.4; the rule (K-Intro); and the principle (K → T) stated sentence by sentence."
+  },
+  {
+   "id": "DEF-N",
+   "names": [
+    "DKIntro",
+    "DeterminateTruth",
+    "DeterminateImp",
+    "DeterminateK"
+   ],
+   "passages": [
+    "P-K2-464",
+    "P-K2-463",
+    "P-K16-170"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. These four definitions are: the rule (DK-Intro), with its premise 'φ ∧ D(φ)' rendered as two premises; the conditioned truth biconditional of Theorem 4 / Lemma 7.14.4; axiom (D4), without the Sent(·) conditions since every element of the sentence type is a sentence; and axiom (D7)."
+  },
+  {
+   "id": "S4a",
+   "names": [
+    "PenroseArgumentValid"
+   ],
+   "passages": [
+    "P-K2-460"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The sentences of Penrose's argument are parameters: σ stands for 'K = F_e'; S₀ for 'F_e ⊆ T'; S' for 'F_e+ ⊆ T'; G for the Gödel sentence G(F_e+); P for 'F_e+ ⊢ G(F_e+)'; Q for 'F_e ⊢ (K = F_e → G(F_e+))'. This statement says the eight-step argument is valid: the conclusion (8), ¬(K = F_e), follows. The two rules enter as: T-In at the single sentence σ, and K-Intro as a rule. Lines (1), (3), (4) and (6) are not derived; they enter as bridging hypotheses, namely (1) itself; 'F_e+ ⊆ T implies G(F_e+)' for (3); 'F_e+ ⊆ T implies F_e+ does not prove G(F_e+)' for (4); and 'if F_e proves σ → G then F_e+ proves G' for (6). Two more bridging hypotheses stand for the passage from (1) to (2) ('if F_e ⊆ T and σ is true then F_e+ ⊆ T') and from (5), (6) to (7) ('σ implies that if σ → G is known then F_e proves it'). The principle K → T is not a separate hypothesis because it is used only to get line (1)."
+  },
+  {
+   "id": "S4b",
+   "names": [
+    "UnrestrictedTInInconsistent"
+   ],
+   "passages": [
+    "P-K2-467",
+    "P-K16-170"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. This statement supports the remark that adding 'T-In' to DTK gives an inconsistent system. DTK has T-Out (Lemma 7.14.4) and, through arithmetic, a liar sentence; both are hypotheses here. The source says that adding both 'T-In' and 'K-Intro' gives inconsistency and gives no proof; this statement concerns T-In alone and the derivation is the author's."
+  },
+  {
+   "id": "S4c",
+   "names": [
+    "UnrestrictedKIntroInconsistent"
+   ],
+   "passages": [
+    "P-K2-467",
+    "P-K2-464",
+    "P-K16-170"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. This statement supports the remark that adding 'K-Intro' to DTK gives an inconsistent system. DTK has K → T (K1), T-Out (Lemma 7.14.4) and, through arithmetic, a sentence equivalent to its own not being known; all three are hypotheses here. The source gives no proof; the derivation is the author's."
+  },
+  {
+   "id": "S4d",
+   "names": [
+    "KnownValiditiesInconsistent"
+   ],
+   "passages": [
+    "P-K16-168",
+    "P-K2-464",
+    "P-K2-463"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. This statement captures the quicker proof that EA_DT is inconsistent, for a liar sentence lam. Its hypotheses are: lam is a liar; K(lam ∨ ¬lam), an instance of E1; the instance of I for that sentence; 'T(lam ∨ ¬lam) implies T(lam) ∨ T(¬lam)'; and the conditioned truth biconditional for lam, with D(lam) written out as T(lam) ∨ T(¬lam), which is what makes D(lam) contradictory."
+  },
+  {
+   "id": "S4e",
+   "names": [
+    "PenroseArgumentUnderDeterminateness"
+   ],
+   "passages": [
+    "P-K2-467",
+    "P-K2-464",
+    "P-K2-463",
+    "P-K16-170",
+    "P-K2-460"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The sentences of Penrose's argument are parameters: σ stands for 'K = F_e'; S₀ for 'F_e ⊆ T'; S' for 'F_e+ ⊆ T'; G for the Gödel sentence G(F_e+); P for 'F_e+ ⊢ G(F_e+)'; Q for 'F_e ⊢ (K = F_e → G(F_e+))'. This statement is the author's complement to the passage, not a restatement of it. The passage says the two rule applications are legitimate only if the statements 'K = F_e → F_e+ ⊆ T' and 'K(K = F_e → G(F_e+))' are determinate. That is a remark about which applications of DTK's rules are licensed, and it is not what the TARGET states. The TARGET states the other direction: if the system proves that those two statements are determinate, then with the restricted rules (the conditioned truth biconditional in place of T-In, DK-Intro in place of K-Intro), axioms D4 and D7, and the same six bridging hypotheses as in the unrestricted argument, ¬σ follows. Judge whether the TARGET says exactly that, and whether the two determinateness premises are the two statements the passage names."
+  },
+  {
+   "id": "S4f",
+   "names": [
+    "StepsIndeterminateIfThesisIs"
+   ],
+   "passages": [
+    "P-K2-467",
+    "P-K2-463",
+    "P-K16-170",
+    "P-K16-175"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. This statement is a reduction of Theorem 7, not Theorem 7 itself. Theorem 7 says DTK proves that the two statements are indeterminate. The TARGET says: given axiom D4 and axiom D7, if the system proves that σ ('K = F_e') is indeterminate, then it proves that σ → X is indeterminate for any X (take X to be 'F_e+ ⊆ T') and that K(σ → G) is indeterminate. That σ is provably indeterminate in DTK is taken from the 2016 chapter and is not proved. Whether this is how Koellner proves Theorem 7 is not known; Part II states it without proof."
+  },
+  {
+   "id": "S4g",
+   "names": [
+    "RestrictedThesisGivesUnprovableKnowledge"
+   ],
+   "passages": [
+    "P-K2-468",
+    "P-K16-175"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The sentences of Penrose's argument are parameters: σ stands for 'K = F_e'; S₀ for 'F_e ⊆ T'; S' for 'F_e+ ⊆ T'; G for the Gödel sentence G(F_e+); P for 'F_e+ ⊢ G(F_e+)'; Q for 'F_e ⊢ (K = F_e → G(F_e+))'. This statement is the author's own; the passages are context. It concerns a thesis σ that is provably determinate, such as the restriction of 'K = F_e' to arithmetical sentences. It keeps every hypothesis of the restricted argument except the last bridging one ('σ implies that if σ → G is known then F_e proves it'), which fails for the restricted thesis because σ → G is not an arithmetical sentence. The claim: the system then proves K(σ → G), and proves that if σ holds then F_e does not prove σ → G. Judge whether the TARGET says exactly that."
+  }
+ ],
+ "decoys": [
+  {
+   "id": "X13",
+   "mimics": "S4a",
+   "passages": [
+    "P-K2-460"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The sentences of Penrose's argument are parameters: σ stands for 'K = F_e'; S₀ for 'F_e ⊆ T'; S' for 'F_e+ ⊆ T'; G for the Gödel sentence G(F_e+); P for 'F_e+ ⊢ G(F_e+)'; Q for 'F_e ⊢ (K = F_e → G(F_e+))'. This statement says the eight-step argument is valid: the conclusion (8), ¬(K = F_e), follows. The two rules enter as: T-In at the single sentence σ, and K-Intro as a rule. Lines (1), (3), (4) and (6) are not derived; they enter as bridging hypotheses, namely (1) itself; 'F_e+ ⊆ T implies G(F_e+)' for (3); 'F_e+ ⊆ T implies F_e+ does not prove G(F_e+)' for (4); and 'if F_e proves σ → G then F_e+ proves G' for (6). Two more bridging hypotheses stand for the passage from (1) to (2) ('if F_e ⊆ T and σ is true then F_e+ ⊆ T') and from (5), (6) to (7) ('σ implies that if σ → G is known then F_e proves it'). The principle K → T is not a separate hypothesis because it is used only to get line (1).",
+   "planted_error": "The bridging hypothesis for step (7) is missing ('σ implies that if σ → G is known then F_e proves it'), although the claim lists it. Without it nothing connects knowledge with F_e and the conclusion does not follow.",
+   "lean": "def PenroseArgumentValid : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K : Fm → Fm) (σ S₀ S' G P Q : Fm),\n    𝓢 ⊢ σ 🡒 T σ → KIntro 𝓢 K →\n    𝓢 ⊢ σ 🡒 S₀ →\n    𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →\n    𝓢 ⊢ S' 🡒 G →\n    𝓢 ⊢ S' 🡒 ∼P →\n    𝓢 ⊢ Q 🡒 P →\n    𝓢 ⊢ ∼σ"
+  },
+  {
+   "id": "X14",
+   "mimics": "S4f",
+   "passages": [
+    "P-K2-467",
+    "P-K2-463",
+    "P-K16-170",
+    "P-K16-175"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. This statement is a reduction of Theorem 7, not Theorem 7 itself. Theorem 7 says DTK proves that the two statements are indeterminate. The TARGET says: given axiom D4 and axiom D7, if the system proves that σ ('K = F_e') is indeterminate, then it proves that σ → X is indeterminate for any X (take X to be 'F_e+ ⊆ T') and that K(σ → G) is indeterminate. That σ is provably indeterminate in DTK is taken from the 2016 chapter and is not proved. Whether this is how Koellner proves Theorem 7 is not known; Part II states it without proof.",
+   "planted_error": "The conditional is reversed in the first conjunct: it says X → σ is indeterminate, where the claim and Theorem 7 concern σ → X. By axiom D4 an indeterminate consequent does not make a conditional indeterminate.",
+   "lean": "def StepsIndeterminateIfThesisIs : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K D : Fm → Fm) (σ X G : Fm),\n    DeterminateImp 𝓢 D T → DeterminateK 𝓢 D K →\n    𝓢 ⊢ ∼D σ →\n    𝓢 ⊢ ∼D (X 🡒 σ) ⋏ ∼D (K (σ 🡒 G))"
+  },
+  {
+   "id": "X15",
+   "mimics": "S4b",
+   "passages": [
+    "P-K2-467",
+    "P-K16-170"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. T, K and D are arbitrary functions on sentences standing for the type-free predicates 'is true', 'is known (absolutely provable)' and 'is determinate' applied to the code of a sentence. 𝓢 stands for the system in which the argument is carried out. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. This statement supports the remark that adding 'T-In' to DTK gives an inconsistent system. DTK has T-Out (Lemma 7.14.4) and, through arithmetic, a liar sentence; both are hypotheses here. The source says that adding both 'T-In' and 'K-Intro' gives inconsistency and gives no proof; this statement concerns T-In alone and the derivation is the author's.",
+   "planted_error": "The sentence is a truth-teller, not a liar: it is equivalent to its own truth (lam ↔ T lam), where the claim needs a sentence equivalent to its own untruth. From a truth-teller no contradiction follows.",
+   "lean": "def UnrestrictedTInInconsistent : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T : Fm → Fm),\n    TIn 𝓢 T → TOut 𝓢 T → (∃ lam, 𝓢 ⊢ lam 🡘 T lam) → 𝓢 ⊢ ⊥"
+  }
+ ]
+}

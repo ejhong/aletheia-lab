@@ -1,0 +1,35 @@
+{
+  "id": "DEF-M",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:16:48Z",
+  "target": "def Def1 (𝓢 : S) (T : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ φ 🡒 T φ\n\ndef Def2 (𝓢 : S) (T : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ T φ 🡒 φ\n\ndef Def3 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ φ → 𝓢 ⊢ K φ\n\ndef Def4 (𝓢 : S) (K T : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K φ 🡒 T φ\n",
+  "usage": [
+    [
+      1660,
+      297
+    ],
+    [
+      2821,
+      1181
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Given a sentence type Fm with the specified logical connectives and constants, a system type S with a provability relation on Fm, and a system 𝓢 in S, the four declarations define properties; they do not assert that the properties hold. Def1(𝓢, T), for a function T from sentences to sentences, means that for every sentence φ, 𝓢 proves the sentence φ 🡒 T(φ). Def2(𝓢, T) means that for every sentence φ, 𝓢 proves the sentence T(φ) 🡒 φ. Def3(𝓢, K), for a function K from sentences to sentences, means that for every sentence φ, if 𝓢 proves φ, then 𝓢 proves K(φ). This is a rule about provability, not a requirement that 𝓢 prove the sentence φ 🡒 K(φ). Def4(𝓢, K, T), with K and then T supplied as sentence-to-sentence functions, means that for every sentence φ, 𝓢 proves the sentence K(φ) 🡒 T(φ). In Def1, Def2, and Def4 the implication itself must be proved for every φ, whether or not 𝓢 proves its antecedent. No classicality or consistency hypothesis on 𝓢 is imposed.\"}",
+  "translation": "Given a sentence type Fm with the specified logical connectives and constants, a system type S with a provability relation on Fm, and a system 𝓢 in S, the four declarations define properties; they do not assert that the properties hold. Def1(𝓢, T), for a function T from sentences to sentences, means that for every sentence φ, 𝓢 proves the sentence φ 🡒 T(φ). Def2(𝓢, T) means that for every sentence φ, 𝓢 proves the sentence T(φ) 🡒 φ. Def3(𝓢, K), for a function K from sentences to sentences, means that for every sentence φ, if 𝓢 proves φ, then 𝓢 proves K(φ). This is a rule about provability, not a requirement that 𝓢 prove the sentence φ 🡒 K(φ). Def4(𝓢, K, T), with K and then T supplied as sentence-to-sentence functions, means that for every sentence φ, 𝓢 proves the sentence K(φ) 🡒 T(φ). In Def1, Def2, and Def4 the implication itself must be proved for every φ, whether or not 𝓢 proves its antecedent. No classicality or consistency hypothesis on 𝓢 is imposed.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def4 captures the sentence-by-sentence content of K ⊆ T, but not the inclusion as a single sentence usable within 𝓢. Having a proof of K φ 🡒 T φ for each φ does not in general yield a proof of a universally quantified inclusion.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The definitions abstract away from the source's language and proof systems. In particular, Def2 gives the T-Out property that DTK has on its own sentences, without identifying 𝓢 with DTK or representing application of T to a sentence code. The connective and entailment parameters also do not themselves require 𝓢 to validate classical logic.\"\n    }\n  ],\n  \"summary\": \"Within the declared abstraction, Def1 and Def2 give the correct directions of T-In and T-Out, and Def3 correctly treats K-Intro as a rule on provable sentences rather than a provable implication. Def4 gives exactly the claimed instances of K ⊆ T, not its internal universal form.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Def4 captures the sentence-by-sentence content of K ⊆ T, but not the inclusion as a single sentence usable within 𝓢. Having a proof of K φ 🡒 T φ for each φ does not in general yield a proof of a universally quantified inclusion."
+      },
+      {
+        "severity": "minor",
+        "description": "The definitions abstract away from the source's language and proof systems. In particular, Def2 gives the T-Out property that DTK has on its own sentences, without identifying 𝓢 with DTK or representing application of T to a sentence code. The connective and entailment parameters also do not themselves require 𝓢 to validate classical logic."
+      }
+    ],
+    "summary": "Within the declared abstraction, Def1 and Def2 give the correct directions of T-In and T-Out, and Def3 correctly treats K-Intro as a rule on provable sentences rather than a provable implication. Def4 gives exactly the claimed instances of K ⊆ T, not its internal universal form."
+  }
+}

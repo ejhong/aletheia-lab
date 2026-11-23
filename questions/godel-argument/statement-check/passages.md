@@ -139,6 +139,42 @@ the page images. Copies read are listed in `../MANIFEST.md`.
 
 > These results, however, do not really depend on the Gödel fixed point construction, but are more basic, as the next theorem shows. Theorem 3. Let U(e,x) be any formula with two free variables e,x. Suppose in addition that (for each formula p with one free variable x) T has the following thesis (in case U is an r.e. formula of arithmetic which is universal for r.e. sets, this is just the Post-Turing thesis): a) T ⊢ ∃e∀x(Bp(x) ↔ U(e,x)). Then there is a formula q(e) with one free variable e such that b) T ⊢ ∃e(q(e) & ¬Bq(e)). […] Moreover, if a) holds with B prefixed, then so does b) (that is, knowledge of the Turing thesis entails knowledge that there exists an absolutely undecidable sentence). Proof. Note that reading U(e,x) as x ∈ e, a) is very similar to the paradoxical class construction scheme. Taking q(x) = ¬U(x,x) for p in a) yields […] Note that the correctness of B together with b) implies c) T ⊢ ∃e(¬Bq(e) & ¬B¬q(e)), which is the natural reading for "q(e) is absolutely undecidable". […] In this argument we of course make essential use of quantification into the modal context Bq(x), but as pointed out already, the only axiom for B used is the correctness of B […] Remark 4. The hypothesis of the above theorem (in the Post-Turing form), ∃e∀x(Bq(x) ↔ U(e,x)), is known to be consistent with our axioms (see Reinhardt (1981)). The consistency of the stronger claim (i.e. with B prefixed) is an open problem.
 
+## P-K2-460 — Koellner (2018), Part II, *J. Phil.* 115(9), pp. 460–461, §I (F_e+ is the system obtained by adding the sentence 'K = F_e' to F_e; G(·) is the Gödel sentence)
+
+> The argument involves several principles governing F_e, K, and T, three of which it will be useful to state at the outset: (K → T) K ⊆ T; (T-In) φ → T(φ); (K-Intro) the rule: from φ infer K(φ). Here is the argument, step by step: Let e be an arbitrary natural number and consider F_e. (1) K = F_e → F_e ⊆ T. [This follows by the rule 'K → T'.] (2) K = F_e → F_e+ ⊆ T. […] This line follows from (1) by the rule 'T-In'.] (3) K = F_e → G(F_e+). […] This line follows from (2) by reflection and the nature of the Gödel sentence.] (4) K = F_e → F_e+ ⊬ G(F_e+). [This line follows from (2) by the incompleteness theorem.] (5) K(K = F_e → G(F_e+)). [This line follows from (3) by the rule 'K-Intro'.] (6) K = F_e → F_e ⊬ (K = F_e → G(F_e+)). [This line follows from (4).] (7) K = F_e → K ≠ F_e. [This line follows from (5) and (6) since under the assumption that K = F_e lines (5) and (6) show that K and F_e disagree on 'K = F_e → G(F_e+)'.] (8) K ≠ F_e. [This line follows from (7) by logic.]
+
+## P-K2-463 — Koellner (2018), Part II, pp. 462–463, §II.2 (D(x) is defined as T(x) ∨ T(¬x); dots under connectives omitted)
+
+> The system DT is an extension of PA. […] Suffice it to say that the axioms governing 'D' include […] (D4) (∀x)(∀y)[Sent(x) ∧ Sent(y) → (D(x → y) ↔ D(x) ∧ (T(x) → D(y)))] […] Theorem 1 (Feferman). For all φ ∈ L_DT, DT ⊢ D(φ) → (T(φ) ↔ φ). It follows that in DT certain statements—like the liar sentence, λ—are indeterminate, and provably so.
+
+## P-K2-464 — Koellner (2018), Part II, pp. 464–465, §II.4 (the two rules are written as fractions in the original)
+
+> Let EA_DT be the resulting system. Unfortunately: Theorem 2. EA_DT is inconsistent. In hindsight, this is perhaps not so surprising. For the axioms of EA are completely unrestricted, but once we enter the realm of indeterminate sentences we should condition our principles of absolute provability on determinateness, just as we did in the case of the principles governing truth. […] The resulting system, DTK, has, in addition to the axioms of DT, the following axioms governing 'K': (K1) (∀x)[Sent(x) → (K(x) → T(x))]; (K2) (∀x)(∀y)[Sent(x) ∧ Sent(y) → (K(x → y) ∧ K(x) → K(y))]; (K3) (∀x)[Sent(x) → (K(x) → K(K(x)))]; along with the inference rules (DK-Intro) from φ ∧ D(φ) infer K(φ), and (DT-Intro) from φ ∧ D(φ) infer T(φ). Notice that here the inference rules are explicitly conditioned on determinateness and the three fundamental principles are implicitly conditioned on determinateness through the connection between K and T given in K1. […] Theorem 4. For all φ ∈ L_DTK, DTK ⊢ D(φ) → (T(φ) ↔ φ).
+
+## P-K2-467 — Koellner (2018), Part II, p. 467, §IV.1
+
+> Recall that the argument employed the principles 'K → T', 'T-In', and 'K-Intro'. In DTK we have 'K → T' (this is just K1) but we do not have 'T-In' and 'K-Intro'. In fact, if one adds 'T-In' and 'K-Intro' then the resulting system can be shown to be inconsistent. This is not surprising, since once one enters the realm of type-free truth and encounters indeterminate sentences like the liar, these rules are only plausible provided one conditions on determinateness. It is for this reason that in DTK we have (of necessity) only the restricted versions of these rules, namely, 'DT-In' and 'DK-Intro'. Now, in Penrose's argument, the rules 'T-In' and 'K-Intro' are applied to the statements 'K = F_e → F_e+ ⊆ T' and 'K(K = F_e → G(F_e+))' (in steps (2) and (5), respectively). This application is legitimate only if these statements are determinate. It turns out that these statements are not determinate; in fact, they are provably indeterminate: Theorem 7. The system DTK proves: (1) ¬D(K = F_e → F_e+ ⊆ T) (2) ¬D(K(K = F_e → G(F_e+))). So the inferences in steps (2) and (5) are not legitimate.
+
+## P-K2-468 — Koellner (2018), Part II, pp. 467–468, §IV.2 (the subscript PA marks the version with quantifiers restricted to the language of PA)
+
+> To describe the limitative results we need to distinguish two versions of the disjunction and its disjuncts—the full versions and the restricted versions. […] In fact, in the fully general case, the disjunction and each of its disjuncts is indeterminate, and provably so: Theorem 8. DTK ⊢ ¬D(GD) ∧ ¬D(¬WMT) ∧ ¬D(AU). […] In this case it turns out that the statements in question are provably determinate: Theorem 9. DTK ⊢ D(GD_PA) ∧ D(¬WMT_PA) ∧ D(AU_PA). […] Theorem 11. Assume that DTK is correct for arithmetical statements. Then DTK can neither prove nor refute either ¬WMT_PA or AU_PA.
+
+## P-K16-168 — Koellner (2016), "Gödel's Disjunction", in Horsten and Welch (eds.), §7.12, pp. 167–169 (E1 is "K of every first-order validity"; I is "Kφ → T(φ)" for each sentence φ)
+
+> Theorem 7.12.1 EA_DT is inconsistent. […] (There is an even quicker way to see the inconsistency in EA_DT as follows. Let λ be the liar sentence, λ ∨ ¬λ is valid. So by E1 we have K(λ ∨ ¬λ) and by I we have T(λ ∨ ¬λ). But T(λ ∨ ¬λ) is equivalent to T(λ) ∨ T(¬λ) which, by the definition of 'D', is equivalent to D(λ). Hence we have D(λ), which is a contradiction.)
+
+## P-K16-170 — Koellner (2016), "Gödel's Disjunction", §§7.13–7.14, pp. 169–171 (dots over and under symbols omitted)
+
+> (D7) (∀x)[D(K(x)) ↔ D(x)]. […] Lemma 7.14.4 For each φ ∈ L_DTK, DTK ⊢ D(φ) → (T(φ) ↔ φ), and hence DTK ⊢ T(φ) → φ. (T Out)
+
+## P-K16-175 — Koellner (2016), "Gödel's Disjunction", §7.15, pp. 174–175
+
+> The full versions WMT, SMT, and [SSMT] are not determinate (on either reading) since, for example, in the case of the first reading, the component Sent(λ) → (K(λ) → W_e(λ)) is not determinate. […] Theorem 7.15.1 In DTK the statements WMT_PA, SMT_PA, and SSMT_PA are provably determinate, while the statements WMT, SMT, and SSMT are provably indeterminate.
+
+*P-K16-168 to P-K16-175 were transcribed on 2026-11-23 by Claude Fable 5.2 from the pages as displayed in Kindle for
+Web, in a copy of the book bought by Eugene. Page numbers are those the reader shows. They could not be checked
+mechanically. The bracketed "[SSMT]" corrects what looks like a misprint ("DTK") on the page.*
+
 *P-R321 to P-R328 were transcribed on 2026-11-23 by Claude Fable 5.2 from the page images of the JSTOR scan supplied
 by Eugene. The scan's text layer garbles the logical symbols, so only the words could be checked mechanically.*
 

@@ -94,4 +94,17 @@ Dated entries, newest last: what was tried, what happened, what next.
   steps and the verdict, but not the full axioms of DT, for which it points to Koellner's 2016 chapter "Gödel's
   Disjunction". Corradini and Galvan's two papers (*Logic and Logical Philosophy* 2022, 2024) are open access; a
   direct download returned a web page, not the PDF. Tier 2C is not started.
+- 2026-11-23: PR #36 (tier 2B) merged, after merging `main` into the branch to resolve a conflict in `SPENDING.md`
+  (the population-y question had added rows; both sets kept).
+- Corradini and Galvan's two papers could not be obtained: the journal site returned 403 to automated fetches
+  and to Eugene's browser; a university repository address did not resolve. Not pursued further.
+- Eugene bought the Kindle edition of Horsten and Welch (eds.), *Gödel's Disjunction*, and signed in to Kindle for
+  Web. Read Koellner's chapter 7, sections 7.9 to 7.17, on screen through the browser tool; restored his text
+  size afterwards. The chapter has the full axioms of DT and DTK. It has no theorem on which steps of Penrose's
+  argument fail; that is only in Part II, as Theorem 7, without proof.
+- Tier 2C: Amendment 5 pushed (109e2d8) before the check. Seven statements in the abstract setting. Check: two
+  rounds, $5.21; round 1 rated S4e divergent (wrong determinateness premises), fixed. One tool call failed while
+  the round 2 calls were running; the missing Google call was run again. Locked `Statement5.lean` at 06:35 UTC
+  (c1e4133); proofs in `Results5.lean` (eb3749f).
+- Eugene lifted the $50 cap while the check ran. Total spent on the question: $40.26.
 

@@ -1,0 +1,39 @@
+{
+  "id": "DEF-N",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:16:48Z",
+  "target": "def Def5 (𝓢 : S) (D K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ φ → 𝓢 ⊢ D φ → 𝓢 ⊢ K φ\n\ndef Def6 (𝓢 : S) (D T : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ D φ 🡒 (T φ 🡘 φ)\n\ndef Def7 (𝓢 : S) (D T : Fm → Fm) : Prop := ∀ φ ψ, 𝓢 ⊢ D (φ 🡒 ψ) 🡘 (D φ ⋏ (T φ 🡒 D ψ))\n\ndef Def8 (𝓢 : S) (D K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ D (K φ) 🡘 D φ\n",
+  "usage": [
+    [
+      1660,
+      336
+    ],
+    [
+      2967,
+      1770
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Fix arbitrary types Fm of sentences and S of systems, with logical connectives and constants on Fm and a provability relation for S on Fm. Each definition specifies a property of a system 𝓢 in S and the indicated arbitrary functions from Fm to Fm; it does not assert that the property holds.\\n\\nDef5(𝓢, D, K): For every sentence φ, if 𝓢 proves φ, then, if 𝓢 proves D(φ), 𝓢 proves K(φ). This is a rule with two provability premises, not a requirement that 𝓢 prove an implication.\\n\\nDef6(𝓢, D, T): For every sentence φ, 𝓢 proves the implication D(φ) 🡒 (T(φ) 🡘 φ). It need not prove D(φ).\\n\\nDef7(𝓢, D, T): For every sentence φ and then every sentence ψ, 𝓢 proves the biconditional between D(φ 🡒 ψ) and the conjunction of D(φ) with the implication T(φ) 🡒 D(ψ).\\n\\nDef8(𝓢, D, K): For every sentence φ, 𝓢 proves the biconditional D(K(φ)) 🡘 D(φ).\\n\\nIn Def6–Def8 the connectives in the sentence to be proved are those of Fm. None of the definitions assumes classicality, consistency, or any of the other defined properties.\"}",
+  "translation": "Fix arbitrary types Fm of sentences and S of systems, with logical connectives and constants on Fm and a provability relation for S on Fm. Each definition specifies a property of a system 𝓢 in S and the indicated arbitrary functions from Fm to Fm; it does not assert that the property holds.\n\nDef5(𝓢, D, K): For every sentence φ, if 𝓢 proves φ, then, if 𝓢 proves D(φ), 𝓢 proves K(φ). This is a rule with two provability premises, not a requirement that 𝓢 prove an implication.\n\nDef6(𝓢, D, T): For every sentence φ, 𝓢 proves the implication D(φ) 🡒 (T(φ) 🡘 φ). It need not prove D(φ).\n\nDef7(𝓢, D, T): For every sentence φ and then every sentence ψ, 𝓢 proves the biconditional between D(φ 🡒 ψ) and the conjunction of D(φ) with the implication T(φ) 🡒 D(ψ).\n\nDef8(𝓢, D, K): For every sentence φ, 𝓢 proves the biconditional D(K(φ)) 🡘 D(φ).\n\nIn Def6–Def8 the connectives in the sentence to be proved are those of Fm. None of the definitions assumes classicality, consistency, or any of the other defined properties.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def5 takes separate proofs of φ and D(φ), whereas DK-Intro takes a proof of their conjunction. These presentations are equivalent in the intended classical system, but the Lean definitions do not require conjunction introduction or elimination, or classicality more generally.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def7 and Def8 require provability of each sentence instance, not a single internally quantified axiom about codes. For D4, typing makes the Sent guards redundant on the represented instances, but proving those instances does not amount to proving the universal axiom.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"D7, unlike D4, has no Sent guard. Its arithmetic variable ranges even over numbers that are not sentence codes; Def8 has no instances corresponding to those numbers.\"\n    }\n  ],\n  \"summary\": \"At the declared sentence level, all four definitions preserve the source formulas and their directions. Def6 in particular matches the conditioned biconditional exactly; the caveats concern the logic needed for the split rule and the scope of the two axiom schemata.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Def5 takes separate proofs of φ and D(φ), whereas DK-Intro takes a proof of their conjunction. These presentations are equivalent in the intended classical system, but the Lean definitions do not require conjunction introduction or elimination, or classicality more generally."
+      },
+      {
+        "severity": "minor",
+        "description": "Def7 and Def8 require provability of each sentence instance, not a single internally quantified axiom about codes. For D4, typing makes the Sent guards redundant on the represented instances, but proving those instances does not amount to proving the universal axiom."
+      },
+      {
+        "severity": "minor",
+        "description": "D7, unlike D4, has no Sent guard. Its arithmetic variable ranges even over numbers that are not sentence codes; Def8 has no instances corresponding to those numbers."
+      }
+    ],
+    "summary": "At the declared sentence level, all four definitions preserve the source formulas and their directions. Def6 in particular matches the conditioned biconditional exactly; the caveats concern the logic needed for the split rule and the scope of the two axiom schemata."
+  }
+}

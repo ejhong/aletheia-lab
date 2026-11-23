@@ -1,0 +1,31 @@
+{
+  "id": "X13",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:17:29Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K : Fm → Fm) (σ S₀ S' G P Q : Fm),\n    𝓢 ⊢ σ 🡒 T σ → Def3 𝓢 K →\n    𝓢 ⊢ σ 🡒 S₀ →\n    𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →\n    𝓢 ⊢ S' 🡒 G →\n    𝓢 ⊢ S' 🡒 ∼P →\n    𝓢 ⊢ Q 🡒 P →\n    𝓢 ⊢ ∼σ\n",
+  "usage": [
+    [
+      1856,
+      323
+    ],
+    [
+      3193,
+      360
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and provability relation for systems in S on sentences in Fm, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every pair of functions T, K from Fm to Fm, and all sentences σ, S₀, S′, G, P, Q, the following hypotheses, in order, imply that 𝓢 proves the negation of σ: (1) 𝓢 proves σ 🡒 T(σ); (2) for every sentence φ, if 𝓢 proves φ, then 𝓢 proves K(φ); (3) 𝓢 proves σ 🡒 S₀; (4) 𝓢 proves S₀ 🡒 (T(σ) 🡒 S′); (5) 𝓢 proves S′ 🡒 G; (6) 𝓢 proves S′ 🡒 ∼P; and (7) 𝓢 proves Q 🡒 P. Hypothesis (2) is a rule about provability, not a requirement that 𝓢 prove φ 🡒 K(φ). No consistency assumption is made. G and Q are separately quantified: they need not coincide, and there is no hypothesis that 𝓢 proves G 🡒 Q.\"}",
+  "translation": "Target defines the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and provability relation for systems in S on sentences in Fm, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every pair of functions T, K from Fm to Fm, and all sentences σ, S₀, S′, G, P, Q, the following hypotheses, in order, imply that 𝓢 proves the negation of σ: (1) 𝓢 proves σ 🡒 T(σ); (2) for every sentence φ, if 𝓢 proves φ, then 𝓢 proves K(φ); (3) 𝓢 proves σ 🡒 S₀; (4) 𝓢 proves S₀ 🡒 (T(σ) 🡒 S′); (5) 𝓢 proves S′ 🡒 G; (6) 𝓢 proves S′ 🡒 ∼P; and (7) 𝓢 proves Q 🡒 P. Hypothesis (2) is a rule about provability, not a requirement that 𝓢 prove φ 🡒 K(φ). No consistency assumption is made. G and Q are separately quantified: they need not coincide, and there is no hypothesis that 𝓢 proves G 🡒 Q.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The TARGET omits the bridge `𝓢 ⊢ σ 🡒 (K (σ 🡒 G) 🡒 Q)` needed for line (7). Line (5) gives `K (σ 🡒 G)`, and line (6) gives `σ 🡒 ∼Q`, but nothing says that under σ the known sentence is also proved by F_e. Thus line (5) cannot supply the Q needed for a contradiction.\"\n    }\n  ],\n  \"summary\": \"The remaining hypotheses do not entail line (8). In a two-valued system where exactly the true value is provable, take T and K as identity functions, σ, S₀, S′ and G as true, and P and Q as false. Every stated hypothesis holds, but ∼σ is not provable.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The TARGET omits the bridge `𝓢 ⊢ σ 🡒 (K (σ 🡒 G) 🡒 Q)` needed for line (7). Line (5) gives `K (σ 🡒 G)`, and line (6) gives `σ 🡒 ∼Q`, but nothing says that under σ the known sentence is also proved by F_e. Thus line (5) cannot supply the Q needed for a contradiction."
+      }
+    ],
+    "summary": "The remaining hypotheses do not entail line (8). In a two-valued system where exactly the true value is provable, take T and K as identity functions, σ, S₀, S′ and G as true, and P and Q as false. Every stated hypothesis holds, but ∼σ is not provable."
+  }
+}

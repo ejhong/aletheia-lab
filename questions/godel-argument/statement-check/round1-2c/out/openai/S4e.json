@@ -1,0 +1,35 @@
+{
+  "id": "S4e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:17:34Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K D : Fm → Fm) (σ S₀ S' G P Q : Fm),\n    Def6 𝓢 D T → Def5 𝓢 D K →\n    𝓢 ⊢ D σ → 𝓢 ⊢ D (σ 🡒 G) →\n    𝓢 ⊢ σ 🡒 S₀ →\n    𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →\n    𝓢 ⊢ S' 🡒 G →\n    𝓢 ⊢ S' 🡒 ∼P →\n    𝓢 ⊢ Q 🡒 P →\n    𝓢 ⊢ σ 🡒 K (σ 🡒 G) 🡒 Q →\n    𝓢 ⊢ ∼σ\n",
+  "usage": [
+    [
+      1905,
+      415
+    ],
+    [
+      3897,
+      1501
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and of a provability relation for systems in S on Fm, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every three functions T, K, D from Fm to Fm, and every six sentences σ, S₀, S', G, P, Q in Fm, suppose the following hypotheses hold, in order: (1) for every sentence φ, 𝓢 proves D(φ) 🡒 (T(φ) 🡘 φ), where 🡘 is the conjunction of the two implications; (2) for every sentence φ, if 𝓢 proves φ, then if 𝓢 proves D(φ), it proves K(φ) (a rule about provability, not a requirement to prove an implication); (3) 𝓢 proves D(σ); (4) 𝓢 proves D(σ 🡒 G); (5) 𝓢 proves σ 🡒 S₀; (6) 𝓢 proves S₀ 🡒 (T(σ) 🡒 S'); (7) 𝓢 proves S' 🡒 G; (8) 𝓢 proves S' 🡒 ∼P; (9) 𝓢 proves Q 🡒 P; (10) 𝓢 proves σ 🡒 (K(σ 🡒 G) 🡒 Q). Then 𝓢 proves the sentence ∼σ. No consistency hypothesis or rule taking every provable φ to a provable K(φ) without the D(φ) premise is required. The conclusion is provability of the negation, not a claim that σ is unprovable.\"}",
+  "translation": "Target is defined to be the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and of a provability relation for systems in S on Fm, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every three functions T, K, D from Fm to Fm, and every six sentences σ, S₀, S', G, P, Q in Fm, suppose the following hypotheses hold, in order: (1) for every sentence φ, 𝓢 proves D(φ) 🡒 (T(φ) 🡘 φ), where 🡘 is the conjunction of the two implications; (2) for every sentence φ, if 𝓢 proves φ, then if 𝓢 proves D(φ), it proves K(φ) (a rule about provability, not a requirement to prove an implication); (3) 𝓢 proves D(σ); (4) 𝓢 proves D(σ 🡒 G); (5) 𝓢 proves σ 🡒 S₀; (6) 𝓢 proves S₀ 🡒 (T(σ) 🡒 S'); (7) 𝓢 proves S' 🡒 G; (8) 𝓢 proves S' 🡒 ∼P; (9) 𝓢 proves Q 🡒 P; (10) 𝓢 proves σ 🡒 (K(σ 🡒 G) 🡒 Q). Then 𝓢 proves the sentence ∼σ. No consistency hypothesis or rule taking every provable φ to a provable K(φ) without the D(φ) premise is required. The conclusion is provability of the negation, not a claim that σ is unprovable.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"For step (2), the passage identifies the whole line σ → S' as the sentence whose determinateness is required. The target assumes 𝓢 ⊢ D(σ) instead. This supplies σ → T(σ) for the reconstructed derivation, but it does not establish D(σ → S'), and the target has no principle equating the two conditions.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"For step (5), the passage identifies K(σ → G) as the sentence whose determinateness is required. The target assumes 𝓢 ⊢ D(σ → G), which is the correct premise for applying DK-Intro, but concerns its input rather than its output. A principle such as Def8 would equate the two determinateness conditions, but the target does not assume it.\"\n    }\n  ],\n  \"summary\": \"The target gives a valid sufficient condition for deriving ¬σ with the restricted rules and the six bridges. Its two determinateness premises, however, are not the conditions on the two displayed lines that the passage explicitly identifies.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "For step (2), the passage identifies the whole line σ → S' as the sentence whose determinateness is required. The target assumes 𝓢 ⊢ D(σ) instead. This supplies σ → T(σ) for the reconstructed derivation, but it does not establish D(σ → S'), and the target has no principle equating the two conditions."
+      },
+      {
+        "severity": "major",
+        "description": "For step (5), the passage identifies K(σ → G) as the sentence whose determinateness is required. The target assumes 𝓢 ⊢ D(σ → G), which is the correct premise for applying DK-Intro, but concerns its input rather than its output. A principle such as Def8 would equate the two determinateness conditions, but the target does not assume it."
+      }
+    ],
+    "summary": "The target gives a valid sufficient condition for deriving ¬σ with the restricted rules and the six bridges. Its two determinateness premises, however, are not the conditions on the two displayed lines that the passage explicitly identifies."
+  }
+}

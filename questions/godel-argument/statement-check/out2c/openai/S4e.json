@@ -1,0 +1,26 @@
+{
+  "id": "S4e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T06:29:56Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K D : Fm → Fm) (σ S₀ S' G P Q : Fm),\n    Def6 𝓢 D T → Def5 𝓢 D K → Def7 𝓢 D T → Def8 𝓢 D K →\n    𝓢 ⊢ D (σ 🡒 S') → 𝓢 ⊢ D (K (σ 🡒 G)) →\n    𝓢 ⊢ σ 🡒 S₀ →\n    𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →\n    𝓢 ⊢ S' 🡒 G →\n    𝓢 ⊢ S' 🡒 ∼P →\n    𝓢 ⊢ Q 🡒 P →\n    𝓢 ⊢ σ 🡒 K (σ 🡒 G) 🡒 Q →\n    𝓢 ⊢ ∼σ\n",
+  "usage": [
+    [
+      1931,
+      792
+    ],
+    [
+      4333,
+      242
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every pair of types Fm and S, every choice of logical connectives and truth and falsehood constants on Fm, and every provability relation for systems of type S on sentences of type Fm, take any system 𝓢 of type S that proves all classical propositional tautologies and is closed under modus ponens. Then, for every choice of functions T, K, D from Fm to Fm and every choice of sentences σ, S₀, S′, G, P, Q in Fm, the following conditional holds.\\n\\nAssume, in order: (1) for every sentence φ, 𝓢 proves D(φ) → (T(φ) ↔ φ); (2) for every sentence φ, if 𝓢 proves φ, then if 𝓢 proves D(φ), it proves K(φ); (3) for every sentence φ and every sentence ψ, 𝓢 proves D(φ → ψ) ↔ (D(φ) ∧ (T(φ) → D(ψ))); and (4) for every sentence φ, 𝓢 proves D(K(φ)) ↔ D(φ). Condition (2) is a rule about provability; the connectives in the sentences said to be proved are connectives of the formal language.\\n\\nAssume further that 𝓢 proves each of these sentences, in order: D(σ → S′); D(K(σ → G)); σ → S₀; S₀ → (T(σ) → S′); S′ → G; S′ → ¬P; Q → P; and σ → (K(σ → G) → Q). Then 𝓢 proves ¬σ. The first of these further premises uses S′, not S₀, and the second requires a proof of D(K(σ → G)), not a proof of K(σ → G). No consistency of 𝓢 or unrestricted rule taking provability of φ to provability of K(φ) is assumed. The conclusion is provability of the negation of σ, not a claim that σ is unprovable.\"}",
+  "translation": "Target is defined to be the following proposition. For every pair of types Fm and S, every choice of logical connectives and truth and falsehood constants on Fm, and every provability relation for systems of type S on sentences of type Fm, take any system 𝓢 of type S that proves all classical propositional tautologies and is closed under modus ponens. Then, for every choice of functions T, K, D from Fm to Fm and every choice of sentences σ, S₀, S′, G, P, Q in Fm, the following conditional holds.\n\nAssume, in order: (1) for every sentence φ, 𝓢 proves D(φ) → (T(φ) ↔ φ); (2) for every sentence φ, if 𝓢 proves φ, then if 𝓢 proves D(φ), it proves K(φ); (3) for every sentence φ and every sentence ψ, 𝓢 proves D(φ → ψ) ↔ (D(φ) ∧ (T(φ) → D(ψ))); and (4) for every sentence φ, 𝓢 proves D(K(φ)) ↔ D(φ). Condition (2) is a rule about provability; the connectives in the sentences said to be proved are connectives of the formal language.\n\nAssume further that 𝓢 proves each of these sentences, in order: D(σ → S′); D(K(σ → G)); σ → S₀; S₀ → (T(σ) → S′); S′ → G; S′ → ¬P; Q → P; and σ → (K(σ → G) → Q). Then 𝓢 proves ¬σ. The first of these further premises uses S′, not S₀, and the second requires a proof of D(K(σ → G)), not a proof of K(σ → G). No consistency of 𝓢 or unrestricted rule taking provability of φ to provability of K(φ) is assumed. The conclusion is provability of the negation of σ, not a claim that σ is unprovable.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The premises require 𝓢 to prove D(σ → S′) and D(K(σ → G)), placing D around exactly the two statements the passage names. With the conditioned truth biconditional, DK-Intro, D4, D7, and the six bridging hypotheses, the TARGET concludes that 𝓢 proves ¬σ; it does not assert that either determinateness premise holds in DTK.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The premises require 𝓢 to prove D(σ → S′) and D(K(σ → G)), placing D around exactly the two statements the passage names. With the conditioned truth biconditional, DK-Intro, D4, D7, and the six bridging hypotheses, the TARGET concludes that 𝓢 proves ¬σ; it does not assert that either determinateness premise holds in DTK."
+  }
+}

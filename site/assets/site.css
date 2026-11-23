@@ -706,3 +706,106 @@ tr:first-child td { border-top: 0; }
 .fig-legend .key { display: inline-flex; align-items: center; gap: .4rem; }
 .fig-legend .k-dot { fill: var(--copper); }
 .fig-legend .k-dot.k-hollow { fill: var(--paper); stroke: var(--copper); stroke-width: 2; }
+
+/* ---------- Result panels: verdicts, assumption maps, paired cases, numbered steps, folded sections ---------- */
+
+.verdict { border: 1px solid var(--line); margin: 2rem 0 2.25rem; }
+.verdict-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) 11.5rem; gap: 1.5rem; align-items: center;
+  padding: 1.15rem 1.25rem 1.2rem; background: var(--paper); border-top: 1px solid var(--line);
+}
+.verdict-row:first-child { border-top: 0; }
+.prose .verdict-kicker {
+  margin: 0 0 .3rem; font: 400 10.5px/1.5 var(--mono); text-transform: uppercase; letter-spacing: .16em;
+  color: var(--faint);
+}
+.prose .verdict-text { margin: 0; font: 400 1.32rem/1.3 var(--serif); color: var(--ink); letter-spacing: -.005em; }
+.prose .verdict-note { margin: .4rem 0 0; font-size: .86rem; line-height: 1.5; color: var(--ink-soft); }
+.prose .verdict-status {
+  margin: 0; display: flex; align-items: center; gap: .6rem;
+  font: 500 11.5px/1.35 var(--mono); text-transform: uppercase; letter-spacing: .12em;
+}
+.verdict-status .dot { flex: none; width: 10px; height: 10px; border-radius: 50%; background: currentColor; }
+.verdict-status.is-yes { color: var(--verdigris); }
+.verdict-status.is-no { color: var(--copper); }
+.verdict-status.is-open { color: var(--slate); }
+.verdict-status.is-open .dot { background: transparent; border: 1.5px solid currentColor; }
+@media (max-width: 40rem) {
+  .verdict-row { grid-template-columns: 1fr; gap: .7rem; }
+}
+
+.tiles.tiles-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.prose .tile-value.is-word { font: 400 1.45rem/1.2 var(--serif); letter-spacing: -.005em; }
+@media (max-width: 40rem) {
+  .tiles.tiles-3 { grid-template-columns: 1fr; }
+}
+
+.chart .c-path { stroke: var(--copper); stroke-width: 3; stroke-linecap: round; fill: none; }
+.chart .c-path-open { stroke: var(--faint); stroke-width: 2; stroke-dasharray: 2 7; stroke-linecap: round; fill: none; }
+.chart .c-station { fill: var(--ink); }
+.chart .c-reached { fill: var(--copper); stroke: var(--paper); stroke-width: 3; }
+.chart .c-target { fill: var(--paper); stroke: var(--faint); stroke-width: 2; }
+.chart .c-label-lg { fill: var(--ink); font: 400 15px/1 var(--serif); }
+.chart .c-yes { fill: var(--verdigris); font: 500 10.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.chart .c-no { fill: var(--copper); font: 500 10.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+
+.matrix { min-width: 640px; font-size: .88rem; }
+.matrix th { text-align: center; vertical-align: bottom; padding: .6rem .35rem; line-height: 1.35; letter-spacing: .08em; }
+.matrix th:first-child { text-align: left; padding-left: .8rem; width: 40%; }
+.matrix th.m-machine { color: var(--copper); }
+.matrix td { text-align: center; padding: .6rem .35rem; vertical-align: middle; }
+.matrix td:first-child { text-align: left; padding-left: .8rem; color: var(--ink); }
+.matrix td .m-sub { display: block; font-size: .8rem; color: var(--faint); margin-top: .1rem; }
+.matrix .m-yes { color: var(--ink); font-size: 1rem; }
+.matrix .m-no { color: color-mix(in oklab, var(--faint) 55%, transparent); font-size: 1rem; }
+.matrix td.m-machine { background: color-mix(in oklab, var(--copper) 6%, transparent); }
+.matrix tr.m-foot td { background: var(--paper-deep); color: var(--ink-soft); text-align: left; padding: .7rem .8rem; }
+
+.pair {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px;
+  background: var(--line); border: 1px solid var(--line); margin: 2rem 0 2.25rem;
+}
+.pair-card { background: var(--paper); padding: 1.15rem 1.2rem 1.25rem; display: flex; flex-direction: column; }
+.prose .pair-formula { margin: 0 0 .6rem; font: 400 12.5px/1.5 var(--mono); color: var(--faint); }
+.prose .pair-says { margin: 0 0 .9rem; font: 400 1.18rem/1.35 var(--serif); color: var(--ink); }
+.prose .pair-says b { font-weight: 400; border-bottom: 2px solid var(--copper); }
+.prose .pair-out { margin: auto 0 0; font-size: .88rem; line-height: 1.5; color: var(--ink-soft); }
+.pair-out .verdict-status { display: flex; margin-bottom: .35rem; }
+@media (max-width: 40rem) {
+  .pair { grid-template-columns: 1fr; }
+}
+
+.prose ol.steps { list-style: none; padding: 0; margin: 2rem 0 1.25rem; counter-reset: step; border: 1px solid var(--line); }
+.prose ol.steps > li {
+  counter-increment: step; position: relative; margin: 0; padding: .8rem 1.1rem .85rem 3.4rem;
+  border-top: 1px solid var(--line); background: var(--paper); color: var(--ink);
+}
+.prose ol.steps > li:first-child { border-top: 0; }
+.prose ol.steps > li::before {
+  content: counter(step); position: absolute; left: 1.1rem; top: .95rem;
+  font: 400 11px/1.4 var(--mono); letter-spacing: .08em; color: var(--faint);
+}
+.prose ol.steps > li.is-rule { background: color-mix(in oklab, var(--copper) 7%, var(--paper)); }
+.prose ol.steps > li.is-rule::before { color: var(--copper); }
+.step-rule {
+  display: block; margin-top: .3rem;
+  font: 400 10.5px/1.5 var(--mono); text-transform: uppercase; letter-spacing: .12em; color: var(--copper);
+}
+.step-rule.is-quiet { color: var(--faint); }
+
+details.more { border: 1px solid var(--line); margin: .75rem 0; background: var(--paper); }
+details.more > summary {
+  cursor: pointer; list-style: none; padding: .8rem 1.1rem; display: flex; align-items: baseline; gap: .75rem;
+  font: 400 1.05rem/1.35 var(--serif); color: var(--ink);
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "+"; flex: none; width: .9rem; font: 400 13px/1 var(--mono); color: var(--copper);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more[open] > summary { border-bottom: 1px solid var(--line); background: var(--panel); }
+details.more > summary:hover { background: var(--panel); }
+details.more > summary:focus-visible { outline: 2px solid var(--copper); outline-offset: -2px; }
+.more-body { padding: .35rem 1.1rem 1rem; }
+.more-body > :first-child { margin-top: .9rem; }
+.more-body .table-wrap { margin-inline: 0; }

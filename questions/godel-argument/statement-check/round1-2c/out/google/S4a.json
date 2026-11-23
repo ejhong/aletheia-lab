@@ -1,0 +1,39 @@
+{
+  "id": "S4a",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T06:16:48Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T K : Fm → Fm) (σ S₀ S' G P Q : Fm),\n    𝓢 ⊢ σ 🡒 T σ → Def3 𝓢 K →\n    𝓢 ⊢ σ 🡒 S₀ →\n    𝓢 ⊢ S₀ 🡒 T σ 🡒 S' →\n    𝓢 ⊢ S' 🡒 G →\n    𝓢 ⊢ S' 🡒 ∼P →\n    𝓢 ⊢ Q 🡒 P →\n    𝓢 ⊢ σ 🡒 K (σ 🡒 G) 🡒 Q →\n    𝓢 ⊢ ∼σ\n",
+  "usage": [
+    [
+      1792,
+      2037
+    ],
+    [
+      3239,
+      16589
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition that for every type Fm of sentences equipped with the formal logical connectives (implication, conjunction, disjunction, negation) and truth/falsehood constants, every type S of proof systems equipped with a provability relation ⊢ on Fm, every proof system 𝓢 : S that proves all classical propositional tautologies and is closed under modus ponens, every pair of arbitrary functions T, K : Fm → Fm from sentences to sentences, and every six sentences σ, S₀, S', G, P, Q : Fm, if all of the following eight conditions hold:\\n1. 𝓢 proves σ 🡒 T(σ);\\n2. K satisfies the rule Def3 for 𝓢, namely that for every sentence φ : Fm, if 𝓢 proves φ then 𝓢 proves K(φ);\\n3. 𝓢 proves σ 🡒 S₀;\\n4. 𝓢 proves S₀ 🡒 (T(σ) 🡒 S');\\n5. 𝓢 proves S' 🡒 G;\\n6. 𝓢 proves S' 🡒 ∼P;\\n7. 𝓢 proves Q 🡒 P;\\n8. 𝓢 proves σ 🡒 (K(σ 🡒 G) 🡒 Q);\\nthen 𝓢 proves ∼σ.\\n\\nNo further assumptions are made: 𝓢 need not be consistent, T and K are arbitrary sentence-to-sentence functions with no other properties assumed (in particular, σ 🡒 T(σ) is only assumed for the specific sentence σ, not for all sentences), and σ, S₀, S', G, P, Q are arbitrary sentences.\"}\n```",
+  "translation": "Target is the proposition that for every type Fm of sentences equipped with the formal logical connectives (implication, conjunction, disjunction, negation) and truth/falsehood constants, every type S of proof systems equipped with a provability relation ⊢ on Fm, every proof system 𝓢 : S that proves all classical propositional tautologies and is closed under modus ponens, every pair of arbitrary functions T, K : Fm → Fm from sentences to sentences, and every six sentences σ, S₀, S', G, P, Q : Fm, if all of the following eight conditions hold:\n1. 𝓢 proves σ 🡒 T(σ);\n2. K satisfies the rule Def3 for 𝓢, namely that for every sentence φ : Fm, if 𝓢 proves φ then 𝓢 proves K(φ);\n3. 𝓢 proves σ 🡒 S₀;\n4. 𝓢 proves S₀ 🡒 (T(σ) 🡒 S');\n5. 𝓢 proves S' 🡒 G;\n6. 𝓢 proves S' 🡒 ∼P;\n7. 𝓢 proves Q 🡒 P;\n8. 𝓢 proves σ 🡒 (K(σ 🡒 G) 🡒 Q);\nthen 𝓢 proves ∼σ.\n\nNo further assumptions are made: 𝓢 need not be consistent, T and K are arbitrary sentence-to-sentence functions with no other properties assumed (in particular, σ 🡒 T(σ) is only assumed for the specific sentence σ, not for all sentences), and σ, S₀, S', G, P, Q are arbitrary sentences.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Arithmetic, Gödel coding, quantifiers, and the internal structure of formal systems F_e, F_e+, the Gödel sentence G(F_e+), and the type-free predicates T and K are not modelled: the six statements of Penrose's argument are abstracted to opaque sentence parameters (σ, S₀, S', G, P, Q), T and K are arbitrary functions Fm → Fm, and the quantification over an arbitrary natural number e is not represented explicitly. (Declared as a limitation in the claim.)\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The principle (K → T) stated at the outset of the source passage is omitted, and the metamathematical and predicate-logic justifications of steps (1), (2), (3), (4), (6), and (7)—including reflection, the nature of the Gödel sentence, Gödel's incompleteness theorem, properties of provability in F_e vs. F_e+, and extensionality of K = F_e—are not derived but instead enter as six black-box propositional bridging hypotheses. Consequently, the formal statement only verifies the propositional-plus-necessitation skeleton connecting those hypotheses. (Declared in the claim.)\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The principle (T-In) is stated in the source passage as the general schema φ → T(φ), whereas the TARGET assumes only the single instance 𝓢 ⊢ σ 🡒 T σ (and places no other constraint on T). Since this weakens a hypothesis, it is a harmless strengthening of the theorem reflecting that (T-In) is only applied at σ in the argument.\"\n    }\n  ],\n  \"summary\": \"Within its declared abstract propositional setting, the TARGET accurately formalizes the logical skeleton of Koellner's eight-step Penrose argument, capturing the object-level use of T-In at σ, the meta-level rule K-Intro, and all six bridging implications in the right direction to derive ∼σ. Its divergences from the source passage are the explicitly declared idealizations—abstracting away arithmetic, coding, quantifiers, (K → T), and the metamathematical justifications of the bridging steps—plus a harmless strengthening that assumes T-In only at σ.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Arithmetic, Gödel coding, quantifiers, and the internal structure of formal systems F_e, F_e+, the Gödel sentence G(F_e+), and the type-free predicates T and K are not modelled: the six statements of Penrose's argument are abstracted to opaque sentence parameters (σ, S₀, S', G, P, Q), T and K are arbitrary functions Fm → Fm, and the quantification over an arbitrary natural number e is not represented explicitly. (Declared as a limitation in the claim.)"
+      },
+      {
+        "severity": "minor",
+        "description": "The principle (K → T) stated at the outset of the source passage is omitted, and the metamathematical and predicate-logic justifications of steps (1), (2), (3), (4), (6), and (7)—including reflection, the nature of the Gödel sentence, Gödel's incompleteness theorem, properties of provability in F_e vs. F_e+, and extensionality of K = F_e—are not derived but instead enter as six black-box propositional bridging hypotheses. Consequently, the formal statement only verifies the propositional-plus-necessitation skeleton connecting those hypotheses. (Declared in the claim.)"
+      },
+      {
+        "severity": "minor",
+        "description": "The principle (T-In) is stated in the source passage as the general schema φ → T(φ), whereas the TARGET assumes only the single instance 𝓢 ⊢ σ 🡒 T σ (and places no other constraint on T). Since this weakens a hypothesis, it is a harmless strengthening of the theorem reflecting that (T-In) is only applied at σ in the argument."
+      }
+    ],
+    "summary": "Within its declared abstract propositional setting, the TARGET accurately formalizes the logical skeleton of Koellner's eight-step Penrose argument, capturing the object-level use of T-In at σ, the meta-level rule K-Intro, and all six bridging implications in the right direction to derive ∼σ. Its divergences from the source passage are the explicitly declared idealizations—abstracting away arithmetic, coding, quantifiers, (K → T), and the metamathematical justifications of the bridging steps—plus a harmless strengthening that assumes T-In only at σ."
+  }
+}
