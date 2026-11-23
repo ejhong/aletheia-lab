@@ -1,0 +1,50 @@
+{
+ "vendor": "xai",
+ "model": "grok-4.7",
+ "calls": [
+  {
+   "call": "R1",
+   "prompt": "Here are eight line drawings. What do you think each one is a drawing of? Have you seen these drawings, or drawings like them, before, and if so where? Answer in a few sentences.",
+   "images": [
+    "figures/A01.png",
+    "figures/A02.png",
+    "figures/A03.png",
+    "figures/A04.png",
+    "figures/A05.png",
+    "figures/A06.png",
+    "figures/A07.png",
+    "figures/A08.png"
+   ],
+   "raw": "Drawing 1: a horse in motion, from an odd angle. Drawing 2: a reclining lounge or deck chair. Drawing 3: a kite (diamond sail with a short line). Drawing 4: a running quadruped, horse or dog. Drawing 5: a person with one arm flung up and out. Drawing 6: a flag or pennant on a pole. Drawing 7: a stick-figure person with arms raised. Drawing 8: two stick-figure people, one extending an arm.\n\nI don\u2019t recall these exact eight, but the loose black-on-white style matches crowdsourced sketch sets like Google\u2019s Quick, Draw! and the TU-Berlin sketches, and the simple line drawings used in psychology object-naming and recognition studies.",
+   "input_tokens": 3670,
+   "output_tokens": 159,
+   "cost_usd": null,
+   "seconds": 168.94,
+   "utc": "2026-11-23T22:15:08Z"
+  },
+  {
+   "call": "R2",
+   "prompt": "Here are twelve photographs of shapes carved in stone. Do you recognise where these carvings are from? Do you know of any published claim about what they represent? Answer in a few sentences.",
+   "images": [
+    "symbols_512/S01.png",
+    "symbols_512/S02.png",
+    "symbols_512/S03.png",
+    "symbols_512/S04.png",
+    "symbols_512/S05.png",
+    "symbols_512/S06.png",
+    "symbols_512/S07.png",
+    "symbols_512/S08.png",
+    "symbols_512/S09.png",
+    "symbols_512/S10.png",
+    "symbols_512/S11.png",
+    "symbols_512/S12.png"
+   ],
+   "raw": "These appear to be Neolithic reliefs from G\u00f6bekli Tepe and related Ta\u015f Tepeler sites near \u015eanl\u0131urfa, Turkey\u2014especially the long-necked birds, bull, and animal-and-snake motifs. Klaus Schmidt and later excavators published them as symbolic wild-animal images from a hunter-gatherer sanctuary, with the pillars often read as stylized humans. A disputed 2017 paper claimed some related carvings encode constellations and a comet impact; the excavators do not accept that reading. A few frames are too worn, or worked differently, to tie confidently to that same site.",
+   "input_tokens": 4862,
+   "output_tokens": 128,
+   "cost_usd": null,
+   "seconds": 120.9,
+   "utc": "2026-11-23T22:17:09Z"
+  }
+ ]
+}

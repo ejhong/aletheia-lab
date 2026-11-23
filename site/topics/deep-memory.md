@@ -52,13 +52,17 @@ That is the right answer to the question the record can answer, and the wrong qu
 
 Read more: [the hole in the ancient sky](../../questions/ancient-sky-hole/), where the sky can be wound back by hand.
 
+A second clock could not be read. A 2017 paper takes the animals carved on a pillar at Göbekli Tepe for constellations and the pillar for a record of the sky in 10,950 BCE, with odds of one in 5 million against coincidence. Those odds rest on the authors' own ranking of which carving looks like which constellation. We asked three vision models to rank the same pictures blind. None could match even the scorpion carving to the scorpion constellation, which was the check set in advance for trusting them, and they disagreed with one another. So the test gives no verdict. It does show that the paper's number is a measure of its authors' judgement: with the models' ranks in the same formula, one in 5 million becomes about one in two.
+
+Read more: [Göbekli Tepe's star map](../../questions/gobekli-star-map/), with the pictures the judges saw.
+
 ## What the studies add up to
 
-Three tests, two kinds of evidence, the same result: where a shared past should have left a physical trace that we could look for, the trace is not there. The DNA shows no travellers. The one star clock read so far shows the date of the people known to have set it.
+Three tests, two kinds of evidence, the same result: where a shared past should have left a physical trace that we could look for, the trace is not there. The DNA shows no travellers. The one star clock read so far shows the date of the people known to have set it. A second, the carved pillar at Göbekli Tepe, could not be read with the tool we tried.
 
 That is not the same as showing the resemblances are coincidence. All three tests have blind spots, set out below, and none of them touches the stories and images themselves.
 
-Waiting their turn: whether the bringers of civilisation in old stories came from the sea, whether flood stories cluster where land was drowned, whether basic words are shared across the oceans, whether germs and parasites tell a different story from the bones, and two more star clocks, a carved pillar at Göbekli Tepe and the orientations of ancient monuments.
+Waiting their turn: whether the bringers of civilisation in old stories came from the sea, whether flood stories cluster where land was drowned, whether basic words are shared across the oceans, whether germs and parasites tell a different story from the bones, and one more star clock, the orientations of ancient monuments.
 
 ## What this does not settle
 

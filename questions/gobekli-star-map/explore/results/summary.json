@@ -1,0 +1,774 @@
+{
+ "judges": {
+  "google": {
+   "scorpion_mean_rank": 10.8,
+   "task_a": {
+    "all8": {
+     "mean_rank_of_claimed": 7.0,
+     "chance_mean_rank": 6.5,
+     "claimed_sole_best_count": 1,
+     "among_12": {
+      "assignments": 19958400,
+      "as_good_or_better": 13726614,
+      "p": 0.6877612433862433
+     },
+     "among_pillar_8": {
+      "assignments": 40320,
+      "as_good_or_better": 12387,
+      "p": 0.3072172619047619
+     },
+     "per_figure": {
+      "A01": {
+       "claimed_mean_rank": 10.8,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 10
+      },
+      "A02": {
+       "claimed_mean_rank": 9.0,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 9
+      },
+      "A03": {
+       "claimed_mean_rank": 10.0,
+       "best": [
+        "S10"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 9
+      },
+      "A04": {
+       "claimed_mean_rank": 6.2,
+       "best": [
+        "S06"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 6
+      },
+      "A05": {
+       "claimed_mean_rank": 1.4,
+       "best": [
+        "S05"
+       ],
+       "claimed_is_sole_best": true,
+       "others_at_least_as_good": 0
+      },
+      "A06": {
+       "claimed_mean_rank": 8.2,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 8
+      },
+      "A07": {
+       "claimed_mean_rank": 5.8,
+       "best": [
+        "S01"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 4
+      },
+      "A08": {
+       "claimed_mean_rank": 4.6,
+       "best": [
+        "S09"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 4
+      }
+     },
+     "papers_formula": {
+      "P_plus_1": 1732500,
+      "no_repeats": 0.1736111111111111,
+      "repeats": 0.008058482563871741
+     }
+    },
+    "without_scorpion": {
+     "mean_rank_of_claimed": 6.257142857142857,
+     "chance_mean_rank": 6.0,
+     "claimed_sole_best_count": 1,
+     "among_11": {
+      "assignments": 1663200,
+      "as_good_or_better": 1001363,
+      "p": 0.6020701058201058
+     },
+     "among_pillar_7": {
+      "assignments": 5040,
+      "as_good_or_better": 1236,
+      "p": 0.24523809523809523
+     },
+     "per_figure": {
+      "A02": {
+       "claimed_mean_rank": 8.8,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 9
+      },
+      "A03": {
+       "claimed_mean_rank": 9.8,
+       "best": [
+        "S10"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 9
+      },
+      "A04": {
+       "claimed_mean_rank": 6.2,
+       "best": [
+        "S06"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 6
+      },
+      "A05": {
+       "claimed_mean_rank": 1.4,
+       "best": [
+        "S05"
+       ],
+       "claimed_is_sole_best": true,
+       "others_at_least_as_good": 0
+      },
+      "A06": {
+       "claimed_mean_rank": 8.2,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 8
+      },
+      "A07": {
+       "claimed_mean_rank": 4.8,
+       "best": [
+        "S06"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 3
+      },
+      "A08": {
+       "claimed_mean_rank": 4.6,
+       "best": [
+        "S09"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 4
+      }
+     }
+    }
+   },
+   "task_b": {
+    "all8": {
+     "mean_rank_of_claimed": 3.9749999999999996,
+     "chance_mean_rank": 4.5,
+     "claimed_sole_best_count": 0,
+     "orderings": {
+      "assignments": 40320,
+      "as_good_or_better": 7153,
+      "p": 0.17740575396825398
+     }
+    },
+    "without_scorpion": {
+     "mean_rank_of_claimed": 3.2,
+     "chance_mean_rank": 4.0,
+     "claimed_sole_best_count": 0,
+     "orderings": {
+      "assignments": 5040,
+      "as_good_or_better": 268,
+      "p": 0.05317460317460317
+     }
+    }
+   }
+  },
+  "openai": {
+   "scorpion_mean_rank": 6.4,
+   "task_a": {
+    "all8": {
+     "mean_rank_of_claimed": 7.55,
+     "chance_mean_rank": 6.5,
+     "claimed_sole_best_count": 0,
+     "among_12": {
+      "assignments": 19958400,
+      "as_good_or_better": 16821003,
+      "p": 0.8428031806156806
+     },
+     "among_pillar_8": {
+      "assignments": 40320,
+      "as_good_or_better": 27089,
+      "p": 0.6718501984126984
+     },
+     "per_figure": {
+      "A01": {
+       "claimed_mean_rank": 6.4,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 6
+      },
+      "A02": {
+       "claimed_mean_rank": 7.2,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 6
+      },
+      "A03": {
+       "claimed_mean_rank": 11.4,
+       "best": [
+        "S10"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 11
+      },
+      "A04": {
+       "claimed_mean_rank": 10.0,
+       "best": [
+        "S07"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 11
+      },
+      "A05": {
+       "claimed_mean_rank": 8.6,
+       "best": [
+        "S10"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 7
+      },
+      "A06": {
+       "claimed_mean_rank": 6.8,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 6
+      },
+      "A07": {
+       "claimed_mean_rank": 6.0,
+       "best": [
+        "S06"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 5
+      },
+      "A08": {
+       "claimed_mean_rank": 4.0,
+       "best": [
+        "S09"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 4
+      }
+     },
+     "papers_formula": {
+      "P_plus_1": 11854080,
+      "no_repeats": 1.187878787878788,
+      "repeats": 0.055137602880658436
+     }
+    },
+    "without_scorpion": {
+     "mean_rank_of_claimed": 7.2857142857142865,
+     "chance_mean_rank": 6.0,
+     "claimed_sole_best_count": 0,
+     "among_11": {
+      "assignments": 1663200,
+      "as_good_or_better": 1488239,
+      "p": 0.8948045935545935
+     },
+     "among_pillar_7": {
+      "assignments": 5040,
+      "as_good_or_better": 4186,
+      "p": 0.8305555555555556
+     },
+     "per_figure": {
+      "A02": {
+       "claimed_mean_rank": 7.2,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 6
+      },
+      "A03": {
+       "claimed_mean_rank": 10.6,
+       "best": [
+        "S10"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 10
+      },
+      "A04": {
+       "claimed_mean_rank": 9.2,
+       "best": [
+        "S07"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 10
+      },
+      "A05": {
+       "claimed_mean_rank": 8.2,
+       "best": [
+        "S10"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 7
+      },
+      "A06": {
+       "claimed_mean_rank": 6.6,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 6
+      },
+      "A07": {
+       "claimed_mean_rank": 5.2,
+       "best": [
+        "S06"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 5
+      },
+      "A08": {
+       "claimed_mean_rank": 4.0,
+       "best": [
+        "S09"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 4
+      }
+     }
+    }
+   },
+   "task_b": {
+    "all8": {
+     "mean_rank_of_claimed": 4.550000000000001,
+     "chance_mean_rank": 4.5,
+     "claimed_sole_best_count": 1,
+     "orderings": {
+      "assignments": 40320,
+      "as_good_or_better": 22376,
+      "p": 0.5549603174603175
+     }
+    },
+    "without_scorpion": {
+     "mean_rank_of_claimed": 4.0,
+     "chance_mean_rank": 4.0,
+     "claimed_sole_best_count": 1,
+     "orderings": {
+      "assignments": 5040,
+      "as_good_or_better": 2656,
+      "p": 0.526984126984127
+     }
+    }
+   }
+  },
+  "xai": {
+   "scorpion_mean_rank": 7.8,
+   "task_a": {
+    "all8": {
+     "mean_rank_of_claimed": 6.625,
+     "chance_mean_rank": 6.5,
+     "claimed_sole_best_count": 0,
+     "among_12": {
+      "assignments": 19958400,
+      "as_good_or_better": 11120634,
+      "p": 0.5571906565656566
+     },
+     "among_pillar_8": {
+      "assignments": 40320,
+      "as_good_or_better": 22527,
+      "p": 0.5587053571428572
+     },
+     "per_figure": {
+      "A01": {
+       "claimed_mean_rank": 7.8,
+       "best": [
+        "S05"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 6
+      },
+      "A02": {
+       "claimed_mean_rank": 7.6,
+       "best": [
+        "S05"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 10
+      },
+      "A03": {
+       "claimed_mean_rank": 7.2,
+       "best": [
+        "S04"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 7
+      },
+      "A04": {
+       "claimed_mean_rank": 8.6,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 8
+      },
+      "A05": {
+       "claimed_mean_rank": 3.6,
+       "best": [
+        "S10"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 1
+      },
+      "A06": {
+       "claimed_mean_rank": 5.4,
+       "best": [
+        "S03"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 3
+      },
+      "A07": {
+       "claimed_mean_rank": 4.2,
+       "best": [
+        "S05"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 3
+      },
+      "A08": {
+       "claimed_mean_rank": 8.6,
+       "best": [
+        "S07"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 9
+      }
+     },
+     "papers_formula": {
+      "P_plus_1": 1774080,
+      "no_repeats": 0.17777777777777778,
+      "repeats": 0.008251886145404664
+     }
+    },
+    "without_scorpion": {
+     "mean_rank_of_claimed": 6.114285714285714,
+     "chance_mean_rank": 6.0,
+     "claimed_sole_best_count": 0,
+     "among_11": {
+      "assignments": 1663200,
+      "as_good_or_better": 914823,
+      "p": 0.5500378787878788
+     },
+     "among_pillar_7": {
+      "assignments": 5040,
+      "as_good_or_better": 3092,
+      "p": 0.6134920634920635
+     },
+     "per_figure": {
+      "A02": {
+       "claimed_mean_rank": 7.0,
+       "best": [
+        "S05"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 9
+      },
+      "A03": {
+       "claimed_mean_rank": 6.4,
+       "best": [
+        "S04"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 6
+      },
+      "A04": {
+       "claimed_mean_rank": 8.6,
+       "best": [
+        "S11"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 8
+      },
+      "A05": {
+       "claimed_mean_rank": 3.4,
+       "best": [
+        "S10"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 1
+      },
+      "A06": {
+       "claimed_mean_rank": 5.2,
+       "best": [
+        "S03"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 3
+      },
+      "A07": {
+       "claimed_mean_rank": 4.2,
+       "best": [
+        "S05"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 3
+      },
+      "A08": {
+       "claimed_mean_rank": 8.0,
+       "best": [
+        "S07"
+       ],
+       "claimed_is_sole_best": false,
+       "others_at_least_as_good": 9
+      }
+     }
+    }
+   },
+   "task_b": {
+    "all8": {
+     "mean_rank_of_claimed": 4.425,
+     "chance_mean_rank": 4.5,
+     "claimed_sole_best_count": 1,
+     "orderings": {
+      "assignments": 40320,
+      "as_good_or_better": 17804,
+      "p": 0.4415674603174603
+     }
+    },
+    "without_scorpion": {
+     "mean_rank_of_claimed": 3.942857142857143,
+     "chance_mean_rank": 4.0,
+     "claimed_sole_best_count": 1,
+     "orderings": {
+      "assignments": 5040,
+      "as_good_or_better": 2257,
+      "p": 0.44781746031746034
+     }
+    }
+   }
+  }
+ },
+ "excluded": {},
+ "pooled": {
+  "judges": [
+   "google",
+   "openai",
+   "xai"
+  ],
+  "task_a": {
+   "all8": {
+    "mean_rank_of_claimed": 7.058333333333334,
+    "chance_mean_rank": 6.5,
+    "claimed_sole_best_count": 0,
+    "among_12": {
+     "assignments": 19958400,
+     "as_good_or_better": 15666465,
+     "p": 0.7849559583934584
+    },
+    "among_pillar_8": {
+     "assignments": 40320,
+     "as_good_or_better": 20962,
+     "p": 0.519890873015873
+    },
+    "per_figure": {
+     "A01": {
+      "claimed_mean_rank": 8.333333333333334,
+      "best": [
+       "S11"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 8
+     },
+     "A02": {
+      "claimed_mean_rank": 7.933333333333334,
+      "best": [
+       "S11"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 8
+     },
+     "A03": {
+      "claimed_mean_rank": 9.533333333333333,
+      "best": [
+       "S10"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 11
+     },
+     "A04": {
+      "claimed_mean_rank": 8.266666666666667,
+      "best": [
+       "S05"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 10
+     },
+     "A05": {
+      "claimed_mean_rank": 4.533333333333333,
+      "best": [
+       "S11"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 2
+     },
+     "A06": {
+      "claimed_mean_rank": 6.8,
+      "best": [
+       "S11"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 5
+     },
+     "A07": {
+      "claimed_mean_rank": 5.333333333333333,
+      "best": [
+       "S05"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 5
+     },
+     "A08": {
+      "claimed_mean_rank": 5.733333333333333,
+      "best": [
+       "S10"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 3
+     }
+    },
+    "papers_formula": {
+     "P_plus_1": 4618944,
+     "no_repeats": 0.46285714285714286,
+     "repeats": 0.021484375
+    }
+   },
+   "without_scorpion": {
+    "mean_rank_of_claimed": 6.552380952380951,
+    "chance_mean_rank": 6.0,
+    "claimed_sole_best_count": 0,
+    "among_11": {
+     "assignments": 1663200,
+     "as_good_or_better": 1296074,
+     "p": 0.7792652717652717
+    },
+    "among_pillar_7": {
+     "assignments": 5040,
+     "as_good_or_better": 3079,
+     "p": 0.6109126984126985
+    },
+    "per_figure": {
+     "A02": {
+      "claimed_mean_rank": 7.666666666666667,
+      "best": [
+       "S11"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 8
+     },
+     "A03": {
+      "claimed_mean_rank": 8.933333333333334,
+      "best": [
+       "S10"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 10
+     },
+     "A04": {
+      "claimed_mean_rank": 8.0,
+      "best": [
+       "S05",
+       "S11"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 10
+     },
+     "A05": {
+      "claimed_mean_rank": 4.333333333333333,
+      "best": [
+       "S10"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 3
+     },
+     "A06": {
+      "claimed_mean_rank": 6.666666666666667,
+      "best": [
+       "S11"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 5
+     },
+     "A07": {
+      "claimed_mean_rank": 4.733333333333333,
+      "best": [
+       "S05"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 4
+     },
+     "A08": {
+      "claimed_mean_rank": 5.533333333333334,
+      "best": [
+       "S10"
+      ],
+      "claimed_is_sole_best": false,
+      "others_at_least_as_good": 3
+     }
+    }
+   }
+  },
+  "task_b": {
+   "all8": {
+    "mean_rank_of_claimed": 4.316666666666666,
+    "chance_mean_rank": 4.5,
+    "claimed_sole_best_count": 1,
+    "orderings": {
+     "assignments": 40320,
+     "as_good_or_better": 14058,
+     "p": 0.34866071428571427
+    }
+   },
+   "without_scorpion": {
+    "mean_rank_of_claimed": 3.714285714285715,
+    "chance_mean_rank": 4.0,
+    "claimed_sole_best_count": 1,
+    "orderings": {
+     "assignments": 5040,
+     "as_good_or_better": 1182,
+     "p": 0.23452380952380952
+    }
+   }
+  },
+  "task_b_judges": [
+   "google",
+   "openai",
+   "xai"
+  ]
+ },
+ "labels": {
+  "reproduction": "blind judges do not reproduce the paper's ranking",
+  "pairing": "pairing not better than chance in this test"
+ },
+ "agreement_between_judges": {
+  "google vs openai": 0.514595915299892,
+  "google vs xai": 0.1926715193255747,
+  "openai vs xai": 0.1370555157129311
+ },
+ "paper": {
+  "P_plus_1": 2,
+  "no_repeats": 2.0041686708353376e-07,
+  "repeats": 9.302721574455114e-09,
+  "claimed_rank_1_count": 7
+ }
+}

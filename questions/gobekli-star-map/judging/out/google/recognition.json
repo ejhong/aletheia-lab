@@ -1,0 +1,50 @@
+{
+ "vendor": "google",
+ "model": "gemini-4-neon",
+ "calls": [
+  {
+   "call": "R1",
+   "prompt": "Here are eight line drawings. What do you think each one is a drawing of? Have you seen these drawings, or drawings like them, before, and if so where? Answer in a few sentences.",
+   "images": [
+    "figures/A01.png",
+    "figures/A02.png",
+    "figures/A03.png",
+    "figures/A04.png",
+    "figures/A05.png",
+    "figures/A06.png",
+    "figures/A07.png",
+    "figures/A08.png"
+   ],
+   "raw": "These abstract, piecewise-linear drawings look like simplified representations of everyday objects, animals, or figures: Drawing 1 resembles an arm and hand (or a bird's leg), Drawing 2 looks like two triangles joined by an angled line (like a geometric bridge or flags), Drawing 3 looks like a kite or a frying pan, and Drawing 4 resembles a four-legged animal such as a dog or horse. Drawing 5 looks like a crane or a scorpion, Drawing 6 resembles a tilted watering can or snail, Drawing 7 looks like a running stick figure or an insect, and Drawing 8 looks like two stick figures standing side by side (or a swing set). \n\nI haven't seen these exact drawings before, though their style\u2014thick, straight-segmented black lines on a white background\u2014closely resembles simplified vector sketches from datasets like Google's *Quick, Draw!* (which uses polyline simplification), schematic star-chart constellations, or abstract drawings used in cognitive science and visual-communication experiments.",
+   "input_tokens": 8835,
+   "output_tokens": 1169,
+   "cost_usd": 0.04404,
+   "seconds": 16.1,
+   "utc": "2026-11-23T21:11:43Z"
+  },
+  {
+   "call": "R2",
+   "prompt": "Here are twelve photographs of shapes carved in stone. Do you recognise where these carvings are from? Do you know of any published claim about what they represent? Answer in a few sentences.",
+   "images": [
+    "symbols_512/S01.png",
+    "symbols_512/S02.png",
+    "symbols_512/S03.png",
+    "symbols_512/S04.png",
+    "symbols_512/S05.png",
+    "symbols_512/S06.png",
+    "symbols_512/S07.png",
+    "symbols_512/S08.png",
+    "symbols_512/S09.png",
+    "symbols_512/S10.png",
+    "symbols_512/S11.png",
+    "symbols_512/S12.png"
+   ],
+   "raw": "These stone reliefs are from **G\u00f6bekli Tepe**, a Pre-Pottery Neolithic archaeological site in southeastern Turkey, and include carvings from its T-shaped megalithic pillars (such as the famous Pillar 43, or \"Vulture Stone\"). \n\nIn a widely publicized\u2014and controversial\u20142017 paper, researchers Martin Sweatman and Dimitrios Tsikritsis claimed that these animal carvings represent ancient constellations (precursors to the modern zodiac) used as a date stamp to record a catastrophic comet impact around 10,950 BC (the Younger Dryas impact event). However, mainstream archaeologists excavating the site reject this archaeoastronomical interpretation, arguing instead that the reliefs depict local wildlife, mythological narratives, or totemic and symbolic imagery.",
+   "input_tokens": 13214,
+   "output_tokens": 708,
+   "cost_usd": 0.050262,
+   "seconds": 11.27,
+   "utc": "2026-11-23T21:11:55Z"
+  }
+ ]
+}

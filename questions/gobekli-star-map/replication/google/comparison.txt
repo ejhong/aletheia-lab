@@ -1,0 +1,20 @@
+judges_included                                  ours []                           theirs []                           same
+judges_excluded (vendors)                        ours ['google', 'openai', 'xai']  theirs ['google', 'openai', 'xai']  same
+without_scorpion.claimed_sole_best_count         ours None                         theirs None                         same
+without_scorpion.mean_rank_of_claimed            ours None                         theirs None                         same
+without_scorpion.p_among_pillar_7                ours None                         theirs None                         same
+without_scorpion.p_among_11                      ours None                         theirs None                         same
+all8.claimed_sole_best_count                     ours None                         theirs None                         same
+all8.mean_rank_of_claimed                        ours None                         theirs None                         same
+all8.p_among_pillar_8                            ours None                         theirs None                         same
+all8.p_among_12                                  ours None                         theirs None                         same
+all8.P_plus_1                                    ours None                         theirs None                         same
+task_b.without_scorpion.claimed_sole_best_count  ours None                         theirs None                         same
+task_b.without_scorpion.p_orderings              ours None                         theirs None                         same
+task_b.all8.claimed_sole_best_count              ours None                         theirs None                         same
+task_b.all8.p_orderings                          ours None                         theirs None                         same
+labels.reproduction                              ours 'not testable'               theirs 'not testable'               same
+labels.pairing                                   ours 'not testable'               theirs 'not testable'               same
+exclusion reasons, ours: {'google': 'competence check failed: scorpion mean rank 10.80 for the scorpion figure', 'openai': 'competence check failed: scorpion mean rank 6.40 for the scorpion figure', 'xai': 'competence check failed: scorpion mean rank 7.80 for the scorpion figure'}
+exclusion reasons, theirs: {'google': 'failed competence check (A01/S01 mean rank 10.800 > 2.0)', 'openai': 'failed competence check (A01/S01 mean rank 6.400 > 2.0)', 'xai': 'failed competence check (A01/S01 mean rank 7.800 > 2.0)'}
+0 of 17 keys differ

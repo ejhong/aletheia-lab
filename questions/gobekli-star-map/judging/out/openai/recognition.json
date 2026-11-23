@@ -1,0 +1,50 @@
+{
+ "vendor": "openai",
+ "model": "gpt-6.2-astra",
+ "calls": [
+  {
+   "call": "R1",
+   "prompt": "Here are eight line drawings. What do you think each one is a drawing of? Have you seen these drawings, or drawings like them, before, and if so where? Answer in a few sentences.",
+   "images": [
+    "figures/A01.png",
+    "figures/A02.png",
+    "figures/A03.png",
+    "figures/A04.png",
+    "figures/A05.png",
+    "figures/A06.png",
+    "figures/A07.png",
+    "figures/A08.png"
+   ],
+   "raw": "Drawing 1 looks like a scorpion with a curled tail; 2 like two little fish joined by a long, bent line; and 3 like a kite or a diamond-shaped dolphin. I see 4 as a long-necked bird with a pointed beak, 5 as a crouching animal with an arched back, and 6 as a shield with a trailing strap. Drawing 7 looks like a stick figure with raised arms, while 8 looks like two people standing arm in arm. They remind me of the connect-the-stars figures on constellation charts\u2014especially 2 (Pisces), 3 (Delphinus), and 8 (Gemini)\u2014though I don\u2019t recognize the exact drawings.",
+   "input_tokens": 2534,
+   "output_tokens": 353,
+   "cost_usd": 0.034392,
+   "seconds": 15.69,
+   "utc": "2026-11-23T21:11:21Z"
+  },
+  {
+   "call": "R2",
+   "prompt": "Here are twelve photographs of shapes carved in stone. Do you recognise where these carvings are from? Do you know of any published claim about what they represent? Answer in a few sentences.",
+   "images": [
+    "symbols_512/S01.png",
+    "symbols_512/S02.png",
+    "symbols_512/S03.png",
+    "symbols_512/S04.png",
+    "symbols_512/S05.png",
+    "symbols_512/S06.png",
+    "symbols_512/S07.png",
+    "symbols_512/S08.png",
+    "symbols_512/S09.png",
+    "symbols_512/S10.png",
+    "symbols_512/S11.png",
+    "symbols_512/S12.png"
+   ],
+   "raw": "These appear to be animal reliefs from the Neolithic stone pillars at G\u00f6bekli Tepe, near \u015eanl\u0131urfa in southeastern T\u00fcrkiye. In \u201cDecoding G\u00f6bekli Tepe with Archaeoastronomy\u201d (2017), Martin Sweatman and Dimitrios Tsikritsis proposed that the animals symbolize constellations and that their arrangement on Pillar 43, the \u201cVulture Stone,\u201d records a comet impact around 10,900 BCE. This is a disputed interpretation, not an archaeological consensus.",
+   "input_tokens": 3788,
+   "output_tokens": 109,
+   "cost_usd": 0.034664,
+   "seconds": 5.71,
+   "utc": "2026-11-23T21:11:27Z"
+  }
+ ]
+}

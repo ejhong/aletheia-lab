@@ -1,0 +1,44 @@
+{
+ "google": {
+  "model": "gemini-4-neon",
+  "trials": 80,
+  "valid": 80,
+  "invalid": 0,
+  "first_trial_utc": "2026-11-23T21:04:55Z",
+  "last_trial_utc": "2026-11-23T21:10:52Z",
+  "input_tokens": 972560,
+  "output_tokens": 100491,
+  "cost_usd": 4.425045,
+  "recognition_input_tokens": 22049,
+  "recognition_output_tokens": 1877,
+  "recognition_cost_usd": 0.094302
+ },
+ "openai": {
+  "model": "gpt-6.2-astra",
+  "trials": 80,
+  "valid": 80,
+  "invalid": 0,
+  "first_trial_utc": "2026-11-23T21:04:40Z",
+  "last_trial_utc": "2026-11-23T21:08:35Z",
+  "input_tokens": 280880,
+  "output_tokens": 18655,
+  "cost_usd": 2.99324,
+  "recognition_input_tokens": 6322,
+  "recognition_output_tokens": 462,
+  "recognition_cost_usd": 0.069056
+ },
+ "xai": {
+  "model": "grok-4.7",
+  "trials": 80,
+  "valid": 80,
+  "invalid": 0,
+  "first_trial_utc": "2026-11-23T21:06:24Z",
+  "last_trial_utc": "2026-11-23T22:12:06Z",
+  "input_tokens": 368240,
+  "output_tokens": 2633,
+  "cost_usd": null,
+  "recognition_input_tokens": 8532,
+  "recognition_output_tokens": 287,
+  "recognition_cost_usd": null
+ }
+}

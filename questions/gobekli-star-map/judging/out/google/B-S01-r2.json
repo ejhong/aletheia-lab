@@ -1,0 +1,45 @@
+{
+ "trial": {
+  "id": "B-S01-r2",
+  "task": "B",
+  "target": "S01",
+  "letters": {
+   "A": "A05",
+   "B": "A06",
+   "C": "A07",
+   "D": "A01",
+   "E": "A03",
+   "F": "A02",
+   "G": "A08",
+   "H": "A04"
+  }
+ },
+ "vendor": "google",
+ "model": "gemini-4-neon",
+ "prompt": "You will see one photograph and eight line drawings labelled A to H. The photograph shows a shape carved in stone. Rank the eight line drawings by how closely each resembles the overall shape of the carved figure, from most similar to least similar. Consider shape only; a drawing may match at any size. Do not explain. Reply with JSON only: {\"ranking\": [\"<letter>\", ...]} listing all eight letters exactly once.",
+ "raw": "```json\n{\"ranking\": [\"C\", \"A\", \"G\", \"H\", \"B\", \"D\", \"E\", \"F\"]}\n```",
+ "ranking": [
+  "A07",
+  "A05",
+  "A08",
+  "A04",
+  "A06",
+  "A01",
+  "A03",
+  "A02"
+ ],
+ "valid": true,
+ "attempts": [
+  {
+   "raw": "```json\n{\"ranking\": [\"C\", \"A\", \"G\", \"H\", \"B\", \"D\", \"E\", \"F\"]}\n```",
+   "input_tokens": 9972,
+   "output_tokens": 545,
+   "valid": true
+  }
+ ],
+ "input_tokens": 9972,
+ "output_tokens": 545,
+ "cost_usd": 0.038091,
+ "seconds": 10.23,
+ "utc": "2026-11-23T21:08:08Z"
+}

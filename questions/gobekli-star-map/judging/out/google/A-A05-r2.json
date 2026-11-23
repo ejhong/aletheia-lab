@@ -1,0 +1,53 @@
+{
+ "trial": {
+  "id": "A-A05-r2",
+  "task": "A",
+  "target": "A05",
+  "letters": {
+   "A": "S03",
+   "B": "S07",
+   "C": "S04",
+   "D": "S06",
+   "E": "S05",
+   "F": "S09",
+   "G": "S11",
+   "H": "S08",
+   "I": "S12",
+   "J": "S02",
+   "K": "S01",
+   "L": "S10"
+  }
+ },
+ "vendor": "google",
+ "model": "gemini-4-neon",
+ "prompt": "You will see one line drawing and twelve photographs labelled A to L. Each photograph shows a shape carved in stone. Rank the twelve photographs by how closely the overall shape of the carved figure resembles the line drawing, from most similar to least similar. Consider shape only; the drawing may match at any size. Do not explain. Reply with JSON only: {\"ranking\": [\"<letter>\", ...]} listing all twelve letters exactly once.",
+ "raw": "```json\n{\"ranking\": [\"E\", \"G\", \"D\", \"K\", \"C\", \"A\", \"F\", \"I\", \"L\", \"H\", \"J\", \"B\"]}\n```",
+ "ranking": [
+  "S05",
+  "S11",
+  "S06",
+  "S01",
+  "S04",
+  "S03",
+  "S09",
+  "S12",
+  "S10",
+  "S08",
+  "S02",
+  "S07"
+ ],
+ "valid": true,
+ "attempts": [
+  {
+   "raw": "```json\n{\"ranking\": [\"E\", \"G\", \"D\", \"K\", \"C\", \"A\", \"F\", \"I\", \"L\", \"H\", \"J\", \"B\"]}\n```",
+   "input_tokens": 14342,
+   "output_tokens": 1139,
+   "valid": true
+  }
+ ],
+ "input_tokens": 14342,
+ "output_tokens": 1139,
+ "cost_usd": 0.060111,
+ "seconds": 15.89,
+ "utc": "2026-11-23T21:06:38Z"
+}
