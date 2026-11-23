@@ -31,6 +31,7 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#40](https://github.com/ejhong/aletheia-lab/issues/40) | Did populations crash at the Younger Dryas? | data | `younger-dryas-crash` |
 | [#41](https://github.com/ejhong/aletheia-lab/issues/41) | Strangers in the ancient-DNA record | data | `strangers` |
 | [#43](https://github.com/ejhong/aletheia-lab/issues/43) | Was there an exceptional fire 12,800 years ago? | data | `ice-core-fire` |
+| [#60](https://github.com/ejhong/aletheia-lab/issues/60) | Does ammonium rise after every abrupt cooling? | data | `cooling-ammonium` |
 | [#44](https://github.com/ejhong/aletheia-lab/issues/44) | Do flood myths cluster where land drowned? | data | `flood-myths` |
 | [#45](https://github.com/ejhong/aletheia-lab/issues/45) | Germs and parasites as passports | audit | `pathogen-passports` |
 | [#46](https://github.com/ejhong/aletheia-lab/issues/46) | Blind-judging the remote-viewing archive | model | `remote-viewing` |
