@@ -1,0 +1,62 @@
+[
+ {
+  "day": "2011-04-22",
+  "event": "Earth Day, 2011",
+  "published": 0.282,
+  "ours_theoretical": 0.29,
+  "ours_own_window_variances": 0.175,
+  "eggs": 69,
+  "eggs_seen": 71,
+  "seconds": 86400
+ },
+ {
+  "day": "2011-09-21",
+  "event": "Internat Day Peace",
+  "published": 3.136,
+  "ours_theoretical": 3.241,
+  "ours_own_window_variances": 3.112,
+  "eggs": 65,
+  "eggs_seen": 66,
+  "seconds": 86400
+ },
+ {
+  "day": "2013-03-08",
+  "event": "Internat Women's Day",
+  "published": 0.943,
+  "ours_theoretical": 0.743,
+  "ours_own_window_variances": 0.708,
+  "eggs": 53,
+  "eggs_seen": 55,
+  "seconds": 86400
+ },
+ {
+  "day": "2014-02-14",
+  "event": "V-day and Toning 2014",
+  "published": -0.579,
+  "ours_theoretical": -0.28,
+  "ours_own_window_variances": -0.267,
+  "eggs": 44,
+  "eggs_seen": 46,
+  "seconds": 86400
+ },
+ {
+  "day": "2015-12-03",
+  "event": "Arbaeen, Hussein",
+  "published": -0.117,
+  "ours_theoretical": -0.491,
+  "ours_own_window_variances": -0.629,
+  "eggs": 39,
+  "eggs_seen": 39,
+  "seconds": 86400
+ },
+ {
+  "day": "2015-12-12",
+  "event": "Climate Agreement",
+  "published": 1.013,
+  "ours_theoretical": 1.013,
+  "ours_own_window_variances": 0.964,
+  "eggs": 37,
+  "eggs_seen": 37,
+  "seconds": 86400
+ }
+]

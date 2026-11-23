@@ -1,0 +1,8 @@
+{
+ "vendor": "google",
+ "model": "gemini-4-neon",
+ "utc": "2026-11-23T17:08:19.643935+00:00",
+ "input_tokens": 3892,
+ "output_tokens": 39633,
+ "cost_usd_list_price": 0.6062
+}
