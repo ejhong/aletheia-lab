@@ -1,0 +1,24 @@
+events: ours 396, theirs 396, shared 396
+  event_z: 395 compared, 0 differ by more than 0.01 or in being evaluable, largest difference 0
+  control_z: 396 compared, 0 differ by more than 0.01 or in being evaluable, largest difference 0
+  event_df: 395 compared, 0 differ by more than 0.01 or in being evaluable, largest difference 0
+  control_df: 396 compared, 0 differ by more than 0.01 or in being evaluable, largest difference 0
+  event_eggs: 396 compared, 0 differ by more than 0.01 or in being evaluable, largest difference 0
+  control_eggs: 396 compared, 0 differ by more than 0.01 or in being evaluable, largest difference 0
+events: ours n 395 z 6.0813417813680894; theirs n 395 z 6.081341781368089 -> n same, z same
+controls: ours n 396 z -0.42233843944786725 sd 0.9799970727334911; theirs n 396 z -0.42233843944786725 sd 0.9799970727334911 -> n same, z same, sd same
+pairs n: ours 395 theirs 395 -> same
+pairs events z: ours 6.0813417813680894 theirs 6.081341781368089 -> same
+pairs controls z: ours -0.4482759688834929 theirs -0.44827596888349314 -> same
+pairs controls sd: ours 0.9808809989972885 theirs 0.9808809989972885 -> same
+pairs mean difference: ours 0.3285407242714539 theirs 0.3285407242714539 -> same
+pairs sign-flip p: ours 4.9999750001249995e-06 theirs 4.9999750001249995e-06 -> same
+reproduction n: ours 395 theirs 395 -> same
+reproduction r: ours 0.9587869818621763 theirs 0.958786981862176 -> same
+reproduction median_abs_difference: ours 0.10586620292517934 theirs 0.10586620292517934 -> same
+reproduction combined_ours: ours 6.081341781368089 theirs 6.081341781368089 -> same
+reproduction combined_published: ours 6.605614921882937 theirs 6.605614921882937 -> same
+verdict reproduction: ours 'reproduces closely' theirs 'reproduces closely' -> same
+verdict events: ours 'departure' theirs 'departure' -> same
+verdict controls: ours 'no calibration failure detected' theirs 'no calibration failure detected' -> same
+verdict overall: ours 'the excess is in the event windows' theirs 'the excess is in the event windows' -> same

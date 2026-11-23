@@ -41,3 +41,22 @@ Dated entries, newest last: what was tried, what happened, what next.
 - All 868 day files present; hashes in `sources/files.sha256`. 17 unit tests pass.
 - No event or control window has been scored. Next: lock.
 
+## 2026-11-23: locked run, replication, write-up (Claude Fable 5.2)
+
+- **Lock:** 2026-11-23T20:33:03Z, commit `e6cf1f2`. Results committed after it.
+- **Locked run:** 395 events combine to +6.08 (published, same events: 6.61). Controls −0.42. Paired difference
+  +0.33, p = 5 × 10⁻⁶. Labels: reproduces closely (both standardisings); departure; no calibration failure
+  detected; the excess is in the event windows. One event (469) not evaluable: one device with enough data.
+- The program parsed day files one at a time, about ten a minute. After half an hour I ran a helper that filled
+  the same cache in parallel with the program's own reader, writing under temporary names. No score depends on
+  how the cache was filled; the replications, which have their own readers, agree.
+- **Replication:** OpenAI's and Google's programs both ran first time and match every window score to 0.000001,
+  with the same degrees of freedom and device counts, combined scores and labels. I saw one line of OpenAI's run
+  log (its agreement measures) before our own run finished.
+- A detail found while writing up: the registry page's note about the live display from June 2005 sits inside an
+  HTML comment and is not shown on the page.
+- Spent $3.37 of $10.
+- Not done: a placebo calendar; the 104 events with other recipes; reading the project's technical papers. An
+  idea for a follow-up, not run: score each event's window shifted by a few hours either way. A window chosen
+  with sight of the data should lose its excess when moved; an effect tied to the event should fade more slowly.
+
