@@ -56,6 +56,20 @@ and the threshold is recomputed for the larger family. The fitted control weight
 (these people were not in the fit). Any original hit that falls below the recomputed threshold is reported. New
 hits get the same robustness checks and the Amendment 1 test. Computed by `analysis/amend.py`.
 
+### Amendment 2, revised the same day: rerun the whole scan with those people included
+
+The first version of this amendment kept the control weights from the locked run. That was wrong too: the protocol
+fits the controls "over everyone elsewhere with neighbours", which includes these 219 people. The independent
+replication, which followed the protocol, got slightly different weights and two more borderline hits for that
+reason. So the whole scan is rerun with neighbours for the "other" type, using the locked `scan.py` unchanged on
+`analysis/people_amended.tsv` (the locked list plus those neighbour pools). Output goes to `results/corrected/`.
+This run is the protocol as written; the locked run in `results/` is kept as it was. Amendment 1's test and the
+centre checks are then recomputed on the corrected run.
+
+One smaller departure of our code from the protocol is left as it is and reported: for the American-side
+statistics our code uses the SNPs where all four foreign references have data, where the protocol gives each
+statistic its own mask.
+
 ## Completion, not an amendment (2026-11-23): robustness of the centre statistics
 
 The protocol says a centre statistic counts only if it is robust by the two rules (transversions; second
