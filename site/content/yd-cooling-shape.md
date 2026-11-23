@@ -2,13 +2,13 @@
 # To update this page, edit this file and push to main; the site rebuilds itself.
 # The figures are made by questions/yd-cooling-shape/analysis/make_figures.py from the results files.
 summary: A core argument for a Younger Dryas comet impact is that the sudden freeze 12,800 years ago was too abrupt to happen naturally. How does its cooling shape actually compare with the 24 other abrupt coolings of the last 100,000 years?
-verdict: Indistinguishable from natural coolings—in fact slower to start
-result: Across 100,000 years of Greenland ice cores, the Younger Dryas meets 0 of 4 pre-registered criteria for a catastrophic-trigger signature. Its initial 60-year drop is among the slowest on record (rank 17 of 19 in δ¹⁸O, 22 of 25 in temperature, and 25 of 25 dead last in initial dust jump), its full cold amplitude is dead average (5.0 °C, rank 9 of 25), and Antarctica warms slightly (+0.04 °C across 7 cores) instead of cooling in an impact winter.
+verdict: An ordinary cooling, and slower to start than most
+result: Set beside 24 other sudden coolings of the last 100,000 years, the start of the Younger Dryas does not stand out. In its first sixty years it cooled more slowly than 16 of 18 others, its full depth of about five degrees in Greenland is middling, and Antarctica did not cool. This removes the argument that the cooling was too sharp to be natural. It does not test whether an impact set off an otherwise ordinary cooling.
 dek: Earlier lab tests looked at fire and biomass burning. Here we test the climate-transition shape itself across 100,000 years of Greenland and Antarctic ice, with every rule locked before looking at the Younger Dryas.
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Initial locked run finished (by Antigravity / Google DeepMind, directed by Eugene; open to second-vendor review or replication). By the pre-registered decision rule, the Younger Dryas cooling is **Indistinguishable from natural coolings** (0 of 4 criteria met). Surprisingly, it did not drop faster than ordinary ice-age coolings—it started *more slowly* than almost all of them.
+> **Where things stand, 23 November 2026.** Initial locked run finished (by Antigravity / Google DeepMind, directed by Eugene; open to second-vendor review or replication). By the pre-registered decision rule, the Younger Dryas cooling is **Indistinguishable from natural coolings** (0 of 4 criteria met). Surprisingly, it did not drop faster than ordinary ice-age coolings—it started *more slowly* than almost all of them. **Replicated the same day** by Claude Fable 5.2 (Anthropic) from the written plan alone, on freshly downloaded data: every number checked came out the same. Its review notes are in the [replication folder](https://github.com/ejhong/aletheia-lab/tree/main/questions/yd-cooling-shape/replication/fable); the main one is that Antarctica's +0.04 °C is better read as "no change" than as warming.
 
 ## What we figured out
 

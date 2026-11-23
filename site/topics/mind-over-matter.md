@@ -3,14 +3,24 @@ title: Mind over matter
 summary: Can minds affect the physical world, or know things at a distance? The claims rest on long-running experiments with public data, which can be tested afresh.
 questions: 47, 74, 46
 order: 4
+image: mind-over-matter
+image_alt: An engraving of a globe dotted with tiny lanterns joined by threads, with a coin spinning in the air above it.
 updated: 2026-11-23
 ---
+
+{{figure: topic-mind-over-matter/tiles}}
 
 ## The idea
 
 A few long-running research programmes claim that minds do things physics has no place for: that random-number generators stray from chance when millions of people share an emotion, or that trained "remote viewers" can describe places they have never seen. The usual objection is not that the numbers are faked. It is that the experimenters had too much freedom over which events, which trials and which analysis to count.
 
 That objection can be met. Where a programme's raw data are public, the claim can be tested on cases its authors never chose, with the rules fixed in advance and the programme's own arithmetic.
+
+## The scorecard
+
+{{figure: topic-mind-over-matter/scorecard}}
+
+{{figure: global-consciousness/cumulative}}
 
 ## What the studies add up to
 
