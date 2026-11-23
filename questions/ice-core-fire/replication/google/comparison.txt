@@ -1,0 +1,53 @@
+N10: windows ours 323, theirs 323, shared 323; E 323/323 agree; H 323/323 agree; Z 323/323 agree; mean 323/323 agree; E_age 323/323 agree; H_age 323/323 agree; Z_age 323/323 agree
+E10: windows ours 319, theirs 319, shared 319; E 319/319 agree; H 319/319 agree; Z 319/319 agree; mean 319/319 agree; E_age 319/319 agree; H_age 319/319 agree; Z_age 319/319 agree
+N20: windows ours 131, theirs 131, shared 131; E 131/131 agree; H 131/131 agree; Z 131/131 agree; mean 131/131 agree; E_age 131/131 agree; H_age 131/131 agree; Z_age 131/131 agree
+E20: windows ours 131, theirs 131, shared 131; E 131/131 agree; H 131/131 agree; Z 131/131 agree; mean 131/131 agree; E_age 131/131 agree; H_age 131/131 agree; Z_age 131/131 agree
+G20: windows ours 132, theirs 132, shared 132; E 132/132 agree; H 132/132 agree; Z 132/132 agree; mean 132/132 agree; E_age 132/132 agree; H_age 132/132 agree; Z_age 132/132 agree
+N60: windows ours 323, theirs 323, shared 323; E 323/323 agree; H 323/323 agree; Z 0/0 agree; mean 323/323 agree; E_age 323/323 agree; H_age 323/323 agree; Z_age 0/0 agree
+E60: windows ours 322, theirs 322, shared 322; E 319/322 agree (worst 0.067); H 322/322 agree; Z 0/0 agree; mean 322/322 agree; E_age 322/322 agree; H_age 322/322 agree; Z_age 0/0 agree
+G60: windows ours 323, theirs 323, shared 323; E 320/323 agree (worst 0.0045); H 323/323 agree; Z 0/0 agree; mean 323/323 agree; E_age 323/323 agree; H_age 323/323 agree; Z_age 0/0 agree
+N3: windows ours 164, theirs 164, shared 164; E 164/164 agree; H 164/164 agree; Z 164/164 agree; mean 164/164 agree; E_age 164/164 agree; H_age 164/164 agree; Z_age 164/164 agree
+N1: windows ours 31, theirs 31, shared 31; E 31/31 agree; H 31/31 agree; Z 31/31 agree; mean 31/31 agree; E_age 31/31 agree; H_age 31/31 agree; Z_age 31/31 agree
+G10: windows ours 15, theirs 15, shared 15; E 15/15 agree; H 15/15 agree; Z 15/15 agree; mean 15/15 agree; E_age 15/15 agree; H_age 15/15 agree; Z_age 15/15 agree
+E10h: windows ours 338, theirs 338, shared 338; E 338/338 agree; H 338/338 agree; Z 338/338 agree; mean 338/338 agree; E_age 338/338 agree; H_age 338/338 agree; Z_age 338/338 agree
+G20h: windows ours 165, theirs 165, shared 165; E 165/165 agree; H 165/165 agree; Z 165/165 agree; mean 165/165 agree; E_age 165/165 agree; H_age 165/165 agree; Z_age 165/165 agree
+G60h: windows ours 365, theirs 365, shared 365; E 362/365 agree (worst 0.0045); H 365/365 agree; Z 0/0 agree; mean 365/365 agree; E_age 365/365 agree; H_age 365/365 agree; Z_age 0/0 agree
+verdict: ours 'unusual' theirs 'unusual'
+  E N10: rank ours 18/323, theirs 18/323
+  E E10: rank ours 17/319, theirs 17/319
+  E N20: rank ours 4/131, theirs 4/131
+  E E20: rank ours 3/131, theirs 3/131
+  E G20: rank ours 3/132, theirs 3/132
+  E N60: rank ours 7/323, theirs 7/323
+  E E60: rank ours 5/322, theirs 5/322
+  E G60: rank ours 4/323, theirs 4/323
+  E N3: rank ours 19/164, theirs 19/164
+  E N1: rank ours 10/31, theirs 10/31
+  E G10: rank ours 3/15, theirs 3/15
+  E E10h: rank ours 18/338, theirs 18/338
+  E G20h: rank ours 5/165, theirs 5/165
+  E G60h: rank ours 4/365, theirs 4/365
+  H N10: rank ours 11/323, theirs 11/323
+  H E10: rank ours 10/319, theirs 10/319
+  H N20: rank ours 1/131, theirs 1/131
+  H E20: rank ours 2/131, theirs 2/131
+  H G20: rank ours 2/132, theirs 2/132
+  H N60: rank ours 1/323, theirs 1/323
+  H E60: rank ours 3/322, theirs 3/322
+  H G60: rank ours 2/323, theirs 2/323
+  H N3: rank ours 17/164, theirs 17/164
+  H N1: rank ours 11/31, theirs 11/31
+  H G10: rank ours 2/15, theirs 2/15
+  H E10h: rank ours 10/338, theirs 10/338
+  H G20h: rank ours 2/165, theirs 2/165
+  H G60h: rank ours 2/365, theirs 2/365
+  Z N10: rank ours 254/323, theirs 254/323
+  Z E10: rank ours 113/319, theirs 113/319
+  Z N20: rank ours 102/131, theirs 102/131
+  Z E20: rank ours 49/131, theirs 49/131
+  Z G20: rank ours 93/132, theirs 93/132
+  Z N3: rank ours 154/164, theirs 154/164
+  Z N1: rank ours 30/31, theirs 30/31
+  Z G10: rank ours 8/15, theirs 8/15
+  Z E10h: rank ours 119/338, theirs 119/338
+  Z G20h: rank ours 116/165, theirs 116/165

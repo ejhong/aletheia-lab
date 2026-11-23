@@ -809,3 +809,13 @@ details.more > summary:focus-visible { outline: 2px solid var(--copper); outline
 .more-body { padding: .35rem 1.1rem 1rem; }
 .more-body > :first-child { margin-top: .9rem; }
 .more-body .table-wrap { margin-inline: 0; }
+.chart .c-bar { fill: var(--faint); opacity: .5; }
+.chart .c-bar.is-on { fill: var(--copper); opacity: 1; }
+.chart .c-mark:hover .c-bar, .chart .c-mark:focus-visible .c-bar { fill: var(--ink); opacity: 1; }
+.chart .c-band { fill: var(--copper); opacity: .09; }
+.chart .c-step { fill: var(--copper); opacity: .78; stroke: none; }
+.chart .c-onset { stroke: var(--ink); stroke-width: 1.5; }
+.chart .c-tickmark { stroke: var(--faint); stroke-width: 1; opacity: .38; }
+.chart .c-line5 { stroke: var(--ink); stroke-width: 1.5; }
+.fig-legend .k-tick { stroke: var(--faint); stroke-width: 1.5; }
+.fig-legend .k-line5 { stroke: var(--ink); stroke-width: 1.5; }

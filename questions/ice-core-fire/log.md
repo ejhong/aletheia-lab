@@ -16,3 +16,16 @@
 - **Review.** Two rounds, two vendors (`review/README.md`). The first design was rebuilt.
 - **Decoy run.** Works; verdict for the decoy window "not met". Made-up pulses: a one-year pulse of about
   500–1,000 µg/kg·yr is needed to reach the top 1% of windows in the 10-year series.
+
+## 2026-11-23: locked run, replication, write-up (Claude Fable 5.2)
+
+- **Lock:** 2026-11-23T07:50:14Z, commit `f9f6e9f`. Results committed after it.
+- **Locked run:** verdict "unusual". The 20-year and 60-year tiers pass at 5% in all three cores (ranks 3 to 7 of
+  131 to 323); none passes at 1%. Fine series ordinary.
+- **Replication:** OpenAI and Google programs both ran first time and match every window, rank and the verdict.
+- **Exploratory, after the result** (`explore/after.py`): the high starts 30 to 40 years after the onset and
+  lasts about a century; ammonium is low at the onset itself; late-glacial ice holds several highs of similar
+  size.
+- **No amendments.**
+- **Spent:** $2.74 of $25.
+- **Not done:** reading Wolbach et al. 2018 in the original (closed access). Filing with Aletheia.
