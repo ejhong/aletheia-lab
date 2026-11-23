@@ -10,3 +10,7 @@ These statements use only the abstract part of the FormalizedFormalLogic "Founda
 - `∀ (x : A), P x` is universal quantification, `∃`, `∧`, `→` are the usual connectives of the meta-language. A statement that begins `∀ (Fm S₀ S : Type) […] (𝓑 : S₀) (𝓢 : S) […] (K F : Fm → Fm), …` holds for every choice of sentence type, connectives, pair of systems and functions `K`, `F`.
 - Arguments in square brackets are hypotheses or structure supplied to the statement.
 - A line beginning `variable` declares the types and structure that the definitions after it take as implicit parameters.
+- `𝓑 ⪯ 𝓢`: every sentence provable in `𝓑` is provable in `𝓢`.
+- `¬ 𝓢 ⊢ φ`: the system `𝓢` does not prove `φ`. `Entailment.Consistent 𝓢`: `𝓢` does not prove every sentence.
+- Two statements are about first-order arithmetic. `ArithmeticSentence`: a closed formula of first-order arithmetic. `ArithmeticTheory`: a set of arithmetic sentences used as axioms; `T ⊢ σ` means σ is derivable from T in classical first-order logic. `𝗣𝗔`: Peano arithmetic. In those statements `K` and `F` are arbitrary functions from arithmetic sentences to arithmetic sentences; they need not be given by formulas.
+

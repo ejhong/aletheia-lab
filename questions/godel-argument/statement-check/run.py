@@ -60,10 +60,10 @@ def use_stage_2a():
     if not STATEMENT.exists():
         STATEMENT = HERE / "Statement2.draft.lean"
     OUT, ITEMS, NOTATION, REPORT = HERE / "out2a", HERE / "items2a.json", HERE / "notation2a.md", HERE / "REPORT-2A.md"
-    REPORT_HEAD = ["Stage 2A (Amendment 2). Written by `run.py --stage 2a --report` from the raw outputs in `out2a/`.",
-                   "Verdicts are the checkers' own."]
-    ORDER = ["DEF-E", "S2a", "X5", "DEF-F", "S2c", "DEF-G", "X6", "S2a2", "S2b", "X4", "S2d"]
-    DEFS = ["KnowsTheoremsOf", "KnowledgeClosedUnderMP", "Factive", "KnowsOwnFactivity", "HasGödelSentence"]
+    REPORT_HEAD = ["Stage 2A (Amendment 2), round 2. Written by `run.py --stage 2a --report` from the raw outputs",
+                   "in `out2a/`. Verdicts are the checkers' own. Round 1 (first draft) is frozen under `round1-2a/`."]
+    ORDER = ["DEF-E", "S2a", "X5", "DEF-F", "S2c", "DEF-G", "X6", "S2a2", "S2e", "S2b", "X4", "S2d", "X7", "S2b2"]
+    DEFS = ["ClosedUnderNecessitation", "KnowledgeClosedUnderMP", "Factive", "KnowsOwnFactivity", "HasGödelSentence"]
     PREAMBLE = next(line for line in STATEMENT.read_text().splitlines() if line.startswith("variable ")) + "\n"
 
 
@@ -146,7 +146,7 @@ def lean_blocks():
     blocks = {}
     for chunk in re.split(r"\n(?=/--)", body):
         code = strip_comments(chunk)
-        code = "\n".join(line for line in code.splitlines() if line.strip() not in ("end", "section")) + "\n"
+        code = "\n".join(line for line in code.splitlines() if line.strip() not in ("end", "section") and not line.startswith("open ")) + "\n"
         m = re.search(r"^(?:noncomputable )?(?:def|abbrev) (\w+)", code, flags=re.M)
         if m:
             blocks[m.group(1)] = code[m.start():]

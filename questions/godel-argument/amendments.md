@@ -125,3 +125,29 @@ false as written (`explore/Stage2Sketch.lean`). It is exploratory and is not a f
 
 **My expectation before the run.** S2b will probably be rated `divergent`, because of the added proviso. S2c and
 S2d will draw caveats, perhaps `divergent`, for the missing quantifiers.
+
+**Round 1 of the Stage 2A statement check (2026-11-23), and what changed.** Inputs and outputs are frozen under
+`statement-check/round1-2a/`. Cost $3.98 at list price.
+
+- Planted errors: both checkers caught all three.
+- Real items with a passage (7): both checkers gave `faithful_with_caveats` on D12–D14, S2a′ and S2c. OpenAI
+  rated D11 and S2a `divergent`; both rated S2b `divergent`; Google rated S2d `divergent`.
+
+| Finding | Response |
+|---|---|
+| D11, S2a, S2b (OpenAI, major): nothing required 𝓢 to include the base, and the source's rule "if EA proves φ then EA proves Kφ" is internal to EA. | Accepted. D11 is now `ClosedUnderNecessitation`, a rule of the base alone, and every statement takes inclusion `𝓑 ⪯ 𝓢` as a separate hypothesis. This matches the source's "S includes EA". |
+| S2b (both, major): the hypothesis that the base proves the formalized second incompleteness theorem for F is not on the page. | Kept, as declared before the run: without it the statement is false. New statement S2b′ says so formally: a system in which every other hypothesis of S2b holds and its conclusion is not provable. S2b is reported as a repaired variant of Theorem 4, not as the printed theorem. |
+| S2d (Google, major): the Lean cannot express Reinhardt's schema, and the step from the schema to K(K(¬p) ↔ p) is not formalized. | Accepted as a limit. S2d is now claimed only as a lemma of the lab's about K; its link to Reinhardt's schema is informal and is not claimed as a formalization. |
+| The amendment said necessity of known factivity was "cited, not proved". | Strengthened. New statement S2e: a consistent system containing Peano arithmetic in which every hypothesis of S2c except known factivity holds, and in which the sentence excluded by S2d is known. The intended witness is Peano arithmetic's own provability predicate, used as K. This is a counterpart in the abstract layer of Alexander's theorem, not that theorem. |
+
+New rows for the statements table:
+
+| Name | Gloss | Source |
+|---|---|---|
+| D11 `ClosedUnderNecessitation` (replaces `KnowsTheoremsOf`) | What the base proves, the base proves to be known | as before |
+| S2b′ `SecondIncompletenessProvisoCannotBeDropped` | Some system satisfies every hypothesis of S2b but the proviso, and does not prove S2b's conclusion | the lab's own; bears on Koellner 2018a, p. 354, Theorem 4 |
+| S2e `KnownFactivityCannotBeDropped` | Some consistent system satisfies every hypothesis of S2c but known factivity | counterpart of Alexander 2014, §1 and Theorem 12 |
+
+A fourth planted error is added for round 2: S2e with known factivity put back among the conjuncts, which
+contradicts S2c. All items are re-checked in round 2, since the definitions changed. A proof sketch of each
+revised and new statement was compiled first (`explore/Stage2Sketch.lean`, exploratory).

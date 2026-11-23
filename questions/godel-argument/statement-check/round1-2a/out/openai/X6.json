@@ -1,0 +1,51 @@
+{
+  "id": "X6",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:23:20Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 𝓢 K → Def2 𝓢 K → Def4 𝓢 K →\n    𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥ →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 K φ)) →\n    𝓢 ⊢ K (∼K (∼F ⊥))\n",
+  "usage": [
+    [
+      1254,
+      543
+    ],
+    [
+      2281,
+      1700
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every choice of types Fm, S₀, S, of connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S. Suppose each system proves all classical propositional tautologies and is closed under modus ponens. Then for every pair of functions K, F : Fm → Fm, the following hypotheses, in order, imply the stated conclusion: (1) for every sentence φ, if 𝓑 proves φ, then 𝓢 proves K(φ); (2) for every sentence φ and then every sentence ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)); (3) for every sentence φ, 𝓢 proves K(K(φ) 🡒 φ); (4) 𝓑 proves the particular implication F(∼(F(⊥))) 🡒 F(⊥); and (5) for every sentence φ, 𝓢 proves K(F(φ) 🡒 K(φ)). The conclusion is that 𝓢 proves K(∼(K(∼(F(⊥))))). Here 🡒 and ∼ are implication and negation inside the sentence being proved. Hypothesis (3) places the entire implication under K; it does not require 𝓢 to prove K(φ) 🡒 φ itself. Neither consistency, a rule taking every theorem φ of 𝓢 to a theorem K(φ) of 𝓢, nor the existence of a sentence ψ for which 𝓑 proves ψ 🡘 ∼(F(ψ)) is required.\"}",
+  "translation": "Target is defined to be the following proposition. For every choice of types Fm, S₀, S, of connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S. Suppose each system proves all classical propositional tautologies and is closed under modus ponens. Then for every pair of functions K, F : Fm → Fm, the following hypotheses, in order, imply the stated conclusion: (1) for every sentence φ, if 𝓑 proves φ, then 𝓢 proves K(φ); (2) for every sentence φ and then every sentence ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)); (3) for every sentence φ, 𝓢 proves K(K(φ) 🡒 φ); (4) 𝓑 proves the particular implication F(∼(F(⊥))) 🡒 F(⊥); and (5) for every sentence φ, 𝓢 proves K(F(φ) 🡒 K(φ)). The conclusion is that 𝓢 proves K(∼(K(∼(F(⊥))))). Here 🡒 and ∼ are implication and negation inside the sentence being proved. Hypothesis (3) places the entire implication under K; it does not require 𝓢 to prove K(φ) 🡒 φ itself. Neither consistency, a rule taking every theorem φ of 𝓢 to a theorem K(φ) of 𝓢, nor the existence of a sentence ψ for which 𝓑 proves ψ 🡘 ∼(F(ψ)) is required.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The pointwise hypothesis is reversed. The source requires S ⊢ K(Kφ → F(⌜φ⌝)): F captures everything absolutely provable. Lean requires 𝓢 ⊢ K(F φ → K φ): everything F captures is absolutely provable.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Lean omits the requirement that S includes EA. Even at the level of theorem inclusion, it does not require 𝓑 ⊢ φ to imply 𝓢 ⊢ φ. Def1 gives only 𝓢 ⊢ K φ, and Def4 gives known factivity, not an unboxed factivity principle that would let 𝓢 infer φ.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Lean adds the substantive premise 𝓑 ⊢ F(∼F ⊥) → F ⊥. This is the author's acknowledged proviso, but it restricts the result to operators satisfying a base-provable incompleteness implication that the printed theorem does not assume.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The declared abstraction replaces EA and its language with an arbitrary classical propositional base and sentence type. An arbitrary operation F on sentences need not come from a one-free-variable arithmetic formula applied to sentence codes; arithmetic syntax, quotation and object-language quantifiers are not represented.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean explicitly assumes base knowledge, closure of K under modus ponens, and known factivity. The displayed source theorem does not separately enumerate these background principles for absolute provability.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean fixes Con(F) to mean ∼F ⊥, an interpretation not specified in the quoted passage. Under that reading, the nesting of K and negation in the conclusion is correct.\"\n    }\n  ],\n  \"summary\": \"The conclusion matches under the stated reading of Con(F), but the central hypothesis says that K captures F rather than that F captures K. The missing theory inclusion and the added incompleteness premise also change the theorem's conditions.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The pointwise hypothesis is reversed. The source requires S ⊢ K(Kφ → F(⌜φ⌝)): F captures everything absolutely provable. Lean requires 𝓢 ⊢ K(F φ → K φ): everything F captures is absolutely provable."
+      },
+      {
+        "severity": "major",
+        "description": "Lean omits the requirement that S includes EA. Even at the level of theorem inclusion, it does not require 𝓑 ⊢ φ to imply 𝓢 ⊢ φ. Def1 gives only 𝓢 ⊢ K φ, and Def4 gives known factivity, not an unboxed factivity principle that would let 𝓢 infer φ."
+      },
+      {
+        "severity": "major",
+        "description": "Lean adds the substantive premise 𝓑 ⊢ F(∼F ⊥) → F ⊥. This is the author's acknowledged proviso, but it restricts the result to operators satisfying a base-provable incompleteness implication that the printed theorem does not assume."
+      },
+      {
+        "severity": "minor",
+        "description": "The declared abstraction replaces EA and its language with an arbitrary classical propositional base and sentence type. An arbitrary operation F on sentences need not come from a one-free-variable arithmetic formula applied to sentence codes; arithmetic syntax, quotation and object-language quantifiers are not represented."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean explicitly assumes base knowledge, closure of K under modus ponens, and known factivity. The displayed source theorem does not separately enumerate these background principles for absolute provability."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean fixes Con(F) to mean ∼F ⊥, an interpretation not specified in the quoted passage. Under that reading, the nesting of K and negation in the conclusion is correct."
+      }
+    ],
+    "summary": "The conclusion matches under the stated reading of Con(F), but the central hypothesis says that K captures F rather than that F captures K. The missing theory inclusion and the added incompleteness premise also change the theorem's conditions."
+  }
+}

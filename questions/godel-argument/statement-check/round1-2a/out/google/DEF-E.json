@@ -1,0 +1,35 @@
+{
+  "id": "DEF-E",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:22:44Z",
+  "target": "def Target (𝓑 : S₀) (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓑 ⊢ φ → 𝓢 ⊢ K φ\n",
+  "usage": [
+    [
+      1035,
+      945
+    ],
+    [
+      2014,
+      8384
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target defines a proposition (predicate) on a proof system 𝓑 of type S₀, a proof system 𝓢 of type S, and a function K : Fm → Fm (given arbitrary implicit types Fm, S₀, S equipped with entailment relations [Entailment S₀ Fm] and [Entailment S Fm]). It asserts that for every sentence φ : Fm, if 𝓑 proves φ (𝓑 ⊢ φ), then 𝓢 proves K φ (𝓢 ⊢ K φ). The implication is at the meta-level, not inside the formal language; the converse is not required. The definition does not use or require any logical connectives on Fm, classicality of 𝓑 or 𝓢, consistency, any further assumptions on K, or that S₀ and S (or 𝓑 and 𝓢) be the same.\"}",
+  "translation": "Target defines a proposition (predicate) on a proof system 𝓑 of type S₀, a proof system 𝓢 of type S, and a function K : Fm → Fm (given arbitrary implicit types Fm, S₀, S equipped with entailment relations [Entailment S₀ Fm] and [Entailment S Fm]). It asserts that for every sentence φ : Fm, if 𝓑 proves φ (𝓑 ⊢ φ), then 𝓢 proves K φ (𝓢 ⊢ K φ). The implication is at the meta-level, not inside the formal language; the converse is not required. The definition does not use or require any logical connectives on Fm, classicality of 𝓑 or 𝓢, consistency, any further assumptions on K, or that S₀ and S (or 𝓑 and 𝓢) be the same.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the sources, the derived rule holds for epistemic arithmetic EA itself (if EA ⊢ φ then EA ⊢ Kφ, whence 𝓢 ⊢ Kφ for any extension 𝓢 of EA). Target generalizes and slightly weakens this to a relation between two arbitrary systems 𝓑 : S₀ and 𝓢 : S (∀ φ, 𝓑 ⊢ φ → 𝓢 ⊢ K φ) without requiring that 𝓑 is EA, that 𝓑 itself proves Kφ, or that 𝓢 includes 𝓑.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the sources, K operates on arbitrary formulas of the first-order arithmetic language L_EA (including open formulas with free variables, with axioms given as universal closures). Because Lean models Fm as an abstract type of sentences without quantifiers, free variables, or arithmetic structure (a declared setting idealization), Target applies only to abstract sentences.\"\n    }\n  ],\n  \"summary\": \"Target faithfully captures the intended meta-level derived rule of epistemic arithmetic—that whatever the base theory proves is provably known in the target system—with the right direction and meta-level implication. The only divergences are minor abstractions: 𝓑 and 𝓢 are arbitrary systems without encoding that 𝓑 is EA, that 𝓑 ⊢ Kφ itself, or that 𝓢 extends 𝓑, and the abstract sentence type Fm cannot express open first-order L_EA formulas.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "In the sources, the derived rule holds for epistemic arithmetic EA itself (if EA ⊢ φ then EA ⊢ Kφ, whence 𝓢 ⊢ Kφ for any extension 𝓢 of EA). Target generalizes and slightly weakens this to a relation between two arbitrary systems 𝓑 : S₀ and 𝓢 : S (∀ φ, 𝓑 ⊢ φ → 𝓢 ⊢ K φ) without requiring that 𝓑 is EA, that 𝓑 itself proves Kφ, or that 𝓢 includes 𝓑."
+      },
+      {
+        "severity": "minor",
+        "description": "In the sources, K operates on arbitrary formulas of the first-order arithmetic language L_EA (including open formulas with free variables, with axioms given as universal closures). Because Lean models Fm as an abstract type of sentences without quantifiers, free variables, or arithmetic structure (a declared setting idealization), Target applies only to abstract sentences."
+      }
+    ],
+    "summary": "Target faithfully captures the intended meta-level derived rule of epistemic arithmetic—that whatever the base theory proves is provably known in the target system—with the right direction and meta-level implication. The only divergences are minor abstractions: 𝓑 and 𝓢 are arbitrary systems without encoding that 𝓑 is EA, that 𝓑 ⊢ Kφ itself, or that 𝓢 extends 𝓑, and the abstract sentence type Fm cannot express open first-order L_EA formulas."
+  }
+}

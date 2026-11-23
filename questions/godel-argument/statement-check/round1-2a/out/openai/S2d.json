@@ -1,0 +1,39 @@
+{
+  "id": "S2d",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:24:30Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K : Fm → Fm),\n    Def1 𝓑 𝓢 K → Def2 𝓢 K → Def3 𝓢 K → Def4 𝓢 K →\n    ∀ p : Fm, 𝓢 ⊢ ∼K (K (∼p) 🡘 p)\n",
+  "usage": [
+    [
+      1222,
+      403
+    ],
+    [
+      2210,
+      1632
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, of sentence connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S, each proving all classical propositional tautologies and closed under modus ponens, and any function K : Fm → Fm. Assume, in order: (1) for every sentence φ, if 𝓑 proves φ then 𝓢 proves K(φ); (2) for every pair of sentences φ and ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)); (3) for every sentence φ, 𝓢 proves K(φ) 🡒 φ; and (4) for every sentence φ, 𝓢 proves K(K(φ) 🡒 φ). Then for every sentence p, 𝓢 proves ∼(K(K(∼p) 🡘 p)). Here the argument of the outer K is the sentence-level biconditional between K(∼p) and p, and the conclusion is provability of a negation, not a claim of unprovability. Neither consistency nor a fixed-point hypothesis such as Def5 is required. The systems need not be the same, and there is no separate assumption that whenever 𝓢 proves φ it also proves K(φ).\"}",
+  "translation": "Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, of sentence connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S, each proving all classical propositional tautologies and closed under modus ponens, and any function K : Fm → Fm. Assume, in order: (1) for every sentence φ, if 𝓑 proves φ then 𝓢 proves K(φ); (2) for every pair of sentences φ and ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)); (3) for every sentence φ, 𝓢 proves K(φ) 🡒 φ; and (4) for every sentence φ, 𝓢 proves K(K(φ) 🡒 φ). Then for every sentence p, 𝓢 proves ∼(K(K(∼p) 🡘 p)). Here the argument of the outer K is the sentence-level biconditional between K(∼p) and p, and the conclusion is provability of a negation, not a claim of unprovability. Neither consistency nor a fixed-point hypothesis such as Def5 is required. The systems need not be the same, and there is no separate assumption that whenever 𝓢 proves φ it also proves K(φ).",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean starts after the diagonal instantiation. It cannot express the index e, membership in W_e, or the inference from K∀x(K(x ∉ W_x) ↔ x ∈ W_e) to its x := e instance for a proposed witness e. That inference is needed to lift the propositional refutation to the negation of the existential schema instance.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The target gives a uniform result for every sentence p. Taking p to be ‘e ∈ W_e’ is the author's application of that result; the passage neither states the uniform lemma nor identifies Reinhardt's inconsistent instance as φ := ‘x ∉ W_x’.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The target replaces epistemic arithmetic and its extension with arbitrary classical systems satisfying Def1–Def4. The passage explicitly mentions known factivity (Def4), but does not state this abstract sufficiency result. Def1 requires knowledge of base theorems, not merely their inclusion in 𝓢; inclusion at the level of provable sentences then follows from Def1 and Def3.\"\n    }\n  ],\n  \"summary\": \"The target has the correct polarity and modal scope: 𝓢 proves the negation of K(K(∼p) ↔ p), so adding that positive sentence yields a contradiction. This faithfully captures the claimed propositional core, not a formal refutation of the full quantified instance.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Lean starts after the diagonal instantiation. It cannot express the index e, membership in W_e, or the inference from K∀x(K(x ∉ W_x) ↔ x ∈ W_e) to its x := e instance for a proposed witness e. That inference is needed to lift the propositional refutation to the negation of the existential schema instance."
+      },
+      {
+        "severity": "minor",
+        "description": "The target gives a uniform result for every sentence p. Taking p to be ‘e ∈ W_e’ is the author's application of that result; the passage neither states the uniform lemma nor identifies Reinhardt's inconsistent instance as φ := ‘x ∉ W_x’."
+      },
+      {
+        "severity": "minor",
+        "description": "The target replaces epistemic arithmetic and its extension with arbitrary classical systems satisfying Def1–Def4. The passage explicitly mentions known factivity (Def4), but does not state this abstract sufficiency result. Def1 requires knowledge of base theorems, not merely their inclusion in 𝓢; inclusion at the level of provable sentences then follows from Def1 and Def3."
+      }
+    ],
+    "summary": "The target has the correct polarity and modal scope: 𝓢 proves the negation of K(K(∼p) ↔ p), so adding that positive sentence yields a contradiction. This faithfully captures the claimed propositional core, not a formal refutation of the full quantified instance."
+  }
+}

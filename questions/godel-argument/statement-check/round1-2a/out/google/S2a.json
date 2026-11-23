@@ -1,0 +1,43 @@
+{
+  "id": "S2a",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:22:44Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 𝓢 K → Def2 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (∼F ψ)\n",
+  "usage": [
+    [
+      1183,
+      2737
+    ],
+    [
+      2720,
+      14492
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting that for all types Fm, S₀, and S, for every choice of formal logical connectives and truth/falsehood constants on Fm (LogicalConnective Fm and LogicalNeutral Fm), for every choice of provability relations on Fm for systems in S₀ and S (Entailment S₀ Fm and Entailment S Fm), for all proof systems 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens (Entailment.Cl 𝓑 and Entailment.Cl 𝓢), and for all arbitrary functions K, F : Fm → Fm, if all four of the following hypotheses hold: (1) (Def1 𝓑 𝓢 K) for every sentence φ : Fm, if 𝓑 proves φ, then 𝓢 proves K φ; (2) (Def2 𝓢 K) for all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) (Def5 𝓑 F) there exists a sentence ψ : Fm such that 𝓑 proves ψ 🡘 ∼(F ψ) (that is, (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ)); and (4) for every sentence φ : Fm, 𝓢 proves K (F φ 🡒 φ); then there exists a sentence ψ : Fm such that 𝓢 proves (K ψ) ⋏ K (∼(F ψ)). Nothing further is assumed: K and F are independent arbitrary functions (they need not be equal), neither 𝓑 nor 𝓢 is assumed consistent, 𝓢 is not assumed to satisfy 𝓢 ⊢ φ → 𝓢 ⊢ K φ or Def3 or Def4, and the existential witness ψ in the conclusion is not syntactically required to be the same sentence witnessing Def5 𝓑 F.\"}",
+  "translation": "Target is the proposition asserting that for all types Fm, S₀, and S, for every choice of formal logical connectives and truth/falsehood constants on Fm (LogicalConnective Fm and LogicalNeutral Fm), for every choice of provability relations on Fm for systems in S₀ and S (Entailment S₀ Fm and Entailment S Fm), for all proof systems 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens (Entailment.Cl 𝓑 and Entailment.Cl 𝓢), and for all arbitrary functions K, F : Fm → Fm, if all four of the following hypotheses hold: (1) (Def1 𝓑 𝓢 K) for every sentence φ : Fm, if 𝓑 proves φ, then 𝓢 proves K φ; (2) (Def2 𝓢 K) for all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (3) (Def5 𝓑 F) there exists a sentence ψ : Fm such that 𝓑 proves ψ 🡘 ∼(F ψ) (that is, (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ)); and (4) for every sentence φ : Fm, 𝓢 proves K (F φ 🡒 φ); then there exists a sentence ψ : Fm such that 𝓢 proves (K ψ) ⋏ K (∼(F ψ)). Nothing further is assumed: K and F are independent arbitrary functions (they need not be equal), neither 𝓑 nor 𝓢 is assumed consistent, 𝓢 is not assumed to satisfy 𝓢 ⊢ φ → 𝓢 ⊢ K φ or Def3 or Def4, and the existential witness ψ in the conclusion is not syntactically required to be the same sentence witnessing Def5 𝓑 F.",
+  "b_raw": "{\"verdict\": \"faithful_with_caveats\", \"divergences\": [{\"severity\": \"minor\", \"description\": \"Arithmetic, Gödel numbering, first-order quantifiers, and open formulas of L_EA are not modelled (as declared in the author's claim): Fm is an arbitrary type of sentences with classical propositional connectives and constants (LogicalConnective, LogicalNeutral), and F : Fm → Fm abstracts the substitution map φ ↦ F(⌜φ⌝) rather than being a formula of L_EA with one free variable.\"}, {\"severity\": \"minor\", \"description\": \"Instead of formalizing the concrete theory EA (PA in L_EA plus K1–K4 and KΣ) and deriving both necessitation (EA ⊢ φ → S ⊢ Kφ) and the diagonal lemma for every one-variable formula F(x), Target takes Def1 𝓑 𝓢 K, Def2 𝓢 K, and the existence of a Gödel sentence for F (Def5 𝓑 F) as explicit hypotheses; thus it formalizes the abstract modal core of Theorem 3 without establishing that EA and definable formulas F(x) satisfy those hypotheses.\"}, {\"severity\": \"minor\", \"description\": \"Target is strictly more general (a harmless strengthening) than concrete Theorem 3: it omits the direct inclusion of 𝓑 in 𝓢 (∀ φ, 𝓑 ⊢ φ → 𝓢 ⊢ φ), axioms (K3) (Kφ → φ) and (K4) (Kφ → KKφ), and first-order reasoning beyond classical propositional logic (Entailment.Cl), and it quantifies over arbitrary functions F : Fm → Fm satisfying Def5 rather than only definable formulas.\"}, {\"severity\": \"minor\", \"description\": \"Axiom (K2) in the source is stated as universal closures of (K(φ → ψ) ∧ Kφ) → Kψ, whereas Def2 𝓢 K uses the curried sentence-level form K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ; for sentences these are equivalent over classical propositional logic (Entailment.Cl 𝓢).\"}], \"summary\": \"TARGET faithfully captures the abstract logical structure of Reinhardt's Theorem 3, matching both the pointwise soundness hypothesis and the existential conclusion. Its divergences are all minor idealizations or harmless generalizations inherent to the declared abstract setting, namely assuming the diagonal sentence and base-to-knowledge rules as hypotheses rather than deriving them from EA and arithmetic.\"}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Arithmetic, Gödel numbering, first-order quantifiers, and open formulas of L_EA are not modelled (as declared in the author's claim): Fm is an arbitrary type of sentences with classical propositional connectives and constants (LogicalConnective, LogicalNeutral), and F : Fm → Fm abstracts the substitution map φ ↦ F(⌜φ⌝) rather than being a formula of L_EA with one free variable."
+      },
+      {
+        "severity": "minor",
+        "description": "Instead of formalizing the concrete theory EA (PA in L_EA plus K1–K4 and KΣ) and deriving both necessitation (EA ⊢ φ → S ⊢ Kφ) and the diagonal lemma for every one-variable formula F(x), Target takes Def1 𝓑 𝓢 K, Def2 𝓢 K, and the existence of a Gödel sentence for F (Def5 𝓑 F) as explicit hypotheses; thus it formalizes the abstract modal core of Theorem 3 without establishing that EA and definable formulas F(x) satisfy those hypotheses."
+      },
+      {
+        "severity": "minor",
+        "description": "Target is strictly more general (a harmless strengthening) than concrete Theorem 3: it omits the direct inclusion of 𝓑 in 𝓢 (∀ φ, 𝓑 ⊢ φ → 𝓢 ⊢ φ), axioms (K3) (Kφ → φ) and (K4) (Kφ → KKφ), and first-order reasoning beyond classical propositional logic (Entailment.Cl), and it quantifies over arbitrary functions F : Fm → Fm satisfying Def5 rather than only definable formulas."
+      },
+      {
+        "severity": "minor",
+        "description": "Axiom (K2) in the source is stated as universal closures of (K(φ → ψ) ∧ Kφ) → Kψ, whereas Def2 𝓢 K uses the curried sentence-level form K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ; for sentences these are equivalent over classical propositional logic (Entailment.Cl 𝓢)."
+      }
+    ],
+    "summary": "TARGET faithfully captures the abstract logical structure of Reinhardt's Theorem 3, matching both the pointwise soundness hypothesis and the existential conclusion. Its divergences are all minor idealizations or harmless generalizations inherent to the declared abstract setting, namely assuming the diagonal sentence and base-to-knowledge rules as hypotheses rather than deriving them from EA and arithmetic."
+  }
+}
