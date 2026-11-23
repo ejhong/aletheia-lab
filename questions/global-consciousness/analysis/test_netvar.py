@@ -65,37 +65,69 @@ x = noise(12)
 x += rng.normal(0, 0.5, (86400, 1)).astype(np.float32)               # every egg shares a small wobble each second
 assert netvar.score(x, math.sqrt(50))["z"] > 10
 
-# 5. Cross-standardising removes a variance bias that theoretical standardising does not; a wild egg is dropped.
-sd = np.full(12, math.sqrt(50)) * 1.004                              # every egg 0.8% over in variance, in both windows
-days = {"2021-05-01": (list(range(12)), noise(12, sd)), "2021-05-08": (list(range(12)), noise(12, sd))}
-p = netvar.pair("2021-05-08 00:00:00", "2021-05-01 00:00:00", make_reader(days))
-assert p["eggs_passing"] == 12 and p["event_theory"]["z"] - p["event"]["z"] > 0.8 and abs(p["event"]["z"]) < 3.5, p
+# 5. The egg check: an egg far over in variance is dropped; so is one with too few trials.
 bad = noise(12)
-bad[:, 4] = 100 + (bad[:, 4] - 100) * 1.1                             # one egg 21% over in variance in the control window only
-days = {"2021-06-01": (list(range(12)), bad), "2021-06-08": (list(range(12)), noise(12))}
-p = netvar.pair("2021-06-08 00:00:00", "2021-06-01 00:00:00", make_reader(days))
-assert p["eggs_passing"] == 11
+bad[:, 4] = 100 + (bad[:, 4] - 100) * 1.1                             # one egg 21% over in variance
+assert netvar.passes(*netvar.egg_stats(bad)).tolist() == [True] * 4 + [False] + [True] * 7
 few = noise(12)
-few[:50000, 0] = np.nan                                               # too few trials: dropped
+few[:50000, 0] = np.nan
 assert netvar.passes(*netvar.egg_stats(few)).tolist() == [False] + [True] * 11
 
-# 6. Too few seconds: not evaluable. Seconds with under five eggs are not used.
+# 6. Too few seconds: not evaluable (80% are needed). Seconds with under five eggs are not used.
 x = noise(6)
-x[:50000] = np.nan
+x[:20000] = np.nan
 assert netvar.score(x, math.sqrt(50)) is None
 x = noise(6)
 x[:10000, :3] = np.nan                                               # three eggs for the first 10,000 seconds
 assert netvar.score(x, math.sqrt(50))["df"] == 76400
 
-# 7. Combining and verdicts.
+# 7. The cross-egg part: near zero for noise, large for a shared wobble, and blind to an egg's own extra variance.
+x = noise(12)
+assert abs(netvar.cross_part(x, math.sqrt(50))) < 4
+loud = x.copy()
+loud[:, 0] = 100 + (loud[:, 0] - 100) * 1.05
+assert abs(netvar.cross_part(loud, math.sqrt(50)) - netvar.cross_part(x, math.sqrt(50))) < 0.5
+assert netvar.score(loud, math.sqrt(50))["z"] - netvar.score(x, math.sqrt(50))["z"] > 1.0
+assert netvar.cross_part(x + rng.normal(0, 0.5, (86400, 1)).astype(np.float32), math.sqrt(50)) > 10
+
+# 8. The whole procedure at one tenth scale, on made-up eggs with unequal variances: 30 events and 30 controls in
+#    one year. Scores should look standard normal, events and controls alike, with theoretical standardising biased.
+save = (netvar.WINDOW, netvar.MIN_TRIALS, netvar.MIN_SECONDS, netvar.REF_TRIALS)
+netvar.WINDOW, netvar.MIN_TRIALS, netvar.MIN_SECONDS, netvar.REF_TRIALS = 8640, 4320, 6912, 8640
+bias = np.full(20, math.sqrt(50)) * np.sqrt(1 + rng.normal(0.004, 0.002, 20))    # every egg a little over in variance
+sim = {}
+
+
+def small_reader(d):
+    if d not in sim:
+        sim[d] = (100 + rng.normal(0, 1, (8640, 20)) * bias).astype(np.float32)
+    return t0_of(d), list(range(20)), sim[d]
+
+
+base = datetime.date(2019, 1, 1)
+ev = [(base + datetime.timedelta(days=4 * k)).isoformat() + " 00:00:00" for k in range(30)]
+co = [(base + datetime.timedelta(days=4 * k + 2)).isoformat() + " 00:00:00" for k in range(30)]
+stats = netvar.year_variances(co, small_reader)
+ze, zc, zt = [], [], []
+for e, c in zip(ev, co):
+    r = netvar.score_window(e, [stats[k] for k in co], small_reader)
+    ze.append(r["main"]["z"])
+    zt.append(r["theory"]["z"])
+    zc.append(netvar.score_window(c, [stats[k] for k in co if k != c], small_reader)["main"]["z"])
+ze, zc, zt = map(np.array, (ze, zc, zt))
+assert abs(ze.mean()) < 0.45 and abs(zc.mean()) < 0.45 and 0.7 < ze.std(ddof=1) < 1.35 and 0.7 < zc.std(ddof=1) < 1.35, (ze.mean(), zc.mean(), ze.std(), zc.std())
+assert zt.mean() - ze.mean() > 0.15, (zt.mean(), ze.mean())           # theoretical standardising carries the variance bias
+netvar.WINDOW, netvar.MIN_TRIALS, netvar.MIN_SECONDS, netvar.REF_TRIALS = save
+
+# 9. Combining, the paired check and the verdicts.
 c = netvar.combine([1.0, -1.0, 2.0, None])
 assert c["n"] == 3 and abs(c["z"] - 2 / math.sqrt(3)) < 1e-12
-v = netvar.verdicts(3.2, 58, 0.4, 2.0)
-assert v["departure"] == "departure" and v["size"] == "compatible with the reported size"
-v = netvar.verdicts(0.2, 58, -0.4, 0.4)
-assert v["departure"] == "no departure" and v["size"] == "smaller than reported" and abs(v["predicted_at_reported_size"] - 2.513) < 1e-3
-v = netvar.verdicts(1.0, 58, 0.1, 0.6)
-assert v["departure"] == "no departure" and v["size"] == "compatible with the reported size"
-v = netvar.verdicts(3.5, 58, 2.7, 0.57)
-assert v["departure"] == "no departure" and "difference" in v["based_on"]
+assert netvar.sign_flip([1.0] * 12) < 0.001 and 0.3 < netvar.sign_flip([1.0, -1.0, 0.5, -0.5, 0.2, -0.2, 0.1]) < 0.7
+v = netvar.verdicts(3.2, 58)
+assert v["departure"] == "departure" and v["size"] == "not shown smaller than the benchmark"
+v = netvar.verdicts(0.2, 58)
+assert v["departure"] == "no positive excess detected" and v["size"] == "smaller than the benchmark" and abs(v["predicted_at_benchmark"] - 2.513) < 1e-3
+v = netvar.verdicts(1.0, 58)
+assert v["departure"] == "no positive excess detected" and v["size"] == "not shown smaller than the benchmark"
+assert netvar.verdicts(2.0, 58)["departure"] == "suggestive"
 print("all tests pass")

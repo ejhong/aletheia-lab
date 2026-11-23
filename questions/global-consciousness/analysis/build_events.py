@@ -29,24 +29,31 @@ def main():
         start = datetime.datetime(q["year"], q["month"], q["day"], q["hour"])          # the top of the hour of the origin time
         events.append(("earthquake", f"{q['country'].title()} {q['year']}-{q['month']:02d}-{q['day']:02d} (NOAA id {q['id']}, {q['deaths']} deaths)", start))
     events.sort(key=lambda e: e[2])
-    windows = [e[2] for e in events]
-    overlaps = lambda s: any(abs((s - w).total_seconds()) < 86400 for w in windows)
-    rows = []
-    for kind, name, start in events:
-        control, why = None, ""
+    near = lambda a, b: abs((a - b).total_seconds()) < 86400            # two 24-hour windows that share any second
+    rows, kept, controls = [], [], []
+    for kind, name, start in events:                                    # pass 1: which events stand
+        why = ""
         if start < FIRST or start + DAY - datetime.timedelta(seconds=1) > LAST:
             why = "outside 2016-01-01 to 2025-10-31"
         elif not all(d in DAYS for d in days_of(start)):
             why = "no data file for the event window"
+        elif any(near(start, k) for k in kept):
+            why = "overlaps an earlier event in the list"
         else:
-            for shift in (-7, 7, -14, 14):
-                c = start + datetime.timedelta(days=shift)
-                if all(d in DAYS for d in days_of(c)) and not overlaps(c):
-                    control = c
-                    break
-            if control is None:
-                why = "no control window with data"
-        rows.append((kind, name, start, control, why))
+            kept.append(start)
+        rows.append([kind, name, start, None, why])
+    all_starts = [e[2] for e in events]
+    for r in rows:                                                      # pass 2: a control for each, in date order
+        if r[4]:
+            continue
+        for shift in (-7, 7, -14, 14):
+            c = r[2] + datetime.timedelta(days=shift)
+            if all(d in DAYS for d in days_of(c)) and not any(near(c, w) for w in all_starts) and not any(near(c, k) for k in controls):
+                r[3] = c
+                controls.append(c)
+                break
+        if r[3] is None:
+            r[4] = "no control window with data"
     with open(Q / "events.tsv", "w") as f:
         f.write("kind\tevent\tstart_utc\tcontrol_start_utc\tin_test\twhy_not\n")
         for kind, name, start, control, why in rows:

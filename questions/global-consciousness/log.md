@@ -12,3 +12,8 @@
   2016–2025; and every earthquake with 100 or more deaths in NOAA's database. 65 candidates, 58 with data.
   Built without reading network data.
 - **Program and tests** written; tests pass on made-up data. No 2016–2025 network data parsed yet.
+- **Review, two rounds, two vendors** (`review/README.md`). The standardising was rebuilt (egg spreads from a
+  year of control windows), the control-triggered switch of tests removed, overlap rules added.
+- **Validation** on six of the project's own formal events of 2011–2015: our scores are within about 0.4 of the
+  published ones, one exact (`explore/validation.json`).
+- **Download** of the 156 day files finished; each has the server's stated length and decompresses fully.
