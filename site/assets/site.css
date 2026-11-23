@@ -636,3 +636,65 @@ tr:first-child td { border-top: 0; }
   .site-header, .subnav, .pager, .skip, .legend-wrap { display: none; }
   .band { --band: #fff; --band-ink: #000; --band-ink-soft: #222; --band-faint: #444; background: #fff; }
 }
+
+/* ---------- Figures: inline SVG charts and headline tiles (see scripts/build_site.py, {{figure: ...}}) ---------- */
+
+.fig { margin: 2.25rem 0 2.5rem; }
+.fig-scroll {
+  overflow-x: auto;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 0 .6rem;
+}
+.fig figcaption { font-size: .85rem; line-height: 1.6; color: var(--faint); margin-top: .75rem; }
+
+.chart { display: block; width: 100%; min-width: 620px; height: auto; font-family: var(--sans); }
+.chart text { fill: var(--ink-soft); font-size: 12.5px; }
+.chart .c-label { fill: var(--ink); font-size: 13px; }
+.chart .c-label-sm { fill: var(--ink); font-size: 11.5px; }
+.chart .c-sub, .chart .c-tick, .chart .c-axis, .chart .c-ref-label, .chart .c-col { fill: var(--faint); font-size: 11.5px; }
+.chart .c-group { fill: var(--faint); font: 500 10.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.chart .c-value { fill: var(--ink); font-variant-numeric: tabular-nums; }
+.chart .c-grid { stroke: var(--line); stroke-width: 1; }
+.chart .c-zero { stroke: var(--faint); stroke-width: 1; }
+.chart .c-ref { stroke: var(--copper); stroke-width: 1; }
+.chart .c-leader { stroke: var(--faint); stroke-width: 1; fill: none; }
+.chart .c-whisker { stroke: var(--copper); stroke-width: 2; stroke-linecap: round; opacity: .5; }
+.chart .c-dot { fill: var(--copper); stroke: var(--paper); stroke-width: 2; }
+.chart .c-dot.c-hollow { fill: var(--paper); stroke: var(--copper); }
+.chart .c-dot.c-ctx { fill: var(--faint); stroke-width: 1; opacity: .5; }
+.chart .c-hit { fill: transparent; }
+.chart .c-mark { outline: none; }
+.chart .c-mark:hover rect.c-hit, .chart .c-mark:focus-visible rect.c-hit { fill: color-mix(in oklab, var(--paper-deep) 75%, transparent); }
+.chart .c-mark:hover .c-dot.c-ctx, .chart .c-mark:focus-visible .c-dot.c-ctx { fill: var(--ink); opacity: 1; }
+.chart .c-mark:focus-visible .c-dot { stroke: var(--ink); }
+
+.chart-tip {
+  position: fixed;
+  z-index: 60;
+  pointer-events: none;
+  max-width: 19rem;
+  padding: .55rem .7rem;
+  background: var(--band);
+  color: var(--band-ink-soft);
+  border: 1px solid var(--band-line);
+  border-radius: 3px;
+  font: 400 12.5px/1.5 var(--sans);
+  box-shadow: 0 6px 20px rgb(0 0 0 / .18);
+}
+.chart-tip b { display: block; color: var(--band-ink); font-weight: 600; }
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin: 2rem 0 2.25rem;
+}
+.tile { background: var(--paper); padding: 1.05rem 1rem 1.15rem; }
+.prose .tile-value { font: 600 2rem/1.1 var(--sans); color: var(--ink); margin: 0 0 .45rem; letter-spacing: -.01em; }
+.prose .tile-label { font-size: .84rem; line-height: 1.45; color: var(--ink-soft); margin: 0; }
+@media (max-width: 40rem) {
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
