@@ -110,8 +110,8 @@ lemma k2_of_proves {φ ψ : Form} (h : Proves ∅ (imp φ ψ)) : Proves ∅ (imp
 
 /-! ## S3a -/
 
-/-- S3a. By induction on derivations. An axiom of the first kind is known by an axiom of the second kind; an
-axiom `Kψ` is known by K4; modus ponens is carried under `K` by K2. -/
+/-- S3a. By induction on derivations. An axiom of the first kind is known by an axiom of the second kind. An axiom
+of the second kind, `Kψ`, is known by K4. Modus ponens is carried under `K` by K2. -/
 theorem necessitationIsDerived : NecessitationIsDerived := by
   intro φ h
   induction h with
