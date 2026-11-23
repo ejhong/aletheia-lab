@@ -698,6 +698,14 @@ tr:first-child td { border-top: 0; }
 @media (max-width: 40rem) {
   .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+.chart .c-coast { fill: none; stroke: var(--line); stroke-width: 1; stroke-linejoin: round; }
+.chart .c-site { fill: var(--faint); opacity: .32; }
+.chart .c-ring { fill: none; stroke: var(--ink); stroke-width: 1.5; }
+.fig-legend { display: flex; flex-wrap: wrap; gap: .35rem 1.4rem; margin: 0 0 .7rem; font-size: .84rem; color: var(--ink-soft); }
+.prose .fig-legend { margin: 0 0 .7rem; }
+.fig-legend .key { display: inline-flex; align-items: center; gap: .4rem; }
+.fig-legend .k-dot { fill: var(--copper); }
+.fig-legend .k-dot.k-hollow { fill: var(--paper); stroke: var(--copper); stroke-width: 2; }
 
 /* ---------- Result panels: verdicts, assumption maps, paired cases, numbered steps, folded sections ---------- */
 
@@ -801,6 +809,16 @@ details.more > summary:focus-visible { outline: 2px solid var(--copper); outline
 .more-body { padding: .35rem 1.1rem 1rem; }
 .more-body > :first-child { margin-top: .9rem; }
 .more-body .table-wrap { margin-inline: 0; }
+.chart .c-bar { fill: var(--faint); opacity: .5; }
+.chart .c-bar.is-on { fill: var(--copper); opacity: 1; }
+.chart .c-mark:hover .c-bar, .chart .c-mark:focus-visible .c-bar { fill: var(--ink); opacity: 1; }
+.chart .c-band { fill: var(--copper); opacity: .09; }
+.chart .c-step { fill: var(--copper); opacity: .78; stroke: none; }
+.chart .c-onset { stroke: var(--ink); stroke-width: 1.5; }
+.chart .c-tickmark { stroke: var(--faint); stroke-width: 1; opacity: .38; }
+.chart .c-line5 { stroke: var(--ink); stroke-width: 1.5; }
+.fig-legend .k-tick { stroke: var(--faint); stroke-width: 1.5; }
+.fig-legend .k-line5 { stroke: var(--ink); stroke-width: 1.5; }
 
 /* ---------- Positions table: who says what of a proof and of its conclusion ---------- */
 

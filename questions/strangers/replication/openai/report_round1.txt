@@ -1,0 +1,12 @@
+Your program ran to completion. One definition was missing from the brief, and your guess differs from ours. It is
+a definition from question #31's protocol, quoted here; nothing else is being told to you:
+
+  "A panel-A set is everyone with the given label whose Genetic ID starts with `S_` or `B_` and ends with `.DG`,
+   with a Pass. A panel-B set is everyone with the label whose Genetic ID starts with `HGDP` and ends with `.DG`,
+   with a Pass."
+
+  ("Pass" means ASSESSMENT is exactly Pass, PROVISIONAL_PASS or MERGE_PASS. The label is column 3 of the .ind file,
+  matched exactly. A reference set is the union of its labels' panel-A and panel-B people, each Individual ID
+  counted once, keeping the panel-A version when a person has both. No date condition is applied.)
+
+Please change only how the present-day reference sets are built, to follow that definition.

@@ -1,0 +1,220 @@
+genetic_id	group	entity	side	date_bp	statistic	f4	Z	centred_Z	hit
+AITI_65adult.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3728	S	-0.000536975466073527	-2.628	-2.636	False
+AITI_66.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3761	S	-8.51551911760595e-05	-0.438	-0.44	False
+AITI_77B.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3743	S	0.00012674134417895474	0.552	0.552	False
+AITI_92.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3761	S	-0.00012391577129884215	-0.611	-0.615	False
+AITI_95.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3671	S	-0.0001353974766263365	-0.731	-0.741	False
+I3068.AG.SG	England_N	United Kingdom	elsewhere	5533	S	-0.0001568303517433371	-0.797	-0.799	False
+I5357.AG.SG	Wales_N	United Kingdom	elsewhere	4776	S	-0.00019224520911787892	-0.688	-0.68	False
+I5358.AG.SG	Wales_N	United Kingdom	elsewhere	4918	S	3.07486606407124e-05	0.144	0.145	False
+I5359.AG.SG	Wales_N	United Kingdom	elsewhere	5600	S	-8.653500288744199e-05	-0.433	-0.431	False
+I6770.AG.SG	Wales_N	United Kingdom	elsewhere	5200	S	-0.00027614539669211415	-1.172	-1.173	False
+I5366.AG.SG	England_N	United Kingdom	elsewhere	5516	S	3.625235824121455e-05	0.188	0.192	False
+I3033.AG.SG	Wales_N	United Kingdom	elsewhere	5533	S	5.904624649960062e-05	0.217	0.218	False
+I3039.AG.SG	England_N	United Kingdom	elsewhere	5525	S	-0.00030946756210628454	-1.188	-1.19	False
+I3041.AG.SG	Scotland_N-olowEEF	United Kingdom	elsewhere	5425	S	6.067093170733639e-05	0.315	0.323	False
+I3010.AG.SG	England_N	United Kingdom	elsewhere	5526	S	-7.182220015353161e-06	-0.039	-0.032	False
+I3013.AG.SG	England_N	United Kingdom	elsewhere	5528	S	0.00026770676455720014	1.499	1.498	False
+I3024.AG.SG	England_N	United Kingdom	elsewhere	5650	S	0.00022650499966072693	1.084	1.088	False
+I3074.AG.SG	England_N	United Kingdom	elsewhere	5650	S	-6.995573582218369e-05	-0.379	-0.371	False
+I3057.AG.SG	England_N	United Kingdom	elsewhere	5300	S	8.980406794774253e-05	0.498	0.506	False
+I3059.AG.SG	England_N	United Kingdom	elsewhere	5528	S	3.4956007408448084e-05	0.179	0.182	False
+I3060.AG.SG	England_N	United Kingdom	elsewhere	5527	S	-0.00017338056627352964	-0.927	-0.929	False
+I6760.AG.SG	England_N	United Kingdom	elsewhere	5781	S	0.0002058349569741844	1.042	1.053	False
+I3038.AG.SG	England_N	United Kingdom	elsewhere	5525	S	-0.00027952987869487146	-1.481	-1.486	False
+I3064.AG.SG	England_N	United Kingdom	elsewhere	5700	S	-3.51758740169471e-05	-0.194	-0.189	False
+I6764.AG.SG	Scotland_N	United Kingdom	elsewhere	5100	S	-0.0004076091117160444	-2.074	-2.072	False
+I6766.AG.SG	Scotland_N	United Kingdom	elsewhere	5100	S	-0.00015152170496312594	-0.802	-0.797	False
+CSN010.AG.SG	Italy_Tuscany_IA_b_IA_c_Etruscan	Italy	elsewhere	2263	S	0.00023453787271364684	0.962	0.958	False
+C1706.AG.SG	China_Xinjiang_Kalatasi_IA	China	elsewhere	2225	S	-0.00043876528511694365	-1.913	-1.906	False
+C3348.AG.SG	China_Xinjiang_Songshugou_LBA	China	elsewhere	3207	S	4.365315866423483e-05	0.216	0.213	False
+C1710.AG.SG	China_Xinjiang_Dongtalede_IA-oEastAsia	China	elsewhere	2550	S	-0.00036707463287362764	-1.691	-1.682	False
+C4132.AG.SG	China_Xinjiang_Abusanteer_IA	China	elsewhere	2450	S	0.00029580722623025874	1.461	1.455	False
+C4268.AG.SG	China_Xinjiang_Abusanteer_IA-oEastAsia	China	elsewhere	2450	S	-8.629532861304266e-05	-0.411	-0.413	False
+C4272.AG.SG	China_Xinjiang_Abusanteer_IA	China	elsewhere	2450	S	0.00014540169277651034	0.739	0.732	False
+C4273.AG.SG	China_Xinjiang_Abusanteer_IA	China	elsewhere	2450	S	-0.00027043070671906646	-1.229	-1.225	False
+C4127.AG.SG	China_Xinjiang_Abusanteer_IA	China	elsewhere	2246	S	-0.00011918298093235642	-0.551	-0.552	False
+C4140.AG.SG	China_Xinjiang_Abusanteer_Antiquity	China	elsewhere	1800	S	-6.55700413407713e-05	-0.306	-0.316	False
+C4131.AG.SG	China_Xinjiang_Abusanteer_IA-oWestEurasia	China	elsewhere	2617	S	-0.0005449607942894177	-2.613	-2.623	False
+C4255.AG.SG	China_Xinjiang_Eminhuojierte_IA	China	elsewhere	2517	S	-7.614489462485825e-05	-0.353	-0.35	False
+C1650.AG.SG	China_Xinjiang_Junmachanyilian_IA	China	elsewhere	2420	S	-0.00023159402492249064	-1.135	-1.125	False
+C1655.AG.SG	China_Xinjiang_Junmachanyilian_IA	China	elsewhere	2367	S	8.063075344312987e-05	0.381	0.384	False
+C4149.AG.SG	China_Xinjiang_Kafulang_Historical	China	elsewhere	1008	S	-0.0006425883685346888	-2.849	-2.845	False
+C1662.AG.SG	China_Xinjiang_Kuokesuxi_LBA_Andronovo	China	elsewhere	3360	S	-0.00031219224732731914	-1.571	-1.589	False
+C1670.AG.SG	China_Xinjiang_Kuokesuxi_EIA	China	elsewhere	2419	S	0.00010279185595968483	0.552	0.541	False
+C4276.AG.SG	China_Xinjiang_Qiafuqihaishuiku_IA_Wusun_possible	China	elsewhere	2420	S	-1.8177472088834867e-05	-0.091	-0.082	False
+C4150.AG.SG	China_Xinjiang_Keqikesubutai_Historical	China	elsewhere	1553	S	-0.0002295024821336396	-1.017	-1.025	False
+C3318.AG.SG	China_Xinjiang_Caishichang_IA	China	elsewhere	2145	S	2.0128259070699358e-06	0.01	0.008	False
+C1370.AG.SG	China_Xinjiang_Jirentaigoukou_Antiquity	China	elsewhere	1800	S	-0.0006999672023174986	-3.23	-3.225	False
+C1714.AG.SG	China_Xinjiang_Tangbalesayi_LBA_Andronovo	China	elsewhere	3516	S	-0.0005807180652316232	-2.767	-2.775	False
+C787.AG.SG	China_Xinjiang_Tangbalesayi_IA_Wusun_possible	China	elsewhere	2225	S	-0.000179394774107942	-0.9	-0.897	False
+C4260.AG.SG	China_Xinjiang_Tangbalesayi_IA_Wusun_possible	China	elsewhere	2152	S	-7.411279470866721e-05	-0.361	-0.361	False
+C4265.AG.SG	China_Xinjiang_Tangbalesayi_Historical_Nomad	China	elsewhere	950	S	0.0001577992028697878	0.736	0.73	False
+C4278.AG.SG	China_Xinjiang_Wulanbuluke_IA	China	elsewhere	2225	S	5.3069881698192e-05	0.258	0.262	False
+C4280.AG.SG	China_Xinjiang_Wulanbuluke_IA	China	elsewhere	2225	S	-3.759807137764078e-05	-0.172	-0.169	False
+C4279.AG.SG	China_Xinjiang_Wulanbuluke_IA	China	elsewhere	2225	S	-0.00014073643150536145	-0.689	-0.696	False
+C4282.AG.SG	China_Xinjiang_Wutulan_LBA_Andronovo	China	elsewhere	3413	S	-0.0005985879249959884	-2.922	-2.926	False
+C1646.AG.SG	China_Xinjiang_Wutulan_IA_possible	China	elsewhere	2200	S	-8.297501644772492e-07	-0.004	-0.005	False
+C1647.AG.SG	China_Xinjiang_Wutulan_IA_possible	China	elsewhere	2200	S	1.5373051114035686e-05	0.071	0.064	False
+C1649.AG.SG	China_Xinjiang_Wutulan_IA_possible	China	elsewhere	2200	S	0.0005316941263852882	2.652	2.649	False
+C4283.AG.SG	China_Xinjiang_Wutulan_IA	China	elsewhere	2200	S	-0.0004502471365869805	-2.013	-2.026	False
+C847.AG.SG	China_Xinjiang_Wuzan_IA	China	elsewhere	2521	S	-0.0004009956730020892	-1.978	-1.981	False
+C799.AG.SG	China_Xinjiang_Wuzan_IA-oEastAsia	China	elsewhere	2413	S	0.0001692177616633832	0.767	0.775	False
+C3365.AG.SG	China_Xinjiang_Sahaxibei_IA	China	elsewhere	2550	S	0.00040741938480074477	1.941	1.942	False
+C3354.AG.SG	China_Xinjiang_Tielieketesai_IA-1	China	elsewhere	2250	S	-8.559638014136368e-05	-0.422	-0.426	False
+C1679.AG.SG	China_Xinjiang_Simutasi_IA	China	elsewhere	2250	S	7.625963299224045e-05	0.356	0.358	False
+C3617.AG.SG	China_Xinjiang_Baiyanghe_IA-2	China	elsewhere	2244	S	-4.528336125117613e-05	-0.208	-0.2	False
+C830.AG.SG	China_Xinjiang_ZhagunlukeZaghunluq_IA	China	elsewhere	2175	S	0.0002704043705095212	1.35	1.355	False
+C833.AG.SG	China_Xinjiang_ZhagunlukeZaghunluq_IA	China	elsewhere	2148	S	-0.00022155650265962492	-1.029	-1.027	False
+C837.AG.SG	China_Xinjiang_ZhagunlukeZaghunluq_IA	China	elsewhere	2404	S	0.0005682017908591383	2.43	2.416	False
+C3652.AG.SG	China_Xinjiang_ZhagunlukeZaghunluq_IA	China	elsewhere	1925	S	-0.0002884945879587407	-1.319	-1.314	False
+C3671.AG.SG	China_Xinjiang_ZhagunlukeZaghunluq_IA	China	elsewhere	2175	S	5.2340382899307384e-05	0.239	0.233	False
+C793.AG.SG	China_UnknownXinjiang_IA_Unknown	China	elsewhere	2351	S	-0.0004418994351951259	-1.918	-1.909	False
+AITI_120.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3662	S	-4.1816980915170054e-05	-0.207	-0.205	False
+AITI_40.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3746	S	-6.176229702951716e-05	-0.265	-0.266	False
+AITI_50.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3773	S	-0.00010500778743625638	-0.489	-0.488	False
+AITI_70.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3901	S	-0.0005453195976287465	-2.529	-2.529	False
+AITI_72.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3776	S	-6.391732670045039e-05	-0.314	-0.322	False
+AITI_78.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3748	S	-0.00020204018643565558	-1.083	-1.085	False
+AITI_98.AG.SG	Germany_KleinaitingenGewerbegebietNord_EBA	Germany	elsewhere	3605	S	0.0003261310006369252	1.484	1.482	False
+OTTM_156.AG.SG	Germany_OberottmarshausenKiesgrubeLauter_MBA	Germany	elsewhere	3448	S	-8.298699153019476e-05	-0.307	-0.307	False
+I2651.AG.TW	Scotland_N	United Kingdom	elsewhere	5160	S	0.00010702005244887193	0.603	0.609	False
+I12233.AG.TW	Ukraine_Odesa_EBA_Yamnaya	Ukraine	elsewhere	4905	S	-7.833064495827387e-05	-0.307	-0.31	False
+I1430.AG.TW	Ukraine_Zaporizhia_Eneolithic_SeredniiStih	Ukraine	elsewhere	6023	S	0.0005130569188625769	2.083	2.086	False
+I1926.AG.TW	Ukraine_Ternopil_Eneolithic_Trypillia	Ukraine	elsewhere	5649	S	-0.000540564152610126	-2.732	-2.731	False
+I5870.AG.TW	Ukraine_Zaporizhia_N	Ukraine	elsewhere	7363	S	-0.0009834706579209015	-4.911	-4.905	False
+I13890.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5600	S	-6.152414414878209e-05	-0.33	-0.328	False
+I13891.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5526	S	-0.00018661457376649857	-1.009	-1.009	False
+I13897.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5600	S	-0.0003622128429799428	-1.924	-1.921	False
+I13898.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5569	S	0.00033910081004654606	1.912	1.909	False
+I20821.AG.TW	England_EN	United Kingdom	elsewhere	5486	S	-0.00020922244080028737	-1.152	-1.158	False
+I13895.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5650	S	-2.6628357240953487e-05	-0.146	-0.151	False
+I12091.AG.TW	Netherlands_EN_LateMesolithic_Swifterbant-o	Netherlands	elsewhere	6696	S	-0.0007477055932609283	-3.775	-3.77	False
+I12229.AG.TW	Ukraine_Odesa_Eneolithic_Usatove	Ukraine	elsewhere	4932	S	1.546708978811127e-05	0.082	0.079	False
+I12710.AG.TW	Ukraine_Odesa_Eneolithic-oCaucasus	Ukraine	elsewhere	6083	S	8.881736729944818e-05	0.412	0.407	False
+I12900.AG.TW	Netherlands_LNB_BellBeaker	Netherlands	elsewhere	4239	S	0.00018532463534797584	0.971	0.973	False
+I20751.AG.TW	Hungary_LBA	Hungary	elsewhere	3200	S	-0.0001539572446383562	-0.811	-0.805	False
+I5872.AG.TW	Ukraine_Zaporizhia_N	Ukraine	elsewhere	7374	S	-0.0006512478557022479	-3.294	-3.288	False
+I12094.AG.TW	Netherlands_EN_LateMesolithic_Swifterbant	Netherlands	elsewhere	6750	S	-0.0017500097801277598	-7.09	-7.09	False
+I12896.AG.TW	Netherlands_LNA_CordedWare_Vlaardingen	Netherlands	elsewhere	4637	S	-0.0003762474039795956	-1.846	-1.845	False
+I20196.AG.TW	Moldova_Eneolithic_Zhivotilovka_Gordinesti_Khadzhider-oCaucasus	Moldova	elsewhere	5165	S	-8.397370963352e-06	-0.043	-0.041	False
+I3716.AG.TW	Ukraine_Zaporizhia_N	Ukraine	elsewhere	7347	S	-0.0005960631722595536	-2.885	-2.879	False
+I13064.AG.TW	Ukraine_Ternopil_Eneolithic_Trypillia	Ukraine	elsewhere	5533	S	-0.00044041689797645194	-2.36	-2.364	False
+I17974.AG.TW	Moldova_EN_Zhivotilovka_Gordinesti_Khadzhider-oCaucasus	Moldova	elsewhere	5160	S	4.108851818759317e-05	0.194	0.207	False
+I22199.AG.TW	Russia_Volgograd_EBA_Berezhnovka	Russia	elsewhere	6780	S	0.0011443946098379128	5.613	5.609	True
+I2446.AG.TW	England_BellBeaker-ohighWHG	United Kingdom	elsewhere	4215	S	0.0003480378303961969	1.778	1.782	False
+I12706.AG.TW	Ukraine_Odesa_Eneolithic-oCaucasus	Ukraine	elsewhere	6214	S	6.360804559831326e-05	0.323	0.326	False
+I2108.AG.TW	Ukraine_Dnieperpetrovsk_Eneolithic_SeredniiStih	Ukraine	elsewhere	6232	S	0.0006832688964602122	3.425	3.43	False
+I22201.AG.TW	Russia_Volgograd_EBA_Berezhnovka	Russia	elsewhere	6331	S	0.0005765435255955736	2.743	2.745	False
+I7586.AG.TW	Ukraine_Ternopil_Eneolithic_Trypillia	Ukraine	elsewhere	5639	S	-0.0005090822013149352	-2.7	-2.714	False
+I5204.AG.TW	Austria_N_LBK	Austria	elsewhere	7100	S	-0.00014106399282822084	-0.756	-0.753	False
+I3715.AG.TW	Ukraine_Zaporizhia_N	Ukraine	elsewhere	7526	S	-0.0006387092232711086	-3.095	-3.094	False
+I5882.AG.TW	Ukraine_Kirovohrad_N-oHG	Ukraine	elsewhere	5005	S	-0.0005302402209529861	-2.636	-2.636	False
+I12437.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5575	S	0.00041160884125864564	2.305	2.301	False
+I12438.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5931	S	0.0003268283584578545	1.796	1.787	False
+I21385.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5680	S	0.00014490209567857734	0.761	0.76	False
+I21388.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5657	S	5.777468377966141e-05	0.318	0.31	False
+I21389.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5585	S	7.958785953786391e-05	0.432	0.42	False
+I21391.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5600	S	-9.573704491081787e-05	-0.394	-0.39	False
+I21393.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5600	S	8.394449932824097e-05	0.453	0.452	False
+I21395.AG.TW	England_EN	United Kingdom	elsewhere	5416	S	0.00013209724826260315	0.729	0.722	False
+I21387.AG.TW	England_EN_Megalithic	United Kingdom	elsewhere	5450	S	9.541605917753478e-05	0.526	0.526	False
+I11048.AG.TW	Russia_Omsk_EMBA_Irtysh_SeimaTurbino-1	Russia	elsewhere	3888	S	0.0005718597625353755	2.155	2.186	False
+I11049.AG.TW	Russia_Omsk_EMBA_Irtysh_SeimaTurbino-2	Russia	elsewhere	3782	S	0.0002447128669274164	1.107	1.12	False
+I12168.AG.TW	Ukraine_Odesa_EBA	Ukraine	elsewhere	4916	S	0.0002776584652259298	1.397	1.39	False
+I2448.AG.TW	England_MBA	United Kingdom	elsewhere	3200	S	-0.000326791988986706	-1.638	-1.638	False
+I2110.AG.TW	Ukraine_Ternopil_Eneolithic_Trypillia	Ukraine	elsewhere	5697	S	-0.00024545352302633163	-1.203	-1.209	False
+I24277.AG.TW	Austria_N_LBK	Austria	elsewhere	7100	S	0.0008760855664199128	4.823	4.818	True
+I6559.AG.TW	Ukraine_DonetsBasin_Eneolithic_SeredniiStih	Ukraine	elsewhere	6238	S	1.860895415104648e-05	0.09	0.084	False
+I24280.AG.TW	Austria_N_LBK	Austria	elsewhere	7100	S	0.0006377115755292808	3.222	3.223	False
+I3719.AG.TW	Ukraine_Kirovohrad_N-2	Ukraine	elsewhere	6831	S	-2.7679663725252907e-05	-0.142	-0.148	False
+I0726.AG.TW	Turkey_N	Turkey	elsewhere	7950	S	0.00021324188563985757	1.191	1.188	False
+I3141.AG.TW	Ukraine_Shevchenko_EBA_Yamnaya	Ukraine	elsewhere	4850	S	7.752541411830066e-05	0.341	0.334	False
+I24276.AG.TW	Austria_N_LBK	Austria	elsewhere	7100	S	0.0004507684801254384	2.386	2.388	False
+I10597.AG.TW	Russia_Volgograd_EBA_Yamnaya	Russia	elsewhere	4850	S	-7.164239433363586e-05	-0.369	-0.364	False
+I10630.AG.TW	Russia_Orenburg_EBA_Yamnaya	Russia	elsewhere	4674	S	0.00023649576032834223	1.156	1.158	False
+I11999.AG.TW	Ukraine_Odesa_EBA_Yamnaya	Ukraine	elsewhere	4498	S	0.000349427967454395	1.641	1.64	False
+I17744.AG.TW	Moldova_EBA_Yamnaya	Moldova	elsewhere	4661	S	-5.6475063548536364e-05	-0.269	-0.27	False
+I18819.AG.TW	Romania_EBA_Yamnaya-oSouth	Romania	elsewhere	4700	S	-0.0002034219368199177	-0.876	-0.879	False
+I4429.AG.TW	Russia_Adygea_Maikop	Russia	elsewhere	5300	S	0.0002284380517974974	1.163	1.163	False
+I5886.AG.TW	Ukraine_Kirovohrad_N	Ukraine	elsewhere	7212	S	-0.0008826017974851166	-4.05	-4.047	False
+I6705.AG.TW	Russia_StavropolKrai_EBA_Yamnaya	Russia	elsewhere	4602	S	1.0004320368619147e-05	0.05	0.049	False
+I6884.AG.TW	Russia_Rostov_EBA_Yamnaya-o	Russia	elsewhere	4614	S	-8.342237144072859e-05	-0.399	-0.401	False
+I6885.AG.TW	Russia_Kalmykia_EBA_Yamnaya	Russia	elsewhere	4700	S	9.50695209182757e-05	0.479	0.473	False
+I6905.AG.TW	Russia_Saratov_Eneolithic	Russia	elsewhere	7042	S	0.00036068559998819093	1.746	1.742	False
+I8451.AG.TW	Russia_Tatarstan_Eneolithic	Russia	elsewhere	6448	S	-0.000496115815050446	-2.479	-2.48	False
+I8742.AG.TW	Russia_Samara_Eneolithic	Russia	elsewhere	5617	S	-0.0002425743734000889	-1.073	-1.07	False
+I10034.AG.TW	Russia_Orenburg_EBA_Yamnaya	Russia	elsewhere	4711	S	0.00027009191293709075	1.314	1.309	False
+I10627.AG.TW	Russia_Rostov_EBA_Yamnaya	Russia	elsewhere	4722	S	-5.9891319905354885e-06	-0.03	-0.029	False
+I10714.AG.TW	Russia_Samara_EBA_Yamnaya	Russia	elsewhere	4850	S	0.00013294368306996998	0.638	0.641	False
+I12498.AG.TW	Russia_Ivanovo_Eneolithic_Volosovo_Lyalovo	Russia	elsewhere	6500	S	-0.0003724756380872218	-1.856	-1.862	False
+I18820.AG.TW	Romania_EBA_Yamnaya	Romania	elsewhere	4669	S	0.0003853900715635588	1.89	1.891	False
+I27282.AG.TW	Ukraine_Kirovohrad_Eneolithic_SeredniiStih	Ukraine	elsewhere	6121	S	-0.0002019721790267846	-0.953	-0.962	False
+I5120.AG.TW	Hungary_LateC_EBA_Yamnaya	Hungary	elsewhere	4839	S	7.655103949545438e-05	0.375	0.378	False
+I5888.AG.TW	Ukraine_Kirovohrad_N	Ukraine	elsewhere	7349	S	-0.0006414150604631716	-3.207	-3.202	False
+I6297.AG.TW	Russia_Samara_EBA_Yamnaya	Russia	elsewhere	4915	S	0.0006371764778619572	2.99	2.991	False
+I6904.AG.TW	Russia_Samara_Eneolithic-o	Russia	elsewhere	5964	S	-0.0005595608299185046	-2.498	-2.497	False
+NEO182.AG.TW	Russia_Eneolithic_Volosovo-Dup	Russia	elsewhere	5820	S	-0.00010642054116899208	-0.492	-0.494	False
+I8744.AG.TW	Russia_Tatarstan_Eneolithic	Russia	elsewhere	6375	S	-0.00040959169033207173	-1.866	-1.868	False
+I8950.AG.TW	Russia_Rostov_EBA_Yamnaya-o	Russia	elsewhere	4794	S	-0.00010006646531699339	-0.473	-0.474	False
+I8951.AG.TW	Russia_Rostov_EBA_Yamnaya	Russia	elsewhere	4681	S	-8.026133808122755e-05	-0.41	-0.416	False
+I10498.AG.TW	Romania_EBA_Yamnaya	Romania	elsewhere	4850	S	0.00022212310228956615	1.088	1.088	False
+I10628.AG.TW	Russia_Rostov_EBA_Yamnaya	Russia	elsewhere	4681	S	0.00010137028724972627	0.504	0.51	False
+I11831.AG.TW	Russia_Orenburg_EBA_Yamnaya	Russia	elsewhere	4918	S	-6.315644280846976e-05	-0.28	-0.285	False
+I12823.AG.TW	Romania_EBA_Yamnaya	Romania	elsewhere	4850	S	0.00013662323284718814	0.683	0.676	False
+I5881.AG.TW	Ukraine_Kirovohrad_N	Ukraine	elsewhere	7077	S	-0.0010206066228159178	-4.934	-4.934	False
+I6300.AG.TW	Russia_Saratov_Eneolithic	Russia	elsewhere	7076	S	0.000707859731478692	3.111	3.118	False
+I6301.AG.TW	Russia_Saratov_Eneolithic	Russia	elsewhere	7070	S	0.0005013526013265327	2.521	2.515	False
+I6907.AG.TW	Russia_Samara_EBA_Yamnaya	Russia	elsewhere	4915	S	0.0003081131838631073	1.522	1.531	False
+NEO184.AG.TW	Russia_Eneolithic_Lyalovo-Dup	Russia	elsewhere	5928	S	-0.00031264789977529994	-1.511	-1.508	False
+I8740.AG.TW	Russia_Samara_Eneolithic	Russia	elsewhere	7353	S	0.00044713493061755287	2.049	2.056	False
+I8952.AG.TW	Russia_Rostov_EBA_Yamnaya	Russia	elsewhere	4750	S	-0.0004060862920319889	-2.096	-2.099	False
+I16326.AG.TW	Czechia_IA_Hallstatt	Czechia	elsewhere	2625	S	-0.00020742535187522458	-1.074	-1.079	False
+I10891.AG.TW	Romania_EBA_Yamnaya	Romania	elsewhere	4690	S	0.0002677569166340003	1.215	1.214	False
+I4112.AG.TW	Ukraine_Kirovohrad_N	Ukraine	elsewhere	7359	S	-0.0008246988847167546	-3.517	-3.519	False
+I2635.AG.TW	Scotland_N	United Kingdom	elsewhere	5523	S	-0.00018436377444213273	-0.967	-0.972	False
+NEO193.AG.TW	Russia_Eneolithic_Volosovo-Dup	Russia	elsewhere	5811	S	-0.0004323689419598901	-2.041	-2.041	False
+I0679.AG.TW	Bulgaria_Krepost_N	Bulgaria	elsewhere	7617	S	0.00020451517007161925	1.118	1.113	False
+I2529.AG.TW	Bulgaria_Yabalkovo_N	Bulgaria	elsewhere	7610	S	0.0002444027379634049	1.331	1.324	False
+I5080.AG.TW	Croatia_MBA	Croatia	elsewhere	3631	S	0.00042218904564475507	2.3	2.303	False
+I1563.AG.TW	Germany_BlatterhohleCave_MN	Germany	elsewhere	5448	S	-0.00040454393931244997	-2.198	-2.198	False
+I2532.AG.TW	Romania_Eneolithic-oEEF	Romania	elsewhere	7614	S	0.00012210193490449706	0.664	0.658	False
+I2533.AG.TW	Romania_Eneolithic-oEEF	Romania	elsewhere	7371	S	0.00013463856714724225	0.788	0.785	False
+I0231.AG.TW	Russia_Samara_EBA_Yamnaya	Russia	elsewhere	4844	S	0.0002110770539381254	1.046	1.049	False
+I5695.AG.TW	Slovenia_MBA	Slovenia	elsewhere	3296	S	-3.464104102504361e-06	-0.019	-0.024	False
+I2450.AG.TW	England_BellBeaker	United Kingdom	elsewhere	4248	S	-1.643265825060514e-05	-0.082	-0.088	False
+I2443.AG.TW	England_BellBeaker	United Kingdom	elsewhere	4091	S	0.00025303908184237065	1.336	1.344	False
+I2454.AG.TW	England_BellBeaker-olowEEF	United Kingdom	elsewhere	4042	S	7.055413415232907e-05	0.353	0.345	False
+I13028.AG.TW	Netherlands_LNB_BellBeaker	Netherlands	elsewhere	4250	S	-0.0001555366081661378	-0.78	-0.778	False
+I13027.AG.TW	Netherlands_LNB_BellBeaker	Netherlands	elsewhere	4039	S	-2.1767011949543524e-05	-0.112	-0.106	False
+I10542.AG.TW	Turkey_C	Turkey	elsewhere	5461	S	5.965645309908768e-06	0.031	0.034	False
+I12686.AG.TW	Russia_Rostov_EBA_Yamnaya-o	Russia	elsewhere	5175	S	0.00010368047196117953	0.527	0.527	False
+I19023.AG.TW	Croatia_MBA_Cetina-o	Croatia	elsewhere	3550	S	0.0005116138649459961	2.401	2.398	False
+I22203.AG.TW	Russia_Samara_Eneolithic_Syezzheye	Russia	elsewhere	6741	S	0.00010341670980529862	0.515	0.519	False
+I22204.AG.TW	Russia_Samara_Eneolithic_Syezzheye	Russia	elsewhere	7100	S	0.0006355659162630692	2.991	2.995	False
+I24085.AG.TW	Russia_Rostov_EBA_Don_Yamnaya	Russia	elsewhere	4715	S	7.563728510907656e-05	0.37	0.37	False
+I24088.AG.TW	Russia_Rostov_EBA_Don_Yamnaya	Russia	elsewhere	4848	S	-3.8821247045037896e-05	-0.187	-0.191	False
+I24091.AG.TW	Russia_Rostov_EBA_Don_Yamnaya	Russia	elsewhere	4891	S	2.6683894169038786e-07	0.001	0.002	False
+I2445.DG	England_BellBeaker	United Kingdom	elsewhere	4048	S	0.00044912677067193344	2.363	2.37	False
+I17743.AG.TW	Moldova_EBA_Yamnaya	Moldova	elsewhere	5167	S	0.00014588266680729543	0.718	0.723	False
+I17745.AG.TW	Moldova_EBA_Yamnaya	Moldova	elsewhere	4644	S	0.00037083945236310447	1.889	1.889	False
+I17747.AG.TW	Moldova_EBA_Yamnaya-o	Moldova	elsewhere	4660	S	-7.214786069170393e-06	-0.036	-0.037	False
+I23654.AG.TW	Russia_Rostov_EMBA_Don_Yamnaya	Russia	elsewhere	4844	S	-0.0003475568700819683	-1.692	-1.682	False
+I6101.AG.TW	Russia_Samara_Eneolithic_Ekaterinovka	Russia	elsewhere	7210	S	0.0007967790108108528	3.855	3.858	False
+I6103.AG.TW	Russia_Saratov_Eneolithic_Khvalynsk	Russia	elsewhere	6831	S	0.0006404418232814315	3.14	3.141	False
+I6268.AG.TW	Russia_Adygea_Maikop_Novosvobodnaya	Russia	elsewhere	5550	S	-0.0003981867620415331	-2.076	-2.074	False
+I6272.AG.TW	Russia_Adygea_Maikop_Novosvobodnaya	Russia	elsewhere	5040	S	0.0001324655926034602	0.665	0.667	False
+I16394.AG.TW	England_EBA_C	United Kingdom	elsewhere	3950	S	0.0001273275489309762	0.614	0.616	False
+I23655.AG.TW	Russia_EMBA_Don_Yamnaya	Russia	elsewhere	4675	S	9.853852444336483e-05	0.503	0.508	False
+Latvia_HG3.SG.AG.TW	Latvia_EMN_Narva	Latvia	elsewhere	7033	S	-0.0007606355033195767	-3.789	-3.789	False
+C785.AG.SG	China_Xinjiang_Tangbalesayi_IA-oWestEurasia	China	elsewhere	2175	S	-0.0002481717566170377	-1.274	-1.272	False
+GRG003.AG.SG	France_Yonne_N	France	elsewhere	6450	S	0.00029256428497525193	1.496	1.505	False
+GRG015.AG.SG	France_Yonne_N	France	elsewhere	6450	S	-0.00011796155020143689	-0.659	-0.65	False
+GRG016.AG.SG	France_Yonne_N	France	elsewhere	6407	S	0.0005229691065400365	2.817	2.816	False
+GRG027.AG.SG	France_Yonne_N	France	elsewhere	6690	S	-0.0003244309743696898	-1.688	-1.692	False
+GRG043.AG.SG	France_Yonne_N	France	elsewhere	6575	S	7.658872606678386e-05	0.408	0.407	False
+I7929_alt.AG.TW	Ukraine_Odesa_Eneolithic_SeredniiStih	Ukraine	elsewhere	5628	S	5.501897223715622e-05	0.268	0.265	False
+I11828.AG.TW	Russia_Rostov_Eneolithic	Russia	elsewhere	6257	S	8.741617149419423e-05	0.445	0.451	False
+OBKR_67.AG.SG	Germany_KonigsbrunnObereKreuzstrasseBaugebiet110_EBA	Germany	elsewhere	3906	S	-0.00029615669367953704	-1.362	-1.365	False
+OBKR_86.AG.SG	Germany_KonigsbrunnObereKreuzstrasseBaugebiet110_EBA	Germany	elsewhere	3926	S	-0.00022112098816159733	-1.142	-1.133	False
+WEHR_1474.AG.SG	Germany_WehringenHochfeld_EBA	Germany	elsewhere	3924	S	0.00021016510945524164	1.084	1.087	False

@@ -1,0 +1,281 @@
+{
+  "verdict": "unusual",
+  "ranks": {
+    "E": {
+      "N10": {
+        "value": 30.507599999999996,
+        "rank": 18,
+        "N": 323,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "E10": {
+        "value": 39.662839999999996,
+        "rank": 17,
+        "N": 319,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "N20": {
+        "value": 20.922355,
+        "rank": 4,
+        "N": 131,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "E20": {
+        "value": 27.062855,
+        "rank": 3,
+        "N": 131,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "G20": {
+        "value": 16.002650000003904,
+        "rank": 3,
+        "N": 132,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "N60": {
+        "value": 8.827703333333329,
+        "rank": 7,
+        "N": 323,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "E60": {
+        "value": 13.74756666666666,
+        "rank": 5,
+        "N": 322,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "G60": {
+        "value": 13.205133333334818,
+        "rank": 4,
+        "N": 323,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "N3": {
+        "value": 56.93423252053912,
+        "rank": 19,
+        "N": 164,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "N1": {
+        "value": 113.10507476190475,
+        "rank": 10,
+        "N": 31,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "G10": {
+        "value": 24.15200000000494,
+        "rank": 3,
+        "N": 15,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "E10h": {
+        "value": 39.662839999999996,
+        "rank": 18,
+        "N": 338,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "G20h": {
+        "value": 16.002650000003904,
+        "rank": 5,
+        "N": 165,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "G60h": {
+        "value": 13.205133333334818,
+        "rank": 4,
+        "N": 365,
+        "in_top1": false,
+        "in_top5": true
+      }
+    },
+    "H": {
+      "N10": {
+        "value": 52.43445,
+        "rank": 11,
+        "N": 323,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "E10": {
+        "value": 58.25812,
+        "rank": 10,
+        "N": 319,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "N20": {
+        "value": 44.81738,
+        "rank": 1,
+        "N": 131,
+        "in_top1": true,
+        "in_top5": true
+      },
+      "E20": {
+        "value": 47.71662,
+        "rank": 2,
+        "N": 131,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "G20": {
+        "value": 34.87900000000231,
+        "rank": 2,
+        "N": 132,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "N60": {
+        "value": 37.68707,
+        "rank": 1,
+        "N": 323,
+        "in_top1": true,
+        "in_top5": true
+      },
+      "E60": {
+        "value": 36.66833,
+        "rank": 3,
+        "N": 322,
+        "in_top1": true,
+        "in_top5": true
+      },
+      "G60": {
+        "value": 30.617966666667584,
+        "rank": 2,
+        "N": 323,
+        "in_top1": true,
+        "in_top5": true
+      },
+      "N3": {
+        "value": 76.2894670731707,
+        "rank": 17,
+        "N": 164,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "N1": {
+        "value": 123.28044047619046,
+        "rank": 11,
+        "N": 31,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "G10": {
+        "value": 42.269000000003366,
+        "rank": 2,
+        "N": 15,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "E10h": {
+        "value": 58.25812,
+        "rank": 10,
+        "N": 338,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "G20h": {
+        "value": 34.87900000000231,
+        "rank": 2,
+        "N": 165,
+        "in_top1": false,
+        "in_top5": true
+      },
+      "G60h": {
+        "value": 30.617966666667584,
+        "rank": 2,
+        "N": 365,
+        "in_top1": true,
+        "in_top5": true
+      }
+    },
+    "Z": {
+      "N10": {
+        "value": 1.9649178379171588,
+        "rank": 254,
+        "N": 323,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "E10": {
+        "value": 2.795641391704612,
+        "rank": 113,
+        "N": 319,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "N20": {
+        "value": 1.3362245553762269,
+        "rank": 102,
+        "N": 131,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "E20": {
+        "value": 2.518074218951144,
+        "rank": 49,
+        "N": 131,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "G20": {
+        "value": 1.5524561669975745,
+        "rank": 93,
+        "N": 132,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "N60": null,
+      "E60": null,
+      "G60": null,
+      "N3": {
+        "value": 2.3661059720880875,
+        "rank": 154,
+        "N": 164,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "N1": {
+        "value": 3.228509440668441,
+        "rank": 30,
+        "N": 31,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "G10": {
+        "value": 2.2667244724396287,
+        "rank": 8,
+        "N": 15,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "E10h": {
+        "value": 2.795641391704612,
+        "rank": 119,
+        "N": 338,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "G20h": {
+        "value": 1.5524561669975745,
+        "rank": 116,
+        "N": 165,
+        "in_top1": false,
+        "in_top5": false
+      },
+      "G60h": null
+    }
+  }
+}
