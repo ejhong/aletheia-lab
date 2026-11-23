@@ -32,10 +32,12 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#41](https://github.com/ejhong/aletheia-lab/issues/41) | Strangers in the ancient-DNA record | data | `strangers` |
 | [#43](https://github.com/ejhong/aletheia-lab/issues/43) | Was there an exceptional fire 12,800 years ago? | data | `ice-core-fire` |
 | [#60](https://github.com/ejhong/aletheia-lab/issues/60) | Does ammonium rise after every abrupt cooling? | data | `cooling-ammonium` |
+| [#69](https://github.com/ejhong/aletheia-lab/issues/69) | Did 9% of Earth's biomass burn 12,800 years ago? | data | `yd-global-burn` |
 | [#44](https://github.com/ejhong/aletheia-lab/issues/44) | Do flood myths cluster where land drowned? | data | `flood-myths` |
 | [#45](https://github.com/ejhong/aletheia-lab/issues/45) | Germs and parasites as passports | audit | `pathogen-passports` |
 | [#46](https://github.com/ejhong/aletheia-lab/issues/46) | Blind-judging the remote-viewing archive | model | `remote-viewing` |
 | [#47](https://github.com/ejhong/aletheia-lab/issues/47) | Did random-number generators twitch at world events? | data | `global-consciousness` |
 | [#48](https://github.com/ejhong/aletheia-lab/issues/48) | Do anaesthetics pick out microtubules? | data | `anaesthetics-microtubules` |
 | [#66](https://github.com/ejhong/aletheia-lab/issues/66) | Machine-check the unfolding argument | proof | `unfolding-argument` |
+| [#74](https://github.com/ejhong/aletheia-lab/issues/74) | Audit the random-number network's original 500 events | data | `gcp-audit` |
 | [#67](https://github.com/ejhong/aletheia-lab/issues/67) | Do the theorems show that capable AI must seek power? | proof | `power-seeking` |

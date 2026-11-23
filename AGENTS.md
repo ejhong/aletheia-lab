@@ -86,3 +86,7 @@ Plain language. Lead with the answer, then the evidence, then the limits. Every 
 Every question with a result has a site page (`site/content/<slug>.md`) whose front matter carries `verdict:` (a
 few words) and `result:` (two or three plain sentences). The home page shows them under the question, so readers
 see what was found without opening the page. Keep them current when a result changes.
+
+Related questions are grouped on topic pages (`site/topics/<slug>.md`: a title, a one-line summary, the issue
+numbers in reading order, and a short discussion of what the studies add up to). When a result lands, update the
+topic page it belongs to, or start one when two or more questions bear on the same claim.
