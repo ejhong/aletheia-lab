@@ -95,6 +95,22 @@ This is the argument meant to reach "I am not the machine F, whatever F is". The
 
 So the proof of the strong claim does not go through. That is not a proof that the strong claim is false. Koellner's further result, also quoted and not re-proved, is that in his system neither side of Gödel's either/or can be proved or refuted.
 
+## The objections, and what happens to them
+
+Is the best objection Chalmers's or Koellner's? Neither one alone. There are five serious objections, aimed at different steps, and the oldest is still the one that does most of the work. None of them says the mind is a machine. Each says the proof does not show that it is not.
+
+{{figure: godel-argument/objections}}
+
+Three things stand out.
+
+- **No objection is overturned.** Every one that a proof checker can reach comes out as its author said. The first two are now machine-checked, with every assumption on show.
+- **Chalmers's objection is narrower than it sounds.** He writes that "the deepest flaw lies in the assumption that we know that we are sound". Penrose replied in 1996 that the contradiction goes away if belief is confined to statements of one simple arithmetical kind, which cannot speak of belief. On that point the logic is with Penrose: in the small logic of Stage 2, "I know that what I know is so" is an axiom, and the logic is proved consistent. With arithmetic added, consistency is a theorem of Reinhardt and Carlson, quoted here and not re-proved.
+- **But the same restriction stops the argument.** Confine "I am F" to arithmetic and the last step of the second argument fails, as [the comparison above](#what-is-left-of-the-proof) shows. So Penrose can avoid Chalmers's contradiction or reach his conclusion, and the proofs here find no way to do both. Tying statement S4g to Penrose's own restriction is our reading of his reply, not something he or his critics say.
+
+Two things the objections leave standing. The modest claim, that we are not a machine we can know to be sound, survives all five; Chalmers and Koellner both grant it. And something survives of the second argument: a machine that matches the mind's arithmetic still misses something the mind knows.
+
+The case that the mind *is* a machine does not come from logic at all. It comes from physics and biology: the brain is a physical thing, and the known physics of such things can be simulated. Penrose's answer, as Chalmers reports it, is that the physics must then be non-computable. That is a question of evidence, and nothing on this page bears on it.
+
 ## How it was checked
 
 - **Statements first.** Each claim was written as a formal statement before any proof existed, and tied to the page of the source it formalizes.
@@ -256,6 +272,15 @@ Full report, with every limit and every disagreement: [`RESULTS.md`](https://git
 - Koellner, "On the Question of Whether the Mind Can Be Mechanized, II: Penrose's New Argument", *Journal of Philosophy* 115(9) (2018) 453–484, §§I–IV, from a copy supplied by Eugene.
 - Koellner, "Gödel's Disjunction", in Horsten and Welch (eds.), *Gödel's Disjunction* (OUP, 2016), sections 7.9 to 7.17, read on screen in a Kindle copy bought by Eugene.
 
+#### Read for the objections
+
+- Chalmers, "Minds, Machines, and Mathematics", *Psyche* 2(9) (1995), [the author's copy](https://consc.net/papers/penrose.html), §§1–2. Read on 22 November 2026. The sentence quoted above is from the end of §2.
+- Lucas, "Minds, Machines and Gödel", *Philosophy* 36 (1961) 112–127. Read on 22 November 2026.
+- Penrose, "Beyond the Doubting of a Shadow", *Psyche* 2(23) (1996), §§3.4–3.13 (the reply to Chalmers) and §6 (on errors). Read on 23 November 2026.
+- Koellner, Part II (above), p. 470, for his doubt that the question has a definite sense.
+
+Named in the objections table but not read by us, so what they argue is not described here beyond their place in the debate: Putnam, "Minds and Machines" (1960); Benacerraf, "God, the Devil, and Gödel", *The Monist* 51 (1967) 9–32; Shapiro, "Incompleteness, Mechanism, and Optimism", *Bulletin of Symbolic Logic* 4 (1998) 273–302; Boolos's introductory note to Gödel's 1951 lecture. Their places are taken from Koellner (Part I, p. 340 and note 7, p. 358 and note 44; Part II, p. 470, note 22) and from Cheng's survey. Gödel's remark to Wang is quoted in Koellner, Part I, pp. 358–359.
+
 #### Abstract read, text not read
 
 - Corradini and Galvan, "Analysis of Penrose's Second Argument Formalised in DTK System", *Logic and Logical Philosophy* 31(3) (2022) 471–500, [doi:10.12775/LLP.2021.019](https://doi.org/10.12775/LLP.2021.019). Its conclusion, in the abstract's words: if such a formalism exists there is "at least one true non-arithmetic proposition known to the human mind" that the formalism cannot derive.
@@ -274,9 +299,8 @@ Both abstracts were read on 23 November 2026 in the publisher's records at Cross
 
 #### Unverified until the protocol checks them
 
-- Penrose, *Shadows of the Mind* (1994) ch. 2–3; "Beyond the Doubting of a Shadow", *Psyche* 2 (1996).
-- Lucas, "Minds, Machines and Gödel", *Philosophy* 36 (1961).
-- Chalmers, "Minds, Machines, and Mathematics", *Psyche* 2 (1995). Lindström, *Journal of Philosophical Logic* 30 (2001). Shapiro, *Journal of Philosophical Logic* 32 (2003).
+- Penrose, *Shadows of the Mind* (1994), the rest of ch. 2–3 beyond pp. 72–77.
+- Lindström, *Journal of Philosophical Logic* 30 (2001). Shapiro, *Journal of Philosophical Logic* 32 (2003).
 - Suggested addition: Stern, "Proving that the Mind is Not a Machine?" (2018).
 
 #### Prior art and dependencies, checked 22 November 2026
