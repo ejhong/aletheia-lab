@@ -82,4 +82,16 @@ Dated entries, newest last: what was tried, what happened, what next.
 - Lesson for this question: a second-hand theorem statement can drop a definition. Do not "repair" a theorem
   from a summary; get the primary source first, or mark the repair as a guess. The protocol had said to take the
   statements from Reinhardt's own papers, and Stage 2A went ahead without them.
+- 2026-11-23: PR #35 (Reinhardt correction) merged. Eugene approved both large tiers.
+- Tier 2B re-scoped after Reinhardt: his Theorems 3 and 5 need no arithmetic, so the tier is a concrete logic
+  with K and quantifiers, not the whole of epistemic arithmetic. Wrote Amendment 4 and pushed it (c18ea26)
+  before the check. Check: two rounds, $9.07; round 1 found axioms with free variables (fixed: axioms are
+  sentences). One OpenAI reply was malformed JSON and stopped that run; re-running filled the gap. Locked
+  `Statement4.lean` at 05:07 UTC (9f3d4ae); proofs in `Results4.lean` (c95beac, then 4a94b08).
+- CI failed once on c95beac: the forbidden-word check matched a docstring line that began with the word
+  "axiom". Reworded the comment; no proof changed.
+- Eugene supplied Koellner's Part II (*J. Phil.* 115(9)). Read §§I–IV. It gives Penrose's argument in eight
+  steps and the verdict, but not the full axioms of DT, for which it points to Koellner's 2016 chapter "Gödel's
+  Disjunction". Corradini and Galvan's two papers (*Logic and Logical Philosophy* 2022, 2024) are open access; a
+  direct download returned a web page, not the PDF. Tier 2C is not started.
 

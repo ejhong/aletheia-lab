@@ -1,13 +1,14 @@
-# Machine-check the Gödel argument: results for Stages 1 and 2A
+# Machine-check the Gödel argument: results for Stages 1, 2A and 2B
 
 Issue #19 · Lane: proof · Protocol locked 2026-11-22T17:49:01Z · Stage 2A statements locked 2026-11-23T02:52:00Z, and two
-more at 03:30:51Z · Three amendments (2026-11-23)
+more at 03:30:51Z · Tier 2B statements locked 2026-11-23T05:07:22Z · Four amendments (2026-11-23)
 
 ## Answer
 
 Stage 1: all thirteen locked statements are proved in Lean 4. Stage 2A: all nine are proved as well; see
-[Stage 2A](#stage-2a-a-knowledge-operator) below. In both, the conclusion turns on what a reasoner can know about
-its own reliability, and never on whether it is a machine.
+[Stage 2A](#stage-2a-a-knowledge-operator) below. Tier 2B: all six are proved; see
+[Tier 2B](#tier-2b-a-logic-of-knowledge-with-quantifiers). That makes twenty-eight. Throughout, the conclusion
+turns on what a reasoner can know about its own reliability, and never on whether it is a machine.
 
 The rest of this section, and everything down to the Stage 2A heading, is about Stage 1.
 
@@ -252,12 +253,13 @@ rounds beside it, and Amendment 2.
 
 | Item | Divergence | Effect on what is claimed |
 |---|---|---|
-| S2c | Google: `divergent`. Koellner's Theorem 6 refutes the single sentence ∃e K(K = F_e) inside EA_T. The Lean derives a contradiction for each fixed F, sentence by sentence, in an abstract setting with no arithmetic. OpenAI: `faithful_with_caveats`. | S2c is a counterpart of Theorem 6, not a formalization of it. In particular it does not handle a quantifier over machines inside the language. That is tier 2B. |
+| S2c | Google: `divergent`. Koellner's Theorem 6 refutes the single sentence ∃e K(K = F_e) inside EA_T. The Lean derives a contradiction for each fixed F, sentence by sentence, in an abstract setting with no arithmetic. OpenAI: `faithful_with_caveats`. | S2c is a counterpart of Theorem 6, not a formalization of it. In particular it does not handle a quantifier over machines inside the language. Tier 2B does: see S3b. |
 
 ### Limits of Stage 2A
 
 - **Abstract.** No statement is literally about EA or EA_T. "The base is closed under necessitation" and "F has
-  a Gödel sentence" are assumed, where the sources derive them.
+  a Gödel sentence" are assumed, where the sources derive them. Tier 2B derives the first of these for its own
+  logic (S3a).
 - **Reinhardt, partly read.** His 1985 *Noûs* paper was read (pp. 320–332) only after the first seven statements
   were locked. Attributions to it are now checked against his text. His other papers were not read: the
   consistency of the weak thesis is attributed to them through Koellner, Cheng and Reinhardt's own Remark 4.
@@ -273,6 +275,97 @@ rounds beside it, and Amendment 2.
 - **The consistency side is cited, not proved:** that a truthful knower can be a machine without knowing which
   (Reinhardt), and can even know that it is some machine (Carlson).
 - **Penrose's second argument** (*Shadows*, ch. 3) is still not covered. That is tier 2C.
+
+## Tier 2B: a logic of knowledge with quantifiers
+
+Added under Amendment 4. The logic and the statements: `lean/GodelArgument/Statement4.lean`. Proofs:
+`lean/GodelArgument/Results4.lean`.
+
+### Answer
+
+All six locked statements are proved in Lean 4, each from Lean's three standard axioms only. The build passes
+in CI with warnings treated as errors
+([run 45116115330](https://github.com/ejhong/aletheia-lab/actions/runs/45116115330), commit `4a94b08`).
+
+Stage 2A treated sentences as unanalysed, so it could not say "there is a machine such that…" inside the
+language. Tier 2B defines an actual formal language with the operator K and with quantifiers, gives it
+Reinhardt's proof system, and proves his two central theorems in it. Neither needs arithmetic. That is
+Reinhardt's own observation: these results "do not really depend on the Gödel fixed point construction, but are
+more basic" (1985, p. 325).
+
+### What follows from what (plain summary)
+
+Read U(e, x) as "x belongs to the e-th set"; think of the outputs of the e-th machine. Nothing else is assumed
+about U.
+
+1. **Knowing which set you are is refuted, inside the language.** The logic proves that there is no e such that
+   it is known that the things known not to belong to themselves are exactly the members of the e-th set (S3b).
+2. **Being some set gives a truth you cannot know.** Suppose only that for some e those things *are* exactly the
+   e-th set, whether or not it is known which. Then for some e: e is not in the e-th set, and that is not known
+   (S3c). Nor is its negation known, so it is "absolutely undecidable" (S3d). And if the supposition is known,
+   so is the conclusion (S3e). This is Gödel's disjunction, in Reinhardt's form: either the knower is no such
+   set, or there are truths it can never know.
+3. **The rule "what is proved is known" is derived**, not assumed (S3a). Stage 2A had to assume it.
+4. **The logic is consistent** (S3f).
+
+Points 1 and 2 differ only in where "it is known that" stands. "For some e, it is known that I am the e-th set"
+is refuted. "For some e, I am the e-th set" is not refuted here; it leads to the second horn of the disjunction
+instead. Reinhardt reports that it is consistent with these axioms (Remark 4, citing his 1981 paper); that is
+cited, not proved here.
+
+### Results table
+
+"Axioms for K used" is read off the proof. It is not a machine-checked claim that the others are unnecessary.
+
+| Claim | Lean name | Axioms for K used | Status | Source |
+|---|---|---|---|---|
+| S3a. What the logic proves outright, it proves to be known | `necessitationIsDerived` | distribution; "what is known is known to be known"; K of each axiom | Proved | Reinhardt 1985, pp. 321, 329 |
+| S3b. Every theory proves ¬∃e K∀x(K¬U(x,x) ↔ U(e,x)) | `knowingWhichSetRefuted` | distribution; "what is known is so", and K of it; K∀xφ → ∀xKφ. Not "known to be known" | Proved | Reinhardt 1985, pp. 327–328, Theorem 5 |
+| S3c. If T proves ∃e∀x(K¬U(x,x) ↔ U(e,x)), then T proves ∃e(¬U(e,e) ∧ ¬K¬U(e,e)) | `thesisGivesUnknownTruth` | "what is known is so" only | Proved | Reinhardt 1985, pp. 325–326, Theorem 3 |
+| S3d. Under the same hypothesis, T proves ∃e(¬K¬U(e,e) ∧ ¬K¬¬U(e,e)) | `thesisGivesAbsolutelyUndecidable` | "what is known is so" only | Proved | Reinhardt 1985, p. 326, c) |
+| S3e. If T proves K of the hypothesis, T proves K of the conclusion of S3c | `knownThesisGivesKnownUnknownTruth` | as S3a and S3c | Proved | Reinhardt 1985, p. 326, "Moreover" |
+| S3f. The logic does not prove falsehood | `logicIsConsistent` | – | Proved | the lab's own |
+
+The uses of the axioms agree with Reinhardt's remarks: his proof of Theorem 5 "does not use the BB axiom"
+(p. 327), and in Theorem 3 "the only axiom for B used is the correctness of B" (p. 327).
+
+**The logic, in brief.** Formulas: binary relation symbols applied to variables, falsehood, implication, "for
+all x", and K. Axioms: the universal closures of tautologies, universal instantiation, distribution of the
+quantifier, vacuous quantification, and four axioms for K (distribution, what is known is so, what is known is
+known to be known, K∀xφ → ∀xKφ); and K of each of those sentences. One rule: modus ponens. This follows Reinhardt
+1985, pp. 322–323, restricted to a language without arithmetic.
+
+**Non-vacuity.** S3f is the non-vacuity result: the logic proves these things without proving everything. It is
+shown by reading Kφ as φ in a one-element interpretation.
+
+**Audit.** Six theorems pass `#assert_standard_axioms` inside the build; 43 in all. No `sorry`, `admit`,
+`native_decide` or `axiom` in the source. These proofs use no definition or theorem of the Foundation library.
+
+### Statement check
+
+Two rounds, both before the lock; this time the definition of the logic was checked as well as the statements.
+Details: `statement-check/REPORT-2B.md` and Amendment 4.
+
+- **Planted errors:** three, one of them inside the axioms ("what is so is known" in place of "what is known is
+  so"). Both checkers caught all three in both rounds.
+- **Final verdicts:** all seven items compared with Reinhardt's text are `faithful` or `faithful_with_caveats`
+  from both checkers. No divergence stands. The abbreviations and S3f have no passage and were translated blind.
+- **The check changed the logic.** Round 1 found that the draft allowed axioms with free variables, where
+  Reinhardt takes universal closures. Axioms are now sentences.
+
+### Limits of tier 2B
+
+- **A fragment.** No function symbols, constants, equality or arithmetic. So the reading of U(e, x) as "the e-th
+  machine outputs x" is a reading: nothing in the logic says the sets are recursively enumerable.
+- **One instance.** Reinhardt's theorems are about a schema, for any formula U with two free variables. Here U is
+  a relation symbol and only the diagonal instance is stated. That instance is the one his proofs use.
+- **Theories may contain formulas with free variables.** Reinhardt's are sets of sentences.
+- **"The usual schemas of logic"** are rendered by four schemas. That these yield every first-order validity of
+  the fragment is not proved here.
+- **Consistency of the thesis is cited, not proved.** Reading Kφ as φ shows the logic consistent, but it refutes
+  the thesis of S3c, so it cannot show the thesis consistent.
+- **No truth predicate.** Koellner's Theorems 5 and 6 are stated in a system with one; these are Reinhardt's
+  forms without it.
 
 ## Amendments
 
@@ -297,21 +390,26 @@ written and pushed before the check and the proofs. It records what the paper st
 confirmation that S2a and S2d match Reinhardt's Theorem 1 and his proof of Theorem 5, and two added statements,
 S2f and S2g. The fixed-point hypothesis of S2f was weakened after round 1 of its check.
 
+**Amendment 4 (2026-11-23).** Tier 2B, approved by Eugene. Written and pushed before the check and the proofs.
+It records why the tier was re-scoped (Reinhardt's two central theorems need no arithmetic), the logic, the six
+statements, and the two check rounds. Departure from the plan as first written: axioms were restricted to
+sentences after round 1.
+
 ## Spending
 
-$25.98 of the $50 budget, all on statement checks (`SPENDING.md`): $12.38 for Stage 1, $0.32 for Amendment 1,
-$9.50 for Stage 2A, $3.78 for Amendment 3.
+$35.05 of the $50 budget, all on statement checks (`SPENDING.md`): $12.38 for Stage 1, $0.32 for Amendment 1,
+$9.50 for Stage 2A, $3.78 for Amendment 3, $9.07 for tier 2B.
 
 ## Who did the work
 
 AI agents did this work, directed by Eugene Jhong, who also supplied the photographs of Penrose's book and the
-papers by Cheng and Reinhardt. Dates are
+papers by Cheng, Reinhardt and Koellner (Part II, not yet used). Dates are
 2026-11-22, and 2026-11-23 for Amendment 1.
 
 - **Anthropic, Claude Opus 5.5:** first assessment of the brief; issue #19.
 - **Anthropic, Claude Fable 5.2:** second assessment, source reading, statements, protocol, statement-check
-  design, proofs and this document, for Stage 1 and for Stage 2A.
-- **OpenAI, `gpt-6.2-astra`** and **Google, `gemini-4-neon`:** the statement checks, Stage 1 and Stage 2A.
+  design, proofs and this document, for Stage 1, Stage 2A and tier 2B.
+- **OpenAI, `gpt-6.2-astra`** and **Google, `gemini-4-neon`:** the statement checks, for all three.
 - **xAI, `grok-4.7`:** named as tie-breaker; not needed.
 - **The Lean 4 kernel** checked the proofs.
 
@@ -328,5 +426,10 @@ something real but smaller than its conclusion.
 The second stage gave the reasoner a way to say "I know", and the picture held. A knower does outrun any system
 it knows to be reliable. A knower cannot know which system it is. But in every case the step that does the work
 is the same one: knowing that your own knowledge is true. Take that away and a machine's own notion of proof
-passes every other test. Nothing in these proofs uses the difference between a mind and a machine. Penrose's
-later, subtler argument is not settled here; it is a further stage, not started.
+passes every other test. Nothing in these proofs uses the difference between a mind and a machine.
+
+The third step built a small formal language in which "there is a machine such that…" can actually be said,
+and checked two results in it. One: no reasoner can know which machine it is. Two: if a reasoner is some machine
+without knowing which, then there are truths it can never know. Together these are Gödel's own conclusion, a
+choice between two alternatives, and the proofs do not say which holds. Penrose's later, subtler argument tries
+to rule one of them out. It is not settled here; it is a further stage, not started.
