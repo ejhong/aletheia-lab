@@ -127,7 +127,19 @@ the page images. Copies read are listed in `../MANIFEST.md`.
 
 > There are no derivability conditions on the system; rather the assumption on q is that it is known to be complete for intuitive provability: that is, anything provable in the intuitive sense is provable in the sense of q. […] Theorem 6. Suppose there is a formula q(x) with one free variable x such that for every sentence s of T, (B ≤ q) T ⊢ B(Bs → q[s]) (i.e., q is an intuitive upper bound on what is provable). Then T ⊢ B¬B Con q (i.e., the consistency of q is absolutely unprovable). Here by Con q we mean specifically ∀x¬(q(x) & q(ng(x))), where ng is a primitive recursive term of arithmetic representing negation. Proof. Choose s by the fixed point theorem so that T ⊢ B(s ↔ Bq(ng[s])). […] We have used very strongly the property B → BB. However, examination of the proof shows that the correctness of B need not be used, but only B(Bp → p).
 
-*P-R323 to P-R328 were transcribed on 2026-11-23 by Claude Fable 5.2 from the page images of the JSTOR scan supplied
+## P-R321 — Reinhardt (1985), *Noûs* 19(3), pp. 320–321 ("p / Bp" is a rule written as a fraction in the original)
+
+> Thus we suppose that what is humanly provable is closed under modus ponens, contains all tautologies (however complex), and the usual logical axiom schemas as well. […] Finally, there is the obvious rule p / Bp; to say that intuitive provability may use this rule is just to say that Bp → BBp is true.
+
+## P-R323b — Reinhardt (1985), *Noûs* 19(3), p. 323, after the axioms for B
+
+> (We mention explicitly that universal generalization ∀xp → p(x/t) and Leibniz' law x = y → (p(u/x) → p(u/y)) are both allowed. We need not regard the former as a logical law here, but because of our restriction on terms t these have no undesirable or unintuitive consequences.) If T is a set of sentences, then T ⊢ p means p is deducible by means of modus ponens using logical axioms and sentences of T.
+
+## P-R326 — Reinhardt (1985), *Noûs* 19(3), pp. 325–327, Theorem 3, parts of its proof, and Remark 4
+
+> These results, however, do not really depend on the Gödel fixed point construction, but are more basic, as the next theorem shows. Theorem 3. Let U(e,x) be any formula with two free variables e,x. Suppose in addition that (for each formula p with one free variable x) T has the following thesis (in case U is an r.e. formula of arithmetic which is universal for r.e. sets, this is just the Post-Turing thesis): a) T ⊢ ∃e∀x(Bp(x) ↔ U(e,x)). Then there is a formula q(e) with one free variable e such that b) T ⊢ ∃e(q(e) & ¬Bq(e)). […] Moreover, if a) holds with B prefixed, then so does b) (that is, knowledge of the Turing thesis entails knowledge that there exists an absolutely undecidable sentence). Proof. Note that reading U(e,x) as x ∈ e, a) is very similar to the paradoxical class construction scheme. Taking q(x) = ¬U(x,x) for p in a) yields […] Note that the correctness of B together with b) implies c) T ⊢ ∃e(¬Bq(e) & ¬B¬q(e)), which is the natural reading for "q(e) is absolutely undecidable". […] In this argument we of course make essential use of quantification into the modal context Bq(x), but as pointed out already, the only axiom for B used is the correctness of B […] Remark 4. The hypothesis of the above theorem (in the Post-Turing form), ∃e∀x(Bq(x) ↔ U(e,x)), is known to be consistent with our axioms (see Reinhardt (1981)). The consistency of the stronger claim (i.e. with B prefixed) is an open problem.
+
+*P-R321 to P-R328 were transcribed on 2026-11-23 by Claude Fable 5.2 from the page images of the JSTOR scan supplied
 by Eugene. The scan's text layer garbles the logical symbols, so only the words could be checked mechanically.*
 
 *P-P73 to P-P76 were transcribed on 2026-11-23 by Claude Fable 5.2 from photographs of the printed book supplied by

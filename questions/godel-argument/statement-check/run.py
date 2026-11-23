@@ -11,6 +11,7 @@ Planted wrong items ("decoys") are mixed in to measure whether the checker catch
     python3 run.py --report                # write REPORT.md from out/
     python3 run.py --stage 2a ...          # the same commands for Stage 2A (Statement2.lean, items2a.json, out2a/)
     python3 run.py --stage 2r ...          # and for Amendment 3 (Statement3.lean, items2r.json, out2r/)
+    python3 run.py --stage 2b ...          # and for Amendment 4, tier 2B (Statement4.lean, items2b.json, out2b/)
 
 Keys come from the environment: OPENAI_API_KEY, GEMINI_API_KEY, XAI_API_KEY.
 """
@@ -39,6 +40,7 @@ REPORT_HEAD = [
 ORDER = ["DEF-A", "S1a", "X2", "DEF-B", "S1b1", "X1", "S1b2", "DEF-C", "S1c", "X3", "S1a2", "S1a3", "DEF-D",
          "S1b3", "S1c2", "S1c3", "S1c4", "S1d", "S1d2", "S1e"]
 PREAMBLE = ""  # a `variable` line shown above the definitions, when the statement file has one
+KEEP = set()   # names shown as they are (basic syntax), although they are listed in DEFS for the context
 
 # Model IDs and list prices (USD per million tokens, input/output) as of 2026-11-22.
 VENDORS = {
@@ -68,6 +70,23 @@ def use_stage_2a():
     ORDER = ["DEF-E", "S2a", "X5", "DEF-F", "S2c", "DEF-G", "X6", "S2a2", "S2e", "S2b", "X4", "S2d", "X7", "S2b2"]
     DEFS = ["ClosedUnderNecessitation", "KnowledgeClosedUnderMP", "Factive", "KnowsOwnFactivity", "HasGödelSentence"]
     PREAMBLE = next(line for line in STATEMENT.read_text().splitlines() if line.startswith("variable ")) + "\n"
+
+
+def use_stage_2b():
+    """Amendment 4, tier 2B: a concrete logic of knowledge with quantifiers, defined in its own statement file."""
+    global STATEMENT, OUT, ITEMS, NOTATION, REPORT, REPORT_HEAD, ORDER, DEFS, PREAMBLE, KEEP
+    STATEMENT = HERE.parent / "lean" / "GodelArgument" / "Statement4.lean"
+    if not STATEMENT.exists():
+        STATEMENT = HERE / "Statement4.draft.lean"
+    OUT, ITEMS, NOTATION, REPORT = HERE / "out2b", HERE / "items2b.json", HERE / "notation2b.md", HERE / "REPORT-2B.md"
+    REPORT_HEAD = ["Amendment 4, tier 2B, round 2. Written by `run.py --stage 2b --report` from the raw outputs in",
+                   "`out2b/`. Verdicts are the checkers' own. Round 1 (axioms not yet restricted to sentences) is",
+                   "frozen under `round1-2b/`."]
+    ORDER = ["DEF-L1", "S3b", "X11", "DEF-L2", "S3a", "X12", "S3c", "DEF-L3", "X10", "S3d", "S3e", "S3f"]
+    DEFS = ["Form", "neg", "and", "iff", "ex", "Free", "subst", "FreeFor", "PropVal", "Tautology", "BaseAx", "Sig",
+            "Closed", "Axiom", "Proves", "U", "diagAll", "diagQ"]
+    KEEP = {"Form", "neg", "and", "iff", "ex"}
+    PREAMBLE = ""
 
 
 def use_stage_2r():
@@ -171,8 +190,8 @@ def lean_blocks():
     blocks = {}
     for chunk in re.split(r"\n(?=/--)", body):
         code = strip_comments(chunk)
-        code = "\n".join(line for line in code.splitlines() if line.strip() not in ("end", "section") and not line.startswith(("open ", "namespace ", "variable "))) + "\n"
-        m = re.search(r"^(?:noncomputable )?(?:def|abbrev) (\w+)", code, flags=re.M)
+        code = "\n".join(line for line in code.splitlines() if line.strip() not in ("end", "section") and not line.startswith(("open ", "namespace ", "variable ", "end "))) + "\n"
+        m = re.search(r"^(?:noncomputable )?(?:def|abbrev|inductive) (\w+)", code, flags=re.M)
         if m:
             blocks[m.group(1)] = code[m.start():]
     return blocks
@@ -180,6 +199,8 @@ def lean_blocks():
 
 def anonymize(code, target_names):
     for i, name in enumerate(DEFS, 1):
+        if name in KEEP:
+            continue
         label = "Target" if name in target_names and len(target_names) == 1 else f"Def{i}"
         code = re.sub(rf"(?<![\w.]){name}\b", label, code)
     for name in target_names:
@@ -206,7 +227,7 @@ def build_items():
         items.append({**it, "decoy": False, "target": anonymize(target, names), "context": anonymize(context, names)})
     for it in spec["decoys"]:
         code = strip_comments(it["lean"])
-        names = re.findall(r"^(?:noncomputable )?(?:def|abbrev) (\w+)", code, flags=re.M)
+        names = re.findall(r"^(?:noncomputable )?(?:def|abbrev|inductive) (\w+)", code, flags=re.M)
         context = PREAMBLE + "\n".join(blocks[n] for n in DEFS if n not in names)
         items.append({**it, "names": names, "decoy": True, "target": anonymize(code, names),
                       "context": anonymize(context, names)})
@@ -375,6 +396,9 @@ if __name__ == "__main__":
         args = args[2:]
     elif args[:2] == ["--stage", "2r"]:
         use_stage_2r()
+        args = args[2:]
+    elif args[:2] == ["--stage", "2b"]:
+        use_stage_2b()
         args = args[2:]
     if args == ["--probe"]:
         for v in ("openai", "google", "xai"):

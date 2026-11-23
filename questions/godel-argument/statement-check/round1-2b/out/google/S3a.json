@@ -1,0 +1,26 @@
+{
+  "id": "S3a",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T04:43:41Z",
+  "target": "def Target : Prop := ∀ φ : Form, Def14 ∅ φ → Def14 ∅ (K φ)\n",
+  "usage": [
+    [
+      1605,
+      3585
+    ],
+    [
+      2656,
+      18346
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target defines the proposition asserting that for every formula φ (of type Form), if φ is derivable from the empty set of hypotheses ∅ in the deductive system Def14 (i.e., Def14 ∅ φ holds), then K φ is also derivable from ∅ in Def14 (i.e., Def14 ∅ (K φ) holds). Here, derivability from ∅ in Def14 means being obtainable using only modus ponens (from imp α β and α, infer β) starting from the axioms in Def13 (the hypothesis rule of Def14 requires membership in ∅ and thus provides no premises). The axiom set Def13 consists of every formula in Def12 together with K ψ for every formula ψ in Def12, where Def12 is the closure of Def11 under zero or more applications of universal quantification (all x), and Def11 consists of: (1) propositional tautologies (formulas true under every map v : Form → Prop with ¬ v fls and v (imp α β) ↔ (v α → v β)); (2) universal instantiation imp (all x α) (Def7 x y α) whenever y is free for x in α (Def8 y x α); (3) quantifier distribution imp (all x (imp α β)) (imp (all x α) (all x β)); (4) vacuous quantification imp α (all x α) whenever x does not occur free in α (¬ Def6 x α); and (5) the four K-schemas imp (K (imp α β)) (imp (K α) (K β)), imp (K α) α, imp (K α) (K (K α)), and imp (K (all x α)) (all x (K α)). There are no extra restrictions on φ (for instance, φ need not be closed), the statement is restricted specifically to the empty premise set ∅ rather than an arbitrary set of hypotheses T, and it asserts a meta-level implication (necessitation admissibility) rather than derivability of the object-language implication imp φ (K φ).\"}\n```",
+  "translation": "Target defines the proposition asserting that for every formula φ (of type Form), if φ is derivable from the empty set of hypotheses ∅ in the deductive system Def14 (i.e., Def14 ∅ φ holds), then K φ is also derivable from ∅ in Def14 (i.e., Def14 ∅ (K φ) holds). Here, derivability from ∅ in Def14 means being obtainable using only modus ponens (from imp α β and α, infer β) starting from the axioms in Def13 (the hypothesis rule of Def14 requires membership in ∅ and thus provides no premises). The axiom set Def13 consists of every formula in Def12 together with K ψ for every formula ψ in Def12, where Def12 is the closure of Def11 under zero or more applications of universal quantification (all x), and Def11 consists of: (1) propositional tautologies (formulas true under every map v : Form → Prop with ¬ v fls and v (imp α β) ↔ (v α → v β)); (2) universal instantiation imp (all x α) (Def7 x y α) whenever y is free for x in α (Def8 y x α); (3) quantifier distribution imp (all x (imp α β)) (imp (all x α) (all x β)); (4) vacuous quantification imp α (all x α) whenever x does not occur free in α (¬ Def6 x α); and (5) the four K-schemas imp (K (imp α β)) (imp (K α) (K β)), imp (K α) α, imp (K α) (K (K α)), and imp (K (all x α)) (all x (K α)). There are no extra restrictions on φ (for instance, φ need not be closed), the statement is restricted specifically to the empty premise set ∅ rather than an arbitrary set of hypotheses T, and it asserts a meta-level implication (necessitation admissibility) rather than derivability of the object-language implication imp φ (K φ).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Within the declared relational fragment, Target faithfully formalizes the rule 'from p infer Bp' as a derived rule for pure logical derivability (∅ ⊢ φ implies ∅ ⊢ K φ), matching Reinhardt's rule p / Bp together with his definition of T ⊢ p as closure of the logical axioms and T under modus ponens.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Within the declared relational fragment, Target faithfully formalizes the rule 'from p infer Bp' as a derived rule for pure logical derivability (∅ ⊢ φ implies ∅ ⊢ K φ), matching Reinhardt's rule p / Bp together with his definition of T ⊢ p as closure of the logical axioms and T under modus ponens."
+  }
+}

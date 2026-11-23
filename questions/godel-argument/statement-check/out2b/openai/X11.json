@@ -1,0 +1,31 @@
+{
+  "id": "X11",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:55:37Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def15 T (ex 1 Def17) → Def15 T (ex 1 (and Def18 (K Def18)))\n",
+  "usage": [
+    [
+      1585,
+      466
+    ],
+    [
+      2701,
+      765
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Write R(a,b) for atom 0 a b, and let x and y denote object-language variables 1 and 0, respectively. Target defines the following proposition: for every set T of formulas, if the formula ∃x ∀y (K(¬R(y,y)) ↔ R(x,y)) is derivable from T, then the formula ∃x (¬R(x,x) ∧ K(¬R(x,x))) is derivable from that same T. Derivability here means starting from members of T or Def14 axioms and using modus ponens. No restriction is placed on T, and the premise formula need not itself be a member of T. The two existential quantifiers bind x separately within their respective formulas; no common witness is required.\"}",
+  "translation": "Write R(a,b) for atom 0 a b, and let x and y denote object-language variables 1 and 0, respectively. Target defines the following proposition: for every set T of formulas, if the formula ∃x ∀y (K(¬R(y,y)) ↔ R(x,y)) is derivable from T, then the formula ∃x (¬R(x,x) ∧ K(¬R(x,x))) is derivable from that same T. Derivability here means starting from members of T or Def14 axioms and using modus ponens. No restriction is placed on T, and the premise formula need not itself be a member of T. The two existential quantifiers bind x separately within their respective formulas; no common witness is required.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The conclusion reverses the polarity of the knowledge claim. With `Def18` representing q(e) = ¬U(e,e), part b) requires `and Def18 (neg (K Def18))`, but the TARGET has `and Def18 (K Def18)`. The negation inside q(e) does not negate K.\"\n    }\n  ],\n  \"summary\": \"The premise matches the stated diagonal instance of a), but the conclusion asserts that T proves there is an e for which q(e) is true and known, rather than true and not known.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The conclusion reverses the polarity of the knowledge claim. With `Def18` representing q(e) = ¬U(e,e), part b) requires `and Def18 (neg (K Def18))`, but the TARGET has `and Def18 (K Def18)`. The negation inside q(e) does not negate K."
+      }
+    ],
+    "summary": "The premise matches the stated diagonal instance of a), but the conclusion asserts that T proves there is an e for which q(e) is true and known, rather than true and not known."
+  }
+}

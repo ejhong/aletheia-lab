@@ -1,0 +1,26 @@
+{
+  "id": "S3e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T05:05:57Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def15 T (K (ex 1 Def17)) → Def15 T (K (ex 1 (and Def18 (neg (K Def18)))))\n",
+  "usage": [
+    [
+      1592,
+      734
+    ],
+    [
+      2673,
+      1170
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Write x for variable 0, y for variable 1, and R(a,b) for atom 0 a b. Target defines this proposition: for every set T of formulas, if T derives K applied to “there exists a y such that, for every x, K(¬R(x,x)) if and only if R(y,x),” then the same T derives K applied to “there exists a y such that both ¬R(y,y) and ¬K(¬R(y,y)) hold.” In each formula the outer K covers the entire existential. The implication is between derivability claims: “derives” means obtainable using Def14 axioms, members of T, and modus ponens. No restriction is placed on T, and the premise formula need not itself belong to T.\"}",
+  "translation": "Write x for variable 0, y for variable 1, and R(a,b) for atom 0 a b. Target defines this proposition: for every set T of formulas, if T derives K applied to “there exists a y such that, for every x, K(¬R(x,x)) if and only if R(y,x),” then the same T derives K applied to “there exists a y such that both ¬R(y,y) and ¬K(¬R(y,y)) hold.” In each formula the outer K covers the entire existential. The implication is between derivability claims: “derives” means obtainable using Def14 axioms, members of T, and modus ponens. No restriction is placed on T, and the premise formula need not itself belong to T.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"For the stated instance, U(e,x) is R(e,x) and p(z) = q(z) = ¬R(z,z), the diagonal choice in Reinhardt’s proof. The TARGET says exactly that if T derives the K-prefixed instance of a), then the same T derives the K-prefixed instance of b), with K covering the entire existential in each case.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "For the stated instance, U(e,x) is R(e,x) and p(z) = q(z) = ¬R(z,z), the diagonal choice in Reinhardt’s proof. The TARGET says exactly that if T derives the K-prefixed instance of a), then the same T derives the K-prefixed instance of b), with K covering the entire existential in each case."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "S3b",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:55:37Z",
+  "target": "def Target : Prop := ∀ T : Set Form, Def15 T (neg (ex 1 (K Def17)))\n",
+  "usage": [
+    [
+      1571,
+      533
+    ],
+    [
+      2545,
+      1647
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every set T of formulas, with no hypotheses on T (in particular, even for the empty set), the formula ¬∃x₁ K(∀x₀ (K(¬R₀(x₀,x₀)) ↔ R₀(x₁,x₀))) is derivable from T. Here R₀(a,b) denotes the atom with relation index 0 and arguments a and b. The existential binds x₁ across the outer K, and the universal binds x₀ on both sides of the biconditional. A derivation may use members of T but need not use any. It may also use A or K(A) as an axiom whenever A is a closed formula obtained from a Def11 axiom by zero or more universal generalizations. The only inference rule in the derivation is modus ponens.\"}",
+  "translation": "Target is the proposition that for every set T of formulas, with no hypotheses on T (in particular, even for the empty set), the formula ¬∃x₁ K(∀x₀ (K(¬R₀(x₀,x₀)) ↔ R₀(x₁,x₀))) is derivable from T. Here R₀(a,b) denotes the atom with relation index 0 and arguments a and b. The existential binds x₁ across the outer K, and the universal binds x₀ on both sides of the biconditional. A derivation may use members of T but need not use any. It may also use A or K(A) as an axiom whenever A is a closed formula obtained from a Def11 axiom by zero or more universal generalizations. The only inference rule in the derivation is modus ponens.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The scope is restricted as advertised: Lean states the diagonal instance with p(x) = ¬U(x,x) and U fixed to the binary relation symbol at index 0. It does not state the schema in p or allow U to stand for an arbitrary two-variable formula of arithmetic.\"\n    }\n  ],\n  \"summary\": \"For the claimed instance, the quantifiers, both occurrences of K, and the negation have exactly the source’s intended scopes. Requiring every T to prove the negation is equivalent to refuting the sentence in the base logic: T may be empty, and adding hypotheses preserves the derivation.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The scope is restricted as advertised: Lean states the diagonal instance with p(x) = ¬U(x,x) and U fixed to the binary relation symbol at index 0. It does not state the schema in p or allow U to stand for an arbitrary two-variable formula of arithmetic."
+      }
+    ],
+    "summary": "For the claimed instance, the quantifiers, both occurrences of K, and the negation have exactly the source’s intended scopes. Requiring every T to prove the negation is equivalent to refuting the sentence in the base logic: T may be empty, and adding hypotheses preserves the derivation."
+  }
+}

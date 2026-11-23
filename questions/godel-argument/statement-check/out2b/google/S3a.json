@@ -1,0 +1,35 @@
+{
+  "id": "S3a",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T04:57:26Z",
+  "target": "def Target : Prop := ∀ φ : Form, Def15 ∅ φ → Def15 ∅ (K φ)\n",
+  "usage": [
+    [
+      1638,
+      4549
+    ],
+    [
+      2707,
+      17396
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"`Target` is the proposition asserting that for every formula `φ` of type `Form` (with no explicit hypothesis that `φ` be closed), if `φ` is derivable from the empty set of premises `∅` in the deductive system `Def15`, then `K φ` is also derivable from `∅` in `Def15`. Here, `Def15 ∅` is the set of formulas obtainable from the axiom set `Def14` using modus ponens (`mp`: from `imp φ ψ` and `φ`, derive `ψ`), with no premise formulas available since the hypothesis set is `∅`. A formula belongs to `Def14` if and only if it is either a closed formula (having no free variables, `Def13`) obtained by prefixing zero or more universal quantifiers (`all x`) to a basic axiom in `Def11` (`Def12`), or of the form `K ψ` where `ψ` is such a closed universal generalization of a basic axiom in `Def11`. The basic axioms `Def11` are: all propositional tautologies (`Def10`, formulas holding under every valuation `v : Form → Prop` that falsifies `fls` and interprets `imp` as meta-implication); universal instantiation `imp (all x φ) (Def7 x y φ)` whenever `y` is free for `x` in `φ` (`Def8 y x φ`, where `Def7 x y φ` substitutes `y` for free occurrences of `x` in `φ`); quantifier distribution `imp (all x (imp φ ψ)) (imp (all x φ) (all x ψ))`; vacuous quantification `imp φ (all x φ)` whenever `x` is not free in `φ`; and the modal axioms `imp (K (imp φ ψ)) (imp (K φ) (K ψ))`, `imp (K φ) φ`, `imp (K φ) (K (K φ))`, and `imp (K (all x φ)) (all x (K φ))`. The proposition applies only to derivability from the empty set `∅`, not from an arbitrary premise set `T`.\"}\n```",
+  "translation": "`Target` is the proposition asserting that for every formula `φ` of type `Form` (with no explicit hypothesis that `φ` be closed), if `φ` is derivable from the empty set of premises `∅` in the deductive system `Def15`, then `K φ` is also derivable from `∅` in `Def15`. Here, `Def15 ∅` is the set of formulas obtainable from the axiom set `Def14` using modus ponens (`mp`: from `imp φ ψ` and `φ`, derive `ψ`), with no premise formulas available since the hypothesis set is `∅`. A formula belongs to `Def14` if and only if it is either a closed formula (having no free variables, `Def13`) obtained by prefixing zero or more universal quantifiers (`all x`) to a basic axiom in `Def11` (`Def12`), or of the form `K ψ` where `ψ` is such a closed universal generalization of a basic axiom in `Def11`. The basic axioms `Def11` are: all propositional tautologies (`Def10`, formulas holding under every valuation `v : Form → Prop` that falsifies `fls` and interprets `imp` as meta-implication); universal instantiation `imp (all x φ) (Def7 x y φ)` whenever `y` is free for `x` in `φ` (`Def8 y x φ`, where `Def7 x y φ` substitutes `y` for free occurrences of `x` in `φ`); quantifier distribution `imp (all x (imp φ ψ)) (imp (all x φ) (all x ψ))`; vacuous quantification `imp φ (all x φ)` whenever `x` is not free in `φ`; and the modal axioms `imp (K (imp φ ψ)) (imp (K φ) (K ψ))`, `imp (K φ) φ`, `imp (K φ) (K (K φ))`, and `imp (K (all x φ)) (all x (K φ))`. The proposition applies only to derivability from the empty set `∅`, not from an arbitrary premise set `T`.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The rule is stated only for the restricted logical fragment defined in the context (binary relation symbols and variables only, omitting constants, function symbols, general terms t in universal instantiation, equality/Leibniz's law, and arithmetic mentioned in Reinhardt's system); this limitation is declared separately by the author.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Because the axiom set Def14 restricts all logical axioms to closed formulas (Def13), Def15 ∅ φ can only hold for sentences, making Target vacuously true for open formulas; Reinhardt's statement of p / Bp does not explicitly restrict logical theorems to closed formulas (though his definition of T ⊢ p takes T to be a set of sentences, and open validities are still captured via their universal closures).\"\n    }\n  ],\n  \"summary\": \"The Lean Target faithfully formalizes the claim that the necessitation rule 'from p infer Bp' is a derived rule of the modus-ponens-based deductive system when there are no extra hypotheses (∅ ⊢ φ → ∅ ⊢ K φ). The only divergences are minor: the result is stated for the separately declared restricted fragment without terms or equality, and derivability from ∅ is restricted to closed formulas.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The rule is stated only for the restricted logical fragment defined in the context (binary relation symbols and variables only, omitting constants, function symbols, general terms t in universal instantiation, equality/Leibniz's law, and arithmetic mentioned in Reinhardt's system); this limitation is declared separately by the author."
+      },
+      {
+        "severity": "minor",
+        "description": "Because the axiom set Def14 restricts all logical axioms to closed formulas (Def13), Def15 ∅ φ can only hold for sentences, making Target vacuously true for open formulas; Reinhardt's statement of p / Bp does not explicitly restrict logical theorems to closed formulas (though his definition of T ⊢ p takes T to be a set of sentences, and open validities are still captured via their universal closures)."
+      }
+    ],
+    "summary": "The Lean Target faithfully formalizes the claim that the necessitation rule 'from p infer Bp' is a derived rule of the modus-ponens-based deductive system when there are no extra hypotheses (∅ ⊢ φ → ∅ ⊢ K φ). The only divergences are minor: the result is stated for the separately declared restricted fragment without terms or equality, and derivability from ∅ is restricted to closed formulas."
+  }
+}

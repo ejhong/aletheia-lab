@@ -1,0 +1,35 @@
+{
+  "id": "X11",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T04:42:03Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def14 T (ex 1 Def16) → Def14 T (ex 1 (and Def17 (K Def17)))\n",
+  "usage": [
+    [
+      1624,
+      5625
+    ],
+    [
+      3034,
+      6908
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target asserts the proposition that for every set of formulas T (with no additional assumptions on T), if the sentence ∃ v₁ ∀ v₀ (K (¬ R₀(v₀, v₀)) ↔ R₀(v₁, v₀)) is derivable from T in the proof system Def14, then the sentence ∃ v₁ (¬ R₀(v₁, v₁) ∧ K (¬ R₀(v₁, v₁))) is also derivable from T in Def14. Here the formal language consists of formulas built from binary atomic formulas Rᵣ(a, b) (indexed by r, a, b : ℕ, with R₀ denoting atom 0), falsity, implication, universal quantification over natural-number variables (here v₀ = 0 and v₁ = 1), and the unary modal operator K, with ¬, ∧, ↔, and ∃ defined as the usual classical abbreviations. Note that in the conclusion formula, the second conjunct is positively K (¬ R₀(v₁, v₁)) (not negated). Derivability from T in Def14 is defined inductively by three rules: (1) axioms from Def13, which are either universal generalizations (Def12) of instances of the base axiom schemas Def11—namely classical propositional tautologies, universal instantiation ∀x φ → φ[y/x] when y is free for x in φ (where substitution replaces free occurrences of x by y without renaming other bound variables), quantifier distribution ∀x (φ → ψ) → (∀x φ → ∀x ψ), vacuous generalization φ → ∀x φ when x is not free in φ, K (φ → ψ) → (K φ → K ψ), K φ → φ, K φ → K (K φ), and K (∀x φ) → ∀x (K φ)—or formulas of the form K ψ where ψ belongs to Def12; (2) hypotheses in T; and (3) modus ponens (from φ → ψ and φ, derive ψ).\"}\n```",
+  "translation": "Target asserts the proposition that for every set of formulas T (with no additional assumptions on T), if the sentence ∃ v₁ ∀ v₀ (K (¬ R₀(v₀, v₀)) ↔ R₀(v₁, v₀)) is derivable from T in the proof system Def14, then the sentence ∃ v₁ (¬ R₀(v₁, v₁) ∧ K (¬ R₀(v₁, v₁))) is also derivable from T in Def14. Here the formal language consists of formulas built from binary atomic formulas Rᵣ(a, b) (indexed by r, a, b : ℕ, with R₀ denoting atom 0), falsity, implication, universal quantification over natural-number variables (here v₀ = 0 and v₁ = 1), and the unary modal operator K, with ¬, ∧, ↔, and ∃ defined as the usual classical abbreviations. Note that in the conclusion formula, the second conjunct is positively K (¬ R₀(v₁, v₁)) (not negated). Derivability from T in Def14 is defined inductively by three rules: (1) axioms from Def13, which are either universal generalizations (Def12) of instances of the base axiom schemas Def11—namely classical propositional tautologies, universal instantiation ∀x φ → φ[y/x] when y is free for x in φ (where substitution replaces free occurrences of x by y without renaming other bound variables), quantifier distribution ∀x (φ → ψ) → (∀x φ → ∀x ψ), vacuous generalization φ → ∀x φ when x is not free in φ, K (φ → ψ) → (K φ → K ψ), K φ → φ, K φ → K (K φ), and K (∀x φ) → ∀x (K φ)—or formulas of the form K ψ where ψ belongs to Def12; (2) hypotheses in T; and (3) modus ponens (from φ → ψ and φ, derive ψ).",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The conclusion omits the negation on the modal conjunct: Target concludes `T ⊢ ∃e (q(e) ∧ K q(e))` (`ex 1 (and Def17 (K Def17))`), asserting that `q(e)` is provable/known, whereas Reinhardt's Theorem 3(b) concludes `T ⊢ ∃e (q(e) & ¬Bq(e))` (`ex 1 (and Def17 (neg (K Def17)))`), asserting that `q(e)` is true but not provable/known. Under the premise `∃e ∀x (K(¬U(x,x)) ↔ U(e,x))`, `¬U(e,e) ∧ K(¬U(e,e))` is in fact contradictory, making Target materially wrong and false for consistent theories containing the premise.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Theorem 3 in Reinhardt applies to any formula `U(e,x)` with two free variables, whereas Target fixes `U` to a single atomic binary relation symbol `atom 0` (`Def15`), as noted in the author's claim; similarly, the premise and conclusion are specialized to the proof's particular formulas `p(x) := ¬U(x,x)` and `q(e) := ¬U(e,e)` rather than universally quantifying over all `p(x)` and existentially quantifying over `q(e)`.\"\n    }\n  ],\n  \"summary\": \"Target is divergent from Reinhardt's Theorem 3(a)→(b) because it drops the negation before `K Def17` in the conclusion, asserting `∃e (q(e) ∧ K q(e))` instead of `∃e (q(e) ∧ ¬K q(e))`, which reverses the epistemic claim and renders the formalization false.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The conclusion omits the negation on the modal conjunct: Target concludes `T ⊢ ∃e (q(e) ∧ K q(e))` (`ex 1 (and Def17 (K Def17))`), asserting that `q(e)` is provable/known, whereas Reinhardt's Theorem 3(b) concludes `T ⊢ ∃e (q(e) & ¬Bq(e))` (`ex 1 (and Def17 (neg (K Def17)))`), asserting that `q(e)` is true but not provable/known. Under the premise `∃e ∀x (K(¬U(x,x)) ↔ U(e,x))`, `¬U(e,e) ∧ K(¬U(e,e))` is in fact contradictory, making Target materially wrong and false for consistent theories containing the premise."
+      },
+      {
+        "severity": "minor",
+        "description": "Theorem 3 in Reinhardt applies to any formula `U(e,x)` with two free variables, whereas Target fixes `U` to a single atomic binary relation symbol `atom 0` (`Def15`), as noted in the author's claim; similarly, the premise and conclusion are specialized to the proof's particular formulas `p(x) := ¬U(x,x)` and `q(e) := ¬U(e,e)` rather than universally quantifying over all `p(x)` and existentially quantifying over `q(e)`."
+      }
+    ],
+    "summary": "Target is divergent from Reinhardt's Theorem 3(a)→(b) because it drops the negation before `K Def17` in the conclusion, asserting `∃e (q(e) ∧ K q(e))` instead of `∃e (q(e) ∧ ¬K q(e))`, which reverses the epistemic claim and renders the formalization false."
+  }
+}

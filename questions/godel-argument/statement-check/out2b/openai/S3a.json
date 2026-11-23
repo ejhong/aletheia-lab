@@ -1,0 +1,26 @@
+{
+  "id": "S3a",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T05:05:57Z",
+  "target": "def Target : Prop := ∀ φ : Form, Def15 ∅ φ → Def15 ∅ (K φ)\n",
+  "usage": [
+    [
+      1570,
+      255
+    ],
+    [
+      2279,
+      784
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition: for every formula φ, if φ is derivable by Def15 from the empty set of hypotheses, then K φ is also derivable by Def15 from the empty set of hypotheses. Both derivations may use Def14 axioms and modus ponens, but no hypotheses. There is no separate requirement that φ be closed or be an axiom. The implication is between derivability claims; it does not ask for a derivation of the formula imp φ (K φ), and it does not quantify over nonempty hypothesis sets.\"}",
+  "translation": "Target is defined to be the following proposition: for every formula φ, if φ is derivable by Def15 from the empty set of hypotheses, then K φ is also derivable by Def15 from the empty set of hypotheses. Both derivations may use Def14 axioms and modus ponens, but no hypotheses. There is no separate requirement that φ be closed or be an axiom. The implication is between derivability claims; it does not ask for a derivation of the formula imp φ (K φ), and it does not quantify over nonempty hypothesis sets.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Target expresses the rule p / Bp as closure of theoremhood under K: if φ is derivable from the axioms alone, so is Kφ. It does not extend the rule to derivations that use extra hypotheses.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Target expresses the rule p / Bp as closure of theoremhood under K: if φ is derivable from the axioms alone, so is Kφ. It does not extend the rule to derivations that use extra hypotheses."
+  }
+}

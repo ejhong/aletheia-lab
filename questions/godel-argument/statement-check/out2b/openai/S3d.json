@@ -1,0 +1,26 @@
+{
+  "id": "S3d",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:56:50Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def15 T (ex 1 Def17) → Def15 T (ex 1 (and (neg (K Def18)) (neg (K (neg Def18)))))\n",
+  "usage": [
+    [
+      1595,
+      510
+    ],
+    [
+      2720,
+      848
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Write x for variable 1, y for variable 0, and R(a,b) for atom 0 a b. Target is the proposition that for every set T of formulas, if T derives the formula “there exists an x such that for every y, K(¬R(y,y)) if and only if R(x,y),” then T derives the formula “there exists an x such that both ¬K(¬R(x,x)) and ¬K(¬¬R(x,x)).” The double negation inside the second K is present as written. In both cases, derivability means using Def14 axioms and members of T, with modus ponens as the only inference rule. There is no restriction on T. The outer implication is between derivability claims, not inside a derived formula; the two existential quantifiers belong to separate formulas, and no common witness is required.\"}",
+  "translation": "Write x for variable 1, y for variable 0, and R(a,b) for atom 0 a b. Target is the proposition that for every set T of formulas, if T derives the formula “there exists an x such that for every y, K(¬R(y,y)) if and only if R(x,y),” then T derives the formula “there exists an x such that both ¬K(¬R(x,x)) and ¬K(¬¬R(x,x)).” The double negation inside the second K is present as written. In both cases, derivability means using Def14 axioms and members of T, with modus ponens as the only inference rule. There is no restriction on T. The outer implication is between derivability claims, not inside a derived formula; the two existential quantifiers belong to separate formulas, and no common witness is required.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Taking U(e,x) = R(e,x) and q(x) = ¬R(x,x), the premise is exactly a) for p = q, and the conclusion is exactly c): T proves ∃e(¬Bq(e) ∧ ¬B¬q(e)). The double negation inside the second B is correct because ¬q(e) is ¬¬R(e,e).\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Taking U(e,x) = R(e,x) and q(x) = ¬R(x,x), the premise is exactly a) for p = q, and the conclusion is exactly c): T proves ∃e(¬Bq(e) ∧ ¬B¬q(e)). The double negation inside the second B is correct because ¬q(e) is ¬¬R(e,e)."
+  }
+}

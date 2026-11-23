@@ -1,0 +1,16 @@
+{
+  "id": "S3f",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:43:31Z",
+  "target": "def Target : Prop := ¬ Def14 ∅ fls\n",
+  "usage": [
+    [
+      1525,
+      398
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that there is no derivation of the formula fls from the empty set of hypotheses. No hypothesis is available, but a derivation may use as an axiom any Def11 formula prefixed by zero or more universal quantifiers, or K applied once to any such prefixed formula. The only inference rule is modus ponens: from imp φ ψ and φ, infer ψ. The definition states this nonderivability condition; it does not prove it or require nonderivability from any nonempty set of hypotheses.\"}",
+  "translation": "Target is the proposition that there is no derivation of the formula fls from the empty set of hypotheses. No hypothesis is available, but a derivation may use as an axiom any Def11 formula prefixed by zero or more universal quantifiers, or K applied once to any such prefixed formula. The only inference rule is modus ponens: from imp φ ψ and φ, infer ψ. The definition states this nonderivability condition; it does not prove it or require nonderivability from any nonempty set of hypotheses."
+}

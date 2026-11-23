@@ -9,3 +9,5 @@ import GodelArgument.NonVacuity2
 import GodelArgument.Statement3
 import GodelArgument.Results3
 import GodelArgument.NonVacuity3
+import GodelArgument.Statement4
+import GodelArgument.Results4

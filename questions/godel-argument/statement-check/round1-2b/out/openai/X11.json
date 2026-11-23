@@ -1,0 +1,31 @@
+{
+  "id": "X11",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:42:03Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def14 T (ex 1 Def16) → Def14 T (ex 1 (and Def17 (K Def17)))\n",
+  "usage": [
+    [
+      1551,
+      477
+    ],
+    [
+      2693,
+      557
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Write R(a,b) for the atom with relation label 0 and arguments a and b, and xᵢ for variable i. Target is defined to be the following proposition: for every set T of formulas, if the formula ∃x₁ ∀x₀ (K(¬R(x₀,x₀)) ↔ R(x₁,x₀)) is derivable from T, then the formula ∃x₁ (¬R(x₁,x₁) ∧ K(¬R(x₁,x₁))) is derivable from the same T. In both places, derivability means derivability by modus ponens from Def13 axioms and members of T. There is no restriction on T, and neither formula is required to be a member of T. The two existential quantifiers belong to separate object-language formulas; no explicit or shared witness is required.\"}",
+  "translation": "Write R(a,b) for the atom with relation label 0 and arguments a and b, and xᵢ for variable i. Target is defined to be the following proposition: for every set T of formulas, if the formula ∃x₁ ∀x₀ (K(¬R(x₀,x₀)) ↔ R(x₁,x₀)) is derivable from T, then the formula ∃x₁ (¬R(x₁,x₁) ∧ K(¬R(x₁,x₁))) is derivable from the same T. In both places, derivability means derivability by modus ponens from Def13 axioms and members of T. There is no restriction on T, and neither formula is required to be a member of T. The two existential quantifiers belong to separate object-language formulas; no explicit or shared witness is required.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Part b) requires ∃e (q(e) ∧ ¬Bq(e)), but the target concludes ∃e (q(e) ∧ Kq(e)). Since Def17 already denotes q(e) = ¬U(e,e), its internal negation does not negate K. The second conjunct should be `neg (K Def17)`.\"\n    }\n  ],\n  \"summary\": \"The premise matches the stated diagonal instance of a), but the conclusion says that q(e) holds and is known rather than that it holds and is not known.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Part b) requires ∃e (q(e) ∧ ¬Bq(e)), but the target concludes ∃e (q(e) ∧ Kq(e)). Since Def17 already denotes q(e) = ¬U(e,e), its internal negation does not negate K. The second conjunct should be `neg (K Def17)`."
+      }
+    ],
+    "summary": "The premise matches the stated diagonal instance of a), but the conclusion says that q(e) holds and is known rather than that it holds and is not known."
+  }
+}

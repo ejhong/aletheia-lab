@@ -9,7 +9,7 @@ dek: What exactly does the Lucas–Penrose argument prove, and from which premis
 updated: 2026-11-23
 ---
 
-> **Where things stand, 23 November 2026.** Stages 0 and 1 are done, and so is the first tier of Stage 2. Twenty-two statements are locked and proved in Lean, using only Lean's three standard axioms. In short: the argument shows a mind is not a machine *it knows to be sound*; it does not show a mind is not a machine. With a knowledge operator added, the same thing holds: what carries each result is a reasoner knowing that its own knowledge is true, never whether it is a machine. Penrose's later argument is a further tier, not started.
+> **Where things stand, 23 November 2026.** Stages 0 and 1 are done, and so are two of the three tiers of Stage 2. Twenty-eight statements are locked and proved in Lean, using only Lean's three standard axioms. In short: the argument shows a mind is not a machine *it knows to be sound*; it does not show a mind is not a machine. With a knowledge operator added, and then with real quantifiers, the same holds: no reasoner can know which machine it is, and a reasoner that is some machine has truths it can never know. What carries each result is a reasoner knowing that its own knowledge is true, never whether it is a machine. Penrose's later argument is the last tier, not started.
 
 ## The question
 
@@ -58,14 +58,14 @@ Thin wrappers: Foundation already proves the underlying theorems (their names ar
 
 ### Stage 2 · Epistemic arithmetic
 Status: in progress
-Condition: Eugene approved it on 23 November 2026. Tier 2A is done, inside the original $50 budget. Tiers 2B and 2C are not started and need his say-so.
+Condition: Eugene approved it on 23 November 2026. Tiers 2A and 2B are done, inside the original $50 budget. He has approved 2C as well; it is not started.
 Gate: Each tier gets its own statement check, entered through `amendments.md` before anything in it is proved.
 
 This is where the new work is: theories in which the knower K is an operator with its own axioms (K1–K4), as in Reinhardt's epistemic arithmetic. The targets, as stated in Koellner (2018, Part I), are Reinhardt's Theorem 3 (p. 354), Theorem 5 (p. 355) and Theorem 6 (p. 357). Theorems 7 and 8, consistency results by Reinhardt and by Carlson, are cited, not proved. Statements are to be taken from Reinhardt's own papers, since Koellner's summary is informal in places.
 
 - [x] **2A, small.** Done 23 November. An abstract layer: K is an operator on sentences, and each principle about it is a stated assumption. Nine statements locked after statement checks, then proved: Reinhardt's theorem that a knower exceeds any system it knows to be sound; his absolute version of the second incompleteness theorem; a sentence-by-sentence counterpart of his result that knowing which system you are is contradictory, with the core of his own proof; and two results showing which assumptions cannot be dropped. Seven were locked before Reinhardt's 1985 paper was in hand. It arrived the same day, corrected one of them, and two more were added from it.
-- [ ] **2B, large.** EA and EA_T as concrete formal systems in Lean, then Theorems 5 and 6 as stated.
-- [ ] **2C, large.** Koellner's Part II (not yet read): DTK and Penrose's new argument, written as a derivation with each unlicensed step isolated as a named hypothesis.
+- [x] **2B.** Done 23 November, on a smaller scope than first planned. Reinhardt's paper shows that his two central theorems need no arithmetic. So this tier builds a real formal language with the knowledge operator and quantifiers, with his proof system, and proves those two theorems in it: knowing which set you are is refuted, and being some set gives a truth you cannot know. Six statements, locked after two rounds of statement check, then proved. Epistemic arithmetic itself, with its arithmetic and its truth predicate, is not built.
+- [ ] **2C, large.** Penrose's new argument, as Koellner's Part II sets it out in eight steps, written as a derivation with each unlicensed step isolated as a named hypothesis. Part II is now in hand and partly read. It does not give the full axioms of its truth theory; those are in Koellner's 2016 chapter, not yet in hand.
 
 ### Stage 3 · Stretch
 Status: not started
@@ -154,7 +154,30 @@ Add an operator K, read "it is known that". F is any system; it need not be a ma
 
 **Limits.** The layer is abstract: facts the literature derives from arithmetic are assumed here, and nothing with a quantifier inside the language is expressed. Reinhardt's 1985 paper was read only after the first seven statements were locked; his other papers were not read.
 
-Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Cost: $12.38, all on the statement check.
+> **Tier 2B, 23 November 2026.** All six statements are proved, in a formal language that has the knowledge operator and real quantifiers. No verdict on ORCH-C040.
+
+Read U(e, x) as "x belongs to the e-th set"; think of the outputs of the e-th machine. Then:
+
+- **Knowing which set you are is refuted, inside the language.** There is no e such that it is known that the things known not to belong to themselves are exactly the e-th set.
+- **Being some set gives a truth you cannot know.** If for some e those things are exactly the e-th set, known or not, then for some e: e is not in the e-th set, and that can never be known. This is Gödel's disjunction: either the knower is no such set, or there are truths it can never know.
+- **"What is proved is known" is derived, not assumed**, and the logic is consistent.
+
+The first two differ only in where "it is known that" stands.
+
+| Claim | Lean name | Axioms for K used | Status |
+|---|---|---|---|
+| What the logic proves, it proves to be known | `necessitationIsDerived` | distribution; known to be known; K of each axiom | Proved |
+| Every theory proves ¬∃e K∀x(K¬U(x,x) ↔ U(e,x)) | `knowingWhichSetRefuted` | distribution; what is known is so, and K of it; K∀xφ → ∀xKφ | Proved; Reinhardt's Theorem 5 |
+| If T proves ∃e∀x(K¬U(x,x) ↔ U(e,x)), T proves ∃e(¬U(e,e) ∧ ¬K¬U(e,e)) | `thesisGivesUnknownTruth` | what is known is so | Proved; Reinhardt's Theorem 3 |
+| The same, as "absolutely undecidable" | `thesisGivesAbsolutelyUndecidable` | what is known is so | Proved |
+| The same, known | `knownThesisGivesKnownUnknownTruth` | as the first and third rows | Proved |
+| The logic does not prove falsehood | `logicIsConsistent` | none | Proved |
+
+**How it was checked.** As before, and this time the definition of the logic was checked too. Both checkers caught all three planted errors, one of them inside the axioms. Round 1 found the draft allowed axioms with free variables; they are now sentences. No divergence stands.
+
+**Limits.** The language is a fragment with no arithmetic, so "the e-th machine" is a reading: nothing says the sets are computable. Only the one diagonal instance of Reinhardt's schema is stated. That "I am some set" is consistent with these axioms is Reinhardt's result, cited, not proved here.
+
+Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Cost: $35.05 of the $50 budget, all on statement checks.
 
 ## Sources
 
@@ -169,6 +192,7 @@ Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/que
 - Alexander, "A machine that knows its own code", [arXiv:1305.6080v2](https://arxiv.org/abs/1305.6080v2), read in full from the PDF.
 - Cheng, "Gödel's incompleteness theorem and the Anti-Mechanist Argument: revisited", [arXiv:1902.05902v2](https://arxiv.org/abs/1902.05902v2). Used for attributions only.
 - Reinhardt, "Absolute Versions of Incompleteness Theorems", *Noûs* 19(3) (1985) 317–346, [JSTOR](https://www.jstor.org/stable/2214945), pp. 320–332, from a scan supplied by Eugene.
+- Koellner, "On the Question of Whether the Mind Can Be Mechanized, II: Penrose's New Argument", *Journal of Philosophy* 115(9) (2018) 453–484, §§I–IV, from a copy supplied by Eugene. Not yet used in any result.
 
 #### Bibliographic details verified, text not read
 

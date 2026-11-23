@@ -1,0 +1,26 @@
+{
+  "id": "S3e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:43:22Z",
+  "target": "def Target : Prop :=\n  ∀ T : Set Form, Def14 T (K (ex 1 Def16)) → Def14 T (K (ex 1 (and Def17 (neg (K Def17)))))\n",
+  "usage": [
+    [
+      1558,
+      463
+    ],
+    [
+      2654,
+      996
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Write R(a,b) for the atom with relation symbol 0 and variable arguments a and b. Target is the following proposition: for every set T of formulas, if K(∃y ∀x (K(¬R(x,x)) ↔ R(y,x))) is derivable from T, then K(∃y (¬R(y,y) ∧ ¬K(¬R(y,y)))) is derivable from that same T. Here y is variable 1 and x is variable 0. In both formulas the outer K covers the whole existential formula; no particular witness is required. There is no restriction on T. Derivability means obtainability by modus ponens from members of T and the Def13 axioms: the latter are Def11 formulas prefixed by zero or more universal quantifiers, or K applied to such a prefixed formula.\"}",
+  "translation": "Write R(a,b) for the atom with relation symbol 0 and variable arguments a and b. Target is the following proposition: for every set T of formulas, if K(∃y ∀x (K(¬R(x,x)) ↔ R(y,x))) is derivable from T, then K(∃y (¬R(y,y) ∧ ¬K(¬R(y,y)))) is derivable from that same T. Here y is variable 1 and x is variable 0. In both formulas the outer K covers the whole existential formula; no particular witness is required. There is no restriction on T. Derivability means obtainability by modus ponens from members of T and the Def13 axioms: the latter are Def11 formulas prefixed by zero or more universal quantifiers, or K applied to such a prefixed formula.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"For the stated instance, Lean takes U(e,x) = R(e,x) and p(x) = q(x) = ¬R(x,x), as in the diagonal choice in the proof. It says that if T derives a) with K prefixed to the whole existential formula, then the same T derives b) with K prefixed in exactly the same way.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "For the stated instance, Lean takes U(e,x) = R(e,x) and p(x) = q(x) = ¬R(x,x), as in the diagonal choice in the proof. It says that if T derives a) with K prefixed to the whole existential formula, then the same T derives b) with K prefixed in exactly the same way."
+  }
+}

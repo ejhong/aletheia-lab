@@ -1,0 +1,35 @@
+{
+  "id": "X10",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:42:49Z",
+  "target": "def Target : Prop := ∀ T : Set Form, Def14 T (neg (ex 1 Def16))\n",
+  "usage": [
+    [
+      1535,
+      478
+    ],
+    [
+      2457,
+      910
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the proposition that for every set T of formulas, the object-language formula ¬(∃x₁ ∀x₀ (K(¬R₀(x₀,x₀)) ↔ R₀(x₁,x₀))) is derivable from T. Here R₀(xᵢ,xⱼ) denotes `atom 0 i j`. A derivation may use members of T and Def13 axioms as starting formulas, with modus ponens as its only inference rule. There is no condition on T: it may be empty, and no member of T is required to be used.\"}",
+  "translation": "Target is the proposition that for every set T of formulas, the object-language formula ¬(∃x₁ ∀x₀ (K(¬R₀(x₀,x₀)) ↔ R₀(x₁,x₀))) is derivable from T. Here R₀(xᵢ,xⱼ) denotes `atom 0 i j`. A derivation may use members of T and Def13 axioms as starting formulas, with modus ponens as its only inference rule. There is no condition on T: it may be empty, and no member of T is required to be used.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The outer B is missing. Since `Def16` begins with `all 0`, the source sentence is `ex 1 (K Def16)`, but the target negates `ex 1 Def16`. It thus claims that even the unmodalized universal equivalence is inconsistent, a stronger conclusion. The B inside the equivalence applies only to ¬U(x,x) and does not supply the missing B.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"As acknowledged, `Def15` fixes U to one binary relation symbol; the target does not range over arbitrary two-free-variable formulas for U, including formulas of arithmetic.\"\n    }\n  ],\n  \"summary\": \"The diagonal instance and variable assignments are correct. For the claimed instance, the formula derived from every T should be `neg (ex 1 (K Def16))`.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The outer B is missing. Since `Def16` begins with `all 0`, the source sentence is `ex 1 (K Def16)`, but the target negates `ex 1 Def16`. It thus claims that even the unmodalized universal equivalence is inconsistent, a stronger conclusion. The B inside the equivalence applies only to ¬U(x,x) and does not supply the missing B."
+      },
+      {
+        "severity": "minor",
+        "description": "As acknowledged, `Def15` fixes U to one binary relation symbol; the target does not range over arbitrary two-free-variable formulas for U, including formulas of arithmetic."
+      }
+    ],
+    "summary": "The diagonal instance and variable assignments are correct. For the claimed instance, the formula derived from every T should be `neg (ex 1 (K Def16))`."
+  }
+}

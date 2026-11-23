@@ -1,0 +1,16 @@
+{
+  "id": "DEF-L3",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T04:42:40Z",
+  "target": "def Def15 (a b : ℕ) : Form := atom 0 a b\n\ndef Def16 : Form := all 0 (iff (K (neg (Def15 0 0))) (Def15 1 0))\n\ndef Def17 : Form := neg (Def15 1 1)\n",
+  "usage": [
+    [
+      1511,
+      261
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Write R for the binary atom symbol indexed by 0 and xᵢ for the variable indexed by i. Def15 takes natural numbers a and b, in that order, and returns the formula R(xₐ, xᵦ). Def16 is the formula ∀x₀ (K(¬R(x₀, x₀)) ↔ R(x₁, x₀)). The quantifier binds x₀ on both sides of the biconditional; x₁ is free. Def17 is the formula ¬R(x₁, x₁), with both occurrences of x₁ free. These are definitions of formulas, with no hypotheses or assertions of truth or derivability.\"}",
+  "translation": "Write R for the binary atom symbol indexed by 0 and xᵢ for the variable indexed by i. Def15 takes natural numbers a and b, in that order, and returns the formula R(xₐ, xᵦ). Def16 is the formula ∀x₀ (K(¬R(x₀, x₀)) ↔ R(x₁, x₀)). The quantifier binds x₀ on both sides of the biconditional; x₁ is free. Def17 is the formula ¬R(x₁, x₁), with both occurrences of x₁ free. These are definitions of formulas, with no hypotheses or assertions of truth or derivability."
+}
