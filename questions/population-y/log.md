@@ -55,3 +55,22 @@ Dated entries, newest last: what was tried, what happened, what next.
   has mean 0.03 and standard deviation 1.02 across the 410 ancient-design statistics. This was learned from
   shuffled data and from non-American samples; no real statistic on a Native American genome was computed.
 - **Lock.** Protocol locked after this entry; `MANIFEST.md` holds the hashes of `analysis/sets.tsv` and the code.
+
+## 2026-11-23: locked run, amendments, replication (Claude Fable 5.2)
+
+- **Locked run** (`results/`): primary test detected (Z = 4.23); four of five checks pass; the admixture check
+  fails. The ancient part showed `REGION.NAM_EAST` with impossible values (M1 +7.6, M3 −12.0, MF −10.7).
+- **Cause 1:** `REGION.NAM_EAST` was 18 ancient people from Guam and the Northern Marianas, and `REGION.NORTH`
+  held 12 Greenland Norse. Amendment 1 written and pushed, then `analysis/build_samples_amended.py` and
+  `analysis/amend.py` written and run (`results/amended/`). All 760 present-day statistics are identical between
+  the two runs.
+- **Cause 2:** the admixture check's second equation is degenerate. `explore/admixture_terms.py` (exploratory)
+  shows why. Amendment 2 written and pushed before the amended check ran. The amended check is well defined but
+  too imprecise to pass.
+- **Replication:** OpenAI `gpt-6.2-astra` and Google `gemini-4-neon` each wrote a program from the protocol,
+  amendments and format note alone. Both agree with ours on every set and every required statistic, in both runs.
+  My first comparison script matched the primary statistic to the replicator's 10 cM row by mistake and reported
+  one disagreement; the two rows have the same estimate and differ only in block size. Fixed in
+  `replication/compare.py`.
+- **Not done:** the ADMIXTOOLS 2 courtesy check (R would not install). Filing with Aletheia is Eugene's call.
+- **Spent:** $5.72 of $40.

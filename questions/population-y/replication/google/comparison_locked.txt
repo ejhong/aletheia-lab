@@ -1,0 +1,29 @@
+SETS: 243 of 243 of our sets have identical members in theirs
+
+F4 STATISTICS by section (required sections marked *)
+section     ours compared  agree n differs f4 differs Z differs missing
+T1*            8        8      8         0          0         0       0
+T1person*     44       44     44         0          0         0       0
+T2*            2        2      2         0          0         0       0
+T2person*     16       16     16         0          0         0       0
+P*             9        9      9         0          0         0       0
+LOO*          41       41     41         0          0         0       0
+R            288      288    288         0          0         0       0
+Rind          50       25     25         0          0         0      25
+Rother        11       11     11         0          0         0       0
+L*            16       16     16         0          0         0       0
+S            290      290    290         0          0         0       0
+M*           410      410    410         0          0         0       0
+Npaper       360      360    360         0          0         0       0
+C*             4        4      4         0          0         0       0
+
+required statistics: 550 agree of 550
+
+their composites.tsv:
+panel	name	estimate	se
+A	alpha_eur	-1.9683395891	8.34878905364
+A	alpha_afr	-0.534114466667	2.28800237203
+A	P_adj	0.00999596612117	0.0100490713922
+B	alpha_eur	-1.67210018277	19.1430954446
+B	alpha_afr	-0.458657853136	5.26192831945
+B	P_adj	0.0100028499076	0.0164518725505
