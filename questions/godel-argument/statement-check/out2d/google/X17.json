@@ -1,0 +1,35 @@
+{
+  "id": "X17",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:39:12Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (conF φ : Fm),\n    Def10 𝓢 K →\n    𝓢 ⊢ conF 🡒 F φ 🡒 φ →\n    𝓢 ⊢ F φ 🡒 K (F φ) →\n    𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF\n",
+  "usage": [
+    [
+      2936,
+      4532
+    ],
+    [
+      4310,
+      10267
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition asserting that for all types Fm (of sentences) and S (of proof systems), equipped with propositional connectives (LogicalConnective Fm), the logical constants ⊤ and ⊥ (LogicalNeutral Fm), and a provability relation ⊢ between S and Fm (Entailment S Fm); for every proof system 𝓢 of type S that proves all classical propositional tautologies and is closed under modus ponens (Entailment.Cl 𝓢); for every pair of arbitrary functions K, F : Fm → Fm; and for every pair of arbitrary sentences conF, φ : Fm: if (1) for all sentences α, β : Fm, 𝓢 proves K (α 🡒 β) 🡒 (K α 🡒 K β) (which is Def10 𝓢 K), (2) 𝓢 proves conF 🡒 (F φ 🡒 φ), and (3) 𝓢 proves F φ 🡒 K (F φ), then 𝓢 proves (∼(K φ) ⋏ F φ) 🡒 ∼(K conF). Nothing else is assumed: in particular, 𝓢 is not required to be consistent, K and F are arbitrary functions on Fm, conF is an arbitrary sentence with no assumption relating it to the consistency of F beyond hypothesis (2), hypotheses (2) and (3) are assumed only for the given conF and φ rather than for all sentences, and no necessitation rule for K (that 𝓢 ⊢ ψ implies 𝓢 ⊢ K ψ, or even that 𝓢 ⊢ K (conF 🡒 (F φ 🡒 φ))) is assumed.\"}\n```",
+  "translation": "Target is the proposition asserting that for all types Fm (of sentences) and S (of proof systems), equipped with propositional connectives (LogicalConnective Fm), the logical constants ⊤ and ⊥ (LogicalNeutral Fm), and a provability relation ⊢ between S and Fm (Entailment S Fm); for every proof system 𝓢 of type S that proves all classical propositional tautologies and is closed under modus ponens (Entailment.Cl 𝓢); for every pair of arbitrary functions K, F : Fm → Fm; and for every pair of arbitrary sentences conF, φ : Fm: if (1) for all sentences α, β : Fm, 𝓢 proves K (α 🡒 β) 🡒 (K α 🡒 K β) (which is Def10 𝓢 K), (2) 𝓢 proves conF 🡒 (F φ 🡒 φ), and (3) 𝓢 proves F φ 🡒 K (F φ), then 𝓢 proves (∼(K φ) ⋏ F φ) 🡒 ∼(K conF). Nothing else is assumed: in particular, 𝓢 is not required to be consistent, K and F are arbitrary functions on Fm, conF is an arbitrary sentence with no assumption relating it to the consistency of F beyond hypothesis (2), hypotheses (2) and (3) are assumed only for the given conF and φ rather than for all sentences, and no necessitation rule for K (that 𝓢 ⊢ ψ implies 𝓢 ⊢ K ψ, or even that 𝓢 ⊢ K (conF 🡒 (F φ 🡒 φ))) is assumed.",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The second hypothesis is `𝓢 ⊢ conF 🡒 F φ 🡒 φ` instead of `𝓢 ⊢ K (conF 🡒 F φ 🡒 φ)`. It omits the outer `K` obtained by `K-intro` in the source proof (and stated in the author's claim). Because `K` is an arbitrary function constrained only by distributivity (`Def10 𝓢 K`), with no `K-intro` or necessitation rule, `conF 🡒 F φ 🡒 φ` cannot be lifted inside `K` and never links `K conF` to `K (F φ)` or `K φ`. Consequently, `Target` is actually false: taking `Fm = Bool × Bool` with componentwise classical connectives, `𝓢 ⊢ x` iff `x = (true, true)`, `c = (true, false)`, `K x = (true, true)` if `x = c` else `(false, false)`, `F x = c`, `conF = c`, and `φ = (true, true)`, all three hypotheses hold while `∼K φ ⋏ F φ 🡒 ∼K conF` evaluates to `(false, true)`.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source states the corollary with the premise on the left of the turnstile (`(∃ϕ ∈ L(PA))(¬Kϕ ∧ Fϕ) ⊢DTK ¬K(ConsF)`), whereas the TARGET states its single-sentence counterpart as an internal implication (`𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF`); given classical logic with the deduction theorem, this is a harmless presentational difference.\"\n    }\n  ],\n  \"summary\": \"The TARGET is divergent because its second hypothesis omits the outer `K` (`𝓢 ⊢ conF 🡒 F φ 🡒 φ` instead of `𝓢 ⊢ K (conF 🡒 F φ 🡒 φ)`), which drops the crucial `K-intro` step from the source proof and makes the formalized statement false.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The second hypothesis is `𝓢 ⊢ conF 🡒 F φ 🡒 φ` instead of `𝓢 ⊢ K (conF 🡒 F φ 🡒 φ)`. It omits the outer `K` obtained by `K-intro` in the source proof (and stated in the author's claim). Because `K` is an arbitrary function constrained only by distributivity (`Def10 𝓢 K`), with no `K-intro` or necessitation rule, `conF 🡒 F φ 🡒 φ` cannot be lifted inside `K` and never links `K conF` to `K (F φ)` or `K φ`. Consequently, `Target` is actually false: taking `Fm = Bool × Bool` with componentwise classical connectives, `𝓢 ⊢ x` iff `x = (true, true)`, `c = (true, false)`, `K x = (true, true)` if `x = c` else `(false, false)`, `F x = c`, `conF = c`, and `φ = (true, true)`, all three hypotheses hold while `∼K φ ⋏ F φ 🡒 ∼K conF` evaluates to `(false, true)`."
+      },
+      {
+        "severity": "minor",
+        "description": "The source states the corollary with the premise on the left of the turnstile (`(∃ϕ ∈ L(PA))(¬Kϕ ∧ Fϕ) ⊢DTK ¬K(ConsF)`), whereas the TARGET states its single-sentence counterpart as an internal implication (`𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF`); given classical logic with the deduction theorem, this is a harmless presentational difference."
+      }
+    ],
+    "summary": "The TARGET is divergent because its second hypothesis omits the outer `K` (`𝓢 ⊢ conF 🡒 F φ 🡒 φ` instead of `𝓢 ⊢ K (conF 🡒 F φ 🡒 φ)`), which drops the crucial `K-intro` step from the source proof and makes the formalized statement false."
+  }
+}

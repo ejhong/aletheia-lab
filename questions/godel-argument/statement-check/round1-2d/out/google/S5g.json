@@ -1,0 +1,26 @@
+{
+  "id": "S5g",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:43:49Z",
+  "target": "def Target : Prop :=\n  (∃ K : Def1, Def3 K ∧ Def4 K ∧ Def8 K ∧ 𝗣𝗔.theory ⊆ K ∧ Def6 K) ∧\n  (∃ K : Def1, Def3 K ∧ Def4 K ∧ Def8 K ∧ 𝗣𝗔.theory ⊆ K ∧ ¬ Def6 K)\n",
+  "usage": [
+    [
+      2879,
+      1821
+    ],
+    [
+      3625,
+      3575
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting the conjunction of two existential statements: (1) there exists a set K of sentences of first-order arithmetic such that every sentence in K is true in the standard model (the natural numbers), K is consistent (does not derive a contradiction in classical first-order logic), every arithmetic sentence derivable from K in classical first-order logic belongs to K, every theorem of Peano arithmetic belongs to K, and there exists a recursively enumerable set F of arithmetic sentences such that K equals the set of all arithmetic sentences derivable from F in classical first-order logic; and (2) there exists a set K of sentences of first-order arithmetic such that every sentence in K is true in the standard model (the natural numbers), K is consistent, every arithmetic sentence derivable from K in classical first-order logic belongs to K, every theorem of Peano arithmetic belongs to K, and there does not exist any recursively enumerable set F of arithmetic sentences such that K equals the set of all arithmetic sentences derivable from F in classical first-order logic.\"}",
+  "translation": "Target is the proposition asserting the conjunction of two existential statements: (1) there exists a set K of sentences of first-order arithmetic such that every sentence in K is true in the standard model (the natural numbers), K is consistent (does not derive a contradiction in classical first-order logic), every arithmetic sentence derivable from K in classical first-order logic belongs to K, every theorem of Peano arithmetic belongs to K, and there exists a recursively enumerable set F of arithmetic sentences such that K equals the set of all arithmetic sentences derivable from F in classical first-order logic; and (2) there exists a set K of sentences of first-order arithmetic such that every sentence in K is true in the standard model (the natural numbers), K is consistent, every arithmetic sentence derivable from K in classical first-order logic belongs to K, every theorem of Peano arithmetic belongs to K, and there does not exist any recursively enumerable set F of arithmetic sentences such that K equals the set of all arithmetic sentences derivable from F in classical first-order logic.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Target faithfully formalizes the author's claim: it asserts both the existence of a sound, consistent, deductively closed set of arithmetic sentences extending the theorems of PA that equals the theorem set of an RE axiom set, and the existence of another such set that is not the theorem set of any RE axiom set. Nothing in the formalization makes the statement trivial or stronger than claimed, and the contrast with Reinhardt's theorem in the source passage is explicitly disclaimed.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Target faithfully formalizes the author's claim: it asserts both the existence of a sound, consistent, deductively closed set of arithmetic sentences extending the theorems of PA that equals the theorem set of an RE axiom set, and the existence of another such set that is not the theorem set of any RE axiom set. Nothing in the formalization makes the statement trivial or stronger than claimed, and the contrast with Reinhardt's theorem in the source passage is explicitly disclaimed."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "S5d",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:41:09Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (conF : Fm),\n    𝓢 ⊢ K conF 🡒 conF →\n    𝓢 ⊢ K conF 🡒 F conF →\n    𝓢 ⊢ conF 🡒 ∼F conF →\n    𝓢 ⊢ ∼K conF\n",
+  "usage": [
+    [
+      2925,
+      2003
+    ],
+    [
+      3851,
+      14673
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition stating that for every type Fm of sentences (equipped with the formal propositional connectives 🡒, ⋏, ⋎, ∼ and constants ⊤, ⊥), every type S of proof systems (equipped with a provability relation ⊢ on Fm), every proof system 𝓢 of type S that proves all classical propositional tautologies in these connectives and is closed under modus ponens, all arbitrary functions K and F from Fm to Fm, and every sentence conF of type Fm: if 𝓢 proves (K conF) 🡒 conF, 𝓢 proves (K conF) 🡒 (F conF), and 𝓢 proves conF 🡒 ∼(F conF), then 𝓢 proves ∼(K conF). Nothing else is required: 𝓢 is not assumed to be consistent or to satisfy any modal or necessitation rules, K and F are completely arbitrary functions with no assumed properties (and are only applied to the single sentence conF), and conF is an arbitrary sentence rather than a formal consistency statement.\"}",
+  "translation": "Target is the proposition stating that for every type Fm of sentences (equipped with the formal propositional connectives 🡒, ⋏, ⋎, ∼ and constants ⊤, ⊥), every type S of proof systems (equipped with a provability relation ⊢ on Fm), every proof system 𝓢 of type S that proves all classical propositional tautologies in these connectives and is closed under modus ponens, all arbitrary functions K and F from Fm to Fm, and every sentence conF of type Fm: if 𝓢 proves (K conF) 🡒 conF, 𝓢 proves (K conF) 🡒 (F conF), and 𝓢 proves conF 🡒 ∼(F conF), then 𝓢 proves ∼(K conF). Nothing else is required: 𝓢 is not assumed to be consistent or to satisfy any modal or necessitation rules, K and F are completely arbitrary functions with no assumed properties (and are only applied to the single sentence conF), and conF is an arbitrary sentence rather than a formal consistency statement.",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The TARGET concludes only `𝓢 ⊢ ∼K conF` (that ConsF is not humanly known), whereas the corollary in [P-CG2-563] concludes that 'the consistency of F is humanly undecidable'. Undecidability requires that neither ConsF nor ¬ConsF is known (`∼K conF ⋏ ∼K(∼conF)`, or `∼D conF` in DTK's determinacy vocabulary); `∼K conF` establishes only one half (unverifiability of ConsF) and does not rule out `K(∼conF)`. In fact, `Target` omits any consistency assumption `conF` and any K-correctness instance `K(∼conF) 🡒 ∼conF`, so it applies even when F is inconsistent—a case in which ¬ConsF would be provable in PA and hence humanly known by the rule of mathematical knowledge in [P-CG2-557], making ConsF humanly decided rather than undecidable.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The TARGET omits the passage's clause that F derives some mathematical proposition not accessible to human knowledge (`∃ φ, F φ ∧ ¬K φ`) and replaces the general inclusion of K in F (read into 'F surpasses K') and the full K-correctness schema (`⊢DTK Kϕ → ϕ`) with single instances at `conF` (`𝓢 ⊢ K conF 🡒 F conF` and `𝓢 ⊢ K conF 🡒 conF`). Under the claim's reading of 'surpasses' as including `K ⊆ F`, these are weakenings of the hypotheses (strengthenings of the implication), though the printed passage does not explicitly state `K ⊆ F`.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Because of the declared abstract setting, arithmetic, coding, quantifiers, formal derivability in F, and the definition of ConsF are not modelled: `K` and `F` are arbitrary functions on an arbitrary sentence type, `conF` is an arbitrary sentence, and Gödel's second incompleteness theorem (`conF 🡒 ∼F conF`) is supplied as an uninterpreted hypothesis, reducing `Target` to a three-atom classical propositional tautology.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The TARGET expresses the dependence on the inclusion hypothesis as a derivability rule (`𝓢 ⊢ K conF 🡒 F conF → 𝓢 ⊢ ∼K conF`) requiring `𝓢` to prove the inclusion at `conF`, rather than as an object-level conditional or a meta-level semantic hypothesis about F and K (though quantifying over all classical systems `𝓢` allows recovering the object-level conditional via extension).\"\n    }\n  ],\n  \"summary\": \"The TARGET matches the author's description of the repaired propositional inference—deriving `𝓢 ⊢ ∼K conF` from K-correctness at `conF`, inclusion `K conF 🡒 F conF`, and `conF 🡒 ∼F conF`—but its conclusion is materially weaker than the corollary's conclusion. Showing only `∼K conF` (that ConsF is not known) does not establish that the consistency of F is humanly undecidable, since it neither assumes F's consistency nor rules out `K(∼conF)`.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The TARGET concludes only `𝓢 ⊢ ∼K conF` (that ConsF is not humanly known), whereas the corollary in [P-CG2-563] concludes that 'the consistency of F is humanly undecidable'. Undecidability requires that neither ConsF nor ¬ConsF is known (`∼K conF ⋏ ∼K(∼conF)`, or `∼D conF` in DTK's determinacy vocabulary); `∼K conF` establishes only one half (unverifiability of ConsF) and does not rule out `K(∼conF)`. In fact, `Target` omits any consistency assumption `conF` and any K-correctness instance `K(∼conF) 🡒 ∼conF`, so it applies even when F is inconsistent—a case in which ¬ConsF would be provable in PA and hence humanly known by the rule of mathematical knowledge in [P-CG2-557], making ConsF humanly decided rather than undecidable."
+      },
+      {
+        "severity": "minor",
+        "description": "The TARGET omits the passage's clause that F derives some mathematical proposition not accessible to human knowledge (`∃ φ, F φ ∧ ¬K φ`) and replaces the general inclusion of K in F (read into 'F surpasses K') and the full K-correctness schema (`⊢DTK Kϕ → ϕ`) with single instances at `conF` (`𝓢 ⊢ K conF 🡒 F conF` and `𝓢 ⊢ K conF 🡒 conF`). Under the claim's reading of 'surpasses' as including `K ⊆ F`, these are weakenings of the hypotheses (strengthenings of the implication), though the printed passage does not explicitly state `K ⊆ F`."
+      },
+      {
+        "severity": "minor",
+        "description": "Because of the declared abstract setting, arithmetic, coding, quantifiers, formal derivability in F, and the definition of ConsF are not modelled: `K` and `F` are arbitrary functions on an arbitrary sentence type, `conF` is an arbitrary sentence, and Gödel's second incompleteness theorem (`conF 🡒 ∼F conF`) is supplied as an uninterpreted hypothesis, reducing `Target` to a three-atom classical propositional tautology."
+      },
+      {
+        "severity": "minor",
+        "description": "The TARGET expresses the dependence on the inclusion hypothesis as a derivability rule (`𝓢 ⊢ K conF 🡒 F conF → 𝓢 ⊢ ∼K conF`) requiring `𝓢` to prove the inclusion at `conF`, rather than as an object-level conditional or a meta-level semantic hypothesis about F and K (though quantifying over all classical systems `𝓢` allows recovering the object-level conditional via extension)."
+      }
+    ],
+    "summary": "The TARGET matches the author's description of the repaired propositional inference—deriving `𝓢 ⊢ ∼K conF` from K-correctness at `conF`, inclusion `K conF 🡒 F conF`, and `conF 🡒 ∼F conF`—but its conclusion is materially weaker than the corollary's conclusion. Showing only `∼K conF` (that ConsF is not known) does not establish that the consistency of F is humanly undecidable, since it neither assumes F's consistency nor rules out `K(∼conF)`."
+  }
+}

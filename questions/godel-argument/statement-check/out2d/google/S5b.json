@@ -1,0 +1,31 @@
+{
+  "id": "S5b",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:40:16Z",
+  "target": "def Target : Prop :=\n  ∃ _ : Theory.RE Def9,\n    (∀ K : Def1, Def3 K → ∃ σ, σ ∈ Def9.theory ∧ σ ∉ K) ∧\n    (∃ K : Def1, Def6 K ∧ Def3 K ∧ Def8 K ∧ 𝗣𝗔.theory ⊆ K ∧ Def7 Def9 ∈ K)\n",
+  "usage": [
+    [
+      2887,
+      4121
+    ],
+    [
+      4171,
+      18932
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Let T be the arithmetic theory obtained by adding to Peano arithmetic (PA) the single axiom given by the formal negation of the standard consistency sentence for Craig's Δ₁ presentation of PA (that is, T = PA ∪ {∼(¬Prov_{PA.craig}(⌜⊥⌝))}, where for any recursively enumerable arithmetic theory F, its consistency sentence is formed as ¬Prov_{F.craig}(⌜⊥⌝) from Craig's Δ₁-presented version of F). Target is the proposition asserting that:\\n1. T is recursively enumerable;\\n2. for every set K of arithmetic sentences, if every sentence in K is true in the standard model of arithmetic (the natural numbers), then there exists an arithmetic sentence σ such that σ is a theorem of T (derivable from T in classical first-order logic) and σ is not in K; and\\n3. there exists a set K of arithmetic sentences such that:\\n   (a) there exists a recursively enumerable arithmetic theory F whose set of theorems (in classical first-order logic) equals K,\\n   (b) every sentence in K is true in the standard model of arithmetic,\\n   (c) K is closed under classical first-order deduction (every arithmetic sentence derivable from K belongs to K),\\n   (d) every theorem of PA belongs to K, and\\n   (e) the standard consistency sentence for Craig's Δ₁ presentation of T (namely ¬Prov_{T.craig}(⌜⊥⌝), formed using the recursive enumerability of T from (1)) belongs to K.\"}\n```",
+  "translation": "Let T be the arithmetic theory obtained by adding to Peano arithmetic (PA) the single axiom given by the formal negation of the standard consistency sentence for Craig's Δ₁ presentation of PA (that is, T = PA ∪ {∼(¬Prov_{PA.craig}(⌜⊥⌝))}, where for any recursively enumerable arithmetic theory F, its consistency sentence is formed as ¬Prov_{F.craig}(⌜⊥⌝) from Craig's Δ₁-presented version of F). Target is the proposition asserting that:\n1. T is recursively enumerable;\n2. for every set K of arithmetic sentences, if every sentence in K is true in the standard model of arithmetic (the natural numbers), then there exists an arithmetic sentence σ such that σ is a theorem of T (derivable from T in classical first-order logic) and σ is not in K; and\n3. there exists a set K of arithmetic sentences such that:\n   (a) there exists a recursively enumerable arithmetic theory F whose set of theorems (in classical first-order logic) equals K,\n   (b) every sentence in K is true in the standard model of arithmetic,\n   (c) K is closed under classical first-order deduction (every arithmetic sentence derivable from K belongs to K),\n   (d) every theorem of PA belongs to K, and\n   (e) the standard consistency sentence for Craig's Δ₁ presentation of T (namely ¬Prov_{T.craig}(⌜⊥⌝), formed using the recursive enumerability of T from (1)) belongs to K.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The consistency sentence Def7 F is defined via Craig's trick (F.craig.consistent.val) from a noncomputably chosen RE enumeration of F, rather than from a canonical Δ₁ presentation of PA and PA ∪ {¬Con(PA)}, and Def9 adjoins the classically equivalent double-negated form ∼(¬Prov_{PA.craig}(⌜⊥⌝)) rather than Prov_{PA}(⌜⊥⌝). Because consistency sentences are intensional (presentation-dependent), this is a technical representation choice, though standard for defining consistency uniformly on arbitrary RE theories.\"\n    }\n  ],\n  \"summary\": \"The TARGET states exactly (i) and (ii) for the recursively enumerable system PA ∪ {∼Con(PA)}, and (i) and (ii) together directly contradict the set-level reading of Corradini and Galvan's corollary by instantiating (i) at the sound mind K witnessed by (ii). The only caveat is the minor technical choice of expressing consistency statements uniformly via Craig's Δ₁ re-axiomatization.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The consistency sentence Def7 F is defined via Craig's trick (F.craig.consistent.val) from a noncomputably chosen RE enumeration of F, rather than from a canonical Δ₁ presentation of PA and PA ∪ {¬Con(PA)}, and Def9 adjoins the classically equivalent double-negated form ∼(¬Prov_{PA.craig}(⌜⊥⌝)) rather than Prov_{PA}(⌜⊥⌝). Because consistency sentences are intensional (presentation-dependent), this is a technical representation choice, though standard for defining consistency uniformly on arbitrary RE theories."
+      }
+    ],
+    "summary": "The TARGET states exactly (i) and (ii) for the recursively enumerable system PA ∪ {∼Con(PA)}, and (i) and (ii) together directly contradict the set-level reading of Corradini and Galvan's corollary by instantiating (i) at the sound mind K witnessed by (ii). The only caveat is the minor technical choice of expressing consistency statements uniformly via Craig's Δ₁ re-axiomatization."
+  }
+}

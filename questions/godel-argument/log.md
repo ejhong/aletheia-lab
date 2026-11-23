@@ -117,4 +117,13 @@ Dated entries, newest last: what was tried, what happened, what next.
   false sentence), and with the principles the note itself uses that system looks like a counterexample to the
   corollary as stated. This is one model's reading of a published paper. It is `unverified` until it is stated
   in Lean, checked by the other vendors' models and proved, and Eugene decides whether to do that.
+- Tier 2D (Amendment 6), same day. Eugene passed on a Google model's review of the page, which proposed the same
+  counterexample to the 2024 corollary that I had noted above and asked for a Lean check. Seven statements. Trial
+  proofs compiled first (`explore/Stage2DSketch.lean`). Check: two rounds, $4.69; round 1 rated S5d and S5e
+  divergent, both revised. Locked `Statement6.lean` at 14:51 UTC (85e4685); proofs in `Results6.lean` (e967ba3).
+  The reading recorded above is now proved as far as arithmetic and the set-level picture go (S5a, S5b). That DTK
+  itself refutes the corollary stays `unverified`. Question total: $44.95.
+- The review's other suggestion, a "two-model" theorem for the epistemic axioms, does not hold as proposed:
+  Peano arithmetic's provability is not a model of the Stage 2 knowledge axioms (S2e). The Stage 1 version is
+  S5g.
 

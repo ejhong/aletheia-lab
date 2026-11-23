@@ -1,0 +1,26 @@
+{
+  "id": "S5d",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:46:46Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (conF : Fm),\n    𝓢 ⊢ K conF 🡒 conF →\n    𝓢 ⊢ K (∼conF) 🡒 ∼conF →\n    𝓢 ⊢ K conF 🡒 F conF →\n    𝓢 ⊢ conF 🡒 ∼F conF →\n    𝓢 ⊢ ∼K conF ⋏ (conF 🡒 ∼K (∼conF))\n",
+  "usage": [
+    [
+      3055,
+      382
+    ],
+    [
+      4539,
+      918
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the following proposition. For every sentence type Fm and system type S, given implication, conjunction, disjunction, negation, truth and falsehood on Fm and a provability relation for systems in S, take any system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens. For every pair of functions K and F from Fm to Fm and every sentence c (the parameter conF), if 𝓢 proves each of (1) K(c) → c, (2) K(¬c) → ¬c, (3) K(c) → F(c), and (4) c → ¬F(c), then 𝓢 proves the single conjunction ¬K(c) ∧ (c → ¬K(¬c)). The second conjunct is conditional on c, not an unconditional negation of K(¬c). No consistency assumption on 𝓢, rule taking a proof of φ to a proof of K(φ), or interpretation of c as a consistency sentence for F is required.\"}",
+  "translation": "Target is the following proposition. For every sentence type Fm and system type S, given implication, conjunction, disjunction, negation, truth and falsehood on Fm and a provability relation for systems in S, take any system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens. For every pair of functions K and F from Fm to Fm and every sentence c (the parameter conF), if 𝓢 proves each of (1) K(c) → c, (2) K(¬c) → ¬c, (3) K(c) → F(c), and (4) c → ¬F(c), then 𝓢 proves the single conjunction ¬K(c) ∧ (c → ¬K(¬c)). The second conjunct is conditional on c, not an unconditional negation of K(¬c). No consistency assumption on 𝓢, rule taking a proof of φ to a proof of K(φ), or interpretation of c as a consistency sentence for F is required.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"With `conF` standing for `ConsF`, the stated repair assumes the two K-correctness instances, the local inclusion, and the second-incompleteness implication, and concludes that 𝓢 proves `¬K(ConsF) ∧ (ConsF → ¬K(¬ConsF))`. Only the second conjunct is conditional on consistency; the printed corollary’s existential hypothesis is neither assumed nor used to infer the local inclusion.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "With `conF` standing for `ConsF`, the stated repair assumes the two K-correctness instances, the local inclusion, and the second-incompleteness implication, and concludes that 𝓢 proves `¬K(ConsF) ∧ (ConsF → ¬K(¬ConsF))`. Only the second conjunct is conditional on consistency; the printed corollary’s existential hypothesis is neither assumed nor used to infer the local inclusion."
+  }
+}

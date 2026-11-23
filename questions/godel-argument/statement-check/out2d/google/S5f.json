@@ -1,0 +1,35 @@
+{
+  "id": "S5f",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:43:23Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (T D : Fm → Fm) (σ G : Fm),\n    Def11 𝓢 D T → 𝓢 ⊢ D σ → 𝓢 ⊢ D G → 𝓢 ⊢ D (σ 🡒 G)\n",
+  "usage": [
+    [
+      2904,
+      2108
+    ],
+    [
+      4033,
+      5937
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition that for every type Fm of sentences equipped with the formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼, with biconditional 🡘 abbreviating (a 🡒 b) ⋏ (b 🡒 a)) and logical constants (⊤ and ⊥), every type S of proof systems equipped with a provability relation ⊢ on Fm, every proof system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every pair of arbitrary functions T and D from Fm to Fm, and every pair of sentences σ and G in Fm: if (1) for all sentences φ and ψ in Fm, 𝓢 proves D (φ 🡒 ψ) 🡘 (D φ ⋏ (T φ 🡒 D ψ)) (i.e., Def11 𝓢 D T holds), (2) 𝓢 proves D σ, and (3) 𝓢 proves D G, then 𝓢 proves D (σ 🡒 G). No other assumptions are made: in particular, 𝓢 is not required to be consistent or to satisfy any necessitation rule, and T and D are arbitrary functions from sentences to sentences with no assumptions other than (1).\"}\n```",
+  "translation": "Target is the proposition that for every type Fm of sentences equipped with the formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼, with biconditional 🡘 abbreviating (a 🡒 b) ⋏ (b 🡒 a)) and logical constants (⊤ and ⊥), every type S of proof systems equipped with a provability relation ⊢ on Fm, every proof system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every pair of arbitrary functions T and D from Fm to Fm, and every pair of sentences σ and G in Fm: if (1) for all sentences φ and ψ in Fm, 𝓢 proves D (φ 🡒 ψ) 🡘 (D φ ⋏ (T φ 🡒 D ψ)) (i.e., Def11 𝓢 D T holds), (2) 𝓢 proves D σ, and (3) 𝓢 proves D G, then 𝓢 proves D (σ 🡒 G). No other assumptions are made: in particular, 𝓢 is not required to be consistent or to satisfy any necessitation rule, and T and D are arbitrary functions from sentences to sentences with no assumptions other than (1).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Axiom D4 is formalized in Def11 as a propositional schema (meta-quantified over all sentences φ and ψ) rather than the single object-language universally quantified axiom over Gödel codes of sentences in DT, since arithmetic, coding, and quantifiers are not modelled.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the source, Lemma 2 is an unconditional theorem of the specific arithmetical system DTK for the specific sentences 'K =PA F' and 'G(F+)'; the Lean statement generalizes this to an arbitrary classical propositional system 𝓢, arbitrary operators D and T (omitting the definition of D(x) as T(x) ∨ T(¬x)), and arbitrary sentences σ and G, taking 𝓢 ⊢ D σ and 𝓢 ⊢ D G as explicit hypotheses rather than deriving them from Lemma 1 and the arithmeticality of G(F+).\"\n    }\n  ],\n  \"summary\": \"The TARGET accurately formalizes the claimed propositional inference step of Lemma 2 from axiom D4 (as a schema) and the determinateness of σ and G to the determinateness of σ → G. The only divergences from the source passage are the declared idealizations of working in an abstract classical propositional setting without arithmetic, coding, quantifiers, or the derivations of the two determinateness premises.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Axiom D4 is formalized in Def11 as a propositional schema (meta-quantified over all sentences φ and ψ) rather than the single object-language universally quantified axiom over Gödel codes of sentences in DT, since arithmetic, coding, and quantifiers are not modelled."
+      },
+      {
+        "severity": "minor",
+        "description": "In the source, Lemma 2 is an unconditional theorem of the specific arithmetical system DTK for the specific sentences 'K =PA F' and 'G(F+)'; the Lean statement generalizes this to an arbitrary classical propositional system 𝓢, arbitrary operators D and T (omitting the definition of D(x) as T(x) ∨ T(¬x)), and arbitrary sentences σ and G, taking 𝓢 ⊢ D σ and 𝓢 ⊢ D G as explicit hypotheses rather than deriving them from Lemma 1 and the arithmeticality of G(F+)."
+      }
+    ],
+    "summary": "The TARGET accurately formalizes the claimed propositional inference step of Lemma 2 from axiom D4 (as a schema) and the determinateness of σ and G to the determinateness of σ → G. The only divergences from the source passage are the declared idealizations of working in an abstract classical propositional setting without arithmetic, coding, quantifiers, or the derivations of the two determinateness premises."
+  }
+}

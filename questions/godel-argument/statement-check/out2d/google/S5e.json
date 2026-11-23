@@ -1,0 +1,43 @@
+{
+  "id": "S5e",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:46:46Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (τ σ G : Fm),\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼F (σ 🡒 G)) →\n    𝓢 ⊢ τ 🡒 σ →\n    𝓢 ⊢ τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G)) →\n    𝓢 ⊢ ∼τ\n",
+  "usage": [
+    [
+      2961,
+      1934
+    ],
+    [
+      4418,
+      12002
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition that for all types Fm (of sentences) and S (of proof systems), any structure of formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼) and logical constants (⊤, ⊥) on Fm, any provability relation ⊢ between S and Fm, any proof system 𝓢 : S that is classical propositional (proves all classical propositional tautologies in these connectives and is closed under modus ponens), any two arbitrary functions K, F : Fm → Fm, and any three sentences τ, σ, G : Fm: if 𝓢 proves the conjunction (K (σ 🡒 G)) ⋏ (σ 🡒 ∼(F (σ 🡒 G))), and 𝓢 proves τ 🡒 σ, and 𝓢 proves τ 🡒 ((K (σ 🡒 G)) 🡘 (F (σ 🡒 G))) (where 🡘 is the formal biconditional), then 𝓢 proves ∼τ. No further hypotheses are imposed on 𝓢 (such as consistency or necessitation rules) or on the functions K and F.\"}\n```",
+  "translation": "Target is the proposition that for all types Fm (of sentences) and S (of proof systems), any structure of formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼) and logical constants (⊤, ⊥) on Fm, any provability relation ⊢ between S and Fm, any proof system 𝓢 : S that is classical propositional (proves all classical propositional tautologies in these connectives and is closed under modus ponens), any two arbitrary functions K, F : Fm → Fm, and any three sentences τ, σ, G : Fm: if 𝓢 proves the conjunction (K (σ 🡒 G)) ⋏ (σ 🡒 ∼(F (σ 🡒 G))), and 𝓢 proves τ 🡒 σ, and 𝓢 proves τ 🡒 ((K (σ 🡒 G)) 🡘 (F (σ 🡒 G))) (where 🡘 is the formal biconditional), then 𝓢 proves ∼τ. No further hypotheses are imposed on 𝓢 (such as consistency or necessitation rules) or on the functions K and F.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Quantifiers, Gödel coding, and the syntactic predicates Sent and Sent¬PA are not modelled: Step (7)'s existential claim ∃x(Sent¬PA(x) ∧ K(x) ∧ ¬F(x)) is replaced by its concrete witness σ 🡒 G, the universal definition of K = F (∀x(Sent(x) → (K(x) ↔ F(x)))) is replaced by its single instance τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G)), and Lemma 4 (passing from Sent¬PA to Sent) is absorbed into that hypothesis rather than represented as a separate step. These omissions are explicitly declared by the author.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Hypothetical derivability relations in the source (K =PA F ⊢DTK ¬F(K =PA F → G(F+)) in Step (6) and K = F ⊢DTK K =PA F in Lemma 3) are formalized as provable object-level implications (𝓢 ⊢ σ 🡒 ∼F (σ 🡒 G) and 𝓢 ⊢ τ 🡒 σ), implicitly relying on the deduction theorem for DTK, and Steps (5) and (6) are bundled into a single provable conjunction.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The statement is generalized to arbitrary classical propositional systems 𝓢, arbitrary sentence types Fm, arbitrary functions K and F, and arbitrary sentences τ, σ, G without formalizing DTK or the definitions of K = F, K =PA F, and G(F+); in particular, the internal structure of σ 🡒 G is not used by the inference. This abstraction is declared by the author and harmlessly generalizes the propositional core of Step (8).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the first hypothesis, K (σ 🡒 G) is taken unconditionally (matching Step (5)) rather than under the antecedent σ (as it appears inside Step (7) when cited at the start of the proof of Step (8)); this is a harmless strengthening faithful to Steps (5)–(6).\"\n    }\n  ],\n  \"summary\": \"Within its declared propositional abstraction, the TARGET faithfully captures the closing reductio of Step (8) from Steps (5)–(6), Lemma 3, and the instantiated biconditional for K = F. The only divergences are minor idealizations—dropping quantifiers, codes, and Lemma 4's Sent¬PA-to-Sent transition, and internalizing hypothetical turnstiles as object-level implications.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Quantifiers, Gödel coding, and the syntactic predicates Sent and Sent¬PA are not modelled: Step (7)'s existential claim ∃x(Sent¬PA(x) ∧ K(x) ∧ ¬F(x)) is replaced by its concrete witness σ 🡒 G, the universal definition of K = F (∀x(Sent(x) → (K(x) ↔ F(x)))) is replaced by its single instance τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G)), and Lemma 4 (passing from Sent¬PA to Sent) is absorbed into that hypothesis rather than represented as a separate step. These omissions are explicitly declared by the author."
+      },
+      {
+        "severity": "minor",
+        "description": "Hypothetical derivability relations in the source (K =PA F ⊢DTK ¬F(K =PA F → G(F+)) in Step (6) and K = F ⊢DTK K =PA F in Lemma 3) are formalized as provable object-level implications (𝓢 ⊢ σ 🡒 ∼F (σ 🡒 G) and 𝓢 ⊢ τ 🡒 σ), implicitly relying on the deduction theorem for DTK, and Steps (5) and (6) are bundled into a single provable conjunction."
+      },
+      {
+        "severity": "minor",
+        "description": "The statement is generalized to arbitrary classical propositional systems 𝓢, arbitrary sentence types Fm, arbitrary functions K and F, and arbitrary sentences τ, σ, G without formalizing DTK or the definitions of K = F, K =PA F, and G(F+); in particular, the internal structure of σ 🡒 G is not used by the inference. This abstraction is declared by the author and harmlessly generalizes the propositional core of Step (8)."
+      },
+      {
+        "severity": "minor",
+        "description": "In the first hypothesis, K (σ 🡒 G) is taken unconditionally (matching Step (5)) rather than under the antecedent σ (as it appears inside Step (7) when cited at the start of the proof of Step (8)); this is a harmless strengthening faithful to Steps (5)–(6)."
+      }
+    ],
+    "summary": "Within its declared propositional abstraction, the TARGET faithfully captures the closing reductio of Step (8) from Steps (5)–(6), Lemma 3, and the instantiated biconditional for K = F. The only divergences are minor idealizations—dropping quantifiers, codes, and Lemma 4's Sent¬PA-to-Sent transition, and internalizing hypothetical turnstiles as object-level implications."
+  }
+}

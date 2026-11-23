@@ -1,0 +1,31 @@
+{
+  "id": "X16",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:39:59Z",
+  "target": "def Target : Prop :=\n  ∃ _ : Theory.RE Def9,\n    Def3 Def9.theory ∧ Def2 (Def7 Def9) ∧\n      (∼Def7 𝗣𝗔) ∈ Def9.theory ∧ ¬ Def2 (∼Def7 𝗣𝗔)\n",
+  "usage": [
+    [
+      2948,
+      281
+    ],
+    [
+      4015,
+      369
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For a recursively enumerable arithmetic axiom set F, write C(F) for the sentence saying that no proof of falsehood exists from the Craig presentation of F. Let A be the axioms of Peano arithmetic (PA) together with the single additional axiom ¬C(PA). Target is the proposition that there exists a witness that the axiom set A is recursively enumerable such that all four of the following hold: (1) for every arithmetic sentence σ, if A proves σ, then σ is true in the standard natural numbers; (2) C(A) is true in the standard natural numbers (it need not be provable from A); (3) A proves the sentence ¬C(PA); and (4) that same sentence ¬C(PA) is not true in the standard natural numbers. As written, (1) and (3) together contradict (4).\"}",
+  "translation": "For a recursively enumerable arithmetic axiom set F, write C(F) for the sentence saying that no proof of falsehood exists from the Craig presentation of F. Let A be the axioms of Peano arithmetic (PA) together with the single additional axiom ¬C(PA). Target is the proposition that there exists a witness that the axiom set A is recursively enumerable such that all four of the following hold: (1) for every arithmetic sentence σ, if A proves σ, then σ is true in the standard natural numbers; (2) C(A) is true in the standard natural numbers (it need not be provable from A); (3) A proves the sentence ¬C(PA); and (4) that same sentence ¬C(PA) is not true in the standard natural numbers. As written, (1) and (3) together contradict (4).",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"In place of syntactic consistency of Def9, `Def3 Def9.theory` asserts soundness: every theorem of Def9 is true in the standard natural numbers. Applying this conjunct to `∼Def7 𝗣𝗔`, which the target says is a theorem, yields `Def2 (∼Def7 𝗣𝗔)`, exactly what the final conjunct denies.\"\n    }\n  ],\n  \"summary\": \"The recursive enumerability, truth of the system’s consistency sentence, and provability and falsity of the added axiom are represented as intended. But the target asserts soundness alongside its explicit counterexample to soundness, so it is contradictory rather than a counterexample to “Cons implies Sound.”\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "In place of syntactic consistency of Def9, `Def3 Def9.theory` asserts soundness: every theorem of Def9 is true in the standard natural numbers. Applying this conjunct to `∼Def7 𝗣𝗔`, which the target says is a theorem, yields `Def2 (∼Def7 𝗣𝗔)`, exactly what the final conjunct denies."
+      }
+    ],
+    "summary": "The recursive enumerability, truth of the system’s consistency sentence, and provability and falsity of the added axiom are represented as intended. But the target asserts soundness alongside its explicit counterexample to soundness, so it is contradictory rather than a counterexample to “Cons implies Sound.”"
+  }
+}

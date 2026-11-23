@@ -13,6 +13,7 @@ Planted wrong items ("decoys") are mixed in to measure whether the checker catch
     python3 run.py --stage 2r ...          # and for Amendment 3 (Statement3.lean, items2r.json, out2r/)
     python3 run.py --stage 2b ...          # and for Amendment 4, tier 2B (Statement4.lean, items2b.json, out2b/)
     python3 run.py --stage 2c ...          # and for Amendment 5, tier 2C (Statement5.lean, items2c.json, out2c/)
+    python3 run.py --stage 2d ...          # and for Amendment 6, tier 2D (Statement6.lean, items2d.json, out2d/)
 
 Keys come from the environment: OPENAI_API_KEY, GEMINI_API_KEY, XAI_API_KEY.
 """
@@ -103,6 +104,26 @@ def use_stage_2c():
     DEFS = ["TIn", "TOut", "KIntro", "KnownIsTrue", "DKIntro", "DeterminateTruth", "DeterminateImp", "DeterminateK"]
     KEEP = set()
     PREAMBLE = next(line for line in STATEMENT.read_text().splitlines() if line.startswith("variable ")) + "\n"
+
+
+def use_stage_2d():
+    """Amendment 6, tier 2D: Corradini and Galvan's steps and corollary. Arithmetic and abstract statements."""
+    global STATEMENT, OUT, ITEMS, NOTATION, REPORT, REPORT_HEAD, ORDER, DEFS, PREAMBLE, KEEP
+    lean = HERE.parent / "lean" / "GodelArgument"
+    s6 = lean / "Statement6.lean"
+    if not s6.exists():
+        s6 = HERE / "Statement6.draft.lean"
+    STATEMENT = [lean / "Statement.lean", lean / "Statement2.lean", lean / "Statement5.lean", s6]
+    OUT, ITEMS, NOTATION, REPORT = HERE / "out2d", HERE / "items2d.json", HERE / "notation2d.md", HERE / "REPORT-2D.md"
+    REPORT_HEAD = ["Amendment 6, tier 2D, round 2. Written by `run.py --stage 2d --report` from the raw outputs in",
+                   "`out2d/`. Verdicts are the checkers' own. Round 1 is frozen under `round1-2d/`; S5d, S5e and the",
+                   "planted error X18 were revised after it and checked again, and the other items stand from round 1."]
+    ORDER = ["DEF-P", "S5a", "X17", "S5c", "S5b", "X18", "S5d", "S5e", "X16", "S5f", "S5g"]
+    DEFS = ["Mind", "IsTrue", "Sound", "Consistent", "IsTheoremSetOf", "IsMechanical", "Con", "DeductivelyClosed",
+            "PAPlusNotCon", "KnowledgeClosedUnderMP", "DeterminateImp"]
+    KEEP = set()
+    PREAMBLE = next(line for line in (lean / "Statement2.lean").read_text().splitlines()
+                    if line.startswith("variable ")) + "\n"
 
 
 def use_stage_2r():
@@ -418,6 +439,9 @@ if __name__ == "__main__":
         args = args[2:]
     elif args[:2] == ["--stage", "2c"]:
         use_stage_2c()
+        args = args[2:]
+    elif args[:2] == ["--stage", "2d"]:
+        use_stage_2d()
         args = args[2:]
     if args == ["--probe"]:
         for v in ("openai", "google", "xai"):

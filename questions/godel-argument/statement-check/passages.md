@@ -180,3 +180,28 @@ by Eugene. The scan's text layer garbles the logical symbols, so only the words 
 
 *P-P73 to P-P76 were transcribed on 2026-11-23 by Claude Fable 5.2 from photographs of the printed book supplied by
 Eugene (see `MANIFEST.md` and Amendment 1). They could not be checked mechanically against a text file.*
+
+## P-K358 — Koellner (2018), Part I, p. 358, §IV.2 (WMT is "some Turing machine coincides with the idealized human mind")
+
+> Theorem 7 (Reinhardt). 'EA_T + WMT' is consistent. In other words, from the point of view of EA_T it is entirely possible that the idealized human mind is in fact a Turing machine. It just cannot know which one.
+
+## P-CG1-490 — Corradini and Galvan (2022), *Logic and Logical Philosophy* 31(3), pp. 489–490, steps (5) to (7) and Lemma 2 (K =PA F says that K and F agree on arithmetical sentences; F+ is F with that sentence added; G(F+) is the Gödel sentence of F+; corner quotes for codes are omitted)
+
+> Step (5) ⊢DTK K(K =PA F → G(F+)) […] Lemma 2. ⊢DTK D(K =PA F → G(F+)) […] In short: G(F+) is arithmetical and therefore determinate; as to K =PA F, we have already proved, through Lemma 1, that it is determinate, so the formula K =PA F → G(F+) is itself determinate by virtue of D4. The application of K-intro is therefore legitimate. Step (6) K =PA F ⊢DTK ¬F(K =PA F → G(F+)) […] Step (7) K =PA F ⊢DTK ∃ψ(ψ ≡ (K =PA F → G(F+)) ∧ K(ψ) ∧ ¬F(ψ))
+
+## P-CG1-491 — Corradini and Galvan (2022), pp. 490–491 and 492–493, step (8) (Sent¬PA(x): x is a sentence that is not purely arithmetical)
+
+> Step (8) ⊢DTK K ≠ F […] K = F means ∀x(Sent(x) → (K(x) ↔ F(x)), i.e., K and F are equivalent with respect to all formulas belonging to L(DTK), whether they are purely arithmetic […] or not purely arithmetic […]. Lemma 3. K = F ⊢DTK K =PA F […] Lemma 4. ∃x(Sent¬PA(x) ∧ K(x) ∧ ¬F(x)) ⊢DTK ∃x(Sent(x) ∧ K(x) ∧ ¬F(x)). Proof of step (8) proceeds then as follows: K =PA F ⊢DTK ∃x(Sent¬PA(x) ∧ K(x) ∧ ¬F(x)) [Step (7)]; K = F ⊢DTK ∃x(Sent¬PA(x) ∧ K(x) ∧ ¬F(x)) [Lemma 3]; K = F ⊢DTK ∃x(Sent(x) ∧ K(x) ∧ ¬F(x)) [Lemma 4]; K = F ⊢DTK K ≠ F [logic]; ⊢DTK K ≠ F [self contradiction]. […] the proposition ∃F(K = F) is provably indeterminate and, consequently, so is its negation ¬∃F(K = F).
+
+## P-CG2-557 — Corradini and Galvan (2024), *Logic and Logical Philosophy* 33(4), p. 557 (the note omits code brackets: Kϕ is K applied to the code of ϕ, and Fϕ is "ϕ is derivable in the system F")
+
+> 1. K-correctness principle: ⊢DTK Kϕ → ϕ […] 2. K-intro rule: ⊢DTK ϕ ∧ Dϕ ⇒ ⊢DTK Kϕ […] 3. Rule of mathematical knowledge: ⊢PA ϕ ⇒ ⊢DTK Kϕ i.e., PR_PA ϕ ⊢DTK Kϕ
+
+## P-CG2-562 — Corradini and Galvan (2024), pp. 562–563, the corollary and its proof (ConsF is the consistency statement of F; justifications are in square brackets)
+
+> if there is a formalism that overcomes the human mind in mathematical knowledge, it is impossible to know whether this formalism is consistent. […] Corollary. (∃ϕ ∈ L(PA))(¬Kϕ ∧ Fϕ) ⊢DTK ¬K(ConsF). Proof. ⊢DTK Fϕ → PR_PA(Fϕ) [by Σ1-Completeness]; ⊢DTK PR_PA(Fϕ) → K(Fϕ) [from Rule of mathematical knowledge]; (∗) ⊢DTK Fϕ → K(Fϕ) [logic]; (∗∗) ⊢DTK ϕ ∈ L(PA) → K(ϕ ∈ L(PA)) [idem]; ⊢DTK ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ) [Cons implies Sound]. Now, ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ) is determinate. […] That is why it is legitimate to apply K-intro. ⊢DTK K(ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ)) [K-intro]; ⊢DTK K(ConsF) → K((∀ϕ ∈ L(PA))(Fϕ → ϕ)) [Distributivity of K]; […] ⊢DTK K(ConsF) → (∀ϕ ∈ L(PA))(Fϕ → Kϕ) [by (∗) and (∗∗)]; (∃ϕ ∈ L(PA))(¬Kϕ ∧ Fϕ) ⊢DTK ¬K(ConsF) [by contraposition]
+
+## P-CG2-563 — Corradini and Galvan (2024), p. 563, Conclusion
+
+> It is possible, however, that K surpasses F as far as mathematical propositions are concerned but also, on the contrary, that F surpasses K in the derivation of mathematical propositions not accessible to human knowledge. In the latter case, however, the consistency of F is humanly undecidable.
+

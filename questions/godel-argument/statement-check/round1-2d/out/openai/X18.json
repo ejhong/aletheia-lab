@@ -1,0 +1,39 @@
+{
+  "id": "X18",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:39:32Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K : Fm → Fm) (τ σ G Q : Fm),\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼Q) →\n    𝓢 ⊢ σ 🡒 τ →\n    𝓢 ⊢ τ 🡒 K (σ 🡒 G) 🡒 Q →\n    𝓢 ⊢ ∼τ\n",
+  "usage": [
+    [
+      3028,
+      342
+    ],
+    [
+      4374,
+      632
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the following proposition. For every sentence type Fm and system type S, equipped with logical connectives and truth and falsehood constants on Fm and a provability relation for systems in S on sentences in Fm, take any system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens. For every function K from Fm to Fm and every choice of sentences τ, σ, G, Q, in that order, suppose that (1) 𝓢 proves the conjunction of K(σ implies G) and (σ implies not Q); (2) 𝓢 proves (σ implies τ); and (3) 𝓢 proves (τ implies (K(σ implies G) implies Q)). Then 𝓢 proves the negation of τ. The three hypotheses are provability claims, not assumptions that σ or τ is provable. No consistency assumption on 𝓢 or property of K is required.\"}",
+  "translation": "Target is the following proposition. For every sentence type Fm and system type S, equipped with logical connectives and truth and falsehood constants on Fm and a provability relation for systems in S on sentences in Fm, take any system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens. For every function K from Fm to Fm and every choice of sentences τ, σ, G, Q, in that order, suppose that (1) 𝓢 proves the conjunction of K(σ implies G) and (σ implies not Q); (2) 𝓢 proves (σ implies τ); and (3) 𝓢 proves (τ implies (K(σ implies G) implies Q)). Then 𝓢 proves the negation of τ. The three hypotheses are provability claims, not assumptions that σ or τ is provable. No consistency assumption on 𝓢 or property of K is required.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Lemma 3 is reversed. The source infers arithmetical agreement (σ) from agreement on all sentences (τ), so the needed premise is `𝓢 ⊢ τ 🡒 σ`. The TARGET has `𝓢 ⊢ σ 🡒 τ`. This invalidates the inference: in a two-valued system with τ and Q true, σ false, and K constantly true, all three premises hold but ∼τ is false.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The TARGET abstracts from DTK to any classical propositional system. Only K is a sentence function; σ, τ, G and Q are parameters. In particular, nothing defines Q as F applied to the code of σ 🡒 G, or defines σ and τ as the two quantified agreement claims.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The first premise packages steps (5) and (6) as a provable conjunction for the specific witness σ 🡒 G. The third uses just the known-to-derivable direction of full agreement at that witness. This bypasses step (7)'s existential and Lemma 4's passage from a non-arithmetical sentence to a sentence, without needing either quantifier for the final contradiction.\"\n    }\n  ],\n  \"summary\": \"The named-witness argument would yield ∼τ with Lemma 3 in the source's direction, but not as written. The source's separate indeterminacy remark concerns ∃F(K = F) and its negation, not the fixed-F conclusion ∼τ; the TARGET makes no indeterminacy claim.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Lemma 3 is reversed. The source infers arithmetical agreement (σ) from agreement on all sentences (τ), so the needed premise is `𝓢 ⊢ τ 🡒 σ`. The TARGET has `𝓢 ⊢ σ 🡒 τ`. This invalidates the inference: in a two-valued system with τ and Q true, σ false, and K constantly true, all three premises hold but ∼τ is false."
+      },
+      {
+        "severity": "minor",
+        "description": "The TARGET abstracts from DTK to any classical propositional system. Only K is a sentence function; σ, τ, G and Q are parameters. In particular, nothing defines Q as F applied to the code of σ 🡒 G, or defines σ and τ as the two quantified agreement claims."
+      },
+      {
+        "severity": "minor",
+        "description": "The first premise packages steps (5) and (6) as a provable conjunction for the specific witness σ 🡒 G. The third uses just the known-to-derivable direction of full agreement at that witness. This bypasses step (7)'s existential and Lemma 4's passage from a non-arithmetical sentence to a sentence, without needing either quantifier for the final contradiction."
+      }
+    ],
+    "summary": "The named-witness argument would yield ∼τ with Lemma 3 in the source's direction, but not as written. The source's separate indeterminacy remark concerns ∃F(K = F) and its negation, not the fixed-F conclusion ∼τ; the TARGET makes no indeterminacy claim."
+  }
+}

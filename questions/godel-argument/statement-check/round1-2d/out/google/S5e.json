@@ -1,0 +1,51 @@
+{
+  "id": "S5e",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:41:14Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K : Fm → Fm) (τ σ G Q : Fm),\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼Q) →\n    𝓢 ⊢ τ 🡒 σ →\n    𝓢 ⊢ τ 🡒 K (σ 🡒 G) 🡒 Q →\n    𝓢 ⊢ ∼τ\n",
+  "usage": [
+    [
+      2943,
+      2574
+    ],
+    [
+      4362,
+      17407
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"`Target` is the proposition asserting that for every type `Fm` of sentences equipped with logical connectives (`🡒`, `⋏`, `⋎`, `∼`) and logical constants (`⊤`, `⊥`), every type `S` of proof systems equipped with a provability relation `⊢` between systems in `S` and sentences in `Fm`, every proof system `𝓢 : S` that proves every classical propositional tautology in these connectives and is closed under modus ponens, every arbitrary function `K : Fm → Fm`, and all sentences `τ`, `σ`, `G`, `Q : Fm`: if (1) `𝓢` proves `K(σ 🡒 G) ⋏ (σ 🡒 ∼Q)`, (2) `𝓢` proves `τ 🡒 σ`, and (3) `𝓢` proves `τ 🡒 (K(σ 🡒 G) 🡒 Q)`, then `𝓢` proves `∼τ`. Nothing further is assumed about `𝓢` (for instance, it need not be consistent) or about `K` (it is an arbitrary function from sentences to sentences with no axioms or inference rules required of it, and `G` appears only inside `K(σ 🡒 G)`).\"}\n```",
+  "translation": "`Target` is the proposition asserting that for every type `Fm` of sentences equipped with logical connectives (`🡒`, `⋏`, `⋎`, `∼`) and logical constants (`⊤`, `⊥`), every type `S` of proof systems equipped with a provability relation `⊢` between systems in `S` and sentences in `Fm`, every proof system `𝓢 : S` that proves every classical propositional tautology in these connectives and is closed under modus ponens, every arbitrary function `K : Fm → Fm`, and all sentences `τ`, `σ`, `G`, `Q : Fm`: if (1) `𝓢` proves `K(σ 🡒 G) ⋏ (σ 🡒 ∼Q)`, (2) `𝓢` proves `τ 🡒 σ`, and (3) `𝓢` proves `τ 🡒 (K(σ 🡒 G) 🡒 Q)`, then `𝓢` proves `∼τ`. Nothing further is assumed about `𝓢` (for instance, it need not be consistent) or about `K` (it is an arbitrary function from sentences to sentences with no axioms or inference rules required of it, and `G` appears only inside `K(σ 🡒 G)`).",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The formalization collapses Step (8) into a trivial tautology of arbitrary classical propositional logic (from A ∧ (σ → ¬Q), τ → σ, and τ → A → Q, derive ¬τ). No axioms or structure of DTK, K, F, T, or D are present; τ, σ, G, and Q are unconstrained sentences, K(σ 🡒 G) functions merely as an opaque propositional atom with K and G playing no formal role, and all substantive premises of Step (8) are assumed outright as ad-hoc propositional hypotheses rather than derived from the definitions of K = F and K =PA F.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Quantifiers, coding, sentence-hood predicates (Sent, SentPA, Sent¬PA), and the quantified definitions of K = F (∀x(Sent(x) → (K(x) ↔ F(x)))) and K =PA F cannot be expressed and are omitted. Consequently, the existential witness structure and coding equivalence of Step (7) are dropped, Lemma 3 is merely assumed as τ 🡒 σ, Lemma 4 (lifting a non-arithmetical witness from Sent¬PA to Sent) disappears completely, and the universal biconditional K = F is replaced by a single one-way conditional instance τ 🡒 (K(σ 🡒 G) 🡒 Q). This erases the central conceptual distinction of Step (8): why the non-arithmetical witness refutes K = F without refuting K =PA F.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Even within the abstract propositional setting (where the author describes F as a function on sentences alongside K), the provability predicate F is not modelled as a function Fm → Fm at all; instead, F(K =PA F → G(F+)) is represented by an arbitrary, unlinked sentence Q.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Meta-level derivability from assumptions in DTK (such as K =PA F ⊢DTK ¬F(...) in Step (6), K = F ⊢DTK K =PA F in Lemma 3, and the intermediate lines of Step (8)) is internalized as provable object-language implications (𝓢 ⊢ σ 🡒 ∼Q, 𝓢 ⊢ τ 🡒 σ, 𝓢 ⊢ τ 🡒 K(σ 🡒 G) 🡒 Q), implicitly relying on a deduction theorem for DTK.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The first hypothesis 𝓢 ⊢ K(σ 🡒 G) ⋏ (σ 🡒 ∼Q) asserts K(σ 🡒 G) unconditionally (matching Step (5) combined with Step (6)), which is slightly stronger than Step (7) alone, where K(ψ) ∧ ¬F(ψ) appears under the assumption K =PA F.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The passage's concluding observation that ∃F(K = F) and ¬∃F(K = F) are provably indeterminate is not modelled (requiring both the determinacy predicate D and quantification over formal systems F). Note also that the claim describes this unmodelled remark as saying that ¬τ (i.e., K ≠ F) is indeterminate, whereas the passage states it for ∃F(K = F) and ¬∃F(K = F).\"\n    }\n  ],\n  \"summary\": \"Target is divergent from Step (8) of Corradini and Galvan (2022) because it strips away DTK, the predicate F, quantifiers, sentence-hood domains (Sent, SentPA, Sent¬PA), the definitions of K = F and K =PA F, and Lemma 4, leaving only a three-premise tautology of arbitrary classical propositional logic. While the propositional skeleton mirrors the final reductio once every substantive step is assumed as an ad-hoc hypothesis, it fails to capture what Step (8) actually establishes.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The formalization collapses Step (8) into a trivial tautology of arbitrary classical propositional logic (from A ∧ (σ → ¬Q), τ → σ, and τ → A → Q, derive ¬τ). No axioms or structure of DTK, K, F, T, or D are present; τ, σ, G, and Q are unconstrained sentences, K(σ 🡒 G) functions merely as an opaque propositional atom with K and G playing no formal role, and all substantive premises of Step (8) are assumed outright as ad-hoc propositional hypotheses rather than derived from the definitions of K = F and K =PA F."
+      },
+      {
+        "severity": "major",
+        "description": "Quantifiers, coding, sentence-hood predicates (Sent, SentPA, Sent¬PA), and the quantified definitions of K = F (∀x(Sent(x) → (K(x) ↔ F(x)))) and K =PA F cannot be expressed and are omitted. Consequently, the existential witness structure and coding equivalence of Step (7) are dropped, Lemma 3 is merely assumed as τ 🡒 σ, Lemma 4 (lifting a non-arithmetical witness from Sent¬PA to Sent) disappears completely, and the universal biconditional K = F is replaced by a single one-way conditional instance τ 🡒 (K(σ 🡒 G) 🡒 Q). This erases the central conceptual distinction of Step (8): why the non-arithmetical witness refutes K = F without refuting K =PA F."
+      },
+      {
+        "severity": "minor",
+        "description": "Even within the abstract propositional setting (where the author describes F as a function on sentences alongside K), the provability predicate F is not modelled as a function Fm → Fm at all; instead, F(K =PA F → G(F+)) is represented by an arbitrary, unlinked sentence Q."
+      },
+      {
+        "severity": "minor",
+        "description": "Meta-level derivability from assumptions in DTK (such as K =PA F ⊢DTK ¬F(...) in Step (6), K = F ⊢DTK K =PA F in Lemma 3, and the intermediate lines of Step (8)) is internalized as provable object-language implications (𝓢 ⊢ σ 🡒 ∼Q, 𝓢 ⊢ τ 🡒 σ, 𝓢 ⊢ τ 🡒 K(σ 🡒 G) 🡒 Q), implicitly relying on a deduction theorem for DTK."
+      },
+      {
+        "severity": "minor",
+        "description": "The first hypothesis 𝓢 ⊢ K(σ 🡒 G) ⋏ (σ 🡒 ∼Q) asserts K(σ 🡒 G) unconditionally (matching Step (5) combined with Step (6)), which is slightly stronger than Step (7) alone, where K(ψ) ∧ ¬F(ψ) appears under the assumption K =PA F."
+      },
+      {
+        "severity": "minor",
+        "description": "The passage's concluding observation that ∃F(K = F) and ¬∃F(K = F) are provably indeterminate is not modelled (requiring both the determinacy predicate D and quantification over formal systems F). Note also that the claim describes this unmodelled remark as saying that ¬τ (i.e., K ≠ F) is indeterminate, whereas the passage states it for ∃F(K = F) and ¬∃F(K = F)."
+      }
+    ],
+    "summary": "Target is divergent from Step (8) of Corradini and Galvan (2022) because it strips away DTK, the predicate F, quantifiers, sentence-hood domains (Sent, SentPA, Sent¬PA), the definitions of K = F and K =PA F, and Lemma 4, leaving only a three-premise tautology of arbitrary classical propositional logic. While the propositional skeleton mirrors the final reductio once every substantive step is assumed as an ad-hoc hypothesis, it fails to capture what Step (8) actually establishes."
+  }
+}

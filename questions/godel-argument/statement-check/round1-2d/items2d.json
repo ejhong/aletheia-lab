@@ -1,0 +1,123 @@
+{
+ "real": [
+  {
+   "id": "DEF-P",
+   "names": [
+    "PAPlusNotCon"
+   ],
+   "passages": [
+    "P-CG2-562"
+   ],
+   "claim": "Setting: arithmetic, as in Stage 1. A 'mind' is a set of arithmetic sentences (those it knows); a machine or formal system is a recursively enumerable set of axioms; 'true' is truth in the standard natural numbers. Corradini and Galvan's system DTK is NOT built, and nothing here is a statement about what DTK proves; that limitation is declared separately. This definition is the lab's own test case for the line labelled 'Cons implies Sound' in the passage. It should be: the axioms of Peano arithmetic together with the single sentence that says Peano arithmetic is inconsistent, that is, the negation of the consistency statement of Peano arithmetic. Judge only whether the definition is that set of axioms."
+  },
+  {
+   "id": "S5a",
+   "names": [
+    "ConsistencyDoesNotGiveSoundness"
+   ],
+   "passages": [
+    "P-CG2-562"
+   ],
+   "claim": "Setting: arithmetic, as in Stage 1. A 'mind' is a set of arithmetic sentences (those it knows); a machine or formal system is a recursively enumerable set of axioms; 'true' is truth in the standard natural numbers. Corradini and Galvan's system DTK is NOT built, and nothing here is a statement about what DTK proves; that limitation is declared separately. The proof in the passage uses the line 'ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ)', labelled 'Cons implies Sound', for an arbitrary formalism F. The TARGET is the lab's counterexample to that line read in the standard model. It should say: the system 'Peano arithmetic plus the sentence that Peano arithmetic is inconsistent' is recursively enumerable; it is consistent; its own consistency statement is true; it proves the sentence 'Peano arithmetic is inconsistent'; and that sentence is false. So for this F, ConsF holds and 'Fϕ → ϕ' fails for one arithmetic ϕ. The TARGET is not itself in the passage; judge whether it says exactly what this claim says and whether it is a counterexample to the quoted line as a statement about arithmetic truth."
+  },
+  {
+   "id": "S5b",
+   "names": [
+    "MachineOutrunsMindThatKnowsItConsistent"
+   ],
+   "passages": [
+    "P-CG2-562",
+    "P-CG2-563"
+   ],
+   "claim": "Setting: arithmetic, as in Stage 1. A 'mind' is a set of arithmetic sentences (those it knows); a machine or formal system is a recursively enumerable set of axioms; 'true' is truth in the standard natural numbers. Corradini and Galvan's system DTK is NOT built, and nothing here is a statement about what DTK proves; that limitation is declared separately. The corollary in the passage says: if F derives some arithmetic sentence that is not known, then the consistency of F is not known. The TARGET is the lab's counterexample to that claim when it is read at the level of sets: 'known' means 'belongs to the mind K'. It should say two things about the one system 'Peano arithmetic plus the sentence that Peano arithmetic is inconsistent'. (i) Every sound mind lacks some sentence that this system proves, so the antecedent of the corollary holds for every sound mind. (ii) There is a mind that is sound, deductively closed, contains every theorem of Peano arithmetic, is the theorem set of some machine, and contains the consistency statement of that system; for this mind the conclusion of the corollary fails. Judge whether the TARGET says exactly (i) and (ii), and whether (i) and (ii) together contradict the corollary under the set-level reading. It is not claimed that this refutes the corollary as a statement about DTK."
+  },
+  {
+   "id": "S5g",
+   "names": [
+    "MindAssumptionsDoNotDecide"
+   ],
+   "passages": [
+    "P-K358"
+   ],
+   "claim": "Setting: arithmetic, as in Stage 1. A 'mind' is a set of arithmetic sentences (those it knows); a machine or formal system is a recursively enumerable set of axioms; 'true' is truth in the standard natural numbers. Corradini and Galvan's system DTK is NOT built, and nothing here is a statement about what DTK proves; that limitation is declared separately. The lab's own statement, suggested by an outside review. It should say: the properties that Stage 1 assumes of a mind (sound, consistent, deductively closed, containing every theorem of Peano arithmetic) are satisfied by one mind that is the theorem set of a machine, and by another mind that is the theorem set of no machine. So those properties alone do not decide whether a mind is mechanical. The passage is given only for contrast: the TARGET is much weaker than Reinhardt's theorem in the passage, which concerns an axiomatic theory with a knowledge operator, and the TARGET is not offered as that theorem. Judge whether the TARGET says what this claim says, and report as a divergence anything that would make it trivial or stronger than claimed."
+  },
+  {
+   "id": "S5c",
+   "names": [
+    "CorollaryHoldsWhereConsistencyGivesSoundness"
+   ],
+   "passages": [
+    "P-CG2-562",
+    "P-CG2-557"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. K, F, T and D are arbitrary functions on sentences standing for 'is known', 'is derivable in the formal system F', 'is true' and 'is determinate', applied to the code of a sentence. 𝓢 stands for the system DTK in which the source argues. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The TARGET renders the proof of the corollary for a single sentence φ. conF stands for ConsF and F φ for 'F derives φ'. The ingredients of the proof enter as hypotheses: K is closed under modus ponens ('Distributivity of K'); the line obtained by K-intro, taken at the one sentence φ instead of under the quantifier over all arithmetic sentences, namely K(ConsF → (Fφ → φ)); and line (∗), Fφ → K(Fφ). The conclusion is the corollary for that φ: (¬Kφ ∧ Fφ) → ¬K(ConsF). The point of the TARGET is that the proof goes through for any sentence φ for which 'ConsF → (Fφ → φ)' is known, whereas the passage asserts that line for every arithmetic sentence. Line (∗∗) and the quantifier are not modelled. Judge whether the TARGET is a faithful single-sentence rendering of the proof."
+  },
+  {
+   "id": "S5d",
+   "names": [
+    "MindInsideMachineCannotKnowItConsistent"
+   ],
+   "passages": [
+    "P-CG2-563",
+    "P-CG2-557"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. K, F, T and D are arbitrary functions on sentences standing for 'is known', 'is derivable in the formal system F', 'is true' and 'is determinate', applied to the code of a sentence. 𝓢 stands for the system DTK in which the source argues. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The TARGET is the lab's repair of the corollary, suggested by an outside review; it is NOT the corollary as printed. The Conclusion in the passage speaks of F surpassing K. Read that as including: every arithmetic sentence that is known is derivable in F. The TARGET uses that inclusion at one sentence only, conF (standing for ConsF): K(ConsF) → F(ConsF). With K-correctness at that sentence, K(ConsF) → ConsF, and the second incompleteness theorem for F as a hypothesis, ConsF → ¬F(ConsF), it concludes ¬K(ConsF). The corollary's own hypothesis, that F derives some sentence which is not known, is absent because it is not needed. Judge whether the TARGET says exactly this, and whether its conclusion is the conclusion of the corollary."
+  },
+  {
+   "id": "S5e",
+   "names": [
+    "UnrestrictedThesisRefuted"
+   ],
+   "passages": [
+    "P-CG1-490",
+    "P-CG1-491"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. K, F, T and D are arbitrary functions on sentences standing for 'is known', 'is derivable in the formal system F', 'is true' and 'is determinate', applied to the code of a sentence. 𝓢 stands for the system DTK in which the source argues. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The TARGET renders step (8). σ stands for 'K =PA F', τ for 'K = F', G for G(F+), and Q for 'F derives (K =PA F → G(F+))'. The content of steps (5) to (7) enters as the first hypothesis: the system proves K(σ → G), and proves σ → ¬Q; the existential quantifier of step (7) is dropped and its witness named. Lemma 3 is the hypothesis τ → σ. The passage's last lines, from 'K = F' and a sentence that is known and not derivable in F to a contradiction, are rendered by the instance of 'K = F' at the sentence σ → G: τ → (K(σ → G) → Q); Lemma 4 is absorbed into that. The conclusion is ¬τ. Not modelled: quantifiers, codes, and the fact, noted in the passage, that ¬τ is indeterminate. Judge whether the TARGET is a faithful rendering of step (8)."
+  },
+  {
+   "id": "S5f",
+   "names": [
+    "ConditionalDeterminateIfPartsAre"
+   ],
+   "passages": [
+    "P-CG1-490",
+    "P-K2-463"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. K, F, T and D are arbitrary functions on sentences standing for 'is known', 'is derivable in the formal system F', 'is true' and 'is determinate', applied to the code of a sentence. 𝓢 stands for the system DTK in which the source argues. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The TARGET renders Lemma 2. From axiom D4 as a scheme (the definition named in the first hypothesis), from the determinateness of σ (standing for 'K =PA F'; this is Lemma 1 in the source and is assumed here) and from the determinateness of G (in the source this holds because G(F+) is arithmetical; it is assumed here), the system proves that σ → G is determinate. Judge whether the TARGET says exactly that."
+  }
+ ],
+ "decoys": [
+  {
+   "id": "X16",
+   "mimics": "S5a",
+   "passages": [
+    "P-CG2-562"
+   ],
+   "claim": "Setting: arithmetic, as in Stage 1. A 'mind' is a set of arithmetic sentences (those it knows); a machine or formal system is a recursively enumerable set of axioms; 'true' is truth in the standard natural numbers. Corradini and Galvan's system DTK is NOT built, and nothing here is a statement about what DTK proves; that limitation is declared separately. The proof in the passage uses the line 'ConsF → (∀ϕ ∈ L(PA))(Fϕ → ϕ)', labelled 'Cons implies Sound', for an arbitrary formalism F. The TARGET is the lab's counterexample to that line read in the standard model. It should say: the system 'Peano arithmetic plus the sentence that Peano arithmetic is inconsistent' is recursively enumerable; it is consistent; its own consistency statement is true; it proves the sentence 'Peano arithmetic is inconsistent'; and that sentence is false. So for this F, ConsF holds and 'Fϕ → ϕ' fails for one arithmetic ϕ. The TARGET is not itself in the passage; judge whether it says exactly what this claim says and whether it is a counterexample to the quoted line as a statement about arithmetic truth.",
+   "planted_error": "The second conjunct says the system's theorem set is Sound (all its theorems are true) where the claim says it is consistent. That contradicts the last two conjuncts and makes the statement false.",
+   "lean": "def ConsistencyDoesNotGiveSoundness : Prop :=\n  ∃ _ : Theory.RE PAPlusNotCon,\n    Sound PAPlusNotCon.theory ∧ IsTrue (Con PAPlusNotCon) ∧\n      (∼Con 𝗣𝗔) ∈ PAPlusNotCon.theory ∧ ¬ IsTrue (∼Con 𝗣𝗔)"
+  },
+  {
+   "id": "X17",
+   "mimics": "S5c",
+   "passages": [
+    "P-CG2-562",
+    "P-CG2-557"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. K, F, T and D are arbitrary functions on sentences standing for 'is known', 'is derivable in the formal system F', 'is true' and 'is determinate', applied to the code of a sentence. 𝓢 stands for the system DTK in which the source argues. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The TARGET renders the proof of the corollary for a single sentence φ. conF stands for ConsF and F φ for 'F derives φ'. The ingredients of the proof enter as hypotheses: K is closed under modus ponens ('Distributivity of K'); the line obtained by K-intro, taken at the one sentence φ instead of under the quantifier over all arithmetic sentences, namely K(ConsF → (Fφ → φ)); and line (∗), Fφ → K(Fφ). The conclusion is the corollary for that φ: (¬Kφ ∧ Fφ) → ¬K(ConsF). The point of the TARGET is that the proof goes through for any sentence φ for which 'ConsF → (Fφ → φ)' is known, whereas the passage asserts that line for every arithmetic sentence. Line (∗∗) and the quantifier are not modelled. Judge whether the TARGET is a faithful single-sentence rendering of the proof.",
+   "planted_error": "The second hypothesis is 'conF → (F φ → φ)' without K in front, where the claim and the passage have it known (the line after K-intro). Without K the conclusion does not follow.",
+   "lean": "def CorollaryHoldsWhereConsistencyGivesSoundness : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (conF φ : Fm),\n    KnowledgeClosedUnderMP 𝓢 K →\n    𝓢 ⊢ conF 🡒 F φ 🡒 φ →\n    𝓢 ⊢ F φ 🡒 K (F φ) →\n    𝓢 ⊢ ∼K φ ⋏ F φ 🡒 ∼K conF"
+  },
+  {
+   "id": "X18",
+   "mimics": "S5e",
+   "passages": [
+    "P-CG1-490",
+    "P-CG1-491"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives. K, F, T and D are arbitrary functions on sentences standing for 'is known', 'is derivable in the formal system F', 'is true' and 'is determinate', applied to the code of a sentence. 𝓢 stands for the system DTK in which the source argues. Arithmetic, coding and quantifiers are not modelled, and that limitation is declared separately. The TARGET renders step (8). σ stands for 'K =PA F', τ for 'K = F', G for G(F+), and Q for 'F derives (K =PA F → G(F+))'. The content of steps (5) to (7) enters as the first hypothesis: the system proves K(σ → G), and proves σ → ¬Q; the existential quantifier of step (7) is dropped and its witness named. Lemma 3 is the hypothesis τ → σ. The passage's last lines, from 'K = F' and a sentence that is known and not derivable in F to a contradiction, are rendered by the instance of 'K = F' at the sentence σ → G: τ → (K(σ → G) → Q); Lemma 4 is absorbed into that. The conclusion is ¬τ. Not modelled: quantifiers, codes, and the fact, noted in the passage, that ¬τ is indeterminate. Judge whether the TARGET is a faithful rendering of step (8).",
+   "planted_error": "Lemma 3 is reversed: the hypothesis is σ → τ where the claim and the passage have τ → σ. With the reversed hypothesis the conclusion does not follow.",
+   "lean": "def UnrestrictedThesisRefuted : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K : Fm → Fm) (τ σ G Q : Fm),\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼Q) →\n    𝓢 ⊢ σ 🡒 τ →\n    𝓢 ⊢ τ 🡒 K (σ 🡒 G) 🡒 Q →\n    𝓢 ⊢ ∼τ"
+  }
+ ]
+}

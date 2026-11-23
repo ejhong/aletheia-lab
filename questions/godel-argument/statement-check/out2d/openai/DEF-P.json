@@ -1,0 +1,31 @@
+{
+  "id": "DEF-P",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:39:12Z",
+  "target": "noncomputable def Target : ArithmeticTheory := 𝗣𝗔 ∪ {∼Def7 𝗣𝗔}\n",
+  "usage": [
+    [
+      2877,
+      225
+    ],
+    [
+      3787,
+      467
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is a noncomputable definition of an arithmetic theory. Its axioms are exactly the axioms of Peano arithmetic (PA) together with one sentence: the formal negation of the consistency sentence for PA’s Craig presentation. This presentation is obtained from PA’s recursively enumerable axiom set and has the same theorems as PA. Its consistency sentence says that falsehood is not provable from that presentation; the added axiom negates that sentence. The definition takes the union of axiom sets, not their deductive closure. It has no quantified parameters or additional hypotheses and does not assert that PA is actually inconsistent.\"}",
+  "translation": "Target is a noncomputable definition of an arithmetic theory. Its axioms are exactly the axioms of Peano arithmetic (PA) together with one sentence: the formal negation of the consistency sentence for PA’s Craig presentation. This presentation is obtained from PA’s recursively enumerable axiom set and has the same theorems as PA. Its consistency sentence says that falsehood is not provable from that presentation; the added axiom negates that sentence. The definition takes the union of axiom sets, not their deductive closure. It has no quantified parameters or additional hypotheses and does not assert that PA is actually inconsistent.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The added axiom is the negation of the consistency sentence for `𝗣𝗔.craig`, rather than the literal sentence `∼𝗣𝗔.consistent.val`. The Craig presentation proves exactly the same theorems as PA, so the added sentence still expresses PA’s inconsistency in the standard natural numbers.\"\n    }\n  ],\n  \"summary\": \"The definition keeps PA’s axioms and adds exactly one sentence, without taking deductive closure. The only caveat is the choice of presentation used to express PA’s inconsistency.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The added axiom is the negation of the consistency sentence for `𝗣𝗔.craig`, rather than the literal sentence `∼𝗣𝗔.consistent.val`. The Craig presentation proves exactly the same theorems as PA, so the added sentence still expresses PA’s inconsistency in the standard natural numbers."
+      }
+    ],
+    "summary": "The definition keeps PA’s axioms and adds exactly one sentence, without taking deductive closure. The only caveat is the choice of presentation used to express PA’s inconsistency."
+  }
+}

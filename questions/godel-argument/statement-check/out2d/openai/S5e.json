@@ -1,0 +1,39 @@
+{
+  "id": "S5e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:46:46Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (τ σ G : Fm),\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼F (σ 🡒 G)) →\n    𝓢 ⊢ τ 🡒 σ →\n    𝓢 ⊢ τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G)) →\n    𝓢 ⊢ ∼τ\n",
+  "usage": [
+    [
+      3042,
+      252
+    ],
+    [
+      4457,
+      1423
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and provability relation for systems in S, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every pair of functions K and F from Fm to Fm, and every three sentences τ, σ, G, let A denote the sentence “σ implies G.” If (1) 𝓢 proves the conjunction of K(A) and “σ implies the negation of F(A),” (2) 𝓢 proves “τ implies σ,” and (3) 𝓢 proves “τ implies (K(A) if and only if F(A)),” then 𝓢 proves the negation of τ. The three hypotheses are provability claims; none requires 𝓢 to prove τ or σ. No consistency assumption on 𝓢 or further property of K or F is required.\"}",
+  "translation": "Target is the following proposition. For every sentence type Fm and system type S, every choice of logical connectives and truth and falsehood constants on Fm and provability relation for systems in S, every system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens, every pair of functions K and F from Fm to Fm, and every three sentences τ, σ, G, let A denote the sentence “σ implies G.” If (1) 𝓢 proves the conjunction of K(A) and “σ implies the negation of F(A),” (2) 𝓢 proves “τ implies σ,” and (3) 𝓢 proves “τ implies (K(A) if and only if F(A)),” then 𝓢 proves the negation of τ. The three hypotheses are provability claims; none requires 𝓢 to prove τ or σ. No consistency assumption on 𝓢 or further property of K or F is required.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean states a conditional inference for any classical system, rather than a theorem specifically of DTK. The meanings of τ, σ and G, and the interpretation of K and F as predicates on sentence codes, are supplied by the intended reading rather than enforced by their types.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Step (6) and Lemma 3 are written as sequents from assumptions in the source; Lean takes their internalized implications as provable premises. It packages steps (5) and (6) into one provable conjunction, which is equivalent in a classical system to proving the two conjuncts separately.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean uses the explicit witness A = (σ → G) directly. It does not express step (7)'s existential, the witness's non-arithmetical status, or Lemma 4's passage from a non-arithmetical sentence to a sentence. Likewise, it assumes only the instance of full agreement at A, not the quantified definition of K = F.\"\n    }\n  ],\n  \"summary\": \"The final inference is faithful: under τ, Lemma 3 gives σ and hence ¬F(A), while K(A) and the agreement instance give F(A). This establishes the stated conclusion ∼τ from the premises without purporting to derive those premises in DTK.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Lean states a conditional inference for any classical system, rather than a theorem specifically of DTK. The meanings of τ, σ and G, and the interpretation of K and F as predicates on sentence codes, are supplied by the intended reading rather than enforced by their types."
+      },
+      {
+        "severity": "minor",
+        "description": "Step (6) and Lemma 3 are written as sequents from assumptions in the source; Lean takes their internalized implications as provable premises. It packages steps (5) and (6) into one provable conjunction, which is equivalent in a classical system to proving the two conjuncts separately."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean uses the explicit witness A = (σ → G) directly. It does not express step (7)'s existential, the witness's non-arithmetical status, or Lemma 4's passage from a non-arithmetical sentence to a sentence. Likewise, it assumes only the instance of full agreement at A, not the quantified definition of K = F."
+      }
+    ],
+    "summary": "The final inference is faithful: under τ, Lemma 3 gives σ and hence ¬F(A), while K(A) and the agreement instance give F(A). This establishes the stated conclusion ∼τ from the premises without purporting to derive those premises in DTK."
+  }
+}

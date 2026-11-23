@@ -1,0 +1,39 @@
+{
+  "id": "X18",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:41:06Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K : Fm → Fm) (τ σ G Q : Fm),\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼Q) →\n    𝓢 ⊢ σ 🡒 τ →\n    𝓢 ⊢ τ 🡒 K (σ 🡒 G) 🡒 Q →\n    𝓢 ⊢ ∼τ\n",
+  "usage": [
+    [
+      2943,
+      4328
+    ],
+    [
+      4406,
+      4972
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting that for all types Fm (of sentences) and S (of proof systems), every choice of formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼) and constants (⊤, ⊥) on Fm, every entailment (provability) relation ⊢ between S and Fm, every proof system 𝓢 of type S that is classical (proves every classical propositional tautology in these connectives and is closed under modus ponens), every function K : Fm → Fm, and all sentences τ, σ, G, Q in Fm: if (1) 𝓢 proves (K (σ 🡒 G)) ⋏ (σ 🡒 ∼Q), (2) 𝓢 proves σ 🡒 τ, and (3) 𝓢 proves τ 🡒 (K (σ 🡒 G) 🡒 Q), then 𝓢 proves ∼τ (the formal negation of τ). Here 🡒, ⋏, and ∼ are the implication, conjunction, and negation connectives inside the formal language. Nothing else is required of 𝓢 (in particular, consistency is not assumed), nothing is required of K (it is an arbitrary function from sentences to sentences, with no axioms or rules such as necessitation or distribution over implication, and it appears only applied to σ 🡒 G), and no additional conditions are placed on τ, σ, G, or Q beyond the three provability hypotheses.\"}",
+  "translation": "Target is the proposition asserting that for all types Fm (of sentences) and S (of proof systems), every choice of formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼) and constants (⊤, ⊥) on Fm, every entailment (provability) relation ⊢ between S and Fm, every proof system 𝓢 of type S that is classical (proves every classical propositional tautology in these connectives and is closed under modus ponens), every function K : Fm → Fm, and all sentences τ, σ, G, Q in Fm: if (1) 𝓢 proves (K (σ 🡒 G)) ⋏ (σ 🡒 ∼Q), (2) 𝓢 proves σ 🡒 τ, and (3) 𝓢 proves τ 🡒 (K (σ 🡒 G) 🡒 Q), then 𝓢 proves ∼τ (the formal negation of τ). Here 🡒, ⋏, and ∼ are the implication, conjunction, and negation connectives inside the formal language. Nothing else is required of 𝓢 (in particular, consistency is not assumed), nothing is required of K (it is an arbitrary function from sentences to sentences, with no axioms or rules such as necessitation or distribution over implication, and it appears only applied to σ 🡒 G), and no additional conditions are placed on τ, σ, G, or Q beyond the three provability hypotheses.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"The second hypothesis reverses Lemma 3: the source states Lemma 3 as K = F ⊢DTK K =PA F (τ 🡒 σ, as the author's own claim describes), whereas the TARGET writes 𝓢 ⊢ σ 🡒 τ (K =PA F → K = F). Besides stating the converse of Lemma 3, this reversal makes Target mathematically false: in classical propositional logic, assigning τ = ⊤, σ = ⊥, Q = ⊤, and K (σ 🡒 G) = ⊤ satisfies all three hypotheses while falsifying the conclusion ∼τ.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"As an abstract propositional schema, the TARGET omits quantifiers, Gödel codes, the syntactic predicates Sent and Sent¬PA, and the definitions of K = F, K =PA F, F, and G(F+): Q is an arbitrary opaque sentence rather than F applied to σ 🡒 G, the existential step (7) and Lemma 4 are collapsed into the single implication τ 🡒 K (σ 🡒 G) 🡒 Q, and the derivability claims of step (6) and Lemma 3 are internalized as object-level implications.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The TARGET does not express the closing remark of the passage that ∃F(K = F) and its negation ¬∃F(K = F) are provably indeterminate in DTK.\"\n    }\n  ],\n  \"summary\": \"The TARGET is divergent from step (8) of the source because it reverses Lemma 3 from τ 🡒 σ (K = F → K =PA F) to σ 🡒 τ, which contradicts the passage and renders the formalized proposition false. Beyond this major error, the remaining differences are minor abstractions inherent to the propositional idealization (dropping quantifiers, codes, syntactic predicates, and indeterminacy).\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "The second hypothesis reverses Lemma 3: the source states Lemma 3 as K = F ⊢DTK K =PA F (τ 🡒 σ, as the author's own claim describes), whereas the TARGET writes 𝓢 ⊢ σ 🡒 τ (K =PA F → K = F). Besides stating the converse of Lemma 3, this reversal makes Target mathematically false: in classical propositional logic, assigning τ = ⊤, σ = ⊥, Q = ⊤, and K (σ 🡒 G) = ⊤ satisfies all three hypotheses while falsifying the conclusion ∼τ."
+      },
+      {
+        "severity": "minor",
+        "description": "As an abstract propositional schema, the TARGET omits quantifiers, Gödel codes, the syntactic predicates Sent and Sent¬PA, and the definitions of K = F, K =PA F, F, and G(F+): Q is an arbitrary opaque sentence rather than F applied to σ 🡒 G, the existential step (7) and Lemma 4 are collapsed into the single implication τ 🡒 K (σ 🡒 G) 🡒 Q, and the derivability claims of step (6) and Lemma 3 are internalized as object-level implications."
+      },
+      {
+        "severity": "minor",
+        "description": "The TARGET does not express the closing remark of the passage that ∃F(K = F) and its negation ¬∃F(K = F) are provably indeterminate in DTK."
+      }
+    ],
+    "summary": "The TARGET is divergent from step (8) of the source because it reverses Lemma 3 from τ 🡒 σ (K = F → K =PA F) to σ 🡒 τ, which contradicts the passage and renders the formalized proposition false. Beyond this major error, the remaining differences are minor abstractions inherent to the propositional idealization (dropping quantifiers, codes, syntactic predicates, and indeterminacy)."
+  }
+}

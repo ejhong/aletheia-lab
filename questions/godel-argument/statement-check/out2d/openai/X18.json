@@ -1,0 +1,35 @@
+{
+  "id": "X18",
+  "decoy": true,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:46:46Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (τ σ G : Fm),\n    𝓢 ⊢ K (σ 🡒 G) ⋏ (σ 🡒 ∼F (σ 🡒 G)) →\n    𝓢 ⊢ σ 🡒 τ →\n    𝓢 ⊢ τ 🡒 (K (σ 🡒 G) 🡘 F (σ 🡒 G)) →\n    𝓢 ⊢ ∼τ\n",
+  "usage": [
+    [
+      3042,
+      327
+    ],
+    [
+      4458,
+      1147
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the following proposition. For every sentence type Fm and system type S, with any choice of logical connectives and truth and falsehood constants on Fm and provability relation for systems in S, take any system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens. For every pair of functions K, F from Fm to Fm and every choice of sentences τ, σ, G, let A abbreviate the sentence ‘σ implies G’. If (1) 𝓢 proves the conjunction ‘K(A) and (σ implies not F(A))’, (2) 𝓢 proves ‘σ implies τ’, and (3) 𝓢 proves ‘τ implies (K(A) if and only if F(A))’, then 𝓢 proves ‘not τ’. The three hypotheses are about proofs of the displayed sentences; neither σ nor τ is required to be provable. No consistency assumption on 𝓢 or further condition on K or F is imposed.\"}",
+  "translation": "Target is the following proposition. For every sentence type Fm and system type S, with any choice of logical connectives and truth and falsehood constants on Fm and provability relation for systems in S, take any system 𝓢 in S that proves all classical propositional tautologies and is closed under modus ponens. For every pair of functions K, F from Fm to Fm and every choice of sentences τ, σ, G, let A abbreviate the sentence ‘σ implies G’. If (1) 𝓢 proves the conjunction ‘K(A) and (σ implies not F(A))’, (2) 𝓢 proves ‘σ implies τ’, and (3) 𝓢 proves ‘τ implies (K(A) if and only if F(A))’, then 𝓢 proves ‘not τ’. The three hypotheses are about proofs of the displayed sentences; neither σ nor τ is required to be provable. No consistency assumption on 𝓢 or further condition on K or F is imposed.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Lemma 3 is reversed. The source uses full agreement (τ) to infer arithmetical agreement (σ), but the second premise is `𝓢 ⊢ σ 🡒 τ`. Thus assuming τ does not supply the σ needed to infer ¬F(σ → G). In a two-valued system with τ true, σ false, and K and F constantly true, all three premises are provable but ¬τ is not.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"As declared, the rendering is schematic: σ, τ, and G have no encoded arithmetical or syntactic definitions. Using the specific witness σ → G and one biconditional instance at that witness bypasses the source’s quantified passage from a non-arithmetical sentence to a sentence. That instance suffices for the intended contradiction.\"\n    }\n  ],\n  \"summary\": \"Replacing the second premise with `𝓢 ⊢ τ 🡒 σ` restores the intended inference: under τ, the first premise then yields both K(σ → G) and ¬F(σ → G), while the third yields F(σ → G).\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Lemma 3 is reversed. The source uses full agreement (τ) to infer arithmetical agreement (σ), but the second premise is `𝓢 ⊢ σ 🡒 τ`. Thus assuming τ does not supply the σ needed to infer ¬F(σ → G). In a two-valued system with τ true, σ false, and K and F constantly true, all three premises are provable but ¬τ is not."
+      },
+      {
+        "severity": "minor",
+        "description": "As declared, the rendering is schematic: σ, τ, and G have no encoded arithmetical or syntactic definitions. Using the specific witness σ → G and one biconditional instance at that witness bypasses the source’s quantified passage from a non-arithmetical sentence to a sentence. That instance suffices for the intended contradiction."
+      }
+    ],
+    "summary": "Replacing the second premise with `𝓢 ⊢ τ 🡒 σ` restores the intended inference: under τ, the first premise then yields both K(σ → G) and ¬F(σ → G), while the third yields F(σ → G)."
+  }
+}

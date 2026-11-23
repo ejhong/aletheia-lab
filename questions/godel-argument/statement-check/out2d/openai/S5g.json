@@ -1,0 +1,26 @@
+{
+  "id": "S5g",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T14:40:16Z",
+  "target": "def Target : Prop :=\n  (∃ K : Def1, Def3 K ∧ Def4 K ∧ Def8 K ∧ 𝗣𝗔.theory ⊆ K ∧ Def6 K) ∧\n  (∃ K : Def1, Def3 K ∧ Def4 K ∧ Def8 K ∧ 𝗣𝗔.theory ⊆ K ∧ ¬ Def6 K)\n",
+  "usage": [
+    [
+      2970,
+      181
+    ],
+    [
+      3664,
+      240
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines a proposition as the conjunction of two existence claims. First, there is a set K of arithmetic sentences such that every member of K is true in the standard natural numbers, K used as axioms does not prove a contradiction, every sentence derivable from K belongs to K, every theorem of Peano arithmetic belongs to K, and there exists a recursively enumerable arithmetic axiom set F whose set of theorems is exactly K. Second, there is a set K′ of arithmetic sentences satisfying the same first four conditions, but there is no recursively enumerable arithmetic axiom set F whose set of theorems is exactly K′. The sets K and K′ are quantified separately and must differ because their last conditions are incompatible. Recursive enumerability is imposed on the presenting axiom set F, which is not required to equal the set of its theorems.\"}",
+  "translation": "Target defines a proposition as the conjunction of two existence claims. First, there is a set K of arithmetic sentences such that every member of K is true in the standard natural numbers, K used as axioms does not prove a contradiction, every sentence derivable from K belongs to K, every theorem of Peano arithmetic belongs to K, and there exists a recursively enumerable arithmetic axiom set F whose set of theorems is exactly K. Second, there is a set K′ of arithmetic sentences satisfying the same first four conditions, but there is no recursively enumerable arithmetic axiom set F whose set of theorems is exactly K′. The sets K and K′ are quantified separately and must differ because their last conditions are incompatible. Recursive enumerability is imposed on the presenting axiom set F, which is not required to equal the set of its theorems.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Both minds are sound in the standard natural numbers, consistent, deductively closed, and contain every PA theorem. One is exactly the theorem set of a recursively enumerable axiom set and the other is not the theorem set of any such set, so the four conditions do not determine mechanicality; the target makes no claim about DTK or Reinhardt’s theorem.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Both minds are sound in the standard natural numbers, consistent, deductively closed, and contain every PA theorem. One is exactly the theorem set of a recursively enumerable axiom set and the other is not the theorem set of any such set, so the four conditions do not determine mechanicality; the target makes no claim about DTK or Reinhardt’s theorem."
+  }
+}

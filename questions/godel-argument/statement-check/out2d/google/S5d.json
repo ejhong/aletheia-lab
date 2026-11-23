@@ -1,0 +1,31 @@
+{
+  "id": "S5d",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T14:46:46Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S Fm] (𝓢 : S) [Entailment.Cl 𝓢]\n    (K F : Fm → Fm) (conF : Fm),\n    𝓢 ⊢ K conF 🡒 conF →\n    𝓢 ⊢ K (∼conF) 🡒 ∼conF →\n    𝓢 ⊢ K conF 🡒 F conF →\n    𝓢 ⊢ conF 🡒 ∼F conF →\n    𝓢 ⊢ ∼K conF ⋏ (conF 🡒 ∼K (∼conF))\n",
+  "usage": [
+    [
+      2962,
+      2947
+    ],
+    [
+      4475,
+      24062
+    ]
+  ],
+  "a_raw": "{\"translation\": \"`Target` is the proposition asserting that for all types `Fm` (of sentences) and `S` (of proof systems), equipped with the formal logical connectives (implication `🡒`, conjunction `⋏`, disjunction `⋎`, negation `∼`) and constants (`⊤`, `⊥`) on `Fm` and a provability relation `⊢` between `S` and `Fm`; for every proof system `𝓢 : S` that proves all classical propositional tautologies in these connectives and is closed under modus ponens; for all arbitrary functions `K, F : Fm → Fm`; and for every sentence `conF : Fm`: if `𝓢` proves all four sentences (1) `(K conF) 🡒 conF`, (2) `(K (∼conF)) 🡒 (∼conF)`, (3) `(K conF) 🡒 (F conF)`, and (4) `conF 🡒 (∼(F conF))`, then `𝓢` proves the sentence `(∼(K conF)) ⋏ (conF 🡒 (∼(K (∼conF))))`. Nothing else is required: `𝓢` is not assumed to be consistent or closed under any rule beyond modus ponens, `K` and `F` are completely arbitrary functions with no axioms assumed about them (such as necessitation or distribution) and are only ever applied to `conF` and `∼conF`, and `conF` is simply an arbitrary sentence in `Fm` rather than a formal consistency statement.\"}",
+  "translation": "`Target` is the proposition asserting that for all types `Fm` (of sentences) and `S` (of proof systems), equipped with the formal logical connectives (implication `🡒`, conjunction `⋏`, disjunction `⋎`, negation `∼`) and constants (`⊤`, `⊥`) on `Fm` and a provability relation `⊢` between `S` and `Fm`; for every proof system `𝓢 : S` that proves all classical propositional tautologies in these connectives and is closed under modus ponens; for all arbitrary functions `K, F : Fm → Fm`; and for every sentence `conF : Fm`: if `𝓢` proves all four sentences (1) `(K conF) 🡒 conF`, (2) `(K (∼conF)) 🡒 (∼conF)`, (3) `(K conF) 🡒 (F conF)`, and (4) `conF 🡒 (∼(F conF))`, then `𝓢` proves the sentence `(∼(K conF)) ⋏ (conF 🡒 (∼(K (∼conF))))`. Nothing else is required: `𝓢` is not assumed to be consistent or closed under any rule beyond modus ponens, `K` and `F` are completely arbitrary functions with no axioms assumed about them (such as necessitation or distribution) and are only ever applied to `conF` and `∼conF`, and `conF` is simply an arbitrary sentence in `Fm` rather than a formal consistency statement.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The contingent surpassing hypothesis `K conF 🡒 F conF` is formalized as a meta-level provability premise (`𝓢 ⊢ K conF 🡒 F conF → ...`) uniformly with the DTK principles, rather than as an object-level antecedent (`𝓢 ⊢ (K conF 🡒 F conF) 🡒 ...`) or a side assumption (`K conF 🡒 F conF ⊢_DTK ...`), whereas `conF` in the second conjunct is placed at the object level (`conF 🡒 ∼K (∼conF)`). Because `Target` quantifies over all classical systems `𝓢`, instantiating `𝓢` to `DTK` extended with `K conF 🡒 F conF` makes this logically equivalent, so it is a harmless presentational choice.\"\n    }\n  ],\n  \"summary\": \"The Lean formalization faithfully captures the author's stated repair of the corollary in the declared abstract setting, matching all four hypotheses and both parts of the two-sided undecidability conclusion exactly. The only minor caveat is the harmless presentational choice of placing the surpassing premise `K conF 🡒 F conF` as a provability hypothesis of `𝓢` rather than an object-level conditional, which is equivalent given universal quantification over classical systems `𝓢`.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The contingent surpassing hypothesis `K conF 🡒 F conF` is formalized as a meta-level provability premise (`𝓢 ⊢ K conF 🡒 F conF → ...`) uniformly with the DTK principles, rather than as an object-level antecedent (`𝓢 ⊢ (K conF 🡒 F conF) 🡒 ...`) or a side assumption (`K conF 🡒 F conF ⊢_DTK ...`), whereas `conF` in the second conjunct is placed at the object level (`conF 🡒 ∼K (∼conF)`). Because `Target` quantifies over all classical systems `𝓢`, instantiating `𝓢` to `DTK` extended with `K conF 🡒 F conF` makes this logically equivalent, so it is a harmless presentational choice."
+      }
+    ],
+    "summary": "The Lean formalization faithfully captures the author's stated repair of the corollary in the declared abstract setting, matching all four hypotheses and both parts of the two-sided undecidability conclusion exactly. The only minor caveat is the harmless presentational choice of placing the surpassing premise `K conF 🡒 F conF` as a provability hypothesis of `𝓢` rather than an object-level conditional, which is equivalent given universal quantification over classical systems `𝓢`."
+  }
+}
