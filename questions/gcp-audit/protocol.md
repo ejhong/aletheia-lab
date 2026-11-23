@@ -14,11 +14,11 @@ windows a week away, taken as controls, come out at chance?**
 
 ## Why it matters
 
-A result of 7.31 either is in the public data or is not. If it is, and matched control windows show nothing,
-then the excess is tied to the times the project registered, and what remains in dispute is how those times were
-chosen. If the control windows show the same excess, the cause is the devices or the method. If the scores do
-not reproduce, the published table does not follow from the public data by the published recipe. Each outcome
-moves the question, and #47's null result reads differently under each.
+A result of 7.31 either is in the public data or is not. If our scores match the published ones and the events
+score higher than their own matched controls, the excess is tied to the times the project registered, and what
+remains in dispute is how those times were chosen. If the controls show an excess as large, something other than
+the events is producing it. If our scores do not match the published ones, this reconstruction of the recipe does
+not reproduce the table. Each outcome moves the question, and #47's null result reads differently under each.
 
 What the project states, read on its website on 2026-11-23 (copies of the first two pages are in `sources/`):
 
@@ -73,7 +73,8 @@ this audit needs were downloaded before the lock and checked only for length and
 
 ### The events
 
-A registry row is **in the test** if all of these hold. Every condition is read from the two tables alone.
+A registry row is **in the test** if all of these hold. Conditions 1 to 4 are read from the two tables alone;
+5 and 6 also use the list of days that have a file.
 
 1. Its Include entry begins "Yes" (499 of 512 rows).
 2. Its Recipe is exactly "Stouffer Z Meanshift" or "Stouffer Z", its Statistic is exactly "Chisquare 600 df
@@ -114,14 +115,14 @@ For each event in the test, in registry order: the same window shifted by −7 d
 −21, +21, −28, +28 days. A shift fails if a UTC day the shifted window touches has no day file, or if the
 shifted window overlaps a *blocked stretch* or a control window already assigned.
 
-The blocked stretches (`sources/blocked.tsv`, 529 of them) are every stretch of time that any event occupies or
-may occupy, whether or not it is in the test: the window of every registry row whose times parse; for the 16
-rows whose times do not parse, the whole UTC days from the first to the last date written in the row if those
+The blocked stretches (`sources/blocked.tsv`, 529 of them) are meant to cover the time of every event, whether
+or not it is in the test: the window of every registry row whose times parse; for the 16
+rows whose times do not parse and the one whose end is before its begin, the whole UTC days from the first to the last date written in the row if those
 are at most 7 days apart, and otherwise each date written; for the rows whose registry and published dates
 disagree, the published date and the day after as well; and the days 2010-10-13 to 2010-10-14 and 2015-09-21 to
 2015-09-22, for the two events that are in the published table and not in the registry.
 
-Controls used: 362 at −7 days, 28 at +7, 4 at −14, 2 at +14. A shift of whole weeks keeps the time of day and
+Controls used: 362 at −7 days, 28 at +7, 4 at −14, 2 at +14 (390 one week away, 6 two weeks). A shift of whole weeks keeps the time of day and
 the day of the week. Most controls are earlier than their events; results are also given separately for the
 pairs whose control is earlier and those whose control is later.
 
@@ -142,8 +143,9 @@ absent from the files has no data.
 2. *The egg check, standing in for the project's unpublished stability criteria.* For a set of `n` cleaned
    trials of one egg: the egg fails if `|mean − 100| / (7.0711/√n) > 5`, or
    `|mean((x − 100)²)/50 − 1| × √(n/2) > 5`. The project says device variances are off by "about 1 part in
-   10,000" and at most about 0.25%; over a whole day this check allows about 2.4%, so it removes broken devices
-   and not ordinary ones. It is applied in two places: to an egg's trials in the window being scored, where the
+   10,000" and at most about 0.25%; over a whole day this check allows an observed mean square about 2.4% from
+   50, so it is aimed at broken devices. It can still drop an ordinary egg by chance (about 1 time in 1.7
+   million for each of its two parts) or keep a faulty one. It is applied in two places: to an egg's trials in the window being scored, where the
    egg must also have `n ≥ L/2` for a window of `L` seconds; and to an egg's trials on each day of a reference
    pool (below).
 
@@ -168,8 +170,8 @@ For an event and its control, a **pair**:
   fewer than 2 eggs are used, or `df < 0.8 × L`, or `df < 2`.
 - **The window's score** is the normal equivalent of `χ²` by the Wilson–Hilferty formula:
   `Z_window = ((χ²/df)^(1/3) − (1 − 2/(9·df))) / √(2/(9·df))`. Against the exact conversion its error is below
-  0.002 for df of 600 or more out to four standard deviations, and it stays finite in the far lower tail, where
-  the exact conversion in double precision does not. The smallest window in the test has 60 seconds. A positive
+  0.002 for df of 600 or more out to four standard deviations (unit tests), and it needs no tail probability,
+  which underflows in double precision for the largest windows. The smallest window in the test has 60 seconds. A positive
   score means the composite's mean square is above what chance typically gives, the direction the project
   reports.
 
@@ -184,7 +186,7 @@ correlation `r`; the slope of ours on published; the mean and the median absolut
 
 | Label | Condition |
 |---|---|
-| **Reproduces closely** | `r ≥ 0.9` and median absolute difference ≤ 0.25 |
+| **Reproduces closely** | `r ≥ 0.9`, median absolute difference ≤ 0.25, and slope between 0.8 and 1.25 |
 | **Reproduces roughly** | otherwise, `r ≥ 0.7` and median absolute difference ≤ 0.5 |
 | **Does not reproduce** | otherwise |
 
@@ -204,10 +206,10 @@ raw files by the project's own program.
 - *Events against their own controls.* The event's score minus the control's, pair by pair: the mean, its
   standard error, and a one-sided p from 200,000 random sign flips (`numpy.random.default_rng(74)`, in 20
   batches of 10,000, each an array of signs drawn by `integers(0, 2, (10000, pairs)) * 2 − 1`; p is
-  `(hits + 1)/200,001`, where a hit is a flipped sum at least the observed sum). The p-value is right if, under
-  chance, swapping which window of a pair is called the event leaves the distribution of the scores unchanged.
-  An event and its control are scored with the same pool and the same rules, which is what that needs; it is
-  still a nominal value, because pairs share pools and some events overlap.
+  `(hits + 1)/200,001`, where a hit is a flipped sum at least the observed sum). The p-value is exact only if, under
+  chance, the joint distribution of all the differences is unchanged by flipping the sign of any of them. Scoring
+  an event and its control with the same pool and the same rules removes the known asymmetries; it does not
+  prove that condition, and pairs share pools and some events overlap. So the p-value is nominal.
 
 **Overall**, the first of these that applies:
 
@@ -222,22 +224,25 @@ raw files by the project's own program.
 The combined scores are descriptive in the project's own form. Their p-values are nominal: they assume the
 chi-square holds after standardising and that windows are independent.
 
-### Reported alongside, not part of the labels
+### Reported alongside (only the reproduction label of item 1 is a label)
 
 1. **Theoretical standardising** (`s = 7.0711` for every egg), for events and controls, with the same eggs. The
    project says uncorrected device variances push the statistic upward; the controls under this recipe show by
    how much.
 2. **Without the mean and variance parts of the egg check** in the scored window (every egg with `n ≥ L/2` and
    enough pool is used), for events and controls. The check looks at the very data being scored, so this shows
-   how much it matters.
+   how much it matters. The check on each day of the pool still applies, so an egg that is off on most days has
+   no pool and is not used here either.
 3. **The cross-egg part.** `Z²` splits into each egg's own squares and the products of pairs of eggs. The second
    part, `Σ over seconds with N ≥ 2 of [Z² − (Σ z²)/N]`, divided by `√(Σ over those seconds of 2(N − 1)/N)`,
-   measures eggs moving together; one egg's excess variance does not move its expected value. Combined across
+   measures eggs moving together; one egg's excess variance does not move its expected value. It is undefined
+   for a window with no second in which two eggs report. Combined across
    windows like the main score, for events and for controls. (A reviewer says the project's later papers make
    this pair correlation their central claim. Those papers were not read.)
-4. Everything above for: events that do not overlap an earlier event in the test; pairs with the control
+4. The combined scores, paired check and agreement measures (not the overall label) for: events that do not overlap an earlier event in the test; pairs with the control
    earlier, and later; the test without the five events already scored in #47; each year; and each window
-   length (under 1 hour; 1 to 6 hours; over 6 hours and under a day; a day or more).
+   length (under 1 hour; 1 to 6 hours; over 6 hours and under a day; a day or more). Standard deviations
+   need at least 2 events; correlations and slopes need at least 3.
 5. Each window's scores, degrees of freedom, eggs used and seen, the median number of eggs per second, and the
    number of days in its pool (`results/windows.tsv`).
 6. The events and controls that were not evaluable, by number.
@@ -248,7 +253,8 @@ chi-square holds after standardising and that windows are independent.
   program): cleaning; windows across days; the egg check; pure noise gives scores that look standard normal at
   window lengths of 60 s, 600 s and 6 hours (means within 0.02 of zero, standard deviations within 0.005 of
   one); a shared wobble gives a large score; evaluability; the cross-egg part; the pool, its blocked stretches
-  and its egg-day rule; pooled standardising is unbiased where theoretical standardising is biased; the
+  and its egg-day rule; pooled standardising shows no bias, within the simulation's error, where theoretical standardising is visibly
+  biased; the
   Wilson–Hilferty formula against exact values; the sign-flip test; the agreement measures and every label.
 - **Against the project's own numbers:** the six events scored in #47, listed above. Nothing further was scored
   for this plan.
@@ -263,12 +269,11 @@ the scoring and not the reading of the project's tables.
 ## What would count
 
 - **For the project's reported result being in the public data and tied to its event windows:** "reproduces"
-  (closely or roughly, under either standardising) together with "the excess is in the event windows".
-- **For an artefact of the devices or the method:** "the excess is not specific to the events", or a
-  calibration failure together with a paired difference whose interval includes zero.
-- **Against this reconstruction matching the published table:** "does not reproduce" under both standardisings,
-  or "no excess found".
-- **Mixed** and **insufficient coverage** are reported as they are.
+  (closely or roughly, under either standardising) together with "the excess is in the event windows". This is
+  about the 396 events in the test and about per-event agreement; it is not a recomputation of the headline 7.31.
+- **For an excess that is not tied to the events:** "the excess is not specific to the events".
+- **Against this reconstruction matching the published table:** "does not reproduce" under both standardisings.
+- **"No excess found", "mixed" and "insufficient coverage"** are reported as they are, with the numbers.
 
 None of these says whether minds affect random-number generators. If the excess is in the event windows, the
 audit still cannot say how the events and their windows were chosen: by the project's account, before the data
@@ -286,7 +291,7 @@ when each event was registered. A test on events fixed by rule, such as #47, is 
 - **No placebo calendar.** A stronger calibration would score made-up "events" on ordinary days with the whole
   procedure. Both reviewers asked for it. It needs several hundred more day files and was left out for time; the
   396 controls are the calibration there is.
-- **Controls are one week away, and mostly earlier.** A device that misbehaves for weeks would affect both
+- **Controls are one or two weeks away, and mostly earlier.** A device that misbehaves for weeks would affect both
   windows. A steady drift in the network over a week could shift the paired difference slightly; the earlier
   and later controls are reported separately so that this can be seen.
 - **The egg check looks at the window being scored.** It could remove a genuinely unusual egg. Results without

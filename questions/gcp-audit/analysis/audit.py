@@ -198,7 +198,7 @@ def agreement(ours, published):
 def reproduction_label(rep):
     if rep["r"] is None:
         return "not assessed"
-    if rep["r"] >= 0.9 and rep["median_abs_difference"] <= 0.25:
+    if rep["r"] >= 0.9 and rep["median_abs_difference"] <= 0.25 and 0.8 <= rep["slope"] <= 1.25:
         return "reproduces closely"
     if rep["r"] >= 0.7 and rep["median_abs_difference"] <= 0.5:
         return "reproduces roughly"

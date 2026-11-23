@@ -244,24 +244,35 @@ def test_cross_part():
 
 # ---------------------------------------------------------------- 8. pool_of_day
 def test_pool_of_day():
-    eggs = [11, 4]
-    x = np.full((DAY, 2), 101, dtype=np.float32)                # deviation 1 everywhere ...
-    x[1000:2000] = 103                                          # ... 3 inside the first blocked stretch
-    x[0:100] = 103                                              # ... 3 inside the stretch that starts before the day
-    x[DAY - 50:] = 103                                          # ... 3 inside the stretch that runs past the day
-    x[5000:5010, 0] = 150                                       # 10 wild trials in egg 11 (outside any block)
-    x[6000:6020, 1] = 54                                        # 20 wild trials in egg 4
-    x[7000:7030, 1] = np.nan                                    # 30 missing in egg 4
+    rng = np.random.default_rng(8)
+    eggs = [11, 4, 6, 9, 2, 13]
+    x = noise(rng, (DAY, 6))
+    x[5000:5010, 0] = 150                                       # 10 wild trials in egg 11
+    x[6000:6020, 1] = 54                                        # 20 wild trials in egg 4 ...
+    x[7000:7030, 1] = np.nan                                    # ... and 30 missing
+    x[:, 2] = np.nan; x[20000:23000, 2] = noise(rng, 3000)     # egg 6: 3,000 trials, too few (needs 3,600)
+    x[:, 3] = np.nan; x[30000:33600, 3] = noise(rng, 3600)     # egg 9: exactly 3,600 trials, enough
+    x[:, 4] = 100 + (x[:, 4] - 100) * np.float32(math.sqrt(1.3))  # egg 2: variance x1.3, fails the mean-square check
+    x[:, 5] += np.float32(0.5)                                  # egg 13: mean +0.5 (limit 5*7.07/sqrt(85k) = 0.12)
     reader = lambda d: (T0, eggs, x)
     blocked = [(T0 + 1000, T0 + 1999),                          # inside, inclusive ends: 1000 s
                (T0 - 500, T0 + 99),                             # starts the day before: 100 s
                (T0 + DAY - 50, T0 + DAY + 1000),                # runs into the next day: 50 s
                (T0 - 2000, T0 - 1),                             # entirely before
                (T0 + DAY, T0 + DAY + 99)]                       # entirely after
+    keep = np.ones(DAY, bool); keep[1000:2000] = keep[:100] = keep[DAY - 50:] = False
+    y = audit.clean(x)[keep].astype(np.float64)
+    exp_n = (~np.isnan(y)).sum(axis=0)
+    exp_ss = np.nansum((y - 100) ** 2, axis=0)
     p = audit.pool_of_day("2020-03-01", blocked, reader)
-    kept = DAY - 1150
-    check(p == {11: (kept - 10, float(kept - 10)), 4: (kept - 50, float(kept - 50))}, f"pool {p}")
+    check(sorted(p) == [4, 9, 11], f"eggs kept {sorted(p)} (want 4, 9, 11)")
+    check(p[11][0] == DAY - 1150 - 10 and p[4][0] == DAY - 1150 - 50 and p[9][0] == 3600, f"counts {p}")
+    for k, e in enumerate(eggs):
+        if e in p:
+            check(p[e][0] == exp_n[k] and abs(p[e][1] - exp_ss[k]) < 1e-6 * exp_ss[k], f"egg {e}: {p[e]} vs {exp_n[k]}, {exp_ss[k]}")
+    # without blocks: all non-wild trials; and blocking egg 9's only stretch leaves it out
     check(audit.pool_of_day("2020-03-01", [], reader)[11][0] == DAY - 10, "no blocks: all non-wild trials")
+    check(9 not in audit.pool_of_day("2020-03-01", [(T0 + 30000, T0 + 30000)], reader), "egg 9 with 3,599 trials kept")
 
 
 # ---------------------------------------------------------------- 9. score_window end to end
@@ -282,29 +293,38 @@ SW_REPORT = {}
 
 
 def test_score_window():
-    eggs, seconds, sims = list(range(1, 7)), 3600, 300
-    main, theory, dropped = [], [], 0
+    # eggs 1% wider than theory: small enough that the pool's day-level egg check (5-sigma at ~86,400 trials, i.e.
+    # about 2.4% in variance) keeps nearly every egg-day, large enough that the theory score is visibly biased in
+    # 21,600 s windows (expected (1.01^(1/3) - 1 + k)/sqrt(k) ~ 1.04, k = 2/(9*21600))
+    eggs, seconds, sims, var = list(range(1, 7)), 21600, 300, 1.01
+    main, theory, dropped, dropped_days, all6, noveto_same = [], [], 0, 0, 0, 0
     for i in range(sims):
-        reader = wide_reader(1000 + i, eggs, 1.03 * 50)
+        reader = wide_reader(1000 + i, eggs, var * 50)
         pool = {}
         for d in ("2020-03-01", "2020-03-03"):                  # reference days, not the window's day
-            for e, (n, ss) in audit.pool_of_day(d, [], reader).items():
+            pd = audit.pool_of_day(d, [], reader)
+            dropped_days += 6 - len(pd)
+            for e, (n, ss) in pd.items():
                 a, b = pool.get(e, (0, 0.0)); pool[e] = (a + n, b + ss)
         r = audit.score_window(T0 + DAY + 40000, seconds, pool, {}, reader)
         dropped += 6 - r["eggs_passing"]                        # eggs failing the 5-sigma egg check by chance
+        all6 += r["eggs_passing"] == 6                          # then noveto uses the same eggs and must equal main
+        noveto_same += r["eggs_passing"] == 6 and abs(r["noveto"]["z"] - r["main"]["z"]) < 1e-12
         main.append(r["main"]["z"]); theory.append(r["theory"]["z"])
     k = 2 / (9 * seconds)
-    expect_theory = (1.03 ** (1 / 3) - 1 + k) / math.sqrt(k)
+    expect_theory = (var ** (1 / 3) - 1 + k) / math.sqrt(k)
     mm, mt = np.mean(main), np.mean(theory)
     SW_REPORT.update(sims=sims, main=(mm, np.std(main, ddof=1)), theory=(mt, np.std(theory, ddof=1)), expect=expect_theory)
-    print(f"    variance 1.03x theory, {sims} windows of {seconds} s, 6 eggs: main mean {mm:+.3f} sd {np.std(main, ddof=1):.3f}; "
+    print(f"    variance {var}x theory, {sims} windows of {seconds} s, 6 eggs: main mean {mm:+.3f} sd {np.std(main, ddof=1):.3f}; "
           f"theory mean {mt:+.3f} sd {np.std(theory, ddof=1):.3f} (expected {expect_theory:.3f})")
-    print(f"    eggs dropped by the egg check: {dropped} of {6 * sims}")
-    # with true variance 1.03 x 50 the variance statistic is centred at 0.03*sqrt(1800) = 1.27, so the 5-sigma limit
-    # drops ~1e-4 of eggs (more with the chi-square skew); more than 10 of 1800 would mean the check misbehaves
-    check(dropped <= 10, f"{dropped} eggs dropped")
+    print(f"    eggs dropped by the window egg check: {dropped} of {6 * sims}; egg-days dropped from pools: {dropped_days} of {12 * sims}")
+    # window check: variance statistic centred at 0.01*sqrt(10800) = 1.04, 5-sigma limit drops ~1e-4 of eggs.
+    # day check: centred at 0.01*sqrt(43200) = 2.08 with SD ~1, so ~0.2% of egg-days (~7 of 3600) are expected to drop.
+    check(dropped <= 10 and dropped_days <= 30, f"{dropped} eggs, {dropped_days} egg-days dropped")
+    check(noveto_same == all6, f"noveto differs from main with all eggs passing ({noveto_same})")
     check(abs(mm) < 4 / math.sqrt(sims), f"main biased: {mm}")
     check(abs(mt - expect_theory) < 4 / math.sqrt(sims), f"theory mean {mt} vs {expect_theory}")
+    seconds = 3600
 
     # an egg with too small a pool is not used, and the score equals the score of the other eggs alone
     reader = wide_reader(7, [1, 2, 3], 50)
@@ -431,86 +451,211 @@ def test_sign_flip():
     check(abs(audit.sign_flip(d) - audit.sign_flip(d, seed=1)) < 0.01, "seed changes p by more than MC noise")
 
 
-# ---------------------------------------------------------------- 12. combine and verdicts
-def test_combine_verdicts():
+# ---------------------------------------------------------------- 9b. the "noveto" score
+def test_noveto():
+    seconds, start = 3600, T0 + 1000
+    base = wide_reader(9, [1, 2, 3, 4, 5], 50)
+
+    def reader(day):                                            # eggs 3, 4, 5 misbehave inside the window only
+        t0, eggs, x = base(day)
+        x = x.copy()
+        i = start - t0
+        if 0 <= i < DAY:
+            x[i:i + seconds, 2] += np.float32(1.0)              # egg 3: mean +1, i.e. 8.5 SE of a 3600 s mean: fails
+            x[i:i + seconds, 3] = 100 + (x[i:i + seconds, 3] - 100) * np.float32(math.sqrt(1.3))  # egg 4: variance x1.3: fails
+            x[i:i + 1801, 4] = np.nan                           # egg 5: 1,799 of 3,600 seconds, under half: fails both
+        return t0, eggs, x
+    _, x = audit.window(start, seconds, reader)
+    pool = {e: (200000, 200000 * 50.0) for e in (1, 2, 3, 4, 5)}
+    r = audit.score_window(start, seconds, pool, {}, reader)
+    s = np.full(5, SD)
+    main_ref, loose_ref = audit.score(x[:, :2], s[:2], seconds), audit.score(x[:, :4], s[:4], seconds)
+    check(r["eggs_passing"] == 2 and abs(r["main"]["chi2"] - main_ref["chi2"]) < 1e-9 * main_ref["chi2"], f"main {r}")
+    check(abs(r["noveto"]["chi2"] - loose_ref["chi2"]) < 1e-9 * loose_ref["chi2"] and r["noveto"]["z"] != r["main"]["z"],
+          f"noveto should use eggs 1-4: {r['noveto']} vs {loose_ref}")
+    # an egg with no pool is not in noveto either
+    r = audit.score_window(start, seconds, {e: pool[e] for e in (1, 2, 4)}, {}, reader)
+    ref = audit.score(x[:, [0, 1, 3]], s[:3], seconds)
+    check(abs(r["noveto"]["chi2"] - ref["chi2"]) < 1e-9 * ref["chi2"], "noveto used an egg without a pool")
+    # noveto needs 2 eggs; main can be None while noveto is not
+    r = audit.score_window(start, seconds, {e: pool[e] for e in (1, 3)}, {}, reader)
+    check(r["main"] is None and r["noveto"] is not None, f"one passing egg but two loose ones: {r}")
+    r = audit.score_window(start, seconds, {e: pool[e] for e in (3, 5)}, {}, reader)
+    check(r["noveto"] is None and r["main"] is None, "only one loose egg: noveto must be None")
+
+
+# ---------------------------------------------------------------- 12. combine, agreement, labels, summarise
+def test_combine():
     c = audit.combine([1.0, None, 2.0, 3.0])
     check(c["n"] == 3 and abs(c["z"] - 6 / math.sqrt(3)) < 1e-12 and c["mean"] == 2.0 and abs(c["sd"] - 1.0) < 1e-12, f"{c}")
     check(audit.combine([None]) == {"n": 0, "z": None, "mean": None, "sd": None}, "empty")
     check(audit.combine([2.0])["sd"] is None and audit.combine([2.0])["z"] == 2.0, "single")
 
-    rep = lambda r, a, b: {"r": r, "combined_ours": a, "combined_published": b}
-    ok_rep = rep(0.95, 3.0, 3.5)
-    co_ok = {"z": 0.0, "sd": 1.0}
-    V = lambda ev=1.0, co=co_ok, p=0.5, r=ok_rep: audit.verdicts({"z": ev}, co, p, r)
-    # reproduction (values chosen to be exact in binary floating point at the boundaries)
-    check(V(r=rep(0.9, 3.0, 2.0))["reproduction"] == "reproduces closely", "r=0.9, diff=1.0 boundary")
-    check(V(r=rep(0.9, 3.0, 1.75))["reproduction"] == "reproduces roughly", "diff 1.25")
-    check(V(r=rep(0.89, 3.0, 3.0))["reproduction"] == "reproduces roughly", "r 0.89")
-    check(V(r=rep(0.7, 3.0, 1.0))["reproduction"] == "reproduces roughly", "r=0.7, diff=2.0 boundary")
-    check(V(r=rep(0.69, 3.0, 3.0))["reproduction"] == "does not reproduce", "r 0.69")
-    check(V(r=rep(0.99, 3.0, 0.75))["reproduction"] == "does not reproduce", "diff 2.25")
-    # events
-    check(V(ev=3.09)["events"] == "departure" and V(ev=3.0899)["events"] == "suggestive", "3.09 boundary")
-    check(V(ev=1.645)["events"] == "suggestive" and V(ev=1.6449)["events"] == "no positive excess detected", "1.645 boundary")
-    # controls
-    for co, lab in (({"z": 2.58, "sd": 1.0}, "calibration in doubt"), ({"z": -2.58, "sd": 1.0}, "calibration in doubt"),
-                    ({"z": 2.5799, "sd": 1.0}, "controls look like chance"), ({"z": 0.0, "sd": 0.75}, "controls look like chance"),
-                    ({"z": 0.0, "sd": 1.3}, "controls look like chance"), ({"z": 0.0, "sd": 0.7499}, "calibration in doubt"),
-                    ({"z": 0.0, "sd": 1.3001}, "calibration in doubt")):
-        check(V(co=co)["controls"] == lab, f"controls {co}")
-    # overall
-    check(V(ev=3.09, p=0.01)["overall"] == "the excess is in the event windows", "events boundary")
-    check(V(ev=3.09, p=0.0101)["overall"] == "mixed", "p just above 0.01")
-    check(V(ev=3.5, p=0.001, co={"z": 0.0, "sd": 1.4})["overall"] == "mixed", "calibration doubt blocks the events label")
-    check(V(ev=1.0, p=0.0501, co={"z": 2.58, "sd": 1.0})["overall"] == "the excess is not specific to the events", "controls high")
-    check(V(ev=3.5, p=0.05, co={"z": 2.58, "sd": 1.0})["overall"] == "mixed", "p = 0.05 is not > 0.05")
-    check(V(ev=1.0, p=0.05, co={"z": 2.58, "sd": 1.0})["overall"] == "no excess found", "falls through to no excess")
-    check(V(ev=1.6449)["overall"] == "no excess found" and V(ev=1.645)["overall"] == "mixed", "1.645 overall boundary")
+
+def close(a, b, tol=1e-12):
+    return a is not None and abs(a - b) <= tol
+
+
+def test_agreement_reproduction():
+    pub = [0.5, -1.0, 2.0, 0.0, 1.5]                            # exact in binary, as are all offsets used below
+    a = audit.agreement(pub, pub)
+    check(a["n"] == 5 and close(a["r"], 1) and close(a["slope"], 1) and a["mean_difference"] == 0 and a["median_abs_difference"] == 0
+          and a["share_within_0.25"] == 1 and a["share_within_0.5"] == 1 and close(a["combined_ours"], 3 / math.sqrt(5))
+          and close(a["combined_published"], 3 / math.sqrt(5)), f"identical {a}")
+    check(audit.reproduction_label(a) == "reproduces closely", "identical")
+    # constant offsets: r = slope = 1, every |difference| = offset
+    for off, lab, s25, s50 in ((0.25, "reproduces closely", 1.0, 1.0), (0.375, "reproduces roughly", 0.0, 1.0),
+                               (0.5, "reproduces roughly", 0.0, 1.0), (0.75, "does not reproduce", 0.0, 0.0)):
+        a = audit.agreement([p + off for p in pub], pub)
+        check(close(a["r"], 1) and close(a["slope"], 1) and a["mean_difference"] == off and a["median_abs_difference"] == off
+              and a["share_within_0.25"] == s25 and a["share_within_0.5"] == s50, f"offset {off}: {a}")
+        check(audit.reproduction_label(a) == lab, f"offset {off}: {audit.reproduction_label(a)}")
+    # doubled scale: r = 1 but slope 2; |differences| = |pub| = 0.5,1,2,0,1.5 -> median 1.0
+    a = audit.agreement([2 * p for p in pub], pub)
+    check(close(a["r"], 1) and close(a["slope"], 2) and a["median_abs_difference"] == 1.0, f"doubled {a}")
+    check(audit.reproduction_label(a) == "does not reproduce", f"doubled scale labelled {audit.reproduction_label(a)}")
+    # a non-trivial hand case: ours (1,2,3) vs published (1,3,2): r = 0.5, slope cov/var(pub) = 0.5/1 = 0.5,
+    # differences (0,-1,1): mean 0, median |d| 1, shares 1/3
+    a = audit.agreement([1, 2, 3], [1, 3, 2])
+    check(close(a["r"], 0.5) and close(a["slope"], 0.5) and a["mean_difference"] == 0 and a["median_abs_difference"] == 1
+          and close(a["share_within_0.25"], 1 / 3) and close(a["combined_ours"], 6 / math.sqrt(3)), f"hand {a}")
+    # two or fewer events: no r, no slope, not assessed
+    a = audit.agreement([1.0, 2.0], [1.0, 2.5])
+    check(a["r"] is None and a["slope"] is None and audit.reproduction_label(a) == "not assessed", f"n=2 {a}")
+    # label boundaries directly
+    L = lambda r, m, slope=1.0: audit.reproduction_label({"r": r, "median_abs_difference": m, "slope": slope})
+    check(L(0.9, 0.25) == "reproduces closely" and L(0.8999, 0.25) == "reproduces roughly" and L(0.9, 0.2501) == "reproduces roughly"
+          and L(0.7, 0.5) == "reproduces roughly" and L(0.6999, 0.1) == "does not reproduce" and L(0.99, 0.5001) == "does not reproduce"
+          and L(None, 0.0) == "not assessed", "reproduction boundaries")
+    # "closely" also needs the slope of ours on published between 0.8 and 1.25 (added after the tests' first report)
+    check(L(0.95, 0.1, 0.8) == "reproduces closely" and L(0.95, 0.1, 1.25) == "reproduces closely"
+          and L(0.95, 0.1, 0.79) == "reproduces roughly" and L(0.95, 0.1, 1.26) == "reproduces roughly", "slope boundaries")
+
+
+def spec_overall(pairs, ev, co, sd, p):
+    """The rule as the protocol states it, written independently of audit.py: the first condition that holds wins."""
+    if pairs < 300:
+        return "insufficient coverage"
+    failure = abs(co) >= 2.58 or sd < 0.85 or sd > 1.2
+    rules = [(ev < 1.645, "no excess found"),
+             (ev >= 3.09 and p <= 0.01 and not failure, "the excess is in the event windows"),
+             (co >= 2.58 and p > 0.05, "the excess is not specific to the events"),
+             (True, "mixed")]
+    return next(lab for cond, lab in rules if cond)
+
+
+def test_overall_label():
+    O = audit.overall_label
+    ok = dict(co_z=0.0, co_sd=1.0)
+    check(O(299, 5.0, 0.0, 1.0, 0.001) == {"events": "not assessed", "controls": "not assessed", "overall": "insufficient coverage"}, "299 pairs")
+    check(O(300, 3.09, 0.0, 1.0, 0.01)["overall"] == "the excess is in the event windows", "300 pairs, all boundaries met")
+    check(O(300, 3.0899, 0.0, 1.0, 0.001)["overall"] == "mixed", "ev just under 3.09")
+    check(O(300, 3.5, 0.0, 1.0, 0.0101)["overall"] == "mixed", "p just over 0.01")
+    check(O(300, 1.645, 0.0, 1.0, 0.5)["overall"] == "mixed" and O(300, 1.6449, 0.0, 1.0, 0.5)["overall"] == "no excess found", "1.645")
+    for co, sd in ((2.58, 1.0), (-2.58, 1.0), (0.0, 0.8499), (0.0, 1.2001)):
+        r = O(300, 3.5, co, sd, 0.001)
+        check(r["controls"] == "calibration failure detected" and r["overall"] != "the excess is in the event windows", f"failure {co} {sd}: {r}")
+    for co, sd in ((2.5799, 1.0), (-2.5799, 1.0), (0.0, 0.85), (0.0, 1.2)):
+        r = O(300, 3.5, co, sd, 0.001)
+        check(r["controls"] == "no calibration failure detected" and r["overall"] == "the excess is in the event windows", f"no failure {co} {sd}: {r}")
+    check(O(300, 2.0, 2.58, 1.0, 0.0501)["overall"] == "the excess is not specific to the events", "controls high, p > 0.05")
+    check(O(300, 2.0, 2.58, 1.0, 0.05)["overall"] == "mixed", "p = 0.05 is not > 0.05")
+    check(O(300, 2.0, 2.5799, 1.0, 0.5)["overall"] == "mixed", "co just under 2.58")
+    check(O(300, 3.5, 3.0, 1.0, 0.5)["overall"] == "the excess is not specific to the events", "both high, p large")
+    # controls high but events low: "no excess found" is checked first, and the controls label flags the failure
+    r = O(300, 1.0, 3.0, 1.0, 0.5)
+    check(r == {"events": "no positive excess detected", "controls": "calibration failure detected", "overall": "no excess found"}, f"{r}")
+    # events labels
+    check(O(300, 3.09, **ok, paired_p=1)["events"] == "departure" and O(300, 3.0899, **ok, paired_p=1)["events"] == "suggestive"
+          and O(300, 1.645, **ok, paired_p=1)["events"] == "suggestive"
+          and O(300, 1.6449, **ok, paired_p=1)["events"] == "no positive excess detected", "events labels")
+    # a grid over every boundary: exactly the label the stated rule gives, and every label occurs
+    seen = set()
+    labels = {"insufficient coverage", "no excess found", "the excess is in the event windows", "the excess is not specific to the events", "mixed"}
+    for args in itertools.product((299, 300, 5000), (-1.0, 1.6449, 1.645, 3.0899, 3.09, 4.0), (-3.0, -2.58, -2.5799, 0.0, 2.5799, 2.58, 3.0),
+                                  (0.8499, 0.85, 1.0, 1.2, 1.2001), (0.001, 0.01, 0.0101, 0.05, 0.0501, 0.9)):
+        got = O(*args)["overall"]
+        check(got in labels and got == spec_overall(*args), f"{args}: {got} vs {spec_overall(*args)}")
+        seen.add(got)
+    check(seen == labels, f"labels never produced: {labels - seen}")
+
+
+def row(ev, co, evt, cot, evn, con, evc, coc, pub):
+    return {"event_z": ev, "control_z": co, "event_z_theory": evt, "control_z_theory": cot, "event_z_noveto": evn,
+            "control_z_noveto": con, "event_cross": evc, "control_cross": coc, "published_z": pub}
+
+
+def test_summarise():
+    rows = [row(2.0, 1.0, 2.5, 1.5, 2.1, 0.9, 0.5, 0.1, 1.8),
+            row(1.0, None, 1.2, None, 1.0, None, 0.2, None, 1.1),      # control not evaluable
+            row(None, 0.0, None, 0.3, None, 0.2, None, 0.0, 0.4),      # event not evaluable
+            row(-1.0, 0.0, -0.5, 0.0, -1.0, 0.1, -0.3, 0.2, -0.8),
+            row(0.5, -1.0, 0.7, -0.8, 0.5, -1.0, 0.1, -0.2, 0.25)]
+    s = audit.summarise(rows)
+    check(s["events"]["n"] == 4 and close(s["events"]["z"], 2.5 / 2), f"events {s['events']}")
+    check(s["controls"]["n"] == 4 and close(s["controls"]["z"], 0.0), f"controls {s['controls']}")
+    check(s["events_in_pairs"]["n"] == 3 and close(s["events_in_pairs"]["z"], 1.5 / math.sqrt(3)), "events in pairs")
+    check(s["controls_in_pairs"]["n"] == 3 and close(s["controls_in_pairs"]["z"], 0.0) and close(s["controls_in_pairs"]["sd"], 1.0), "controls in pairs")
+    check(s["events_theory"]["n"] == 4 and close(s["events_theory"]["mean"], 3.9 / 4), "events theory")
+    check(s["controls_noveto"]["n"] == 4 and close(s["controls_noveto"]["mean"], 0.2 / 4), "controls noveto")
+    check(s["events_cross"]["n"] == 4 and close(s["controls_cross"]["mean"], 0.1 / 4), "cross")
+    # paired differences 1.0, -1.0, 1.5: mean 0.5, sd sqrt(3.5/2), z = 0.5 / (sd/sqrt 3), 2 of 3 positive;
+    # exact sign-flip p: of the 8 sign patterns, sums >= 1.5 are 3.5, 1.5, 1.5 -> 3/8 (MC tolerance 0.005)
+    pd = s["paired"]
+    sd = math.sqrt(1.75)
+    check(pd["n"] == 3 and close(pd["mean_difference"], 0.5) and close(pd["sd_difference"], sd) and close(pd["z"], 0.5 / (sd / math.sqrt(3)))
+          and pd["event_higher"] == 2 and abs(pd["p_one_sided"] - 0.375) < 0.005, f"paired {pd}")
+    rep = s["reproduction"]
+    check(rep["n"] == 4 and close(rep["combined_ours"], 1.25) and close(rep["mean_difference"], (0.2 - 0.1 - 0.2 + 0.25) / 4)
+          and close(rep["combined_published"], (1.8 + 1.1 - 0.8 + 0.25) / 2), f"reproduction {rep}")
+    check(s["reproduction_theory"]["n"] == 4 and close(s["reproduction_theory"]["combined_ours"], 3.9 / 2), "reproduction theory")
+    # nothing evaluable
+    s = audit.summarise([row(None, None, None, None, None, None, None, None, 1.0)])
+    check(s["events"]["n"] == 0 and s["paired"]["n"] == 0 and s["paired"]["p_one_sided"] is None and s["paired"]["z"] is None
+          and s["reproduction"] is None and s["reproduction_theory"] is None, f"empty {s}")
+    # a single pair: no sd, no z
+    s = audit.summarise([rows[0]])
+    check(s["paired"]["n"] == 1 and s["paired"]["sd_difference"] is None and s["paired"]["z"] is None and s["reproduction"]["r"] is None, "single pair")
 
 
 # ---------------------------------------------------------------- documented behaviours (not failures)
+def exact_wide_egg(rng, n, excess):
+    g = rng.standard_normal(n)
+    g = (g - g.mean()) / g.std()                                # mean exactly 0, variance exactly 1
+    return (100 + g * math.sqrt(50 * (1 + excess))).reshape(-1, 1)
+
+
 def test_documented_behaviour():
     """Things a reader of the results should know; each assertion states what audit.py does now."""
-    # (a) the egg variance check tightens with window length: a 3%-wide egg passes in a 3600 s window but fails in a
-    #     day-long one (limit 5/sqrt(n/2) = 0.024 at n = 86400). Deterministic construction: exact 3% excess.
     rng = np.random.default_rng(12)
+    # (a) the window egg check tightens with window length: a 3%-wide egg passes in 3600 s but fails in a full day
+    #     (limit 5/sqrt(n/2) = 0.024 at n = 86400)
     for seconds, expect in ((3600, True), (DAY, False)):
-        g = rng.standard_normal(seconds)
-        g = (g - g.mean()) / g.std()                            # mean exactly 0, variance exactly 1
-        x = (100 + g * math.sqrt(51.5)).reshape(-1, 1)
-        check(bool(audit.passes(*audit.sums(x), seconds)[0]) == expect, f"3% egg, {seconds} s")
-    # (b) verdicts raise TypeError when a needed number is missing (fewer than 3 scored events -> r is None,
-    #     a single control -> sd is None). summarise() can produce these for small subsets, but main() only calls
-    #     verdicts() on the full set, so this matters only if the full set is that small.
-    for args in (({"z": 1.0}, {"z": 0.0, "sd": None}, 0.5, {"r": 0.9, "combined_ours": 1, "combined_published": 1}),
-                 ({"z": 1.0}, {"z": 0.0, "sd": 1.0}, 0.5, {"r": None, "combined_ours": 1, "combined_published": 1})):
-        try:
-            audit.verdicts(*args)
-            raise AssertionError("expected TypeError")
-        except TypeError:
-            pass
-    # (c) own-subtraction assumes every trial in `own` is also in the pool. If part of the control window lies in a
-    #     blocked stretch, pool_of_day left those trials out but score_window still subtracts them, so n_ref and
-    #     ss_ref are too small (here: reference variance comes out wrong). Demonstrated with a made-up blocked stretch.
-    reader = wide_reader(21, [1, 2], 50)
-    start, seconds = T0 + 3000, 3600
-    blocked = [(start, start + 1799)]                           # first half of the control window is blocked
-    pool = {}
-    for d in ("2020-03-01", "2020-03-02"):
-        for e, (n, ss) in audit.pool_of_day(d, blocked, reader).items():
-            a, b = pool.get(e, (0, 0.0)); pool[e] = (a + n, b + ss)
-    _, x = audit.window(start, seconds, reader)
-    n, _, ss = audit.sums(x)
-    own = {e: (int(a), float(b)) for e, a, b in zip([1, 2], n, ss)}
-    first, second = (~np.isnan(x[:1800, 0])).sum(), (~np.isnan(x[1800:, 0])).sum()
-    correct_n_ref = pool[1][0] - int(second)                    # only the unblocked half was ever in the pool
-    n_ref_used = pool[1][0] - own[1][0]
-    check(n_ref_used == correct_n_ref - int(first), "n_ref under-counts by the blocked part of the window")
+        check(bool(audit.passes(*audit.sums(exact_wide_egg(rng, seconds, 0.03)), seconds)[0]) == expect, f"3% egg, {seconds} s")
+    # (b) the same check now gates the pool, per egg-day: an egg 3% wide on a full day is dropped from the pool, so it
+    #     can never reach the 86,400 reference trials and is used by no score, "noveto" included. Pool
+    #     standardisation therefore only ever corrects variance offsets below ~2.4%.
+    x = np.hstack([exact_wide_egg(rng, DAY, 0.0), exact_wide_egg(rng, DAY, 0.02), exact_wide_egg(rng, DAY, 0.03)]).astype(np.float32)
+    p = audit.pool_of_day("2020-03-01", [], lambda d: (T0, [1, 2, 3], x))
+    check(sorted(p) == [1, 2], f"pool eggs {sorted(p)}: the 3% egg-day should be dropped, the 2% one kept")
+    # (c) a 30% scale error: published scores spread like N(0,1) and ours 1.3 times them give r = 1 and a median
+    #     |difference| of about 0.20, which passed as "reproduces closely" before the slope condition was added.
+    #     With the slope condition (0.8 to 1.25) it is "reproduces roughly".
+    pub = np.random.default_rng(13).standard_normal(500)
+    a = audit.agreement(1.3 * pub, pub)
+    check(audit.reproduction_label(a) == "reproduces roughly" and close(a["slope"], 1.3, 1e-9), f"scale 1.3: {a['median_abs_difference']}")
+    # (d) constant scores make r NaN (numpy warns); the label is then "does not reproduce", not "not assessed"
+    with np.errstate(all="ignore"):
+        import warnings
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            a = audit.agreement([1.0, 1.0, 1.0], [0.5, 1.0, 2.0])
+    check(math.isnan(a["r"]) and audit.reproduction_label(a) == "does not reproduce", f"constant: {a}")
 
 
 TESTS = [test_clean, test_window, test_sums_passes, test_score_null, test_score_shared, test_score_evaluable,
-         test_cross_part, test_pool_of_day, test_score_window, test_wilson_hilferty, test_sign_flip, test_combine_verdicts,
-         test_documented_behaviour]
+         test_cross_part, test_pool_of_day, test_score_window, test_noveto, test_wilson_hilferty, test_sign_flip,
+         test_combine, test_agreement_reproduction, test_overall_label, test_summarise, test_documented_behaviour]
 
 
 def main():

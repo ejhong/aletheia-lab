@@ -22,9 +22,9 @@ Made from `sources/matched.tsv` and `sources/available_days.txt` by `analysis/bu
 
 | File | SHA-256 |
 |---|---|
-| `windows.tsv` | `51756342b8621fb6f1eec170679fa736ecee272069f5b1c7bb2ec5edcb0a973e` |
-| `sources/blocked.tsv` | `ac80c3b75d0778b1b9794de1583eaa176900f7e736ac32cffbfa14c62996865b` |
-| `sources/days_needed.txt` | `4eb9f7f7e9094cfbc83c450e4e805e7ec1ed5be7989522c2ebfb68d655081ab7` |
+| `windows.tsv` | `1a3cbf7f73ee8a563a739c01b67ef622510487c97a9fd0268270816bbbffdbd9` |
+| `sources/blocked.tsv` | `2c0e74614dba509607c032ad5fd529dba8bd02d749ee2fdf7cc6d03de239970d` |
+| `sources/days_needed.txt` | `9f47ac026acb5cb154cc9ae657900b29fa8a076b67500501cb720c22fd02696d` |
 
 Software: Python 3.12.16, numpy 2.3.5 (the repository's `.venv`). The table-building scripts and the download
 script use the standard library only.

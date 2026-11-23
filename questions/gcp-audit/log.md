@@ -27,3 +27,17 @@ Dated entries, newest last: what was tried, what happened, what next.
   second (the early network had fewer).
 - The chi-square to normal conversion: the exact conversion returns minus infinity in the far lower tail; the
   Wilson–Hilferty formula agrees with it to 0.002 where both work. Kept Wilson–Hilferty.
+- Sub-agents (Claude Opus 5.5) wrote the unit tests from a description of the program and adapted #47's review
+  and replication scripts. The tests found no bug in the first version; they did find that a control overlapping
+  a blocked stretch would be mis-handled (it cannot happen, and the program now asserts so) and, later, that a
+  30% error of scale would pass as "reproduces closely" (a slope condition was added). I read both reports, ran
+  the tests, and edited two tests myself after the slope change.
+- Review, round 1 (two vendors, $0.83). The main change: an event and its control now share one reference pool,
+  built from the control days of events within 183 days and cleaned day by day. Also: labels made exclusive,
+  reproduction judged per event, published dates of disputed rows blocked (one control moved, 868 files still).
+  Not done: a placebo calendar, which both asked for. `review/README.md` has the full list.
+- Review, round 2, errors only ($1.07). No error in the method; wording about what each outcome means was
+  tightened.
+- All 868 day files present; hashes in `sources/files.sha256`. 17 unit tests pass.
+- No event or control window has been scored. Next: lock.
+
