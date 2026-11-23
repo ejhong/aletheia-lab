@@ -14,3 +14,12 @@
 - Downloaded 8 public RCSB PDB structures (`1JFF`, `4I4T`, `6X3T`, `3P4W`, `1E7B`, `1BA3`, `1DPX`, `1UBQ`), verified 100% presence of all Craddock tubulin residues on both `1JFF` and `4I4T`, and verified PubChem CIDs & canonical SMILES for all 35 panel compounds + 2 redocking controls.
 - Ran blind crystallographic self-redocking check on the 4 co-crystallized native ligands (`desflurane → 3P4W`: `0.30/0.67 Å`; `propofol → 6X3T`: `0.72/0.28 Å`; `bromoform → 1BA3`: `0.38/0.76 Å`; `halothane → 1E7B`: `1.22/1.31 Å` under `vina`/`vinardo`). No test-panel dockings or potency/separation analyses were run prior to locking.
 - Wrote `protocol.md`, `MANIFEST.md`, `analysis/dock_anaesthetics.py`, and `analysis/test_docking.py`.
+
+## 2026-11-23 — Lock, pre-results Amendment 1, full 1,680-docking run, and write-up
+
+- Committed pre-lock files (`93d690c`) and locked `protocol.md` via `python3 scripts/lock.py questions/anaesthetics-microtubules` in its own commit (`4a6b0ed`, `sha256: 9d2201031fe2c6685bd257bf51b46e68d3d44d2959e56499d86a811e5bacb7c2`).
+- Cancelled the initial `exhaustiveness = 16` run during pocket 1 without inspecting any outputs, deleted `data/dock_work/out/`, verified `≤ 0.011 kcal/mol` convergence on pre-lock crystallographic positive controls (`1E7B+halothane`: `0.000 kcal/mol`; `3P4W+desflurane`: `0.011 kcal/mol`), and committed **Amendment 1** (`fbc8a25`, `exhaustiveness = 16 → 4`) before running the test panel.
+- Added resumable per-pocket caching and exact NumPy vectorization of the permutation/bootstrap routines to `analysis/dock_anaesthetics.py` (all unit and synthetic checks in `analysis/test_docking.py` pass).
+- Completed all `24 pockets × 35 molecules × 2 scoring functions = 1,680` dockings cleanly (`results/affinities.tsv`, `results/summary.json`, `results/poses_3d.json`).
+- Pre-registered verdict: **`no_potency_or_selectivity`** (`1JFF` `Vina` `ρ = +0.285`, `p = 0.146`, `AUC = 0.212`, `p = 0.017`; `4I4T` `ρ = +0.347`, `p = 0.074`, `AUC = 0.079`; `1JFF` `Vinardo` `ρ = +0.284`, `AUC = 0.455`; negative-control `Ubiquitin` hits `ρ = +0.512` Vina / `+0.596` Vinardo, `AUC = 0.794` Vinardo).
+- Generated 5 interactive site figures (`site/figures/anaesthetics-microtubules/{tiles,verdict,potency,matrix,pockets}.html`), verified all embedded JS with `node --check`, wrote `RESULTS.md`, `site/content/anaesthetics-microtubules.md`, and updated `site/topics/minds-and-machines.md`.

@@ -249,14 +249,27 @@ def ols_fit_and_residuals(x_train: np.ndarray, y_train: np.ndarray, x_all: np.nd
 
 
 def perm_test_corr(x: np.ndarray, y: np.ndarray, stat_fn, n_perm: int, rng: np.random.Generator) -> Tuple[float, float]:
-    obs = stat_fn(x, y)
-    count = 0
-    for _ in range(n_perm):
-        yp = rng.permutation(y)
-        if abs(stat_fn(x, yp)) >= abs(obs) - 1e-12:
-            count += 1
-    p = (count + 1) / (n_perm + 1)
-    return float(obs), float(p)
+    if stat_fn is spearman_rho:
+        ux = average_ranks(x)
+        uy = average_ranks(y)
+    else:
+        ux = np.asarray(x, dtype=float)
+        uy = np.asarray(y, dtype=float)
+    ux = ux - ux.mean()
+    uy = uy - uy.mean()
+    nx = float(np.sqrt(np.sum(ux * ux)))
+    ny = float(np.sqrt(np.sum(uy * uy)))
+    if nx == 0.0 or ny == 0.0:
+        return 0.0, 1.0
+    ux = ux / nx
+    uy = uy / ny
+    obs = float(np.dot(ux, uy))
+    # Vectorized permutations
+    idx = np.argsort(rng.random((n_perm, len(uy))), axis=1)
+    y_perm = uy[idx]
+    rs = y_perm @ ux
+    count = int(np.sum(np.abs(rs) >= abs(obs) - 1e-12))
+    return obs, float((count + 1) / (n_perm + 1))
 
 
 def perm_test_partial(x: np.ndarray, y: np.ndarray, z: np.ndarray, n_perm: int, rng: np.random.Generator) -> Tuple[float, float]:
@@ -266,25 +279,20 @@ def perm_test_partial(x: np.ndarray, y: np.ndarray, z: np.ndarray, n_perm: int, 
     rz = average_ranks(z)
     _, _, ex = ols_fit_and_residuals(rz, rx, rz, rx)
     _, _, ey = ols_fit_and_residuals(rz, ry, rz, ry)
-    obs = pearson_r(ex, ey)
-    count = 0
-    for _ in range(n_perm):
-        if abs(pearson_r(ex, rng.permutation(ey))) >= abs(obs) - 1e-12:
-            count += 1
-    return float(obs), float((count + 1) / (n_perm + 1))
+    return perm_test_corr(ex, ey, pearson_r, n_perm, rng)
 
 
 def perm_test_auc(pos: np.ndarray, neg: np.ndarray, n_perm: int, rng: np.random.Generator) -> Tuple[float, float]:
     obs = roc_auc_pos_vs_neg(pos, neg)
     pooled = np.concatenate([pos, neg])
+    ranks = average_ranks(pooled)
     n_pos = len(pos)
-    count = 0
+    n_neg = len(neg)
+    idx = np.argsort(rng.random((n_perm, len(pooled))), axis=1)
+    r_pos_sum = np.sum(ranks[idx[:, :n_pos]], axis=1)
+    aucs = (r_pos_sum - n_pos * (n_pos + 1) / 2.0) / (n_pos * n_neg)
     dev_obs = abs(obs - 0.5)
-    for _ in range(n_perm):
-        shuf = rng.permutation(pooled)
-        auc_p = roc_auc_pos_vs_neg(shuf[:n_pos], shuf[n_pos:])
-        if abs(auc_p - 0.5) >= dev_obs - 1e-12:
-            count += 1
+    count = int(np.sum(np.abs(aucs - 0.5) >= dev_obs - 1e-12))
     return float(obs), float((count + 1) / (n_perm + 1))
 
 
@@ -293,17 +301,26 @@ def perm_test_mean_diff(group_a: np.ndarray, group_b: np.ndarray, n_perm: int, r
     obs = float(np.mean(group_a) - np.mean(group_b))
     pooled = np.concatenate([group_a, group_b])
     n_a = len(group_a)
-    count = 0
-    for _ in range(n_perm):
-        shuf = rng.permutation(pooled)
-        diff = float(np.mean(shuf[:n_a]) - np.mean(shuf[n_a:]))
-        if abs(diff) >= abs(obs) - 1e-12:
-            count += 1
+    total = float(np.sum(pooled))
+    n_b = len(group_b)
+    idx = np.argsort(rng.random((n_perm, len(pooled))), axis=1)
+    sum_a = np.sum(pooled[idx[:, :n_a]], axis=1)
+    diffs = (sum_a / n_a) - ((total - sum_a) / n_b)
+    count = int(np.sum(np.abs(diffs) >= abs(obs) - 1e-12))
     return obs, float((count + 1) / (n_perm + 1))
 
 
 def bootstrap_corr_ci(x: np.ndarray, y: np.ndarray, stat_fn, n_boot: int, rng: np.random.Generator) -> Tuple[float, float]:
     n = len(x)
+    if stat_fn is pearson_r:
+        idx = rng.integers(0, n, size=(n_boot, n))
+        xb = x[idx]; yb = y[idx]
+        xm = xb - xb.mean(axis=1, keepdims=True)
+        ym = yb - yb.mean(axis=1, keepdims=True)
+        den = np.sqrt(np.sum(xm * xm, axis=1) * np.sum(ym * ym, axis=1))
+        vals = np.where(den > 0, np.sum(xm * ym, axis=1) / np.where(den > 0, den, 1.0), 0.0)
+        lo, hi = np.percentile(vals, [2.5, 97.5])
+        return float(lo), float(hi)
     vals = np.empty(n_boot, dtype=float)
     for i in range(n_boot):
         idx = rng.integers(0, n, size=n)
@@ -422,23 +439,28 @@ def extract_pocket_context(clean_pdb: Path, center: Tuple[float, float, float], 
 
 def run_batch_docking(rec_pdbqt: Path, lig_paths: Sequence[Path], site: SiteSpec, scoring: str, out_dir: Path, cpu: int = 2) -> Dict[str, Tuple[float, List[Dict[str, object]]]]:
     out_dir.mkdir(parents=True, exist_ok=True)
-    cmd = [
-        "vina",
-        "--receptor", str(rec_pdbqt),
-        "--batch", *[str(p) for p in lig_paths],
-        "--dir", str(out_dir),
-        "--center_x", f"{site.center[0]:.3f}",
-        "--center_y", f"{site.center[1]:.3f}",
-        "--center_z", f"{site.center[2]:.3f}",
-        "--size_x", f"{BOX_SIZE:.1f}",
-        "--size_y", f"{BOX_SIZE:.1f}",
-        "--size_z", f"{BOX_SIZE:.1f}",
-        "--scoring", scoring,
-        "--exhaustiveness", str(EXHAUSTIVENESS),
-        "--seed", str(SEED),
-        "--cpu", str(cpu),
-    ]
-    subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    all_present = all(
+        (out_dir / f"{lp.stem}_out.pdbqt").exists() or (out_dir / f"{lp.stem}.pdbqt").exists()
+        for lp in lig_paths
+    )
+    if not all_present:
+        cmd = [
+            "vina",
+            "--receptor", str(rec_pdbqt),
+            "--batch", *[str(p) for p in lig_paths],
+            "--dir", str(out_dir),
+            "--center_x", f"{site.center[0]:.3f}",
+            "--center_y", f"{site.center[1]:.3f}",
+            "--center_z", f"{site.center[2]:.3f}",
+            "--size_x", f"{BOX_SIZE:.1f}",
+            "--size_y", f"{BOX_SIZE:.1f}",
+            "--size_z", f"{BOX_SIZE:.1f}",
+            "--scoring", scoring,
+            "--exhaustiveness", str(EXHAUSTIVENESS),
+            "--seed", str(SEED),
+            "--cpu", str(cpu),
+        ]
+        subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     parsed: Dict[str, Tuple[float, List[Dict[str, object]]]] = {}
     for lp in lig_paths:
         mol_id = lp.stem
@@ -690,7 +712,7 @@ def check_inputs() -> None:
     print(f"  OK {len(MOLECULES)} molecules (27 anaesthetics, 7 non-immobilizers, 1 convulsant), {len(SITES)} fixed sites across {len(TARGET_ORDER)} proteins.")
 
 
-def run_full_analysis(cpu: int = 2) -> None:
+def run_full_analysis(cpu: int = 2, max_new_pockets: Optional[int] = None) -> None:
     check_inputs()
     WORK_DIR.mkdir(parents=True, exist_ok=True)
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -700,36 +722,48 @@ def run_full_analysis(cpu: int = 2) -> None:
     lig_dir.mkdir(exist_ok=True)
 
     t_start = time.time()
-    print("[1/4] Preparing deterministic 3D ligand PDBQTs with Open Babel 3.1.1...")
+    print("[1/4] Preparing deterministic 3D ligand PDBQTs with Open Babel 3.1.1...", flush=True)
     lig_paths: List[Path] = []
     for mol in MOLECULES:
-        lp = prep_ligand(mol, lig_dir)
+        lp = lig_dir / f"{mol.mol_id}.pdbqt"
+        if not lp.exists():
+            lp = prep_ligand(mol, lig_dir)
         lig_paths.append(lp)
-    print(f"  Prepared {len(lig_paths)} ligands in {time.time() - t_start:.1f}s.")
+    print(f"  Ready: {len(lig_paths)} ligands ({time.time() - t_start:.1f}s).", flush=True)
 
-    print("[2/4] Preparing clean receptor PDBQTs for 8 proteins...")
+    print("[2/4] Preparing clean receptor PDBQTs for 8 proteins...", flush=True)
     rec_paths: Dict[str, Path] = {}
     clean_pdbs: Dict[str, Path] = {}
     for tid in TARGET_ORDER:
         site0 = next(s for s in SITES if s.target_id == tid)
         pdb_in = PDB_DIR / f"{site0.pdb_id}.pdb"
         rec_out = rec_dir / f"{tid}.pdbqt"
-        clean_p = prep_receptor(pdb_in, site0.chains, rec_out)
+        clean_p = rec_out.with_suffix(".clean.pdb")
+        if not (rec_out.exists() and clean_p.exists()):
+            clean_p = prep_receptor(pdb_in, site0.chains, rec_out)
         rec_paths[tid] = rec_out
         clean_pdbs[tid] = clean_p
-    print(f"  Prepared {len(rec_paths)} receptors in {time.time() - t_start:.1f}s total.")
+    print(f"  Ready: {len(rec_paths)} receptors ({time.time() - t_start:.1f}s total).", flush=True)
 
-    print(f"[3/4] Running AutoDock Vina v1.2.5 batch docking ({len(SITES)} pockets × {len(MOLECULES)} ligands × {len(SCORING_FUNCTIONS)} scoring functions)...")
+    print(f"[3/4] Running AutoDock Vina v1.2.5 batch docking ({len(SITES)} pockets × {len(MOLECULES)} ligands × {len(SCORING_FUNCTIONS)} scoring functions)...", flush=True)
     # raw_scores[scoring][target_id][site_id][mol_id] = dG (kcal/mol)
     raw_scores: Dict[str, Dict[str, Dict[str, Dict[str, float]]]] = {sf: {} for sf in SCORING_FUNCTIONS}
     # Save representative 3D docked poses on primary single pocket of each target (vina)
     pose_ligands = {"methoxyflurane", "halothane", "isoflurane", "o_xylene", "desflurane", "F6", "TFMB", "cyclooctane"}
     poses_3d: Dict[str, object] = {"targets": {}}
 
+    new_pockets_done = 0
     for idx, site in enumerate(SITES, 1):
+        site_had_new = False
         for sf in SCORING_FUNCTIONS:
             t0 = time.time()
             out_dir = WORK_DIR / "out" / sf / f"{site.target_id}__{site.site_id}"
+            was_cached = all(
+                (out_dir / f"{lp.stem}_out.pdbqt").exists() or (out_dir / f"{lp.stem}.pdbqt").exists()
+                for lp in lig_paths
+            )
+            if not was_cached:
+                site_had_new = True
             parsed = run_batch_docking(rec_paths[site.target_id], lig_paths, site, sf, out_dir, cpu=cpu)
             raw_scores[sf].setdefault(site.target_id, {})[site.site_id] = {m: parsed[m][0] for m in parsed}
             if sf == "vina" and site.is_primary_single:
@@ -746,7 +780,13 @@ def run_full_analysis(cpu: int = 2) -> None:
                         for mid in sorted(pose_ligands)
                     },
                 }
-            print(f"  [{idx:2d}/{len(SITES)}] {site.target_id:16s} {site.site_id:14s} [{sf:7s}] done in {time.time() - t0:5.1f}s", flush=True)
+            tag = "cached" if was_cached else f"{time.time() - t0:5.1f}s"
+            print(f"  [{idx:2d}/{len(SITES)}] {site.target_id:16s} {site.site_id:14s} [{sf:7s}] {tag}", flush=True)
+        if site_had_new:
+            new_pockets_done += 1
+            if max_new_pockets is not None and new_pockets_done >= max_new_pockets and idx < len(SITES):
+                print(f"Chunk checkpoint reached ({idx}/{len(SITES)} pockets completed). Re-run to continue.", flush=True)
+                return
 
     # Export full affinity matrix TSV
     tsv_path = RESULTS_DIR / "affinities.tsv"
@@ -886,11 +926,12 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Locked docking analysis for Issue #48 (anaesthetics-microtubules)")
     ap.add_argument("--check-inputs", action="store_true", help="Verify PDB files and protocol tables without docking")
     ap.add_argument("--cpu", type=int, default=2, help="CPU threads per AutoDock Vina call")
+    ap.add_argument("--max-new-pockets", type=int, default=None, help="Checkpoint after running N uncached pockets")
     args = ap.parse_args()
     if args.check_inputs:
         check_inputs()
     else:
-        run_full_analysis(cpu=args.cpu)
+        run_full_analysis(cpu=args.cpu, max_new_pockets=args.max_new_pockets)
 
 
 if __name__ == "__main__":
