@@ -19,7 +19,10 @@ Inputs
   site/figures/<slug>/       HTML fragments (inline SVG charts) that a content file includes with {{figure: slug/name}}
   site/assets/               CSS, JS, icon
 
-Content files are Markdown with an optional front matter block (key: value lines between --- lines). Inside them,
+Content files are Markdown with an optional front matter block (key: value lines between --- lines). The keys
+are summary (the question in a sentence, shown in lists), dek (the page's opening line), updated (a date), and,
+once there is an outcome, verdict (a few words) and result (two or three plain sentences). The home page shows
+verdict and result under the question, so a reader need not open the page to learn what was found. Inside them,
 a heading "### Stage N · Title" starts a stage of the plan; its first lines may be "Status: done | in progress |
 not started", "Gate: ..." and "Condition: ...". Consecutive stages render as the progress timeline. A line
 "::: details Title" opens a folded section and a line ":::" closes it.
@@ -688,6 +691,12 @@ def index_row(q, root):
         extra = ('<p class="q-progress"><span class="mini" aria-hidden="true">%s</span>'
                  '<span>Stage %s · %s · %s</span></p>' % (bars, esc(st["num"]), inline(st["title"]),
                                                           esc(st["status_text"])))
+    if q["meta"].get("result"):
+        # The outcome in a sentence or two, from the content file's "result:" line, so nobody has to open the page.
+        verdict = q["meta"].get("verdict")
+        extra += ('<div class="q-result"><p class="label">%s</p>%s<p class="q-result-text">%s</p></div>' % (
+            "Result" if q["status"] == "done" else "Result so far",
+            '<p class="q-verdict">%s</p>' % inline(verdict) if verdict else "", inline(q["meta"]["result"])))
     return (
         '<li class="q-row" data-lane="%s" data-status="%s">'
         '<span class="q-num">#%d</span>'

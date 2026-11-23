@@ -2,6 +2,8 @@
 # To update this page, edit this file and push to main; the site rebuilds itself.
 # The figures are made by questions/population-y/analysis/make_figures.py from the results files.
 summary: A few Amazonian peoples carry a faint genetic resemblance to Australasians. We checked whether it is real, and what it does and does not show.
+verdict: Real, faint, and not from across the Pacific
+result: The resemblance is real and faint, and it is older than it looks: it leads back to mainland Asia tens of thousands of years ago, not across the Pacific. None of 58 groups of ancient Americans stands out for it.
 dek: A few Amazonian peoples share slightly more DNA variants with New Guineans, Aboriginal Australians and Andaman Islanders than other Native Americans do. We tested that ten-year-old claim on public genomes, with the plan locked before any result existed.
 updated: 2026-11-23
 ---

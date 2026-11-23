@@ -2,6 +2,8 @@
 # To update this page, edit this file and push to main; the site rebuilds itself.
 # The figures are made by questions/ice-core-fire/analysis/make_figures.py from the results files.
 summary: Greenland ice holds a burst of ammonium near the start of the Younger Dryas, 12,900 years ago. Is it exceptional against 100,000 years of the same ice?
+verdict: Unusual, but a slow swell and not a spike
+result: For about a century ammonium in Greenland ice ran higher than at almost any time in 100,000 years, in three ice cores. But it starts thirty to forty years after the cold began, rises in step with the dust, and has neighbours of similar size. It fits a response to the changing climate better than smoke from an impact or an airburst.
 dek: Supporters of the idea that a comet struck 12,900 years ago point to a burst of ammonium in Greenland ice as the smoke of the fires it lit. We asked whether that stretch of ice stands out from every other stretch, in three ice cores, with the rules fixed before looking.
 updated: 2026-11-23
 ---
