@@ -1,0 +1,39 @@
+{
+  "id": "S2dR",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T03:17:58Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K → Def3 𝓢 K → Def4 𝓢 K →\n    ∀ p : Fm, 𝓢 ⊢ ∼K (K (∼p) 🡘 p)\n",
+  "usage": [
+    [
+      1594,
+      400
+    ],
+    [
+      2832,
+      1284
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the following proposition. For every choice of types Fm, S₀ and S, of logical connectives and truth and falsehood constants on Fm, and of provability relations on Fm for systems of types S₀ and S; for every 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens; and for every function K : Fm → Fm, suppose that (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K(φ); (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every pair of sentences φ, ψ, 𝓢 proves K(φ → ψ) → (K(φ) → K(ψ)); (4) for every sentence φ, 𝓢 proves K(φ) → φ; and (5) for every sentence φ, 𝓢 proves K(K(φ) → φ). Then, for every sentence p, 𝓢 proves ¬(K(K(¬p) ↔ p)), where ↔ is the sentence-level biconditional. Thus 𝓢 proves the negation of K applied to the whole biconditional; the conclusion is not merely a claim of unprovability. Neither system is assumed consistent, and the closure rule in (1) is required of 𝓑, not of 𝓢.\"}",
+  "translation": "Target is the following proposition. For every choice of types Fm, S₀ and S, of logical connectives and truth and falsehood constants on Fm, and of provability relations on Fm for systems of types S₀ and S; for every 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens; and for every function K : Fm → Fm, suppose that (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K(φ); (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every pair of sentences φ, ψ, 𝓢 proves K(φ → ψ) → (K(φ) → K(ψ)); (4) for every sentence φ, 𝓢 proves K(φ) → φ; and (5) for every sentence φ, 𝓢 proves K(K(φ) → φ). Then, for every sentence p, 𝓢 proves ¬(K(K(¬p) ↔ p)), where ↔ is the sentence-level biconditional. Thus 𝓢 proves the negation of K applied to the whole biconditional; the conclusion is not merely a claim of unprovability. Neither system is assumed consistent, and the closure rule in (1) is required of 𝓑, not of 𝓢.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean generalizes from the diagonal instance P = U(e,e) to every sentence P and states the contradiction as a provable negation, discharging the local assumption B(B(¬P) ↔ P). The propositional argument justifies this generalization, but the target does not express the quantified schema or how it supplies the instance.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The two-system setup packages the source assumptions differently. Lean requires necessitation for every theorem of the base and transfers those theorems by inclusion; the passage directly supplies B-prefixed logical axioms. Lean requires distribution, correctness, and known correctness in the larger system, not necessarily in the base itself.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean retains P on the right of the biconditional, as in the direct schema instance with U(e,e). The passage rewrites that side as ¬pe, literally ¬¬P when pe is ¬P. These presentations are interchangeable under B using known classical tautologies and distribution.\"\n    }\n  ],\n  \"summary\": \"The target faithfully isolates the post-instantiation contradiction: known correctness lets the system refute B(B(¬P) ↔ P) without the BB axiom. It is a uniform propositional lemma, not a formalization of the full quantified theorem.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Lean generalizes from the diagonal instance P = U(e,e) to every sentence P and states the contradiction as a provable negation, discharging the local assumption B(B(¬P) ↔ P). The propositional argument justifies this generalization, but the target does not express the quantified schema or how it supplies the instance."
+      },
+      {
+        "severity": "minor",
+        "description": "The two-system setup packages the source assumptions differently. Lean requires necessitation for every theorem of the base and transfers those theorems by inclusion; the passage directly supplies B-prefixed logical axioms. Lean requires distribution, correctness, and known correctness in the larger system, not necessarily in the base itself."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean retains P on the right of the biconditional, as in the direct schema instance with U(e,e). The passage rewrites that side as ¬pe, literally ¬¬P when pe is ¬P. These presentations are interchangeable under B using known classical tautologies and distribution."
+      }
+    ],
+    "summary": "The target faithfully isolates the post-instantiation contradiction: known correctness lets the system refute B(B(¬P) ↔ P) without the BB axiom. It is a uniform propositional lemma, not a formalization of the full quantified theorem."
+  }
+}

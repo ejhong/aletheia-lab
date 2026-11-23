@@ -1,0 +1,39 @@
+{
+  "id": "DEF-F",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:37:00Z",
+  "target": "def Def2 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ ψ, 𝓢 ⊢ K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ\n\ndef Def3 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K φ 🡒 φ\n\ndef Def4 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)\n",
+  "usage": [
+    [
+      1187,
+      1847
+    ],
+    [
+      2380,
+      7005
+    ]
+  ],
+  "a_raw": "{\"translation\": \"The TARGET defines three propositions (`Def2`, `Def3`, and `Def4`), each parameterized implicitly by a type of sentences `Fm` equipped with logical connectives (`LogicalConnective Fm`, providing the object-language implication `🡒`) and a type of proof systems `S` equipped with a provability relation on `Fm` (`Entailment S Fm`), and explicitly by a proof system `𝓢 : S` and an arbitrary function `K : Fm → Fm`:\\n\\n1. `Def2 𝓢 K` asserts that for all sentences `φ` and `ψ` in `Fm`, the system `𝓢` proves the sentence `(K (φ 🡒 ψ)) 🡒 ((K φ) 🡒 (K ψ))`, where `🡒` is the implication connective inside `Fm` (which associates to the right).\\n\\n2. `Def3 𝓢 K` asserts that for every sentence `φ` in `Fm`, the system `𝓢` proves the sentence `(K φ) 🡒 φ`.\\n\\n3. `Def4 𝓢 K` asserts that for every sentence `φ` in `Fm`, the system `𝓢` proves the sentence `K ((K φ) 🡒 φ)`.\\n\\nIn all three definitions, every implication is the object-language connective `🡒` rather than meta-level implication, and no additional assumptions are required on `𝓢`, `⊢`, or `K` (in particular, `𝓢` is not required to satisfy classical propositional logic, modus ponens, or consistency, `K` is an arbitrary function on `Fm`, and the context's `S₀`, `Entailment S₀ Fm`, and `LogicalNeutral Fm` are not used in these definitions).\"}",
+  "translation": "The TARGET defines three propositions (`Def2`, `Def3`, and `Def4`), each parameterized implicitly by a type of sentences `Fm` equipped with logical connectives (`LogicalConnective Fm`, providing the object-language implication `🡒`) and a type of proof systems `S` equipped with a provability relation on `Fm` (`Entailment S Fm`), and explicitly by a proof system `𝓢 : S` and an arbitrary function `K : Fm → Fm`:\n\n1. `Def2 𝓢 K` asserts that for all sentences `φ` and `ψ` in `Fm`, the system `𝓢` proves the sentence `(K (φ 🡒 ψ)) 🡒 ((K φ) 🡒 (K ψ))`, where `🡒` is the implication connective inside `Fm` (which associates to the right).\n\n2. `Def3 𝓢 K` asserts that for every sentence `φ` in `Fm`, the system `𝓢` proves the sentence `(K φ) 🡒 φ`.\n\n3. `Def4 𝓢 K` asserts that for every sentence `φ` in `Fm`, the system `𝓢` proves the sentence `K ((K φ) 🡒 φ)`.\n\nIn all three definitions, every implication is the object-language connective `🡒` rather than meta-level implication, and no additional assumptions are required on `𝓢`, `⊢`, or `K` (in particular, `𝓢` is not required to satisfy classical propositional logic, modus ponens, or consistency, `K` is an arbitrary function on `Fm`, and the context's `S₀`, `Entailment S₀ Fm`, and `LogicalNeutral Fm` are not used in these definitions).",
+  "b_raw": "{\"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\"severity\": \"minor\", \"description\": \"Universal closures and open formulas are not modelled: in both Koellner (P-K352, P-K353) and Alexander (P-A3), K2/E2 and K3/E3 are universal closures of formulas that may contain free variables, and the corresponding axiom of EA applies K to those universally closed instances of K3/E3. Because Fm is an abstract type of sentences with no free variables or object-language quantifiers, Def2, Def3, and Def4 express only the closed-formula (sentential) instances.\"},\n    {\"severity\": \"minor\", \"description\": \"Curried vs. conjunctive form of K2: Def2 uses the curried form K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ, which matches Alexander's E2 (P-A3) directly but differs syntactically from Koellner's K2 (P-K352), which is (K(φ → ψ) ∧ Kφ) → Kψ. Although the two are equivalent under classical propositional logic, Def2 itself does not assume [Entailment.Cl 𝓢].\"},\n    {\"severity\": \"minor\", \"description\": \"Provability in an arbitrary abstract system vs. axiom schemata in L_EA: the source passages introduce these principles as axiom schemata in the specific language L_EA (expanding L_PA with a syntactic operator K), whereas Def2, Def3, and Def4 state provability (𝓢 ⊢ …) of all instances for an arbitrary system 𝓢, arbitrary type Fm, and arbitrary function K : Fm → Fm, abstracting away both the language L_EA and the distinction between axioms and theorems.\"}\n  ],\n  \"summary\": \"Def2, Def3, and Def4 faithfully capture the sentential instances of E2/K2, E3/K3, and K applied to E3/K3 within the declared abstract setting. The only divergences are minor idealizations: universal closures over open formulas and the specific language L_EA are not modelled, Def2 uses Alexander's curried form rather than Koellner's conjunctive form without locally assuming classical logic, and the definitions express provability in an arbitrary system rather than axiom membership.\"}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Universal closures and open formulas are not modelled: in both Koellner (P-K352, P-K353) and Alexander (P-A3), K2/E2 and K3/E3 are universal closures of formulas that may contain free variables, and the corresponding axiom of EA applies K to those universally closed instances of K3/E3. Because Fm is an abstract type of sentences with no free variables or object-language quantifiers, Def2, Def3, and Def4 express only the closed-formula (sentential) instances."
+      },
+      {
+        "severity": "minor",
+        "description": "Curried vs. conjunctive form of K2: Def2 uses the curried form K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ, which matches Alexander's E2 (P-A3) directly but differs syntactically from Koellner's K2 (P-K352), which is (K(φ → ψ) ∧ Kφ) → Kψ. Although the two are equivalent under classical propositional logic, Def2 itself does not assume [Entailment.Cl 𝓢]."
+      },
+      {
+        "severity": "minor",
+        "description": "Provability in an arbitrary abstract system vs. axiom schemata in L_EA: the source passages introduce these principles as axiom schemata in the specific language L_EA (expanding L_PA with a syntactic operator K), whereas Def2, Def3, and Def4 state provability (𝓢 ⊢ …) of all instances for an arbitrary system 𝓢, arbitrary type Fm, and arbitrary function K : Fm → Fm, abstracting away both the language L_EA and the distinction between axioms and theorems."
+      }
+    ],
+    "summary": "Def2, Def3, and Def4 faithfully capture the sentential instances of E2/K2, E3/K3, and K applied to E3/K3 within the declared abstract setting. The only divergences are minor idealizations: universal closures over open formulas and the specific language L_EA are not modelled, Def2 uses Alexander's curried form rather than Koellner's conjunctive form without locally assuming classical logic, and the definitions express provability in an arbitrary system rather than axiom membership."
+  }
+}

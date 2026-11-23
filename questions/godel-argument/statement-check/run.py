@@ -9,6 +9,8 @@ Planted wrong items ("decoys") are mixed in to measure whether the checker catch
     python3 run.py --probe                 # one tiny call per vendor, to confirm the APIs work
     python3 run.py --vendor openai         # run all items for one vendor (resumes; skips finished items)
     python3 run.py --report                # write REPORT.md from out/
+    python3 run.py --stage 2a ...          # the same commands for Stage 2A (Statement2.lean, items2a.json, out2a/)
+    python3 run.py --stage 2r ...          # and for Amendment 3 (Statement3.lean, items2r.json, out2r/)
 
 Keys come from the environment: OPENAI_API_KEY, GEMINI_API_KEY, XAI_API_KEY.
 """
@@ -25,6 +27,18 @@ import urllib.request
 HERE = pathlib.Path(__file__).resolve().parent
 STATEMENT = HERE.parent / "lean" / "GodelArgument" / "Statement.lean"
 OUT = HERE / "out"  # round 2; round 1 is frozen under round1/
+ITEMS = HERE / "items.json"
+NOTATION = HERE / "notation.md"
+REPORT = HERE / "REPORT.md"
+REPORT_HEAD = [
+    "Round 2. Written by `run.py --report` from the raw outputs in `out/`. Verdicts are the checkers' own.",
+    "Round 1 (first draft of the statements, earlier prompt) is frozen under `round1/`.",
+    "S1e was compared with its source on 2026-11-23 under Amendment 1, once Penrose's text was in hand; its",
+    "blind translations are those of round 2."]
+# Fixed order that interleaves decoys with real items; item ids shown to the model are neutral.
+ORDER = ["DEF-A", "S1a", "X2", "DEF-B", "S1b1", "X1", "S1b2", "DEF-C", "S1c", "X3", "S1a2", "S1a3", "DEF-D",
+         "S1b3", "S1c2", "S1c3", "S1c4", "S1d", "S1d2", "S1e"]
+PREAMBLE = ""  # a `variable` line shown above the definitions, when the statement file has one
 
 # Model IDs and list prices (USD per million tokens, input/output) as of 2026-11-22.
 VENDORS = {
@@ -35,6 +49,45 @@ VENDORS = {
 
 DEFS = ["Mind", "IsTrue", "Sound", "Consistent", "IsTheoremSetOf", "IsMechanical", "Con", "KnowsOwnMachineConsistent",
         "ContainsSoundnessOf", "IsPi1", "DeductivelyClosed"]
+
+
+
+def use_stage_2a():
+    """Stage 2A (Amendment 2): a second statement file, with its own items, notation key and output folder."""
+    global STATEMENT, OUT, ITEMS, NOTATION, REPORT, REPORT_HEAD, ORDER, DEFS, PREAMBLE
+    # Until it is locked the statement file is a draft kept here, outside lean/, because the lab check
+    # treats every lean/**/Statement*.lean as something that must already be locked.
+    STATEMENT = HERE.parent / "lean" / "GodelArgument" / "Statement2.lean"
+    if not STATEMENT.exists():
+        STATEMENT = HERE / "Statement2.draft.lean"
+    OUT, ITEMS, NOTATION, REPORT = HERE / "out2a", HERE / "items2a.json", HERE / "notation2a.md", HERE / "REPORT-2A.md"
+    REPORT_HEAD = ["Stage 2A (Amendment 2), final. Written by `run.py --stage 2a --report` from the raw outputs in",
+                   "`out2a/`. Verdicts are the checkers' own. Rounds 1 and 2 are frozen under `round1-2a/` and",
+                   "`round2-2a/`. S2b2 (S2b′), S2e and X7 are from round 3; every other item is from round 2 and",
+                   "was not changed after it."]
+    ORDER = ["DEF-E", "S2a", "X5", "DEF-F", "S2c", "DEF-G", "X6", "S2a2", "S2e", "S2b", "X4", "S2d", "X7", "S2b2"]
+    DEFS = ["ClosedUnderNecessitation", "KnowledgeClosedUnderMP", "Factive", "KnowsOwnFactivity", "HasGödelSentence"]
+    PREAMBLE = next(line for line in STATEMENT.read_text().splitlines() if line.startswith("variable ")) + "\n"
+
+
+def use_stage_2r():
+    """Amendment 3: statements added after reading Reinhardt (1985), plus two locked Stage 2A statements compared
+    again with his text. Definitions come from Statement2.lean and the new file together."""
+    global STATEMENT, OUT, ITEMS, NOTATION, REPORT, REPORT_HEAD, ORDER, DEFS, PREAMBLE
+    s2 = HERE.parent / "lean" / "GodelArgument" / "Statement2.lean"
+    s3 = HERE.parent / "lean" / "GodelArgument" / "Statement3.lean"
+    if not s3.exists():
+        s3 = HERE / "Statement3.draft.lean"
+    STATEMENT = [s2, s3]
+    OUT, ITEMS, NOTATION, REPORT = HERE / "out2r", HERE / "items2r.json", HERE / "notation2a.md", HERE / "REPORT-2R.md"
+    REPORT_HEAD = ["Amendment 3. Written by `run.py --stage 2r --report` from the raw outputs in `out2r/`. Verdicts",
+                   "are the checkers' own. S2aR and S2dR are the locked Stage 2A statements `ReinhardtTheorem3` and",
+                   "`NoKnownSelfDiagonal`, translated blind again and compared with Reinhardt's own text."]
+    ORDER = ["DEF-H", "S2f", "X9", "S2aR", "S2g", "X8", "S2dR"]
+    DEFS = ["ClosedUnderNecessitation", "KnowledgeClosedUnderMP", "Factive", "KnowsOwnFactivity", "HasGödelSentence",
+            "KnowledgeSelfReflective"]
+    PREAMBLE = next(line for line in s2.read_text().splitlines() if line.startswith("variable ")) + "\n"
+
 
 PROMPT_A = """You are checking a formalization in Lean 4. Below are a notation key, some definitions, and one TARGET. \
 Names have been replaced by neutral labels (Def1, Def2, ..., Target) and comments removed, so judge only what the \
@@ -110,11 +163,15 @@ def strip_comments(code):
 
 def lean_blocks():
     """Map each declared name in Statement.lean to its declaration text (docstring removed)."""
-    text = STATEMENT.read_text()
-    body = text[text.index("namespace GodelArgument"):text.index("end GodelArgument")]
+    files = STATEMENT if isinstance(STATEMENT, list) else [STATEMENT]
+    body = ""
+    for f in files:
+        text = f.read_text()
+        body += text[text.index("namespace GodelArgument"):text.index("end GodelArgument")] + "\n"
     blocks = {}
     for chunk in re.split(r"\n(?=/--)", body):
         code = strip_comments(chunk)
+        code = "\n".join(line for line in code.splitlines() if line.strip() not in ("end", "section") and not line.startswith(("open ", "namespace ", "variable "))) + "\n"
         m = re.search(r"^(?:noncomputable )?(?:def|abbrev) (\w+)", code, flags=re.M)
         if m:
             blocks[m.group(1)] = code[m.start():]
@@ -132,7 +189,7 @@ def anonymize(code, target_names):
 
 
 def build_items():
-    spec = json.loads((HERE / "items.json").read_text())
+    spec = json.loads(ITEMS.read_text())
     blocks = lean_blocks()
     passages = {}
     for sec in re.split(r"\n## ", (HERE / "passages.md").read_text())[1:]:
@@ -145,20 +202,17 @@ def build_items():
     for it in spec["real"]:
         names = it["names"]
         target = "\n".join(blocks[n] for n in names)
-        context = "\n".join(blocks[n] for n in DEFS if n not in names)
+        context = PREAMBLE + "\n".join(blocks[n] for n in DEFS if n not in names)
         items.append({**it, "decoy": False, "target": anonymize(target, names), "context": anonymize(context, names)})
     for it in spec["decoys"]:
         code = strip_comments(it["lean"])
         names = re.findall(r"^(?:noncomputable )?(?:def|abbrev) (\w+)", code, flags=re.M)
-        context = "\n".join(blocks[n] for n in DEFS if n not in names)
+        context = PREAMBLE + "\n".join(blocks[n] for n in DEFS if n not in names)
         items.append({**it, "names": names, "decoy": True, "target": anonymize(code, names),
                       "context": anonymize(context, names)})
     for it in items:
         it["passage_text"] = "\n\n".join(passages[p] for p in it["passages"])
-    # Fixed order that interleaves decoys with real items; item ids shown to the model are neutral.
-    order = ["DEF-A", "S1a", "X2", "DEF-B", "S1b1", "X1", "S1b2", "DEF-C", "S1c", "X3", "S1a2", "S1a3", "DEF-D",
-             "S1b3", "S1c2", "S1c3", "S1c4", "S1d", "S1d2", "S1e"]
-    return [next(i for i in items if i["id"] == k) for k in order]
+    return [next(i for i in items if i["id"] == k) for k in ORDER]
 
 
 def post(url, headers, body, timeout=900):
@@ -209,7 +263,7 @@ def parse_json(text):
 
 
 def run(vendor):
-    notation = (HERE / "notation.md").read_text()
+    notation = NOTATION.read_text()
     outdir = OUT / vendor
     outdir.mkdir(parents=True, exist_ok=True)
     items = build_items()
@@ -265,13 +319,9 @@ def cost(vendor, usage):
 
 
 def report():
-    spec = json.loads((HERE / "items.json").read_text())
+    spec = json.loads(ITEMS.read_text())
     planted = {d["id"]: d for d in spec["decoys"]}
-    lines = ["# Statement check report", "",
-             "Round 2. Written by `run.py --report` from the raw outputs in `out/`. Verdicts are the checkers' own.",
-             "Round 1 (first draft of the statements, earlier prompt) is frozen under `round1/`.",
-             "S1e was compared with its source on 2026-11-23 under Amendment 1, once Penrose's text was in hand; its",
-             "blind translations are those of round 2.", ""]
+    lines = ["# Statement check report", "", *REPORT_HEAD, ""]
     vendors = [v for v in VENDORS if (OUT / v).is_dir()]
     recs = {v: {p.stem: json.loads(p.read_text()) for p in sorted((OUT / v).glob("*.json"))} for v in vendors}
     lines += ["## Models", ""]
@@ -314,12 +364,18 @@ def report():
                 lines.append(f"Verdict: {j.get('verdict')}. {j.get('summary', '')}")
                 lines += [f"- {d.get('severity')}: {d.get('description')}" for d in j.get("divergences", [])]
                 lines.append("")
-    (HERE / "REPORT.md").write_text("\n".join(lines) + "\n")
-    print(f"wrote {HERE / 'REPORT.md'}")
+    REPORT.write_text("\n".join(lines) + "\n")
+    print(f"wrote {REPORT}")
 
 
 if __name__ == "__main__":
     args = sys.argv[1:]
+    if args[:2] == ["--stage", "2a"]:
+        use_stage_2a()
+        args = args[2:]
+    elif args[:2] == ["--stage", "2r"]:
+        use_stage_2r()
+        args = args[2:]
     if args == ["--probe"]:
         for v in ("openai", "google", "xai"):
             try:

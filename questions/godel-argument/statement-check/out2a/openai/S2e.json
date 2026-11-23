@@ -1,0 +1,26 @@
+{
+  "id": "S2e",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:49:51Z",
+  "target": "def Target : Prop :=\n  let K : ArithmeticSentence → ArithmeticSentence := fun σ => (𝗣𝗔 : ArithmeticTheory).standardProvability σ\n  let F : ArithmeticSentence → ArithmeticSentence := K\n  let 𝓢 : ArithmeticTheory := 𝗣𝗔 ∪ (𝗣𝗔 : ArithmeticTheory).localReflectionOn Set.univ\n  Def1 (𝗣𝗔 : ArithmeticTheory) K ∧ (𝗣𝗔 : ArithmeticTheory) ⪯ 𝓢 ∧\n    Def2 𝓢 K ∧ Def3 𝓢 K ∧\n    Def5 (𝗣𝗔 : ArithmeticTheory) F ∧\n    (∀ φ, 𝓢 ⊢ K (K φ 🡘 F φ)) ∧\n    (∃ p, 𝓢 ⊢ K (K (∼p) 🡘 p)) ∧\n    Entailment.Consistent 𝓢 ∧\n    ¬ Def4 𝓢 K\n",
+  "usage": [
+    [
+      1606,
+      468
+    ],
+    [
+      2846,
+      143
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines a proposition; it does not assert that the proposition holds. Let K(σ) be the arithmetic sentence Prov_PA(⌜σ⌝) expressing that PA proves σ. Set F equal to K, and let 𝓢 be PA augmented by all local reflection axioms K(σ) 🡒 σ, one for every arithmetic sentence σ. These are fixed choices, not quantified parameters. The proposition is the conjunction of the following conditions, with all sentence variables ranging over closed arithmetic sentences: (1) For every φ, if PA proves φ, then PA proves K(φ). (2) For every φ, if PA proves φ, then 𝓢 proves φ. (3) For every φ and then every ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)). (4) For every φ, 𝓢 proves K(φ) 🡒 φ. (5) There exists a ψ such that PA proves ψ 🡘 ∼(F(ψ)). (6) For every φ, 𝓢 proves K(K(φ) 🡘 F(φ)); F(φ) is exactly K(φ) here. (7) There exists a p such that 𝓢 proves K(K(∼p) 🡘 p). The outer K applies to the whole biconditional, and p is not required to be the witness ψ from (5). (8) 𝓢 does not prove every arithmetic sentence. (9) It is not the case that for every φ, 𝓢 proves K(K(φ) 🡒 φ). This negates the universal provability condition; it does not require 𝓢 to prove the negation of any instance.\"}",
+  "translation": "Target defines a proposition; it does not assert that the proposition holds. Let K(σ) be the arithmetic sentence Prov_PA(⌜σ⌝) expressing that PA proves σ. Set F equal to K, and let 𝓢 be PA augmented by all local reflection axioms K(σ) 🡒 σ, one for every arithmetic sentence σ. These are fixed choices, not quantified parameters. The proposition is the conjunction of the following conditions, with all sentence variables ranging over closed arithmetic sentences: (1) For every φ, if PA proves φ, then PA proves K(φ). (2) For every φ, if PA proves φ, then 𝓢 proves φ. (3) For every φ and then every ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)). (4) For every φ, 𝓢 proves K(φ) 🡒 φ. (5) There exists a ψ such that PA proves ψ 🡘 ∼(F(ψ)). (6) For every φ, 𝓢 proves K(K(φ) 🡘 F(φ)); F(φ) is exactly K(φ) here. (7) There exists a p such that 𝓢 proves K(K(∼p) 🡘 p). The outer K applies to the whole biconditional, and p is not required to be the witness ψ from (5). (8) 𝓢 does not prove every arithmetic sentence. (9) It is not the case that for every φ, 𝓢 proves K(K(φ) 🡒 φ). This negates the universal provability condition; it does not require 𝓢 to prove the negation of any instance.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"The TARGET fixes K as PA’s standard provability predicate, sets F equal to K, and takes 𝓢 to be PA plus all local reflection instances. Its nine conjuncts match (i)–(ix), including the intended tautology inside K in (vi) and the negation of the universal provability claim in (ix).\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "The TARGET fixes K as PA’s standard provability predicate, sets F equal to K, and takes 𝓢 to be PA plus all local reflection instances. Its nine conjuncts match (i)–(ix), including the intended tautology inside K in (vi) and the negation of the universal provability claim in (ix)."
+  }
+}

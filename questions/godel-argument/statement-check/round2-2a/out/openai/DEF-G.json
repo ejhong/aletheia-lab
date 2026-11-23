@@ -1,0 +1,16 @@
+{
+  "id": "DEF-G",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:37:28Z",
+  "target": "def Target (𝓑 : S₀) (F : Fm → Fm) : Prop := ∃ ψ, 𝓑 ⊢ ψ 🡘 ∼F ψ\n",
+  "usage": [
+    [
+      1226,
+      454
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Given the sentence type Fm with the indicated logical operations and the provability relation for systems of type S₀, Target defines a property of a system 𝓑 : S₀ and a function F : Fm → Fm. For those given 𝓑 and F, the property is that there exists a sentence ψ : Fm such that 𝓑 proves the biconditional between ψ and the negation of F(ψ), namely (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ). The witness ψ may depend on 𝓑 and F and need not be unique. The requirement is provability of that compound sentence, not syntactic equality of its two sides or separate provability of either side. No classicality or consistency of 𝓑 and no further property of F is assumed. The definition does not assert that every pair 𝓑, F has such a witness.\"}",
+  "translation": "Given the sentence type Fm with the indicated logical operations and the provability relation for systems of type S₀, Target defines a property of a system 𝓑 : S₀ and a function F : Fm → Fm. For those given 𝓑 and F, the property is that there exists a sentence ψ : Fm such that 𝓑 proves the biconditional between ψ and the negation of F(ψ), namely (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ). The witness ψ may depend on 𝓑 and F and need not be unique. The requirement is provability of that compound sentence, not syntactic equality of its two sides or separate provability of either side. No classicality or consistency of 𝓑 and no further property of F is assumed. The definition does not assert that every pair 𝓑, F has such a witness."
+}

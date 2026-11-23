@@ -1,0 +1,168 @@
+{
+ "real": [
+  {
+   "id": "DEF-E",
+   "names": [
+    "ClosedUnderNecessitation"
+   ],
+   "passages": [
+    "P-K352",
+    "P-K353",
+    "P-A3"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This definition states, as a hypothesis about the base system alone, the derived rule of epistemic arithmetic: if EA proves φ then EA proves Kφ. In the sources the rule follows from K1, K2, K4 and from EA containing Kσ for each of its axioms σ; that derivation is not reproduced."
+  },
+  {
+   "id": "DEF-F",
+   "names": [
+    "KnowledgeClosedUnderMP",
+    "Factive",
+    "KnowsOwnFactivity"
+   ],
+   "passages": [
+    "P-K352",
+    "P-K353",
+    "P-A3"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. These three definitions are axiom K2 (E2), axiom K3 (E3), and K applied to each instance of K3, which is an axiom of EA because EA contains Kσ for each basic axiom σ. Universal closures are not modelled, since there are no free variables in this setting."
+  },
+  {
+   "id": "DEF-G",
+   "names": [
+    "HasGödelSentence"
+   ],
+   "passages": [],
+   "claim": "No passage; back-translation only. The sources use the diagonal lemma without stating it."
+  },
+  {
+   "id": "S2a",
+   "names": [
+    "ReinhardtTheorem3"
+   ],
+   "passages": [
+    "P-K354",
+    "P-K354b",
+    "P-K352",
+    "P-K353"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement captures Theorem 3. 'S includes EA' is rendered by: inclusion 𝓑 ⪯ 𝓢; the necessitation rule of the base; closure of knowledge under modus ponens in 𝓢; and the hypothesis that F has a Gödel sentence over the base, which in the source comes from the diagonal lemma for arithmetic."
+  },
+  {
+   "id": "S2a2",
+   "names": [
+    "KnowerExceedsKnownSoundSystem"
+   ],
+   "passages": [
+    "P-K354",
+    "P-K356"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement is the consequence of Theorem 3 under factivity (K3): some sentence is known and F does not hold of it. It is offered as the 'not K ⊆ F' half of the conclusion F ⊊ K of Gödel's second claim, and of Penrose's conclusion that the mind is not a knowably sound algorithm. The half F ⊆ K is not claimed."
+  },
+  {
+   "id": "S2b",
+   "names": [
+    "AbsoluteSecondIncompleteness"
+   ],
+   "passages": [
+    "P-K354b"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement is a repaired variant of Theorem 4, not the theorem as printed. Con(F) is read as ∼F(⊥). A hypothesis is added that is not on the page: the base proves the formalized second incompleteness theorem for F, 'if F holds of Con(F) then F holds of ⊥'. The author holds that the printed statement, for an arbitrary formula F(x), is false without some such proviso, and a separate statement shows that in this setting the proviso cannot be dropped. Judge whether, apart from the declared proviso, the TARGET matches Theorem 4."
+  },
+  {
+   "id": "S2c",
+   "names": [
+    "KnowingWhichSystemIsContradictory"
+   ],
+   "passages": [
+    "P-K357",
+    "P-K357b",
+    "P-A1",
+    "P-A12"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement is offered as a sentence-by-sentence form of Theorem 6 (the super strong mechanistic thesis is inconsistent): for a fixed F, the scheme 'for each sentence φ, K(Kφ ↔ F(⌜φ⌝))', which is the scheme of Alexander's Theorem 12(3) with F(⌜φ⌝) in place of ⌜φ⌝ ∈ W_m. The single sentence ∃e K(K = F_e), the truth predicate of EA_T and the quantifier over e are not expressed. F is arbitrary (it need not be a machine), provided it has a Gödel sentence. Known factivity is among the hypotheses, as Alexander says it must be."
+  },
+  {
+   "id": "S2d",
+   "names": [
+    "NoKnownSelfDiagonal"
+   ],
+   "passages": [
+    "P-A4",
+    "P-A1"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement is a lemma of the author's about the operator K. It is not claimed to formalize Reinhardt's schema or his refutation of an instance of it. The informal link is this: the instance φ := 'x ∉ W_x' of the schema, instantiated at x := e under K, gives K(K(e ∉ W_e) ↔ e ∈ W_e), which has the form K(K(∼p) ↔ p). Judge whether the TARGET says what this claim says: that under the four hypotheses about K, no sentence p is known to hold exactly when ∼p is known."
+  },
+  {
+   "id": "S2b2",
+   "names": [
+    "SecondIncompletenessProvisoCannotBeDropped"
+   ],
+   "passages": [
+    "P-K354b"
+   ],
+   "claim": "This statement is the author's own. It is about the author's variant of Theorem 4 (not shown here), not about the passage, which is given as context only. The claim: there exist a set 𝓢 of arithmetic axioms and functions K, F on arithmetic sentences such that (i) Peano arithmetic is closed under necessitation for K, (ii) 𝓢 includes Peano arithmetic, (iii) knowledge is closed under modus ponens in 𝓢, (iv) K is factive in 𝓢, (v) 𝓢 proves K of each instance of factivity, (vi) 𝓢 proves K(Kφ → F(φ)) for every sentence φ, and yet (vii) 𝓢 does not prove K¬K(¬F(⊥)). K and F are arbitrary functions, so this is not a counterexample to the printed theorem. Judge whether the TARGET says exactly what (i)–(vii) say."
+  },
+  {
+   "id": "S2e",
+   "names": [
+    "KnownFactivityCannotBeDropped"
+   ],
+   "passages": [
+    "P-A1",
+    "P-A12",
+    "P-K357"
+   ],
+   "claim": "This statement is the author's own. It is not claimed to formalize Alexander's theorem; the passages are given as context only. The claim: let K be Peano arithmetic's standard provability predicate (K φ is the sentence 'Peano arithmetic proves φ'), let F be the same, and let 𝓢 be Peano arithmetic together with all sentences 'if Peano arithmetic proves σ then σ'. Then (i) Peano arithmetic is closed under necessitation for K, (ii) 𝓢 includes Peano arithmetic, (iii) knowledge is closed under modus ponens in 𝓢, (iv) K is factive in 𝓢, (v) F has a Gödel sentence over Peano arithmetic, (vi) 𝓢 proves K(Kφ ↔ F(φ)) for every sentence φ, (vii) for some p, 𝓢 proves K(K(¬p) ↔ p), (viii) 𝓢 is consistent, and (ix) it is not the case that 𝓢 proves K(Kφ → φ) for every φ. Since F is K, (vi) is knowledge of a tautology; that is intended. Judge whether the TARGET says exactly what (i)–(ix) say."
+  }
+ ],
+ "decoys": [
+  {
+   "id": "X4",
+   "passages": [
+    "P-K357",
+    "P-K357b",
+    "P-A1",
+    "P-A12"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement is offered as a sentence-by-sentence form of Theorem 6 (the super strong mechanistic thesis is inconsistent): for a fixed F, the scheme 'for each sentence φ, K(Kφ ↔ F(⌜φ⌝))', which is the scheme of Alexander's Theorem 12(3) with F(⌜φ⌝) in place of ⌜φ⌝ ∈ W_m. The single sentence ∃e K(K = F_e), the truth predicate of EA_T and the quantifier over e are not expressed. F is arbitrary (it need not be a machine), provided it has a Gödel sentence. Known factivity is among the hypotheses, as Alexander says it must be.",
+   "lean": "def KnowingWhichSystemIsContradictory : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    ClosedUnderNecessitation 𝓑 K → 𝓑 ⪯ 𝓢 → KnowledgeClosedUnderMP 𝓢 K → Factive 𝓢 K → KnowsOwnFactivity 𝓢 K →\n    HasGödelSentence 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K φ 🡘 F φ) →\n    𝓢 ⊢ ⊥",
+   "planted_error": "The coincidence of K and F is asserted outright, not as known: the hypothesis is 𝓢 ⊢ Kφ ↔ F(φ), not 𝓢 ⊢ K(Kφ ↔ F(φ)). That is the weak thesis, which the sources say is consistent, not the super strong one.",
+   "mimics": "S2c"
+  },
+  {
+   "id": "X5",
+   "passages": [
+    "P-K354",
+    "P-K354b",
+    "P-K352",
+    "P-K353"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement captures Theorem 3. 'S includes EA' is rendered by: inclusion 𝓑 ⪯ 𝓢; the necessitation rule of the base; closure of knowledge under modus ponens in 𝓢; and the hypothesis that F has a Gödel sentence over the base, which in the source comes from the diagonal lemma for arithmetic.",
+   "lean": "def ReinhardtTheorem3 : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    ClosedUnderNecessitation 𝓑 K → 𝓑 ⪯ 𝓢 → KnowledgeClosedUnderMP 𝓢 K →\n    HasGödelSentence 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (F ψ)",
+   "planted_error": "The negation is missing in the conclusion: it says K(F ψ) where Theorem 3 has K¬F(⌜ψ⌝).",
+   "mimics": "S2a"
+  },
+  {
+   "id": "X6",
+   "passages": [
+    "P-K354b"
+   ],
+   "claim": "Setting: the TARGET is abstract. Sentences are an arbitrary type with classical connectives; K and F are arbitrary functions on sentences standing for the operator 'it is known that' and for 'F holds of' (F(⌜φ⌝) in the source); 𝓑 stands for the base theory EA and 𝓢 for a system that includes it, inclusion being the hypothesis 𝓑 ⪯ 𝓢. Arithmetic, Gödel numbering and quantifiers of the object language are not modelled, and that limitation is declared separately. This statement is a repaired variant of Theorem 4, not the theorem as printed. Con(F) is read as ∼F(⊥). A hypothesis is added that is not on the page: the base proves the formalized second incompleteness theorem for F, 'if F holds of Con(F) then F holds of ⊥'. The author holds that the printed statement, for an arbitrary formula F(x), is false without some such proviso, and a separate statement shows that in this setting the proviso cannot be dropped. Judge whether, apart from the declared proviso, the TARGET matches Theorem 4.",
+   "lean": "def AbsoluteSecondIncompleteness : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    ClosedUnderNecessitation 𝓑 K → 𝓑 ⪯ 𝓢 → KnowledgeClosedUnderMP 𝓢 K → KnowsOwnFactivity 𝓢 K →\n    𝓑 ⊢ F (∼F ⊥) 🡒 F ⊥ →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 K φ)) →\n    𝓢 ⊢ K (∼K (∼F ⊥))",
+   "planted_error": "The hypothesis is reversed: K(F(φ) → Kφ), 'whatever F holds of is known', where Theorem 4 has K(Kφ → F(⌜φ⌝)), 'whatever is known F holds of'.",
+   "mimics": "S2b"
+  },
+  {
+   "id": "X7",
+   "mimics": "S2e",
+   "passages": [
+    "P-A1",
+    "P-A12",
+    "P-K357"
+   ],
+   "claim": "This statement is the author's own. It is not claimed to formalize Alexander's theorem; the passages are given as context only. The claim: let K be Peano arithmetic's standard provability predicate (K φ is the sentence 'Peano arithmetic proves φ'), let F be the same, and let 𝓢 be Peano arithmetic together with all sentences 'if Peano arithmetic proves σ then σ'. Then (i) Peano arithmetic is closed under necessitation for K, (ii) 𝓢 includes Peano arithmetic, (iii) knowledge is closed under modus ponens in 𝓢, (iv) K is factive in 𝓢, (v) F has a Gödel sentence over Peano arithmetic, (vi) 𝓢 proves K(Kφ ↔ F(φ)) for every sentence φ, (vii) for some p, 𝓢 proves K(K(¬p) ↔ p), (viii) 𝓢 is consistent, and (ix) it is not the case that 𝓢 proves K(Kφ → φ) for every φ. Since F is K, (vi) is knowledge of a tautology; that is intended. Judge whether the TARGET says exactly what (i)–(ix) say.",
+   "planted_error": "The last conjunct is `KnowsOwnFactivity 𝓢 K` without the negation, although the claim's (ix) says the knower does not know its own factivity.",
+   "lean": "def KnownFactivityCannotBeDropped : Prop :=\n  let K : ArithmeticSentence → ArithmeticSentence := fun σ => (𝗣𝗔 : ArithmeticTheory).standardProvability σ\n  let F : ArithmeticSentence → ArithmeticSentence := K\n  let 𝓢 : ArithmeticTheory := 𝗣𝗔 ∪ (𝗣𝗔 : ArithmeticTheory).localReflectionOn Set.univ\n  ClosedUnderNecessitation (𝗣𝗔 : ArithmeticTheory) K ∧ (𝗣𝗔 : ArithmeticTheory) ⪯ 𝓢 ∧\n    KnowledgeClosedUnderMP 𝓢 K ∧ Factive 𝓢 K ∧\n    HasGödelSentence (𝗣𝗔 : ArithmeticTheory) F ∧\n    (∀ φ, 𝓢 ⊢ K (K φ 🡘 F φ)) ∧\n    (∃ p, 𝓢 ⊢ K (K (∼p) 🡘 p)) ∧\n    Entailment.Consistent 𝓢 ∧\n    KnowsOwnFactivity 𝓢 K"
+  }
+ ]
+}

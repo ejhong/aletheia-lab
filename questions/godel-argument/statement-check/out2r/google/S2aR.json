@@ -1,0 +1,39 @@
+{
+  "id": "S2aR",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T03:17:20Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (∼F ψ)\n",
+  "usage": [
+    [
+      1528,
+      3248
+    ],
+    [
+      2824,
+      17240
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition stating that for all types Fm (sentences), S₀, and S (proof systems), equipped with formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼), logical constants (⊤, ⊥), and provability relations on Fm for S₀ and for S; for all proof systems 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies in these connectives and are closed under modus ponens; and for all arbitrary functions K, F : Fm → Fm from sentences to sentences, if the following five hypotheses hold: (1) Def1 𝓑 K: for every sentence φ : Fm, if 𝓑 proves φ, then 𝓑 proves K φ; (2) 𝓑 ⪯ 𝓢: every sentence provable in 𝓑 is provable in 𝓢; (3) Def2 𝓢 K: for all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (4) Def5 𝓑 F: there exists a sentence ψ : Fm such that 𝓑 proves ψ 🡘 ∼(F ψ) (that is, (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ)); and (5) for every sentence φ : Fm, 𝓢 proves K (F φ 🡒 φ); then there exists a sentence ψ : Fm such that 𝓢 proves the conjunction K ψ ⋏ K (∼(F ψ)). Nothing else is assumed about the systems or functions: in particular, neither 𝓑 nor 𝓢 is required to be consistent, K and F are arbitrary functions on Fm with no further conditions (such as Def3, Def4, or Def6, or closure of 𝓢 under φ ↦ K φ, or distribution of K in 𝓑), and the existentially quantified sentence ψ in the conclusion is not stated to be the same sentence as the witness from Def5 𝓑 F.\"}\n```",
+  "translation": "Target is the proposition stating that for all types Fm (sentences), S₀, and S (proof systems), equipped with formal logical connectives (implication 🡒, conjunction ⋏, disjunction ⋎, negation ∼), logical constants (⊤, ⊥), and provability relations on Fm for S₀ and for S; for all proof systems 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies in these connectives and are closed under modus ponens; and for all arbitrary functions K, F : Fm → Fm from sentences to sentences, if the following five hypotheses hold: (1) Def1 𝓑 K: for every sentence φ : Fm, if 𝓑 proves φ, then 𝓑 proves K φ; (2) 𝓑 ⪯ 𝓢: every sentence provable in 𝓑 is provable in 𝓢; (3) Def2 𝓢 K: for all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (4) Def5 𝓑 F: there exists a sentence ψ : Fm such that 𝓑 proves ψ 🡘 ∼(F ψ) (that is, (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ)); and (5) for every sentence φ : Fm, 𝓢 proves K (F φ 🡒 φ); then there exists a sentence ψ : Fm such that 𝓢 proves the conjunction K ψ ⋏ K (∼(F ψ)). Nothing else is assumed about the systems or functions: in particular, neither 𝓑 nor 𝓢 is required to be consistent, K and F are arbitrary functions on Fm with no further conditions (such as Def3, Def4, or Def6, or closure of 𝓢 under φ ↦ K φ, or distribution of K in 𝓑), and the existentially quantified sentence ψ in the conclusion is not stated to be the same sentence as the witness from Def5 𝓑 F.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Arithmetic, Robinson's Q, first-order quantifiers, Gödel numbering, and syntactic formulas with one free variable are not modelled: Fm is an arbitrary type with classical propositional connectives, 𝓑 and 𝓢 are arbitrary classical propositional systems, and K and F are arbitrary functions Fm → Fm. In particular, rather than deriving the diagonal equivalence s ↔ ¬F[s] from T including Q, the Lean statement assumes the existence of a Gödel fixed point for ∼F over 𝓑 (Def5 𝓑 F) as an explicit hypothesis. This idealization is declared in the author's claim.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def1 𝓑 K (∀ φ, 𝓑 ⊢ φ → 𝓑 ⊢ K φ) assumes closure of the base theory 𝓑 under full (arbitrarily iterated) necessitation, which together with 𝓑 ⪯ 𝓢 and Def5 𝓑 F forces 𝓢 to prove K^n φ for every n and every 𝓑-theorem φ (including tautologies and the fixed-point equivalence). While this holds for the full epistemic base system of P-R323, it is a slightly stronger hypothesis than the minimal requirements noted in Reinhardt's remark in P-R324 (distributivity over implication plus a single application of B to tautologies and elementary axioms of arithmetic and equality, which would only require ∀ φ, 𝓑 ⊢ φ → 𝓢 ⊢ K φ). Neither Bp → p nor Bp → BBp is assumed, matching the claim.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The formalization is slightly more general than the source in quantifying over arbitrary sentence types, proof systems, and functions K, F, and in requiring distributivity of K over implication (Def2) only in 𝓢 rather than also in the base theory 𝓑.\"\n    }\n  ],\n  \"summary\": \"The TARGET faithfully captures the abstract propositional-modal content of case (i) of Reinhardt's Theorem 1 without assuming Bp → p or Bp → BBp. The only caveats are the declared abstraction away from arithmetic and Gödel numbering (taking the diagonal fixed point as a hypothesis Def5 𝓑 F) and the slightly stronger use of iterated necessitation in 𝓑 (Def1 𝓑 K) rather than a single layer of K.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Arithmetic, Robinson's Q, first-order quantifiers, Gödel numbering, and syntactic formulas with one free variable are not modelled: Fm is an arbitrary type with classical propositional connectives, 𝓑 and 𝓢 are arbitrary classical propositional systems, and K and F are arbitrary functions Fm → Fm. In particular, rather than deriving the diagonal equivalence s ↔ ¬F[s] from T including Q, the Lean statement assumes the existence of a Gödel fixed point for ∼F over 𝓑 (Def5 𝓑 F) as an explicit hypothesis. This idealization is declared in the author's claim."
+      },
+      {
+        "severity": "minor",
+        "description": "Def1 𝓑 K (∀ φ, 𝓑 ⊢ φ → 𝓑 ⊢ K φ) assumes closure of the base theory 𝓑 under full (arbitrarily iterated) necessitation, which together with 𝓑 ⪯ 𝓢 and Def5 𝓑 F forces 𝓢 to prove K^n φ for every n and every 𝓑-theorem φ (including tautologies and the fixed-point equivalence). While this holds for the full epistemic base system of P-R323, it is a slightly stronger hypothesis than the minimal requirements noted in Reinhardt's remark in P-R324 (distributivity over implication plus a single application of B to tautologies and elementary axioms of arithmetic and equality, which would only require ∀ φ, 𝓑 ⊢ φ → 𝓢 ⊢ K φ). Neither Bp → p nor Bp → BBp is assumed, matching the claim."
+      },
+      {
+        "severity": "minor",
+        "description": "The formalization is slightly more general than the source in quantifying over arbitrary sentence types, proof systems, and functions K, F, and in requiring distributivity of K over implication (Def2) only in 𝓢 rather than also in the base theory 𝓑."
+      }
+    ],
+    "summary": "The TARGET faithfully captures the abstract propositional-modal content of case (i) of Reinhardt's Theorem 1 without assuming Bp → p or Bp → BBp. The only caveats are the declared abstraction away from arithmetic and Gödel numbering (taking the diagonal fixed point as a hypothesis Def5 𝓑 F) and the slightly stronger use of iterated necessitation in 𝓑 (Def1 𝓑 K) rather than a single layer of K."
+  }
+}

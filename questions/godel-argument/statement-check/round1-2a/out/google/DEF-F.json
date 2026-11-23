@@ -1,0 +1,39 @@
+{
+  "id": "DEF-F",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:22:44Z",
+  "target": "def Def2 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ ψ, 𝓢 ⊢ K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ\n\ndef Def3 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K φ 🡒 φ\n\ndef Def4 (𝓢 : S) (K : Fm → Fm) : Prop := ∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)\n",
+  "usage": [
+    [
+      1036,
+      2308
+    ],
+    [
+      2212,
+      3871
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"The target defines three propositions (`Def2`, `Def3`, and `Def4`), each parameterized implicitly by a type of sentences `Fm` equipped with logical connectives (`[LogicalConnective Fm]`) and a type of proof systems `S` equipped with a provability relation on `Fm` (`[Entailment S Fm]`), and explicitly by a proof system `𝓢 : S` and an arbitrary function `K : Fm → Fm` from sentences to sentences. None of the three definitions assumes any additional properties of `𝓢` or `K` (in particular, `𝓢` is not required to be classical, closed under modus ponens, or consistent, and no relation to `S₀`, `𝓑`, `Def1`, `Def5`, or `[LogicalNeutral Fm]` is required). All implications inside the definitions are the formal (object-language) implication connective `🡒` of `Fm`, not meta-level implication:\\n\\n1. `Def2 𝓢 K` asserts that for all sentences `φ` and `ψ` in `Fm`, the proof system `𝓢` proves the sentence `K (φ 🡒 ψ) 🡒 ((K φ) 🡒 (K ψ))` (since function application binds tighter than `🡒` and `🡒` associates to the right).\\n\\n2. `Def3 𝓢 K` asserts that for every sentence `φ` in `Fm`, the proof system `𝓢` proves the sentence `(K φ) 🡒 φ`.\\n\\n3. `Def4 𝓢 K` asserts that for every sentence `φ` in `Fm`, the proof system `𝓢` proves the sentence `K ((K φ) 🡒 φ)`.\"}\n```",
+  "translation": "The target defines three propositions (`Def2`, `Def3`, and `Def4`), each parameterized implicitly by a type of sentences `Fm` equipped with logical connectives (`[LogicalConnective Fm]`) and a type of proof systems `S` equipped with a provability relation on `Fm` (`[Entailment S Fm]`), and explicitly by a proof system `𝓢 : S` and an arbitrary function `K : Fm → Fm` from sentences to sentences. None of the three definitions assumes any additional properties of `𝓢` or `K` (in particular, `𝓢` is not required to be classical, closed under modus ponens, or consistent, and no relation to `S₀`, `𝓑`, `Def1`, `Def5`, or `[LogicalNeutral Fm]` is required). All implications inside the definitions are the formal (object-language) implication connective `🡒` of `Fm`, not meta-level implication:\n\n1. `Def2 𝓢 K` asserts that for all sentences `φ` and `ψ` in `Fm`, the proof system `𝓢` proves the sentence `K (φ 🡒 ψ) 🡒 ((K φ) 🡒 (K ψ))` (since function application binds tighter than `🡒` and `🡒` associates to the right).\n\n2. `Def3 𝓢 K` asserts that for every sentence `φ` in `Fm`, the proof system `𝓢` proves the sentence `(K φ) 🡒 φ`.\n\n3. `Def4 𝓢 K` asserts that for every sentence `φ` in `Fm`, the proof system `𝓢` proves the sentence `K ((K φ) 🡒 φ)`.",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Omission of free variables and universal closures: both Koellner (K2, K3, and K applied to K3) and Alexander (E2, E3, and K applied to E3) define these schemata as universal closures of arbitrary formulas of a first-order language (so K applied to K3 yields K(∀x̄ (Kφ → φ))). Because Fm is an abstract type of sentences without quantifiers or free variables, Def2–Def4 omit universal closures and apply only to sentences (a limitation explicitly acknowledged by the author).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Syntactic form of K2: Def2 uses the curried implication K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ, matching Alexander's E2 verbatim, whereas Koellner's K2 uses the conjunctive antecedent (K(φ → ψ) ∧ Kφ) → Kψ. The two forms are equivalent in classical logic, although Def2 itself does not assume [Entailment.Cl 𝓢].\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Provability rather than axiomhood: the sources specify K2/E2, K3/E3, and K applied to K3 as axiom schemata of EA, whereas Def2–Def4 state that an abstract system 𝓢 proves each instance (𝓢 ⊢ ...), since the abstract entailment interface has no separate representation of axioms versus theorems.\"\n    }\n  ],\n  \"summary\": \"Def2, Def3, and Def4 faithfully capture the propositional sentence-level content of K2/E2, K3/E3, and K applied to K3. The only divergences are minor idealizations inherent to the abstract sentence-only entailment setting (no universal closures, provability instead of axiomhood) and the classically equivalent curried form of K2.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "Omission of free variables and universal closures: both Koellner (K2, K3, and K applied to K3) and Alexander (E2, E3, and K applied to E3) define these schemata as universal closures of arbitrary formulas of a first-order language (so K applied to K3 yields K(∀x̄ (Kφ → φ))). Because Fm is an abstract type of sentences without quantifiers or free variables, Def2–Def4 omit universal closures and apply only to sentences (a limitation explicitly acknowledged by the author)."
+      },
+      {
+        "severity": "minor",
+        "description": "Syntactic form of K2: Def2 uses the curried implication K (φ 🡒 ψ) 🡒 K φ 🡒 K ψ, matching Alexander's E2 verbatim, whereas Koellner's K2 uses the conjunctive antecedent (K(φ → ψ) ∧ Kφ) → Kψ. The two forms are equivalent in classical logic, although Def2 itself does not assume [Entailment.Cl 𝓢]."
+      },
+      {
+        "severity": "minor",
+        "description": "Provability rather than axiomhood: the sources specify K2/E2, K3/E3, and K applied to K3 as axiom schemata of EA, whereas Def2–Def4 state that an abstract system 𝓢 proves each instance (𝓢 ⊢ ...), since the abstract entailment interface has no separate representation of axioms versus theorems."
+      }
+    ],
+    "summary": "Def2, Def3, and Def4 faithfully capture the propositional sentence-level content of K2/E2, K3/E3, and K applied to K3. The only divergences are minor idealizations inherent to the abstract sentence-only entailment setting (no universal closures, provability instead of axiomhood) and the classically equivalent curried form of K2."
+  }
+}

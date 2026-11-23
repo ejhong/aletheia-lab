@@ -1,0 +1,47 @@
+{
+  "id": "S2d",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:27:20Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K : Fm → Fm),\n    Def1 𝓑 𝓢 K → Def2 𝓢 K → Def3 𝓢 K → Def4 𝓢 K →\n    ∀ p : Fm, 𝓢 ⊢ ∼K (K (∼p) 🡘 p)\n",
+  "usage": [
+    [
+      1171,
+      2306
+    ],
+    [
+      2261,
+      23407
+    ]
+  ],
+  "a_raw": "```json\n{\"translation\": \"Target is the proposition asserting that for all arbitrary types Fm (sentences), S₀, and S (proof systems), equipped with formal logical connectives (🡒, ⋏, ⋎, ∼) and constants (⊤, ⊥) on Fm and provability relations for S₀ and S over Fm, and for every system 𝓑 : S₀, every system 𝓢 : S (assuming both 𝓑 and 𝓢 prove all classical propositional tautologies and are closed under modus ponens), and every function K : Fm → Fm, if the following four hypotheses hold:\\n1. (Def1) For every sentence φ : Fm, if 𝓑 proves φ, then 𝓢 proves K φ;\\n2. (Def2) For all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ);\\n3. (Def3) For every sentence φ : Fm, 𝓢 proves (K φ) 🡒 φ;\\n4. (Def4) For every sentence φ : Fm, 𝓢 proves K ((K φ) 🡒 φ);\\nthen for every sentence p : Fm, 𝓢 proves ∼(K ((K (∼p)) 🡘 p)), i.e., the formal negation of K applied to the biconditional ((K (∼p)) 🡒 p) ⋏ (p 🡒 (K (∼p))).\\n\\nNotable absences: Def5 (the existence of a fixed point in 𝓑) is not assumed, even though it appears in the context; neither 𝓑 nor 𝓢 is assumed to be consistent; 𝓢 is not assumed to satisfy necessitation (𝓢 ⊢ φ → 𝓢 ⊢ K φ) or to coincide with or extend 𝓑 beyond Def1; and p is universally quantified over all sentences in Fm rather than being restricted to a special or fixed-point sentence.\"}\n```",
+  "translation": "Target is the proposition asserting that for all arbitrary types Fm (sentences), S₀, and S (proof systems), equipped with formal logical connectives (🡒, ⋏, ⋎, ∼) and constants (⊤, ⊥) on Fm and provability relations for S₀ and S over Fm, and for every system 𝓑 : S₀, every system 𝓢 : S (assuming both 𝓑 and 𝓢 prove all classical propositional tautologies and are closed under modus ponens), and every function K : Fm → Fm, if the following four hypotheses hold:\n1. (Def1) For every sentence φ : Fm, if 𝓑 proves φ, then 𝓢 proves K φ;\n2. (Def2) For all sentences φ, ψ : Fm, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ);\n3. (Def3) For every sentence φ : Fm, 𝓢 proves (K φ) 🡒 φ;\n4. (Def4) For every sentence φ : Fm, 𝓢 proves K ((K φ) 🡒 φ);\nthen for every sentence p : Fm, 𝓢 proves ∼(K ((K (∼p)) 🡘 p)), i.e., the formal negation of K applied to the biconditional ((K (∼p)) 🡒 p) ⋏ (p 🡒 (K (∼p))).\n\nNotable absences: Def5 (the existence of a fixed point in 𝓑) is not assumed, even though it appears in the context; neither 𝓑 nor 𝓢 is assumed to be consistent; 𝓢 is not assumed to satisfy necessitation (𝓢 ⊢ φ → 𝓢 ⊢ K φ) or to coincide with or extend 𝓑 beyond Def1; and p is universally quantified over all sentences in Fm rather than being restricted to a special or fixed-point sentence.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Target omits and cannot express Reinhardt's schema ∃e K ∀x (K φ ↔ x ∈ W_e), the Turing-machine / r.e. predicate W_e, arithmetic, the free-variable condition FV(φ) ⊆ {x}, and the source's claim in [P-A4] that a particular instance of Reinhardt's schema is inconsistent with epistemic arithmetic. Instead, Target states a purely propositional modal schema (∀ p : Fm, 𝓢 ⊢ ∼K (K (∼p) 🡘 p)) that establishes nothing formally about Reinhardt's schema, Turing machines, or computability.\"\n    },\n    {\n      \"severity\": \"major\",\n      \"description\": \"Target omits and cannot express the quantified epistemic logic and diagonalization steps needed to connect the chosen instance ∃e K ∀x (K(x ∉ W_x) ↔ x ∈ W_e) to K(K(∼p) ↔ p)—namely existential elimination on e, universal instantiation x := e inside the scope of the intensional operator K, and necessitation applied to open formulas (moreover, p := 'e ∈ W_e' is an open formula rather than a closed sentence, whereas the setting describes Fm as sentences). Because the entire bridge from Reinhardt's schema to K(K(∼p) ↔ p) remains unformalized, Lean establishes only a propositional modal refutation rather than the inconsistency of an instance of Reinhardt's schema with EA.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target generalizes from Epistemic Arithmetic (EA) to arbitrary abstract classical propositional systems 𝓑 and 𝓢 with an operator K satisfying Def1–Def4, omitting arithmetic axioms, S4 positive introspection (K φ → KK φ), and full necessitation for 𝓢 while stating Def4 (K(K φ → φ)) explicitly. Because EA satisfies Def1–Def4 (and Def1 with Def3 implies that 𝓢 extends 𝓑), this is a harmless strengthening.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Target formalizes the propositional tail of a specific author-supplied instance (φ := 'x ∉ W_x') yielding K(K(∼p) ↔ p), whereas [P-A4] states only that Reinhardt found some inconsistent instance without specifying which instance or this propositional form.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Relative to [P-A1]'s remark that proofs always involve known factivity K(K φ → φ), Target takes Def4 only as a sufficient hypothesis for refuting K(K(∼p) ↔ p) and does not establish that K(K φ → φ) is necessary.\"\n    }\n  ],\n  \"summary\": \"Target proves a valid and more general propositional modal theorem (∀ p, 𝓢 ⊢ ∼K(K(∼p) 🡘 p) from Def1–Def4), but it is divergent from [P-A4] because it cannot express Reinhardt's schema, Turing-machine indices W_e, or the quantified epistemic instantiation steps that link an instance of Reinhardt's schema to K(K(∼p) 🡘 p). Consequently, the Lean statement establishes something materially different from the source claim that an instance of Reinhardt's schema is inconsistent with epistemic arithmetic.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Target omits and cannot express Reinhardt's schema ∃e K ∀x (K φ ↔ x ∈ W_e), the Turing-machine / r.e. predicate W_e, arithmetic, the free-variable condition FV(φ) ⊆ {x}, and the source's claim in [P-A4] that a particular instance of Reinhardt's schema is inconsistent with epistemic arithmetic. Instead, Target states a purely propositional modal schema (∀ p : Fm, 𝓢 ⊢ ∼K (K (∼p) 🡘 p)) that establishes nothing formally about Reinhardt's schema, Turing machines, or computability."
+      },
+      {
+        "severity": "major",
+        "description": "Target omits and cannot express the quantified epistemic logic and diagonalization steps needed to connect the chosen instance ∃e K ∀x (K(x ∉ W_x) ↔ x ∈ W_e) to K(K(∼p) ↔ p)—namely existential elimination on e, universal instantiation x := e inside the scope of the intensional operator K, and necessitation applied to open formulas (moreover, p := 'e ∈ W_e' is an open formula rather than a closed sentence, whereas the setting describes Fm as sentences). Because the entire bridge from Reinhardt's schema to K(K(∼p) ↔ p) remains unformalized, Lean establishes only a propositional modal refutation rather than the inconsistency of an instance of Reinhardt's schema with EA."
+      },
+      {
+        "severity": "minor",
+        "description": "Target generalizes from Epistemic Arithmetic (EA) to arbitrary abstract classical propositional systems 𝓑 and 𝓢 with an operator K satisfying Def1–Def4, omitting arithmetic axioms, S4 positive introspection (K φ → KK φ), and full necessitation for 𝓢 while stating Def4 (K(K φ → φ)) explicitly. Because EA satisfies Def1–Def4 (and Def1 with Def3 implies that 𝓢 extends 𝓑), this is a harmless strengthening."
+      },
+      {
+        "severity": "minor",
+        "description": "Target formalizes the propositional tail of a specific author-supplied instance (φ := 'x ∉ W_x') yielding K(K(∼p) ↔ p), whereas [P-A4] states only that Reinhardt found some inconsistent instance without specifying which instance or this propositional form."
+      },
+      {
+        "severity": "minor",
+        "description": "Relative to [P-A1]'s remark that proofs always involve known factivity K(K φ → φ), Target takes Def4 only as a sufficient hypothesis for refuting K(K(∼p) ↔ p) and does not establish that K(K φ → φ) is necessary."
+      }
+    ],
+    "summary": "Target proves a valid and more general propositional modal theorem (∀ p, 𝓢 ⊢ ∼K(K(∼p) 🡘 p) from Def1–Def4), but it is divergent from [P-A4] because it cannot express Reinhardt's schema, Turing-machine indices W_e, or the quantified epistemic instantiation steps that link an instance of Reinhardt's schema to K(K(∼p) 🡘 p). Consequently, the Lean statement establishes something materially different from the source claim that an instance of Reinhardt's schema is inconsistent with epistemic arithmetic."
+  }
+}

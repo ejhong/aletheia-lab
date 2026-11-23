@@ -1,0 +1,26 @@
+{
+  "id": "S2d",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:38:29Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K → Def3 𝓢 K → Def4 𝓢 K →\n    ∀ p : Fm, 𝓢 ⊢ ∼K (K (∼p) 🡘 p)\n",
+  "usage": [
+    [
+      1396,
+      341
+    ],
+    [
+      2404,
+      763
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines the following proposition. For every choice of types Fm, S₀ and S, connectives and truth and falsehood constants on Fm, and provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S, each of which proves every classical propositional tautology and is closed under modus ponens. For every function K : Fm → Fm, suppose in order that (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K(φ); (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every pair of sentences φ, ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)); (4) for every sentence φ, 𝓢 proves K(φ) 🡒 φ; and (5) for every sentence φ, 𝓢 proves K(K(φ) 🡒 φ). Then for every sentence p, 𝓢 proves ∼(K(K(∼p) 🡘 p)): the negation of K applied to the object-language biconditional between K(∼p) and p. This is provability of a negation, not a claim of unprovability. Neither system is required to be consistent, condition (1) is required only for 𝓑, and no fixed-point hypothesis on p or existence assumption such as Def5 is required.\"}",
+  "translation": "Target defines the following proposition. For every choice of types Fm, S₀ and S, connectives and truth and falsehood constants on Fm, and provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S, each of which proves every classical propositional tautology and is closed under modus ponens. For every function K : Fm → Fm, suppose in order that (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K(φ); (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every pair of sentences φ, ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)); (4) for every sentence φ, 𝓢 proves K(φ) 🡒 φ; and (5) for every sentence φ, 𝓢 proves K(K(φ) 🡒 φ). Then for every sentence p, 𝓢 proves ∼(K(K(∼p) 🡘 p)): the negation of K applied to the object-language biconditional between K(∼p) and p. This is provability of a negation, not a claim of unprovability. Neither system is required to be consistent, condition (1) is required only for 𝓑, and no fixed-point hypothesis on p or existence assumption such as Def5 is required.",
+  "b_raw": "{\n  \"verdict\": \"faithful\",\n  \"divergences\": [],\n  \"summary\": \"Under the four hypotheses on K and the inclusion 𝓑 ⪯ 𝓢, the target says exactly that 𝓢 proves ¬K(K(¬p) ↔ p) for every sentence p. The outer K applies to the whole biconditional, as in the stated link to Reinhardt’s instance; the lemma does not purport to formalize the schema itself.\"\n}",
+  "judgement": {
+    "verdict": "faithful",
+    "divergences": [],
+    "summary": "Under the four hypotheses on K and the inclusion 𝓑 ⪯ 𝓢, the target says exactly that 𝓢 proves ¬K(K(¬p) ↔ p) for every sentence p. The outer K applies to the whole biconditional, as in the stated link to Reinhardt’s instance; the lemma does not purport to formalize the schema itself."
+  }
+}

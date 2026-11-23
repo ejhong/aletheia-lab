@@ -49,4 +49,37 @@ Dated entries, newest last: what was tried, what happened, what next.
   the consistency of EA_T + WMT to a second Reinhardt paper, the disjunction in EA_T to Reinhardt 1986 (*J. Phil.
   Logic* 15), and the consistency of EA_T + SMT to Carlson 2000. These are Cheng's attributions, not checked
   against the papers. Useful for Stage 2; the Reinhardt papers themselves are still not in hand.
+- 2026-11-23: PR #28 merged with a merge commit; the lab check on `main` passes again.
+- 2026-11-23: Eugene approved Stage 2. Took it as tier 2A. Read Alexander (arXiv:1305.6080v2) in full: it gives
+  Reinhardt's schema, the axioms of epistemic arithmetic, and the remark that every proof that a knower cannot
+  know its own code uses known factivity. That remark set the shape of the stage.
+- Wrote Amendment 2 and pushed it (6e1f93e) before the statement check. Drafted seven statements about an
+  abstract knowledge operator; compiled an exploratory proof of each before each round.
+- Statement check, three rounds, $9.50. Round 1: inclusion of the base was missing (fixed); the proviso in S2b
+  objected to (kept, and S2b′ added to show it is needed); S2d cannot express Reinhardt's schema (now claimed
+  only as a lemma). Added S2e. Round 2: the existential form of S2e was satisfied by contrived choices (made
+  concrete: K is Peano arithmetic's provability predicate). Round 3: clean. One divergence stands, on S2c.
+- Locked `lean/GodelArgument/Statement2.lean` at 02:52 UTC (cddb062). Proofs and non-vacuity instances in
+  `Results2.lean` and `NonVacuity2.lean` (48c66cb); local build passes with warnings as errors; 10 more theorems
+  pass the axiom audit. Stage 2A section added to `RESULTS.md`.
+- The draft statement file was kept under `statement-check/` until the lock, because the lab check treats any
+  `lean/**/Statement*.lean` as something that must already be locked.
+- Not done, and not started: tier 2B (EA and EA_T as real formal systems; Theorem 6 with its quantifier), tier 2C
+  (Penrose's second argument). Reinhardt 1985 and 1986 are still not in hand.
+- 2026-11-23: PR #34 (Stage 2A) merged with a merge commit.
+- 2026-11-23: Eugene supplied Reinhardt 1985 (JSTOR scan). Read pp. 320–332 from the page images; the text layer
+  garbles symbols. Three things followed. (1) A correction: Reinhardt's Theorem 6 (Koellner's Theorem 4) has
+  "no derivability conditions on the system" and defines Con q as ∀x¬(q(x) & q(ng(x))). My claim that the
+  printed theorem lacks a condition on F was wrong; what Koellner's page lacks is that definition. (2) Two
+  confirmations: S2a is case (i) of his Theorem 1, and S2d is the core of his proof of Theorem 5, with the
+  instance ¬U(x,x) that I had guessed. (3) His remarks on which axioms each proof uses agree with the premise
+  table, and add that Theorem 6 uses K4 "very strongly".
+- Wrote Amendment 3 and pushed it (2bcd626) before the check. Stated Reinhardt's Theorem 6 faithfully (S2f) and
+  case (ii) of his Theorem 1 (S2g). Check: two rounds, $3.78; round 1 found the fixed point of S2f assumed in a
+  stronger form than Reinhardt uses; weakened. Locked `Statement3.lean` at 03:30 UTC (ab2dea7); proofs in
+  `Results3.lean` (34e9b07). The proof of S2f follows Reinhardt's, carried out under K throughout.
+- Corrected `RESULTS.md` and the site page, with the correction stated where the wrong claim had been.
+- Lesson for this question: a second-hand theorem statement can drop a definition. Do not "repair" a theorem
+  from a summary; get the primary source first, or mark the repair as a guess. The protocol had said to take the
+  statements from Reinhardt's own papers, and Stage 2A went ahead without them.
 

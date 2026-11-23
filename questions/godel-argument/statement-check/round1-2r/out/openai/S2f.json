@@ -1,0 +1,43 @@
+{
+  "id": "S2f",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T03:17:20Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm) (conF : Fm),\n    Def1 𝓑 K → Def2 𝓑 K → Def6 𝓑 K → 𝓑 ⪯ 𝓢 →\n    Def4 𝓢 K →\n    (∃ s, 𝓑 ⊢ s 🡘 K (F (∼s))) →\n    (∀ σ, 𝓑 ⊢ conF 🡒 ∼(F σ ⋏ F (∼σ))) →\n    (∀ σ, 𝓢 ⊢ K (K σ 🡒 F σ)) →\n    𝓢 ⊢ K (∼K conF)\n",
+  "usage": [
+    [
+      1669,
+      592
+    ],
+    [
+      3070,
+      3027
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every choice of types Fm, S₀, S, of sentence connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S, each proving all classical propositional tautologies and closed under modus ponens. For every pair of functions K, F : Fm → Fm and every sentence conF : Fm, suppose the following hypotheses hold, in order:\\n1. For every sentence φ, if 𝓑 proves φ, then 𝓑 proves K(φ).\\n2. For every sentence φ and every sentence ψ, 𝓑 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)).\\n3. For every sentence φ, 𝓑 proves K(φ) 🡒 K(K(φ)).\\n4. Every sentence provable in 𝓑 is provable in 𝓢.\\n5. For every sentence φ, 𝓢 proves K(K(φ) 🡒 φ).\\n6. There exists a sentence s such that 𝓑 proves the biconditional s 🡘 K(F(∼s)).\\n7. For every sentence σ, 𝓑 proves conF 🡒 ∼(F(σ) ⋏ F(∼σ)).\\n8. For every sentence σ, 𝓢 proves K(K(σ) 🡒 F(σ)).\\nThen 𝓢 proves K(∼K(conF)), that is, K applied to the negation of K(conF). No consistency or soundness of either system is assumed. The sentence conF need not be a designated consistency statement, nor is it assumed provable. Hypothesis 1 is required for 𝓑, not separately for 𝓢; hypotheses 5 and 8 require proofs of the indicated K-applied implications, not separate proofs of the implications inside K.\"}",
+  "translation": "Target is defined to be the following proposition. For every choice of types Fm, S₀, S, of sentence connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any systems 𝓑 : S₀ and 𝓢 : S, each proving all classical propositional tautologies and closed under modus ponens. For every pair of functions K, F : Fm → Fm and every sentence conF : Fm, suppose the following hypotheses hold, in order:\n1. For every sentence φ, if 𝓑 proves φ, then 𝓑 proves K(φ).\n2. For every sentence φ and every sentence ψ, 𝓑 proves K(φ 🡒 ψ) 🡒 (K(φ) 🡒 K(ψ)).\n3. For every sentence φ, 𝓑 proves K(φ) 🡒 K(K(φ)).\n4. Every sentence provable in 𝓑 is provable in 𝓢.\n5. For every sentence φ, 𝓢 proves K(K(φ) 🡒 φ).\n6. There exists a sentence s such that 𝓑 proves the biconditional s 🡘 K(F(∼s)).\n7. For every sentence σ, 𝓑 proves conF 🡒 ∼(F(σ) ⋏ F(∼σ)).\n8. For every sentence σ, 𝓢 proves K(K(σ) 🡒 F(σ)).\nThen 𝓢 proves K(∼K(conF)), that is, K applied to the negation of K(conF). No consistency or soundness of either system is assumed. The sentence conF need not be a designated consistency statement, nor is it assumed provable. Hypothesis 1 is required for 𝓑, not separately for 𝓢; hypotheses 5 and 8 require proofs of the indicated K-applied implications, not separate proofs of the implications inside K.",
+  "b_raw": "{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Let D(s) be the diagonal biconditional s ↔ K(F(∼s)). The source chooses s so that T proves K(D(s)); Lean requires an s such that the base proves D(s) itself. Base necessitation and inclusion give the source's boxed theorem from the Lean hypothesis, but not conversely: a proof of K(D(s)) in the extension need not give an unboxed proof in the base. An arithmetic diagonal lemma can justify the stronger hypothesis in a concrete application, but it is a materially stronger fixed-point requirement in the abstract statement.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The source defines Con q as a specific universally quantified arithmetic sentence. Lean allows any conF from which the base can prove each sentence-code instance separately. This suffices when instantiated with the intended Con q, but neither identifies conF with that sentence nor expresses the universal condition over numbers.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the declared abstraction, F need not come from a single one-free-variable formula q(x), and F(∼s) uses sentence negation directly rather than an arithmetic term ng acting on a code. Lean thus does not express the syntactic setting in which diagonalization supplies the fixed point.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Lean packages the background axioms and their boxed forms using a separate base closed under necessitation and a theorem-inclusion hypothesis. The source states the result for T against its specified axiomatic background, not as a theorem about a pair of abstract systems.\"\n    }\n  ],\n  \"summary\": \"The sentencewise upper-bound hypothesis, the conclusion K(∼K conF), and the use of boxed rather than plain correctness match the source. The main mismatch is the requirement of an unboxed base proof where the source's proof specifies a boxed theorem of T.\"\n}",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Let D(s) be the diagonal biconditional s ↔ K(F(∼s)). The source chooses s so that T proves K(D(s)); Lean requires an s such that the base proves D(s) itself. Base necessitation and inclusion give the source's boxed theorem from the Lean hypothesis, but not conversely: a proof of K(D(s)) in the extension need not give an unboxed proof in the base. An arithmetic diagonal lemma can justify the stronger hypothesis in a concrete application, but it is a materially stronger fixed-point requirement in the abstract statement."
+      },
+      {
+        "severity": "minor",
+        "description": "The source defines Con q as a specific universally quantified arithmetic sentence. Lean allows any conF from which the base can prove each sentence-code instance separately. This suffices when instantiated with the intended Con q, but neither identifies conF with that sentence nor expresses the universal condition over numbers."
+      },
+      {
+        "severity": "minor",
+        "description": "In the declared abstraction, F need not come from a single one-free-variable formula q(x), and F(∼s) uses sentence negation directly rather than an arithmetic term ng acting on a code. Lean thus does not express the syntactic setting in which diagonalization supplies the fixed point."
+      },
+      {
+        "severity": "minor",
+        "description": "Lean packages the background axioms and their boxed forms using a separate base closed under necessitation and a theorem-inclusion hypothesis. The source states the result for T against its specified axiomatic background, not as a theorem about a pair of abstract systems."
+      }
+    ],
+    "summary": "The sentencewise upper-bound hypothesis, the conclusion K(∼K conF), and the use of boxed rather than plain correctness match the source. The main mismatch is the requirement of an unboxed base proof where the source's proof specifies a boxed theorem of T."
+  }
+}

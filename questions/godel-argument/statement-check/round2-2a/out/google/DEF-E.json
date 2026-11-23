@@ -1,0 +1,35 @@
+{
+  "id": "DEF-E",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:37:00Z",
+  "target": "def Target (𝓑 : S₀) (K : Fm → Fm) : Prop := ∀ φ, 𝓑 ⊢ φ → 𝓑 ⊢ K φ\n",
+  "usage": [
+    [
+      1186,
+      1622
+    ],
+    [
+      2248,
+      7757
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Given a type of sentences `Fm`, a type of proof systems `S₀` equipped with a provability relation `⊢` on `Fm` (via `[Entailment S₀ Fm]`), a proof system `𝓑 : S₀`, and an arbitrary function `K : Fm → Fm`, `Target 𝓑 K` defines the proposition: for every sentence `φ : Fm`, if `𝓑` proves `φ`, then `𝓑` proves `K φ` (that is, `∀ φ : Fm, (𝓑 ⊢ φ) → (𝓑 ⊢ K φ)`). The implication is meta-level rather than the formal connective `🡒`, and both provability claims are with respect to the same system `𝓑`. No other hypotheses or structure are used or required: although `LogicalConnective Fm`, `LogicalNeutral Fm`, `S`, and `Entailment S Fm` appear in the preceding `variable` line, `Target` does not reference them, does not assume that `𝓑` is classical or consistent, does not impose any conditions on `K`, and does not require the converse (`𝓑 ⊢ K φ` implying `𝓑 ⊢ φ`).\"}",
+  "translation": "Given a type of sentences `Fm`, a type of proof systems `S₀` equipped with a provability relation `⊢` on `Fm` (via `[Entailment S₀ Fm]`), a proof system `𝓑 : S₀`, and an arbitrary function `K : Fm → Fm`, `Target 𝓑 K` defines the proposition: for every sentence `φ : Fm`, if `𝓑` proves `φ`, then `𝓑` proves `K φ` (that is, `∀ φ : Fm, (𝓑 ⊢ φ) → (𝓑 ⊢ K φ)`). The implication is meta-level rather than the formal connective `🡒`, and both provability claims are with respect to the same system `𝓑`. No other hypotheses or structure are used or required: although `LogicalConnective Fm`, `LogicalNeutral Fm`, `S`, and `Entailment S Fm` appear in the preceding `variable` line, `Target` does not reference them, does not assume that `𝓑` is classical or consistent, does not impose any conditions on `K`, and does not require the converse (`𝓑 ⊢ K φ` implying `𝓑 ⊢ φ`).",
+  "b_raw": "```json\n{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the source passages (Koellner §§II.3–II.4 and Alexander §2, Definition 3), EA is defined concretely by the axioms of PA in L_EA, the epistemic axiom schemata K1–K4 (E1–E4), and the K-prefixed axioms, from which the necessitation rule (EA ⊢ φ implies EA ⊢ Kφ) is derived rather than stated directly. The Lean definition instead abstracts EA to an arbitrary proof system 𝓑 and arbitrary function K, stating the derived rule directly as a standalone predicate/hypothesis without modelling EA's axiomatization or deriving the rule from it (as acknowledged in the claim).\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"In the source passages, K is an operator on arbitrary formulas of the first-order language L_EA (which may contain free variables, with axioms given as universal closures), whereas Target quantifies φ over an abstract type Fm representing sentences only, without modelling quantifiers, free variables, or the syntax of L_EA (a declared limitation of the abstract setting).\"\n    }\n  ],\n  \"summary\": \"Target faithfully formalizes the derived necessitation rule of epistemic arithmetic ('if 𝓑 proves φ, then 𝓑 proves K φ') as a meta-level implication for the base system 𝓑 alone, with minor caveats arising from abstracting EA and L_EA to an arbitrary sentence type and entailment system without reproducing the derivation from the source axioms.\"\n}\n```",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "In the source passages (Koellner §§II.3–II.4 and Alexander §2, Definition 3), EA is defined concretely by the axioms of PA in L_EA, the epistemic axiom schemata K1–K4 (E1–E4), and the K-prefixed axioms, from which the necessitation rule (EA ⊢ φ implies EA ⊢ Kφ) is derived rather than stated directly. The Lean definition instead abstracts EA to an arbitrary proof system 𝓑 and arbitrary function K, stating the derived rule directly as a standalone predicate/hypothesis without modelling EA's axiomatization or deriving the rule from it (as acknowledged in the claim)."
+      },
+      {
+        "severity": "minor",
+        "description": "In the source passages, K is an operator on arbitrary formulas of the first-order language L_EA (which may contain free variables, with axioms given as universal closures), whereas Target quantifies φ over an abstract type Fm representing sentences only, without modelling quantifiers, free variables, or the syntax of L_EA (a declared limitation of the abstract setting)."
+      }
+    ],
+    "summary": "Target faithfully formalizes the derived necessitation rule of epistemic arithmetic ('if 𝓑 proves φ, then 𝓑 proves K φ') as a meta-level implication for the base system 𝓑 alone, with minor caveats arising from abstracting EA and L_EA to an arbitrary sentence type and entailment system without reproducing the derivation from the source axioms."
+  }
+}

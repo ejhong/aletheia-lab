@@ -1,0 +1,16 @@
+{
+  "id": "DEF-G",
+  "decoy": false,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:24:09Z",
+  "target": "def Target (𝓑 : S₀) (F : Fm → Fm) : Prop := ∃ ψ, 𝓑 ⊢ ψ 🡘 ∼F ψ\n",
+  "usage": [
+    [
+      1035,
+      1480
+    ]
+  ],
+  "a_raw": "{\"translation\": \"`Target` defines a proposition taking a proof system `𝓑 : S₀` and a function `F : Fm → Fm` (implicitly parameterized by a type of sentences `Fm` equipped with logical connectives and a type of proof systems `S₀` equipped with an entailment relation on `Fm`). It asserts that there exists a sentence `ψ : Fm` such that `𝓑` proves the formal biconditional `ψ 🡘 ∼(F ψ)`, i.e., `𝓑 ⊢ (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ)`, equating `ψ` with the formal negation of `F` applied to `ψ`. No extra hypotheses are placed on `𝓑` (such as classical propositional logic, modus ponens, or consistency) or on `F` (which is an arbitrary function `Fm → Fm`); uniqueness of `ψ` is not required, `S` and `Def1`–`Def4` are not involved, and the existence of `ψ` is asserted only for the particular given `𝓑` and `F`.\"}",
+  "translation": "`Target` defines a proposition taking a proof system `𝓑 : S₀` and a function `F : Fm → Fm` (implicitly parameterized by a type of sentences `Fm` equipped with logical connectives and a type of proof systems `S₀` equipped with an entailment relation on `Fm`). It asserts that there exists a sentence `ψ : Fm` such that `𝓑` proves the formal biconditional `ψ 🡘 ∼(F ψ)`, i.e., `𝓑 ⊢ (ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ)`, equating `ψ` with the formal negation of `F` applied to `ψ`. No extra hypotheses are placed on `𝓑` (such as classical propositional logic, modus ponens, or consistency) or on `F` (which is an arbitrary function `Fm → Fm`); uniqueness of `ψ` is not required, `S` and `Def1`–`Def4` are not involved, and the existence of `ψ` is asserted only for the particular given `𝓑` and `F`."
+}

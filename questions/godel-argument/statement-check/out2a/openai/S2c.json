@@ -1,0 +1,43 @@
+{
+  "id": "S2c",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:37:20Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K → Def3 𝓢 K → Def4 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (K φ 🡘 F φ)) →\n    𝓢 ⊢ ⊥\n",
+  "usage": [
+    [
+      1411,
+      370
+    ],
+    [
+      2718,
+      2304
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, of logical connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any 𝓑 : S₀ and 𝓢 : S, each proving every classical propositional tautology and closed under modus ponens. For every pair of functions K, F : Fm → Fm, if (1) for every sentence φ, whenever 𝓑 proves φ, 𝓑 proves K φ; (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every sentence φ and every sentence ψ, 𝓢 proves the sentence K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (4) for every sentence φ, 𝓢 proves K φ 🡒 φ; (5) for every sentence φ, 𝓢 proves K (K φ 🡒 φ); (6) there exists a sentence ψ such that 𝓑 proves ψ 🡘 ∼(F ψ); and (7) for every sentence φ, 𝓢 proves K ((K φ) 🡘 (F φ)), then 𝓢 proves ⊥. Here 🡘 denotes the conjunction of the two object-language implications. In (7) the outer K applies to the entire biconditional; the hypothesis is not just provability of the biconditional itself. No consistency assumption is made on either system, and the closure rule in (1) is required of 𝓑, not of 𝓢.\"}",
+  "translation": "Target is defined to be the following proposition. For every choice of types Fm, S₀ and S, of logical connectives and truth and falsehood constants on Fm, and of provability relations for S₀ and S on Fm, take any 𝓑 : S₀ and 𝓢 : S, each proving every classical propositional tautology and closed under modus ponens. For every pair of functions K, F : Fm → Fm, if (1) for every sentence φ, whenever 𝓑 proves φ, 𝓑 proves K φ; (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every sentence φ and every sentence ψ, 𝓢 proves the sentence K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (4) for every sentence φ, 𝓢 proves K φ 🡒 φ; (5) for every sentence φ, 𝓢 proves K (K φ 🡒 φ); (6) there exists a sentence ψ such that 𝓑 proves ψ 🡘 ∼(F ψ); and (7) for every sentence φ, 𝓢 proves K ((K φ) 🡘 (F φ)), then 𝓢 proves ⊥. Here 🡘 denotes the conjunction of the two object-language implications. In (7) the outer K applies to the entire biconditional; the hypothesis is not just provability of the biconditional itself. No consistency assumption is made on either system, and the closure rule in (1) is required of 𝓑, not of 𝓢.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The same F occurs in every instance, and the outer K covers the whole biconditional. But the quantification over instances is in Lean: separate theorems K(Kφ ↔ Fφ) are not a single assertion of known equality. The target does not express ∃e K(K = F_e) or assert that the scheme is equivalent to it.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The base and extension are specified by proof-theoretic hypotheses, including base necessitation and inclusion of base theorems, rather than by the actual theories EA and EA_T. There is no object-language arithmetic, quantification, Gödel coding, or EA_T truth predicate.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"F acts directly on sentences and need not represent membership in any machine's output set. In place of arithmetic diagonalization for such a predicate, the target expressly assumes a sentence ψ for which the base proves ψ ↔ ¬Fψ. This generalizes the conditional without identifying an actual machine.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Alexander states model satisfaction of the scheme; the target uses provability of its instances in the system whose inconsistency is at issue. It borrows the form of Alexander's scheme, not a claim that his model satisfies known factivity.\"\n    }\n  ],\n  \"summary\": \"The target matches the advertised fixed-F, sentence-by-sentence claim: with factivity, known factivity, and the other stated hypotheses, the scheme implies that the system proves falsehood. It is not a direct formalization of the single-sentence SSMT theorem in EA_T.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The same F occurs in every instance, and the outer K covers the whole biconditional. But the quantification over instances is in Lean: separate theorems K(Kφ ↔ Fφ) are not a single assertion of known equality. The target does not express ∃e K(K = F_e) or assert that the scheme is equivalent to it."
+      },
+      {
+        "severity": "minor",
+        "description": "The base and extension are specified by proof-theoretic hypotheses, including base necessitation and inclusion of base theorems, rather than by the actual theories EA and EA_T. There is no object-language arithmetic, quantification, Gödel coding, or EA_T truth predicate."
+      },
+      {
+        "severity": "minor",
+        "description": "F acts directly on sentences and need not represent membership in any machine's output set. In place of arithmetic diagonalization for such a predicate, the target expressly assumes a sentence ψ for which the base proves ψ ↔ ¬Fψ. This generalizes the conditional without identifying an actual machine."
+      },
+      {
+        "severity": "minor",
+        "description": "Alexander states model satisfaction of the scheme; the target uses provability of its instances in the system whose inconsistency is at issue. It borrows the form of Alexander's scheme, not a claim that his model satisfies known factivity."
+      }
+    ],
+    "summary": "The target matches the advertised fixed-F, sentence-by-sentence claim: with factivity, known factivity, and the other stated hypotheses, the scheme implies that the system proves falsehood. It is not a direct formalization of the single-sentence SSMT theorem in EA_T."
+  }
+}

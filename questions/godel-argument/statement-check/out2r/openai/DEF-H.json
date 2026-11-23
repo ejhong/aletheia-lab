@@ -1,0 +1,35 @@
+{
+  "id": "DEF-H",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T03:17:20Z",
+  "target": "def Target (𝓑 : S₀) (K : Fm → Fm) : Prop := ∀ φ, 𝓑 ⊢ K φ 🡒 K (K φ)\n",
+  "usage": [
+    [
+      1424,
+      240
+    ],
+    [
+      2105,
+      693
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For any sentence type Fm with the given connectives and constants, any system type S₀ with a provability relation on Fm, any system 𝓑 of type S₀, and any function K from Fm to Fm, Target(𝓑, K) is defined to mean that for every sentence φ, 𝓑 proves the object-language implication (K φ) 🡒 K(K φ). It is the implication itself that must be provable for each φ; there is no premise that 𝓑 proves φ or K φ, and neither the antecedent nor the consequent is required to be separately provable. No classicality or consistency assumption on 𝓑 is made.\"}",
+  "translation": "For any sentence type Fm with the given connectives and constants, any system type S₀ with a provability relation on Fm, any system 𝓑 of type S₀, and any function K from Fm to Fm, Target(𝓑, K) is defined to mean that for every sentence φ, 𝓑 proves the object-language implication (K φ) 🡒 K(K φ). It is the implication itself that must be provable for each φ; there is no premise that 𝓑 proves φ or K φ, and neither the antecedent nor the consequent is required to be separately provable. No classicality or consistency assumption on 𝓑 is made.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The target uses an abstract sentence type and operator rather than Reinhardt’s arithmetic formulas with the constructor B. It therefore does not represent the universal closures of instances in which p has free variables.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The target requires each instance to be provable in 𝓑, without distinguishing an adopted axiom, as in the passage, from a derived theorem.\"\n    }\n  ],\n  \"summary\": \"For closed sentences, the target faithfully captures the unprefixed schema Bp → BBp: it is the implication itself that 𝓑 must prove. It does not require the optional B prefix.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The target uses an abstract sentence type and operator rather than Reinhardt’s arithmetic formulas with the constructor B. It therefore does not represent the universal closures of instances in which p has free variables."
+      },
+      {
+        "severity": "minor",
+        "description": "The target requires each instance to be provable in 𝓑, without distinguishing an adopted axiom, as in the passage, from a derived theorem."
+      }
+    ],
+    "summary": "For closed sentences, the target faithfully captures the unprefixed schema Bp → BBp: it is the implication itself that 𝓑 must prove. It does not require the optional B prefix."
+  }
+}

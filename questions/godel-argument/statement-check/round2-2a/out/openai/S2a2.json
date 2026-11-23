@@ -1,0 +1,39 @@
+{
+  "id": "S2a2",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:37:31Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K → Def3 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ ∼F ψ\n",
+  "usage": [
+    [
+      1411,
+      431
+    ],
+    [
+      2610,
+      2247
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target defines the following proposition. For every choice of types Fm, S₀ and S, of sentence connectives and truth and falsehood constants on Fm, and of provability relations on Fm for systems of types S₀ and S, take any 𝓑 : S₀ and 𝓢 : S. Assume each system proves all classical propositional tautologies and is closed under modus ponens. For every pair of functions K, F : Fm → Fm, if (1) for every sentence φ, whenever 𝓑 proves φ, 𝓑 proves K φ; (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every sentence φ and every sentence ψ, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (4) for every sentence φ, 𝓢 proves K φ 🡒 φ; (5) there exists a sentence θ such that 𝓑 proves the biconditional θ 🡘 ∼(F θ); and (6) for every sentence φ, 𝓢 proves K applied to the entire implication F φ 🡒 φ, then there exists a sentence ψ such that 𝓢 proves the conjunction (K ψ) ⋏ ∼(F ψ). The conclusion does not require ψ to be the witness θ from (5). Neither system is assumed consistent, and the closure under K in (1) is required of 𝓑, not of 𝓢.\"}",
+  "translation": "Target defines the following proposition. For every choice of types Fm, S₀ and S, of sentence connectives and truth and falsehood constants on Fm, and of provability relations on Fm for systems of types S₀ and S, take any 𝓑 : S₀ and 𝓢 : S. Assume each system proves all classical propositional tautologies and is closed under modus ponens. For every pair of functions K, F : Fm → Fm, if (1) for every sentence φ, whenever 𝓑 proves φ, 𝓑 proves K φ; (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every sentence φ and every sentence ψ, 𝓢 proves K (φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (4) for every sentence φ, 𝓢 proves K φ 🡒 φ; (5) there exists a sentence θ such that 𝓑 proves the biconditional θ 🡘 ∼(F θ); and (6) for every sentence φ, 𝓢 proves K applied to the entire implication F φ 🡒 φ, then there exists a sentence ψ such that 𝓢 proves the conjunction (K ψ) ⋏ ∼(F ψ). The conclusion does not require ψ to be the witness θ from (5). Neither system is assumed consistent, and the closure under K in (1) is required of 𝓑, not of 𝓢.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"𝓑 ⪯ 𝓢 captures inclusion of theorems, but 𝓑 need not be EA. The target instead assumes the properties it uses explicitly: closure under K for theorems of 𝓑, and distribution and factivity of K in 𝓢.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"F need not be represented by a single formula F(x) applied to sentence codes. The diagonal equivalence that EA supplies for such a formula is therefore an explicit hypothesis, Def5, on the chosen function F.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"There is no distinguished arithmetic language L_PA within Fm. The scheme 𝓢 ⊢ K (F φ 🡒 φ) ranges over all of Fm rather than explicitly over arithmetic sentences, and the target does not express the quantified correctness statement K(F ⊆ T) itself.\"\n    }\n  ],\n  \"summary\": \"The conclusion matches the intended consequence: applying factivity in 𝓢 to Theorem 3’s K¬F(⌜ψ⌝) gives ¬F(⌜ψ⌝), while retaining Kψ for the same witness. This is a conditional, provable counterinstance to K ⊆ F, not a proof of F ⊆ K or an unconditional claim about the mind.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "𝓑 ⪯ 𝓢 captures inclusion of theorems, but 𝓑 need not be EA. The target instead assumes the properties it uses explicitly: closure under K for theorems of 𝓑, and distribution and factivity of K in 𝓢."
+      },
+      {
+        "severity": "minor",
+        "description": "F need not be represented by a single formula F(x) applied to sentence codes. The diagonal equivalence that EA supplies for such a formula is therefore an explicit hypothesis, Def5, on the chosen function F."
+      },
+      {
+        "severity": "minor",
+        "description": "There is no distinguished arithmetic language L_PA within Fm. The scheme 𝓢 ⊢ K (F φ 🡒 φ) ranges over all of Fm rather than explicitly over arithmetic sentences, and the target does not express the quantified correctness statement K(F ⊆ T) itself."
+      }
+    ],
+    "summary": "The conclusion matches the intended consequence: applying factivity in 𝓢 to Theorem 3’s K¬F(⌜ψ⌝) gives ¬F(⌜ψ⌝), while retaining Kψ for the same witness. This is a conditional, provable counterinstance to K ⊆ F, not a proof of F ⊆ K or an unconditional claim about the mind."
+  }
+}

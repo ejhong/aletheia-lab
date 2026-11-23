@@ -6,10 +6,10 @@
 #   Also update the "Where things stand" note and the "updated:" date below.
 summary: What exactly does the Lucas–Penrose argument prove, and from which premises?
 dek: What exactly does the Lucas–Penrose argument prove, and from which premises? The plan is to write the argument and its standard replies in Lean 4, so that a proof checker shows which premises carry which conclusion.
-updated: 2026-11-22
+updated: 2026-11-23
 ---
 
-> **Where things stand, 22 November 2026.** Stages 0 and 1 are done. All thirteen locked statements are proved in Lean, using only Lean's three standard axioms. In short: the argument shows a mind is not a machine *it knows to be sound*; it does not show a mind is not a machine. Stage 2, where Penrose's later argument lives, waits for Eugene's decision.
+> **Where things stand, 23 November 2026.** Stages 0 and 1 are done, and so is the first tier of Stage 2. Twenty-two statements are locked and proved in Lean, using only Lean's three standard axioms. In short: the argument shows a mind is not a machine *it knows to be sound*; it does not show a mind is not a machine. With a knowledge operator added, the same thing holds: what carries each result is a reasoner knowing that its own knowledge is true, never whether it is a machine. Penrose's later argument is a further tier, not started.
 
 ## The question
 
@@ -57,13 +57,13 @@ Thin wrappers: Foundation already proves the underlying theorems (their names ar
 - [x] **e. Penrose's argument in halting form** No sound r.e. certifier of non-halting certifies its own diagonal computation. Proved. Checked against *Shadows of the Mind* §2.5 on 23 November, once the pages were in hand: both checkers found it faithful, with minor caveats.
 
 ### Stage 2 · Epistemic arithmetic
-Status: not started
-Condition: Only if Eugene approves it after the Stage 1 report. It would get its own budget.
+Status: in progress
+Condition: Eugene approved it on 23 November 2026. Tier 2A is done, inside the original $50 budget. Tiers 2B and 2C are not started and need his say-so.
 Gate: Each tier gets its own statement check, entered through `amendments.md` before anything in it is proved.
 
 This is where the new work is: theories in which the knower K is an operator with its own axioms (K1–K4), as in Reinhardt's epistemic arithmetic. The targets, as stated in Koellner (2018, Part I), are Reinhardt's Theorem 3 (p. 354), Theorem 5 (p. 355) and Theorem 6 (p. 357). Theorems 7 and 8, consistency results by Reinhardt and by Carlson, are cited, not proved. Statements are to be taken from Reinhardt's own papers, since Koellner's summary is informal in places.
 
-- [ ] **2A, small.** An abstract layer with K1–K4 and diagonalization as hypotheses, then Theorem 3. Plus a refutation of one instance of Reinhardt's schema in a minimal calculus with K; that derivation is the issue author's own and must be checked against Reinhardt (1985) before it is credited to him.
+- [x] **2A, small.** Done 23 November. An abstract layer: K is an operator on sentences, and each principle about it is a stated assumption. Nine statements locked after statement checks, then proved: Reinhardt's theorem that a knower exceeds any system it knows to be sound; his absolute version of the second incompleteness theorem; a sentence-by-sentence counterpart of his result that knowing which system you are is contradictory, with the core of his own proof; and two results showing which assumptions cannot be dropped. Seven were locked before Reinhardt's 1985 paper was in hand. It arrived the same day, corrected one of them, and two more were added from it.
 - [ ] **2B, large.** EA and EA_T as concrete formal systems in Lean, then Theorems 5 and 6 as stated.
 - [ ] **2C, large.** Koellner's Part II (not yet read): DTK and Penrose's new argument, written as a derivation with each unlicensed step isolated as a named hypothesis.
 
@@ -122,11 +122,37 @@ So the argument establishes "not a machine you know to be sound". It does not es
 
 **Limits that qualify the table.**
 
-- Plain arithmetic cannot say "I am this machine" or "I know". Set membership stands in for knowing. One checker judged the second row a stand-in, not a formalization of Gödel's remark; that is right, and the faithful version needs Stage 2.
-- Penrose's second argument (*Shadows of the Mind*, ch. 3) is not covered. That is Stage 2.
+- Plain arithmetic cannot say "I am this machine" or "I know". Set membership stands in for knowing. One checker judged the second row a stand-in, not a formalization of Gödel's remark; that is right. Stage 2A's third row is the version with a knowledge operator.
+- Penrose's second argument (*Shadows of the Mind*, ch. 3) is not covered. That is tier 2C of Stage 2, not started.
 - Gödel's words are quoted through Koellner; that book was not in hand. Penrose's were checked against photographs of pp. 72–77 of *Shadows of the Mind*.
 - Penrose's own conclusion on p. 76 is that mathematicians are not using a "knowably sound algorithm". That is the version the proofs support. He calls the claim that thought is non-computational "the stronger deduction".
 - Nothing here tests whether a person is well modelled as a consistent, logically closed set of statements.
+
+> **Stage 2A, 23 November 2026.** All nine statements are proved. They are about an abstract knowledge operator, not about epistemic arithmetic itself, and this too is no verdict on ORCH-C040.
+
+Add an operator K, read "it is known that". F is any system; it need not be a machine. Then:
+
+- **A knower exceeds any system it knows to be sound.** If it is known, sentence by sentence, that whatever F asserts is so, then something is known that F does not assert.
+- **A knower that knows a system captures all it knows cannot know that system consistent.** Nothing is assumed about F. "Consistent" means that F never asserts a sentence together with its negation. This is Reinhardt's absolute version of the second incompleteness theorem.
+- **A correction.** This page first said that theorem needed an extra condition on F which the literature leaves out. That was wrong. Reinhardt's own paper states it with no condition; what a later summary leaves out is his definition of "consistent". The statement written before his paper was read is still true, but it is a weaker result, not a repair of his.
+- **Knowing which system you are is contradictory.** A logical core of this needs no arithmetic at all, and is the heart of Reinhardt's own proof.
+- **What carries it is knowing that your knowledge is true.** Take K to be "Peano arithmetic proves". It satisfies every other assumption, trivially knows which system it is, and no contradiction arises. A machine's own notion of proof passes every test of a knower here except knowing that what it proves is true.
+
+| Claim | Lean name | Assumptions about K | Other assumptions | Status |
+|---|---|---|---|---|
+| If K(F(φ) → φ) for each φ, then for some ψ: Kψ and K¬F(ψ) | `reinhardtTheorem3` | base known; closed under modus ponens | F has a Gödel sentence | Proved |
+| Then something is known that F does not hold of | `knowerExceedsKnownSoundSystem` | as above, and what is known is so | F has a Gödel sentence | Proved |
+| The same from K(F(φ) → Kφ) for each φ | `reinhardtTheorem1Safe` | base known; closed under modus ponens; known that what is known is so | F has a Gödel sentence | Proved |
+| If K(Kσ → F(σ)) for each σ, then K¬K(Con F), for any F | `reinhardtTheorem6` | base known; closed under modus ponens; what is known is known to be known; known that what is known is so | Con F means F never holds of a sentence and its negation; a known fixed point | Proved; Reinhardt's theorem |
+| A variant with Con F read as "F does not hold of falsehood" | `absoluteSecondIncompleteness` | base known; closed under modus ponens; known that what is known is so | the second incompleteness theorem holds for F, provably | Proved; the lab's own, weaker |
+| In that variant the extra condition cannot be dropped | `secondIncompletenessProvisoCannotBeDropped` | none: it exhibits a system | none | Proved |
+| If K(Kφ ↔ F(φ)) for each φ, a contradiction follows | `knowingWhichSystemIsContradictory` | all four | F has a Gödel sentence | Proved; a counterpart of Reinhardt's result by another route |
+| For no p is it known that p holds exactly when ¬p is known | `noKnownSelfDiagonal` | all four | none | Proved; the core of Reinhardt's own proof |
+| "Known that what is known is so" cannot be dropped: "Peano arithmetic proves" satisfies the rest | `knownFactivityCannotBeDropped` | none: it names a system | none | Proved |
+
+**How it was checked.** As in Stage 1. The checks ran before each lock and changed the statements three times. Both checkers caught all six planted errors. One divergence stands: Google's model judged the "contradiction follows" row weaker than Reinhardt's theorem, because it works sentence by sentence for a fixed F and has no quantifier over machines inside the language. That is right, and closing the gap is tier 2B.
+
+**Limits.** The layer is abstract: facts the literature derives from arithmetic are assumed here, and nothing with a quantifier inside the language is expressed. Reinhardt's 1985 paper was read only after the first seven statements were locked; his other papers were not read.
 
 Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/questions/godel-argument/RESULTS.md). Proofs: [`lean/GodelArgument/`](https://github.com/ejhong/aletheia-lab/tree/main/questions/godel-argument/lean/GodelArgument). Cost: $12.38, all on the statement check.
 
@@ -137,10 +163,16 @@ Full report: [`RESULTS.md`](https://github.com/ejhong/aletheia-lab/blob/main/que
 - Koellner, "On the Question of Whether the Mind Can Be Mechanized, I: From Gödel to Penrose", *Journal of Philosophy* 115(7) (2018) 337–360. Formal content at pp. 349–359: axioms K1–K4 (p. 352), EA and EA_T (p. 353), Theorems 3–8 (pp. 354–358). The copy read was a course-hosted PDF of the published article; the protocol needs a properly sourced copy.
 - Alexander, "A machine that knows its own code", *Studia Logica* 102(3) (2014) 567–576, [arXiv:1305.6080](https://arxiv.org/abs/1305.6080). Read through a fetch sub-agent's report of the arXiv HTML.
 
+#### Read on 23 November 2026
+
+- Penrose, *Shadows of the Mind* (1994), pp. 72–77, from photographs of the printed book supplied by Eugene.
+- Alexander, "A machine that knows its own code", [arXiv:1305.6080v2](https://arxiv.org/abs/1305.6080v2), read in full from the PDF.
+- Cheng, "Gödel's incompleteness theorem and the Anti-Mechanist Argument: revisited", [arXiv:1902.05902v2](https://arxiv.org/abs/1902.05902v2). Used for attributions only.
+- Reinhardt, "Absolute Versions of Incompleteness Theorems", *Noûs* 19(3) (1985) 317–346, [JSTOR](https://www.jstor.org/stable/2214945), pp. 320–332, from a scan supplied by Eugene.
+
 #### Bibliographic details verified, text not read
 
 - Koellner, "II: Penrose's New Argument", *Journal of Philosophy* 115(9) (2018) 453–484.
-- Reinhardt, "Absolute Versions of Incompleteness Theorems", *Noûs* 19(3) (1985) 317–346.
 - Reinhardt, "The Consistency of a Variant of Church's Thesis with an Axiomatic Theory of an Epistemic Notion", *Revista Colombiana de Matemáticas* 19(1–2) (1985) 177–200.
 - Reinhardt, "Epistemic Theories and the Interpretation of Gödel's Incompleteness Theorems", *Journal of Philosophical Logic* 15(4) (1986) 427–474.
 - Carlson, "Knowledge, Machines, and the Consistency of Reinhardt's Strong Mechanistic Thesis", *Annals of Pure and Applied Logic* 105(1–3) (2000) 51–82.

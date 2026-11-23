@@ -1,0 +1,39 @@
+{
+  "id": "X7",
+  "decoy": true,
+  "vendor": "google",
+  "model": "gemini-4-neon",
+  "time": "2026-11-23T02:42:13Z",
+  "target": "def Target : Prop :=\n  ∃ (𝓢 : ArithmeticTheory) (K F : ArithmeticSentence → ArithmeticSentence),\n    Def1 (𝗣𝗔 : ArithmeticTheory) K ∧ (𝗣𝗔 : ArithmeticTheory) ⪯ 𝓢 ∧\n    Def2 𝓢 K ∧ Def3 𝓢 K ∧ Def4 𝓢 K ∧\n    Def5 (𝗣𝗔 : ArithmeticTheory) F ∧\n    (∀ φ, 𝓢 ⊢ K (K φ 🡘 F φ)) ∧\n    (∃ p, 𝓢 ⊢ K (K (∼p) 🡘 p)) ∧\n    Entailment.Consistent 𝓢\n",
+  "usage": [
+    [
+      1327,
+      3745
+    ],
+    [
+      2576,
+      12313
+    ]
+  ],
+  "a_raw": "{\"translation\": \"Target is the proposition asserting that there exist an arithmetic theory 𝓢 (a set of closed formulas of first-order arithmetic, with derivability in classical first-order logic) and two arbitrary functions K and F from arithmetic sentences to arithmetic sentences such that all nine of the following conditions hold simultaneously: (1) for every arithmetic sentence φ, if Peano arithmetic (𝗣𝗔) proves φ, then 𝗣𝗔 proves K φ; (2) every arithmetic sentence provable in 𝗣𝗔 is provable in 𝓢; (3) for all arithmetic sentences φ and ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (4) for every arithmetic sentence φ, 𝓢 proves K φ 🡒 φ; (5) for every arithmetic sentence φ, 𝓢 proves K(K φ 🡒 φ); (6) there exists an arithmetic sentence ψ such that 𝗣𝗔 proves ψ 🡘 ∼(F ψ); (7) for every arithmetic sentence φ, 𝓢 proves K(K φ 🡘 F φ); (8) there exists an arithmetic sentence p such that 𝓢 proves K(K(∼p) 🡘 p); and (9) 𝓢 is consistent, i.e., 𝓢 does not prove every arithmetic sentence. Here 🡒, ∼, and 🡘 (abbreviating the conjunction of both implications) are connectives inside the formal language of first-order arithmetic. Notice what is and is not required: K and F are completely arbitrary functions on sentences and need not be represented by arithmetic formulas; 𝓢 need not be effective or contain 𝗣𝗔 as a subset of axioms, only prove everything 𝗣𝗔 proves; condition (1) (closure under K) is required only for 𝗣𝗔, not for 𝓢; condition (6) asserts the existence of a single sentence ψ for F in 𝗣𝗔; and in condition (8) the negation is applied to p inside the inner application of K, i.e., K(∼p) 🡘 p inside K(...).\"}",
+  "translation": "Target is the proposition asserting that there exist an arithmetic theory 𝓢 (a set of closed formulas of first-order arithmetic, with derivability in classical first-order logic) and two arbitrary functions K and F from arithmetic sentences to arithmetic sentences such that all nine of the following conditions hold simultaneously: (1) for every arithmetic sentence φ, if Peano arithmetic (𝗣𝗔) proves φ, then 𝗣𝗔 proves K φ; (2) every arithmetic sentence provable in 𝗣𝗔 is provable in 𝓢; (3) for all arithmetic sentences φ and ψ, 𝓢 proves K(φ 🡒 ψ) 🡒 (K φ 🡒 K ψ); (4) for every arithmetic sentence φ, 𝓢 proves K φ 🡒 φ; (5) for every arithmetic sentence φ, 𝓢 proves K(K φ 🡒 φ); (6) there exists an arithmetic sentence ψ such that 𝗣𝗔 proves ψ 🡘 ∼(F ψ); (7) for every arithmetic sentence φ, 𝓢 proves K(K φ 🡘 F φ); (8) there exists an arithmetic sentence p such that 𝓢 proves K(K(∼p) 🡘 p); and (9) 𝓢 is consistent, i.e., 𝓢 does not prove every arithmetic sentence. Here 🡒, ∼, and 🡘 (abbreviating the conjunction of both implications) are connectives inside the formal language of first-order arithmetic. Notice what is and is not required: K and F are completely arbitrary functions on sentences and need not be represented by arithmetic formulas; 𝓢 need not be effective or contain 𝗣𝗔 as a subset of axioms, only prove everything 𝗣𝗔 proves; condition (1) (closure under K) is required only for 𝗣𝗔, not for 𝓢; condition (6) asserts the existence of a single sentence ψ for F in 𝗣𝗔; and in condition (8) the negation is applied to p inside the inner application of K, i.e., K(∼p) 🡘 p inside K(...).",
+  "b_raw": "```json\n{\n  \"verdict\": \"divergent\",\n  \"divergences\": [\n    {\n      \"severity\": \"major\",\n      \"description\": \"Target includes `Def4 𝓢 K` (`∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)`), i.e. known factivity, directly contradicting both the source passages ([P-A1], [P-A12])—which state that knowing one's own code requires dropping known factivity—and the author's claim that known factivity is the one hypothesis left out. Worse, including `Def4 𝓢 K` makes `Target` mathematically false: from the Gödel sentence `ψ` in `Def5 𝗣𝗔 F` together with `Def1 𝗣𝗔 K`, `𝗣𝗔 ⪯ 𝓢`, `Def2 𝓢 K`, `Def4 𝓢 K`, and `∀ φ, 𝓢 ⊢ K (K φ 🡘 F φ)`, `𝓢` derives both `K (∼K ψ)` and `K ψ`, and by `Def3 𝓢 K` derives `∼K ψ`, contradicting `Entailment.Consistent 𝓢`.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Relative to the source passages ([P-A1], [P-A12], [P-K357]), `Target` abstracts away mechanical/computability structure and epistemic arithmetic: `K` and `F` are arbitrary meta-level functions on `ArithmeticSentence` rather than an epistemic operator in an expanded language and an r.e. predicate `⌜φ⌝ ∈ W_m` (or Turing machine `F_e`), `𝓢` is an arbitrary consistent arithmetic theory rather than a mechanical agent or structure satisfying the full axioms of epistemic arithmetic mod factivity, and diagonalization for `F` is replaced by the explicit hypothesis `Def5 𝗣𝗔 F`. (The author's claim explicitly acknowledges that these aspects of Alexander's theorem are not modelled.)\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"`Target` adds the conjunct `∃ p, 𝓢 ⊢ K (K (∼p) 🡘 p)`, which is mentioned in the author's claim but does not appear in any of the source passages ([P-A1], [P-A12], [P-K357]).\"\n    }\n  ],\n  \"summary\": \"The Lean formalization is divergent because it erroneously includes `Def4 𝓢 K` (known factivity) in `Target`, directly contradicting both Alexander's point and the author's claim that known factivity is omitted, and rendering `Target` provably false.\"\n}\n```",
+  "judgement": {
+    "verdict": "divergent",
+    "divergences": [
+      {
+        "severity": "major",
+        "description": "Target includes `Def4 𝓢 K` (`∀ φ, 𝓢 ⊢ K (K φ 🡒 φ)`), i.e. known factivity, directly contradicting both the source passages ([P-A1], [P-A12])—which state that knowing one's own code requires dropping known factivity—and the author's claim that known factivity is the one hypothesis left out. Worse, including `Def4 𝓢 K` makes `Target` mathematically false: from the Gödel sentence `ψ` in `Def5 𝗣𝗔 F` together with `Def1 𝗣𝗔 K`, `𝗣𝗔 ⪯ 𝓢`, `Def2 𝓢 K`, `Def4 𝓢 K`, and `∀ φ, 𝓢 ⊢ K (K φ 🡘 F φ)`, `𝓢` derives both `K (∼K ψ)` and `K ψ`, and by `Def3 𝓢 K` derives `∼K ψ`, contradicting `Entailment.Consistent 𝓢`."
+      },
+      {
+        "severity": "minor",
+        "description": "Relative to the source passages ([P-A1], [P-A12], [P-K357]), `Target` abstracts away mechanical/computability structure and epistemic arithmetic: `K` and `F` are arbitrary meta-level functions on `ArithmeticSentence` rather than an epistemic operator in an expanded language and an r.e. predicate `⌜φ⌝ ∈ W_m` (or Turing machine `F_e`), `𝓢` is an arbitrary consistent arithmetic theory rather than a mechanical agent or structure satisfying the full axioms of epistemic arithmetic mod factivity, and diagonalization for `F` is replaced by the explicit hypothesis `Def5 𝗣𝗔 F`. (The author's claim explicitly acknowledges that these aspects of Alexander's theorem are not modelled.)"
+      },
+      {
+        "severity": "minor",
+        "description": "`Target` adds the conjunct `∃ p, 𝓢 ⊢ K (K (∼p) 🡘 p)`, which is mentioned in the author's claim but does not appear in any of the source passages ([P-A1], [P-A12], [P-K357])."
+      }
+    ],
+    "summary": "The Lean formalization is divergent because it erroneously includes `Def4 𝓢 K` (known factivity) in `Target`, directly contradicting both Alexander's point and the author's claim that known factivity is omitted, and rendering `Target` provably false."
+  }
+}

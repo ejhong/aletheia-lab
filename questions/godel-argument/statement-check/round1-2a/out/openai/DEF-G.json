@@ -1,0 +1,16 @@
+{
+  "id": "DEF-G",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T02:23:18Z",
+  "target": "def Target (𝓑 : S₀) (F : Fm → Fm) : Prop := ∃ ψ, 𝓑 ⊢ ψ 🡘 ∼F ψ\n",
+  "usage": [
+    [
+      1060,
+      205
+    ]
+  ],
+  "a_raw": "{\"translation\":\"For any sentence type `Fm` with the given logical connectives and constants and any system type `S₀` with a provability relation on `Fm`, fix a system `𝓑 : S₀` and a function `F : Fm → Fm`. `Target 𝓑 F` means that there exists a sentence ψ such that 𝓑 proves the single sentence `(ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ)`. The witness ψ may depend on 𝓑 and F; it need not be unique. This requires a provable object-language biconditional, not equality of ψ and ∼(F ψ), and it does not require 𝓑 to prove either side on its own. No classicality or consistency assumption on 𝓑, other system 𝓢, function K, or condition Def1–Def4 is required.\"}",
+  "translation": "For any sentence type `Fm` with the given logical connectives and constants and any system type `S₀` with a provability relation on `Fm`, fix a system `𝓑 : S₀` and a function `F : Fm → Fm`. `Target 𝓑 F` means that there exists a sentence ψ such that 𝓑 proves the single sentence `(ψ 🡒 ∼(F ψ)) ⋏ (∼(F ψ) 🡒 ψ)`. The witness ψ may depend on 𝓑 and F; it need not be unique. This requires a provable object-language biconditional, not equality of ψ and ∼(F ψ), and it does not require 𝓑 to prove either side on its own. No classicality or consistency assumption on 𝓑, other system 𝓢, function K, or condition Def1–Def4 is required."
+}
