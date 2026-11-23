@@ -3,6 +3,8 @@ title: Ancient crossings
 summary: If people crossed the oceans long before history says they did, their descendants should turn up in ancient DNA on the far shore. Do they?
 questions: 31, 41, 32, 45
 order: 3
+image: ancient-crossings
+image_alt: An engraving of a double-hulled voyaging canoe on the open ocean at night under the Milky Way.
 updated: 2026-11-23
 ---
 

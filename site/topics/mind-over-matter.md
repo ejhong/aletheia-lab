@@ -3,6 +3,8 @@ title: Mind over matter
 summary: Can minds affect the physical world, or know things at a distance? The claims rest on long-running experiments with public data, which can be tested afresh.
 questions: 47, 74, 46
 order: 4
+image: mind-over-matter
+image_alt: An engraving of a globe dotted with tiny lanterns joined by threads, with a coin spinning in the air above it.
 updated: 2026-11-23
 ---
 

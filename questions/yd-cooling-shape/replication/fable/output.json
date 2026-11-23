@@ -1,0 +1,95 @@
+{
+ "pools": {
+  "60kyr": 19,
+  "100kyr": 25,
+  "40kyr": 10
+ },
+ "abrupt_60": {
+  "GS-1": 0.927,
+  "rank": 17,
+  "n": 19,
+  "median_others": 1.941,
+  "iqr_others": [
+   1.339,
+   2.655
+  ],
+  "top10_cut": 1
+ },
+ "amp_temp": {
+  "GS-1": 5.005,
+  "rank": 9,
+  "n": 25,
+  "median_others": 3.51,
+  "iqr_others": [
+   2.658,
+   5.527
+  ],
+  "top10_cut": 2
+ },
+ "dust_jump": {
+  "GS-1": 1.137,
+  "rank": 10,
+  "n": 25,
+  "median_others": 1.053,
+  "iqr_others": [
+   0.809,
+   1.249
+  ],
+  "top10_cut": 2
+ },
+ "dust_abrupt_60": {
+  "GS-1": 0.123,
+  "rank": 25,
+  "n": 25,
+  "median_others": 0.802,
+  "iqr_others": [
+   0.635,
+   0.954
+  ],
+  "top10_cut": 2
+ },
+ "abrupt_temp_60": {
+  "GS-1": 1.713,
+  "rank": 22,
+  "n": 25,
+  "median_others": 3.302,
+  "iqr_others": [
+   2.049,
+   4.52
+  ],
+  "top10_cut": 2
+ },
+ "pre_slope": {
+  "GS-1": 0.93,
+  "rank": 5,
+  "n": 19,
+  "median_others": -0.535,
+  "iqr_others": [
+   -0.91,
+   0.373
+  ],
+  "top10_cut": 1
+ },
+ "ant_cool_mean": {
+  "GS-1": -0.042,
+  "rank": 8,
+  "n": 10,
+  "median_others": 0.097,
+  "iqr_others": [
+   -0.004,
+   0.221
+  ],
+  "top10_cut": 1
+ },
+ "ant_cool_WD": {
+  "GS-1": -0.044,
+  "rank": 10,
+  "n": 10,
+  "median_others": 0.224,
+  "iqr_others": [
+   0.186,
+   0.396
+  ],
+  "top10_cut": 1
+ }
+}
