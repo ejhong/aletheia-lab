@@ -32,14 +32,14 @@ known, sentence by sentence, that whatever is known `F` holds of. Then it is kno
 is not known. Nothing is assumed about `F` itself. `conF` is the consistency statement of `F`; all that is used
 of it is that the base proves, for each sentence `σ`, that if `conF` holds then `F` does not hold of both `σ`
 and `∼σ`. The base is closed under necessitation and proves K2 and K4; factivity enters only in its known
-form. The sentence `s` is a fixed point: the base proves `s` equivalent to "it is known that `F` holds of
+form. The sentence `s` is a fixed point: it is known that `s` is equivalent to "it is known that `F` holds of
 `∼s`". -/
 def ReinhardtTheorem6 : Prop :=
   ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]
     (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm) (conF : Fm),
     ClosedUnderNecessitation 𝓑 K → KnowledgeClosedUnderMP 𝓑 K → KnowledgeSelfReflective 𝓑 K → 𝓑 ⪯ 𝓢 →
     KnowsOwnFactivity 𝓢 K →
-    (∃ s, 𝓑 ⊢ s 🡘 K (F (∼s))) →
+    (∃ s, 𝓢 ⊢ K (s 🡘 K (F (∼s)))) →
     (∀ σ, 𝓑 ⊢ conF 🡒 ∼(F σ ⋏ F (∼σ))) →
     (∀ σ, 𝓢 ⊢ K (K σ 🡒 F σ)) →
     𝓢 ⊢ K (∼K conF)

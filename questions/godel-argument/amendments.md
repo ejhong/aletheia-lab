@@ -252,3 +252,17 @@ An exploratory proof of both draft statements was compiled first (`explore/Stage
 **Still not expressed.** S2f is in the same abstract setting as Stage 2A. Con F is not the quantified sentence
 ∀x¬(q(x) & q(ng(x))) but any sentence with its instances; the fixed point is assumed; quantifiers are absent.
 Reinhardt's Theorems 2 and 3 (with parameters and the Post-Turing thesis) and his B∀ axiom are not touched.
+
+**Check of the Amendment 3 statements, round 1 (2026-11-23), and what changed.** Frozen under
+`statement-check/round1-2r/`. Cost $2.88.
+
+- Planted errors: both checkers caught both.
+- D16, S2g, and the re-comparisons of S2a and S2d with Reinhardt's text: `faithful_with_caveats` from both.
+- S2f: Google `faithful_with_caveats`; OpenAI `divergent`. Its major point: Reinhardt's proof takes a sentence s
+  with T ⊢ B(s ↔ Bq(ng[s])), a known equivalence proved in T, whereas the draft required the base to prove the
+  equivalence itself, which is a stronger assumption.
+
+Response: accepted. The fixed-point hypothesis of S2f is now 𝓢 ⊢ K(s ↔ K(F(¬s))), as in Reinhardt's proof. The
+exploratory proof was redone with the weaker hypothesis and still goes through. Round 2 re-checks S2f and the
+planted error that mimics it; the other items are unchanged.
+

@@ -1,0 +1,43 @@
+{
+  "id": "S2aR",
+  "decoy": false,
+  "vendor": "openai",
+  "model": "gpt-6.2-astra",
+  "time": "2026-11-23T03:17:20Z",
+  "target": "def Target : Prop :=\n  ∀ (Fm S₀ S : Type) [LogicalConnective Fm] [LogicalNeutral Fm] [Entailment S₀ Fm] [Entailment S Fm]\n    (𝓑 : S₀) (𝓢 : S) [Entailment.Cl 𝓑] [Entailment.Cl 𝓢] (K F : Fm → Fm),\n    Def1 𝓑 K → 𝓑 ⪯ 𝓢 → Def2 𝓢 K →\n    Def5 𝓑 F →\n    (∀ φ, 𝓢 ⊢ K (F φ 🡒 φ)) →\n    ∃ ψ, 𝓢 ⊢ K ψ ⋏ K (∼F ψ)\n",
+  "usage": [
+    [
+      1603,
+      379
+    ],
+    [
+      2765,
+      1223
+    ]
+  ],
+  "a_raw": "{\"translation\":\"Target is the following proposition. For every choice of types Fm, S₀ and S, connectives and truth and falsehood constants on Fm, and provability relations on Fm for systems of types S₀ and S, take any 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens. For every pair of functions K, F : Fm → Fm, suppose that (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K φ; (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every φ and χ, 𝓢 proves the sentence K (φ 🡒 χ) 🡒 (K φ 🡒 K χ); (4) there exists a sentence θ such that 𝓑 proves the biconditional θ 🡘 ∼(F θ); and (5) for every φ, 𝓢 proves K ((F φ) 🡒 φ). Then there exists a sentence ψ such that 𝓢 proves the single conjunction (K ψ) ⋏ (K (∼(F ψ))). The conclusion does not require ψ to be the witness θ from (4). Neither system is assumed consistent, and the closure condition in (1) is required of 𝓑, not of 𝓢.\"}",
+  "translation": "Target is the following proposition. For every choice of types Fm, S₀ and S, connectives and truth and falsehood constants on Fm, and provability relations on Fm for systems of types S₀ and S, take any 𝓑 : S₀ and 𝓢 : S that each prove all classical propositional tautologies and are closed under modus ponens. For every pair of functions K, F : Fm → Fm, suppose that (1) for every sentence φ, if 𝓑 proves φ then 𝓑 proves K φ; (2) every sentence provable in 𝓑 is provable in 𝓢; (3) for every φ and χ, 𝓢 proves the sentence K (φ 🡒 χ) 🡒 (K φ 🡒 K χ); (4) there exists a sentence θ such that 𝓑 proves the biconditional θ 🡘 ∼(F θ); and (5) for every φ, 𝓢 proves K ((F φ) 🡒 φ). Then there exists a sentence ψ such that 𝓢 proves the single conjunction (K ψ) ⋏ (K (∼(F ψ))). The conclusion does not require ψ to be the witness θ from (4). Neither system is assumed consistent, and the closure condition in (1) is required of 𝓑, not of 𝓢.",
+  "b_raw": "{\n  \"verdict\": \"faithful_with_caveats\",\n  \"divergences\": [\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The Lean statement ranges over arbitrary sentence types and functions K and F. It does not require K to be the syntactic operator B or F φ to result from substituting the Gödel numeral of φ into a single one-free-variable formula. Object-language arithmetic and quantification are not represented.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"The Lean hypotheses are sufficient conditions extracted from “T includes Q,” not an equivalent rendering of it. 𝓢 need only include the theorems of an abstract classical base, with distribution for K required in 𝓢; neither system is required to contain the specific axioms of Q.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def5 assumes a base-provable fixed point for the chosen F. In the source, availability of that fixed point for every formula F in scope comes from the arithmetical fixed point theorem, not from a separate hypothesis on F.\"\n    },\n    {\n      \"severity\": \"minor\",\n      \"description\": \"Def1 requires necessitation for every theorem of the chosen base. This is a more uniform requirement than the proof remark's cited need for Bp for tautologies and the elementary arithmetic and equality axioms used for the fixed point; it does not impose necessitation on 𝓢.\"\n    }\n  ],\n  \"summary\": \"Within the declared abstraction, the case (i) hypothesis and conclusion match exactly: 𝓢 proves K (F φ → φ) for each φ, and for some ψ it proves the conjunction of K ψ and K (¬F ψ). The caveats concern how the arithmetic setting supplies the premises, not the scope of K or the direction of the claim.\"\n}",
+  "judgement": {
+    "verdict": "faithful_with_caveats",
+    "divergences": [
+      {
+        "severity": "minor",
+        "description": "The Lean statement ranges over arbitrary sentence types and functions K and F. It does not require K to be the syntactic operator B or F φ to result from substituting the Gödel numeral of φ into a single one-free-variable formula. Object-language arithmetic and quantification are not represented."
+      },
+      {
+        "severity": "minor",
+        "description": "The Lean hypotheses are sufficient conditions extracted from “T includes Q,” not an equivalent rendering of it. 𝓢 need only include the theorems of an abstract classical base, with distribution for K required in 𝓢; neither system is required to contain the specific axioms of Q."
+      },
+      {
+        "severity": "minor",
+        "description": "Def5 assumes a base-provable fixed point for the chosen F. In the source, availability of that fixed point for every formula F in scope comes from the arithmetical fixed point theorem, not from a separate hypothesis on F."
+      },
+      {
+        "severity": "minor",
+        "description": "Def1 requires necessitation for every theorem of the chosen base. This is a more uniform requirement than the proof remark's cited need for Bp for tautologies and the elementary arithmetic and equality axioms used for the fixed point; it does not impose necessitation on 𝓢."
+      }
+    ],
+    "summary": "Within the declared abstraction, the case (i) hypothesis and conclusion match exactly: 𝓢 proves K (F φ → φ) for each φ, and for some ψ it proves the conjunction of K ψ and K (¬F ψ). The caveats concern how the arithmetic setting supplies the premises, not the scope of K or the direction of the claim."
+  }
+}
