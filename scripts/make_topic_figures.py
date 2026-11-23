@@ -204,10 +204,10 @@ def younger_dryas():
 # ---------------------------------------------------------------------------------------------------------------------
 def minds():
     tiles("topic-minds-and-machines", [
-        ("2", "famous arguments about minds, written out in Lean 4 and checked line by line", False),
-        ("68", "statements fixed in advance, read by outside models, then proved", False),
-        ("1", "assumption carries each argument once it is written out in full", False),
-        ("Both smaller", "than their slogans: each proves something real, and less than is claimed for it", True)])
+        ("4", "studies so far: two famous arguments checked in Lean 4, and two tests of Penrose and Hameroff's microtubule anaesthesia claim", False),
+        ("68", "formal statements checked line by line across Penrose's argument and the unfolding argument", False),
+        ("96.2%", "of 315 gas–protein pairs follow textbook two-oscillator level repulsion around 613 THz — no microtubule biology required", False),
+        ("Less than claimed", "both proofs prove less than their slogans, docking cannot tell targets apart, and the 613 THz shift breaks down", True)])
     scorecard("topic-minds-and-machines", "scorecard", "What each study tested and found",
               ["The claim", "What it says", "What we found"], [
         (19, "godel-argument", "Penrose and Gödel", "Gödel's theorem shows that human mathematical insight is not the work of any machine.",
@@ -218,7 +218,10 @@ def minds():
          "Partly holds", "Valid for experiments of fixed length only", "partly"),
         (48, "anaesthetics-microtubules", "Anaesthetics and microtubules", "Anaesthetics switch consciousness off by settling into pockets in the microtubules of nerve cells.",
          "A computer fit of 35 gases into eight proteins shows nothing special about the microtubule protein. But it shows nothing special about the accepted targets either, and an unrelated protein does as well as any. The scores follow the size of the molecule.",
-         "Could not tell", "The method cannot pick out any anaesthetic target", "open")])
+         "Could not tell", "The method cannot pick out any anaesthetic target", "open"),
+        (115, "anaesthetics-terahertz", "The 613 THz tubulin shift", "After binding, anaesthetics shift a 613 THz collective dipole mode in tubulin downward in proportion to potency while look-alike non-anaesthetics shift it upward (Craddock et al. 2017).",
+         "Egg-white lysozyme and 81 randomly placed rings reproduce the 8-versus-2 sign split identically to tubulin: 96% of all shifts follow simple two-oscillator level repulsion around 613 THz. On 27 anaesthetics and 7 look-alikes the split breaks down, and the 2017 equations fail 3D rotational symmetry.",
+         "Not found", "Generic level repulsion; breaks on more gases and fails rotational symmetry", "no")])
 
 
 def deep_memory():

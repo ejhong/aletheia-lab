@@ -58,3 +58,7 @@ Each has an issue. Eugene marks the ones to work on `status:active`; nothing els
 | [#100](https://github.com/ejhong/aletheia-lab/issues/100) | Does Tunguska show in the ice? Calibrating what an airburst leaves | data | `tunguska-calibration` |
 | [#103](https://github.com/ejhong/aletheia-lab/issues/103) | Does the Taurid comet stream hide a swarm of large fragments? | data | `taurid-swarm` |
 | [#104](https://github.com/ejhong/aletheia-lab/issues/104) | Did repeated Taurid comet crossings leave a periodic mark across the last 15,000 years? | data | `taurid-holocene-cycles` |
+| [#113](https://github.com/ejhong/aletheia-lab/issues/113) | Are the claimed Younger Dryas 'impact layer' sites actually the same age? | data | `ydb-site-synchrony` |
+| [#114](https://github.com/ejhong/aletheia-lab/issues/114) | Does a second Greenland ice core (NEEM) confirm fewer fire spikes at the Younger Dryas onset? | data | `yd-neem-spikes` |
+| [#115](https://github.com/ejhong/aletheia-lab/issues/115) | Do anaesthetics selectively shift collective tryptophan dipole modes in tubulin? | data | `anaesthetics-terahertz` |
+| [#116](https://github.com/ejhong/aletheia-lab/issues/116) | Did North American megafauna collapse before the Younger Dryas? | data | `yd-megafauna-timing` |
