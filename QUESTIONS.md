@@ -23,3 +23,7 @@ Each has an issue. Eugene marks at most two `status:active`; nothing else is wor
 | [#17](https://github.com/ejhong/aletheia-lab/issues/17) | Ask the DMT entities something the subject can't know | protocol | `dmt-entities` |
 | [#18](https://github.com/ejhong/aletheia-lab/issues/18) | Wigner's friend with an AI inside | protocol | `wigner-ai-friend` |
 | [#19](https://github.com/ejhong/aletheia-lab/issues/19) | Machine-check the Gödel argument | proof | `godel-argument` |
+| [#29](https://github.com/ejhong/aletheia-lab/issues/29) | Festivals of the dead and the Taurids | data | `dead-festivals` |
+| [#30](https://github.com/ejhong/aletheia-lab/issues/30) | Archaeogeodesy: placement or chance? | data | `archaeogeodesy` |
+| [#31](https://github.com/ejhong/aletheia-lab/issues/31) | The Australasian signal in the Amazon | data | `population-y` |
+| [#32](https://github.com/ejhong/aletheia-lab/issues/32) | Did the civilisers come from the sea? | data | `civilisers` |
