@@ -1,0 +1,1314 @@
+{
+  "decoy": false,
+  "calibrations": {
+    "all48": {
+      "v50": 4.4155,
+      "sv": 0.3089,
+      "n_north_total": 690,
+      "n_north_catalogued": 222,
+      "n_test_total": 2158,
+      "n_test_catalogued": 767
+    },
+    "in_figure": {
+      "v50": 4.313,
+      "sv": 0.3756,
+      "n_north_total": 690,
+      "n_north_catalogued": 211,
+      "n_test_total": 2158,
+      "n_test_catalogued": 673
+    },
+    "aratus_core": {
+      "v50": 4.313,
+      "sv": 0.3756,
+      "n_north_total": 690,
+      "n_north_catalogued": 211,
+      "n_test_total": 2158,
+      "n_test_catalogued": 657
+    },
+    "strict_id": {
+      "v50": 4.4148,
+      "sv": 0.305,
+      "n_north_total": 690,
+      "n_north_catalogued": 221,
+      "n_test_total": 2158,
+      "n_test_catalogued": 757
+    }
+  },
+  "primary_m1": {
+    "epoch": 910.0,
+    "epoch_label": "910 CE",
+    "lat_deg": 25.799999999999986,
+    "k_v": 0.25,
+    "ll_max": -935.788638396115,
+    "naive_68_epoch": [
+      600.0,
+      1000.0
+    ],
+    "naive_95_epoch": [
+      350.0,
+      1000.0
+    ],
+    "naive_68_lat": [
+      25.0,
+      27.0
+    ],
+    "naive_95_lat": [
+      24.5,
+      27.5
+    ]
+  },
+  "bootstrap_m1": {
+    "n_tiles": 138,
+    "n_boot": 500,
+    "seed": 20261123,
+    "epoch_median": 900.0,
+    "epoch_mean": 728.3,
+    "epoch_sd": 368.68138266509703,
+    "epoch_ci68": [
+      300.0,
+      1000.0
+    ],
+    "epoch_ci95": [
+      -200.0,
+      1000.0
+    ],
+    "lat_median": 26.0,
+    "lat_mean": 26.101,
+    "lat_sd": 2.050538567507002,
+    "lat_ci68": [
+      24.5,
+      28.0
+    ],
+    "lat_ci95": [
+      21.5,
+      30.5
+    ]
+  },
+  "m2_free_extinction": {
+    "best": {
+      "k_v": 0.1,
+      "epoch": 160.0,
+      "lat": 35.69999999999999,
+      "ll_max": -898.4483511723473
+    },
+    "profile": [
+      {
+        "k_v": 0.1,
+        "epoch": 160.0,
+        "lat": 35.69999999999999,
+        "ll_max": -898.4483511723473
+      },
+      {
+        "k_v": 0.12,
+        "epoch": 170.0,
+        "lat": 34.69999999999999,
+        "ll_max": -905.8723760614303
+      },
+      {
+        "k_v": 0.14,
+        "epoch": 200.0,
+        "lat": 33.69999999999999,
+        "ll_max": -912.9494442194417
+      },
+      {
+        "k_v": 0.16,
+        "epoch": 240.0,
+        "lat": 32.499999999999986,
+        "ll_max": -919.4530329404868
+      },
+      {
+        "k_v": 0.18,
+        "epoch": 820.0,
+        "lat": 29.199999999999985,
+        "ll_max": -924.5680279567506
+      },
+      {
+        "k_v": 0.2,
+        "epoch": 880.0,
+        "lat": 27.999999999999986,
+        "ll_max": -928.0687612927528
+      },
+      {
+        "k_v": 0.22,
+        "epoch": 880.0,
+        "lat": 27.199999999999985,
+        "ll_max": -931.3292454373726
+      },
+      {
+        "k_v": 0.24,
+        "epoch": 920.0,
+        "lat": 26.199999999999985,
+        "ll_max": -934.360229516283
+      },
+      {
+        "k_v": 0.26,
+        "epoch": 900.0,
+        "lat": 25.499999999999986,
+        "ll_max": -937.1782361529115
+      },
+      {
+        "k_v": 0.28,
+        "epoch": 860.0,
+        "lat": 24.699999999999985,
+        "ll_max": -939.8392583247291
+      },
+      {
+        "k_v": 0.3,
+        "epoch": 820.0,
+        "lat": 23.999999999999986,
+        "ll_max": -942.3759664853947
+      },
+      {
+        "k_v": 0.32,
+        "epoch": 780.0,
+        "lat": 23.499999999999986,
+        "ll_max": -944.7840773022799
+      },
+      {
+        "k_v": 0.34,
+        "epoch": 740.0,
+        "lat": 22.799999999999986,
+        "ll_max": -947.0594088304749
+      },
+      {
+        "k_v": 0.36,
+        "epoch": 700.0,
+        "lat": 22.199999999999985,
+        "ll_max": -949.2248399885166
+      },
+      {
+        "k_v": 0.38,
+        "epoch": 660.0,
+        "lat": 21.499999999999986,
+        "ll_max": -951.2911985701314
+      },
+      {
+        "k_v": 0.4,
+        "epoch": 630.0,
+        "lat": 20.999999999999986,
+        "ll_max": -953.239691211535
+      },
+      {
+        "k_v": 0.42,
+        "epoch": 620.0,
+        "lat": 20.499999999999986,
+        "ll_max": -955.1057350048684
+      },
+      {
+        "k_v": 0.44,
+        "epoch": 1000.0,
+        "lat": 18.19999999999999,
+        "ll_max": -956.7883623790116
+      },
+      {
+        "k_v": 0.46,
+        "epoch": 1000.0,
+        "lat": 17.59999999999999,
+        "ll_max": -957.9138732038582
+      },
+      {
+        "k_v": 0.48,
+        "epoch": 1000.0,
+        "lat": 16.999999999999993,
+        "ll_max": -958.9648609531822
+      },
+      {
+        "k_v": 0.5,
+        "epoch": 1000.0,
+        "lat": 16.399999999999995,
+        "ll_max": -959.9502607452837
+      }
+    ]
+  },
+  "m3_geometric_cap": {
+    "epoch": -40.0,
+    "r_cap_deg": 41.70000000000006,
+    "ll_max": -874.3133975192122
+  },
+  "m4_free_pole": {
+    "free_ra_j2000_deg": 45.51978570317555,
+    "free_dec_j2000_deg": -83.83925905642953,
+    "free_ecl_lon_deg": 283.0182568760426,
+    "free_ecl_lat_deg": -70.5,
+    "free_lat_deg": 25.5,
+    "free_ll_max": -931.2495903494437,
+    "offset_from_precession_deg": 3.9422955983819046,
+    "radial_offset_deg": -3.942283017248023,
+    "nearest_precession_epoch": 1075.0,
+    "two_delta_ll_offtrack": 9.078096093342538
+  },
+  "variants": [
+    {
+      "name": "M1_kv_0.15",
+      "group": "extinction",
+      "epoch": 210.0,
+      "lat": 33.19999999999999,
+      "ll_max": -916.2853589090955,
+      "n_cat": 767,
+      "note": "k_V=0.15 mag/airmass, all48, V<=5.5"
+    },
+    {
+      "name": "M1_kv_0.20",
+      "group": "extinction",
+      "epoch": 880.0,
+      "lat": 27.999999999999986,
+      "ll_max": -928.0687612927528,
+      "n_cat": 767,
+      "note": "k_V=0.20 mag/airmass, all48, V<=5.5"
+    },
+    {
+      "name": "M1_kv_0.25",
+      "group": "extinction",
+      "epoch": 910.0,
+      "lat": 25.799999999999986,
+      "ll_max": -935.788638396115,
+      "n_cat": 767,
+      "note": "k_V=0.25 mag/airmass, all48, V<=5.5"
+    },
+    {
+      "name": "M1_kv_0.30",
+      "group": "extinction",
+      "epoch": 820.0,
+      "lat": 23.999999999999986,
+      "ll_max": -942.3759664853947,
+      "n_cat": 767,
+      "note": "k_V=0.30 mag/airmass, all48, V<=5.5"
+    },
+    {
+      "name": "M1_kv_0.35",
+      "group": "extinction",
+      "epoch": 720.0,
+      "lat": 22.499999999999986,
+      "ll_max": -948.1563935647399,
+      "n_cat": 767,
+      "note": "k_V=0.35 mag/airmass, all48, V<=5.5"
+    },
+    {
+      "name": "M2_free_kv",
+      "group": "model",
+      "epoch": 160.0,
+      "lat": 35.69999999999999,
+      "ll_max": -898.4483511723473,
+      "n_cat": 767,
+      "note": "Profile MLE k_V=0.10"
+    },
+    {
+      "name": "M3_geom_cap",
+      "group": "model",
+      "epoch": -40.0,
+      "lat": null,
+      "r_cap_deg": 41.70000000000006,
+      "ll_max": -874.3133975192122,
+      "n_cat": 767,
+      "note": "Geometric void cap R=41.7 deg (no extinction)"
+    },
+    {
+      "name": "subset_in_figure",
+      "group": "subset",
+      "epoch": 670.0,
+      "lat": 26.999999999999986,
+      "ll_max": -878.0687345319884,
+      "n_cat": 673,
+      "note": "In-figure stars only (excludes 108 informes)"
+    },
+    {
+      "name": "subset_aratus_core",
+      "group": "subset",
+      "epoch": 500.0,
+      "lat": 28.199999999999985,
+      "ll_max": -851.6563218272208,
+      "n_cat": 657,
+      "note": "Pre-Hipparchan Aratus/Eratosthenes core (excludes Equ, CrA & informes)"
+    },
+    {
+      "name": "subset_strict_id",
+      "group": "subset",
+      "epoch": 930.0,
+      "lat": 25.799999999999986,
+      "ll_max": -929.4142737251643,
+      "n_cat": 757,
+      "note": "Strictly secure Hipparcos IDs (I <= 2)"
+    },
+    {
+      "name": "vmag_le_4.0",
+      "group": "magnitude",
+      "epoch": -120.0,
+      "lat": 31.799999999999986,
+      "ll_max": -92.95170278775667,
+      "n_cat": 315,
+      "note": "Bright stars V <= 4.0, all48, k_V=0.25"
+    },
+    {
+      "name": "vmag_le_4.5",
+      "group": "magnitude",
+      "epoch": 50.0,
+      "lat": 30.299999999999986,
+      "ll_max": -275.9052134980129,
+      "n_cat": 499,
+      "note": "Bright stars V <= 4.5, all48, k_V=0.25"
+    },
+    {
+      "name": "vmag_le_5.0",
+      "group": "magnitude",
+      "epoch": 610.0,
+      "lat": 26.999999999999986,
+      "ll_max": -601.6371249682804,
+      "n_cat": 663,
+      "note": "Bright stars V <= 5.0, all48, k_V=0.25"
+    }
+  ],
+  "loco_jackknife": [
+    {
+      "dropped_cst": "=PsA",
+      "n_dropped_stars": 15,
+      "epoch": 680.0,
+      "delta_epoch": -230.0,
+      "lat": 26.699999999999985,
+      "delta_lat": 0.8999999999999986
+    },
+    {
+      "dropped_cst": "=Aqr",
+      "n_dropped_stars": 43,
+      "epoch": 710.0,
+      "delta_epoch": -200.0,
+      "lat": 26.499999999999986,
+      "delta_lat": 0.6999999999999993
+    },
+    {
+      "dropped_cst": "=Eri",
+      "n_dropped_stars": 34,
+      "epoch": 720.0,
+      "delta_epoch": -190.0,
+      "lat": 26.499999999999986,
+      "delta_lat": 0.6999999999999993
+    },
+    {
+      "dropped_cst": "=Cen",
+      "n_dropped_stars": 36,
+      "epoch": 1000.0,
+      "delta_epoch": 90.0,
+      "lat": 26.299999999999986,
+      "delta_lat": 0.5
+    },
+    {
+      "dropped_cst": "=Cap",
+      "n_dropped_stars": 25,
+      "epoch": 830.0,
+      "delta_epoch": -80.0,
+      "lat": 26.199999999999985,
+      "delta_lat": 0.3999999999999986
+    },
+    {
+      "dropped_cst": "=Arg",
+      "n_dropped_stars": 45,
+      "epoch": 980.0,
+      "delta_epoch": 70.0,
+      "lat": 26.499999999999986,
+      "delta_lat": 0.6999999999999993
+    },
+    {
+      "dropped_cst": "=Lup",
+      "n_dropped_stars": 18,
+      "epoch": 970.0,
+      "delta_epoch": 60.0,
+      "lat": 25.999999999999986,
+      "delta_lat": 0.1999999999999993
+    },
+    {
+      "dropped_cst": "=Ara",
+      "n_dropped_stars": 7,
+      "epoch": 960.0,
+      "delta_epoch": 50.0,
+      "lat": 26.299999999999986,
+      "delta_lat": 0.5
+    },
+    {
+      "dropped_cst": "=Sgr",
+      "n_dropped_stars": 30,
+      "epoch": 860.0,
+      "delta_epoch": -50.0,
+      "lat": 26.199999999999985,
+      "delta_lat": 0.3999999999999986
+    },
+    {
+      "dropped_cst": "=Cet",
+      "n_dropped_stars": 21,
+      "epoch": 870.0,
+      "delta_epoch": -40.0,
+      "lat": 25.999999999999986,
+      "delta_lat": 0.1999999999999993
+    },
+    {
+      "dropped_cst": "=CrA",
+      "n_dropped_stars": 12,
+      "epoch": 880.0,
+      "delta_epoch": -30.0,
+      "lat": 26.299999999999986,
+      "delta_lat": 0.5
+    },
+    {
+      "dropped_cst": "=CMa",
+      "n_dropped_stars": 29,
+      "epoch": 890.0,
+      "delta_epoch": -20.0,
+      "lat": 25.999999999999986,
+      "delta_lat": 0.1999999999999993
+    },
+    {
+      "dropped_cst": "=Hya",
+      "n_dropped_stars": 27,
+      "epoch": 930.0,
+      "delta_epoch": 20.0,
+      "lat": 25.799999999999986,
+      "delta_lat": 0.0
+    },
+    {
+      "dropped_cst": "=Lib",
+      "n_dropped_stars": 16,
+      "epoch": 930.0,
+      "delta_epoch": 20.0,
+      "lat": 25.799999999999986,
+      "delta_lat": 0.0
+    },
+    {
+      "dropped_cst": "=Vir",
+      "n_dropped_stars": 31,
+      "epoch": 930.0,
+      "delta_epoch": 20.0,
+      "lat": 25.799999999999986,
+      "delta_lat": 0.0
+    },
+    {
+      "dropped_cst": "=Crt",
+      "n_dropped_stars": 7,
+      "epoch": 920.0,
+      "delta_epoch": 10.0,
+      "lat": 25.799999999999986,
+      "delta_lat": 0.0
+    },
+    {
+      "dropped_cst": "=Crv",
+      "n_dropped_stars": 7,
+      "epoch": 920.0,
+      "delta_epoch": 10.0,
+      "lat": 25.799999999999986,
+      "delta_lat": 0.0
+    },
+    {
+      "dropped_cst": "=Oph",
+      "n_dropped_stars": 25,
+      "epoch": 920.0,
+      "delta_epoch": 10.0,
+      "lat": 25.799999999999986,
+      "delta_lat": 0.0
+    },
+    {
+      "dropped_cst": "=Sco",
+      "n_dropped_stars": 24,
+      "epoch": 920.0,
+      "delta_epoch": 10.0,
+      "lat": 25.999999999999986,
+      "delta_lat": 0.1999999999999993
+    },
+    {
+      "dropped_cst": "=Lep",
+      "n_dropped_stars": 12,
+      "epoch": 910.0,
+      "delta_epoch": 0.0,
+      "lat": 25.799999999999986,
+      "delta_lat": 0.0
+    },
+    {
+      "dropped_cst": "=Ser",
+      "n_dropped_stars": 12,
+      "epoch": 910.0,
+      "delta_epoch": 0.0,
+      "lat": 25.799999999999986,
+      "delta_lat": 0.0
+    }
+  ],
+  "loco_epoch_range": [
+    680.0,
+    1000.0
+  ],
+  "loco_lat_range": [
+    25.799999999999986,
+    26.699999999999985
+  ],
+  "systematic_epoch_range": [
+    -120.0,
+    930.0
+  ],
+  "systematic_lat_range": [
+    22.499999999999986,
+    35.69999999999999
+  ],
+  "combined_honest_epoch_range": [
+    -200.0,
+    1000.0
+  ],
+  "combined_honest_epoch_labels": [
+    "201 BCE",
+    "1000 CE"
+  ],
+  "combined_honest_lat_range": [
+    21.5,
+    35.69999999999999
+  ],
+  "verdict_code": "excludes_pre_3000_bce",
+  "excludes_pre_3000_bce": true,
+  "southernmost_ptolemy_stars": [
+    {
+      "hip": 60718,
+      "name": "Alp1Cru",
+      "cst": "=Cen",
+      "vmag": 0.77,
+      "vp": "2",
+      "bv": -0.24,
+      "ra_j2000": 186.6498,
+      "dec_j2000": -63.099,
+      "dec_best": -57.03,
+      "h_max_best": 7.17,
+      "h_max_rhodes_128bce": 2.24,
+      "h_max_alexandria_137ce": 6.01,
+      "catalogued": 1
+    },
+    {
+      "hip": 71681,
+      "name": "Alp2Cen",
+      "cst": "=Cen",
+      "vmag": 1.35,
+      "vp": "1",
+      "bv": 0.9,
+      "ra_j2000": 219.9141,
+      "dec_j2000": -60.839,
+      "dec_best": -55.98,
+      "h_max_best": 8.22,
+      "h_max_rhodes_128bce": 2.83,
+      "h_max_alexandria_137ce": 6.67,
+      "catalogued": 1
+    },
+    {
+      "hip": 68702,
+      "name": "Bet Cen",
+      "cst": "=Cen",
+      "vmag": 0.61,
+      "vp": "2",
+      "bv": -0.23,
+      "ra_j2000": 210.956,
+      "dec_j2000": -60.373,
+      "dec_best": -54.74,
+      "h_max_best": 9.46,
+      "h_max_rhodes_128bce": 4.63,
+      "h_max_alexandria_137ce": 8.34,
+      "catalogued": 1
+    },
+    {
+      "hip": 85267,
+      "name": "Gam Ara",
+      "cst": "=Ara",
+      "vmag": 3.31,
+      "vp": "4b",
+      "bv": -0.15,
+      "ra_j2000": 261.3486,
+      "dec_j2000": -56.378,
+      "dec_best": -54.31,
+      "h_max_best": 9.89,
+      "h_max_rhodes_128bce": 3.05,
+      "h_max_alexandria_137ce": 7.16,
+      "catalogued": 1
+    },
+    {
+      "hip": 62434,
+      "name": "Bet Cru",
+      "cst": "=Cen",
+      "vmag": 1.25,
+      "vp": "2",
+      "bv": -0.24,
+      "ra_j2000": 191.9305,
+      "dec_j2000": -59.689,
+      "dec_best": -53.64,
+      "h_max_best": 10.56,
+      "h_max_rhodes_128bce": 5.7,
+      "h_max_alexandria_137ce": 9.46,
+      "catalogued": 1
+    },
+    {
+      "hip": 85258,
+      "name": "Bet Ara",
+      "cst": "=Ara",
+      "vmag": 2.84,
+      "vp": "4",
+      "bv": 1.48,
+      "ra_j2000": 261.325,
+      "dec_j2000": -55.53,
+      "dec_best": -53.47,
+      "h_max_best": 10.73,
+      "h_max_rhodes_128bce": 3.87,
+      "h_max_alexandria_137ce": 7.98,
+      "catalogued": 1
+    },
+    {
+      "hip": 83081,
+      "name": "Zet Ara",
+      "cst": "=Ara",
+      "vmag": 3.12,
+      "vp": "4",
+      "bv": 1.55,
+      "ra_j2000": 254.6551,
+      "dec_j2000": -55.99,
+      "dec_best": -53.3,
+      "h_max_best": 10.9,
+      "h_max_rhodes_128bce": 4.5,
+      "h_max_alexandria_137ce": 8.51,
+      "catalogued": 1
+    },
+    {
+      "hip": 59747,
+      "name": "Del Cru",
+      "cst": "=Cen",
+      "vmag": 2.79,
+      "vp": "4",
+      "bv": -0.19,
+      "ra_j2000": 183.7865,
+      "dec_j2000": -58.749,
+      "dec_best": -52.69,
+      "h_max_best": 11.51,
+      "h_max_rhodes_128bce": 6.52,
+      "h_max_alexandria_137ce": 10.31,
+      "catalogued": 1
+    },
+    {
+      "hip": 46701,
+      "name": "HIP 46701",
+      "cst": "=Arg",
+      "vmag": 3.16,
+      "vp": "3",
+      "bv": 1.54,
+      "ra_j2000": 142.8056,
+      "dec_j2000": -57.034,
+      "dec_best": -52.47,
+      "h_max_best": 11.73,
+      "h_max_rhodes_128bce": 4.92,
+      "h_max_alexandria_137ce": 9.21,
+      "catalogued": 1
+    },
+    {
+      "hip": 30438,
+      "name": "Alp Car",
+      "cst": "=Arg",
+      "vmag": -0.62,
+      "vp": "1",
+      "bv": 0.16,
+      "ra_j2000": 95.9879,
+      "dec_j2000": -52.696,
+      "dec_best": -52.39,
+      "h_max_best": 11.81,
+      "h_max_rhodes_128bce": 0.91,
+      "h_max_alexandria_137ce": 6.24,
+      "catalogued": 1
+    },
+    {
+      "hip": 63003,
+      "name": "Mu 1Cru",
+      "cst": "=Cen",
+      "vmag": 4.03,
+      "vp": "4",
+      "bv": -0.18,
+      "ra_j2000": 193.6486,
+      "dec_j2000": -57.178,
+      "dec_best": -51.14,
+      "h_max_best": 13.06,
+      "h_max_rhodes_128bce": 8.22,
+      "h_max_alexandria_137ce": 11.96,
+      "catalogued": 1
+    },
+    {
+      "hip": 42913,
+      "name": "Del Vel",
+      "cst": "=Arg",
+      "vmag": 1.93,
+      "vp": "2",
+      "bv": 0.04,
+      "ra_j2000": 131.1758,
+      "dec_j2000": -54.709,
+      "dec_best": -50.99,
+      "h_max_best": 13.21,
+      "h_max_rhodes_128bce": 5.54,
+      "h_max_alexandria_137ce": 10.06,
+      "catalogued": 1
+    },
+    {
+      "hip": 61084,
+      "name": "Gam Cru",
+      "cst": "=Cen",
+      "vmag": 1.59,
+      "vp": "2",
+      "bv": 1.6,
+      "ra_j2000": 187.7914,
+      "dec_j2000": -57.113,
+      "dec_best": -50.97,
+      "h_max_best": 13.23,
+      "h_max_rhodes_128bce": 8.38,
+      "h_max_alexandria_137ce": 12.14,
+      "catalogued": 1
+    },
+    {
+      "hip": 45941,
+      "name": "Kap Vel",
+      "cst": "=Arg",
+      "vmag": 2.47,
+      "vp": "3",
+      "bv": -0.14,
+      "ra_j2000": 140.5285,
+      "dec_j2000": -55.011,
+      "dec_best": -50.62,
+      "h_max_best": 13.58,
+      "h_max_rhodes_128bce": 6.57,
+      "h_max_alexandria_137ce": 10.91,
+      "catalogued": 1
+    },
+    {
+      "hip": 83153,
+      "name": "Eps1Ara",
+      "cst": "=Ara",
+      "vmag": 4.06,
+      "vp": "5",
+      "bv": 1.45,
+      "ra_j2000": 254.896,
+      "dec_j2000": -53.16,
+      "dec_best": -50.54,
+      "h_max_best": 13.66,
+      "h_max_rhodes_128bce": 7.16,
+      "h_max_alexandria_137ce": 11.19,
+      "catalogued": 1
+    },
+    {
+      "hip": 38827,
+      "name": "Chi Car",
+      "cst": "=Arg",
+      "vmag": 3.46,
+      "vp": "2",
+      "bv": -0.18,
+      "ra_j2000": 119.1948,
+      "dec_j2000": -52.982,
+      "dec_best": -50.35,
+      "h_max_best": 13.85,
+      "h_max_rhodes_128bce": 5.12,
+      "h_max_alexandria_137ce": 9.91,
+      "catalogued": 1
+    },
+    {
+      "hip": 32768,
+      "name": "Tau Pup",
+      "cst": "=Arg",
+      "vmag": 2.94,
+      "vp": "3b",
+      "bv": 1.21,
+      "ra_j2000": 102.4839,
+      "dec_j2000": -50.614,
+      "dec_best": -49.63,
+      "h_max_best": 14.57,
+      "h_max_rhodes_128bce": 4.24,
+      "h_max_alexandria_137ce": 9.43,
+      "catalogued": 1
+    },
+    {
+      "hip": 42726,
+      "name": "HIP 42726",
+      "cst": "=Arg",
+      "vmag": 4.83,
+      "vp": "3",
+      "bv": -0.17,
+      "ra_j2000": 130.6059,
+      "dec_j2000": -53.114,
+      "dec_best": -49.49,
+      "h_max_best": 14.71,
+      "h_max_rhodes_128bce": 6.93,
+      "h_max_alexandria_137ce": 11.47,
+      "catalogued": 1
+    },
+    {
+      "hip": 42536,
+      "name": "HIP 42536",
+      "cst": "=Arg",
+      "vmag": 3.6,
+      "vp": "3",
+      "bv": -0.17,
+      "ra_j2000": 130.0734,
+      "dec_j2000": -52.922,
+      "dec_best": -49.35,
+      "h_max_best": 14.85,
+      "h_max_rhodes_128bce": 7.02,
+      "h_max_alexandria_137ce": 11.58,
+      "catalogued": 1
+    },
+    {
+      "hip": 88714,
+      "name": "The Ara",
+      "cst": "=Ara",
+      "vmag": 3.65,
+      "vp": "4",
+      "bv": -0.1,
+      "ra_j2000": 271.6578,
+      "dec_j2000": -50.091,
+      "dec_best": -49.15,
+      "h_max_best": 15.05,
+      "h_max_rhodes_128bce": 7.25,
+      "h_max_alexandria_137ce": 11.57,
+      "catalogued": 1
+    },
+    {
+      "hip": 66821,
+      "name": "HIP 66821",
+      "cst": "=Cen",
+      "vmag": 4.99,
+      "vp": "3",
+      "bv": -0.06,
+      "ra_j2000": 205.4367,
+      "dec_j2000": -54.559,
+      "dec_best": -48.76,
+      "h_max_best": 15.44,
+      "h_max_rhodes_128bce": 10.65,
+      "h_max_alexandria_137ce": 14.36,
+      "catalogued": 1
+    },
+    {
+      "hip": 85792,
+      "name": "Alp Ara",
+      "cst": "=Ara",
+      "vmag": 2.84,
+      "vp": "4b",
+      "bv": -0.14,
+      "ra_j2000": 262.9605,
+      "dec_j2000": -49.876,
+      "dec_best": -48.04,
+      "h_max_best": 16.16,
+      "h_max_rhodes_128bce": 9.04,
+      "h_max_alexandria_137ce": 13.22,
+      "catalogued": 1
+    },
+    {
+      "hip": 66657,
+      "name": "Eps Cen",
+      "cst": "=Cen",
+      "vmag": 2.29,
+      "vp": "2",
+      "bv": -0.17,
+      "ra_j2000": 204.972,
+      "dec_j2000": -53.466,
+      "dec_best": -47.66,
+      "h_max_best": 16.54,
+      "h_max_rhodes_128bce": 11.75,
+      "h_max_alexandria_137ce": 15.46,
+      "catalogued": 1
+    },
+    {
+      "hip": 74395,
+      "name": "Zet Lup",
+      "cst": "=Lup",
+      "vmag": 3.41,
+      "vp": "5",
+      "bv": 0.92,
+      "ra_j2000": 228.0717,
+      "dec_j2000": -52.099,
+      "dec_best": -47.35,
+      "h_max_best": 16.85,
+      "h_max_rhodes_128bce": 11.65,
+      "h_max_alexandria_137ce": 15.42,
+      "catalogued": 1
+    },
+    {
+      "hip": 59449,
+      "name": "Rho Cen",
+      "cst": "=Cen",
+      "vmag": 3.97,
+      "vp": "4",
+      "bv": -0.16,
+      "ra_j2000": 182.9131,
+      "dec_j2000": -52.368,
+      "dec_best": -46.31,
+      "h_max_best": 17.89,
+      "h_max_rhodes_128bce": 12.87,
+      "h_max_alexandria_137ce": 16.68,
+      "catalogued": 1
+    }
+  ],
+  "brightest_missing_southern_stars": [
+    {
+      "hip": 71683,
+      "name": "Alp1Cen",
+      "cst": "",
+      "vmag": -0.01,
+      "vp": "",
+      "bv": 0.71,
+      "ra_j2000": 219.9204,
+      "dec_j2000": -60.835,
+      "dec_best": -55.84,
+      "h_max_best": 8.36,
+      "h_max_rhodes_128bce": 3.11,
+      "h_max_alexandria_137ce": 6.91,
+      "catalogued": 0
+    },
+    {
+      "hip": 7588,
+      "name": "Alp Eri",
+      "cst": "",
+      "vmag": 0.45,
+      "vp": "",
+      "bv": -0.16,
+      "ra_j2000": 24.4281,
+      "dec_j2000": -57.237,
+      "dec_best": -62.96,
+      "h_max_best": 1.24,
+      "h_max_rhodes_128bce": -15.1,
+      "h_max_alexandria_137ce": -8.42,
+      "catalogued": 0
+    },
+    {
+      "hip": 45238,
+      "name": "Bet Car",
+      "cst": "",
+      "vmag": 1.67,
+      "vp": "",
+      "bv": 0.07,
+      "ra_j2000": 138.301,
+      "dec_j2000": -69.717,
+      "dec_best": -65.33,
+      "h_max_best": -1.13,
+      "h_max_rhodes_128bce": -7.82,
+      "h_max_alexandria_137ce": -3.59,
+      "catalogued": 0
+    },
+    {
+      "hip": 109268,
+      "name": "Alp Gru",
+      "cst": "",
+      "vmag": 1.73,
+      "vp": "",
+      "bv": -0.07,
+      "ra_j2000": 332.0578,
+      "dec_j2000": -46.961,
+      "dec_best": -51.76,
+      "h_max_best": 12.44,
+      "h_max_rhodes_128bce": -1.36,
+      "h_max_alexandria_137ce": 4.5,
+      "catalogued": 0
+    },
+    {
+      "hip": 41037,
+      "name": "Eps Car",
+      "cst": "",
+      "vmag": 1.86,
+      "vp": "",
+      "bv": 1.2,
+      "ra_j2000": 125.6286,
+      "dec_j2000": -59.51,
+      "dec_best": -56.22,
+      "h_max_best": 7.98,
+      "h_max_rhodes_128bce": 0.01,
+      "h_max_alexandria_137ce": 4.59,
+      "catalogued": 0
+    },
+    {
+      "hip": 82273,
+      "name": "Alp TrA",
+      "cst": "",
+      "vmag": 1.91,
+      "vp": "",
+      "bv": 1.45,
+      "ra_j2000": 252.1661,
+      "dec_j2000": -69.028,
+      "dec_best": -65.86,
+      "h_max_best": -1.66,
+      "h_max_rhodes_128bce": -7.53,
+      "h_max_alexandria_137ce": -3.64,
+      "catalogued": 0
+    },
+    {
+      "hip": 100751,
+      "name": "Alp Pav",
+      "cst": "",
+      "vmag": 1.94,
+      "vp": "",
+      "bv": -0.12,
+      "ra_j2000": 306.4119,
+      "dec_j2000": -56.735,
+      "dec_best": -59.28,
+      "h_max_best": 4.92,
+      "h_max_rhodes_128bce": -5.88,
+      "h_max_alexandria_137ce": -0.85,
+      "catalogued": 0
+    },
+    {
+      "hip": 112122,
+      "name": "Bet Gru",
+      "cst": "",
+      "vmag": 2.07,
+      "vp": "",
+      "bv": 1.61,
+      "ra_j2000": 340.6664,
+      "dec_j2000": -46.885,
+      "dec_best": -52.24,
+      "h_max_best": 11.96,
+      "h_max_rhodes_128bce": -2.66,
+      "h_max_alexandria_137ce": 3.43,
+      "catalogued": 0
+    },
+    {
+      "hip": 45556,
+      "name": "Iot Car",
+      "cst": "",
+      "vmag": 2.21,
+      "vp": "",
+      "bv": 0.19,
+      "ra_j2000": 139.2726,
+      "dec_j2000": -59.275,
+      "dec_best": -54.94,
+      "h_max_best": 9.26,
+      "h_max_rhodes_128bce": 2.27,
+      "h_max_alexandria_137ce": 6.6,
+      "catalogued": 0
+    },
+    {
+      "hip": 2081,
+      "name": "Alp Phe",
+      "cst": "",
+      "vmag": 2.4,
+      "vp": "",
+      "bv": 1.08,
+      "ra_j2000": 6.5703,
+      "dec_j2000": -42.305,
+      "dec_best": -48.27,
+      "h_max_best": 15.93,
+      "h_max_rhodes_128bce": -0.17,
+      "h_max_alexandria_137ce": 6.4,
+      "catalogued": 0
+    },
+    {
+      "hip": 52727,
+      "name": "Mu Vel",
+      "cst": "",
+      "vmag": 2.69,
+      "vp": "",
+      "bv": 0.9,
+      "ra_j2000": 161.6922,
+      "dec_j2000": -49.42,
+      "dec_best": -43.86,
+      "h_max_best": 20.34,
+      "h_max_rhodes_128bce": 14.52,
+      "h_max_alexandria_137ce": 18.56,
+      "catalogued": 0
+    },
+    {
+      "hip": 61585,
+      "name": "Alp Mus",
+      "cst": "",
+      "vmag": 2.69,
+      "vp": "",
+      "bv": -0.18,
+      "ra_j2000": 189.2962,
+      "dec_j2000": -69.136,
+      "dec_best": -63.07,
+      "h_max_best": 1.13,
+      "h_max_rhodes_128bce": -3.76,
+      "h_max_alexandria_137ce": 0.0,
+      "catalogued": 0
+    },
+    {
+      "hip": 52419,
+      "name": "The Car",
+      "cst": "",
+      "vmag": 2.74,
+      "vp": "",
+      "bv": -0.22,
+      "ra_j2000": 160.7393,
+      "dec_j2000": -64.394,
+      "dec_best": -58.85,
+      "h_max_best": 5.35,
+      "h_max_rhodes_128bce": -0.37,
+      "h_max_alexandria_137ce": 3.63,
+      "catalogued": 0
+    },
+    {
+      "hip": 2021,
+      "name": "Bet Hyi",
+      "cst": "",
+      "vmag": 2.82,
+      "vp": "",
+      "bv": 0.62,
+      "ra_j2000": 6.4133,
+      "dec_j2000": -77.255,
+      "dec_best": -83.38,
+      "h_max_best": -19.18,
+      "h_max_rhodes_128bce": -33.49,
+      "h_max_alexandria_137ce": -28.07,
+      "catalogued": 0
+    },
+    {
+      "hip": 77952,
+      "name": "Bet TrA",
+      "cst": "",
+      "vmag": 2.83,
+      "vp": "",
+      "bv": 0.32,
+      "ra_j2000": 238.7867,
+      "dec_j2000": -63.43,
+      "dec_best": -59.22,
+      "h_max_best": 4.98,
+      "h_max_rhodes_128bce": -0.4,
+      "h_max_alexandria_137ce": 3.39,
+      "catalogued": 0
+    },
+    {
+      "hip": 9236,
+      "name": "Alp Hyi",
+      "cst": "",
+      "vmag": 2.86,
+      "vp": "",
+      "bv": 0.29,
+      "ra_j2000": 29.6911,
+      "dec_j2000": -61.57,
+      "dec_best": -67.07,
+      "h_max_best": -2.87,
+      "h_max_rhodes_128bce": -19.06,
+      "h_max_alexandria_137ce": -12.41,
+      "catalogued": 0
+    },
+    {
+      "hip": 74946,
+      "name": "Gam TrA",
+      "cst": "",
+      "vmag": 2.87,
+      "vp": "",
+      "bv": 0.01,
+      "ra_j2000": 229.7279,
+      "dec_j2000": -68.679,
+      "dec_best": -63.91,
+      "h_max_best": 0.29,
+      "h_max_rhodes_128bce": -4.81,
+      "h_max_alexandria_137ce": -1.06,
+      "catalogued": 0
+    },
+    {
+      "hip": 110130,
+      "name": "Alp Tuc",
+      "cst": "",
+      "vmag": 2.87,
+      "vp": "",
+      "bv": 1.39,
+      "ra_j2000": 334.6257,
+      "dec_j2000": -60.259,
+      "dec_best": -65.18,
+      "h_max_best": -0.98,
+      "h_max_rhodes_128bce": -14.63,
+      "h_max_alexandria_137ce": -8.86,
+      "catalogued": 0
+    },
+    {
+      "hip": 48002,
+      "name": "Ups Car",
+      "cst": "",
+      "vmag": 2.92,
+      "vp": "",
+      "bv": 0.27,
+      "ra_j2000": 146.7756,
+      "dec_j2000": -65.072,
+      "dec_best": -60.2,
+      "h_max_best": 4.0,
+      "h_max_rhodes_128bce": -2.38,
+      "h_max_alexandria_137ce": 1.79,
+      "catalogued": 0
+    },
+    {
+      "hip": 62322,
+      "name": "Bet Mus",
+      "cst": "",
+      "vmag": 3.04,
+      "vp": "",
+      "bv": -0.18,
+      "ra_j2000": 191.5703,
+      "dec_j2000": -68.108,
+      "dec_best": -62.05,
+      "h_max_best": 2.15,
+      "h_max_rhodes_128bce": -2.72,
+      "h_max_alexandria_137ce": 1.04,
+      "catalogued": 0
+    },
+    {
+      "hip": 56561,
+      "name": "Lam Cen",
+      "cst": "",
+      "vmag": 3.11,
+      "vp": "",
+      "bv": -0.04,
+      "ra_j2000": 173.9455,
+      "dec_j2000": -63.02,
+      "dec_best": -57.08,
+      "h_max_best": 7.12,
+      "h_max_rhodes_128bce": 1.88,
+      "h_max_alexandria_137ce": 5.75,
+      "catalogued": 0
+    },
+    {
+      "hip": 101772,
+      "name": "Alp Ind",
+      "cst": "",
+      "vmag": 3.11,
+      "vp": "",
+      "bv": 1.0,
+      "ra_j2000": 309.3916,
+      "dec_j2000": -47.292,
+      "dec_best": -50.29,
+      "h_max_best": 13.91,
+      "h_max_rhodes_128bce": 2.35,
+      "h_max_alexandria_137ce": 7.6,
+      "catalogued": 0
+    },
+    {
+      "hip": 71908,
+      "name": "Alp Cir",
+      "cst": "",
+      "vmag": 3.18,
+      "vp": "",
+      "bv": 0.26,
+      "ra_j2000": 220.6279,
+      "dec_j2000": -64.975,
+      "dec_best": -59.69,
+      "h_max_best": 4.51,
+      "h_max_rhodes_128bce": -0.38,
+      "h_max_alexandria_137ce": 3.33,
+      "catalogued": 0
+    },
+    {
+      "hip": 32607,
+      "name": "Alp Pic",
+      "cst": "",
+      "vmag": 3.24,
+      "vp": "",
+      "bv": 0.23,
+      "ra_j2000": 102.0481,
+      "dec_j2000": -61.942,
+      "dec_best": -60.89,
+      "h_max_best": 3.31,
+      "h_max_rhodes_128bce": -6.57,
+      "h_max_alexandria_137ce": -1.53,
+      "catalogued": 0
+    },
+    {
+      "hip": 17678,
+      "name": "Gam Hyi",
+      "cst": "",
+      "vmag": 3.26,
+      "vp": "",
+      "bv": 1.59,
+      "ra_j2000": 56.8093,
+      "dec_j2000": -74.239,
+      "dec_best": -77.34,
+      "h_max_best": -13.14,
+      "h_max_rhodes_128bce": -25.76,
+      "h_max_alexandria_137ce": -20.17,
+      "catalogued": 0
+    }
+  ]
+}

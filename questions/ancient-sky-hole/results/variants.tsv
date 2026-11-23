@@ -1,0 +1,14 @@
+name	group	epoch	epoch_label	lat_deg	ll_max	n_cat	note
+M1_kv_0.15	extinction	210.0	210 CE	33.20	-916.29	767	k_V=0.15 mag/airmass, all48, V<=5.5
+M1_kv_0.20	extinction	880.0	880 CE	28.00	-928.07	767	k_V=0.20 mag/airmass, all48, V<=5.5
+M1_kv_0.25	extinction	910.0	910 CE	25.80	-935.79	767	k_V=0.25 mag/airmass, all48, V<=5.5
+M1_kv_0.30	extinction	820.0	820 CE	24.00	-942.38	767	k_V=0.30 mag/airmass, all48, V<=5.5
+M1_kv_0.35	extinction	720.0	720 CE	22.50	-948.16	767	k_V=0.35 mag/airmass, all48, V<=5.5
+M2_free_kv	model	160.0	160 CE	35.70	-898.45	767	Profile MLE k_V=0.10
+M3_geom_cap	model	-40.0	41 BCE	NA	-874.31	767	Geometric void cap R=41.7 deg (no extinction)
+subset_in_figure	subset	670.0	670 CE	27.00	-878.07	673	In-figure stars only (excludes 108 informes)
+subset_aratus_core	subset	500.0	500 CE	28.20	-851.66	657	Pre-Hipparchan Aratus/Eratosthenes core (excludes Equ, CrA & informes)
+subset_strict_id	subset	930.0	930 CE	25.80	-929.41	757	Strictly secure Hipparcos IDs (I <= 2)
+vmag_le_4.0	magnitude	-120.0	121 BCE	31.80	-92.95	315	Bright stars V <= 4.0, all48, k_V=0.25
+vmag_le_4.5	magnitude	50.0	50 CE	30.30	-275.91	499	Bright stars V <= 4.5, all48, k_V=0.25
+vmag_le_5.0	magnitude	610.0	610 CE	27.00	-601.64	663	Bright stars V <= 5.0, all48, k_V=0.25
