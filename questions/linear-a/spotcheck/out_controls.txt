@@ -1,0 +1,11 @@
+LB file head: var inscriptions = new Map( [     [         "Kn304",         {             "context": "LM II-LM IIIA1 or LM IIIB",             "displayHint": "stack",             "facsimileImages": [                 "images/facsimiles/Kn304.jpg"             ],             "findspot": "Room of Chariot Tablets (RCT)",             "imageRights": "",             "imageRightsURL": "",             "images": [],             "label": "KN Xd <304>",             "name": "Kn304",             "parsedInscription": "        ]e-ri-ta-ri-jo[",             "scribe": "Scribe 124",             "site": "Knossos",             "su
+LB inscriptions with name field: 5889 [('Kn', 4223), ('Py', 986), ('Th', 363), ('Va', 182), ('My', 87), ('Ti', 27), ('Kh', 7), ('Ha', 5)]
+LB clean types 2373 KN types 0 PY types 0 KN-only 0
+random LB words: ['ke-re-za', 'u-wa-ta', 'e-ka-te-re-ta', 'pa-ze-qe', 'sa-pi-de', 'a-si-wi-jo', 'a-ke-ro', 'ru-we-ta', 'ko-ro-ki-ja-o', 'wa-pa-no', 'ke-ra-me-wo', 'i-na-ma-ta', 'sa-ma-ja-so', 'u-ra-jo', 'wa-na-so-i', 'se-re-mo-ka-ra-a-pi', 'po-ma-ko', 'e-po-ro-jo', 'ke-nu-wa-so', 'e-qe-qi', 'to-ro-qa', 'pi-ri-te', 'a-ke-to-ro', 'a-sa-ma-o', 'e-re-pa-te-ja', 'a-pi-da-ta', 'me-ti-ja-no-ro', 'a-ne-a2', 'ku-ka-da-ro', 'sa-nu-we-ta']
+wa-na-ka True; ko-no-so True; pa-ka-na True; e-re-u-te-ro True; ti-ri-po-de True; di-pa False; a-mo-ra-ma True; po-ti-ni-ja True; te-o-jo True; do-e-ro True; ke-ra-me-u True; ka-ke-we True; e-ra-wo False; i-je-re-ja True; pa-i-to True; a-ni-ja False; wo-ko False; 
+held-out 96 in onomasticon 15 mentioned in translations.json 42 in unread_words 60
+held-out examples in onomasticon: ['ZU-*301-SE-DE-*21F-*118', 'ZU-*22F-DI', 'SI-DU-*34-KU-MI', 'DA-U-*49', 'SA-*323-MI', 'NU-DU-*331', 'PA-*342-I', 'WA-DU-NI-MI', 'DA-TA-RE', 'SI-RU-MA-RI-TA2']
+multiplicity n 325 mean 15.72 median 5 share zero 0.243
+ L 2 n 71 mean 51.15 median 46 zero 0
+ L 3 n 196 mean 7.51 median 5.0 zero 27
+ L 4 n 58 mean 0.1 median 0.0 zero 52

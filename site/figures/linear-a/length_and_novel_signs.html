@@ -1,15 +1,15 @@
 <figure class="fig" aria-label="Length-matched Linear A vs Mycenaean Greek Linear B and novel sign-value permutation test">
 <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;">
   <button type="button" class="la-btn" data-mode="len" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:var(--copper,#9a4d2c);color:#fff;cursor:pointer;font-size:13px;">Linear A vs Mycenaean Greek (by length)</button>
-  <button type="button" class="la-btn" data-mode="novel" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">Novel Sign Permutations (27 proposed signs)</button>
+  <button type="button" class="la-btn" data-mode="novel" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">New sign values, shuffled</button>
 </div>
 <div class="fig-scroll">
 <svg id="la-chart" class="chart" viewBox="0 0 720 270" role="img" aria-label="Comparison chart of Linear A Semitic root hit rates" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption>Left view: matching words of the exact same consonant length against all 5,189 Proto-Semitic roots under Linear A's neutralization classes, <strong>Linear A and Mycenaean Greek (Linear B) hit at identical rates</strong> (100% vs 100% at L=2; 85.0% vs 84.3% at L=3, p = 0.85; 7.1% vs 5.6% at L≥4, p = 0.54). Switch tabs to inspect the permutation test holding Linear B signs fixed and shuffling only Di Mino's 27 newly assigned consonant signs.</figcaption>
+<figcaption><strong>How often words match a Semitic root, by number of consonants.</strong> Linear A read with the proposal&rsquo;s sign values, the Linear A words not in its lexicon, and Mycenaean Greek. The rates are alike at every length. Known Semitic word lists give the same picture (Hebrew: 86% at three consonants), so this comparison cannot tell a Semitic language from Greek. The second button shows the proposal&rsquo;s new sign values against random shuffles of them; that test also fails to recognise real Canaanite spelled with the same values.</figcaption>
 <script>
 (function(){
-  const DATA = {"lengths": [{"label": "2 consonants (L=2)", "la_all": 100.0, "la_ho": 100.0, "lb": 100.0, "n_la": 86, "n_lb": 401, "p": 1.0}, {"label": "3 consonants (L=3)", "la_all": 84.95899999999999, "la_ho": 82.143, "lb": 84.30499999999999, "n_la": 246, "n_lb": 1064, "p": 0.8457598368124053}, {"label": "4+ consonants (L\u22654)", "la_all": 7.142999999999999, "la_ho": 5.882, "lb": 5.619, "n_la": 126, "n_lb": 872, "p": 0.5390702210404199}], "novel": [{"label": "All affected (A1 strict)", "obs": 49.193999999999996, "null": 49.903999999999996, "sd": 4.26, "p": 0.57443, "n": 124}, {"label": "In-lexicon (A1 strict)", "obs": 55.556000000000004, "null": 56.452999999999996, "sd": 4.808, "p": 0.57542, "n": 99}, {"label": "Held-out (A1 strict)", "obs": 24.0, "null": 22.276, "sd": 4.8340000000000005, "p": 0.52248, "n": 25}, {"label": "Held-out (A2 7-class)", "obs": 39.129999999999995, "null": 27.108999999999998, "sd": 7.683, "p": 0.10889, "n": 23}, {"label": "Held-out (B affix)", "obs": 64.0, "null": 53.564, "sd": 8.992, "p": 0.17782, "n": 25}]};
+  const DATA = {"lengths": [{"label": "2 consonants (L=2)", "la_all": 100.0, "la_ho": 100.0, "lb": 100.0, "n_la": 86, "n_lb": 401, "p": 1.0}, {"label": "3 consonants (L=3)", "la_all": 84.95899999999999, "la_ho": 82.143, "lb": 84.30499999999999, "n_la": 246, "n_lb": 1064, "p": 0.8457598368124053}, {"label": "4+ consonants (L\u22654)", "la_all": 7.142999999999999, "la_ho": 5.882, "lb": 5.619, "n_la": 126, "n_lb": 872, "p": 0.5390702210404199}], "novel": [{"label": "All words with such a sign", "obs": 49.193999999999996, "null": 49.903999999999996, "sd": 4.26, "p": 0.57443, "n": 124}, {"label": "In lexicon", "obs": 55.556000000000004, "null": 56.452999999999996, "sd": 4.808, "p": 0.57542, "n": 99}, {"label": "Not in lexicon (nine classes)", "obs": 24.0, "null": 22.276, "sd": 4.8340000000000005, "p": 0.52248, "n": 25}, {"label": "Not in lexicon (seven classes)", "obs": 39.129999999999995, "null": 27.108999999999998, "sd": 7.683, "p": 0.10889, "n": 23}, {"label": "Not in lexicon (affix-tolerant)", "obs": 64.0, "null": 53.564, "sd": 8.992, "p": 0.17782, "n": 25}]};
   const svg = document.getElementById('la-chart');
   const btns = document.querySelectorAll('.la-btn');
 
@@ -22,10 +22,10 @@
       o.push('<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="22" y2="236" stroke="var(--line,#ddd)" stroke-dasharray="2 3"/>');
       o.push('<text class="c-tick" x="' + x.toFixed(1) + '" y="252" text-anchor="middle">' + t + '%</text>');
     });
-    o.push('<text class="c-axis" x="' + left + '" y="266">Share of distinct words matching any of 5,189 Proto-Semitic roots (Regime A1, 9-class grid)</text>');
+    o.push('<text class="c-axis" x="' + left + '" y="266">Share of distinct words matching any of 5,189 Proto-Semitic roots (nine sound classes)</text>');
     // Legend
     o.push('<rect x="165" y="4" width="12" height="10" fill="var(--copper,#9a4d2c)"/><text class="c-sub" x="182" y="13">Linear A (all)</text>');
-    o.push('<rect x="285" y="4" width="12" height="10" fill="#c77d52"/><text class="c-sub" x="302" y="13">Linear A (held-out)</text>');
+    o.push('<rect x="285" y="4" width="12" height="10" fill="#c77d52"/><text class="c-sub" x="302" y="13">Linear A (not in lexicon)</text>');
     o.push('<rect x="440" y="4" width="12" height="10" fill="var(--faint,#6e7681)"/><text class="c-sub" x="457" y="13">Linear B (Mycenaean Greek)</text>');
 
     DATA.lengths.forEach(function(row, i){
@@ -55,7 +55,7 @@
       o.push('<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="22" y2="236" stroke="var(--line,#ddd)" stroke-dasharray="2 3"/>');
       o.push('<text class="c-tick" x="' + x.toFixed(1) + '" y="252" text-anchor="middle">' + t + '%</text>');
     });
-    o.push('<text class="c-axis" x="' + left + '" y="266">Match rate with Di Mino\'s 27 novel signs (copper dot) vs 1,000 random sign shuffles (grey band ±1 SD)</text>');
+    o.push('<text class="c-axis" x="' + left + '" y="266">Match rate with the proposal\'s 27 new or revised sign values (copper dot) against 1,000 shuffles of them (grey band, one SD)</text>');
     DATA.novel.forEach(function(row, i){
       const y = top + i * rowH + 14;
       o.push('<text class="c-group" x="4" y="' + (y + 3) + '">' + row.label + '</text>');
