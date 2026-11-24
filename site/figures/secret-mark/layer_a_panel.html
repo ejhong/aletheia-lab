@@ -1,0 +1,72 @@
+<figure class="fig" aria-label="14-author Greek stylometry attribution of the Mar Saba Letter epistolary frame">
+<div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;align-items:center">
+  <span style="font-size:12px;color:var(--muted);margin-right:4px">Stylometric method (529-word Clement frame):</span>
+  <button type="button" class="sm-a-btn is-on" data-m="mfw" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">MFW-150 Cosine Delta</button>
+  <button type="button" class="sm-a-btn" data-m="c34" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Char 3–4-gram Delta</button>
+  <button type="button" class="sm-a-btn" data-m="gi" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">General Imposters</button>
+  <button type="button" class="sm-a-btn" data-m="lr" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">TF-IDF LogReg</button>
+  <button type="button" class="sm-a-btn" data-m="oneclass" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">One-Class Percentile</button>
+</div>
+<div class="fig-scroll">
+<svg id="sm-a-svg" class="chart" viewBox="0 0 720 390" role="img" aria-label="14-author stylometry rankings for Mar Saba letter frame" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+<figcaption><strong>Layer A (529-word epistolary frame) across 14 Greek Christian &amp; Alexandrian authors (1st–5th c. CE).</strong> Clement of Alexandria (highlighted in copper) finishes #2 on MFW-150 and Character 3–4-gram Cosine Delta and #3 on General Imposters and Logistic Regression—edged out by 4th–5th c. Fathers (Theodoret of Cyrus, Eusebius of Caesarea, Origen). Yet on one-class self-distance percentile (rightmost toggle), Clement ranks #1 (88.6th percentile, closer to Clement's training centroid than Clement's own held-out homily <em>Quis dives salvetur</em> at the 97.6th percentile). Short epistolary Greek leaves authentic Clement and later patristic prose closely overlapping.</figcaption>
+<script>
+(function(){
+  var DATA = {"mfw": [{"a": "Theodoret of Cyrus", "v": 0.7557}, {"a": "Clement of Alexandria", "v": 0.8959}, {"a": "Theophilus of Antioch", "v": 0.914}, {"a": "Athenagoras", "v": 0.9159}, {"a": "Hippolytus", "v": 0.9186}, {"a": "Eusebius of Caesarea", "v": 0.9609}, {"a": "Gregory of Nazianzus", "v": 0.981}, {"a": "Cyril of Alexandria", "v": 0.9877}, {"a": "Origen", "v": 1.0526}, {"a": "Tatian", "v": 1.0792}, {"a": "Epiphanius of Salamis", "v": 1.0805}, {"a": "Philo of Alexandria", "v": 1.1201}, {"a": "Justin Martyr", "v": 1.1509}, {"a": "Athanasius of Alexandria", "v": 1.1541}], "c34": [{"a": "Eusebius of Caesarea", "v": 0.8626}, {"a": "Clement of Alexandria", "v": 0.8748}, {"a": "Theodoret of Cyrus", "v": 0.8843}, {"a": "Origen", "v": 0.91}, {"a": "Cyril of Alexandria", "v": 0.9358}, {"a": "Epiphanius of Salamis", "v": 0.9634}, {"a": "Tatian", "v": 0.9868}, {"a": "Hippolytus", "v": 0.9983}, {"a": "Athenagoras", "v": 1.0184}, {"a": "Gregory of Nazianzus", "v": 1.0487}, {"a": "Theophilus of Antioch", "v": 1.084}, {"a": "Justin Martyr", "v": 1.1211}, {"a": "Philo of Alexandria", "v": 1.1222}, {"a": "Athanasius of Alexandria", "v": 1.1389}], "gi": [{"a": "Theodoret of Cyrus", "v": 0.216}, {"a": "Eusebius of Caesarea", "v": 0.172}, {"a": "Clement of Alexandria", "v": 0.096}, {"a": "Cyril of Alexandria", "v": 0.072}, {"a": "Hippolytus", "v": 0.072}, {"a": "Epiphanius of Salamis", "v": 0.07}, {"a": "Origen", "v": 0.068}, {"a": "Theophilus of Antioch", "v": 0.062}, {"a": "Tatian", "v": 0.058}, {"a": "Gregory of Nazianzus", "v": 0.046}, {"a": "Athenagoras", "v": 0.04}, {"a": "Philo of Alexandria", "v": 0.016}, {"a": "Athanasius of Alexandria", "v": 0.006}, {"a": "Justin Martyr", "v": 0.006}], "lr": [{"a": "Theodoret of Cyrus", "v": 0.1279}, {"a": "Origen", "v": 0.1258}, {"a": "Clement of Alexandria", "v": 0.1128}, {"a": "Hippolytus", "v": 0.0984}, {"a": "Eusebius of Caesarea", "v": 0.0865}, {"a": "Epiphanius of Salamis", "v": 0.0757}, {"a": "Athenagoras", "v": 0.0627}, {"a": "Theophilus of Antioch", "v": 0.0567}, {"a": "Tatian", "v": 0.0513}, {"a": "Athanasius of Alexandria", "v": 0.0467}, {"a": "Cyril of Alexandria", "v": 0.0458}, {"a": "Gregory of Nazianzus", "v": 0.0444}, {"a": "Justin Martyr", "v": 0.0345}, {"a": "Philo of Alexandria", "v": 0.0307}], "oneclass": [{"a": "Clement of Alexandria", "v": 88.6, "d": 0.874}, {"a": "Eusebius of Caesarea", "v": 89.9, "d": 0.878}, {"a": "Epiphanius of Salamis", "v": 90.0, "d": 0.889}, {"a": "Theodoret of Cyrus", "v": 90.6, "d": 0.873}, {"a": "Athenagoras", "v": 92.1, "d": 0.995}, {"a": "Hippolytus", "v": 92.4, "d": 0.91}, {"a": "Origen", "v": 95.6, "d": 0.898}, {"a": "Athanasius of Alexandria", "v": 100.0, "d": 1.162}, {"a": "Cyril of Alexandria", "v": 100.0, "d": 0.937}, {"a": "Gregory of Nazianzus", "v": 100.0, "d": 1.032}, {"a": "Justin Martyr", "v": 100.0, "d": 1.153}, {"a": "Philo of Alexandria", "v": 100.0, "d": 1.114}, {"a": "Tatian", "v": 100.0, "d": 1.01}, {"a": "Theophilus of Antioch", "v": 100.0, "d": 1.046}], "gi_thresh": 0.106};
+  var svg = document.getElementById("sm-a-svg");
+  var btns = document.querySelectorAll(".sm-a-btn");
+  var L = 190, R = 680, T = 30, B = 355;
+  function el(tag, attrs, txt){
+    var n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (txt !== undefined) n.textContent = txt;
+    return n;
+  }
+  var META = {
+    mfw: {title: "MFW-150 Function-Word Cosine Delta (lower = closer)", min: 0.65, max: 1.25, fmt: function(v){return v.toFixed(3);}, lower: true},
+    c34: {title: "Character 3–4-gram Cosine Delta (lower = closer)", min: 0.75, max: 1.25, fmt: function(v){return v.toFixed(3);}, lower: true},
+    gi:  {title: "General Imposters Win Rate (500 iters; higher = closer; 95%-spec line = " + DATA.gi_thresh + ")", min: 0, max: 0.28, fmt: function(v){return (v*100).toFixed(1) + "%";}, lower: false},
+    lr:  {title: "L2 TF-IDF Logistic Regression Probability (higher = closer)", min: 0, max: 0.18, fmt: function(v){return (v*100).toFixed(1) + "%";}, lower: false},
+    oneclass: {title: "One-Class Percentile Inside Each Author's Own Chunks (lower = better fit)", min: 70, max: 102, fmt: function(v){return v.toFixed(1) + "%";}, lower: true}
+  };
+  function draw(m){
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    var rows = DATA[m];
+    var meta = META[m];
+    svg.appendChild(el("text", {x: L, y: 18, "font-size": 12, "font-weight": 600, fill: "var(--ink)"}, meta.title));
+    var step = (B - T) / rows.length;
+    function sx(v){
+      var t = (v - meta.min) / (meta.max - meta.min);
+      if (t < 0) t = 0; if (t > 1) t = 1;
+      return L + t * (R - L);
+    }
+    if (m === "gi") {
+      var tx = sx(DATA.gi_thresh);
+      svg.appendChild(el("line", {x1: tx, x2: tx, y1: T, y2: B, stroke: "var(--teal)", "stroke-dasharray": "4,3", "stroke-width": 1.2}));
+    }
+    if (m === "oneclass") {
+      var tx95 = sx(95);
+      svg.appendChild(el("line", {x1: tx95, x2: tx95, y1: T, y2: B, stroke: "#b91c1c", "stroke-dasharray": "4,3", "stroke-width": 1.2}));
+    }
+    rows.forEach(function(r, i){
+      var y = T + i * step + 3;
+      var h = step - 6;
+      var isClem = r.a === "Clement of Alexandria";
+      var xEnd = sx(r.v);
+      svg.appendChild(el("text", {x: L - 8, y: y + h * 0.72, "text-anchor": "end", "font-size": 11, "font-weight": isClem ? 700 : 400, fill: isClem ? "var(--copper)" : "var(--ink)"}, (i+1) + ". " + r.a));
+      svg.appendChild(el("rect", {x: L, y: y, width: Math.max(2, xEnd - L), height: h, rx: 2, fill: isClem ? "var(--copper)" : "#94a3b8", opacity: isClem ? 0.92 : 0.65}));
+      svg.appendChild(el("text", {x: xEnd + 5, y: y + h * 0.72, "font-size": 10.5, "font-weight": isClem ? 700 : 400, fill: isClem ? "var(--copper)" : "var(--muted)"}, meta.fmt(r.v)));
+    });
+  }
+  btns.forEach(function(b){
+    b.addEventListener("click", function(){
+      btns.forEach(function(x){ x.classList.remove("is-on"); x.style.background = "transparent"; x.style.color = "var(--ink)"; });
+      b.classList.add("is-on"); b.style.background = "var(--copper)"; b.style.color = "#fff";
+      draw(b.getAttribute("data-m"));
+    });
+  });
+  draw("mfw");
+})();
+</script>
+</figure>
