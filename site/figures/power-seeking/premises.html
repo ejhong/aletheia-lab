@@ -1,0 +1,152 @@
+<figure class="fig" aria-label="Which premises carry which conclusion across coherence, power-seeking, and shutdown">
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center;" role="tablist" aria-label="Filter argument family">
+  <button type="button" class="ps-tab" data-fam="all" aria-selected="true" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:var(--copper,#9a4d2c);color:#fff;cursor:pointer;font-size:13px;">All 14 statements</button>
+  <button type="button" class="ps-tab" data-fam="coherence" aria-selected="false" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">1. Coherence &amp; utility</button>
+  <button type="button" class="ps-tab" data-fam="power" aria-selected="false" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">2. Power-seeking</button>
+  <button type="button" class="ps-tab" data-fam="shutdown" aria-selected="false" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">3. Shutdown</button>
+</div>
+<div class="fig-scroll">
+<table class="matrix" id="ps-matrix">
+<thead>
+<tr>
+  <th scope="col">Verified theorem / limit</th>
+  <th scope="col">Completeness</th>
+  <th scope="col">Transitivity / EU</th>
+  <th scope="col">Optimality / retargetability</th>
+  <th scope="col">Orbit / reward symmetry</th>
+  <th scope="col">What it establishes</th>
+</tr>
+</thead>
+<tbody>
+<tr data-fam="coherence">
+  <td>vNM expected-utility representation &amp; uniqueness<span class="m-sub">S1a · vNM 1944</span></td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td>Also needs Independence &amp; Continuity; yields u unique up to a·u + b (a &gt; 0).</td>
+</tr>
+<tr data-fam="coherence">
+  <td>Intransitive 3-cycle money pump<span class="m-sub">S1b · Gustafsson 2022</span></td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td>Strict cycle a ≺ b ≺ c ≺ a + willingness to pay ε &gt; 0 loses money strictly.</td>
+</tr>
+<tr data-fam="coherence">
+  <td>Incomplete preferences resist money pumps<span class="m-sub">S1c · Limit</span></td>
+  <td class="m-no" aria-label="dropped">✕</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td>Reflexive, transitive, independent, incomplete orders suffer zero money pumps.</td>
+</tr>
+<tr data-fam="coherence">
+  <td>History-utility triviality<span class="m-sub">S1d · Shah 2018</span></td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td>Every deterministic policy π strictly maximises some utility U over histories.</td>
+</tr>
+<tr data-fam="power">
+  <td>Simple &amp; n-fold retargetability → orbit tendency<span class="m-sub">S2a, S2b · Turner &amp; Tadepalli 2022</span></td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td>At least n× as many orbit parameters favour B over A (under uniform orbit count).</td>
+</tr>
+<tr data-fam="power">
+  <td>Optimal-policy POWER-seeking &amp; strict converse failure<span class="m-sub">S2c · Turner et al. 2021</span></td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td>Involution copy φ·F₁ ⊆ F₂ gives POWER(F₂) ≥_most POWER(F₁), and directly if φ·D = D.</td>
+</tr>
+<tr data-fam="power">
+  <td>Drop reward symmetry → optimal policy shuts down<span class="m-sub">S2d · Counterexample</span></td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td class="m-no" aria-label="dropped">✕</td>
+  <td>On a 3-state MDP, skewed reward makes POWER(open) &lt; POWER(shutdown).</td>
+</tr>
+<tr data-fam="power">
+  <td>Drop optimality → symmetric reward still shuts down<span class="m-sub">S2e · Counterexample</span></td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="dropped">✕</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td>Under permutation-invariant D*, a non-optimal policy shuts down 100% of the time.</td>
+</tr>
+<tr data-fam="power">
+  <td>Dominated options add zero POWER<span class="m-sub">S2f · Counterexample</span></td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td>Strictly larger |F₂| &gt; |F₁| yields identical optVal and POWER for every reward D.</td>
+</tr>
+<tr data-fam="shutdown">
+  <td>Shutdown manipulation dichotomy<span class="m-sub">S3a · Soares 2015 / Thornley 2024</span></td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td>At small cost c, EU maximiser avoids both resisting &amp; causing shutdown only if vRun = vShut.</td>
+</tr>
+<tr data-fam="shutdown">
+  <td>Utility-indifference corrigibility<span class="m-sub">S3b · Counterexample</span></td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td>If vRun = vShut and c &gt; 0, leaving the button alone strictly beats both Prevent and Cause.</td>
+</tr>
+<tr data-fam="shutdown">
+  <td>Transitive indifference impossibility under usefulness<span class="m-sub">S3c · Thornley 2024</span></td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-yes" aria-label="needed">●</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td>Complete, transitive, useful agents must strictly prefer some trajectory length over another.</td>
+</tr>
+<tr data-fam="shutdown">
+  <td>Incomplete-preferences escape hatch<span class="m-sub">S3d · Thornley 2024</span></td>
+  <td class="m-no" aria-label="dropped">✕</td>
+  <td class="m-yes" aria-label="kept">●</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td class="m-no" aria-label="not needed">·</td>
+  <td>Transitive incomplete order is useful within every length with zero cross-length preference.</td>
+</tr>
+<tr class="m-foot">
+  <td colspan="6">● = assumption used by the proof; ✕ = assumption explicitly dropped in the counterexample; · = not needed. Every row is a Lean 4 theorem verified with <code>lake build --wfail</code> and <code>#assert_standard_axioms</code>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figcaption>Premise-by-premise audit of all 14 locked Lean 4 theorems in <code>PowerSeeking/Statement.lean</code>. Filter by family to see which single assumption carries each result and what breaks when it is dropped.</figcaption>
+<script>
+(function(){
+  const tabs = document.querySelectorAll('.ps-tab');
+  const rows = document.querySelectorAll('#ps-matrix tbody tr[data-fam]');
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const fam = btn.getAttribute('data-fam');
+      tabs.forEach(function(b){
+        const on = b === btn;
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+        b.style.background = on ? 'var(--copper,#9a4d2c)' : 'transparent';
+        b.style.color = on ? '#fff' : 'inherit';
+      });
+      rows.forEach(function(r){
+        r.style.display = (fam === 'all' || r.getAttribute('data-fam') === fam) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
+</figure>
