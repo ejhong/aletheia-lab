@@ -1,0 +1,10 @@
+# Manifest — Is Linear A Cracked? (#12)
+
+All datasets retrieved on **2026-11-24** into gitignored `questions/linear-a/data/`. Treated strictly as data (no external scripts executed).
+
+| File (`data/`) | Source & Pinned Revision | URL | Licence | SHA-256 |
+|---|---|---|---|---|
+| `kaphtor_d419ccc1e79f.tar.gz` | Tom Di Mino / Plasma AI `kaphtor` (pinned commit `d419ccc1e79fe3454d1e99095f5ce52714a3fa5a`, Zenodo `doi:10.5281/zenodo.24375016`): reconciled Linear A corpus (`1,719` records), `sign_values.json` (`86` signs + `5` neutralization classes), `lexicon.json` (`736` entries), `unread_words.json`, `semitic_roots.json` (`5,189` Proto-Semitic roots), comparative roots (`egyptian_roots.json` 3,053, `luwian_roots.json` 1,677, `hattic_roots.json` 299, `hurrian_roots.json` 129), and bronze-age Semitic contact lexicons (`amarna_canaanite.jsonl` 247, `akkadian_lexicon.jsonl` 6,233, `hebrew_lexicon.jsonl` 8,763) | `https://api.github.com/repos/plasma-ai/kaphtor/tarball/d419ccc1e79fe3454d1e99095f5ce52714a3fa5a` | Data: CC-BY 4.0 (code: Apache-2.0, unused) | `ed2770fbd6bfd967ffe951320f8eceda24b94481c6c9a96563941c17539dd5b9` |
+| `sigla_database.js` | Salgarella & Castellan, *SigLA — The Signs of Linear A* (independent primary Linear A epigraphic database) | `https://sigla.phis.me/database.js` | Open academic resource | `263e5fcd8c90999cdcd326445669e1a1ec775831d982555c213f0ea2779ad586` |
+| `lineara_xyz_inscriptions.js` | `lineara.xyz` (Linear A inscription explorer based on GORILA / Younger) | `https://lineara.xyz/LinearAInscriptions.js` | Open academic resource | `9a14cc300201ac8ed07563c09b92142ab59de91a74e646b2e743ca6aeb695f5e` |
+| `linearb_xyz_inscriptions.js` | `mwenge/linearb.xyz` (pinned commit `84e0b00ec00292e7afd4f88315dd715b11666efb`): Mycenaean Greek Linear B inscription corpus (negative control in the same Aegean CV syllabary) | `https://raw.githubusercontent.com/mwenge/linearb.xyz/84e0b00ec00292e7afd4f88315dd715b11666efb/LinearBInscriptions.js` | Open GitHub repository | `0967d75699b814888f47e7abff3e0b40e5e3aaa2cc67983bfcc371925fa5c1cf` |
