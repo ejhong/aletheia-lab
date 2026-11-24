@@ -59,3 +59,19 @@ protocol is taken and the alternatives are reported beside it.
    the samples themselves is now reported beside it.
 
 Verdict rules are applied to the rerun exactly as locked.
+
+## Record added with the rerun — 2026-11-24
+
+Amendment 2 was applied and the program rerun on 2026-11-24. No check changed its outcome and neither label
+changed. Three further departures of the first run from the plan came to light after Amendment 2 was written. They
+change nothing that was rerun and are recorded here so the list is complete.
+
+- The finding that the printed ages match the stated method with the sign of the reservoir correction reversed
+  (and, in Core 52, the land curve) was made after the lock by a search that is in no committed program. It is not
+  part of the locked plan. A separate program in `spotcheck/radiocarbon/` reproduces it.
+- The first run added a fifth calibration scenario using the errors printed in SI Table S1, and a detector of age
+  reversals with depth. Neither is in the protocol. Both are kept and reported as additions.
+- The Core 64 and Core 67 comparison in check A3 was made in metallic dust particles per kilogram. In spherules
+  per kilogram the ratio is 0.31 and that branch fails. The protocol's wording ("microspherule/MDP peak") allows
+  either, and the other branch of A3 (under 20% sampled) holds regardless.
+

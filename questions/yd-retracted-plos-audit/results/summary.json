@@ -1139,6 +1139,20 @@
       "77": 30.41
     },
     "total_core_coverage_pct": 16.65,
+    "per_core_summed_sample_thickness_cm": {
+      "52": 37.0,
+      "64": 27.0,
+      "67": 12.0,
+      "77": 9.0
+    },
+    "per_core_summed_sample_thickness_pct": {
+      "52": 4.23,
+      "64": 3.79,
+      "67": 2.31,
+      "77": 1.39
+    },
+    "total_summed_sample_thickness_cm": 85.0,
+    "total_summed_sample_thickness_pct": 3.08,
     "core64_out_to_core67_ydb_cdp_ratio": 1.062,
     "table_s7_blind_peak_scan": {
       "mass_C64": {
@@ -1147,6 +1161,7 @@
           312.0,
           318.0
         ],
+        "n_depths_inside_locked_interval": 1,
         "elements": {
           "Pt": {
             "max_depth_cm": 295.0,
@@ -1154,7 +1169,8 @@
             "max_val": 1.4511720487698568e-14,
             "median_val": 1.0514765289549388e-14,
             "max_to_median": 1.38,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Ir": {
             "max_depth_cm": 273.0,
@@ -1162,7 +1178,8 @@
             "max_val": 6.225130977022413e-15,
             "median_val": 4.474498109724391e-15,
             "max_to_median": 1.39,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Pd": {
             "max_depth_cm": 287.5,
@@ -1170,7 +1187,8 @@
             "max_val": 2.967394138701494e-14,
             "median_val": 2.397138766085017e-14,
             "max_to_median": 1.24,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Ni": {
             "max_depth_cm": 295.0,
@@ -1178,7 +1196,8 @@
             "max_val": 3.512113744191819e-14,
             "median_val": 2.151567616765045e-14,
             "max_to_median": 1.63,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Co": {
             "max_depth_cm": 287.5,
@@ -1186,7 +1205,8 @@
             "max_val": 3.932226025539126e-14,
             "median_val": 7.0738542753845046e-15,
             "max_to_median": 5.56,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Cr": {
             "max_depth_cm": 287.5,
@@ -1194,7 +1214,8 @@
             "max_val": 1.2950459348162973e-13,
             "median_val": 8.63324692730088e-14,
             "max_to_median": 1.5,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Pt/Ir": {
             "max_depth_cm": 295.0,
@@ -1202,7 +1223,8 @@
             "max_val": 3.386903838987497,
             "median_val": 2.1503926404891027,
             "max_to_median": 1.58,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Pt/Pd": {
             "max_depth_cm": 315.0,
@@ -1210,7 +1232,8 @@
             "max_val": 0.7570355987109625,
             "median_val": 0.5229760586178859,
             "max_to_median": 1.45,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": true,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Pt/Fe": {
             "max_depth_cm": 273.0,
@@ -1218,7 +1241,8 @@
             "max_val": 0.00010438232479157832,
             "median_val": 5.539378492855085e-05,
             "max_to_median": 1.88,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Ni/Fe": {
             "max_depth_cm": 273.0,
@@ -1226,14 +1250,111 @@
             "max_val": 0.00022449173246445668,
             "median_val": 0.00012618711584314225,
             "max_to_median": 1.78,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
+          },
+          "Cr/Fe": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 0.0009151412591335422,
+            "median_val": 0.00048365964238686543,
+            "max_to_median": 1.89,
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
+          },
+          "Co/Fe": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 0.0002778698561545629,
+            "median_val": 4.1361807372745685e-05,
+            "max_to_median": 6.72,
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           }
         },
-        "ydb_pt_ir": [
+        "n_measures": 12,
+        "n_measures_peaking_inside_locked_interval": 1,
+        "n_measures_peaking_outside_locked_interval": 11,
+        "n_expected_inside_by_chance": 2.0,
+        "secondary_pm2cm_window": {
+          "window_cm": [
+            310.0,
+            320.0
+          ],
+          "note": "First run's undocumented +-2 cm widening (Amendment 2, item 4); secondary only.",
+          "n_depths_inside": 1,
+          "n_measures": 12,
+          "n_measures_peaking_inside": 1,
+          "n_expected_inside_by_chance": 2.0,
+          "first_run_10_measures_n_peaking_inside": 1,
+          "pt_ir": [
+            2.1
+          ],
+          "pt_pd": [
+            0.76
+          ]
+        },
+        "locked_interval_pt_ir": [
           2.1
         ],
-        "ydb_pt_pd": [
+        "locked_interval_pt_pd": [
           0.76
+        ],
+        "pt_ir_by_depth": [
+          {
+            "sample": "C64 272-274",
+            "depth_cm": 273.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 1.561,
+            "pt_ir_from_masses": 1.561,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 286-290",
+            "depth_cm": 287.5,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.199,
+            "pt_ir_from_masses": 2.199,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 293-297",
+            "depth_cm": 295.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 3.387,
+            "pt_ir_from_masses": 3.387,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 302-308",
+            "depth_cm": 305.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.012,
+            "pt_ir_from_masses": 2.012,
+            "within_CI_chondrite_1p9_2p1": true,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 312-318",
+            "depth_cm": 315.0,
+            "inside_locked_interval": true,
+            "pt_ir_table_column": 2.102,
+            "pt_ir_from_masses": 2.102,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 323-325",
+            "depth_cm": 324.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.52,
+            "pt_ir_from_masses": 2.52,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          }
         ]
       },
       "mass_C67": {
@@ -1242,6 +1363,7 @@
           32.0,
           35.0
         ],
+        "n_depths_inside_locked_interval": 1,
         "elements": {
           "Pt": {
             "max_depth_cm": 31.0,
@@ -1249,7 +1371,8 @@
             "max_val": 1.2821895911718693e-14,
             "median_val": 8.458460009108187e-15,
             "max_to_median": 1.52,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Ir": {
             "max_depth_cm": 33.5,
@@ -1257,7 +1380,8 @@
             "max_val": 4.8400684473111645e-15,
             "median_val": 3.46287690019744e-15,
             "max_to_median": 1.4,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": true,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Pd": {
             "max_depth_cm": 25.5,
@@ -1265,7 +1389,8 @@
             "max_val": 2.8873281909195455e-14,
             "median_val": 1.2146400919742549e-14,
             "max_to_median": 2.38,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Ni": {
             "max_depth_cm": 25.5,
@@ -1273,7 +1398,8 @@
             "max_val": 3.3884555179985163e-14,
             "median_val": 2.6326208543034897e-14,
             "max_to_median": 1.29,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Co": {
             "max_depth_cm": 27.0,
@@ -1281,7 +1407,8 @@
             "max_val": 6.031561929361388e-14,
             "median_val": 1.0866429680316978e-14,
             "max_to_median": 5.55,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Cr": {
             "max_depth_cm": 27.0,
@@ -1289,7 +1416,8 @@
             "max_val": 2.202079584036036e-13,
             "median_val": 6.651631309750344e-14,
             "max_to_median": 3.31,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Pt/Ir": {
             "max_depth_cm": 31.0,
@@ -1297,7 +1425,8 @@
             "max_val": 3.588205089498819,
             "median_val": 2.556255299167847,
             "max_to_median": 1.4,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Pt/Pd": {
             "max_depth_cm": 35.5,
@@ -1305,7 +1434,8 @@
             "max_val": 1.1917517104990345,
             "median_val": 0.6971669535739975,
             "max_to_median": 1.71,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Pt/Fe": {
             "max_depth_cm": 31.0,
@@ -1313,7 +1443,8 @@
             "max_val": 0.00031235919587003483,
             "median_val": 4.366241384979337e-05,
             "max_to_median": 7.15,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Ni/Fe": {
             "max_depth_cm": 31.0,
@@ -1321,18 +1452,115 @@
             "max_val": 0.00027381822284748986,
             "median_val": 0.00014210664298443886,
             "max_to_median": 1.93,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
+          },
+          "Cr/Fe": {
+            "max_depth_cm": 27.0,
+            "max_sample": "C67 26-28",
+            "max_val": 0.0006851586938866526,
+            "median_val": 0.0004231960982599005,
+            "max_to_median": 1.62,
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
+          },
+          "Co/Fe": {
+            "max_depth_cm": 27.0,
+            "max_sample": "C67 26-28",
+            "max_val": 0.00018766701819392914,
+            "median_val": 8.529287178447395e-05,
+            "max_to_median": 2.2,
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           }
         },
-        "ydb_pt_ir": [
-          3.59,
-          1.7,
-          2.31
+        "n_measures": 12,
+        "n_measures_peaking_inside_locked_interval": 1,
+        "n_measures_peaking_outside_locked_interval": 11,
+        "n_expected_inside_by_chance": 2.0,
+        "secondary_pm2cm_window": {
+          "window_cm": [
+            30.0,
+            37.0
+          ],
+          "note": "First run's undocumented +-2 cm widening (Amendment 2, item 4); secondary only.",
+          "n_depths_inside": 3,
+          "n_measures": 12,
+          "n_measures_peaking_inside": 6,
+          "n_expected_inside_by_chance": 6.0,
+          "first_run_10_measures_n_peaking_inside": 6,
+          "pt_ir": [
+            3.59,
+            1.7,
+            2.31
+          ],
+          "pt_pd": [
+            1.19,
+            0.63,
+            1.19
+          ]
+        },
+        "locked_interval_pt_ir": [
+          1.7
         ],
-        "ydb_pt_pd": [
-          1.19,
-          0.63,
-          1.19
+        "locked_interval_pt_pd": [
+          0.63
+        ],
+        "pt_ir_by_depth": [
+          {
+            "sample": "C67 25-26",
+            "depth_cm": 25.5,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.619,
+            "pt_ir_from_masses": 2.619,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 26-28",
+            "depth_cm": 27.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.493,
+            "pt_ir_from_masses": 2.493,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 28-30",
+            "depth_cm": 29.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.968,
+            "pt_ir_from_masses": 2.968,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 30-32",
+            "depth_cm": 31.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 3.588,
+            "pt_ir_from_masses": 3.588,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 32-35",
+            "depth_cm": 33.5,
+            "inside_locked_interval": true,
+            "pt_ir_table_column": 1.704,
+            "pt_ir_from_masses": 1.704,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 35-36",
+            "depth_cm": 35.5,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.311,
+            "pt_ir_from_masses": 2.311,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          }
         ]
       },
       "conc_C64": {
@@ -1341,6 +1569,7 @@
           312.0,
           318.0
         ],
+        "n_depths_inside_locked_interval": 1,
         "elements": {
           "Pt": {
             "max_depth_cm": 295.0,
@@ -1348,7 +1577,8 @@
             "max_val": 4.083212845761139e-08,
             "median_val": 2.975050264322596e-08,
             "max_to_median": 1.37,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Ir": {
             "max_depth_cm": 273.0,
@@ -1356,7 +1586,8 @@
             "max_val": 1.763713753773903e-08,
             "median_val": 1.262913383531152e-08,
             "max_to_median": 1.4,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Pd": {
             "max_depth_cm": 287.5,
@@ -1364,7 +1595,8 @@
             "max_val": 8.393791167396699e-08,
             "median_val": 6.770412480912754e-08,
             "max_to_median": 1.24,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Ni": {
             "max_depth_cm": 295.0,
@@ -1372,7 +1604,8 @@
             "max_val": 9.882155577772292e-08,
             "median_val": 6.079893970193974e-08,
             "max_to_median": 1.63,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Co": {
             "max_depth_cm": 287.5,
@@ -1380,7 +1613,8 @@
             "max_val": 1.112298620897762e-07,
             "median_val": 1.9977705228926358e-08,
             "max_to_median": 5.57,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Cr": {
             "max_depth_cm": 287.5,
@@ -1388,7 +1622,8 @@
             "max_val": 3.6632629913432417e-07,
             "median_val": 2.437278946083563e-07,
             "max_to_median": 1.5,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Pt/Ir": {
             "max_depth_cm": 295.0,
@@ -1396,7 +1631,8 @@
             "max_val": 3.386903838987497,
             "median_val": 2.1503926404891027,
             "max_to_median": 1.58,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Pt/Pd": {
             "max_depth_cm": 315.0,
@@ -1404,7 +1640,8 @@
             "max_val": 0.7570355987109625,
             "median_val": 0.5229760586178859,
             "max_to_median": 1.45,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": true,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Pt/Fe": {
             "max_depth_cm": 273.0,
@@ -1412,7 +1649,8 @@
             "max_val": 0.00010438232479157831,
             "median_val": 5.5393784928550843e-05,
             "max_to_median": 1.88,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Ni/Fe": {
             "max_depth_cm": 273.0,
@@ -1420,14 +1658,111 @@
             "max_val": 0.00022449173246445668,
             "median_val": 0.00012618711584314228,
             "max_to_median": 1.78,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
+          },
+          "Cr/Fe": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 0.0009151412591335423,
+            "median_val": 0.0004836596423868654,
+            "max_to_median": 1.89,
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
+          },
+          "Co/Fe": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 0.0002778698561545629,
+            "median_val": 4.136180737274567e-05,
+            "max_to_median": 6.72,
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           }
         },
-        "ydb_pt_ir": [
+        "n_measures": 12,
+        "n_measures_peaking_inside_locked_interval": 1,
+        "n_measures_peaking_outside_locked_interval": 11,
+        "n_expected_inside_by_chance": 2.0,
+        "secondary_pm2cm_window": {
+          "window_cm": [
+            310.0,
+            320.0
+          ],
+          "note": "First run's undocumented +-2 cm widening (Amendment 2, item 4); secondary only.",
+          "n_depths_inside": 1,
+          "n_measures": 12,
+          "n_measures_peaking_inside": 1,
+          "n_expected_inside_by_chance": 2.0,
+          "first_run_10_measures_n_peaking_inside": 1,
+          "pt_ir": [
+            2.1
+          ],
+          "pt_pd": [
+            0.76
+          ]
+        },
+        "locked_interval_pt_ir": [
           2.1
         ],
-        "ydb_pt_pd": [
+        "locked_interval_pt_pd": [
           0.76
+        ],
+        "pt_ir_by_depth": [
+          {
+            "sample": "C64 272-274",
+            "depth_cm": 273.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 1.561,
+            "pt_ir_from_masses": 1.561,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 286-290",
+            "depth_cm": 287.5,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.199,
+            "pt_ir_from_masses": 2.199,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 293-297",
+            "depth_cm": 295.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 3.387,
+            "pt_ir_from_masses": 3.387,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 302-308",
+            "depth_cm": 305.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.012,
+            "pt_ir_from_masses": 2.012,
+            "within_CI_chondrite_1p9_2p1": true,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 312-318",
+            "depth_cm": 315.0,
+            "inside_locked_interval": true,
+            "pt_ir_table_column": 2.102,
+            "pt_ir_from_masses": 2.102,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C64 323-325",
+            "depth_cm": 324.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.52,
+            "pt_ir_from_masses": 2.52,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          }
         ]
       },
       "conc_C67": {
@@ -1436,6 +1771,7 @@
           32.0,
           35.0
         ],
+        "n_depths_inside_locked_interval": 1,
         "elements": {
           "Pt": {
             "max_depth_cm": 31.0,
@@ -1443,7 +1779,8 @@
             "max_val": 3.6030734178334695e-08,
             "median_val": 2.381622348516553e-08,
             "max_to_median": 1.51,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Ir": {
             "max_depth_cm": 33.5,
@@ -1451,7 +1788,8 @@
             "max_val": 1.3565944872499536e-08,
             "median_val": 9.72828902254948e-09,
             "max_to_median": 1.39,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": true,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Pd": {
             "max_depth_cm": 25.5,
@@ -1459,7 +1797,8 @@
             "max_val": 8.116087137246366e-08,
             "median_val": 3.416022414042287e-08,
             "max_to_median": 2.38,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Ni": {
             "max_depth_cm": 25.5,
@@ -1467,7 +1806,8 @@
             "max_val": 9.524722659255724e-08,
             "median_val": 7.406265271987139e-08,
             "max_to_median": 1.29,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Co": {
             "max_depth_cm": 27.0,
@@ -1475,7 +1815,8 @@
             "max_val": 1.69340887766515e-07,
             "median_val": 3.057031969206236e-08,
             "max_to_median": 5.54,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Cr": {
             "max_depth_cm": 27.0,
@@ -1483,7 +1824,8 @@
             "max_val": 6.182513187469878e-07,
             "median_val": 1.8694447042673543e-07,
             "max_to_median": 3.31,
-            "peak_in_claimed_ydb": false
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           },
           "Pt/Ir": {
             "max_depth_cm": 31.0,
@@ -1491,7 +1833,8 @@
             "max_val": 3.5882050894988193,
             "median_val": 2.556255299167847,
             "max_to_median": 1.4,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Pt/Pd": {
             "max_depth_cm": 35.5,
@@ -1499,7 +1842,8 @@
             "max_val": 1.1917517104990343,
             "median_val": 0.6971669535739975,
             "max_to_median": 1.71,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Pt/Fe": {
             "max_depth_cm": 31.0,
@@ -1507,7 +1851,8 @@
             "max_val": 0.0003123591958700348,
             "median_val": 4.3662413849793366e-05,
             "max_to_median": 7.15,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
           },
           "Ni/Fe": {
             "max_depth_cm": 31.0,
@@ -1515,18 +1860,115 @@
             "max_val": 0.00027381822284748986,
             "median_val": 0.00014210664298443883,
             "max_to_median": 1.93,
-            "peak_in_claimed_ydb": true
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": true
+          },
+          "Cr/Fe": {
+            "max_depth_cm": 27.0,
+            "max_sample": "C67 26-28",
+            "max_val": 0.0006851586938866525,
+            "median_val": 0.00042319609825990047,
+            "max_to_median": 1.62,
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
+          },
+          "Co/Fe": {
+            "max_depth_cm": 27.0,
+            "max_sample": "C67 26-28",
+            "max_val": 0.00018766701819392914,
+            "median_val": 8.529287178447395e-05,
+            "max_to_median": 2.2,
+            "peak_in_claimed_ydb": false,
+            "secondary_peak_in_pm2cm_window": false
           }
         },
-        "ydb_pt_ir": [
-          3.59,
-          1.7,
-          2.31
+        "n_measures": 12,
+        "n_measures_peaking_inside_locked_interval": 1,
+        "n_measures_peaking_outside_locked_interval": 11,
+        "n_expected_inside_by_chance": 2.0,
+        "secondary_pm2cm_window": {
+          "window_cm": [
+            30.0,
+            37.0
+          ],
+          "note": "First run's undocumented +-2 cm widening (Amendment 2, item 4); secondary only.",
+          "n_depths_inside": 3,
+          "n_measures": 12,
+          "n_measures_peaking_inside": 6,
+          "n_expected_inside_by_chance": 6.0,
+          "first_run_10_measures_n_peaking_inside": 6,
+          "pt_ir": [
+            3.59,
+            1.7,
+            2.31
+          ],
+          "pt_pd": [
+            1.19,
+            0.63,
+            1.19
+          ]
+        },
+        "locked_interval_pt_ir": [
+          1.7
         ],
-        "ydb_pt_pd": [
-          1.19,
-          0.63,
-          1.19
+        "locked_interval_pt_pd": [
+          0.63
+        ],
+        "pt_ir_by_depth": [
+          {
+            "sample": "C67 25-26",
+            "depth_cm": 25.5,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.619,
+            "pt_ir_from_masses": 2.619,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 26-28",
+            "depth_cm": 27.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.493,
+            "pt_ir_from_masses": 2.493,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 28-30",
+            "depth_cm": 29.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.968,
+            "pt_ir_from_masses": 2.968,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 30-32",
+            "depth_cm": 31.0,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 3.588,
+            "pt_ir_from_masses": 3.588,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 32-35",
+            "depth_cm": 33.5,
+            "inside_locked_interval": true,
+            "pt_ir_table_column": 1.704,
+            "pt_ir_from_masses": 1.704,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          },
+          {
+            "sample": "C67 35-36",
+            "depth_cm": 35.5,
+            "inside_locked_interval": false,
+            "pt_ir_table_column": 2.311,
+            "pt_ir_from_masses": 2.311,
+            "within_CI_chondrite_1p9_2p1": false,
+            "within_UCC_14_25": false
+          }
         ]
       }
     }
@@ -1653,7 +2095,13 @@
     ],
     "bulk_delta17O_ydb_mean": -0.04,
     "bulk_delta17O_bg_mean": -0.063,
-    "bulk_delta17O_n_ydb_ET_anomaly": 0,
+    "bulk_delta17O_n_abs_gt_0p06_locked_rule": 3,
+    "bulk_delta17O_samples_abs_gt_0p06_locked_rule": [
+      "Core 64 272\u2013274 cm",
+      "Core 64 286\u2013290 cm",
+      "Core 64 312\u2013318 cm"
+    ],
+    "secondary_bulk_delta17O_n_ydb_beyond_background_amend1": 0,
     "xml_citations": {
       "n_refs_total": 187,
       "n_missing_doi": 28,
@@ -1674,10 +2122,29 @@
   "pillar4_shocked_quartz": {
     "site_chronology_audit": {
       "Arlington Canyon": {
-        "n_published_direct_dates": 11,
+        "published_dates_source": "Kennett et al. 2008 Table 4, rows 392-503 cm",
+        "n_published_direct_dates": 12,
         "n_rows_in_si_table": 2,
-        "n_published_explicitly_included": 0,
-        "n_published_omitted_or_pooled": 11,
+        "n_published_explicitly_included": 2,
+        "n_published_omitted_or_pooled": 10,
+        "omitted_labs": [
+          "UCIAMS-47239",
+          "UCIAMS-42816",
+          "UCIAMS-36308",
+          "UCIAMS-36307",
+          "UCIAMS-36306",
+          "UCIAMS-36959",
+          "UCIAMS-36960",
+          "UCIAMS-36961",
+          "UCIAMS-36962",
+          "UCIAMS-36305"
+        ],
+        "n_flagged_old_wood": 5,
+        "kennett2008_stated_average_14c": {
+          "c14": 11060,
+          "err": 40,
+          "source": "Kennett et al. 2008, Fig. 4 caption"
+        },
         "si_rows": [
           {
             "lab": "",
@@ -1707,18 +2174,38 @@
           }
         ],
         "ward_wilson_all_published": {
-          "n": 11,
-          "weighted_mean": 11096.46,
-          "T": 35.089,
-          "df": 10,
-          "p_value": 0.000121
+          "n": 12,
+          "weighted_mean": 11138.17,
+          "T": 176.264,
+          "df": 11,
+          "p_value": 0.0,
+          "p_value_sf": 6.045133755487879e-32,
+          "labs": [
+            "UCIAMS-47239",
+            "UCIAMS-42816",
+            "UCIAMS-36308",
+            "UCIAMS-36307",
+            "UCIAMS-36306",
+            "UCIAMS-36959",
+            "UCIAMS-36960",
+            "UCIAMS-36961",
+            "UCIAMS-36962",
+            "Beta-161032",
+            "UCIAMS-36305",
+            "UCIAMS-36304"
+          ]
         }
       },
       "Blackwater Draw": {
-        "n_published_direct_dates": 6,
+        "published_site_pooled_14c": {
+          "c14": 11300,
+          "err": 235,
+          "n_dates": 3,
+          "dates_what": "Clovis occupation (pooled)",
+          "source": "Waters & Stafford 2007 Table 1, row 19 'Blackwater Draw, NM (n = 3)', listed under 'Problematic Clovis and Clovis-age sites'"
+        },
+        "pooled_value_matches_an_si_row": false,
         "n_rows_in_si_table": 3,
-        "n_published_explicitly_included": 0,
-        "n_published_omitted_or_pooled": 6,
         "si_rows": [
           {
             "lab": "AA-89168",
@@ -1760,19 +2247,18 @@
             "note": "Uncalibrated 14C age omitted from Table S3"
           }
         ],
-        "ward_wilson_all_published": {
-          "n": 6,
-          "weighted_mean": 10849.48,
-          "T": 11.983,
-          "df": 5,
-          "p_value": 0.035027
-        }
+        "note": "Per-date list removed by Amendment 2 (lab IDs could not be verified; the dates are of the Clovis occupation, not the sampled layer). Omission is not counted at this site."
       },
       "Murray Springs": {
-        "n_published_direct_dates": 8,
+        "published_site_pooled_14c": {
+          "c14": 10885,
+          "err": 50,
+          "n_dates": 8,
+          "dates_what": "Clovis occupation (pooled)",
+          "source": "Waters & Stafford 2007 Table 1, row 9 'Murray Springs, AZ (n = 8)', listed under 'Clovis sites (credible ages and Clovis diagnostics)'"
+        },
+        "pooled_value_matches_an_si_row": true,
         "n_rows_in_si_table": 1,
-        "n_published_explicitly_included": 0,
-        "n_published_omitted_or_pooled": 8,
         "si_rows": [
           {
             "lab": "Haynes pooled (8 dates)",
@@ -1788,45 +2274,157 @@
             "note": "Pooled mean only; individual 8 lab IDs omitted"
           }
         ],
-        "ward_wilson_all_published": {
-          "n": 8,
-          "weighted_mean": 10832.57,
-          "T": 3.422,
-          "df": 7,
-          "p_value": 0.84344
-        }
+        "note": "Per-date list removed by Amendment 2 (lab IDs could not be verified; the dates are of the Clovis occupation, not the sampled layer). Omission is not counted at this site."
       }
     },
-    "total_published_direct_dates_3sites": 25,
+    "n_arlington_canyon_published_direct_dates_392_503cm": 12,
     "total_rows_in_si_tables_s2_s4": 6,
-    "total_published_dates_omitted_or_pooled": 25,
-    "ward_wilson_authors_3_selected_cal": {
+    "n_arlington_canyon_dates_392_503cm_omitted_from_si_table_s2": 10,
+    "paper_chi2_reproduced_with_kennett2015_modelled_ages": {
+      "n": 3,
+      "weighted_mean": 12801.57,
+      "T": 0.057,
+      "df": 2,
+      "p_value": 0.971735,
+      "p_value_sf": 0.9717345748009102,
+      "inputs_cal_bp": {
+        "Arlington Canyon": {
+          "age": 12805.0,
+          "err": 55.0
+        },
+        "Blackwater Draw": {
+          "age": 12775.0,
+          "err": 365.0
+        },
+        "Murray Springs": {
+          "age": 12750.0,
+          "err": 235.0
+        }
+      },
+      "source_of_inputs": "Kennett et al. 2015 Bayesian-modelled YDB ages, as quoted in kennett2025_shocked_quartz.xml section 'Radiocarbon dating'",
+      "paper_reported": {
+        "weighted_mean": 12801.6,
+        "chi2": 0.057,
+        "df": 2,
+        "p_value": 0.972
+      },
+      "reproduces_paper": true
+    },
+    "audit_own_test_ward_wilson_3_si_rows_arl482cm_cal": {
       "n": 3,
       "weighted_mean": 12811.07,
       "T": 0.064,
       "df": 2,
       "p_value": 0.968293
     },
-    "ward_wilson_3_using_actual_500cm_arlington": {
+    "audit_own_test_ward_wilson_3_si_rows_arl500cm_cal": {
       "n": 3,
       "weighted_mean": 12851.02,
       "T": 4.209,
       "df": 2,
       "p_value": 0.121883
     },
-    "ward_wilson_all_6_si_rows_cal": {
+    "audit_own_test_ward_wilson_all_6_si_rows_cal": {
       "n": 6,
       "weighted_mean": 12827.31,
       "T": 6.795,
       "df": 5,
       "p_value": 0.236326
     },
-    "ward_wilson_all_25_published_direct_14c": {
-      "n": 25,
-      "weighted_mean": 11082.57,
-      "T": 90.943,
-      "df": 24,
-      "p_value": 0.0
+    "ward_wilson_arlington_canyon_12_dates_392_503cm_14c": {
+      "n": 12,
+      "weighted_mean": 11138.17,
+      "T": 176.264,
+      "df": 11,
+      "p_value": 0.0,
+      "p_value_sf": 6.045133755487879e-32,
+      "labs": [
+        "UCIAMS-47239",
+        "UCIAMS-42816",
+        "UCIAMS-36308",
+        "UCIAMS-36307",
+        "UCIAMS-36306",
+        "UCIAMS-36959",
+        "UCIAMS-36960",
+        "UCIAMS-36961",
+        "UCIAMS-36962",
+        "Beta-161032",
+        "UCIAMS-36305",
+        "UCIAMS-36304"
+      ]
+    },
+    "ward_wilson_arlington_canyon_10_dark_layer_464_503cm_14c": {
+      "n": 10,
+      "weighted_mean": 11147.49,
+      "T": 171.072,
+      "df": 9,
+      "p_value": 0.0,
+      "p_value_sf": 3.6899269903341994e-32,
+      "labs": [
+        "UCIAMS-36308",
+        "UCIAMS-36307",
+        "UCIAMS-36306",
+        "UCIAMS-36959",
+        "UCIAMS-36960",
+        "UCIAMS-36961",
+        "UCIAMS-36962",
+        "Beta-161032",
+        "UCIAMS-36305",
+        "UCIAMS-36304"
+      ]
+    },
+    "ward_wilson_arlington_canyon_dark_layer_not_old_wood_14c": {
+      "n": 5,
+      "weighted_mean": 11057.36,
+      "T": 13.051,
+      "df": 4,
+      "p_value": 0.011031,
+      "p_value_sf": 0.011031107283347873,
+      "labs": [
+        "UCIAMS-36308",
+        "UCIAMS-36307",
+        "UCIAMS-36959",
+        "Beta-161032",
+        "UCIAMS-36304"
+      ]
+    },
+    "ward_wilson_arlington_canyon_2_si_table_s2_dates_14c": {
+      "n": 2,
+      "weighted_mean": 11001.9,
+      "T": 4.633,
+      "df": 1,
+      "p_value": 0.031354,
+      "p_value_sf": 0.03135383035982697,
+      "labs": [
+        "Beta-161032",
+        "UCIAMS-36304"
+      ]
+    },
+    "ward_wilson_three_site_context_k2008_avg_and_ws2007_pooled_14c": {
+      "n": 3,
+      "weighted_mean": 10997.06,
+      "T": 9.161,
+      "df": 2,
+      "p_value": 0.010251,
+      "p_value_sf": 0.01025143607950626,
+      "inputs_14c": {
+        "Arlington Canyon": {
+          "c14": 11060,
+          "err": 40,
+          "source": "Kennett et al. 2008, Fig. 4 caption"
+        },
+        "Murray Springs": {
+          "c14": 10885,
+          "err": 50,
+          "source": "Waters & Stafford 2007 Table 1, row 9 'Murray Springs, AZ (n = 8)', listed under 'Clovis sites (credible ages and Clovis diagnostics)'"
+        },
+        "Blackwater Draw": {
+          "c14": 11300,
+          "err": 235,
+          "source": "Waters & Stafford 2007 Table 1, row 19 'Blackwater Draw, NM (n = 3)', listed under 'Problematic Clovis and Clovis-age sites'"
+        }
+      },
+      "note": "Context only: Murray Springs and Blackwater Draw values are pooled Clovis-occupation dates, not dates of the sampled YDB layer."
     },
     "vertical_quartz_controls": {
       "per_site": {
@@ -1911,6 +2509,11 @@
       ],
       "sites_with_fewer_than_3_control_strata": [
         "Blackwater Draw"
+      ],
+      "sites_without_control_grain_denominators": [
+        "Arlington Canyon",
+        "Blackwater Draw",
+        "Murray Springs"
       ],
       "any_control_grain_denominators_tabulated": false
     },

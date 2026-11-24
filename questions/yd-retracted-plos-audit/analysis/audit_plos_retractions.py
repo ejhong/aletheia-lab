@@ -7,6 +7,8 @@ Pre-registered audit of the two February 11, 2026 PLOS One Younger Dryas retract
 Standard library + numpy + scipy + pypdf only. Zero network calls.
 Locked protocol: questions/yd-retracted-plos-audit/protocol.md (Issue #127).
 Amendment 1: pure parser / raster-image table transcription fixes (zero protocol changes).
+Amendment 2: spot-check corrections (Pillar 4 date inventory and chi2 inputs, B2 as worded, nanoparticle
+locked measures/intervals, locked Delta17O rule, summed sample thickness). See amendments.md.
 """
 from __future__ import annotations
 
@@ -165,40 +167,50 @@ KENNETT2025_SI_QUARTZ_CONTROLS = {
     },
 }
 
-# Complete published direct/YDB-stratum 14C inventories for Paper B's 3 sites (verified in Issue #113)
+# Published direct 14C dates for Paper B's three sites (Amendment 2, item 1).
+# The pre-lock list here was typed by hand and was NOT verified in Issue #113 as its comment claimed; a spot check
+# found every Arlington Canyon entry wrong and the Murray Springs / Blackwater Draw lab IDs untraceable. Replaced by:
+#  - Arlington Canyon: the twelve rows of Kennett et al. 2008 (Quat. Sci. Rev. 27:2528-2543) Table 4, "Radiocarbon
+#    dates from the AC-003 stratigraphic section", between 392 and 503 cm, typed from the table. `old_wood` = the
+#    table's footnote f on the calibrated range: "Not included in average age of lowest stratigraphic unit due to
+#    'old wood' effect." `in_si_table_s2` = the date appears in Kennett et al. 2025 SI Table S2 (482.5 cm =
+#    Beta-161032, 10,860 +- 70; 500.5 cm = UCIAMS-36304, 11,020 +- 25). Depths are the table's intervals (cm).
+#  - Blackwater Draw and Murray Springs: site-level pooled values only, from Waters & Stafford 2007 (Science
+#    315:1122) Table 1. These date the Clovis occupations, not the sampled YDB layer; they enter only a three-site
+#    comparison reported as context. The per-date lists were removed (unverifiable).
 PUBLISHED_DIRECT_INVENTORY = {
     "Arlington Canyon": [
-        {"lab": "UCIAMS-36305", "depth_cm": 482.5, "c14": 10960, "err": 50, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-36306", "depth_cm": 495.5, "c14": 11185, "err": 30, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-36307", "depth_cm": 495.5, "c14": 11075, "err": 30, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-36308", "depth_cm": 500.5, "c14": 11110, "err": 35, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-36309", "depth_cm": 500.5, "c14": 11440, "err": 90, "material": "wood/charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-36960", "depth_cm": 500.5, "c14": 11070, "err": 25, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-36961", "depth_cm": 500.5, "c14": 11105, "err": 30, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-36962", "depth_cm": 500.5, "c14": 11105, "err": 30, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-42817", "depth_cm": 500.5, "c14": 11100, "err": 30, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-42818", "depth_cm": 500.5, "c14": 11095, "err": 25, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-        {"lab": "UCIAMS-42819", "depth_cm": 500.5, "c14": 11050, "err": 30, "material": "charcoal", "source": "Kennett et al. 2008 Table 4"},
-    ],
-    "Blackwater Draw": [
-        {"lab": "A-481", "depth_cm": None, "c14": 11170, "err": 360, "material": "plant carbonized (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "A-490", "depth_cm": None, "c14": 11040, "err": 500, "material": "plant carbonized (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "A-491", "depth_cm": None, "c14": 11630, "err": 400, "material": "plant carbonized (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "UCIAMS-24212", "depth_cm": None, "c14": 11300, "err": 240, "material": "bulk organic / YDB contact", "source": "Firestone et al. 2007 / Kennett 2015"},
-        {"lab": "A-489", "depth_cm": None, "c14": 10490, "err": 200, "material": "diatomite / black mat", "source": "Haynes 1995 / Meltzer 2014"},
-        {"lab": "A-379", "depth_cm": None, "c14": 10780, "err": 100, "material": "organic mud / black mat", "source": "Haynes 2008 / Kennett 2015"},
-    ],
-    "Murray Springs": [
-        {"lab": "A-805", "depth_cm": None, "c14": 11150, "err": 450, "material": "charcoal (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "A-805A", "depth_cm": None, "c14": 11230, "err": 340, "material": "charcoal (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "A-805B", "depth_cm": None, "c14": 10930, "err": 170, "material": "charcoal (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "A-805C", "depth_cm": None, "c14": 10890, "err": 180, "material": "charcoal (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "A-805D", "depth_cm": None, "c14": 10840, "err": 70, "material": "charcoal (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "A-805E", "depth_cm": None, "c14": 10840, "err": 140, "material": "charcoal (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "A-805F", "depth_cm": None, "c14": 10710, "err": 160, "material": "charcoal (Clovis)", "source": "Waters & Stafford 2007"},
-        {"lab": "Tx-1413", "depth_cm": None, "c14": 10760, "err": 100, "material": "charcoal (Clovis)", "source": "Waters & Stafford 2007"},
+        {"lab": "UCIAMS-47239", "depth_lo_cm": 392.0, "depth_hi_cm": 396.0, "material": "Charcoal", "c14": 11105, "err": 30, "old_wood": False, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-42816", "depth_lo_cm": 403.0, "depth_hi_cm": 406.0, "material": "Wood (footnote b: large log in stratum, outer portion sampled)", "c14": 11095, "err": 25, "old_wood": False, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-36308", "depth_lo_cm": 464.0, "depth_hi_cm": 469.0, "material": "Wood", "c14": 11095, "err": 25, "old_wood": False, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-36307", "depth_lo_cm": 469.0, "depth_hi_cm": 475.0, "material": "Wood", "c14": 11070, "err": 25, "old_wood": False, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-36306", "depth_lo_cm": 485.0, "depth_hi_cm": 491.0, "material": "Wood", "c14": 11375, "err": 25, "old_wood": True, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-36959", "depth_lo_cm": 480.0, "depth_hi_cm": 485.0, "material": "Charcoal", "c14": 11075, "err": 30, "old_wood": False, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-36960", "depth_lo_cm": 480.0, "depth_hi_cm": 485.0, "material": "Glassy carbon", "c14": 11185, "err": 30, "old_wood": True, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-36961", "depth_lo_cm": 480.0, "depth_hi_cm": 485.0, "material": "Carbon sphere", "c14": 11440, "err": 90, "old_wood": True, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-36962", "depth_lo_cm": 480.0, "depth_hi_cm": 485.0, "material": "Carbon Brecchia 'elongate' (spelling as in the table)", "c14": 11110, "err": 35, "old_wood": True, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "Beta-161032", "depth_lo_cm": 480.0, "depth_hi_cm": 485.0, "material": "Wood (yellow pine-Diploxylon; footnote d: original sample collected by G. James West)", "c14": 10860, "err": 70, "old_wood": False, "in_si_table_s2": True, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-36305", "depth_lo_cm": 493.0, "depth_hi_cm": 498.0, "material": "Wood", "c14": 11235, "err": 25, "old_wood": True, "in_si_table_s2": False, "source": "Kennett et al. 2008 Table 4"},
+        {"lab": "UCIAMS-36304", "depth_lo_cm": 498.0, "depth_hi_cm": 503.0, "material": "Wood", "c14": 11020, "err": 25, "old_wood": False, "in_si_table_s2": True, "source": "Kennett et al. 2008 Table 4"},
     ],
 }
+# Site-level pooled values (Waters & Stafford 2007, Table 1: "If multiple 14C dates were available from a
+# single-component site, the dates were averaged"; 1-sigma). Clovis-occupation dates, context only.
+PUBLISHED_SITE_POOLED = {
+    "Murray Springs": {"c14": 10885, "err": 50, "n_dates": 8, "dates_what": "Clovis occupation (pooled)", "source": "Waters & Stafford 2007 Table 1, row 9 'Murray Springs, AZ (n = 8)', listed under 'Clovis sites (credible ages and Clovis diagnostics)'"},
+    "Blackwater Draw": {"c14": 11300, "err": 235, "n_dates": 3, "dates_what": "Clovis occupation (pooled)", "source": "Waters & Stafford 2007 Table 1, row 19 'Blackwater Draw, NM (n = 3)', listed under 'Problematic Clovis and Clovis-age sites'"},
+}
+# Kennett et al. 2008 stated average for the lowest dark layer ("Five dates from the lowest dark layer were used to
+# establish the Santarosae wildfire 11,060 +- 40 14C years", Fig. 4 caption).
+KENNETT2008_ARLINGTON_STATED_AVERAGE = {"c14": 11060, "err": 40, "source": "Kennett et al. 2008, Fig. 4 caption"}
+# Boundary-section limits used for B1 (Kennett et al. 2015 model 392-503 cm as the boundary section) and the dark layer.
+AC_BOUNDARY_SECTION_CM = (392.0, 503.0)
+AC_DARK_LAYER_CM = (464.0, 503.0)
+# The three Bayesian-modelled YDB ages the paper quotes from Kennett et al. 2015 (kennett2025_shocked_quartz.xml,
+# section "Radiocarbon dating"): Arlington Canyon 12,805 +- 55; Blackwater Draw 12,775 +- 365; Murray Springs
+# 12,750 +- 235 cal BP. The paper reports weighted mean 12,801.6 cal BP, chi2 = 0.057 (df 2), p = 0.972.
+KENNETT2015_MODELLED_YDB_AGES = {"Arlington Canyon": (12805.0, 55.0), "Blackwater Draw": (12775.0, 365.0), "Murray Springs": (12750.0, 235.0)}
+PAPER_REPORTED_CHI2 = {"weighted_mean": 12801.6, "chi2": 0.057, "df": 2, "p_value": 0.972}
 
 
 # ---------------------------------------------------------------------------
@@ -714,18 +726,31 @@ def parse_table_s7_nanoparticles(path: pathlib.Path) -> dict[str, Any]:
             rec["Pt_Pd_calc"] = (rec["Pt"] / rec["Pd"]) if (rec["Pt"] and rec["Pd"] and rec["Pd"] > 0) else None
             blocks[f"{mode}_C{cid}"].append(rec)
 
+    # Amendment 2, item 4: all 12 locked measures, on the locked intervals (Core 64: 312-318 cm; Core 67: 32-35 cm),
+    # no widening. A sample is "inside" when its depth midpoint lies in the interval. The first run's +-2 cm window
+    # is kept as a secondary result.
+    locked_measures = ("Pt", "Ir", "Pd", "Ni", "Co", "Cr", "Pt/Ir", "Pt/Pd", "Pt/Fe", "Ni/Fe", "Cr/Fe", "Co/Fe")
+    first_run_measures = ("Pt", "Ir", "Pd", "Ni", "Co", "Cr", "Pt/Ir", "Pt/Pd", "Pt/Fe", "Ni/Fe")
     blind: dict[str, Any] = {}
     for key in ("mass_C64", "mass_C67", "conc_C64", "conc_C67"):
         pts = blocks[key]
         cid = "64" if "C64" in key else "67"
         ylo, yhi = BAFFIN_CORES[cid]["ydb_cm"]
-        b_res: dict[str, Any] = {"n_depths": len(pts), "ydb_cm": [ylo, yhi], "elements": {}}
-        for el in ("Pt", "Ir", "Pd", "Ni", "Co", "Cr", "Pt/Ir", "Pt/Pd", "Pt/Fe", "Ni/Fe"):
+        wlo, whi = ylo - 2.0, yhi + 2.0
+        dep_pts = [p for p in pts if p["depth_cm"] is not None]
+        n_in = sum(1 for p in dep_pts if ylo <= p["depth_cm"] <= yhi)
+        n_in_w = sum(1 for p in dep_pts if wlo <= p["depth_cm"] <= whi)
+        b_res: dict[str, Any] = {
+            "n_depths": len(pts),
+            "ydb_cm": [ylo, yhi],
+            "n_depths_inside_locked_interval": n_in,
+            "elements": {},
+        }
+        for el in locked_measures:
             valid = [(p["depth_cm"], p[el], p["sample"]) for p in pts if p.get(el) is not None and p["depth_cm"] is not None]
             if not valid:
                 continue
             top = max(valid, key=lambda x: x[1])
-            in_ydb = (ylo - 2.0 <= top[0] <= yhi + 2.0)
             vals_all = [x[1] for x in valid]
             med = statistics.median(vals_all)
             b_res["elements"][el] = {
@@ -734,11 +759,43 @@ def parse_table_s7_nanoparticles(path: pathlib.Path) -> dict[str, Any]:
                 "max_val": top[1],
                 "median_val": med,
                 "max_to_median": round(top[1] / med, 2) if med > 0 else None,
-                "peak_in_claimed_ydb": in_ydb,
+                "peak_in_claimed_ydb": bool(ylo <= top[0] <= yhi),
+                "secondary_peak_in_pm2cm_window": bool(wlo <= top[0] <= whi),
             }
-        ydb_pts = [p for p in pts if p["depth_cm"] is not None and (ylo - 2.0 <= p["depth_cm"] <= yhi + 2.0)]
-        b_res["ydb_pt_ir"] = [round(p["Pt_Ir_calc"], 2) for p in ydb_pts if p.get("Pt_Ir_calc") is not None]
-        b_res["ydb_pt_pd"] = [round(p["Pt_Pd_calc"], 2) for p in ydb_pts if p.get("Pt_Pd_calc") is not None]
+        els = b_res["elements"]
+        n_meas = len(els)
+        b_res["n_measures"] = n_meas
+        b_res["n_measures_peaking_inside_locked_interval"] = sum(1 for v in els.values() if v["peak_in_claimed_ydb"])
+        b_res["n_measures_peaking_outside_locked_interval"] = sum(1 for v in els.values() if not v["peak_in_claimed_ydb"])
+        b_res["n_expected_inside_by_chance"] = round(n_meas * n_in / len(dep_pts), 3) if dep_pts else None
+        b_res["secondary_pm2cm_window"] = {
+            "window_cm": [wlo, whi],
+            "note": "First run's undocumented +-2 cm widening (Amendment 2, item 4); secondary only.",
+            "n_depths_inside": n_in_w,
+            "n_measures": n_meas,
+            "n_measures_peaking_inside": sum(1 for v in els.values() if v["secondary_peak_in_pm2cm_window"]),
+            "n_expected_inside_by_chance": round(n_meas * n_in_w / len(dep_pts), 3) if dep_pts else None,
+            "first_run_10_measures_n_peaking_inside": sum(1 for m in first_run_measures if m in els and els[m]["secondary_peak_in_pm2cm_window"]),
+        }
+        in_pts = [p for p in dep_pts if ylo <= p["depth_cm"] <= yhi]
+        b_res["locked_interval_pt_ir"] = [round(p["Pt_Ir_calc"], 2) for p in in_pts if p.get("Pt_Ir_calc") is not None]
+        b_res["locked_interval_pt_pd"] = [round(p["Pt_Pd_calc"], 2) for p in in_pts if p.get("Pt_Pd_calc") is not None]
+        w_pts = [p for p in dep_pts if wlo <= p["depth_cm"] <= whi]
+        b_res["secondary_pm2cm_window"]["pt_ir"] = [round(p["Pt_Ir_calc"], 2) for p in w_pts if p.get("Pt_Ir_calc") is not None]
+        b_res["secondary_pm2cm_window"]["pt_pd"] = [round(p["Pt_Pd_calc"], 2) for p in w_pts if p.get("Pt_Pd_calc") is not None]
+        # Nanoparticle Pt/Ir by depth, against CI chondrite (1.9-2.1) and upper continental crust (14-25) (protocol 2.3).
+        b_res["pt_ir_by_depth"] = [
+            {
+                "sample": p["sample"],
+                "depth_cm": p["depth_cm"],
+                "inside_locked_interval": bool(ylo <= p["depth_cm"] <= yhi),
+                "pt_ir_table_column": round(p["Pt/Ir"], 3) if p.get("Pt/Ir") is not None else None,
+                "pt_ir_from_masses": round(p["Pt_Ir_calc"], 3) if p.get("Pt_Ir_calc") is not None else None,
+                "within_CI_chondrite_1p9_2p1": bool(p.get("Pt_Ir_calc") is not None and 1.9 <= p["Pt_Ir_calc"] <= 2.1),
+                "within_UCC_14_25": bool(p.get("Pt_Ir_calc") is not None and 14.0 <= p["Pt_Ir_calc"] <= 25.0),
+            }
+            for p in dep_pts
+        ]
         blind[key] = b_res
 
     return {"blocks": blocks, "blind_peak_scan": blind}
@@ -895,7 +952,10 @@ def run_pillar3_chem_and_citations(
     ydb_d17o = [x["Delta17O_star"] for x in baffin_d17o_vals if x["is_ydb"] and x["Delta17O_star"] is not None]
     bg_d17o = [x["Delta17O_star"] for x in baffin_d17o_vals if not x["is_ydb"] and x["Delta17O_star"] is not None]
     bg_mean_d17o = statistics.mean(bg_d17o) if bg_d17o else 0.0
+    # Secondary (Amendment 1's relative-to-background count; Amendment 2, item 5 demotes it to secondary).
     n_d17o_ydb_more_et_than_bg = sum(1 for v in ydb_d17o if abs(v - bg_mean_d17o) > 0.06 and abs(v) > abs(bg_mean_d17o))
+    # Locked rule (protocol 3.2): any sample with |Delta17O*| > 0.06 permil.
+    d17o_gt_locked = [x["sample"] for x in baffin_d17o_vals if x["Delta17O_star"] is not None and abs(x["Delta17O_star"]) > 0.06]
 
     # 3c. Audit all 187 <ref> elements in moore2025_baffin_bay.xml
     refs = xml.findall(".//ref")
@@ -946,7 +1006,9 @@ def run_pillar3_chem_and_citations(
         "bulk_delta17O_baffin_samples": baffin_d17o_vals,
         "bulk_delta17O_ydb_mean": round(statistics.mean(ydb_d17o), 3) if ydb_d17o else None,
         "bulk_delta17O_bg_mean": round(bg_mean_d17o, 3),
-        "bulk_delta17O_n_ydb_ET_anomaly": n_d17o_ydb_more_et_than_bg,
+        "bulk_delta17O_n_abs_gt_0p06_locked_rule": len(d17o_gt_locked),
+        "bulk_delta17O_samples_abs_gt_0p06_locked_rule": d17o_gt_locked,
+        "secondary_bulk_delta17O_n_ydb_beyond_background_amend1": n_d17o_ydb_more_et_than_bg,
         "xml_citations": {
             "n_refs_total": len(refs),
             "n_missing_doi": missing_dois,
@@ -975,61 +1037,142 @@ def run_pillar4_shocked_quartz(
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     methods_txt = "\n".join((quartz_si_pdf.pages[i].extract_text() or "") for i in range(13, len(quartz_si_pdf.pages)))
 
-    # Reconstruct exact chi2 = 0.057 test from Kennett et al. (2025) SI Tables S2-S4:
-    # They selected 1 calibrated date per site: Arlington 482.5 cm (12810+-60, 18.5 cm ABOVE the 501 cm quartz!),
-    # Blackwater AA-89168 (12825+-65), Murray Springs Haynes pooled (12805+-45).
-    ww_authors_3 = ward_wilson_t([12810.0, 12825.0, 12805.0], [60.0, 65.0, 45.0])
-    # Swap Arlington 482.5 cm -> actual 500.5 cm shocked-quartz level (12955+-60 from their own Table S2!)
-    ww_authors_3_actual_500cm = ward_wilson_t([12955.0, 12825.0, 12805.0], [60.0, 65.0, 45.0])
+    def ww_with_sf(ages: list[float], errs: list[float]) -> dict[str, Any]:
+        """ward_wilson_t plus an unrounded survival-function p (ward_wilson_t rounds p to 6 decimals)."""
+        res = dict(ward_wilson_t(ages, errs))
+        if len(ages) >= 2:
+            a = np.asarray(ages, dtype=float)
+            w = 1.0 / (np.asarray(errs, dtype=float) ** 2)
+            wm = float(np.sum(w * a) / np.sum(w))
+            res["p_value_sf"] = float(chi2.sf(float(np.sum(w * (a - wm) ** 2)), len(a) - 1))
+        return res
+
+    # (a) The paper's own chi2 test (Amendment 2, item 2): reproduced with the three Bayesian-modelled ages it quotes
+    # from Kennett et al. 2015. These reproduce the reported 12,801.6 cal BP / chi2 0.057 / p 0.972.
+    k15_sites = list(KENNETT2015_MODELLED_YDB_AGES)
+    ww_paper_repro = ww_with_sf([KENNETT2015_MODELLED_YDB_AGES[s][0] for s in k15_sites], [KENNETT2015_MODELLED_YDB_AGES[s][1] for s in k15_sites])
+    ww_paper_repro.update({
+        "inputs_cal_bp": {s: {"age": KENNETT2015_MODELLED_YDB_AGES[s][0], "err": KENNETT2015_MODELLED_YDB_AGES[s][1]} for s in k15_sites},
+        "source_of_inputs": "Kennett et al. 2015 Bayesian-modelled YDB ages, as quoted in kennett2025_shocked_quartz.xml section 'Radiocarbon dating'",
+        "paper_reported": PAPER_REPORTED_CHI2,
+        "reproduces_paper": bool(
+            abs(ww_paper_repro["weighted_mean"] - PAPER_REPORTED_CHI2["weighted_mean"]) < 0.1
+            and abs(ww_paper_repro["T"] - PAPER_REPORTED_CHI2["chi2"]) < 0.001
+            and abs(ww_paper_repro["p_value"] - PAPER_REPORTED_CHI2["p_value"]) < 0.001
+        ),
+    })
+
+    # The audit's own single-date comparisons (not the authors' selection): one calibrated SI row per site.
+    # Arlington 482.5 cm (12810+-60), Blackwater AA-89168 (12825+-65), Murray Springs Haynes pooled (12805+-45).
+    ww_own_482 = ward_wilson_t([12810.0, 12825.0, 12805.0], [60.0, 65.0, 45.0])
+    # Same with Arlington 500.5 cm (12955+-60, SI Table S2) in place of 482.5 cm.
+    ww_own_500 = ward_wilson_t([12955.0, 12825.0, 12805.0], [60.0, 65.0, 45.0])
     # All 6 rows shown in SI Tables S2-S4
     ww_all_6_si = ward_wilson_t([12810.0, 12955.0, 12825.0, 12760.0, 12710.0, 12805.0], [60.0, 60.0, 65.0, 105.0, 95.0, 45.0])
 
+    # (b) Arlington Canyon: Kennett et al. 2008 Table 4, 392-503 cm (Amendment 2, item 1).
     csv_rows: list[dict[str, Any]] = []
-    site_comparisons: dict[str, Any] = {}
-    all_pub_ages, all_pub_errs = [], []
-    total_omitted = 0
+    ac_all = PUBLISHED_DIRECT_INVENTORY["Arlington Canyon"]
+    b_lo, b_hi = AC_BOUNDARY_SECTION_CM
+    d_lo, d_hi = AC_DARK_LAYER_CM
+    ac12 = [p for p in ac_all if p["depth_lo_cm"] >= b_lo and p["depth_hi_cm"] <= b_hi]
+    ac_dark = [p for p in ac12 if p["depth_lo_cm"] >= d_lo and p["depth_hi_cm"] <= d_hi]
+    ac_dark_not_old = [p for p in ac_dark if not p["old_wood"]]
+    ac_in_s2 = [p for p in ac12 if p["in_si_table_s2"]]
+    ac_si_rows = KENNETT2025_SI_DATES["Arlington Canyon"]
+    ac_si_c14 = {(int(d["c14"]), int(d["err"])) for d in ac_si_rows if d["c14"] is not None}
+    # Consistency check: the typed in_si_table_s2 flags must agree with an age/error match against SI Table S2.
+    flag_mismatch = [p["lab"] for p in ac12 if p["in_si_table_s2"] != ((p["c14"], p["err"]) in ac_si_c14)]
+    if flag_mismatch:
+        raise ValueError(f"in_si_table_s2 flag disagrees with SI Table S2 ages for {flag_mismatch}")
+    omitted_ac = [p["lab"] for p in ac12 if not p["in_si_table_s2"]]
 
-    for site, pub_list in PUBLISHED_DIRECT_INVENTORY.items():
+    for p in ac12:
+        cal = calibrate_14c(p["c14"], p["err"], intcal20)
+        csv_rows.append({
+            "site": "Arlington Canyon",
+            "entry_level": "single date",
+            "lab_id": p["lab"],
+            "depth_cm": f"{p['depth_lo_cm']:.0f}-{p['depth_hi_cm']:.0f}",
+            "material": p["material"],
+            "c14_age": p["c14"],
+            "c14_err": p["err"],
+            "n_dates_pooled": 1,
+            "old_wood_flag_f": int(p["old_wood"]),
+            "in_dark_layer_464_503": int(p in ac_dark),
+            "included_explicitly_in_si_table": int(p["in_si_table_s2"]),
+            "median_cal_bp": cal["median_cal_bp"],
+            "hpd95_lo": cal["hpd95"][0],
+            "hpd95_hi": cal["hpd95"][1],
+            "source": p["source"],
+        })
+
+    def ww_set(rows: list[dict[str, Any]]) -> dict[str, Any]:
+        res = ww_with_sf([float(p["c14"]) for p in rows], [float(p["err"]) for p in rows])
+        res["labs"] = [p["lab"] for p in rows]
+        return res
+
+    ww_ac12 = ww_set(ac12)
+    ww_ac_dark = ww_set(ac_dark)
+    ww_ac_dark_not_old = ww_set(ac_dark_not_old)
+    ww_ac_s2 = ww_set(ac_in_s2)
+
+    # (c) Three-site context: Kennett 2008's stated Arlington average with the two Waters & Stafford 2007 pooled values.
+    three = [("Arlington Canyon", KENNETT2008_ARLINGTON_STATED_AVERAGE)] + [(s, PUBLISHED_SITE_POOLED[s]) for s in ("Murray Springs", "Blackwater Draw")]
+    ww_three = ww_with_sf([float(v["c14"]) for _, v in three], [float(v["err"]) for _, v in three])
+    ww_three["inputs_14c"] = {s: {"c14": v["c14"], "err": v["err"], "source": v["source"]} for s, v in three}
+    ww_three["note"] = "Context only: Murray Springs and Blackwater Draw values are pooled Clovis-occupation dates, not dates of the sampled YDB layer."
+
+    site_comparisons: dict[str, Any] = {
+        "Arlington Canyon": {
+            "published_dates_source": "Kennett et al. 2008 Table 4, rows 392-503 cm",
+            "n_published_direct_dates": len(ac12),
+            "n_rows_in_si_table": len(ac_si_rows),
+            "n_published_explicitly_included": len(ac_in_s2),
+            "n_published_omitted_or_pooled": len(omitted_ac),
+            "omitted_labs": omitted_ac,
+            "n_flagged_old_wood": sum(1 for p in ac12 if p["old_wood"]),
+            "kennett2008_stated_average_14c": KENNETT2008_ARLINGTON_STATED_AVERAGE,
+            "si_rows": ac_si_rows,
+            "ward_wilson_all_published": ww_ac12,
+        },
+    }
+    for site in ("Blackwater Draw", "Murray Springs"):
+        pv = PUBLISHED_SITE_POOLED[site]
         si_rows = KENNETT2025_SI_DATES[site]
-        si_labs = {d["lab"].upper() for d in si_rows if d["lab"]}
-        si_c14 = {(int(d["c14"]), int(d["err"])) for d in si_rows if d["c14"] is not None}
-        matched_pub = 0
-        for p in pub_list:
-            in_paper = (p["lab"].upper() in si_labs) or ((p["c14"], p["err"]) in si_c14)
-            if in_paper:
-                matched_pub += 1
-            cal = calibrate_14c(p["c14"], p["err"], intcal20)
-            all_pub_ages.append(p["c14"])
-            all_pub_errs.append(p["err"])
-            csv_rows.append({
-                "site": site,
-                "lab_id": p["lab"],
-                "c14_age": p["c14"],
-                "c14_err": p["err"],
-                "included_explicitly_in_si_table": int(in_paper),
-                "median_cal_bp": cal["median_cal_bp"],
-                "hpd95_lo": cal["hpd95"][0],
-                "hpd95_hi": cal["hpd95"][1],
-                "source": p["source"],
-            })
-        omitted = len(pub_list) - matched_pub
-        total_omitted += omitted
+        in_si = any(d["c14"] is not None and (int(d["c14"]), int(d["err"])) == (pv["c14"], pv["err"]) for d in si_rows)
+        cal = calibrate_14c(pv["c14"], pv["err"], intcal20)
+        csv_rows.append({
+            "site": site,
+            "entry_level": "site pooled value (Clovis occupation)",
+            "lab_id": f"pooled (n={pv['n_dates']})",
+            "depth_cm": "",
+            "material": "",
+            "c14_age": pv["c14"],
+            "c14_err": pv["err"],
+            "n_dates_pooled": pv["n_dates"],
+            "old_wood_flag_f": "",
+            "in_dark_layer_464_503": "",
+            "included_explicitly_in_si_table": int(in_si),
+            "median_cal_bp": cal["median_cal_bp"],
+            "hpd95_lo": cal["hpd95"][0],
+            "hpd95_hi": cal["hpd95"][1],
+            "source": pv["source"],
+        })
         site_comparisons[site] = {
-            "n_published_direct_dates": len(pub_list),
+            "published_site_pooled_14c": pv,
+            "pooled_value_matches_an_si_row": in_si,
             "n_rows_in_si_table": len(si_rows),
-            "n_published_explicitly_included": matched_pub,
-            "n_published_omitted_or_pooled": omitted,
             "si_rows": si_rows,
-            "ward_wilson_all_published": ward_wilson_t([p["c14"] for p in pub_list], [p["err"] for p in pub_list]),
+            "note": "Per-date list removed by Amendment 2 (lab IDs could not be verified; the dates are of the Clovis occupation, not the sampled layer). Omission is not counted at this site.",
         }
-
-    ww_all_pub = ward_wilson_t(all_pub_ages, all_pub_errs)
 
     # Vertical control sampling stats (from verbatim SI Tables S5, S6, S8)
     tot_strata = sum(v["total_strata"] for v in KENNETT2025_SI_QUARTZ_CONTROLS.values())
     tot_analyzed = sum(1 + v["n_above_analyzed"] + v["n_below_analyzed"] for v in KENNETT2025_SI_QUARTZ_CONTROLS.values())
     sites_missing_below = [k for k, v in KENNETT2025_SI_QUARTZ_CONTROLS.items() if v["n_below_analyzed"] == 0]
     sites_lt3_controls = [k for k, v in KENNETT2025_SI_QUARTZ_CONTROLS.items() if (v["n_above_analyzed"] + v["n_below_analyzed"]) < 3]
+    sites_control_denominators_missing = [k for k, v in KENNETT2025_SI_QUARTZ_CONTROLS.items() if not v["control_grain_denominators_reported"]]
 
     qxml_txt = "".join(ET.fromstring(quartz_xml_path.read_bytes()).itertext())
     has_sed_rate_model = bool(re.search(r"sedimentation rate|age[- ]depth model|accumulation rate", qxml_txt + "\n" + methods_txt, re.I))
@@ -1044,13 +1187,18 @@ def run_pillar4_shocked_quartz(
 
     summary = {
         "site_chronology_audit": site_comparisons,
-        "total_published_direct_dates_3sites": len(all_pub_ages),
+        "n_arlington_canyon_published_direct_dates_392_503cm": len(ac12),
         "total_rows_in_si_tables_s2_s4": sum(len(v) for v in KENNETT2025_SI_DATES.values()),
-        "total_published_dates_omitted_or_pooled": total_omitted,
-        "ward_wilson_authors_3_selected_cal": ww_authors_3,
-        "ward_wilson_3_using_actual_500cm_arlington": ww_authors_3_actual_500cm,
-        "ward_wilson_all_6_si_rows_cal": ww_all_6_si,
-        "ward_wilson_all_25_published_direct_14c": ww_all_pub,
+        "n_arlington_canyon_dates_392_503cm_omitted_from_si_table_s2": len(omitted_ac),
+        "paper_chi2_reproduced_with_kennett2015_modelled_ages": ww_paper_repro,
+        "audit_own_test_ward_wilson_3_si_rows_arl482cm_cal": ww_own_482,
+        "audit_own_test_ward_wilson_3_si_rows_arl500cm_cal": ww_own_500,
+        "audit_own_test_ward_wilson_all_6_si_rows_cal": ww_all_6_si,
+        "ward_wilson_arlington_canyon_12_dates_392_503cm_14c": ww_ac12,
+        "ward_wilson_arlington_canyon_10_dark_layer_464_503cm_14c": ww_ac_dark,
+        "ward_wilson_arlington_canyon_dark_layer_not_old_wood_14c": ww_ac_dark_not_old,
+        "ward_wilson_arlington_canyon_2_si_table_s2_dates_14c": ww_ac_s2,
+        "ward_wilson_three_site_context_k2008_avg_and_ws2007_pooled_14c": ww_three,
         "vertical_quartz_controls": {
             "per_site": KENNETT2025_SI_QUARTZ_CONTROLS,
             "total_strata_across_3_sites": tot_strata,
@@ -1058,12 +1206,16 @@ def run_pillar4_shocked_quartz(
             "pct_strata_analyzed": round(100.0 * tot_analyzed / tot_strata, 1),
             "sites_with_zero_strata_below_ydb": sites_missing_below,
             "sites_with_fewer_than_3_control_strata": sites_lt3_controls,
-            "any_control_grain_denominators_tabulated": False,
+            "sites_without_control_grain_denominators": sites_control_denominators_missing,
+            "any_control_grain_denominators_tabulated": len(sites_control_denominators_missing) < len(KENNETT2025_SI_QUARTZ_CONTROLS),
         },
         "has_sedimentation_rate_or_agedepth_model": has_sed_rate_model,
         "retraction_notice_scope": notice_scope,
-        "criterion_B1_chronology_overturned": bool(ww_all_pub["p_value"] < 0.01 and total_omitted >= 3),
-        "criterion_B2_missing_controls": bool((not has_sed_rate_model) or len(sites_missing_below) > 0),
+        # B1 (Amendment 2): the twelve Arlington Canyon dates reject synchrony at p < 0.01 AND >= 3 of them are omitted.
+        "criterion_B1_chronology_overturned": bool(ww_ac12["p_value"] < 0.01 and len(omitted_ac) >= 3),
+        # B2 sampling half as the protocol words it (Amendment 2, item 3): control grain counts not reported, OR
+        # fewer than three control samples analysed at some site.
+        "criterion_B2_missing_controls": bool(len(sites_control_denominators_missing) > 0 or len(sites_lt3_controls) > 0),
     }
     return summary, csv_rows
 
@@ -1141,6 +1293,13 @@ def main() -> None:
     total_sampled = sum(uniq_msp[c]["sampled_span_cm"] for c in uniq_msp)
     total_len = sum(BAFFIN_CORES[c]["length_cm"] for c in BAFFIN_CORES)
     cov_pct = (total_sampled / total_len) * 100.0 if total_len > 0 else 0.0
+    # Amendment 2, item 7: summed thickness of the samples themselves, beside the span figure (A3 is unchanged).
+    thick_cm = {cid: 0.0 for cid in BAFFIN_CORES}
+    for r in s6_rows:
+        thick_cm[r["core"]] += r["depth_hi_cm"] - r["depth_lo_cm"]
+    per_core_thick_pct = {cid: round(100.0 * thick_cm[cid] / BAFFIN_CORES[cid]["length_cm"], 2) for cid in uniq_msp}
+    total_thick = sum(thick_cm.values())
+    total_thick_pct = (total_thick / total_len) * 100.0 if total_len > 0 else 0.0
 
     c64_out_cdp = uniq_cdp["64"]["out_of_ydb_max"]
     c67_ydb_cdp = uniq_cdp["67"]["ydb_max"]
@@ -1169,7 +1328,7 @@ def main() -> None:
         "A3_core64_or_coverage": bool((c64_vs_c67_cdp_ratio is not None and c64_vs_c67_cdp_ratio >= 0.80) or (cov_pct < 20.0)),
         "A4_x100_math": p3_sum["criterion_A4_x100_artifact_triggered"],
         "A5_d17O_and_refs": bool(
-            p3_sum["bulk_delta17O_n_ydb_ET_anomaly"] == 0 and p3_sum["xml_citations"]["total_structural_xml_flags"] >= 10
+            p3_sum["bulk_delta17O_n_abs_gt_0p06_locked_rule"] == 0 and p3_sum["xml_citations"]["total_structural_xml_flags"] >= 10
         ),
     }
     b_flags = {
@@ -1213,6 +1372,10 @@ def main() -> None:
             "si_table_s6_cdp_uniqueness": uniq_cdp,
             "per_core_coverage_pct": per_core_cov,
             "total_core_coverage_pct": round(cov_pct, 2),
+            "per_core_summed_sample_thickness_cm": {cid: round(thick_cm[cid], 2) for cid in uniq_msp},
+            "per_core_summed_sample_thickness_pct": per_core_thick_pct,
+            "total_summed_sample_thickness_cm": round(total_thick, 2),
+            "total_summed_sample_thickness_pct": round(total_thick_pct, 2),
             "core64_out_to_core67_ydb_cdp_ratio": c64_vs_c67_cdp_ratio,
             "table_s7_blind_peak_scan": s7_sum["blind_peak_scan"],
         },
@@ -1221,13 +1384,21 @@ def main() -> None:
     }
     (RESULTS / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
-    print("=== FULL AUDIT COMPLETE (WITH AMENDMENT 1 PARSER FIXES) ===")
+    print("=== FULL AUDIT COMPLETE (AMENDMENTS 1 AND 2) ===")
     print("Paper A (Baffin Bay):", verdicts["paper_a_baffin_bay"]["verdict"], f"({verdicts['paper_a_baffin_bay']['checks_triggered_count']}/5)", a_flags)
     print("Paper B (Shocked Quartz):", verdicts["paper_b_shocked_quartz"]["verdict"], b_flags)
     print(f"Pillar 1: 27 raw 14C dates, repro diff vs SI Table S1 = {p1_sum['reproduction_median_abs_diff_vs_SI_TableS1_yr']} yr, S0 overlap={p1_sum['n_cores_S0_overlap_ydb']}/4, S1 shifted={p1_sum['n_cores_S1_shifted_off_ydb']}/4, S2 shifted={p1_sum['n_cores_S2_shifted_off_ydb']}/4, S3 shifted={p1_sum['n_cores_S3_shifted_off_ydb']}/4 (post-YD={p1_sum['n_cores_S3_post_yd_lt11700']}/4), inversions={len(p1_sum['stratigraphic_age_inversions'])}")
-    print(f"Pillar 2: S30-S34 confirmed CaCO3 forams={s30_34_sum['n_eds_confirmed_CaCO3_foram_with_pores']}/4; S6 rows={s6_meta['n_rows_parsed']}, coverage={cov_pct:.1f}% {per_core_cov}, C64_out_CDP/C67_YDB_CDP={c64_vs_c67_cdp_ratio} ({c64_out_cdp}/{c67_ydb_cdp})")
-    print(f"Pillar 3: spherules={p3_sum['n_spherules_total']}, raw Fe/Ni>200={p3_sum['frac_raw_Fe_Ni_gt200_terrestrial']:.1%}, raw cosmic={p3_sum['frac_raw_in_cosmic_box']:.1%}, x100 cosmic={p3_sum['frac_after_moore_x100_in_cosmic_box']:.1%}, UCC x100 cosmic={p3_sum['pure_UCC_control']['moore_x100_enters_cosmic_box']}, d17O YDB mean={p3_sum['bulk_delta17O_ydb_mean']} vs BG={p3_sum['bulk_delta17O_bg_mean']}")
-    print(f"Pillar 4: omitted/pooled={p4_sum['total_published_dates_omitted_or_pooled']}/{p4_sum['total_published_direct_dates_3sites']}, authors 3-date chi2={p4_sum['ward_wilson_authors_3_selected_cal']['T']} (p={p4_sum['ward_wilson_authors_3_selected_cal']['p_value']}), swap 500cm chi2={p4_sum['ward_wilson_3_using_actual_500cm_arlington']['T']} (p={p4_sum['ward_wilson_3_using_actual_500cm_arlington']['p_value']}), all 25 pub T={p4_sum['ward_wilson_all_25_published_direct_14c']['T']} (p={p4_sum['ward_wilson_all_25_published_direct_14c']['p_value']}), quartz strata={p4_sum['vertical_quartz_controls']['total_strata_analyzed_for_quartz']}/{p4_sum['vertical_quartz_controls']['total_strata_across_3_sites']} ({p4_sum['vertical_quartz_controls']['pct_strata_analyzed']}%)")
+    print(f"Pillar 2: S30-S34 confirmed CaCO3 forams={s30_34_sum['n_eds_confirmed_CaCO3_foram_with_pores']}/4; S6 rows={s6_meta['n_rows_parsed']}, coverage span={cov_pct:.1f}% {per_core_cov}, summed thickness={total_thick_pct:.2f}% {per_core_thick_pct}, C64_out_CDP/C67_YDB_CDP={c64_vs_c67_cdp_ratio} ({c64_out_cdp}/{c67_ydb_cdp})")
+    print(f"Pillar 3: spherules={p3_sum['n_spherules_total']}, raw Fe/Ni>200={p3_sum['frac_raw_Fe_Ni_gt200_terrestrial']:.1%}, raw cosmic={p3_sum['frac_raw_in_cosmic_box']:.1%}, x100 cosmic={p3_sum['frac_after_moore_x100_in_cosmic_box']:.1%}, UCC x100 cosmic={p3_sum['pure_UCC_control']['moore_x100_enters_cosmic_box']}, d17O YDB mean={p3_sum['bulk_delta17O_ydb_mean']} vs BG={p3_sum['bulk_delta17O_bg_mean']}, n |d17O*|>0.06={p3_sum['bulk_delta17O_n_abs_gt_0p06_locked_rule']}")
+    pr = p4_sum["paper_chi2_reproduced_with_kennett2015_modelled_ages"]
+    print(f"Pillar 4: paper chi2 reproduced (K2015 modelled) mean={pr['weighted_mean']} chi2={pr['T']} p={pr['p_value']} reproduces={pr['reproduces_paper']}; "
+          f"own tests 482.5cm T={p4_sum['audit_own_test_ward_wilson_3_si_rows_arl482cm_cal']['T']}, 500.5cm T={p4_sum['audit_own_test_ward_wilson_3_si_rows_arl500cm_cal']['T']}")
+    for k in ("ward_wilson_arlington_canyon_12_dates_392_503cm_14c", "ward_wilson_arlington_canyon_10_dark_layer_464_503cm_14c",
+              "ward_wilson_arlington_canyon_dark_layer_not_old_wood_14c", "ward_wilson_arlington_canyon_2_si_table_s2_dates_14c",
+              "ward_wilson_three_site_context_k2008_avg_and_ws2007_pooled_14c"):
+        v = p4_sum[k]
+        print(f"  {k}: n={v['n']} mean={v['weighted_mean']} T={v['T']} df={v['df']} p={v.get('p_value_sf', v['p_value']):.3g}")
+    print(f"  AC omitted from SI Table S2 = {p4_sum['n_arlington_canyon_dates_392_503cm_omitted_from_si_table_s2']}/{p4_sum['n_arlington_canyon_published_direct_dates_392_503cm']}; quartz strata={p4_sum['vertical_quartz_controls']['total_strata_analyzed_for_quartz']}/{p4_sum['vertical_quartz_controls']['total_strata_across_3_sites']} ({p4_sum['vertical_quartz_controls']['pct_strata_analyzed']}%)")
 
 
 if __name__ == "__main__":
