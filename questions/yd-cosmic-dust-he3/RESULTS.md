@@ -9,7 +9,7 @@
 
 ## Short Answer
 
-**No cosmic-dust surge is present in the ocean sediment record across any proposed Younger Dryas or Taurid-breakup timescale—yet our strict pre-registered verdict logs `ambiguous_or_mixed` solely because one of three blinded Cenozoic positive controls failed its pre-registered baseline window.**
+**Mixed, by the rule fixed in advance: one of three positive controls failed. Setting that aside, nine ocean cores show no rise in helium-3 dust lasting thousands of years across 20,000 to 10,000 years ago. For a rise lasting centuries the evidence is one core. A single day is beyond this method (see the spot check below).**
 
 Across **seven ice-free Pacific pelagic cores** measured by **two independent laboratories** (`n = 181` valid paired `²³⁰Th_xs,0`-normalized `³He_ET` flux samples; Lamont-Doherty and Caltech), extraterrestrial Helium-3 cosmic dust flux sat **slightly below** baseline in every pre-registered window:
 
@@ -20,7 +20,68 @@ Across **seven ice-free Pacific pelagic cores** measured by **two independent la
 - **Independent North Atlantic replication (`KN207-2-GGC3 & GGC6`, `n = 117`, UC Davis/Harvard):** confirms the null on both chronostratigraphic relative burial rate (`W1 = 0.686×`, `W2 = 0.896×`, `W3 = 0.907×`, all `p ≥ 0.76`) and raw `[³He_ET]` concentration (`0.630×`, `0.738×`, `0.887×`, all `p ≥ 0.91`).
 
 **Why the formal pre-registered verdict is `ambiguous_or_mixed` (and why we report it unchanged):**  
-Every single Quaternary criterion for `no_cosmic_dust_surge` passed decisively, **and** both primary **`8.2 Ma` Veritas asteroid-breakup positive controls** across two separate oceans passed (`2.31×` in Equatorial Atlantic `ODP 926B`, `p = 0.00010`; `2.28×` in South Indian Ocean `ODP 757B`, `p = 0.00050`). However, our third positive control (`LateEocene_35.5Ma_ODP757B`) used a blinded baseline window (`25.0–33.5 Ma`) that inadvertently overlapped a late-Oligocene (`25.0–30.5 Ma`) step-up in `ODP 757B`, reducing the pre-registered ratio to `1.03×` (`p = 0.504`) even though the actual `35.3–36.1 Ma` shower jumps **`4.00×`** above its immediately adjacent `30.5–34.5` & `36.2–38.5 Ma` bracketing sediments (post-hoc diagnostic). Under our locked rules (`protocol.md §4`), any Pillar 0 positive-control failure triggers `ambiguous_or_mixed`; we keep that exact formal verdict without post-hoc protocol edits.
+Every single Quaternary criterion for `no_cosmic_dust_surge` passed decisively, **and** both primary **`8.2 Ma` Veritas asteroid-breakup positive controls** across two separate oceans passed (`2.31×` in Equatorial Atlantic `ODP 926B`, `p = 0.00010`; `2.28×` in South Indian Ocean `ODP 757B`, `p = 0.00050`). However, our third positive control (`LateEocene_35.5Ma_ODP757B`) used a blinded baseline window (`25.0–33.5 Ma`) that inadvertently overlapped a late-Oligocene (`25.0–30.5 Ma`) step-up in `ODP 757B`, reducing the pre-registered ratio to `1.03×` (`p = 0.504`) even though the actual `35.3–36.1 Ma` shower jumps **`4.00×`** above its immediately adjacent `30.5–34.5` & `36.2–38.5 Ma` bracketing sediments (a comparison chosen after seeing the data: exploratory, not evidence). Under our locked rules (`protocol.md §4`), any Pillar 0 positive-control failure triggers `ambiguous_or_mixed`; we keep that exact formal verdict without post-hoc protocol edits.
+
+---
+
+## Spot check and corrections (24 November 2026)
+
+Claude Fable 5.2 (Anthropic), with a sub-agent (Claude Opus 5.5), checked this study after it was published. The
+lock is in order. All nine data files match their hashes and a rerun of the locked program gives the four results
+files byte for byte. The sample values come from public data files, not from tables in papers; all 181 Pacific
+rows were read a second time independently, with no mismatch. The formal verdict, `ambiguous_or_mixed`, follows
+from the locked rules. What the study can tell is narrower than this report says. The headline has been rewritten
+and wrong statements corrected in the text; the rest is as first published. The scripts and their output are in
+`spotcheck/`.
+
+1. **The headline went beyond the locked result.** The plan required every positive control to pass before the
+   answer "no surge" could be given. One of three failed. The reason offered for the failure, a window that
+   overlapped a later rise, was found by looking at the data afterwards, and the "4.00×" that goes with it (4.12 at full precision) uses
+   windows chosen afterwards. It is exploration, not evidence, and is now labelled so wherever it appears.
+2. **The Younger Dryas window is tested by one core.** Mud on the sea floor is stirred by burrowing animals, so
+   each sample averages over some span of time. From the cores' own depths and ages, SO202-07-6 builds up at
+   about 6.5 cm per thousand years and averages over roughly a thousand years. The other eight build up at 1.2
+   to 2.2 cm per thousand years and average over two to nine thousand (taking the stirred layer as 5 to 10 cm
+   deep, which is an assumption). "250 to 1,000 years" applies to the first
+   core only. That core alone gives a ratio of 0.92 with an upper bound of 1.37; the pooled bound of 1.22 is
+   tightened by three samples from cores that cannot resolve a 2,000-year window. Samples next to one another
+   in a core are not independent, so all the intervals are somewhat too narrow.
+3. **What the controls show.** Both controls that passed are from one event 8.2 million years ago in which the
+   dust rose about fourfold for about 1.5 million years, and that event was the break-up of an asteroid. They
+   show that the arithmetic finds a large, very long rise. They do not show that a rise lasting centuries would
+   be seen, or that a comet's dust would be. The one control that may record comets is the one that failed.
+4. **Helium-3 counts only fine dust that arrives gently.** The report says so (Limits, point 2) and then says
+   that comet break-ups "shed overwhelmingly more mass in fine dust than in large fragments", with no source.
+   Dust on a fast, comet-like orbit is heated more on entry and may keep less of its helium than the slow
+   asteroid dust that makes up most of the usual supply. We did not check a source for that either. Both
+   statements should be read as unverified. The "2–10×" cloud that the report says the theory predicts also has
+   no citation.
+5. **A wrong statement about dating.** The report says the best core has 20 of its 42 radiocarbon dates "directly
+   inside 11.5–13.5 ka". Those are raw radiocarbon ages. Converted to calendar years they fall at about 13,200
+   to 15,200 years ago, and 6 dates fall in the Younger Dryas window.
+6. **Smaller points.** "Gold-standard" overstates the four Cocos Ridge cores: they come from a study of whether
+   the thorium and helium methods agree, which found that they differ significantly in 3 of the 4. The windows
+   15 to 10 and 20 to 10 thousand years ago show a drop of 16% to 20% that is statistically clear, which the
+   report calls "the same steady drizzle"; it is better read as the size of the method's own wobble. The
+   comparison with polar ice is a check of units and no more: the ice has no samples between 4,000 and 75,000
+   years ago, and the cores' own medians differ by a factor of 1.6. In the blind scan of the 18 highest samples,
+   11 are from two cores whose samples are mostly older than 60,000 years and could not have fallen in any
+   window. One conversion in the program is wrong by a factor of 1,000, so the flux column of
+   `results/positive_controls.csv` is a thousand times too small; the ratios do not depend on it.
+
+**What the study shows, restated.** Over 15,000 to 10,000 and 20,000 to 10,000 years ago, nine ocean cores from
+three laboratories show no rise in the fine cosmic dust that carries helium-3; if anything a little less. That is
+solid for a rise lasting thousands of years. For one lasting centuries it rests on a single core, which rules out
+anything above about a third more than usual. It says nothing about a single day.
+
+**Which version of the hypothesis this bears on.** A long-lived cloud of dust belongs to the wider theory of a
+comet breaking up over thousands of years, and to the drawn-out version we built ourselves ([the topic
+page](../../site/topics/younger-dryas.md) sets out the three versions). The hypothesis's authors describe one
+day of large fragments. Large fragments carry almost no helium-3, and one day cannot be resolved in this mud, so
+this study neither helps nor hurts that version.
+
+**Not replicated.** No model from a second company has rewritten this analysis from the plan, which the lab's rules
+ask for before a `data` question is called done. None is planned for now.
 
 ---
 
@@ -34,7 +95,7 @@ To prove our pipeline detects real extraterrestrial dust showers on the exact sa
 | **Veritas `8.2 Ma` breakup** | South Indian `ODP 757B` | `8.35–7.50 Ma` | `10.5–8.5` & `7.2–6.2 Ma` | `7 / 27` | **`2.284×`** | `[0.947, 3.853]` | **`0.00050`** | **PASS** |
 | **Late Eocene `35.5 Ma` shower** | South Indian `ODP 757B` | `36.50–34.50 Ma` | `33.50–25.00 Ma` | `25 / 18` | `1.032×` | `[0.680, 2.429]` | `0.50365` | **FAIL (baseline shift)** |
 
-*Post-hoc diagnostic on `ODP 757B` Late Eocene:* Inspecting `results/positive_controls.csv` explains why the third control missed cleanly without casting doubt on `³He_ET` sensitivity. In `ODP 757B`, the Late Eocene shower peaks across `35.3–36.1 Ma` (`n = 13`, median `0.320`, peak `0.720 × 10⁻³` units), which is **`4.00×`** higher than the immediately adjacent `30.5–34.5` and `36.2–38.5 Ma` sediments (`n = 24`, median `0.080`). However, our blinded baseline (`25.0–33.5 Ma`) mixed those low `30.5–33.5 Ma` values with an elevated late-Oligocene shelf at `25.0–30.5 Ma` (`n = 11`, median `0.190`), masking the `35.5 Ma` peak inside the `34.5–36.5 Ma` window. Meanwhile, both independent oceans detect the `8.2 Ma` Veritas breakup cleanly at `2.28–2.31×` (`p ≤ 0.0005`).
+*Exploratory, made after the result was known, and not evidence:* Inspecting `results/positive_controls.csv` suggests why the third control missed. In `ODP 757B`, the Late Eocene shower peaks across `35.3–36.1 Ma` (`n = 13`, median `0.320`, peak `0.720 × 10⁻³` units), which is **`4.00×`** higher than the immediately adjacent `30.5–34.5` and `36.2–38.5 Ma` sediments (`n = 24`, median `0.080`). However, our blinded baseline (`25.0–33.5 Ma`) mixed those low `30.5–33.5 Ma` values with an elevated late-Oligocene shelf at `25.0–30.5 Ma` (`n = 11`, median `0.190`), masking the `35.5 Ma` peak inside the `34.5–36.5 Ma` window. Meanwhile, both independent oceans detect the `8.2 Ma` Veritas breakup cleanly at `2.28–2.31×` (`p ≤ 0.0005`).
 
 ---
 
@@ -75,7 +136,7 @@ Normalizing `[³He_ET]` by **`²³⁰Th_xs,0`-derived vertical mass accumulation
 | E. Eq. Pacific Cocos Ridge `CR01–CR05` | `W3` (`20.0–10.0 ka`) | `23 / 50` | `0.734` | `0.835` | `0.878×` | `0.871×` | `[0.792, 0.972]` | `0.989` |
 | Central Eq. Pacific `MANOP_B18/B25` | `W2 / W3` | `1 / 3` | `0.480 / 0.400` | `0.970 / 0.785` | `0.495× / 0.453×` | — | — | `0.922 / 0.997` |
 
-Not a single regional stack, baseline split, endmember choice, or mean vs. median estimator produces a cosmic-dust elevation. The highest-resolution deglacial core (`SO202-07-6`, anchored by `42` AMS `¹⁴C` dates including `20` directly inside `11.5–13.5 ka`) actually shows flat-to-slightly-lower `³He_ET` flux throughout the entire `15–10 ka` interval (`0.656` vs `0.784 pcc cm⁻² kyr⁻¹`).
+Not a single regional stack, baseline split, endmember choice, or mean vs. median estimator produces a cosmic-dust elevation. The highest-resolution deglacial core (`SO202-07-6`, anchored by `42` AMS `¹⁴C` dates, `6` of which fall in `13.5–11.5 ka` once calibrated) actually shows flat-to-slightly-lower `³He_ET` flux throughout the entire `15–10 ka` interval (`0.656` vs `0.784 pcc cm⁻² kyr⁻¹`).
 
 ### 2.3 Blind Top-10% Peak Scan (No Boundary Labels)
 
@@ -102,13 +163,13 @@ Measured by a **third independent laboratory** (UC Davis / Harvard; Middleton et
 
 ## 4. Limits and What This Cannot Rule Out
 
-1. **Pelagic bioturbation and sampling resolution (`~250–1,000 yr`):** Even our sharpest core (`SO202-07-6`, `8` samples across `11.5–13.5 ka`) is a deep-sea sediment core mixed by seafloor burrowers over several centuries. A **brief single-day or decade-scale** dust pulse smaller than `~200–500` years' worth of normal background cosmic rain (`~20–50%` integrated over `2 kyr`) could be diluted below our `1.22×` (`W1`) 95% upper bound. What this dataset *decisively* rules out is any **multi-century to multi-millennial elevation** in Earth's interplanetary dust environment—specifically the sustained `2–10×` cosmic-dust cloud predicted by a disintegrating giant Taurid comet across `13.5–11.5 ka`, `15–10 ka`, or `20–10 ka`.
+1. **Pelagic bioturbation and sampling resolution (about `1,000 yr` in the best core, `2,000–9,000 yr` in the others):** Even our sharpest core (`SO202-07-6`, `8` samples across `11.5–13.5 ka`) is a deep-sea sediment core mixed by seafloor burrowers over several centuries. A **brief single-day or decade-scale** dust pulse smaller than `~200–500` years' worth of normal background cosmic rain (`~20–50%` integrated over `2 kyr`) could be diluted below our `1.22×` (`W1`) 95% upper bound. What this dataset rules out is a **rise lasting thousands of years** in the fine dust reaching the Earth, and, on one core, a rise of more than about a third lasting centuries. The `2–10×` cloud is this report's own figure for what a disintegrating giant Taurid comet would produce; no source is cited for it across `13.5–11.5 ka`, `15–10 ka`, or `20–10 ka`.
 2. **Particle size and thermal retention (`< 50 µm` IDPs):** Extraterrestrial `³He` is retained primarily by small (`< 50 µm`) solar-wind-irradiated interplanetary dust particles that decelerate gently in the upper atmosphere without melting; large vaporizing bolides (`> 10 m`) or fast-entry centimetre meteoroids lose their helium on entry. A comet breakup that somehow produced *only* large bolides with zero accompanying micron-sized zodiacal dust would be invisible to `³He_ET`—though real comet breakups and asteroid collisions (like the `8.2 Ma` Veritas breakup and modern comets) shed overwhelmingly more mass in fine dust than in large fragments.
 3. **Why polar ice cores still await measurement across `20–10 ka`:** The public Brook et al. (2000) ice-core archive contains `0` samples between `4 ka` and `75 ka`. Measuring continuous `³He_ET` directly inside Greenland or Antarctic ice across `14.5–11.5 ka` at decadal resolution would close the remaining sub-century bioturbation loophole.
-4. **Strict Pillar 0 positive-control accounting:** Our formal verdict stays `ambiguous_or_mixed` strictly because the third blinded positive control (`ODP 757B` Late Eocene) failed its pre-registered `25–33.5 Ma` baseline window due to a late-Oligocene shift, despite both `8.2 Ma` Veritas ocean controls passing at `2.28–2.31×` (`p ≤ 0.0005`) and the actual `35.3–36.1 Ma` shower jumping `4.00×` above adjacent brackets.
+4. **Strict Pillar 0 positive-control accounting:** Our formal verdict stays `ambiguous_or_mixed` strictly because the third blinded positive control (`ODP 757B` Late Eocene) failed its pre-registered `25–33.5 Ma` baseline window due to a late-Oligocene shift, despite both `8.2 Ma` Veritas ocean controls passing at `2.28–2.31×` (`p ≤ 0.0005`) and, in a comparison chosen afterwards (exploratory), the `35.3–36.1 Ma` shower standing `4.00×` above adjacent brackets.
 
 ---
 
 ## 5. What This Means
 
-A giant comet breaking up in the inner solar system over the past 20,000 years should flood Earth's orbit with fine cosmic dust—the exact kind of dust that carries extraterrestrial Helium-3 (`³He_ET`) and lights up deep-sea sediments by more than double during real ancient breakups like the `8.2 Ma` Veritas collision. Across nine independently dated ocean cores from the Pacific and Atlantic measured by three separate laboratories, that cosmic dust surge is not there. During the Younger Dryas (`13.5–11.5 ka`), the Late Deglaciation (`15–10 ka`), and the entire `20–10 ka` breakup window, Earth received the same steady drizzle of space dust it receives today—if anything slightly less (`0.80–0.92×` baseline), with zero top-decile spikes falling in `15–10 ka`. While deep-sea mixing cannot forbid a brief, dust-poor impact lasting only days or decades, the public ocean `³He_ET` record leaves no room for a sustained, multi-century or multi-millennial Taurid cosmic dust cloud enveloping Earth during the Younger Dryas.
+If a giant comet broke up in the inner solar system over the past 20,000 years and filled the Earth's neighbourhood with fine dust for thousands of years, that dust should show in deep-sea mud as extra helium-3, as it does about fourfold after an asteroid broke up 8.2 million years ago. In nine ocean cores from the Pacific and Atlantic, measured by three laboratories, it does not: across 20,000 to 10,000 years ago the mud holds the usual amount or slightly less. That is good evidence against a dust cloud lasting thousands of years. Against one lasting a few centuries it is one core's evidence, and against a single day it is none, because sea-floor mud blurs a thousand years or more together and because helium-3 rides only on fine dust, not on large fragments. By the rule we fixed in advance the result is also formally "mixed", since one of our three checks that the method works did not pass.

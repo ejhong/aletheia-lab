@@ -1,0 +1,118 @@
+
+== 1. Data files vs MANIFEST.md SHA-256
+  serno2015_so202_07_6.tab           OK
+  serno2015_so202_07_6_ages.tab      OK
+  tomchovska2026_cocos_ridge.xlsx    OK
+  marcantonio2001_b18_b25.tab        OK
+  middleton2018_kn207_ggc3.txt       OK
+  middleton2018_kn207_ggc6.txt       OK
+  brook2000_ice_helium.txt           OK
+  farley2006_odp757b.tab             OK
+  farley2006_odp926b.tab             OK
+
+== 2. Independent parse of the Pacific (Pillar 1) rows vs results/pillar1_samples.csv
+  rows: mine 181, study 181; mismatches in core/age/flux: 0
+  every 15th row (core, age ka, flux pcc cm-2 kyr-1) mine | study:
+    CR01           0.000  0.8284 |    0.000  0.8284
+    CR01          17.953  1.1069 |   17.953  1.1069
+    CR02           7.750  0.5484 |    7.750  0.5484
+    CR03           8.263  0.6120 |    8.263  0.6120
+    CR05           3.857  0.8517 |    3.857  0.8517
+    MANOP_B18      8.300  0.4500 |    8.300  0.4500
+    MANOP_B18    162.000  0.8000 |  162.000  0.8000
+    MANOP_B25     18.000  0.4000 |   18.000  0.4000
+    MANOP_B25    161.000  0.7100 |  161.000  0.7100
+    SO202-07-6     8.655  0.9418 |    8.655  0.9418
+    SO202-07-6    14.180  0.5760 |   14.180  0.5760
+    SO202-07-6    18.561  0.5602 |   18.561  0.5602
+    SO202-07-6    27.067  0.8513 |   27.067  0.8513
+
+== 3. Rows the study drops, and duplicate rows
+  farley2006_odp757b.tab: 135 rows in source
+  farley2006_odp926b.tab: 73 rows in source
+  dropped: CR02 20-22 cm: no Th-based MAR in Table S2
+  dropped: CR02 28-30 cm: no Th-based MAR in Table S2
+  dropped: CR02 34-36 cm: no Th-based MAR in Table S2
+  dropped: MANOP_B25 1.0 ka: no 3He flux value
+  dropped: MANOP_B25 137.0 ka: no 3He flux value
+  dropped: MANOP_B25 266.0 ka: no 3He flux value
+  dropped: ODP757B.TAB 121-757B-3H-6,11 (3515.8 ka): no 3He ET flux value
+  total dropped: 7
+  exact duplicate row in PANGAEA.846689, kept 2 times by the study: MANOP_B18 | 2.715 | 325.0 | 0.736 | 0.47 | 10.10
+
+== 4. Samples per core in each window (inclusive bounds, as in the study)
+  core             n  W1 13.5-11.5      W2 15-10      W3 20-10
+  CR01            18             1             3             6
+  CR02            20             1             2             5
+  CR03            17             1             3             7
+  CR05            18             0             4             5
+  KN207-2-GGC3    42             2             5            10
+  KN207-2-GGC6    75             3             5            11
+  MANOP_B18       30             0             0             1
+  MANOP_B25       27             0             1             2
+  SO202-07-6      51             8            22            33
+
+== 5. Sedimentation rate across 20-10 ka and smoothing time for ASSUMED mixed layers of (5.0, 10.0) cm
+  depth interpolated linearly between samples at the ends of the 10-20 ka span (or the core's own range if shorter)
+  CR01          10.00-20.00 ka   1.17 cm/kyr   5 cm ->  4.3 kyr  10 cm ->  8.6 kyr
+  CR02          10.00-20.00 ka   1.30 cm/kyr   5 cm ->  3.8 kyr  10 cm ->  7.7 kyr
+  CR03          10.00-17.32 ka   1.78 cm/kyr   5 cm ->  2.8 kyr  10 cm ->  5.6 kyr
+  CR05          10.00-15.03 ka   1.80 cm/kyr   5 cm ->  2.8 kyr  10 cm ->  5.6 kyr
+  KN207-2-GGC3  10.00-20.00 ka   1.95 cm/kyr   5 cm ->  2.6 kyr  10 cm ->  5.1 kyr
+  KN207-2-GGC6  10.00-20.00 ka   2.21 cm/kyr   5 cm ->  2.3 kyr  10 cm ->  4.5 kyr
+  MANOP_B18     10.00-20.00 ka   1.26 cm/kyr   5 cm ->  4.0 kyr  10 cm ->  7.9 kyr
+  MANOP_B25     10.00-20.00 ka   1.94 cm/kyr   5 cm ->  2.6 kyr  10 cm ->  5.2 kyr
+  SO202-07-6    10.00-20.00 ka   6.48 cm/kyr   5 cm ->  0.8 kyr  10 cm ->  1.5 kyr
+
+== 6. 13.5-11.5 ka window: median ratio [95% bootstrap] and one-sided p, study's own function
+  pooled 7 Pacific cores (study seed +10)                    n 11/ 95  0.921 [0.769, 1.223]  p=0.647  cores ['CR01', 'CR02', 'CR03', 'SO202-07-6']
+  SO202-07-6 alone (study seed +20)                          n  8/ 43  0.917 [0.630, 1.371]  p=0.630  cores ['SO202-07-6']
+  pooled without the 3 Cocos window samples (seed +10)       n  8/ 43  0.917 [0.628, 1.371]  p=0.632  cores ['SO202-07-6']
+  (the study's method drops cores with no sample in the window, so removing the 3 Cocos samples leaves
+   SO202-07-6 alone; MANOP has no 13.5-11.5 ka sample)
+  variant keeping Cocos baselines (CR01-CR05) in the pooled baseline: n 8/113, ratio 0.917 (point estimate)
+
+== 7. SO202-07-6 radiocarbon tie points (PANGAEA.845972)
+  rows: 42; with a calendar age: 41
+  raw 14C age in 11.5-13.5 (14C ka): 20; their calendar ages span 12.85-15.02 cal ka
+  calendar age in 11.5-13.5 cal ka: 6 (11.555, 12.190, 12.845, 12.932, 13.107, 13.199)
+  calendar ages are the published ones (Serno et al. 2015, CALIB 7.0.4 per the PANGAEA header); not recalibrated here
+
+== 8. fmol -> pcc factor (analysis/cosmic_dust_he3.py line 371)
+  line 371 reads: flx_pcc = flx_fmol * 0.022414
+  1 fmol = 1e-15 mol x 22414 cm3/mol = 2.2414e-11 cm3 = 22.414 pcc (1 pcc = 1e-12 cm3)
+  Veritas ODP 757B as coded (x0.022414)   ratio 2.284  p 0.00050  target median 0.0004
+  Veritas ODP 757B corrected (x22.414)    ratio 2.284  p 0.00050  target median 0.3788
+
+== 9. Blind top-10% scan (study's function)
+  top 18 of 181, threshold 2.1667x core median; per core: {'SO202-07-6': 7, 'MANOP_B25': 6, 'MANOP_B18': 5}
+  older than 60 ka: 10 (all MANOP); in the pool overall: 39 of 181
+  inside 10-20 ka (the union of the three windows): 2; older than 20 ka, so outside every window by age: 14
+
+== 10. Pacific core median flux vs Brook et al. (2000) ice
+  CR01        0.900 pcc cm-2 kyr-1
+  CR02        0.916 pcc cm-2 kyr-1
+  CR03        0.578 pcc cm-2 kyr-1
+  CR05        0.760 pcc cm-2 kyr-1
+  MANOP_B18   0.660 pcc cm-2 kyr-1
+  MANOP_B25   0.880 pcc cm-2 kyr-1
+  SO202-07-6  0.659 pcc cm-2 kyr-1
+  spread of core medians: 0.578-0.916 = 1.58x
+  Brook file: 28 flux rows (replicates counted separately), median 0.78, range 0.27-17.88; rows between 4 and 75 ka: 0
+  Brook et al. 2000 abstract: late Holocene GISP2 0.62 +/- 0.27, Vostok 0.77 +/- 0.25 (x1e-12 cm3 STP cm-2 ka-1)
+  Cocos Ridge source, Table S7 (He- vs Th-derived MAR, core-level two-sided p):
+    CR01: n 18, z -3.04, p 2E-3
+    CR02: n 20, z -2.95, p 3.0000000000000001E-3
+    CR03: n 17, z 5.82, p <0.0000
+    CR05: n 18, z 1.59, p 0.111
+
+== 11. Late Eocene, ODP 757B (corrected units, pcc cm-2 kyr-1)
+  locked target 34.5-36.5 Ma                   n 25  median 0.182  max 0.724
+  locked baseline 25.0-33.5 Ma                 n 18  median 0.176  max 0.625
+    of which 25.0-30.5 Ma                      n 11  median 0.193  max 0.625
+    of which 30.5-33.5 Ma                      n  7  median 0.063  max 0.247
+  post-hoc peak 35.3-36.1 Ma                   n 13  median 0.318  max 0.724
+  post-hoc brackets 30.5-34.5 + 36.2-38.5 Ma   n 24  median 0.077  max 0.247
+  post-hoc ratio 4.12x (windows chosen after seeing the data); single highest sample / bracket median = 9.4x
+  locked ratio (simple medians) 1.032x
+  same windows on results/positive_controls.csv (5 decimals, 1000x too small): 0.00032 / 0.00008 = 4.00x (the study's 4.00x; rounding, magnified by the unit factor)

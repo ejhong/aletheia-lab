@@ -33,8 +33,8 @@ def make_tiles(summary: dict):
     items = [
         (f"{w1['median_ratio']:.2f}×", f"Younger Dryas (13.5–11.5 ka) cosmic-dust flux vs. baseline (95% CI {w1['boot_ci95'][0]:.2f}–{w1['boot_ci95'][1]:.2f}×, p = {w1['p_perm_one_sided']:.2f})", False),
         (f"{w3['median_ratio']:.2f}×", f"Broad 20–10 ka Taurid breakup window vs. baseline (95% CI {w3['boot_ci95'][0]:.2f}–{w3['boot_ci95'][1]:.2f}×, p = {w3['p_perm_one_sided']:.3f})", False),
-        (f"{hits_w2} / {k_top}", "top-10% cosmic-dust peaks falling inside 15–10 ka (100% outside the Younger Dryas & Bølling–Allerød)", False),
-        (f"{v926['median_ratio']:.2f}×", f"real 8.2 Ma Veritas breakup positive control in Atlantic & Indian oceans (p ≤ 0.0005)", False),
+        (f"{hits_w2} / {k_top}", "of the highest tenth of samples fall inside 15–10 ka (a weak check: 11 of the 18 are from cores that have almost no samples in that window)", False),
+        (f"{v926['median_ratio']:.2f}×", "rise after a real asteroid break-up 8.2 million years ago, the check that passed; a second kind of check failed, so the locked verdict is mixed", False),
     ]
     body = '<div class="tiles">\n' + "\n".join(
         f'<div class="tile"><p class="tile-value{" is-word" if w else ""}">{esc(v)}</p><p class="tile-label">{esc(l)}</p></div>'
