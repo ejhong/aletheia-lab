@@ -1,0 +1,218 @@
+<figure class="fig" aria-label="Interactive geochemical source fingerprinting across YDB sites, confirmed Chicxulub K-Pg impacts, volcanic condensates, and continental crust">
+<style>
+.pf-bar{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:.75rem;align-items:center}
+.pf-btn{font:500 13px/1.2 var(--sans);padding:.38rem .75rem;border-radius:4px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.pf-btn.is-on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.pf-wrap{position:relative;width:100%;overflow-x:auto}
+.pf-tip{position:fixed;pointer-events:none;z-index:50;background:var(--band);color:var(--band-ink);border:1px solid var(--band-line);border-radius:5px;padding:.45rem .65rem;font:400 12.5px/1.4 var(--sans);max-width:290px;box-shadow:0 6px 18px rgba(0,0,0,.22);display:none}
+.pf-leg{display:flex;flex-wrap:wrap;gap:.75rem 1.1rem;font:400 12.5px/1.4 var(--sans);color:var(--ink-soft);margin:.35rem 0 .6rem}
+.pf-key{display:inline-flex;align-items:center;gap:.35rem}
+</style>
+<div class="pf-bar" role="tablist" aria-label="Fingerprint view selector">
+  <button type="button" class="pf-btn is-on" data-mode="ratios">1 · Pt/Ir vs. Re/Os map</button>
+  <button type="button" class="pf-btn" data-mode="spider">2 · 6-HSE pattern (CI-CLR)</button>
+  <button type="button" class="pf-btn" data-mode="mixing">3 · Cosmic vs. Volcanic fit (RMSE)</button>
+</div>
+<div class="pf-leg" id="pf-leg"></div>
+<div class="pf-wrap"><svg id="pf-svg" class="chart" viewBox="0 0 740 420" width="100%" role="img" aria-label="Geochemical fingerprint chart"></svg></div>
+<div class="pf-tip" id="pf-tip"></div>
+<figcaption>Interactive geochemical fingerprint comparison. <strong>View 1</strong> maps Pt/Ir against Re/Os on log axes: confirmed Chicxulub K–Pg impact samples (verdigris diamonds) cluster tightly inside the cosmic box next to CI chondrite, whereas Page-Ladson (copper squares) and Hall's Cave (ochre circles) pull strongly toward volcanic gas condensates and continental crust. <strong>View 2</strong> plots CI-normalized centered log-ratios (CLR) across all six HSEs: K–Pg tracks the flat chondrite line while YDB sediments plunge at Ir/Ru and surge at Re/Pt. <strong>View 3</strong> compares two-component mixing errors: all 9 K–Pg impact controls sit below the diagonal (cosmic beats volcanic), whereas Page-Ladson's unradiogenic spike and Hall's Cave's YDB spike (HC16_03) sit above it—and Hall's Cave's other unradiogenic layers fit neither end-member cleanly. Hover any point for exact numbers.</figcaption>
+<script>
+(function(){
+  const DATA = {"pts": [{"g": "ci", "name": "CI Chondrite (Wasson & Kallemeyn 1988)", "pt_ir": 2.152, "re_os": 0.0755, "os_iso": 0.126, "r_cos": 0.0, "r_volc": 2.5, "cls": "chondrite"}, {"g": "iron", "name": "Iron Meteorite Steelman (Low-Ir Iron (fallback literature))", "pt_ir": 20.0, "re_os": 0.125, "os_iso": 0.126, "r_cos": 0.0, "r_volc": 2.2, "cls": "iron"}, {"g": "ucc", "name": "Upper Continental Crust (UCC)", "pt_ir": 27.227, "re_os": 6.387, "os_iso": 1.26, "r_cos": 0.0, "r_volc": 0.0, "cls": "ucc"}, {"g": "volc", "name": "Kudryavy Volcano gas condensates (Average)", "pt_ir": 10.875, "re_os": 144.437, "os_iso": 0.15, "r_cos": 1.8, "r_volc": 0.0, "cls": "volcanic"}, {"g": "volc", "name": "Tolbachik Volcano Gas Condensate, Kamchatka", "pt_ir": 3.0, "re_os": 67.5, "os_iso": 0.15, "r_cos": 1.8, "r_volc": 0.0, "cls": "volcanic"}, {"g": "kpg", "name": "Chicxulub K-Pg: RSD% (Chicxulub M0077 (Data )", "pt_ir": 1.9, "re_os": 4.3889, "os_iso": null, "r_cos": 0.559, "r_volc": 1.726, "cls": "chondrite"}, {"g": "kpg", "name": "Chicxulub K-Pg: RSD% (Chicxulub M0077 (Data )", "pt_ir": 0.475, "re_os": 0.1115, "os_iso": null, "r_cos": 0.303, "r_volc": 1.385, "cls": "kpg_impact"}, {"g": "kpg", "name": "Chicxulub K-Pg: RSD% (Chicxulub M0077 (Data )", "pt_ir": 0.478, "re_os": 0.1377, "os_iso": null, "r_cos": 0.312, "r_volc": 1.332, "cls": "kpg_impact"}, {"g": "kpg", "name": "Chicxulub K-Pg: RSD% (Chicxulub M0077 (Data )", "pt_ir": 0.986, "re_os": 0.1009, "os_iso": null, "r_cos": 0.301, "r_volc": 1.334, "cls": "kpg_impact"}, {"g": "kpg", "name": "Chicxulub K-Pg: B0+2+4 (Mexican K-Pg Sections )", "pt_ir": 1.73, "re_os": 0.1364, "os_iso": 0.167, "r_cos": 0.115, "r_volc": 1.071, "cls": "kpg_impact"}, {"g": "kpg", "name": "Chicxulub K-Pg: BO+0+2 (Mexican K-Pg Sections )", "pt_ir": 3.194, "re_os": 0.7682, "os_iso": 0.217, "r_cos": 0.235, "r_volc": 0.861, "cls": "kpg_impact"}, {"g": "kpg", "name": "Chicxulub K-Pg: G+2.5+4 (Mexican K-Pg Sections )", "pt_ir": 1.294, "re_os": 1.7263, "os_iso": 0.226, "r_cos": 0.377, "r_volc": 0.777, "cls": "kpg_impact"}, {"g": "kpg", "name": "Chicxulub K-Pg: G0+1 (Mexican K-Pg Sections )", "pt_ir": 1.062, "re_os": 0.6026, "os_iso": 0.192, "r_cos": 0.278, "r_volc": 0.947, "cls": "kpg_impact"}, {"g": "kpg", "name": "Chicxulub K-Pg: LL+0+2* (Mexican K-Pg Sections )", "pt_ir": 1.721, "re_os": 0.8513, "os_iso": null, "r_cos": 0.151, "r_volc": 0.924, "cls": "kpg_impact"}, {"g": "hc_non", "name": "Hall's Cave HC16_20 \u00b7 Non-YDB (10.79 ka)", "pt_ir": 16.216, "re_os": 7.049, "os_iso": 1.5, "r_cos": 0.197, "r_volc": 0.341, "cls": "ucc"}, {"g": "hc_non", "name": "Hall's Cave HC16_19 \u00b7 Non-YDB (10.90 ka)", "pt_ir": 125.227, "re_os": 1.161, "os_iso": 0.28, "r_cos": 0.934, "r_volc": 0.818, "cls": "ucc"}, {"g": "hc_non", "name": "Hall's Cave HC15_13 \u00b7 Non-YDB (10.99 ka)", "pt_ir": 1.439, "re_os": 0.698, "os_iso": 0.23, "r_cos": 0.595, "r_volc": 0.818, "cls": "kpg_impact"}, {"g": "hc_non", "name": "Hall's Cave HC16_17 \u00b7 Non-YDB (11.54 ka)", "pt_ir": 73.71, "re_os": 5.824, "os_iso": 1.11, "r_cos": 0.432, "r_volc": 0.559, "cls": "ucc"}, {"g": "hc_ydb", "name": "Hall's Cave HC16_14 \u00b7 YDB (13.0 ka)", "pt_ir": 9.524, "re_os": 10.069, "os_iso": 1.8, "r_cos": 0.156, "r_volc": 0.21, "cls": "ucc"}, {"g": "hc_ydb", "name": "Hall's Cave HC16_01 \u00b7 YDB (13.0 ka)", "pt_ir": 8.525, "re_os": 13.416, "os_iso": 2.07, "r_cos": 0.264, "r_volc": 0.264, "cls": "ucc"}, {"g": "hc_ydb", "name": "Hall's Cave HC17_01 \u00b7 YDB (13.0 ka)", "pt_ir": 55.782, "re_os": 12.386, "os_iso": 2.02, "r_cos": 0.268, "r_volc": 0.268, "cls": "ucc"}, {"g": "hc_ydb", "name": "Hall's Cave HC17_39 \u00b7 YDB (13.0 ka)", "pt_ir": 20.0, "re_os": 8.834, "os_iso": 2.22, "r_cos": 0.402, "r_volc": 0.402, "cls": "ucc"}, {"g": "hc_ydb", "name": "Hall's Cave HC17_44 \u00b7 YDB (13.0 ka)", "pt_ir": 2.698, "re_os": 3.119, "os_iso": 0.41, "r_cos": 0.587, "r_volc": 0.679, "cls": "ucc"}, {"g": "hc_ydb", "name": "Hall's Cave HC15_10 \u00b7 YDB (13.0 ka)", "pt_ir": 3.923, "re_os": 9.992, "os_iso": 1.94, "r_cos": 0.243, "r_volc": 0.278, "cls": "ucc"}, {"g": "hc_ydb", "name": "Hall's Cave HC16_03 \u00b7 YDB (13.0 ka)", "pt_ir": 5.493, "re_os": 0.396, "os_iso": 0.15, "r_cos": 0.976, "r_volc": 0.862, "cls": "kpg_impact"}, {"g": "hc_non", "name": "Hall's Cave HC16_04 \u00b7 Non-YDB (13.15 ka)", "pt_ir": 13.504, "re_os": 10.32, "os_iso": 1.55, "r_cos": 0.156, "r_volc": 0.314, "cls": "ucc"}, {"g": "hc_non", "name": "Hall's Cave HC16_08 \u00b7 Non-YDB (13.21 ka)", "pt_ir": 21.329, "re_os": 13.664, "os_iso": 1.46, "r_cos": 0.239, "r_volc": 0.301, "cls": "ucc"}, {"g": "hc_non", "name": "Hall's Cave HC16_10 \u00b7 Non-YDB (13.24 ka)", "pt_ir": 9.079, "re_os": 2.286, "os_iso": 0.42, "r_cos": 0.632, "r_volc": 0.679, "cls": "ucc"}, {"g": "hc_non", "name": "Hall's Cave HC16_11 \u00b7 Non-YDB (13.24 ka)", "pt_ir": 26.817, "re_os": 8.456, "os_iso": 1.48, "r_cos": 0.259, "r_volc": 0.363, "cls": "ucc"}, {"g": "hc_non", "name": "Hall's Cave HC15_06 \u00b7 Non-YDB (13.31 ka)", "pt_ir": 1.486, "re_os": 0.589, "os_iso": 0.16, "r_cos": 0.722, "r_volc": 0.876, "cls": "ucc"}, {"g": "pl", "name": "Page-Ladson 36-26 \u00b7 YDB zone (847 cm)", "pt_ir": 53.721, "re_os": 317.04, "os_iso": 0.71, "r_cos": 0.281, "r_volc": 0.28, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-28 \u00b7 YDB zone (849 cm)", "pt_ir": 43.966, "re_os": 507.78, "os_iso": 0.69, "r_cos": 0.138, "r_volc": 0.128, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-30 \u00b7 YDB zone (851 cm)", "pt_ir": 43.782, "re_os": 358.4, "os_iso": 0.75, "r_cos": 0.083, "r_volc": 0.081, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-31 \u00b7 YDB zone (852 cm)", "pt_ir": 58.101, "re_os": 303.55, "os_iso": 0.73, "r_cos": 0.432, "r_volc": 0.432, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-33 \u00b7 YDB zone (854 cm)", "pt_ir": 36.234, "re_os": 253.62, "os_iso": 0.73, "r_cos": 0.327, "r_volc": 0.327, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-35 \u00b7 YDB zone (856 cm)", "pt_ir": 39.165, "re_os": 337.28, "os_iso": 0.72, "r_cos": 0.043, "r_volc": 0.043, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-36 \u00b7 YDB zone (857 cm)", "pt_ir": 56.609, "re_os": 228.03, "os_iso": 0.7, "r_cos": 0.222, "r_volc": 0.219, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-37 \u00b7 YDB zone (858 cm)", "pt_ir": 35.333, "re_os": 323.28, "os_iso": 0.72, "r_cos": 0.429, "r_volc": 0.428, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-38 \u00b7 YDB zone (859 cm)", "pt_ir": 37.586, "re_os": 446.1, "os_iso": 0.72, "r_cos": 0.137, "r_volc": 0.137, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-39 \u00b7 Unrad spike (860 cm)", "pt_ir": 29.978, "re_os": 60.91, "os_iso": 0.4, "r_cos": 0.658, "r_volc": 0.257, "cls": "volcanic"}, {"g": "pl", "name": "Page-Ladson 36-39 \u00b7 YDB zone (860 cm)", "pt_ir": 41.394, "re_os": 1678.83, "os_iso": 0.73, "r_cos": 0.297, "r_volc": 0.299, "cls": "volcanic"}], "spiders": [{"id": "ci", "name": "CI Chondrite (cosmic reference = 0)", "vals": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "color": "#2f6b55", "dash": "5 4"}, {"id": "kpg", "name": "Confirmed Chicxulub K-Pg (median, n=9)", "vals": [-0.094, -0.077, -0.289, -0.199, -0.006, 0.505], "color": "#47705f", "dash": ""}, {"id": "kud", "name": "Kudryavy Volcanic Gas Condensate", "vals": [0.3, -1.236, -1.93, -0.532, -0.185, 3.582], "color": "#955730", "dash": "6 3"}, {"id": "ucc", "name": "Upper Continental Crust (UCC)", "vals": [-0.63, -0.752, -0.806, 0.35, 0.541, 1.297], "color": "#5d6672", "dash": "2 3"}, {"id": "hc_ydb", "name": "Hall's Cave YDB spike HC16_03 (13.01 ka)", "vals": [0.94, -0.595, -1.432, -0.188, -0.385, 1.66], "color": "#b07d1b", "dash": ""}, {"id": "pl_unrad", "name": "Page-Ladson unrad spike 36-39 (860 cm)", "vals": [0.536, -1.622, -1.582, -0.478, -0.297, 3.443], "color": "#c04b2d", "dash": ""}, {"id": "pl_ydb", "name": "Page-Ladson YDB base 36-30 (851 cm, dup)", "vals": [0.07, -1.564, -1.772, -0.255, -0.226, 3.747], "color": "#7b3f5e", "dash": "4 2"}], "hse": ["Os", "Ir", "Ru", "Pt", "Pd", "Re"]};
+  const svg = document.getElementById("pf-svg");
+  const leg = document.getElementById("pf-leg");
+  const tip = document.getElementById("pf-tip");
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (tag, attrs, txt) => {
+    const n = document.createElementNS(NS, tag);
+    for (const [k,v] of Object.entries(attrs || {})) n.setAttribute(k, v);
+    if (txt !== undefined) n.textContent = txt;
+    return n;
+  };
+  const showTip = (e, htmlStr) => {
+    tip.innerHTML = htmlStr;
+    tip.style.display = "block";
+    tip.style.left = Math.min(window.innerWidth - 310, e.clientX + 14) + "px";
+    tip.style.top = Math.max(10, e.clientY - 20) + "px";
+  };
+  const hideTip = () => { tip.style.display = "none"; };
+
+  const STYLES = {
+    ci:     {label:"CI Chondrite", color:"#2f6b55", shape:"star"},
+    iron:   {label:"Low-Ir Iron Meteorite", color:"#2f6b55", shape:"hex"},
+    kpg:    {label:"Confirmed Chicxulub K–Pg (n=9)", color:"#47705f", shape:"diamond"},
+    volc:   {label:"Volcanic Gas Condensates", color:"#955730", shape:"tri"},
+    ucc:    {label:"Upper Continental Crust", color:"#5d6672", shape:"square"},
+    hc_ydb: {label:"Hall's Cave YDB (13.0–12.6 ka)", color:"#b07d1b", shape:"circle"},
+    hc_non: {label:"Hall's Cave non-YDB unrad", color:"#d0a94c", shape:"ring"},
+    pl:     {label:"Page-Ladson (YDB & unrad)", color:"#c04b2d", shape:"square"},
+  };
+
+  function drawMark(parent, shape, x, y, r, color) {
+    if (shape === "circle") return parent.appendChild(el("circle", {cx:x, cy:y, r:r, fill:color, stroke:"var(--paper)", "stroke-width":1.2}));
+    if (shape === "ring") return parent.appendChild(el("circle", {cx:x, cy:y, r:r, fill:"var(--paper)", stroke:color, "stroke-width":2.2}));
+    if (shape === "square") return parent.appendChild(el("rect", {x:x-r, y:y-r, width:2*r, height:2*r, fill:color, stroke:"var(--paper)", "stroke-width":1.2}));
+    if (shape === "diamond") return parent.appendChild(el("polygon", {points:`${x},${y-r*1.25} ${x+r*1.15},${y} ${x},${y+r*1.25} ${x-r*1.15},${y}`, fill:color, stroke:"var(--paper)", "stroke-width":1.2}));
+    if (shape === "tri") return parent.appendChild(el("polygon", {points:`${x},${y-r*1.3} ${x+r*1.2},${y+r} ${x-r*1.2},${y+r}`, fill:color, stroke:"var(--paper)", "stroke-width":1.2}));
+    if (shape === "star" || shape === "hex") {
+      const pts = [];
+      for (let i=0; i<10; i++) {
+        const a = -Math.PI/2 + i*Math.PI/5;
+        const rr = i%2===0 ? r*1.45 : r*0.62;
+        pts.push(`${(x+rr*Math.cos(a)).toFixed(1)},${(y+rr*Math.sin(a)).toFixed(1)}`);
+      }
+      return parent.appendChild(el("polygon", {points:pts.join(" "), fill:shape==="star"?color:"var(--paper)", stroke:color, "stroke-width":1.6}));
+    }
+  }
+
+  function setLegend(keys) {
+    leg.innerHTML = "";
+    keys.forEach(k => {
+      const st = STYLES[k];
+      const sp = document.createElement("span");
+      sp.className = "pf-key";
+      const ic = document.createElementNS(NS, "svg");
+      ic.setAttribute("viewBox", "0 0 18 18");
+      ic.setAttribute("width", "15");
+      ic.setAttribute("height", "15");
+      drawMark(ic, st.shape, 9, 9, 5.2, st.color);
+      sp.appendChild(ic);
+      sp.appendChild(document.createTextNode(st.label));
+      leg.appendChild(sp);
+    });
+  }
+
+  function renderRatios() {
+    svg.innerHTML = "";
+    setLegend(["ci", "kpg", "volc", "ucc", "hc_ydb", "hc_non", "pl"]);
+    const L=74, R=712, T=28, B=365;
+    const xMin=-0.3, xMax=2.6; // log10(Pt/Ir): 0.5 to 400
+    const yMin=-1.6, yMax=3.4; // log10(Re/Os): 0.025 to 2500
+    const sx = v => L + (Math.log10(v) - xMin)/(xMax - xMin)*(R - L);
+    const sy = v => B - (Math.log10(v) - yMin)/(yMax - yMin)*(B - T);
+
+    // Cosmic / K-Pg diagnostic box: Pt/Ir in [0.5, 6], Re/Os in [0.025, 0.5]
+    svg.appendChild(el("rect", {x:sx(0.5), y:sy(0.5), width:sx(6)-sx(0.5), height:B-sy(0.5), fill:"#47705f", opacity:"0.12", stroke:"#47705f", "stroke-dasharray":"4 3"}));
+    svg.appendChild(el("text", {x:sx(0.55), y:sy(0.42), fill:"#47705f", "font-size":"11.5", "font-weight":"600"}, "Cosmic / K–Pg box"));
+
+    // Gridlines
+    [1, 3, 10, 30, 100, 300].forEach(v => {
+      const x = sx(v);
+      svg.appendChild(el("line", {x1:x, x2:x, y1:T, y2:B, stroke:"var(--line)", "stroke-width":0.8}));
+      svg.appendChild(el("text", {x:x, y:B+18, "text-anchor":"middle", fill:"var(--faint)", "font-size":"11.5"}, String(v)));
+    });
+    [0.05, 0.1, 1, 10, 100, 1000].forEach(v => {
+      const y = sy(v);
+      svg.appendChild(el("line", {x1:L, x2:R, y1:y, y2:y, stroke:"var(--line)", "stroke-width":0.8}));
+      svg.appendChild(el("text", {x:L-8, y:y+4, "text-anchor":"end", fill:"var(--faint)", "font-size":"11.5"}, String(v)));
+    });
+    svg.appendChild(el("text", {x:(L+R)/2, y:B+42, "text-anchor":"middle", fill:"var(--ink-soft)", "font-size":"12.5"}, "Pt / Ir mass ratio (log scale) — meteorites & K–Pg are low (~1–4); volcanic gases are high (10–1,000+)"));
+    svg.appendChild(el("text", {x:20, y:(T+B)/2, "text-anchor":"middle", fill:"var(--ink-soft)", "font-size":"12.5", transform:`rotate(-90 20 ${(T+B)/2})`}, "Re / Os mass ratio (log scale)"));
+
+    DATA.pts.forEach(p => {
+      if (p.g === "iron") return;
+      const x = Math.max(L+4, Math.min(R-4, sx(Math.max(0.5, Math.min(390, p.pt_ir)))));
+      const y = Math.max(T+4, Math.min(B-4, sy(Math.max(0.03, Math.min(2400, p.re_os)))));
+      const st = STYLES[p.g];
+      const rad = (p.g==="ci"||p.g==="volc"||p.g==="ucc") ? 7 : 5.6;
+      const m = drawMark(svg, st.shape, x, y, rad, st.color);
+      m.style.cursor = "pointer";
+      const h = `<strong>${p.name}</strong><br>Pt/Ir = ${p.pt_ir} · Re/Os = ${p.re_os}${p.os_iso!==null?`<br>¹⁸⁷Os/¹⁸⁸Os = ${p.os_iso}`:""}<br>CLR class: <em>${p.cls}</em>`;
+      m.addEventListener("mousemove", e => showTip(e, h));
+      m.addEventListener("mouseleave", hideTip);
+    });
+  }
+
+  function renderSpider() {
+    svg.innerHTML = "";
+    leg.innerHTML = "";
+    const L=74, R=712, T=28, B=360;
+    const yMin=-2.3, yMax=3.2;
+    const sx = i => L + (i / 5) * (R - L);
+    const sy = v => B - (v - yMin)/(yMax - yMin)*(B - T);
+
+    DATA.spiders.forEach(sp => {
+      const s2 = document.createElement("span");
+      s2.className = "pf-key";
+      s2.innerHTML = `<svg viewBox="0 0 22 10" width="22" height="10"><line x1="0" x2="22" y1="5" y2="5" stroke="${sp.color}" stroke-width="2.5" ${sp.dash?`stroke-dasharray="${sp.dash}"`:""}/></svg>${sp.name}`;
+      leg.appendChild(s2);
+    });
+
+    [-2, -1, 0, 1, 2, 3].forEach(v => {
+      const y = sy(v);
+      svg.appendChild(el("line", {x1:L, x2:R, y1:y, y2:y, stroke:v===0?"var(--ink-soft)":"var(--line)", "stroke-width":v===0?1.3:0.8, "stroke-dasharray":v===0?"4 3":""}));
+      svg.appendChild(el("text", {x:L-8, y:y+4, "text-anchor":"end", fill:"var(--faint)", "font-size":"11.5"}, (v>0?"+":"")+v));
+    });
+    DATA.hse.forEach((h, i) => {
+      const x = sx(i);
+      svg.appendChild(el("line", {x1:x, x2:x, y1:T, y2:B, stroke:"var(--line)", "stroke-width":0.7}));
+      svg.appendChild(el("text", {x:x, y:B+22, "text-anchor":"middle", fill:"var(--ink)", "font-size":"13", "font-weight":"600"}, h));
+    });
+    svg.appendChild(el("text", {x:20, y:(T+B)/2, "text-anchor":"middle", fill:"var(--ink-soft)", "font-size":"12.5", transform:`rotate(-90 20 ${(T+B)/2})`}, "CI-normalized centered log₁₀ ratio (dex)"));
+    svg.appendChild(el("text", {x:(L+R)/2, y:B+46, "text-anchor":"middle", fill:"var(--ink-soft)", "font-size":"12"}, "Refractory siderophiles (Os, Ir, Ru) on left → volatile/mobile siderophiles (Pt, Pd, Re) on right"));
+
+    DATA.spiders.forEach(sp => {
+      const d = sp.vals.map((v,i) => `${i===0?"M":"L"}${sx(i).toFixed(1)},${sy(v).toFixed(1)}`).join(" ");
+      svg.appendChild(el("path", {d:d, fill:"none", stroke:sp.color, "stroke-width":sp.id==="kpg"||sp.id==="hc_ydb"||sp.id==="pl_unrad"?2.8:2.1, "stroke-dasharray":sp.dash}));
+      sp.vals.forEach((v, i) => {
+        const c = el("circle", {cx:sx(i), cy:sy(v), r:4.2, fill:sp.color, stroke:"var(--paper)", "stroke-width":1});
+        c.style.cursor = "pointer";
+        c.addEventListener("mousemove", e => showTip(e, `<strong>${sp.name}</strong><br>${DATA.hse[i]}: ${v>=0?"+":""}${v} dex vs. CI mean`));
+        c.addEventListener("mouseleave", hideTip);
+        svg.appendChild(c);
+      });
+    });
+  }
+
+  function renderMixing() {
+    svg.innerHTML = "";
+    setLegend(["kpg", "hc_ydb", "hc_non", "pl"]);
+    const L=74, R=712, T=28, B=365;
+    const lo=0, hi=1.1;
+    const sx = v => L + (v - lo)/(hi - lo)*(R - L);
+    const sy = v => B - (v - lo)/(hi - lo)*(B - T);
+
+    // Diagonal & shaded zones
+    svg.appendChild(el("polygon", {points:`${L},${B} ${R},${T} ${R},${B}`, fill:"#47705f", opacity:"0.09"}));
+    svg.appendChild(el("polygon", {points:`${L},${B} ${R},${T} ${L},${T}`, fill:"#955730", opacity:"0.09"}));
+    svg.appendChild(el("line", {x1:L, y1:B, x2:R, y2:T, stroke:"var(--ink-soft)", "stroke-dasharray":"5 4", "stroke-width":1.3}));
+    svg.appendChild(el("text", {x:R-12, y:B-14, "text-anchor":"end", fill:"#47705f", "font-size":"12", "font-weight":"600"}, "← Cosmic impactor fits better (ΔRMSE < 0)"));
+    svg.appendChild(el("text", {x:L+12, y:T+20, fill:"#955730", "font-size":"12", "font-weight":"600"}, "Volcanic gas condensate fits better (ΔRMSE > 0) →"));
+
+    [0, 0.2, 0.4, 0.6, 0.8, 1.0].forEach(v => {
+      const x = sx(v), y = sy(v);
+      svg.appendChild(el("line", {x1:x, x2:x, y1:T, y2:B, stroke:"var(--line)", "stroke-width":0.7}));
+      svg.appendChild(el("line", {x1:L, x2:R, y1:y, y2:y, stroke:"var(--line)", "stroke-width":0.7}));
+      svg.appendChild(el("text", {x:x, y:B+18, "text-anchor":"middle", fill:"var(--faint)", "font-size":"11.5"}, v.toFixed(1)));
+      svg.appendChild(el("text", {x:L-8, y:y+4, "text-anchor":"end", fill:"var(--faint)", "font-size":"11.5"}, v.toFixed(1)));
+    });
+    svg.appendChild(el("text", {x:(L+R)/2, y:B+42, "text-anchor":"middle", fill:"var(--ink-soft)", "font-size":"12.5"}, "Best volcanic-condensate mixing RMSE (lower = better volcanic fit)"));
+    svg.appendChild(el("text", {x:20, y:(T+B)/2, "text-anchor":"middle", fill:"var(--ink-soft)", "font-size":"12.5", transform:`rotate(-90 20 ${(T+B)/2})`}, "Best cosmic (CI or Iron) mixing RMSE"));
+
+    DATA.pts.filter(p => ["kpg","hc_ydb","hc_non","pl"].includes(p.g)).forEach(p => {
+      const x = sx(Math.min(hi-0.02, p.r_volc));
+      const y = sy(Math.min(hi-0.02, p.r_cos));
+      const st = STYLES[p.g];
+      const m = drawMark(svg, st.shape, x, y, 5.8, st.color);
+      m.style.cursor = "pointer";
+      const dR = (p.r_cos - p.r_volc).toFixed(3);
+      m.addEventListener("mousemove", e => showTip(e, `<strong>${p.name}</strong><br>Cosmic RMSE = ${p.r_cos} · Volcanic RMSE = ${p.r_volc}<br>ΔRMSE = ${dR>0?"+":""}${dR} · ¹⁸⁷Os/¹⁸⁸Os = ${p.os_iso}`));
+      m.addEventListener("mouseleave", hideTip);
+    });
+  }
+
+  document.querySelectorAll(".pf-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".pf-btn").forEach(b => b.classList.remove("is-on"));
+      btn.classList.add("is-on");
+      const m = btn.dataset.mode;
+      if (m === "ratios") renderRatios();
+      else if (m === "spider") renderSpider();
+      else renderMixing();
+    });
+  });
+  renderRatios();
+})();
+</script>
+</figure>

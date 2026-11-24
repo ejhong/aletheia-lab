@@ -692,18 +692,19 @@ def parse_moore2019_white_pond(pdf_path: pathlib.Path) -> list[dict[str, Any]]:
     rows = []
     for line in txt.splitlines():
         line = line.strip()
-        # Look for depth-interval lines e.g. '215-217' or '215.0' followed by numeric Au, Pt, Pd, Pt/Pd
-        # Handle <0.1 as 0.05 (half detection limit) for ratio QA, tracking bdl
-        m = re.match(r"^(\d{2,3}(?:\.\d+)?)\s*(?:[-–]\s*(\d{2,3}(?:\.\d+)?))?\s+(.*)$", line)
+        # Table 3 rows start with relative depth interval e.g. '+44 to +46 165 20 2.2 5 0.4' or '-10 to -8 221 13 4.2 0.9 4.7'
+        m = re.match(
+            r"^[+-]?\d+\s*to\s*[+-]?\d+\s+(\d{3}(?:\.\d+)?)\s+(.*)$",
+            line,
+            re.IGNORECASE,
+        )
         if not m:
             continue
-        d1 = float(m.group(1))
-        d2 = float(m.group(2)) if m.group(2) else d1
-        if not (150.0 <= d1 <= 320.0):
+        depth_cm = float(m.group(1))
+        if not (150.0 <= depth_cm <= 260.0):
             continue
-        depth_cm = 0.5 * (d1 + d2)
-        toks = m.group(3).split()
-        # Extract floats (allowing leading '<')
+        toks = m.group(2).split()
+        # Extract floats (allowing leading '<'); take last 3 valid floats as (Pt, Pd, Pt/Pd)
         nums = []
         for tok in toks:
             clean = tok.lstrip("<").replace(",", ".")
@@ -711,31 +712,25 @@ def parse_moore2019_white_pond(pdf_path: pathlib.Path) -> list[dict[str, Any]]:
                 nums.append((float(clean), tok.startswith("<")))
             except ValueError:
                 continue
-        # Expected columns in Table 3: [Age?, Au, Pt, Pd, Pt/Pd] or [Au, Pt, Pd, Pt/Pd]
-        # Verify by finding a triple (Pt, Pd, ratio) where ratio agrees with Pt/Pd within 15%!
-        matched = None
-        for k in range(len(nums) - 2):
-            pt_v, pt_bdl = nums[k]
-            pd_v, pd_bdl = nums[k + 1]
-            rat_v, _ = nums[k + 2]
-            if 0.0 <= pt_v <= 200.0 and 0.0 <= pd_v <= 200.0:
-                if pt_v > 0 and pd_v > 0:
-                    calc = pt_v / pd_v
-                    if abs(calc - rat_v) / max(calc, 1e-6) <= 0.15:
-                        matched = (pt_v, pd_v, rat_v, pt_bdl, pd_bdl)
-                        break
-        if matched:
-            pt_v, pd_v, rat_v, pt_bdl, pd_bdl = matched
-            rows.append({
-                "site": "White Pond, SC",
-                "study": "Moore et al. (2019)",
-                "depth_cm": depth_cm,
-                "pt_ppb": pt_v,
-                "pd_ppb": pd_v,
-                "pt_pd": pt_v / pd_v if pd_v > 0 else float("nan"),
-                "pt_bdl": pt_bdl,
-                "pd_bdl": pd_bdl,
-            })
+        if len(nums) < 3:
+            continue
+        # Last 3 tokens are Pt, Pd, Pt/Pd (handles merged Au+Pt cells via strict 15% Pt/Pd QA gate)
+        pt_v, pt_bdl = nums[-3]
+        pd_v, pd_bdl = nums[-2]
+        rat_v, _ = nums[-1]
+        if 0.0 < pt_v <= 200.0 and 0.0 < pd_v <= 200.0:
+            calc = pt_v / pd_v
+            if abs(calc - rat_v) / max(calc, 1e-6) <= 0.15:
+                rows.append({
+                    "site": "White Pond, SC",
+                    "study": "Moore et al. (2019)",
+                    "depth_cm": depth_cm,
+                    "pt_ppb": pt_v,
+                    "pd_ppb": pd_v,
+                    "pt_pd": calc,
+                    "pt_bdl": pt_bdl,
+                    "pd_bdl": pd_bdl,
+                })
     rows.sort(key=lambda r: r["depth_cm"])
     return rows
 
@@ -1081,6 +1076,73 @@ def run_pipeline() -> dict[str, Any]:
         indep_perm_p=indep_perm_p,
     )
 
+    # Amendment 1 transparent sensitivity checks (does NOT alter primary locked verdict or metrics)
+    sens_audits: list[dict[str, Any]] = []
+    hc_ydb_131 = lambda r: r.get("age_ka") is not None and 12.6 <= r["age_ka"] <= 13.1
+    for proxy, mode in [("Pt", "high"), ("Os", "high"), ("Ir", "high"), ("os_iso", "low_iso")]:
+        for site, study, rows, ypred in [
+            ("Hall's Cave, TX", "Sun et al. (2020)", halls_cave, hc_ydb_131),
+            ("Page-Ladson, FL", "Nana Yobo et al. (2026)", page_ladson, pl_ydb),
+        ]:
+            valid = [r for r in rows if r.get(proxy) is not None and np.isfinite(r[proxy])]
+            vals = [float(r[proxy]) for r in valid]
+            res = detect_blind_peaks(vals, mode=mode)
+            mask = [bool(ypred(r)) for r in valid]
+            n_in = sum(1 for ev in res["events"] if any(mask[i] for i in ev["indices"]))
+            n_out = len(res["events"]) - n_in
+            g_hit = bool(mask[res["global_extreme_idx"]]) if res["global_extreme_idx"] is not None else False
+            sens_audits.append({
+                "site": site,
+                "proxy": proxy,
+                "n_levels": len(valid),
+                "n_ydb_levels": sum(mask),
+                "null_hit_prob": sum(mask) / len(valid),
+                "events_inside": n_in,
+                "events_outside": n_out,
+                "global_in_ydb": g_hit,
+            })
+    sens_in = sum(a["events_inside"] for a in sens_audits)
+    sens_out = sum(a["events_outside"] for a in sens_audits)
+    sens_hits = sum(1 for a in sens_audits if a["global_in_ydb"])
+    sens_perm_p = poisson_binomial_tail([a["null_hit_prob"] for a in sens_audits], sens_hits)
+
+    # 5-HSE sensitivity (Os, Ir, Pt, Pd, Re — dropping Ru=bdl) for Page-Ladson 36-30 (851 cm, iso=0.51)
+    pl_36_30_sens = {}
+    for r in page_ladson:
+        if r["sample"] == "36-30" and r["os_iso"] < 0.60:
+            idx5 = [0, 1, 3, 4, 5]  # Os, Ir, Pt, Pd, Re
+            v5 = np.array([r[HSE_ORDER[i]] for i in idx5], dtype=float)
+            ci5 = ci_vec[idx5]
+            z5 = np.log10(v5 / ci5)
+            z5 -= np.mean(z5)
+            p5_dists = {}
+            for pname, pref in [("chondrite", ci_vec), ("ucc", ucc_vec)]:
+                zp = np.log10(pref[idx5] / ci5)
+                zp -= np.mean(zp)
+                p5_dists[pname] = float(np.linalg.norm(z5 - zp))
+            v_clrs5 = []
+            for vv in volc_refs.values():
+                zp = np.log10(vv[idx5] / ci5)
+                zp -= np.mean(zp)
+                v_clrs5.append(zp)
+            p5_dists["volcanic"] = float(np.linalg.norm(z5 - np.mean(v_clrs5, axis=0)))
+            k_clrs5 = []
+            for ks in kpg_samples:
+                kv = hse_vec(ks)
+                zp = np.log10(kv[idx5] / ci5)
+                zp -= np.mean(zp)
+                k_clrs5.append(zp)
+            p5_dists["kpg_impact"] = float(np.linalg.norm(z5 - np.median(k_clrs5, axis=0)))
+            pl_36_30_sens = {
+                "sample": "36-30 (851 cm, Ru=bdl)",
+                "os_iso": r["os_iso"],
+                "pt_ir": r["Pt"] / r["Ir"],
+                "re_os": r["Re"] / r["Os"],
+                "nearest_class_5hse": min(p5_dists, key=p5_dists.get),
+                "clr5_dists": p5_dists,
+            }
+            break
+
     summary = {
         "question": "yd-platinum-fingerprint",
         "issue": 120,
@@ -1127,6 +1189,17 @@ def run_pipeline() -> dict[str, Any]:
             "independent_n_series": len(indep_audits),
             "independent_perm_p": indep_perm_p,
             "audits": blind_audits,
+        },
+        "sensitivity_amendment1": {
+            "halls_cave_131_window": {
+                "independent_events_inside": sens_in,
+                "independent_events_outside": sens_out,
+                "independent_frac_outside": sens_out / max(sens_in + sens_out, 1),
+                "independent_global_hits": sens_hits,
+                "independent_perm_p": sens_perm_p,
+                "audits": sens_audits,
+            },
+            "page_ladson_36_30_5hse": pl_36_30_sens,
         },
     }
 

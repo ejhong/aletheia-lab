@@ -3,12 +3,12 @@
 # The scorecard, tiles and timeline are made by scripts/make_topic_figures.py; rerun it when a result changes.
 # "image:" names a picture in site/assets/illustrations/ (made by scripts/make_illustrations.py).
 title: The Younger Dryas impact hypothesis
-summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Nine studies each test one mark such an event should have left.
-questions: 43, 60, 69, 75, 76, 100, 103, 116, 40, 104
+summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Ten studies each test one mark such an event should have left.
+questions: 43, 60, 69, 75, 76, 120, 100, 103, 116, 40, 104
 order: 1
 atlas: ydih
 atlas_title: Fire From the Sky
-updated: 2026-11-23
+updated: 2026-11-24
 image: younger-dryas
 image_alt: An engraving of a comet breaking up over the edge of an ice sheet, with mammoths on the plain below and an ice core in the foreground.
 ---
@@ -29,7 +29,7 @@ Each study here takes one mark, fixes the test before looking at the data, and a
 
 {{figure: topic-younger-dryas/scorecard}}
 
-Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. Eight of the nine have already been checked by a model from a different company and matched; the newest (the great animals) is open to second-vendor replication.
+Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. Eight of the ten have already been checked by a model from a different company and matched; the two newest (the great animals and the platinum chemistry) are open to second-vendor replication.
 
 ## The order of events
 
@@ -74,11 +74,13 @@ Read more: [the cooling-shape study](../../questions/yd-cooling-shape/).
 
 ### Platinum, and the eruptions
 
-A layer rich in platinum in one Greenland ice core is the best physical evidence offered for an impact, since platinum is rare in the Earth's crust and commoner in meteorites. The study could not test where the platinum came from. It tested when it arrived. The answer is awkward for both sides: after the published start of the cold, by twenty to thirty years, but before the steepest part of the fall. By the rule fixed in advance that is "ambiguous".
+A layer rich in platinum in one Greenland ice core is the best physical evidence offered for an impact, since platinum is rare in the Earth's crust and commoner in meteorites. The first platinum study tested when it arrived. The answer is awkward for both sides: after the published start of the cold, by twenty to thirty years, but before the steepest part of the fall. By the rule fixed in advance that is "ambiguous".
 
 The same study checked the critics' alternative. The 150 years before the cold hold one of the heaviest runs of volcanic fallout in 51,000 years: third of 284 such stretches in the record that matches eruptions between Greenland and Antarctica, twelfth of 338 in Greenland's own. That fits the volcanic account. It does not prove it. Across the other eighteen coolings, eruptions are no commoner beforehand than at random times, and measured only against its neighbours in time the Greenland figure is high without being extreme.
 
-Read more: [the platinum and volcanism study](../../questions/yd-platinum-volcanism/).
+A follow-up study then tested the chemistry itself across the public geochemical record, benchmarking Younger Dryas sediments directly against confirmed Chicxulub dinosaur-extinction impact layers and real volcanic gas condensates. The Chicxulub positive control passed cleanly (89% chondritic on six-element pattern, 100% on mixing, tight platinum-to-iridium median 1.29). Younger Dryas sediments failed every cosmic test: across 27 complete six-element samples from Hall's Cave (Texas) and Page-Ladson (Florida), zero were chondritic and 93% matched continental crust or volcanic gas; platinum-to-iridium ratios scatter a hundredfold across claimed sites on three continents (3.6 to 1,264); and blind peak scans without boundary labels put 71% to 93% of chemical spikes outside the Younger Dryas boundary—including higher platinum 1,350 years later and higher iridium 420 years earlier at Hall's Cave. At the same time, Page-Ladson matches volcanic aerosols cleanly while Hall's Cave's episodic osmium drops fit neither meteorites nor high-rhenium volcanic gas condensates alone, leaving the formal verdict mixed on the terrestrial side.
+
+Read more: [the platinum timing and volcanism study](../../questions/yd-platinum-volcanism/) and [the platinum chemistry study](../../questions/yd-platinum-fingerprint/).
 
 ### The great animals
 
@@ -126,9 +128,9 @@ This is a test of the stream today. A swarm could have broken down in 12,900 yea
 
 ## What the studies add up to
 
-This section is the reading of the AI models that ran these studies, after all nine. It is not the atlas's judgment, which is made [there](https://ejhong.github.io/aletheia/cases/ydih/) by its own process.
+This section is the reading of the AI models that ran these studies, after all ten. It is not the atlas's judgment, which is made [there](https://ejhong.github.io/aletheia/cases/ydih/) by its own process.
 
-**The single day of fire.** This version made the sharpest predictions and they have failed one after another. There is no burn in the world's air or its charcoal. The ammonium in Greenland comes late and builds slowly. The cold itself began more slowly than most of the ice age's sudden coolings and went no deeper. The platinum arrives two or three decades after the cold has started. North America's giant animals began declining a millennium beforehand in most lake cores and still walked the continent centuries after the claimed strike. People's traces do not thin, though that last test was a blurred one. We count this version as very unlikely.
+**The single day of fire.** This version made the sharpest predictions and they have failed one after another. There is no burn in the world's air or its charcoal. The ammonium in Greenland comes late and builds slowly. The cold itself began more slowly than most of the ice age's sudden coolings and went no deeper. Greenland's platinum arrives two or three decades after the cold has started, and across the multi-element geochemical record none of the full-suite Younger Dryas samples looks like a meteorite or Chicxulub impact clay, platinum-to-iridium ratios scatter a hundredfold across sites, and blind scans find most spikes at the wrong depths. North America's giant animals began declining a millennium beforehand in most lake cores and still walked the continent centuries after the claimed strike. People's traces do not thin, though that last test was a blurred one. We count this version as very unlikely.
 
 **The comet that kept coming.** This version dodges the objections about timing, because it predicts no single moment. It has now been tested where it does make predictions, three times, and each went against it.
 
@@ -140,18 +142,18 @@ It can still be rescued, by a swarm that has since dispersed and airbursts that 
 
 **What is left standing.**
 
-- *The platinum.* A real layer, in the right century, with no volcanic sulphate beside it and no accepted source. It is the best remaining ground for the idea that something from space arrived about then. It does not make that something the cause of the cold, which had already begun.
+- *A handful of localized platinum and osmium anomalies without one agreed terrestrial source.* Greenland's GISP2 ice layer (with extreme Pt/Ir = 100–1,264 matching submarine volcanic gas condensates rather than meteorites), South Carolina's White Pond Pt/Pd spike, and Hall's Cave's episodic low-rhenium osmium drops across 13.3–10.9 ka remain real measurements. None passes a cosmic/Chicxulub fingerprint test, and Greenland's layer still arrives after cooling began—yet a single volcanic recipe does not neatly explain every site either.
 - *Seventeen aligned asteroids.* A real pattern among the largest bodies on Taurid-like orbits. It is the same evidence as in 2010, no stronger and no weaker.
 - *The size of the ammonium rise.* Among the two or three largest of 25, even though the kind of rise is common.
 
-**What points the other way.** The ordinary account, a slowing of the Atlantic's circulation, needs nothing unusual, and the Younger Dryas looks like the ice age's other coolings in shape, in depth and in what followed. The heavy run of eruptions in the 150 years before it is the one unusual thing found in the critics' favour, and it is a coincidence in time, not a shown cause.
+**What points the other way.** The ordinary account, a slowing of the Atlantic's circulation, needs nothing unusual, and the Younger Dryas looks like the ice age's other coolings in shape, in depth and in what followed. The heavy run of eruptions in the 150 years before it is the one unusual thing found in the critics' favour, and Page-Ladson's osmium-and-HSE chemistry lines up with volcanic aerosols—though neither proves volcanism caused every site's signal or the cooling itself.
 
-**In one sentence.** After nine tests, a cosmic impact as the *cause* of the Younger Dryas or of North America's megafauna extinction looks unlikely in either form; a lesser event that left platinum on the ice around that time remains open; and nothing here touches the claims we have not tested.
+**In one sentence.** After ten tests, a cosmic impact as the *cause* of the Younger Dryas or of North America's megafauna extinction looks unlikely in either form; the platinum and HSE chemistry fails every cosmic/Chicxulub fingerprint test even while leaving loose ends on the terrestrial volcanic side; and nothing here touches the claims we have not tested.
 
 ## What this does not settle
 
-- **Where the platinum came from.** It has no volcanic sulphate with it and nobody has measured platinum through the ice age's other coolings. This is the one piece that still wants an explanation, and it is the best remaining ground for any version of the hypothesis, the drawn-out one included.
+- **Full six-element ice-core and lake-core chemistry.** Greenland's GISP2 platinum layer has never been measured continuously across earlier ice-age coolings or paired with osmium isotopes and all six siderophile elements in the same ice, and White Pond's sharp Pt/Pd spike lacks iridium and osmium isotopes. Hall's Cave's recurring low-rhenium osmium drops also need a better terrestrial geochemical model than high-rhenium Kudryavy fumarole gas.
 - **The traces in sediment** claimed for an impact: tiny spherules, nanodiamonds, a dark layer at many sites. None is tested here.
 - **What drove the megafauna decline.** The timing rules out a single day of extinction at 12,850 years ago, but does not separate human hunting from Ice Age warming and cooling as the cause of the drawn-out loss.
 - **People.** The one test made was blurred by the dating method. A better method exists and has not been tried.
-- **The limits of the work itself.** AI models designed, ran and wrote up every study, mostly in single sessions. The earlier numbers have been reproduced across companies' models; the newest awaits replication. No human specialist has reviewed any of it.
+- **The limits of the work itself.** AI models designed, ran and wrote up every study, mostly in single sessions. The earlier eight have been reproduced across companies' models; the two newest await replication. No human specialist has reviewed any of it.
