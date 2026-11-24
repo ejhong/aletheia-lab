@@ -1,0 +1,3692 @@
+{
+  "counts": {
+    "global_neotoma_pollen_cores_total": 6948,
+    "global_neotoma_pollen_cores_ge12ka": 1964,
+    "global_neotoma_pollen_cores_ge18ka": 639,
+    "cores_with_any_pre12ka_crop_occ": 156,
+    "cores_downloaded_valid_pre12ka": 150,
+    "crop_taxa_queried": 32,
+    "nonzero_pre12ka_crop_taxa": {
+      "416:Poaceae (Cerealia)": 437,
+      "427:Poaceae (Cerealia) undiff.": 32,
+      "1947:Poaceae (Cerealia-type)": 1810,
+      "2941:Poaceae (Cerealia-type) undiff.": 11,
+      "497:Triticum-type": 74,
+      "969:Triticum": 1,
+      "3705:Hordeum-type": 179,
+      "3923:Hordeum": 1,
+      "488:Secale-type": 34,
+      "967:Secale": 28,
+      "3926:Secale cereale": 11,
+      "323:Zea mays": 14,
+      "538:Zea": 1,
+      "106:Fagopyrum": 47
+    },
+    "neotoma_cache_sha256": "56d241b04f99a677be3df57480fcc0774bf2f8029d31212183b0e7ecf55e7f0c"
+  },
+  "calibration": {
+    "eu_holocene_8500_2000bp": {
+      "n_cores": 100,
+      "farm_relaxed_n": 59,
+      "farm_relaxed_pct": 59.0,
+      "farm_strict_n": 23,
+      "farm_strict_pct": 23.0
+    },
+    "eu_mesolithic_neg_11500_9000bp": {
+      "n_cores": 40,
+      "farm_relaxed_n": 1,
+      "farm_relaxed_pct": 2.5,
+      "farm_strict_n": 0,
+      "farm_strict_pct": 0.0
+    },
+    "neolithic_onsets": [
+      {
+        "datasetid": 3889,
+        "sitename": "Lake Varna",
+        "lat": 43.19,
+        "lon": 27.82,
+        "onset_cal_bp": 6046.0
+      },
+      {
+        "datasetid": 4358,
+        "sitename": "Lake Beloslav",
+        "lat": 43.19,
+        "lon": 27.67,
+        "onset_cal_bp": 6886.0
+      },
+      {
+        "datasetid": 4383,
+        "sitename": "Rotsee",
+        "lat": 47.08,
+        "lon": 8.33,
+        "onset_cal_bp": 2235.0
+      },
+      {
+        "datasetid": 14512,
+        "sitename": "Cornaher Lough",
+        "lat": 53.37,
+        "lon": -7.41,
+        "onset_cal_bp": 2571.0
+      },
+      {
+        "datasetid": 14556,
+        "sitename": "Sheheree Bog",
+        "lat": 52.04,
+        "lon": -9.48,
+        "onset_cal_bp": 3943.0
+      },
+      {
+        "datasetid": 17342,
+        "sitename": "Cuckoo",
+        "lat": 52.0,
+        "lon": -9.54,
+        "onset_cal_bp": 4443.0
+      },
+      {
+        "datasetid": 22689,
+        "sitename": "Schwanengrabenrinne",
+        "lat": 52.52,
+        "lon": 13.06,
+        "onset_cal_bp": 3152.0
+      },
+      {
+        "datasetid": 22709,
+        "sitename": "Loch Cleat",
+        "lat": 57.62,
+        "lon": -6.28,
+        "onset_cal_bp": 2830.0
+      },
+      {
+        "datasetid": 22801,
+        "sitename": "Unteruckersee",
+        "lat": 53.25,
+        "lon": 13.85,
+        "onset_cal_bp": 3278.0
+      },
+      {
+        "datasetid": 22820,
+        "sitename": "L\u00f6ddigsee",
+        "lat": 53.43,
+        "lon": 11.85,
+        "onset_cal_bp": 2225.0
+      },
+      {
+        "datasetid": 22851,
+        "sitename": "Wolin II",
+        "lat": 53.86,
+        "lon": 14.62,
+        "onset_cal_bp": 4893.0
+      },
+      {
+        "datasetid": 22923,
+        "sitename": "Lake Varna",
+        "lat": 43.19,
+        "lon": 27.82,
+        "onset_cal_bp": 5894.0
+      },
+      {
+        "datasetid": 22980,
+        "sitename": "Lake Durankulak",
+        "lat": 43.67,
+        "lon": 28.54,
+        "onset_cal_bp": 7978.0
+      },
+      {
+        "datasetid": 22982,
+        "sitename": "Lake Durankulak",
+        "lat": 43.67,
+        "lon": 28.54,
+        "onset_cal_bp": 5482.0
+      },
+      {
+        "datasetid": 23013,
+        "sitename": "Krageholmssj\u00f6n",
+        "lat": 55.5,
+        "lon": 13.74,
+        "onset_cal_bp": 3381.0
+      },
+      {
+        "datasetid": 24042,
+        "sitename": "Windbruch",
+        "lat": 49.61,
+        "lon": 12.54,
+        "onset_cal_bp": 3241.0
+      },
+      {
+        "datasetid": 24157,
+        "sitename": "Ladik G\u00f6l\u00fc",
+        "lat": 40.91,
+        "lon": 36.01,
+        "onset_cal_bp": 7329.0
+      },
+      {
+        "datasetid": 24161,
+        "sitename": "Abant G\u00f6l\u00fc",
+        "lat": 40.6,
+        "lon": 31.28,
+        "onset_cal_bp": 7055.0
+      },
+      {
+        "datasetid": 24356,
+        "sitename": "Lake Oresti\u00e1s",
+        "lat": 40.55,
+        "lon": 21.32,
+        "onset_cal_bp": 3876.0
+      },
+      {
+        "datasetid": 24461,
+        "sitename": "Tourbi\u00e8re des Narses Mortes",
+        "lat": 44.43,
+        "lon": 3.6,
+        "onset_cal_bp": 3518.0
+      },
+      {
+        "datasetid": 24491,
+        "sitename": "Montjean-sur-Loire",
+        "lat": 47.39,
+        "lon": -0.85,
+        "onset_cal_bp": 8282.0
+      },
+      {
+        "datasetid": 24507,
+        "sitename": "Challerie",
+        "lat": 47.86,
+        "lon": 1.7,
+        "onset_cal_bp": 2833.0
+      },
+      {
+        "datasetid": 24524,
+        "sitename": "Malingue",
+        "lat": 48.44,
+        "lon": -0.57,
+        "onset_cal_bp": 2109.0
+      }
+    ]
+  },
+  "pre12ka_sweep": {
+    "late_glacial_12_18ka": {
+      "cores_with_crop_data": 142,
+      "farm_relaxed_n": 47,
+      "farm_strict_unfiltered_n": 2,
+      "farm_strict_chron_ok_n": 2,
+      "pct_of_global_ge12ka": 0.102
+    },
+    "lgm_glacial_neg_18_50ka": {
+      "cores_with_crop_data": 57,
+      "farm_relaxed_n": 18,
+      "farm_strict_unfiltered_n": 4,
+      "farm_strict_chron_ok_n": 2,
+      "pct_of_global_ge18ka": 0.313
+    },
+    "fisher_p_lg_gt_lgm_strict": 0.9518522724660146,
+    "fisher_p_lg_gt_lgm_relaxed": 0.7742136931224908,
+    "flagged_strict_chron_ok": [
+      {
+        "datasetid": 26608,
+        "sitename": "Lago Grande di Monticchio",
+        "database": "European Pollen Database",
+        "lat": 40.93,
+        "lon": 15.604,
+        "n_samples_valid": 245,
+        "n_controls": 1393,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 27,
+          "baseline_ap": 32.0,
+          "n_crop_any": 5,
+          "max_crop_pct": 2.262,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 1,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 1393,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 15297.0
+        },
+        "lgm_18_50ka": {
+          "has_data": true,
+          "n_win": 129,
+          "baseline_ap": 31.3,
+          "n_crop_any": 50,
+          "max_crop_pct": 4.848,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 27,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 1393,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 46435.0,
+          "earliest_relaxed_age": 49546.0
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 156,
+          "baseline_ap": 31.3,
+          "n_crop_any": 55,
+          "max_crop_pct": 4.848,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 28,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 1393,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 46435.0,
+          "earliest_relaxed_age": 49546.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 1327.0,
+            "age_raw": 22523.0,
+            "age_cal": 22523.0,
+            "age_type": "Calendar years BP",
+            "is_14c": false,
+            "terrestrial_sum": 397.0,
+            "is_pct_units": false,
+            "crop_val": 7.0,
+            "crop_pct": 1.7632,
+            "weed_pct": 1.5113,
+            "plantago_lan_pct": 1.0076,
+            "ap_pct": 32.49,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 7.0
+            },
+            "weed_taxa": {
+              "Rumex": 2.0,
+              "Plantago lanceolata-type": 4.0
+            }
+          },
+          {
+            "depth": 1307.0,
+            "age_raw": 22259.0,
+            "age_cal": 22259.0,
+            "age_type": "Calendar years BP",
+            "is_14c": false,
+            "terrestrial_sum": 358.0,
+            "is_pct_units": false,
+            "crop_val": 4.0,
+            "crop_pct": 1.1173,
+            "weed_pct": 1.676,
+            "plantago_lan_pct": 0.838,
+            "ap_pct": 34.08,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 4.0
+            },
+            "weed_taxa": {
+              "Rumex": 3.0,
+              "Plantago lanceolata-type": 3.0
+            }
+          }
+        ]
+      },
+      {
+        "datasetid": 22978,
+        "sitename": "Lago dell'Accesa",
+        "database": "European Pollen Database",
+        "lat": 42.987,
+        "lon": 10.892,
+        "n_samples_valid": 113,
+        "n_controls": 21,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 83,
+          "baseline_ap": 25.2,
+          "n_crop_any": 82,
+          "max_crop_pct": 10.664,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 60,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 21,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 14784.0,
+          "earliest_relaxed_age": 17504.0
+        },
+        "lgm_18_50ka": {
+          "has_data": false,
+          "n_win": 0,
+          "baseline_ap": null,
+          "n_crop_any": 0,
+          "max_crop_pct": 0.0,
+          "farm_relaxed": false,
+          "n_relaxed_samples": 0,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "chron_ok": false,
+            "n_controls": 21
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": null
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 83,
+          "baseline_ap": 25.2,
+          "n_crop_any": 82,
+          "max_crop_pct": 10.664,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 60,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 21,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 14784.0,
+          "earliest_relaxed_age": 17504.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 1605.0,
+            "age_raw": 14784.0,
+            "age_cal": 14784.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 1042.0,
+            "is_pct_units": false,
+            "crop_val": 75.0,
+            "crop_pct": 7.1977,
+            "weed_pct": 7.4856,
+            "plantago_lan_pct": 0.7678,
+            "ap_pct": 13.82,
+            "crop_taxa": {
+              "Poaceae (Cerealia)": 75.0
+            },
+            "weed_taxa": {
+              "Polygonum aviculare": 1.0,
+              "Plantago lanceolata-type": 8.0,
+              "Rumex-type": 69.0
+            }
+          },
+          {
+            "depth": 1603.0,
+            "age_raw": 14763.0,
+            "age_cal": 14763.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 994.0,
+            "is_pct_units": false,
+            "crop_val": 106.0,
+            "crop_pct": 10.664,
+            "weed_pct": 5.835,
+            "plantago_lan_pct": 0.503,
+            "ap_pct": 15.39,
+            "crop_taxa": {
+              "Poaceae (Cerealia)": 106.0
+            },
+            "weed_taxa": {
+              "Polygonum aviculare": 1.0,
+              "Plantago lanceolata-type": 5.0,
+              "Rumex-type": 52.0
+            }
+          }
+        ]
+      },
+      {
+        "datasetid": 45165,
+        "sitename": "Lake Van",
+        "database": "European Pollen Database",
+        "lat": 38.586,
+        "lon": 42.835,
+        "n_samples_valid": 111,
+        "n_controls": 9,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 43,
+          "baseline_ap": 2.3,
+          "n_crop_any": 43,
+          "max_crop_pct": 7.111,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 22,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 9,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 14252.0,
+          "earliest_relaxed_age": 15633.0
+        },
+        "lgm_18_50ka": {
+          "has_data": true,
+          "n_win": 13,
+          "baseline_ap": 1.6,
+          "n_crop_any": 13,
+          "max_crop_pct": 4.281,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 5,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 9,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 19409.0
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 56,
+          "baseline_ap": 2.3,
+          "n_crop_any": 56,
+          "max_crop_pct": 7.111,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 27,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 9,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 14252.0,
+          "earliest_relaxed_age": 19409.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 597.0,
+            "age_raw": 14252.0,
+            "age_cal": 14252.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 527.0,
+            "is_pct_units": false,
+            "crop_val": 14.0,
+            "crop_pct": 2.6565,
+            "weed_pct": 1.8975,
+            "plantago_lan_pct": 0.9488,
+            "ap_pct": 3.04,
+            "crop_taxa": {
+              "Poaceae (Cerealia)": 14.0
+            },
+            "weed_taxa": {
+              "Urtica-type": 1.0,
+              "Polygonum aviculare-type": 2.0,
+              "Rumex": 2.0,
+              "Plantago lanceolata": 5.0
+            }
+          },
+          {
+            "depth": 581.0,
+            "age_raw": 13921.0,
+            "age_cal": 13921.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 487.0,
+            "is_pct_units": false,
+            "crop_val": 18.0,
+            "crop_pct": 3.6961,
+            "weed_pct": 3.0801,
+            "plantago_lan_pct": 0.616,
+            "ap_pct": 8.62,
+            "crop_taxa": {
+              "Poaceae (Cerealia)": 18.0
+            },
+            "weed_taxa": {
+              "Plantago lanceolata": 3.0,
+              "Rumex": 4.0,
+              "Polygonum aviculare-type": 8.0
+            }
+          }
+        ]
+      },
+      {
+        "datasetid": 4065,
+        "sitename": "Ghab",
+        "database": "European Pollen Database",
+        "lat": 35.683,
+        "lon": 36.3,
+        "n_samples_valid": 74,
+        "n_controls": 3,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 8,
+          "baseline_ap": 26.4,
+          "n_crop_any": 8,
+          "max_crop_pct": 1.889,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 7,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 3,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 17915.37
+        },
+        "lgm_18_50ka": {
+          "has_data": true,
+          "n_win": 31,
+          "baseline_ap": 53.3,
+          "n_crop_any": 31,
+          "max_crop_pct": 1.321,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 19,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 3,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 48950.0,
+          "earliest_relaxed_age": 48950.0
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 39,
+          "baseline_ap": 53.3,
+          "n_crop_any": 39,
+          "max_crop_pct": 1.889,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 26,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 3,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 48950.0,
+          "earliest_relaxed_age": 48950.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 470.0,
+            "age_raw": 33266.0,
+            "age_cal": 36566.0,
+            "age_type": "Radiocarbon years BP",
+            "is_14c": true,
+            "terrestrial_sum": 938.0,
+            "is_pct_units": false,
+            "crop_val": 6.0,
+            "crop_pct": 0.6397,
+            "weed_pct": 3.0917,
+            "plantago_lan_pct": 0.1066,
+            "ap_pct": 30.49,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 6.0
+            },
+            "weed_taxa": {
+              "Plantago lanceolata-type": 1.0,
+              "Urtica dioica-type": 1.0,
+              "Polygonum aviculare-type": 27.0
+            }
+          },
+          {
+            "depth": 460.0,
+            "age_raw": 32578.0,
+            "age_cal": 35878.0,
+            "age_type": "Radiocarbon years BP",
+            "is_14c": true,
+            "terrestrial_sum": 861.0,
+            "is_pct_units": false,
+            "crop_val": 8.0,
+            "crop_pct": 0.9292,
+            "weed_pct": 1.7422,
+            "plantago_lan_pct": 0.1161,
+            "ap_pct": 42.74,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 8.0
+            },
+            "weed_taxa": {
+              "Plantago lanceolata-type": 1.0,
+              "Plantago major-type": 1.0,
+              "Rumex acetosa-type": 3.0,
+              "Polygonum aviculare-type": 10.0
+            }
+          }
+        ]
+      }
+    ],
+    "flagged_strict_unfiltered": [
+      {
+        "datasetid": 26608,
+        "sitename": "Lago Grande di Monticchio",
+        "database": "European Pollen Database",
+        "lat": 40.93,
+        "lon": 15.604,
+        "n_samples_valid": 245,
+        "n_controls": 1393,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 27,
+          "baseline_ap": 32.0,
+          "n_crop_any": 5,
+          "max_crop_pct": 2.262,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 1,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 1393,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 15297.0
+        },
+        "lgm_18_50ka": {
+          "has_data": true,
+          "n_win": 129,
+          "baseline_ap": 31.3,
+          "n_crop_any": 50,
+          "max_crop_pct": 4.848,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 27,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 1393,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 46435.0,
+          "earliest_relaxed_age": 49546.0
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 156,
+          "baseline_ap": 31.3,
+          "n_crop_any": 55,
+          "max_crop_pct": 4.848,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 28,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 1393,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 46435.0,
+          "earliest_relaxed_age": 49546.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 1327.0,
+            "age_raw": 22523.0,
+            "age_cal": 22523.0,
+            "age_type": "Calendar years BP",
+            "is_14c": false,
+            "terrestrial_sum": 397.0,
+            "is_pct_units": false,
+            "crop_val": 7.0,
+            "crop_pct": 1.7632,
+            "weed_pct": 1.5113,
+            "plantago_lan_pct": 1.0076,
+            "ap_pct": 32.49,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 7.0
+            },
+            "weed_taxa": {
+              "Rumex": 2.0,
+              "Plantago lanceolata-type": 4.0
+            }
+          },
+          {
+            "depth": 1307.0,
+            "age_raw": 22259.0,
+            "age_cal": 22259.0,
+            "age_type": "Calendar years BP",
+            "is_14c": false,
+            "terrestrial_sum": 358.0,
+            "is_pct_units": false,
+            "crop_val": 4.0,
+            "crop_pct": 1.1173,
+            "weed_pct": 1.676,
+            "plantago_lan_pct": 0.838,
+            "ap_pct": 34.08,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 4.0
+            },
+            "weed_taxa": {
+              "Rumex": 3.0,
+              "Plantago lanceolata-type": 3.0
+            }
+          }
+        ]
+      },
+      {
+        "datasetid": 47525,
+        "sitename": "Lago Grande di Monticchio",
+        "database": "European Pollen Database",
+        "lat": 40.93,
+        "lon": 15.604,
+        "n_samples_valid": 920,
+        "n_controls": 1,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 94,
+          "baseline_ap": 32.8,
+          "n_crop_any": 62,
+          "max_crop_pct": 4.0,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 33,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 0,
+            "monotonic": true,
+            "has_older_bracket": false,
+            "has_younger_bracket": false,
+            "chron_ok": false
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 16745.0
+        },
+        "lgm_18_50ka": {
+          "has_data": true,
+          "n_win": 176,
+          "baseline_ap": 64.7,
+          "n_crop_any": 70,
+          "max_crop_pct": 7.58,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 32,
+          "farm_strict_unfiltered": true,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 0,
+            "monotonic": true,
+            "has_older_bracket": false,
+            "has_younger_bracket": false,
+            "chron_ok": false
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 49972.0
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 270,
+          "baseline_ap": 64.7,
+          "n_crop_any": 132,
+          "max_crop_pct": 7.58,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 65,
+          "farm_strict_unfiltered": true,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 0,
+            "monotonic": true,
+            "has_older_bracket": false,
+            "has_younger_bracket": false,
+            "chron_ok": false
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 49972.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 3256.5,
+            "age_raw": 47744.0,
+            "age_cal": 47744.0,
+            "age_type": "Calendar years BP",
+            "is_14c": false,
+            "terrestrial_sum": 381.0,
+            "is_pct_units": false,
+            "crop_val": 6.0,
+            "crop_pct": 1.5748,
+            "weed_pct": 0.5249,
+            "plantago_lan_pct": 0.0,
+            "ap_pct": 53.28,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 6.0
+            },
+            "weed_taxa": {
+              "Rumex": 2.0
+            }
+          },
+          {
+            "depth": 3231.7,
+            "age_raw": 47244.0,
+            "age_cal": 47244.0,
+            "age_type": "Calendar years BP",
+            "is_14c": false,
+            "terrestrial_sum": 356.0,
+            "is_pct_units": false,
+            "crop_val": 9.0,
+            "crop_pct": 2.5281,
+            "weed_pct": 0.5618,
+            "plantago_lan_pct": 0.0,
+            "ap_pct": 30.06,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 9.0
+            },
+            "weed_taxa": {
+              "Rumex": 2.0
+            }
+          }
+        ]
+      },
+      {
+        "datasetid": 22978,
+        "sitename": "Lago dell'Accesa",
+        "database": "European Pollen Database",
+        "lat": 42.987,
+        "lon": 10.892,
+        "n_samples_valid": 113,
+        "n_controls": 21,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 83,
+          "baseline_ap": 25.2,
+          "n_crop_any": 82,
+          "max_crop_pct": 10.664,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 60,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 21,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 14784.0,
+          "earliest_relaxed_age": 17504.0
+        },
+        "lgm_18_50ka": {
+          "has_data": false,
+          "n_win": 0,
+          "baseline_ap": null,
+          "n_crop_any": 0,
+          "max_crop_pct": 0.0,
+          "farm_relaxed": false,
+          "n_relaxed_samples": 0,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "chron_ok": false,
+            "n_controls": 21
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": null
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 83,
+          "baseline_ap": 25.2,
+          "n_crop_any": 82,
+          "max_crop_pct": 10.664,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 60,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 21,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 14784.0,
+          "earliest_relaxed_age": 17504.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 1605.0,
+            "age_raw": 14784.0,
+            "age_cal": 14784.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 1042.0,
+            "is_pct_units": false,
+            "crop_val": 75.0,
+            "crop_pct": 7.1977,
+            "weed_pct": 7.4856,
+            "plantago_lan_pct": 0.7678,
+            "ap_pct": 13.82,
+            "crop_taxa": {
+              "Poaceae (Cerealia)": 75.0
+            },
+            "weed_taxa": {
+              "Polygonum aviculare": 1.0,
+              "Plantago lanceolata-type": 8.0,
+              "Rumex-type": 69.0
+            }
+          },
+          {
+            "depth": 1603.0,
+            "age_raw": 14763.0,
+            "age_cal": 14763.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 994.0,
+            "is_pct_units": false,
+            "crop_val": 106.0,
+            "crop_pct": 10.664,
+            "weed_pct": 5.835,
+            "plantago_lan_pct": 0.503,
+            "ap_pct": 15.39,
+            "crop_taxa": {
+              "Poaceae (Cerealia)": 106.0
+            },
+            "weed_taxa": {
+              "Polygonum aviculare": 1.0,
+              "Plantago lanceolata-type": 5.0,
+              "Rumex-type": 52.0
+            }
+          }
+        ]
+      },
+      {
+        "datasetid": 45165,
+        "sitename": "Lake Van",
+        "database": "European Pollen Database",
+        "lat": 38.586,
+        "lon": 42.835,
+        "n_samples_valid": 111,
+        "n_controls": 9,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 43,
+          "baseline_ap": 2.3,
+          "n_crop_any": 43,
+          "max_crop_pct": 7.111,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 22,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 9,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 14252.0,
+          "earliest_relaxed_age": 15633.0
+        },
+        "lgm_18_50ka": {
+          "has_data": true,
+          "n_win": 13,
+          "baseline_ap": 1.6,
+          "n_crop_any": 13,
+          "max_crop_pct": 4.281,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 5,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 9,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 19409.0
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 56,
+          "baseline_ap": 2.3,
+          "n_crop_any": 56,
+          "max_crop_pct": 7.111,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 27,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 9,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 14252.0,
+          "earliest_relaxed_age": 19409.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 597.0,
+            "age_raw": 14252.0,
+            "age_cal": 14252.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 527.0,
+            "is_pct_units": false,
+            "crop_val": 14.0,
+            "crop_pct": 2.6565,
+            "weed_pct": 1.8975,
+            "plantago_lan_pct": 0.9488,
+            "ap_pct": 3.04,
+            "crop_taxa": {
+              "Poaceae (Cerealia)": 14.0
+            },
+            "weed_taxa": {
+              "Urtica-type": 1.0,
+              "Polygonum aviculare-type": 2.0,
+              "Rumex": 2.0,
+              "Plantago lanceolata": 5.0
+            }
+          },
+          {
+            "depth": 581.0,
+            "age_raw": 13921.0,
+            "age_cal": 13921.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 487.0,
+            "is_pct_units": false,
+            "crop_val": 18.0,
+            "crop_pct": 3.6961,
+            "weed_pct": 3.0801,
+            "plantago_lan_pct": 0.616,
+            "ap_pct": 8.62,
+            "crop_taxa": {
+              "Poaceae (Cerealia)": 18.0
+            },
+            "weed_taxa": {
+              "Plantago lanceolata": 3.0,
+              "Rumex": 4.0,
+              "Polygonum aviculare-type": 8.0
+            }
+          }
+        ]
+      },
+      {
+        "datasetid": 4065,
+        "sitename": "Ghab",
+        "database": "European Pollen Database",
+        "lat": 35.683,
+        "lon": 36.3,
+        "n_samples_valid": 74,
+        "n_controls": 3,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 8,
+          "baseline_ap": 26.4,
+          "n_crop_any": 8,
+          "max_crop_pct": 1.889,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 7,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 3,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 17915.37
+        },
+        "lgm_18_50ka": {
+          "has_data": true,
+          "n_win": 31,
+          "baseline_ap": 53.3,
+          "n_crop_any": 31,
+          "max_crop_pct": 1.321,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 19,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 3,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 48950.0,
+          "earliest_relaxed_age": 48950.0
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 39,
+          "baseline_ap": 53.3,
+          "n_crop_any": 39,
+          "max_crop_pct": 1.889,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 26,
+          "farm_strict_unfiltered": true,
+          "farm_strict": true,
+          "chron": {
+            "n_controls": 3,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": 48950.0,
+          "earliest_relaxed_age": 48950.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 470.0,
+            "age_raw": 33266.0,
+            "age_cal": 36566.0,
+            "age_type": "Radiocarbon years BP",
+            "is_14c": true,
+            "terrestrial_sum": 938.0,
+            "is_pct_units": false,
+            "crop_val": 6.0,
+            "crop_pct": 0.6397,
+            "weed_pct": 3.0917,
+            "plantago_lan_pct": 0.1066,
+            "ap_pct": 30.49,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 6.0
+            },
+            "weed_taxa": {
+              "Plantago lanceolata-type": 1.0,
+              "Urtica dioica-type": 1.0,
+              "Polygonum aviculare-type": 27.0
+            }
+          },
+          {
+            "depth": 460.0,
+            "age_raw": 32578.0,
+            "age_cal": 35878.0,
+            "age_type": "Radiocarbon years BP",
+            "is_14c": true,
+            "terrestrial_sum": 861.0,
+            "is_pct_units": false,
+            "crop_val": 8.0,
+            "crop_pct": 0.9292,
+            "weed_pct": 1.7422,
+            "plantago_lan_pct": 0.1161,
+            "ap_pct": 42.74,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 8.0
+            },
+            "weed_taxa": {
+              "Plantago lanceolata-type": 1.0,
+              "Plantago major-type": 1.0,
+              "Rumex acetosa-type": 3.0,
+              "Polygonum aviculare-type": 10.0
+            }
+          }
+        ]
+      },
+      {
+        "datasetid": 4137,
+        "sitename": "Kararmik Batakligi",
+        "database": "European Pollen Database",
+        "lat": 38.425,
+        "lon": 30.8,
+        "n_samples_valid": 50,
+        "n_controls": 3,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_12_18ka": {
+          "has_data": true,
+          "n_win": 7,
+          "baseline_ap": 34.4,
+          "n_crop_any": 7,
+          "max_crop_pct": 1.833,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 5,
+          "farm_strict_unfiltered": false,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 3,
+            "monotonic": true,
+            "has_older_bracket": true,
+            "has_younger_bracket": true,
+            "chron_ok": true
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 17398.0
+        },
+        "lgm_18_50ka": {
+          "has_data": true,
+          "n_win": 14,
+          "baseline_ap": 16.2,
+          "n_crop_any": 14,
+          "max_crop_pct": 5.26,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 14,
+          "farm_strict_unfiltered": true,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 3,
+            "monotonic": true,
+            "has_older_bracket": false,
+            "has_younger_bracket": true,
+            "chron_ok": false
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 24877.0
+        },
+        "all_12_50ka": {
+          "has_data": true,
+          "n_win": 21,
+          "baseline_ap": 18.7,
+          "n_crop_any": 21,
+          "max_crop_pct": 5.26,
+          "farm_relaxed": true,
+          "n_relaxed_samples": 19,
+          "farm_strict_unfiltered": true,
+          "farm_strict": false,
+          "chron": {
+            "n_controls": 3,
+            "monotonic": true,
+            "has_older_bracket": false,
+            "has_younger_bracket": true,
+            "chron_ok": false
+          },
+          "earliest_strict_age": null,
+          "earliest_relaxed_age": 24877.0
+        },
+        "strict_hits_12_50ka": [
+          {
+            "depth": 600.0,
+            "age_raw": 24877.0,
+            "age_cal": 24877.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 1808.0,
+            "is_pct_units": false,
+            "crop_val": 19.0,
+            "crop_pct": 1.0509,
+            "weed_pct": 1.3274,
+            "plantago_lan_pct": 1.1615,
+            "ap_pct": 8.85,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 19.0
+            },
+            "weed_taxa": {
+              "Polygonum aviculare-type": 3.0,
+              "Plantago lanceolata-type": 21.0
+            }
+          },
+          {
+            "depth": 590.0,
+            "age_raw": 24046.0,
+            "age_cal": 24046.0,
+            "age_type": "Calibrated radiocarbon years BP",
+            "is_14c": false,
+            "terrestrial_sum": 1192.0,
+            "is_pct_units": false,
+            "crop_val": 30.0,
+            "crop_pct": 2.5168,
+            "weed_pct": 1.8456,
+            "plantago_lan_pct": 1.4262,
+            "ap_pct": 18.71,
+            "crop_taxa": {
+              "Poaceae (Cerealia-type)": 30.0
+            },
+            "weed_taxa": {
+              "Rumex acetosa-type": 1.0,
+              "Polygonum aviculare-type": 4.0,
+              "Plantago lanceolata-type": 17.0
+            }
+          }
+        ]
+      }
+    ],
+    "all_pre12ka_candidates_summary": [
+      {
+        "datasetid": 4548,
+        "sitename": "Lake Zeribar",
+        "lat": 35.533,
+        "lon": 46.117,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 5.255,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 24373,
+        "sitename": "Lake Xinias",
+        "lat": 39.059,
+        "lon": 22.25,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 4.135,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 4114,
+        "sitename": "Ioannina I",
+        "lat": 39.763,
+        "lon": 20.731,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.077,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 26608,
+        "sitename": "Lago Grande di Monticchio",
+        "lat": 40.93,
+        "lon": 15.604,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": true,
+        "max_crop_pct_12_50": 4.848,
+        "n_controls": 1393
+      },
+      {
+        "datasetid": 47525,
+        "sitename": "Lago Grande di Monticchio",
+        "lat": 40.93,
+        "lon": 15.604,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 7.58,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 22978,
+        "sitename": "Lago dell'Accesa",
+        "lat": 42.987,
+        "lon": 10.892,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": true,
+        "lg_strict": true,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 10.664,
+        "n_controls": 21
+      },
+      {
+        "datasetid": 52260,
+        "sitename": "Prokosko Jezero",
+        "lat": 43.957,
+        "lon": 17.755,
+        "occ_taxa": [
+          "Hordeum-type",
+          "Poaceae (Cerealia) undiff.",
+          "Secale-type",
+          "Triticum-type"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.407,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 24227,
+        "sitename": "Hrabanovsk\u00e1 \u010dernava",
+        "lat": 50.216,
+        "lon": 14.831,
+        "occ_taxa": [
+          "Hordeum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.402,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 45084,
+        "sitename": "MD72/5-25",
+        "lat": 42.1,
+        "lon": 36.617,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.288,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 45165,
+        "sitename": "Lake Van",
+        "lat": 38.586,
+        "lon": 42.835,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": true,
+        "lg_strict": true,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 7.111,
+        "n_controls": 9
+      },
+      {
+        "datasetid": 45170,
+        "sitename": "Lake Iznik",
+        "lat": 40.434,
+        "lon": 29.533,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 3.107,
+        "n_controls": 11
+      },
+      {
+        "datasetid": 49646,
+        "sitename": "Shahkileh",
+        "lat": 36.761,
+        "lon": 53.598,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)",
+          "Secale"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.079,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 4065,
+        "sitename": "Ghab",
+        "lat": 35.683,
+        "lon": 36.3,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": true,
+        "max_crop_pct_12_50": 1.889,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 4137,
+        "sitename": "Kararmik Batakligi",
+        "lat": 38.425,
+        "lon": 30.8,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 5.26,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 42419,
+        "sitename": "Lake Urmia II",
+        "lat": 37.794,
+        "lon": 45.376,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 3.35,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 22751,
+        "sitename": "Straldzha mire",
+        "lat": 42.629,
+        "lon": 26.779,
+        "occ_taxa": [
+          "Hordeum-type",
+          "Secale-type",
+          "Triticum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.023,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 4418,
+        "sitename": "Lac de Siguret",
+        "lat": 44.614,
+        "lon": 6.557,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.676,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 4493,
+        "sitename": "Tourves",
+        "lat": 43.413,
+        "lon": 5.911,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 7.792,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 4442,
+        "sitename": "S\u00f6g\u00fct G\u00f6l\u00fc",
+        "lat": 36.998,
+        "lon": 29.898,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 7.636,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 52291,
+        "sitename": "Gharasoo",
+        "lat": 36.828,
+        "lon": 54.044,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.307,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 45083,
+        "sitename": "MD72/5-22",
+        "lat": 42.202,
+        "lon": 36.493,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.273,
+        "n_controls": 13
+      },
+      {
+        "datasetid": 22908,
+        "sitename": "Lago Piccolo di Avigliana",
+        "lat": 45.053,
+        "lon": 7.391,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.614,
+        "n_controls": 17
+      },
+      {
+        "datasetid": 52251,
+        "sitename": "Levantine Basin",
+        "lat": 32.033,
+        "lon": 34.283,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.778,
+        "n_controls": 30
+      },
+      {
+        "datasetid": 52270,
+        "sitename": "Beysehir G\u00f6l\u00fc",
+        "lat": 37.542,
+        "lon": 31.5,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.924,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 52695,
+        "sitename": "Gerzensee",
+        "lat": 46.831,
+        "lon": 7.547,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.285,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 24161,
+        "sitename": "Abant G\u00f6l\u00fc",
+        "lat": 40.6,
+        "lon": 31.283,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.643,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 24229,
+        "sitename": "M\u011blnick\u00fd \u00faval - P\u0159\u00edvory",
+        "lat": 50.299,
+        "lon": 14.578,
+        "occ_taxa": [
+          "Hordeum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.169,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 41247,
+        "sitename": "Lake Tianchi",
+        "lat": 25.87,
+        "lon": 99.278,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 4.364,
+        "n_controls": 20
+      },
+      {
+        "datasetid": 22801,
+        "sitename": "Unteruckersee",
+        "lat": 53.25,
+        "lon": 13.85,
+        "occ_taxa": [
+          "Hordeum-type",
+          "Poaceae (Cerealia-type)",
+          "Triticum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.466,
+        "n_controls": 11
+      },
+      {
+        "datasetid": 47606,
+        "sitename": "Palughetto",
+        "lat": 46.102,
+        "lon": 12.4,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.083,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 4103,
+        "sitename": "Huleh",
+        "lat": 33.106,
+        "lon": 35.528,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 4170,
+        "sitename": "Kupena",
+        "lat": 41.983,
+        "lon": 24.333,
+        "occ_taxa": [
+          "Hordeum-type",
+          "Poaceae (Cerealia-type)",
+          "Secale",
+          "Triticum-type"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.814,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 41185,
+        "sitename": "Garaat El-Ouez",
+        "lat": 36.818,
+        "lon": 8.333,
+        "occ_taxa": [
+          "Poaceae (Cerealia)",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.98,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 24157,
+        "sitename": "Ladik G\u00f6l\u00fc",
+        "lat": 40.909,
+        "lon": 36.009,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.857,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 57789,
+        "sitename": "Nangla Lu",
+        "lat": 29.243,
+        "lon": 87.219,
+        "occ_taxa": [
+          "Hordeum-type",
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.837,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 58689,
+        "sitename": "Leckerpfuhl",
+        "lat": 52.867,
+        "lon": 13.889,
+        "occ_taxa": [
+          "Hordeum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.318,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 24284,
+        "sitename": "Murifeld Bern",
+        "lat": 46.937,
+        "lon": 7.473,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.475,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 4367,
+        "sitename": "Quintanar de la Sierra",
+        "lat": 42.033,
+        "lon": -3.017,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.587,
+        "n_controls": 16
+      },
+      {
+        "datasetid": 52218,
+        "sitename": "Rachelsee",
+        "lat": 48.974,
+        "lon": 13.401,
+        "occ_taxa": [
+          "Poaceae (Cerealia)",
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.238,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 22976,
+        "sitename": "Lago dell'Accesa",
+        "lat": 42.987,
+        "lon": 10.892,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 21
+      },
+      {
+        "datasetid": 45092,
+        "sitename": "GS18",
+        "lat": 41.548,
+        "lon": 51.101,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.528,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 52803,
+        "sitename": "Maloja Riegel",
+        "lat": 46.406,
+        "lon": 9.68,
+        "occ_taxa": [
+          "Poaceae (Cerealia)",
+          "Secale"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.618,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 58187,
+        "sitename": "Lago della Costa",
+        "lat": 45.27,
+        "lon": 11.743,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.821,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 4076,
+        "sitename": "G\u00f6lhisar G\u00f6l\u00fc",
+        "lat": 37.133,
+        "lon": 29.6,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 8.371,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 24159,
+        "sitename": "Yeni\u00e7aga G\u00f6l\u00fc",
+        "lat": 40.78,
+        "lon": 32.026,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.288,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 59854,
+        "sitename": "Braamhoek",
+        "lat": -28.233,
+        "lon": 29.583,
+        "occ_taxa": [
+          "Zea mays"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 4.0,
+        "n_controls": 21
+      },
+      {
+        "datasetid": 4188,
+        "sitename": "La Vie",
+        "lat": 48.548,
+        "lon": -0.258,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.852,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 52663,
+        "sitename": "Saint-Ursin",
+        "lat": 48.519,
+        "lon": -0.253,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.474,
+        "n_controls": 10
+      },
+      {
+        "datasetid": 4118,
+        "sitename": "Liptovsk\u00fd J\u00e1n",
+        "lat": 49.042,
+        "lon": 19.678,
+        "occ_taxa": [
+          "Secale-type"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.532,
+        "n_controls": 8
+      },
+      {
+        "datasetid": 22817,
+        "sitename": "Tegeler See",
+        "lat": 52.586,
+        "lon": 13.257,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type) undiff."
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.241,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 53063,
+        "sitename": "Lake Yamozero",
+        "lat": 65.017,
+        "lon": 50.233,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Hordeum"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.129,
+        "n_controls": 9
+      },
+      {
+        "datasetid": 4404,
+        "sitename": "San Rafael",
+        "lat": 36.774,
+        "lon": -2.601,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.266,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 4504,
+        "sitename": "Lake Urmia",
+        "lat": 37.583,
+        "lon": 45.467,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.894,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 26317,
+        "sitename": "Kopais",
+        "lat": 38.483,
+        "lon": 23.067,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 9.184,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 41467,
+        "sitename": "Lago di Origlio",
+        "lat": 46.052,
+        "lon": 8.943,
+        "occ_taxa": [
+          "Poaceae (Cerealia)",
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.392,
+        "n_controls": 28
+      },
+      {
+        "datasetid": 22784,
+        "sitename": "Lago delle Fate",
+        "lat": 44.246,
+        "lon": 7.098,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.545,
+        "n_controls": 8
+      },
+      {
+        "datasetid": 24175,
+        "sitename": "Akg\u00f6l Adabag",
+        "lat": 37.5,
+        "lon": 33.733,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.39,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 41491,
+        "sitename": "Beliya Kanton",
+        "lat": 41.734,
+        "lon": 24.139,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.625,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 41911,
+        "sitename": "Lagoa Comprida 2",
+        "lat": 40.363,
+        "lon": -7.636,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.505,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 4056,
+        "sitename": "Le Fourneau",
+        "lat": 48.444,
+        "lon": -0.192,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.602,
+        "n_controls": 8
+      },
+      {
+        "datasetid": 4086,
+        "sitename": "Hawks Tor",
+        "lat": 50.541,
+        "lon": -4.612,
+        "occ_taxa": [
+          "Poaceae (Cerealia) undiff.",
+          "Secale",
+          "Triticum"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.238,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 22683,
+        "sitename": "Laghi dell'Orgials",
+        "lat": 44.233,
+        "lon": 7.133,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.637,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 22936,
+        "sitename": "Als\u00f3p\u00e1hok",
+        "lat": 46.774,
+        "lon": 17.17,
+        "occ_taxa": [
+          "Secale-type",
+          "Triticum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.513,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 24091,
+        "sitename": "Sommers\u00fcss",
+        "lat": 46.76,
+        "lon": 11.68,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.271,
+        "n_controls": 15
+      },
+      {
+        "datasetid": 48978,
+        "sitename": "Peuil Peat Bog",
+        "lat": 45.125,
+        "lon": 5.644,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.195,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 52694,
+        "sitename": "Gerzensee",
+        "lat": 46.831,
+        "lon": 7.547,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.171,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 57987,
+        "sitename": "Pian del Lago",
+        "lat": 44.32,
+        "lon": 9.486,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)",
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.166,
+        "n_controls": 12
+      },
+      {
+        "datasetid": 3930,
+        "sitename": "Biot",
+        "lat": 43.8,
+        "lon": 7.1,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.869,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 4007,
+        "sitename": "Czajkow",
+        "lat": 50.57,
+        "lon": 21.278,
+        "occ_taxa": [
+          "Secale cereale",
+          "Triticum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.716,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 4067,
+        "sitename": "Ghab",
+        "lat": 35.683,
+        "lon": 36.3,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.535,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 4275,
+        "sitename": "Lago Grande di Monticchio",
+        "lat": 40.93,
+        "lon": 15.604,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 4509,
+        "sitename": "Lake Van",
+        "lat": 38.586,
+        "lon": 42.835,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 8
+      },
+      {
+        "datasetid": 22330,
+        "sitename": "Didachara",
+        "lat": 41.684,
+        "lon": 42.497,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.069,
+        "n_controls": 12
+      },
+      {
+        "datasetid": 49513,
+        "sitename": "Hybka\u0148a",
+        "lat": 48.913,
+        "lon": 22.163,
+        "occ_taxa": [
+          "Hordeum-type",
+          "Secale cereale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.39,
+        "n_controls": 15
+      },
+      {
+        "datasetid": 56811,
+        "sitename": "Groot Wetsinge (B07A0111)",
+        "lat": 53.299,
+        "lon": 6.498,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 3.236,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 3977,
+        "sitename": "Lac de Chambedaze",
+        "lat": 45.444,
+        "lon": 2.875,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.495,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 4358,
+        "sitename": "Lake Beloslav",
+        "lat": 43.188,
+        "lon": 27.671,
+        "occ_taxa": [
+          "Hordeum-type",
+          "Poaceae (Cerealia-type)",
+          "Triticum-type"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 2.02,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 4447,
+        "sitename": "Son Bou",
+        "lat": 39.925,
+        "lon": 4.027,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.111,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 20022,
+        "sitename": "Avrig",
+        "lat": 45.717,
+        "lon": 24.383,
+        "occ_taxa": [
+          "Poaceae (Cerealia)",
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.625,
+        "n_controls": 12
+      },
+      {
+        "datasetid": 24032,
+        "sitename": "Kupena",
+        "lat": 41.983,
+        "lon": 24.333,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)",
+          "Triticum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.36,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 24166,
+        "sitename": "Pinarbasi",
+        "lat": 37.467,
+        "lon": 30.05,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.542,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 25481,
+        "sitename": "Lac des Boites",
+        "lat": 45.056,
+        "lon": 5.885,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.238,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 40569,
+        "sitename": "Bibersee",
+        "lat": 47.207,
+        "lon": 8.465,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.329,
+        "n_controls": 27
+      },
+      {
+        "datasetid": 49503,
+        "sitename": "Chamsine",
+        "lat": 33.753,
+        "lon": 35.948,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.656,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 4064,
+        "sitename": "Bois des Gardes",
+        "lat": 45.417,
+        "lon": 2.7,
+        "occ_taxa": [
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.394,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 4184,
+        "sitename": "Laguna de la Roya",
+        "lat": 42.135,
+        "lon": -6.794,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.458,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 4467,
+        "sitename": "Suho ezero II",
+        "lat": 42.065,
+        "lon": 23.56,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)",
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.286,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 24410,
+        "sitename": "Bonnecombe",
+        "lat": 44.567,
+        "lon": 3.125,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.314,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 25275,
+        "sitename": "Saint Hilaire du Rosier",
+        "lat": 45.071,
+        "lon": 5.257,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 25472,
+        "sitename": "Tourbi\u00e8re de Mont Sec",
+        "lat": 45.069,
+        "lon": 5.807,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.17,
+        "n_controls": 8
+      },
+      {
+        "datasetid": 49242,
+        "sitename": "Lake Salines",
+        "lat": 38.505,
+        "lon": -0.889,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.968,
+        "n_controls": 8
+      },
+      {
+        "datasetid": 49501,
+        "sitename": "Aammiq",
+        "lat": 33.732,
+        "lon": 35.794,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.494,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 52150,
+        "sitename": "Lago Albano",
+        "lat": 41.75,
+        "lon": 12.667,
+        "occ_taxa": [
+          "Secale cereale"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.93,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 52246,
+        "sitename": "Lago di Stracciaccapa",
+        "lat": 42.13,
+        "lon": 12.322,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.604,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 53055,
+        "sitename": "La Taphanel",
+        "lat": 45.274,
+        "lon": 2.679,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.528,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 53121,
+        "sitename": "Liastemmen bog",
+        "lat": 59.167,
+        "lon": 5.233,
+        "occ_taxa": [
+          "Fagopyrum",
+          "Hordeum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.085,
+        "n_controls": 11
+      },
+      {
+        "datasetid": 4147,
+        "sitename": "Khimaditis Ib",
+        "lat": 40.622,
+        "lon": 21.592,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.699,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 4171,
+        "sitename": "Kupena",
+        "lat": 41.983,
+        "lon": 24.333,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.087,
+        "n_controls": 9
+      },
+      {
+        "datasetid": 16212,
+        "sitename": "Laguna Negra",
+        "lat": 41.999,
+        "lon": -2.848,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.195,
+        "n_controls": 9
+      },
+      {
+        "datasetid": 22672,
+        "sitename": "Torbiera del Biecai",
+        "lat": 44.186,
+        "lon": 7.717,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.157,
+        "n_controls": 8
+      },
+      {
+        "datasetid": 22689,
+        "sitename": "Schwanengrabenrinne",
+        "lat": 52.525,
+        "lon": 13.056,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.317,
+        "n_controls": 15
+      },
+      {
+        "datasetid": 22732,
+        "sitename": "Lac de Villa",
+        "lat": 45.686,
+        "lon": 7.69,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.258,
+        "n_controls": 10
+      },
+      {
+        "datasetid": 22788,
+        "sitename": "Kleiner Mochowsee",
+        "lat": 51.996,
+        "lon": 14.199,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.848,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 22820,
+        "sitename": "L\u00f6ddigsee",
+        "lat": 53.433,
+        "lon": 11.85,
+        "occ_taxa": [
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.159,
+        "n_controls": 12
+      },
+      {
+        "datasetid": 22958,
+        "sitename": "Rappershausen im Grabfeld",
+        "lat": 50.385,
+        "lon": 10.388,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type) undiff."
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.104,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 22992,
+        "sitename": "Hinterburgseeli",
+        "lat": 46.718,
+        "lon": 8.068,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.183,
+        "n_controls": 14
+      },
+      {
+        "datasetid": 24356,
+        "sitename": "Lake Oresti\u00e1s",
+        "lat": 40.552,
+        "lon": 21.322,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 24414,
+        "sitename": "Brameloup",
+        "lat": 44.744,
+        "lon": 3.081,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.337,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 24463,
+        "sitename": "Lastioulles",
+        "lat": 45.386,
+        "lon": 2.636,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.654,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 24493,
+        "sitename": "Tanneurs",
+        "lat": 47.214,
+        "lon": -1.557,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 3.264,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 24996,
+        "sitename": "Lac des Boites",
+        "lat": 45.056,
+        "lon": 5.885,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.236,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 26431,
+        "sitename": "Fuschlsee",
+        "lat": 47.804,
+        "lon": 13.275,
+        "occ_taxa": [
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 19
+      },
+      {
+        "datasetid": 40632,
+        "sitename": "Xir\u00e8s Montana",
+        "lat": 46.307,
+        "lon": 7.472,
+        "occ_taxa": [
+          "Hordeum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.227,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 41909,
+        "sitename": "Charco da Candieira",
+        "lat": 40.342,
+        "lon": -7.576,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.068,
+        "n_controls": 27
+      },
+      {
+        "datasetid": 44951,
+        "sitename": "Kis-Mohos T\u00f3",
+        "lat": 48.337,
+        "lon": 20.425,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.656,
+        "n_controls": 13
+      },
+      {
+        "datasetid": 45192,
+        "sitename": "Ayo\u00f3 de Vidriales",
+        "lat": 42.126,
+        "lon": -6.07,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.187,
+        "n_controls": 12
+      },
+      {
+        "datasetid": 48700,
+        "sitename": "Lagunas Natosas Bosque",
+        "lat": -4.73,
+        "lon": -79.424,
+        "occ_taxa": [
+          "Zea mays"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.66,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 48975,
+        "sitename": "Le Suc",
+        "lat": 45.377,
+        "lon": 2.905,
+        "occ_taxa": [
+          "Fagopyrum"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.357,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 52647,
+        "sitename": "Lobsigensee",
+        "lat": 47.031,
+        "lon": 7.298,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.149,
+        "n_controls": 21
+      },
+      {
+        "datasetid": 57779,
+        "sitename": "Lost Lake",
+        "lat": 64.3,
+        "lon": -146.692,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.602,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 58542,
+        "sitename": "Egelsee bei Bad T\u00f6lz",
+        "lat": 47.804,
+        "lon": 11.636,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)",
+          "Secale cereale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.595,
+        "n_controls": 11
+      },
+      {
+        "datasetid": 58619,
+        "sitename": "Padul",
+        "lat": 37.0,
+        "lon": -3.067,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.532,
+        "n_controls": 17
+      },
+      {
+        "datasetid": 59591,
+        "sitename": "Tom Gregory Swamp",
+        "lat": -35.38,
+        "lon": 148.49,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.085,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 69574,
+        "sitename": "St Ottilien",
+        "lat": 48.094,
+        "lon": 11.035,
+        "occ_taxa": [
+          "Triticum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.327,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 1660,
+        "sitename": "Long Lake",
+        "lat": 36.006,
+        "lon": -108.833,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.161,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 3892,
+        "sitename": "Altenweiher",
+        "lat": 48.013,
+        "lon": 6.994,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.233,
+        "n_controls": 9
+      },
+      {
+        "datasetid": 22695,
+        "sitename": "Montes do Buio Cuadram\u00f3n",
+        "lat": 43.473,
+        "lon": -7.534,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.4,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 22775,
+        "sitename": "Merzdorf",
+        "lat": 51.4,
+        "lon": 13.533,
+        "occ_taxa": [
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 22868,
+        "sitename": "Untere Bunschleren Boltigen",
+        "lat": 46.6,
+        "lon": 7.419,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.303,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 24287,
+        "sitename": "L\u00f6rmoos Bern",
+        "lat": 46.984,
+        "lon": 7.413,
+        "occ_taxa": [
+          "Hordeum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.164,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 24956,
+        "sitename": "Tourbi\u00e8res des Granges des Chavants",
+        "lat": 45.893,
+        "lon": 6.768,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 1.356,
+        "n_controls": 9
+      },
+      {
+        "datasetid": 32258,
+        "sitename": "Kearney McKean-2",
+        "lat": 40.737,
+        "lon": -99.029,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.173,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 40566,
+        "sitename": "Nussbaumer Seen",
+        "lat": 47.613,
+        "lon": 8.831,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 15
+      },
+      {
+        "datasetid": 40914,
+        "sitename": "Knob Hill Pond",
+        "lat": 44.36,
+        "lon": -72.374,
+        "occ_taxa": [
+          "Zea"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.345,
+        "n_controls": 15
+      },
+      {
+        "datasetid": 41389,
+        "sitename": "Balladrum",
+        "lat": 46.159,
+        "lon": 8.749,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.152,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 41456,
+        "sitename": "Felchowsee",
+        "lat": 53.054,
+        "lon": 14.128,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.116,
+        "n_controls": 5
+      },
+      {
+        "datasetid": 45097,
+        "sitename": "GS05",
+        "lat": 38.761,
+        "lon": 51.538,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.289,
+        "n_controls": 3
+      },
+      {
+        "datasetid": 45103,
+        "sitename": "Nisi Fen",
+        "lat": 40.817,
+        "lon": 21.917,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.311,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 45383,
+        "sitename": "Lake Kahala",
+        "lat": 59.489,
+        "lon": 25.539,
+        "occ_taxa": [
+          "Secale cereale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.199,
+        "n_controls": 9
+      },
+      {
+        "datasetid": 48614,
+        "sitename": "Cerro Toledo",
+        "lat": -4.375,
+        "lon": -79.112,
+        "occ_taxa": [
+          "Zea mays"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.329,
+        "n_controls": 6
+      },
+      {
+        "datasetid": 48950,
+        "sitename": "Correo",
+        "lat": 44.555,
+        "lon": 5.996,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.0,
+        "n_controls": 15
+      },
+      {
+        "datasetid": 48968,
+        "sitename": "Brugeroux",
+        "lat": 45.147,
+        "lon": 2.849,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.184,
+        "n_controls": 7
+      },
+      {
+        "datasetid": 48973,
+        "sitename": "Le Suc",
+        "lat": 45.377,
+        "lon": 2.905,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.949,
+        "n_controls": 4
+      },
+      {
+        "datasetid": 49468,
+        "sitename": "Tiefer See",
+        "lat": 53.791,
+        "lon": 12.29,
+        "occ_taxa": [
+          "Hordeum-type"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.289,
+        "n_controls": 10
+      },
+      {
+        "datasetid": 49477,
+        "sitename": "Thorsberger Moor",
+        "lat": 54.642,
+        "lon": 9.772,
+        "occ_taxa": [
+          "Poaceae (Cerealia) undiff."
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.165,
+        "n_controls": 17
+      },
+      {
+        "datasetid": 52278,
+        "sitename": "Sabion",
+        "lat": 44.13,
+        "lon": 7.473,
+        "occ_taxa": [
+          "Poaceae (Cerealia-type)"
+        ],
+        "lg_relaxed": true,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.862,
+        "n_controls": 2
+      },
+      {
+        "datasetid": 52645,
+        "sitename": "Lobsigensee",
+        "lat": 47.031,
+        "lon": 7.298,
+        "occ_taxa": [
+          "Secale"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.082,
+        "n_controls": 21
+      },
+      {
+        "datasetid": 52707,
+        "sitename": "Gerzensee",
+        "lat": 46.831,
+        "lon": 7.547,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.171,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 52849,
+        "sitename": "Lake Svityaz",
+        "lat": 51.505,
+        "lon": 23.843,
+        "occ_taxa": [
+          "Poaceae (Cerealia)"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.095,
+        "n_controls": 1
+      },
+      {
+        "datasetid": 52975,
+        "sitename": "Timan Ridge",
+        "lat": 67.267,
+        "lon": 48.717,
+        "occ_taxa": [
+          "Fagopyrum"
+        ],
+        "lg_relaxed": false,
+        "lg_strict_unfilt": false,
+        "lg_strict": false,
+        "lgm_strict": false,
+        "max_crop_pct_12_50": 0.064,
+        "n_controls": 6
+      }
+    ]
+  }
+}
