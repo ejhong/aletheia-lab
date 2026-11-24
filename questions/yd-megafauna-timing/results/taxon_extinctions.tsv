@@ -1,0 +1,7 @@
+taxon	is_carnivore	n_all	n_s12	n_surv_p95_all	n_surv_p95_s12	lad_med	lad_lo	lad_hi	ole_med	ole_lo	ole_hi	ole_category	griwm_med	griwm_lo	griwm_hi	s12_ole_med	s12_ole_lo	s12_ole_hi
+Equus	0	26	22	0	0	12764.6	11432.6	13144.0	12495.2	9031.3	13126.7	spans_yd_boundary	12622.1	10854.5	13124.4	13060.7	12714.9	13143.1
+Mammuthus	0	87	63	5	5	12006.2	11189.7	12226.8	11842.1	10208.3	12152.3	strictly_after_impact	11914.7	10809.0	12175.0	11851.9	10294.7	12149.8
+Oreamnos harringtoni	0	29	17	0	0	11622.5	10191.3	12811.4	10549.8	7486.0	12540.9	strictly_after_impact	11010.1	9087.1	12625.6	10332.9	7117.1	12329.0
+Mammut	0	101	86	4	3	10792.1	10213.0	11578.9	8565.8	6863.1	10798.9	strictly_after_impact	10257.9	9478.5	11295.5	11866.9	11078.5	12412.4
+Nothrotheriops	0	43	4	5	0	9623.6	9028.0	10469.0	8441.5	6711.4	9956.9	strictly_after_impact	9127.8	8231.0	10236.5			
+Smilodon	1	24	5	1	0	10690.4	10271.8	11132.6	8357.2	7295.4	9447.2	strictly_after_impact	9703.1	9132.6	10325.6			

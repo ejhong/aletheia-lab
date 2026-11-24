@@ -1,0 +1,153 @@
+<figure class="fig" id="fig-taxa" aria-label="Per-taxon Signor-Lipps extinction estimates across North American megafauna">
+<style>
+#fig-taxa .tx-bar{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem .6rem;margin:0 0 .85rem;font-family:var(--mono);font-size:11px;}
+#fig-taxa .tx-label{text-transform:uppercase;letter-spacing:.14em;color:var(--faint);}
+#fig-taxa .tx-btn{font:500 11px/1.2 var(--mono);padding:.34rem .58rem;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:2px;cursor:pointer;}
+#fig-taxa .tx-btn.is-on{background:var(--copper);border-color:var(--copper);color:#fff;}
+#fig-taxa .tx-meta{margin:0 0 .6rem;font-size:.86rem;color:var(--ink-soft);}
+#fig-taxa .tx-readout{font-family:var(--mono);font-size:11.5px;color:var(--ink);padding:.45rem .7rem;background:var(--panel);border:1px solid var(--line);margin-top:.5rem;min-height:2.1em;}
+#fig-taxa svg{display:block;width:100%;min-width:620px;height:auto;font-family:var(--sans);}
+</style>
+<div class="tx-bar">
+  <span class="tx-label">Dating tier</span>
+  <button type="button" class="tx-btn is-on" data-tier="s12">Gold-standard Score-12 AMS (cleanest)</button>
+  <button type="button" class="tx-btn" data-tier="all">All vetted Score 11–12 (includes older conventional dates)</button>
+</div>
+<p class="tx-meta" id="tx-meta"></p>
+<div class="fig-scroll">
+  <svg id="tx-svg" viewBox="0 0 740 430" role="img" aria-label="Extinction timeline by megafauna genus showing youngest dated fossil, OLE, and GRIWM 95% intervals"></svg>
+</div>
+<div class="tx-readout" id="tx-readout">Hover any genus row to compare its youngest dated fossil (LAD) with its Signor–Lipps OLE and GRIWM extinction intervals.</div>
+<figcaption>Per-genus extinction estimates on IntCal20 (1,000 calibrated posterior draws per taxon). Top block shows every genus with enough dates for formal Signor–Lipps estimation: individual dated fossils (faint vertical ticks), youngest fossil (hollow circle), Solow Optimal Linear Estimation (<em>OLE</em>, solid copper diamond + 95% interval), and Bradshaw <em>GRIWM</em> (verdigris square). Lower block adds the youngest Score-12 AMS fossils from five iconic lower-count genera (dire wolf, American lion, camel, giant beaver, short-faced bear) for context. Switching from All vetted dates to Score-12 AMS removes questionable 1960s–70s conventional outliers — and still leaves &gt;1,200 years of staggered extinction spanning both sides of the Younger Dryas onset.</figcaption>
+<script>
+(function(){
+  const D = {"taxa":[{"taxon":"Equus","label":"North American horse (Equus)","n_all":26,"n_s12":22,"surv_all":0,"surv_s12":0,"all":{"n_dates":26,"k_used":10,"lad":{"median":12764.6,"ci95_lo":11432.6,"ci95_hi":13144.0,"p_before_12896":0.397,"p_after_12835":0.55,"p_after_12750":0.487},"ole":{"median":12495.2,"ci95_lo":9031.3,"ci95_hi":13126.7,"p_before_12896":0.287,"p_after_12835":0.68,"p_after_12750":0.613},"griwm":{"median":12622.1,"ci95_lo":10854.5,"ci95_hi":13124.4,"p_before_12896":0.314,"p_after_12835":0.64,"p_after_12750":0.565}},"s12":{"n_dates":22,"k_used":10,"lad":{"median":13098.7,"ci95_lo":12899.1,"ci95_hi":13160.2,"p_before_12896":0.976,"p_after_12835":0.003,"p_after_12750":0.0},"ole":{"median":13060.7,"ci95_lo":12714.9,"ci95_hi":13143.1,"p_before_12896":0.83,"p_after_12835":0.107,"p_after_12750":0.039},"griwm":{"median":13059.3,"ci95_lo":12785.9,"ci95_hi":13141.4,"p_before_12896":0.856,"p_after_12835":0.071,"p_after_12750":0.013}},"medians":[12765.0,13109.0,13124.0,13210.0,13225.0,13236.0,13280.0,13302.0,13404.0,13478.0,13548.0,13668.0,13673.0,13915.0,14319.0,14334.0,14463.0,14481.0,14519.0,15309.0,15661.0,16002.0]},{"taxon":"Mammuthus","label":"Mammoth (Mammuthus)","n_all":87,"n_s12":63,"surv_all":5,"surv_s12":5,"all":{"n_dates":87,"k_used":10,"lad":{"median":12006.2,"ci95_lo":11189.7,"ci95_hi":12226.8,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"ole":{"median":11842.1,"ci95_lo":10208.3,"ci95_hi":12152.3,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"griwm":{"median":11914.7,"ci95_lo":10809.0,"ci95_hi":12175.0,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0}},"s12":{"n_dates":63,"k_used":10,"lad":{"median":12011.2,"ci95_lo":11108.0,"ci95_hi":12234.7,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"ole":{"median":11851.9,"ci95_lo":10294.7,"ci95_hi":12149.8,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"griwm":{"median":11913.1,"ci95_lo":10703.1,"ci95_hi":12174.5,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0}},"medians":[12091.0,12167.0,12196.0,12222.0,12644.0,12714.0,12755.0,12798.0,12844.0,12874.0,12963.0,13124.0,13129.0,13147.0,13197.0,13277.0,13415.0,13502.0,13566.0,13572.0,13590.0,13599.0,13680.0,13715.0,13731.0,13772.0,13900.0,13910.0,13956.0,14042.0,14085.0,14085.0,14165.0,14180.0,14209.0,14328.0,14432.0,14524.0,14530.0,14542.0,14565.0,14588.0,14594.0,14612.0,14641.0,14849.0,14882.0,14904.0,14906.0,14930.0,14961.0,15246.0,15350.0,15393.0,15417.0,15481.0,15695.0,15699.0,15898.0,16123.0,16220.0,16256.0]},{"taxon":"Oreamnos harringtoni","label":"Harrington's mountain goat","n_all":29,"n_s12":17,"surv_all":0,"surv_s12":0,"all":{"n_dates":29,"k_used":10,"lad":{"median":11622.5,"ci95_lo":10191.3,"ci95_hi":12811.4,"p_before_12896":0.009,"p_after_12835":0.98,"p_after_12750":0.964},"ole":{"median":10549.8,"ci95_lo":7486.0,"ci95_hi":12540.9,"p_before_12896":0.001,"p_after_12835":0.999,"p_after_12750":0.995},"griwm":{"median":11010.1,"ci95_lo":9087.1,"ci95_hi":12625.6,"p_before_12896":0.001,"p_after_12835":0.996,"p_after_12750":0.988}},"s12":{"n_dates":17,"k_used":10,"lad":{"median":11721.5,"ci95_lo":10148.2,"ci95_hi":12837.8,"p_before_12896":0.02,"p_after_12835":0.974,"p_after_12750":0.964},"ole":{"median":10332.9,"ci95_lo":7117.1,"ci95_hi":12329.0,"p_before_12896":0.005,"p_after_12835":0.995,"p_after_12750":0.995},"griwm":{"median":10914.0,"ci95_lo":8866.3,"ci95_hi":12472.5,"p_before_12896":0.005,"p_after_12835":0.995,"p_after_12750":0.994}},"medians":[11756.0,12829.0,13362.0,13465.0,13989.0,14096.0,14398.0,14497.0,15294.0,15524.0,15635.0,15728.0,16167.0]},{"taxon":"Mammut","label":"American mastodon (Mammut)","n_all":101,"n_s12":86,"surv_all":4,"surv_s12":3,"all":{"n_dates":101,"k_used":10,"lad":{"median":10792.1,"ci95_lo":10213.0,"ci95_hi":11578.9,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"ole":{"median":8565.8,"ci95_lo":6863.1,"ci95_hi":10798.9,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"griwm":{"median":10257.9,"ci95_lo":9478.5,"ci95_hi":11295.5,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0}},"s12":{"n_dates":86,"k_used":10,"lad":{"median":12218.5,"ci95_lo":11956.8,"ci95_hi":12506.3,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"ole":{"median":11866.9,"ci95_lo":11078.5,"ci95_hi":12412.4,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"griwm":{"median":12094.7,"ci95_lo":11743.3,"ci95_hi":12452.5,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0}},"medians":[10827.0,12273.0,12444.0,12638.0,12728.0,12738.0,12742.0,12746.0,12772.0,12773.0,12776.0,12788.0,12793.0,12810.0,12815.0,12914.0,12946.0,12972.0,12985.0,13010.0,13018.0,13019.0,13028.0,13030.0,13030.0,13050.0,13129.0,13136.0,13156.0,13189.0,13192.0,13206.0,13259.0,13260.0,13260.0,13264.0,13285.0,13293.0,13298.0,13318.0,13320.0,13320.0,13326.0,13331.0,13347.0,13353.0,13360.0,13365.0,13372.0,13372.0,13389.0,13400.0,13404.0,13415.0,13419.0,13468.0,13473.0,13474.0,13483.0,13485.0,13518.0,13543.0,13543.0,13569.0,13597.0,13632.0,13660.0,13678.0,13678.0,13678.0,13695.0,13750.0,13840.0,13893.0,13914.0,13941.0,13991.0,14090.0,14103.0,14130.0,14153.0,14153.0,14213.0,14284.0,14285.0,14476.0,14539.0,14673.0,14697.0,14827.0,14871.0,14982.0,15070.0,15920.0]},{"taxon":"Nothrotheriops","label":"Shasta ground sloth","n_all":43,"n_s12":4,"surv_all":5,"surv_s12":0,"all":{"n_dates":43,"k_used":10,"lad":{"median":9623.6,"ci95_lo":9028.0,"ci95_hi":10469.0,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"ole":{"median":8441.5,"ci95_lo":6711.4,"ci95_hi":9956.9,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"griwm":{"median":9127.8,"ci95_lo":8231.0,"ci95_hi":10236.5,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0}},"s12":null,"medians":[9762.0,9936.0,11444.0,11664.0,12161.0,12337.0,12523.0,12715.0,12730.0,12745.0,12747.0,12926.0,12927.0,12947.0,12971.0,12978.0,12982.0,12988.0,12994.0,13030.0,13044.0,13052.0,13184.0,13232.0,13249.0,13262.0,13304.0,13355.0,13463.0,13464.0,13571.0,13572.0,13663.0,13808.0,13965.0,14058.0,14457.0,14604.0,14625.0,14643.0,15749.0]},{"taxon":"Smilodon","label":"Saber-toothed cat (Smilodon)","n_all":24,"n_s12":5,"surv_all":1,"surv_s12":0,"all":{"n_dates":24,"k_used":10,"lad":{"median":10690.4,"ci95_lo":10271.8,"ci95_hi":11132.6,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"ole":{"median":8357.2,"ci95_lo":7295.4,"ci95_hi":9447.2,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0},"griwm":{"median":9703.1,"ci95_lo":9132.6,"ci95_hi":10325.6,"p_before_12896":0.0,"p_after_12835":1.0,"p_after_12750":1.0}},"s12":null,"medians":[10670.0,13036.0,13214.0,13567.0,13751.0,13883.0,14237.0,14852.0,14997.0,15068.0,15594.0]}],"context":[{"taxon":"Canis dirus","label":"Dire wolf (Canis dirus)","n_s12":6,"lad":13674.0,"lo":13538.0,"hi":13760.0,"site":"Rancho La Brea, Pit 91, California"},{"taxon":"Panthera leo atrox","label":"American lion","n_s12":4,"lad":13230.0,"lo":13125.0,"hi":13330.0,"site":"Consolidated Pit 48, Edmonton, Alberta"},{"taxon":"Camelops","label":"Western camel (Camelops)","n_s12":9,"lad":12686.0,"lo":12481.0,"hi":12825.0,"site":"Vauxhall, Gertzen site, Alberta"},{"taxon":"Castoroides","label":"Giant beaver (Castoroides)","n_s12":2,"lad":11774.0,"lo":11443.0,"hi":11928.0,"site":"Clyde, New York"},{"taxon":"Arctodus","label":"Giant short-faced bear","n_s12":11,"lad":10953.0,"lo":10752.0,"hi":11174.0,"site":"Bonner Springs, Kansas"}]};
+  const root = document.getElementById("fig-taxa");
+  const svg = document.getElementById("tx-svg");
+  const meta = document.getElementById("tx-meta");
+  const readout = document.getElementById("tx-readout");
+  const NS = "http://www.w3.org/2000/svg";
+
+  let tier = "s12";
+  const W = 740, L = 196, R = 716;
+  const T_MAX = 15800, T_MIN = 7500;
+  const sx = t => L + (T_MAX - Math.max(T_MIN, Math.min(T_MAX, t))) / (T_MAX - T_MIN) * (R - L);
+
+  function el(tag, attrs, text){
+    const n = document.createElementNS(NS, tag);
+    for (const [k, v] of Object.entries(attrs || {})) n.setAttribute(k, String(v));
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+
+  function render(){
+    svg.innerHTML = "";
+    const rows = D.taxa.filter(tx => tier === "all" ? true : tx.s12 !== null);
+    rows.sort((a, b) => {
+      const ea = (tier === "all" ? a.all : a.s12).ole.median;
+      const eb = (tier === "all" ? b.all : b.s12).ole.median;
+      return eb - ea;
+    });
+
+    const topY = 32, rowH = 36;
+    const ctxTop = topY + rows.length * rowH + 34;
+    const ctxH = 26;
+    const totalH = ctxTop + D.context.length * ctxH + 38;
+    svg.setAttribute("viewBox", `0 0 ${W} ${totalH}`);
+
+    // YD shading
+    const xYD0 = sx(12896), xYD1 = sx(11700);
+    svg.appendChild(el("rect", {x: xYD0, y: topY - 8, width: xYD1 - xYD0, height: totalH - topY - 26, fill: "var(--slate)", opacity: 0.10}));
+
+    // Gridlines
+    for (let t = 15000; t >= 8000; t -= 1000){
+      const x = sx(t);
+      svg.appendChild(el("line", {x1: x, x2: x, y1: topY - 8, y2: totalH - 34, stroke: "var(--line)", "stroke-width": 1}));
+      svg.appendChild(el("text", {x, y: totalH - 18, "text-anchor": "middle", fill: "var(--faint)", "font-size": 11}, (t / 1000).toFixed(0) + "k"));
+    }
+
+    // Reference lines
+    svg.appendChild(el("line", {x1: xYD0, x2: xYD0, y1: topY - 12, y2: totalH - 32, stroke: "var(--copper)", "stroke-width": 1.6, "stroke-dasharray": "4 3"}));
+    svg.appendChild(el("text", {x: xYD0 - 5, y: topY - 16, "text-anchor": "end", fill: "var(--copper)", "font-size": 11, "font-weight": 600}, "YD cold starts (12,896 BP)"));
+    svg.appendChild(el("text", {x: (xYD0 + xYD1) / 2, y: topY - 16, "text-anchor": "middle", fill: "var(--faint)", "font-size": 10}, "Younger Dryas"));
+
+    // Legend top-left
+    svg.appendChild(el("text", {x: 6, y: topY - 16, fill: "var(--faint)", "font-size": 10.5, "font-family": "var(--mono)"}, "FORMAL OLE / GRIWM GENERA"));
+
+    rows.forEach((tx, i) => {
+      const est = tier === "all" ? tx.all : tx.s12;
+      const y = topY + i * rowH + 18;
+
+      const hit = el("rect", {x: 0, y: y - 16, width: W, height: rowH - 2, fill: "transparent", style: "cursor:pointer"});
+      hit.addEventListener("mouseenter", () => {
+        hit.setAttribute("fill", "color-mix(in oklab, var(--copper) 7%, transparent)");
+        readout.textContent = `${tx.label} (n=${est.n_dates}) · Youngest fossil ${est.lad.median.toLocaleString()} BP · OLE ${est.ole.median.toLocaleString()} BP (95% CI ${est.ole.ci95_lo.toLocaleString()}–${est.ole.ci95_hi.toLocaleString()}) · GRIWM ${est.griwm.median.toLocaleString()} BP`;
+      });
+      hit.addEventListener("mouseleave", () => hit.setAttribute("fill", "transparent"));
+      svg.appendChild(hit);
+
+      svg.appendChild(el("line", {x1: L, x2: R, y1: y, y2: y, stroke: "var(--line)", "stroke-width": 0.8, "pointer-events": "none"}));
+      svg.appendChild(el("text", {x: L - 10, y: y + 2, "text-anchor": "end", fill: "var(--ink)", "font-size": 11.5, "font-weight": 500, "pointer-events": "none"}, tx.label));
+      svg.appendChild(el("text", {x: L - 10, y: y + 14, "text-anchor": "end", fill: "var(--faint)", "font-size": 10, "pointer-events": "none"}, `n = ${est.n_dates} · OLE ${Math.round(est.ole.median).toLocaleString()} BP`));
+
+      // Faint specimen ticks
+      tx.medians.forEach(m => {
+        if (m <= T_MAX && m >= T_MIN){
+          const xm = sx(m);
+          svg.appendChild(el("line", {x1: xm, x2: xm, y1: y - 7, y2: y + 7, stroke: "var(--faint)", "stroke-width": 1, opacity: 0.35, "pointer-events": "none"}));
+        }
+      });
+
+      // OLE 95% CI whisker
+      const xLo = sx(est.ole.ci95_hi), xHi = sx(est.ole.ci95_lo);
+      svg.appendChild(el("line", {x1: xLo, x2: xHi, y1: y, y2: y, stroke: "var(--copper)", "stroke-width": 2.6, opacity: 0.55, "pointer-events": "none"}));
+
+      // Youngest fossil LAD (hollow circle)
+      const xLad = sx(est.lad.median);
+      svg.appendChild(el("circle", {cx: xLad, cy: y, r: 4.5, fill: "var(--paper)", stroke: "var(--ink)", "stroke-width": 1.6, "pointer-events": "none"}));
+
+      // GRIWM square
+      const xGr = sx(est.griwm.median);
+      svg.appendChild(el("rect", {x: xGr - 3.8, y: y - 3.8, width: 7.6, height: 7.6, fill: "var(--verdigris)", stroke: "var(--paper)", "stroke-width": 1.2, "pointer-events": "none"}));
+
+      // OLE diamond
+      const xOle = sx(est.ole.median);
+      svg.appendChild(el("polygon", {points: `${xOle},${y-5.5} ${xOle+5.5},${y} ${xOle},${y+5.5} ${xOle-5.5},${y}`, fill: "var(--copper)", stroke: "var(--paper)", "stroke-width": 1.2, "pointer-events": "none"}));
+    });
+
+    // Context section: youngest Score-12 AMS fossils for smaller-n iconic genera
+    svg.appendChild(el("text", {x: 6, y: ctxTop - 10, fill: "var(--faint)", "font-size": 10.5, "font-family": "var(--mono)"}, "LOWER-COUNT GENERA (YOUNGEST SCORE-12 AMS FOSSIL ± 95% CI)"));
+    D.context.forEach((c, j) => {
+      const y = ctxTop + j * ctxH + 12;
+      const hit = el("rect", {x: 0, y: y - 11, width: W, height: ctxH - 2, fill: "transparent", style: "cursor:pointer"});
+      hit.addEventListener("mouseenter", () => {
+        hit.setAttribute("fill", "color-mix(in oklab, var(--slate) 8%, transparent)");
+        readout.textContent = `${c.label} (n=${c.n_s12} AMS dates) · Youngest AMS fossil: ${c.lad.toLocaleString()} cal BP (95% CI ${c.lo.toLocaleString()}–${c.hi.toLocaleString()}) at ${c.site}`;
+      });
+      hit.addEventListener("mouseleave", () => hit.setAttribute("fill", "transparent"));
+      svg.appendChild(hit);
+
+      svg.appendChild(el("line", {x1: L, x2: R, y1: y, y2: y, stroke: "var(--line)", "stroke-width": 0.6, "stroke-dasharray": "2 3", "pointer-events": "none"}));
+      svg.appendChild(el("text", {x: L - 10, y: y + 4, "text-anchor": "end", fill: "var(--ink-soft)", "font-size": 11, "pointer-events": "none"}, `${c.label} (n=${c.n_s12})`));
+      svg.appendChild(el("line", {x1: sx(c.hi), x2: sx(c.lo), y1: y, y2: y, stroke: "var(--slate)", "stroke-width": 2, opacity: 0.65, "pointer-events": "none"}));
+      svg.appendChild(el("circle", {cx: sx(c.lad), cy: y, r: 4, fill: c.lad < 12750 ? "var(--verdigris)" : "var(--slate)", stroke: "var(--paper)", "stroke-width": 1.2, "pointer-events": "none"}));
+    });
+
+    svg.appendChild(el("text", {x: (L + R) / 2, y: totalH - 4, "text-anchor": "middle", fill: "var(--faint)", "font-size": 11}, "Calibrated years before present (IntCal20; older ← → younger)   ○ Youngest fossil (LAD)   ◆ OLE (95% CI)   ■ GRIWM"));
+
+    if (tier === "s12"){
+      meta.innerHTML = "<strong>Gold-standard Score-12 AMS dates:</strong> horses disappear around 13,061 BP (and dire wolves by 13,674 BP), whereas mammoths (11,852 BP), mastodons (11,867 BP), and mountain goats (10,333 BP) all have 95% extinction bounds strictly inside or after the Younger Dryas.";
+    } else {
+      meta.innerHTML = "<strong>All vetted Score 11–12 dates:</strong> includes older 1960s–70s conventional dates (some later questioned for collagen pretreatment), stretching the nominal OLE span to 4,138 years (12,495 to 8,357 BP). Switch back to Score-12 AMS for the strictest modern subset.";
+    }
+  }
+
+  root.querySelectorAll("[data-tier]").forEach(b => b.addEventListener("click", () => {
+    tier = b.dataset.tier;
+    root.querySelectorAll("[data-tier]").forEach(x => x.classList.toggle("is-on", x === b));
+    render();
+  }));
+  render();
+})();
+</script>
+</figure>

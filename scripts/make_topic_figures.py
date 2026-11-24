@@ -166,10 +166,10 @@ def bin_words(start, width):
 
 def younger_dryas():
     tiles("topic-younger-dryas", [
-        ("8", "studies, each with its test fixed before the data were looked at", False),
+        ("9", "studies, each with its test fixed before the data were looked at", False),
         ("0", "found the sharp, one-off mark that a strike from the sky should leave", False),
         ("4", "eruptions, two of them very large, in the 150 years before the cold: among the heaviest runs in 51,000 years", False),
-        ("Still open", "what laid down the platinum, and what happened to the great animals", True)])
+        ("Still open", "what laid down the platinum, and what drove the drawn-out megafauna loss", True)])
     scorecard("topic-younger-dryas", "scorecard", "What each study tested and found",
               ["The mark", "If a comet did it", "What the record shows"], [
         (43, "ice-core-fire", "Smoke in Greenland's ice", "A burst of fire chemicals at the moment the cold begins.",
@@ -193,6 +193,9 @@ def younger_dryas():
         (103, "taurid-swarm", "A swarm in the Taurid stream", "The stream the Earth crosses each autumn still carries a swarm of large fragments of the broken comet.",
          "No sign of one among today's asteroids or in 32 years of airbursts seen by satellite. Seventeen large asteroids do line up with the comet, as was known in 2010; smaller ones do not.",
          "Not found", "No swarm of large fragments today", "no"),
+        (116, "yd-megafauna-timing", "The great animals", "North America's Ice Age giants hold steady until 12,850 years ago and vanish abruptly at the strike.",
+         "Dung spores fell past half their peak a millennium early in 9 of 11 lake cores. Direct bone dates drop around 12,800–12,600 BP, yet 10 modern AMS collagen dates prove mammoths, mastodons, a giant beaver and a short-faced bear lived centuries after.",
+         "Not found", "Drawn-out and staggered across the cold", "no"),
         (40, "younger-dryas-crash", "A crash in human numbers", "Dated traces of people thin out at once, above all in North America.",
          "No drop on three continents. But radiocarbon dating is at its most distorted in exactly those centuries.",
          "Not found", "No sign, though the test was blurred", "no")])
