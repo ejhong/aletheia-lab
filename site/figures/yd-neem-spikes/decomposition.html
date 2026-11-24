@@ -1,0 +1,88 @@
+<figure class="fig" aria-label="Interactive 150-year window comparison of NEEM steady ammonium level and fire-spike counts from 14,700 to 10,500 years ago">
+<style>
+.ns-bar{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:.65rem}
+.ns-btn{font:500 13px/1.2 var(--sans);padding:.38rem .75rem;border-radius:4px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.ns-btn.is-on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.ns-tip{position:fixed;pointer-events:none;z-index:50;background:var(--band);color:var(--band-ink);border:1px solid var(--band-line);border-radius:5px;padding:.4rem .65rem;font:400 12.5px/1.4 var(--sans);display:none}
+</style>
+<div class="ns-bar" role="tablist" aria-label="NEEM metric selector">
+  <button type="button" class="ns-btn is-on" data-m="level">1 · Steady level (µg/kg)</button>
+  <button type="button" class="ns-btn" data-m="spike_years_x5">2 · Relative >5× spike years</button>
+  <button type="button" class="ns-btn" data-m="spike_years_add50">3 · Additive >50 µg/kg plumes</button>
+  <button type="button" class="ns-btn" data-m="spike_part">4 · Spike excess (mean − median)</button>
+</div>
+<div class="fig-scroll"><svg id="ns-svg" class="chart" viewBox="0 0 740 310" width="100%" role="img" aria-label="NEEM 150-year window bar chart"></svg></div>
+<div class="ns-tip" id="ns-tip"></div>
+<figcaption>All 28 non-overlapping 150-year stretches in NEEM from 14,696 to 10,496 years before 2000 CE (older left → younger right). The highlighted copper bar is <strong>Window 0 (12,896–12,746 b2k)</strong>, the 150 years immediately after Younger Dryas onset; the slate bar beside it is <strong>Window −1</strong>, the 150 years just before. Switch metrics above: the steady background level jumps to #1 of 28, yet relative &gt;5× spikes drop nearly fourfold (8 vs. 31), additive &gt;50 µg/kg plumes remain completely ordinary (18 vs. 14, rank 11/28), and the spike-excess component actually shrinks—in sharp contrast to the warm early Holocene (right), where real North American boreal wildfires drive both &gt;5× and &gt;50 µg/kg spikes sharply upward.</figcaption>
+<script>
+(function(){
+  const WINS = [{"k": -12, "from_b2k": 14696, "to_b2k": 14546, "years": 126, "samples_per_yr_med": 27.0, "level": 2.108, "spike_part": 0.907, "total_mean": 3.015, "spike_years_x3": 40, "spike_years_x5": 28, "spike_years_x10": 15, "spike_years_add30": 8, "spike_years_add50": 7, "spike_years_add100": 0, "spike_years_flux50": 7, "largest_ratio": 81.53, "largest_excess": 99.46}, {"k": -11, "from_b2k": 14546, "to_b2k": 14396, "years": 140, "samples_per_yr_med": 28.0, "level": 3.678, "spike_part": 0.365, "total_mean": 4.043, "spike_years_x3": 41, "spike_years_x5": 27, "spike_years_x10": 13, "spike_years_add30": 7, "spike_years_add50": 2, "spike_years_add100": 0, "spike_years_flux50": 2, "largest_ratio": 46.71, "largest_excess": 64.81}, {"k": -10, "from_b2k": 14396, "to_b2k": 14246, "years": 137, "samples_per_yr_med": 26.0, "level": 4.713, "spike_part": 0.537, "total_mean": 5.25, "spike_years_x3": 46, "spike_years_x5": 32, "spike_years_x10": 13, "spike_years_add30": 10, "spike_years_add50": 4, "spike_years_add100": 0, "spike_years_flux50": 4, "largest_ratio": 34.1, "largest_excess": 92.31}, {"k": -9, "from_b2k": 14246, "to_b2k": 14096, "years": 138, "samples_per_yr_med": 23.5, "level": 9.396, "spike_part": 0.796, "total_mean": 10.193, "spike_years_x3": 51, "spike_years_x5": 33, "spike_years_x10": 17, "spike_years_add30": 16, "spike_years_add50": 9, "spike_years_add100": 2, "spike_years_flux50": 8, "largest_ratio": 71.99, "largest_excess": 310.03}, {"k": -8, "from_b2k": 14096, "to_b2k": 13946, "years": 133, "samples_per_yr_med": 19.0, "level": 17.593, "spike_part": 0.47, "total_mean": 18.063, "spike_years_x3": 33, "spike_years_x5": 15, "spike_years_x10": 1, "spike_years_add30": 26, "spike_years_add50": 13, "spike_years_add100": 0, "spike_years_flux50": 6, "largest_ratio": 11.71, "largest_excess": 95.69}, {"k": -7, "from_b2k": 13946, "to_b2k": 13796, "years": 136, "samples_per_yr_med": 26.0, "level": 14.899, "spike_part": 0.753, "total_mean": 15.652, "spike_years_x3": 48, "spike_years_x5": 32, "spike_years_x10": 17, "spike_years_add30": 25, "spike_years_add50": 16, "spike_years_add100": 3, "spike_years_flux50": 16, "largest_ratio": 105.78, "largest_excess": 560.51}, {"k": -6, "from_b2k": 13796, "to_b2k": 13646, "years": 133, "samples_per_yr_med": 25.0, "level": 16.554, "spike_part": 0.779, "total_mean": 17.333, "spike_years_x3": 48, "spike_years_x5": 37, "spike_years_x10": 13, "spike_years_add30": 33, "spike_years_add50": 19, "spike_years_add100": 5, "spike_years_flux50": 21, "largest_ratio": 32.98, "largest_excess": 186.24}, {"k": -5, "from_b2k": 13646, "to_b2k": 13496, "years": 139, "samples_per_yr_med": 25.0, "level": 13.847, "spike_part": 0.698, "total_mean": 14.545, "spike_years_x3": 51, "spike_years_x5": 31, "spike_years_x10": 11, "spike_years_add30": 29, "spike_years_add50": 14, "spike_years_add100": 4, "spike_years_flux50": 17, "largest_ratio": 18.57, "largest_excess": 262.01}, {"k": -4, "from_b2k": 13496, "to_b2k": 13346, "years": 140, "samples_per_yr_med": 26.0, "level": 10.462, "spike_part": 0.982, "total_mean": 11.444, "spike_years_x3": 48, "spike_years_x5": 27, "spike_years_x10": 11, "spike_years_add30": 21, "spike_years_add50": 11, "spike_years_add100": 4, "spike_years_flux50": 12, "largest_ratio": 23.89, "largest_excess": 131.2}, {"k": -3, "from_b2k": 13346, "to_b2k": 13196, "years": 144, "samples_per_yr_med": 24.0, "level": 17.404, "spike_part": 0.906, "total_mean": 18.31, "spike_years_x3": 43, "spike_years_x5": 23, "spike_years_x10": 2, "spike_years_add30": 41, "spike_years_add50": 21, "spike_years_add100": 2, "spike_years_flux50": 18, "largest_ratio": 13.08, "largest_excess": 116.61}, {"k": -2, "from_b2k": 13196, "to_b2k": 13046, "years": 139, "samples_per_yr_med": 22.0, "level": 19.729, "spike_part": 0.361, "total_mean": 20.091, "spike_years_x3": 38, "spike_years_x5": 11, "spike_years_x10": 3, "spike_years_add30": 26, "spike_years_add50": 11, "spike_years_add100": 5, "spike_years_flux50": 9, "largest_ratio": 26.56, "largest_excess": 283.9}, {"k": -1, "from_b2k": 13046, "to_b2k": 12896, "years": 136, "samples_per_yr_med": 25.0, "level": 11.299, "spike_part": 0.871, "total_mean": 12.17, "spike_years_x3": 50, "spike_years_x5": 31, "spike_years_x10": 18, "spike_years_add30": 23, "spike_years_add50": 14, "spike_years_add100": 3, "spike_years_flux50": 13, "largest_ratio": 35.7, "largest_excess": 337.05}, {"k": 0, "from_b2k": 12896, "to_b2k": 12746, "years": 131, "samples_per_yr_med": 21.0, "level": 29.151, "spike_part": 0.592, "total_mean": 29.742, "spike_years_x3": 20, "spike_years_x5": 8, "spike_years_x10": 0, "spike_years_add30": 37, "spike_years_add50": 18, "spike_years_add100": 5, "spike_years_flux50": 16, "largest_ratio": 7.21, "largest_excess": 162.44}, {"k": 1, "from_b2k": 12746, "to_b2k": 12596, "years": 138, "samples_per_yr_med": 20.0, "level": 19.901, "spike_part": 0.285, "total_mean": 20.187, "spike_years_x3": 25, "spike_years_x5": 7, "spike_years_x10": 3, "spike_years_add30": 25, "spike_years_add50": 7, "spike_years_add100": 3, "spike_years_flux50": 7, "largest_ratio": 11.44, "largest_excess": 118.93}, {"k": 2, "from_b2k": 12596, "to_b2k": 12446, "years": 120, "samples_per_yr_med": 20.0, "level": 18.074, "spike_part": 0.57, "total_mean": 18.644, "spike_years_x3": 24, "spike_years_x5": 8, "spike_years_x10": 1, "spike_years_add30": 20, "spike_years_add50": 10, "spike_years_add100": 1, "spike_years_flux50": 7, "largest_ratio": 12.39, "largest_excess": 111.98}, {"k": 3, "from_b2k": 12446, "to_b2k": 12296, "years": 135, "samples_per_yr_med": 20.0, "level": 18.6, "spike_part": 0.379, "total_mean": 18.979, "spike_years_x3": 33, "spike_years_x5": 12, "spike_years_x10": 0, "spike_years_add30": 29, "spike_years_add50": 12, "spike_years_add100": 1, "spike_years_flux50": 9, "largest_ratio": 9.58, "largest_excess": 105.01}, {"k": 4, "from_b2k": 12296, "to_b2k": 12146, "years": 138, "samples_per_yr_med": 20.0, "level": 21.977, "spike_part": 0.535, "total_mean": 22.512, "spike_years_x3": 27, "spike_years_x5": 14, "spike_years_x10": 7, "spike_years_add30": 25, "spike_years_add50": 15, "spike_years_add100": 9, "spike_years_flux50": 11, "largest_ratio": 17.11, "largest_excess": 203.03}, {"k": 5, "from_b2k": 12146, "to_b2k": 11996, "years": 139, "samples_per_yr_med": 21.0, "level": 18.905, "spike_part": 0.461, "total_mean": 19.366, "spike_years_x3": 23, "spike_years_x5": 7, "spike_years_x10": 0, "spike_years_add30": 22, "spike_years_add50": 10, "spike_years_add100": 1, "spike_years_flux50": 8, "largest_ratio": 9.24, "largest_excess": 128.11}, {"k": 6, "from_b2k": 11996, "to_b2k": 11846, "years": 133, "samples_per_yr_med": 21.0, "level": 20.542, "spike_part": 0.673, "total_mean": 21.215, "spike_years_x3": 30, "spike_years_x5": 11, "spike_years_x10": 3, "spike_years_add30": 28, "spike_years_add50": 14, "spike_years_add100": 3, "spike_years_flux50": 8, "largest_ratio": 21.58, "largest_excess": 264.42}, {"k": 7, "from_b2k": 11846, "to_b2k": 11696, "years": 138, "samples_per_yr_med": 22.0, "level": 20.095, "spike_part": 0.821, "total_mean": 20.915, "spike_years_x3": 27, "spike_years_x5": 12, "spike_years_x10": 1, "spike_years_add30": 26, "spike_years_add50": 16, "spike_years_add100": 4, "spike_years_flux50": 12, "largest_ratio": 12.06, "largest_excess": 155.75}, {"k": 8, "from_b2k": 11696, "to_b2k": 11546, "years": 139, "samples_per_yr_med": 36.0, "level": 14.7, "spike_part": 2.681, "total_mean": 17.381, "spike_years_x3": 60, "spike_years_x5": 32, "spike_years_x10": 12, "spike_years_add30": 37, "spike_years_add50": 24, "spike_years_add100": 5, "spike_years_flux50": 34, "largest_ratio": 27.81, "largest_excess": 273.27}, {"k": 9, "from_b2k": 11546, "to_b2k": 11396, "years": 139, "samples_per_yr_med": 34.0, "level": 14.484, "spike_part": 3.061, "total_mean": 17.545, "spike_years_x3": 52, "spike_years_x5": 34, "spike_years_x10": 8, "spike_years_add30": 42, "spike_years_add50": 22, "spike_years_add100": 8, "spike_years_flux50": 38, "largest_ratio": 18.59, "largest_excess": 208.49}, {"k": 10, "from_b2k": 11396, "to_b2k": 11246, "years": 145, "samples_per_yr_med": 38.0, "level": 11.251, "spike_part": 2.555, "total_mean": 13.807, "spike_years_x3": 69, "spike_years_x5": 40, "spike_years_x10": 11, "spike_years_add30": 40, "spike_years_add50": 19, "spike_years_add100": 5, "spike_years_flux50": 34, "largest_ratio": 23.06, "largest_excess": 129.51}, {"k": 11, "from_b2k": 11246, "to_b2k": 11096, "years": 137, "samples_per_yr_med": 38.0, "level": 14.403, "spike_part": 3.595, "total_mean": 17.998, "spike_years_x3": 66, "spike_years_x5": 40, "spike_years_x10": 17, "spike_years_add30": 42, "spike_years_add50": 28, "spike_years_add100": 11, "spike_years_flux50": 38, "largest_ratio": 42.85, "largest_excess": 434.93}, {"k": 12, "from_b2k": 11096, "to_b2k": 10946, "years": 142, "samples_per_yr_med": 37.0, "level": 12.387, "spike_part": 4.149, "total_mean": 16.535, "spike_years_x3": 73, "spike_years_x5": 48, "spike_years_x10": 21, "spike_years_add30": 52, "spike_years_add50": 31, "spike_years_add100": 15, "spike_years_flux50": 50, "largest_ratio": 27.91, "largest_excess": 166.88}, {"k": 13, "from_b2k": 10946, "to_b2k": 10796, "years": 141, "samples_per_yr_med": 41.0, "level": 14.903, "spike_part": 4.442, "total_mean": 19.344, "spike_years_x3": 77, "spike_years_x5": 56, "spike_years_x10": 23, "spike_years_add30": 59, "spike_years_add50": 36, "spike_years_add100": 18, "spike_years_flux50": 58, "largest_ratio": 33.68, "largest_excess": 215.52}, {"k": 14, "from_b2k": 10796, "to_b2k": 10646, "years": 141, "samples_per_yr_med": 43.0, "level": 11.092, "spike_part": 4.281, "total_mean": 15.373, "spike_years_x3": 78, "spike_years_x5": 57, "spike_years_x10": 19, "spike_years_add30": 57, "spike_years_add50": 30, "spike_years_add100": 8, "spike_years_flux50": 58, "largest_ratio": 30.54, "largest_excess": 297.94}, {"k": 15, "from_b2k": 10646, "to_b2k": 10496, "years": 142, "samples_per_yr_med": 44.5, "level": 12.592, "spike_part": 3.505, "total_mean": 16.097, "spike_years_x3": 78, "spike_years_x5": 49, "spike_years_x10": 24, "spike_years_add30": 47, "spike_years_add50": 32, "spike_years_add100": 14, "spike_years_flux50": 52, "largest_ratio": 45.17, "largest_excess": 228.29}];
+  const svg = document.getElementById("ns-svg");
+  const tip = document.getElementById("ns-tip");
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (t,a,tx) => { const n=document.createElementNS(NS,t); for(const[k,v] of Object.entries(a||{})) n.setAttribute(k,v); if(tx!==undefined) n.textContent=tx; return n; };
+  const showTip = (e,s) => { tip.innerHTML=s; tip.style.display="block"; tip.style.left=Math.min(window.innerWidth-280,e.clientX+14)+"px"; tip.style.top=Math.max(10,e.clientY-20)+"px"; };
+  const hideTip = () => { tip.style.display="none"; };
+
+  const META = {
+    level: {label:"Mean of yearly median NH₄⁺ (µg/kg) — steady background level", unit:"µg/kg"},
+    spike_years_x5: {label:"Years per 150-yr stretch with annual peak > 5× running median", unit:"years"},
+    spike_years_add50: {label:"Years per 150-yr stretch with peak > 50 µg/kg above baseline (anti-denominator control)", unit:"years"},
+    spike_part: {label:"Mean of (yearly mean − yearly median) NH₄⁺ (µg/kg) — short-plume excess", unit:"µg/kg"},
+  };
+
+  function render(metric) {
+    svg.innerHTML = "";
+    const L=60, R=720, T=30, B=245;
+    const vals = WINS.map(w => w[metric]);
+    const yMax = Math.max(...vals) * 1.15;
+    const med = [...vals].sort((a,b)=>a-b)[Math.floor(vals.length/2)];
+    const sy = v => B - (v / yMax) * (B - T);
+    const bw = (R - L) / WINS.length;
+
+    // Horizontal grid & median line
+    for (let i=0; i<=4; i++) {
+      const v = (i/4)*yMax;
+      const y = sy(v);
+      svg.appendChild(el("line", {x1:L, x2:R, y1:y, y2:y, stroke:"var(--line)", "stroke-width":0.7}));
+      svg.appendChild(el("text", {x:L-7, y:y+4, "text-anchor":"end", fill:"var(--faint)", "font-size":"11"}, yMax>=10?v.toFixed(0):v.toFixed(1)));
+    }
+    svg.appendChild(el("line", {x1:L, x2:R, y1:sy(med), y2:sy(med), stroke:"var(--ink-soft)", "stroke-dasharray":"4 3", "stroke-width":1.1}));
+    svg.appendChild(el("text", {x:R-4, y:sy(med)-5, "text-anchor":"end", fill:"var(--ink-soft)", "font-size":"10.5"}, `28-window median = ${med>=10?med.toFixed(1):med.toFixed(2)}`));
+
+    // Regime labels
+    const xYD = L + WINS.findIndex(w => w.k === 0) * bw;
+    const xHol = L + WINS.findIndex(w => w.k === 8) * bw;
+    svg.appendChild(el("line", {x1:xYD, x2:xYD, y1:T-8, y2:B, stroke:"#955730", "stroke-dasharray":"3 3", "stroke-width":1.1}));
+    svg.appendChild(el("text", {x:xYD+3, y:T-11, fill:"#955730", "font-size":"10.5", "font-weight":"600"}, "YD onset (12,896)"));
+    svg.appendChild(el("line", {x1:xHol, x2:xHol, y1:T-8, y2:B, stroke:"#47705f", "stroke-dasharray":"3 3", "stroke-width":1.0}));
+    svg.appendChild(el("text", {x:xHol+3, y:T-11, fill:"#47705f", "font-size":"10.5"}, "Holocene (11,703)"));
+
+    WINS.forEach((w, i) => {
+      const x = L + i * bw + 1.5;
+      const v = w[metric];
+      const y = sy(v);
+      const col = w.k === 0 ? "#c04b2d" : w.k === -1 ? "#5d6672" : (w.k >= 8 ? "#47705f" : "#b8ab96");
+      const r = el("rect", {x:x, y:y, width:Math.max(4, bw-3), height:B-y, rx:2, fill:col, opacity:w.k===0||w.k===-1?0.95:0.78});
+      r.style.cursor = "pointer";
+      r.addEventListener("mousemove", e => showTip(e, `<strong>Window k = ${w.k} (${w.from_b2k.toLocaleString()}–${w.to_b2k.toLocaleString()} b2k)</strong><br>Steady level: ${w.level} µg/kg · Spike excess: ${w.spike_part} µg/kg<br>&gt;5× spikes: ${w.spike_years_x5} yr · &gt;10× spikes: ${w.spike_years_x10} yr<br>Additive &gt;50 µg/kg: ${w.spike_years_add50} yr · Flux &gt;50: ${w.spike_years_flux50} yr`));
+      r.addEventListener("mouseleave", hideTip);
+      svg.appendChild(r);
+      if (i % 4 === 0 || w.k === 0) {
+        svg.appendChild(el("text", {x:x + bw/2, y:B+16, "text-anchor":"middle", fill:"var(--faint)", "font-size":"10.5"}, (w.from_b2k/1000).toFixed(1)+"k"));
+      }
+    });
+    svg.appendChild(el("text", {x:(L+R)/2, y:B+42, "text-anchor":"middle", fill:"var(--ink-soft)", "font-size":"12"}, META[metric].label));
+  }
+
+  document.querySelectorAll(".ns-btn").forEach(b => {
+    b.addEventListener("click", () => {
+      document.querySelectorAll(".ns-btn").forEach(x => x.classList.remove("is-on"));
+      b.classList.add("is-on");
+      render(b.dataset.m);
+    });
+  });
+  render("level");
+})();
+</script>
+</figure>
