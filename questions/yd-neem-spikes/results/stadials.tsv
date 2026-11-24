@@ -1,0 +1,4 @@
+event	age_b2k	years_before	years_after	samples_per_yr_after	level_before	level_after	level_ratio	x5_before	x5_after	x5_delta	add50_before	add50_after	add50_delta
+GS-1	12896	139	132	21.0	11.58	28.98	2.5	32	8	-24	14	18	4
+GS-2.1c	22900	133	111	12.0	3.41	5.05	1.48	0	0	0	0	0	0
+GS-4	28600	133	104	11.0	1.9	6.55	3.46	0	0	0	0	0	0

@@ -1,0 +1,6 @@
+# Lab log — `yd-neem-spikes`
+
+- **2026-11-24 (UTC):** Activated Issue `#114` (`lane:data`, `status:active`), created branch `q/yd-neem-spikes` from `main`.
+- **2026-11-24 (UTC):** Downloaded NEEM 1-mm CFA (`PANGAEA.935837`), NEEM 10-yr CFA (`PANGAEA.935831`), and NEEM 5-cm GICC05 timescale (`PANGAEA.925552`). Ran blinded `16–17 ka` alignment & column-identity control check (`1-mm NH4+ = 3.46` vs `10-yr = 3.52 µg/kg`; `NO3- = 93.25` vs `94.44 µg/kg`). Wrote `MANIFEST.md`, `protocol.md`, `analysis/neem_spikes.py`, and `analysis/test_neem_spikes.py` (3/3 synthetic pre-lock tests passed).
+- **2026-11-24T05:26:51Z:** Committed pre-lock files (`fa58fc1`), locked `protocol.md` (`787ad4de9a5d`), committed `protocol.lock` in its own commit (`3560517`), verified `scripts/check.py`, and pushed `q/yd-neem-spikes` before running on real NEEM data.
+- **2026-11-24 (UTC):** Ran locked `analysis/neem_spikes.py` with zero amendments. Verdict: **`replicated_steady_not_spiky`** (`level` `2.58×` rank `1/28`, `102%` of rise; `>5×` spikes `8` vs `31`, `p = 0.00032`; `>10×` spikes `0` vs `18`; additive `>50 µg/kg` plumes `18` vs `14`, rank `11/28`, `p = 0.48`; flux-scaled `16` vs `13`, `p = 0.58`). Built 4 interactive HTML figures (`make_figures.py`), wrote `RESULTS.md` and `site/content/yd-neem-spikes.md`.
