@@ -1,0 +1,7 @@
+study list (17)                                         global  37.9%  coastal  35.9%  inland  39.4%
+flood-centred 9 (no c2)                                 global  12.5%  coastal   9.8%  inland  14.5%
+flood-centred 9 + c2 (deluge or conflagration)          global  23.0%  coastal  18.7%  inland  26.2%
+the 7 ambiguous/non-flood (c12b,c13,c14,b7b,b52a,i81a,k38d) global  23.0%  coastal  23.5%  inland  22.6%
+societies counted as having a flood motif ONLY via the 7 ambiguous motifs: 138 of 351 with any (39%)
+c5a groups by continent {'North America': 52, 'Asia': 40, 'South America': 23, 'Europe': 4, 'Oceania': 2, 'Africa': 2}  c5a total 123
+flood_related>0 share 0.467

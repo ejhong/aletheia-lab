@@ -1,0 +1,158 @@
+missing from master: []
+missing from incidence: []
+
+== c2 (n_groups=137) | Deluge and conflagration combined | RU: Потоп и пожар
+   World is destroyed once with fire or draught, another time with a flood or it is destroyed with a flood of fire or boiling water
+
+== c4 (n_groups=40) | The flood: fruits fall from a tree | RU: Потоп: падающие плоды
+   During the flood or in the beginning of times fruits, seeds or other objects are dropped into water one by one, usually by a person who has climbed a tree. As far as the objects fall, water recedes and the dry land appears
+
+== c7 (n_groups=30) | The flood: breaking the dam | RU: Потоп: разрушенная преграда
+   In the beginning of times or after the flood a dam of earth, person or creature does not let water to recede. The dam is broken or opened, waters withdraw
+
+== c9a (n_groups=4) | The flood: people turn into toads | RU: Потоп: люди превращаются в жаб
+   During a flood or when crossing a river those people who drown (or those who survive) turn into toads
+
+== c10 (n_groups=24) | The flood: the wet tails | RU: Потоп: мокрые хвосты
+   During the flood birds or animals escape to some place (mountain, tree, boat, sky). Tips of their tails or other body parts get covered with water or foam and acquire their present color and form
+
+== c10a (n_groups=10) | The flood: birds cling to the sky | RU: Птицы цепляются за небо
+   During the flood some birds survive clinging to the sky with their beaks
+
+== c12a (n_groups=6) | The dog and the world cataclysm | RU: Потоп и собака
+   A dog warns people about approaching flood or world conflagration, instructs them what should be done
+
+== c12b (n_groups=26) | People descend from a dog | RU: Люди – потомки собаки
+   In the beginning of time or after the flood man marries a bitch. Present people descend from them.
+
+== c13 (n_groups=35) | The objects’ revolt | RU: Бунт вещей
+   During or before the world cataclysm (deluge, darkness) or (Suruí) in particular place at night, household objects and/or stones, trees, domestic animals turn into wild beasts and monsters
+
+== c14 (n_groups=59) | Monsters destroy people | RU: Чудовища уничтожают людей
+   During or before the world catastrophe (deluge, darkness) wild beasts and monsters attack and destroy people
+
+== b7b (n_groups=36) | Waters from broken pot | RU: Вода из сосуда
+   Sea, river, waters of flood flow out of a small container
+
+== b7d (n_groups=5) | Water flows from broken bone | RU: Вода льется из косточки
+   Water flows from a broken bone (of a bird) producing a flood
+
+== b52a (n_groups=14) | Vulture creates the landscape | RU: Стервятник создает сушу
+   Flying above the earth and flapping its wings, a bird (usually a vulture) makes it dry after the flood or otherwise creates present landscape
+
+== g9a (n_groups=12) | Restored forest and flood | RU: Срубленные лес и потоп
+   A man fells trees to clear ground for a garden. Certain person or animal revives vegetation and after being surprised by the man, warns him about the coming flood, tells to prepare a boat
+
+== i81a (n_groups=15) | The chthonic crab | RU: Хтонический краб
+   A giant crab produces earthquakes or floods, stops or can stop flow of the waters into the chasm or on the contrary prevents waters from being dammed.
+
+== k38d (n_groups=77) | Monster blocks waters | RU: Змей закрывает воду
+   A monster blocks sources of water (or sends floods) and usually gives some (promises not to send floods) in exchange for human victims or valuables. Hero kills the monster
+
+== l28a (n_groups=14) | Eating of snake meat triggers flood | RU: Съевший змею вызывает потоп
+   A river or lake appear or a flood begins because certain person ate meat of a snake or a strange fish
+
+== c3 (n_groups=28) | Snakes stops up a hole in the Noah’s arch | RU: Змея заткнула дыру в ковчеге
+   When a hole is opened in the arch, a snake (eel, frog) stops it up with its own body
+
+== c5a (n_groups=124) | Bird-scouts | RU: Птицы-разведчики
+   Birds or humans later changed to birds are sent to explore the earth (is it dry, are any survivals, to investigate why smoke rises to the sky, etc.) or to bring some soil to make the land that would be good for living
+
+
+==== ALL c* MOTIFS ====
+c1     n=  31   Reversal of cosmic levels | Небо и земля меняются местами
+c10    n=  24 * The flood: the wet tails | Потоп: мокрые хвосты
+c10a   n=  10 * The flood: birds cling to the sky | Птицы цепляются за небо
+c11    n=  11   Father avenges his son | Месть оскорбленного отца
+c12a   n=   6 * The dog and the world cataclysm | Потоп и собака
+c12b   n=  26 * People descend from a dog | Люди – потомки собаки
+c13    n=  35 * The objects’ revolt | Бунт вещей
+c14    n=  59 * Monsters destroy people | Чудовища уничтожают людей
+c15    n=   6   The imprisoned feline | Замурованный ягуар
+c16    n=  45   Processed objects turn into animals | Продукты труда становятся животными
+c16a   n=  12   The offended mistress of animals | Обиженная хозяйка животных
+c17    n=  11   Fire pit for the people | Огненная яма для людей
+c18    n=  54   Dance for the hidden Sun | Танец для солнца
+c19    n= 192   Acquisition of the sun | Обретение солнца
+c19a   n=  30   Child plays with the sun | Ребенок играет солнцем
+c2     n= 137 * Deluge and conflagration combined | Потоп и пожар
+c22    n=   3   Toad in search of thunder | Жаба в поисках грома
+c23    n=  19   Tree eclipses sky-light | Дерево заслоняет солнце
+c24    n=  11   The world in danger of falling down | Мир под угрозой падения
+c25a   n=   5   Cooking soup in the Moon | Варит суп на луне
+c25b   n=  46   A spinner in the Moon | Лунная пряха
+c25c   n=   9   The Big Dipper and the end of the world | Большая Медведица и конец мира
+c26    n=  17   Guardian at the border of the non0human world | Страж на краю мира чудовищ
+c27    n=  14   A horn in the ice | Чудовище подо льдом
+c28    n=   9   Unconsidered promise | Опрометчивое обещание
+c29    n=  20   A listened in secret | Подслушанный секрет
+c2a    n=   7   Conflagration of the woodpecker | Пожар дятла
+c2b    n=   6   The burned Moon | Сгоревший Месяц
+c3     n=  28   Snakes stops up a hole in the Noah’s arch | Змея заткнула дыру в ковчеге
+c30a   n=  40   A pound of flesh | Фунт плоти
+c30b   n=   3   To clean traces off the field | Удалить следы с поля
+c30c   n=   5   To swallow the ocean | Выпить море
+c31    n=  19   The wise hedgehog (cosmology) | Мудрый еж (космология)
+c31a   n=   4   Sun and Moon promised to Devil | Солнце и луна обещаны черту
+c32    n=  35   Beware of cut off nails | Ногти надо хранить
+c33    n=  12   Prometeus (the chained strong man) | Прометей (прикованный силач)
+c33a   n=  16   The restored chain | Восстановленная цепь
+c33b   n=   3   The primordial stillness | Древнее безветрие
+c34a   n=   6   Buried in sand | Зарытый в песок
+c35    n=  10   Cosmic marriage cancelled | Космический брак не состоится
+c35a   n=   6   Wise adviser punished | Добрый советчик наказан
+c36    n=   7   The final battle | Последняя битва
+c37    n=   6   World catastrophe and the sloth | Катастрофа ленивца
+c38    n=  12   People will come soon | Скоро появятся люди
+c39    n=   6   The repaired sky | Починка неба
+c39a   n=   4   Heaven repaired with ice | Небо заделали льдом
+c4     n=  40 * The flood: fruits fall from a tree | Потоп: падающие плоды
+c40    n=   2   Rocks fall from the sky | С неба падают камни
+c41    n=   3   Why the sky is blue | Почему небо синее
+c5a    n= 124   Bird-scouts | Птицы-разведчики
+c5b    n=  34   Animal-scouts | Животные-разведчики
+c6     n= 169   The diver | Ныряльщик
+c6a    n=  31   The diver is turtle or frog | Ныряльщик – черепаха или лягушка
+c6b    n=  42   The diver is muskrat or beaver | Ныряльщик – ондатра или бобр
+c6c    n=  73   The diver is a bird | Ныряльщик – птица
+c6c1   n=  10   Birds: successful and unsuccessful divers | Птицы: успешный и неуспешный ныряльщики
+c6d    n= 155   Earth from the lower world (>the earth-diver) | Доставание земли из нижнего мира
+c6e    n=   9   The diver is a crustacean | Ныряльщик – рак, креветка
+c6f    n=   9   Diving for drowned person | Достать утонувшего
+c6g    n=   4   The diver is a wild boar | Ныряльщик – вепрь
+c6h    n=   6   An insect brings the earth | Насекомое добывает землю
+c6i    n=   7   Dirt stuck to body turns into the earth | Прилипшая грязь превращается в землю
+c7     n=  30 * The flood: breaking the dam | Потоп: разрушенная преграда
+c8     n=  81   The primeval couple of siblings | Брат и сестра порождают людей
+c8a    n=  14   Grinding stones match | Жернова падают друг на друга
+c8a1   n=   6   Thread should enter the needle’s eye | Пусть нитка войдет в ушко
+c8b    n=  10   Siblings change their looks and marry | Брат и сестра не узнали друг друга
+c8c    n=   4   Mother and son produce people | Сын и мать порождают людей
+c9a    n=   4 * The flood: people turn into toads | Потоп: люди превращаются в жаб
+
+
+==== KEYWORD HITS (title or RU title or eng desc) NOT IN CHOSEN SET ====
+b3c     n=  12 T An attempt to drown God | Попытка утопить Бога
+c27     n=  14 d A horn in the ice | Чудовище подо льдом
+c34a    n=   6 d Buried in sand | Зарытый в песок
+c6f     n=   9 T Diving for drowned person | Достать утонувшего
+e6a     n=   6 d Way across waters | Путь через воду
+f27     n=  49 d Girls and the water spirits | Девушки и водные духи
+f5      n=  17 d Brides for first men | Невесты для первых людей
+h2      n=  23 d The selfish animal | Эгоистичное животное
+h26     n=  30 T Mosquitoes had to be drowned | Комаров надо было топить
+i87aa   n=  23 d The big bull | Большой бык
+j46     n= 166 T Enemy drowns | Враг тонет
+k33     n= 149 T Drowned woman remains alive | Живая утопленница
+k52c    n=  14 T The flood in a dwelling | Наводнение в жилище
+k67a    n=  56 T A drowned wife | Утопленная жена
+k91     n=  25 d An invisible battle | Невидимая битва
+m109d   n=   2 d Caught by tail by the sea creature | Схвачен за хвост обитателем моря
+m114k   n=   9 d Water which is not from the earth and not from the sky | Змея заткнула дыру в ковчеге
+m145    n=  53 d The lion in a well | Лев в колодце
+m147b   n=  15 d The fox rids himself of fleas | Лиса избавляется от блох
+m152c   n=   7 d The donkey and the lion crossing a river | Лев и осел на переправе
+m4      n=  14 d A wrong step | Неосторожный шаг
+m91c1   n= 135 d Herd from the river bottom | Стадо со дна
+m91c2   n= 152 d Put into bag | Посаженный в мешок
+m91d    n=  13 T The drowned shaman | Утопленная шаманка

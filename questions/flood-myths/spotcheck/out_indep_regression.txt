@@ -1,0 +1,46 @@
+N= 927  coastal= 396
+prevalence any NB: global 0.3786 coastal 0.3586 inland 0.3936
+corr(nb share, flood_related) all=0.914 ; share of groups with flood_related>0 = 0.467; any NB =0.379
+c5a groups by continent: {'North America': 52, 'Asia': 40, 'South America': 23, 'Europe': 4, 'Oceania': 2, 'Africa': 2}
+c3 groups by continent: {'Asia': 16, 'Europe': 12}
+
+--- Independent refit of the study's models (statsmodels) ---
+Coastal M4 nb_share_z ~ log d120 (per SD of x)                 n=396 G=58 sing=21 b=-0.0100 se_cl=0.0621 p_cl=0.872 CI_cl=[-0.134,+0.114] se_c1k=0.0513 p_c1k=0.845 sd_x=1.037
+Coastal M4, x NOT standardised (per log unit)                  n=396 G=58 sing=21 b=-0.0097 se_cl=0.0599 p_cl=0.872 CI_cl=[-0.130,+0.110] se_c1k=0.0495 p_c1k=0.845 sd_x=1.037
+Coastal M3                                                     n=396 G=58 sing=21 b=+0.0590 se_cl=0.0520 p_cl=0.262 CI_cl=[-0.045,+0.163] se_c1k=0.0507 p_c1k=0.244 sd_x=1.037
+Coastal M4 any_nb (LPM)                                        n=396 G=58 sing=21 b=-0.0138 se_cl=0.0293 p_cl=0.640 CI_cl=[-0.073,+0.045] se_c1k=0.0213 p_c1k=0.517 sd_x=1.037
+Coastal M4 flood_related_z                                     n=396 G=58 sing=21 b=-0.0321 se_cl=0.0600 p_cl=0.594 CI_cl=[-0.152,+0.088] se_c1k=0.0479 p_c1k=0.502 sd_x=1.037
+Noah-free (no c3,c5a) coastal M4                               n=340 G=56 sing=24 b=-0.0149 se_cl=0.0648 p_cl=0.820 CI_cl=[-0.145,+0.115] se_c1k=0.0564 p_c1k=0.792 sd_x=1.028
+
+--- Calibration controls as coded (global, lang FE, sampling controls + abs_lat only) ---
+PC1 earthquake ~ -ln quake dist (as coded)                     n=927 G=94 sing=31 b=+0.1570 se_cl=0.0502 p_cl=0.002 CI_cl=[+0.057,+0.257] se_c1k=0.0453 p_c1k=0.001 sd_x=0.371
+PC2 sea ~ -log dist coast (as coded)                           n=927 G=94 sing=31 b=+0.0875 se_cl=0.0483 p_cl=0.073 CI_cl=[-0.008,+0.183] se_c1k=0.0449 p_c1k=0.052 sd_x=1.530
+
+--- EXPLORATORY (spot-check only): calibration in the primary sample/spec ---
+PC1 in coastal sample, M4 controls                             n=396 G=58 sing=21 b=+0.0975 se_cl=0.0657 p_cl=0.143 CI_cl=[-0.034,+0.229] se_c1k=0.0713 p_c1k=0.172 sd_x=0.359
+PC1 global, M4 controls                                        n=927 G=94 sing=31 b=+0.1587 se_cl=0.0471 p_cl=0.001 CI_cl=[+0.065,+0.252] se_c1k=0.0454 p_c1k=0.000 sd_x=0.371
+PC2 global, M4 controls                                        n=927 G=94 sing=31 b=+0.1075 se_cl=0.0456 p_cl=0.021 CI_cl=[+0.017,+0.198] se_c1k=0.0427 p_c1k=0.012 sd_x=1.530
+
+--- EXPLORATORY sensitivity (not in locked protocol) ---
+Coastal M4, |lat|<50 only                                      n=324 G=53 sing=21 b=-0.0063 se_cl=0.0769 p_cl=0.935 CI_cl=[-0.161,+0.148] se_c1k=0.0657 p_c1k=0.924 sd_x=1.013
+Coastal M4 flood_related, |lat|<50                             n=324 G=53 sing=21 b=-0.0328 se_cl=0.0702 p_cl=0.642 CI_cl=[-0.174,+0.108] se_c1k=0.0606 p_c1k=0.589 sd_x=1.013
+Coastal M4, |lat|<30 only                                      n=194 G=40 sing=18 b=-0.0423 se_cl=0.1546 p_cl=0.786 CI_cl=[-0.355,+0.270] se_c1k=0.1183 p_c1k=0.720 sd_x=0.979
+Connected-sea coastal M4 (drops Caspian/Great Lakes etc.)      n=361 G=57 sing=21 b=-0.0315 se_cl=0.0733 p_cl=0.669 CI_cl=[-0.178,+0.115] se_c1k=0.0595 p_c1k=0.597 sd_x=0.978
+Connected-sea coastal M4 flood_related                         n=361 G=57 sing=21 b=-0.0561 se_cl=0.0694 p_cl=0.422 CI_cl=[-0.195,+0.083] se_c1k=0.0539 p_c1k=0.298 sd_x=0.978
+Coastal M4, explicit-flood motifs only (10)                    n=396 G=58 sing=21 b=+0.0014 se_cl=0.0473 p_cl=0.976 CI_cl=[-0.093,+0.096] se_c1k=0.0377 p_c1k=0.970 sd_x=1.037
+Noah-free defined by c3 only                                   n=386 G=58 sing=22 b=-0.0062 se_cl=0.0631 p_cl=0.922 CI_cl=[-0.132,+0.120] se_c1k=0.0532 p_c1k=0.907 sd_x=1.025
+
+coastal families: 58  singletons: 21  societies in families>=2: 375
+SD of log d120 total 1.037, within-family 0.870
+quartile edges [   484.    10397.25  20047.5   39598.   187061.  ]
+Q1 n=99 anyNB=36.4%
+Q2 n=99 anyNB=37.4%
+Q3 n=99 anyNB=35.4%
+Q4 n=99 anyNB=34.3%
+power vs beta=0.1 SD/SD at alpha=0.05 (cluster SE 0.0621): 0.36
+power vs beta=0.1 SD/SD at alpha=0.01 (cluster SE 0.0621): 0.17
+power vs beta=0.15 SD/SD at alpha=0.05 (cluster SE 0.0621): 0.68
+power vs beta=0.15 SD/SD at alpha=0.01 (cluster SE 0.0621): 0.44
+power vs beta=0.2 SD/SD at alpha=0.05 (cluster SE 0.0621): 0.90
+power vs beta=0.2 SD/SD at alpha=0.01 (cluster SE 0.0621): 0.74
+MDE 80% power alpha .05: 0.174 ; alpha .01: 0.212

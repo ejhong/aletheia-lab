@@ -1,0 +1,15 @@
+moran_i                             max rel diff 2.19e-01
+p_conley_500                        max rel diff 5.92e-08
+flood_rel_p_conley500               max rel diff 4.12e-08
+p_conley_1000                       max rel diff 2.71e-08
+nb_flood_p_conley500                max rel diff 2.22e-08
+t_cluster                           max rel diff 4.97e-09
+se_conley_500                       max rel diff 4.92e-09
+t_conley_1000                       max rel diff 4.92e-09
+beta                                max rel diff 4.88e-09
+flood_rel_beta_M2                   max rel diff 4.66e-09
+se_conley_1000                      max rel diff 2.83e-09
+nb_flood_beta_M2                    max rel diff 1.84e-09
+p_cluster                           max rel diff 8.32e-10
+se_cluster                          max rel diff 1.95e-10
+se_ols                              max rel diff 8.95e-12

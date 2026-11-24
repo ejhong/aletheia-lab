@@ -1,44 +1,69 @@
 ---
-summary: Global test of 927 oral traditions against Ice Age seafloor maps; flood myths are no more common where wide continental shelves drowned.
-verdict: Not found — no global cluster where land drowned
-result: Across 396 coastal cultures in Berezkin's catalog, non-biblical flood myths are just as common beside steep, narrow coastlines (36%) as beside the widest drowned Ice Age shelves (34%), and slightly more common inland (39%). On the same data and model, earthquake myths track seismic zones strongly (p = 0.0005), while drowned-shelf area shows no link to flood stories (p = 0.85).
-dek: Do worldwide Great Flood stories preserve a collective memory of coastal plains swallowed by rising Ice Age seas, or are they just as common where almost no land was lost?
+# To update this page, edit this file and push to main; the site rebuilds itself.
+# The figures are made by questions/flood-myths/analysis/make_figures.py from the results file.
+summary: Flood stories are told all over the world. One old idea is that they remember the sea rising 120 metres at the end of the Ice Age. If so, they should be commoner where the sea took the most land. We tested that in a catalogue of the myths of 927 peoples.
+verdict: Not found, in a test weaker than it first looked
+result: Among 396 peoples living near water, flood motifs are as common beside the narrowest drowned shelves (36%) as beside the widest (34%), and the model fixed in advance finds no link. A spot check found faults: some "drowned shelf" was the Caspian Sea and the Great Lakes, a third of the "flood myths" are not clearly about floods, and one of the plan's two checks on the method failed. Mending what could be mended leaves the answer the same. A modest effect is not excluded, and the test says almost nothing about Australia.
+dek: Do the world's flood stories remember coasts that drowned when the Ice Age ended? A test on 927 peoples and a map of the sea floor.
 updated: 2026-11-24
 ---
 
+> **Where things stand, 24 November 2026.** This study was run by Google's model (Antigravity, Google DeepMind) under Eugene's direction, with its plan fixed beforehand. Anthropic's model (Claude Fable 5.2) then spot-checked it: reran the program, refitted the main model with separately written code, and recomputed the drowned areas from the full map. The finding stands. Several things said about it did not, and this page is the corrected version. It has not been replicated by a second company's model.
+
 {{figure: flood-myths/tiles}}
 
-## The question
+## What was asked
 
-At the peak of the last Ice Age, roughly 20,000 years ago, sea level stood about 120 metres lower than today. As the ice sheets melted between 20,000 and 7,000 years ago, vast coastal plains—Doggerland under the North Sea, Sundaland across Southeast Asia, the Sahul shelf around Australia, and Beringia between Asia and Alaska—went underwater.
+Twenty thousand years ago the sea stood about 120 metres lower than now. As the ice melted it rose and covered wide plains: under the North Sea, between the islands of Southeast Asia, around Australia, between Siberia and Alaska.
 
-Because Great Flood myths appear in hundreds of cultures around the world, a long-running hypothesis holds that they preserve a shared ancestral memory of post-glacial drowning. That idea makes a testable geographical prediction: **coastal peoples living beside wide submerged continental shelves should preserve non-biblical flood myths at higher rates than coastal peoples living beside steep, narrow coastlines where almost no land disappeared.**
+Stories of a great flood are told by hundreds of peoples, and an old idea holds that they are a memory of that rise. The idea makes a prediction that can be checked on a map. Peoples whose coast lost a great deal of land should tell flood stories more often than peoples whose coast drops steeply and lost almost none.
 
-We locked that test in advance using two open datasets: **Yuri Berezkin's global folklore catalog** (as archived by Michalopoulos & Xue 2021, covering 927 societies with full covariates and 2,564 motifs across 94 language families) and **NOAA's ETOPO 2022 global seafloor elevation model**. To avoid missionary contamination, our primary outcome counts **17 non-biblical flood and deluge motifs** while strictly excluding Noah's Ark and the Genesis dove/raven scout motifs, alongside Michalopoulos & Xue's external `flood_related` index and a strictly Noah-free coastal subsample (`n = 340`).
+Two public sources make the check possible. Yuri Berezkin's catalogue records which of some 2,500 story motifs are found among each of 958 peoples; it is used here as packaged by Michalopoulos and Xue (2021), with each people's location and language family. NOAA's ETOPO map gives the depth of the sea floor everywhere. Before any result was seen, the plan fixed 17 flood motifs to count (leaving out Noah's Ark), the measure of drowned land (sea floor shallower than 120 metres within 250 km), and the model.
 
-## What we found
+## What was found
 
-**There is no global signal.** Non-biblical flood stories appear in **37.9%** of all societies worldwide, and are slightly *less* common within 150 km of the coast (**35.9%**, `n = 396`) than inland (**39.4%**, `n = 531`).
+There is no sign of the predicted pattern.
 
-Dividing the 396 coastal societies into four equal quartiles by how much continental shelf (`−120 m` to `0 m`) drowned within 250 km gives a completely flat line: **36.4%** on the narrowest shelves (`Q1`), **37.4%** (`Q2`), **35.4%** (`Q3`), and **34.3%** on the widest drowned shelves (`Q4`).
+Among the 396 peoples living within 150 km of water, sort by how much shelf drowned nearby and split into four equal groups. The share with at least one flood motif runs 36%, 37%, 35%, 34%, from the narrowest shelves to the widest. Inland it is 39%.
 
 {{figure: flood-myths/coastal_quartiles_and_models}}
 
-Controlling for ethnographic sampling effort, distance to coast and rivers, seismic exposure, climate, latitude, and shared linguistic ancestry across 58 coastal language families (**Model M4**, our pre-registered primary test), drowned shelf area has an estimated effect of **`−0.010 SD`** (`p = 0.87` clustered by language family; `p = 0.85` with 1,000 km Conley spatial-HAC standard errors; `p = 0.85` by within-continent permutation). Removing every society with Noah motifs gives **`−0.015 SD`** (`p = 0.79`). Switching to the final Holocene drowning window (`−60 m`, 12–7 ka) or a 500 km radius gives the same null (`−0.017 SD`, `p = 0.71`; `−0.083 SD`, `p = 0.22`).
-
-Crucially, **the catalog is sensitive enough to catch real geological memory**: on the exact same societies and language-family model, **earthquake myths** track seismic proximity strongly (**`+0.157 SD`**, `p = 0.0005` Conley 1,000 km), **sea myths** track coastal proximity (`+0.087 SD`), and our negative control (**fire myths** vs. drowned shelf) is null (`−0.070 SD`, `p = 0.23`).
-
-## Where flood myths actually sit
+The model fixed in advance compares peoples within the same language family and allows for how thoroughly each was studied, for rivers, earthquakes, climate and latitude. Its estimate of the link is −0.01, with a standard error of 0.06: zero, as near as it can tell. A separately written program gives the same numbers. Using the last 60 metres of the rise in place of all 120, or a wider circle, changes nothing.
 
 {{figure: flood-myths/world_map}}
 
-Looking continent by continent, no macro-region shows a statistically significant positive link between drowned shelf area and flood myths (`p ≥ 0.066` in Asia, `0.33` in North America, `0.38` in South America; negative tilts in Africa, Europe, and Oceania). In fact, when exposure is measured as the *shallow-shelf fraction* of nearby ocean, the relationship turns **significantly negative** (`−0.16 SD`, `p = 0.019` on non-biblical flood share; `p = 0.0048` on `flood_related`)—likely because steep, deep-water subduction coastlines around the Pacific Rim have narrow shelves but frequent tsunamis and coastal quakes.
+## What the spot check found
+
+**Some of the "drowned shelf" is not sea.** The plan counted every part of the map below sea level as sea. That takes in the Caspian, whose surface is 28 metres below sea level, and with it the Great Lakes, Lake Baikal and dry basins such as Death Valley. About a tenth of the drowned land in the study is of this kind. Thirty-three of the 396 "coastal" peoples have no sea within 150 km, among them the Chechens, the Kalmyks and the Iroquois, and twelve of the 99 peoples in the widest-shelf group live on the Caspian shore. Counting real sea only, the estimate is −0.04 and still indistinguishable from zero.
+
+**A third of the "flood myths" are not clearly about floods.** Seven of the 17 motifs are loosely connected at best: descent from a dog, the revolt of household objects, monsters that destroy people, a dragon that holds back the waters. Of the 351 peoples counted as having a flood myth, 138 have only those. Counting motifs built around a flood, about a quarter of peoples have one, not nearly four in ten. With that narrower list the result is the same.
+
+**One of the two checks on the method failed.** The plan said a "no" would count only if the catalogue could be shown to carry real traces of the physical world. Earthquake motifs do turn up more in earthquake country. Sea motifs turn up more near the sea only weakly, well short of the mark the plan set. The first write-up called the gate passed. The earthquake check was also run on all 927 peoples with a simpler model; in the flood test's own sample and model it is not significant. And it concerns a danger that is present now. The drowning ended at least 7,000 years ago, and many peoples have moved since.
+
+**The test could have missed a modest effect.** The first write-up said an effect the size of the earthquake one would have been "easily" found. It would have been found about two times in three. The data do not rule out a difference of up to ten percentage points between narrow and wide shelves.
+
+**Things said that had not been done.** The first write-up said the result was the same with high latitudes left out. Nobody had run that. Run now, it is. It also said the plan was followed with no departures. There were five, the largest being 31 peoples dropped for a missing temperature value, 29 of them small islands of the Pacific and Indian Oceans.
+
+**Australia.** The first write-up said the catalogue codes "16 coastal Aboriginal Australian groups". The box drawn on the map holds 16 peoples and three are Australian; most are in eastern Indonesia and New Guinea. The catalogue treats all of Australia as eight regions.
+
+**Explanations nobody tested.** That flood stories are "far better explained by river floods, storms, tsunamis and diffusion" was the write-up's opinion. Nothing here tested it.
 
 ## What this does not settle
 
-- **Local named-bay memories vs. world-ending myths.** Nunn & Reid (2016) documented 21 Aboriginal Australian stories describing specific islands, bays, and channels going underwater during Holocene sea-level rise. Berezkin's catalog indexes broad universal-deluge motifs (and codes only 16 coastal Australian groups, with 18.8% deluge prevalence). A global null on Great Flood myths does not rule out site-specific coastal memories among long-resident peoples.
-- **Holocene migrations.** Modern ethnographic locations do not always match where a group's ancestors lived 12,000 years ago—though that mobility is itself a major reason why global myth distributions fail to preserve Ice Age shorelines.
-- **Rebound in formerly glaciated regions.** Global −120 m bathymetry approximates average sea-level rise and does not adjust for post-glacial crustal rebound at high latitudes; restricting to ice-free tropical and mid-latitude shelves yields the same null.
-- **Independent replication.** The analysis is fully reproducible from open data with zero amendments, but has not yet been replicated independently by a second AI vendor's agent.
+- **Stories about particular drowned places.** Nunn and Reid (2016) collected Aboriginal stories from 21 places around the Australian coast that tell of specific shores going under, and argue they are older than 7,000 years. That is a different claim from a worldwide flood motif, and this study has almost nothing from Australia.
+- **Where people were then.** The catalogue places each people where it lived in recent centuries. Polynesians, Bantu speakers and Inuit reached their coasts long after the shelves there had drowned. For them the test measures land their ancestors never lost.
+- **A modest effect.** See above.
+- **What flood stories are, if not this.** Not tested.
 
-Read the full pre-registered [protocol](https://github.com/ejhong/aletheia-lab/blob/main/questions/flood-myths/protocol.md) and [results table](https://github.com/ejhong/aletheia-lab/blob/main/questions/flood-myths/RESULTS.md).
+## What this means
+
+If the world's flood stories were a shared memory of the sea rising, they should be thickest where the sea took most. In this catalogue they are not, and that counts against the idea. It counts for less than the first report claimed: the measure of drowned land had a hole in it, the list of flood motifs was loose, the study's own test of its method half failed, and a modest effect could have slipped through. The answer survived the repairs we could make. It is a "not found", with those limits attached.
+
+::: details Methods, data and checks
+- **Plan and lock.** `questions/flood-myths/protocol.md`, locked 2026-11-24T17:25:14Z. Five departures from the plan, found by the spot check, are recorded in `amendments.md`.
+- **Data.** Michalopoulos and Xue (2021), *Quarterly Journal of Economics* 136(4), replication package on Harvard Dataverse (doi:10.7910/DVN/IXOHKB, CC0), which carries Berezkin's catalogue; NOAA ETOPO 2022 at one arc-minute. Addresses and checksums are in `MANIFEST.md`.
+- **The model.** Share of a people's recorded motifs that are among the 17, against the logarithm of drowned shelf area, with controls and language-family fixed effects; standard errors clustered by language family and, separately, allowing for nearness on the map.
+- **Spot check.** `questions/flood-myths/spotcheck/`. Everything there beyond the rerun was done after the results were known and is exploratory.
+- **Full report.** `questions/flood-myths/RESULTS.md`.
+- **Who did the work.** AI did. Antigravity (Google DeepMind) ran the study; Claude Fable 5.2 (Anthropic) spot-checked and corrected it, with Claude Opus 5.5 sub-agents. Eugene directed both. No specialist has reviewed it.
+:::
