@@ -1,0 +1,251 @@
+<figure class="fig" id="fig-sporormiella" aria-label="Interactive North American Sporormiella dung-fungus spore record across 11 lake and cave cores">
+<style>
+#fig-sporormiella .sp-bar{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem .6rem;margin:0 0 .85rem;font-family:var(--mono);font-size:11px;}
+#fig-sporormiella .sp-label{text-transform:uppercase;letter-spacing:.14em;color:var(--faint);}
+#fig-sporormiella .sp-select,#fig-sporormiella .sp-btn{font:500 11px/1.2 var(--mono);padding:.36rem .62rem;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:2px;cursor:pointer;}
+#fig-sporormiella .sp-btn.is-on{background:var(--copper);border-color:var(--copper);color:#fff;}
+#fig-sporormiella .sp-meta{margin:0 0 .6rem;font-size:.86rem;color:var(--ink-soft);min-height:1.4em;}
+#fig-sporormiella .sp-readout{font-family:var(--mono);font-size:11.5px;color:var(--ink);padding:.45rem .7rem;background:var(--panel);border:1px solid var(--line);margin-top:.5rem;min-height:2.1em;}
+#fig-sporormiella svg{display:block;width:100%;min-width:620px;height:auto;font-family:var(--sans);}
+#fig-sporormiella .sp-row-hit{cursor:pointer;fill:transparent;}
+#fig-sporormiella .sp-row-hit:hover{fill:color-mix(in oklab, var(--copper) 8%, transparent);}
+</style>
+<div class="sp-bar">
+  <span class="sp-label">View</span>
+  <button type="button" class="sp-btn is-on" data-mode="composite">Continental composite (11 cores)</button>
+  <button type="button" class="sp-btn" data-mode="site">Single lake / cave core</button>
+  <select class="sp-select" aria-label="Choose a lake or cave core">
+    <option value="14957">Appleman Lake, IN (56 samples)</option>
+    <option value="17717">Silver Lake, OH (49 samples)</option>
+    <option value="61900">Mono Lake, CA (52 samples)</option>
+    <option value="16175">Binnewater Pond, NY (29 samples)</option>
+    <option value="16179">Otisville, NY (16 samples)</option>
+    <option value="46645">Lower Paintrock Lake, WY (36 samples)</option>
+    <option value="47259">Hall's Cave, TX (17 samples)</option>
+    <option value="3056">Como Lake, CO (10 samples)</option>
+    <option value="19937">Spicer Lake, IN (43 samples)</option>
+    <option value="45695">Triangle Lake Bog, OH (79 samples)</option>
+    <option value="15876">Tulare Lake, CA (10 samples)</option>
+  </select>
+</div>
+<p class="sp-meta" id="sp-meta"></p>
+<div class="fig-scroll">
+  <svg id="sp-svg" viewBox="0 0 740 500" role="img" aria-label="Sporormiella dung-fungus spore trajectory and per-core decline ages across North America"></svg>
+</div>
+<div class="sp-readout" id="sp-readout">Move across the curve or click any core in the lower strip to inspect its individual dung-spore record.</div>
+<figcaption>Dung-fungus spores (<em>Sporormiella</em>) as a proxy for large-herbivore biomass across 11 calibrated North American Neotoma cores (7 US states, 16,500 to 10,200 years ago; older to the left, younger to the right). Top panel shows either the cross-site normalized median with 5,000-draw site-bootstrap 95% band, or any individual core's raw upland-pollen percentage with its classic 2% functional-extinction line. Lower strip plots each core's half-drop age (circle, 9 of 11 before Younger Dryas onset, Wilcoxon p = 0.014) and step-drop changepoint (diamond, 7 of 10 before onset). Click any core row to open its full curve.</figcaption>
+<script>
+(function(){
+  const D = {"t_yd":12896.0,"t_ydb":12835.0,"composite":[{"age":16400.0,"n_sites":5,"median":2.0026,"median_ci_lo":0.0,"median_ci_hi":4.5113,"mean":2.0309,"mean_ci_lo":0.7305,"mean_ci_hi":3.4349},{"age":16200.0,"n_sites":7,"median":1.1548,"median_ci_lo":0.1673,"median_ci_hi":1.9764,"mean":1.3169,"mean_ci_lo":0.4778,"mean_ci_hi":2.4332},{"age":16000.0,"n_sites":7,"median":0.8602,"median_ci_lo":0.502,"median_ci_hi":2.626,"mean":1.3221,"mean_ci_lo":0.6022,"mean_ci_hi":2.1618},{"age":15800.0,"n_sites":8,"median":1.0039,"median_ci_lo":0.8366,"median_ci_hi":1.8502,"mean":1.1419,"mean_ci_lo":0.7166,"mean_ci_hi":1.5688},{"age":15600.0,"n_sites":8,"median":1.5604,"median_ci_lo":1.1378,"median_ci_hi":1.7627,"mean":1.6394,"mean_ci_lo":0.965,"mean_ci_hi":2.5178},{"age":15400.0,"n_sites":8,"median":1.4433,"median_ci_lo":0.1984,"median_ci_hi":1.5766,"mean":1.2753,"mean_ci_lo":0.6943,"mean_ci_hi":1.8901},{"age":15200.0,"n_sites":10,"median":1.5719,"median_ci_lo":1.1732,"median_ci_hi":3.1258,"mean":1.8683,"mean_ci_lo":1.0787,"mean_ci_hi":2.7697},{"age":15000.0,"n_sites":10,"median":1.3755,"median_ci_lo":0.3792,"median_ci_hi":2.3552,"mean":2.0192,"mean_ci_lo":0.8317,"mean_ci_hi":3.8076},{"age":14800.0,"n_sites":10,"median":1.0711,"median_ci_lo":0.1908,"median_ci_hi":1.7969,"mean":1.6071,"mean_ci_lo":0.7154,"mean_ci_hi":2.6841},{"age":14600.0,"n_sites":11,"median":0.7413,"median_ci_lo":0.1038,"median_ci_hi":1.5918,"mean":1.4141,"mean_ci_lo":0.5569,"mean_ci_hi":2.6999},{"age":14400.0,"n_sites":11,"median":1.1527,"median_ci_lo":0.6166,"median_ci_hi":1.6801,"mean":1.7463,"mean_ci_lo":0.8596,"mean_ci_hi":3.111},{"age":14200.0,"n_sites":11,"median":1.2253,"median_ci_lo":0.1854,"median_ci_hi":2.2502,"mean":1.4564,"mean_ci_lo":0.6521,"mean_ci_hi":2.4743},{"age":14000.0,"n_sites":11,"median":1.2618,"median_ci_lo":0.2619,"median_ci_hi":2.1986,"mean":1.2936,"mean_ci_lo":0.692,"mean_ci_hi":1.9179},{"age":13800.0,"n_sites":11,"median":0.8249,"median_ci_lo":0.5794,"median_ci_hi":1.9005,"mean":1.3262,"mean_ci_lo":0.7339,"mean_ci_hi":2.0503},{"age":13600.0,"n_sites":11,"median":0.3849,"median_ci_lo":0.1069,"median_ci_hi":0.8969,"mean":1.0167,"mean_ci_lo":0.2645,"mean_ci_hi":2.2071},{"age":13400.0,"n_sites":11,"median":0.758,"median_ci_lo":0.3316,"median_ci_hi":1.2144,"mean":0.8943,"mean_ci_lo":0.5056,"mean_ci_hi":1.3929},{"age":13200.0,"n_sites":11,"median":0.7759,"median_ci_lo":0.1543,"median_ci_hi":1.5319,"mean":0.8893,"mean_ci_lo":0.5145,"mean_ci_hi":1.2681},{"age":13000.0,"n_sites":11,"median":0.6843,"median_ci_lo":0.0752,"median_ci_hi":1.6347,"mean":0.8729,"mean_ci_lo":0.3342,"mean_ci_hi":1.5195},{"age":12800.0,"n_sites":11,"median":0.6019,"median_ci_lo":0.1935,"median_ci_hi":1.6569,"mean":0.9406,"mean_ci_lo":0.496,"mean_ci_hi":1.3823},{"age":12600.0,"n_sites":11,"median":0.5011,"median_ci_lo":0.0,"median_ci_hi":1.6596,"mean":0.8898,"mean_ci_lo":0.4027,"mean_ci_hi":1.3771},{"age":12400.0,"n_sites":11,"median":0.4095,"median_ci_lo":0.0434,"median_ci_hi":1.4426,"mean":0.6924,"mean_ci_lo":0.322,"mean_ci_hi":1.0744},{"age":12200.0,"n_sites":11,"median":0.3179,"median_ci_lo":0.0,"median_ci_hi":1.3248,"mean":0.5614,"mean_ci_lo":0.22,"mean_ci_hi":0.9436},{"age":12000.0,"n_sites":11,"median":0.3121,"median_ci_lo":0.0717,"median_ci_hi":1.0926,"mean":0.7005,"mean_ci_lo":0.3164,"mean_ci_hi":1.1081},{"age":11800.0,"n_sites":11,"median":0.4994,"median_ci_lo":0.1586,"median_ci_hi":1.4194,"mean":0.8589,"mean_ci_lo":0.4033,"mean_ci_hi":1.4544},{"age":11600.0,"n_sites":11,"median":0.0756,"median_ci_lo":0.0,"median_ci_hi":0.7175,"mean":0.6976,"mean_ci_lo":0.1031,"mean_ci_hi":1.5955},{"age":11400.0,"n_sites":11,"median":0.1591,"median_ci_lo":0.0,"median_ci_hi":1.78,"mean":0.801,"mean_ci_lo":0.1934,"mean_ci_hi":1.4915},{"age":11200.0,"n_sites":11,"median":0.2386,"median_ci_lo":0.0,"median_ci_hi":1.2114,"mean":0.5206,"mean_ci_lo":0.2126,"mean_ci_hi":0.8645},{"age":11000.0,"n_sites":11,"median":0.1623,"median_ci_lo":0.0,"median_ci_hi":0.5548,"mean":0.3252,"mean_ci_lo":0.1093,"mean_ci_hi":0.586},{"age":10800.0,"n_sites":11,"median":0.0573,"median_ci_lo":0.0,"median_ci_hi":0.7963,"mean":0.5121,"mean_ci_lo":0.0859,"mean_ci_hi":1.1523},{"age":10600.0,"n_sites":11,"median":0.0,"median_ci_lo":0.0,"median_ci_hi":0.3574,"mean":0.2229,"mean_ci_lo":0.0392,"mean_ci_hi":0.4371},{"age":10400.0,"n_sites":11,"median":0.0,"median_ci_lo":0.0,"median_ci_hi":0.4571,"mean":0.2997,"mean_ci_lo":0.012,"mean_ci_hi":0.6868}],"sites":[{"id":14957,"name":"Appleman Lake","state":"IN","n_samples":56,"n_nonzero":39,"max_pct":9.63,"t_onset":16285.0,"t_2pct":14295.0,"t_50pct":14669.0,"t_cp":14647.0,"r2_step":0.749,"series":[{"age":16775.0,"pct":5.303,"n_spo":21.0,"n_upland":396.0},{"age":16285.0,"pct":9.6257,"n_spo":36.0,"n_upland":374.0},{"age":16085.0,"pct":5.2632,"n_spo":17.0,"n_upland":323.0},{"age":16004.0,"pct":5.4299,"n_spo":18.0,"n_upland":331.5},{"age":15885.0,"pct":3.7383,"n_spo":12.0,"n_upland":321.0},{"age":15802.0,"pct":1.9126,"n_spo":7.0,"n_upland":366.0},{"age":15681.0,"pct":4.1667,"n_spo":14.0,"n_upland":336.0},{"age":15600.0,"pct":8.0119,"n_spo":27.0,"n_upland":337.0},{"age":15478.0,"pct":2.8037,"n_spo":9.0,"n_upland":321.0},{"age":15417.0,"pct":5.7057,"n_spo":19.0,"n_upland":333.0},{"age":15294.0,"pct":4.9536,"n_spo":16.0,"n_upland":323.0},{"age":15193.0,"pct":7.0513,"n_spo":22.0,"n_upland":312.0},{"age":15090.0,"pct":4.6784,"n_spo":16.0,"n_upland":342.0},{"age":14988.0,"pct":4.9587,"n_spo":18.0,"n_upland":363.0},{"age":14885.0,"pct":4.9231,"n_spo":16.0,"n_upland":325.0},{"age":14783.0,"pct":2.7778,"n_spo":9.0,"n_upland":324.0},{"age":14742.0,"pct":3.1646,"n_spo":10.0,"n_upland":316.0},{"age":14681.0,"pct":3.3639,"n_spo":11.0,"n_upland":327.0},{"age":14613.0,"pct":1.4451,"n_spo":5.0,"n_upland":346.0},{"age":14567.0,"pct":0.9202,"n_spo":3.0,"n_upland":326.0},{"age":14544.0,"pct":2.2117,"n_spo":7.0,"n_upland":316.5},{"age":14449.0,"pct":1.7544,"n_spo":6.0,"n_upland":342.0},{"age":14329.0,"pct":2.4922,"n_spo":8.0,"n_upland":321.0},{"age":14191.0,"pct":0.5063,"n_spo":2.0,"n_upland":395.0},{"age":13702.0,"pct":0.0,"n_spo":0.0,"n_upland":327.0},{"age":13188.0,"pct":1.1713,"n_spo":4.0,"n_upland":341.5},{"age":13082.0,"pct":0.0,"n_spo":0.0,"n_upland":350.0},{"age":12906.0,"pct":0.3082,"n_spo":1.0,"n_upland":324.5},{"age":12844.0,"pct":0.59,"n_spo":2.0,"n_upland":339.0},{"age":12722.0,"pct":1.3774,"n_spo":5.0,"n_upland":363.0},{"age":12537.0,"pct":0.0,"n_spo":0.0,"n_upland":358.0},{"age":12431.0,"pct":0.0,"n_spo":0.0,"n_upland":344.5},{"age":12382.0,"pct":0.8333,"n_spo":3.0,"n_upland":360.0},{"age":12334.0,"pct":0.5789,"n_spo":2.0,"n_upland":345.5},{"age":12287.0,"pct":0.5013,"n_spo":2.0,"n_upland":399.0},{"age":12240.0,"pct":0.2717,"n_spo":1.0,"n_upland":368.0},{"age":12169.0,"pct":0.0,"n_spo":0.0,"n_upland":371.0},{"age":12121.0,"pct":0.5135,"n_spo":2.0,"n_upland":389.5},{"age":11956.0,"pct":0.0,"n_spo":0.0,"n_upland":357.0},{"age":11933.0,"pct":0.0,"n_spo":0.0,"n_upland":370.5},{"age":11887.0,"pct":0.8811,"n_spo":3.0,"n_upland":340.5},{"age":11818.0,"pct":0.0,"n_spo":0.0,"n_upland":326.0},{"age":11749.0,"pct":0.0,"n_spo":0.0,"n_upland":318.0},{"age":11656.0,"pct":0.0,"n_spo":0.0,"n_upland":326.0},{"age":11587.0,"pct":0.0,"n_spo":0.0,"n_upland":314.0},{"age":11541.0,"pct":0.3049,"n_spo":1.0,"n_upland":328.0},{"age":11517.0,"pct":0.0,"n_spo":0.0,"n_upland":319.5},{"age":11469.0,"pct":0.0,"n_spo":0.0,"n_upland":328.0},{"age":11421.0,"pct":0.0,"n_spo":0.0,"n_upland":322.0},{"age":11186.0,"pct":0.0,"n_spo":0.0,"n_upland":332.0},{"age":11139.0,"pct":0.2805,"n_spo":1.0,"n_upland":356.5},{"age":10763.0,"pct":0.6061,"n_spo":2.0,"n_upland":330.0},{"age":10553.0,"pct":0.6042,"n_spo":2.0,"n_upland":331.0},{"age":10412.0,"pct":0.0,"n_spo":0.0,"n_upland":328.0},{"age":10272.0,"pct":0.9091,"n_spo":3.0,"n_upland":330.0},{"age":10131.0,"pct":0.0,"n_spo":0.0,"n_upland":336.5}]},{"id":17717,"name":"Silver Lake","state":"OH","n_samples":49,"n_nonzero":47,"max_pct":6.1,"t_onset":16549.0,"t_2pct":14109.0,"t_50pct":15497.0,"t_cp":14094.0,"r2_step":0.669,"series":[{"age":16926.0,"pct":3.6697,"n_spo":12.0,"n_upland":327.0},{"age":16832.0,"pct":2.0864,"n_spo":7.0,"n_upland":335.5},{"age":16737.0,"pct":2.7356,"n_spo":9.0,"n_upland":329.0},{"age":16549.0,"pct":6.0958,"n_spo":21.0,"n_upland":344.5},{"age":16360.0,"pct":3.5813,"n_spo":13.0,"n_upland":363.0},{"age":16264.0,"pct":4.5181,"n_spo":15.0,"n_upland":332.0},{"age":16170.0,"pct":1.849,"n_spo":6.0,"n_upland":324.5},{"age":16080.0,"pct":3.8012,"n_spo":13.0,"n_upland":342.0},{"age":15990.0,"pct":5.0704,"n_spo":18.0,"n_upland":355.0},{"age":15899.0,"pct":3.0598,"n_spo":11.0,"n_upland":359.5},{"age":15808.0,"pct":3.4682,"n_spo":12.0,"n_upland":346.0},{"age":15681.0,"pct":3.5451,"n_spo":12.0,"n_upland":338.5},{"age":15475.0,"pct":2.0231,"n_spo":7.0,"n_upland":346.0},{"age":15268.0,"pct":2.1116,"n_spo":7.0,"n_upland":331.5},{"age":15017.0,"pct":2.4465,"n_spo":8.0,"n_upland":327.0},{"age":14756.0,"pct":3.5608,"n_spo":12.0,"n_upland":337.0},{"age":14625.0,"pct":2.963,"n_spo":10.0,"n_upland":337.5},{"age":14524.0,"pct":2.6239,"n_spo":9.0,"n_upland":343.0},{"age":14358.0,"pct":3.3333,"n_spo":11.0,"n_upland":330.0},{"age":14276.0,"pct":1.4859,"n_spo":5.0,"n_upland":336.5},{"age":14193.0,"pct":3.4384,"n_spo":12.0,"n_upland":349.0},{"age":14124.0,"pct":2.1672,"n_spo":7.0,"n_upland":323.0},{"age":14065.0,"pct":1.4993,"n_spo":5.0,"n_upland":333.5},{"age":14005.0,"pct":0.5814,"n_spo":2.0,"n_upland":344.0},{"age":13945.0,"pct":1.6043,"n_spo":6.0,"n_upland":374.0},{"age":13885.0,"pct":0.8439,"n_spo":3.0,"n_upland":355.5},{"age":13826.0,"pct":1.6327,"n_spo":6.0,"n_upland":367.5},{"age":13766.0,"pct":1.1561,"n_spo":4.0,"n_upland":346.0},{"age":13706.0,"pct":0.7812,"n_spo":3.0,"n_upland":384.0},{"age":13646.0,"pct":0.8219,"n_spo":3.0,"n_upland":365.0},{"age":13586.0,"pct":1.4599,"n_spo":5.0,"n_upland":342.5},{"age":13468.0,"pct":1.0929,"n_spo":4.0,"n_upland":366.0},{"age":13350.0,"pct":0.5556,"n_spo":2.0,"n_upland":360.0},{"age":13192.0,"pct":0.2755,"n_spo":1.0,"n_upland":363.0},{"age":12884.0,"pct":0.2639,"n_spo":1.0,"n_upland":379.0},{"age":12632.0,"pct":0.5618,"n_spo":2.0,"n_upland":356.0},{"age":12303.0,"pct":0.2632,"n_spo":1.0,"n_upland":380.0},{"age":11974.0,"pct":0.6135,"n_spo":2.0,"n_upland":326.0},{"age":11713.0,"pct":0.9132,"n_spo":3.0,"n_upland":328.5},{"age":11506.0,"pct":0.6079,"n_spo":2.0,"n_upland":329.0},{"age":11300.0,"pct":0.3058,"n_spo":1.0,"n_upland":327.0},{"age":11129.0,"pct":1.4706,"n_spo":5.0,"n_upland":340.0},{"age":10957.0,"pct":0.0,"n_spo":0.0,"n_upland":328.0},{"age":10800.0,"pct":1.4948,"n_spo":5.0,"n_upland":334.5},{"age":10655.0,"pct":0.8969,"n_spo":3.0,"n_upland":334.5},{"age":10509.0,"pct":0.2972,"n_spo":1.0,"n_upland":336.5},{"age":10361.0,"pct":1.7316,"n_spo":6.0,"n_upland":346.5},{"age":10212.0,"pct":0.6202,"n_spo":2.0,"n_upland":322.5},{"age":10065.0,"pct":0.0,"n_spo":0.0,"n_upland":332.5}]},{"id":19937,"name":"Spicer Lake","state":"IN","n_samples":43,"n_nonzero":42,"max_pct":5.93,"t_onset":15188.0,"t_2pct":11173.0,"t_50pct":11678.0,"t_cp":11724.0,"r2_step":0.125,"series":[{"age":15252.0,"pct":0.8345,"n_spo":3.0,"n_upland":359.5},{"age":15205.0,"pct":0.3021,"n_spo":1.0,"n_upland":331.0},{"age":15188.0,"pct":5.9259,"n_spo":4.0,"n_upland":67.5},{"age":15156.0,"pct":0.5369,"n_spo":2.0,"n_upland":372.5},{"age":15056.0,"pct":0.5556,"n_spo":2.0,"n_upland":360.0},{"age":15008.0,"pct":0.5298,"n_spo":2.0,"n_upland":377.5},{"age":14960.0,"pct":0.2782,"n_spo":1.0,"n_upland":359.5},{"age":14911.0,"pct":2.4096,"n_spo":9.0,"n_upland":373.5},{"age":14863.0,"pct":1.5936,"n_spo":6.0,"n_upland":376.5},{"age":14817.0,"pct":1.4006,"n_spo":5.0,"n_upland":357.0},{"age":14769.0,"pct":1.3351,"n_spo":5.0,"n_upland":374.5},{"age":14722.0,"pct":3.3898,"n_spo":9.0,"n_upland":265.5},{"age":14673.0,"pct":2.4828,"n_spo":9.0,"n_upland":362.5},{"age":14624.0,"pct":1.6973,"n_spo":6.0,"n_upland":353.5},{"age":14576.0,"pct":2.3988,"n_spo":8.0,"n_upland":333.5},{"age":14500.0,"pct":1.506,"n_spo":5.0,"n_upland":332.0},{"age":13961.0,"pct":1.6327,"n_spo":6.0,"n_upland":367.5},{"age":13659.0,"pct":0.561,"n_spo":2.0,"n_upland":356.5},{"age":13120.0,"pct":2.1192,"n_spo":8.0,"n_upland":377.5},{"age":12037.0,"pct":1.9746,"n_spo":7.0,"n_upland":354.5},{"age":11964.0,"pct":0.8523,"n_spo":3.0,"n_upland":352.0},{"age":11890.0,"pct":1.6854,"n_spo":6.0,"n_upland":356.0},{"age":11779.0,"pct":1.3908,"n_spo":5.0,"n_upland":359.5},{"age":11668.0,"pct":1.227,"n_spo":4.0,"n_upland":326.0},{"age":11600.0,"pct":0.9231,"n_spo":3.0,"n_upland":325.0},{"age":11486.0,"pct":0.9449,"n_spo":3.0,"n_upland":317.5},{"age":11400.0,"pct":0.0,"n_spo":0.0,"n_upland":355.0},{"age":11309.0,"pct":0.315,"n_spo":1.0,"n_upland":317.5},{"age":11199.0,"pct":2.1277,"n_spo":7.0,"n_upland":329.0},{"age":11088.0,"pct":1.5924,"n_spo":5.0,"n_upland":314.0},{"age":10975.0,"pct":0.9063,"n_spo":3.0,"n_upland":331.0},{"age":10892.0,"pct":1.4556,"n_spo":5.0,"n_upland":343.5},{"age":10811.0,"pct":1.173,"n_spo":4.0,"n_upland":341.0},{"age":10731.0,"pct":0.2928,"n_spo":1.0,"n_upland":341.5},{"age":10650.0,"pct":1.7937,"n_spo":6.0,"n_upland":334.5},{"age":10567.0,"pct":0.311,"n_spo":1.0,"n_upland":321.5},{"age":10485.0,"pct":0.6051,"n_spo":2.0,"n_upland":330.5},{"age":10404.0,"pct":0.6033,"n_spo":2.0,"n_upland":331.5},{"age":10326.0,"pct":0.3072,"n_spo":1.0,"n_upland":325.5},{"age":10248.0,"pct":0.6135,"n_spo":2.0,"n_upland":326.0},{"age":10170.0,"pct":0.315,"n_spo":1.0,"n_upland":317.5},{"age":10090.0,"pct":1.2012,"n_spo":4.0,"n_upland":333.0},{"age":10010.0,"pct":1.2232,"n_spo":4.0,"n_upland":327.0}]},{"id":45695,"name":"Triangle Lake Bog","state":"OH","n_samples":79,"n_nonzero":35,"max_pct":1.72,"t_onset":null,"t_2pct":null,"t_50pct":12555.0,"t_cp":null,"r2_step":null,"series":[{"age":16972.0,"pct":0.0,"n_spo":0.0,"n_upland":325.0},{"age":16808.0,"pct":0.0,"n_spo":0.0,"n_upland":311.0},{"age":16646.0,"pct":0.0,"n_spo":0.0,"n_upland":320.0},{"age":16482.0,"pct":0.0,"n_spo":0.0,"n_upland":312.0},{"age":16319.0,"pct":0.0,"n_spo":0.0,"n_upland":311.0},{"age":16153.0,"pct":0.0,"n_spo":0.0,"n_upland":330.5},{"age":15812.0,"pct":0.0,"n_spo":0.0,"n_upland":211.0},{"age":15727.0,"pct":0.0,"n_spo":0.0,"n_upland":316.0},{"age":15641.0,"pct":0.0,"n_spo":0.0,"n_upland":300.0},{"age":15555.0,"pct":0.0,"n_spo":0.0,"n_upland":283.0},{"age":15468.0,"pct":0.0,"n_spo":0.0,"n_upland":259.0},{"age":15384.0,"pct":0.0,"n_spo":0.0,"n_upland":298.0},{"age":15301.0,"pct":0.0,"n_spo":0.0,"n_upland":273.0},{"age":15217.0,"pct":0.0,"n_spo":0.0,"n_upland":294.0},{"age":15134.0,"pct":0.0,"n_spo":0.0,"n_upland":293.0},{"age":15050.0,"pct":0.0,"n_spo":0.0,"n_upland":294.5},{"age":14967.0,"pct":0.0,"n_spo":0.0,"n_upland":275.5},{"age":14884.0,"pct":0.0,"n_spo":0.0,"n_upland":305.0},{"age":14800.0,"pct":0.0,"n_spo":0.0,"n_upland":307.0},{"age":14716.0,"pct":0.0,"n_spo":0.0,"n_upland":304.0},{"age":14633.0,"pct":0.0,"n_spo":0.0,"n_upland":289.0},{"age":14549.0,"pct":0.0,"n_spo":0.0,"n_upland":303.0},{"age":14506.0,"pct":0.0,"n_spo":0.0,"n_upland":327.0},{"age":14463.0,"pct":0.3413,"n_spo":1.0,"n_upland":293.0},{"age":14419.0,"pct":0.313,"n_spo":1.0,"n_upland":319.5},{"age":14376.0,"pct":0.0,"n_spo":0.0,"n_upland":324.0},{"age":14333.0,"pct":0.9464,"n_spo":3.0,"n_upland":317.0},{"age":14290.0,"pct":0.0,"n_spo":0.0,"n_upland":302.0},{"age":14247.0,"pct":0.0,"n_spo":0.0,"n_upland":317.0},{"age":14203.0,"pct":0.0,"n_spo":0.0,"n_upland":322.0},{"age":14156.0,"pct":0.0,"n_spo":0.0,"n_upland":312.0},{"age":14093.0,"pct":0.0,"n_spo":0.0,"n_upland":277.5},{"age":14004.0,"pct":0.6525,"n_spo":2.0,"n_upland":306.5},{"age":13916.0,"pct":0.0,"n_spo":0.0,"n_upland":332.0},{"age":13828.0,"pct":0.6359,"n_spo":2.0,"n_upland":314.5},{"age":13740.0,"pct":0.3295,"n_spo":1.0,"n_upland":303.5},{"age":13652.0,"pct":0.0,"n_spo":0.0,"n_upland":302.5},{"age":13565.0,"pct":0.0,"n_spo":0.0,"n_upland":338.0},{"age":13477.0,"pct":0.0,"n_spo":0.0,"n_upland":307.5},{"age":13389.0,"pct":0.3436,"n_spo":1.0,"n_upland":291.0},{"age":13302.0,"pct":0.0,"n_spo":0.0,"n_upland":315.5},{"age":13129.0,"pct":0.3231,"n_spo":1.0,"n_upland":309.5},{"age":13043.0,"pct":1.7182,"n_spo":5.0,"n_upland":291.0},{"age":12957.0,"pct":0.3063,"n_spo":1.0,"n_upland":326.5},{"age":12870.0,"pct":0.3221,"n_spo":1.0,"n_upland":310.5},{"age":12733.0,"pct":0.6873,"n_spo":2.0,"n_upland":291.0},{"age":12693.0,"pct":0.974,"n_spo":3.0,"n_upland":308.0},{"age":12653.0,"pct":0.0,"n_spo":0.0,"n_upland":320.0},{"age":12613.0,"pct":0.6173,"n_spo":2.0,"n_upland":324.0},{"age":12573.0,"pct":0.7018,"n_spo":2.0,"n_upland":285.0},{"age":12533.0,"pct":0.0,"n_spo":0.0,"n_upland":319.0},{"age":12494.0,"pct":0.0,"n_spo":0.0,"n_upland":329.0},{"age":12414.0,"pct":0.0,"n_spo":0.0,"n_upland":296.5},{"age":12335.0,"pct":1.172,"n_spo":4.0,"n_upland":341.3},{"age":12254.0,"pct":0.3058,"n_spo":1.0,"n_upland":327.0},{"age":12153.0,"pct":0.0,"n_spo":0.0,"n_upland":335.5},{"age":12093.0,"pct":0.3012,"n_spo":1.0,"n_upland":332.0},{"age":12012.0,"pct":0.641,"n_spo":2.0,"n_upland":312.0},{"age":11931.0,"pct":0.0,"n_spo":0.0,"n_upland":311.5},{"age":11849.0,"pct":0.0,"n_spo":0.0,"n_upland":313.0},{"age":11769.0,"pct":0.304,"n_spo":1.0,"n_upland":329.0},{"age":11688.0,"pct":0.9105,"n_spo":3.0,"n_upland":329.5},{"age":11606.0,"pct":0.0,"n_spo":0.0,"n_upland":325.0},{"age":11525.0,"pct":0.289,"n_spo":1.0,"n_upland":346.0},{"age":11445.0,"pct":1.4144,"n_spo":5.0,"n_upland":353.5},{"age":11364.0,"pct":0.5502,"n_spo":2.0,"n_upland":363.5},{"age":11284.0,"pct":0.6202,"n_spo":2.0,"n_upland":322.5},{"age":11204.0,"pct":0.2967,"n_spo":1.0,"n_upland":337.0},{"age":11123.0,"pct":1.5601,"n_spo":5.0,"n_upland":320.5},{"age":11042.0,"pct":0.0,"n_spo":0.0,"n_upland":335.0},{"age":10960.0,"pct":0.7792,"n_spo":3.0,"n_upland":385.0},{"age":10880.0,"pct":0.2729,"n_spo":1.0,"n_upland":366.5},{"age":10802.0,"pct":1.0178,"n_spo":4.0,"n_upland":393.0},{"age":10721.0,"pct":0.3082,"n_spo":1.0,"n_upland":324.5},{"age":10640.0,"pct":0.0,"n_spo":0.0,"n_upland":327.0},{"age":10558.0,"pct":0.6042,"n_spo":2.0,"n_upland":331.0},{"age":10477.0,"pct":0.5602,"n_spo":2.0,"n_upland":357.0},{"age":10278.0,"pct":0.6211,"n_spo":2.0,"n_upland":322.0},{"age":10173.0,"pct":0.64,"n_spo":2.0,"n_upland":312.5}]},{"id":61900,"name":"Mono Lake","state":"CA","n_samples":52,"n_nonzero":27,"max_pct":3.77,"t_onset":14950.0,"t_2pct":14830.0,"t_50pct":14706.0,"t_cp":14710.0,"r2_step":0.36,"series":[{"age":15380.0,"pct":0.1802,"n_spo":1.0,"n_upland":555.0},{"age":15300.0,"pct":0.2825,"n_spo":1.0,"n_upland":354.0},{"age":15110.0,"pct":1.7647,"n_spo":6.0,"n_upland":340.0},{"age":14950.0,"pct":3.7736,"n_spo":10.0,"n_upland":265.0},{"age":14790.0,"pct":1.4118,"n_spo":6.0,"n_upland":425.0},{"age":14630.0,"pct":0.4032,"n_spo":1.0,"n_upland":248.0},{"age":14550.0,"pct":0.0,"n_spo":0.0,"n_upland":251.0},{"age":14470.0,"pct":0.0,"n_spo":0.0,"n_upland":280.0},{"age":14320.0,"pct":0.8392,"n_spo":3.0,"n_upland":357.5},{"age":14160.0,"pct":0.0,"n_spo":0.0,"n_upland":406.0},{"age":14030.0,"pct":1.0568,"n_spo":4.0,"n_upland":378.5},{"age":13960.0,"pct":0.3279,"n_spo":1.0,"n_upland":305.0},{"age":13880.0,"pct":0.2227,"n_spo":1.0,"n_upland":449.0},{"age":13820.0,"pct":0.7299,"n_spo":2.0,"n_upland":274.0},{"age":13720.0,"pct":0.2506,"n_spo":1.0,"n_upland":399.0},{"age":13670.0,"pct":0.2907,"n_spo":1.0,"n_upland":344.0},{"age":13590.0,"pct":0.0,"n_spo":0.0,"n_upland":298.0},{"age":13480.0,"pct":0.0,"n_spo":0.0,"n_upland":485.0},{"age":13320.0,"pct":0.2255,"n_spo":1.0,"n_upland":443.5},{"age":13210.0,"pct":0.7481,"n_spo":3.0,"n_upland":401.0},{"age":13170.0,"pct":0.2762,"n_spo":1.0,"n_upland":362.0},{"age":13040.0,"pct":0.0,"n_spo":0.0,"n_upland":384.0},{"age":12960.0,"pct":0.0,"n_spo":0.0,"n_upland":412.0},{"age":12920.0,"pct":0.6309,"n_spo":2.0,"n_upland":317.0},{"age":12800.0,"pct":0.7246,"n_spo":3.0,"n_upland":414.0},{"age":12640.0,"pct":0.32,"n_spo":2.0,"n_upland":625.0},{"age":12530.0,"pct":1.0,"n_spo":4.0,"n_upland":400.0},{"age":12480.0,"pct":0.8065,"n_spo":3.0,"n_upland":372.0},{"age":12400.0,"pct":0.4386,"n_spo":2.0,"n_upland":456.0},{"age":12310.0,"pct":0.0,"n_spo":0.0,"n_upland":589.0},{"age":12270.0,"pct":0.0,"n_spo":0.0,"n_upland":623.0},{"age":12150.0,"pct":0.0,"n_spo":0.0,"n_upland":735.0},{"age":12050.0,"pct":0.0,"n_spo":0.0,"n_upland":538.0},{"age":11980.0,"pct":0.1041,"n_spo":1.0,"n_upland":961.0},{"age":11920.0,"pct":0.0,"n_spo":0.0,"n_upland":590.0},{"age":11800.0,"pct":0.1698,"n_spo":1.0,"n_upland":589.0},{"age":11720.0,"pct":0.0,"n_spo":0.0,"n_upland":456.0},{"age":11600.0,"pct":0.0,"n_spo":0.0,"n_upland":343.0},{"age":11470.0,"pct":0.181,"n_spo":1.0,"n_upland":552.5},{"age":11340.0,"pct":0.2192,"n_spo":2.0,"n_upland":912.2},{"age":11300.0,"pct":0.0,"n_spo":0.0,"n_upland":647.5},{"age":11230.0,"pct":0.2987,"n_spo":2.0,"n_upland":669.5},{"age":11150.0,"pct":0.0,"n_spo":0.0,"n_upland":914.8},{"age":11060.0,"pct":0.0,"n_spo":0.0,"n_upland":1088.8},{"age":10920.0,"pct":0.0,"n_spo":0.0,"n_upland":1311.0},{"age":10820.0,"pct":0.0,"n_spo":0.0,"n_upland":595.2},{"age":10660.0,"pct":0.0,"n_spo":0.0,"n_upland":558.0},{"age":10520.0,"pct":0.0,"n_spo":0.0,"n_upland":1331.2},{"age":10460.0,"pct":0.0,"n_spo":0.0,"n_upland":1188.0},{"age":10280.0,"pct":0.0,"n_spo":0.0,"n_upland":924.5},{"age":10100.0,"pct":0.0,"n_spo":0.0,"n_upland":551.2},{"age":10020.0,"pct":0.0,"n_spo":0.0,"n_upland":629.0}]},{"id":16175,"name":"Binnewater Pond","state":"NY","n_samples":29,"n_nonzero":24,"max_pct":4.72,"t_onset":16825.0,"t_2pct":15572.0,"t_50pct":15608.0,"t_cp":15594.0,"r2_step":0.922,"series":[{"age":16825.0,"pct":4.7244,"n_spo":24.0,"n_upland":508.0},{"age":16715.0,"pct":3.5398,"n_spo":16.0,"n_upland":452.0},{"age":16606.0,"pct":4.2735,"n_spo":20.0,"n_upland":468.0},{"age":16496.0,"pct":2.9106,"n_spo":14.0,"n_upland":481.0},{"age":16384.0,"pct":3.6797,"n_spo":17.0,"n_upland":462.0},{"age":16270.0,"pct":2.4904,"n_spo":13.0,"n_upland":522.0},{"age":16157.0,"pct":4.1575,"n_spo":19.0,"n_upland":457.0},{"age":16045.0,"pct":3.666,"n_spo":18.0,"n_upland":491.0},{"age":15935.0,"pct":2.544,"n_spo":13.0,"n_upland":511.0},{"age":15880.0,"pct":4.3651,"n_spo":22.0,"n_upland":504.0},{"age":15869.0,"pct":3.4261,"n_spo":16.0,"n_upland":467.0},{"age":15825.0,"pct":3.4137,"n_spo":17.0,"n_upland":498.0},{"age":15662.0,"pct":4.4346,"n_spo":20.0,"n_upland":451.0},{"age":15526.0,"pct":0.7722,"n_spo":4.0,"n_upland":518.0},{"age":15355.0,"pct":0.2041,"n_spo":1.0,"n_upland":490.0},{"age":15035.0,"pct":0.2364,"n_spo":1.0,"n_upland":423.0},{"age":14493.0,"pct":0.1724,"n_spo":1.0,"n_upland":580.0},{"age":14010.0,"pct":0.4329,"n_spo":2.0,"n_upland":462.0},{"age":13814.0,"pct":0.6424,"n_spo":3.0,"n_upland":467.0},{"age":13755.0,"pct":0.1923,"n_spo":1.0,"n_upland":520.0},{"age":13560.0,"pct":0.5566,"n_spo":3.0,"n_upland":539.0},{"age":13150.0,"pct":0.2119,"n_spo":1.0,"n_upland":472.0},{"age":12723.0,"pct":0.0,"n_spo":0.0,"n_upland":566.0},{"age":12250.0,"pct":0.0,"n_spo":0.0,"n_upland":518.0},{"age":11737.0,"pct":0.0,"n_spo":0.0,"n_upland":420.0},{"age":11216.0,"pct":0.4386,"n_spo":2.0,"n_upland":456.0},{"age":10685.0,"pct":0.0,"n_spo":0.0,"n_upland":518.0},{"age":10334.0,"pct":0.0,"n_spo":0.0,"n_upland":519.0},{"age":10150.0,"pct":0.2101,"n_spo":1.0,"n_upland":476.0}]},{"id":16179,"name":"Otisville","state":"NY","n_samples":16,"n_nonzero":15,"max_pct":2.36,"t_onset":14124.0,"t_2pct":14107.0,"t_50pct":15783.0,"t_cp":14078.0,"r2_step":0.598,"series":[{"age":16840.0,"pct":2.1309,"n_spo":14.0,"n_upland":657.0},{"age":15961.0,"pct":0.8157,"n_spo":5.0,"n_upland":613.0},{"age":15730.0,"pct":1.8945,"n_spo":14.0,"n_upland":739.0},{"age":14714.0,"pct":0.7899,"n_spo":5.0,"n_upland":633.0},{"age":14527.0,"pct":1.4151,"n_spo":9.0,"n_upland":636.0},{"age":14314.0,"pct":1.7657,"n_spo":11.0,"n_upland":623.0},{"age":14218.0,"pct":1.2658,"n_spo":8.0,"n_upland":632.0},{"age":14124.0,"pct":2.3569,"n_spo":14.0,"n_upland":594.0},{"age":14031.0,"pct":0.4049,"n_spo":2.0,"n_upland":494.0},{"age":13965.0,"pct":0.7722,"n_spo":4.0,"n_upland":518.0},{"age":13809.0,"pct":0.7843,"n_spo":4.0,"n_upland":510.0},{"age":13664.0,"pct":0.2049,"n_spo":1.0,"n_upland":488.0},{"age":13515.0,"pct":0.6383,"n_spo":3.0,"n_upland":470.0},{"age":13331.0,"pct":0.8493,"n_spo":4.0,"n_upland":471.0},{"age":11867.0,"pct":0.1681,"n_spo":1.0,"n_upland":595.0},{"age":10235.0,"pct":0.0,"n_spo":0.0,"n_upland":534.0}]},{"id":46645,"name":"Lower Paintrock Lake","state":"WY","n_samples":36,"n_nonzero":14,"max_pct":2.9,"t_onset":13691.0,"t_2pct":13591.0,"t_50pct":13242.0,"t_cp":13292.0,"r2_step":0.274,"series":[{"age":15800.0,"pct":0.3155,"n_spo":1.0,"n_upland":317.0},{"age":15611.0,"pct":0.6051,"n_spo":2.0,"n_upland":330.5},{"age":15450.0,"pct":0.0,"n_spo":0.0,"n_upland":332.5},{"age":15274.0,"pct":1.7751,"n_spo":6.0,"n_upland":338.0},{"age":15022.0,"pct":0.5822,"n_spo":2.0,"n_upland":343.5},{"age":14774.0,"pct":0.0,"n_spo":0.0,"n_upland":362.5},{"age":14568.0,"pct":0.0,"n_spo":0.0,"n_upland":347.0},{"age":14319.0,"pct":0.5464,"n_spo":2.0,"n_upland":366.0},{"age":14109.0,"pct":0.8523,"n_spo":3.0,"n_upland":352.0},{"age":13898.0,"pct":0.0,"n_spo":0.0,"n_upland":366.5},{"age":13691.0,"pct":2.9028,"n_spo":10.0,"n_upland":344.5},{"age":13467.0,"pct":0.8759,"n_spo":3.0,"n_upland":342.5},{"age":13333.0,"pct":1.0485,"n_spo":4.0,"n_upland":381.5},{"age":13250.0,"pct":0.0,"n_spo":0.0,"n_upland":341.0},{"age":13207.0,"pct":0.5848,"n_spo":2.0,"n_upland":342.0},{"age":13076.0,"pct":0.2732,"n_spo":1.0,"n_upland":366.0},{"age":12945.0,"pct":0.277,"n_spo":1.0,"n_upland":361.0},{"age":12818.0,"pct":0.2252,"n_spo":1.0,"n_upland":444.0},{"age":12694.0,"pct":0.0,"n_spo":0.0,"n_upland":395.0},{"age":12569.0,"pct":0.0,"n_spo":0.0,"n_upland":356.5},{"age":12443.0,"pct":0.0,"n_spo":0.0,"n_upland":424.0},{"age":12317.0,"pct":0.0,"n_spo":0.0,"n_upland":353.5},{"age":12193.0,"pct":0.0,"n_spo":0.0,"n_upland":343.0},{"age":12071.0,"pct":0.0,"n_spo":0.0,"n_upland":337.0},{"age":11948.0,"pct":0.0,"n_spo":0.0,"n_upland":374.0},{"age":11860.0,"pct":0.0,"n_spo":0.0,"n_upland":378.5},{"age":11774.0,"pct":0.6508,"n_spo":3.0,"n_upland":461.0},{"age":11678.0,"pct":0.0,"n_spo":0.0,"n_upland":363.0},{"age":11571.0,"pct":0.0,"n_spo":0.0,"n_upland":333.0},{"age":11466.0,"pct":0.0,"n_spo":0.0,"n_upland":339.0},{"age":11370.0,"pct":0.0,"n_spo":0.0,"n_upland":330.0},{"age":11274.0,"pct":0.0,"n_spo":0.0,"n_upland":358.5},{"age":11121.0,"pct":0.0,"n_spo":0.0,"n_upland":330.0},{"age":10812.0,"pct":0.0,"n_spo":0.0,"n_upland":331.5},{"age":10455.0,"pct":0.0,"n_spo":0.0,"n_upland":323.5},{"age":10062.0,"pct":0.0,"n_spo":0.0,"n_upland":339.0}]},{"id":47259,"name":"Hall's Cave","state":"TX","n_samples":17,"n_nonzero":8,"max_pct":11.11,"t_onset":14462.0,"t_2pct":11310.0,"t_50pct":13783.0,"t_cp":13802.0,"r2_step":0.368,"series":[{"age":16262.0,"pct":0.4255,"n_spo":1.0,"n_upland":235.0},{"age":15046.0,"pct":2.3041,"n_spo":5.0,"n_upland":217.0},{"age":14462.0,"pct":11.1111,"n_spo":9.0,"n_upland":81.0},{"age":13910.0,"pct":2.7778,"n_spo":5.0,"n_upland":180.0},{"age":13693.0,"pct":0.4082,"n_spo":1.0,"n_upland":245.0},{"age":13596.0,"pct":0.0,"n_spo":0.0,"n_upland":180.0},{"age":13514.0,"pct":0.0,"n_spo":0.0,"n_upland":193.0},{"age":13433.0,"pct":0.463,"n_spo":1.0,"n_upland":216.0},{"age":13352.0,"pct":0.0,"n_spo":0.0,"n_upland":109.0},{"age":13258.0,"pct":0.0,"n_spo":0.0,"n_upland":217.0},{"age":13161.0,"pct":0.0,"n_spo":0.0,"n_upland":221.0},{"age":12930.0,"pct":0.0,"n_spo":0.0,"n_upland":200.0},{"age":12417.0,"pct":0.0,"n_spo":0.0,"n_upland":172.0},{"age":11843.0,"pct":1.8634,"n_spo":3.0,"n_upland":161.0},{"age":11378.0,"pct":2.2857,"n_spo":4.0,"n_upland":175.0},{"age":10831.0,"pct":0.0,"n_spo":0.0,"n_upland":215.0},{"age":10366.0,"pct":0.0,"n_spo":0.0,"n_upland":219.0}]},{"id":3056,"name":"Como Lake","state":"CO","n_samples":10,"n_nonzero":7,"max_pct":4.01,"t_onset":14109.0,"t_2pct":12211.0,"t_50pct":13459.0,"t_cp":11895.0,"r2_step":0.725,"series":[{"age":14606.0,"pct":2.8777,"n_spo":8.0,"n_upland":278.0},{"age":14109.0,"pct":4.0134,"n_spo":12.0,"n_upland":299.0},{"age":13615.0,"pct":2.4823,"n_spo":7.0,"n_upland":282.0},{"age":13126.0,"pct":0.9901,"n_spo":3.0,"n_upland":303.0},{"age":12641.0,"pct":2.381,"n_spo":7.0,"n_upland":294.0},{"age":12152.0,"pct":1.9481,"n_spo":6.0,"n_upland":308.0},{"age":11638.0,"pct":0.0,"n_spo":0.0,"n_upland":302.0},{"age":11139.0,"pct":0.3333,"n_spo":1.0,"n_upland":300.0},{"age":10621.0,"pct":0.0,"n_spo":0.0,"n_upland":304.0},{"age":10118.0,"pct":0.0,"n_spo":0.0,"n_upland":298.0}]},{"id":15876,"name":"Tulare Lake","state":"CA","n_samples":10,"n_nonzero":4,"max_pct":0.86,"t_onset":null,"t_2pct":null,"t_50pct":14696.0,"t_cp":11395.0,"r2_step":0.295,"series":[{"age":16300.0,"pct":0.0,"n_spo":0.0,"n_upland":336.0},{"age":15228.0,"pct":0.3165,"n_spo":1.0,"n_upland":316.0},{"age":14165.0,"pct":0.0,"n_spo":0.0,"n_upland":367.0},{"age":13124.0,"pct":0.2915,"n_spo":1.0,"n_upland":343.0},{"age":12031.0,"pct":0.2941,"n_spo":1.0,"n_upland":340.0},{"age":11562.0,"pct":0.8621,"n_spo":3.0,"n_upland":348.0},{"age":11228.0,"pct":0.0,"n_spo":0.0,"n_upland":343.0},{"age":10880.0,"pct":0.0,"n_spo":0.0,"n_upland":341.0},{"age":10530.0,"pct":0.0,"n_spo":0.0,"n_upland":336.0},{"age":10179.0,"pct":0.0,"n_spo":0.0,"n_upland":306.0}]}]};
+  const root = document.getElementById("fig-sporormiella");
+  const svg = document.getElementById("sp-svg");
+  const meta = document.getElementById("sp-meta");
+  const readout = document.getElementById("sp-readout");
+  const sel = root.querySelector(".sp-select");
+  const btns = root.querySelectorAll(".sp-btn");
+  const NS = "http://www.w3.org/2000/svg";
+
+  let mode = "composite";
+  let activeId = 14957;
+
+  const W = 740, L = 142, R = 716;
+  const T_MAX = 16600, T_MIN = 10200;
+  const sx = t => L + (T_MAX - t) / (T_MAX - T_MIN) * (R - L);
+
+  function el(tag, attrs, text){
+    const n = document.createElementNS(NS, tag);
+    for (const [k, v] of Object.entries(attrs || {})) n.setAttribute(k, String(v));
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+
+  // Sort cores chronologically by t_50pct (oldest first) for the lower strip
+  const sortedSites = [...D.sites].sort((a, b) => (b.t_50pct || 0) - (a.t_50pct || 0));
+
+  function render(){
+    svg.innerHTML = "";
+    const topY = 26, topH = 190, botTop = 264, rowH = 18.5;
+
+    // Background YD cooling shading (12,896 to 11,700 BP)
+    const xYD0 = sx(12896), xYD1 = sx(11700);
+    svg.appendChild(el("rect", {x: xYD0, y: topY, width: xYD1 - xYD0, height: topH, fill: "var(--slate)", opacity: 0.11}));
+    svg.appendChild(el("rect", {x: xYD0, y: botTop - 8, width: xYD1 - xYD0, height: sortedSites.length * rowH + 12, fill: "var(--slate)", opacity: 0.09}));
+
+    // Vertical time gridlines
+    for (let t = 16000; t >= 11000; t -= 1000){
+      const x = sx(t);
+      svg.appendChild(el("line", {x1: x, x2: x, y1: topY, y2: topY + topH, stroke: "var(--line)", "stroke-width": 1}));
+      svg.appendChild(el("line", {x1: x, x2: x, y1: botTop - 6, y2: botTop + sortedSites.length * rowH, stroke: "var(--line)", "stroke-width": 1, opacity: 0.65}));
+      svg.appendChild(el("text", {x, y: topY + topH + 16, "text-anchor": "middle", fill: "var(--faint)", "font-size": 11}, (t / 1000).toFixed(0) + "k"));
+    }
+
+    // Reference line: YD onset 12,896 cal BP
+    svg.appendChild(el("line", {x1: xYD0, x2: xYD0, y1: topY - 6, y2: botTop + sortedSites.length * rowH + 4, stroke: "var(--copper)", "stroke-width": 1.6, "stroke-dasharray": "4 3"}));
+    svg.appendChild(el("text", {x: xYD0 - 5, y: topY - 10, "text-anchor": "end", fill: "var(--copper)", "font-size": 11, "font-weight": 600}, "YD cold starts (12,896 BP)"));
+    svg.appendChild(el("text", {x: (xYD0 + xYD1) / 2, y: topY + 13, "text-anchor": "middle", fill: "var(--faint)", "font-size": 10}, "Younger Dryas"));
+
+    // Reference line: Bolling-Allerod onset ~14,700 BP
+    const xBA = sx(14700);
+    svg.appendChild(el("line", {x1: xBA, x2: xBA, y1: topY, y2: topY + topH, stroke: "var(--verdigris)", "stroke-width": 1, "stroke-dasharray": "2 4", opacity: 0.75}));
+    svg.appendChild(el("text", {x: xBA - 4, y: topY + 13, "text-anchor": "end", fill: "var(--verdigris)", "font-size": 10}, "B–A warming (14.7k)"));
+
+    // Top panel axes
+    svg.appendChild(el("line", {x1: L, x2: R, y1: topY + topH, y2: topY + topH, stroke: "var(--faint)", "stroke-width": 1}));
+
+    if (mode === "composite"){
+      const pts = D.composite.filter(p => p.median !== null && p.age <= T_MAX && p.age >= T_MIN);
+      const yMax = 3.2;
+      const sy = v => topY + topH - Math.min(v, yMax) / yMax * (topH - 12);
+      for (const v of [0, 1, 2, 3]){
+        const y = sy(v);
+        svg.appendChild(el("line", {x1: L, x2: R, y1: y, y2: y, stroke: "var(--line)", "stroke-width": 0.7, opacity: 0.6}));
+        svg.appendChild(el("text", {x: L - 8, y: y + 4, "text-anchor": "end", fill: "var(--faint)", "font-size": 11}, v.toFixed(0) + "×"));
+      }
+      svg.appendChild(el("text", {x: 8, y: topY + 14, fill: "var(--faint)", "font-size": 10.5, "font-family": "var(--mono)"}, "CONTINENTAL MEDIAN"));
+      svg.appendChild(el("text", {x: 8, y: topY + 29, fill: "var(--faint)", "font-size": 10.5}, "relative to each core's"));
+      svg.appendChild(el("text", {x: 8, y: topY + 43, fill: "var(--faint)", "font-size": 10.5}, "17–10k mean (95% CI)"));
+
+      // Bootstrap CI polygon
+      const up = pts.map(p => `${sx(p.age).toFixed(1)},${sy(p.median_ci_hi).toFixed(1)}`).join(" L");
+      const dn = [...pts].reverse().map(p => `${sx(p.age).toFixed(1)},${sy(p.median_ci_lo).toFixed(1)}`).join(" L");
+      svg.appendChild(el("path", {d: `M${up} L${dn} Z`, fill: "var(--copper)", opacity: 0.17}));
+
+      // Mean dashed line
+      const meanPath = pts.map(p => `${sx(p.age).toFixed(1)},${sy(p.mean).toFixed(1)}`).join(" L");
+      svg.appendChild(el("path", {d: `M${meanPath}`, fill: "none", stroke: "var(--faint)", "stroke-width": 1.3, "stroke-dasharray": "4 3"}));
+
+      // Median solid copper line
+      const medPath = pts.map(p => `${sx(p.age).toFixed(1)},${sy(p.median).toFixed(1)}`).join(" L");
+      svg.appendChild(el("path", {d: `M${medPath}`, fill: "none", stroke: "var(--copper)", "stroke-width": 2.6}));
+
+      // Interactive hover targets
+      pts.forEach(p => {
+        const x = sx(p.age), y = sy(p.median);
+        const hit = el("rect", {x: x - 9, y: topY, width: 18, height: topH, fill: "transparent", style: "cursor:crosshair"});
+        hit.addEventListener("mouseenter", () => {
+          readout.textContent = `${p.age.toLocaleString()} cal BP (${p.n_sites} cores) · Median normalized spores = ${p.median.toFixed(2)}× (95% CI ${p.median_ci_lo.toFixed(2)}–${p.median_ci_hi.toFixed(2)}×) · Mean = ${p.mean.toFixed(2)}×`;
+        });
+        svg.appendChild(hit);
+        svg.appendChild(el("circle", {cx: x, cy: y, r: 2.6, fill: "var(--copper)", "pointer-events": "none"}));
+      });
+      meta.innerHTML = "<strong>Continental composite (11 cores, 7 states):</strong> median dung spores drop by more than half between 15,200 BP (1.57×) and 13,000 BP (0.68×), then drift slowly to zero through the Younger Dryas — no cliff at 12,896 BP.";
+    } else {
+      const site = D.sites.find(s => s.id === activeId) || D.sites[0];
+      const pts = site.series.filter(p => p.age <= T_MAX && p.age >= T_MIN);
+      const yMax = Math.max(2.6, Math.ceil(Math.max(...pts.map(p => p.pct)) * 1.15));
+      const sy = v => topY + topH - (v / yMax) * (topH - 12);
+
+      // Y ticks
+      const step = yMax > 8 ? 3 : yMax > 4 ? 2 : 1;
+      for (let v = 0; v <= yMax; v += step){
+        const y = sy(v);
+        svg.appendChild(el("line", {x1: L, x2: R, y1: y, y2: y, stroke: "var(--line)", "stroke-width": 0.7, opacity: 0.6}));
+        svg.appendChild(el("text", {x: L - 8, y: y + 4, "text-anchor": "end", fill: "var(--faint)", "font-size": 11}, v + "%"));
+      }
+      // 2% reference line
+      if (yMax >= 2.0){
+        const y2 = sy(2.0);
+        svg.appendChild(el("line", {x1: L, x2: R, y1: y2, y2: y2, stroke: "var(--ochre)", "stroke-width": 1.2, "stroke-dasharray": "3 3"}));
+        svg.appendChild(el("text", {x: R - 4, y: y2 - 4, "text-anchor": "end", fill: "var(--ochre)", "font-size": 10}, "2% threshold"));
+      }
+
+      svg.appendChild(el("text", {x: 8, y: topY + 14, fill: "var(--ink)", "font-size": 11, "font-weight": 600}, site.name + ", " + site.state));
+      svg.appendChild(el("text", {x: 8, y: topY + 30, fill: "var(--faint)", "font-size": 10.5}, "Sporormiella % upland"));
+      svg.appendChild(el("text", {x: 8, y: topY + 44, fill: "var(--faint)", "font-size": 10.5}, `${site.n_samples} samples (${site.n_nonzero} > 0)`));
+
+      // Area & line
+      const linePts = pts.map(p => `${sx(p.age).toFixed(1)},${sy(p.pct).toFixed(1)}`).join(" L");
+      if (pts.length >= 2){
+        const areaD = `M${sx(pts[0].age).toFixed(1)},${(topY + topH).toFixed(1)} L${linePts} L${sx(pts[pts.length-1].age).toFixed(1)},${(topY + topH).toFixed(1)} Z`;
+        svg.appendChild(el("path", {d: areaD, fill: "var(--copper)", opacity: 0.14}));
+        svg.appendChild(el("path", {d: `M${linePts}`, fill: "none", stroke: "var(--copper)", "stroke-width": 2.2}));
+      }
+
+      // Decline markers
+      if (site.t_50pct){
+        const x5 = sx(site.t_50pct);
+        svg.appendChild(el("line", {x1: x5, x2: x5, y1: topY + 18, y2: topY + topH, stroke: "var(--verdigris)", "stroke-width": 1.3}));
+        svg.appendChild(el("text", {x: x5 + 4, y: topY + 28, fill: "var(--verdigris)", "font-size": 10}, "50% drop: " + site.t_50pct.toLocaleString()));
+      }
+      if (site.t_cp){
+        const xc = sx(site.t_cp);
+        svg.appendChild(el("line", {x1: xc, x2: xc, y1: topY + 34, y2: topY + topH, stroke: "var(--ink)", "stroke-width": 1.2, "stroke-dasharray": "2 2"}));
+        svg.appendChild(el("text", {x: xc + 4, y: topY + 44, fill: "var(--ink)", "font-size": 10}, "Step: " + site.t_cp.toLocaleString()));
+      }
+
+      pts.forEach(p => {
+        const x = sx(p.age), y = sy(p.pct);
+        const dot = el("circle", {cx: x, cy: y, r: 3.4, fill: "var(--copper)", stroke: "var(--paper)", "stroke-width": 1.2, style: "cursor:pointer"});
+        dot.addEventListener("mouseenter", () => {
+          readout.textContent = `${site.name} (${site.state}) at ${Math.round(p.age).toLocaleString()} cal BP · Sporormiella = ${p.pct.toFixed(2)}% (${p.n_spo} spores / ${p.n_upland} upland pollen)`;
+        });
+        svg.appendChild(dot);
+      });
+      const f = v => v ? v.toLocaleString() + " BP" : "n/a";
+      meta.innerHTML = `<strong>${site.name}, ${site.state}:</strong> peak ${site.max_pct.toFixed(1)}% · half-drop <code>${f(site.t_50pct)}</code> · 2% crossing <code>${f(site.t_2pct)}</code> · step changepoint <code>${f(site.t_cp)}</code>.`;
+    }
+
+    // Lower strip: all 11 cores decline timing
+    svg.appendChild(el("text", {x: 8, y: botTop - 12, fill: "var(--faint)", "font-size": 10.5, "font-family": "var(--mono)"}, "ALL 11 CORES (CLICK TO OPEN)"));
+    svg.appendChild(el("text", {x: L, y: botTop - 12, fill: "var(--faint)", "font-size": 10.5}, "● Half-drop (t₅₀%, 9/11 pre-YD)   ◆ Step changepoint (t_cp, 7/10 pre-YD)   □ 2% crossing (6/9 pre-YD)"));
+
+    sortedSites.forEach((s, i) => {
+      const y = botTop + i * rowH + 9;
+      const isAct = mode === "site" && s.id === activeId;
+      if (isAct){
+        svg.appendChild(el("rect", {x: 0, y: y - 9, width: W, height: rowH, fill: "var(--copper)", opacity: 0.1}));
+      }
+      const hit = el("rect", {x: 0, y: y - 9, width: W, height: rowH, class: "sp-row-hit"});
+      hit.addEventListener("click", () => {
+        mode = "site";
+        activeId = s.id;
+        sel.value = String(s.id);
+        btns.forEach(b => b.classList.toggle("is-on", b.dataset.mode === "site"));
+        render();
+      });
+      hit.addEventListener("mouseenter", () => {
+        const lead = s.t_50pct ? Math.round(s.t_50pct - 12896) : 0;
+        const dir = lead >= 0 ? `+${lead.toLocaleString()} yr BEFORE YD` : `${Math.abs(lead).toLocaleString()} yr AFTER YD`;
+        readout.textContent = `${s.name}, ${s.state} · Half-drop ${s.t_50pct ? s.t_50pct.toLocaleString() + " BP (" + dir + ")" : "n/a"} · Step ${s.t_cp ? s.t_cp.toLocaleString() + " BP" : "n/a"} · 2% ${s.t_2pct ? s.t_2pct.toLocaleString() + " BP" : "never ≥2%"}`;
+      });
+      svg.appendChild(hit);
+
+      svg.appendChild(el("text", {x: L - 8, y: y + 4, "text-anchor": "end", fill: isAct ? "var(--copper)" : "var(--ink)", "font-size": 11, "font-weight": isAct ? 600 : 400, "pointer-events": "none"}, `${s.name}, ${s.state}`));
+      svg.appendChild(el("line", {x1: L, x2: R, y1: y, y2: y, stroke: "var(--line)", "stroke-width": 0.7, "pointer-events": "none"}));
+
+      // Connector between t_50pct and t_cp if both exist
+      if (s.t_50pct && s.t_cp){
+        svg.appendChild(el("line", {x1: sx(s.t_50pct), x2: sx(s.t_cp), y1: y, y2: y, stroke: "var(--ink-soft)", "stroke-width": 1.6, opacity: 0.45, "pointer-events": "none"}));
+      }
+      if (s.t_2pct){
+        const x = sx(s.t_2pct);
+        svg.appendChild(el("rect", {x: x - 3.5, y: y - 3.5, width: 7, height: 7, fill: "var(--paper)", stroke: "var(--ochre)", "stroke-width": 1.6, "pointer-events": "none"}));
+      }
+      if (s.t_cp){
+        const x = sx(s.t_cp);
+        svg.appendChild(el("polygon", {points: `${x},${y-4.5} ${x+4.5},${y} ${x},${y+4.5} ${x-4.5},${y}`, fill: s.t_cp > 12896 ? "var(--copper)" : "var(--slate)", stroke: "var(--paper)", "stroke-width": 1, "pointer-events": "none"}));
+      }
+      if (s.t_50pct){
+        const x = sx(s.t_50pct);
+        svg.appendChild(el("circle", {cx: x, cy: y, r: 4, fill: s.t_50pct > 12896 ? "var(--verdigris)" : "var(--slate)", stroke: "var(--paper)", "stroke-width": 1.2, "pointer-events": "none"}));
+      }
+    });
+
+    svg.appendChild(el("text", {x: (L + R) / 2, y: botTop + sortedSites.length * rowH + 22, "text-anchor": "middle", fill: "var(--faint)", "font-size": 11}, "Calibrated years before present (cal BP; older ← → younger)"));
+  }
+
+  btns.forEach(b => b.addEventListener("click", () => {
+    mode = b.dataset.mode;
+    btns.forEach(x => x.classList.toggle("is-on", x === b));
+    render();
+  }));
+  sel.addEventListener("change", () => {
+    activeId = Number(sel.value);
+    mode = "site";
+    btns.forEach(x => x.classList.toggle("is-on", x.dataset.mode === "site"));
+    render();
+  });
+  render();
+})();
+</script>
+</figure>

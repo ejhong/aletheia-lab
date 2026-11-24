@@ -3,8 +3,8 @@
 # The scorecard, tiles and timeline are made by scripts/make_topic_figures.py; rerun it when a result changes.
 # "image:" names a picture in site/assets/illustrations/ (made by scripts/make_illustrations.py).
 title: The Younger Dryas impact hypothesis
-summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Eight studies each test one mark such an event should have left.
-questions: 43, 60, 69, 75, 76, 100, 103, 40, 104
+summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Nine studies each test one mark such an event should have left.
+questions: 43, 60, 69, 75, 76, 100, 103, 116, 40, 104
 order: 1
 atlas: ydih
 atlas_title: Fire From the Sky
@@ -29,7 +29,7 @@ Each study here takes one mark, fixes the test before looking at the data, and a
 
 {{figure: topic-younger-dryas/scorecard}}
 
-Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. Each has been checked by a model from a different company: most were re-run from scratch from the written plan alone, the latest was spot-checked, and the numbers matched.
+Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. Eight of the nine have already been checked by a model from a different company and matched; the newest (the great animals) is open to second-vendor replication.
 
 ## The order of events
 
@@ -80,9 +80,15 @@ The same study checked the critics' alternative. The 150 years before the cold h
 
 Read more: [the platinum and volcanism study](../../questions/yd-platinum-volcanism/).
 
+### The great animals
+
+If a strike 12,850 years ago brought down North America's Ice Age giants, large plant-eaters should have held steady until then and vanished at once afterward. Neither appears in the two public records we tested. In nine of eleven calibrated lake and cave cores across seven US states, dung-fungus spores from giant herbivores had already fallen past half their peak a millennium or more before the cold began (median 14,669 years ago), though three sites stayed high into the Younger Dryas. Direct bone radiocarbon dates do drop sharply around 12,800 to 12,600 years ago—yet modern AMS collagen dates leave ten mammoths, mastodons, a giant beaver and a short-faced bear living 250 to 1,900 years past the claimed impact, putting nearly seven times more fossil probability inside the Younger Dryas than radiocarbon-plateau smearing can produce. Extinctions were staggered across genera by more than a thousand years.
+
+Read more: [the megafauna timing study](../../questions/yd-megafauna-timing/).
+
 ### People
 
-If the catastrophe was real, the dated traces of people should thin out when it struck. In nearly 7,000 radiocarbon dates from North America, Europe and Asia they do not. This is the weakest of the six tests. Radiocarbon dating is at its most distorted in exactly those centuries, more than the test allowed for, so the dates show no crash but cannot rule one out.
+If the catastrophe was real, the dated traces of people should thin out when it struck. In nearly 7,000 radiocarbon dates from North America, Europe and Asia they do not. This is the weakest of the tests. Radiocarbon dating is at its most distorted in exactly those centuries, more than the test allowed for, so the dates show no crash but cannot rule one out.
 
 {{figure: younger-dryas-crash/curves}}
 
@@ -120,9 +126,9 @@ This is a test of the stream today. A swarm could have broken down in 12,900 yea
 
 ## What the studies add up to
 
-This section is the reading of the AI that ran most of these studies, after all eight. It is not the atlas's judgment, which is made [there](https://ejhong.github.io/aletheia/cases/ydih/) by its own process.
+This section is the reading of the AI models that ran these studies, after all nine. It is not the atlas's judgment, which is made [there](https://ejhong.github.io/aletheia/cases/ydih/) by its own process.
 
-**The single day of fire.** This version made the sharpest predictions and they have failed one after another. There is no burn in the world's air or its charcoal. The ammonium in Greenland comes late and builds slowly. The cold itself began more slowly than most of the ice age's sudden coolings and went no deeper. The platinum arrives two or three decades after the cold has started. People's traces do not thin, though that last test was a blurred one. We count this version as very unlikely.
+**The single day of fire.** This version made the sharpest predictions and they have failed one after another. There is no burn in the world's air or its charcoal. The ammonium in Greenland comes late and builds slowly. The cold itself began more slowly than most of the ice age's sudden coolings and went no deeper. The platinum arrives two or three decades after the cold has started. North America's giant animals began declining a millennium beforehand in most lake cores and still walked the continent centuries after the claimed strike. People's traces do not thin, though that last test was a blurred one. We count this version as very unlikely.
 
 **The comet that kept coming.** This version dodges the objections about timing, because it predicts no single moment. It has now been tested where it does make predictions, three times, and each went against it.
 
@@ -140,12 +146,12 @@ It can still be rescued, by a swarm that has since dispersed and airbursts that 
 
 **What points the other way.** The ordinary account, a slowing of the Atlantic's circulation, needs nothing unusual, and the Younger Dryas looks like the ice age's other coolings in shape, in depth and in what followed. The heavy run of eruptions in the 150 years before it is the one unusual thing found in the critics' favour, and it is a coincidence in time, not a shown cause.
 
-**In one sentence.** After eight tests, a cosmic impact as the *cause* of the Younger Dryas looks unlikely in either form; a lesser event that left platinum on the ice around that time remains open; and nothing here touches the claims we have not tested.
+**In one sentence.** After nine tests, a cosmic impact as the *cause* of the Younger Dryas or of North America's megafauna extinction looks unlikely in either form; a lesser event that left platinum on the ice around that time remains open; and nothing here touches the claims we have not tested.
 
 ## What this does not settle
 
 - **Where the platinum came from.** It has no volcanic sulphate with it and nobody has measured platinum through the ice age's other coolings. This is the one piece that still wants an explanation, and it is the best remaining ground for any version of the hypothesis, the drawn-out one included.
 - **The traces in sediment** claimed for an impact: tiny spherules, nanodiamonds, a dark layer at many sites. None is tested here.
-- **The great animals.** Nothing here bears on when or why they died out.
+- **What drove the megafauna decline.** The timing rules out a single day of extinction at 12,850 years ago, but does not separate human hunting from Ice Age warming and cooling as the cause of the drawn-out loss.
 - **People.** The one test made was blurred by the dating method. A better method exists and has not been tried.
-- **The limits of the work itself.** AI models designed, ran and wrote up every study, mostly in single sessions. The numbers have been reproduced across companies' models. No human specialist has reviewed any of it.
+- **The limits of the work itself.** AI models designed, ran and wrote up every study, mostly in single sessions. The earlier numbers have been reproduced across companies' models; the newest awaits replication. No human specialist has reviewed any of it.
