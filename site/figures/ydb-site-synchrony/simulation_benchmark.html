@@ -1,0 +1,97 @@
+<figure class="fig" id="ydb-sim-fig" aria-label="Observed vs forward-simulated single-year Ward-Wilson T statistics on IntCal20">
+<style>
+#ydb-sim-fig .sim-controls { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin:0 0 .85rem; }
+#ydb-sim-fig .sim-btn { font:500 11.5px/1.2 var(--mono); letter-spacing:.04em; padding:.42rem .75rem; border:1px solid var(--line); background:var(--panel); color:var(--ink); cursor:pointer; border-radius:2px; }
+#ydb-sim-fig .sim-btn[aria-pressed="true"] { background:var(--copper); border-color:var(--copper); color:var(--paper); }
+#ydb-sim-fig .sim-tip { min-height:1.4rem; margin:.4rem 0 0; font:400 12px/1.4 var(--mono); color:var(--ink-soft); }
+</style>
+<div class="sim-controls">
+  <button type="button" class="sim-btn" data-model="M0" aria-pressed="true">Model M0 (lab + IntCal20 curve error)</button>
+  <button type="button" class="sim-btn" data-model="M1" aria-pressed="false">Model M1 (+ 20 yr inter-lab + 50 yr old-wood)</button>
+</div>
+<div class="fig-scroll">
+  <svg id="ydb-sim-svg" class="chart" viewBox="0 0 740 270" role="img" aria-label="Log-scale comparison of observed Ward-Wilson T against 2,000 forward-simulated single-year catalogues"></svg>
+</div>
+<p class="sim-tip" id="ydb-sim-tip">Hover or focus any row to inspect observed T, simulated single-year 95th percentile, and best p-value across the calendar-year sweep.</p>
+<figcaption>Observed Ward–Wilson radiocarbon inhomogeneity T (points) versus the most generous single-year simulated distribution across the calendar sweep (bars show median to 95th percentile of 2,000 IntCal20 forward simulations; log scale). Laacher See Tephra (diamonds, green) sits comfortably below the single-year benchmark under both models. Unfiltered YDB primary dates (circles, copper) exceed the 95th percentile by 4× to 26× under both M0 and M1; only the old-wood-mitigated 9-site subset (triangle, ochre) enters the M1 tolerance band while still failing M0 (p = 0.009).</figcaption>
+<script>
+(function() {
+  const ROWS = [{"label": "Laacher See (5 sites)", "kind": "lst", "T_obs": 0.42, "df": 4, "M0": {"med": 7.15, "q95": 24.4, "p": 0.9975}, "M1": {"med": 25.05, "q95": 156.27, "p": 0.9995}}, {"label": "Laacher See (16 dates)", "kind": "lst", "T_obs": 14.8, "df": 15, "M0": {"med": 35.87, "q95": 63.97, "p": 0.97351}, "M1": {"med": 83.51, "q95": 209.75, "p": 1.0}}, {"label": "YDB Old-Wood-Mitigated (9 sites)", "kind": "ydb_fav", "T_obs": 28.07, "df": 8, "M0": {"med": 8.92, "q95": 19.02, "p": 0.009}, "M1": {"med": 14.91, "q95": 39.6, "p": 0.15742}}, {"label": "YDB Primary Direct-14C (9 sites)", "kind": "ydb", "T_obs": 630.62, "df": 8, "M0": {"med": 10.34, "q95": 23.89, "p": 0.0005}, "M1": {"med": 31.87, "q95": 147.95, "p": 0.0015}}, {"label": "YDB All Raw Direct-14C (33 dates)", "kind": "ydb", "T_obs": 833.36, "df": 32, "M0": {"med": 38.26, "q95": 55.53, "p": 0.0005}, "M1": {"med": 92.11, "q95": 172.46, "p": 0.0005}}];
+  const svg = document.getElementById("ydb-sim-svg");
+  const tipEl = document.getElementById("ydb-sim-tip");
+  const btns = document.querySelectorAll("#ydb-sim-fig .sim-btn");
+  const NS = "http://www.w3.org/2000/svg";
+
+  const W = 740, H = 270, left = 240, right = 708, topPad = 32;
+  const LOG_MIN = Math.log10(0.3), LOG_MAX = Math.log10(1500);
+  const sx = v => left + (Math.log10(Math.max(0.3, v)) - LOG_MIN) / (LOG_MAX - LOG_MIN) * (right - left);
+
+  function el(tag, attrs, text) {
+    const n = document.createElementNS(NS, tag);
+    for (const [k, v] of Object.entries(attrs || {})) n.setAttribute(k, String(v));
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+
+  function render(model) {
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    [0.5, 1, 5, 10, 50, 100, 500, 1000].forEach(v => {
+      const x = sx(v);
+      svg.appendChild(el("line", { x1: x, x2: x, y1: topPad - 4, y2: H - 40, stroke: "var(--line)", "stroke-width": 1 }));
+      svg.appendChild(el("text", { x: x, y: H - 22, "text-anchor": "middle", fill: "var(--faint)", "font-family": "var(--mono)", "font-size": 10.5 }, String(v)));
+    });
+    svg.appendChild(el("text", { x: (left + right) / 2, y: H - 5, "text-anchor": "middle", fill: "var(--faint)", "font-family": "var(--sans)", "font-size": 11 }, "Ward–Wilson radiocarbon inhomogeneity T (log scale; lower = more synchronous)"));
+
+    const rowH = 38;
+    ROWS.forEach((r, i) => {
+      const y = topPad + 16 + i * rowH;
+      const m = r[model];
+      const g = el("g", { tabindex: 0, style: "cursor:pointer" });
+      const color = r.kind === "lst" ? "var(--verdigris)" : (r.kind === "ydb_fav" ? "var(--ochre)" : "var(--copper)");
+
+      g.appendChild(el("text", { x: left - 10, y: y + 4, "text-anchor": "end", fill: "var(--ink)", "font-family": "var(--sans)", "font-size": 11.5 }, r.label));
+
+      // Simulated single-year null bar (from 0.3 to q95, with tick at median)
+      const x0 = sx(0.3);
+      const xMed = sx(m.med);
+      const x95 = sx(m.q95);
+      g.appendChild(el("rect", { x: x0, y: y - 7, width: Math.max(2, x95 - x0), height: 14, rx: 2, fill: "var(--slate)", opacity: 0.22 }));
+      g.appendChild(el("line", { x1: xMed, x2: xMed, y1: y - 9, y2: y + 9, stroke: "var(--slate)", "stroke-width": 2 }));
+      g.appendChild(el("line", { x1: x95, x2: x95, y1: y - 9, y2: y + 9, stroke: "var(--slate)", "stroke-width": 1.5, "stroke-dasharray": "2 2" }));
+
+      // Observed T marker
+      const xObs = sx(r.T_obs);
+      if (r.kind === "lst") {
+        g.appendChild(el("polygon", { points: `${xObs},${y-6.5} ${xObs+6.5},${y} ${xObs},${y+6.5} ${xObs-6.5},${y}`, fill: color, stroke: "var(--paper)", "stroke-width": 1.2 }));
+      } else if (r.kind === "ydb_fav") {
+        g.appendChild(el("polygon", { points: `${xObs},${y-7} ${xObs+6.5},${y+5.5} ${xObs-6.5},${y+5.5}`, fill: color, stroke: "var(--paper)", "stroke-width": 1.2 }));
+      } else {
+        g.appendChild(el("circle", { cx: xObs, cy: y, r: 6, fill: color, stroke: "var(--paper)", "stroke-width": 1.2 }));
+      }
+
+      const pTxt = m.p < 0.001 ? "p=0.0005" : "p=" + m.p.toFixed(3);
+      const lblX = Math.min(right - 2, xObs + 10);
+      const anchor = xObs > right - 95 ? "end" : "start";
+      const tx = anchor === "end" ? xObs - 10 : lblX;
+      g.appendChild(el("text", { x: tx, y: y + 4, "text-anchor": anchor, fill: color, "font-family": "var(--mono)", "font-size": 10.5, "font-weight": 600 }, "T=" + r.T_obs.toFixed(1) + " (" + pTxt + ")"));
+
+      const msg = r.label + " [" + model + "]: observed T=" + r.T_obs.toFixed(2) + " (df=" + r.df + ") vs. simulated single-year median " + m.med.toFixed(1) + " (95th pct " + m.q95.toFixed(1) + "), best p=" + m.p.toFixed(4);
+      const show = () => { tipEl.textContent = msg; };
+      g.addEventListener("mouseenter", show);
+      g.addEventListener("focus", show);
+      svg.appendChild(g);
+    });
+
+    // Legend top-right
+    svg.appendChild(el("rect", { x: left, y: 8, width: 14, height: 10, fill: "var(--slate)", opacity: 0.25 }));
+    svg.appendChild(el("text", { x: left + 19, y: 17, fill: "var(--ink-soft)", "font-family": "var(--sans)", "font-size": 10.5 }, "Simulated single-year 0–95th pct band (solid tick = median)"));
+  }
+
+  btns.forEach(b => b.addEventListener("click", () => {
+    btns.forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    render(b.dataset.model);
+  }));
+  render("M0");
+})();
+</script>
+</figure>
