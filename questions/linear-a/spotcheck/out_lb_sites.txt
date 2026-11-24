@@ -1,0 +1,2 @@
+types 2373 {'Py': 1296, 'Kn': 928, 'Th': 151, 'My': 104, 'Va': 28, 'Mi': 3, 'Ti': 2, 'Ha': 2, 'Di': 1, 'Me': 1, 'Ik': 1}
+Knossos-only types 829 34.9% tokens by site [('Py', 2671), ('Kn', 1553), ('Th', 208), ('My', 118), ('Va', 43)]

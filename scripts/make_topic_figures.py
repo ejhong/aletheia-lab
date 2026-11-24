@@ -244,12 +244,12 @@ def minds():
 
 def deep_memory():
     tiles("topic-deep-memory", [
-        ("5", "tests of a shared past: two in ancient DNA, two in the sky, and one matching flood stories to drowned coasts", False),
+        ("9", "tests of claims about the deep past: travellers, star maps, flood stories, lost industries, a secret gospel and an unread script", False),
         ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean; none unexplained", False),
-        ("36% and 34%", "of coastal peoples have a flood motif beside the narrowest drowned shelves and beside the widest", True),
+        ("4 of 9", "could not decide, because the method could not have seen the thing even if it were there", False),
         ("Still open", "the stories and images themselves, which the atlas weighs, and stories of particular drowned places", True)])
     scorecard("topic-deep-memory", "scorecard", "What each study tested and found",
-              ["The trace", "If there was a shared past", "What the record shows"], [
+              ["The trace", "The claim", "What the record shows"], [
         (31, "population-y", "The Australasian signal in the Amazon", "The resemblance between some Amazonians and Australasians traces to a crossing of the Pacific.",
          "It is real and faint, and it leads back to mainland Asia tens of thousands of years ago. None of 58 groups of ancient Americans stands out for it.",
          "Not found", "Real, but not from across the Pacific", "no"),
@@ -264,7 +264,19 @@ def deep_memory():
          "Could not tell", "Blind machine judges were not up to it", "open"),
         (44, "flood-myths", "Flood myths and drowned land", "Flood stories are commonest among peoples whose coast lost the most land when the Ice Age sea rose.",
          "Among 396 peoples near water in a catalogue of world myth, flood motifs are as common beside the narrowest drowned shelves (36%) as beside the widest (34%). The test had faults, one of its two checks on the method failed, and it could have missed a modest effect; mending the faults left the answer the same.",
-         "Not found", "No sign of it, in a test weaker than it first looked", "no")])
+         "Not found", "No sign of it, in a test weaker than it first looked", "no"),
+        (82, "lost-metallurgy", "Smoke from lost furnaces", "A civilisation that smelted metal before the Bronze Age left lead in the ice and peat of its time.",
+         "Nothing unusual before 5,000 years ago. But the same records show none of the smelting known from 7,000 years ago, and the test as fixed would have missed Rome. No northern data for most of the Ice Age.",
+         "Could not tell", "Too coarse to see early metalworking", "open"),
+        (88, "ice-age-farming", "Crop pollen in Ice Age mud", "Farming before 12,000 years ago left cereal pollen, field weeds and cleared forest in lake cores.",
+         "No such signal. But the detector found 23% of known farming-era cores where the plan required half, and none in the Fertile Crescent when farming began there.",
+         "Could not tell", "The detector failed its own test", "open"),
+        (15, "secret-mark", "The Secret Gospel of Mark", "The letter that quotes it is by Clement of Alexandria, and the quoted passages are an early part of Mark.",
+         "The letter is too short for style to say who wrote it. The quoted passages share more phrases with Mark, word for word, than any stretch of Mark shares with the rest: what a close imitation would look like, with no date on it.",
+         "Partly", "An unusually close echo of Mark; author unknown", "partly"),
+        (12, "linear-a", "Linear A read as Semitic", "Read with the proposed sound values, the words of Minoan Crete are Semitic.",
+         "They match Semitic roots as often as Greek words do, and so do Hebrew words. The test cannot tell a Semitic language from Greek, and the proposal's main evidence was not tested.",
+         "Could not tell", "The test cannot decide", "open")])
     (FIG / "topic-deep-memory" / "sky-plate.html").write_text(
         '<figure class="plate"><img src="../../assets/illustrations/ancient-skies.jpg" loading="lazy" width="1536" height="1024" '
         'alt="An engraving of a round chart of the southern sky, crowded with constellation figures around an empty circle at its centre, '

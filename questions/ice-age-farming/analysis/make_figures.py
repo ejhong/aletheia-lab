@@ -23,26 +23,10 @@ def make_tiles(s: dict) -> None:
     lg = sw["late_glacial_12_18ka"]
     lgm = sw["lgm_glacial_neg_18_50ka"]
     items = [
-        (
-            f"{cnt['global_neotoma_pollen_cores_ge12ka']:,}",
-            f"global Neotoma fossil pollen cores reaching ≥12,000 cal BP (out of {cnt['global_neotoma_pollen_cores_total']:,} total); {cnt['cores_with_any_pre12ka_crop_occ']} hold ≥1 pre-12 ka cereal/crop-type grain",
-            False,
-        ),
-        (
-            f"{cal['eu_holocene_8500_2000bp']['farm_relaxed_pct']:.0f}% vs. {cal['eu_mesolithic_neg_11500_9000bp']['farm_relaxed_pct']:.1f}%",
-            f"Holocene Neolithic Europe (n=100) vs. Mesolithic N/C Europe (n=40) under FARM_RELAXED; FARM_STRICT recovers the SE→NW Neolithic wave (lat ρ = −0.59, p = 0.0029; 0% Mesolithic FP)",
-            False,
-        ),
-        (
-            f"{lg['pct_of_global_ge12ka']:.2f}% vs. {lgm['pct_of_global_ge18ka']:.2f}%",
-            f"Late Glacial (12–18 ka: {lg['farm_strict_chron_ok_n']}/1,964) vs. deep LGM negative control (18–50 ka: {lgm['farm_strict_chron_ok_n']}/639) under chron-verified FARM_STRICT (Fisher p = {sw['fisher_p_lg_gt_lgm_strict']:.2f})",
-            False,
-        ),
-        (
-            "Null",
-            "Zero pre-12,000 BP farming signal above deep-Ice-Age wild-grass background; all 4 verified pre-12 ka strict hits sit in the native Mediterranean/Anatolian wild-cereal belt",
-            True,
-        ),
+        ("150", "cores with cereal-type pollen older than 12,000 years were examined, most of them in Europe and the Mediterranean", False),
+        (f"{cal['eu_holocene_8500_2000bp']['farm_strict_pct']:.0f}%", "of known farming-era cores in Europe set off the strict detector; the plan required at least 50%", False),
+        ("0 of 14", "cores in the Fertile Crescent set it off during the centuries when farming began there", False),
+        ("Inconclusive", "No farming signal before 12,000 years ago, from a detector that failed its own test and cannot see the first real farming", True),
     ]
     body = ['<div class="tiles">']
     for v, lbl, is_w in items:
@@ -111,7 +95,7 @@ def make_calibration_and_sweep(s: dict) -> None:
 <div class="fig-scroll">
 <svg id="iaf-c-svg" class="chart" viewBox="0 0 720 330" role="img" aria-label="Farming detection rates and Neolithic wave calibration" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Calibration on known European farming vs. the global pre-12,000 BP Neotoma sweep.</strong> Under <code>FARM_RELAXED</code> (teal) and chronology-verified <code>FARM_STRICT</code> (copper), known Holocene Neolithic Europe lights up strongly (59.0% relaxed, 23.0% strict) compared to Northern/Central European Mesolithic layers (2.5% relaxed, 0.0% strict). Across all 1,964 global Neotoma cores reaching &ge;12,000 cal BP, Late Glacial layers (12–18 ka: 2.39% relaxed, 0.10% strict) are actually <em>lower</em> than the deep Ice Age LGM/MIS 3 negative control (18–50 ka: 2.82% relaxed, 0.31% strict; Fisher p = 0.95). The second tab shows the 23 strict European calibration onsets tracking the southeast-to-northwest spread of farming (Spearman &rho; = &minus;0.59 with latitude, p = 0.0029; &rho; = +0.57 with longitude, p = 0.0046).</figcaption>
+<figcaption><strong>The detectors on known farming, and on the Ice Age.</strong> The strict detector (copper) fires in 23% of European cores from the farming era, against the 50% the plan required, and in none from before farming in northern Europe. The looser screen (teal) fires in 59%. Before 12,000 years ago neither fires more often at 12,000 to 18,000 years than at 18,000 to 50,000. The rates shown are over every core that reaches those ages; only the 150 with cereal-type pollen were examined, and among those the looser screen fires in about a third in both periods, which is to say it does not tell farming from Ice Age grassland. The second button shows when the strict detector first fires in each European core.</figcaption>
 <script>
 (function(){{
   var D = {data_json};
@@ -243,7 +227,7 @@ def make_global_map(s: dict) -> None:
 <div class="fig-scroll">
 <svg id="iaf-m-svg" class="chart" viewBox="0 0 720 335" role="img" aria-label="Map of pre-12,000 BP Neotoma pollen cores with cereal-type grains" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Every chronology-verified pre-12,000 BP <code>FARM_STRICT</code> hit sits inside the native Ice Age range of wild Mediterranean and Anatolian large-grained grasses.</strong> Copper diamonds mark the 2 Late Glacial (12–18 ka) verified strict hits (Lago dell&rsquo;Accesa, Italy; Lake Van, Turkey); dark-teal squares mark the 2 deep LGM/MIS 3 (18–50 ka) verified strict hits (Lago Grande di Monticchio, Italy at 22.5 ka; Ghab, Syria at 36.6 ka). Small teal dots mark cores passing only <code>FARM_RELAXED</code> in 12–18 ka; slate dots mark cores with isolated pre-12 ka cereal-type grains failing both rules. Hover any marker for site details. Outside Italy, Anatolia, and the Levant, zero cores globally pass <code>FARM_STRICT</code>.</figcaption>
+<figcaption><strong>Where anything was flagged before 12,000 years ago.</strong> Diamonds and squares mark the cores that set off the strict detector: two in Italy, two in Turkey, one in Syria. Small dots mark cores that set off only the looser screen or hold stray cereal-type grains. The grains are most simply read as wild grasses, which is asserted here and not tested. The map is nearly empty outside Europe and the Mediterranean because few cores were examined there: of the 150, two are in the tropics.</figcaption>
 <script>
 (function(){{
   var PTS = {data_json};
@@ -282,7 +266,7 @@ def make_global_map(s: dict) -> None:
     // Highlight Mediterranean/Anatolia wild-cereal native range box
     var bx1 = Math.max(L, sx(-5)), bx2 = Math.min(R, sx(46)), by1 = Math.max(T, sy(45)), by2 = Math.min(B, sy(32));
     svg.appendChild(el("rect", {{x: bx1, y: by1, width: bx2 - bx1, height: by2 - by1, fill: "var(--copper)", opacity: 0.08, stroke: "var(--copper)", "stroke-dasharray": "4,3", "stroke-width": 1}}));
-    svg.appendChild(el("text", {{x: bx1 + 4, y: by2 - 5, "font-size": 9.2, fill: "var(--copper)"}}, "Mediterranean / Anatolian wild-cereal belt"));
+    svg.appendChild(el("text", {{x: bx1 + 4, y: by2 - 5, "font-size": 9.2, fill: "var(--copper)"}}, "Mediterranean and Anatolia"));
 
     // Draw background points first, then highlighted strict hits
     var order = {{occ: 0, lg_relaxed: 1, lgm_strict: 2, lg_strict: 3}};

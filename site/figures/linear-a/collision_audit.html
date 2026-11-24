@@ -5,37 +5,37 @@
 <tr>
   <th scope="col">Diagnostic</th>
   <th scope="col">Observed value</th>
-  <th scope="col">Why it matters</th>
+  <th scope="col">What it means</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>2-consonant skeleton space occupied (9-class grid)<span class="m-sub">5,189 Proto-Semitic roots</span></td>
   <td><strong>81 / 81 (100%)</strong></td>
-  <td>Every possible 2-consonant string in any language automatically matches a Semitic root.</td>
+  <td>Every two-consonant word in any language matches some Semitic root.</td>
 </tr>
 <tr>
   <td>3-consonant skeleton space occupied (9-class / 7-class)<span class="m-sub">5,189 Proto-Semitic roots</span></td>
   <td><strong>65.3%</strong> (476/729) · <strong>74.6%</strong> (256/343)</td>
-  <td>Covers 84.3% of real Mycenaean Greek 3-consonant words in Linear B by chance alone.</td>
+  <td>84% of Mycenaean Greek three-consonant words match a root, and 86% of Hebrew ones.</td>
 </tr>
 <tr>
   <td>Mean Proto-Semitic roots per Linear A skeleton<span class="m-sub">lexicon.json (≥3-sign single-root words)</span></td>
   <td><strong>15.7 roots / word</strong></td>
-  <td>High collision multiplicity allows choosing whichever semantic gloss fits context.</td>
+  <td>An average. The median is 5, and a quarter of entries match no root.</td>
 </tr>
 <tr>
   <td>Lexicon entries obeying stated neutralization rules strictly<span class="m-sub">n = 325 single-root ≥3-sign words</span></td>
   <td><strong>42.1%</strong> (A1) · <strong>56.3%</strong> (with affixes)</td>
-  <td>Nearly half of proposed readings require extra unmodeled shifts, deletions, or metatheses.</td>
+  <td>Most of the rest differ by an ordinary prefix, suffix or weak consonant; about a tenth conflict with the stated rules.</td>
 </tr>
 <tr>
   <td>Author confidence tiers in <code>lexicon.json</code><span class="m-sub">total = 736 entries</span></td>
   <td>CONFIRMED <strong>19</strong> (2.6%) · PROBABLE <strong>79</strong> (10.7%) · CANDIDATE <strong>278</strong> · SPECULATIVE <strong>360</strong></td>
-  <td>86.7% of the 736-entry lexicon is self-rated Candidate or Speculative; 290 entries are only 1–2 signs long.</td>
+  <td>The author&rsquo;s own ratings. He writes that they do not imply scholarly consensus.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<figcaption>Structural audit of <code>plasma-ai/kaphtor</code> (commit <code>d419ccc1e79f</code>). Once 29 Semitic consonants are projected onto Linear A's coarse syllabic merger classes, root-dictionary collisions saturate the phonetic space.</figcaption>
+<figcaption><strong>Why almost anything matches.</strong> Once 29 Semitic consonants fall into the nine sound classes the script distinguishes, a list of 5,189 roots fills every two-consonant slot and two thirds of the three-consonant ones. The second view shows how the proposal&rsquo;s author rates his own 736 lexicon entries; he writes that the ratings do not imply scholarly consensus.</figcaption>
 </figure>

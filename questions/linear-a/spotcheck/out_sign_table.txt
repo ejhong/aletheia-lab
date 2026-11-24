@@ -1,0 +1,90 @@
+n signs 86 novel 27
+A        kaph=Nonea    LB=a        cls=-        tier=0.99 status=None
+E        kaph=Nonee    LB=e        cls=-        tier=0.99 status=None
+I        kaph=Nonei    LB=i        cls=-        tier=0.99 status=None
+O        kaph=Noneo    LB=o        cls=-        tier=0.9 status=None
+U        kaph=Noneu    LB=u        cls=-        tier=0.99 status=None
+PA       kaph=pa       LB=pa       cls=P        tier=0.95 status=None
+PE       kaph=pe       LB=pe       cls=P        tier=0.0 status=None
+PI       kaph=pi       LB=pi       cls=P        tier=0.9 status=None
+PO       kaph=po       LB=po       cls=P        tier=0.85 status=None
+PU       kaph=pu       LB=pu       cls=P        tier=0.9 status=None
+TA       kaph=ta       LB=ta       cls=T        tier=0.95 status=None
+TE       kaph=te       LB=te       cls=T        tier=0.9 status=None
+TI       kaph=ti       LB=ti       cls=T        tier=0.9 status=None
+TO       kaph=to       LB=to       cls=T        tier=0.85 status=None
+TU       kaph=tu       LB=tu       cls=T        tier=0.85 status=None
+DA       kaph=da       LB=da       cls=T        tier=0.95 status=None
+DE       kaph=de       LB=de       cls=T        tier=0.9 status=None
+DI       kaph=di       LB=di       cls=T        tier=0.9 status=None
+DO       kaph=do       LB=do       cls=T        tier=0.0 status=None
+DU       kaph=du       LB=du       cls=T        tier=0.9 status=None
+KA       kaph=ka       LB=ka       cls=K        tier=0.9 status=None
+KE       kaph=ke       LB=ke       cls=K        tier=0.85 status=None
+KI       kaph=ki       LB=ki       cls=K        tier=0.8 status=None
+KO       kaph=ko       LB=ko       cls=K        tier=0.8 status=None
+KU       kaph=ku       LB=ku       cls=K        tier=0.9 status=None
+SA       kaph=sa       LB=sa       cls=S        tier=0.9 status=None
+SE       kaph=se       LB=se       cls=S        tier=0.9 status=None
+SI       kaph=si       LB=si       cls=S        tier=0.8 status=None
+SO       kaph=so       LB=so       cls=S        tier=0.0 status=None
+SU       kaph=su       LB=su       cls=S        tier=0.9 status=None
+ZA       kaph=za       LB=za       cls=S        tier=0.75 status=None
+ZE       kaph=ze       LB=ze       cls=S        tier=0.75 status=None
+RA       kaph=ra       LB=ra       cls=R        tier=0.95 status=None
+RE       kaph=re       LB=re       cls=R        tier=0.9 status=None
+RI       kaph=ri       LB=ri       cls=R        tier=0.9 status=None
+RO       kaph=ro       LB=ro       cls=R        tier=0.85 status=None
+RU       kaph=ru       LB=ru       cls=R        tier=0.85 status=None
+MA       kaph=ma       LB=ma       cls=M        tier=0.95 status=None
+ME       kaph=me       LB=me       cls=M        tier=0.9 status=None
+MI       kaph=mi       LB=mi       cls=M        tier=0.9 status=None
+MO       kaph=mo       LB=mo       cls=M        tier=0.0 status=None
+MU       kaph=mu       LB=mu       cls=M        tier=0.9 status=None
+NA       kaph=na       LB=na       cls=N        tier=0.95 status=None
+NE       kaph=ne       LB=ne       cls=N        tier=0.9 status=None
+NI       kaph=ni       LB=ni       cls=N        tier=0.9 status=None
+NO       kaph=no       LB=no       cls=N        tier=0.0 status=None
+NU       kaph=nu       LB=nu       cls=N        tier=0.9 status=None
+QA       kaph=qa       LB=qa       cls=K        tier=0.7 status=None
+QE       kaph=qe       LB=qe       cls=K        tier=0.7 status=None
+JA       kaph=ya       LB=ja       cls=Y  NOVEL tier=0.95 status=None
+JE       kaph=ye       LB=je       cls=Y  NOVEL tier=0.85 status=None
+WA       kaph=wa       LB=wa       cls=W        tier=0.9 status=None
+WE       kaph=we       LB=we       cls=W        tier=0.0 status=None
+WI       kaph=wi       LB=wi       cls=W        tier=0.85 status=None
+RA2      kaph=la       LB=ra₂      cls=R  NOVEL tier=0.85 status=None
+*164     kaph=so       LB=cloth (logogram) cls=S  NOVEL tier=0.3 status=None
+*312     kaph=bi       LB=None     cls=P  NOVEL tier=0.4 status=None
+*314     kaph=ḥa       LB=None     cls=-        tier=0.65 status=None
+*118     kaph=ṭa       LB=talent (L) cls=T  NOVEL tier=0.6 status=None
+*86      kaph=na       LB=None     cls=N  NOVEL tier=0.4 status=None
+JU       kaph=lu       LB=ju       cls=R  NOVEL tier=0.9 status=None
+*306     kaph=ʿa       LB=None     cls=-        tier=0.92 status=None
+*21F     kaph=ha       LB=qi       cls=-        tier=0.75 status=None
+PA₃      kaph=NoneNone LB=None     cls=-        tier=0.9 status=None
+PU₂      kaph=bu       LB=pu₂      cls=P  NOVEL tier=0.8 status=None
+NWA      kaph=nwa      LB=nwa      cls=N        tier=0.6 status=None
+*43      kaph=Noneai   LB=a₃       cls=-        tier=0.0 status=None
+ZU       kaph=ṯu       LB=zu       cls=T  NOVEL tier=0.74 status=None
+AU       kaph=NoneNone LB=au       cls=-        tier=0.75 status=None
+*310     kaph=ni       LB=None     cls=N  NOVEL tier=0.7 status=None
+*34      kaph=qi       LB=None     cls=K  NOVEL tier=0.6 status=None
+*47      kaph=so       LB=None     cls=S  NOVEL tier=0.3 status=None
+*802     kaph=ra       LB=None     cls=R  NOVEL tier=0.5 status=None
+*28B     kaph=yi       LB=None     cls=Y  NOVEL tier=0.5 status=None
+*325     kaph=bu       LB=None     cls=P  NOVEL tier=0.4 status=None
+*301     kaph=na       LB=None     cls=N  NOVEL tier=0.8 status=None
+*305     kaph=da       LB=None     cls=T  NOVEL tier=0.6 status=None
+TA2      kaph=ta       LB=ta₂      cls=T  NOVEL tier=0.65 status=None
+*324     kaph=ṯa       LB=None     cls=T  NOVEL tier=0.3 status=None
+*350     kaph=wo       LB=None     cls=W  NOVEL tier=0.3 status=None
+*362     kaph=no       LB=None     cls=N  NOVEL tier=0.3 status=None
+*364     kaph=ṯa       LB=None     cls=T  NOVEL tier=0.3 status=None
+*82      kaph=si       LB=None     cls=S  NOVEL tier=0.25 status=None
+*329     kaph=mo       LB=None     cls=M  NOVEL tier=0.25 status=None
+*333     kaph=bi       LB=None     cls=P  NOVEL tier=0.25 status=None
+*320     kaph=ti       LB=None     cls=T  NOVEL tier=0.5 status=None
+['ab_number', 'alternates', 'confirmed_by', 'linear_b', 'note', 'primary', 'same_as', 'sign_number']
+['confidence', 'consonant', 'vowel']
+{"phonemic": [{"entry": "*306=ʿA", "evidence": "ʿ leads by one word (7/7 against 6/7 for p, r, l, n, m, w); the anchor *306-QE-DU (KH21) is read *306 · 100[ in GORILA. The alternation with A (*306-TI-KA-A-RE, HT4, beside A-TI-KA-A, ZAWc2) makes *306 a laryngeal with a, which removes p, r, l, n, m and w; it rests on one long pair"}, {"entry": "*21F=HA", "evidence": "As a class (h ḥ ḫ), 7/11 word types, and no rival class above 8/11, so root shape does not decide. In context H gives *21F-*118 ḥiṭṭa 'wheat' (KH 88, ZA 5a), *21F-TU-NE hatune 'son-in-law' (HT 7b, HT 87, HT 117b) and TU-*21F-RI-NA ṭuhārīna. HT Scribe 11 writes *21F-TU-NE (HT 7b, a roster of men) and QE-TU-NE (HT 12, among goods), keeping *21F apart from Q."}, {"entry": "*314=ḤA", "evidence": "ḤA reads all four words: *314-TA-MA ḥatam 'seal' (PH Wc 38), KA-*314-SI kaḥsi 'chair' (PH Wc 37; Egyptian group writing ka-ḥ-si), RA-*314-RA Raḥal 'Ewe' (HT Wc 3006) and DU-*314-RE ḏū har 'the One of the mountain' (KO Za 1). The rival, bu as a variant of PU₂ (DU-*314-RE in the slot of DU-PU₂-RE), leaves RA-*314-RA without a reading; *314 is three wavy strokes on KO Za 1 and at Phaistos, PU₂ three crossed prongs; the two signs share no document"}, {"entry": "*118=ṬA", "evidence": "ṭ reads both repeated words, DA-SI-*118 šiṭṭâ and *21F-*118 ḥṭt 'wheat', and QA-*118-RA-RE qṭr, QA-*118 qṭ 'flax', I-QA-*118 q-ṭ-ʿ (ṭ in Arabic and Aramaic; NWS q-ṣ-ʿ); d only ]QA-*118-SA; DA-SI-*118 counts in the totals of HT13 and HT85a; standalone *118 is the talent"}, {"entry": "PA₃=BA", "evidence": "b 17/19, p 13/19, m and n 16/19, counting the forms in each root's language cells (headers alone: b 13, p 11); b gains KU-PA₃-NA-TU, PA₃-NI-WI, SE-SA-PA₃ and JA-WA-PA₃[; a labial, b ahead of p by four words"}, {"entry": "JU=/lu/", "evidence": "l and d 17/20, r 15/20; the /ra/ elimination assumes no repeated sign, against SA-RA-RA (HT30). l reads all 4 context words; yu possible in JU-KU-NA (KNZc6) and the endings"}, {"entry": "ZU=/ṯu/, /zu/", "evidence": "ṯ 15/21, n and m 16/21; A-ZU-RA yields a root under every rival. ṯ reads 6 of 8 context words, z reads RU-ZU-NA (PS *z), so ZU writes both"}, {"entry": "*310=IN", "evidence": "n and t 6/6, every other consonant 5 or fewer, counting the forms in each root's language cells (headers alone: n 5/6, tied with most consonants); the sixth word, ]SI-ZA-NE-*310 (KN Zf 31), is broken at the front; /ni/ and /in/ give one skeleton"}, {"entry": "*34=QI", "evidence": "qi reads *34-TI-RI qiṭrī, PI-*34-TE piqitti and U-*34-SI u-qīš; ai reads only PI-*34-TE bayte, ʿi only *34-TI-RI ʿiṭrī; AB 21 stands inside a word only in its female form, *21F, read here as an H-sign. Against: U-*34-SI and PI-*34-TE share their slots with U-MI-NA-SI and ]PI-MI-NA-TE, though *34 is no MI+NA monogram"}, {"entry": "*28B=JI", "evidence": "one word, *28B-NU-MA-RE, on three Zakros lists"}, {"entry": "*301=NA", "evidence": "*301 fills the NA slot of A-TA-I-*301-WA-JA at five peak sanctuaries and of every site variant (TA-NA-I-*301-U-TI-NU, JA-TA-I-*301-U-JA, A-TA-I-*301-DE-KA), and writes the n of √n-w-y in A-NA-TI-*301-WA-JA (IOZa8); 236 of 272 tokens stand alone, as the NWY logogram"}, {"entry": "*305=DA", "evidence": "d reads SE-*305 ṣēdā, KA-*305 ka-ḏā 'thus', *305-RU ḏarʿ 'seed-grain' (class T, as DA-TU ḏātu) and *305-WA-NA Dawana (Linear B da-wa-no); ḏ gives no root in SE-*305 and *305-WA-NA; θ̣ and ṣ́ form no set. Against: DA writes the same syllable"}, {"entry": "*320=TI", "evidence": "shape and distribution, on five tokens at one site and period. A 320 draws TI's protuberance as a ring, and stands where TI is missing: Phaistos MM II has no secure TI among 94 sign tokens inside words, against two to five at TI's later rates, and three A 320s. Against: no A 320 word recurs spelled with TI, and GORILA and Salgarella keep the two signs apart"}, {"entry": "*312=BI", "evidence": "its own readings, with no support from another script. Alone and inside the cloth sign it is bitt 'a length of cloth' (Ug. bt, DULAT 247–248), which takes the 1¾ of HT 123+124b; *312-TA and *312-TA₂ read bīta 'the house', drawing grain beside the estate and the storehouse, and *312-TE-TE bittīt 'of the cloth lengths'. Against: the rival ZO has the Linear B ligature TELA+ZO and the sign's shape (Montecchi 2010, 31 n. 38; Melena 2014, 46 n. 50); the lexicon writes bīt with PI, and *333 is also proposed as BI"}, {"entry": "*350=WO", "evidence": "the Linear B sign's shape, on one token. A 350 is 'similar in shape to LB wo' and 'might be an alternative good candidate to represent a possible ancestor (or source) of LB 42/wo' (Salgarella 2020, 171), and with wo A-TA-*350 reads ʾatāwu 'what has come in' on KH 11. Against: the sign stands once, and Salgarella's reserve is 'if not actually a variant of A 306'"}, {"entry": "*362=NO", "evidence": "the forerunner of the Linear B sign, on one token. Melena takes A 362, a hand, for the forerunner of Linear B no (2014a, 84–88, apud Salgarella 2020, 162, 337), and with no WA-*362 reads waynu 'wine' before the must on ZA 10b. Against: the sign stands once, Linear B no has a thumb and no strokes across the stem, 'unlike its LA counterpart', and A 28b is another possible source (Salgarella 2020, 294)"}], "logograms": [{"entry": "*312=length of cloth (bitt, by its first sign)", "evidence": "rests on *312 = BI. Alone before 1, 2 and 1¾ (KH 8, ARKH 3a, HT 123+124b) and inside the cloth sign (HT 38); Ug. bt '\"length, piece\" (?)' of cloth (DULAT 247–248). On HT 49a, in a list of names, the same sign is bitt 'the daughter'"}, {"entry": "*49=PALM/TREE (semantic reading; TAMIR and syllabic /mi/ remain CANDIDATE; U-*49 may be u- 'and' + palm produce, while HT120/PE2 require possible syllabic use)", "evidence": "all four tokens stand inside words (HT120, HT126a, PE2, ZA10b); none stands alone"}, {"entry": "*188=BUṬNU", "evidence": "the commodity class holds (26 of 32); the onset witness, PA₃-*188 (HT8b), is prefixed and may be a transaction sign; *188

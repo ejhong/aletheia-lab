@@ -16,10 +16,10 @@ def write_tiles(d):
     nov_p = d["test2_novel_sign_permutations"]["all_A1_ge3"]["p_perm_novel"]
     mult = d["test5_lexicon_and_collision_audit"]["mean_semitic_roots_per_skeleton"]
     html = f"""<div class="tiles">
-<div class="tile"><p class="tile-value">{la3:.1f}% vs {lb3:.1f}%</p><p class="tile-label">3-consonant Semitic root hit rate in Linear A vs Mycenaean Greek Linear B (p = 0.85)</p></div>
-<div class="tile"><p class="tile-value">{cov2:.0f}%</p><p class="tile-label">of all 81 two-consonant slots are occupied by Proto-Semitic roots under Linear A's mergers</p></div>
-<div class="tile"><p class="tile-value">p = {nov_p:.2f}</p><p class="tile-label">Di Mino's 27 novel consonant sign values vs random shuffles of those same signs (z = −0.17)</p></div>
-<div class="tile"><p class="tile-value">{mult:.1f} roots</p><p class="tile-label">average distinct Proto-Semitic roots colliding on a single Linear A skeleton in the lexicon</p></div>
+<div class="tile"><p class="tile-value">{la3:.0f}% and {lb3:.0f}%</p><p class="tile-label">of three-consonant words match a Semitic root: Linear A, and Mycenaean Greek</p></div>
+<div class="tile"><p class="tile-value">86%</p><p class="tile-label">for Hebrew words on the same test; real Semitic does no better than Greek</p></div>
+<div class="tile"><p class="tile-value">{cov2:.0f}%</p><p class="tile-label">of all two-consonant slots are filled by some Semitic root once 29 consonants fall into nine classes</p></div>
+<div class="tile"><p class="tile-value is-word">Cannot tell</p><p class="tile-label">The test cannot separate a Semitic language from Greek, so it neither supports the proposal nor counts against it</p></div>
 </div>
 """
     (OUT / "tiles.html").write_text(html)
@@ -37,22 +37,22 @@ def write_length_and_controls(d):
             {"label": "4+ consonants (L≥4)", "la_all": t3_all["L4plus"]["rate_a"]*100, "la_ho": t3_ho["L4plus"]["rate_a"]*100, "lb": t3_all["L4plus"]["rate_b"]*100, "n_la": t3_all["L4plus"]["n_a"], "n_lb": t3_all["L4plus"]["n_b"], "p": t3_all["L4plus"]["p_fisher"]},
         ],
         "novel": [
-            {"label": "All affected (A1 strict)", "obs": t2["all_A1_ge3"]["obs_type_rate"]*100, "null": t2["all_A1_ge3"]["null_mean"]*100, "sd": t2["all_A1_ge3"]["null_sd"]*100, "p": t2["all_A1_ge3"]["p_perm_novel"], "n": t2["all_A1_ge3"]["n_affected_types"]},
-            {"label": "In-lexicon (A1 strict)", "obs": t2["in_lexicon_A1_ge3"]["obs_type_rate"]*100, "null": t2["in_lexicon_A1_ge3"]["null_mean"]*100, "sd": t2["in_lexicon_A1_ge3"]["null_sd"]*100, "p": t2["in_lexicon_A1_ge3"]["p_perm_novel"], "n": t2["in_lexicon_A1_ge3"]["n_affected_types"]},
-            {"label": "Held-out (A1 strict)", "obs": t2["held_out_A1_ge3"]["obs_type_rate"]*100, "null": t2["held_out_A1_ge3"]["null_mean"]*100, "sd": t2["held_out_A1_ge3"]["null_sd"]*100, "p": t2["held_out_A1_ge3"]["p_perm_novel"], "n": t2["held_out_A1_ge3"]["n_affected_types"]},
-            {"label": "Held-out (A2 7-class)", "obs": t2["held_out_A2_ge3"]["obs_type_rate"]*100, "null": t2["held_out_A2_ge3"]["null_mean"]*100, "sd": t2["held_out_A2_ge3"]["null_sd"]*100, "p": t2["held_out_A2_ge3"]["p_perm_novel"], "n": t2["held_out_A2_ge3"]["n_affected_types"]},
-            {"label": "Held-out (B affix)", "obs": t2["held_out_B_ge3"]["obs_type_rate"]*100, "null": t2["held_out_B_ge3"]["null_mean"]*100, "sd": t2["held_out_B_ge3"]["null_sd"]*100, "p": t2["held_out_B_ge3"]["p_perm_novel"], "n": t2["held_out_B_ge3"]["n_affected_types"]},
+            {"label": "All words with such a sign", "obs": t2["all_A1_ge3"]["obs_type_rate"]*100, "null": t2["all_A1_ge3"]["null_mean"]*100, "sd": t2["all_A1_ge3"]["null_sd"]*100, "p": t2["all_A1_ge3"]["p_perm_novel"], "n": t2["all_A1_ge3"]["n_affected_types"]},
+            {"label": "In lexicon", "obs": t2["in_lexicon_A1_ge3"]["obs_type_rate"]*100, "null": t2["in_lexicon_A1_ge3"]["null_mean"]*100, "sd": t2["in_lexicon_A1_ge3"]["null_sd"]*100, "p": t2["in_lexicon_A1_ge3"]["p_perm_novel"], "n": t2["in_lexicon_A1_ge3"]["n_affected_types"]},
+            {"label": "Not in lexicon (nine classes)", "obs": t2["held_out_A1_ge3"]["obs_type_rate"]*100, "null": t2["held_out_A1_ge3"]["null_mean"]*100, "sd": t2["held_out_A1_ge3"]["null_sd"]*100, "p": t2["held_out_A1_ge3"]["p_perm_novel"], "n": t2["held_out_A1_ge3"]["n_affected_types"]},
+            {"label": "Not in lexicon (seven classes)", "obs": t2["held_out_A2_ge3"]["obs_type_rate"]*100, "null": t2["held_out_A2_ge3"]["null_mean"]*100, "sd": t2["held_out_A2_ge3"]["null_sd"]*100, "p": t2["held_out_A2_ge3"]["p_perm_novel"], "n": t2["held_out_A2_ge3"]["n_affected_types"]},
+            {"label": "Not in lexicon (affix-tolerant)", "obs": t2["held_out_B_ge3"]["obs_type_rate"]*100, "null": t2["held_out_B_ge3"]["null_mean"]*100, "sd": t2["held_out_B_ge3"]["null_sd"]*100, "p": t2["held_out_B_ge3"]["p_perm_novel"], "n": t2["held_out_B_ge3"]["n_affected_types"]},
         ]
     }
     html = f"""<figure class="fig" aria-label="Length-matched Linear A vs Mycenaean Greek Linear B and novel sign-value permutation test">
 <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;">
   <button type="button" class="la-btn" data-mode="len" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:var(--copper,#9a4d2c);color:#fff;cursor:pointer;font-size:13px;">Linear A vs Mycenaean Greek (by length)</button>
-  <button type="button" class="la-btn" data-mode="novel" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">Novel Sign Permutations (27 proposed signs)</button>
+  <button type="button" class="la-btn" data-mode="novel" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">New sign values, shuffled</button>
 </div>
 <div class="fig-scroll">
 <svg id="la-chart" class="chart" viewBox="0 0 720 270" role="img" aria-label="Comparison chart of Linear A Semitic root hit rates" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption>Left view: matching words of the exact same consonant length against all 5,189 Proto-Semitic roots under Linear A's neutralization classes, <strong>Linear A and Mycenaean Greek (Linear B) hit at identical rates</strong> (100% vs 100% at L=2; 85.0% vs 84.3% at L=3, p = 0.85; 7.1% vs 5.6% at L≥4, p = 0.54). Switch tabs to inspect the permutation test holding Linear B signs fixed and shuffling only Di Mino's 27 newly assigned consonant signs.</figcaption>
+<figcaption><strong>How often words match a Semitic root, by number of consonants.</strong> Linear A read with the proposal&rsquo;s sign values, the Linear A words not in its lexicon, and Mycenaean Greek. The rates are alike at every length. Known Semitic word lists give the same picture (Hebrew: 86% at three consonants), so this comparison cannot tell a Semitic language from Greek. The second button shows the proposal&rsquo;s new sign values against random shuffles of them; that test also fails to recognise real Canaanite spelled with the same values.</figcaption>
 <script>
 (function(){{
   const DATA = {json.dumps(payload)};
@@ -68,10 +68,10 @@ def write_length_and_controls(d):
       o.push('<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="22" y2="236" stroke="var(--line,#ddd)" stroke-dasharray="2 3"/>');
       o.push('<text class="c-tick" x="' + x.toFixed(1) + '" y="252" text-anchor="middle">' + t + '%</text>');
     }});
-    o.push('<text class="c-axis" x="' + left + '" y="266">Share of distinct words matching any of 5,189 Proto-Semitic roots (Regime A1, 9-class grid)</text>');
+    o.push('<text class="c-axis" x="' + left + '" y="266">Share of distinct words matching any of 5,189 Proto-Semitic roots (nine sound classes)</text>');
     // Legend
     o.push('<rect x="165" y="4" width="12" height="10" fill="var(--copper,#9a4d2c)"/><text class="c-sub" x="182" y="13">Linear A (all)</text>');
-    o.push('<rect x="285" y="4" width="12" height="10" fill="#c77d52"/><text class="c-sub" x="302" y="13">Linear A (held-out)</text>');
+    o.push('<rect x="285" y="4" width="12" height="10" fill="#c77d52"/><text class="c-sub" x="302" y="13">Linear A (not in lexicon)</text>');
     o.push('<rect x="440" y="4" width="12" height="10" fill="var(--faint,#6e7681)"/><text class="c-sub" x="457" y="13">Linear B (Mycenaean Greek)</text>');
 
     DATA.lengths.forEach(function(row, i){{
@@ -101,7 +101,7 @@ def write_length_and_controls(d):
       o.push('<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="22" y2="236" stroke="var(--line,#ddd)" stroke-dasharray="2 3"/>');
       o.push('<text class="c-tick" x="' + x.toFixed(1) + '" y="252" text-anchor="middle">' + t + '%</text>');
     }});
-    o.push('<text class="c-axis" x="' + left + '" y="266">Match rate with Di Mino\\'s 27 novel signs (copper dot) vs 1,000 random sign shuffles (grey band ±1 SD)</text>');
+    o.push('<text class="c-axis" x="' + left + '" y="266">Match rate with the proposal\\'s 27 new or revised sign values (copper dot) against 1,000 shuffles of them (grey band, one SD)</text>');
     DATA.novel.forEach(function(row, i){{
       const y = top + i * rowH + 14;
       o.push('<text class="c-group" x="4" y="' + (y + 3) + '">' + row.label + '</text>');
@@ -146,39 +146,39 @@ def write_collision_and_lexicon(d):
 <tr>
   <th scope="col">Diagnostic</th>
   <th scope="col">Observed value</th>
-  <th scope="col">Why it matters</th>
+  <th scope="col">What it means</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>2-consonant skeleton space occupied (9-class grid)<span class="m-sub">5,189 Proto-Semitic roots</span></td>
   <td><strong>{cov['9class_2cons_occupied']} / {cov['9class_2cons_total']} ({cov['9class_2cons_pct']:.0f}%)</strong></td>
-  <td>Every possible 2-consonant string in any language automatically matches a Semitic root.</td>
+  <td>Every two-consonant word in any language matches some Semitic root.</td>
 </tr>
 <tr>
   <td>3-consonant skeleton space occupied (9-class / 7-class)<span class="m-sub">5,189 Proto-Semitic roots</span></td>
   <td><strong>{cov['9class_3cons_pct']:.1f}%</strong> ({cov['9class_3cons_occupied']}/729) · <strong>{cov['7class_3cons_pct']:.1f}%</strong> ({cov['7class_3cons_occupied']}/343)</td>
-  <td>Covers 84.3% of real Mycenaean Greek 3-consonant words in Linear B by chance alone.</td>
+  <td>84% of Mycenaean Greek three-consonant words match a root, and 86% of Hebrew ones.</td>
 </tr>
 <tr>
   <td>Mean Proto-Semitic roots per Linear A skeleton<span class="m-sub">lexicon.json (≥3-sign single-root words)</span></td>
   <td><strong>{t5['mean_semitic_roots_per_skeleton']:.1f} roots / word</strong></td>
-  <td>High collision multiplicity allows choosing whichever semantic gloss fits context.</td>
+  <td>An average. The median is 5, and a quarter of entries match no root.</td>
 </tr>
 <tr>
   <td>Lexicon entries obeying stated neutralization rules strictly<span class="m-sub">n = {t5['evaluated_single_root_ge3_sign_words']} single-root ≥3-sign words</span></td>
   <td><strong>{t5['strict_root_match_A1_rate']*100:.1f}%</strong> (A1) · <strong>{t5['affix_tolerant_root_match_rate']*100:.1f}%</strong> (with affixes)</td>
-  <td>Nearly half of proposed readings require extra unmodeled shifts, deletions, or metatheses.</td>
+  <td>Most of the rest differ by an ordinary prefix, suffix or weak consonant; about a tenth conflict with the stated rules.</td>
 </tr>
 <tr>
   <td>Author confidence tiers in <code>lexicon.json</code><span class="m-sub">total = {t5['total_lexicon_entries']} entries</span></td>
   <td>CONFIRMED <strong>{tiers.get('CONFIRMED',0)}</strong> (2.6%) · PROBABLE <strong>{tiers.get('PROBABLE',0)}</strong> (10.7%) · CANDIDATE <strong>{tiers.get('CANDIDATE',0)}</strong> · SPECULATIVE <strong>{tiers.get('SPECULATIVE',0)}</strong></td>
-  <td>86.7% of the 736-entry lexicon is self-rated Candidate or Speculative; 290 entries are only 1–2 signs long.</td>
+  <td>The author&rsquo;s own ratings. He writes that they do not imply scholarly consensus.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<figcaption>Structural audit of <code>plasma-ai/kaphtor</code> (commit <code>d419ccc1e79f</code>). Once 29 Semitic consonants are projected onto Linear A's coarse syllabic merger classes, root-dictionary collisions saturate the phonetic space.</figcaption>
+<figcaption><strong>Why almost anything matches.</strong> Once 29 Semitic consonants fall into the nine sound classes the script distinguishes, a list of 5,189 roots fills every two-consonant slot and two thirds of the three-consonant ones. The second view shows how the proposal&rsquo;s author rates his own 736 lexicon entries; he writes that the ratings do not imply scholarly consensus.</figcaption>
 </figure>
 """
     (OUT / "collision_audit.html").write_text(html)

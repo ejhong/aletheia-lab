@@ -1,0 +1,630 @@
+{
+ "test3_sensitivity": {
+  "Linear A (all, study)": {
+   "L2": {
+    "k": 86,
+    "n": 86,
+    "rate": 1.0,
+    "LB_rate": 1.0,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "L3": {
+    "k": 209,
+    "n": 246,
+    "rate": 0.8496,
+    "LB_rate": 0.843,
+    "diff_pp": 0.65,
+    "p_fisher": 0.8458
+   },
+   "L4plus": {
+    "k": 9,
+    "n": 126,
+    "rate": 0.0714,
+    "LB_rate": 0.0562,
+    "diff_pp": 1.52,
+    "p_fisher": 0.5391
+   },
+   "ge3_unstratified": {
+    "k": 218,
+    "n": 372,
+    "rate": 0.586,
+    "LB_rate": 0.4886,
+    "diff_pp": 9.74,
+    "p_fisher": 0.000668,
+    "share_L3": 0.661
+   }
+  },
+  "Linear A (held-out, study)": {
+   "L2": {
+    "k": 10,
+    "n": 10,
+    "rate": 1.0,
+    "LB_rate": 1.0,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "L3": {
+    "k": 23,
+    "n": 28,
+    "rate": 0.8214,
+    "LB_rate": 0.843,
+    "diff_pp": -2.16,
+    "p_fisher": 0.7916
+   },
+   "L4plus": {
+    "k": 2,
+    "n": 34,
+    "rate": 0.0588,
+    "LB_rate": 0.0562,
+    "diff_pp": 0.26,
+    "p_fisher": 1.0
+   },
+   "ge3_unstratified": {
+    "k": 25,
+    "n": 62,
+    "rate": 0.4032,
+    "LB_rate": 0.4886,
+    "diff_pp": -8.54,
+    "p_fisher": 0.199,
+    "share_L3": 0.452
+   }
+  },
+  "Linear B self-check": {
+   "L2": {
+    "k": 401,
+    "n": 401,
+    "rate": 1.0,
+    "LB_rate": 1.0,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "L3": {
+    "k": 897,
+    "n": 1064,
+    "rate": 0.843,
+    "LB_rate": 0.843,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "L4plus": {
+    "k": 49,
+    "n": 872,
+    "rate": 0.0562,
+    "LB_rate": 0.0562,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "ge3_unstratified": {
+    "k": 946,
+    "n": 1936,
+    "rate": 0.4886,
+    "LB_rate": 0.4886,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0,
+    "share_L3": 0.55
+   }
+  },
+  "Amarna Canaanite, study projection": {
+   "L2": {
+    "k": 73,
+    "n": 73,
+    "rate": 1.0,
+    "LB_rate": 1.0,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "L3": {
+    "k": 81,
+    "n": 96,
+    "rate": 0.8438,
+    "LB_rate": 0.843,
+    "diff_pp": 0.07,
+    "p_fisher": 1.0
+   },
+   "L4plus": {
+    "k": 3,
+    "n": 60,
+    "rate": 0.05,
+    "LB_rate": 0.0562,
+    "diff_pp": -0.62,
+    "p_fisher": 1.0
+   },
+   "ge3_unstratified": {
+    "k": 84,
+    "n": 156,
+    "rate": 0.5385,
+    "LB_rate": 0.4886,
+    "diff_pp": 4.98,
+    "p_fisher": 0.244,
+    "share_L3": 0.615
+   }
+  },
+  "amarna, written in Linear A with kaphtor values": {
+   "L2": {
+    "k": 52,
+    "n": 52,
+    "rate": 1.0,
+    "LB_rate": 1.0,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "L3": {
+    "k": 63,
+    "n": 83,
+    "rate": 0.759,
+    "LB_rate": 0.843,
+    "diff_pp": -8.4,
+    "p_fisher": 0.0624
+   },
+   "L4plus": {
+    "k": 0,
+    "n": 25,
+    "rate": 0.0,
+    "LB_rate": 0.0562,
+    "diff_pp": -5.62,
+    "p_fisher": 0.3923
+   },
+   "ge3_unstratified": {
+    "k": 63,
+    "n": 108,
+    "rate": 0.5833,
+    "LB_rate": 0.4886,
+    "diff_pp": 9.47,
+    "p_fisher": 0.0603,
+    "share_L3": 0.769
+   }
+  },
+  "akkadian, written in Linear A with kaphtor values": {
+   "L2": {
+    "k": 768,
+    "n": 768,
+    "rate": 1.0,
+    "LB_rate": 1.0,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "L3": {
+    "k": 1601,
+    "n": 1758,
+    "rate": 0.9107,
+    "LB_rate": 0.843,
+    "diff_pp": 6.76,
+    "p_fisher": 0.0
+   },
+   "L4plus": {
+    "k": 78,
+    "n": 865,
+    "rate": 0.0902,
+    "LB_rate": 0.0562,
+    "diff_pp": 3.4,
+    "p_fisher": 0.0074
+   },
+   "ge3_unstratified": {
+    "k": 1679,
+    "n": 2623,
+    "rate": 0.6401,
+    "LB_rate": 0.4886,
+    "diff_pp": 15.15,
+    "p_fisher": 1.83e-24,
+    "share_L3": 0.67
+   }
+  },
+  "proto_semitic_stems, written in Linear A with kaphtor values": {
+   "L2": {
+    "k": 123,
+    "n": 123,
+    "rate": 1.0,
+    "LB_rate": 1.0,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "L3": {
+    "k": 136,
+    "n": 166,
+    "rate": 0.8193,
+    "LB_rate": 0.843,
+    "diff_pp": -2.38,
+    "p_fisher": 0.4272
+   },
+   "L4plus": {
+    "k": 27,
+    "n": 101,
+    "rate": 0.2673,
+    "LB_rate": 0.0562,
+    "diff_pp": 21.11,
+    "p_fisher": 0.0
+   },
+   "ge3_unstratified": {
+    "k": 163,
+    "n": 267,
+    "rate": 0.6105,
+    "LB_rate": 0.4886,
+    "diff_pp": 12.19,
+    "p_fisher": 0.000193,
+    "share_L3": 0.622
+   }
+  },
+  "Hebrew lexicon consonantal (upper bound)": {
+   "L2": {
+    "k": 1695,
+    "n": 1695,
+    "rate": 1.0,
+    "LB_rate": 1.0,
+    "diff_pp": 0.0,
+    "p_fisher": 1.0
+   },
+   "L3": {
+    "k": 1827,
+    "n": 2132,
+    "rate": 0.8569,
+    "LB_rate": 0.843,
+    "diff_pp": 1.39,
+    "p_fisher": 0.3148
+   },
+   "L4plus": {
+    "k": 131,
+    "n": 2141,
+    "rate": 0.0612,
+    "LB_rate": 0.0562,
+    "diff_pp": 0.5,
+    "p_fisher": 0.6718
+   },
+   "ge3_unstratified": {
+    "k": 1958,
+    "n": 4273,
+    "rate": 0.4582,
+    "LB_rate": 0.4886,
+    "diff_pp": -3.04,
+    "p_fisher": 0.0262,
+    "share_L3": 0.499
+   }
+  }
+ },
+ "power_L3": {
+  "LB_rate": 0.843,
+  "headroom_pp": 15.7,
+  "mde_pp_all_n246_alpha05": 6.2,
+  "mde_pp_all_n246_alpha01": 7.2,
+  "mde_pp_heldout_n28_alpha05": 11.3,
+  "mde_pp_heldout_n28_alpha01": 12.4,
+  "L2_LB_rate": 1.0,
+  "L4plus_LB_rate": 0.0562
+ },
+ "test2_planted_truth": {
+  "amarna": {
+   "n_affected": 49,
+   "full": {
+    "n_affected_types": 49,
+    "obs_type_rate": 0.4898,
+    "null_mean": 0.56696,
+    "null_sd": 0.03794,
+    "z_novel": -2.034,
+    "p_perm_novel": 0.98601
+   },
+   "subsample_detection": {
+    "n25": {
+     "share_p_lt_0.05": 0.0,
+     "share_p_lt_0.01": 0.0,
+     "median_p": 0.96013
+    }
+   },
+   "novel_sign_use": [
+    [
+     "*301",
+     18
+    ],
+    [
+     "JA",
+     16
+    ],
+    [
+     "JU",
+     5
+    ],
+    [
+     "ZU",
+     5
+    ],
+    [
+     "*312",
+     3
+    ],
+    [
+     "RA2",
+     3
+    ],
+    [
+     "*118",
+     2
+    ],
+    [
+     "*28B",
+     1
+    ]
+   ]
+  },
+  "akkadian": {
+   "n_affected": 935,
+   "full": {
+    "n_affected_types": 935,
+    "obs_type_rate": 0.5893,
+    "null_mean": 0.53284,
+    "null_sd": 0.02656,
+    "z_novel": 2.126,
+    "p_perm_novel": 0.00999
+   },
+   "subsample_detection": {
+    "n124": {
+     "share_p_lt_0.05": 0.38,
+     "share_p_lt_0.01": 0.1,
+     "median_p": 0.07973
+    },
+    "n25": {
+     "share_p_lt_0.05": 0.07,
+     "share_p_lt_0.01": 0.01,
+     "median_p": 0.30565
+    }
+   },
+   "novel_sign_use": [
+    [
+     "*301",
+     246
+    ],
+    [
+     "JU",
+     190
+    ],
+    [
+     "ZU",
+     162
+    ],
+    [
+     "RA2",
+     133
+    ],
+    [
+     "JA",
+     83
+    ],
+    [
+     "*325",
+     65
+    ],
+    [
+     "*305",
+     33
+    ],
+    [
+     "*118",
+     32
+    ]
+   ]
+  },
+  "proto_semitic_stems": {
+   "n_affected": 114,
+   "full": {
+    "n_affected_types": 114,
+    "obs_type_rate": 0.57018,
+    "null_mean": 0.49847,
+    "null_sd": 0.03978,
+    "z_novel": 1.802,
+    "p_perm_novel": 0.04296
+   },
+   "subsample_detection": {
+    "n25": {
+     "share_p_lt_0.05": 0.22,
+     "share_p_lt_0.01": 0.05,
+     "median_p": 0.24917
+    }
+   },
+   "novel_sign_use": [
+    [
+     "JA",
+     64
+    ],
+    [
+     "RA2",
+     24
+    ],
+    [
+     "*301",
+     15
+    ],
+    [
+     "*305",
+     7
+    ],
+    [
+     "*118",
+     6
+    ],
+    [
+     "TA2",
+     6
+    ],
+    [
+     "*34",
+     2
+    ],
+    [
+     "*28B",
+     2
+    ]
+   ]
+  }
+ },
+ "real_affected_words": {
+  "n": 124,
+  "by_sign": [
+   [
+    "JA",
+    51
+   ],
+   [
+    "ZU",
+    14
+   ],
+   [
+    "JU",
+    13
+   ],
+   [
+    "*301",
+    11
+   ],
+   [
+    "*118",
+    6
+   ],
+   [
+    "TA2",
+    6
+   ],
+   [
+    "RA2",
+    6
+   ],
+   [
+    "*47",
+    4
+   ],
+   [
+    "JE",
+    4
+   ],
+   [
+    "*34",
+    3
+   ],
+   [
+    "*333",
+    3
+   ],
+   [
+    "*86",
+    2
+   ],
+   [
+    "*164",
+    2
+   ],
+   [
+    "*310",
+    2
+   ],
+   [
+    "*28B",
+    2
+   ],
+   [
+    "*324",
+    1
+   ],
+   [
+    "*312",
+    1
+   ],
+   [
+    "*329",
+    1
+   ],
+   [
+    "*320",
+    1
+   ],
+   [
+    "*364",
+    1
+   ],
+   [
+    "*305",
+    1
+   ]
+  ],
+  "affected_only_by_JA_JE_RA2_TA2": 62
+ },
+ "test2_strict_novel_set": {
+  "signs": [
+   "*118",
+   "*164",
+   "*28B",
+   "*301",
+   "*305",
+   "*310",
+   "*312",
+   "*320",
+   "*324",
+   "*325",
+   "*329",
+   "*333",
+   "*34",
+   "*350",
+   "*362",
+   "*364",
+   "*47",
+   "*802",
+   "*82",
+   "*86",
+   "JU",
+   "ZU"
+  ],
+  "all_A1": {
+   "n_affected_types": 62,
+   "obs_type_rate": 0.6129,
+   "null_mean": 0.53179,
+   "null_sd": 0.03475,
+   "z_novel": 2.334,
+   "p_perm_novel": 0.01499
+  },
+  "held_out_A1": {
+   "n_affected_types": 14,
+   "obs_type_rate": 0.42857,
+   "null_mean": 0.34414,
+   "null_sd": 0.07099,
+   "z_novel": 1.189,
+   "p_perm_novel": 0.24076
+  }
+ },
+ "test2_A2_artifact_check": {
+  "all": {
+   "n": 88,
+   "obs": 0.6705,
+   "null_as_study": {
+    "mean": 0.4336,
+    "p": 0.001
+   },
+   "null_only_words_still_ge3": {
+    "mean": 0.4657,
+    "p": 0.001
+   },
+   "null_only_words_same_length": {
+    "mean": 0.5962,
+    "p": 0.0529
+   }
+  },
+  "held_out": {
+   "n": 23,
+   "obs": 0.3913,
+   "null_as_study": {
+    "mean": 0.2711,
+    "p": 0.1089
+   },
+   "null_only_words_still_ge3": {
+    "mean": 0.2803,
+    "p": 0.1099
+   },
+   "null_only_words_same_length": {
+    "mean": 0.3485,
+    "p": 0.3017
+   }
+  }
+ },
+ "composition": {
+  "share_L3_LA": 0.661,
+  "share_L3_LB": 0.55,
+  "LA_rate_standardised_to_LB_length_mix": 0.4991,
+  "LB_rate": 0.4886,
+  "LA_rate": 0.586
+ }
+}

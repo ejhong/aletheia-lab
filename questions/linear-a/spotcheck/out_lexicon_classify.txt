@@ -1,0 +1,7 @@
+ 145  44.6%  exact (after dropping glosses)  e.g. ['*21F-TU-NE [ḫ-t-n] TN vs TN', '*314-TA-MA [ḥ-t-m] TM vs TM', 'A-KA-NU [ʾ-g-n] KN vs KN']
+  70  21.5%  affix(es) from standard Semitic set + weak/geminate  e.g. ['WI-SA-SA-NE [w-š-n] WSSN vs WSN', '*306-TA-JE [ʿ-ṭ-w] TY vs TW', 'A-KU-MI-NA [k-m-m] KMN vs KMM']
+  45  13.8%  affix(es) from standard Semitic set  e.g. ['A-PA-RA-NE [ʿ-b-r] PRN vs PR', 'A-TA-I-*301-WA-JA [n-w-y] TNWY vs NWY', 'DA-DU-MA-TA [d-d-m (PS *damdam-)] TTMT vs TTM']
+  33  10.2%  class conflict / other  e.g. ['A-RA-TU [ʾ-r-ṣ̂] RT vs RS', 'A-RA-TU-ME [ʾ-r-ṣ̂] RTM vs RS', 'A-SI-JA-KA [š-w-q] SYK vs SWK']
+  17   5.2%  weak radical / geminate  e.g. ['*301-U-RA [n-w-r] NR vs NWR', 'DA-U-MI [d-w-m] TM vs TWM', 'DI-NA-U [d-y-n] TN vs TYN']
+   8   2.5%  word lacks a strong radical  e.g. ["MA-I-MI [*may- 'water'] MM vs MYWTR", 'I-KI-RA [ikkaru] KR vs KKR', 'MA-RU-ME [substrate (non-Semitic wool word maru)] MRM vs SPSTRT']
+   7   2.2%  root inside word, non-standard extra consonants  e.g. ['*306-TI-KA-A-RE [ʿ-t-q] TKR vs TK', 'QA-*118-RA-RE [q-ṭ-r] KTRR vs KTR', 'QA-*118-SA [q-ṭ-ʕ] KTS vs KT']
