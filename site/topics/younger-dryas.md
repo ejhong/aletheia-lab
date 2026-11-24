@@ -3,8 +3,8 @@
 # The scorecard, tiles and timeline are made by scripts/make_topic_figures.py; rerun it when a result changes.
 # "image:" names a picture in site/assets/illustrations/ (made by scripts/make_illustrations.py).
 title: The Younger Dryas impact hypothesis
-summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Thirteen studies, each with its test fixed in advance, looked for the marks. The fires, the darkened sky and a comet-made cold are not in the records where they should be. Whether fragments nevertheless burst over the Earth and left a thin layer of debris rests on microscopic grains that no public dataset can test.
-questions: 43, 60, 69, 75, 76, 120, 100, 114, 103, 121, 116, 113, 40, 104
+summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Fourteen studies, each with its test fixed in advance, looked for the marks—and audited the raw data behind two retracted 2025 PLOS One papers. The fires, the darkened sky and a comet-made cold are not in the records where they should be. Whether fragments nevertheless burst over the Earth and left a thin layer of debris rests on microscopic grains that only blind laboratory checks can settle.
+questions: 43, 60, 69, 75, 76, 120, 100, 114, 103, 121, 116, 113, 127, 40, 104
 order: 1
 atlas: ydih
 atlas_title: Fire From the Sky
@@ -39,7 +39,7 @@ The second version is the one to judge the hypothesis by. We read its sources in
 
 {{figure: topic-younger-dryas/scorecard}}
 
-Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. The first eight have been checked by a model from a different company, which wrote its own program from the plan and got the same answer. The five newest (the great animals, platinum chemistry, fire spikes in a second ice core, the dates of the layers, and cosmic dust in ocean mud) have not. They were run by Google's model; Anthropic's model then spot-checked each one, reran its program, and corrected the write-ups where they claimed more than the numbers show. A spot check is not a replication, and none is planned for now.
+Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. The first eight have been checked by a model from a different company, which wrote its own program from the plan and got the same answer. Five more (the great animals, platinum chemistry, fire spikes in a second ice core, the dates of the layers, and cosmic dust in ocean mud) were run by Google's model and then spot-checked by Anthropic's model, which reran their programs and corrected the write-ups where they claimed more than the numbers show. The fourteenth (auditing the two retracted 2025 PLOS One papers) was just run by Google's model and has not yet been spot-checked or replicated.
 
 ## The order of events
 
@@ -110,6 +110,14 @@ The part that does not depend on any of this is a simple count. Of the 32 claime
 
 Read more: [the site-synchrony study](../../questions/ydb-site-synchrony/).
 
+### The two retracted 2025 PLOS One papers
+
+On 11 February 2026, *PLOS One* retracted two 2025 papers by the Comet Research Group—one on four ocean cores from Baffin Bay (`e0328347`), the other on claimed shocked quartz at three US archaeological sites (`e0319840`). Because all underlying Excel spreadsheets and Supporting Information PDFs remain publicly archived on Zenodo and PLOS, we locked an audit to check whether the raw data actually warranted retraction in each case.
+
+The audit splits cleanly between the two papers. **For Baffin Bay, retraction is strongly supported (4 of 5 checks verified):** recalibrating all 27 raw marine dates on `Marine20` uncovered a flipped `ΔR` sign in Cores 64, 67, and 77 (reproducing all 17 published ages to `±1 yr`) and accidental use of terrestrial `IntCal20` in Core 52, inflating ages by `+297` to `+769 yr` before any deglacial polar sea-ice shift; four "cosmic spherule" SEM figures (`SI Figs S30–S34`) are visibly porous calcareous marine foraminifera (`92.5–96.5 wt%` Ca+C+O) from a `9.5 ka` Early Holocene level; Core 64's out-of-YDB peak exceeds Core 67's YDB peak (`680` vs. `640 CDPs/kg`) and `9 of 10` Core 64 nanoparticle metrics peak outside the claimed boundary; and the `×100` Ni/Cr multiplier shifts `100%` pure Earth crust and USGS basalt `BIR-1G` straight into the "Comet Wild 2" field. **For Shocked Quartz, the retraction is mixed or harsh:** *PLOS One*'s two methodological critiques are verified verbatim—the paper's headline `χ² = 0.057` used a date `18.5 cm` above Arlington Canyon's shocked quartz (all `25` published direct dates give `T = 90.9, p < 10⁻⁹`), and only `13 of 66` strata (`19.7%`) were checked with zero strata checked below Arlington Canyon's quartz layer. Yet the retraction notice never challenged the electron-microscopy quartz images themselves, leaving what fractured those 16 grains a question only blind physical lab checks can settle.
+
+Read more: [the retracted PLOS One papers audit](../../questions/yd-retracted-plos-audit/).
+
 ### People
 
 If the catastrophe was real, the dated traces of people should thin out when it struck. In nearly 7,000 radiocarbon dates from North America, Europe and Asia they do not. This is the weakest of the tests. Radiocarbon dating is at its most distorted in exactly those centuries, more than the test allowed for, so the dates show no crash but cannot rule one out.
@@ -151,9 +159,9 @@ This is a test of the stream today. A swarm could have broken down in 12,900 yea
 
 ## What the studies add up to
 
-This section is the assessment of the AI models that ran and checked these studies, after all thirteen. It is not the atlas's judgment, which is made [there](https://ejhong.github.io/aletheia/cases/ydih/) by its own process.
+This section is the assessment of the AI models that ran and checked these studies, after all fourteen. It is not the atlas's judgment, which is made [there](https://ejhong.github.io/aletheia/cases/ydih/) by its own process.
 
-**What was tested and what was not.** The hypothesis makes two kinds of claim. One is that something from space struck or burst about 12,800 years ago and left a layer of debris. The other is what that did: fires across continents, a darkened sky, the cold, the end of the great animals. Our studies bear almost entirely on the second kind. The evidence its authors now lean on most for the first, microscopic grains in the layer itself, is in no public dataset, and none of it was tested here.
+**What was tested and what was not.** The hypothesis makes two kinds of claim. One is that something from space struck or burst about 12,800 years ago and left a layer of debris. The other is what that did: fires across continents, a darkened sky, the cold, the end of the great animals. Our studies bear mainly on the second kind, plus one direct audit of the raw data behind two retracted 2025 PLOS One papers (`#127`). The physical microscopy of microscopic grains in terrestrial layers still requires blind re-examination in laboratories.
 
 **The version its authors hold now: one day, many fragments.** Taking their claims one at a time:
 
@@ -163,6 +171,7 @@ This section is the assessment of the AI models that ran and checked these studi
 - *Platinum from the comet.* In Greenland it arrives 20 to 30 years after the cold begins. In the two sediment records with full chemistry, most samples do not look like an impact layer and the largest spikes are not at the boundary. A few samples do lean that way, and a small cosmic share cannot be excluded.
 - *The great animals.* The authors no longer claim a sudden extinction, and a sudden, total one is ruled out. The record shows a decline already under way in many places, a steep fall in dated bones just as the cold begins, and survivors for centuries after. That fits their present account. It fits hunting or the cold alone equally well.
 - *One layer, the same age everywhere.* The precise dates from the claimed layers are not one radiocarbon age. The authors answer that dates cannot be read so finely, and old charcoal could indeed explain the scatter. By the same argument the dates cannot show the layers are the same age, and only 4 of 32 sites have a tight date on the layer itself.
+- *The two retracted 2025 PLOS One papers.* Auditing the open Zenodo and PLOS files confirms why Baffin Bay (`e0328347`) failed (flipped `ΔR` sign and terrestrial `IntCal20` inflating ages `+297` to `+769 yr`, porous CaCO₃ foraminifera from `9.5 ka` labeled as cosmic spherules, `×100` math turning pure Earth crust into comet dust), while showing that the Shocked Quartz retraction (`e0319840`) verified real dating and control-sampling flaws without challenging the quartz microscopy images themselves.
 - *People.* Dated traces of people do not thin out, though radiocarbon is at its most distorted in those centuries.
 
 The consequences claimed for fire and climate are the heart of the popular story, and on the public evidence they look **very unlikely**. That is the firmest thing these studies say. On the animals and on the dates, the present version has been made hard to test, and our studies neither support it nor count against it. Whether anything fell from the sky about 12,800 years ago is **not settled by anything here**.
@@ -181,7 +190,7 @@ On current public data it looks **unlikely**. Since nobody proposes it, its fail
 
 **What remains open.**
 
-- *The grains.* Tiny spheres, melted glass, nanodiamonds and shocked quartz in the boundary layer are the main evidence offered that anything fell. Other laboratories have disputed them. Nothing here tests them.
+- *The grains.* Tiny spheres, melted glass, nanodiamonds and shocked quartz in the boundary layer are the main evidence offered that anything fell. Other laboratories have disputed them; even in the retracted 2025 shocked-quartz paper, the notice did not challenge the electron-microscopy images themselves. Blind physical lab tests are still required.
 - *Platinum and osmium with no agreed source.* The platinum in Greenland's ice, a sharp spike in platinum against palladium at White Pond in South Carolina, and repeated osmium excursions at Hall's Cave are real measurements. Two of the Hall's Cave samples that lean towards the impact pattern are at the boundary itself.
 - *The steep fall in dated bones* as the cold begins.
 - *Seventeen large asteroids* on Taurid-like orbits that line up with the comet.
@@ -189,16 +198,16 @@ On current public data it looks **unlikely**. Since nobody proposes it, its fail
 
 **What points the other way.** The ordinary account needs no comet. The Younger Dryas matches the ice age's other sudden coolings in its shape, its depth, the opposite course of Antarctica and the ammonium that follows. The 150 years before it hold one of the heaviest runs of eruptions in 51,000 years. Neither fact shows that the ocean or the volcanoes did it alone.
 
-**How far to trust this.** The first eight studies were each rewritten from the plan by a second company's model, which got the same answers. The last five were not. Anthropic's model spot-checked them instead, and found that every one of the five claimed more than its numbers showed, and that one had counted rows of a spreadsheet as rock samples. Their pages have been corrected. That is a reason for some caution about the first eight as well.
+**How far to trust this.** The first eight studies were each rewritten from the plan by a second company's model, which got the same answers. Five more were spot-checked by Anthropic's model, which found that every one of the five claimed more than its numbers showed and corrected their pages. The fourteenth (`#127`) has not yet been spot-checked or replicated. That is a reason for caution across the set.
 
-**In one sentence.** The fires, the darkened sky and the comet-made cold are not in the records where they should be; whether a swarm of fragments nevertheless burst over the Earth 12,800 years ago and left a thin layer of debris is a question about microscopic grains that only laboratories can answer.
+**In one sentence.** The fires, the darkened sky and the comet-made cold are not in the records where they should be, and the retracted 2025 Baffin Bay ocean-core paper fails on its own raw data; whether a swarm of fragments nevertheless burst over the Earth 12,800 years ago and left a thin layer of debris remains a question about microscopic grains that only blind laboratories can answer.
 
 ## What this does not settle
 
-- **The microscopic grains in the layer.** They need counting under the microscope by several laboratories that do not know which sample is which. None was tested here.
+- **The microscopic grains in the layer.** They need counting under the microscope by several laboratories that do not know which sample is which—including the 16 fractured quartz grains from the retracted 2025 paper, whose microscopy images PLOS One did not challenge.
 - **The full chemistry of Greenland's platinum layer.** It has never been measured across the ice age's other coolings, or together with osmium and the other platinum-group elements in the same ice.
 - **Helium-3 in polar ice across the Younger Dryas.** Ice could resolve decades where sea-floor mud resolves a thousand years. The public ice record has no samples between 4,000 and 75,000 years ago.
 - **Whether encounters with the comet's debris came round again.** A test for a repeating mark over the last 15,000 years is proposed (#104) and not run.
 - **What drove the decline of the great animals.** The timing does not separate hunting, warming, the cold, or a blow from the sky.
 - **People.** The one test of human numbers was blurred by the distortion in radiocarbon dating. A better method exists and has not been tried.
-- **The limits of the work itself.** AI models designed, ran and wrote up every study, mostly in single sessions. Eight have been reproduced by a second company's model; five have only been spot-checked. No human specialist has reviewed any of it.
+- **The limits of the work itself.** AI models designed, ran and wrote up every study, mostly in single sessions. Eight have been reproduced by a second company's model; five have only been spot-checked; one (`#127`) is newly completed and un-checked. No human specialist has reviewed any of it.

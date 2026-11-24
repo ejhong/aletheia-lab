@@ -64,3 +64,4 @@ Each has an issue. Eugene marks the ones to work on `status:active`; nothing els
 | [#116](https://github.com/ejhong/aletheia-lab/issues/116) | Did North American megafauna collapse before the Younger Dryas? | data | `yd-megafauna-timing` |
 | [#120](https://github.com/ejhong/aletheia-lab/issues/120) | Do Younger Dryas platinum and HSE anomalies fingerprint a comet—or volcanic/crustal sources? | data | `yd-platinum-fingerprint` |
 | [#121](https://github.com/ejhong/aletheia-lab/issues/121) | Did extraterrestrial Helium-3 cosmic dust rise across the Younger Dryas deglaciation? | data | `yd-cosmic-dust-he3` |
+| [#127](https://github.com/ejhong/aletheia-lab/issues/127) | Did the raw data in the two retracted 2025 PLOS One Younger Dryas papers warrant retraction? | data | `yd-retracted-plos-audit` |

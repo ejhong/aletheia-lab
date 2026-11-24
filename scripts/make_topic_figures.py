@@ -166,7 +166,7 @@ def bin_words(start, width):
 
 def younger_dryas():
     tiles("topic-younger-dryas", [
-        ("13", "studies, each with its test fixed before the data were looked at", False),
+        ("14", "studies, each with its test fixed before the data were looked at", False),
         ("0", "found the fires, the darkened sky or the sudden cold that the hypothesis says followed", False),
         ("4", "eruptions, two of them very large, in the 150 years before the cold: among the heaviest runs in 51,000 years", False),
         ("Still open", "whether anything fell at all: the microscopic grains in the claimed layer, which only laboratories can test", True)])
@@ -208,6 +208,9 @@ def younger_dryas():
         (113, "ydb-site-synchrony", "Are the layers the same age?", "Radiocarbon dates from the claimed layers agree on one age.",
          "The precise dates do not agree, though charcoal older than its layer could explain that. Only 4 of 32 sites have a tight date on the layer itself.",
          "Unclear", "Dates disagree; most sites too loosely dated", "open"),
+        (127, "yd-retracted-plos-audit", "The two retracted 2025 PLOS One papers", "The raw data in the retracted Baffin Bay ocean-core and US shocked-quartz papers still support a 12,800-year-old cosmic layer.",
+         "Split verdict: Baffin Bay retraction is strongly supported (flipped ΔR sign & terrestrial IntCal20 inflated ages +297 to +769 yr; SI Figs S30–S34 are porous CaCO₃ foraminifera from 9.5 ka; ×100 math turns pure Earth crust into comet dust). Shocked Quartz retraction is mixed/harsh: dating and vertical controls fail (0 strata checked below Arlington Canyon's quartz), but the notice never challenged the quartz microscopy itself.",
+         "Unclear", "Baffin Bay fails raw audit; quartz microscopy unchallenged", "open"),
         (40, "younger-dryas-crash", "A crash in human numbers", "Dated traces of people thin out at once, above all in North America.",
          "No drop on three continents. But radiocarbon dating is at its most distorted in exactly those centuries.",
          "Not found", "No sign, though the test was blurred", "no")])
