@@ -166,10 +166,10 @@ def bin_words(start, width):
 
 def younger_dryas():
     tiles("topic-younger-dryas", [
-        ("9", "studies, each with its test fixed before the data were looked at", False),
+        ("10", "studies, each with its test fixed before the data were looked at", False),
         ("0", "found the sharp, one-off mark that a strike from the sky should leave", False),
         ("4", "eruptions, two of them very large, in the 150 years before the cold: among the heaviest runs in 51,000 years", False),
-        ("Still open", "what laid down the platinum, and what drove the drawn-out megafauna loss", True)])
+        ("Still open", "exact terrestrial source of Hall's Cave osmium drops and GISP2 ice platinum, and what drove the drawn-out megafauna loss", True)])
     scorecard("topic-younger-dryas", "scorecard", "What each study tested and found",
               ["The mark", "If a comet did it", "What the record shows"], [
         (43, "ice-core-fire", "Smoke in Greenland's ice", "A burst of fire chemicals at the moment the cold begins.",
@@ -187,6 +187,9 @@ def younger_dryas():
         (76, "yd-platinum-volcanism", "Platinum in the ice", "The platinum layer at or just before the start of the cold.",
          "It lies about 20 to 30 years after the cold began, though before the steepest fall. Four eruptions, two very large, came just before the cold.",
          "Unclear", "Platinum a little late; eruptions unusually heavy", "open"),
+        (120, "yd-platinum-fingerprint", "Chemistry of the platinum", "Six-element siderophile patterns match meteorites and Chicxulub K–Pg, with uniform Pt/Ir and unique spikes at 12.8 ka.",
+         "Real Chicxulub K–Pg passes (89% / 100%). Zero of 27 full-suite YDB samples are chondritic (93% crustal/volcanic); Pt/Ir scatters 100× across sites; 71–93% of blind spikes fall outside 12.8 ka—though Hall's Cave also misfits high-Re volcanic gas.",
+         "Not cosmic", "Fails cosmic fingerprint; mixed non-cosmic", "no"),
         (100, "tunguska-calibration", "What one airburst leaves", "The one known airburst, Tunguska in 1908, marks the ice in the way the Younger Dryas ice is marked.",
          "Across Greenland 1908 is an ordinary year for ammonium. At some sites there is a sharp, sooty spike, at others nothing. The Younger Dryas century has a steady rise and few spikes.",
          "Not found", "A spike where it shows, not a steady rise", "no"),
