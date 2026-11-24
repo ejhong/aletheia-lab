@@ -21,7 +21,7 @@ Bird-headed men, feathered serpents, teachers who arrive by sea and bring the ar
 
 The atlas's [Deep Memory](https://ejhong.github.io/aletheia/cases/deep-memory/) case asks how much of that resemblance belongs to a shared past, and how much to the ways people everywhere make images, tell stories and look for connections. That is a question about texts and images, and the atlas weighs it.
 
-The lab comes at it from the other side. A shared past is a physical claim. Either people travelled between the cultures, or knowledge was handed down across a very long stretch of time. Travellers leave descendants, and descendants carry their ancestry in their bones. Old astronomy leaves a date in the sky, because the stars drift in a way that can be calculated. Drowned Ice Age coasts leave a sharp map on the seafloor. Neither kind of trace depends on reading a myth the right way.
+The lab comes at it from the other side. A shared past is a physical claim. Either people travelled between the cultures, or knowledge was handed down across a very long stretch of time. Travellers leave descendants, and descendants carry their ancestry in their bones. Old astronomy leaves a date in the sky, because the stars drift in a way that can be calculated. Neither kind of trace depends on reading a myth the right way. A third test does use the stories, but only by counting where they are told: if flood myths remember the sea rising, they should be commonest where the sea took the most land.
 
 ## The scorecard
 
@@ -58,17 +58,19 @@ Read more: [Göbekli Tepe's star map](../../questions/gobekli-star-map/), with t
 
 ## Do flood myths remember drowned Ice Age coasts?
 
-When the Ice Age ended, sea level rose roughly 120 metres and drowned vast coastal plains such as Doggerland, Sundaland, Sahul, and Beringia. If worldwide Great Flood myths are a shared memory of that rise, they should cluster along coasts that lost wide continental shelves rather than steep, narrow coasts where little land vanished.
+When the Ice Age ended the sea rose about 120 metres and covered wide plains: under the North Sea, between the islands of Southeast Asia, around Australia, between Siberia and Alaska. If the world's flood stories are a memory of that, they should be commoner among peoples whose coast lost a great deal of land than among peoples whose coast lost almost none.
 
-Matching 927 oral traditions from Yuri Berezkin's global folklore catalog against NOAA's seafloor elevation map shows no such cluster. Across 396 coastal peoples, non-biblical deluge stories are just as common beside the narrowest shelves (36%) as beside the widest drowned shelves (34%), and slightly more common far inland (39%). After controlling for sampling effort, geography, Noah diffusion, and language-family descent, drowned-shelf area shows no link to flood stories (`p = 0.85`). On the exact same data and model, earthquake myths track seismic zones strongly (`p = 0.0005`), showing the catalog can detect real geological memory when it is present.
+In Yuri Berezkin's catalogue of the myths of 927 peoples, matched to a map of the sea floor, they are not. Among 396 peoples living near water, 36% of those beside the narrowest drowned shelves have a flood motif and 34% of those beside the widest. The model fixed in advance, which compares peoples within the same language family, finds no link.
 
-Read more: [flood myths and drowned land](../../questions/flood-myths/), with an interactive map of all 927 cultures.
+This is a weaker "no" than it first looked. A spot check found that a tenth of the "drowned shelf" was the Caspian Sea, the Great Lakes and dry basins; that a third of the peoples counted as having a flood myth have only motifs that are not clearly about floods; and that one of the plan's two checks on the method failed. Mending what could be mended left the answer the same. A modest effect is not excluded, and the catalogue has almost nothing from Australia, where the best-known stories of particular drowned shores come from.
+
+Read more: [flood myths and drowned land](../../questions/flood-myths/), with a map of all 927 peoples.
 
 ## What the studies add up to
 
-Five tests, three kinds of evidence, the same result: where a shared past should have left a physical or geographical trace that we could look for, the trace is not there. The DNA shows no travellers. The one star clock read so far shows the date of the people known to have set it, while the carved pillar at Göbekli Tepe could not be read by blind vision models. And worldwide Great Flood stories show no tendency to cluster where Ice Age coastlines drowned.
+Five tests, three kinds of evidence. Four found no trace where a shared past should have left one, and one could not be read. The DNA shows no travellers. The one star clock read so far shows the date of the people known to have set it; the carved pillar at Göbekli Tepe could not be read with the tool we tried. And flood stories are no commoner where the Ice Age sea took the most land, in a test that could have missed a modest effect.
 
-That is not the same as showing the resemblances are coincidence. All five tests have blind spots, set out below, and none of them rules out local place-specific coastal memories (like Aboriginal Australian traditions naming drowned bays) or shared storytelling traditions.
+That is not the same as showing the resemblances are coincidence. All five tests have blind spots, set out below. None of them touches the stories and images themselves, and the flood test says nothing about stories of particular drowned bays and islands, such as those collected around Australia.
 
 Waiting their turn: whether the bringers of civilisation in old stories came from the sea, whether basic words are shared across the oceans, whether germs and parasites tell a different story from the bones, and one more star clock, the orientations of ancient monuments.
 
@@ -77,6 +79,6 @@ Waiting their turn: whether the bringers of civilisation in old stories came fro
 - **The resemblances themselves.** Whether a bird-man in one place is the same idea as a bird-man in another is the atlas's question, not the lab's.
 - **Travellers who left no sampled descendants.** Ancient DNA sees only the people who happen to have been dug up and sequenced. Egypt, Mesopotamia and the Indus valley are almost empty in the public record.
 - **How old the constellations are.** A test of the figures' own age would need what the oldest sources say about them as wholes, not the positions of single catalogued stars.
-- **Local coastal memories vs. universal deluges.** Global motif catalogs test worldwide Great Flood themes, not site-specific stories about a named bay or island going underwater.
+- **Stories of particular drowned places.** A catalogue of motifs counts world-flood themes. It does not hold stories about a named bay or island going under, and it treats all of Australia as eight regions.
 - **Knowledge passed on without people or star maps:** by word of mouth, which leaves no physical trace at all.
-- **The limits of the work itself.** AI systems designed, ran and replicated every study. No specialist has reviewed any of it.
+- **The limits of the work itself.** AI systems designed and ran every study, and replicated or spot-checked each one; the flood study has been spot-checked, not replicated. No specialist has reviewed any of it.

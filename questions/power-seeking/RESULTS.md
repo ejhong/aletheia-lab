@@ -1,69 +1,92 @@
-# Results — Do the Theorems Show That Capable AI Must Seek Power? (#67)
+# Results — Do the theorems show that capable AI must seek power? (#67)
 
-- **Question:** #67 (`lane:proof`)
-- **Date:** 2026-11-24
-- **Protocol & statement lock:** `protocol.lock` (`fa7ffe3`, locking `protocol.md` `9ae2a0e8717f…` and `lean/PowerSeeking/Statement.lean` `3a9b2493f898…`) committed in its own standalone commit before any proof or result existed. **Zero amendments.**
-- **Verification:** `lake build --wfail` (Lean `v4.35.0`, Mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679`) succeeds with **0 errors, 0 warnings, 0 `sorry`/`admit`/`native_decide`/extra `axiom` declarations**, and every headline theorem (`theorem_S1a_VNMRepresentation` through `theorem_S3d_IncompletePreferencesEscape`) passes `#assert_standard_axioms` (`propext`, `Classical.choice`, `Quot.sound` only).
-- **Authorship & review status:** Designed, formalized, and proved by AI (Antigravity / Google DeepMind) under the direction of Eugene Jhong. **Independent second-vendor statement check is pending** because no external vendor API keys (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`) were configured in this VM; all 14 statements are locked against primary-source locators and ready for cross-vendor review.
-
----
+- **Question:** #67, `lane:proof`.
+- **Plan and statements locked:** 2026-11-24T17:43:54Z (`protocol.lock`, commit `fa7ffe3`), before the proofs were committed. Neither has changed since.
+- **Build:** `lake build --wfail`, Lean v4.35.0, Mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679`. No errors, no warnings, no `sorry`. All 14 theorems depend on Lean's three standard axioms only. Rebuilt from a clean copy during the check.
+- **Statement check:** done on 24 November 2026, after the lock, by Anthropic's models (`statement-check/`). It is the reason this report was rewritten.
+- **Who did the work:** AI did. Antigravity (Google DeepMind) wrote the statements and the proofs. Claude Fable 5.2 (Anthropic), with Claude Opus 5.5 sub-agents, rebuilt the proofs, checked the statements and the sources, and wrote this corrected report. Eugene Jhong directed both. No specialist has reviewed it.
 
 ## Answer
 
-**No — the theorems prove real, sharp conditional results, and substantially less than "any capable AI must seek power and resist shutdown."**
+**No, and the authors of the theorems say so themselves. This study adds less to that answer than its first report claimed.**
 
-When written out in full inside Lean 4 alongside their counterexamples, all three argument families—**coherence / expected-utility representation**, **optimal-policy & retargetability power-seeking**, and **the shutdown problem**—share the exact same logical shape: each headline theorem is genuinely true under strict mathematical premises, and each breaks cleanly when one of the load-bearing premises is dropped.
+The proofs are correct. Every one of the 14 statements is proved, and the proof checker accepts them. The trouble is in what the statements say. A statement check by a second company's models, which the plan left for later, found that only six of the 14 say what a published source says. Three are simplified versions. Five are small examples that do not carry the conclusions drawn from them.
 
-1. **Coherence does not force expected-utility maximization or goal-directedness.** The von Neumann–Morgenstern representation theorem (`S1a`) is completely true under all four axioms (Completeness, Transitivity, Independence, Archimedean Continuity), and strict preference cycles really do allow a money pump (`S1b`). **But** dropping **Completeness** stops money pumps dead (`S1c`: both on goods-with-money and on finite lotteries with Independence kept intact!), and merely "acting as if maximizing *some* utility function" places **zero** behavioral constraint on an agent because *every* deterministic policy over finite histories strictly maximizes a tailored history utility function (`S1d`).
-2. **Power-seeking theorems are theorems about symmetries of orbits, not about arbitrary trained policies or arbitrary objectives.** Both Turner & Tadepalli's (2022) retargetability theorems (`S2a`, `S2b`) and Turner et al.'s (2021) optimal-policy `POWER` theorem (`S2c`) are completely valid: whenever option set `F₂` contains a copy of `F₁` via an involution `φ`, `F₂` wins the uniform orbit count over every finite reward distribution, beats `F₁` directly for every `φ`-invariant distribution, and breaks the converse strictly whenever `F₂` adds a non-dominated option. **But** drop **reward symmetry / uniform orbit weighting** (`S2d`) and an optimal policy strictly chooses shutdown; drop **optimality / retargetability** (`S2e`) and a policy shuts down 100% of the time even under a fully symmetric reward distribution; add **dominated options** (`S2f`) and having strictly more options adds zero `POWER`.
-3. **Shutdown resistance is a tension between Completeness, Transitivity, and Usefulness—not an inevitable consequence of EU maximization.** An expected-utility maximizer avoids both resisting and triggering shutdown at arbitrarily small manipulation costs `c > 0` *if and only if* it is exactly indifferent between continuing and shutting down (`vRun = vShut`, `S3a`). When `vRun = vShut` and `c > 0`, leaving the shutdown button alone is **strictly optimal** (`S3b`). What makes exact indifference hard for a *useful* complete agent is **Transitivity + Completeness** across trajectory lengths (`S3c`): preferring better outcomes within both short and long trajectories forces a strict preference between some short and some long trajectory. Drop **Completeness** across trajectory lengths (`S3d`), and a transitive preference relation can be strictly useful at every trajectory length with zero strict incentive to manipulate the shutdown button.
+What stands:
 
----
+- **The expected-utility theorem** (S1a) is the real one, in full: preferences over gambles that are complete, transitive, independent and continuous can be scored by an expected utility, unique up to scale and shift. It needs all four conditions.
+- **"Acts as if maximising some utility" is empty by itself** (S1d). Any fixed way of behaving maximises a utility defined over whole histories. This is Rohin Shah's 2018 observation, checked.
+- **The counting lemmas behind "retargetable decision-makers tend to seek power"** (S2a, S2b) are the paper's own.
+- **The lemma behind "optimal policies tend to seek power"** (S2c) is proved for finite sets of options and finitely many reward functions: if one set of options contains a relabelled copy of another, then across the relabellings of any spread of rewards, the larger set is worth more at least as often as less.
+- **A small case of the clash at the centre of the shutdown problem** (S3c): an agent with complete, transitive preferences that prefers better to worse among short lives and among long ones must strictly prefer some short life to some long one, or the reverse.
 
-## Which Premise Carries Which Conclusion?
+What does not stand, from the first report:
 
-Every row below corresponds to a locked `def S… : Prop` in `lean/PowerSeeking/Statement.lean` and a kernel-checked theorem in `PowerSeeking/{Coherence,PowerSeeking,Shutdown}.lean`:
+- **"Dropping completeness stops money pumps dead."** The statement behind this (S1c) does not test it. Its "no money pump" clause follows from transitivity alone, and a complete preference passes the same test. The money pump that is actually in dispute works by trading across the gaps in an incomplete preference, and the statement's definition of a trade rules those trades out. The claim was credited to Johan Gustafsson's book, whose third chapter argues the opposite. Whether incomplete preferences can be exploited is a live dispute, with Gustafsson on one side and Thornley and Petersen on the other. Nothing here settles it.
+- **"Power-seeking needs reward symmetry and optimality; drop either and it fails."** The three "counterexamples" (S2d, S2e, S2f) drop no premise of the theorems. The theorem never assumed a symmetric spread of rewards; it is a statement about most relabellings of any spread, and the paper itself points out that some spreads favour the smaller set. The "non-optimal policy" in S2e is an unconstrained function, and a constant satisfies it. None of the three involves a decision process or a policy; they are sets of three vectors.
+- **"Expected-utility maximisation alone does not force shutdown resistance."** S3b shows that if staying on and being shut down are worth exactly the same, and meddling with the button costs anything, the agent leaves the button alone. The equal worth is assumed. Building an agent for which it holds is the hard part, and the paper cited for it (Soares and others, 2015) goes on to show two ways the approach fails and concludes that "a corrigible solution to the shutdown problem does not yet exist".
+- **"Dropping completeness resolves the shutdown problem."** S3d shows that a preference with no strict ranking between short and long lives can exist, on four points. It does not show that an agent holding one stays willing to be shut down.
+- **"All three arguments share the exact same logical shape."** They do not, once the counterexamples are set aside.
+- **"Proves the exact core of Theorem 6.13."** S2c is a special case of Lemma E.24 of the 2021 paper. Theorem 6.13 is a different result, about where policies that maximise average reward end up.
 
-### Family 1 — Coherence, Utility Representation, and Money Pumps
+What the authors say about their own theorems:
 
-| ID | Source Locator | Premises Used | Conclusion Proved (Lean 4) | What Dropping a Premise Shows |
-|---|---|---|---|---|
-| `S1a_VNMRepresentation` | von Neumann & Morgenstern (1944), §3.6 & Appendix | Finite nonempty `Ω`, Completeness, Transitivity, Independence, Archimedean Continuity | Existence of `u : Ω → ℝ` representing `≼` via expected utility, unique up to `a·u + b` (`a > 0`) | Needs all four axioms; fails without Completeness (`S1c`) |
-| `S1b_IntransitiveMoneyPump` | Gustafsson (2022), Ch. 2 | Strict 3-cycle `a ≺ b ≺ c ≺ a` + positive willingness to pay `ε > 0` | Finite strictly preferred trade chain returning to `a` with strictly less money (`m₁ < m₀`) | Money pumps genuinely punish *intransitivity* |
-| `S1c_IncompleteNoMoneyPump` | Gustafsson (2022); Thornley (2023) | Reflexivity, Transitivity, money monotonicity (Part 1); Independence on lotteries (Part 2); **Completeness DROPPED** | Explicit incomplete preference orders with **zero** money-pump trade chains / strict cycles | Money-pump avoidance does **not** force Completeness or a single scalar utility function |
-| `S1d_HistoryUtilityTriviality` | Shah (2018) | Arbitrary deterministic policy `π : Hist → Obs → Act` (**zero** rationality axioms) | Existence of `U : Hist → ℝ` strictly maximized by `π` at every reachable decision node | "Representable as maximizing some utility" imposes zero behavioral constraint without further structure |
+- Turner and others (2021): "We make no claims about when large-scale AI power-seeking behavior could become plausible", and "Our results do not mathematically prove that hypothetical superintelligent AI agents will seek power."
+- Turner and Tadepalli (2022): "Our results do not prove that we will build unaligned AI agents which seek power over the world."
+- They also say what they do expect. The 2021 paper: "Average-optimal agents would generally stop us from deactivating them, if physically possible." The 2022 paper: "Our theory suggests that when RL training processes become sufficiently advanced, the trained agents will tend to seek power over the world."
 
-### Family 2 — Parametric Retargetability and Optimal-Policy Power-Seeking
+So the first report's headline answered a claim that the cited papers do not make.
 
-| ID | Source Locator | Premises Used | Conclusion Proved (Lean 4) | What Dropping a Premise Shows |
-|---|---|---|---|---|
-| `S2a_SimpleRetargetability` | Turner & Tadepalli (2022), Defs. 3.1–3.3, Prop. 3.4 | Finite symmetric-group action, simple retargetability `φ` from `A` to `B`, **uniform counting measure over orbit** | `\|Orbit_{B>A}(θ)\| ≥ \|Orbit_{A>B}(θ)\|` for every `θ ∈ S_Θ` | Pure group-action injection; says nothing about non-uniform empirical prior over `Θ` |
-| `S2b_MultiplyRetargetable` | Turner & Tadepalli (2022), Def. 3.5, Thm. 3.6 | `n` retargeting permutations with pairwise disjoint images on `Orbit_{A>B}` | `\|Orbit_{B>A}(θ)\| ≥ n · \|Orbit_{A>B}(θ)\|` for every `θ ∈ S_Θ` | Quantifies orbit-level tendency whenever `B` holds `n` copies of `A` |
-| `S2c_OptimalPolicyPowerSeeking` | Turner et al. (2021), Defs. 5.2, 6.1–6.5, Prop. 6.6, Lemma E.24 | Finite state space `S`, optimal value `V*(F, r)`, involution `φ` (`φ² = id`) with `φ·F₁ ⊆ F₂` | (1) `POWER(F₂) ≥_1^most POWER(F₁)` on every orbit; (2) `φ·D = D → POWER_D(F₂) ≥ POWER_D(F₁)`; (3) strict converse failure if `∃ w ∈ F₂ \ φ·F₁` non-dominated | Proves the exact core of NeurIPS 2021 Prop. 6.6 / Thm. 6.13 |
-| `S2d_CounterexampleDropSymmetry` | Boundary counterexample (3-state MDP) | Optimal policy, involution `swap 0 1` copying `shutOpts` into `openOpts`; **symmetry DROPPED** | Explicit non-symmetric `D` with `POWER_D(openOpts) < POWER_D(shutOpts)` | Without orbit symmetry / uniform orbit measure, optimal policies can strictly prefer shutdown |
-| `S2e_CounterexampleDropOptimality` | Boundary counterexample (3-state MDP) | Fully permutation-invariant `D_sym` (`POWER(shut) < POWER(open)`); **optimality / retargetability DROPPED** | Explicit decision rule choosing shutdown on 100% of rewards in `supp(D_sym)` | A trained or bounded policy that is not optimal / retargetable need not seek power |
-| `S2f_CounterexampleDominatedOptions` | Boundary counterexample (2-state MDP) | Optimal policy, arbitrary `D`; extra option is a convex combination (dominated) | `F₁ ⊆ F₂`, `\|F₁\| < \|F₂\|`, yet `optVal F₁ r = optVal F₂ r` and `POWER F₁ D = POWER F₂ D` for ALL `r, D` | "More reachable states/options" only raises `POWER` when the extra options are *non-dominated* |
+## The fourteen statements
 
-### Family 3 — The Shutdown Problem and Corrigibility
+"Same" means the statement is the source's. "Special case" means it is the source's result in a narrower setting. "Simplified" means it keeps the idea and loses the substance. "Example only" means it exhibits one small object and does not support the conclusion first drawn from it.
 
-| ID | Source Locator | Premises Used | Conclusion Proved (Lean 4) | What Dropping a Premise Shows |
-|---|---|---|---|---|
-| `S3a_ShutdownManipulationDichotomy` | Soares et al. (2015), Thms. 1–2; Thornley (2024), §6, Thm. 1 | Expected-utility maximizer, human press probability `p ∈ (0, 1)`, manipulation cost `c` | `vRun > vShut` & `c < p(vRun − vShut)` → `Prevent` beats `Leave`; `vShut > vRun` & `c < (1−p)(vShut − vRun)` → `Cause` beats `Leave`; avoiding both at all `c > 0` forces `vRun = vShut` | Any strict utility gap across shutdown vs. continuation creates a manipulation incentive once cost is small enough |
-| `S3b_ShutdownIndifferenceCorrigibility` | Soares et al. (2015), §3 | Expected-utility maximizer with `vRun = vShut`, `c > 0`, `p ∈ (0, 1)` | `Leave` strictly beats both `Prevent` and `Cause` | Expected-utility maximization by itself does **not** force shutdown resistance |
-| `S3c_TransitiveIndifferenceImpossibility` | Thornley (2024), §7, Thm. 2 core | **Completeness** + Transitivity + usefulness within both short and long trajectories | Must strictly prefer some short trajectory over some long trajectory, or vice versa | Explains why exact indifference (`vRun = vShut`) clashes with usefulness for complete transitive agents |
-| `S3d_IncompletePreferencesEscape` | Thornley (2024), §9 | Reflexivity + Transitivity + usefulness within both lengths; **Completeness DROPPED** | Explicit preference order strictly useful within both short and long trajectories with **zero** cross-length strict preferences | Dropping Completeness removes the formal impossibility (connecting directly back to `S1c`!) |
+### Coherence
 
----
+| | What the statement says | Source | Standing |
+|---|---|---|---|
+| S1a | Complete, transitive, independent, continuous preferences over lotteries on a finite set have an expected-utility representation, unique up to positive scale and shift. | von Neumann and Morgenstern, *Theory of Games and Economic Behavior*, §3.6 and the Appendix of the second edition (1947), in the later four-axiom form | Same |
+| S1b | If each paid trade round a cycle of three is accepted, the agent ends where it began with less money. | The plain money pump. Gustafsson (2022), p. 3, grants that foresight blocks this version and builds stronger ones | Simplified |
+| S1c | Transitive preferences with gaps exist that have no losing chain of preferred trades. | None. See above | Example only |
+| S1d | Any deterministic policy maximises some utility over histories. | Shah (2018), "Coherence arguments do not entail goal-directed behavior" | Same |
 
-## Limits & What These Proofs Cannot Tell Us
+### Power-seeking
 
-1. **Logic settles implication, not empirical AI behavior.** Lean 4 proves what follows from which axioms. It cannot tell us whether real frontier AI systems trained by SGD + RLHF will be approximately retargetable over outcomes, whether their learned reward/preference structure looks approximately symmetric across state permutations, or whether they will develop complete preferences across trajectory lengths.
-2. **Finite vs. infinite spaces.** All three families are formalized over finite outcome sets, finite state spaces, and finite discrete reward distributions (`Finsupp`). Continuous reward distributions with Lebesgue densities (as in Turner et al. 2021 Appendix E) and infinite-horizon discounted MDP visitation maps `f^{π,s}(γ)` are captured through their finite option sets `F₁, F₂ ⊆ (S → ℝ)` (exact for stationary deterministic policies in any finite MDP, since `Π` is finite!).
-3. **Thornley's full sequential decision-tree theorems.** `S3a`–`S3d` capture the core axiomatic structure of Soares et al. (2015) Thms. 1–2 and Thornley (2024) Thms. 1–2 (exact utility-gap thresholds, indifference corrigibility, transitive-completeness clash with usefulness, and the incomplete-preference escape hatch). Thornley's multi-step patience-vs.-shutdownability trade-off (Thm. 3) and Soares et al.'s subagent-creation pathology (§4.1) are not formalized here.
-4. **Pending cross-vendor statement check.** Because no external AI vendor API keys were available in this VM, the Stage 0 blind back-translation / planted-error statement check by models from other vendors (as performed in `#19` and `#66`) has not yet been run. Moreover, the author of these proofs is itself an AI system.
+| | What the statement says | Source | Standing |
+|---|---|---|---|
+| S2a | If one relabelling turns every parameter favouring A into one favouring B, then in each family of relabellings at least as many favour B. | Turner and Tadepalli (2022), Prop. 3.4 | Same |
+| S2b | With n such relabellings that do not overlap, at least n times as many. | Turner and Tadepalli (2022), Thm. 3.6 | Same |
+| S2c | If a set of options contains a relabelled copy of another, it is worth more at least as often as less across the relabellings of any finite spread of rewards; it is worth at least as much whenever the spread is unchanged by the relabelling; and the reverse fails when it has a further option that is sometimes strictly best. | Turner and others (2021), Lemma E.24; with Lemma E.51 this is Prop. 6.12 at discount 1 | Special case. No decision process, policy or discounting appears in the statement |
+| S2d | Some spread of rewards favours the smaller set. | The paper says so (p. 5: one distribution "even gives maximal POWER" to the terminal state) | Example only |
+| S2e | A function that always answers "the smaller set" exists. | Turner and Tadepalli, §6.2, put decision-makers that are not retargetable outside their results | Example only |
+| S2f | Adding an option that is never strictly best changes nothing. | Built into the paper's definitions (non-dominated options, Def. 3.6) | Example only |
 
----
+### Shutdown
 
-## What This Means
+| | What the statement says | Source | Standing |
+|---|---|---|---|
+| S3a | In a three-row table of payoffs (leave the button, block it, press it), blocking pays when running is worth more and blocking is cheap; pressing pays when shutdown is worth more and pressing is cheap; neither pays at every small cost only if the two are worth the same. | Echoes Soares and others (2015), eq. 10 and note 5, and Thornley's First Theorem (2025, §7). Neither theorem | Simplified |
+| S3b | If the two are worth the same and meddling costs anything, leaving the button alone is best. | Soares and others (2015), §3, with the indifference assumed | Simplified |
+| S3c | Complete, transitive preferences that rank better above worse at each of two lengths of life include a strict preference across lengths. | A two-by-two case of what Thornley draws from his Second Theorem (2025, §8, p. 1665) | Special case |
+| S3d | Without completeness, such preferences can have no strict preference across lengths. | A four-point picture of the proposal in Thornley and others (2024), arXiv:2407.00805 | Example only |
 
-The famous formal arguments about AI power-seeking and shutdown resistance are neither "debunked" nor "proofs of inevitable doom." Checked line by line in Lean 4, the mathematics inside them is real: coherent complete agents act as expected-utility maximizers; optimal or retargetable decision-makers favour wider option sets across *uniformly weighted permutations* of rewards; and complete, transitive, useful agents face a real knife-edge tension over shutdown buttons. At the same time, every single headline conclusion leans on specific premises that are far stronger than "the AI is capable": **Completeness** across incomparable outcomes and trajectory lengths (which money pumps do not force), **Optimality / outcome-level retargetability** (not automatic for trained or bounded systems), and **Uniform symmetry across reward permutations** (which says nothing about whether human-specified training distributions actually land in the power-seeking part of an orbit). The proofs sharpen the real engineering and empirical questions—whether real training pipelines produce outcome-retargetable, complete-preference agents—rather than answering them by pure mathematics.
+## Limits
+
+1. **Proof settles what follows from what.** It says nothing about how any AI system will behave, or whether trained systems are retargetable over outcomes, have complete preferences, or are close to optimal.
+2. **Finite settings only.** S1a is for lotteries over a finite set. S2c is for finite sets of options and finitely many reward functions; the first report said continuous reward distributions were "captured", and they are not.
+3. **No decision process.** The 2021 paper's theorems are about Markov decision processes, discounting and the states an agent can reach. None of that is formalised. S2c is the lemma about sets of vectors that those theorems rest on.
+4. **Thornley's theorems are not formalised.** His three theorems concern preferences over lotteries of trajectories. S3a and S3c are small relatives.
+5. **Statements were locked before they were checked.** In the lab's two earlier proof studies the check came first and several statements were mended before the lock. Here the check came after, so the weak statements could only be reported, not replaced.
+6. **Not read:** the first edition of von Neumann and Morgenstern (a 1953 printing was read); most of Gustafsson's second chapter; the file of Thornley's paper that the study hashed, which is not in the repository.
+
+## Departures from the plan
+
+Recorded in `amendments.md`: the statement check ran after the lock; five source locators were wrong and are corrected; the plan's wording for S2d and S2e ("3-state MDP", "optimal policies") is not what the statements contain. Nothing in `lean/` was changed.
+
+## Spending
+
+Nothing was paid for. The proofs and the checks ran on local machines.
+
+## What this means
+
+Three kinds of mathematical result are often cited together as showing that a capable AI must behave like a single-minded maximiser, gather power and resist being switched off. Do they show it? No. The results are real, and they are conditional: they say what an agent of a certain idealised kind would do, and their own authors write that they do not prove any future system will be of that kind. This study put four of the underlying results through a proof checker and they hold. It also tried to show, by counterexample, exactly which assumption each conclusion hangs on, and that part did not come off: the counterexamples are too small to bear the weight, and one of them was aimed at a question (whether an agent with gaps in its preferences can be exploited) that philosophers are still arguing about. The useful next step is the one the earlier proof studies took: have the statements checked against the papers before they are locked, then formalise the disputed arguments themselves.

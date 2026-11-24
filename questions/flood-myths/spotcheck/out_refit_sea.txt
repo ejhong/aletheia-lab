@@ -1,0 +1,34 @@
+5' vs 1' sea distance (where <260 km): median abs diff 3.9 km
+
+== A. Study as published (396 coastal by any-z<0 rule; study exposure). Control = log dist to nearest any z<0 cell at 1' (approx.) ==
+A  nb share, M4, study exposure (1' distance control)                  n=396 G=58 sing=21 b=-0.0087 se_cl=0.0613 p_cl=0.888 95%CI_cl=[-0.131,+0.114] se_c1k=0.0510 p_c1k=0.865 95%CI_c1k=[-0.109,+0.091]
+
+== B. Same 396 societies, exposure recomputed counting only connected sea (+Black Sea/Azov) ==
+B  nb share, M4, sea-only exposure, same sample                        n=396 G=58 sing=21 b=+0.0331 se_cl=0.0447 p_cl=0.463 95%CI_cl=[-0.057,+0.123] se_c1k=0.0393 p_c1k=0.400 95%CI_c1k=[-0.044,+0.110]
+
+== C. Coastal = within 150 km of real sea (1'); exposure sea-only; control log dist to sea ==
+   sample 368 | in study sample but not here: 33 | here but not in study: 5
+C1 nb share M4 (primary analogue)                                      n=368 G=57 sing=21 b=-0.0378 se_cl=0.0732 p_cl=0.607 95%CI_cl=[-0.185,+0.109] se_c1k=0.0598 p_c1k=0.527 95%CI_c1k=[-0.155,+0.079]
+C2 flood_related M4                                                    n=368 G=57 sing=21 b=-0.0575 se_cl=0.0695 p_cl=0.412 95%CI_cl=[-0.197,+0.082] se_c1k=0.0541 p_c1k=0.288 95%CI_c1k=[-0.163,+0.049]
+C3 any nb (LPM) M4                                                     n=368 G=57 sing=21 b=-0.0093 se_cl=0.0333 p_cl=0.781 95%CI_cl=[-0.076,+0.057] se_c1k=0.0243 p_c1k=0.702 95%CI_c1k=[-0.057,+0.038]
+C4 Noah-free nb share M4                                               n=317 G=55 sing=25 b=-0.0486 se_cl=0.0810 p_cl=0.551 95%CI_cl=[-0.211,+0.114] se_c1k=0.0689 p_c1k=0.480 95%CI_c1k=[-0.184,+0.086]
+C5 Noah-free flood_related M4                                          n=317 G=55 sing=25 b=-0.0509 se_cl=0.0791 p_cl=0.523 95%CI_cl=[-0.209,+0.108] se_c1k=0.0613 p_c1k=0.407 95%CI_c1k=[-0.171,+0.069]
+C6 nb share M3 (continent FE)                                          n=368 G=57 sing=21 b=+0.0172 se_cl=0.0565 p_cl=0.762 95%CI_cl=[-0.096,+0.130] se_c1k=0.0534 p_c1k=0.748 95%CI_c1k=[-0.087,+0.122]
+C7 nb share M4, -60 m sea-only                                         n=368 G=57 sing=21 b=-0.0445 se_cl=0.0634 p_cl=0.485 95%CI_cl=[-0.172,+0.082] se_c1k=0.0497 p_c1k=0.370 95%CI_c1k=[-0.142,+0.053]
+C8 nb share M4, shelf fraction of sea                                  n=368 G=57 sing=21 b=-0.1703 se_cl=0.0799 p_cl=0.037 95%CI_cl=[-0.330,-0.010] se_c1k=0.0811 p_c1k=0.036 95%CI_c1k=[-0.329,-0.011]
+C9 flood_related M4, shelf fraction of sea                             n=368 G=57 sing=21 b=-0.1784 se_cl=0.0722 p_cl=0.017 95%CI_cl=[-0.323,-0.034] se_c1k=0.0714 p_c1k=0.012 95%CI_c1k=[-0.318,-0.038]
+C10 fire negative control M4                                           n=368 G=57 sing=21 b=-0.0610 se_cl=0.0350 p_cl=0.086 95%CI_cl=[-0.131,+0.009] se_c1k=0.0443 p_c1k=0.169 95%CI_c1k=[-0.148,+0.026]
+C11 nb share M4, |lat|<50                                              n=296 G=52 sing=21 b=-0.0335 se_cl=0.0875 p_cl=0.704 95%CI_cl=[-0.209,+0.142] se_c1k=0.0754 p_c1k=0.657 95%CI_c1k=[-0.181,+0.114]
+C12 nb share M4, |lat|<30                                              n=193 G=39 sing=17 b=-0.0457 se_cl=0.1575 p_cl=0.773 95%CI_cl=[-0.364,+0.273] se_c1k=0.1209 p_c1k=0.705 95%CI_c1k=[-0.283,+0.191]
+
+== Quartiles under C (sea-only exposure, sea-defined coastal) ==
+   Q1      453-   10773 km2 n=92 any NB=34.8% mean share=1.10%
+   Q2    10773-   19881 km2 n=92 any NB=38.0% mean share=1.18%
+   Q3    19881-   37795 km2 n=92 any NB=31.5% mean share=1.00%
+   Q4    37795-  187394 km2 n=92 any NB=32.6% mean share=1.03%
+
+== Study Q4 (top 99 by study exposure): how many have no real sea within 150 km ==
+    12 of 99: Astrakhan Tatars and Nogai, Kalmyk, Kumyk, Ingush, Chechen, Dargin (Dargwa), Tabasaran; Aghul, Nogai, Tats, Avar,Andi,Akhvakh, Laks, Lezgians,Kiurin; Archin
+
+== Positive control 2 (sea motifs vs proximity) with sea-only distance, as coded by the study (global, lang FE, sampling + abs lat) ==
+PC2 sea_related ~ -log(1+dist to real sea)                             n=927 G=94 sing=31 b=+0.1074 se_cl=0.0500 p_cl=0.034 95%CI_cl=[+0.008,+0.207] se_c1k=0.0431 p_c1k=0.013 95%CI_c1k=[+0.023,+0.192]

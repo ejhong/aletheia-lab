@@ -22,10 +22,10 @@ def make_tiles(s: dict) -> None:
     eq = s["calibration"]["pos_earthquake_vs_quake_prox_langFE"]
     qs = s["coastal_quartiles"]
     items = [
-        (f"{qs[3]['any_nb_flood_pct']:.1f}% vs. {qs[0]['any_nb_flood_pct']:.1f}%", "non-biblical flood-myth rate on the widest drowned shelves (Q4: 40k–187k km²) vs. steepest shelves (Q1: <10.4k km²) across 396 coastal societies", False),
-        (f"β = {m4_nb['beta']:+.3f} SD", f"coastal M4 slope (75 language-family FE + climate/river/quake controls): p = {m4_nb['p_conley_1000']:.2f} (Conley 1,000 km), p = {m4_nb['p_perm_within_continent']:.2f} (perm)", False),
-        (f"β = {eq['beta']:+.3f} SD", f"positive control in the same 927 societies: earthquake myths track real seismic zones even with language-family FE (p = {eq['p_conley_1000']:.4f})", False),
-        ("Null", "Worldwide flood myths do not cluster where Ice Age shelves drowned—under −120 m, −60 m Holocene, Noah-free, or regional checks", True),
+        (f"{qs[0]['any_nb_flood_pct']:.0f}% and {qs[3]['any_nb_flood_pct']:.0f}%", "of coastal societies have a flood motif beside the narrowest drowned shelves and beside the widest", False),
+        (f"{m4_nb['beta']:+.2f} ± {m4_nb['se_cluster']:.2f}", f"the slope in the model fixed in advance, in standard deviations, with its standard error (p = {m4_nb['p_cluster']:.2f})", False),
+        ("1 of 2", "checks on the method passed: earthquake motifs follow earthquake country; sea motifs follow the coast only weakly", False),
+        ("Not found", "No sign that flood motifs gather where land drowned. Modest effects are not excluded", True),
     ]
     body = ['<div class="tiles">']
     for v, lbl, is_w in items:
@@ -51,13 +51,13 @@ def make_quartiles_and_forest(s: dict) -> None:
         }
 
     forest = [
-        row("Positive control: Earthquakes vs. seismic proximity (Lang FE)", cal["pos_earthquake_vs_quake_prox_langFE"], "pos"),
-        row("Negative control: Fire vs. drowned shelf (Coastal M4)", cal["neg_fire_vs_drowned120_coastal_M4"], "neg"),
+        row("Check: earthquake motifs vs. earthquake country (all 927, lighter model)", cal["pos_earthquake_vs_quake_prox_langFE"], "pos"),
+        row("Check: fire motifs vs. drowned shelf (coastal M4; should be zero)", cal["neg_fire_vs_drowned120_coastal_M4"], "neg"),
         row("Non-biblical flood share — Coastal M1 (sampling + coast)", m["nb_flood_share_z"]["M1"], "main"),
         row("Non-biblical flood share — Coastal M2 (+ river/quake/climate)", m["nb_flood_share_z"]["M2"], "main"),
         row("Non-biblical flood share — Coastal M3 (+ continent FE)", m["nb_flood_share_z"]["M3"], "main"),
-        row("Non-biblical flood share — Coastal M4 (PRIMARY, + 75 Lang FE)", m["nb_flood_share_z"]["M4"], "primary"),
-        row("MX flood_related share — Coastal M4 (+ 75 Lang FE)", m["flood_related_z"]["M4"], "primary"),
+        row("Non-biblical flood share — Coastal M4 (PRIMARY, + language-family FE)", m["nb_flood_share_z"]["M4"], "primary"),
+        row("MX flood_related share — Coastal M4 (+ language-family FE)", m["flood_related_z"]["M4"], "primary"),
         row("Noah-free subsample (n=340) — Non-biblical flood M4", nf["nb_flood_share_z"]["M4"], "main"),
         row("Holocene −60 m shelf (12–7 ka) — Non-biblical flood M4", es["log_drowned_60m_250km"]["nb_flood_share_z"]["M4"], "main"),
         row("Wider 500 km radius (−120 m) — Non-biblical flood M4", es["log_drowned_120m_500km"]["nb_flood_share_z"]["M4"], "main"),
@@ -77,7 +77,7 @@ def make_quartiles_and_forest(s: dict) -> None:
 <div class="fig-scroll">
 <svg id="fm-c-svg" class="chart" viewBox="0 0 720 355" role="img" aria-label="Flood myth slopes and coastal shelf quartiles" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Flood myths vs. post-glacial drowned continental shelf across 396 coastal societies (&le;150 km from modern ocean).</strong> In the forest plot, horizontal bars show 95% Conley (1999) spatial-HAC confidence intervals at a 1,000 km Bartlett cutoff (standard deviations of motif share per 1-SD increase in exposure). The positive control (earthquake myths vs. proximity to seismic zones, teal) is clearly positive (&beta; = +0.157 SD, p = 0.0005). Every drowned-shelf flood-myth model—from M1 to primary M4 with 75 language-family fixed effects, Noah-free subsamples, and Holocene &minus;60 m shelves—sits dead on zero or slightly negative. The quartile toggle confirms the raw pattern: societies beside the widest drowned shelves (Q4: 40k–187k km&sup2;) actually have slightly <em>fewer</em> non-biblical flood myths (34.3%) than societies on the steepest shelves (Q1: 36.4%).</figcaption>
+<figcaption><strong>Flood motifs against drowned shelf, 396 societies within 150 km of water.</strong> Each bar is an estimate with its 95% interval (spatial standard errors, 1,000 km), in standard deviations of the outcome per standard deviation of drowned area. The earthquake check (teal) is clearly positive, but it was run on all 927 societies with a lighter model; in the flood test&rsquo;s own sample and model it is not significant. Every flood estimate sits on zero or a little below. The second button shows the raw rates in four equal groups, from the narrowest drowned shelves to the widest. About a tenth of the &ldquo;drowned shelf&rdquo; counted here is the Caspian Sea, lakes and dry basins; counting real sea only gives the same picture.</figcaption>
 <script>
 (function(){{
   var D = {data_json};
@@ -168,7 +168,7 @@ def make_world_and_regional(s: dict) -> None:
 <div class="fig-scroll">
 <svg id="fm-m-svg" class="chart" viewBox="0 0 720 330" role="img" aria-label="Global map of Berezkin flood myths and regional regression slopes" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Global geography of non-biblical flood myths and regional drowned-shelf slopes.</strong> Copper circles mark societies with &ge;1 non-biblical Berezkin deluge/flood motif; slate dots mark societies without. Circle area in the coastal view scales with post-glacial drowned continental shelf area (&minus;120 m to 0 m within 250 km). Flood myths occur across inland and steep-coast regions alike (North America, South America, inland Eurasia), while major drowned-shelf regions—North Sea/Europe, coastal Australia/Sahul (18.8%), and Sundaland/Oceania—show no systematic excess.</figcaption>
+<figcaption><strong>Where the flood motifs are.</strong> Copper circles mark societies with at least one of the 17 chosen motifs; grey dots mark those with none. In the coastal view, a circle&rsquo;s area follows the area of shelf between 120 m down and the surface within 250 km. Seven of the 17 motifs are only loosely about floods, and the catalogue codes all of Australia as eight regions.</figcaption>
 <script>
 (function(){{
   var D = {data_json};
@@ -203,7 +203,7 @@ def make_world_and_regional(s: dict) -> None:
         var lblX = b >= 0 ? sx(b) + 6 : sx(b) - 6;
         svg.appendChild(el("text", {{x: lblX, y: y + h * 0.72, "text-anchor": b >= 0 ? "start" : "end", "font-size": 10, fill: "var(--muted)"}}, (b >= 0 ? "+" : "") + b.toFixed(3) + " (p=" + r.nb_flood_p_conley500.toFixed(2) + ")"));
       }});
-      svg.appendChild(el("text", {{x: (L+R)/2, y: 316, "text-anchor": "middle", "font-size": 11, fill: "var(--muted)"}}, "Zero continents reach p < 0.05 positive; Australia/Sahul (n=16) Spearman ρ = −0.41"));
+      svg.appendChild(el("text", {{x: (L+R)/2, y: 316, "text-anchor": "middle", "font-size": 11, fill: "var(--muted)"}}, "No continent shows a positive slope at p < 0.05"));
       return;
     }}
     var L = 30, R = 690, T = 26, B = 294;

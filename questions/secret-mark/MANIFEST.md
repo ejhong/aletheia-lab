@@ -6,7 +6,7 @@ Retrieved: 2026-11-24. All raw files are stored in gitignored `data/` and re-dow
 
 | File | Source | Retrieval date | Licence / access | Bytes | SHA-256 |
 |---|---|---|---|---:|---|
-| `akma_SecretMark.pdf` | https://akma.disseminary.org/wp-content/uploads/2018/04/SecretMark.pdf | 2026-11-24 | Open academic study edition (A.K.M. Adam 2018, collating MS/PV/AT) | 657,529 | `946da934e9de5456849824e437bb5de6522d4b46f9cc75f91cb223ef1cebd843` |
+| `akma_SecretMark.pdf` | https://akma.disseminary.org/wp-content/uploads/2018/04/SecretMark.pdf | 2026-11-24 | CC BY-NC 4.0 (A.K.M. Adam's 2018 study edition, collating MS/PV/AT; not redistributed here) | 657,529 | `946da934e9de5456849824e437bb5de6522d4b46f9cc75f91cb223ef1cebd843` |
 | `khazarzar_secmark.htm` | http://khazarzar.skeptik.net/books/kh/secmark.htm | 2026-11-24 | Public web transcription of Smith 1973 (used solely for cross-verification) | 74,461 | `d49b85d18f1cefc5a584b21c381a48bc84e987872bb9c5ff9c376746b605a460` |
 
 ## Comparison & Control Greek Corpora (38 Files, 1,749,008 Greek Tokens)

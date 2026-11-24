@@ -1,0 +1,83 @@
+{
+ "recap_rule_on_controls": {
+  "bronze_5_3": {
+   "n25": 78,
+   "max25_ef": 1.693,
+   "n25_ge3": 0,
+   "sustained_pairs_ge3": [],
+   "n25_ge2": 0
+  },
+  "iron_3_2.15": {
+   "n25": 34,
+   "max25_ef": 1.549,
+   "n25_ge3": 0,
+   "sustained_pairs_ge3": [],
+   "n25_ge2": 0
+  },
+  "roman": {
+   "n25": 20,
+   "max25_ef": 2.728,
+   "n25_ge3": 0,
+   "sustained_pairs_ge3": [],
+   "n25_ge2": 4
+  },
+  "medieval": {
+   "n25": 20,
+   "max25_ef": 3.087,
+   "n25_ge3": 1,
+   "sustained_pairs_ge3": [],
+   "n25_ge2": 13
+  },
+  "industrial": {
+   "n25": 6,
+   "max25_ef": 25.053,
+   "n25_ge3": 6,
+   "sustained_pairs_ge3": [
+    [
+     100.0,
+     150.0
+    ],
+    [
+     125.0,
+     175.0
+    ],
+    [
+     150.0,
+     200.0
+    ],
+    [
+     175.0,
+     225.0
+    ],
+    [
+     200.0,
+     250.0
+    ]
+   ],
+   "n25_ge2": 6
+  },
+  "mwu_centuries_medieval_vs_pre": 3.0804110500505186e-06,
+  "medieval_centuries_ef": [
+   2.015,
+   2.34,
+   2.886,
+   1.958,
+   1.98
+  ],
+  "pre5_frac_ncpb_zero": 0.5005417118093174
+ }
+}
+Füramoos XRF rows 7.40-7.60 ka (depth, age ka, Pb norm, EF_pub, EF_renorm):
+  2.135 7.4015 27.2 2.908 5.261
+  2.14 7.417 26.1 1.239 2.241
+  2.145 7.433 31.2 2.247 4.065
+  2.155 7.465 39.9 1.408 2.548
+  2.16 7.481 28.5 2.675 4.84
+  2.165 7.4955 39.2 1.696 3.068
+  2.18 7.54 33.8 1.271 2.299
+  2.185 7.5555 17.0 0.689 1.247
+  2.19 7.571 20.4 0.908 1.642
+  2.195 7.5865 19.6 0.694 1.255
+Top-12 pre-5ka published EF (age ka, EF_pub, renorm): [(np.float64(7.402), np.float64(2.91), np.float64(5.26)), (np.float64(7.481), np.float64(2.68), np.float64(4.84)), (np.float64(7.433), np.float64(2.25), np.float64(4.07)), (np.float64(7.279), np.float64(2.1), np.float64(3.8)), (np.float64(7.617), np.float64(2.1), np.float64(3.8)), (np.float64(5.7), np.float64(1.95), np.float64(3.52)), (np.float64(6.802), np.float64(1.93), np.float64(3.5)), (np.float64(7.051), np.float64(1.89), np.float64(3.41)), (np.float64(5.508), np.float64(1.82), np.float64(3.29)), (np.float64(7.128), np.float64(1.74), np.float64(3.15)), (np.float64(7.496), np.float64(1.7), np.float64(3.07)), (np.float64(5.659), np.float64(1.68), np.float64(3.04))]
+EPICA baseline Pb/Ba mean, sd: 0.0521 0.0284  iso mean sd 1.2155 0.0162
+EPICA 40-5 ka samples with |z|>2 in Pb/Ba or 206/207: [(np.float64(18.16), np.float64(1.257), np.float64(0.17), np.float64(4.15), np.float64(2.56))]

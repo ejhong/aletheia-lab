@@ -21,10 +21,10 @@ def make_tiles(s: dict) -> None:
     t3 = s["test3_lexical_criddle"]["vs_all_authentic_clement"]
     t5 = s["test5_layer_b_gospels"]
     items = [
-        ("0 / 4", f"unconscious-style methods rank Clement #1 on the 529-word frame (Clement ranks #{t1['clement_rank_mfw']}, #{t1['clement_rank_c34']}, #{t1['clement_rank_gi']}, #{t1['clement_rank_lr']} behind Theodoret & Eusebius)", False),
-        (f"z = {t3['r_criddle']['z_score']:+.2f}", f"Criddle rare-word ratio vs. 484 authentic Clement chunks (p = {t3['r_criddle']['p_two_sided']:.2f})—no 'hyper-Clementine' lexical packing", False),
-        ("62 / 62", f"genuine Canonical Mark passages exceeded by Secret Mark in verbatim Mark+John content bigrams ({t5['cento_vs_mark_union_john']['content_bigram_rate']['mar_saba']*100:.1f}% vs. {t5['cento_vs_mark_union_john']['content_bigram_rate']['ref_mean']*100:.1f}%, z = {t5['cento_vs_mark_union_john']['content_bigram_rate']['z_score']:+.2f})", False),
-        ("Split / Mixed", "Epistolary frame inconclusive (no Criddle excess, but weak Clement attribution); Secret Mark quotes show a clear Mark+John cento signature", True),
+        ("2nd or 3rd", "where Clement comes among 14 authors on each of four measures of style, for the letter proper; never first", False),
+        ("6% to 24%", "how often three of the same measures recognise Clement's own short homily as his; the letter is too short to judge by style", False),
+        ("49% against 28%", "of two-word phrases found word for word in Mark: the quoted passages, against the average for 62 passages of Mark itself (highest 40%)", False),
+        ("Inconclusive", "Style cannot say who wrote the letter. The quoted passages are unusually dense in Mark's phrases, which fits imitation and gives no date", True),
     ]
     body = ['<div class="tiles">']
     for v, lbl, is_w in items:
@@ -52,16 +52,16 @@ def make_layer_a_figure(s: dict) -> None:
     html_out = f"""<figure class="fig" aria-label="14-author Greek stylometry attribution of the Mar Saba Letter epistolary frame">
 <div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;align-items:center">
   <span style="font-size:12px;color:var(--muted);margin-right:4px">Stylometric method (529-word Clement frame):</span>
-  <button type="button" class="sm-a-btn is-on" data-m="mfw" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">MFW-150 Cosine Delta</button>
-  <button type="button" class="sm-a-btn" data-m="c34" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Char 3–4-gram Delta</button>
-  <button type="button" class="sm-a-btn" data-m="gi" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">General Imposters</button>
-  <button type="button" class="sm-a-btn" data-m="lr" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">TF-IDF LogReg</button>
-  <button type="button" class="sm-a-btn" data-m="oneclass" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">One-Class Percentile</button>
+  <button type="button" class="sm-a-btn is-on" data-m="mfw" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">Common words</button>
+  <button type="button" class="sm-a-btn" data-m="c34" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Letter groups</button>
+  <button type="button" class="sm-a-btn" data-m="gi" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Imposters test</button>
+  <button type="button" class="sm-a-btn" data-m="lr" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Classifier</button>
+  <button type="button" class="sm-a-btn" data-m="oneclass" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Distance from each author</button>
 </div>
 <div class="fig-scroll">
 <svg id="sm-a-svg" class="chart" viewBox="0 0 720 390" role="img" aria-label="14-author stylometry rankings for Mar Saba letter frame" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Layer A (529-word epistolary frame) across 14 Greek Christian &amp; Alexandrian authors (1st–5th c. CE).</strong> Clement of Alexandria (highlighted in copper) finishes #2 on MFW-150 and Character 3–4-gram Cosine Delta and #3 on General Imposters and Logistic Regression—edged out by 4th–5th c. Fathers (Theodoret of Cyrus, Eusebius of Caesarea, Origen). Yet on one-class self-distance percentile (rightmost toggle), Clement ranks #1 (88.6th percentile, closer to Clement's training centroid than Clement's own held-out homily <em>Quis dives salvetur</em> at the 97.6th percentile). Short epistolary Greek leaves authentic Clement and later patristic prose closely overlapping.</figcaption>
+<figcaption><strong>The letter proper (529 words) against 14 Greek Christian authors of the first to fifth centuries.</strong> Each button is one measure of style; Clement is in copper. He comes second or third on the first four and never first; a fifth-century writer, Theodoret, comes first on three. The last button shows how far the letter sits from the middle of each author&rsquo;s own writing: it is nearest Clement (88.6th percentile), but Eusebius, Epiphanius and Theodoret are within two points, and Clement&rsquo;s own short homily <em>Quis dives salvetur</em> sits further out (97.6th). At this length the measures cannot tell.</figcaption>
 <script>
 (function(){{
   var DATA = {data_json};
@@ -151,15 +151,15 @@ def make_lexical_and_cento_figure(s: dict) -> None:
     html_out = f"""<figure class="fig" aria-label="Comparison of Criddle hyper-Clementine lexical test vs Markan cento verbatim phrase-stitching test">
 <div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;align-items:center">
   <span style="font-size:12px;color:var(--muted);margin-right:4px">Diagnostic test:</span>
-  <button type="button" class="sm-b-btn is-on" data-k="cento_bg" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">Layer B: Mark Content Bigrams (Cento)</button>
-  <button type="button" class="sm-b-btn" data-k="cento_tg" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Layer B: Mark Content Trigrams (Cento)</button>
-  <button type="button" class="sm-b-btn" data-k="criddle" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Layer A: Criddle Rare-Word Ratio</button>
-  <button type="button" class="sm-b-btn" data-k="monroe" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Layer A: Clement Log-Odds Density</button>
+  <button type="button" class="sm-b-btn is-on" data-k="cento_bg" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">Two-word phrases</button>
+  <button type="button" class="sm-b-btn" data-k="cento_tg" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Three-word phrases</button>
+  <button type="button" class="sm-b-btn" data-k="criddle" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Rare-word ratio</button>
+  <button type="button" class="sm-b-btn" data-k="monroe" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Clementine vocabulary</button>
 </div>
 <div class="fig-scroll">
 <svg id="sm-b-svg" class="chart" viewBox="0 0 720 270" role="img" aria-label="Histogram comparing Mar Saba diagnostics against authentic baselines" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Two forgery diagnostics, opposite outcomes.</strong> In <strong>Layer B (Secret Mark quotes, 181 words)</strong>, verbatim content-bigram overlap with Canonical Mark hits <strong>48.6%</strong> (z = +3.35)—higher than all 62 genuine 181-word passages of Canonical Mark (max 40.1%)—and reaches <strong>55.6%</strong> (z = +3.38) against Mark &cup; John, with 25.0% content trigrams (z = +2.93), the clear fingerprint of a Mark+John phrase cento. By contrast, in <strong>Layer A (Clement frame, 529 words)</strong>, the Criddle (1995) rare-word ratio (0.139 vs. authentic Clement 0.133 &plusmn; 0.036, z = +0.17) and Clement-distinctive vocabulary density (&minus;0.327, z = &minus;1.32 vs. all Clement; z = +0.22 vs. held-out <em>Quis dives</em> + <em>Eclogae</em>) show <strong>zero 'hyper-Clementine' packing</strong>.</figcaption>
+<figcaption><strong>Two tests.</strong> The first two buttons: the share of the quoted passages&rsquo; two-word and three-word phrases that occur word for word in Mark, against the same share for 62 passages of Mark, each compared with the rest of the gospel. The quotations stand above all 62 on two-word phrases (48.6% against a highest of 40.1%). On three-word phrases the margin depends on where the passages are cut. The last two buttons: two measures of how Clementine the letter&rsquo;s vocabulary is, against 484 passages of Clement. The letter is ordinary on both. The first of them is not the ratio Andrew Criddle used in 1995, so it does not test his argument.</figcaption>
 <script>
 (function(){{
   var D = {data_json};
@@ -174,28 +174,28 @@ def make_lexical_and_cento_figure(s: dict) -> None:
   }}
   var VIEWS = {{
     cento_bg: {{
-      title: "Layer B: Content-bearing bigrams appearing verbatim in Canonical Mark (62 LOO Mark chunks vs. Secret Mark)",
+      title: "Two-word phrases found word for word in Mark (common words left out)",
       arr: D.cento_bg_dist, val: D.cento_bg_sm, xmin: 10, xmax: 55, bins: 18,
-      unit: "%", label: "Secret Mark: " + D.cento_bg_sm + "% (z = +" + D.cento_bg_z + ", 100th pct)",
-      refLabel: "62 genuine 181-word Mark chunks (leave-one-out)", color: "#b91c1c"
+      unit: "%", label: "Quoted passages: " + D.cento_bg_sm + "% (above all 62)",
+      refLabel: "62 passages of Mark, 181 words each", color: "#b91c1c"
     }},
     cento_tg: {{
-      title: "Layer B: Content-bearing trigrams appearing verbatim in Canonical Mark (62 LOO Mark chunks vs. Secret Mark)",
+      title: "Three-word phrases found word for word in Mark (common words left out)",
       arr: D.cento_tg_dist, val: D.cento_tg_sm, xmin: 0, xmax: 24, bins: 16,
-      unit: "%", label: "Secret Mark: " + D.cento_tg_sm + "% (z = +" + D.cento_tg_z + ", 100th pct)",
-      refLabel: "62 genuine 181-word Mark chunks (leave-one-out)", color: "#b91c1c"
+      unit: "%", label: "Quoted passages: " + D.cento_tg_sm + "% (above all 62 as cut here)",
+      refLabel: "62 passages of Mark, 181 words each", color: "#b91c1c"
     }},
     criddle: {{
-      title: "Layer A: Criddle rare-to-common ratio C1/(C1+C2+) vs. 484 authentic Clement 529-word chunks",
+      title: "The letter's rare-word ratio against 484 passages of Clement (not Criddle's ratio)",
       arr: D.criddle_dist, val: D.criddle_ms, xmin: 0.02, xmax: 0.26, bins: 20,
-      unit: "", label: "Mar Saba frame: " + D.criddle_ms + " (z = +" + D.criddle_z + ", p = 0.76)",
-      refLabel: "484 authentic Clement chunks (dead center)", color: "var(--teal)"
+      unit: "", label: "The letter: " + D.criddle_ms,
+      refLabel: "484 passages of Clement", color: "var(--teal)"
     }},
     monroe: {{
-      title: "Layer A: Mean Monroe Clement-distinctiveness log-odds vs. 484 authentic Clement chunks",
+      title: "How Clementine the letter's vocabulary is, against 484 passages of Clement",
       arr: D.monroe_dist, val: D.monroe_ms, xmin: -1.8, xmax: 1.0, bins: 22,
-      unit: "", label: "Mar Saba frame: " + D.monroe_ms + " (z = " + D.monroe_z + "; Non-Clement med = " + D.monroe_nonclem + ")",
-      refLabel: "484 authentic Clement chunks (no hyper-Clementine excess)", color: "var(--teal)"
+      unit: "", label: "The letter: " + D.monroe_ms + " (other authors: " + D.monroe_nonclem + ")",
+      refLabel: "484 passages of Clement", color: "var(--teal)"
     }}
   }};
   function draw(k){{

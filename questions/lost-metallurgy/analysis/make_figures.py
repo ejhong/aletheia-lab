@@ -21,10 +21,10 @@ def make_tiles(s: dict) -> None:
     fur = s["furamoos_germany_14kyr"]
     gisp = s["gisp2_greenland_40_47ka"]
     items = [
-        ("0", "sustained non-volcanic EF ≥ 3.0 anomalies before 5,000 BP across Greenland (RECAP, GISP2), Antarctica (EPICA Dome C), Germany (Füramoos), and Sweden (Store Mosse)", False),
-        ("p < 10⁻¹⁰⁰", f"positive-control detection of Roman (EF 1.56, p = 3×10⁻¹⁰⁴) and Medieval (EF 2.17, p = 10⁻²⁵⁷) smelting in East Greenland RECAP; EF 77.3 in the French Alps", False),
-        ("1.204–1.216", f"natural crustal 206Pb/207Pb in all 12 pre-5 ka Füramoos samples (14.3–5.0 ka), before plunging to 1.139–1.190 after 5 ka (p = 4.8×10⁻⁶)", False),
-        ("Null", f"No evidence of pre-Bronze-Age metallurgy; 95% of pre-5 ka Greenland centuries stay ≤ {rec['upper_bound_vs_roman']['p95_100yr_frac_roman']*100:.0f}% of Roman air-lead levels", True),
+        ("0", "stretches of 50 years or more before 5,000 years ago with lead at three times its usual level, in the ice and peat sampled", False),
+        ("4 to 5 times Rome", "the lead needed in Greenland ice before the locked rule fires; applied to the Roman and medieval centuries themselves, it does not", False),
+        ("7,000 years", "since copper was first smelted in the Balkans, on the archaeological evidence; none of these records shows it", False),
+        ("Too coarse", "Nothing unusual before 5,000 years ago, in records that would miss early metalworking and barely show Rome", True),
     ]
     body = ['<div class="tiles">']
     for v, lbl, is_w in items:
@@ -55,7 +55,7 @@ def make_holocene_timeline(s: dict) -> None:
 <div class="fig-scroll">
 <svg id="lm-h-svg" class="chart" viewBox="0 0 720 285" role="img" aria-label="Holocene and Late Glacial atmospheric lead enrichment and isotopes" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Pre-Bronze-Age quiet vs. historical smelting across East Greenland ice and Central European peat.</strong> Vertical dashed line marks 5.0 ka BP (onset of the Bronze Age); shaded band marks the Roman Empire positive control (2.15–1.65 ka BP). Before 5,000 BP, every single volcanic-masked 100-year bin in RECAP (8.0–5.0 ka) stays below EF 1.36, every XRF sample in Füramoos (14.3–5.0 ka) stays below EF 2.91 (median 0.55), and all 12 pre-5 ka lead-isotope measurements remain locked in the natural crustal band (206Pb/207Pb = 1.204–1.216) before dropping sharply into unradiogenic ore-lead values (1.139–1.190) after 5 ka.</figcaption>
+<figcaption><strong>Lead in East Greenland ice and a southern German bog.</strong> The dashed line is 5,000 years ago, the cut the plan chose; smelting is in fact some 2,000 years older. The shaded band is the Roman period. Nothing before 5,000 years ago stands out. Look also at what follows it: in the ice, the Bronze and Iron Ages are indistinguishable from the earlier scatter and Rome rises to about one and a half times it; in the bog, lead and its isotopes do not move until about 3,600 years ago. These records show a large lead industry near Europe and little else.</figcaption>
 <script>
 (function(){{
   var D = {data_json};
@@ -170,7 +170,7 @@ def make_glacial_and_controls(s: dict) -> None:
 <div class="fig-scroll">
 <svg id="lm-g-svg" class="chart" viewBox="0 0 720 275" role="img" aria-label="Deep Ice Age heavy-metal profiles and positive controls" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Deep Ice Age scans (47–2 ka) and positive-control calibration.</strong> In Antarctica (EPICA Dome C, 40–5 ka vs. 217–40 ka baseline), Pb/Ba enrichment stays at median EF 1.00; the single isolated 18.16 ka spike (EF 4.25) is radiogenic (206Pb/207Pb = 1.257, z = +2.56)—opposite the unradiogenic ore-lead signature—and vanishes within 30 years (EF 1.25 at 18.13 ka). In Greenland's GISP2 continuous ICP-MS record across MIS 3 (47.4–40.4 ka, 5,240 samples), all four smelting-associated chalcophile metals (Pb, Cd, Bi, Tl) stay well below EF 3.0 in every 100-year bin.</figcaption>
+<figcaption><strong>The Ice Age records.</strong> Antarctic ice (30 samples between 40,000 and 5,000 years ago): one high reading at 18,160 years ago, isolated and of the wrong isotope signature for ore lead. This record does not register Rome either. Central Greenland ice, 47,400 to 40,400 years ago: four metals, none at three times its usual level in any century; here too the usual level is taken from the same stretch of ice, so only a burst would show, not a steady source. The third button compares periods. Between 40,400 and 14,300 years ago there are no northern data at all.</figcaption>
 <script>
 (function(){{
   var D = {data_json};
