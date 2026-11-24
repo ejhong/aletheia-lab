@@ -62,3 +62,5 @@ Each has an issue. Eugene marks the ones to work on `status:active`; nothing els
 | [#114](https://github.com/ejhong/aletheia-lab/issues/114) | Does a second Greenland ice core (NEEM) confirm fewer fire spikes at the Younger Dryas onset? | data | `yd-neem-spikes` |
 | [#115](https://github.com/ejhong/aletheia-lab/issues/115) | Do anaesthetics selectively shift collective tryptophan dipole modes in tubulin? | data | `anaesthetics-terahertz` |
 | [#116](https://github.com/ejhong/aletheia-lab/issues/116) | Did North American megafauna collapse before the Younger Dryas? | data | `yd-megafauna-timing` |
+| [#120](https://github.com/ejhong/aletheia-lab/issues/120) | Do Younger Dryas platinum and HSE anomalies fingerprint a comet—or volcanic/crustal sources? | data | `yd-platinum-fingerprint` |
+| [#121](https://github.com/ejhong/aletheia-lab/issues/121) | Did extraterrestrial Helium-3 cosmic dust rise across the Younger Dryas deglaciation? | data | `yd-cosmic-dust-he3` |
