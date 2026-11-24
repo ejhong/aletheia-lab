@@ -110,7 +110,7 @@ def fetch_json(url: str, cache_name: str, retries: int = 3):
     last_err = None
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "AletheiaLab/1.0 (paleoecology-audit)"})
+            req = urllib.request.Request(url, headers={"User-Agent": "pollen-audit/1.0"})
             with urllib.request.urlopen(req, timeout=35) as r:
                 raw = r.read()
             obj = json.loads(raw.decode("utf-8"))
