@@ -17,6 +17,7 @@ from pt_fingerprint import (
     detect_blind_peaks,
     hse_vec,
     mixing_rmse,
+    parse_kpg2025_benchmark,
     poisson_binomial_tail,
 )
 
@@ -105,9 +106,53 @@ def test_decision_rules():
     print("PASS: test_decision_rules")
 
 
+def test_kpg_parser_skips_non_sample_rows():
+    """Amendment 2: reference standards and their 1SD / RSD% rows must not enter the K-Pg control."""
+    import pathlib
+    import tempfile
+    import zipfile
+
+    def sheet(rows):
+        out = []
+        for i, row in enumerate(rows, start=1):
+            cells = "".join(
+                f'<c r="{chr(65 + j)}{i}" t="str"><v>{v}</v></c>' for j, v in enumerate(row)
+            )
+            out.append(f'<row r="{i}">{cells}</row>')
+        return (
+            '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>'
+            + "".join(out)
+            + "</sheetData></worksheet>"
+        )
+
+    hdr = ["Sample ID", "Lithology", "Os ppb", "Ir ppb", "Ru ppb", "Pt ppb", "Pd ppb", "Re ppb"]
+    data2 = [
+        ["Supplementary Data 2."], hdr,
+        ["S1", "Clay", "1", "1", "1", "2", "1", "0.05"],
+        ["Reference material"],
+        ["STD-1 (n=4, this study)", "", "1", "0.6", "1", "2", "1", "0.05"],
+        ["1SD", "", "1", "0.7", "1", "2", "1", "0.05"],
+        ["RSD%", "", "5", "30", "50", "60", "30", "1.5"],
+    ]
+    data3 = [
+        ["Supplementary Data 3."], hdr,
+        ["S3", "Marl", "1", "0.8", "1", "1.5", "1", "0.05"],
+        ["RSD%", "", "5", "30", "50", "60", "30", "1.5"],
+    ]
+    with tempfile.TemporaryDirectory() as td:
+        path = pathlib.Path(td) / "kpg.xlsx"
+        with zipfile.ZipFile(path, "w") as z:
+            z.writestr("xl/worksheets/sheet2.xml", sheet(data2))
+            z.writestr("xl/worksheets/sheet3.xml", sheet(data3))
+        recs = parse_kpg2025_benchmark(path)
+    assert [r["sample"] for r in recs] == ["S1", "S3"], [r["sample"] for r in recs]
+    print("PASS: test_kpg_parser_skips_non_sample_rows")
+
+
 if __name__ == "__main__":
     test_synthetic_compositional_recovery()
     test_blind_peak_detector_recovery()
     test_poisson_binomial_exact_vs_mc()
     test_decision_rules()
-    print("ALL 4 SYNTHETIC PRE-LOCK TESTS PASSED.")
+    test_kpg_parser_skips_non_sample_rows()
+    print("ALL 5 SYNTHETIC TESTS PASSED.")

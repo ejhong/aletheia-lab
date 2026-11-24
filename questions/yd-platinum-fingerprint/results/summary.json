@@ -202,81 +202,13 @@
     ]
   },
   "positive_control_kpg": {
-    "n_samples": 9,
-    "strict_chondrite_clr_pass_frac": 0.8888888888888888,
+    "n_samples": 5,
+    "strict_chondrite_clr_pass_frac": 0.8,
     "cosmic_mix_pass_frac": 1.0,
-    "median_pt_ir": 1.293691856704484,
-    "log10_pt_ir_iqr": 0.24416169939758026,
-    "log10_pt_ir_span": 0.8275318950679376,
+    "median_pt_ir": 1.7207941312407016,
+    "log10_pt_ir_iqr": 0.12627421001454264,
+    "log10_pt_ir_span": 0.4784413049329111,
     "samples": [
-      {
-        "site": "Chicxulub M0077 (Data 2)",
-        "sample": "RSD%",
-        "pt_ir": 1.8995570814612408,
-        "pt_pd": 2.064726621515755,
-        "os_ir": 0.010038531229219093,
-        "re_os": 4.388949773281023,
-        "os_iso": null,
-        "nearest_class": "chondrite",
-        "strict_chondrite_beats_volc_ucc": true,
-        "cosmic_clr_win": true,
-        "rmse_ci": 0.7251417089364127,
-        "rmse_iron": 0.5586630731294925,
-        "rmse_volc": 1.7259417293500998,
-        "best_volc": "Tolbachik Volcano Gas Condensate, Kamchatka",
-        "delta_rmse": -1.1672786562206072
-      },
-      {
-        "site": "Chicxulub M0077 (Data 2)",
-        "sample": "RSD%",
-        "pt_ir": 0.4751587424883319,
-        "pt_pd": 1.2100038816219079,
-        "os_ir": 1.0219002182623371,
-        "re_os": 0.11154719804566546,
-        "os_iso": null,
-        "nearest_class": "kpg_impact",
-        "strict_chondrite_beats_volc_ucc": true,
-        "cosmic_clr_win": true,
-        "rmse_ci": 0.3025951104288333,
-        "rmse_iron": 0.8270265410402943,
-        "rmse_volc": 1.3847197374116438,
-        "best_volc": "Tolbachik Volcano Gas Condensate, Kamchatka",
-        "delta_rmse": -1.0821246269828104
-      },
-      {
-        "site": "Chicxulub M0077 (Data 2)",
-        "sample": "RSD%",
-        "pt_ir": 0.478406813779538,
-        "pt_pd": 1.4295163242023803,
-        "os_ir": 1.0788809237901948,
-        "re_os": 0.13773389216145038,
-        "os_iso": null,
-        "nearest_class": "kpg_impact",
-        "strict_chondrite_beats_volc_ucc": true,
-        "cosmic_clr_win": true,
-        "rmse_ci": 0.31230764504269504,
-        "rmse_iron": 0.8297998688313224,
-        "rmse_volc": 1.3320975166594125,
-        "best_volc": "Tolbachik Volcano Gas Condensate, Kamchatka",
-        "delta_rmse": -1.0197898716167173
-      },
-      {
-        "site": "Chicxulub M0077 (Data 2)",
-        "sample": "RSD%",
-        "pt_ir": 0.9861508537821073,
-        "pt_pd": 3.3973763550474683,
-        "os_ir": 1.3497801549434632,
-        "re_os": 0.10085324606202686,
-        "os_iso": null,
-        "nearest_class": "kpg_impact",
-        "strict_chondrite_beats_volc_ucc": true,
-        "cosmic_clr_win": true,
-        "rmse_ci": 0.3010624422591308,
-        "rmse_iron": 0.8116662359062637,
-        "rmse_volc": 1.3336873645769876,
-        "best_volc": "Tolbachik Volcano Gas Condensate, Kamchatka",
-        "delta_rmse": -1.0326249223178567
-      },
       {
         "site": "Mexican K-Pg Sections (Data 3)",
         "sample": "B0+2+4",
@@ -285,10 +217,10 @@
         "os_ir": 1.6644137591317782,
         "re_os": 0.1363995615001896,
         "os_iso": 0.167295763539304,
-        "nearest_class": "kpg_impact",
+        "nearest_class": "chondrite",
         "strict_chondrite_beats_volc_ucc": true,
         "cosmic_clr_win": true,
-        "rmse_ci": 0.11535829021963502,
+        "rmse_ci": 0.115358290219635,
         "rmse_iron": 0.5689639117419332,
         "rmse_volc": 1.070575666194567,
         "best_volc": "Tolbachik Volcano Gas Condensate, Kamchatka",
@@ -369,12 +301,12 @@
       "n": 27,
       "class_counts": {
         "chondrite": 0,
-        "kpg_impact": 2,
+        "kpg_impact": 4,
         "volcanic": 11,
-        "ucc": 14
+        "ucc": 12
       },
-      "cosmic_clr_frac": 0.07407407407407407,
-      "noncosmic_clr_frac": 0.9259259259259259,
+      "cosmic_clr_frac": 0.14814814814814814,
+      "noncosmic_clr_frac": 0.8518518518518519,
       "volc_mix_win_frac": 0.3333333333333333,
       "median_delta_rmse": 0.0,
       "delta_rmse_ci95": [
@@ -392,17 +324,17 @@
       "n": 18,
       "class_counts": {
         "chondrite": 0,
-        "kpg_impact": 1,
+        "kpg_impact": 2,
         "volcanic": 11,
-        "ucc": 6
+        "ucc": 5
       },
-      "cosmic_clr_frac": 0.05555555555555555,
-      "noncosmic_clr_frac": 0.9444444444444444,
+      "cosmic_clr_frac": 0.1111111111111111,
+      "noncosmic_clr_frac": 0.8888888888888888,
       "volc_mix_win_frac": 0.4444444444444444,
       "median_delta_rmse": 0.0,
       "delta_rmse_ci95": [
         0.0,
-        0.0015466680045267758
+        0.001546668004526748
       ],
       "wilcoxon_p": 0.5829195472688132,
       "median_delta_rmse_kudryavy": 0.0,
@@ -415,17 +347,17 @@
       "n": 12,
       "class_counts": {
         "chondrite": 0,
-        "kpg_impact": 2,
+        "kpg_impact": 3,
         "volcanic": 1,
-        "ucc": 9
+        "ucc": 8
       },
-      "cosmic_clr_frac": 0.16666666666666666,
-      "noncosmic_clr_frac": 0.8333333333333334,
+      "cosmic_clr_frac": 0.25,
+      "noncosmic_clr_frac": 0.75,
       "volc_mix_win_frac": 0.25,
       "median_delta_rmse": -0.09758245361575141,
       "delta_rmse_ci95": [
         -0.14930052053471654,
-        0.033520113181474076
+        0.03352011318147419
       ],
       "wilcoxon_p": 0.2333984375,
       "median_delta_rmse_kudryavy": -0.09758245361575141,
@@ -475,9 +407,9 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.0518107555253056,
-            "kpg_impact": 1.5190555179899805,
+            "kpg_impact": 1.2739934560023707,
             "volcanic": 1.9951688237387863,
-            "ucc": 0.9939794071443337
+            "ucc": 0.9939794071443336
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.6433688831012166,
@@ -523,7 +455,7 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.1738568491601042,
-            "kpg_impact": 1.5816354629061402,
+            "kpg_impact": 1.3209669092156078,
             "volcanic": 1.6084089882024815,
             "ucc": 0.9737054049497327
           },
@@ -571,9 +503,9 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.4250741671502185,
-            "kpg_impact": 1.8774785263868683,
+            "kpg_impact": 1.6538201556711376,
             "volcanic": 1.4932888887386384,
-            "ucc": 0.8823480082925098
+            "ucc": 0.8823480082925097
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.23579963506711835,
@@ -619,9 +551,9 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.0544552103865237,
-            "kpg_impact": 1.532712257775228,
-            "volcanic": 1.8819440490591277,
-            "ucc": 1.0607953021407532
+            "kpg_impact": 1.2881781367909286,
+            "volcanic": 1.8819440490591273,
+            "ucc": 1.0607953021407523
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.19681084354367373,
@@ -636,8 +568,8 @@
             -0.20633065597158096,
             -0.7829042875501258,
             -0.618787774702247,
-            0.09416787585054687,
-            -0.24995653627176173,
+            0.09416787585054731,
+            -0.24995653627176084,
             1.7638113786451664
           ]
         },
@@ -667,7 +599,7 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.542092263194552,
-            "kpg_impact": 2.14119839116653,
+            "kpg_impact": 1.970449930350446,
             "volcanic": 2.0341747128438974,
             "ucc": 1.6939149560807252
           },
@@ -715,8 +647,8 @@
           "nearest_class": "kpg_impact",
           "clr_dists": {
             "chondrite": 1.9072670712051656,
-            "kpg_impact": 1.355818321558921,
-            "volcanic": 1.9905333005059633,
+            "kpg_impact": 1.1695343774047142,
+            "volcanic": 1.9905333005059636,
             "ucc": 1.5831623259244931
           },
           "cosmic_clr_win": true,
@@ -729,7 +661,7 @@
           "delta_rmse_kudryavy": -0.22242021985882499,
           "delta_rmse_ucc_bg": -0.16842536306160671,
           "ci_clr": [
-            0.4657415782147285,
+            0.46574157821472895,
             -0.35982876522595886,
             -0.977753687433474,
             -0.5345967951805823,
@@ -763,18 +695,18 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.20998302885409,
-            "kpg_impact": 1.6714296934220656,
-            "volcanic": 1.6240387417685611,
+            "kpg_impact": 1.4376501754791855,
+            "volcanic": 1.624038741768561,
             "ucc": 0.6734654064613891
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.09808103625062627,
+          "rmse_ci": 0.09808103625062616,
           "rmse_iron": 0.15322718568959498,
           "rmse_volc_best": 0.08206135328176213,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
           "rmse_kudryavy": 0.10625856741082224,
-          "delta_rmse": 0.016019682968864135,
-          "delta_rmse_kudryavy": -0.00817753116019597,
+          "delta_rmse": 0.016019682968864024,
+          "delta_rmse_kudryavy": -0.00817753116019608,
           "delta_rmse_ucc_bg": 0.0,
           "ci_clr": [
             -0.3590276655432283,
@@ -811,25 +743,25 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.248343939880128,
-            "kpg_impact": 1.8334939353208037,
-            "volcanic": 2.313603643310037,
+            "kpg_impact": 1.654571287302443,
+            "volcanic": 2.3136036433100373,
             "ucc": 1.2455499532858922
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.4322019718269647,
           "rmse_iron": 0.8247023630416475,
-          "rmse_volc_best": 0.5594382770471755,
+          "rmse_volc_best": 0.5594382770471754,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
-          "rmse_kudryavy": 0.5594382770471755,
-          "delta_rmse": -0.12723630522021084,
-          "delta_rmse_kudryavy": -0.12723630522021084,
-          "delta_rmse_ucc_bg": 0.0001279734571933977,
+          "rmse_kudryavy": 0.5594382770471754,
+          "delta_rmse": -0.12723630522021073,
+          "delta_rmse_kudryavy": -0.12723630522021073,
+          "delta_rmse_ucc_bg": 0.00012797345719350872,
           "ci_clr": [
-            -0.2076316856013536,
-            -0.818034407993721,
-            -0.8709531897070932,
-            0.7166141905238317,
-            -0.4995978152700755,
+            -0.20763168560135314,
+            -0.8180344079937205,
+            -0.8709531897070928,
+            0.7166141905238321,
+            -0.4995978152700751,
             1.679602908048412
           ]
         },
@@ -859,7 +791,7 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.2273495419571017,
-            "kpg_impact": 1.7122095204597145,
+            "kpg_impact": 1.4783476162118174,
             "volcanic": 1.704324345759779,
             "ucc": 0.7413053867432529
           },
@@ -906,8 +838,8 @@
           "re_os": 11.14375,
           "nearest_class": "ucc",
           "clr_dists": {
-            "chondrite": 2.2971315510594787,
-            "kpg_impact": 1.7758017998649387,
+            "chondrite": 2.297131551059479,
+            "kpg_impact": 1.5637510087137083,
             "volcanic": 1.6058989108492525,
             "ucc": 0.6455679326321386
           },
@@ -955,9 +887,9 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.4177849479637863,
-            "kpg_impact": 1.9007633176086414,
+            "kpg_impact": 1.6754092983983333,
             "volcanic": 1.468913950335964,
-            "ucc": 0.8412970431121447
+            "ucc": 0.8412970431121448
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.23953779222414215,
@@ -1003,7 +935,7 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.147335171785035,
-            "kpg_impact": 1.5893917134237012,
+            "kpg_impact": 1.325937624658602,
             "volcanic": 1.595061503905822,
             "ucc": 1.017038112838903
           },
@@ -1051,8 +983,8 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.2244376363487475,
-            "kpg_impact": 1.6717177401057464,
-            "volcanic": 1.8625914755738406,
+            "kpg_impact": 1.4263319893214865,
+            "volcanic": 1.8625914755738409,
             "ucc": 1.1637352731575832
           },
           "cosmic_clr_win": false,
@@ -1099,18 +1031,18 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.2964011828788298,
-            "kpg_impact": 1.8315143123456925,
-            "volcanic": 2.041791463199921,
+            "kpg_impact": 1.6215576810145544,
+            "volcanic": 2.0417914631999206,
             "ucc": 0.9963673962688141
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.26833923024306416,
-          "rmse_iron": 0.26833923024306416,
+          "rmse_ci": 0.2683392302430642,
+          "rmse_iron": 0.2683392302430642,
           "rmse_volc_best": 0.26756061070728754,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
           "rmse_kudryavy": 0.26756061070728754,
-          "delta_rmse": 0.0007786195357766257,
-          "delta_rmse_kudryavy": 0.0007786195357766257,
+          "delta_rmse": 0.0007786195357766812,
+          "delta_rmse_kudryavy": 0.0007786195357766812,
           "delta_rmse_ucc_bg": 0.0,
           "ci_clr": [
             -0.4051604260424888,
@@ -1147,8 +1079,8 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.3693547924935743,
-            "kpg_impact": 1.8287076398201736,
-            "volcanic": 1.4907993900272163,
+            "kpg_impact": 1.6000327296556496,
+            "volcanic": 1.490799390027216,
             "ucc": 0.8614969431197589
           },
           "cosmic_clr_win": false,
@@ -1195,9 +1127,9 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.0606434840264334,
-            "kpg_impact": 1.4651624227256708,
+            "kpg_impact": 1.2304004719401989,
             "volcanic": 1.653738458380179,
-            "ucc": 1.1777661477158503
+            "ucc": 1.1777661477158505
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.5870798573064714,
@@ -1209,7 +1141,7 @@
           "delta_rmse_kudryavy": -0.09157860506536075,
           "delta_rmse_ucc_bg": -0.07597956492205493,
           "ci_clr": [
-            0.0447565382468782,
+            0.04475653824687864,
             -0.4437285521867964,
             -1.0705482398830077,
             -0.3455930554902973,
@@ -1240,21 +1172,21 @@
           "pt_pd": 3.065868263473054,
           "os_ir": 0.9080459770114941,
           "re_os": 9.9915611814346,
-          "nearest_class": "ucc",
+          "nearest_class": "kpg_impact",
           "clr_dists": {
             "chondrite": 1.9316128834603281,
-            "kpg_impact": 1.3652371190513688,
+            "kpg_impact": 1.104738166481325,
             "volcanic": 2.027293322436848,
             "ucc": 1.1579924797099135
           },
-          "cosmic_clr_win": false,
-          "rmse_ci": 0.24310263630174767,
+          "cosmic_clr_win": true,
+          "rmse_ci": 0.24310263630174772,
           "rmse_iron": 0.2938110202733248,
           "rmse_volc_best": 0.27825608492175086,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
           "rmse_kudryavy": 0.27825608492175086,
-          "delta_rmse": -0.03515344862000319,
-          "delta_rmse_kudryavy": -0.03515344862000319,
+          "delta_rmse": -0.035153448620003136,
+          "delta_rmse_kudryavy": -0.035153448620003136,
           "delta_rmse_ucc_bg": 0.0,
           "ci_clr": [
             -0.39693625705130264,
@@ -1291,18 +1223,18 @@
           "nearest_class": "kpg_impact",
           "clr_dists": {
             "chondrite": 2.4959641418104597,
-            "kpg_impact": 2.0304628693446345,
-            "volcanic": 2.115818454076385,
+            "kpg_impact": 1.8799384583853642,
+            "volcanic": 2.1158184540763854,
             "ucc": 2.0407215460267216
           },
           "cosmic_clr_win": true,
-          "rmse_ci": 0.9761504743301489,
+          "rmse_ci": 0.976150474330149,
           "rmse_iron": 1.6274283626730919,
-          "rmse_volc_best": 0.8617656835001304,
+          "rmse_volc_best": 0.8617656835001303,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
-          "rmse_kudryavy": 0.8617656835001304,
-          "delta_rmse": 0.11438479083001851,
-          "delta_rmse_kudryavy": 0.11438479083001851,
+          "rmse_kudryavy": 0.8617656835001303,
+          "delta_rmse": 0.11438479083001873,
+          "delta_rmse_kudryavy": 0.11438479083001873,
           "delta_rmse_ucc_bg": 0.0634193251973878,
           "ci_clr": [
             0.940332311124958,
@@ -1310,7 +1242,7 @@
             -1.4320808715590028,
             -0.1881614400568714,
             -0.38530271194592025,
-            1.660337385863154
+            1.6603373858631536
           ]
         },
         {
@@ -1339,8 +1271,8 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.0486005150907003,
-            "kpg_impact": 1.5215421945836884,
-            "volcanic": 1.8900782983791038,
+            "kpg_impact": 1.2687192388473882,
+            "volcanic": 1.890078298379104,
             "ucc": 1.0213680875910458
           },
           "cosmic_clr_win": false,
@@ -1386,17 +1318,17 @@
           "re_os": 12.540084388185655,
           "nearest_class": "ucc",
           "clr_dists": {
-            "chondrite": 2.179985171640146,
-            "kpg_impact": 1.6484092868326372,
+            "chondrite": 2.1799851716401464,
+            "kpg_impact": 1.4176801016322607,
             "volcanic": 1.6539297012478644,
             "ucc": 0.5659282751339744
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.16224774216441973,
-          "rmse_iron": 0.15969448423152377,
-          "rmse_volc_best": 0.1493739580652246,
+          "rmse_ci": 0.16224774216441976,
+          "rmse_iron": 0.1596944842315238,
+          "rmse_volc_best": 0.14937395806522463,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
-          "rmse_kudryavy": 0.16224774216441973,
+          "rmse_kudryavy": 0.16224774216441976,
           "delta_rmse": 0.010320526166299165,
           "delta_rmse_kudryavy": -0.002553257932895958,
           "delta_rmse_ucc_bg": 0.0,
@@ -1435,18 +1367,18 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.1725465008700335,
-            "kpg_impact": 1.6258065020797794,
+            "kpg_impact": 1.3787391825456983,
             "volcanic": 1.6093455880928822,
             "ucc": 0.7261328855512665
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.05627453475002238,
-          "rmse_iron": 0.05627453475002238,
-          "rmse_volc_best": 0.0550985235860166,
+          "rmse_ci": 0.05627453475002242,
+          "rmse_iron": 0.05627453475002242,
+          "rmse_volc_best": 0.05509852358601661,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
-          "rmse_kudryavy": 0.05625725083982058,
-          "delta_rmse": 0.0011760111640057788,
-          "delta_rmse_kudryavy": 1.728391020179576e-05,
+          "rmse_kudryavy": 0.056257250839820666,
+          "delta_rmse": 0.0011760111640058135,
+          "delta_rmse_kudryavy": 1.7283910201754127e-05,
           "delta_rmse_ucc_bg": 0.0,
           "ci_clr": [
             -0.39612019034589485,
@@ -1483,7 +1415,7 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.2915759455372666,
-            "kpg_impact": 1.7686036068288717,
+            "kpg_impact": 1.521897901238647,
             "volcanic": 1.8581636784931557,
             "ucc": 1.3101422504897486
           },
@@ -1531,9 +1463,9 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 1.9462724264711977,
-            "kpg_impact": 1.3642357217817243,
-            "volcanic": 1.818181299665249,
-            "ucc": 0.9657992244641714
+            "kpg_impact": 1.117923521896762,
+            "volcanic": 1.8181812996652489,
+            "ucc": 0.9657992244641713
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.33742480400170577,
@@ -1579,18 +1511,18 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.257491589854096,
-            "kpg_impact": 1.7243601351141937,
-            "volcanic": 1.6531665808163611,
+            "kpg_impact": 1.4772190640963092,
+            "volcanic": 1.653166580816361,
             "ucc": 0.8823586153880708
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.239265975488056,
+          "rmse_ci": 0.23926597548805592,
           "rmse_iron": 0.6361507688711534,
           "rmse_volc_best": 0.30131785075226886,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
           "rmse_kudryavy": 0.30131785075226886,
-          "delta_rmse": -0.06205187526421285,
-          "delta_rmse_kudryavy": -0.06205187526421285,
+          "delta_rmse": -0.062051875264212936,
+          "delta_rmse_kudryavy": -0.062051875264212936,
           "delta_rmse_ucc_bg": 0.0,
           "ci_clr": [
             -0.36614141591736615,
@@ -1627,7 +1559,7 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.15714329696022,
-            "kpg_impact": 1.6142214672611779,
+            "kpg_impact": 1.410333325444474,
             "volcanic": 1.6914707262409547,
             "ucc": 1.0678148642501089
           },
@@ -1674,17 +1606,17 @@
           "re_os": 8.45625,
           "nearest_class": "ucc",
           "clr_dists": {
-            "chondrite": 2.1884780265602086,
-            "kpg_impact": 1.679377854120277,
+            "chondrite": 2.188478026560208,
+            "kpg_impact": 1.464167397155103,
             "volcanic": 1.860049662229325,
             "ucc": 0.7393962505943219
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.25944899533225485,
+          "rmse_ci": 0.2594489953322549,
           "rmse_iron": 0.6231319269844963,
-          "rmse_volc_best": 0.3630352974983969,
+          "rmse_volc_best": 0.36303529749839697,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
-          "rmse_kudryavy": 0.3630352974983969,
+          "rmse_kudryavy": 0.36303529749839697,
           "delta_rmse": -0.10358630216614206,
           "delta_rmse_kudryavy": -0.10358630216614206,
           "delta_rmse_ucc_bg": 0.0,
@@ -1723,7 +1655,7 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 1.95145514922107,
-            "kpg_impact": 1.3951013990738401,
+            "kpg_impact": 1.1373008203651185,
             "volcanic": 1.9315175533720728,
             "ucc": 0.9182087965801733
           },
@@ -1771,17 +1703,17 @@
           "nearest_class": "ucc",
           "clr_dists": {
             "chondrite": 2.072250052937406,
-            "kpg_impact": 1.5348908835418331,
+            "kpg_impact": 1.298580744909437,
             "volcanic": 1.6986634809564893,
-            "ucc": 0.5905620933979052
+            "ucc": 0.5905620933979053
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.12979812939019036,
-          "rmse_iron": 0.17929090011690846,
-          "rmse_volc_best": 0.09635229517412197,
+          "rmse_iron": 0.1792909001169085,
+          "rmse_volc_best": 0.096352295174122,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
           "rmse_kudryavy": 0.19148642513739828,
-          "delta_rmse": 0.03344583421606839,
+          "delta_rmse": 0.033445834216068365,
           "delta_rmse_kudryavy": -0.06168829574720791,
           "delta_rmse_ucc_bg": 0.0,
           "ci_clr": [
@@ -1816,14 +1748,14 @@
           "pt_pd": 0.2570162481536189,
           "os_ir": 6.865528281750266,
           "re_os": 0.5891496968754858,
-          "nearest_class": "ucc",
+          "nearest_class": "kpg_impact",
           "clr_dists": {
             "chondrite": 2.133386401096325,
-            "kpg_impact": 1.6112644457306498,
+            "kpg_impact": 1.4616883357437405,
             "volcanic": 1.957062658493401,
-            "ucc": 1.586844997413077
+            "ucc": 1.5868449974130767
           },
-          "cosmic_clr_win": false,
+          "cosmic_clr_win": true,
           "rmse_ci": 0.7216870821666501,
           "rmse_iron": 1.3111074663708397,
           "rmse_volc_best": 0.8764679680494516,
@@ -1884,17 +1816,17 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.0698945850509025,
-            "kpg_impact": 3.501245755869257,
-            "volcanic": 1.0071981512020898,
+            "kpg_impact": 3.245728073913931,
+            "volcanic": 1.00719815120209,
             "ucc": 2.6368303510750355
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.15027339973389842,
-          "rmse_iron": 0.14230136117819703,
-          "rmse_volc_best": 0.12684821110086544,
+          "rmse_ci": 0.15027339973389853,
+          "rmse_iron": 0.1423013611781971,
+          "rmse_volc_best": 0.12684821110086542,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
-          "rmse_kudryavy": 0.17700877411528798,
-          "delta_rmse": 0.015453150077331584,
+          "rmse_kudryavy": 0.17700877411528806,
+          "delta_rmse": 0.015453150077331695,
           "delta_rmse_kudryavy": -0.03470741293709095,
           "delta_rmse_ucc_bg": 0.49834764809009024,
           "ci_clr": [
@@ -1980,8 +1912,8 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.739302482486788,
-            "kpg_impact": 4.162369558670889,
-            "volcanic": 1.7223109660913043,
+            "kpg_impact": 3.9198463165654247,
+            "volcanic": 1.7223109660913045,
             "ucc": 3.3669179192660126
           },
           "cosmic_clr_win": false,
@@ -2100,8 +2032,8 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.942798734970425,
-            "kpg_impact": 4.371492083532939,
-            "volcanic": 1.851123138382514,
+            "kpg_impact": 4.134557190078685,
+            "volcanic": 1.8511231383825142,
             "ucc": 3.457083972731807
           },
           "cosmic_clr_win": false,
@@ -2148,9 +2080,9 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 5.2069902414434726,
-            "kpg_impact": 4.650495990901448,
+            "kpg_impact": 4.423400119784029,
             "volcanic": 2.3665538218076083,
-            "ucc": 3.7673386411739704
+            "ucc": 3.767338641173971
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.58385899697017,
@@ -2196,18 +2128,18 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.791447710698567,
-            "kpg_impact": 4.225751856788108,
+            "kpg_impact": 3.9837250365480354,
             "volcanic": 1.8280327194593302,
             "ucc": 3.341299431379389
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.2811240376166487,
-          "rmse_iron": 0.2811240376166487,
+          "rmse_ci": 0.28112403761664867,
+          "rmse_iron": 0.28112403761664867,
           "rmse_volc_best": 0.28014016302860434,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
           "rmse_kudryavy": 0.28014016302860434,
-          "delta_rmse": 0.0009838745880443867,
-          "delta_rmse_kudryavy": 0.0009838745880443867,
+          "delta_rmse": 0.0009838745880443311,
+          "delta_rmse_kudryavy": 0.0009838745880443311,
           "delta_rmse_ucc_bg": 0.5049368991336735,
           "ci_clr": [
             0.24033368613838135,
@@ -2268,19 +2200,19 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.673367978196596,
-            "kpg_impact": 4.102564804002792,
+            "kpg_impact": 3.8457162761599615,
             "volcanic": 1.6140646501789455,
-            "ucc": 3.26873686663209
+            "ucc": 3.2687368666320897
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.13805783400811059,
-          "rmse_iron": 0.13848467486455626,
-          "rmse_volc_best": 0.12768098939049516,
+          "rmse_ci": 0.1380578340081103,
+          "rmse_iron": 0.13848467486455598,
+          "rmse_volc_best": 0.12768098939049488,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
-          "rmse_kudryavy": 0.12768098939049516,
+          "rmse_kudryavy": 0.12768098939049488,
           "delta_rmse": 0.010376844617615427,
           "delta_rmse_kudryavy": 0.010376844617615427,
-          "delta_rmse_ucc_bg": 0.551460736009673,
+          "delta_rmse_ucc_bg": 0.5514607360096728,
           "ci_clr": [
             0.12852220513947143,
             -1.5649502246431322,
@@ -2364,7 +2296,7 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.443683791109569,
-            "kpg_impact": 3.8726015847191344,
+            "kpg_impact": 3.61530949453876,
             "volcanic": 1.3516115977592098,
             "ucc": 3.007029030261687
           },
@@ -2412,7 +2344,7 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 5.059884565244017,
-            "kpg_impact": 4.497787470841426,
+            "kpg_impact": 4.263152283846247,
             "volcanic": 2.088971027299361,
             "ucc": 3.604252036185404
           },
@@ -2459,8 +2391,8 @@
           "re_os": 253.6231884057971,
           "nearest_class": "volcanic",
           "clr_dists": {
-            "chondrite": 4.782453947294376,
-            "kpg_impact": 4.212193611631075,
+            "chondrite": 4.782453947294375,
+            "kpg_impact": 3.973543004071432,
             "volcanic": 1.7638408087739907,
             "ucc": 3.320440250209193
           },
@@ -2472,13 +2404,13 @@
           "rmse_kudryavy": 0.32717626192441457,
           "delta_rmse": 0.0,
           "delta_rmse_kudryavy": 0.0,
-          "delta_rmse_ucc_bg": 0.4847261973679595,
+          "delta_rmse_ucc_bg": 0.48472619736795974,
           "ci_clr": [
             0.26599073899948156,
             -1.348545238411861,
             -2.566429533134572,
             -0.12231057800583622,
-            -0.020879442357248035,
+            -0.02087944235724848,
             3.792174052910039
           ]
         },
@@ -2508,16 +2440,16 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.490941367618544,
-            "kpg_impact": 3.919766511680716,
+            "kpg_impact": 3.664057334225638,
             "volcanic": 1.4545934363457622,
             "ucc": 3.08632030957865
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.04274786009473399,
-          "rmse_iron": 0.04274786009473399,
-          "rmse_volc_best": 0.04274786009473399,
+          "rmse_ci": 0.04274786009473401,
+          "rmse_iron": 0.04274786009473401,
+          "rmse_volc_best": 0.04274786009473401,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
-          "rmse_kudryavy": 0.04274786009473399,
+          "rmse_kudryavy": 0.04274786009473401,
           "delta_rmse": 0.0,
           "delta_rmse_kudryavy": 0.0,
           "delta_rmse_ucc_bg": 0.520944855096449,
@@ -2556,18 +2488,18 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.6081498365736175,
-            "kpg_impact": 4.04380543227426,
-            "volcanic": 1.6142293210866252,
+            "kpg_impact": 3.799578679742618,
+            "volcanic": 1.614229321086625,
             "ucc": 3.161462544870918
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.2219506956702681,
           "rmse_iron": 0.2219506956702681,
-          "rmse_volc_best": 0.21852347894250249,
+          "rmse_volc_best": 0.21852347894250237,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
-          "rmse_kudryavy": 0.21852347894250249,
-          "delta_rmse": 0.0034272167277656085,
-          "delta_rmse_kudryavy": 0.0034272167277656085,
+          "rmse_kudryavy": 0.21852347894250237,
+          "delta_rmse": 0.0034272167277657195,
+          "delta_rmse_kudryavy": 0.0034272167277657195,
           "delta_rmse_ucc_bg": 0.5067819610572335,
           "ci_clr": [
             0.25388140232258083,
@@ -2603,10 +2535,10 @@
           "re_os": 323.2805380776741,
           "nearest_class": "volcanic",
           "clr_dists": {
-            "chondrite": 5.0612410891842,
-            "kpg_impact": 4.491557552548774,
+            "chondrite": 5.061241089184201,
+            "kpg_impact": 4.254642465210058,
             "volcanic": 2.040251462046851,
-            "ucc": 3.624169874492011
+            "ucc": 3.6241698744920114
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.42857974219593564,
@@ -2619,7 +2551,7 @@
           "delta_rmse_ucc_bg": 0.48021397968468094,
           "ci_clr": [
             0.36675180673290386,
-            -1.3609316341660267,
+            -1.3609316341660276,
             -2.7589471657461595,
             -0.14562438653689513,
             -0.09957434326599701,
@@ -2652,16 +2584,16 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.599634377419442,
-            "kpg_impact": 4.022752729026267,
+            "kpg_impact": 3.7663742875764306,
             "volcanic": 1.3979402388881637,
             "ucc": 3.1378079597058104
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.13716632126613854,
-          "rmse_iron": 0.13716632126613854,
-          "rmse_volc_best": 0.13716632126613854,
+          "rmse_ci": 0.13716632126613856,
+          "rmse_iron": 0.13716632126613856,
+          "rmse_volc_best": 0.13716632126613856,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
-          "rmse_kudryavy": 0.13716632126613854,
+          "rmse_kudryavy": 0.13716632126613856,
           "delta_rmse": 0.0,
           "delta_rmse_kudryavy": 0.0,
           "delta_rmse_ucc_bg": 0.519613513812314,
@@ -2700,18 +2632,18 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.194189470517632,
-            "kpg_impact": 3.639804018408518,
+            "kpg_impact": 3.393497217842391,
             "volcanic": 1.3088444495431544,
             "ucc": 2.95202077540947
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.6582993820164783,
           "rmse_iron": 0.6585493971714586,
-          "rmse_volc_best": 0.2571924875870673,
+          "rmse_volc_best": 0.25719248758706736,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
-          "rmse_kudryavy": 0.2571924875870673,
-          "delta_rmse": 0.401106894429411,
-          "delta_rmse_kudryavy": 0.401106894429411,
+          "rmse_kudryavy": 0.25719248758706736,
+          "delta_rmse": 0.40110689442941094,
+          "delta_rmse_kudryavy": 0.40110689442941094,
           "delta_rmse_ucc_bg": 0.6862083146058187,
           "ci_clr": [
             0.5361857310053519,
@@ -2747,8 +2679,8 @@
           "re_os": 1678.8321167883212,
           "nearest_class": "volcanic",
           "clr_dists": {
-            "chondrite": 4.931542142593684,
-            "kpg_impact": 4.352127559249701,
+            "chondrite": 4.931542142593685,
+            "kpg_impact": 4.090641976946489,
             "volcanic": 1.8005555203504429,
             "ucc": 3.4634778036735923
           },
@@ -2760,7 +2692,7 @@
           "rmse_kudryavy": 0.30110633470490406,
           "delta_rmse": -0.002139775151153267,
           "delta_rmse_kudryavy": -0.00426231763633611,
-          "delta_rmse_ucc_bg": 0.5459547996784717,
+          "delta_rmse_ucc_bg": 0.5459547996784715,
           "ci_clr": [
             -0.12134053963733171,
             -1.5088756392612104,
@@ -2795,18 +2727,18 @@
           "re_os": 557.4636723910172,
           "nearest_class": "volcanic",
           "clr_dists": {
-            "chondrite": 4.4501961320486325,
-            "kpg_impact": 3.8742536111974673,
-            "volcanic": 1.2710318929499371,
+            "chondrite": 4.450196132048632,
+            "kpg_impact": 3.6095885042403486,
+            "volcanic": 1.2710318929499373,
             "ucc": 3.0337384498291313
           },
           "cosmic_clr_win": false,
           "rmse_ci": 0.13056704849907902,
           "rmse_iron": 0.11074499381505228,
-          "rmse_volc_best": 0.15341849986456266,
+          "rmse_volc_best": 0.15341849986456263,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
           "rmse_kudryavy": 0.20187895814611495,
-          "delta_rmse": -0.04267350604951038,
+          "delta_rmse": -0.042673506049510354,
           "delta_rmse_kudryavy": -0.09113396433106268,
           "delta_rmse_ucc_bg": 0.5349163617336568,
           "ci_clr": [
@@ -2844,12 +2776,12 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.303177657770612,
-            "kpg_impact": 3.7327967049778144,
-            "volcanic": 1.235063912424536,
-            "ucc": 2.939216674811845
+            "kpg_impact": 3.4719229977716646,
+            "volcanic": 1.2350639124245362,
+            "ucc": 2.9392166748118456
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.0889273787430877,
+          "rmse_ci": 0.08892737874308765,
           "rmse_iron": 0.06455931043617363,
           "rmse_volc_best": 0.12278963456799073,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
@@ -2863,7 +2795,7 @@
             -1.5028389318782174,
             -0.42382560866274943,
             -0.28041495085504753,
-            3.6751897895436265
+            3.675189789543627
           ]
         },
         {
@@ -2892,12 +2824,12 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.300095513783133,
-            "kpg_impact": 3.732370419466726,
+            "kpg_impact": 3.472847559621574,
             "volcanic": 1.2859641809873112,
             "ucc": 2.9481314765893907
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.09752398529225927,
+          "rmse_ci": 0.09752398529225925,
           "rmse_iron": 0.07881120036543633,
           "rmse_volc_best": 0.12241601052312168,
           "best_volc_name": "Kudryavy Volcano gas condensates (Average)",
@@ -2940,12 +2872,12 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.270125473146775,
-            "kpg_impact": 3.69993196400911,
-            "volcanic": 1.182353770161999,
+            "kpg_impact": 3.4410879521896813,
+            "volcanic": 1.1823537701619988,
             "ucc": 2.877222100135492
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.0746786176242796,
+          "rmse_ci": 0.07467861762427964,
           "rmse_iron": 0.0523402234963331,
           "rmse_volc_best": 0.09035987000532067,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
@@ -2988,12 +2920,12 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.194735876098621,
-            "kpg_impact": 3.624174810144506,
-            "volcanic": 1.1431350676096332,
+            "kpg_impact": 3.362854714826658,
+            "volcanic": 1.143135067609633,
             "ucc": 2.8157298633259713
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.08525213628696689,
+          "rmse_ci": 0.08525213628696705,
           "rmse_iron": 0.05485085265214293,
           "rmse_volc_best": 0.1329983143723638,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
@@ -3036,7 +2968,7 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.080832928296536,
-            "kpg_impact": 3.516836183434773,
+            "kpg_impact": 3.2559573211642925,
             "volcanic": 1.12163331658094,
             "ucc": 2.7393570437469164
           },
@@ -3084,25 +3016,25 @@
           "nearest_class": "volcanic",
           "clr_dists": {
             "chondrite": 4.195611795910053,
-            "kpg_impact": 3.6249705528085916,
-            "volcanic": 1.117199869148484,
-            "ucc": 2.8241060795577964
+            "kpg_impact": 3.36364219501418,
+            "volcanic": 1.1171998691484841,
+            "ucc": 2.824106079557797
           },
           "cosmic_clr_win": false,
-          "rmse_ci": 0.12295202616783268,
-          "rmse_iron": 0.10003602245330999,
+          "rmse_ci": 0.12295202616783259,
+          "rmse_iron": 0.10003602245330988,
           "rmse_volc_best": 0.14821607146918633,
           "best_volc_name": "Tolbachik Volcano Gas Condensate, Kamchatka",
-          "rmse_kudryavy": 0.15725710186816552,
-          "delta_rmse": -0.048180049015876344,
-          "delta_rmse_kudryavy": -0.05722107941485553,
-          "delta_rmse_ucc_bg": 0.5101571261242978,
+          "rmse_kudryavy": 0.15725710186816547,
+          "delta_rmse": -0.048180049015876455,
+          "delta_rmse_kudryavy": -0.05722107941485559,
+          "delta_rmse_ucc_bg": 0.5101571261242979,
           "ci_clr": [
             0.08037662706294801,
             -1.5658203097307588,
             -1.4473004674150918,
             -0.43588388296694935,
-            -0.21126028728135093,
+            -0.21126028728135138,
             3.579888320331201
           ]
         }
@@ -4011,9 +3943,9 @@
       "nearest_class_5hse": "volcanic",
       "clr5_dists": {
         "chondrite": 4.102563015554544,
-        "ucc": 2.994423282888539,
+        "ucc": 2.9944232828885387,
         "volcanic": 1.456318456076278,
-        "kpg_impact": 3.6135209556984713
+        "kpg_impact": 3.3720644509983497
       }
     }
   }

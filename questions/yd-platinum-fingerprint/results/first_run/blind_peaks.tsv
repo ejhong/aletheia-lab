@@ -1,0 +1,11 @@
+site	study	tier	proxy	n_levels	n_ydb_levels	events_total	events_inside	events_outside	global_in_ydb	global_val	global_depth_cm
+Hall's Cave, TX	Sun et al. (2020)	independent	Pt	29	1	2	0	2	0	965.6	143.0
+Page-Ladson, FL	Nana Yobo et al. (2026)	independent	Pt	30	7	0	0	0	0	567.1	860.0
+Hall's Cave, TX	Sun et al. (2020)	independent	Os	29	1	4	0	4	0	829.7	155.0
+Page-Ladson, FL	Nana Yobo et al. (2026)	independent	Os	30	7	0	0	0	0	706.0	860.0
+Hall's Cave, TX	Sun et al. (2020)	independent	Ir	29	1	2	0	2	0	93.7	176.0
+Page-Ladson, FL	Nana Yobo et al. (2026)	independent	Ir	30	7	0	0	0	0	13.700000000000001	860.0
+Hall's Cave, TX	Sun et al. (2020)	independent	os_iso	29	1	4	0	4	0	0.15	155.0
+Page-Ladson, FL	Nana Yobo et al. (2026)	independent	os_iso	30	7	2	1	1	0	0.4	860.0
+White Pond, SC	Moore et al. (2019)	proponent	Pt	30	5	2	0	2	0	4.2	221.0
+White Pond, SC	Moore et al. (2019)	proponent	Pt/Pd	30	5	1	0	1	0	4.666666666666667	221.0

@@ -1,0 +1,9 @@
+K-Pg control samples used for the centroid: ['B0+2+4', 'BO+0+2', 'G+2.5+4', 'G0+1', 'LL+0+2*']
+Hall's Cave background (ppt): {'Os': 28.8, 'Ir': 11.1, 'Ru': 14.6, 'Pt': 133.7, 'Pd': 108.2, 'Re': 299.9} 187Os/188Os 2.035
++  5 ppt Ir from CI (f=1.1e-05): Ir=   16 Pt=  144 Os=   34 187Os/188Os=1.74  CLR class=ucc        dRMSE=-0.219
++ 10 ppt Ir from CI (f=2.2e-05): Ir=   21 Pt=  155 Os=   39 187Os/188Os=1.52  CLR class=ucc        dRMSE=-0.329
++ 20 ppt Ir from CI (f=4.3e-05): Ir=   31 Pt=  177 Os=   50 187Os/188Os=1.22  CLR class=ucc        dRMSE=-0.463
++ 50 ppt Ir from CI (f=1.1e-04): Ir=   61 Pt=  241 Os=   82 187Os/188Os=0.80  CLR class=kpg_impact dRMSE=-0.667
++100 ppt Ir from CI (f=2.2e-04): Ir=  111 Pt=  349 Os=  135 187Os/188Os=0.53  CLR class=kpg_impact dRMSE=-0.777
++200 ppt Ir from CI (f=4.3e-04): Ir=  211 Pt=  564 Os=  242 187Os/188Os=0.35  CLR class=kpg_impact dRMSE=-0.864
++500 ppt Ir from CI (f=1.1e-03): Ir=  511 Pt= 1210 Os=  561 187Os/188Os=0.22  CLR class=kpg_impact dRMSE=-0.960

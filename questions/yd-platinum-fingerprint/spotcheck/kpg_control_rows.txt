@@ -1,0 +1,29 @@
+## sheet Data 2
+  non-empty row  32 40R1_28.0-30.0* (ID-MS, Vienna and Ir=0.493 ppb Pt=0.793 ppb 
+  non-empty row  52 RSD%                               Ir=33.4 ppb Pt=63.5 ppb PASSED OLD FILTER
+  non-empty row  53 BIR-1a (n=9, this study)           Ir=0.139 ppb Pt=4.49 ppb 
+  non-empty row  55 RSD%                               Ir=11.5 ppb Pt=5.45 ppb PASSED OLD FILTER
+  non-empty row  56 BIR-1a (n=5, Goderis et al., 2021) Ir=0.139 ppb Pt=4.4 ppb 
+  non-empty row  58 RSD%                               Ir=7.98 ppb Pt=3.82 ppb PASSED OLD FILTER
+  non-empty row  59 BIR-1a (n=9, Ishikawa et al., 2014 Ir=0.143 ppb Pt=4.37 ppb 
+  non-empty row  61 RSD%                               Ir=5.12 ppb Pt=5.05 ppb PASSED OLD FILTER
+## sheet Data 3
+  non-empty row  10 BO+241                             Ir=0.111 ppb Pt=0.44 ppb 
+  non-empty row  12 BO+185                             Ir=0.1 ppb Pt=0.473 ppb 
+  non-empty row  13 BO+130                             Ir=0.144 ppb Pt=0.614 ppb 
+  non-empty row  14 BO+88                              Ir=0.142 ppb Pt=0.466 ppb 
+  non-empty row  15 BO+52                              Ir=0.189 ppb Pt=0.528 ppb 
+  non-empty row  16 BO+14+16                           Ir=0.193 ppb Pt=0.219 ppb 
+  non-empty row  17 B0+2+4                             Ir=1.74 ppb Pt=3.01 ppb PASSED OLD FILTER
+  non-empty row  18 BO+0+2                             Ir=0.731 ppb Pt=2.33 ppb PASSED OLD FILTER
+  non-empty row  21 G110                               Ir=0.141 ppb Pt=0.897 ppb 
+  non-empty row  24 G19+24                             Ir=0.312 ppb Pt=0.903 ppb 
+  non-empty row  25 G+2.5+4                            Ir=1.16 ppb Pt=1.5 ppb PASSED OLD FILTER
+  non-empty row  26 G0+1                               Ir=2.25 ppb Pt=2.38 ppb PASSED OLD FILTER
+  non-empty row  36 M+14+17                            Ir=0.159 ppb Pt=0.604 ppb 
+  non-empty row  37 M+0+2                              Ir=0.292 ppb Pt=0.484 ppb 
+  non-empty row  43 LL+30+35                           Ir=0.12 ppb Pt=0.509 ppb 
+  non-empty row  44 LL+16+20                           Ir=0.166 ppb Pt=1.11 ppb 
+  non-empty row  45 LL+4+8                             Ir=0.304 ppb Pt=0.669 ppb 
+  non-empty row  46 LL+0+2*                            Ir=0.828 ppb Pt=1.42 ppb PASSED OLD FILTER
+Samples kept by the current parser: ['B0+2+4', 'BO+0+2', 'G+2.5+4', 'G0+1', 'LL+0+2*']

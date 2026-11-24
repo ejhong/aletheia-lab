@@ -576,6 +576,13 @@ def parse_kpg2025_benchmark(xlsx_path: pathlib.Path) -> list[dict[str, Any]]:
             continue
         section_name = sheet_label
         for r in rows[hdr_row_idx + 1 :]:
+            # Amendment 2: rows from the "Reference material" block on are standards and their 1SD / RSD% rows,
+            # not samples; stop there, and skip any stray summary row.
+            label = r[0].strip().lower() if r else ""
+            if label.startswith("reference material"):
+                break
+            if label in {"rsd%", "1sd", "2sd", "mean", "average"}:
+                continue
             if len(r) <= max(col_map.get(e, 0) for e in HSE_ORDER):
                 # Possible section subheader
                 if r and r[0] and len(r[0]) > 3 and all(not c for c in r[1:4]):

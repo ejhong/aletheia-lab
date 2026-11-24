@@ -36,23 +36,23 @@ def build_tiles(s: dict) -> str:
 
     items = [
         (
-            f"0 of {p1['n']}",
-            f"full-HSE Younger Dryas target samples classify as chondritic (25 of {p1['n']}, or {p1['noncosmic_clr_frac']*100:.0f}%, match crustal or volcanic patterns; real Chicxulub K–Pg passes at {kpg['strict_chondrite_clr_pass_frac']*100:.0f}% / {kpg['cosmic_mix_pass_frac']*100:.0f}%)",
+            f"{round(p1['n'] * (1 - p1['noncosmic_clr_frac']))} of {p1['n']}",
+            f"Younger Dryas samples with all six elements lean towards the pattern of a real impact layer; the other {round(p1['n'] * p1['noncosmic_clr_frac'])} look like ordinary crust or rhenium-rich mud (the Chicxulub control, {kpg['n_samples']} samples, passes at {kpg['strict_chondrite_clr_pass_frac']*100:.0f}% and {kpg['cosmic_mix_pass_frac']*100:.0f}%)",
             False,
         ),
         (
             f"{10**p1b['ydb_log10_pt_ir_span']:.0f}×",
-            f"spread in platinum-to-iridium ratios across claimed Younger Dryas sites (3.6 to 1,264; median {p1b['ydb_pt_ir_median']:.0f} vs. {kpg['median_pt_ir']:.2f} at Chicxulub K–Pg)",
+            f"spread in platinum-to-iridium ratios across claimed Younger Dryas sites (median {p1b['ydb_pt_ir_median']:.0f} vs. {kpg['median_pt_ir']:.2f} at Chicxulub); a rough comparison, since it sets sediment beside ice and single nanoparticles",
             False,
         ),
         (
-            f"{p2['independent_events_outside']} of {p2['independent_events_inside'] + p2['independent_events_outside']}",
-            f"blind HSE and osmium-isotope spikes in continuous cores fall outside the locked 13.0–12.6 ka window ({s131['independent_events_outside']} of {s131['independent_events_inside'] + s131['independent_events_outside']} even at 13.1–12.6 ka)",
+            f"{s131['independent_events_outside']} of {s131['independent_events_inside'] + s131['independent_events_outside']}",
+            f"spikes found without being told where the boundary is fall outside it, with the window set to include Hall's Cave's own boundary samples ({p2['independent_events_outside']} of {p2['independent_events_inside'] + p2['independent_events_outside']} with the window as first locked, which missed them by eight years)",
             False,
         ),
         (
-            "Not cosmic; mixed non-cosmic",
-            "Fails every cosmic/K–Pg fingerprint test; Page-Ladson matches volcanic aerosols cleanly while Hall's Cave fits neither meteorites nor high-Re volcanic gas alone",
+            "Mixed",
+            "Mostly not the chemistry of an impact layer, and the largest spikes are not at the boundary; a small cosmic share is not ruled out",
             True,
         ),
     ]
@@ -75,20 +75,20 @@ def build_verdict(s: dict) -> str:
         (
             "Positive control · Chicxulub K–Pg",
             "Does our classifier recognize a real confirmed asteroid impact in sediment?",
-            f"Yes. Across {kpg['n_samples']} confirmed Chicxulub K–Pg impact samples (IODP M0077 crater core and Mexican boundary sections), "
+            f"Yes. Across {kpg['n_samples']} confirmed Chicxulub K–Pg impact samples (Mexican boundary sections), "
             f"{kpg['strict_chondrite_clr_pass_frac']*100:.1f}% ({round(kpg['strict_chondrite_clr_pass_frac']*kpg['n_samples'])}/{kpg['n_samples']}) classify closer to pure CI chondrite than to volcanic or crustal patterns, "
             f"and {kpg['cosmic_mix_pass_frac']*100:.0f}% ({kpg['n_samples']}/{kpg['n_samples']}) beat volcanic condensates in two-component mixing (median Pt/Ir = {kpg['median_pt_ir']:.2f}, span {kpg['log10_pt_ir_span']:.2f} dex).",
             "is-yes",
-            "Control passed (89% / 100%)",
+            f"Control passed ({round(kpg['strict_chondrite_clr_pass_frac']*kpg['n_samples'])} of {kpg['n_samples']} and {round(kpg['cosmic_mix_pass_frac']*kpg['n_samples'])} of {kpg['n_samples']})",
         ),
         (
             "Pillar 1A · 6-HSE pattern (CLR)",
             "Do Younger Dryas target layers match meteorite/K–Pg inter-element proportions?",
-            f"No. Across {p1['n']} complete 6-element target samples from Hall's Cave (TX) and Page-Ladson (FL), "
+            f"Mostly not. Across {p1['n']} complete 6-element target samples from Hall's Cave (TX) and Page-Ladson (FL), "
             f"0 of {p1['n']} classify as chondritic, {p1['class_counts']['ucc']} match upper continental crust, {p1['class_counts']['volcanic']} match volcanic gas condensates "
-            f"(11/11 at Page-Ladson, plus YDB base 36-30 on 5-HSE CLR at distance {pl30['clr5_dists']['volcanic']:.2f} vs. {pl30['clr5_dists']['chondrite']:.2f} to chondrite), and only 2 fall nearest K–Pg.",
+            f"(11/11 at Page-Ladson, plus YDB base 36-30 on 5-HSE CLR at distance {pl30['clr5_dists']['volcanic']:.2f} vs. {pl30['clr5_dists']['chondrite']:.2f} to chondrite), and {p1['class_counts'].get('kpg_impact', 0)} fall nearest K–Pg. A sample with a small meteoritic share reads as nearest K–Pg in this test, never as chondritic.",
             "is-no",
-            "93% crustal/volcanic; 0% chondritic",
+            f"{p1['noncosmic_clr_frac']*100:.0f}% crustal/volcanic; {p1['class_counts'].get('kpg_impact', 0)} of {p1['n']} near the impact pattern",
         ),
         (
             "Pillar 1A · Two-component mixing",
@@ -97,7 +97,7 @@ def build_verdict(s: dict) -> str:
             f"Volcanic mixing wins decisively at Page-Ladson's unradiogenic spike (ΔRMSE = +0.401) and at Hall's Cave's YDB spike HC16_03 (ΔRMSE = +0.114), "
             f"yet Hall's Cave's two non-YDB unradiogenic layers (13.31 and 10.99 ka) stay Re-poor (~360 ppt) with modest Ir (72–94 ppt), fitting neither chondrites (RMSE 0.60–0.72) nor Re-rich Kudryavy gas (RMSE 0.82–0.88) cleanly.",
             "is-open",
-            "Mixed (ΔRMSE = 0.00; neither fits Hall's Cave)",
+            "Mixed (ΔRMSE = 0.00; at Hall's Cave cosmic mixing fits better in 11 of 16)",
         ),
         (
             "Pillar 1B · Cross-site Pt/Ir coherence",
@@ -106,7 +106,7 @@ def build_verdict(s: dict) -> str:
             f"Wonderkrater 3.58 (background 2.91, only 1.23×), Hall's Cave median 8.53 (range 2.7–55.8), Page-Ladson 43.9 (30–58), and GISP2 100–1,264 (mid 356). "
             f"Overall YDB median is {p1b['ydb_pt_ir_median']:.1f} — {p1b['ydb_pt_ir_median']/kpg['median_pt_ir']:.0f}× higher than Chicxulub K–Pg ({kpg['median_pt_ir']:.2f}).",
             "is-no",
-            "100× scatter; 20× above K–Pg",
+            f"100× scatter; {p1b['ydb_pt_ir_median']/kpg['median_pt_ir']:.0f}× above K–Pg (a rough comparison)",
         ),
         (
             "Pillar 2 · Blind peak uniqueness",
@@ -116,7 +116,7 @@ def build_verdict(s: dict) -> str:
             f"{s131['independent_events_inside'] + s131['independent_events_outside']} ({s131['independent_frac_outside']*100:.0f}%) outside (p = {s131['independent_perm_p']:.2f}), with Hall's Cave's highest Pt at 11.54 ka and highest Ir at 13.31 ka. "
             f"In proponent White Pond (SC), blind Pt/Pd isolates one sharp spike at 221 cm (4.67, z = 15.3), but bulk Pt also spikes to 3.8 ppb 15 cm higher at 206 cm.",
             "is-no",
-            "71–93% of blind spikes outside YDB",
+            "Most blind spikes outside the boundary (71%; 93% with the window that missed it)",
         ),
     ]
 
@@ -665,7 +665,7 @@ def build_coherence(s: dict) -> str:
 
     rows = [
         ("CI Chondrite (cosmic)", ci_pt_ir, ci_pt_ir, ci_pt_ir, "#2f6b55", "Cosmic benchmark"),
-        ("Chicxulub K–Pg (n = 9)", min(kpg_vals), kpg["median_pt_ir"], max(kpg_vals), "#47705f", "Confirmed impact"),
+        (f"Chicxulub K–Pg (n = {kpg['n_samples']})", min(kpg_vals), kpg["median_pt_ir"], max(kpg_vals), "#47705f", "Confirmed impact"),
         ("Wonderkrater, ZA (YDB)", 3.58, 3.58, 3.58, "#b07d1b", "YDB site (bg = 2.91)"),
         ("Hall's Cave, TX (YDB)", min(hc_ydb), sorted(hc_ydb)[len(hc_ydb)//2], max(hc_ydb), "#b07d1b", "YDB site"),
         ("Page-Ladson, FL (YDB)", min(pl_ydb), sorted(pl_ydb)[len(pl_ydb)//2], max(pl_ydb), "#c04b2d", "YDB site"),
@@ -705,7 +705,7 @@ def build_coherence(s: dict) -> str:
     return (
         '<figure class="fig" aria-label="Cross-site platinum to iridium scatter comparing Younger Dryas sites to Chicxulub K-Pg and volcanic condensates">\n'
         '<div class="fig-scroll">\n' + "\n".join(svg) + "\n</div>\n"
-        "<figcaption>Cross-site Pt/Ir coherence test. Confirmed Chicxulub K–Pg impact samples (n = 9, IODP M0077 & Mexican sections) cluster tightly around CI chondrite (median 1.29, IQR 0.24 dex). "
+        f"<figcaption>Cross-site Pt/Ir coherence test. Confirmed Chicxulub K–Pg impact samples (n = {kpg['n_samples']}, Mexican sections) cluster tightly around CI chondrite (median {kpg['median_pt_ir']:.2f}, IQR {kpg['log10_pt_ir_iqr']:.2f} dex). "
         "Claimed Younger Dryas Boundary sites scatter across two full orders of magnitude (3.58 at Wonderkrater, 2.7–55.8 at Hall's Cave, 30–58 at Page-Ladson, and 100–1,264 in GISP2 ice), "
         "overlapping continental crust (23.2) and volcanic gas condensates (Kudryavy 10.9; Tonga submarine sulfur condensates ~1,194).</figcaption>\n"
         "</figure>\n"

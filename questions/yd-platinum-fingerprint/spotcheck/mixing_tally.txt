@@ -1,0 +1,8 @@
+Hall's Cave, TX  all targets        n=16  cosmic-favoured=11  volcanic-favoured= 3  tied(0)= 2  median dRMSE=-0.0582
+Hall's Cave, TX  strict YDB window  n= 7  cosmic-favoured= 3  volcanic-favoured= 2  tied(0)= 2  median dRMSE=+0.0000
+Hall's Cave, TX  unradiogenic Os    n=11  cosmic-favoured= 9  volcanic-favoured= 2  tied(0)= 0  median dRMSE=-0.1036
+Hall's Cave, TX  CLR class of every complete sample (targets and background): {'ucc': 25, 'kpg_impact': 4}
+Page-Ladson, FL  all targets        n=11  cosmic-favoured= 1  volcanic-favoured= 6  tied(0)= 4  median dRMSE=+0.0002
+Page-Ladson, FL  strict YDB window  n=11  cosmic-favoured= 1  volcanic-favoured= 6  tied(0)= 4  median dRMSE=+0.0002
+Page-Ladson, FL  unradiogenic Os    n= 1  cosmic-favoured= 0  volcanic-favoured= 1  tied(0)= 0  median dRMSE=+0.4011
+Page-Ladson, FL  CLR class of every complete sample (targets and background): {'volcanic': 22}
