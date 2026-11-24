@@ -1,0 +1,5 @@
+# Lab Log — `ydb-site-synchrony` (Issue #113)
+
+- **2026-11-24 (Pre-lock setup):** Marked Issue #113 `status:active` and branched `q/ydb-site-synchrony` from `main` (`0f9597d`).
+- **2026-11-24 (Data acquisition — blinded to outcome statistics):** Downloaded `intcal20.14c` (Reimer et al. 2020) and primary open-access PDFs/CSVs covering Kennett et al. (2015, *PNAS*), Meltzer et al. (2014, *PNAS*), Kennett et al. (2008, *QSR*), van Hoesel et al. (2012, *PNAS*), Moore et al. (2020, *Sci. Rep.* SI), Teller et al. (2019, Lake Hind CSV), Waters & Stafford (2007, *Science*), Holliday et al. (2023, *Earth-Science Reviews*), and Reinig et al. (2023, *Nature* Reply Extended Data Table 1 — Laacher See Tephra real single-year positive control). Verified vector-text extractability and SHA-256 hashes in `MANIFEST.md` without computing any synchrony, dispersion, or overlap statistics.
+- **2026-11-24 (Protocol & code):** Authored pre-registered `protocol.md`, `analysis/site_synchrony.py`, and `analysis/test_site_synchrony.py`. Ready for synthetic verification and locking.
