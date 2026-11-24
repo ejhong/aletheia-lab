@@ -1,0 +1,88 @@
+<figure class="fig" aria-label="Interactive cord-by-cord alignment viewer of discovered khipu twin pairs">
+<div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;align-items:center">
+  <span style="font-size:12px;color:var(--muted);margin-right:2px">Select pair:</span>
+  <button type="button" class="kh-t-btn is-on" data-idx="0" style="font-size:11.5px;padding:4px 8px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">Sweden ↔ Peru (23 cords)</button>
+  <button type="button" class="kh-t-btn" data-idx="1" style="font-size:11.5px;padding:4px 8px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Pachacamac ↔ Huacho (6 clusters)</button>
+  <button type="button" class="kh-t-btn" data-idx="2" style="font-size:11.5px;padding:4px 8px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Marquez ↔ Unknown (17 rev)</button>
+  <button type="button" class="kh-t-btn" data-idx="3" style="font-size:11.5px;padding:4px 8px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Pachacamac Twin (8 cords)</button>
+  <button type="button" class="kh-t-btn" data-idx="4" style="font-size:11.5px;padding:4px 8px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Ica–Pisco Exact (10 cords)</button>
+  <button type="button" class="kh-t-btn" data-idx="5" style="font-size:11.5px;padding:4px 8px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Paris ↔ Lima (8 cords)</button>
+  <button type="button" class="kh-t-btn" data-idx="6" style="font-size:11.5px;padding:4px 8px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Puruchuco Control (36 cords)</button>
+</div>
+<div class="fig-scroll">
+<svg id="kh-t-svg" class="chart" viewBox="0 0 720 335" role="img" aria-label="Aligned numerical cord values for paired khipus" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+<figcaption><strong>Blindly discovered numerical twin khipus across all 191,271 pairs in the Open Khipu Repository (Tier A FDR = 0.000; 0 / 100,000 permutation null hits).</strong> Paired vertical bars plot aligned pendant values (or cluster sums for <code>KH0192</code> &harr; <code>KH0470</code>) side by side: Khipu A in teal, Khipu B in copper. Exact cord-by-cord matches appear as equal-height adjacent bars. Hover any bar to read the exact integer knot value.</figcaption>
+<script>
+(function(){
+  var CASES = [{"id": "KH0362_KH0049", "btn": "Sweden \u2194 Peru (23 cords)", "title": "KH0362 (Nazca \u2014 G\u00f6teborg, Sweden) \u2194 KH0049 (Costa Sur \u2014 Lima, Peru)", "sub": "23 consecutive 3- and 4-digit cords | Sum 34,875 vs 34,888 | 19/23 exact, 23/23 within 1% (L1 error = 0.095%)", "label_a": "KH0362 (Nazca)", "label_b": "KH0049 (Costa Sur)", "vals_a": [1146, 1590, 1615, 960, 855, 3840, 1856, 2578, 89, 974, 1146, 1095, 849, 790, 6485, 875, 1348, 754, 1070, 1301, 1507, 1180, 972], "vals_b": [1146, 1590, 1605, 960, 855, 3848, 1856, 2578, 89, 974, 1146, 1095, 849, 790, 6485, 875, 1348, 754, 1074, 1301, 1507, 1191, 972], "err": 0.00095, "orient": "fwd"}, {"id": "KH0192_KH0470", "btn": "Pachacamac \u2194 Huacho (6 clusters)", "title": "KH0192 (Pachacamac \u2014 5-cord groups) \u2194 KH0470 (Huacho \u2014 6-cord groups)", "sub": "6 consecutive exact cluster sums (100% identical, L1 error = 0.000%) linking two coastal sites ~130 km apart", "label_a": "KH0192 (Pachacamac, 5-cord template)", "label_b": "KH0470 (Huacho, 6-cord template)", "vals_a": [173, 275, 317, 329, 23, 171], "vals_b": [173, 275, 317, 329, 23, 171], "err": 0.0, "orient": "fwd"}, {"id": "KH0121_KH0473", "btn": "Marquez \u2194 Unknown (17 rev)", "title": "KH0121 (Marquez \u2014 Berlin VA24370(B)) \u2194 KH0473 (Unknown \u2014 Berlin VA 66834)", "sub": "17 consecutive cords in REVERSE orientation | 16/17 exact (1,766 vs 1,772; L1 error = 0.34%) \u2014 links unprovenanced khipu to Marquez", "label_a": "KH0121 (Marquez)", "label_b": "KH0473 (unknown)", "vals_a": [30, 40, 0, 0, 28, 57, 60, 800, 40, 40, 0, 34, 6, 101, 105, 215, 210], "vals_b": [30, 40, 0, 0, 28, 57, 66, 800, 40, 40, 0, 34, 6, 101, 105, 215, 210], "err": 0.00339, "orient": "rev"}, {"id": "KH0132_KH0456", "btn": "Pachacamac Twin (8 cords)", "title": "KH0132 (Pachacamac \u2014 VA42601) \u2194 KH0456 (Pachacamac \u2014 VA 42559)", "sub": "8 consecutive 3-digit all-white cords | 7/8 exact (4,291 vs 4,288; L1 error = 0.07%)", "label_a": "KH0132 (Pachacamac)", "label_b": "KH0456 (Pachacamac)", "vals_a": [620, 470, 528, 935, 474, 319, 453, 492], "vals_b": [620, 470, 528, 932, 474, 319, 453, 492], "err": 0.0007, "orient": "fwd"}, {"id": "KH0128_KH0137", "btn": "Ica\u2013Pisco Exact (10 cords)", "title": "KH0128 (Between Ica & Pisco \u2014 VA16148) \u2194 KH0137 (Ica \u2014 VA47085)", "sub": "10 consecutive cords 100.0% exact (335 = 335; L1 error = 0.000%)", "label_a": "KH0128 (Between Ica and Pisco)", "label_b": "KH0137 (Ica)", "vals_a": [40, 9, 57, 30, 56, 80, 21, 8, 22, 12], "vals_b": [40, 9, 57, 30, 56, 80, 21, 8, 22, 12], "err": 0.0, "orient": "fwd"}, {"id": "KH0097_KH0586", "btn": "Paris \u2194 Lima (8 cords)", "title": "KH0097 (Unknown \u2014 Quai Branly, Paris) \u2194 KH0586 (Unknown \u2014 MNAAHP, Lima)", "sub": "8 consecutive cords across two unprovenanced khipus in Paris and Lima (558 vs 555; L1 error = 0.54%)", "label_a": "KH0097 (unknown)", "label_b": "KH0586 (unknown)", "vals_a": [100, 50, 222, 22, 33, 66, 32, 33], "vals_b": [100, 50, 222, 22, 32, 66, 30, 33], "err": 0.00538, "orient": "fwd"}, {"id": "KH0305_KH0301", "btn": "Puruchuco Control (36 cords)", "title": "Positive Control: KH0305 (UR068) \u2194 KH0301 (UR064, Puruchuco Archive)", "sub": "Blindly recovered without provenance labels: 36 consecutive cords (1,436 vs 1,426; L1 error = 0.70%)", "label_a": "KH0305 (unknown)", "label_b": "KH0301 (Huaquerones)", "vals_a": [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 3, 0, 0, 0, 8, 2, 1, 0, 8, 1, 3, 1, 56, 5, 4, 1, 1213, 43, 64, 17, 2, 0, 1], "vals_b": [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 3, 0, 0, 0, 7, 2, 1, 0, 8, 1, 0, 1, 56, 5, 0, 1, 1212, 43, 64, 16, 2, 0, 1], "err": 0.00696, "orient": "fwd"}];
+  var svg = document.getElementById("kh-t-svg");
+  var btns = document.querySelectorAll(".kh-t-btn");
+  function el(tag, attrs, txt){
+    var n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (txt !== undefined) n.textContent = txt;
+    return n;
+  }
+  function draw(idx){
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    var c = CASES[idx];
+    var L = 58, R = 696, T = 58, B = 278;
+    svg.appendChild(el("text", {x: 16, y: 18, "font-size": 12.2, "font-weight": 700, fill: "var(--ink)"}, c.title));
+    svg.appendChild(el("text", {x: 16, y: 34, "font-size": 10.2, fill: "var(--muted)"}, c.sub));
+
+    // Legend
+    svg.appendChild(el("rect", {x: 16, y: 42, width: 10, height: 10, rx: 1.5, fill: "var(--teal)"}));
+    svg.appendChild(el("text", {x: 31, y: 50.5, "font-size": 10, fill: "var(--ink)"}, c.label_a));
+    svg.appendChild(el("rect", {x: 360, y: 42, width: 10, height: 10, rx: 1.5, fill: "var(--copper)"}));
+    svg.appendChild(el("text", {x: 375, y: 50.5, "font-size": 10, fill: "var(--ink)"}, c.label_b + (c.orient === "rev" ? " [reversed]" : "")));
+
+    var n = c.vals_a.length;
+    var vmax = 1;
+    for (var i = 0; i < n; i++) {
+      if (c.vals_a[i] > vmax) vmax = c.vals_a[i];
+      if (c.vals_b[i] > vmax) vmax = c.vals_b[i];
+    }
+    // Nice y scale
+    function sy(v){ return B - (v / (vmax * 1.08)) * (B - T); }
+    svg.appendChild(el("line", {x1: L, x2: R, y1: B, y2: B, stroke: "var(--rule)"}));
+    svg.appendChild(el("line", {x1: L, x2: L, y1: T, y2: B, stroke: "var(--rule)"}));
+    [0, 0.25, 0.5, 0.75, 1.0].forEach(function(f){
+      var yv = Math.round(vmax * f);
+      var y = sy(yv);
+      svg.appendChild(el("line", {x1: L, x2: R, y1: y, y2: y, stroke: "var(--rule)", "stroke-dasharray": "2,3", opacity: 0.45}));
+      svg.appendChild(el("text", {x: L - 6, y: y + 3.5, "text-anchor": "end", "font-size": 9.5, fill: "var(--muted)"}, yv.toLocaleString()));
+    });
+
+    var step = (R - L) / n;
+    var bw = Math.max(3, Math.min(20, step * 0.38));
+    for (var i = 0; i < n; i++) {
+      var cx = L + (i + 0.5) * step;
+      var va = c.vals_a[i], vb = c.vals_b[i];
+      var ya = sy(va), yb = sy(vb);
+      var ra = el("rect", {x: (cx - bw - 0.8).toFixed(1), y: ya.toFixed(1), width: bw.toFixed(1), height: Math.max(1.5, B - ya).toFixed(1), rx: 1.5, fill: "var(--teal)", opacity: 0.88});
+      ra.appendChild(el("title", {}, "Pos " + (i+1) + " | " + c.label_a + ": " + va + " vs " + c.label_b + ": " + vb));
+      svg.appendChild(ra);
+      var rb = el("rect", {x: (cx + 0.8).toFixed(1), y: yb.toFixed(1), width: bw.toFixed(1), height: Math.max(1.5, B - yb).toFixed(1), rx: 1.5, fill: "var(--copper)", opacity: 0.88});
+      rb.appendChild(el("title", {}, "Pos " + (i+1) + " | " + c.label_a + ": " + va + " vs " + c.label_b + ": " + vb));
+      svg.appendChild(rb);
+      if (n <= 12) {
+        svg.appendChild(el("text", {x: cx.toFixed(1), y: Math.min(ya, yb) - 5, "text-anchor": "middle", "font-size": 9, fill: "var(--ink)"}, va === vb ? String(va) : (va + "/" + vb)));
+      }
+      if (n <= 24 || i % 2 === 0) {
+        svg.appendChild(el("text", {x: cx.toFixed(1), y: B + 14, "text-anchor": "middle", "font-size": 8.8, fill: "var(--muted)"}, String(i + 1)));
+      }
+    }
+    svg.appendChild(el("text", {x: (L + R) / 2, y: 318, "text-anchor": "middle", "font-size": 10.5, fill: "var(--muted)"}, "Aligned cord / cluster position across matching window (hover any bar pair for exact values)"));
+  }
+  btns.forEach(function(b){
+    b.addEventListener("click", function(){
+      btns.forEach(function(x){ x.classList.remove("is-on"); x.style.background = "transparent"; x.style.color = "var(--ink)"; });
+      b.classList.add("is-on"); b.style.background = "var(--copper)"; b.style.color = "#fff";
+      draw(parseInt(b.getAttribute("data-idx"), 10));
+    });
+  });
+  draw(0);
+})();
+</script>
+</figure>
