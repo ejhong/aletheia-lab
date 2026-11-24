@@ -1,0 +1,6263 @@
+{
+  "question": "ydb-site-synchrony",
+  "issue": 113,
+  "verdict": "ambiguous_or_mixed",
+  "verdict_reason": "Results split across pre-registered thresholds without meeting a clean positive or negative criterion.",
+  "lst_positive_control_pass": true,
+  "positive_control_lst_sites5": {
+    "panel": "LST_sites_5",
+    "n_dates": 5,
+    "weighted_mean_rcybp": 11060.2,
+    "weighted_mean_sigma": 6.1,
+    "ward_wilson_T": 0.42,
+    "ward_wilson_df": 4,
+    "ward_wilson_p_chi2": 0.9811014287288276,
+    "cal_median_mean": 12990.8,
+    "cal_median_sd": 20.0,
+    "cal_median_iqr": 33.0,
+    "cal_median_span": 44.0,
+    "max_hpd95_overlap_n": 5,
+    "max_hpd95_overlap_frac": 1.0,
+    "max_hpd95_overlap_years": [
+      12923.0,
+      13076.0
+    ],
+    "M0": {
+      "extra_lab_sd": 0.0,
+      "old_wood_mean": 0.0,
+      "p_T_best": 0.9975,
+      "best_t0_for_T": 13050,
+      "sim_T_median_at_best": 7.15,
+      "sim_T_q95_at_best": 24.4,
+      "p_SD_best": 0.97701,
+      "best_t0_for_SD": 13075,
+      "sim_SD_median_at_best": 58.0,
+      "sim_SD_q95_at_best": 124.5,
+      "sweep": [
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 7.25,
+          "sim_T_q95": 25.01,
+          "p_T": 0.9955,
+          "sim_SD_median": 56.7,
+          "sim_SD_q95": 134.0,
+          "p_SD": 0.96452
+        },
+        {
+          "t0_cal_bp": 12975,
+          "intcal20_rcybp": 11048.0,
+          "sim_T_median": 6.79,
+          "sim_T_q95": 22.76,
+          "p_T": 0.9965,
+          "sim_SD_median": 55.0,
+          "sim_SD_q95": 122.0,
+          "p_SD": 0.96152
+        },
+        {
+          "t0_cal_bp": 13000,
+          "intcal20_rcybp": 11057.0,
+          "sim_T_median": 7.01,
+          "sim_T_q95": 22.67,
+          "p_T": 0.9945,
+          "sim_SD_median": 56.1,
+          "sim_SD_q95": 131.0,
+          "p_SD": 0.95502
+        },
+        {
+          "t0_cal_bp": 13025,
+          "intcal20_rcybp": 11060.0,
+          "sim_T_median": 7.24,
+          "sim_T_q95": 23.91,
+          "p_T": 0.9965,
+          "sim_SD_median": 55.6,
+          "sim_SD_q95": 127.5,
+          "p_SD": 0.95952
+        },
+        {
+          "t0_cal_bp": 13050,
+          "intcal20_rcybp": 11053.0,
+          "sim_T_median": 7.15,
+          "sim_T_q95": 24.4,
+          "p_T": 0.9975,
+          "sim_SD_median": 56.6,
+          "sim_SD_q95": 130.2,
+          "p_SD": 0.95752
+        },
+        {
+          "t0_cal_bp": 13075,
+          "intcal20_rcybp": 11088.0,
+          "sim_T_median": 8.15,
+          "sim_T_q95": 27.79,
+          "p_T": 0.9935,
+          "sim_SD_median": 58.0,
+          "sim_SD_q95": 124.5,
+          "p_SD": 0.97701
+        },
+        {
+          "t0_cal_bp": 13100,
+          "intcal20_rcybp": 11190.0,
+          "sim_T_median": 11.02,
+          "sim_T_q95": 42.42,
+          "p_T": 0.997,
+          "sim_SD_median": 58.0,
+          "sim_SD_q95": 123.2,
+          "p_SD": 0.93553
+        }
+      ]
+    },
+    "M1": {
+      "extra_lab_sd": 20.0,
+      "old_wood_mean": 50.0,
+      "p_T_best": 0.9995,
+      "best_t0_for_T": 12950,
+      "sim_T_median_at_best": 25.05,
+      "sim_T_q95_at_best": 156.27,
+      "p_SD_best": 0.993,
+      "best_t0_for_SD": 12950,
+      "sim_SD_median_at_best": 75.4,
+      "sim_SD_q95_at_best": 139.6,
+      "sweep": [
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 25.05,
+          "sim_T_q95": 156.27,
+          "p_T": 0.9995,
+          "sim_SD_median": 75.4,
+          "sim_SD_q95": 139.6,
+          "p_SD": 0.993
+        },
+        {
+          "t0_cal_bp": 12975,
+          "intcal20_rcybp": 11048.0,
+          "sim_T_median": 25.67,
+          "sim_T_q95": 154.01,
+          "p_T": 0.9975,
+          "sim_SD_median": 73.8,
+          "sim_SD_q95": 142.7,
+          "p_SD": 0.98751
+        },
+        {
+          "t0_cal_bp": 13000,
+          "intcal20_rcybp": 11057.0,
+          "sim_T_median": 23.99,
+          "sim_T_q95": 142.54,
+          "p_T": 0.9995,
+          "sim_SD_median": 71.7,
+          "sim_SD_q95": 140.7,
+          "p_SD": 0.9915
+        },
+        {
+          "t0_cal_bp": 13025,
+          "intcal20_rcybp": 11060.0,
+          "sim_T_median": 24.74,
+          "sim_T_q95": 135.32,
+          "p_T": 0.9985,
+          "sim_SD_median": 71.5,
+          "sim_SD_q95": 143.6,
+          "p_SD": 0.98751
+        },
+        {
+          "t0_cal_bp": 13050,
+          "intcal20_rcybp": 11053.0,
+          "sim_T_median": 26.13,
+          "sim_T_q95": 156.91,
+          "p_T": 0.9995,
+          "sim_SD_median": 74.3,
+          "sim_SD_q95": 144.9,
+          "p_SD": 0.99
+        },
+        {
+          "t0_cal_bp": 13075,
+          "intcal20_rcybp": 11088.0,
+          "sim_T_median": 26.3,
+          "sim_T_q95": 153.02,
+          "p_T": 0.9995,
+          "sim_SD_median": 70.7,
+          "sim_SD_q95": 141.8,
+          "p_SD": 0.98751
+        },
+        {
+          "t0_cal_bp": 13100,
+          "intcal20_rcybp": 11190.0,
+          "sim_T_median": 28.26,
+          "sim_T_q95": 164.98,
+          "p_T": 0.9995,
+          "sim_SD_median": 68.9,
+          "sim_SD_q95": 137.9,
+          "p_SD": 0.96902
+        }
+      ]
+    },
+    "dates": [
+      {
+        "site": "Krumpa",
+        "lab_id": "Krumpa_mean_n2",
+        "rcybp": 11056.6,
+        "sigma": 15.9,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "weighted locality mean (n=2)",
+        "cal_median": 12999.0,
+        "cal_mean": 12996.9,
+        "cal_sd": 47.9,
+        "hpd95_lower": 12915.0,
+        "hpd95_upper": 13077.0,
+        "hpd95_span": 162.0,
+        "hpd95_intervals": [
+          [
+            12915.0,
+            13077.0
+          ]
+        ]
+      },
+      {
+        "site": "Miesenheim 2",
+        "lab_id": "Miesenheim2_mean_n2",
+        "rcybp": 11060.0,
+        "sigma": 155.6,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "weighted locality mean (n=2)",
+        "cal_median": 12972.0,
+        "cal_mean": 12974.8,
+        "cal_sd": 132.4,
+        "hpd95_lower": 12736.0,
+        "hpd95_upper": 13236.0,
+        "hpd95_span": 500.0,
+        "hpd95_intervals": [
+          [
+            12736.0,
+            13191.0
+          ],
+          [
+            13199.0,
+            13236.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "NearLaacherSeemonastery_mean_n9",
+        "rcybp": 11059.7,
+        "sigma": 7.2,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "weighted locality mean (n=9)",
+        "cal_median": 13005.0,
+        "cal_mean": 13001.9,
+        "cal_sd": 45.1,
+        "hpd95_lower": 12923.0,
+        "hpd95_upper": 13076.0,
+        "hpd95_span": 153.0,
+        "hpd95_intervals": [
+          [
+            12923.0,
+            13076.0
+          ]
+        ]
+      },
+      {
+        "site": "Miesenheim 4",
+        "lab_id": "Miesenheim4_mean_n1",
+        "rcybp": 11040.0,
+        "sigma": 60.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "weighted locality mean (n=1)",
+        "cal_median": 12967.0,
+        "cal_mean": 12963.7,
+        "cal_sd": 75.9,
+        "hpd95_lower": 12831.0,
+        "hpd95_upper": 13093.0,
+        "hpd95_span": 262.0,
+        "hpd95_intervals": [
+          [
+            12831.0,
+            13093.0
+          ]
+        ]
+      },
+      {
+        "site": "Kruft",
+        "lab_id": "Kruft_mean_n2",
+        "rcybp": 11068.8,
+        "sigma": 17.3,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "weighted locality mean (n=2)",
+        "cal_median": 13011.0,
+        "cal_mean": 13006.7,
+        "cal_sd": 47.2,
+        "hpd95_lower": 12922.0,
+        "hpd95_upper": 13083.0,
+        "hpd95_span": 161.0,
+        "hpd95_intervals": [
+          [
+            12922.0,
+            13083.0
+          ]
+        ]
+      }
+    ]
+  },
+  "positive_control_lst_all16": {
+    "panel": "LST_all_16",
+    "n_dates": 16,
+    "weighted_mean_rcybp": 11060.2,
+    "weighted_mean_sigma": 6.1,
+    "ward_wilson_T": 14.8,
+    "ward_wilson_df": 15,
+    "ward_wilson_p_chi2": 0.46589973461280487,
+    "cal_median_mean": 12993.7,
+    "cal_median_sd": 29.7,
+    "cal_median_iqr": 19.5,
+    "cal_median_span": 132.0,
+    "max_hpd95_overlap_n": 16,
+    "max_hpd95_overlap_frac": 1.0,
+    "max_hpd95_overlap_years": [
+      12928.0,
+      13059.0
+    ],
+    "M0": {
+      "extra_lab_sd": 0.0,
+      "old_wood_mean": 0.0,
+      "p_T_best": 0.97351,
+      "best_t0_for_T": 13100,
+      "sim_T_median_at_best": 35.87,
+      "sim_T_q95_at_best": 63.97,
+      "p_SD_best": 0.997,
+      "best_t0_for_SD": 12950,
+      "sim_SD_median_at_best": 71.6,
+      "sim_SD_q95_at_best": 147.3,
+      "sweep": [
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 25.62,
+          "sim_T_q95": 43.71,
+          "p_T": 0.90805,
+          "sim_SD_median": 71.6,
+          "sim_SD_q95": 147.3,
+          "p_SD": 0.997
+        },
+        {
+          "t0_cal_bp": 12975,
+          "intcal20_rcybp": 11048.0,
+          "sim_T_median": 23.64,
+          "sim_T_q95": 42.02,
+          "p_T": 0.87856,
+          "sim_SD_median": 70.2,
+          "sim_SD_q95": 153.3,
+          "p_SD": 0.98851
+        },
+        {
+          "t0_cal_bp": 13000,
+          "intcal20_rcybp": 11057.0,
+          "sim_T_median": 23.53,
+          "sim_T_q95": 42.7,
+          "p_T": 0.87206,
+          "sim_SD_median": 67.2,
+          "sim_SD_q95": 144.9,
+          "p_SD": 0.98151
+        },
+        {
+          "t0_cal_bp": 13025,
+          "intcal20_rcybp": 11060.0,
+          "sim_T_median": 24.97,
+          "sim_T_q95": 43.4,
+          "p_T": 0.88756,
+          "sim_SD_median": 68.3,
+          "sim_SD_q95": 143.8,
+          "p_SD": 0.98251
+        },
+        {
+          "t0_cal_bp": 13050,
+          "intcal20_rcybp": 11053.0,
+          "sim_T_median": 24.82,
+          "sim_T_q95": 44.28,
+          "p_T": 0.89605,
+          "sim_SD_median": 70.4,
+          "sim_SD_q95": 149.1,
+          "p_SD": 0.99
+        },
+        {
+          "t0_cal_bp": 13075,
+          "intcal20_rcybp": 11088.0,
+          "sim_T_median": 26.8,
+          "sim_T_q95": 47.37,
+          "p_T": 0.92804,
+          "sim_SD_median": 66.6,
+          "sim_SD_q95": 143.2,
+          "p_SD": 0.9935
+        },
+        {
+          "t0_cal_bp": 13100,
+          "intcal20_rcybp": 11190.0,
+          "sim_T_median": 35.87,
+          "sim_T_q95": 63.97,
+          "p_T": 0.97351,
+          "sim_SD_median": 63.8,
+          "sim_SD_q95": 133.5,
+          "p_SD": 0.93653
+        }
+      ]
+    },
+    "M1": {
+      "extra_lab_sd": 20.0,
+      "old_wood_mean": 50.0,
+      "p_T_best": 1.0,
+      "best_t0_for_T": 13025,
+      "sim_T_median_at_best": 83.51,
+      "sim_T_q95_at_best": 209.75,
+      "p_SD_best": 1.0,
+      "best_t0_for_SD": 12950,
+      "sim_SD_median_at_best": 84.4,
+      "sim_SD_q95_at_best": 152.3,
+      "sweep": [
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 84.51,
+          "sim_T_q95": 210.29,
+          "p_T": 0.999,
+          "sim_SD_median": 84.4,
+          "sim_SD_q95": 152.3,
+          "p_SD": 1.0
+        },
+        {
+          "t0_cal_bp": 12975,
+          "intcal20_rcybp": 11048.0,
+          "sim_T_median": 85.22,
+          "sim_T_q95": 206.87,
+          "p_T": 0.9995,
+          "sim_SD_median": 82.4,
+          "sim_SD_q95": 154.1,
+          "p_SD": 1.0
+        },
+        {
+          "t0_cal_bp": 13000,
+          "intcal20_rcybp": 11057.0,
+          "sim_T_median": 82.99,
+          "sim_T_q95": 198.45,
+          "p_T": 0.999,
+          "sim_SD_median": 80.3,
+          "sim_SD_q95": 151.0,
+          "p_SD": 1.0
+        },
+        {
+          "t0_cal_bp": 13025,
+          "intcal20_rcybp": 11060.0,
+          "sim_T_median": 83.51,
+          "sim_T_q95": 209.75,
+          "p_T": 1.0,
+          "sim_SD_median": 80.2,
+          "sim_SD_q95": 151.6,
+          "p_SD": 1.0
+        },
+        {
+          "t0_cal_bp": 13050,
+          "intcal20_rcybp": 11053.0,
+          "sim_T_median": 86.84,
+          "sim_T_q95": 202.55,
+          "p_T": 0.9995,
+          "sim_SD_median": 82.5,
+          "sim_SD_q95": 152.1,
+          "p_SD": 1.0
+        },
+        {
+          "t0_cal_bp": 13075,
+          "intcal20_rcybp": 11088.0,
+          "sim_T_median": 86.49,
+          "sim_T_q95": 201.43,
+          "p_T": 1.0,
+          "sim_SD_median": 78.5,
+          "sim_SD_q95": 153.3,
+          "p_SD": 0.9995
+        },
+        {
+          "t0_cal_bp": 13100,
+          "intcal20_rcybp": 11190.0,
+          "sim_T_median": 97.29,
+          "sim_T_q95": 217.19,
+          "p_T": 1.0,
+          "sim_SD_median": 76.3,
+          "sim_SD_q95": 139.7,
+          "p_SD": 0.9945
+        }
+      ]
+    },
+    "dates": [
+      {
+        "site": "Krumpa",
+        "lab_id": "Hd-17132",
+        "rcybp": 11055.0,
+        "sigma": 23.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Kru-16 + few yrs directly above LST",
+        "cal_median": 12995.0,
+        "cal_mean": 12993.1,
+        "cal_sd": 51.4,
+        "hpd95_lower": 12906.0,
+        "hpd95_upper": 13080.0,
+        "hpd95_span": 174.0,
+        "hpd95_intervals": [
+          [
+            12906.0,
+            13080.0
+          ]
+        ]
+      },
+      {
+        "site": "Miesenheim 2",
+        "lab_id": "KN-3518",
+        "rcybp": 11080.0,
+        "sigma": 220.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar* - 0 yrs, bark* immediately prior LSE",
+        "cal_median": 12996.0,
+        "cal_mean": 13001.6,
+        "cal_sd": 193.0,
+        "hpd95_lower": 12681.0,
+        "hpd95_upper": 13423.0,
+        "hpd95_span": 742.0,
+        "hpd95_intervals": [
+          [
+            12681.0,
+            13423.0
+          ]
+        ]
+      },
+      {
+        "site": "Miesenheim 2",
+        "lab_id": "KN-3519",
+        "rcybp": 11040.0,
+        "sigma": 220.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar* - 0 yrs, bark* immediately prior LSE",
+        "cal_median": 12967.0,
+        "cal_mean": 12969.3,
+        "cal_sd": 195.0,
+        "hpd95_lower": 12618.0,
+        "hpd95_upper": 13405.0,
+        "hpd95_span": 787.0,
+        "hpd95_intervals": [
+          [
+            12618.0,
+            13360.0
+          ],
+          [
+            13380.0,
+            13405.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "ETH-92276",
+        "rcybp": 11068.0,
+        "sigma": 21.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar 1 -1 yr",
+        "cal_median": 13008.0,
+        "cal_mean": 13004.3,
+        "cal_sd": 48.7,
+        "hpd95_lower": 12919.0,
+        "hpd95_upper": 13085.0,
+        "hpd95_span": 166.0,
+        "hpd95_intervals": [
+          [
+            12919.0,
+            13085.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "ETH-92018",
+        "rcybp": 11002.0,
+        "sigma": 21.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar 1 -2 yr",
+        "cal_median": 12907.0,
+        "cal_mean": 12918.3,
+        "cal_sd": 58.1,
+        "hpd95_lower": 12834.0,
+        "hpd95_upper": 13059.0,
+        "hpd95_span": 225.0,
+        "hpd95_intervals": [
+          [
+            12834.0,
+            13002.0
+          ],
+          [
+            13026.0,
+            13059.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "ETH-92275",
+        "rcybp": 11092.0,
+        "sigma": 22.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar 1 -3 yr",
+        "cal_median": 13027.0,
+        "cal_mean": 13024.3,
+        "cal_sd": 47.7,
+        "hpd95_lower": 12927.0,
+        "hpd95_upper": 13094.0,
+        "hpd95_span": 167.0,
+        "hpd95_intervals": [
+          [
+            12927.0,
+            12951.0
+          ],
+          [
+            12959.0,
+            13094.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "ETH-92274",
+        "rcybp": 11051.0,
+        "sigma": 21.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar 1 -4 yr",
+        "cal_median": 12991.0,
+        "cal_mean": 12990.5,
+        "cal_sd": 51.1,
+        "hpd95_lower": 12905.0,
+        "hpd95_upper": 13077.0,
+        "hpd95_span": 172.0,
+        "hpd95_intervals": [
+          [
+            12905.0,
+            13077.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "ETH-92273",
+        "rcybp": 11100.0,
+        "sigma": 22.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar 1 -5 yr",
+        "cal_median": 13039.0,
+        "cal_mean": 13032.6,
+        "cal_sd": 47.1,
+        "hpd95_lower": 12928.0,
+        "hpd95_upper": 13097.0,
+        "hpd95_span": 169.0,
+        "hpd95_intervals": [
+          [
+            12928.0,
+            12948.0
+          ],
+          [
+            12962.0,
+            13097.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "ETH-92272",
+        "rcybp": 11044.0,
+        "sigma": 22.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar 1 -6 yr",
+        "cal_median": 12983.0,
+        "cal_mean": 12983.7,
+        "cal_sd": 53.2,
+        "hpd95_lower": 12897.0,
+        "hpd95_upper": 13077.0,
+        "hpd95_span": 180.0,
+        "hpd95_intervals": [
+          [
+            12897.0,
+            13077.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "ETH-92271",
+        "rcybp": 11072.0,
+        "sigma": 22.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar 1 -7 yr",
+        "cal_median": 13011.0,
+        "cal_mean": 13007.0,
+        "cal_sd": 48.8,
+        "hpd95_lower": 12920.0,
+        "hpd95_upper": 13086.0,
+        "hpd95_span": 166.0,
+        "hpd95_intervals": [
+          [
+            12920.0,
+            13086.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "ETH-92270",
+        "rcybp": 11054.0,
+        "sigma": 22.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar 1 -8 yr",
+        "cal_median": 12994.0,
+        "cal_mean": 12992.7,
+        "cal_sd": 51.1,
+        "hpd95_lower": 12907.0,
+        "hpd95_upper": 13079.0,
+        "hpd95_span": 172.0,
+        "hpd95_intervals": [
+          [
+            12907.0,
+            13079.0
+          ]
+        ]
+      },
+      {
+        "site": "Near Laacher See monastery",
+        "lab_id": "ETH-92269",
+        "rcybp": 11060.0,
+        "sigma": 21.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar 1 -9 yr",
+        "cal_median": 13001.0,
+        "cal_mean": 12998.0,
+        "cal_sd": 49.6,
+        "hpd95_lower": 12912.0,
+        "hpd95_upper": 13080.0,
+        "hpd95_span": 168.0,
+        "hpd95_intervals": [
+          [
+            12912.0,
+            13080.0
+          ]
+        ]
+      },
+      {
+        "site": "Miesenheim 4",
+        "lab_id": "UtC-4815",
+        "rcybp": 11040.0,
+        "sigma": 60.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "uncharred wood - few yrs immediately prior LSE",
+        "cal_median": 12967.0,
+        "cal_mean": 12963.7,
+        "cal_sd": 75.9,
+        "hpd95_lower": 12831.0,
+        "hpd95_upper": 13093.0,
+        "hpd95_span": 262.0,
+        "hpd95_intervals": [
+          [
+            12831.0,
+            13093.0
+          ]
+        ]
+      },
+      {
+        "site": "Kruft",
+        "lab_id": "Hd-18438",
+        "rcybp": 11065.0,
+        "sigma": 22.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar #8 - few yrs, outer rings immediately prior LSE",
+        "cal_median": 13005.0,
+        "cal_mean": 13001.5,
+        "cal_sd": 49.5,
+        "hpd95_lower": 12915.0,
+        "hpd95_upper": 13083.0,
+        "hpd95_span": 168.0,
+        "hpd95_intervals": [
+          [
+            12915.0,
+            13083.0
+          ]
+        ]
+      },
+      {
+        "site": "Kruft",
+        "lab_id": "Hd-19037",
+        "rcybp": 11075.0,
+        "sigma": 28.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Poplar #9 - few yrs, rings 41-50 immediately prior LSE",
+        "cal_median": 13010.0,
+        "cal_mean": 13005.9,
+        "cal_sd": 51.4,
+        "hpd95_lower": 12916.0,
+        "hpd95_upper": 13089.0,
+        "hpd95_span": 173.0,
+        "hpd95_intervals": [
+          [
+            12916.0,
+            13089.0
+          ]
+        ]
+      },
+      {
+        "site": "Krumpa",
+        "lab_id": "Hd-17171",
+        "rcybp": 11058.0,
+        "sigma": 22.0,
+        "material": "wood/poplar/bark",
+        "is_wood_or_charcoal": true,
+        "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1",
+        "note": "Kru-18C - few yrs directly below LST",
+        "cal_median": 12998.0,
+        "cal_mean": 12996.0,
+        "cal_sd": 50.4,
+        "hpd95_lower": 12909.0,
+        "hpd95_upper": 13080.0,
+        "hpd95_span": 171.0,
+        "hpd95_intervals": [
+          [
+            12909.0,
+            13080.0
+          ]
+        ]
+      }
+    ]
+  },
+  "pillar1_primary_9sites": {
+    "panel": "YDB_1A_Primary_9sites",
+    "n_dates": 9,
+    "weighted_mean_rcybp": 11025.0,
+    "weighted_mean_sigma": 6.7,
+    "ward_wilson_T": 630.62,
+    "ward_wilson_df": 8,
+    "ward_wilson_p_chi2": 6.08935322376586e-131,
+    "cal_median_mean": 12913.2,
+    "cal_median_sd": 172.6,
+    "cal_median_iqr": 199.0,
+    "cal_median_span": 544.0,
+    "max_hpd95_overlap_n": 5,
+    "max_hpd95_overlap_frac": 0.5556,
+    "max_hpd95_overlap_years": [
+      12756.0,
+      13091.0
+    ],
+    "M0": {
+      "extra_lab_sd": 0.0,
+      "old_wood_mean": 0.0,
+      "p_T_best": 0.0005,
+      "best_t0_for_T": 12700,
+      "sim_T_median_at_best": 10.34,
+      "sim_T_q95_at_best": 23.89,
+      "p_SD_best": 0.14493,
+      "best_t0_for_SD": 12700,
+      "sim_SD_median_at_best": 97.1,
+      "sim_SD_q95_at_best": 229.1,
+      "sweep": [
+        {
+          "t0_cal_bp": 12700,
+          "intcal20_rcybp": 10656.0,
+          "sim_T_median": 10.34,
+          "sim_T_q95": 23.89,
+          "p_T": 0.0005,
+          "sim_SD_median": 97.1,
+          "sim_SD_q95": 229.1,
+          "p_SD": 0.14493
+        },
+        {
+          "t0_cal_bp": 12725,
+          "intcal20_rcybp": 10717.0,
+          "sim_T_median": 13.66,
+          "sim_T_q95": 35.45,
+          "p_T": 0.0005,
+          "sim_SD_median": 84.1,
+          "sim_SD_q95": 218.5,
+          "p_SD": 0.12194
+        },
+        {
+          "t0_cal_bp": 12750,
+          "intcal20_rcybp": 10823.0,
+          "sim_T_median": 12.8,
+          "sim_T_q95": 34.74,
+          "p_T": 0.0005,
+          "sim_SD_median": 75.2,
+          "sim_SD_q95": 198.1,
+          "p_SD": 0.08696
+        },
+        {
+          "t0_cal_bp": 12775,
+          "intcal20_rcybp": 10912.0,
+          "sim_T_median": 11.02,
+          "sim_T_q95": 26.12,
+          "p_T": 0.0005,
+          "sim_SD_median": 73.8,
+          "sim_SD_q95": 183.5,
+          "p_SD": 0.06547
+        },
+        {
+          "t0_cal_bp": 12800,
+          "intcal20_rcybp": 10908.0,
+          "sim_T_median": 11.19,
+          "sim_T_q95": 26.46,
+          "p_T": 0.0005,
+          "sim_SD_median": 75.3,
+          "sim_SD_q95": 177.8,
+          "p_SD": 0.05797
+        },
+        {
+          "t0_cal_bp": 12825,
+          "intcal20_rcybp": 10917.0,
+          "sim_T_median": 11.13,
+          "sim_T_q95": 26.89,
+          "p_T": 0.0005,
+          "sim_SD_median": 73.7,
+          "sim_SD_q95": 178.0,
+          "p_SD": 0.05947
+        },
+        {
+          "t0_cal_bp": 12850,
+          "intcal20_rcybp": 10989.0,
+          "sim_T_median": 11.33,
+          "sim_T_q95": 27.18,
+          "p_T": 0.0005,
+          "sim_SD_median": 76.4,
+          "sim_SD_q95": 171.6,
+          "p_SD": 0.04998
+        },
+        {
+          "t0_cal_bp": 12875,
+          "intcal20_rcybp": 10961.0,
+          "sim_T_median": 11.19,
+          "sim_T_q95": 27.42,
+          "p_T": 0.0005,
+          "sim_SD_median": 74.4,
+          "sim_SD_q95": 176.7,
+          "p_SD": 0.05697
+        },
+        {
+          "t0_cal_bp": 12900,
+          "intcal20_rcybp": 11000.0,
+          "sim_T_median": 11.91,
+          "sim_T_q95": 28.65,
+          "p_T": 0.0005,
+          "sim_SD_median": 75.4,
+          "sim_SD_q95": 174.0,
+          "p_SD": 0.05297
+        },
+        {
+          "t0_cal_bp": 12925,
+          "intcal20_rcybp": 11035.0,
+          "sim_T_median": 11.85,
+          "sim_T_q95": 28.97,
+          "p_T": 0.0005,
+          "sim_SD_median": 75.4,
+          "sim_SD_q95": 168.9,
+          "p_SD": 0.04448
+        },
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 11.61,
+          "sim_T_q95": 29.84,
+          "p_T": 0.0005,
+          "sim_SD_median": 73.3,
+          "sim_SD_q95": 167.7,
+          "p_SD": 0.04398
+        }
+      ]
+    },
+    "M1": {
+      "extra_lab_sd": 20.0,
+      "old_wood_mean": 50.0,
+      "p_T_best": 0.0015,
+      "best_t0_for_T": 12775,
+      "sim_T_median_at_best": 31.87,
+      "sim_T_q95_at_best": 147.95,
+      "p_SD_best": 0.15142,
+      "best_t0_for_SD": 12700,
+      "sim_SD_median_at_best": 93.9,
+      "sim_SD_q95_at_best": 221.4,
+      "sweep": [
+        {
+          "t0_cal_bp": 12700,
+          "intcal20_rcybp": 10656.0,
+          "sim_T_median": 30.87,
+          "sim_T_q95": 128.41,
+          "p_T": 0.0005,
+          "sim_SD_median": 93.9,
+          "sim_SD_q95": 221.4,
+          "p_SD": 0.15142
+        },
+        {
+          "t0_cal_bp": 12725,
+          "intcal20_rcybp": 10717.0,
+          "sim_T_median": 35.98,
+          "sim_T_q95": 154.84,
+          "p_T": 0.0005,
+          "sim_SD_median": 85.4,
+          "sim_SD_q95": 207.8,
+          "p_SD": 0.10895
+        },
+        {
+          "t0_cal_bp": 12750,
+          "intcal20_rcybp": 10823.0,
+          "sim_T_median": 34.16,
+          "sim_T_q95": 147.78,
+          "p_T": 0.0005,
+          "sim_SD_median": 88.9,
+          "sim_SD_q95": 191.3,
+          "p_SD": 0.08496
+        },
+        {
+          "t0_cal_bp": 12775,
+          "intcal20_rcybp": 10912.0,
+          "sim_T_median": 31.87,
+          "sim_T_q95": 147.95,
+          "p_T": 0.0015,
+          "sim_SD_median": 94.4,
+          "sim_SD_q95": 193.9,
+          "p_SD": 0.07746
+        },
+        {
+          "t0_cal_bp": 12800,
+          "intcal20_rcybp": 10908.0,
+          "sim_T_median": 32.37,
+          "sim_T_q95": 151.7,
+          "p_T": 0.0005,
+          "sim_SD_median": 93.5,
+          "sim_SD_q95": 187.6,
+          "p_SD": 0.07746
+        },
+        {
+          "t0_cal_bp": 12825,
+          "intcal20_rcybp": 10917.0,
+          "sim_T_median": 31.41,
+          "sim_T_q95": 132.58,
+          "p_T": 0.0015,
+          "sim_SD_median": 94.5,
+          "sim_SD_q95": 191.5,
+          "p_SD": 0.08146
+        },
+        {
+          "t0_cal_bp": 12850,
+          "intcal20_rcybp": 10989.0,
+          "sim_T_median": 32.08,
+          "sim_T_q95": 140.2,
+          "p_T": 0.0015,
+          "sim_SD_median": 93.8,
+          "sim_SD_q95": 184.9,
+          "p_SD": 0.06797
+        },
+        {
+          "t0_cal_bp": 12875,
+          "intcal20_rcybp": 10961.0,
+          "sim_T_median": 31.33,
+          "sim_T_q95": 136.1,
+          "p_T": 0.0015,
+          "sim_SD_median": 94.8,
+          "sim_SD_q95": 184.4,
+          "p_SD": 0.06997
+        },
+        {
+          "t0_cal_bp": 12900,
+          "intcal20_rcybp": 11000.0,
+          "sim_T_median": 32.83,
+          "sim_T_q95": 154.36,
+          "p_T": 0.001,
+          "sim_SD_median": 94.0,
+          "sim_SD_q95": 186.2,
+          "p_SD": 0.06847
+        },
+        {
+          "t0_cal_bp": 12925,
+          "intcal20_rcybp": 11035.0,
+          "sim_T_median": 32.08,
+          "sim_T_q95": 137.77,
+          "p_T": 0.0005,
+          "sim_SD_median": 90.0,
+          "sim_SD_q95": 187.0,
+          "p_SD": 0.06947
+        },
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 33.76,
+          "sim_T_q95": 145.68,
+          "p_T": 0.0005,
+          "sim_SD_median": 89.5,
+          "sim_SD_q95": 184.4,
+          "p_SD": 0.06497
+        }
+      ]
+    },
+    "dates": [
+      {
+        "site": "Abu Hureyra, Syria",
+        "lab_id": "UCIAMS-105429",
+        "rcybp": 11070.0,
+        "sigma": 40.0,
+        "material": "charcoal (Level 445 meltglass peak)",
+        "is_wood_or_charcoal": true,
+        "source": "Moore et al. 2020 Sci. Rep. SI Table S1 (Bunch et al. 2012)",
+        "note": "405 cmbs, Level 445",
+        "cal_median": 13000.0,
+        "cal_mean": 12995.5,
+        "cal_sd": 58.5,
+        "hpd95_lower": 12895.0,
+        "hpd95_upper": 13094.0,
+        "hpd95_span": 199.0,
+        "hpd95_intervals": [
+          [
+            12895.0,
+            13094.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "AC003_YDB_mean_n12",
+        "rcybp": 11138.2,
+        "sigma": 8.4,
+        "material": "wood/charcoal (392-503 cmbs)",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "Inverse-variance mean of 12 YDB dates",
+        "cal_median": 13089.0,
+        "cal_mean": 13088.0,
+        "cal_sd": 11.1,
+        "hpd95_lower": 13073.0,
+        "hpd95_upper": 13102.0,
+        "hpd95_span": 29.0,
+        "hpd95_intervals": [
+          [
+            13073.0,
+            13102.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "Usselo_mean_n14",
+        "rcybp": 10846.6,
+        "sigma": 14.2,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "Inverse-variance mean of 14 Usselo charcoal dates",
+        "cal_median": 12756.0,
+        "cal_mean": 12760.2,
+        "cal_sd": 17.3,
+        "hpd95_lower": 12738.0,
+        "hpd95_upper": 12822.0,
+        "hpd95_span": 84.0,
+        "hpd95_intervals": [
+          [
+            12738.0,
+            12774.0
+          ],
+          [
+            12797.0,
+            12822.0
+          ]
+        ]
+      },
+      {
+        "site": "Lake Hind, Manitoba",
+        "lab_id": "UCIAMS-29317",
+        "rcybp": 10610.0,
+        "sigma": 25.0,
+        "material": "plant/charcoal (YDB horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "Teller et al. 2019 Q. Res. Table 1 (LakeHindDates.csv)",
+        "note": "depth=33 cm",
+        "cal_median": 12653.0,
+        "cal_mean": 12644.9,
+        "cal_sd": 47.4,
+        "hpd95_lower": 12504.0,
+        "hpd95_upper": 12707.0,
+        "hpd95_span": 203.0,
+        "hpd95_intervals": [
+          [
+            12504.0,
+            12527.0
+          ],
+          [
+            12614.0,
+            12707.0
+          ]
+        ]
+      },
+      {
+        "site": "Bull Creek, OK",
+        "lab_id": "Bement2014-BC21",
+        "rcybp": 11070.0,
+        "sigma": 60.0,
+        "material": "soil organic carbon (nanodiamond peak)",
+        "is_wood_or_charcoal": true,
+        "source": "Bement et al. 2014 PNAS (transcribed in Holliday et al. 2023 Table 5)",
+        "note": "298-307 cmbs, BC21",
+        "cal_median": 12990.0,
+        "cal_mean": 12984.6,
+        "cal_sd": 71.1,
+        "hpd95_lower": 12840.0,
+        "hpd95_upper": 13098.0,
+        "hpd95_span": 258.0,
+        "hpd95_intervals": [
+          [
+            12840.0,
+            12870.0
+          ],
+          [
+            12878.0,
+            13098.0
+          ]
+        ]
+      },
+      {
+        "site": "Murray Springs, AZ",
+        "lab_id": "WS2007-MurraySprings",
+        "rcybp": 10885.0,
+        "sigma": 50.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Unit F1 Clovis hearth mean (n=8)",
+        "cal_median": 12801.0,
+        "cal_mean": 12806.8,
+        "cal_sd": 44.9,
+        "hpd95_lower": 12739.0,
+        "hpd95_upper": 12894.0,
+        "hpd95_span": 155.0,
+        "hpd95_intervals": [
+          [
+            12739.0,
+            12854.0
+          ],
+          [
+            12856.0,
+            12894.0
+          ]
+        ]
+      },
+      {
+        "site": "Sheriden Cave, OH",
+        "lab_id": "WS2007-SheridenCave",
+        "rcybp": 10920.0,
+        "sigma": 50.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Below Clovis/YDB artifacts (n=2)",
+        "cal_median": 12821.0,
+        "cal_mean": 12832.2,
+        "cal_sd": 58.5,
+        "hpd95_lower": 12743.0,
+        "hpd95_upper": 12964.0,
+        "hpd95_span": 221.0,
+        "hpd95_intervals": [
+          [
+            12743.0,
+            12930.0
+          ],
+          [
+            12943.0,
+            12964.0
+          ]
+        ]
+      },
+      {
+        "site": "Indian Creek, MT",
+        "lab_id": "WS2007-IndianCreek",
+        "rcybp": 10980.0,
+        "sigma": 110.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Clovis-age horizon (n=1)",
+        "cal_median": 12912.0,
+        "cal_mean": 12918.1,
+        "cal_sd": 100.8,
+        "hpd95_lower": 12749.0,
+        "hpd95_upper": 13091.0,
+        "hpd95_span": 342.0,
+        "hpd95_intervals": [
+          [
+            12749.0,
+            13091.0
+          ]
+        ]
+      },
+      {
+        "site": "Blackwater Draw, NM",
+        "lab_id": "WS2007-BlackwaterDraw",
+        "rcybp": 11300.0,
+        "sigma": 235.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Clovis / basal black mat (n=3)",
+        "cal_median": 13197.0,
+        "cal_mean": 13196.2,
+        "cal_sd": 220.4,
+        "hpd95_lower": 12756.0,
+        "hpd95_upper": 13595.0,
+        "hpd95_span": 839.0,
+        "hpd95_intervals": [
+          [
+            12756.0,
+            13533.0
+          ],
+          [
+            13536.0,
+            13595.0
+          ]
+        ]
+      }
+    ]
+  },
+  "pillar1_favorable_9sites": {
+    "panel": "YDB_1A_Favorable_9sites",
+    "n_dates": 9,
+    "weighted_mean_rcybp": 10934.0,
+    "weighted_mean_sigma": 16.9,
+    "ward_wilson_T": 28.07,
+    "ward_wilson_df": 8,
+    "ward_wilson_p_chi2": 0.000461384456628921,
+    "cal_median_mean": 12898.9,
+    "cal_median_sd": 141.3,
+    "cal_median_iqr": 189.0,
+    "cal_median_span": 428.0,
+    "max_hpd95_overlap_n": 7,
+    "max_hpd95_overlap_frac": 0.7778,
+    "max_hpd95_overlap_years": [
+      12756.0,
+      12890.0
+    ],
+    "M0": {
+      "extra_lab_sd": 0.0,
+      "old_wood_mean": 0.0,
+      "p_T_best": 0.009,
+      "best_t0_for_T": 12750,
+      "sim_T_median_at_best": 8.92,
+      "sim_T_q95_at_best": 19.02,
+      "p_SD_best": 0.28286,
+      "best_t0_for_SD": 12700,
+      "sim_SD_median_at_best": 98.2,
+      "sim_SD_q95_at_best": 225.4,
+      "sweep": [
+        {
+          "t0_cal_bp": 12700,
+          "intcal20_rcybp": 10656.0,
+          "sim_T_median": 8.11,
+          "sim_T_q95": 17.71,
+          "p_T": 0.0015,
+          "sim_SD_median": 98.2,
+          "sim_SD_q95": 225.4,
+          "p_SD": 0.28286
+        },
+        {
+          "t0_cal_bp": 12725,
+          "intcal20_rcybp": 10717.0,
+          "sim_T_median": 9.32,
+          "sim_T_q95": 19.54,
+          "p_T": 0.0045,
+          "sim_SD_median": 85.4,
+          "sim_SD_q95": 212.3,
+          "p_SD": 0.21439
+        },
+        {
+          "t0_cal_bp": 12750,
+          "intcal20_rcybp": 10823.0,
+          "sim_T_median": 8.92,
+          "sim_T_q95": 19.02,
+          "p_T": 0.009,
+          "sim_SD_median": 77.7,
+          "sim_SD_q95": 192.3,
+          "p_SD": 0.15342
+        },
+        {
+          "t0_cal_bp": 12775,
+          "intcal20_rcybp": 10912.0,
+          "sim_T_median": 8.45,
+          "sim_T_q95": 17.79,
+          "p_T": 0.0005,
+          "sim_SD_median": 78.5,
+          "sim_SD_q95": 178.2,
+          "p_SD": 0.13093
+        },
+        {
+          "t0_cal_bp": 12800,
+          "intcal20_rcybp": 10908.0,
+          "sim_T_median": 8.1,
+          "sim_T_q95": 16.98,
+          "p_T": 0.002,
+          "sim_SD_median": 78.3,
+          "sim_SD_q95": 185.0,
+          "p_SD": 0.12894
+        },
+        {
+          "t0_cal_bp": 12825,
+          "intcal20_rcybp": 10917.0,
+          "sim_T_median": 8.25,
+          "sim_T_q95": 18.26,
+          "p_T": 0.001,
+          "sim_SD_median": 77.6,
+          "sim_SD_q95": 185.0,
+          "p_SD": 0.13443
+        },
+        {
+          "t0_cal_bp": 12850,
+          "intcal20_rcybp": 10989.0,
+          "sim_T_median": 8.31,
+          "sim_T_q95": 17.66,
+          "p_T": 0.002,
+          "sim_SD_median": 81.1,
+          "sim_SD_q95": 191.1,
+          "p_SD": 0.12844
+        },
+        {
+          "t0_cal_bp": 12875,
+          "intcal20_rcybp": 10961.0,
+          "sim_T_median": 8.42,
+          "sim_T_q95": 17.5,
+          "p_T": 0.002,
+          "sim_SD_median": 80.4,
+          "sim_SD_q95": 184.3,
+          "p_SD": 0.12144
+        },
+        {
+          "t0_cal_bp": 12900,
+          "intcal20_rcybp": 11000.0,
+          "sim_T_median": 8.49,
+          "sim_T_q95": 17.89,
+          "p_T": 0.004,
+          "sim_SD_median": 80.4,
+          "sim_SD_q95": 176.6,
+          "p_SD": 0.12444
+        },
+        {
+          "t0_cal_bp": 12925,
+          "intcal20_rcybp": 11035.0,
+          "sim_T_median": 8.58,
+          "sim_T_q95": 17.82,
+          "p_T": 0.005,
+          "sim_SD_median": 79.9,
+          "sim_SD_q95": 172.0,
+          "p_SD": 0.11544
+        },
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 8.64,
+          "sim_T_q95": 17.63,
+          "p_T": 0.0025,
+          "sim_SD_median": 79.9,
+          "sim_SD_q95": 167.3,
+          "p_SD": 0.10295
+        }
+      ]
+    },
+    "M1": {
+      "extra_lab_sd": 20.0,
+      "old_wood_mean": 50.0,
+      "p_T_best": 0.15742,
+      "best_t0_for_T": 12775,
+      "sim_T_median_at_best": 14.91,
+      "sim_T_q95_at_best": 39.6,
+      "p_SD_best": 0.24088,
+      "best_t0_for_SD": 12700,
+      "sim_SD_median_at_best": 94.1,
+      "sim_SD_q95_at_best": 217.2,
+      "sweep": [
+        {
+          "t0_cal_bp": 12700,
+          "intcal20_rcybp": 10656.0,
+          "sim_T_median": 14.89,
+          "sim_T_q95": 36.17,
+          "p_T": 0.11744,
+          "sim_SD_median": 94.1,
+          "sim_SD_q95": 217.2,
+          "p_SD": 0.24088
+        },
+        {
+          "t0_cal_bp": 12725,
+          "intcal20_rcybp": 10717.0,
+          "sim_T_median": 16.02,
+          "sim_T_q95": 40.26,
+          "p_T": 0.14143,
+          "sim_SD_median": 89.3,
+          "sim_SD_q95": 211.1,
+          "p_SD": 0.21889
+        },
+        {
+          "t0_cal_bp": 12750,
+          "intcal20_rcybp": 10823.0,
+          "sim_T_median": 15.39,
+          "sim_T_q95": 40.76,
+          "p_T": 0.13843,
+          "sim_SD_median": 92.1,
+          "sim_SD_q95": 194.7,
+          "p_SD": 0.17441
+        },
+        {
+          "t0_cal_bp": 12775,
+          "intcal20_rcybp": 10912.0,
+          "sim_T_median": 14.91,
+          "sim_T_q95": 39.6,
+          "p_T": 0.15742,
+          "sim_SD_median": 96.1,
+          "sim_SD_q95": 194.4,
+          "p_SD": 0.17591
+        },
+        {
+          "t0_cal_bp": 12800,
+          "intcal20_rcybp": 10908.0,
+          "sim_T_median": 14.81,
+          "sim_T_q95": 37.7,
+          "p_T": 0.12794,
+          "sim_SD_median": 95.2,
+          "sim_SD_q95": 194.1,
+          "p_SD": 0.17341
+        },
+        {
+          "t0_cal_bp": 12825,
+          "intcal20_rcybp": 10917.0,
+          "sim_T_median": 14.87,
+          "sim_T_q95": 38.01,
+          "p_T": 0.12244,
+          "sim_SD_median": 95.4,
+          "sim_SD_q95": 194.8,
+          "p_SD": 0.17591
+        },
+        {
+          "t0_cal_bp": 12850,
+          "intcal20_rcybp": 10989.0,
+          "sim_T_median": 14.81,
+          "sim_T_q95": 38.8,
+          "p_T": 0.14743,
+          "sim_SD_median": 96.4,
+          "sim_SD_q95": 184.6,
+          "p_SD": 0.15242
+        },
+        {
+          "t0_cal_bp": 12875,
+          "intcal20_rcybp": 10961.0,
+          "sim_T_median": 15.24,
+          "sim_T_q95": 40.5,
+          "p_T": 0.13743,
+          "sim_SD_median": 97.4,
+          "sim_SD_q95": 185.5,
+          "p_SD": 0.17041
+        },
+        {
+          "t0_cal_bp": 12900,
+          "intcal20_rcybp": 11000.0,
+          "sim_T_median": 15.43,
+          "sim_T_q95": 41.87,
+          "p_T": 0.14893,
+          "sim_SD_median": 95.4,
+          "sim_SD_q95": 185.4,
+          "p_SD": 0.15192
+        },
+        {
+          "t0_cal_bp": 12925,
+          "intcal20_rcybp": 11035.0,
+          "sim_T_median": 15.23,
+          "sim_T_q95": 40.19,
+          "p_T": 0.14993,
+          "sim_SD_median": 91.3,
+          "sim_SD_q95": 176.3,
+          "p_SD": 0.12044
+        },
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 15.1,
+          "sim_T_q95": 40.4,
+          "p_T": 0.13643,
+          "sim_SD_median": 92.2,
+          "sim_SD_q95": 180.4,
+          "p_SD": 0.12594
+        }
+      ]
+    },
+    "dates": [
+      {
+        "site": "Abu Hureyra, Syria",
+        "lab_id": "UCIAMS-105429",
+        "rcybp": 11070.0,
+        "sigma": 40.0,
+        "material": "charcoal (Level 445 meltglass peak)",
+        "is_wood_or_charcoal": true,
+        "source": "Moore et al. 2020 Sci. Rep. SI Table S1 (Bunch et al. 2012)",
+        "note": "405 cmbs, Level 445",
+        "cal_median": 13000.0,
+        "cal_mean": 12995.5,
+        "cal_sd": 58.5,
+        "hpd95_lower": 12895.0,
+        "hpd95_upper": 13094.0,
+        "hpd95_span": 199.0,
+        "hpd95_intervals": [
+          [
+            12895.0,
+            13094.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "Beta-161032",
+        "rcybp": 10860.0,
+        "sigma": 70.0,
+        "material": "Blue-gray mud/silt Wood (yellow pine-Diploxylon)d",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "480-485 cmbs",
+        "cal_median": 12798.0,
+        "cal_mean": 12808.1,
+        "cal_sd": 60.8,
+        "hpd95_lower": 12715.0,
+        "hpd95_upper": 12959.0,
+        "hpd95_span": 244.0,
+        "hpd95_intervals": [
+          [
+            12715.0,
+            12927.0
+          ],
+          [
+            12949.0,
+            12959.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "Usselo_basal_mean_n3",
+        "rcybp": 10898.7,
+        "sigma": 38.2,
+        "material": "charcoal (basal 4.0-5.5 cm ND layer)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 Table 1 (Kennett 2015 subset)",
+        "note": "Inverse-variance mean of GrA-49515, GrA-49509, GrA-49524",
+        "cal_median": 12802.0,
+        "cal_mean": 12806.2,
+        "cal_sd": 37.1,
+        "hpd95_lower": 12748.0,
+        "hpd95_upper": 12890.0,
+        "hpd95_span": 142.0,
+        "hpd95_intervals": [
+          [
+            12748.0,
+            12847.0
+          ],
+          [
+            12859.0,
+            12890.0
+          ]
+        ]
+      },
+      {
+        "site": "Lake Hind, Manitoba",
+        "lab_id": "PSUAMS-1572",
+        "rcybp": 10850.0,
+        "sigma": 35.0,
+        "material": "plant/charcoal (YDB horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "Teller et al. 2019 Q. Res. Table 1 (LakeHindDates.csv)",
+        "note": "depth=32 cm",
+        "cal_median": 12769.0,
+        "cal_mean": 12778.2,
+        "cal_sd": 29.3,
+        "hpd95_lower": 12736.0,
+        "hpd95_upper": 12830.0,
+        "hpd95_span": 94.0,
+        "hpd95_intervals": [
+          [
+            12736.0,
+            12830.0
+          ]
+        ]
+      },
+      {
+        "site": "Bull Creek, OK",
+        "lab_id": "Bement2014-BC21",
+        "rcybp": 11070.0,
+        "sigma": 60.0,
+        "material": "soil organic carbon (nanodiamond peak)",
+        "is_wood_or_charcoal": true,
+        "source": "Bement et al. 2014 PNAS (transcribed in Holliday et al. 2023 Table 5)",
+        "note": "298-307 cmbs, BC21",
+        "cal_median": 12990.0,
+        "cal_mean": 12984.6,
+        "cal_sd": 71.1,
+        "hpd95_lower": 12840.0,
+        "hpd95_upper": 13098.0,
+        "hpd95_span": 258.0,
+        "hpd95_intervals": [
+          [
+            12840.0,
+            12870.0
+          ],
+          [
+            12878.0,
+            13098.0
+          ]
+        ]
+      },
+      {
+        "site": "Murray Springs, AZ",
+        "lab_id": "WS2007-MurraySprings",
+        "rcybp": 10885.0,
+        "sigma": 50.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Unit F1 Clovis hearth mean (n=8)",
+        "cal_median": 12801.0,
+        "cal_mean": 12806.8,
+        "cal_sd": 44.9,
+        "hpd95_lower": 12739.0,
+        "hpd95_upper": 12894.0,
+        "hpd95_span": 155.0,
+        "hpd95_intervals": [
+          [
+            12739.0,
+            12854.0
+          ],
+          [
+            12856.0,
+            12894.0
+          ]
+        ]
+      },
+      {
+        "site": "Sheriden Cave, OH",
+        "lab_id": "WS2007-SheridenCave",
+        "rcybp": 10920.0,
+        "sigma": 50.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Below Clovis/YDB artifacts (n=2)",
+        "cal_median": 12821.0,
+        "cal_mean": 12832.2,
+        "cal_sd": 58.5,
+        "hpd95_lower": 12743.0,
+        "hpd95_upper": 12964.0,
+        "hpd95_span": 221.0,
+        "hpd95_intervals": [
+          [
+            12743.0,
+            12930.0
+          ],
+          [
+            12943.0,
+            12964.0
+          ]
+        ]
+      },
+      {
+        "site": "Indian Creek, MT",
+        "lab_id": "WS2007-IndianCreek",
+        "rcybp": 10980.0,
+        "sigma": 110.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Clovis-age horizon (n=1)",
+        "cal_median": 12912.0,
+        "cal_mean": 12918.1,
+        "cal_sd": 100.8,
+        "hpd95_lower": 12749.0,
+        "hpd95_upper": 13091.0,
+        "hpd95_span": 342.0,
+        "hpd95_intervals": [
+          [
+            12749.0,
+            13091.0
+          ]
+        ]
+      },
+      {
+        "site": "Blackwater Draw, NM",
+        "lab_id": "WS2007-BlackwaterDraw",
+        "rcybp": 11300.0,
+        "sigma": 235.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Clovis / basal black mat (n=3)",
+        "cal_median": 13197.0,
+        "cal_mean": 13196.2,
+        "cal_sd": 220.4,
+        "hpd95_lower": 12756.0,
+        "hpd95_upper": 13595.0,
+        "hpd95_span": 839.0,
+        "hpd95_intervals": [
+          [
+            12756.0,
+            13533.0
+          ],
+          [
+            13536.0,
+            13595.0
+          ]
+        ]
+      }
+    ]
+  },
+  "pillar1_allraw_33dates": {
+    "panel": "YDB_1B_AllRaw_33dates",
+    "n_dates": 33,
+    "weighted_mean_rcybp": 11024.5,
+    "weighted_mean_sigma": 6.7,
+    "ward_wilson_T": 833.36,
+    "ward_wilson_df": 32,
+    "ward_wilson_p_chi2": 1.7141497689457477e-154,
+    "cal_median_mean": 12915.9,
+    "cal_median_sd": 165.2,
+    "cal_median_iqr": 235.0,
+    "cal_median_span": 661.0,
+    "max_hpd95_overlap_n": 18,
+    "max_hpd95_overlap_frac": 0.5455,
+    "max_hpd95_overlap_years": [
+      12769.0,
+      12770.0
+    ],
+    "M0": {
+      "extra_lab_sd": 0.0,
+      "old_wood_mean": 0.0,
+      "p_T_best": 0.0005,
+      "best_t0_for_T": 12700,
+      "sim_T_median_at_best": 38.26,
+      "sim_T_q95_at_best": 55.53,
+      "p_SD_best": 0.01499,
+      "best_t0_for_SD": 12700,
+      "sim_SD_median_at_best": 68.4,
+      "sim_SD_q95_at_best": 125.8,
+      "sweep": [
+        {
+          "t0_cal_bp": 12700,
+          "intcal20_rcybp": 10656.0,
+          "sim_T_median": 38.26,
+          "sim_T_q95": 55.53,
+          "p_T": 0.0005,
+          "sim_SD_median": 68.4,
+          "sim_SD_q95": 125.8,
+          "p_SD": 0.01499
+        },
+        {
+          "t0_cal_bp": 12725,
+          "intcal20_rcybp": 10717.0,
+          "sim_T_median": 45.59,
+          "sim_T_q95": 67.4,
+          "p_T": 0.0005,
+          "sim_SD_median": 56.6,
+          "sim_SD_q95": 116.3,
+          "p_SD": 0.0055
+        },
+        {
+          "t0_cal_bp": 12750,
+          "intcal20_rcybp": 10823.0,
+          "sim_T_median": 43.54,
+          "sim_T_q95": 65.03,
+          "p_T": 0.0005,
+          "sim_SD_median": 52.2,
+          "sim_SD_q95": 105.1,
+          "p_SD": 0.004
+        },
+        {
+          "t0_cal_bp": 12775,
+          "intcal20_rcybp": 10912.0,
+          "sim_T_median": 38.82,
+          "sim_T_q95": 57.91,
+          "p_T": 0.0005,
+          "sim_SD_median": 59.7,
+          "sim_SD_q95": 106.6,
+          "p_SD": 0.0045
+        },
+        {
+          "t0_cal_bp": 12800,
+          "intcal20_rcybp": 10908.0,
+          "sim_T_median": 38.72,
+          "sim_T_q95": 57.38,
+          "p_T": 0.0005,
+          "sim_SD_median": 59.0,
+          "sim_SD_q95": 103.2,
+          "p_SD": 0.001
+        },
+        {
+          "t0_cal_bp": 12825,
+          "intcal20_rcybp": 10917.0,
+          "sim_T_median": 39.94,
+          "sim_T_q95": 59.25,
+          "p_T": 0.0005,
+          "sim_SD_median": 60.3,
+          "sim_SD_q95": 102.7,
+          "p_SD": 0.0025
+        },
+        {
+          "t0_cal_bp": 12850,
+          "intcal20_rcybp": 10989.0,
+          "sim_T_median": 39.4,
+          "sim_T_q95": 58.26,
+          "p_T": 0.0005,
+          "sim_SD_median": 66.9,
+          "sim_SD_q95": 106.6,
+          "p_SD": 0.002
+        },
+        {
+          "t0_cal_bp": 12875,
+          "intcal20_rcybp": 10961.0,
+          "sim_T_median": 39.54,
+          "sim_T_q95": 58.21,
+          "p_T": 0.0005,
+          "sim_SD_median": 65.0,
+          "sim_SD_q95": 107.8,
+          "p_SD": 0.002
+        },
+        {
+          "t0_cal_bp": 12900,
+          "intcal20_rcybp": 11000.0,
+          "sim_T_median": 40.81,
+          "sim_T_q95": 60.32,
+          "p_T": 0.0005,
+          "sim_SD_median": 67.6,
+          "sim_SD_q95": 106.3,
+          "p_SD": 0.0005
+        },
+        {
+          "t0_cal_bp": 12925,
+          "intcal20_rcybp": 11035.0,
+          "sim_T_median": 40.36,
+          "sim_T_q95": 61.45,
+          "p_T": 0.0005,
+          "sim_SD_median": 65.5,
+          "sim_SD_q95": 103.9,
+          "p_SD": 0.002
+        },
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 40.8,
+          "sim_T_q95": 60.0,
+          "p_T": 0.0005,
+          "sim_SD_median": 65.7,
+          "sim_SD_q95": 100.9,
+          "p_SD": 0.0005
+        }
+      ]
+    },
+    "M1": {
+      "extra_lab_sd": 20.0,
+      "old_wood_mean": 50.0,
+      "p_T_best": 0.0005,
+      "best_t0_for_T": 12700,
+      "sim_T_median_at_best": 92.11,
+      "sim_T_q95_at_best": 172.46,
+      "p_SD_best": 0.0095,
+      "best_t0_for_SD": 12700,
+      "sim_SD_median_at_best": 69.5,
+      "sim_SD_q95_at_best": 126.7,
+      "sweep": [
+        {
+          "t0_cal_bp": 12700,
+          "intcal20_rcybp": 10656.0,
+          "sim_T_median": 92.11,
+          "sim_T_q95": 172.46,
+          "p_T": 0.0005,
+          "sim_SD_median": 69.5,
+          "sim_SD_q95": 126.7,
+          "p_SD": 0.0095
+        },
+        {
+          "t0_cal_bp": 12725,
+          "intcal20_rcybp": 10717.0,
+          "sim_T_median": 98.8,
+          "sim_T_q95": 185.06,
+          "p_T": 0.0005,
+          "sim_SD_median": 63.8,
+          "sim_SD_q95": 118.1,
+          "p_SD": 0.0065
+        },
+        {
+          "t0_cal_bp": 12750,
+          "intcal20_rcybp": 10823.0,
+          "sim_T_median": 98.96,
+          "sim_T_q95": 182.58,
+          "p_T": 0.0005,
+          "sim_SD_median": 74.3,
+          "sim_SD_q95": 116.1,
+          "p_SD": 0.003
+        },
+        {
+          "t0_cal_bp": 12775,
+          "intcal20_rcybp": 10912.0,
+          "sim_T_median": 92.66,
+          "sim_T_q95": 175.54,
+          "p_T": 0.0005,
+          "sim_SD_median": 85.2,
+          "sim_SD_q95": 122.9,
+          "p_SD": 0.0035
+        },
+        {
+          "t0_cal_bp": 12800,
+          "intcal20_rcybp": 10908.0,
+          "sim_T_median": 93.33,
+          "sim_T_q95": 178.72,
+          "p_T": 0.0005,
+          "sim_SD_median": 85.2,
+          "sim_SD_q95": 124.5,
+          "p_SD": 0.006
+        },
+        {
+          "t0_cal_bp": 12825,
+          "intcal20_rcybp": 10917.0,
+          "sim_T_median": 94.72,
+          "sim_T_q95": 176.26,
+          "p_T": 0.0005,
+          "sim_SD_median": 85.7,
+          "sim_SD_q95": 121.1,
+          "p_SD": 0.0025
+        },
+        {
+          "t0_cal_bp": 12850,
+          "intcal20_rcybp": 10989.0,
+          "sim_T_median": 94.38,
+          "sim_T_q95": 176.25,
+          "p_T": 0.0005,
+          "sim_SD_median": 85.7,
+          "sim_SD_q95": 120.8,
+          "p_SD": 0.002
+        },
+        {
+          "t0_cal_bp": 12875,
+          "intcal20_rcybp": 10961.0,
+          "sim_T_median": 93.94,
+          "sim_T_q95": 180.52,
+          "p_T": 0.0005,
+          "sim_SD_median": 86.8,
+          "sim_SD_q95": 120.4,
+          "p_SD": 0.0035
+        },
+        {
+          "t0_cal_bp": 12900,
+          "intcal20_rcybp": 11000.0,
+          "sim_T_median": 95.23,
+          "sim_T_q95": 183.8,
+          "p_T": 0.0005,
+          "sim_SD_median": 85.1,
+          "sim_SD_q95": 120.8,
+          "p_SD": 0.002
+        },
+        {
+          "t0_cal_bp": 12925,
+          "intcal20_rcybp": 11035.0,
+          "sim_T_median": 94.82,
+          "sim_T_q95": 168.26,
+          "p_T": 0.0005,
+          "sim_SD_median": 81.7,
+          "sim_SD_q95": 113.9,
+          "p_SD": 0.002
+        },
+        {
+          "t0_cal_bp": 12950,
+          "intcal20_rcybp": 11037.0,
+          "sim_T_median": 95.18,
+          "sim_T_q95": 173.66,
+          "p_T": 0.0005,
+          "sim_SD_median": 81.0,
+          "sim_SD_q95": 116.1,
+          "p_SD": 0.0045
+        }
+      ]
+    },
+    "dates": [
+      {
+        "site": "Abu Hureyra, Syria",
+        "lab_id": "UCIAMS-105429",
+        "rcybp": 11070.0,
+        "sigma": 40.0,
+        "material": "charcoal (Level 445 meltglass peak)",
+        "is_wood_or_charcoal": true,
+        "source": "Moore et al. 2020 Sci. Rep. SI Table S1 (Bunch et al. 2012)",
+        "note": "405 cmbs, Level 445",
+        "cal_median": 13000.0,
+        "cal_mean": 12995.5,
+        "cal_sd": 58.5,
+        "hpd95_lower": 12895.0,
+        "hpd95_upper": 13094.0,
+        "hpd95_span": 199.0,
+        "hpd95_intervals": [
+          [
+            12895.0,
+            13094.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-47239",
+        "rcybp": 11105.0,
+        "sigma": 30.0,
+        "material": "Finely laminated dark gray to black silt Charcoal",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "392-396 cmbs",
+        "cal_median": 13034.0,
+        "cal_mean": 13028.4,
+        "cal_sd": 50.6,
+        "hpd95_lower": 12926.0,
+        "hpd95_upper": 13098.0,
+        "hpd95_span": 172.0,
+        "hpd95_intervals": [
+          [
+            12926.0,
+            12952.0
+          ],
+          [
+            12957.0,
+            13098.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-42816",
+        "rcybp": 11095.0,
+        "sigma": 25.0,
+        "material": "Finely laminated dark gray to black silt Woodb",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "403-406 cmbs",
+        "cal_median": 13028.0,
+        "cal_mean": 13024.3,
+        "cal_sd": 48.9,
+        "hpd95_lower": 12927.0,
+        "hpd95_upper": 13095.0,
+        "hpd95_span": 168.0,
+        "hpd95_intervals": [
+          [
+            12927.0,
+            12952.0
+          ],
+          [
+            12958.0,
+            13095.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-36308",
+        "rcybp": 11095.0,
+        "sigma": 25.0,
+        "material": "Blue-gray mud/silt Wood",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "464-469 cmbs",
+        "cal_median": 13028.0,
+        "cal_mean": 13024.3,
+        "cal_sd": 48.9,
+        "hpd95_lower": 12927.0,
+        "hpd95_upper": 13095.0,
+        "hpd95_span": 168.0,
+        "hpd95_intervals": [
+          [
+            12927.0,
+            12952.0
+          ],
+          [
+            12958.0,
+            13095.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-36307",
+        "rcybp": 11070.0,
+        "sigma": 25.0,
+        "material": "Blue-gray mud/silt Wood",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "469-475 cmbs",
+        "cal_median": 13008.0,
+        "cal_mean": 13003.9,
+        "cal_sd": 50.4,
+        "hpd95_lower": 12916.0,
+        "hpd95_upper": 13087.0,
+        "hpd95_span": 171.0,
+        "hpd95_intervals": [
+          [
+            12916.0,
+            13087.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-36306",
+        "rcybp": 11375.0,
+        "sigma": 25.0,
+        "material": "Blue-gray mud/silt Wood",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "485-491 cmbs",
+        "cal_median": 13251.0,
+        "cal_mean": 13247.3,
+        "cal_sd": 38.9,
+        "hpd95_lower": 13178.0,
+        "hpd95_upper": 13307.0,
+        "hpd95_span": 129.0,
+        "hpd95_intervals": [
+          [
+            13178.0,
+            13307.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-36959",
+        "rcybp": 11075.0,
+        "sigma": 30.0,
+        "material": "Blue-gray mud/silt Charcoal",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "480-485 cmbs",
+        "cal_median": 13009.0,
+        "cal_mean": 13004.8,
+        "cal_sd": 52.4,
+        "hpd95_lower": 12914.0,
+        "hpd95_upper": 13090.0,
+        "hpd95_span": 176.0,
+        "hpd95_intervals": [
+          [
+            12914.0,
+            13090.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-36960",
+        "rcybp": 11185.0,
+        "sigma": 30.0,
+        "material": "Blue-gray mud/silt Glassy carbon",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "480-485 cmbs",
+        "cal_median": 13111.0,
+        "cal_mean": 13117.5,
+        "cal_sd": 24.5,
+        "hpd95_lower": 13085.0,
+        "hpd95_upper": 13162.0,
+        "hpd95_span": 77.0,
+        "hpd95_intervals": [
+          [
+            13085.0,
+            13162.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-36961",
+        "rcybp": 11440.0,
+        "sigma": 90.0,
+        "material": "Blue-gray mud/silt Carbon sphere",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "480-485 cmbs",
+        "cal_median": 13314.0,
+        "cal_mean": 13315.5,
+        "cal_sd": 88.7,
+        "hpd95_lower": 13163.0,
+        "hpd95_upper": 13485.0,
+        "hpd95_span": 322.0,
+        "hpd95_intervals": [
+          [
+            13163.0,
+            13485.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-36962",
+        "rcybp": 11110.0,
+        "sigma": 35.0,
+        "material": "Blue-gray mud/silt Carbon Brecchia \u2018\u2018elongate\u2019\u2019",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "480-485 cmbs",
+        "cal_median": 13034.0,
+        "cal_mean": 13028.0,
+        "cal_sd": 53.1,
+        "hpd95_lower": 12924.0,
+        "hpd95_upper": 13100.0,
+        "hpd95_span": 176.0,
+        "hpd95_intervals": [
+          [
+            12924.0,
+            13100.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "Beta-161032",
+        "rcybp": 10860.0,
+        "sigma": 70.0,
+        "material": "Blue-gray mud/silt Wood (yellow pine-Diploxylon)d",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "480-485 cmbs",
+        "cal_median": 12798.0,
+        "cal_mean": 12808.1,
+        "cal_sd": 60.8,
+        "hpd95_lower": 12715.0,
+        "hpd95_upper": 12959.0,
+        "hpd95_span": 244.0,
+        "hpd95_intervals": [
+          [
+            12715.0,
+            12927.0
+          ],
+          [
+            12949.0,
+            12959.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-36305",
+        "rcybp": 11235.0,
+        "sigma": 25.0,
+        "material": "Blue-gray mud/silt Wood",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "493-498 cmbs",
+        "cal_median": 13136.0,
+        "cal_mean": 13135.2,
+        "cal_sd": 21.6,
+        "hpd95_lower": 13098.0,
+        "hpd95_upper": 13169.0,
+        "hpd95_span": 71.0,
+        "hpd95_intervals": [
+          [
+            13098.0,
+            13169.0
+          ]
+        ]
+      },
+      {
+        "site": "Arlington Canyon, CA",
+        "lab_id": "UCIAMS-36304",
+        "rcybp": 11020.0,
+        "sigma": 25.0,
+        "material": "Blue-gray mud/silt Wood",
+        "is_wood_or_charcoal": true,
+        "source": "Kennett et al. 2008 QSR, Table 4",
+        "note": "498-503 cmbs",
+        "cal_median": 12950.0,
+        "cal_mean": 12953.5,
+        "cal_sd": 61.4,
+        "hpd95_lower": 12841.0,
+        "hpd95_upper": 13068.0,
+        "hpd95_span": 227.0,
+        "hpd95_intervals": [
+          [
+            12841.0,
+            12867.0
+          ],
+          [
+            12882.0,
+            13068.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49570",
+        "rcybp": 10735.0,
+        "sigma": 45.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-21a (\u22125.0 \u2013 \u22124.0 cm)",
+        "cal_median": 12725.0,
+        "cal_mean": 12721.1,
+        "cal_sd": 22.1,
+        "hpd95_lower": 12681.0,
+        "hpd95_upper": 12756.0,
+        "hpd95_span": 75.0,
+        "hpd95_intervals": [
+          [
+            12681.0,
+            12756.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49521",
+        "rcybp": 10765.0,
+        "sigma": 50.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-21b (\u22125.0 \u2013 \u22124.0 cm)",
+        "cal_median": 12735.0,
+        "cal_mean": 12734.4,
+        "cal_sd": 24.0,
+        "hpd95_lower": 12681.0,
+        "hpd95_upper": 12815.0,
+        "hpd95_span": 134.0,
+        "hpd95_intervals": [
+          [
+            12681.0,
+            12770.0
+          ],
+          [
+            12803.0,
+            12815.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49516",
+        "rcybp": 10765.0,
+        "sigma": 50.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-12a (0.0\u20132.0 cm)",
+        "cal_median": 12735.0,
+        "cal_mean": 12734.4,
+        "cal_sd": 24.0,
+        "hpd95_lower": 12681.0,
+        "hpd95_upper": 12815.0,
+        "hpd95_span": 134.0,
+        "hpd95_intervals": [
+          [
+            12681.0,
+            12770.0
+          ],
+          [
+            12803.0,
+            12815.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49507",
+        "rcybp": 10920.0,
+        "sigma": 50.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-12b (0.0\u20132.0 cm)",
+        "cal_median": 12821.0,
+        "cal_mean": 12832.2,
+        "cal_sd": 58.5,
+        "hpd95_lower": 12743.0,
+        "hpd95_upper": 12964.0,
+        "hpd95_span": 221.0,
+        "hpd95_intervals": [
+          [
+            12743.0,
+            12930.0
+          ],
+          [
+            12943.0,
+            12964.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49527",
+        "rcybp": 10960.0,
+        "sigma": 60.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-32a (0.0\u20132.0 cm)",
+        "cal_median": 12873.0,
+        "cal_mean": 12885.2,
+        "cal_sd": 81.9,
+        "hpd95_lower": 12757.0,
+        "hpd95_upper": 13063.0,
+        "hpd95_span": 306.0,
+        "hpd95_intervals": [
+          [
+            12757.0,
+            13007.0
+          ],
+          [
+            13021.0,
+            13063.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49529",
+        "rcybp": 10755.0,
+        "sigma": 55.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-32b (0.0\u20132.0 cm)",
+        "cal_median": 12731.0,
+        "cal_mean": 12728.4,
+        "cal_sd": 29.6,
+        "hpd95_lower": 12627.0,
+        "hpd95_upper": 12819.0,
+        "hpd95_span": 192.0,
+        "hpd95_intervals": [
+          [
+            12627.0,
+            12636.0
+          ],
+          [
+            12671.0,
+            12771.0
+          ],
+          [
+            12800.0,
+            12819.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49573",
+        "rcybp": 10860.0,
+        "sigma": 45.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-23a (0.0\u20132.0 cm)",
+        "cal_median": 12786.0,
+        "cal_mean": 12789.4,
+        "cal_sd": 35.5,
+        "hpd95_lower": 12732.0,
+        "hpd95_upper": 12881.0,
+        "hpd95_span": 149.0,
+        "hpd95_intervals": [
+          [
+            12732.0,
+            12841.0
+          ],
+          [
+            12868.0,
+            12881.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49574",
+        "rcybp": 10845.0,
+        "sigma": 45.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-23b (0.0\u20132.0 cm)",
+        "cal_median": 12773.0,
+        "cal_mean": 12780.6,
+        "cal_sd": 33.9,
+        "hpd95_lower": 12727.0,
+        "hpd95_upper": 12838.0,
+        "hpd95_span": 111.0,
+        "hpd95_intervals": [
+          [
+            12727.0,
+            12838.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49569",
+        "rcybp": 10895.0,
+        "sigma": 45.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-13a (2.0\u20134.0 cm)",
+        "cal_median": 12803.0,
+        "cal_mean": 12808.9,
+        "cal_sd": 42.5,
+        "hpd95_lower": 12744.0,
+        "hpd95_upper": 12894.0,
+        "hpd95_span": 150.0,
+        "hpd95_intervals": [
+          [
+            12744.0,
+            12851.0
+          ],
+          [
+            12856.0,
+            12894.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49514",
+        "rcybp": 10880.0,
+        "sigma": 110.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-13b (2.0\u20134.0 cm)",
+        "cal_median": 12834.0,
+        "cal_mean": 12852.7,
+        "cal_sd": 100.3,
+        "hpd95_lower": 12709.0,
+        "hpd95_upper": 13075.0,
+        "hpd95_span": 366.0,
+        "hpd95_intervals": [
+          [
+            12709.0,
+            13075.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49575",
+        "rcybp": 10900.0,
+        "sigma": 50.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-33a (2.0\u20134.5 cm)",
+        "cal_median": 12808.0,
+        "cal_mean": 12816.5,
+        "cal_sd": 50.0,
+        "hpd95_lower": 12741.0,
+        "hpd95_upper": 12907.0,
+        "hpd95_span": 166.0,
+        "hpd95_intervals": [
+          [
+            12741.0,
+            12907.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49515",
+        "rcybp": 11020.0,
+        "sigma": 75.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-14a (4.0\u20135.5 cm)",
+        "cal_median": 12946.0,
+        "cal_mean": 12943.5,
+        "cal_sd": 86.3,
+        "hpd95_lower": 12769.0,
+        "hpd95_upper": 13090.0,
+        "hpd95_span": 321.0,
+        "hpd95_intervals": [
+          [
+            12769.0,
+            12802.0
+          ],
+          [
+            12816.0,
+            13090.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49509",
+        "rcybp": 10865.0,
+        "sigma": 55.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-14b (4.0\u20135.5 cm)",
+        "cal_median": 12793.0,
+        "cal_mean": 12798.7,
+        "cal_sd": 45.0,
+        "hpd95_lower": 12730.0,
+        "hpd95_upper": 12893.0,
+        "hpd95_span": 163.0,
+        "hpd95_intervals": [
+          [
+            12730.0,
+            12849.0
+          ],
+          [
+            12857.0,
+            12893.0
+          ]
+        ]
+      },
+      {
+        "site": "Aalsterhut, Netherlands",
+        "lab_id": "GrA-49524",
+        "rcybp": 10840.0,
+        "sigma": 75.0,
+        "material": "charcoal (Usselo horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "van Hoesel et al. 2012 PNAS, Table 1",
+        "note": "AH-14c (4.0\u20135.5 cm)",
+        "cal_median": 12788.0,
+        "cal_mean": 12797.8,
+        "cal_sd": 61.8,
+        "hpd95_lower": 12692.0,
+        "hpd95_upper": 12925.0,
+        "hpd95_span": 233.0,
+        "hpd95_intervals": [
+          [
+            12692.0,
+            12925.0
+          ]
+        ]
+      },
+      {
+        "site": "Lake Hind, Manitoba",
+        "lab_id": "UCIAMS-29317",
+        "rcybp": 10610.0,
+        "sigma": 25.0,
+        "material": "plant/charcoal (YDB horizon)",
+        "is_wood_or_charcoal": true,
+        "source": "Teller et al. 2019 Q. Res. Table 1 (LakeHindDates.csv)",
+        "note": "depth=33 cm",
+        "cal_median": 12653.0,
+        "cal_mean": 12644.9,
+        "cal_sd": 47.4,
+        "hpd95_lower": 12504.0,
+        "hpd95_upper": 12707.0,
+        "hpd95_span": 203.0,
+        "hpd95_intervals": [
+          [
+            12504.0,
+            12527.0
+          ],
+          [
+            12614.0,
+            12707.0
+          ]
+        ]
+      },
+      {
+        "site": "Bull Creek, OK",
+        "lab_id": "Bement2014-BC21",
+        "rcybp": 11070.0,
+        "sigma": 60.0,
+        "material": "soil organic carbon (nanodiamond peak)",
+        "is_wood_or_charcoal": true,
+        "source": "Bement et al. 2014 PNAS (transcribed in Holliday et al. 2023 Table 5)",
+        "note": "298-307 cmbs, BC21",
+        "cal_median": 12990.0,
+        "cal_mean": 12984.6,
+        "cal_sd": 71.1,
+        "hpd95_lower": 12840.0,
+        "hpd95_upper": 13098.0,
+        "hpd95_span": 258.0,
+        "hpd95_intervals": [
+          [
+            12840.0,
+            12870.0
+          ],
+          [
+            12878.0,
+            13098.0
+          ]
+        ]
+      },
+      {
+        "site": "Murray Springs, AZ",
+        "lab_id": "WS2007-MurraySprings",
+        "rcybp": 10885.0,
+        "sigma": 50.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Unit F1 Clovis hearth mean (n=8)",
+        "cal_median": 12801.0,
+        "cal_mean": 12806.8,
+        "cal_sd": 44.9,
+        "hpd95_lower": 12739.0,
+        "hpd95_upper": 12894.0,
+        "hpd95_span": 155.0,
+        "hpd95_intervals": [
+          [
+            12739.0,
+            12854.0
+          ],
+          [
+            12856.0,
+            12894.0
+          ]
+        ]
+      },
+      {
+        "site": "Sheriden Cave, OH",
+        "lab_id": "WS2007-SheridenCave",
+        "rcybp": 10920.0,
+        "sigma": 50.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Below Clovis/YDB artifacts (n=2)",
+        "cal_median": 12821.0,
+        "cal_mean": 12832.2,
+        "cal_sd": 58.5,
+        "hpd95_lower": 12743.0,
+        "hpd95_upper": 12964.0,
+        "hpd95_span": 221.0,
+        "hpd95_intervals": [
+          [
+            12743.0,
+            12930.0
+          ],
+          [
+            12943.0,
+            12964.0
+          ]
+        ]
+      },
+      {
+        "site": "Indian Creek, MT",
+        "lab_id": "WS2007-IndianCreek",
+        "rcybp": 10980.0,
+        "sigma": 110.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Clovis-age horizon (n=1)",
+        "cal_median": 12912.0,
+        "cal_mean": 12918.1,
+        "cal_sd": 100.8,
+        "hpd95_lower": 12749.0,
+        "hpd95_upper": 13091.0,
+        "hpd95_span": 342.0,
+        "hpd95_intervals": [
+          [
+            12749.0,
+            13091.0
+          ]
+        ]
+      },
+      {
+        "site": "Blackwater Draw, NM",
+        "lab_id": "WS2007-BlackwaterDraw",
+        "rcybp": 11300.0,
+        "sigma": 235.0,
+        "material": "charcoal/bone (Clovis/YDB)",
+        "is_wood_or_charcoal": true,
+        "source": "Waters & Stafford 2007 Science, Table 1",
+        "note": "Clovis / basal black mat (n=3)",
+        "cal_median": 13197.0,
+        "cal_mean": 13196.2,
+        "cal_sd": 220.4,
+        "hpd95_lower": 12756.0,
+        "hpd95_upper": 13595.0,
+        "hpd95_span": 839.0,
+        "hpd95_intervals": [
+          [
+            12756.0,
+            13533.0
+          ],
+          [
+            13536.0,
+            13595.0
+          ]
+        ]
+      }
+    ]
+  },
+  "pillar2_kennett32_audit": {
+    "n_total_sites": 32,
+    "n_modeled_sites": 23,
+    "n_unmodeled_sites": 9,
+    "n_direct_on_proxies_all": 10,
+    "n_direct_on_proxies_modeled": 10,
+    "n_tight_direct_le300": 4,
+    "frac_tight_direct_of_32": 0.125,
+    "ci95_width_median": 940.0,
+    "ci95_width_mean": 1594.3,
+    "ci95_width_min": 120.0,
+    "ci95_width_max": 9475.0,
+    "n_width_le_300": 4,
+    "n_width_gt_500": 16,
+    "n_width_gt_1000": 11,
+    "n_width_gt_2000": 7,
+    "total_dates_modeled_sites": 354,
+    "total_dates_accepted": 308,
+    "total_dates_rejected": 46,
+    "overall_rejection_pct": 13.0,
+    "tier_summary": {
+      "High": {
+        "n_sites": 9,
+        "n_direct": 6,
+        "median_ci95_width": 355.0,
+        "mean_ci95_width": 445.0,
+        "max_ci95_width": 1270.0,
+        "total_dates": 173,
+        "rejected_dates": 22,
+        "rejection_pct": 12.7
+      },
+      "Med": {
+        "n_sites": 8,
+        "n_direct": 2,
+        "median_ci95_width": 1067.5,
+        "mean_ci95_width": 1166.2,
+        "max_ci95_width": 2080.0,
+        "total_dates": 129,
+        "rejected_dates": 9,
+        "rejection_pct": 7.0
+      },
+      "Low": {
+        "n_sites": 6,
+        "n_direct": 2,
+        "median_ci95_width": 2650.0,
+        "mean_ci95_width": 3889.2,
+        "max_ci95_width": 9475.0,
+        "total_dates": 52,
+        "rejected_dates": 15,
+        "rejection_pct": 28.8
+      }
+    },
+    "W_50": {
+      "width_yr": 930.0,
+      "min_bp": 12260.0,
+      "max_bp": 13190.0
+    },
+    "W_80": {
+      "width_yr": 300.0,
+      "min_bp": 12630.0,
+      "max_bp": 12930.0
+    },
+    "W_90": {
+      "width_yr": 210.0,
+      "min_bp": 12710.0,
+      "max_bp": 12920.0
+    },
+    "placebo_checkpoints": {
+      "13800": {
+        "year_cal_bp": 13800,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      "13300": {
+        "year_cal_bp": 13300,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      "13050": {
+        "year_cal_bp": 13050,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      "12850": {
+        "year_cal_bp": 12850,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      "12800": {
+        "year_cal_bp": 12800,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      "12550": {
+        "year_cal_bp": 12550,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      "12300": {
+        "year_cal_bp": 12300,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      "11800": {
+        "year_cal_bp": 11800,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      }
+    },
+    "placebo_curve": [
+      {
+        "year_cal_bp": 11500,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11510,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11520,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11530,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11540,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11550,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11560,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11570,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11580,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11590,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11600,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11610,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11620,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11630,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11640,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11650,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11660,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11670,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11680,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11690,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11700,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11710,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11720,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11730,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11740,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11750,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11760,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11770,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11780,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11790,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11800,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11810,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11820,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11830,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11840,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11850,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11860,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11870,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11880,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11890,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11900,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11910,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11920,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11930,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11940,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11950,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11960,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11970,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11980,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 11990,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12000,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12010,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12020,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12030,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12040,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12050,
+        "n_all": 8,
+        "frac_all": 0.3478,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12060,
+        "n_all": 8,
+        "frac_all": 0.3478,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12070,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12080,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12090,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12100,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12110,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12120,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12130,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12140,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12150,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12160,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12170,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12180,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12190,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 12200,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12210,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12220,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12230,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12240,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12250,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12260,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12270,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12280,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12290,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12300,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12310,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12320,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12330,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12340,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12350,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12360,
+        "n_all": 12,
+        "frac_all": 0.5217,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 5,
+        "frac_med": 0.625,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12370,
+        "n_all": 13,
+        "frac_all": 0.5652,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12380,
+        "n_all": 13,
+        "frac_all": 0.5652,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12390,
+        "n_all": 13,
+        "frac_all": 0.5652,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12400,
+        "n_all": 13,
+        "frac_all": 0.5652,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12410,
+        "n_all": 13,
+        "frac_all": 0.5652,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12420,
+        "n_all": 13,
+        "frac_all": 0.5652,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12430,
+        "n_all": 13,
+        "frac_all": 0.5652,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12440,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12450,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12460,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12470,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12480,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12490,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12500,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12510,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12520,
+        "n_all": 15,
+        "frac_all": 0.6522,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12530,
+        "n_all": 15,
+        "frac_all": 0.6522,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12540,
+        "n_all": 15,
+        "frac_all": 0.6522,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12550,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12560,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12570,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12580,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12590,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12600,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12610,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12620,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12630,
+        "n_all": 19,
+        "frac_all": 0.8261,
+        "n_high": 5,
+        "frac_high": 0.5556,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12640,
+        "n_all": 19,
+        "frac_all": 0.8261,
+        "n_high": 5,
+        "frac_high": 0.5556,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12650,
+        "n_all": 19,
+        "frac_all": 0.8261,
+        "n_high": 5,
+        "frac_high": 0.5556,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12660,
+        "n_all": 19,
+        "frac_all": 0.8261,
+        "n_high": 5,
+        "frac_high": 0.5556,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12670,
+        "n_all": 19,
+        "frac_all": 0.8261,
+        "n_high": 5,
+        "frac_high": 0.5556,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12680,
+        "n_all": 19,
+        "frac_all": 0.8261,
+        "n_high": 5,
+        "frac_high": 0.5556,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12690,
+        "n_all": 19,
+        "frac_all": 0.8261,
+        "n_high": 5,
+        "frac_high": 0.5556,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12700,
+        "n_all": 20,
+        "frac_all": 0.8696,
+        "n_high": 6,
+        "frac_high": 0.6667,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12710,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12720,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12730,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12740,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12750,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12760,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12770,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12780,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12790,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12800,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12810,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12820,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12830,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12840,
+        "n_all": 23,
+        "frac_all": 1.0,
+        "n_high": 9,
+        "frac_high": 1.0,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12850,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12860,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12870,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12880,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12890,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12900,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12910,
+        "n_all": 22,
+        "frac_all": 0.9565,
+        "n_high": 8,
+        "frac_high": 0.8889,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12920,
+        "n_all": 21,
+        "frac_all": 0.913,
+        "n_high": 7,
+        "frac_high": 0.7778,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12930,
+        "n_all": 20,
+        "frac_all": 0.8696,
+        "n_high": 6,
+        "frac_high": 0.6667,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12940,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12950,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12960,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12970,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12980,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 12990,
+        "n_all": 18,
+        "frac_all": 0.7826,
+        "n_high": 4,
+        "frac_high": 0.4444,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13000,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13010,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13020,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13030,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13040,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13050,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13060,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13070,
+        "n_all": 17,
+        "frac_all": 0.7391,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 8,
+        "frac_med": 1.0,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13080,
+        "n_all": 16,
+        "frac_all": 0.6957,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 7,
+        "frac_med": 0.875,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13090,
+        "n_all": 15,
+        "frac_all": 0.6522,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13100,
+        "n_all": 15,
+        "frac_all": 0.6522,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13110,
+        "n_all": 15,
+        "frac_all": 0.6522,
+        "n_high": 3,
+        "frac_high": 0.3333,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13120,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13130,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13140,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13150,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13160,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13170,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13180,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13190,
+        "n_all": 14,
+        "frac_all": 0.6087,
+        "n_high": 2,
+        "frac_high": 0.2222,
+        "n_med": 6,
+        "frac_med": 0.75,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13200,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13210,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13220,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13230,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13240,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13250,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13260,
+        "n_all": 11,
+        "frac_all": 0.4783,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 4,
+        "frac_med": 0.5,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13270,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13280,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13290,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13300,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13310,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13320,
+        "n_all": 10,
+        "frac_all": 0.4348,
+        "n_high": 1,
+        "frac_high": 0.1111,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13330,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13340,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13350,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13360,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13370,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13380,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13390,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13400,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13410,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13420,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13430,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13440,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13450,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13460,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13470,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13480,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13490,
+        "n_all": 9,
+        "frac_all": 0.3913,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 3,
+        "frac_med": 0.375,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13500,
+        "n_all": 8,
+        "frac_all": 0.3478,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13510,
+        "n_all": 8,
+        "frac_all": 0.3478,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 2,
+        "frac_med": 0.25,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13520,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13530,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13540,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13550,
+        "n_all": 7,
+        "frac_all": 0.3043,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 6,
+        "frac_low": 1.0
+      },
+      {
+        "year_cal_bp": 13560,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 13570,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 13580,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 13590,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 13600,
+        "n_all": 6,
+        "frac_all": 0.2609,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 5,
+        "frac_low": 0.8333
+      },
+      {
+        "year_cal_bp": 13610,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13620,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13630,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13640,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13650,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13660,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13670,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13680,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13690,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13700,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13710,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13720,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13730,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13740,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13750,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13760,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13770,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13780,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13790,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13800,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13810,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13820,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13830,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13840,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13850,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13860,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13870,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13880,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13890,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13900,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13910,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13920,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13930,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13940,
+        "n_all": 5,
+        "frac_all": 0.2174,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 1,
+        "frac_med": 0.125,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13950,
+        "n_all": 4,
+        "frac_all": 0.1739,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13960,
+        "n_all": 4,
+        "frac_all": 0.1739,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13970,
+        "n_all": 4,
+        "frac_all": 0.1739,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13980,
+        "n_all": 4,
+        "frac_all": 0.1739,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 13990,
+        "n_all": 4,
+        "frac_all": 0.1739,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 4,
+        "frac_low": 0.6667
+      },
+      {
+        "year_cal_bp": 14000,
+        "n_all": 4,
+        "frac_all": 0.1739,
+        "n_high": 0,
+        "frac_high": 0.0,
+        "n_med": 0,
+        "frac_med": 0.0,
+        "n_low": 4,
+        "frac_low": 0.6667
+      }
+    ],
+    "sites": [
+      {
+        "site": "Abu Hureyra",
+        "modeled_age": 12825.0,
+        "sigma_68": 55.0,
+        "ci95_upper": 12935.0,
+        "ci95_lower": 12705.0,
+        "n_total": 37,
+        "n_rejected": 8,
+        "n_accepted": 29,
+        "quality": "High",
+        "direct_on_proxies": true,
+        "ci95_width": 230.0
+      },
+      {
+        "site": "Arlington Cyn",
+        "modeled_age": 12805.0,
+        "sigma_68": 55.0,
+        "ci95_upper": 12925.0,
+        "ci95_lower": 12695.0,
+        "n_total": 16,
+        "n_rejected": 0,
+        "n_accepted": 16,
+        "quality": "High",
+        "direct_on_proxies": true,
+        "ci95_width": 230.0
+      },
+      {
+        "site": "Aalsterhut",
+        "modeled_age": 12780.0,
+        "sigma_68": 35.0,
+        "ci95_upper": 12845.0,
+        "ci95_lower": 12725.0,
+        "n_total": 14,
+        "n_rejected": 0,
+        "n_accepted": 14,
+        "quality": "High",
+        "direct_on_proxies": true,
+        "ci95_width": 120.0
+      },
+      {
+        "site": "Big Eddy",
+        "modeled_age": 12770.0,
+        "sigma_68": 85.0,
+        "ci95_upper": 12935.0,
+        "ci95_lower": 12580.0,
+        "n_total": 30,
+        "n_rejected": 2,
+        "n_accepted": 28,
+        "quality": "High",
+        "direct_on_proxies": false,
+        "ci95_width": 355.0
+      },
+      {
+        "site": "Bull Creek",
+        "modeled_age": 12840.0,
+        "sigma_68": 75.0,
+        "ci95_upper": 12995.0,
+        "ci95_lower": 12710.0,
+        "n_total": 12,
+        "n_rejected": 0,
+        "n_accepted": 12,
+        "quality": "High",
+        "direct_on_proxies": true,
+        "ci95_width": 285.0
+      },
+      {
+        "site": "Daisy Cave",
+        "modeled_age": 12730.0,
+        "sigma_68": 320.0,
+        "ci95_upper": 13320.0,
+        "ci95_lower": 12050.0,
+        "n_total": 20,
+        "n_rejected": 10,
+        "n_accepted": 10,
+        "quality": "High",
+        "direct_on_proxies": false,
+        "ci95_width": 1270.0
+      },
+      {
+        "site": "Lake Hind",
+        "modeled_age": 12745.0,
+        "sigma_68": 180.0,
+        "ci95_upper": 13190.0,
+        "ci95_lower": 12550.0,
+        "n_total": 12,
+        "n_rejected": 1,
+        "n_accepted": 11,
+        "quality": "High",
+        "direct_on_proxies": true,
+        "ci95_width": 640.0
+      },
+      {
+        "site": "Lingen",
+        "modeled_age": 12735.0,
+        "sigma_68": 85.0,
+        "ci95_upper": 12910.0,
+        "ci95_lower": 12520.0,
+        "n_total": 2,
+        "n_rejected": 0,
+        "n_accepted": 2,
+        "quality": "High",
+        "direct_on_proxies": true,
+        "ci95_width": 390.0
+      },
+      {
+        "site": "Sheriden Cave",
+        "modeled_age": 12840.0,
+        "sigma_68": 120.0,
+        "ci95_upper": 13110.0,
+        "ci95_lower": 12625.0,
+        "n_total": 30,
+        "n_rejected": 1,
+        "n_accepted": 29,
+        "quality": "High",
+        "direct_on_proxies": false,
+        "ci95_width": 485.0
+      },
+      {
+        "site": "Barber Creek",
+        "modeled_age": 12865.0,
+        "sigma_68": 535.0,
+        "ci95_upper": 13945.0,
+        "ci95_lower": 11865.0,
+        "n_total": 14,
+        "n_rejected": 1,
+        "n_accepted": 13,
+        "quality": "Med",
+        "direct_on_proxies": true,
+        "ci95_width": 2080.0
+      },
+      {
+        "site": "Blackwater",
+        "modeled_age": 12775.0,
+        "sigma_68": 365.0,
+        "ci95_upper": 13510.0,
+        "ci95_lower": 12090.0,
+        "n_total": 29,
+        "n_rejected": 1,
+        "n_accepted": 28,
+        "quality": "Med",
+        "direct_on_proxies": false,
+        "ci95_width": 1420.0
+      },
+      {
+        "site": "Indian Creek",
+        "modeled_age": 12750.0,
+        "sigma_68": 425.0,
+        "ci95_upper": 13495.0,
+        "ci95_lower": 11805.0,
+        "n_total": 8,
+        "n_rejected": 0,
+        "n_accepted": 8,
+        "quality": "Med",
+        "direct_on_proxies": false,
+        "ci95_width": 1690.0
+      },
+      {
+        "site": "Lindenmeier",
+        "modeled_age": 12775.0,
+        "sigma_68": 180.0,
+        "ci95_upper": 13195.0,
+        "ci95_lower": 12440.0,
+        "n_total": 11,
+        "n_rejected": 1,
+        "n_accepted": 10,
+        "quality": "Med",
+        "direct_on_proxies": false,
+        "ci95_width": 755.0
+      },
+      {
+        "site": "Murray Spgs",
+        "modeled_age": 12750.0,
+        "sigma_68": 235.0,
+        "ci95_upper": 13195.0,
+        "ci95_lower": 12255.0,
+        "n_total": 33,
+        "n_rejected": 6,
+        "n_accepted": 27,
+        "quality": "Med",
+        "direct_on_proxies": false,
+        "ci95_width": 940.0
+      },
+      {
+        "site": "Santa Maira",
+        "modeled_age": 12785.0,
+        "sigma_68": 295.0,
+        "ci95_upper": 13265.0,
+        "ci95_lower": 12070.0,
+        "n_total": 11,
+        "n_rejected": 0,
+        "n_accepted": 11,
+        "quality": "Med",
+        "direct_on_proxies": false,
+        "ci95_width": 1195.0
+      },
+      {
+        "site": "Talega",
+        "modeled_age": 12860.0,
+        "sigma_68": 150.0,
+        "ci95_upper": 13075.0,
+        "ci95_lower": 12545.0,
+        "n_total": 12,
+        "n_rejected": 0,
+        "n_accepted": 12,
+        "quality": "Med",
+        "direct_on_proxies": true,
+        "ci95_width": 530.0
+      },
+      {
+        "site": "Topper",
+        "modeled_age": 12785.0,
+        "sigma_68": 185.0,
+        "ci95_upper": 13085.0,
+        "ci95_lower": 12365.0,
+        "n_total": 11,
+        "n_rejected": 0,
+        "n_accepted": 11,
+        "quality": "Med",
+        "direct_on_proxies": false,
+        "ci95_width": 720.0
+      },
+      {
+        "site": "Blackville",
+        "modeled_age": 12820.0,
+        "sigma_68": 1080.0,
+        "ci95_upper": 15015.0,
+        "ci95_lower": 10705.0,
+        "n_total": 5,
+        "n_rejected": 2,
+        "n_accepted": 3,
+        "quality": "Low",
+        "direct_on_proxies": true,
+        "ci95_width": 4310.0
+      },
+      {
+        "site": "Lake Cuitzeo",
+        "modeled_age": 12850.0,
+        "sigma_68": 570.0,
+        "ci95_upper": 14265.0,
+        "ci95_lower": 12195.0,
+        "n_total": 22,
+        "n_rejected": 11,
+        "n_accepted": 11,
+        "quality": "Low",
+        "direct_on_proxies": false,
+        "ci95_width": 2070.0
+      },
+      {
+        "site": "Lommel",
+        "modeled_age": 12735.0,
+        "sigma_68": 790.0,
+        "ci95_upper": 14410.0,
+        "ci95_lower": 11325.0,
+        "n_total": 17,
+        "n_rejected": 1,
+        "n_accepted": 16,
+        "quality": "Low",
+        "direct_on_proxies": false,
+        "ci95_width": 3085.0
+      },
+      {
+        "site": "Melrose",
+        "modeled_age": 12255.0,
+        "sigma_68": 2405.0,
+        "ci95_upper": 17185.0,
+        "ci95_lower": 7710.0,
+        "n_total": 3,
+        "n_rejected": 1,
+        "n_accepted": 2,
+        "quality": "Low",
+        "direct_on_proxies": true,
+        "ci95_width": 9475.0
+      },
+      {
+        "site": "Mucunuque",
+        "modeled_age": 12845.0,
+        "sigma_68": 630.0,
+        "ci95_upper": 13550.0,
+        "ci95_lower": 11335.0,
+        "n_total": 3,
+        "n_rejected": 0,
+        "n_accepted": 3,
+        "quality": "Low",
+        "direct_on_proxies": false,
+        "ci95_width": 2215.0
+      },
+      {
+        "site": "Ommen",
+        "modeled_age": 12750.0,
+        "sigma_68": 560.0,
+        "ci95_upper": 13605.0,
+        "ci95_lower": 11425.0,
+        "n_total": 2,
+        "n_rejected": 0,
+        "n_accepted": 2,
+        "quality": "Low",
+        "direct_on_proxies": false,
+        "ci95_width": 2180.0
+      },
+      {
+        "site": "Chobot",
+        "modeled_age": null,
+        "sigma_68": null,
+        "ci95_upper": null,
+        "ci95_lower": null,
+        "n_total": 3,
+        "n_rejected": 0,
+        "n_accepted": 0,
+        "quality": "Unmodeled",
+        "direct_on_proxies": false,
+        "ci95_width": null
+      },
+      {
+        "site": "Gainey",
+        "modeled_age": null,
+        "sigma_68": null,
+        "ci95_upper": null,
+        "ci95_lower": null,
+        "n_total": 5,
+        "n_rejected": 0,
+        "n_accepted": 0,
+        "quality": "Unmodeled",
+        "direct_on_proxies": false,
+        "ci95_width": null
+      },
+      {
+        "site": "Kangerlussuaq",
+        "modeled_age": null,
+        "sigma_68": null,
+        "ci95_upper": null,
+        "ci95_lower": null,
+        "n_total": 2,
+        "n_rejected": 0,
+        "n_accepted": 0,
+        "quality": "Unmodeled",
+        "direct_on_proxies": false,
+        "ci95_width": null
+      },
+      {
+        "site": "Kimbel Bay",
+        "modeled_age": null,
+        "sigma_68": null,
+        "ci95_upper": null,
+        "ci95_lower": null,
+        "n_total": 7,
+        "n_rejected": 0,
+        "n_accepted": 0,
+        "quality": "Unmodeled",
+        "direct_on_proxies": false,
+        "ci95_width": null
+      },
+      {
+        "site": "Morley",
+        "modeled_age": null,
+        "sigma_68": null,
+        "ci95_upper": null,
+        "ci95_lower": null,
+        "n_total": 0,
+        "n_rejected": 0,
+        "n_accepted": 0,
+        "quality": "Unmodeled",
+        "direct_on_proxies": false,
+        "ci95_width": null
+      },
+      {
+        "site": "Mt.Viso",
+        "modeled_age": null,
+        "sigma_68": null,
+        "ci95_upper": null,
+        "ci95_lower": null,
+        "n_total": 0,
+        "n_rejected": 0,
+        "n_accepted": 0,
+        "quality": "Unmodeled",
+        "direct_on_proxies": false,
+        "ci95_width": null
+      },
+      {
+        "site": "Newtonville",
+        "modeled_age": null,
+        "sigma_68": null,
+        "ci95_upper": null,
+        "ci95_lower": null,
+        "n_total": 2,
+        "n_rejected": 0,
+        "n_accepted": 0,
+        "quality": "Unmodeled",
+        "direct_on_proxies": false,
+        "ci95_width": null
+      },
+      {
+        "site": "Paw Paw Cove",
+        "modeled_age": null,
+        "sigma_68": null,
+        "ci95_upper": null,
+        "ci95_lower": null,
+        "n_total": 1,
+        "n_rejected": 0,
+        "n_accepted": 0,
+        "quality": "Unmodeled",
+        "direct_on_proxies": false,
+        "ci95_width": null
+      },
+      {
+        "site": "Watcombe",
+        "modeled_age": null,
+        "sigma_68": null,
+        "ci95_upper": null,
+        "ci95_lower": null,
+        "n_total": 2,
+        "n_rejected": 0,
+        "n_accepted": 0,
+        "quality": "Unmodeled",
+        "direct_on_proxies": false,
+        "ci95_width": null
+      }
+    ]
+  }
+}

@@ -166,10 +166,10 @@ def bin_words(start, width):
 
 def younger_dryas():
     tiles("topic-younger-dryas", [
-        ("10", "studies, each with its test fixed before the data were looked at", False),
+        ("12", "studies, each with its test fixed before the data were looked at", False),
         ("0", "found the sharp, one-off mark that a strike from the sky should leave", False),
         ("4", "eruptions, two of them very large, in the 150 years before the cold: among the heaviest runs in 51,000 years", False),
-        ("Still open", "exact terrestrial source of Hall's Cave osmium drops and GISP2 ice platinum, and what drove the drawn-out megafauna loss", True)])
+        ("Still open", "exact terrestrial source of Hall's Cave osmium and GISP2 ice platinum, and untested sediment spherules and shocked quartz", True)])
     scorecard("topic-younger-dryas", "scorecard", "What each study tested and found",
               ["The mark", "If a comet did it", "What the record shows"], [
         (43, "ice-core-fire", "Smoke in Greenland's ice", "A burst of fire chemicals at the moment the cold begins.",
@@ -193,12 +193,18 @@ def younger_dryas():
         (100, "tunguska-calibration", "What one airburst leaves", "The one known airburst, Tunguska in 1908, marks the ice in the way the Younger Dryas ice is marked.",
          "Across Greenland 1908 is an ordinary year for ammonium. At some sites there is a sharp, sooty spike, at others nothing. The Younger Dryas century has a steady rise and few spikes.",
          "Not found", "A spike where it shows, not a steady rise", "no"),
+        (114, "yd-neem-spikes", "Fewer fire spikes in a second core", "Repeated airburst fires fill a second Greenland core (NEEM) with short smoke plumes, not a smooth baseline rise.",
+         "Confirms NGRIP: steady yearly median ammonium jumps 2.58× (highest of 28 stretches, 102% of rise), >5× fire spikes fall nearly fourfold (8 vs. 31, p = 0.00032), and denominator-free absolute and snowfall-flux plumes remain ordinary.",
+         "Not found", "Steady baseline surge; no plume burst", "no"),
         (103, "taurid-swarm", "A swarm in the Taurid stream", "The stream the Earth crosses each autumn still carries a swarm of large fragments of the broken comet.",
          "No sign of one among today's asteroids or in 32 years of airbursts seen by satellite. Seventeen large asteroids do line up with the comet, as was known in 2010; smaller ones do not.",
          "Not found", "No swarm of large fragments today", "no"),
         (116, "yd-megafauna-timing", "The great animals", "North America's Ice Age giants hold steady until 12,850 years ago and vanish abruptly at the strike.",
          "Dung spores fell past half their peak a millennium early in 9 of 11 lake cores. Direct bone dates drop around 12,800–12,600 BP, yet 10 modern AMS collagen dates prove mammoths, mastodons, a giant beaver and a short-faced bear lived centuries after.",
          "Not found", "Drawn-out and staggered across the cold", "no"),
+        (113, "ydb-site-synchrony", "Are the impact layers the same age?", "Direct radiocarbon dates from claimed impact layers lock onto one calendar year, like a real single-year eruption.",
+         "Laacher See positive control passes cleanly (T = 0.42, 5/5 overlap). Unfiltered direct dates across 9 YDB sites scatter 544 yr (T = 631, p = 0.0005), though an old-wood-mitigated subset passes a 50-yr old-wood model; only 4 of 32 claimed sites have both a direct date and a ≤300-yr interval.",
+         "Unclear", "Raw dates fail; most sites underconstrained", "open"),
         (40, "younger-dryas-crash", "A crash in human numbers", "Dated traces of people thin out at once, above all in North America.",
          "No drop on three continents. But radiocarbon dating is at its most distorted in exactly those centuries.",
          "Not found", "No sign, though the test was blurred", "no")])

@@ -1,0 +1,33 @@
+site,quality,direct_on_proxies,modeled_age,sigma_68,ci95_lower,ci95_upper,ci95_width,n_total,n_rejected,n_accepted
+Abu Hureyra,High,True,12825.0,55.0,12705.0,12935.0,230.0,37,8,29
+Arlington Cyn,High,True,12805.0,55.0,12695.0,12925.0,230.0,16,0,16
+Aalsterhut,High,True,12780.0,35.0,12725.0,12845.0,120.0,14,0,14
+Big Eddy,High,False,12770.0,85.0,12580.0,12935.0,355.0,30,2,28
+Bull Creek,High,True,12840.0,75.0,12710.0,12995.0,285.0,12,0,12
+Daisy Cave,High,False,12730.0,320.0,12050.0,13320.0,1270.0,20,10,10
+Lake Hind,High,True,12745.0,180.0,12550.0,13190.0,640.0,12,1,11
+Lingen,High,True,12735.0,85.0,12520.0,12910.0,390.0,2,0,2
+Sheriden Cave,High,False,12840.0,120.0,12625.0,13110.0,485.0,30,1,29
+Barber Creek,Med,True,12865.0,535.0,11865.0,13945.0,2080.0,14,1,13
+Blackwater,Med,False,12775.0,365.0,12090.0,13510.0,1420.0,29,1,28
+Indian Creek,Med,False,12750.0,425.0,11805.0,13495.0,1690.0,8,0,8
+Lindenmeier,Med,False,12775.0,180.0,12440.0,13195.0,755.0,11,1,10
+Murray Spgs,Med,False,12750.0,235.0,12255.0,13195.0,940.0,33,6,27
+Santa Maira,Med,False,12785.0,295.0,12070.0,13265.0,1195.0,11,0,11
+Talega,Med,True,12860.0,150.0,12545.0,13075.0,530.0,12,0,12
+Topper,Med,False,12785.0,185.0,12365.0,13085.0,720.0,11,0,11
+Blackville,Low,True,12820.0,1080.0,10705.0,15015.0,4310.0,5,2,3
+Lake Cuitzeo,Low,False,12850.0,570.0,12195.0,14265.0,2070.0,22,11,11
+Lommel,Low,False,12735.0,790.0,11325.0,14410.0,3085.0,17,1,16
+Melrose,Low,True,12255.0,2405.0,7710.0,17185.0,9475.0,3,1,2
+Mucunuque,Low,False,12845.0,630.0,11335.0,13550.0,2215.0,3,0,3
+Ommen,Low,False,12750.0,560.0,11425.0,13605.0,2180.0,2,0,2
+Chobot,Unmodeled,False,,,,,,3,0,0
+Gainey,Unmodeled,False,,,,,,5,0,0
+Kangerlussuaq,Unmodeled,False,,,,,,2,0,0
+Kimbel Bay,Unmodeled,False,,,,,,7,0,0
+Morley,Unmodeled,False,,,,,,0,0,0
+Mt.Viso,Unmodeled,False,,,,,,0,0,0
+Newtonville,Unmodeled,False,,,,,,2,0,0
+Paw Paw Cove,Unmodeled,False,,,,,,1,0,0
+Watcombe,Unmodeled,False,,,,,,2,0,0

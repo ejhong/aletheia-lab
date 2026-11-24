@@ -1,0 +1,116 @@
+<figure class="fig" id="ydb-cal-fig" aria-label="IntCal20 calibrated 95.4% HPD intervals for Laacher See Tephra and nine direct-dated YDB sites">
+<style>
+#ydb-cal-fig .cal-controls { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin:0 0 .85rem; }
+#ydb-cal-fig .cal-btn { font:500 11.5px/1.2 var(--mono); letter-spacing:.04em; padding:.42rem .75rem; border:1px solid var(--line); background:var(--panel); color:var(--ink); cursor:pointer; border-radius:2px; }
+#ydb-cal-fig .cal-btn[aria-pressed="true"] { background:var(--copper); border-color:var(--copper); color:var(--paper); }
+#ydb-cal-fig .cal-stat { margin-left:auto; font:400 11.5px/1.4 var(--mono); color:var(--ink-soft); }
+#ydb-cal-fig .cal-tip { min-height:1.4rem; margin:.4rem 0 0; font:400 12px/1.4 var(--mono); color:var(--ink-soft); }
+</style>
+<div class="cal-controls">
+  <button type="button" class="cal-btn" data-mode="primary" aria-pressed="true">Primary direct-14C (9 sites)</button>
+  <button type="button" class="cal-btn" data-mode="favorable" aria-pressed="false">Old-wood-mitigated (9 sites)</button>
+  <span class="cal-stat" id="ydb-cal-stat"></span>
+</div>
+<div class="fig-scroll">
+  <svg id="ydb-cal-svg" class="chart" viewBox="0 0 740 470" role="img" aria-label="Calibrated age intervals on IntCal20 comparing Laacher See positive control with nine YDB sites"></svg>
+</div>
+<p class="cal-tip" id="ydb-cal-tip">Hover or focus any site bar for uncalibrated 14C age, IntCal20 median, and 95.4% HPD interval.</p>
+<figcaption>Unmodeled IntCal20 calibration (95.4% HPD bars and median markers) for the real single-year Laacher See volcanic eruption positive control (top, green; 5 localities up to 335 km apart) vs. nine directly radiocarbon-dated YDB sites (bottom, copper). Toggle between the unfiltered primary horizon dates and Kennett et al.'s old-wood-mitigated selection. The shaded vertical band marks the revised IntCal20 YDB window (12,875–12,775 cal BP); the thin green line marks the Laacher See eruption (13,006 cal BP).</figcaption>
+<script>
+(function() {
+  const DATA = {"lst": [{"site": "Krumpa", "lab_id": "Krumpa_mean_n2", "rcybp": 11056.6, "sigma": 15.9, "material": "wood/poplar/bark", "is_wood_or_charcoal": true, "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1", "note": "weighted locality mean (n=2)", "cal_median": 12999.0, "cal_mean": 12996.9, "cal_sd": 47.9, "hpd95_lower": 12915.0, "hpd95_upper": 13077.0, "hpd95_span": 162.0, "hpd95_intervals": [[12915.0, 13077.0]]}, {"site": "Miesenheim 2", "lab_id": "Miesenheim2_mean_n2", "rcybp": 11060.0, "sigma": 155.6, "material": "wood/poplar/bark", "is_wood_or_charcoal": true, "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1", "note": "weighted locality mean (n=2)", "cal_median": 12972.0, "cal_mean": 12974.8, "cal_sd": 132.4, "hpd95_lower": 12736.0, "hpd95_upper": 13236.0, "hpd95_span": 500.0, "hpd95_intervals": [[12736.0, 13191.0], [13199.0, 13236.0]]}, {"site": "Near Laacher See monastery", "lab_id": "NearLaacherSeemonastery_mean_n9", "rcybp": 11059.7, "sigma": 7.2, "material": "wood/poplar/bark", "is_wood_or_charcoal": true, "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1", "note": "weighted locality mean (n=9)", "cal_median": 13005.0, "cal_mean": 13001.9, "cal_sd": 45.1, "hpd95_lower": 12923.0, "hpd95_upper": 13076.0, "hpd95_span": 153.0, "hpd95_intervals": [[12923.0, 13076.0]]}, {"site": "Miesenheim 4", "lab_id": "Miesenheim4_mean_n1", "rcybp": 11040.0, "sigma": 60.0, "material": "wood/poplar/bark", "is_wood_or_charcoal": true, "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1", "note": "weighted locality mean (n=1)", "cal_median": 12967.0, "cal_mean": 12963.7, "cal_sd": 75.9, "hpd95_lower": 12831.0, "hpd95_upper": 13093.0, "hpd95_span": 262.0, "hpd95_intervals": [[12831.0, 13093.0]]}, {"site": "Kruft", "lab_id": "Kruft_mean_n2", "rcybp": 11068.8, "sigma": 17.3, "material": "wood/poplar/bark", "is_wood_or_charcoal": true, "source": "Reinig et al. 2023 Nature Reply, Extended Data Table 1", "note": "weighted locality mean (n=2)", "cal_median": 13011.0, "cal_mean": 13006.7, "cal_sd": 47.2, "hpd95_lower": 12922.0, "hpd95_upper": 13083.0, "hpd95_span": 161.0, "hpd95_intervals": [[12922.0, 13083.0]]}], "lst_meta": {"T": 0.42, "pM0": 0.9975, "pM1": 0.9995, "sd": 20.0, "ov_n": 5, "ov_yr": [12923.0, 13076.0]}, "primary": [{"site": "Abu Hureyra, Syria", "lab_id": "UCIAMS-105429", "rcybp": 11070.0, "sigma": 40.0, "material": "charcoal (Level 445 meltglass peak)", "is_wood_or_charcoal": true, "source": "Moore et al. 2020 Sci. Rep. SI Table S1 (Bunch et al. 2012)", "note": "405 cmbs, Level 445", "cal_median": 13000.0, "cal_mean": 12995.5, "cal_sd": 58.5, "hpd95_lower": 12895.0, "hpd95_upper": 13094.0, "hpd95_span": 199.0, "hpd95_intervals": [[12895.0, 13094.0]]}, {"site": "Arlington Canyon, CA", "lab_id": "AC003_YDB_mean_n12", "rcybp": 11138.2, "sigma": 8.4, "material": "wood/charcoal (392-503 cmbs)", "is_wood_or_charcoal": true, "source": "Kennett et al. 2008 QSR, Table 4", "note": "Inverse-variance mean of 12 YDB dates", "cal_median": 13089.0, "cal_mean": 13088.0, "cal_sd": 11.1, "hpd95_lower": 13073.0, "hpd95_upper": 13102.0, "hpd95_span": 29.0, "hpd95_intervals": [[13073.0, 13102.0]]}, {"site": "Aalsterhut, Netherlands", "lab_id": "Usselo_mean_n14", "rcybp": 10846.6, "sigma": 14.2, "material": "charcoal (Usselo horizon)", "is_wood_or_charcoal": true, "source": "van Hoesel et al. 2012 PNAS, Table 1", "note": "Inverse-variance mean of 14 Usselo charcoal dates", "cal_median": 12756.0, "cal_mean": 12760.2, "cal_sd": 17.3, "hpd95_lower": 12738.0, "hpd95_upper": 12822.0, "hpd95_span": 84.0, "hpd95_intervals": [[12738.0, 12774.0], [12797.0, 12822.0]]}, {"site": "Lake Hind, Manitoba", "lab_id": "UCIAMS-29317", "rcybp": 10610.0, "sigma": 25.0, "material": "plant/charcoal (YDB horizon)", "is_wood_or_charcoal": true, "source": "Teller et al. 2019 Q. Res. Table 1 (LakeHindDates.csv)", "note": "depth=33 cm", "cal_median": 12653.0, "cal_mean": 12644.9, "cal_sd": 47.4, "hpd95_lower": 12504.0, "hpd95_upper": 12707.0, "hpd95_span": 203.0, "hpd95_intervals": [[12504.0, 12527.0], [12614.0, 12707.0]]}, {"site": "Bull Creek, OK", "lab_id": "Bement2014-BC21", "rcybp": 11070.0, "sigma": 60.0, "material": "soil organic carbon (nanodiamond peak)", "is_wood_or_charcoal": true, "source": "Bement et al. 2014 PNAS (transcribed in Holliday et al. 2023 Table 5)", "note": "298-307 cmbs, BC21", "cal_median": 12990.0, "cal_mean": 12984.6, "cal_sd": 71.1, "hpd95_lower": 12840.0, "hpd95_upper": 13098.0, "hpd95_span": 258.0, "hpd95_intervals": [[12840.0, 12870.0], [12878.0, 13098.0]]}, {"site": "Murray Springs, AZ", "lab_id": "WS2007-MurraySprings", "rcybp": 10885.0, "sigma": 50.0, "material": "charcoal/bone (Clovis/YDB)", "is_wood_or_charcoal": true, "source": "Waters & Stafford 2007 Science, Table 1", "note": "Unit F1 Clovis hearth mean (n=8)", "cal_median": 12801.0, "cal_mean": 12806.8, "cal_sd": 44.9, "hpd95_lower": 12739.0, "hpd95_upper": 12894.0, "hpd95_span": 155.0, "hpd95_intervals": [[12739.0, 12854.0], [12856.0, 12894.0]]}, {"site": "Sheriden Cave, OH", "lab_id": "WS2007-SheridenCave", "rcybp": 10920.0, "sigma": 50.0, "material": "charcoal/bone (Clovis/YDB)", "is_wood_or_charcoal": true, "source": "Waters & Stafford 2007 Science, Table 1", "note": "Below Clovis/YDB artifacts (n=2)", "cal_median": 12821.0, "cal_mean": 12832.2, "cal_sd": 58.5, "hpd95_lower": 12743.0, "hpd95_upper": 12964.0, "hpd95_span": 221.0, "hpd95_intervals": [[12743.0, 12930.0], [12943.0, 12964.0]]}, {"site": "Indian Creek, MT", "lab_id": "WS2007-IndianCreek", "rcybp": 10980.0, "sigma": 110.0, "material": "charcoal/bone (Clovis/YDB)", "is_wood_or_charcoal": true, "source": "Waters & Stafford 2007 Science, Table 1", "note": "Clovis-age horizon (n=1)", "cal_median": 12912.0, "cal_mean": 12918.1, "cal_sd": 100.8, "hpd95_lower": 12749.0, "hpd95_upper": 13091.0, "hpd95_span": 342.0, "hpd95_intervals": [[12749.0, 13091.0]]}, {"site": "Blackwater Draw, NM", "lab_id": "WS2007-BlackwaterDraw", "rcybp": 11300.0, "sigma": 235.0, "material": "charcoal/bone (Clovis/YDB)", "is_wood_or_charcoal": true, "source": "Waters & Stafford 2007 Science, Table 1", "note": "Clovis / basal black mat (n=3)", "cal_median": 13197.0, "cal_mean": 13196.2, "cal_sd": 220.4, "hpd95_lower": 12756.0, "hpd95_upper": 13595.0, "hpd95_span": 839.0, "hpd95_intervals": [[12756.0, 13533.0], [13536.0, 13595.0]]}], "primary_meta": {"T": 630.62, "pM0": 0.0005, "pM1": 0.0015, "sd": 172.6, "ov_n": 5, "ov_yr": [12756.0, 13091.0]}, "favorable": [{"site": "Abu Hureyra, Syria", "lab_id": "UCIAMS-105429", "rcybp": 11070.0, "sigma": 40.0, "material": "charcoal (Level 445 meltglass peak)", "is_wood_or_charcoal": true, "source": "Moore et al. 2020 Sci. Rep. SI Table S1 (Bunch et al. 2012)", "note": "405 cmbs, Level 445", "cal_median": 13000.0, "cal_mean": 12995.5, "cal_sd": 58.5, "hpd95_lower": 12895.0, "hpd95_upper": 13094.0, "hpd95_span": 199.0, "hpd95_intervals": [[12895.0, 13094.0]]}, {"site": "Arlington Canyon, CA", "lab_id": "Beta-161032", "rcybp": 10860.0, "sigma": 70.0, "material": "Blue-gray mud/silt Wood (yellow pine-Diploxylon)d", "is_wood_or_charcoal": true, "source": "Kennett et al. 2008 QSR, Table 4", "note": "480-485 cmbs", "cal_median": 12798.0, "cal_mean": 12808.1, "cal_sd": 60.8, "hpd95_lower": 12715.0, "hpd95_upper": 12959.0, "hpd95_span": 244.0, "hpd95_intervals": [[12715.0, 12927.0], [12949.0, 12959.0]]}, {"site": "Aalsterhut, Netherlands", "lab_id": "Usselo_basal_mean_n3", "rcybp": 10898.7, "sigma": 38.2, "material": "charcoal (basal 4.0-5.5 cm ND layer)", "is_wood_or_charcoal": true, "source": "van Hoesel et al. 2012 Table 1 (Kennett 2015 subset)", "note": "Inverse-variance mean of GrA-49515, GrA-49509, GrA-49524", "cal_median": 12802.0, "cal_mean": 12806.2, "cal_sd": 37.1, "hpd95_lower": 12748.0, "hpd95_upper": 12890.0, "hpd95_span": 142.0, "hpd95_intervals": [[12748.0, 12847.0], [12859.0, 12890.0]]}, {"site": "Lake Hind, Manitoba", "lab_id": "PSUAMS-1572", "rcybp": 10850.0, "sigma": 35.0, "material": "plant/charcoal (YDB horizon)", "is_wood_or_charcoal": true, "source": "Teller et al. 2019 Q. Res. Table 1 (LakeHindDates.csv)", "note": "depth=32 cm", "cal_median": 12769.0, "cal_mean": 12778.2, "cal_sd": 29.3, "hpd95_lower": 12736.0, "hpd95_upper": 12830.0, "hpd95_span": 94.0, "hpd95_intervals": [[12736.0, 12830.0]]}, {"site": "Bull Creek, OK", "lab_id": "Bement2014-BC21", "rcybp": 11070.0, "sigma": 60.0, "material": "soil organic carbon (nanodiamond peak)", "is_wood_or_charcoal": true, "source": "Bement et al. 2014 PNAS (transcribed in Holliday et al. 2023 Table 5)", "note": "298-307 cmbs, BC21", "cal_median": 12990.0, "cal_mean": 12984.6, "cal_sd": 71.1, "hpd95_lower": 12840.0, "hpd95_upper": 13098.0, "hpd95_span": 258.0, "hpd95_intervals": [[12840.0, 12870.0], [12878.0, 13098.0]]}, {"site": "Murray Springs, AZ", "lab_id": "WS2007-MurraySprings", "rcybp": 10885.0, "sigma": 50.0, "material": "charcoal/bone (Clovis/YDB)", "is_wood_or_charcoal": true, "source": "Waters & Stafford 2007 Science, Table 1", "note": "Unit F1 Clovis hearth mean (n=8)", "cal_median": 12801.0, "cal_mean": 12806.8, "cal_sd": 44.9, "hpd95_lower": 12739.0, "hpd95_upper": 12894.0, "hpd95_span": 155.0, "hpd95_intervals": [[12739.0, 12854.0], [12856.0, 12894.0]]}, {"site": "Sheriden Cave, OH", "lab_id": "WS2007-SheridenCave", "rcybp": 10920.0, "sigma": 50.0, "material": "charcoal/bone (Clovis/YDB)", "is_wood_or_charcoal": true, "source": "Waters & Stafford 2007 Science, Table 1", "note": "Below Clovis/YDB artifacts (n=2)", "cal_median": 12821.0, "cal_mean": 12832.2, "cal_sd": 58.5, "hpd95_lower": 12743.0, "hpd95_upper": 12964.0, "hpd95_span": 221.0, "hpd95_intervals": [[12743.0, 12930.0], [12943.0, 12964.0]]}, {"site": "Indian Creek, MT", "lab_id": "WS2007-IndianCreek", "rcybp": 10980.0, "sigma": 110.0, "material": "charcoal/bone (Clovis/YDB)", "is_wood_or_charcoal": true, "source": "Waters & Stafford 2007 Science, Table 1", "note": "Clovis-age horizon (n=1)", "cal_median": 12912.0, "cal_mean": 12918.1, "cal_sd": 100.8, "hpd95_lower": 12749.0, "hpd95_upper": 13091.0, "hpd95_span": 342.0, "hpd95_intervals": [[12749.0, 13091.0]]}, {"site": "Blackwater Draw, NM", "lab_id": "WS2007-BlackwaterDraw", "rcybp": 11300.0, "sigma": 235.0, "material": "charcoal/bone (Clovis/YDB)", "is_wood_or_charcoal": true, "source": "Waters & Stafford 2007 Science, Table 1", "note": "Clovis / basal black mat (n=3)", "cal_median": 13197.0, "cal_mean": 13196.2, "cal_sd": 220.4, "hpd95_lower": 12756.0, "hpd95_upper": 13595.0, "hpd95_span": 839.0, "hpd95_intervals": [[12756.0, 13533.0], [13536.0, 13595.0]]}], "favorable_meta": {"T": 28.07, "pM0": 0.009, "pM1": 0.15742, "sd": 141.3, "ov_n": 7, "ov_yr": [12756.0, 12890.0]}};
+  const svg = document.getElementById("ydb-cal-svg");
+  const statEl = document.getElementById("ydb-cal-stat");
+  const tipEl = document.getElementById("ydb-cal-tip");
+  const btns = document.querySelectorAll("#ydb-cal-fig .cal-btn");
+  const NS = "http://www.w3.org/2000/svg";
+
+  const W = 740, left = 186, right = 716, topPad = 32;
+  const X_MAX = 13650, X_MIN = 12450; // older on left, younger on right
+  const sx = yr => left + (X_MAX - yr) / (X_MAX - X_MIN) * (right - left);
+
+  function el(tag, attrs, text) {
+    const n = document.createElementNS(NS, tag);
+    for (const [k, v] of Object.entries(attrs || {})) n.setAttribute(k, String(v));
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+
+  function render(mode) {
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    const ydb = mode === "primary" ? DATA.primary : DATA.favorable;
+    const meta = mode === "primary" ? DATA.primary_meta : DATA.favorable_meta;
+    const lst = DATA.lst;
+
+    statEl.textContent = "YDB T=" + meta.T.toFixed(1) + " (p_M0=" + meta.pM0.toFixed(4) + ", p_M1=" + meta.pM1.toFixed(3) + ") | overlap " + meta.ov_n + "/9";
+
+    const rowH = 24;
+    const lstY0 = topPad + 18;
+    const ydbY0 = lstY0 + lst.length * rowH + 42;
+    const H = ydbY0 + ydb.length * rowH + 48;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+
+    // Gridlines
+    for (let yr = 13600; yr >= 12500; yr -= 200) {
+      const x = sx(yr);
+      svg.appendChild(el("line", { x1: x, x2: x, y1: topPad, y2: H - 36, stroke: "var(--line)", "stroke-width": 1 }));
+      svg.appendChild(el("text", { x: x, y: H - 18, "text-anchor": "middle", fill: "var(--faint)", "font-family": "var(--mono)", "font-size": 10.5 }, yr.toLocaleString()));
+    }
+    svg.appendChild(el("text", { x: (left + right) / 2, y: H - 3, "text-anchor": "middle", fill: "var(--faint)", "font-family": "var(--sans)", "font-size": 11 }, "Calibrated calendar age (IntCal20 cal BP, older left → younger right)"));
+
+    // Reference bands: LST 13,006 and YDB IntCal20 window 12,875-12,775
+    svg.appendChild(el("rect", { x: sx(12875), y: topPad, width: sx(12775) - sx(12875), height: H - topPad - 36, fill: "var(--copper)", opacity: 0.14 }));
+    svg.appendChild(el("text", { x: sx(12825), y: topPad - 8, "text-anchor": "middle", fill: "var(--copper)", "font-family": "var(--mono)", "font-size": 10 }, "YDB (12,875–12,775)"));
+
+    svg.appendChild(el("line", { x1: sx(13006), x2: sx(13006), y1: topPad, y2: lstY0 + lst.length * rowH + 4, stroke: "var(--verdigris)", "stroke-width": 1.6, "stroke-dasharray": "4 3" }));
+    svg.appendChild(el("text", { x: sx(13006) - 4, y: topPad - 8, "text-anchor": "end", fill: "var(--verdigris)", "font-family": "var(--mono)", "font-size": 10 }, "LST 13,006 BP"));
+
+    // Section headers
+    svg.appendChild(el("text", { x: 4, y: lstY0 - 6, fill: "var(--verdigris)", "font-family": "var(--mono)", "font-size": 10.5, "font-weight": 600 }, "POSITIVE CONTROL: LAACHER SEE TEPHRA (5/5 overlap, SD=20 yr)"));
+    svg.appendChild(el("text", { x: 4, y: ydbY0 - 10, fill: "var(--copper)", "font-family": "var(--mono)", "font-size": 10.5, "font-weight": 600 }, (mode === "primary" ? "YDB PRIMARY DIRECT-14C" : "YDB OLD-WOOD-MITIGATED") + " (" + meta.ov_n + "/9 overlap, SD=" + meta.sd.toFixed(0) + " yr)"));
+
+    function drawRows(rows, yStart, color, shape) {
+      rows.forEach((r, i) => {
+        const y = yStart + i * rowH + 10;
+        const g = el("g", { tabindex: 0, style: "cursor:pointer" });
+        const label = r.site.length > 24 ? r.site.slice(0, 23) + "…" : r.site;
+        g.appendChild(el("text", { x: left - 8, y: y + 4, "text-anchor": "end", fill: "var(--ink)", "font-family": "var(--sans)", "font-size": 11.5 }, label));
+        // Draw each HPD sub-interval
+        (r.hpd95_intervals || [[r.hpd95_lower, r.hpd95_upper]]).forEach(seg => {
+          const x1 = Math.max(left, sx(seg[1]));
+          const x2 = Math.min(right, sx(seg[0]));
+          if (x2 > x1) {
+            g.appendChild(el("rect", { x: x1, y: y - 4, width: Math.max(2, x2 - x1), height: 8, rx: 2, fill: color, opacity: 0.35 }));
+          }
+        });
+        // Whisker line across outer HPD bounds
+        const ox1 = Math.max(left, sx(r.hpd95_upper));
+        const ox2 = Math.min(right, sx(r.hpd95_lower));
+        g.appendChild(el("line", { x1: ox1, x2: ox2, y1: y, y2: y, stroke: color, "stroke-width": 1.8 }));
+        // Median marker (shape + color encoding)
+        const mx = sx(r.cal_median);
+        if (shape === "diamond") {
+          g.appendChild(el("polygon", { points: `${mx},${y-5} ${mx+5},${y} ${mx},${y+5} ${mx-5},${y}`, fill: color, stroke: "var(--paper)", "stroke-width": 1 }));
+        } else {
+          g.appendChild(el("circle", { cx: mx, cy: y, r: 4.5, fill: color, stroke: "var(--paper)", "stroke-width": 1 }));
+        }
+        const msg = r.site + " [" + r.lab_id + "]: " + r.rcybp + " ± " + r.sigma + " 14C BP → IntCal20 median " + r.cal_median + " cal BP (95.4% HPD " + r.hpd95_upper + "–" + r.hpd95_lower + " BP)";
+        const show = () => { tipEl.textContent = msg; };
+        g.addEventListener("mouseenter", show);
+        g.addEventListener("focus", show);
+        svg.appendChild(g);
+      });
+    }
+
+    drawRows(lst, lstY0, "var(--verdigris)", "diamond");
+    drawRows(ydb, ydbY0, "var(--copper)", "circle");
+  }
+
+  btns.forEach(b => b.addEventListener("click", () => {
+    btns.forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    render(b.dataset.mode);
+  }));
+  render("primary");
+})();
+</script>
+</figure>

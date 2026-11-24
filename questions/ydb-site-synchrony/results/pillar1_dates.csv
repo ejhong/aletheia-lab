@@ -1,0 +1,57 @@
+panel,site,lab_id,rcybp,sigma,cal_median,hpd95_lower,hpd95_upper,hpd95_span,source
+LST_sites5,Krumpa,Krumpa_mean_n2,11056.6,15.9,12999.0,12915.0,13077.0,162.0,"Reinig et al. 2023 Nature Reply, Extended Data Table 1"
+LST_sites5,Miesenheim 2,Miesenheim2_mean_n2,11060.0,155.6,12972.0,12736.0,13236.0,500.0,"Reinig et al. 2023 Nature Reply, Extended Data Table 1"
+LST_sites5,Near Laacher See monastery,NearLaacherSeemonastery_mean_n9,11059.7,7.2,13005.0,12923.0,13076.0,153.0,"Reinig et al. 2023 Nature Reply, Extended Data Table 1"
+LST_sites5,Miesenheim 4,Miesenheim4_mean_n1,11040.0,60.0,12967.0,12831.0,13093.0,262.0,"Reinig et al. 2023 Nature Reply, Extended Data Table 1"
+LST_sites5,Kruft,Kruft_mean_n2,11068.8,17.3,13011.0,12922.0,13083.0,161.0,"Reinig et al. 2023 Nature Reply, Extended Data Table 1"
+YDB_Primary,"Abu Hureyra, Syria",UCIAMS-105429,11070.0,40.0,13000.0,12895.0,13094.0,199.0,Moore et al. 2020 Sci. Rep. SI Table S1 (Bunch et al. 2012)
+YDB_Primary,"Arlington Canyon, CA",AC003_YDB_mean_n12,11138.2,8.4,13089.0,13073.0,13102.0,29.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_Primary,"Aalsterhut, Netherlands",Usselo_mean_n14,10846.6,14.2,12756.0,12738.0,12822.0,84.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_Primary,"Lake Hind, Manitoba",UCIAMS-29317,10610.0,25.0,12653.0,12504.0,12707.0,203.0,Teller et al. 2019 Q. Res. Table 1 (LakeHindDates.csv)
+YDB_Primary,"Bull Creek, OK",Bement2014-BC21,11070.0,60.0,12990.0,12840.0,13098.0,258.0,Bement et al. 2014 PNAS (transcribed in Holliday et al. 2023 Table 5)
+YDB_Primary,"Murray Springs, AZ",WS2007-MurraySprings,10885.0,50.0,12801.0,12739.0,12894.0,155.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_Primary,"Sheriden Cave, OH",WS2007-SheridenCave,10920.0,50.0,12821.0,12743.0,12964.0,221.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_Primary,"Indian Creek, MT",WS2007-IndianCreek,10980.0,110.0,12912.0,12749.0,13091.0,342.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_Primary,"Blackwater Draw, NM",WS2007-BlackwaterDraw,11300.0,235.0,13197.0,12756.0,13595.0,839.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_Favorable,"Abu Hureyra, Syria",UCIAMS-105429,11070.0,40.0,13000.0,12895.0,13094.0,199.0,Moore et al. 2020 Sci. Rep. SI Table S1 (Bunch et al. 2012)
+YDB_Favorable,"Arlington Canyon, CA",Beta-161032,10860.0,70.0,12798.0,12715.0,12959.0,244.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_Favorable,"Aalsterhut, Netherlands",Usselo_basal_mean_n3,10898.7,38.2,12802.0,12748.0,12890.0,142.0,van Hoesel et al. 2012 Table 1 (Kennett 2015 subset)
+YDB_Favorable,"Lake Hind, Manitoba",PSUAMS-1572,10850.0,35.0,12769.0,12736.0,12830.0,94.0,Teller et al. 2019 Q. Res. Table 1 (LakeHindDates.csv)
+YDB_Favorable,"Bull Creek, OK",Bement2014-BC21,11070.0,60.0,12990.0,12840.0,13098.0,258.0,Bement et al. 2014 PNAS (transcribed in Holliday et al. 2023 Table 5)
+YDB_Favorable,"Murray Springs, AZ",WS2007-MurraySprings,10885.0,50.0,12801.0,12739.0,12894.0,155.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_Favorable,"Sheriden Cave, OH",WS2007-SheridenCave,10920.0,50.0,12821.0,12743.0,12964.0,221.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_Favorable,"Indian Creek, MT",WS2007-IndianCreek,10980.0,110.0,12912.0,12749.0,13091.0,342.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_Favorable,"Blackwater Draw, NM",WS2007-BlackwaterDraw,11300.0,235.0,13197.0,12756.0,13595.0,839.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_AllRaw,"Abu Hureyra, Syria",UCIAMS-105429,11070.0,40.0,13000.0,12895.0,13094.0,199.0,Moore et al. 2020 Sci. Rep. SI Table S1 (Bunch et al. 2012)
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-47239,11105.0,30.0,13034.0,12926.0,13098.0,172.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-42816,11095.0,25.0,13028.0,12927.0,13095.0,168.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-36308,11095.0,25.0,13028.0,12927.0,13095.0,168.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-36307,11070.0,25.0,13008.0,12916.0,13087.0,171.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-36306,11375.0,25.0,13251.0,13178.0,13307.0,129.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-36959,11075.0,30.0,13009.0,12914.0,13090.0,176.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-36960,11185.0,30.0,13111.0,13085.0,13162.0,77.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-36961,11440.0,90.0,13314.0,13163.0,13485.0,322.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-36962,11110.0,35.0,13034.0,12924.0,13100.0,176.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",Beta-161032,10860.0,70.0,12798.0,12715.0,12959.0,244.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-36305,11235.0,25.0,13136.0,13098.0,13169.0,71.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Arlington Canyon, CA",UCIAMS-36304,11020.0,25.0,12950.0,12841.0,13068.0,227.0,"Kennett et al. 2008 QSR, Table 4"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49570,10735.0,45.0,12725.0,12681.0,12756.0,75.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49521,10765.0,50.0,12735.0,12681.0,12815.0,134.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49516,10765.0,50.0,12735.0,12681.0,12815.0,134.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49507,10920.0,50.0,12821.0,12743.0,12964.0,221.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49527,10960.0,60.0,12873.0,12757.0,13063.0,306.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49529,10755.0,55.0,12731.0,12627.0,12819.0,192.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49573,10860.0,45.0,12786.0,12732.0,12881.0,149.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49574,10845.0,45.0,12773.0,12727.0,12838.0,111.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49569,10895.0,45.0,12803.0,12744.0,12894.0,150.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49514,10880.0,110.0,12834.0,12709.0,13075.0,366.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49575,10900.0,50.0,12808.0,12741.0,12907.0,166.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49515,11020.0,75.0,12946.0,12769.0,13090.0,321.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49509,10865.0,55.0,12793.0,12730.0,12893.0,163.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Aalsterhut, Netherlands",GrA-49524,10840.0,75.0,12788.0,12692.0,12925.0,233.0,"van Hoesel et al. 2012 PNAS, Table 1"
+YDB_AllRaw,"Lake Hind, Manitoba",UCIAMS-29317,10610.0,25.0,12653.0,12504.0,12707.0,203.0,Teller et al. 2019 Q. Res. Table 1 (LakeHindDates.csv)
+YDB_AllRaw,"Bull Creek, OK",Bement2014-BC21,11070.0,60.0,12990.0,12840.0,13098.0,258.0,Bement et al. 2014 PNAS (transcribed in Holliday et al. 2023 Table 5)
+YDB_AllRaw,"Murray Springs, AZ",WS2007-MurraySprings,10885.0,50.0,12801.0,12739.0,12894.0,155.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_AllRaw,"Sheriden Cave, OH",WS2007-SheridenCave,10920.0,50.0,12821.0,12743.0,12964.0,221.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_AllRaw,"Indian Creek, MT",WS2007-IndianCreek,10980.0,110.0,12912.0,12749.0,13091.0,342.0,"Waters & Stafford 2007 Science, Table 1"
+YDB_AllRaw,"Blackwater Draw, NM",WS2007-BlackwaterDraw,11300.0,235.0,13197.0,12756.0,13595.0,839.0,"Waters & Stafford 2007 Science, Table 1"
