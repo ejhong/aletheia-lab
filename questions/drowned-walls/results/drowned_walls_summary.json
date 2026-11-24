@@ -1,0 +1,4395 @@
+{
+  "data_archive_sha256": "1de01f07d6d0c4c909cf5827183a0c385875c3cac5b25493838c252597efa661",
+  "calibration": {
+    "real_breakwater_controls": [
+      {
+        "id": "CTRL_DELAWARE",
+        "region": "Positive Control",
+        "bbox": [
+          -75.113904,
+          38.8094,
+          -75.102096,
+          38.8186
+        ],
+        "valid_pct": 0.0,
+        "depth_median": null,
+        "depth_min": null,
+        "depth_max": null,
+        "n_enc_features": 0,
+        "n_candidates_total": 0,
+        "n_unmasked": 0,
+        "n_corners": 0,
+        "n_rings": 0,
+        "candidates": [],
+        "corners": [],
+        "rings": []
+      },
+      {
+        "id": "CTRL_PTJUDITH",
+        "region": "Positive Control",
+        "bbox": [
+          -71.506129,
+          41.3584,
+          -71.493871,
+          41.3676
+        ],
+        "valid_pct": 67.25,
+        "depth_median": -7.57,
+        "depth_min": -12.06,
+        "depth_max": -1.39,
+        "n_enc_features": 0,
+        "n_candidates_total": 3,
+        "n_unmasked": 1,
+        "n_corners": 0,
+        "n_rings": 0,
+        "candidates": [
+          {
+            "comp_id": 168,
+            "lat": 41.360225,
+            "lon": -71.499863,
+            "length_m": 192.7,
+            "width_m": 8.7,
+            "linearity": 0.9973,
+            "azimuth_deg": 60.3,
+            "mean_bpi_m": 0.607,
+            "max_bpi_m": 1.449,
+            "mean_depth_m": -7.28,
+            "flank_step_m": 0.0,
+            "flank_peaks": 1,
+            "nearest_enc_m": null,
+            "nearest_enc_layer": "",
+            "flags": [],
+            "unmasked": true,
+            "score": 115.8,
+            "px_endpoints": [
+              301.0,
+              388.0,
+              218.0,
+              437.0
+            ],
+            "px_centroid": [
+              261.2,
+              409.6
+            ]
+          },
+          {
+            "comp_id": 189,
+            "lat": 41.359024,
+            "lon": -71.502532,
+            "length_m": 267.3,
+            "width_m": 11.3,
+            "linearity": 0.9978,
+            "azimuth_deg": 64.1,
+            "mean_bpi_m": 0.734,
+            "max_bpi_m": 1.758,
+            "mean_depth_m": -6.27,
+            "flank_step_m": 2.201,
+            "flank_peaks": 2,
+            "nearest_enc_m": null,
+            "nearest_enc_layer": "",
+            "flags": [
+              "SEAM_STEP",
+              "SANDWAVE_PERIODIC"
+            ],
+            "unmasked": false,
+            "score": 194.47,
+            "px_endpoints": [
+              206.0,
+              445.0,
+              88.0,
+              508.0
+            ],
+            "px_centroid": [
+              150.0,
+              476.3
+            ]
+          },
+          {
+            "comp_id": 163,
+            "lat": 41.360701,
+            "lon": -71.498502,
+            "length_m": 63.2,
+            "width_m": 11.8,
+            "linearity": 0.9425,
+            "azimuth_deg": 70.2,
+            "mean_bpi_m": 1.112,
+            "max_bpi_m": 2.221,
+            "mean_depth_m": -6.1,
+            "flank_step_m": 3.811,
+            "flank_peaks": 2,
+            "nearest_enc_m": null,
+            "nearest_enc_layer": "",
+            "flags": [
+              "SEAM_STEP",
+              "SANDWAVE_PERIODIC"
+            ],
+            "unmasked": false,
+            "score": 55.51,
+            "px_endpoints": [
+              334.0,
+              377.0,
+              304.0,
+              387.0
+            ],
+            "px_centroid": [
+              317.9,
+              383.2
+            ]
+          }
+        ],
+        "corners": [],
+        "rings": []
+      }
+    ],
+    "planted_blinkerwall_n": 10,
+    "planted_blinkerwall_recovered": 8,
+    "planted_step_seam_rejected": 10,
+    "planted_details": [
+      {
+        "tile_id": "CA_ANACAPA_01",
+        "az_deg": 38.0,
+        "wall_recovered": false,
+        "seam_rejected": true
+      },
+      {
+        "tile_id": "CA_ANACAPA_02",
+        "az_deg": 149.0,
+        "wall_recovered": false,
+        "seam_rejected": true
+      },
+      {
+        "tile_id": "CA_SROSA_01",
+        "az_deg": 25.0,
+        "wall_recovered": true,
+        "seam_rejected": true
+      },
+      {
+        "tile_id": "CA_SROSA_02",
+        "az_deg": 149.0,
+        "wall_recovered": true,
+        "seam_rejected": true
+      },
+      {
+        "tile_id": "CA_SROSA_05",
+        "az_deg": 67.0,
+        "wall_recovered": true,
+        "seam_rejected": true
+      },
+      {
+        "tile_id": "NE_BLOCK_03",
+        "az_deg": 25.0,
+        "wall_recovered": true,
+        "seam_rejected": true
+      },
+      {
+        "tile_id": "NE_BLOCK_04",
+        "az_deg": 118.0,
+        "wall_recovered": true,
+        "seam_rejected": true
+      },
+      {
+        "tile_id": "NE_BLOCK_05",
+        "az_deg": 52.0,
+        "wall_recovered": true,
+        "seam_rejected": true
+      },
+      {
+        "tile_id": "NE_BLOCK_08",
+        "az_deg": 118.0,
+        "wall_recovered": true,
+        "seam_rejected": true
+      },
+      {
+        "tile_id": "NE_BLOCK_09",
+        "az_deg": 118.0,
+        "wall_recovered": true,
+        "seam_rejected": true
+      }
+    ]
+  },
+  "search_overview": {
+    "n_tiles_scanned": 40,
+    "total_valid_seafloor_km2": 34.23,
+    "n_candidates_total": 72,
+    "n_unmasked_total": 39,
+    "n_corners_unmasked": 0,
+    "n_rings_total": 0,
+    "flag_breakdown": {
+      "UNMASKED": 39,
+      "SEAM_STEP": 25,
+      "SANDWAVE_PERIODIC": 15,
+      "AXIS_SEAM": 4,
+      "CHARTED_MODERN": 1
+    },
+    "by_region": {
+      "CA Santarosae (Channel Islands)": {
+        "n_tiles": 12,
+        "valid_area_km2": 11.39,
+        "n_cand_total": 63,
+        "n_unmasked": 32,
+        "n_charted": 0,
+        "n_seam_or_sandwave": 31,
+        "n_corners": 0,
+        "n_rings": 0
+      },
+      "NE Block Island Sound": {
+        "n_tiles": 10,
+        "valid_area_km2": 6.27,
+        "n_cand_total": 4,
+        "n_unmasked": 3,
+        "n_charted": 0,
+        "n_seam_or_sandwave": 1,
+        "n_corners": 0,
+        "n_rings": 0
+      },
+      "NY Hudson Paleo-Channel": {
+        "n_tiles": 10,
+        "valid_area_km2": 10.39,
+        "n_cand_total": 3,
+        "n_unmasked": 3,
+        "n_charted": 0,
+        "n_seam_or_sandwave": 0,
+        "n_corners": 0,
+        "n_rings": 0
+      },
+      "FL Keys Submerged Shelf": {
+        "n_tiles": 8,
+        "valid_area_km2": 6.18,
+        "n_cand_total": 2,
+        "n_unmasked": 1,
+        "n_charted": 1,
+        "n_seam_or_sandwave": 0,
+        "n_corners": 0,
+        "n_rings": 0
+      }
+    }
+  },
+  "top_unmasked_candidates": [
+    {
+      "tile_id": "CA_ANACAPA_01",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 27,
+      "lat": 33.996127,
+      "lon": -119.498341,
+      "length_m": 551.7,
+      "width_m": 14.2,
+      "linearity": 0.9991,
+      "azimuth_deg": 100.4,
+      "mean_bpi_m": 1.134,
+      "max_bpi_m": 2.536,
+      "mean_depth_m": -45.44,
+      "flank_step_m": 0.522,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 623.47,
+      "px_endpoints": [
+        466.0,
+        213.0,
+        194.0,
+        167.0
+      ],
+      "px_centroid": [
+        331.9,
+        192.9
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_02",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 92,
+      "lat": 33.991976,
+      "lon": -119.468576,
+      "length_m": 442.3,
+      "width_m": 17.8,
+      "linearity": 0.9979,
+      "azimuth_deg": 102.2,
+      "mean_bpi_m": 1.111,
+      "max_bpi_m": 3.969,
+      "mean_depth_m": -54.13,
+      "flank_step_m": 0.224,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 487.37,
+      "px_endpoints": [
+        218.0,
+        449.0,
+        3.0,
+        397.0
+      ],
+      "px_centroid": [
+        90.8,
+        423.5
+      ]
+    },
+    {
+      "tile_id": "FL_KEYS_04",
+      "region": "FL Keys Submerged Shelf",
+      "comp_id": 200,
+      "lat": 24.453879,
+      "lon": -81.771068,
+      "length_m": 60.0,
+      "width_m": 9.9,
+      "linearity": 0.9657,
+      "azimuth_deg": 101.8,
+      "mean_bpi_m": 6.644,
+      "max_bpi_m": 13.364,
+      "mean_depth_m": -47.66,
+      "flank_step_m": 0.37,
+      "flank_peaks": 0,
+      "nearest_enc_m": 343.1,
+      "nearest_enc_layer": "Obstruction_area",
+      "flags": [],
+      "unmasked": true,
+      "score": 347.0,
+      "px_endpoints": [
+        215.0,
+        322.0,
+        186.0,
+        314.0
+      ],
+      "px_centroid": [
+        201.5,
+        317.8
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_01",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 1,
+      "lat": 33.999372,
+      "lon": -119.496485,
+      "length_m": 410.3,
+      "width_m": 15.1,
+      "linearity": 0.9979,
+      "azimuth_deg": 95.6,
+      "mean_bpi_m": 0.846,
+      "max_bpi_m": 1.752,
+      "mean_depth_m": -46.93,
+      "flank_step_m": 0.754,
+      "flank_peaks": 0,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 344.28,
+      "px_endpoints": [
+        508.0,
+        25.0,
+        304.0,
+        3.0
+      ],
+      "px_centroid": [
+        417.4,
+        12.7
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_01",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 23,
+      "lat": 33.996609,
+      "lon": -119.502739,
+      "length_m": 222.4,
+      "width_m": 9.1,
+      "linearity": 0.9979,
+      "azimuth_deg": 94.9,
+      "mean_bpi_m": 0.819,
+      "max_bpi_m": 1.507,
+      "mean_depth_m": -45.88,
+      "flank_step_m": 0.365,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 180.66,
+      "px_endpoints": [
+        186.0,
+        168.0,
+        75.0,
+        161.0
+      ],
+      "px_centroid": [
+        129.4,
+        166.1
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_04",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 199,
+      "lat": 34.02207,
+      "lon": -119.503203,
+      "length_m": 302.1,
+      "width_m": 13.2,
+      "linearity": 0.9977,
+      "azimuth_deg": 84.6,
+      "mean_bpi_m": 0.598,
+      "max_bpi_m": 1.105,
+      "mean_depth_m": -53.12,
+      "flank_step_m": 0.026,
+      "flank_peaks": 0,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 179.01,
+      "px_endpoints": [
+        187.0,
+        406.0,
+        37.0,
+        424.0
+      ],
+      "px_centroid": [
+        108.0,
+        418.3
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_01",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 97,
+      "lat": 33.990697,
+      "lon": -119.504375,
+      "length_m": 237.1,
+      "width_m": 18.0,
+      "linearity": 0.9909,
+      "azimuth_deg": 102.5,
+      "mean_bpi_m": 0.68,
+      "max_bpi_m": 1.319,
+      "mean_depth_m": -50.46,
+      "flank_step_m": 0.161,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 155.47,
+      "px_endpoints": [
+        118.0,
+        508.0,
+        3.0,
+        479.0
+      ],
+      "px_centroid": [
+        54.0,
+        494.5
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_02",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 162,
+      "lat": 33.990983,
+      "lon": -119.462404,
+      "length_m": 177.7,
+      "width_m": 14.7,
+      "linearity": 0.9901,
+      "azimuth_deg": 102.8,
+      "mean_bpi_m": 0.909,
+      "max_bpi_m": 2.205,
+      "mean_depth_m": -59.47,
+      "flank_step_m": 0.004,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 155.17,
+      "px_endpoints": [
+        417.0,
+        485.0,
+        330.0,
+        467.0
+      ],
+      "px_centroid": [
+        375.1,
+        478.6
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_04",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 172,
+      "lat": 34.023187,
+      "lon": -119.497456,
+      "length_m": 237.4,
+      "width_m": 9.5,
+      "linearity": 0.9977,
+      "azimuth_deg": 84.2,
+      "mean_bpi_m": 0.586,
+      "max_bpi_m": 1.09,
+      "mean_depth_m": -55.72,
+      "flank_step_m": 0.617,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 137.98,
+      "px_endpoints": [
+        433.0,
+        349.0,
+        315.0,
+        362.0
+      ],
+      "px_centroid": [
+        372.6,
+        356.2
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_02",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 133,
+      "lat": 33.991299,
+      "lon": -119.464417,
+      "length_m": 128.3,
+      "width_m": 11.8,
+      "linearity": 0.9871,
+      "azimuth_deg": 101.2,
+      "mean_bpi_m": 0.891,
+      "max_bpi_m": 2.289,
+      "mean_depth_m": -57.71,
+      "flank_step_m": 0.311,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 108.49,
+      "px_endpoints": [
+        313.0,
+        465.0,
+        250.0,
+        453.0
+      ],
+      "px_centroid": [
+        282.3,
+        461.1
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_03",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 43,
+      "lat": 33.996821,
+      "lon": -119.427444,
+      "length_m": 155.2,
+      "width_m": 16.6,
+      "linearity": 0.9844,
+      "azimuth_deg": 141.2,
+      "mean_bpi_m": 0.683,
+      "max_bpi_m": 3.155,
+      "mean_depth_m": -54.76,
+      "flank_step_m": 0.503,
+      "flank_peaks": 0,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 99.56,
+      "px_endpoints": [
+        350.0,
+        125.0,
+        398.0,
+        186.0
+      ],
+      "px_centroid": [
+        373.2,
+        154.3
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_04",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 8,
+      "lat": 34.028514,
+      "lon": -119.497066,
+      "length_m": 177.1,
+      "width_m": 18.4,
+      "linearity": 0.9864,
+      "azimuth_deg": 100.2,
+      "mean_bpi_m": 0.496,
+      "max_bpi_m": 0.827,
+      "mean_depth_m": -61.61,
+      "flank_step_m": 0.434,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 83.18,
+      "px_endpoints": [
+        433.0,
+        62.0,
+        345.0,
+        51.0
+      ],
+      "px_centroid": [
+        390.6,
+        60.3
+      ]
+    },
+    {
+      "tile_id": "CA_SROSA_05",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 4,
+      "lat": 33.953825,
+      "lon": -119.97022,
+      "length_m": 92.4,
+      "width_m": 18.4,
+      "linearity": 0.9381,
+      "azimuth_deg": 142.0,
+      "mean_bpi_m": 0.735,
+      "max_bpi_m": 2.855,
+      "mean_depth_m": -5.77,
+      "flank_step_m": 1.526,
+      "flank_peaks": 0,
+      "nearest_enc_m": 190.4,
+      "nearest_enc_layer": "Obstruction_area",
+      "flags": [],
+      "unmasked": true,
+      "score": 52.65,
+      "px_endpoints": [
+        3.0,
+        302.0,
+        32.0,
+        338.0
+      ],
+      "px_centroid": [
+        15.0,
+        320.7
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_01",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 14,
+      "lat": 33.997373,
+      "lon": -119.496754,
+      "length_m": 93.1,
+      "width_m": 7.6,
+      "linearity": 0.9893,
+      "azimuth_deg": 98.8,
+      "mean_bpi_m": 0.562,
+      "max_bpi_m": 1.095,
+      "mean_depth_m": -47.4,
+      "flank_step_m": 0.591,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 50.09,
+      "px_endpoints": [
+        427.0,
+        128.0,
+        381.0,
+        121.0
+      ],
+      "px_centroid": [
+        405.0,
+        123.7
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_04",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 141,
+      "lat": 34.0244,
+      "lon": -119.499182,
+      "length_m": 90.9,
+      "width_m": 10.0,
+      "linearity": 0.9868,
+      "azimuth_deg": 79.5,
+      "mean_bpi_m": 0.561,
+      "max_bpi_m": 0.774,
+      "mean_depth_m": -56.35,
+      "flank_step_m": 0.109,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 48.37,
+      "px_endpoints": [
+        316.0,
+        284.0,
+        272.0,
+        296.0
+      ],
+      "px_centroid": [
+        293.2,
+        288.8
+      ]
+    },
+    {
+      "tile_id": "NE_BLOCK_10",
+      "region": "NE Block Island Sound",
+      "comp_id": 209,
+      "lat": 41.161332,
+      "lon": -71.480009,
+      "length_m": 112.1,
+      "width_m": 16.3,
+      "linearity": 0.9689,
+      "azimuth_deg": 88.7,
+      "mean_bpi_m": 0.463,
+      "max_bpi_m": 0.609,
+      "mean_depth_m": -27.67,
+      "flank_step_m": 0.173,
+      "flank_peaks": 0,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 45.76,
+      "px_endpoints": [
+        283.0,
+        456.0,
+        227.0,
+        458.0
+      ],
+      "px_centroid": [
+        255.1,
+        459.2
+      ]
+    },
+    {
+      "tile_id": "CA_SROSA_06",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 66,
+      "lat": 33.955728,
+      "lon": -119.930126,
+      "length_m": 110.9,
+      "width_m": 17.8,
+      "linearity": 0.9703,
+      "azimuth_deg": 64.8,
+      "mean_bpi_m": 0.454,
+      "max_bpi_m": 0.687,
+      "mean_depth_m": -77.26,
+      "flank_step_m": 0.012,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 44.62,
+      "px_endpoints": [
+        272.0,
+        204.0,
+        222.0,
+        228.0
+      ],
+      "px_centroid": [
+        249.7,
+        215.0
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_04",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 192,
+      "lat": 34.022168,
+      "lon": -119.496624,
+      "length_m": 89.2,
+      "width_m": 12.1,
+      "linearity": 0.9743,
+      "azimuth_deg": 42.9,
+      "mean_bpi_m": 0.539,
+      "max_bpi_m": 0.798,
+      "mean_depth_m": -54.77,
+      "flank_step_m": 0.167,
+      "flank_peaks": 0,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 43.34,
+      "px_endpoints": [
+        428.0,
+        397.0,
+        398.0,
+        430.0
+      ],
+      "px_centroid": [
+        410.9,
+        412.8
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_05",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 27,
+      "lat": 34.027217,
+      "lon": -119.464763,
+      "length_m": 96.1,
+      "width_m": 16.4,
+      "linearity": 0.9651,
+      "azimuth_deg": 88.9,
+      "mean_bpi_m": 0.504,
+      "max_bpi_m": 0.845,
+      "mean_depth_m": -72.45,
+      "flank_step_m": 0.38,
+      "flank_peaks": 0,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 42.01,
+      "px_endpoints": [
+        296.0,
+        130.0,
+        248.0,
+        134.0
+      ],
+      "px_centroid": [
+        266.4,
+        132.4
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_02",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 220,
+      "lat": 33.990513,
+      "lon": -119.467404,
+      "length_m": 64.3,
+      "width_m": 17.0,
+      "linearity": 0.9143,
+      "azimuth_deg": 100.6,
+      "mean_bpi_m": 0.907,
+      "max_bpi_m": 2.074,
+      "mean_depth_m": -58.2,
+      "flank_step_m": 0.379,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 40.71,
+      "px_endpoints": [
+        164.0,
+        508.0,
+        133.0,
+        499.0
+      ],
+      "px_centroid": [
+        144.8,
+        504.7
+      ]
+    },
+    {
+      "tile_id": "NY_HUDSON_02",
+      "region": "NY Hudson Paleo-Channel",
+      "comp_id": 145,
+      "lat": 40.397932,
+      "lon": -73.819992,
+      "length_m": 82.1,
+      "width_m": 16.7,
+      "linearity": 0.9465,
+      "azimuth_deg": 111.3,
+      "mean_bpi_m": 0.582,
+      "max_bpi_m": 1.031,
+      "mean_depth_m": -32.12,
+      "flank_step_m": 0.132,
+      "flank_peaks": 0,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 38.33,
+      "px_endpoints": [
+        488.0,
+        101.0,
+        449.0,
+        88.0
+      ],
+      "px_centroid": [
+        467.3,
+        92.6
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_06",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 26,
+      "lat": 34.027016,
+      "lon": -119.431557,
+      "length_m": 82.0,
+      "width_m": 11.4,
+      "linearity": 0.9715,
+      "azimuth_deg": 121.5,
+      "mean_bpi_m": 0.465,
+      "max_bpi_m": 0.686,
+      "mean_depth_m": -77.41,
+      "flank_step_m": 0.346,
+      "flank_peaks": 0,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 34.0,
+      "px_endpoints": [
+        200.0,
+        157.0,
+        166.0,
+        134.0
+      ],
+      "px_centroid": [
+        183.8,
+        143.5
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_04",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 153,
+      "lat": 34.024016,
+      "lon": -119.501041,
+      "length_m": 80.9,
+      "width_m": 6.9,
+      "linearity": 0.99,
+      "azimuth_deg": 82.1,
+      "mean_bpi_m": 0.43,
+      "max_bpi_m": 0.526,
+      "mean_depth_m": -54.92,
+      "flank_step_m": 0.127,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 33.43,
+      "px_endpoints": [
+        227.0,
+        307.0,
+        187.0,
+        313.0
+      ],
+      "px_centroid": [
+        207.6,
+        310.2
+      ]
+    },
+    {
+      "tile_id": "NY_HUDSON_02",
+      "region": "NY Hudson Paleo-Channel",
+      "comp_id": 231,
+      "lat": 40.396933,
+      "lon": -73.825032,
+      "length_m": 75.1,
+      "width_m": 14.4,
+      "linearity": 0.9452,
+      "azimuth_deg": 106.8,
+      "mean_bpi_m": 0.557,
+      "max_bpi_m": 1.09,
+      "mean_depth_m": -30.52,
+      "flank_step_m": 0.157,
+      "flank_peaks": 1,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 33.39,
+      "px_endpoints": [
+        271.0,
+        155.0,
+        236.0,
+        141.0
+      ],
+      "px_centroid": [
+        254.2,
+        148.1
+      ]
+    },
+    {
+      "tile_id": "CA_ANACAPA_04",
+      "region": "CA Santarosae (Channel Islands)",
+      "comp_id": 127,
+      "lat": 34.024839,
+      "lon": -119.49752,
+      "length_m": 75.5,
+      "width_m": 11.2,
+      "linearity": 0.9712,
+      "azimuth_deg": 56.9,
+      "mean_bpi_m": 0.467,
+      "max_bpi_m": 0.657,
+      "mean_depth_m": -57.96,
+      "flank_step_m": 0.392,
+      "flank_peaks": 0,
+      "nearest_enc_m": null,
+      "nearest_enc_layer": "",
+      "flags": [],
+      "unmasked": true,
+      "score": 31.33,
+      "px_endpoints": [
+        385.0,
+        254.0,
+        353.0,
+        274.0
+      ],
+      "px_centroid": [
+        369.7,
+        264.4
+      ]
+    }
+  ],
+  "top_tiles_rendered": [
+    {
+      "rank": 1,
+      "tile_id": "CA_ANACAPA_01",
+      "png": "/home/antigravity/ejhong/aletheia-lab/questions/drowned-walls/data/previews/TOP_1_CA_ANACAPA_01.png",
+      "top_candidate": {
+        "tile_id": "CA_ANACAPA_01",
+        "region": "CA Santarosae (Channel Islands)",
+        "comp_id": 27,
+        "lat": 33.996127,
+        "lon": -119.498341,
+        "length_m": 551.7,
+        "width_m": 14.2,
+        "linearity": 0.9991,
+        "azimuth_deg": 100.4,
+        "mean_bpi_m": 1.134,
+        "max_bpi_m": 2.536,
+        "mean_depth_m": -45.44,
+        "flank_step_m": 0.522,
+        "flank_peaks": 1,
+        "nearest_enc_m": null,
+        "nearest_enc_layer": "",
+        "flags": [],
+        "unmasked": true,
+        "score": 623.47,
+        "px_endpoints": [
+          466.0,
+          213.0,
+          194.0,
+          167.0
+        ],
+        "px_centroid": [
+          331.9,
+          192.9
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "tile_id": "CA_ANACAPA_02",
+      "png": "/home/antigravity/ejhong/aletheia-lab/questions/drowned-walls/data/previews/TOP_2_CA_ANACAPA_02.png",
+      "top_candidate": {
+        "tile_id": "CA_ANACAPA_02",
+        "region": "CA Santarosae (Channel Islands)",
+        "comp_id": 92,
+        "lat": 33.991976,
+        "lon": -119.468576,
+        "length_m": 442.3,
+        "width_m": 17.8,
+        "linearity": 0.9979,
+        "azimuth_deg": 102.2,
+        "mean_bpi_m": 1.111,
+        "max_bpi_m": 3.969,
+        "mean_depth_m": -54.13,
+        "flank_step_m": 0.224,
+        "flank_peaks": 1,
+        "nearest_enc_m": null,
+        "nearest_enc_layer": "",
+        "flags": [],
+        "unmasked": true,
+        "score": 487.37,
+        "px_endpoints": [
+          218.0,
+          449.0,
+          3.0,
+          397.0
+        ],
+        "px_centroid": [
+          90.8,
+          423.5
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "tile_id": "FL_KEYS_04",
+      "png": "/home/antigravity/ejhong/aletheia-lab/questions/drowned-walls/data/previews/TOP_3_FL_KEYS_04.png",
+      "top_candidate": {
+        "tile_id": "FL_KEYS_04",
+        "region": "FL Keys Submerged Shelf",
+        "comp_id": 200,
+        "lat": 24.453879,
+        "lon": -81.771068,
+        "length_m": 60.0,
+        "width_m": 9.9,
+        "linearity": 0.9657,
+        "azimuth_deg": 101.8,
+        "mean_bpi_m": 6.644,
+        "max_bpi_m": 13.364,
+        "mean_depth_m": -47.66,
+        "flank_step_m": 0.37,
+        "flank_peaks": 0,
+        "nearest_enc_m": 343.1,
+        "nearest_enc_layer": "Obstruction_area",
+        "flags": [],
+        "unmasked": true,
+        "score": 347.0,
+        "px_endpoints": [
+          215.0,
+          322.0,
+          186.0,
+          314.0
+        ],
+        "px_centroid": [
+          201.5,
+          317.8
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "tile_id": "CA_ANACAPA_04",
+      "png": "/home/antigravity/ejhong/aletheia-lab/questions/drowned-walls/data/previews/TOP_4_CA_ANACAPA_04.png",
+      "top_candidate": {
+        "tile_id": "CA_ANACAPA_04",
+        "region": "CA Santarosae (Channel Islands)",
+        "comp_id": 199,
+        "lat": 34.02207,
+        "lon": -119.503203,
+        "length_m": 302.1,
+        "width_m": 13.2,
+        "linearity": 0.9977,
+        "azimuth_deg": 84.6,
+        "mean_bpi_m": 0.598,
+        "max_bpi_m": 1.105,
+        "mean_depth_m": -53.12,
+        "flank_step_m": 0.026,
+        "flank_peaks": 0,
+        "nearest_enc_m": null,
+        "nearest_enc_layer": "",
+        "flags": [],
+        "unmasked": true,
+        "score": 179.01,
+        "px_endpoints": [
+          187.0,
+          406.0,
+          37.0,
+          424.0
+        ],
+        "px_centroid": [
+          108.0,
+          418.3
+        ]
+      }
+    },
+    {
+      "rank": 5,
+      "tile_id": "CA_ANACAPA_03",
+      "png": "/home/antigravity/ejhong/aletheia-lab/questions/drowned-walls/data/previews/TOP_5_CA_ANACAPA_03.png",
+      "top_candidate": {
+        "tile_id": "CA_ANACAPA_03",
+        "region": "CA Santarosae (Channel Islands)",
+        "comp_id": 43,
+        "lat": 33.996821,
+        "lon": -119.427444,
+        "length_m": 155.2,
+        "width_m": 16.6,
+        "linearity": 0.9844,
+        "azimuth_deg": 141.2,
+        "mean_bpi_m": 0.683,
+        "max_bpi_m": 3.155,
+        "mean_depth_m": -54.76,
+        "flank_step_m": 0.503,
+        "flank_peaks": 0,
+        "nearest_enc_m": null,
+        "nearest_enc_layer": "",
+        "flags": [],
+        "unmasked": true,
+        "score": 99.56,
+        "px_endpoints": [
+          350.0,
+          125.0,
+          398.0,
+          186.0
+        ],
+        "px_centroid": [
+          373.2,
+          154.3
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "tile_id": "CA_SROSA_05",
+      "png": "/home/antigravity/ejhong/aletheia-lab/questions/drowned-walls/data/previews/TOP_6_CA_SROSA_05.png",
+      "top_candidate": {
+        "tile_id": "CA_SROSA_05",
+        "region": "CA Santarosae (Channel Islands)",
+        "comp_id": 4,
+        "lat": 33.953825,
+        "lon": -119.97022,
+        "length_m": 92.4,
+        "width_m": 18.4,
+        "linearity": 0.9381,
+        "azimuth_deg": 142.0,
+        "mean_bpi_m": 0.735,
+        "max_bpi_m": 2.855,
+        "mean_depth_m": -5.77,
+        "flank_step_m": 1.526,
+        "flank_peaks": 0,
+        "nearest_enc_m": 190.4,
+        "nearest_enc_layer": "Obstruction_area",
+        "flags": [],
+        "unmasked": true,
+        "score": 52.65,
+        "px_endpoints": [
+          3.0,
+          302.0,
+          32.0,
+          338.0
+        ],
+        "px_centroid": [
+          15.0,
+          320.7
+        ]
+      }
+    },
+    {
+      "rank": 7,
+      "tile_id": "NE_BLOCK_10",
+      "png": "/home/antigravity/ejhong/aletheia-lab/questions/drowned-walls/data/previews/TOP_7_NE_BLOCK_10.png",
+      "top_candidate": {
+        "tile_id": "NE_BLOCK_10",
+        "region": "NE Block Island Sound",
+        "comp_id": 209,
+        "lat": 41.161332,
+        "lon": -71.480009,
+        "length_m": 112.1,
+        "width_m": 16.3,
+        "linearity": 0.9689,
+        "azimuth_deg": 88.7,
+        "mean_bpi_m": 0.463,
+        "max_bpi_m": 0.609,
+        "mean_depth_m": -27.67,
+        "flank_step_m": 0.173,
+        "flank_peaks": 0,
+        "nearest_enc_m": null,
+        "nearest_enc_layer": "",
+        "flags": [],
+        "unmasked": true,
+        "score": 45.76,
+        "px_endpoints": [
+          283.0,
+          456.0,
+          227.0,
+          458.0
+        ],
+        "px_centroid": [
+          255.1,
+          459.2
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "tile_id": "CA_SROSA_06",
+      "png": "/home/antigravity/ejhong/aletheia-lab/questions/drowned-walls/data/previews/TOP_8_CA_SROSA_06.png",
+      "top_candidate": {
+        "tile_id": "CA_SROSA_06",
+        "region": "CA Santarosae (Channel Islands)",
+        "comp_id": 66,
+        "lat": 33.955728,
+        "lon": -119.930126,
+        "length_m": 110.9,
+        "width_m": 17.8,
+        "linearity": 0.9703,
+        "azimuth_deg": 64.8,
+        "mean_bpi_m": 0.454,
+        "max_bpi_m": 0.687,
+        "mean_depth_m": -77.26,
+        "flank_step_m": 0.012,
+        "flank_peaks": 1,
+        "nearest_enc_m": null,
+        "nearest_enc_layer": "",
+        "flags": [],
+        "unmasked": true,
+        "score": 44.62,
+        "px_endpoints": [
+          272.0,
+          204.0,
+          222.0,
+          228.0
+        ],
+        "px_centroid": [
+          249.7,
+          215.0
+        ]
+      }
+    }
+  ],
+  "tiles": [
+    {
+      "id": "CA_ANACAPA_01",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.505548,
+        33.9904,
+        -119.494452,
+        33.9996
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -47.94,
+      "depth_min": -54.53,
+      "depth_max": -41.88,
+      "n_enc_features": 0,
+      "n_candidates_total": 7,
+      "n_unmasked": 6,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 27,
+          "lat": 33.996127,
+          "lon": -119.498341,
+          "length_m": 551.7,
+          "width_m": 14.2,
+          "linearity": 0.9991,
+          "azimuth_deg": 100.4,
+          "mean_bpi_m": 1.134,
+          "max_bpi_m": 2.536,
+          "mean_depth_m": -45.44,
+          "flank_step_m": 0.522,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 623.47,
+          "px_endpoints": [
+            466.0,
+            213.0,
+            194.0,
+            167.0
+          ],
+          "px_centroid": [
+            331.9,
+            192.9
+          ]
+        },
+        {
+          "comp_id": 1,
+          "lat": 33.999372,
+          "lon": -119.496485,
+          "length_m": 410.3,
+          "width_m": 15.1,
+          "linearity": 0.9979,
+          "azimuth_deg": 95.6,
+          "mean_bpi_m": 0.846,
+          "max_bpi_m": 1.752,
+          "mean_depth_m": -46.93,
+          "flank_step_m": 0.754,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 344.28,
+          "px_endpoints": [
+            508.0,
+            25.0,
+            304.0,
+            3.0
+          ],
+          "px_centroid": [
+            417.4,
+            12.7
+          ]
+        },
+        {
+          "comp_id": 23,
+          "lat": 33.996609,
+          "lon": -119.502739,
+          "length_m": 222.4,
+          "width_m": 9.1,
+          "linearity": 0.9979,
+          "azimuth_deg": 94.9,
+          "mean_bpi_m": 0.819,
+          "max_bpi_m": 1.507,
+          "mean_depth_m": -45.88,
+          "flank_step_m": 0.365,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 180.66,
+          "px_endpoints": [
+            186.0,
+            168.0,
+            75.0,
+            161.0
+          ],
+          "px_centroid": [
+            129.4,
+            166.1
+          ]
+        },
+        {
+          "comp_id": 97,
+          "lat": 33.990697,
+          "lon": -119.504375,
+          "length_m": 237.1,
+          "width_m": 18.0,
+          "linearity": 0.9909,
+          "azimuth_deg": 102.5,
+          "mean_bpi_m": 0.68,
+          "max_bpi_m": 1.319,
+          "mean_depth_m": -50.46,
+          "flank_step_m": 0.161,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 155.47,
+          "px_endpoints": [
+            118.0,
+            508.0,
+            3.0,
+            479.0
+          ],
+          "px_centroid": [
+            54.0,
+            494.5
+          ]
+        },
+        {
+          "comp_id": 14,
+          "lat": 33.997373,
+          "lon": -119.496754,
+          "length_m": 93.1,
+          "width_m": 7.6,
+          "linearity": 0.9893,
+          "azimuth_deg": 98.8,
+          "mean_bpi_m": 0.562,
+          "max_bpi_m": 1.095,
+          "mean_depth_m": -47.4,
+          "flank_step_m": 0.591,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 50.09,
+          "px_endpoints": [
+            427.0,
+            128.0,
+            381.0,
+            121.0
+          ],
+          "px_centroid": [
+            405.0,
+            123.7
+          ]
+        },
+        {
+          "comp_id": 105,
+          "lat": 33.990509,
+          "lon": -119.497444,
+          "length_m": 63.1,
+          "width_m": 5.9,
+          "linearity": 0.9881,
+          "azimuth_deg": 101.2,
+          "mean_bpi_m": 0.449,
+          "max_bpi_m": 0.601,
+          "mean_depth_m": -52.53,
+          "flank_step_m": 0.002,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 27.04,
+          "px_endpoints": [
+            390.0,
+            508.0,
+            359.0,
+            502.0
+          ],
+          "px_centroid": [
+            373.2,
+            505.0
+          ]
+        },
+        {
+          "comp_id": 84,
+          "lat": 33.99122,
+          "lon": -119.495421,
+          "length_m": 66.3,
+          "width_m": 9.4,
+          "linearity": 0.9679,
+          "azimuth_deg": 85.0,
+          "mean_bpi_m": 0.637,
+          "max_bpi_m": 1.05,
+          "mean_depth_m": -50.75,
+          "flank_step_m": 2.744,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 37.06,
+          "px_endpoints": [
+            484.0,
+            465.0,
+            451.0,
+            468.0
+          ],
+          "px_centroid": [
+            466.4,
+            465.5
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_ANACAPA_02",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.470548,
+        33.9904,
+        -119.459452,
+        33.9996
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -53.65,
+      "depth_min": -66.79,
+      "depth_max": -46.11,
+      "n_enc_features": 0,
+      "n_candidates_total": 9,
+      "n_unmasked": 4,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 92,
+          "lat": 33.991976,
+          "lon": -119.468576,
+          "length_m": 442.3,
+          "width_m": 17.8,
+          "linearity": 0.9979,
+          "azimuth_deg": 102.2,
+          "mean_bpi_m": 1.111,
+          "max_bpi_m": 3.969,
+          "mean_depth_m": -54.13,
+          "flank_step_m": 0.224,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 487.37,
+          "px_endpoints": [
+            218.0,
+            449.0,
+            3.0,
+            397.0
+          ],
+          "px_centroid": [
+            90.8,
+            423.5
+          ]
+        },
+        {
+          "comp_id": 162,
+          "lat": 33.990983,
+          "lon": -119.462404,
+          "length_m": 177.7,
+          "width_m": 14.7,
+          "linearity": 0.9901,
+          "azimuth_deg": 102.8,
+          "mean_bpi_m": 0.909,
+          "max_bpi_m": 2.205,
+          "mean_depth_m": -59.47,
+          "flank_step_m": 0.004,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 155.17,
+          "px_endpoints": [
+            417.0,
+            485.0,
+            330.0,
+            467.0
+          ],
+          "px_centroid": [
+            375.1,
+            478.6
+          ]
+        },
+        {
+          "comp_id": 133,
+          "lat": 33.991299,
+          "lon": -119.464417,
+          "length_m": 128.3,
+          "width_m": 11.8,
+          "linearity": 0.9871,
+          "azimuth_deg": 101.2,
+          "mean_bpi_m": 0.891,
+          "max_bpi_m": 2.289,
+          "mean_depth_m": -57.71,
+          "flank_step_m": 0.311,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 108.49,
+          "px_endpoints": [
+            313.0,
+            465.0,
+            250.0,
+            453.0
+          ],
+          "px_centroid": [
+            282.3,
+            461.1
+          ]
+        },
+        {
+          "comp_id": 220,
+          "lat": 33.990513,
+          "lon": -119.467404,
+          "length_m": 64.3,
+          "width_m": 17.0,
+          "linearity": 0.9143,
+          "azimuth_deg": 100.6,
+          "mean_bpi_m": 0.907,
+          "max_bpi_m": 2.074,
+          "mean_depth_m": -58.2,
+          "flank_step_m": 0.379,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 40.71,
+          "px_endpoints": [
+            164.0,
+            508.0,
+            133.0,
+            499.0
+          ],
+          "px_centroid": [
+            144.8,
+            504.7
+          ]
+        },
+        {
+          "comp_id": 76,
+          "lat": 33.992782,
+          "lon": -119.460504,
+          "length_m": 209.5,
+          "width_m": 17.9,
+          "linearity": 0.9907,
+          "azimuth_deg": 97.8,
+          "mean_bpi_m": 1.297,
+          "max_bpi_m": 4.61,
+          "mean_depth_m": -55.04,
+          "flank_step_m": 0.962,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 261.65,
+          "px_endpoints": [
+            508.0,
+            388.0,
+            405.0,
+            368.0
+          ],
+          "px_centroid": [
+            462.5,
+            378.7
+          ]
+        },
+        {
+          "comp_id": 16,
+          "lat": 33.997617,
+          "lon": -119.460305,
+          "length_m": 153.2,
+          "width_m": 11.0,
+          "linearity": 0.9938,
+          "azimuth_deg": 95.0,
+          "mean_bpi_m": 0.71,
+          "max_bpi_m": 1.479,
+          "mean_depth_m": -49.95,
+          "flank_step_m": 0.941,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 106.04,
+          "px_endpoints": [
+            508.0,
+            115.0,
+            432.0,
+            105.0
+          ],
+          "px_centroid": [
+            471.7,
+            110.2
+          ]
+        },
+        {
+          "comp_id": 15,
+          "lat": 33.997695,
+          "lon": -119.461904,
+          "length_m": 124.2,
+          "width_m": 11.3,
+          "linearity": 0.9903,
+          "azimuth_deg": 92.4,
+          "mean_bpi_m": 0.66,
+          "max_bpi_m": 1.363,
+          "mean_depth_m": -50.06,
+          "flank_step_m": 1.297,
+          "flank_peaks": 3,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 78.87,
+          "px_endpoints": [
+            428.0,
+            108.0,
+            366.0,
+            104.0
+          ],
+          "px_centroid": [
+            398.1,
+            105.8
+          ]
+        },
+        {
+          "comp_id": 151,
+          "lat": 33.991184,
+          "lon": -119.466981,
+          "length_m": 87.1,
+          "width_m": 12.3,
+          "linearity": 0.9753,
+          "azimuth_deg": 97.4,
+          "mean_bpi_m": 0.526,
+          "max_bpi_m": 0.875,
+          "mean_depth_m": -57.29,
+          "flank_step_m": 0.664,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 41.43,
+          "px_endpoints": [
+            187.0,
+            471.0,
+            144.0,
+            464.0
+          ],
+          "px_centroid": [
+            164.3,
+            467.5
+          ]
+        },
+        {
+          "comp_id": 202,
+          "lat": 33.990612,
+          "lon": -119.46153,
+          "length_m": 78.4,
+          "width_m": 15.7,
+          "linearity": 0.9408,
+          "azimuth_deg": 71.4,
+          "mean_bpi_m": 0.511,
+          "max_bpi_m": 1.075,
+          "mean_depth_m": -61.35,
+          "flank_step_m": 0.901,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 31.38,
+          "px_endpoints": [
+            434.0,
+            495.0,
+            397.0,
+            508.0
+          ],
+          "px_centroid": [
+            415.3,
+            499.2
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_ANACAPA_03",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.435548,
+        33.9904,
+        -119.424452,
+        33.9996
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -62.23,
+      "depth_min": -84.38,
+      "depth_max": -33.73,
+      "n_enc_features": 0,
+      "n_candidates_total": 7,
+      "n_unmasked": 2,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 43,
+          "lat": 33.996821,
+          "lon": -119.427444,
+          "length_m": 155.2,
+          "width_m": 16.6,
+          "linearity": 0.9844,
+          "azimuth_deg": 141.2,
+          "mean_bpi_m": 0.683,
+          "max_bpi_m": 3.155,
+          "mean_depth_m": -54.76,
+          "flank_step_m": 0.503,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 99.56,
+          "px_endpoints": [
+            350.0,
+            125.0,
+            398.0,
+            186.0
+          ],
+          "px_centroid": [
+            373.2,
+            154.3
+          ]
+        },
+        {
+          "comp_id": 394,
+          "lat": 33.99293,
+          "lon": -119.427334,
+          "length_m": 61.8,
+          "width_m": 13.0,
+          "linearity": 0.9401,
+          "azimuth_deg": 59.9,
+          "mean_bpi_m": 0.517,
+          "max_bpi_m": 1.098,
+          "mean_depth_m": -66.28,
+          "flank_step_m": 0.571,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 24.96,
+          "px_endpoints": [
+            393.0,
+            362.0,
+            366.0,
+            377.0
+          ],
+          "px_centroid": [
+            378.3,
+            370.5
+          ]
+        },
+        {
+          "comp_id": 2,
+          "lat": 33.999525,
+          "lon": -119.428898,
+          "length_m": 148.0,
+          "width_m": 8.2,
+          "linearity": 0.9964,
+          "azimuth_deg": 89.3,
+          "mean_bpi_m": 0.469,
+          "max_bpi_m": 0.866,
+          "mean_depth_m": -48.15,
+          "flank_step_m": 0.0,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "AXIS_SEAM"
+          ],
+          "unmasked": false,
+          "score": 68.38,
+          "px_endpoints": [
+            346.0,
+            3.0,
+            272.0,
+            3.0
+          ],
+          "px_centroid": [
+            306.2,
+            4.2
+          ]
+        },
+        {
+          "comp_id": 8,
+          "lat": 33.99949,
+          "lon": -119.425224,
+          "length_m": 126.0,
+          "width_m": 16.6,
+          "linearity": 0.9754,
+          "azimuth_deg": 88.7,
+          "mean_bpi_m": 0.46,
+          "max_bpi_m": 0.856,
+          "mean_depth_m": -37.31,
+          "flank_step_m": 1.354,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "AXIS_SEAM"
+          ],
+          "unmasked": false,
+          "score": 52.44,
+          "px_endpoints": [
+            508.0,
+            3.0,
+            445.0,
+            3.0
+          ],
+          "px_centroid": [
+            475.5,
+            6.1
+          ]
+        },
+        {
+          "comp_id": 486,
+          "lat": 33.992063,
+          "lon": -119.427324,
+          "length_m": 82.1,
+          "width_m": 19.1,
+          "linearity": 0.9234,
+          "azimuth_deg": 88.2,
+          "mean_bpi_m": 0.857,
+          "max_bpi_m": 2.671,
+          "mean_depth_m": -68.51,
+          "flank_step_m": 0.622,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 51.14,
+          "px_endpoints": [
+            400.0,
+            418.0,
+            359.0,
+            420.0
+          ],
+          "px_centroid": [
+            378.7,
+            418.7
+          ]
+        },
+        {
+          "comp_id": 558,
+          "lat": 33.99127,
+          "lon": -119.433243,
+          "length_m": 79.0,
+          "width_m": 7.7,
+          "linearity": 0.9893,
+          "azimuth_deg": 167.3,
+          "mean_bpi_m": 0.48,
+          "max_bpi_m": 0.718,
+          "mean_depth_m": -78.76,
+          "flank_step_m": 0.537,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 36.33,
+          "px_endpoints": [
+            102.0,
+            442.0,
+            113.0,
+            480.0
+          ],
+          "px_centroid": [
+            106.1,
+            462.7
+          ]
+        },
+        {
+          "comp_id": 191,
+          "lat": 33.994898,
+          "lon": -119.42701,
+          "length_m": 68.7,
+          "width_m": 14.9,
+          "linearity": 0.9373,
+          "azimuth_deg": 141.8,
+          "mean_bpi_m": 0.443,
+          "max_bpi_m": 0.688,
+          "mean_depth_m": -59.51,
+          "flank_step_m": 0.066,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 23.52,
+          "px_endpoints": [
+            382.0,
+            247.0,
+            402.0,
+            275.0
+          ],
+          "px_centroid": [
+            393.2,
+            261.2
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_ANACAPA_04",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.50555,
+        34.0204,
+        -119.49445,
+        34.0296
+      ],
+      "valid_pct": 99.97,
+      "depth_median": -56.95,
+      "depth_min": -65.25,
+      "depth_max": -52.21,
+      "n_enc_features": 0,
+      "n_candidates_total": 20,
+      "n_unmasked": 11,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 199,
+          "lat": 34.02207,
+          "lon": -119.503203,
+          "length_m": 302.1,
+          "width_m": 13.2,
+          "linearity": 0.9977,
+          "azimuth_deg": 84.6,
+          "mean_bpi_m": 0.598,
+          "max_bpi_m": 1.105,
+          "mean_depth_m": -53.12,
+          "flank_step_m": 0.026,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 179.01,
+          "px_endpoints": [
+            187.0,
+            406.0,
+            37.0,
+            424.0
+          ],
+          "px_centroid": [
+            108.0,
+            418.3
+          ]
+        },
+        {
+          "comp_id": 172,
+          "lat": 34.023187,
+          "lon": -119.497456,
+          "length_m": 237.4,
+          "width_m": 9.5,
+          "linearity": 0.9977,
+          "azimuth_deg": 84.2,
+          "mean_bpi_m": 0.586,
+          "max_bpi_m": 1.09,
+          "mean_depth_m": -55.72,
+          "flank_step_m": 0.617,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 137.98,
+          "px_endpoints": [
+            433.0,
+            349.0,
+            315.0,
+            362.0
+          ],
+          "px_centroid": [
+            372.6,
+            356.2
+          ]
+        },
+        {
+          "comp_id": 8,
+          "lat": 34.028514,
+          "lon": -119.497066,
+          "length_m": 177.1,
+          "width_m": 18.4,
+          "linearity": 0.9864,
+          "azimuth_deg": 100.2,
+          "mean_bpi_m": 0.496,
+          "max_bpi_m": 0.827,
+          "mean_depth_m": -61.61,
+          "flank_step_m": 0.434,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 83.18,
+          "px_endpoints": [
+            433.0,
+            62.0,
+            345.0,
+            51.0
+          ],
+          "px_centroid": [
+            390.6,
+            60.3
+          ]
+        },
+        {
+          "comp_id": 141,
+          "lat": 34.0244,
+          "lon": -119.499182,
+          "length_m": 90.9,
+          "width_m": 10.0,
+          "linearity": 0.9868,
+          "azimuth_deg": 79.5,
+          "mean_bpi_m": 0.561,
+          "max_bpi_m": 0.774,
+          "mean_depth_m": -56.35,
+          "flank_step_m": 0.109,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 48.37,
+          "px_endpoints": [
+            316.0,
+            284.0,
+            272.0,
+            296.0
+          ],
+          "px_centroid": [
+            293.2,
+            288.8
+          ]
+        },
+        {
+          "comp_id": 192,
+          "lat": 34.022168,
+          "lon": -119.496624,
+          "length_m": 89.2,
+          "width_m": 12.1,
+          "linearity": 0.9743,
+          "azimuth_deg": 42.9,
+          "mean_bpi_m": 0.539,
+          "max_bpi_m": 0.798,
+          "mean_depth_m": -54.77,
+          "flank_step_m": 0.167,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 43.34,
+          "px_endpoints": [
+            428.0,
+            397.0,
+            398.0,
+            430.0
+          ],
+          "px_centroid": [
+            410.9,
+            412.8
+          ]
+        },
+        {
+          "comp_id": 153,
+          "lat": 34.024016,
+          "lon": -119.501041,
+          "length_m": 80.9,
+          "width_m": 6.9,
+          "linearity": 0.99,
+          "azimuth_deg": 82.1,
+          "mean_bpi_m": 0.43,
+          "max_bpi_m": 0.526,
+          "mean_depth_m": -54.92,
+          "flank_step_m": 0.127,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 33.43,
+          "px_endpoints": [
+            227.0,
+            307.0,
+            187.0,
+            313.0
+          ],
+          "px_centroid": [
+            207.6,
+            310.2
+          ]
+        },
+        {
+          "comp_id": 127,
+          "lat": 34.024839,
+          "lon": -119.49752,
+          "length_m": 75.5,
+          "width_m": 11.2,
+          "linearity": 0.9712,
+          "azimuth_deg": 56.9,
+          "mean_bpi_m": 0.467,
+          "max_bpi_m": 0.657,
+          "mean_depth_m": -57.96,
+          "flank_step_m": 0.392,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 31.33,
+          "px_endpoints": [
+            385.0,
+            254.0,
+            353.0,
+            274.0
+          ],
+          "px_centroid": [
+            369.7,
+            264.4
+          ]
+        },
+        {
+          "comp_id": 203,
+          "lat": 34.021514,
+          "lon": -119.500687,
+          "length_m": 85.2,
+          "width_m": 18.8,
+          "linearity": 0.9198,
+          "azimuth_deg": 157.7,
+          "mean_bpi_m": 0.504,
+          "max_bpi_m": 0.733,
+          "mean_depth_m": -53.43,
+          "flank_step_m": 0.253,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 30.74,
+          "px_endpoints": [
+            211.0,
+            434.0,
+            233.0,
+            471.0
+          ],
+          "px_centroid": [
+            223.9,
+            449.1
+          ]
+        },
+        {
+          "comp_id": 129,
+          "lat": 34.02489,
+          "lon": -119.498891,
+          "length_m": 66.0,
+          "width_m": 6.5,
+          "linearity": 0.9835,
+          "azimuth_deg": 88.9,
+          "mean_bpi_m": 0.475,
+          "max_bpi_m": 0.613,
+          "mean_depth_m": -56.68,
+          "flank_step_m": 0.023,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 29.35,
+          "px_endpoints": [
+            321.0,
+            261.0,
+            288.0,
+            262.0
+          ],
+          "px_centroid": [
+            306.5,
+            261.6
+          ]
+        },
+        {
+          "comp_id": 98,
+          "lat": 34.026121,
+          "lon": -119.497651,
+          "length_m": 63.1,
+          "width_m": 14.4,
+          "linearity": 0.9417,
+          "azimuth_deg": 78.4,
+          "mean_bpi_m": 0.486,
+          "max_bpi_m": 0.758,
+          "mean_depth_m": -58.64,
+          "flank_step_m": 0.252,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 24.16,
+          "px_endpoints": [
+            380.0,
+            192.0,
+            349.0,
+            198.0
+          ],
+          "px_centroid": [
+            363.6,
+            193.3
+          ]
+        },
+        {
+          "comp_id": 151,
+          "lat": 34.024031,
+          "lon": -119.503235,
+          "length_m": 61.9,
+          "width_m": 13.2,
+          "linearity": 0.9314,
+          "azimuth_deg": 81.3,
+          "mean_bpi_m": 0.418,
+          "max_bpi_m": 0.576,
+          "mean_depth_m": -53.89,
+          "flank_step_m": 0.253,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 19.48,
+          "px_endpoints": [
+            121.0,
+            309.0,
+            90.0,
+            311.0
+          ],
+          "px_centroid": [
+            106.6,
+            309.3
+          ]
+        },
+        {
+          "comp_id": 27,
+          "lat": 34.027946,
+          "lon": -119.49937,
+          "length_m": 352.2,
+          "width_m": 14.3,
+          "linearity": 0.9978,
+          "azimuth_deg": 88.2,
+          "mean_bpi_m": 0.51,
+          "max_bpi_m": 0.901,
+          "mean_depth_m": -60.06,
+          "flank_step_m": 0.711,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 178.1,
+          "px_endpoints": [
+            376.0,
+            86.0,
+            200.0,
+            92.0
+          ],
+          "px_centroid": [
+            284.5,
+            91.9
+          ]
+        },
+        {
+          "comp_id": 53,
+          "lat": 34.02707,
+          "lon": -119.496808,
+          "length_m": 178.0,
+          "width_m": 9.5,
+          "linearity": 0.9968,
+          "azimuth_deg": 90.6,
+          "mean_bpi_m": 0.445,
+          "max_bpi_m": 0.684,
+          "mean_depth_m": -59.68,
+          "flank_step_m": 0.308,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 78.17,
+          "px_endpoints": [
+            446.0,
+            142.0,
+            357.0,
+            140.0
+          ],
+          "px_centroid": [
+            402.5,
+            140.5
+          ]
+        },
+        {
+          "comp_id": 164,
+          "lat": 34.023634,
+          "lon": -119.498135,
+          "length_m": 175.4,
+          "width_m": 8.5,
+          "linearity": 0.9968,
+          "azimuth_deg": 83.6,
+          "mean_bpi_m": 0.446,
+          "max_bpi_m": 0.593,
+          "mean_depth_m": -56.45,
+          "flank_step_m": 0.782,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 77.17,
+          "px_endpoints": [
+            385.0,
+            327.0,
+            298.0,
+            338.0
+          ],
+          "px_centroid": [
+            341.4,
+            331.4
+          ]
+        },
+        {
+          "comp_id": 77,
+          "lat": 34.026739,
+          "lon": -119.500102,
+          "length_m": 98.2,
+          "width_m": 9.4,
+          "linearity": 0.9859,
+          "azimuth_deg": 86.2,
+          "mean_bpi_m": 0.446,
+          "max_bpi_m": 0.636,
+          "mean_depth_m": -58.46,
+          "flank_step_m": 0.266,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 41.42,
+          "px_endpoints": [
+            273.0,
+            159.0,
+            224.0,
+            162.0
+          ],
+          "px_centroid": [
+            250.8,
+            158.9
+          ]
+        },
+        {
+          "comp_id": 210,
+          "lat": 34.020517,
+          "lon": -119.494834,
+          "length_m": 69.5,
+          "width_m": 14.1,
+          "linearity": 0.9459,
+          "azimuth_deg": 84.0,
+          "mean_bpi_m": 0.737,
+          "max_bpi_m": 1.255,
+          "mean_depth_m": -53.5,
+          "flank_step_m": 1.725,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 41.0,
+          "px_endpoints": [
+            508.0,
+            499.0,
+            474.0,
+            508.0
+          ],
+          "px_centroid": [
+            493.3,
+            504.5
+          ]
+        },
+        {
+          "comp_id": 39,
+          "lat": 34.027372,
+          "lon": -119.495949,
+          "length_m": 82.0,
+          "width_m": 10.2,
+          "linearity": 0.9745,
+          "azimuth_deg": 89.4,
+          "mean_bpi_m": 0.404,
+          "max_bpi_m": 0.506,
+          "mean_depth_m": -60.25,
+          "flank_step_m": 0.375,
+          "flank_peaks": 3,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 29.89,
+          "px_endpoints": [
+            460.0,
+            127.0,
+            419.0,
+            126.0
+          ],
+          "px_centroid": [
+            442.0,
+            123.8
+          ]
+        },
+        {
+          "comp_id": 25,
+          "lat": 34.028077,
+          "lon": -119.49675,
+          "length_m": 76.1,
+          "width_m": 11.6,
+          "linearity": 0.9738,
+          "azimuth_deg": 86.9,
+          "mean_bpi_m": 0.398,
+          "max_bpi_m": 0.481,
+          "mean_depth_m": -61.33,
+          "flank_step_m": 0.583,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 27.24,
+          "px_endpoints": [
+            425.0,
+            85.0,
+            387.0,
+            87.0
+          ],
+          "px_centroid": [
+            405.1,
+            84.6
+          ]
+        },
+        {
+          "comp_id": 17,
+          "lat": 34.028269,
+          "lon": -119.505062,
+          "length_m": 69.9,
+          "width_m": 12.4,
+          "linearity": 0.9647,
+          "azimuth_deg": 83.3,
+          "mean_bpi_m": 0.443,
+          "max_bpi_m": 0.624,
+          "mean_depth_m": -55.96,
+          "flank_step_m": 0.461,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 26.82,
+          "px_endpoints": [
+            37.0,
+            68.0,
+            3.0,
+            78.0
+          ],
+          "px_centroid": [
+            22.5,
+            73.9
+          ]
+        },
+        {
+          "comp_id": 3,
+          "lat": 34.029204,
+          "lon": -119.502208,
+          "length_m": 67.9,
+          "width_m": 6.0,
+          "linearity": 0.9903,
+          "azimuth_deg": 85.2,
+          "mean_bpi_m": 0.402,
+          "max_bpi_m": 0.505,
+          "mean_depth_m": -60.3,
+          "flank_step_m": 1.104,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 26.24,
+          "px_endpoints": [
+            170.0,
+            21.0,
+            136.0,
+            22.0
+          ],
+          "px_centroid": [
+            153.8,
+            22.0
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_ANACAPA_05",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.47055,
+        34.0204,
+        -119.45945,
+        34.0296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -69.09,
+      "depth_min": -77.84,
+      "depth_max": -58.78,
+      "n_enc_features": 0,
+      "n_candidates_total": 6,
+      "n_unmasked": 3,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 27,
+          "lat": 34.027217,
+          "lon": -119.464763,
+          "length_m": 96.1,
+          "width_m": 16.4,
+          "linearity": 0.9651,
+          "azimuth_deg": 88.9,
+          "mean_bpi_m": 0.504,
+          "max_bpi_m": 0.845,
+          "mean_depth_m": -72.45,
+          "flank_step_m": 0.38,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 42.01,
+          "px_endpoints": [
+            296.0,
+            130.0,
+            248.0,
+            134.0
+          ],
+          "px_centroid": [
+            266.4,
+            132.4
+          ]
+        },
+        {
+          "comp_id": 45,
+          "lat": 34.025313,
+          "lon": -119.459779,
+          "length_m": 68.9,
+          "width_m": 11.3,
+          "linearity": 0.9632,
+          "azimuth_deg": 18.1,
+          "mean_bpi_m": 0.474,
+          "max_bpi_m": 0.727,
+          "mean_depth_m": -70.17,
+          "flank_step_m": 0.3,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 28.12,
+          "px_endpoints": [
+            501.0,
+            223.0,
+            491.0,
+            256.0
+          ],
+          "px_centroid": [
+            495.8,
+            238.1
+          ]
+        },
+        {
+          "comp_id": 31,
+          "lat": 34.026758,
+          "lon": -119.461135,
+          "length_m": 69.9,
+          "width_m": 15.3,
+          "linearity": 0.9182,
+          "azimuth_deg": 86.3,
+          "mean_bpi_m": 0.543,
+          "max_bpi_m": 0.959,
+          "mean_depth_m": -72.39,
+          "flank_step_m": 0.548,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 26.96,
+          "px_endpoints": [
+            453.0,
+            157.0,
+            418.0,
+            157.0
+          ],
+          "px_centroid": [
+            433.4,
+            157.8
+          ]
+        },
+        {
+          "comp_id": 90,
+          "lat": 34.020605,
+          "lon": -119.464862,
+          "length_m": 102.1,
+          "width_m": 10.7,
+          "linearity": 0.9833,
+          "azimuth_deg": 92.5,
+          "mean_bpi_m": 0.451,
+          "max_bpi_m": 0.635,
+          "mean_depth_m": -61.57,
+          "flank_step_m": 0.562,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 43.08,
+          "px_endpoints": [
+            291.0,
+            500.0,
+            240.0,
+            498.0
+          ],
+          "px_centroid": [
+            261.9,
+            499.6
+          ]
+        },
+        {
+          "comp_id": 40,
+          "lat": 34.026172,
+          "lon": -119.462557,
+          "length_m": 80.1,
+          "width_m": 6.9,
+          "linearity": 0.9895,
+          "azimuth_deg": 88.9,
+          "mean_bpi_m": 0.471,
+          "max_bpi_m": 0.654,
+          "mean_depth_m": -71.58,
+          "flank_step_m": 0.555,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 36.14,
+          "px_endpoints": [
+            386.0,
+            188.0,
+            346.0,
+            191.0
+          ],
+          "px_centroid": [
+            368.0,
+            190.4
+          ]
+        },
+        {
+          "comp_id": 54,
+          "lat": 34.024496,
+          "lon": -119.464077,
+          "length_m": 74.4,
+          "width_m": 7.8,
+          "linearity": 0.9845,
+          "azimuth_deg": 83.8,
+          "mean_bpi_m": 0.432,
+          "max_bpi_m": 0.614,
+          "mean_depth_m": -68.12,
+          "flank_step_m": 0.808,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 30.19,
+          "px_endpoints": [
+            315.0,
+            281.0,
+            278.0,
+            285.0
+          ],
+          "px_centroid": [
+            298.0,
+            283.5
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_ANACAPA_06",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.43555,
+        34.0204,
+        -119.42445,
+        34.0296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -74.22,
+      "depth_min": -82.55,
+      "depth_max": -43.8,
+      "n_enc_features": 0,
+      "n_candidates_total": 7,
+      "n_unmasked": 1,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 26,
+          "lat": 34.027016,
+          "lon": -119.431557,
+          "length_m": 82.0,
+          "width_m": 11.4,
+          "linearity": 0.9715,
+          "azimuth_deg": 121.5,
+          "mean_bpi_m": 0.465,
+          "max_bpi_m": 0.686,
+          "mean_depth_m": -77.41,
+          "flank_step_m": 0.346,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 34.0,
+          "px_endpoints": [
+            200.0,
+            157.0,
+            166.0,
+            134.0
+          ],
+          "px_centroid": [
+            183.8,
+            143.5
+          ]
+        },
+        {
+          "comp_id": 111,
+          "lat": 34.020509,
+          "lon": -119.430409,
+          "length_m": 1010.0,
+          "width_m": 18.0,
+          "linearity": 0.9996,
+          "azimuth_deg": 90.2,
+          "mean_bpi_m": 0.606,
+          "max_bpi_m": 2.684,
+          "mean_depth_m": -45.87,
+          "flank_step_m": 2.309,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "AXIS_SEAM"
+          ],
+          "unmasked": false,
+          "score": 611.31,
+          "px_endpoints": [
+            508.0,
+            508.0,
+            3.0,
+            501.0
+          ],
+          "px_centroid": [
+            236.7,
+            505.0
+          ]
+        },
+        {
+          "comp_id": 31,
+          "lat": 34.026607,
+          "lon": -119.432403,
+          "length_m": 151.2,
+          "width_m": 10.4,
+          "linearity": 0.993,
+          "azimuth_deg": 121.9,
+          "mean_bpi_m": 0.51,
+          "max_bpi_m": 0.883,
+          "mean_depth_m": -76.43,
+          "flank_step_m": 0.688,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 74.89,
+          "px_endpoints": [
+            181.0,
+            187.0,
+            115.0,
+            150.0
+          ],
+          "px_centroid": [
+            144.9,
+            166.2
+          ]
+        },
+        {
+          "comp_id": 47,
+          "lat": 34.025551,
+          "lon": -119.434582,
+          "length_m": 103.2,
+          "width_m": 11.3,
+          "linearity": 0.9816,
+          "azimuth_deg": 99.7,
+          "mean_bpi_m": 0.489,
+          "max_bpi_m": 0.792,
+          "mean_depth_m": -74.17,
+          "flank_step_m": 0.67,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 46.85,
+          "px_endpoints": [
+            70.0,
+            226.0,
+            19.0,
+            218.0
+          ],
+          "px_centroid": [
+            44.6,
+            224.9
+          ]
+        },
+        {
+          "comp_id": 66,
+          "lat": 34.02452,
+          "lon": -119.427892,
+          "length_m": 81.7,
+          "width_m": 11.8,
+          "linearity": 0.9751,
+          "azimuth_deg": 111.2,
+          "mean_bpi_m": 0.401,
+          "max_bpi_m": 0.503,
+          "mean_depth_m": -72.78,
+          "flank_step_m": 1.218,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 29.6,
+          "px_endpoints": [
+            371.0,
+            290.0,
+            333.0,
+            275.0
+          ],
+          "px_centroid": [
+            352.6,
+            282.1
+          ]
+        },
+        {
+          "comp_id": 70,
+          "lat": 34.024249,
+          "lon": -119.426879,
+          "length_m": 90.0,
+          "width_m": 18.0,
+          "linearity": 0.9388,
+          "azimuth_deg": 89.8,
+          "mean_bpi_m": 0.411,
+          "max_bpi_m": 0.557,
+          "mean_depth_m": -72.19,
+          "flank_step_m": 1.128,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 28.71,
+          "px_endpoints": [
+            424.0,
+            300.0,
+            379.0,
+            299.0
+          ],
+          "px_centroid": [
+            399.2,
+            297.2
+          ]
+        },
+        {
+          "comp_id": 104,
+          "lat": 34.021169,
+          "lon": -119.426707,
+          "length_m": 63.4,
+          "width_m": 12.4,
+          "linearity": 0.9544,
+          "azimuth_deg": 72.9,
+          "mean_bpi_m": 0.544,
+          "max_bpi_m": 1.111,
+          "mean_depth_m": -52.63,
+          "flank_step_m": 2.412,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP"
+          ],
+          "unmasked": false,
+          "score": 28.62,
+          "px_endpoints": [
+            424.0,
+            466.0,
+            393.0,
+            473.0
+          ],
+          "px_centroid": [
+            407.1,
+            468.3
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_SROSA_01",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -120.005544,
+        33.9204,
+        -119.994456,
+        33.9296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -27.07,
+      "depth_min": -29.71,
+      "depth_max": -20.0,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_SROSA_02",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.970544,
+        33.9204,
+        -119.959456,
+        33.9296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -30.83,
+      "depth_min": -40.69,
+      "depth_max": -21.49,
+      "n_enc_features": 0,
+      "n_candidates_total": 2,
+      "n_unmasked": 1,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 101,
+          "lat": 33.921343,
+          "lon": -119.968441,
+          "length_m": 75.2,
+          "width_m": 14.9,
+          "linearity": 0.9448,
+          "azimuth_deg": 98.4,
+          "mean_bpi_m": 0.504,
+          "max_bpi_m": 1.339,
+          "mean_depth_m": -29.58,
+          "flank_step_m": 0.211,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 30.23,
+          "px_endpoints": [
+            113.0,
+            462.0,
+            76.0,
+            455.0
+          ],
+          "px_centroid": [
+            96.9,
+            458.6
+          ]
+        },
+        {
+          "comp_id": 125,
+          "lat": 33.920522,
+          "lon": -119.963753,
+          "length_m": 194.0,
+          "width_m": 19.9,
+          "linearity": 0.984,
+          "azimuth_deg": 90.7,
+          "mean_bpi_m": 1.4,
+          "max_bpi_m": 3.775,
+          "mean_depth_m": -26.96,
+          "flank_step_m": 5.783,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "AXIS_SEAM"
+          ],
+          "unmasked": false,
+          "score": 254.55,
+          "px_endpoints": [
+            361.0,
+            508.0,
+            264.0,
+            508.0
+          ],
+          "px_centroid": [
+            313.0,
+            504.2
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_SROSA_03",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.935544,
+        33.9204,
+        -119.924456,
+        33.9296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -80.34,
+      "depth_min": -84.83,
+      "depth_max": -74.39,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_SROSA_04",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -120.005546,
+        33.9504,
+        -119.994454,
+        33.9596
+      ],
+      "valid_pct": 0.0,
+      "depth_median": null,
+      "depth_min": null,
+      "depth_max": null,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_SROSA_05",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.970546,
+        33.9504,
+        -119.959454,
+        33.9596
+      ],
+      "valid_pct": 95.22,
+      "depth_median": -15.4,
+      "depth_min": -24.25,
+      "depth_max": -2.99,
+      "n_enc_features": 2,
+      "n_candidates_total": 1,
+      "n_unmasked": 1,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 4,
+          "lat": 33.953825,
+          "lon": -119.97022,
+          "length_m": 92.4,
+          "width_m": 18.4,
+          "linearity": 0.9381,
+          "azimuth_deg": 142.0,
+          "mean_bpi_m": 0.735,
+          "max_bpi_m": 2.855,
+          "mean_depth_m": -5.77,
+          "flank_step_m": 1.526,
+          "flank_peaks": 0,
+          "nearest_enc_m": 190.4,
+          "nearest_enc_layer": "Obstruction_area",
+          "flags": [],
+          "unmasked": true,
+          "score": 52.65,
+          "px_endpoints": [
+            3.0,
+            302.0,
+            32.0,
+            338.0
+          ],
+          "px_centroid": [
+            15.0,
+            320.7
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "CA_SROSA_06",
+      "region": "CA Santarosae (Channel Islands)",
+      "bbox": [
+        -119.935546,
+        33.9504,
+        -119.924454,
+        33.9596
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -77.98,
+      "depth_min": -86.03,
+      "depth_max": -72.35,
+      "n_enc_features": 0,
+      "n_candidates_total": 4,
+      "n_unmasked": 3,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 66,
+          "lat": 33.955728,
+          "lon": -119.930126,
+          "length_m": 110.9,
+          "width_m": 17.8,
+          "linearity": 0.9703,
+          "azimuth_deg": 64.8,
+          "mean_bpi_m": 0.454,
+          "max_bpi_m": 0.687,
+          "mean_depth_m": -77.26,
+          "flank_step_m": 0.012,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 44.62,
+          "px_endpoints": [
+            272.0,
+            204.0,
+            222.0,
+            228.0
+          ],
+          "px_centroid": [
+            249.7,
+            215.0
+          ]
+        },
+        {
+          "comp_id": 133,
+          "lat": 33.954442,
+          "lon": -119.933446,
+          "length_m": 73.4,
+          "width_m": 14.6,
+          "linearity": 0.9475,
+          "azimuth_deg": 71.2,
+          "mean_bpi_m": 0.474,
+          "max_bpi_m": 0.641,
+          "mean_depth_m": -75.56,
+          "flank_step_m": 0.27,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 28.0,
+          "px_endpoints": [
+            115.0,
+            280.0,
+            80.0,
+            291.0
+          ],
+          "px_centroid": [
+            96.8,
+            286.5
+          ]
+        },
+        {
+          "comp_id": 11,
+          "lat": 33.957621,
+          "lon": -119.926193,
+          "length_m": 77.2,
+          "width_m": 17.7,
+          "linearity": 0.9401,
+          "azimuth_deg": 79.1,
+          "mean_bpi_m": 0.448,
+          "max_bpi_m": 0.657,
+          "mean_depth_m": -79.83,
+          "flank_step_m": 0.227,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 26.98,
+          "px_endpoints": [
+            447.0,
+            103.0,
+            410.0,
+            115.0
+          ],
+          "px_centroid": [
+            430.9,
+            109.9
+          ]
+        },
+        {
+          "comp_id": 208,
+          "lat": 33.9518,
+          "lon": -119.935195,
+          "length_m": 64.1,
+          "width_m": 15.1,
+          "linearity": 0.9327,
+          "azimuth_deg": 78.0,
+          "mean_bpi_m": 0.444,
+          "max_bpi_m": 0.583,
+          "mean_depth_m": -74.11,
+          "flank_step_m": 0.277,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 21.54,
+          "px_endpoints": [
+            33.0,
+            427.0,
+            3.0,
+            440.0
+          ],
+          "px_centroid": [
+            16.2,
+            433.2
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_01",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.586108,
+        41.1304,
+        -71.573892,
+        41.1396
+      ],
+      "valid_pct": 0.0,
+      "depth_median": null,
+      "depth_min": null,
+      "depth_max": null,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_02",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.561108,
+        41.1304,
+        -71.548892,
+        41.1396
+      ],
+      "valid_pct": 0.0,
+      "depth_median": null,
+      "depth_min": null,
+      "depth_max": null,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_03",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.536108,
+        41.1304,
+        -71.523892,
+        41.1396
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -29.9,
+      "depth_min": -32.25,
+      "depth_max": -18.89,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_04",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.511108,
+        41.1304,
+        -71.498892,
+        41.1396
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -28.83,
+      "depth_min": -30.9,
+      "depth_max": -26.13,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_05",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.486108,
+        41.1304,
+        -71.473892,
+        41.1396
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -27.75,
+      "depth_min": -29.58,
+      "depth_max": -25.99,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_06",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.58611,
+        41.1604,
+        -71.57389,
+        41.1696
+      ],
+      "valid_pct": 0.0,
+      "depth_median": null,
+      "depth_min": null,
+      "depth_max": null,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_07",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.56111,
+        41.1604,
+        -71.54889,
+        41.1696
+      ],
+      "valid_pct": 2.75,
+      "depth_median": null,
+      "depth_min": null,
+      "depth_max": null,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_08",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.53611,
+        41.1604,
+        -71.52389,
+        41.1696
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -28.59,
+      "depth_min": -35.27,
+      "depth_max": -13.06,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_09",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.51111,
+        41.1604,
+        -71.49889,
+        41.1696
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -27.65,
+      "depth_min": -30.71,
+      "depth_max": -22.98,
+      "n_enc_features": 0,
+      "n_candidates_total": 3,
+      "n_unmasked": 2,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 168,
+          "lat": 41.162331,
+          "lon": -71.50736,
+          "length_m": 66.8,
+          "width_m": 10.8,
+          "linearity": 0.9677,
+          "azimuth_deg": 48.5,
+          "mean_bpi_m": 0.402,
+          "max_bpi_m": 0.513,
+          "mean_depth_m": -27.46,
+          "flank_step_m": 0.053,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 23.52,
+          "px_endpoints": [
+            169.0,
+            392.0,
+            143.0,
+            413.0
+          ],
+          "px_centroid": [
+            156.8,
+            403.8
+          ]
+        },
+        {
+          "comp_id": 173,
+          "lat": 41.16198,
+          "lon": -71.504143,
+          "length_m": 69.7,
+          "width_m": 15.4,
+          "linearity": 0.9294,
+          "azimuth_deg": 65.2,
+          "mean_bpi_m": 0.417,
+          "max_bpi_m": 0.548,
+          "mean_depth_m": -27.86,
+          "flank_step_m": 0.142,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 21.68,
+          "px_endpoints": [
+            308.0,
+            413.0,
+            277.0,
+            429.0
+          ],
+          "px_centroid": [
+            291.4,
+            423.2
+          ]
+        },
+        {
+          "comp_id": 195,
+          "lat": 41.161544,
+          "lon": -71.50809,
+          "length_m": 96.1,
+          "width_m": 12.7,
+          "linearity": 0.9697,
+          "azimuth_deg": 84.0,
+          "mean_bpi_m": 0.419,
+          "max_bpi_m": 0.601,
+          "mean_depth_m": -26.81,
+          "flank_step_m": 0.453,
+          "flank_peaks": 2,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [
+            "SEAM_STEP",
+            "SANDWAVE_PERIODIC"
+          ],
+          "unmasked": false,
+          "score": 35.61,
+          "px_endpoints": [
+            151.0,
+            446.0,
+            103.0,
+            449.0
+          ],
+          "px_centroid": [
+            126.3,
+            447.5
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NE_BLOCK_10",
+      "region": "NE Block Island Sound",
+      "bbox": [
+        -71.48611,
+        41.1604,
+        -71.47389,
+        41.1696
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -26.41,
+      "depth_min": -29.58,
+      "depth_max": -22.74,
+      "n_enc_features": 0,
+      "n_candidates_total": 1,
+      "n_unmasked": 1,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 209,
+          "lat": 41.161332,
+          "lon": -71.480009,
+          "length_m": 112.1,
+          "width_m": 16.3,
+          "linearity": 0.9689,
+          "azimuth_deg": 88.7,
+          "mean_bpi_m": 0.463,
+          "max_bpi_m": 0.609,
+          "mean_depth_m": -27.67,
+          "flank_step_m": 0.173,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 45.76,
+          "px_endpoints": [
+            283.0,
+            456.0,
+            227.0,
+            458.0
+          ],
+          "px_centroid": [
+            255.1,
+            459.2
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_01",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.85604,
+        40.3904,
+        -73.84396,
+        40.3996
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -18.34,
+      "depth_min": -22.51,
+      "depth_max": -15.99,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_02",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.83104,
+        40.3904,
+        -73.81896,
+        40.3996
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -30.2,
+      "depth_min": -34.09,
+      "depth_max": -25.06,
+      "n_enc_features": 0,
+      "n_candidates_total": 3,
+      "n_unmasked": 3,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 145,
+          "lat": 40.397932,
+          "lon": -73.819992,
+          "length_m": 82.1,
+          "width_m": 16.7,
+          "linearity": 0.9465,
+          "azimuth_deg": 111.3,
+          "mean_bpi_m": 0.582,
+          "max_bpi_m": 1.031,
+          "mean_depth_m": -32.12,
+          "flank_step_m": 0.132,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 38.33,
+          "px_endpoints": [
+            488.0,
+            101.0,
+            449.0,
+            88.0
+          ],
+          "px_centroid": [
+            467.3,
+            92.6
+          ]
+        },
+        {
+          "comp_id": 231,
+          "lat": 40.396933,
+          "lon": -73.825032,
+          "length_m": 75.1,
+          "width_m": 14.4,
+          "linearity": 0.9452,
+          "azimuth_deg": 106.8,
+          "mean_bpi_m": 0.557,
+          "max_bpi_m": 1.09,
+          "mean_depth_m": -30.52,
+          "flank_step_m": 0.157,
+          "flank_peaks": 1,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 33.39,
+          "px_endpoints": [
+            271.0,
+            155.0,
+            236.0,
+            141.0
+          ],
+          "px_centroid": [
+            254.2,
+            148.1
+          ]
+        },
+        {
+          "comp_id": 150,
+          "lat": 40.397856,
+          "lon": -73.824572,
+          "length_m": 72.4,
+          "width_m": 17.7,
+          "linearity": 0.921,
+          "azimuth_deg": 120.5,
+          "mean_bpi_m": 0.588,
+          "max_bpi_m": 1.184,
+          "mean_depth_m": -30.51,
+          "flank_step_m": 0.012,
+          "flank_peaks": 0,
+          "nearest_enc_m": null,
+          "nearest_enc_layer": "",
+          "flags": [],
+          "unmasked": true,
+          "score": 30.63,
+          "px_endpoints": [
+            293.0,
+            104.0,
+            261.0,
+            87.0
+          ],
+          "px_centroid": [
+            273.6,
+            96.9
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_03",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.80604,
+        40.3904,
+        -73.79396,
+        40.3996
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -37.73,
+      "depth_min": -39.36,
+      "depth_max": -35.33,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_04",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.78104,
+        40.3904,
+        -73.76896,
+        40.3996
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -34.57,
+      "depth_min": -37.87,
+      "depth_max": -31.18,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_05",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.75604,
+        40.3904,
+        -73.74396,
+        40.3996
+      ],
+      "valid_pct": 99.39,
+      "depth_median": -24.31,
+      "depth_min": -25.22,
+      "depth_max": -23.55,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_06",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.856043,
+        40.4204,
+        -73.843957,
+        40.4296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -20.78,
+      "depth_min": -24.5,
+      "depth_max": -15.18,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_07",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.831043,
+        40.4204,
+        -73.818957,
+        40.4296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -29.89,
+      "depth_min": -32.2,
+      "depth_max": -26.7,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_08",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.806043,
+        40.4204,
+        -73.793957,
+        40.4296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -33.24,
+      "depth_min": -35.24,
+      "depth_max": -30.9,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_09",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.781043,
+        40.4204,
+        -73.768957,
+        40.4296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -32.02,
+      "depth_min": -34.48,
+      "depth_max": -29.92,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "NY_HUDSON_10",
+      "region": "NY Hudson Paleo-Channel",
+      "bbox": [
+        -73.756043,
+        40.4204,
+        -73.743957,
+        40.4296
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -28.92,
+      "depth_min": -29.66,
+      "depth_max": -26.56,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "FL_KEYS_01",
+      "region": "FL Keys Submerged Shelf",
+      "bbox": [
+        -81.855053,
+        24.4504,
+        -81.844947,
+        24.4596
+      ],
+      "valid_pct": 61.07,
+      "depth_median": -26.02,
+      "depth_min": -87.38,
+      "depth_max": -3.32,
+      "n_enc_features": 2,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "FL_KEYS_02",
+      "region": "FL Keys Submerged Shelf",
+      "bbox": [
+        -81.828387,
+        24.4504,
+        -81.81828,
+        24.4596
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -34.98,
+      "depth_min": -43.94,
+      "depth_max": -26.77,
+      "n_enc_features": 0,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "FL_KEYS_03",
+      "region": "FL Keys Submerged Shelf",
+      "bbox": [
+        -81.80172,
+        24.4504,
+        -81.791613,
+        24.4596
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -42.44,
+      "depth_min": -52.91,
+      "depth_max": -33.42,
+      "n_enc_features": 1,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "FL_KEYS_04",
+      "region": "FL Keys Submerged Shelf",
+      "bbox": [
+        -81.775053,
+        24.4504,
+        -81.764947,
+        24.4596
+      ],
+      "valid_pct": 100.0,
+      "depth_median": -50.8,
+      "depth_min": -61.21,
+      "depth_max": -23.34,
+      "n_enc_features": 4,
+      "n_candidates_total": 2,
+      "n_unmasked": 1,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [
+        {
+          "comp_id": 200,
+          "lat": 24.453879,
+          "lon": -81.771068,
+          "length_m": 60.0,
+          "width_m": 9.9,
+          "linearity": 0.9657,
+          "azimuth_deg": 101.8,
+          "mean_bpi_m": 6.644,
+          "max_bpi_m": 13.364,
+          "mean_depth_m": -47.66,
+          "flank_step_m": 0.37,
+          "flank_peaks": 0,
+          "nearest_enc_m": 343.1,
+          "nearest_enc_layer": "Obstruction_area",
+          "flags": [],
+          "unmasked": true,
+          "score": 347.0,
+          "px_endpoints": [
+            215.0,
+            322.0,
+            186.0,
+            314.0
+          ],
+          "px_centroid": [
+            201.5,
+            317.8
+          ]
+        },
+        {
+          "comp_id": 5,
+          "lat": 24.459518,
+          "lon": -81.767007,
+          "length_m": 116.1,
+          "width_m": 8.5,
+          "linearity": 0.9932,
+          "azimuth_deg": 88.1,
+          "mean_bpi_m": 0.498,
+          "max_bpi_m": 0.782,
+          "mean_depth_m": -27.92,
+          "flank_step_m": 1.583,
+          "flank_peaks": 2,
+          "nearest_enc_m": 140.3,
+          "nearest_enc_layer": "Obstruction_area",
+          "flags": [
+            "SEAM_STEP",
+            "SANDWAVE_PERIODIC",
+            "CHARTED_MODERN:Obstruction_area"
+          ],
+          "unmasked": false,
+          "score": 56.23,
+          "px_endpoints": [
+            440.0,
+            3.0,
+            382.0,
+            6.0
+          ],
+          "px_centroid": [
+            406.8,
+            4.6
+          ]
+        }
+      ],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "FL_KEYS_05",
+      "region": "FL Keys Submerged Shelf",
+      "bbox": [
+        -81.855055,
+        24.4804,
+        -81.844945,
+        24.4896
+      ],
+      "valid_pct": 21.39,
+      "depth_median": -10.48,
+      "depth_min": -108.88,
+      "depth_max": -2.15,
+      "n_enc_features": 2,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "FL_KEYS_06",
+      "region": "FL Keys Submerged Shelf",
+      "bbox": [
+        -81.828388,
+        24.4804,
+        -81.818279,
+        24.4896
+      ],
+      "valid_pct": 94.71,
+      "depth_median": -12.02,
+      "depth_min": -13.24,
+      "depth_max": -7.32,
+      "n_enc_features": 2,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "FL_KEYS_07",
+      "region": "FL Keys Submerged Shelf",
+      "bbox": [
+        -81.801721,
+        24.4804,
+        -81.791612,
+        24.4896
+      ],
+      "valid_pct": 92.29,
+      "depth_median": -12.39,
+      "depth_min": -13.45,
+      "depth_max": -9.43,
+      "n_enc_features": 2,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    },
+    {
+      "id": "FL_KEYS_08",
+      "region": "FL Keys Submerged Shelf",
+      "bbox": [
+        -81.775055,
+        24.4804,
+        -81.764945,
+        24.4896
+      ],
+      "valid_pct": 25.02,
+      "depth_median": -12.14,
+      "depth_min": -117.88,
+      "depth_max": -2.25,
+      "n_enc_features": 2,
+      "n_candidates_total": 0,
+      "n_unmasked": 0,
+      "n_corners": 0,
+      "n_rings": 0,
+      "candidates": [],
+      "corners": [],
+      "rings": []
+    }
+  ]
+}
