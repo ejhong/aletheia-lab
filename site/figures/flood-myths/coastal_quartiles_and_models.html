@@ -1,0 +1,80 @@
+<figure class="fig" aria-label="Coastal drowned-shelf quartiles and spatial regression forest plot for flood myths">
+<div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;align-items:center">
+  <span style="font-size:12px;color:var(--muted);margin-right:4px">View:</span>
+  <button type="button" class="fm-c-btn is-on" data-k="forest" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">Spatial Regression Forest Plot (Conley 1,000 km 95% CI)</button>
+  <button type="button" class="fm-c-btn" data-k="quartiles" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Coastal Shelf Quartiles (Q1 Steep → Q4 Wide)</button>
+</div>
+<div class="fig-scroll">
+<svg id="fm-c-svg" class="chart" viewBox="0 0 720 355" role="img" aria-label="Flood myth slopes and coastal shelf quartiles" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+<figcaption><strong>Flood myths vs. post-glacial drowned continental shelf across 396 coastal societies (&le;150 km from modern ocean).</strong> In the forest plot, horizontal bars show 95% Conley (1999) spatial-HAC confidence intervals at a 1,000 km Bartlett cutoff (standard deviations of motif share per 1-SD increase in exposure). The positive control (earthquake myths vs. proximity to seismic zones, teal) is clearly positive (&beta; = +0.157 SD, p = 0.0005). Every drowned-shelf flood-myth model—from M1 to primary M4 with 75 language-family fixed effects, Noah-free subsamples, and Holocene &minus;60 m shelves—sits dead on zero or slightly negative. The quartile toggle confirms the raw pattern: societies beside the widest drowned shelves (Q4: 40k–187k km&sup2;) actually have slightly <em>fewer</em> non-biblical flood myths (34.3%) than societies on the steepest shelves (Q1: 36.4%).</figcaption>
+<script>
+(function(){
+  var D = {"quartiles": [{"quartile": "Q1", "drowned_lo_km2": 484.0, "drowned_hi_km2": 10397.0, "n": 99, "any_nb_flood_pct": 36.36363636363637, "mean_nb_flood_share_pct": 1.0650194139915672, "mean_flood_related_pct": 1.2224456297276471}, {"quartile": "Q2", "drowned_lo_km2": 10397.0, "drowned_hi_km2": 20047.0, "n": 99, "any_nb_flood_pct": 37.37373737373738, "mean_nb_flood_share_pct": 1.1326431128497838, "mean_flood_related_pct": 1.4105725552425443}, {"quartile": "Q3", "drowned_lo_km2": 20047.0, "drowned_hi_km2": 39598.0, "n": 99, "any_nb_flood_pct": 35.35353535353536, "mean_nb_flood_share_pct": 1.0480685435340513, "mean_flood_related_pct": 1.2744336395271099}, {"quartile": "Q4", "drowned_lo_km2": 39598.0, "drowned_hi_km2": 187061.0, "n": 99, "any_nb_flood_pct": 34.34343434343434, "mean_nb_flood_share_pct": 0.9481238611876821, "mean_flood_related_pct": 1.0381266023717073}], "forest": [{"lbl": "Positive control: Earthquakes vs. seismic proximity (Lang FE)", "b": 0.157, "se": 0.0453, "p": 0.0005, "kind": "pos"}, {"lbl": "Negative control: Fire vs. drowned shelf (Coastal M4)", "b": -0.0698, "se": 0.0577, "p": 0.2263, "kind": "neg"}, {"lbl": "Non-biblical flood share \u2014 Coastal M1 (sampling + coast)", "b": 0.0213, "se": 0.0521, "p": 0.6831, "kind": "main"}, {"lbl": "Non-biblical flood share \u2014 Coastal M2 (+ river/quake/climate)", "b": 0.0413, "se": 0.0481, "p": 0.3904, "kind": "main"}, {"lbl": "Non-biblical flood share \u2014 Coastal M3 (+ continent FE)", "b": 0.059, "se": 0.0507, "p": 0.2444, "kind": "main"}, {"lbl": "Non-biblical flood share \u2014 Coastal M4 (PRIMARY, + 75 Lang FE)", "b": -0.01, "se": 0.0513, "p": 0.8452, "kind": "primary"}, {"lbl": "MX flood_related share \u2014 Coastal M4 (+ 75 Lang FE)", "b": -0.0321, "se": 0.0479, "p": 0.5021, "kind": "primary"}, {"lbl": "Noah-free subsample (n=340) \u2014 Non-biblical flood M4", "b": -0.0149, "se": 0.0565, "p": 0.7924, "kind": "main"}, {"lbl": "Holocene \u221260 m shelf (12\u20137 ka) \u2014 Non-biblical flood M4", "b": -0.017, "se": 0.0457, "p": 0.7094, "kind": "main"}, {"lbl": "Wider 500 km radius (\u2212120 m) \u2014 Non-biblical flood M4", "b": -0.0826, "se": 0.067, "p": 0.2178, "kind": "main"}, {"lbl": "Shallow-shelf fraction of sea \u2014 Non-biblical flood M4", "b": -0.1626, "se": 0.0691, "p": 0.0185, "kind": "main"}]};
+  var svg = document.getElementById("fm-c-svg");
+  var btns = document.querySelectorAll(".fm-c-btn");
+  function el(tag, attrs, txt){
+    var n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (txt !== undefined) n.textContent = txt;
+    return n;
+  }
+  function draw(k){
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    if (k === "forest") {
+      var L = 325, R = 680, T = 30, B = 315;
+      var xmin = -0.36, xmax = 0.32;
+      function sx(v){ return L + (v - xmin) / (xmax - xmin) * (R - L); }
+      svg.appendChild(el("text", {x: 16, y: 18, "font-size": 12, "font-weight": 600, fill: "var(--ink)"}, "Effect size (SD of motif share per 1-SD exposure) with 95% Conley 1,000 km CIs"));
+      var x0 = sx(0);
+      svg.appendChild(el("line", {x1: x0, x2: x0, y1: T, y2: B, stroke: "var(--ink)", "stroke-dasharray": "4,3", "stroke-width": 1.1}));
+      svg.appendChild(el("line", {x1: L, x2: R, y1: B, y2: B, stroke: "var(--rule)"}));
+      [-0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3].forEach(function(tv){
+        var tx = sx(tv);
+        svg.appendChild(el("line", {x1: tx, x2: tx, y1: B, y2: B + 4, stroke: "var(--muted)"}));
+        svg.appendChild(el("text", {x: tx, y: B + 17, "text-anchor": "middle", "font-size": 10, fill: "var(--muted)"}, (tv > 0 ? "+" : "") + tv.toFixed(1)));
+      });
+      var step = (B - T) / D.forest.length;
+      D.forest.forEach(function(r, i){
+        var cy = T + (i + 0.5) * step;
+        var col = r.kind === "pos" ? "var(--teal)" : (r.kind === "primary" ? "var(--copper)" : (r.kind === "neg" ? "#64748b" : "#475569"));
+        var lo = sx(Math.max(xmin, r.b - 1.96 * r.se));
+        var hi = sx(Math.min(xmax, r.b + 1.96 * r.se));
+        var cx = sx(r.b);
+        svg.appendChild(el("text", {x: L - 8, y: cy + 3.5, "text-anchor": "end", "font-size": 10.5, "font-weight": (r.kind === "primary" || r.kind === "pos") ? 600 : 400, fill: (r.kind === "primary" || r.kind === "pos") ? col : "var(--ink)"}, r.lbl));
+        svg.appendChild(el("line", {x1: lo, x2: hi, y1: cy, y2: cy, stroke: col, "stroke-width": r.kind === "primary" ? 2.4 : 1.7}));
+        svg.appendChild(el("circle", {cx: cx, cy: cy, r: r.kind === "primary" ? 4.3 : 3.5, fill: col}));
+        svg.appendChild(el("text", {x: hi + 5, y: cy + 3.5, "font-size": 9.5, fill: "var(--muted)"}, (r.b >= 0 ? "+" : "") + r.b.toFixed(2) + " (p=" + (r.p < 0.001 ? "<.001" : r.p.toFixed(2)) + ")"));
+      });
+    } else {
+      var L = 70, R = 685, T = 40, B = 280;
+      svg.appendChild(el("text", {x: L, y: 20, "font-size": 12, "font-weight": 600, fill: "var(--ink)"}, "396 Coastal Societies by Quartile of Drowned Continental Shelf (−120 m to 0 m within 250 km)"));
+      function sy(v){ return B - (v / 50) * (B - T); }
+      svg.appendChild(el("line", {x1: L, x2: R, y1: B, y2: B, stroke: "var(--rule)"}));
+      svg.appendChild(el("line", {x1: L, x2: L, y1: T, y2: B, stroke: "var(--rule)"}));
+      [0, 10, 20, 30, 40, 50].forEach(function(yv){
+        svg.appendChild(el("text", {x: L - 8, y: sy(yv) + 3.5, "text-anchor": "end", "font-size": 10, fill: "var(--muted)"}, yv + "%"));
+      });
+      var step = (R - L) / 4;
+      D.quartiles.forEach(function(q, i){
+        var cx = L + (i + 0.5) * step;
+        var y1 = sy(q.any_nb_flood_pct);
+        svg.appendChild(el("rect", {x: cx - 38, y: y1, width: 76, height: B - y1, rx: 3, fill: i === 3 ? "var(--copper)" : "#94a3b8", opacity: 0.88}));
+        svg.appendChild(el("text", {x: cx, y: y1 - 7, "text-anchor": "middle", "font-size": 12, "font-weight": 700, fill: i === 3 ? "var(--copper)" : "var(--ink)"}, q.any_nb_flood_pct.toFixed(1) + "%"));
+        svg.appendChild(el("text", {x: cx, y: B + 17, "text-anchor": "middle", "font-size": 11, "font-weight": 600, fill: "var(--ink)"}, q.quartile + " (n=" + q.n + ")"));
+        svg.appendChild(el("text", {x: cx, y: B + 32, "text-anchor": "middle", "font-size": 9.8, fill: "var(--muted)"}, Math.round(q.drowned_lo_km2/1000) + "k–" + Math.round(q.drowned_hi_km2/1000) + "k km²"));
+      });
+      svg.appendChild(el("text", {x: (L+R)/2, y: 336, "text-anchor": "middle", "font-size": 11, fill: "var(--muted)"}, "Share of coastal societies with ≥1 non-biblical Berezkin deluge/flood motif (inland >150 km baseline = 39.4%)"));
+    }
+  }
+  btns.forEach(function(b){
+    b.addEventListener("click", function(){
+      btns.forEach(function(x){ x.classList.remove("is-on"); x.style.background = "transparent"; x.style.color = "var(--ink)"; });
+      b.classList.add("is-on"); b.style.background = "var(--copper)"; b.style.color = "#fff";
+      draw(b.getAttribute("data-k"));
+    });
+  });
+  draw("forest");
+})();
+</script>
+</figure>
