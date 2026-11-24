@@ -1,0 +1,75 @@
+<figure class="fig" aria-label="Automated filtering and visual audit funnel across 40 NOAA 2 m sonar tiles">
+<div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;align-items:center">
+  <span style="font-size:12px;color:var(--muted);margin-right:4px">View:</span>
+  <button type="button" class="dw-f-btn is-on" data-k="funnel" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">Detection &amp; Visual Audit Funnel (72 &rarr; 0)</button>
+  <button type="button" class="dw-f-btn" data-k="regions" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">4 Drowned Ice Age Shelves (34.2 km&sup2;)</button>
+</div>
+<div class="fig-scroll">
+<svg id="dw-f-svg" class="chart" viewBox="0 0 720 325" role="img" aria-label="Anomaly funnel and regional seafloor coverage" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+<figcaption><strong>From 72 raw linear seafloor ridges across 34.23 km&sup2; of 2 m multibeam sonar to zero unmapped Ice Age stone walls.</strong> Automated step-seam, sandwave, and NOAA ENC chart filters remove 33 of 72 linear ridges (45.8%). Direct shaded-relief visual audit resolves all 39 remaining ridges cleanly: 32 folded/dipping Miocene bedrock strata off California&rsquo;s Santarosae shelf, 3 tidal sandbars in Block Island Sound, 3 historic dredge-disposal hummocks off New York, and 1 crisp 60 m sunken steel ship off Key West. Zero rectilinear corners and zero ring enclosures appear anywhere in the scan.</figcaption>
+<script>
+(function(){
+  var D = {"funnel": [{"lbl": "Raw linear ridges (L \u2265 60 m, lin \u2265 0.90, BPI \u2265 0.35 m)", "n": 72, "col": "#64748b"}, {"lbl": "Rejected: Step seams / periodic sandwaves / ENC charted", "n": 33, "col": "#94a3b8"}, {"lbl": "Surviving automated filters (entering visual hillshade audit)", "n": 39, "col": "var(--teal)"}, {"lbl": "Visual audit: CA Santarosae dipping Miocene bedrock strata", "n": 32, "col": "#475569"}, {"lbl": "Visual audit: NE tidal sandbars (3) + NY dredge mounds (3)", "n": 6, "col": "#475569"}, {"lbl": "Visual audit: FL Key West 60 m sunken steel ship (modern wreck)", "n": 1, "col": "var(--copper)"}, {"lbl": "Unmapped prehistoric stone walls, corners, or ring enclosures", "n": 0, "col": "var(--copper)"}], "regs": [{"reg": "CA Santarosae (Channel Islands)", "area": 11.39, "tiles": 12, "raw": 63, "unm": 32}, {"reg": "NE Block Island Sound", "area": 6.27, "tiles": 10, "raw": 4, "unm": 3}, {"reg": "NY Hudson Paleo-Channel", "area": 10.39, "tiles": 10, "raw": 3, "unm": 3}, {"reg": "FL Keys Submerged Shelf", "area": 6.18, "tiles": 8, "raw": 2, "unm": 1}]};
+  var svg = document.getElementById("dw-f-svg");
+  var btns = document.querySelectorAll(".dw-f-btn");
+  function el(tag, attrs, txt){
+    var n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (txt !== undefined) n.textContent = txt;
+    return n;
+  }
+  function draw(k){
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    if (k === "funnel") {
+      var L = 345, R = 675, T = 34, B = 284;
+      function sx(v){ return L + (v / 80) * (R - L); }
+      svg.appendChild(el("text", {x: 16, y: 19, "font-size": 12, "font-weight": 600, fill: "var(--ink)"}, "Candidate classification funnel across 40 Ice Age paleo-shoreline tiles (34.23 km²)"));
+      svg.appendChild(el("line", {x1: L, x2: R, y1: B, y2: B, stroke: "var(--rule)"}));
+      svg.appendChild(el("line", {x1: L, x2: L, y1: T, y2: B, stroke: "var(--rule)"}));
+      [0, 20, 40, 60, 80].forEach(function(v){
+        var x = sx(v);
+        svg.appendChild(el("text", {x: x, y: B + 15, "text-anchor": "middle", "font-size": 9.5, fill: "var(--muted)"}, String(v)));
+      });
+      var step = (B - T) / D.funnel.length;
+      D.funnel.forEach(function(f, i){
+        var y = T + i * step + 6, h = step - 12;
+        var isLast = (i === D.funnel.length - 1);
+        svg.appendChild(el("text", {x: L - 8, y: y + h * 0.7, "text-anchor": "end", "font-size": 10.2, "font-weight": isLast ? 700 : 400, fill: isLast ? "var(--copper)" : "var(--ink)"}, f.lbl));
+        var w = f.n === 0 ? 3 : Math.max(4, sx(f.n) - L);
+        svg.appendChild(el("rect", {x: L, y: y, width: w, height: h, rx: 2.5, fill: f.col, opacity: f.n === 0 ? 0.35 : 0.88}));
+        svg.appendChild(el("text", {x: L + w + 6, y: y + h * 0.7, "font-size": 10.5, "font-weight": 700, fill: f.col}, String(f.n)));
+      });
+      svg.appendChild(el("text", {x: (L + R) / 2, y: 315, "text-anchor": "middle", "font-size": 10.2, fill: "var(--muted)"}, "Rectilinear corners (75°–105°): 0  ·  Closed ring enclosures (25–200 m): 0"));
+    } else {
+      var L = 215, R = 670, T = 40, B = 265;
+      function sx(v){ return L + (v / 14) * (R - L); }
+      svg.appendChild(el("text", {x: 16, y: 20, "font-size": 12, "font-weight": 600, fill: "var(--ink)"}, "Valid 2 m multibeam seafloor area scanned per Ice Age shelf region (km²)"));
+      svg.appendChild(el("line", {x1: L, x2: R, y1: B, y2: B, stroke: "var(--rule)"}));
+      svg.appendChild(el("line", {x1: L, x2: L, y1: T, y2: B, stroke: "var(--rule)"}));
+      [0, 3, 6, 9, 12].forEach(function(v){
+        var x = sx(v);
+        svg.appendChild(el("text", {x: x, y: B + 15, "text-anchor": "middle", "font-size": 9.5, fill: "var(--muted)"}, v + " km²"));
+      });
+      var step = (B - T) / D.regs.length;
+      D.regs.forEach(function(r, i){
+        var y = T + i * step + 10, h = step - 20;
+        svg.appendChild(el("text", {x: L - 8, y: y + h * 0.65, "text-anchor": "end", "font-size": 10.8, fill: "var(--ink)"}, r.reg));
+        var w = Math.max(4, sx(r.area) - L);
+        svg.appendChild(el("rect", {x: L, y: y, width: w, height: h, rx: 3, fill: "var(--teal)", opacity: 0.85}));
+        svg.appendChild(el("text", {x: L + w + 6, y: y + h * 0.65, "font-size": 10.2, fill: "var(--ink)"}, r.area.toFixed(2) + " km² (" + r.tiles + " tiles · " + r.unm + " unmasked → 0 walls)"));
+      });
+      svg.appendChild(el("text", {x: (L + R) / 2, y: 306, "text-anchor": "middle", "font-size": 10.2, fill: "var(--muted)"}, "Total valid 2 m multibeam coverage: 34.23 km² across 40 pre-registered tiles (depth −10 m to −80 m)"));
+    }
+  }
+  btns.forEach(function(b){
+    b.addEventListener("click", function(){
+      btns.forEach(function(x){ x.classList.remove("is-on"); x.style.background = "transparent"; x.style.color = "var(--ink)"; });
+      b.classList.add("is-on"); b.style.background = "var(--copper)"; b.style.color = "#fff";
+      draw(b.getAttribute("data-k"));
+    });
+  });
+  draw("funnel");
+})();
+</script>
+</figure>
