@@ -27,17 +27,17 @@ def build_tiles(s: dict) -> str:
         ),
         (
             f"{a['spike_years_x5']} vs. {b['spike_years_x5']}",
-            f"years with sharp >5× fire spikes in the 150 years after onset versus before (typical {p1['medians']['spike_years_x5']:.0f}; p = {p1['rate_tests']['x5_after_vs_before']['p_two_sided']:.4f}; zero >10× spikes vs. {b['spike_years_x10']} before)",
+            "years with a peak more than five times the running background, after the onset against before. The background rose about fourfold, which by itself produces this drop; it is not evidence that fires became rarer",
             False,
         ),
         (
             f"{a['spike_years_add50']} vs. {b['spike_years_add50']}",
-            f"years with absolute >50 µg/kg plumes above baseline (rank {p1['ranks']['spike_years_add50']['after_rank_desc']} of {p1['n_windows']}, p = {p1['rate_tests']['add50_after_vs_before']['p_two_sided']:.2f}; flux-scaled {a['spike_years_flux50']} vs. {b['spike_years_flux50']}, p = {p1['rate_tests']['flux50_after_vs_before']['p_two_sided']:.2f})",
+            f"years with a plume more than 50 µg/kg above the background, after against before (rank {p1['ranks']['spike_years_add50']['after_rank_desc']} of {p1['n_windows']}, p = {p1['rate_tests']['add50_after_vs_before']['p_two_sided']:.2f}): no tripling of big plumes, though a smaller rise is not ruled out",
             False,
         ),
         (
-            "Replicated in NEEM",
-            "Steady baseline surge with fewer relative spikes and ordinary absolute plumes—contradicting a century of repeated airburst fires",
+            "Raised background",
+            "The rise is in the steady level, with no large surge of big plumes. That counts against a century of repeated fires, a version of the hypothesis we built ourselves",
             True,
         ),
     ]
