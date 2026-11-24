@@ -26,26 +26,10 @@ def make_tiles(s: dict) -> None:
     p_mu = t1["combinatorial_moiety_null"]["dirichlet_1.0_uniform"]["p_L1_le_5_medrano_urton"] * 100
     p_fp = t1["combinatorial_moiety_null"]["dirichlet_1.0_uniform"]["p_L1_le_3_fitzpatrick"] * 100
     items = [
-        (
-            "8 twin pairs",
-            f"non-Puruchuco Tier A numerical copies across 619 khipus (7 pendant + 1 cluster-sum) at 0 / 100,000 permutation null hits (FDR = 0.000), plus blind recovery of Puruchuco controls",
-            False,
-        ),
-        (
-            "23 cords",
-            "consecutive 3- and 4-digit numbers matching at 0.095% L1 error (34,875 vs. 34,888) between KH0362 (Göteborg, Sweden) and KH0049 (MNAAHP, Lima, Peru)",
-            False,
-        ),
-        (
-            f"{p_mu:.0f}% / {p_fp:.0f}%",
-            "random 6-pachaca splits summing to 130 that match Santa Valley's (70, 63) moiety count as closely as Medrano & Urton (2018) / FitzPatrick (2024)",
-            False,
-        ),
-        (
-            f"{n_ready} / 619",
-            "provenanced khipus with ≥10 knotted cords and repeated banding ready for colonial census matching (led by Pachacamac 35, Incahuasi 23, Ica 18); 221 lack provenance",
-            False,
-        ),
+        ("5", "pairs of khipus sharing runs of numbers that we did not find in the published literature; candidates, not confirmed", False),
+        ("174 cords", "match between a khipu in Paris and one in Lima, 122 of them exactly: nearly the whole of the Lima khipu", False),
+        ("2 and 1", "of the eight pairs first reported were published in 2005, and one is a single khipu catalogued twice", False),
+        ("Inconclusive", "by the plan's own rule: the matcher missed a known pair, and chance produces about one false match per two scans", True),
     ]
     body = ['<div class="tiles">']
     for v, lbl, is_w in items:
@@ -101,13 +85,13 @@ def make_rosetta_twins(s: dict) -> None:
     cases = [
         pack_pendant(
             ("KH0362", "KH0049"),
-            "Sweden ↔ Peru (23 cords)",
+            "Gothenburg and Lima",
             "KH0362 (Nazca — Göteborg, Sweden) ↔ KH0049 (Costa Sur — Lima, Peru)",
             "23 consecutive 3- and 4-digit cords | Sum 34,875 vs 34,888 | 19/23 exact, 23/23 within 1% (L1 error = 0.095%)",
         ),
         {
             "id": "KH0192_KH0470",
-            "btn": "Pachacamac ↔ Huacho (6 clusters)",
+            "btn": "Pachacamac and Huacho",
             "title": "KH0192 (Pachacamac — 5-cord groups) ↔ KH0470 (Huacho — 6-cord groups)",
             "sub": "6 consecutive exact cluster sums (100% identical, L1 error = 0.000%) linking two coastal sites ~130 km apart",
             "label_a": "KH0192 (Pachacamac, 5-cord template)",
@@ -119,31 +103,31 @@ def make_rosetta_twins(s: dict) -> None:
         },
         pack_pendant(
             ("KH0121", "KH0473"),
-            "Marquez ↔ Unknown (17 rev)",
+            "One khipu, recorded twice",
             "KH0121 (Marquez — Berlin VA24370(B)) ↔ KH0473 (Unknown — Berlin VA 66834)",
             "17 consecutive cords in REVERSE orientation | 16/17 exact (1,766 vs 1,772; L1 error = 0.34%) — links unprovenanced khipu to Marquez",
         ),
         pack_pendant(
             ("KH0132", "KH0456"),
-            "Pachacamac Twin (8 cords)",
+            "Two from Pachacamac",
             "KH0132 (Pachacamac — VA42601) ↔ KH0456 (Pachacamac — VA 42559)",
             "8 consecutive 3-digit all-white cords | 7/8 exact (4,291 vs 4,288; L1 error = 0.07%)",
         ),
         pack_pendant(
             ("KH0128", "KH0137"),
-            "Ica–Pisco Exact (10 cords)",
+            "Ica (published 2005)",
             "KH0128 (Between Ica & Pisco — VA16148) ↔ KH0137 (Ica — VA47085)",
             "10 consecutive cords 100.0% exact (335 = 335; L1 error = 0.000%)",
         ),
         pack_pendant(
             ("KH0097", "KH0586"),
-            "Paris ↔ Lima (8 cords)",
+            "Paris and Lima",
             "KH0097 (Unknown — Quai Branly, Paris) ↔ KH0586 (Unknown — MNAAHP, Lima)",
             "8 consecutive cords across two unprovenanced khipus in Paris and Lima (558 vs 555; L1 error = 0.54%)",
         ),
         pack_pendant(
             ("KH0305", "KH0301"),
-            "Puruchuco Control (36 cords)",
+            "Puruchuco (known copy)",
             "Positive Control: KH0305 (UR068) ↔ KH0301 (UR064, Puruchuco Archive)",
             "Blindly recovered without provenance labels: 36 consecutive cords (1,436 vs 1,426; L1 error = 0.70%)",
         ),
@@ -157,7 +141,7 @@ def make_rosetta_twins(s: dict) -> None:
         f'{esc(c["btn"])}</button>'
         for i, c in enumerate(cases)
     )
-    html_out = f"""<figure class="fig" aria-label="Interactive cord-by-cord alignment viewer of discovered khipu twin pairs">
+    html_out = f"""<figure class="fig" aria-label="Cord-by-cord comparison of pairs of khipus that share runs of numbers">
 <div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;align-items:center">
   <span style="font-size:12px;color:var(--muted);margin-right:2px">Select pair:</span>
 {btns_html}
@@ -165,7 +149,7 @@ def make_rosetta_twins(s: dict) -> None:
 <div class="fig-scroll">
 <svg id="kh-t-svg" class="chart" viewBox="0 0 720 335" role="img" aria-label="Aligned numerical cord values for paired khipus" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Blindly discovered numerical twin khipus across all 191,271 pairs in the Open Khipu Repository (Tier A FDR = 0.000; 0 / 100,000 permutation null hits).</strong> Paired vertical bars plot aligned pendant values (or cluster sums for <code>KH0192</code> &harr; <code>KH0470</code>) side by side: Khipu A in teal, Khipu B in copper. Exact cord-by-cord matches appear as equal-height adjacent bars. Hover any bar to read the exact integer knot value.</figcaption>
+<figcaption><strong>Runs of numbers shared by two khipus.</strong> Each button is one pair; the bars show the numbers knotted on successive cords, one khipu dark and the other copper. Equal bars side by side are cords with the same number. The windows are the ones the first run reported. The Paris and Lima pair in fact agrees over about 174 cords, and the Gothenburg and Lima pair over 37. The pair marked &ldquo;one khipu&rdquo; is a single object entered in the database twice. The Ica pair was published by Urton in 2005. The last button is a known copy from Puruchuco, for comparison.</figcaption>
 <script>
 (function(){{
   var CASES = {data_json};
@@ -256,16 +240,16 @@ def make_santa_and_census(s: dict) -> None:
     census = [r for r in s["test3_readiness_census"] if r["n_khipus"] >= 6]
     payload = {"santa": bars_santa, "census": census}
     data_json = json.dumps(payload)
-    html_out = f"""<figure class="fig" aria-label="Santa Valley 1670 revisita calibration and archival Rosetta-readiness census">
+    html_out = f"""<figure class="fig" aria-label="The Santa valley split, and the khipus by provenance">
 <div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;align-items:center">
   <span style="font-size:12px;color:var(--muted);margin-right:4px">View:</span>
-  <button type="button" class="kh-s-btn is-on" data-k="santa" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">Santa Valley 1670 Moiety Null Calibration</button>
-  <button type="button" class="kh-s-btn" data-k="census" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Archival Rosetta-Readiness Census (619 Khipus)</button>
+  <button type="button" class="kh-s-btn is-on" data-k="santa" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">Santa valley split</button>
+  <button type="button" class="kh-s-btn" data-k="census" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Where the khipus come from</button>
 </div>
 <div class="fig-scroll">
 <svg id="kh-s-svg" class="chart" viewBox="0 0 720 330" role="img" aria-label="Santa Valley null probabilities and OKR provenance census" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>Left tab: combinatorial caution on the 1670 Santa Valley moiety match.</strong> Because six <em>pachacas</em> can be split 3-vs-3 in 10 ways, 72.0% of random 6-pachaca compositions summing to 130 (52.8% even under overdispersed Dirichlet(0.5)) match the Santa khipus&rsquo; (70, 63) verso/recto count as closely as Medrano &amp; Urton (2018), and 62.3% (44.4% overdispersed) match as closely as FitzPatrick (2024). By contrast, matching both group count and tribute total jointly in a random 6-khipu bundle is rare (0/10,000), though raw OKR first-cord sums (756 across 134 chunks) remain well above 367 pesos. <strong>Right tab:</strong> out of 619 OKR khipus, 221 lack provenance and 157 provenanced specimens carry &ge;10 knotted cords plus repeated banding ready for colonial-census matching once Peruvian <em>revisitas</em> are digitized.</figcaption>
+<figcaption><strong>First button: one part of the Santa valley match.</strong> Six khipus have been matched to a census of 1670 with six lineage groups. If the groups may be split three against three in any of ten ways, most random sets of six numbers can be made to fit the khipus&rsquo; two halves as closely as the published split does. If the split was fixed beforehand, fewer than one in ten can. Which it was, this study did not establish, and the published match rests on more than the split. <strong>Second button:</strong> the 619 khipus by where they are said to come from; 221 have no recorded provenance.</figcaption>
 <script>
 (function(){{
   var D = {data_json};
@@ -303,13 +287,13 @@ def make_santa_and_census(s: dict) -> None:
       var L = 195, R = 675, T = 40, B = 285;
       var xmax = 240;
       function sx(v){{ return L + (v / xmax) * (R - L); }}
-      svg.appendChild(el("text", {{x: 16, y: 20, "font-size": 12, "font-weight": 600, fill: "var(--ink)"}}, "OKR Khipu Archives (619 total): Total vs. ≥10 knotted vs. Rosetta-ready banded"));
+      svg.appendChild(el("text", {{x: 16, y: 20, "font-size": 12, "font-weight": 600, fill: "var(--ink)"}}, "The 619 khipus by stated provenance: all, with ten or more knotted cords, and with repeated groups"));
       svg.appendChild(el("rect", {{x: 420, y: 10, width: 10, height: 10, fill: "#cbd5e1"}}));
       svg.appendChild(el("text", {{x: 434, y: 19, "font-size": 9.5, fill: "var(--ink)"}}, "Total"));
       svg.appendChild(el("rect", {{x: 472, y: 10, width: 10, height: 10, fill: "var(--teal)"}}));
       svg.appendChild(el("text", {{x: 486, y: 19, "font-size": 9.5, fill: "var(--ink)"}}, "≥10 knotted"));
       svg.appendChild(el("rect", {{x: 558, y: 10, width: 10, height: 10, fill: "var(--copper)"}}));
-      svg.appendChild(el("text", {{x: 572, y: 19, "font-size": 9.5, fill: "var(--ink)"}}, "Rosetta-ready"));
+      svg.appendChild(el("text", {{x: 572, y: 19, "font-size": 9.5, fill: "var(--ink)"}}, "knotted, grouped, provenanced"));
 
       svg.appendChild(el("line", {{x1: L, x2: R, y1: B, y2: B, stroke: "var(--rule)"}}));
       svg.appendChild(el("line", {{x1: L, x2: L, y1: T, y2: B, stroke: "var(--rule)"}}));

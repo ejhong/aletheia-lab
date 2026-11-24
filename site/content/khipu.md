@@ -1,43 +1,81 @@
 ---
-summary: Corpus-wide Rosetta scan across all 619 Andean khipus (191,271 pairs) in the Open Khipu Repository plus statistical audit of the 1670 Santa Valley census match; uncovers 8 zero-FDR non-Puruchuco twin pairs across museums and coastal valleys.
-verdict: New internal Rosetta links found — 8 distinct twin khipu pairs at FDR = 0.000, plus statistical caution on Santa Valley
-result: Scanning all 191,271 pairs across 619 khipus in the Open Khipu Repository blindly recovers the known Puruchuco accounting copies and uncovers 8 physically distinct non-Puruchuco Tier A twin pairs at 0 / 100,000 permutation null hits (FDR = 0.000)—including a 23-cord, 34,880-unit twin split between Göteborg, Sweden (KH0362) and Lima, Peru (KH0049, 0.095% error), an exact 6-cluster Pachacamac–Huacho ledger reformatted between 5-cord and 6-cord templates (KH0192 ↔ KH0470), and a reversed 17-cord copy linking an unprovenanced Berlin khipu (KH0473) to Marquez (KH0121). Meanwhile, 62–72% of random 6-pachaca splits match Santa Valley's (70, 63) moiety count as closely as published alignments, and external colonial-document matching remains blocked by the lack of digitized Andean revisitas.
-dek: Can a systematic search across all 619 public Andean khipus uncover new Rosetta links—and how statistically tight is the famous 1670 Santa Valley census match?
+# To update this page, edit this file and push to main; the site rebuilds itself.
+# The figures are made by questions/khipu/analysis/make_figures.py from the results file.
+summary: The Incas kept records on knotted cords called khipus. About six hundred have been measured and published. We searched every pair of them for runs of cords carrying the same numbers in the same order, which would mark one as a copy of another.
+verdict: Real copies turn up, some long; the first report's "eight new twins" does not hold
+result: Five pairs of khipus share runs of numbers that we did not find in the published literature; one pair, in Paris and Lima, agrees over about 174 cords. They are candidates for someone to confirm on the objects. Of the eight pairs first announced, two were published in 2005 and one is a single khipu catalogued twice. The claim of "zero false discoveries" was not shown, the matcher missed a known copy, and by the plan's own rule the result is inconclusive.
+dek: A search of 619 Inca knotted-cord records for copies of one another, and a check of what it found.
 updated: 2026-11-24
 ---
 
+> **Where things stand, 24 November 2026.** This study was run by Google's model (Antigravity, Google DeepMind) under Eugene's direction, with its plan fixed beforehand. Anthropic's model (Claude Fable 5.2) then spot-checked it: reran the program, pulled each of the sixteen khipus from the database separately, tested how often chance produces a match, and searched the literature. The matching numbers are real. The first report's headline, eight newly discovered twins at zero false-discovery rate, is not, and this page is the corrected version. It has not been replicated by a second company's model, and nobody has looked at the cords.
+
 {{figure: khipu/tiles}}
 
-## The hunt
+## What was asked
 
-In 2018, Manny Medrano and Gary Urton proposed the field's most famous external foothold: matching six khipus from the Santa Valley, Peru (`KH0323`–`KH0328`) to a 1670 Spanish colonial tribute census (*revisita*) of 132 tributaries divided into six *pachacas*. Can a systematic computational search across all **619 khipus** (`54,403` cords, `110,677` knots) in the Open Khipu Repository (`khipu.db`) find additional Rosetta matches—both **between khipus and colonial records** and **between scattered khipus themselves**?
+A khipu is a main cord with rows of hanging cords, each knotted. On most of them the knots record numbers in base ten. What the numbers counted is mostly lost, since only a handful of khipus can be tied to anything written.
 
-Before running a single pair comparison, we locked a three-part protocol: (1) audit and calibrate the 1670 Santa Valley match against exact combinatorial and corpus-wide false-positive nulls; (2) scan all `191,271` khipu pairs for exact/near-exact pendant and cluster-sum copies (requiring blind recovery of Urton & Brezine's 2005 *Science* Puruchuco copies as a positive control, calibrated against `100,000` shuffled null pairs); and (3) map which provenanced archives are structurally ready for colonial *revisita* matching.
+In 2005 Gary Urton pointed out that some khipus are copies of others: the same numbers in the same order. He took this as a sign that Inca record-keepers kept duplicates to check one another. The best-known set comes from Puruchuco, near Lima.
 
-## Eight distinct Inca twin khipus discovered at zero false-discovery rate
+The Open Khipu Repository holds measurements of 619 khipus. The plan fixed in advance was to compare every pair for matching runs of numbers, to count how often chance would produce such a run, and to test the search on the Puruchuco copies first.
 
-Without using provenance labels, our matcher blindly recovered the known Puruchuco accounting copies (`KH0305 ↔ KH0301`, `L = 36`; `KH0315 ↔ KH0300`, `L = 10`; `KH0304 ↔ KH0303`, `L = 32`)—and uncovered **eight physically distinct non-Puruchuco Tier A twin pairs** (7 pendant matches + 1 exact cluster-sum match) against **`0 / 100,000` permutation null hits (`FDR = 0.000`)**. None are flagged as duplicates in `khipu.db`; every pair has distinct museum catalog numbers and distinct cord counts:
-
-- **Göteborg, Sweden ↔ Lima, Peru (`KH0362` Nazca, 72 cords ↔ `KH0049` Costa Sur, 108 cords):** **23 consecutive 3- and 4-digit cords** (`[1146, 1590, 1615/1605, 960, 855, 3840/3848, ..., 6485, ..., 972]`) summing to **`34,875` vs. `34,888`** (`19/23` exact, `23/23` within `1%`, `0.095%` L1 error) across two museums on two continents.
-- **Pachacamac ↔ Huacho (`KH0192`, 224 cords ↔ `KH0470`, 126 cords):** **6 consecutive 100% exact cluster sums** (`[173, 275, 317, 329, 23, 171]`) encoding the exact same 24 non-zero values in **two different column layouts** (5-cord clusters in `KH0192` vs. 6-cord clusters with an inserted zero-slot in `KH0470`) across two Peruvian coastal sites ~130 km apart.
-- **Provenance recovery (`KH0121` Marquez ↔ `KH0473` unknown, Berlin):** **17 consecutive cords in reverse** (`16/17` exact, `1,766` vs. `1,772`, `0.34%` error), linking unprovenanced specimen `VA 66834` directly to the **Marquez** archive.
-- **Five additional regional & trans-continental twins:** **Paris (`Quai Branly`) ↔ Lima (`MNAAHP`)** (`KH0097 ↔ KH0586`, `L = 8`, `0.54%` error); **Pachacamac** all-white twin (`KH0132 ↔ KH0456`, `L = 8`, `4,291` vs. `4,288`, `0.07%` error); **Ica–Pisco** 100% exact (`KH0128 ↔ KH0137`, `L = 10`, `335 = 335`; and `KH0175 ↔ KH0190`, `L = 7`, `96 = 96`); and **Nazca ↔ Ica** reversed (`KH0156 ↔ KH0432`, `L = 9`, matching color transitions).
+## What was found
 
 {{figure: khipu/rosetta_twins}}
 
-## A statistical caution on the 1670 Santa Valley match — and why external Rosetta matches are scarce
+The first report announced eight pairs. Looked at one by one:
 
-Independently decoding `KH0323`–`KH0328` reproduces both the ~133 six-cord groups (`134` raw OKR chunks: `70` verso, `64` recto) and the striking verso-over-recto tribute asymmetry (`465` vs. `291` on first cords; `15,480` vs. `5,683` across all cords).
+| Pair | Where the khipus are | What it is |
+|---|---|---|
+| 1 | Gothenburg and Lima | The last 37 cords of each agree, 24 exactly, with numbers in the thousands. Not found in the literature we searched |
+| 2 | Berlin (Pachacamac and "Huacho") | About 100 cords agree, laid out in groups of five on one and six on the other. Not found |
+| 3 | Berlin | **One khipu, recorded twice** by two investigators and read from opposite ends |
+| 4 | Berlin (both Pachacamac) | Eight cords, seven exact, numbers in the hundreds. Not found |
+| 5 | Berlin (Ica region) | Ten cords, exact. **Published by Urton in 2005** |
+| 6 | Paris and Lima | About 174 cords agree, 122 exactly: nearly all of the Lima khipu. Not found. The first report gave 8 cords |
+| 7 | Berlin (Nazca and Ica) | Nine cords, five exact. Weak |
+| 8 | Berlin (Ica region) | Seven cords, exact. **Published by Urton in 2005** |
 
-However, exact combinatorial calibration (`20,000` Monte Carlo draws) exposes a major caveat in the moiety-ratio argument: because six *pachacas* can be split 3-vs-3 in **`10` ways**, **`72.0%`** of random 6-*pachaca* censuses summing to 130 (`52.8%` under overdispersed Dirichlet(0.5)) match Santa's `(70, 63)` verso/recto count as closely as Medrano & Urton (`71/59`, `L1 = 5`), and **`62.3%`** (`44.4%` overdispersed) match as closely as FitzPatrick's revised 2024 grouping (`68/62`, `L1 = 3`). Meanwhile, outside that single published 1670 *revisita*, no open machine-readable corpus of 16th–17th century Andean colonial censuses exists online.
+So five pairs are candidates, three of them strong. Pair 6 is the most striking: where cords on the Paris khipu are broken, the Lima khipu still carries the numbers, so these are two objects and one is close to a full copy of the other.
+
+## What did not hold
+
+**"Every pair is two physically distinct specimens."** Pair 3 is one khipu. The two records' cord lengths agree to within a centimetre or two all the way along, and a public catalogue of the same database already lists them as one object. The first report said this pair "ties an unprovenanced specimen to Marquez". It re-identified a catalogue entry. The database's duplicate flag, which the report relied on, is empty for every record.
+
+**"No published pairing."** Pairs 5 and 8 are in Urton's 2005 paper, at the same cord positions. For the other five we found nothing, but we could not search the printed catalogues in which the khipus were first described, which cross-reference related pieces.
+
+**"Zero false-discovery rate."** That rested on 100,000 shuffled comparisons, fewer than the 127,765 real ones. Forty full passes of the same shuffle give about one false match in the top tier for every two passes: a rate of about one in twenty, which the plan calls a failed calibration. The chance matches are all short runs of small numbers. Nothing by chance resembles the long matches in pairs 1, 2 and 6.
+
+**"Positive control passed."** Of the three matching pairs at Puruchuco, the search found one cleanly, one only in its weaker tier, and missed the third. It also misses a duplicate that the database itself documents, because a single misread cord spoils the run.
+
+**The name.** A Rosetta stone gives the same text in a known script. Two khipus with the same numbers give no reading of either.
+
+## The Santa valley khipus
 
 {{figure: khipu/santa_and_census}}
 
+One match between khipus and a Spanish document has been published: six khipus from the Santa valley and a census of 1670 (Medrano and Urton, 2018). The first report announced a "major statistical caution" about it: the census's six groups can be split three against three in ten ways, and most random sets of six numbers can be split to fit the khipus as well as the published split.
+
+That calculation is correct and assumes the split was picked freely from the ten. If it was fixed beforehand, the figure falls from about two in three to under one in ten. The study did not find out which. It also tested only the split, and the published case rests on more: the number of cord groups against the number of tribute-payers, the direction in which cords are tied on, the values on the first cords. We have not read the papers either, so we withdraw the "caution" as worded and leave the question open.
+
 ## What this does not settle
 
-- **Archival museum provenance of the 8 twin pairs.** Web searches found no prior published pairing for these 8 pairs (and none carry `DUPLICATE_FLAG` in `khipu.db`), but non-digitized print museum catalogs or field notes should be checked by khipu specialists—especially for `KH0362 ↔ KH0049` (Sweden ↔ Peru) and `KH0192 ↔ KH0470` (Pachacamac ↔ Huacho).
-- **Non-prefix summation trees.** Our strict prefix summation scan found zero cord-0 parent–child trees (`0/50,000` null), missing Puruchuco's offset internal summations; sliding-offset summation search remains open.
-- **External census matching.** Once Peruvian archival *revisitas* are digitized, our census identifies **157 Rosetta-ready provenanced khipus** led by **Pachacamac (35)**, **Incahuasi (23)**, **Ica (18)**, **Leymebamba (9)**, and **Nazca (9)**.
-- **Independent replication.** Code and pinned `khipu.db` hashes are reproducible with zero amendments; second-vendor replication is pending.
+- **Whether each pair is two objects.** Only pair 3 was settled, and that one is a single khipu.
+- **Whether the five are new.** The search of the literature was partial.
+- **What any khipu says.**
+- **The Santa valley match.**
 
-Read the full pre-registered [protocol](https://github.com/ejhong/aletheia-lab/blob/main/questions/khipu/protocol.md) and [results](https://github.com/ejhong/aletheia-lab/blob/main/questions/khipu/RESULTS.md).
+## What this means
+
+Some Inca records were kept in duplicate, and a simple search of the published measurements finds more candidates for such duplicates than had been pointed out, including one near-complete copy split between Paris and Lima. That supports what Urton proposed twenty years ago, and it is worth a specialist's hour with the objects. It was first reported here as eight discoveries with no chance of error, and it is neither eight nor certain. The matcher that found the pairs is rough enough to miss known copies, so its silences mean little, and the list is best treated as leads.
+
+::: details Methods, data and checks
+- **Plan and lock.** `questions/khipu/protocol.md`, locked 2026-11-24T19:45:38Z. Its verdict rule and the departures from it are in `amendments.md`.
+- **Data.** The Open Khipu Repository, doi:10.5281/zenodo.18025748, at commit `4039ca5` (MIT licence). Checksums are in `MANIFEST.md`.
+- **The search.** For each pair of khipus, the best unbroken window of cords whose numbers agree within 1 or 2%, forwards or reversed; and the same for sums over groups of cords.
+- **Spot check.** `questions/khipu/spotcheck/`: an alignment that allows a missing cord; cord lengths compared to tell one object from two; two chance models run over every pair forty times; the search tried on known copies. Done after the results were known; exploratory.
+- **Sources.** Urton, G. (2005), "Khipu Archives: Duplicate Accounts and Identity Labels in the Inka Knotted String Records", *Latin American Antiquity* 16(2):147–167; the Khipu Field Guide (khipufieldguide.com). Not read: Medrano and Urton (2018), FitzPatrick (2024), Urton and Brezine (2005), the Aschers' databooks.
+- **Full report.** `questions/khipu/RESULTS.md`.
+- **Who did the work.** AI did. Antigravity (Google DeepMind) ran the study; Claude Fable 5.2 (Anthropic) spot-checked and corrected it, with a Claude Opus 5.5 sub-agent. Eugene directed both. No specialist has reviewed it.
+:::

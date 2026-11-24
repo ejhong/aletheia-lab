@@ -244,9 +244,9 @@ def minds():
 
 def deep_memory():
     tiles("topic-deep-memory", [
-        ("9", "tests of claims about the deep past: travellers, star maps, flood stories, lost industries, a secret gospel and an unread script", False),
+        ("10", "studies of the deep past: travellers, star maps, flood stories, lost industries, a secret gospel, an unread script and knotted cords", False),
         ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean; none unexplained", False),
-        ("4 of 9", "could not decide, because the method could not have seen the thing even if it were there", False),
+        ("4 of 10", "could not decide, because the method could not have seen the thing even if it were there", False),
         ("Still open", "the stories and images themselves, which the atlas weighs, and stories of particular drowned places", True)])
     scorecard("topic-deep-memory", "scorecard", "What each study tested and found",
               ["The trace", "The claim", "What the record shows"], [
@@ -276,7 +276,10 @@ def deep_memory():
          "Partly", "An unusually close echo of Mark; author unknown", "partly"),
         (12, "linear-a", "Linear A read as Semitic", "Read with the proposed sound values, the words of Minoan Crete are Semitic.",
          "They match Semitic roots as often as Greek words do, and so do Hebrew words. The test cannot tell a Semitic language from Greek, and the proposal's main evidence was not tested.",
-         "Could not tell", "The test cannot decide", "open")])
+         "Could not tell", "The test cannot decide", "open"),
+        (13, "khipu", "Copies among the khipus", "Some Inca knotted-cord records are copies of others, and a search of the published measurements can find them.",
+         "Five pairs share runs of numbers not found in the literature searched; one, in Paris and Lima, matches over about 174 cords. Of eight first reported, two were published in 2005 and one is a single khipu catalogued twice. The search missed a known copy.",
+         "Partly", "Real copies, to be confirmed on the objects", "partly")])
     (FIG / "topic-deep-memory" / "sky-plate.html").write_text(
         '<figure class="plate"><img src="../../assets/illustrations/ancient-skies.jpg" loading="lazy" width="1536" height="1024" '
         'alt="An engraving of a round chart of the southern sky, crowded with constellation figures around an empty circle at its centre, '
