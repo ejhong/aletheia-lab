@@ -1,0 +1,4 @@
+scale bar row, length px, x0, x1: (487, 73, np.int64(474), np.int64(546))
+px per um: 3.65
+n dark spots 241  equiv diameter um: median 0.44, p10 0.31, p90 0.76
+nearest-neighbour spacing um: median 1.48

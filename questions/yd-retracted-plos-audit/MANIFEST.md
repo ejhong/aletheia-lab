@@ -16,10 +16,15 @@ All 13 primary source files are openly accessible CC-BY 4.0 or public scientific
 | `retraction_shocked_quartz.xml` | The PLOS One Editors (Feb 11, 2026), *PLOS One* `21(2): e0342620` — official retraction notice for Kennett et al. (2025) | `https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0342620&type=manuscript` | 2026-11-24 | CC-BY-4.0 | 6,571 | `27177588d396ae329b2b3a1da3cc9372d1b2d989bbfd8e14b0ffb17ccf1286d3` |
 | `kennett2025_si.pdf` | Kennett et al. (2025) Supporting Information PDF (`pone.0319840.s001.pdf`, 22 pages): `SI Tables S1–S4` (radiocarbon dates), `SI Tables S5–S8` (vertical proxy & shocked quartz counts), `SI Figs S1–S9`, and methods | `https://journals.plos.org/plosone/article/file?type=supplementary&id=10.1371/journal.pone.0319840.s001` | 2026-11-24 | CC-BY-4.0 | 8,128,952 | `8afad479a09d86653c0e46c4572c3842752cb16f2aacc68ba57d5e9250ea8395` |
 | `marine20.14c` | Heaton et al. (2020), *Radiocarbon* `62:779–820` — official `Marine20` marine radiocarbon calibration curve (`0–55,000 cal BP`, archived in `rcarbon`) | `https://raw.githubusercontent.com/ahb108/rcarbon/master/inst/extdata/marine20.14c` | 2026-11-24 | Public scientific reference curve (GPL-3 package archive) | 141,228 | `3ce3741050016b6febeced357c334df39cf75356c28d4ae8e1c935be5ee3f168` |
-| `intcal20.14c` | Reimer et al. (2020), *Radiocarbon* `62:725–757` — official `IntCal20` Northern Hemisphere terrestrial calibration curve (verified mirror from `questions/ydb-site-synchrony/data/intcal20.14c`) | `https://intcal.org/curves/intcal20.14c` | 2026-11-24 | Public scientific reference curve | 129,212 | `0e03064baac546e7b67fca62b8e2365deabd8ee0a66881ad93aeb83e1c423eed` |
+| `intcal20.14c` | Reimer et al. (2020), *Radiocarbon* `62:725–757` — official `IntCal20` Northern Hemisphere terrestrial calibration curve, in the three-column form distributed with the `rintcal` package | `https://raw.githubusercontent.com/Maarten14C/rintcal/master/inst/extdata/3Col_intcal20.14C` | 2026-11-24 | Public scientific reference curve | 129,212 | `0e03064baac546e7b67fca62b8e2365deabd8ee0a66881ad93aeb83e1c423eed` |
 
 ## Software Environment
 
 - Python `3.12.16`
 - `numpy 2.3.5`, `scipy 1.18.1`, `pypdf 7.1.1`
 - Pure-stdlib `zipfile` + `xml.etree.ElementTree` for `.xlsx` and JATS `.xml` parsing; zero external network calls during analysis execution.
+
+## Corrections
+
+- 2026-11-24 (spot check): the address for `intcal20.14c` was given as `https://intcal.org/curves/intcal20.14c`. The file at that address has a different size and hash (221,617 bytes, SHA-256 `974a6664…`). The recorded hash belongs to the three-column file from the `rintcal` package, now named above. The two agree at every 5-year point.
+- The rerun under Amendment 2 used Python 3.12 with `numpy 2.3.5`, `scipy 1.18.1` and `pypdf 7.1.1`, as above.

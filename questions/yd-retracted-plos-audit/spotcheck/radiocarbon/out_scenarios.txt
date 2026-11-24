@@ -1,0 +1,37 @@
+
+Core 52 UGAMS-50555 11120+-40
+  S0: dR=71+-50  median=12406 (RESULTS 12404)  h95=(12129.0, 12621.0)  P(12900-12700)=0.000  P(<11700)=0.00  A1-condition=True
+  S1: dR=271+-100  median=12118 (RESULTS 12116)  h95=(11750.0, 12473.0)  P(12900-12700)=0.000  P(<11700)=0.01  A1-condition=True
+  S2: dR=571+-150  median=11644 (RESULTS 11642)  h95=(11182.0, 12166.0)  P(12900-12700)=0.000  P(<11700)=0.58  A1-condition=True
+  S3: dR=871+-200  median=11224 (RESULTS 11222)  h95=(10593.0, 11836.0)  P(12900-12700)=0.000  P(<11700)=0.93  A1-condition=True
+  Heaton2023 bracket (lat 75.59N, GS boost 894): low median=12398 h95=(12093.0, 12638.0) P(YDB)=0.001; high median=11091 h95=(10773.0, 11319.0) P(YDB)=0.000
+
+Core 64 UGAMS-61104 11489+-45
+  S0: dR=218+-50  median=12629 (RESULTS 12627)  h95=(12449.0, 12781.0)  P(12900-12700)=0.166  P(<11700)=0.00  A1-condition=False
+  S1: dR=418+-100  median=12413 (RESULTS 12411)  h95=(12053.0, 12685.0)  P(12900-12700)=0.009  P(<11700)=0.00  A1-condition=True
+  S2: dR=718+-150  median=11995 (RESULTS 11993)  h95=(11469.0, 12480.0)  P(12900-12700)=0.000  P(<11700)=0.13  A1-condition=True
+  S3: dR=1018+-200  median=11545 (RESULTS 11543)  h95=(10969.0, 12256.0)  P(12900-12700)=0.000  P(<11700)=0.69  A1-condition=True
+  Heaton2023 bracket (lat 72.43N, GS boost 1039): low median=12619 h95=(12247.0, 12949.0) P(YDB)=0.243; high median=11195 h95=(10732.0, 11656.0) P(YDB)=0.000
+
+Core 67 UGAMS-61105 11495+-30
+  S0: dR=218+-50  median=12635 (RESULTS 12633)  h95=(12463.0, 12769.0)  P(12900-12700)=0.170  P(<11700)=0.00  A1-condition=False
+  S1: dR=418+-100  median=12424 (RESULTS 12422)  h95=(12076.0, 12686.0)  P(12900-12700)=0.008  P(<11700)=0.00  A1-condition=True
+  S2: dR=718+-150  median=12005 (RESULTS 12003)  h95=(11489.0, 12480.0)  P(12900-12700)=0.000  P(<11700)=0.12  A1-condition=True
+  S3: dR=1018+-200  median=11553 (RESULTS 11551)  h95=(10991.0, 12254.0)  P(12900-12700)=0.000  P(<11700)=0.68  A1-condition=True
+  Heaton2023 bracket (lat 72.43N, GS boost 1039): low median=12625 h95=(12266.0, 12943.0) P(YDB)=0.254; high median=11205 h95=(10750.0, 11654.0) P(YDB)=0.000
+
+Core 77 UGAMS-51366 10810+-30
+  S0: dR=103+-50  median=11891 (RESULTS 11889)  h95=(11617.0, 12184.0)  P(12900-12700)=0.000  P(<11700)=0.07  A1-condition=True
+  S1: dR=303+-100  median=11572 (RESULTS 11570)  h95=(11231.0, 11925.0)  P(12900-12700)=0.000  P(<11700)=0.75  A1-condition=True
+  S2: dR=603+-150  median=11157 (RESULTS 11155)  h95=(10675.0, 11648.0)  P(12900-12700)=0.000  P(<11700)=0.99  A1-condition=True
+  S3: dR=903+-200  median=10744 (RESULTS 10742)  h95=(10179.0, 11266.0)  P(12900-12700)=0.000  P(<11700)=1.00  A1-condition=True
+  Heaton2023 bracket (lat 68.31N, GS boost 1395): low median=11896 h95=(11482.0, 12337.0) P(YDB)=0.000; high median=9927 h95=(9571.0, 10219.0) P(YDB)=0.000
+
+A1 (locked rule: under S2, >=2 of 4 cores with median <12500 or P(12900-12700)<0.10): 4/4 -> PASS (triggered)
+Same condition under S0 (no deglacial boost): 2/4
+Core 52 625-630 if 14C=11020: S0 median=12268 P(YDB)=0.000
+Core 52 625-630 if 14C=11020: S1 median=11965 P(YDB)=0.000
+Core 52 625-630 if 14C=11020: S2 median=11504 P(YDB)=0.000
+Core 52 625-630 if 14C=11020: S3 median=11069 P(YDB)=0.000
+Core 67 30-32 (11280+-30) S0 (err 50): median=12427 mean=12414
+Core 67 30-32 (11280+-30) dR=218+-135: median=12385 mean=12364

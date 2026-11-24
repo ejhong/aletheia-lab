@@ -1,0 +1,1927 @@
+{
+  "question": "yd-retracted-plos-audit",
+  "issue": 127,
+  "verdicts": {
+    "paper_a_baffin_bay": {
+      "verdict": "retraction_strongly_supported",
+      "checks_triggered_count": 4,
+      "checks": {
+        "A1_polar_14c": true,
+        "A2_foram_s30_s34": true,
+        "A3_core64_or_coverage": true,
+        "A4_x100_math": true,
+        "A5_d17O_and_refs": false
+      }
+    },
+    "paper_b_shocked_quartz": {
+      "verdict": "retraction_mixed_or_harsh",
+      "checks": {
+        "B1_chronology_overturned": true,
+        "B2_missing_controls": true,
+        "B_notice_challenges_microscopy": false
+      }
+    }
+  },
+  "pillar1_baffin_14c": {
+    "metadata_audit": {
+      "n_raw_14c_dates_table_s1": 27,
+      "table_s1_embedded_as_raster_image": true,
+      "si_table_s17_present_p220": true,
+      "si_table_s17_n_rows": 38,
+      "si_table_s17_n_with_approx_counts": 37,
+      "si_table_s17_n_blank_rows": 1,
+      "si_table_s17_n_mixed_benthic_and_planktic": 10,
+      "species_level_dated_pick_breakdown_reported": false,
+      "notes_fairness": "PLOS retraction notice stated foraminifera type/count were missing; SI Table S17 (p. 220) actually reports broad group (mixed benthics/planktics) and approximate specimen counts (400-4,400) for 17 of 21 samples (4 left blank), though without species-level percentages\u2014and reveals that Cores 64 and 67 mixed benthic and planktic foraminifera in the same AMS targets."
+    },
+    "reproduction_median_abs_diff_vs_SI_TableS1_yr": 579.4,
+    "stratigraphic_age_inversions": [
+      {
+        "core": "52",
+        "upper_depth_cm": "615-620",
+        "upper_c14": 11760.0,
+        "lower_depth_cm": "625-630",
+        "lower_c14": 11120.0,
+        "reversal_14c_yr": 640.0
+      },
+      {
+        "core": "64",
+        "upper_depth_cm": "275-280",
+        "upper_c14": 13850.0,
+        "lower_depth_cm": "290-293",
+        "lower_c14": 10990.0,
+        "reversal_14c_yr": 2860.0
+      },
+      {
+        "core": "64",
+        "upper_depth_cm": "290-293",
+        "upper_c14": 10990.0,
+        "lower_depth_cm": "293-297",
+        "lower_c14": 10700.0,
+        "reversal_14c_yr": 290.0
+      },
+      {
+        "core": "77",
+        "upper_depth_cm": "160-161",
+        "upper_c14": 11030.0,
+        "lower_depth_cm": "161-162",
+        "lower_c14": 10810.0,
+        "reversal_14c_yr": 220.0
+      }
+    ],
+    "per_core": {
+      "52": {
+        "core_name": "83023-052",
+        "ydb_cm": [
+          625.0,
+          630.0
+        ],
+        "dr_holocene": 71.0,
+        "dr_si_err": 69.0,
+        "n_dates": 10,
+        "nearest_date_to_ydb": {
+          "depth_cm": "625-630",
+          "lab_id": "UGAMS-50555",
+          "c14_age": 11120.0,
+          "c14_err": 40.0,
+          "si_table_s1_mu": 12992
+        },
+        "scenarios_nearest": {
+          "S0_Holocene_Pearce2023": {
+            "c14_age": 11120.0,
+            "c14_err": 40.0,
+            "delta_r": 71.0,
+            "delta_r_err": 50.0,
+            "median_cal_bp": 12403.6,
+            "mean_cal_bp": 12393.0,
+            "sd_cal_yr": 127.3,
+            "hpd68": [
+              12295.0,
+              12550.0
+            ],
+            "hpd95": [
+              12130.0,
+              12620.0
+            ],
+            "p_ydb_12900_12700": 0.0005,
+            "p_yd_12900_11700": 1.0,
+            "p_younger_12700": 0.9995,
+            "p_post_yd_lt11700": 0.0,
+            "prob_sum": 1.0
+          },
+          "S0_SI_ExactErr": {
+            "c14_age": 11120.0,
+            "c14_err": 40.0,
+            "delta_r": 71.0,
+            "delta_r_err": 69.0,
+            "median_cal_bp": 12396.4,
+            "mean_cal_bp": 12384.2,
+            "sd_cal_yr": 141.2,
+            "hpd68": [
+              12275.0,
+              12555.0
+            ],
+            "hpd95": [
+              12095.0,
+              12640.0
+            ],
+            "p_ydb_12900_12700": 0.0014,
+            "p_yd_12900_11700": 1.0,
+            "p_younger_12700": 0.9986,
+            "p_post_yd_lt11700": 0.0,
+            "prob_sum": 1.0
+          },
+          "S1_Deglacial_plus200": {
+            "c14_age": 11120.0,
+            "c14_err": 40.0,
+            "delta_r": 271.0,
+            "delta_r_err": 100.0,
+            "median_cal_bp": 12115.8,
+            "mean_cal_bp": 12117.7,
+            "sd_cal_yr": 190.2,
+            "hpd68": [
+              11930.0,
+              12325.0
+            ],
+            "hpd95": [
+              11750.0,
+              12470.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.9864,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.0136,
+            "prob_sum": 1.0
+          },
+          "S2_Deglacial_plus500": {
+            "c14_age": 11120.0,
+            "c14_err": 40.0,
+            "delta_r": 571.0,
+            "delta_r_err": 150.0,
+            "median_cal_bp": 11641.6,
+            "mean_cal_bp": 11653.0,
+            "sd_cal_yr": 252.7,
+            "hpd68": [
+              11375.0,
+              11885.0
+            ],
+            "hpd95": [
+              11185.0,
+              12165.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.4183,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.5817,
+            "prob_sum": 1.0
+          },
+          "S3_Stadial_plus800": {
+            "c14_age": 11120.0,
+            "c14_err": 40.0,
+            "delta_r": 871.0,
+            "delta_r_err": 200.0,
+            "median_cal_bp": 11221.8,
+            "mean_cal_bp": 11227.4,
+            "sd_cal_yr": 314.1,
+            "hpd68": [
+              10905.0,
+              11545.0
+            ],
+            "hpd95": [
+              10595.0,
+              11835.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.0679,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.9321,
+            "prob_sum": 1.0
+          }
+        },
+        "all_dates": [
+          {
+            "depth_cm": "440-445",
+            "lab_id": "Beta-9710",
+            "c14_age": 4660.0,
+            "c14_err": 315.0,
+            "si_mu": 5409,
+            "recalc_S0_SI_mu": 4587.7,
+            "recalc_S0_med": 4590.7,
+            "recalc_S1_med": 4335.0,
+            "recalc_S2_med": 3955.8,
+            "recalc_S3_med": 3578.9
+          },
+          {
+            "depth_cm": "460-465",
+            "lab_id": "Beta-9711",
+            "c14_age": 8400.0,
+            "c14_err": 200.0,
+            "si_mu": 9474,
+            "recalc_S0_SI_mu": 8708.5,
+            "recalc_S0_med": 8697.9,
+            "recalc_S1_med": 8459.7,
+            "recalc_S2_med": 8121.1,
+            "recalc_S3_med": 7818.1
+          },
+          {
+            "depth_cm": "480-505",
+            "lab_id": "Beta-9712",
+            "c14_age": 8410.0,
+            "c14_err": 200.0,
+            "si_mu": 9489,
+            "recalc_S0_SI_mu": 8719.8,
+            "recalc_S0_med": 8709.6,
+            "recalc_S1_med": 8471.9,
+            "recalc_S2_med": 8131.6,
+            "recalc_S3_med": 7828.0
+          },
+          {
+            "depth_cm": "574-579",
+            "lab_id": "UGAMS-45600",
+            "c14_age": 8480.0,
+            "c14_err": 30.0,
+            "si_mu": 9538,
+            "recalc_S0_SI_mu": 8785.4,
+            "recalc_S0_med": 8785.7,
+            "recalc_S1_med": 8529.1,
+            "recalc_S2_med": 8194.3,
+            "recalc_S3_med": 7889.4
+          },
+          {
+            "depth_cm": "615-620",
+            "lab_id": "UGAMS-51367",
+            "c14_age": 11760.0,
+            "c14_err": 40.0,
+            "si_mu": 13687,
+            "recalc_S0_SI_mu": 13001.9,
+            "recalc_S0_med": 13003.2,
+            "recalc_S1_med": 12823.8,
+            "recalc_S2_med": 12525.6,
+            "recalc_S3_med": 12140.5
+          },
+          {
+            "depth_cm": "625-630",
+            "lab_id": "UGAMS-50555",
+            "c14_age": 11120.0,
+            "c14_err": 40.0,
+            "si_mu": 12992,
+            "recalc_S0_SI_mu": 12384.2,
+            "recalc_S0_med": 12403.6,
+            "recalc_S1_med": 12115.8,
+            "recalc_S2_med": 11641.6,
+            "recalc_S3_med": 11221.8
+          },
+          {
+            "depth_cm": "630-635",
+            "lab_id": "UGAMS-50556",
+            "c14_age": 11060.0,
+            "c14_err": 60.0,
+            "si_mu": 13023,
+            "recalc_S0_SI_mu": 12300.5,
+            "recalc_S0_med": 12314.8,
+            "recalc_S1_med": 12025.8,
+            "recalc_S2_med": 11557.6,
+            "recalc_S3_med": 11128.3
+          },
+          {
+            "depth_cm": "635-640",
+            "lab_id": "UGAMS-61106",
+            "c14_age": 11350.0,
+            "c14_err": 35.0,
+            "si_mu": 13296,
+            "recalc_S0_SI_mu": 12628.8,
+            "recalc_S0_med": 12634.0,
+            "recalc_S1_med": 12424.1,
+            "recalc_S2_med": 12005.5,
+            "recalc_S3_med": 11553.7
+          },
+          {
+            "depth_cm": "640-645",
+            "lab_id": "UGAMS-50557",
+            "c14_age": 12640.0,
+            "c14_err": 60.0,
+            "si_mu": 15147,
+            "recalc_S0_SI_mu": 14005.9,
+            "recalc_S0_med": 13990.3,
+            "recalc_S1_med": 13739.1,
+            "recalc_S2_med": 13399.1,
+            "recalc_S3_med": 13091.6
+          },
+          {
+            "depth_cm": "875-890",
+            "lab_id": "Beta-8896",
+            "c14_age": 30290.0,
+            "c14_err": 2490.0,
+            "si_mu": 36364,
+            "recalc_S0_SI_mu": 33840.0,
+            "recalc_S0_med": 33792.8,
+            "recalc_S1_med": 33580.0,
+            "recalc_S2_med": 33264.8,
+            "recalc_S3_med": 32953.9
+          }
+        ]
+      },
+      "64": {
+        "core_name": "2013029-064",
+        "ydb_cm": [
+          312.0,
+          318.0
+        ],
+        "dr_holocene": 218.0,
+        "dr_si_err": 135.0,
+        "n_dates": 7,
+        "nearest_date_to_ydb": {
+          "depth_cm": "312-318",
+          "lab_id": "UGAMS-61104",
+          "c14_age": 11489.0,
+          "c14_err": 45.0,
+          "si_table_s1_mu": 13025
+        },
+        "scenarios_nearest": {
+          "S0_Holocene_Pearce2023": {
+            "c14_age": 11489.0,
+            "c14_err": 45.0,
+            "delta_r": 218.0,
+            "delta_r_err": 50.0,
+            "median_cal_bp": 12626.8,
+            "mean_cal_bp": 12622.8,
+            "sd_cal_yr": 84.0,
+            "hpd68": [
+              12560.0,
+              12720.0
+            ],
+            "hpd95": [
+              12450.0,
+              12780.0
+            ],
+            "p_ydb_12900_12700": 0.1738,
+            "p_yd_12900_11700": 0.9992,
+            "p_younger_12700": 0.8254,
+            "p_post_yd_lt11700": 0.0,
+            "prob_sum": 1.0
+          },
+          "S0_SI_ExactErr": {
+            "c14_age": 11489.0,
+            "c14_err": 45.0,
+            "delta_r": 218.0,
+            "delta_r_err": 135.0,
+            "median_cal_bp": 12616.6,
+            "mean_cal_bp": 12607.8,
+            "sd_cal_yr": 165.0,
+            "hpd68": [
+              12470.0,
+              12760.0
+            ],
+            "hpd95": [
+              12250.0,
+              12950.0
+            ],
+            "p_ydb_12900_12700": 0.2492,
+            "p_yd_12900_11700": 0.9688,
+            "p_younger_12700": 0.7196,
+            "p_post_yd_lt11700": 0.0,
+            "prob_sum": 1.0
+          },
+          "S1_Deglacial_plus200": {
+            "c14_age": 11489.0,
+            "c14_err": 45.0,
+            "delta_r": 418.0,
+            "delta_r_err": 100.0,
+            "median_cal_bp": 12411.3,
+            "mean_cal_bp": 12393.3,
+            "sd_cal_yr": 165.3,
+            "hpd68": [
+              12270.0,
+              12595.0
+            ],
+            "hpd95": [
+              12055.0,
+              12685.0
+            ],
+            "p_ydb_12900_12700": 0.0092,
+            "p_yd_12900_11700": 0.9999,
+            "p_younger_12700": 0.9908,
+            "p_post_yd_lt11700": 0.0001,
+            "prob_sum": 1.0
+          },
+          "S2_Deglacial_plus500": {
+            "c14_age": 11489.0,
+            "c14_err": 45.0,
+            "delta_r": 718.0,
+            "delta_r_err": 150.0,
+            "median_cal_bp": 11993.0,
+            "mean_cal_bp": 11992.1,
+            "sd_cal_yr": 258.8,
+            "hpd68": [
+              11740.0,
+              12270.0
+            ],
+            "hpd95": [
+              11470.0,
+              12480.0
+            ],
+            "p_ydb_12900_12700": 0.0002,
+            "p_yd_12900_11700": 0.8697,
+            "p_younger_12700": 0.9998,
+            "p_post_yd_lt11700": 0.1303,
+            "prob_sum": 1.0
+          },
+          "S3_Stadial_plus800": {
+            "c14_age": 11489.0,
+            "c14_err": 45.0,
+            "delta_r": 1018.0,
+            "delta_r_err": 200.0,
+            "median_cal_bp": 11543.1,
+            "mean_cal_bp": 11558.3,
+            "sd_cal_yr": 311.6,
+            "hpd68": [
+              11220.0,
+              11820.0
+            ],
+            "hpd95": [
+              10970.0,
+              12255.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.3167,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.6833,
+            "prob_sum": 1.0
+          }
+        },
+        "all_dates": [
+          {
+            "depth_cm": "135-140",
+            "lab_id": "OS-118358",
+            "c14_age": 9200.0,
+            "c14_err": 35.0,
+            "si_mu": 10054,
+            "recalc_S0_SI_mu": 9516.0,
+            "recalc_S0_med": 9487.8,
+            "recalc_S1_med": 9263.5,
+            "recalc_S2_med": 8876.8,
+            "recalc_S3_med": 8520.2
+          },
+          {
+            "depth_cm": "275-280",
+            "lab_id": "OS-118649",
+            "c14_age": 13850.0,
+            "c14_err": 95.0,
+            "si_mu": 16171,
+            "recalc_S0_SI_mu": 15602.4,
+            "recalc_S0_med": 15598.6,
+            "recalc_S1_med": 15338.8,
+            "recalc_S2_med": 14903.3,
+            "recalc_S3_med": 14444.0
+          },
+          {
+            "depth_cm": "290-293",
+            "lab_id": "UGAMS-50558",
+            "c14_age": 10990.0,
+            "c14_err": 30.0,
+            "si_mu": 12534,
+            "recalc_S0_SI_mu": 11999.6,
+            "recalc_S0_med": 11994.7,
+            "recalc_S1_med": 11670.2,
+            "recalc_S2_med": 11255.8,
+            "recalc_S3_med": 10826.2
+          },
+          {
+            "depth_cm": "293-297",
+            "lab_id": "UGAMS-51364",
+            "c14_age": 10700.0,
+            "c14_err": 30.0,
+            "si_mu": 12193,
+            "recalc_S0_SI_mu": 11554.0,
+            "recalc_S0_med": 11530.2,
+            "recalc_S1_med": 11264.6,
+            "recalc_S2_med": 10843.7,
+            "recalc_S3_med": 10435.8
+          },
+          {
+            "depth_cm": "312-318",
+            "lab_id": "UGAMS-61104",
+            "c14_age": 11489.0,
+            "c14_err": 45.0,
+            "si_mu": 13025,
+            "recalc_S0_SI_mu": 12607.8,
+            "recalc_S0_med": 12626.8,
+            "recalc_S1_med": 12411.3,
+            "recalc_S2_med": 11993.0,
+            "recalc_S3_med": 11543.1
+          },
+          {
+            "depth_cm": "323-325",
+            "lab_id": "UGAMS-51984",
+            "c14_age": 12540.0,
+            "c14_err": 45.0,
+            "si_mu": 14341,
+            "recalc_S0_SI_mu": 13696.7,
+            "recalc_S0_med": 13673.9,
+            "recalc_S1_med": 13450.1,
+            "recalc_S2_med": 13142.1,
+            "recalc_S3_med": 12860.6
+          },
+          {
+            "depth_cm": "330-335",
+            "lab_id": "OS-117862",
+            "c14_age": 12500.0,
+            "c14_err": 45.0,
+            "si_mu": 14280,
+            "recalc_S0_SI_mu": 13648.8,
+            "recalc_S0_med": 13629.1,
+            "recalc_S1_med": 13405.8,
+            "recalc_S2_med": 13100.4,
+            "recalc_S3_med": 12823.5
+          }
+        ]
+      },
+      "67": {
+        "core_name": "2008029-067",
+        "ydb_cm": [
+          32.0,
+          35.0
+        ],
+        "dr_holocene": 218.0,
+        "dr_si_err": 135.0,
+        "n_dates": 5,
+        "nearest_date_to_ydb": {
+          "depth_cm": "32-35",
+          "lab_id": "UGAMS-61105",
+          "c14_age": 11495.0,
+          "c14_err": 30.0,
+          "si_table_s1_mu": 13030
+        },
+        "scenarios_nearest": {
+          "S0_Holocene_Pearce2023": {
+            "c14_age": 11495.0,
+            "c14_err": 30.0,
+            "delta_r": 218.0,
+            "delta_r_err": 50.0,
+            "median_cal_bp": 12632.7,
+            "mean_cal_bp": 12629.0,
+            "sd_cal_yr": 77.8,
+            "hpd68": [
+              12570.0,
+              12715.0
+            ],
+            "hpd95": [
+              12465.0,
+              12770.0
+            ],
+            "p_ydb_12900_12700": 0.1779,
+            "p_yd_12900_11700": 0.9995,
+            "p_younger_12700": 0.8217,
+            "p_post_yd_lt11700": 0.0,
+            "prob_sum": 1.0
+          },
+          "S0_SI_ExactErr": {
+            "c14_age": 11495.0,
+            "c14_err": 30.0,
+            "delta_r": 218.0,
+            "delta_r_err": 135.0,
+            "median_cal_bp": 12623.3,
+            "mean_cal_bp": 12615.9,
+            "sd_cal_yr": 159.1,
+            "hpd68": [
+              12475.0,
+              12755.0
+            ],
+            "hpd95": [
+              12265.0,
+              12940.0
+            ],
+            "p_ydb_12900_12700": 0.2605,
+            "p_yd_12900_11700": 0.9689,
+            "p_younger_12700": 0.7084,
+            "p_post_yd_lt11700": 0.0,
+            "prob_sum": 1.0
+          },
+          "S1_Deglacial_plus200": {
+            "c14_age": 11495.0,
+            "c14_err": 30.0,
+            "delta_r": 418.0,
+            "delta_r_err": 100.0,
+            "median_cal_bp": 12422.3,
+            "mean_cal_bp": 12404.2,
+            "sd_cal_yr": 159.0,
+            "hpd68": [
+              12285.0,
+              12595.0
+            ],
+            "hpd95": [
+              12075.0,
+              12685.0
+            ],
+            "p_ydb_12900_12700": 0.0087,
+            "p_yd_12900_11700": 1.0,
+            "p_younger_12700": 0.9912,
+            "p_post_yd_lt11700": 0.0,
+            "prob_sum": 1.0
+          },
+          "S2_Deglacial_plus500": {
+            "c14_age": 11495.0,
+            "c14_err": 30.0,
+            "delta_r": 718.0,
+            "delta_r_err": 150.0,
+            "median_cal_bp": 12002.7,
+            "mean_cal_bp": 12002.1,
+            "sd_cal_yr": 253.7,
+            "hpd68": [
+              11750.0,
+              12270.0
+            ],
+            "hpd95": [
+              11490.0,
+              12480.0
+            ],
+            "p_ydb_12900_12700": 0.0001,
+            "p_yd_12900_11700": 0.8824,
+            "p_younger_12700": 0.9999,
+            "p_post_yd_lt11700": 0.1176,
+            "prob_sum": 1.0
+          },
+          "S3_Stadial_plus800": {
+            "c14_age": 11495.0,
+            "c14_err": 30.0,
+            "delta_r": 1018.0,
+            "delta_r_err": 200.0,
+            "median_cal_bp": 11550.8,
+            "mean_cal_bp": 11566.3,
+            "sd_cal_yr": 307.9,
+            "hpd68": [
+              11230.0,
+              11825.0
+            ],
+            "hpd95": [
+              10990.0,
+              12250.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.3236,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.6764,
+            "prob_sum": 1.0
+          }
+        },
+        "all_dates": [
+          {
+            "depth_cm": "26-28",
+            "lab_id": "UGAMS-50559",
+            "c14_age": 10930.0,
+            "c14_err": 30.0,
+            "si_mu": 12464,
+            "recalc_S0_SI_mu": 11906.2,
+            "recalc_S0_med": 11896.9,
+            "recalc_S1_med": 11577.7,
+            "recalc_S2_med": 11162.5,
+            "recalc_S3_med": 10748.9
+          },
+          {
+            "depth_cm": "28-30",
+            "lab_id": "UGAMS-51365",
+            "c14_age": 10860.0,
+            "c14_err": 30.0,
+            "si_mu": 12382,
+            "recalc_S0_SI_mu": 11791.8,
+            "recalc_S0_med": 11786.8,
+            "recalc_S1_med": 11480.0,
+            "recalc_S2_med": 11055.0,
+            "recalc_S3_med": 10655.3
+          },
+          {
+            "depth_cm": "30-32",
+            "lab_id": "UGAMS-51985",
+            "c14_age": 11280.0,
+            "c14_err": 30.0,
+            "si_mu": 12842,
+            "recalc_S0_SI_mu": 12364.2,
+            "recalc_S0_med": 12424.6,
+            "recalc_S1_med": 12134.8,
+            "recalc_S2_med": 11660.5,
+            "recalc_S3_med": 11242.0
+          },
+          {
+            "depth_cm": "32-35",
+            "lab_id": "UGAMS-61105",
+            "c14_age": 11495.0,
+            "c14_err": 30.0,
+            "si_mu": 13030,
+            "recalc_S0_SI_mu": 12615.9,
+            "recalc_S0_med": 12632.7,
+            "recalc_S1_med": 12422.3,
+            "recalc_S2_med": 12002.7,
+            "recalc_S3_med": 11550.8
+          },
+          {
+            "depth_cm": "35-36",
+            "lab_id": "UGAMS-51986",
+            "c14_age": 12230.0,
+            "c14_err": 35.0,
+            "si_mu": 13854,
+            "recalc_S0_SI_mu": 13342.7,
+            "recalc_S0_med": 13330.0,
+            "recalc_S1_med": 13131.4,
+            "recalc_S2_med": 12849.2,
+            "recalc_S3_med": 12532.8
+          }
+        ]
+      },
+      "77": {
+        "core_name": "2013029-077",
+        "ydb_cm": [
+          161.0,
+          162.0
+        ],
+        "dr_holocene": 103.0,
+        "dr_si_err": 106.0,
+        "n_dates": 5,
+        "nearest_date_to_ydb": {
+          "depth_cm": "161-162",
+          "lab_id": "UGAMS-51366",
+          "c14_age": 10810.0,
+          "c14_err": 30.0,
+          "si_table_s1_mu": 12198
+        },
+        "scenarios_nearest": {
+          "S0_Holocene_Pearce2023": {
+            "c14_age": 10810.0,
+            "c14_err": 30.0,
+            "delta_r": 103.0,
+            "delta_r_err": 50.0,
+            "median_cal_bp": 11889.0,
+            "mean_cal_bp": 11898.1,
+            "sd_cal_yr": 139.3,
+            "hpd68": [
+              11750.0,
+              12015.0
+            ],
+            "hpd95": [
+              11620.0,
+              12185.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.9357,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.0643,
+            "prob_sum": 1.0
+          },
+          "S0_SI_ExactErr": {
+            "c14_age": 10810.0,
+            "c14_err": 30.0,
+            "delta_r": 103.0,
+            "delta_r_err": 106.0,
+            "median_cal_bp": 11893.5,
+            "mean_cal_bp": 11900.9,
+            "sd_cal_yr": 209.0,
+            "hpd68": [
+              11690.0,
+              12100.0
+            ],
+            "hpd95": [
+              11485.0,
+              12350.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.8411,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.1589,
+            "prob_sum": 1.0
+          },
+          "S1_Deglacial_plus200": {
+            "c14_age": 10810.0,
+            "c14_err": 30.0,
+            "delta_r": 303.0,
+            "delta_r_err": 100.0,
+            "median_cal_bp": 11570.3,
+            "mean_cal_bp": 11576.1,
+            "sd_cal_yr": 182.2,
+            "hpd68": [
+              11385.0,
+              11755.0
+            ],
+            "hpd95": [
+              11235.0,
+              11925.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.2565,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.7435,
+            "prob_sum": 1.0
+          },
+          "S2_Deglacial_plus500": {
+            "c14_age": 10810.0,
+            "c14_err": 30.0,
+            "delta_r": 603.0,
+            "delta_r_err": 150.0,
+            "median_cal_bp": 11154.7,
+            "mean_cal_bp": 11156.4,
+            "sd_cal_yr": 242.4,
+            "hpd68": [
+              10900.0,
+              11385.0
+            ],
+            "hpd95": [
+              10675.0,
+              11645.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.0147,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.9853,
+            "prob_sum": 1.0
+          },
+          "S3_Stadial_plus800": {
+            "c14_age": 10810.0,
+            "c14_err": 30.0,
+            "delta_r": 903.0,
+            "delta_r_err": 200.0,
+            "median_cal_bp": 10742.3,
+            "mean_cal_bp": 10743.3,
+            "sd_cal_yr": 284.7,
+            "hpd68": [
+              10485.0,
+              11060.0
+            ],
+            "hpd95": [
+              10180.0,
+              11265.0
+            ],
+            "p_ydb_12900_12700": 0.0,
+            "p_yd_12900_11700": 0.0008,
+            "p_younger_12700": 1.0,
+            "p_post_yd_lt11700": 0.9992,
+            "prob_sum": 1.0
+          }
+        },
+        "all_dates": [
+          {
+            "depth_cm": "137-142",
+            "lab_id": "OS-117723",
+            "c14_age": 10550.0,
+            "c14_err": 40.0,
+            "si_mu": 11807,
+            "recalc_S0_SI_mu": 11500.2,
+            "recalc_S0_med": 11478.3,
+            "recalc_S1_med": 11214.1,
+            "recalc_S2_med": 10798.9,
+            "recalc_S3_med": 10387.8
+          },
+          {
+            "depth_cm": "160-161",
+            "lab_id": "UGAMS-50560",
+            "c14_age": 11030.0,
+            "c14_err": 30.0,
+            "si_mu": 12466,
+            "recalc_S0_SI_mu": 12216.1,
+            "recalc_S0_med": 12236.3,
+            "recalc_S1_med": 11926.4,
+            "recalc_S2_med": 11473.0,
+            "recalc_S3_med": 11033.2
+          },
+          {
+            "depth_cm": "161-162",
+            "lab_id": "UGAMS-51366",
+            "c14_age": 10810.0,
+            "c14_err": 30.0,
+            "si_mu": 12198,
+            "recalc_S0_SI_mu": 11900.9,
+            "recalc_S0_med": 11889.0,
+            "recalc_S1_med": 11570.3,
+            "recalc_S2_med": 11154.7,
+            "recalc_S3_med": 10742.3
+          },
+          {
+            "depth_cm": "200-205",
+            "lab_id": "OS-118359",
+            "c14_age": 12750.0,
+            "c14_err": 55.0,
+            "si_mu": 14480,
+            "recalc_S0_SI_mu": 14153.3,
+            "recalc_S0_med": 14113.1,
+            "recalc_S1_med": 13838.9,
+            "recalc_S2_med": 13485.7,
+            "recalc_S3_med": 13171.6
+          },
+          {
+            "depth_cm": "638-644",
+            "lab_id": "UCIAMS-181265",
+            "c14_age": 37900.0,
+            "c14_err": 1600.0,
+            "si_mu": 41781,
+            "recalc_S0_SI_mu": 41078.1,
+            "recalc_S0_med": 41197.5,
+            "recalc_S1_med": 41050.9,
+            "recalc_S2_med": 40824.9,
+            "recalc_S3_med": 40591.1
+          }
+        ]
+      }
+    },
+    "n_cores_S0_overlap_ydb": 2,
+    "n_cores_S1_shifted_off_ydb": 4,
+    "n_cores_S2_shifted_off_ydb": 4,
+    "n_cores_S3_shifted_off_ydb": 4,
+    "n_cores_S3_post_yd_lt11700": 4,
+    "criterion_A1_triggered": true
+  },
+  "pillar2_baffin_microspherules_and_nps": {
+    "si_figs_s30_s34": {
+      "pages": [
+        {
+          "page": 32,
+          "images_saved": [
+            "p32_img1.jpg",
+            "p32_img2.jpg"
+          ],
+          "labeled_as_spherule_fragment": true,
+          "caption_excerpt": "32 SI Fig S30. Scanning electron microscopy (SEM) image and energy-dispersive x-ray spectroscopy (EDS) for a spherule fragment (interior) from Core 52 (574-579 cm), showing major elemental composition (Point 001). SI Fig S31. Scanning electron microscopy (SEM) image and energy-dispersive x-ray spectroscopy (EDS) for a spherule fragment (interior) f"
+        },
+        {
+          "page": 33,
+          "images_saved": [
+            "p33_img1.jpg",
+            "p33_img2.jpg"
+          ],
+          "labeled_as_spherule_fragment": true,
+          "caption_excerpt": "33 SI Fig S32. Scanning electron microscopy (SEM) elemental map for a spherule fragment (interior) from Core 52 (574-579 cm). See SI Figs 30-31."
+        },
+        {
+          "page": 34,
+          "images_saved": [
+            "p34_img1.jpg"
+          ],
+          "labeled_as_spherule_fragment": true,
+          "caption_excerpt": "34 SI Fig S33. Scanning electron microscopy (SEM) elemental map energy-dispersive x-ray spectroscopy (EDS) data for a spherule fragment (interior) from Core 52 (574-579 cm). See the elemental map in SI Fig S32."
+        },
+        {
+          "page": 35,
+          "images_saved": [
+            "p35_img1.jpg",
+            "p35_img2.jpg"
+          ],
+          "labeled_as_spherule_fragment": true,
+          "caption_excerpt": "35 SI Fig S34. Scanning electron microscopy (SEM) image and energy-dispersive x-ray spectroscopy (EDS) for a spherule fragment (interior) from Core 52 (574-579 cm), showing major elemental composition (Point 001). SI Fig S35. Scanning electron microscopy (SEM) image and energy-dispersive x-ray spectroscopy (EDS) for a spherule from Core 52 (574-579"
+        }
+      ],
+      "eds_readouts": [
+        {
+          "fig": "SI Fig S30 (Point 001)",
+          "image": "p32_img1.jpg",
+          "depth_cm": "574-579",
+          "C_wt": 20.37,
+          "O_wt": 57.18,
+          "Ca_wt": 18.97,
+          "Si_wt": 2.18,
+          "Al_wt": 0.69,
+          "Na_wt": 0.39,
+          "Mg_wt": 0.22,
+          "Fe_wt": 0.0,
+          "visible_pores": true,
+          "Ca_C_O_sum_wt": 96.52,
+          "is_calcareous_foram_like": true
+        },
+        {
+          "fig": "SI Fig S31 (Point 002)",
+          "image": "p32_img2.jpg",
+          "depth_cm": "574-579",
+          "C_wt": 13.75,
+          "O_wt": 48.63,
+          "Ca_wt": 32.14,
+          "Si_wt": 3.63,
+          "Al_wt": 1.22,
+          "Na_wt": 0.35,
+          "Mg_wt": 0.27,
+          "Fe_wt": 0.0,
+          "visible_pores": true,
+          "Ca_C_O_sum_wt": 94.52,
+          "is_calcareous_foram_like": true
+        },
+        {
+          "fig": "SI Fig S33 (MAP 1 of S32)",
+          "image": "p34_img1.jpg",
+          "depth_cm": "574-579",
+          "C_wt": 24.94,
+          "O_wt": 50.5,
+          "Ca_wt": 17.09,
+          "Si_wt": 5.03,
+          "Al_wt": 1.27,
+          "Na_wt": 0.44,
+          "Mg_wt": 0.72,
+          "Fe_wt": 0.0,
+          "visible_pores": true,
+          "Ca_C_O_sum_wt": 92.53,
+          "is_calcareous_foram_like": true
+        },
+        {
+          "fig": "SI Fig S34 (Point 001)",
+          "image": "p35_img1.jpg",
+          "depth_cm": "574-579",
+          "C_wt": 20.21,
+          "O_wt": 51.18,
+          "Ca_wt": 24.04,
+          "Si_wt": 2.96,
+          "Al_wt": 1.07,
+          "Na_wt": 0.29,
+          "Mg_wt": 0.26,
+          "Fe_wt": 0.0,
+          "visible_pores": true,
+          "Ca_C_O_sum_wt": 95.43,
+          "is_calcareous_foram_like": true
+        }
+      ],
+      "n_eds_confirmed_CaCO3_foram_with_pores": 4,
+      "sample_depth_age_cal_bp": 9538,
+      "note": "All four EDS spectra in SI Figs S30-S34 show 92.5-96.5 wt% Ca+C+O (0% Fe/Ni/Cr) with textbook 1-2 um foraminiferal wall pores and radial chamber cross-sections, labeled as 'spherule fragment (interior)'. Moreover, Core 52 (574-579 cm) is dated in SI Table S1 to 9,538 cal BP (Early Holocene, 3,300 yr post-YD)."
+    },
+    "si_table_s6_meta": {
+      "n_rows_parsed": 28,
+      "arithmetic_discrepancies": [
+        {
+          "core": "77",
+          "depth_cm": "167-168",
+          "sample_mass_g": 0.14,
+          "msp_n": 10,
+          "reported_msp_kg": 965,
+          "exact_n_div_mass_kg": 71428.6
+        }
+      ]
+    },
+    "si_table_s6_msp_uniqueness": {
+      "52": {
+        "n_samples": 8,
+        "depth_min_cm": 588.0,
+        "depth_max_cm": 787.5,
+        "sampled_span_cm": 199.5,
+        "ydb_max": 600.0,
+        "out_of_ydb_max": 450.0,
+        "out_of_ydb_median": 65.0,
+        "out_to_ydb_ratio": 0.75
+      },
+      "64": {
+        "n_samples": 7,
+        "depth_min_cm": 273.0,
+        "depth_max_cm": 324.0,
+        "sampled_span_cm": 51.0,
+        "ydb_max": 1300.0,
+        "out_of_ydb_max": 230.0,
+        "out_of_ydb_median": 0.0,
+        "out_to_ydb_ratio": 0.177
+      },
+      "67": {
+        "n_samples": 7,
+        "depth_min_cm": 24.5,
+        "depth_max_cm": 35.5,
+        "sampled_span_cm": 11.0,
+        "ydb_max": 735.0,
+        "out_of_ydb_max": 265.0,
+        "out_of_ydb_median": 32.5,
+        "out_to_ydb_ratio": 0.361
+      },
+      "77": {
+        "n_samples": 6,
+        "depth_min_cm": 90.5,
+        "depth_max_cm": 288.0,
+        "sampled_span_cm": 197.5,
+        "ydb_max": 0.0,
+        "out_of_ydb_max": 965.0,
+        "out_of_ydb_median": 0.0,
+        "out_to_ydb_ratio": null
+      }
+    },
+    "si_table_s6_cdp_uniqueness": {
+      "52": {
+        "n_samples": 8,
+        "depth_min_cm": 588.0,
+        "depth_max_cm": 787.5,
+        "sampled_span_cm": 199.5,
+        "ydb_max": 1605.0,
+        "out_of_ydb_max": 670.0,
+        "out_of_ydb_median": 0.0,
+        "out_to_ydb_ratio": 0.417
+      },
+      "64": {
+        "n_samples": 7,
+        "depth_min_cm": 273.0,
+        "depth_max_cm": 324.0,
+        "sampled_span_cm": 51.0,
+        "ydb_max": 1945.0,
+        "out_of_ydb_max": 680.0,
+        "out_of_ydb_median": 0.0,
+        "out_to_ydb_ratio": 0.35
+      },
+      "67": {
+        "n_samples": 7,
+        "depth_min_cm": 24.5,
+        "depth_max_cm": 35.5,
+        "sampled_span_cm": 11.0,
+        "ydb_max": 640.0,
+        "out_of_ydb_max": 335.0,
+        "out_of_ydb_median": 67.5,
+        "out_to_ydb_ratio": 0.523
+      },
+      "77": {
+        "n_samples": 6,
+        "depth_min_cm": 90.5,
+        "depth_max_cm": 288.0,
+        "sampled_span_cm": 197.5,
+        "ydb_max": 315.0,
+        "out_of_ydb_max": 290.0,
+        "out_of_ydb_median": 0.0,
+        "out_to_ydb_ratio": 0.921
+      }
+    },
+    "per_core_coverage_pct": {
+      "52": 22.8,
+      "64": 7.15,
+      "67": 2.12,
+      "77": 30.41
+    },
+    "total_core_coverage_pct": 16.65,
+    "core64_out_to_core67_ydb_cdp_ratio": 1.062,
+    "table_s7_blind_peak_scan": {
+      "mass_C64": {
+        "n_depths": 6,
+        "ydb_cm": [
+          312.0,
+          318.0
+        ],
+        "elements": {
+          "Pt": {
+            "max_depth_cm": 295.0,
+            "max_sample": "C64 293-297",
+            "max_val": 1.4511720487698568e-14,
+            "median_val": 1.0514765289549388e-14,
+            "max_to_median": 1.38,
+            "peak_in_claimed_ydb": false
+          },
+          "Ir": {
+            "max_depth_cm": 273.0,
+            "max_sample": "C64 272-274",
+            "max_val": 6.225130977022413e-15,
+            "median_val": 4.474498109724391e-15,
+            "max_to_median": 1.39,
+            "peak_in_claimed_ydb": false
+          },
+          "Pd": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 2.967394138701494e-14,
+            "median_val": 2.397138766085017e-14,
+            "max_to_median": 1.24,
+            "peak_in_claimed_ydb": false
+          },
+          "Ni": {
+            "max_depth_cm": 295.0,
+            "max_sample": "C64 293-297",
+            "max_val": 3.512113744191819e-14,
+            "median_val": 2.151567616765045e-14,
+            "max_to_median": 1.63,
+            "peak_in_claimed_ydb": false
+          },
+          "Co": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 3.932226025539126e-14,
+            "median_val": 7.0738542753845046e-15,
+            "max_to_median": 5.56,
+            "peak_in_claimed_ydb": false
+          },
+          "Cr": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 1.2950459348162973e-13,
+            "median_val": 8.63324692730088e-14,
+            "max_to_median": 1.5,
+            "peak_in_claimed_ydb": false
+          },
+          "Pt/Ir": {
+            "max_depth_cm": 295.0,
+            "max_sample": "C64 293-297",
+            "max_val": 3.386903838987497,
+            "median_val": 2.1503926404891027,
+            "max_to_median": 1.58,
+            "peak_in_claimed_ydb": false
+          },
+          "Pt/Pd": {
+            "max_depth_cm": 315.0,
+            "max_sample": "C64 312-318",
+            "max_val": 0.7570355987109625,
+            "median_val": 0.5229760586178859,
+            "max_to_median": 1.45,
+            "peak_in_claimed_ydb": true
+          },
+          "Pt/Fe": {
+            "max_depth_cm": 273.0,
+            "max_sample": "C64 272-274",
+            "max_val": 0.00010438232479157832,
+            "median_val": 5.539378492855085e-05,
+            "max_to_median": 1.88,
+            "peak_in_claimed_ydb": false
+          },
+          "Ni/Fe": {
+            "max_depth_cm": 273.0,
+            "max_sample": "C64 272-274",
+            "max_val": 0.00022449173246445668,
+            "median_val": 0.00012618711584314225,
+            "max_to_median": 1.78,
+            "peak_in_claimed_ydb": false
+          }
+        },
+        "ydb_pt_ir": [
+          2.1
+        ],
+        "ydb_pt_pd": [
+          0.76
+        ]
+      },
+      "mass_C67": {
+        "n_depths": 6,
+        "ydb_cm": [
+          32.0,
+          35.0
+        ],
+        "elements": {
+          "Pt": {
+            "max_depth_cm": 31.0,
+            "max_sample": "C67 30-32",
+            "max_val": 1.2821895911718693e-14,
+            "median_val": 8.458460009108187e-15,
+            "max_to_median": 1.52,
+            "peak_in_claimed_ydb": true
+          },
+          "Ir": {
+            "max_depth_cm": 33.5,
+            "max_sample": "C67 32-35",
+            "max_val": 4.8400684473111645e-15,
+            "median_val": 3.46287690019744e-15,
+            "max_to_median": 1.4,
+            "peak_in_claimed_ydb": true
+          },
+          "Pd": {
+            "max_depth_cm": 25.5,
+            "max_sample": "C67 25-26",
+            "max_val": 2.8873281909195455e-14,
+            "median_val": 1.2146400919742549e-14,
+            "max_to_median": 2.38,
+            "peak_in_claimed_ydb": false
+          },
+          "Ni": {
+            "max_depth_cm": 25.5,
+            "max_sample": "C67 25-26",
+            "max_val": 3.3884555179985163e-14,
+            "median_val": 2.6326208543034897e-14,
+            "max_to_median": 1.29,
+            "peak_in_claimed_ydb": false
+          },
+          "Co": {
+            "max_depth_cm": 27.0,
+            "max_sample": "C67 26-28",
+            "max_val": 6.031561929361388e-14,
+            "median_val": 1.0866429680316978e-14,
+            "max_to_median": 5.55,
+            "peak_in_claimed_ydb": false
+          },
+          "Cr": {
+            "max_depth_cm": 27.0,
+            "max_sample": "C67 26-28",
+            "max_val": 2.202079584036036e-13,
+            "median_val": 6.651631309750344e-14,
+            "max_to_median": 3.31,
+            "peak_in_claimed_ydb": false
+          },
+          "Pt/Ir": {
+            "max_depth_cm": 31.0,
+            "max_sample": "C67 30-32",
+            "max_val": 3.588205089498819,
+            "median_val": 2.556255299167847,
+            "max_to_median": 1.4,
+            "peak_in_claimed_ydb": true
+          },
+          "Pt/Pd": {
+            "max_depth_cm": 35.5,
+            "max_sample": "C67 35-36",
+            "max_val": 1.1917517104990345,
+            "median_val": 0.6971669535739975,
+            "max_to_median": 1.71,
+            "peak_in_claimed_ydb": true
+          },
+          "Pt/Fe": {
+            "max_depth_cm": 31.0,
+            "max_sample": "C67 30-32",
+            "max_val": 0.00031235919587003483,
+            "median_val": 4.366241384979337e-05,
+            "max_to_median": 7.15,
+            "peak_in_claimed_ydb": true
+          },
+          "Ni/Fe": {
+            "max_depth_cm": 31.0,
+            "max_sample": "C67 30-32",
+            "max_val": 0.00027381822284748986,
+            "median_val": 0.00014210664298443886,
+            "max_to_median": 1.93,
+            "peak_in_claimed_ydb": true
+          }
+        },
+        "ydb_pt_ir": [
+          3.59,
+          1.7,
+          2.31
+        ],
+        "ydb_pt_pd": [
+          1.19,
+          0.63,
+          1.19
+        ]
+      },
+      "conc_C64": {
+        "n_depths": 6,
+        "ydb_cm": [
+          312.0,
+          318.0
+        ],
+        "elements": {
+          "Pt": {
+            "max_depth_cm": 295.0,
+            "max_sample": "C64 293-297",
+            "max_val": 4.083212845761139e-08,
+            "median_val": 2.975050264322596e-08,
+            "max_to_median": 1.37,
+            "peak_in_claimed_ydb": false
+          },
+          "Ir": {
+            "max_depth_cm": 273.0,
+            "max_sample": "C64 272-274",
+            "max_val": 1.763713753773903e-08,
+            "median_val": 1.262913383531152e-08,
+            "max_to_median": 1.4,
+            "peak_in_claimed_ydb": false
+          },
+          "Pd": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 8.393791167396699e-08,
+            "median_val": 6.770412480912754e-08,
+            "max_to_median": 1.24,
+            "peak_in_claimed_ydb": false
+          },
+          "Ni": {
+            "max_depth_cm": 295.0,
+            "max_sample": "C64 293-297",
+            "max_val": 9.882155577772292e-08,
+            "median_val": 6.079893970193974e-08,
+            "max_to_median": 1.63,
+            "peak_in_claimed_ydb": false
+          },
+          "Co": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 1.112298620897762e-07,
+            "median_val": 1.9977705228926358e-08,
+            "max_to_median": 5.57,
+            "peak_in_claimed_ydb": false
+          },
+          "Cr": {
+            "max_depth_cm": 287.5,
+            "max_sample": "C64 286-290",
+            "max_val": 3.6632629913432417e-07,
+            "median_val": 2.437278946083563e-07,
+            "max_to_median": 1.5,
+            "peak_in_claimed_ydb": false
+          },
+          "Pt/Ir": {
+            "max_depth_cm": 295.0,
+            "max_sample": "C64 293-297",
+            "max_val": 3.386903838987497,
+            "median_val": 2.1503926404891027,
+            "max_to_median": 1.58,
+            "peak_in_claimed_ydb": false
+          },
+          "Pt/Pd": {
+            "max_depth_cm": 315.0,
+            "max_sample": "C64 312-318",
+            "max_val": 0.7570355987109625,
+            "median_val": 0.5229760586178859,
+            "max_to_median": 1.45,
+            "peak_in_claimed_ydb": true
+          },
+          "Pt/Fe": {
+            "max_depth_cm": 273.0,
+            "max_sample": "C64 272-274",
+            "max_val": 0.00010438232479157831,
+            "median_val": 5.5393784928550843e-05,
+            "max_to_median": 1.88,
+            "peak_in_claimed_ydb": false
+          },
+          "Ni/Fe": {
+            "max_depth_cm": 273.0,
+            "max_sample": "C64 272-274",
+            "max_val": 0.00022449173246445668,
+            "median_val": 0.00012618711584314228,
+            "max_to_median": 1.78,
+            "peak_in_claimed_ydb": false
+          }
+        },
+        "ydb_pt_ir": [
+          2.1
+        ],
+        "ydb_pt_pd": [
+          0.76
+        ]
+      },
+      "conc_C67": {
+        "n_depths": 6,
+        "ydb_cm": [
+          32.0,
+          35.0
+        ],
+        "elements": {
+          "Pt": {
+            "max_depth_cm": 31.0,
+            "max_sample": "C67 30-32",
+            "max_val": 3.6030734178334695e-08,
+            "median_val": 2.381622348516553e-08,
+            "max_to_median": 1.51,
+            "peak_in_claimed_ydb": true
+          },
+          "Ir": {
+            "max_depth_cm": 33.5,
+            "max_sample": "C67 32-35",
+            "max_val": 1.3565944872499536e-08,
+            "median_val": 9.72828902254948e-09,
+            "max_to_median": 1.39,
+            "peak_in_claimed_ydb": true
+          },
+          "Pd": {
+            "max_depth_cm": 25.5,
+            "max_sample": "C67 25-26",
+            "max_val": 8.116087137246366e-08,
+            "median_val": 3.416022414042287e-08,
+            "max_to_median": 2.38,
+            "peak_in_claimed_ydb": false
+          },
+          "Ni": {
+            "max_depth_cm": 25.5,
+            "max_sample": "C67 25-26",
+            "max_val": 9.524722659255724e-08,
+            "median_val": 7.406265271987139e-08,
+            "max_to_median": 1.29,
+            "peak_in_claimed_ydb": false
+          },
+          "Co": {
+            "max_depth_cm": 27.0,
+            "max_sample": "C67 26-28",
+            "max_val": 1.69340887766515e-07,
+            "median_val": 3.057031969206236e-08,
+            "max_to_median": 5.54,
+            "peak_in_claimed_ydb": false
+          },
+          "Cr": {
+            "max_depth_cm": 27.0,
+            "max_sample": "C67 26-28",
+            "max_val": 6.182513187469878e-07,
+            "median_val": 1.8694447042673543e-07,
+            "max_to_median": 3.31,
+            "peak_in_claimed_ydb": false
+          },
+          "Pt/Ir": {
+            "max_depth_cm": 31.0,
+            "max_sample": "C67 30-32",
+            "max_val": 3.5882050894988193,
+            "median_val": 2.556255299167847,
+            "max_to_median": 1.4,
+            "peak_in_claimed_ydb": true
+          },
+          "Pt/Pd": {
+            "max_depth_cm": 35.5,
+            "max_sample": "C67 35-36",
+            "max_val": 1.1917517104990343,
+            "median_val": 0.6971669535739975,
+            "max_to_median": 1.71,
+            "peak_in_claimed_ydb": true
+          },
+          "Pt/Fe": {
+            "max_depth_cm": 31.0,
+            "max_sample": "C67 30-32",
+            "max_val": 0.0003123591958700348,
+            "median_val": 4.3662413849793366e-05,
+            "max_to_median": 7.15,
+            "peak_in_claimed_ydb": true
+          },
+          "Ni/Fe": {
+            "max_depth_cm": 31.0,
+            "max_sample": "C67 30-32",
+            "max_val": 0.00027381822284748986,
+            "median_val": 0.00014210664298443883,
+            "max_to_median": 1.93,
+            "peak_in_claimed_ydb": true
+          }
+        },
+        "ydb_pt_ir": [
+          3.59,
+          1.7,
+          2.31
+        ],
+        "ydb_pt_pd": [
+          1.19,
+          0.63,
+          1.19
+        ]
+      }
+    }
+  },
+  "pillar3_baffin_chem_and_citations": {
+    "n_spherules_total": 18,
+    "n_s8a": 6,
+    "n_s8b": 12,
+    "n_high_CaO_gt15wt": 0,
+    "s10_mdp_n_ca_gt15wt": 1,
+    "s10_mdp_n_total": 143,
+    "raw_median_Fe_Cr": 1030.9,
+    "raw_median_Fe_Ni": 1555.6,
+    "frac_raw_Fe_Ni_gt200_terrestrial": 1.0,
+    "frac_raw_in_cosmic_box": 0.0,
+    "frac_after_moore_x100_in_cosmic_box": 0.8889,
+    "frac_ge_1pct_CI_excess_vs_UCC": 0.3333,
+    "frac_ge_1pct_CI_excess_vs_Fescale_UCC": 0.0,
+    "pure_UCC_control": {
+      "raw_Fe_Cr": 426.09,
+      "raw_Fe_Ni": 834.04,
+      "moore_x100_Fe_Cr": 4.26,
+      "moore_x100_Fe_Ni": 8.34,
+      "moore_x100_enters_cosmic_box": true,
+      "cr_excess_ucc_ppm": 0.92,
+      "ni_excess_ucc_ppm": 0.47,
+      "cr_excess_fescale_ppm": 0.92,
+      "ni_excess_fescale_ppm": 0.47
+    },
+    "pure_BIR1G_basalt_control": {
+      "raw_Fe_Cr": 202.05,
+      "raw_Fe_Ni": 475.9,
+      "moore_x100_Fe_Cr": 2.02,
+      "moore_x100_Fe_Ni": 4.76,
+      "moore_x100_enters_cosmic_box": true,
+      "cr_excess_ucc_ppm": 299.92,
+      "ni_excess_ucc_ppm": 119.47,
+      "cr_excess_fescale_ppm": 207.45,
+      "ni_excess_fescale_ppm": 72.23
+    },
+    "s8a_Pt_Ir_valid_n": 4,
+    "s8a_Pt_Ir_median": 556.33,
+    "bulk_delta17O_baffin_samples": [
+      {
+        "sample": "Core 64 272\u2013274 cm",
+        "d17O": 5.16,
+        "d18O": 10.06,
+        "Delta17O_star": -0.11,
+        "sd_1": 0.03,
+        "is_ydb": false
+      },
+      {
+        "sample": "Core 64 286\u2013290 cm",
+        "d17O": 5.77,
+        "d18O": 11.18,
+        "Delta17O_star": -0.08,
+        "sd_1": 0.03,
+        "is_ydb": false
+      },
+      {
+        "sample": "Core 64 312\u2013318 cm",
+        "d17O": 7.44,
+        "d18O": 14.37,
+        "Delta17O_star": -0.07,
+        "sd_1": 0.03,
+        "is_ydb": true
+      },
+      {
+        "sample": "Core 64 323\u2013325 cm",
+        "d17O": 7.27,
+        "d18O": 13.99,
+        "Delta17O_star": -0.05,
+        "sd_1": 0.03,
+        "is_ydb": false
+      },
+      {
+        "sample": "Core 67 25\u201326 cm",
+        "d17O": 6.14,
+        "d18O": 11.84,
+        "Delta17O_star": -0.06,
+        "sd_1": 0.04,
+        "is_ydb": false
+      },
+      {
+        "sample": "Core 67 26\u201328 cm",
+        "d17O": 5.6,
+        "d18O": 10.75,
+        "Delta17O_star": -0.02,
+        "sd_1": 0.01,
+        "is_ydb": false
+      },
+      {
+        "sample": "Core 67 28\u201330 cm",
+        "d17O": 5.47,
+        "d18O": 10.57,
+        "Delta17O_star": -0.06,
+        "sd_1": 0.03,
+        "is_ydb": false
+      },
+      {
+        "sample": "Core 67 30\u201332 cm",
+        "d17O": 5.82,
+        "d18O": 11.16,
+        "Delta17O_star": -0.02,
+        "sd_1": 0.02,
+        "is_ydb": true
+      },
+      {
+        "sample": "Core 67 32\u201335 cm",
+        "d17O": 6.1,
+        "d18O": 11.71,
+        "Delta17O_star": -0.03,
+        "sd_1": 0.02,
+        "is_ydb": true
+      },
+      {
+        "sample": "Core 67 35\u201336 cm",
+        "d17O": 5.88,
+        "d18O": 11.34,
+        "Delta17O_star": -0.06,
+        "sd_1": 0.01,
+        "is_ydb": false
+      }
+    ],
+    "bulk_delta17O_ydb_mean": -0.04,
+    "bulk_delta17O_bg_mean": -0.063,
+    "bulk_delta17O_n_ydb_ET_anomaly": 0,
+    "xml_citations": {
+      "n_refs_total": 187,
+      "n_missing_doi": 28,
+      "n_malformed_doi": 0,
+      "n_duplicate_doi_keys": 1,
+      "duplicate_dois": {
+        "10.1016/j.earscirev.2023.104502": [
+          "pone.0328347.ref109: Holliday VT, Daulton TL, Bartlein PJ, Boslough MB, Breslawski RP, Fisher AE, et al. Compre",
+          "pone.0328347.ref149: Holliday VT, Daulton TL, Bartlein PJ, Boslough MB, Breslawski RP, Fisher AE, et al. Compre"
+        ]
+      },
+      "n_year_or_placeholder_anomalies": 2,
+      "total_structural_xml_flags": 3,
+      "note": "Offline XML check catches syntactic/duplicate DOI flags only; resolving DOIs against Crossref is required to verify the ~43 wrong-paper DOI mismatches cited on PubPeer."
+    },
+    "criterion_A4_x100_artifact_triggered": true
+  },
+  "pillar4_shocked_quartz": {
+    "site_chronology_audit": {
+      "Arlington Canyon": {
+        "n_published_direct_dates": 11,
+        "n_rows_in_si_table": 2,
+        "n_published_explicitly_included": 0,
+        "n_published_omitted_or_pooled": 11,
+        "si_rows": [
+          {
+            "lab": "",
+            "depth_cm": 482.5,
+            "c14": 10860.0,
+            "err": 70.0,
+            "cal_mu": 12810.0,
+            "cal_sig": 60.0,
+            "hpd95": [
+              12715,
+              12965
+            ],
+            "note": "18.5 cm ABOVE shocked quartz (501 cm); no lab ID"
+          },
+          {
+            "lab": "",
+            "depth_cm": 500.5,
+            "c14": 11020.0,
+            "err": 25.0,
+            "cal_mu": 12955.0,
+            "cal_sig": 60.0,
+            "hpd95": [
+              12840,
+              13070
+            ],
+            "note": "At 500.5 cm YDB horizon; no lab ID"
+          }
+        ],
+        "ward_wilson_all_published": {
+          "n": 11,
+          "weighted_mean": 11096.46,
+          "T": 35.089,
+          "df": 10,
+          "p_value": 0.000121
+        }
+      },
+      "Blackwater Draw": {
+        "n_published_direct_dates": 6,
+        "n_rows_in_si_table": 3,
+        "n_published_explicitly_included": 0,
+        "n_published_omitted_or_pooled": 6,
+        "si_rows": [
+          {
+            "lab": "AA-89168",
+            "depth_cm": null,
+            "c14": null,
+            "err": null,
+            "cal_mu": 12825.0,
+            "cal_sig": 65.0,
+            "hpd95": [
+              12725,
+              12970
+            ],
+            "note": "Uncalibrated 14C age omitted from Table S3"
+          },
+          {
+            "lab": "SMU-1880",
+            "depth_cm": null,
+            "c14": null,
+            "err": null,
+            "cal_mu": 12760.0,
+            "cal_sig": 105.0,
+            "hpd95": [
+              12490,
+              13055
+            ],
+            "note": "Uncalibrated 14C age omitted from Table S3"
+          },
+          {
+            "lab": "AA-1362",
+            "depth_cm": null,
+            "c14": null,
+            "err": null,
+            "cal_mu": 12710.0,
+            "cal_sig": 95.0,
+            "hpd95": [
+              12485,
+              12895
+            ],
+            "note": "Uncalibrated 14C age omitted from Table S3"
+          }
+        ],
+        "ward_wilson_all_published": {
+          "n": 6,
+          "weighted_mean": 10849.48,
+          "T": 11.983,
+          "df": 5,
+          "p_value": 0.035027
+        }
+      },
+      "Murray Springs": {
+        "n_published_direct_dates": 8,
+        "n_rows_in_si_table": 1,
+        "n_published_explicitly_included": 0,
+        "n_published_omitted_or_pooled": 8,
+        "si_rows": [
+          {
+            "lab": "Haynes pooled (8 dates)",
+            "depth_cm": null,
+            "c14": 10885.0,
+            "err": 50.0,
+            "cal_mu": 12805.0,
+            "cal_sig": 45.0,
+            "hpd95": [
+              12735,
+              12895
+            ],
+            "note": "Pooled mean only; individual 8 lab IDs omitted"
+          }
+        ],
+        "ward_wilson_all_published": {
+          "n": 8,
+          "weighted_mean": 10832.57,
+          "T": 3.422,
+          "df": 7,
+          "p_value": 0.84344
+        }
+      }
+    },
+    "total_published_direct_dates_3sites": 25,
+    "total_rows_in_si_tables_s2_s4": 6,
+    "total_published_dates_omitted_or_pooled": 25,
+    "ward_wilson_authors_3_selected_cal": {
+      "n": 3,
+      "weighted_mean": 12811.07,
+      "T": 0.064,
+      "df": 2,
+      "p_value": 0.968293
+    },
+    "ward_wilson_3_using_actual_500cm_arlington": {
+      "n": 3,
+      "weighted_mean": 12851.02,
+      "T": 4.209,
+      "df": 2,
+      "p_value": 0.121883
+    },
+    "ward_wilson_all_6_si_rows_cal": {
+      "n": 6,
+      "weighted_mean": 12827.31,
+      "T": 6.795,
+      "df": 5,
+      "p_value": 0.236326
+    },
+    "ward_wilson_all_25_published_direct_14c": {
+      "n": 25,
+      "weighted_mean": 11082.57,
+      "T": 90.943,
+      "df": 24,
+      "p_value": 0.0
+    },
+    "vertical_quartz_controls": {
+      "per_site": {
+        "Arlington Canyon": {
+          "table": "Table S5",
+          "total_strata": 31,
+          "depth_span": "97.0\u2013501.0 cm",
+          "ydb_stratum": "ARL-1B (501.0 cm, bottom row)",
+          "ydb_grains": 5,
+          "n_above_analyzed": 3,
+          "n_below_analyzed": 0,
+          "above_depths_cm": [
+            489.0,
+            493.0,
+            497.0
+          ],
+          "below_depths_cm": [],
+          "above_grains": [
+            0,
+            0,
+            0
+          ],
+          "below_grains": [],
+          "control_grain_denominators_reported": false
+        },
+        "Blackwater Draw": {
+          "table": "Table S6",
+          "total_strata": 16,
+          "depth_span": "1239.60\u20131237.75 m asl",
+          "ydb_stratum": "BWD D/C #4 (1238.37 m)",
+          "ydb_grains": 7,
+          "n_above_analyzed": 1,
+          "n_below_analyzed": 1,
+          "above_depths_m": [
+            1238.4
+          ],
+          "below_depths_m": [
+            1238.17
+          ],
+          "above_grains": [
+            0
+          ],
+          "below_grains": [
+            0
+          ],
+          "control_grain_denominators_reported": false
+        },
+        "Murray Springs": {
+          "table": "Table S8",
+          "total_strata": 19,
+          "depth_span": "16.0\u201363.0 cm",
+          "ydb_stratum": "MS-42-BU (46.5 cm)",
+          "ydb_grains": 4,
+          "n_above_analyzed": 3,
+          "n_below_analyzed": 2,
+          "above_depths_cm": [
+            26.0,
+            44.0,
+            44.8
+          ],
+          "below_depths_cm": [
+            52.0,
+            63.0
+          ],
+          "above_grains": [
+            0,
+            0,
+            0
+          ],
+          "below_grains": [
+            0,
+            0
+          ],
+          "control_grain_denominators_reported": false
+        }
+      },
+      "total_strata_across_3_sites": 66,
+      "total_strata_analyzed_for_quartz": 13,
+      "pct_strata_analyzed": 19.7,
+      "sites_with_zero_strata_below_ydb": [
+        "Arlington Canyon"
+      ],
+      "sites_with_fewer_than_3_control_strata": [
+        "Blackwater Draw"
+      ],
+      "any_control_grain_denominators_tabulated": false
+    },
+    "has_sedimentation_rate_or_agedepth_model": false,
+    "retraction_notice_scope": {
+      "cites_age_model_or_radiocarbon": true,
+      "cites_vertical_sampling_or_sed_rate": true,
+      "alleges_microscopy_fabrication_or_misid": false,
+      "alleges_hydrocode_error": false
+    },
+    "criterion_B1_chronology_overturned": true,
+    "criterion_B2_missing_controls": true
+  }
+}

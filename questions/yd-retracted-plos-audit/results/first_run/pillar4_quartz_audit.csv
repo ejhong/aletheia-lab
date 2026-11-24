@@ -1,0 +1,26 @@
+site,lab_id,c14_age,c14_err,included_explicitly_in_si_table,median_cal_bp,hpd95_lo,hpd95_hi,source
+Arlington Canyon,UCIAMS-36305,10960,50,0,12864.8,12760.0,13055.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-36306,11185,30,0,13108.8,13085.0,13160.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-36307,11075,30,0,13006.8,12915.0,13090.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-36308,11110,35,0,13031.5,12925.0,13100.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-36309,11440,90,0,13311.6,13165.0,13485.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-36960,11070,25,0,13005.5,12915.0,13085.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-36961,11105,30,0,13031.6,12930.0,13095.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-36962,11105,30,0,13031.6,12930.0,13095.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-42817,11100,30,0,13025.3,12930.0,13095.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-42818,11095,25,0,13025.0,12930.0,13095.0,Kennett et al. 2008 Table 4
+Arlington Canyon,UCIAMS-42819,11050,30,0,12984.9,12850.0,13085.0,Kennett et al. 2008 Table 4
+Blackwater Draw,A-481,11170,360,0,13074.0,12105.0,13800.0,Waters & Stafford 2007
+Blackwater Draw,A-490,11040,500,0,12896.4,11405.0,14020.0,Waters & Stafford 2007
+Blackwater Draw,A-491,11630,400,0,13566.2,12745.0,14830.0,Waters & Stafford 2007
+Blackwater Draw,UCIAMS-24212,11300,240,0,13194.5,12750.0,13605.0,Firestone et al. 2007 / Kennett 2015
+Blackwater Draw,A-489,10490,200,0,12312.7,11645.0,12820.0,Haynes 1995 / Meltzer 2014
+Blackwater Draw,A-379,10780,100,0,12743.6,12495.0,12960.0,Haynes 2008 / Kennett 2015
+Murray Springs,A-805,11150,450,0,13038.5,11760.0,14065.0,Waters & Stafford 2007
+Murray Springs,A-805A,11230,340,0,13134.3,12475.0,13995.0,Waters & Stafford 2007
+Murray Springs,A-805B,10930,170,0,12884.9,12620.0,13170.0,Waters & Stafford 2007
+Murray Springs,A-805C,10890,180,0,12854.1,12485.0,13170.0,Waters & Stafford 2007
+Murray Springs,A-805D,10840,70,0,12782.6,12705.0,12905.0,Waters & Stafford 2007
+Murray Springs,A-805E,10840,140,0,12809.5,12505.0,13090.0,Waters & Stafford 2007
+Murray Springs,A-805F,10710,160,0,12662.0,12105.0,13065.0,Waters & Stafford 2007
+Murray Springs,Tx-1413,10760,100,0,12728.8,12495.0,12905.0,Waters & Stafford 2007

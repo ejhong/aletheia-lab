@@ -1,0 +1,324 @@
+=== SI Table S1 (p5) ===
+ 
+5 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SI Table S1. Radiocarbon ages for cores in this study. List shows core name, depth (cm), radiocarbon 
+lab number, radiocarbon date, reservoir correction (∆R), calibrated ages, uncertainties (68.3% and 
+95.4% CI), references, method, and material. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+
+=== Foraminifera Section (pp219-222) ===
+ 
+219 
+ 
+Foraminifera: Radiocarbon Dating and Environmental Setting 
+ 
+Radiocarbon Dating 
+Sediment samples from cores 83023-52, 2013029-64, 2008029-67 and 2013029-77 were soaked in glass 
+beakers overnight in reversed osmosis or nanopure water. Disaggregated samples were washed over a 63 
+micron stainless steel sieve using reversed osmosis or nanopure water and the mud fraction was retained 
+in a large beaker or evaporating basin for sedimentological analysis. The sand fraction retained in the 63 
+micron sieve was dried in an oven at 40 oC. Sieves were washed with a methylene blue solution between 
+samples to stain any particles, including foraminiferal tests, retained in the sieve. This process precludes 
+contamination between samples. 
+The dried sand of each sample was split using an Otto microsplitter and an aliquot was spread on a 45-
+square black-painted, brass picking tray. Using a random numbers table to select grid squares, 
+approximately 200 specimens of foraminifera per sample, where possible, were picked and transferred 
+to microslides for assemblage analysis. In samples where foraminifera were rare, all specimens were 
+picked. The remaining sediment was picked of all remaining hyaline calcite benthic foraminifera or of 
+an amount to provide enough material for radiocarbon dating (SI Table S17). The resulting hyaline calcite 
+mixed benthic foraminifera picks were composed of ca. 1000 to ca. 4700 specimens (cores 52 and 77). 
+Foraminiferal assemblages comprising porcelaneous benthic foraminifera (high magnesium calcite tests; 
+core 67) were excluded from the specimens picked for radiocarbon analysis. Where assemblages were 
+dominated by planktic foraminifera (core 67) only a few hundred specimens were required to attain 
+enough calcite for radiocarbon analysis. Samples in core 64 were composed of hyaline calcite mixed 
+benthic and (less abundant) planktic foraminiferal tests. The tiny, delicate species, Stetsonia arctica, 
+provided little calcite, and thus contributed little to samples for radiocarbon dating even when it was a 
+dominant species in assemblages. 
+ 
+ 
+ 
+ 
+ 
+ 
+220 
+ 
+S1 Table S17. List of samples showing the depth in core, approximate number of specimens picked, 
+and the type of foraminiferal material picked in samples selected for C-14 dating. 
+Core: Sample 
+depth (cm) 
+Approximate 
+no. specimens  
+Material picked 
+52:569–571    
+52:574–579 1800 hyaline calcite mixed benthics 
+52:587–589    
+52:615–620 2100 hyaline calcite mixed benthics 
+52:625–630 1000 hyaline calcite mixed benthics 
+52:630–635 1800 hyaline calcite mixed benthics 
+52:635–640 1000 hyaline calcite mixed benthics 
+52:640–645 1000 hyaline calcite mixed benthics, few hyaline calcite planktics 
+52:770–775    
+52:775–776     
+64:290–293 1600 hyaline calcite mixed benthics, few hyaline calcite planktics 
+64:293–297 4400 hyaline calcite mixed benthics, few hyaline calcite planktics 
+64:312–318 1000 hyaline calcite mixed benthics, few hyaline calcite planktics 
+64:323–325 400 hyaline calcite mixed benthics, few hyaline calcite planktics, few ostracods, bivalve fragment 
+67:26–28 1000 hyaline calcite planktics, few hyaline calcite benthics 
+67:28–30 4000 hyaline calcite planktics, few hyaline calcite benthics 
+67:30–32 1800 hyaline calcite planktics, few hyaline calcite benthics 
+67:32–35 400 hyaline calcite planktics, few hyaline calcite benthics 
+67:35–36 700 hyaline calcite planktics, few hyaline calcite benthics 
+77:160–161 2000 hyaline calcite mixed benthics 
+77:161–162 3000 hyaline calcite mixed benthics 
+77:167–168     
+ 
+Picked foraminiferal specimens were washed in reversed osmosis or nanopure water, dried, 
+weighed, placed in microcentrifuge tubes, and sent to UGA for AMS radiocarbon dating. In all 
+samples, the great majority of calcitic benthic foraminiferal tests were shiny clear, translucent or white 
+and unetched. Excellent preservation also characterized planktonic foraminifera-dominated samples of 
+core 67. In core 64, the lowe
+
+=== SI Table S6 (p16-17) ===
+ 
+16 
+ 
+ 
+ 
+ 
+ 
+SI Table S6. Microspherules and metallic dust particles/kg for study cores. 
+ 
+ 
+ 
+ 
+ 
+ 
+  Core Depth (cm) Sample Mass (g) Spherules Spherules/kg 
+Metallic Dust Particles 
+(CDPs) CDPs/kg 
+  83023-052 587-589 15 0 0 0 0 
+ 
+83023-052 615-620 16.43 6 365 11 670 
+ 
+a83023-052 625-630 14.97 9 600 24 1605 
+ 
+83023-052 630-635 15.57 7 450 0 0 
+ 
+83023-052 635-640 15.4 2 130 0 0 
+ 
+83023-052 640-645 14.92 1 65 0 0 
+ 
+83023-052 770-775 15.52 0 0 0 0 
+ 83023-052 785-790 16.64 0 0 0 0 
+ 2013029-064 272-274 15.4 0 0 0 0 
+ 2013029-064 286-290 14.72 0 0 0 0 
+ 2013029-064 290-293 11.78 0 0 8 680 
+ 2013029-064 293-297 16.44 0 0 0 0 
+ 2013029-064 302-308 17.3 4 230 3 175 
+ 
+a2013029-064 312-318 18.5 24 1300 36 1945 
+ 2013029-064 323-325 13.82 1 70 0 0 
+ 2008029-067 24-25 15 0 0 0 0 
+ 2008029-067 25-26 15 0 0 0 0 
+ 2008029-067 26-28 15 1 65 2 135 
+ 
+a2008029-067 28-30 15 4 265 4 335 
+ 
+a2008029-067 30-32 12.27 9 735 5 405 
+ 2008029-067 32-35 18.8 2 105 12 640 
+ 2008029-067 35-36 15.31 1 65 7 450 
+ 2013029-077 90-91 15 0 0 0 0 
+ 2013029-077 159-160 10.37 0 0 0 0 
+ 2013029-077 160-161 10.43 0 0 3 315 
+ 2013029-077 161-162 9.54 0 0 2 205 
+ 
+a2013029-077 167-168 0.14 10 965 3 290 
+  2013029-077 286-290 10.38 0 0 0 0 
+ 
+aSample with spherule peak(s) for each core.     
+
+=== baffin_bay_si.pdf p32 ===
+ 
+32 
+ 
+ 
+SI Fig S30. Scanning electron microscopy (SEM) image and energy-dispersive x-ray spectroscopy 
+(EDS) for a spherule fragment (interior) from Core 52 (574-579 cm), showing major elemental 
+composition (Point 001). 
+ 
+ 
+SI Fig S31. Scanning electron microscopy (SEM) image and energy-dispersive x-ray spectroscopy 
+(EDS) for a spherule fragment (interior) from Core 52 (574-579 cm), showing major elemental 
+composition (Point 002). 
+ 
+
+
+=== baffin_bay_si.pdf p33 ===
+ 
+33 
+ 
+ 
+ 
+ 
+ 
+ 
+SI Fig S32. Scanning electron microscopy (SEM) elemental map for a spherule fragment (interior) 
+from Core 52 (574-579 cm). See SI Figs 30-31. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== baffin_bay_si.pdf p34 ===
+ 
+34 
+ 
+ 
+SI Fig S33. Scanning electron microscopy (SEM) elemental map energy-dispersive x-ray 
+spectroscopy (EDS) data for a spherule fragment (interior) from Core 52 (574-579 cm). See the 
+elemental map in SI Fig S32. 
+ 
+
+
+=== baffin_bay_si.pdf p35 ===
+ 
+35 
+ 
+ 
+SI Fig S34. Scanning electron microscopy (SEM) image and energy-dispersive x-ray spectroscopy 
+(EDS) for a spherule fragment (interior) from Core 52 (574-579 cm), showing major elemental 
+composition (Point 001). 
+ 
+ 
+ 
+SI Fig S35. Scanning electron microscopy (SEM) image and energy-dispersive x-ray spectroscopy 
+(EDS) for a spherule from Core 52 (574-579 cm), showing major elemental composition (001). 
+
+
+=== kennett2025_si p1 ===
+1 
+ 
+Shocked quartz at the Younger Dryas onset (12.8 ka) 
+supports cosmic airbursts/impacts contributing to North American 
+megafaunal extinctions and collapse of the Clovis technocomplex 
+ 
+James P. Kennett, Malcolm A. LeCompte, Christopher R. Moore, Gunther Kletetschka,  
+John R. Johnson, Wendy S. Wolbach, Siddhartha Mitra, Abigail Maiorana-Boutilier, 
+Victor Adedeji, Marc D. Young, Timothy Witwer, Kurt Langworthy, 
+Joshua J. Razink, Valerie Brogden, Brian van Devener, 
+Jesus Paulo Perez, Randy Polson, Allen West 
+ 
+ 
+This document provides supplementary data, figures, and methodological details to support the 
+findings presented in the main manuscript. 
+The supporting information is organized into three main sections: 
+1. Supporting Tables include detailed age calibrations for the Younger Dryas Boundary 
+(YDB) layer at the three study sites and comprehensive data on YDB proxies found at each 
+location. 
+2. Additional Figures: This section presents high-resolution images and analytical data from 
+scanning electron microscopy (SEM), transmission electron microscopy (TEM), energy 
+dispersive spectroscopy (EDS), and other advanced techniques. These figures provide 
+visual evidence supporting the identification of shock- fractured quartz and other impact -
+related materials. 
+3. Additional Methods: This section offers detailed descriptions of the analytical techniques 
+employed in this study, including sample preparation methods and specific protocols for 
+each type of analysis. 
+This information is intended to assist with a better  understanding of the data collection and 
+analyses and present additional evidence supporting the conclusions drawn in the main manuscript. 
+ 
+Supporting Tables 
+Table S1. Comparison of age calibration by IntCal13 and IntCal20. The latest calibration 
+curve, IntCal20, differs from the previous one, IntCal13. Using both curves to calibrate the same 
+radiocarbon date (10,900 ± 50 14C y) results in an average difference of +40 y. Consequently, the 
+YDB age range that was calculated by Kennett et al. [1] is revised from 12,835-12,735 cal BP to 
+12,875-12,775 cal BP. 
+=== kennett2025_si p2 ===
+2 
+ 
+ 
+ 
+Table S2. Calibrated age for the YDB layer at Arlington Canyon. CA. Radiocarbon dates 
+from Kennett et al. [1, 2] were calibrated using OxCal v4.4.4 [3] with the IntCal20 calibration 
+curve. 
+ 
+ 
+ 
+ 
+Table S3. Calibrated age for the YDB layer at Blackwater Draw, NM. Radiocarbon dates 
+from Kennett et al. [1] were calibrated using OxCal v4.4.4 [3] with the IntCal20 calibration 
+curve. 
+ 
+ 
+ 
+ 
+Table S4. Calibrated age for the YDB layer at Murray Springs, AZ. Radiocarbon dates from 
+Kennett et al. [1] were calibrated using OxCal v4.4.4 [3] with the IntCal20 calibration curve. 
+ 
+ 
+  
+
+=== kennett2025_si p3 ===
+3 
+ 
+Table S5. Selected YDB impact-related proxies for Arlington Canyon, CA. Multiple sampling 
+trips were made to this site. Zero values mean none were detected, and “--” means the given proxy 
+was not quantified. Some proxy concentrations have been updated from previous publications [4-
+9], and values here supersede previous values if different. 
+ 
+ 
+  
+
+=== kennett2025_si p4 ===
+4 
+ 
+Table S6. Selected YDB impact-related proxies for Blackwater Draw, NM. Multiple sampling 
+trips were made to this site. Zero values mean none were detected, and “--” means the given proxy 
+was not quantified. Some proxy concentrations have been updated from previous publications [4-
+9], and values here supersede previous values if different. 
+ 
+Table S7. Nanodiamond results for Blackwater Draw, NM. In 2012, the acid-resistant residue 
+was extracted from four Blackwater Draw samples following the protocol outlined by Kinzie et al. 
+[9]. Later, using the protocol by Bunch et al. [10], results revealed that when exposed to ultraviolet 
+light sources, one sample of acid-resistant residue exhibited characteristic luminescence bands for 
+diamond at 365 nm (long- wave UV) and 440 nm  [11]. Based on the amount of acid- resistant 
+residue from other YDB sites, we estimate a semi-quantitative abundance of approximately 60 ppb 
+of NDs in the YDB layer at Blackwater Draw (Table S6). 
+ 
+ 
+ 
+Table S8. Selected YDB proxies for Murray Springs, AZ. Multiple sampling trips were made 
+to this site. Zero values mean none were detected, and “--” means the given proxy was not 
+
+=== kennett2025_si p5 ===
+5 
+ 
+quantified. Some proxy concentrations have been updated from previous publications [4-9], and 
+values here supersede previous values if different. 
+ 
+Cratering studies that report subplanar, subparallel shock fracturing. List of 10 of 27 
+known craters (21 other craters are listed in Table 1 of the main ms). Includes direct quotes 
+italicized and in brackets describing glass-filled, subplanar, and subparallel fractures. Our 
+comments are in brackets. Lists estimated GPa formation pressures, which range from ~2 to 15.  

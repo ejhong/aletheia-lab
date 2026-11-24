@@ -1,0 +1,18 @@
+[8] 10.14293/sciopen.2023.41: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[9] 10.14293/sciopen.2023.54: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[10] 10.14293/sciopen.2023.64: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[30] 10.1016/0019-1035(89)90064-4: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[36] 10.1016/B978-0-12-003601-2.50007-0: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[61] 10.1016/S0277-379100058-1: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[68] 10.1038/s41561-018-0186-7: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[74] 10.1353/book16062.12: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[81] 10.1134/S1028334X1407004X: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[84] 10.3189/002214310793889985: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[94] 10.1080/00278864.2006.9486614: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[98] 10.1029/2012GM001239: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[108] 10.1029/2010GL044624: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[113] 10.1016/B0-08-043751-6/03018-6: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[136] 10.1007/978-3-642-32947-9_12: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[150] 10.1038/s41598-024-53273-5: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=
+[163] 10.5281/zenodo.345379: handle responseCode=1 (1=exists,100=not found) RA=DataCite URL=https://zenodo.org/record/345379
+[164] 10.1016/j.eurpre.2013.01.001: handle responseCode=100 (1=exists,100=not found) RA=DOI does not exist URL=

@@ -1,0 +1,80 @@
+ratio columns = ratio of total element masses: confirmed
+
+== mass_C64: depths ['C64 272-274', 'C64 286-290', 'C64 293-297', 'C64 302-308', 'C64 312-318', 'C64 323-325']
+  Pt     max at C64 293-297  value 1.451e-14  max/median 1.38
+  Ir     max at C64 272-274  value 6.225e-15  max/median 1.39
+  Pd     max at C64 286-290  value 2.967e-14  max/median 1.24
+  Ni     max at C64 293-297  value 3.512e-14  max/median 1.63
+  Co     max at C64 286-290  value 3.932e-14  max/median 5.56
+  Cr     max at C64 286-290  value 1.295e-13  max/median 1.50
+  Pt/Ir  max at C64 293-297  value 3.387  max/median 1.58
+  Pt/Pd  max at C64 312-318  value 0.757  max/median 1.45
+  Pt/Fe  max at C64 272-274  value 0.0001044  max/median 1.88
+  Ni/Fe  max at C64 272-274  value 0.0002245  max/median 1.78
+  Cr/Fe  max at C64 286-290  value 0.0009151  max/median 1.89
+  Co/Fe  max at C64 286-290  value 0.0002779  max/median 6.72
+  window protocol 312-318: 1/6 depths inside; 10 metrics peaking inside = 1; chance expectation 1.67; P(X>=1) indep.binomial=0.838
+  window protocol 312-318: 1/6 depths inside; 12 metrics peaking inside = 1; chance expectation 2.00; P(X>=1) indep.binomial=0.888
+  window code (+/-2 cm) 310-320: 1/6 depths inside; 10 metrics peaking inside = 1; chance expectation 1.67; P(X>=1) indep.binomial=0.838
+  window code (+/-2 cm) 310-320: 1/6 depths inside; 12 metrics peaking inside = 1; chance expectation 2.00; P(X>=1) indep.binomial=0.888
+
+== mass_C67: depths ['C67 25-26', 'C67 26-28', 'C67 28-30', 'C67 30-32', 'C67 32-35', 'C67 35-36']
+  Pt     max at C67 30-32    value 1.282e-14  max/median 1.52
+  Ir     max at C67 32-35    value 4.84e-15  max/median 1.40
+  Pd     max at C67 25-26    value 2.887e-14  max/median 2.38
+  Ni     max at C67 25-26    value 3.388e-14  max/median 1.29
+  Co     max at C67 26-28    value 6.032e-14  max/median 5.55
+  Cr     max at C67 26-28    value 2.202e-13  max/median 3.31
+  Pt/Ir  max at C67 30-32    value 3.588  max/median 1.40
+  Pt/Pd  max at C67 35-36    value 1.192  max/median 1.71
+  Pt/Fe  max at C67 30-32    value 0.0003124  max/median 7.15
+  Ni/Fe  max at C67 30-32    value 0.0002738  max/median 1.93
+  Cr/Fe  max at C67 26-28    value 0.0006852  max/median 1.62
+  Co/Fe  max at C67 26-28    value 0.0001877  max/median 2.20
+  window protocol/Fig2 32-35: 1/6 depths inside; 10 metrics peaking inside = 1; chance expectation 1.67; P(X>=1) indep.binomial=0.838
+  window protocol/Fig2 32-35: 1/6 depths inside; 12 metrics peaking inside = 1; chance expectation 2.00; P(X>=1) indep.binomial=0.888
+  window code (+/-2 cm) 30-37: 3/6 depths inside; 10 metrics peaking inside = 6; chance expectation 5.00; P(X>=6) indep.binomial=0.377
+  window code (+/-2 cm) 30-37: 3/6 depths inside; 12 metrics peaking inside = 6; chance expectation 6.00; P(X>=6) indep.binomial=0.613
+  window S6 footnote-a peak samples 28-32: 2/6 depths inside; 10 metrics peaking inside = 4; chance expectation 3.33; P(X>=4) indep.binomial=0.441
+  window S6 footnote-a peak samples 28-32: 2/6 depths inside; 12 metrics peaking inside = 4; chance expectation 4.00; P(X>=4) indep.binomial=0.607
+
+== conc_C64: depths ['C64 272-274', 'C64 286-290', 'C64 293-297', 'C64 302-308', 'C64 312-318', 'C64 323-325']
+  Pt     max at C64 293-297  value 4.083e-08  max/median 1.37
+  Ir     max at C64 272-274  value 1.764e-08  max/median 1.40
+  Pd     max at C64 286-290  value 8.394e-08  max/median 1.24
+  Ni     max at C64 293-297  value 9.882e-08  max/median 1.63
+  Co     max at C64 286-290  value 1.112e-07  max/median 5.57
+  Cr     max at C64 286-290  value 3.663e-07  max/median 1.50
+  Pt/Ir  max at C64 293-297  value 3.387  max/median 1.58
+  Pt/Pd  max at C64 312-318  value 0.757  max/median 1.45
+  Pt/Fe  max at C64 272-274  value 0.0001044  max/median 1.88
+  Ni/Fe  max at C64 272-274  value 0.0002245  max/median 1.78
+  Cr/Fe  max at C64 286-290  value 0.0009151  max/median 1.89
+  Co/Fe  max at C64 286-290  value 0.0002779  max/median 6.72
+  window protocol 312-318: 1/6 depths inside; 10 metrics peaking inside = 1; chance expectation 1.67; P(X>=1) indep.binomial=0.838
+  window protocol 312-318: 1/6 depths inside; 12 metrics peaking inside = 1; chance expectation 2.00; P(X>=1) indep.binomial=0.888
+  window code (+/-2 cm) 310-320: 1/6 depths inside; 10 metrics peaking inside = 1; chance expectation 1.67; P(X>=1) indep.binomial=0.838
+  window code (+/-2 cm) 310-320: 1/6 depths inside; 12 metrics peaking inside = 1; chance expectation 2.00; P(X>=1) indep.binomial=0.888
+
+== conc_C67: depths ['C67 25-26', 'C67 26-28', 'C67 28-30', 'C67 30-32', 'C67 32-35', 'C67 35-36']
+  Pt     max at C67 30-32    value 3.603e-08  max/median 1.51
+  Ir     max at C67 32-35    value 1.357e-08  max/median 1.39
+  Pd     max at C67 25-26    value 8.116e-08  max/median 2.38
+  Ni     max at C67 25-26    value 9.525e-08  max/median 1.29
+  Co     max at C67 26-28    value 1.693e-07  max/median 5.54
+  Cr     max at C67 26-28    value 6.183e-07  max/median 3.31
+  Pt/Ir  max at C67 30-32    value 3.588  max/median 1.40
+  Pt/Pd  max at C67 35-36    value 1.192  max/median 1.71
+  Pt/Fe  max at C67 30-32    value 0.0003124  max/median 7.15
+  Ni/Fe  max at C67 30-32    value 0.0002738  max/median 1.93
+  Cr/Fe  max at C67 26-28    value 0.0006852  max/median 1.62
+  Co/Fe  max at C67 26-28    value 0.0001877  max/median 2.20
+  window protocol/Fig2 32-35: 1/6 depths inside; 10 metrics peaking inside = 1; chance expectation 1.67; P(X>=1) indep.binomial=0.838
+  window protocol/Fig2 32-35: 1/6 depths inside; 12 metrics peaking inside = 1; chance expectation 2.00; P(X>=1) indep.binomial=0.888
+  window code (+/-2 cm) 30-37: 3/6 depths inside; 10 metrics peaking inside = 6; chance expectation 5.00; P(X>=6) indep.binomial=0.377
+  window code (+/-2 cm) 30-37: 3/6 depths inside; 12 metrics peaking inside = 6; chance expectation 6.00; P(X>=6) indep.binomial=0.613
+  window S6 footnote-a peak samples 28-32: 2/6 depths inside; 10 metrics peaking inside = 4; chance expectation 3.33; P(X>=4) indep.binomial=0.441
+  window S6 footnote-a peak samples 28-32: 2/6 depths inside; 12 metrics peaking inside = 4; chance expectation 4.00; P(X>=4) indep.binomial=0.607
+
+Pt/Pd at claimed levels: {'mass_C64': [('C64 272-274', 0.371), ('C64 286-290', 0.421), ('C64 293-297', 0.667), ('C64 302-308', 0.308), ('C64 312-318', 0.757), ('C64 323-325', 0.625)], 'mass_C67': [('C67 25-26', 0.324), ('C67 26-28', 0.364), ('C67 28-30', 0.766), ('C67 30-32', 1.189), ('C67 32-35', 0.628), ('C67 35-36', 1.192)]}
+Pt/Ir at claimed levels: {'mass_C64': [('C64 272-274', 1.561), ('C64 286-290', 2.199), ('C64 293-297', 3.387), ('C64 302-308', 2.012), ('C64 312-318', 2.102), ('C64 323-325', 2.52)], 'mass_C67': [('C67 25-26', 2.619), ('C67 26-28', 2.493), ('C67 28-30', 2.968), ('C67 30-32', 3.588), ('C67 32-35', 1.704), ('C67 35-36', 2.311)]}

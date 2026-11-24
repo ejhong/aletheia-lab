@@ -1,0 +1,52 @@
+rows parsed: 28
+cell mismatches vs study CSV: 0
+
+Row-by-row count/mass check (per kg):
+core depth     mass_g   n  tab/kg    n/mass   c tabC/kg    c/mass mass implied by n     by c
+52   587-589    15.00   0       0       0.0   0       0       0.0      nan      nan 
+52   615-620    16.43   6     365     365.2  11     670     669.5    16.44    16.42 
+52   625-630    14.97   9     600     601.2  24    1605    1603.2    15.00    14.95 a
+52   630-635    15.57   7     450     449.6   0       0       0.0    15.56      nan 
+52   635-640    15.40   2     130     129.9   0       0       0.0    15.38      nan 
+52   640-645    14.92   1      65      67.0   0       0       0.0    15.38      nan 
+52   770-775    15.52   0       0       0.0   0       0       0.0      nan      nan 
+52   785-790    16.64   0       0       0.0   0       0       0.0      nan      nan 
+64   272-274    15.40   0       0       0.0   0       0       0.0      nan      nan 
+64   286-290    14.72   0       0       0.0   0       0       0.0      nan      nan 
+64   290-293    11.78   0       0       0.0   8     680     679.1      nan    11.76 
+64   293-297    16.44   0       0       0.0   0       0       0.0      nan      nan 
+64   302-308    17.30   4     230     231.2   3     175     173.4    17.39    17.14 
+64   312-318    18.50  24    1300    1297.3  36    1945    1945.9    18.46    18.51 a
+64   323-325    13.82   1      70      72.4   0       0       0.0    14.29      nan 
+67   24-25     15.00   0       0       0.0   0       0       0.0      nan      nan 
+67   25-26     15.00   0       0       0.0   0       0       0.0      nan      nan 
+67   26-28     15.00   1      65      66.7   2     135     133.3    15.38    14.81 
+67   28-30     15.00   4     265     266.7   4     335     266.7    15.09    11.94 a
+67   30-32     12.27   9     735     733.5   5     405     407.5    12.24    12.35 a
+67   32-35     18.80   2     105     106.4  12     640     638.3    19.05    18.75 
+67   35-36     15.31   1      65      65.3   7     450     457.2    15.38    15.56 
+77   90-91     15.00   0       0       0.0   0       0       0.0      nan      nan 
+77   159-160    10.37   0       0       0.0   0       0       0.0      nan      nan 
+77   160-161    10.43   0       0       0.0   3     315     287.6      nan     9.52 
+77   161-162     9.54   0       0       0.0   2     205     209.6      nan     9.76 
+77   167-168     0.14  10     965   71428.6   3     290   21428.6    10.36    10.34 a
+77   286-290    10.38   0       0       0.0   0       0       0.0      nan      nan 
+
+Coverage:
+core 52: n=8 midpoint span=199.5 cm (22.80%), edge span=203.0, summed thickness=37.0 cm (4.23% of 875.0 cm)
+core 64: n=7 midpoint span=51.0 cm (7.15%), edge span=53.0, summed thickness=27.0 cm (3.79% of 713.0 cm)
+core 67: n=7 midpoint span=11.0 cm (2.12%), edge span=12.0, summed thickness=12.0 cm (2.31% of 519.0 cm)
+core 77: n=6 midpoint span=197.5 cm (30.41%), edge span=200.0, summed thickness=9.0 cm (1.39% of 649.5 cm)
+total length 2756.5; midpoint-span coverage 459.0 cm = 16.65%; summed sample thickness 85.0 cm = 3.08%
+
+Core 64 vs Core 67:
+ spherules/kg: C64 max outside 312-318 = 230 at 302-308; C64 312-318 = 1300
+    C67 32-35 = 105; ratio C64out/C67 = 2.190
+    C67 30-32 = 735; ratio C64out/C67 = 0.313
+    C67 28-30 = 265; ratio C64out/C67 = 0.868
+    C67 max anywhere = 735 at 30-32; ratio 0.313
+ CDPs/kg: C64 max outside 312-318 = 680 at 290-293; C64 312-318 = 1945
+    C67 32-35 = 640; ratio C64out/C67 = 1.062
+    C67 30-32 = 405; ratio C64out/C67 = 1.679
+    C67 28-30 = 335; ratio C64out/C67 = 2.030
+    C67 max anywhere = 640 at 32-35; ratio 1.062

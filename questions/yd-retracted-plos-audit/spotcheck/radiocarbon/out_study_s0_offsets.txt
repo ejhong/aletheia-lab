@@ -1,0 +1,27 @@
+52 440-445 Beta-9710 4660.0 pub 5409 S0 mean 4588.1 median 4590.7 pub-mean=821 pub-median=818 
+52 460-465 Beta-9711 8400.0 pub 9474 S0 mean 8707.8 median 8697.9 pub-mean=766 pub-median=776 
+52 480-505 Beta-9712 8410.0 pub 9489 S0 mean 8719.1 median 8709.6 pub-mean=770 pub-median=779 
+52 574-579 UGAMS-45600 8480.0 pub 9538 S0 mean 8786.8 median 8785.7 pub-mean=751 pub-median=752 
+52 615-620 UGAMS-51367 11760.0 pub 13687 S0 mean 13002.0 median 13003.2 pub-mean=685 pub-median=684 
+52 625-630 UGAMS-50555 11120.0 pub 12992 S0 mean 12393.0 median 12403.6 pub-mean=599 pub-median=588 target
+52 630-635 UGAMS-50556 11060.0 pub 13023 S0 mean 12306.5 median 12314.8 pub-mean=716 pub-median=708 
+52 635-640 UGAMS-61106 11350.0 pub 13296 S0 mean 12630.4 median 12634.0 pub-mean=666 pub-median=662 
+52 640-645 UGAMS-50557 12640.0 pub 15147 S0 mean 13999.1 median 13990.3 pub-mean=1148 pub-median=1157 
+52 875-890 Beta-8896 30290.0 pub 36364 S0 mean 33840.0 median 33792.8 pub-mean=2524 pub-median=2571 
+64 135-140 OS-118358 9200.0 pub 10054 S0 mean 9494.4 median 9487.8 pub-mean=560 pub-median=566 
+64 275-280 OS-118649 13850.0 pub 16171 S0 mean 15601.4 median 15598.6 pub-mean=570 pub-median=572 
+64 290-293 UGAMS-50558 10990.0 pub 12534 S0 mean 12006.4 median 11994.7 pub-mean=528 pub-median=539 
+64 293-297 UGAMS-51364 10700.0 pub 12193 S0 mean 11534.1 median 11530.2 pub-mean=659 pub-median=663 
+64 312-318 UGAMS-61104 11489.0 pub 13025 S0 mean 12622.8 median 12626.8 pub-mean=402 pub-median=398 target
+64 323-325 UGAMS-51984 12540.0 pub 14341 S0 mean 13679.9 median 13673.9 pub-mean=661 pub-median=667 
+64 330-335 OS-117862 12500.0 pub 14280 S0 mean 13633.3 median 13629.1 pub-mean=647 pub-median=651 
+67 26-28 UGAMS-50559 10930.0 pub 12464 S0 mean 11906.5 median 11896.9 pub-mean=558 pub-median=567 
+67 28-30 UGAMS-51365 10860.0 pub 12382 S0 mean 11788.8 median 11786.8 pub-mean=593 pub-median=595 
+67 30-32 UGAMS-51985 11280.0 pub 12842 S0 mean 12413.6 median 12424.6 pub-mean=428 pub-median=417 
+67 32-35 UGAMS-61105 11495.0 pub 13030 S0 mean 12629.0 median 12632.7 pub-mean=401 pub-median=397 target
+67 35-36 UGAMS-51986 12230.0 pub 13854 S0 mean 13331.8 median 13330.0 pub-mean=522 pub-median=524 
+77 137-142 OS-117723 10550.0 pub 11807 S0 mean 11486.0 median 11478.3 pub-mean=321 pub-median=329 
+77 160-161 UGAMS-50560 11030.0 pub 12466 S0 mean 12233.9 median 12236.3 pub-mean=232 pub-median=230 
+77 161-162 UGAMS-51366 10810.0 pub 12198 S0 mean 11898.1 median 11889.0 pub-mean=300 pub-median=309 target
+77 200-205 OS-118359 12750.0 pub 14480 S0 mean 14127.9 median 14113.1 pub-mean=352 pub-median=367 
+77 638-644 UCIAMS-181265 37900.0 pub 41781 S0 mean 41079.1 median 41197.5 pub-mean=702 pub-median=584 

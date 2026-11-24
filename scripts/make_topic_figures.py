@@ -208,9 +208,9 @@ def younger_dryas():
         (113, "ydb-site-synchrony", "Are the layers the same age?", "Radiocarbon dates from the claimed layers agree on one age.",
          "The precise dates do not agree, though charcoal older than its layer could explain that. Only 4 of 32 sites have a tight date on the layer itself.",
          "Unclear", "Dates disagree; most sites too loosely dated", "open"),
-        (127, "yd-retracted-plos-audit", "The two retracted 2025 PLOS One papers", "The raw data in the retracted Baffin Bay ocean-core and US shocked-quartz papers still support a 12,800-year-old cosmic layer.",
-         "Split verdict: Baffin Bay retraction is strongly supported (flipped ΔR sign & terrestrial IntCal20 inflated ages +297 to +769 yr; SI Figs S30–S34 are porous CaCO₃ foraminifera from 9.5 ka; ×100 math turns pure Earth crust into comet dust). Shocked Quartz retraction is mixed/harsh: dating and vertical controls fail (0 strata checked below Arlington Canyon's quartz), but the notice never challenged the quartz microscopy itself.",
-         "Unclear", "Baffin Bay fails raw audit; quartz microscopy unchallenged", "open"),
+        (127, "yd-retracted-plos-audit", "Two retracted papers, checked", "Two papers from 2025 give new evidence of the layer: comet dust in Baffin Bay mud, and shocked quartz at three sites.",
+         "Dated as the paper itself describes, the Baffin Bay layers are 300 to 610 years too young. The quartz paper cannot show its grains belong to one layer of one age. Nobody has faulted the grains themselves.",
+         "Unclear", "One paper's dates fail; the quartz grains are untested", "open"),
         (40, "younger-dryas-crash", "A crash in human numbers", "Dated traces of people thin out at once, above all in North America.",
          "No drop on three continents. But radiocarbon dating is at its most distorted in exactly those centuries.",
          "Not found", "No sign, though the test was blurred", "no")])
