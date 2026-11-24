@@ -1,0 +1,5 @@
+# Lab Log — `yd-retracted-plos-audit` (Issue #127)
+
+- **2026-11-24 (Pre-lock setup):** Created Issue `#127` (`lane:data`, `status:active`) and branched `q/yd-retracted-plos-audit` from `main` (`73c5223`).
+- **2026-11-24 (Blinded data acquisition):** Downloaded all 13 primary open-access source files into gitignored `data/` and recorded exact byte sizes and SHA-256 checksums in `MANIFEST.md`: Zenodo `14681287` spreadsheets (`Table S7`, `S8a`, `S8b`, `S10`, `S13`), Zenodo `15330698` (`Baffin Bay Supporting Information.pdf`, 227 pages), PLOS One JATS XML manuscripts & retraction notices (`e0328347`, `e0342613`, `e0319840`, `e0342620`), `pone.0319840.s001.pdf` (`22` pages), plus `marine20.14c` (Heaton et al. 2020) and `intcal20.14c` (Reimer et al. 2020). Inspected only spreadsheet headers and PDF table page indices to write clean parsers while remaining blinded to audit outcomes.
+- **2026-11-24 (Protocol & code):** Authored `protocol.md`, `MANIFEST.md`, `analysis/audit_plos_retractions.py`, and `analysis/test_audit_plos_retractions.py`. Ready for synthetic verification and locking.
