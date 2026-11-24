@@ -3,8 +3,8 @@
 # The scorecard, tiles and timeline are made by scripts/make_topic_figures.py; rerun it when a result changes.
 # "image:" names a picture in site/assets/illustrations/ (made by scripts/make_illustrations.py).
 title: The Younger Dryas impact hypothesis
-summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Across twelve locked studies—covering Greenland ice, global fire, platinum chemistry, megafauna, impact-layer dating and today's Taurid stream—neither a single-day strike nor a century of comet airbursts passes its main predictions. Localized platinum and osmium anomalies without one agreed terrestrial source, seventeen aligned large Taurid asteroids, wide dating error bars and untested sediment grains remain genuine loose ends.
-questions: 43, 60, 69, 75, 76, 120, 100, 114, 103, 116, 113, 40, 104
+summary: Did a comet strike 12,900 years ago, set continents alight and end the Ice Age world? Across thirteen locked studies—covering Greenland ice, global fire, platinum chemistry, ocean cosmic dust (³He), megafauna, impact-layer dating and today's Taurid stream—neither a single-day strike nor a drawn-out comet breakup passes its main predictions. Localized platinum and osmium anomalies without one agreed terrestrial source, seventeen aligned large Taurid asteroids, wide dating error bars and untested sediment grains remain genuine loose ends.
+questions: 43, 60, 69, 75, 76, 120, 100, 114, 103, 121, 116, 113, 40, 104
 order: 1
 atlas: ydih
 atlas_title: Fire From the Sky
@@ -29,7 +29,7 @@ Each study here takes one mark, fixes the test before looking at the data, and a
 
 {{figure: topic-younger-dryas/scorecard}}
 
-Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. Eight of the twelve have already been checked by a model from a different company and matched; the four newest (megafauna timing, platinum chemistry, NEEM ice-core fire spikes, and impact-layer dating synchrony) are open to second-vendor replication.
+Every study was run by an AI model under Eugene's direction, with its plan locked beforehand. Eight of the thirteen have already been checked by a model from a different company and matched; the five newest (megafauna timing, platinum chemistry, NEEM ice-core fire spikes, impact-layer dating synchrony, and ocean cosmic dust `³He`) are open to second-vendor replication.
 
 ## The order of events
 
@@ -124,7 +124,7 @@ This version is harder to test, because it predicts no single sharp mark. Set ag
 
 **Where that leaves it.** The drawn-out version survives where the single day does not, mostly because it predicts less. Where it does predict something we could check—a long season of repeated wildfire plumes and a long veil of dust—two Greenland cores show neither. Its one real point is the platinum: a layer laid down over ten or twenty years is easier to get from repeated input than from one event. But the platinum stops after those years, fails cosmic chemical fingerprinting across sediments, and begins after the cold.
 
-**What would test it properly.** The stream is said to have crossed the Earth's path many times over thousands of years. Each crossing should have left the same marks. Platinum, or the cosmic dust (`³He`) that a disintegrating comet sheds, measured continuously right through the ice age and not only at this one layer, would show whether such crossings happened and whether coolings followed them.
+**Looking for the cosmic dust itself (`³He_ET`).** Even if a swarm of large fragments has since dispersed, a giant comet disintegrating across the last 20,000 years should have flooded Earth's orbit with fine interplanetary dust carrying extraterrestrial Helium-3 (`³He_ET`)—a tracer roughly 10,000× richer in space dust than in terrestrial rock or volcanic ash. Real ancient breakups light up ocean mud cleanly on this tracer: both `8.2 Ma` Veritas breakup positive controls jump `2.28–2.31×` across the Atlantic and Indian oceans (`p ≤ 0.0005`). Across seven ice-free Pacific pelagic cores with dilution- and focusing-invariant `²³⁰Th`-normalized `³He_ET` flux (`n = 181`, two independent labs), cosmic dust never rose—sitting slightly *below* baseline in the Younger Dryas (`0.92×`, `95% CI 0.77–1.22×`, `p = 0.65`), across `15–10 ka` (`0.84×`, `CI 0.76–0.97×`), and across the broad `20–10 ka` breakup window (`0.80×`, `CI 0.69–0.92×`, `p = 0.996`), with `0 of 18` blind top-decile spikes falling inside `15–10 ka`. Two Mid-Atlantic Ridge cores from a third lab (`n = 117`) confirm the null (`0.69–0.91×`, `p ≥ 0.76`). Because a third blinded Late Eocene positive control (`ODP 757B`) missed its pre-registered `25–33.5 Ma` baseline due to an Oligocene step-up, the strict formal verdict logs `ambiguous_or_mixed`, and deep-sea mixing (`~250–1,000 yr`) still cannot forbid a brief, dust-poor pulse lasting days or decades. What the ocean cores do rule out cleanly is a sustained multi-century or multi-millennial cosmic dust cloud enveloping Earth during the Younger Dryas. Read more: [the cosmic-dust Helium-3 study](../../questions/yd-cosmic-dust-he3/).
 
 **Calibrating on the airburst we know.** Tunguska, in June 1908, fell within the dates of a Taurid shower, and a published paper says it left an ammonium spike in ice from Greenland's summit. We looked for it in the rest of Greenland, with the test fixed before the layers of 1908 were opened. Averaged over six sites, 1908 is an ordinary year. Site by site it is not: a sharp spike with soot at two of the six and at the summit, nothing in the north-west. That is how smoke arrives, and the ice cannot say whether Tunguska or that summer's forest fires made it.
 
@@ -132,11 +132,11 @@ Either way it bears on this version of the hypothesis. If the spike was Tunguska
 
 **Looking for the swarm itself.** The theory says the stream still carries large fragments, herded by Jupiter onto orbits that bring them back to the Earth every few years. Two NASA archives can be asked: the catalogue of near-Earth asteroids, and thirty-two years of airbursts seen by satellite. Neither shows a swarm. The evidence first offered for one, that the largest asteroids on such orbits point the same way as the comet, is still there: 11 of 17. But those are the same seventeen bodies as in 2010, and among the hundreds of smaller ones found since, which a break-up should have made in greater numbers, the pattern is absent. Airbursts are no commoner in the Taurid weeks, or in the years the swarm was due back. There is one hint, among asteroids down to about 150 metres, of a few more on the swarm's orbits than chance gives. Read more: [the Taurid swarm study](../../questions/taurid-swarm/).
 
-This is a test of the stream today. A swarm could have broken down in 12,900 years.
+This is a test of the stream today. A swarm could have broken down in 12,900 years—though if it had broken down into a dense cloud of dust across `20–10 ka`, the ocean `³He_ET` cores would have caught it.
 
 ## What the studies add up to
 
-This section is the fair assessment of the AI models that ran these studies, after all twelve. It is not the atlas's judgment, which is made [there](https://ejhong.github.io/aletheia/cases/ydih/) by its own process.
+This section is the fair assessment of the AI models that ran these studies, after all thirteen. It is not the atlas's judgment, which is made [there](https://ejhong.github.io/aletheia/cases/ydih/) by its own process.
 
 **The single day of fire.** This version made the sharpest, most falsifiable predictions, and across every public archive we tested they have failed:
 
@@ -150,14 +150,15 @@ This section is the fair assessment of the AI models that ran these studies, aft
 
 Taken together, a single-day continent-wide cosmic catastrophe causing the Younger Dryas and megafauna extinction looks **very unlikely** on the public evidence tested here.
 
-**The comet that kept coming.** A drawn-out Taurid debris-stream model dodges single-day timing objections by predicting less. Where it still makes concrete predictions, four locked tests went against it:
+**The comet that kept coming.** A drawn-out Taurid debris-stream model dodges single-day timing objections by predicting less. Where it still makes concrete predictions, five locked tests went against it:
 
+- A disintegrating giant comet over `20–10 ka` should raise Earth's extraterrestrial `³He_ET` cosmic-dust rain like real ancient breakups (`2.3×` at `8.2 Ma` Veritas); across nine Pacific and Atlantic ocean cores from three labs, flux stayed flat or lower (`0.80–0.92×`), with zero top-decile spikes in `15–10 ka`.
 - Years of airburst fires should fill Greenland ice with short smoke plumes; two independent cores (NGRIP and NEEM) instead show a steady baseline rise, fourfold fewer relative spikes, and completely ordinary denominator-free absolute and snowfall-flux plumes.
 - The one historical airburst we know (Tunguska, 1908) left a sharp sooty spike where it showed at all, or nothing visible—neither matches the Younger Dryas baseline shelf.
 - The swarm of large fragments predicted to ride in today's Taurid stream does not show in NASA's asteroid catalogue (beyond the 17 large bodies known in 2010) or in 32 years of satellite airburst records.
 - Even on a decade-scale horizon, Greenland's platinum and ammonium still begin *after* the cold started, so they cannot trigger it.
 
-This version can still be rescued—by a swarm that has since dispersed, airbursts that lit few fires, and a cosmic dust veil too thin to cool Antarctica—but each rescue strips away a testable prediction. On current public data it looks **unlikely**.
+This version can still be rescued—by a swarm that has since dispersed, airbursts that lit few fires, and a breakup that somehow stayed brief or shed little fine `< 50 µm` dust—but each rescue strips away a testable prediction. On current public data it looks **unlikely**.
 
 **What genuinely remains open (and why this is not a closed case for one simple terrestrial story either).**
 
@@ -168,13 +169,13 @@ This version can still be rescued—by a swarm that has since dispersed, airburs
 
 **What points the other way.** The standard ocean-circulation account needs no cosmic trigger: the Younger Dryas matches the ice age's other abrupt coolings in shape, depth, bipolar seesaw, and post-cooling ammonium response. In addition, the 150 years before onset hold one of the heaviest volcanic runs in 51,000 years, and Page-Ladson's osmium-and-HSE chemistry matches volcanic aerosols—though neither proves volcanism caused every site's signal or triggered the cooling on its own.
 
-**In one sentence.** Across twelve pre-registered tests, neither a single-day comet strike nor a century of fire-lighting comet airbursts fits the public climate, fire, chemical, biological, astronomical, or dating records; yet localized platinum/osmium anomalies, wide radiocarbon error bars, and untested microscopic grains mean several narrow physical puzzles remain open for future primary lab work.
+**In one sentence.** Across thirteen pre-registered tests, neither a single-day comet strike nor a drawn-out Taurid comet breakup fits the public climate, fire, chemical, cosmic-dust, biological, astronomical, or dating records; yet localized platinum/osmium anomalies, wide radiocarbon error bars, and untested microscopic grains mean several narrow physical puzzles remain open for future primary lab work.
 
 ## What this does not settle
 
 - **Untested microscopic impact proxies in sediment.** Magnetic microspherules, meltglass, nanodiamonds, and claimed shocked quartz grains at YDB sites require primary electron microscopy and blind inter-laboratory replication; none was tested here.
 - **Full six-element ice-core and lake-core chemistry.** Greenland's GISP2 platinum layer has never been measured continuously across earlier ice-age coolings or paired with osmium isotopes and all six siderophile elements in the same ice, and White Pond's sharp `Pt/Pd` spike lacks iridium and osmium isotopes. Hall's Cave's recurring low-rhenium osmium drops also need a better terrestrial geochemical model than high-rhenium Kudryavy fumarole gas.
-- **Continuous cosmic dust (`³He`) across the deglaciation.** Whether extraterrestrial helium-3 flux actually rose across the Younger Dryas—a direct test of an enhanced Taurid dust cloud—is an open follow-up question (`#121`).
+- **Decadal-resolution polar ice-core `³He_ET` across `14.5–11.5 ka`.** While nine pelagic ocean cores rule out a sustained multi-century or multi-millennial cosmic-dust cloud (`#121`), marine bioturbation averages over `~250–1,000 yr` and the public polar ice-core `³He` record (Brook et al. 2000) has a gap from `4` to `75 ka`. Measuring continuous `³He_ET` directly in Greenland or Antarctic ice across the Younger Dryas would test whether a brief, sub-century dust pulse occurred.
 - **What drove the megafauna decline.** The timing rules out a single day of extinction at 12,850 years ago, but does not separate human hunting from Ice Age warming and cooling as the cause of the drawn-out loss.
 - **People.** The one human-population test made was blurred by radiocarbon plateau distortion. A better method exists and has not been tried.
-- **The limits of the work itself.** AI models designed, ran and wrote up every study, mostly in single sessions. The earlier eight have been reproduced across companies' models; the four newest (`#116`, `#120`, `#114`, `#113`) await second-vendor replication. No human specialist has reviewed any of it.
+- **The limits of the work itself.** AI models designed, ran and wrote up every study, mostly in single sessions. The earlier eight have been reproduced across companies' models; the five newest (`#116`, `#120`, `#114`, `#113`, `#121`) await second-vendor replication. No human specialist has reviewed any of it.

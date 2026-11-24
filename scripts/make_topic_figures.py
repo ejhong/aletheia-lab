@@ -166,7 +166,7 @@ def bin_words(start, width):
 
 def younger_dryas():
     tiles("topic-younger-dryas", [
-        ("12", "studies, each with its test fixed before the data were looked at", False),
+        ("13", "studies, each with its test fixed before the data were looked at", False),
         ("0", "found the sharp, one-off mark that a strike from the sky should leave", False),
         ("4", "eruptions, two of them very large, in the 150 years before the cold: among the heaviest runs in 51,000 years", False),
         ("Still open", "exact terrestrial source of Hall's Cave osmium and GISP2 ice platinum, and untested sediment spherules and shocked quartz", True)])
@@ -199,6 +199,9 @@ def younger_dryas():
         (103, "taurid-swarm", "A swarm in the Taurid stream", "The stream the Earth crosses each autumn still carries a swarm of large fragments of the broken comet.",
          "No sign of one among today's asteroids or in 32 years of airbursts seen by satellite. Seventeen large asteroids do line up with the comet, as was known in 2010; smaller ones do not.",
          "Not found", "No swarm of large fragments today", "no"),
+        (121, "yd-cosmic-dust-he3", "Extraterrestrial Helium-3 cosmic dust", "A disintegrating Taurid comet floods Earth's orbit with fine space dust, lifting ocean ³He_ET flux across 20–10 ka like real ancient breakups.",
+         "Both 8.2 Ma Veritas breakup controls jump 2.3× across two oceans (p ≤ 0.0005). Across 7 Pacific ²³⁰Th-normalized cores (n = 181) and 2 Atlantic cores (n = 117), Younger Dryas and 20–10 ka flux stays flat or lower (0.80–0.92×; 0/18 top spikes in 15–10 ka). Formal verdict mixed due to one blinded Cenozoic control baseline.",
+         "Not found", "No cosmic dust surge in any ocean core", "no"),
         (116, "yd-megafauna-timing", "The great animals", "North America's Ice Age giants hold steady until 12,850 years ago and vanish abruptly at the strike.",
          "Dung spores fell past half their peak a millennium early in 9 of 11 lake cores. Direct bone dates drop around 12,800–12,600 BP, yet 10 modern AMS collagen dates prove mammoths, mastodons, a giant beaver and a short-faced bear lived centuries after.",
          "Not found", "Drawn-out and staggered across the cold", "no"),
