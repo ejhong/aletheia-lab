@@ -1,0 +1,79 @@
+ydb-site-synchrony spot-check (inputs: results/pillar1_dates.csv, results/pillar2_sites.csv)
+All p below are analytic chi-square p of Ward-Wilson T (df = n - 1), not simulated p_T.
+
+1. Primary panel: weighted mean 11025.0 ± 6.7 14C BP, T = 630.62, df = 8, p = 6.1e-131
+   Contribution of each site to T, (y - mean)^2 / sigma^2:
+     Abu Hureyra, Syria          11070.0 ±  40.0      1.3
+     Arlington Canyon, CA        11138.2 ±   8.4    181.7
+     Aalsterhut, Netherlands     10846.6 ±  14.2    157.8
+     Lake Hind, Manitoba         10610.0 ±  25.0    275.5
+     Bull Creek, OK              11070.0 ±  60.0      0.6
+     Murray Springs, AZ          10885.0 ±  50.0      7.8
+     Sheriden Cave, OH           10920.0 ±  50.0      4.4
+     Indian Creek, MT            10980.0 ± 110.0      0.2
+     Blackwater Draw, NM         11300.0 ± 235.0      1.4
+   Lake Hind + Arlington + Aalsterhut = 615.0 of 630.6
+
+2. Leave-one-site-out, Primary panel (full panel: T = 630.62, p = 6.1e-131):
+  drop Abu Hureyra, Syria                                    T =  629.32  df =  7  p = 1.2e-131
+  drop Arlington Canyon, CA                                  T =  141.04  df =  7  p = 3.1e-27
+  drop Aalsterhut, Netherlands                               T =  428.30  df =  7  p = 2e-88
+  drop Lake Hind, Manitoba                                   T =  334.04  df =  7  p = 3.2e-68
+  drop Bull Creek, OK                                        T =  630.05  df =  7  p = 8.2e-132
+  drop Murray Springs, AZ                                    T =  622.64  df =  7  p = 3.2e-130
+  drop Sheriden Cave, OH                                     T =  626.13  df =  7  p = 5.7e-131
+  drop Indian Creek, MT                                      T =  630.45  df =  7  p = 6.7e-132
+  drop Blackwater Draw, NM                                   T =  629.25  df =  7  p = 1.2e-131
+   minimum leave-one-out T = 141.04
+
+2. Leave-one-site-out, Favorable panel (full panel: T = 28.07, p = 0.00046):
+  drop Abu Hureyra, Syria                                    T =   14.01  df =  7  p = 0.051
+  drop Arlington Canyon, CA                                  T =   26.88  df =  7  p = 0.00035
+  drop Aalsterhut, Netherlands                               T =   27.00  df =  7  p = 0.00033
+  drop Lake Hind, Manitoba                                   T =   20.56  df =  7  p = 0.004
+  drop Bull Creek, OK                                        T =   22.49  df =  7  p = 0.002
+  drop Murray Springs, AZ                                    T =   26.98  df =  7  p = 0.00034
+  drop Sheriden Cave, OH                                     T =   27.98  df =  7  p = 0.00022
+  drop Indian Creek, MT                                      T =   27.89  df =  7  p = 0.00023
+  drop Blackwater Draw, NM                                   T =   25.63  df =  7  p = 0.00059
+   minimum leave-one-out T = 14.01
+
+3. Internal scatter of pooled sites (all dates the study pooled into one value):
+  Arlington Canyon, CA       n = 12  mean 11138.2 ± 8.4  within-site T = 176.3  df = 11  p = 6e-32  Birge ratio sqrt(T/df) = 4.00
+  Aalsterhut, Netherlands    n = 14  mean 10846.6 ± 14.2  within-site T = 27.9  df = 13  p = 0.009  Birge ratio sqrt(T/df) = 1.47
+
+4. Primary panel with other Arlington Canyon values:
+   (check: weighted mean of the 5 lowest-unit dates not under footnote f = 11057.4 ± 12.8; Kennett 2008 publishes 11060 ± 40)
+  a. Kennett 2008 Fig. 4 published average 11060 ± 40        T =  170.98  df =  8  p = 8.1e-33
+  b. 7 non-footnote-f dates in 392-503 cm, 11070.2 ± 10.6    T =  382.40  df =  8  p = 1.1e-77
+
+5. Primary panel with pooled-site errors widened by the Birge ratio:
+     Arlington Canyon, CA       sigma 8.4 -> 33.7
+     Aalsterhut, Netherlands    sigma 14.2 -> 20.8
+  Primary, Arlington and Aalsterhut errors widened           T =  214.15  df =  8  p = 6.6e-42
+
+6. The five panel sites Kennett 2015 Fig. 2 marks as dated on the proxy layer
+   (Abu Hureyra, Arlington Canyon, Aalsterhut, Lake Hind, Bull Creek; Clovis-occupation sites dropped):
+  Primary choices                                            T =  616.41  df =  4  p = 4.4e-132
+  Favorable choices                                          T =   24.34  df =  4  p = 6.8e-05
+  (for comparison) the four Clovis-occupation sites alone    T =    3.40  df =  3  p = 0.334
+
+7. Span of IntCal20 calibrated medians, Primary panel (study's own calibration):
+   all 9 sites: 544 yr;  without Blackwater Draw: 436 yr (Arlington Canyon, CA 13089 to Lake Hind, Manitoba 12653 cal BP)
+
+8. Placebo-year overlap of Kennett 2015's 23 modeled 95% intervals:
+     13300 cal BP ( +500 yr): 10 of 23
+     13050 cal BP ( +250 yr): 17 of 23
+     12800 cal BP (   +0 yr): 23 of 23
+     12550 cal BP ( -250 yr): 17 of 23
+     12300 cal BP ( -500 yr): 12 of 23
+   W_50 at 1-yr steps: 12255-13195 cal BP = 940 yr (study, 10-yr steps: 930 yr)
+   W_80 at 1-yr steps: 12625-12935 cal BP = 310 yr (study, 10-yr steps: 300 yr)
+
+9. The four Clovis-occupation sites in the 9-site panel:
+   Site                 | Kennett 2015 Fig. 2: date on proxies (tier) | Waters & Stafford 2007 Table 1 heading; row
+   ---------------------|---------------------------------------------|------------------------------------------------------------
+   Murray Springs, AZ   | no (Med)                                    | Clovis sites (credible ages and Clovis diagnostics); "Murray Springs, AZ (n = 8) 10,885 ± 50"
+   Sheriden Cave, OH    | no (High)                                   | Problematic Clovis and Clovis-age sites; "Sheriden Cave, OH (below artifacts, n = 2) 10,920 ± 50"
+   Indian Creek, MT     | no (Med)                                    | Clovis-age sites (credible ages but no Clovis diagnostics); "Indian Creek, MT (n = 1) 10,980 ± 110"
+   Blackwater Draw, NM  | no (Med)                                    | Problematic Clovis and Clovis-age sites; "Blackwater Draw, NM (n = 3) 11,300 ± 235"

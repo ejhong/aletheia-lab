@@ -1,0 +1,77 @@
+Reproduced study: verdict replicated_steady_not_spiky; windows 28; years after/before 131/136
+
+1. Denominator of the >5x test (51-yr running median of yearly medians), window mean
+   running median: before 5.23  after 21.01  ratio 4.02
+   (study's 'level' = mean of yearly medians: before 11.30  after 29.15  ratio 2.58)
+
+2. Denominator swap (top/run > t  <=>  excess > (t-1)*run; window-mean run of the target window)
+   observed            >5x: after 8  before 31;  >10x: after 0  before 18
+   before-plumes on after-baseline:  >5x 5   >10x 1
+   after-plumes on before-baseline:  >5x 52   >10x 19
+   ratio > 3: after 20  before 50
+   ratio > 4: after 15  before 43
+   ratio > 5: after  8  before 31
+   ratio > 6: after  5  before 28
+   ratio > 8: after  0  before 22
+   ratio >10: after  0  before 18
+
+3. Absolute plume years (peak minus running median > t ug/kg); p = study's exact binomial test
+   > 30: after 37  before 23  p = 0.053  (pre-registered secondary)
+   > 40: after 21  before 17  p = 0.517
+   > 50: after 18  before 14  p = 0.481  (pre-registered primary)
+   > 60: after 14  before 10  p = 0.418
+   > 75: after 10  before  5  p = 0.203
+   >100: after  5  before  3  p = 0.500  (pre-registered secondary)
+   >150: after  1  before  1  p = 1.000
+   >50 rate ratio 1.33, 95% CI 0.63-2.90 (exact Clopper-Pearson interval on a/(a+b), conditional on a+b, converted to a rate ratio with the valid years 131 and 136)
+
+4. Flux control (excess x lambda / lambda_ref > 50)
+   protocol, mean lambda  ref 2.77 cm/yr: after 11  before 13
+   code, median lambda    ref 2.51 cm/yr: after 16  before 13
+
+5. Layer thickness, samples per year, early Holocene
+   before (-1) mean layer 2.57 cm/yr, samples/yr median 25 mean 25.9
+   after (0)   mean layer 2.14 cm/yr, samples/yr median 21 mean 21.4
+   early Holocene windows k=8..15 (11696-10496 b2k):
+     samples_per_yr_med   34.0 - 44.5
+     spike_years_x5       32 - 57
+     spike_years_add50    19 - 36
+     spike_years_flux50   34 - 58
+     spike_part           2.555 - 4.442
+     mean add50 27.75, mean flux50 45.25
+   onset windows samples/yr median: before 25, after 21
+
+6. Smoothing in the 1-mm series (depth from the 5-cm GICC05 table)
+   Allerod  -1: spacing 1.00 mm; FWHM of 10 largest peaks (samples=mm) [15, 14, 14, 18, 20, 17, 15, 17, 40, 14], median 16
+      autocorrelation of detrended log NH4 at 1,3,5,8,12,20 mm: 0.99 0.93 0.83 0.63 0.37 -0.01
+   YD        0: spacing 1.00 mm; FWHM of 10 largest peaks (samples=mm) [24, 13, 24, 20, 20, 36, 17, 23, 17, 14], median 20
+      autocorrelation of detrended log NH4 at 1,3,5,8,12,20 mm: 0.99 0.94 0.86 0.69 0.44 0.00
+   Holocene 12: spacing 1.00 mm; FWHM of 10 largest peaks (samples=mm) [14, 16, 7, 14, 15, 15, 16, 12, 12, 11], median 14
+      autocorrelation of detrended log NH4 at 1,3,5,8,12,20 mm: 0.99 0.92 0.80 0.56 0.23 -0.22
+
+7. Onset shift (verdict by the locked rule)
+   onset 12846 (-50): replicated_steady_not_spiky  x5 6/30  add50 17/13  level x2.47
+   onset 12871 (-25): replicated_steady_not_spiky  x5 8/28  add50 18/11  level x3.00
+   onset 12896 (+0): replicated_steady_not_spiky  x5 8/31  add50 18/14  level x2.58
+   onset 12921 (+25): replicated_steady_not_spiky  x5 13/30  add50 17/14  level x1.77
+   onset 12946 (+50): inconclusive_or_mixed        x5 21/20  add50 19/9  level x1.62
+
+8. Earlier stadial onsets (Pillar 2 rules: >=10 samples/yr, >=100 valid years each side)
+   GS-1     12896: valid yrs before/after 139/132 (used); >5x 32/8  >50 ug/kg 14/18
+   GS-2.1c  22900: valid yrs before/after 133/111 (used); >5x 0/0  >50 ug/kg 0/0
+   GS-2.2   23220: valid yrs before/after 133/ 89 (skipped); >5x 0/0  >50 ug/kg 0/0
+   GS-3     27540: valid yrs before/after 140/ 25 (skipped); >5x 1/0  >50 ug/kg 0/0
+   GS-4     28600: valid yrs before/after 133/104 (used); >5x 0/0  >50 ug/kg 0/0
+   GS-5.1   30600: valid yrs before/after  88/ 14 (skipped); >5x 0/0  >50 ug/kg 0/0
+   GS-5.2   32040: valid yrs before/after 112/ 50 (skipped); >5x 1/0  >50 ug/kg 0/0
+   GS-6     33360: valid yrs before/after 120/  0 (skipped); >5x 0/0  >50 ug/kg 0/0
+   GS-7     34740: valid yrs before/after 130/ 12 (skipped); >5x 9/0  >50 ug/kg 3/0
+   GS-8     36580: valid yrs before/after 124/ 86 (skipped); >5x 1/0  >50 ug/kg 0/0
+   GS-9     39900: valid yrs before/after  13/  5 (skipped); >5x 0/0  >50 ug/kg 0/0
+   GS-10    40800: valid yrs before/after  14/  0 (skipped); >5x 1/0  >50 ug/kg 0/0
+   GS-11    42240: valid yrs before/after  49/  0 (skipped); >5x 0/0  >50 ug/kg 0/0
+   GS-12    44280: valid yrs before/after  34/  0 (skipped); >5x 0/0  >50 ug/kg 0/0
+
+9. Cross-check with the published 10-yr NEEM averages (Erhardt et al.)
+   13046-12896 b2k: mean NH4 11.66 ug/kg (n=15)
+   12896-12746 b2k: mean NH4 29.53 ug/kg (n=15)

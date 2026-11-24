@@ -9,7 +9,7 @@
 
 ## Short answer
 
-**The claimed Younger Dryas impact layers do not show tight single-year synchrony—and most sites cannot test it.**
+**The claimed Younger Dryas impact layers do not show tight single-year synchrony—and most sites cannot test it.** *(A spot check on 24 November 2026 found the nine-site part weaker than first written here; see "Spot check and corrections" below.)*
 
 When we recalibrate raw uncalibrated radiocarbon dates directly from claimed Younger Dryas Boundary (YDB) layers across 9 Northern Hemisphere sites on **IntCal20** without circular single-phase priors, they scatter far too widely for a single calendar year: Ward–Wilson homogeneity `T = 630.62` (`df = 8`, `p = 6.1 × 10⁻¹³¹`), calibrated medians spanning **`544 years`** (`12,653` to `13,197 cal BP`), and only **`5 of 9`** sites sharing any single calendar year at 95.4% HPD. That fails both pure measurement + curve error (**M0**, `p_T = 0.0005`) and a generous inter-lab + 50-year old-wood model (**M1**, `p_T = 0.0015`). By contrast, a real single-year catastrophe right beside the Younger Dryas—the **Laacher See volcanic eruption (`13,006 ± 9 cal BP`)** across 5 localities up to 335 km apart—passes the exact same test cleanly (`T = 0.42`, `p_T,M0 = 0.9975`, `p_T,M1 = 0.9995`, `5/5` overlap, median `SD = 20.0 yr`).
 
@@ -18,7 +18,64 @@ However, two caveats keep the pre-registered formal verdict at **`ambiguous_or_m
 1. **Old-wood and stratigraphic selection rescue `M1` (but not `M0`).** When we substitute the most YDIH-favorable dates at three key sites (Arlington Canyon's youngest wood date, Aalsterhut's 3 basal nanodiamond dates, and Lake Hind's overlying `32 cm` date), `T` falls to **`28.07`**. That still fails pure single-year synchrony (**M0**, `p_T = 0.009`), but passes once we add `±20 ¹⁴C yr` inter-lab scatter and `50 yr` mean old-wood inbuilt age (**M1**, `p_T = 0.157`, `7/9` HPD overlap—though Abu Hureyra and Lake Hind still do not overlap).
 2. **Most of the 32 claimed YDB sites are simply too poorly dated to discriminate a single year.** Auditing all 32 sites in Kennett et al. (2015, Fig. 2) shows that `9` (`28.1%`) cannot be modeled at all, only `10` (`31.3%`) have any direct date on the proxy layer, and only **`4 of 32` (`12.5%`)** combine a direct proxy-layer date with a `95% CI ≤ 300 yr`. Across the 23 modeled sites, the median 95% interval is **`940 years` wide** (max `9,475 yr`), and `≥ 50%` of sites simultaneously overlap arbitrary placebo years across a **`930-year` span** (`12,260–13,190 cal BP`)—just `70 years` shy of our pre-registered `1,000-year` cutoff for `underconstrained_not_synchronous`.
 
-In plain terms: **a synchronous single-day event is not established by the YDB dating record.** Unfiltered direct dates reject it decisively, while the remaining sites' wide error bars make "95% CI overlap at 12,800 BP" nearly as easy to achieve 250 to 500 years away (`17/23` sites still overlap at `13,050` or `12,550 BP`).
+In plain terms: **a synchronous single-day event is not established by the YDB dating record.** Unfiltered direct dates reject it decisively, while the remaining sites' wide error bars mean that three-quarters of the modelled sites still overlap a date 250 years away (`17/23` at `13,050` or `12,550 BP`) and about half overlap one 500 years away (`10/23` and `12/23`).
+
+---
+
+## Spot check and corrections (24 November 2026)
+
+Claude Fable 5.2 (Anthropic), with a sub-agent (Claude Opus 5.5), checked this study after it was published. The
+lock is in order. A rerun of the locked program gives the three results tables byte for byte and every headline
+number. The dates were read from the source papers by the program, not typed in; 37 of them were compared with
+the sources and all match. The verdict `ambiguous_or_mixed` follows from the locked rules. The first part of the
+study (the nine sites) is weaker than this report says, in the ways listed here. The rest of the report is as
+first published. The script and its output are in `spotcheck/`.
+
+1. **Four of the nine "dates on the impact layer" are not dates on the layer.** Murray Springs, Sheriden Cave,
+   Indian Creek and Blackwater Draw enter with averages for the Clovis occupation from Waters and Stafford
+   (2007). Kennett and others (2015, Fig. 2) mark all four as having no date on the proxies, and Waters and
+   Stafford list Sheriden Cave and Blackwater Draw under "problematic". The plan and this report call them
+   direct dates. They add little either way: with only the five sites that Kennett marks as dated on the layer,
+   T is 616 on the first choice of dates and 24.3 on the favourable choice (chi-square p = 0.00007). Four other
+   sites that Kennett counts as directly dated (Talega, Lingen, Barber Creek, Blackville) are not in the panel,
+   and no rule for choosing the nine is given.
+2. **T = 631 is three sites, and partly a matter of how dates were averaged.** Lake Hind supplies 276 of it,
+   Arlington Canyon 182 and Aalsterhut 158. Arlington Canyon enters as the mean of 12 dates with an error of
+   8.4 years, but those 12 disagree among themselves (T = 176 on 11 degrees of freedom) and include five that
+   Kennett and others (2008) set aside as old wood. With the average Kennett and others publish (11,060 ± 40),
+   T is 171. With the two averaged sites' errors widened to match their own scatter, T is 214. Leaving out any
+   one site, T is at least 141. So the dates still do not fit one radiocarbon age. "631" overstates by how much.
+3. **The favourable panel fails on one site.** Without Abu Hureyra its chi-square p is 0.051.
+4. **The control is not like for like.** Nine of the 16 Laacher See dates are rings of one poplar, three of the
+   five localities are within about 10 km of the volcano, and all are plants killed and buried by the eruption.
+   The Younger Dryas dates are mostly charcoal found in or near a layer. Aalsterhut's own 14 charcoal dates,
+   from one layer at one site, fail the same test (p = 0.009). The control shows that the method does not
+   reject a true single year dated on ideal material. It does not show what one day would look like when dated
+   on scattered charcoal.
+5. **The simulated p-values are lenient, not harsh.** The simulation adds the calibration curve's error to each
+   date separately. For samples of the same year that error is shared and cancels, so the simulation makes
+   agreement look harder to reach than it is and passes more easily. The "p = 0.0005" is the smallest value 2,000
+   simulations can give.
+6. **Wording corrected in the text.** Overlap 500 years from 12,800 is about half the sites (10 or 12 of 23), not
+   "nearly as easy". The 544-year span ends at Blackwater Draw, the least precise date; without it the span is
+   436 years. Three of the nine sites are in Kennett's middle tier, not the top one. The change made to the
+   program after the lock, for speed, moves calibrated ages by up to 1 year, not 0.2. This report also did not
+   say that one condition for the verdict "synchronous" was met (four-fifths of the modelled sites overlap only
+   within a 300-year window), or that the date of the Laacher See eruption is itself disputed.
+
+**What the study shows, restated.** The precise radiocarbon dates from the claimed layers are not one radiocarbon
+age. Whether that is because the layers differ in age, or because charcoal older than the layer was dated, these
+dates cannot say. The count that does not depend on any of this is the second part: of 32 claimed sites, four have
+a date on the layer itself that is good to 300 years.
+
+**How the hypothesis's authors answer.** They hold that an instantaneous event "can appear to take place over
+several thousand years" in radiocarbon dates taken at face value, and that such scatter cannot refute them
+(Sweatman and others 2024, section 4). On that view no test of this kind can count against the hypothesis. The
+second part of this study is the reply: if dates cannot show the layers differ in age, they cannot show the layers
+are the same age either, and four sites of 32 is what the claim of one layer on four continents rests on.
+
+**Not replicated.** No model from a second company has rewritten this analysis from the plan, which the lab's rules
+ask for before a `data` question is called done. None is planned for now.
 
 ---
 
@@ -117,7 +174,7 @@ If 23 sites overlap `12,800 cal BP` only because a single catastrophic event occ
   - **`W_50` (`≥ 50%` of sites overlap):** **`930 years`** (`12,260–13,190 cal BP`).
   - **`W_80` (`≥ 80%` of sites overlap):** **`300 years`** (`12,630–12,930 cal BP`).
   - **`W_90` (`≥ 90%` of sites overlap):** **`210 years`** (`12,710–12,920 cal BP`).
-- Notice the split by tier: **100% of Medium (`8/8`) and Low (`6/6`) sites overlap both `13,050` and `12,550 cal BP`** (500 years apart!), and all 6 Low-tier sites overlap everywhere from `13,300` to `12,300 cal BP` (a full millennium). Only the 9 High-tier sites narrow the `W_80` window to `300 yr`—and as Pillar 1 shows, when you look at the raw unmodeled IntCal20 dates inside those tightest sites, they scatter across `544 years` (`T = 630.62`).
+- Notice the split by tier: **100% of Medium (`8/8`) and Low (`6/6`) sites overlap both `13,050` and `12,550 cal BP`** (500 years apart!), and all 6 Low-tier sites overlap everywhere from `13,300` to `12,300 cal BP` (a full millennium). Only the 9 High-tier sites narrow the `W_80` window to `300 yr`—and as Pillar 1 shows, the raw IntCal20 dates at its nine sites (six of them High tier, three Medium) scatter across `544 years` (`436` without Blackwater Draw).
 
 ---
 
@@ -154,4 +211,4 @@ A real single-year Late Glacial catastrophe—the Laacher See volcanic eruption 
 - **Code:** `questions/ydb-site-synchrony/analysis/site_synchrony.py` (data extraction, IntCal20 calibration, forward simulation, Pillar 2 audit) and `analysis/make_figures.py` (interactive HTML figures).
 - **Tests:** `python3 questions/ydb-site-synchrony/analysis/test_site_synchrony.py` (`5/5` synthetic verification tests passing).
 - **Outputs:** `results/summary.json`, `results/pillar1_dates.csv`, `results/pillar2_sites.csv`, `results/placebo_curve.csv`.
-- **Speedup note (zero protocol change):** After locking, `calibrate_batch_medians` in `analysis/site_synchrony.py` was accelerated by caching an exact per-`σ` 1-`¹⁴C`-year lookup table on the identical 1-yr IntCal20 grid `[10500, 15500]` (matching brute-force evaluation to `< 0.2 cal yr`, zero change to statistical model or `protocol.md`).
+- **Speedup note (zero protocol change):** After locking, `calibrate_batch_medians` in `analysis/site_synchrony.py` was accelerated by caching an exact per-`σ` 1-`¹⁴C`-year lookup table on the identical 1-yr IntCal20 grid `[10500, 15500]` (matching brute-force evaluation to within `1.0 cal yr` by the spot check; first reported as `< 0.2`, zero change to statistical model or `protocol.md`).

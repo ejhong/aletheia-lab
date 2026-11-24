@@ -1,0 +1,104 @@
+Spot-check output, generated 2026-11-24 with Python 3.12 / NumPy / SciPy from the repo .venv, data per MANIFEST.md (SHA-256s verified).
+
+################################################################
+$ python -I -B questions/yd-megafauna-timing/spotcheck/recompute_pillar2.py
+################################################################
+== Spreadsheet
+rows with numeric RCYBP and Error: 520
+score x method: {('12', 'MS'): 260, ('11', 'ST'): 178, ('12', 'AMS'): 82}
+IntCal20 14C age at 12,850 cal BP: 10989
+dates in 6,000-35,000 14C BP: 489; >=50% inside 20-9 ka: all 330, Score 12 AMS 215
+
+== SPD statistics (study's value in brackets)
+all          n=330  M_yd=5.53% [5.61%]  R_pre=1.887 [1.900]  M_yd x n = 18.3 dates = 5.5% of the subset's dates
+score12_ams  n=215  M_yd=4.92% [4.95%]  R_pre=1.901 [1.917]  M_yd x n = 10.6 dates = 4.9% of the subset's dates
+
+== Score 12 AMS dates with P(cal age < 12,750) > 0.95: 10
+taxon        site                        lab                  14C       P(<12750) | this calibration: median, yrs after 12850/12750 | study median, yrs after 12850/12750
+Arctodus     Bonner Springs              CAMS-20007            9630±60   1.0000   |    10958   1892   1792                    |    10953   1897   1797
+Castoroides  Clyde                       OS-73632             10150±50   1.0000   |    11779   1071    971                    |    11774   1076    976
+Mammuthus    Lewiston Mammoth A          OS-97864             10300±65   1.0000   |    12096    754    654                    |    12091    759    659
+Mammuthus    Pyramid Lake                UCR-3795/CAMS 59285  10340±40   1.0000   |    12171    679    579                    |    12167    683    583
+Mammuthus    Randolph Mammoth            OS-93354             10350±45   1.0000   |    12198    652    552                    |    12196    654    554
+Mammuthus    Pyramid Lake                UCR-3796/CAMS 59286  10360±50   1.0000   |    12226    624    524                    |    12222    628    528
+Mammut       Colgan-King Ferry Mastodon  OS-95596             10400±50   1.0000   |    12276    574    474                    |    12273    577    477
+Mammut       Hiscock (Englebert)         BETA-24412           10515±120  0.9984   |    12449    401    301                    |    12444    406    306
+Mammut       Hiscock                     CAMS-17407           10630±80   0.9957   |    12643    207    107                    |    12638    212    112
+Mammuthus    Wallman Mammoth             not provided         10630±70   0.9983   |    12650    200    100                    |    12644    206    106
+years after 12,850, all survivors: this calibration 200-1892; study medians 206-1897
+years after 12,850, mammoths and mastodons: this calibration 200-754; study medians 206-759
+
+== Spreadsheet rows for site 'Bonner Springs' and site 'Pyramid Lake' (exact site name), as given
+   (the Camelops row 'Harrelson 2, Pyramid Lake' is a different site and is not listed)
+taxon | state | site | lab | RCYBP | Error | material | method | score
+Arctodus | Kansas | Bonner Springs | NZA-28889 | 10921 | 50 | CO | MS | 12
+Arctodus | Kansas | Bonner Springs | NZA-28890 | 11668 | 50 | CO | MS | 12
+Arctodus | Kansas | Bonner Springs | CAMS-20007 | 9630 | 60 | CO | MS | 12
+Mammuthus | Nevada | Pyramid Lake | UCR-3795/CAMS 59285 | 10340 | 40 | CO | MS | 12
+Mammuthus | Nevada | Pyramid Lake | UCR-3796/CAMS 59286 | 10360 | 50 | CO | MS | 12
+
+################################################################
+$ python -I -B questions/yd-megafauna-timing/spotcheck/null_shapes.py
+################################################################
+Score 12 AMS dates in subset: 215
+observed M_yd = 4.95%  (= 10.6 dates' worth of mass, 4.9% of the dates)
+
+null                                         median   99th pct   max     sims >= observed
+1 uniform 12,850-18,000                       0.23%    0.90%    1.06%   0 of 1000
+2 observed SPD shape, truncated at 12,850     0.46%    1.23%    1.95%   0 of 1000
+3 all true ages in 12,850-13,000              2.61%    4.37%    5.25%   2 of 1000
+
+################################################################
+$ python -I -B questions/yd-megafauna-timing/spotcheck/pillar1_onset.py
+################################################################
+Per-core decline ages (cal BP) from results/sporormiella_sites.tsv:
+  Appleman Lake          t_onset= 16285.0  t_50pct= 14668.7  t_2pct= 14294.8  t_cp= 14647.0
+  Silver Lake            t_onset= 16549.0  t_50pct= 15497.4  t_2pct= 14109.2  t_cp= 14094.5
+  Spicer Lake            t_onset= 15188.0  t_50pct= 11677.7  t_2pct= 11172.5  t_cp= 11723.5
+  Triangle Lake Bog      t_onset=       -  t_50pct= 12555.3  t_2pct=       -  t_cp=       -
+  Mono Lake              t_onset= 14950.0  t_50pct= 14706.0  t_2pct= 14829.8  t_cp= 14710.0
+  Binnewater Pond        t_onset= 16825.0  t_50pct= 15607.9  t_2pct= 15571.6  t_cp= 15594.0
+  Otisville              t_onset= 14124.0  t_50pct= 15783.5  t_2pct= 14107.0  t_cp= 14077.5
+  Lower Paintrock Lake   t_onset= 13691.0  t_50pct= 13241.6  t_2pct= 13591.2  t_cp= 13291.5
+  Hall's Cave            t_onset= 14462.0  t_50pct= 13782.8  t_2pct= 11309.6  t_cp= 13801.5
+  Como Lake              t_onset= 14109.0  t_50pct= 13459.1  t_2pct= 12210.7  t_cp= 11895.0
+  Tulare Lake            t_onset=       -  t_50pct= 14696.5  t_2pct=       -  t_cp= 11395.0
+
+== Table 1 against onset 12,896 cal BP
+estimator  n   median  IQR            lead     before     Wilcoxon 2-sided  1-sided  binomial 2-sided
+t_onset    9    14950  14124-16285   +2054    9/9  (100%)   0.0039            0.0020   0.0039
+t_50pct   11    14669  13350-15102   +1773    9/11 ( 82%)   0.0137            0.0068   0.0654
+t_2pct     9    14107  12211-14295   +1211    6/9  ( 67%)   0.3594            0.1797   0.5078
+t_cp      10    13940  12244-14509   +1044    7/10 ( 70%)   0.1934            0.0967   0.3438
+
+== Table 1 against onset 12,846 cal BP
+estimator  n   median  IQR            lead     before     Wilcoxon 2-sided  1-sided  binomial 2-sided
+t_onset    9    14950  14124-16285   +2104    9/9  (100%)   0.0039            0.0020   0.0039
+t_50pct   11    14669  13350-15102   +1823    9/11 ( 82%)   0.0137            0.0068   0.0654
+t_2pct     9    14107  12211-14295   +1261    6/9  ( 67%)   0.3594            0.1797   0.5078
+t_cp      10    13940  12244-14509   +1094    7/10 ( 70%)   0.1602            0.0801   0.3438
+
+== Table 1 against onset 12,835 cal BP
+estimator  n   median  IQR            lead     before     Wilcoxon 2-sided  1-sided  binomial 2-sided
+t_onset    9    14950  14124-16285   +2115    9/9  (100%)   0.0039            0.0020   0.0039
+t_50pct   11    14669  13350-15102   +1834    9/11 ( 82%)   0.0137            0.0068   0.0654
+t_2pct     9    14107  12211-14295   +1272    6/9  ( 67%)   0.3594            0.1797   0.5078
+t_cp      10    13940  12244-14509   +1104    7/10 ( 70%)   0.1602            0.0801   0.3438
+
+== What changes between 12,896 and 12,846 (counts and p-values; leads shift by exactly 50 years)
+  t_cp w2: 0.1934 -> 0.1602
+  t_cp w1: 0.0967 -> 0.0801
+
+== Half-drop (t_50pct) checks
+onset 12,896: half-drop more than 1,000 yr before onset in 6 of 11 cores
+   all 11 cores                           n=11  before 9/11  Wilcoxon 2-sided p=0.0137  sign test 2-sided p=0.0654
+   without Tulare Lake                    n=10  before 8/10  Wilcoxon 2-sided p=0.0273  sign test 2-sided p=0.1094
+   without Tulare and Triangle Lake Bog   n= 9  before 8/9  Wilcoxon 2-sided p=0.0273  sign test 2-sided p=0.0391
+onset 12,846: half-drop more than 1,000 yr before onset in 6 of 11 cores
+   all 11 cores                           n=11  before 9/11  Wilcoxon 2-sided p=0.0137  sign test 2-sided p=0.0654
+   without Tulare Lake                    n=10  before 8/10  Wilcoxon 2-sided p=0.0273  sign test 2-sided p=0.1094
+   without Tulare and Triangle Lake Bog   n= 9  before 8/9  Wilcoxon 2-sided p=0.0273  sign test 2-sided p=0.0391
+onset 12,835: half-drop more than 1,000 yr before onset in 6 of 11 cores
+   all 11 cores                           n=11  before 9/11  Wilcoxon 2-sided p=0.0137  sign test 2-sided p=0.0654
+   without Tulare Lake                    n=10  before 8/10  Wilcoxon 2-sided p=0.0273  sign test 2-sided p=0.1094
+   without Tulare and Triangle Lake Bog   n= 9  before 8/9  Wilcoxon 2-sided p=0.0273  sign test 2-sided p=0.0391
