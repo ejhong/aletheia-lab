@@ -126,7 +126,7 @@ def fetch_bag_tile(spec: dict[str, Any], size: int = 512) -> tuple[np.ndarray, p
     last_err = None
     for attempt in range(4):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "AletheiaLab/1.0 (bathymetry-audit)"})
+            req = urllib.request.Request(url, headers={"User-Agent": "bathymetry-audit/1.0"})
             with urllib.request.urlopen(req, timeout=45) as r:
                 raw = r.read()
             if len(raw) < 4096:
@@ -171,7 +171,7 @@ def fetch_enc_features(spec: dict[str, Any]) -> list[dict[str, Any]]:
             })
         )
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "AletheiaLab/1.0"})
+            req = urllib.request.Request(url, headers={"User-Agent": "bathymetry-audit/1.0"})
             with urllib.request.urlopen(req, timeout=15) as r:
                 d = json.loads(r.read().decode("utf-8"))
             for f in (d.get("features") or []):

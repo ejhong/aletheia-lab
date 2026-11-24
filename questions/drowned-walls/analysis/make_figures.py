@@ -36,26 +36,10 @@ def make_tiles(s: dict) -> None:
     cal = s["calibration"]
     ov = s["search_overview"]
     items = [
-        (
-            f"{ov['total_valid_seafloor_km2']:.1f} km²",
-            "valid 2 m/pixel NOAA multibeam sonar seafloor scanned across 40 pre-registered Ice Age paleo-shoreline tiles (−10 m to −80 m depth) in CA, NE, NY, and FL",
-            False,
-        ),
-        (
-            f"{cal['planted_blinkerwall_recovered']}/{cal['planted_blinkerwall_n']} & {cal['planted_step_seam_rejected']}/{cal['planted_blinkerwall_n']}",
-            "planted 0.70 m Blinkerwall recall (80%) & step-seam rejection (100%) on real NOAA noise, plus blind recovery of Point Judith stone breakwater & a 60 m Key West wreck",
-            False,
-        ),
-        (
-            "0 walls / 0 rings",
-            "unmapped prehistoric walls, rectilinear corners (0), or ring enclosures (0) surviving automated filtering and direct shaded-relief visual audit across all 4 shelves",
-            False,
-        ),
-        (
-            "Null",
-            "All 39 unmasked ridges resolve visually to dipping Miocene bedrock strata (32), tidal sandbars (3), dredge-spoil mounds (3), and a 60 m modern shipwreck (1)",
-            True,
-        ),
+        (f"{ov['total_valid_seafloor_km2']:.0f} km²", "of seabed examined, in 40 tiles on four stretches of the US shelf that were dry land in the Ice Age", False),
+        ("0", "ridges left unexplained: bedrock ledges, bedforms, dumped spoil and a charted wreck account for all that were found", False),
+        ("under 1 in 20", "is how often the detector finds a planted wall of the size of the one real example, the Baltic's Blinkerwall", False),
+        ("Too coarse", "Nothing found, by a method that would miss the kind of wall it was looking for", True),
     ]
     body = ['<div class="tiles">']
     for v, lbl, is_w in items:
@@ -68,39 +52,39 @@ def make_tiles(s: dict) -> None:
 def make_sonar_gallery() -> None:
     slides = [
         {
-            "btn": "1. Point Judith Breakwater (Control)",
-            "title": "Positive Control: Point Judith Outer Stone Breakwater (RI, 41.363° N, −71.500° W)",
-            "note": "Real 2 m NOAA BAG sonar cleanly recovers the submerged granite breakwater toe (L = 192.7 m, max BPI = +1.45 m, linearity = 0.9973, yellow overlay).",
+            "btn": "1. Point Judith breakwater",
+            "title": "Point Judith breakwater, Rhode Island (a modern structure used as a control)",
+            "note": "What the detector marked (yellow) is the harbour-side slope of the breakwater beside a gap in the data, not a wall with two sides. It passed because a filter was skipped where one side has no data. The second control site, in Delaware, has no data at all.",
             "img": encode_preview_jpeg(PREV / "CTRL_PTJUDITH.png"),
         },
         {
-            "btn": "2. Planted 0.70 m Blinkerwall (Calib)",
-            "title": "Sensitivity Gate: Synthetic 250 m × 4 m × 0.70 m Blinkerwall Injected on Real NOAA Seafloor",
-            "note": "The planted Stone Age hunting drive-lane (diagonal line, left-center) cuts visibly across natural dipping strata; the detector recovers 8/10 planted walls and rejects 10/10 step seams on real 2 m noise.",
+            "btn": "2. A planted wall",
+            "title": "A synthetic wall, 250 m long, 4 m wide and 0.7 m high, added to a real tile",
+            "note": "The planted wall is the diagonal line left of centre. In this tile the detector did not find it; it found 8 of the 10 planted. A wall of the size of the real Baltic one (under 2 m wide, about 0.5 m high) is found less than one time in twenty.",
             "img": encode_preview_jpeg(PREV / "CALIB_PLANTED_WALL.png"),
         },
         {
-            "btn": "3. Santarosae Strata (CA)",
-            "title": "CA_ANACAPA_01 (Santarosae Ice Age Shelf, 33.996° N, −119.498° W, −45 m depth)",
-            "note": "Visual verdict: natural dipping Miocene sedimentary bedrock strata (Monterey Formation hogbacks) sweeping E–W across the entire 1 km tile—explaining all 32 unmasked CA ridges.",
+            "btn": "3. Anacapa Passage, California",
+            "title": "CA_ANACAPA_01, north of Anacapa Island, about 45 m deep",
+            "note": "Parallel ledges of bedrock curving across the whole tile. A US Geological Survey report describes ridges of Monterey Formation rock of this kind in the passage. Most of the 32 California ridges that passed the filters are here.",
             "img": encode_preview_jpeg(PREV / "TOP_1_CA_ANACAPA_01.png"),
         },
         {
-            "btn": "4. Key West 60 m Wreck (FL)",
-            "title": "FL_KEYS_04 (Florida Keys Shelf, 24.4539° N, −81.7711° W, −47.7 m depth)",
-            "note": "Bonus blind positive control: a crisp 60 m long, 13.4 m tall sunken steel ship with pointed bow, superstructure, and scour moat (consistent with the 57 m Cayman Salvage Master artificial reef wreck, 343 m from the nearest ENC polygon vertex).",
+            "btn": "4. A ship off Key West",
+            "title": "FL_KEYS_04, Florida Keys, about 48 m deep",
+            "note": "A sunken ship about 60 m long. It lies inside a fish haven marked on the nautical chart, which the program's chart filter failed to apply. It is probably one of the vessels of the Key West Tournament Reef, not the one first named.",
             "img": encode_preview_jpeg(PREV / "TOP_3_FL_KEYS_04.png"),
         },
         {
-            "btn": "5. Block Island Sandbar (NE)",
-            "title": "NE_BLOCK_10 (Block Island Sound, 41.161° N, −71.480° W, −27.7 m depth)",
-            "note": "Visual verdict: natural 112 m lens-shaped tidal sand/gravel bar (+0.61 m relief) embedded within curved glacial moraine and tidal sand ribbons.",
+            "btn": "5. Block Island Sound",
+            "title": "NE_BLOCK_10, Block Island Sound, about 28 m deep",
+            "note": "A low bar about 110 m long among curved bedforms. Labelled a tidal sandbar in the first report; that reading is likely and was not checked against a sediment map.",
             "img": encode_preview_jpeg(PREV / "TOP_7_NE_BLOCK_10.png"),
         },
         {
-            "btn": "6. Hudson Spoil Mounds (NY)",
-            "title": "NY_HUDSON_02 (Drowned Hudson Paleo-Channel, 40.398° N, −73.820° W, −32.1 m depth)",
-            "note": "Visual verdict: historic NY Bight dredged-material disposal hummocks and circular barge-dump craters adjacent to a sawtooth multibeam survey seam.",
+            "btn": "6. New York Bight",
+            "title": "NY_HUDSON_02, off New York, about 32 m deep",
+            "note": "Pitted, hummocky ground inside the charted spoil ground of the former Mud Dump Site, where dredged material was dumped and later capped.",
             "img": encode_preview_jpeg(PREV / "AUDIT_NY_HUDSON_02.png"),
         },
     ]
@@ -124,7 +108,7 @@ def make_sonar_gallery() -> None:
     <div id="dw-g-note" style="font-size:11.5px;color:var(--muted)">{esc(slides[0]['note'])}</div>
   </div>
 </div>
-<figcaption><strong>Real 2 m/pixel NOAA NCEI BAG multibeam bathymetry (left: 3&times; vertically exaggerated NW hillshade; right: local Bathymetric Position Index &plusmn;0.8 m).</strong> Yellow lines mark ridges passing all automated filters; cyan lines mark ridges rejected by step-seam, sandwave, or ENC chart filters. Direct visual inspection separates real anthropogenic targets (Point Judith stone breakwater, planted 0.70 m Blinkerwall, Key West 60 m sunken steel ship) from natural dipping bedrock strata, tidal sandbars, and dredge-spoil mounds.</figcaption>
+<figcaption><strong>Seabed tiles from NOAA&rsquo;s survey grids, as shaded relief (left) and local height (right).</strong> Yellow lines are ridges the detector kept; cyan lines are ridges its filters removed. These six previews, and no close-ups of single ridges, are what the first run produced; ten of the 39 ridges it called natural or modern are in tiles it never drew.</figcaption>
 <script>
 (function(){{
   var SLIDES = {data_json};
@@ -177,7 +161,7 @@ def make_pipeline_funnel(s: dict) -> None:
 <div class="fig-scroll">
 <svg id="dw-f-svg" class="chart" viewBox="0 0 720 325" role="img" aria-label="Anomaly funnel and regional seafloor coverage" xmlns="http://www.w3.org/2000/svg"></svg>
 </div>
-<figcaption><strong>From 72 raw linear seafloor ridges across 34.23 km&sup2; of 2 m multibeam sonar to zero unmapped Ice Age stone walls.</strong> Automated step-seam, sandwave, and NOAA ENC chart filters remove 33 of 72 linear ridges (45.8%). Direct shaded-relief visual audit resolves all 39 remaining ridges cleanly: 32 folded/dipping Miocene bedrock strata off California&rsquo;s Santarosae shelf, 3 tidal sandbars in Block Island Sound, 3 historic dredge-disposal hummocks off New York, and 1 crisp 60 m sunken steel ship off Key West. Zero rectilinear corners and zero ring enclosures appear anywhere in the scan.</figcaption>
+<figcaption><strong>From 72 ridges to none unexplained.</strong> The detector marked 72 straight ridges in 34 km&sup2; of seabed. Its filters removed 33. The remaining 39 were labelled by region: bedrock ledges off California, bedforms in Block Island Sound, dumped dredge spoil off New York, and a sunken ship off Key West that the nautical chart already marks. No corners and no rings were found. The detector sees continuous ridges at least half a metre high and about four metres wide; a wall like the one known from the Baltic would be too slight for it.</figcaption>
 <script>
 (function(){{
   var D = {data_json};
