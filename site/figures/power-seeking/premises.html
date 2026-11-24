@@ -1,134 +1,113 @@
-<figure class="fig" aria-label="Which premises carry which conclusion across coherence, power-seeking, and shutdown">
-<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center;" role="tablist" aria-label="Filter argument family">
-  <button type="button" class="ps-tab" data-fam="all" aria-selected="true" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:var(--copper,#9a4d2c);color:#fff;cursor:pointer;font-size:13px;">All 14 statements</button>
-  <button type="button" class="ps-tab" data-fam="coherence" aria-selected="false" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">1. Coherence &amp; utility</button>
-  <button type="button" class="ps-tab" data-fam="power" aria-selected="false" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">2. Power-seeking</button>
-  <button type="button" class="ps-tab" data-fam="shutdown" aria-selected="false" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;background:transparent;color:inherit;cursor:pointer;font-size:13px;">3. Shutdown</button>
+<figure class="fig" aria-label="What each of the fourteen proved statements says, and how it stands against its source">
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center;" role="tablist" aria-label="Filter by family">
+  <button type="button" class="ps-tab" data-fam="all" aria-selected="true" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;cursor:pointer;font-size:13px;background:var(--copper,#9a4d2c);color:#fff;">All 14</button>
+  <button type="button" class="ps-tab" data-fam="coherence" aria-selected="false" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;cursor:pointer;font-size:13px;background:transparent;color:inherit;">Coherence</button>
+  <button type="button" class="ps-tab" data-fam="power" aria-selected="false" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;cursor:pointer;font-size:13px;background:transparent;color:inherit;">Power-seeking</button>
+  <button type="button" class="ps-tab" data-fam="shutdown" aria-selected="false" style="padding:5px 11px;border:1px solid var(--line,#ccc);border-radius:4px;cursor:pointer;font-size:13px;background:transparent;color:inherit;">Shutdown</button>
 </div>
+<style>#ps-matrix td:nth-child(2),#ps-matrix td:nth-child(3){text-align:left}</style>
 <div class="fig-scroll">
 <table class="matrix" id="ps-matrix">
 <thead>
 <tr>
-  <th scope="col">Verified theorem / limit</th>
-  <th scope="col">Completeness</th>
-  <th scope="col">Transitivity / EU</th>
-  <th scope="col">Optimality / retargetability</th>
-  <th scope="col">Orbit / reward symmetry</th>
-  <th scope="col">What it establishes</th>
+  <th scope="col">Statement</th>
+  <th scope="col">What it says</th>
+  <th scope="col">Against its source</th>
+  <th scope="col">Standing</th>
 </tr>
 </thead>
 <tbody>
 <tr data-fam="coherence">
-  <td>vNM expected-utility representation &amp; uniqueness<span class="m-sub">S1a · vNM 1944</span></td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td>Also needs Independence &amp; Continuity; yields u unique up to a·u + b (a &gt; 0).</td>
+  <td>The expected-utility theorem<span class="m-sub">S1a</span></td>
+  <td>Preferences over gambles that are complete, transitive, independent and continuous can be scored by an expected utility, unique up to scale and shift.</td>
+  <td>von Neumann and Morgenstern, in the modern four-axiom form</td>
+  <td style="white-space:nowrap;font-weight:600">Same</td>
 </tr>
 <tr data-fam="coherence">
-  <td>Intransitive 3-cycle money pump<span class="m-sub">S1b · Gustafsson 2022</span></td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td>Strict cycle a ≺ b ≺ c ≺ a + willingness to pay ε &gt; 0 loses money strictly.</td>
+  <td>The plain money pump<span class="m-sub">S1b</span></td>
+  <td>If each paid trade round a cycle of three is accepted, the agent ends where it began with less money.</td>
+  <td>Gustafsson (2022) grants that foresight blocks this version</td>
+  <td style="white-space:nowrap">Simplified</td>
 </tr>
 <tr data-fam="coherence">
-  <td>Incomplete preferences resist money pumps<span class="m-sub">S1c · Limit</span></td>
-  <td class="m-no" aria-label="dropped">✕</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td>Reflexive, transitive, independent, incomplete orders suffer zero money pumps.</td>
+  <td>Gaps without a pump<span class="m-sub">S1c</span></td>
+  <td>Transitive preferences with gaps exist that have no losing chain of preferred trades.</td>
+  <td>No source. The clause holds for transitivity alone, and the disputed pump trades across the gaps, which the statement rules out</td>
+  <td style="white-space:nowrap">Example only</td>
 </tr>
 <tr data-fam="coherence">
-  <td>History-utility triviality<span class="m-sub">S1d · Shah 2018</span></td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td>Every deterministic policy π strictly maximises some utility U over histories.</td>
+  <td>Any behaviour maximises something<span class="m-sub">S1d</span></td>
+  <td>Any fixed way of acting maximises some utility defined over whole histories.</td>
+  <td>Shah (2018)</td>
+  <td style="white-space:nowrap;font-weight:600">Same</td>
 </tr>
 <tr data-fam="power">
-  <td>Simple &amp; n-fold retargetability → orbit tendency<span class="m-sub">S2a, S2b · Turner &amp; Tadepalli 2022</span></td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td>At least n× as many orbit parameters favour B over A (under uniform orbit count).</td>
+  <td>Retargetable, once<span class="m-sub">S2a</span></td>
+  <td>If one relabelling turns every case favouring A into one favouring B, at least as many relabellings favour B.</td>
+  <td>Turner and Tadepalli (2022), Prop. 3.4</td>
+  <td style="white-space:nowrap;font-weight:600">Same</td>
 </tr>
 <tr data-fam="power">
-  <td>Optimal-policy POWER-seeking &amp; strict converse failure<span class="m-sub">S2c · Turner et al. 2021</span></td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td>Involution copy φ·F₁ ⊆ F₂ gives POWER(F₂) ≥_most POWER(F₁), and directly if φ·D = D.</td>
+  <td>Retargetable, n times<span class="m-sub">S2b</span></td>
+  <td>With n such relabellings that do not overlap, at least n times as many.</td>
+  <td>Turner and Tadepalli (2022), Thm. 3.6</td>
+  <td style="white-space:nowrap;font-weight:600">Same</td>
 </tr>
 <tr data-fam="power">
-  <td>Drop reward symmetry → optimal policy shuts down<span class="m-sub">S2d · Counterexample</span></td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td class="m-no" aria-label="dropped">✕</td>
-  <td>On a 3-state MDP, skewed reward makes POWER(open) &lt; POWER(shutdown).</td>
+  <td>More options win most of the time<span class="m-sub">S2c</span></td>
+  <td>If a set of options contains a relabelled copy of another, it is worth more at least as often as less, across the relabellings of any finite spread of rewards.</td>
+  <td>Turner and others (2021), Lemma E.24. No decision process, policy or discounting in the statement</td>
+  <td style="white-space:nowrap;font-weight:600">Special case</td>
 </tr>
 <tr data-fam="power">
-  <td>Drop optimality → symmetric reward still shuts down<span class="m-sub">S2e · Counterexample</span></td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="dropped">✕</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td>Under permutation-invariant D*, a non-optimal policy shuts down 100% of the time.</td>
+  <td>Some rewards favour fewer options<span class="m-sub">S2d</span></td>
+  <td>One spread of rewards favours the smaller set.</td>
+  <td>The paper says so itself; its theorem never assumed otherwise</td>
+  <td style="white-space:nowrap">Example only</td>
 </tr>
 <tr data-fam="power">
-  <td>Dominated options add zero POWER<span class="m-sub">S2f · Counterexample</span></td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td>Strictly larger |F₂| &gt; |F₁| yields identical optVal and POWER for every reward D.</td>
+  <td>A rule that picks the smaller set<span class="m-sub">S2e</span></td>
+  <td>A function that always answers &ldquo;the smaller set&rdquo; exists.</td>
+  <td>The function is unconstrained. The 2022 paper puts such systems outside its results</td>
+  <td style="white-space:nowrap">Example only</td>
+</tr>
+<tr data-fam="power">
+  <td>Useless options add nothing<span class="m-sub">S2f</span></td>
+  <td>Adding an option that is never strictly best changes nothing.</td>
+  <td>Built into the paper's definitions</td>
+  <td style="white-space:nowrap">Example only</td>
 </tr>
 <tr data-fam="shutdown">
-  <td>Shutdown manipulation dichotomy<span class="m-sub">S3a · Soares 2015 / Thornley 2024</span></td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td>At small cost c, EU maximiser avoids both resisting &amp; causing shutdown only if vRun = vShut.</td>
+  <td>When meddling pays<span class="m-sub">S3a</span></td>
+  <td>In a three-row table of payoffs, blocking the button pays if running is worth more, pressing it pays if shutdown is worth more, and neither pays at every small cost only if the two are worth the same.</td>
+  <td>Echoes Soares and others (2015) and Thornley (2025). Neither theorem</td>
+  <td style="white-space:nowrap">Simplified</td>
 </tr>
 <tr data-fam="shutdown">
-  <td>Utility-indifference corrigibility<span class="m-sub">S3b · Counterexample</span></td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td>If vRun = vShut and c &gt; 0, leaving the button alone strictly beats both Prevent and Cause.</td>
+  <td>Indifference, assumed<span class="m-sub">S3b</span></td>
+  <td>If the two are worth the same and meddling costs anything, leaving the button alone is best.</td>
+  <td>The equal worth is assumed. Soares and others go on to show how the approach fails</td>
+  <td style="white-space:nowrap">Simplified</td>
 </tr>
 <tr data-fam="shutdown">
-  <td>Transitive indifference impossibility under usefulness<span class="m-sub">S3c · Thornley 2024</span></td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-yes" aria-label="needed">●</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td>Complete, transitive, useful agents must strictly prefer some trajectory length over another.</td>
+  <td>The clash<span class="m-sub">S3c</span></td>
+  <td>Complete, transitive preferences that rank better above worse at two lengths of life include a strict preference across lengths.</td>
+  <td>A two-by-two case of what Thornley draws from his Second Theorem</td>
+  <td style="white-space:nowrap;font-weight:600">Special case</td>
 </tr>
 <tr data-fam="shutdown">
-  <td>Incomplete-preferences escape hatch<span class="m-sub">S3d · Thornley 2024</span></td>
-  <td class="m-no" aria-label="dropped">✕</td>
-  <td class="m-yes" aria-label="kept">●</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td class="m-no" aria-label="not needed">·</td>
-  <td>Transitive incomplete order is useful within every length with zero cross-length preference.</td>
+  <td>A way out, pictured<span class="m-sub">S3d</span></td>
+  <td>Without completeness, such preferences can have no strict preference across lengths.</td>
+  <td>A four-point picture of a proposal by Thornley and others (2024). Does not show the agent stays shutdownable</td>
+  <td style="white-space:nowrap">Example only</td>
 </tr>
 <tr class="m-foot">
-  <td colspan="6">● = assumption used by the proof; ✕ = assumption explicitly dropped in the counterexample; · = not needed. Every row is a Lean 4 theorem verified with <code>lake build --wfail</code> and <code>#assert_standard_axioms</code>.</td>
+  <td colspan="4">Same: the statement is the source's. Special case: the source's result in a narrower setting. Simplified: keeps the idea, loses the substance. Example only: one small object that does not support the conclusion first drawn from it. All fourteen are proved; the column says what the proof is worth.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<figcaption>Premise-by-premise audit of all 14 locked Lean 4 theorems in <code>PowerSeeking/Statement.lean</code>. Filter by family to see which single assumption carries each result and what breaks when it is dropped.</figcaption>
+<figcaption>The fourteen statements, as read by a second company's model that was given the formal text alone, without the report or the proofs, and then compared with the cited papers.</figcaption>
 <script>
 (function(){
   const tabs = document.querySelectorAll('.ps-tab');

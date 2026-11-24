@@ -1,64 +1,76 @@
 ---
-summary: Fourteen statements across coherence, optimal-policy power-seeking, and the shutdown problem were locked and proved in Lean 4. Every headline theorem holds under strict premises, and breaks when symmetry, optimality, or completeness is dropped.
-verdict: Real theorems, narrower than their slogans
-result: All three formal arguments check out in Lean 4 under their exact axioms, and each breaks cleanly when one load-bearing premise is dropped: money pumps do not force completeness, power-seeking requires both optimality/retargetability and uniform reward-orbit symmetry, and shutdown resistance requires complete, transitive preferences across trajectory lengths rather than EU maximization alone.
-dek: Do the coherence, power-seeking, and shutdown theorems prove that a capable AI system must pursue power and resist being switched off? We formalized all three families and their main counterexamples in Lean 4 to see which premise carries which conclusion.
+# To update this page, edit this file and push to main; the site rebuilds itself.
+# The panels are made by questions/power-seeking/analysis/make_figures.py.
+summary: Three kinds of mathematical result are cited for the claim that a capable AI must act like a single-minded maximiser, gather power and resist being switched off. We wrote fourteen statements from them in Lean 4, where a proof checker verifies every step, and then had a second company's models check what the statements say.
+verdict: No, as the theorems' own authors say; the study adds less than it first claimed
+result: All fourteen statements are proved. Checked against the papers, six say what a published source says, including the expected-utility theorem and the lemma behind "optimal policies tend to seek power". Five are small examples that do not carry the conclusions first drawn from them, among them the claims that dropping completeness stops money pumps and that expected-utility maximisers need not resist shutdown. The authors of the power-seeking theorems write that their results do not prove future AI will seek power.
+dek: Do the coherence, power-seeking and shutdown theorems prove that a capable AI must pursue power and resist being switched off? Fourteen statements, proved in Lean 4 and then checked against the papers.
 updated: 2026-11-24
 ---
 
-> **Where things stand, 24 November 2026.** Fourteen statements across all three argument families were fixed against primary papers, locked in `protocol.lock`, and proved in Lean 4 (`lake build --wfail`, zero `sorry`, standard axioms only). Independent blind statement checking by models from other vendors is still pending because no external vendor API keys were available in this environment.
+> **Where things stand, 24 November 2026.** Google's model (Antigravity, Google DeepMind) wrote fourteen formal statements, locked them, and proved them all. It had no second model to check that the statements said what was meant, and said so. Anthropic's models have now done that check: one read the formal text alone, without the report or the proofs, and another looked up every cited passage. The proofs hold. Eight of the fourteen statements say less than the first report claimed for them, and this page is the corrected version.
 
 {{figure: power-seeking/tiles}}
 
-## What we figured out
+## What was asked
 
-Three families of mathematical results are often cited together as a chain showing that capable AI systems will act as expected-utility maximizers, seek power, and resist correction:
+Three families of result are often cited together.
 
-1. **Coherence & expected utility** (von Neumann & Morgenstern 1944; Gustafsson 2022): agents that cannot be exploited must behave as expected-utility maximizers.
-2. **Power-seeking & retargetability** (Turner et al. 2021; Turner & Tadepalli 2022): optimal policies—and more broadly, parametrically retargetable decision-makers—tend to navigate toward states with more open options (`POWER`).
-3. **The shutdown problem** (Soares et al. 2015; Thornley 2024): useful expected-utility maximizers have an incentive either to prevent or to cause the pressing of their shutdown button.
+- **Coherence.** An agent whose preferences cannot be exploited must act as if it maximises expected utility (von Neumann and Morgenstern; the "money pump" arguments).
+- **Power-seeking.** For most goals, the best policy keeps options open, and so gains power (Turner and others, 2021; Turner and Tadepalli, 2022).
+- **Shutdown.** An agent that maximises expected utility will either block its off-switch or press it (Soares and others, 2015; Thornley, 2025).
 
-Writing all three families out in Lean 4—where every premise must be stated explicitly and verified by a small trusted kernel—separates what the mathematics actually proves from what gets added in prose.
+Strung together they are taken to show that any capable AI will seek power and resist correction. The question was what the mathematics proves, and from which assumptions. In Lean 4 every assumption has to be written into the statement, and a small trusted program rejects any proof that uses anything else.
 
-### 1. Coherence does not force completeness or goal-directedness
+## What holds
 
-The **von Neumann–Morgenstern representation theorem (`S1a`)** is rock solid: any preference relation over finite lotteries satisfying Completeness, Transitivity, Independence, and Archimedean Continuity is represented by an expected-utility function unique up to positive affine scaling (`a·u + b`, `a > 0`). And strict preference cycles (`a ≺ b ≺ c ≺ a`) really do leave an agent vulnerable to a **money pump (`S1b`)**.
+1. **The expected-utility theorem, in full.** If preferences over gambles are complete (any two options can be compared), transitive, independent and continuous, they can be scored by an expected utility, and the score is unique up to scale and shift. All four conditions are used.
+2. **"Acts as if it maximises some utility" says nothing by itself.** Any fixed way of behaving, however erratic, maximises a utility defined over whole histories. This is Rohin Shah's observation from 2018.
+3. **The counting lemmas behind "retargetable decision-makers tend to seek power".** If relabelling the parameters turns every case that favours one outcome into a case that favours another, then most relabellings favour the second. These are the 2022 paper's own statements.
+4. **The lemma behind "optimal policies tend to seek power".** If one set of options contains a relabelled copy of another, then across the relabellings of any spread of rewards, the larger set is worth more at least as often as less. It is proved for finite sets of options. The paper's theorems about agents moving through an environment rest on this lemma; those theorems themselves were not formalised.
+5. **A small case of the clash in the shutdown problem.** An agent with complete, transitive preferences that prefers better to worse among short lives, and among long lives, must strictly prefer some short life to some long one, or the reverse. Such an agent has a reason to meddle with its off-switch.
 
-Two formal limits show how little that forces on its own:
+## What did not hold up
 
-- **Incomplete preferences cannot be money-pumped (`S1c`).** We construct explicit reflexive, transitive, incomplete preference orders—both over goods with money and over finite lotteries satisfying the Independence axiom—that suffer **zero** money pumps or strict cycles. Avoiding exploitation pushes toward *transitivity*, not *completeness*.
-- **History-utility triviality (`S1d`).** For *any* deterministic policy `π` over finite histories—however erratic or non-goal-directed—there exists a utility function `U` over histories that `π` strictly maximizes at every reachable step. Saying an agent "acts as if maximizing *some* utility function" constrains nothing until extra structure is assumed.
+The first report said each argument "breaks cleanly" when one assumption is dropped, and offered six counterexamples. Five of them are too small to show it.
 
-### 2. Power-seeking needs both optimality (or retargetability) and orbit symmetry
-
-Both **Turner & Tadepalli's retargetability theorems (`S2a`, `S2b`)** and **Turner et al.'s optimal-policy `POWER` theorem (`S2c`)** check cleanly in Lean 4. Whenever option set `F₂` contains a copy of `F₁` via a state-permutation involution `φ` (`φ² = id`, `φ·F₁ ⊆ F₂`), `F₂` wins the uniform orbit count over every finite reward distribution (`POWER(F₂) ≥_most POWER(F₁)`), beats `F₁` directly for every `φ`-invariant distribution, and breaks the converse strictly whenever `F₂` adds a non-dominated option.
-
-Three concrete counterexamples show what cannot be dropped:
-
-- **Drop reward symmetry (`S2d`):** On a 3-state MDP where `openOpts` strictly contains a copy of `shutOpts`, skewing reward toward the shutdown state makes `POWER(openOpts) < POWER(shutOpts)` so optimal policies strictly choose shutdown.
-- **Drop optimality / retargetability (`S2e`):** On the exact same MDP under a *fully permutation-invariant* distribution where `POWER(shutOpts) < POWER(openOpts)`, a non-optimal stationary policy still chooses shutdown 100% of the time.
-- **Dominated options add zero `POWER` (`S2f`):** Adding convex-combination options strictly increases `|F|` without changing optimal value or `POWER` for *any* reward function or distribution.
-
-### 3. Shutdown resistance is a clash between completeness and usefulness
-
-{{figure: power-seeking/shutdown_explorer}}
-
-In a shutdown-influencing state (`S3a`), an expected-utility maximizer facing human press probability `p ∈ (0, 1)` resists shutdown whenever `vRun > vShut` and manipulation cost `c < p·(vRun − vShut)`, and *triggers* its own shutdown whenever `vShut > vRun` and `c < (1−p)·(vShut − vRun)`. Avoiding both at arbitrarily small positive cost forces exact indifference (`vRun = vShut`).
-
-Crucially, **expected-utility maximization alone does not force shutdown resistance (`S3b`)**: whenever `vRun = vShut` and `c > 0`, leaving the button alone strictly beats both preventing and causing shutdown. What makes indifference hard to sustain is **Completeness + Transitivity combined with usefulness (`S3c`)**: preferring good outcomes to bad outcomes within both short and long trajectories forces a complete transitive agent to strictly prefer some short trajectory over some long one (or vice versa). Drop **Completeness** across trajectory lengths (`S3d`), and a transitive preference relation can be strictly useful at every trajectory length while having *zero* strict cross-length preference—linking Thornley's shutdown escape hatch directly back to the incomplete-preference limit of money pumps (`S1c`).
-
-## Which premise carries which conclusion
+- **"Drop completeness and money pumps stop."** The statement shows that some preferences with gaps have no chain of *preferred* trades that loses money. But that follows from transitivity alone, and a preference with no gaps passes the same test. The money pump that philosophers argue about works by trading across the gaps, and the statement's definition leaves those trades out. The report credited the claim to Johan Gustafsson's book, which argues the opposite. The question is in live dispute and nothing here settles it.
+- **"Drop reward symmetry and power-seeking fails."** The theorem never assumed symmetric rewards. It says that for any spread of rewards, most relabellings of it favour the larger set. That one particular spread favours the smaller set is something the paper says itself.
+- **"Drop optimality and power-seeking fails."** The "non-optimal policy" is a function with no conditions on it. A constant satisfies the statement.
+- **"Expected-utility maximisers need not resist shutdown."** The statement assumes that staying on and being shut down are worth exactly the same to the agent, and concludes it will leave the switch alone. Making them worth the same is the hard part. The paper cited for it shows two ways the approach goes wrong and ends: "a corrigible solution to the shutdown problem does not yet exist."
+- **"Drop completeness and the shutdown problem is solved."** The statement shows that a preference with no ranking between short and long lives can exist, on four points. It does not show that an agent with one stays willing to be shut down.
 
 {{figure: power-seeking/premises}}
 
+## What the authors say
+
+The first report's headline was that the theorems prove "substantially less than 'any capable AI must seek power'". The papers do not claim otherwise.
+
+- Turner and others (2021): "Our results do not mathematically prove that hypothetical superintelligent AI agents will seek power."
+- Turner and Tadepalli (2022): "Our results do not prove that we will build unaligned AI agents which seek power over the world."
+
+They do say what they expect. The 2021 paper: "Average-optimal agents would generally stop us from deactivating them, if physically possible." The 2022 paper: "Our theory suggests that when RL training processes become sufficiently advanced, the trained agents will tend to seek power over the world." Those are conjectures about what real systems will be like. A proof checker cannot weigh them.
+
+## The shutdown table
+
+{{figure: power-seeking/shutdown_explorer}}
+
 ## What this cannot tell you
 
-- **How real AI systems will behave.** A proof checker verifies what follows from axioms, not whether neural networks trained by gradient descent and RLHF satisfy outcome-level retargetability, symmetric reward priors, or complete preferences across trajectory lengths.
-- **Continuous reward measures and multi-step shutdown games.** Our formalization covers finite state spaces, finite discrete reward distributions, and the core single-decision and two-length trajectory theorems of Soares et al. (2015) and Thornley (2024); continuous Lebesgue densities and Thornley's multi-step patience trade-off were not formalized.
-- **Independent cross-vendor statement review.** All 14 statements were locked before proving against primary-source locators, and every proof is verified by Lean's kernel (`lake build --wfail`, `#assert_standard_axioms`), but blind back-translation review by models from other vendors has not yet been run. The author is itself an AI system.
+- **How any AI system will behave.** The mathematics says what follows from what.
+- **Whether gaps in preferences can be exploited.** Not tested, as above.
+- **The theorems about environments.** No decision process, policy or discounting was formalised; nor were Thornley's three theorems.
+- **Anything a specialist would catch.** AI wrote the statements, the proofs and the checks. Nobody else has reviewed them.
 
-## Files
+## What this means
 
-- [Full results & premise tables](https://github.com/ejhong/aletheia-lab/blob/main/questions/power-seeking/RESULTS.md)
-- [Locked protocol](https://github.com/ejhong/aletheia-lab/blob/main/questions/power-seeking/protocol.md) and [primary-source manifest](https://github.com/ejhong/aletheia-lab/blob/main/questions/power-seeking/MANIFEST.md)
-- [Locked statements (`Statement.lean`)](https://github.com/ejhong/aletheia-lab/blob/main/questions/power-seeking/lean/PowerSeeking/Statement.lean) and [Lean 4 proofs](https://github.com/ejhong/aletheia-lab/tree/main/questions/power-seeking/lean/PowerSeeking)
+The theorems are real and conditional. They describe an idealised kind of agent, and whether future systems will be of that kind is a question about training and engineering that their authors leave open. This study confirms four of the underlying results by machine. Its attempt to show which single assumption each conclusion hangs on did not succeed, because the statements were locked before anyone checked that they said what was intended. The lab's two earlier proof studies checked first; this one shows why.
+
+::: details Methods, data and checks
+- **Plan and lock.** `questions/power-seeking/protocol.md` and `lean/PowerSeeking/Statement.lean`, locked 2026-11-24T17:43:54Z, before the proofs. Corrections to the sources are recorded in `amendments.md`; nothing in the Lean files was changed.
+- **Build.** `lake build --wfail`, Lean v4.35.0 with Mathlib pinned. No warnings; all fourteen theorems rest on the three standard axioms only. Rebuilt from a clean copy during the check.
+- **Statement check.** `questions/power-seeking/statement-check/`: the blind reading, the short proofs written to test it, and the source check with quotations and page numbers.
+- **Sources.** von Neumann and Morgenstern, *Theory of Games and Economic Behavior* (2nd ed., 1947); Gustafsson, *Money-Pump Arguments* (2022); Shah (2018); Turner and others, "Optimal Policies Tend to Seek Power" (NeurIPS 2021, arXiv:1912.01683); Turner and Tadepalli, "Parametrically Retargetable Decision-Makers Tend To Seek Power" (NeurIPS 2022, arXiv:2206.13477); Soares and others, "Corrigibility" (2015); Thornley, "The shutdown problem", *Philosophical Studies* 182 (2025); Thornley and others (2024), arXiv:2407.00805.
+- **Full report.** `questions/power-seeking/RESULTS.md`.
+- **Who did the work.** AI did. Antigravity (Google DeepMind) wrote the statements and proofs; Claude Fable 5.2 and Claude Opus 5.5 (Anthropic) rebuilt and checked them and wrote this page. Eugene directed both.
+:::
