@@ -1,0 +1,678 @@
+{
+  "counts": {
+    "kaphtor_inscriptions": 1719,
+    "sign_values_total": 86,
+    "novel_or_revised_consonant_signs": 27,
+    "semitic_roots_raw": 5189,
+    "la_clean_ge3_types": 487,
+    "la_clean_ge3_tokens": 611,
+    "la_in_lexicon_types": 391,
+    "la_held_out_types": 96,
+    "la_xyz_clean_ge3_types": 574,
+    "lb_clean_ge3_types": 2373,
+    "lb_clean_ge3_tokens": 4603
+  },
+  "calibration": {
+    "amarna_A1_ge3": {
+      "n_types": 137,
+      "n_tokens": 137,
+      "obs_type_rate": 0.48905,
+      "null_type_mean": 0.39123,
+      "null_type_sd": 0.04773,
+      "z_type": 2.049,
+      "p_perm_type": 0.01598,
+      "obs_tok_rate": 0.48905,
+      "null_tok_mean": 0.39123,
+      "p_perm_tok": 0.01598
+    },
+    "amarna_A2_ge3": {
+      "n_types": 127,
+      "n_tokens": 127,
+      "obs_type_rate": 0.53543,
+      "null_type_mean": 0.47743,
+      "null_type_sd": 0.02696,
+      "z_type": 2.151,
+      "p_perm_type": 0.02697,
+      "obs_tok_rate": 0.53543,
+      "null_tok_mean": 0.47743,
+      "p_perm_tok": 0.02697
+    },
+    "amarna_B_ge3": {
+      "n_types": 137,
+      "n_tokens": 137,
+      "obs_type_rate": 0.75182,
+      "null_type_mean": 0.57101,
+      "null_type_sd": 0.06355,
+      "z_type": 2.845,
+      "p_perm_type": 0.002,
+      "obs_tok_rate": 0.75182,
+      "null_tok_mean": 0.57101,
+      "p_perm_tok": 0.002
+    },
+    "akkadian_A1_ge3": {
+      "n_types": 1000,
+      "n_tokens": 1000,
+      "obs_type_rate": 0.19,
+      "null_type_mean": 0.12683,
+      "null_type_sd": 0.01526,
+      "z_type": 4.138,
+      "p_perm_type": 0.001,
+      "obs_tok_rate": 0.19,
+      "null_tok_mean": 0.12683,
+      "p_perm_tok": 0.001
+    },
+    "akkadian_A2_ge3": {
+      "n_types": 1000,
+      "n_tokens": 1000,
+      "obs_type_rate": 0.183,
+      "null_type_mean": 0.15311,
+      "null_type_sd": 0.00797,
+      "z_type": 3.752,
+      "p_perm_type": 0.002,
+      "obs_tok_rate": 0.183,
+      "null_tok_mean": 0.15311,
+      "p_perm_tok": 0.002
+    },
+    "akkadian_B_ge3": {
+      "n_types": 1000,
+      "n_tokens": 1000,
+      "obs_type_rate": 0.517,
+      "null_type_mean": 0.37397,
+      "null_type_sd": 0.05089,
+      "z_type": 2.81,
+      "p_perm_type": 0.001,
+      "obs_tok_rate": 0.517,
+      "null_tok_mean": 0.37397,
+      "p_perm_tok": 0.001
+    },
+    "linear_b_A1_ge3": {
+      "n_types": 1936,
+      "n_tokens": 3517,
+      "obs_type_rate": 0.48864,
+      "null_type_mean": 0.37968,
+      "null_type_sd": 0.04078,
+      "z_type": 2.672,
+      "p_perm_type": 0.001,
+      "obs_tok_rate": 0.53312,
+      "null_tok_mean": 0.40776,
+      "p_perm_tok": 0.003
+    },
+    "linear_b_A2_ge3": {
+      "n_types": 1334,
+      "n_tokens": 2442,
+      "obs_type_rate": 0.68366,
+      "null_type_mean": 0.56079,
+      "null_type_sd": 0.05575,
+      "z_type": 2.204,
+      "p_perm_type": 0.003,
+      "obs_tok_rate": 0.72072,
+      "null_tok_mean": 0.58776,
+      "p_perm_tok": 0.001
+    },
+    "linear_b_B_ge3": {
+      "n_types": 1936,
+      "n_tokens": 3517,
+      "obs_type_rate": 0.73554,
+      "null_type_mean": 0.60244,
+      "null_type_sd": 0.06391,
+      "z_type": 2.083,
+      "p_perm_type": 0.00999,
+      "obs_tok_rate": 0.75377,
+      "null_tok_mean": 0.6074,
+      "p_perm_tok": 0.00899
+    },
+    "linear_b_A1_eq2": {
+      "n_types": 401,
+      "n_tokens": 1012,
+      "obs_type_rate": 1.0,
+      "null_type_mean": 1.0,
+      "null_type_sd": 0.0,
+      "z_type": 0.0,
+      "p_perm_type": 1.0,
+      "obs_tok_rate": 1.0,
+      "null_tok_mean": 1.0,
+      "p_perm_tok": 1.0
+    }
+  },
+  "test1_consonant_permutations": {
+    "all": {
+      "A1_ge3": {
+        "n_types": 372,
+        "n_tokens": 476,
+        "obs_type_rate": 0.58602,
+        "null_type_mean": 0.44011,
+        "null_type_sd": 0.05759,
+        "z_type": 2.534,
+        "p_perm_type": 0.001,
+        "obs_tok_rate": 0.59454,
+        "null_tok_mean": 0.446,
+        "p_perm_tok": 0.003
+      },
+      "A2_ge3": {
+        "n_types": 326,
+        "n_tokens": 415,
+        "obs_type_rate": 0.65337,
+        "null_type_mean": 0.52386,
+        "null_type_sd": 0.05089,
+        "z_type": 2.545,
+        "p_perm_type": 0.001,
+        "obs_tok_rate": 0.67229,
+        "null_tok_mean": 0.53862,
+        "p_perm_tok": 0.001
+      },
+      "B_ge3": {
+        "n_types": 372,
+        "n_tokens": 476,
+        "obs_type_rate": 0.78495,
+        "null_type_mean": 0.59148,
+        "null_type_sd": 0.07175,
+        "z_type": 2.697,
+        "p_perm_type": 0.001,
+        "obs_tok_rate": 0.80252,
+        "null_tok_mean": 0.59787,
+        "p_perm_tok": 0.001
+      },
+      "A1_eq2": {
+        "n_types": 86,
+        "n_tokens": 106,
+        "obs_type_rate": 1.0,
+        "null_type_mean": 1.0,
+        "null_type_sd": 0.0,
+        "z_type": 0.0,
+        "p_perm_type": 1.0,
+        "obs_tok_rate": 1.0,
+        "null_tok_mean": 1.0,
+        "p_perm_tok": 1.0
+      }
+    },
+    "in_lexicon": {
+      "A1_ge3": {
+        "n_types": 310,
+        "n_tokens": 410,
+        "obs_type_rate": 0.62258,
+        "null_type_mean": 0.47155,
+        "null_type_sd": 0.06169,
+        "z_type": 2.448,
+        "p_perm_type": 0.001,
+        "obs_tok_rate": 0.62927,
+        "null_tok_mean": 0.47487,
+        "p_perm_tok": 0.002
+      },
+      "A2_ge3": {
+        "n_types": 267,
+        "n_tokens": 352,
+        "obs_type_rate": 0.68539,
+        "null_type_mean": 0.54975,
+        "null_type_sd": 0.0532,
+        "z_type": 2.55,
+        "p_perm_type": 0.001,
+        "obs_tok_rate": 0.69886,
+        "null_tok_mean": 0.55995,
+        "p_perm_tok": 0.001
+      },
+      "B_ge3": {
+        "n_types": 310,
+        "n_tokens": 410,
+        "obs_type_rate": 0.8,
+        "null_type_mean": 0.60555,
+        "null_type_sd": 0.07457,
+        "z_type": 2.608,
+        "p_perm_type": 0.001,
+        "obs_tok_rate": 0.81707,
+        "null_tok_mean": 0.60998,
+        "p_perm_tok": 0.001
+      },
+      "A1_eq2": {
+        "n_types": 76,
+        "n_tokens": 96,
+        "obs_type_rate": 1.0,
+        "null_type_mean": 1.0,
+        "null_type_sd": 0.0,
+        "z_type": 0.0,
+        "p_perm_type": 1.0,
+        "obs_tok_rate": 1.0,
+        "null_tok_mean": 1.0,
+        "p_perm_tok": 1.0
+      }
+    },
+    "held_out": {
+      "A1_ge3": {
+        "n_types": 62,
+        "n_tokens": 66,
+        "obs_type_rate": 0.40323,
+        "null_type_mean": 0.28289,
+        "null_type_sd": 0.0539,
+        "z_type": 2.233,
+        "p_perm_type": 0.01598,
+        "obs_tok_rate": 0.37879,
+        "null_tok_mean": 0.26664,
+        "p_perm_tok": 0.01698
+      },
+      "A2_ge3": {
+        "n_types": 59,
+        "n_tokens": 63,
+        "obs_type_rate": 0.50847,
+        "null_type_mean": 0.40668,
+        "null_type_sd": 0.05848,
+        "z_type": 1.741,
+        "p_perm_type": 0.04695,
+        "obs_tok_rate": 0.52381,
+        "null_tok_mean": 0.41948,
+        "p_perm_tok": 0.03796
+      },
+      "B_ge3": {
+        "n_types": 62,
+        "n_tokens": 66,
+        "obs_type_rate": 0.70968,
+        "null_type_mean": 0.5211,
+        "null_type_sd": 0.07953,
+        "z_type": 2.371,
+        "p_perm_type": 0.01099,
+        "obs_tok_rate": 0.71212,
+        "null_tok_mean": 0.52264,
+        "p_perm_tok": 0.00799
+      },
+      "A1_eq2": {
+        "n_types": 10,
+        "n_tokens": 10,
+        "obs_type_rate": 1.0,
+        "null_type_mean": 1.0,
+        "null_type_sd": 0.0,
+        "z_type": 0.0,
+        "p_perm_type": 1.0,
+        "obs_tok_rate": 1.0,
+        "null_tok_mean": 1.0,
+        "p_perm_tok": 1.0
+      }
+    },
+    "lineara_xyz": {
+      "A1_ge3": {
+        "n_types": 436,
+        "n_tokens": 542,
+        "obs_type_rate": 0.55505,
+        "null_type_mean": 0.42048,
+        "null_type_sd": 0.05516,
+        "z_type": 2.44,
+        "p_perm_type": 0.001,
+        "obs_tok_rate": 0.55535,
+        "null_tok_mean": 0.42529,
+        "p_perm_tok": 0.003
+      },
+      "A2_ge3": {
+        "n_types": 383,
+        "n_tokens": 473,
+        "obs_type_rate": 0.62141,
+        "null_type_mean": 0.50116,
+        "null_type_sd": 0.04748,
+        "z_type": 2.533,
+        "p_perm_type": 0.001,
+        "obs_tok_rate": 0.63002,
+        "null_tok_mean": 0.51357,
+        "p_perm_tok": 0.001
+      },
+      "B_ge3": {
+        "n_types": 436,
+        "n_tokens": 542,
+        "obs_type_rate": 0.75,
+        "null_type_mean": 0.57193,
+        "null_type_sd": 0.06729,
+        "z_type": 2.646,
+        "p_perm_type": 0.001,
+        "obs_tok_rate": 0.76937,
+        "null_tok_mean": 0.58018,
+        "p_perm_tok": 0.001
+      },
+      "A1_eq2": {
+        "n_types": 102,
+        "n_tokens": 123,
+        "obs_type_rate": 1.0,
+        "null_type_mean": 1.0,
+        "null_type_sd": 0.0,
+        "z_type": 0.0,
+        "p_perm_type": 1.0,
+        "obs_tok_rate": 1.0,
+        "null_tok_mean": 1.0,
+        "p_perm_tok": 1.0
+      }
+    }
+  },
+  "test2_novel_sign_permutations": {
+    "all_A1_ge3": {
+      "n_affected_types": 124,
+      "obs_type_rate": 0.49194,
+      "null_mean": 0.49904,
+      "null_sd": 0.0426,
+      "z_novel": -0.167,
+      "p_perm_novel": 0.57443
+    },
+    "all_A2_ge3": {
+      "n_affected_types": 88,
+      "obs_type_rate": 0.67045,
+      "null_mean": 0.4336,
+      "null_sd": 0.07075,
+      "z_novel": 3.348,
+      "p_perm_novel": 0.001
+    },
+    "all_B_ge3": {
+      "n_affected_types": 124,
+      "obs_type_rate": 0.74194,
+      "null_mean": 0.6963,
+      "null_sd": 0.05399,
+      "z_novel": 0.845,
+      "p_perm_novel": 0.25674
+    },
+    "in_lexicon_A1_ge3": {
+      "n_affected_types": 99,
+      "obs_type_rate": 0.55556,
+      "null_mean": 0.56453,
+      "null_sd": 0.04808,
+      "z_novel": -0.187,
+      "p_perm_novel": 0.57542
+    },
+    "held_out_A1_ge3": {
+      "n_affected_types": 25,
+      "obs_type_rate": 0.24,
+      "null_mean": 0.22276,
+      "null_sd": 0.04834,
+      "z_novel": 0.357,
+      "p_perm_novel": 0.52248
+    },
+    "held_out_A2_ge3": {
+      "n_affected_types": 23,
+      "obs_type_rate": 0.3913,
+      "null_mean": 0.27109,
+      "null_sd": 0.07683,
+      "z_novel": 1.565,
+      "p_perm_novel": 0.10889
+    },
+    "held_out_B_ge3": {
+      "n_affected_types": 25,
+      "obs_type_rate": 0.64,
+      "null_mean": 0.53564,
+      "null_sd": 0.08992,
+      "z_novel": 1.161,
+      "p_perm_novel": 0.17782
+    }
+  },
+  "test3_linear_a_vs_linear_b": {
+    "all": {
+      "A1_ge3_vs_LB": {
+        "rate_a": 0.58602,
+        "rate_b": 0.48864,
+        "diff_pp": 9.74,
+        "p_fisher": 0.0006683768401900762,
+        "n_a": 372,
+        "n_b": 1936
+      },
+      "A2_ge3_vs_LB": {
+        "rate_a": 0.65337,
+        "rate_b": 0.68366,
+        "diff_pp": -3.03,
+        "p_fisher": 0.29124477388227715,
+        "n_a": 326,
+        "n_b": 1334
+      },
+      "B_ge3_vs_LB": {
+        "rate_a": 0.78495,
+        "rate_b": 0.73554,
+        "diff_pp": 4.94,
+        "p_fisher": 0.051650233429857126,
+        "n_a": 372,
+        "n_b": 1936
+      },
+      "by_len_A1": {
+        "L2": {
+          "rate_a": 1.0,
+          "rate_b": 1.0,
+          "diff_pp": 0.0,
+          "p_fisher": 1.0,
+          "n_a": 86,
+          "n_b": 401
+        },
+        "L3": {
+          "rate_a": 0.84959,
+          "rate_b": 0.84305,
+          "diff_pp": 0.65,
+          "p_fisher": 0.8457598368124053,
+          "n_a": 246,
+          "n_b": 1064
+        },
+        "L4plus": {
+          "rate_a": 0.07143,
+          "rate_b": 0.05619,
+          "diff_pp": 1.52,
+          "p_fisher": 0.5390702210404199,
+          "n_a": 126,
+          "n_b": 872
+        }
+      }
+    },
+    "in_lexicon": {
+      "A1_ge3_vs_LB": {
+        "rate_a": 0.62258,
+        "rate_b": 0.48864,
+        "diff_pp": 13.39,
+        "p_fisher": 1.3087947841562592e-05,
+        "n_a": 310,
+        "n_b": 1936
+      },
+      "A2_ge3_vs_LB": {
+        "rate_a": 0.68539,
+        "rate_b": 0.68366,
+        "diff_pp": 0.17,
+        "p_fisher": 1.0,
+        "n_a": 267,
+        "n_b": 1334
+      },
+      "B_ge3_vs_LB": {
+        "rate_a": 0.8,
+        "rate_b": 0.73554,
+        "diff_pp": 6.45,
+        "p_fisher": 0.016953720692521546,
+        "n_a": 310,
+        "n_b": 1936
+      },
+      "by_len_A1": {
+        "L2": {
+          "rate_a": 1.0,
+          "rate_b": 1.0,
+          "diff_pp": 0.0,
+          "p_fisher": 1.0,
+          "n_a": 76,
+          "n_b": 401
+        },
+        "L3": {
+          "rate_a": 0.85321,
+          "rate_b": 0.84305,
+          "diff_pp": 1.02,
+          "p_fisher": 0.758771485256017,
+          "n_a": 218,
+          "n_b": 1064
+        },
+        "L4plus": {
+          "rate_a": 0.07609,
+          "rate_b": 0.05619,
+          "diff_pp": 1.99,
+          "p_fisher": 0.47816928818987225,
+          "n_a": 92,
+          "n_b": 872
+        }
+      }
+    },
+    "held_out": {
+      "A1_ge3_vs_LB": {
+        "rate_a": 0.40323,
+        "rate_b": 0.48864,
+        "diff_pp": -8.54,
+        "p_fisher": 0.19854136450214968,
+        "n_a": 62,
+        "n_b": 1936
+      },
+      "A2_ge3_vs_LB": {
+        "rate_a": 0.50847,
+        "rate_b": 0.68366,
+        "diff_pp": -17.52,
+        "p_fisher": 0.006609027704516815,
+        "n_a": 59,
+        "n_b": 1334
+      },
+      "B_ge3_vs_LB": {
+        "rate_a": 0.70968,
+        "rate_b": 0.73554,
+        "diff_pp": -2.59,
+        "p_fisher": 0.6617817795908567,
+        "n_a": 62,
+        "n_b": 1936
+      },
+      "by_len_A1": {
+        "L2": {
+          "rate_a": 1.0,
+          "rate_b": 1.0,
+          "diff_pp": 0.0,
+          "p_fisher": 1.0,
+          "n_a": 10,
+          "n_b": 401
+        },
+        "L3": {
+          "rate_a": 0.82143,
+          "rate_b": 0.84305,
+          "diff_pp": -2.16,
+          "p_fisher": 0.7915716483930755,
+          "n_a": 28,
+          "n_b": 1064
+        },
+        "L4plus": {
+          "rate_a": 0.05882,
+          "rate_b": 0.05619,
+          "diff_pp": 0.26,
+          "p_fisher": 1.0,
+          "n_a": 34,
+          "n_b": 872
+        }
+      }
+    }
+  },
+  "test4_cross_family_bakeoff": {
+    "bank_sizes_ge3": {
+      "Semitic": 798,
+      "Egyptian": 1550,
+      "Luwian": 1017,
+      "Hattic": 124,
+      "Hurrian": 27
+    },
+    "matched_size_N": 798,
+    "raw": {
+      "Semitic": {
+        "la_all": 0.58602,
+        "la_held_out": 0.40323,
+        "linear_b": 0.48864,
+        "amarna": 0.48905
+      },
+      "Egyptian": {
+        "la_all": 0.44086,
+        "la_held_out": 0.37097,
+        "linear_b": 0.39101,
+        "amarna": 0.36496
+      },
+      "Luwian": {
+        "la_all": 0.38172,
+        "la_held_out": 0.32258,
+        "linear_b": 0.27841,
+        "amarna": 0.30657
+      },
+      "Hattic": {
+        "la_all": 0.12634,
+        "la_held_out": 0.03226,
+        "linear_b": 0.08058,
+        "amarna": 0.10219
+      },
+      "Hurrian": {
+        "la_all": 0.07796,
+        "la_held_out": 0.08065,
+        "linear_b": 0.04907,
+        "amarna": 0.06569
+      }
+    },
+    "size_matched": {
+      "Semitic": {
+        "la_all_mean": 0.58602,
+        "la_held_out_mean": 0.40323,
+        "linear_b_mean": 0.48864,
+        "amarna_mean": 0.48905
+      },
+      "Egyptian": {
+        "la_all_mean": 0.2271,
+        "la_held_out_mean": 0.19129,
+        "linear_b_mean": 0.20299,
+        "amarna_mean": 0.18653
+      },
+      "Luwian": {
+        "la_all_mean": 0.29839,
+        "la_held_out_mean": 0.2529,
+        "linear_b_mean": 0.21761,
+        "amarna_mean": 0.24062
+      }
+    }
+  },
+  "test5_lexicon_and_collision_audit": {
+    "total_lexicon_entries": 736,
+    "confidence_tiers": {
+      "PROBABLE": 79,
+      "CANDIDATE": 278,
+      "SPECULATIVE": 360,
+      "CONFIRMED": 19
+    },
+    "word_sign_lengths": {
+      "1": 118,
+      "2": 172,
+      "3": 277,
+      "4": 115,
+      "5": 54
+    },
+    "evaluated_single_root_ge3_sign_words": 325,
+    "strict_root_match_A1_rate": 0.4215,
+    "strict_root_match_A2_rate": 0.5262,
+    "affix_tolerant_root_match_rate": 0.5631,
+    "mean_semitic_roots_per_skeleton": 15.72,
+    "tier_fidelity": {
+      "CANDIDATE": {
+        "n": 120,
+        "exact_A1": 47,
+        "exact_A2": 63,
+        "affix_B": 64
+      },
+      "SPECULATIVE": {
+        "n": 156,
+        "exact_A1": 70,
+        "exact_A2": 87,
+        "affix_B": 91
+      },
+      "CONFIRMED": {
+        "n": 10,
+        "exact_A1": 1,
+        "exact_A2": 1,
+        "affix_B": 5
+      },
+      "PROBABLE": {
+        "n": 39,
+        "exact_A1": 19,
+        "exact_A2": 20,
+        "affix_B": 23
+      }
+    },
+    "semitic_skeleton_space_coverage": {
+      "9class_2cons_occupied": 81,
+      "9class_2cons_total": 81,
+      "9class_2cons_pct": 100.0,
+      "9class_3cons_occupied": 476,
+      "9class_3cons_total": 729,
+      "9class_3cons_pct": 65.3,
+      "7class_2cons_occupied": 49,
+      "7class_2cons_total": 49,
+      "7class_2cons_pct": 100.0,
+      "7class_3cons_occupied": 256,
+      "7class_3cons_total": 343,
+      "7class_3cons_pct": 74.6
+    }
+  }
+}
