@@ -1,0 +1,14 @@
+name = "PowerSeeking"
+defaultTargets = ["PowerSeeking"]
+
+[leanOptions]
+autoImplicit = false
+
+# Pinned: Mathlib v4.35.0 (commit 56a005855ea17e0b0958f73ec801ae140b0a1679), Lean v4.35.0.
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "56a005855ea17e0b0958f73ec801ae140b0a1679"
+
+[[lean_lib]]
+name = "PowerSeeking"
