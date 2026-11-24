@@ -4,7 +4,7 @@
 # "atlas:" names the case in the Aletheia atlas that this topic bears on. The lab links to it and does not judge it.
 title: Deep memory
 summary: The lab's tests of claims about the deep past. Lost travellers, star maps older than history, flood stories as memory, a civilisation before the Ice Age ended, a disputed gospel, an unread script. Each test asks what trace the claim would have left that does not depend on reading a story the right way.
-questions: 31, 41, 85, 92, 44, 82, 88, 15, 12, 13, 32, 7, 86, 45, 83, 91
+questions: 31, 41, 85, 92, 44, 82, 88, 84, 15, 12, 13, 32, 7, 86, 45, 83, 91
 order: 3
 updated: 2026-11-24
 image: ancient-crossings
@@ -23,7 +23,7 @@ The atlas's [Deep Memory](https://ejhong.github.io/aletheia/cases/deep-memory/) 
 
 The lab comes at it from the other side. A shared past is a physical claim. Either people travelled between the cultures, or knowledge was handed down across a very long stretch of time. Travellers leave descendants, and descendants carry their ancestry in their bones. Old astronomy leaves a date in the sky, because the stars drift in a way that can be calculated. Neither kind of trace depends on reading a myth the right way. A third test does use the stories, but only by counting where they are told: if flood myths remember the sea rising, they should be commonest where the sea took the most land.
 
-This page has also become the lab's shelf for history and ancient civilisation in general. Further down are two tests of a lost Ice Age civilisation, by its smoke and by its crops, two of disputed writing (a letter that quotes a secret gospel, and a claim to have read the script of Minoan Crete), and a search of Inca knotted-cord records for copies.
+This page has also become the lab's shelf for history and ancient civilisation in general. Further down are three tests of a lost Ice Age civilisation, by its smoke, its crops and its walls, two of disputed writing (a letter that quotes a secret gospel, and a claim to have read the script of Minoan Crete), and a search of Inca knotted-cord records for copies.
 
 ## The scorecard
 
@@ -68,16 +68,18 @@ This is a weaker "no" than it first looked. A spot check found that a tenth of t
 
 Read more: [flood myths and drowned land](../../questions/flood-myths/), with a map of all 927 peoples.
 
-## Did anyone smelt or farm before the Ice Age ended?
+## Did anyone smelt, farm or build before the Ice Age ended?
 
-The usual reply to "where are the ruins?" is that the sea rose 120 metres and covered them. Two things a civilisation makes are harder to drown: the smoke of its furnaces, which settles in ice and peat far away, and the pollen of its crops, which settles in lakes. Both were looked for, and both tests turned out too blunt to answer.
+The usual reply to "where are the ruins?" is that the sea rose 120 metres and covered them. Two things a civilisation makes are harder to drown: the smoke of its furnaces, which settles in ice and peat far away, and the pollen of its crops, which settles in lakes. And the drowned land itself has been surveyed with sonar. All three were looked at, and all three tests turned out too blunt to answer.
 
 - **Smoke.** No stretch of ice or peat older than 5,000 years shows lead pollution at three times its usual level. But the same records show nothing of the copper smelting that archaeology dates to 7,000 years ago, and the test as fixed would not have picked up the Roman Empire. What is ruled out is a lead industry of medieval European size, near Europe, in the stretches of time sampled. For most of the Ice Age there were no northern data at all.
 - **Crops.** No farming signal appears in lake mud older than 12,000 years. But the detector found only 23% of known farming-era cores in Europe, where the plan required half, and none in the Fertile Crescent in the centuries when farming began there. By the plan's own rule the result is inconclusive.
 
-Both first reports claimed a clean "no". Spot checks withdrew that.
+- **Walls.** A Stone Age wall nearly a kilometre long lies on the floor of the Baltic, so such things exist. A search of 34 square kilometres of public sonar on the United States shelf found nothing unexplained. But the detector finds a wall of the Baltic wall's size less than one time in twenty, in data too coarse to show a line of boulders.
 
-Read more: [smelting before the Bronze Age](../../questions/lost-metallurgy/) and [farming before the Ice Age ended](../../questions/ice-age-farming/).
+All three first reports claimed a clean "no". Spot checks withdrew that.
+
+Read more: [smelting before the Bronze Age](../../questions/lost-metallurgy/), [farming before the Ice Age ended](../../questions/ice-age-farming/) and [walls on the drowned shelf](../../questions/drowned-walls/).
 
 ## Texts and records
 
@@ -91,11 +93,11 @@ Read more: [Secret Mark](../../questions/secret-mark/), [is Linear A cracked?](.
 
 ## What the studies add up to
 
-Ten studies so far. Four found no trace where a shared past should have left one: the DNA shows no travellers, the one star clock read so far shows the date of the people known to have set it, and flood stories are no commoner where the Ice Age sea took the most land. Four could not decide, because the tool was not up to the question: the carved pillar at Göbekli Tepe, the smoke, the crops and Linear A. Two found something: the passages quoted from the Secret Gospel are an unusually close echo of Mark, and some Inca khipus are copies of others, a few of which seem not to have been noticed.
+Eleven studies so far. Four found no trace where a shared past should have left one: the DNA shows no travellers, the one star clock read so far shows the date of the people known to have set it, and flood stories are no commoner where the Ice Age sea took the most land. Five could not decide, because the tool was not up to the question: the carved pillar at Göbekli Tepe, the smoke, the crops, the walls and Linear A. Two found something: the passages quoted from the Secret Gospel are an unusually close echo of Mark, and some Inca khipus are copies of others, a few of which seem not to have been noticed.
 
 That is not the same as showing the resemblances are coincidence. Every one of these tests has blind spots, set out below and on its own page. None of them touches the stories and images themselves, and the flood test says nothing about stories of particular drowned bays and islands, such as those collected around Australia.
 
-A pattern in the four that could not decide is worth noting. Each time, the first report read silence as a "no", and a check of what the method could have seen took that back. A test that cannot detect the thing when it is known to be there says nothing when it finds nothing.
+A pattern in the five that could not decide is worth noting. Each time, the first report read silence as a "no", and a check of what the method could have seen took that back. A test that cannot detect the thing when it is known to be there says nothing when it finds nothing.
 
 Waiting their turn: whether the bringers of civilisation in old stories came from the sea, whether basic words are shared across the oceans, whether germs and parasites tell a different story from the bones, and one more star clock, the orientations of ancient monuments.
 
@@ -104,8 +106,8 @@ Waiting their turn: whether the bringers of civilisation in old stories came fro
 - **The resemblances themselves.** Whether a bird-man in one place is the same idea as a bird-man in another is the atlas's question, not the lab's.
 - **Travellers who left no sampled descendants.** Ancient DNA sees only the people who happen to have been dug up and sequenced. Egypt, Mesopotamia and the Indus valley are almost empty in the public record.
 - **How old the constellations are.** A test of the figures' own age would need what the oldest sources say about them as wholes, not the positions of single catalogued stars.
-- **A lost civilisation's smoke and crops.** Both tests were too blunt. A sharper one would use peat near old ore fields, and seeds and tools from excavated sites, and would first show it can see the beginnings we know about.
+- **A lost civilisation's smoke, crops and walls.** All three tests were too blunt. A sharper one would use peat near old ore fields, and seeds and tools from excavated sites, and would first show it can see the beginnings we know about.
 - **Who wrote the Letter to Theodore, and what Linear A says.** Style could not settle the first, and the second was tested with the wrong tool.
 - **Stories of particular drowned places.** A catalogue of motifs counts world-flood themes. It does not hold stories about a named bay or island going under, and it treats all of Australia as eight regions.
 - **Knowledge passed on without people or star maps:** by word of mouth, which leaves no physical trace at all.
-- **The limits of the work itself.** AI systems designed and ran every study, and replicated or spot-checked each one. The six newest (flood myths, smoke, crops, Secret Mark, Linear A, khipus) have been spot-checked, not replicated. No specialist has reviewed any of it.
+- **The limits of the work itself.** AI systems designed and ran every study, and replicated or spot-checked each one. The seven newest (flood myths, smoke, crops, walls, Secret Mark, Linear A, khipus) have been spot-checked, not replicated. No specialist has reviewed any of it.

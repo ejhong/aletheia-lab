@@ -9,3 +9,6 @@ All primary bathymetry and hydrographic chart overlays retrieved on **2026-11-24
 
 ### Reference Archaeological Benchmark
 - **Blinkerwall (Bay of Mecklenburg, Western Baltic Sea):** Geersen et al. (2024), *PNAS* 121(8): e2312008121 (`https://doi.org/10.1073/pnas.2312008121`) — `971 m` long, `< 1 m` high (`~0.5–1.0 m`), `~2–3 m` wide submerged Stone Age reindeer hunting wall at `−21 m` water depth, used to parameterize our planted synthetic hunting-wall sensitivity test on real 2 m NOAA multibeam seafloor noise.
+
+
+**Added after the spot check (2026-11-24).** No per-file checksums were recorded for the downloaded tiles or chart replies, so this manifest does not meet the lab's rule for datasets; the one digest in the results file changed on a rerun that reproduced every count. The description of the Blinkerwall above is not the paper's: Geersen and others give 1,673 stones "usually less than 1 m in height" along 971 m, with a width "generally less than 2 m". The image service is a mosaic of surveys whose own grids run from about 0.5 m to 4 m under these tiles; 2 m is the size at which they were exported.

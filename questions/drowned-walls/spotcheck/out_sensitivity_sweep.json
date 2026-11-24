@@ -1,0 +1,890 @@
+{
+ "S0 study: gauss FWHM4m x0.70m x250m": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 92,
+   "any_crit": 95,
+   "by_region_any": {
+    "CA Santarosae": [
+     12,
+     20
+    ],
+    "NE Block": [
+     23,
+     24
+    ],
+    "NY Hudson": [
+     38,
+     40
+    ],
+    "FL Keys": [
+     22,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 87,
+   "any_crit": 93,
+   "by_region_any": {
+    "CA Santarosae": [
+     12,
+     20
+    ],
+    "NE Block": [
+     23,
+     24
+    ],
+    "NY Hudson": [
+     39,
+     40
+    ],
+    "FL Keys": [
+     19,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 88,
+   "any_crit": 91,
+   "by_region_any": {
+    "CA Santarosae": [
+     12,
+     20
+    ],
+    "NE Block": [
+     23,
+     24
+    ],
+    "NY Hudson": [
+     37,
+     40
+    ],
+    "FL Keys": [
+     19,
+     24
+    ]
+   }
+  }
+ ],
+ "S1 gauss FWHM2m x0.50m x250m": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 2,
+   "any_crit": 9,
+   "by_region_any": {
+    "CA Santarosae": [
+     1,
+     20
+    ],
+    "NE Block": [
+     6,
+     24
+    ],
+    "NY Hudson": [
+     1,
+     40
+    ],
+    "FL Keys": [
+     1,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 4,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     3,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     1,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 4,
+   "any_crit": 8,
+   "by_region_any": {
+    "CA Santarosae": [
+     2,
+     20
+    ],
+    "NE Block": [
+     1,
+     24
+    ],
+    "NY Hudson": [
+     5,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  }
+ ],
+ "S2 box 2m x0.50m x250m (pixel-avg)": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 1,
+   "any_crit": 4,
+   "by_region_any": {
+    "CA Santarosae": [
+     1,
+     20
+    ],
+    "NE Block": [
+     3,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 2,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     2,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 1,
+   "any_crit": 5,
+   "by_region_any": {
+    "CA Santarosae": [
+     2,
+     20
+    ],
+    "NE Block": [
+     1,
+     24
+    ],
+    "NY Hudson": [
+     2,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  }
+ ],
+ "S3 box 2m x0.30m x250m (pixel-avg)": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 1,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     1,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  }
+ ],
+ "S4 box 1m x0.50m x250m (pixel-avg)": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  }
+ ],
+ "S5 box 2m x0.70m x250m (pixel-avg)": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 56,
+   "any_crit": 80,
+   "by_region_any": {
+    "CA Santarosae": [
+     11,
+     20
+    ],
+    "NE Block": [
+     16,
+     24
+    ],
+    "NY Hudson": [
+     32,
+     40
+    ],
+    "FL Keys": [
+     21,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 35,
+   "any_crit": 65,
+   "by_region_any": {
+    "CA Santarosae": [
+     6,
+     20
+    ],
+    "NE Block": [
+     17,
+     24
+    ],
+    "NY Hudson": [
+     25,
+     40
+    ],
+    "FL Keys": [
+     17,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 45,
+   "any_crit": 73,
+   "by_region_any": {
+    "CA Santarosae": [
+     8,
+     20
+    ],
+    "NE Block": [
+     21,
+     24
+    ],
+    "NY Hudson": [
+     32,
+     40
+    ],
+    "FL Keys": [
+     12,
+     24
+    ]
+   }
+  }
+ ],
+ "S6 box 2m x0.50m x971m (pixel-avg)": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 1,
+   "any_crit": 14,
+   "by_region_any": {
+    "CA Santarosae": [
+     2,
+     20
+    ],
+    "NE Block": [
+     10,
+     24
+    ],
+    "NY Hudson": [
+     2,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 9,
+   "by_region_any": {
+    "CA Santarosae": [
+     1,
+     20
+    ],
+    "NE Block": [
+     6,
+     24
+    ],
+    "NY Hudson": [
+     2,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 1,
+   "any_crit": 12,
+   "by_region_any": {
+    "CA Santarosae": [
+     2,
+     20
+    ],
+    "NE Block": [
+     5,
+     24
+    ],
+    "NY Hudson": [
+     4,
+     40
+    ],
+    "FL Keys": [
+     1,
+     24
+    ]
+   }
+  }
+ ],
+ "S7 box 2m x0.50m x250m dashed 10m/5m": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  }
+ ],
+ "S8 study gauss 4m x0.70m but 100m long": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 86,
+   "by_region_any": {
+    "CA Santarosae": [
+     11,
+     20
+    ],
+    "NE Block": [
+     18,
+     24
+    ],
+    "NY Hudson": [
+     36,
+     40
+    ],
+    "FL Keys": [
+     21,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 87,
+   "by_region_any": {
+    "CA Santarosae": [
+     9,
+     20
+    ],
+    "NE Block": [
+     23,
+     24
+    ],
+    "NY Hudson": [
+     38,
+     40
+    ],
+    "FL Keys": [
+     17,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 87,
+   "by_region_any": {
+    "CA Santarosae": [
+     11,
+     20
+    ],
+    "NE Block": [
+     22,
+     24
+    ],
+    "NY Hudson": [
+     36,
+     40
+    ],
+    "FL Keys": [
+     18,
+     24
+    ]
+   }
+  }
+ ],
+ "S9 study gauss 4m x0.70m x250m dashed 10/5": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 0,
+   "any_crit": 0,
+   "by_region_any": {
+    "CA Santarosae": [
+     0,
+     20
+    ],
+    "NE Block": [
+     0,
+     24
+    ],
+    "NY Hudson": [
+     0,
+     40
+    ],
+    "FL Keys": [
+     0,
+     24
+    ]
+   }
+  }
+ ],
+ "S10 study gauss 4m x0.50m x250m": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 63,
+   "any_crit": 86,
+   "by_region_any": {
+    "CA Santarosae": [
+     11,
+     20
+    ],
+    "NE Block": [
+     18,
+     24
+    ],
+    "NY Hudson": [
+     36,
+     40
+    ],
+    "FL Keys": [
+     21,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 46,
+   "any_crit": 82,
+   "by_region_any": {
+    "CA Santarosae": [
+     10,
+     20
+    ],
+    "NE Block": [
+     21,
+     24
+    ],
+    "NY Hudson": [
+     35,
+     40
+    ],
+    "FL Keys": [
+     16,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 53,
+   "any_crit": 79,
+   "by_region_any": {
+    "CA Santarosae": [
+     9,
+     20
+    ],
+    "NE Block": [
+     22,
+     24
+    ],
+    "NY Hudson": [
+     34,
+     40
+    ],
+    "FL Keys": [
+     14,
+     24
+    ]
+   }
+  }
+ ],
+ "S11 study gauss 4m x0.40m x250m": [
+  {
+   "seed": 1,
+   "n": 108,
+   "study_crit": 3,
+   "any_crit": 18,
+   "by_region_any": {
+    "CA Santarosae": [
+     3,
+     20
+    ],
+    "NE Block": [
+     5,
+     24
+    ],
+    "NY Hudson": [
+     7,
+     40
+    ],
+    "FL Keys": [
+     3,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "n": 108,
+   "study_crit": 2,
+   "any_crit": 14,
+   "by_region_any": {
+    "CA Santarosae": [
+     2,
+     20
+    ],
+    "NE Block": [
+     6,
+     24
+    ],
+    "NY Hudson": [
+     5,
+     40
+    ],
+    "FL Keys": [
+     1,
+     24
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "n": 108,
+   "study_crit": 2,
+   "any_crit": 15,
+   "by_region_any": {
+    "CA Santarosae": [
+     1,
+     20
+    ],
+    "NE Block": [
+     4,
+     24
+    ],
+    "NY Hudson": [
+     7,
+     40
+    ],
+    "FL Keys": [
+     3,
+     24
+    ]
+   }
+  }
+ ]
+}
