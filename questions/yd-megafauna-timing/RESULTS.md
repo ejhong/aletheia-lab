@@ -9,11 +9,61 @@
 
 ## Lead Answer
 
+*A spot check on 24 November 2026 narrowed what follows: the study rules out a sudden, total extinction, which the hypothesis's authors no longer claim, and the steep fall in dated bones at the onset is a point in their favour. See "Spot check and corrections" below.*
+
 **North America's Ice Age megafauna did not vanish in a single catastrophe at the start of the Younger Dryas (`~12,850`–`12,896 cal BP`) — nor did they disappear completely before it.** Across two independent public archives tested under a locked protocol, the extinction was a **drawn-out, multi-millennial collapse spanning both sides of the Younger Dryas onset**:
 
 1. **Large-herbivore dung spores in lake mud (*Sporormiella*, 11 calibrated Neotoma cores across 7 US states) began declining a millennium or more *before* the Younger Dryas.** All `9` of `9` high-spore cores peaked before `12,896 cal BP` (median `14,950 cal BP`, Wilcoxon `p = 0.0039`), **`9` of `11`** fell past half their peak (`t_50pct`) beforehand (median **`14,669 cal BP`**, **`+1,773` years early**, Wilcoxon two-sided `p = 0.0137`), **`7` of `10`** had their main step-down (`t_cp`) beforehand (median **`13,940 cal BP`**, `+1,044` years early), and **`6` of `9`** crossed the classic `2%` threshold beforehand (median **`14,107 cal BP`**). Yet `3` cores (Colorado, Texas, and one Indiana lake) stayed above `2%` well into the Younger Dryas, and the continental median drifted gradually down from `15,200` to `10,600 cal BP` with no step cliff at `12,896 cal BP`.
 2. **Direct megafauna radiocarbon dates (`n = 326` vetted `Score 11–12` dates in `20–9 ka`, including `214` modern `Score 12` AMS bone/tooth collagen dates recalibrated from scratch on `IntCal20`) rule out an instant `12,850 cal BP` wipeout (`p < 0.0005`).** In `2,000` forward-simulated `IntCal20` instant-wipeout catalogues (`H_impact`), radiocarbon-plateau smearing leaks at most **`0.73%`** (99th percentile) of `Score 12` AMS probability mass into `12,700–11,700 cal BP`. The real AMS record places **`4.95%`** there — **`6.8×` higher** (`0` of `2,000` simulations reach it, `p < 0.0005`; unchanged for herbivores-only, without Rancho La Brea, and after Surovell taphonomic correction). **`10` modern `Score 12` AMS specimens** across `4` extinct genera (`5` mammoths, `3` mastodons, `1` giant beaver, `1` giant short-faced bear) each have **`> 99.3%`** posterior probability of living *after* `12,750 cal BP` (median calibrated ages **`12,644` down to `10,953 cal BP`**).
-3. **Important nuance:** Direct bone dates do *not* decline before `13,000 cal BP` — they peak during `13,500–12,900 cal BP` (`R_pre = 1.92` vs `H_impact` 95% `0.61–1.45`) and then drop roughly tenfold between `12,800` and `12,600 cal BP` before continuing in a real `700`-to-`1,900`-year survival tail. Meanwhile, genus-by-genus Signor–Lipps estimates on strict `Score 12` AMS dates span **`> 1,200` years**: horses (`Equus`, `OLE = 13,061 cal BP`) and dire wolves (`Canis dirus`, youngest `13,674 cal BP`) vanish before or at the Younger Dryas onset, whereas mammoths (`Mammuthus`, `OLE = 11,852 cal BP`, 95% CI `10,295–12,150`), mastodons (`Mammut`, `OLE = 11,867 cal BP`, 95% CI `11,079–12,412`), and Harrington's mountain goat (`Oreamnos harringtoni`, `OLE = 10,333 cal BP`, 95% CI `7,117–12,329`) all persist centuries into the cold.
+3. **Important nuance:** Direct bone dates do *not* decline before `13,000 cal BP` — they peak during `13,500–12,900 cal BP` (`R_pre = 1.92` vs `H_impact` 95% `0.61–1.45`) and then drop roughly tenfold between `12,800` and `12,600 cal BP` before continuing in a real survival tail (`206` to `1,897` years after `12,850 cal BP`). Meanwhile, genus-by-genus Signor–Lipps estimates on strict `Score 12` AMS dates span **`> 1,200` years**: horses (`Equus`, `OLE = 13,061 cal BP`) and dire wolves (`Canis dirus`, youngest `13,674 cal BP`) vanish before or at the Younger Dryas onset, whereas mammoths (`Mammuthus`, `OLE = 11,852 cal BP`, 95% CI `10,295–12,150`), mastodons (`Mammut`, `OLE = 11,867 cal BP`, 95% CI `11,079–12,412`), and Harrington's mountain goat (`Oreamnos harringtoni`, `OLE = 10,333 cal BP`, 95% CI `7,117–12,329`) all persist centuries into the cold.
+
+---
+
+## Spot check and corrections (24 November 2026)
+
+Claude Fable 5.2 (Anthropic), with a sub-agent (Claude Opus 5.5), checked this study after it was published. The
+lock is in order. A rerun of the locked program gives the three results tables byte for byte. A separate
+recalculation from the spreadsheet, with its own calibration code, gives the same ten late survivors and 4.92%
+where this report has 4.95%. The verdict follows from the locked rule. What the study shows is narrower than the
+report says, and some of its figures were wrong. The headline has had a note added and wrong figures have been
+corrected in the text; the rest is as first published. The scripts and their output are in `spotcheck/`.
+
+1. **What the bone dates rule out is a sudden, total extinction, which the hypothesis's authors no longer claim.**
+   They write that "extinction events may play out over centuries to millennia, especially because small groups
+   of megafauna can survive in refugia" (Sweatman and others 2024, section 5). Ten survivors among 214 dated
+   animals do not count against that. They count against the 2007 version and against the popular one.
+2. **The finding most favourable to the hypothesis was explained away.** Dated bones are at their most numerous
+   in the six centuries before the cold began, more so than the simulated band allows, and then fall about
+   tenfold between 12,800 and 12,600 years ago. The report puts this down to Clovis hunting and to which
+   skeletons get dated. Neither was tested. A sharp fall at the onset is what the authors' present version
+   predicts. It is also what hunting or the cold alone would produce, and a list of dated bones is not a count
+   of animals. The study cannot choose among these.
+3. **The survival result itself is robust.** Give the sudden-extinction model the same surge of dates just before
+   the onset that the real record has, and the most it puts into the Younger Dryas is about 1.2% (the real
+   figure is 4.95%). Pile every animal into the last 150 years before the onset and it reaches the real figure
+   in 2 of 1,000 tries. The excess amounts to about 10.6 dates, 5% of the 214. The model assumes no date is
+   wrong; if one date in twenty were too young by some centuries the excess would be explained. Of the ten
+   survivors, one has no laboratory number, two from Pyramid Lake may be one animal, and the Kansas bear has two
+   other dates in the spreadsheet that are 1,300 and 2,000 radiocarbon years older (whether they are the same
+   animal was not checked). Setting all of these aside leaves at least five, which is what the rule required.
+4. **The dung-spore evidence is weaker than written.** Of the four measures of when the spores declined, one is
+   significantly earlier than the onset: the fall to half the peak (p = 0.014; a plain count of 9 cores of 11
+   gives p = 0.065). The fall below 2% (p = 0.36) and the step change (p = 0.19) are not. "9 of 9 cores peaked
+   before the onset, p = 0.0039" was not a test fixed in advance and is close to true by construction. In 6
+   of the 11 cores, not 9, the fall to half came more than a thousand years early.
+5. **Figures corrected.** The survivors' dates fall 206 to 1,897 years after 12,850 years ago (mammoths and
+   mastodons 206 to 759), not "600 to 1,900"; two of them are about 110 years after 12,750. The onset of the
+   cold in Greenland, 12,896, is counted from the year 2000 and is 12,846 on the scale used for the fossils
+   ("before 1950"). No count changes, one p-value moves from 0.19 to 0.16, and each "years early" figure grows
+   by 50. That dire wolves died out before the onset rests on the youngest of fewer than twelve dates.
+
+**What the study shows, restated.** In most lake cores the dung spores of large plant-eaters were already falling
+a thousand years or more before the cold, by one measure of four. Dated bones peak just before the cold began,
+fall steeply as it begins, and continue as a thin tail for centuries. A single day that killed everything is ruled
+out. A blow at the onset that left survivors is not, and nor is a decline with no blow at all.
+
+**Not replicated.** No model from a second company has rewritten this analysis from the plan, which the lab's rules
+ask for before a `data` question is called done. None is planned for now.
 
 ---
 
@@ -84,7 +134,7 @@ From Broughton & Weitzel (2018) Supplementary Table 1 (`521` total entries, `489
 | *Mammut* (mastodon) | Hiscock, NY | `CAMS-17407` | Bone collagen (`MS`) | `10,630 ± 80` | **`12,638`** (`12,382–12,727`) | `0.9933` |
 | *Mammuthus* (mammoth) | Wallman Mammoth, NV | *(not provided)* | Bone collagen (`MS`) | `10,630 ± 70` | **`12,644`** (`12,484–12,724`) | `0.9969` |
 
-*(An additional `12` conventional `Score 11 ST` specimens also have `P(< 12,750) > 0.95`, including very young 1960s–70s conventional dates from `8,141` to `12,337 cal BP`. Because legacy conventional bone pretreatment is more vulnerable to young-humic contamination, we treat the `10` modern `Score 12` AMS collagen/dentin dates above as the primary, conservative proof of post-impact survival.)*
+*(An additional `12` conventional `Score 11 ST` specimens also have `P(< 12,750) > 0.95`, including very young 1960s–70s conventional dates from `8,141` to `12,337 cal BP`. Because legacy conventional bone pretreatment is more vulnerable to young-humic contamination, we treat the `10` modern `Score 12` AMS collagen/dentin dates above as the primary, conservative evidence of post-impact survival.)*
 
 ### Table 5. Per-Taxon Signor–Lipps Extinction Estimates (`OLE` & `GRIWM`, `1,000` `IntCal20` Posterior Draws)
 
@@ -103,7 +153,7 @@ From Broughton & Weitzel (2018) Supplementary Table 1 (`521` total entries, `489
 
 ## Limits & Honest Caveats
 
-1. **Divergence between *Sporormiella* decline (`~14.7–13.9 ka`) and the bone-date peak (`~13.4–12.8 ka`).** Direct fossil dates *surge* during `13,500–12,900 cal BP` before plunging roughly tenfold between `12,800` and `12,600 cal BP`. That steep `12.8–12.6 ka` drop is real in the dated bone catalogue and likely reflects a combination of genuine late-phase collapse (Clovis hunting + Younger Dryas cooling hitting already thinned herds) and discovery/preservation bias (younger skeletons in newly deglaciated kettle bogs and archaeological sites are preferentially AMS-dated). Either way, the two archives converge on ruling out a single-day `12,850 cal BP` extinction: herbivore dung spores were already falling `1,000–1,800` years earlier in most cores, and directly dated mammoths and mastodons were still alive `600–800` years later.
+1. **Divergence between *Sporormiella* decline (`~14.7–13.9 ka`) and the bone-date peak (`~13.4–12.8 ka`).** Direct fossil dates *surge* during `13,500–12,900 cal BP` before plunging roughly tenfold between `12,800` and `12,600 cal BP`. That steep `12.8–12.6 ka` drop is real in the dated bone catalogue and likely reflects a combination of genuine late-phase collapse (Clovis hunting + Younger Dryas cooling hitting already thinned herds) and discovery/preservation bias (younger skeletons in newly deglaciated kettle bogs and archaeological sites are preferentially AMS-dated). Either way, the two archives converge on ruling out a single-day `12,850 cal BP` extinction: herbivore dung spores were already falling `1,000–1,800` years earlier in most cores, and directly dated mammoths and mastodons were still alive `200–760` years later.
 2. **Legacy conventional `Score 11` vs. modern `Score 12` AMS dates.** Including `Score 11` conventional dates pulls nominal `OLE` for *Mammut*, *Nothrotheriops*, and *Smilodon* into the early Holocene (`8,357–8,566 cal BP`) because of 1960s–70s bulk-collagen dates later suspected of young contamination. Restricting strictly to `Score 12` AMS dates eliminates every one of those outliers while still preserving `10` unambiguous post-impact survivors (`P(< 12,750) > 0.993`), a `6.8×` Younger Dryas SPD excess (`p < 0.0005`), and a `> 1,200`-year cross-genus stagger.
 3. **Lake-core age-model uncertainty.** Individual Neotoma lake chronologies rely on discrete tie points (some bulk sediment in carbonate basins), which can shift single cores by a few centuries. However, the `1,000–1,800`-year pre-YD lead appears across carbonate and non-carbonate basins from New York to Ohio, Indiana, Wyoming, and California — and is reinforced by the completely independent bone-collagen AMS record showing multi-century survival inside the Younger Dryas.
 4. **Cause of extinction not tested.** Timing tests whether a single `~12,850 cal BP` impact can explain the extinction; it does not separate human hunting ("overkill") from Bølling–Allerød warming, vegetation change, and Younger Dryas cooling as the primary drivers of the staggered collapse.
@@ -112,4 +162,4 @@ From Broughton & Weitzel (2018) Supplementary Table 1 (`521` total entries, `489
 
 ## What This Means
 
-If a comet had struck North America `12,850` years ago and wiped out the continent's giant Ice Age animals in one catastrophe, two things should show up in the record: herds should still be thriving right up to `12,850` years ago, and their bones should stop appearing immediately afterward. Neither is true. Across eleven lakes and caves from New York to California, dung-fungus spores from giant plant-eaters were already falling `1,000` to `1,800` years before the Younger Dryas cold began, though herds lingered longer in parts of Colorado, Texas, and Indiana. And in modern radiocarbon dates measured directly on fossil bone and tooth collagen, mammoths, mastodons, giant beavers, and short-faced bears were still walking North America `600` to `1,900` years *after* the claimed impact — far beyond what radiocarbon dating blur can explain. The extinction looks like a drawn-out, uneven collapse spanning the end of the Ice Age, not a single day of fire from the sky.
+If a comet had struck North America `12,850` years ago and wiped out the continent's giant Ice Age animals in one catastrophe, two things should show up in the record: herds should still be thriving right up to `12,850` years ago, and their bones should stop appearing immediately afterward. Neither is true. Across eleven lakes and caves from New York to California, dung-fungus spores from giant plant-eaters were already falling `1,000` to `1,800` years before the Younger Dryas cold began, though herds lingered longer in parts of Colorado, Texas, and Indiana. And in modern radiocarbon dates measured directly on fossil bone and tooth collagen, mammoths, mastodons, giant beavers, and short-faced bears were still walking North America `200` to `1,900` years *after* the claimed impact — far beyond what radiocarbon dating blur can explain. The extinction looks like a drawn-out, uneven collapse spanning the end of the Ice Age, not a single day of fire from the sky.

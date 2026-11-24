@@ -54,7 +54,7 @@ def build_tiles(summary: dict) -> str:
         ),
         (
             f"{surv_s12}",
-            "modern AMS collagen dates from mammoths, mastodons, a giant beaver and a short-faced bear fall squarely after 12,750 years ago (each >99% sure, up to 1,900 years past the claimed impact)",
+            "modern AMS collagen dates from mammoths, mastodons, a giant beaver and a short-faced bear fall after 12,750 years ago (each >99% sure; 200 to 1,900 years past the claimed impact)",
             False,
         ),
         (
@@ -63,8 +63,8 @@ def build_tiles(summary: dict) -> str:
             False,
         ),
         (
-            "Drawn-out, not one day",
-            "Decline began a millennium before the cold, accelerated around 12,800–12,600 years ago, and left giant mammals walking North America for centuries after",
+            "Not one day",
+            "Some animals lived on for centuries, so not everything died at once. But dated bones fall steeply as the cold begins, which a blow at that time would also produce",
             True,
         ),
     ]
