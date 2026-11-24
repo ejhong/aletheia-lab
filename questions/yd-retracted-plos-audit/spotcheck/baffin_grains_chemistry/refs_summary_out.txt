@@ -1,0 +1,27 @@
+DOIs checked: 159
+Counter({'match': 135, 'nonexistent': 17, 'different': 7})
+failing total: 24
+| 5 | 10.1093/mnras/stac606 | DIFFERENT WORK | Egal 2022: An observational synthesis of the Taurid meteor complex | Khachaturyants: Bending waves excited by irregular gas inflow along warps |
+| 8 | 10.14293/sciopen.2023.41 | DOI does not exist (doi.org) | Moore 2023: Abu Hureyra, Syria, Part 1: Shock-fractured quartz grains support 12,800-year-ol | :  |
+| 9 | 10.14293/sciopen.2023.54 | DOI does not exist (doi.org) | Moore 2023: Abu Hureyra, Syria, Part 2: Additional evidence supporting the catastrophic dest | :  |
+| 10 | 10.14293/sciopen.2023.64 | DOI does not exist (doi.org) | Moore 2023: Abu Hureyra, Syria, Part 3: Comet airbursts triggered major climate change 12,80 | :  |
+| 26 | 10.15372/GiG20170106 | DIFFERENT WORK | Sungatullin 2015: Composition and morphology of metal microparticles in Paleozoic sediments of Cas | : COSMIC MICROSPHERES IN THE CARBONIFEROUS DEPOSITS OF THE USOLKA SECTION (Urals f |
+| 30 | 10.1016/0019-1035(89)90064-4 | DOI does not exist (doi.org) | Flynn 1989: Atmospheric entry heating: A criterion to distinguish between asteroidal and com | :  |
+| 36 | 10.1016/B978-0-12-003601-2.50007-0 | DOI does not exist (doi.org) | Parkin 1962: Meteorites and cosmic dust | :  |
+| 61 | 10.1016/S0277-379100058-1 | DOI does not exist (doi.org) | Andrews 1998: Late Quaternary detrital carbonate layers in Baffin Bay marine sediments (67°–74 | :  |
+| 68 | 10.1038/s41561-018-0186-7 | DOI does not exist (doi.org) | Keigwin 2018: Deglacial floods in the Beaufort Sea preceded Younger Dryas cooling | :  |
+| 74 | 10.1353/book16062.12 | DOI does not exist (doi.org) | Kennett 2018: Potential consequences of the YDB cosmic impact at 12.8 ka. | :  |
+| 81 | 10.1134/S1028334X1407004X | DOI does not exist (doi.org) | Andronikov 2014: In search for fingerprints of an extraterrestrial event: Trace element character | :  |
+| 84 | 10.3189/002214310793889985 | DOI does not exist (doi.org) | Kurbatov 2010: Discovery of a nanodiamond-rich layer in the Greenland ice sheet | :  |
+| 94 | 10.1080/00278864.2006.9486614 | DOI does not exist (doi.org) | Thackeray 2006: The Younger Dryas in the Wonderkrater sequence, South Africa? | :  |
+| 98 | 10.1029/2012GM001239 | DOI does not exist (doi.org) | Boslough 2012: Arguments and evidence against a Younger Dryas impact event. | :  |
+| 108 | 10.1029/2010GL044624 | DOI does not exist (doi.org) | Scott 2010: Fungus, not comet or catastrophe, accounts for carbonaceous spherules in the You | :  |
+| 113 | 10.1016/B0-08-043751-6/03018-6 | DOI does not exist (doi.org) | Rudnick 2003: Composition of the continental crust. | :  |
+| 136 | 10.1007/978-3-642-32947-9_12 | DOI does not exist (doi.org) | Glass 2013:  | :  |
+| 145 | 10.1111/geoa.12127 | DIFFERENT WORK | Andronikov 2016: Sediments from around the Lower Younger Dryas Boundary (USA): Implications from  | Hartl: Recent speed‐up of an alpine rock glacier: an updated chronology of the kinemati |
+| 146 | 10.1111/geoa.12119 | DIFFERENT WORK | Andronikov 2016: Implications from chemical, structural and mineralogical studies of magnetic mic | : Thanks |
+| 147 | 10.1086/696567 | DIFFERENT WORK | Mahaney 2018: Did the Black-Mat Impact/Airburst Reach the Antarctic? Evidence from New Mountai | Truschke: The Power of the Islamic Sword in Narrating the Death of Indian Buddhism |
+| 148 | 10.1016/j.sedgeo.2010.07.003 | DIFFERENT WORK | Mahaney 2010: Evidence for a cosmogenic origin of fired glaciofluvial beds in the northwestern | Casteleyn: Interrelations of the petrophysical, sedimentological and microstructural proper |
+| 150 | 10.1038/s41598-024-53273-5 | DOI does not exist (doi.org) | Kennett 2024: Shock-fractured quartz at Younger Dryas onset (12.8 ka) supports cosmic airburst | :  |
+| 163 | 10.5281/zenodo.345379 | DIFFERENT WORK (DataCite: DrIanPhilips/planets v0.1alpha) | Sweatman 2017: Decoding Göbekli Tepe with archaeoastronomy: what does the fox say? | :  |
+| 164 | 10.1016/j.eurpre.2013.01.001 | DOI does not exist (doi.org) | Moore 2013: Cosmic impact, the Younger Dryas, Abu Hureyra, and the inception of agriculture  | :  |

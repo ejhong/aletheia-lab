@@ -1,0 +1,34 @@
+['', 'δ17O‰', '1SD', 'δ18O‰', '1SD', 'Δ17O‰**', '1SD']
+['Obsidian – internal standard', '3.67', '0.02', '7.01', '0.01', '0.00', '0.02']
+['Obsidian – internal standard', '3.81', '0.05', '7.28', '0.00', '0.00', '0.04']
+['Obsidian – internal standard', '3.80', '0.00', '7.27', '0.01', '−0.01', '0.00']
+['', '', '', '', '', '', '2SD']
+['', '', '', '', 'MEAN', '−0.01', '0.01']
+['Core 64 272–274 cm', '5.16', '0.03', '10.06', '0.01', '−0.11', '0.03']
+['Core 64 286–290 cm', '5.77', '0.02', '11.18', '0.04', '−0.08', '0.03']
+['Core 64 312–318 cm', '7.44', '0.01', '14.37', '0.03', '−0.07', '0.03']
+['Core 64 323–325 cm', '7.27', '0.02', '13.99', '0.01', '−0.05', '0.03']
+['Core 67 25–26 cm', '6.14', '0.07', '11.84', '0.06', '−0.06', '0.04']
+['Core 67 26–28 cm', '5.60', '0.01', '10.75', '0.02', '−0.02', '0.01']
+['Core 67 28–30 cm', '5.47', '0.04', '10.57', '0.02', '−0.06', '0.03']
+['Core 67 30–32 cm', '5.82', '0.02', '11.16', '0.00', '−0.02', '0.02']
+['Core 67 32–35 cm', '6.10', '0.02', '11.71', '0.01', '−0.03', '0.02']
+['Core 67 35–36 cm', '5.88', '0.00', '11.34', '0.02', '−0.06', '0.01']
+['', '', '', '', '', '', '']
+['', '', '', '', '', '', '2SD']
+['', '', '', '', 'MEAN', '−0.06', '0.05']
+FOOT:  **linearized slope = 0.5247 
+n core samples 10
+all {'Core 64 272–274 cm': -0.11, 'Core 64 286–290 cm': -0.08, 'Core 64 312–318 cm': -0.07, 'Core 64 323–325 cm': -0.05, 'Core 67 25–26 cm': -0.06, 'Core 67 26–28 cm': -0.02, 'Core 67 28–30 cm': -0.06, 'Core 67 30–32 cm': -0.02, 'Core 67 32–35 cm': -0.03, 'Core 67 35–36 cm': -0.06}
+study YDB set (312-318, 30-32, 32-35): n=3 mean=-0.0400
+background (rest): n=7 mean=-0.0629
+alt YDB = Fig2 levels only (312-318, 32-35): mean=-0.0500
+max |D17O| = 0.11 ; n with |D17O|>0.06: 3 ['Core 64 272–274 cm', 'Core 64 286–290 cm', 'Core 64 312–318 cm']
+CI (D17O ~ +0.39 permil; cometary/CI-like): 1 wt% admixture -> O fraction 0.0096 -> shift +0.004 permil (threshold 0.06)
+CI (D17O ~ +0.39 permil; cometary/CI-like): 2 wt% admixture -> O fraction 0.0192 -> shift +0.007 permil (threshold 0.06)
+CM (~ -2.9 permil): 1 wt% admixture -> O fraction 0.0090 -> shift -0.026 permil (threshold 0.06)
+CM (~ -2.9 permil): 2 wt% admixture -> O fraction 0.0180 -> shift -0.052 permil (threshold 0.06)
+CO Kainsaz (-5.25 permil, value cited by authors): 1 wt% admixture -> O fraction 0.0077 -> shift -0.041 permil (threshold 0.06)
+CO Kainsaz (-5.25 permil, value cited by authors): 2 wt% admixture -> O fraction 0.0155 -> shift -0.081 permil (threshold 0.06)
+ordinary chondrite H/L (~ +0.7 to +1.1 permil): 1 wt% admixture -> O fraction 0.0075 -> shift +0.007 permil (threshold 0.06)
+ordinary chondrite H/L (~ +0.7 to +1.1 permil): 2 wt% admixture -> O fraction 0.0151 -> shift +0.014 permil (threshold 0.06)

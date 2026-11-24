@@ -1,0 +1,98 @@
+=== A. The study's 25 dates ===
+All 25 (study)                                             n=25 mean  11082.6+- 9.2  T=  90.94 df=24 p=1.01e-09
+  Arlington Canyon only                                    n=11 mean  11096.5+- 9.4  T=  35.09 df=10 p=1.21e-04
+  Blackwater Draw only                                     n= 6 mean  10849.5+-79.0  T=  11.98 df= 5 p=3.50e-02
+  Murray Springs only                                      n= 8 mean  10832.6+-46.0  T=   3.42 df= 7 p=8.43e-01
+
+Contribution of each date to T=90.94 (largest first):
+   UCIAMS-36309    11440+-90    15.77
+   A-805D          10840+-70    12.01
+   UCIAMS-36306    11185+-30    11.66
+   Tx-1413         10760+-100   10.41
+   A-379           10780+-100    9.15
+   A-489           10490+-200    8.78
+   UCIAMS-36305    10960+-50     6.01
+   A-805F          10710+-160    5.42
+   A-805E          10840+-140    3.00
+   A-491           11630+-400    1.87
+   UCIAMS-42819    11050+-30     1.18
+   A-805C          10890+-180    1.14
+   UCIAMS-24212    11300+-240    0.82
+   A-805B          10930+-170    0.81
+   UCIAMS-36308    11110+-35     0.61
+   UCIAMS-36962    11105+-30     0.56
+   UCIAMS-36961    11105+-30     0.56
+   UCIAMS-42817    11100+-30     0.34
+   UCIAMS-36960    11070+-25     0.25
+   UCIAMS-42818    11095+-25     0.25
+   A-805A          11230+-340    0.19
+   UCIAMS-36307    11075+-30     0.06
+   A-481           11170+-360    0.06
+   A-805           11150+-450    0.02
+   A-490           11040+-500    0.01
+
+Leave-one-out T:
+   drop UCIAMS-36309   T= 75.00 p=2.00e-07
+   drop UCIAMS-36306   T= 78.08 p=6.48e-08
+   drop A-805D         T= 78.72 p=5.10e-08
+   drop Tx-1413        T= 80.45 p=2.69e-08
+   drop A-379          T= 81.71 p=1.67e-08
+   drop A-489          T= 82.15 p=1.42e-08
+   drop UCIAMS-36305   T= 84.72 p=5.37e-09
+   drop A-805F         T= 85.50 p=3.99e-09
+   drop A-805E         T= 87.93 p=1.58e-09
+   drop A-491          T= 89.07 p=1.02e-09
+   drop UCIAMS-42819   T= 89.64 p=8.16e-10
+   drop A-805C         T= 89.80 p=7.69e-10
+   drop UCIAMS-24212   T= 90.12 p=6.78e-10
+   drop A-805B         T= 90.14 p=6.75e-10
+   drop UCIAMS-36308   T= 90.28 p=6.37e-10
+   drop UCIAMS-36961   T= 90.33 p=6.27e-10
+   drop UCIAMS-36962   T= 90.33 p=6.27e-10
+   drop UCIAMS-42817   T= 90.57 p=5.70e-10
+   drop UCIAMS-36960   T= 90.65 p=5.53e-10
+   drop UCIAMS-42818   T= 90.66 p=5.51e-10
+   drop A-805A         T= 90.75 p=5.31e-10
+   drop UCIAMS-36307   T= 90.87 p=5.07e-10
+   drop A-481          T= 90.88 p=5.05e-10
+   drop A-805          T= 90.92 p=4.98e-10
+   drop A-490          T= 90.94 p=4.95e-10
+
+Leave-one-site-out:
+  without Arlington Canyon                                 n=14 mean  10836.8+-39.7  T=  15.44 df=13 p=2.81e-01
+  without Blackwater Draw                                  n=19 mean  11085.8+- 9.3  T=  70.13 df=18 p=4.30e-08
+  without Murray Springs                                   n=17 mean  11093.0+- 9.4  T=  56.71 df=16 p=1.85e-06
+
+=== B. Check the study's Arlington Canyon list against Kennett 2008 Table 4 ===
+   UCIAMS-36305  study 10960+-50 : Table 4 gives 11235+-25 at 493-498 cm (Wood, f old wood) -> MISMATCH; study value belongs to no Table 4 row
+   UCIAMS-36306  study 11185+-30 : Table 4 gives 11375+-25 at 485-491 cm (Wood, f old wood) -> MISMATCH; study value belongs to ['UCIAMS-36960']
+   UCIAMS-36307  study 11075+-30 : Table 4 gives 11070+-25 at 469-475 cm (Wood) -> MISMATCH; study value belongs to ['UCIAMS-36959']
+   UCIAMS-36308  study 11110+-35 : Table 4 gives 11095+-25 at 464-469 cm (Wood) -> MISMATCH; study value belongs to ['UCIAMS-36962']
+   UCIAMS-36309  study 11440+-90 : LAB ID NOT IN TABLE 4; value matches ['UCIAMS-36961']
+   UCIAMS-36960  study 11070+-25 : Table 4 gives 11185+-30 at 480-485 cm (Glassy carbon, f old wood) -> MISMATCH; study value belongs to ['UCIAMS-36307']
+   UCIAMS-36961  study 11105+-30 : Table 4 gives 11440+-90 at 480-485 cm (Carbon sphere, f old wood) -> MISMATCH; study value belongs to ['UCIAMS-47238', 'UCIAMS-47239']
+   UCIAMS-36962  study 11105+-30 : Table 4 gives 11110+-35 at 480-485 cm (Carbon elongate, f old wood) -> MISMATCH; study value belongs to ['UCIAMS-47238', 'UCIAMS-47239']
+   UCIAMS-42817  study 11100+-30 : LAB ID NOT IN TABLE 4; value matches nothing
+   UCIAMS-42818  study 11095+-25 : LAB ID NOT IN TABLE 4; value matches ['UCIAMS-42816', 'UCIAMS-36308']
+   UCIAMS-42819  study 11050+-30 : LAB ID NOT IN TABLE 4; value matches nothing
+   SI Table S2 482.5 cm 10860+-70 = ['Beta-161032 480-485']
+   SI Table S2 500.5 cm 11020+-25 = ['UCIAMS-36304 498-503']
+
+=== C. Arlington Canyon from Kennett 2008 Table 4 directly ===
+AC 12 dates 392-503 cm (Kennett 2015's 'YDB interval')     n=12 mean  11138.2+- 8.4  T= 176.26 df=11 p=6.05e-32
+AC 10 dates in the 44-cm dark layer (464-503 cm)           n=10 mean  11147.5+- 9.4  T= 171.07 df= 9 p=3.69e-32
+AC 5 dark-layer dates not flagged old wood (K2008 avg 11,060+-40) n= 5 mean  11057.4+-12.8  T=  13.05 df= 4 p=1.10e-02
+    labs: ['UCIAMS-36308', 'UCIAMS-36307', 'UCIAMS-36959', 'Beta-161032', 'UCIAMS-36304']
+AC 2 dates in SI Table S2 (Beta-161032, UCIAMS-36304)      n= 2 mean  11001.9+-23.5  T=   4.63 df= 1 p=3.14e-02
+
+=== D. Murray Springs / Blackwater Draw: do the study's per-date lists reproduce Waters & Stafford 2007 Table 1 means? ===
+   Murray Springs: study's 8 dates -> weighted mean 10833+-46; W&S 2007 Table 1 gives 10,885 +- 50 (n=8)
+   Blackwater Draw: study's 6 dates -> weighted mean 10849+-79; W&S 2007 Table 1 gives 11,300 +- 235 (n=3)
+   Blackwater Draw first 3 (A-481, A-490, A-491): 11301+-236
+
+=== E. Alternative 'all dates' panels ===
+AC 12 (K2008) + BWD 6 (study) + MS 8 (study)               n=26 mean  11125.2+- 8.2  T= 246.75 df=25 p=2.37e-38
+AC 12 (K2008) only                                         n=12 mean  11138.2+- 8.4  T= 176.26 df=11 p=6.05e-32
+AC 5 non-old-wood + MS 8 + BWD 6                           n=19 mean  11036.7+-12.2  T=  56.40 df=18 p=7.70e-06
+BWD 6 + MS 8 (study lists, no AC)                          n=14 mean  10836.8+-39.7  T=  15.44 df=13 p=2.81e-01
+Site means: AC K2008 11060+-40, MS W&S 10885+-50, BWD W&S 11300+-235 n= 3 mean  10997.1+-31.0  T=   9.16 df= 2 p=1.03e-02

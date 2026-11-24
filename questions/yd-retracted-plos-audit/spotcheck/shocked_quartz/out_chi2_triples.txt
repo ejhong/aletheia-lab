@@ -1,0 +1,31 @@
+Paper reports: weighted mean 12,801.6 cal BP; chi2 = 0.057, df 2, p = 0.972
+
+One SI row per site:
+  AC 482.5 cm (S2)   | BW AA-89168 (S3)   | MS Haynes 10885+-50 (S4)  mean  12811.1  chi2  0.064  p 0.968
+  AC 482.5 cm (S2)   | BW SMU-1880 (S3)   | MS Haynes 10885+-50 (S4)  mean  12801.9  chi2  0.182  p 0.913
+  AC 482.5 cm (S2)   | BW AA-1362 (S3)    | MS Haynes 10885+-50 (S4)  mean  12794.6  chi2  0.912  p 0.634
+  AC 500.5 cm (S2)   | BW AA-89168 (S3)   | MS Haynes 10885+-50 (S4)  mean  12851.0  chi2  4.209  p 0.122
+  AC 500.5 cm (S2)   | BW SMU-1880 (S3)   | MS Haynes 10885+-50 (S4)  mean  12848.6  chi2  4.795  p 0.091
+  AC 500.5 cm (S2)   | BW AA-1362 (S3)    | MS Haynes 10885+-50 (S4)  mean  12840.3  chi2  6.151  p 0.046
+
+Kennett 2015 modelled ages (12805+-55, 12775+-365, 12750+-235): mean 12801.6 chi2 0.057 p 0.972
+
+All triples from SI rows + K2015 modelled with |mean-12801.6|<1.5 or |chi2-0.057|<0.01:
+   ['AC 482.5 cm (S2)', 'BW AA-89168 (S3)', 'MS Haynes 10885+-50 (S4)'] mean 12811.07 chi2 0.0644 p 0.9683
+   ['AC 482.5 cm (S2)', 'BW AA-89168 (S3)', 'AC K2015 modelled'] mean 12812.25 chi2 0.0573 p 0.9718
+   ['AC 482.5 cm (S2)', 'BW SMU-1880 (S3)', 'MS Haynes 10885+-50 (S4)'] mean 12801.88 chi2 0.1822 p 0.9129
+   ['AC 482.5 cm (S2)', 'BW SMU-1880 (S3)', 'AC K2015 modelled'] mean 12801.15 chi2 0.1802 p 0.9138
+   ['AC 482.5 cm (S2)', 'MS Haynes 10885+-50 (S4)', 'MS K2015 modelled'] mean 12805.50 chi2 0.0615 p 0.9697
+   ['AC 482.5 cm (S2)', 'AC K2015 modelled', 'MS K2015 modelled'] mean 12805.63 chi2 0.0615 p 0.9697
+   ['BW AA-89168 (S3)', 'AC K2015 modelled', 'BW K2015 modelled'] mean 12812.84 chi2 0.0661 p 0.9675
+   ['BW SMU-1880 (S3)', 'MS Haynes 10885+-50 (S4)', 'AC K2015 modelled'] mean 12800.54 chi2 0.1655 p 0.9206
+   ['BW AA-1362 (S3)', 'BW K2015 modelled', 'MS K2015 modelled'] mean 12718.89 chi2 0.0499 p 0.9754
+   ['MS Haynes 10885+-50 (S4)', 'AC K2015 modelled', 'MS K2015 modelled'] mean 12803.82 chi2 0.0536 p 0.9736
+   ['MS Haynes 10885+-50 (S4)', 'BW K2015 modelled', 'MS K2015 modelled'] mean 12802.65 chi2 0.0587 p 0.9711
+   ['AC K2015 modelled', 'BW K2015 modelled', 'MS K2015 modelled'] mean 12801.57 chi2 0.0573 p 0.9717
+
+Study's reconstructions:
+  482.5 + AA-89168 + MS    mean 12811.07 chi2 0.064 p 0.968
+  500.5 + AA-89168 + MS    mean 12851.02 chi2 4.209 p 0.122
+  all 6 SI rows            mean 12827.31 chi2 6.795 p 0.236
+  ratio 4.209/0.064 = 65.8 ; ratio vs paper's 0.057: 73.8

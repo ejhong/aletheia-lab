@@ -1,0 +1,49 @@
+S8b header units row: [('CaO', 'wt%'), ('Cr', 'ppm'), ('Fe2O3', 'wt%'), ('Ni', 'ppm'), ('Ir', 'ppb'), ('Pt', 'ppb'), ('Ir', 'ppm'), ('Pt', 'ppm')]
+n S8a 6 n S8b 12
+S8a named rows: ['Baffin core 64 _2', 'Baffin core 64 3', 'Baffin core 67_ 1', 'Baffin core 67_ 2', 'Baffin Bay core 52 1', 'Baffin Bay core 52 2']
+S8b rows: ['Spot 1', 'Spot 2', 'Spot 2-50', 'Spot 3', 'Spot 4', 'Spot 5', 'Spot 6', 'Spot 7', 'Spot 8', 'Spot 9', 'Spot 10', 'Spot 11']
+S8a Baffin core 64 _2      Fe=   682955 Cr=   80.3 Ni=  112.9 CaO= 0.12 Fe/Cr=  8505.2 Fe/Ni=   6049.9 x100:  85.05   60.50 box100=True Ir=0.5084335756590606 Pt=18.311339621705255
+S8a Baffin core 64 3       Fe=   522495 Cr=  225.9 Ni=  190.8 CaO= 1.06 Fe/Cr=  2312.6 Fe/Ni=   2738.4 x100:  23.13   27.38 box100=True Ir=1.1981550625070658 Pt=237.1832039221402
+S8a Baffin core 67_ 1      Fe=   378035 Cr=   72.5 Ni=   30.7 CaO= 1.79 Fe/Cr=  5213.8 Fe/Ni=  12299.4 x100:  52.14  122.99 box100=False Ir=None Pt=None
+S8a Baffin core 67_ 2      Fe=   645417 Cr=  222.0 Ni=  157.0 CaO= 0.26 Fe/Cr=  2907.7 Fe/Ni=   4110.4 x100:  29.08   41.10 box100=True Ir=1.5398858653583516 Pt=1408.5301951211438
+S8a Baffin Bay core 52 1   Fe=   706293 Cr=  112.5 Ni=  128.6 CaO= 0.35 Fe/Cr=  6279.5 Fe/Ni=   5493.5 x100:  62.80   54.94 box100=True Ir=None Pt=None
+S8a Baffin Bay core 52 2   Fe=   434377 Cr=  359.6 Ni=  179.4 CaO= 1.49 Fe/Cr=  1207.9 Fe/Ni=   2421.0 x100:  12.08   24.21 box100=True Ir=2.0917037357437223 Pt=14981.44019325411
+S8b Spot 1                 Fe=   105360 Cr=  196.4 Ni=  157.4 CaO= 4.98 Fe/Cr=   536.5 Fe/Ni=    669.4 x100:   5.36    6.69 box100=True Ir=0 Pt=5.363109769683768
+S8b Spot 2                 Fe=   130612 Cr=  260.9 Ni=   67.8 CaO= 5.50 Fe/Cr=   500.6 Fe/Ni=   1926.1 x100:   5.01   19.26 box100=True Ir=4.910831022811596 Pt=0
+S8b Spot 2-50              Fe=   139663 Cr=  348.0 Ni=  131.1 CaO= 5.42 Fe/Cr=   401.3 Fe/Ni=   1065.2 x100:   4.01   10.65 box100=True Ir=2.2325617512402545 Pt=32.92371530719597
+S8b Spot 3                 Fe=    22940 Cr=  723.2 Ni=   28.7 CaO= 2.77 Fe/Cr=    31.7 Fe/Ni=    798.9 x100:   0.32    7.99 box100=True Ir=4.217758479936052 Pt=107.64992870255415
+S8b Spot 4                 Fe=    49577 Cr=  208.9 Ni=   90.6 CaO= 2.70 Fe/Cr=   237.4 Fe/Ni=    547.2 x100:   2.37    5.47 box100=True Ir=0.8301560578303475 Pt=41.93659033297053
+S8b Spot 5                 Fe=   133448 Cr=  509.0 Ni=  137.6 CaO= 9.22 Fe/Cr=   262.2 Fe/Ni=    969.9 x100:   2.62    9.70 box100=True Ir=1.4261016276670353 Pt=2347.958525269373
+S8b Spot 6                 Fe=   200612 Cr=  234.9 Ni=  169.3 CaO= 1.98 Fe/Cr=   854.0 Fe/Ni=   1185.0 x100:   8.54   11.85 box100=True Ir=0.8106623968126627 Pt=2843.527659855628
+S8b Spot 7                 Fe=   120265 Cr=  270.9 Ni=    1.8 CaO= 4.89 Fe/Cr=   444.0 Fe/Ni=  66257.2 x100:   4.44  662.57 box100=False Ir=3.9206111855887755 Pt=6280.663925384289
+S8b Spot 8                 Fe=   244346 Cr=   36.2 Ni=  249.1 CaO= 1.64 Fe/Cr=  6758.8 Fe/Ni=    981.0 x100:  67.59    9.81 box100=True Ir=4.195418894267615 Pt=768.4516416367436
+S8b Spot 9                 Fe=   245056 Cr=   36.3 Ni=  249.8 CaO= 1.65 Fe/Cr=  6758.8 Fe/Ni=    981.0 x100:  67.59    9.81 box100=True Ir=4.207614879425369 Pt=770.6855126880132
+S8b Spot 10                Fe=   142430 Cr=  181.4 Ni=  361.2 CaO= 4.64 Fe/Cr=   785.3 Fe/Ni=    394.3 x100:   7.85    3.94 box100=True Ir=1.5439882440389137 Pt=65.32240722264586
+S8b Spot 11                Fe=   193348 Cr=   94.8 Ni=   47.4 CaO= 3.07 Fe/Cr=  2040.2 Fe/Ni=   4077.1 x100:  20.40   40.77 box100=True Ir=1.3346161767790634 Pt=6219.64995345819
+
+n=18; Fe/Ni>200: 18; Fe/Cr>200: 17; raw in box: 0; x100 in box: 16
+x100 NOT in box: [('Baffin core 67_ 1', 52.1, 123.0), ('Spot 7', 4.4, 662.6)]
+median Fe/Cr=1030.9; median Fe/Ni=1555.6
+CaO>15: 0
+excess >=1wt% CI (Ni>=108, Cr>=26.5 ppm) vs unscaled 0.99*UCC: 6/18 = 33.3%;  vs Fe-scaled 0.99*UCC: 0/18
+  unscaled-UCC passers: ['Baffin core 64 3', 'Baffin core 67_ 2', 'Baffin Bay core 52 2', 'Spot 1', 'Spot 6', 'Spot 10']
+  Fe-scale factors: [17.42, 13.33, 9.64, 16.46, 18.02, 11.08, 2.69, 3.33, 3.56, 0.59, 1.26, 3.4, 5.12, 3.07, 6.23, 6.25, 3.63, 4.93]
+UCC: Fe/Cr=426.1 Fe/Ni=834.0 -> x100 4.26 8.34
+Pure CI chondrite for reference (Fe 185000, Cr 2650, Ni 10800 ppm; Lodders 2003 approx): Fe/Cr=69.8 Fe/Ni=17.1
+Pt/Ir ('S8a', 'Baffin core 64 _2', 18.311339621705255, 0.5084335756590606, 0.005084335756590606) 36.02
+Pt/Ir ('S8a', 'Baffin core 64 3', 237.1832039221402, 1.1981550625070658, 0.011981550625070659) 197.96
+Pt/Ir ('S8a', 'Baffin core 67_ 2', 1408.5301951211438, 1.5398858653583516, 0.015398858653583515) 914.7
+Pt/Ir ('S8a', 'Baffin Bay core 52 2', 14981.44019325411, 2.0917037357437223, 0.02091703735743722) 7162.31
+Pt/Ir ('S8b', 'Spot 2-50', 32.92371530719597, 2.2325617512402545, None) 14.75
+Pt/Ir ('S8b', 'Spot 3', 107.64992870255415, 4.217758479936052, None) 25.52
+Pt/Ir ('S8b', 'Spot 4', 41.93659033297053, 0.8301560578303475, None) 50.52
+Pt/Ir ('S8b', 'Spot 5', 2347.958525269373, 1.4261016276670353, None) 1646.42
+Pt/Ir ('S8b', 'Spot 6', 2843.527659855628, 0.8106623968126627, None) 3507.66
+Pt/Ir ('S8b', 'Spot 7', 6280.663925384289, 3.9206111855887755, None) 1601.96
+Pt/Ir ('S8b', 'Spot 8', 768.4516416367436, 4.195418894267615, None) 183.16
+Pt/Ir ('S8b', 'Spot 9', 770.6855126880132, 4.207614879425369, None) 183.16
+Pt/Ir ('S8b', 'Spot 10', 65.32240722264586, 1.5439882440389137, None) 42.31
+Pt/Ir ('S8b', 'Spot 11', 6219.64995345819, 1.3346161767790634, None) 4660.25
+S8a Pt/Ir n=4 median=556.3; S8b Pt/Ir n=10 median=183.1644612857879
+S8a Ir(LR) values incl. negatives: [('Baffin core 64 _2', 0.005084335756590606), ('Baffin core 64 3', 0.011981550625070659), ('Baffin core 67_ 1', -0.0169359422654393), ('Baffin core 67_ 2', 0.015398858653583515), ('Baffin Bay core 52 1', 0), ('Baffin Bay core 52 2', 0.02091703735743722)]
+Spot9/Spot8 ratio over 42 numeric cells: min 1.000000 max 1.002907; SiO2 34.4 vs 34.5 (34.5/34.4=1.002907)

@@ -1,0 +1,24 @@
+
+=== Core 52: 9 dates (<20 ka 14C)
+  Marine20  best dR=  -592 dR_err=   0: max|dmu|=   66.0 median|dmu|=  55.9 max|dsd|=  37.9  per-date dmu=[-26.3, 65.0, 63.8, 58.2, 24.4, 34.3, -55.9, -36.8, -66.0]
+  IntCal20  best dR=   -38 dR_err=  69: max|dmu|=   63.2 median|dmu|=  62.2 max|dsd|=  17.1  per-date dmu=[-63.1, -63.2, -62.9, -36.1, -28.1, 62.7, -28.5, -28.9, -62.2]
+  Marine13  best dR=  -444 dR_err=   0: max|dmu|=   72.8 median|dmu|=  47.2 max|dsd|=  38.5  per-date dmu=[-1.4, 72.1, 71.3, 34.1, -32.0, 47.2, -47.4, -25.0, -72.8]
+  IntCal13  best dR=   -72 dR_err=  69: max|dmu|=   51.5 median|dmu|=  33.3 max|dsd|=  15.7  per-date dmu=[-20.3, -6.8, -6.1, 3.4, -36.3, 51.5, -50.6, -33.3, -40.6]
+
+=== Core 64: 7 dates (<20 ka 14C)
+  Marine20  best dR=  -217 dR_err= 135: max|dmu|=    1.5 median|dmu|=   0.6 max|dsd|=   1.4  per-date dmu=[-0.2, -1.5, 1.3, -0.6, 0.2, -0.3, -0.9]
+  IntCal20  best dR=  +340 dR_err= 135: max|dmu|=  133.1 median|dmu|=  94.9 max|dsd|=  44.7  per-date dmu=[-133.1, 132.1, 21.2, -2.1, 16.4, -94.9, -115.9]
+  Marine13  best dR=   -72 dR_err= 135: max|dmu|=  128.8 median|dmu|=  11.1 max|dsd|=  26.8  per-date dmu=[-11.1, 127.9, 4.1, -11.0, 2.5, -114.0, -128.8]
+  IntCal13  best dR=  +324 dR_err= 135: max|dmu|=  141.3 median|dmu|= 115.6 max|dsd|=  27.5  per-date dmu=[-115.6, 141.3, 14.7, 5.1, -13.7, -121.9, -141.0]
+
+=== Core 67: 5 dates (<20 ka 14C)
+  Marine20  best dR=  -217 dR_err= 135: max|dmu|=    1.0 median|dmu|=   0.3 max|dsd|=   1.6  per-date dmu=[1.0, -0.0, 0.2, 0.3, 0.4]
+  IntCal20  best dR=  +323 dR_err= 135: max|dmu|=   67.4 median|dmu|=  33.2 max|dsd|=  38.4  per-date dmu=[32.2, 24.5, 67.4, 33.2, -66.4]
+  Marine13  best dR=  -111 dR_err= 135: max|dmu|=   47.0 median|dmu|=  41.0 max|dsd|=  36.5  per-date dmu=[45.7, 38.1, 41.0, 38.2, -47.0]
+  IntCal13  best dR=  +290 dR_err= 135: max|dmu|=   59.0 median|dmu|=  55.2 max|dsd|=  33.1  per-date dmu=[55.2, 58.6, 44.1, 21.3, -59.0]
+
+=== Core 77: 4 dates (<20 ka 14C)
+  Marine20  best dR=  -101 dR_err= 100: max|dmu|=    3.5 median|dmu|=   2.9 max|dsd|=   7.7  per-date dmu=[-2.6, 3.5, 0.4, -3.2]
+  IntCal20  best dR=  +420 dR_err= 106: max|dmu|=   81.6 median|dmu|=  65.8 max|dsd|=  34.4  per-date dmu=[-81.5, 81.6, 50.2, -22.7]
+  Marine13  best dR=    +7 dR_err= 106: max|dmu|=   54.5 median|dmu|=  51.3 max|dsd|=  30.3  per-date dmu=[-54.5, 48.4, 54.1, -44.3]
+  IntCal13  best dR=  +415 dR_err= 106: max|dmu|=   61.0 median|dmu|=  56.3 max|dsd|=  25.6  per-date dmu=[-60.4, 61.0, 51.8, -52.3]

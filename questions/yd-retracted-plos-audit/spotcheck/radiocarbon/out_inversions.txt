@@ -1,0 +1,7 @@
+core 52 615-620 11760 over 625-630 11120 diff 640.0 2sig 113 INVERSION>2sig
+core 52 625-630 11120 over 630-635 11060 diff 60.0 2sig 144 (within 2 sigma)
+core 64 275-280 13850 over 290-293 10990 diff 2860.0 2sig 199 INVERSION>2sig
+core 64 290-293 10990 over 293-297 10700 diff 290.0 2sig 85 INVERSION>2sig
+core 64 323-325 12540 over 330-335 12500 diff 40.0 2sig 127 (within 2 sigma)
+core 67 26-28 10930 over 28-30 10860 diff 70.0 2sig 85 (within 2 sigma)
+core 77 160-161 11030 over 161-162 10810 diff 220.0 2sig 85 INVERSION>2sig
