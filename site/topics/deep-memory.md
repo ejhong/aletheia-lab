@@ -4,7 +4,7 @@
 # "atlas:" names the case in the Aletheia atlas that this topic bears on. The lab links to it and does not judge it.
 title: Deep memory
 summary: The lab's tests of claims about the deep past. Lost travellers, star maps older than history, flood stories as memory, a civilisation before the Ice Age ended, a disputed gospel, an unread script. Each test asks what trace the claim would have left that does not depend on reading a story the right way.
-questions: 31, 41, 85, 92, 44, 82, 88, 15, 12, 32, 7, 86, 45, 83, 91
+questions: 31, 41, 85, 92, 44, 82, 88, 15, 12, 13, 32, 7, 86, 45, 83, 91
 order: 3
 updated: 2026-11-24
 image: ancient-crossings
@@ -23,7 +23,7 @@ The atlas's [Deep Memory](https://ejhong.github.io/aletheia/cases/deep-memory/) 
 
 The lab comes at it from the other side. A shared past is a physical claim. Either people travelled between the cultures, or knowledge was handed down across a very long stretch of time. Travellers leave descendants, and descendants carry their ancestry in their bones. Old astronomy leaves a date in the sky, because the stars drift in a way that can be calculated. Neither kind of trace depends on reading a myth the right way. A third test does use the stories, but only by counting where they are told: if flood myths remember the sea rising, they should be commonest where the sea took the most land.
 
-This page has also become the lab's shelf for history and ancient civilisation in general. Further down are two tests of a lost Ice Age civilisation, by its smoke and by its crops, and two of disputed writing: a letter that quotes a secret gospel, and a claim to have read the script of Minoan Crete.
+This page has also become the lab's shelf for history and ancient civilisation in general. Further down are two tests of a lost Ice Age civilisation, by its smoke and by its crops, two of disputed writing (a letter that quotes a secret gospel, and a claim to have read the script of Minoan Crete), and a search of Inca knotted-cord records for copies.
 
 ## The scorecard
 
@@ -79,17 +79,19 @@ Both first reports claimed a clean "no". Spot checks withdrew that.
 
 Read more: [smelting before the Bronze Age](../../questions/lost-metallurgy/) and [farming before the Ice Age ended](../../questions/ice-age-farming/).
 
-## Two disputed texts
+## Texts and records
 
 **The Secret Gospel of Mark.** In 1958 Morton Smith found a letter, ascribed to Clement of Alexandria, that quotes two passages from an unknown longer version of Mark. Whether it is ancient or a modern forgery has been argued ever since. A comparison of style could not say who wrote the letter: it is too short, and the same measures fail on a short work that is certainly Clement's. The firm result concerns the quoted passages. They share more two-word phrases with Mark, word for word, than any stretch of Mark shares with the rest of it. That fits a close imitation and gives no date for it.
 
 **Linear A.** The script of Minoan Crete has never been read. A 2026 proposal reads it as a Semitic language. The test matched Linear A words to Semitic roots and found them no better than Greek words. But Hebrew words are no better than Greek on that test either, so it cannot decide, and the proposal's author had already said this kind of matching is not evidence. His main evidence was not tested.
 
-Read more: [Secret Mark](../../questions/secret-mark/) and [is Linear A cracked?](../../questions/linear-a/).
+**Khipus.** The Incas kept accounts on knotted cords. A search of the 619 that have been measured and published found pairs carrying the same numbers in the same order: copies. Five pairs were not in the literature we could search, and one, split between Paris and Lima, matches over about 174 cords. They are leads for someone who can examine the objects. The first report called them eight discoveries with no chance of error; two had been published in 2005, one was a single khipu catalogued twice, and the search missed a known copy.
+
+Read more: [Secret Mark](../../questions/secret-mark/), [is Linear A cracked?](../../questions/linear-a/) and [the khipu search](../../questions/khipu/).
 
 ## What the studies add up to
 
-Nine tests so far. Four found no trace where a shared past should have left one: the DNA shows no travellers, the one star clock read so far shows the date of the people known to have set it, and flood stories are no commoner where the Ice Age sea took the most land. Four could not decide, because the tool was not up to the question: the carved pillar at Göbekli Tepe, the smoke, the crops and Linear A. One found something: the passages quoted from the Secret Gospel are an unusually close echo of Mark.
+Ten studies so far. Four found no trace where a shared past should have left one: the DNA shows no travellers, the one star clock read so far shows the date of the people known to have set it, and flood stories are no commoner where the Ice Age sea took the most land. Four could not decide, because the tool was not up to the question: the carved pillar at Göbekli Tepe, the smoke, the crops and Linear A. Two found something: the passages quoted from the Secret Gospel are an unusually close echo of Mark, and some Inca khipus are copies of others, a few of which seem not to have been noticed.
 
 That is not the same as showing the resemblances are coincidence. Every one of these tests has blind spots, set out below and on its own page. None of them touches the stories and images themselves, and the flood test says nothing about stories of particular drowned bays and islands, such as those collected around Australia.
 
@@ -106,4 +108,4 @@ Waiting their turn: whether the bringers of civilisation in old stories came fro
 - **Who wrote the Letter to Theodore, and what Linear A says.** Style could not settle the first, and the second was tested with the wrong tool.
 - **Stories of particular drowned places.** A catalogue of motifs counts world-flood themes. It does not hold stories about a named bay or island going under, and it treats all of Australia as eight regions.
 - **Knowledge passed on without people or star maps:** by word of mouth, which leaves no physical trace at all.
-- **The limits of the work itself.** AI systems designed and ran every study, and replicated or spot-checked each one. The five newest (flood myths, smoke, crops, Secret Mark, Linear A) have been spot-checked, not replicated. No specialist has reviewed any of it.
+- **The limits of the work itself.** AI systems designed and ran every study, and replicated or spot-checked each one. The six newest (flood myths, smoke, crops, Secret Mark, Linear A, khipus) have been spot-checked, not replicated. No specialist has reviewed any of it.
