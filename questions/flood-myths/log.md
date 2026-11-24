@@ -1,0 +1,3 @@
+# Log — Do Flood Myths Cluster Where Land Drowned? (#44)
+
+- **2026-11-24:** Activated #44 (`q/flood-myths`). Downloaded Michalopoulos & Xue (2021, *QJE*, Harvard Dataverse `doi:10.7910/DVN/IXOHKB`) containing Berezkin's 958-society × 2,564-motif catalog and NOAA `ETOPO 2022` 60-arc-second global bedrock bathymetry (`ETOPO_2022_v1_60s_N90W180_bed.nc`). Inspected `Motif_Master.dta` titles/descriptions and covariate column names only (zero geography-motif cross-checks) to fix the 17 non-biblical flood motifs and Noah exclusions in advance. Wrote `MANIFEST.md` and `protocol.md`, and locked `protocol.lock` before running any regression or correlation.
