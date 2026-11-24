@@ -1,0 +1,104 @@
+<figure class="fig" aria-label="Comparison of Criddle hyper-Clementine lexical test vs Markan cento verbatim phrase-stitching test">
+<div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;align-items:center">
+  <span style="font-size:12px;color:var(--muted);margin-right:4px">Diagnostic test:</span>
+  <button type="button" class="sm-b-btn is-on" data-k="cento_bg" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">Layer B: Mark Content Bigrams (Cento)</button>
+  <button type="button" class="sm-b-btn" data-k="cento_tg" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Layer B: Mark Content Trigrams (Cento)</button>
+  <button type="button" class="sm-b-btn" data-k="criddle" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Layer A: Criddle Rare-Word Ratio</button>
+  <button type="button" class="sm-b-btn" data-k="monroe" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">Layer A: Clement Log-Odds Density</button>
+</div>
+<div class="fig-scroll">
+<svg id="sm-b-svg" class="chart" viewBox="0 0 720 270" role="img" aria-label="Histogram comparing Mar Saba diagnostics against authentic baselines" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+<figcaption><strong>Two forgery diagnostics, opposite outcomes.</strong> In <strong>Layer B (Secret Mark quotes, 181 words)</strong>, verbatim content-bigram overlap with Canonical Mark hits <strong>48.6%</strong> (z = +3.35)—higher than all 62 genuine 181-word passages of Canonical Mark (max 40.1%)—and reaches <strong>55.6%</strong> (z = +3.38) against Mark &cup; John, with 25.0% content trigrams (z = +2.93), the clear fingerprint of a Mark+John phrase cento. By contrast, in <strong>Layer A (Clement frame, 529 words)</strong>, the Criddle (1995) rare-word ratio (0.139 vs. authentic Clement 0.133 &plusmn; 0.036, z = +0.17) and Clement-distinctive vocabulary density (&minus;0.327, z = &minus;1.32 vs. all Clement; z = +0.22 vs. held-out <em>Quis dives</em> + <em>Eclogae</em>) show <strong>zero 'hyper-Clementine' packing</strong>.</figcaption>
+<script>
+(function(){
+  var D = {"criddle_dist": [0.1932, 0.1276, 0.1047, 0.1389, 0.1897, 0.2035, 0.2375, 0.1492, 0.1753, 0.1726, 0.1989, 0.2198, 0.2384, 0.1793, 0.2024, 0.1899, 0.1687, 0.1553, 0.1307, 0.1944, 0.1547, 0.2011, 0.1905, 0.1362, 0.15, 0.1283, 0.176, 0.1866, 0.153, 0.1591, 0.1467, 0.1127, 0.1406, 0.1237, 0.114, 0.1158, 0.1381, 0.0955, 0.132, 0.1005, 0.1223, 0.1421, 0.1813, 0.11, 0.0745, 0.1082, 0.1039, 0.115, 0.1486, 0.1053, 0.1304, 0.1618, 0.1292, 0.0663, 0.0889, 0.0714, 0.0876, 0.1657, 0.1366, 0.0629, 0.0987, 0.1152, 0.164, 0.1325, 0.1263, 0.088, 0.1237, 0.125, 0.0641, 0.0645, 0.1158, 0.1186, 0.1292, 0.1132, 0.0888, 0.1361, 0.1459, 0.0974, 0.1421, 0.1264, 0.2573, 0.1354, 0.1476, 0.1366, 0.1209, 0.195, 0.1095, 0.1871, 0.1478, 0.1713, 0.209, 0.1566, 0.1598, 0.1522, 0.1967, 0.2156, 0.1789, 0.1639, 0.1676, 0.1676, 0.1724, 0.2012, 0.1792, 0.1921, 0.1919, 0.1989, 0.116, 0.1484, 0.1754, 0.1182, 0.1243, 0.1791, 0.1014, 0.1726, 0.1176, 0.2033, 0.1869, 0.2128, 0.1412, 0.0979, 0.17, 0.1376, 0.1183, 0.1988, 0.1639, 0.1465, 0.1739, 0.1954, 0.1866, 0.1183, 0.1796, 0.2143, 0.2184, 0.1527, 0.1029, 0.1512, 0.1421, 0.1852, 0.1123, 0.1285, 0.1429, 0.1373, 0.1633, 0.2321, 0.1638, 0.1474, 0.1036, 0.1383, 0.1871, 0.1287, 0.1188, 0.1498, 0.1262, 0.1286, 0.0969, 0.1005, 0.1237, 0.1378, 0.1043, 0.1343, 0.1298, 0.1571, 0.1376, 0.1073, 0.1232, 0.1436, 0.1384, 0.1353, 0.135, 0.1471, 0.2083, 0.1576, 0.148, 0.1364, 0.2057, 0.1887, 0.1208, 0.1209, 0.1263, 0.1274, 0.0957, 0.1016, 0.1587, 0.2254, 0.1912, 0.156, 0.1959, 0.1595, 0.1667, 0.1802, 0.2095, 0.1627, 0.1159, 0.1444, 0.1742, 0.1322, 0.1357, 0.1381, 0.1368, 0.1243, 0.1683, 0.1492, 0.1031, 0.0634, 0.1217, 0.149, 0.1304, 0.1185, 0.1164, 0.0711, 0.1287, 0.1215, 0.1311, 0.0681, 0.1269, 0.1445, 0.0769, 0.0735, 0.0966, 0.1268, 0.0816, 0.1406, 0.1461, 0.1086, 0.1148, 0.0373, 0.0936, 0.1162, 0.1467, 0.1262, 0.1529, 0.1275, 0.101, 0.1403, 0.1186, 0.1675, 0.0837, 0.1684, 0.1014, 0.1703, 0.1225, 0.1592, 0.0914, 0.1316, 0.1244, 0.0994, 0.1237, 0.1378, 0.1512, 0.1244, 0.1078, 0.096, 0.1148, 0.1378, 0.0927, 0.0973, 0.1026, 0.1694, 0.16, 0.1308, 0.1101, 0.1222, 0.0957, 0.1646, 0.1269, 0.1313, 0.1093, 0.1361, 0.1475, 0.1117, 0.0928, 0.1182, 0.1554, 0.1709, 0.1495, 0.0606, 0.0922, 0.0995, 0.1117, 0.1016, 0.1366, 0.0909, 0.0995, 0.0842, 0.1196, 0.098, 0.1961, 0.1456, 0.12, 0.1406, 0.1042, 0.1277, 0.1047, 0.1065, 0.1158, 0.0879, 0.1135, 0.1608, 0.1795, 0.1269, 0.1514, 0.1463, 0.1889, 0.0957, 0.1223, 0.1209, 0.1078, 0.165, 0.1394, 0.1224, 0.133, 0.1392, 0.1011, 0.1347, 0.1058, 0.0621, 0.0914, 0.1558, 0.1313, 0.0821, 0.1535, 0.1263, 0.0769, 0.1244, 0.1101, 0.1703, 0.1383, 0.0733, 0.1323, 0.1556, 0.1238, 0.1515, 0.1643, 0.1592, 0.0815, 0.1268, 0.1165, 0.098, 0.1053, 0.093, 0.139, 0.0588, 0.0725, 0.1075, 0.1033, 0.1435, 0.1535, 0.1011, 0.1636, 0.207, 0.1514, 0.1858, 0.1991, 0.1347, 0.0632, 0.1096, 0.17, 0.1813, 0.1361, 0.133, 0.1158, 0.16, 0.2366, 0.1525, 0.1535, 0.1098, 0.1217, 0.0905, 0.086, 0.1685, 0.1092, 0.1167, 0.1043, 0.1189, 0.0899, 0.1313, 0.0838, 0.1385, 0.142, 0.142, 0.1692, 0.14, 0.0728, 0.1036, 0.1005, 0.1117, 0.1322, 0.0922, 0.1229, 0.1143, 0.0947, 0.1224, 0.1475, 0.1263, 0.1455, 0.1484, 0.1134, 0.0773, 0.1429, 0.0874, 0.0969, 0.057, 0.1183, 0.0549, 0.1127, 0.1202, 0.1179, 0.0905, 0.0922, 0.1168, 0.099, 0.1429, 0.163, 0.1379, 0.1547, 0.1222, 0.1073, 0.1302, 0.1134, 0.1176, 0.1569, 0.0842, 0.1429, 0.1385, 0.1016, 0.1139, 0.1256, 0.1408, 0.1117, 0.1106, 0.1084, 0.1005, 0.0936, 0.0922, 0.0928, 0.1014, 0.0899, 0.0535, 0.1279, 0.1436, 0.1168, 0.1211, 0.1309, 0.095, 0.1368, 0.1411, 0.1838, 0.1514, 0.1333, 0.1187, 0.0685, 0.0764, 0.1716, 0.1236, 0.1053, 0.1429, 0.152, 0.1484, 0.1341, 0.1129, 0.1105, 0.1117, 0.1271, 0.0877, 0.1073, 0.0941, 0.1364, 0.1371, 0.1111, 0.0994, 0.1244, 0.1257, 0.1337, 0.1497, 0.1503, 0.1235, 0.1344, 0.0773, 0.125, 0.1064, 0.1173, 0.134, 0.1429, 0.1457], "criddle_ms": 0.139, "criddle_z": 0.17, "monroe_dist": [0.0465, -0.1073, 0.056, -0.1133, -0.3468, 0.0227, 0.3464, 0.0407, -0.1978, -0.0472, -0.0539, 0.1259, 0.7382, 0.1815, -0.1907, -0.0691, -0.113, -0.2378, -0.2525, 0.2425, -0.489, 0.2016, -0.2225, 0.5268, 0.4452, -0.0295, 0.8591, 0.661, -0.2992, -0.5281, -0.3547, 0.1161, 0.087, 0.2307, 0.1239, -0.4572, 0.2743, -0.1591, 0.3688, -0.0282, -0.3924, 0.0152, -0.1225, -0.0017, 0.3603, 0.2562, -0.0954, 0.5524, -0.0102, 0.3265, 0.3961, -0.0499, -0.1701, 0.1262, -0.0212, 0.0534, 0.478, 0.3195, 0.5788, 0.0621, 0.5713, 0.1195, 0.1409, -0.2973, 0.0353, 0.1051, 0.2248, 0.0404, -0.1138, 0.0133, 0.3819, -0.5296, -0.0081, -0.1811, 0.5745, -0.1229, -0.1054, 0.6393, 0.608, 0.695, 0.5827, 0.9411, 0.4676, 0.0133, 0.3416, 0.0637, 0.3756, 0.2765, 0.5093, 0.4742, 0.3876, 0.4798, 0.1563, 0.1199, 0.5565, 0.5319, 0.337, 0.6834, 0.1664, 0.4812, -0.0927, 0.3431, 0.6273, 0.7726, -0.0573, 0.7622, 0.0413, 0.3912, 0.1155, 0.3376, 0.3424, 0.1671, 0.1576, 0.0914, 0.603, 0.3841, 0.4727, 0.5546, -0.0099, 0.4204, 0.26, 0.5629, 0.233, 0.4693, 0.0696, 0.205, 0.109, 0.5458, 0.1602, 0.0722, 0.1532, 0.1157, 0.7411, 0.4615, 0.1364, -0.1032, 0.1705, 0.4297, 0.3617, 0.3735, 0.5501, -0.0611, 0.2261, 0.2556, 0.2367, 0.4118, 0.0499, 0.1101, -0.7613, 0.3507, 0.0404, 0.016, -0.1389, 0.2841, -0.0867, -0.1222, 0.0986, 0.3271, 0.1305, 0.4873, 0.173, 0.2303, 0.02, 0.3039, 0.1487, 0.1638, 0.593, 0.1384, 0.2709, 0.0204, 0.4822, 0.5607, 0.0187, 0.0011, -0.0168, 0.5561, -0.3104, -0.1483, 0.3687, 0.1383, -0.1527, 0.7161, 0.0453, -0.223, -0.0243, -0.1411, -0.2448, -0.5252, -0.8437, -0.1634, 0.3545, 0.4447, 0.1012, -0.2131, -0.6812, -0.2834, -0.4434, -0.5513, 0.0097, -0.5018, 0.2158, 0.161, 0.1579, 0.3512, 0.4336, 0.4083, 0.1953, 0.3177, -0.0918, 0.2646, 0.2284, 0.2296, 0.3855, 0.3399, 0.326, 0.0181, 0.4543, -0.1355, 0.1988, -0.1184, 0.0881, -0.1789, -0.1369, -0.0462, 0.1945, 0.0885, 0.4878, -0.1353, -0.1741, 0.0418, -0.1794, -0.0383, 0.0079, 0.1498, 0.0113, 0.2386, 0.1083, 0.4169, 0.3494, 0.5654, 0.5652, 0.1741, 0.2185, 0.0429, 0.0059, -0.5969, -0.0717, -0.0354, 0.2061, 0.1876, -0.2094, 0.1215, -0.3298, -0.2012, 0.0435, 0.0159, 0.1274, -0.1261, 0.4217, 0.2902, 0.1949, 0.1936, 0.1463, -0.2381, 0.0047, 0.1213, -0.1189, 0.3163, -0.0449, 0.0179, -0.1266, 0.2456, 0.0494, 0.0777, 0.3371, 0.4676, 0.273, 0.1656, 0.3335, 0.1673, -0.2093, -0.0809, 0.2369, -0.2003, -0.2006, 0.1581, 0.3021, 0.3932, 0.2879, -0.0741, -0.3987, -0.2636, -0.4269, -0.0819, 0.0234, -0.1202, -0.2772, 0.3038, -0.4323, 0.1222, 0.0709, 0.0267, 0.203, 0.1448, -0.2363, -0.0182, 0.3505, -0.0445, 0.5208, 0.7887, 0.2491, -0.4016, -0.204, 0.1025, 0.0492, 0.4113, -0.0538, 0.417, 0.0588, 0.2681, 0.14, 0.0545, 0.0991, 0.1099, -0.1269, -0.1906, -0.2797, -0.1881, -0.2518, 0.5184, 0.407, 0.2685, -0.0021, 0.1627, 0.19, 0.0433, -0.0006, -0.0052, 0.065, -0.2215, -0.2717, 0.023, 0.2639, -0.2278, 0.019, 0.1948, 0.1326, 0.0241, 0.4166, 0.6815, 0.6889, 0.4704, 0.5807, -0.1102, -0.1278, 0.252, 0.1863, 0.5146, 0.5386, 0.4748, 0.1686, 0.2969, 0.4586, -0.4616, -0.1884, -0.7025, -0.2928, -0.0881, 0.0748, -0.0049, -0.0437, -0.0831, 0.5401, 0.1022, 0.5196, 0.303, 0.6884, 0.2078, -0.191, -0.7234, 0.3386, 0.1657, 0.1339, 0.494, 0.621, 0.3434, -0.1196, 0.0268, 0.016, 0.3857, -0.0251, 0.1246, -0.105, 0.0166, 0.1176, -0.2266, -0.1368, -0.3598, 0.0826, 0.367, 0.2553, 0.2022, 0.306, 0.1198, -0.0431, 0.0423, 0.0587, -0.0556, 0.2534, 0.1267, 0.4207, 0.1324, -0.2331, -0.092, 0.202, -0.0738, 0.0579, 0.2957, 0.5038, 0.3566, 0.5825, 0.4766, 0.2877, 0.0456, 0.5404, 0.2549, 0.2995, 0.3015, 0.2111, 0.4741, 0.5734, 0.1342, 0.1792, 0.4091, 0.5079, 0.241, 0.339, 0.1964, -0.1342, -0.0647, -0.137, -0.2501, 0.3483, -0.1633, -0.1822, -0.0332, 0.0754, 0.2902, 0.0306, 0.0406, -0.3475, -0.4435, -0.0903, -0.1976, -0.2789, 0.0365, 0.398, 0.4098, -0.436, -0.3448, -0.178, -0.1388, -0.4659, 0.0407, -0.2261, -0.3879, -0.6297, -0.5982, -0.5928, -0.5036, -0.5177, -0.68, -0.1691, -0.6837, -1.7533, -0.7531, -0.1811, -0.0983, -0.3232, -0.1892, 0.1561, 0.1779, -0.4, -0.7421], "monroe_ms": -0.3265, "monroe_z": -1.32, "monroe_nonclem": -1.665, "cento_bg_dist": [19.75, 34.48, 26.88, 25.49, 27.27, 34.46, 28.48, 34.97, 29.81, 28.1, 37.11, 28.57, 25.79, 36.18, 27.33, 31.58, 26.75, 31.58, 29.63, 20.26, 32.52, 35.0, 30.61, 22.93, 24.5, 27.21, 34.78, 32.7, 39.61, 37.91, 32.91, 21.01, 40.14, 29.33, 27.78, 30.56, 25.85, 27.86, 27.78, 36.99, 31.25, 36.3, 23.78, 20.0, 13.82, 17.12, 24.34, 19.51, 18.87, 25.48, 22.78, 32.89, 33.33, 22.58, 27.56, 29.87, 29.03, 24.5, 18.99, 23.08, 23.12, 13.58], "cento_bg_sm": 48.6, "cento_bg_z": 3.35, "cento_tg_dist": [6.9, 13.25, 11.86, 6.4, 11.05, 10.18, 7.56, 13.25, 9.77, 11.43, 14.94, 11.63, 9.2, 14.71, 9.25, 9.88, 10.98, 9.41, 8.57, 2.91, 7.91, 15.43, 10.71, 7.51, 5.92, 9.83, 16.76, 12.07, 18.02, 14.45, 14.94, 6.13, 16.17, 11.11, 15.66, 12.8, 10.78, 13.5, 12.05, 16.07, 7.82, 16.57, 3.43, 3.61, 1.7, 5.52, 7.14, 6.86, 4.71, 7.51, 7.02, 16.77, 11.52, 8.09, 10.92, 9.25, 7.65, 6.43, 4.57, 7.43, 9.55, 3.43], "cento_tg_sm": 19.0, "cento_tg_z": 2.29, "cento_mj_bg_sm": 55.6, "cento_mj_bg_z": 3.38, "cento_mj_tg_sm": 25.0, "cento_mj_tg_z": 2.93};
+  var svg = document.getElementById("sm-b-svg");
+  var btns = document.querySelectorAll(".sm-b-btn");
+  var L = 58, R = 685, T = 36, B = 222;
+  function el(tag, attrs, txt){
+    var n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (txt !== undefined) n.textContent = txt;
+    return n;
+  }
+  var VIEWS = {
+    cento_bg: {
+      title: "Layer B: Content-bearing bigrams appearing verbatim in Canonical Mark (62 LOO Mark chunks vs. Secret Mark)",
+      arr: D.cento_bg_dist, val: D.cento_bg_sm, xmin: 10, xmax: 55, bins: 18,
+      unit: "%", label: "Secret Mark: " + D.cento_bg_sm + "% (z = +" + D.cento_bg_z + ", 100th pct)",
+      refLabel: "62 genuine 181-word Mark chunks (leave-one-out)", color: "#b91c1c"
+    },
+    cento_tg: {
+      title: "Layer B: Content-bearing trigrams appearing verbatim in Canonical Mark (62 LOO Mark chunks vs. Secret Mark)",
+      arr: D.cento_tg_dist, val: D.cento_tg_sm, xmin: 0, xmax: 24, bins: 16,
+      unit: "%", label: "Secret Mark: " + D.cento_tg_sm + "% (z = +" + D.cento_tg_z + ", 100th pct)",
+      refLabel: "62 genuine 181-word Mark chunks (leave-one-out)", color: "#b91c1c"
+    },
+    criddle: {
+      title: "Layer A: Criddle rare-to-common ratio C1/(C1+C2+) vs. 484 authentic Clement 529-word chunks",
+      arr: D.criddle_dist, val: D.criddle_ms, xmin: 0.02, xmax: 0.26, bins: 20,
+      unit: "", label: "Mar Saba frame: " + D.criddle_ms + " (z = +" + D.criddle_z + ", p = 0.76)",
+      refLabel: "484 authentic Clement chunks (dead center)", color: "var(--teal)"
+    },
+    monroe: {
+      title: "Layer A: Mean Monroe Clement-distinctiveness log-odds vs. 484 authentic Clement chunks",
+      arr: D.monroe_dist, val: D.monroe_ms, xmin: -1.8, xmax: 1.0, bins: 22,
+      unit: "", label: "Mar Saba frame: " + D.monroe_ms + " (z = " + D.monroe_z + "; Non-Clement med = " + D.monroe_nonclem + ")",
+      refLabel: "484 authentic Clement chunks (no hyper-Clementine excess)", color: "var(--teal)"
+    }
+  };
+  function draw(k){
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    var v = VIEWS[k];
+    svg.appendChild(el("text", {x: L, y: 20, "font-size": 12, "font-weight": 600, fill: "var(--ink)"}, v.title));
+    var bw = (v.xmax - v.xmin) / v.bins;
+    var counts = new Array(v.bins).fill(0);
+    v.arr.forEach(function(x){
+      var bi = Math.floor((x - v.xmin) / bw);
+      if (bi >= 0 && bi < v.bins) counts[bi]++;
+    });
+    var maxC = Math.max.apply(null, counts) || 1;
+    function sx(x){ return L + (x - v.xmin) / (v.xmax - v.xmin) * (R - L); }
+    function sy(c){ return B - (c / maxC) * (B - T - 14); }
+    // Axes
+    svg.appendChild(el("line", {x1: L, x2: R, y1: B, y2: B, stroke: "var(--rule)"}));
+    counts.forEach(function(c, i){
+      var x0 = sx(v.xmin + i * bw);
+      var x1 = sx(v.xmin + (i + 1) * bw);
+      var y0 = sy(c);
+      svg.appendChild(el("rect", {x: x0 + 1, y: y0, width: Math.max(1, x1 - x0 - 2), height: B - y0, fill: "#94a3b8", opacity: 0.72}));
+    });
+    // Ticks
+    for (var ti = 0; ti <= 5; ti++){
+      var tv = v.xmin + ti * (v.xmax - v.xmin) / 5;
+      var tx = sx(tv);
+      svg.appendChild(el("line", {x1: tx, x2: tx, y1: B, y2: B + 4, stroke: "var(--muted)"}));
+      var txt = (v.unit === "%") ? tv.toFixed(0) + "%" : tv.toFixed(2);
+      svg.appendChild(el("text", {x: tx, y: B + 17, "text-anchor": "middle", "font-size": 10.5, fill: "var(--muted)"}, txt));
+    }
+    // Non-Clement marker on monroe
+    if (k === "monroe") {
+      var nx = sx(D.monroe_nonclem);
+      svg.appendChild(el("line", {x1: nx, x2: nx, y1: T + 18, y2: B, stroke: "#64748b", "stroke-dasharray": "3,3", "stroke-width": 1.3}));
+      svg.appendChild(el("text", {x: nx + 4, y: T + 32, "font-size": 10, fill: "#64748b"}, "Non-Clement median (" + D.monroe_nonclem + ")"));
+    }
+    // Target vertical line
+    var mx = sx(v.val);
+    svg.appendChild(el("line", {x1: mx, x2: mx, y1: T + 4, y2: B, stroke: v.color, "stroke-width": 2.4}));
+    var anchor = mx > (L + R) * 0.58 ? "end" : "start";
+    var lx = anchor === "end" ? mx - 6 : mx + 6;
+    svg.appendChild(el("text", {x: lx, y: T + 16, "text-anchor": anchor, "font-size": 11.5, "font-weight": 700, fill: v.color}, v.label));
+    svg.appendChild(el("text", {x: (L + R)/2, y: 258, "text-anchor": "middle", "font-size": 11, fill: "var(--muted)"}, v.refLabel));
+  }
+  btns.forEach(function(b){
+    b.addEventListener("click", function(){
+      btns.forEach(function(x){ x.classList.remove("is-on"); x.style.background = "transparent"; x.style.color = "var(--ink)"; });
+      b.classList.add("is-on"); b.style.background = "var(--copper)"; b.style.color = "#fff";
+      draw(b.getAttribute("data-k"));
+    });
+  });
+  draw("cento_bg");
+})();
+</script>
+</figure>
