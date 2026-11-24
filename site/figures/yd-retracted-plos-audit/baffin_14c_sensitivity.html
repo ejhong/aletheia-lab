@@ -1,0 +1,75 @@
+<figure class="fig" aria-label="Baffin Bay radiocarbon recalibration under Marine20 across Holocene and deglacial polar reservoir scenarios">
+<div class="fig-controls" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;align-items:center">
+  <span style="font-size:12px;color:var(--muted);margin-right:4px">Marine20 ΔR scenario:</span>
+  <button type="button" class="b14c-btn is-on" data-scen="S0_Holocene_Pearce2023" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:var(--copper);color:#fff;cursor:pointer">S0: Holocene ΔR (exact Pearce 2023)</button>
+  <button type="button" class="b14c-btn" data-scen="S1_Deglacial_plus200" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">S1: +200 yr deglacial</button>
+  <button type="button" class="b14c-btn" data-scen="S2_Deglacial_plus500" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">S2: +500 yr sea-ice</button>
+  <button type="button" class="b14c-btn" data-scen="S3_Stadial_plus800" style="font-size:12px;padding:4px 9px;border:1px solid var(--rule);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer">S3: +800 yr stadial</button>
+</div>
+<div class="fig-scroll">
+<svg id="b14c-svg" class="chart" viewBox="0 0 720 280" role="img" aria-label="Baffin Bay YDB calibrated ages vs Moore et al. SI Table S1" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+<figcaption><strong>Baffin Bay radiocarbon sensitivity across all four cores.</strong> Hollow grey diamonds show the calibrated means reported in Moore et al. (2025) <em>SI Table S1</em>—inflated by +297 to +608 yr by a flipped &Delta;R sign in Cores 64, 67, and 77 and accidental use of terrestrial IntCal20 in Core 52. Solid copper dots and 95.4% HPD bars show exact <code>Marine20</code> recalibrations. Even under Holocene &Delta;R (S0), Core 52 (12,404 cal BP) and Core 77 (11,889 cal BP) miss the Younger Dryas onset (red band, 12,900–12,700 cal BP); under +500 yr (S2) all four cores have P(YDB onset) = 0.000, and under +800 yr (S3) all four fall younger than the entire Younger Dryas (11,700 cal BP).</figcaption>
+<script>
+(function(){
+  var DATA = [{"cid": "52", "label": "Core 52 (625\u2013630 cm)", "bug": "IntCal20 bug (+608 yr)", "lab": "UGAMS-50555", "c14": 11120.0, "err": 40.0, "si_mu": 12992, "scens": {"S0_Holocene_Pearce2023": {"med": 12403.6, "lo": 12130.0, "hi": 12620.0, "p_ydb": 0.0005, "p_yd": 1.0, "dr": 71.0}, "S1_Deglacial_plus200": {"med": 12115.8, "lo": 11750.0, "hi": 12470.0, "p_ydb": 0.0, "p_yd": 0.9864, "dr": 271.0}, "S2_Deglacial_plus500": {"med": 11641.6, "lo": 11185.0, "hi": 12165.0, "p_ydb": 0.0, "p_yd": 0.4183, "dr": 571.0}, "S3_Stadial_plus800": {"med": 11221.8, "lo": 10595.0, "hi": 11835.0, "p_ydb": 0.0, "p_yd": 0.0679, "dr": 871.0}}}, {"cid": "64", "label": "Core 64 (312\u2013318 cm)", "bug": "\u2212\u0394R sign flip (+417 yr)", "lab": "UGAMS-61104", "c14": 11489.0, "err": 45.0, "si_mu": 13025, "scens": {"S0_Holocene_Pearce2023": {"med": 12626.8, "lo": 12450.0, "hi": 12780.0, "p_ydb": 0.1738, "p_yd": 0.9992, "dr": 218.0}, "S1_Deglacial_plus200": {"med": 12411.3, "lo": 12055.0, "hi": 12685.0, "p_ydb": 0.0092, "p_yd": 0.9999, "dr": 418.0}, "S2_Deglacial_plus500": {"med": 11993.0, "lo": 11470.0, "hi": 12480.0, "p_ydb": 0.0002, "p_yd": 0.8697, "dr": 718.0}, "S3_Stadial_plus800": {"med": 11543.1, "lo": 10970.0, "hi": 12255.0, "p_ydb": 0.0, "p_yd": 0.3167, "dr": 1018.0}}}, {"cid": "67", "label": "Core 67 (32\u201335 cm)", "bug": "\u2212\u0394R sign flip (+414 yr)", "lab": "UGAMS-61105", "c14": 11495.0, "err": 30.0, "si_mu": 13030, "scens": {"S0_Holocene_Pearce2023": {"med": 12632.7, "lo": 12465.0, "hi": 12770.0, "p_ydb": 0.1779, "p_yd": 0.9995, "dr": 218.0}, "S1_Deglacial_plus200": {"med": 12422.3, "lo": 12075.0, "hi": 12685.0, "p_ydb": 0.0087, "p_yd": 1.0, "dr": 418.0}, "S2_Deglacial_plus500": {"med": 12002.7, "lo": 11490.0, "hi": 12480.0, "p_ydb": 0.0001, "p_yd": 0.8824, "dr": 718.0}, "S3_Stadial_plus800": {"med": 11550.8, "lo": 10990.0, "hi": 12250.0, "p_ydb": 0.0, "p_yd": 0.3236, "dr": 1018.0}}}, {"cid": "77", "label": "Core 77 (161\u2013162 cm)", "bug": "\u2212\u0394R sign flip (+297 yr)", "lab": "UGAMS-51366", "c14": 10810.0, "err": 30.0, "si_mu": 12198, "scens": {"S0_Holocene_Pearce2023": {"med": 11889.0, "lo": 11620.0, "hi": 12185.0, "p_ydb": 0.0, "p_yd": 0.9357, "dr": 103.0}, "S1_Deglacial_plus200": {"med": 11570.3, "lo": 11235.0, "hi": 11925.0, "p_ydb": 0.0, "p_yd": 0.2565, "dr": 303.0}, "S2_Deglacial_plus500": {"med": 11154.7, "lo": 10675.0, "hi": 11645.0, "p_ydb": 0.0, "p_yd": 0.0147, "dr": 603.0}, "S3_Stadial_plus800": {"med": 10742.3, "lo": 10180.0, "hi": 11265.0, "p_ydb": 0.0, "p_yd": 0.0008, "dr": 903.0}}}];
+  var svg = document.getElementById("b14c-svg");
+  var btns = document.querySelectorAll(".b14c-btn");
+  var XMIN = 10000, XMAX = 13600;
+  var L = 168, R = 695, T = 36, B = 228;
+  function sx(v){ return L + (XMAX - v) / (XMAX - XMIN) * (R - L); }
+  function el(tag, attrs, txt){
+    var n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (txt !== undefined) n.textContent = txt;
+    return n;
+  }
+  function render(scen){
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    // Shaded YD (12900-11700) and narrow YDB onset (12900-12700)
+    svg.appendChild(el("rect", {x: sx(12900), y: T, width: sx(11700) - sx(12900), height: B - T, fill: "var(--faint)", opacity: "0.14"}));
+    svg.appendChild(el("rect", {x: sx(12900), y: T, width: sx(12700) - sx(12900), height: B - T, fill: "var(--copper)", opacity: "0.22"}));
+    svg.appendChild(el("text", {x: (sx(12900)+sx(12700))/2, y: T - 10, "text-anchor": "middle", class: "c-label-sm"}, "YDB onset"));
+    svg.appendChild(el("text", {x: (sx(12700)+sx(11700))/2, y: T - 10, "text-anchor": "middle", class: "c-sub"}, "Younger Dryas (12.9–11.7 ka)"));
+    svg.appendChild(el("text", {x: (sx(11700)+R)/2, y: T - 10, "text-anchor": "middle", class: "c-sub"}, "Early Holocene"));
+    for (var x = 13500; x >= 10000; x -= 500){
+      var px = sx(x);
+      svg.appendChild(el("line", {x1: px, x2: px, y1: T, y2: B, stroke: "var(--rule)", "stroke-dasharray": "2 4"}));
+      svg.appendChild(el("text", {x: px, y: B + 16, "text-anchor": "middle", class: "c-tick"}, (x/1000).toFixed(1) + " ka"));
+    }
+    svg.appendChild(el("line", {x1: L, x2: R, y1: B, y2: B, class: "c-zero"}));
+    var step = (B - T) / DATA.length;
+    DATA.forEach(function(d, idx){
+      var y = T + (idx + 0.5) * step;
+      var s = d.scens[scen];
+      svg.appendChild(el("text", {x: L - 10, y: y - 4, "text-anchor": "end", class: "c-group"}, d.label));
+      svg.appendChild(el("text", {x: L - 10, y: y + 11, "text-anchor": "end", class: "c-sub"}, d.lab + " (" + d.c14 + "±" + d.err + ")"));
+      // Arrow from SI Table S1 to Marine20 recalibrated
+      var xSi = sx(d.si_mu);
+      var xRec = sx(s.med);
+      svg.appendChild(el("line", {x1: xSi, x2: xRec, y1: y, y2: y, stroke: "var(--faint)", "stroke-width": "1.2", "stroke-dasharray": "3 3"}));
+      // 95% HPD bar
+      svg.appendChild(el("line", {x1: sx(s.hi), x2: sx(s.lo), y1: y, y2: y, stroke: "var(--copper)", "stroke-width": "4", "stroke-linecap": "round", opacity: "0.45"}));
+      // Hollow diamond for Moore et al SI Table S1
+      var pts = xSi + "," + (y-6) + " " + (xSi+6) + "," + y + " " + xSi + "," + (y+6) + " " + (xSi-6) + "," + y;
+      svg.appendChild(el("polygon", {points: pts, fill: "#fff", stroke: "var(--ink)", "stroke-width": "1.6"}));
+      // Solid dot for Marine20 recalibrated
+      svg.appendChild(el("circle", {cx: xRec, cy: y, r: "5.2", fill: "var(--copper)", stroke: "#fff", "stroke-width": "1.2"}));
+      var lblTxt = Math.round(s.med) + " BP (P_YDB=" + s.p_ydb.toFixed(2) + ")";
+      var lblX = Math.min(R - 4, sx(s.lo) + 6);
+      var anc = (sx(s.lo) + 120 > R) ? "end" : "start";
+      svg.appendChild(el("text", {x: anc === "end" ? sx(s.hi) - 6 : sx(s.lo) + 6, y: y + 4, "text-anchor": anc, class: "c-tick"}, lblTxt));
+    });
+    svg.appendChild(el("text", {x: L, y: 266, class: "c-axis"}, "Calibrated age (cal yr BP, older left to younger right). Hollow diamond = Moore et al. SI Table S1; copper dot/bar = exact Marine20 median & 95.4% HPD."));
+  }
+  btns.forEach(function(b){
+    b.addEventListener("click", function(){
+      btns.forEach(function(x){ x.classList.remove("is-on"); x.style.background = "transparent"; x.style.color = "var(--ink)"; });
+      b.classList.add("is-on"); b.style.background = "var(--copper)"; b.style.color = "#fff";
+      render(b.getAttribute("data-scen"));
+    });
+  });
+  render("S0_Holocene_Pearce2023");
+})();
+</script>
+</figure>
