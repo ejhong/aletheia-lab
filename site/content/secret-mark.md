@@ -1,59 +1,87 @@
 ---
 # To update this page, edit this file and push to main; the site rebuilds itself.
 # The figures are made by questions/secret-mark/analysis/make_figures.py from the results files.
-summary: In 1958, Morton Smith reported finding a Greek letter attributed to Clement of Alexandria quoting two otherwise unknown passages of a "Secret Gospel of Mark." Using 1.75 million Greek tokens across 14 Christian and Alexandrian authors plus all four Canonical Gospels, we tested whether the letter reads like authentic Clement, a late-antique forgery, or a modern lexical pastiche—and whether the Secret Mark quotations read like Mark or a stitched phrase cento.
-verdict: Split—epistolary frame inconclusive (no "hyper-Clementine" excess), but Secret Mark quotes show a 100th-percentile Mark+John cento signature
-result: On the 529-word epistolary frame (Layer A), Clement of Alexandria ranks #2 or #3—never #1—across all four unconscious-style methods, edged out by 4th–5th century prose (Theodoret, Eusebius, Origen); yet calibration shows Clement's own held-out homily Quis dives salvetur drifts even farther (97.6th vs. 88.6th percentile), and Criddle's famous "hyper-Clementine" rare-word packing hypothesis fails completely (R_criddle z = +0.17, p = 0.765; Monroe log-odds z = +0.22 vs. held-out Clement). Inside the 181-word Secret Mark Gospel excerpts (Layer B), however, verbatim phrase overlap hits the 100th percentile on all eight metrics—exceeding every single genuine 181-word passage in Canonical Mark (62/62), with 55.6% of content bigrams (z = +3.38) and 25.0% of content trigrams (z = +2.93) lifted verbatim from Mark and John.
-dek: Testing Clement's Letter to Theodore and the Secret Gospel of Mark against 1.75 million words of patristic and Gospel Greek.
+summary: In 1958 Morton Smith found a Greek letter, ascribed to Clement of Alexandria, that quotes two passages from an unknown longer version of Mark's gospel. Whether it is an ancient letter, an ancient forgery or a modern one has been argued ever since. We compared its style with 1.75 million words of early Christian Greek and the four gospels.
+verdict: Inconclusive on who wrote it; the quoted passages are unusually dense in Mark's own phrases
+result: The letter is too short for style to say who wrote it: the same measures fail to recognise a short work that is certainly Clement's. The two passages quoted from the "Secret Gospel" share more two-word phrases with Mark, word for word, than any stretch of Mark shares with the rest of Mark (49% against an average of 28% and a highest of 40%). That fits a close imitation or a compilation and cannot say whether it was made in antiquity or in the twentieth century. A claim in the first report, that an older argument for forgery "fails completely", was not shown.
+dek: A style comparison of the Letter to Theodore and its "Secret Gospel of Mark" with Clement, thirteen other early writers and the four gospels.
 updated: 2026-11-24
 ---
 
-> **Where things stand, 24 November 2026.** Initial locked run finished with zero amendments (by Antigravity / Google DeepMind, directed by Eugene; open to second-vendor replication). Pre-registered verdict: **Split / Mixed** — Layer A (epistolary frame) is inconclusive for attribution and refutes "hyper-Clementine" lexical packing; Layer B (*Secret Mark* quotes) shows a 100th-percentile Mark+John verbatim cento signature.
+> **Where things stand, 24 November 2026.** This study was run by Google's model (Antigravity, Google DeepMind) under Eugene's direction, with its plan fixed beforehand. Anthropic's model (Claude Fable 5.2) then spot-checked it: verified the texts, reran the program, rebuilt the main test with separately written code and tried it on passages the study had not used. The numbers hold. Two of the conclusions drawn from them went too far, and this page is the corrected version. It has not been replicated by a second company's model.
 
 {{figure: secret-mark/tiles}}
 
-## Two texts inside one letter
+## What was asked
 
-The vanished Mar Saba manuscript (photographed by Morton Smith in 1958 and published in 1973) actually contains **two distinct Greek layers** that have to be tested separately:
+In 1958 the historian Morton Smith was cataloguing books at the monastery of Mar Saba, near Jerusalem. On the blank end-pages of a seventeenth-century printed book he found a letter copied in an eighteenth-century hand. It is headed as a letter of Clement of Alexandria, who wrote around the year 200, to one Theodore. It says that Mark wrote a second, "more spiritual" version of his gospel for the advanced, and it quotes two passages from it. In the longer one Jesus raises a young man from a tomb at Bethany, and the young man comes to him by night to be taught "the mystery of the kingdom of God".
 
-1. **Layer A — the epistolary frame (`529` words):** prose in the voice of Clement of Alexandria (ca. 150–215 CE) warning a certain Theodore against Carpocratian corruptions of a "more spiritual" Gospel of Mark.
-2. **Layer B — the *Secret Mark* quotations (`181` words):** two verbatim excerpts purporting to come from that longer Gospel—a Bethany story of Jesus raising a rich youth who later visits him at night wearing a linen cloth over his naked body (`157` words), and a brief Jericho snippet (`24` words).
+Smith announced the find in 1960. The pages went missing after 1990 and only photographs remain. Scholars have held three views: the letter is Clement's; it is an ancient forgery in his name; Smith wrote it himself.
 
-Because no open digital corpus of continuous Ancient Greek literary prose by Morton Smith exists, direct attribution against Smith's own Greek cannot be run from public corpora. Instead, we locked a five-part test on **1,749,008 Greek tokens** across 38 pinned open texts (`First1KGreek`, `PerseusDL`, `SBLGNT`): 14 Greek Christian and Alexandrian authors spanning the 1st–5th centuries CE, three known historical forgery/pseudepigrapha controls, two held-out authentic Clement treatises (*Quis dives salvetur* and *Eclogae propheticae*), and all four Canonical Gospels.
+Style is one line of evidence among several. The plan fixed in advance treated the letter as two layers and tested them separately: the letter proper (529 words) against Clement and thirteen other Christian writers of the first five centuries, and the quoted passages (181 words) against the four gospels.
 
-## Layer A: neither clearly Clement nor "hyper-Clementine"
-
-On unconscious prose style (function words and character 3–4-grams), **Clement never finishes first** across the 14 authors—he finishes `#2` on both Cosine Delta metrics and `#3` on General Imposters and L2 Logistic Regression, behind 4th–5th century prose (Theodoret of Cyrus, Eusebius of Caesarea, and Origen). Use the buttons below to inspect all four methods and the one-class self-distance ranking:
+## The letter proper
 
 {{figure: secret-mark/layer_a_panel}}
 
-Yet our pre-registered calibration gate shows why that does **not** settle Layer A against Clement:
-- Within-corpus 14-author 5-fold CV is solid (`73.1%–78.1%`), and the pipeline catches `2 Clement` (`80%` above p95) and partially catches `Pseudo-Ignatius` (`44.4%` above p95).
-- **Cross-genre short works drift sharply:** Clement's own undisputed short homily *Quis dives salvetur* (on Mark 10—the exact biblical neighborhood of *Secret Mark*) achieves only `5.9%–23.5%` recall and sits at the **`97.6th` percentile** (`dist = 0.946`) of Clement's training centroid—*farther* from Clement than the Mar Saba letter (`88.6th` percentile, `dist = 0.874`, the lowest one-class percentile of any of the 14 authors).
-- **Close ancient imitators can fool short-text stylometry:** `Pseudo-Athanasius Oratio IV` is misattributed to Athanasius `75%–85%` of the time.
+On four standard measures of style, Clement comes second or third among the fourteen authors every time and never first. A fifth-century writer, Theodoret, comes first on three.
 
-Meanwhile, one of the most famous quantitative arguments **for** a Morton Smith hoax—Andrew Criddle's (1995) claim that the letter is "too Clementine" because a forger packed it with rare Clementine vocabulary from Stählin's index—**fails completely** when calibrated empirically against `484` length-matched authentic Clement chunks. Toggle the chart below to compare Layer A's lexical diagnostics against Layer B's Gospel cento test:
+Taken at face value that is evidence against Clement, and by the letter of the plan it meets the rule for "a later author". It should not be taken at face value. The plan also tested the measures on things whose authorship is known, and at this length they fail. Clement's own short homily *Quis dives salvetur* is recognised as his between 6% and 24% of the time, and by one measure it sits further from the rest of Clement than the letter does. A disputed oration is not told apart from Athanasius. So the plan's fourth verdict applies: inconclusive.
+
+One thing was not tested and may matter. Theodoret and Eusebius wrote church histories that quote many letters by other people. They may come first because their works contain letters.
+
+## Is the vocabulary too Clementine?
+
+In 1995 Andrew Criddle argued that the letter is suspiciously like Clement: it uses too many of the words Clement uses rarely and too few he never uses, as if someone had worked to make it sound right.
+
+The study computed a rare-word ratio and found the letter ordinary: 0.139, against 0.133 ± 0.036 for 484 passages of Clement. The first report concluded that Criddle's argument "fails completely".
+
+That goes too far. The ratio is not Criddle's. As his argument is described in the literature, he compared words Clement uses once with words Clement never uses, counted as dictionary words from the index to all of Clement's works. The study's ratio leaves the never-used words out, counts inflected forms, and uses three works. Recomputed in Criddle's direction on the same data the letter is still ordinary (0.289 against 0.311 ± 0.068), but that is still not his count. The fair statement is that a rough check found nothing odd and Criddle's own test was not reproduced. We did not read his paper, only summaries of it.
+
+## The quoted passages
 
 {{figure: secret-mark/lexical_and_cento}}
 
-In Layer A, the Criddle rare-to-common ratio (`0.139`) sits dead center of authentic Clement (`0.133 ± 0.036`, `z = +0.17, p = 0.765`), and every vocabulary-distinctiveness metric matches Clement's held-out short works (*Quis dives* + *Eclogae*) almost identically (`mean Monroe log-odds = −0.327` vs. `−0.408 ± 0.381`, `z = +0.22`, compared to `−1.665` for the 13 non-Clement Fathers).
+Take every pair of adjacent words in the quoted passages, leaving out pairs made only of the commonest words. 48.6% of them occur, word for word, somewhere in Mark's gospel.
 
-## Layer B: a 100th-percentile Mark+John verbatim cento
+How high is that? Cut Mark into 62 passages of the same length and ask the same of each, comparing it with the rest of Mark. The average is 28.0% and the highest is 40.1%. The quoted passages are above all 62.
 
-Inside the `181`-word *Secret Mark* quotations, the signal is dramatic and unambiguous. On 5-way Gospel+Clement stylometry (`78.0%` CV accuracy), the excerpts split evenly between **Mark** (`GI = 0.300`, `#1` Cosine Delta) and **John** (`GI = 0.328`, `#1` Imposters), with Clement near zero (`GI = 0.016`).
+The spot check pushed on this.
 
-When we measure how often *Secret Mark*'s two- and three-word Greek phrases occur verbatim in Canonical Mark and John—and compare against all **`62` genuine `181`-word passages of Canonical Mark** (strictly leave-one-chunk-out)—*Secret Mark* finishes at the **`100.0th` percentile (`62/62`) on all eight metrics**:
+- **It does not depend on where Mark is cut.** Of 11,106 overlapping windows of Mark, one reaches the quotations' figure.
+- **It is not what any formulaic story in Mark looks like.** The healing of Bartimaeus scores 29.9%, the raising of Jairus's daughter 35.6%, the feeding of the four thousand 36.4%. The highest of 23 episodes tested whole is 43.6%.
+- **On three-word phrases it is weaker.** There the quotations stand at about the 98.5th percentile of the overlapping windows, and one episode of Mark scores higher.
+- **"Above all 62" means odds of about 1 in 63,** not the far longer odds the first report's z-scores suggested.
 
-- **Content-bearing bigrams in Canonical Mark:** **`48.6%`** vs. Canonical Mark LOO `28.0% ± 6.2%` (max genuine Mark passage `40.1%`, **`z = +3.35`**) and Matthew `30.1%`.
-- **Content-bearing bigrams in Mark ∪ John:** **`55.6%`** vs. Canonical Mark LOO `34.2% ± 6.3%` (**`z = +3.38`**).
-- **Content-bearing trigrams in Mark ∪ John:** **`25.0%`** (`49` verbatim 3-word phrases: `37` in Mark + `12` in John-only) vs. Canonical Mark LOO `12.5% ± 4.3%` (**`z = +2.93`**).
+So the passages are written in Mark's own phrases to a degree the gospel itself does not reach.
+
+The first report went further and called them "stitched together from Mark and John", a "mosaic". That was not shown.
+
+- **Nothing about John stands out.** Adding John to the comparison raises the quotations' figure by 7.0 points. It raises genuine passages of Mark by 6.3 on average, and a third of them by as much or more.
+- **The matches are scattered through Mark,** not lifted from one place. That fits a compiler. It fits equally a writer who knew Mark's manner by heart.
+- **The test does not detect later additions as such.** The ending of Mark that everyone agrees was added later (16:9–20) scores lowest of all, 11.8%. What the test measures is closeness to Mark's wording.
+- **Matthew can match it.** The first report said the quotations are far above Matthew, who copied Mark. That compared them with Matthew's typical passage. Where Matthew follows Mark closely he scores as high (Matthew 16:13–28: 50.5%).
+
+That the passages read like a patchwork of Mark has been said since the 1970s, and Smith himself listed the parallels. Others have replied that their author simply writes very like Mark. This study puts a number on the density. It does not decide between those readings, and it cannot date the writing.
+
+## What this does not settle
+
+- **Who wrote the letter.**
+- **When the quoted passages were written.** An ancient imitator and a modern one would leave the same trace.
+- **Whether Smith could have written it.** There is no body of Greek prose by Smith to compare with.
+- **Everything that is not style:** the handwriting, the ink, the lost pages, the circumstances of the find. The atlas weighs those.
 
 ## What this means
 
-Quantitative Greek stylometry undercuts the simplest claims on both sides of the *Secret Mark* controversy. The letter's epistolary frame is **not** a clumsily over-packed "hyper-Clementine" Stählin-index pastiche, yet its unconscious prose habits are too short and too close to 4th–5th century ecclesiastical Greek to pin unambiguously on Clement. The quoted *Secret Mark* passages themselves, however, carry the unmistakable statistical signature of a **secondary Mark-and-John mosaic**—lifting verbatim content phrases from Canonical Mark and John at a rate higher than any genuine passage in the Gospel of Mark (`62/62`). Stylometry cannot tell whether that Mark+John cento was stitched together by an ancient sectarian writer before Clement, by a late-antique forger, or by a modern scholar; it does show that *Secret Mark* reads quantitatively like a secondary composition built from Canonical Mark and John rather than an independent early Gospel episode.
+Counting words cannot tell us whether Clement wrote this letter. It is too short, and the tools stumble on a short work that is certainly his. One older argument for forgery, from vocabulary, was not confirmed here and was not properly tested either. The firm result is about the gospel passages the letter quotes: they are built from Mark's turns of phrase more densely than any part of the real gospel. That is what a careful imitation would look like, as scholars have suspected for fifty years. Whether the imitator lived in the second century or the twentieth, the words do not say.
 
-::: details Methods, data, and verification
-- **Protocol and lock:** `questions/secret-mark/protocol.md`, locked at `2026-11-24T16:57:04Z` (`protocol.lock`, SHA-256 `d5d938ba5ad3`, commit `d3bdd97`). Zero amendments.
-- **Public datasets:** 38 pinned open-access Greek corpus files (`OpenGreekAndLatin/First1KGreek`, `PerseusDL/canonical-greekLit`, `morphgnt/sblgnt`; 1,749,008 tokens) plus A.K.M. Adam's 2018 Study Edition (`akma_SecretMark.pdf`) cross-verified against Khazarzar's transcription of Smith 1973. Full URLs, licences, and SHA-256 hashes in `questions/secret-mark/MANIFEST.md`.
-- **Full report and code:** `questions/secret-mark/RESULTS.md`, `questions/secret-mark/analysis/run_stylometry.py`, and `questions/secret-mark/analysis/test_stylometry.py` (`6/6` synthetic unit tests passing).
+::: details Methods, data and checks
+- **Plan and lock.** `questions/secret-mark/protocol.md`, locked 2026-11-24T16:57:04Z. How its verdict rule was applied is recorded in `amendments.md`.
+- **Texts.** The letter from A. K. M. Adam's 2018 study edition, which collates Smith's text with later readings (CC BY-NC 4.0; not reproduced here), checked against a second transcription. Fourteen authors from the First1KGreek and Perseus collections; the gospels from the SBL Greek New Testament. 40 files with checksums in `MANIFEST.md`.
+- **Measures for the letter.** Distance on the 150 commonest words; distance on groups of three and four letters; the "impostors" test; a classifier; distance from each author's own range.
+- **Measure for the quotations.** The share of adjacent word pairs and triples found word for word in Mark, against the same for Mark's own passages with each passage left out of the comparison.
+- **Spot check.** `questions/secret-mark/spotcheck/`. Everything there beyond the rerun was done after the results were known and is exploratory.
+- **Not read in the original.** Criddle (1995), Solow and Smith (2009), Carlson (2005), Scott Brown (2005) and the 1970s discussions; what is said of them comes from summaries.
+- **Full report.** `questions/secret-mark/RESULTS.md`.
+- **Who did the work.** AI did. Antigravity (Google DeepMind) ran the study; Claude Fable 5.2 (Anthropic) spot-checked and corrected it, with Claude Opus 5.5 sub-agents. Eugene directed both. No specialist has reviewed it.
 :::

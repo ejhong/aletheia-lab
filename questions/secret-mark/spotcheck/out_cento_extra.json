@@ -1,0 +1,77 @@
+{
+ "increment_add_john": {
+  "SM_increment": 0.07042253521126762,
+  "chunk_mean": 0.06253444786455417,
+  "chunk_sd": 0.028428821233656035,
+  "n_chunks_ge_SM": 21,
+  "n": 62
+ },
+ "increment_add_matthew": {
+  "SM_increment": 0.07042253521126762,
+  "chunk_mean": 0.20967888561740938,
+  "chunk_sd": 0.09723552177951832,
+  "n_chunks_ge_SM": 61,
+  "n": 62
+ },
+ "increment_add_luke": {
+  "SM_increment": 0.06338028169014087,
+  "chunk_mean": 0.15848404921979517,
+  "chunk_sd": 0.07911717851226951,
+  "n_chunks_ge_SM": 57,
+  "n": 62
+ },
+ "concentration_best400_share_of_matched_content_bigram_types": {
+  "Secret Mark quotes": [
+   0.19696969696969696,
+   66
+  ],
+  "Secret Mark Bethany": [
+   0.21311475409836064,
+   61
+  ],
+  "Mark LOO chunks (mean, max)": [
+   0.32403281566198444,
+   0.6216216216216216
+  ],
+  "Matt 15:32-39": [
+   0.8076923076923077,
+   52
+  ],
+  "Matt 14:15-21": [
+   0.7674418604651163,
+   43
+  ],
+  "Matt 16:13-28": [
+   0.8125,
+   128
+  ],
+  "Luke 18:18-23": [
+   0.9090909090909091,
+   44
+  ],
+  "Matt 9:18-26": [
+   0.6382978723404256,
+   47
+  ],
+  "Luke 18:35-43": [
+   0.75,
+   36
+  ],
+  "John 11:1-44": [
+   0.1978021978021978,
+   91
+  ]
+ },
+ "longer_ending_vs_Mt_Lk_Jn": {
+  "LE": 0.25,
+  "mark_chunks_mean": 0.5545649977025683,
+  "max": 0.7712418300653595,
+  "n_ge": 61,
+  "n": 61
+ },
+ "secret_mark_vs_Mt_Lk_Jn": {
+  "SM": 0.49295774647887325,
+  "n_mark_chunks_ge": 44,
+  "n": 61
+ }
+}
