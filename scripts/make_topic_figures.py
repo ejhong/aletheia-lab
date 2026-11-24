@@ -244,10 +244,10 @@ def minds():
 
 def deep_memory():
     tiles("topic-deep-memory", [
-        ("3", "tests of a shared past that do not depend on stories: two in ancient DNA, one in the sky", False),
+        ("5", "tests completed: two in ancient DNA, two in the ancient sky, and one matching flood myths to drowned coastlines", False),
         ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean; none unexplained", False),
-        ("After 201 BCE", "the date read from the empty patch in the classical sky: that of the catalogue's own makers", True),
-        ("Still open", "the stories and images themselves, which the atlas weighs", True)])
+        ("36% vs 34%", "flood-myth prevalence on narrow steep coasts vs the widest drowned Ice Age shelves — flat", True),
+        ("Still open", "whether local place-name memories or ancient words and images carry older traces, which the atlas weighs", True)])
     scorecard("topic-deep-memory", "scorecard", "What each study tested and found",
               ["The trace", "If there was a shared past", "What the record shows"], [
         (31, "population-y", "The Australasian signal in the Amazon", "The resemblance between some Amazonians and Australasians traces to a crossing of the Pacific.",
@@ -261,7 +261,10 @@ def deep_memory():
          "Not found", "The hole dates the catalogue, not the constellations", "no"),
         (92, "gobekli-star-map", "The star map on a pillar", "The animals on Pillar 43 at Göbekli Tepe match constellations so well that chance is ruled out.",
          "Three vision models, shown the paper's pictures blind, could not match even the scorpion to its constellation, so they could not serve as judges. The paper's odds rest on its authors' own ranking, which nobody else has checked.",
-         "Could not tell", "Blind machine judges were not up to it", "open")])
+         "Could not tell", "Blind machine judges were not up to it", "open"),
+        (44, "flood-myths", "Flood myths and drowned land", "Non-biblical Great Flood stories cluster along coastlines where wide Ice Age continental shelves went underwater.",
+         "Across 396 coastal cultures in Berezkin's catalog, flood stories are just as common on steep narrow coasts (36%) as beside the widest drowned shelves (34%), and slightly commoner inland (39%). On the same data, earthquake stories track seismic zones strongly.",
+         "Not found", "No global cluster where land drowned", "no")])
     (FIG / "topic-deep-memory" / "sky-plate.html").write_text(
         '<figure class="plate"><img src="../../assets/illustrations/ancient-skies.jpg" loading="lazy" width="1536" height="1024" '
         'alt="An engraving of a round chart of the southern sky, crowded with constellation figures around an empty circle at its centre, '
