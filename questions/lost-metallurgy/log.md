@@ -1,0 +1,3 @@
+# Log — Pre-Bronze-Age Metallurgy Side-Channel (#82)
+
+- **2026-11-24:** Activated #82 (`q/lost-metallurgy`). Downloaded 9 primary open files covering 6 independent archives (RECAP East Greenland 8 kyr ice core, GISP2 Central Greenland 47.4–40.4 ka ice core, Dome du Goûter French Alps 9.75 kyr ice core, EPICA Dome C East Antarctica 217 kyr Pb & Pb-isotope ice core, Füramoos S. Germany 14.3 kyr XRF & ICP-MS Pb-isotope peat bog, and Store Mosse S. Sweden 6.4 kyr Pb/Cu/Zn peat bog). Verified schemas, age spans, and SHA-256 hashes in `MANIFEST.md`. Wrote `protocol.md` and locked `protocol.lock` before computing any geochemical enrichment or anomaly statistics.
