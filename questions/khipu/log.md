@@ -1,0 +1,3 @@
+# Log — The Khipu Rosetta Hunt (#13)
+
+- **2026-11-24:** Activated #13 (`q/khipu`). Downloaded pinned Open Khipu Repository (`khipulab/open-khipu-repository`, commit `4039ca51f4de661d80d0160596309c983a62a9c7`, MIT licence): `khipu.db` (39.17 MB, SHA-256 `607913034a0f...`, 619 khipus, 54,403 cords, 110,677 knots) and `okr-kh-numbers.csv` (63.77 KB, SHA-256 `d0453883762b...`). Inspected SQLite schema only (`khipu_main`, `cord`, `cord_cluster`, `knot`, `knot_cluster`, `ascher_cord_color`, `archive_dc`), confirmed positive-control IDs (`PROVENANCE='Santa'`, `ARCHIVE_NUM=301` Puruchuco), wrote `MANIFEST.md` and `protocol.md`, and locked `protocol.lock` before running any analysis.
