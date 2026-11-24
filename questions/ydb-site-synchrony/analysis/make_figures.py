@@ -25,13 +25,13 @@ def write_tiles(d: dict) -> None:
     p2 = d["pillar2_kennett32_audit"]
     items = [
         (f"T = {p1['ward_wilson_T']:.0f} vs. {lst['ward_wilson_T']:.2f}",
-         "radiocarbon scatter across 9 direct-dated YDB sites vs. 5 single-year Laacher See volcano sites (p = 0.0005 vs. 0.998)", False),
+         "misfit to a single radiocarbon age: 9 claimed sites against 5 sites of the one-year Laacher See eruption. A spot check puts the first figure at 170 to 210 once dates are averaged with care; still far from one age", False),
         (f"{p2['n_tight_direct_le300']} of {p2['n_total_sites']}",
          "claimed YDB sites with both a direct date on the proxy layer and a 95% interval ≤ 300 yr wide (12.5%)", False),
         (f"{int(p2['W_50']['width_yr'])} yr",
          "calendar span (12,260–13,190 cal BP) where ≥ 50% of Kennett's 23 modeled sites overlap any placebo year", False),
-        ("Mixed / Unproven",
-         "raw dates reject a single year; selective old-wood pruning + wide intervals leave synchrony unfalsifiable", True),
+        ("Mixed",
+         "the precise dates are not one age, though charcoal older than its layer could explain that; most sites are too loosely dated to say", True),
     ]
     out = ['<div class="tiles">']
     for v, l, is_word in items:

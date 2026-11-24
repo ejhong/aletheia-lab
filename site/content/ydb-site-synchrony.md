@@ -1,16 +1,29 @@
 ---
 # To update this page, edit this file and push to main; the site rebuilds itself.
 # The figures are made by questions/ydb-site-synchrony/analysis/make_figures.py from the results files.
-summary: Proponents argue that Younger Dryas "impact layers" at 23–32 sites across four continents were laid down on the same day ~12,800 years ago. Here we recalibrate raw direct radiocarbon dates from 9 Northern Hemisphere sites on IntCal20 against a real single-year catastrophe (the Laacher See volcanic eruption), and audit dating precision and placebo-year overlap across all 32 claimed sites.
-verdict: Mixed—raw direct dates fail single-year synchrony, and 88% of sites are too loosely or indirectly dated to test it
-result: Against a real single-year Late Glacial benchmark—the Laacher See volcanic eruption across 5 localities (T = 0.42, p > 0.97, 5/5 overlap, 44-year spread)—raw direct radiocarbon dates from 9 Northern Hemisphere YDB sites scatter across 544 years (T = 630.6, p = 0.0005 under measurement+curve error and p = 0.0015 even with ±20 yr lab scatter and 50 yr old-wood offset; only 5/9 overlap). Choosing the most impact-favorable dates at three sites lowers T to 28.1 (still failing pure synchrony, p = 0.009, but passing the 50-year old-wood model, p = 0.157). Across all 32 claimed sites in Kennett et al. (2015), only 4 (12.5%) have both a direct proxy-layer date and a 95% interval ≤ 300 yr; the median interval is 940 years wide, and half the modeled sites still "overlap" arbitrary placebo dates spanning 930 years.
-dek: Benchmarking claimed Younger Dryas impact layers against a real single-year Late Glacial catastrophe—and testing how tightly all 32 sites actually pin down one year.
+summary: The hypothesis's authors say that thin layers at 23 to 32 sites on four continents were laid down by one event about 12,800 years ago. We took the radiocarbon dates from nine of those sites and asked whether they could be one age, using a real one-year event, the Laacher See eruption, to check the method. We also counted how many of the 32 sites are dated well enough to say.
+verdict: Mixed. The precise dates are not one age, though old wood could explain that; only 4 of 32 sites are dated tightly on the layer itself
+result: Dates from nine claimed sites do not fit a single radiocarbon age, and that holds whichever site is left out. With the dates most favourable to the hypothesis the misfit is small enough that charcoal a few decades older than the layer could explain it. A spot check found that four of the nine were dates of Clovis camps, not of the layer, and that the headline misfit was inflated by the way dates were averaged. The count that does not depend on any of this: of 32 claimed sites, four have a date on the layer itself that is good to 300 years. Three-quarters of the modelled sites would equally "match" an event 250 years earlier or later.
+dek: Are the claimed impact layers the same age, and how many of the 32 sites are dated well enough to tell? Spot-checked afterwards; not replicated.
 updated: 2026-11-24
 ---
 
-> **Where things stand, 24 November 2026.** Initial locked run finished with zero amendments (by Antigravity / Google DeepMind, directed by Eugene; open to second-vendor replication). Pre-registered verdict: **Mixed / underconstrained** (`ambiguous_or_mixed`—raw dates reject synchrony, favorable old-wood subset passes `M1`, and `W_50 = 930 yr` sits 70 years shy of the `1,000 yr` pre-registered threshold).
+> **Where things stand, 24 November 2026.** The locked run finished with no amendments (by Antigravity, Google DeepMind, directed by Eugene). The verdict by the rules fixed in advance is **mixed** (`ambiguous_or_mixed`). A spot check by Claude Fable 5.2 (Anthropic) reran the program, got the same numbers, and found the nine-site part weaker than first written: see the next section. No model from a second company has replicated the study, and none is planned for now.
 
 {{figure: ydb-site-synchrony/tiles}}
+
+## Spot check: what holds and what does not
+
+Anthropic's model checked this study after it was published and reran its program. Every number came out the same, and 37 dates compared with the source papers all match. The page has been corrected in these places. The figures are as first made.
+
+- **Four of the nine sites are not dated on the layer.** Murray Springs, Sheriden Cave, Indian Creek and Blackwater Draw enter with dates of the Clovis occupation. The hypothesis's own authors mark all four as having no date on the layer. With only the five sites that do, the result is the same.
+- **The headline misfit, T = 631, is inflated.** Nearly all of it comes from three sites, and at one of them twelve dates that disagree among themselves were averaged into a single very precise value. Done more carefully the figure is 170 to 210, and at least 141 with any one site left out. That is still far from one age (a true single age would give about 8).
+- **The comparison with the eruption is not like for like.** The eruption's dates are on trees it killed, most of them rings of one tree. The claimed layers are dated mostly on charcoal found in or near them, which can be older than the layer. The comparison shows the method works on ideal material and no more.
+- **The audit of all 32 sites holds,** and is the part to rely on.
+
+The hypothesis's authors hold that radiocarbon dates can make one day look like centuries, and that scatter of this kind cannot count against them. If so, the same dates cannot show the layers are one age either.
+
+The full list is in the study's `RESULTS.md`, and the checking script is in `questions/ydb-site-synchrony/spotcheck/`.
 
 ## What we tested and found
 
@@ -18,7 +31,7 @@ A centerpiece claim of the Younger Dryas Impact Hypothesis is that thin layers c
 
 We locked a two-pillar test before computing a single statistic on the real dates:
 
-1. **Direct-`¹⁴C` synchrony on IntCal20 with a real single-year positive control.** We took raw uncalibrated radiocarbon dates directly from claimed impact layers at `9` Northern Hemisphere sites (`3` continents), recalibrated every date on **IntCal20** with a flat prior, and tested whether their scatter fits a single calendar year under pure measurement + curve error (**M0**) or with generous inter-lab (`±20 yr`) and old-wood (`50 yr` mean) tolerances (**M1**). To make sure the test does not falsely reject real single-year deposits next to the Younger Dryas radiocarbon plateau, we ran the exact same test on `16` dates from `5` localities tied to the **Laacher See volcanic eruption (`13,006 ± 9 cal BP`)**.
+1. **Direct-`¹⁴C` synchrony on IntCal20 with a real single-year positive control.** We took raw uncalibrated radiocarbon dates from `9` Northern Hemisphere sites (`3` continents; at five of them the date is on the claimed layer, at four it is the date of a Clovis occupation), recalibrated every date on **IntCal20** with a flat prior, and tested whether their scatter fits a single calendar year under pure measurement + curve error (**M0**) or with generous inter-lab (`±20 yr`) and old-wood (`50 yr` mean) tolerances (**M1**). To make sure the test does not falsely reject real single-year deposits next to the Younger Dryas radiocarbon plateau, we ran the exact same test on `16` dates from `5` localities tied to the **Laacher See volcanic eruption (`13,006 ± 9 cal BP`)**.
 2. **Precision and placebo-year audit across all 32 claimed sites.** We parsed every site in Kennett et al. (2015, Fig. 2) to count how many actually have direct dates and tight (`≤ 300 yr`) intervals—and swept a fake "placebo impact year" across `14,000–11,500 cal BP` to measure how many sites still overlap centuries away from `12,800 BP`.
 
 ## Direct dates vs. a real single-year catastrophe
@@ -46,13 +59,13 @@ Auditing every row of Kennett et al. (2015, Fig. 2) shows why "23 sites overlap 
 - Only **`4 of 32` (`12.5%`)** combine a direct proxy-layer date with a `95% CI ≤ 300 yr` (Aalsterhut, Abu Hureyra, Arlington Canyon, Bull Creek).
 - Across the 23 modeled sites, the median 95% interval is **`940 years` wide** (ranging up to `9,475 yr` at Melrose, PA), and OxCal rejected **`46 of 354` dates (`13.0%`)**, climbing to **`28.8%`** in the Low quality tier.
 
-Drag the slider below to move the target year away from `12,800 cal BP`. Even **`±250 years`** away (`13,050` or `12,550 cal BP`), **`17 of 23` sites (`74%`)**—including every Medium and Low site—still overlap. Half or more of the modeled sites overlap arbitrary placebo dates across a **`930-year` span** (`12,260–13,190 cal BP`).
+Drag the slider below to move the target year away from `12,800 cal BP`. Even **`±250 years`** away (`13,050` or `12,550 cal BP`), **`17 of 23` sites (`74%`)**—including every Medium and Low site—still overlap; at `±500 years` about half do (`10` and `12` of `23`). Half or more of the modeled sites overlap arbitrary placebo dates across a **`930-year` span** (`12,260–13,190 cal BP`).
 
 {{figure: ydb-site-synchrony/placebo_overlap}}
 
 ## What this means
 
-When a real single-year catastrophe hits the Late Glacial landscape—like the Laacher See eruption just two centuries before the Younger Dryas—radiocarbon dates across distant sites snap onto the same narrow window (`T = 0.42`, `100%` overlap). The claimed Younger Dryas impact layers do not. Unfiltered direct dates scatter across more than five centuries (`T = 631`), while nearly nine out of ten of the 32 claimed sites lack a tightly constrained direct date on the proxy layer, leaving intervals so broad that three-quarters of modeled sites match dates 250 years off in either direction. Because selective old-wood filtering lets the tightest 9-site subset pass a generous `50-year` old-wood model (`p = 0.157`), the dates cannot *prove* that no single event occurred—but they fall far short of proving that 23 to 32 sites across four continents were laid down on the same day.
+A real one-year event of the same period, the Laacher See eruption, gives radiocarbon dates at five places that agree closely. The dates from the claimed Younger Dryas layers do not agree: the precise ones differ by more than their errors allow, whichever site is left out. That could mean the layers are of different ages. It could also mean that some of the charcoal dated is older than the layer it lies in, and with the dates most favourable to the hypothesis a few decades of that would be enough. These dates cannot tell the two apart. What can be said without that argument is how little the claim rests on: of 32 sites said to hold the same layer, four have a date on the layer itself that is good to 300 years, and three-quarters of the modelled sites would "match" an event 250 years earlier or later just as well.
 
 ::: details Methods, data, and verification
 - **Protocol and lock:** `questions/ydb-site-synchrony/protocol.md`, locked at `2026-11-24T05:54:16Z` (`protocol.lock`, SHA-256 `30d43acacdd3`). Zero amendments.
