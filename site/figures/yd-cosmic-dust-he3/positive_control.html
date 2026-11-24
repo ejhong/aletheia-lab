@@ -1,0 +1,112 @@
+<figure class="fig" aria-label="Real 8.2 Ma cosmic breakup dust shower compared to the Younger Dryas deglaciation on the same fold-change scale">
+<div class="he3-ctrl" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px;font-size:13px;">
+  <span style="color:var(--muted);font-weight:600;">Positive control ocean:</span>
+  <button type="button" id="he3pos-b926" class="he3-btn is-on" style="padding:4px 10px;border:1px solid var(--copper);background:var(--copper);color:#fff;border-radius:4px;cursor:pointer;font-size:12px;">Atlantic ODP 926B (2.31×, p=0.0001)</button>
+  <button type="button" id="he3pos-b757" class="he3-btn" style="padding:4px 10px;border:1px solid var(--rule);background:transparent;color:var(--ink);border-radius:4px;cursor:pointer;font-size:12px;">Indian ODP 757B (2.28×, p=0.0005)</button>
+</div>
+<div class="fig-scroll">
+<svg id="he3pos-svg" class="chart" viewBox="0 0 740 310" role="img" aria-label="Two-panel comparison of Veritas 8.2 Ma 3He_ET dust shower versus Younger Dryas 3He_ET flux" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+<figcaption>Left: a real cosmic breakup dust shower — the 8.2 Ma Veritas asteroid-family disruption (Farley et al. 2006) — drives extraterrestrial ³He flux more than twofold above baseline across two independent oceans (shaded band = 8.35–7.50 Ma). Right: across seven ²³⁰Th-normalized Pacific pelagic cores spanning 27–0 ka on the exact same fold-change axis, the Younger Dryas (13.5–11.5 ka, darker band; 15–10 ka, lighter band) stays flat or slightly below baseline (0.92× and 0.84×). Points above 4.2× are clipped at the top border with triangles.</figcaption>
+</figure>
+<script>
+(function() {
+  var DATA = {"v926": [{"a": 6.21, "y": 0.893, "inT": false}, {"a": 6.3, "y": 1.253, "inT": false}, {"a": 6.38, "y": 1.413, "inT": false}, {"a": 6.38, "y": 2.44, "inT": false}, {"a": 6.46, "y": 1.28, "inT": false}, {"a": 6.54, "y": 1.16, "inT": false}, {"a": 6.67, "y": 0.96, "inT": false}, {"a": 6.79, "y": 1.293, "inT": false}, {"a": 6.9, "y": 0.973, "inT": false}, {"a": 6.99, "y": 1.653, "inT": false}, {"a": 7.09, "y": 2.027, "inT": false}, {"a": 7.22, "y": 1.293, "inT": false}, {"a": 7.34, "y": 2.067, "inT": false}, {"a": 7.44, "y": 1.853, "inT": false}, {"a": 7.45, "y": 2.48, "inT": false}, {"a": 7.56, "y": 1.347, "inT": true}, {"a": 7.66, "y": 2.587, "inT": true}, {"a": 7.75, "y": 1.84, "inT": true}, {"a": 7.75, "y": 4.907, "inT": true}, {"a": 7.84, "y": 2.227, "inT": true}, {"a": 7.91, "y": 2.693, "inT": true}, {"a": 7.95, "y": 2.747, "inT": true}, {"a": 7.99, "y": 2.787, "inT": true}, {"a": 8.05, "y": 2.387, "inT": true}, {"a": 8.05, "y": 2.827, "inT": true}, {"a": 8.11, "y": 3.093, "inT": true}, {"a": 8.12, "y": 2.693, "inT": true}, {"a": 8.13, "y": 2.68, "inT": true}, {"a": 8.13, "y": 5.013, "inT": true}, {"a": 8.14, "y": 2.92, "inT": true}, {"a": 8.15, "y": 1.88, "inT": true}, {"a": 8.15, "y": 2.747, "inT": true}, {"a": 8.15, "y": 2.76, "inT": true}, {"a": 8.17, "y": 3.387, "inT": true}, {"a": 8.17, "y": 4.24, "inT": true}, {"a": 8.18, "y": 2.573, "inT": true}, {"a": 8.19, "y": 1.613, "inT": true}, {"a": 8.2, "y": 1.24, "inT": true}, {"a": 8.21, "y": 0.853, "inT": true}, {"a": 8.22, "y": 1.053, "inT": true}, {"a": 8.23, "y": 0.813, "inT": true}, {"a": 8.23, "y": 2.027, "inT": true}, {"a": 8.24, "y": 0.587, "inT": true}, {"a": 8.25, "y": 0.907, "inT": true}, {"a": 8.26, "y": 0.493, "inT": true}, {"a": 8.26, "y": 0.68, "inT": true}, {"a": 8.28, "y": 0.427, "inT": true}, {"a": 8.28, "y": 0.467, "inT": true}, {"a": 8.28, "y": 0.48, "inT": true}, {"a": 8.29, "y": 1.493, "inT": true}, {"a": 8.29, "y": 2.627, "inT": true}, {"a": 8.42, "y": 0.92, "inT": false}, {"a": 8.52, "y": 0.613, "inT": false}, {"a": 8.62, "y": 1.213, "inT": false}, {"a": 8.73, "y": 0.427, "inT": false}, {"a": 8.73, "y": 0.6, "inT": false}, {"a": 8.82, "y": 0.84, "inT": false}, {"a": 8.93, "y": 0.813, "inT": false}, {"a": 8.93, "y": 0.987, "inT": false}, {"a": 8.93, "y": 1.907, "inT": false}, {"a": 9.12, "y": 1.52, "inT": false}, {"a": 9.12, "y": 1.92, "inT": false}, {"a": 9.27, "y": 0.693, "inT": false}, {"a": 9.42, "y": 0.373, "inT": false}, {"a": 9.52, "y": 0.48, "inT": false}, {"a": 9.63, "y": 1.093, "inT": false}, {"a": 9.63, "y": 1.56, "inT": false}, {"a": 9.9, "y": 0.747, "inT": false}, {"a": 10.02, "y": 0.293, "inT": false}, {"a": 10.13, "y": 0.8, "inT": false}, {"a": 10.26, "y": 0.4, "inT": false}, {"a": 10.4, "y": 0.4, "inT": false}, {"a": 10.5, "y": 1.0, "inT": false}], "v757": [{"a": 6.2, "y": 1.294, "inT": false}, {"a": 6.349, "y": 1.353, "inT": false}, {"a": 6.508, "y": 1.059, "inT": false}, {"a": 6.664, "y": 1.588, "inT": false}, {"a": 6.813, "y": 0.765, "inT": false}, {"a": 6.968, "y": 1.059, "inT": false}, {"a": 7.119, "y": 1.0, "inT": false}, {"a": 7.331, "y": 1.0, "inT": false}, {"a": 7.45, "y": 1.412, "inT": false}, {"a": 7.543, "y": 0.941, "inT": true}, {"a": 7.727, "y": 1.882, "inT": true}, {"a": 7.819, "y": 2.235, "inT": true}, {"a": 7.912, "y": 2.765, "inT": true}, {"a": 8.004, "y": 3.118, "inT": true}, {"a": 8.22, "y": 6.0, "inT": true}, {"a": 8.331, "y": 0.706, "inT": true}, {"a": 8.438, "y": 0.529, "inT": false}, {"a": 8.498, "y": 0.529, "inT": false}, {"a": 8.54, "y": 1.118, "inT": false}, {"a": 8.582, "y": 0.471, "inT": false}, {"a": 8.671, "y": 0.941, "inT": false}, {"a": 8.699, "y": 0.882, "inT": false}, {"a": 8.733, "y": 0.824, "inT": false}, {"a": 8.766, "y": 0.412, "inT": false}, {"a": 8.8, "y": 1.471, "inT": false}, {"a": 8.909, "y": 0.294, "inT": false}, {"a": 9.001, "y": 1.0, "inT": false}, {"a": 9.185, "y": 1.0, "inT": false}, {"a": 9.352, "y": 1.294, "inT": false}, {"a": 9.52, "y": 0.647, "inT": false}, {"a": 9.687, "y": 0.706, "inT": false}, {"a": 10.064, "y": 0.529, "inT": false}, {"a": 10.214, "y": 1.941, "inT": false}, {"a": 10.412, "y": 0.412, "inT": false}], "yd": [{"a": 3.89, "y": 1.844, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 4.64, "y": 1.496, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 5.38, "y": 1.19, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 5.92, "y": 2.694, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 7.6, "y": 1.67, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 8.65, "y": 1.429, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 9.34, "y": 0.847, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 10.17, "y": 1.394, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 11.0, "y": 0.704, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 11.16, "y": 0.914, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 11.32, "y": 1.371, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 11.55, "y": 1.331, "c": "SO202-07-6", "inW1": true, "inW2": true}, {"a": 11.83, "y": 0.781, "c": "SO202-07-6", "inW1": true, "inW2": true}, {"a": 12.19, "y": 1.24, "c": "SO202-07-6", "inW1": true, "inW2": true}, {"a": 12.45, "y": 1.695, "c": "SO202-07-6", "inW1": true, "inW2": true}, {"a": 12.71, "y": 1.0, "c": "SO202-07-6", "inW1": true, "inW2": true}, {"a": 12.93, "y": 0.99, "c": "SO202-07-6", "inW1": true, "inW2": true}, {"a": 13.11, "y": 0.853, "c": "SO202-07-6", "inW1": true, "inW2": true}, {"a": 13.2, "y": 0.879, "c": "SO202-07-6", "inW1": true, "inW2": true}, {"a": 14.04, "y": 1.944, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 14.18, "y": 0.874, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 14.31, "y": 0.717, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 14.45, "y": 0.971, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 14.58, "y": 0.511, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 14.61, "y": 1.086, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 14.68, "y": 1.574, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 14.78, "y": 1.582, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 14.87, "y": 0.782, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 14.97, "y": 1.53, "c": "SO202-07-6", "inW1": false, "inW2": true}, {"a": 15.2, "y": 0.797, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 15.76, "y": 0.506, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 16.43, "y": 7.994, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 17.01, "y": 3.107, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 17.59, "y": 0.938, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 18.18, "y": 1.742, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 18.56, "y": 0.85, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 18.95, "y": 1.851, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 19.02, "y": 0.921, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 19.34, "y": 0.671, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 19.89, "y": 0.519, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 20.43, "y": 0.529, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 20.98, "y": 0.825, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 21.53, "y": 0.964, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 21.85, "y": 0.896, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 22.49, "y": 4.897, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 23.29, "y": 3.893, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 24.22, "y": 0.735, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 25.14, "y": 0.743, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 25.9, "y": 4.479, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 26.48, "y": 5.519, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 27.07, "y": 1.291, "c": "SO202-07-6", "inW1": false, "inW2": false}, {"a": 0.0, "y": 0.92, "c": "CR01", "inW1": false, "inW2": false}, {"a": 0.71, "y": 1.2, "c": "CR01", "inW1": false, "inW2": false}, {"a": 1.41, "y": 1.417, "c": "CR01", "inW1": false, "inW2": false}, {"a": 2.12, "y": 1.302, "c": "CR01", "inW1": false, "inW2": false}, {"a": 2.82, "y": 1.195, "c": "CR01", "inW1": false, "inW2": false}, {"a": 3.53, "y": 0.923, "c": "CR01", "inW1": false, "inW2": false}, {"a": 4.23, "y": 1.065, "c": "CR01", "inW1": false, "inW2": false}, {"a": 5.29, "y": 0.925, "c": "CR01", "inW1": false, "inW2": false}, {"a": 6.7, "y": 0.775, "c": "CR01", "inW1": false, "inW2": false}, {"a": 8.11, "y": 0.847, "c": "CR01", "inW1": false, "inW2": false}, {"a": 9.53, "y": 0.784, "c": "CR01", "inW1": false, "inW2": false}, {"a": 10.94, "y": 1.088, "c": "CR01", "inW1": false, "inW2": true}, {"a": 12.69, "y": 1.349, "c": "CR01", "inW1": true, "inW2": true}, {"a": 14.44, "y": 0.873, "c": "CR01", "inW1": false, "inW2": true}, {"a": 16.2, "y": 0.935, "c": "CR01", "inW1": false, "inW2": false}, {"a": 17.95, "y": 1.23, "c": "CR01", "inW1": false, "inW2": false}, {"a": 19.71, "y": 0.917, "c": "CR01", "inW1": false, "inW2": false}, {"a": 21.02, "y": 1.241, "c": "CR01", "inW1": false, "inW2": false}, {"a": 1.95, "y": 1.066, "c": "CR02", "inW1": false, "inW2": false}, {"a": 2.09, "y": 1.116, "c": "CR02", "inW1": false, "inW2": false}, {"a": 2.23, "y": 0.994, "c": "CR02", "inW1": false, "inW2": false}, {"a": 2.37, "y": 0.771, "c": "CR02", "inW1": false, "inW2": false}, {"a": 2.51, "y": 0.911, "c": "CR02", "inW1": false, "inW2": false}, {"a": 2.65, "y": 1.647, "c": "CR02", "inW1": false, "inW2": false}, {"a": 2.8, "y": 0.915, "c": "CR02", "inW1": false, "inW2": false}, {"a": 2.94, "y": 1.078, "c": "CR02", "inW1": false, "inW2": false}, {"a": 3.15, "y": 1.523, "c": "CR02", "inW1": false, "inW2": false}, {"a": 4.29, "y": 1.013, "c": "CR02", "inW1": false, "inW2": false}, {"a": 5.44, "y": 1.252, "c": "CR02", "inW1": false, "inW2": false}, {"a": 6.59, "y": 1.006, "c": "CR02", "inW1": false, "inW2": false}, {"a": 7.75, "y": 0.599, "c": "CR02", "inW1": false, "inW2": false}, {"a": 8.91, "y": 1.06, "c": "CR02", "inW1": false, "inW2": false}, {"a": 10.74, "y": 0.787, "c": "CR02", "inW1": false, "inW2": true}, {"a": 11.65, "y": 0.968, "c": "CR02", "inW1": true, "inW2": true}, {"a": 15.89, "y": 1.399, "c": "CR02", "inW1": false, "inW2": false}, {"a": 18.11, "y": 0.977, "c": "CR02", "inW1": false, "inW2": false}, {"a": 19.22, "y": 0.858, "c": "CR02", "inW1": false, "inW2": false}, {"a": 21.44, "y": 0.766, "c": "CR02", "inW1": false, "inW2": false}, {"a": 4.36, "y": 1.223, "c": "CR03", "inW1": false, "inW2": false}, {"a": 4.91, "y": 0.83, "c": "CR03", "inW1": false, "inW2": false}, {"a": 5.47, "y": 1.006, "c": "CR03", "inW1": false, "inW2": false}, {"a": 6.03, "y": 1.0, "c": "CR03", "inW1": false, "inW2": false}, {"a": 6.59, "y": 1.969, "c": "CR03", "inW1": false, "inW2": false}, {"a": 7.15, "y": 0.775, "c": "CR03", "inW1": false, "inW2": false}, {"a": 7.71, "y": 1.819, "c": "CR03", "inW1": false, "inW2": false}, {"a": 8.26, "y": 1.058, "c": "CR03", "inW1": false, "inW2": false}, {"a": 8.82, "y": 1.266, "c": "CR03", "inW1": false, "inW2": false}, {"a": 9.63, "y": 1.045, "c": "CR03", "inW1": false, "inW2": false}, {"a": 10.84, "y": 0.736, "c": "CR03", "inW1": false, "inW2": true}, {"a": 12.46, "y": 0.755, "c": "CR03", "inW1": true, "inW2": true}, {"a": 14.07, "y": 0.848, "c": "CR03", "inW1": false, "inW2": true}, {"a": 15.69, "y": 1.058, "c": "CR03", "inW1": false, "inW2": false}, {"a": 16.23, "y": 0.841, "c": "CR03", "inW1": false, "inW2": false}, {"a": 16.78, "y": 0.866, "c": "CR03", "inW1": false, "inW2": false}, {"a": 17.32, "y": 0.52, "c": "CR03", "inW1": false, "inW2": false}, {"a": 0.0, "y": 1.285, "c": "CR05", "inW1": false, "inW2": false}, {"a": 0.77, "y": 0.84, "c": "CR05", "inW1": false, "inW2": false}, {"a": 1.54, "y": 1.15, "c": "CR05", "inW1": false, "inW2": false}, {"a": 2.31, "y": 1.049, "c": "CR05", "inW1": false, "inW2": false}, {"a": 3.09, "y": 0.976, "c": "CR05", "inW1": false, "inW2": false}, {"a": 3.86, "y": 1.12, "c": "CR05", "inW1": false, "inW2": false}, {"a": 5.4, "y": 0.548, "c": "CR05", "inW1": false, "inW2": false}, {"a": 6.56, "y": 1.172, "c": "CR05", "inW1": false, "inW2": false}, {"a": 6.93, "y": 1.376, "c": "CR05", "inW1": false, "inW2": false}, {"a": 7.3, "y": 0.843, "c": "CR05", "inW1": false, "inW2": false}, {"a": 7.91, "y": 1.024, "c": "CR05", "inW1": false, "inW2": false}, {"a": 8.52, "y": 1.097, "c": "CR05", "inW1": false, "inW2": false}, {"a": 8.66, "y": 0.952, "c": "CR05", "inW1": false, "inW2": false}, {"a": 11.43, "y": 0.827, "c": "CR05", "inW1": false, "inW2": true}, {"a": 14.2, "y": 1.071, "c": "CR05", "inW1": false, "inW2": true}, {"a": 14.47, "y": 0.965, "c": "CR05", "inW1": false, "inW2": true}, {"a": 14.75, "y": 0.889, "c": "CR05", "inW1": false, "inW2": true}, {"a": 15.03, "y": 0.755, "c": "CR05", "inW1": false, "inW2": false}, {"a": 0.3, "y": 1.576, "c": "MANOP_B18", "inW1": false, "inW2": false}, {"a": 4.3, "y": 3.364, "c": "MANOP_B18", "inW1": false, "inW2": false}, {"a": 8.3, "y": 0.682, "c": "MANOP_B18", "inW1": false, "inW2": false}, {"a": 16.3, "y": 0.591, "c": "MANOP_B18", "inW1": false, "inW2": false}, {"a": 24.1, "y": 1.0, "c": "MANOP_B18", "inW1": false, "inW2": false}, {"a": 7.7, "y": 0.795, "c": "MANOP_B25", "inW1": false, "inW2": false}, {"a": 14.3, "y": 0.545, "c": "MANOP_B25", "inW1": false, "inW2": true}, {"a": 18.0, "y": 0.455, "c": "MANOP_B25", "inW1": false, "inW2": false}, {"a": 25.0, "y": 0.773, "c": "MANOP_B25", "inW1": false, "inW2": false}]};
+  var svg = document.getElementById("he3pos-svg");
+  var b926 = document.getElementById("he3pos-b926");
+  var b757 = document.getElementById("he3pos-b757");
+  var NS = "http://www.w3.org/2000/svg";
+  function el(tag, attrs, text) {
+    var n = document.createElementNS(NS, tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+  function render(which) {
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    var vPts = which === "926" ? DATA.v926 : DATA.v757;
+    var YMAX = 4.2;
+    var top = 36, bot = 258;
+    function sy(v) { return bot - Math.min(v, YMAX) / YMAX * (bot - top); }
+    // Y grid & labels
+    [0, 1, 2, 3, 4].forEach(function(g) {
+      var y = sy(g);
+      svg.appendChild(el("line", {x1: 48, x2: 342, y1: y, y2: y, stroke: g === 1 ? "var(--ink)" : "var(--rule)", "stroke-dasharray": g === 1 ? "4 3" : "", "stroke-width": g === 1 ? "1.2" : "0.7", opacity: g === 1 ? "0.55" : "0.6"}));
+      svg.appendChild(el("line", {x1: 416, x2: 722, y1: y, y2: y, stroke: g === 1 ? "var(--ink)" : "var(--rule)", "stroke-dasharray": g === 1 ? "4 3" : "", "stroke-width": g === 1 ? "1.2" : "0.7", opacity: g === 1 ? "0.55" : "0.6"}));
+      svg.appendChild(el("text", {x: 42, y: y + 4, "text-anchor": "end", class: "c-tick"}, g + "×"));
+      svg.appendChild(el("text", {x: 410, y: y + 4, "text-anchor": "end", class: "c-tick"}, g + "×"));
+    });
+    svg.appendChild(el("text", {x: 14, y: (top + bot) / 2, transform: "rotate(-90 14 " + ((top + bot) / 2) + ")", "text-anchor": "middle", class: "c-axis"}, "³He_ET flux / baseline median"));
+
+    // Panel 1: Veritas (10.5 -> 6.2 Ma, older on left)
+    var L1 = 48, R1 = 342;
+    function sx1(a) { return L1 + (10.5 - a) / (10.5 - 6.2) * (R1 - L1); }
+    svg.appendChild(el("rect", {x: sx1(8.35), y: top, width: sx1(7.50) - sx1(8.35), height: bot - top, fill: "var(--copper)", opacity: "0.18"}));
+    svg.appendChild(el("text", {x: (L1 + R1) / 2, y: 18, "text-anchor": "middle", class: "c-group"}, "Positive Control: Veritas Breakup (" + (which === "926" ? "ODP 926B" : "ODP 757B") + ")"));
+    svg.appendChild(el("text", {x: (sx1(8.35) + sx1(7.50)) / 2, y: top + 14, "text-anchor": "middle", class: "c-label-sm", fill: "var(--copper)"}, "8.2 Ma shower"));
+    // Draw line connecting sorted points
+    var path1 = vPts.map(function(p, i) { return (i ? "L" : "M") + sx1(p.a).toFixed(1) + "," + sy(p.y).toFixed(1); }).join(" ");
+    svg.appendChild(el("path", {d: path1, fill: "none", stroke: "var(--copper)", "stroke-width": "1.6", opacity: "0.75"}));
+    vPts.forEach(function(p) {
+      var cx = sx1(p.a), cy = sy(p.y);
+      var tip = (which === "926" ? "ODP 926B" : "ODP 757B") + " · " + p.a + " Ma|" + p.y.toFixed(2) + "× baseline";
+      var g = el("g", {class: "c-mark", tabindex: "0", "data-tip": tip});
+      if (p.y > YMAX) {
+        g.appendChild(el("polygon", {points: (cx-4)+","+(top+6)+" "+(cx+4)+","+(top+6)+" "+cx+","+top, fill: "var(--copper)"}));
+      } else {
+        g.appendChild(el("circle", {cx: cx, cy: cy, r: p.inT ? "3.6" : "2.7", fill: p.inT ? "var(--copper)" : "var(--faint)", stroke: "#fff", "stroke-width": "0.6"}));
+      }
+      svg.appendChild(g);
+    });
+    [10, 9, 8, 7].forEach(function(t) {
+      svg.appendChild(el("text", {x: sx1(t), y: bot + 16, "text-anchor": "middle", class: "c-tick"}, t + " Ma"));
+    });
+    svg.appendChild(el("text", {x: (L1 + R1) / 2, y: 294, "text-anchor": "middle", class: "c-axis"}, "Age (Ma, older → younger)"));
+
+    // Panel 2: Younger Dryas (27 -> 0 ka, older on left)
+    var L2 = 416, R2 = 722;
+    function sx2(a) { return L2 + (27.5 - a) / 27.5 * (R2 - L2); }
+    svg.appendChild(el("rect", {x: sx2(15.0), y: top, width: sx2(10.0) - sx2(15.0), height: bot - top, fill: "var(--copper)", opacity: "0.09"}));
+    svg.appendChild(el("rect", {x: sx2(13.5), y: top, width: sx2(11.5) - sx2(13.5), height: bot - top, fill: "var(--copper)", opacity: "0.22"}));
+    svg.appendChild(el("text", {x: (L2 + R2) / 2, y: 18, "text-anchor": "middle", class: "c-group"}, "Younger Dryas & Deglaciation (7 Pacific Cores)"));
+    svg.appendChild(el("text", {x: sx2(12.5), y: top + 14, "text-anchor": "middle", class: "c-label-sm", fill: "var(--copper)"}, "YD (13.5–11.5 ka)"));
+
+    // 2-kyr median curve
+    var bins = [];
+    for (var b = 1; b <= 26; b += 2) {
+      var vals = DATA.yd.filter(function(p) { return p.a >= b - 1 && p.a < b + 1; }).map(function(p) { return p.y; }).sort(function(x, y) { return x - y; });
+      if (vals.length >= 2) bins.push({a: b, y: vals[Math.floor(vals.length / 2)]});
+    }
+    bins.sort(function(x, y) { return y.a - x.a; });
+    var path2 = bins.map(function(p, i) { return (i ? "L" : "M") + sx2(p.a).toFixed(1) + "," + sy(p.y).toFixed(1); }).join(" ");
+    svg.appendChild(el("path", {d: path2, fill: "none", stroke: "var(--ink)", "stroke-width": "2.2"}));
+
+    DATA.yd.forEach(function(p) {
+      var cx = sx2(p.a), cy = sy(p.y);
+      var tip = p.c + " · " + p.a + " ka BP|" + p.y.toFixed(2) + "× core median";
+      var g = el("g", {class: "c-mark", tabindex: "0", "data-tip": tip});
+      if (p.y > YMAX) {
+        g.appendChild(el("polygon", {points: (cx-4)+","+(top+6)+" "+(cx+4)+","+(top+6)+" "+cx+","+top, fill: "var(--faint)"}));
+      } else {
+        g.appendChild(el("circle", {cx: cx, cy: cy, r: p.inW1 ? "3.6" : "2.6", fill: p.inW1 ? "var(--copper)" : (p.inW2 ? "#8c5d3c" : "var(--faint)"), opacity: p.inW1 ? "0.95" : "0.7", stroke: "#fff", "stroke-width": "0.5"}));
+      }
+      svg.appendChild(g);
+    });
+    [25, 20, 15, 10, 5, 0].forEach(function(t) {
+      svg.appendChild(el("text", {x: sx2(t), y: bot + 16, "text-anchor": "middle", class: "c-tick"}, t + " ka"));
+    });
+    svg.appendChild(el("text", {x: (L2 + R2) / 2, y: 294, "text-anchor": "middle", class: "c-axis"}, "Age (ka BP, older → younger)"));
+  }
+  b926.addEventListener("click", function() {
+    b926.style.background = "var(--copper)"; b926.style.color = "#fff"; b926.style.borderColor = "var(--copper)";
+    b757.style.background = "transparent"; b757.style.color = "var(--ink)"; b757.style.borderColor = "var(--rule)";
+    render("926");
+  });
+  b757.addEventListener("click", function() {
+    b757.style.background = "var(--copper)"; b757.style.color = "#fff"; b757.style.borderColor = "var(--copper)";
+    b926.style.background = "transparent"; b926.style.color = "var(--ink)"; b926.style.borderColor = "var(--rule)";
+    render("757");
+  });
+  render("926");
+})();
+</script>
