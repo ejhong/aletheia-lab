@@ -4,7 +4,7 @@
 # "atlas:" names the case in the Aletheia atlas that this topic bears on. The lab links to it and does not judge it.
 title: Deep memory
 summary: The lab's tests of claims about the deep past. Lost travellers, star maps older than history, flood stories as memory, a civilisation before the Ice Age ended, a disputed gospel, an unread script. Each test asks what trace the claim would have left that does not depend on reading a story the right way.
-questions: 31, 41, 85, 92, 44, 82, 88, 15, 12, 32, 7, 86, 45, 83, 91
+questions: 31, 41, 85, 92, 44, 82, 88, 84, 143, 15, 12, 32, 7, 86, 45, 83, 91
 order: 3
 updated: 2026-11-24
 image: ancient-crossings
@@ -78,6 +78,15 @@ The usual reply to "where are the ruins?" is that the sea rose 120 metres and co
 Both first reports claimed a clean "no". Spot checks withdrew that.
 
 Read more: [smelting before the Bronze Age](../../questions/lost-metallurgy/) and [farming before the Ice Age ended](../../questions/ice-age-farming/).
+
+## Are there unmapped Ice Age walls under the sea?
+
+Real Stone Age hunting walls do sit underwater—most famously the 971-metre *Blinkerwall* in the Western Baltic and 9,000-year-old caribou drive-lanes on Lake Huron's Alpena–Amberley Ridge. Two locked multibeam sonar scans tested whether public hydrographic grids hide unmapped prehistoric structures:
+
+- **U.S. ocean shelves at 2 m/pixel (`#84`).** Across `34.23 km²` of public NOAA bathymetry over four drowned Ice Age shelves (California's Santarosae, Block Island Sound, the Hudson Paleo-Channel, and the Florida Keys), a detector calibrated on Point Judith breakwater (`193 m`), `8/10` planted `0.70 m` walls, and a `60 m` sunken Key West ship found zero unmapped prehistoric walls, corners, or rings; all `39` unmasked ridges resolved visually to dipping Miocene bedrock strata, tidal sandbars, dredge mounds, or the modern wreck.
+- **Lake Huron & Western Baltic at 0.25–2 m/pixel (`#143`).** Moving straight into the two basins where genuine Stone Age stone walls are proven to exist (`16.49 km²` of `0.50–2.0 m` Lake Huron NOAA sonar + `5.49 km²` of `0.25–0.50 m` Western Baltic BSH slope grids, including repeated 2024∩2025 Fehmarn Belt surveys), the upgraded detector passed all four calibration gates (`11/12` planted `0.50 m` Huron drive-lanes recovered, `10/10` single-year Baltic trawl scars rejected, Thunder Bay shipwrecks resolved at `50 cm`), and again found zero unmapped prehistoric walls after 100% visual audit of hit-bearing Huron tiles and Baltic anomalies. Lake Huron hits resolved to Devonian limestone scarps, paleo-mesas, and karst pavement; the Baltic scan turned up multi-year persistent otter-board trawl scars in Fehmarn Belt plus one untrawled `54 m` wreck-and-scour anomaly in Kiel Bay (`54.5531° N, 10.2373° E`).
+
+Read more: [drowned Ice Age walls (2 m ocean shelves)](../../questions/drowned-walls/) and [sub-meter Lake Huron & Western Baltic sonar hunt](../../questions/drowned-walls-submeter/).
 
 ## Two disputed texts
 
