@@ -4,7 +4,7 @@
 # "atlas:" names the case in the Aletheia atlas that this topic bears on. The lab links to it and does not judge it.
 title: Deep memory
 summary: The lab's tests of claims about the deep past. Lost travellers, star maps older than history, flood stories as memory, a civilisation before the Ice Age ended, a disputed gospel, an unread script. Each test asks what trace the claim would have left that does not depend on reading a story the right way.
-questions: 31, 41, 85, 92, 44, 82, 88, 84, 15, 12, 13, 32, 7, 86, 45, 83, 91
+questions: 31, 41, 85, 92, 44, 82, 88, 84, 143, 15, 12, 13, 32, 7, 86, 45, 83, 91
 order: 3
 updated: 2026-11-24
 image: ancient-crossings
@@ -79,7 +79,9 @@ The usual reply to "where are the ruins?" is that the sea rose 120 metres and co
 
 All three first reports claimed a clean "no". Spot checks withdrew that.
 
-Read more: [smelting before the Bronze Age](../../questions/lost-metallurgy/), [farming before the Ice Age ended](../../questions/ice-age-farming/) and [walls on the drowned shelf](../../questions/drowned-walls/).
+- **Walls at finer resolution (`#143`).** Moving straight into the two basins where genuine Stone Age stone hunting structures are proven to exist—16.5 square kilometres of 0.5–2 m Lake Huron NOAA sonar (Alpena–Amberley Ridge and Thunder Bay) and 5.5 square kilometres of 0.25–0.5 m Western Baltic BSH slope grids (including repeated 2024∩2025 Fehmarn Belt surveys)—an upgraded detector passed all four locked calibration gates (11/12 planted 0.50 m Huron drive-lanes recovered, 10/10 single-year Baltic trawl scars rejected, Thunder Bay shipwrecks resolved at 50 cm) and found zero unmapped prehistoric walls after visual audit of every hit-bearing Huron tile and Baltic anomaly. Lake Huron hits resolved to Devonian limestone scarps, paleo-mesas and karst; the Baltic scan turned up multi-year persistent trawl grooves in Fehmarn Belt plus one untrawled 54 m wreck-and-scour anomaly in Kiel Bay (`54.5531° N, 10.2373° E`). *(First report; not yet independently spot-checked.)*
+
+Read more: [smelting before the Bronze Age](../../questions/lost-metallurgy/), [farming before the Ice Age ended](../../questions/ice-age-farming/), [walls on the drowned shelf](../../questions/drowned-walls/) and [sub-meter Lake Huron & Western Baltic sonar hunt](../../questions/drowned-walls-submeter/).
 
 ## Texts and records
 

@@ -1,0 +1,111 @@
+{
+  "issue": 143,
+  "audit_date": "2026-11-24",
+  "auditor": "Antigravity (Google DeepMind) direct visual inspection of rendered shaded-relief, BPI, slope, and 2024 vs. 2025 persistence PNGs",
+  "arm1_huron_visual_audit": {
+    "tiles_with_unmasked_hits": 18,
+    "tiles_visually_inspected": 18,
+    "coverage_pct": 100.0,
+    "total_unmasked_linear": 43,
+    "total_unmasked_rings": 1,
+    "total_v_funnels": 1,
+    "total_corners": 0,
+    "breakdown_by_classification": {
+      "bedrock_scarp_or_karst_limestone": 31,
+      "glacial_cobble_or_moraine_ridge": 8,
+      "sonar_swath_or_edge_artifact": 4,
+      "candidate_archaeological_structure": 0
+    },
+    "notable_tiles": [
+      {
+        "tile": "CTRL_HURON_WRECK_H13652",
+        "px_m": 0.5,
+        "classification": "charted_modern_shipwreck_control",
+        "note": "Crisp sunken wooden vessel hull with visible framing on glassy 50 cm lakebed (std BPI = 0.053 m, max BPI = +1.255 m, 5.9 m from NOAA ENC Wreck_pt)."
+      },
+      {
+        "tile": "CTRL_HURON_WRECK_F00862",
+        "px_m": 0.5,
+        "classification": "charted_modern_shipwreck_control",
+        "note": "Unmistakable ~70 m sunken steamer/schooner hull (+8.09 m relief, open cargo hold) sitting ~95 m SE of NOAA ENC point (outside pre-registered 70 m center gate radius, visually 100% clear)."
+      },
+      {
+        "tile": "CTRL_HURON_WRECK_W00499",
+        "px_m": 2.0,
+        "classification": "charted_modern_shipwreck_control",
+        "note": "Upright ~120 m sunken steel freighter on Alpena-Amberley Ridge (max BPI = +11.048 m, deep scour moat, 4.5 m from NOAA ENC Wreck_pt)."
+      },
+      {
+        "tile": "H2_H12964_08",
+        "px_m": 1.0,
+        "classification": "bedrock_scarp_or_karst_limestone",
+        "note": "Top-ranked 88.1 m linear ridge (45.1342N, -83.1881W, z=-8.8 m): razor-sharp scalloped Devonian Traverse Group limestone bedrock cuesta escarpment."
+      },
+      {
+        "tile": "H1_F00862_02",
+        "px_m": 0.5,
+        "classification": "glacial_cobble_or_moraine_ridge",
+        "note": "Rank #2 (108.8 m, 44.9897N, -83.2502W, z=-13.3 m): broad (~15-20 m) diffuse NW-SE natural glacial cobble/moraine ridge on smooth cobble plain."
+      },
+      {
+        "tile": "H3_RIDGE_11",
+        "px_m": 2.0,
+        "classification": "bedrock_scarp_or_karst_limestone",
+        "note": "Six Fathom Scarp dolomite cliff sweeping NW-SE across mid-lake Alpena-Amberley Ridge (z=-53.3 m); main cliff masked as SEAM_STEP, 2 lime hits are natural promontory noses."
+      },
+      {
+        "tile": "H3_RIDGE_17",
+        "px_m": 2.0,
+        "classification": "bedrock_scarp_or_karst_limestone",
+        "note": "Spectacular ~500 m semicircular submerged limestone paleo-mesa / concentric bedrock bench (-57 m rim dropping to -78 m basin); natural geological bedding rims."
+      },
+      {
+        "tile": "H4_LIDAR_02",
+        "px_m": 1.0,
+        "classification": "bedrock_scarp_or_karst_limestone",
+        "note": "Fractured/karsted Devonian limestone pavement (-10.4 m); accounts for 10 linear hits, the lone 61.6 m hollow ring (natural karst depression), and the lone 21.8 deg V-funnel (intersecting bedrock joints)."
+      }
+    ]
+  },
+  "arm2_baltic_visual_audit": {
+    "arm2a_hits_inspected": 4,
+    "arm2a_hits_total": 4,
+    "arm2b_hits_inspected": 7,
+    "arm2b_hits_total": 67,
+    "rings_inspected": 1,
+    "v_funnels_inspected": 1,
+    "breakdown_by_classification": {
+      "multiyear_persistent_trawl_or_anchor_scar": 67,
+      "raster_border_edge_artifact": 2,
+      "untrawled_obstruction_with_scour_comet_mark": 2,
+      "candidate_archaeological_structure": 0
+    },
+    "notable_features": [
+      {
+        "area": "BALTIC_Test4",
+        "px_m": 0.25,
+        "lat": 54.553115,
+        "lon": 10.237327,
+        "classification": "untrawled_obstruction_with_scour_comet_mark",
+        "note": "Non-trawl Kiel Bay seabed anomaly (53.8 m curved/winged structure, 14.6 deg slope, plus 26.6 m V-arm) with flared hydrodynamic sediment comet-mark wake and ~16 m x 5 m hull/debris object at SE flank, avoided by surrounding bottom-trawl lanes. Visually consistent with a modern small wreck or heavy obstruction with current scour tail rather than a Stone Age boulder wall."
+      },
+      {
+        "area": "BALTIC_Test2",
+        "px_m": 0.25,
+        "lat": 54.175011,
+        "lon": 11.364928,
+        "classification": "raster_border_edge_artifact",
+        "note": "Both linear hits sit along y=0 northern image edge; an isolated ~4 m bright circular glacial erratic or UXO object appears near center-bottom without linear wall morphology."
+      },
+      {
+        "area": "BALTIC_Fehmarn_24x25",
+        "px_m": 0.5,
+        "lat": 54.566577,
+        "lon": 10.774285,
+        "classification": "multiyear_persistent_trawl_or_anchor_scar",
+        "note": "All inspected top persistent 2024∩2025 linear tracks (#1-#3, #5-#6, #8) and the 21.9 m crossing ring display unmistakable beaded/skipping otter-board bottom-trawl grooves persisting > 1 year in cohesive Fehmarn Belt mud."
+      }
+    ]
+  },
+  "verdict": "Null — zero unmapped prehistoric stone walls, drive-lanes, or hunting enclosures confirmed across 21.98 km² of sub-meter to 2 m Lake Huron and Western Baltic sonar"
+}
