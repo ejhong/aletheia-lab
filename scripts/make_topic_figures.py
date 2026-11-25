@@ -222,10 +222,10 @@ def younger_dryas():
 # ---------------------------------------------------------------------------------------------------------------------
 def minds():
     tiles("topic-minds-and-machines", [
-        ("2", "famous arguments about minds, written out in Lean 4 and checked line by line", False),
-        ("68", "statements fixed in advance, read by outside models, then proved", False),
-        ("1", "assumption carries each argument once it is written out in full", False),
-        ("Both smaller", "than their slogans: each proves something real, and less than is claimed for it", True)])
+        ("3", "famous lines of argument about minds and machines, written out in Lean 4 and checked line by line", False),
+        ("82", "statements fixed in advance and proved; 68 were read by outside models first, 14 only afterwards", False),
+        ("2 of 3", "arguments where the checker found the one assumption that carries the weight", False),
+        ("All smaller", "than their slogans: each proves something real, and less than is claimed for it", True)])
     scorecard("topic-minds-and-machines", "scorecard", "What each study tested and found",
               ["The claim", "What it says", "What we found"], [
         (19, "godel-argument", "Penrose and Gödel", "Gödel's theorem shows that human mathematical insight is not the work of any machine.",
@@ -234,6 +234,9 @@ def minds():
         (66, "unfolding-argument", "The unfolding argument", "Any system with feedback loops has a loop-free twin that behaves the same, so a theory tying consciousness to loops is false or untestable.",
          "The twin exists for an experiment of fixed length, and needs one more part for every further step. With no limit on time there is no twin. All of it rests on behaviour being the only evidence about consciousness.",
          "Partly holds", "Valid for experiments of fixed length only", "partly"),
+        (67, "power-seeking", "Must a capable AI seek power?", "Theorems about rational choice show that any capable AI will act as a single-minded maximiser, gather power and resist being switched off.",
+         "Fourteen statements are proved, and six say what a published source says, among them the expected-utility theorem and the lemma behind \"optimal policies tend to seek power\". They describe an idealised agent, and their authors write that they do not prove future AI will be one. The study's counterexamples, meant to show which assumption each conclusion hangs on, were too small to show it.",
+         "Partly holds", "The theorems are real and conditional; the slogan does not follow", "partly"),
         (48, "anaesthetics-microtubules", "Anaesthetics and microtubules", "Anaesthetics switch consciousness off by settling into pockets in the microtubules of nerve cells.",
          "A computer fit of 35 gases into eight proteins shows nothing special about the microtubule protein. But it shows nothing special about the accepted targets either, and an unrelated protein does as well as any. The scores follow the size of the molecule.",
          "Could not tell", "The method cannot pick out any anaesthetic target", "open"),
