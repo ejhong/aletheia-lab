@@ -1,0 +1,8 @@
+KH0140 KH0483 None
+KH0121 KH0473 {'L': 17, 'tier': 'A', 'err_l1': 0.00339, 'f_exact': 0.9412, 'orient': 'rev', 'offset_a': 0, 'offset_b': 0}
+KH0097 KH0586 {'L': 8, 'tier': 'A', 'err_l1': 0.00538, 'f_exact': 0.75, 'orient': 'fwd', 'offset_a': 77, 'offset_b': 91}
+KH0192 KH0470 None
+KH0192 KH0469 None
+KH0362 KH0049 {'L': 23, 'tier': 'A', 'err_l1': 0.00095, 'f_exact': 0.8261, 'orient': 'fwd', 'offset_a': 40, 'offset_b': 76}
+KH0140/KH0483 full 15-cord window: None diff [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -27981, 0, 0]
+without cord 13: {'L': 14, 'n_distinct_nz_a': 14, 'n_distinct_nz_b': 14, 'sum_a': 45232, 'sum_b': 45232, 'f_exact': 1.0, 'f_near': 1.0, 'err_l1': 0.0, 'tier': 'A'}

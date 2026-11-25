@@ -1,0 +1,26 @@
+KH0302 UR065 Huaquerones 6
+KH0299 UR062 Huaquerones 22
+KH0314 UR077  12
+KH0306 UR069 Huaquerones 32
+KH0298 UR061 Huaquerones 41
+KH0307 UR070 Huaquerones 26
+KH0308 UR071 Huaquerones 26
+KH0309 UR072 Huaquerones 61
+KH0310 UR073  74
+KH0311 UR074 Huaquerones 66
+KH0312 UR075 Huaquerones 13
+KH0313 UR076 Huaquerones 24
+KH0315 UR078 Huaquerones 11
+KH0316 UR079 Huaquerones 30
+KH0317 UR080 Huaquerones 14
+KH0318 UR081 Huaquerones 6
+KH0319 UR082 Huaquerones 44
+KH0300 UR063  111
+KH0303 UR066 Huaquerones 32
+KH0305 UR068  73
+KH0301 UR064 Huaquerones 71
+KH0297 UR060 Huaquerones 112
+UR063 KH0300 UR073 KH0310 None
+UR064 KH0301 UR068 KH0305 {'L': 36, 'tier': 'A', 'err_l1': 0.00696, 'offset_a': 0, 'offset_b': 0, 'orient': 'fwd'}
+UR066 KH0303 UR067 KH0304 {'L': 32, 'tier': 'B', 'err_l1': 0.04976, 'offset_a': 0, 'offset_b': 0, 'orient': 'fwd'}
+UR063 KH0300 UR078 KH0315 {'L': 10, 'tier': 'A', 'err_l1': 0.0, 'offset_a': 100, 'offset_b': 0, 'orient': 'fwd'}

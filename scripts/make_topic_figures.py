@@ -222,10 +222,10 @@ def younger_dryas():
 # ---------------------------------------------------------------------------------------------------------------------
 def minds():
     tiles("topic-minds-and-machines", [
-        ("2", "famous arguments about minds, written out in Lean 4 and checked line by line", False),
-        ("68", "statements fixed in advance, read by outside models, then proved", False),
-        ("1", "assumption carries each argument once it is written out in full", False),
-        ("Both smaller", "than their slogans: each proves something real, and less than is claimed for it", True)])
+        ("3", "famous lines of argument about minds and machines, written out in Lean 4 and checked line by line", False),
+        ("82", "statements fixed in advance and proved; 68 were read by outside models first, 14 only afterwards", False),
+        ("2 of 3", "arguments where the checker found the one assumption that carries the weight", False),
+        ("All smaller", "than their slogans: each proves something real, and less than is claimed for it", True)])
     scorecard("topic-minds-and-machines", "scorecard", "What each study tested and found",
               ["The claim", "What it says", "What we found"], [
         (19, "godel-argument", "Penrose and Gödel", "Gödel's theorem shows that human mathematical insight is not the work of any machine.",
@@ -234,6 +234,9 @@ def minds():
         (66, "unfolding-argument", "The unfolding argument", "Any system with feedback loops has a loop-free twin that behaves the same, so a theory tying consciousness to loops is false or untestable.",
          "The twin exists for an experiment of fixed length, and needs one more part for every further step. With no limit on time there is no twin. All of it rests on behaviour being the only evidence about consciousness.",
          "Partly holds", "Valid for experiments of fixed length only", "partly"),
+        (67, "power-seeking", "Must a capable AI seek power?", "Theorems about rational choice show that any capable AI will act as a single-minded maximiser, gather power and resist being switched off.",
+         "Fourteen statements are proved, and six say what a published source says, among them the expected-utility theorem and the lemma behind \"optimal policies tend to seek power\". They describe an idealised agent, and their authors write that they do not prove future AI will be one. The study's counterexamples, meant to show which assumption each conclusion hangs on, were too small to show it.",
+         "Partly holds", "The theorems are real and conditional; the slogan does not follow", "partly"),
         (48, "anaesthetics-microtubules", "Anaesthetics and microtubules", "Anaesthetics switch consciousness off by settling into pockets in the microtubules of nerve cells.",
          "A computer fit of 35 gases into eight proteins shows nothing special about the microtubule protein. But it shows nothing special about the accepted targets either, and an unrelated protein does as well as any. The scores follow the size of the molecule.",
          "Could not tell", "The method cannot pick out any anaesthetic target", "open"),
@@ -244,9 +247,9 @@ def minds():
 
 def deep_memory():
     tiles("topic-deep-memory", [
-        ("9", "tests of claims about the deep past: travellers, star maps, flood stories, lost industries, a secret gospel and an unread script", False),
+        ("11", "studies of the deep past: travellers, star maps, flood stories, lost industries and walls, a secret gospel, an unread script and knotted cords", False),
         ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean; none unexplained", False),
-        ("4 of 9", "could not decide, because the method could not have seen the thing even if it were there", False),
+        ("5 of 11", "could not decide, because the method could not have seen the thing even if it were there", False),
         ("Still open", "the stories and images themselves, which the atlas weighs, and stories of particular drowned places", True)])
     scorecard("topic-deep-memory", "scorecard", "What each study tested and found",
               ["The trace", "The claim", "What the record shows"], [
@@ -271,12 +274,18 @@ def deep_memory():
         (88, "ice-age-farming", "Crop pollen in Ice Age mud", "Farming before 12,000 years ago left cereal pollen, field weeds and cleared forest in lake cores.",
          "No such signal. But the detector found 23% of known farming-era cores where the plan required half, and none in the Fertile Crescent when farming began there.",
          "Could not tell", "The detector failed its own test", "open"),
+        (84, "drowned-walls", "Walls on the drowned shelf", "People built in stone on land the sea later covered, and public sonar surveys show it.",
+         "Nothing unexplained in 34 square kilometres of United States shelf. But the detector finds a wall the size of the one known example, in the Baltic, less than one time in twenty.",
+         "Could not tell", "Too coarse to see such a wall", "open"),
         (15, "secret-mark", "The Secret Gospel of Mark", "The letter that quotes it is by Clement of Alexandria, and the quoted passages are an early part of Mark.",
          "The letter is too short for style to say who wrote it. The quoted passages share more phrases with Mark, word for word, than any stretch of Mark shares with the rest: what a close imitation would look like, with no date on it.",
          "Partly", "An unusually close echo of Mark; author unknown", "partly"),
         (12, "linear-a", "Linear A read as Semitic", "Read with the proposed sound values, the words of Minoan Crete are Semitic.",
          "They match Semitic roots as often as Greek words do, and so do Hebrew words. The test cannot tell a Semitic language from Greek, and the proposal's main evidence was not tested.",
-         "Could not tell", "The test cannot decide", "open")])
+         "Could not tell", "The test cannot decide", "open"),
+        (13, "khipu", "Copies among the khipus", "Some Inca knotted-cord records are copies of others, and a search of the published measurements can find them.",
+         "Five pairs share runs of numbers not found in the literature searched; one, in Paris and Lima, matches over about 174 cords. Of eight first reported, two were published in 2005 and one is a single khipu catalogued twice. The search missed a known copy.",
+         "Partly", "Real copies, to be confirmed on the objects", "partly")])
     (FIG / "topic-deep-memory" / "sky-plate.html").write_text(
         '<figure class="plate"><img src="../../assets/illustrations/ancient-skies.jpg" loading="lazy" width="1536" height="1024" '
         'alt="An engraving of a round chart of the southern sky, crowded with constellation figures around an empty circle at its centre, '

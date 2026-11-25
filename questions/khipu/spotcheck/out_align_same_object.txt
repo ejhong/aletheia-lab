@@ -1,0 +1,18 @@
+== eight study pairs
+KH0362(UR122,72) vs KH0049(AS038/HP036,108) fwd: aligned=37 spanA=(35, 71) spanB=(71, 107) nonzero=36 exact_nonzero=24 | cord length n=36 r=-0.20 median|dA-dB|=7.2cm median(dA-dB)=-5.8
+KH0192(UR1175,224) vs KH0470(UR233,126) fwd: aligned=101 spanA=(3, 103) spanB=(5, 125) nonzero=86 exact_nonzero=71 | cord length n=99 r=0.25 median|dA-dB|=24.0cm median(dA-dB)=+24.0
+KH0121(UR1107,29) vs KH0473(UR237,30) rev: aligned=29 spanA=(0, 28) spanB=(0, 29) nonzero=26 exact_nonzero=23 | cord length n=26 r=0.98 median|dA-dB|=1.5cm median(dA-dB)=+0.8
+KH0132(UR1118,15) vs KH0456(UR218,62) fwd: aligned=8 spanA=(1, 8) spanB=(6, 13) nonzero=8 exact_nonzero=7 | cord length n=8 r=0.19 median|dA-dB|=10.8cm median(dA-dB)=+0.2
+KH0128(UR1114,339) vs KH0137(UR1123,70) fwd: aligned=16 spanA=(34, 49) spanB=(35, 50) nonzero=10 exact_nonzero=10 | cord length n=16 r=0.18 median|dA-dB|=9.2cm median(dA-dB)=-9.2
+KH0097(UR1084,319) vs KH0586(HP055,189) fwd: aligned=174 spanA=(0, 183) spanB=(0, 188) nonzero=166 exact_nonzero=122 | cord length n=159 r=0.22 median|dA-dB|=6.5cm median(dA-dB)=+4.0
+KH0156(UR1140,180) vs KH0432(UR194,35) rev: aligned=9 spanA=(45, 53) spanB=(9, 17) nonzero=9 exact_nonzero=5 | cord length n=9 r=0.71 median|dA-dB|=13.0cm median(dA-dB)=+13.0
+KH0175(AS159,35) vs KH0190(AS173,13) fwd: aligned=7 spanA=(0, 6) spanB=(1, 7) nonzero=7 exact_nonzero=7 | cord length n=7 r=0.71 median|dA-dB|=4.0cm median(dA-dB)=+4.0
+== known duplicate in OKR concordance (same object, Ascher vs Urton)
+KH0140(AS125,16) vs KH0483(UR247,15) fwd: aligned=15 spanA=(0, 14) spanB=(0, 14) nonzero=15 exact_nonzero=14 | cord length n=15 r=0.92 median|dA-dB|=2.0cm median(dA-dB)=+2.0
+== Puruchuco copies (distinct objects, Urton & Brezine 2005)
+KH0305(UR068,73) vs KH0301(UR064,71) fwd: aligned=70 spanA=(0, 71) spanB=(0, 69) nonzero=50 exact_nonzero=41 | cord length n=70 r=0.39 median|dA-dB|=6.8cm median(dA-dB)=+6.5
+KH0315(UR078,11) vs KH0300(UR063,111) fwd: aligned=10 spanA=(0, 9) spanB=(100, 109) nonzero=6 exact_nonzero=6 | cord length n=9 r=-0.03 median|dA-dB|=3.5cm median(dA-dB)=-3.0
+KH0304(UR067,32) vs KH0303(UR066,32) fwd: aligned=23 spanA=(7, 29) spanB=(7, 29) nonzero=16 exact_nonzero=14 | cord length n=23 r=0.23 median|dA-dB|=7.5cm median(dA-dB)=-7.0
+== extra checks
+KH0469(UR232,125) vs KH0470(UR233,126) fwd: aligned=2 spanA=(48, 49) spanB=(102, 103) nonzero=2 exact_nonzero=2 | cord length n=2 r=nan median|dA-dB|=nancm median(dA-dB)=+nan
+KH0192(UR1175,224) vs KH0469(UR232,125) fwd: aligned=58 spanA=(157, 214) spanB=(46, 113) nonzero=45 exact_nonzero=32 | cord length n=56 r=0.09 median|dA-dB|=16.8cm median(dA-dB)=+16.2

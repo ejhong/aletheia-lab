@@ -1,0 +1,14 @@
+checked 18898
+   15584  agree
+    2663  other
+     492  decoder cannot represent an empty decimal place (e.g. 105 read as 15)
+     142  true value has an internal/trailing zero, other disagreement
+      17  one side zero
+  example other: 3002847 decoder 1 kvt 2 [['EE0']]
+  example other: 3003738 decoder 4 kvt 3 [['L4']]
+  example other: 3010731 decoder 121 kvt 123 [['S0'], ['S0', 'S0'], ['LL0']]
+  example other: 3010746 decoder 11 kvt 13 [['S0'], ['LL0']]
+  example other: 3011200 decoder 21 kvt 23 [['S0', 'S0'], ['LL0']]
+  example other: 3011201 decoder 261 kvt 263 [['S0', 'S0'], ['S0', 'S0', 'S0', 'S0', 'S0', 'S0'], ['LL0']]
+  example other: 3011394 decoder 61 kvt 63 [['S0', 'S0', 'S0', 'S0', 'S0', 'S0'], ['LL0']]
+  example other: 3011628 decoder 1 kvt 3 [['LL0']]
