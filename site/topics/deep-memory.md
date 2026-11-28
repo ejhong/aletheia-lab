@@ -6,7 +6,7 @@ title: Deep memory
 summary: The lab's tests of claims about the deep past. Lost travellers, star maps older than history, flood stories as memory, a civilisation before the Ice Age ended, a disputed gospel, an unread script. Each test asks what trace the claim would have left that does not depend on reading a story the right way.
 questions: 31, 41, 85, 92, 44, 82, 88, 84, 143, 15, 12, 13, 32, 7, 86, 45, 83, 91
 order: 3
-updated: 2026-11-24
+updated: 2026-11-27
 image: ancient-crossings
 image_alt: An engraving of a double-hulled voyaging canoe on the open ocean at night under the Milky Way.
 atlas: deep-memory
@@ -77,11 +77,11 @@ The usual reply to "where are the ruins?" is that the sea rose 120 metres and co
 
 - **Walls.** A Stone Age wall nearly a kilometre long lies on the floor of the Baltic, so such things exist. A search of 34 square kilometres of public sonar on the United States shelf found nothing unexplained. But the detector finds a wall of the Baltic wall's size less than one time in twenty, in data too coarse to show a line of boulders.
 
-All three first reports claimed a clean "no". Spot checks withdrew that.
+All four first reports claimed a clean "no". Spot checks withdrew that.
 
-- **Walls at finer resolution (`#143`).** Moving straight into the two basins where genuine Stone Age stone hunting structures are proven to exist—16.5 square kilometres of 0.5–2 m Lake Huron NOAA sonar (Alpena–Amberley Ridge and Thunder Bay) and 5.5 square kilometres of 0.25–0.5 m Western Baltic BSH slope grids (including repeated 2024∩2025 Fehmarn Belt surveys)—an upgraded detector passed all four locked calibration gates (11/12 planted 0.50 m Huron drive-lanes recovered, 10/10 single-year Baltic trawl scars rejected, Thunder Bay shipwrecks resolved at 50 cm) and found zero unmapped prehistoric walls after visual audit of every hit-bearing Huron tile and Baltic anomaly. Lake Huron hits resolved to Devonian limestone scarps, paleo-mesas and karst; the Baltic scan turned up multi-year persistent trawl grooves in Fehmarn Belt plus one untrawled 54 m wreck-and-scour anomaly in Kiel Bay (`54.5531° N, 10.2373° E`). *(First report; not yet independently spot-checked.)*
+- **Walls, looked at closer.** A second search went to the two places where drowned Stone Age hunting structures are known: Lake Huron and the western Baltic. It used finer public sonar, 22 square kilometres in all. Again nothing unexplained turned up. But one of the plan's own checks failed, so by its rule the result is inconclusive. And the real structures are rows of separate stones, mostly under a metre high. Planted in these same grids at their published sizes, such rows were found about once in 570 tries in Lake Huron and never in the Baltic. Neither known structure lies in the area searched. What is ruled out is a continuous bank of stone half a metre high, not a hunters' wall.
 
-Read more: [smelting before the Bronze Age](../../questions/lost-metallurgy/), [farming before the Ice Age ended](../../questions/ice-age-farming/), [walls on the drowned shelf](../../questions/drowned-walls/) and [sub-meter Lake Huron & Western Baltic sonar hunt](../../questions/drowned-walls-submeter/).
+Read more: [smelting before the Bronze Age](../../questions/lost-metallurgy/), [farming before the Ice Age ended](../../questions/ice-age-farming/), [walls on the drowned shelf](../../questions/drowned-walls/) and [the closer look in Lake Huron and the Baltic](../../questions/drowned-walls-submeter/).
 
 ## Texts and records
 
@@ -95,7 +95,7 @@ Read more: [Secret Mark](../../questions/secret-mark/), [is Linear A cracked?](.
 
 ## What the studies add up to
 
-Eleven studies so far. Four found no trace where a shared past should have left one: the DNA shows no travellers, the one star clock read so far shows the date of the people known to have set it, and flood stories are no commoner where the Ice Age sea took the most land. Five could not decide, because the tool was not up to the question: the carved pillar at Göbekli Tepe, the smoke, the crops, the walls and Linear A. Two found something: the passages quoted from the Secret Gospel are an unusually close echo of Mark, and some Inca khipus are copies of others, a few of which seem not to have been noticed.
+Twelve studies so far. Four found no trace where a shared past should have left one: the DNA shows no travellers, the one star clock read so far shows the date of the people known to have set it, and flood stories are no commoner where the Ice Age sea took the most land. Six could not decide, because the tool was not up to the question: the carved pillar at Göbekli Tepe, the smoke, the crops, the walls and Linear A. Two found something: the passages quoted from the Secret Gospel are an unusually close echo of Mark, and some Inca khipus are copies of others, a few of which seem not to have been noticed.
 
 That is not the same as showing the resemblances are coincidence. Every one of these tests has blind spots, set out below and on its own page. None of them touches the stories and images themselves, and the flood test says nothing about stories of particular drowned bays and islands, such as those collected around Australia.
 

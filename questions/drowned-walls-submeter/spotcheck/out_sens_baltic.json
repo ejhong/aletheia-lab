@@ -1,0 +1,229 @@
+{
+ "per_area": {
+  "study_+12deg_slope_bump_60m_random_untrawled|Test1": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "ridge_2.5m_x_0.6m_60m_(protocol_dims_as_elevation)|Test1": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "ridge_2m_x_0.5m_150m|Test1": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "blinkerwall_volume_matched_150m|Test1": {
+   "n": 30,
+   "found": 0,
+   "not_placeable": 0
+  },
+  "blinkerwall_upper_bound_150m|Test1": {
+   "n": 30,
+   "found": 22,
+   "not_placeable": 0
+  },
+  "blinkerwall_volume_matched_single_file_150m|Test1": {
+   "n": 30,
+   "found": 0,
+   "not_placeable": 0
+  },
+  "study_+12deg_slope_bump_60m_random_untrawled|Test2": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "ridge_2.5m_x_0.6m_60m_(protocol_dims_as_elevation)|Test2": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "ridge_2m_x_0.5m_150m|Test2": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "blinkerwall_volume_matched_150m|Test2": {
+   "n": 30,
+   "found": 0,
+   "not_placeable": 0
+  },
+  "blinkerwall_upper_bound_150m|Test2": {
+   "n": 30,
+   "found": 28,
+   "not_placeable": 0
+  },
+  "blinkerwall_volume_matched_single_file_150m|Test2": {
+   "n": 30,
+   "found": 0,
+   "not_placeable": 0
+  },
+  "study_+12deg_slope_bump_60m_random_untrawled|Test3": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "ridge_2.5m_x_0.6m_60m_(protocol_dims_as_elevation)|Test3": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "ridge_2m_x_0.5m_150m|Test3": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "blinkerwall_volume_matched_150m|Test3": {
+   "n": 30,
+   "found": 0,
+   "not_placeable": 0
+  },
+  "blinkerwall_upper_bound_150m|Test3": {
+   "n": 30,
+   "found": 23,
+   "not_placeable": 0
+  },
+  "blinkerwall_volume_matched_single_file_150m|Test3": {
+   "n": 30,
+   "found": 0,
+   "not_placeable": 0
+  },
+  "study_+12deg_slope_bump_60m_random_untrawled|Test4": {
+   "n": 30,
+   "found": 27,
+   "not_placeable": 0
+  },
+  "ridge_2.5m_x_0.6m_60m_(protocol_dims_as_elevation)|Test4": {
+   "n": 30,
+   "found": 29,
+   "not_placeable": 0
+  },
+  "ridge_2m_x_0.5m_150m|Test4": {
+   "n": 30,
+   "found": 26,
+   "not_placeable": 0
+  },
+  "blinkerwall_volume_matched_150m|Test4": {
+   "n": 30,
+   "found": 0,
+   "not_placeable": 0
+  },
+  "blinkerwall_upper_bound_150m|Test4": {
+   "n": 30,
+   "found": 24,
+   "not_placeable": 0
+  },
+  "blinkerwall_volume_matched_single_file_150m|Test4": {
+   "n": 30,
+   "found": 0,
+   "not_placeable": 0
+  },
+  "study_+12deg_slope_bump_60m_random_untrawled|Test5": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  },
+  "ridge_2.5m_x_0.6m_60m_(protocol_dims_as_elevation)|Test5": {
+   "n": 30,
+   "found": 30,
+   "not_placeable": 0
+  }
+ },
+ "totals": {
+  "study_+12deg_slope_bump_60m_random_untrawled": {
+   "n": 150,
+   "found": 147,
+   "rate": 0.98
+  },
+  "ridge_2.5m_x_0.6m_60m_(protocol_dims_as_elevation)": {
+   "n": 150,
+   "found": 149,
+   "rate": 0.993
+  },
+  "ridge_2m_x_0.5m_150m": {
+   "n": 120,
+   "found": 116,
+   "rate": 0.967
+  },
+  "blinkerwall_volume_matched_150m": {
+   "n": 120,
+   "found": 0,
+   "rate": 0.0
+  },
+  "blinkerwall_upper_bound_150m": {
+   "n": 120,
+   "found": 97,
+   "rate": 0.808
+  },
+  "blinkerwall_volume_matched_single_file_150m": {
+   "n": 120,
+   "found": 0,
+   "rate": 0.0
+  }
+ },
+ "model_info": {
+  "ridge_2.5m_x_0.6m_60m_(protocol_dims_as_elevation)|max_relief_on_1m_grid_m": [
+   0.579,
+   0.579
+  ],
+  "ridge_2.5m_x_0.6m_60m_(protocol_dims_as_elevation)|max_slope_added_deg": [
+   25.201,
+   28.578
+  ],
+  "ridge_2m_x_0.5m_150m|max_relief_on_1m_grid_m": [
+   0.473,
+   0.473
+  ],
+  "ridge_2m_x_0.5m_150m|max_slope_added_deg": [
+   20.272,
+   23.648
+  ],
+  "blinkerwall_volume_matched_150m": {
+   "n_stones": 258,
+   "mean_d": 0.37677090567237437,
+   "max_h": 0.7109714897505116,
+   "mean_h": 0.2260625434034246,
+   "volume_m3": 8.134787806335925
+  },
+  "blinkerwall_volume_matched_150m|max_relief_on_1m_grid_m": [
+   0.378,
+   0.94
+  ],
+  "blinkerwall_volume_matched_150m|max_slope_added_deg": [
+   19.434,
+   41.023
+  ],
+  "blinkerwall_upper_bound_150m": {
+   "n_stones": 150,
+   "mean_d": 0.9035599446980499,
+   "max_h": 0.8351565486937291,
+   "mean_h": 0.6324919612886347,
+   "volume_m3": 44.65251085660249
+  },
+  "blinkerwall_upper_bound_150m|max_relief_on_1m_grid_m": [
+   0.595,
+   0.681
+  ],
+  "blinkerwall_upper_bound_150m|max_slope_added_deg": [
+   28.857,
+   32.01
+  ],
+  "blinkerwall_volume_matched_single_file_150m": {
+   "n_stones": 258,
+   "mean_d": 0.37556548443701976,
+   "max_h": 0.7886079552790753,
+   "mean_h": 0.22533929066221184,
+   "volume_m3": 8.134787806335924
+  },
+  "blinkerwall_volume_matched_single_file_150m|max_relief_on_1m_grid_m": [
+   0.334,
+   0.844
+  ],
+  "blinkerwall_volume_matched_single_file_150m|max_slope_added_deg": [
+   17.483,
+   38.668
+  ]
+ }
+}

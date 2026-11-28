@@ -247,9 +247,9 @@ def minds():
 
 def deep_memory():
     tiles("topic-deep-memory", [
-        ("11", "studies of the deep past: travellers, star maps, flood stories, lost industries and walls, a secret gospel, an unread script and knotted cords", False),
+        ("12", "studies of the deep past: travellers, star maps, flood stories, lost industries and walls, a secret gospel, an unread script and knotted cords", False),
         ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean; none unexplained", False),
-        ("5 of 11", "could not decide, because the method could not have seen the thing even if it were there", False),
+        ("6 of 12", "could not decide, because the method could not have seen the thing even if it were there", False),
         ("Still open", "the stories and images themselves, which the atlas weighs, and stories of particular drowned places", True)])
     scorecard("topic-deep-memory", "scorecard", "What each study tested and found",
               ["The trace", "The claim", "What the record shows"], [
@@ -277,6 +277,9 @@ def deep_memory():
         (84, "drowned-walls", "Walls on the drowned shelf", "People built in stone on land the sea later covered, and public sonar surveys show it.",
          "Nothing unexplained in 34 square kilometres of United States shelf. But the detector finds a wall the size of the one known example, in the Baltic, less than one time in twenty.",
          "Could not tell", "Too coarse to see such a wall", "open"),
+        (143, "drowned-walls-submeter", "Walls, looked at closer", "Finer public sonar of Lake Huron and the Baltic, where drowned Stone Age hunting structures are known, shows more of them.",
+         "Nothing unexplained in 22 square kilometres. But one of the plan's checks failed, rows of stones the size of the real ones were almost never found when planted in the same grids, and no known structure lies in the area searched.",
+         "Could not tell", "Still too blunt for a row of stones", "open"),
         (15, "secret-mark", "The Secret Gospel of Mark", "The letter that quotes it is by Clement of Alexandria, and the quoted passages are an early part of Mark.",
          "The letter is too short for style to say who wrote it. The quoted passages share more phrases with Mark, word for word, than any stretch of Mark shares with the rest: what a close imitation would look like, with no date on it.",
          "Partly", "An unusually close echo of Mark; author unknown", "partly"),

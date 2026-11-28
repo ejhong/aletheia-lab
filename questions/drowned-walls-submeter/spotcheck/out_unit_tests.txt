@@ -1,0 +1,9 @@
+test_baltic_temporal_persistence_rejects_transient_trawl_keeps_wall (test_submeter_scan.TestSubmeterDetector.test_baltic_temporal_persistence_rejects_transient_trawl_keeps_wall) ... ok
+test_huron_detects_caribou_v_funnel_and_hollow_blind (test_submeter_scan.TestSubmeterDetector.test_huron_detects_caribou_v_funnel_and_hollow_blind) ... ok
+test_huron_recovers_50cm_wall_and_rejects_step_seam (test_submeter_scan.TestSubmeterDetector.test_huron_recovers_50cm_wall_and_rejects_step_seam) ... ok
+test_utm33n_meckelnburg_bay_conversion (test_submeter_scan.TestSubmeterDetector.test_utm33n_meckelnburg_bay_conversion) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.134s
+
+OK

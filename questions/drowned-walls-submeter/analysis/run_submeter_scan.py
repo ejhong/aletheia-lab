@@ -191,7 +191,7 @@ def fetch_huron_bag_tile(spec: dict[str, Any], size: int = 512) -> tuple[np.ndar
     last_err = None
     for attempt in range(4):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "AletheiaLab/1.0 (submeter-audit)"})
+            req = urllib.request.Request(url, headers={"User-Agent": "bathymetry-audit/1.0"})
             with urllib.request.urlopen(req, timeout=45) as r:
                 raw = r.read()
             if len(raw) < 4096:
@@ -232,7 +232,7 @@ def fetch_huron_enc_general() -> tuple[list[dict[str, Any]], pathlib.Path]:
             })
         )
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "AletheiaLab/1.0"})
+            req = urllib.request.Request(url, headers={"User-Agent": "bathymetry-audit/1.0"})
             with urllib.request.urlopen(req, timeout=20) as r:
                 d = json.loads(r.read().decode("utf-8"))
             for f in (d.get("features") or []):
