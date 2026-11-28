@@ -40,3 +40,18 @@ Dated entries, newest last: what was tried, what happened, what next.
 - Dry run of the final `run_all.py` with no new list present: the preprint's Tamil list scores +182 with the
   pictures shuffled against +188 unshuffled; leaving the jar sign unread takes it to +44.
 - Spending so far: $0.75 (two review calls).
+
+## 2026-11-27, after the lock (03:15 UTC on the 28th)
+
+- Locked and pushed (`90d86d6`).
+- Started ten translators and ten name compilers, each a fresh Claude Opus 5.5 session. Each was given one
+  sentence pointing at a task file that holds its filled prompt from `prompts/`, and the instruction to read
+  no other file. The ten translators have finished: entries filled, of 171: Tamil A 153, Tamil B 148,
+  Japanese 132, Greek 128, Old English 152, Hebrew 152, Nahuatl 108, Sumerian 106, Hawaiian 151, Finnish 150.
+  Their files are in `lists/<language>/words.json` and `numbers.json`.
+- One letter outside the sound table (the Tamil āytam): amendment 1.
+- Replication: Google's `gemini-4-neon` wrote its own program from `protocol.md`, `analysis/METHOD.md` and
+  `replication/FORMAT.md` alone (`replication/google/replicate_round1.py`, 482 lines, one request, $0.64). Run
+  on the preprint's Tamil and Sanskrit lists, splits 0 to 9, it gives the archive's numbers to two decimals and
+  the same readings in 20 of 20 splits. So two programs written independently of the preprint's agree with its
+  archive.

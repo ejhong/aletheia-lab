@@ -1,0 +1,392 @@
+{
+ "almond": [
+  "lam"
+ ],
+ "archer": [],
+ "arrow": [
+  "ti"
+ ],
+ "band": [
+  "dur"
+ ],
+ "banner": [
+  "šunir"
+ ],
+ "barb": [],
+ "barbel": [],
+ "basket": [
+  "pisaĝ",
+  "dusu"
+ ],
+ "bend": [
+  "gam"
+ ],
+ "body": [
+  "su"
+ ],
+ "boomerang": [
+  "illuru"
+ ],
+ "bow": [
+  "pan"
+ ],
+ "box": [
+  "pisaĝ"
+ ],
+ "branch": [
+  "pa"
+ ],
+ "breasts": [
+  "ubur"
+ ],
+ "bud": [],
+ "building": [
+  "e"
+ ],
+ "bunch": [],
+ "bundle": [
+  "sa"
+ ],
+ "cabinet": [],
+ "carrier": [],
+ "carry": [
+  "il"
+ ],
+ "catch": [
+  "dab"
+ ],
+ "catfish": [],
+ "chest": [
+  "gaba"
+ ],
+ "churn": [
+  "šakir"
+ ],
+ "claw": [
+  "umbin"
+ ],
+ "comb": [
+  "garig"
+ ],
+ "cover": [
+  "dul"
+ ],
+ "crab": [],
+ "crescent": [
+  "usakar"
+ ],
+ "crescents": [
+  "usakar"
+ ],
+ "cross": [],
+ "crossroads": [],
+ "crowd": [
+  "uĝ"
+ ],
+ "curve": [],
+ "curves": [],
+ "cut fish": [],
+ "diamond": [],
+ "door": [
+  "ig"
+ ],
+ "doorway": [
+  "ka"
+ ],
+ "dot": [],
+ "dried fish": [],
+ "drop": [],
+ "drum": [
+  "šem",
+  "ub"
+ ],
+ "ear": [
+  "ĝeštug"
+ ],
+ "eye": [
+  "igi"
+ ],
+ "eyes": [
+  "igi"
+ ],
+ "fan": [],
+ "field": [
+  "aša",
+  "gana"
+ ],
+ "fields": [
+  "aša",
+  "gana"
+ ],
+ "fill": [
+  "si"
+ ],
+ "fin": [],
+ "fire": [
+  "izi"
+ ],
+ "fish": [
+  "ku"
+ ],
+ "fish trap": [],
+ "fishing": [],
+ "flag": [
+  "šunir"
+ ],
+ "fork": [],
+ "forked stick": [],
+ "frame": [],
+ "gate": [
+  "ka"
+ ],
+ "grain": [
+  "še"
+ ],
+ "grid": [],
+ "hand": [
+  "šu"
+ ],
+ "handle": [],
+ "heads": [
+  "saĝ"
+ ],
+ "heap": [
+  "guru"
+ ],
+ "hearth": [
+  "kine"
+ ],
+ "hill": [
+  "du"
+ ],
+ "hills": [
+  "du"
+ ],
+ "hook": [],
+ "horns": [
+  "si"
+ ],
+ "house": [
+  "e"
+ ],
+ "hunter": [],
+ "hut": [],
+ "jar": [
+  "dug"
+ ],
+ "junction": [],
+ "kneel": [
+  "gam"
+ ],
+ "ladder": [
+  "kun"
+ ],
+ "lamp": [],
+ "lance": [
+  "šukur"
+ ],
+ "leaf": [
+  "pa"
+ ],
+ "leaves": [
+  "pa"
+ ],
+ "lid": [],
+ "lightning": [
+  "nimgir"
+ ],
+ "line": [],
+ "lizard": [
+  "emešid"
+ ],
+ "load": [
+  "gun"
+ ],
+ "man": [
+  "lu",
+  "nita"
+ ],
+ "mark": [],
+ "meet": [],
+ "moon": [
+  "itud"
+ ],
+ "moons": [
+  "itud"
+ ],
+ "mother": [
+  "ama"
+ ],
+ "mountains": [
+  "kur",
+  "ḫursaĝ"
+ ],
+ "net": [
+  "sa"
+ ],
+ "nets": [
+  "sa"
+ ],
+ "pair": [
+  "tab"
+ ],
+ "paw": [],
+ "peaks": [],
+ "pedestal": [
+  "barag"
+ ],
+ "pennant": [
+  "šunir"
+ ],
+ "person": [
+  "lu"
+ ],
+ "pile": [
+  "guru"
+ ],
+ "pincer": [],
+ "pincers": [],
+ "pipal": [],
+ "plant": [
+  "u"
+ ],
+ "point": [],
+ "pole": [
+  "dim"
+ ],
+ "pond": [
+  "pu"
+ ],
+ "pot": [
+  "dug"
+ ],
+ "pupil": [],
+ "raise": [
+  "il"
+ ],
+ "rake": [],
+ "roof": [
+  "ur"
+ ],
+ "roots": [
+  "suḫuš"
+ ],
+ "scale": [],
+ "seed": [
+  "numun"
+ ],
+ "seeds": [
+  "numun"
+ ],
+ "sheaf": [],
+ "shell": [],
+ "shoot": [],
+ "shrine": [
+  "eš"
+ ],
+ "sit": [
+  "tuš"
+ ],
+ "snake": [
+  "muš"
+ ],
+ "spear": [
+  "šukur"
+ ],
+ "spikes": [],
+ "split": [
+  "dar"
+ ],
+ "spokes": [],
+ "spot": [],
+ "sprout": [],
+ "stack": [],
+ "staff": [
+  "ĝidru"
+ ],
+ "stand": [
+  "gub"
+ ],
+ "standard": [
+  "šunir"
+ ],
+ "star": [
+  "mul"
+ ],
+ "stick": [
+  "ĝeš"
+ ],
+ "stir": [
+  "ḫi"
+ ],
+ "stones": [
+  "na"
+ ],
+ "stool": [
+  "guza"
+ ],
+ "stroke": [],
+ "strokes": [],
+ "sun": [
+  "utu"
+ ],
+ "tally": [],
+ "teeth": [
+  "zu"
+ ],
+ "tent": [
+  "zalamĝar"
+ ],
+ "three": [
+  "eš"
+ ],
+ "tier": [],
+ "tongs": [],
+ "trap": [
+  "sa"
+ ],
+ "tree": [
+  "ĝeš"
+ ],
+ "triangles": [],
+ "trident": [],
+ "tuft": [],
+ "turn": [
+  "bala"
+ ],
+ "twig": [
+  "pa"
+ ],
+ "two": [
+  "min"
+ ],
+ "vein": [
+  "sa"
+ ],
+ "vessel": [
+  "dug"
+ ],
+ "walker": [],
+ "wall": [
+  "bad"
+ ],
+ "walls": [
+  "bad"
+ ],
+ "waves": [],
+ "wheel": [
+  "umbin"
+ ],
+ "whiskers": [],
+ "woman": [
+  "munus"
+ ],
+ "worker": [
+  "ĝuruš",
+  "eren"
+ ],
+ "yoke": [
+  "šudul"
+ ],
+ "zigzag": []
+}

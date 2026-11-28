@@ -6,7 +6,12 @@
   "REFERENCE": "the Tamil Lexicon (University of Madras), the Dravidian Etymological Dictionary and indexes of names in the Sangam poems and the Tamil-Brahmi inscriptions",
   "LOANS": "no Sanskrit or Prakrit loans",
   "ROMANISATION": "the transliteration of the Tamil Lexicon and the Dravidian Etymological Dictionary (ā ī ū ē ō, ṅ ñ ṇ ṉ, ṭ ṟ, ḷ ḻ)",
-  "spelling_map": []
+  "spelling_map": [
+   [
+    "ḵ",
+    "ḥ"
+   ]
+  ]
  },
  "tamil_fresh_b": {
   "role": "the preprint's language, second list built afresh, by other sessions",
@@ -15,7 +20,12 @@
   "REFERENCE": "the Tamil Lexicon (University of Madras), the Dravidian Etymological Dictionary and indexes of names in the Sangam poems and the Tamil-Brahmi inscriptions",
   "LOANS": "no Sanskrit or Prakrit loans",
   "ROMANISATION": "the transliteration of the Tamil Lexicon and the Dravidian Etymological Dictionary (ā ī ū ē ō, ṅ ñ ṇ ṉ, ṭ ṟ, ḷ ḻ)",
-  "spelling_map": []
+  "spelling_map": [
+   [
+    "ḵ",
+    "ḥ"
+   ]
+  ]
  },
  "japanese": {
   "role": "control; the language of the public rebuttal",
