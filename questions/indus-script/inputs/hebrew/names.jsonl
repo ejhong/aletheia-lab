@@ -1,0 +1,600 @@
+{"name": "Yahweh", "type": "deity", "morphemes": ["yahveh"], "source": "Exodus", "weight": 1}
+{"name": "ʾĒl", "type": "deity", "morphemes": ["ēl"], "source": "Genesis", "weight": 1}
+{"name": "ʾElōah", "type": "deity", "morphemes": ["elōah"], "source": "Job", "weight": 1}
+{"name": "ʿElyōn", "type": "deity", "morphemes": ["elyōn"], "source": "Genesis", "weight": 1}
+{"name": "ʾĒl ʿŌlām", "type": "deity", "morphemes": ["ēl", "ōlām"], "source": "Genesis", "weight": 1}
+{"name": "ʾĒl Rōʾī", "type": "deity", "morphemes": ["ēl", "rāāh"], "source": "Genesis", "weight": 1}
+{"name": "ʾĒl Berīt", "type": "deity", "morphemes": ["ēl", "berīt"], "source": "Judges", "weight": 1}
+{"name": "ʾĒl Šadday", "type": "deity", "morphemes": ["ēl", "śadday"], "source": "Genesis", "weight": 1}
+{"name": "ʾĒl ʿElyōn", "type": "deity", "morphemes": ["ēl", "elyōn"], "source": "Genesis", "weight": 1}
+{"name": "Baʿal", "type": "deity", "morphemes": ["baal"], "source": "Judges", "weight": 1}
+{"name": "Baʿal Zebūb", "type": "deity", "morphemes": ["baal", "jebūb"], "source": "Kings", "weight": 1}
+{"name": "Baʿal Peʿōr", "type": "deity", "morphemes": ["baal", "peōr"], "source": "Numbers", "weight": 1}
+{"name": "ʾAšērāh", "type": "deity", "morphemes": ["aśērāh"], "source": "Kings", "weight": 1}
+{"name": "ʿAštōret", "type": "deity", "morphemes": ["aśtōret"], "source": "Kings", "weight": 1}
+{"name": "Mōlek", "type": "deity", "morphemes": ["mōlek"], "source": "Leviticus", "weight": 1}
+{"name": "Milkōm", "type": "deity", "morphemes": ["milkōm"], "source": "Kings", "weight": 1}
+{"name": "Kemōš", "type": "deity", "morphemes": ["kemōś"], "source": "Numbers", "weight": 1}
+{"name": "Dāgōn", "type": "deity", "morphemes": ["dāgōn"], "source": "Judges", "weight": 1}
+{"name": "Bēl", "type": "deity", "morphemes": ["bēl"], "source": "Isaiah", "weight": 1}
+{"name": "Nebō", "type": "deity", "morphemes": ["nebō"], "source": "Isaiah", "weight": 1}
+{"name": "Merōdak", "type": "deity", "morphemes": ["merōdak"], "source": "Jeremiah", "weight": 1}
+{"name": "Tammūz", "type": "deity", "morphemes": ["tammūj"], "source": "Ezekiel", "weight": 1}
+{"name": "Rimmōn", "type": "deity", "morphemes": ["rimmōn"], "source": "Kings", "weight": 1}
+{"name": "Nisrōk", "type": "deity", "morphemes": ["nisrōk"], "source": "Kings", "weight": 1}
+{"name": "ʾAdrammelek", "type": "deity", "morphemes": ["adrammelek"], "source": "Kings", "weight": 1}
+{"name": "ʿAnammelek", "type": "deity", "morphemes": ["anammelek"], "source": "Kings", "weight": 1}
+{"name": "Sukkōt-benōt", "type": "deity", "morphemes": ["sukkōt-benōt"], "source": "Kings", "weight": 1}
+{"name": "Nērgal", "type": "deity", "morphemes": ["nērgal"], "source": "Kings", "weight": 1}
+{"name": "ʾAšīmāʾ", "type": "deity", "morphemes": ["aśīmā"], "source": "Kings", "weight": 1}
+{"name": "Nibḥaz", "type": "deity", "morphemes": ["nibhaj"], "source": "Kings", "weight": 1}
+{"name": "Tartāq", "type": "deity", "morphemes": ["tartāk"], "source": "Kings", "weight": 1}
+{"name": "Menī", "type": "deity", "morphemes": ["menī"], "source": "Isaiah", "weight": 1}
+{"name": "Meleket haššāmayim", "type": "deity", "morphemes": ["malkāh", "śāmayim"], "source": "Jeremiah", "weight": 1}
+{"name": "Rešep", "type": "deity", "morphemes": ["reśep"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Līlīt", "type": "deity", "morphemes": ["līlīt"], "source": "Isaiah", "weight": 1}
+{"name": "ʿAzāʾzēl", "type": "deity", "morphemes": ["ajājēl"], "source": "Leviticus", "weight": 1}
+{"name": "Śāṭān", "type": "deity", "morphemes": ["śāṭān"], "source": "Job", "weight": 1}
+{"name": "Liwyātān", "type": "deity", "morphemes": ["livyātān"], "source": "Job", "weight": 1}
+{"name": "Rahab", "type": "deity", "morphemes": ["rahab"], "source": "Job", "weight": 1}
+{"name": "Tannīn", "type": "deity", "morphemes": ["tannīn"], "source": "Isaiah", "weight": 1}
+{"name": "Śeʿīrīm", "type": "deity", "morphemes": ["śāīr"], "source": "Leviticus", "weight": 1}
+{"name": "Šēdīm", "type": "deity", "morphemes": ["śēd"], "source": "Deuteronomy", "weight": 1}
+{"name": "Kerūbīm", "type": "deity", "morphemes": ["kerūb"], "source": "Genesis", "weight": 1}
+{"name": "Śerāpīm", "type": "deity", "morphemes": ["śārāp"], "source": "Isaiah", "weight": 1}
+{"name": "Terāpīm", "type": "deity", "morphemes": ["terāpīm"], "source": "Genesis", "weight": 1}
+{"name": "Mīkāʾēl", "type": "deity", "morphemes": ["mī", "ke", "ēl"], "source": "Daniel", "weight": 1}
+{"name": "Hadad-rimmōn", "type": "deity", "morphemes": ["hadad", "rimmōn"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Kesīl", "type": "celestial", "morphemes": ["kesīl"], "source": "Job", "weight": 1}
+{"name": "Kīmāh", "type": "celestial", "morphemes": ["kīmāh"], "source": "Job", "weight": 1}
+{"name": "ʿĀš", "type": "celestial", "morphemes": ["āś"], "source": "Job", "weight": 1}
+{"name": "Mazzārōt", "type": "celestial", "morphemes": ["majjārōt"], "source": "Job", "weight": 1}
+{"name": "Mazzālōt", "type": "celestial", "morphemes": ["majjāl"], "source": "Kings", "weight": 1}
+{"name": "Hēlēl", "type": "celestial", "morphemes": ["hēlēl"], "source": "Isaiah", "weight": 1}
+{"name": "Kiyyūn", "type": "celestial", "morphemes": ["kiyyūn"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Sikkūt", "type": "celestial", "morphemes": ["sikkūt"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Šemeš", "type": "celestial", "morphemes": ["śemeś"], "source": "Deuteronomy", "weight": 1}
+{"name": "Yārēaḥ", "type": "celestial", "morphemes": ["yārēah"], "source": "Deuteronomy", "weight": 1}
+{"name": "Lebānāh", "type": "celestial", "morphemes": ["lābān"], "source": "Isaiah", "weight": 1}
+{"name": "Ḥammāh", "type": "celestial", "morphemes": ["hammāh"], "source": "Isaiah", "weight": 1}
+{"name": "Ḥadrē Tēmān", "type": "celestial", "morphemes": ["heder", "tēmān"], "source": "Job", "weight": 1}
+{"name": "Ṣebāʾ haššāmayim", "type": "celestial", "morphemes": ["ṣābā", "śāmayim"], "source": "Deuteronomy", "weight": 1}
+{"name": "Yardēn", "type": "river", "morphemes": ["yardēn"], "source": "Genesis", "weight": 1}
+{"name": "Perāt", "type": "river", "morphemes": ["perāt"], "source": "Genesis", "weight": 1}
+{"name": "Pīšōn", "type": "river", "morphemes": ["pīśōn"], "source": "Genesis", "weight": 1}
+{"name": "Gīḥōn", "type": "river", "morphemes": ["gīhōn"], "source": "Genesis", "weight": 1}
+{"name": "Šīḥōr", "type": "river", "morphemes": ["śīhōr"], "source": "Joshua", "weight": 1}
+{"name": "ʾArnōn", "type": "river", "morphemes": ["arnōn"], "source": "Numbers", "weight": 1}
+{"name": "Yabbōq", "type": "river", "morphemes": ["yabbōk"], "source": "Genesis", "weight": 1}
+{"name": "Qīšōn", "type": "river", "morphemes": ["kīśōn"], "source": "Judges", "weight": 1}
+{"name": "Kebār", "type": "river", "morphemes": ["kebār"], "source": "Ezekiel", "weight": 1}
+{"name": "Ṣiyyōn", "type": "hill", "morphemes": ["ṣiyyōn"], "source": "Samuel", "weight": 1}
+{"name": "Sīnay", "type": "hill", "morphemes": ["sīnay"], "source": "Exodus", "weight": 1}
+{"name": "Karmel", "type": "hill", "morphemes": ["karmel"], "source": "Kings", "weight": 1}
+{"name": "Tābōr", "type": "hill", "morphemes": ["tābōr"], "source": "Judges", "weight": 1}
+{"name": "Gilbōaʿ", "type": "hill", "morphemes": ["gilbōa"], "source": "Samuel", "weight": 1}
+{"name": "Ḥermōn", "type": "hill", "morphemes": ["hermōn"], "source": "Deuteronomy", "weight": 1}
+{"name": "Pisgāh", "type": "hill", "morphemes": ["pisgāh"], "source": "Numbers", "weight": 1}
+{"name": "Gerizzīm", "type": "hill", "morphemes": ["gerijjīm"], "source": "Deuteronomy", "weight": 1}
+{"name": "ʿĒbāl", "type": "hill", "morphemes": ["ēbāl"], "source": "Deuteronomy", "weight": 1}
+{"name": "Mōriyyāh", "type": "hill", "morphemes": ["mōriyyāh"], "source": "Genesis", "weight": 1}
+{"name": "Hōr", "type": "hill", "morphemes": ["hōr"], "source": "Numbers", "weight": 1}
+{"name": "Śēʿīr", "type": "hill", "morphemes": ["śēīr"], "source": "Genesis", "weight": 1}
+{"name": "Śiryōn", "type": "hill", "morphemes": ["śiryōn"], "source": "Deuteronomy", "weight": 1}
+{"name": "Śenīr", "type": "hill", "morphemes": ["śenīr"], "source": "Deuteronomy", "weight": 1}
+{"name": "ʿAbārīm", "type": "hill", "morphemes": ["ēber"], "source": "Numbers", "weight": 1}
+{"name": "Mōreh", "type": "hill", "morphemes": ["mōreh"], "source": "Judges", "weight": 1}
+{"name": "Ṣalmōn", "type": "hill", "morphemes": ["ṣalmōn"], "source": "Judges", "weight": 1}
+{"name": "Peʿōr", "type": "hill", "morphemes": ["peōr"], "source": "Numbers", "weight": 1}
+{"name": "Baʿal Ḥermōn", "type": "hill", "morphemes": ["baal", "hermōn"], "source": "Judges", "weight": 1}
+{"name": "Yiśrāʾēl", "type": "group", "morphemes": ["śārāh", "ēl"], "source": "Genesis", "weight": 1}
+{"name": "Dān", "type": "group", "morphemes": ["dīn"], "source": "Genesis", "weight": 1}
+{"name": "Naptālī", "type": "group", "morphemes": ["pātal"], "source": "Genesis", "weight": 1}
+{"name": "Gād", "type": "group", "morphemes": ["gad"], "source": "Genesis", "weight": 1}
+{"name": "ʾĀšēr", "type": "group", "morphemes": ["āśar"], "source": "Genesis", "weight": 1}
+{"name": "Yiśśākār", "type": "group", "morphemes": ["yiśśākār"], "source": "Genesis", "weight": 1}
+{"name": "Zebūlun", "type": "group", "morphemes": ["jebūl"], "source": "Genesis", "weight": 1}
+{"name": "ʾEprayim", "type": "group", "morphemes": ["eprayim"], "source": "Genesis", "weight": 1}
+{"name": "Menaššeh", "type": "group", "morphemes": ["nāśāh"], "source": "Genesis", "weight": 1}
+{"name": "ʿAmmōn", "type": "group", "morphemes": ["ammōn"], "source": "Genesis", "weight": 1}
+{"name": "ʿAmālēq", "type": "group", "morphemes": ["amālēk"], "source": "Exodus", "weight": 1}
+{"name": "Midyān", "type": "group", "morphemes": ["midyān"], "source": "Numbers", "weight": 1}
+{"name": "Pelištīm", "type": "group", "morphemes": ["peleśet"], "source": "Judges", "weight": 1}
+{"name": "Ḥittī", "type": "group", "morphemes": ["hēt"], "source": "Genesis", "weight": 1}
+{"name": "ʾEmōrī", "type": "group", "morphemes": ["emōrī"], "source": "Genesis", "weight": 1}
+{"name": "Yebūsī", "type": "group", "morphemes": ["yebūs"], "source": "Genesis", "weight": 1}
+{"name": "Ḥiwwī", "type": "group", "morphemes": ["hivvī"], "source": "Genesis", "weight": 1}
+{"name": "Perizzī", "type": "group", "morphemes": ["perijjī"], "source": "Genesis", "weight": 1}
+{"name": "Girgāšī", "type": "group", "morphemes": ["girgāśī"], "source": "Genesis", "weight": 1}
+{"name": "Kerētī", "type": "group", "morphemes": ["kerētī"], "source": "Samuel", "weight": 1}
+{"name": "Pelētī", "type": "group", "morphemes": ["pelētī"], "source": "Samuel", "weight": 1}
+{"name": "Ḥōrī", "type": "group", "morphemes": ["hōrī"], "source": "Genesis", "weight": 1}
+{"name": "Repāʾīm", "type": "group", "morphemes": ["repāīm"], "source": "Genesis", "weight": 1}
+{"name": "ʿAnāqīm", "type": "group", "morphemes": ["anāk"], "source": "Deuteronomy", "weight": 1}
+{"name": "ʾĒmīm", "type": "group", "morphemes": ["ēmāh"], "source": "Deuteronomy", "weight": 1}
+{"name": "Zamzummīm", "type": "group", "morphemes": ["jamjummīm"], "source": "Deuteronomy", "weight": 1}
+{"name": "Zūzīm", "type": "group", "morphemes": ["jūjīm"], "source": "Genesis", "weight": 1}
+{"name": "Kittīm", "type": "group", "morphemes": ["kittīm"], "source": "Genesis", "weight": 1}
+{"name": "Kaptōrīm", "type": "group", "morphemes": ["kaptōr"], "source": "Genesis", "weight": 1}
+{"name": "Lehābīm", "type": "group", "morphemes": ["lehābīm"], "source": "Genesis", "weight": 1}
+{"name": "Naptuḥīm", "type": "group", "morphemes": ["naptuhīm"], "source": "Genesis", "weight": 1}
+{"name": "Patrusīm", "type": "group", "morphemes": ["patrōs"], "source": "Genesis", "weight": 1}
+{"name": "Kasluḥīm", "type": "group", "morphemes": ["kasluhīm"], "source": "Genesis", "weight": 1}
+{"name": "Dōdānīm", "type": "group", "morphemes": ["dōdānīm"], "source": "Genesis", "weight": 1}
+{"name": "ʿAwwīm", "type": "group", "morphemes": ["avvīm"], "source": "Deuteronomy", "weight": 1}
+{"name": "Meʿūnīm", "type": "group", "morphemes": ["meūnīm"], "source": "Chronicles", "weight": 1}
+{"name": "Qēdār", "type": "group", "morphemes": ["kēdār"], "source": "Genesis", "weight": 1}
+{"name": "Nebāyōt", "type": "group", "morphemes": ["nebāyōt"], "source": "Genesis", "weight": 1}
+{"name": "Yeṭūr", "type": "group", "morphemes": ["yeṭūr"], "source": "Genesis", "weight": 1}
+{"name": "Nāpīš", "type": "group", "morphemes": ["nāpīś"], "source": "Genesis", "weight": 1}
+{"name": "Gōyim", "type": "group", "morphemes": ["gōy"], "source": "Genesis", "weight": 1}
+{"name": "ʿArqī", "type": "group", "morphemes": ["arkī"], "source": "Genesis", "weight": 1}
+{"name": "Ṣemārī", "type": "group", "morphemes": ["ṣemārī"], "source": "Genesis", "weight": 1}
+{"name": "Sukkiyyīm", "type": "group", "morphemes": ["sukkiyyīm"], "source": "Chronicles", "weight": 1}
+{"name": "Lūbīm", "type": "group", "morphemes": ["lūbīm"], "source": "Chronicles", "weight": 1}
+{"name": "Leʾummīm", "type": "group", "morphemes": ["leōm"], "source": "Genesis", "weight": 1}
+{"name": "Yehōyārīb", "type": "lineage", "morphemes": ["yāh", "rīb"], "source": "Chronicles", "weight": 1}
+{"name": "Yedaʿyāh", "type": "lineage", "morphemes": ["yāda", "yāh"], "source": "Chronicles", "weight": 1}
+{"name": "Ḥārim", "type": "lineage", "morphemes": ["hārim"], "source": "Chronicles", "weight": 1}
+{"name": "Śeʿōrīm", "type": "lineage", "morphemes": ["śeōrāh"], "source": "Chronicles", "weight": 1}
+{"name": "Miyyāmin", "type": "lineage", "morphemes": ["min", "yāmīn"], "source": "Chronicles", "weight": 1}
+{"name": "Maʿazyāh", "type": "lineage", "morphemes": ["māōj", "yāh"], "source": "Chronicles", "weight": 1}
+{"name": "Delāyāh", "type": "lineage", "morphemes": ["dālāh", "yāh"], "source": "Chronicles", "weight": 1}
+{"name": "Parʿōš", "type": "lineage", "morphemes": ["parōś"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Paḥat-mōʾāb", "type": "lineage", "morphemes": ["pahāh", "mōāb"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Zattūʾ", "type": "lineage", "morphemes": ["jattū"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "ʿAzgād", "type": "lineage", "morphemes": ["ōj", "gad"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "ʾAdōnīqām", "type": "lineage", "morphemes": ["ādōn", "kūm"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "ʿĀdīn", "type": "lineage", "morphemes": ["ēden"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Ṭabbāʿōt", "type": "lineage", "morphemes": ["ṭabbaat"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Rēkāb", "type": "lineage", "morphemes": ["rekeb"], "source": "Jeremiah", "weight": 1}
+{"name": "Yeraḥmeʾēl", "type": "lineage", "morphemes": ["rāham", "ēl"], "source": "Samuel", "weight": 1}
+{"name": "Matrī", "type": "lineage", "morphemes": ["matrī"], "source": "Samuel", "weight": 1}
+{"name": "Parʿōh", "type": "title", "morphemes": ["parōh"], "source": "Genesis", "weight": 1}
+{"name": "Rab-šāqēh", "type": "title", "morphemes": ["rab", "śākāh"], "source": "Kings", "weight": 1}
+{"name": "Tartān", "type": "title", "morphemes": ["tartān"], "source": "Kings", "weight": 1}
+{"name": "Rab-sārīs", "type": "title", "morphemes": ["rab", "sārīs"], "source": "Kings", "weight": 1}
+{"name": "ʾAdōnāy", "type": "title", "morphemes": ["ādōn"], "source": "Psalms", "weight": 1}
+{"name": "Ṣebāʾōt", "type": "title", "morphemes": ["ṣābā"], "source": "Samuel", "weight": 1}
+{"name": "Qedōš Yiśrāʾēl", "type": "title", "morphemes": ["kādōś", "śārāh", "ēl"], "source": "Isaiah", "weight": 1}
+{"name": "ʾAbīr Yaʿaqōb", "type": "title", "morphemes": ["ābīr", "ākab"], "source": "Genesis", "weight": 1}
+{"name": "Paḥad Yiṣḥāq", "type": "title", "morphemes": ["pahad", "ṣāhak"], "source": "Genesis", "weight": 1}
+{"name": "ʿAttīq Yōmīn", "type": "title", "morphemes": ["attīk", "yōm"], "source": "Daniel", "weight": 1}
+{"name": "Yahweh Ṣidqēnū", "type": "title", "morphemes": ["yahveh", "ṣedek"], "source": "Jeremiah", "weight": 1}
+{"name": "Qōhelet", "type": "title", "morphemes": ["kāhal"], "source": "Ecclesiastes", "weight": 1}
+{"name": "Neḥuštān", "type": "other", "morphemes": ["nehōśet"], "source": "Kings", "weight": 1}
+{"name": "ʾŪrīm", "type": "other", "morphemes": ["ūrīm"], "source": "Exodus", "weight": 1}
+{"name": "Tummīm", "type": "other", "morphemes": ["tummīm"], "source": "Exodus", "weight": 1}
+{"name": "Yākīn", "type": "other", "morphemes": ["kūn"], "source": "Kings", "weight": 1}
+{"name": "ʾĀbīb", "type": "other", "morphemes": ["ābīb"], "source": "Exodus", "weight": 1}
+{"name": "Zīw", "type": "other", "morphemes": ["jīv"], "source": "Kings", "weight": 1}
+{"name": "ʾĒtānīm", "type": "other", "morphemes": ["ētān"], "source": "Kings", "weight": 1}
+{"name": "Būl", "type": "other", "morphemes": ["būl"], "source": "Kings", "weight": 1}
+{"name": "Nīsān", "type": "other", "morphemes": ["nīsān"], "source": "Esther", "weight": 1}
+{"name": "ʾAdār", "type": "other", "morphemes": ["adār"], "source": "Esther", "weight": 1}
+{"name": "Kislēw", "type": "other", "morphemes": ["kislēv"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Ṭēbēt", "type": "other", "morphemes": ["ṭēbēt"], "source": "Esther", "weight": 1}
+{"name": "Šebāṭ", "type": "other", "morphemes": ["śebāṭ"], "source": "Twelve Prophets", "weight": 1}
+{"name": "ʾElūl", "type": "other", "morphemes": ["elūl"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Sīwān", "type": "other", "morphemes": ["sīvān"], "source": "Esther", "weight": 1}
+{"name": "Pūrīm", "type": "other", "morphemes": ["pūr"], "source": "Esther", "weight": 1}
+{"name": "Yahweh Šālōm", "type": "other", "morphemes": ["yahveh", "śālōm"], "source": "Judges", "weight": 1}
+{"name": "ʿĒd", "type": "other", "morphemes": ["ēd"], "source": "Joshua", "weight": 1}
+{"name": "ʾĒl ʾElōhē Yiśrāʾēl", "type": "other", "morphemes": ["ēl", "elōhīm", "śārāh", "ēl"], "source": "Genesis", "weight": 1}
+{"name": "ʿĒśeq", "type": "other", "morphemes": ["ēśek"], "source": "Genesis", "weight": 1}
+{"name": "Śiṭnāh", "type": "other", "morphemes": ["śiṭnāh"], "source": "Genesis", "weight": 1}
+{"name": "Nōʿam", "type": "other", "morphemes": ["nōam"], "source": "Twelve Prophets", "weight": 1}
+{"name": "ʾOholāh", "type": "other", "morphemes": ["ōhel"], "source": "Ezekiel", "weight": 1}
+{"name": "ʾOholībāh", "type": "other", "morphemes": ["ōhel", "bāh"], "source": "Ezekiel", "weight": 1}
+{"name": "Beʿūlāh", "type": "other", "morphemes": ["bāal"], "source": "Isaiah", "weight": 1}
+{"name": "Yahweh Šāmmāh", "type": "other", "morphemes": ["yahveh", "śām"], "source": "Ezekiel", "weight": 1}
+{"name": "Ḥananʾēl", "type": "other", "morphemes": ["hānan", "ēl"], "source": "Jeremiah", "weight": 1}
+{"name": "Šilōaḥ", "type": "other", "morphemes": ["śālah"], "source": "Isaiah", "weight": 1}
+{"name": "ʾAbaddōn", "type": "other", "morphemes": ["ābad"], "source": "Job", "weight": 1}
+{"name": "Šeʾōl", "type": "other", "morphemes": ["śeōl"], "source": "Genesis", "weight": 1}
+{"name": "Yerūšālaim", "type": "place", "morphemes": ["yerūśālaim"], "source": "Joshua", "weight": 1}
+{"name": "Šālēm", "type": "place", "morphemes": ["śālēm"], "source": "Genesis", "weight": 1}
+{"name": "Bēt-ʾēl", "type": "place", "morphemes": ["bayit", "ēl"], "source": "Genesis", "weight": 1}
+{"name": "Bēt-leḥem", "type": "place", "morphemes": ["bayit", "lehem"], "source": "Genesis", "weight": 1}
+{"name": "Ḥebrōn", "type": "place", "morphemes": ["hābar"], "source": "Genesis", "weight": 1}
+{"name": "Beʾēr-šebaʿ", "type": "place", "morphemes": ["beēr", "śeba"], "source": "Genesis", "weight": 1}
+{"name": "Šekem", "type": "place", "morphemes": ["śekem"], "source": "Genesis", "weight": 1}
+{"name": "Šīlōh", "type": "place", "morphemes": ["śīlōh"], "source": "Joshua", "weight": 1}
+{"name": "Yerīḥō", "type": "place", "morphemes": ["yerīhō"], "source": "Numbers", "weight": 1}
+{"name": "ʿAy", "type": "place", "morphemes": ["ay"], "source": "Genesis", "weight": 1}
+{"name": "Gibʿōn", "type": "place", "morphemes": ["gibāh"], "source": "Joshua", "weight": 1}
+{"name": "Rāmāh", "type": "place", "morphemes": ["rāmāh"], "source": "Joshua", "weight": 1}
+{"name": "Miṣpāh", "type": "place", "morphemes": ["miṣpāh"], "source": "Genesis", "weight": 1}
+{"name": "Gilgāl", "type": "place", "morphemes": ["gilgāl"], "source": "Joshua", "weight": 1}
+{"name": "ʿAnātōt", "type": "place", "morphemes": ["anāt"], "source": "Joshua", "weight": 1}
+{"name": "Gat", "type": "place", "morphemes": ["gat"], "source": "Joshua", "weight": 1}
+{"name": "ʿAzzāh", "type": "place", "morphemes": ["ōj"], "source": "Genesis", "weight": 1}
+{"name": "ʾAšdōd", "type": "place", "morphemes": ["aśdōd"], "source": "Joshua", "weight": 1}
+{"name": "ʾAšqelōn", "type": "place", "morphemes": ["aśkelōn"], "source": "Judges", "weight": 1}
+{"name": "ʿEqrōn", "type": "place", "morphemes": ["ekrōn"], "source": "Joshua", "weight": 1}
+{"name": "Ṣōr", "type": "place", "morphemes": ["ṣōr"], "source": "Joshua", "weight": 1}
+{"name": "Ṣīdōn", "type": "place", "morphemes": ["ṣīdōn"], "source": "Genesis", "weight": 1}
+{"name": "Dammeśeq", "type": "place", "morphemes": ["dammeśek"], "source": "Genesis", "weight": 1}
+{"name": "Ḥamāt", "type": "place", "morphemes": ["hamāt"], "source": "Numbers", "weight": 1}
+{"name": "Nīnewēh", "type": "place", "morphemes": ["nīnevēh"], "source": "Genesis", "weight": 1}
+{"name": "Bābel", "type": "place", "morphemes": ["bābel"], "source": "Genesis", "weight": 1}
+{"name": "ʾŪr Kaśdīm", "type": "place", "morphemes": ["ūr", "kesed"], "source": "Genesis", "weight": 1}
+{"name": "Ḥārān", "type": "place", "morphemes": ["hārān"], "source": "Genesis", "weight": 1}
+{"name": "Kenaʿan", "type": "place", "morphemes": ["kenaan"], "source": "Genesis", "weight": 1}
+{"name": "Miṣrayim", "type": "place", "morphemes": ["miṣrayim"], "source": "Genesis", "weight": 1}
+{"name": "ʾAššūr", "type": "place", "morphemes": ["aśśūr"], "source": "Genesis", "weight": 1}
+{"name": "ʾArām", "type": "place", "morphemes": ["arām"], "source": "Numbers", "weight": 1}
+{"name": "ʾEdōm", "type": "place", "morphemes": ["ādōm"], "source": "Genesis", "weight": 1}
+{"name": "Mōʾāb", "type": "place", "morphemes": ["mōāb"], "source": "Numbers", "weight": 1}
+{"name": "Kūš", "type": "place", "morphemes": ["kūś"], "source": "Genesis", "weight": 1}
+{"name": "Yāwān", "type": "place", "morphemes": ["yāvān"], "source": "Genesis", "weight": 1}
+{"name": "Mādai", "type": "place", "morphemes": ["mādai"], "source": "Genesis", "weight": 1}
+{"name": "Pāras", "type": "place", "morphemes": ["pāras"], "source": "Esther", "weight": 1}
+{"name": "ʿĒlām", "type": "place", "morphemes": ["ēlām"], "source": "Genesis", "weight": 1}
+{"name": "Šinʿār", "type": "place", "morphemes": ["śinār"], "source": "Genesis", "weight": 1}
+{"name": "ʾAkkad", "type": "place", "morphemes": ["akkad"], "source": "Genesis", "weight": 1}
+{"name": "ʾErek", "type": "place", "morphemes": ["erek"], "source": "Genesis", "weight": 1}
+{"name": "Sedōm", "type": "place", "morphemes": ["sedōm"], "source": "Genesis", "weight": 1}
+{"name": "ʿAmōrāh", "type": "place", "morphemes": ["amōrāh"], "source": "Genesis", "weight": 1}
+{"name": "Ṣebōyīm", "type": "place", "morphemes": ["ṣebī"], "source": "Genesis", "weight": 1}
+{"name": "Ṣōʿar", "type": "place", "morphemes": ["ṣōar"], "source": "Genesis", "weight": 1}
+{"name": "Bēt-šemeš", "type": "place", "morphemes": ["bayit", "śemeś"], "source": "Joshua", "weight": 1}
+{"name": "ʿĒn-gedī", "type": "place", "morphemes": ["ayin", "gedī"], "source": "Joshua", "weight": 1}
+{"name": "ʿĒn-dōr", "type": "place", "morphemes": ["ayin", "dōr"], "source": "Joshua", "weight": 1}
+{"name": "ʿĒn-rōgēl", "type": "place", "morphemes": ["ayin", "rōgēl"], "source": "Joshua", "weight": 1}
+{"name": "Qādēš", "type": "place", "morphemes": ["kādōś"], "source": "Genesis", "weight": 1}
+{"name": "Qādēš-barnēaʿ", "type": "place", "morphemes": ["kādōś", "barnēa"], "source": "Numbers", "weight": 1}
+{"name": "Beʾēr-laḥay-rōʾī", "type": "place", "morphemes": ["beēr", "hay", "rāāh"], "source": "Genesis", "weight": 1}
+{"name": "Penūʾēl", "type": "place", "morphemes": ["pānīm", "ēl"], "source": "Genesis", "weight": 1}
+{"name": "Maḥanayim", "type": "place", "morphemes": ["mahaneh"], "source": "Genesis", "weight": 1}
+{"name": "Sukkōt", "type": "place", "morphemes": ["sukkāh"], "source": "Genesis", "weight": 1}
+{"name": "Mamrēʾ", "type": "place", "morphemes": ["mamrē"], "source": "Genesis", "weight": 1}
+{"name": "Makpēlāh", "type": "place", "morphemes": ["makpēlāh"], "source": "Genesis", "weight": 1}
+{"name": "Gerār", "type": "place", "morphemes": ["gerār"], "source": "Genesis", "weight": 1}
+{"name": "Reḥōbōt", "type": "place", "morphemes": ["rehōb"], "source": "Genesis", "weight": 1}
+{"name": "ʾĀbēl-miṣrayim", "type": "place", "morphemes": ["ābēl", "miṣrayim"], "source": "Genesis", "weight": 1}
+{"name": "Gōšen", "type": "place", "morphemes": ["gōśen"], "source": "Genesis", "weight": 1}
+{"name": "Raʿamsēs", "type": "place", "morphemes": ["raamsēs"], "source": "Genesis", "weight": 1}
+{"name": "Pitōm", "type": "place", "morphemes": ["pitōm"], "source": "Exodus", "weight": 1}
+{"name": "Mārāh", "type": "place", "morphemes": ["mar"], "source": "Exodus", "weight": 1}
+{"name": "ʾĒlīm", "type": "place", "morphemes": ["ēlāh"], "source": "Exodus", "weight": 1}
+{"name": "Massāh", "type": "place", "morphemes": ["massāh"], "source": "Exodus", "weight": 1}
+{"name": "Merībāh", "type": "place", "morphemes": ["merībāh"], "source": "Exodus", "weight": 1}
+{"name": "Qibrōt hattaʾawāh", "type": "place", "morphemes": ["keber", "taavāh"], "source": "Numbers", "weight": 1}
+{"name": "Pārān", "type": "place", "morphemes": ["pārān"], "source": "Genesis", "weight": 1}
+{"name": "Ḥešbōn", "type": "place", "morphemes": ["heśbōn"], "source": "Numbers", "weight": 1}
+{"name": "Šiṭṭīm", "type": "place", "morphemes": ["śiṭṭāh"], "source": "Numbers", "weight": 1}
+{"name": "Bāšān", "type": "place", "morphemes": ["bāśān"], "source": "Numbers", "weight": 1}
+{"name": "Gilʿād", "type": "place", "morphemes": ["gilād"], "source": "Genesis", "weight": 1}
+{"name": "Galʿēd", "type": "place", "morphemes": ["gal", "ēd"], "source": "Genesis", "weight": 1}
+{"name": "Rāmōt-gilʿād", "type": "place", "morphemes": ["rāmāh", "gilād"], "source": "Kings", "weight": 1}
+{"name": "Yābēš-gilʿād", "type": "place", "morphemes": ["yābēś", "gilād"], "source": "Judges", "weight": 1}
+{"name": "Yizreʿeʾl", "type": "place", "morphemes": ["jāra", "ēl"], "source": "Joshua", "weight": 1}
+{"name": "Megiddō", "type": "place", "morphemes": ["megiddō"], "source": "Joshua", "weight": 1}
+{"name": "Bēt-šeʾān", "type": "place", "morphemes": ["bayit", "śeān"], "source": "Joshua", "weight": 1}
+{"name": "Ḥāṣōr", "type": "place", "morphemes": ["hāṣēr"], "source": "Joshua", "weight": 1}
+{"name": "Lākīš", "type": "place", "morphemes": ["lākīś"], "source": "Joshua", "weight": 1}
+{"name": "Bēt-ḥōrōn", "type": "place", "morphemes": ["bayit", "hōrōn"], "source": "Joshua", "weight": 1}
+{"name": "Qiryat-ʾarbaʿ", "type": "place", "morphemes": ["kiryāh", "arba"], "source": "Genesis", "weight": 1}
+{"name": "ʿEṣyōn-geber", "type": "place", "morphemes": ["eṣyōn", "geber"], "source": "Numbers", "weight": 1}
+{"name": "ʾŌpīr", "type": "place", "morphemes": ["ōpīr"], "source": "Kings", "weight": 1}
+{"name": "Šebāʾ", "type": "place", "morphemes": ["śebā"], "source": "Kings", "weight": 1}
+{"name": "Dedān", "type": "place", "morphemes": ["dedān"], "source": "Genesis", "weight": 1}
+{"name": "Tēmāʾ", "type": "place", "morphemes": ["tēmā"], "source": "Isaiah", "weight": 1}
+{"name": "Ḥawīlāh", "type": "place", "morphemes": ["havīlāh"], "source": "Genesis", "weight": 1}
+{"name": "Nōd", "type": "place", "morphemes": ["nūd"], "source": "Genesis", "weight": 1}
+{"name": "ʿŪṣ", "type": "place", "morphemes": ["ūṣ"], "source": "Job", "weight": 1}
+{"name": "Māgōg", "type": "place", "morphemes": ["māgōg"], "source": "Genesis", "weight": 1}
+{"name": "Ṣōʿan", "type": "place", "morphemes": ["ṣōan"], "source": "Numbers", "weight": 1}
+{"name": "Nōp", "type": "place", "morphemes": ["nōp"], "source": "Isaiah", "weight": 1}
+{"name": "Nōʾ", "type": "place", "morphemes": ["nō"], "source": "Jeremiah", "weight": 1}
+{"name": "ʾŌn", "type": "place", "morphemes": ["ōn"], "source": "Genesis", "weight": 1}
+{"name": "Baʿal-ṣepōn", "type": "place", "morphemes": ["baal", "ṣāpōn"], "source": "Exodus", "weight": 1}
+{"name": "Šūšan", "type": "place", "morphemes": ["śūśan"], "source": "Esther", "weight": 1}
+{"name": "Karkemīš", "type": "place", "morphemes": ["karkemīś"], "source": "Jeremiah", "weight": 1}
+{"name": "Šōmerōn", "type": "place", "morphemes": ["śāmar"], "source": "Kings", "weight": 1}
+{"name": "ʿĀkōr", "type": "place", "morphemes": ["ākar"], "source": "Joshua", "weight": 1}
+{"name": "Ṣiqlag", "type": "place", "morphemes": ["ṣiklag"], "source": "Samuel", "weight": 1}
+{"name": "Nōb", "type": "place", "morphemes": ["nōb"], "source": "Samuel", "weight": 1}
+{"name": "ʿAdullām", "type": "place", "morphemes": ["adullām"], "source": "Joshua", "weight": 1}
+{"name": "Teqōaʿ", "type": "place", "morphemes": ["tāka"], "source": "Samuel", "weight": 1}
+{"name": "Bēt-ʿanāt", "type": "place", "morphemes": ["bayit", "anāt"], "source": "Joshua", "weight": 1}
+{"name": "ʿĒn-rimmōn", "type": "place", "morphemes": ["ayin", "rimmōn"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Kinneret", "type": "place", "morphemes": ["kinneret"], "source": "Numbers", "weight": 1}
+{"name": "Yam hammelaḥ", "type": "place", "morphemes": ["yām", "melah"], "source": "Genesis", "weight": 1}
+{"name": "Negeb", "type": "place", "morphemes": ["negeb"], "source": "Genesis", "weight": 1}
+{"name": "Šārōn", "type": "place", "morphemes": ["śārōn"], "source": "Joshua", "weight": 1}
+{"name": "Gēʾ-hinnōm", "type": "place", "morphemes": ["gay", "hinnōm"], "source": "Joshua", "weight": 1}
+{"name": "Tōpet", "type": "place", "morphemes": ["tōpet"], "source": "Kings", "weight": 1}
+{"name": "ʾĒlōn-mōreh", "type": "place", "morphemes": ["ēlōn", "mōreh"], "source": "Genesis", "weight": 1}
+{"name": "ʾAllōn-bākūt", "type": "place", "morphemes": ["allōn", "bākāh"], "source": "Genesis", "weight": 1}
+{"name": "ʾEben-hāʿēzer", "type": "place", "morphemes": ["eben", "ājar"], "source": "Samuel", "weight": 1}
+{"name": "Migdal-ʿēder", "type": "place", "morphemes": ["migdāl", "ēder"], "source": "Genesis", "weight": 1}
+{"name": "Yahweh Yirʾeh", "type": "place", "morphemes": ["yahveh", "rāāh"], "source": "Genesis", "weight": 1}
+{"name": "Bōkīm", "type": "place", "morphemes": ["bākāh"], "source": "Judges", "weight": 1}
+{"name": "Pereṣ-ʿuzzāʾ", "type": "place", "morphemes": ["pereṣ", "ōj"], "source": "Samuel", "weight": 1}
+{"name": "Baʿal-perāṣīm", "type": "place", "morphemes": ["baal", "pereṣ"], "source": "Samuel", "weight": 1}
+{"name": "Baʿal-gād", "type": "place", "morphemes": ["baal", "gad"], "source": "Joshua", "weight": 1}
+{"name": "Baʿal-tāmār", "type": "place", "morphemes": ["baal", "tāmār"], "source": "Judges", "weight": 1}
+{"name": "Baʿal-hāmōn", "type": "place", "morphemes": ["baal", "hāmōn"], "source": "Song of Songs", "weight": 1}
+{"name": "Šūnēm", "type": "place", "morphemes": ["śūnēm"], "source": "Joshua", "weight": 1}
+{"name": "Ṣārepat", "type": "place", "morphemes": ["ṣārap"], "source": "Kings", "weight": 1}
+{"name": "ʾĀbēl-meḥōlāh", "type": "place", "morphemes": ["ābēl", "mehōlāh"], "source": "Judges", "weight": 1}
+{"name": "Lō-debār", "type": "place", "morphemes": ["lō", "dābār"], "source": "Samuel", "weight": 1}
+{"name": "Ḥawwāh", "type": "person", "morphemes": ["havvāh"], "source": "Genesis", "weight": 1}
+{"name": "Šēt", "type": "person", "morphemes": ["śīt"], "source": "Genesis", "weight": 1}
+{"name": "ʾEnōš", "type": "person", "morphemes": ["enōś"], "source": "Genesis", "weight": 1}
+{"name": "Ḥanōk", "type": "person", "morphemes": ["hānak"], "source": "Genesis", "weight": 1}
+{"name": "Metūšelaḥ", "type": "person", "morphemes": ["metūśelah"], "source": "Genesis", "weight": 1}
+{"name": "Lemek", "type": "person", "morphemes": ["lemek"], "source": "Genesis", "weight": 1}
+{"name": "Nōaḥ", "type": "person", "morphemes": ["nūah"], "source": "Genesis", "weight": 1}
+{"name": "Šēm", "type": "person", "morphemes": ["śēm"], "source": "Genesis", "weight": 1}
+{"name": "Ḥām", "type": "person", "morphemes": ["hām"], "source": "Genesis", "weight": 1}
+{"name": "Yepet", "type": "person", "morphemes": ["yepet"], "source": "Genesis", "weight": 1}
+{"name": "Nimrōd", "type": "person", "morphemes": ["nimrōd"], "source": "Genesis", "weight": 1}
+{"name": "Nāḥōr", "type": "person", "morphemes": ["nāhōr"], "source": "Genesis", "weight": 1}
+{"name": "Teraḥ", "type": "person", "morphemes": ["terah"], "source": "Genesis", "weight": 1}
+{"name": "ʾAbrām", "type": "person", "morphemes": ["āb", "rūm"], "source": "Genesis", "weight": 1}
+{"name": "ʾAbrāhām", "type": "person", "morphemes": ["abrāhām"], "source": "Genesis", "weight": 1}
+{"name": "Śāray", "type": "person", "morphemes": ["śar"], "source": "Genesis", "weight": 1}
+{"name": "Lōṭ", "type": "person", "morphemes": ["lōṭ"], "source": "Genesis", "weight": 1}
+{"name": "Hārān", "type": "person", "morphemes": ["hārān"], "source": "Genesis", "weight": 1}
+{"name": "Milkāh", "type": "person", "morphemes": ["malkāh"], "source": "Genesis", "weight": 1}
+{"name": "Hāgār", "type": "person", "morphemes": ["hāgār"], "source": "Genesis", "weight": 1}
+{"name": "Yišmāʿēʾl", "type": "person", "morphemes": ["śāma", "ēl"], "source": "Genesis", "weight": 1}
+{"name": "Yiṣḥāq", "type": "person", "morphemes": ["ṣāhak"], "source": "Genesis", "weight": 1}
+{"name": "Ribqāh", "type": "person", "morphemes": ["ribkāh"], "source": "Genesis", "weight": 1}
+{"name": "Betūʾēl", "type": "person", "morphemes": ["betūēl"], "source": "Genesis", "weight": 1}
+{"name": "ʿĒśāw", "type": "person", "morphemes": ["ēśāv"], "source": "Genesis", "weight": 1}
+{"name": "Lēʾāh", "type": "person", "morphemes": ["lēāh"], "source": "Genesis", "weight": 1}
+{"name": "Rāḥēl", "type": "person", "morphemes": ["rāhēl"], "source": "Genesis", "weight": 1}
+{"name": "Bilhāh", "type": "person", "morphemes": ["bilhāh"], "source": "Genesis", "weight": 1}
+{"name": "Zilpāh", "type": "person", "morphemes": ["jilpāh"], "source": "Genesis", "weight": 1}
+{"name": "Reʾūbēn", "type": "person", "morphemes": ["rāāh", "bēn"], "source": "Genesis", "weight": 1}
+{"name": "Šimʿōn", "type": "person", "morphemes": ["śāma"], "source": "Genesis", "weight": 1}
+{"name": "Lēwī", "type": "person", "morphemes": ["lāvāh"], "source": "Genesis", "weight": 1}
+{"name": "Yōsēp", "type": "person", "morphemes": ["yāsap"], "source": "Genesis", "weight": 1}
+{"name": "Binyāmīn", "type": "person", "morphemes": ["bēn", "yāmīn"], "source": "Genesis", "weight": 1}
+{"name": "Tāmār", "type": "person", "morphemes": ["tāmār"], "source": "Genesis", "weight": 1}
+{"name": "Pereṣ", "type": "person", "morphemes": ["pereṣ"], "source": "Genesis", "weight": 1}
+{"name": "Zeraḥ", "type": "person", "morphemes": ["jārah"], "source": "Genesis", "weight": 1}
+{"name": "Pōṭīpar", "type": "person", "morphemes": ["pōṭīpar"], "source": "Genesis", "weight": 1}
+{"name": "ʾĀsenat", "type": "person", "morphemes": ["āsenat"], "source": "Genesis", "weight": 1}
+{"name": "Ṣāpenat-paʿnēaḥ", "type": "person", "morphemes": ["ṣāpenat-panēah"], "source": "Genesis", "weight": 1}
+{"name": "Qeṭūrāh", "type": "person", "morphemes": ["keṭōret"], "source": "Genesis", "weight": 1}
+{"name": "Malkī-ṣedeq", "type": "person", "morphemes": ["melek", "ṣedek"], "source": "Genesis", "weight": 1}
+{"name": "Kedorlāʿōmer", "type": "person", "morphemes": ["kedorlāōmer"], "source": "Genesis", "weight": 1}
+{"name": "ʾAbīmelek", "type": "person", "morphemes": ["āb", "melek"], "source": "Genesis", "weight": 1}
+{"name": "Debōrāh", "type": "person", "morphemes": ["debōrāh"], "source": "Judges", "weight": 1}
+{"name": "ʾElīʿezer", "type": "person", "morphemes": ["ēl", "ājar"], "source": "Genesis", "weight": 1}
+{"name": "ʾElīpaz", "type": "person", "morphemes": ["ēl", "paj"], "source": "Genesis", "weight": 1}
+{"name": "ʾOholībāmāh", "type": "person", "morphemes": ["ōhel", "bāmāh"], "source": "Genesis", "weight": 1}
+{"name": "Hadad", "type": "person", "morphemes": ["hadad"], "source": "Genesis", "weight": 1}
+{"name": "Baʿal-ḥānān", "type": "person", "morphemes": ["baal", "hānan"], "source": "Genesis", "weight": 1}
+{"name": "ʾAbīdāʿ", "type": "person", "morphemes": ["āb", "yāda"], "source": "Genesis", "weight": 1}
+{"name": "ʾEldāʿāh", "type": "person", "morphemes": ["ēl", "yāda"], "source": "Genesis", "weight": 1}
+{"name": "ʾArpakšad", "type": "person", "morphemes": ["arpakśad"], "source": "Genesis", "weight": 1}
+{"name": "Mōšeh", "type": "person", "morphemes": ["mōśeh"], "source": "Exodus", "weight": 1}
+{"name": "ʾAharōn", "type": "person", "morphemes": ["aharōn"], "source": "Exodus", "weight": 1}
+{"name": "ʿAmrām", "type": "person", "morphemes": ["am", "rūm"], "source": "Exodus", "weight": 1}
+{"name": "Yōkebed", "type": "person", "morphemes": ["yāh", "kābōd"], "source": "Exodus", "weight": 1}
+{"name": "Ṣippōrāh", "type": "person", "morphemes": ["ṣippōr"], "source": "Exodus", "weight": 1}
+{"name": "Yitrō", "type": "person", "morphemes": ["yeter"], "source": "Exodus", "weight": 1}
+{"name": "Reʿūʾēl", "type": "person", "morphemes": ["rēa", "ēl"], "source": "Exodus", "weight": 1}
+{"name": "Gēršōm", "type": "person", "morphemes": ["gēr", "śām"], "source": "Exodus", "weight": 1}
+{"name": "Qehāt", "type": "person", "morphemes": ["kehāt"], "source": "Exodus", "weight": 1}
+{"name": "ʿUzzīʾēl", "type": "person", "morphemes": ["ōj", "ēl"], "source": "Exodus", "weight": 1}
+{"name": "Nādāb", "type": "person", "morphemes": ["nādab"], "source": "Exodus", "weight": 1}
+{"name": "ʾAbīhūʾ", "type": "person", "morphemes": ["āb", "hū"], "source": "Exodus", "weight": 1}
+{"name": "ʾĪtāmār", "type": "person", "morphemes": ["ītāmār"], "source": "Exodus", "weight": 1}
+{"name": "ʾElīšebaʿ", "type": "person", "morphemes": ["ēl", "śeba"], "source": "Exodus", "weight": 1}
+{"name": "Naḥšōn", "type": "person", "morphemes": ["nāhāś"], "source": "Exodus", "weight": 1}
+{"name": "ʿAmmīnādāb", "type": "person", "morphemes": ["am", "nādab"], "source": "Exodus", "weight": 1}
+{"name": "Kālēb", "type": "person", "morphemes": ["keleb"], "source": "Numbers", "weight": 1}
+{"name": "Yehōšūaʿ", "type": "person", "morphemes": ["yāh", "yāśa"], "source": "Exodus", "weight": 1}
+{"name": "Hōšēaʿ", "type": "person", "morphemes": ["yāśa"], "source": "Numbers", "weight": 1}
+{"name": "Nūn", "type": "person", "morphemes": ["nūn"], "source": "Exodus", "weight": 1}
+{"name": "Beṣalʾēl", "type": "person", "morphemes": ["be", "ṣēl", "ēl"], "source": "Exodus", "weight": 1}
+{"name": "ʾOholīʾāb", "type": "person", "morphemes": ["ōhel", "āb"], "source": "Exodus", "weight": 1}
+{"name": "Dātān", "type": "person", "morphemes": ["dātān"], "source": "Numbers", "weight": 1}
+{"name": "Balʿām", "type": "person", "morphemes": ["balām"], "source": "Numbers", "weight": 1}
+{"name": "Bālāq", "type": "person", "morphemes": ["bālak"], "source": "Numbers", "weight": 1}
+{"name": "Sīḥōn", "type": "person", "morphemes": ["sīhōn"], "source": "Numbers", "weight": 1}
+{"name": "ʿŌg", "type": "person", "morphemes": ["ōg"], "source": "Numbers", "weight": 1}
+{"name": "Zimrī", "type": "person", "morphemes": ["jāmar"], "source": "Numbers", "weight": 1}
+{"name": "ʾEldād", "type": "person", "morphemes": ["ēl", "dōd"], "source": "Numbers", "weight": 1}
+{"name": "ʾElīšāmāʿ", "type": "person", "morphemes": ["ēl", "śāma"], "source": "Numbers", "weight": 1}
+{"name": "ʾElīṣūr", "type": "person", "morphemes": ["ēl", "ṣūr"], "source": "Numbers", "weight": 1}
+{"name": "Šelumīʾēl", "type": "person", "morphemes": ["śālōm", "ēl"], "source": "Numbers", "weight": 1}
+{"name": "Netanʾēl", "type": "person", "morphemes": ["nātan", "ēl"], "source": "Numbers", "weight": 1}
+{"name": "ʾElīʾāb", "type": "person", "morphemes": ["ēl", "āb"], "source": "Numbers", "weight": 1}
+{"name": "Pedāhṣūr", "type": "person", "morphemes": ["pādāh", "ṣūr"], "source": "Numbers", "weight": 1}
+{"name": "ʾAbīdān", "type": "person", "morphemes": ["āb", "dīn"], "source": "Numbers", "weight": 1}
+{"name": "ʾAḥīʿezer", "type": "person", "morphemes": ["āh", "ājar"], "source": "Numbers", "weight": 1}
+{"name": "ʿAmmīšadday", "type": "person", "morphemes": ["am", "śadday"], "source": "Numbers", "weight": 1}
+{"name": "ʾElyāsāp", "type": "person", "morphemes": ["ēl", "yāsap"], "source": "Numbers", "weight": 1}
+{"name": "ʿAmmīhūd", "type": "person", "morphemes": ["am", "hōd"], "source": "Numbers", "weight": 1}
+{"name": "Šemīdāʿ", "type": "person", "morphemes": ["śēm", "yāda"], "source": "Numbers", "weight": 1}
+{"name": "ʾAbīʿezer", "type": "person", "morphemes": ["āb", "ājar"], "source": "Joshua", "weight": 1}
+{"name": "Rāḥāb", "type": "person", "morphemes": ["rāhab"], "source": "Joshua", "weight": 1}
+{"name": "ʿĀkān", "type": "person", "morphemes": ["ākān"], "source": "Joshua", "weight": 1}
+{"name": "ʾAdōnī-ṣedeq", "type": "person", "morphemes": ["ādōn", "ṣedek"], "source": "Joshua", "weight": 1}
+{"name": "ʿOtnīʾēl", "type": "person", "morphemes": ["otnīēl"], "source": "Joshua", "weight": 1}
+{"name": "ʾAdōnī-bezeq", "type": "person", "morphemes": ["ādōn", "bejek"], "source": "Judges", "weight": 1}
+{"name": "Kūšan-rišʿātayim", "type": "person", "morphemes": ["kūśan", "riśāh"], "source": "Judges", "weight": 1}
+{"name": "ʾĒhūd", "type": "person", "morphemes": ["ēhūd"], "source": "Judges", "weight": 1}
+{"name": "ʿEglōn", "type": "person", "morphemes": ["ēgel"], "source": "Judges", "weight": 1}
+{"name": "Šamgar", "type": "person", "morphemes": ["śamgar"], "source": "Judges", "weight": 1}
+{"name": "Bārāq", "type": "person", "morphemes": ["bārāk"], "source": "Judges", "weight": 1}
+{"name": "ʾAbīnōʿam", "type": "person", "morphemes": ["āb", "nōam"], "source": "Judges", "weight": 1}
+{"name": "Yābīn", "type": "person", "morphemes": ["bīn"], "source": "Judges", "weight": 1}
+{"name": "Sīserāʾ", "type": "person", "morphemes": ["sīserā"], "source": "Judges", "weight": 1}
+{"name": "Yāʿēl", "type": "person", "morphemes": ["yāēl"], "source": "Judges", "weight": 1}
+{"name": "Gidʿōn", "type": "person", "morphemes": ["gāda"], "source": "Judges", "weight": 1}
+{"name": "Yerubbaʿal", "type": "person", "morphemes": ["rīb", "baal"], "source": "Judges", "weight": 1}
+{"name": "ʿŌrēb", "type": "person", "morphemes": ["ōrēb"], "source": "Judges", "weight": 1}
+{"name": "Zeʾēb", "type": "person", "morphemes": ["jeēb"], "source": "Judges", "weight": 1}
+{"name": "Yōtām", "type": "person", "morphemes": ["yāh", "tām"], "source": "Judges", "weight": 1}
+{"name": "Yāʾīr", "type": "person", "morphemes": ["ōr"], "source": "Judges", "weight": 1}
+{"name": "Yiptāḥ", "type": "person", "morphemes": ["pātah"], "source": "Judges", "weight": 1}
+{"name": "Delīlāh", "type": "person", "morphemes": ["delīlāh"], "source": "Judges", "weight": 1}
+{"name": "Mīkāh", "type": "person", "morphemes": ["mī", "ke"], "source": "Judges", "weight": 1}
+{"name": "ʾElīmelek", "type": "person", "morphemes": ["ēl", "melek"], "source": "Ruth", "weight": 1}
+{"name": "Maḥlōn", "type": "person", "morphemes": ["mahlōn"], "source": "Ruth", "weight": 1}
+{"name": "Kilyōn", "type": "person", "morphemes": ["kilyōn"], "source": "Ruth", "weight": 1}
+{"name": "ʿOrpāh", "type": "person", "morphemes": ["ōrep"], "source": "Ruth", "weight": 1}
+{"name": "Bōʿaz", "type": "person", "morphemes": ["bōaj"], "source": "Ruth", "weight": 1}
+{"name": "ʿŌbēd", "type": "person", "morphemes": ["ābad"], "source": "Ruth", "weight": 1}
+{"name": "Yišay", "type": "person", "morphemes": ["yiśay"], "source": "Ruth", "weight": 1}
+{"name": "Šemūʾēl", "type": "person", "morphemes": ["śēm", "ēl"], "source": "Samuel", "weight": 1}
+{"name": "ʾElqānāh", "type": "person", "morphemes": ["ēl", "kānāh"], "source": "Samuel", "weight": 1}
+{"name": "Ḥannāh", "type": "person", "morphemes": ["hānan"], "source": "Samuel", "weight": 1}
+{"name": "Peninnāh", "type": "person", "morphemes": ["penīnāh"], "source": "Samuel", "weight": 1}
+{"name": "ʾĪ-kābōd", "type": "person", "morphemes": ["ī", "kābōd"], "source": "Samuel", "weight": 1}
+{"name": "Šāʾūl", "type": "person", "morphemes": ["śāal"], "source": "Samuel", "weight": 1}
+{"name": "Qīš", "type": "person", "morphemes": ["kīś"], "source": "Samuel", "weight": 1}
+{"name": "ʾAbnēr", "type": "person", "morphemes": ["āb", "nēr"], "source": "Samuel", "weight": 1}
+{"name": "Yehōnātān", "type": "person", "morphemes": ["yāh", "nātan"], "source": "Samuel", "weight": 1}
+{"name": "Mīkal", "type": "person", "morphemes": ["mīkal"], "source": "Samuel", "weight": 1}
+{"name": "ʾAḥīnōʿam", "type": "person", "morphemes": ["āh", "nōam"], "source": "Samuel", "weight": 1}
+{"name": "ʾĪš-bōšet", "type": "person", "morphemes": ["īś", "bōśet"], "source": "Samuel", "weight": 1}
+{"name": "Mepībōšet", "type": "person", "morphemes": ["mepībōśet"], "source": "Samuel", "weight": 1}
+{"name": "Golyāt", "type": "person", "morphemes": ["golyāt"], "source": "Samuel", "weight": 1}
+{"name": "ʾAbīnādāb", "type": "person", "morphemes": ["āb", "nādab"], "source": "Samuel", "weight": 1}
+{"name": "ʾAbīgayil", "type": "person", "morphemes": ["āb", "gīl"], "source": "Samuel", "weight": 1}
+{"name": "ʾAḥīmelek", "type": "person", "morphemes": ["āh", "melek"], "source": "Samuel", "weight": 1}
+{"name": "ʾEbyātār", "type": "person", "morphemes": ["āb", "yeter"], "source": "Samuel", "weight": 1}
+{"name": "Yōʾāb", "type": "person", "morphemes": ["yāh", "āb"], "source": "Samuel", "weight": 1}
+{"name": "ʾAbīšay", "type": "person", "morphemes": ["abīśay"], "source": "Samuel", "weight": 1}
+{"name": "ʿAśāhʾēl", "type": "person", "morphemes": ["āśāh", "ēl"], "source": "Samuel", "weight": 1}
+{"name": "Ṣerūyāh", "type": "person", "morphemes": ["ṣerūyāh"], "source": "Samuel", "weight": 1}
+{"name": "ʾAbšālōm", "type": "person", "morphemes": ["āb", "śālōm"], "source": "Samuel", "weight": 1}
+{"name": "Šepaṭyāh", "type": "person", "morphemes": ["śāpaṭ", "yāh"], "source": "Samuel", "weight": 1}
+{"name": "ʾAbīṭal", "type": "person", "morphemes": ["āb", "ṭal"], "source": "Samuel", "weight": 1}
+{"name": "Maʿakāh", "type": "person", "morphemes": ["maakāh"], "source": "Samuel", "weight": 1}
+{"name": "Bat-šebaʿ", "type": "person", "morphemes": ["bat", "śeba"], "source": "Samuel", "weight": 1}
+{"name": "ʾŪriyyāh", "type": "person", "morphemes": ["ōr", "yāh"], "source": "Samuel", "weight": 1}
+{"name": "Nātān", "type": "person", "morphemes": ["nātan"], "source": "Samuel", "weight": 1}
+{"name": "Ṣādōq", "type": "person", "morphemes": ["ṣedek"], "source": "Samuel", "weight": 1}
+{"name": "Benāyāh", "type": "person", "morphemes": ["bānāh", "yāh"], "source": "Samuel", "weight": 1}
+{"name": "Yehōyādāʿ", "type": "person", "morphemes": ["yāh", "yāda"], "source": "Samuel", "weight": 1}
+{"name": "ʾAḥītōpel", "type": "person", "morphemes": ["ahītōpel"], "source": "Samuel", "weight": 1}
+{"name": "Barzillay", "type": "person", "morphemes": ["barjel"], "source": "Samuel", "weight": 1}
+{"name": "Šebaʿ", "type": "person", "morphemes": ["śeba"], "source": "Samuel", "weight": 1}
+{"name": "Ḥīrām", "type": "person", "morphemes": ["hīrām"], "source": "Samuel", "weight": 1}
+{"name": "Šelōmōh", "type": "person", "morphemes": ["śālōm"], "source": "Samuel", "weight": 1}
+{"name": "Paltīʾēl", "type": "person", "morphemes": ["pālaṭ", "ēl"], "source": "Samuel", "weight": 1}
+{"name": "ʿŌbēd-ʾedōm", "type": "person", "morphemes": ["ābad", "ādōm"], "source": "Samuel", "weight": 1}
+{"name": "ʾAbīšag", "type": "person", "morphemes": ["abīśag"], "source": "Kings", "weight": 1}
+{"name": "Reḥabʿām", "type": "person", "morphemes": ["rāhab", "am"], "source": "Kings", "weight": 1}
+{"name": "Yārobʿām", "type": "person", "morphemes": ["yārobām"], "source": "Kings", "weight": 1}
+{"name": "ʾAḥiyyāh", "type": "person", "morphemes": ["āh", "yāh"], "source": "Kings", "weight": 1}
+{"name": "ʾAbiyyāh", "type": "person", "morphemes": ["āb", "yāh"], "source": "Kings", "weight": 1}
+{"name": "ʾĀsāʾ", "type": "person", "morphemes": ["āsā"], "source": "Kings", "weight": 1}
+{"name": "Yehōšāpāṭ", "type": "person", "morphemes": ["yāh", "śāpaṭ"], "source": "Kings", "weight": 1}
+{"name": "Yehōrām", "type": "person", "morphemes": ["yāh", "rūm"], "source": "Kings", "weight": 1}
+{"name": "ʾAḥazyāh", "type": "person", "morphemes": ["āhaj", "yāh"], "source": "Kings", "weight": 1}
+{"name": "ʿAtalyāh", "type": "person", "morphemes": ["atalyāh"], "source": "Kings", "weight": 1}
+{"name": "Yehōʾāš", "type": "person", "morphemes": ["yehōāś"], "source": "Kings", "weight": 1}
+{"name": "ʾAmaṣyāh", "type": "person", "morphemes": ["āmaṣ", "yāh"], "source": "Kings", "weight": 1}
+{"name": "ʿUzziyyāh", "type": "person", "morphemes": ["ōj", "yāh"], "source": "Kings", "weight": 1}
+{"name": "ʿAzaryāh", "type": "person", "morphemes": ["ājar", "yāh"], "source": "Kings", "weight": 1}
+{"name": "ʾĀḥāz", "type": "person", "morphemes": ["āhaj"], "source": "Kings", "weight": 1}
+{"name": "Ḥizqiyyāh", "type": "person", "morphemes": ["hājak", "yāh"], "source": "Kings", "weight": 1}
+{"name": "ʾĀmōn", "type": "person", "morphemes": ["āmōn"], "source": "Kings", "weight": 1}
+{"name": "Yōʾšiyyāh", "type": "person", "morphemes": ["yōśiyyāh"], "source": "Kings", "weight": 1}
+{"name": "Yehōʾāḥāz", "type": "person", "morphemes": ["yāh", "āhaj"], "source": "Kings", "weight": 1}
+{"name": "Yehōyāqīm", "type": "person", "morphemes": ["yāh", "kūm"], "source": "Kings", "weight": 1}
+{"name": "Yehōyākīn", "type": "person", "morphemes": ["yāh", "kūn"], "source": "Kings", "weight": 1}
+{"name": "Ṣidqiyyāh", "type": "person", "morphemes": ["ṣedek", "yāh"], "source": "Kings", "weight": 1}
+{"name": "Mattanyāh", "type": "person", "morphemes": ["nātan", "yāh"], "source": "Kings", "weight": 1}
+{"name": "Gedalyāh", "type": "person", "morphemes": ["gādal", "yāh"], "source": "Kings", "weight": 1}
+{"name": "Nebūkadneʾṣṣar", "type": "person", "morphemes": ["nebūkadneṣṣar"], "source": "Kings", "weight": 1}
+{"name": "Nebūzarʾadān", "type": "person", "morphemes": ["nebūjaradān"], "source": "Kings", "weight": 1}
+{"name": "Sanḥērīb", "type": "person", "morphemes": ["sanhērīb"], "source": "Kings", "weight": 1}
+{"name": "Tiglat-pilʾeser", "type": "person", "morphemes": ["tiglat-pileser"], "source": "Kings", "weight": 1}
+{"name": "Šalmaneʾser", "type": "person", "morphemes": ["śalmaneser"], "source": "Kings", "weight": 1}
+{"name": "Sargōn", "type": "person", "morphemes": ["sargōn"], "source": "Isaiah", "weight": 1}
+{"name": "ʾEsar-ḥaddōn", "type": "person", "morphemes": ["esar-haddōn"], "source": "Kings", "weight": 1}
+{"name": "Merōdak-baladān", "type": "person", "morphemes": ["merōdak", "baladān"], "source": "Isaiah", "weight": 1}
+{"name": "Reṣīn", "type": "person", "morphemes": ["reṣīn"], "source": "Kings", "weight": 1}
+{"name": "Peqaḥ", "type": "person", "morphemes": ["pākah"], "source": "Kings", "weight": 1}
+{"name": "Baʿšāʾ", "type": "person", "morphemes": ["baśā"], "source": "Kings", "weight": 1}
+{"name": "ʿOmrī", "type": "person", "morphemes": ["omrī"], "source": "Kings", "weight": 1}
+{"name": "ʾAḥʾāb", "type": "person", "morphemes": ["āh", "āb"], "source": "Kings", "weight": 1}
+{"name": "ʾĪzebel", "type": "person", "morphemes": ["ījebel"], "source": "Kings", "weight": 1}
+{"name": "ʾEtbaʿal", "type": "person", "morphemes": ["ēt", "baal"], "source": "Kings", "weight": 1}
+{"name": "Yēhūʾ", "type": "person", "morphemes": ["yāh", "hū"], "source": "Kings", "weight": 1}
+{"name": "ʾĒliyyāh", "type": "person", "morphemes": ["ēl", "yāh"], "source": "Kings", "weight": 1}
+{"name": "ʾElīšāʿ", "type": "person", "morphemes": ["ēl", "yāśa"], "source": "Kings", "weight": 1}
+{"name": "Gēḥazī", "type": "person", "morphemes": ["gēhajī"], "source": "Kings", "weight": 1}
+{"name": "Ḥazāʾēl", "type": "person", "morphemes": ["hājāh", "ēl"], "source": "Kings", "weight": 1}
+{"name": "Nābōt", "type": "person", "morphemes": ["nābōt"], "source": "Kings", "weight": 1}
+{"name": "ʿŌbadyāh", "type": "person", "morphemes": ["ābad", "yāh"], "source": "Kings", "weight": 1}
+{"name": "Mīkāyāh", "type": "person", "morphemes": ["mī", "ke", "yāh"], "source": "Kings", "weight": 1}
+{"name": "ʾAdōnīrām", "type": "person", "morphemes": ["ādōn", "rūm"], "source": "Kings", "weight": 1}
+{"name": "ʾElyāqīm", "type": "person", "morphemes": ["ēl", "kūm"], "source": "Kings", "weight": 1}
+{"name": "Ḥilqiyyāh", "type": "person", "morphemes": ["hēlek", "yāh"], "source": "Kings", "weight": 1}
+{"name": "Ḥuldāh", "type": "person", "morphemes": ["hōled"], "source": "Kings", "weight": 1}
+{"name": "ʾAḥīqām", "type": "person", "morphemes": ["āh", "kūm"], "source": "Kings", "weight": 1}
+{"name": "Yehōšebaʿ", "type": "person", "morphemes": ["yāh", "śeba"], "source": "Kings", "weight": 1}
+{"name": "Yōnāh", "type": "person", "morphemes": ["yōnāh"], "source": "Kings", "weight": 1}
+{"name": "Šīšaq", "type": "person", "morphemes": ["śīśak"], "source": "Kings", "weight": 1}
+{"name": "Yōḥānān", "type": "person", "morphemes": ["yāh", "hānan"], "source": "Kings", "weight": 1}
+{"name": "Serāyāh", "type": "person", "morphemes": ["śārāh", "yāh"], "source": "Kings", "weight": 1}
+{"name": "Ḥepṣī-bāh", "type": "person", "morphemes": ["hēpeṣ", "bāh"], "source": "Kings", "weight": 1}
+{"name": "Yešaʿyāh", "type": "person", "morphemes": ["yāśa", "yāh"], "source": "Isaiah", "weight": 1}
+{"name": "ʾĀmōṣ", "type": "person", "morphemes": ["āmaṣ"], "source": "Isaiah", "weight": 1}
+{"name": "ʿImmānūʾēl", "type": "person", "morphemes": ["im", "ēl"], "source": "Isaiah", "weight": 1}
+{"name": "Šeʾār-yāšūb", "type": "person", "morphemes": ["śeār", "śūb"], "source": "Isaiah", "weight": 1}
+{"name": "Mahēr-šālāl-ḥāš-baz", "type": "person", "morphemes": ["māhar", "śālāl", "hūś", "baj"], "source": "Isaiah", "weight": 1}
+{"name": "Yirmeyāh", "type": "person", "morphemes": ["yirmeyāh"], "source": "Jeremiah", "weight": 1}
+{"name": "Nēriyyāh", "type": "person", "morphemes": ["nēr", "yāh"], "source": "Jeremiah", "weight": 1}
+{"name": "Ḥananyāh", "type": "person", "morphemes": ["hānan", "yāh"], "source": "Jeremiah", "weight": 1}
+{"name": "Šemaʿyāh", "type": "person", "morphemes": ["śāma", "yāh"], "source": "Jeremiah", "weight": 1}
+{"name": "ʿEbed-melek", "type": "person", "morphemes": ["ābad", "melek"], "source": "Jeremiah", "weight": 1}
+{"name": "Gemaryāh", "type": "person", "morphemes": ["gāmar", "yāh"], "source": "Jeremiah", "weight": 1}
+{"name": "ʾElnātān", "type": "person", "morphemes": ["ēl", "nātan"], "source": "Jeremiah", "weight": 1}
+{"name": "Yeḥezqēʾl", "type": "person", "morphemes": ["hājak", "ēl"], "source": "Ezekiel", "weight": 1}
+{"name": "Pelaṭyāh", "type": "person", "morphemes": ["pālaṭ", "yāh"], "source": "Ezekiel", "weight": 1}
+{"name": "Gōg", "type": "person", "morphemes": ["gōg"], "source": "Ezekiel", "weight": 1}
+{"name": "Dāniyyēʾl", "type": "person", "morphemes": ["dīn", "ēl"], "source": "Daniel", "weight": 1}
+{"name": "Mīšāʾēl", "type": "person", "morphemes": ["mīśāēl"], "source": "Daniel", "weight": 1}
+{"name": "Bēlṭešaʾṣṣar", "type": "person", "morphemes": ["bēlṭeśaṣṣar"], "source": "Daniel", "weight": 1}
+{"name": "Šadrak", "type": "person", "morphemes": ["śadrak"], "source": "Daniel", "weight": 1}
+{"name": "Mēšak", "type": "person", "morphemes": ["mēśak"], "source": "Daniel", "weight": 1}
+{"name": "ʿAbēd-negō", "type": "person", "morphemes": ["abēd-negō"], "source": "Daniel", "weight": 1}
+{"name": "Bēlšaʾṣṣar", "type": "person", "morphemes": ["bēlśaṣṣar"], "source": "Daniel", "weight": 1}
+{"name": "Daryāweš", "type": "person", "morphemes": ["daryāveś"], "source": "Daniel", "weight": 1}
+{"name": "Kōreš", "type": "person", "morphemes": ["kōreś"], "source": "Isaiah", "weight": 1}
+{"name": "ʾAḥašwērōš", "type": "person", "morphemes": ["ahaśvērōś"], "source": "Esther", "weight": 1}
+{"name": "ʾArtaḥšastāʾ", "type": "person", "morphemes": ["artahśastā"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Yōʾēl", "type": "person", "morphemes": ["yāh", "ēl"], "source": "Twelve Prophets", "weight": 1}
+{"name": "ʿĀmōs", "type": "person", "morphemes": ["āmas"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Ḥabaqqūq", "type": "person", "morphemes": ["habakkūk"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Ṣepanyāh", "type": "person", "morphemes": ["ṣāpan", "yāh"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Ḥaggay", "type": "person", "morphemes": ["hag"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Šealtīʾēl", "type": "person", "morphemes": ["śāal", "ēl"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Yehōṣādāq", "type": "person", "morphemes": ["yāh", "ṣedek"], "source": "Twelve Prophets", "weight": 1}
+{"name": "Malʾākī", "type": "person", "morphemes": ["malāk"], "source": "Twelve Prophets", "weight": 1}
+{"name": "ʿEzrāʾ", "type": "person", "morphemes": ["ājar"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Neḥemyāh", "type": "person", "morphemes": ["nāham", "yāh"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Sanballaṭ", "type": "person", "morphemes": ["sanballaṭ"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "Ṭōbiyyāh", "type": "person", "morphemes": ["ṭōb", "yāh"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "ʾElyāšīb", "type": "person", "morphemes": ["ēl", "śūb"], "source": "Ezra-Nehemiah", "weight": 1}
+{"name": "ʾEstēr", "type": "person", "morphemes": ["estēr"], "source": "Esther", "weight": 1}
+{"name": "Hadassāh", "type": "person", "morphemes": ["hadas"], "source": "Esther", "weight": 1}
+{"name": "Mordekay", "type": "person", "morphemes": ["mordekay"], "source": "Esther", "weight": 1}
+{"name": "Hāmān", "type": "person", "morphemes": ["hāmān"], "source": "Esther", "weight": 1}
+{"name": "Waštī", "type": "person", "morphemes": ["vaśtī"], "source": "Esther", "weight": 1}
+{"name": "ʾAbīḥayil", "type": "person", "morphemes": ["āb", "hayil"], "source": "Esther", "weight": 1}
+{"name": "ʾIyyōb", "type": "person", "morphemes": ["iyyōb"], "source": "Job", "weight": 1}
+{"name": "Bildad", "type": "person", "morphemes": ["bildad"], "source": "Job", "weight": 1}
+{"name": "Ṣōpar", "type": "person", "morphemes": ["ṣōpar"], "source": "Job", "weight": 1}
+{"name": "ʾElīhūʾ", "type": "person", "morphemes": ["ēl", "hū"], "source": "Job", "weight": 1}
+{"name": "Yemīmāh", "type": "person", "morphemes": ["yemīmāh"], "source": "Job", "weight": 1}
+{"name": "Qeṣīʿāh", "type": "person", "morphemes": ["keṣīāh"], "source": "Job", "weight": 1}
+{"name": "Qeren-happūk", "type": "person", "morphemes": ["keren", "pūk"], "source": "Job", "weight": 1}
+{"name": "ʾĀsāp", "type": "person", "morphemes": ["āsap"], "source": "Psalms", "weight": 1}
+{"name": "Lemūʾēl", "type": "person", "morphemes": ["lemō", "ēl"], "source": "Proverbs", "weight": 1}
+{"name": "Yaʿbēṣ", "type": "person", "morphemes": ["ōṣeb"], "source": "Chronicles", "weight": 1}

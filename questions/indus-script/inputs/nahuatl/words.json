@@ -1,0 +1,843 @@
+{
+ "002": {
+  "two": [
+   "ōme"
+  ],
+  "pair": [],
+  "strokes": [],
+  "tally": [
+   "tlapōvalli"
+  ]
+ },
+ "060": {
+  "hook": [
+   "cikolli"
+  ],
+  "stroke": [],
+  "mark": [
+   "maciyōtl"
+  ],
+  "line": [
+   "pantli"
+  ]
+ },
+ "061": {
+  "tongs": [],
+  "fork": [],
+  "forked stick": [],
+  "split": [
+   "tsayāna",
+   "śeloa"
+  ]
+ },
+ "070": {
+  "arrow": [
+   "mītl",
+   "tlakoctli"
+  ],
+  "spear": [
+   "tepostopīlli",
+   "tlakoctli"
+  ],
+  "barb": [],
+  "point": [
+   "yakatl",
+   "vitstli"
+  ]
+ },
+ "090": {
+  "man": [
+   "ōkictli",
+   "tlākatl"
+  ],
+  "person": [
+   "tlākatl"
+  ],
+  "stand": [],
+  "body": [
+   "nakayōtl",
+   "tlaktli"
+  ]
+ },
+ "100": {
+  "heads": [
+   "tsontekomatl",
+   "kvāitl"
+  ],
+  "crowd": [],
+  "man": [
+   "ōkictli",
+   "tlākatl"
+  ],
+  "three": [
+   "ēyi"
+  ]
+ },
+ "125": {
+  "archer": [
+   "tlamīnki"
+  ],
+  "hunter": [
+   "tlamīnki"
+  ],
+  "shoot": [],
+  "bow": [
+   "tlavitōlli"
+  ]
+ },
+ "140": {
+  "woman": [
+   "sivātl"
+  ],
+  "mother": [
+   "nāntli"
+  ],
+  "breasts": [
+   "cīcīvalli"
+  ],
+  "raise": [
+   "ketsa"
+  ]
+ },
+ "142": {
+  "staff": [
+   "topīlli"
+  ],
+  "man": [
+   "ōkictli",
+   "tlākatl"
+  ],
+  "walker": [
+   "nehnenki"
+  ],
+  "stick": [
+   "kvavitl",
+   "tlakotl"
+  ]
+ },
+ "151": {
+  "carrier": [
+   "tlamamah"
+  ],
+  "load": [
+   "tlamamalli"
+  ],
+  "carry": [
+   "mama"
+  ],
+  "yoke": []
+ },
+ "154": {
+  "carrier": [
+   "tlamamah"
+  ],
+  "load": [
+   "tlamamalli"
+  ],
+  "jar": [
+   "komitl",
+   "tekomatl"
+  ],
+  "carry": [
+   "mama"
+  ]
+ },
+ "156": {
+  "carrier": [
+   "tlamamah"
+  ],
+  "load": [
+   "tlamamalli"
+  ],
+  "fan": [
+   "ehkasēvastli"
+  ],
+  "carry": [
+   "mama"
+  ]
+ },
+ "176": {
+  "sit": [
+   "tlālia"
+  ],
+  "kneel": [
+   "tlankvaketsa"
+  ],
+  "worker": [
+   "tekitki"
+  ],
+  "rake": []
+ },
+ "220": {
+  "fish": [
+   "micin"
+  ],
+  "fishing": [
+   "micmā"
+  ],
+  "fin": [],
+  "scale": []
+ },
+ "226": {
+  "fish": [
+   "micin"
+  ],
+  "fish trap": [],
+  "pond": [
+   "āmanalli",
+   "āteskatl"
+  ],
+  "catch": [
+   "āna"
+  ]
+ },
+ "231": {
+  "fish": [
+   "micin"
+  ],
+  "spot": [],
+  "dot": [],
+  "mark": [
+   "maciyōtl"
+  ]
+ },
+ "233": {
+  "fish": [
+   "micin"
+  ],
+  "cut fish": [],
+  "dried fish": [],
+  "band": []
+ },
+ "235": {
+  "fish": [
+   "micin"
+  ],
+  "roof": [
+   "tlapantli"
+  ],
+  "cover": [],
+  "lid": []
+ },
+ "236": {
+  "fish": [
+   "micin"
+  ],
+  "roof": [
+   "tlapantli"
+  ],
+  "trap": [],
+  "house": [
+   "kalli"
+  ]
+ },
+ "240": {
+  "catfish": [],
+  "fish": [
+   "micin"
+  ],
+  "whiskers": [
+   "tēntsontli"
+  ],
+  "barbel": []
+ },
+ "255": {
+  "fish": [
+   "micin"
+  ],
+  "fin": [],
+  "lizard": [
+   "kvetspalin"
+  ],
+  "scale": []
+ },
+ "350": {
+  "roots": [
+   "nelvatl",
+   "nelvayōtl"
+  ],
+  "plant": [
+   "śivitl"
+  ],
+  "sprout": [],
+  "tuft": []
+ },
+ "368": {
+  "flag": [
+   "pāmitl",
+   "pantli"
+  ],
+  "banner": [
+   "pāmitl",
+   "pantli"
+  ],
+  "pennant": [
+   "pāmitl",
+   "pantli"
+  ],
+  "pole": [
+   "kvavitl",
+   "tlaketsalli"
+  ]
+ },
+ "388": {
+  "grain": [
+   "tlaōlli"
+  ],
+  "ear": [
+   "nakastli"
+  ],
+  "sheaf": [],
+  "bunch": []
+ },
+ "390": {
+  "tree": [
+   "kvavitl"
+  ],
+  "branch": [
+   "kvammāitl"
+  ],
+  "twig": [
+   "tlakotl"
+  ],
+  "fork": []
+ },
+ "400": {
+  "comb": [
+   "tsikvavastli"
+  ],
+  "teeth": [
+   "tlantli"
+  ],
+  "rake": [],
+  "ladder": [
+   "ehkavastli"
+  ]
+ },
+ "405": {
+  "branch": [
+   "kvammāitl"
+  ],
+  "tree": [
+   "kvavitl"
+  ],
+  "twig": [
+   "tlakotl"
+  ],
+  "sprout": []
+ },
+ "407": {
+  "branch": [
+   "kvammāitl"
+  ],
+  "twig": [
+   "tlakotl"
+  ],
+  "tree": [
+   "kvavitl"
+  ],
+  "shoot": []
+ },
+ "415": {
+  "lamp": [],
+  "rake": [],
+  "trident": [],
+  "fork": []
+ },
+ "416": {
+  "lamp": [],
+  "rake": [],
+  "stand": [],
+  "tier": []
+ },
+ "435": {
+  "zigzag": [],
+  "lightning": [
+   "tlapetlānilli"
+  ],
+  "snake": [
+   "kōātl"
+  ],
+  "turn": [
+   "kvepa"
+  ]
+ },
+ "440": {
+  "doorway": [
+   "kiyavatl"
+  ],
+  "door": [
+   "kiyavatl"
+  ],
+  "frame": [],
+  "gate": [
+   "kiyavatl"
+  ]
+ },
+ "455": {
+  "hearth": [
+   "tlekvilli"
+  ],
+  "triangles": [],
+  "stones": [
+   "tetl"
+  ],
+  "fire": [
+   "tletl"
+  ]
+ },
+ "460": {
+  "peaks": [
+   "tepētl"
+  ],
+  "mountains": [
+   "tepētl"
+  ],
+  "hills": [
+   "tepētl",
+   "tlatelli"
+  ],
+  "spikes": [
+   "vitstli"
+  ]
+ },
+ "503": {
+  "hill": [
+   "tepētl",
+   "tlatelli"
+  ],
+  "heap": [],
+  "stack": [],
+  "pile": []
+ },
+ "520": {
+  "spear": [
+   "tepostopīlli",
+   "tlakoctli"
+  ],
+  "arrow": [
+   "mītl",
+   "tlakoctli"
+  ],
+  "lance": [
+   "tepostopīlli"
+  ],
+  "point": [
+   "yakatl",
+   "vitstli"
+  ]
+ },
+ "527": {
+  "box": [
+   "petlakalli",
+   "tōptli"
+  ],
+  "basket": [
+   "cikivitl",
+   "tanatli"
+  ],
+  "stool": [
+   "ikpalli"
+  ],
+  "chest": [
+   "elpantli",
+   "petlakalli"
+  ]
+ },
+ "550": {
+  "drum": [
+   "vēvētl",
+   "teponāstli"
+  ],
+  "pincers": [],
+  "tongs": [],
+  "claw": [
+   "istetl"
+  ]
+ },
+ "555": {
+  "pincers": [],
+  "drum": [
+   "vēvētl",
+   "teponāstli"
+  ],
+  "claw": [
+   "istetl"
+  ],
+  "tongs": []
+ },
+ "575": {
+  "building": [
+   "kalli"
+  ],
+  "stand": [],
+  "shrine": [
+   "teōkalli",
+   "momōstli"
+  ],
+  "pedestal": []
+ },
+ "585": {
+  "tent": [],
+  "hearth": [
+   "tlekvilli"
+  ],
+  "hut": [
+   "śakalli"
+  ],
+  "stand": []
+ },
+ "590": {
+  "box": [
+   "petlakalli",
+   "tōptli"
+  ],
+  "pole": [
+   "kvavitl",
+   "tlaketsalli"
+  ],
+  "flag": [
+   "pāmitl",
+   "pantli"
+  ],
+  "standard": [
+   "pāmitl",
+   "pantli"
+  ]
+ },
+ "595": {
+  "box": [
+   "petlakalli",
+   "tōptli"
+  ],
+  "pole": [
+   "kvavitl",
+   "tlaketsalli"
+  ],
+  "basket": [
+   "cikivitl",
+   "tanatli"
+  ],
+  "standard": [
+   "pāmitl",
+   "pantli"
+  ]
+ },
+ "615": {
+  "grid": [],
+  "field": [
+   "mīlli"
+  ],
+  "net": [
+   "mātlatl"
+  ],
+  "wall": [
+   "tepantli",
+   "tenāmitl"
+  ]
+ },
+ "617": {
+  "grid": [],
+  "fields": [
+   "mīlli"
+  ],
+  "nets": [
+   "mātlatl"
+  ],
+  "walls": [
+   "tepantli",
+   "tenāmitl"
+  ]
+ },
+ "621": {
+  "door": [
+   "kiyavatl"
+  ],
+  "box": [
+   "petlakalli",
+   "tōptli"
+  ],
+  "frame": [],
+  "cabinet": []
+ },
+ "690": {
+  "cross": [],
+  "crossroads": [
+   "ohmaśak"
+  ],
+  "junction": [],
+  "meet": [
+   "nāmiki"
+  ]
+ },
+ "692": {
+  "cross": [],
+  "crossroads": [
+   "ohmaśak"
+  ],
+  "junction": [],
+  "band": []
+ },
+ "705": {
+  "churn": [],
+  "pot": [
+   "komitl",
+   "śoktli"
+  ],
+  "stick": [
+   "kvavitl",
+   "tlakotl"
+  ],
+  "stir": [
+   "neloa"
+  ]
+ },
+ "706": {
+  "churn": [],
+  "drop": [],
+  "pot": [
+   "komitl",
+   "śoktli"
+  ],
+  "stir": [
+   "neloa"
+  ]
+ },
+ "717": {
+  "paw": [
+   "ikśitl",
+   "māitl"
+  ],
+  "hand": [
+   "māitl"
+  ],
+  "bundle": [
+   "tlakimilōlli"
+  ],
+  "rake": []
+ },
+ "740": {
+  "jar": [
+   "komitl",
+   "tekomatl"
+  ],
+  "pot": [
+   "komitl",
+   "śoktli"
+  ],
+  "vessel": [
+   "tekomatl",
+   "komitl"
+  ],
+  "handle": []
+ },
+ "741": {
+  "jar": [
+   "komitl",
+   "tekomatl"
+  ],
+  "pot": [
+   "komitl",
+   "śoktli"
+  ],
+  "vessel": [
+   "tekomatl",
+   "komitl"
+  ],
+  "fill": [
+   "tēmitia"
+  ]
+ },
+ "742": {
+  "jar": [
+   "komitl",
+   "tekomatl"
+  ],
+  "pot": [
+   "komitl",
+   "śoktli"
+  ],
+  "vessel": [
+   "tekomatl",
+   "komitl"
+  ],
+  "fill": [
+   "tēmitia"
+  ]
+ },
+ "760": {
+  "pot": [
+   "komitl",
+   "śoktli"
+  ],
+  "sprout": [],
+  "plant": [
+   "śivitl"
+  ],
+  "horns": [
+   "kvākvavitl"
+  ]
+ },
+ "790": {
+  "leaf": [
+   "īsvatl"
+  ],
+  "seed": [
+   "śinactli",
+   "actli"
+  ],
+  "eye": [
+   "īśtelolohtli",
+   "īśtli"
+  ],
+  "diamond": []
+ },
+ "798": {
+  "crab": [
+   "tekvisitli"
+  ],
+  "claw": [
+   "istetl"
+  ],
+  "pincer": [],
+  "shell": [
+   "teksistli",
+   "eptli"
+  ]
+ },
+ "803": {
+  "leaf": [
+   "īsvatl"
+  ],
+  "tree": [
+   "kvavitl"
+  ],
+  "vein": [
+   "tlalvatl"
+  ],
+  "pipal": []
+ },
+ "806": {
+  "leaf": [
+   "īsvatl"
+  ],
+  "seed": [
+   "śinactli",
+   "actli"
+  ],
+  "sprout": [],
+  "vein": [
+   "tlalvatl"
+  ]
+ },
+ "817": {
+  "leaf": [
+   "īsvatl"
+  ],
+  "bud": [],
+  "seed": [
+   "śinactli",
+   "actli"
+  ],
+  "point": [
+   "yakatl",
+   "vitstli"
+  ]
+ },
+ "820": {
+  "wheel": [],
+  "spokes": [],
+  "sun": [
+   "tōnativ"
+  ],
+  "star": [
+   "sitlālin"
+  ]
+ },
+ "832": {
+  "eye": [
+   "īśtelolohtli",
+   "īśtli"
+  ],
+  "seed": [
+   "śinactli",
+   "actli"
+  ],
+  "almond": [],
+  "pupil": []
+ },
+ "840": {
+  "leaves": [
+   "īsvatl"
+  ],
+  "eyes": [
+   "īśtelolohtli",
+   "īśtli"
+  ],
+  "pair": [],
+  "seeds": [
+   "śinactli",
+   "actli"
+  ]
+ },
+ "861": {
+  "diamond": [],
+  "bud": [],
+  "leaf": [
+   "īsvatl"
+  ],
+  "point": [
+   "yakatl",
+   "vitstli"
+  ]
+ },
+ "892": {
+  "bow": [
+   "tlavitōlli"
+  ],
+  "arrow": [
+   "mītl",
+   "tlakoctli"
+  ],
+  "shoot": [],
+  "archer": [
+   "tlamīnki"
+  ]
+ },
+ "900": {
+  "crescent": [],
+  "moon": [
+   "mētstli"
+  ],
+  "curve": [],
+  "bow": [
+   "tlavitōlli"
+  ]
+ },
+ "904": {
+  "crescents": [],
+  "moons": [
+   "mētstli"
+  ],
+  "curves": [],
+  "waves": []
+ },
+ "920": {
+  "crescent": [],
+  "moon": [
+   "mētstli"
+  ],
+  "leaf": [
+   "īsvatl"
+  ],
+  "bud": []
+ },
+ "923": {
+  "boomerang": [],
+  "crescent": [],
+  "moon": [
+   "mētstli"
+  ],
+  "bend": []
+ }
+}

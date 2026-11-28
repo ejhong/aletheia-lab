@@ -1,0 +1,20 @@
+{
+ "lang": "finnish",
+ "names": "names.jsonl",
+ "parts": "parts.jsonl",
+ "words": "words.json",
+ "number_words": {
+  "1": "uksi",
+  "2": "kaksi",
+  "3": "kolme",
+  "4": "nelja",
+  "5": "viisi",
+  "6": "kuusi",
+  "7": "seitseman",
+  "12": "kaksitoista"
+ },
+ "punmax": 0.5,
+ "weights": "once",
+ "drop_parts": [],
+ "loan_category": "none"
+}

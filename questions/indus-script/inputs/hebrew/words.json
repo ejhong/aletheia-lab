@@ -1,0 +1,1057 @@
+{
+ "002": {
+  "two": [
+   "śenayim"
+  ],
+  "pair": [
+   "ṣemed"
+  ],
+  "strokes": [],
+  "tally": []
+ },
+ "060": {
+  "hook": [
+   "hakkā",
+   "vāv"
+  ],
+  "stroke": [],
+  "mark": [
+   "tāv",
+   "ōt"
+  ],
+  "line": [
+   "kav"
+  ]
+ },
+ "061": {
+  "tongs": [
+   "melkāhayim"
+  ],
+  "fork": [
+   "majlēg"
+  ],
+  "forked stick": [],
+  "split": [
+   "bāka",
+   "pālah"
+  ]
+ },
+ "070": {
+  "arrow": [
+   "hēṣ"
+  ],
+  "spear": [
+   "hanīt",
+   "rōmah"
+  ],
+  "barb": [
+   "śēk"
+  ],
+  "point": [
+   "kāṣeh",
+   "nekuddā"
+  ]
+ },
+ "090": {
+  "man": [
+   "īś",
+   "ādām"
+  ],
+  "person": [
+   "ādām",
+   "nepeś"
+  ],
+  "stand": [
+   "āmad",
+   "mekōnā"
+  ],
+  "body": [
+   "geviyyā",
+   "bāśār"
+  ]
+ },
+ "100": {
+  "heads": [
+   "rōś"
+  ],
+  "crowd": [
+   "hāmōn",
+   "kāhāl"
+  ],
+  "man": [
+   "īś",
+   "ādām"
+  ],
+  "three": [
+   "śālōś"
+  ]
+ },
+ "125": {
+  "archer": [
+   "mōreh",
+   "kaśśāt"
+  ],
+  "hunter": [
+   "ṣayyād"
+  ],
+  "shoot": [
+   "hōṭer",
+   "yōneket"
+  ],
+  "bow": [
+   "keśet"
+  ]
+ },
+ "140": {
+  "woman": [
+   "iśśā"
+  ],
+  "mother": [
+   "ēm"
+  ],
+  "breasts": [
+   "śad",
+   "dad"
+  ],
+  "raise": [
+   "rūm",
+   "nāśā"
+  ]
+ },
+ "142": {
+  "staff": [
+   "maṭṭeh",
+   "makkēl"
+  ],
+  "man": [
+   "īś",
+   "ādām"
+  ],
+  "walker": [
+   "hōlēk",
+   "ōbēr"
+  ],
+  "stick": [
+   "makkēl",
+   "ēṣ"
+  ]
+ },
+ "151": {
+  "carrier": [
+   "sabbāl",
+   "nōśē"
+  ],
+  "load": [
+   "maśśā",
+   "sēbel"
+  ],
+  "carry": [
+   "nāśā",
+   "sābal"
+  ],
+  "yoke": [
+   "ōl",
+   "mōṭā"
+  ]
+ },
+ "154": {
+  "carrier": [
+   "sabbāl",
+   "nōśē"
+  ],
+  "load": [
+   "maśśā",
+   "sēbel"
+  ],
+  "jar": [
+   "kad",
+   "ṣappahat"
+  ],
+  "carry": [
+   "nāśā",
+   "sābal"
+  ]
+ },
+ "156": {
+  "carrier": [
+   "sabbāl",
+   "nōśē"
+  ],
+  "load": [
+   "maśśā",
+   "sēbel"
+  ],
+  "fan": [
+   "mijreh",
+   "rahat"
+  ],
+  "carry": [
+   "nāśā",
+   "sābal"
+  ]
+ },
+ "176": {
+  "sit": [
+   "yāśab"
+  ],
+  "kneel": [
+   "kāra",
+   "bārak"
+  ],
+  "worker": [
+   "pōēl",
+   "śākīr"
+  ],
+  "rake": []
+ },
+ "220": {
+  "fish": [
+   "dāg",
+   "dāgā"
+  ],
+  "fishing": [
+   "dīg",
+   "dayyāg"
+  ],
+  "fin": [
+   "senappīr"
+  ],
+  "scale": [
+   "kaśkeśet",
+   "mōjenayim"
+  ]
+ },
+ "226": {
+  "fish": [
+   "dāg",
+   "dāgā"
+  ],
+  "fish trap": [],
+  "pond": [
+   "berēkā"
+  ],
+  "catch": [
+   "lākad",
+   "tāpaś"
+  ]
+ },
+ "231": {
+  "fish": [
+   "dāg",
+   "dāgā"
+  ],
+  "spot": [
+   "nekuddā",
+   "baheret"
+  ],
+  "dot": [
+   "nekuddā"
+  ],
+  "mark": [
+   "tāv",
+   "ōt"
+  ]
+ },
+ "233": {
+  "fish": [
+   "dāg",
+   "dāgā"
+  ],
+  "cut fish": [],
+  "dried fish": [],
+  "band": [
+   "hagōrā",
+   "ējōr"
+  ]
+ },
+ "235": {
+  "fish": [
+   "dāg",
+   "dāgā"
+  ],
+  "roof": [
+   "gāg"
+  ],
+  "cover": [
+   "kesūt",
+   "mikseh"
+  ],
+  "lid": [
+   "ṣāmīd"
+  ]
+ },
+ "236": {
+  "fish": [
+   "dāg",
+   "dāgā"
+  ],
+  "roof": [
+   "gāg"
+  ],
+  "trap": [
+   "mōkēś",
+   "pah"
+  ],
+  "house": [
+   "bayit"
+  ]
+ },
+ "240": {
+  "catfish": [],
+  "fish": [
+   "dāg",
+   "dāgā"
+  ],
+  "whiskers": [
+   "śāpām"
+  ],
+  "barbel": []
+ },
+ "255": {
+  "fish": [
+   "dāg",
+   "dāgā"
+  ],
+  "fin": [
+   "senappīr"
+  ],
+  "lizard": [
+   "leṭāā",
+   "ṣāb"
+  ],
+  "scale": [
+   "kaśkeśet",
+   "mōjenayim"
+  ]
+ },
+ "350": {
+  "roots": [
+   "śōreś"
+  ],
+  "plant": [
+   "ēśeb",
+   "neṭa"
+  ],
+  "sprout": [
+   "ṣemah"
+  ],
+  "tuft": [
+   "ṣīṣit",
+   "gedil"
+  ]
+ },
+ "368": {
+  "flag": [
+   "degel",
+   "nēs"
+  ],
+  "banner": [
+   "degel",
+   "nēs"
+  ],
+  "pennant": [
+   "degel",
+   "nēs"
+  ],
+  "pole": [
+   "mōṭ",
+   "bad"
+  ]
+ },
+ "388": {
+  "grain": [
+   "dāgān",
+   "bār"
+  ],
+  "ear": [
+   "ōjen"
+  ],
+  "sheaf": [
+   "alummā",
+   "ōmer"
+  ],
+  "bunch": [
+   "aguddā",
+   "eśkōl"
+  ]
+ },
+ "390": {
+  "tree": [
+   "ēṣ"
+  ],
+  "branch": [
+   "ānāp",
+   "śōkā"
+  ],
+  "twig": [
+   "jemōrā"
+  ],
+  "fork": [
+   "majlēg"
+  ]
+ },
+ "400": {
+  "comb": [],
+  "teeth": [
+   "śēn"
+  ],
+  "rake": [],
+  "ladder": [
+   "sullām"
+  ]
+ },
+ "405": {
+  "branch": [
+   "ānāp",
+   "śōkā"
+  ],
+  "tree": [
+   "ēṣ"
+  ],
+  "twig": [
+   "jemōrā"
+  ],
+  "sprout": [
+   "ṣemah"
+  ]
+ },
+ "407": {
+  "branch": [
+   "ānāp",
+   "śōkā"
+  ],
+  "twig": [
+   "jemōrā"
+  ],
+  "tree": [
+   "ēṣ"
+  ],
+  "shoot": [
+   "hōṭer",
+   "yōneket"
+  ]
+ },
+ "415": {
+  "lamp": [
+   "nēr"
+  ],
+  "rake": [],
+  "trident": [
+   "majlēg"
+  ],
+  "fork": [
+   "majlēg"
+  ]
+ },
+ "416": {
+  "lamp": [
+   "nēr"
+  ],
+  "rake": [],
+  "stand": [
+   "āmad",
+   "mekōnā"
+  ],
+  "tier": [
+   "ṭūr",
+   "ajārā"
+  ]
+ },
+ "435": {
+  "zigzag": [],
+  "lightning": [
+   "bārāk"
+  ],
+  "snake": [
+   "nāhāś",
+   "peten"
+  ],
+  "turn": [
+   "sābab",
+   "pānā"
+  ]
+ },
+ "440": {
+  "doorway": [
+   "petah"
+  ],
+  "door": [
+   "delet"
+  ],
+  "frame": [
+   "misgeret"
+  ],
+  "gate": [
+   "śaar"
+  ]
+ },
+ "455": {
+  "hearth": [
+   "mōkēd",
+   "kīrayim"
+  ],
+  "triangles": [],
+  "stones": [
+   "eben"
+  ],
+  "fire": [
+   "ēś",
+   "ūr"
+  ]
+ },
+ "460": {
+  "peaks": [
+   "rōś",
+   "gabnōn"
+  ],
+  "mountains": [
+   "har"
+  ],
+  "hills": [
+   "gibā"
+  ],
+  "spikes": [
+   "śēk",
+   "masmēr"
+  ]
+ },
+ "503": {
+  "hill": [
+   "gibā"
+  ],
+  "heap": [
+   "gal",
+   "arēmā"
+  ],
+  "stack": [
+   "gādīś",
+   "arēmā"
+  ],
+  "pile": [
+   "arēmā",
+   "gal"
+  ]
+ },
+ "520": {
+  "spear": [
+   "hanīt",
+   "rōmah"
+  ],
+  "arrow": [
+   "hēṣ"
+  ],
+  "lance": [
+   "rōmah",
+   "kīdōn"
+  ],
+  "point": [
+   "kāṣeh",
+   "nekuddā"
+  ]
+ },
+ "527": {
+  "box": [
+   "arōn"
+  ],
+  "basket": [
+   "sal",
+   "dūd"
+  ],
+  "stool": [
+   "mōśāb"
+  ],
+  "chest": [
+   "arōn",
+   "hājeh"
+  ]
+ },
+ "550": {
+  "drum": [
+   "tōp"
+  ],
+  "pincers": [
+   "melkāhayim"
+  ],
+  "tongs": [
+   "melkāhayim"
+  ],
+  "claw": [
+   "ṣippōren"
+  ]
+ },
+ "555": {
+  "pincers": [
+   "melkāhayim"
+  ],
+  "drum": [
+   "tōp"
+  ],
+  "claw": [
+   "ṣippōren"
+  ],
+  "tongs": [
+   "melkāhayim"
+  ]
+ },
+ "575": {
+  "building": [
+   "binyān"
+  ],
+  "stand": [
+   "āmad",
+   "mekōnā"
+  ],
+  "shrine": [
+   "mikdāś",
+   "bāmā"
+  ],
+  "pedestal": [
+   "kēn",
+   "mekōnā"
+  ]
+ },
+ "585": {
+  "tent": [
+   "ōhel",
+   "miśkān"
+  ],
+  "hearth": [
+   "mōkēd",
+   "kīrayim"
+  ],
+  "hut": [
+   "sukkā",
+   "melūnā"
+  ],
+  "stand": [
+   "āmad",
+   "mekōnā"
+  ]
+ },
+ "590": {
+  "box": [
+   "arōn"
+  ],
+  "pole": [
+   "mōṭ",
+   "bad"
+  ],
+  "flag": [
+   "degel",
+   "nēs"
+  ],
+  "standard": [
+   "nēs",
+   "degel"
+  ]
+ },
+ "595": {
+  "box": [
+   "arōn"
+  ],
+  "pole": [
+   "mōṭ",
+   "bad"
+  ],
+  "basket": [
+   "sal",
+   "dūd"
+  ],
+  "standard": [
+   "nēs",
+   "degel"
+  ]
+ },
+ "615": {
+  "grid": [
+   "mikbār",
+   "śebākā"
+  ],
+  "field": [
+   "śādeh",
+   "helkā"
+  ],
+  "net": [
+   "reśet",
+   "hērem"
+  ],
+  "wall": [
+   "hōmā",
+   "kīr"
+  ]
+ },
+ "617": {
+  "grid": [
+   "mikbār",
+   "śebākā"
+  ],
+  "fields": [
+   "śādeh",
+   "helkā"
+  ],
+  "nets": [
+   "reśet",
+   "hērem"
+  ],
+  "walls": [
+   "hōmā",
+   "kīr"
+  ]
+ },
+ "621": {
+  "door": [
+   "delet"
+  ],
+  "box": [
+   "arōn"
+  ],
+  "frame": [
+   "misgeret"
+  ],
+  "cabinet": []
+ },
+ "690": {
+  "cross": [
+   "tāv"
+  ],
+  "crossroads": [
+   "perek"
+  ],
+  "junction": [
+   "perek"
+  ],
+  "meet": [
+   "pāgaś",
+   "pāga"
+  ]
+ },
+ "692": {
+  "cross": [
+   "tāv"
+  ],
+  "crossroads": [
+   "perek"
+  ],
+  "junction": [
+   "perek"
+  ],
+  "band": [
+   "hagōrā",
+   "ējōr"
+  ]
+ },
+ "705": {
+  "churn": [
+   "mīṣ"
+  ],
+  "pot": [
+   "sīr",
+   "dūd"
+  ],
+  "stick": [
+   "makkēl",
+   "ēṣ"
+  ],
+  "stir": [
+   "ūr"
+  ]
+ },
+ "706": {
+  "churn": [
+   "mīṣ"
+  ],
+  "drop": [
+   "nēṭep",
+   "rāsīs"
+  ],
+  "pot": [
+   "sīr",
+   "dūd"
+  ],
+  "stir": [
+   "ūr"
+  ]
+ },
+ "717": {
+  "paw": [
+   "kap"
+  ],
+  "hand": [
+   "yād",
+   "kap"
+  ],
+  "bundle": [
+   "ṣerōr",
+   "aguddā"
+  ],
+  "rake": []
+ },
+ "740": {
+  "jar": [
+   "kad",
+   "ṣappahat"
+  ],
+  "pot": [
+   "sīr",
+   "dūd"
+  ],
+  "vessel": [
+   "kelī"
+  ],
+  "handle": [
+   "niṣṣāb",
+   "yād"
+  ]
+ },
+ "741": {
+  "jar": [
+   "kad",
+   "ṣappahat"
+  ],
+  "pot": [
+   "sīr",
+   "dūd"
+  ],
+  "vessel": [
+   "kelī"
+  ],
+  "fill": [
+   "mālē"
+  ]
+ },
+ "742": {
+  "jar": [
+   "kad",
+   "ṣappahat"
+  ],
+  "pot": [
+   "sīr",
+   "dūd"
+  ],
+  "vessel": [
+   "kelī"
+  ],
+  "fill": [
+   "mālē"
+  ]
+ },
+ "760": {
+  "pot": [
+   "sīr",
+   "dūd"
+  ],
+  "sprout": [
+   "ṣemah"
+  ],
+  "plant": [
+   "ēśeb",
+   "neṭa"
+  ],
+  "horns": [
+   "keren"
+  ]
+ },
+ "790": {
+  "leaf": [
+   "āleh"
+  ],
+  "seed": [
+   "jera"
+  ],
+  "eye": [
+   "ayin"
+  ],
+  "diamond": [
+   "yahalōm",
+   "śāmīr"
+  ]
+ },
+ "798": {
+  "crab": [],
+  "claw": [
+   "ṣippōren"
+  ],
+  "pincer": [
+   "melkāhayim"
+  ],
+  "shell": []
+ },
+ "803": {
+  "leaf": [
+   "āleh"
+  ],
+  "tree": [
+   "ēṣ"
+  ],
+  "vein": [],
+  "pipal": []
+ },
+ "806": {
+  "leaf": [
+   "āleh"
+  ],
+  "seed": [
+   "jera"
+  ],
+  "sprout": [
+   "ṣemah"
+  ],
+  "vein": []
+ },
+ "817": {
+  "leaf": [
+   "āleh"
+  ],
+  "bud": [
+   "perah",
+   "ṣīṣ"
+  ],
+  "seed": [
+   "jera"
+  ],
+  "point": [
+   "kāṣeh",
+   "nekuddā"
+  ]
+ },
+ "820": {
+  "wheel": [
+   "ōpan",
+   "galgal"
+  ],
+  "spokes": [
+   "hiśśūk"
+  ],
+  "sun": [
+   "śemeś",
+   "hammā"
+  ],
+  "star": [
+   "kōkāb"
+  ]
+ },
+ "832": {
+  "eye": [
+   "ayin"
+  ],
+  "seed": [
+   "jera"
+  ],
+  "almond": [
+   "śākēd",
+   "lūj"
+  ],
+  "pupil": [
+   "īśōn",
+   "bābā"
+  ]
+ },
+ "840": {
+  "leaves": [
+   "āleh"
+  ],
+  "eyes": [
+   "ayin"
+  ],
+  "pair": [
+   "ṣemed"
+  ],
+  "seeds": [
+   "jera"
+  ]
+ },
+ "861": {
+  "diamond": [
+   "yahalōm",
+   "śāmīr"
+  ],
+  "bud": [
+   "perah",
+   "ṣīṣ"
+  ],
+  "leaf": [
+   "āleh"
+  ],
+  "point": [
+   "kāṣeh",
+   "nekuddā"
+  ]
+ },
+ "892": {
+  "bow": [
+   "keśet"
+  ],
+  "arrow": [
+   "hēṣ"
+  ],
+  "shoot": [
+   "hōṭer",
+   "yōneket"
+  ],
+  "archer": [
+   "mōreh",
+   "kaśśāt"
+  ]
+ },
+ "900": {
+  "crescent": [
+   "śaharōn"
+  ],
+  "moon": [
+   "yārēah",
+   "lebānā"
+  ],
+  "curve": [
+   "hammūk"
+  ],
+  "bow": [
+   "keśet"
+  ]
+ },
+ "904": {
+  "crescents": [
+   "śaharōn"
+  ],
+  "moons": [
+   "yārēah",
+   "lebānā"
+  ],
+  "curves": [
+   "hammūk"
+  ],
+  "waves": [
+   "gal",
+   "miśbār"
+  ]
+ },
+ "920": {
+  "crescent": [
+   "śaharōn"
+  ],
+  "moon": [
+   "yārēah",
+   "lebānā"
+  ],
+  "leaf": [
+   "āleh"
+  ],
+  "bud": [
+   "perah",
+   "ṣīṣ"
+  ]
+ },
+ "923": {
+  "boomerang": [],
+  "crescent": [
+   "śaharōn"
+  ],
+  "moon": [
+   "yārēah",
+   "lebānā"
+  ],
+  "bend": [
+   "kāpap",
+   "nāṭā"
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "lang": "old_english",
+ "names": "names.jsonl",
+ "parts": "parts.jsonl",
+ "words": "words.json",
+ "number_words": {
+  "1": "ān",
+  "2": "tvā",
+  "3": "thrēo",
+  "4": "phēover",
+  "5": "phīph",
+  "6": "sieks",
+  "7": "seophon",
+  "12": "tvelph"
+ },
+ "punmax": 0.5,
+ "weights": "once",
+ "drop_parts": [],
+ "loan_category": "none"
+}

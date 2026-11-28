@@ -1,0 +1,643 @@
+{"name": "Karikāl Vaḷavaṉ", "type": "person", "morphemes": ["karikāl", "vaḷavaṉ"], "gloss": "name + Chola king", "source": "Porunarāṟṟuppaṭai"}
+{"name": "Kiḷḷivaḷavaṉ", "type": "person", "morphemes": ["kiḷḷi", "vaḷavaṉ"], "gloss": "Chola king + Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Nalaṅkiḷḷi", "type": "person", "morphemes": ["nalam", "kiḷḷi"], "gloss": "goodness + Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Neṭuṅkiḷḷi", "type": "person", "morphemes": ["neṭu", "kiḷḷi"], "gloss": "long + Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Kōpperuñcōḻaṉ", "type": "person", "morphemes": ["kō", "peru", "cōḻaṉ"], "gloss": "king + great + Chola", "source": "Puṟanāṉūṟu"}
+{"name": "Kōpperunaṟkiḷḷi", "type": "person", "morphemes": ["kō", "peru", "nal", "kiḷḷi"], "gloss": "king + great + good + Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Perunaṟkiḷḷi", "type": "person", "morphemes": ["peru", "nal", "kiḷḷi"], "gloss": "great + good + Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Kōcceṅkaṇāṉ", "type": "person", "morphemes": ["kō", "cem", "kaṇ"], "gloss": "king + red + eye", "source": "Puṟanāṉūṟu"}
+{"name": "Nalluruttiraṉ", "type": "person", "morphemes": ["nal", "uruttiraṉ"], "gloss": "good + Rudra", "source": "Kalittokai"}
+{"name": "Māvaḷattāṉ", "type": "person", "morphemes": ["mā", "vaḷam"], "gloss": "great + abundance", "source": "Puṟanāṉūṟu"}
+{"name": "Peruviṟaṟkiḷḷi", "type": "person", "morphemes": ["peru", "viṟal", "kiḷḷi"], "gloss": "great + valour + Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Peruntirumāvaḷavaṉ", "type": "person", "morphemes": ["peru", "tiru", "mā", "vaḷavaṉ"], "gloss": "great + sacred + great + Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Iḷañcēṭceṉṉi", "type": "person", "morphemes": ["iḷam", "cēṭceṉṉi"], "gloss": "young + name", "source": "Puṟanāṉūṟu"}
+{"name": "Tirukkiḷḷi", "type": "person", "morphemes": ["tiru", "kiḷḷi"], "gloss": "sacred + Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Tittaṉ", "type": "person", "morphemes": ["tittaṉ"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Paḻaiyaṉ", "type": "person", "morphemes": ["paḻaiyaṉ"], "gloss": "old one", "source": "Akanāṉūṟu"}
+{"name": "Neṭuñceḻiyaṉ", "type": "person", "morphemes": ["neṭu", "ceḻiyaṉ"], "gloss": "long + Pandya king", "source": "Puṟanāṉūṟu; Tamil-Brahmi inscriptions"}
+{"name": "Peruvaḻuti", "type": "person", "morphemes": ["peru", "vaḻuti"], "gloss": "great + Pandya king", "source": "Puṟanāṉūṟu; Tamil-Brahmi inscriptions"}
+{"name": "Ukkirapperuvaḻuti", "type": "person", "morphemes": ["ukkiram", "peru", "vaḻuti"], "gloss": "fierceness + great + Pandya king", "source": "Puṟanāṉūṟu"}
+{"name": "Pūtappāṇṭiyaṉ", "type": "person", "morphemes": ["pūtam", "pāṇṭiyaṉ"], "gloss": "spirit + Pandya", "source": "Puṟanāṉūṟu"}
+{"name": "Aṟivuṭainampi", "type": "person", "morphemes": ["aṟivu", "uṭai", "nampi"], "gloss": "wisdom + having + chief", "source": "Puṟanāṉūṟu"}
+{"name": "Naṉmāṟaṉ", "type": "person", "morphemes": ["nal", "māṟaṉ"], "gloss": "good + Pandya king", "source": "Puṟanāṉūṟu"}
+{"name": "Māṟaṉ Vaḻuti", "type": "person", "morphemes": ["māṟaṉ", "vaḻuti"], "gloss": "Pandya king + Pandya king", "source": "Puṟanāṉūṟu"}
+{"name": "Iḷamperuvaḻuti", "type": "person", "morphemes": ["iḷam", "peru", "vaḻuti"], "gloss": "young + great + Pandya king", "source": "Puṟanāṉūṟu"}
+{"name": "Nampi Neṭuñceḻiyaṉ", "type": "person", "morphemes": ["nampi", "neṭu", "ceḻiyaṉ"], "gloss": "chief + long + Pandya king", "source": "Puṟanāṉūṟu"}
+{"name": "Kīraṉ Cāttaṉ", "type": "person", "morphemes": ["kīraṉ", "cāttaṉ"], "gloss": "name + Sasta", "source": "Puṟanāṉūṟu"}
+{"name": "Neṭuñcēralātaṉ", "type": "person", "morphemes": ["neṭu", "cēral", "ātaṉ"], "gloss": "long + Chera + name", "source": "Patiṟṟuppattu"}
+{"name": "Palyāṉaic Celkeḻukuṭṭuvaṉ", "type": "person", "morphemes": ["pal", "yāṉai", "cel", "keḻu", "kuṭṭuvaṉ"], "gloss": "many + elephant + march + full of + Chera king", "source": "Patiṟṟuppattu"}
+{"name": "Nārmuṭiccēral", "type": "person", "morphemes": ["nār", "muṭi", "cēral"], "gloss": "fibre + crown + Chera", "source": "Patiṟṟuppattu"}
+{"name": "Ceṅkuṭṭuvaṉ", "type": "person", "morphemes": ["cem", "kuṭṭuvaṉ"], "gloss": "red + Chera king", "source": "Patiṟṟuppattu"}
+{"name": "Āṭukōṭpāṭṭuccēralātaṉ", "type": "person", "morphemes": ["āṭu", "kōḷ", "pāṭṭu", "cēral", "ātaṉ"], "gloss": "sheep + seizure + song + Chera + name", "source": "Patiṟṟuppattu"}
+{"name": "Celvakkaṭuṅkō Vāḻiyātaṉ", "type": "person", "morphemes": ["celvam", "kaṭu", "kō", "vāḻiyātaṉ"], "gloss": "wealth + fierce + king + name", "source": "Patiṟṟuppattu"}
+{"name": "Peruñcēral Irumpoṟai", "type": "person", "morphemes": ["peru", "cēral", "iru", "poṟai"], "gloss": "great + Chera + great + Porai lineage", "source": "Patiṟṟuppattu"}
+{"name": "Iḷañcēral Irumpoṟai", "type": "person", "morphemes": ["iḷam", "cēral", "iru", "poṟai"], "gloss": "young + Chera + great + Porai lineage", "source": "Patiṟṟuppattu"}
+{"name": "Kaṇaikkāl Irumpoṟai", "type": "person", "morphemes": ["kaṇaikkāl", "iru", "poṟai"], "gloss": "name + great + Porai lineage", "source": "Puṟanāṉūṟu"}
+{"name": "Māntarañcēral Irumpoṟai", "type": "person", "morphemes": ["māntaram", "cēral", "iru", "poṟai"], "gloss": "name + Chera + great + Porai lineage", "source": "Puṟanāṉūṟu"}
+{"name": "Antuvañcēral Irumpoṟai", "type": "person", "morphemes": ["antuvaṉ", "cēral", "iru", "poṟai"], "gloss": "name + Chera + great + Porai lineage", "source": "Puṟanāṉūṟu"}
+{"name": "Utiyañcēralātaṉ", "type": "person", "morphemes": ["utiyaṉ", "cēral", "ātaṉ"], "gloss": "name + Chera + name", "source": "Puṟanāṉūṟu"}
+{"name": "Peruñcēralātaṉ", "type": "person", "morphemes": ["peru", "cēral", "ātaṉ"], "gloss": "great + Chera + name", "source": "Puṟanāṉūṟu"}
+{"name": "Mākkōtai", "type": "person", "morphemes": ["mā", "kōtai"], "gloss": "great + Chera king", "source": "Puṟanāṉūṟu; Tamil-Brahmi inscriptions"}
+{"name": "Kuṭṭuvaṉ Kōtai", "type": "person", "morphemes": ["kuṭṭuvaṉ", "kōtai"], "gloss": "Chera king + Chera king", "source": "Puṟanāṉūṟu; Tamil-Brahmi inscriptions"}
+{"name": "Iḷaṅkuṭṭuvaṉ", "type": "person", "morphemes": ["iḷam", "kuṭṭuvaṉ"], "gloss": "young + Chera king", "source": "Sangam colophons (poet names)"}
+{"name": "Peruṅkaṭuṅkō", "type": "person", "morphemes": ["peru", "kaṭu", "kō"], "gloss": "great + fierce + king", "source": "Sangam colophons (poet names); Tamil-Brahmi inscriptions"}
+{"name": "Iḷaṅkaṭuṅkō", "type": "person", "morphemes": ["iḷam", "kaṭu", "kō"], "gloss": "young + fierce + king", "source": "Sangam colophons (poet names); Tamil-Brahmi inscriptions"}
+{"name": "Mūvaṉ", "type": "person", "morphemes": ["mūvaṉ"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Pāri", "type": "person", "morphemes": ["pāri"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Kāri", "type": "person", "morphemes": ["kāri"], "gloss": "dark one", "source": "Puṟanāṉūṟu"}
+{"name": "Tirumuṭikkāri", "type": "person", "morphemes": ["tiru", "muṭi", "kāri"], "gloss": "sacred + crown + dark one", "source": "Puṟanāṉūṟu"}
+{"name": "Valvil Ōri", "type": "person", "morphemes": ["val", "vil", "ōri"], "gloss": "strong + bow + name", "source": "Puṟanāṉūṟu"}
+{"name": "Pēkaṉ", "type": "person", "morphemes": ["pēkaṉ"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Āy Aṇṭiraṉ", "type": "person", "morphemes": ["āy", "aṇṭiraṉ"], "gloss": "Ay lineage + name", "source": "Puṟanāṉūṟu"}
+{"name": "Atiyamāṉ Neṭumāṉ Añci", "type": "person", "morphemes": ["atiyaṉ", "māṉ", "neṭu", "māṉ", "añci"], "gloss": "Atiyan + lord + long + lord + name", "source": "Puṟanāṉūṟu; Tamil-Brahmi inscriptions"}
+{"name": "Pokuṭṭeḻiṉi", "type": "person", "morphemes": ["pokuṭṭeḻiṉi"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Eḻiṉi", "type": "person", "morphemes": ["eḻiṉi"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Naḷḷi", "type": "person", "morphemes": ["naḷḷi"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Kumaṇaṉ", "type": "person", "morphemes": ["kumaṇaṉ"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Iḷaṅkumaṇaṉ", "type": "person", "morphemes": ["iḷam", "kumaṇaṉ"], "gloss": "young + name", "source": "Puṟanāṉūṟu"}
+{"name": "Naṉṉaṉ", "type": "person", "morphemes": ["naṉṉaṉ"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Piṭṭaṅkoṟṟaṉ", "type": "person", "morphemes": ["piṭṭaṉ", "koṟṟaṉ"], "gloss": "name + victor", "source": "Puṟanāṉūṟu"}
+{"name": "Paṇṇaṉ", "type": "person", "morphemes": ["paṇṇaṉ"], "gloss": "name", "source": "Puṟanāṉūṟu; Tamil-Brahmi inscriptions"}
+{"name": "Kaṭiya Neṭuvēṭṭuvaṉ", "type": "person", "morphemes": ["kaṭu", "neṭu", "vēṭṭuvaṉ"], "gloss": "fierce + long + hunter", "source": "Puṟanāṉūṟu"}
+{"name": "Iḷantiraiyaṉ", "type": "person", "morphemes": ["iḷam", "tiraiyaṉ"], "gloss": "young + wave one", "source": "Perumpāṇāṟṟuppaṭai"}
+{"name": "Tiraiyaṉ", "type": "person", "morphemes": ["tiraiyaṉ"], "gloss": "wave one", "source": "Akanāṉūṟu"}
+{"name": "Nalliyakkōṭaṉ", "type": "person", "morphemes": ["nalliyakkōṭaṉ"], "gloss": "name", "source": "Ciṟupāṇāṟṟuppaṭai"}
+{"name": "Āy Eyiṉaṉ", "type": "person", "morphemes": ["āy", "eyiṉaṉ"], "gloss": "Ay lineage + Eyinar man", "source": "Akanāṉūṟu"}
+{"name": "Miñili", "type": "person", "morphemes": ["miñili"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Pulli", "type": "person", "morphemes": ["pulli"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Evvi", "type": "person", "morphemes": ["evvi"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Aḻici", "type": "person", "morphemes": ["aḻici"], "gloss": "name", "source": "Naṟṟiṇai"}
+{"name": "Kaṭṭi", "type": "person", "morphemes": ["kaṭṭi"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Pāṇaṉ", "type": "person", "morphemes": ["pāṇaṉ"], "gloss": "bard", "source": "Akanāṉūṟu"}
+{"name": "Kaḻuvuḷ", "type": "person", "morphemes": ["kaḻuvuḷ"], "gloss": "name", "source": "Patiṟṟuppattu"}
+{"name": "Akutai", "type": "person", "morphemes": ["akutai"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Āṭṭaṉatti", "type": "person", "morphemes": ["āṭṭaṉatti"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Ātimanti", "type": "person", "morphemes": ["ātimanti"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Aṉṉi", "type": "person", "morphemes": ["aṉṉi"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Titiyaṉ", "type": "person", "morphemes": ["titiyaṉ"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Erumaiyūraṉ", "type": "person", "morphemes": ["erumai", "ūr"], "gloss": "buffalo + town", "source": "Akanāṉūṟu"}
+{"name": "Iruṅkōvēḷ", "type": "person", "morphemes": ["iru", "kō", "vēḷ"], "gloss": "great + king + chieftain", "source": "Puṟanāṉūṟu"}
+{"name": "Viccikkōṉ", "type": "person", "morphemes": ["vicci", "kō"], "gloss": "name + king", "source": "Puṟanāṉūṟu"}
+{"name": "Iḷaviccikkō", "type": "person", "morphemes": ["iḷam", "vicci", "kō"], "gloss": "young + name + king", "source": "Puṟanāṉūṟu"}
+{"name": "Iḷaṅkaṇṭīrakkō", "type": "person", "morphemes": ["iḷam", "kaṇṭīram", "kō"], "gloss": "young + name + king", "source": "Puṟanāṉūṟu"}
+{"name": "Tirukkaṇṇaṉ", "type": "person", "morphemes": ["tiru", "kaṇṇaṉ"], "gloss": "sacred + Krishna", "source": "Puṟanāṉūṟu"}
+{"name": "Nāñcil Vaḷḷuvaṉ", "type": "person", "morphemes": ["nāñcil", "vaḷḷuvaṉ"], "gloss": "plough + Valluvan", "source": "Puṟanāṉūṟu"}
+{"name": "Neṭuvēḷ Āvi", "type": "person", "morphemes": ["neṭu", "vēḷ", "āvi"], "gloss": "long + chieftain + name", "source": "Akanāṉūṟu"}
+{"name": "Eḻiṉiyātaṉ", "type": "person", "morphemes": ["eḻiṉi", "ātaṉ"], "gloss": "name + name", "source": "Puṟanāṉūṟu"}
+{"name": "Villiyātaṉ", "type": "person", "morphemes": ["villi", "ātaṉ"], "gloss": "bowman + name", "source": "Puṟanāṉūṟu"}
+{"name": "Irāmaṉ", "type": "person", "morphemes": ["irāmaṉ"], "gloss": "Rama", "source": "Puṟanāṉūṟu"}
+{"name": "Cītai", "type": "person", "morphemes": ["cītai"], "gloss": "Sita", "source": "Puṟanāṉūṟu"}
+{"name": "Kaṭalaṉ Vaḻuti", "type": "person", "morphemes": ["kaṭalaṉ", "vaḻuti"], "gloss": "sea one + Pandya king", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Kaṇi Nantaciri Kuvaṉ", "type": "person", "morphemes": ["kaṇi", "nanta", "ciri", "kuvaṉ"], "gloss": "astrologer + Nanda + Sri + name", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Iḷañcaṭikaṉ", "type": "person", "morphemes": ["iḷam", "caṭikaṉ"], "gloss": "young + name", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Atiṉaṉ", "type": "person", "morphemes": ["atiṉaṉ"], "gloss": "name", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Veḷiyaṉ", "type": "person", "morphemes": ["veḷiyaṉ"], "gloss": "name", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Kō Ātaṉ Cel Irumpoṟai", "type": "person", "morphemes": ["kō", "ātaṉ", "cel", "iru", "poṟai"], "gloss": "king + name + name + great + Porai lineage", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Ceṅkāyapaṉ", "type": "person", "morphemes": ["cem", "kāyapaṉ"], "gloss": "red + Kasyapa", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Tēvaṉ Cāttaṉ", "type": "person", "morphemes": ["tēvaṉ", "cāttaṉ"], "gloss": "god + Sasta", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Kaṇṇaṉ Ātaṉ", "type": "person", "morphemes": ["kaṇṇaṉ", "ātaṉ"], "gloss": "Krishna + name", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Nantai Kīraṉ", "type": "person", "morphemes": ["nantai", "kīraṉ"], "gloss": "elder + name", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Perumpataṉ", "type": "person", "morphemes": ["peru", "pataṉ"], "gloss": "great + name", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Kaṭummi", "type": "person", "morphemes": ["kaṭummi"], "gloss": "name", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Kollippuṟai", "type": "person", "morphemes": ["kolli", "poṟai"], "gloss": "Kolli hill + Porai lineage", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Ēri Aritaṉ", "type": "person", "morphemes": ["ēri", "aritaṉ"], "gloss": "name + name", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Kapilar", "type": "person", "morphemes": ["kapilaṉ"], "gloss": "tawny", "source": "Sangam colophons (poet names)"}
+{"name": "Tolkapilar", "type": "person", "morphemes": ["tol", "kapilaṉ"], "gloss": "ancient + tawny", "source": "Sangam colophons (poet names)"}
+{"name": "Paraṇar", "type": "person", "morphemes": ["paraṇaṉ"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Vaṉparaṇar", "type": "person", "morphemes": ["val", "paraṇaṉ"], "gloss": "strong + name", "source": "Sangam colophons (poet names)"}
+{"name": "Auvaiyār", "type": "person", "morphemes": ["auvai"], "gloss": "mother", "source": "Sangam colophons (poet names)"}
+{"name": "Nakkīrar", "type": "person", "morphemes": ["nal", "kīraṉ"], "gloss": "good + name", "source": "Sangam colophons (poet names)"}
+{"name": "Māmūlaṉār", "type": "person", "morphemes": ["mā", "mūlaṉ"], "gloss": "great + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kallāṭaṉār", "type": "person", "morphemes": ["kallāṭaṉ"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Iṭaikkāṭaṉār", "type": "person", "morphemes": ["iṭai", "kāṭu"], "gloss": "middle + forest", "source": "Sangam colophons (poet names)"}
+{"name": "Peruñcittiraṉār", "type": "person", "morphemes": ["peru", "cittiraṉ"], "gloss": "great + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kōvūr Kiḻār", "type": "person", "morphemes": ["kō", "ūr", "kiḻāṉ"], "gloss": "king + town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Ālattūr Kiḻār", "type": "person", "morphemes": ["āl", "ūr", "kiḻāṉ"], "gloss": "banyan + town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Āvūr Kiḻār", "type": "person", "morphemes": ["ā", "ūr", "kiḻāṉ"], "gloss": "cow + town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Āvūr Mūlaṅkiḻār", "type": "person", "morphemes": ["ā", "ūr", "mūlam", "kiḻāṉ"], "gloss": "cow + town + Mula asterism + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Aiyūr Mūlaṅkiḻār", "type": "person", "morphemes": ["ai", "ūr", "mūlam", "kiḻāṉ"], "gloss": "name + town + Mula asterism + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Aiyūr Muṭavaṉār", "type": "person", "morphemes": ["ai", "ūr", "muṭavaṉ"], "gloss": "name + town + lame man", "source": "Sangam colophons (poet names)"}
+{"name": "Kūṭalūr Kiḻār", "type": "person", "morphemes": ["kūṭal", "ūr", "kiḻāṉ"], "gloss": "confluence + town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Aricil Kiḻār", "type": "person", "morphemes": ["aricil", "kiḻāṉ"], "gloss": "name + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Peruṅkuṉṟūr Kiḻār", "type": "person", "morphemes": ["peru", "kuṉṟu", "ūr", "kiḻāṉ"], "gloss": "great + hill + town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Iṭaikkuṉṟūr Kiḻār", "type": "person", "morphemes": ["iṭai", "kuṉṟu", "ūr", "kiḻāṉ"], "gloss": "middle + hill + town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Kārikiḻār", "type": "person", "morphemes": ["kāri", "kiḻāṉ"], "gloss": "dark one + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Kayattūr Kiḻār", "type": "person", "morphemes": ["kayam", "ūr", "kiḻāṉ"], "gloss": "tank + town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Karuvūr Kiḻār", "type": "person", "morphemes": ["karuvūr", "kiḻāṉ"], "gloss": "name + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Kiḷḷimaṅkalaṅkiḻār", "type": "person", "morphemes": ["kiḷḷi", "maṅkalam", "kiḻāṉ"], "gloss": "Chola king + auspicious village + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṟuṅkōḻiyūr Kiḻār", "type": "person", "morphemes": ["kuṟu", "kōḻi", "ūr", "kiḻāṉ"], "gloss": "short + fowl + town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Nallāvūr Kiḻār", "type": "person", "morphemes": ["nal", "ā", "ūr", "kiḻāṉ"], "gloss": "good + cow + town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Potumpil Kiḻār", "type": "person", "morphemes": ["potumpil", "kiḻāṉ"], "gloss": "name + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Ukāykkuṭi Kiḻār", "type": "person", "morphemes": ["ukāy", "kuṭi", "kiḻāṉ"], "gloss": "toothbrush tree + settlement + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Nocci Niyamaṅkiḻār", "type": "person", "morphemes": ["nocci", "niyamam", "kiḻāṉ"], "gloss": "chaste tree + market town + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṇiyaṉ Pūṅkuṉṟaṉār", "type": "person", "morphemes": ["kaṇiyaṉ", "pū", "kuṉṟu"], "gloss": "astrologer + flower + hill", "source": "Sangam colophons (poet names)"}
+{"name": "Peruntalaic Cāttaṉār", "type": "person", "morphemes": ["peru", "talai", "cāttaṉ"], "gloss": "great + head + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṭapulaviyaṉār", "type": "person", "morphemes": ["kuṭa", "pulam"], "gloss": "west + land", "source": "Sangam colophons (poet names)"}
+{"name": "Pottiyār", "type": "person", "morphemes": ["potti"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Picirāntaiyār", "type": "person", "morphemes": ["picir", "āntai"], "gloss": "name + father", "source": "Sangam colophons (poet names)"}
+{"name": "Mōcikīraṉār", "type": "person", "morphemes": ["mōci", "kīraṉ"], "gloss": "name + name", "source": "Sangam colophons (poet names)"}
+{"name": "Mōci Koṟṟaṉār", "type": "person", "morphemes": ["mōci", "koṟṟaṉ"], "gloss": "name + victor", "source": "Sangam colophons (poet names)"}
+{"name": "Mōci Cāttaṉār", "type": "person", "morphemes": ["mōci", "cāttaṉ"], "gloss": "name + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Muṭamōciyār", "type": "person", "morphemes": ["muṭam", "mōci"], "gloss": "crooked + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṇakkāyaṉār", "type": "person", "morphemes": ["kaṇakkāyaṉ"], "gloss": "teacher", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṇakkāyar Tattaṉār", "type": "person", "morphemes": ["kaṇakkāyaṉ", "tattaṉ"], "gloss": "teacher + given", "source": "Sangam colophons (poet names)"}
+{"name": "Nallantuvaṉār", "type": "person", "morphemes": ["nal", "antuvaṉ"], "gloss": "good + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kayamaṉār", "type": "person", "morphemes": ["kayamaṉ"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Ammūvaṉār", "type": "person", "morphemes": ["am", "mūvaṉ"], "gloss": "beautiful + name", "source": "Sangam colophons (poet names)"}
+{"name": "Ōrampōkiyār", "type": "person", "morphemes": ["ōrampōki"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Pēyaṉār", "type": "person", "morphemes": ["pēyaṉ"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Naṉmullaiyār", "type": "person", "morphemes": ["nal", "mullai"], "gloss": "good + jasmine", "source": "Sangam colophons (poet names)"}
+{"name": "Veḷḷivītiyār", "type": "person", "morphemes": ["veḷḷi", "vīti"], "gloss": "silver + street", "source": "Sangam colophons (poet names)"}
+{"name": "Nakkaṇṇaiyār", "type": "person", "morphemes": ["nal", "kaṇṇai"], "gloss": "good + name", "source": "Sangam colophons (poet names)"}
+{"name": "Mācāttiyār", "type": "person", "morphemes": ["mā", "cātti"], "gloss": "great + name", "source": "Sangam colophons (poet names)"}
+{"name": "Mācāttaṉār", "type": "person", "morphemes": ["mā", "cāttaṉ"], "gloss": "great + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Kākkaipāṭiṉiyār Nacceḷḷaiyār", "type": "person", "morphemes": ["kākkai", "pāṭiṉi", "nal", "ceḷḷai"], "gloss": "crow + songstress + good + name", "source": "Sangam colophons (poet names)"}
+{"name": "Aṇilāṭumuṉṟilār", "type": "person", "morphemes": ["aṇil", "āṭu", "muṉṟil"], "gloss": "squirrel + play + courtyard", "source": "Sangam colophons (poet names)"}
+{"name": "Cempulappeyanīrār", "type": "person", "morphemes": ["cem", "pulam", "peyal", "nīr"], "gloss": "red + land + rain + water", "source": "Sangam colophons (poet names)"}
+{"name": "Kalporuciṟunuraiyār", "type": "person", "morphemes": ["kal", "poru", "ciṟu", "nurai"], "gloss": "stone + dash + small + foam", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṅkulveḷḷattār", "type": "person", "morphemes": ["kaṅkul", "veḷḷam"], "gloss": "night + flood", "source": "Sangam colophons (poet names)"}
+{"name": "Mīṉeṟitūṇṭilār", "type": "person", "morphemes": ["mīṉ", "eṟi", "tūṇṭil"], "gloss": "fish + cast + hook", "source": "Sangam colophons (poet names)"}
+{"name": "Kuppaikkōḻiyār", "type": "person", "morphemes": ["kuppai", "kōḻi"], "gloss": "rubbish heap + fowl", "source": "Sangam colophons (poet names)"}
+{"name": "Kūkaikkōḻiyār", "type": "person", "morphemes": ["kūkai", "kōḻi"], "gloss": "owl + fowl", "source": "Sangam colophons (poet names)"}
+{"name": "Ōrēruḻavaṉār", "type": "person", "morphemes": ["ōr", "ēr", "uḻavaṉ"], "gloss": "one + plough + ploughman", "source": "Sangam colophons (poet names)"}
+{"name": "Kaḻaitiṉyāṉaiyār", "type": "person", "morphemes": ["kaḻai", "tiṉ", "yāṉai"], "gloss": "bamboo + eat + elephant", "source": "Sangam colophons (poet names)"}
+{"name": "Tēypurippaḻaṅkayiṟṟiṉār", "type": "person", "morphemes": ["tēy", "puri", "paḻa", "kayiṟu"], "gloss": "wear + twist + old + rope", "source": "Sangam colophons (poet names)"}
+{"name": "Nariverūuttalaiyār", "type": "person", "morphemes": ["nari", "veru", "talai"], "gloss": "jackal + fear + head", "source": "Sangam colophons (poet names)"}
+{"name": "Irumpiṭarttalaiyār", "type": "person", "morphemes": ["iru", "piṭar", "talai"], "gloss": "great + nape + head", "source": "Sangam colophons (poet names)"}
+{"name": "Kutiraittaṟiyaṉār", "type": "person", "morphemes": ["kutirai", "taṟi"], "gloss": "horse + post", "source": "Sangam colophons (poet names)"}
+{"name": "Viṭṭakutiraiyār", "type": "person", "morphemes": ["viṭu", "kutirai"], "gloss": "release + horse", "source": "Sangam colophons (poet names)"}
+{"name": "Toṭittalaiviḻuttaṇṭiṉār", "type": "person", "morphemes": ["toṭi", "talai", "viḻu", "taṇṭu"], "gloss": "bangle + head + excellent + staff", "source": "Sangam colophons (poet names)"}
+{"name": "Nōypāṭiyār", "type": "person", "morphemes": ["nōy", "pāṭu"], "gloss": "disease + sing", "source": "Sangam colophons (poet names)"}
+{"name": "Neṭuveṇṇilaviṉār", "type": "person", "morphemes": ["neṭu", "veḷ", "nilavu"], "gloss": "long + white + moonlight", "source": "Sangam colophons (poet names)"}
+{"name": "Pataṭivaikalār", "type": "person", "morphemes": ["pataṭi", "vaikal"], "gloss": "chaff + day", "source": "Sangam colophons (poet names)"}
+{"name": "Ūṉpotipacuṅkuṭaiyār", "type": "person", "morphemes": ["ūṉ", "poti", "pacu", "kuṭai"], "gloss": "flesh + wrap + green + basket", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṇṇaṉār", "type": "person", "morphemes": ["kaṇṇaṉ"], "gloss": "Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Kīraṅkīraṉār", "type": "person", "morphemes": ["kīraṉ", "kīraṉ"], "gloss": "name + name", "source": "Sangam colophons (poet names)"}
+{"name": "Koṟṟaṉār", "type": "person", "morphemes": ["koṟṟaṉ"], "gloss": "victor", "source": "Sangam colophons (poet names)"}
+{"name": "Koṟṟaṅkoṟṟaṉār", "type": "person", "morphemes": ["koṟṟaṉ", "koṟṟaṉ"], "gloss": "victor + victor", "source": "Sangam colophons (poet names)"}
+{"name": "Cāttaṉār", "type": "person", "morphemes": ["cāttaṉ"], "gloss": "Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Pūtaṉār", "type": "person", "morphemes": ["pūtaṉ"], "gloss": "spirit", "source": "Sangam colophons (poet names)"}
+{"name": "Tēvaṉār", "type": "person", "morphemes": ["tēvaṉ"], "gloss": "god", "source": "Sangam colophons (poet names)"}
+{"name": "Peruntēvaṉār", "type": "person", "morphemes": ["peru", "tēvaṉ"], "gloss": "great + god", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷantēvaṉār", "type": "person", "morphemes": ["iḷam", "tēvaṉ"], "gloss": "young + god", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷaṅkīraṉār", "type": "person", "morphemes": ["iḷam", "kīraṉ"], "gloss": "young + name", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷaṅkaṇṇaṉār", "type": "person", "morphemes": ["iḷam", "kaṇṇaṉ"], "gloss": "young + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷampūtaṉār", "type": "person", "morphemes": ["iḷam", "pūtaṉ"], "gloss": "young + spirit", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷanākaṉār", "type": "person", "morphemes": ["iḷam", "nākaṉ"], "gloss": "young + serpent", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷaveyiṉaṉār", "type": "person", "morphemes": ["iḷam", "eyiṉaṉ"], "gloss": "young + Eyinar man", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷavēṭṭaṉār", "type": "person", "morphemes": ["iḷam", "vēṭṭaṉ"], "gloss": "young + name", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷaṅkaucikaṉār", "type": "person", "morphemes": ["iḷam", "kaucikaṉ"], "gloss": "young + Kausika", "source": "Sangam colophons (poet names)"}
+{"name": "Peruṅkaucikaṉār", "type": "person", "morphemes": ["peru", "kaucikaṉ"], "gloss": "great + Kausika", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷampōtiyār", "type": "person", "morphemes": ["iḷam", "pōti"], "gloss": "young + bodhi tree", "source": "Sangam colophons (poet names)"}
+{"name": "Peruṅkaṇṇaṉār", "type": "person", "morphemes": ["peru", "kaṇṇaṉ"], "gloss": "great + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Ceṅkaṇṇaṉār", "type": "person", "morphemes": ["cem", "kaṇṇaṉ"], "gloss": "red + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Veṇkaṇṇaṉār", "type": "person", "morphemes": ["veḷ", "kaṇṇaṉ"], "gloss": "white + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Pūṅkaṇṇaṉār", "type": "person", "morphemes": ["pū", "kaṇṇaṉ"], "gloss": "flower + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Neṭuṅkaṇṇaṉār", "type": "person", "morphemes": ["neṭu", "kaṇṇaṉ"], "gloss": "long + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Nakkaṇṇaṉār", "type": "person", "morphemes": ["nal", "kaṇṇaṉ"], "gloss": "good + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Palkaṇṇaṉār", "type": "person", "morphemes": ["pal", "kaṇṇaṉ"], "gloss": "many + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Mutuveṅkaṇṇaṉār", "type": "person", "morphemes": ["mutu", "vem", "kaṇṇaṉ"], "gloss": "old + fierce + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Katakkaṇṇaṉār", "type": "person", "morphemes": ["katam", "kaṇṇaṉ"], "gloss": "anger + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Kantakkaṇṇaṉār", "type": "person", "morphemes": ["kantaṉ", "kaṇṇaṉ"], "gloss": "Skanda + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Kārikkaṇṇaṉār", "type": "person", "morphemes": ["kāri", "kaṇṇaṉ"], "gloss": "dark one + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Cēntaṅkaṇṇaṉār", "type": "person", "morphemes": ["cēntaṉ", "kaṇṇaṉ"], "gloss": "Murukan + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Pūtaṅkaṇṇaṉār", "type": "person", "morphemes": ["pūtaṉ", "kaṇṇaṉ"], "gloss": "spirit + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Pullaṅkaṇṇaṉār", "type": "person", "morphemes": ["pullaṉ", "kaṇṇaṉ"], "gloss": "name + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Tattaṅkaṇṇaṉār", "type": "person", "morphemes": ["tattaṉ", "kaṇṇaṉ"], "gloss": "given + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Tāyaṅkaṇṇaṉār", "type": "person", "morphemes": ["tāyaṉ", "kaṇṇaṉ"], "gloss": "name + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Tāyaṅkaṇṇiyār", "type": "person", "morphemes": ["tāyaṉ", "kaṇṇi"], "gloss": "name + name", "source": "Sangam colophons (poet names)"}
+{"name": "Uruttiraṅkaṇṇaṉār", "type": "person", "morphemes": ["uruttiraṉ", "kaṇṇaṉ"], "gloss": "Rudra + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Kollikkaṇṇaṉār", "type": "person", "morphemes": ["kolli", "kaṇṇaṉ"], "gloss": "Kolli hill + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Kumaṭṭūr Kaṇṇaṉār", "type": "person", "morphemes": ["kumaṭṭu", "ūr", "kaṇṇaṉ"], "gloss": "name + town + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṭṭuvaṉ Kaṇṇaṉār", "type": "person", "morphemes": ["kuṭṭuvaṉ", "kaṇṇaṉ"], "gloss": "Chera king + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Kōcikaṉ Kaṇṇaṉār", "type": "person", "morphemes": ["kaucikaṉ", "kaṇṇaṉ"], "gloss": "Kausika + Krishna", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṇṇaṅkoṟṟaṉār", "type": "person", "morphemes": ["kaṇṇaṉ", "koṟṟaṉ"], "gloss": "Krishna + victor", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṇṇampullaṉār", "type": "person", "morphemes": ["kaṇṇaṉ", "pullaṉ"], "gloss": "Krishna + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṇṇattaṉār", "type": "person", "morphemes": ["kaṇṇaṉ", "tattaṉ"], "gloss": "Krishna + given", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṇṇaṉ Kūttaṉār", "type": "person", "morphemes": ["kaṇṇaṉ", "kūttaṉ"], "gloss": "Krishna + dancer", "source": "Sangam colophons (poet names)"}
+{"name": "Nalveḷḷiyār", "type": "person", "morphemes": ["nal", "veḷḷi"], "gloss": "good + silver", "source": "Sangam colophons (poet names)"}
+{"name": "Nalveḷḷaiyār", "type": "person", "morphemes": ["nal", "veḷḷai"], "gloss": "good + white", "source": "Sangam colophons (poet names)"}
+{"name": "Nalvēṭṭaṉār", "type": "person", "morphemes": ["nal", "vēṭṭaṉ"], "gloss": "good + name", "source": "Sangam colophons (poet names)"}
+{"name": "Nalvaḻutiyār", "type": "person", "morphemes": ["nal", "vaḻuti"], "gloss": "good + Pandya king", "source": "Sangam colophons (poet names)"}
+{"name": "Naṟcēntaṉār", "type": "person", "morphemes": ["nal", "cēntaṉ"], "gloss": "good + Murukan", "source": "Sangam colophons (poet names)"}
+{"name": "Nappūtaṉār", "type": "person", "morphemes": ["nal", "pūtaṉ"], "gloss": "good + spirit", "source": "Sangam colophons (poet names)"}
+{"name": "Naṉṉākaiyār", "type": "person", "morphemes": ["nal", "nākai"], "gloss": "good + name", "source": "Sangam colophons (poet names)"}
+{"name": "Naṉṉākaṉār", "type": "person", "morphemes": ["nal", "nākaṉ"], "gloss": "good + serpent", "source": "Sangam colophons (poet names)"}
+{"name": "Nākaiyār", "type": "person", "morphemes": ["nākai"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Nalliṟaiyaṉār", "type": "person", "morphemes": ["nal", "iṟaiyaṉ"], "gloss": "good + lord", "source": "Sangam colophons (poet names)"}
+{"name": "Iṟaiyaṉār", "type": "person", "morphemes": ["iṟaiyaṉ"], "gloss": "lord", "source": "Sangam colophons (poet names)"}
+{"name": "Nallaḻiciyār", "type": "person", "morphemes": ["nal", "aḻici"], "gloss": "good + name", "source": "Sangam colophons (poet names)"}
+{"name": "Aḻici Naccāttaṉār", "type": "person", "morphemes": ["aḻici", "nal", "cāttaṉ"], "gloss": "name + good + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Kollaṉ Aḻiciyār", "type": "person", "morphemes": ["kollaṉ", "aḻici"], "gloss": "smith + name", "source": "Sangam colophons (poet names)"}
+{"name": "Nallaccutaṉār", "type": "person", "morphemes": ["nal", "accutaṉ"], "gloss": "good + Acyuta", "source": "Sangam colophons (poet names)"}
+{"name": "Nappacalaiyār", "type": "person", "morphemes": ["nal", "pacalai"], "gloss": "good + pallor", "source": "Sangam colophons (poet names)"}
+{"name": "Nappaṇṇaṉār", "type": "person", "morphemes": ["nal", "paṇṇaṉ"], "gloss": "good + name", "source": "Sangam colophons (poet names)"}
+{"name": "Nalviḷakkaṉār", "type": "person", "morphemes": ["nal", "viḷakkaṉ"], "gloss": "good + lamp", "source": "Sangam colophons (poet names)"}
+{"name": "Cīttalaic Cāttaṉār", "type": "person", "morphemes": ["cīttalai", "cāttaṉ"], "gloss": "name + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Māṅkuṭi Marutaṉār", "type": "person", "morphemes": ["māṅkuṭi", "marutaṉ"], "gloss": "name + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kīrattaṉār", "type": "person", "morphemes": ["kīraṉ", "tattaṉ"], "gloss": "name + given", "source": "Sangam colophons (poet names)"}
+{"name": "Marutaṉ Iḷanākaṉār", "type": "person", "morphemes": ["marutaṉ", "iḷam", "nākaṉ"], "gloss": "name + young + serpent", "source": "Sangam colophons (poet names)"}
+{"name": "Pūtaṉ Iḷanākaṉār", "type": "person", "morphemes": ["pūtaṉ", "iḷam", "nākaṉ"], "gloss": "spirit + young + serpent", "source": "Sangam colophons (poet names)"}
+{"name": "Perumarutaṉār", "type": "person", "morphemes": ["peru", "marutaṉ"], "gloss": "great + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṟuṅkuṭi Marutaṉār", "type": "person", "morphemes": ["kuṟu", "kuṭi", "marutaṉ"], "gloss": "short + settlement + name", "source": "Sangam colophons (poet names)"}
+{"name": "Īḻattup Pūtaṉtēvaṉār", "type": "person", "morphemes": ["īḻam", "pūtaṉ", "tēvaṉ"], "gloss": "Ceylon + spirit + god", "source": "Sangam colophons (poet names)"}
+{"name": "Pūtattēvaṉār", "type": "person", "morphemes": ["pūtam", "tēvaṉ"], "gloss": "spirit + god", "source": "Sangam colophons (poet names)"}
+{"name": "Pūtampullaṉār", "type": "person", "morphemes": ["pūtam", "pullaṉ"], "gloss": "spirit + name", "source": "Sangam colophons (poet names)"}
+{"name": "Pūtañcāttaṉār", "type": "person", "morphemes": ["pūtaṉ", "cāttaṉ"], "gloss": "spirit + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Kavuṇiyaṉ Pūtattaṉār", "type": "person", "morphemes": ["kavuṇiyaṉ", "pūtam", "tattaṉ"], "gloss": "Kaundinya + spirit + given", "source": "Sangam colophons (poet names)"}
+{"name": "Cēntaṉ Kīraṉār", "type": "person", "morphemes": ["cēntaṉ", "kīraṉ"], "gloss": "Murukan + name", "source": "Sangam colophons (poet names)"}
+{"name": "Cēntaṉ Pūtaṉār", "type": "person", "morphemes": ["cēntaṉ", "pūtaṉ"], "gloss": "Murukan + spirit", "source": "Sangam colophons (poet names)"}
+{"name": "Cēntaṉ Kūttaṉār", "type": "person", "morphemes": ["cēntaṉ", "kūttaṉ"], "gloss": "Murukan + dancer", "source": "Sangam colophons (poet names)"}
+{"name": "Cēntaṉ Koṟṟaṉār", "type": "person", "morphemes": ["cēntaṉ", "koṟṟaṉ"], "gloss": "Murukan + victor", "source": "Sangam colophons (poet names)"}
+{"name": "Iṭaiyaṉ Cēntaṅkoṟṟaṉār", "type": "person", "morphemes": ["iṭaiyaṉ", "cēntaṉ", "koṟṟaṉ"], "gloss": "herdsman + Murukan + victor", "source": "Sangam colophons (poet names)"}
+{"name": "Iṭaiyaṉ Neṭuṅkīraṉār", "type": "person", "morphemes": ["iṭaiyaṉ", "neṭu", "kīraṉ"], "gloss": "herdsman + long + name", "source": "Sangam colophons (poet names)"}
+{"name": "Muḷḷiyūrppūtiyār", "type": "person", "morphemes": ["muḷḷi", "ūr", "pūti"], "gloss": "thorny shrub + town + name", "source": "Sangam colophons (poet names)"}
+{"name": "Veṇpūtiyār", "type": "person", "morphemes": ["veḷ", "pūti"], "gloss": "white + name", "source": "Sangam colophons (poet names)"}
+{"name": "Veṇmaṇippūtiyār", "type": "person", "morphemes": ["veḷ", "maṇi", "pūti"], "gloss": "white + gem + name", "source": "Sangam colophons (poet names)"}
+{"name": "Veṇpūtaṉār", "type": "person", "morphemes": ["veḷ", "pūtaṉ"], "gloss": "white + spirit", "source": "Sangam colophons (poet names)"}
+{"name": "Veṇkoṟṟaṉār", "type": "person", "morphemes": ["veḷ", "koṟṟaṉ"], "gloss": "white + victor", "source": "Sangam colophons (poet names)"}
+{"name": "Veṇṇākaṉār", "type": "person", "morphemes": ["veḷ", "nākaṉ"], "gloss": "white + serpent", "source": "Sangam colophons (poet names)"}
+{"name": "Veṇṇikkuyattiyār", "type": "person", "morphemes": ["veṇṇi", "kuyatti"], "gloss": "name + potter woman", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṟamakaḷ Iḷaveyiṉi", "type": "person", "morphemes": ["kuṟamakaḷ", "iḷam", "eyiṉi"], "gloss": "Kurava woman + young + Eyinar woman", "source": "Sangam colophons (poet names)"}
+{"name": "Pēymakaḷ Iḷaveyiṉi", "type": "person", "morphemes": ["pēy", "makaḷ", "iḷam", "eyiṉi"], "gloss": "demon + woman + young + Eyinar woman", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṟiyeyiṉiyār", "type": "person", "morphemes": ["kuṟu", "eyiṉi"], "gloss": "short + Eyinar woman", "source": "Sangam colophons (poet names)"}
+{"name": "Kāvaṟpeṇṭu", "type": "person", "morphemes": ["kāval", "peṇṭu"], "gloss": "guarding + woman", "source": "Sangam colophons (poet names)"}
+{"name": "Peruṅkōppeṇṭu", "type": "person", "morphemes": ["peru", "kō", "peṇṭu"], "gloss": "great + king + woman", "source": "Sangam colophons (poet names)"}
+{"name": "Kāmakkaṇṇiyār", "type": "person", "morphemes": ["kāmam", "kaṇṇi"], "gloss": "love + name", "source": "Sangam colophons (poet names)"}
+{"name": "Poṉmuṭiyār", "type": "person", "morphemes": ["poṉ", "muṭi"], "gloss": "gold + crown", "source": "Sangam colophons (poet names)"}
+{"name": "Poṉmaṇiyār", "type": "person", "morphemes": ["poṉ", "maṇi"], "gloss": "gold + gem", "source": "Sangam colophons (poet names)"}
+{"name": "Poṉṉākaṉār", "type": "person", "morphemes": ["poṉ", "nākaṉ"], "gloss": "gold + serpent", "source": "Sangam colophons (poet names)"}
+{"name": "Poykaiyār", "type": "person", "morphemes": ["poykai"], "gloss": "pond", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṭuvaṉ Iḷaveyiṉaṉār", "type": "person", "morphemes": ["kaṭuvaṉ", "iḷam", "eyiṉaṉ"], "gloss": "male monkey + young + Eyinar man", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṭuvaṉ Maḷḷaṉār", "type": "person", "morphemes": ["kaṭuvaṉ", "maḷḷaṉ"], "gloss": "male monkey + warrior", "source": "Sangam colophons (poet names)"}
+{"name": "Maḷḷaṉār", "type": "person", "morphemes": ["maḷḷaṉ"], "gloss": "warrior", "source": "Sangam colophons (poet names)"}
+{"name": "Malaiyaṉār", "type": "person", "morphemes": ["malaiyaṉ"], "gloss": "hillman", "source": "Sangam colophons (poet names)"}
+{"name": "Kācipaṉ Kīraṉār", "type": "person", "morphemes": ["kācipaṉ", "kīraṉ"], "gloss": "Kasyapa + name", "source": "Sangam colophons (poet names)"}
+{"name": "Pālaik Kautamaṉār", "type": "person", "morphemes": ["pālai", "kautamaṉ"], "gloss": "arid tract + Gautama", "source": "Sangam colophons (poet names)"}
+{"name": "Cāṇṭiliyaṉār", "type": "person", "morphemes": ["cāṇṭiliyaṉ"], "gloss": "Sandilya", "source": "Sangam colophons (poet names)"}
+{"name": "Mārkkaṇṭēyaṉār", "type": "person", "morphemes": ["mārkkaṇṭēyaṉ"], "gloss": "Markandeya", "source": "Sangam colophons (poet names)"}
+{"name": "Vāṉmīkiyār", "type": "person", "morphemes": ["vāṉmīki"], "gloss": "Valmiki", "source": "Sangam colophons (poet names)"}
+{"name": "Tāmōtaraṉār", "type": "person", "morphemes": ["tāmōtaraṉ"], "gloss": "Damodara", "source": "Sangam colophons (poet names)"}
+{"name": "Kēcavaṉār", "type": "person", "morphemes": ["kēcavaṉ"], "gloss": "Kesava", "source": "Sangam colophons (poet names)"}
+{"name": "Piramaṉār", "type": "person", "morphemes": ["piramaṉ"], "gloss": "Brahma", "source": "Sangam colophons (poet names)"}
+{"name": "Uruttiraṉār", "type": "person", "morphemes": ["uruttiraṉ"], "gloss": "Rudra", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṟuṅkīraṉār", "type": "person", "morphemes": ["kuṟu", "kīraṉ"], "gloss": "short + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṟuvaḻutiyār", "type": "person", "morphemes": ["kuṟu", "vaḻuti"], "gloss": "short + Pandya king", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṟumpūtaṉār", "type": "person", "morphemes": ["kuṟu", "pūtaṉ"], "gloss": "short + spirit", "source": "Sangam colophons (poet names)"}
+{"name": "Ciṟuveṇṭēraiyār", "type": "person", "morphemes": ["ciṟu", "veḷ", "tērai"], "gloss": "small + white + frog", "source": "Sangam colophons (poet names)"}
+{"name": "Ciṟukaruntumpiyār", "type": "person", "morphemes": ["ciṟu", "karu", "tumpi"], "gloss": "small + black + bee", "source": "Sangam colophons (poet names)"}
+{"name": "Ciṟumētāviyār", "type": "person", "morphemes": ["ciṟu", "mētāvi"], "gloss": "small + sage", "source": "Sangam colophons (poet names)"}
+{"name": "Ciṟukantaṉār", "type": "person", "morphemes": ["ciṟu", "kantaṉ"], "gloss": "small + Skanda", "source": "Sangam colophons (poet names)"}
+{"name": "Mutukaṇṇaṉ Cāttaṉār", "type": "person", "morphemes": ["mutu", "kaṇṇaṉ", "cāttaṉ"], "gloss": "old + Krishna + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Mutukoṟṟaṉār", "type": "person", "morphemes": ["mutu", "koṟṟaṉ"], "gloss": "old + victor", "source": "Sangam colophons (poet names)"}
+{"name": "Mutukūttaṉār", "type": "person", "morphemes": ["mutu", "kūttaṉ"], "gloss": "old + dancer", "source": "Sangam colophons (poet names)"}
+{"name": "Perumpatumaṉār", "type": "person", "morphemes": ["peru", "patumaṉ"], "gloss": "great + lotus", "source": "Sangam colophons (poet names)"}
+{"name": "Mīḷipperumpatumaṉār", "type": "person", "morphemes": ["mīḷi", "peru", "patumaṉ"], "gloss": "valour + great + lotus", "source": "Sangam colophons (poet names)"}
+{"name": "Parūumōvāyppatumaṉār", "type": "person", "morphemes": ["paru", "mōvāy", "patumaṉ"], "gloss": "thick + chin + lotus", "source": "Sangam colophons (poet names)"}
+{"name": "Nampi Kuṭṭuvaṉār", "type": "person", "morphemes": ["nampi", "kuṭṭuvaṉ"], "gloss": "chief + Chera king", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṭṭuvaṉ Kīraṉār", "type": "person", "morphemes": ["kuṭṭuvaṉ", "kīraṉ"], "gloss": "Chera king + name", "source": "Sangam colophons (poet names)"}
+{"name": "Maturaik Kūttaṉār", "type": "person", "morphemes": ["maturai", "kūttaṉ"], "gloss": "name + dancer", "source": "Sangam colophons (poet names)"}
+{"name": "Maturait Tamiḻkkūttaṉār", "type": "person", "morphemes": ["maturai", "tamiḻ", "kūttaṉ"], "gloss": "name + Tamil + dancer", "source": "Sangam colophons (poet names)"}
+{"name": "Maturai Eḻuttāḷaṉ", "type": "person", "morphemes": ["maturai", "eḻuttāḷaṉ"], "gloss": "name + scribe", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷampoṉ Vāṇikaṉār", "type": "person", "morphemes": ["iḷam", "poṉ", "vāṇikaṉ"], "gloss": "young + gold + merchant", "source": "Sangam colophons (poet names)"}
+{"name": "Peruntaccaṉār", "type": "person", "morphemes": ["peru", "taccaṉ"], "gloss": "great + carpenter", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷantaccaṉār", "type": "person", "morphemes": ["iḷam", "taccaṉ"], "gloss": "young + carpenter", "source": "Sangam colophons (poet names)"}
+{"name": "Peruṅkollaṉār", "type": "person", "morphemes": ["peru", "kollaṉ"], "gloss": "great + smith", "source": "Sangam colophons (poet names)"}
+{"name": "Poṟkollaṉār", "type": "person", "morphemes": ["poṉ", "kollaṉ"], "gloss": "gold + smith", "source": "Sangam colophons (poet names)"}
+{"name": "Pērālavāyar", "type": "person", "morphemes": ["pēr", "ālavāy"], "gloss": "great + name", "source": "Sangam colophons (poet names)"}
+{"name": "Eyiṉantaiyār", "type": "person", "morphemes": ["eyiṉaṉ", "tantai"], "gloss": "Eyinar man + father", "source": "Sangam colophons (poet names)"}
+{"name": "Kīrantaiyār", "type": "person", "morphemes": ["kīraṉ", "tantai"], "gloss": "name + father", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷaṅkīrantaiyār", "type": "person", "morphemes": ["iḷam", "kīraṉ", "tantai"], "gloss": "young + name + father", "source": "Sangam colophons (poet names)"}
+{"name": "Cāttantaiyār", "type": "person", "morphemes": ["cāttaṉ", "tantai"], "gloss": "Sasta + father", "source": "Sangam colophons (poet names)"}
+{"name": "Mālaimāṟaṉār", "type": "person", "morphemes": ["mālai", "māṟaṉ"], "gloss": "garland + Pandya king", "source": "Sangam colophons (poet names)"}
+{"name": "Veḷḷaimāṟaṉār", "type": "person", "morphemes": ["veḷḷai", "māṟaṉ"], "gloss": "white + Pandya king", "source": "Sangam colophons (poet names)"}
+{"name": "Veḷḷaikkuṭi Nākaṉār", "type": "person", "morphemes": ["veḷḷai", "kuṭi", "nākaṉ"], "gloss": "white + settlement + serpent", "source": "Sangam colophons (poet names)"}
+{"name": "Naraimuṭi Neṭṭaiyar", "type": "person", "morphemes": ["narai", "muṭi", "neṭṭai"], "gloss": "grey hair + crown + tall one", "source": "Sangam colophons (poet names)"}
+{"name": "Neṭṭimaiyār", "type": "person", "morphemes": ["neṭu", "imai"], "gloss": "long + eyelid", "source": "Sangam colophons (poet names)"}
+{"name": "Neṭumpalliyattaṉār", "type": "person", "morphemes": ["neṭu", "palliyam"], "gloss": "long + orchestra", "source": "Sangam colophons (poet names)"}
+{"name": "Muṭattirumāṟaṉār", "type": "person", "morphemes": ["muṭam", "tiru", "māṟaṉ"], "gloss": "crooked + sacred + Pandya king", "source": "Sangam colophons (poet names)"}
+{"name": "Muṭattāmakkaṇṇiyār", "type": "person", "morphemes": ["muṭam", "tāmakkaṇṇi"], "gloss": "crooked + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kūṟṟaṅkumaraṉār", "type": "person", "morphemes": ["kūṟṟam", "kumaraṉ"], "gloss": "district + youth", "source": "Sangam colophons (poet names)"}
+{"name": "Neytal Tattaṉār", "type": "person", "morphemes": ["neytal", "tattaṉ"], "gloss": "water lily + given", "source": "Sangam colophons (poet names)"}
+{"name": "Perumpūtaṉār", "type": "person", "morphemes": ["peru", "pūtaṉ"], "gloss": "great + spirit", "source": "Sangam colophons (poet names)"}
+{"name": "Peruñcāttaṉār", "type": "person", "morphemes": ["peru", "cāttaṉ"], "gloss": "great + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Peruṅkoṟṟaṉār", "type": "person", "morphemes": ["peru", "koṟṟaṉ"], "gloss": "great + victor", "source": "Sangam colophons (poet names)"}
+{"name": "Karuṅkuḻalātaṉār", "type": "person", "morphemes": ["karu", "kuḻal", "ātaṉ"], "gloss": "black + tresses + name", "source": "Sangam colophons (poet names)"}
+{"name": "Ālaṅkuṭi Vaṅkaṉār", "type": "person", "morphemes": ["āl", "kuṭi", "vaṅkaṉ"], "gloss": "banyan + settlement + name", "source": "Sangam colophons (poet names)"}
+{"name": "Ammeyyaṉ Nākaṉār", "type": "person", "morphemes": ["am", "meyyaṉ", "nākaṉ"], "gloss": "beautiful + truthful one + serpent", "source": "Sangam colophons (poet names)"}
+{"name": "Aṇṭar Naṭukalliṉār", "type": "person", "morphemes": ["aṇṭar", "naṭu", "kal"], "gloss": "herdsmen + plant + stone", "source": "Sangam colophons (poet names)"}
+{"name": "Añcil Añciyār", "type": "person", "morphemes": ["añcil", "añci"], "gloss": "name + name", "source": "Sangam colophons (poet names)"}
+{"name": "Āviyār", "type": "person", "morphemes": ["āvi"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Erumai Veḷiyaṉār", "type": "person", "morphemes": ["erumai", "veḷiyaṉ"], "gloss": "buffalo + name", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṭalaṉār", "type": "person", "morphemes": ["kaṭalaṉ"], "gloss": "sea one", "source": "Sangam colophons (poet names)"}
+{"name": "Kaḻārkkīraṉ Eyiṟṟiyār", "type": "person", "morphemes": ["kaḻār", "kīraṉ", "eyiṟṟi"], "gloss": "name + name + Eyinar woman", "source": "Sangam colophons (poet names)"}
+{"name": "Kaḷḷil Āttiraiyaṉār", "type": "person", "morphemes": ["kaḷḷil", "āttiraiyaṉ"], "gloss": "name + Atreya", "source": "Sangam colophons (poet names)"}
+{"name": "Kāmañcērkuḷattār", "type": "person", "morphemes": ["kāmam", "cēr", "kuḷam"], "gloss": "love + join + tank", "source": "Sangam colophons (poet names)"}
+{"name": "Naṉmārpaṉ", "type": "person", "morphemes": ["nal", "mārpaṉ"], "gloss": "good + chest", "source": "Sangam colophons (poet names)"}
+{"name": "Katappiḷḷaiyār", "type": "person", "morphemes": ["katam", "piḷḷai"], "gloss": "anger + child", "source": "Sangam colophons (poet names)"}
+{"name": "Kāvaṉmullaippūtaṉār", "type": "person", "morphemes": ["kāval", "mullai", "pūtaṉ"], "gloss": "guarding + jasmine + spirit", "source": "Sangam colophons (poet names)"}
+{"name": "Nattattaṉār", "type": "person", "morphemes": ["nattattaṉ"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṉṟiyaṉār", "type": "person", "morphemes": ["kuṉṟu"], "gloss": "hill", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṉṟampūtaṉār", "type": "person", "morphemes": ["kuṉṟu", "pūtaṉ"], "gloss": "hill + spirit", "source": "Sangam colophons (poet names)"}
+{"name": "Miḷaikkantaṉār", "type": "person", "morphemes": ["miḷai", "kantaṉ"], "gloss": "name + Skanda", "source": "Sangam colophons (poet names)"}
+{"name": "Miḷaivēḷ Tittaṉār", "type": "person", "morphemes": ["miḷai", "vēḷ", "tittaṉ"], "gloss": "name + chieftain + name", "source": "Sangam colophons (poet names)"}
+{"name": "Mūlaṅkīraṉār", "type": "person", "morphemes": ["mūlam", "kīraṉ"], "gloss": "Mula asterism + name", "source": "Sangam colophons (poet names)"}
+{"name": "Muṭinākaṉār", "type": "person", "morphemes": ["muṭi", "nākaṉ"], "gloss": "crown + serpent", "source": "Sangam colophons (poet names)"}
+{"name": "Ōril Piccaiyār", "type": "person", "morphemes": ["ōr", "il", "piccai"], "gloss": "one + house + alms", "source": "Sangam colophons (poet names)"}
+{"name": "Oruciṟaipperiyaṉār", "type": "person", "morphemes": ["oru", "ciṟai", "periyaṉ"], "gloss": "one + wing + great one", "source": "Sangam colophons (poet names)"}
+{"name": "Pāvaikkoṭṭilār", "type": "person", "morphemes": ["pāvai", "koṭṭil"], "gloss": "doll + shed", "source": "Sangam colophons (poet names)"}
+{"name": "Pēreyil Muṟuvalār", "type": "person", "morphemes": ["pēr", "eyil", "muṟuval"], "gloss": "great + fortress + smile", "source": "Sangam colophons (poet names)"}
+{"name": "Peruntōṭkuṟuñcāttaṉār", "type": "person", "morphemes": ["peru", "tōḷ", "kuṟu", "cāttaṉ"], "gloss": "great + shoulder + short + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Pirāṉ Cāttaṉār", "type": "person", "morphemes": ["pirāṉ", "cāttaṉ"], "gloss": "lord + Sasta", "source": "Sangam colophons (poet names)"}
+{"name": "Pōntaippacalaiyār", "type": "person", "morphemes": ["pōntai", "pacalai"], "gloss": "palmyra + pallor", "source": "Sangam colophons (poet names)"}
+{"name": "Tēvakulattār", "type": "person", "morphemes": ["tēvaṉ", "kulam"], "gloss": "god + family", "source": "Sangam colophons (poet names)"}
+{"name": "Tumpicēr Kīraṉār", "type": "person", "morphemes": ["tumpi", "cēr", "kīraṉ"], "gloss": "bee + join + name", "source": "Sangam colophons (poet names)"}
+{"name": "Vaṭaneṭuntattaṉār", "type": "person", "morphemes": ["vaṭa", "neṭu", "tattaṉ"], "gloss": "north + long + given", "source": "Sangam colophons (poet names)"}
+{"name": "Vāyilāṉ Tēvaṉār", "type": "person", "morphemes": ["vāyil", "tēvaṉ"], "gloss": "gate + god", "source": "Sangam colophons (poet names)"}
+{"name": "Vīrai Veḷiyaṉ Tittaṉār", "type": "person", "morphemes": ["vīrai", "veḷiyaṉ", "tittaṉ"], "gloss": "name + name + name", "source": "Sangam colophons (poet names)"}
+{"name": "Veḷḷerukkilaiyār", "type": "person", "morphemes": ["veḷ", "erukku", "ilai"], "gloss": "white + calotropis + leaf", "source": "Sangam colophons (poet names)"}
+{"name": "Villakaviraliṉār", "type": "person", "morphemes": ["vil", "akam", "viral"], "gloss": "bow + inside + finger", "source": "Sangam colophons (poet names)"}
+{"name": "Mūteyiṉaṉār", "type": "person", "morphemes": ["mutu", "eyiṉaṉ"], "gloss": "old + Eyinar man", "source": "Sangam colophons (poet names)"}
+{"name": "Kāppiyaṉār", "type": "person", "morphemes": ["kāppiyaṉ"], "gloss": "Kavya", "source": "Sangam colophons (poet names)"}
+{"name": "Kāppiyañcēntaṉār", "type": "person", "morphemes": ["kāppiyaṉ", "cēntaṉ"], "gloss": "Kavya + Murukan", "source": "Sangam colophons (poet names)"}
+{"name": "Uṟaiyūr", "type": "place", "morphemes": ["uṟai", "ūr"], "gloss": "abode + town", "source": "Sangam colophons (poet names)"}
+{"name": "Uṟantai", "type": "place", "morphemes": ["uṟantai"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Kāvirippūmpaṭṭiṉam", "type": "place", "morphemes": ["kāviri", "pū", "paṭṭiṉam"], "gloss": "Kaveri + flower + port town", "source": "Sangam colophons (poet names)"}
+{"name": "Maturai", "type": "place", "morphemes": ["maturai"], "gloss": "name", "source": "Maturaikkāñci; Tamil-Brahmi inscriptions"}
+{"name": "Kūṭal", "type": "place", "morphemes": ["kūṭal"], "gloss": "confluence", "source": "Paripāṭal"}
+{"name": "Ālavāy", "type": "place", "morphemes": ["ālavāy"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Koṟkai", "type": "place", "morphemes": ["koṟkai"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Vañci", "type": "place", "morphemes": ["vañci"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Karuvūr", "type": "place", "morphemes": ["karuvūr"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Toṇṭi", "type": "place", "morphemes": ["toṇṭi"], "gloss": "name", "source": "Kuṟuntokai"}
+{"name": "Muciṟi", "type": "place", "morphemes": ["muciṟi"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Mantai", "type": "place", "morphemes": ["mantai"], "gloss": "name", "source": "Naṟṟiṇai"}
+{"name": "Naṟavu", "type": "place", "morphemes": ["naṟavu"], "gloss": "name", "source": "Patiṟṟuppattu"}
+{"name": "Takaṭūr", "type": "place", "morphemes": ["takaṭu", "ūr"], "gloss": "name + town", "source": "Patiṟṟuppattu"}
+{"name": "Koṭumaṇam", "type": "place", "morphemes": ["koṭumaṇam"], "gloss": "name", "source": "Patiṟṟuppattu"}
+{"name": "Pantar", "type": "place", "morphemes": ["pantar"], "gloss": "name", "source": "Patiṟṟuppattu"}
+{"name": "Viyalūr", "type": "place", "morphemes": ["viyal", "ūr"], "gloss": "wide + town", "source": "Akanāṉūṟu"}
+{"name": "Pāḻi", "type": "place", "morphemes": ["pāḻi"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Kaṭampiṉperuvāyil", "type": "place", "morphemes": ["kaṭampu", "peru", "vāyil"], "gloss": "kadamba tree + great + gate", "source": "Patiṟṟuppattu"}
+{"name": "Vākaipperuntuṟai", "type": "place", "morphemes": ["vākai", "peru", "tuṟai"], "gloss": "vakai tree + great + ford", "source": "Patiṟṟuppattu"}
+{"name": "Veṇṇi", "type": "place", "morphemes": ["veṇṇi"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Talaiyālaṅkāṉam", "type": "place", "morphemes": ["talai", "āl", "kāṉam"], "gloss": "head + banyan + forest", "source": "Puṟanāṉūṟu"}
+{"name": "Kuṟukkai", "type": "place", "morphemes": ["kuṟukkai"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Aḷḷūr", "type": "place", "morphemes": ["aḷ", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Āmūr", "type": "place", "morphemes": ["āmūr"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Āvūr", "type": "place", "morphemes": ["ā", "ūr"], "gloss": "cow + town", "source": "Sangam colophons (poet names)"}
+{"name": "Mōkūr", "type": "place", "morphemes": ["mōkūr"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Kōvūr", "type": "place", "morphemes": ["kō", "ūr"], "gloss": "king + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kūṭalūr", "type": "place", "morphemes": ["kūṭal", "ūr"], "gloss": "confluence + town", "source": "Sangam colophons (poet names); Tamil-Brahmi inscriptions"}
+{"name": "Ālattūr", "type": "place", "morphemes": ["āl", "ūr"], "gloss": "banyan + town", "source": "Sangam colophons (poet names)"}
+{"name": "Iṭaikkuṉṟūr", "type": "place", "morphemes": ["iṭai", "kuṉṟu", "ūr"], "gloss": "middle + hill + town", "source": "Sangam colophons (poet names)"}
+{"name": "Peruṅkuṉṟūr", "type": "place", "morphemes": ["peru", "kuṉṟu", "ūr"], "gloss": "great + hill + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṉṟūr", "type": "place", "morphemes": ["kuṉṟu", "ūr"], "gloss": "hill + town", "source": "Sangam colophons (poet names)"}
+{"name": "Ālaṅkuṭi", "type": "place", "morphemes": ["āl", "kuṭi"], "gloss": "banyan + settlement", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṭiyalūr", "type": "place", "morphemes": ["kaṭiyal", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kayattūr", "type": "place", "morphemes": ["kayam", "ūr"], "gloss": "tank + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kiḷḷimaṅkalam", "type": "place", "morphemes": ["kiḷḷi", "maṅkalam"], "gloss": "Chola king + auspicious village", "source": "Sangam colophons (poet names)"}
+{"name": "Kumaṭṭūr", "type": "place", "morphemes": ["kumaṭṭu", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Umaṭṭūr", "type": "place", "morphemes": ["umaṭṭu", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Cellūr", "type": "place", "morphemes": ["cel", "ūr"], "gloss": "name + town", "source": "Akanāṉūṟu; Sangam colophons (poet names)"}
+{"name": "Ceyalūr", "type": "place", "morphemes": ["ceyal", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Ciṟaikkuṭi", "type": "place", "morphemes": ["ciṟai", "kuṭi"], "gloss": "name + settlement", "source": "Sangam colophons (poet names)"}
+{"name": "Taṅkāl", "type": "place", "morphemes": ["taṅkāl"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Tuṟaiyūr", "type": "place", "morphemes": ["tuṟai", "ūr"], "gloss": "ford + town", "source": "Sangam colophons (poet names)"}
+{"name": "Nallūr", "type": "place", "morphemes": ["nal", "ūr"], "gloss": "good + town", "source": "Sangam colophons (poet names)"}
+{"name": "Nallāvūr", "type": "place", "morphemes": ["nal", "ā", "ūr"], "gloss": "good + cow + town", "source": "Sangam colophons (poet names)"}
+{"name": "Neṭuṅkaḷam", "type": "place", "morphemes": ["neṭu", "kaḷam"], "gloss": "long + field", "source": "Sangam colophons (poet names)"}
+{"name": "Potumpil", "type": "place", "morphemes": ["potumpil"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Maruṅkūr", "type": "place", "morphemes": ["maruṅku", "ūr"], "gloss": "side + town", "source": "Sangam colophons (poet names)"}
+{"name": "Māṟōkkam", "type": "place", "morphemes": ["māṟōkkam"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Muḷḷiyūr", "type": "place", "morphemes": ["muḷḷi", "ūr"], "gloss": "thorny shrub + town", "source": "Sangam colophons (poet names)"}
+{"name": "Murañciyūr", "type": "place", "morphemes": ["murañci", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Mukaiyalūr", "type": "place", "morphemes": ["mukaiyal", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Viriyūr", "type": "place", "morphemes": ["viri", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Viricciyūr", "type": "place", "morphemes": ["viricci", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Vīrai", "type": "place", "morphemes": ["vīrai"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Vēmpaṟṟūr", "type": "place", "morphemes": ["vēmpu", "paṟṟu", "ūr"], "gloss": "neem + holding + town", "source": "Sangam colophons (poet names)"}
+{"name": "Veḷḷūr", "type": "place", "morphemes": ["veḷ", "ūr"], "gloss": "white + town", "source": "Sangam colophons (poet names)"}
+{"name": "Veḷḷaikkuṭi", "type": "place", "morphemes": ["veḷḷai", "kuṭi"], "gloss": "white + settlement", "source": "Sangam colophons (poet names)"}
+{"name": "Kaḻār", "type": "place", "morphemes": ["kaḻār"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṭavāyil", "type": "place", "morphemes": ["kuṭa", "vāyil"], "gloss": "west + gate", "source": "Akanāṉūṟu"}
+{"name": "Kaḷḷikkuṭi", "type": "place", "morphemes": ["kaḷḷi", "kuṭi"], "gloss": "spurge + settlement", "source": "Sangam colophons (poet names)"}
+{"name": "Ericcalūr", "type": "place", "morphemes": ["ericcal", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kōṉāṭu", "type": "place", "morphemes": ["kō", "nāṭu"], "gloss": "king + country", "source": "Sangam colophons (poet names)"}
+{"name": "Cōṇāṭu", "type": "place", "morphemes": ["cōḻaṉ", "nāṭu"], "gloss": "Chola + country", "source": "Sangam colophons (poet names)"}
+{"name": "Iṭaikkaḻināṭu", "type": "place", "morphemes": ["iṭai", "kaḻi", "nāṭu"], "gloss": "middle + backwater + country", "source": "Sangam colophons (poet names)"}
+{"name": "Oymānāṭu", "type": "place", "morphemes": ["oymā", "nāṭu"], "gloss": "name + country", "source": "Ciṟupāṇāṟṟuppaṭai"}
+{"name": "Kaccippēṭu", "type": "place", "morphemes": ["kacci", "pēṭu"], "gloss": "name + hamlet", "source": "Sangam colophons (poet names)"}
+{"name": "Kacci", "type": "place", "morphemes": ["kacci"], "gloss": "name", "source": "Perumpāṇāṟṟuppaṭai"}
+{"name": "Eyiṟpaṭṭiṉam", "type": "place", "morphemes": ["eyil", "paṭṭiṉam"], "gloss": "fortress + port town", "source": "Ciṟupāṇāṟṟuppaṭai"}
+{"name": "Vēlūr", "type": "place", "morphemes": ["vēl", "ūr"], "gloss": "spear + town", "source": "Ciṟupāṇāṟṟuppaṭai"}
+{"name": "Kiṭaṅkil", "type": "place", "morphemes": ["kiṭaṅkil"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Māvilaṅkai", "type": "place", "morphemes": ["mā", "ilaṅkai"], "gloss": "great + Lanka", "source": "Ciṟupāṇāṟṟuppaṭai"}
+{"name": "Ilaṅkai", "type": "place", "morphemes": ["ilaṅkai"], "gloss": "Lanka", "source": "Puṟanāṉūṟu"}
+{"name": "Nīrppeyaṟṟu", "type": "place", "morphemes": ["nīrppeyaṟṟu"], "gloss": "name", "source": "Perumpāṇāṟṟuppaṭai"}
+{"name": "Kōvalūr", "type": "place", "morphemes": ["kōval", "ūr"], "gloss": "cowherd + town", "source": "Puṟanāṉūṟu"}
+{"name": "Ollaiyūr", "type": "place", "morphemes": ["ollai", "ūr"], "gloss": "name + town", "source": "Puṟanāṉūṟu"}
+{"name": "Ciṟukuṭi", "type": "place", "morphemes": ["ciṟu", "kuṭi"], "gloss": "small + settlement", "source": "Puṟanāṉūṟu"}
+{"name": "Ārkkāṭu", "type": "place", "morphemes": ["ār", "kāṭu"], "gloss": "ar tree + forest", "source": "Naṟṟiṇai"}
+{"name": "Tēṉūr", "type": "place", "morphemes": ["tēṉ", "ūr"], "gloss": "honey + town", "source": "Aiṅkuṟunūṟu"}
+{"name": "Alaivāy", "type": "place", "morphemes": ["alai", "vāy"], "gloss": "wave + mouth", "source": "Tirumurukāṟṟuppaṭai"}
+{"name": "Āviṉaṉkuṭi", "type": "place", "morphemes": ["āviṉaṉ", "kuṭi"], "gloss": "name + settlement", "source": "Tirumurukāṟṟuppaṭai"}
+{"name": "Ēṟakam", "type": "place", "morphemes": ["ēṟakam"], "gloss": "name", "source": "Tirumurukāṟṟuppaṭai"}
+{"name": "Paḻamutircōlai", "type": "place", "morphemes": ["paḻam", "mutir", "cōlai"], "gloss": "fruit + ripen + grove", "source": "Tirumurukāṟṟuppaṭai"}
+{"name": "Potiṉi", "type": "place", "morphemes": ["potiṉi"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Kumari", "type": "place", "morphemes": ["kumari"], "gloss": "maiden", "source": "Puṟanāṉūṟu"}
+{"name": "Pāṭali", "type": "place", "morphemes": ["pāṭali"], "gloss": "trumpet-flower tree", "source": "Kuṟuntokai"}
+{"name": "Īḻam", "type": "place", "morphemes": ["īḻam"], "gloss": "Ceylon", "source": "Paṭṭiṉappālai"}
+{"name": "Kāḻakam", "type": "place", "morphemes": ["kāḻakam"], "gloss": "name", "source": "Paṭṭiṉappālai"}
+{"name": "Tuḷunāṭu", "type": "place", "morphemes": ["tuḷu", "nāṭu"], "gloss": "Tulu + country", "source": "Akanāṉūṟu"}
+{"name": "Koṅkāṇam", "type": "place", "morphemes": ["koṅkāṇam"], "gloss": "name", "source": "Naṟṟiṇai"}
+{"name": "Veḷḷaṟai", "type": "place", "morphemes": ["veḷ", "aṟai"], "gloss": "white + rock", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Nelvēli", "type": "place", "morphemes": ["nel", "vēli"], "gloss": "paddy + fence", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Erukkāṭṭūr", "type": "place", "morphemes": ["erukku", "kāṭu", "ūr"], "gloss": "calotropis + forest + town", "source": "Sangam colophons (poet names); Tamil-Brahmi inscriptions"}
+{"name": "Yāṟṟūr", "type": "place", "morphemes": ["yāṟu", "ūr"], "gloss": "river + town", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Kumuḻūr", "type": "place", "morphemes": ["kumuḻ", "ūr"], "gloss": "name + town", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Vēḷūr", "type": "place", "morphemes": ["vēḷ", "ūr"], "gloss": "chieftain + town", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Okkūr", "type": "place", "morphemes": ["okkūr"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Aiyūr", "type": "place", "morphemes": ["ai", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kōṭṭiyūr", "type": "place", "morphemes": ["kōṭṭi", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Koṭiyūr", "type": "place", "morphemes": ["koṭi", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kāṭṭūr", "type": "place", "morphemes": ["kāṭu", "ūr"], "gloss": "forest + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṟuṅkōḻiyūr", "type": "place", "morphemes": ["kuṟu", "kōḻi", "ūr"], "gloss": "short + fowl + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kuṟuṅkuṭi", "type": "place", "morphemes": ["kuṟu", "kuṭi"], "gloss": "short + settlement", "source": "Sangam colophons (poet names)"}
+{"name": "Māṅkuṭi", "type": "place", "morphemes": ["māṅkuṭi"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Umpaṟkāṭu", "type": "place", "morphemes": ["umpal", "kāṭu"], "gloss": "elephant + forest", "source": "Patiṟṟuppattu"}
+{"name": "Neytalaṅkāṉal", "type": "place", "morphemes": ["neytal", "kāṉal"], "gloss": "water lily + seashore grove", "source": "Puṟanāṉūṟu"}
+{"name": "Iraṇiyamuṭṭam", "type": "place", "morphemes": ["iraṇiyamuṭṭam"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Iruntaiyūr", "type": "place", "morphemes": ["iruntai", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kaṭampaṉūr", "type": "place", "morphemes": ["kaṭampaṉ", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Ukāykkuṭi", "type": "place", "morphemes": ["ukāy", "kuṭi"], "gloss": "toothbrush tree + settlement", "source": "Sangam colophons (poet names)"}
+{"name": "Iḷampullūr", "type": "place", "morphemes": ["iḷam", "pul", "ūr"], "gloss": "young + grass + town", "source": "Sangam colophons (poet names)"}
+{"name": "Pullāṟṟūr", "type": "place", "morphemes": ["pul", "āṟu", "ūr"], "gloss": "grass + river + town", "source": "Sangam colophons (poet names)"}
+{"name": "Vāṭṭāṟu", "type": "place", "morphemes": ["vāṭṭāṟu"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Pēreyil", "type": "place", "morphemes": ["pēr", "eyil"], "gloss": "great + fortress", "source": "Sangam colophons (poet names)"}
+{"name": "Peruṅkōḻi", "type": "place", "morphemes": ["peru", "kōḻi"], "gloss": "great + fowl", "source": "Sangam colophons (poet names)"}
+{"name": "Puṟanāṭu", "type": "place", "morphemes": ["puṟam", "nāṭu"], "gloss": "outer + country", "source": "Sangam colophons (poet names)"}
+{"name": "Paṭumaram", "type": "place", "morphemes": ["paṭu", "maram"], "gloss": "fallen + tree", "source": "Sangam colophons (poet names)"}
+{"name": "Kōḷiyūr", "type": "place", "morphemes": ["kōḷi", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Māṭalūr", "type": "place", "morphemes": ["māṭal", "ūr"], "gloss": "name + town", "source": "Sangam colophons (poet names)"}
+{"name": "Kaḷḷil", "type": "place", "morphemes": ["kaḷḷil"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Añcil", "type": "place", "morphemes": ["añcil"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Cīttalai", "type": "place", "morphemes": ["cīttalai"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Kāppiyāṟu", "type": "place", "morphemes": ["kāppiyāṟu"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Uvarkkaṇṇūr", "type": "place", "morphemes": ["uvarkkaṇṇūr"], "gloss": "name", "source": "Sangam colophons (poet names)"}
+{"name": "Āvaṭutuṟai", "type": "place", "morphemes": ["āvaṭu", "tuṟai"], "gloss": "name + ford", "source": "Sangam colophons (poet names)"}
+{"name": "Ēṇiccēri", "type": "place", "morphemes": ["ēṇi", "cēri"], "gloss": "ladder + quarter", "source": "Sangam colophons (poet names)"}
+{"name": "Potukkayam", "type": "place", "morphemes": ["potu", "kayam"], "gloss": "common + tank", "source": "Sangam colophons (poet names)"}
+{"name": "Putukkayam", "type": "place", "morphemes": ["putu", "kayam"], "gloss": "new + tank", "source": "Sangam colophons (poet names)"}
+{"name": "Potiyil", "type": "hill", "morphemes": ["potiyil"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Kolli", "type": "hill", "morphemes": ["kolli"], "gloss": "Kolli hill", "source": "Puṟanāṉūṟu"}
+{"name": "Paṟampu", "type": "hill", "morphemes": ["paṟampu"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Vēṅkaṭam", "type": "hill", "morphemes": ["vēṅkaṭam"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Imayam", "type": "hill", "morphemes": ["imayam"], "gloss": "Himalaya", "source": "Puṟanāṉūṟu"}
+{"name": "Mutiram", "type": "hill", "morphemes": ["mutiram"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Ēḻilkuṉṟam", "type": "hill", "morphemes": ["ēḻil", "kuṉṟu"], "gloss": "name + hill", "source": "Akanāṉūṟu"}
+{"name": "Ayirai", "type": "hill", "morphemes": ["ayirai"], "gloss": "name", "source": "Patiṟṟuppattu"}
+{"name": "Muḷḷūr", "type": "hill", "morphemes": ["muḷ", "ūr"], "gloss": "thorn + town", "source": "Puṟanāṉūṟu"}
+{"name": "Kutiraimalai", "type": "hill", "morphemes": ["kutirai", "malai"], "gloss": "horse + mountain", "source": "Puṟanāṉūṟu"}
+{"name": "Paraṅkuṉṟu", "type": "hill", "morphemes": ["param", "kuṉṟu"], "gloss": "name + hill", "source": "Akanāṉūṟu"}
+{"name": "Iruṅkuṉṟam", "type": "hill", "morphemes": ["iru", "kuṉṟu"], "gloss": "great + hill", "source": "Paripāṭal"}
+{"name": "Kāviri", "type": "river", "morphemes": ["kāviri"], "gloss": "Kaveri", "source": "Puṟanāṉūṟu"}
+{"name": "Vaiyai", "type": "river", "morphemes": ["vaiyai"], "gloss": "name", "source": "Paripāṭal"}
+{"name": "Porunai", "type": "river", "morphemes": ["porunai"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Āṉporunai", "type": "river", "morphemes": ["āṉ", "porunai"], "gloss": "cow + name", "source": "Puṟanāṉūṟu"}
+{"name": "Kaṅkai", "type": "river", "morphemes": ["kaṅkai"], "gloss": "Ganges", "source": "Paṭṭiṉappālai"}
+{"name": "Cōṇai", "type": "river", "morphemes": ["cōṇai"], "gloss": "Son river", "source": "Kuṟuntokai"}
+{"name": "Toḻunai", "type": "river", "morphemes": ["toḻunai"], "gloss": "Yamuna", "source": "Akanāṉūṟu"}
+{"name": "Cuḷḷi", "type": "river", "morphemes": ["cuḷḷi"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Pēriyāṟu", "type": "river", "morphemes": ["pēr", "āṟu"], "gloss": "great + river", "source": "Akanāṉūṟu"}
+{"name": "Ñāyiṟu", "type": "celestial", "morphemes": ["ñāyiṟu"], "gloss": "sun", "source": "Puṟanāṉūṟu"}
+{"name": "Tiṅkaḷ", "type": "celestial", "morphemes": ["tiṅkaḷ"], "gloss": "moon", "source": "Puṟanāṉūṟu"}
+{"name": "Veḷḷi", "type": "celestial", "morphemes": ["veḷḷi"], "gloss": "silver", "source": "Puṟanāṉūṟu"}
+{"name": "Maimīṉ", "type": "celestial", "morphemes": ["mai", "mīṉ"], "gloss": "black + star", "source": "Puṟanāṉūṟu"}
+{"name": "Aṟumīṉ", "type": "celestial", "morphemes": ["aṟu", "mīṉ"], "gloss": "six + star", "source": "Akanāṉūṟu"}
+{"name": "Vaṭamīṉ", "type": "celestial", "morphemes": ["vaṭa", "mīṉ"], "gloss": "north + star", "source": "Puṟanāṉūṟu"}
+{"name": "Ōṇam", "type": "celestial", "morphemes": ["ōṇam"], "gloss": "Sravana asterism", "source": "Maturaikkāñci"}
+{"name": "Ātirai", "type": "celestial", "morphemes": ["ātirai"], "gloss": "Ardra asterism", "source": "Paripāṭal"}
+{"name": "Muṭappaṉai", "type": "celestial", "morphemes": ["muṭam", "paṉai"], "gloss": "crooked + palmyra", "source": "Puṟanāṉūṟu"}
+{"name": "Kaṭaikkuḷam", "type": "celestial", "morphemes": ["kaṭai", "kuḷam"], "gloss": "last + tank", "source": "Puṟanāṉūṟu"}
+{"name": "Aḻaṟkuṭṭam", "type": "celestial", "morphemes": ["aḻal", "kuṭṭam"], "gloss": "fire + multitude", "source": "Puṟanāṉūṟu"}
+{"name": "Varuṭai", "type": "celestial", "morphemes": ["varuṭai"], "gloss": "ram", "source": "Paripāṭal"}
+{"name": "Mitunam", "type": "celestial", "morphemes": ["mitunam"], "gloss": "pair", "source": "Paripāṭal"}
+{"name": "Makaram", "type": "celestial", "morphemes": ["makaram"], "gloss": "sea monster", "source": "Paripāṭal"}
+{"name": "Pāmpu", "type": "celestial", "morphemes": ["pāmpu"], "gloss": "snake", "source": "Paripāṭal"}
+{"name": "Cakaṭam", "type": "celestial", "morphemes": ["cakaṭam"], "gloss": "cart", "source": "Akanāṉūṟu"}
+{"name": "Murukaṉ", "type": "deity", "morphemes": ["murukaṉ"], "gloss": "youthful beauty", "source": "Tirumurukāṟṟuppaṭai"}
+{"name": "Neṭuvēḷ", "type": "deity", "morphemes": ["neṭu", "vēḷ"], "gloss": "long + chieftain", "source": "Akanāṉūṟu"}
+{"name": "Māyōṉ", "type": "deity", "morphemes": ["māyōṉ"], "gloss": "dark one", "source": "Maturaikkāñci"}
+{"name": "Tirumāl", "type": "deity", "morphemes": ["tiru", "māl"], "gloss": "sacred + dark one", "source": "Paripāṭal"}
+{"name": "Neṭiyōṉ", "type": "deity", "morphemes": ["neṭiyōṉ"], "gloss": "tall one", "source": "Mullaippāṭṭu"}
+{"name": "Paṉaikkoṭiyōṉ", "type": "deity", "morphemes": ["paṉai", "koṭi"], "gloss": "palmyra + banner", "source": "Puṟanāṉūṟu"}
+{"name": "Nēmiyōṉ", "type": "deity", "morphemes": ["nēmi"], "gloss": "discus", "source": "Puṟanāṉūṟu"}
+{"name": "Ālamarcelvaṉ", "type": "deity", "morphemes": ["āl", "amar", "celvaṉ"], "gloss": "banyan + dwell + lord", "source": "Ciṟupāṇāṟṟuppaṭai"}
+{"name": "Mukkaṭcelvaṉ", "type": "deity", "morphemes": ["mu", "kaṇ", "celvaṉ"], "gloss": "three + eye + lord", "source": "Puṟanāṉūṟu"}
+{"name": "Koṟṟavai", "type": "deity", "morphemes": ["koṟṟavai"], "gloss": "victory goddess", "source": "Tirumurukāṟṟuppaṭai"}
+{"name": "Paḻaiyōḷ", "type": "deity", "morphemes": ["paḻaiyōḷ"], "gloss": "ancient one", "source": "Tirumurukāṟṟuppaṭai"}
+{"name": "Kāmaṉ", "type": "deity", "morphemes": ["kāmaṉ"], "gloss": "desire", "source": "Kalittokai"}
+{"name": "Intiraṉ", "type": "deity", "morphemes": ["intiraṉ"], "gloss": "Indra", "source": "Puṟanāṉūṟu"}
+{"name": "Kūṟṟu", "type": "deity", "morphemes": ["kūṟṟu"], "gloss": "death", "source": "Puṟanāṉūṟu"}
+{"name": "Cūr", "type": "deity", "morphemes": ["cūr"], "gloss": "terror", "source": "Tirumurukāṟṟuppaṭai"}
+{"name": "Aṇaṅku", "type": "deity", "morphemes": ["aṇaṅku"], "gloss": "affliction", "source": "Akanāṉūṟu"}
+{"name": "Pēy", "type": "deity", "morphemes": ["pēy"], "gloss": "demon", "source": "Puṟanāṉūṟu"}
+{"name": "Avuṇar", "type": "deity", "morphemes": ["avuṇar"], "gloss": "asuras", "source": "Maturaikkāñci"}
+{"name": "Amarar", "type": "deity", "morphemes": ["amarar"], "gloss": "immortals", "source": "Paripāṭal"}
+{"name": "Nāṉmukaṉ", "type": "deity", "morphemes": ["nāl", "mukam"], "gloss": "four + face", "source": "Tirumurukāṟṟuppaṭai"}
+{"name": "Vāṉōr", "type": "deity", "morphemes": ["vāṉam"], "gloss": "sky", "source": "Puṟanāṉūṟu"}
+{"name": "Vaṭukar", "type": "group", "morphemes": ["vaṭukar"], "gloss": "northerners", "source": "Akanāṉūṟu"}
+{"name": "Kōcar", "type": "group", "morphemes": ["kōcar"], "gloss": "name", "source": "Akanāṉūṟu"}
+{"name": "Yavaṉar", "type": "group", "morphemes": ["yavaṉar"], "gloss": "Ionians", "source": "Akanāṉūṟu"}
+{"name": "Āriyar", "type": "group", "morphemes": ["āriyar"], "gloss": "Aryans", "source": "Akanāṉūṟu"}
+{"name": "Koṅkar", "type": "group", "morphemes": ["koṅkar"], "gloss": "Kongu people", "source": "Patiṟṟuppattu"}
+{"name": "Kuṭavar", "type": "group", "morphemes": ["kuṭavar"], "gloss": "westerners", "source": "Paṭṭiṉappālai"}
+{"name": "Oḷiyar", "type": "group", "morphemes": ["oḷiyar"], "gloss": "name", "source": "Paṭṭiṉappālai"}
+{"name": "Aruvāḷar", "type": "group", "morphemes": ["aruvāḷar"], "gloss": "people of Aruva land", "source": "Paṭṭiṉappālai"}
+{"name": "Vaṭavar", "type": "group", "morphemes": ["vaṭavar"], "gloss": "northerners", "source": "Paṭṭiṉappālai"}
+{"name": "Maḻavar", "type": "group", "morphemes": ["maḻavar"], "gloss": "name", "source": "Puṟanāṉūṟu"}
+{"name": "Kaḷvar", "type": "group", "morphemes": ["kaḷvar"], "gloss": "thieves", "source": "Akanāṉūṟu"}
+{"name": "Mileccar", "type": "group", "morphemes": ["mileccar"], "gloss": "barbarians", "source": "Mullaippāṭṭu"}
+{"name": "Aivar", "type": "group", "morphemes": ["aivar"], "gloss": "the five", "source": "Puṟanāṉūṟu"}
+{"name": "Nūṟṟuvar", "type": "group", "morphemes": ["nūṟṟuvar"], "gloss": "the hundred", "source": "Puṟanāṉūṟu"}
+{"name": "Āyar", "type": "group", "morphemes": ["āyar"], "gloss": "cowherds", "source": "Kalittokai"}
+{"name": "Kōvalar", "type": "group", "morphemes": ["kōvalar"], "gloss": "cowherds", "source": "Akanāṉūṟu"}
+{"name": "Iṭaiyar", "type": "group", "morphemes": ["iṭaiyar"], "gloss": "herdsmen", "source": "Kalittokai"}
+{"name": "Kuṟavar", "type": "group", "morphemes": ["kuṟavar"], "gloss": "hill people", "source": "Kuṟuntokai"}
+{"name": "Eyiṉar", "type": "group", "morphemes": ["eyiṉar"], "gloss": "hunters of the arid tract", "source": "Akanāṉūṟu"}
+{"name": "Maṟavar", "type": "group", "morphemes": ["maṟavar"], "gloss": "warriors", "source": "Puṟanāṉūṟu"}
+{"name": "Umaṇar", "type": "group", "morphemes": ["umaṇar"], "gloss": "salt merchants", "source": "Akanāṉūṟu"}
+{"name": "Paratavar", "type": "group", "morphemes": ["paratavar"], "gloss": "fishermen", "source": "Akanāṉūṟu"}
+{"name": "Pāṇar", "type": "group", "morphemes": ["pāṇar"], "gloss": "bards", "source": "Puṟanāṉūṟu"}
+{"name": "Kūttar", "type": "group", "morphemes": ["kūttar"], "gloss": "dancers", "source": "Malaipaṭukaṭām"}
+{"name": "Poruṉar", "type": "group", "morphemes": ["poruṉar"], "gloss": "war bards", "source": "Porunarāṟṟuppaṭai"}
+{"name": "Viṟaliyar", "type": "group", "morphemes": ["viṟaliyar"], "gloss": "danseuses", "source": "Puṟanāṉūṟu"}
+{"name": "Tuṭiyar", "type": "group", "morphemes": ["tuṭiyar"], "gloss": "tudi drummers", "source": "Puṟanāṉūṟu"}
+{"name": "Paṟaiyar", "type": "group", "morphemes": ["paṟaiyar"], "gloss": "parai drummers", "source": "Puṟanāṉūṟu"}
+{"name": "Vēṭṭuvar", "type": "group", "morphemes": ["vēṭṭuvar"], "gloss": "hunters", "source": "Puṟanāṉūṟu"}
+{"name": "Kāṉavar", "type": "group", "morphemes": ["kāṉavar"], "gloss": "forest dwellers", "source": "Akanāṉūṟu"}
+{"name": "Uḻavar", "type": "group", "morphemes": ["uḻavar"], "gloss": "ploughmen", "source": "Puṟanāṉūṟu"}
+{"name": "Kaḷamar", "type": "group", "morphemes": ["kaḷamar"], "gloss": "field labourers", "source": "Akanāṉūṟu"}
+{"name": "Antaṇar", "type": "group", "morphemes": ["antaṇar"], "gloss": "Brahmins", "source": "Puṟanāṉūṟu"}
+{"name": "Pārppaṉar", "type": "group", "morphemes": ["pārppaṉar"], "gloss": "Brahmins", "source": "Puṟanāṉūṟu"}
+{"name": "Vaṇikar", "type": "group", "morphemes": ["vaṇikar"], "gloss": "merchants", "source": "Paṭṭiṉappālai"}
+{"name": "Pulaiyar", "type": "group", "morphemes": ["pulaiyar"], "gloss": "low-caste servants", "source": "Puṟanāṉūṟu"}
+{"name": "Kuyavar", "type": "group", "morphemes": ["kuyavar"], "gloss": "potters", "source": "Puṟanāṉūṟu"}
+{"name": "Taccar", "type": "group", "morphemes": ["taccar"], "gloss": "carpenters", "source": "Puṟanāṉūṟu"}
+{"name": "Kollar", "type": "group", "morphemes": ["kollar"], "gloss": "smiths", "source": "Puṟanāṉūṟu"}
+{"name": "Mallar", "type": "group", "morphemes": ["mallar"], "gloss": "wrestlers", "source": "Puṟanāṉūṟu"}
+{"name": "Nikamattōr", "type": "group", "morphemes": ["nikamam"], "gloss": "merchant guild", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Cēral", "type": "lineage", "morphemes": ["cēral"], "gloss": "Chera", "source": "Puṟanāṉūṟu"}
+{"name": "Cōḻar", "type": "lineage", "morphemes": ["cōḻaṉ"], "gloss": "Chola", "source": "Puṟanāṉūṟu"}
+{"name": "Pāṇṭiyar", "type": "lineage", "morphemes": ["pāṇṭiyaṉ"], "gloss": "Pandya", "source": "Puṟanāṉūṟu"}
+{"name": "Vēḷir", "type": "lineage", "morphemes": ["vēḷ"], "gloss": "chieftain", "source": "Puṟanāṉūṟu"}
+{"name": "Āy", "type": "lineage", "morphemes": ["āy"], "gloss": "Ay lineage", "source": "Puṟanāṉūṟu"}
+{"name": "Malaiyamāṉ", "type": "lineage", "morphemes": ["malai", "māṉ"], "gloss": "mountain + lord", "source": "Puṟanāṉūṟu"}
+{"name": "Atiyamāṉ", "type": "lineage", "morphemes": ["atiyaṉ", "māṉ"], "gloss": "Atiyan + lord", "source": "Puṟanāṉūṟu"}
+{"name": "Toṇṭaimāṉ", "type": "lineage", "morphemes": ["toṇṭai", "māṉ"], "gloss": "Tondai + lord", "source": "Perumpāṇāṟṟuppaṭai"}
+{"name": "Irumpoṟai", "type": "lineage", "morphemes": ["iru", "poṟai"], "gloss": "great + Porai lineage", "source": "Patiṟṟuppattu"}
+{"name": "Mōriyar", "type": "lineage", "morphemes": ["mōriyar"], "gloss": "Mauryas", "source": "Akanāṉūṟu"}
+{"name": "Nantar", "type": "lineage", "morphemes": ["nantar"], "gloss": "Nandas", "source": "Akanāṉūṟu"}
+{"name": "Vaḷavaṉ", "type": "title", "morphemes": ["vaḷavaṉ"], "gloss": "Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Kiḷḷi", "type": "title", "morphemes": ["kiḷḷi"], "gloss": "Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Ceṉṉi", "type": "title", "morphemes": ["ceṉṉi"], "gloss": "Chola king", "source": "Puṟanāṉūṟu"}
+{"name": "Cempiyaṉ", "type": "title", "morphemes": ["cempiyaṉ"], "gloss": "Chola king (Sibi line)", "source": "Puṟanāṉūṟu"}
+{"name": "Ceḻiyaṉ", "type": "title", "morphemes": ["ceḻiyaṉ"], "gloss": "Pandya king", "source": "Puṟanāṉūṟu"}
+{"name": "Vaḻuti", "type": "title", "morphemes": ["vaḻuti"], "gloss": "Pandya king", "source": "Puṟanāṉūṟu"}
+{"name": "Māṟaṉ", "type": "title", "morphemes": ["māṟaṉ"], "gloss": "Pandya king", "source": "Puṟanāṉūṟu"}
+{"name": "Kuṭṭuvaṉ", "type": "title", "morphemes": ["kuṭṭuvaṉ"], "gloss": "Chera king", "source": "Patiṟṟuppattu"}
+{"name": "Kōtai", "type": "title", "morphemes": ["kōtai"], "gloss": "Chera king", "source": "Puṟanāṉūṟu"}
+{"name": "Poṟaiyaṉ", "type": "title", "morphemes": ["poṟaiyaṉ"], "gloss": "Chera king", "source": "Patiṟṟuppattu"}
+{"name": "Vāṉavarampaṉ", "type": "title", "morphemes": ["vāṉam", "varampu"], "gloss": "sky + boundary", "source": "Puṟanāṉūṟu"}
+{"name": "Imayavarampaṉ", "type": "title", "morphemes": ["imayam", "varampu"], "gloss": "Himalaya + boundary", "source": "Patiṟṟuppattu"}
+{"name": "Kaḷaṅkāykkaṇṇi", "type": "title", "morphemes": ["kaḷaṅkāy", "kaṇṇi"], "gloss": "carissa fruit + garland", "source": "Patiṟṟuppattu"}
+{"name": "Kaṭalpiṟakkōṭṭiya", "type": "title", "morphemes": ["kaṭal", "piṟaku", "ōṭṭu"], "gloss": "sea + back + drive", "source": "Patiṟṟuppattu"}
+{"name": "Palyākacālai", "type": "title", "morphemes": ["pal", "yākam", "cālai"], "gloss": "many + sacrifice + hall", "source": "Puṟanāṉūṟu"}
+{"name": "Mutukuṭumi", "type": "title", "morphemes": ["mutu", "kuṭumi"], "gloss": "old + topknot", "source": "Puṟanāṉūṟu"}
+{"name": "Uruvappaḵṟēr", "type": "title", "morphemes": ["uruvam", "pal", "tēr"], "gloss": "beauty + many + chariot", "source": "Puṟanāṉūṟu"}
+{"name": "Āriyappaṭaikaṭanta", "type": "title", "morphemes": ["āriyar", "paṭai", "kaṭa"], "gloss": "Aryans + army + overcome", "source": "Puṟanāṉūṟu"}
+{"name": "Kāviti", "type": "title", "morphemes": ["kāviti"], "gloss": "honorific title", "source": "Sangam colophons (poet names); Tamil-Brahmi inscriptions"}
+{"name": "Ēṉāti", "type": "title", "morphemes": ["ēṉāti"], "gloss": "general", "source": "Puṟanāṉūṟu"}
+{"name": "Iḷaṅkō", "type": "title", "morphemes": ["iḷam", "kō"], "gloss": "young + king", "source": "Tamil-Brahmi inscriptions"}
+{"name": "Kuṟiñci", "type": "other", "morphemes": ["kuṟiñci"], "gloss": "kurinji plant", "source": "Aiṅkuṟunūṟu"}
+{"name": "Mullai", "type": "other", "morphemes": ["mullai"], "gloss": "jasmine", "source": "Aiṅkuṟunūṟu"}
+{"name": "Marutam", "type": "other", "morphemes": ["marutam"], "gloss": "arjuna tree", "source": "Aiṅkuṟunūṟu"}
+{"name": "Neytal", "type": "other", "morphemes": ["neytal"], "gloss": "water lily", "source": "Aiṅkuṟunūṟu"}
+{"name": "Pālai", "type": "other", "morphemes": ["pālai"], "gloss": "arid tract", "source": "Aiṅkuṟunūṟu"}
+{"name": "Veḷḷiyampalam", "type": "other", "morphemes": ["veḷḷi", "ampalam"], "gloss": "silver + hall", "source": "Puṟanāṉūṟu"}
+{"name": "Kūṭakāram", "type": "other", "morphemes": ["kūṭakāram"], "gloss": "pavilion", "source": "Puṟanāṉūṟu"}
+{"name": "Ilavantikaippaḷḷi", "type": "other", "morphemes": ["ilavantikai", "paḷḷi"], "gloss": "fountain garden + chamber", "source": "Puṟanāṉūṟu"}
+{"name": "Cittiramāṭam", "type": "other", "morphemes": ["cittiram", "māṭam"], "gloss": "picture + mansion", "source": "Puṟanāṉūṟu"}
+{"name": "Kuḷamuṟṟam", "type": "other", "morphemes": ["kuḷam", "muṟṟam"], "gloss": "tank + courtyard", "source": "Puṟanāṉūṟu"}
+{"name": "Kurāppaḷḷi", "type": "other", "morphemes": ["kurā", "paḷḷi"], "gloss": "kura tree + chamber", "source": "Puṟanāṉūṟu"}
+{"name": "Kōṭṭampalam", "type": "other", "morphemes": ["kōṭṭam", "ampalam"], "gloss": "enclosure + hall", "source": "Puṟanāṉūṟu"}
+{"name": "Intiraviḻavu", "type": "other", "morphemes": ["intiraṉ", "viḻavu"], "gloss": "Indra + festival", "source": "Aiṅkuṟunūṟu"}
+{"name": "Pāratam", "type": "other", "morphemes": ["pāratam"], "gloss": "Mahabharata", "source": "Sangam colophons (poet names)"}
+{"name": "Nāṉmaṟai", "type": "other", "morphemes": ["nāl", "maṟai"], "gloss": "four + Veda", "source": "Puṟanāṉūṟu"}
+{"name": "Tai", "type": "other", "morphemes": ["tai"], "gloss": "Tai month", "source": "Naṟṟiṇai"}
+{"name": "Paṅkuṉi", "type": "other", "morphemes": ["paṅkuṉi"], "gloss": "Panguni month", "source": "Akanāṉūṟu"}
+{"name": "Pālaiyāḻ", "type": "other", "morphemes": ["pālai", "yāḻ"], "gloss": "arid tract + lute", "source": "Paripāṭal"}
+{"name": "Nōtiram", "type": "other", "morphemes": ["nōtiram"], "gloss": "name", "source": "Paripāṭal"}
+{"name": "Kāntāram", "type": "other", "morphemes": ["kāntāram"], "gloss": "name", "source": "Paripāṭal"}
+{"name": "Tamiḻ", "type": "other", "morphemes": ["tamiḻ"], "gloss": "Tamil", "source": "Puṟanāṉūṟu"}

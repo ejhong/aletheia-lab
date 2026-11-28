@@ -1,0 +1,600 @@
+{"name": "Ācamāpichtli", "type": "person", "morphemes": ["ākatl", "māpictli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Chīmalpopōca", "type": "person", "morphemes": ["cīmalli", "popōka"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Motēuczōma", "type": "person", "morphemes": ["mo", "tēkvtli", "sōma"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ilhuicamīna", "type": "person", "morphemes": ["ilvikatl", "mīna"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āxāyacatl", "type": "person", "morphemes": ["ātl", "śāyakatl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tizoc", "type": "person", "morphemes": ["tisok"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āhuitzotl", "type": "person", "morphemes": ["āvitsotl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuitlāhuac", "type": "person", "morphemes": ["kvitlāvak"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuāuhtemōc", "type": "person", "morphemes": ["kvāvtli", "temō"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlacaelel", "type": "person", "morphemes": ["tlakaelel"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Tlacahuepan", "type": "person", "morphemes": ["tlakavepan"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Macuilmālīnal", "type": "person", "morphemes": ["mākvīlli", "mālīnalli"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Tlilpotonqui", "type": "person", "morphemes": ["tlilpotonki"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlacotzin", "type": "person", "morphemes": ["tlakotl", "tsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Motelchiuh", "type": "person", "morphemes": ["motelciv"], "source": "Florentine Codex", "weight": 1}
+{"name": "Xōchiquentzin", "type": "person", "morphemes": ["śōcitl", "kēmitl", "tsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Huanitzin", "type": "person", "morphemes": ["vanitsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tehuetzquititzin", "type": "person", "morphemes": ["tevetskititsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tzihuacpopōcatzin", "type": "person", "morphemes": ["tsivaktli", "popōka", "tsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Topantemōctzin", "type": "person", "morphemes": ["topan", "temō", "tsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Coyohuehuetzin", "type": "person", "morphemes": ["koyōtl", "vēveh", "tsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Temilotzin", "type": "person", "morphemes": ["temilotsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tzilacatzin", "type": "person", "morphemes": ["tsilakatsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ehēcatzin", "type": "person", "morphemes": ["ehēkatl", "tsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuāuhnōchtli", "type": "person", "morphemes": ["kvāvtli", "nōctli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ahuelitoc", "type": "person", "morphemes": ["avelitok"], "source": "Florentine Codex", "weight": 1}
+{"name": "Pinotl", "type": "person", "morphemes": ["pinotl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Yāōtl", "type": "person", "morphemes": ["yāōtl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Teocinyocatl", "type": "person", "morphemes": ["teosinyokatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuitlalpitoc", "type": "person", "morphemes": ["kvitlalpitok"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tentlil", "type": "person", "morphemes": ["tentlil"], "source": "Florentine Codex", "weight": 1}
+{"name": "Malintzin", "type": "person", "morphemes": ["malin", "tsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tetlepanquetzal", "type": "person", "morphemes": ["tetlepanketsal"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuāuhpopōca", "type": "person", "morphemes": ["kvāvtli", "popōka"], "source": "Cortés, Cartas de relación", "weight": 1}
+{"name": "Cuācuauhpitzāhuac", "type": "person", "morphemes": ["kvākvavitl", "pitsāvak"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlacateōtl", "type": "person", "morphemes": ["tlākatl", "teōtl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuāuhtlahtoa", "type": "person", "morphemes": ["kvāvtli", "tlahtoa"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Moquihuix", "type": "person", "morphemes": ["mokiviś"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Teconal", "type": "person", "morphemes": ["tekonal"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Tezozomoc", "type": "person", "morphemes": ["tesosomok"], "source": "Anales de Cuauhtitlan", "weight": 1}
+{"name": "Māxtla", "type": "person", "morphemes": ["māśtlatl"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Tayauh", "type": "person", "morphemes": ["tayav"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Āyauhcihuātl", "type": "person", "morphemes": ["āyavitl", "sivātl"], "source": "Crónica Mexicayotl", "weight": 1}
+{"name": "Totoquihuaztli", "type": "person", "morphemes": ["totokivastli"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Nōpaltzin", "type": "person", "morphemes": ["nōpalli", "tsin"], "source": "Codex Xolotl", "weight": 1}
+{"name": "Tlotzin", "type": "person", "morphemes": ["tlotsin"], "source": "Codex Xolotl", "weight": 1}
+{"name": "Techotlalatzin", "type": "person", "morphemes": ["tecotlalatsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Īxtlīlxōchitl", "type": "person", "morphemes": ["īśtli", "tlīlli", "śōcitl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Nezahualcoyōtl", "type": "person", "morphemes": ["nesavalli", "koyōtl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Nezahualpilli", "type": "person", "morphemes": ["nesavalli", "pilli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cacamatzin", "type": "person", "morphemes": ["kakamatsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cōānacoch", "type": "person", "morphemes": ["kōātl", "nakoctli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tecocol", "type": "person", "morphemes": ["tekokol"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlaltecatzin", "type": "person", "morphemes": ["tlaltekatsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Yoyontzin", "type": "person", "morphemes": ["yoyontsin"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Tetzāuhpiltzintli", "type": "person", "morphemes": ["tetsāvitl", "pilli", "tsin"], "source": "Alva Ixtlilxochitl, Obras históricas", "weight": 1}
+{"name": "Ācolmiztli", "type": "person", "morphemes": ["ākolli", "mistli"], "source": "Codex Xolotl", "weight": 1}
+{"name": "Huetzin", "type": "person", "morphemes": ["vetsin"], "source": "Codex Xolotl", "weight": 1}
+{"name": "Tzontecomatl", "type": "person", "morphemes": ["tsontekomatl"], "source": "Codex Xolotl", "weight": 1}
+{"name": "Tōchintēuctli", "type": "person", "morphemes": ["tōctli", "tēkvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuacuauhtzin", "type": "person", "morphemes": ["kvakvavtsin"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Tōmiyāuh", "type": "person", "morphemes": ["tō", "miyāvatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ayohtli", "type": "person", "morphemes": ["ayohtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuatlahuice", "type": "person", "morphemes": ["kvatlavise"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlahuitōl", "type": "person", "morphemes": ["tlavitōlli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Totomochtli", "type": "person", "morphemes": ["totomoctli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tzapocuēitl", "type": "person", "morphemes": ["tsapotl", "kvēitl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Achitometl", "type": "person", "morphemes": ["acitometl"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Coxcox", "type": "person", "morphemes": ["kośkośtli"], "source": "Codex Vergara", "weight": 1}
+{"name": "Nauhyotl", "type": "person", "morphemes": ["navyotl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Huēmac", "type": "person", "morphemes": ["vēyi", "māitl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Topiltzin", "type": "person", "morphemes": ["tō", "pilli", "tsin"], "source": "Anales de Cuauhtitlan", "weight": 1}
+{"name": "Ihuitimal", "type": "person", "morphemes": ["ivitimal"], "source": "Anales de Cuauhtitlan", "weight": 1}
+{"name": "Totepeuh", "type": "person", "morphemes": ["totepev"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Matlacxōchitl", "type": "person", "morphemes": ["mahtlaktli", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Mixcōāmazātl", "type": "person", "morphemes": ["miśtli", "kōātl", "masātl"], "source": "Anales de Cuauhtitlan", "weight": 1}
+{"name": "Chimalman", "type": "person", "morphemes": ["cimalman"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Quetzalpetlatl", "type": "person", "morphemes": ["ketsalli", "petlatl"], "source": "Anales de Cuauhtitlan", "weight": 1}
+{"name": "Ihhuimecatl", "type": "person", "morphemes": ["ihvitl", "mekatl"], "source": "Anales de Cuauhtitlan", "weight": 1}
+{"name": "Xiuhnel", "type": "person", "morphemes": ["śivnel"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Mimich", "type": "person", "morphemes": ["mimic"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Tata", "type": "person", "morphemes": ["tata"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Apanecatl", "type": "person", "morphemes": ["apanekatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Zōltōn", "type": "person", "morphemes": ["sōlin", "tōn"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Cuilton", "type": "person", "morphemes": ["kvilton"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Tlaltetecuin", "type": "person", "morphemes": ["tlaltetekvin"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Oxomoco", "type": "person", "morphemes": ["ośomoko"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cipactōnal", "type": "person", "morphemes": ["sipaktli", "tōnalli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Xochicahuaca", "type": "person", "morphemes": ["śocikavaka"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tenoch", "type": "person", "morphemes": ["tetl", "nōctli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Mexi", "type": "person", "morphemes": ["meśi"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Copil", "type": "person", "morphemes": ["kopil"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Mālīnalxōch", "type": "person", "morphemes": ["mālīnalli", "śōcitl"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Cuāuhtlequetzqui", "type": "person", "morphemes": ["kvāvtli", "tletl", "ketsa"], "source": "Crónica Mexicayotl", "weight": 1}
+{"name": "Āxōlōhua", "type": "person", "morphemes": ["āśōlōtl", "vah"], "source": "Crónica Mexicayotl", "weight": 1}
+{"name": "Iztāc Mixcōātl", "type": "person", "morphemes": ["istāk", "miśtli", "kōātl"], "source": "Motolinía, Memoriales", "weight": 1}
+{"name": "Xelhua", "type": "person", "morphemes": ["śelva"], "source": "Motolinía, Memoriales", "weight": 1}
+{"name": "Ōlmēcatl", "type": "person", "morphemes": ["ōlli", "katl"], "source": "Motolinía, Memoriales", "weight": 1}
+{"name": "Xicalancatl", "type": "person", "morphemes": ["śikalankatl"], "source": "Motolinía, Memoriales", "weight": 1}
+{"name": "Mixtēcatl", "type": "person", "morphemes": ["miśtli", "tēkatl"], "source": "Motolinía, Memoriales", "weight": 1}
+{"name": "Otomitl", "type": "person", "morphemes": ["otomitl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Acacitli", "type": "person", "morphemes": ["ākatl", "sitli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuāuhpan", "type": "person", "morphemes": ["kvāvtli", "pantli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ocēlōpan", "type": "person", "morphemes": ["osēlōtl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āhuēxōtl", "type": "person", "morphemes": ["āvēśōtl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xomimitl", "type": "person", "morphemes": ["śōtl", "mitl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xōcoyōl", "type": "person", "morphemes": ["śōkoyōlli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xiuhcactli", "type": "person", "morphemes": ["śivitl", "kaktli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ātōtōtl", "type": "person", "morphemes": ["ātl", "tōtōtl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ātōnal", "type": "person", "morphemes": ["ātl", "tōnalli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xīcohtēncatl", "type": "person", "morphemes": ["śīkohtli", "tēntli", "katl"], "source": "Muñoz Camargo, Historia de Tlaxcala", "weight": 1}
+{"name": "Maxixcatzin", "type": "person", "morphemes": ["maśiśkatsin"], "source": "Muñoz Camargo, Historia de Tlaxcala", "weight": 1}
+{"name": "Citlālpopōcatzin", "type": "person", "morphemes": ["sitlālin", "popōka", "tsin"], "source": "Muñoz Camargo, Historia de Tlaxcala", "weight": 1}
+{"name": "Tlehuexōlōtzin", "type": "person", "morphemes": ["tletl", "veśōlōtl", "tsin"], "source": "Muñoz Camargo, Historia de Tlaxcala", "weight": 1}
+{"name": "Xayacamach", "type": "person", "morphemes": ["śayakamac"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Tecayehuatzin", "type": "person", "morphemes": ["tekayevatsin"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Ayocuan", "type": "person", "morphemes": ["ayokvan"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Aquiauhtzin", "type": "person", "morphemes": ["akiavtsin"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Tochihuitzin", "type": "person", "morphemes": ["tocivitsin"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Coyōlchiuhqui", "type": "person", "morphemes": ["koyōlli", "cīva"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Chichicuepon", "type": "person", "morphemes": ["cicikvepon"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Mācuīlxōchitzin", "type": "person", "morphemes": ["mākvīlli", "śōcitl", "tsin"], "source": "Cantares Mexicanos", "weight": 1}
+{"name": "Quetzalmazātzin", "type": "person", "morphemes": ["ketsalli", "masātl", "tsin"], "source": "Chimalpahin, Relaciones", "weight": 1}
+{"name": "Miyāhuaxihuitl", "type": "person", "morphemes": ["miyāvatl", "śivitl"], "source": "Crónica Mexicayotl", "weight": 1}
+{"name": "Huāctli", "type": "person", "morphemes": ["vāktli"], "source": "Anales de Cuauhtitlan", "weight": 1}
+{"name": "Xāltemōc", "type": "person", "morphemes": ["śālli", "temō"], "source": "Anales de Cuauhtitlan", "weight": 1}
+{"name": "Ilancuēitl", "type": "person", "morphemes": ["ilamah", "kvēitl"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Atotoztli", "type": "person", "morphemes": ["atotostli"], "source": "Crónica Mexicayotl", "weight": 1}
+{"name": "Tēcuichpōch", "type": "person", "morphemes": ["tēkvtli", "icpōctli"], "source": "Crónica Mexicayotl", "weight": 1}
+{"name": "Chimalaxoch", "type": "person", "morphemes": ["cimalaśoc"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Tozpanxoch", "type": "person", "morphemes": ["tospanśoc"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Nanacacipactzin", "type": "person", "morphemes": ["nanakatl", "sipaktli", "tsin"], "source": "Codex Aubin", "weight": 1}
+{"name": "Chālchiuhtlatōnac", "type": "person", "morphemes": ["cālcivitl", "tōna"], "source": "Codex Vergara", "weight": 1}
+{"name": "Īcxicōhuātl", "type": "person", "morphemes": ["īkśitl", "kōātl"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Quetzaltehueyac", "type": "person", "morphemes": ["ketsalteveyak"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Tēuctlecōzauhqui", "type": "person", "morphemes": ["tēkvtli", "tletl", "kōsavki"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Nēntequitl", "type": "person", "morphemes": ["nēn", "tekitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ollin", "type": "person", "morphemes": ["ollin"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlālli", "type": "person", "morphemes": ["tlālli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tōnal", "type": "person", "morphemes": ["tōnalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tecpanēcatl", "type": "person", "morphemes": ["tekpan", "katl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cipac", "type": "person", "morphemes": ["sipaktli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xōchitōnal", "type": "person", "morphemes": ["śōcitl", "tōnalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xōchiteōtl", "type": "person", "morphemes": ["śōcitl", "teōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Oyohual", "type": "person", "morphemes": ["oyovalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlachinol", "type": "person", "morphemes": ["tlacinolli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Mācuīl", "type": "person", "morphemes": ["mākvīlli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Chālchiuh", "type": "person", "morphemes": ["cālcivitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tetzāuh", "type": "person", "morphemes": ["tetsāvitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Quiyauh", "type": "person", "morphemes": ["kiyavitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlahtōl", "type": "person", "morphemes": ["tlahtōlli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Oztōmēcatl", "type": "person", "morphemes": ["ostōmēkatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Nezahual", "type": "person", "morphemes": ["nesavalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Motōlīnia", "type": "person", "morphemes": ["mo", "tōlīnia"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Miquiz", "type": "person", "morphemes": ["mikistli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Mācuex", "type": "person", "morphemes": ["mākveśtli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Huēhueh", "type": "person", "morphemes": ["vēveh"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Yohual", "type": "person", "morphemes": ["yovalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tzacualcatl", "type": "person", "morphemes": ["tsakvalkatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlapal", "type": "person", "morphemes": ["tlapalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlālollin", "type": "person", "morphemes": ["tlālli", "ollin"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlahco", "type": "person", "morphemes": ["tlahko"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ocuil", "type": "person", "morphemes": ["okvilin"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Necuāmetl", "type": "person", "morphemes": ["nekvhtli", "metl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Nāuhehēcatl", "type": "person", "morphemes": ["nāvi", "ehēkatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cuācuauh", "type": "person", "morphemes": ["kvākvavitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cōzcacuāuh", "type": "person", "morphemes": ["kōskakvāvtli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xīlōtl", "type": "person", "morphemes": ["śīlōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xīcal", "type": "person", "morphemes": ["śīkalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlepāpālōtl", "type": "person", "morphemes": ["tletl", "pāpālōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ōlli", "type": "person", "morphemes": ["ōlli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Nēncihuātl", "type": "person", "morphemes": ["nēn", "sivātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Īmācēhual", "type": "person", "morphemes": ["ī", "māsēvalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Chapōl", "type": "person", "morphemes": ["capolin"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ce Xōchitl", "type": "person", "morphemes": ["se", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ānāhuacatl", "type": "person", "morphemes": ["ātl", "nāvak", "katl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Zōlin", "type": "person", "morphemes": ["sōlin"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Yāōcihuātl", "type": "person", "morphemes": ["yāōtl", "sivātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xōchitlahtoa", "type": "person", "morphemes": ["śōcitl", "tlahtoa"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tzihuacmitl", "type": "person", "morphemes": ["tsivaktli", "mitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Teōxōch", "type": "person", "morphemes": ["teōtl", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tēmōc", "type": "person", "morphemes": ["temō"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Quetzalmitl", "type": "person", "morphemes": ["ketsalli", "mitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Nāhual", "type": "person", "morphemes": ["nāvalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Iztāc", "type": "person", "morphemes": ["istāk"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Īxtlīl", "type": "person", "morphemes": ["īśtli", "tlīlli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cuetlach", "type": "person", "morphemes": ["kvetlactli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cōātl", "type": "person", "morphemes": ["kōātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Chachalacatl", "type": "person", "morphemes": ["cacalakatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ce Cuāuh", "type": "person", "morphemes": ["se", "kvāvtli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Āzcatl", "type": "person", "morphemes": ["āskatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Āmatlacuilōl", "type": "person", "morphemes": ["āmatl", "tlakvilōlli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Yohualxōch", "type": "person", "morphemes": ["yovalli", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Yāōxōchitl", "type": "person", "morphemes": ["yāōtl", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xōchmitl", "type": "person", "morphemes": ["śōcitl", "mitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlecuilhua", "type": "person", "morphemes": ["tlekvilli", "vah"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlāhuizcal", "type": "person", "morphemes": ["tlāviskalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Teōcal", "type": "person", "morphemes": ["teōkalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Telpōch", "type": "person", "morphemes": ["telpōctli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tecolōtl", "type": "person", "morphemes": ["tekolōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tēcciz", "type": "person", "morphemes": ["tēksistli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Pāpālōtl", "type": "person", "morphemes": ["pāpālōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ocoxōch", "type": "person", "morphemes": ["okōtl", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ihhuitl Temōc", "type": "person", "morphemes": ["ihvitl", "temō"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Icnocuāuh", "type": "person", "morphemes": ["iknōtl", "kvāvtli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Elōtl", "type": "person", "morphemes": ["elōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cuitlapil", "type": "person", "morphemes": ["kvitlapilli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cuetzpal", "type": "person", "morphemes": ["kvetspalin"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cuāuhtliztāc", "type": "person", "morphemes": ["kvāvtli", "istāk"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cōāxōch", "type": "person", "morphemes": ["kōātl", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Citlāl", "type": "person", "morphemes": ["sitlālin"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cihuāteōtl", "type": "person", "morphemes": ["sivātl", "teōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Chicōmācatl", "type": "person", "morphemes": ["cikōme", "ākatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ce Cōātl", "type": "person", "morphemes": ["se", "kōātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cacalōtl", "type": "person", "morphemes": ["kakalōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cacahuaxōchitl", "type": "person", "morphemes": ["kakavatl", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ātlpopōca", "type": "person", "morphemes": ["ātl", "popōka"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ācamitl", "type": "person", "morphemes": ["ākatl", "mitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ācatōtōtl", "type": "person", "morphemes": ["ākatl", "tōtōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Āzcaxōchitl", "type": "person", "morphemes": ["āskatl", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Āztatl", "type": "person", "morphemes": ["āstatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Āztacōātl", "type": "person", "morphemes": ["āstatl", "kōātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Chālchiuhtōtōtl", "type": "person", "morphemes": ["cālcivitl", "tōtōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cihuāxōchitl", "type": "person", "morphemes": ["sivātl", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Citlālcōātl", "type": "person", "morphemes": ["sitlālin", "kōātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cuāuhcoyōtl", "type": "person", "morphemes": ["kvāvtli", "koyōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cuāuhitzcuin", "type": "person", "morphemes": ["kvāvtli", "itskvintli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ehēcapāpālōtl", "type": "person", "morphemes": ["ehēkatl", "pāpālōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Huitzilcuāuh", "type": "person", "morphemes": ["vitsilin", "kvāvtli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Huitzilpopōca", "type": "person", "morphemes": ["vitsilin", "popōka"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Huitziltemōc", "type": "person", "morphemes": ["vitsilin", "temō"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Itzcuin", "type": "person", "morphemes": ["itskvintli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ītzmitl", "type": "person", "morphemes": ["ītstli", "mitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Iztāccoyōtl", "type": "person", "morphemes": ["istāk", "koyōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Iztācxōchitl", "type": "person", "morphemes": ["istāk", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Mācuīlcōātl", "type": "person", "morphemes": ["mākvīlli", "kōātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Mācuīlmazātl", "type": "person", "morphemes": ["mākvīlli", "masātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Mācuīltōch", "type": "person", "morphemes": ["mākvīlli", "tōctli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Mātlalcōātl", "type": "person", "morphemes": ["mātlalli", "kōātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Mātlalihhuitl", "type": "person", "morphemes": ["mātlalli", "ihvitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Nezahualxōchitl", "type": "person", "morphemes": ["nesavalli", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Nezahualtecolōtl", "type": "person", "morphemes": ["nesavalli", "tekolōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Quetzalcuāuh", "type": "person", "morphemes": ["ketsalli", "kvāvtli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Quetzalehēcatl", "type": "person", "morphemes": ["ketsalli", "ehēkatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Quetzalpopōca", "type": "person", "morphemes": ["ketsalli", "popōka"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Quetzaltecolōtl", "type": "person", "morphemes": ["ketsalli", "tekolōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tēcuāni", "type": "person", "morphemes": ["tēkvāni"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tepozmitl", "type": "person", "morphemes": ["tepostli", "mitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tezcamitl", "type": "person", "morphemes": ["teskatl", "mitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tezcatōnatiuh", "type": "person", "morphemes": ["teskatl", "tōnativ"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlācatecolōtl", "type": "person", "morphemes": ["tlākatl", "tekolōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlapaltōtōtl", "type": "person", "morphemes": ["tlapalli", "tōtōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlīlpāpālōtl", "type": "person", "morphemes": ["tlīlli", "pāpālōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tōchtli", "type": "person", "morphemes": ["tōctli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tōtōtl", "type": "person", "morphemes": ["tōtōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tōzcōātl", "type": "person", "morphemes": ["tōstli", "kōātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xiuhcōzcatl", "type": "person", "morphemes": ["śivitl", "kōskatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xiuhtōtōtl", "type": "person", "morphemes": ["śivitl", "tōtōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xōchicōzcatl", "type": "person", "morphemes": ["śōcitl", "kōskatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xōchitōtōtl", "type": "person", "morphemes": ["śōcitl", "tōtōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xōchicōātl", "type": "person", "morphemes": ["śōcitl", "kōātl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Yāōmitl", "type": "person", "morphemes": ["yāōtl", "mitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Yāōitzcuin", "type": "person", "morphemes": ["yāōtl", "itskvintli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Yohualpāpālōtl", "type": "person", "morphemes": ["yovalli", "pāpālōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Zacatōtōtl", "type": "person", "morphemes": ["sakatl", "tōtōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tiyacapan", "type": "person", "morphemes": ["tiyakapan"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xōco", "type": "person", "morphemes": ["śōkoyōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Mācēhual", "type": "person", "morphemes": ["māsēvalli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlahcuilo", "type": "person", "morphemes": ["tlahkvilo"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Xōchitl", "type": "person", "morphemes": ["śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Huēhuehcoyōtl", "type": "person", "morphemes": ["vēveh", "koyōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tōzquechol", "type": "person", "morphemes": ["tōstli", "kecolli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Ītzehēcatl", "type": "person", "morphemes": ["ītstli", "ehēkatl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlequiyauh", "type": "person", "morphemes": ["tletl", "kiyavitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlexōchitl", "type": "person", "morphemes": ["tletl", "śōcitl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Tlecuāuh", "type": "person", "morphemes": ["tletl", "kvāvtli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Coyōtl", "type": "person", "morphemes": ["koyōtl"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Cuāuhtli", "type": "person", "morphemes": ["kvāvtli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Huitzilōpōchtli", "type": "deity", "morphemes": ["vitsilin", "ōpōctli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tezcatlipoca", "type": "deity", "morphemes": ["teskatl", "popōka"], "source": "Florentine Codex", "weight": 1}
+{"name": "Quetzalcōātl", "type": "deity", "morphemes": ["ketsalli", "kōātl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlāloc", "type": "deity", "morphemes": ["tlālok"], "source": "Florentine Codex", "weight": 1}
+{"name": "Chālchiuhtlīcuē", "type": "deity", "morphemes": ["cālcivitl", "ī", "kvēitl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Xiuhtēuctli", "type": "deity", "morphemes": ["śivitl", "tēkvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Huēhuehteōtl", "type": "deity", "morphemes": ["vēveh", "teōtl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Xīpe Totēc", "type": "deity", "morphemes": ["śīpēva", "tō", "tēkvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Mictlantēuctli", "type": "deity", "morphemes": ["miki", "tlan", "tēkvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Mictēcacihuātl", "type": "deity", "morphemes": ["miki", "tēkatl", "sivātl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cōātlīcuē", "type": "deity", "morphemes": ["kōātl", "ī", "kvēitl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Coyōlxāuhqui", "type": "deity", "morphemes": ["koyōlli", "śāva"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cihuācōātl", "type": "deity", "morphemes": ["sivātl", "kōātl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tocih", "type": "deity", "morphemes": ["tō", "sihtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Teteoh Īnnān", "type": "deity", "morphemes": ["teōtl", "īn", "nāntli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlazōlteōtl", "type": "deity", "morphemes": ["tlasōlli", "teōtl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ixcuina", "type": "deity", "morphemes": ["iśkvina"], "source": "Florentine Codex", "weight": 1}
+{"name": "Xōchiquetzal", "type": "deity", "morphemes": ["śōcitl", "ketsalli"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Xōchipilli", "type": "deity", "morphemes": ["śōcitl", "pilli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Mācuīlxōchitl", "type": "deity", "morphemes": ["mākvīlli", "śōcitl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cinteōtl", "type": "deity", "morphemes": ["sintli", "teōtl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Chicōmecōātl", "type": "deity", "morphemes": ["cikōme", "kōātl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Xilonen", "type": "deity", "morphemes": ["śilonen"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ilamatēuctli", "type": "deity", "morphemes": ["ilamah", "tēkvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Mixcōātl", "type": "deity", "morphemes": ["miśtli", "kōātl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Camaxtli", "type": "deity", "morphemes": ["kamaśtli"], "source": "Historia de los mexicanos por sus pinturas", "weight": 1}
+{"name": "Ītzpāpālōtl", "type": "deity", "morphemes": ["ītstli", "pāpālōtl"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Ōpōchtli", "type": "deity", "morphemes": ["ōpōctli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Yacatēuctli", "type": "deity", "morphemes": ["yakatl", "tēkvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Painal", "type": "deity", "morphemes": ["painal"], "source": "Florentine Codex", "weight": 1}
+{"name": "Chantico", "type": "deity", "morphemes": ["cantiko"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Ōmācatl", "type": "deity", "morphemes": ["ōme", "ākatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Īxtlīltōn", "type": "deity", "morphemes": ["īśtli", "tlīlli", "tōn"], "source": "Florentine Codex", "weight": 1}
+{"name": "Nāppatēuctli", "type": "deity", "morphemes": ["nāppa", "tēkvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ōmetōchtli", "type": "deity", "morphemes": ["ōme", "tōctli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tepoztēcatl", "type": "deity", "morphemes": ["tepostli", "tēkatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Mayahuel", "type": "deity", "morphemes": ["mayavel"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tezcatzoncatl", "type": "deity", "morphemes": ["teskatsonkatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Toltēcatl", "type": "deity", "morphemes": ["tōllin", "tēkatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Izquitēcatl", "type": "deity", "morphemes": ["iskitl", "tēkatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlāltēuctli", "type": "deity", "morphemes": ["tlālli", "tēkvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tonacateuctli", "type": "deity", "morphemes": ["tonakatekvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ōmetēuctli", "type": "deity", "morphemes": ["ōme", "tēkvtli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ōmecihuātl", "type": "deity", "morphemes": ["ōme", "sivātl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Xōlōtl", "type": "deity", "morphemes": ["śōlōtl"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Nanāhuatzin", "type": "deity", "morphemes": ["nanāvatl", "tsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tēcciztēcatl", "type": "deity", "morphemes": ["tēksistli", "tēkatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ehēcatl", "type": "deity", "morphemes": ["ehēkatl"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Centzon Tōtōchtin", "type": "deity", "morphemes": ["sentsontli", "tōctli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Centzon Huitznāhuah", "type": "deity", "morphemes": ["sentsontli", "vitstli", "nāvak"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlāloqueh", "type": "deity", "morphemes": ["tlālokeh"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cihuāpīpiltin", "type": "deity", "morphemes": ["sivātl", "pilli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ītztlacoliuhqui", "type": "deity", "morphemes": ["ītstli", "kolivi"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Chālchiuhtōtolin", "type": "deity", "morphemes": ["cālcivitl", "tōtolin"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Piltzintēuctli", "type": "deity", "morphemes": ["pilli", "tsin", "tēkvtli"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Tzapotlatēnān", "type": "deity", "morphemes": ["tsapotl", "tlah", "tē", "nāntli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Titlacahuan", "type": "deity", "morphemes": ["titlakavan"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tōnantzin", "type": "deity", "morphemes": ["tō", "nāntli", "tsin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Coyōtl Īnāhual", "type": "deity", "morphemes": ["koyōtl", "ī", "nāvalli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Citlālīcuē", "type": "deity", "morphemes": ["sitlālin", "ī", "kvēitl"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Tōnatiuh", "type": "celestial", "morphemes": ["tōnativ"], "source": "Florentine Codex", "weight": 1}
+{"name": "Mētztli", "type": "celestial", "morphemes": ["mētstli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Citlālpōl", "type": "celestial", "morphemes": ["sitlālin", "pōl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Huēyi Citlālin", "type": "celestial", "morphemes": ["vēyi", "sitlālin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tiānquiztli", "type": "celestial", "morphemes": ["tiānkistli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Citlālcolōtl", "type": "celestial", "morphemes": ["sitlālin", "kolōtl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Citlālxōnecuilli", "type": "celestial", "morphemes": ["sitlālin", "śōnekvilli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Citlālin Popōca", "type": "celestial", "morphemes": ["sitlālin", "popōka"], "source": "Florentine Codex", "weight": 1}
+{"name": "Citlālin Tlamīna", "type": "celestial", "morphemes": ["sitlālin", "mīna"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlāhuizcalpantēuctli", "type": "celestial", "morphemes": ["tlāviskalli", "pan", "tēkvtli"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Citlāltlachtli", "type": "celestial", "morphemes": ["sitlālin", "tlactli"], "source": "Sahagún, Primeros Memoriales", "weight": 1}
+{"name": "Nāhui Ollin", "type": "celestial", "morphemes": ["nāvi", "ollin"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Nāhui Ocēlōtl", "type": "celestial", "morphemes": ["nāvi", "osēlōtl"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Nāhui Ātl", "type": "celestial", "morphemes": ["nāvi", "ātl"], "source": "Leyenda de los Soles", "weight": 1}
+{"name": "Popōcatepētl", "type": "hill", "morphemes": ["popōka", "tepētl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Iztāccihuātl", "type": "hill", "morphemes": ["istāk", "sivātl"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Iztāctepētl", "type": "hill", "morphemes": ["istāk", "tepētl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Mātlalcuēyeh", "type": "hill", "morphemes": ["mātlalli", "kvēitl", "eh"], "source": "Florentine Codex", "weight": 1}
+{"name": "Citlāltepētl", "type": "hill", "morphemes": ["sitlālin", "tepētl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Chapoltepēc", "type": "hill", "morphemes": ["capolin", "tepētl", "ko"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Cōātepēc", "type": "hill", "morphemes": ["kōātl", "tepētl", "ko"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tepētzinco", "type": "hill", "morphemes": ["tepētl", "tsin", "ko"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Tepēpōlco", "type": "hill", "morphemes": ["tepētl", "pōl", "ko"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuauhtepētl", "type": "hill", "morphemes": ["kvavitl", "tepētl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Yohualtēcatl", "type": "hill", "morphemes": ["yovalli", "tēkatl"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Poyauhtecatl", "type": "hill", "morphemes": ["poyavtekatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Huīxachtlan", "type": "hill", "morphemes": ["vīśacin", "tlan"], "source": "Florentine Codex", "weight": 1}
+{"name": "Yauhquēmeh", "type": "hill", "morphemes": ["yavtli", "kēmitl", "eh"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tetzcotzinco", "type": "hill", "morphemes": ["tetskotsinko"], "source": "Pomar, Relación de Tetzcoco", "weight": 1}
+{"name": "Chiucnāhuāpan", "type": "river", "morphemes": ["cikvnāvi", "ātl", "pan"], "source": "Florentine Codex", "weight": 1}
+{"name": "Atoyac", "type": "river", "morphemes": ["atoyak"], "source": "Relaciones geográficas", "weight": 1}
+{"name": "Coatzacualco", "type": "river", "morphemes": ["koatsakvalko"], "source": "Cortés, Cartas de relación", "weight": 1}
+{"name": "Mēxihco", "type": "place", "morphemes": ["mēśihko"], "source": "Codex Osuna", "weight": 1}
+{"name": "Tenōchtitlan", "type": "place", "morphemes": ["tetl", "nōctli", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlatelolco", "type": "place", "morphemes": ["tlatelolko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tetzcoco", "type": "place", "morphemes": ["tetskoko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlacopan", "type": "place", "morphemes": ["tlakotl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āzcapōtzalco", "type": "place", "morphemes": ["āskatl", "pōtsalli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Coyōhuahcān", "type": "place", "morphemes": ["koyōtl", "vah", "kān"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xōchimīlco", "type": "place", "morphemes": ["śōcitl", "mīlli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Chālco", "type": "place", "morphemes": ["cālko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Mizquic", "type": "place", "morphemes": ["miskitl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Huitzilōpōchco", "type": "place", "morphemes": ["vitsilin", "ōpōctli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xāltocān", "type": "place", "morphemes": ["śālli", "tōkatl", "kān"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuauhtitlan", "type": "place", "morphemes": ["kvavitl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tōltitlan", "type": "place", "morphemes": ["tōllin", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tenānyohcān", "type": "place", "morphemes": ["tenāmitl", "yoh", "kān"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ehēcatepēc", "type": "place", "morphemes": ["ehēkatl", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Acolman", "type": "place", "morphemes": ["akolman"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tepetlaōztōc", "type": "place", "morphemes": ["tepetlatl", "ōstōtl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Teōtihuahcān", "type": "place", "morphemes": ["teōtivahkān"], "source": "Florentine Codex", "weight": 1}
+{"name": "Mixcōāc", "type": "place", "morphemes": ["miśtli", "kōātl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Iztacalco", "type": "place", "morphemes": ["istatl", "kalli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Huitznāhuac", "type": "place", "morphemes": ["vitstli", "nāvak"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tepēyacac", "type": "place", "morphemes": ["tepētl", "yakatl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ācalhuahcān", "type": "place", "morphemes": ["ākalli", "vah", "kān"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Coācalco", "type": "place", "morphemes": ["kōātl", "kalli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuauhxīmalpan", "type": "place", "morphemes": ["kvavitl", "śīma", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuauhnāhuac", "type": "place", "morphemes": ["kvavitl", "nāvak"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Huāxtepēc", "type": "place", "morphemes": ["vāśin", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Yauhtepēc", "type": "place", "morphemes": ["yavtli", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Yacapichtlan", "type": "place", "morphemes": ["yakapictlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tepoztlan", "type": "place", "morphemes": ["tepostli", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ocuillan", "type": "place", "morphemes": ["okvilin", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Mālīnalco", "type": "place", "morphemes": ["mālīnalli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tolocan", "type": "place", "morphemes": ["tolokan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xiquipilco", "type": "place", "morphemes": ["śikipilli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xīlōtepēc", "type": "place", "morphemes": ["śīlōtl", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlachco", "type": "place", "morphemes": ["tlactli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tepecuacuilco", "type": "place", "morphemes": ["tepekvakvilko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Yohuallan", "type": "place", "morphemes": ["yovalli", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Teloloapan", "type": "place", "morphemes": ["teloloapan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlālcōzauhtitlan", "type": "place", "morphemes": ["tlālli", "kōsavki", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cihuātlan", "type": "place", "morphemes": ["sivātl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Zacatollan", "type": "place", "morphemes": ["sakatl", "tōllin", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tōchtepēc", "type": "place", "morphemes": ["tōctli", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xoconōchco", "type": "place", "morphemes": ["śokotl", "nōctli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Coyōlāpan", "type": "place", "morphemes": ["koyōlli", "ātl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Huāxyacac", "type": "place", "morphemes": ["vāśin", "yakatl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cōāīxtlāhuacān", "type": "place", "morphemes": ["kōātl", "īśtlāvatl", "kān"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlachquiyauhco", "type": "place", "morphemes": ["tlactli", "kiyavitl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuetlaxtlan", "type": "place", "morphemes": ["kvetlaśtli", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuauhtōchco", "type": "place", "morphemes": ["kvavitl", "tōctli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tōchpan", "type": "place", "morphemes": ["tōctli", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Oxitipan", "type": "place", "morphemes": ["ośitipan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlatlāuhquitepēc", "type": "place", "morphemes": ["tlatlāvki", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlapacoyān", "type": "place", "morphemes": ["pāka", "yān"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tecamachalco", "type": "place", "morphemes": ["tetl", "kamacalli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Quecholāc", "type": "place", "morphemes": ["kecolli", "ātl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ācatzinco", "type": "place", "morphemes": ["ākatl", "tsin", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Huēxōtzinco", "type": "place", "morphemes": ["vēśōtl", "tsin", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlaxcallan", "type": "place", "morphemes": ["tlaśkalli", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cholollan", "type": "place", "morphemes": ["colollan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ahuilizapan", "type": "place", "morphemes": ["avilisapan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Teōtlālpan", "type": "place", "morphemes": ["teōtl", "tlālli", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āxocopan", "type": "place", "morphemes": ["ātl", "śokotl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ātotōnilco", "type": "place", "morphemes": ["ātl", "totōnki", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tōllantzinco", "type": "place", "morphemes": ["tōllin", "tlan", "tsin", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xōchitepēc", "type": "place", "morphemes": ["śōcitl", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Quiyauhteōpan", "type": "place", "morphemes": ["kiyavitl", "teōtl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Yohualtepēc", "type": "place", "morphemes": ["yovalli", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Chiyāpan", "type": "place", "morphemes": ["ciyān", "ātl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tzinācantlan", "type": "place", "morphemes": ["tsinākan", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Mazātlan", "type": "place", "morphemes": ["masātl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tēcuāntepēc", "type": "place", "morphemes": ["tēkvāni", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuezcomatitlan", "type": "place", "morphemes": ["kveskomatl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ocōtepēc", "type": "place", "morphemes": ["okōtl", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ocēlōtepēc", "type": "place", "morphemes": ["osēlōtl", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Mizquitlan", "type": "place", "morphemes": ["miskitl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āhuacatlan", "type": "place", "morphemes": ["āvakatl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āmatlan", "type": "place", "morphemes": ["āmatl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āmeyalco", "type": "place", "morphemes": ["āmeyalli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ātenco", "type": "place", "morphemes": ["ātl", "tēntli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āyōtōchco", "type": "place", "morphemes": ["āyōtl", "tōctli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Āyōtlan", "type": "place", "morphemes": ["āyōtl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cempōhuallan", "type": "place", "morphemes": ["sempōvalli", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cōātzinco", "type": "place", "morphemes": ["kōātl", "tsin", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Coliman", "type": "place", "morphemes": ["koliman"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cōzcacuāuhtenanco", "type": "place", "morphemes": ["kōskakvāvtli", "tenāmitl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuāuhtinchān", "type": "place", "morphemes": ["kvāvtli", "cāntli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Cuīcatlan", "type": "place", "morphemes": ["kvīkatl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Huitzilāpan", "type": "place", "morphemes": ["vitsilin", "ātl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Huitztlan", "type": "place", "morphemes": ["vitstli", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ichcatlan", "type": "place", "morphemes": ["ickatl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ītztepēc", "type": "place", "morphemes": ["ītstli", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Iztapan", "type": "place", "morphemes": ["istatl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Metepēc", "type": "place", "morphemes": ["metl", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Michtlan", "type": "place", "morphemes": ["micin", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ōztōticpac", "type": "place", "morphemes": ["ōstōtl", "īkpak"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Petlatlan", "type": "place", "morphemes": ["petlatl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Quetzaltepēc", "type": "place", "morphemes": ["ketsalli", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Teōcuitlatlan", "type": "place", "morphemes": ["teōkvitlatl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Temazcalāpan", "type": "place", "morphemes": ["temaskalli", "ātl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tenanco", "type": "place", "morphemes": ["tenāmitl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Teōtenanco", "type": "place", "morphemes": ["teōtl", "tenāmitl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlachinolticpac", "type": "place", "morphemes": ["tlacinolli", "īkpak"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlīltepēc", "type": "place", "morphemes": ["tlīlli", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tōtōtlan", "type": "place", "morphemes": ["tōtōtl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tzapotlan", "type": "place", "morphemes": ["tsapotl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Xīcochīmalco", "type": "place", "morphemes": ["śīkohtli", "cīmalli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Yāōnāhuac", "type": "place", "morphemes": ["yāōtl", "nāvak"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Zacatlah", "type": "place", "morphemes": ["sakatl", "tlah"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tamazōlāpan", "type": "place", "morphemes": ["tamasōlin", "ātl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Chīmalco", "type": "place", "morphemes": ["cīmalli", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Chīlāpan", "type": "place", "morphemes": ["cīlli", "ātl", "pan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Chinantlan", "type": "place", "morphemes": ["cināmitl", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Citlāltepēc", "type": "place", "morphemes": ["sitlālin", "tepētl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ocōyacac", "type": "place", "morphemes": ["okōtl", "yakatl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tequixquiāc", "type": "place", "morphemes": ["tekiśkitl", "ātl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tezcacōāc", "type": "place", "morphemes": ["teskatl", "kōātl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Teōtlīllan", "type": "place", "morphemes": ["teōtl", "tlīlli", "tlan"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Michhuahcān", "type": "place", "morphemes": ["micin", "vah", "kān"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Chiconquiyauhco", "type": "place", "morphemes": ["cikōme", "kiyavitl", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tōnatiuhco", "type": "place", "morphemes": ["tōnativ", "ko"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Temazcaltitlan", "type": "place", "morphemes": ["temaskalli", "tlan"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Tōlpetlac", "type": "place", "morphemes": ["tōllin", "petlatl", "ko"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Tecpayohcān", "type": "place", "morphemes": ["tekpatl", "yoh", "kān"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Teōtzapotlan", "type": "place", "morphemes": ["teōtl", "tsapotl", "tlan"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Xiuhcōāc", "type": "place", "morphemes": ["śivitl", "kōātl", "ko"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Aztlan", "type": "place", "morphemes": ["astlan"], "source": "Codex Aubin", "weight": 1}
+{"name": "Chicōmōztōc", "type": "place", "morphemes": ["cikōme", "ōstōtl", "ko"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Amaquemecan", "type": "place", "morphemes": ["amakemekan"], "source": "Chimalpahin, Relaciones", "weight": 1}
+{"name": "Mēxihcah", "type": "group", "morphemes": ["mēśihkah"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Tenōchcah", "type": "group", "morphemes": ["tetl", "nōctli", "katl"], "source": "Codex Osuna", "weight": 1}
+{"name": "Tlatelolcah", "type": "group", "morphemes": ["tlatelolkah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ācolhuahqueh", "type": "group", "morphemes": ["ākolvahkeh"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tepanēcah", "type": "group", "morphemes": ["tepanēkah"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Xōchimīlcah", "type": "group", "morphemes": ["śōcitl", "mīlli", "katl"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Cuitlāhuacah", "type": "group", "morphemes": ["kvitlāvakah"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Mizquicah", "type": "group", "morphemes": ["miskitl", "katl"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Chināmpanēcah", "type": "group", "morphemes": ["cināmitl", "pan", "katl"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Colhuahqueh", "type": "group", "morphemes": ["kolvahkeh"], "source": "Codex Aubin", "weight": 1}
+{"name": "Tlālhuicah", "type": "group", "morphemes": ["tlālvikah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlaxcaltēcah", "type": "group", "morphemes": ["tlaśkalli", "tēkatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Huēxōtzincah", "type": "group", "morphemes": ["vēśōtl", "tsin", "katl"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Chololtecah", "type": "group", "morphemes": ["cololtekah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Matlatzincah", "type": "group", "morphemes": ["mātlatl", "tsin", "katl"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Mazāhuahqueh", "type": "group", "morphemes": ["masātl", "vah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Otomih", "type": "group", "morphemes": ["otomih"], "source": "Florentine Codex", "weight": 1}
+{"name": "Totonacah", "type": "group", "morphemes": ["totonakah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuextecah", "type": "group", "morphemes": ["kveśtekah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tzapotēcah", "type": "group", "morphemes": ["tsapotl", "tēkatl"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Chīchīmēcah", "type": "group", "morphemes": ["cīcīmēkah"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Teōchīchīmēcah", "type": "group", "morphemes": ["teōtl", "cīcīmēkatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tamimeh", "type": "group", "morphemes": ["tamimeh"], "source": "Florentine Codex", "weight": 1}
+{"name": "Nāhuatlācah", "type": "group", "morphemes": ["nāvatl", "tlākatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Michhuahqueh", "type": "group", "morphemes": ["micin", "vah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ocuiltēcah", "type": "group", "morphemes": ["okvilin", "tēkatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tohueyomeh", "type": "group", "morphemes": ["toveyomeh"], "source": "Florentine Codex", "weight": 1}
+{"name": "Couixcah", "type": "group", "morphemes": ["kouiśkah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Yopimeh", "type": "group", "morphemes": ["yopimeh"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlappanecah", "type": "group", "morphemes": ["tlappanekah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Huixtotin", "type": "group", "morphemes": ["viśtotin"], "source": "Florentine Codex", "weight": 1}
+{"name": "Nonohualcah", "type": "group", "morphemes": ["nonovalkah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Pinomeh", "type": "group", "morphemes": ["pinomeh"], "source": "Florentine Codex", "weight": 1}
+{"name": "Popolocah", "type": "group", "morphemes": ["popolokah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuacuatah", "type": "group", "morphemes": ["kvakvatah"], "source": "Florentine Codex", "weight": 1}
+{"name": "Cuāuhtinchāntlācah", "type": "group", "morphemes": ["kvāvtli", "cāntli", "tlākatl"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Totomihuahqueh", "type": "group", "morphemes": ["totomivahkeh"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Ācolchīchīmēcah", "type": "group", "morphemes": ["ākolcīcīmēkah"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Tzauhctecah", "type": "group", "morphemes": ["tsavktekah"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Zacatēcah", "type": "group", "morphemes": ["sakatl", "tēkatl"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Malpantlacah", "type": "group", "morphemes": ["malpantlakah"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Xāltocāmēcah", "type": "group", "morphemes": ["śālli", "tōkatl", "katl"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Āzcapōtzalcah", "type": "group", "morphemes": ["āskatl", "pōtsalli", "katl"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Mālīnalcah", "type": "group", "morphemes": ["mālīnalli", "katl"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Tenancah", "type": "group", "morphemes": ["tenāmitl", "katl"], "source": "Chimalpahin, Relaciones", "weight": 1}
+{"name": "Acxotecah", "type": "group", "morphemes": ["akśotekah"], "source": "Chimalpahin, Relaciones", "weight": 1}
+{"name": "Teotlixcah", "type": "group", "morphemes": ["teotliśkah"], "source": "Chimalpahin, Relaciones", "weight": 1}
+{"name": "Yopicah", "type": "lineage", "morphemes": ["yopikah"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Tlacochcalcah", "type": "lineage", "morphemes": ["tlakoctli", "kalli", "katl"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Cihuātecpanēcah", "type": "lineage", "morphemes": ["sivātl", "tekpan", "katl"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Chalmecah", "type": "lineage", "morphemes": ["calmekah"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Tlācatecpanēcah", "type": "lineage", "morphemes": ["tlākatl", "tekpan", "katl"], "source": "Durán, Historia de las Indias", "weight": 1}
+{"name": "Tlailotlacah", "type": "lineage", "morphemes": ["tlailotlakah"], "source": "Chimalpahin, Relaciones", "weight": 1}
+{"name": "Tēcuānipantlācah", "type": "lineage", "morphemes": ["tēkvāni", "pan", "tlākatl"], "source": "Chimalpahin, Relaciones", "weight": 1}
+{"name": "Tlacateccatl", "type": "title", "morphemes": ["tlakatekkatl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tizociahuacatl", "type": "title", "morphemes": ["tisosiavakatl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tezcacōācatl", "type": "title", "morphemes": ["teskatl", "kōātl", "katl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlīllancalqui", "type": "title", "morphemes": ["tlīlli", "tlan", "kalki"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tocuiltecatl", "type": "title", "morphemes": ["tokviltekatl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Petlacalcatl", "type": "title", "morphemes": ["petlatl", "kalli", "katl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Mixcoatlailotlac", "type": "title", "morphemes": ["miśkoatlailotlak"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tequixquināhuacatl", "type": "title", "morphemes": ["tekiśkitl", "nāvak", "katl"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlācatēuctli", "type": "title", "morphemes": ["tlākatl", "tēkvtli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tlacochtēuctli", "type": "title", "morphemes": ["tlakoctli", "tēkvtli"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Ezhuahuacatl", "type": "title", "morphemes": ["esvavakatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ātempanēcatl", "type": "title", "morphemes": ["ātl", "tēntli", "pan", "katl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Chīchīmēcatēuctli", "type": "title", "morphemes": ["cīcīmēkatl", "tēkvtli"], "source": "Matrícula de Huexotzinco", "weight": 1}
+{"name": "Aquiach", "type": "title", "morphemes": ["akiac"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Tlalchiach", "type": "title", "morphemes": ["tlalciac"], "source": "Historia Tolteca-Chichimeca", "weight": 1}
+{"name": "Ātlcāhualo", "type": "other", "morphemes": ["ātl", "kāva"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlācaxīpēhualiztli", "type": "other", "morphemes": ["tlākatl", "śīpēva"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Tōzōztōntli", "type": "other", "morphemes": ["tōsōstli", "tōn"], "source": "Florentine Codex", "weight": 1}
+{"name": "Huēyi Tōzōztli", "type": "other", "morphemes": ["vēyi", "tōsōstli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Toxcatl", "type": "other", "morphemes": ["tośkatl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Etzalcualiztli", "type": "other", "morphemes": ["etsalli", "kva"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tēcuilhuitōntli", "type": "other", "morphemes": ["tēkvtli", "ilvitl", "tōn"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Huēyi Tēcuilhuitl", "type": "other", "morphemes": ["vēyi", "tēkvtli", "ilvitl"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Tlaxōchimaco", "type": "other", "morphemes": ["śōcitl", "maka"], "source": "Florentine Codex", "weight": 1}
+{"name": "Xocotl Huetzi", "type": "other", "morphemes": ["śokotl", "vetsi"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ochpāniztli", "type": "other", "morphemes": ["ocpāna"], "source": "Codex Mendoza", "weight": 1}
+{"name": "Teōtl Ehco", "type": "other", "morphemes": ["teōtl", "ehko"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tepēilhuitl", "type": "other", "morphemes": ["tepētl", "ilvitl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Quecholli", "type": "other", "morphemes": ["kecolli"], "source": "Florentine Codex", "weight": 1}
+{"name": "Panquetzaliztli", "type": "other", "morphemes": ["pantli", "ketsa"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ātemoztli", "type": "other", "morphemes": ["ātl", "temō"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Tititl", "type": "other", "morphemes": ["tititl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Izcalli", "type": "other", "morphemes": ["iskalia"], "source": "Florentine Codex", "weight": 1}
+{"name": "Nemontemi", "type": "other", "morphemes": ["nemontemi"], "source": "Florentine Codex", "weight": 1}
+{"name": "Mictlan", "type": "other", "morphemes": ["miki", "tlan"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlālōcān", "type": "other", "morphemes": ["tlālok", "kān"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tamoanchan", "type": "other", "morphemes": ["tamoancan"], "source": "Codex Telleriano-Remensis", "weight": 1}
+{"name": "Ōmeyōcān", "type": "other", "morphemes": ["ōme", "yōtl", "kān"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlīllan Tlapallan", "type": "other", "morphemes": ["tlīlli", "tlan", "tlapalli", "tlan"], "source": "Florentine Codex", "weight": 1}
+{"name": "Ītzehecāyān", "type": "other", "morphemes": ["ītstli", "ehēkatl", "yān"], "source": "Florentine Codex", "weight": 1}
+{"name": "Yopico", "type": "other", "morphemes": ["yopiko"], "source": "Florentine Codex", "weight": 1}
+{"name": "Teōtlachco", "type": "other", "morphemes": ["teōtl", "tlactli", "ko"], "source": "Florentine Codex", "weight": 1}
+{"name": "Tlīllan", "type": "other", "morphemes": ["tlīlli", "tlan"], "source": "Florentine Codex", "weight": 1}
+{"name": "Xiuhcōātl", "type": "other", "morphemes": ["śivitl", "kōātl"], "source": "Florentine Codex", "weight": 1}
+{"name": "Pantitlan", "type": "other", "morphemes": ["pantitlan"], "source": "Codex Azcatitlan", "weight": 1}
+{"name": "Acuecuexatl", "type": "other", "morphemes": ["akvekveśatl"], "source": "Durán, Historia de las Indias", "weight": 1}

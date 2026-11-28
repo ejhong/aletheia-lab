@@ -1,0 +1,506 @@
+{
+ "A": [
+  {
+   "item": "Utiyañcēralātaṉ",
+   "verdict": "ok",
+   "reason": "Chera king Utiyañcēralātaṉ, Puṟam 2 colophon (Akam 65 'utiyañ cēral'); split and glosses fine."
+  },
+  {
+   "item": "Vaḻuti",
+   "verdict": "ok",
+   "reason": "Pandya title, Puṟam 3 and many Akam/Naṟṟiṇai lines."
+  },
+  {
+   "item": "Poṉmaṇiyār",
+   "verdict": "ok",
+   "reason": "Poet of Kuṟuntokai 391."
+  },
+  {
+   "item": "Iḷaṅkīrantaiyār",
+   "verdict": "ok",
+   "reason": "Poet of Kuṟuntokai 148; kīraṉ + tantai is the usual analysis of Kīrantai."
+  },
+  {
+   "item": "Kuṭavar",
+   "verdict": "ok",
+   "reason": "Paṭṭiṉappālai 276 'kuṭavar kūmpa'; 'westerners' is right."
+  },
+  {
+   "item": "Nakkaṇṇaiyār",
+   "verdict": "ok",
+   "reason": "Poet Nakkaṇṇaiyār (Puṟam 83-85, Akam 252); na(l) + kaṇṇai defensible."
+  },
+  {
+   "item": "Neṭuveṇṇilaviṉār",
+   "verdict": "ok",
+   "reason": "Poet of Kuṟuntokai 47."
+  },
+  {
+   "item": "Mutukaṇṇaṉ Cāttaṉār",
+   "verdict": "ok",
+   "reason": "Uṟaiyūr Mutukaṇṇaṉ Cāttaṉār, Puṟam 27-30; Krishna/Śāstā glosses are standard if debatable."
+  },
+  {
+   "item": "Ciṟaikkuṭi",
+   "verdict": "ok",
+   "reason": "Ciṟaikkuṭi Āntaiyār, Kuṟuntokai 56 etc."
+  },
+  {
+   "item": "Īḻattup Pūtaṉtēvaṉār",
+   "verdict": "ok",
+   "reason": "Poet of Akam 88, Kuṟuntokai 343."
+  },
+  {
+   "item": "Kācipaṉ Kīraṉār",
+   "verdict": "ok",
+   "reason": "Poet of Naṟṟiṇai 248."
+  },
+  {
+   "item": "Cītai",
+   "verdict": "ok",
+   "reason": "Puṟam 378.18 'irāmaṉ uṭaṉ puṇar cītaiyai'."
+  },
+  {
+   "item": "Irumpiṭarttalaiyār",
+   "verdict": "ok",
+   "reason": "Poet of Puṟam 3."
+  },
+  {
+   "item": "Vāṭṭāṟu",
+   "verdict": "ok",
+   "reason": "Vāṭṭāṟṟu Eḻiṉiyātaṉ, Puṟam 396 colophon."
+  },
+  {
+   "item": "Kaṇaikkāl Irumpoṟai",
+   "verdict": "ok",
+   "reason": "Cēramāṉ Kaṇaikkāl Irumpoṟai, Puṟam 74."
+  },
+  {
+   "item": "Viṭṭakutiraiyār",
+   "verdict": "ok",
+   "reason": "Poet of Kuṟuntokai 74 (from 'viṭṭa kutirai')."
+  },
+  {
+   "item": "Uruttiraṅkaṇṇaṉār",
+   "verdict": "ok",
+   "reason": "Kaṭiyalūr Uruttiraṅkaṇṇaṉār (Perumpāṇāṟṟuppaṭai, Paṭṭiṉappālai)."
+  },
+  {
+   "item": "Iḷaṅkuṭṭuvaṉ",
+   "verdict": "ok",
+   "reason": "Cēramāṉ Iḷaṅkuṭṭuvaṉ, poet of Akam 153."
+  },
+  {
+   "item": "Irumpoṟai",
+   "verdict": "ok",
+   "reason": "Irumpoṟai line of Patiṟṟuppattu decades 7-9."
+  },
+  {
+   "item": "Paraṅkuṉṟu",
+   "verdict": "ok",
+   "reason": "Akam 59 'taṇ paraṅkuṉṟattu', Paripāṭal 8 etc."
+  },
+  {
+   "item": "Aṇilāṭumuṉṟilār",
+   "verdict": "ok",
+   "reason": "Poet of Kuṟuntokai 41."
+  },
+  {
+   "item": "Nārmuṭiccēral",
+   "verdict": "ok",
+   "reason": "Kaḷaṅkāykkaṇṇi Nārmuṭiccēral, Patiṟṟuppattu decade 4."
+  },
+  {
+   "item": "Kumaṇaṉ",
+   "verdict": "ok",
+   "reason": "Chief Kumaṇaṉ, Puṟam 158-165 (160.12, 163.9)."
+  },
+  {
+   "item": "Kumuḻūr",
+   "verdict": "ok",
+   "reason": "Sittannavasal Tamil-Brahmi bed: 'Eruminatu Kumuḻūr' (Pudukkottai)."
+  },
+  {
+   "item": "Neṭuvēḷ",
+   "verdict": "ok",
+   "reason": "Murukaṉ as Neṭuvēḷ, Akam 22, 120, Kuṟuntokai 111 etc."
+  },
+  {
+   "item": "Cēral",
+   "verdict": "ok",
+   "reason": "Akam 36.15, Patiṟṟu 45.6, and Chera names in Puṟam colophons."
+  },
+  {
+   "item": "Maḻavar",
+   "verdict": "ok",
+   "reason": "Maḻavar warriors, Puṟam 88-90, Akam 1, Maturaikkāñci 395."
+  },
+  {
+   "item": "Kēcavaṉār",
+   "verdict": "ok",
+   "reason": "Author of Paripāṭal 14."
+  },
+  {
+   "item": "Kāppiyāṟu",
+   "verdict": "ok",
+   "reason": "Kāppiyāṟṟuk Kāppiyaṉār, Patiṟṟuppattu decade 4."
+  },
+  {
+   "item": "Māntarañcēral Irumpoṟai",
+   "verdict": "ok",
+   "reason": "Yāṉaikkaṭcēy Māntarañcēral Irumpoṟai, Puṟam 17, 20, 22, 53."
+  },
+  {
+   "item": "Paḻaiyōḷ",
+   "verdict": "ok",
+   "reason": "Tirumurukāṟṟuppaṭai 259 'paḻaiyōḷ kuḻavi'."
+  },
+  {
+   "item": "Peruñcēral Irumpoṟai",
+   "verdict": "ok",
+   "reason": "Takaṭūr Eṟinta Peruñcēral Irumpoṟai, Patiṟṟuppattu decade 8."
+  },
+  {
+   "item": "Āvaṭutuṟai",
+   "verdict": "ok",
+   "reason": "Āvaṭutuṟai Mācāttaṉār, Puṟam 227."
+  },
+  {
+   "item": "Kavuṇiyaṉ Pūtattaṉār",
+   "verdict": "ok",
+   "reason": "Maturaik Kavuṇiyaṉ Pūtattaṉār, Akam 74."
+  },
+  {
+   "item": "Varuṭai",
+   "verdict": "ok",
+   "reason": "Paripāṭal 11.5 'varuṭaiyai' (Aries); varuṭai = ram/wild sheep."
+  },
+  {
+   "item": "Kaṇṇaṉār",
+   "verdict": "ok",
+   "reason": "Kaṇṇaṉār listed as poet (and as a frequent name element)."
+  },
+  {
+   "item": "Peruṅkuṉṟūr",
+   "verdict": "ok",
+   "reason": "Peruṅkuṉṟūr Kiḻār, Puṟam and Patiṟṟuppattu decade 9."
+  },
+  {
+   "item": "Veṇṇākaṉār",
+   "verdict": "ok",
+   "reason": "Veṇṇākaṉār in several poet names (e.g. Maturaik Kaṭaiyattār Makaṉ Veṇṇākaṉār, Kuṟuntokai 223)."
+  },
+  {
+   "item": "Mīṉeṟitūṇṭilār",
+   "verdict": "ok",
+   "reason": "Poet of Kuṟuntokai 54."
+  },
+  {
+   "item": "Piramaṉār",
+   "verdict": "ok",
+   "reason": "Poet of Puṟam 357."
+  },
+  {
+   "item": "Vēmpaṟṟūr",
+   "verdict": "ok",
+   "reason": "Vēmpaṟṟūrk Kumaraṉār, Akam 157; Vēmpaṟṟūrk Kaṇṇaṉ Kūttaṉār, Kuṟuntokai 362."
+  },
+  {
+   "item": "Muṭamōciyār",
+   "verdict": "ok",
+   "reason": "Uṟaiyūr Ēṇiccēri Muṭamōciyār, Puṟam 13, 127-135."
+  },
+  {
+   "item": "Neytalaṅkāṉal",
+   "verdict": "ok",
+   "reason": "Cōḻaṉ Neytalaṅkāṉal Iḷañcēṭceṉṉi, Puṟam 10, 203."
+  },
+  {
+   "item": "Kāntāram",
+   "verdict": "ok",
+   "reason": "Paṇ name Kāntāram in Paripāṭal colophons (poems 18-21)."
+  },
+  {
+   "item": "Kuṟuṅkuṭi Marutaṉār",
+   "verdict": "ok",
+   "reason": "Poet of Akam 4, Kuṟuntokai 344."
+  },
+  {
+   "item": "Ciṟukantaṉār",
+   "verdict": "ok",
+   "reason": "Uṟaiyūr Ciṟukantaṉār, Kuṟuntokai 357."
+  },
+  {
+   "item": "Kaṭaikkuḷam",
+   "verdict": "ok",
+   "reason": "Puṟam 229.4 'kaṭai kuḷattu' (the asterism)."
+  },
+  {
+   "item": "Kāmaṉ",
+   "verdict": "ok",
+   "reason": "Kalittokai 84, 109, 147; Paripāṭal 11, 19."
+  },
+  {
+   "item": "Māmūlaṉār",
+   "verdict": "ok",
+   "reason": "Poet of many Akam poems."
+  },
+  {
+   "item": "Maḷḷaṉār",
+   "verdict": "ok",
+   "reason": "Maḷḷaṉār listed as poet; maḷḷaṉ 'strong man, warrior'."
+  }
+ ],
+ "B": [
+  {
+   "item": "mukai",
+   "verdict": "ok",
+   "reason": "Bud; 127 Sangam occurrences; Tamil Lexicon (TL) mukai 1."
+  },
+  {
+   "item": "kuṟaṭu",
+   "verdict": "ok",
+   "reason": "TL kuṟaṭu 1 'pincers, tongs', DEDR 1843; Kuṟuntokai 198 'karikkuṟaṭṭu' = smith's tongs."
+  },
+  {
+   "item": "keḷiṟu",
+   "verdict": "ok",
+   "reason": "Naṟṟiṇai 70 'ciṉai keḷiṟṟu'; TL = keḷutti, Macrones (catfish) species."
+  },
+  {
+   "item": "kavar",
+   "verdict": "ok",
+   "reason": "Forked branch/prong, TL and DEDR 1325; Patiṟṟu 84 'kavar kiḷai'."
+  },
+  {
+   "item": "vittu",
+   "verdict": "ok",
+   "reason": "Seed, Naṟṟiṇai 209, Puṟam 137; Dravidian cognates (TL only 'cf. bīja')."
+  },
+  {
+   "item": "kōṭu",
+   "verdict": "ok",
+   "reason": "Branch; very common in Sangam."
+  },
+  {
+   "item": "palli",
+   "verdict": "ok",
+   "reason": "DEDR 3994 (Dravidian; Skt pallī compared); Puṟam 256."
+  },
+  {
+   "item": "mūṭi",
+   "verdict": "wrong",
+   "reason": "Noun mūṭi 'lid, cover' does not occur in the Sangam corpus, and TL gives it no early citation; it is attested only later."
+  },
+  {
+   "item": "koṭi",
+   "verdict": "ok",
+   "reason": "Flag; 241 Sangam occurrences."
+  },
+  {
+   "item": "koṅkai",
+   "verdict": "ok",
+   "reason": "Woman's breast; Sangam (2 occurrences); TL, Malayalam cognate."
+  },
+  {
+   "item": "ceppu",
+   "verdict": "ok",
+   "reason": "Casket; Kuṟuntokai 9, Akam 25, Maturai 421; DEDR 2772."
+  },
+  {
+   "item": "koṭi",
+   "verdict": "ok",
+   "reason": "Flag/banner; Sangam."
+  },
+  {
+   "item": "aṭār",
+   "verdict": "ok",
+   "reason": "Stone trap for tigers, Naṟṟiṇai 119, Malaipaṭukaṭām 194 (aṭāar)."
+  },
+  {
+   "item": "vittu",
+   "verdict": "ok",
+   "reason": "Same as 'seeds': Sangam-attested and Dravidian."
+  },
+  {
+   "item": "pal",
+   "verdict": "ok",
+   "reason": "Tooth; DEDR 3986; Sangam."
+  },
+  {
+   "item": "koṭukku",
+   "verdict": "wrong",
+   "reason": "TL gives koṭukku only as a scorpion's sting and (colloquially) a crab's claw, with no early citation; it is absent from the Sangam corpus."
+  },
+  {
+   "item": "kōṭṭam",
+   "verdict": "wrong",
+   "reason": "TL derives kōṭṭam 'room, temple' from Sanskrit koṣṭha (DEDR has only native kōṭṭam 'bend'), so it is an Indo-Aryan loan despite Sangam use (Puṟam 299)."
+  },
+  {
+   "item": "kūṭai",
+   "verdict": "wrong",
+   "reason": "kūṭai 'basket' (DEDR 1884) is not attested in early Tamil: TL gives no citation, and its only Sangam hit (Kuṟuntokai 111) is a variant reading of kūḻai 'short'."
+  },
+  {
+   "item": "kōṭu",
+   "verdict": "ok",
+   "reason": "Akam 343.7 'kōṭu māy eḻuttu' (carved letters whose lines have faded); TL kōṭu 'line'."
+  },
+  {
+   "item": "tī",
+   "verdict": "ok",
+   "reason": "Fire; Sangam."
+  },
+  {
+   "item": "vaḷai",
+   "verdict": "ok",
+   "reason": "vaḷai 'to bend, curve' (DEDR 5314); Sangam 'vaḷai maruppu' curved tusk."
+  },
+  {
+   "item": "kaḻaṉi",
+   "verdict": "ok",
+   "reason": "Paddy field; 66 Sangam occurrences."
+  },
+  {
+   "item": "kūlam",
+   "verdict": "ok",
+   "reason": "Grain; Maturai 317, Naṟṟiṇai 93; TL suggests Skt kula, but DEDR 1906 compares Central Dravidian kūli 'paddy', so it is not a known loan."
+  },
+  {
+   "item": "eḵku",
+   "verdict": "ok",
+   "reason": "Spear/lance; TL eḵku 5; 31 Sangam occurrences."
+  },
+  {
+   "item": "kaḻi",
+   "verdict": "ok",
+   "reason": "TL kaḻi 'rod, staff, stick; tool handle' (Puṟam 98)."
+  },
+  {
+   "item": "paṟai",
+   "verdict": "ok",
+   "reason": "Drum; Sangam."
+  },
+  {
+   "item": "tuḷi",
+   "verdict": "ok",
+   "reason": "Drop; Sangam."
+  },
+  {
+   "item": "kaṇai",
+   "verdict": "ok",
+   "reason": "Arrow; Sangam."
+  },
+  {
+   "item": "arumpu",
+   "verdict": "ok",
+   "reason": "Bud; Sangam."
+  },
+  {
+   "item": "ceṭi",
+   "verdict": "wrong",
+   "reason": "ceṭi 'shrub' (DEDR 1941) does not occur in the Sangam corpus; TL's earliest citation is Tiruvācakam, so it is only later."
+  },
+  {
+   "item": "mīcai",
+   "verdict": "wrong",
+   "reason": "mīcai 'moustache' (DEDR 4879) is absent from the Sangam corpus; TL cites it first from Kamparāmāyaṇam (and Cīvakacintāmaṇi for 'upper part')."
+  },
+  {
+   "item": "kulai",
+   "verdict": "ok",
+   "reason": "Cluster, bunch; Sangam."
+  },
+  {
+   "item": "kōl",
+   "verdict": "ok",
+   "reason": "Staff, rod; Sangam."
+  },
+  {
+   "item": "koṭi",
+   "verdict": "ok",
+   "reason": "Flag/standard; Sangam."
+  },
+  {
+   "item": "tirai",
+   "verdict": "ok",
+   "reason": "Waves; Sangam."
+  },
+  {
+   "item": "nāṟu",
+   "verdict": "ok",
+   "reason": "Seedling, Perumpāṇāṟṟuppaṭai 212 'muṭi nāṟu'; TL nāṟu."
+  },
+  {
+   "item": "mīṉ",
+   "verdict": "ok",
+   "reason": "Star; Sangam."
+  },
+  {
+   "item": "aṉṉai",
+   "verdict": "ok",
+   "reason": "Mother; 106 Sangam occurrences."
+  },
+  {
+   "item": "puṇar",
+   "verdict": "ok",
+   "reason": "Join, unite; Sangam."
+  },
+  {
+   "item": "miṉ",
+   "verdict": "ok",
+   "reason": "Lightning; Sangam."
+  },
+  {
+   "item": "kaṭai",
+   "verdict": "ok",
+   "reason": "Churn (Akam 87 'tayir kaṭainta'); close near-synonym."
+  },
+  {
+   "item": "taḷir",
+   "verdict": "ok",
+   "reason": "Tender shoot/leaf; Sangam."
+  },
+  {
+   "item": "kuṭumi",
+   "verdict": "ok",
+   "reason": "Tuft, crest; TL kuṭumi; 25 Sangam occurrences."
+  },
+  {
+   "item": "pōrvai",
+   "verdict": "ok",
+   "reason": "Covering, cloak; Sangam (Ciṟupāṇ 256, Kalittokai 65)."
+  },
+  {
+   "item": "kavalai",
+   "verdict": "ok",
+   "reason": "Fork of roads, junction, TL (Mullaippāṭṭu 30)."
+  },
+  {
+   "item": "kaṭai",
+   "verdict": "ok",
+   "reason": "Entrance, gate, TL kaṭai 7 (Akam 66)."
+  },
+  {
+   "item": "cevi",
+   "verdict": "ok",
+   "reason": "Ear; Sangam."
+  },
+  {
+   "item": "maṉai",
+   "verdict": "ok",
+   "reason": "House, dwelling; Sangam; acceptable broader word."
+  },
+  {
+   "item": "nil",
+   "verdict": "ok",
+   "reason": "To stand; Sangam."
+  },
+  {
+   "item": "vāyil",
+   "verdict": "ok",
+   "reason": "Gate, entrance; Sangam."
+  }
+ ]
+}

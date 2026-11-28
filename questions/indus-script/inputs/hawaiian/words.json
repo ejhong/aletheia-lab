@@ -1,0 +1,1032 @@
+{
+ "002": {
+  "two": [
+   "lua"
+  ],
+  "pair": [
+   "kaulua"
+  ],
+  "strokes": [
+   "kaha"
+  ],
+  "tally": [
+   "helu"
+  ]
+ },
+ "060": {
+  "hook": [
+   "makau",
+   "lou"
+  ],
+  "stroke": [
+   "kaha"
+  ],
+  "mark": [
+   "kaha",
+   "hōailona"
+  ],
+  "line": [
+   "kaha",
+   "aho"
+  ]
+ },
+ "061": {
+  "tongs": [
+   "ūpā"
+  ],
+  "fork": [
+   "mana"
+  ],
+  "forked stick": [
+   "āmana",
+   "mana"
+  ],
+  "split": [
+   "vāhi",
+   "māhae"
+  ]
+ },
+ "070": {
+  "arrow": [
+   "pua"
+  ],
+  "spear": [
+   "ihe",
+   "pololū"
+  ],
+  "barb": [
+   "kākala"
+  ],
+  "point": [
+   "vēlau",
+   "kiko"
+  ]
+ },
+ "090": {
+  "man": [
+   "kāne"
+  ],
+  "person": [
+   "kanaka"
+  ],
+  "stand": [
+   "kū"
+  ],
+  "body": [
+   "kino"
+  ]
+ },
+ "100": {
+  "heads": [
+   "poo"
+  ],
+  "crowd": [
+   "lehulehu",
+   "anaina"
+  ],
+  "man": [
+   "kāne"
+  ],
+  "three": [
+   "kolu"
+  ]
+ },
+ "125": {
+  "archer": [],
+  "hunter": [],
+  "shoot": [
+   "kupu",
+   "ōmuo"
+  ],
+  "bow": [
+   "pana"
+  ]
+ },
+ "140": {
+  "woman": [
+   "vahine"
+  ],
+  "mother": [
+   "makuahine"
+  ],
+  "breasts": [
+   "ū",
+   "vaiū"
+  ],
+  "raise": [
+   "hāpai"
+  ]
+ },
+ "142": {
+  "staff": [
+   "kōokoo"
+  ],
+  "man": [
+   "kāne"
+  ],
+  "walker": [],
+  "stick": [
+   "lāau"
+  ]
+ },
+ "151": {
+  "carrier": [
+   "auamo",
+   "kōkō"
+  ],
+  "load": [
+   "hāave",
+   "ukana"
+  ],
+  "carry": [
+   "hali",
+   "amo"
+  ],
+  "yoke": [
+   "auamo"
+  ]
+ },
+ "154": {
+  "carrier": [
+   "auamo",
+   "kōkō"
+  ],
+  "load": [
+   "hāave",
+   "ukana"
+  ],
+  "jar": [
+   "ipu",
+   "hue"
+  ],
+  "carry": [
+   "hali",
+   "amo"
+  ]
+ },
+ "156": {
+  "carrier": [
+   "auamo",
+   "kōkō"
+  ],
+  "load": [
+   "hāave",
+   "ukana"
+  ],
+  "fan": [
+   "pēahi"
+  ],
+  "carry": [
+   "hali",
+   "amo"
+  ]
+ },
+ "176": {
+  "sit": [
+   "noho"
+  ],
+  "kneel": [
+   "kukuli"
+  ],
+  "worker": [
+   "paahana",
+   "lopa"
+  ],
+  "rake": [
+   "kope"
+  ]
+ },
+ "220": {
+  "fish": [
+   "ia"
+  ],
+  "fishing": [
+   "lavaia"
+  ],
+  "fin": [
+   "kualā",
+   "halo"
+  ],
+  "scale": [
+   "unahi"
+  ]
+ },
+ "226": {
+  "fish": [
+   "ia"
+  ],
+  "fish trap": [
+   "hīnai"
+  ],
+  "pond": [
+   "loko",
+   "kiovai"
+  ],
+  "catch": [
+   "hopu",
+   "apo"
+  ]
+ },
+ "231": {
+  "fish": [
+   "ia"
+  ],
+  "spot": [
+   "kiko"
+  ],
+  "dot": [
+   "kiko"
+  ],
+  "mark": [
+   "kaha",
+   "hōailona"
+  ]
+ },
+ "233": {
+  "fish": [
+   "ia"
+  ],
+  "cut fish": [
+   "kaha"
+  ],
+  "dried fish": [],
+  "band": [
+   "kāei"
+  ]
+ },
+ "235": {
+  "fish": [
+   "ia"
+  ],
+  "roof": [
+   "kaupoku"
+  ],
+  "cover": [
+   "uhi",
+   "poi"
+  ],
+  "lid": [
+   "poi",
+   "uhi"
+  ]
+ },
+ "236": {
+  "fish": [
+   "ia"
+  ],
+  "roof": [
+   "kaupoku"
+  ],
+  "trap": [
+   "pahele"
+  ],
+  "house": [
+   "hale"
+  ]
+ },
+ "240": {
+  "catfish": [],
+  "fish": [
+   "ia"
+  ],
+  "whiskers": [
+   "umiumi"
+  ],
+  "barbel": [
+   "umiumi"
+  ]
+ },
+ "255": {
+  "fish": [
+   "ia"
+  ],
+  "fin": [
+   "kualā",
+   "halo"
+  ],
+  "lizard": [
+   "moo"
+  ],
+  "scale": [
+   "unahi"
+  ]
+ },
+ "350": {
+  "roots": [
+   "aa",
+   "mole"
+  ],
+  "plant": [
+   "lāau"
+  ],
+  "sprout": [
+   "kupu",
+   "ōmuo"
+  ],
+  "tuft": []
+ },
+ "368": {
+  "flag": [
+   "lepa",
+   "hae"
+  ],
+  "banner": [
+   "lepa",
+   "hae"
+  ],
+  "pennant": [
+   "lepa"
+  ],
+  "pole": [
+   "pou",
+   "kia"
+  ]
+ },
+ "388": {
+  "grain": [
+   "hua",
+   "huna"
+  ],
+  "ear": [
+   "pepeiao"
+  ],
+  "sheaf": [
+   "pūā"
+  ],
+  "bunch": [
+   "āhui",
+   "huhui"
+  ]
+ },
+ "390": {
+  "tree": [
+   "lāau",
+   "kumu"
+  ],
+  "branch": [
+   "lālā"
+  ],
+  "twig": [
+   "lālā"
+  ],
+  "fork": [
+   "mana"
+  ]
+ },
+ "400": {
+  "comb": [
+   "kahi"
+  ],
+  "teeth": [
+   "niho"
+  ],
+  "rake": [
+   "kope"
+  ],
+  "ladder": [
+   "haka",
+   "alahaka"
+  ]
+ },
+ "405": {
+  "branch": [
+   "lālā"
+  ],
+  "tree": [
+   "lāau",
+   "kumu"
+  ],
+  "twig": [
+   "lālā"
+  ],
+  "sprout": [
+   "kupu",
+   "ōmuo"
+  ]
+ },
+ "407": {
+  "branch": [
+   "lālā"
+  ],
+  "twig": [
+   "lālā"
+  ],
+  "tree": [
+   "lāau",
+   "kumu"
+  ],
+  "shoot": [
+   "kupu",
+   "ōmuo"
+  ]
+ },
+ "415": {
+  "lamp": [
+   "kukui"
+  ],
+  "rake": [
+   "kope"
+  ],
+  "trident": [],
+  "fork": [
+   "mana"
+  ]
+ },
+ "416": {
+  "lamp": [
+   "kukui"
+  ],
+  "rake": [
+   "kope"
+  ],
+  "stand": [
+   "kū"
+  ],
+  "tier": [
+   "papa",
+   "anuu"
+  ]
+ },
+ "435": {
+  "zigzag": [
+   "kīkeekee"
+  ],
+  "lightning": [
+   "uila"
+  ],
+  "snake": [],
+  "turn": [
+   "huli"
+  ]
+ },
+ "440": {
+  "doorway": [
+   "īpuka",
+   "puka"
+  ],
+  "door": [
+   "īpuka",
+   "puka"
+  ],
+  "frame": [],
+  "gate": [
+   "īpuka"
+  ]
+ },
+ "455": {
+  "hearth": [
+   "kapuahi",
+   "imu"
+  ],
+  "triangles": [],
+  "stones": [
+   "pōhaku"
+  ],
+  "fire": [
+   "ahi"
+  ]
+ },
+ "460": {
+  "peaks": [
+   "vēkiu",
+   "piko"
+  ],
+  "mountains": [
+   "mauna",
+   "kuahivi"
+  ],
+  "hills": [
+   "puu"
+  ],
+  "spikes": [
+   "kākala",
+   "kukū"
+  ]
+ },
+ "503": {
+  "hill": [
+   "puu",
+   "ahua"
+  ],
+  "heap": [
+   "ahu",
+   "puu"
+  ],
+  "stack": [
+   "ahu"
+  ],
+  "pile": [
+   "ahu",
+   "puu"
+  ]
+ },
+ "520": {
+  "spear": [
+   "ihe",
+   "pololū"
+  ],
+  "arrow": [
+   "pua"
+  ],
+  "lance": [
+   "ihe",
+   "pololū"
+  ],
+  "point": [
+   "vēlau",
+   "kiko"
+  ]
+ },
+ "527": {
+  "box": [
+   "pahu"
+  ],
+  "basket": [
+   "hīnai",
+   "ie"
+  ],
+  "stool": [
+   "noho"
+  ],
+  "chest": [
+   "umauma",
+   "pahu"
+  ]
+ },
+ "550": {
+  "drum": [
+   "pahu",
+   "puniu"
+  ],
+  "pincers": [
+   "ūmii",
+   "ūpā"
+  ],
+  "tongs": [
+   "ūpā"
+  ],
+  "claw": [
+   "māiuu"
+  ]
+ },
+ "555": {
+  "pincers": [
+   "ūmii",
+   "ūpā"
+  ],
+  "drum": [
+   "pahu",
+   "puniu"
+  ],
+  "claw": [
+   "māiuu"
+  ],
+  "tongs": [
+   "ūpā"
+  ]
+ },
+ "575": {
+  "building": [
+   "hale"
+  ],
+  "stand": [
+   "kū"
+  ],
+  "shrine": [
+   "heiau",
+   "koa"
+  ],
+  "pedestal": [
+   "kahua",
+   "paepae"
+  ]
+ },
+ "585": {
+  "tent": [],
+  "hearth": [
+   "kapuahi",
+   "imu"
+  ],
+  "hut": [
+   "hale"
+  ],
+  "stand": [
+   "kū"
+  ]
+ },
+ "590": {
+  "box": [
+   "pahu"
+  ],
+  "pole": [
+   "pou",
+   "kia"
+  ],
+  "flag": [
+   "lepa",
+   "hae"
+  ],
+  "standard": [
+   "kāhili",
+   "lepa"
+  ]
+ },
+ "595": {
+  "box": [
+   "pahu"
+  ],
+  "pole": [
+   "pou",
+   "kia"
+  ],
+  "basket": [
+   "hīnai",
+   "ie"
+  ],
+  "standard": [
+   "kāhili",
+   "lepa"
+  ]
+ },
+ "615": {
+  "grid": [],
+  "field": [
+   "māla",
+   "loi"
+  ],
+  "net": [
+   "upena"
+  ],
+  "wall": [
+   "pā",
+   "paia"
+  ]
+ },
+ "617": {
+  "grid": [],
+  "fields": [
+   "māla",
+   "loi"
+  ],
+  "nets": [
+   "upena"
+  ],
+  "walls": [
+   "pā",
+   "paia"
+  ]
+ },
+ "621": {
+  "door": [
+   "īpuka",
+   "puka"
+  ],
+  "box": [
+   "pahu"
+  ],
+  "frame": [],
+  "cabinet": []
+ },
+ "690": {
+  "cross": [
+   "kea"
+  ],
+  "crossroads": [
+   "huina"
+  ],
+  "junction": [
+   "huina",
+   "hui"
+  ],
+  "meet": [
+   "hālāvai",
+   "hui"
+  ]
+ },
+ "692": {
+  "cross": [
+   "kea"
+  ],
+  "crossroads": [
+   "huina"
+  ],
+  "junction": [
+   "huina",
+   "hui"
+  ],
+  "band": [
+   "kāei"
+  ]
+ },
+ "705": {
+  "churn": [],
+  "pot": [
+   "ipu",
+   "umeke"
+  ],
+  "stick": [
+   "lāau"
+  ],
+  "stir": [
+   "kāvili"
+  ]
+ },
+ "706": {
+  "churn": [],
+  "drop": [
+   "kulu"
+  ],
+  "pot": [
+   "ipu",
+   "umeke"
+  ],
+  "stir": [
+   "kāvili"
+  ]
+ },
+ "717": {
+  "paw": [
+   "vāvae",
+   "kapuai"
+  ],
+  "hand": [
+   "lima"
+  ],
+  "bundle": [
+   "pūolo",
+   "opeope"
+  ],
+  "rake": [
+   "kope"
+  ]
+ },
+ "740": {
+  "jar": [
+   "ipu",
+   "hue"
+  ],
+  "pot": [
+   "ipu",
+   "umeke"
+  ],
+  "vessel": [
+   "ipu",
+   "umeke"
+  ],
+  "handle": [
+   "au",
+   "kākai"
+  ]
+ },
+ "741": {
+  "jar": [
+   "ipu",
+   "hue"
+  ],
+  "pot": [
+   "ipu",
+   "umeke"
+  ],
+  "vessel": [
+   "ipu",
+   "umeke"
+  ],
+  "fill": [
+   "hoopiha",
+   "piha"
+  ]
+ },
+ "742": {
+  "jar": [
+   "ipu",
+   "hue"
+  ],
+  "pot": [
+   "ipu",
+   "umeke"
+  ],
+  "vessel": [
+   "ipu",
+   "umeke"
+  ],
+  "fill": [
+   "hoopiha",
+   "piha"
+  ]
+ },
+ "760": {
+  "pot": [
+   "ipu",
+   "umeke"
+  ],
+  "sprout": [
+   "kupu",
+   "ōmuo"
+  ],
+  "plant": [
+   "lāau"
+  ],
+  "horns": [
+   "kivi"
+  ]
+ },
+ "790": {
+  "leaf": [
+   "lau"
+  ],
+  "seed": [
+   "anoano",
+   "hua"
+  ],
+  "eye": [
+   "maka",
+   "onohi"
+  ],
+  "diamond": []
+ },
+ "798": {
+  "crab": [
+   "pāpai",
+   "aama"
+  ],
+  "claw": [
+   "māiuu"
+  ],
+  "pincer": [
+   "ūmii",
+   "ūpā"
+  ],
+  "shell": [
+   "pūpū"
+  ]
+ },
+ "803": {
+  "leaf": [
+   "lau"
+  ],
+  "tree": [
+   "lāau",
+   "kumu"
+  ],
+  "vein": [
+   "aa"
+  ],
+  "pipal": []
+ },
+ "806": {
+  "leaf": [
+   "lau"
+  ],
+  "seed": [
+   "anoano",
+   "hua"
+  ],
+  "sprout": [
+   "kupu",
+   "ōmuo"
+  ],
+  "vein": [
+   "aa"
+  ]
+ },
+ "817": {
+  "leaf": [
+   "lau"
+  ],
+  "bud": [
+   "ōpuu",
+   "liko"
+  ],
+  "seed": [
+   "anoano",
+   "hua"
+  ],
+  "point": [
+   "vēlau",
+   "kiko"
+  ]
+ },
+ "820": {
+  "wheel": [],
+  "spokes": [],
+  "sun": [
+   "lā"
+  ],
+  "star": [
+   "hōkū"
+  ]
+ },
+ "832": {
+  "eye": [
+   "maka",
+   "onohi"
+  ],
+  "seed": [
+   "anoano",
+   "hua"
+  ],
+  "almond": [],
+  "pupil": [
+   "onohi"
+  ]
+ },
+ "840": {
+  "leaves": [
+   "lau"
+  ],
+  "eyes": [
+   "maka"
+  ],
+  "pair": [
+   "kaulua"
+  ],
+  "seeds": [
+   "anoano",
+   "hua"
+  ]
+ },
+ "861": {
+  "diamond": [],
+  "bud": [
+   "ōpuu",
+   "liko"
+  ],
+  "leaf": [
+   "lau"
+  ],
+  "point": [
+   "vēlau",
+   "kiko"
+  ]
+ },
+ "892": {
+  "bow": [
+   "pana"
+  ],
+  "arrow": [
+   "pua"
+  ],
+  "shoot": [
+   "kupu",
+   "ōmuo"
+  ],
+  "archer": []
+ },
+ "900": {
+  "crescent": [
+   "hoaka"
+  ],
+  "moon": [
+   "mahina"
+  ],
+  "curve": [
+   "pio"
+  ],
+  "bow": [
+   "pana"
+  ]
+ },
+ "904": {
+  "crescents": [
+   "hoaka"
+  ],
+  "moons": [
+   "mahina"
+  ],
+  "curves": [
+   "pio"
+  ],
+  "waves": [
+   "nalu",
+   "ale"
+  ]
+ },
+ "920": {
+  "crescent": [
+   "hoaka"
+  ],
+  "moon": [
+   "mahina"
+  ],
+  "leaf": [
+   "lau"
+  ],
+  "bud": [
+   "ōpuu",
+   "liko"
+  ]
+ },
+ "923": {
+  "boomerang": [],
+  "crescent": [
+   "hoaka"
+  ],
+  "moon": [
+   "mahina"
+  ],
+  "bend": [
+   "pio",
+   "kekee"
+  ]
+ }
+}

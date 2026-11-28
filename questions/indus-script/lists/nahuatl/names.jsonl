@@ -1,0 +1,662 @@
+{"name": "Ācamāpichtli", "type": "person", "morphemes": ["ācatl", "māpichtli"], "gloss": "reed + handful", "source": "Codex Mendoza"}
+{"name": "Huitzilihhuitl", "type": "person", "morphemes": ["huitzilin", "ihhuitl"], "gloss": "hummingbird + feather", "source": "Codex Mendoza"}
+{"name": "Chīmalpopōca", "type": "person", "morphemes": ["chīmalli", "popōca"], "gloss": "shield + smoke", "source": "Codex Mendoza"}
+{"name": "Ītzcōātl", "type": "person", "morphemes": ["ītztli", "cōātl"], "gloss": "obsidian + snake", "source": "Codex Mendoza"}
+{"name": "Motēuczōma", "type": "person", "morphemes": ["mo", "tēuctli", "zōma"], "gloss": "himself + lord + frown", "source": "Codex Mendoza"}
+{"name": "Ilhuicamīna", "type": "person", "morphemes": ["ilhuicatl", "mīna"], "gloss": "sky + shoot arrows", "source": "Codex Mendoza"}
+{"name": "Xōcoyōtzin", "type": "person", "morphemes": ["xōcoyōtl", "tzin"], "gloss": "youngest child + revered, little", "source": "Codex Mendoza"}
+{"name": "Āxāyacatl", "type": "person", "morphemes": ["ātl", "xāyacatl"], "gloss": "water + face", "source": "Codex Mendoza"}
+{"name": "Tizoc", "type": "person", "morphemes": ["tizoc"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Āhuitzotl", "type": "person", "morphemes": ["āhuitzotl"], "gloss": "water beast", "source": "Codex Mendoza"}
+{"name": "Cuitlāhuac", "type": "person", "morphemes": ["cuitlāhuac"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Cuāuhtemōc", "type": "person", "morphemes": ["cuāuhtli", "temō"], "gloss": "eagle + descend", "source": "Florentine Codex"}
+{"name": "Tlacaelel", "type": "person", "morphemes": ["tlacaelel"], "gloss": "name", "source": "Durán, Historia de las Indias"}
+{"name": "Tlacahuepan", "type": "person", "morphemes": ["tlacahuepan"], "gloss": "name", "source": "Durán, Historia de las Indias"}
+{"name": "Macuilmālīnal", "type": "person", "morphemes": ["mācuīlli", "mālīnalli"], "gloss": "five + twisted grass", "source": "Durán, Historia de las Indias"}
+{"name": "Tlilpotonqui", "type": "person", "morphemes": ["tlilpotonqui"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlacotzin", "type": "person", "morphemes": ["tlacotl", "tzin"], "gloss": "rod + revered, little", "source": "Florentine Codex"}
+{"name": "Motelchiuh", "type": "person", "morphemes": ["motelchiuh"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Xōchiquentzin", "type": "person", "morphemes": ["xōchitl", "quēmitl", "tzin"], "gloss": "flower + garment + revered, little", "source": "Florentine Codex"}
+{"name": "Huanitzin", "type": "person", "morphemes": ["huanitzin"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tehuetzquititzin", "type": "person", "morphemes": ["tehuetzquititzin"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tzihuacpopōcatzin", "type": "person", "morphemes": ["tzihuactli", "popōca", "tzin"], "gloss": "tzihuac cactus + smoke + revered, little", "source": "Florentine Codex"}
+{"name": "Itzcuāuhtzin", "type": "person", "morphemes": ["ītztli", "cuāuhtli", "tzin"], "gloss": "obsidian + eagle + revered, little", "source": "Florentine Codex"}
+{"name": "Topantemōctzin", "type": "person", "morphemes": ["topan", "temō", "tzin"], "gloss": "above us + descend + revered, little", "source": "Florentine Codex"}
+{"name": "Coyohuehuetzin", "type": "person", "morphemes": ["coyōtl", "huēhueh", "tzin"], "gloss": "coyote + old man + revered, little", "source": "Florentine Codex"}
+{"name": "Temilotzin", "type": "person", "morphemes": ["temilotzin"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tzilacatzin", "type": "person", "morphemes": ["tzilacatzin"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Ehēcatzin", "type": "person", "morphemes": ["ehēcatl", "tzin"], "gloss": "wind + revered, little", "source": "Florentine Codex"}
+{"name": "Cuāuhnōchtli", "type": "person", "morphemes": ["cuāuhtli", "nōchtli"], "gloss": "eagle + prickly pear fruit", "source": "Florentine Codex"}
+{"name": "Ahuelitoc", "type": "person", "morphemes": ["ahuelitoc"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Pinotl", "type": "person", "morphemes": ["pinotl"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Yāōtl", "type": "person", "morphemes": ["yāōtl"], "gloss": "enemy", "source": "Florentine Codex"}
+{"name": "Teocinyocatl", "type": "person", "morphemes": ["teocinyocatl"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Cuitlalpitoc", "type": "person", "morphemes": ["cuitlalpitoc"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tentlil", "type": "person", "morphemes": ["tentlil"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Malintzin", "type": "person", "morphemes": ["malin", "tzin"], "gloss": "Marina + revered, little", "source": "Florentine Codex"}
+{"name": "Tetlepanquetzal", "type": "person", "morphemes": ["tetlepanquetzal"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Cuāuhpopōca", "type": "person", "morphemes": ["cuāuhtli", "popōca"], "gloss": "eagle + smoke", "source": "Cortés, Cartas de relación"}
+{"name": "Cuācuauhpitzāhuac", "type": "person", "morphemes": ["cuācuahuitl", "pitzāhuac"], "gloss": "horn + thin", "source": "Florentine Codex"}
+{"name": "Tlacateōtl", "type": "person", "morphemes": ["tlācatl", "teōtl"], "gloss": "person + god", "source": "Florentine Codex"}
+{"name": "Cuāuhtlahtoa", "type": "person", "morphemes": ["cuāuhtli", "tlahtoa"], "gloss": "eagle + speak", "source": "Codex Mendoza"}
+{"name": "Moquihuix", "type": "person", "morphemes": ["moquihuix"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Teconal", "type": "person", "morphemes": ["teconal"], "gloss": "name", "source": "Durán, Historia de las Indias"}
+{"name": "Chālchiuhnenetzin", "type": "person", "morphemes": ["chālchihuitl", "nenetl", "tzin"], "gloss": "jade + doll + revered, little", "source": "Durán, Historia de las Indias"}
+{"name": "Tezozomoc", "type": "person", "morphemes": ["tezozomoc"], "gloss": "name", "source": "Anales de Cuauhtitlan"}
+{"name": "Māxtla", "type": "person", "morphemes": ["māxtlatl"], "gloss": "loincloth", "source": "Codex Telleriano-Remensis"}
+{"name": "Tayauh", "type": "person", "morphemes": ["tayauh"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Āyauhcihuātl", "type": "person", "morphemes": ["āyahuitl", "cihuātl"], "gloss": "mist + woman", "source": "Crónica Mexicayotl"}
+{"name": "Totoquihuaztli", "type": "person", "morphemes": ["totoquihuaztli"], "gloss": "name", "source": "Durán, Historia de las Indias"}
+{"name": "Nōpaltzin", "type": "person", "morphemes": ["nōpalli", "tzin"], "gloss": "prickly pear cactus + revered, little", "source": "Codex Xolotl"}
+{"name": "Tlotzin", "type": "person", "morphemes": ["tlotzin"], "gloss": "name", "source": "Codex Xolotl"}
+{"name": "Quinatzin", "type": "person", "morphemes": ["quinatzin"], "gloss": "name", "source": "Codex Xolotl"}
+{"name": "Techotlalatzin", "type": "person", "morphemes": ["techotlalatzin"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Īxtlīlxōchitl", "type": "person", "morphemes": ["īxtli", "tlīlli", "xōchitl"], "gloss": "face + black + flower", "source": "Florentine Codex"}
+{"name": "Nezahualcoyōtl", "type": "person", "morphemes": ["nezahualli", "coyōtl"], "gloss": "fast + coyote", "source": "Florentine Codex"}
+{"name": "Nezahualpilli", "type": "person", "morphemes": ["nezahualli", "pilli"], "gloss": "fast + prince", "source": "Florentine Codex"}
+{"name": "Cacamatzin", "type": "person", "morphemes": ["cacamatzin"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Cōānacoch", "type": "person", "morphemes": ["cōātl", "nacochtli"], "gloss": "snake + ear ornament", "source": "Florentine Codex"}
+{"name": "Tecocol", "type": "person", "morphemes": ["tecocol"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tlaltecatzin", "type": "person", "morphemes": ["tlaltecatzin"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Yoyontzin", "type": "person", "morphemes": ["yoyontzin"], "gloss": "name", "source": "Cantares Mexicanos"}
+{"name": "Tetzāuhpiltzintli", "type": "person", "morphemes": ["tetzāhuitl", "pilli", "tzin"], "gloss": "omen + prince + revered, little", "source": "Alva Ixtlilxochitl, Obras históricas"}
+{"name": "Ācolmiztli", "type": "person", "morphemes": ["ācolli", "miztli"], "gloss": "shoulder + puma", "source": "Codex Xolotl"}
+{"name": "Huetzin", "type": "person", "morphemes": ["huetzin"], "gloss": "name", "source": "Codex Xolotl"}
+{"name": "Tzontecomatl", "type": "person", "morphemes": ["tzontecomatl"], "gloss": "head", "source": "Codex Xolotl"}
+{"name": "Tōchintēuctli", "type": "person", "morphemes": ["tōchtli", "tēuctli"], "gloss": "rabbit + lord", "source": "Florentine Codex"}
+{"name": "Cuacuauhtzin", "type": "person", "morphemes": ["cuacuauhtzin"], "gloss": "name", "source": "Cantares Mexicanos"}
+{"name": "Tōmiyāuh", "type": "person", "morphemes": ["tō", "miyāhuatl"], "gloss": "our + maize tassel", "source": "Matrícula de Huexotzinco"}
+{"name": "Ayohtli", "type": "person", "morphemes": ["ayohtli"], "gloss": "squash", "source": "Florentine Codex"}
+{"name": "Cuatlahuice", "type": "person", "morphemes": ["cuatlahuice"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Mazātl", "type": "person", "morphemes": ["mazātl"], "gloss": "deer", "source": "Florentine Codex"}
+{"name": "Tlahuitōl", "type": "person", "morphemes": ["tlahuitōlli"], "gloss": "bow", "source": "Florentine Codex"}
+{"name": "Totomochtli", "type": "person", "morphemes": ["totomochtli"], "gloss": "dry maize husk", "source": "Florentine Codex"}
+{"name": "Tzapocuēitl", "type": "person", "morphemes": ["tzapotl", "cuēitl"], "gloss": "sapote + skirt", "source": "Florentine Codex"}
+{"name": "Achitometl", "type": "person", "morphemes": ["achitometl"], "gloss": "name", "source": "Durán, Historia de las Indias"}
+{"name": "Coxcox", "type": "person", "morphemes": ["coxcoxtli"], "gloss": "pheasant", "source": "Codex Vergara"}
+{"name": "Nauhyotl", "type": "person", "morphemes": ["nauhyotl"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Nonohualcatl", "type": "person", "morphemes": ["nonohualcatl"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Huēmac", "type": "person", "morphemes": ["huēyi", "māitl"], "gloss": "great + hand", "source": "Florentine Codex"}
+{"name": "Topiltzin", "type": "person", "morphemes": ["tō", "pilli", "tzin"], "gloss": "our + prince + revered, little", "source": "Anales de Cuauhtitlan"}
+{"name": "Ce Ācatl", "type": "person", "morphemes": ["ce", "ācatl"], "gloss": "one + reed", "source": "Anales de Cuauhtitlan"}
+{"name": "Ihuitimal", "type": "person", "morphemes": ["ihuitimal"], "gloss": "name", "source": "Anales de Cuauhtitlan"}
+{"name": "Totepeuh", "type": "person", "morphemes": ["totepeuh"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Matlacxōchitl", "type": "person", "morphemes": ["mahtlactli", "xōchitl"], "gloss": "ten + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Mixcōāmazātl", "type": "person", "morphemes": ["mixtli", "cōātl", "mazātl"], "gloss": "cloud + snake + deer", "source": "Anales de Cuauhtitlan"}
+{"name": "Chimalman", "type": "person", "morphemes": ["chimalman"], "gloss": "name", "source": "Codex Azcatitlan"}
+{"name": "Quetzalpetlatl", "type": "person", "morphemes": ["quetzalli", "petlatl"], "gloss": "quetzal plume + mat", "source": "Anales de Cuauhtitlan"}
+{"name": "Ihhuimecatl", "type": "person", "morphemes": ["ihhuitl", "mecatl"], "gloss": "feather + rope", "source": "Anales de Cuauhtitlan"}
+{"name": "Xiuhnel", "type": "person", "morphemes": ["xiuhnel"], "gloss": "name", "source": "Leyenda de los Soles"}
+{"name": "Mimich", "type": "person", "morphemes": ["mimich"], "gloss": "name", "source": "Leyenda de los Soles"}
+{"name": "Tata", "type": "person", "morphemes": ["tata"], "gloss": "name", "source": "Leyenda de los Soles"}
+{"name": "Nene", "type": "person", "morphemes": ["nene"], "gloss": "name", "source": "Leyenda de los Soles"}
+{"name": "Apanecatl", "type": "person", "morphemes": ["apanecatl"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Zōltōn", "type": "person", "morphemes": ["zōlin", "tōn"], "gloss": "quail + little", "source": "Leyenda de los Soles"}
+{"name": "Cuilton", "type": "person", "morphemes": ["cuilton"], "gloss": "name", "source": "Leyenda de los Soles"}
+{"name": "Tlaltetecuin", "type": "person", "morphemes": ["tlaltetecuin"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Oxomoco", "type": "person", "morphemes": ["oxomoco"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Cipactōnal", "type": "person", "morphemes": ["cipactli", "tōnalli"], "gloss": "caiman + day sign", "source": "Florentine Codex"}
+{"name": "Xochicahuaca", "type": "person", "morphemes": ["xochicahuaca"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tenoch", "type": "person", "morphemes": ["tetl", "nōchtli"], "gloss": "stone + prickly pear fruit", "source": "Codex Mendoza"}
+{"name": "Mexi", "type": "person", "morphemes": ["mexi"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Copil", "type": "person", "morphemes": ["copil"], "gloss": "name", "source": "Durán, Historia de las Indias"}
+{"name": "Mālīnalxōch", "type": "person", "morphemes": ["mālīnalli", "xōchitl"], "gloss": "twisted grass + flower", "source": "Durán, Historia de las Indias"}
+{"name": "Cuāuhtlequetzqui", "type": "person", "morphemes": ["cuāuhtli", "tletl", "quetza"], "gloss": "eagle + fire + raise", "source": "Crónica Mexicayotl"}
+{"name": "Āxōlōhua", "type": "person", "morphemes": ["āxōlōtl", "huah"], "gloss": "axolotl + owner of", "source": "Crónica Mexicayotl"}
+{"name": "Cuāuhcōātl", "type": "person", "morphemes": ["cuāuhtli", "cōātl"], "gloss": "eagle + snake", "source": "Codex Azcatitlan"}
+{"name": "Tezcacōātl", "type": "person", "morphemes": ["tezcatl", "cōātl"], "gloss": "mirror + snake", "source": "Crónica Mexicayotl"}
+{"name": "Iztāc Mixcōātl", "type": "person", "morphemes": ["iztāc", "mixtli", "cōātl"], "gloss": "white + cloud + snake", "source": "Motolinía, Memoriales"}
+{"name": "Xelhua", "type": "person", "morphemes": ["xelhua"], "gloss": "name", "source": "Motolinía, Memoriales"}
+{"name": "Ōlmēcatl", "type": "person", "morphemes": ["ōlli", "catl"], "gloss": "rubber + dweller of", "source": "Motolinía, Memoriales"}
+{"name": "Xicalancatl", "type": "person", "morphemes": ["xicalancatl"], "gloss": "name", "source": "Motolinía, Memoriales"}
+{"name": "Mixtēcatl", "type": "person", "morphemes": ["mixtli", "tēcatl"], "gloss": "cloud + dweller of", "source": "Motolinía, Memoriales"}
+{"name": "Otomitl", "type": "person", "morphemes": ["otomitl"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Acacitli", "type": "person", "morphemes": ["ācatl", "citli"], "gloss": "reed + hare", "source": "Codex Mendoza"}
+{"name": "Cuāuhpan", "type": "person", "morphemes": ["cuāuhtli", "pantli"], "gloss": "eagle + banner", "source": "Codex Mendoza"}
+{"name": "Ocēlōpan", "type": "person", "morphemes": ["ocēlōtl", "pan"], "gloss": "jaguar + on", "source": "Codex Mendoza"}
+{"name": "Āhuēxōtl", "type": "person", "morphemes": ["āhuēxōtl"], "gloss": "willow", "source": "Codex Mendoza"}
+{"name": "Xomimitl", "type": "person", "morphemes": ["xōtl", "mitl"], "gloss": "foot + arrow", "source": "Codex Mendoza"}
+{"name": "Xōcoyōl", "type": "person", "morphemes": ["xōcoyōlli"], "gloss": "wood sorrel", "source": "Codex Mendoza"}
+{"name": "Xiuhcactli", "type": "person", "morphemes": ["xihuitl", "cactli"], "gloss": "turquoise + sandal", "source": "Codex Mendoza"}
+{"name": "Ātōtōtl", "type": "person", "morphemes": ["ātl", "tōtōtl"], "gloss": "water + bird", "source": "Codex Mendoza"}
+{"name": "Ātōnal", "type": "person", "morphemes": ["ātl", "tōnalli"], "gloss": "water + day sign", "source": "Codex Mendoza"}
+{"name": "Xīcohtēncatl", "type": "person", "morphemes": ["xīcohtli", "tēntli", "catl"], "gloss": "bumblebee + edge + dweller of", "source": "Muñoz Camargo, Historia de Tlaxcala"}
+{"name": "Maxixcatzin", "type": "person", "morphemes": ["maxixcatzin"], "gloss": "name", "source": "Muñoz Camargo, Historia de Tlaxcala"}
+{"name": "Citlālpopōcatzin", "type": "person", "morphemes": ["citlālin", "popōca", "tzin"], "gloss": "star + smoke + revered, little", "source": "Muñoz Camargo, Historia de Tlaxcala"}
+{"name": "Tlehuexōlōtzin", "type": "person", "morphemes": ["tletl", "huexōlōtl", "tzin"], "gloss": "fire + turkey cock + revered, little", "source": "Muñoz Camargo, Historia de Tlaxcala"}
+{"name": "Xayacamach", "type": "person", "morphemes": ["xayacamach"], "gloss": "name", "source": "Cantares Mexicanos"}
+{"name": "Tecayehuatzin", "type": "person", "morphemes": ["tecayehuatzin"], "gloss": "name", "source": "Cantares Mexicanos"}
+{"name": "Ayocuan", "type": "person", "morphemes": ["ayocuan"], "gloss": "name", "source": "Cantares Mexicanos"}
+{"name": "Aquiauhtzin", "type": "person", "morphemes": ["aquiauhtzin"], "gloss": "name", "source": "Cantares Mexicanos"}
+{"name": "Tochihuitzin", "type": "person", "morphemes": ["tochihuitzin"], "gloss": "name", "source": "Cantares Mexicanos"}
+{"name": "Coyōlchiuhqui", "type": "person", "morphemes": ["coyōlli", "chīhua"], "gloss": "bell + make", "source": "Cantares Mexicanos"}
+{"name": "Chichicuepon", "type": "person", "morphemes": ["chichicuepon"], "gloss": "name", "source": "Cantares Mexicanos"}
+{"name": "Mācuīlxōchitzin", "type": "person", "morphemes": ["mācuīlli", "xōchitl", "tzin"], "gloss": "five + flower + revered, little", "source": "Cantares Mexicanos"}
+{"name": "Quetzalmazātzin", "type": "person", "morphemes": ["quetzalli", "mazātl", "tzin"], "gloss": "quetzal plume + deer + revered, little", "source": "Chimalpahin, Relaciones"}
+{"name": "Miyāhuaxihuitl", "type": "person", "morphemes": ["miyāhuatl", "xihuitl"], "gloss": "maize tassel + turquoise", "source": "Crónica Mexicayotl"}
+{"name": "Huāctli", "type": "person", "morphemes": ["huāctli"], "gloss": "night heron", "source": "Anales de Cuauhtitlan"}
+{"name": "Xāltemōc", "type": "person", "morphemes": ["xālli", "temō"], "gloss": "sand + descend", "source": "Anales de Cuauhtitlan"}
+{"name": "Ilancuēitl", "type": "person", "morphemes": ["ilamah", "cuēitl"], "gloss": "old woman + skirt", "source": "Codex Telleriano-Remensis"}
+{"name": "Atotoztli", "type": "person", "morphemes": ["atotoztli"], "gloss": "name", "source": "Crónica Mexicayotl"}
+{"name": "Tēcuichpōch", "type": "person", "morphemes": ["tēuctli", "ichpōchtli"], "gloss": "lord + maiden", "source": "Crónica Mexicayotl"}
+{"name": "Chimalaxoch", "type": "person", "morphemes": ["chimalaxoch"], "gloss": "name", "source": "Codex Azcatitlan"}
+{"name": "Tozpanxoch", "type": "person", "morphemes": ["tozpanxoch"], "gloss": "name", "source": "Codex Azcatitlan"}
+{"name": "Tozcuecuex", "type": "person", "morphemes": ["tozcuecuex"], "gloss": "name", "source": "Codex Vergara"}
+{"name": "Nanacacipactzin", "type": "person", "morphemes": ["nanacatl", "cipactli", "tzin"], "gloss": "mushroom + caiman + revered, little", "source": "Codex Aubin"}
+{"name": "Chālchiuhtlatōnac", "type": "person", "morphemes": ["chālchihuitl", "tōna"], "gloss": "jade + shine", "source": "Codex Vergara"}
+{"name": "Īcxicōhuātl", "type": "person", "morphemes": ["īcxitl", "cōātl"], "gloss": "foot + snake", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Quetzaltehueyac", "type": "person", "morphemes": ["quetzaltehueyac"], "gloss": "name", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Tēuctlecōzauhqui", "type": "person", "morphemes": ["tēuctli", "tletl", "cōzauhqui"], "gloss": "lord + fire + yellow", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Nēntequitl", "type": "person", "morphemes": ["nēn", "tequitl"], "gloss": "in vain + work", "source": "Matrícula de Huexotzinco"}
+{"name": "Ollin", "type": "person", "morphemes": ["ollin"], "gloss": "movement", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlālli", "type": "person", "morphemes": ["tlālli"], "gloss": "earth", "source": "Matrícula de Huexotzinco"}
+{"name": "Tōnal", "type": "person", "morphemes": ["tōnalli"], "gloss": "day sign", "source": "Matrícula de Huexotzinco"}
+{"name": "Tecpanēcatl", "type": "person", "morphemes": ["tecpan", "catl"], "gloss": "palace + dweller of", "source": "Matrícula de Huexotzinco"}
+{"name": "Cipac", "type": "person", "morphemes": ["cipactli"], "gloss": "caiman", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōchitōnal", "type": "person", "morphemes": ["xōchitl", "tōnalli"], "gloss": "flower + day sign", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōchiteōtl", "type": "person", "morphemes": ["xōchitl", "teōtl"], "gloss": "flower + god", "source": "Matrícula de Huexotzinco"}
+{"name": "Oyohual", "type": "person", "morphemes": ["oyohualli"], "gloss": "bell pendant", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlachinol", "type": "person", "morphemes": ["tlachinolli"], "gloss": "burnt field", "source": "Matrícula de Huexotzinco"}
+{"name": "Ozomah", "type": "person", "morphemes": ["ozomahtli"], "gloss": "monkey", "source": "Matrícula de Huexotzinco"}
+{"name": "Mācuīl", "type": "person", "morphemes": ["mācuīlli"], "gloss": "five", "source": "Matrícula de Huexotzinco"}
+{"name": "Chālchiuh", "type": "person", "morphemes": ["chālchihuitl"], "gloss": "jade", "source": "Matrícula de Huexotzinco"}
+{"name": "Tetzāuh", "type": "person", "morphemes": ["tetzāhuitl"], "gloss": "omen", "source": "Matrícula de Huexotzinco"}
+{"name": "Quiyauh", "type": "person", "morphemes": ["quiyahuitl"], "gloss": "rain", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlahtōl", "type": "person", "morphemes": ["tlahtōlli"], "gloss": "word", "source": "Matrícula de Huexotzinco"}
+{"name": "Oztōmēcatl", "type": "person", "morphemes": ["oztōmēcatl"], "gloss": "vanguard merchant", "source": "Matrícula de Huexotzinco"}
+{"name": "Ocēlōtl", "type": "person", "morphemes": ["ocēlōtl"], "gloss": "jaguar", "source": "Matrícula de Huexotzinco"}
+{"name": "Nezahual", "type": "person", "morphemes": ["nezahualli"], "gloss": "fast", "source": "Matrícula de Huexotzinco"}
+{"name": "Motōlīnia", "type": "person", "morphemes": ["mo", "tōlīnia"], "gloss": "himself + be poor", "source": "Matrícula de Huexotzinco"}
+{"name": "Miquiz", "type": "person", "morphemes": ["miquiztli"], "gloss": "death", "source": "Matrícula de Huexotzinco"}
+{"name": "Mācuex", "type": "person", "morphemes": ["mācuextli"], "gloss": "bracelet", "source": "Matrícula de Huexotzinco"}
+{"name": "Huēhueh", "type": "person", "morphemes": ["huēhueh"], "gloss": "old man", "source": "Matrícula de Huexotzinco"}
+{"name": "Yohual", "type": "person", "morphemes": ["yohualli"], "gloss": "night", "source": "Matrícula de Huexotzinco"}
+{"name": "Tzacualcatl", "type": "person", "morphemes": ["tzacualcatl"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlapal", "type": "person", "morphemes": ["tlapalli"], "gloss": "red", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlālollin", "type": "person", "morphemes": ["tlālli", "ollin"], "gloss": "earth + movement", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlahco", "type": "person", "morphemes": ["tlahco"], "gloss": "middle", "source": "Matrícula de Huexotzinco"}
+{"name": "Ocuil", "type": "person", "morphemes": ["ocuilin"], "gloss": "worm", "source": "Matrícula de Huexotzinco"}
+{"name": "Necuāmetl", "type": "person", "morphemes": ["necuhtli", "metl"], "gloss": "honey + maguey", "source": "Matrícula de Huexotzinco"}
+{"name": "Nāuhehēcatl", "type": "person", "morphemes": ["nāhui", "ehēcatl"], "gloss": "four + wind", "source": "Matrícula de Huexotzinco"}
+{"name": "Cuācuauh", "type": "person", "morphemes": ["cuācuahuitl"], "gloss": "horn", "source": "Matrícula de Huexotzinco"}
+{"name": "Cōzcacuāuh", "type": "person", "morphemes": ["cōzcacuāuhtli"], "gloss": "vulture", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōchipepena", "type": "person", "morphemes": ["xōchitl", "pepena"], "gloss": "flower + pick", "source": "Matrícula de Huexotzinco"}
+{"name": "Xīlōtl", "type": "person", "morphemes": ["xīlōtl"], "gloss": "tender maize ear", "source": "Matrícula de Huexotzinco"}
+{"name": "Xīcal", "type": "person", "morphemes": ["xīcalli"], "gloss": "gourd bowl", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlepāpālōtl", "type": "person", "morphemes": ["tletl", "pāpālōtl"], "gloss": "fire + butterfly", "source": "Matrícula de Huexotzinco"}
+{"name": "Ōlli", "type": "person", "morphemes": ["ōlli"], "gloss": "rubber", "source": "Matrícula de Huexotzinco"}
+{"name": "Nēncihuātl", "type": "person", "morphemes": ["nēn", "cihuātl"], "gloss": "in vain + woman", "source": "Matrícula de Huexotzinco"}
+{"name": "Īmācēhual", "type": "person", "morphemes": ["ī", "mācēhualli"], "gloss": "his/her + commoner", "source": "Matrícula de Huexotzinco"}
+{"name": "Chapōl", "type": "person", "morphemes": ["chapolin"], "gloss": "grasshopper", "source": "Matrícula de Huexotzinco"}
+{"name": "Ce Xōchitl", "type": "person", "morphemes": ["ce", "xōchitl"], "gloss": "one + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Ānāhuacatl", "type": "person", "morphemes": ["ātl", "nāhuac", "catl"], "gloss": "water + near + dweller of", "source": "Matrícula de Huexotzinco"}
+{"name": "Zōlin", "type": "person", "morphemes": ["zōlin"], "gloss": "quail", "source": "Matrícula de Huexotzinco"}
+{"name": "Yāōcihuātl", "type": "person", "morphemes": ["yāōtl", "cihuātl"], "gloss": "enemy + woman", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōchitlahtoa", "type": "person", "morphemes": ["xōchitl", "tlahtoa"], "gloss": "flower + speak", "source": "Matrícula de Huexotzinco"}
+{"name": "Tzihuacmitl", "type": "person", "morphemes": ["tzihuactli", "mitl"], "gloss": "tzihuac cactus + arrow", "source": "Matrícula de Huexotzinco"}
+{"name": "Teōxōch", "type": "person", "morphemes": ["teōtl", "xōchitl"], "gloss": "god + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Tēmōc", "type": "person", "morphemes": ["temō"], "gloss": "descend", "source": "Matrícula de Huexotzinco"}
+{"name": "Quetzalmitl", "type": "person", "morphemes": ["quetzalli", "mitl"], "gloss": "quetzal plume + arrow", "source": "Matrícula de Huexotzinco"}
+{"name": "Nāhual", "type": "person", "morphemes": ["nāhualli"], "gloss": "disguise", "source": "Matrícula de Huexotzinco"}
+{"name": "Moyōtl", "type": "person", "morphemes": ["moyōtl"], "gloss": "mosquito", "source": "Matrícula de Huexotzinco"}
+{"name": "Iztāc", "type": "person", "morphemes": ["iztāc"], "gloss": "white", "source": "Matrícula de Huexotzinco"}
+{"name": "Īxtlīl", "type": "person", "morphemes": ["īxtli", "tlīlli"], "gloss": "face + black", "source": "Matrícula de Huexotzinco"}
+{"name": "Huitzilātl", "type": "person", "morphemes": ["huitzilin", "ātl"], "gloss": "hummingbird + water", "source": "Matrícula de Huexotzinco"}
+{"name": "Cuetlach", "type": "person", "morphemes": ["cuetlachtli"], "gloss": "wolf", "source": "Matrícula de Huexotzinco"}
+{"name": "Cōātl", "type": "person", "morphemes": ["cōātl"], "gloss": "snake", "source": "Matrícula de Huexotzinco"}
+{"name": "Chachalacatl", "type": "person", "morphemes": ["chachalacatl"], "gloss": "chachalaca bird", "source": "Matrícula de Huexotzinco"}
+{"name": "Ce Cuāuh", "type": "person", "morphemes": ["ce", "cuāuhtli"], "gloss": "one + eagle", "source": "Matrícula de Huexotzinco"}
+{"name": "Āzcatl", "type": "person", "morphemes": ["āzcatl"], "gloss": "ant", "source": "Matrícula de Huexotzinco"}
+{"name": "Āmatlacuilōl", "type": "person", "morphemes": ["āmatl", "tlacuilōlli"], "gloss": "paper + painting", "source": "Matrícula de Huexotzinco"}
+{"name": "Yohualxōch", "type": "person", "morphemes": ["yohualli", "xōchitl"], "gloss": "night + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Yāōxōchitl", "type": "person", "morphemes": ["yāōtl", "xōchitl"], "gloss": "enemy + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōchmitl", "type": "person", "morphemes": ["xōchitl", "mitl"], "gloss": "flower + arrow", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlecuilhua", "type": "person", "morphemes": ["tlecuilli", "huah"], "gloss": "hearth + owner of", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlāhuizcal", "type": "person", "morphemes": ["tlāhuizcalli"], "gloss": "dawn", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlacochtemōc", "type": "person", "morphemes": ["tlacochtli", "temō"], "gloss": "dart + descend", "source": "Matrícula de Huexotzinco"}
+{"name": "Teōcal", "type": "person", "morphemes": ["teōcalli"], "gloss": "temple", "source": "Matrícula de Huexotzinco"}
+{"name": "Telpōch", "type": "person", "morphemes": ["telpōchtli"], "gloss": "youth", "source": "Matrícula de Huexotzinco"}
+{"name": "Tecolōtl", "type": "person", "morphemes": ["tecolōtl"], "gloss": "owl", "source": "Matrícula de Huexotzinco"}
+{"name": "Tēcciz", "type": "person", "morphemes": ["tēcciztli"], "gloss": "conch", "source": "Matrícula de Huexotzinco"}
+{"name": "Pāpālōtl", "type": "person", "morphemes": ["pāpālōtl"], "gloss": "butterfly", "source": "Matrícula de Huexotzinco"}
+{"name": "Ocoxōch", "type": "person", "morphemes": ["ocōtl", "xōchitl"], "gloss": "pine + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Mācuīlquiyauh", "type": "person", "morphemes": ["mācuīlli", "quiyahuitl"], "gloss": "five + rain", "source": "Matrícula de Huexotzinco"}
+{"name": "Ihhuitl Temōc", "type": "person", "morphemes": ["ihhuitl", "temō"], "gloss": "feather + descend", "source": "Matrícula de Huexotzinco"}
+{"name": "Icnocuāuh", "type": "person", "morphemes": ["icnōtl", "cuāuhtli"], "gloss": "orphan + eagle", "source": "Matrícula de Huexotzinco"}
+{"name": "Elōtl", "type": "person", "morphemes": ["elōtl"], "gloss": "green maize ear", "source": "Matrícula de Huexotzinco"}
+{"name": "Cuitlapil", "type": "person", "morphemes": ["cuitlapilli"], "gloss": "tail", "source": "Matrícula de Huexotzinco"}
+{"name": "Cuetzpal", "type": "person", "morphemes": ["cuetzpalin"], "gloss": "lizard", "source": "Matrícula de Huexotzinco"}
+{"name": "Cuāuhtliztāc", "type": "person", "morphemes": ["cuāuhtli", "iztāc"], "gloss": "eagle + white", "source": "Matrícula de Huexotzinco"}
+{"name": "Cōāxōch", "type": "person", "morphemes": ["cōātl", "xōchitl"], "gloss": "snake + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Citlāl", "type": "person", "morphemes": ["citlālin"], "gloss": "star", "source": "Matrícula de Huexotzinco"}
+{"name": "Cihuāteōtl", "type": "person", "morphemes": ["cihuātl", "teōtl"], "gloss": "woman + god", "source": "Matrícula de Huexotzinco"}
+{"name": "Chicōmācatl", "type": "person", "morphemes": ["chicōme", "ācatl"], "gloss": "seven + reed", "source": "Matrícula de Huexotzinco"}
+{"name": "Ce Ehēcatl", "type": "person", "morphemes": ["ce", "ehēcatl"], "gloss": "one + wind", "source": "Matrícula de Huexotzinco"}
+{"name": "Ce Cōātl", "type": "person", "morphemes": ["ce", "cōātl"], "gloss": "one + snake", "source": "Matrícula de Huexotzinco"}
+{"name": "Cacalōtl", "type": "person", "morphemes": ["cacalōtl"], "gloss": "crow", "source": "Matrícula de Huexotzinco"}
+{"name": "Cacahuaxōchitl", "type": "person", "morphemes": ["cacahuatl", "xōchitl"], "gloss": "cacao + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Ātlpopōca", "type": "person", "morphemes": ["ātl", "popōca"], "gloss": "water + smoke", "source": "Matrícula de Huexotzinco"}
+{"name": "Ācamitl", "type": "person", "morphemes": ["ācatl", "mitl"], "gloss": "reed + arrow", "source": "Matrícula de Huexotzinco"}
+{"name": "Ācatōtōtl", "type": "person", "morphemes": ["ācatl", "tōtōtl"], "gloss": "reed + bird", "source": "Matrícula de Huexotzinco"}
+{"name": "Āzcaxōchitl", "type": "person", "morphemes": ["āzcatl", "xōchitl"], "gloss": "ant + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Āztatl", "type": "person", "morphemes": ["āztatl"], "gloss": "heron", "source": "Matrícula de Huexotzinco"}
+{"name": "Āztacōātl", "type": "person", "morphemes": ["āztatl", "cōātl"], "gloss": "heron + snake", "source": "Matrícula de Huexotzinco"}
+{"name": "Chālchiuhtōtōtl", "type": "person", "morphemes": ["chālchihuitl", "tōtōtl"], "gloss": "jade + bird", "source": "Matrícula de Huexotzinco"}
+{"name": "Cihuāxōchitl", "type": "person", "morphemes": ["cihuātl", "xōchitl"], "gloss": "woman + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Citlālcōātl", "type": "person", "morphemes": ["citlālin", "cōātl"], "gloss": "star + snake", "source": "Matrícula de Huexotzinco"}
+{"name": "Cuāuhcoyōtl", "type": "person", "morphemes": ["cuāuhtli", "coyōtl"], "gloss": "eagle + coyote", "source": "Matrícula de Huexotzinco"}
+{"name": "Cuāuhtecolōtl", "type": "person", "morphemes": ["cuāuhtli", "tecolōtl"], "gloss": "eagle + owl", "source": "Matrícula de Huexotzinco"}
+{"name": "Cuāuhitzcuin", "type": "person", "morphemes": ["cuāuhtli", "itzcuintli"], "gloss": "eagle + dog", "source": "Matrícula de Huexotzinco"}
+{"name": "Ehēcatecolōtl", "type": "person", "morphemes": ["ehēcatl", "tecolōtl"], "gloss": "wind + owl", "source": "Matrícula de Huexotzinco"}
+{"name": "Ehēcapāpālōtl", "type": "person", "morphemes": ["ehēcatl", "pāpālōtl"], "gloss": "wind + butterfly", "source": "Matrícula de Huexotzinco"}
+{"name": "Huitzilcuāuh", "type": "person", "morphemes": ["huitzilin", "cuāuhtli"], "gloss": "hummingbird + eagle", "source": "Matrícula de Huexotzinco"}
+{"name": "Huitzilpopōca", "type": "person", "morphemes": ["huitzilin", "popōca"], "gloss": "hummingbird + smoke", "source": "Matrícula de Huexotzinco"}
+{"name": "Huitziltemōc", "type": "person", "morphemes": ["huitzilin", "temō"], "gloss": "hummingbird + descend", "source": "Matrícula de Huexotzinco"}
+{"name": "Itzcuin", "type": "person", "morphemes": ["itzcuintli"], "gloss": "dog", "source": "Matrícula de Huexotzinco"}
+{"name": "Ītzmitl", "type": "person", "morphemes": ["ītztli", "mitl"], "gloss": "obsidian + arrow", "source": "Matrícula de Huexotzinco"}
+{"name": "Iztāccoyōtl", "type": "person", "morphemes": ["iztāc", "coyōtl"], "gloss": "white + coyote", "source": "Matrícula de Huexotzinco"}
+{"name": "Iztācxōchitl", "type": "person", "morphemes": ["iztāc", "xōchitl"], "gloss": "white + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Mācuīlcōātl", "type": "person", "morphemes": ["mācuīlli", "cōātl"], "gloss": "five + snake", "source": "Matrícula de Huexotzinco"}
+{"name": "Mācuīlmazātl", "type": "person", "morphemes": ["mācuīlli", "mazātl"], "gloss": "five + deer", "source": "Matrícula de Huexotzinco"}
+{"name": "Mācuīltōch", "type": "person", "morphemes": ["mācuīlli", "tōchtli"], "gloss": "five + rabbit", "source": "Matrícula de Huexotzinco"}
+{"name": "Mātlalcōātl", "type": "person", "morphemes": ["mātlalli", "cōātl"], "gloss": "blue-green + snake", "source": "Matrícula de Huexotzinco"}
+{"name": "Mātlalihhuitl", "type": "person", "morphemes": ["mātlalli", "ihhuitl"], "gloss": "blue-green + feather", "source": "Matrícula de Huexotzinco"}
+{"name": "Nezahualxōchitl", "type": "person", "morphemes": ["nezahualli", "xōchitl"], "gloss": "fast + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Nezahualtecolōtl", "type": "person", "morphemes": ["nezahualli", "tecolōtl"], "gloss": "fast + owl", "source": "Matrícula de Huexotzinco"}
+{"name": "Quetzalcuāuh", "type": "person", "morphemes": ["quetzalli", "cuāuhtli"], "gloss": "quetzal plume + eagle", "source": "Matrícula de Huexotzinco"}
+{"name": "Quetzalehēcatl", "type": "person", "morphemes": ["quetzalli", "ehēcatl"], "gloss": "quetzal plume + wind", "source": "Matrícula de Huexotzinco"}
+{"name": "Quetzalpopōca", "type": "person", "morphemes": ["quetzalli", "popōca"], "gloss": "quetzal plume + smoke", "source": "Matrícula de Huexotzinco"}
+{"name": "Quetzaltecolōtl", "type": "person", "morphemes": ["quetzalli", "tecolōtl"], "gloss": "quetzal plume + owl", "source": "Matrícula de Huexotzinco"}
+{"name": "Tēcuāni", "type": "person", "morphemes": ["tēcuāni"], "gloss": "wild beast", "source": "Matrícula de Huexotzinco"}
+{"name": "Tepozmitl", "type": "person", "morphemes": ["tepoztli", "mitl"], "gloss": "copper + arrow", "source": "Matrícula de Huexotzinco"}
+{"name": "Tezcamitl", "type": "person", "morphemes": ["tezcatl", "mitl"], "gloss": "mirror + arrow", "source": "Matrícula de Huexotzinco"}
+{"name": "Tezcatōnatiuh", "type": "person", "morphemes": ["tezcatl", "tōnatiuh"], "gloss": "mirror + sun", "source": "Matrícula de Huexotzinco"}
+{"name": "Tīzapāpālōtl", "type": "person", "morphemes": ["tīzatl", "pāpālōtl"], "gloss": "chalk + butterfly", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlācatecolōtl", "type": "person", "morphemes": ["tlācatl", "tecolōtl"], "gloss": "person + owl", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlapaltōtōtl", "type": "person", "morphemes": ["tlapalli", "tōtōtl"], "gloss": "red + bird", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlīlpāpālōtl", "type": "person", "morphemes": ["tlīlli", "pāpālōtl"], "gloss": "black + butterfly", "source": "Matrícula de Huexotzinco"}
+{"name": "Tōchtli", "type": "person", "morphemes": ["tōchtli"], "gloss": "rabbit", "source": "Matrícula de Huexotzinco"}
+{"name": "Tōtōtl", "type": "person", "morphemes": ["tōtōtl"], "gloss": "bird", "source": "Matrícula de Huexotzinco"}
+{"name": "Tōzcōātl", "type": "person", "morphemes": ["tōztli", "cōātl"], "gloss": "yellow parrot + snake", "source": "Matrícula de Huexotzinco"}
+{"name": "Xiuhcōzcatl", "type": "person", "morphemes": ["xihuitl", "cōzcatl"], "gloss": "turquoise + necklace", "source": "Matrícula de Huexotzinco"}
+{"name": "Xiuhtōtōtl", "type": "person", "morphemes": ["xihuitl", "tōtōtl"], "gloss": "turquoise + bird", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōchicōzcatl", "type": "person", "morphemes": ["xōchitl", "cōzcatl"], "gloss": "flower + necklace", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōchitōtōtl", "type": "person", "morphemes": ["xōchitl", "tōtōtl"], "gloss": "flower + bird", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōchicōātl", "type": "person", "morphemes": ["xōchitl", "cōātl"], "gloss": "flower + snake", "source": "Matrícula de Huexotzinco"}
+{"name": "Yāōmitl", "type": "person", "morphemes": ["yāōtl", "mitl"], "gloss": "enemy + arrow", "source": "Matrícula de Huexotzinco"}
+{"name": "Yāōitzcuin", "type": "person", "morphemes": ["yāōtl", "itzcuintli"], "gloss": "enemy + dog", "source": "Matrícula de Huexotzinco"}
+{"name": "Yohualpāpālōtl", "type": "person", "morphemes": ["yohualli", "pāpālōtl"], "gloss": "night + butterfly", "source": "Matrícula de Huexotzinco"}
+{"name": "Zacatōtōtl", "type": "person", "morphemes": ["zacatl", "tōtōtl"], "gloss": "grass + bird", "source": "Matrícula de Huexotzinco"}
+{"name": "Tiyacapan", "type": "person", "morphemes": ["tiyacapan"], "gloss": "firstborn", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōco", "type": "person", "morphemes": ["xōcoyōtl"], "gloss": "youngest child", "source": "Matrícula de Huexotzinco"}
+{"name": "Mācēhual", "type": "person", "morphemes": ["mācēhualli"], "gloss": "commoner", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlahcuilo", "type": "person", "morphemes": ["tlahcuilo"], "gloss": "painter", "source": "Matrícula de Huexotzinco"}
+{"name": "Xōchitl", "type": "person", "morphemes": ["xōchitl"], "gloss": "flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Huēhuehcoyōtl", "type": "person", "morphemes": ["huēhueh", "coyōtl"], "gloss": "old man + coyote", "source": "Matrícula de Huexotzinco"}
+{"name": "Tōzquechol", "type": "person", "morphemes": ["tōztli", "quecholli"], "gloss": "yellow parrot + spoonbill", "source": "Matrícula de Huexotzinco"}
+{"name": "Ītzehēcatl", "type": "person", "morphemes": ["ītztli", "ehēcatl"], "gloss": "obsidian + wind", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlequiyauh", "type": "person", "morphemes": ["tletl", "quiyahuitl"], "gloss": "fire + rain", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlexōchitl", "type": "person", "morphemes": ["tletl", "xōchitl"], "gloss": "fire + flower", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlecuāuh", "type": "person", "morphemes": ["tletl", "cuāuhtli"], "gloss": "fire + eagle", "source": "Matrícula de Huexotzinco"}
+{"name": "Coyōtl", "type": "person", "morphemes": ["coyōtl"], "gloss": "coyote", "source": "Matrícula de Huexotzinco"}
+{"name": "Cuāuhtli", "type": "person", "morphemes": ["cuāuhtli"], "gloss": "eagle", "source": "Matrícula de Huexotzinco"}
+{"name": "Huitzilōpōchtli", "type": "deity", "morphemes": ["huitzilin", "ōpōchtli"], "gloss": "hummingbird + left hand", "source": "Florentine Codex"}
+{"name": "Tezcatlipoca", "type": "deity", "morphemes": ["tezcatl", "popōca"], "gloss": "mirror + smoke", "source": "Florentine Codex"}
+{"name": "Quetzalcōātl", "type": "deity", "morphemes": ["quetzalli", "cōātl"], "gloss": "quetzal plume + snake", "source": "Florentine Codex"}
+{"name": "Tlāloc", "type": "deity", "morphemes": ["tlāloc"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Chālchiuhtlīcuē", "type": "deity", "morphemes": ["chālchihuitl", "ī", "cuēitl"], "gloss": "jade + his/her + skirt", "source": "Florentine Codex"}
+{"name": "Xiuhtēuctli", "type": "deity", "morphemes": ["xihuitl", "tēuctli"], "gloss": "turquoise + lord", "source": "Florentine Codex"}
+{"name": "Huēhuehteōtl", "type": "deity", "morphemes": ["huēhueh", "teōtl"], "gloss": "old man + god", "source": "Florentine Codex"}
+{"name": "Xīpe Totēc", "type": "deity", "morphemes": ["xīpēhua", "tō", "tēuctli"], "gloss": "flay + our + lord", "source": "Florentine Codex"}
+{"name": "Mictlantēuctli", "type": "deity", "morphemes": ["miqui", "tlan", "tēuctli"], "gloss": "die + place of + lord", "source": "Florentine Codex"}
+{"name": "Mictēcacihuātl", "type": "deity", "morphemes": ["miqui", "tēcatl", "cihuātl"], "gloss": "die + dweller of + woman", "source": "Florentine Codex"}
+{"name": "Cōātlīcuē", "type": "deity", "morphemes": ["cōātl", "ī", "cuēitl"], "gloss": "snake + his/her + skirt", "source": "Florentine Codex"}
+{"name": "Coyōlxāuhqui", "type": "deity", "morphemes": ["coyōlli", "xāhua"], "gloss": "bell + paint the face", "source": "Florentine Codex"}
+{"name": "Cihuācōātl", "type": "deity", "morphemes": ["cihuātl", "cōātl"], "gloss": "woman + snake", "source": "Florentine Codex"}
+{"name": "Tocih", "type": "deity", "morphemes": ["tō", "cihtli"], "gloss": "our + grandmother", "source": "Florentine Codex"}
+{"name": "Teteoh Īnnān", "type": "deity", "morphemes": ["teōtl", "īn", "nāntli"], "gloss": "god + their + mother", "source": "Florentine Codex"}
+{"name": "Tlazōlteōtl", "type": "deity", "morphemes": ["tlazōlli", "teōtl"], "gloss": "filth + god", "source": "Florentine Codex"}
+{"name": "Ixcuina", "type": "deity", "morphemes": ["ixcuina"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Xōchiquetzal", "type": "deity", "morphemes": ["xōchitl", "quetzalli"], "gloss": "flower + quetzal plume", "source": "Codex Telleriano-Remensis"}
+{"name": "Xōchipilli", "type": "deity", "morphemes": ["xōchitl", "pilli"], "gloss": "flower + prince", "source": "Florentine Codex"}
+{"name": "Mācuīlxōchitl", "type": "deity", "morphemes": ["mācuīlli", "xōchitl"], "gloss": "five + flower", "source": "Florentine Codex"}
+{"name": "Cinteōtl", "type": "deity", "morphemes": ["cintli", "teōtl"], "gloss": "dried maize ear + god", "source": "Florentine Codex"}
+{"name": "Chicōmecōātl", "type": "deity", "morphemes": ["chicōme", "cōātl"], "gloss": "seven + snake", "source": "Florentine Codex"}
+{"name": "Xilonen", "type": "deity", "morphemes": ["xilonen"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Ilamatēuctli", "type": "deity", "morphemes": ["ilamah", "tēuctli"], "gloss": "old woman + lord", "source": "Florentine Codex"}
+{"name": "Mixcōātl", "type": "deity", "morphemes": ["mixtli", "cōātl"], "gloss": "cloud + snake", "source": "Florentine Codex"}
+{"name": "Camaxtli", "type": "deity", "morphemes": ["camaxtli"], "gloss": "name", "source": "Historia de los mexicanos por sus pinturas"}
+{"name": "Ītzpāpālōtl", "type": "deity", "morphemes": ["ītztli", "pāpālōtl"], "gloss": "obsidian + butterfly", "source": "Codex Telleriano-Remensis"}
+{"name": "Ōpōchtli", "type": "deity", "morphemes": ["ōpōchtli"], "gloss": "left hand", "source": "Florentine Codex"}
+{"name": "Yacatēuctli", "type": "deity", "morphemes": ["yacatl", "tēuctli"], "gloss": "nose + lord", "source": "Florentine Codex"}
+{"name": "Painal", "type": "deity", "morphemes": ["painal"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Chantico", "type": "deity", "morphemes": ["chantico"], "gloss": "name", "source": "Codex Telleriano-Remensis"}
+{"name": "Huixtocihuatl", "type": "deity", "morphemes": ["huixtocihuatl"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Ōmācatl", "type": "deity", "morphemes": ["ōme", "ācatl"], "gloss": "two + reed", "source": "Florentine Codex"}
+{"name": "Īxtlīltōn", "type": "deity", "morphemes": ["īxtli", "tlīlli", "tōn"], "gloss": "face + black + little", "source": "Florentine Codex"}
+{"name": "Nāppatēuctli", "type": "deity", "morphemes": ["nāppa", "tēuctli"], "gloss": "four times + lord", "source": "Florentine Codex"}
+{"name": "Tepēyōllohtli", "type": "deity", "morphemes": ["tepētl", "yōllohtli"], "gloss": "mountain + heart", "source": "Codex Telleriano-Remensis"}
+{"name": "Ōmetōchtli", "type": "deity", "morphemes": ["ōme", "tōchtli"], "gloss": "two + rabbit", "source": "Florentine Codex"}
+{"name": "Tepoztēcatl", "type": "deity", "morphemes": ["tepoztli", "tēcatl"], "gloss": "copper + dweller of", "source": "Florentine Codex"}
+{"name": "Pahtēcatl", "type": "deity", "morphemes": ["pahtli", "tēcatl"], "gloss": "medicine + dweller of", "source": "Codex Telleriano-Remensis"}
+{"name": "Mayahuel", "type": "deity", "morphemes": ["mayahuel"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tezcatzoncatl", "type": "deity", "morphemes": ["tezcatzoncatl"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Toltēcatl", "type": "deity", "morphemes": ["tōllin", "tēcatl"], "gloss": "rush + dweller of", "source": "Florentine Codex"}
+{"name": "Izquitēcatl", "type": "deity", "morphemes": ["izquitl", "tēcatl"], "gloss": "toasted maize + dweller of", "source": "Florentine Codex"}
+{"name": "Tlāltēuctli", "type": "deity", "morphemes": ["tlālli", "tēuctli"], "gloss": "earth + lord", "source": "Florentine Codex"}
+{"name": "Tonacateuctli", "type": "deity", "morphemes": ["tonacateuctli"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Ōmetēuctli", "type": "deity", "morphemes": ["ōme", "tēuctli"], "gloss": "two + lord", "source": "Florentine Codex"}
+{"name": "Ōmecihuātl", "type": "deity", "morphemes": ["ōme", "cihuātl"], "gloss": "two + woman", "source": "Florentine Codex"}
+{"name": "Xōlōtl", "type": "deity", "morphemes": ["xōlōtl"], "gloss": "page", "source": "Leyenda de los Soles"}
+{"name": "Nanāhuatzin", "type": "deity", "morphemes": ["nanāhuatl", "tzin"], "gloss": "pustule + revered, little", "source": "Florentine Codex"}
+{"name": "Tēcciztēcatl", "type": "deity", "morphemes": ["tēcciztli", "tēcatl"], "gloss": "conch + dweller of", "source": "Florentine Codex"}
+{"name": "Ehēcatl", "type": "deity", "morphemes": ["ehēcatl"], "gloss": "wind", "source": "Codex Telleriano-Remensis"}
+{"name": "Tzitzimimeh", "type": "deity", "morphemes": ["tzitzimimeh"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Centzon Tōtōchtin", "type": "deity", "morphemes": ["centzontli", "tōchtli"], "gloss": "four hundred + rabbit", "source": "Florentine Codex"}
+{"name": "Centzon Huitznāhuah", "type": "deity", "morphemes": ["centzontli", "huitztli", "nāhuac"], "gloss": "four hundred + thorn + near", "source": "Florentine Codex"}
+{"name": "Mimixcōah", "type": "deity", "morphemes": ["mixtli", "cōātl"], "gloss": "cloud + snake", "source": "Leyenda de los Soles"}
+{"name": "Tlāloqueh", "type": "deity", "morphemes": ["tlāloqueh"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Cihuāpīpiltin", "type": "deity", "morphemes": ["cihuātl", "pilli"], "gloss": "woman + prince", "source": "Florentine Codex"}
+{"name": "Ītztlacoliuhqui", "type": "deity", "morphemes": ["ītztli", "colihui"], "gloss": "obsidian + be bent", "source": "Codex Telleriano-Remensis"}
+{"name": "Chālchiuhtōtolin", "type": "deity", "morphemes": ["chālchihuitl", "tōtolin"], "gloss": "jade + turkey", "source": "Codex Telleriano-Remensis"}
+{"name": "Piltzintēuctli", "type": "deity", "morphemes": ["pilli", "tzin", "tēuctli"], "gloss": "prince + revered, little + lord", "source": "Codex Telleriano-Remensis"}
+{"name": "Tzapotlatēnān", "type": "deity", "morphemes": ["tzapotl", "tlah", "tē", "nāntli"], "gloss": "sapote + abundance of + someone's + mother", "source": "Florentine Codex"}
+{"name": "Titlacahuan", "type": "deity", "morphemes": ["titlacahuan"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tōnantzin", "type": "deity", "morphemes": ["tō", "nāntli", "tzin"], "gloss": "our + mother + revered, little", "source": "Florentine Codex"}
+{"name": "Coyōtl Īnāhual", "type": "deity", "morphemes": ["coyōtl", "ī", "nāhualli"], "gloss": "coyote + his/her + disguise", "source": "Florentine Codex"}
+{"name": "Citlālīcuē", "type": "deity", "morphemes": ["citlālin", "ī", "cuēitl"], "gloss": "star + his/her + skirt", "source": "Leyenda de los Soles"}
+{"name": "Tōnatiuh", "type": "celestial", "morphemes": ["tōnatiuh"], "gloss": "sun", "source": "Florentine Codex"}
+{"name": "Mētztli", "type": "celestial", "morphemes": ["mētztli"], "gloss": "moon", "source": "Florentine Codex"}
+{"name": "Citlālpōl", "type": "celestial", "morphemes": ["citlālin", "pōl"], "gloss": "star + great", "source": "Florentine Codex"}
+{"name": "Huēyi Citlālin", "type": "celestial", "morphemes": ["huēyi", "citlālin"], "gloss": "great + star", "source": "Florentine Codex"}
+{"name": "Tiānquiztli", "type": "celestial", "morphemes": ["tiānquiztli"], "gloss": "market", "source": "Florentine Codex"}
+{"name": "Mamalhuāztli", "type": "celestial", "morphemes": ["mamalhuāztli"], "gloss": "fire drill", "source": "Florentine Codex"}
+{"name": "Citlālcolōtl", "type": "celestial", "morphemes": ["citlālin", "colōtl"], "gloss": "star + scorpion", "source": "Florentine Codex"}
+{"name": "Citlālxōnecuilli", "type": "celestial", "morphemes": ["citlālin", "xōnecuilli"], "gloss": "star + S-shaped staff", "source": "Florentine Codex"}
+{"name": "Citlālin Popōca", "type": "celestial", "morphemes": ["citlālin", "popōca"], "gloss": "star + smoke", "source": "Florentine Codex"}
+{"name": "Citlālin Tlamīna", "type": "celestial", "morphemes": ["citlālin", "mīna"], "gloss": "star + shoot arrows", "source": "Florentine Codex"}
+{"name": "Tlāhuizcalpantēuctli", "type": "celestial", "morphemes": ["tlāhuizcalli", "pan", "tēuctli"], "gloss": "dawn + on + lord", "source": "Codex Telleriano-Remensis"}
+{"name": "Citlāltlachtli", "type": "celestial", "morphemes": ["citlālin", "tlachtli"], "gloss": "star + ballcourt", "source": "Sahagún, Primeros Memoriales"}
+{"name": "Nāhui Ollin", "type": "celestial", "morphemes": ["nāhui", "ollin"], "gloss": "four + movement", "source": "Leyenda de los Soles"}
+{"name": "Nāhui Ocēlōtl", "type": "celestial", "morphemes": ["nāhui", "ocēlōtl"], "gloss": "four + jaguar", "source": "Leyenda de los Soles"}
+{"name": "Nāhui Ehēcatl", "type": "celestial", "morphemes": ["nāhui", "ehēcatl"], "gloss": "four + wind", "source": "Leyenda de los Soles"}
+{"name": "Nāhui Quiyahuitl", "type": "celestial", "morphemes": ["nāhui", "quiyahuitl"], "gloss": "four + rain", "source": "Leyenda de los Soles"}
+{"name": "Nāhui Ātl", "type": "celestial", "morphemes": ["nāhui", "ātl"], "gloss": "four + water", "source": "Leyenda de los Soles"}
+{"name": "Popōcatepētl", "type": "hill", "morphemes": ["popōca", "tepētl"], "gloss": "smoke + mountain", "source": "Florentine Codex"}
+{"name": "Iztāccihuātl", "type": "hill", "morphemes": ["iztāc", "cihuātl"], "gloss": "white + woman", "source": "Durán, Historia de las Indias"}
+{"name": "Iztāctepētl", "type": "hill", "morphemes": ["iztāc", "tepētl"], "gloss": "white + mountain", "source": "Florentine Codex"}
+{"name": "Mātlalcuēyeh", "type": "hill", "morphemes": ["mātlalli", "cuēitl", "eh"], "gloss": "blue-green + skirt + possessor of", "source": "Florentine Codex"}
+{"name": "Citlāltepētl", "type": "hill", "morphemes": ["citlālin", "tepētl"], "gloss": "star + mountain", "source": "Florentine Codex"}
+{"name": "Chapoltepēc", "type": "hill", "morphemes": ["chapolin", "tepētl", "co"], "gloss": "grasshopper + mountain + in", "source": "Codex Azcatitlan"}
+{"name": "Cōātepēc", "type": "hill", "morphemes": ["cōātl", "tepētl", "co"], "gloss": "snake + mountain + in", "source": "Florentine Codex"}
+{"name": "Tepētzinco", "type": "hill", "morphemes": ["tepētl", "tzin", "co"], "gloss": "mountain + revered, little + in", "source": "Codex Azcatitlan"}
+{"name": "Tepēpōlco", "type": "hill", "morphemes": ["tepētl", "pōl", "co"], "gloss": "mountain + great + in", "source": "Florentine Codex"}
+{"name": "Cuauhtepētl", "type": "hill", "morphemes": ["cuahuitl", "tepētl"], "gloss": "tree + mountain", "source": "Florentine Codex"}
+{"name": "Yohualtēcatl", "type": "hill", "morphemes": ["yohualli", "tēcatl"], "gloss": "night + dweller of", "source": "Codex Azcatitlan"}
+{"name": "Poyauhtecatl", "type": "hill", "morphemes": ["poyauhtecatl"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Huīxachtlan", "type": "hill", "morphemes": ["huīxachin", "tlan"], "gloss": "acacia + place of", "source": "Florentine Codex"}
+{"name": "Yauhquēmeh", "type": "hill", "morphemes": ["yauhtli", "quēmitl", "eh"], "gloss": "marigold + garment + possessor of", "source": "Florentine Codex"}
+{"name": "Tetzcotzinco", "type": "hill", "morphemes": ["tetzcotzinco"], "gloss": "name", "source": "Pomar, Relación de Tetzcoco"}
+{"name": "Chiucnāhuāpan", "type": "river", "morphemes": ["chiucnāhui", "ātl", "pan"], "gloss": "nine + water + on", "source": "Florentine Codex"}
+{"name": "Atoyac", "type": "river", "morphemes": ["atoyac"], "gloss": "name", "source": "Relaciones geográficas"}
+{"name": "Papāloāpan", "type": "river", "morphemes": ["pāpālōtl", "ātl", "pan"], "gloss": "butterfly + water + on", "source": "Relaciones geográficas"}
+{"name": "Coatzacualco", "type": "river", "morphemes": ["coatzacualco"], "gloss": "name", "source": "Cortés, Cartas de relación"}
+{"name": "Mēxihco", "type": "place", "morphemes": ["mēxihco"], "gloss": "name", "source": "Codex Osuna"}
+{"name": "Tenōchtitlan", "type": "place", "morphemes": ["tetl", "nōchtli", "tlan"], "gloss": "stone + prickly pear fruit + place of", "source": "Codex Mendoza"}
+{"name": "Tlatelolco", "type": "place", "morphemes": ["tlatelolco"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Tetzcoco", "type": "place", "morphemes": ["tetzcoco"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Tlacopan", "type": "place", "morphemes": ["tlacotl", "pan"], "gloss": "rod + on", "source": "Codex Mendoza"}
+{"name": "Āzcapōtzalco", "type": "place", "morphemes": ["āzcatl", "pōtzalli", "co"], "gloss": "ant + mound + in", "source": "Codex Mendoza"}
+{"name": "Coyōhuahcān", "type": "place", "morphemes": ["coyōtl", "huah", "cān"], "gloss": "coyote + owner of + place of", "source": "Codex Mendoza"}
+{"name": "Colhuacan", "type": "place", "morphemes": ["colhuacan"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Xōchimīlco", "type": "place", "morphemes": ["xōchitl", "mīlli", "co"], "gloss": "flower + field + in", "source": "Codex Mendoza"}
+{"name": "Chālco", "type": "place", "morphemes": ["chālco"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Mizquic", "type": "place", "morphemes": ["mizquitl", "co"], "gloss": "mesquite + in", "source": "Codex Mendoza"}
+{"name": "Huitzilōpōchco", "type": "place", "morphemes": ["huitzilin", "ōpōchtli", "co"], "gloss": "hummingbird + left hand + in", "source": "Codex Mendoza"}
+{"name": "Xāltocān", "type": "place", "morphemes": ["xālli", "tōcatl", "cān"], "gloss": "sand + spider + place of", "source": "Codex Mendoza"}
+{"name": "Tzompanco", "type": "place", "morphemes": ["tzompantli", "co"], "gloss": "skull rack + in", "source": "Codex Mendoza"}
+{"name": "Cuauhtitlan", "type": "place", "morphemes": ["cuahuitl", "tlan"], "gloss": "tree + place of", "source": "Codex Mendoza"}
+{"name": "Tōltitlan", "type": "place", "morphemes": ["tōllin", "tlan"], "gloss": "rush + place of", "source": "Codex Mendoza"}
+{"name": "Tenānyohcān", "type": "place", "morphemes": ["tenāmitl", "yoh", "cān"], "gloss": "wall + full of + place of", "source": "Codex Mendoza"}
+{"name": "Ehēcatepēc", "type": "place", "morphemes": ["ehēcatl", "tepētl", "co"], "gloss": "wind + mountain + in", "source": "Codex Mendoza"}
+{"name": "Acolman", "type": "place", "morphemes": ["acolman"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Tepetlaōztōc", "type": "place", "morphemes": ["tepetlatl", "ōztōtl", "co"], "gloss": "tepetate stone + cave + in", "source": "Codex Mendoza"}
+{"name": "Teōtihuahcān", "type": "place", "morphemes": ["teōtihuahcān"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Atlacuihuayān", "type": "place", "morphemes": ["ātl", "cui", "yān"], "gloss": "water + take + place where", "source": "Codex Mendoza"}
+{"name": "Mixcōāc", "type": "place", "morphemes": ["mixtli", "cōātl", "co"], "gloss": "cloud + snake + in", "source": "Codex Mendoza"}
+{"name": "Iztacalco", "type": "place", "morphemes": ["iztatl", "calli", "co"], "gloss": "salt + house + in", "source": "Codex Mendoza"}
+{"name": "Huitznāhuac", "type": "place", "morphemes": ["huitztli", "nāhuac"], "gloss": "thorn + near", "source": "Codex Mendoza"}
+{"name": "Tepēyacac", "type": "place", "morphemes": ["tepētl", "yacatl", "co"], "gloss": "mountain + nose + in", "source": "Codex Mendoza"}
+{"name": "Ācalhuahcān", "type": "place", "morphemes": ["ācalli", "huah", "cān"], "gloss": "boat + owner of + place of", "source": "Codex Mendoza"}
+{"name": "Coācalco", "type": "place", "morphemes": ["cōātl", "calli", "co"], "gloss": "snake + house + in", "source": "Codex Mendoza"}
+{"name": "Cuauhxīmalpan", "type": "place", "morphemes": ["cuahuitl", "xīma", "pan"], "gloss": "tree + shave + on", "source": "Codex Mendoza"}
+{"name": "Cuauhnāhuac", "type": "place", "morphemes": ["cuahuitl", "nāhuac"], "gloss": "tree + near", "source": "Codex Mendoza"}
+{"name": "Huāxtepēc", "type": "place", "morphemes": ["huāxin", "tepētl", "co"], "gloss": "guaje tree + mountain + in", "source": "Codex Mendoza"}
+{"name": "Yauhtepēc", "type": "place", "morphemes": ["yauhtli", "tepētl", "co"], "gloss": "marigold + mountain + in", "source": "Codex Mendoza"}
+{"name": "Yacapichtlan", "type": "place", "morphemes": ["yacapichtlan"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Tepoztlan", "type": "place", "morphemes": ["tepoztli", "tlan"], "gloss": "copper + place of", "source": "Codex Mendoza"}
+{"name": "Tōtolāpan", "type": "place", "morphemes": ["tōtolin", "ātl", "pan"], "gloss": "turkey + water + on", "source": "Codex Mendoza"}
+{"name": "Ocuillan", "type": "place", "morphemes": ["ocuilin", "tlan"], "gloss": "worm + place of", "source": "Codex Mendoza"}
+{"name": "Mālīnalco", "type": "place", "morphemes": ["mālīnalli", "co"], "gloss": "twisted grass + in", "source": "Codex Mendoza"}
+{"name": "Tolocan", "type": "place", "morphemes": ["tolocan"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Xiquipilco", "type": "place", "morphemes": ["xiquipilli", "co"], "gloss": "bag + in", "source": "Codex Mendoza"}
+{"name": "Xīlōtepēc", "type": "place", "morphemes": ["xīlōtl", "tepētl", "co"], "gloss": "tender maize ear + mountain + in", "source": "Codex Mendoza"}
+{"name": "Tlachco", "type": "place", "morphemes": ["tlachtli", "co"], "gloss": "ballcourt + in", "source": "Codex Mendoza"}
+{"name": "Tepecuacuilco", "type": "place", "morphemes": ["tepecuacuilco"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Yohuallan", "type": "place", "morphemes": ["yohualli", "tlan"], "gloss": "night + place of", "source": "Codex Mendoza"}
+{"name": "Teloloapan", "type": "place", "morphemes": ["teloloapan"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Oztoman", "type": "place", "morphemes": ["oztoman"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Tlālcōzauhtitlan", "type": "place", "morphemes": ["tlālli", "cōzauhqui", "tlan"], "gloss": "earth + yellow + place of", "source": "Codex Mendoza"}
+{"name": "Cihuātlan", "type": "place", "morphemes": ["cihuātl", "tlan"], "gloss": "woman + place of", "source": "Codex Mendoza"}
+{"name": "Zacatollan", "type": "place", "morphemes": ["zacatl", "tōllin", "tlan"], "gloss": "grass + rush + place of", "source": "Codex Mendoza"}
+{"name": "Tōchtepēc", "type": "place", "morphemes": ["tōchtli", "tepētl", "co"], "gloss": "rabbit + mountain + in", "source": "Codex Mendoza"}
+{"name": "Xoconōchco", "type": "place", "morphemes": ["xocotl", "nōchtli", "co"], "gloss": "fruit + prickly pear fruit + in", "source": "Codex Mendoza"}
+{"name": "Coyōlāpan", "type": "place", "morphemes": ["coyōlli", "ātl", "pan"], "gloss": "bell + water + on", "source": "Codex Mendoza"}
+{"name": "Huāxyacac", "type": "place", "morphemes": ["huāxin", "yacatl", "co"], "gloss": "guaje tree + nose + in", "source": "Codex Mendoza"}
+{"name": "Cōāīxtlāhuacān", "type": "place", "morphemes": ["cōātl", "īxtlāhuatl", "cān"], "gloss": "snake + plain + place of", "source": "Codex Mendoza"}
+{"name": "Tlachquiyauhco", "type": "place", "morphemes": ["tlachtli", "quiyahuitl", "co"], "gloss": "ballcourt + rain + in", "source": "Codex Mendoza"}
+{"name": "Cuetlaxtlan", "type": "place", "morphemes": ["cuetlaxtli", "tlan"], "gloss": "tanned hide + place of", "source": "Codex Mendoza"}
+{"name": "Cuauhtōchco", "type": "place", "morphemes": ["cuahuitl", "tōchtli", "co"], "gloss": "tree + rabbit + in", "source": "Codex Mendoza"}
+{"name": "Tōchpan", "type": "place", "morphemes": ["tōchtli", "pan"], "gloss": "rabbit + on", "source": "Codex Mendoza"}
+{"name": "Tziccoac", "type": "place", "morphemes": ["tziccoac"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Oxitipan", "type": "place", "morphemes": ["oxitipan"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Ātlan", "type": "place", "morphemes": ["ātl", "tlan"], "gloss": "water + place of", "source": "Codex Mendoza"}
+{"name": "Tlatlāuhquitepēc", "type": "place", "morphemes": ["tlatlāuhqui", "tepētl", "co"], "gloss": "red + mountain + in", "source": "Codex Mendoza"}
+{"name": "Tlapacoyān", "type": "place", "morphemes": ["pāca", "yān"], "gloss": "wash + place where", "source": "Codex Mendoza"}
+{"name": "Tecamachalco", "type": "place", "morphemes": ["tetl", "camachalli", "co"], "gloss": "stone + jaw + in", "source": "Codex Mendoza"}
+{"name": "Quecholāc", "type": "place", "morphemes": ["quecholli", "ātl", "co"], "gloss": "spoonbill + water + in", "source": "Codex Mendoza"}
+{"name": "Ācatzinco", "type": "place", "morphemes": ["ācatl", "tzin", "co"], "gloss": "reed + revered, little + in", "source": "Codex Mendoza"}
+{"name": "Huēxōtzinco", "type": "place", "morphemes": ["huēxōtl", "tzin", "co"], "gloss": "willow + revered, little + in", "source": "Codex Mendoza"}
+{"name": "Tlaxcallan", "type": "place", "morphemes": ["tlaxcalli", "tlan"], "gloss": "tortilla + place of", "source": "Codex Mendoza"}
+{"name": "Cholollan", "type": "place", "morphemes": ["cholollan"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Cuāuhquechollan", "type": "place", "morphemes": ["cuāuhtli", "quecholli", "tlan"], "gloss": "eagle + spoonbill + place of", "source": "Matrícula de Huexotzinco"}
+{"name": "Ahuilizapan", "type": "place", "morphemes": ["ahuilizapan"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Teōtlālpan", "type": "place", "morphemes": ["teōtl", "tlālli", "pan"], "gloss": "god + earth + on", "source": "Codex Mendoza"}
+{"name": "Āxocopan", "type": "place", "morphemes": ["ātl", "xocotl", "pan"], "gloss": "water + fruit + on", "source": "Codex Mendoza"}
+{"name": "Ātotōnilco", "type": "place", "morphemes": ["ātl", "totōnqui", "co"], "gloss": "water + hot + in", "source": "Codex Mendoza"}
+{"name": "Tōllantzinco", "type": "place", "morphemes": ["tōllin", "tlan", "tzin", "co"], "gloss": "rush + place of + revered, little + in", "source": "Codex Mendoza"}
+{"name": "Tōllan", "type": "place", "morphemes": ["tōllin", "tlan"], "gloss": "rush + place of", "source": "Codex Mendoza"}
+{"name": "Xōchitepēc", "type": "place", "morphemes": ["xōchitl", "tepētl", "co"], "gloss": "flower + mountain + in", "source": "Codex Mendoza"}
+{"name": "Quiyauhteōpan", "type": "place", "morphemes": ["quiyahuitl", "teōtl", "pan"], "gloss": "rain + god + on", "source": "Codex Mendoza"}
+{"name": "Yohualtepēc", "type": "place", "morphemes": ["yohualli", "tepētl", "co"], "gloss": "night + mountain + in", "source": "Codex Mendoza"}
+{"name": "Chiyāpan", "type": "place", "morphemes": ["chiyān", "ātl", "pan"], "gloss": "chia + water + on", "source": "Codex Mendoza"}
+{"name": "Tzinācantlan", "type": "place", "morphemes": ["tzinācan", "tlan"], "gloss": "bat + place of", "source": "Codex Mendoza"}
+{"name": "Mazātlan", "type": "place", "morphemes": ["mazātl", "tlan"], "gloss": "deer + place of", "source": "Codex Mendoza"}
+{"name": "Cōātlan", "type": "place", "morphemes": ["cōātl", "tlan"], "gloss": "snake + place of", "source": "Codex Mendoza"}
+{"name": "Tēcuāntepēc", "type": "place", "morphemes": ["tēcuāni", "tepētl", "co"], "gloss": "wild beast + mountain + in", "source": "Codex Mendoza"}
+{"name": "Tōtōtepēc", "type": "place", "morphemes": ["tōtōtl", "tepētl", "co"], "gloss": "bird + mountain + in", "source": "Codex Mendoza"}
+{"name": "Cuezcomatitlan", "type": "place", "morphemes": ["cuezcomatl", "tlan"], "gloss": "granary + place of", "source": "Codex Mendoza"}
+{"name": "Ocōtepēc", "type": "place", "morphemes": ["ocōtl", "tepētl", "co"], "gloss": "pine + mountain + in", "source": "Codex Mendoza"}
+{"name": "Ocēlōtepēc", "type": "place", "morphemes": ["ocēlōtl", "tepētl", "co"], "gloss": "jaguar + mountain + in", "source": "Codex Mendoza"}
+{"name": "Mizquitlan", "type": "place", "morphemes": ["mizquitl", "tlan"], "gloss": "mesquite + place of", "source": "Codex Mendoza"}
+{"name": "Āhuacatlan", "type": "place", "morphemes": ["āhuacatl", "tlan"], "gloss": "avocado + place of", "source": "Codex Mendoza"}
+{"name": "Āmatlan", "type": "place", "morphemes": ["āmatl", "tlan"], "gloss": "paper + place of", "source": "Codex Mendoza"}
+{"name": "Āmeyalco", "type": "place", "morphemes": ["āmeyalli", "co"], "gloss": "spring + in", "source": "Codex Mendoza"}
+{"name": "Ātenco", "type": "place", "morphemes": ["ātl", "tēntli", "co"], "gloss": "water + edge + in", "source": "Codex Mendoza"}
+{"name": "Āyōtōchco", "type": "place", "morphemes": ["āyōtl", "tōchtli", "co"], "gloss": "turtle + rabbit + in", "source": "Codex Mendoza"}
+{"name": "Āyōtlan", "type": "place", "morphemes": ["āyōtl", "tlan"], "gloss": "turtle + place of", "source": "Codex Mendoza"}
+{"name": "Cempōhuallan", "type": "place", "morphemes": ["cempōhualli", "tlan"], "gloss": "twenty + place of", "source": "Codex Mendoza"}
+{"name": "Cōātzinco", "type": "place", "morphemes": ["cōātl", "tzin", "co"], "gloss": "snake + revered, little + in", "source": "Codex Mendoza"}
+{"name": "Coliman", "type": "place", "morphemes": ["coliman"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Cōzcacuāuhtenanco", "type": "place", "morphemes": ["cōzcacuāuhtli", "tenāmitl", "co"], "gloss": "vulture + wall + in", "source": "Codex Mendoza"}
+{"name": "Cuāuhtinchān", "type": "place", "morphemes": ["cuāuhtli", "chāntli"], "gloss": "eagle + home", "source": "Codex Mendoza"}
+{"name": "Cuīcatlan", "type": "place", "morphemes": ["cuīcatl", "tlan"], "gloss": "song + place of", "source": "Codex Mendoza"}
+{"name": "Huitzilāpan", "type": "place", "morphemes": ["huitzilin", "ātl", "pan"], "gloss": "hummingbird + water + on", "source": "Codex Mendoza"}
+{"name": "Huitztlan", "type": "place", "morphemes": ["huitztli", "tlan"], "gloss": "thorn + place of", "source": "Codex Mendoza"}
+{"name": "Ichcatlan", "type": "place", "morphemes": ["ichcatl", "tlan"], "gloss": "cotton + place of", "source": "Codex Mendoza"}
+{"name": "Ītztepēc", "type": "place", "morphemes": ["ītztli", "tepētl", "co"], "gloss": "obsidian + mountain + in", "source": "Codex Mendoza"}
+{"name": "Iztapan", "type": "place", "morphemes": ["iztatl", "pan"], "gloss": "salt + on", "source": "Codex Mendoza"}
+{"name": "Metepēc", "type": "place", "morphemes": ["metl", "tepētl", "co"], "gloss": "maguey + mountain + in", "source": "Codex Mendoza"}
+{"name": "Michtlan", "type": "place", "morphemes": ["michin", "tlan"], "gloss": "fish + place of", "source": "Codex Mendoza"}
+{"name": "Ōztōticpac", "type": "place", "morphemes": ["ōztōtl", "īcpac"], "gloss": "cave + on top of", "source": "Codex Mendoza"}
+{"name": "Petlatlan", "type": "place", "morphemes": ["petlatl", "tlan"], "gloss": "mat + place of", "source": "Codex Mendoza"}
+{"name": "Quetzaltepēc", "type": "place", "morphemes": ["quetzalli", "tepētl", "co"], "gloss": "quetzal plume + mountain + in", "source": "Codex Mendoza"}
+{"name": "Teōcuitlatlan", "type": "place", "morphemes": ["teōcuitlatl", "tlan"], "gloss": "gold + place of", "source": "Codex Mendoza"}
+{"name": "Temazcalāpan", "type": "place", "morphemes": ["temazcalli", "ātl", "pan"], "gloss": "sweat bath + water + on", "source": "Codex Mendoza"}
+{"name": "Tenanco", "type": "place", "morphemes": ["tenāmitl", "co"], "gloss": "wall + in", "source": "Codex Mendoza"}
+{"name": "Teōtenanco", "type": "place", "morphemes": ["teōtl", "tenāmitl", "co"], "gloss": "god + wall + in", "source": "Codex Mendoza"}
+{"name": "Tetzapotitlan", "type": "place", "morphemes": ["tetl", "tzapotl", "tlan"], "gloss": "stone + sapote + place of", "source": "Codex Mendoza"}
+{"name": "Tlachinolticpac", "type": "place", "morphemes": ["tlachinolli", "īcpac"], "gloss": "burnt field + on top of", "source": "Codex Mendoza"}
+{"name": "Tlīltepēc", "type": "place", "morphemes": ["tlīlli", "tepētl", "co"], "gloss": "black + mountain + in", "source": "Codex Mendoza"}
+{"name": "Tōtōtlan", "type": "place", "morphemes": ["tōtōtl", "tlan"], "gloss": "bird + place of", "source": "Codex Mendoza"}
+{"name": "Tzapotlan", "type": "place", "morphemes": ["tzapotl", "tlan"], "gloss": "sapote + place of", "source": "Codex Mendoza"}
+{"name": "Xālāpan", "type": "place", "morphemes": ["xālli", "ātl", "pan"], "gloss": "sand + water + on", "source": "Codex Mendoza"}
+{"name": "Xīcochīmalco", "type": "place", "morphemes": ["xīcohtli", "chīmalli", "co"], "gloss": "bumblebee + shield + in", "source": "Codex Mendoza"}
+{"name": "Yāōnāhuac", "type": "place", "morphemes": ["yāōtl", "nāhuac"], "gloss": "enemy + near", "source": "Codex Mendoza"}
+{"name": "Zacatlah", "type": "place", "morphemes": ["zacatl", "tlah"], "gloss": "grass + abundance of", "source": "Codex Mendoza"}
+{"name": "Tamazōlāpan", "type": "place", "morphemes": ["tamazōlin", "ātl", "pan"], "gloss": "toad + water + on", "source": "Codex Mendoza"}
+{"name": "Chīmalco", "type": "place", "morphemes": ["chīmalli", "co"], "gloss": "shield + in", "source": "Codex Mendoza"}
+{"name": "Chīlāpan", "type": "place", "morphemes": ["chīlli", "ātl", "pan"], "gloss": "chili + water + on", "source": "Codex Mendoza"}
+{"name": "Chinantlan", "type": "place", "morphemes": ["chināmitl", "tlan"], "gloss": "enclosure + place of", "source": "Codex Mendoza"}
+{"name": "Citlāltepēc", "type": "place", "morphemes": ["citlālin", "tepētl", "co"], "gloss": "star + mountain + in", "source": "Codex Mendoza"}
+{"name": "Ocōyacac", "type": "place", "morphemes": ["ocōtl", "yacatl", "co"], "gloss": "pine + nose + in", "source": "Codex Mendoza"}
+{"name": "Tequixquiāc", "type": "place", "morphemes": ["tequixquitl", "ātl", "co"], "gloss": "saltpetre + water + in", "source": "Codex Mendoza"}
+{"name": "Tezcacōāc", "type": "place", "morphemes": ["tezcatl", "cōātl", "co"], "gloss": "mirror + snake + in", "source": "Codex Mendoza"}
+{"name": "Teōtlīllan", "type": "place", "morphemes": ["teōtl", "tlīlli", "tlan"], "gloss": "god + black + place of", "source": "Codex Mendoza"}
+{"name": "Michhuahcān", "type": "place", "morphemes": ["michin", "huah", "cān"], "gloss": "fish + owner of + place of", "source": "Codex Telleriano-Remensis"}
+{"name": "Chiconquiyauhco", "type": "place", "morphemes": ["chicōme", "quiyahuitl", "co"], "gloss": "seven + rain + in", "source": "Codex Mendoza"}
+{"name": "Tōnatiuhco", "type": "place", "morphemes": ["tōnatiuh", "co"], "gloss": "sun + in", "source": "Codex Mendoza"}
+{"name": "Mixīuhcān", "type": "place", "morphemes": ["mixīhui", "cān"], "gloss": "give birth + place of", "source": "Codex Azcatitlan"}
+{"name": "Temazcaltitlan", "type": "place", "morphemes": ["temazcalli", "tlan"], "gloss": "sweat bath + place of", "source": "Codex Azcatitlan"}
+{"name": "Tōlpetlac", "type": "place", "morphemes": ["tōllin", "petlatl", "co"], "gloss": "rush + mat + in", "source": "Codex Azcatitlan"}
+{"name": "Tecpayohcān", "type": "place", "morphemes": ["tecpatl", "yoh", "cān"], "gloss": "flint + full of + place of", "source": "Codex Azcatitlan"}
+{"name": "Teōtzapotlan", "type": "place", "morphemes": ["teōtl", "tzapotl", "tlan"], "gloss": "god + sapote + place of", "source": "Codex Telleriano-Remensis"}
+{"name": "Xiuhcōāc", "type": "place", "morphemes": ["xihuitl", "cōātl", "co"], "gloss": "turquoise + snake + in", "source": "Codex Telleriano-Remensis"}
+{"name": "Zōltepēc", "type": "place", "morphemes": ["zōlin", "tepētl", "co"], "gloss": "quail + mountain + in", "source": "Codex Telleriano-Remensis"}
+{"name": "Aztlan", "type": "place", "morphemes": ["aztlan"], "gloss": "name", "source": "Codex Aubin"}
+{"name": "Chicōmōztōc", "type": "place", "morphemes": ["chicōme", "ōztōtl", "co"], "gloss": "seven + cave + in", "source": "Codex Azcatitlan"}
+{"name": "Amaquemecan", "type": "place", "morphemes": ["amaquemecan"], "gloss": "name", "source": "Chimalpahin, Relaciones"}
+{"name": "Mēxihcah", "type": "group", "morphemes": ["mēxihcah"], "gloss": "name", "source": "Codex Azcatitlan"}
+{"name": "Tenōchcah", "type": "group", "morphemes": ["tetl", "nōchtli", "catl"], "gloss": "stone + prickly pear fruit + dweller of", "source": "Codex Osuna"}
+{"name": "Tlatelolcah", "type": "group", "morphemes": ["tlatelolcah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Ācolhuahqueh", "type": "group", "morphemes": ["ācolhuahqueh"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tepanēcah", "type": "group", "morphemes": ["tepanēcah"], "gloss": "name", "source": "Codex Azcatitlan"}
+{"name": "Chālcah", "type": "group", "morphemes": ["chālcah"], "gloss": "name", "source": "Codex Azcatitlan"}
+{"name": "Xōchimīlcah", "type": "group", "morphemes": ["xōchitl", "mīlli", "catl"], "gloss": "flower + field + dweller of", "source": "Codex Azcatitlan"}
+{"name": "Cuitlāhuacah", "type": "group", "morphemes": ["cuitlāhuacah"], "gloss": "name", "source": "Codex Azcatitlan"}
+{"name": "Mizquicah", "type": "group", "morphemes": ["mizquitl", "catl"], "gloss": "mesquite + dweller of", "source": "Durán, Historia de las Indias"}
+{"name": "Chināmpanēcah", "type": "group", "morphemes": ["chināmitl", "pan", "catl"], "gloss": "enclosure + on + dweller of", "source": "Durán, Historia de las Indias"}
+{"name": "Colhuahqueh", "type": "group", "morphemes": ["colhuahqueh"], "gloss": "name", "source": "Codex Aubin"}
+{"name": "Tlālhuicah", "type": "group", "morphemes": ["tlālhuicah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tlaxcaltēcah", "type": "group", "morphemes": ["tlaxcalli", "tēcatl"], "gloss": "tortilla + dweller of", "source": "Florentine Codex"}
+{"name": "Huēxōtzincah", "type": "group", "morphemes": ["huēxōtl", "tzin", "catl"], "gloss": "willow + revered, little + dweller of", "source": "Codex Azcatitlan"}
+{"name": "Chololtecah", "type": "group", "morphemes": ["chololtecah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Matlatzincah", "type": "group", "morphemes": ["mātlatl", "tzin", "catl"], "gloss": "net + revered, little + dweller of", "source": "Codex Azcatitlan"}
+{"name": "Mazāhuahqueh", "type": "group", "morphemes": ["mazātl", "huah"], "gloss": "deer + owner of", "source": "Florentine Codex"}
+{"name": "Otomih", "type": "group", "morphemes": ["otomih"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Totonacah", "type": "group", "morphemes": ["totonacah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Cuextecah", "type": "group", "morphemes": ["cuextecah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Mixtēcah", "type": "group", "morphemes": ["mixtli", "tēcatl"], "gloss": "cloud + dweller of", "source": "Florentine Codex"}
+{"name": "Tzapotēcah", "type": "group", "morphemes": ["tzapotl", "tēcatl"], "gloss": "sapote + dweller of", "source": "Durán, Historia de las Indias"}
+{"name": "Ōlmēcah", "type": "group", "morphemes": ["ōlli", "catl"], "gloss": "rubber + dweller of", "source": "Florentine Codex"}
+{"name": "Toltēcah", "type": "group", "morphemes": ["tōllin", "tēcatl"], "gloss": "rush + dweller of", "source": "Florentine Codex"}
+{"name": "Chīchīmēcah", "type": "group", "morphemes": ["chīchīmēcah"], "gloss": "name", "source": "Codex Azcatitlan"}
+{"name": "Teōchīchīmēcah", "type": "group", "morphemes": ["teōtl", "chīchīmēcatl"], "gloss": "god + Chichimec", "source": "Florentine Codex"}
+{"name": "Tamimeh", "type": "group", "morphemes": ["tamimeh"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Nāhuatlācah", "type": "group", "morphemes": ["nāhuatl", "tlācatl"], "gloss": "clear-sounding + person", "source": "Florentine Codex"}
+{"name": "Michhuahqueh", "type": "group", "morphemes": ["michin", "huah"], "gloss": "fish + owner of", "source": "Florentine Codex"}
+{"name": "Ocuiltēcah", "type": "group", "morphemes": ["ocuilin", "tēcatl"], "gloss": "worm + dweller of", "source": "Florentine Codex"}
+{"name": "Tohueyomeh", "type": "group", "morphemes": ["tohueyomeh"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Couixcah", "type": "group", "morphemes": ["couixcah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Yopimeh", "type": "group", "morphemes": ["yopimeh"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Tlappanecah", "type": "group", "morphemes": ["tlappanecah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Huixtotin", "type": "group", "morphemes": ["huixtotin"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Nonohualcah", "type": "group", "morphemes": ["nonohualcah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Ānāhuacah", "type": "group", "morphemes": ["ātl", "nāhuac", "catl"], "gloss": "water + near + dweller of", "source": "Florentine Codex"}
+{"name": "Pinomeh", "type": "group", "morphemes": ["pinomeh"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Popolocah", "type": "group", "morphemes": ["popolocah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Cuacuatah", "type": "group", "morphemes": ["cuacuatah"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Cuāuhtinchāntlācah", "type": "group", "morphemes": ["cuāuhtli", "chāntli", "tlācatl"], "gloss": "eagle + home + person", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Moquihuixcah", "type": "group", "morphemes": ["moquihuixcah"], "gloss": "name", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Totomihuahqueh", "type": "group", "morphemes": ["totomihuahqueh"], "gloss": "name", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Ācolchīchīmēcah", "type": "group", "morphemes": ["ācolchīchīmēcah"], "gloss": "name", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Tzauhctecah", "type": "group", "morphemes": ["tzauhctecah"], "gloss": "name", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Zacatēcah", "type": "group", "morphemes": ["zacatl", "tēcatl"], "gloss": "grass + dweller of", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Malpantlacah", "type": "group", "morphemes": ["malpantlacah"], "gloss": "name", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Xāltocāmēcah", "type": "group", "morphemes": ["xālli", "tōcatl", "catl"], "gloss": "sand + spider + dweller of", "source": "Codex Azcatitlan"}
+{"name": "Āzcapōtzalcah", "type": "group", "morphemes": ["āzcatl", "pōtzalli", "catl"], "gloss": "ant + mound + dweller of", "source": "Codex Azcatitlan"}
+{"name": "Mālīnalcah", "type": "group", "morphemes": ["mālīnalli", "catl"], "gloss": "twisted grass + dweller of", "source": "Codex Azcatitlan"}
+{"name": "Tenancah", "type": "group", "morphemes": ["tenāmitl", "catl"], "gloss": "wall + dweller of", "source": "Chimalpahin, Relaciones"}
+{"name": "Acxotecah", "type": "group", "morphemes": ["acxotecah"], "gloss": "name", "source": "Chimalpahin, Relaciones"}
+{"name": "Teotlixcah", "type": "group", "morphemes": ["teotlixcah"], "gloss": "name", "source": "Chimalpahin, Relaciones"}
+{"name": "Yopicah", "type": "lineage", "morphemes": ["yopicah"], "gloss": "name", "source": "Durán, Historia de las Indias"}
+{"name": "Tlacochcalcah", "type": "lineage", "morphemes": ["tlacochtli", "calli", "catl"], "gloss": "dart + house + dweller of", "source": "Durán, Historia de las Indias"}
+{"name": "Huitznāhuah", "type": "lineage", "morphemes": ["huitztli", "nāhuac"], "gloss": "thorn + near", "source": "Durán, Historia de las Indias"}
+{"name": "Cihuātecpanēcah", "type": "lineage", "morphemes": ["cihuātl", "tecpan", "catl"], "gloss": "woman + palace + dweller of", "source": "Durán, Historia de las Indias"}
+{"name": "Chalmecah", "type": "lineage", "morphemes": ["chalmecah"], "gloss": "name", "source": "Durán, Historia de las Indias"}
+{"name": "Tlācatecpanēcah", "type": "lineage", "morphemes": ["tlācatl", "tecpan", "catl"], "gloss": "person + palace + dweller of", "source": "Durán, Historia de las Indias"}
+{"name": "Izquitēcah", "type": "lineage", "morphemes": ["izquitl", "tēcatl"], "gloss": "toasted maize + dweller of", "source": "Durán, Historia de las Indias"}
+{"name": "Tlailotlacah", "type": "lineage", "morphemes": ["tlailotlacah"], "gloss": "name", "source": "Chimalpahin, Relaciones"}
+{"name": "Totolimpanecah", "type": "lineage", "morphemes": ["totolimpanecah"], "gloss": "name", "source": "Chimalpahin, Relaciones"}
+{"name": "Mēxihtin", "type": "lineage", "morphemes": ["mēxihtin"], "gloss": "name", "source": "Crónica Mexicayotl"}
+{"name": "Tēcuānipantlācah", "type": "lineage", "morphemes": ["tēcuāni", "pan", "tlācatl"], "gloss": "wild beast + on + person", "source": "Chimalpahin, Relaciones"}
+{"name": "Tlacateccatl", "type": "title", "morphemes": ["tlacateccatl"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Tlacochcalcatl", "type": "title", "morphemes": ["tlacochtli", "calli", "catl"], "gloss": "dart + house + dweller of", "source": "Codex Mendoza"}
+{"name": "Huitznāhuatl", "type": "title", "morphemes": ["huitztli", "nāhuac"], "gloss": "thorn + near", "source": "Codex Mendoza"}
+{"name": "Tizociahuacatl", "type": "title", "morphemes": ["tizociahuacatl"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Tezcacōācatl", "type": "title", "morphemes": ["tezcatl", "cōātl", "catl"], "gloss": "mirror + snake + dweller of", "source": "Codex Mendoza"}
+{"name": "Tlīllancalqui", "type": "title", "morphemes": ["tlīlli", "tlan", "calqui"], "gloss": "black + place of + dweller", "source": "Codex Mendoza"}
+{"name": "Tocuiltecatl", "type": "title", "morphemes": ["tocuiltecatl"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Petlacalcatl", "type": "title", "morphemes": ["petlatl", "calli", "catl"], "gloss": "mat + house + dweller of", "source": "Codex Mendoza"}
+{"name": "Mixcoatlailotlac", "type": "title", "morphemes": ["mixcoatlailotlac"], "gloss": "name", "source": "Codex Mendoza"}
+{"name": "Tequixquināhuacatl", "type": "title", "morphemes": ["tequixquitl", "nāhuac", "catl"], "gloss": "saltpetre + near + dweller of", "source": "Codex Mendoza"}
+{"name": "Huēxōtzincatl", "type": "title", "morphemes": ["huēxōtl", "tzin", "catl"], "gloss": "willow + revered, little + dweller of", "source": "Codex Mendoza"}
+{"name": "Tlācatēuctli", "type": "title", "morphemes": ["tlācatl", "tēuctli"], "gloss": "person + lord", "source": "Codex Mendoza"}
+{"name": "Tlacochtēuctli", "type": "title", "morphemes": ["tlacochtli", "tēuctli"], "gloss": "dart + lord", "source": "Codex Mendoza"}
+{"name": "Ezhuahuacatl", "type": "title", "morphemes": ["ezhuahuacatl"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Ātempanēcatl", "type": "title", "morphemes": ["ātl", "tēntli", "pan", "catl"], "gloss": "water + edge + on + dweller of", "source": "Florentine Codex"}
+{"name": "Chīchīmēcatēuctli", "type": "title", "morphemes": ["chīchīmēcatl", "tēuctli"], "gloss": "Chichimec + lord", "source": "Matrícula de Huexotzinco"}
+{"name": "Tlailotlac", "type": "title", "morphemes": ["tlailotlac"], "gloss": "name", "source": "Matrícula de Huexotzinco"}
+{"name": "Aquiach", "type": "title", "morphemes": ["aquiach"], "gloss": "name", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Tlalchiach", "type": "title", "morphemes": ["tlalchiach"], "gloss": "name", "source": "Historia Tolteca-Chichimeca"}
+{"name": "Ātlcāhualo", "type": "other", "morphemes": ["ātl", "cāhua"], "gloss": "water + leave", "source": "Florentine Codex"}
+{"name": "Tlācaxīpēhualiztli", "type": "other", "morphemes": ["tlācatl", "xīpēhua"], "gloss": "person + flay", "source": "Codex Mendoza"}
+{"name": "Tōzōztōntli", "type": "other", "morphemes": ["tōzōztli", "tōn"], "gloss": "vigil + little", "source": "Florentine Codex"}
+{"name": "Huēyi Tōzōztli", "type": "other", "morphemes": ["huēyi", "tōzōztli"], "gloss": "great + vigil", "source": "Florentine Codex"}
+{"name": "Toxcatl", "type": "other", "morphemes": ["toxcatl"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Etzalcualiztli", "type": "other", "morphemes": ["etzalli", "cua"], "gloss": "maize-and-bean dish + eat", "source": "Florentine Codex"}
+{"name": "Tēcuilhuitōntli", "type": "other", "morphemes": ["tēuctli", "ilhuitl", "tōn"], "gloss": "lord + feast day + little", "source": "Codex Telleriano-Remensis"}
+{"name": "Huēyi Tēcuilhuitl", "type": "other", "morphemes": ["huēyi", "tēuctli", "ilhuitl"], "gloss": "great + lord + feast day", "source": "Codex Telleriano-Remensis"}
+{"name": "Tlaxōchimaco", "type": "other", "morphemes": ["xōchitl", "maca"], "gloss": "flower + give", "source": "Florentine Codex"}
+{"name": "Xocotl Huetzi", "type": "other", "morphemes": ["xocotl", "huetzi"], "gloss": "fruit + fall", "source": "Florentine Codex"}
+{"name": "Ochpāniztli", "type": "other", "morphemes": ["ochpāna"], "gloss": "sweep", "source": "Codex Mendoza"}
+{"name": "Teōtl Ehco", "type": "other", "morphemes": ["teōtl", "ehco"], "gloss": "god + arrive", "source": "Florentine Codex"}
+{"name": "Tepēilhuitl", "type": "other", "morphemes": ["tepētl", "ilhuitl"], "gloss": "mountain + feast day", "source": "Florentine Codex"}
+{"name": "Quecholli", "type": "other", "morphemes": ["quecholli"], "gloss": "spoonbill", "source": "Florentine Codex"}
+{"name": "Panquetzaliztli", "type": "other", "morphemes": ["pantli", "quetza"], "gloss": "banner + raise", "source": "Florentine Codex"}
+{"name": "Ātemoztli", "type": "other", "morphemes": ["ātl", "temō"], "gloss": "water + descend", "source": "Codex Telleriano-Remensis"}
+{"name": "Tititl", "type": "other", "morphemes": ["tititl"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Izcalli", "type": "other", "morphemes": ["izcalia"], "gloss": "revive", "source": "Florentine Codex"}
+{"name": "Nemontemi", "type": "other", "morphemes": ["nemontemi"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Mictlan", "type": "other", "morphemes": ["miqui", "tlan"], "gloss": "die + place of", "source": "Florentine Codex"}
+{"name": "Tlālōcān", "type": "other", "morphemes": ["tlāloc", "cān"], "gloss": "name + place of", "source": "Florentine Codex"}
+{"name": "Tamoanchan", "type": "other", "morphemes": ["tamoanchan"], "gloss": "name", "source": "Codex Telleriano-Remensis"}
+{"name": "Ōmeyōcān", "type": "other", "morphemes": ["ōme", "yōtl", "cān"], "gloss": "two + -ness + place of", "source": "Florentine Codex"}
+{"name": "Tlīllan Tlapallan", "type": "other", "morphemes": ["tlīlli", "tlan", "tlapalli", "tlan"], "gloss": "black + place of + red + place of", "source": "Florentine Codex"}
+{"name": "Ītzehecāyān", "type": "other", "morphemes": ["ītztli", "ehēcatl", "yān"], "gloss": "obsidian + wind + place where", "source": "Florentine Codex"}
+{"name": "Yopico", "type": "other", "morphemes": ["yopico"], "gloss": "name", "source": "Florentine Codex"}
+{"name": "Teōtlachco", "type": "other", "morphemes": ["teōtl", "tlachtli", "co"], "gloss": "god + ballcourt + in", "source": "Florentine Codex"}
+{"name": "Tlīllan", "type": "other", "morphemes": ["tlīlli", "tlan"], "gloss": "black + place of", "source": "Florentine Codex"}
+{"name": "Xiuhcōātl", "type": "other", "morphemes": ["xihuitl", "cōātl"], "gloss": "turquoise + snake", "source": "Florentine Codex"}
+{"name": "Pantitlan", "type": "other", "morphemes": ["pantitlan"], "gloss": "name", "source": "Codex Azcatitlan"}
+{"name": "Acuecuexatl", "type": "other", "morphemes": ["acuecuexatl"], "gloss": "name", "source": "Durán, Historia de las Indias"}

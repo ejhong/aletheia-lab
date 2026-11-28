@@ -1,0 +1,531 @@
+{"m": "accutaṉ", "category": "deity", "stability": 1, "gloss": "Acyuta", "in_names": 1}
+{"m": "ai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "aivar", "category": "number", "stability": 3, "gloss": "the five", "in_names": 1}
+{"m": "akam", "category": "direction", "stability": 3, "gloss": "inside", "in_names": 1}
+{"m": "akutai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "alai", "category": "landscape", "stability": 3, "gloss": "wave", "in_names": 1}
+{"m": "am", "category": "quality_size", "stability": 2, "gloss": "beautiful", "in_names": 2}
+{"m": "amar", "category": "verb_deed", "stability": 2, "gloss": "dwell", "in_names": 1}
+{"m": "amarar", "category": "deity", "stability": 1, "gloss": "immortals", "in_names": 1}
+{"m": "ampalam", "category": "place_word", "stability": 3, "gloss": "hall", "in_names": 1}
+{"m": "antaṇar", "category": "occupation_group", "stability": 2, "gloss": "Brahmins", "in_names": 1}
+{"m": "antuvaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "aricil", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "aritaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "aruvāḷar", "category": "dynasty_clan", "stability": 2, "gloss": "people of Aruva land", "in_names": 1}
+{"m": "atiyaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Atiyan", "in_names": 2}
+{"m": "atiṉaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "auvai", "category": "kinship", "stability": 3, "gloss": "mother", "in_names": 1}
+{"m": "ayirai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "añci", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "añcil", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "aḷ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "aḻal", "category": "landscape", "stability": 3, "gloss": "fire", "in_names": 1}
+{"m": "aḻici", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 4}
+{"m": "aṇaṅku", "category": "other", "stability": 1, "gloss": "affliction", "in_names": 1}
+{"m": "aṇil", "category": "animal", "stability": 2, "gloss": "squirrel", "in_names": 1}
+{"m": "aṇṭar", "category": "occupation_group", "stability": 2, "gloss": "herdsmen", "in_names": 1}
+{"m": "aṇṭiraṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "aṉṉi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "aṟivu", "category": "quality_size", "stability": 2, "gloss": "wisdom", "in_names": 1}
+{"m": "aṟu", "category": "number", "stability": 3, "gloss": "six", "in_names": 1}
+{"m": "cakaṭam", "category": "artefact", "stability": 2, "gloss": "cart", "in_names": 1}
+{"m": "cel", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 3}
+{"m": "celvam", "category": "quality_size", "stability": 2, "gloss": "wealth", "in_names": 1}
+{"m": "celvaṉ", "category": "title_rank", "stability": 3, "gloss": "lord", "in_names": 2}
+{"m": "cem", "category": "colour", "stability": 2, "gloss": "red", "in_names": 5}
+{"m": "cempiyaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Chola king (Sibi line)", "in_names": 1}
+{"m": "ceyal", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ceḻiyaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Pandya king", "in_names": 3}
+{"m": "ceṉṉi", "category": "dynasty_clan", "stability": 2, "gloss": "Chola king", "in_names": 1}
+{"m": "ciri", "category": "honorific", "stability": 3, "gloss": "Sri", "in_names": 1}
+{"m": "cittiram", "category": "artefact", "stability": 2, "gloss": "picture", "in_names": 1}
+{"m": "ciṟai", "category": "body_part", "stability": 2, "gloss": "wing", "in_names": 2}
+{"m": "ciṟu", "category": "quality_size", "stability": 2, "gloss": "small", "in_names": 6}
+{"m": "cuḷḷi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "cālai", "category": "place_word", "stability": 3, "gloss": "hall", "in_names": 1}
+{"m": "cāttaṉ", "category": "deity", "stability": 1, "gloss": "Sasta", "in_names": 14}
+{"m": "cātti", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "cāṇṭiliyaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Sandilya", "in_names": 1}
+{"m": "cēntaṉ", "category": "deity", "stability": 1, "gloss": "Murukan", "in_names": 6}
+{"m": "cēr", "category": "verb_deed", "stability": 2, "gloss": "join", "in_names": 2}
+{"m": "cēral", "category": "dynasty_clan", "stability": 2, "gloss": "Chera", "in_names": 10}
+{"m": "cēri", "category": "place_word", "stability": 3, "gloss": "quarter", "in_names": 1}
+{"m": "cēṭceṉṉi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "cītai", "category": "deity", "stability": 1, "gloss": "Sita", "in_names": 1}
+{"m": "cīttalai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "cōlai", "category": "landscape", "stability": 3, "gloss": "grove", "in_names": 1}
+{"m": "cōḻaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Chola", "in_names": 3}
+{"m": "cōṇai", "category": "place_name", "stability": 2, "gloss": "Son river", "in_names": 1}
+{"m": "cūr", "category": "other", "stability": 1, "gloss": "terror", "in_names": 1}
+{"m": "erukku", "category": "plant", "stability": 2, "gloss": "calotropis", "in_names": 1}
+{"m": "erumai", "category": "animal", "stability": 2, "gloss": "buffalo", "in_names": 2}
+{"m": "evvi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "eyil", "category": "place_word", "stability": 3, "gloss": "fortress", "in_names": 3}
+{"m": "eyiṉar", "category": "occupation_group", "stability": 2, "gloss": "hunters of the arid tract", "in_names": 1}
+{"m": "eyiṉaṉ", "category": "occupation_group", "stability": 2, "gloss": "Eyinar man", "in_names": 5}
+{"m": "eyiṉi", "category": "occupation_group", "stability": 2, "gloss": "Eyinar woman", "in_names": 3}
+{"m": "eyiṟṟi", "category": "occupation_group", "stability": 2, "gloss": "Eyinar woman", "in_names": 1}
+{"m": "eḻiṉi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "eḻuttāḷaṉ", "category": "occupation_group", "stability": 2, "gloss": "scribe", "in_names": 1}
+{"m": "eṟi", "category": "verb_deed", "stability": 2, "gloss": "cast", "in_names": 1}
+{"m": "il", "category": "place_word", "stability": 3, "gloss": "house", "in_names": 1}
+{"m": "ilai", "category": "plant", "stability": 2, "gloss": "leaf", "in_names": 1}
+{"m": "ilavantikai", "category": "place_word", "stability": 3, "gloss": "fountain garden", "in_names": 1}
+{"m": "ilaṅkai", "category": "place_name", "stability": 2, "gloss": "Lanka", "in_names": 2}
+{"m": "imai", "category": "body_part", "stability": 2, "gloss": "eyelid", "in_names": 1}
+{"m": "imayam", "category": "place_name", "stability": 2, "gloss": "Himalaya", "in_names": 2}
+{"m": "intiraṉ", "category": "deity", "stability": 1, "gloss": "Indra", "in_names": 2}
+{"m": "iraṇiyamuṭṭam", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "iru", "category": "quality_size", "stability": 2, "gloss": "great", "in_names": 10}
+{"m": "iruntai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "irāmaṉ", "category": "deity", "stability": 1, "gloss": "Rama", "in_names": 1}
+{"m": "iḷam", "category": "quality_size", "stability": 2, "gloss": "young", "in_names": 25}
+{"m": "iṟaiyaṉ", "category": "title_rank", "stability": 3, "gloss": "lord", "in_names": 2}
+{"m": "iṭai", "category": "direction", "stability": 3, "gloss": "middle", "in_names": 4}
+{"m": "iṭaiyar", "category": "occupation_group", "stability": 2, "gloss": "herdsmen", "in_names": 1}
+{"m": "iṭaiyaṉ", "category": "occupation_group", "stability": 2, "gloss": "herdsman", "in_names": 1}
+{"m": "kacci", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 2}
+{"m": "kal", "category": "landscape", "stability": 3, "gloss": "stone", "in_names": 2}
+{"m": "kallāṭaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kantaṉ", "category": "deity", "stability": 1, "gloss": "Skanda", "in_names": 3}
+{"m": "kapilaṉ", "category": "colour", "stability": 2, "gloss": "tawny", "in_names": 2}
+{"m": "karikāl", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "karu", "category": "colour", "stability": 2, "gloss": "black", "in_names": 2}
+{"m": "karuvūr", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 2}
+{"m": "katam", "category": "other", "stability": 1, "gloss": "anger", "in_names": 2}
+{"m": "kaucikaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Kausika", "in_names": 2}
+{"m": "kautamaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Gautama", "in_names": 1}
+{"m": "kavuṇiyaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Kaundinya", "in_names": 1}
+{"m": "kayam", "category": "landscape", "stability": 3, "gloss": "tank", "in_names": 4}
+{"m": "kayamaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kayiṟu", "category": "artefact", "stability": 2, "gloss": "rope", "in_names": 1}
+{"m": "kaḷam", "category": "landscape", "stability": 3, "gloss": "field", "in_names": 1}
+{"m": "kaḷamar", "category": "occupation_group", "stability": 2, "gloss": "field labourers", "in_names": 1}
+{"m": "kaḷaṅkāy", "category": "plant", "stability": 2, "gloss": "carissa fruit", "in_names": 1}
+{"m": "kaḷvar", "category": "occupation_group", "stability": 2, "gloss": "thieves", "in_names": 1}
+{"m": "kaḷḷi", "category": "plant", "stability": 2, "gloss": "spurge", "in_names": 1}
+{"m": "kaḷḷil", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaḻai", "category": "plant", "stability": 2, "gloss": "bamboo", "in_names": 1}
+{"m": "kaḻi", "category": "landscape", "stability": 3, "gloss": "backwater", "in_names": 1}
+{"m": "kaḻār", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 2}
+{"m": "kaṅkai", "category": "place_name", "stability": 2, "gloss": "Ganges", "in_names": 1}
+{"m": "kaṅkul", "category": "celestial", "stability": 1, "gloss": "night", "in_names": 1}
+{"m": "kaṇ", "category": "body_part", "stability": 2, "gloss": "eye", "in_names": 2}
+{"m": "kaṇaikkāl", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaṇakkāyaṉ", "category": "occupation_group", "stability": 2, "gloss": "teacher", "in_names": 2}
+{"m": "kaṇi", "category": "occupation_group", "stability": 2, "gloss": "astrologer", "in_names": 1}
+{"m": "kaṇiyaṉ", "category": "occupation_group", "stability": 2, "gloss": "astrologer", "in_names": 1}
+{"m": "kaṇṇai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaṇṇaṉ", "category": "deity", "stability": 1, "gloss": "Krishna", "in_names": 27}
+{"m": "kaṇṇi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 3}
+{"m": "kaṇṭīram", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaṭa", "category": "verb_deed", "stability": 2, "gloss": "overcome", "in_names": 1}
+{"m": "kaṭai", "category": "direction", "stability": 3, "gloss": "last", "in_names": 1}
+{"m": "kaṭal", "category": "landscape", "stability": 3, "gloss": "sea", "in_names": 1}
+{"m": "kaṭalaṉ", "category": "landscape", "stability": 3, "gloss": "sea one", "in_names": 2}
+{"m": "kaṭampaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaṭampu", "category": "plant", "stability": 2, "gloss": "kadamba tree", "in_names": 1}
+{"m": "kaṭiyal", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaṭu", "category": "quality_size", "stability": 2, "gloss": "fierce", "in_names": 4}
+{"m": "kaṭummi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaṭuvaṉ", "category": "animal", "stability": 2, "gloss": "male monkey", "in_names": 2}
+{"m": "kaṭṭi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "keḻu", "category": "quality_size", "stability": 2, "gloss": "full of", "in_names": 1}
+{"m": "kiḷḷi", "category": "dynasty_clan", "stability": 2, "gloss": "Chola king", "in_names": 7}
+{"m": "kiḻāṉ", "category": "title_rank", "stability": 3, "gloss": "lord", "in_names": 17}
+{"m": "kiṭaṅkil", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kollar", "category": "occupation_group", "stability": 2, "gloss": "smiths", "in_names": 1}
+{"m": "kollaṉ", "category": "occupation_group", "stability": 2, "gloss": "smith", "in_names": 3}
+{"m": "kolli", "category": "place_name", "stability": 2, "gloss": "Kolli hill", "in_names": 3}
+{"m": "koṅkar", "category": "dynasty_clan", "stability": 2, "gloss": "Kongu people", "in_names": 1}
+{"m": "koṟkai", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "koṟṟavai", "category": "deity", "stability": 1, "gloss": "victory goddess", "in_names": 1}
+{"m": "koṟṟaṉ", "category": "verb_deed", "stability": 2, "gloss": "victor", "in_names": 9}
+{"m": "koṭi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "koṭumaṇam", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "koṭṭil", "category": "place_word", "stability": 3, "gloss": "shed", "in_names": 1}
+{"m": "kulam", "category": "kinship", "stability": 3, "gloss": "family", "in_names": 1}
+{"m": "kumaraṉ", "category": "kinship", "stability": 3, "gloss": "youth", "in_names": 1}
+{"m": "kumari", "category": "kinship", "stability": 3, "gloss": "maiden", "in_names": 1}
+{"m": "kumaṇaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "kumaṭṭu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "kumuḻ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kuppai", "category": "other", "stability": 1, "gloss": "rubbish heap", "in_names": 1}
+{"m": "kurā", "category": "plant", "stability": 2, "gloss": "kura tree", "in_names": 1}
+{"m": "kutirai", "category": "animal", "stability": 2, "gloss": "horse", "in_names": 3}
+{"m": "kuvaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kuyatti", "category": "occupation_group", "stability": 2, "gloss": "potter woman", "in_names": 1}
+{"m": "kuyavar", "category": "occupation_group", "stability": 2, "gloss": "potters", "in_names": 1}
+{"m": "kuḷam", "category": "landscape", "stability": 3, "gloss": "tank", "in_names": 3}
+{"m": "kuḻal", "category": "body_part", "stability": 2, "gloss": "tresses", "in_names": 1}
+{"m": "kuṉṟu", "category": "landscape", "stability": 3, "gloss": "hill", "in_names": 9}
+{"m": "kuṟamakaḷ", "category": "dynasty_clan", "stability": 2, "gloss": "Kurava woman", "in_names": 1}
+{"m": "kuṟavar", "category": "dynasty_clan", "stability": 2, "gloss": "hill people", "in_names": 1}
+{"m": "kuṟiñci", "category": "plant", "stability": 2, "gloss": "kurinji plant", "in_names": 1}
+{"m": "kuṟu", "category": "quality_size", "stability": 2, "gloss": "short", "in_names": 9}
+{"m": "kuṟukkai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kuṭa", "category": "direction", "stability": 3, "gloss": "west", "in_names": 2}
+{"m": "kuṭai", "category": "artefact", "stability": 2, "gloss": "basket", "in_names": 1}
+{"m": "kuṭavar", "category": "direction", "stability": 3, "gloss": "westerners", "in_names": 1}
+{"m": "kuṭi", "category": "place_word", "stability": 3, "gloss": "settlement", "in_names": 10}
+{"m": "kuṭṭam", "category": "quality_size", "stability": 2, "gloss": "multitude", "in_names": 1}
+{"m": "kuṭṭuvaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Chera king", "in_names": 8}
+{"m": "kācipaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Kasyapa", "in_names": 1}
+{"m": "kāmam", "category": "other", "stability": 1, "gloss": "love", "in_names": 2}
+{"m": "kāmaṉ", "category": "other", "stability": 1, "gloss": "desire", "in_names": 1}
+{"m": "kāntāram", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kāppiyaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Kavya", "in_names": 1}
+{"m": "kāppiyāṟu", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kāri", "category": "colour", "stability": 2, "gloss": "dark one", "in_names": 4}
+{"m": "kāval", "category": "verb_deed", "stability": 2, "gloss": "guarding", "in_names": 2}
+{"m": "kāviri", "category": "place_name", "stability": 2, "gloss": "Kaveri", "in_names": 2}
+{"m": "kāviti", "category": "honorific", "stability": 3, "gloss": "honorific title", "in_names": 1}
+{"m": "kāyapaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Kasyapa", "in_names": 1}
+{"m": "kāḻakam", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kāṉal", "category": "landscape", "stability": 3, "gloss": "seashore grove", "in_names": 1}
+{"m": "kāṉam", "category": "landscape", "stability": 3, "gloss": "forest", "in_names": 1}
+{"m": "kāṉavar", "category": "landscape", "stability": 3, "gloss": "forest dwellers", "in_names": 1}
+{"m": "kāṭu", "category": "landscape", "stability": 3, "gloss": "forest", "in_names": 4}
+{"m": "kēcavaṉ", "category": "deity", "stability": 1, "gloss": "Kesava", "in_names": 1}
+{"m": "kīraṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 16}
+{"m": "kō", "category": "title_rank", "stability": 3, "gloss": "king", "in_names": 16}
+{"m": "kōcar", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kōtai", "category": "dynasty_clan", "stability": 2, "gloss": "Chera king", "in_names": 3}
+{"m": "kōval", "category": "occupation_group", "stability": 2, "gloss": "cowherd", "in_names": 1}
+{"m": "kōvalar", "category": "occupation_group", "stability": 2, "gloss": "cowherds", "in_names": 1}
+{"m": "kōḷ", "category": "verb_deed", "stability": 2, "gloss": "seizure", "in_names": 1}
+{"m": "kōḷi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kōḻi", "category": "animal", "stability": 2, "gloss": "fowl", "in_names": 5}
+{"m": "kōṭṭam", "category": "place_word", "stability": 3, "gloss": "enclosure", "in_names": 1}
+{"m": "kōṭṭi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kūkai", "category": "animal", "stability": 2, "gloss": "owl", "in_names": 1}
+{"m": "kūttar", "category": "occupation_group", "stability": 2, "gloss": "dancers", "in_names": 1}
+{"m": "kūttaṉ", "category": "occupation_group", "stability": 2, "gloss": "dancer", "in_names": 4}
+{"m": "kūṟṟam", "category": "place_word", "stability": 3, "gloss": "district", "in_names": 1}
+{"m": "kūṭakāram", "category": "place_word", "stability": 3, "gloss": "pavilion", "in_names": 1}
+{"m": "kūṭal", "category": "landscape", "stability": 3, "gloss": "confluence", "in_names": 3}
+{"m": "mai", "category": "colour", "stability": 2, "gloss": "black", "in_names": 1}
+{"m": "makaram", "category": "animal", "stability": 2, "gloss": "sea monster", "in_names": 1}
+{"m": "makaḷ", "category": "kinship", "stability": 3, "gloss": "woman", "in_names": 1}
+{"m": "malai", "category": "landscape", "stability": 3, "gloss": "mountain", "in_names": 2}
+{"m": "malaiyaṉ", "category": "landscape", "stability": 3, "gloss": "hillman", "in_names": 1}
+{"m": "mantai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "maram", "category": "plant", "stability": 2, "gloss": "tree", "in_names": 1}
+{"m": "marutam", "category": "plant", "stability": 2, "gloss": "arjuna tree", "in_names": 1}
+{"m": "marutaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 4}
+{"m": "maruṅku", "category": "direction", "stability": 3, "gloss": "side", "in_names": 1}
+{"m": "maturai", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 4}
+{"m": "maḷḷaṉ", "category": "occupation_group", "stability": 2, "gloss": "warrior", "in_names": 2}
+{"m": "maḻavar", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "maṅkalam", "category": "place_word", "stability": 3, "gloss": "auspicious village", "in_names": 2}
+{"m": "maṇi", "category": "artefact", "stability": 2, "gloss": "gem", "in_names": 2}
+{"m": "maṟai", "category": "other", "stability": 1, "gloss": "Veda", "in_names": 1}
+{"m": "maṟavar", "category": "occupation_group", "stability": 2, "gloss": "warriors", "in_names": 1}
+{"m": "meyyaṉ", "category": "quality_size", "stability": 2, "gloss": "truthful one", "in_names": 1}
+{"m": "mileccar", "category": "dynasty_clan", "stability": 2, "gloss": "barbarians", "in_names": 1}
+{"m": "mitunam", "category": "number", "stability": 3, "gloss": "pair", "in_names": 1}
+{"m": "miñili", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "miḷai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "mu", "category": "number", "stability": 3, "gloss": "three", "in_names": 1}
+{"m": "muciṟi", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "mukaiyal", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mukam", "category": "body_part", "stability": 2, "gloss": "face", "in_names": 1}
+{"m": "mullai", "category": "plant", "stability": 2, "gloss": "jasmine", "in_names": 3}
+{"m": "murañci", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "murukaṉ", "category": "quality_size", "stability": 2, "gloss": "youthful beauty", "in_names": 1}
+{"m": "mutir", "category": "verb_deed", "stability": 2, "gloss": "ripen", "in_names": 1}
+{"m": "mutiram", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mutu", "category": "quality_size", "stability": 2, "gloss": "old", "in_names": 5}
+{"m": "muḷ", "category": "plant", "stability": 2, "gloss": "thorn", "in_names": 1}
+{"m": "muḷḷi", "category": "plant", "stability": 2, "gloss": "thorny shrub", "in_names": 2}
+{"m": "muṉṟil", "category": "place_word", "stability": 3, "gloss": "courtyard", "in_names": 1}
+{"m": "muṟuval", "category": "verb_deed", "stability": 2, "gloss": "smile", "in_names": 1}
+{"m": "muṟṟam", "category": "place_word", "stability": 3, "gloss": "courtyard", "in_names": 1}
+{"m": "muṭam", "category": "quality_size", "stability": 2, "gloss": "crooked", "in_names": 4}
+{"m": "muṭavaṉ", "category": "quality_size", "stability": 2, "gloss": "lame man", "in_names": 1}
+{"m": "muṭi", "category": "artefact", "stability": 2, "gloss": "crown", "in_names": 4}
+{"m": "mā", "category": "quality_size", "stability": 2, "gloss": "great", "in_names": 7}
+{"m": "māl", "category": "colour", "stability": 2, "gloss": "dark one", "in_names": 1}
+{"m": "mālai", "category": "artefact", "stability": 2, "gloss": "garland", "in_names": 1}
+{"m": "māntaram", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mārkkaṇṭēyaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Markandeya", "in_names": 1}
+{"m": "mārpaṉ", "category": "body_part", "stability": 2, "gloss": "chest", "in_names": 1}
+{"m": "māyōṉ", "category": "colour", "stability": 2, "gloss": "dark one", "in_names": 1}
+{"m": "māṅkuṭi", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 2}
+{"m": "māṉ", "category": "title_rank", "stability": 3, "gloss": "lord", "in_names": 4}
+{"m": "māṟaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Pandya king", "in_names": 6}
+{"m": "māṟōkkam", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "māṭal", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "māṭam", "category": "place_word", "stability": 3, "gloss": "mansion", "in_names": 1}
+{"m": "mētāvi", "category": "occupation_group", "stability": 2, "gloss": "sage", "in_names": 1}
+{"m": "mīḷi", "category": "quality_size", "stability": 2, "gloss": "valour", "in_names": 1}
+{"m": "mīṉ", "category": "celestial", "stability": 1, "gloss": "star", "in_names": 4}
+{"m": "mōci", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 4}
+{"m": "mōkūr", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "mōvāy", "category": "body_part", "stability": 2, "gloss": "chin", "in_names": 1}
+{"m": "mūlam", "category": "celestial", "stability": 1, "gloss": "Mula asterism", "in_names": 2}
+{"m": "mūlaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mūvaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "nal", "category": "quality_size", "stability": 2, "gloss": "good", "in_names": 26}
+{"m": "nalam", "category": "quality_size", "stability": 2, "gloss": "goodness", "in_names": 1}
+{"m": "nalliyakkōṭaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nampi", "category": "title_rank", "stability": 3, "gloss": "chief", "in_names": 3}
+{"m": "nanta", "category": "dynasty_clan", "stability": 2, "gloss": "Nanda", "in_names": 1}
+{"m": "nantai", "category": "kinship", "stability": 3, "gloss": "elder", "in_names": 1}
+{"m": "nantar", "category": "dynasty_clan", "stability": 2, "gloss": "Nandas", "in_names": 1}
+{"m": "narai", "category": "body_part", "stability": 2, "gloss": "grey hair", "in_names": 1}
+{"m": "nari", "category": "animal", "stability": 2, "gloss": "jackal", "in_names": 1}
+{"m": "nattattaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "naḷḷi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "naṉṉaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "naṭu", "category": "verb_deed", "stability": 2, "gloss": "plant", "in_names": 1}
+{"m": "nel", "category": "plant", "stability": 2, "gloss": "paddy", "in_names": 1}
+{"m": "neytal", "category": "plant", "stability": 2, "gloss": "water lily", "in_names": 3}
+{"m": "neṭiyōṉ", "category": "quality_size", "stability": 2, "gloss": "tall one", "in_names": 1}
+{"m": "neṭu", "category": "quality_size", "stability": 2, "gloss": "long", "in_names": 15}
+{"m": "neṭṭai", "category": "quality_size", "stability": 2, "gloss": "tall one", "in_names": 1}
+{"m": "nikamam", "category": "occupation_group", "stability": 2, "gloss": "merchant guild", "in_names": 1}
+{"m": "nilavu", "category": "celestial", "stability": 1, "gloss": "moonlight", "in_names": 1}
+{"m": "niyamam", "category": "place_word", "stability": 3, "gloss": "market town", "in_names": 1}
+{"m": "nocci", "category": "plant", "stability": 2, "gloss": "chaste tree", "in_names": 1}
+{"m": "nurai", "category": "landscape", "stability": 3, "gloss": "foam", "in_names": 1}
+{"m": "nākai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "nākaṉ", "category": "animal", "stability": 2, "gloss": "serpent", "in_names": 8}
+{"m": "nāl", "category": "number", "stability": 3, "gloss": "four", "in_names": 2}
+{"m": "nār", "category": "plant", "stability": 2, "gloss": "fibre", "in_names": 1}
+{"m": "nāṭu", "category": "place_word", "stability": 3, "gloss": "country", "in_names": 6}
+{"m": "nēmi", "category": "artefact", "stability": 2, "gloss": "discus", "in_names": 1}
+{"m": "nīr", "category": "landscape", "stability": 3, "gloss": "water", "in_names": 1}
+{"m": "nīrppeyaṟṟu", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "nōtiram", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nōy", "category": "other", "stability": 1, "gloss": "disease", "in_names": 1}
+{"m": "nūṟṟuvar", "category": "number", "stability": 3, "gloss": "the hundred", "in_names": 1}
+{"m": "okkūr", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "ollai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "oru", "category": "number", "stability": 3, "gloss": "one", "in_names": 1}
+{"m": "oymā", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "oḷiyar", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "pacalai", "category": "colour", "stability": 2, "gloss": "pallor", "in_names": 2}
+{"m": "pacu", "category": "colour", "stability": 2, "gloss": "green", "in_names": 1}
+{"m": "pal", "category": "quality_size", "stability": 2, "gloss": "many", "in_names": 4}
+{"m": "palliyam", "category": "artefact", "stability": 2, "gloss": "orchestra", "in_names": 1}
+{"m": "pantar", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "param", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "paratavar", "category": "occupation_group", "stability": 2, "gloss": "fishermen", "in_names": 1}
+{"m": "paraṇaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "paru", "category": "quality_size", "stability": 2, "gloss": "thick", "in_names": 1}
+{"m": "pataṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pataṭi", "category": "plant", "stability": 2, "gloss": "chaff", "in_names": 1}
+{"m": "patumaṉ", "category": "plant", "stability": 2, "gloss": "lotus", "in_names": 3}
+{"m": "paḷḷi", "category": "place_word", "stability": 3, "gloss": "chamber", "in_names": 2}
+{"m": "paḻa", "category": "quality_size", "stability": 2, "gloss": "old", "in_names": 1}
+{"m": "paḻaiyaṉ", "category": "quality_size", "stability": 2, "gloss": "old one", "in_names": 1}
+{"m": "paḻaiyōḷ", "category": "quality_size", "stability": 2, "gloss": "ancient one", "in_names": 1}
+{"m": "paḻam", "category": "plant", "stability": 2, "gloss": "fruit", "in_names": 1}
+{"m": "paṅkuṉi", "category": "celestial", "stability": 1, "gloss": "Panguni month", "in_names": 1}
+{"m": "paṇṇaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "paṉai", "category": "plant", "stability": 2, "gloss": "palmyra", "in_names": 1}
+{"m": "paṟaiyar", "category": "occupation_group", "stability": 2, "gloss": "parai drummers", "in_names": 1}
+{"m": "paṟampu", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "paṟṟu", "category": "verb_deed", "stability": 2, "gloss": "holding", "in_names": 1}
+{"m": "paṭai", "category": "occupation_group", "stability": 2, "gloss": "army", "in_names": 1}
+{"m": "paṭu", "category": "verb_deed", "stability": 2, "gloss": "fallen", "in_names": 1}
+{"m": "paṭṭiṉam", "category": "place_word", "stability": 3, "gloss": "port town", "in_names": 2}
+{"m": "periyaṉ", "category": "quality_size", "stability": 2, "gloss": "great one", "in_names": 1}
+{"m": "peru", "category": "quality_size", "stability": 2, "gloss": "great", "in_names": 28}
+{"m": "peyal", "category": "landscape", "stability": 3, "gloss": "rain", "in_names": 1}
+{"m": "peṇṭu", "category": "kinship", "stability": 3, "gloss": "woman", "in_names": 2}
+{"m": "piccai", "category": "other", "stability": 1, "gloss": "alms", "in_names": 1}
+{"m": "picir", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "piramaṉ", "category": "deity", "stability": 1, "gloss": "Brahma", "in_names": 1}
+{"m": "pirāṉ", "category": "title_rank", "stability": 3, "gloss": "lord", "in_names": 1}
+{"m": "piḷḷai", "category": "kinship", "stability": 3, "gloss": "child", "in_names": 1}
+{"m": "piṟaku", "category": "direction", "stability": 3, "gloss": "back", "in_names": 1}
+{"m": "piṭar", "category": "body_part", "stability": 2, "gloss": "nape", "in_names": 1}
+{"m": "piṭṭaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pokuṭṭeḻiṉi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "poru", "category": "verb_deed", "stability": 2, "gloss": "dash", "in_names": 1}
+{"m": "porunai", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 2}
+{"m": "poruṉar", "category": "occupation_group", "stability": 2, "gloss": "war bards", "in_names": 1}
+{"m": "poti", "category": "verb_deed", "stability": 2, "gloss": "wrap", "in_names": 1}
+{"m": "potiyil", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "potiṉi", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "potti", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "potu", "category": "quality_size", "stability": 2, "gloss": "common", "in_names": 1}
+{"m": "potumpil", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 2}
+{"m": "poykai", "category": "landscape", "stability": 3, "gloss": "pond", "in_names": 1}
+{"m": "poṉ", "category": "other", "stability": 1, "gloss": "gold", "in_names": 4}
+{"m": "poṟai", "category": "dynasty_clan", "stability": 2, "gloss": "Porai lineage", "in_names": 8}
+{"m": "poṟaiyaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Chera king", "in_names": 1}
+{"m": "pul", "category": "plant", "stability": 2, "gloss": "grass", "in_names": 2}
+{"m": "pulaiyar", "category": "occupation_group", "stability": 2, "gloss": "low-caste servants", "in_names": 1}
+{"m": "pulam", "category": "landscape", "stability": 3, "gloss": "land", "in_names": 2}
+{"m": "pullaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "pulli", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "puri", "category": "verb_deed", "stability": 2, "gloss": "twist", "in_names": 1}
+{"m": "putu", "category": "quality_size", "stability": 2, "gloss": "new", "in_names": 1}
+{"m": "puṟam", "category": "direction", "stability": 3, "gloss": "outer", "in_names": 1}
+{"m": "pālai", "category": "landscape", "stability": 3, "gloss": "arid tract", "in_names": 3}
+{"m": "pāmpu", "category": "animal", "stability": 2, "gloss": "snake", "in_names": 1}
+{"m": "pāratam", "category": "other", "stability": 1, "gloss": "Mahabharata", "in_names": 1}
+{"m": "pāri", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pārppaṉar", "category": "occupation_group", "stability": 2, "gloss": "Brahmins", "in_names": 1}
+{"m": "pāvai", "category": "artefact", "stability": 2, "gloss": "doll", "in_names": 1}
+{"m": "pāḻi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pāṇar", "category": "occupation_group", "stability": 2, "gloss": "bards", "in_names": 1}
+{"m": "pāṇaṉ", "category": "occupation_group", "stability": 2, "gloss": "bard", "in_names": 1}
+{"m": "pāṇṭiyaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Pandya", "in_names": 2}
+{"m": "pāṭali", "category": "plant", "stability": 2, "gloss": "trumpet-flower tree", "in_names": 1}
+{"m": "pāṭu", "category": "verb_deed", "stability": 2, "gloss": "sing", "in_names": 1}
+{"m": "pāṭṭu", "category": "verb_deed", "stability": 2, "gloss": "song", "in_names": 1}
+{"m": "pēkaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pēr", "category": "quality_size", "stability": 2, "gloss": "great", "in_names": 4}
+{"m": "pēy", "category": "deity", "stability": 1, "gloss": "demon", "in_names": 2}
+{"m": "pēyaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pēṭu", "category": "place_word", "stability": 3, "gloss": "hamlet", "in_names": 1}
+{"m": "pōntai", "category": "plant", "stability": 2, "gloss": "palmyra", "in_names": 1}
+{"m": "pōti", "category": "plant", "stability": 2, "gloss": "bodhi tree", "in_names": 1}
+{"m": "pū", "category": "plant", "stability": 2, "gloss": "flower", "in_names": 3}
+{"m": "pūtam", "category": "deity", "stability": 1, "gloss": "spirit", "in_names": 4}
+{"m": "pūtaṉ", "category": "deity", "stability": 1, "gloss": "spirit", "in_names": 11}
+{"m": "pūti", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 3}
+{"m": "taccar", "category": "occupation_group", "stability": 2, "gloss": "carpenters", "in_names": 1}
+{"m": "taccaṉ", "category": "occupation_group", "stability": 2, "gloss": "carpenter", "in_names": 2}
+{"m": "tai", "category": "celestial", "stability": 1, "gloss": "Tai month", "in_names": 1}
+{"m": "takaṭu", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "talai", "category": "body_part", "stability": 2, "gloss": "head", "in_names": 5}
+{"m": "tamiḻ", "category": "dynasty_clan", "stability": 2, "gloss": "Tamil", "in_names": 2}
+{"m": "tantai", "category": "kinship", "stability": 3, "gloss": "father", "in_names": 4}
+{"m": "tattaṉ", "category": "verb_deed", "stability": 2, "gloss": "given", "in_names": 7}
+{"m": "taṇṭu", "category": "artefact", "stability": 2, "gloss": "staff", "in_names": 1}
+{"m": "taṟi", "category": "artefact", "stability": 2, "gloss": "post", "in_names": 1}
+{"m": "tiraiyaṉ", "category": "landscape", "stability": 3, "gloss": "wave one", "in_names": 2}
+{"m": "tiru", "category": "quality_size", "stability": 2, "gloss": "sacred", "in_names": 5}
+{"m": "titiyaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tittaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 3}
+{"m": "tiṅkaḷ", "category": "celestial", "stability": 1, "gloss": "moon", "in_names": 1}
+{"m": "tiṉ", "category": "verb_deed", "stability": 2, "gloss": "eat", "in_names": 1}
+{"m": "tol", "category": "quality_size", "stability": 2, "gloss": "ancient", "in_names": 1}
+{"m": "toḻunai", "category": "place_name", "stability": 2, "gloss": "Yamuna", "in_names": 1}
+{"m": "toṇṭai", "category": "place_name", "stability": 2, "gloss": "Tondai", "in_names": 1}
+{"m": "toṇṭi", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "toṭi", "category": "artefact", "stability": 2, "gloss": "bangle", "in_names": 1}
+{"m": "tumpi", "category": "animal", "stability": 2, "gloss": "bee", "in_names": 2}
+{"m": "tuḷu", "category": "dynasty_clan", "stability": 2, "gloss": "Tulu", "in_names": 1}
+{"m": "tuṟai", "category": "landscape", "stability": 3, "gloss": "ford", "in_names": 3}
+{"m": "tuṭiyar", "category": "occupation_group", "stability": 2, "gloss": "tudi drummers", "in_names": 1}
+{"m": "tāmakkaṇṇi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tāmōtaraṉ", "category": "deity", "stability": 1, "gloss": "Damodara", "in_names": 1}
+{"m": "tāyaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "tēr", "category": "artefact", "stability": 2, "gloss": "chariot", "in_names": 1}
+{"m": "tērai", "category": "animal", "stability": 2, "gloss": "frog", "in_names": 1}
+{"m": "tēvaṉ", "category": "deity", "stability": 1, "gloss": "god", "in_names": 8}
+{"m": "tēy", "category": "verb_deed", "stability": 2, "gloss": "wear", "in_names": 1}
+{"m": "tēṉ", "category": "other", "stability": 1, "gloss": "honey", "in_names": 1}
+{"m": "tōḷ", "category": "body_part", "stability": 2, "gloss": "shoulder", "in_names": 1}
+{"m": "tūṇṭil", "category": "artefact", "stability": 2, "gloss": "hook", "in_names": 1}
+{"m": "ukkiram", "category": "quality_size", "stability": 2, "gloss": "fierceness", "in_names": 1}
+{"m": "ukāy", "category": "plant", "stability": 2, "gloss": "toothbrush tree", "in_names": 1}
+{"m": "umaṇar", "category": "occupation_group", "stability": 2, "gloss": "salt merchants", "in_names": 1}
+{"m": "umaṭṭu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "umpal", "category": "animal", "stability": 2, "gloss": "elephant", "in_names": 1}
+{"m": "uruttiraṉ", "category": "deity", "stability": 1, "gloss": "Rudra", "in_names": 3}
+{"m": "uruvam", "category": "quality_size", "stability": 2, "gloss": "beauty", "in_names": 1}
+{"m": "utiyaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "uvarkkaṇṇūr", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "uḻavar", "category": "occupation_group", "stability": 2, "gloss": "ploughmen", "in_names": 1}
+{"m": "uḻavaṉ", "category": "occupation_group", "stability": 2, "gloss": "ploughman", "in_names": 1}
+{"m": "uṟai", "category": "place_word", "stability": 3, "gloss": "abode", "in_names": 1}
+{"m": "uṟantai", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "uṭai", "category": "grammar_suffix", "stability": 3, "gloss": "having", "in_names": 1}
+{"m": "vaikal", "category": "celestial", "stability": 1, "gloss": "day", "in_names": 1}
+{"m": "vaiyai", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "val", "category": "quality_size", "stability": 2, "gloss": "strong", "in_names": 2}
+{"m": "varampu", "category": "landscape", "stability": 3, "gloss": "boundary", "in_names": 2}
+{"m": "varuṭai", "category": "animal", "stability": 2, "gloss": "ram", "in_names": 1}
+{"m": "vañci", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "vaḷam", "category": "quality_size", "stability": 2, "gloss": "abundance", "in_names": 1}
+{"m": "vaḷavaṉ", "category": "dynasty_clan", "stability": 2, "gloss": "Chola king", "in_names": 3}
+{"m": "vaḻuti", "category": "dynasty_clan", "stability": 2, "gloss": "Pandya king", "in_names": 8}
+{"m": "vaṇikar", "category": "occupation_group", "stability": 2, "gloss": "merchants", "in_names": 1}
+{"m": "vaṭa", "category": "direction", "stability": 3, "gloss": "north", "in_names": 2}
+{"m": "vaṭavar", "category": "direction", "stability": 3, "gloss": "northerners", "in_names": 1}
+{"m": "vaṭukar", "category": "direction", "stability": 3, "gloss": "northerners", "in_names": 1}
+{"m": "vem", "category": "quality_size", "stability": 2, "gloss": "fierce", "in_names": 1}
+{"m": "veru", "category": "other", "stability": 1, "gloss": "fear", "in_names": 1}
+{"m": "veḷ", "category": "colour", "stability": 2, "gloss": "white", "in_names": 10}
+{"m": "veḷiyaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 3}
+{"m": "veḷḷai", "category": "colour", "stability": 2, "gloss": "white", "in_names": 4}
+{"m": "veḷḷam", "category": "landscape", "stability": 3, "gloss": "flood", "in_names": 1}
+{"m": "veḷḷi", "category": "other", "stability": 1, "gloss": "silver", "in_names": 2}
+{"m": "veṇṇi", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 2}
+{"m": "vicci", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "vil", "category": "artefact", "stability": 2, "gloss": "bow", "in_names": 2}
+{"m": "villi", "category": "occupation_group", "stability": 2, "gloss": "bowman", "in_names": 1}
+{"m": "viral", "category": "body_part", "stability": 2, "gloss": "finger", "in_names": 1}
+{"m": "viri", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "viyal", "category": "quality_size", "stability": 2, "gloss": "wide", "in_names": 1}
+{"m": "viḷakkaṉ", "category": "artefact", "stability": 2, "gloss": "lamp", "in_names": 1}
+{"m": "viḻavu", "category": "other", "stability": 1, "gloss": "festival", "in_names": 1}
+{"m": "viḻu", "category": "quality_size", "stability": 2, "gloss": "excellent", "in_names": 1}
+{"m": "viṟal", "category": "quality_size", "stability": 2, "gloss": "valour", "in_names": 1}
+{"m": "viṟaliyar", "category": "occupation_group", "stability": 2, "gloss": "danseuses", "in_names": 1}
+{"m": "viṭu", "category": "verb_deed", "stability": 2, "gloss": "release", "in_names": 1}
+{"m": "vākai", "category": "plant", "stability": 2, "gloss": "vakai tree", "in_names": 1}
+{"m": "vāy", "category": "body_part", "stability": 2, "gloss": "mouth", "in_names": 1}
+{"m": "vāyil", "category": "place_word", "stability": 3, "gloss": "gate", "in_names": 3}
+{"m": "vāḻiyātaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "vāṇikaṉ", "category": "occupation_group", "stability": 2, "gloss": "merchant", "in_names": 1}
+{"m": "vāṉam", "category": "landscape", "stability": 3, "gloss": "sky", "in_names": 2}
+{"m": "vāṉmīki", "category": "personal_name", "stability": 1, "gloss": "Valmiki", "in_names": 1}
+{"m": "vāṭṭāṟu", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "vēl", "category": "artefact", "stability": 2, "gloss": "spear", "in_names": 1}
+{"m": "vēli", "category": "artefact", "stability": 2, "gloss": "fence", "in_names": 1}
+{"m": "vēmpu", "category": "plant", "stability": 2, "gloss": "neem", "in_names": 1}
+{"m": "vēḷ", "category": "title_rank", "stability": 3, "gloss": "chieftain", "in_names": 6}
+{"m": "vēṅkaṭam", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "vēṭṭaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "vēṭṭuvar", "category": "occupation_group", "stability": 2, "gloss": "hunters", "in_names": 1}
+{"m": "vēṭṭuvaṉ", "category": "occupation_group", "stability": 2, "gloss": "hunter", "in_names": 1}
+{"m": "vīrai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "vīti", "category": "place_word", "stability": 3, "gloss": "street", "in_names": 1}
+{"m": "yavaṉar", "category": "dynasty_clan", "stability": 2, "gloss": "Ionians", "in_names": 1}
+{"m": "yākam", "category": "verb_deed", "stability": 2, "gloss": "sacrifice", "in_names": 1}
+{"m": "yāḻ", "category": "artefact", "stability": 2, "gloss": "lute", "in_names": 1}
+{"m": "yāṉai", "category": "animal", "stability": 2, "gloss": "elephant", "in_names": 2}
+{"m": "yāṟu", "category": "landscape", "stability": 3, "gloss": "river", "in_names": 1}
+{"m": "ñāyiṟu", "category": "celestial", "stability": 1, "gloss": "sun", "in_names": 1}
+{"m": "ā", "category": "animal", "stability": 2, "gloss": "cow", "in_names": 5}
+{"m": "āl", "category": "plant", "stability": 2, "gloss": "banyan", "in_names": 5}
+{"m": "ālavāy", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 2}
+{"m": "āmūr", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "āntai", "category": "kinship", "stability": 3, "gloss": "father", "in_names": 1}
+{"m": "ār", "category": "plant", "stability": 2, "gloss": "ar tree", "in_names": 1}
+{"m": "āriyar", "category": "dynasty_clan", "stability": 2, "gloss": "Aryans", "in_names": 2}
+{"m": "ātaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 9}
+{"m": "ātimanti", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ātirai", "category": "celestial", "stability": 1, "gloss": "Ardra asterism", "in_names": 1}
+{"m": "āvaṭu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "āvi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "āviṉaṉ", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "āy", "category": "dynasty_clan", "stability": 2, "gloss": "Ay lineage", "in_names": 2}
+{"m": "āyar", "category": "occupation_group", "stability": 2, "gloss": "cowherds", "in_names": 1}
+{"m": "āṉ", "category": "animal", "stability": 2, "gloss": "cow", "in_names": 1}
+{"m": "āṟu", "category": "landscape", "stability": 3, "gloss": "river", "in_names": 2}
+{"m": "āṭu", "category": "animal", "stability": 2, "gloss": "sheep", "in_names": 2}
+{"m": "āṭṭaṉatti", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ēr", "category": "artefact", "stability": 2, "gloss": "plough", "in_names": 1}
+{"m": "ēri", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ēḻil", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ēṇi", "category": "artefact", "stability": 2, "gloss": "ladder", "in_names": 1}
+{"m": "ēṉāti", "category": "title_rank", "stability": 3, "gloss": "general", "in_names": 1}
+{"m": "ēṟakam", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "īḻam", "category": "place_name", "stability": 2, "gloss": "Ceylon", "in_names": 2}
+{"m": "ōr", "category": "number", "stability": 3, "gloss": "one", "in_names": 2}
+{"m": "ōrampōki", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ōri", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ōṇam", "category": "celestial", "stability": 1, "gloss": "Sravana asterism", "in_names": 1}
+{"m": "ōṭṭu", "category": "verb_deed", "stability": 2, "gloss": "drive", "in_names": 1}
+{"m": "ūr", "category": "place_word", "stability": 3, "gloss": "town", "in_names": 59}
+{"m": "ūṉ", "category": "body_part", "stability": 2, "gloss": "flesh", "in_names": 1}

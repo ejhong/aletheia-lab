@@ -1,0 +1,556 @@
+{
+ "A_names": [
+  {
+   "name": "Rešep",
+   "type": "deity",
+   "morphemes": "rešep",
+   "gloss": "flame",
+   "source": "Twelve Prophets"
+  },
+  {
+   "name": "ʾAdōnīrām",
+   "type": "person",
+   "morphemes": "ʾādōn + rūm",
+   "gloss": "lord + be high",
+   "source": "Kings"
+  },
+  {
+   "name": "Penūʾēl",
+   "type": "place",
+   "morphemes": "pānīm + ʾēl",
+   "gloss": "face + god",
+   "source": "Genesis"
+  },
+  {
+   "name": "ʿĒden",
+   "type": "place",
+   "morphemes": "ʿēden",
+   "gloss": "delight",
+   "source": "Genesis"
+  },
+  {
+   "name": "ʾAbīšag",
+   "type": "person",
+   "morphemes": "ʾabīšag",
+   "gloss": "name",
+   "source": "Kings"
+  },
+  {
+   "name": "Ḥārim",
+   "type": "lineage",
+   "morphemes": "ḥārim",
+   "gloss": "consecrated",
+   "source": "Chronicles"
+  },
+  {
+   "name": "Tartān",
+   "type": "title",
+   "morphemes": "tartān",
+   "gloss": "name",
+   "source": "Kings"
+  },
+  {
+   "name": "Galʿēd",
+   "type": "place",
+   "morphemes": "gal + ʿēd",
+   "gloss": "heap + witness",
+   "source": "Genesis"
+  },
+  {
+   "name": "Malkī-ṣedeq",
+   "type": "person",
+   "morphemes": "melek + ṣedeq",
+   "gloss": "king + righteousness",
+   "source": "Genesis"
+  },
+  {
+   "name": "Miṣrayim",
+   "type": "place",
+   "morphemes": "miṣrayim",
+   "gloss": "name",
+   "source": "Genesis"
+  },
+  {
+   "name": "Lūz",
+   "type": "place",
+   "morphemes": "lūz",
+   "gloss": "almond tree",
+   "source": "Genesis"
+  },
+  {
+   "name": "Mōriyyāh",
+   "type": "hill",
+   "morphemes": "mōriyyāh",
+   "gloss": "name",
+   "source": "Genesis"
+  },
+  {
+   "name": "Rēkāb",
+   "type": "lineage",
+   "morphemes": "rekeb",
+   "gloss": "chariot",
+   "source": "Jeremiah"
+  },
+  {
+   "name": "ʿEglōn",
+   "type": "person",
+   "morphemes": "ʿēgel",
+   "gloss": "calf",
+   "source": "Judges"
+  },
+  {
+   "name": "Tartāq",
+   "type": "deity",
+   "morphemes": "tartāq",
+   "gloss": "name",
+   "source": "Kings"
+  },
+  {
+   "name": "Matrī",
+   "type": "lineage",
+   "morphemes": "matrī",
+   "gloss": "name",
+   "source": "Samuel"
+  },
+  {
+   "name": "Šilōaḥ",
+   "type": "other",
+   "morphemes": "šālaḥ",
+   "gloss": "send",
+   "source": "Isaiah"
+  },
+  {
+   "name": "Liwyātān",
+   "type": "deity",
+   "morphemes": "liwyātān",
+   "gloss": "coiled one",
+   "source": "Job"
+  },
+  {
+   "name": "Gēḥazī",
+   "type": "person",
+   "morphemes": "gēḥazī",
+   "gloss": "name",
+   "source": "Kings"
+  },
+  {
+   "name": "Hadassāh",
+   "type": "person",
+   "morphemes": "hadas",
+   "gloss": "myrtle",
+   "source": "Esther"
+  },
+  {
+   "name": "Bōʿaz",
+   "type": "person",
+   "morphemes": "bōʿaz",
+   "gloss": "name",
+   "source": "Ruth"
+  },
+  {
+   "name": "Maʿazyāh",
+   "type": "lineage",
+   "morphemes": "māʿōz + yāh",
+   "gloss": "refuge + Yahweh",
+   "source": "Chronicles"
+  },
+  {
+   "name": "ʾAdrammelek",
+   "type": "deity",
+   "morphemes": "ʾadrammelek",
+   "gloss": "name",
+   "source": "Kings"
+  },
+  {
+   "name": "ʿĀš",
+   "type": "celestial",
+   "morphemes": "ʿāš",
+   "gloss": "name",
+   "source": "Job"
+  },
+  {
+   "name": "ʾElīʾāb",
+   "type": "person",
+   "morphemes": "ʾēl + ʾāb",
+   "gloss": "god + father",
+   "source": "Numbers"
+  },
+  {
+   "name": "ʿAśāhʾēl",
+   "type": "person",
+   "morphemes": "ʿāśāh + ʾēl",
+   "gloss": "make + god",
+   "source": "Samuel"
+  },
+  {
+   "name": "Baʿšāʾ",
+   "type": "person",
+   "morphemes": "baʿšāʾ",
+   "gloss": "name",
+   "source": "Kings"
+  },
+  {
+   "name": "Ṭōbiyyāh",
+   "type": "person",
+   "morphemes": "ṭōb + yāh",
+   "gloss": "good + Yahweh",
+   "source": "Ezra-Nehemiah"
+  },
+  {
+   "name": "ʾAbiyyāh",
+   "type": "person",
+   "morphemes": "ʾāb + yāh",
+   "gloss": "father + Yahweh",
+   "source": "Kings"
+  },
+  {
+   "name": "Mārāh",
+   "type": "place",
+   "morphemes": "mar",
+   "gloss": "bitter",
+   "source": "Exodus"
+  },
+  {
+   "name": "Yōʾāš",
+   "type": "person",
+   "morphemes": "yōʾāš",
+   "gloss": "name",
+   "source": "Judges"
+  },
+  {
+   "name": "Menī",
+   "type": "deity",
+   "morphemes": "menī",
+   "gloss": "fate",
+   "source": "Isaiah"
+  },
+  {
+   "name": "ʾŪriyyāh",
+   "type": "person",
+   "morphemes": "ʾōr + yāh",
+   "gloss": "light + Yahweh",
+   "source": "Samuel"
+  },
+  {
+   "name": "ʾAšīmāʾ",
+   "type": "deity",
+   "morphemes": "ʾašīmāʾ",
+   "gloss": "name",
+   "source": "Kings"
+  },
+  {
+   "name": "Zeʾēb",
+   "type": "person",
+   "morphemes": "zeʾēb",
+   "gloss": "wolf",
+   "source": "Judges"
+  },
+  {
+   "name": "Mōʾāb",
+   "type": "place",
+   "morphemes": "mōʾāb",
+   "gloss": "name",
+   "source": "Numbers"
+  },
+  {
+   "name": "ʾAbīgayil",
+   "type": "person",
+   "morphemes": "ʾāb + gīl",
+   "gloss": "father + rejoice",
+   "source": "Samuel"
+  },
+  {
+   "name": "Ṣebāʾōt",
+   "type": "title",
+   "morphemes": "ṣābāʾ",
+   "gloss": "host",
+   "source": "Samuel"
+  },
+  {
+   "name": "Dīnāh",
+   "type": "person",
+   "morphemes": "dīn",
+   "gloss": "judge",
+   "source": "Genesis"
+  },
+  {
+   "name": "Ṣebōyīm",
+   "type": "place",
+   "morphemes": "ṣebī",
+   "gloss": "gazelle",
+   "source": "Genesis"
+  },
+  {
+   "name": "Zattūʾ",
+   "type": "lineage",
+   "morphemes": "zattūʾ",
+   "gloss": "name",
+   "source": "Ezra-Nehemiah"
+  },
+  {
+   "name": "ʾĒlīm",
+   "type": "place",
+   "morphemes": "ʾēlāh",
+   "gloss": "terebinth",
+   "source": "Exodus"
+  },
+  {
+   "name": "ʾAharōn",
+   "type": "person",
+   "morphemes": "ʾaharōn",
+   "gloss": "name",
+   "source": "Exodus"
+  },
+  {
+   "name": "Yeṭūr",
+   "type": "group",
+   "morphemes": "yeṭūr",
+   "gloss": "name",
+   "source": "Genesis"
+  },
+  {
+   "name": "Rāḥāb",
+   "type": "person",
+   "morphemes": "rāḥab",
+   "gloss": "be wide",
+   "source": "Joshua"
+  },
+  {
+   "name": "Daryāweš",
+   "type": "person",
+   "morphemes": "daryāweš",
+   "gloss": "name",
+   "source": "Daniel"
+  },
+  {
+   "name": "Kenaʿan",
+   "type": "place",
+   "morphemes": "kenaʿan",
+   "gloss": "name",
+   "source": "Genesis"
+  },
+  {
+   "name": "Gilʿād",
+   "type": "place",
+   "morphemes": "gilʿād",
+   "gloss": "name",
+   "source": "Genesis"
+  },
+  {
+   "name": "Golyāt",
+   "type": "person",
+   "morphemes": "golyāt",
+   "gloss": "name",
+   "source": "Samuel"
+  },
+  {
+   "name": "Nātān",
+   "type": "person",
+   "morphemes": "nātan",
+   "gloss": "give",
+   "source": "Samuel"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "bundle",
+   "word": "ʾaguddā"
+  },
+  {
+   "english": "shoot",
+   "word": "yōneqet"
+  },
+  {
+   "english": "spikes",
+   "word": "śēk"
+  },
+  {
+   "english": "walls",
+   "word": "ḥōmā"
+  },
+  {
+   "english": "shrine",
+   "word": "bāmā"
+  },
+  {
+   "english": "fire",
+   "word": "ʾēš"
+  },
+  {
+   "english": "building",
+   "word": "binyān"
+  },
+  {
+   "english": "vessel",
+   "word": "kəlī"
+  },
+  {
+   "english": "chest",
+   "word": "ʾarōn"
+  },
+  {
+   "english": "grain",
+   "word": "dāgān"
+  },
+  {
+   "english": "shrine",
+   "word": "miqdāš"
+  },
+  {
+   "english": "breasts",
+   "word": "dad"
+  },
+  {
+   "english": "meet",
+   "word": "pāgaʿ"
+  },
+  {
+   "english": "cross",
+   "word": "tāw"
+  },
+  {
+   "english": "pincer",
+   "word": "melqāḥayim"
+  },
+  {
+   "english": "breasts",
+   "word": "šad"
+  },
+  {
+   "english": "branch",
+   "word": "śōkā"
+  },
+  {
+   "english": "band",
+   "word": "ḥagōrā"
+  },
+  {
+   "english": "shoot",
+   "word": "ḥōṭer"
+  },
+  {
+   "english": "tuft",
+   "word": "gədil"
+  },
+  {
+   "english": "pole",
+   "word": "bad"
+  },
+  {
+   "english": "spikes",
+   "word": "masmēr"
+  },
+  {
+   "english": "basket",
+   "word": "dūd"
+  },
+  {
+   "english": "trap",
+   "word": "mōqēš"
+  },
+  {
+   "english": "flag",
+   "word": "nēs"
+  },
+  {
+   "english": "drum",
+   "word": "tōp"
+  },
+  {
+   "english": "fish",
+   "word": "dāgā"
+  },
+  {
+   "english": "hand",
+   "word": "yād"
+  },
+  {
+   "english": "lightning",
+   "word": "bārāq"
+  },
+  {
+   "english": "pupil",
+   "word": "ʾīšōn"
+  },
+  {
+   "english": "fields",
+   "word": "śādeh"
+  },
+  {
+   "english": "field",
+   "word": "śādeh"
+  },
+  {
+   "english": "archer",
+   "word": "qaššāt"
+  },
+  {
+   "english": "bud",
+   "word": "ṣīṣ"
+  },
+  {
+   "english": "pond",
+   "word": "bərēkā"
+  },
+  {
+   "english": "waves",
+   "word": "gal"
+  },
+  {
+   "english": "bundle",
+   "word": "ṣərōr"
+  },
+  {
+   "english": "stick",
+   "word": "maqqēl"
+  },
+  {
+   "english": "stir",
+   "word": "ʿūr"
+  },
+  {
+   "english": "wall",
+   "word": "ḥōmā"
+  },
+  {
+   "english": "standard",
+   "word": "degel"
+  },
+  {
+   "english": "paw",
+   "word": "kap"
+  },
+  {
+   "english": "net",
+   "word": "rešet"
+  },
+  {
+   "english": "man",
+   "word": "ʾīš"
+  },
+  {
+   "english": "spear",
+   "word": "ḥanīt"
+  },
+  {
+   "english": "tree",
+   "word": "ʿēṣ"
+  },
+  {
+   "english": "crossroads",
+   "word": "pereq"
+  },
+  {
+   "english": "lance",
+   "word": "rōmaḥ"
+  },
+  {
+   "english": "eye",
+   "word": "ʿayin"
+  },
+  {
+   "english": "fields",
+   "word": "ḥelqā"
+  }
+ ]
+}

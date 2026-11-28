@@ -65,7 +65,10 @@ def unknown_letters(word):
 def read_names(lang):
     rows, seen = [], set()
     for r in contest.read_jsonl(os.path.join(ROOT, "lists", lang, "names.jsonl")):
-        parts = [m for m in r.get("morphemes", []) if m and m.strip()]
+        parts = r.get("morphemes", [])
+        if isinstance(parts, str):  # amendment 2: members written as one string joined by " + "
+            parts = parts.split(" + ")
+        parts = [m.strip() for m in parts if m and m.strip()]
         key = tuple(m.lower() for m in parts)
         if not parts or key in seen:
             continue

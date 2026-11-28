@@ -1,0 +1,663 @@
+{
+ "A_names": [
+  {
+   "name": "Antilokhos",
+   "type": "person",
+   "morphemes": [
+    "anti",
+    "lokhos"
+   ],
+   "gloss": "against + ambush",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Ōriōn",
+   "type": "celestial",
+   "morphemes": [
+    "ōriōn"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Odyssey, Works and Days"
+  },
+  {
+   "name": "Stentōr",
+   "type": "person",
+   "morphemes": [
+    "stenō"
+   ],
+   "gloss": "groan",
+   "source": "Iliad"
+  },
+  {
+   "name": "Poseidaōn",
+   "type": "deity",
+   "morphemes": [
+    "poseidaōn"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Odyssey, Theogony, Works and Days"
+  },
+  {
+   "name": "Lyktos",
+   "type": "place",
+   "morphemes": [
+    "lyktos"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Theogony"
+  },
+  {
+   "name": "Kleitos",
+   "type": "person",
+   "morphemes": [
+    "kleitos"
+   ],
+   "gloss": "famed",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Lykaōn",
+   "type": "person",
+   "morphemes": [
+    "lykaōn"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Tykhios",
+   "type": "person",
+   "morphemes": [
+    "tykhios"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Boiōtoi",
+   "type": "group",
+   "morphemes": [
+    "boiōtos"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Polydeukēs",
+   "type": "person",
+   "morphemes": [
+    "polydeukēs"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Telamōn",
+   "type": "person",
+   "morphemes": [
+    "telamōn"
+   ],
+   "gloss": "strap",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Erikhthonios",
+   "type": "person",
+   "morphemes": [
+    "eri",
+    "khthōn"
+   ],
+   "gloss": "very + earth",
+   "source": "Iliad"
+  },
+  {
+   "name": "Laodikē",
+   "type": "person",
+   "morphemes": [
+    "laos",
+    "dikē"
+   ],
+   "gloss": "people + justice",
+   "source": "Iliad"
+  },
+  {
+   "name": "Tēlepylos",
+   "type": "place",
+   "morphemes": [
+    "tēle",
+    "pylē"
+   ],
+   "gloss": "far + gate",
+   "source": "Odyssey"
+  },
+  {
+   "name": "Ankhialos",
+   "type": "person",
+   "morphemes": [
+    "ankhi",
+    "hals"
+   ],
+   "gloss": "near + sea",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Latinos",
+   "type": "person",
+   "morphemes": [
+    "latinos"
+   ],
+   "gloss": "name",
+   "source": "Theogony"
+  },
+  {
+   "name": "Oileus",
+   "type": "person",
+   "morphemes": [
+    "oileus"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Antiphatēs",
+   "type": "person",
+   "morphemes": [
+    "antiphatēs"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Pēneios",
+   "type": "river",
+   "morphemes": [
+    "pēneios"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Theogony"
+  },
+  {
+   "name": "Alēsion",
+   "type": "place",
+   "morphemes": [
+    "alēsion"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Koiranos",
+   "type": "person",
+   "morphemes": [
+    "koiranos"
+   ],
+   "gloss": "ruler",
+   "source": "Iliad"
+  },
+  {
+   "name": "Amphimedōn",
+   "type": "person",
+   "morphemes": [
+    "amphi",
+    "medō"
+   ],
+   "gloss": "around + rule",
+   "source": "Odyssey"
+  },
+  {
+   "name": "Asteropaios",
+   "type": "person",
+   "morphemes": [
+    "asteropē"
+   ],
+   "gloss": "lightning",
+   "source": "Iliad"
+  },
+  {
+   "name": "Mēioniē",
+   "type": "place",
+   "morphemes": [
+    "mēioniē"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Aigialos",
+   "type": "place",
+   "morphemes": [
+    "aigialos"
+   ],
+   "gloss": "shore",
+   "source": "Iliad"
+  },
+  {
+   "name": "Kallikolōnē",
+   "type": "hill",
+   "morphemes": [
+    "kalos",
+    "kolōnē"
+   ],
+   "gloss": "beautiful + hill",
+   "source": "Iliad"
+  },
+  {
+   "name": "Lindos",
+   "type": "place",
+   "morphemes": [
+    "lindos"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Thoas",
+   "type": "person",
+   "morphemes": [
+    "thoos"
+   ],
+   "gloss": "swift",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Taphos",
+   "type": "place",
+   "morphemes": [
+    "taphos"
+   ],
+   "gloss": "name",
+   "source": "Odyssey"
+  },
+  {
+   "name": "Ankhisēs",
+   "type": "person",
+   "morphemes": [
+    "ankhisēs"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Theogony"
+  },
+  {
+   "name": "Erythrai",
+   "type": "place",
+   "morphemes": [
+    "erythros"
+   ],
+   "gloss": "red",
+   "source": "Iliad"
+  },
+  {
+   "name": "Andraimōn",
+   "type": "person",
+   "morphemes": [
+    "andraimōn"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Marathōn",
+   "type": "place",
+   "morphemes": [
+    "marathon"
+   ],
+   "gloss": "fennel",
+   "source": "Odyssey"
+  },
+  {
+   "name": "Polypoitēs",
+   "type": "person",
+   "morphemes": [
+    "polypoitēs"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Epidauros",
+   "type": "place",
+   "morphemes": [
+    "epidauros"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Lēdē",
+   "type": "person",
+   "morphemes": [
+    "lēdē"
+   ],
+   "gloss": "name",
+   "source": "Odyssey"
+  },
+  {
+   "name": "Kares",
+   "type": "group",
+   "morphemes": [
+    "kar"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Pēnelopeia",
+   "type": "person",
+   "morphemes": [
+    "pēnelopeia"
+   ],
+   "gloss": "name",
+   "source": "Odyssey"
+  },
+  {
+   "name": "Ktēsios",
+   "type": "person",
+   "morphemes": [
+    "ktaomai"
+   ],
+   "gloss": "acquire",
+   "source": "Odyssey"
+  },
+  {
+   "name": "Thoōn",
+   "type": "person",
+   "morphemes": [
+    "thoos"
+   ],
+   "gloss": "swift",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Dexiadēs",
+   "type": "lineage",
+   "morphemes": [
+    "dexios"
+   ],
+   "gloss": "skilful",
+   "source": "Iliad"
+  },
+  {
+   "name": "Kapaneus",
+   "type": "person",
+   "morphemes": [
+    "kapaneus"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Ōgygiē",
+   "type": "place",
+   "morphemes": [
+    "ōgygiē"
+   ],
+   "gloss": "name",
+   "source": "Odyssey"
+  },
+  {
+   "name": "Gygaiē",
+   "type": "other",
+   "morphemes": [
+    "gygaiē"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Polybos",
+   "type": "person",
+   "morphemes": [
+    "polybos"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Tydeus",
+   "type": "person",
+   "morphemes": [
+    "tydeus"
+   ],
+   "gloss": "name",
+   "source": "Iliad, Odyssey"
+  },
+  {
+   "name": "Asinē",
+   "type": "place",
+   "morphemes": [
+    "asinē"
+   ],
+   "gloss": "name",
+   "source": "Iliad"
+  },
+  {
+   "name": "Hylē",
+   "type": "place",
+   "morphemes": [
+    "hylē"
+   ],
+   "gloss": "wood",
+   "source": "Iliad"
+  },
+  {
+   "name": "Glaukos",
+   "type": "person",
+   "morphemes": [
+    "glaukos"
+   ],
+   "gloss": "gleaming",
+   "source": "Iliad"
+  },
+  {
+   "name": "Tantalos",
+   "type": "person",
+   "morphemes": [
+    "tantalos"
+   ],
+   "gloss": "name",
+   "source": "Odyssey"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "carry",
+   "word": "pherō"
+  },
+  {
+   "english": "crowd",
+   "word": "homilos"
+  },
+  {
+   "english": "jar",
+   "word": "amphiphoreus"
+  },
+  {
+   "english": "tuft",
+   "word": "lophos"
+  },
+  {
+   "english": "building",
+   "word": "domos"
+  },
+  {
+   "english": "pole",
+   "word": "kontos"
+  },
+  {
+   "english": "eye",
+   "word": "omma"
+  },
+  {
+   "english": "spikes",
+   "word": "skolops"
+  },
+  {
+   "english": "building",
+   "word": "dōma"
+  },
+  {
+   "english": "breasts",
+   "word": "stēthos"
+  },
+  {
+   "english": "basket",
+   "word": "talaros"
+  },
+  {
+   "english": "tree",
+   "word": "drys"
+  },
+  {
+   "english": "staff",
+   "word": "skēptron"
+  },
+  {
+   "english": "two",
+   "word": "dyo"
+  },
+  {
+   "english": "boomerang",
+   "word": "kalaurops"
+  },
+  {
+   "english": "house",
+   "word": "domos"
+  },
+  {
+   "english": "fishing",
+   "word": "ikhthyaō"
+  },
+  {
+   "english": "hills",
+   "word": "kolōnē"
+  },
+  {
+   "english": "lamp",
+   "word": "lykhnos"
+  },
+  {
+   "english": "peaks",
+   "word": "akris"
+  },
+  {
+   "english": "stir",
+   "word": "kykaō"
+  },
+  {
+   "english": "heads",
+   "word": "kephalē"
+  },
+  {
+   "english": "handle",
+   "word": "kōpē"
+  },
+  {
+   "english": "band",
+   "word": "desmos"
+  },
+  {
+   "english": "carrier",
+   "word": "phoreus"
+  },
+  {
+   "english": "star",
+   "word": "astron"
+  },
+  {
+   "english": "worker",
+   "word": "erithos"
+  },
+  {
+   "english": "chest",
+   "word": "khēlos"
+  },
+  {
+   "english": "wheel",
+   "word": "kyklos"
+  },
+  {
+   "english": "sheaf",
+   "word": "dragma"
+  },
+  {
+   "english": "roof",
+   "word": "orophē"
+  },
+  {
+   "english": "plant",
+   "word": "ernos"
+  },
+  {
+   "english": "twig",
+   "word": "rhōps"
+  },
+  {
+   "english": "eye",
+   "word": "ophthalmos"
+  },
+  {
+   "english": "nets",
+   "word": "diktyon"
+  },
+  {
+   "english": "grain",
+   "word": "pyros"
+  },
+  {
+   "english": "heap",
+   "word": "this"
+  },
+  {
+   "english": "carry",
+   "word": "phoreō"
+  },
+  {
+   "english": "star",
+   "word": "astēr"
+  },
+  {
+   "english": "lamp",
+   "word": "lamptēr"
+  },
+  {
+   "english": "vein",
+   "word": "phleps"
+  },
+  {
+   "english": "hook",
+   "word": "ankistron"
+  },
+  {
+   "english": "vessel",
+   "word": "angos"
+  },
+  {
+   "english": "bud",
+   "word": "kalyx"
+  },
+  {
+   "english": "eyes",
+   "word": "osse"
+  },
+  {
+   "english": "box",
+   "word": "larnax"
+  },
+  {
+   "english": "sit",
+   "word": "hēmai"
+  },
+  {
+   "english": "twig",
+   "word": "orpēx"
+  },
+  {
+   "english": "spokes",
+   "word": "knēmē"
+  },
+  {
+   "english": "hearth",
+   "word": "histiē"
+  }
+ ]
+}

@@ -1,0 +1,708 @@
+{
+ "A_names": [
+  {
+   "name": "Utiyañcēralātaṉ",
+   "type": "person",
+   "morphemes": [
+    "utiyaṉ",
+    "cēral",
+    "ātaṉ"
+   ],
+   "gloss": "name + Chera + name",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Vaḻuti",
+   "type": "title",
+   "morphemes": [
+    "vaḻuti"
+   ],
+   "gloss": "Pandya king",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Poṉmaṇiyār",
+   "type": "person",
+   "morphemes": [
+    "poṉ",
+    "maṇi"
+   ],
+   "gloss": "gold + gem",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Iḷaṅkīrantaiyār",
+   "type": "person",
+   "morphemes": [
+    "iḷam",
+    "kīraṉ",
+    "tantai"
+   ],
+   "gloss": "young + name + father",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Kuṭavar",
+   "type": "group",
+   "morphemes": [
+    "kuṭavar"
+   ],
+   "gloss": "westerners",
+   "source": "Paṭṭiṉappālai"
+  },
+  {
+   "name": "Nakkaṇṇaiyār",
+   "type": "person",
+   "morphemes": [
+    "nal",
+    "kaṇṇai"
+   ],
+   "gloss": "good + name",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Neṭuveṇṇilaviṉār",
+   "type": "person",
+   "morphemes": [
+    "neṭu",
+    "veḷ",
+    "nilavu"
+   ],
+   "gloss": "long + white + moonlight",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Mutukaṇṇaṉ Cāttaṉār",
+   "type": "person",
+   "morphemes": [
+    "mutu",
+    "kaṇṇaṉ",
+    "cāttaṉ"
+   ],
+   "gloss": "old + Krishna + Sasta",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Ciṟaikkuṭi",
+   "type": "place",
+   "morphemes": [
+    "ciṟai",
+    "kuṭi"
+   ],
+   "gloss": "name + settlement",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Īḻattup Pūtaṉtēvaṉār",
+   "type": "person",
+   "morphemes": [
+    "īḻam",
+    "pūtaṉ",
+    "tēvaṉ"
+   ],
+   "gloss": "Ceylon + spirit + god",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Kācipaṉ Kīraṉār",
+   "type": "person",
+   "morphemes": [
+    "kācipaṉ",
+    "kīraṉ"
+   ],
+   "gloss": "Kasyapa + name",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Cītai",
+   "type": "person",
+   "morphemes": [
+    "cītai"
+   ],
+   "gloss": "Sita",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Irumpiṭarttalaiyār",
+   "type": "person",
+   "morphemes": [
+    "iru",
+    "piṭar",
+    "talai"
+   ],
+   "gloss": "great + nape + head",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Vāṭṭāṟu",
+   "type": "place",
+   "morphemes": [
+    "vāṭṭāṟu"
+   ],
+   "gloss": "name",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Kaṇaikkāl Irumpoṟai",
+   "type": "person",
+   "morphemes": [
+    "kaṇaikkāl",
+    "iru",
+    "poṟai"
+   ],
+   "gloss": "name + great + Porai lineage",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Viṭṭakutiraiyār",
+   "type": "person",
+   "morphemes": [
+    "viṭu",
+    "kutirai"
+   ],
+   "gloss": "release + horse",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Uruttiraṅkaṇṇaṉār",
+   "type": "person",
+   "morphemes": [
+    "uruttiraṉ",
+    "kaṇṇaṉ"
+   ],
+   "gloss": "Rudra + Krishna",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Iḷaṅkuṭṭuvaṉ",
+   "type": "person",
+   "morphemes": [
+    "iḷam",
+    "kuṭṭuvaṉ"
+   ],
+   "gloss": "young + Chera king",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Irumpoṟai",
+   "type": "lineage",
+   "morphemes": [
+    "iru",
+    "poṟai"
+   ],
+   "gloss": "great + Porai lineage",
+   "source": "Patiṟṟuppattu"
+  },
+  {
+   "name": "Paraṅkuṉṟu",
+   "type": "hill",
+   "morphemes": [
+    "param",
+    "kuṉṟu"
+   ],
+   "gloss": "name + hill",
+   "source": "Akanāṉūṟu"
+  },
+  {
+   "name": "Aṇilāṭumuṉṟilār",
+   "type": "person",
+   "morphemes": [
+    "aṇil",
+    "āṭu",
+    "muṉṟil"
+   ],
+   "gloss": "squirrel + play + courtyard",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Nārmuṭiccēral",
+   "type": "person",
+   "morphemes": [
+    "nār",
+    "muṭi",
+    "cēral"
+   ],
+   "gloss": "fibre + crown + Chera",
+   "source": "Patiṟṟuppattu"
+  },
+  {
+   "name": "Kumaṇaṉ",
+   "type": "person",
+   "morphemes": [
+    "kumaṇaṉ"
+   ],
+   "gloss": "name",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Kumuḻūr",
+   "type": "place",
+   "morphemes": [
+    "kumuḻ",
+    "ūr"
+   ],
+   "gloss": "name + town",
+   "source": "Tamil-Brahmi inscriptions"
+  },
+  {
+   "name": "Neṭuvēḷ",
+   "type": "deity",
+   "morphemes": [
+    "neṭu",
+    "vēḷ"
+   ],
+   "gloss": "long + chieftain",
+   "source": "Akanāṉūṟu"
+  },
+  {
+   "name": "Cēral",
+   "type": "lineage",
+   "morphemes": [
+    "cēral"
+   ],
+   "gloss": "Chera",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Maḻavar",
+   "type": "group",
+   "morphemes": [
+    "maḻavar"
+   ],
+   "gloss": "name",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Kēcavaṉār",
+   "type": "person",
+   "morphemes": [
+    "kēcavaṉ"
+   ],
+   "gloss": "Kesava",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Kāppiyāṟu",
+   "type": "place",
+   "morphemes": [
+    "kāppiyāṟu"
+   ],
+   "gloss": "name",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Māntarañcēral Irumpoṟai",
+   "type": "person",
+   "morphemes": [
+    "māntaram",
+    "cēral",
+    "iru",
+    "poṟai"
+   ],
+   "gloss": "name + Chera + great + Porai lineage",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Paḻaiyōḷ",
+   "type": "deity",
+   "morphemes": [
+    "paḻaiyōḷ"
+   ],
+   "gloss": "ancient one",
+   "source": "Tirumurukāṟṟuppaṭai"
+  },
+  {
+   "name": "Peruñcēral Irumpoṟai",
+   "type": "person",
+   "morphemes": [
+    "peru",
+    "cēral",
+    "iru",
+    "poṟai"
+   ],
+   "gloss": "great + Chera + great + Porai lineage",
+   "source": "Patiṟṟuppattu"
+  },
+  {
+   "name": "Āvaṭutuṟai",
+   "type": "place",
+   "morphemes": [
+    "āvaṭu",
+    "tuṟai"
+   ],
+   "gloss": "name + ford",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Kavuṇiyaṉ Pūtattaṉār",
+   "type": "person",
+   "morphemes": [
+    "kavuṇiyaṉ",
+    "pūtam",
+    "tattaṉ"
+   ],
+   "gloss": "Kaundinya + spirit + given",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Varuṭai",
+   "type": "celestial",
+   "morphemes": [
+    "varuṭai"
+   ],
+   "gloss": "ram",
+   "source": "Paripāṭal"
+  },
+  {
+   "name": "Kaṇṇaṉār",
+   "type": "person",
+   "morphemes": [
+    "kaṇṇaṉ"
+   ],
+   "gloss": "Krishna",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Peruṅkuṉṟūr",
+   "type": "place",
+   "morphemes": [
+    "peru",
+    "kuṉṟu",
+    "ūr"
+   ],
+   "gloss": "great + hill + town",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Veṇṇākaṉār",
+   "type": "person",
+   "morphemes": [
+    "veḷ",
+    "nākaṉ"
+   ],
+   "gloss": "white + serpent",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Mīṉeṟitūṇṭilār",
+   "type": "person",
+   "morphemes": [
+    "mīṉ",
+    "eṟi",
+    "tūṇṭil"
+   ],
+   "gloss": "fish + cast + hook",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Piramaṉār",
+   "type": "person",
+   "morphemes": [
+    "piramaṉ"
+   ],
+   "gloss": "Brahma",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Vēmpaṟṟūr",
+   "type": "place",
+   "morphemes": [
+    "vēmpu",
+    "paṟṟu",
+    "ūr"
+   ],
+   "gloss": "neem + holding + town",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Muṭamōciyār",
+   "type": "person",
+   "morphemes": [
+    "muṭam",
+    "mōci"
+   ],
+   "gloss": "crooked + name",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Neytalaṅkāṉal",
+   "type": "place",
+   "morphemes": [
+    "neytal",
+    "kāṉal"
+   ],
+   "gloss": "water lily + seashore grove",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Kāntāram",
+   "type": "other",
+   "morphemes": [
+    "kāntāram"
+   ],
+   "gloss": "name",
+   "source": "Paripāṭal"
+  },
+  {
+   "name": "Kuṟuṅkuṭi Marutaṉār",
+   "type": "person",
+   "morphemes": [
+    "kuṟu",
+    "kuṭi",
+    "marutaṉ"
+   ],
+   "gloss": "short + settlement + name",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Ciṟukantaṉār",
+   "type": "person",
+   "morphemes": [
+    "ciṟu",
+    "kantaṉ"
+   ],
+   "gloss": "small + Skanda",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Kaṭaikkuḷam",
+   "type": "celestial",
+   "morphemes": [
+    "kaṭai",
+    "kuḷam"
+   ],
+   "gloss": "last + tank",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Kāmaṉ",
+   "type": "deity",
+   "morphemes": [
+    "kāmaṉ"
+   ],
+   "gloss": "desire",
+   "source": "Kalittokai"
+  },
+  {
+   "name": "Māmūlaṉār",
+   "type": "person",
+   "morphemes": [
+    "mā",
+    "mūlaṉ"
+   ],
+   "gloss": "great + name",
+   "source": "Sangam colophons (poet names)"
+  },
+  {
+   "name": "Maḷḷaṉār",
+   "type": "person",
+   "morphemes": [
+    "maḷḷaṉ"
+   ],
+   "gloss": "warrior",
+   "source": "Sangam colophons (poet names)"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "building",
+   "word": "maṉai"
+  },
+  {
+   "english": "tongs",
+   "word": "kuṟaṭu"
+  },
+  {
+   "english": "catfish",
+   "word": "vāḷai"
+  },
+  {
+   "english": "gate",
+   "word": "kaṭai"
+  },
+  {
+   "english": "sheaf",
+   "word": "ari"
+  },
+  {
+   "english": "breasts",
+   "word": "koṅkai"
+  },
+  {
+   "english": "lizard",
+   "word": "ōnti"
+  },
+  {
+   "english": "cover",
+   "word": "pōrvai"
+  },
+  {
+   "english": "person",
+   "word": "āḷ"
+  },
+  {
+   "english": "breasts",
+   "word": "mulai"
+  },
+  {
+   "english": "branch",
+   "word": "kiḷai"
+  },
+  {
+   "english": "barb",
+   "word": "muḷ"
+  },
+  {
+   "english": "trap",
+   "word": "kaṇṇi"
+  },
+  {
+   "english": "seeds",
+   "word": "virai"
+  },
+  {
+   "english": "tally",
+   "word": "kuṟi"
+  },
+  {
+   "english": "plant",
+   "word": "ceṭi"
+  },
+  {
+   "english": "shrine",
+   "word": "kōyil"
+  },
+  {
+   "english": "bend",
+   "word": "vaḷaivu"
+  },
+  {
+   "english": "strokes",
+   "word": "kōṭu"
+  },
+  {
+   "english": "fish trap",
+   "word": "paṟi"
+  },
+  {
+   "english": "dried fish",
+   "word": "uṇaṅkal"
+  },
+  {
+   "english": "fill",
+   "word": "niṟai"
+  },
+  {
+   "english": "hand",
+   "word": "kai"
+  },
+  {
+   "english": "lance",
+   "word": "vēl"
+  },
+  {
+   "english": "pond",
+   "word": "kuḷam"
+  },
+  {
+   "english": "eyes",
+   "word": "kaṇ"
+  },
+  {
+   "english": "ear",
+   "word": "kātu"
+  },
+  {
+   "english": "arrow",
+   "word": "kaṇai"
+  },
+  {
+   "english": "bud",
+   "word": "mukai"
+  },
+  {
+   "english": "point",
+   "word": "muṉai"
+  },
+  {
+   "english": "woman",
+   "word": "peṇ"
+  },
+  {
+   "english": "bundle",
+   "word": "kaṭṭu"
+  },
+  {
+   "english": "stack",
+   "word": "pōr"
+  },
+  {
+   "english": "stand",
+   "word": "nil"
+  },
+  {
+   "english": "wheel",
+   "word": "āḻi"
+  },
+  {
+   "english": "sprout",
+   "word": "kuruttu"
+  },
+  {
+   "english": "standard",
+   "word": "koṭi"
+  },
+  {
+   "english": "mother",
+   "word": "yāy"
+  },
+  {
+   "english": "moon",
+   "word": "nilā"
+  },
+  {
+   "english": "lightning",
+   "word": "miṉṉal"
+  },
+  {
+   "english": "stir",
+   "word": "kalakku"
+  },
+  {
+   "english": "shoot",
+   "word": "taḷir"
+  },
+  {
+   "english": "turn",
+   "word": "cuḻal"
+  },
+  {
+   "english": "crab",
+   "word": "alavaṉ"
+  },
+  {
+   "english": "ladder",
+   "word": "ēṇi"
+  },
+  {
+   "english": "drop",
+   "word": "tuḷi"
+  },
+  {
+   "english": "fan",
+   "word": "viciṟi"
+  },
+  {
+   "english": "building",
+   "word": "māṭam"
+  },
+  {
+   "english": "sun",
+   "word": "ñāyiṟu"
+  },
+  {
+   "english": "grain",
+   "word": "maṇi"
+  }
+ ]
+}

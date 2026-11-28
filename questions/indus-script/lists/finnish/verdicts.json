@@ -1,0 +1,506 @@
+{
+ "A": [
+  {
+   "item": "Kalevatar",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Kalevatar, kaunis neiti'."
+  },
+  {
+   "item": "Ilmala",
+   "verdict": "ok",
+   "reason": "Kanteletar: 'Lapsi Ilmalan lahella'."
+  },
+  {
+   "item": "Rusko",
+   "verdict": "ok",
+   "reason": "Medieval settlement and church (c. 1510-1530) in Finland Proper; real old place name."
+  },
+  {
+   "item": "Kuu",
+   "verdict": "ok",
+   "reason": "Kalevala; kuu 'moon' is native."
+  },
+  {
+   "item": "Puukko",
+   "verdict": "ok",
+   "reason": "Listed among old names by Maliniemi 1933 (via fi.wikipedia's summary); primary record not seen."
+  },
+  {
+   "item": "Vaania",
+   "verdict": "ok",
+   "reason": "Cited from Stoebke 1964: 173 in Raunamaa 2017; also in Maliniemi's list."
+  },
+  {
+   "item": "Vuokkiniemi",
+   "verdict": "ok",
+   "reason": "Named in Lönnrot's Kanteletar preface as a collecting parish."
+  },
+  {
+   "item": "Neuvoinen",
+   "verdict": "ok",
+   "reason": "Village name in Raunamaa 2019 appendix (SA), element Neuvo."
+  },
+  {
+   "item": "Horna",
+   "verdict": "ok",
+   "reason": "Kalevala: 'hongat Hornan kalliolla'."
+  },
+  {
+   "item": "Laukko",
+   "verdict": "ok",
+   "reason": "Kanteletar: 'Laukon Klaus Kurki'."
+  },
+  {
+   "item": "Leino",
+   "verdict": "ok",
+   "reason": "In Vilkuna 1976 list; byname 'Juuan leinonn' 1552 Muolaa (Nissilä)."
+  },
+  {
+   "item": "Tulo",
+   "verdict": "ok",
+   "reason": "Maliniemi 1933 lists Tulo ('tuli'); a Swedish source (Tule/Tulo) is also possible, so the gloss is debatable, not clearly wrong."
+  },
+  {
+   "item": "Pakkanen",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Pakkanen, Puhurin poika'."
+  },
+  {
+   "item": "Ilpotar",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Ilpotar, hyvä emäntä'."
+  },
+  {
+   "item": "Tuomikki",
+   "verdict": "cannot verify",
+   "reason": "Only support is fi.wikipedia's summary of Maliniemi 1933; otherwise documented as a nature-themed almanac name (1929-1949), and no medieval record was found."
+  },
+  {
+   "item": "Iha",
+   "verdict": "ok",
+   "reason": "Simplex name and most common pre-Christian element (Raunamaa 2019, 2021; Rintala 2008)."
+  },
+  {
+   "item": "Kojo",
+   "verdict": "ok",
+   "reason": "Kanteletar poem 217 'Kojo ja Anni'."
+  },
+  {
+   "item": "Koitere",
+   "verdict": "ok",
+   "reason": "Kanteletar: 'Koiteren koriat sulhot'."
+  },
+  {
+   "item": "Aaltojen kuningas",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Ahto, aaltojen kuningas'."
+  },
+  {
+   "item": "Rasantaja",
+   "verdict": "ok",
+   "reason": "Listed by Maliniemi 1933 (via fi.wikipedia); fits the agent-noun name type (Ampuja, Laulaja), but no primary record was found."
+  },
+  {
+   "item": "Lyylikki",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Lyylikki, lylyjen seppä'."
+  },
+  {
+   "item": "Kuura",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Kuura kuulemaisissani', the byname of Tiera."
+  },
+  {
+   "item": "Syöjätär",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Sylki Syöjätär vesille'."
+  },
+  {
+   "item": "Partanen",
+   "verdict": "ok",
+   "reason": "Old eastern family name from parta 'beard'."
+  },
+  {
+   "item": "Ukon vakka",
+   "verdict": "ok",
+   "reason": "Agricola 1551: 'Sihen haetin ukon wacka'."
+  },
+  {
+   "item": "Kemijoki",
+   "verdict": "ok",
+   "reason": "Kalevala: 'pää keikkui Kemijoella'."
+  },
+  {
+   "item": "Turku",
+   "verdict": "ok",
+   "reason": "Kanteletar: 'Menin Turkuhun'; from East Slavic 'market'."
+  },
+  {
+   "item": "Rongoteus",
+   "verdict": "ok",
+   "reason": "Agricola 1551: 'Rongoteus Ruista annoi'."
+  },
+  {
+   "item": "Remunen",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Humala, Remusen poika'."
+  },
+  {
+   "item": "Kipumäki",
+   "verdict": "ok",
+   "reason": "Kalevala: 'keskelle Kipumäkeä'."
+  },
+  {
+   "item": "Palvoinen",
+   "verdict": "ok",
+   "reason": "Kalevala, paired with Virokannas."
+  },
+  {
+   "item": "Virankannos",
+   "verdict": "ok",
+   "reason": "Agricola 1551: 'Wirancannos Cauran caitzi'."
+  },
+  {
+   "item": "Häme",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Hämehessä häntä häilyi'."
+  },
+  {
+   "item": "Kortelainen",
+   "verdict": "ok",
+   "reason": "Old eastern family name; the korte etymology is debatable but defensible."
+  },
+  {
+   "item": "Vartia",
+   "verdict": "ok",
+   "reason": "In Maliniemi's list; Nissilä derives Vartia(inen) partly from vartia 'guard'."
+  },
+  {
+   "item": "Vihattula",
+   "verdict": "ok",
+   "reason": "Village name in Raunamaa 2019 (SA), from the personal name Vihattu < viha."
+  },
+  {
+   "item": "Kainuu",
+   "verdict": "ok",
+   "reason": "Kanteletar: 'Kaatrokoski Kainuhussa'."
+  },
+  {
+   "item": "Säisä",
+   "verdict": "ok",
+   "reason": "Listed by Maliniemi 1933 (via fi.wikipedia); primary record not seen."
+  },
+  {
+   "item": "Kemi",
+   "verdict": "ok",
+   "reason": "Kanteletar: 'Kemin lohta keittämähän'."
+  },
+  {
+   "item": "Sikuri",
+   "verdict": "ok",
+   "reason": "Village of Sikuri in Kyrö parish, SA: 103, cited in Raunamaa 2019."
+  },
+  {
+   "item": "Mieho",
+   "verdict": "ok",
+   "reason": "In Maliniemi's list and Kepsu's name-element list (Raunamaa 2019)."
+  },
+  {
+   "item": "Melatar",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Melatar on, mielivaimo!'."
+  },
+  {
+   "item": "Suolasalmi",
+   "verdict": "ok",
+   "reason": "Kalevala: 'souttu Suolasalmen kautta'."
+  },
+  {
+   "item": "Kurkijoki",
+   "verdict": "ok",
+   "reason": "Named in the Kanteletar preface; recorded from 1396."
+  },
+  {
+   "item": "Kärkkäinen",
+   "verdict": "ok",
+   "reason": "Old eastern (Savo) family name."
+  },
+  {
+   "item": "Kipuvuori",
+   "verdict": "ok",
+   "reason": "Kalevala: 'Kipuvuoren kukkulalle'."
+  },
+  {
+   "item": "Torio",
+   "verdict": "ok",
+   "reason": "Listed by Vilkuna 1976 (via fi.wikipedia); primary record not seen."
+  },
+  {
+   "item": "Sarajala",
+   "verdict": "ok",
+   "reason": "Kanteletar: 'Saunoa Sarajalasta'."
+  },
+  {
+   "item": "Päiviä",
+   "verdict": "ok",
+   "reason": "Listed by Vilkuna 1976 (via fi.wikipedia); Päivä is a recognised old name element."
+  },
+  {
+   "item": "Miela",
+   "verdict": "ok",
+   "reason": "Listed by Maliniemi 1933; the stem Miela- is attested in Mielakka (Raunamaa)."
+  }
+ ],
+ "B": [
+  {
+   "item": "käsi",
+   "verdict": "ok",
+   "reason": "Uralic *käte."
+  },
+  {
+   "item": "puola",
+   "verdict": "wrong",
+   "reason": "In the 'spoke, rung' sense it is a loan from Swedish spole (Old Norse spóla)."
+  },
+  {
+   "item": "silmu",
+   "verdict": "wrong",
+   "reason": "Derived from silmä, but recorded in 1745 only as 'lamprey'; the 'bud' sense was established in the 20th century (NSES)."
+  },
+  {
+   "item": "äiti",
+   "verdict": "wrong",
+   "reason": "Germanic loan (cf. Gothic aiþei) per SSA; the native word is emä."
+  },
+  {
+   "item": "parvi",
+   "verdict": "ok",
+   "reason": "Uralic *parewa 'flock, group'."
+  },
+  {
+   "item": "seiväs",
+   "verdict": "wrong",
+   "reason": "Baltic loan (cf. Lithuanian stíebas) per Hakulinen SKRK and Wiktionary."
+  },
+  {
+   "item": "huone",
+   "verdict": "ok",
+   "reason": "Native Proto-Finnic *hoonëh; archaic sense 'house, building'."
+  },
+  {
+   "item": "rinta",
+   "verdict": "ok",
+   "reason": "Native Finnic word with a Saami cognate."
+  },
+  {
+   "item": "viiksi",
+   "verdict": "cannot verify",
+   "reason": "SSA and NSES suggest a recent sound-symbolic origin; I found no early attestation and it is absent from the Kalevala and Kanteletar."
+  },
+  {
+   "item": "tutkain",
+   "verdict": "ok",
+   "reason": "Native; 'sharp point, prick' (Kalevala 'miekan tutkaimia'), a near-synonym."
+  },
+  {
+   "item": "astia",
+   "verdict": "ok",
+   "reason": "Native Proto-Finnic *astija."
+  },
+  {
+   "item": "katto",
+   "verdict": "ok",
+   "reason": "From kattaa; attested in Agricola."
+  },
+  {
+   "item": "pino",
+   "verdict": "wrong",
+   "reason": "Old Germanic loan (*fīnō 'heap') per Hakulinen SKRK and Wiktionary."
+  },
+  {
+   "item": "polvi",
+   "verdict": "ok",
+   "reason": "Uralic *polwe; also means 'bend' (joen polvi)."
+  },
+  {
+   "item": "varpu",
+   "verdict": "ok",
+   "reason": "Native Finnic *varpu."
+  },
+  {
+   "item": "hanko",
+   "verdict": "ok",
+   "reason": "Finnic derivative of hanka (EVE: hanka is almost certainly a Baltic loan), so the word is not itself a loan; it occurs in folk poetry."
+  },
+  {
+   "item": "korva",
+   "verdict": "ok",
+   "reason": "Native Proto-Finnic *korva."
+  },
+  {
+   "item": "lippu",
+   "verdict": "ok",
+   "reason": "Native expressive stem; 'banner' sense in Biblia 1776 (Isa. 62:10)."
+  },
+  {
+   "item": "kasa",
+   "verdict": "wrong",
+   "reason": "Old Germanic / Proto-Norse loan (cf. Old Norse kǫs) per Hakulinen SKRK and Wiktionary."
+  },
+  {
+   "item": "juova",
+   "verdict": "ok",
+   "reason": "Native Proto-Finnic *jooma 'streak'; 'stripe, line' is a near-synonym."
+  },
+  {
+   "item": "lyhde",
+   "verdict": "ok",
+   "reason": "Native Finnic; Kanteletar 'lyhtehillä'."
+  },
+  {
+   "item": "evä",
+   "verdict": "ok",
+   "reason": "Native Proto-Finnic *evä."
+  },
+  {
+   "item": "vainio",
+   "verdict": "wrong",
+   "reason": "Old Germanic loan (*hwainiō) per Hakulinen SKRK and Wiktionary."
+  },
+  {
+   "item": "side",
+   "verdict": "ok",
+   "reason": "From sitoa 'bind', native."
+  },
+  {
+   "item": "terttu",
+   "verdict": "cannot verify",
+   "reason": "Origin unknown (compared with Old Norse stertr); not found in the Kalevala, the Kanteletar or the old texts I could search."
+  },
+  {
+   "item": "suomu",
+   "verdict": "ok",
+   "reason": "Uralic *śëme."
+  },
+  {
+   "item": "ies",
+   "verdict": "wrong",
+   "reason": "Early Slavic loan (Proto-Slavic *jьgo, gen. *jьžese) per Wiktionary."
+  },
+  {
+   "item": "pyytää",
+   "verdict": "ok",
+   "reason": "Native; old sense 'hunt, fish', i.e. to catch."
+  },
+  {
+   "item": "hammas",
+   "verdict": "wrong",
+   "reason": "Baltic loan (cf. Latvian zobs, Lithuanian žambas) per EVE; it replaced native pii."
+  },
+  {
+   "item": "kolme",
+   "verdict": "ok",
+   "reason": "Uralic *kolme."
+  },
+  {
+   "item": "nainen",
+   "verdict": "ok",
+   "reason": "Native; attested in Agricola."
+  },
+  {
+   "item": "päivä",
+   "verdict": "ok",
+   "reason": "Uralic *päjwä 'sun'; poetic or archaic sense 'sun'."
+  },
+  {
+   "item": "ihminen",
+   "verdict": "ok",
+   "reason": "Native; older form inhiminen."
+  },
+  {
+   "item": "tassu",
+   "verdict": "wrong",
+   "reason": "Loan from Swedish tass 'paw'."
+  },
+  {
+   "item": "kohdata",
+   "verdict": "ok",
+   "reason": "From kohta; attested in Agricola."
+  },
+  {
+   "item": "keko",
+   "verdict": "ok",
+   "reason": "Native Proto-Finnic *këko; in folk poetry."
+  },
+  {
+   "item": "alus",
+   "verdict": "ok",
+   "reason": "Native derivative of ala; it means 'vessel, ship', though the ship sense may be later (date not verified)."
+  },
+  {
+   "item": "kaari",
+   "verdict": "ok",
+   "reason": "Uralic *këŋere."
+  },
+  {
+   "item": "lehti",
+   "verdict": "ok",
+   "reason": "Uralic cognates in Saami and Mari; EVE calls a Baltic loan only 'probable', so it is not a known loan."
+  },
+  {
+   "item": "silmä",
+   "verdict": "ok",
+   "reason": "Uralic *śilmä."
+  },
+  {
+   "item": "tuli",
+   "verdict": "ok",
+   "reason": "Uralic *tule."
+  },
+  {
+   "item": "nippu",
+   "verdict": "wrong",
+   "reason": "Loan from Swedish knippa."
+  },
+  {
+   "item": "hämmentää",
+   "verdict": "ok",
+   "reason": "Native derivative; the verb occurs in the Kalevala."
+  },
+  {
+   "item": "pää",
+   "verdict": "ok",
+   "reason": "Uralic *päŋe."
+  },
+  {
+   "item": "kulkija",
+   "verdict": "ok",
+   "reason": "From kulkea; Kalevala 'kulkijalla'."
+  },
+  {
+   "item": "oras",
+   "verdict": "ok",
+   "reason": "Finnic derivative of ora, an ancient Indo-Iranian loan already in Proto-Uralic; Kalevala 'oras okinen'."
+  },
+  {
+   "item": "seistä",
+   "verdict": "ok",
+   "reason": "Uralic *sańśa-."
+  },
+  {
+   "item": "vaaka",
+   "verdict": "wrong",
+   "reason": "Loan from Old Swedish vāgh 'scale'."
+  },
+  {
+   "item": "hanko",
+   "verdict": "ok",
+   "reason": "Same as above: a Finnic derivative of hanka, used in folk poetry."
+  },
+  {
+   "item": "tähti",
+   "verdict": "ok",
+   "reason": "Finno-Permic *täštä."
+  }
+ ]
+}

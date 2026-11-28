@@ -1,0 +1,616 @@
+{"name": "Hawaiʻi", "type": "place", "morphemes": ["hawaiʻi"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Maui", "type": "place", "morphemes": ["maui"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Oʻahu", "type": "place", "morphemes": ["oʻahu"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kauaʻi", "type": "place", "morphemes": ["kauaʻi"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Molokaʻi", "type": "place", "morphemes": ["molokaʻi"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Lānaʻi", "type": "place", "morphemes": ["lānaʻi"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Niʻihau", "type": "place", "morphemes": ["niʻihau"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kahoʻolawe", "type": "place", "morphemes": ["ka", "hoʻolawe"], "gloss": "the + carrying away", "source": "Place Names of Hawaii"}
+{"name": "Kaʻula", "type": "place", "morphemes": ["kaʻula"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Nihoa", "type": "place", "morphemes": ["nihoa"], "gloss": "firmly set", "source": "Place Names of Hawaii"}
+{"name": "Molokini", "type": "place", "morphemes": ["molo", "kini"], "gloss": "tie + many", "source": "Place Names of Hawaii"}
+{"name": "Kona", "type": "place", "morphemes": ["kona"], "gloss": "leeward", "source": "Place Names of Hawaii"}
+{"name": "Kohala", "type": "place", "morphemes": ["kohala"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Hilo", "type": "place", "morphemes": ["hilo"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Puna", "type": "place", "morphemes": ["puna"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kaʻū", "type": "place", "morphemes": ["kaʻū"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Hāmākua", "type": "place", "morphemes": ["hāmākua"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Waimea", "type": "place", "morphemes": ["wai", "mea"], "gloss": "water + reddish", "source": "Place Names of Hawaii"}
+{"name": "Kailua", "type": "place", "morphemes": ["kai", "lua"], "gloss": "sea + two", "source": "Place Names of Hawaii"}
+{"name": "Kawaihae", "type": "place", "morphemes": ["ka", "wai", "hae"], "gloss": "the + water + wrath", "source": "Place Names of Hawaii"}
+{"name": "Hōnaunau", "type": "place", "morphemes": ["hōnaunau"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kealakekua", "type": "place", "morphemes": ["ke", "ala", "ke", "akua"], "gloss": "the + path + the + god", "source": "Place Names of Hawaii"}
+{"name": "Kaʻawaloa", "type": "place", "morphemes": ["ka", "ʻawa", "loa"], "gloss": "the + kava + distant", "source": "Place Names of Hawaii"}
+{"name": "Nāpōʻopoʻo", "type": "place", "morphemes": ["nā", "pōʻopoʻo"], "gloss": "the (pl.) + hole", "source": "Place Names of Hawaii"}
+{"name": "Hōlualoa", "type": "place", "morphemes": ["hōlua", "loa"], "gloss": "sled course + long", "source": "Place Names of Hawaii"}
+{"name": "Keauhou", "type": "place", "morphemes": ["ke", "au", "hou"], "gloss": "the + era, current + new", "source": "Place Names of Hawaii"}
+{"name": "Kahaluʻu", "type": "place", "morphemes": ["kaha", "luʻu"], "gloss": "place + dive", "source": "Place Names of Hawaii"}
+{"name": "Waipiʻo", "type": "place", "morphemes": ["wai", "piʻo"], "gloss": "water + curved", "source": "Place Names of Hawaii"}
+{"name": "Waimanu", "type": "place", "morphemes": ["wai", "manu"], "gloss": "water + bird", "source": "Place Names of Hawaii"}
+{"name": "Kapaʻau", "type": "place", "morphemes": ["kapaʻau"], "gloss": "raised place in a heiau", "source": "Place Names of Hawaii"}
+{"name": "Kīholo", "type": "place", "morphemes": ["kīholo"], "gloss": "fishhook", "source": "Place Names of Hawaii"}
+{"name": "Kalapana", "type": "place", "morphemes": ["kalapana"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kaimū", "type": "place", "morphemes": ["kai", "mū"], "gloss": "sea + gathering", "source": "Place Names of Hawaii"}
+{"name": "Kapoho", "type": "place", "morphemes": ["ka", "poho"], "gloss": "the + depression", "source": "Place Names of Hawaii"}
+{"name": "Waiākea", "type": "place", "morphemes": ["wai", "ākea"], "gloss": "water + broad", "source": "Place Names of Hawaii"}
+{"name": "Honomū", "type": "place", "morphemes": ["hono", "mū"], "gloss": "bay + silent", "source": "Place Names of Hawaii"}
+{"name": "Laupāhoehoe", "type": "place", "morphemes": ["lau", "pāhoehoe"], "gloss": "leaf + smooth lava", "source": "Place Names of Hawaii"}
+{"name": "Kukuihaele", "type": "place", "morphemes": ["kukui", "haele"], "gloss": "light + travel", "source": "Place Names of Hawaii"}
+{"name": "Honokaʻa", "type": "place", "morphemes": ["hono", "kaʻa"], "gloss": "bay + rolling", "source": "Place Names of Hawaii"}
+{"name": "Pāhala", "type": "place", "morphemes": ["pāhala"], "gloss": "cultivation by burning mulch", "source": "Place Names of Hawaii"}
+{"name": "Punaluʻu", "type": "place", "morphemes": ["puna", "luʻu"], "gloss": "spring + dive", "source": "Place Names of Hawaii"}
+{"name": "Nīnole", "type": "place", "morphemes": ["nīnole"], "gloss": "bending", "source": "Place Names of Hawaii"}
+{"name": "Waiʻōhinu", "type": "place", "morphemes": ["wai", "ʻōhinu"], "gloss": "water + shiny", "source": "Place Names of Hawaii"}
+{"name": "Nāʻālehu", "type": "place", "morphemes": ["nā", "ʻā", "lehu"], "gloss": "the (pl.) + burning lava + ash", "source": "Place Names of Hawaii"}
+{"name": "Kahuku", "type": "place", "morphemes": ["ka", "huku"], "gloss": "the + projection", "source": "Place Names of Hawaii"}
+{"name": "Kaʻūpūlehu", "type": "place", "morphemes": ["ka", "ʻulu", "pūlehu"], "gloss": "the + breadfruit + roasted", "source": "Place Names of Hawaii"}
+{"name": "Kaloko", "type": "place", "morphemes": ["ka", "loko"], "gloss": "the + pond", "source": "Place Names of Hawaii"}
+{"name": "Kokoiki", "type": "place", "morphemes": ["koko", "iki"], "gloss": "blood + small", "source": "Place Names of Hawaii"}
+{"name": "ʻAnaehoʻomalu", "type": "place", "morphemes": ["ʻanae", "hoʻomalu"], "gloss": "mullet + restricted", "source": "Place Names of Hawaii"}
+{"name": "Waikoloa", "type": "place", "morphemes": ["wai", "koloa"], "gloss": "water + duck", "source": "Place Names of Hawaii"}
+{"name": "Hoʻokena", "type": "place", "morphemes": ["hoʻokena"], "gloss": "satisfy thirst", "source": "Place Names of Hawaii"}
+{"name": "Miloliʻi", "type": "place", "morphemes": ["milo", "liʻi"], "gloss": "twist + fine", "source": "Place Names of Hawaii"}
+{"name": "Humuʻula", "type": "place", "morphemes": ["humuʻula"], "gloss": "jasper stone", "source": "Place Names of Hawaii"}
+{"name": "Pōhakuloa", "type": "place", "morphemes": ["pōhaku", "loa"], "gloss": "stone + long", "source": "Place Names of Hawaii"}
+{"name": "Kaʻohe", "type": "place", "morphemes": ["ka", "ʻohe"], "gloss": "the + bamboo", "source": "Place Names of Hawaii"}
+{"name": "Kēōkea", "type": "place", "morphemes": ["ke", "one", "kea"], "gloss": "the + sand + white", "source": "Place Names of Hawaii"}
+{"name": "Māhukona", "type": "place", "morphemes": ["māhu", "kona"], "gloss": "steam + leeward", "source": "Place Names of Hawaii"}
+{"name": "Kalāhuipuaʻa", "type": "place", "morphemes": ["ka", "lāhui", "puaʻa"], "gloss": "the + family + pig", "source": "Place Names of Hawaii"}
+{"name": "Honuʻapo", "type": "place", "morphemes": ["honu", "ʻapo"], "gloss": "turtle + caught", "source": "Place Names of Hawaii"}
+{"name": "Kumukahi", "type": "place", "morphemes": ["kumu", "kahi"], "gloss": "beginning + first", "source": "Place Names of Hawaii"}
+{"name": "Mokuola", "type": "place", "morphemes": ["moku", "ola"], "gloss": "island + healing", "source": "Place Names of Hawaii"}
+{"name": "Panaʻewa", "type": "place", "morphemes": ["panaʻewa"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Waikīkī", "type": "place", "morphemes": ["wai", "kīkī"], "gloss": "water + spouting", "source": "Place Names of Hawaii"}
+{"name": "Honolulu", "type": "place", "morphemes": ["hono", "lulu"], "gloss": "bay + sheltered", "source": "Place Names of Hawaii"}
+{"name": "Mānoa", "type": "place", "morphemes": ["mānoa"], "gloss": "vast", "source": "Place Names of Hawaii"}
+{"name": "Nuʻuanu", "type": "place", "morphemes": ["nuʻu", "anu"], "gloss": "height + cool", "source": "Place Names of Hawaii"}
+{"name": "Kapālama", "type": "place", "morphemes": ["ka", "pā", "lama"], "gloss": "the + enclosure + lama wood", "source": "Place Names of Hawaii"}
+{"name": "Kalihi", "type": "place", "morphemes": ["ka", "lihi"], "gloss": "the + edge", "source": "Place Names of Hawaii"}
+{"name": "Moanalua", "type": "place", "morphemes": ["moana", "lua"], "gloss": "campground + two", "source": "Place Names of Hawaii"}
+{"name": "ʻAiea", "type": "place", "morphemes": ["ʻaiea"], "gloss": "Nothocestrum tree", "source": "Place Names of Hawaii"}
+{"name": "Hālawa", "type": "place", "morphemes": ["hālawa"], "gloss": "curve", "source": "Place Names of Hawaii"}
+{"name": "Waiawa", "type": "place", "morphemes": ["wai", "awa"], "gloss": "water + milkfish", "source": "Place Names of Hawaii"}
+{"name": "Waikele", "type": "place", "morphemes": ["wai", "kele"], "gloss": "water + muddy", "source": "Place Names of Hawaii"}
+{"name": "Honouliuli", "type": "place", "morphemes": ["hono", "uliuli"], "gloss": "bay + dark", "source": "Place Names of Hawaii"}
+{"name": "Nānākuli", "type": "place", "morphemes": ["nānā", "kuli"], "gloss": "look at + knee", "source": "Place Names of Hawaii"}
+{"name": "Waiʻanae", "type": "place", "morphemes": ["wai", "ʻanae"], "gloss": "water + mullet", "source": "Place Names of Hawaii"}
+{"name": "Mākaha", "type": "place", "morphemes": ["mākaha"], "gloss": "fierce", "source": "Place Names of Hawaii"}
+{"name": "Mākua", "type": "place", "morphemes": ["mākua"], "gloss": "parents", "source": "Place Names of Hawaii"}
+{"name": "Kaʻena", "type": "place", "morphemes": ["ka", "ʻena"], "gloss": "the + heat", "source": "Place Names of Hawaii"}
+{"name": "Mokulēʻia", "type": "place", "morphemes": ["moku", "lēʻia"], "gloss": "island + abundance", "source": "Place Names of Hawaii"}
+{"name": "Waialua", "type": "place", "morphemes": ["waialua"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kawailoa", "type": "place", "morphemes": ["ka", "wai", "loa"], "gloss": "the + water + long", "source": "Place Names of Hawaii"}
+{"name": "Pūpūkea", "type": "place", "morphemes": ["pūpū", "kea"], "gloss": "shell + white", "source": "Place Names of Hawaii"}
+{"name": "Lāʻie", "type": "place", "morphemes": ["lāʻie"], "gloss": "ʻie vine leaf", "source": "Place Names of Hawaii"}
+{"name": "Hauʻula", "type": "place", "morphemes": ["hau", "ʻula"], "gloss": "hau tree + red", "source": "Place Names of Hawaii"}
+{"name": "Kaʻaʻawa", "type": "place", "morphemes": ["ka", "ʻaʻawa"], "gloss": "the + wrasse fish", "source": "Place Names of Hawaii"}
+{"name": "Kahana", "type": "place", "morphemes": ["kahana"], "gloss": "cutting, turning point", "source": "Place Names of Hawaii"}
+{"name": "Kualoa", "type": "place", "morphemes": ["kua", "loa"], "gloss": "back + long", "source": "Place Names of Hawaii"}
+{"name": "Kāneʻohe", "type": "place", "morphemes": ["kāne", "ʻohe"], "gloss": "husband + bamboo", "source": "Place Names of Hawaii"}
+{"name": "Waimānalo", "type": "place", "morphemes": ["wai", "mānalo"], "gloss": "water + potable", "source": "Place Names of Hawaii"}
+{"name": "Maunalua", "type": "place", "morphemes": ["mauna", "lua"], "gloss": "mountain + two", "source": "Place Names of Hawaii"}
+{"name": "Wailupe", "type": "place", "morphemes": ["wai", "lupe"], "gloss": "water + kite", "source": "Place Names of Hawaii"}
+{"name": "Waiʻalae", "type": "place", "morphemes": ["wai", "ʻalae"], "gloss": "water + mudhen", "source": "Place Names of Hawaii"}
+{"name": "Kaimukī", "type": "place", "morphemes": ["ka", "imu", "kī"], "gloss": "the + oven + ti plant", "source": "Place Names of Hawaii"}
+{"name": "Kapahulu", "type": "place", "morphemes": ["ka", "pahulu"], "gloss": "the + worn-out soil", "source": "Place Names of Hawaii"}
+{"name": "Pālolo", "type": "place", "morphemes": ["pālolo"], "gloss": "clay", "source": "Place Names of Hawaii"}
+{"name": "Makiki", "type": "place", "morphemes": ["makiki"], "gloss": "weight stone", "source": "Place Names of Hawaii"}
+{"name": "Kewalo", "type": "place", "morphemes": ["ke", "walo"], "gloss": "the + calling", "source": "Place Names of Hawaii"}
+{"name": "Kou", "type": "place", "morphemes": ["kou"], "gloss": "kou tree", "source": "Place Names of Hawaii"}
+{"name": "Mōʻiliʻili", "type": "place", "morphemes": ["moʻo", "ʻiliʻili"], "gloss": "lizard + pebbles", "source": "Place Names of Hawaii"}
+{"name": "Heʻeia", "type": "place", "morphemes": ["heʻeia"], "gloss": "surfed, washed out", "source": "Hawaiʻi Place Names (Clark)"}
+{"name": "Waiāhole", "type": "place", "morphemes": ["wai", "āhole"], "gloss": "water + mature āhole fish", "source": "Place Names of Hawaii"}
+{"name": "Waikāne", "type": "place", "morphemes": ["wai", "kāne"], "gloss": "water + Kāne", "source": "Place Names of Hawaii"}
+{"name": "Hakipuʻu", "type": "place", "morphemes": ["haki", "puʻu"], "gloss": "broken + hill", "source": "Place Names of Hawaii"}
+{"name": "Kawainui", "type": "place", "morphemes": ["ka", "wai", "nui"], "gloss": "the + water + large", "source": "Hawaiʻi Place Names (Clark)"}
+{"name": "Puʻuloa", "type": "place", "morphemes": ["puʻu", "loa"], "gloss": "hill + long", "source": "Place Names of Hawaii"}
+{"name": "Waipahu", "type": "place", "morphemes": ["wai", "pahū"], "gloss": "water + burst", "source": "Place Names of Hawaii"}
+{"name": "Wahiawā", "type": "place", "morphemes": ["wahi", "a", "wā"], "gloss": "place + of + noise", "source": "Place Names of Hawaii"}
+{"name": "Helemano", "type": "place", "morphemes": ["hele", "mano"], "gloss": "going, snared + many", "source": "Place Names of Hawaii"}
+{"name": "Halemano", "type": "place", "morphemes": ["hale", "mano"], "gloss": "house + many", "source": "Place Names of Hawaii"}
+{"name": "ʻEwa", "type": "place", "morphemes": ["ʻewa"], "gloss": "crooked", "source": "Place Names of Hawaii"}
+{"name": "Koʻolauloa", "type": "place", "morphemes": ["koʻolau", "loa"], "gloss": "windward + long", "source": "Kamakau"}
+{"name": "Koʻolaupoko", "type": "place", "morphemes": ["koʻolau", "poko"], "gloss": "windward + short", "source": "Kamakau"}
+{"name": "Kāhala", "type": "place", "morphemes": ["kāhala"], "gloss": "amberjack fish", "source": "Place Names of Hawaii"}
+{"name": "Makapuʻu", "type": "place", "morphemes": ["maka", "puʻu"], "gloss": "eye + bulging", "source": "Place Names of Hawaii"}
+{"name": "Mōkapu", "type": "place", "morphemes": ["moku", "kapu"], "gloss": "district + taboo", "source": "Place Names of Hawaii"}
+{"name": "Mokoliʻi", "type": "place", "morphemes": ["moko", "liʻi"], "gloss": "lizard + little", "source": "Place Names of Hawaii"}
+{"name": "Hāna", "type": "place", "morphemes": ["hāna"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kaupō", "type": "place", "morphemes": ["kau", "pō"], "gloss": "landing + night", "source": "Place Names of Hawaii"}
+{"name": "Kahikinui", "type": "place", "morphemes": ["kahiki", "nui"], "gloss": "Kahiki (Tahiti) + great", "source": "Place Names of Hawaii"}
+{"name": "Honuaʻula", "type": "place", "morphemes": ["honua", "ʻula"], "gloss": "land + red", "source": "Place Names of Hawaii"}
+{"name": "Kula", "type": "place", "morphemes": ["kula"], "gloss": "plain", "source": "Place Names of Hawaii"}
+{"name": "Lahaina", "type": "place", "morphemes": ["lahaina"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kāʻanapali", "type": "place", "morphemes": ["kāʻana", "pali"], "gloss": "name + cliff", "source": "Place Names of Hawaii"}
+{"name": "Koʻolau", "type": "place", "morphemes": ["koʻolau"], "gloss": "windward", "source": "Place Names of Hawaii"}
+{"name": "Kīpahulu", "type": "place", "morphemes": ["kiʻi", "pahulu"], "gloss": "fetch + exhausted garden", "source": "Place Names of Hawaii"}
+{"name": "Keʻanae", "type": "place", "morphemes": ["ke", "ʻanae"], "gloss": "the + mullet", "source": "Place Names of Hawaii"}
+{"name": "Haʻikū", "type": "place", "morphemes": ["haʻikū"], "gloss": "speak abruptly or sharp break", "source": "Place Names of Hawaii"}
+{"name": "Makawao", "type": "place", "morphemes": ["maka", "wao"], "gloss": "beginning + forest", "source": "Place Names of Hawaii"}
+{"name": "Pāʻia", "type": "place", "morphemes": ["pāʻia"], "gloss": "noisy", "source": "Place Names of Hawaii"}
+{"name": "Kīhei", "type": "place", "morphemes": ["kīhei"], "gloss": "cape, cloak", "source": "Place Names of Hawaii"}
+{"name": "Mākena", "type": "place", "morphemes": ["mākena"], "gloss": "abundance", "source": "Place Names of Hawaii"}
+{"name": "Waiakoa", "type": "place", "morphemes": ["wai", "a", "koa"], "gloss": "water + of + warrior", "source": "Place Names of Hawaii"}
+{"name": "Waiheʻe", "type": "place", "morphemes": ["wai", "heʻe"], "gloss": "water + squid", "source": "Place Names of Hawaii"}
+{"name": "Waiehu", "type": "place", "morphemes": ["wai", "ehu"], "gloss": "water + spray", "source": "Place Names of Hawaii"}
+{"name": "Kahakuloa", "type": "place", "morphemes": ["ka", "haku", "loa"], "gloss": "the + lord + tall", "source": "Place Names of Hawaii"}
+{"name": "Honokōhau", "type": "place", "morphemes": ["hono", "kō", "hau"], "gloss": "bay + draw + dew", "source": "Place Names of Hawaii"}
+{"name": "Olowalu", "type": "place", "morphemes": ["olo", "walu"], "gloss": "hill + many", "source": "Place Names of Hawaii"}
+{"name": "Ukumehame", "type": "place", "morphemes": ["uku", "mehame"], "gloss": "paid + mehame wood", "source": "Place Names of Hawaii"}
+{"name": "Wailuku", "type": "place", "morphemes": ["wai", "luku"], "gloss": "water + destruction", "source": "Place Names of Hawaii"}
+{"name": "Waikapū", "type": "place", "morphemes": ["wai", "ka", "pū"], "gloss": "water + the + conch", "source": "Place Names of Hawaii"}
+{"name": "Honolua", "type": "place", "morphemes": ["hono", "lua"], "gloss": "bay + two", "source": "Place Names of Hawaii"}
+{"name": "Kapalua", "type": "place", "morphemes": ["kapa", "lua"], "gloss": "border + two", "source": "Place Names of Hawaii"}
+{"name": "Nāpili", "type": "place", "morphemes": ["nā", "pili"], "gloss": "the (pl.) + joining", "source": "Place Names of Hawaii"}
+{"name": "Wailea", "type": "place", "morphemes": ["wai", "lea"], "gloss": "water + Lea (goddess)", "source": "Place Names of Hawaii"}
+{"name": "ʻUlupalakua", "type": "place", "morphemes": ["ʻulu", "pala", "kua"], "gloss": "breadfruit + ripe + back", "source": "Place Names of Hawaii"}
+{"name": "ʻĪao", "type": "place", "morphemes": ["ʻī", "ao"], "gloss": "supreme + cloud", "source": "Place Names of Hawaii"}
+{"name": "Kaunakakai", "type": "place", "morphemes": ["kaunakakai"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kalaupapa", "type": "place", "morphemes": ["ka", "laupapa"], "gloss": "the + flat plain", "source": "Place Names of Hawaii"}
+{"name": "Pelekunu", "type": "place", "morphemes": ["pelekunu"], "gloss": "smelly", "source": "Place Names of Hawaii"}
+{"name": "Wailau", "type": "place", "morphemes": ["wai", "lau"], "gloss": "water + many", "source": "Place Names of Hawaii"}
+{"name": "Kamalō", "type": "place", "morphemes": ["ka", "maloʻo"], "gloss": "the + dry", "source": "Place Names of Hawaii"}
+{"name": "Kaluakoʻi", "type": "place", "morphemes": ["ka", "lua", "koʻi"], "gloss": "the + pit + adze", "source": "Place Names of Hawaii"}
+{"name": "Kalawao", "type": "place", "morphemes": ["kala", "wao"], "gloss": "proclaim + mountain area", "source": "Place Names of Hawaii"}
+{"name": "Pālāʻau", "type": "place", "morphemes": ["pā", "lāʻau"], "gloss": "enclosure + wood", "source": "Place Names of Hawaii"}
+{"name": "ʻUalapuʻe", "type": "place", "morphemes": ["ʻuala", "puʻe"], "gloss": "sweet potato + hilled", "source": "Place Names of Hawaii"}
+{"name": "Waikolu", "type": "place", "morphemes": ["wai", "kolu"], "gloss": "water + three", "source": "Place Names of Hawaii"}
+{"name": "Kalamaʻula", "type": "place", "morphemes": ["ka", "lama", "ʻula"], "gloss": "the + torch + red", "source": "Place Names of Hawaii"}
+{"name": "Kaumalapau", "type": "place", "morphemes": ["kau", "māla", "paʻu"], "gloss": "place + garden + soot", "source": "Place Names of Hawaii"}
+{"name": "Maunalei", "type": "place", "morphemes": ["mauna", "lei"], "gloss": "mountain + lei", "source": "Place Names of Hawaii"}
+{"name": "Mānele", "type": "place", "morphemes": ["mānele"], "gloss": "sedan chair", "source": "Place Names of Hawaii"}
+{"name": "Kaunolū", "type": "place", "morphemes": ["kaunolū"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kealaikahiki", "type": "place", "morphemes": ["ke", "ala", "i", "kahiki"], "gloss": "the + path + to + Kahiki (Tahiti)", "source": "Place Names of Hawaii"}
+{"name": "Hāʻena", "type": "place", "morphemes": ["hāʻena"], "gloss": "red hot", "source": "Place Names of Hawaii"}
+{"name": "Hanalei", "type": "place", "morphemes": ["hana", "lei"], "gloss": "bay + lei", "source": "Place Names of Hawaii"}
+{"name": "Kalihiwai", "type": "place", "morphemes": ["ka", "lihi", "wai"], "gloss": "the + edge + stream", "source": "Hawaiʻi Place Names (Clark)"}
+{"name": "Anahola", "type": "place", "morphemes": ["anahola"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kapaʻa", "type": "place", "morphemes": ["ka", "paʻa"], "gloss": "the + solid", "source": "Place Names of Hawaii"}
+{"name": "Līhuʻe", "type": "place", "morphemes": ["līhuʻe"], "gloss": "cold chill", "source": "Place Names of Hawaii"}
+{"name": "Kōloa", "type": "place", "morphemes": ["kōloa"], "gloss": "long cane", "source": "Place Names of Hawaii"}
+{"name": "Hanapēpē", "type": "place", "morphemes": ["hana", "pēpē"], "gloss": "bay + crushed", "source": "Place Names of Hawaii"}
+{"name": "Mānā", "type": "place", "morphemes": ["mānā"], "gloss": "arid", "source": "Place Names of Hawaii"}
+{"name": "Polihale", "type": "place", "morphemes": ["poli", "hale"], "gloss": "bosom + house", "source": "Place Names of Hawaii"}
+{"name": "Nāpali", "type": "place", "morphemes": ["nā", "pali"], "gloss": "the (pl.) + cliff", "source": "Place Names of Hawaii"}
+{"name": "Kalalau", "type": "place", "morphemes": ["ka", "lalau"], "gloss": "the + straying", "source": "Place Names of Hawaii"}
+{"name": "Hanakāpiʻai", "type": "place", "morphemes": ["hana", "kāpī", "ʻai"], "gloss": "bay + sprinkle + food", "source": "Place Names of Hawaii"}
+{"name": "Haleleʻa", "type": "place", "morphemes": ["hale", "leʻa"], "gloss": "house + joyful", "source": "Place Names of Hawaii"}
+{"name": "Kekaha", "type": "place", "morphemes": ["ke", "kaha"], "gloss": "the + place", "source": "Place Names of Hawaii"}
+{"name": "Poʻipū", "type": "place", "morphemes": ["poʻipū"], "gloss": "crashing (as waves)", "source": "Place Names of Hawaii"}
+{"name": "Māhāʻulepū", "type": "place", "morphemes": ["mā", "hāʻule", "pū"], "gloss": "and + fall + together", "source": "Place Names of Hawaii"}
+{"name": "Hanamāʻulu", "type": "place", "morphemes": ["hana", "māʻulu"], "gloss": "bay + tired", "source": "Place Names of Hawaii"}
+{"name": "Nāwiliwili", "type": "place", "morphemes": ["nā", "wiliwili"], "gloss": "the (pl.) + wiliwili tree", "source": "Place Names of Hawaii"}
+{"name": "Moloaʻa", "type": "place", "morphemes": ["molo", "aʻa"], "gloss": "matted + roots", "source": "Place Names of Hawaii"}
+{"name": "Kōkeʻe", "type": "place", "morphemes": ["kōkeʻe"], "gloss": "bend, wind", "source": "Place Names of Hawaii"}
+{"name": "Paliuli", "type": "place", "morphemes": ["pali", "uli"], "gloss": "cliff + green", "source": "Place Names of Hawaii"}
+{"name": "Kahiki", "type": "place", "morphemes": ["kahiki"], "gloss": "Kahiki (Tahiti), foreign land", "source": "Malo"}
+{"name": "Kuaihelani", "type": "place", "morphemes": ["kuaihelani"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Wainiha", "type": "river", "morphemes": ["wai", "niha"], "gloss": "water + unfriendly", "source": "Place Names of Hawaii"}
+{"name": "Wailua", "type": "river", "morphemes": ["wai", "lua"], "gloss": "water + two", "source": "Place Names of Hawaii"}
+{"name": "Makaweli", "type": "river", "morphemes": ["maka", "weli"], "gloss": "features + fearful", "source": "Place Names of Hawaii"}
+{"name": "Lumahaʻi", "type": "river", "morphemes": ["lumahaʻi"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Waiʻoli", "type": "river", "morphemes": ["wai", "ʻoli"], "gloss": "water + joyful", "source": "Place Names of Hawaii"}
+{"name": "Hulēʻia", "type": "river", "morphemes": ["hulēʻia"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Honoliʻi", "type": "river", "morphemes": ["hono", "liʻi"], "gloss": "valley + little", "source": "Place Names of Hawaii"}
+{"name": "Kaukonahua", "type": "river", "morphemes": ["kaukonahua"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Anahulu", "type": "river", "morphemes": ["anahulu"], "gloss": "ten days", "source": "Place Names of Hawaii"}
+{"name": "Wailoa", "type": "river", "morphemes": ["wai", "loa"], "gloss": "water + long", "source": "Place Names of Hawaii"}
+{"name": "Mauna Kea", "type": "hill", "morphemes": ["mauna", "kea"], "gloss": "mountain + white", "source": "Place Names of Hawaii"}
+{"name": "Mauna Loa", "type": "hill", "morphemes": ["mauna", "loa"], "gloss": "mountain + long", "source": "Place Names of Hawaii"}
+{"name": "Hualālai", "type": "hill", "morphemes": ["hualālai"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Haleakalā", "type": "hill", "morphemes": ["hale", "a", "ka", "lā"], "gloss": "house + of + the + sun", "source": "Place Names of Hawaii"}
+{"name": "Kaʻala", "type": "hill", "morphemes": ["kaʻala"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Waiʻaleʻale", "type": "hill", "morphemes": ["wai", "ʻaleʻale"], "gloss": "water + rippling", "source": "Place Names of Hawaii"}
+{"name": "Kawaikini", "type": "hill", "morphemes": ["ka", "wai", "kini"], "gloss": "the + water + multitudinous", "source": "Place Names of Hawaii"}
+{"name": "Kamakou", "type": "hill", "morphemes": ["kamakou"], "gloss": "Peucedanum herb", "source": "Place Names of Hawaii"}
+{"name": "Lānaʻihale", "type": "hill", "morphemes": ["lānaʻi", "hale"], "gloss": "Lānaʻi + house", "source": "Place Names of Hawaii"}
+{"name": "Lēʻahi", "type": "hill", "morphemes": ["lēʻahi"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Puʻuwaʻawaʻa", "type": "hill", "morphemes": ["puʻu", "waʻawaʻa"], "gloss": "hill + furrowed", "source": "Place Names of Hawaii"}
+{"name": "Kōnāhuanui", "type": "hill", "morphemes": ["kōnāhua", "nui"], "gloss": "fat innards + large", "source": "Place Names of Hawaii"}
+{"name": "Olomana", "type": "hill", "morphemes": ["olo", "mana"], "gloss": "hill + forked", "source": "Place Names of Hawaii"}
+{"name": "ʻUalakaʻa", "type": "hill", "morphemes": ["ʻuala", "kaʻa"], "gloss": "sweet potato + roll", "source": "Place Names of Hawaii"}
+{"name": "Pūowaina", "type": "hill", "morphemes": ["pūowaina"], "gloss": "hill of placing (sacrifices)", "source": "Place Names of Hawaii"}
+{"name": "Halemaʻumaʻu", "type": "hill", "morphemes": ["hale", "maʻumaʻu"], "gloss": "house + fern", "source": "Place Names of Hawaii"}
+{"name": "Mokuʻāweoweo", "type": "hill", "morphemes": ["moku", "ʻāweoweo"], "gloss": "section + ʻāweoweo fish", "source": "Place Names of Hawaii"}
+{"name": "Hāʻupu", "type": "hill", "morphemes": ["hāʻupu"], "gloss": "recollection", "source": "Place Names of Hawaii"}
+{"name": "Nounou", "type": "hill", "morphemes": ["nounou"], "gloss": "throwing", "source": "Place Names of Hawaii"}
+{"name": "Lanihuli", "type": "hill", "morphemes": ["lani", "huli"], "gloss": "royal chief + turning", "source": "Place Names of Hawaii"}
+{"name": "Kohelepelepe", "type": "hill", "morphemes": ["kohe", "lepelepe"], "gloss": "vagina + labia minora", "source": "Place Names of Hawaii"}
+{"name": "Kilohana", "type": "hill", "morphemes": ["kilohana"], "gloss": "lookout point", "source": "Place Names of Hawaii"}
+{"name": "Kalalea", "type": "hill", "morphemes": ["kalalea"], "gloss": "prominent", "source": "Place Names of Hawaii"}
+{"name": "Kapolei", "type": "hill", "morphemes": ["kapo", "lei"], "gloss": "Kapo (goddess) + beloved", "source": "Place Names of Hawaii"}
+{"name": "Kīlauea", "type": "hill", "morphemes": ["kīlauea"], "gloss": "spewing, much spreading", "source": "Place Names of Hawaii"}
+{"name": "Kaʻuiki", "type": "hill", "morphemes": ["ka", "ʻuiki"], "gloss": "the + glimmer", "source": "Place Names of Hawaii"}
+{"name": "Puʻuʻōhiʻa", "type": "hill", "morphemes": ["puʻu", "ʻōhiʻa"], "gloss": "hill + ʻōhiʻa tree", "source": "Place Names of Hawaii"}
+{"name": "Puʻuohoku", "type": "hill", "morphemes": ["puʻu", "o", "hoku"], "gloss": "hill + of + Hoku (full-moon night)", "source": "Place Names of Hawaii"}
+{"name": "Lehua", "type": "place", "morphemes": ["lehua"], "gloss": "lehua flower", "source": "Place Names of Hawaii"}
+{"name": "Kāne", "type": "deity", "morphemes": ["kāne"], "gloss": "male", "source": "Malo"}
+{"name": "Kū", "type": "deity", "morphemes": ["kū"], "gloss": "stand, upright", "source": "Malo"}
+{"name": "Lono", "type": "deity", "morphemes": ["lono"], "gloss": "name", "source": "Malo"}
+{"name": "Kanaloa", "type": "deity", "morphemes": ["kanaloa"], "gloss": "name", "source": "Malo"}
+{"name": "Kāneikawaiola", "type": "deity", "morphemes": ["kāne", "i", "ka", "wai", "ola"], "gloss": "Kāne + in + the + water + life", "source": "Fornander"}
+{"name": "Kāneʻapua", "type": "deity", "morphemes": ["kāne", "ʻapua"], "gloss": "Kāne + fish trap", "source": "Fornander"}
+{"name": "Kānehekili", "type": "deity", "morphemes": ["kāne", "hekili"], "gloss": "Kāne + thunder", "source": "Fornander"}
+{"name": "Kānehoalani", "type": "deity", "morphemes": ["kāne", "hoa", "lani"], "gloss": "Kāne + companion + royal", "source": "Fornander"}
+{"name": "Kūkāʻilimoku", "type": "deity", "morphemes": ["kū", "kāʻili", "moku"], "gloss": "Kū + snatch + island", "source": "Kamakau"}
+{"name": "Kūʻula", "type": "deity", "morphemes": ["kū", "ʻula"], "gloss": "Kū + red", "source": "Malo"}
+{"name": "Kūʻulakai", "type": "deity", "morphemes": ["kū", "ʻula", "kai"], "gloss": "Kū + red + sea", "source": "Kamakau"}
+{"name": "Kūkaʻōhiʻalaka", "type": "deity", "morphemes": ["kū", "ka", "ʻōhiʻa", "laka"], "gloss": "Kū + the + ʻōhiʻa tree + Laka", "source": "Malo"}
+{"name": "Kūmokuhāliʻi", "type": "deity", "morphemes": ["kū", "moku", "hāliʻi"], "gloss": "Kū + island + spread over", "source": "Malo"}
+{"name": "Kūpulupulu", "type": "deity", "morphemes": ["kū", "pulupulu"], "gloss": "Kū + kindling", "source": "Malo"}
+{"name": "Kūʻālanawao", "type": "deity", "morphemes": ["kū", "ʻālana", "wao"], "gloss": "Kū + offering + upland forest", "source": "Malo"}
+{"name": "Kūpāʻaikeʻe", "type": "deity", "morphemes": ["kūpāʻaikeʻe"], "gloss": "name", "source": "Malo"}
+{"name": "Kūhoʻoneʻenuʻu", "type": "deity", "morphemes": ["kū", "hoʻoneʻe", "nuʻu"], "gloss": "Kū + move + height", "source": "Kamakau"}
+{"name": "Kūnuiākea", "type": "deity", "morphemes": ["kū", "nui", "ākea"], "gloss": "Kū + great + wide", "source": "Kamakau"}
+{"name": "Kūkaʻōʻō", "type": "deity", "morphemes": ["kū", "ka", "ʻōʻō"], "gloss": "Kū + the + digging stick", "source": "Kamakau"}
+{"name": "Lea", "type": "deity", "morphemes": ["lea"], "gloss": "name", "source": "Malo"}
+{"name": "Lonomakua", "type": "deity", "morphemes": ["lono", "makua"], "gloss": "Lono + parent", "source": "Pukui-Elbert"}
+{"name": "Maʻiola", "type": "deity", "morphemes": ["maʻi", "ola"], "gloss": "sickness + life", "source": "Malo"}
+{"name": "Pele", "type": "deity", "morphemes": ["pele"], "gloss": "lava", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Hiʻiaka", "type": "deity", "morphemes": ["hiʻiaka"], "gloss": "name", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Hiʻiakaikapoliopele", "type": "deity", "morphemes": ["hiʻiaka", "i", "ka", "poli", "o", "pele"], "gloss": "Hiʻiaka + in + the + bosom + of + Pele", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Nāmakaokahaʻi", "type": "deity", "morphemes": ["nā", "maka", "o", "kahaʻi"], "gloss": "the (pl.) + eye + of + Kahaʻi", "source": "Fornander"}
+{"name": "Kapōʻulakīnaʻu", "type": "deity", "morphemes": ["kapōʻulakīnaʻu"], "gloss": "name", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Kapo", "type": "deity", "morphemes": ["kapo"], "gloss": "name", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Poliʻahu", "type": "deity", "morphemes": ["poli", "ʻahu"], "gloss": "bosom + garment", "source": "Place Names of Hawaii"}
+{"name": "Lilinoe", "type": "deity", "morphemes": ["lilinoe"], "gloss": "fine mist", "source": "Place Names of Hawaii"}
+{"name": "Waiau", "type": "deity", "morphemes": ["wai", "au"], "gloss": "water + swirling", "source": "Place Names of Hawaii"}
+{"name": "Kamohoaliʻi", "type": "deity", "morphemes": ["ka", "moho", "aliʻi"], "gloss": "the + chosen one + chief", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Kahoʻāliʻi", "type": "deity", "morphemes": ["kahoʻāliʻi"], "gloss": "name", "source": "Malo"}
+{"name": "Haumea", "type": "deity", "morphemes": ["haumea"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Kamehaʻikana", "type": "deity", "morphemes": ["kamehaʻikana"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Papa", "type": "deity", "morphemes": ["papa"], "gloss": "stratum, foundation", "source": "Kumulipo"}
+{"name": "Papahānaumoku", "type": "deity", "morphemes": ["papa", "hānau", "moku"], "gloss": "Papa + give birth + island", "source": "Chiefly genealogies"}
+{"name": "Wākea", "type": "deity", "morphemes": ["wākea"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Hoʻohōkūkalani", "type": "deity", "morphemes": ["hoʻohōkū", "ka", "lani"], "gloss": "make stars + the + heaven", "source": "Kumulipo"}
+{"name": "Hina", "type": "deity", "morphemes": ["hina"], "gloss": "name", "source": "Fornander"}
+{"name": "Hinaʻaimalama", "type": "deity", "morphemes": ["hina", "ʻai", "malama"], "gloss": "Hina + eat + moon", "source": "Fornander"}
+{"name": "Hinapukuiʻa", "type": "deity", "morphemes": ["hina", "puku", "iʻa"], "gloss": "Hina + gather + fish", "source": "Kamakau"}
+{"name": "Hinaʻuluʻōhiʻa", "type": "deity", "morphemes": ["hina", "ʻulu", "ʻōhiʻa"], "gloss": "Hina + grow + ʻōhiʻa tree", "source": "Malo"}
+{"name": "Kamapuaʻa", "type": "deity", "morphemes": ["kama", "puaʻa"], "gloss": "child + pig", "source": "Fornander"}
+{"name": "Kihawahine", "type": "deity", "morphemes": ["kiha", "wahine"], "gloss": "supernatural lizard + woman", "source": "Kamakau"}
+{"name": "Moʻoinanea", "type": "deity", "morphemes": ["moʻoinanea"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kālaipāhoa", "type": "deity", "morphemes": ["kālai", "pāhoa"], "gloss": "carve + dagger", "source": "Kamakau"}
+{"name": "Kaʻahupāhau", "type": "deity", "morphemes": ["kaʻahupāhau"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kahiʻukā", "type": "deity", "morphemes": ["kahiʻukā"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kūhaimoana", "type": "deity", "morphemes": ["kūhaimoana"], "gloss": "name", "source": "Kamakau"}
+{"name": "Milu", "type": "deity", "morphemes": ["milu"], "gloss": "name", "source": "Kamakau"}
+{"name": "Uli", "type": "deity", "morphemes": ["uli"], "gloss": "name", "source": "Kamakau"}
+{"name": "Laʻamaomao", "type": "deity", "morphemes": ["laʻamaomao"], "gloss": "name", "source": "Fornander"}
+{"name": "ʻAiʻai", "type": "deity", "morphemes": ["ʻaiʻai"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kalamainuʻu", "type": "deity", "morphemes": ["kalamainuʻu"], "gloss": "name", "source": "Fornander"}
+{"name": "Kihanuilūlūmoku", "type": "deity", "morphemes": ["kiha", "nui", "lūlū", "moku"], "gloss": "supernatural lizard + great + shake + island", "source": "Haleʻole, Lāʻieikawai"}
+{"name": "Nuʻakea", "type": "deity", "morphemes": ["nuʻa", "kea"], "gloss": "heaped + white", "source": "Pukui-Elbert"}
+{"name": "Kāneikaulanaʻula", "type": "deity", "morphemes": ["kāneikaulanaʻula"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kahuilaokalani", "type": "deity", "morphemes": ["kahuilaokalani"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kumulipo", "type": "deity", "morphemes": ["kumu", "lipo"], "gloss": "source + deep darkness", "source": "Kumulipo"}
+{"name": "Pōʻele", "type": "deity", "morphemes": ["pō", "ʻele"], "gloss": "night + black", "source": "Kumulipo"}
+{"name": "Pōuliuli", "type": "deity", "morphemes": ["pō", "uliuli"], "gloss": "night + dark", "source": "Kumulipo"}
+{"name": "Pōwehiwehi", "type": "deity", "morphemes": ["pō", "wehiwehi"], "gloss": "night + adorned", "source": "Kumulipo"}
+{"name": "Pōʻeleʻele", "type": "deity", "morphemes": ["pō", "ʻeleʻele"], "gloss": "night + black", "source": "Kumulipo"}
+{"name": "Pōpanopano", "type": "deity", "morphemes": ["pō", "panopano"], "gloss": "night + dense darkness", "source": "Kumulipo"}
+{"name": "Laʻilaʻi", "type": "deity", "morphemes": ["laʻilaʻi"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Kaʻōnohiokalā", "type": "deity", "morphemes": ["ka", "ʻōnohi", "o", "ka", "lā"], "gloss": "the + eyeball + of + the + sun", "source": "Haleʻole, Lāʻieikawai"}
+{"name": "Hōkūleʻa", "type": "celestial", "morphemes": ["hōkū", "leʻa"], "gloss": "star + clear, happy", "source": "Pukui-Elbert"}
+{"name": "Hōkūpaʻa", "type": "celestial", "morphemes": ["hōkū", "paʻa"], "gloss": "star + immovable", "source": "Pukui-Elbert"}
+{"name": "Makaliʻi", "type": "celestial", "morphemes": ["makaliʻi"], "gloss": "tiny", "source": "Pukui-Elbert"}
+{"name": "Hōkūloa", "type": "celestial", "morphemes": ["hōkū", "loa"], "gloss": "star + long", "source": "Pukui-Elbert"}
+{"name": "Hōkūao", "type": "celestial", "morphemes": ["hōkū", "ao"], "gloss": "star + daylight", "source": "Pukui-Elbert"}
+{"name": "Kaʻāwela", "type": "celestial", "morphemes": ["kaʻāwela"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Hōkūʻula", "type": "celestial", "morphemes": ["hōkū", "ʻula"], "gloss": "star + red", "source": "Pukui-Elbert"}
+{"name": "Hikianalia", "type": "celestial", "morphemes": ["hikianalia"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Hānaiakamalama", "type": "celestial", "morphemes": ["hānai", "a", "ka", "malama"], "gloss": "foster child + of + the + moon", "source": "Pukui-Elbert"}
+{"name": "Holoholopinaʻau", "type": "celestial", "morphemes": ["holoholopinaʻau"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Hōkūhoʻokelewaʻa", "type": "celestial", "morphemes": ["hōkū", "hoʻokele", "waʻa"], "gloss": "star + steer + canoe", "source": "Pukui-Elbert"}
+{"name": "Lehuakona", "type": "celestial", "morphemes": ["lehua", "kona"], "gloss": "lehua flower + south", "source": "Pukui-Elbert"}
+{"name": "Hōkūkauʻōpae", "type": "celestial", "morphemes": ["hōkūkauʻōpae"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Nāhiku", "type": "celestial", "morphemes": ["nā", "hiku"], "gloss": "the (pl.) + seven", "source": "Pukui-Elbert"}
+{"name": "ʻIao", "type": "celestial", "morphemes": ["ʻiao"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Kaʻiliʻula", "type": "celestial", "morphemes": ["ka", "ʻili", "ʻula"], "gloss": "the + skin + red", "source": "Pukui-Elbert"}
+{"name": "Hiʻilei", "type": "celestial", "morphemes": ["hiʻi", "lei"], "gloss": "carry + beloved child", "source": "Pukui-Elbert"}
+{"name": "Kanukuokapuahi", "type": "celestial", "morphemes": ["ka", "nuku", "o", "ka", "puahi"], "gloss": "the + opening + of + the + fireplace", "source": "Pukui-Elbert"}
+{"name": "Mākohilani", "type": "celestial", "morphemes": ["mākohilani"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Kaulua", "type": "celestial", "morphemes": ["kaulua"], "gloss": "double canoe", "source": "Pukui-Elbert"}
+{"name": "Kāʻelo", "type": "other", "morphemes": ["kāʻelo"], "gloss": "name", "source": "Malo"}
+{"name": "ʻIkuā", "type": "other", "morphemes": ["ʻikuā"], "gloss": "noisy", "source": "Malo"}
+{"name": "Welehu", "type": "other", "morphemes": ["welehu"], "gloss": "name", "source": "Malo"}
+{"name": "Nana", "type": "other", "morphemes": ["nana"], "gloss": "name", "source": "Malo"}
+{"name": "Ikiiki", "type": "other", "morphemes": ["ikiiki"], "gloss": "stifling heat", "source": "Malo"}
+{"name": "Kaʻaona", "type": "other", "morphemes": ["kaʻaona"], "gloss": "name", "source": "Malo"}
+{"name": "Māhoe", "type": "other", "morphemes": ["māhoe"], "gloss": "twins", "source": "Malo"}
+{"name": "Hinaiaʻeleʻele", "type": "other", "morphemes": ["hinaiaʻeleʻele"], "gloss": "name", "source": "Malo"}
+{"name": "Hoaka", "type": "other", "morphemes": ["hoaka"], "gloss": "crescent", "source": "Malo"}
+{"name": "Huna", "type": "other", "morphemes": ["huna"], "gloss": "tiny particle", "source": "Malo"}
+{"name": "Mōhalu", "type": "other", "morphemes": ["mōhalu"], "gloss": "loose, at ease", "source": "Malo"}
+{"name": "Hoku", "type": "other", "morphemes": ["hoku"], "gloss": "name", "source": "Malo"}
+{"name": "Māhealani", "type": "other", "morphemes": ["māhealani"], "gloss": "name", "source": "Malo"}
+{"name": "Mauli", "type": "other", "morphemes": ["mauli"], "gloss": "life", "source": "Malo"}
+{"name": "Muku", "type": "other", "morphemes": ["muku"], "gloss": "cut short", "source": "Malo"}
+{"name": "Moaʻe", "type": "other", "morphemes": ["moaʻe"], "gloss": "trade wind", "source": "Pukui-Elbert"}
+{"name": "Kēhau", "type": "other", "morphemes": ["kēhau"], "gloss": "dew", "source": "Pukui-Elbert"}
+{"name": "ʻĀpaʻapaʻa", "type": "other", "morphemes": ["ʻāpaʻapaʻa"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Nāulu", "type": "other", "morphemes": ["nāulu"], "gloss": "shower clouds", "source": "Pukui-Elbert"}
+{"name": "Kanilehua", "type": "other", "morphemes": ["kanilehua"], "gloss": "rain that lehua flowers drink", "source": "Pukui-Elbert"}
+{"name": "Kuahine", "type": "other", "morphemes": ["kuahine"], "gloss": "sister (of a male)", "source": "Pukui-Elbert"}
+{"name": "Kīpuʻupuʻu", "type": "other", "morphemes": ["kīpuʻupuʻu"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Waʻahila", "type": "other", "morphemes": ["waʻahila"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "ʻUlalena", "type": "other", "morphemes": ["ʻula", "lena"], "gloss": "red + yellow", "source": "Pukui-Elbert"}
+{"name": "Kūkalahale", "type": "other", "morphemes": ["kūkala", "hale"], "gloss": "proclaim + house", "source": "Pukui-Elbert"}
+{"name": "Pōʻaihale", "type": "other", "morphemes": ["pōʻai", "hale"], "gloss": "surround + house", "source": "Pukui-Elbert"}
+{"name": "Kauaʻula", "type": "other", "morphemes": ["ka", "ua", "ʻula"], "gloss": "the + rain + red", "source": "Pukui-Elbert"}
+{"name": "Puʻukoholā", "type": "other", "morphemes": ["puʻu", "koholā"], "gloss": "hill + whale", "source": "Place Names of Hawaii"}
+{"name": "Moʻokini", "type": "other", "morphemes": ["moʻo", "kini"], "gloss": "lineage + many", "source": "Place Names of Hawaii"}
+{"name": "Ahuʻena", "type": "other", "morphemes": ["ahu", "ʻena"], "gloss": "heap + red-hot", "source": "Place Names of Hawaii"}
+{"name": "Hikiau", "type": "other", "morphemes": ["hiki", "au"], "gloss": "moving + current", "source": "Place Names of Hawaii"}
+{"name": "Ulupō", "type": "other", "morphemes": ["ulu", "pō"], "gloss": "inspiration + night", "source": "Place Names of Hawaii"}
+{"name": "Pākākā", "type": "other", "morphemes": ["pākākā"], "gloss": "to skim", "source": "Place Names of Hawaii"}
+{"name": "Wahaʻula", "type": "other", "morphemes": ["waha", "ʻula"], "gloss": "mouth + red", "source": "Place Names of Hawaii"}
+{"name": "Holoholokū", "type": "other", "morphemes": ["holoholo", "kū"], "gloss": "run + stand", "source": "Place Names of Hawaii"}
+{"name": "Kāneʻaki", "type": "other", "morphemes": ["kāne", "ʻaki"], "gloss": "Kāne + hair switch", "source": "Place Names of Hawaii"}
+{"name": "Piʻilanihale", "type": "other", "morphemes": ["piʻi", "lani", "hale"], "gloss": "ascend + heaven + house", "source": "Place Names of Hawaii"}
+{"name": "Hāpaialiʻi", "type": "other", "morphemes": ["hāpai", "aliʻi"], "gloss": "elevate + chief", "source": "Place Names of Hawaii"}
+{"name": "Kūʻīlioloa", "type": "other", "morphemes": ["kū", "ʻīlio", "loa"], "gloss": "stand + dog + long", "source": "Place Names of Hawaii"}
+{"name": "Halekiʻi", "type": "other", "morphemes": ["hale", "kiʻi"], "gloss": "house + image", "source": "Place Names of Hawaii"}
+{"name": "Pihana", "type": "other", "morphemes": ["pihana"], "gloss": "fullness", "source": "Place Names of Hawaii"}
+{"name": "Kamakahonu", "type": "other", "morphemes": ["ka", "maka", "honu"], "gloss": "the + eye + turtle", "source": "Place Names of Hawaii"}
+{"name": "Kepaniwai", "type": "other", "morphemes": ["ke", "pani", "wai"], "gloss": "the + dam + water", "source": "Place Names of Hawaii"}
+{"name": "Mokuʻohai", "type": "other", "morphemes": ["moku", "ʻōhai"], "gloss": "grove + ʻōhai tree", "source": "Place Names of Hawaii"}
+{"name": "Kalehuawehe", "type": "other", "morphemes": ["ka", "lehua", "wehe"], "gloss": "the + lehua + removed", "source": "Place Names of Hawaii"}
+{"name": "Kapuni", "type": "other", "morphemes": ["ka", "puni"], "gloss": "the + surrounding", "source": "Place Names of Hawaii"}
+{"name": "Haleokeawe", "type": "other", "morphemes": ["hale", "o", "keawe"], "gloss": "house + of + Keawe", "source": "Place Names of Hawaii"}
+{"name": "Mailekini", "type": "other", "morphemes": ["maile", "kini"], "gloss": "maile vine + many", "source": "Place Names of Hawaii"}
+{"name": "Hikinaakalā", "type": "other", "morphemes": ["hikina", "a", "ka", "lā"], "gloss": "rising + of + the + sun", "source": "Place Names of Hawaii"}
+{"name": "ʻIliʻiliʻōpae", "type": "other", "morphemes": ["ʻiliʻiliʻōpae"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Kauleonānāhoa", "type": "other", "morphemes": ["ka", "ule", "o", "nānāhoa"], "gloss": "the + penis + of + Nānāhoa", "source": "Place Names of Hawaii"}
+{"name": "Māmala", "type": "place", "morphemes": ["māmala"], "gloss": "name", "source": "Place Names of Hawaii"}
+{"name": "Menehune", "type": "group", "morphemes": ["menehune"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Mū", "type": "group", "morphemes": ["mū"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "Nāwao", "type": "group", "morphemes": ["nāwao"], "gloss": "name", "source": "Pukui-Elbert"}
+{"name": "ʻEʻepa", "type": "group", "morphemes": ["ʻeʻepa"], "gloss": "extraordinary", "source": "Pukui-Elbert"}
+{"name": "Makaʻāinana", "type": "group", "morphemes": ["makaʻāinana"], "gloss": "commoner", "source": "Malo"}
+{"name": "Kauwā", "type": "group", "morphemes": ["kauwā"], "gloss": "outcast", "source": "Malo"}
+{"name": "Kaukaualiʻi", "type": "group", "morphemes": ["kaukaualiʻi"], "gloss": "lesser chief", "source": "Malo"}
+{"name": "ʻĀlapa", "type": "group", "morphemes": ["ʻālapa"], "gloss": "athletic", "source": "Kamakau"}
+{"name": "Piʻipiʻi", "type": "group", "morphemes": ["piʻipiʻi"], "gloss": "name", "source": "Kamakau"}
+{"name": "Pahupū", "type": "group", "morphemes": ["pahupū"], "gloss": "cut in half", "source": "Kamakau"}
+{"name": "Kanaka maoli", "type": "group", "morphemes": ["kanaka", "maoli"], "gloss": "person + true", "source": "Pukui-Elbert"}
+{"name": "Haole", "type": "group", "morphemes": ["haole"], "gloss": "foreigner", "source": "Pukui-Elbert"}
+{"name": "Kupua", "type": "group", "morphemes": ["kupua"], "gloss": "demigod", "source": "Pukui-Elbert"}
+{"name": "Moʻo", "type": "group", "morphemes": ["moʻo"], "gloss": "lizard", "source": "Pukui-Elbert"}
+{"name": "Kini akua", "type": "group", "morphemes": ["kini", "akua"], "gloss": "multitude + god", "source": "Pukui-Elbert"}
+{"name": "Palikū", "type": "lineage", "morphemes": ["pali", "kū"], "gloss": "cliff + vertical", "source": "Malo"}
+{"name": "ʻĪ", "type": "lineage", "morphemes": ["ʻī"], "gloss": "name", "source": "Kamakau"}
+{"name": "Mahi", "type": "lineage", "morphemes": ["mahi"], "gloss": "name", "source": "Kamakau"}
+{"name": "Nīʻaupiʻo", "type": "title", "morphemes": ["nīʻau", "piʻo"], "gloss": "coconut midrib + bent", "source": "Malo"}
+{"name": "Kālaimoku", "type": "title", "morphemes": ["kālai", "moku"], "gloss": "carve + island", "source": "Malo"}
+{"name": "Konohiki", "type": "title", "morphemes": ["konohiki"], "gloss": "land overseer", "source": "Malo"}
+{"name": "Kuhina nui", "type": "title", "morphemes": ["kuhina", "nui"], "gloss": "minister + great", "source": "Kamakau"}
+{"name": "Kiaʻāina", "type": "title", "morphemes": ["kia", "ʻāina"], "gloss": "prop + land", "source": "Kamakau"}
+{"name": "Hāloa", "type": "person", "morphemes": ["hā", "loa"], "gloss": "stalk, breath + long", "source": "Kumulipo"}
+{"name": "Waia", "type": "person", "morphemes": ["waia"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Hinanalo", "type": "person", "morphemes": ["hinanalo"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Nanakehili", "type": "person", "morphemes": ["nanakehili"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Kio", "type": "person", "morphemes": ["kio"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Ole", "type": "person", "morphemes": ["ole"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Pupue", "type": "person", "morphemes": ["pupue"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Kahiko", "type": "person", "morphemes": ["kahiko"], "gloss": "ancient", "source": "Malo"}
+{"name": "Luanuʻu", "type": "person", "morphemes": ["luanuʻu"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Kiʻi", "type": "person", "morphemes": ["kiʻi"], "gloss": "image", "source": "Kumulipo"}
+{"name": "ʻUlu", "type": "person", "morphemes": ["ʻulu"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Nanaʻulu", "type": "person", "morphemes": ["nanaʻulu"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Nanaʻie", "type": "person", "morphemes": ["nanaʻie"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Nanailani", "type": "person", "morphemes": ["nanailani"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Akalana", "type": "person", "morphemes": ["akalana"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Māui", "type": "person", "morphemes": ["māui"], "gloss": "name", "source": "Kumulipo"}
+{"name": "Hawaiʻiloa", "type": "person", "morphemes": ["hawaiʻi", "loa"], "gloss": "Hawaiʻi + long", "source": "Fornander"}
+{"name": "Kumuhonua", "type": "person", "morphemes": ["kumu", "honua"], "gloss": "base + earth", "source": "Malo"}
+{"name": "Nanamaoa", "type": "person", "morphemes": ["nanamaoa"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Nanakaoko", "type": "person", "morphemes": ["nanakaoko"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Heleipawa", "type": "person", "morphemes": ["heleipawa"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "ʻAikanaka", "type": "person", "morphemes": ["ʻai", "kanaka"], "gloss": "eat + person", "source": "Fornander"}
+{"name": "Hema", "type": "person", "morphemes": ["hema"], "gloss": "south, left", "source": "Chiefly genealogies"}
+{"name": "Kahaʻi", "type": "person", "morphemes": ["kahaʻi"], "gloss": "name", "source": "Fornander"}
+{"name": "Wahieloa", "type": "person", "morphemes": ["wahie", "loa"], "gloss": "firewood + long", "source": "Chiefly genealogies"}
+{"name": "Laka", "type": "person", "morphemes": ["laka"], "gloss": "name", "source": "Fornander"}
+{"name": "Pohukaina", "type": "person", "morphemes": ["pohukaina"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Paumakua", "type": "person", "morphemes": ["paumakua"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Haho", "type": "person", "morphemes": ["haho"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Palena", "type": "person", "morphemes": ["palena"], "gloss": "boundary", "source": "Chiefly genealogies"}
+{"name": "Hanalaʻanui", "type": "person", "morphemes": ["hanalaʻa", "nui"], "gloss": "name + great", "source": "Chiefly genealogies"}
+{"name": "Hanalaʻaiki", "type": "person", "morphemes": ["hanalaʻa", "iki"], "gloss": "name + small", "source": "Chiefly genealogies"}
+{"name": "Lanakawai", "type": "person", "morphemes": ["lanakawai"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Pili", "type": "person", "morphemes": ["pili"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Pāʻao", "type": "person", "morphemes": ["pāʻao"], "gloss": "name", "source": "Fornander"}
+{"name": "Makuakaʻūmana", "type": "person", "morphemes": ["makuakaʻūmana"], "gloss": "name", "source": "Fornander"}
+{"name": "Kapawa", "type": "person", "morphemes": ["ka", "pawa"], "gloss": "the + predawn", "source": "Fornander"}
+{"name": "Koa", "type": "person", "morphemes": ["koa"], "gloss": "brave", "source": "Chiefly genealogies"}
+{"name": "Kūkohou", "type": "person", "morphemes": ["kūkohou"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kaniuhi", "type": "person", "morphemes": ["kaniuhi"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kanipahu", "type": "person", "morphemes": ["kanipahu"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kamaiole", "type": "person", "morphemes": ["kamaiole"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kahaimoelea", "type": "person", "morphemes": ["kahaimoelea"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kalaunuiohua", "type": "person", "morphemes": ["kalaunuiohua"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kūaiwa", "type": "person", "morphemes": ["kūaiwa"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kahoukapu", "type": "person", "morphemes": ["kahoukapu"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kauholanuimahu", "type": "person", "morphemes": ["kauholanuimahu"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kiha", "type": "person", "morphemes": ["kiha"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Līloa", "type": "person", "morphemes": ["līloa"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Hākau", "type": "person", "morphemes": ["hākau"], "gloss": "name", "source": "Kamakau"}
+{"name": "ʻUmi", "type": "person", "morphemes": ["ʻumi"], "gloss": "name", "source": "Kamakau"}
+{"name": "Akahiakuleana", "type": "person", "morphemes": ["akahi"], "gloss": "name", "source": "Kamakau"}
+{"name": "Piʻikea", "type": "person", "morphemes": ["piʻi", "kea"], "gloss": "rise + light", "source": "Kamakau"}
+{"name": "Kapukini", "type": "person", "morphemes": ["kapu", "kini"], "gloss": "taboo + many", "source": "Kamakau"}
+{"name": "ʻŌmaokamaʻu", "type": "person", "morphemes": ["ʻōmaokamaʻu"], "gloss": "name", "source": "Kamakau"}
+{"name": "Piʻimaiwaʻa", "type": "person", "morphemes": ["piʻimaiwaʻa"], "gloss": "name", "source": "Kamakau"}
+{"name": "Keliʻiokaloa", "type": "person", "morphemes": ["keliʻiokaloa"], "gloss": "name", "source": "Kamakau"}
+{"name": "Keawenuiaʻumi", "type": "person", "morphemes": ["keawe", "nui"], "gloss": "name + great", "source": "Kamakau"}
+{"name": "Lonoikamakahiki", "type": "person", "morphemes": ["lono", "i", "ka", "makahiki"], "gloss": "Lono + in + the + year", "source": "Fornander"}
+{"name": "Kaikilani", "type": "person", "morphemes": ["kaikilani"], "gloss": "name", "source": "Fornander"}
+{"name": "Kapaʻihiahilina", "type": "person", "morphemes": ["kapaʻihi"], "gloss": "name", "source": "Fornander"}
+{"name": "Kanaloakuaʻana", "type": "person", "morphemes": ["kanaloa", "kuaʻana"], "gloss": "Kanaloa + elder sibling", "source": "Fornander"}
+{"name": "Keākealanikāne", "type": "person", "morphemes": ["ke", "ākea", "lani", "kāne"], "gloss": "the + breadth + heaven + male", "source": "Chiefly genealogies"}
+{"name": "Keakamahana", "type": "person", "morphemes": ["keakamahana"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Keākealaniwahine", "type": "person", "morphemes": ["ke", "ākea", "lani", "wahine"], "gloss": "the + breadth + heaven + female", "source": "Chiefly genealogies"}
+{"name": "Keawe", "type": "person", "morphemes": ["keawe"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kalanikauleleiaiwi", "type": "person", "morphemes": ["kalanikauleleiaiwi"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Lonomaʻaikanaka", "type": "person", "morphemes": ["lonomaʻaikanaka"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kalaninuiʻīamamao", "type": "person", "morphemes": ["kalaninuiʻīamamao"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Alapaʻinui", "type": "person", "morphemes": ["alapaʻi", "nui"], "gloss": "name + great", "source": "Kamakau"}
+{"name": "Keaweʻōpala", "type": "person", "morphemes": ["keawe", "ʻōpala"], "gloss": "name + rubbish", "source": "Kamakau"}
+{"name": "Kalaniʻōpuʻu", "type": "person", "morphemes": ["ka", "lani", "ʻōpuʻu"], "gloss": "the + royal chief + bud", "source": "Kamakau"}
+{"name": "Keōua", "type": "person", "morphemes": ["keōua"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kekuʻiapoiwa", "type": "person", "morphemes": ["kekuʻiapoiwa"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kamakaʻīmoku", "type": "person", "morphemes": ["kamakaʻīmoku"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kamehameha", "type": "person", "morphemes": ["ka", "mehameha"], "gloss": "the + lonely", "source": "Kamakau"}
+{"name": "Kīwalaʻō", "type": "person", "morphemes": ["kīwalaʻō"], "gloss": "name", "source": "Kamakau"}
+{"name": "Keōuakūʻahuʻula", "type": "person", "morphemes": ["keōua", "kū", "ʻahu", "ʻula"], "gloss": "name + stand + garment + red", "source": "Kamakau"}
+{"name": "Keawemauhili", "type": "person", "morphemes": ["keawe", "mauhili"], "gloss": "name + name", "source": "Kamakau"}
+{"name": "Kalaimamahū", "type": "person", "morphemes": ["kalaimamahū"], "gloss": "name", "source": "Kamakau"}
+{"name": "Keliʻimaikaʻi", "type": "person", "morphemes": ["ke", "aliʻi", "maikaʻi"], "gloss": "the + chief + good", "source": "Kamakau"}
+{"name": "Kekuaokalani", "type": "person", "morphemes": ["kekuaokalani"], "gloss": "name", "source": "Kamakau"}
+{"name": "Manono", "type": "person", "morphemes": ["manono"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kameʻeiamoku", "type": "person", "morphemes": ["kameʻeiamoku"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kamanawa", "type": "person", "morphemes": ["kamanawa"], "gloss": "name", "source": "Kamakau"}
+{"name": "Keawepoepoe", "type": "person", "morphemes": ["keawe", "poepoe"], "gloss": "name + round", "source": "Kamakau"}
+{"name": "Keʻeaumoku", "type": "person", "morphemes": ["keʻeaumoku"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kekūhaupiʻo", "type": "person", "morphemes": ["ke", "kū", "hau", "piʻo"], "gloss": "the + stand + hau tree + arched", "source": "Kamakau"}
+{"name": "Kaʻiana", "type": "person", "morphemes": ["kaʻiana"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kaʻahumanu", "type": "person", "morphemes": ["ka", "ʻahu", "manu"], "gloss": "the + garment + bird", "source": "Kamakau"}
+{"name": "Keōpūolani", "type": "person", "morphemes": ["keōpūolani"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kalanimoku", "type": "person", "morphemes": ["kalanimoku"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kuakini", "type": "person", "morphemes": ["kua", "kini"], "gloss": "back + multitude", "source": "Kamakau"}
+{"name": "Kaheiheimālie", "type": "person", "morphemes": ["kaheiheimālie"], "gloss": "name", "source": "Kamakau"}
+{"name": "Nāmāhana", "type": "person", "morphemes": ["nā", "māhana"], "gloss": "the (pl.) + twin", "source": "Kamakau"}
+{"name": "Peleuli", "type": "person", "morphemes": ["peleuli"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kānekapōlei", "type": "person", "morphemes": ["kānekapōlei"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kalola", "type": "person", "morphemes": ["kalola"], "gloss": "name", "source": "Kamakau"}
+{"name": "Liliha", "type": "person", "morphemes": ["liliha"], "gloss": "rich, oily", "source": "Kamakau"}
+{"name": "Kīnaʻu", "type": "person", "morphemes": ["kīnaʻu"], "gloss": "flaw", "source": "Kamakau"}
+{"name": "Kekāuluohi", "type": "person", "morphemes": ["kekāuluohi"], "gloss": "the vine growing with shoots", "source": "Kamakau"}
+{"name": "Kauikeaouli", "type": "person", "morphemes": ["kau", "i", "ke", "ao", "uli"], "gloss": "place + in + the + cloud + dark", "source": "Kamakau"}
+{"name": "Liholiho", "type": "person", "morphemes": ["liholiho"], "gloss": "glowing", "source": "Kamakau"}
+{"name": "Nāhiʻenaʻena", "type": "person", "morphemes": ["nā", "ahi", "ʻenaʻena"], "gloss": "the (pl.) + fire + red-hot", "source": "Kamakau"}
+{"name": "Kekūanaōʻa", "type": "person", "morphemes": ["ke", "kū", "anaōʻa"], "gloss": "the + stand + projections", "source": "Kamakau"}
+{"name": "Kalākaua", "type": "person", "morphemes": ["ka", "lā", "kaua"], "gloss": "the + day + battle", "source": "Chiefly genealogies"}
+{"name": "Liliʻuokalani", "type": "person", "morphemes": ["liliʻu", "o", "ka", "lani"], "gloss": "smarting + of + the + high-born one", "source": "Chiefly genealogies"}
+{"name": "Kapiʻolani", "type": "person", "morphemes": ["ka", "piʻo", "lani"], "gloss": "the + arch + heaven", "source": "Kamakau"}
+{"name": "Lunalilo", "type": "person", "morphemes": ["luna", "lilo"], "gloss": "high + lost (to sight)", "source": "Chiefly genealogies"}
+{"name": "Kalama", "type": "person", "morphemes": ["ka", "lama"], "gloss": "the + torch", "source": "Kamakau"}
+{"name": "Pākī", "type": "person", "morphemes": ["pākī"], "gloss": "name", "source": "Kamakau"}
+{"name": "Konia", "type": "person", "morphemes": ["konia"], "gloss": "name", "source": "Kamakau"}
+{"name": "Pauahi", "type": "person", "morphemes": ["pau", "ahi"], "gloss": "destroyed + fire", "source": "Kamakau"}
+{"name": "Keʻelikōlani", "type": "person", "morphemes": ["keʻelikōlani"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kanaʻina", "type": "person", "morphemes": ["ka", "naʻina"], "gloss": "the + conquering", "source": "Kamakau"}
+{"name": "Kamāmalu", "type": "person", "morphemes": ["ka", "māmalu"], "gloss": "the + protector", "source": "Kamakau"}
+{"name": "Kaumualiʻi", "type": "person", "morphemes": ["kaumualiʻi"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kapule", "type": "person", "morphemes": ["kapule"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kamakahelei", "type": "person", "morphemes": ["kamakahelei"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kaʻeokūlani", "type": "person", "morphemes": ["kaʻeokūlani"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kāneoneo", "type": "person", "morphemes": ["kāneoneo"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kahahana", "type": "person", "morphemes": ["kahahana"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kalanikūpule", "type": "person", "morphemes": ["kalanikūpule"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kahekili", "type": "person", "morphemes": ["ka", "hekili"], "gloss": "the + thunder", "source": "Kamakau"}
+{"name": "Kamehamehanui", "type": "person", "morphemes": ["ka", "mehameha", "nui"], "gloss": "the + lonely + great", "source": "Kamakau"}
+{"name": "Kekaulike", "type": "person", "morphemes": ["ke", "kaulike"], "gloss": "the + equality", "source": "Kamakau"}
+{"name": "Kaʻōpulupulu", "type": "person", "morphemes": ["kaʻōpulupulu"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kahulupue", "type": "person", "morphemes": ["kahulupue"], "gloss": "name", "source": "Kamakau"}
+{"name": "Hewahewa", "type": "person", "morphemes": ["hewahewa"], "gloss": "name", "source": "Kamakau"}
+{"name": "Holoʻae", "type": "person", "morphemes": ["holoʻae"], "gloss": "name", "source": "Kamakau"}
+{"name": "Hoapili", "type": "person", "morphemes": ["hoa", "pili"], "gloss": "friend + close", "source": "Kamakau"}
+{"name": "Humehume", "type": "person", "morphemes": ["humehume"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kaʻōleiokū", "type": "person", "morphemes": ["kaʻōleiokū"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kaikioʻewa", "type": "person", "morphemes": ["kaikioʻewa"], "gloss": "name", "source": "Kamakau"}
+{"name": "Nāihe", "type": "person", "morphemes": ["nāihe"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kekauʻōnohi", "type": "person", "morphemes": ["kekauʻōnohi"], "gloss": "name", "source": "Kamakau"}
+{"name": "Haʻalilio", "type": "person", "morphemes": ["haʻalilio"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kekūāiwa", "type": "person", "morphemes": ["kekūāiwa"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kapuāiwa", "type": "person", "morphemes": ["kapu", "āiwa"], "gloss": "taboo + mysterious", "source": "Chiefly genealogies"}
+{"name": "Kaleleonālani", "type": "person", "morphemes": ["ka", "lele", "o", "nā", "lani"], "gloss": "the + flight + of + the (pl.) + heavenly one", "source": "Chiefly genealogies"}
+{"name": "Likelike", "type": "person", "morphemes": ["likelike"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Leleiōhoku", "type": "person", "morphemes": ["leleiōhoku"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kaʻiulani", "type": "person", "morphemes": ["ka", "ʻiu", "lani"], "gloss": "the + sacred height + royal", "source": "Chiefly genealogies"}
+{"name": "Nāmakehā", "type": "person", "morphemes": ["nāmakehā"], "gloss": "name", "source": "Kamakau"}
+{"name": "Koalaukani", "type": "person", "morphemes": ["koalaukani"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kaomi", "type": "person", "morphemes": ["kaomi"], "gloss": "name", "source": "Kamakau"}
+{"name": "Huaʻā", "type": "person", "morphemes": ["huaʻā"], "gloss": "name", "source": "Kamakau"}
+{"name": "ʻĪmaikalani", "type": "person", "morphemes": ["ʻīmaikalani"], "gloss": "name", "source": "Kamakau"}
+{"name": "Wahilani", "type": "person", "morphemes": ["wahilani"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kulukulua", "type": "person", "morphemes": ["kulukulua"], "gloss": "name", "source": "Kamakau"}
+{"name": "Luahoʻomoe", "type": "person", "morphemes": ["luahoʻomoe"], "gloss": "name", "source": "Kamakau"}
+{"name": "Keaulumoku", "type": "person", "morphemes": ["keaulumoku"], "gloss": "name", "source": "Kamakau"}
+{"name": "Haʻae", "type": "person", "morphemes": ["haʻae"], "gloss": "name", "source": "Kamakau"}
+{"name": "Māʻilikūkahi", "type": "person", "morphemes": ["māʻilikūkahi"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kalonaiki", "type": "person", "morphemes": ["ka", "lona", "iki"], "gloss": "the + canoe block + small", "source": "Chiefly genealogies"}
+{"name": "Kalonanui", "type": "person", "morphemes": ["ka", "lona", "nui"], "gloss": "the + canoe block + large", "source": "Chiefly genealogies"}
+{"name": "Piliwale", "type": "person", "morphemes": ["pili", "wale"], "gloss": "cling + needlessly", "source": "Chiefly genealogies"}
+{"name": "Kūkaniloko", "type": "person", "morphemes": ["kūkaniloko"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kalanimanuia", "type": "person", "morphemes": ["kalanimanuia"], "gloss": "name", "source": "Fornander"}
+{"name": "Kaʻihikapu", "type": "person", "morphemes": ["ka", "ʻihi", "kapu"], "gloss": "the + sacredness + taboo", "source": "Chiefly genealogies"}
+{"name": "Kākuhihewa", "type": "person", "morphemes": ["kākuhihewa"], "gloss": "name", "source": "Fornander"}
+{"name": "Kānekapu", "type": "person", "morphemes": ["kāne", "kapu"], "gloss": "Kāne + sacred", "source": "Chiefly genealogies"}
+{"name": "Kahoʻowaha", "type": "person", "morphemes": ["kahoʻowaha"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kūaliʻi", "type": "person", "morphemes": ["kūaliʻi"], "gloss": "name", "source": "Fornander"}
+{"name": "Kapiʻiohokalani", "type": "person", "morphemes": ["kapiʻiohokalani"], "gloss": "name", "source": "Kamakau"}
+{"name": "Peleiōhōlani", "type": "person", "morphemes": ["peleiōhōlani"], "gloss": "name", "source": "Kamakau"}
+{"name": "Kūmahana", "type": "person", "morphemes": ["kūmahana"], "gloss": "name", "source": "Kamakau"}
+{"name": "Haka", "type": "person", "morphemes": ["haka"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Laʻakona", "type": "person", "morphemes": ["laʻakona"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Māweke", "type": "person", "morphemes": ["māweke"], "gloss": "name", "source": "Fornander"}
+{"name": "Olopana", "type": "person", "morphemes": ["olopana"], "gloss": "name", "source": "Fornander"}
+{"name": "Mōʻīkeha", "type": "person", "morphemes": ["mōʻīkeha"], "gloss": "name", "source": "Fornander"}
+{"name": "Kila", "type": "person", "morphemes": ["kila"], "gloss": "name", "source": "Fornander"}
+{"name": "Laʻamaikahiki", "type": "person", "morphemes": ["laʻa", "mai", "kahiki"], "gloss": "name + from + Kahiki (Tahiti)", "source": "Fornander"}
+{"name": "Hoʻokamaliʻi", "type": "person", "morphemes": ["hoʻokamaliʻi"], "gloss": "name", "source": "Fornander"}
+{"name": "Luʻukia", "type": "person", "morphemes": ["luʻukia"], "gloss": "name", "source": "Fornander"}
+{"name": "Kukona", "type": "person", "morphemes": ["kukona"], "gloss": "name", "source": "Fornander"}
+{"name": "Manokalanipō", "type": "person", "morphemes": ["manokalanipō"], "gloss": "name", "source": "Fornander"}
+{"name": "Kawelo", "type": "person", "morphemes": ["kawelo"], "gloss": "name", "source": "Fornander"}
+{"name": "Kauahoa", "type": "person", "morphemes": ["kauahoa"], "gloss": "name", "source": "Fornander"}
+{"name": "Kamalama", "type": "person", "morphemes": ["kamalama"], "gloss": "name", "source": "Fornander"}
+{"name": "Kamaluohua", "type": "person", "morphemes": ["kamaluohua"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kākaʻalaneo", "type": "person", "morphemes": ["kākaʻalaneo"], "gloss": "name", "source": "Fornander"}
+{"name": "Kaululāʻau", "type": "person", "morphemes": ["ka", "ulu", "lāʻau"], "gloss": "the + growth + tree", "source": "Fornander"}
+{"name": "Kawaokaohele", "type": "person", "morphemes": ["kawaokaohele"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Piʻilani", "type": "person", "morphemes": ["piʻi", "lani"], "gloss": "ascend + heaven", "source": "Chiefly genealogies"}
+{"name": "Kamalālāwalu", "type": "person", "morphemes": ["kamalālāwalu"], "gloss": "name", "source": "Fornander"}
+{"name": "Kalanikaumakaowakea", "type": "person", "morphemes": ["kalanikaumakaowakea"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Lonohonuakini", "type": "person", "morphemes": ["lonohonuakini"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Kamauaua", "type": "person", "morphemes": ["kamauaua"], "gloss": "name", "source": "Chiefly genealogies"}
+{"name": "Keoloʻewa", "type": "person", "morphemes": ["ke", "olo", "ʻewa"], "gloss": "the + hill + crooked", "source": "Fornander"}
+{"name": "Kaupeʻepeʻe", "type": "person", "morphemes": ["kaupeʻepeʻe"], "gloss": "name", "source": "Fornander"}
+{"name": "Lanikāula", "type": "person", "morphemes": ["lani", "kāula"], "gloss": "heaven + prophet", "source": "Fornander"}
+{"name": "Kana", "type": "person", "morphemes": ["kana"], "gloss": "name", "source": "Fornander"}
+{"name": "Niheu", "type": "person", "morphemes": ["niheu"], "gloss": "name", "source": "Fornander"}
+{"name": "Hakalanileo", "type": "person", "morphemes": ["hakalanileo"], "gloss": "name", "source": "Fornander"}
+{"name": "Kaulu", "type": "person", "morphemes": ["kaulu"], "gloss": "name", "source": "Fornander"}
+{"name": "Palila", "type": "person", "morphemes": ["palila"], "gloss": "name", "source": "Fornander"}
+{"name": "Pākaʻa", "type": "person", "morphemes": ["pākaʻa"], "gloss": "name", "source": "Fornander"}
+{"name": "Kūanuʻuanu", "type": "person", "morphemes": ["kūanuʻuanu"], "gloss": "name", "source": "Fornander"}
+{"name": "Pīkoiakaʻalalā", "type": "person", "morphemes": ["pīkoi"], "gloss": "name", "source": "Fornander"}
+{"name": "Kalelealuakā", "type": "person", "morphemes": ["kalelealuakā"], "gloss": "name", "source": "Fornander"}
+{"name": "Pāmano", "type": "person", "morphemes": ["pāmano"], "gloss": "name", "source": "Fornander"}
+{"name": "Kepakaʻiliʻula", "type": "person", "morphemes": ["kepakaʻiliʻula"], "gloss": "name", "source": "Fornander"}
+{"name": "Hiku", "type": "person", "morphemes": ["hiku"], "gloss": "name", "source": "Fornander"}
+{"name": "Kawelu", "type": "person", "morphemes": ["kawelu"], "gloss": "name", "source": "Fornander"}
+{"name": "Kahalaopuna", "type": "person", "morphemes": ["ka", "hala", "o", "puna"], "gloss": "the + pandanus + of + Puna", "source": "Fornander"}
+{"name": "Kauhi", "type": "person", "morphemes": ["kauhi"], "gloss": "name", "source": "Fornander"}
+{"name": "ʻAukelenuiaiku", "type": "person", "morphemes": ["ʻaukele", "nui"], "gloss": "name + great", "source": "Fornander"}
+{"name": "Kamaunuaniho", "type": "person", "morphemes": ["kamaunuaniho"], "gloss": "name", "source": "Fornander"}
+{"name": "Kalaepuni", "type": "person", "morphemes": ["kalaepuni"], "gloss": "name", "source": "Fornander"}
+{"name": "Kapunohu", "type": "person", "morphemes": ["kapunohu"], "gloss": "name", "source": "Fornander"}
+{"name": "Punia", "type": "person", "morphemes": ["punia"], "gloss": "name", "source": "Fornander"}
+{"name": "Kaipalaoa", "type": "person", "morphemes": ["kai", "palaoa"], "gloss": "sea + whale", "source": "Fornander"}
+{"name": "Lepeamoa", "type": "person", "morphemes": ["lepe", "a", "moa"], "gloss": "comb + of + chicken", "source": "Fornander"}
+{"name": "Kauilani", "type": "person", "morphemes": ["kauilani"], "gloss": "name", "source": "Fornander"}
+{"name": "Kahikiʻula", "type": "person", "morphemes": ["kahiki", "ʻula"], "gloss": "Kahiki (Tahiti) + red", "source": "Fornander"}
+{"name": "Lāʻieikawai", "type": "person", "morphemes": ["lāʻie", "i", "ka", "wai"], "gloss": "ʻie vine leaf + in + the + water", "source": "Haleʻole, Lāʻieikawai"}
+{"name": "Lāʻielohelohe", "type": "person", "morphemes": ["lāʻielohelohe"], "gloss": "name", "source": "Haleʻole, Lāʻieikawai"}
+{"name": "Waka", "type": "person", "morphemes": ["waka"], "gloss": "name", "source": "Haleʻole, Lāʻieikawai"}
+{"name": "ʻAiwohikupua", "type": "person", "morphemes": ["ʻaiwohikupua"], "gloss": "name", "source": "Haleʻole, Lāʻieikawai"}
+{"name": "Hauaʻiliki", "type": "person", "morphemes": ["hauaʻiliki"], "gloss": "bitter cold", "source": "Haleʻole, Lāʻieikawai"}
+{"name": "Kahalaomāpuana", "type": "person", "morphemes": ["ka", "hala", "o", "māpuana"], "gloss": "the + pandanus + of + fragrance", "source": "Haleʻole, Lāʻieikawai"}
+{"name": "Lohiʻau", "type": "person", "morphemes": ["lohiʻau"], "gloss": "name", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Wahineʻōmaʻo", "type": "person", "morphemes": ["wahine", "ʻōmaʻo"], "gloss": "woman + green", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Hōpoe", "type": "person", "morphemes": ["hōpoe"], "gloss": "name", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Pāʻūopalaʻā", "type": "person", "morphemes": ["pāʻū", "o", "palaʻā"], "gloss": "skirt + of + palaʻā fern", "source": "Pele-Hiʻiaka tradition"}
+{"name": "Paoa", "type": "person", "morphemes": ["paoa"], "gloss": "name", "source": "Pele-Hiʻiaka tradition"}

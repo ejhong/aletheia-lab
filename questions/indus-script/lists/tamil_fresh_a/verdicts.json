@@ -1,0 +1,506 @@
+{
+ "A": [
+  {
+   "item": "Kaṇaikkāl Irumpoṟai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Makaram",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Tumpicēr Kīraṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kollaṉ Aḻiciyār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Aṇṭar",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kallāṭaṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Peruñcittiraṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Mīṉeṟitūṇṭilār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kuṟuṅkōḻiyūr",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Cīttalaic Cāttaṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Mārkkaṇṭēyaṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Tōṉṟikkōṉ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Iḷampōtiyār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Nāñcil",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Celvakkaṭuṅkō Vāḻiyātaṉ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Iḷaveyiṉi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Veṇpūtaṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kōkkōtai Mārpaṉ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Mati",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Neṭiyōṉ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Ōtalāntaiyār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Utiyañcēral",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Āy Aṇṭiraṉ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kumuḻūr",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Vāṉaramakaḷir",
+   "verdict": "wrong",
+   "reason": "Not an opaque name: the Tamil Lexicon analyses it as vāṉ 'sky' + aramakaḷ(ir) 'damsels' (celestial damsels), so leaving it unsplit and glossing it 'name' (no known meaning) is wrong; the attestation itself (Tirumurukāṟṟuppaṭai, Aiṅkuṟunūṟu) is fine."
+  },
+  {
+   "item": "Kiḷḷi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Tuṭiyar",
+   "verdict": "ok",
+   "reason": "Attested in Puṟanāṉūṟu; not found in Aiṅkuṟunūṟu."
+  },
+  {
+   "item": "Uruttiraṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Porunai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Peruñcēral Irumpoṟai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Vaṭukar",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Nārmuṭiccēral",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Toḻunai",
+   "verdict": "ok",
+   "reason": "Akanāṉūṟu 59 (toḻunai, TL toḻuṉai) = the Yamunā."
+  },
+  {
+   "item": "Pūtaṉār",
+   "verdict": "ok",
+   "reason": "Real poet name; found in the Naṟṟiṇai 29 colophon rather than Kuṟuntokai."
+  },
+  {
+   "item": "Nāṉmuka Oruvaṉ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Peruntēvaṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kōḷiyūr",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kūṟṟaṅkumaraṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Iḷampūtaṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Cāṇṭiliyaṉār",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Peruṅkuṉṟūr",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Tēvaṉ Cāttaṉ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Imayam",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Cāttaṉār",
+   "verdict": "ok",
+   "reason": "Real poet name; the plain colophon 'Cāttaṉār' found is in Kuṟuntokai, not Akanāṉūṟu."
+  },
+  {
+   "item": "Kūkaikkōḻiyār",
+   "verdict": "ok",
+   "reason": "Puṟanāṉūṟu 364; one edition reads Kūkaik Kōriyār."
+  },
+  {
+   "item": "Aṉalaṉ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Āriyar",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Eḻiṉiyātaṉ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Vaṅkaṉār",
+   "verdict": "ok",
+   "reason": "Colophons name him Ālaṅkuṭi Vaṅkaṉār (Akanāṉūṟu 106 and others)."
+  },
+  {
+   "item": "Iruṅkōvēḷ",
+   "verdict": "ok",
+   "reason": ""
+  }
+ ],
+ "B": [
+  {
+   "item": "narampu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "neñcu",
+   "verdict": "ok",
+   "reason": "neñcu 'chest' is in Tolkāppiyam Eḻuttu 83; in the poems it is mostly 'heart, mind'."
+  },
+  {
+   "item": "vāyil",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "taḷir",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "mulai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "āṇ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "ñeṇṭu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kuṟaṭu",
+   "verdict": "wrong",
+   "reason": "kuṟaṭu 'pincers, tongs' is first cited in Nālaṭiyār 208 (post-Sangam); in the Sangam texts kuṟaṭu only means a wooden block or wheel hub."
+  },
+  {
+   "item": "arumpu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kiḷai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "koṭi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kalam",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "ōṭu",
+   "verdict": "wrong",
+   "reason": "No early attestation: the Sangam word glossary and a full-text search show no noun ōṭu 'shell' (only the case suffix and the verb 'run'); the Tamil Lexicon's earliest citations are post-Sangam."
+  },
+  {
+   "item": "kuñci",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kaḻai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "pāmpu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "vaḷaivu",
+   "verdict": "wrong",
+   "reason": "vaḷaivu is not found in the Sangam corpus (only vaḷai, e.g. vaḷai-vāy), and the Tamil Lexicon gives it no early citation."
+  },
+  {
+   "item": "kuṟaṭu",
+   "verdict": "wrong",
+   "reason": "kuṟaṭu 'tongs' is first cited in Nālaṭiyār 208 (post-Sangam); in the Sangam texts kuṟaṭu only means a wooden block or wheel hub."
+  },
+  {
+   "item": "paṟi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "puḷḷi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "niṟai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kāmpu",
+   "verdict": "ok",
+   "reason": "kāmpu 'shaft, handle' is in Paripāṭal 19.87 (the umbrella's shaft)."
+  },
+  {
+   "item": "taḻai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "pāvai",
+   "verdict": "ok",
+   "reason": "pāvai 'pupil' is attested in Puṟanāṉūṟu 235, Naṟṟiṇai and Akanāṉūṟu."
+  },
+  {
+   "item": "kaṇ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "cevi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kaṇai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "maṉai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kuḷam",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "peṇ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "cuma",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kōl",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kal",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "āḻi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "koṭi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "maṇai",
+   "verdict": "ok",
+   "reason": "maṇai 'low wooden seat' is attested in Tolkāppiyam (Poruḷ. 626 in the Tamil Lexicon's numbering), not in the Sangam poems."
+  },
+  {
+   "item": "verpu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "nilā",
+   "verdict": "wrong",
+   "reason": "In Sangam texts nilā means moonlight (mati nilā 'the moon's light'); the Tamil Lexicon first cites the sense 'moon' in Tiruvācakam (borderline)."
+  },
+  {
+   "item": "vari",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "aravu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "cuḻal",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "piṟai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "viḷakku",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "tivalai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kaṇ",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "iṇar",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kuvai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kai",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "cuḷḷi",
+   "verdict": "wrong",
+   "reason": "In early texts cuḷḷi is a tree (Kuṟiñcippāṭṭu 66, glossed Ceylon ebony); the sense 'twig, dry stick' is cited only from late texts."
+  },
+  {
+   "item": "iru",
+   "verdict": "ok",
+   "reason": ""
+  }
+ ]
+}

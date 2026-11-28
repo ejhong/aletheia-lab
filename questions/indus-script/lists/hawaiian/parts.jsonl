@@ -1,0 +1,590 @@
+{"part": "a", "gloss": "of", "in_names": 6}
+{"part": "ahi", "gloss": "fire", "in_names": 2}
+{"part": "ahu", "gloss": "heap", "in_names": 1}
+{"part": "akahi", "gloss": "name", "in_names": 1}
+{"part": "akalana", "gloss": "name", "in_names": 1}
+{"part": "akua", "gloss": "god", "in_names": 2}
+{"part": "ala", "gloss": "path", "in_names": 2}
+{"part": "alapaʻi", "gloss": "name", "in_names": 1}
+{"part": "aliʻi", "gloss": "chief", "in_names": 3}
+{"part": "anahola", "gloss": "name", "in_names": 1}
+{"part": "anahulu", "gloss": "ten days", "in_names": 1}
+{"part": "anaōʻa", "gloss": "projections", "in_names": 1}
+{"part": "anu", "gloss": "cool", "in_names": 1}
+{"part": "ao", "gloss": "cloud", "in_names": 3}
+{"part": "au", "gloss": "era, current", "in_names": 3}
+{"part": "awa", "gloss": "milkfish", "in_names": 1}
+{"part": "aʻa", "gloss": "roots", "in_names": 1}
+{"part": "ehu", "gloss": "spray", "in_names": 1}
+{"part": "hae", "gloss": "wrath", "in_names": 1}
+{"part": "haele", "gloss": "travel", "in_names": 1}
+{"part": "haho", "gloss": "name", "in_names": 1}
+{"part": "haka", "gloss": "name", "in_names": 1}
+{"part": "hakalanileo", "gloss": "name", "in_names": 1}
+{"part": "haki", "gloss": "broken", "in_names": 1}
+{"part": "haku", "gloss": "lord", "in_names": 1}
+{"part": "hala", "gloss": "pandanus", "in_names": 2}
+{"part": "hale", "gloss": "house", "in_names": 11}
+{"part": "hana", "gloss": "bay", "in_names": 4}
+{"part": "hanalaʻa", "gloss": "name", "in_names": 2}
+{"part": "haole", "gloss": "foreigner", "in_names": 1}
+{"part": "hau", "gloss": "hau tree", "in_names": 3}
+{"part": "hauaʻiliki", "gloss": "bitter cold", "in_names": 1}
+{"part": "haumea", "gloss": "name", "in_names": 1}
+{"part": "hawaiʻi", "gloss": "name", "in_names": 2}
+{"part": "haʻae", "gloss": "name", "in_names": 1}
+{"part": "haʻalilio", "gloss": "name", "in_names": 1}
+{"part": "haʻikū", "gloss": "speak abruptly or sharp break", "in_names": 1}
+{"part": "hekili", "gloss": "thunder", "in_names": 2}
+{"part": "hele", "gloss": "going, snared", "in_names": 1}
+{"part": "heleipawa", "gloss": "name", "in_names": 1}
+{"part": "hema", "gloss": "south, left", "in_names": 1}
+{"part": "hewahewa", "gloss": "name", "in_names": 1}
+{"part": "heʻe", "gloss": "squid", "in_names": 1}
+{"part": "heʻeia", "gloss": "surfed, washed out", "in_names": 1}
+{"part": "hiki", "gloss": "moving", "in_names": 1}
+{"part": "hikianalia", "gloss": "name", "in_names": 1}
+{"part": "hikina", "gloss": "rising", "in_names": 1}
+{"part": "hiku", "gloss": "seven", "in_names": 2}
+{"part": "hilo", "gloss": "name", "in_names": 1}
+{"part": "hina", "gloss": "Hina", "in_names": 4}
+{"part": "hinaiaʻeleʻele", "gloss": "name", "in_names": 1}
+{"part": "hinanalo", "gloss": "name", "in_names": 1}
+{"part": "hiʻi", "gloss": "carry", "in_names": 1}
+{"part": "hiʻiaka", "gloss": "name", "in_names": 2}
+{"part": "hoa", "gloss": "companion", "in_names": 2}
+{"part": "hoaka", "gloss": "crescent", "in_names": 1}
+{"part": "hoku", "gloss": "Hoku (full-moon night)", "in_names": 2}
+{"part": "holoholo", "gloss": "run", "in_names": 1}
+{"part": "holoholopinaʻau", "gloss": "name", "in_names": 1}
+{"part": "holoʻae", "gloss": "name", "in_names": 1}
+{"part": "hono", "gloss": "bay", "in_names": 7}
+{"part": "honu", "gloss": "turtle", "in_names": 2}
+{"part": "honua", "gloss": "land", "in_names": 2}
+{"part": "hou", "gloss": "new", "in_names": 1}
+{"part": "hoʻohōkū", "gloss": "make stars", "in_names": 1}
+{"part": "hoʻokamaliʻi", "gloss": "name", "in_names": 1}
+{"part": "hoʻokele", "gloss": "steer", "in_names": 1}
+{"part": "hoʻokena", "gloss": "satisfy thirst", "in_names": 1}
+{"part": "hoʻolawe", "gloss": "carrying away", "in_names": 1}
+{"part": "hoʻomalu", "gloss": "restricted", "in_names": 1}
+{"part": "hoʻoneʻe", "gloss": "move", "in_names": 1}
+{"part": "hualālai", "gloss": "name", "in_names": 1}
+{"part": "huaʻā", "gloss": "name", "in_names": 1}
+{"part": "huku", "gloss": "projection", "in_names": 1}
+{"part": "huli", "gloss": "turning", "in_names": 1}
+{"part": "hulēʻia", "gloss": "name", "in_names": 1}
+{"part": "humehume", "gloss": "name", "in_names": 1}
+{"part": "humuʻula", "gloss": "jasper stone", "in_names": 1}
+{"part": "huna", "gloss": "tiny particle", "in_names": 1}
+{"part": "hā", "gloss": "stalk, breath", "in_names": 1}
+{"part": "hākau", "gloss": "name", "in_names": 1}
+{"part": "hālawa", "gloss": "curve", "in_names": 1}
+{"part": "hāliʻi", "gloss": "spread over", "in_names": 1}
+{"part": "hāmākua", "gloss": "name", "in_names": 1}
+{"part": "hāna", "gloss": "name", "in_names": 1}
+{"part": "hānai", "gloss": "foster child", "in_names": 1}
+{"part": "hānau", "gloss": "give birth", "in_names": 1}
+{"part": "hāpai", "gloss": "elevate", "in_names": 1}
+{"part": "hāʻena", "gloss": "red hot", "in_names": 1}
+{"part": "hāʻule", "gloss": "fall", "in_names": 1}
+{"part": "hāʻupu", "gloss": "recollection", "in_names": 1}
+{"part": "hōkū", "gloss": "star", "in_names": 6}
+{"part": "hōkūkauʻōpae", "gloss": "name", "in_names": 1}
+{"part": "hōlua", "gloss": "sled course", "in_names": 1}
+{"part": "hōnaunau", "gloss": "name", "in_names": 1}
+{"part": "hōpoe", "gloss": "name", "in_names": 1}
+{"part": "i", "gloss": "in", "in_names": 6}
+{"part": "iki", "gloss": "small", "in_names": 3}
+{"part": "ikiiki", "gloss": "stifling heat", "in_names": 1}
+{"part": "imu", "gloss": "oven", "in_names": 1}
+{"part": "iʻa", "gloss": "fish", "in_names": 1}
+{"part": "ka", "gloss": "the", "in_names": 67}
+{"part": "kaha", "gloss": "place", "in_names": 2}
+{"part": "kahahana", "gloss": "name", "in_names": 1}
+{"part": "kahaimoelea", "gloss": "name", "in_names": 1}
+{"part": "kahana", "gloss": "cutting, turning point", "in_names": 1}
+{"part": "kahaʻi", "gloss": "Kahaʻi", "in_names": 2}
+{"part": "kaheiheimālie", "gloss": "name", "in_names": 1}
+{"part": "kahi", "gloss": "first", "in_names": 1}
+{"part": "kahiki", "gloss": "Kahiki (Tahiti)", "in_names": 5}
+{"part": "kahiko", "gloss": "ancient", "in_names": 1}
+{"part": "kahiʻukā", "gloss": "name", "in_names": 1}
+{"part": "kahoukapu", "gloss": "name", "in_names": 1}
+{"part": "kahoʻowaha", "gloss": "name", "in_names": 1}
+{"part": "kahoʻāliʻi", "gloss": "name", "in_names": 1}
+{"part": "kahuilaokalani", "gloss": "name", "in_names": 1}
+{"part": "kahulupue", "gloss": "name", "in_names": 1}
+{"part": "kai", "gloss": "sea", "in_names": 4}
+{"part": "kaikilani", "gloss": "name", "in_names": 1}
+{"part": "kaikioʻewa", "gloss": "name", "in_names": 1}
+{"part": "kala", "gloss": "proclaim", "in_names": 1}
+{"part": "kalaepuni", "gloss": "name", "in_names": 1}
+{"part": "kalaimamahū", "gloss": "name", "in_names": 1}
+{"part": "kalalea", "gloss": "prominent", "in_names": 1}
+{"part": "kalamainuʻu", "gloss": "name", "in_names": 1}
+{"part": "kalanikauleleiaiwi", "gloss": "name", "in_names": 1}
+{"part": "kalanikaumakaowakea", "gloss": "name", "in_names": 1}
+{"part": "kalanikūpule", "gloss": "name", "in_names": 1}
+{"part": "kalanimanuia", "gloss": "name", "in_names": 1}
+{"part": "kalanimoku", "gloss": "name", "in_names": 1}
+{"part": "kalaninuiʻīamamao", "gloss": "name", "in_names": 1}
+{"part": "kalapana", "gloss": "name", "in_names": 1}
+{"part": "kalaunuiohua", "gloss": "name", "in_names": 1}
+{"part": "kalelealuakā", "gloss": "name", "in_names": 1}
+{"part": "kalola", "gloss": "name", "in_names": 1}
+{"part": "kama", "gloss": "child", "in_names": 1}
+{"part": "kamaiole", "gloss": "name", "in_names": 1}
+{"part": "kamakahelei", "gloss": "name", "in_names": 1}
+{"part": "kamakaʻīmoku", "gloss": "name", "in_names": 1}
+{"part": "kamakou", "gloss": "Peucedanum herb", "in_names": 1}
+{"part": "kamalama", "gloss": "name", "in_names": 1}
+{"part": "kamaluohua", "gloss": "name", "in_names": 1}
+{"part": "kamalālāwalu", "gloss": "name", "in_names": 1}
+{"part": "kamanawa", "gloss": "name", "in_names": 1}
+{"part": "kamauaua", "gloss": "name", "in_names": 1}
+{"part": "kamaunuaniho", "gloss": "name", "in_names": 1}
+{"part": "kamehaʻikana", "gloss": "name", "in_names": 1}
+{"part": "kameʻeiamoku", "gloss": "name", "in_names": 1}
+{"part": "kana", "gloss": "name", "in_names": 1}
+{"part": "kanaka", "gloss": "person", "in_names": 2}
+{"part": "kanaloa", "gloss": "name", "in_names": 2}
+{"part": "kanilehua", "gloss": "rain that lehua flowers drink", "in_names": 1}
+{"part": "kanipahu", "gloss": "name", "in_names": 1}
+{"part": "kaniuhi", "gloss": "name", "in_names": 1}
+{"part": "kaomi", "gloss": "name", "in_names": 1}
+{"part": "kapa", "gloss": "border", "in_names": 1}
+{"part": "kapaʻau", "gloss": "raised place in a heiau", "in_names": 1}
+{"part": "kapaʻihi", "gloss": "name", "in_names": 1}
+{"part": "kapiʻiohokalani", "gloss": "name", "in_names": 1}
+{"part": "kapo", "gloss": "Kapo (goddess)", "in_names": 2}
+{"part": "kapu", "gloss": "taboo", "in_names": 5}
+{"part": "kapule", "gloss": "name", "in_names": 1}
+{"part": "kapunohu", "gloss": "name", "in_names": 1}
+{"part": "kapōʻulakīnaʻu", "gloss": "name", "in_names": 1}
+{"part": "kau", "gloss": "place", "in_names": 3}
+{"part": "kaua", "gloss": "battle", "in_names": 1}
+{"part": "kauahoa", "gloss": "name", "in_names": 1}
+{"part": "kauaʻi", "gloss": "name", "in_names": 1}
+{"part": "kauhi", "gloss": "name", "in_names": 1}
+{"part": "kauholanuimahu", "gloss": "name", "in_names": 1}
+{"part": "kauilani", "gloss": "name", "in_names": 1}
+{"part": "kaukaualiʻi", "gloss": "lesser chief", "in_names": 1}
+{"part": "kaukonahua", "gloss": "name", "in_names": 1}
+{"part": "kaulike", "gloss": "equality", "in_names": 1}
+{"part": "kaulu", "gloss": "name", "in_names": 1}
+{"part": "kaulua", "gloss": "double canoe", "in_names": 1}
+{"part": "kaumualiʻi", "gloss": "name", "in_names": 1}
+{"part": "kaunakakai", "gloss": "name", "in_names": 1}
+{"part": "kaunolū", "gloss": "name", "in_names": 1}
+{"part": "kaupeʻepeʻe", "gloss": "name", "in_names": 1}
+{"part": "kauwā", "gloss": "outcast", "in_names": 1}
+{"part": "kawaokaohele", "gloss": "name", "in_names": 1}
+{"part": "kawelo", "gloss": "name", "in_names": 1}
+{"part": "kawelu", "gloss": "name", "in_names": 1}
+{"part": "kaʻa", "gloss": "rolling", "in_names": 2}
+{"part": "kaʻahupāhau", "gloss": "name", "in_names": 1}
+{"part": "kaʻala", "gloss": "name", "in_names": 1}
+{"part": "kaʻaona", "gloss": "name", "in_names": 1}
+{"part": "kaʻeokūlani", "gloss": "name", "in_names": 1}
+{"part": "kaʻiana", "gloss": "name", "in_names": 1}
+{"part": "kaʻula", "gloss": "name", "in_names": 1}
+{"part": "kaʻāwela", "gloss": "name", "in_names": 1}
+{"part": "kaʻōleiokū", "gloss": "name", "in_names": 1}
+{"part": "kaʻōpulupulu", "gloss": "name", "in_names": 1}
+{"part": "kaʻū", "gloss": "name", "in_names": 1}
+{"part": "ke", "gloss": "the", "in_names": 16}
+{"part": "kea", "gloss": "white", "in_names": 5}
+{"part": "keakamahana", "gloss": "name", "in_names": 1}
+{"part": "keaulumoku", "gloss": "name", "in_names": 1}
+{"part": "keawe", "gloss": "name", "in_names": 6}
+{"part": "kekauʻōnohi", "gloss": "name", "in_names": 1}
+{"part": "kekuaokalani", "gloss": "name", "in_names": 1}
+{"part": "kekuʻiapoiwa", "gloss": "name", "in_names": 1}
+{"part": "kekāuluohi", "gloss": "the vine growing with shoots", "in_names": 1}
+{"part": "kekūāiwa", "gloss": "name", "in_names": 1}
+{"part": "kele", "gloss": "muddy", "in_names": 1}
+{"part": "keliʻiokaloa", "gloss": "name", "in_names": 1}
+{"part": "kepakaʻiliʻula", "gloss": "name", "in_names": 1}
+{"part": "keōpūolani", "gloss": "name", "in_names": 1}
+{"part": "keōua", "gloss": "name", "in_names": 2}
+{"part": "keʻeaumoku", "gloss": "name", "in_names": 1}
+{"part": "keʻelikōlani", "gloss": "name", "in_names": 1}
+{"part": "kia", "gloss": "prop", "in_names": 1}
+{"part": "kiha", "gloss": "supernatural lizard", "in_names": 3}
+{"part": "kila", "gloss": "name", "in_names": 1}
+{"part": "kilohana", "gloss": "lookout point", "in_names": 1}
+{"part": "kini", "gloss": "many", "in_names": 7}
+{"part": "kio", "gloss": "name", "in_names": 1}
+{"part": "kiʻi", "gloss": "image", "in_names": 3}
+{"part": "koa", "gloss": "warrior", "in_names": 2}
+{"part": "koalaukani", "gloss": "name", "in_names": 1}
+{"part": "kohala", "gloss": "name", "in_names": 1}
+{"part": "kohe", "gloss": "vagina", "in_names": 1}
+{"part": "koholā", "gloss": "whale", "in_names": 1}
+{"part": "koko", "gloss": "blood", "in_names": 1}
+{"part": "koloa", "gloss": "duck", "in_names": 1}
+{"part": "kolu", "gloss": "three", "in_names": 1}
+{"part": "kona", "gloss": "leeward", "in_names": 3}
+{"part": "konia", "gloss": "name", "in_names": 1}
+{"part": "konohiki", "gloss": "land overseer", "in_names": 1}
+{"part": "kou", "gloss": "kou tree", "in_names": 1}
+{"part": "koʻi", "gloss": "adze", "in_names": 1}
+{"part": "koʻolau", "gloss": "windward", "in_names": 3}
+{"part": "kua", "gloss": "back", "in_names": 3}
+{"part": "kuahine", "gloss": "sister (of a male)", "in_names": 1}
+{"part": "kuaihelani", "gloss": "name", "in_names": 1}
+{"part": "kuaʻana", "gloss": "elder sibling", "in_names": 1}
+{"part": "kuhina", "gloss": "minister", "in_names": 1}
+{"part": "kukona", "gloss": "name", "in_names": 1}
+{"part": "kukui", "gloss": "light", "in_names": 1}
+{"part": "kula", "gloss": "plain", "in_names": 1}
+{"part": "kuli", "gloss": "knee", "in_names": 1}
+{"part": "kulukulua", "gloss": "name", "in_names": 1}
+{"part": "kumu", "gloss": "beginning", "in_names": 3}
+{"part": "kupua", "gloss": "demigod", "in_names": 1}
+{"part": "kāhala", "gloss": "amberjack fish", "in_names": 1}
+{"part": "kākaʻalaneo", "gloss": "name", "in_names": 1}
+{"part": "kākuhihewa", "gloss": "name", "in_names": 1}
+{"part": "kālai", "gloss": "carve", "in_names": 2}
+{"part": "kāne", "gloss": "Kāne", "in_names": 10}
+{"part": "kāneikaulanaʻula", "gloss": "name", "in_names": 1}
+{"part": "kānekapōlei", "gloss": "name", "in_names": 1}
+{"part": "kāneoneo", "gloss": "name", "in_names": 1}
+{"part": "kāpī", "gloss": "sprinkle", "in_names": 1}
+{"part": "kāula", "gloss": "prophet", "in_names": 1}
+{"part": "kāʻana", "gloss": "name", "in_names": 1}
+{"part": "kāʻelo", "gloss": "name", "in_names": 1}
+{"part": "kāʻili", "gloss": "snatch", "in_names": 1}
+{"part": "kēhau", "gloss": "dew", "in_names": 1}
+{"part": "kī", "gloss": "ti plant", "in_names": 1}
+{"part": "kīhei", "gloss": "cape, cloak", "in_names": 1}
+{"part": "kīholo", "gloss": "fishhook", "in_names": 1}
+{"part": "kīkī", "gloss": "spouting", "in_names": 1}
+{"part": "kīlauea", "gloss": "spewing, much spreading", "in_names": 1}
+{"part": "kīnaʻu", "gloss": "flaw", "in_names": 1}
+{"part": "kīpuʻupuʻu", "gloss": "name", "in_names": 1}
+{"part": "kīwalaʻō", "gloss": "name", "in_names": 1}
+{"part": "kō", "gloss": "draw", "in_names": 1}
+{"part": "kōkeʻe", "gloss": "bend, wind", "in_names": 1}
+{"part": "kōloa", "gloss": "long cane", "in_names": 1}
+{"part": "kōnāhua", "gloss": "fat innards", "in_names": 1}
+{"part": "kū", "gloss": "Kū", "in_names": 17}
+{"part": "kūaiwa", "gloss": "name", "in_names": 1}
+{"part": "kūaliʻi", "gloss": "name", "in_names": 1}
+{"part": "kūanuʻuanu", "gloss": "name", "in_names": 1}
+{"part": "kūhaimoana", "gloss": "name", "in_names": 1}
+{"part": "kūkala", "gloss": "proclaim", "in_names": 1}
+{"part": "kūkaniloko", "gloss": "name", "in_names": 1}
+{"part": "kūkohou", "gloss": "name", "in_names": 1}
+{"part": "kūmahana", "gloss": "name", "in_names": 1}
+{"part": "kūpāʻaikeʻe", "gloss": "name", "in_names": 1}
+{"part": "lahaina", "gloss": "name", "in_names": 1}
+{"part": "laka", "gloss": "Laka", "in_names": 2}
+{"part": "lalau", "gloss": "straying", "in_names": 1}
+{"part": "lama", "gloss": "torch", "in_names": 3}
+{"part": "lanakawai", "gloss": "name", "in_names": 1}
+{"part": "lani", "gloss": "heaven", "in_names": 13}
+{"part": "lau", "gloss": "leaf", "in_names": 2}
+{"part": "laupapa", "gloss": "flat plain", "in_names": 1}
+{"part": "laʻa", "gloss": "name", "in_names": 1}
+{"part": "laʻakona", "gloss": "name", "in_names": 1}
+{"part": "laʻamaomao", "gloss": "name", "in_names": 1}
+{"part": "laʻilaʻi", "gloss": "name", "in_names": 1}
+{"part": "lea", "gloss": "Lea (goddess)", "in_names": 2}
+{"part": "lehu", "gloss": "ash", "in_names": 1}
+{"part": "lehua", "gloss": "lehua flower", "in_names": 3}
+{"part": "lei", "gloss": "lei", "in_names": 4}
+{"part": "lele", "gloss": "flight", "in_names": 1}
+{"part": "leleiōhoku", "gloss": "name", "in_names": 1}
+{"part": "lena", "gloss": "yellow", "in_names": 1}
+{"part": "lepe", "gloss": "comb", "in_names": 1}
+{"part": "lepelepe", "gloss": "labia minora", "in_names": 1}
+{"part": "leʻa", "gloss": "joyful", "in_names": 2}
+{"part": "lihi", "gloss": "edge", "in_names": 2}
+{"part": "liholiho", "gloss": "glowing", "in_names": 1}
+{"part": "likelike", "gloss": "name", "in_names": 1}
+{"part": "liliha", "gloss": "rich, oily", "in_names": 1}
+{"part": "lilinoe", "gloss": "fine mist", "in_names": 1}
+{"part": "liliʻu", "gloss": "smarting", "in_names": 1}
+{"part": "lilo", "gloss": "lost (to sight)", "in_names": 1}
+{"part": "lipo", "gloss": "deep darkness", "in_names": 1}
+{"part": "liʻi", "gloss": "little", "in_names": 3}
+{"part": "loa", "gloss": "long", "in_names": 15}
+{"part": "lohiʻau", "gloss": "name", "in_names": 1}
+{"part": "loko", "gloss": "pond", "in_names": 1}
+{"part": "lona", "gloss": "canoe block", "in_names": 2}
+{"part": "lono", "gloss": "Lono", "in_names": 3}
+{"part": "lonohonuakini", "gloss": "name", "in_names": 1}
+{"part": "lonomaʻaikanaka", "gloss": "name", "in_names": 1}
+{"part": "lua", "gloss": "two", "in_names": 7}
+{"part": "luahoʻomoe", "gloss": "name", "in_names": 1}
+{"part": "luanuʻu", "gloss": "name", "in_names": 1}
+{"part": "luku", "gloss": "destruction", "in_names": 1}
+{"part": "lulu", "gloss": "sheltered", "in_names": 1}
+{"part": "lumahaʻi", "gloss": "name", "in_names": 1}
+{"part": "luna", "gloss": "high", "in_names": 1}
+{"part": "lupe", "gloss": "kite", "in_names": 1}
+{"part": "luʻu", "gloss": "dive", "in_names": 2}
+{"part": "luʻukia", "gloss": "name", "in_names": 1}
+{"part": "lā", "gloss": "sun", "in_names": 4}
+{"part": "lāhui", "gloss": "family", "in_names": 1}
+{"part": "lānaʻi", "gloss": "name", "in_names": 2}
+{"part": "lāʻau", "gloss": "wood", "in_names": 2}
+{"part": "lāʻie", "gloss": "ʻie vine leaf", "in_names": 2}
+{"part": "lāʻielohelohe", "gloss": "name", "in_names": 1}
+{"part": "lēʻahi", "gloss": "name", "in_names": 1}
+{"part": "lēʻia", "gloss": "abundance", "in_names": 1}
+{"part": "līhuʻe", "gloss": "cold chill", "in_names": 1}
+{"part": "līloa", "gloss": "name", "in_names": 1}
+{"part": "lūlū", "gloss": "shake", "in_names": 1}
+{"part": "mahi", "gloss": "name", "in_names": 1}
+{"part": "mai", "gloss": "from", "in_names": 1}
+{"part": "maikaʻi", "gloss": "good", "in_names": 1}
+{"part": "maile", "gloss": "maile vine", "in_names": 1}
+{"part": "maka", "gloss": "eye", "in_names": 5}
+{"part": "makahiki", "gloss": "year", "in_names": 1}
+{"part": "makaliʻi", "gloss": "tiny", "in_names": 1}
+{"part": "makaʻāinana", "gloss": "commoner", "in_names": 1}
+{"part": "makiki", "gloss": "weight stone", "in_names": 1}
+{"part": "makua", "gloss": "parent", "in_names": 1}
+{"part": "makuakaʻūmana", "gloss": "name", "in_names": 1}
+{"part": "malama", "gloss": "moon", "in_names": 2}
+{"part": "maloʻo", "gloss": "dry", "in_names": 1}
+{"part": "mana", "gloss": "forked", "in_names": 1}
+{"part": "mano", "gloss": "many", "in_names": 2}
+{"part": "manokalanipō", "gloss": "name", "in_names": 1}
+{"part": "manono", "gloss": "name", "in_names": 1}
+{"part": "manu", "gloss": "bird", "in_names": 2}
+{"part": "maoli", "gloss": "true", "in_names": 1}
+{"part": "mauhili", "gloss": "name", "in_names": 1}
+{"part": "maui", "gloss": "name", "in_names": 1}
+{"part": "mauli", "gloss": "life", "in_names": 1}
+{"part": "mauna", "gloss": "mountain", "in_names": 4}
+{"part": "maʻi", "gloss": "sickness", "in_names": 1}
+{"part": "maʻumaʻu", "gloss": "fern", "in_names": 1}
+{"part": "mea", "gloss": "reddish", "in_names": 1}
+{"part": "mehame", "gloss": "mehame wood", "in_names": 1}
+{"part": "mehameha", "gloss": "lonely", "in_names": 2}
+{"part": "menehune", "gloss": "name", "in_names": 1}
+{"part": "milo", "gloss": "twist", "in_names": 1}
+{"part": "milu", "gloss": "name", "in_names": 1}
+{"part": "moa", "gloss": "chicken", "in_names": 1}
+{"part": "moana", "gloss": "campground", "in_names": 1}
+{"part": "moaʻe", "gloss": "trade wind", "in_names": 1}
+{"part": "moho", "gloss": "chosen one", "in_names": 1}
+{"part": "moko", "gloss": "lizard", "in_names": 1}
+{"part": "moku", "gloss": "island", "in_names": 10}
+{"part": "molo", "gloss": "tie", "in_names": 2}
+{"part": "molokaʻi", "gloss": "name", "in_names": 1}
+{"part": "moʻo", "gloss": "lizard", "in_names": 3}
+{"part": "moʻoinanea", "gloss": "name", "in_names": 1}
+{"part": "muku", "gloss": "cut short", "in_names": 1}
+{"part": "mā", "gloss": "and", "in_names": 1}
+{"part": "māhana", "gloss": "twin", "in_names": 1}
+{"part": "māhealani", "gloss": "name", "in_names": 1}
+{"part": "māhoe", "gloss": "twins", "in_names": 1}
+{"part": "māhu", "gloss": "steam", "in_names": 1}
+{"part": "mākaha", "gloss": "fierce", "in_names": 1}
+{"part": "mākena", "gloss": "abundance", "in_names": 1}
+{"part": "mākohilani", "gloss": "name", "in_names": 1}
+{"part": "mākua", "gloss": "parents", "in_names": 1}
+{"part": "māla", "gloss": "garden", "in_names": 1}
+{"part": "māmala", "gloss": "name", "in_names": 1}
+{"part": "māmalu", "gloss": "protector", "in_names": 1}
+{"part": "mānalo", "gloss": "potable", "in_names": 1}
+{"part": "mānele", "gloss": "sedan chair", "in_names": 1}
+{"part": "mānoa", "gloss": "vast", "in_names": 1}
+{"part": "mānā", "gloss": "arid", "in_names": 1}
+{"part": "māpuana", "gloss": "fragrance", "in_names": 1}
+{"part": "māui", "gloss": "name", "in_names": 1}
+{"part": "māweke", "gloss": "name", "in_names": 1}
+{"part": "māʻilikūkahi", "gloss": "name", "in_names": 1}
+{"part": "māʻulu", "gloss": "tired", "in_names": 1}
+{"part": "mōhalu", "gloss": "loose, at ease", "in_names": 1}
+{"part": "mōʻīkeha", "gloss": "name", "in_names": 1}
+{"part": "mū", "gloss": "gathering", "in_names": 3}
+{"part": "nana", "gloss": "name", "in_names": 1}
+{"part": "nanailani", "gloss": "name", "in_names": 1}
+{"part": "nanakaoko", "gloss": "name", "in_names": 1}
+{"part": "nanakehili", "gloss": "name", "in_names": 1}
+{"part": "nanamaoa", "gloss": "name", "in_names": 1}
+{"part": "nanaʻie", "gloss": "name", "in_names": 1}
+{"part": "nanaʻulu", "gloss": "name", "in_names": 1}
+{"part": "naʻina", "gloss": "conquering", "in_names": 1}
+{"part": "niha", "gloss": "unfriendly", "in_names": 1}
+{"part": "niheu", "gloss": "name", "in_names": 1}
+{"part": "nihoa", "gloss": "firmly set", "in_names": 1}
+{"part": "niʻihau", "gloss": "name", "in_names": 1}
+{"part": "nounou", "gloss": "throwing", "in_names": 1}
+{"part": "nui", "gloss": "great", "in_names": 12}
+{"part": "nuku", "gloss": "opening", "in_names": 1}
+{"part": "nuʻa", "gloss": "heaped", "in_names": 1}
+{"part": "nuʻu", "gloss": "height", "in_names": 2}
+{"part": "nā", "gloss": "the (pl.)", "in_names": 10}
+{"part": "nāihe", "gloss": "name", "in_names": 1}
+{"part": "nāmakehā", "gloss": "name", "in_names": 1}
+{"part": "nānā", "gloss": "look at", "in_names": 1}
+{"part": "nānāhoa", "gloss": "Nānāhoa", "in_names": 1}
+{"part": "nāulu", "gloss": "shower clouds", "in_names": 1}
+{"part": "nāwao", "gloss": "name", "in_names": 1}
+{"part": "nīnole", "gloss": "bending", "in_names": 1}
+{"part": "nīʻau", "gloss": "coconut midrib", "in_names": 1}
+{"part": "o", "gloss": "of", "in_names": 12}
+{"part": "ola", "gloss": "life", "in_names": 3}
+{"part": "ole", "gloss": "name", "in_names": 1}
+{"part": "olo", "gloss": "hill", "in_names": 3}
+{"part": "olopana", "gloss": "name", "in_names": 1}
+{"part": "one", "gloss": "sand", "in_names": 1}
+{"part": "oʻahu", "gloss": "name", "in_names": 1}
+{"part": "pahulu", "gloss": "worn-out soil", "in_names": 2}
+{"part": "pahupū", "gloss": "cut in half", "in_names": 1}
+{"part": "pahū", "gloss": "burst", "in_names": 1}
+{"part": "pala", "gloss": "ripe", "in_names": 1}
+{"part": "palaoa", "gloss": "whale", "in_names": 1}
+{"part": "palaʻā", "gloss": "palaʻā fern", "in_names": 1}
+{"part": "palena", "gloss": "boundary", "in_names": 1}
+{"part": "pali", "gloss": "cliff", "in_names": 4}
+{"part": "palila", "gloss": "name", "in_names": 1}
+{"part": "panaʻewa", "gloss": "name", "in_names": 1}
+{"part": "pani", "gloss": "dam", "in_names": 1}
+{"part": "panopano", "gloss": "dense darkness", "in_names": 1}
+{"part": "paoa", "gloss": "name", "in_names": 1}
+{"part": "papa", "gloss": "stratum, foundation", "in_names": 2}
+{"part": "pau", "gloss": "destroyed", "in_names": 1}
+{"part": "paumakua", "gloss": "name", "in_names": 1}
+{"part": "pawa", "gloss": "predawn", "in_names": 1}
+{"part": "paʻa", "gloss": "solid", "in_names": 2}
+{"part": "paʻu", "gloss": "soot", "in_names": 1}
+{"part": "pele", "gloss": "lava", "in_names": 2}
+{"part": "peleiōhōlani", "gloss": "name", "in_names": 1}
+{"part": "pelekunu", "gloss": "smelly", "in_names": 1}
+{"part": "peleuli", "gloss": "name", "in_names": 1}
+{"part": "pihana", "gloss": "fullness", "in_names": 1}
+{"part": "pili", "gloss": "joining", "in_names": 4}
+{"part": "piʻi", "gloss": "ascend", "in_names": 3}
+{"part": "piʻimaiwaʻa", "gloss": "name", "in_names": 1}
+{"part": "piʻipiʻi", "gloss": "name", "in_names": 1}
+{"part": "piʻo", "gloss": "curved", "in_names": 4}
+{"part": "poepoe", "gloss": "round", "in_names": 1}
+{"part": "poho", "gloss": "depression", "in_names": 1}
+{"part": "pohukaina", "gloss": "name", "in_names": 1}
+{"part": "poko", "gloss": "short", "in_names": 1}
+{"part": "poli", "gloss": "bosom", "in_names": 3}
+{"part": "poʻipū", "gloss": "crashing (as waves)", "in_names": 1}
+{"part": "puahi", "gloss": "fireplace", "in_names": 1}
+{"part": "puaʻa", "gloss": "pig", "in_names": 2}
+{"part": "puku", "gloss": "gather", "in_names": 1}
+{"part": "pulupulu", "gloss": "kindling", "in_names": 1}
+{"part": "puna", "gloss": "name", "in_names": 3}
+{"part": "puni", "gloss": "surrounding", "in_names": 1}
+{"part": "punia", "gloss": "name", "in_names": 1}
+{"part": "pupue", "gloss": "name", "in_names": 1}
+{"part": "puʻe", "gloss": "hilled", "in_names": 1}
+{"part": "puʻu", "gloss": "hill", "in_names": 7}
+{"part": "pā", "gloss": "enclosure", "in_names": 2}
+{"part": "pāhala", "gloss": "cultivation by burning mulch", "in_names": 1}
+{"part": "pāhoa", "gloss": "dagger", "in_names": 1}
+{"part": "pāhoehoe", "gloss": "smooth lava", "in_names": 1}
+{"part": "pākaʻa", "gloss": "name", "in_names": 1}
+{"part": "pākākā", "gloss": "to skim", "in_names": 1}
+{"part": "pākī", "gloss": "name", "in_names": 1}
+{"part": "pālolo", "gloss": "clay", "in_names": 1}
+{"part": "pāmano", "gloss": "name", "in_names": 1}
+{"part": "pāʻao", "gloss": "name", "in_names": 1}
+{"part": "pāʻia", "gloss": "noisy", "in_names": 1}
+{"part": "pāʻū", "gloss": "skirt", "in_names": 1}
+{"part": "pēpē", "gloss": "crushed", "in_names": 1}
+{"part": "pīkoi", "gloss": "name", "in_names": 1}
+{"part": "pō", "gloss": "night", "in_names": 7}
+{"part": "pōhaku", "gloss": "stone", "in_names": 1}
+{"part": "pōʻai", "gloss": "surround", "in_names": 1}
+{"part": "pōʻopoʻo", "gloss": "hole", "in_names": 1}
+{"part": "pū", "gloss": "conch", "in_names": 2}
+{"part": "pūlehu", "gloss": "roasted", "in_names": 1}
+{"part": "pūowaina", "gloss": "hill of placing (sacrifices)", "in_names": 1}
+{"part": "pūpū", "gloss": "shell", "in_names": 1}
+{"part": "ua", "gloss": "rain", "in_names": 1}
+{"part": "uku", "gloss": "paid", "in_names": 1}
+{"part": "ule", "gloss": "penis", "in_names": 1}
+{"part": "uli", "gloss": "green", "in_names": 3}
+{"part": "uliuli", "gloss": "dark", "in_names": 2}
+{"part": "ulu", "gloss": "inspiration", "in_names": 2}
+{"part": "waha", "gloss": "mouth", "in_names": 1}
+{"part": "wahi", "gloss": "place", "in_names": 1}
+{"part": "wahie", "gloss": "firewood", "in_names": 1}
+{"part": "wahilani", "gloss": "name", "in_names": 1}
+{"part": "wahine", "gloss": "woman", "in_names": 3}
+{"part": "wai", "gloss": "water", "in_names": 38}
+{"part": "waia", "gloss": "name", "in_names": 1}
+{"part": "waialua", "gloss": "name", "in_names": 1}
+{"part": "waka", "gloss": "name", "in_names": 1}
+{"part": "wale", "gloss": "needlessly", "in_names": 1}
+{"part": "walo", "gloss": "calling", "in_names": 1}
+{"part": "walu", "gloss": "many", "in_names": 1}
+{"part": "wao", "gloss": "forest", "in_names": 3}
+{"part": "waʻa", "gloss": "canoe", "in_names": 1}
+{"part": "waʻahila", "gloss": "name", "in_names": 1}
+{"part": "waʻawaʻa", "gloss": "furrowed", "in_names": 1}
+{"part": "wehe", "gloss": "removed", "in_names": 1}
+{"part": "wehiwehi", "gloss": "adorned", "in_names": 1}
+{"part": "welehu", "gloss": "name", "in_names": 1}
+{"part": "weli", "gloss": "fearful", "in_names": 1}
+{"part": "wiliwili", "gloss": "wiliwili tree", "in_names": 1}
+{"part": "wā", "gloss": "noise", "in_names": 1}
+{"part": "wākea", "gloss": "name", "in_names": 1}
+{"part": "āhole", "gloss": "mature āhole fish", "in_names": 1}
+{"part": "āiwa", "gloss": "mysterious", "in_names": 1}
+{"part": "ākea", "gloss": "breadth", "in_names": 4}
+{"part": "ʻahu", "gloss": "garment", "in_names": 3}
+{"part": "ʻai", "gloss": "eat", "in_names": 3}
+{"part": "ʻaiea", "gloss": "Nothocestrum tree", "in_names": 1}
+{"part": "ʻaiwohikupua", "gloss": "name", "in_names": 1}
+{"part": "ʻaiʻai", "gloss": "name", "in_names": 1}
+{"part": "ʻaki", "gloss": "hair switch", "in_names": 1}
+{"part": "ʻalae", "gloss": "mudhen", "in_names": 1}
+{"part": "ʻaleʻale", "gloss": "rippling", "in_names": 1}
+{"part": "ʻanae", "gloss": "mullet", "in_names": 3}
+{"part": "ʻapo", "gloss": "caught", "in_names": 1}
+{"part": "ʻapua", "gloss": "fish trap", "in_names": 1}
+{"part": "ʻaukele", "gloss": "name", "in_names": 1}
+{"part": "ʻawa", "gloss": "kava", "in_names": 1}
+{"part": "ʻaʻawa", "gloss": "wrasse fish", "in_names": 1}
+{"part": "ʻele", "gloss": "black", "in_names": 1}
+{"part": "ʻeleʻele", "gloss": "black", "in_names": 1}
+{"part": "ʻena", "gloss": "heat", "in_names": 2}
+{"part": "ʻenaʻena", "gloss": "red-hot", "in_names": 1}
+{"part": "ʻewa", "gloss": "crooked", "in_names": 2}
+{"part": "ʻeʻepa", "gloss": "extraordinary", "in_names": 1}
+{"part": "ʻiao", "gloss": "name", "in_names": 1}
+{"part": "ʻihi", "gloss": "sacredness", "in_names": 1}
+{"part": "ʻikuā", "gloss": "noisy", "in_names": 1}
+{"part": "ʻili", "gloss": "skin", "in_names": 1}
+{"part": "ʻiliʻili", "gloss": "pebbles", "in_names": 1}
+{"part": "ʻiliʻiliʻōpae", "gloss": "name", "in_names": 1}
+{"part": "ʻiu", "gloss": "sacred height", "in_names": 1}
+{"part": "ʻohe", "gloss": "bamboo", "in_names": 2}
+{"part": "ʻoli", "gloss": "joyful", "in_names": 1}
+{"part": "ʻuala", "gloss": "sweet potato", "in_names": 2}
+{"part": "ʻuiki", "gloss": "glimmer", "in_names": 1}
+{"part": "ʻula", "gloss": "red", "in_names": 12}
+{"part": "ʻulu", "gloss": "breadfruit", "in_names": 4}
+{"part": "ʻumi", "gloss": "name", "in_names": 1}
+{"part": "ʻā", "gloss": "burning lava", "in_names": 1}
+{"part": "ʻāina", "gloss": "land", "in_names": 1}
+{"part": "ʻālana", "gloss": "offering", "in_names": 1}
+{"part": "ʻālapa", "gloss": "athletic", "in_names": 1}
+{"part": "ʻāpaʻapaʻa", "gloss": "name", "in_names": 1}
+{"part": "ʻāweoweo", "gloss": "ʻāweoweo fish", "in_names": 1}
+{"part": "ʻī", "gloss": "supreme", "in_names": 2}
+{"part": "ʻīlio", "gloss": "dog", "in_names": 1}
+{"part": "ʻīmaikalani", "gloss": "name", "in_names": 1}
+{"part": "ʻōhai", "gloss": "ʻōhai tree", "in_names": 1}
+{"part": "ʻōhinu", "gloss": "shiny", "in_names": 1}
+{"part": "ʻōhiʻa", "gloss": "ʻōhiʻa tree", "in_names": 3}
+{"part": "ʻōmaokamaʻu", "gloss": "name", "in_names": 1}
+{"part": "ʻōmaʻo", "gloss": "green", "in_names": 1}
+{"part": "ʻōnohi", "gloss": "eyeball", "in_names": 1}
+{"part": "ʻōpala", "gloss": "rubbish", "in_names": 1}
+{"part": "ʻōpuʻu", "gloss": "bud", "in_names": 1}
+{"part": "ʻōʻō", "gloss": "digging stick", "in_names": 1}

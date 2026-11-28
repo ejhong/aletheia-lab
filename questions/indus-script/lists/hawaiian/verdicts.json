@@ -1,0 +1,506 @@
+{
+ "A": [
+  {
+   "item": "Kukuihaele",
+   "verdict": "ok",
+   "reason": "PNH: Kukui-haele, lit. traveling light."
+  },
+  {
+   "item": "Lāʻielohelohe",
+   "verdict": "ok",
+   "reason": "Character (twin of Lāʻieikawai) in Haleʻole's Laieikawai (1863)."
+  },
+  {
+   "item": "Hinapukuiʻa",
+   "verdict": "ok",
+   "reason": "Wife of Kūʻula in the Kūʻula/ʻAiʻai fish-god tradition (Thrum); puku = gather (PE); Kamakau attribution not checked."
+  },
+  {
+   "item": "Hiʻilei",
+   "verdict": "ok",
+   "reason": "PE: Hiʻi-Lei, a star; hiʻi.lei = carry and cherish a beloved child (lei)."
+  },
+  {
+   "item": "Kūmahana",
+   "verdict": "ok",
+   "reason": "Son of Peleʻioholani, ruler of Oʻahu (Fornander, Polynesian Race II)."
+  },
+  {
+   "item": "Wailau",
+   "verdict": "ok",
+   "reason": "PNH: lit. many waters."
+  },
+  {
+   "item": "Hanapēpē",
+   "verdict": "ok",
+   "reason": "PNH: lit. crushed bay."
+  },
+  {
+   "item": "Pōpanopano",
+   "verdict": "ok",
+   "reason": "Kumulipo line 387-388 (male night); PE panopano = dense darkness."
+  },
+  {
+   "item": "Māui",
+   "verdict": "ok",
+   "reason": "Kumulipo lines 1985-86 (Maui brothers)."
+  },
+  {
+   "item": "Kūhoʻoneʻenuʻu",
+   "verdict": "ok",
+   "reason": "War god of Oʻahu (Fornander; Westervelt); PE nuʻu = height; defensible split."
+  },
+  {
+   "item": "Kahiʻukā",
+   "verdict": "ok",
+   "reason": "Shark god, brother/son of Kaʻahupahau, 'smiting tail'; indexed in Kamakau, Ka Poʻe Kahiko."
+  },
+  {
+   "item": "Kāneʻohe",
+   "verdict": "ok",
+   "reason": "PNH: lit. bamboo husband."
+  },
+  {
+   "item": "Kalihiwai",
+   "verdict": "ok",
+   "reason": "PNH Ka-lihi Wai, lit. Ka-lihi with a stream; Clark: Kalihi means 'the edge'."
+  },
+  {
+   "item": "Kekūhaupiʻo",
+   "verdict": "ok",
+   "reason": "Kamehameha's warrior-teacher; etymology not in PE but members are real words, defensible."
+  },
+  {
+   "item": "Waiākea",
+   "verdict": "ok",
+   "reason": "PNH: lit. broad waters."
+  },
+  {
+   "item": "Kapaʻa",
+   "verdict": "ok",
+   "reason": "PNH: lit. the solid or the closing."
+  },
+  {
+   "item": "Kōnāhuanui",
+   "verdict": "ok",
+   "reason": "PNH: lit. large fat innards, today pronounced Konahua-nui; PE konāhua = fat (PE has short o)."
+  },
+  {
+   "item": "Nīnole",
+   "verdict": "ok",
+   "reason": "PNH: lit. bending."
+  },
+  {
+   "item": "Kalaepuni",
+   "verdict": "ok",
+   "reason": "Legend of Kalaepuni and Kalaehina, Fornander Collection vol. 5."
+  },
+  {
+   "item": "Keʻelikōlani",
+   "verdict": "ok",
+   "reason": "Ruth Keʻelikōlani (1826-1883), chiefess in the 19th-century genealogies."
+  },
+  {
+   "item": "Pālāʻau",
+   "verdict": "ok",
+   "reason": "PNH: lit. wooden fence or enclosure."
+  },
+  {
+   "item": "Waimanu",
+   "verdict": "ok",
+   "reason": "PNH: lit. bird water."
+  },
+  {
+   "item": "Kēōkea",
+   "verdict": "ok",
+   "reason": "PNH: lit. the white sand (ō is short for one)."
+  },
+  {
+   "item": "Alapaʻinui",
+   "verdict": "ok",
+   "reason": "18th-century ruler of Hawaiʻi Island."
+  },
+  {
+   "item": "Leleiōhoku",
+   "verdict": "ok",
+   "reason": "19th-century chiefs of that name (Leleiōhoku I and II)."
+  },
+  {
+   "item": "Pāmano",
+   "verdict": "ok",
+   "reason": "Kaao no Pamano, Fornander Collection vol. 5."
+  },
+  {
+   "item": "Olopana",
+   "verdict": "ok",
+   "reason": "Oʻahu chief of the Kamapuaʻa tradition (Fornander)."
+  },
+  {
+   "item": "Kalamainuʻu",
+   "verdict": "ok",
+   "reason": "Moʻo goddess of the Punaʻaikoʻae story (Thrum, Hawaiian Annual); Fornander attribution not checked."
+  },
+  {
+   "item": "Kalola",
+   "verdict": "ok",
+   "reason": "Sister of Kahekili, wife of Kalaniʻōpuʻu."
+  },
+  {
+   "item": "Honomū",
+   "verdict": "ok",
+   "reason": "PNH: lit. silent bay."
+  },
+  {
+   "item": "Luahoʻomoe",
+   "verdict": "ok",
+   "reason": "Priest/prophet of Hua of Maui in Fornander (Polynesian Race II; Collection vol. 5); Kamakau attribution not checked."
+  },
+  {
+   "item": "Kaimū",
+   "verdict": "ok",
+   "reason": "PNH: lit. gathering [at the] sea [to watch surfing]."
+  },
+  {
+   "item": "Kīnaʻu",
+   "verdict": "ok",
+   "reason": "PE kīnaʻu = stain, blemish, minor flaw."
+  },
+  {
+   "item": "Lonomakua",
+   "verdict": "ok",
+   "reason": "PE: Lono-makua, legendary fire guardian and makahiki image."
+  },
+  {
+   "item": "Kekauʻōnohi",
+   "verdict": "ok",
+   "reason": "Granddaughter of Kamehameha I (1805-1851)."
+  },
+  {
+   "item": "Nāpali",
+   "verdict": "ok",
+   "reason": "PNH: lit. the cliffs."
+  },
+  {
+   "item": "Ole",
+   "verdict": "ok",
+   "reason": "Kumulipo line 1968: 'Hanau o Ole ke kane, o Haʻi ka wahine'."
+  },
+  {
+   "item": "Kahoʻāliʻi",
+   "verdict": "ok",
+   "reason": "Malo, Hawaiian Antiquities (makahiki/luakini rites)."
+  },
+  {
+   "item": "Kaumalapau",
+   "verdict": "ok",
+   "reason": "PNH: originally Kau-māla-paʻu, soot placed in gardens."
+  },
+  {
+   "item": "Kihanuilūlūmoku",
+   "verdict": "ok",
+   "reason": "PE kiha = supernatural lizard, citing Kiha-nui-lūlū-moku."
+  },
+  {
+   "item": "Hanalaʻanui",
+   "verdict": "ok",
+   "reason": "Chiefly genealogies (Hanalaʻa-nui line; Malo's genealogy; Fornander)."
+  },
+  {
+   "item": "Waikapū",
+   "verdict": "ok",
+   "reason": "PNH: lit. water [of] the conch."
+  },
+  {
+   "item": "Keliʻimaikaʻi",
+   "verdict": "ok",
+   "reason": "Kamehameha I's full brother; keliʻi = ke aliʻi."
+  },
+  {
+   "item": "Kūpāʻaikeʻe",
+   "verdict": "ok",
+   "reason": "PE: god of canoe makers; named in Emerson's note to Malo's list of canoe gods."
+  },
+  {
+   "item": "Pōʻeleʻele",
+   "verdict": "ok",
+   "reason": "Kumulipo line 375 (male night)."
+  },
+  {
+   "item": "Kaikioʻewa",
+   "verdict": "ok",
+   "reason": "Governor of Kauaʻi, cousin of Kamehameha I."
+  },
+  {
+   "item": "Keaulumoku",
+   "verdict": "ok",
+   "reason": "18th-century chanter, Kamakau and Fornander."
+  },
+  {
+   "item": "Halemano",
+   "verdict": "ok",
+   "reason": "PNH: lit. many houses."
+  },
+  {
+   "item": "Kālaipāhoa",
+   "verdict": "ok",
+   "reason": "PE kālaipāhoa poison-wood gods; pāhoa = dagger (PE), kālai = carve; defensible."
+  },
+  {
+   "item": "Kou",
+   "verdict": "ok",
+   "reason": "PNH: lit. kou tree."
+  }
+ ],
+ "B": [
+  {
+   "item": "pāpaʻi",
+   "verdict": "ok",
+   "reason": "crab: PE general name for crabs."
+  },
+  {
+   "item": "kākai",
+   "verdict": "ok",
+   "reason": "handle: PE handle of bucket, basket; Andrews 1865 has the calabash-hanging strings."
+  },
+  {
+   "item": "māhae",
+   "verdict": "ok",
+   "reason": "split: PE spells it mahae, to tear, split (PPN masae)."
+  },
+  {
+   "item": "ʻāhui",
+   "verdict": "ok",
+   "reason": "bunch: PE bunch or cluster; Andrews 1865."
+  },
+  {
+   "item": "mauna",
+   "verdict": "ok",
+   "reason": "mountains: basic word."
+  },
+  {
+   "item": "piʻo",
+   "verdict": "ok",
+   "reason": "curve: PE arch, curved."
+  },
+  {
+   "item": "kiowai",
+   "verdict": "ok",
+   "reason": "pond: Andrews 1865 standing water, puddle; PE writes kiʻo wai, pool of water."
+  },
+  {
+   "item": "pūʻolo",
+   "verdict": "ok",
+   "reason": "bundle: PE bundle."
+  },
+  {
+   "item": "hale",
+   "verdict": "ok",
+   "reason": "building: PE house, building."
+  },
+  {
+   "item": "hīnaʻi",
+   "verdict": "ok",
+   "reason": "basket: PE basket; Andrews 1865."
+  },
+  {
+   "item": "kukū",
+   "verdict": "ok",
+   "reason": "spikes: PE thorn, barb, spine; Andrews 1865 having many sharp points."
+  },
+  {
+   "item": "kope",
+   "verdict": "ok",
+   "reason": "rake: PE kope 1 rake (PPN tope), distinct from the loans coffee and copy."
+  },
+  {
+   "item": "kōʻokoʻo",
+   "verdict": "ok",
+   "reason": "staff: PE spells it koʻokoʻo, cane, staff (PPN tokotoko)."
+  },
+  {
+   "item": "kino",
+   "verdict": "ok",
+   "reason": "body: basic word."
+  },
+  {
+   "item": "ʻāmana",
+   "verdict": "ok",
+   "reason": "forked stick: PE Y-shaped crosspiece, Y-shaped branches; Andrews 1865."
+  },
+  {
+   "item": "onohi",
+   "verdict": "ok",
+   "reason": "eye: PE spells it ʻōnohi, eyeball; Andrews 1836 and 1865."
+  },
+  {
+   "item": "hae",
+   "verdict": "ok",
+   "reason": "flag: PE flag, banner, from hae 'torn' kapa; Andrews 1865 calls the flag sense modern but it is in the 1830s Bible."
+  },
+  {
+   "item": "puʻu",
+   "verdict": "ok",
+   "reason": "heap: PE heap, pile, hill."
+  },
+  {
+   "item": "hāʻawe",
+   "verdict": "ok",
+   "reason": "load: PE burden carried on the back."
+  },
+  {
+   "item": "ʻanoʻano",
+   "verdict": "ok",
+   "reason": "seed: PE seed."
+  },
+  {
+   "item": "piha",
+   "verdict": "ok",
+   "reason": "fill: PE full, filled (verb 'to fill' is hoʻopiha); close enough."
+  },
+  {
+   "item": "māla",
+   "verdict": "ok",
+   "reason": "fields: PE garden, cultivated field (PPN maʻala)."
+  },
+  {
+   "item": "lepa",
+   "verdict": "ok",
+   "reason": "banner: PE flag, tapa on a stick marking kapu (PCP lepa)."
+  },
+  {
+   "item": "kōkō",
+   "verdict": "ok",
+   "reason": "carrier: PE carrying net for calabashes (PCP tootoo)."
+  },
+  {
+   "item": "aʻa",
+   "verdict": "ok",
+   "reason": "roots: PE small root, rootlet."
+  },
+  {
+   "item": "ʻauamo",
+   "verdict": "ok",
+   "reason": "yoke: PE carrying pole, yoke."
+  },
+  {
+   "item": "ʻapo",
+   "verdict": "ok",
+   "reason": "catch: PE to catch, grasp."
+  },
+  {
+   "item": "wahine",
+   "verdict": "ok",
+   "reason": "woman: basic word."
+  },
+  {
+   "item": "ahu",
+   "verdict": "ok",
+   "reason": "pile: PE heap, pile."
+  },
+  {
+   "item": "wēkiu",
+   "verdict": "ok",
+   "reason": "peaks: PE summit, peak; Andrews 1865 top of a mountain."
+  },
+  {
+   "item": "mahina",
+   "verdict": "ok",
+   "reason": "moon: basic word."
+  },
+  {
+   "item": "ahu",
+   "verdict": "ok",
+   "reason": "stack: PE heap, pile, collection."
+  },
+  {
+   "item": "aʻa",
+   "verdict": "ok",
+   "reason": "vein: PE vein, artery."
+  },
+  {
+   "item": "piʻo",
+   "verdict": "ok",
+   "reason": "curves: PE arch, curved."
+  },
+  {
+   "item": "uila",
+   "verdict": "ok",
+   "reason": "lightning: PE lightning (PPN ʻuhila); Andrews 1865."
+  },
+  {
+   "item": "pēʻahi",
+   "verdict": "ok",
+   "reason": "fan: PE spells it peʻahi, fan; Andrews 1865."
+  },
+  {
+   "item": "halo",
+   "verdict": "ok",
+   "reason": "fin: PE fins between gill plate and ventral fin (pectoral fin)."
+  },
+  {
+   "item": "amo",
+   "verdict": "ok",
+   "reason": "carry: PE carry on the shoulders."
+  },
+  {
+   "item": "kū",
+   "verdict": "ok",
+   "reason": "stand: basic word."
+  },
+  {
+   "item": "ahu",
+   "verdict": "ok",
+   "reason": "heap: PE heap, pile."
+  },
+  {
+   "item": "ipu",
+   "verdict": "ok",
+   "reason": "vessel: PE gourd, container."
+  },
+  {
+   "item": "mole",
+   "verdict": "ok",
+   "reason": "roots: PE tap root, main root."
+  },
+  {
+   "item": "mana",
+   "verdict": "ok",
+   "reason": "fork: PE mana 2 branch, crotch, road fork (PPN manga)."
+  },
+  {
+   "item": "ʻōmuʻo",
+   "verdict": "ok",
+   "reason": "sprout: PE bud, budding."
+  },
+  {
+   "item": "onohi",
+   "verdict": "ok",
+   "reason": "pupil: PE ʻōnohi eyeball, center; Andrews 1865 center of the eye, apple of the eye."
+  },
+  {
+   "item": "huhui",
+   "verdict": "ok",
+   "reason": "bunch: PE cluster, bunch; Andrews 1865."
+  },
+  {
+   "item": "puka",
+   "verdict": "ok",
+   "reason": "door: PE hole, door, entrance."
+  },
+  {
+   "item": "noho",
+   "verdict": "ok",
+   "reason": "sit: basic word."
+  },
+  {
+   "item": "waiū",
+   "verdict": "ok",
+   "reason": "breasts: PE milk, wet nurse, breast."
+  },
+  {
+   "item": "lāʻau",
+   "verdict": "ok",
+   "reason": "plant: PE tree, plant, wood."
+  }
+ ]
+}

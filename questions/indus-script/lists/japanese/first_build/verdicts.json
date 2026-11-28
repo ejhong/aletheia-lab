@@ -1,0 +1,506 @@
+{
+ "A": [
+  {
+   "item": "Takara",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Takamanohara",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Maro",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Umashiashikabihikoji",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Iki",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Akaiko",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kuzuko",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Akimochi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Sakimori",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Sakanoue no Iratsume",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Moroe",
+   "verdict": "ok",
+   "reason": "Tachibana no Moroe is a Man'yōshū poet, but the edition checked names him only by title (橘宿禰, 橘卿, 葛城王); the personal name 諸兄 comes from Shoku nihongi."
+  },
+  {
+   "item": "Inishiki Irihiko",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Shibi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Hinaburi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Okinaga Tarashi Hihironuka",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Matori",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Konoshiro",
+   "verdict": "ok",
+   "reason": "鹽屋連鯯魚 (Nihon shoki, Saimei 4) is glossed 舉能之慮 (konosiro); 境部宿禰鯯魚 also appears (Jitō)."
+  },
+  {
+   "item": "Naka no Ōe",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Hashirimizu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Miminashi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Tasa",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Amekuni Oshiharuki Hironiwa",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Isuzuyorihime",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Ame no Murakumo no Tsurugi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kawachi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Toyura",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Wakasa",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Tarihito",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Sasaraeotoko",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Tamura",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Sanuki",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Toyomike Kashikiyahime",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Amatsumikahoshi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Unai Otome",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Kibi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Arakabi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Inukaibe",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Tanushi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Muroya",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Hironiwa",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Soga",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Yuzuki",
+   "verdict": "ok",
+   "reason": "弓月君 is attested (Nihon shoki, Ōjin 14), but he is an immigrant leader, so the bow + moon reading of the characters is debatable; it is not clearly wrong."
+  },
+  {
+   "item": "Ame no Iwafune",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Chinu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Yakamochi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Hirotari",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Tsukushi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Toyo",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "Atsukaya",
+   "verdict": "ok",
+   "reason": "厚鹿文, a Kumaso chief (Nihon shoki, Keikō 12)."
+  },
+  {
+   "item": "Nagate",
+   "verdict": "ok",
+   "reason": ""
+  }
+ ],
+ "B": [
+  {
+   "item": "ou",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "tsuki",
+   "verdict": "ok",
+   "reason": "tukwi 'moon' covers the crescent (ONCOJ also has mikadukwi 'crescent moon')."
+  },
+  {
+   "item": "oka",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "taba",
+   "verdict": "wrong",
+   "reason": "taba 'bundle' is not attested in Old Japanese; NKD's earliest citation is 1722, and OJ used tuka/tukane."
+  },
+  {
+   "item": "he",
+   "verdict": "ok",
+   "reason": "pe 'pot' occurs in compounds such as ipapibe and nabe (ONCOJ)."
+  },
+  {
+   "item": "hishi",
+   "verdict": "wrong",
+   "reason": "In OJ, hishi is the water caltrop (MYS 7.1249, 16.3876, Kojiki songs); the rhombus sense is a later short form of hishigata (NKD), although ONCOJ's gloss also lists 'lozenge shape'."
+  },
+  {
+   "item": "tatsu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "taba",
+   "verdict": "wrong",
+   "reason": "taba is not attested in Old Japanese (NKD's earliest citation is 1722); the OJ word for 'bundle' is tukane/tuka."
+  },
+  {
+   "item": "ya",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "ko",
+   "verdict": "ok",
+   "reason": "kwo 'basket' (MYS 1.1 籠), attested logographically."
+  },
+  {
+   "item": "iwa",
+   "verdict": "ok",
+   "reason": "ipa means 'rock, stone' (ONCOJ)."
+  },
+  {
+   "item": "yumi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kashira",
+   "verdict": "ok",
+   "reason": "Spelled phonographically 可之良 in MYS 20.4346."
+  },
+  {
+   "item": "mitsu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "yone",
+   "verdict": "wrong",
+   "reason": "yone is not attested in Old Japanese (NKD's earliest is the Wamyōshō, c.934; ONCOJ has none); OJ used kome (Nihon shoki, Kōgyoku 2, song)."
+  },
+  {
+   "item": "ie",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "ashi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "isari",
+   "verdict": "ok",
+   "reason": "Attested in OJ as izari/izar- (spelled phonographically 17 times in ONCOJ)."
+  },
+  {
+   "item": "ajiro",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "obi",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "motsu",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "hige",
+   "verdict": "ok",
+   "reason": "pige 'beard' (MYS 5.892 比宜)."
+  },
+  {
+   "item": "tsume",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kuruma",
+   "verdict": "ok",
+   "reason": "Attested in OJ as 'cart' (Shōsōin 万葉仮名文 久流末; MYS 4.694); NKD gives 'wheel' as the word's first sense."
+  },
+  {
+   "item": "me",
+   "verdict": "ok",
+   "reason": "me 'sprout, shoot' (Kojiki, Jimmu's Kume song: sone me tunagite)."
+  },
+  {
+   "item": "tane",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "saki",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "meguru",
+   "verdict": "ok",
+   "reason": "megur- 'move around' (spelled phonographically 10 times in ONCOJ)."
+  },
+  {
+   "item": "to",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "take",
+   "verdict": "ok",
+   "reason": "take 'peak' (Kojiki 久士布流多気)."
+  },
+  {
+   "item": "hire",
+   "verdict": "wrong",
+   "reason": "OJ pire means 'shawl'; the OJ word for 'fin' is pata (MYS 19.4191), and hire 'fin' first appears in the Wamyōshō (c.934)."
+  },
+  {
+   "item": "tsuri",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "toru",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "hoko",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "tsuno",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "shimoto",
+   "verdict": "ok",
+   "reason": "simoto (MYS 14.3488 於布之毛等)."
+  },
+  {
+   "item": "e",
+   "verdict": "wrong",
+   "reason": "e 'handle' (柄) has no OJ attestation (ONCOJ has none; NKD's earliest is the Tōdaiji fujumon, c.830); OJ used tuka/kara."
+  },
+  {
+   "item": "iru",
+   "verdict": "ok",
+   "reason": "OJ wi- 'sit, be at'."
+  },
+  {
+   "item": "fusa",
+   "verdict": "ok",
+   "reason": "ONCOJ glosses pusa as 'bunch'; NKD has a 'cluster' sense from 758 (Shōsōin documents)."
+  },
+  {
+   "item": "to",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "eda",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "fusa",
+   "verdict": "ok",
+   "reason": "pusa 'bunch, cluster' (758 Shōsōin documents; ONCOJ); 'tuft' is a close near-synonym."
+  },
+  {
+   "item": "shimoto",
+   "verdict": "ok",
+   "reason": "simoto means a switch or rod (MYS 5.892 楚, 14.3488)."
+  },
+  {
+   "item": "mata",
+   "verdict": "ok",
+   "reason": "mata 'crotch, fork' (ONCOJ) is a close near-synonym."
+  },
+  {
+   "item": "shime",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kaki",
+   "verdict": "ok",
+   "reason": "kaki 'fence, wall' (ONCOJ)."
+  },
+  {
+   "item": "e",
+   "verdict": "ok",
+   "reason": "ye 'branch' (Kojiki, Yūryaku, Mie uneme song: potuye)."
+  },
+  {
+   "item": "hashira",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "kuma",
+   "verdict": "ok",
+   "reason": ""
+  },
+  {
+   "item": "me",
+   "verdict": "ok",
+   "reason": "mye 'woman' (ONCOJ)."
+  }
+ ]
+}

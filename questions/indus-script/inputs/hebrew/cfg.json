@@ -1,0 +1,20 @@
+{
+ "lang": "hebrew",
+ "names": "names.jsonl",
+ "parts": "parts.jsonl",
+ "words": "words.json",
+ "number_words": {
+  "1": "ehād",
+  "2": "śenayim",
+  "3": "śālōś",
+  "4": "arba",
+  "5": "hāmēś",
+  "6": "śēś",
+  "7": "śeba",
+  "12": "śenēm-āśār"
+ },
+ "punmax": 0.5,
+ "weights": "once",
+ "drop_parts": [],
+ "loan_category": "none"
+}

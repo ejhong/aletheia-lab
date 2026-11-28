@@ -1,0 +1,701 @@
+{
+ "A_names": [
+  {
+   "name": "Lugirizal",
+   "type": "person",
+   "morphemes": [
+    "lu",
+    "girizal"
+   ],
+   "gloss": "man + joy",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Ezikalama",
+   "type": "other",
+   "morphemes": [
+    "e",
+    "zi",
+    "kalam"
+   ],
+   "gloss": "house + life + land",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Lugalsisa",
+   "type": "person",
+   "morphemes": [
+    "lugal",
+    "sisa"
+   ],
+   "gloss": "king + just (straight)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Lugaliri",
+   "type": "person",
+   "morphemes": [
+    "lugal",
+    "iri"
+   ],
+   "gloss": "king + city",
+   "source": "Old Akkadian administrative texts"
+  },
+  {
+   "name": "Sutium",
+   "type": "group",
+   "morphemes": [
+    "sutium"
+   ],
+   "gloss": "name",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Šagninĝa",
+   "type": "person",
+   "morphemes": [
+    "šag",
+    "nin",
+    "ĝu"
+   ],
+   "gloss": "heart + lady (lord) + my",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Kiaĝ",
+   "type": "person",
+   "morphemes": [
+    "kiaĝ"
+   ],
+   "gloss": "beloved",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Ninamaĝu",
+   "type": "person",
+   "morphemes": [
+    "nin",
+    "ama",
+    "ĝu"
+   ],
+   "gloss": "lady (lord) + mother + my",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Aya",
+   "type": "deity",
+   "morphemes": [
+    "aya"
+   ],
+   "gloss": "name",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Ninbaradari",
+   "type": "person",
+   "morphemes": [
+    "nin",
+    "barag",
+    "dari"
+   ],
+   "gloss": "lady (lord) + dais (sanctuary) + eternal",
+   "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"
+  },
+  {
+   "name": "Munussaga",
+   "type": "person",
+   "morphemes": [
+    "munus",
+    "sag"
+   ],
+   "gloss": "woman + good",
+   "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"
+  },
+  {
+   "name": "Adda",
+   "type": "person",
+   "morphemes": [
+    "adda"
+   ],
+   "gloss": "father",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Urtummal",
+   "type": "person",
+   "morphemes": [
+    "ur",
+    "tummal"
+   ],
+   "gloss": "servant + Tummal (cult centre)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Gaeš",
+   "type": "place",
+   "morphemes": [
+    "gaeš"
+   ],
+   "gloss": "name",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Lugalmagure",
+   "type": "person",
+   "morphemes": [
+    "lugal",
+    "magur"
+   ],
+   "gloss": "king + barge",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Nininimgina",
+   "type": "person",
+   "morphemes": [
+    "nin",
+    "inim",
+    "gin"
+   ],
+   "gloss": "lady (lord) + word + firm (true)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Lugalĝeškimzid",
+   "type": "person",
+   "morphemes": [
+    "lugal",
+    "ĝeškim",
+    "zid"
+   ],
+   "gloss": "king + omen (sign) + true (right)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Lugalazida",
+   "type": "person",
+   "morphemes": [
+    "lugal",
+    "a",
+    "zid"
+   ],
+   "gloss": "king + arm + true (right)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Etemenniguru",
+   "type": "other",
+   "morphemes": [
+    "e",
+    "temen",
+    "ni",
+    "guru"
+   ],
+   "gloss": "house + foundation + awe (fear) + bear (carry)",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Irikug",
+   "type": "place",
+   "morphemes": [
+    "iri",
+    "kug"
+   ],
+   "gloss": "city + pure (silver)",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Nammaḫbaba",
+   "type": "person",
+   "morphemes": [
+    "nam",
+    "maḫ",
+    "baba"
+   ],
+   "gloss": "-ship (abstract) + great (lofty) + Baba (goddess)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Urnungal",
+   "type": "person",
+   "morphemes": [
+    "ur",
+    "nungal"
+   ],
+   "gloss": "servant + Nungal (goddess)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Uriškur",
+   "type": "person",
+   "morphemes": [
+    "ur",
+    "iškur"
+   ],
+   "gloss": "servant + Iškur (god)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Ḫabura",
+   "type": "place",
+   "morphemes": [
+    "ḫabura"
+   ],
+   "gloss": "name",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Agar",
+   "type": "place",
+   "morphemes": [
+    "agar"
+   ],
+   "gloss": "name",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Eninnu",
+   "type": "other",
+   "morphemes": [
+    "e",
+    "ninnu"
+   ],
+   "gloss": "house + fifty",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Menua",
+   "type": "hill",
+   "morphemes": [
+    "menua"
+   ],
+   "gloss": "name",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Mesilim",
+   "type": "person",
+   "morphemes": [
+    "mesilim"
+   ],
+   "gloss": "name",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Kulaba",
+   "type": "place",
+   "morphemes": [
+    "kulaba"
+   ],
+   "gloss": "name",
+   "source": "ED IIIa administrative texts (Fara period)"
+  },
+  {
+   "name": "Šulgiiriĝu",
+   "type": "person",
+   "morphemes": [
+    "šulgi",
+    "iri",
+    "ĝu"
+   ],
+   "gloss": "Šulgi (deified king) + city + my",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Amargirid",
+   "type": "place",
+   "morphemes": [
+    "amargirid"
+   ],
+   "gloss": "name",
+   "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"
+  },
+  {
+   "name": "Lusaga",
+   "type": "person",
+   "morphemes": [
+    "lu",
+    "sag"
+   ],
+   "gloss": "man + good",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Kisura",
+   "type": "place",
+   "morphemes": [
+    "kisura"
+   ],
+   "gloss": "name",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Maštur",
+   "type": "person",
+   "morphemes": [
+    "maš",
+    "tur"
+   ],
+   "gloss": "kid (young goat) + small",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Šetirša",
+   "type": "place",
+   "morphemes": [
+    "šetirša"
+   ],
+   "gloss": "name",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Urninurta",
+   "type": "person",
+   "morphemes": [
+    "ur",
+    "ninurta"
+   ],
+   "gloss": "servant + Ninurta (god)",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Uraš",
+   "type": "deity",
+   "morphemes": [
+    "uraš"
+   ],
+   "gloss": "name",
+   "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"
+  },
+  {
+   "name": "Diĝirsukkal",
+   "type": "person",
+   "morphemes": [
+    "diĝir",
+    "sukkal"
+   ],
+   "gloss": "god + minister",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Šeštur",
+   "type": "person",
+   "morphemes": [
+    "šeš",
+    "tur"
+   ],
+   "gloss": "brother + small",
+   "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"
+  },
+  {
+   "name": "Mesanepada",
+   "type": "person",
+   "morphemes": [
+    "mes",
+    "an",
+    "pad"
+   ],
+   "gloss": "hero (young man) + heaven (An) + choose",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Adab",
+   "type": "place",
+   "morphemes": [
+    "adab"
+   ],
+   "gloss": "name",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Lumagan",
+   "type": "person",
+   "morphemes": [
+    "lu",
+    "magan"
+   ],
+   "gloss": "man + Magan (land)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Gubin",
+   "type": "place",
+   "morphemes": [
+    "gubin"
+   ],
+   "gloss": "name",
+   "source": "Royal inscriptions, ED–Ur III (RIME)"
+  },
+  {
+   "name": "Lumagure",
+   "type": "person",
+   "morphemes": [
+    "lu",
+    "magur"
+   ],
+   "gloss": "man + barge",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Urezida",
+   "type": "person",
+   "morphemes": [
+    "ur",
+    "ezida"
+   ],
+   "gloss": "servant + Ezida (temple)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Buli",
+   "type": "place",
+   "morphemes": [
+    "buli"
+   ],
+   "gloss": "name",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Tirkugesi",
+   "type": "place",
+   "morphemes": [
+    "tirkugesi"
+   ],
+   "gloss": "name",
+   "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"
+  },
+  {
+   "name": "Lugalištaran",
+   "type": "person",
+   "morphemes": [
+    "lugal",
+    "ištaran"
+   ],
+   "gloss": "king + Ištaran (god)",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Ayadiĝir",
+   "type": "person",
+   "morphemes": [
+    "aya",
+    "diĝir"
+   ],
+   "gloss": "father + god",
+   "source": "Ur III administrative texts"
+  },
+  {
+   "name": "Inimmanizid",
+   "type": "person",
+   "morphemes": [
+    "inim",
+    "ani",
+    "zid"
+   ],
+   "gloss": "word + his/her + true (right)",
+   "source": "Ur III administrative texts"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "worker",
+   "word": "eren"
+  },
+  {
+   "english": "chest",
+   "word": "gaba"
+  },
+  {
+   "english": "gate",
+   "word": "ka"
+  },
+  {
+   "english": "split",
+   "word": "dar"
+  },
+  {
+   "english": "box",
+   "word": "pisaĝ"
+  },
+  {
+   "english": "moons",
+   "word": "itud"
+  },
+  {
+   "english": "cover",
+   "word": "dul"
+  },
+  {
+   "english": "plant",
+   "word": "u"
+  },
+  {
+   "english": "wheel",
+   "word": "umbin"
+  },
+  {
+   "english": "bow",
+   "word": "pan"
+  },
+  {
+   "english": "banner",
+   "word": "šunir"
+  },
+  {
+   "english": "spear",
+   "word": "šukur"
+  },
+  {
+   "english": "pot",
+   "word": "dug"
+  },
+  {
+   "english": "standard",
+   "word": "šunir"
+  },
+  {
+   "english": "basket",
+   "word": "pisaĝ"
+  },
+  {
+   "english": "fire",
+   "word": "izi"
+  },
+  {
+   "english": "drum",
+   "word": "šem"
+  },
+  {
+   "english": "fields",
+   "word": "gana"
+  },
+  {
+   "english": "hand",
+   "word": "šu"
+  },
+  {
+   "english": "lightning",
+   "word": "nimgir"
+  },
+  {
+   "english": "roots",
+   "word": "suḫuš"
+  },
+  {
+   "english": "field",
+   "word": "aša"
+  },
+  {
+   "english": "eyes",
+   "word": "igi"
+  },
+  {
+   "english": "arrow",
+   "word": "ti"
+  },
+  {
+   "english": "branch",
+   "word": "pa"
+  },
+  {
+   "english": "raise",
+   "word": "il"
+  },
+  {
+   "english": "yoke",
+   "word": "šudul"
+  },
+  {
+   "english": "bundle",
+   "word": "sa"
+  },
+  {
+   "english": "walls",
+   "word": "bad"
+  },
+  {
+   "english": "pair",
+   "word": "tab"
+  },
+  {
+   "english": "mountains",
+   "word": "ḫursaĝ"
+  },
+  {
+   "english": "man",
+   "word": "nita"
+  },
+  {
+   "english": "tent",
+   "word": "zalamĝar"
+  },
+  {
+   "english": "crescent",
+   "word": "usakar"
+  },
+  {
+   "english": "leaf",
+   "word": "pa"
+  },
+  {
+   "english": "ear",
+   "word": "ĝeštug"
+  },
+  {
+   "english": "stick",
+   "word": "ĝeš"
+  },
+  {
+   "english": "breasts",
+   "word": "ubur"
+  },
+  {
+   "english": "pond",
+   "word": "pu"
+  },
+  {
+   "english": "grain",
+   "word": "še"
+  },
+  {
+   "english": "three",
+   "word": "eš"
+  },
+  {
+   "english": "fill",
+   "word": "si"
+  },
+  {
+   "english": "pile",
+   "word": "guru"
+  },
+  {
+   "english": "two",
+   "word": "min"
+  },
+  {
+   "english": "crescents",
+   "word": "usakar"
+  },
+  {
+   "english": "body",
+   "word": "su"
+  },
+  {
+   "english": "teeth",
+   "word": "zu"
+  },
+  {
+   "english": "pedestal",
+   "word": "barag"
+  },
+  {
+   "english": "fields",
+   "word": "aša"
+  },
+  {
+   "english": "kneel",
+   "word": "gam"
+  }
+ ]
+}

@@ -1,0 +1,600 @@
+{"name": "Bēowulf", "type": "person", "morphemes": ["bēovulph"], "source": "Beowulf", "weight": 1}
+{"name": "Wealhþēow", "type": "person", "morphemes": ["vealh", "thēov"], "source": "Beowulf", "weight": 1}
+{"name": "Hygd", "type": "person", "morphemes": ["hugd"], "source": "Beowulf", "weight": 1}
+{"name": "Ecgþēow", "type": "person", "morphemes": ["ej", "thēov"], "source": "Beowulf", "weight": 1}
+{"name": "Wēohstān", "type": "person", "morphemes": ["vēoh", "stān"], "source": "Beowulf", "weight": 1}
+{"name": "Unferð", "type": "person", "morphemes": ["unpherth"], "source": "Beowulf", "weight": 1}
+{"name": "Ecglāf", "type": "person", "morphemes": ["ej", "lāph"], "source": "Beowulf; Maldon", "weight": 1}
+{"name": "Healfdene", "type": "person", "morphemes": ["healph", "dene"], "source": "Beowulf", "weight": 1}
+{"name": "Heorogār", "type": "person", "morphemes": ["heoru", "gār"], "source": "Beowulf", "weight": 1}
+{"name": "Hālga", "type": "person", "morphemes": ["hālig"], "source": "Beowulf", "weight": 1}
+{"name": "Hrōðulf", "type": "person", "morphemes": ["hrōth", "vulph"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Hrēðrīc", "type": "person", "morphemes": ["hrēth", "rīc"], "source": "Beowulf", "weight": 1}
+{"name": "Frēawaru", "type": "person", "morphemes": ["phrēa", "varu"], "source": "Beowulf", "weight": 1}
+{"name": "Ingeld", "type": "person", "morphemes": ["ingeld"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Frōda", "type": "person", "morphemes": ["phrōd"], "source": "Beowulf", "weight": 1}
+{"name": "Heoroweard", "type": "person", "morphemes": ["heoru", "veard"], "source": "Beowulf", "weight": 1}
+{"name": "Æschere", "type": "person", "morphemes": ["eś", "here"], "source": "Beowulf", "weight": 1}
+{"name": "Yrmenlāf", "type": "person", "morphemes": ["eormen", "lāph"], "source": "Beowulf", "weight": 1}
+{"name": "Wulfgār", "type": "person", "morphemes": ["vulph", "gār"], "source": "Beowulf", "weight": 1}
+{"name": "Heremōd", "type": "person", "morphemes": ["here", "mōd"], "source": "Beowulf; ASC", "weight": 1}
+{"name": "Sigemund", "type": "person", "morphemes": ["sige", "mund"], "source": "Beowulf", "weight": 1}
+{"name": "Wæls", "type": "person", "morphemes": ["vels"], "source": "Beowulf", "weight": 1}
+{"name": "Fitela", "type": "person", "morphemes": ["phitela"], "source": "Beowulf", "weight": 1}
+{"name": "Finn", "type": "person", "morphemes": ["phinn"], "source": "Beowulf; Finnsburh; ASC", "weight": 1}
+{"name": "Hildeburh", "type": "person", "morphemes": ["hild", "burg"], "source": "Beowulf", "weight": 1}
+{"name": "Hnæf", "type": "person", "morphemes": ["hneph"], "source": "Beowulf; Finnsburh; Widsith", "weight": 1}
+{"name": "Hengest", "type": "person", "morphemes": ["hengest"], "source": "Beowulf; Finnsburh; ASC", "weight": 1}
+{"name": "Gūðlāf", "type": "person", "morphemes": ["gūth", "lāph"], "source": "Beowulf; Finnsburh", "weight": 1}
+{"name": "Ōslāf", "type": "person", "morphemes": ["ōs", "lāph"], "source": "Beowulf", "weight": 1}
+{"name": "Folcwalda", "type": "person", "morphemes": ["pholc", "vealda"], "source": "Beowulf", "weight": 1}
+{"name": "Hǣreð", "type": "person", "morphemes": ["hēreth"], "source": "Beowulf", "weight": 1}
+{"name": "Hrēðel", "type": "person", "morphemes": ["hrēthel"], "source": "Beowulf", "weight": 1}
+{"name": "Herebeald", "type": "person", "morphemes": ["here", "beald"], "source": "Beowulf; Bede", "weight": 1}
+{"name": "Hæðcyn", "type": "person", "morphemes": ["hethcun"], "source": "Beowulf", "weight": 1}
+{"name": "Heardrēd", "type": "person", "morphemes": ["heard", "rēd"], "source": "Beowulf", "weight": 1}
+{"name": "Ongenþēow", "type": "person", "morphemes": ["ongen", "thēov"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Ōhthere", "type": "person", "morphemes": ["ōht", "here"], "source": "Beowulf; OE Orosius", "weight": 1}
+{"name": "Onela", "type": "person", "morphemes": ["onela"], "source": "Beowulf", "weight": 1}
+{"name": "Ēadgils", "type": "person", "morphemes": ["ēad", "gīsl"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Wonrēd", "type": "person", "morphemes": ["vann", "rēd"], "source": "Beowulf", "weight": 1}
+{"name": "Wulf", "type": "person", "morphemes": ["vulph"], "source": "Beowulf; Wulf and Eadwacer", "weight": 1}
+{"name": "Eofor", "type": "person", "morphemes": ["eophor"], "source": "Beowulf", "weight": 1}
+{"name": "Wēland", "type": "person", "morphemes": ["vēland"], "source": "Beowulf; Deor; Waldere", "weight": 1}
+{"name": "Hāma", "type": "person", "morphemes": ["hāma"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Eormenrīc", "type": "person", "morphemes": ["eormen", "rīc"], "source": "Beowulf; Widsith; Deor; Bede", "weight": 1}
+{"name": "Offa", "type": "person", "morphemes": ["ophpha"], "source": "Beowulf; Widsith; ASC", "weight": 1}
+{"name": "Gārmund", "type": "person", "morphemes": ["gār", "mund"], "source": "Beowulf", "weight": 1}
+{"name": "Dæghrefn", "type": "person", "morphemes": ["deg", "hrephn"], "source": "Beowulf", "weight": 1}
+{"name": "Breca", "type": "person", "morphemes": ["breca"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Bēanstān", "type": "person", "morphemes": ["bēan", "stān"], "source": "Beowulf", "weight": 1}
+{"name": "Hereric", "type": "person", "morphemes": ["here", "rīc"], "source": "Beowulf; Bede", "weight": 1}
+{"name": "Hondsciō", "type": "person", "morphemes": ["hand", "śōh"], "source": "Beowulf", "weight": 1}
+{"name": "Ælfhere", "type": "person", "morphemes": ["elph", "here"], "source": "Beowulf; Waldere; ASC", "weight": 1}
+{"name": "Heaþolāf", "type": "person", "morphemes": ["heathu", "lāph"], "source": "Beowulf", "weight": 1}
+{"name": "Sigeferð", "type": "person", "morphemes": ["sige", "phrith"], "source": "Finnsburh", "weight": 1}
+{"name": "Ordlāf", "type": "person", "morphemes": ["ord", "lāph"], "source": "Finnsburh", "weight": 1}
+{"name": "Gārulf", "type": "person", "morphemes": ["gār", "vulph"], "source": "Finnsburh", "weight": 1}
+{"name": "Gūðhere", "type": "person", "morphemes": ["gūth", "here"], "source": "Widsith; Waldere; Finnsburh", "weight": 1}
+{"name": "Waldere", "type": "person", "morphemes": ["veald", "here"], "source": "Waldere", "weight": 1}
+{"name": "Nīðhād", "type": "person", "morphemes": ["nīth", "hād"], "source": "Deor; Waldere", "weight": 1}
+{"name": "Dēor", "type": "person", "morphemes": ["dēor"], "source": "Deor", "weight": 1}
+{"name": "Beadohild", "type": "person", "morphemes": ["beadu", "hild"], "source": "Deor", "weight": 1}
+{"name": "Mǣðhild", "type": "person", "morphemes": ["mēth", "hild"], "source": "Deor", "weight": 1}
+{"name": "Heorrenda", "type": "person", "morphemes": ["heorrenda"], "source": "Deor", "weight": 1}
+{"name": "Wīdsīð", "type": "person", "morphemes": ["vīd", "sīth"], "source": "Widsith", "weight": 1}
+{"name": "Ealhhild", "type": "person", "morphemes": ["ealh", "hild"], "source": "Widsith", "weight": 1}
+{"name": "Ætla", "type": "person", "morphemes": ["etla"], "source": "Widsith; Waldere; Bede", "weight": 1}
+{"name": "Cāsere", "type": "person", "morphemes": ["cāsere"], "source": "Widsith", "weight": 1}
+{"name": "Hagena", "type": "person", "morphemes": ["hagena"], "source": "Widsith; Waldere", "weight": 1}
+{"name": "Witta", "type": "person", "morphemes": ["vitta"], "source": "Widsith; Bede; ASC", "weight": 1}
+{"name": "Wada", "type": "person", "morphemes": ["vada"], "source": "Widsith", "weight": 1}
+{"name": "Þēodrīc", "type": "person", "morphemes": ["thēod", "rīc"], "source": "Widsith; Deor; Waldere", "weight": 1}
+{"name": "Ōswine", "type": "person", "morphemes": ["ōs", "vine"], "source": "Widsith; Bede", "weight": 1}
+{"name": "Wald", "type": "person", "morphemes": ["veald"], "source": "Widsith", "weight": 1}
+{"name": "Sǣferð", "type": "person", "morphemes": ["sē", "phrith"], "source": "Widsith", "weight": 1}
+{"name": "Holen", "type": "person", "morphemes": ["holen"], "source": "Widsith", "weight": 1}
+{"name": "Hringweald", "type": "person", "morphemes": ["hring", "veald"], "source": "Widsith", "weight": 1}
+{"name": "Ælfwine", "type": "person", "morphemes": ["elph", "vine"], "source": "Widsith; Bede; Maldon", "weight": 1}
+{"name": "Ēadwine", "type": "person", "morphemes": ["ēad", "vine"], "source": "Widsith; Bede; ASC", "weight": 1}
+{"name": "Heaþorīc", "type": "person", "morphemes": ["heathu", "rīc"], "source": "Widsith", "weight": 1}
+{"name": "Ægelmund", "type": "person", "morphemes": ["egel", "mund"], "source": "Widsith", "weight": 1}
+{"name": "Hungār", "type": "person", "morphemes": ["hūn", "gār"], "source": "Widsith", "weight": 1}
+{"name": "Wyrmhere", "type": "person", "morphemes": ["vurm", "here"], "source": "Widsith", "weight": 1}
+{"name": "Rǣdhere", "type": "person", "morphemes": ["rēd", "here"], "source": "Widsith", "weight": 1}
+{"name": "Rondhere", "type": "person", "morphemes": ["rand", "here"], "source": "Widsith", "weight": 1}
+{"name": "Gīslhere", "type": "person", "morphemes": ["gīsl", "here"], "source": "Widsith", "weight": 1}
+{"name": "Freoþerīc", "type": "person", "morphemes": ["phrēothu", "rīc"], "source": "Widsith", "weight": 1}
+{"name": "Wudga", "type": "person", "morphemes": ["vudga"], "source": "Widsith", "weight": 1}
+{"name": "Cynewulf", "type": "person", "morphemes": ["cune", "vulph"], "source": "Cynewulf's signed poems; ASC", "weight": 1}
+{"name": "Cǣdmon", "type": "person", "morphemes": ["cēdmon"], "source": "Bede", "weight": 1}
+{"name": "Byrhtnōð", "type": "person", "morphemes": ["beorht", "nōth"], "source": "Maldon; ASC", "weight": 1}
+{"name": "Ælfrīc", "type": "person", "morphemes": ["elph", "rīc"], "source": "Maldon; ASC; Ælfric", "weight": 1}
+{"name": "Wulfmǣr", "type": "person", "morphemes": ["vulph", "mēr"], "source": "Maldon", "weight": 1}
+{"name": "Ēadweard", "type": "person", "morphemes": ["ēad", "veard"], "source": "Maldon; ASC", "weight": 1}
+{"name": "Ēadrīc", "type": "person", "morphemes": ["ēad", "rīc"], "source": "Maldon; ASC", "weight": 1}
+{"name": "Godwine", "type": "person", "morphemes": ["god", "vine"], "source": "Maldon; ASC", "weight": 1}
+{"name": "Odda", "type": "person", "morphemes": ["odda"], "source": "Maldon", "weight": 1}
+{"name": "Lēofsunu", "type": "person", "morphemes": ["lēoph", "sunu"], "source": "Maldon", "weight": 1}
+{"name": "Dunnere", "type": "person", "morphemes": ["dunn", "here"], "source": "Maldon", "weight": 1}
+{"name": "Æscferð", "type": "person", "morphemes": ["eś", "phrith"], "source": "Maldon", "weight": 1}
+{"name": "Wīstān", "type": "person", "morphemes": ["vīg", "stān"], "source": "Maldon", "weight": 1}
+{"name": "Ōswald", "type": "person", "morphemes": ["ōs", "veald"], "source": "Bede; ASC; Maldon", "weight": 1}
+{"name": "Byrhtwold", "type": "person", "morphemes": ["beorht", "veald"], "source": "Maldon", "weight": 1}
+{"name": "Æþelgār", "type": "person", "morphemes": ["ethel", "gār"], "source": "Maldon; ASC", "weight": 1}
+{"name": "Sigeberht", "type": "person", "morphemes": ["sige", "beorht"], "source": "Bede; ASC; Maldon", "weight": 1}
+{"name": "Ælfgār", "type": "person", "morphemes": ["elph", "gār"], "source": "ASC", "weight": 1}
+{"name": "Horsa", "type": "person", "morphemes": ["hors"], "source": "Bede; ASC", "weight": 1}
+{"name": "Æsc", "type": "person", "morphemes": ["eś"], "source": "ASC", "weight": 1}
+{"name": "Æþelberht", "type": "person", "morphemes": ["ethel", "beorht"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēadbald", "type": "person", "morphemes": ["ēad", "beald"], "source": "Bede; ASC", "weight": 1}
+{"name": "Eorcenberht", "type": "person", "morphemes": ["eorcen", "beorht"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ecgberht", "type": "person", "morphemes": ["ej", "beorht"], "source": "Bede; ASC", "weight": 1}
+{"name": "Hlōþhere", "type": "person", "morphemes": ["hlōth", "here"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēadberht", "type": "person", "morphemes": ["ēad", "beorht"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ealhmund", "type": "person", "morphemes": ["ealh", "mund"], "source": "ASC", "weight": 1}
+{"name": "Cūþrēd", "type": "person", "morphemes": ["cūth", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Bealdrēd", "type": "person", "morphemes": ["beald", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Æþelburh", "type": "person", "morphemes": ["ethel", "burg"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēanswīþ", "type": "person", "morphemes": ["ēan", "svīth"], "source": "Kentish royal legend", "weight": 1}
+{"name": "Seaxburh", "type": "person", "morphemes": ["seaks", "burg"], "source": "Bede; ASC", "weight": 1}
+{"name": "Eormenhild", "type": "person", "morphemes": ["eormen", "hild"], "source": "Kentish royal legend", "weight": 1}
+{"name": "Eormenburg", "type": "person", "morphemes": ["eormen", "burg"], "source": "Bede; Kentish royal legend", "weight": 1}
+{"name": "Mildþrȳð", "type": "person", "morphemes": ["mild", "thrūth"], "source": "Kentish royal legend", "weight": 1}
+{"name": "Mildburh", "type": "person", "morphemes": ["mild", "burg"], "source": "Kentish royal legend", "weight": 1}
+{"name": "Mildgȳð", "type": "person", "morphemes": ["mild", "gūth"], "source": "Kentish royal legend", "weight": 1}
+{"name": "Eorcengota", "type": "person", "morphemes": ["eorcen", "gotan"], "source": "Bede", "weight": 1}
+{"name": "Ēanflǣd", "type": "person", "morphemes": ["ēan", "phlēd"], "source": "Bede; ASC", "weight": 1}
+{"name": "Wihtgils", "type": "person", "morphemes": ["viht", "gīsl"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cerdic", "type": "person", "morphemes": ["cerdic"], "source": "ASC", "weight": 1}
+{"name": "Cynrīc", "type": "person", "morphemes": ["cune", "rīc"], "source": "ASC", "weight": 1}
+{"name": "Ceawlin", "type": "person", "morphemes": ["ceavlin"], "source": "ASC; Bede", "weight": 1}
+{"name": "Cūþa", "type": "person", "morphemes": ["cūth"], "source": "ASC", "weight": 1}
+{"name": "Cūþwulf", "type": "person", "morphemes": ["cūth", "vulph"], "source": "ASC", "weight": 1}
+{"name": "Cūþwine", "type": "person", "morphemes": ["cūth", "vine"], "source": "ASC", "weight": 1}
+{"name": "Cēolwulf", "type": "person", "morphemes": ["cēol", "vulph"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cynegils", "type": "person", "morphemes": ["cune", "gīsl"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cwichelm", "type": "person", "morphemes": ["cvic", "helm"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cēnwealh", "type": "person", "morphemes": ["cēne", "vealh"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cēnwulf", "type": "person", "morphemes": ["cēne", "vulph"], "source": "ASC", "weight": 1}
+{"name": "Æscwine", "type": "person", "morphemes": ["eś", "vine"], "source": "ASC", "weight": 1}
+{"name": "Cǣdwealla", "type": "person", "morphemes": ["cēdvealla"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ine", "type": "person", "morphemes": ["ine"], "source": "Bede; ASC", "weight": 1}
+{"name": "Æþelheard", "type": "person", "morphemes": ["ethel", "heard"], "source": "ASC", "weight": 1}
+{"name": "Æþelbald", "type": "person", "morphemes": ["ethel", "beald"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cyneheard", "type": "person", "morphemes": ["cune", "heard"], "source": "ASC", "weight": 1}
+{"name": "Beorhtrīc", "type": "person", "morphemes": ["beorht", "rīc"], "source": "ASC", "weight": 1}
+{"name": "Ēadburh", "type": "person", "morphemes": ["ēad", "burg"], "source": "ASC", "weight": 1}
+{"name": "Æþelrēd", "type": "person", "morphemes": ["ethel", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Ælfrēd", "type": "person", "morphemes": ["elph", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Ealhswīð", "type": "person", "morphemes": ["ealh", "svīth"], "source": "ASC", "weight": 1}
+{"name": "Æþelweard", "type": "person", "morphemes": ["ethel", "veard"], "source": "ASC", "weight": 1}
+{"name": "Æþelflǣd", "type": "person", "morphemes": ["ethel", "phlēd"], "source": "ASC", "weight": 1}
+{"name": "Æþelgifu", "type": "person", "morphemes": ["ethel", "giphu"], "source": "Charters", "weight": 1}
+{"name": "Ælfþrȳð", "type": "person", "morphemes": ["elph", "thrūth"], "source": "ASC", "weight": 1}
+{"name": "Æþelstān", "type": "person", "morphemes": ["ethel", "stān"], "source": "ASC; Brunanburh", "weight": 1}
+{"name": "Ēadmund", "type": "person", "morphemes": ["ēad", "mund"], "source": "ASC; Brunanburh", "weight": 1}
+{"name": "Ēadrēd", "type": "person", "morphemes": ["ēad", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Ēadwig", "type": "person", "morphemes": ["ēad", "vīg"], "source": "ASC", "weight": 1}
+{"name": "Ēadgār", "type": "person", "morphemes": ["ēad", "gār"], "source": "ASC", "weight": 1}
+{"name": "Ēadgifu", "type": "person", "morphemes": ["ēad", "giphu"], "source": "Charters", "weight": 1}
+{"name": "Ælfgifu", "type": "person", "morphemes": ["elph", "giphu"], "source": "ASC", "weight": 1}
+{"name": "Ēadgȳð", "type": "person", "morphemes": ["ēad", "gūth"], "source": "ASC", "weight": 1}
+{"name": "Æþelwald", "type": "person", "morphemes": ["ethel", "veald"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ælfhēah", "type": "person", "morphemes": ["elph", "hēah"], "source": "ASC", "weight": 1}
+{"name": "Dūnstān", "type": "person", "morphemes": ["dūn", "stān"], "source": "ASC", "weight": 1}
+{"name": "Ealdhelm", "type": "person", "morphemes": ["eald", "helm"], "source": "Bede; ASC", "weight": 1}
+{"name": "Swīþhūn", "type": "person", "morphemes": ["svīth", "hūn"], "source": "Ælfric", "weight": 1}
+{"name": "Ealhstān", "type": "person", "morphemes": ["ealh", "stān"], "source": "ASC", "weight": 1}
+{"name": "Wǣrferð", "type": "person", "morphemes": ["vēr", "phrith"], "source": "Pastoral Care preface", "weight": 1}
+{"name": "Plegmund", "type": "person", "morphemes": ["plega", "mund"], "source": "ASC", "weight": 1}
+{"name": "Wulfhelm", "type": "person", "morphemes": ["vulph", "helm"], "source": "ASC", "weight": 1}
+{"name": "Ælfsige", "type": "person", "morphemes": ["elph", "sige"], "source": "ASC", "weight": 1}
+{"name": "Sigerīc", "type": "person", "morphemes": ["sige", "rīc"], "source": "ASC", "weight": 1}
+{"name": "Æþelnōð", "type": "person", "morphemes": ["ethel", "nōth"], "source": "ASC", "weight": 1}
+{"name": "Ēadsige", "type": "person", "morphemes": ["ēad", "sige"], "source": "ASC", "weight": 1}
+{"name": "Ēadwulf", "type": "person", "morphemes": ["ēad", "vulph"], "source": "ASC", "weight": 1}
+{"name": "Lēofrīc", "type": "person", "morphemes": ["lēoph", "rīc"], "source": "ASC", "weight": 1}
+{"name": "Godgifu", "type": "person", "morphemes": ["god", "giphu"], "source": "Charters", "weight": 1}
+{"name": "Wulfrūn", "type": "person", "morphemes": ["vulph", "rūn"], "source": "ASC", "weight": 1}
+{"name": "Byrhtferð", "type": "person", "morphemes": ["beorht", "phrith"], "source": "Byrhtferth's Enchiridion", "weight": 1}
+{"name": "Ealhhere", "type": "person", "morphemes": ["ealh", "here"], "source": "ASC", "weight": 1}
+{"name": "Ceorl", "type": "person", "morphemes": ["ceorl"], "source": "ASC", "weight": 1}
+{"name": "Ēanwulf", "type": "person", "morphemes": ["ēan", "vulph"], "source": "ASC", "weight": 1}
+{"name": "Ælfweard", "type": "person", "morphemes": ["elph", "veard"], "source": "ASC", "weight": 1}
+{"name": "Ordgār", "type": "person", "morphemes": ["ord", "gār"], "source": "ASC", "weight": 1}
+{"name": "Ælfstān", "type": "person", "morphemes": ["elph", "stān"], "source": "ASC", "weight": 1}
+{"name": "Wulfrīc", "type": "person", "morphemes": ["vulph", "rīc"], "source": "Charters", "weight": 1}
+{"name": "Æþelwine", "type": "person", "morphemes": ["ethel", "vine"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ealdgȳð", "type": "person", "morphemes": ["eald", "gūth"], "source": "ASC", "weight": 1}
+{"name": "Lēofwine", "type": "person", "morphemes": ["lēoph", "vine"], "source": "ASC", "weight": 1}
+{"name": "Wulfnōð", "type": "person", "morphemes": ["vulph", "nōth"], "source": "ASC", "weight": 1}
+{"name": "Ūhtrēd", "type": "person", "morphemes": ["ūht", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Ælfhelm", "type": "person", "morphemes": ["elph", "helm"], "source": "ASC", "weight": 1}
+{"name": "Wulfwaru", "type": "person", "morphemes": ["vulph", "varu"], "source": "Charters", "weight": 1}
+{"name": "Port", "type": "person", "morphemes": ["port"], "source": "ASC", "weight": 1}
+{"name": "Wihtgār", "type": "person", "morphemes": ["viht", "gār"], "source": "ASC", "weight": 1}
+{"name": "Wipped", "type": "person", "morphemes": ["vipped"], "source": "ASC", "weight": 1}
+{"name": "Wīg", "type": "person", "morphemes": ["vīg"], "source": "ASC", "weight": 1}
+{"name": "Frēawine", "type": "person", "morphemes": ["phrēa", "vine"], "source": "ASC", "weight": 1}
+{"name": "Frēoþogār", "type": "person", "morphemes": ["phrēothu", "gār"], "source": "ASC", "weight": 1}
+{"name": "Friþuwald", "type": "person", "morphemes": ["phrith", "veald"], "source": "ASC", "weight": 1}
+{"name": "Friþuwulf", "type": "person", "morphemes": ["phrith", "vulph"], "source": "ASC", "weight": 1}
+{"name": "Godwulf", "type": "person", "morphemes": ["god", "vulph"], "source": "ASC", "weight": 1}
+{"name": "Scēaf", "type": "person", "morphemes": ["śēaph"], "source": "ASC", "weight": 1}
+{"name": "Wilgils", "type": "person", "morphemes": ["vil", "gīsl"], "source": "ASC", "weight": 1}
+{"name": "Westerfalca", "type": "person", "morphemes": ["vester", "phalca"], "source": "ASC", "weight": 1}
+{"name": "Sǣfugl", "type": "person", "morphemes": ["sē", "phugol"], "source": "ASC", "weight": 1}
+{"name": "Sǣbald", "type": "person", "morphemes": ["sē", "beald"], "source": "ASC", "weight": 1}
+{"name": "Swæfdæg", "type": "person", "morphemes": ["svēphe", "deg"], "source": "ASC", "weight": 1}
+{"name": "Sigegār", "type": "person", "morphemes": ["sige", "gār"], "source": "ASC", "weight": 1}
+{"name": "Wægdæg", "type": "person", "morphemes": ["vēg", "deg"], "source": "ASC", "weight": 1}
+{"name": "Wilhelm", "type": "person", "morphemes": ["vil", "helm"], "source": "Anglian genealogies", "weight": 1}
+{"name": "Ōsmōd", "type": "person", "morphemes": ["ōs", "mōd"], "source": "ASC", "weight": 1}
+{"name": "Þingfrið", "type": "person", "morphemes": ["thing", "phrith"], "source": "ASC", "weight": 1}
+{"name": "Cynewald", "type": "person", "morphemes": ["cune", "veald"], "source": "ASC", "weight": 1}
+{"name": "Icel", "type": "person", "morphemes": ["icel"], "source": "ASC", "weight": 1}
+{"name": "Angelþēow", "type": "person", "morphemes": ["angel", "thēov"], "source": "ASC", "weight": 1}
+{"name": "Wǣrmund", "type": "person", "morphemes": ["vēr", "mund"], "source": "ASC", "weight": 1}
+{"name": "Crēoda", "type": "person", "morphemes": ["crēoda"], "source": "ASC", "weight": 1}
+{"name": "Pybba", "type": "person", "morphemes": ["pubba"], "source": "ASC", "weight": 1}
+{"name": "Ida", "type": "person", "morphemes": ["ida"], "source": "ASC; Bede", "weight": 1}
+{"name": "Ælle", "type": "person", "morphemes": ["elle"], "source": "ASC; Bede", "weight": 1}
+{"name": "Æþelfrið", "type": "person", "morphemes": ["ethel", "phrith"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēanfrið", "type": "person", "morphemes": ["ēan", "phrith"], "source": "Bede", "weight": 1}
+{"name": "Ōsrīc", "type": "person", "morphemes": ["ōs", "rīc"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ōswīu", "type": "person", "morphemes": ["ōs", "vīg"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ecgfrið", "type": "person", "morphemes": ["ej", "phrith"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ealdfrið", "type": "person", "morphemes": ["eald", "phrith"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ealhfrið", "type": "person", "morphemes": ["ealh", "phrith"], "source": "Bede", "weight": 1}
+{"name": "Ōsrēd", "type": "person", "morphemes": ["ōs", "rēd"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ealhrēd", "type": "person", "morphemes": ["ealh", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Ælfwald", "type": "person", "morphemes": ["elph", "veald"], "source": "ASC", "weight": 1}
+{"name": "Eardwulf", "type": "person", "morphemes": ["eard", "vulph"], "source": "ASC", "weight": 1}
+{"name": "Ōsberht", "type": "person", "morphemes": ["ōs", "beorht"], "source": "ASC", "weight": 1}
+{"name": "Ælfflǣd", "type": "person", "morphemes": ["elph", "phlēd"], "source": "Bede", "weight": 1}
+{"name": "Hild", "type": "person", "morphemes": ["hild"], "source": "Bede; ASC", "weight": 1}
+{"name": "Hereswīþ", "type": "person", "morphemes": ["here", "svīth"], "source": "Bede", "weight": 1}
+{"name": "Bregoswīþ", "type": "person", "morphemes": ["bregu", "svīth"], "source": "Bede", "weight": 1}
+{"name": "Æþelþrȳð", "type": "person", "morphemes": ["ethel", "thrūth"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cūþburh", "type": "person", "morphemes": ["cūth", "burg"], "source": "ASC", "weight": 1}
+{"name": "Cwēnburh", "type": "person", "morphemes": ["cvēn", "burg"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cūþberht", "type": "person", "morphemes": ["cūth", "beorht"], "source": "Bede; ASC", "weight": 1}
+{"name": "Bēda", "type": "person", "morphemes": ["bēda"], "source": "Bede; ASC", "weight": 1}
+{"name": "Wilfrið", "type": "person", "morphemes": ["vil", "phrith"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēata", "type": "person", "morphemes": ["ēata"], "source": "Bede", "weight": 1}
+{"name": "Ceadda", "type": "person", "morphemes": ["ceadda"], "source": "Bede", "weight": 1}
+{"name": "Cedd", "type": "person", "morphemes": ["cedd"], "source": "Bede", "weight": 1}
+{"name": "Cynebil", "type": "person", "morphemes": ["cune", "bill"], "source": "Bede", "weight": 1}
+{"name": "Bōsa", "type": "person", "morphemes": ["bōsa"], "source": "Bede", "weight": 1}
+{"name": "Ceolfrið", "type": "person", "morphemes": ["cēol", "phrith"], "source": "Bede", "weight": 1}
+{"name": "Ēosterwine", "type": "person", "morphemes": ["ēaster", "vine"], "source": "Bede", "weight": 1}
+{"name": "Hwætberht", "type": "person", "morphemes": ["hvet", "beorht"], "source": "Bede", "weight": 1}
+{"name": "Acca", "type": "person", "morphemes": ["acca"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēadfrið", "type": "person", "morphemes": ["ēad", "phrith"], "source": "Bede; Lindisfarne Gospels colophon", "weight": 1}
+{"name": "Billfrið", "type": "person", "morphemes": ["bill", "phrith"], "source": "Lindisfarne Gospels colophon", "weight": 1}
+{"name": "Ealdrēd", "type": "person", "morphemes": ["eald", "rēd"], "source": "Lindisfarne Gospels colophon; ASC", "weight": 1}
+{"name": "Trumwine", "type": "person", "morphemes": ["trum", "vine"], "source": "Bede", "weight": 1}
+{"name": "Trumhere", "type": "person", "morphemes": ["trum", "here"], "source": "Bede", "weight": 1}
+{"name": "Lilla", "type": "person", "morphemes": ["lilla"], "source": "Bede", "weight": 1}
+{"name": "Penda", "type": "person", "morphemes": ["penda"], "source": "Bede; ASC", "weight": 1}
+{"name": "Peada", "type": "person", "morphemes": ["peada"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ōsþrȳð", "type": "person", "morphemes": ["ōs", "thrūth"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēanbald", "type": "person", "morphemes": ["ēan", "beald"], "source": "ASC", "weight": 1}
+{"name": "Hygebald", "type": "person", "morphemes": ["huge", "beald"], "source": "ASC", "weight": 1}
+{"name": "Hereberht", "type": "person", "morphemes": ["here", "beorht"], "source": "Bede", "weight": 1}
+{"name": "Dryhthelm", "type": "person", "morphemes": ["druht", "helm"], "source": "Bede", "weight": 1}
+{"name": "Imma", "type": "person", "morphemes": ["imma"], "source": "Bede", "weight": 1}
+{"name": "Swīþberht", "type": "person", "morphemes": ["svīth", "beorht"], "source": "Bede", "weight": 1}
+{"name": "Wilbrord", "type": "person", "morphemes": ["vil", "brord"], "source": "Bede", "weight": 1}
+{"name": "Wealhstōd", "type": "person", "morphemes": ["vealhstōd"], "source": "Bede", "weight": 1}
+{"name": "Ingwald", "type": "person", "morphemes": ["ing", "veald"], "source": "Bede", "weight": 1}
+{"name": "Pehthelm", "type": "person", "morphemes": ["peohtas", "helm"], "source": "Bede", "weight": 1}
+{"name": "Cyneberht", "type": "person", "morphemes": ["cune", "beorht"], "source": "Bede", "weight": 1}
+{"name": "Ealdwulf", "type": "person", "morphemes": ["eald", "vulph"], "source": "Bede", "weight": 1}
+{"name": "Tātwine", "type": "person", "morphemes": ["tāt", "vine"], "source": "Bede; ASC", "weight": 1}
+{"name": "Wine", "type": "person", "morphemes": ["vine"], "source": "Bede", "weight": 1}
+{"name": "Nōþhelm", "type": "person", "morphemes": ["nōth", "helm"], "source": "Bede; ASC", "weight": 1}
+{"name": "Bregowine", "type": "person", "morphemes": ["bregu", "vine"], "source": "ASC", "weight": 1}
+{"name": "Wulfrēd", "type": "person", "morphemes": ["vulph", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Cēolnōð", "type": "person", "morphemes": ["cēol", "nōth"], "source": "ASC", "weight": 1}
+{"name": "Æþelhelm", "type": "person", "morphemes": ["ethel", "helm"], "source": "ASC", "weight": 1}
+{"name": "Wulfsige", "type": "person", "morphemes": ["vulph", "sige"], "source": "ASC", "weight": 1}
+{"name": "Cynesige", "type": "person", "morphemes": ["cune", "sige"], "source": "ASC", "weight": 1}
+{"name": "Wynfrið", "type": "person", "morphemes": ["vunn", "phrith"], "source": "Bede", "weight": 1}
+{"name": "Ceolrēd", "type": "person", "morphemes": ["cēol", "rēd"], "source": "Bede; ASC", "weight": 1}
+{"name": "Beornrēd", "type": "person", "morphemes": ["beorn", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Beornwulf", "type": "person", "morphemes": ["beorn", "vulph"], "source": "ASC", "weight": 1}
+{"name": "Beorhtwulf", "type": "person", "morphemes": ["beorht", "vulph"], "source": "ASC", "weight": 1}
+{"name": "Burgrēd", "type": "person", "morphemes": ["burg", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Æþelswīþ", "type": "person", "morphemes": ["ethel", "svīth"], "source": "ASC", "weight": 1}
+{"name": "Ælfwynn", "type": "person", "morphemes": ["elph", "vunn"], "source": "ASC", "weight": 1}
+{"name": "Cyneþrȳð", "type": "person", "morphemes": ["cune", "thrūth"], "source": "Charters", "weight": 1}
+{"name": "Cyneburh", "type": "person", "morphemes": ["cune", "burg"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cyneswīþ", "type": "person", "morphemes": ["cune", "svīth"], "source": "ASC", "weight": 1}
+{"name": "Gūðlāc", "type": "person", "morphemes": ["gūth", "lāc"], "source": "ASC; Guthlac A", "weight": 1}
+{"name": "Seaxwulf", "type": "person", "morphemes": ["seaks", "vulph"], "source": "Bede; ASC", "weight": 1}
+{"name": "Æþelmund", "type": "person", "morphemes": ["ethel", "mund"], "source": "ASC", "weight": 1}
+{"name": "Ēanhere", "type": "person", "morphemes": ["ēan", "here"], "source": "Bede", "weight": 1}
+{"name": "Rǣdwald", "type": "person", "morphemes": ["rēd", "veald"], "source": "Bede; ASC", "weight": 1}
+{"name": "Eorpwald", "type": "person", "morphemes": ["eorp", "veald"], "source": "Bede", "weight": 1}
+{"name": "Ecgrīc", "type": "person", "morphemes": ["ej", "rīc"], "source": "Bede", "weight": 1}
+{"name": "Anna", "type": "person", "morphemes": ["anna"], "source": "Bede; ASC", "weight": 1}
+{"name": "Æþelhere", "type": "person", "morphemes": ["ethel", "here"], "source": "Bede", "weight": 1}
+{"name": "Rǣgenhere", "type": "person", "morphemes": ["regn", "here"], "source": "Bede", "weight": 1}
+{"name": "Sǣþrȳð", "type": "person", "morphemes": ["sē", "thrūth"], "source": "Bede", "weight": 1}
+{"name": "Seaxrēd", "type": "person", "morphemes": ["seaks", "rēd"], "source": "Bede", "weight": 1}
+{"name": "Sǣweard", "type": "person", "morphemes": ["sē", "veard"], "source": "Bede", "weight": 1}
+{"name": "Swīþhelm", "type": "person", "morphemes": ["svīth", "helm"], "source": "Bede", "weight": 1}
+{"name": "Sigeheard", "type": "person", "morphemes": ["sige", "heard"], "source": "Bede", "weight": 1}
+{"name": "Swǣfrēd", "type": "person", "morphemes": ["svēphe", "rēd"], "source": "Bede", "weight": 1}
+{"name": "Swǣfberht", "type": "person", "morphemes": ["svēphe", "beorht"], "source": "ASC", "weight": 1}
+{"name": "Selerēd", "type": "person", "morphemes": ["sele", "rēd"], "source": "ASC", "weight": 1}
+{"name": "Cissa", "type": "person", "morphemes": ["cissa"], "source": "ASC", "weight": 1}
+{"name": "Berhthūn", "type": "person", "morphemes": ["beorht", "hūn"], "source": "Bede", "weight": 1}
+{"name": "Scyldingas", "type": "lineage", "morphemes": ["śuld"], "source": "Beowulf", "weight": 1}
+{"name": "Herescyldingas", "type": "lineage", "morphemes": ["here", "śuld"], "source": "Beowulf", "weight": 1}
+{"name": "Sigescyldingas", "type": "lineage", "morphemes": ["sige", "śuld"], "source": "Beowulf", "weight": 1}
+{"name": "Þēodscyldingas", "type": "lineage", "morphemes": ["thēod", "śuld"], "source": "Beowulf", "weight": 1}
+{"name": "Scylfingas", "type": "lineage", "morphemes": ["śulph"], "source": "Beowulf", "weight": 1}
+{"name": "Heaþoscilfingas", "type": "lineage", "morphemes": ["heathu", "śulph"], "source": "Beowulf", "weight": 1}
+{"name": "Gūðscilfingas", "type": "lineage", "morphemes": ["gūth", "śulph"], "source": "Beowulf", "weight": 1}
+{"name": "Wǣgmundingas", "type": "lineage", "morphemes": ["vēg", "mund"], "source": "Beowulf", "weight": 1}
+{"name": "Hōcingas", "type": "lineage", "morphemes": ["hōc"], "source": "Widsith", "weight": 1}
+{"name": "Brondingas", "type": "lineage", "morphemes": ["brand"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Merewīoingas", "type": "lineage", "morphemes": ["merevīo"], "source": "Beowulf", "weight": 1}
+{"name": "Wuffingas", "type": "lineage", "morphemes": ["vuphpha"], "source": "Bede", "weight": 1}
+{"name": "Ōiscingas", "type": "lineage", "morphemes": ["ōiś"], "source": "Bede", "weight": 1}
+{"name": "Engle", "type": "group", "morphemes": ["engle"], "source": "Bede; ASC", "weight": 1}
+{"name": "Seaxe", "type": "group", "morphemes": ["seakse"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ȳte", "type": "group", "morphemes": ["ūte"], "source": "Widsith; ASC", "weight": 1}
+{"name": "Dene", "type": "group", "morphemes": ["dene"], "source": "Beowulf; ASC", "weight": 1}
+{"name": "Gēatas", "type": "group", "morphemes": ["gēatas"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Swēon", "type": "group", "morphemes": ["svēon"], "source": "Beowulf; Widsith; OE Orosius", "weight": 1}
+{"name": "Frēsan", "type": "group", "morphemes": ["phrēsan"], "source": "Beowulf; Widsith; ASC", "weight": 1}
+{"name": "Francan", "type": "group", "morphemes": ["phrancan"], "source": "Beowulf; Widsith; ASC", "weight": 1}
+{"name": "Hūgas", "type": "group", "morphemes": ["hūgas"], "source": "Beowulf", "weight": 1}
+{"name": "Heaþobeardan", "type": "group", "morphemes": ["heathu", "beard"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Longbeardan", "type": "group", "morphemes": ["lang", "beard"], "source": "Widsith", "weight": 1}
+{"name": "Ēotenas", "type": "group", "morphemes": ["ēotenas"], "source": "Beowulf", "weight": 1}
+{"name": "Wederas", "type": "group", "morphemes": ["veder"], "source": "Beowulf", "weight": 1}
+{"name": "Gārdene", "type": "group", "morphemes": ["gār", "dene"], "source": "Beowulf", "weight": 1}
+{"name": "Hringdene", "type": "group", "morphemes": ["hring", "dene"], "source": "Beowulf", "weight": 1}
+{"name": "Ēastdene", "type": "group", "morphemes": ["ēast", "dene"], "source": "Beowulf; Rune Poem", "weight": 1}
+{"name": "Sūþdene", "type": "group", "morphemes": ["sūth", "dene"], "source": "Beowulf; Widsith", "weight": 1}
+{"name": "Hrēðgotan", "type": "group", "morphemes": ["hrēth", "gotan"], "source": "Widsith; Elene", "weight": 1}
+{"name": "Gotan", "type": "group", "morphemes": ["gotan"], "source": "Widsith; OE Orosius", "weight": 1}
+{"name": "Ēastgotan", "type": "group", "morphemes": ["ēast", "gotan"], "source": "Widsith", "weight": 1}
+{"name": "Finnas", "type": "group", "morphemes": ["phinnas"], "source": "Widsith; OE Orosius", "weight": 1}
+{"name": "Swǣfe", "type": "group", "morphemes": ["svēphe"], "source": "Widsith", "weight": 1}
+{"name": "Sweordweras", "type": "group", "morphemes": ["sveord", "ver"], "source": "Widsith", "weight": 1}
+{"name": "Scrīdefinnas", "type": "group", "morphemes": ["śrīthan", "phinnas"], "source": "Widsith", "weight": 1}
+{"name": "Peohtas", "type": "group", "morphemes": ["peohtas"], "source": "Bede; ASC", "weight": 1}
+{"name": "Scottas", "type": "group", "morphemes": ["śottas"], "source": "Bede; ASC", "weight": 1}
+{"name": "Brettas", "type": "group", "morphemes": ["brettas"], "source": "Bede; ASC", "weight": 1}
+{"name": "Wēalas", "type": "group", "morphemes": ["vealh"], "source": "ASC", "weight": 1}
+{"name": "Cornwealas", "type": "group", "morphemes": ["corn", "vealh"], "source": "ASC", "weight": 1}
+{"name": "Westwalas", "type": "group", "morphemes": ["vest", "vealh"], "source": "ASC", "weight": 1}
+{"name": "Rūmwalas", "type": "group", "morphemes": ["rōm", "vealh"], "source": "Widsith", "weight": 1}
+{"name": "Mierce", "type": "group", "morphemes": ["mierce"], "source": "Bede; ASC", "weight": 1}
+{"name": "Norþhymbre", "type": "group", "morphemes": ["north", "humbre"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēastengle", "type": "group", "morphemes": ["ēast", "engle"], "source": "Bede; ASC", "weight": 1}
+{"name": "Middelengle", "type": "group", "morphemes": ["middel", "engle"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēastseaxe", "type": "group", "morphemes": ["ēast", "seakse"], "source": "Bede; ASC", "weight": 1}
+{"name": "Westseaxe", "type": "group", "morphemes": ["vest", "seakse"], "source": "Bede; ASC", "weight": 1}
+{"name": "Sūþseaxe", "type": "group", "morphemes": ["sūth", "seakse"], "source": "Bede; ASC", "weight": 1}
+{"name": "Cantware", "type": "group", "morphemes": ["cent", "vare"], "source": "Bede; ASC", "weight": 1}
+{"name": "Wihtware", "type": "group", "morphemes": ["viht", "vare"], "source": "Bede; ASC", "weight": 1}
+{"name": "Hwiccas", "type": "group", "morphemes": ["hviccas"], "source": "Bede; Charters", "weight": 1}
+{"name": "Wreocensǣte", "type": "group", "morphemes": ["vrēocen", "sēte"], "source": "Charters; Tribal Hidage", "weight": 1}
+{"name": "Pēcsǣte", "type": "group", "morphemes": ["pēac", "sēte"], "source": "Tribal Hidage", "weight": 1}
+{"name": "Wilsǣte", "type": "group", "morphemes": ["vilig", "sēte"], "source": "ASC", "weight": 1}
+{"name": "Sumorsǣte", "type": "group", "morphemes": ["sumor", "sēte"], "source": "ASC", "weight": 1}
+{"name": "Gyrwe", "type": "group", "morphemes": ["gurve"], "source": "Bede; Tribal Hidage", "weight": 1}
+{"name": "Hǣstingas", "type": "group", "morphemes": ["hēsta"], "source": "ASC", "weight": 1}
+{"name": "Norþmenn", "type": "group", "morphemes": ["north", "mann"], "source": "ASC", "weight": 1}
+{"name": "Winedas", "type": "group", "morphemes": ["vinedas"], "source": "Widsith; OE Orosius", "weight": 1}
+{"name": "Cwēnas", "type": "group", "morphemes": ["cvēnas"], "source": "OE Orosius", "weight": 1}
+{"name": "Ēste", "type": "group", "morphemes": ["ēste"], "source": "OE Orosius", "weight": 1}
+{"name": "Wōden", "type": "deity", "morphemes": ["vōden"], "source": "ASC; Maxims I; Nine Herbs Charm", "weight": 1}
+{"name": "Þunor", "type": "deity", "morphemes": ["thunor"], "source": "Glosses; Ælfric", "weight": 1}
+{"name": "Tīw", "type": "deity", "morphemes": ["tīv"], "source": "Glosses", "weight": 1}
+{"name": "Ēostre", "type": "deity", "morphemes": ["ēostre"], "source": "Bede", "weight": 1}
+{"name": "Hrēþe", "type": "deity", "morphemes": ["hrēthe"], "source": "Bede", "weight": 1}
+{"name": "Seaxnēat", "type": "deity", "morphemes": ["seaks", "nēat"], "source": "East Saxon genealogy", "weight": 1}
+{"name": "Gēat", "type": "deity", "morphemes": ["gēat"], "source": "ASC", "weight": 1}
+{"name": "Erce", "type": "deity", "morphemes": ["erce"], "source": "Æcerbot charm", "weight": 1}
+{"name": "Grendel", "type": "deity", "morphemes": ["grendel"], "source": "Beowulf", "weight": 1}
+{"name": "Crist", "type": "deity", "morphemes": ["crist"], "source": "OE poems and homilies", "weight": 1}
+{"name": "Hǣlend", "type": "deity", "morphemes": ["hēlend"], "source": "OE gospels and homilies", "weight": 1}
+{"name": "Sātān", "type": "deity", "morphemes": ["sātān"], "source": "Christ and Satan; Genesis B", "weight": 1}
+{"name": "Lūcifer", "type": "deity", "morphemes": ["lūcipher"], "source": "Ælfric", "weight": 1}
+{"name": "Lēohtberend", "type": "deity", "morphemes": ["lēoht", "berend"], "source": "Ælfric", "weight": 1}
+{"name": "Metod", "type": "title", "morphemes": ["metod"], "source": "Beowulf; Cædmon's Hymn", "weight": 1}
+{"name": "Wealdend", "type": "title", "morphemes": ["vealdend"], "source": "OE poems", "weight": 1}
+{"name": "Nergend", "type": "title", "morphemes": ["nergend"], "source": "OE poems", "weight": 1}
+{"name": "Scieppend", "type": "title", "morphemes": ["śieppend"], "source": "OE poems", "weight": 1}
+{"name": "Æscesdūn", "type": "hill", "morphemes": ["eś", "dūn"], "source": "ASC", "weight": 1}
+{"name": "Ellendūn", "type": "hill", "morphemes": ["ellen", "dūn"], "source": "ASC", "weight": 1}
+{"name": "Bēandūn", "type": "hill", "morphemes": ["bēan", "dūn"], "source": "ASC", "weight": 1}
+{"name": "Wōdnesbeorg", "type": "hill", "morphemes": ["vōden", "beorg"], "source": "ASC", "weight": 1}
+{"name": "Hrēosnabeorh", "type": "hill", "morphemes": ["hrēosna", "beorg"], "source": "Beowulf", "weight": 1}
+{"name": "Assandūn", "type": "hill", "morphemes": ["assa", "dūn"], "source": "ASC", "weight": 1}
+{"name": "Brēodūn", "type": "hill", "morphemes": ["brēo", "dūn"], "source": "Charters", "weight": 1}
+{"name": "Muntgiop", "type": "hill", "morphemes": ["munt", "giop"], "source": "Metres of Boethius; Wulfstan", "weight": 1}
+{"name": "Wibbandūn", "type": "hill", "morphemes": ["vibba", "dūn"], "source": "ASC", "weight": 1}
+{"name": "Ēarendel", "type": "celestial", "morphemes": ["ēarendel"], "source": "Christ I", "weight": 1}
+{"name": "Eburþring", "type": "celestial", "morphemes": ["eophor", "thring"], "source": "Glosses (Corpus Glossary)", "weight": 1}
+{"name": "Swānsteorra", "type": "celestial", "morphemes": ["svān", "steorra"], "source": "Glosses", "weight": 1}
+{"name": "Ǣfensteorra", "type": "celestial", "morphemes": ["ēphen", "steorra"], "source": "Ælfric (De temporibus anni); Glosses", "weight": 1}
+{"name": "Morgensteorra", "type": "celestial", "morphemes": ["morgen", "steorra"], "source": "OE Boethius; Metres of Boethius", "weight": 1}
+{"name": "Dægsteorra", "type": "celestial", "morphemes": ["deg", "steorra"], "source": "Ælfric; Psalter glosses", "weight": 1}
+{"name": "Sunne", "type": "celestial", "morphemes": ["sunne"], "source": "OE poems and prose", "weight": 1}
+{"name": "Mōna", "type": "celestial", "morphemes": ["mōna"], "source": "OE poems and prose", "weight": 1}
+{"name": "Īringes weg", "type": "celestial", "morphemes": ["īring", "veg"], "source": "Glosses", "weight": 1}
+{"name": "Temes", "type": "river", "morphemes": ["temes"], "source": "ASC", "weight": 1}
+{"name": "Sǣfern", "type": "river", "morphemes": ["sēphern"], "source": "ASC", "weight": 1}
+{"name": "Humbre", "type": "river", "morphemes": ["humbre"], "source": "Bede; ASC", "weight": 1}
+{"name": "Trēonte", "type": "river", "morphemes": ["trēonte"], "source": "ASC", "weight": 1}
+{"name": "Tīne", "type": "river", "morphemes": ["tīne"], "source": "ASC; Bede", "weight": 1}
+{"name": "Wīr", "type": "river", "morphemes": ["vīr"], "source": "OE Bede", "weight": 1}
+{"name": "Lyge", "type": "river", "morphemes": ["luge"], "source": "ASC", "weight": 1}
+{"name": "Medwǣg", "type": "river", "morphemes": ["medvēg"], "source": "ASC", "weight": 1}
+{"name": "Ūse", "type": "river", "morphemes": ["ūse"], "source": "ASC", "weight": 1}
+{"name": "Pedrede", "type": "river", "morphemes": ["pedrede"], "source": "ASC", "weight": 1}
+{"name": "Stūr", "type": "river", "morphemes": ["stūr"], "source": "ASC", "weight": 1}
+{"name": "Idle", "type": "river", "morphemes": ["īdel"], "source": "Bede; ASC", "weight": 1}
+{"name": "Wīnwǣd", "type": "river", "morphemes": ["vīnvēd"], "source": "Bede", "weight": 1}
+{"name": "Exe", "type": "river", "morphemes": ["ekse"], "source": "ASC", "weight": 1}
+{"name": "Colne", "type": "river", "morphemes": ["colne"], "source": "ASC", "weight": 1}
+{"name": "Pante", "type": "river", "morphemes": ["pante"], "source": "Maldon", "weight": 1}
+{"name": "Fīfeldor", "type": "river", "morphemes": ["phīphel", "dor"], "source": "Widsith", "weight": 1}
+{"name": "Wīsle", "type": "river", "morphemes": ["vīsle"], "source": "OE Orosius", "weight": 1}
+{"name": "Cantwaraburg", "type": "place", "morphemes": ["cent", "vare", "burg"], "source": "ASC", "weight": 1}
+{"name": "Hrofesceaster", "type": "place", "morphemes": ["hroph", "ceaster"], "source": "Bede; ASC", "weight": 1}
+{"name": "Lundenburg", "type": "place", "morphemes": ["lunden", "burg"], "source": "ASC", "weight": 1}
+{"name": "Lundenwīc", "type": "place", "morphemes": ["lunden", "vīc"], "source": "ASC", "weight": 1}
+{"name": "Wintanceaster", "type": "place", "morphemes": ["vinta", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Bebbanburg", "type": "place", "morphemes": ["bebbe", "burg"], "source": "ASC", "weight": 1}
+{"name": "Lindisfarnēa", "type": "place", "morphemes": ["lindispharnēa"], "source": "ASC", "weight": 1}
+{"name": "Hagustaldesēa", "type": "place", "morphemes": ["hagosteald", "ēa"], "source": "ASC; OE Bede", "weight": 1}
+{"name": "Wiremūþa", "type": "place", "morphemes": ["vīr", "mūth"], "source": "OE Bede", "weight": 1}
+{"name": "Derawudu", "type": "place", "morphemes": ["dere", "vudu"], "source": "OE Bede", "weight": 1}
+{"name": "Legaceaster", "type": "place", "morphemes": ["lega", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Bancornaburg", "type": "place", "morphemes": ["bancor", "burg"], "source": "OE Bede", "weight": 1}
+{"name": "Cirenceaster", "type": "place", "morphemes": ["ciren", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Baþanceaster", "type": "place", "morphemes": ["beth", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Exanceaster", "type": "place", "morphemes": ["ekse", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Grantaceaster", "type": "place", "morphemes": ["granta", "ceaster"], "source": "OE Bede", "weight": 1}
+{"name": "Colneceaster", "type": "place", "morphemes": ["colne", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Ligoraceaster", "type": "place", "morphemes": ["ligore", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Andredesceaster", "type": "place", "morphemes": ["andred", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Cīsseceaster", "type": "place", "morphemes": ["cissa", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Mameceaster", "type": "place", "morphemes": ["mame", "ceaster"], "source": "ASC", "weight": 1}
+{"name": "Wæclingaceaster", "type": "place", "morphemes": ["vecla", "ceaster"], "source": "OE Bede", "weight": 1}
+{"name": "Searobyrg", "type": "place", "morphemes": ["searo", "burg"], "source": "ASC", "weight": 1}
+{"name": "Ægelesburg", "type": "place", "morphemes": ["egel", "burg"], "source": "ASC", "weight": 1}
+{"name": "Deorhām", "type": "place", "morphemes": ["dēor", "hām"], "source": "ASC", "weight": 1}
+{"name": "Bradanford", "type": "place", "morphemes": ["brād", "phord"], "source": "ASC", "weight": 1}
+{"name": "Cerdicesōra", "type": "place", "morphemes": ["cerdic", "ōra"], "source": "ASC", "weight": 1}
+{"name": "Cerdicesford", "type": "place", "morphemes": ["cerdic", "phord"], "source": "ASC", "weight": 1}
+{"name": "Cerdicesleag", "type": "place", "morphemes": ["cerdic", "lēah"], "source": "ASC", "weight": 1}
+{"name": "Cymenesōra", "type": "place", "morphemes": ["cumen", "ōra"], "source": "ASC", "weight": 1}
+{"name": "Portesmūþa", "type": "place", "morphemes": ["port", "mūth"], "source": "ASC", "weight": 1}
+{"name": "Ypwinesflēot", "type": "place", "morphemes": ["upvine", "phlēot"], "source": "ASC", "weight": 1}
+{"name": "Crecganford", "type": "place", "morphemes": ["creja", "phord"], "source": "ASC", "weight": 1}
+{"name": "Wippedesflēot", "type": "place", "morphemes": ["vipped", "phlēot"], "source": "ASC", "weight": 1}
+{"name": "Wiht", "type": "place", "morphemes": ["viht"], "source": "ASC; Bede", "weight": 1}
+{"name": "Medeshamstede", "type": "place", "morphemes": ["mēde", "hām", "stede"], "source": "ASC", "weight": 1}
+{"name": "Tamaweorþig", "type": "place", "morphemes": ["tame", "vorthig"], "source": "ASC", "weight": 1}
+{"name": "Hrēopedūn", "type": "place", "morphemes": ["hrēope", "dūn"], "source": "ASC", "weight": 1}
+{"name": "Snotingahām", "type": "place", "morphemes": ["snot", "hām"], "source": "ASC", "weight": 1}
+{"name": "Stānford", "type": "place", "morphemes": ["stān", "phord"], "source": "ASC", "weight": 1}
+{"name": "Brycgstōw", "type": "place", "morphemes": ["bruj", "stōv"], "source": "ASC", "weight": 1}
+{"name": "Oxnaford", "type": "place", "morphemes": ["oksa", "phord"], "source": "ASC", "weight": 1}
+{"name": "Heorotford", "type": "place", "morphemes": ["heorot", "phord"], "source": "Bede; ASC", "weight": 1}
+{"name": "Hwīterne", "type": "place", "morphemes": ["hvīt", "ern"], "source": "ASC; OE Bede", "weight": 1}
+{"name": "Cnobheresburg", "type": "place", "morphemes": ["cnobhere", "burg"], "source": "Bede", "weight": 1}
+{"name": "Wiltūn", "type": "place", "morphemes": ["vilig", "tūn"], "source": "ASC", "weight": 1}
+{"name": "Hamtūn", "type": "place", "morphemes": ["hamm", "tūn"], "source": "ASC", "weight": 1}
+{"name": "Englafeld", "type": "place", "morphemes": ["engle", "pheld"], "source": "ASC", "weight": 1}
+{"name": "Meretūn", "type": "place", "morphemes": ["mere", "tūn"], "source": "ASC", "weight": 1}
+{"name": "Cippanhamm", "type": "place", "morphemes": ["cippa", "hamm"], "source": "ASC", "weight": 1}
+{"name": "Æþelingaēg", "type": "place", "morphemes": ["etheling", "ēg"], "source": "ASC", "weight": 1}
+{"name": "Alor", "type": "place", "morphemes": ["alor"], "source": "ASC", "weight": 1}
+{"name": "Fullanhamm", "type": "place", "morphemes": ["phula", "hamm"], "source": "ASC", "weight": 1}
+{"name": "Bēamflēot", "type": "place", "morphemes": ["bēam", "phlēot"], "source": "ASC", "weight": 1}
+{"name": "Fearnhamm", "type": "place", "morphemes": ["phearn", "hamm"], "source": "ASC", "weight": 1}
+{"name": "Middeltūn", "type": "place", "morphemes": ["middel", "tūn"], "source": "ASC", "weight": 1}
+{"name": "Apuldre", "type": "place", "morphemes": ["apuldor"], "source": "ASC", "weight": 1}
+{"name": "Huntandūn", "type": "place", "morphemes": ["hunta", "dūn"], "source": "ASC", "weight": 1}
+{"name": "Bedanford", "type": "place", "morphemes": ["bēda", "phord"], "source": "ASC", "weight": 1}
+{"name": "Mǣldūn", "type": "place", "morphemes": ["mēl", "dūn"], "source": "ASC; Maldon", "weight": 1}
+{"name": "Bearrocscīr", "type": "place", "morphemes": ["bearroc", "śīr"], "source": "ASC", "weight": 1}
+{"name": "Wiltūnscīr", "type": "place", "morphemes": ["vilig", "tūn", "śīr"], "source": "ASC", "weight": 1}
+{"name": "Cent", "type": "place", "morphemes": ["cent"], "source": "Bede; ASC", "weight": 1}
+{"name": "Ēlig", "type": "place", "morphemes": ["ēlig"], "source": "Bede; ASC", "weight": 1}
+{"name": "Brūnanburh", "type": "place", "morphemes": ["brūna", "burg"], "source": "Brunanburh; ASC", "weight": 1}
+{"name": "Ēamōt", "type": "place", "morphemes": ["ēa", "gemōt"], "source": "ASC", "weight": 1}
+{"name": "Fearndūn", "type": "place", "morphemes": ["phearn", "dūn"], "source": "ASC", "weight": 1}
+{"name": "Andredeslēah", "type": "place", "morphemes": ["andred", "lēah"], "source": "ASC", "weight": 1}
+{"name": "Sealwudu", "type": "place", "morphemes": ["sealh", "vudu"], "source": "ASC", "weight": 1}
+{"name": "Hrefnesholt", "type": "place", "morphemes": ["hrephn", "holt"], "source": "Beowulf", "weight": 1}
+{"name": "Hrefnawudu", "type": "place", "morphemes": ["hrephn", "vudu"], "source": "Beowulf", "weight": 1}
+{"name": "Finnsburh", "type": "place", "morphemes": ["phinn", "burg"], "source": "Finnsburh", "weight": 1}
+{"name": "Frēsland", "type": "place", "morphemes": ["phrēsan", "land"], "source": "Beowulf", "weight": 1}
+{"name": "Swīorīce", "type": "place", "morphemes": ["svēon", "rīce"], "source": "Beowulf", "weight": 1}
+{"name": "Scedenig", "type": "place", "morphemes": ["śedenig"], "source": "Beowulf", "weight": 1}
+{"name": "Scedeland", "type": "place", "morphemes": ["śede", "land"], "source": "Beowulf", "weight": 1}
+{"name": "Wedermearc", "type": "place", "morphemes": ["veder", "mearc"], "source": "Beowulf", "weight": 1}
+{"name": "Wīstlawudu", "type": "place", "morphemes": ["vīsle", "vudu"], "source": "Widsith", "weight": 1}
+{"name": "Rōmeburg", "type": "place", "morphemes": ["rōm", "burg"], "source": "ASC", "weight": 1}
+{"name": "Crēcaland", "type": "place", "morphemes": ["crēcas", "land"], "source": "OE Orosius", "weight": 1}
+{"name": "Īrland", "type": "place", "morphemes": ["īras", "land"], "source": "ASC", "weight": 1}
+{"name": "Scotland", "type": "place", "morphemes": ["śottas", "land"], "source": "ASC", "weight": 1}
+{"name": "Breoton", "type": "place", "morphemes": ["bruten"], "source": "ASC", "weight": 1}
+{"name": "Englaland", "type": "place", "morphemes": ["engle", "land"], "source": "ASC", "weight": 1}
+{"name": "Francland", "type": "place", "morphemes": ["phrancan", "land"], "source": "ASC", "weight": 1}
+{"name": "Gotland", "type": "place", "morphemes": ["gotan", "land"], "source": "OE Orosius", "weight": 1}
+{"name": "Swēoland", "type": "place", "morphemes": ["svēon", "land"], "source": "OE Orosius", "weight": 1}
+{"name": "Denamearc", "type": "place", "morphemes": ["dene", "mearc"], "source": "OE Orosius", "weight": 1}
+{"name": "Cwēnaland", "type": "place", "morphemes": ["cvēnas", "land"], "source": "OE Orosius", "weight": 1}
+{"name": "Sciringesheal", "type": "place", "morphemes": ["śiring", "healh"], "source": "OE Orosius", "weight": 1}
+{"name": "Hǣþum", "type": "place", "morphemes": ["hēth"], "source": "OE Orosius", "weight": 1}
+{"name": "Trūsō", "type": "place", "morphemes": ["trūsō"], "source": "OE Orosius", "weight": 1}
+{"name": "Weonodland", "type": "place", "morphemes": ["vinedas", "land"], "source": "OE Orosius", "weight": 1}
+{"name": "Burgendaland", "type": "place", "morphemes": ["burgendan", "land"], "source": "OE Orosius", "weight": 1}
+{"name": "Langaland", "type": "place", "morphemes": ["lang", "land"], "source": "OE Orosius", "weight": 1}
+{"name": "Mǣgþa land", "type": "place", "morphemes": ["mēgth", "land"], "source": "OE Orosius", "weight": 1}
+{"name": "Buccingahamm", "type": "place", "morphemes": ["bucca", "hamm"], "source": "ASC", "weight": 1}
+{"name": "Norþwīc", "type": "place", "morphemes": ["north", "vīc"], "source": "ASC", "weight": 1}
+{"name": "Gipeswīc", "type": "place", "morphemes": ["gip", "vīc"], "source": "ASC", "weight": 1}
+{"name": "Sandwīc", "type": "place", "morphemes": ["sand", "vīc"], "source": "ASC", "weight": 1}
+{"name": "Tenet", "type": "place", "morphemes": ["tenet"], "source": "ASC", "weight": 1}
+{"name": "Scēapīg", "type": "place", "morphemes": ["śēap", "ēg"], "source": "ASC", "weight": 1}
+{"name": "Meresīg", "type": "place", "morphemes": ["mere", "ēg"], "source": "ASC", "weight": 1}
+{"name": "Folcanstān", "type": "place", "morphemes": ["pholca", "stān"], "source": "ASC", "weight": 1}
+{"name": "Seolesīg", "type": "place", "morphemes": ["seolh", "ēg"], "source": "OE Bede", "weight": 1}
+{"name": "Bōsanhamm", "type": "place", "morphemes": ["bōsa", "hamm"], "source": "Bede", "weight": 1}
+{"name": "Rendlæsham", "type": "place", "morphemes": ["rendel", "hām"], "source": "Bede", "weight": 1}
+{"name": "Beardanēg", "type": "place", "morphemes": ["bearda", "ēg"], "source": "Bede; ASC", "weight": 1}
+{"name": "Hefenfeld", "type": "place", "morphemes": ["heophon", "pheld"], "source": "Bede", "weight": 1}
+{"name": "Maserfeld", "type": "place", "morphemes": ["maser", "pheld"], "source": "Bede", "weight": 1}
+{"name": "Bearwe", "type": "place", "morphemes": ["bearu"], "source": "OE Bede", "weight": 1}
+{"name": "Strēonæshealh", "type": "place", "morphemes": ["strēon", "healh"], "source": "Bede", "weight": 1}
+{"name": "Clofeshōh", "type": "place", "morphemes": ["cloph", "hōh"], "source": "Bede; Charters", "weight": 1}
+{"name": "Cealchȳþ", "type": "place", "morphemes": ["cealc", "hūth"], "source": "ASC", "weight": 1}
+{"name": "Āclēa", "type": "place", "morphemes": ["āc", "lēah"], "source": "ASC", "weight": 1}
+{"name": "Ottanford", "type": "place", "morphemes": ["otta", "phord"], "source": "ASC", "weight": 1}
+{"name": "Þēodford", "type": "place", "morphemes": ["thēod", "phord"], "source": "ASC", "weight": 1}
+{"name": "Grantabrycg", "type": "place", "morphemes": ["granta", "bruj"], "source": "ASC", "weight": 1}
+{"name": "Cyningestūn", "type": "place", "morphemes": ["cuning", "tūn"], "source": "ASC", "weight": 1}
+{"name": "Stæfford", "type": "place", "morphemes": ["steth", "phord"], "source": "ASC", "weight": 1}
+{"name": "Ciricbyrig", "type": "place", "morphemes": ["cirice", "burg"], "source": "ASC", "weight": 1}
+{"name": "Rūmcofa", "type": "place", "morphemes": ["rūm", "copha"], "source": "ASC", "weight": 1}
+{"name": "Temesford", "type": "place", "morphemes": ["temes", "phord"], "source": "ASC", "weight": 1}
+{"name": "Badecanwiella", "type": "place", "morphemes": ["badeca", "viella"], "source": "ASC", "weight": 1}
+{"name": "Þelwæl", "type": "place", "morphemes": ["thel", "vel"], "source": "ASC", "weight": 1}
+{"name": "Brægentford", "type": "place", "morphemes": ["bregent", "phord"], "source": "ASC", "weight": 1}
+{"name": "Exanmūþa", "type": "place", "morphemes": ["ekse", "mūth"], "source": "ASC", "weight": 1}
+{"name": "Portland", "type": "place", "morphemes": ["port", "land"], "source": "ASC", "weight": 1}
+{"name": "Sūþhamtūn", "type": "place", "morphemes": ["sūth", "hamm", "tūn"], "source": "ASC", "weight": 1}
+{"name": "Hereford", "type": "place", "morphemes": ["here", "phord"], "source": "ASC", "weight": 1}
+{"name": "Hēorot", "type": "other", "morphemes": ["heorot"], "source": "Beowulf", "weight": 1}
+{"name": "Hrunting", "type": "other", "morphemes": ["hrunting"], "source": "Beowulf", "weight": 1}
+{"name": "Nægling", "type": "other", "morphemes": ["negl"], "source": "Beowulf", "weight": 1}
+{"name": "Mimming", "type": "other", "morphemes": ["mimming"], "source": "Waldere", "weight": 1}
+{"name": "Brōsinga mene", "type": "other", "morphemes": ["brōsing", "mene"], "source": "Beowulf", "weight": 1}
+{"name": "Wætlinga strǣt", "type": "other", "morphemes": ["vetla", "strēt"], "source": "ASC; Charters", "weight": 1}
+{"name": "Icenhilde strǣt", "type": "other", "morphemes": ["icenhild", "strēt"], "source": "Charters", "weight": 1}
+{"name": "Wōdnes dīc", "type": "other", "morphemes": ["vōden", "dīc"], "source": "Charters", "weight": 1}
+{"name": "Grīmes dīc", "type": "other", "morphemes": ["grīm", "dīc"], "source": "Charters", "weight": 1}
+{"name": "Ecgbryhtesstān", "type": "other", "morphemes": ["ej", "beorht", "stān"], "source": "ASC", "weight": 1}
+{"name": "Æþelingadene", "type": "other", "morphemes": ["etheling", "denu"], "source": "ASC", "weight": 1}
+{"name": "Ringmere", "type": "other", "morphemes": ["hring", "mere"], "source": "ASC", "weight": 1}
+{"name": "Middangeard", "type": "other", "morphemes": ["midd", "geard"], "source": "Cædmon's Hymn; Beowulf", "weight": 1}
+{"name": "Neorxnawang", "type": "other", "morphemes": ["neorksna", "vang"], "source": "Genesis A; Christ and Satan", "weight": 1}
+{"name": "Earnanæs", "type": "other", "morphemes": ["earn", "nes"], "source": "Beowulf", "weight": 1}
+{"name": "Hrōnesnæs", "type": "other", "morphemes": ["hrān", "nes"], "source": "Beowulf", "weight": 1}
+{"name": "Wendelsǣ", "type": "other", "morphemes": ["vendel", "sē"], "source": "OE Orosius", "weight": 1}
+{"name": "Cwēnsǣ", "type": "other", "morphemes": ["cvēnas", "sē"], "source": "OE Orosius", "weight": 1}
+{"name": "Ēstmere", "type": "other", "morphemes": ["ēste", "mere"], "source": "OE Orosius", "weight": 1}
+{"name": "Mōdraniht", "type": "other", "morphemes": ["mōdor", "niht"], "source": "Bede", "weight": 1}
+{"name": "Gēol", "type": "other", "morphemes": ["gēol"], "source": "Bede; Menologium", "weight": 1}
+{"name": "Ēastron", "type": "other", "morphemes": ["ēaster"], "source": "ASC", "weight": 1}
+{"name": "Hlāfmæsse", "type": "other", "morphemes": ["hlāph", "messe"], "source": "ASC", "weight": 1}
+{"name": "Candelmæsse", "type": "other", "morphemes": ["candel", "messe"], "source": "ASC", "weight": 1}
+{"name": "Hrēþmōnaþ", "type": "other", "morphemes": ["hrēthe", "mōnath"], "source": "Bede; OE Martyrology; Menologium", "weight": 1}
+{"name": "Ēastermōnaþ", "type": "other", "morphemes": ["ēaster", "mōnath"], "source": "Bede; OE Martyrology; Menologium", "weight": 1}
+{"name": "Þrimilce", "type": "other", "morphemes": ["thrī", "meolc"], "source": "Bede; OE Martyrology; Menologium", "weight": 1}
+{"name": "Līþa", "type": "other", "morphemes": ["lītha"], "source": "Bede; OE Martyrology; Menologium", "weight": 1}
+{"name": "Wēodmōnaþ", "type": "other", "morphemes": ["vēod", "mōnath"], "source": "Bede; OE Martyrology; Menologium", "weight": 1}
+{"name": "Hāligmōnaþ", "type": "other", "morphemes": ["hālig", "mōnath"], "source": "Bede; OE Martyrology; Menologium", "weight": 1}
+{"name": "Winterfylleþ", "type": "other", "morphemes": ["vinter", "phulleth"], "source": "Bede; OE Martyrology; Menologium", "weight": 1}
+{"name": "Blōtmōnaþ", "type": "other", "morphemes": ["blōt", "mōnath"], "source": "Bede; OE Martyrology; Menologium", "weight": 1}
+{"name": "Sunnandæg", "type": "other", "morphemes": ["sunne", "deg"], "source": "OE prose", "weight": 1}
+{"name": "Mōnandæg", "type": "other", "morphemes": ["mōna", "deg"], "source": "OE prose", "weight": 1}
+{"name": "Tīwesdæg", "type": "other", "morphemes": ["tīv", "deg"], "source": "OE prose", "weight": 1}
+{"name": "Þunresdæg", "type": "other", "morphemes": ["thunor", "deg"], "source": "OE prose", "weight": 1}
+{"name": "Frīgedæg", "type": "other", "morphemes": ["phrīg", "deg"], "source": "OE prose", "weight": 1}
+{"name": "Sæterndæg", "type": "other", "morphemes": ["setern", "deg"], "source": "OE prose", "weight": 1}

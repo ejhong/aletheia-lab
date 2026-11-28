@@ -1,0 +1,693 @@
+{
+ "A_names": [
+  {
+   "name": "Cuāuhpopōca",
+   "type": "person",
+   "morphemes": [
+    "cuāuhtli",
+    "popōca"
+   ],
+   "gloss": "eagle + smoke",
+   "source": "Cortés, Cartas de relación"
+  },
+  {
+   "name": "Tlācatecpanēcah",
+   "type": "lineage",
+   "morphemes": [
+    "tlācatl",
+    "tecpan",
+    "catl"
+   ],
+   "gloss": "person + palace + dweller of",
+   "source": "Durán, Historia de las Indias"
+  },
+  {
+   "name": "Quetzalpopōca",
+   "type": "person",
+   "morphemes": [
+    "quetzalli",
+    "popōca"
+   ],
+   "gloss": "quetzal plume + smoke",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Xīpe Totēc",
+   "type": "deity",
+   "morphemes": [
+    "xīpēhua",
+    "tō",
+    "tēuctli"
+   ],
+   "gloss": "flay + our + lord",
+   "source": "Florentine Codex"
+  },
+  {
+   "name": "Xōchimīlcah",
+   "type": "group",
+   "morphemes": [
+    "xōchitl",
+    "mīlli",
+    "catl"
+   ],
+   "gloss": "flower + field + dweller of",
+   "source": "Codex Azcatitlan"
+  },
+  {
+   "name": "Ollin",
+   "type": "person",
+   "morphemes": [
+    "ollin"
+   ],
+   "gloss": "movement",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Mācuex",
+   "type": "person",
+   "morphemes": [
+    "mācuextli"
+   ],
+   "gloss": "bracelet",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Xōco",
+   "type": "person",
+   "morphemes": [
+    "xōcoyōtl"
+   ],
+   "gloss": "youngest child",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Mēxihco",
+   "type": "place",
+   "morphemes": [
+    "mēxihco"
+   ],
+   "gloss": "name",
+   "source": "Codex Osuna"
+  },
+  {
+   "name": "Āztacōātl",
+   "type": "person",
+   "morphemes": [
+    "āztatl",
+    "cōātl"
+   ],
+   "gloss": "heron + snake",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Tlācatecolōtl",
+   "type": "person",
+   "morphemes": [
+    "tlācatl",
+    "tecolōtl"
+   ],
+   "gloss": "person + owl",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Xiuhnel",
+   "type": "person",
+   "morphemes": [
+    "xiuhnel"
+   ],
+   "gloss": "name",
+   "source": "Leyenda de los Soles"
+  },
+  {
+   "name": "Oztōmēcatl",
+   "type": "person",
+   "morphemes": [
+    "oztōmēcatl"
+   ],
+   "gloss": "vanguard merchant",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Ātotōnilco",
+   "type": "place",
+   "morphemes": [
+    "ātl",
+    "totōnqui",
+    "co"
+   ],
+   "gloss": "water + hot + in",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Tentlil",
+   "type": "person",
+   "morphemes": [
+    "tentlil"
+   ],
+   "gloss": "name",
+   "source": "Florentine Codex"
+  },
+  {
+   "name": "Nezahual",
+   "type": "person",
+   "morphemes": [
+    "nezahualli"
+   ],
+   "gloss": "fast",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Āzcatl",
+   "type": "person",
+   "morphemes": [
+    "āzcatl"
+   ],
+   "gloss": "ant",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Moquihuix",
+   "type": "person",
+   "morphemes": [
+    "moquihuix"
+   ],
+   "gloss": "name",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Tenancah",
+   "type": "group",
+   "morphemes": [
+    "tenāmitl",
+    "catl"
+   ],
+   "gloss": "wall + dweller of",
+   "source": "Chimalpahin, Relaciones"
+  },
+  {
+   "name": "Cuāuhtinchān",
+   "type": "place",
+   "morphemes": [
+    "cuāuhtli",
+    "chāntli"
+   ],
+   "gloss": "eagle + home",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Cipac",
+   "type": "person",
+   "morphemes": [
+    "cipactli"
+   ],
+   "gloss": "caiman",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Cuāuhnōchtli",
+   "type": "person",
+   "morphemes": [
+    "cuāuhtli",
+    "nōchtli"
+   ],
+   "gloss": "eagle + prickly pear fruit",
+   "source": "Florentine Codex"
+  },
+  {
+   "name": "Nezahualpilli",
+   "type": "person",
+   "morphemes": [
+    "nezahualli",
+    "pilli"
+   ],
+   "gloss": "fast + prince",
+   "source": "Florentine Codex"
+  },
+  {
+   "name": "Cuetlaxtlan",
+   "type": "place",
+   "morphemes": [
+    "cuetlaxtli",
+    "tlan"
+   ],
+   "gloss": "tanned hide + place of",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Chinantlan",
+   "type": "place",
+   "morphemes": [
+    "chināmitl",
+    "tlan"
+   ],
+   "gloss": "enclosure + place of",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Totomihuahqueh",
+   "type": "group",
+   "morphemes": [
+    "totomihuahqueh"
+   ],
+   "gloss": "name",
+   "source": "Historia Tolteca-Chichimeca"
+  },
+  {
+   "name": "Acuecuexatl",
+   "type": "other",
+   "morphemes": [
+    "acuecuexatl"
+   ],
+   "gloss": "name",
+   "source": "Durán, Historia de las Indias"
+  },
+  {
+   "name": "Colhuahqueh",
+   "type": "group",
+   "morphemes": [
+    "colhuahqueh"
+   ],
+   "gloss": "name",
+   "source": "Codex Aubin"
+  },
+  {
+   "name": "Xiuhcōzcatl",
+   "type": "person",
+   "morphemes": [
+    "xihuitl",
+    "cōzcatl"
+   ],
+   "gloss": "turquoise + necklace",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Tēcuāntepēc",
+   "type": "place",
+   "morphemes": [
+    "tēcuāni",
+    "tepētl",
+    "co"
+   ],
+   "gloss": "wild beast + mountain + in",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Malintzin",
+   "type": "person",
+   "morphemes": [
+    "malin",
+    "tzin"
+   ],
+   "gloss": "Marina + revered, little",
+   "source": "Florentine Codex"
+  },
+  {
+   "name": "Mixīuhcān",
+   "type": "place",
+   "morphemes": [
+    "mixīhui",
+    "cān"
+   ],
+   "gloss": "give birth + place of",
+   "source": "Codex Azcatitlan"
+  },
+  {
+   "name": "Teocinyocatl",
+   "type": "person",
+   "morphemes": [
+    "teocinyocatl"
+   ],
+   "gloss": "name",
+   "source": "Florentine Codex"
+  },
+  {
+   "name": "Cuezcomatitlan",
+   "type": "place",
+   "morphemes": [
+    "cuezcomatl",
+    "tlan"
+   ],
+   "gloss": "granary + place of",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Cuāuhcoyōtl",
+   "type": "person",
+   "morphemes": [
+    "cuāuhtli",
+    "coyōtl"
+   ],
+   "gloss": "eagle + coyote",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Xīcochīmalco",
+   "type": "place",
+   "morphemes": [
+    "xīcohtli",
+    "chīmalli",
+    "co"
+   ],
+   "gloss": "bumblebee + shield + in",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Tzacualcatl",
+   "type": "person",
+   "morphemes": [
+    "tzacualcatl"
+   ],
+   "gloss": "name",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Cuauhtepētl",
+   "type": "hill",
+   "morphemes": [
+    "cuahuitl",
+    "tepētl"
+   ],
+   "gloss": "tree + mountain",
+   "source": "Florentine Codex"
+  },
+  {
+   "name": "Mācuīlcōātl",
+   "type": "person",
+   "morphemes": [
+    "mācuīlli",
+    "cōātl"
+   ],
+   "gloss": "five + snake",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Tlachinol",
+   "type": "person",
+   "morphemes": [
+    "tlachinolli"
+   ],
+   "gloss": "burnt field",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Xiuhtōtōtl",
+   "type": "person",
+   "morphemes": [
+    "xihuitl",
+    "tōtōtl"
+   ],
+   "gloss": "turquoise + bird",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Tōltitlan",
+   "type": "place",
+   "morphemes": [
+    "tōllin",
+    "tlan"
+   ],
+   "gloss": "rush + place of",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Tēcuichpōch",
+   "type": "person",
+   "morphemes": [
+    "tēuctli",
+    "ichpōchtli"
+   ],
+   "gloss": "lord + maiden",
+   "source": "Crónica Mexicayotl"
+  },
+  {
+   "name": "Huēxōtzinco",
+   "type": "place",
+   "morphemes": [
+    "huēxōtl",
+    "tzin",
+    "co"
+   ],
+   "gloss": "willow + revered, little + in",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Ochpāniztli",
+   "type": "other",
+   "morphemes": [
+    "ochpāna"
+   ],
+   "gloss": "sweep",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Āztatl",
+   "type": "person",
+   "morphemes": [
+    "āztatl"
+   ],
+   "gloss": "heron",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Tiyacapan",
+   "type": "person",
+   "morphemes": [
+    "tiyacapan"
+   ],
+   "gloss": "firstborn",
+   "source": "Matrícula de Huexotzinco"
+  },
+  {
+   "name": "Tzapotlan",
+   "type": "place",
+   "morphemes": [
+    "tzapotl",
+    "tlan"
+   ],
+   "gloss": "sapote + place of",
+   "source": "Codex Mendoza"
+  },
+  {
+   "name": "Temazcaltitlan",
+   "type": "place",
+   "morphemes": [
+    "temazcalli",
+    "tlan"
+   ],
+   "gloss": "sweat bath + place of",
+   "source": "Codex Azcatitlan"
+  },
+  {
+   "name": "Ōlmēcatl",
+   "type": "person",
+   "morphemes": [
+    "ōlli",
+    "catl"
+   ],
+   "gloss": "rubber + dweller of",
+   "source": "Motolinía, Memoriales"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "load",
+   "word": "tlamamalli"
+  },
+  {
+   "english": "crossroads",
+   "word": "ohmaxac"
+  },
+  {
+   "english": "field",
+   "word": "mīlli"
+  },
+  {
+   "english": "paw",
+   "word": "māitl"
+  },
+  {
+   "english": "chest",
+   "word": "petlacalli"
+  },
+  {
+   "english": "teeth",
+   "word": "tlantli"
+  },
+  {
+   "english": "gate",
+   "word": "quiyahuatl"
+  },
+  {
+   "english": "claw",
+   "word": "iztetl"
+  },
+  {
+   "english": "catch",
+   "word": "āna"
+  },
+  {
+   "english": "basket",
+   "word": "tanatli"
+  },
+  {
+   "english": "box",
+   "word": "petlacalli"
+  },
+  {
+   "english": "mother",
+   "word": "nāntli"
+  },
+  {
+   "english": "hunter",
+   "word": "tlamīnqui"
+  },
+  {
+   "english": "mark",
+   "word": "machiyōtl"
+  },
+  {
+   "english": "flag",
+   "word": "pāmitl"
+  },
+  {
+   "english": "twig",
+   "word": "tlacotl"
+  },
+  {
+   "english": "paw",
+   "word": "icxitl"
+  },
+  {
+   "english": "eyes",
+   "word": "īxtelolohtli"
+  },
+  {
+   "english": "eye",
+   "word": "īxtli"
+  },
+  {
+   "english": "arrow",
+   "word": "mītl"
+  },
+  {
+   "english": "box",
+   "word": "tōptli"
+  },
+  {
+   "english": "net",
+   "word": "mātlatl"
+  },
+  {
+   "english": "fishing",
+   "word": "michmā"
+  },
+  {
+   "english": "building",
+   "word": "calli"
+  },
+  {
+   "english": "seed",
+   "word": "achtli"
+  },
+  {
+   "english": "seed",
+   "word": "xinachtli"
+  },
+  {
+   "english": "lance",
+   "word": "tepoztopīlli"
+  },
+  {
+   "english": "roots",
+   "word": "nelhuatl"
+  },
+  {
+   "english": "standard",
+   "word": "pāmitl"
+  },
+  {
+   "english": "worker",
+   "word": "tequitqui"
+  },
+  {
+   "english": "lightning",
+   "word": "tlapetlānilli"
+  },
+  {
+   "english": "kneel",
+   "word": "tlancuaquetza"
+  },
+  {
+   "english": "seeds",
+   "word": "xinachtli"
+  },
+  {
+   "english": "pole",
+   "word": "tlaquetzalli"
+  },
+  {
+   "english": "fill",
+   "word": "tēmitia"
+  },
+  {
+   "english": "comb",
+   "word": "tzicuahuaztli"
+  },
+  {
+   "english": "horns",
+   "word": "cuācuahuitl"
+  },
+  {
+   "english": "ear",
+   "word": "nacaztli"
+  },
+  {
+   "english": "tally",
+   "word": "tlapōhualli"
+  },
+  {
+   "english": "branch",
+   "word": "cuammāitl"
+  },
+  {
+   "english": "spear",
+   "word": "tepoztopīlli"
+  },
+  {
+   "english": "flag",
+   "word": "pantli"
+  },
+  {
+   "english": "basket",
+   "word": "chiquihuitl"
+  },
+  {
+   "english": "pole",
+   "word": "cuahuitl"
+  },
+  {
+   "english": "pond",
+   "word": "ātezcatl"
+  },
+  {
+   "english": "nets",
+   "word": "mātlatl"
+  },
+  {
+   "english": "fields",
+   "word": "mīlli"
+  },
+  {
+   "english": "star",
+   "word": "citlālin"
+  },
+  {
+   "english": "two",
+   "word": "ōme"
+  },
+  {
+   "english": "bow",
+   "word": "tlahuitōlli"
+  }
+ ]
+}

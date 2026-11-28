@@ -55,3 +55,28 @@ Dated entries, newest last: what was tried, what happened, what next.
   on the preprint's Tamil and Sanskrit lists, splits 0 to 9, it gives the archive's numbers to two decimals and
   the same readings in 20 of 20 splits. So two programs written independently of the preprint's agree with its
   archive.
+- The ten name compilers finished over about 45 minutes. Sources they reported: Sumerian from the ePSD2 name
+  glossaries; Greek from the Perseus treebank of Homer and Hesiod; Nahuatl from the Visual Lexicon of Aztec
+  Hieroglyphs; Old Japanese mostly from the compiler's knowledge, spot-checked on Wikipedia and a Man'yōshū
+  text; Old English from the compiler's knowledge with a few Bosworth-Toller look-ups; Hebrew from the
+  compiler's knowledge alone; Hawaiian looked up in the Pukui-Elbert and Place Names dictionaries; Finnish from
+  the Kalevala, the Kanteletar and Forsman 1891; Tamil A checked against the Project Madurai Sangam texts;
+  Tamil B from the Wikipedia list of Sangam poets and the compiler's knowledge. None reported meeting the
+  preprint or the rebuttal.
+- How finely names were split differs a great deal between lists (25% to 80% of names left as one part). Left
+  as built, as the plan says.
+- Hebrew's parts came as one string joined by " + ": amendment 2. The first Hebrew labeler session was given
+  single letters and said so; discarded and rerun.
+- Finnish came out short twice once names with the same parts were merged (529, then 469).
+- Checks. Passed at once: Greek, Nahuatl, Old English, Sumerian, Hawaiian, Hebrew. Japanese failed on its words
+  (6 wrong), was retranslated and passed (2 wrong). Finnish, Tamil A and Tamil B each failed on their words
+  twice and are dropped. In every case the names passed. Details and the reason in `lists/README.md`. Two of
+  the three failures trace to prompts I wrote before the lock: a check on Tamil stricter than the preprint's
+  own, and a Finnish translator's prompt that allowed what the checker's prompt forbids. I told Eugene as each
+  failed and offered to amend the check before any contest result existed; with no instruction to do so, the
+  locked rule was applied.
+- The Hawaiian checker read a dictionary site through the Chrome browser because the site refuses scripted
+  access. I had not asked for that and told Eugene. Later checkers were told not to use a browser.
+- So the locked run has seven controls and no fresh Tamil list. By the plan's rules its overall reading will be
+  "Incomplete". The three dropped lists will be run separately, as labelled exploration.
+- No contest has been run on any new list up to this point.

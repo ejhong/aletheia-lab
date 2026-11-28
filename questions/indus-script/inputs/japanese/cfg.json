@@ -1,0 +1,20 @@
+{
+ "lang": "japanese",
+ "names": "names.jsonl",
+ "parts": "parts.jsonl",
+ "words": "words.json",
+ "number_words": {
+  "1": "hito",
+  "2": "phuta",
+  "3": "mi",
+  "4": "yo",
+  "5": "icu",
+  "6": "mu",
+  "7": "nana",
+  "12": "tōamariphuta"
+ },
+ "punmax": 0.5,
+ "weights": "once",
+ "drop_parts": [],
+ "loan_category": "none"
+}

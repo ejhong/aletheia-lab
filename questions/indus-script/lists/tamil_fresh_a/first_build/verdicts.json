@@ -1,0 +1,506 @@
+{
+ "A": [
+  {
+   "item": "Kaṇaikkāl Irumpoṟai",
+   "verdict": "ok",
+   "reason": "Cēramāṉ Kaṇaikkāl Irumpoṟai, poet of Puṟam 74; kaṇaikkāl 'shank, shin' is right."
+  },
+  {
+   "item": "Makaram",
+   "verdict": "ok",
+   "reason": "Paripāṭal 11 has 'villiṉ kaṭai makaram mēva' in its zodiac passage."
+  },
+  {
+   "item": "Tumpicēr Kīraṉār",
+   "verdict": "ok",
+   "reason": "Colophons of Kuṟuntokai (4 poems), Naṟṟiṇai 277 and Puṟam 249."
+  },
+  {
+   "item": "Kollaṉ Aḻiciyār",
+   "verdict": "ok",
+   "reason": "Kuṟuntokai colophon 'Kollaṉ Aḻici'."
+  },
+  {
+   "item": "Aṇṭar",
+   "verdict": "ok",
+   "reason": "'aṇṭar' (cowherds) in Kuṟuntokai 117, Akam, Patiṟṟuppattu; Puṟam colophon 'Aṇṭar Makaṉ Kuṟuvaḻuti'."
+  },
+  {
+   "item": "Kallāṭaṉār",
+   "verdict": "ok",
+   "reason": "Poet in Kuṟuntokai and Puṟam colophons, and in Akanāṉūṟu; the Akam colophons were not in the text I searched."
+  },
+  {
+   "item": "Peruñcittiraṉār",
+   "verdict": "ok",
+   "reason": "Puṟam colophons (10 poems)."
+  },
+  {
+   "item": "Mīṉeṟitūṇṭilār",
+   "verdict": "ok",
+   "reason": "Kuṟuntokai 54, named from the phrase 'mīṉ eṟi tūṇṭil' in the poem."
+  },
+  {
+   "item": "Kuṟuṅkōḻiyūr",
+   "verdict": "ok",
+   "reason": "Puṟam colophons: Kuṟuṅkōḻiyūr Kiḻār (3 poems)."
+  },
+  {
+   "item": "Cīttalaic Cāttaṉār",
+   "verdict": "ok",
+   "reason": "Colophons of Kuṟuntokai, Naṟṟiṇai and Puṟam 59; 'festering head' is the traditional (debatable) etymology."
+  },
+  {
+   "item": "Mārkkaṇṭēyaṉār",
+   "verdict": "ok",
+   "reason": "Puṟam 365 colophon."
+  },
+  {
+   "item": "Tōṉṟikkōṉ",
+   "verdict": "ok",
+   "reason": "Puṟam 399 colophon names the patron as Tāmāṉ Tōṉṟikkōṉ."
+  },
+  {
+   "item": "Iḷampōtiyār",
+   "verdict": "ok",
+   "reason": "Naṟṟiṇai 72 colophon."
+  },
+  {
+   "item": "Nāñcil",
+   "verdict": "ok",
+   "reason": "Puṟam 137-140 (Nāñcil Vaḷḷuvaṉ, 'uḻāa nāñcil poruna'); nāñcil = plough (TL)."
+  },
+  {
+   "item": "Celvakkaṭuṅkō Vāḻiyātaṉ",
+   "verdict": "ok",
+   "reason": "Patiṟṟuppattu decade 7 and Puṟam colophons."
+  },
+  {
+   "item": "Iḷaveyiṉi",
+   "verdict": "ok",
+   "reason": "Puṟam colophons (Kuṟamakaḷ Iḷaveyiṉi; Pēymakaḷ Iḷaveyiṉiyār)."
+  },
+  {
+   "item": "Veṇpūtaṉār",
+   "verdict": "ok",
+   "reason": "Kuṟuntokai colophon."
+  },
+  {
+   "item": "Kōkkōtai Mārpaṉ",
+   "verdict": "ok",
+   "reason": "Puṟam 48-49 (Cēramāṉ Kōkkōtai Mārpaṉ)."
+  },
+  {
+   "item": "Mati",
+   "verdict": "ok",
+   "reason": "mati 'moon' common in Paripāṭal, Akanāṉūṟu and Kalittokai."
+  },
+  {
+   "item": "Neṭiyōṉ",
+   "verdict": "ok",
+   "reason": "In Puṟam (e.g. 'munnīr viḻaviṉ neṭiyōṉ') and Akanāṉūṟu."
+  },
+  {
+   "item": "Ōtalāntaiyār",
+   "verdict": "ok",
+   "reason": "Colophon of Aiṅkuṟunūṟu 301-400 and of Kuṟuntokai."
+  },
+  {
+   "item": "Utiyañcēral",
+   "verdict": "ok",
+   "reason": "Akanāṉūṟu ('utiyañ cēral', 2 poems) and Patiṟṟuppattu ('utiyañ cēraṟku')."
+  },
+  {
+   "item": "Āy Aṇṭiraṉ",
+   "verdict": "ok",
+   "reason": "Puṟam colophons and text (about 20 times)."
+  },
+  {
+   "item": "Kumuḻūr",
+   "verdict": "ok",
+   "reason": "Read 'kumuḻ ūr' in the Sittannavasal Tamil-Brahmi bed inscription; the ūr 'town' could have been split off."
+  },
+  {
+   "item": "Vāṉaramakaḷir",
+   "verdict": "wrong",
+   "reason": "Attested (Tirumurukāṟṟuppaṭai, Malaipaṭukaṭām; Aiṅkuṟunūṟu has 'vāṉara makaḷā'), but it is not an opaque name: it contains makaḷir 'women' and means 'celestial maidens' (TL aramakaḷ), so the single member glossed 'no known meaning' is wrong."
+  },
+  {
+   "item": "Kiḷḷi",
+   "verdict": "ok",
+   "reason": "Cōḻa lineage name throughout Puṟam (Nalaṅkiḷḷi, Neṭuṅkiḷḷi, Kiḷḷivaḷavaṉ)."
+  },
+  {
+   "item": "Tuṭiyar",
+   "verdict": "ok",
+   "reason": "Puṟam has 'tuṭiyar' and 'tuṭiyaṉ' (drummer); Aiṅkuṟunūṟu has 'tuṭiyarō'."
+  },
+  {
+   "item": "Uruttiraṉār",
+   "verdict": "ok",
+   "reason": "Kuṟuntokai colophon."
+  },
+  {
+   "item": "Porunai",
+   "verdict": "ok",
+   "reason": "Puṟam ('taṇ porunai', 'āṉ porunai') and Akanāṉūṟu."
+  },
+  {
+   "item": "Peruñcēral Irumpoṟai",
+   "verdict": "ok",
+   "reason": "Patiṟṟuppattu decade 8 and Puṟam 50."
+  },
+  {
+   "item": "Vaṭukar",
+   "verdict": "ok",
+   "reason": "Akanāṉūṟu (7 poems), Kuṟuntokai 11, Naṟṟiṇai, Puṟam."
+  },
+  {
+   "item": "Nārmuṭiccēral",
+   "verdict": "ok",
+   "reason": "Patiṟṟuppattu decade 4 and Akanāṉūṟu."
+  },
+  {
+   "item": "Toḻunai",
+   "verdict": "ok",
+   "reason": "Akanāṉūṟu: 'vaṇpuṉal toḻunai' (the Yamunā)."
+  },
+  {
+   "item": "Pūtaṉār",
+   "verdict": "ok",
+   "reason": "Name attested (Naṟṟiṇai 29 colophon), but no bare 'Pūtaṉār' found among Kuṟuntokai colophons, so the source given looks wrong."
+  },
+  {
+   "item": "Nāṉmuka Oruvaṉ",
+   "verdict": "ok",
+   "reason": "Tirumurukāṟṟuppaṭai ('nāṉmuka oruvaṟ cuṭṭi') and Perumpāṇāṟṟuppaṭai ('nāṉmuka voruvaṟ payanta')."
+  },
+  {
+   "item": "Peruntēvaṉār",
+   "verdict": "ok",
+   "reason": "Pāratam Pāṭiya Peruntēvaṉār wrote the invocation of Kuṟuntokai, and others."
+  },
+  {
+   "item": "Kōḷiyūr",
+   "verdict": "ok",
+   "reason": "Naṟṟiṇai 383 colophon (Kōḷiyūr Kiḻār Makaṉār Ceḻiyaṉār); TL kōḷi = banyan, fig, tree fruiting without flowers."
+  },
+  {
+   "item": "Kūṟṟaṅkumaraṉār",
+   "verdict": "ok",
+   "reason": "Naṟṟiṇai 244 colophon."
+  },
+  {
+   "item": "Iḷampūtaṉār",
+   "verdict": "ok",
+   "reason": "Kuṟuntokai colophon."
+  },
+  {
+   "item": "Cāṇṭiliyaṉār",
+   "verdict": "ok",
+   "reason": "Kuṟuntokai colophon (Kaṭampaṉūrc Cāṇṭiliyaṉār)."
+  },
+  {
+   "item": "Peruṅkuṉṟūr",
+   "verdict": "ok",
+   "reason": "Colophons of Patiṟṟuppattu 9, Puṟam, Naṟṟiṇai and Kuṟuntokai (Peruṅkuṉṟūr Kiḻār)."
+  },
+  {
+   "item": "Tēvaṉ Cāttaṉ",
+   "verdict": "ok",
+   "reason": "Arachalur Tamil-Brahmi inscription ('maṇiy vaṇṇakkaṉ tēvaṉ cāttaṉ')."
+  },
+  {
+   "item": "Imayam",
+   "verdict": "ok",
+   "reason": "Puṟam and Patiṟṟuppattu."
+  },
+  {
+   "item": "Cāttaṉār",
+   "verdict": "ok",
+   "reason": "Cāttaṉ is a widely attested name (many Sangam colophons, Tamil-Brahmi); I did not check a bare 'Cāttaṉār' in the Akam colophons."
+  },
+  {
+   "item": "Kūkaikkōḻiyār",
+   "verdict": "ok",
+   "reason": "Puṟam 364 colophon (Project Madurai reads 'Kūkaik Kōriyār', standard editions read Kōḻiyār)."
+  },
+  {
+   "item": "Aṉalaṉ",
+   "verdict": "ok",
+   "reason": "Paripāṭal 5: 'allal il aṉalaṉ taṉ meyyiṉ pirittu'."
+  },
+  {
+   "item": "Āriyar",
+   "verdict": "ok",
+   "reason": "Kuṟuntokai 7 and Akanāṉūṟu (4 poems)."
+  },
+  {
+   "item": "Eḻiṉiyātaṉ",
+   "verdict": "ok",
+   "reason": "Puṟam 396 colophon (Vāṭṭāṟṟu Eḻiṉiyātaṉ)."
+  },
+  {
+   "item": "Vaṅkaṉār",
+   "verdict": "ok",
+   "reason": "Ālaṅkuṭi Vaṅkaṉār: Akam 106, Kuṟuntokai, Naṟṟiṇai, Puṟam."
+  },
+  {
+   "item": "Iruṅkōvēḷ",
+   "verdict": "ok",
+   "reason": "Puṟam 201-202 colophons; also in Paṭṭiṉappālai."
+  }
+ ],
+ "B": [
+  {
+   "item": "aṭukku",
+   "verdict": "ok",
+   "reason": "DED 80 'pile, row, tier'; the verb aṭukku- 'pile up in order' is in Sangam texts, and the noun is in Tolkāppiyam."
+  },
+  {
+   "item": "neñcu",
+   "verdict": "ok",
+   "reason": "TL 'breast, chest', cited from Tolkāppiyam Eḻuttu 83."
+  },
+  {
+   "item": "kavai",
+   "verdict": "ok",
+   "reason": "TL 'forked stick', cited from Akam 34; also 'kavai muḷ' in Puṟam 98."
+  },
+  {
+   "item": "virai",
+   "verdict": "wrong",
+   "reason": "Sangam virai only means fragrance, haste or mixing; the 'seed' sense (DED 5418) has only late citations in TL (Varatarājaṉ's Pākavatam)."
+  },
+  {
+   "item": "mulai",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "vari",
+   "verdict": "ok",
+   "reason": "'Line, stripe', common in Sangam texts."
+  },
+  {
+   "item": "ñaṇṭu",
+   "verdict": "ok",
+   "reason": "Crab (TL, from ñeṇṭu); the early forms are ñeṇṭu (Kuṟuntokai 117, Akam) and naṇṭu (Tolkāppiyam)."
+  },
+  {
+   "item": "kōṭu",
+   "verdict": "ok",
+   "reason": "Mountain peak in Sangam texts (e.g. 'kōṭu uyar piṟaṅkal malai', Kuṟuntokai)."
+  },
+  {
+   "item": "arumpu",
+   "verdict": "ok",
+   "reason": "'Bud', common in Sangam texts."
+  },
+  {
+   "item": "kiḷai",
+   "verdict": "ok",
+   "reason": "DED/TL 'branch, bough'; branch-sense uses in Sangam texts (kiḷaittuṇar, kiḷaimalar) as well as 'kin'."
+  },
+  {
+   "item": "muḷ",
+   "verdict": "ok",
+   "reason": "'Thorn, spike'; a close near-synonym of 'barb'."
+  },
+  {
+   "item": "nilai",
+   "verdict": "ok",
+   "reason": "'Storey, level' in Sangam texts (neṭunilai, piṟaṅkunilai māṭam)."
+  },
+  {
+   "item": "cetiḷ",
+   "verdict": "ok",
+   "reason": "DED 2768 'fish-scale, outer bark'; Tolkāppiyam (Marapiyal 90) uses it for a tree part, and the fish-scale sense is cited later."
+  },
+  {
+   "item": "vari",
+   "verdict": "ok",
+   "reason": "'Line, stripe, streak'; acceptable for 'strokes'."
+  },
+  {
+   "item": "kuṟaṭu",
+   "verdict": "wrong",
+   "reason": "The pincers sense (DED 1843) is first cited in Nālaṭiyār 208; all six Sangam uses mean a wooden block, hub or axle-box (DED 1842)."
+  },
+  {
+   "item": "ōṭu",
+   "verdict": "wrong",
+   "reason": "The Sangam word index (Thandapani Desikar) lists ōṭu only as the case suffix and the verb 'run'; TL's earliest citations for the noun are Nālaṭiyār and Tirumantiram."
+  },
+  {
+   "item": "kōṭṭam",
+   "verdict": "ok",
+   "reason": "'Bend, crookedness' (TL kōṭṭam¹); Kalittokai has 'marak kōṭṭam' (crook of a tree)."
+  },
+  {
+   "item": "maṇai",
+   "verdict": "ok",
+   "reason": "'Low wooden seat' (TL, DED 4675), in Tolkāppiyam Marapiyal ('mukkōl maṇaiyē')."
+  },
+  {
+   "item": "tī",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "puḷḷi",
+   "verdict": "ok",
+   "reason": "'Spot, dot' in Sangam texts and Tolkāppiyam."
+  },
+  {
+   "item": "vayal",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "kūlam",
+   "verdict": "ok",
+   "reason": "'Grain', in Maduraikkāñci, Patiṟṟuppattu, Naṟṟiṇai, Puṟam; TL suggests Skt. kula as its source, but that is not an established loan."
+  },
+  {
+   "item": "viḷakku",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "nuṉi",
+   "verdict": "ok",
+   "reason": "'Tip, point' (DED 3719); 'nuṉi nā' in Tolkāppiyam and 'nuṉi' in Paripāṭal."
+  },
+  {
+   "item": "viḻi",
+   "verdict": "ok",
+   "reason": "Noun 'eye' in Paripāṭal ('nāṉku viḻi paṭaittāḷ'), plus verb uses in Sangam texts."
+  },
+  {
+   "item": "kātu",
+   "verdict": "ok",
+   "reason": "'Ear' (DED 1448), in Akanāṉūṟu, Porunarāṟṟuppaṭai, Tirumurukāṟṟuppaṭai and Tolkāppiyam."
+  },
+  {
+   "item": "kaṇai",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "maṉai",
+   "verdict": "ok",
+   "reason": "'House, dwelling'; a near-synonym of 'building'."
+  },
+  {
+   "item": "aracu",
+   "verdict": "wrong",
+   "reason": "Sangam aracu only means 'kingship, king' (from Skt. rājan, per TL and the Sangam word index); the pipal sense is not attested early, where the form is arai (Tolkāppiyam, 'prob. pipal', DED 202)."
+  },
+  {
+   "item": "viṉaiñar",
+   "verdict": "ok",
+   "reason": "'Workers', in Akanāṉūṟu, Maduraikkāñci, Perumpāṇāṟṟuppaṭai and others."
+  },
+  {
+   "item": "cumai",
+   "verdict": "wrong",
+   "reason": "The noun cumai 'load' has only late citations in TL and is absent from the Sangam texts; the early word is the verb cuma- 'to carry' (cumantu, DED 2677)."
+  },
+  {
+   "item": "taḷir",
+   "verdict": "ok",
+   "reason": "'Tender shoot', common in Sangam texts."
+  },
+  {
+   "item": "pōr",
+   "verdict": "ok",
+   "reason": "'Stack' in Paṭṭiṉappālai ('potimūṭaip pōr ēṟi'); compare pōrvu, 'paddy stack', in Aiṅkuṟunūṟu."
+  },
+  {
+   "item": "mīcai",
+   "verdict": "wrong",
+   "reason": "Absent from the Sangam texts; TL's first citation for 'moustache' is Kamparāmāyaṇam (DED 4879 counts it as native, but it is late)."
+  },
+  {
+   "item": "poṟi",
+   "verdict": "ok",
+   "reason": "'Spot, speck' in Sangam texts (poṟivari, pulippoṟi)."
+  },
+  {
+   "item": "kaḻi",
+   "verdict": "ok",
+   "reason": "'Stick, rod': Puṟam 98 'tōl kaḻiyoṭu' (TL kaḻi⁴)."
+  },
+  {
+   "item": "tiṅkaḷ",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "kuṟi",
+   "verdict": "ok",
+   "reason": "'Mark, sign', common in Sangam texts."
+  },
+  {
+   "item": "mūṭi",
+   "verdict": "wrong",
+   "reason": "'Lid' (DED 5034) is absent from the Sangam texts and TL gives no early citation."
+  },
+  {
+   "item": "mīṉ",
+   "verdict": "ok",
+   "reason": "'Star' (and 'fish') in Sangam texts."
+  },
+  {
+   "item": "vaḷai",
+   "verdict": "ok",
+   "reason": "'Conch' (TL, cited from Paripāṭal 2), also a shell bangle; acceptable for 'shell'."
+  },
+  {
+   "item": "cuḷḷi",
+   "verdict": "wrong",
+   "reason": "The 'dry twig' sense (DED 2706) has only late citations in TL (Taṉippāṭal, Kamparāmāyaṇam); in Sangam texts cuḷḷi is a tree (Kuṟiñcippāṭṭu) and a river name."
+  },
+  {
+   "item": "piṟai",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "kavalai",
+   "verdict": "ok",
+   "reason": "'Fork in a path', common in Sangam texts."
+  },
+  {
+   "item": "tuḷi",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "kaṇ",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "kulai",
+   "verdict": "ok",
+   "reason": "'Cluster, bunch', in Sangam texts."
+  },
+  {
+   "item": "koṭi",
+   "verdict": "ok",
+   "reason": "'Flag, banner', common in Sangam texts."
+  },
+  {
+   "item": "vāyil",
+   "verdict": "ok",
+   "reason": "Common in Sangam texts."
+  },
+  {
+   "item": "iraṇṭu",
+   "verdict": "ok",
+   "reason": "In Puṟam, Kuṟuntokai, Paripāṭal and Tolkāppiyam."
+  }
+ ]
+}

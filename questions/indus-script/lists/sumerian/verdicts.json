@@ -1,0 +1,423 @@
+{
+ "A": [
+  {
+   "item": "Lugirizal",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ezikalama",
+   "verdict": "ok",
+   "reason": "ePSD2: temple name, Ur III administrative texts (20x)."
+  },
+  {
+   "item": "Lugalsisa",
+   "verdict": "ok"
+  },
+  {
+   "item": "Lugaliri",
+   "verdict": "ok"
+  },
+  {
+   "item": "Sutium",
+   "verdict": "wrong",
+   "reason": "Attested only in Old Babylonian texts (Rim-Sin inscriptions and OB copies of the Lugal-ane-mundu text, generally held to be a later composition); ePSD2 finds no genuine ED, Old Akkadian or Ur III attestation."
+  },
+  {
+   "item": "Šagninĝa",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kiaĝ",
+   "verdict": "ok",
+   "reason": "ePSD2: PN ki-ag2, Ur III (113x) and ED IIIb."
+  },
+  {
+   "item": "Ninamaĝu",
+   "verdict": "ok"
+  },
+  {
+   "item": "Aya",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ninbaradari",
+   "verdict": "ok"
+  },
+  {
+   "item": "Munussaga",
+   "verdict": "ok"
+  },
+  {
+   "item": "Adda",
+   "verdict": "ok"
+  },
+  {
+   "item": "Urtummal",
+   "verdict": "ok"
+  },
+  {
+   "item": "Gaeš",
+   "verdict": "ok"
+  },
+  {
+   "item": "Lugalmagure",
+   "verdict": "ok"
+  },
+  {
+   "item": "Nininimgina",
+   "verdict": "ok"
+  },
+  {
+   "item": "Lugalĝeškimzid",
+   "verdict": "ok"
+  },
+  {
+   "item": "Lugalazida",
+   "verdict": "ok"
+  },
+  {
+   "item": "Etemenniguru",
+   "verdict": "ok",
+   "reason": "Ziggurat of Ur in Ur III royal inscriptions (Ur-Namma)."
+  },
+  {
+   "item": "Irikug",
+   "verdict": "ok"
+  },
+  {
+   "item": "Nammaḫbaba",
+   "verdict": "ok"
+  },
+  {
+   "item": "Urnungal",
+   "verdict": "ok"
+  },
+  {
+   "item": "Uriškur",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ḫabura",
+   "verdict": "ok"
+  },
+  {
+   "item": "Agar",
+   "verdict": "ok",
+   "reason": "ePSD2 lists Agar (a-gar5) as an Ur III settlement name, 4x."
+  },
+  {
+   "item": "Eninnu",
+   "verdict": "ok"
+  },
+  {
+   "item": "Menua",
+   "verdict": "ok",
+   "reason": "Mountain named by Gudea (Lagash II, late 3rd millennium)."
+  },
+  {
+   "item": "Mesilim",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kulaba",
+   "verdict": "ok"
+  },
+  {
+   "item": "Šulgiiriĝu",
+   "verdict": "ok"
+  },
+  {
+   "item": "Amargirid",
+   "verdict": "ok",
+   "reason": "Attested ED IIIb in Uru-inimgina inscription Ukg 27 (Girsu), a royal not administrative text; left unanalysed though it contains amar 'calf'."
+  },
+  {
+   "item": "Lusaga",
+   "verdict": "ok",
+   "reason": "Mainly Ur III administrative (1276x); only one royal-corpus attestation."
+  },
+  {
+   "item": "Kisura",
+   "verdict": "ok"
+  },
+  {
+   "item": "Maštur",
+   "verdict": "ok"
+  },
+  {
+   "item": "Šetirša",
+   "verdict": "ok"
+  },
+  {
+   "item": "Urninurta",
+   "verdict": "ok"
+  },
+  {
+   "item": "Uraš",
+   "verdict": "ok"
+  },
+  {
+   "item": "Diĝirsukkal",
+   "verdict": "ok"
+  },
+  {
+   "item": "Šeštur",
+   "verdict": "ok"
+  },
+  {
+   "item": "Mesanepada",
+   "verdict": "ok"
+  },
+  {
+   "item": "Adab",
+   "verdict": "ok"
+  },
+  {
+   "item": "Lumagan",
+   "verdict": "ok"
+  },
+  {
+   "item": "Gubin",
+   "verdict": "ok"
+  },
+  {
+   "item": "Lumagure",
+   "verdict": "ok"
+  },
+  {
+   "item": "Urezida",
+   "verdict": "ok"
+  },
+  {
+   "item": "Buli",
+   "verdict": "ok"
+  },
+  {
+   "item": "Tirkugesi",
+   "verdict": "ok"
+  },
+  {
+   "item": "Lugalištaran",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ayadiĝir",
+   "verdict": "ok"
+  },
+  {
+   "item": "Inimmanizid",
+   "verdict": "ok"
+  }
+ ],
+ "B": [
+  {
+   "item": "eren",
+   "verdict": "ok",
+   "reason": "ERIN2 'troops, workers' (ePSD2 cites it as erin; ePSD2 'eren' is cedar)."
+  },
+  {
+   "item": "gaba",
+   "verdict": "ok"
+  },
+  {
+   "item": "ka",
+   "verdict": "ok",
+   "reason": "ka2 'gate' (ePSD2 citation kan), attested from ED IIIa."
+  },
+  {
+   "item": "dar",
+   "verdict": "ok"
+  },
+  {
+   "item": "pisaĝ",
+   "verdict": "ok",
+   "reason": "ePSD2 bisaŋ 'basket; frame; box'."
+  },
+  {
+   "item": "itud",
+   "verdict": "ok"
+  },
+  {
+   "item": "dul",
+   "verdict": "ok"
+  },
+  {
+   "item": "u",
+   "verdict": "ok"
+  },
+  {
+   "item": "umbin",
+   "verdict": "ok"
+  },
+  {
+   "item": "pan",
+   "verdict": "ok"
+  },
+  {
+   "item": "šunir",
+   "verdict": "ok"
+  },
+  {
+   "item": "šukur",
+   "verdict": "ok",
+   "reason": "Attested from Lagash II and Ur III (late 3rd millennium)."
+  },
+  {
+   "item": "dug",
+   "verdict": "ok"
+  },
+  {
+   "item": "šunir",
+   "verdict": "ok"
+  },
+  {
+   "item": "pisaĝ",
+   "verdict": "ok"
+  },
+  {
+   "item": "izi",
+   "verdict": "ok"
+  },
+  {
+   "item": "šem",
+   "verdict": "ok"
+  },
+  {
+   "item": "gana",
+   "verdict": "ok"
+  },
+  {
+   "item": "šu",
+   "verdict": "ok"
+  },
+  {
+   "item": "nimgir",
+   "verdict": "wrong",
+   "reason": "ePSD2 resolves nimgir to niĝir 'herald'; the noun nim-ĝir2 'lightning' is attested only from Old Babylonian (3rd-millennium texts have only nim and the phrase nim ĝir2 'to flash')."
+  },
+  {
+   "item": "suḫuš",
+   "verdict": "ok",
+   "reason": "ePSD2 'foundation; sole', Halloran 'roots; foundation'."
+  },
+  {
+   "item": "aša",
+   "verdict": "ok"
+  },
+  {
+   "item": "igi",
+   "verdict": "ok"
+  },
+  {
+   "item": "ti",
+   "verdict": "ok"
+  },
+  {
+   "item": "pa",
+   "verdict": "ok"
+  },
+  {
+   "item": "il",
+   "verdict": "ok"
+  },
+  {
+   "item": "šudul",
+   "verdict": "ok"
+  },
+  {
+   "item": "sa",
+   "verdict": "ok"
+  },
+  {
+   "item": "bad",
+   "verdict": "ok"
+  },
+  {
+   "item": "tab",
+   "verdict": "ok"
+  },
+  {
+   "item": "ḫursaĝ",
+   "verdict": "ok"
+  },
+  {
+   "item": "nita",
+   "verdict": "ok"
+  },
+  {
+   "item": "zalamĝar",
+   "verdict": "wrong",
+   "reason": "ePSD2 has zalamĝar only from Old Babylonian onward (lexical and literary texts); no 3rd-millennium attestation found."
+  },
+  {
+   "item": "usakar",
+   "verdict": "ok"
+  },
+  {
+   "item": "pa",
+   "verdict": "ok",
+   "reason": "ePSD2 'branch, frond', Halloran 'leaf, branch'."
+  },
+  {
+   "item": "ĝeštug",
+   "verdict": "ok"
+  },
+  {
+   "item": "ĝeš",
+   "verdict": "ok",
+   "reason": "Broader word: 'tree, wood, wooden implement'."
+  },
+  {
+   "item": "ubur",
+   "verdict": "ok"
+  },
+  {
+   "item": "pu",
+   "verdict": "ok"
+  },
+  {
+   "item": "še",
+   "verdict": "ok"
+  },
+  {
+   "item": "eš",
+   "verdict": "ok"
+  },
+  {
+   "item": "si",
+   "verdict": "ok"
+  },
+  {
+   "item": "guru",
+   "verdict": "ok"
+  },
+  {
+   "item": "min",
+   "verdict": "ok"
+  },
+  {
+   "item": "usakar",
+   "verdict": "ok"
+  },
+  {
+   "item": "su",
+   "verdict": "ok"
+  },
+  {
+   "item": "zu",
+   "verdict": "ok"
+  },
+  {
+   "item": "barag",
+   "verdict": "ok"
+  },
+  {
+   "item": "aša",
+   "verdict": "ok"
+  },
+  {
+   "item": "gam",
+   "verdict": "ok"
+  }
+ ]
+}

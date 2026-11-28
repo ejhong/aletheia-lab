@@ -1,0 +1,469 @@
+{"name": "Väinämöinen", "type": "person", "morphemes": ["vaina"], "source": "Kalevala", "weight": 1}
+{"name": "Ilmarinen", "type": "person", "morphemes": ["ilma"], "source": "Kalevala", "weight": 1}
+{"name": "Lemminkäinen", "type": "person", "morphemes": ["lemminkainen"], "source": "Kalevala", "weight": 1}
+{"name": "Kaukomieli", "type": "person", "morphemes": ["kauko", "mieli"], "source": "Kalevala", "weight": 1}
+{"name": "Kauko", "type": "person", "morphemes": ["kauko"], "source": "Kalevala", "weight": 1}
+{"name": "Ahti", "type": "person", "morphemes": ["ahti"], "source": "Kalevala", "weight": 1}
+{"name": "Saarelainen", "type": "person", "morphemes": ["saari"], "source": "Kalevala", "weight": 1}
+{"name": "Seppo", "type": "person", "morphemes": ["seppa"], "source": "Kalevala", "weight": 1}
+{"name": "Joukahainen", "type": "person", "morphemes": ["joukahainen"], "source": "Kalevala", "weight": 1}
+{"name": "Aino", "type": "person", "morphemes": ["aino"], "source": "Kalevala", "weight": 1}
+{"name": "Louhi", "type": "person", "morphemes": ["louhi"], "source": "Kalevala", "weight": 1}
+{"name": "Kullervo", "type": "person", "morphemes": ["kullervo"], "source": "Kalevala", "weight": 1}
+{"name": "Kalervo", "type": "person", "morphemes": ["kalervo"], "source": "Kalevala", "weight": 1}
+{"name": "Untamo", "type": "person", "morphemes": ["untamo"], "source": "Kalevala", "weight": 1}
+{"name": "Unto", "type": "person", "morphemes": ["unto"], "source": "Kalevala", "weight": 1}
+{"name": "Marjatta", "type": "person", "morphemes": ["marjatta"], "source": "Kalevala", "weight": 1}
+{"name": "Kyllikki", "type": "person", "morphemes": ["kulla"], "source": "Kalevala", "weight": 1}
+{"name": "Annikki", "type": "person", "morphemes": ["annikki"], "source": "Kalevala", "weight": 1}
+{"name": "Ainikki", "type": "person", "morphemes": ["ainikki"], "source": "Kalevala", "weight": 1}
+{"name": "Tiera", "type": "person", "morphemes": ["tiera"], "source": "Kalevala", "weight": 1}
+{"name": "Vipunen", "type": "person", "morphemes": ["vipunen"], "source": "Kalevala", "weight": 1}
+{"name": "Osmo", "type": "person", "morphemes": ["osmo"], "source": "Kalevala", "weight": 1}
+{"name": "Kaleva", "type": "person", "morphemes": ["kaleva"], "source": "Kalevala", "weight": 1}
+{"name": "Märkähattu", "type": "person", "morphemes": ["marka", "hattu"], "source": "Kalevala", "weight": 1}
+{"name": "Piltti", "type": "person", "morphemes": ["piltti"], "source": "Kalevala", "weight": 1}
+{"name": "Ruotus", "type": "person", "morphemes": ["ruotus"], "source": "Kalevala", "weight": 1}
+{"name": "Virokannas", "type": "person", "morphemes": ["virokannas"], "source": "Kalevala", "weight": 1}
+{"name": "Kauppi", "type": "person", "morphemes": ["kauppi"], "source": "Kalevala", "weight": 1}
+{"name": "Lyylikki", "type": "person", "morphemes": ["luulikki"], "source": "Kalevala", "weight": 1}
+{"name": "Kapo", "type": "person", "morphemes": ["kapo"], "source": "Kalevala", "weight": 1}
+{"name": "Pohjolainen", "type": "person", "morphemes": ["pohja"], "source": "Kalevala", "weight": 1}
+{"name": "Tuuri", "type": "person", "morphemes": ["tuuri"], "source": "Kalevala", "weight": 1}
+{"name": "Palvoinen", "type": "person", "morphemes": ["palvoinen"], "source": "Kalevala", "weight": 1}
+{"name": "Lokka", "type": "person", "morphemes": ["lokka"], "source": "Kalevala", "weight": 1}
+{"name": "Ilpotar", "type": "person", "morphemes": ["ilpotar"], "source": "Kalevala", "weight": 1}
+{"name": "Remunen", "type": "person", "morphemes": ["remunen"], "source": "Kalevala", "weight": 1}
+{"name": "Tuiretuinen", "type": "person", "morphemes": ["tuiretuinen"], "source": "Kanteletar", "weight": 1}
+{"name": "Keiretyinen", "type": "person", "morphemes": ["keiretuinen"], "source": "Kanteletar", "weight": 1}
+{"name": "Juuttahainen", "type": "person", "morphemes": ["juuttahainen"], "source": "Kanteletar", "weight": 1}
+{"name": "Kojo", "type": "person", "morphemes": ["kojo"], "source": "Kanteletar", "weight": 1}
+{"name": "Lalli", "type": "person", "morphemes": ["lalli"], "source": "Kanteletar", "weight": 1}
+{"name": "Kauro", "type": "person", "morphemes": ["kauro"], "source": "Kanteletar", "weight": 1}
+{"name": "Kommi", "type": "person", "morphemes": ["kommi"], "source": "Kanteletar", "weight": 1}
+{"name": "Kolkko", "type": "person", "morphemes": ["kolkko"], "source": "Kanteletar", "weight": 1}
+{"name": "Tolvanen", "type": "person", "morphemes": ["tolva"], "source": "Kanteletar", "weight": 1}
+{"name": "Joukonen", "type": "person", "morphemes": ["jouko"], "source": "Kanteletar", "weight": 1}
+{"name": "Nerkko", "type": "person", "morphemes": ["nerkko"], "source": "Kanteletar", "weight": 1}
+{"name": "Kaitaparta", "type": "person", "morphemes": ["kaita", "parta"], "source": "Kanteletar", "weight": 1}
+{"name": "Paalikkainen", "type": "person", "morphemes": ["paalikkainen"], "source": "Kanteletar", "weight": 1}
+{"name": "Suometar", "type": "person", "morphemes": ["suomi"], "source": "Kanteletar", "weight": 1}
+{"name": "Sorsatar", "type": "person", "morphemes": ["sorsa"], "source": "Kanteletar", "weight": 1}
+{"name": "Riio", "type": "person", "morphemes": ["riio"], "source": "Kanteletar", "weight": 1}
+{"name": "Konnu", "type": "person", "morphemes": ["konnu"], "source": "Kanteletar", "weight": 1}
+{"name": "Kuura", "type": "person", "morphemes": ["kuura"], "source": "Kalevala", "weight": 1}
+{"name": "Aikamieli", "type": "person", "morphemes": ["aika", "mieli"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Aikio", "type": "person", "morphemes": ["aikio"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ano", "type": "person", "morphemes": ["ano"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Arijoutsi", "type": "person", "morphemes": ["ari", "joutsi"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Arpia", "type": "person", "morphemes": ["arpa"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Auvo", "type": "person", "morphemes": ["auvo"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Himottu", "type": "person", "morphemes": ["himo"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Hirvi", "type": "person", "morphemes": ["hirvi"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Hyvätty", "type": "person", "morphemes": ["huva"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ihalempi", "type": "person", "morphemes": ["iha", "lempi"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ihamuoto", "type": "person", "morphemes": ["iha", "muoto"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ikitiera", "type": "person", "morphemes": ["iki", "tiera"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ikopäivä", "type": "person", "morphemes": ["ika", "paiva"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ikäheimo", "type": "person", "morphemes": ["ika", "heimo"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ikävalko", "type": "person", "morphemes": ["ika", "valko"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ilakka", "type": "person", "morphemes": ["ilakka"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ilmatoivia", "type": "person", "morphemes": ["ilma", "toivo"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Jurva", "type": "person", "morphemes": ["jurva"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kaivattu", "type": "person", "morphemes": ["kaivata"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kaipia", "type": "person", "morphemes": ["kaipia"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kaukovalta", "type": "person", "morphemes": ["kauko", "valta"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Keiho", "type": "person", "morphemes": ["keiho"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kekko", "type": "person", "morphemes": ["kekko"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kokko", "type": "person", "morphemes": ["kokko"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kontio", "type": "person", "morphemes": ["kontio"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kostia", "type": "person", "morphemes": ["kostia"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kotarikko", "type": "person", "morphemes": ["kotarikko"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kultamies", "type": "person", "morphemes": ["kulta", "mies"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kultimo", "type": "person", "morphemes": ["kulta"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Kukurtaja", "type": "person", "morphemes": ["kukurtaja"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Leino", "type": "person", "morphemes": ["leino"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Lemmäs", "type": "person", "morphemes": ["lempi"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Maanavilja", "type": "person", "morphemes": ["maanavilja"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Meripäivä", "type": "person", "morphemes": ["meri", "paiva"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Mielo", "type": "person", "morphemes": ["mieli"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Montaja", "type": "person", "morphemes": ["montaja"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Nousia", "type": "person", "morphemes": ["nousta"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Osma", "type": "person", "morphemes": ["osma"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Päivälapsi", "type": "person", "morphemes": ["paiva", "lapsi"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Päiviä", "type": "person", "morphemes": ["paiva"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Rautia", "type": "person", "morphemes": ["rauta"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Sarijoutsi", "type": "person", "morphemes": ["sari", "joutsi"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Sotijalo", "type": "person", "morphemes": ["sota", "jalo"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Talvikki", "type": "person", "morphemes": ["talvi"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Tapatora", "type": "person", "morphemes": ["tapatora"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Tapo", "type": "person", "morphemes": ["tapo"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Toiva", "type": "person", "morphemes": ["toivo"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Toivelempi", "type": "person", "morphemes": ["toivo", "lempi"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Torio", "type": "person", "morphemes": ["torio"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Tornia", "type": "person", "morphemes": ["tornia"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Unaja", "type": "person", "morphemes": ["unaja"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Utujoutsi", "type": "person", "morphemes": ["utu", "joutsi"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Valta", "type": "person", "morphemes": ["valta"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Vihas", "type": "person", "morphemes": ["viha"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Vihavaino", "type": "person", "morphemes": ["viha", "vaino"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Vilja", "type": "person", "morphemes": ["vilja"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Viti", "type": "person", "morphemes": ["viti"], "source": "medieval records (Vilkuna 1976)", "weight": 1}
+{"name": "Ampuja", "type": "person", "morphemes": ["ampua"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Hellikki", "type": "person", "morphemes": ["hella"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Hopea", "type": "person", "morphemes": ["hopea"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Janakka", "type": "person", "morphemes": ["janakka"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Joutsi", "type": "person", "morphemes": ["joutsi"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Joutsimies", "type": "person", "morphemes": ["joutsi", "mies"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Kainu", "type": "person", "morphemes": ["kainu"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Kaivas", "type": "person", "morphemes": ["kaivas"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Kalamies", "type": "person", "morphemes": ["kala", "mies"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Kalpio", "type": "person", "morphemes": ["kalpio"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Koira", "type": "person", "morphemes": ["koira"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Koveri", "type": "person", "morphemes": ["kova"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Kupias", "type": "person", "morphemes": ["kupias"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Kurikka", "type": "person", "morphemes": ["kurikka"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Kuutamo", "type": "person", "morphemes": ["kuu"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Laulaja", "type": "person", "morphemes": ["laulaa"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Mieho", "type": "person", "morphemes": ["mies"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Mielipäivä", "type": "person", "morphemes": ["mieli", "paiva"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Miekka", "type": "person", "morphemes": ["miekka"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Mietti", "type": "person", "morphemes": ["mietti"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Neuvo", "type": "person", "morphemes": ["neuvo"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Ora", "type": "person", "morphemes": ["ora"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Otra", "type": "person", "morphemes": ["otra"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Paasia", "type": "person", "morphemes": ["paasia"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Paaso", "type": "person", "morphemes": ["paaso"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Puukko", "type": "person", "morphemes": ["puukko"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Rahikka", "type": "person", "morphemes": ["rahikka"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Raita", "type": "person", "morphemes": ["raita"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Rasantaja", "type": "person", "morphemes": ["rasantaja"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Repo", "type": "person", "morphemes": ["repo"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Salme", "type": "person", "morphemes": ["salme"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Susi", "type": "person", "morphemes": ["susi"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Säisä", "type": "person", "morphemes": ["saisa"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Tammi", "type": "person", "morphemes": ["tammi"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Tapavaino", "type": "person", "morphemes": ["tapavaino"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Tietävä", "type": "person", "morphemes": ["tietaa"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Tulo", "type": "person", "morphemes": ["tuli"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Tuntia", "type": "person", "morphemes": ["tuntea"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Tuomikki", "type": "person", "morphemes": ["tuomi"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Tuuli", "type": "person", "morphemes": ["tuuli"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Uro", "type": "person", "morphemes": ["uro"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Vaania", "type": "person", "morphemes": ["vaania"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Vaino", "type": "person", "morphemes": ["vaino"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Vaito", "type": "person", "morphemes": ["vaito"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Vartia", "type": "person", "morphemes": ["vartia"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Vasara", "type": "person", "morphemes": ["vasara"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Venemies", "type": "person", "morphemes": ["vene", "mies"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Vesi", "type": "person", "morphemes": ["vesi"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Vesivalo", "type": "person", "morphemes": ["vesi", "valo"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Viljo", "type": "person", "morphemes": ["viljo"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Äiniö", "type": "person", "morphemes": ["ainio"], "source": "medieval records (Maliniemi 1933)", "weight": 1}
+{"name": "Asikka", "type": "person", "morphemes": ["asikka"], "source": "Sääksmäki letter 1340", "weight": 1}
+{"name": "Kallas", "type": "person", "morphemes": ["kallas"], "source": "Sääksmäki letter 1340", "weight": 1}
+{"name": "Kuningas", "type": "person", "morphemes": ["kuningas"], "source": "Sääksmäki letter 1340", "weight": 1}
+{"name": "Laso", "type": "person", "morphemes": ["laso"], "source": "Sääksmäki letter 1340", "weight": 1}
+{"name": "Meurakas", "type": "person", "morphemes": ["meurakas"], "source": "Sääksmäki letter 1340", "weight": 1}
+{"name": "Mielenpito", "type": "person", "morphemes": ["mieli", "pito"], "source": "Sääksmäki letter 1340", "weight": 1}
+{"name": "Miemo", "type": "person", "morphemes": ["miemo"], "source": "Sääksmäki letter 1340", "weight": 1}
+{"name": "Satatieto", "type": "person", "morphemes": ["sata", "tieto"], "source": "Sääksmäki letter 1340", "weight": 1}
+{"name": "Hyvälempi", "type": "person", "morphemes": ["huva", "lempi"], "source": "nobility letters 14th c.", "weight": 1}
+{"name": "Mielivalta", "type": "person", "morphemes": ["mieli", "valta"], "source": "nobility letters 14th c.", "weight": 1}
+{"name": "Kuuluva", "type": "person", "morphemes": ["kuulua"], "source": "old personal names (Kiviniemi 1982)", "weight": 1}
+{"name": "Anottu", "type": "person", "morphemes": ["anoa"], "source": "old personal names (Kiviniemi 1982)", "weight": 1}
+{"name": "Ihamieli", "type": "person", "morphemes": ["iha", "mieli"], "source": "old personal names (Kiviniemi 1982)", "weight": 1}
+{"name": "Lempivalta", "type": "person", "morphemes": ["lempi", "valta"], "source": "old personal names (Kiviniemi 1982)", "weight": 1}
+{"name": "Valtalempi", "type": "person", "morphemes": ["valta", "lempi"], "source": "old personal names (Kiviniemi 1982)", "weight": 1}
+{"name": "Satajalka", "type": "person", "morphemes": ["sata", "jalka"], "source": "old bynames (Kiviniemi 1982)", "weight": 1}
+{"name": "Rautakopra", "type": "person", "morphemes": ["rauta", "kopra"], "source": "old bynames (Kiviniemi 1982)", "weight": 1}
+{"name": "Kirjoparta", "type": "person", "morphemes": ["kirjo", "parta"], "source": "old bynames (Kiviniemi 1982)", "weight": 1}
+{"name": "Tervahartia", "type": "person", "morphemes": ["terva", "hartia"], "source": "old bynames (Kiviniemi 1982)", "weight": 1}
+{"name": "Kaukolempi", "type": "person", "morphemes": ["kauko", "lempi"], "source": "medieval records (Raunamaa 2021)", "weight": 1}
+{"name": "Ihakka", "type": "person", "morphemes": ["iha"], "source": "medieval records (Raunamaa 2021)", "weight": 1}
+{"name": "Viljamieli", "type": "person", "morphemes": ["vilja", "mieli"], "source": "medieval records (Stoebke 1964, via Raunamaa)", "weight": 1}
+{"name": "Mielivilja", "type": "person", "morphemes": ["mieli", "vilja"], "source": "medieval records (Stoebke 1964, via Raunamaa)", "weight": 1}
+{"name": "Uska", "type": "person", "morphemes": ["uska"], "source": "medieval records (Raunamaa 2021)", "weight": 1}
+{"name": "Vihto", "type": "person", "morphemes": ["vihto"], "source": "medieval records (Raunamaa 2021)", "weight": 1}
+{"name": "Sariola", "type": "place", "morphemes": ["sariola"], "source": "Kalevala", "weight": 1}
+{"name": "Tuonela", "type": "place", "morphemes": ["tuoni"], "source": "Kalevala", "weight": 1}
+{"name": "Manala", "type": "place", "morphemes": ["manala"], "source": "Kalevala", "weight": 1}
+{"name": "Metsola", "type": "place", "morphemes": ["metsa"], "source": "Kalevala", "weight": 1}
+{"name": "Tapiola", "type": "place", "morphemes": ["tapio"], "source": "Kalevala", "weight": 1}
+{"name": "Pimentola", "type": "place", "morphemes": ["pimea"], "source": "Kalevala", "weight": 1}
+{"name": "Hiitola", "type": "place", "morphemes": ["hiisi"], "source": "Kalevala", "weight": 1}
+{"name": "Luotola", "type": "place", "morphemes": ["luotola"], "source": "Kalevala", "weight": 1}
+{"name": "Tähtelä", "type": "place", "morphemes": ["tahti"], "source": "Kalevala", "weight": 1}
+{"name": "Suvantola", "type": "place", "morphemes": ["suvanto"], "source": "Kalevala", "weight": 1}
+{"name": "Lemmenlahti", "type": "place", "morphemes": ["lempi", "lahti"], "source": "Kalevala", "weight": 1}
+{"name": "Kaukoniemi", "type": "place", "morphemes": ["kauko", "niemi"], "source": "Kalevala", "weight": 1}
+{"name": "Simasalo", "type": "place", "morphemes": ["sima", "salo"], "source": "Kalevala", "weight": 1}
+{"name": "Nälkäniemi", "type": "place", "morphemes": ["nalka", "niemi"], "source": "Kalevala", "weight": 1}
+{"name": "Suolasalmi", "type": "place", "morphemes": ["suola", "salmi"], "source": "Kalevala", "weight": 1}
+{"name": "Horna", "type": "place", "morphemes": ["horna"], "source": "Kalevala", "weight": 1}
+{"name": "Karjala", "type": "place", "morphemes": ["karjala"], "source": "Kalevala", "weight": 1}
+{"name": "Häme", "type": "place", "morphemes": ["hame"], "source": "Kalevala", "weight": 1}
+{"name": "Savo", "type": "place", "morphemes": ["savo"], "source": "Kalevala", "weight": 1}
+{"name": "Lappi", "type": "place", "morphemes": ["lappi"], "source": "Kalevala", "weight": 1}
+{"name": "Turja", "type": "place", "morphemes": ["turja"], "source": "Kalevala", "weight": 1}
+{"name": "Viro", "type": "place", "morphemes": ["viro"], "source": "Kalevala", "weight": 1}
+{"name": "Inkeri", "type": "place", "morphemes": ["inkeri"], "source": "Kalevala", "weight": 1}
+{"name": "Venäjä", "type": "place", "morphemes": ["venaja"], "source": "Kalevala", "weight": 1}
+{"name": "Ruotsi", "type": "place", "morphemes": ["ruotsi"], "source": "Kalevala", "weight": 1}
+{"name": "Saksa", "type": "place", "morphemes": ["saksa"], "source": "Kalevala", "weight": 1}
+{"name": "Viena", "type": "place", "morphemes": ["viena"], "source": "Kalevala", "weight": 1}
+{"name": "Aunus", "type": "place", "morphemes": ["aunus"], "source": "Kanteletar", "weight": 1}
+{"name": "Kainuu", "type": "place", "morphemes": ["kainuu"], "source": "Kanteletar", "weight": 1}
+{"name": "Satakunta", "type": "place", "morphemes": ["sata", "kunta"], "source": "Kanteletar", "weight": 1}
+{"name": "Uusimaa", "type": "place", "morphemes": ["uusi", "maa"], "source": "Kanteletar", "weight": 1}
+{"name": "Pohjanmaa", "type": "place", "morphemes": ["pohja", "maa"], "source": "Kanteletar", "weight": 1}
+{"name": "Hymylä", "type": "place", "morphemes": ["humu"], "source": "Kanteletar", "weight": 1}
+{"name": "Neitola", "type": "place", "morphemes": ["neiti"], "source": "Kanteletar", "weight": 1}
+{"name": "Riikola", "type": "place", "morphemes": ["riikola"], "source": "Kanteletar", "weight": 1}
+{"name": "Suurula", "type": "place", "morphemes": ["suuri"], "source": "Kanteletar", "weight": 1}
+{"name": "Sarajala", "type": "place", "morphemes": ["saraja"], "source": "Kanteletar", "weight": 1}
+{"name": "Ritvala", "type": "place", "morphemes": ["ritvala"], "source": "Kanteletar", "weight": 1}
+{"name": "Laukko", "type": "place", "morphemes": ["laukko"], "source": "Kanteletar", "weight": 1}
+{"name": "Kangasniemi", "type": "place", "morphemes": ["kangas", "niemi"], "source": "Kanteletar", "weight": 1}
+{"name": "Kiikka", "type": "place", "morphemes": ["kiikka"], "source": "Kanteletar", "weight": 1}
+{"name": "Kotalahti", "type": "place", "morphemes": ["kota", "lahti"], "source": "Kanteletar", "weight": 1}
+{"name": "Niemelä", "type": "place", "morphemes": ["niemi"], "source": "Kanteletar", "weight": 1}
+{"name": "Korpela", "type": "place", "morphemes": ["korpi"], "source": "Kanteletar", "weight": 1}
+{"name": "Turku", "type": "place", "morphemes": ["turku"], "source": "Kanteletar", "weight": 1}
+{"name": "Kemi", "type": "place", "morphemes": ["kemi"], "source": "Kanteletar", "weight": 1}
+{"name": "Tornio", "type": "place", "morphemes": ["tornio"], "source": "Kanteletar", "weight": 1}
+{"name": "Oulu", "type": "place", "morphemes": ["oulu"], "source": "Kanteletar", "weight": 1}
+{"name": "Kuopio", "type": "place", "morphemes": ["kuopio"], "source": "Kanteletar", "weight": 1}
+{"name": "Kostamus", "type": "place", "morphemes": ["kostamus"], "source": "Kanteletar", "weight": 1}
+{"name": "Tohmajärvi", "type": "place", "morphemes": ["tohma", "jarvi"], "source": "Kanteletar (Lönnrot's notes)", "weight": 1}
+{"name": "Kitee", "type": "place", "morphemes": ["kitee"], "source": "Kanteletar (Lönnrot's notes)", "weight": 1}
+{"name": "Sortavala", "type": "place", "morphemes": ["sortavala"], "source": "Kanteletar (Lönnrot's notes)", "weight": 1}
+{"name": "Kurkijoki", "type": "place", "morphemes": ["kurki", "joki"], "source": "Kanteletar (Lönnrot's notes)", "weight": 1}
+{"name": "Vuokkiniemi", "type": "place", "morphemes": ["vuokki", "niemi"], "source": "Kanteletar (Lönnrot's notes)", "weight": 1}
+{"name": "Paanajärvi", "type": "place", "morphemes": ["paana", "jarvi"], "source": "Kanteletar (Lönnrot's notes)", "weight": 1}
+{"name": "Lieksa", "type": "place", "morphemes": ["lieksa"], "source": "Kanteletar (Lönnrot's notes)", "weight": 1}
+{"name": "Sotkamo", "type": "place", "morphemes": ["sotkamo"], "source": "Kanteletar (Lönnrot's notes)", "weight": 1}
+{"name": "Halikko", "type": "place", "morphemes": ["halikko"], "source": "medieval parishes", "weight": 1}
+{"name": "Kalanti", "type": "place", "morphemes": ["kalanti"], "source": "medieval parishes", "weight": 1}
+{"name": "Kisko", "type": "place", "morphemes": ["kisko"], "source": "medieval parishes", "weight": 1}
+{"name": "Koroinen", "type": "place", "morphemes": ["koroinen"], "source": "medieval parishes", "weight": 1}
+{"name": "Laitila", "type": "place", "morphemes": ["laitila"], "source": "medieval parishes", "weight": 1}
+{"name": "Lemu", "type": "place", "morphemes": ["lemu"], "source": "medieval parishes", "weight": 1}
+{"name": "Lieto", "type": "place", "morphemes": ["lieto"], "source": "medieval parishes", "weight": 1}
+{"name": "Masku", "type": "place", "morphemes": ["masku"], "source": "medieval parishes", "weight": 1}
+{"name": "Mynämäki", "type": "place", "morphemes": ["muna", "maki"], "source": "medieval parishes", "weight": 1}
+{"name": "Perniö", "type": "place", "morphemes": ["pernio"], "source": "medieval parishes", "weight": 1}
+{"name": "Piikkiö", "type": "place", "morphemes": ["piikkio"], "source": "medieval parishes", "weight": 1}
+{"name": "Pöytyä", "type": "place", "morphemes": ["poutua"], "source": "medieval parishes", "weight": 1}
+{"name": "Raisio", "type": "place", "morphemes": ["raisio"], "source": "medieval parishes", "weight": 1}
+{"name": "Rusko", "type": "place", "morphemes": ["rusko"], "source": "medieval parishes", "weight": 1}
+{"name": "Rymättylä", "type": "place", "morphemes": ["rumattula"], "source": "medieval parishes", "weight": 1}
+{"name": "Sauvo", "type": "place", "morphemes": ["sauvo"], "source": "medieval parishes", "weight": 1}
+{"name": "Uskela", "type": "place", "morphemes": ["uskela"], "source": "medieval parishes", "weight": 1}
+{"name": "Taivassalo", "type": "place", "morphemes": ["taivassalo"], "source": "medieval parishes", "weight": 1}
+{"name": "Vehmaa", "type": "place", "morphemes": ["vehmaa"], "source": "medieval parishes", "weight": 1}
+{"name": "Vehkalahti", "type": "place", "morphemes": ["vehka", "lahti"], "source": "medieval parishes", "weight": 1}
+{"name": "Virolahti", "type": "place", "morphemes": ["viro", "lahti"], "source": "medieval parishes", "weight": 1}
+{"name": "Kyrö", "type": "place", "morphemes": ["kuro"], "source": "medieval parishes", "weight": 1}
+{"name": "Mustasaari", "type": "place", "morphemes": ["musta", "saari"], "source": "medieval parishes", "weight": 1}
+{"name": "Rauma", "type": "place", "morphemes": ["rauma"], "source": "medieval parishes", "weight": 1}
+{"name": "Huittinen", "type": "place", "morphemes": ["huittinen"], "source": "medieval parishes", "weight": 1}
+{"name": "Kokemäki", "type": "place", "morphemes": ["kokemaki"], "source": "medieval parishes", "weight": 1}
+{"name": "Köyliö", "type": "place", "morphemes": ["koulio"], "source": "medieval parishes", "weight": 1}
+{"name": "Loimaa", "type": "place", "morphemes": ["loimaa"], "source": "medieval parishes", "weight": 1}
+{"name": "Messukylä", "type": "place", "morphemes": ["messu", "kula"], "source": "medieval parishes", "weight": 1}
+{"name": "Nokia", "type": "place", "morphemes": ["nokia"], "source": "medieval parishes", "weight": 1}
+{"name": "Karkku", "type": "place", "morphemes": ["karkku"], "source": "medieval parishes", "weight": 1}
+{"name": "Sastamala", "type": "place", "morphemes": ["sastamala"], "source": "medieval parishes", "weight": 1}
+{"name": "Tyrvää", "type": "place", "morphemes": ["turvaa"], "source": "medieval parishes", "weight": 1}
+{"name": "Vesilahti", "type": "place", "morphemes": ["vesi", "lahti"], "source": "medieval parishes", "weight": 1}
+{"name": "Savilahti", "type": "place", "morphemes": ["savi", "lahti"], "source": "medieval parishes", "weight": 1}
+{"name": "Akaa", "type": "place", "morphemes": ["akaa"], "source": "medieval parishes", "weight": 1}
+{"name": "Hauho", "type": "place", "morphemes": ["hauho"], "source": "medieval parishes", "weight": 1}
+{"name": "Hollola", "type": "place", "morphemes": ["hollola"], "source": "medieval parishes", "weight": 1}
+{"name": "Hattula", "type": "place", "morphemes": ["hattula"], "source": "medieval parishes", "weight": 1}
+{"name": "Kalvola", "type": "place", "morphemes": ["kalvola"], "source": "medieval parishes", "weight": 1}
+{"name": "Lammi", "type": "place", "morphemes": ["lampi"], "source": "medieval parishes", "weight": 1}
+{"name": "Padasjoki", "type": "place", "morphemes": ["padas", "joki"], "source": "medieval parishes", "weight": 1}
+{"name": "Renko", "type": "place", "morphemes": ["renko"], "source": "medieval parishes", "weight": 1}
+{"name": "Somero", "type": "place", "morphemes": ["somero"], "source": "medieval parishes", "weight": 1}
+{"name": "Pälkäne", "type": "place", "morphemes": ["palkane"], "source": "medieval parishes", "weight": 1}
+{"name": "Sysmä", "type": "place", "morphemes": ["susma"], "source": "medieval parishes", "weight": 1}
+{"name": "Sääksmäki", "type": "place", "morphemes": ["saaksi", "maki"], "source": "medieval parishes", "weight": 1}
+{"name": "Tuulos", "type": "place", "morphemes": ["tuulos"], "source": "medieval parishes", "weight": 1}
+{"name": "Tyrväntö", "type": "place", "morphemes": ["turvanto"], "source": "medieval parishes", "weight": 1}
+{"name": "Urjala", "type": "place", "morphemes": ["urjala"], "source": "medieval parishes", "weight": 1}
+{"name": "Vanaja", "type": "place", "morphemes": ["vanaja"], "source": "medieval parishes", "weight": 1}
+{"name": "Lohja", "type": "place", "morphemes": ["lohja"], "source": "medieval parishes", "weight": 1}
+{"name": "Auvaismäki", "type": "place", "morphemes": ["auvo", "maki"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Heimola", "type": "place", "morphemes": ["heimo"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Hyväneula", "type": "place", "morphemes": ["huva", "neuvo"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Ikaalinen", "type": "place", "morphemes": ["ika"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Ikoinniemi", "type": "place", "morphemes": ["ika", "niemi"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Kaukonpieli", "type": "place", "morphemes": ["kauko", "pieli"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Kirjala", "type": "place", "morphemes": ["kirja"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Yläkirjola", "type": "place", "morphemes": ["ula", "kirja"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Lempiäniemi", "type": "place", "morphemes": ["lempi", "niemi"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Lempiskallio", "type": "place", "morphemes": ["lempi", "kallio"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Mielismäki", "type": "place", "morphemes": ["mieli", "maki"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Mielaanniemi", "type": "place", "morphemes": ["mieli", "niemi"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Vihtiälä", "type": "place", "morphemes": ["vihta"], "source": "village names 1560s (SA)", "weight": 1}
+{"name": "Kiviniemi", "type": "place", "morphemes": ["kivi", "niemi"], "source": "Kanteletar", "weight": 1}
+{"name": "Tokrajärvi", "type": "place", "morphemes": ["tokra", "jarvi"], "source": "Kanteletar", "weight": 1}
+{"name": "Laitasaari", "type": "place", "morphemes": ["laita", "saari"], "source": "Kanteletar", "weight": 1}
+{"name": "Pajulahti", "type": "place", "morphemes": ["paju", "lahti"], "source": "Kanteletar", "weight": 1}
+{"name": "Kololahti", "type": "place", "morphemes": ["kolo", "lahti"], "source": "Kanteletar", "weight": 1}
+{"name": "Kotilahti", "type": "place", "morphemes": ["koti", "lahti"], "source": "Kanteletar", "weight": 1}
+{"name": "Kolmikylä", "type": "place", "morphemes": ["kolme", "kula"], "source": "village names (Raunamaa 2019)", "weight": 1}
+{"name": "Vaistenkylä", "type": "place", "morphemes": ["vaivainen", "kula"], "source": "village names (Raunamaa 2019)", "weight": 1}
+{"name": "Liikola", "type": "place", "morphemes": ["liikola"], "source": "village names (Raunamaa 2019)", "weight": 1}
+{"name": "Voipiala", "type": "place", "morphemes": ["voipiala"], "source": "village names (Raunamaa 2019)", "weight": 1}
+{"name": "Sikuri", "type": "place", "morphemes": ["sikuri"], "source": "village names (Raunamaa 2019)", "weight": 1}
+{"name": "Ukko", "type": "deity", "morphemes": ["ukko"], "source": "Kalevala", "weight": 1}
+{"name": "Rauni", "type": "deity", "morphemes": ["rauni"], "source": "Agricola 1551", "weight": 1}
+{"name": "Tellervo", "type": "deity", "morphemes": ["tellervo"], "source": "Kalevala", "weight": 1}
+{"name": "Nyyrikki", "type": "deity", "morphemes": ["nuurikki"], "source": "Kalevala", "weight": 1}
+{"name": "Kuippana", "type": "deity", "morphemes": ["kuippana"], "source": "Kalevala", "weight": 1}
+{"name": "Mimerkki", "type": "deity", "morphemes": ["mimerkki"], "source": "Kalevala", "weight": 1}
+{"name": "Kuurikki", "type": "deity", "morphemes": ["kuurikki"], "source": "Kanteletar", "weight": 1}
+{"name": "Ahto", "type": "deity", "morphemes": ["ahto"], "source": "Kalevala", "weight": 1}
+{"name": "Vellamo", "type": "deity", "morphemes": ["vellamo"], "source": "Kalevala", "weight": 1}
+{"name": "Mana", "type": "deity", "morphemes": ["mana"], "source": "Kalevala", "weight": 1}
+{"name": "Kalma", "type": "deity", "morphemes": ["kalma"], "source": "Kalevala", "weight": 1}
+{"name": "Lempo", "type": "deity", "morphemes": ["lempo"], "source": "Kalevala", "weight": 1}
+{"name": "Piru", "type": "deity", "morphemes": ["piru"], "source": "Agricola 1551", "weight": 1}
+{"name": "Kammo", "type": "deity", "morphemes": ["kammo"], "source": "Kalevala", "weight": 1}
+{"name": "Surma", "type": "deity", "morphemes": ["surma"], "source": "Kalevala", "weight": 1}
+{"name": "Kivutar", "type": "deity", "morphemes": ["kipu"], "source": "Kalevala", "weight": 1}
+{"name": "Vammatar", "type": "deity", "morphemes": ["vamma"], "source": "Kalevala", "weight": 1}
+{"name": "Kiputyttö", "type": "deity", "morphemes": ["kipu", "tutto"], "source": "Kalevala", "weight": 1}
+{"name": "Loviatar", "type": "deity", "morphemes": ["loviatar"], "source": "Kalevala", "weight": 1}
+{"name": "Syöjätär", "type": "deity", "morphemes": ["suoda"], "source": "Kalevala", "weight": 1}
+{"name": "Otavatar", "type": "deity", "morphemes": ["otava"], "source": "Kalevala", "weight": 1}
+{"name": "Etelätär", "type": "deity", "morphemes": ["etela"], "source": "Kalevala", "weight": 1}
+{"name": "Suvetar", "type": "deity", "morphemes": ["suvi"], "source": "Kalevala", "weight": 1}
+{"name": "Hongatar", "type": "deity", "morphemes": ["honka"], "source": "Kalevala", "weight": 1}
+{"name": "Katajatar", "type": "deity", "morphemes": ["kataja"], "source": "Kalevala", "weight": 1}
+{"name": "Pihlajatar", "type": "deity", "morphemes": ["pihlaja"], "source": "Kalevala", "weight": 1}
+{"name": "Melatar", "type": "deity", "morphemes": ["mela"], "source": "Kalevala", "weight": 1}
+{"name": "Terhenetär", "type": "deity", "morphemes": ["terhen"], "source": "Kalevala", "weight": 1}
+{"name": "Ututyttö", "type": "deity", "morphemes": ["utu", "tutto"], "source": "Kalevala", "weight": 1}
+{"name": "Suonetar", "type": "deity", "morphemes": ["suoni"], "source": "Kalevala", "weight": 1}
+{"name": "Iku-Turso", "type": "deity", "morphemes": ["iku", "turso"], "source": "Kalevala", "weight": 1}
+{"name": "Äijö", "type": "deity", "morphemes": ["aija"], "source": "Kalevala", "weight": 1}
+{"name": "Pakkanen", "type": "deity", "morphemes": ["pakkanen"], "source": "Kalevala", "weight": 1}
+{"name": "Puhuri", "type": "deity", "morphemes": ["puhuri"], "source": "Kalevala", "weight": 1}
+{"name": "Pellervoinen", "type": "deity", "morphemes": ["pelto"], "source": "Kalevala", "weight": 1}
+{"name": "Kave", "type": "deity", "morphemes": ["kave"], "source": "Kalevala", "weight": 1}
+{"name": "Jumala", "type": "deity", "morphemes": ["jumala"], "source": "Kalevala", "weight": 1}
+{"name": "Rahko", "type": "deity", "morphemes": ["rahko"], "source": "Agricola 1551", "weight": 1}
+{"name": "Liekkiö", "type": "deity", "morphemes": ["liekki"], "source": "Agricola 1551", "weight": 1}
+{"name": "Kratti", "type": "deity", "morphemes": ["kratti"], "source": "Agricola 1551", "weight": 1}
+{"name": "Tonttu", "type": "deity", "morphemes": ["tonttu"], "source": "Agricola 1551", "weight": 1}
+{"name": "Kapeet", "type": "deity", "morphemes": ["kapeet"], "source": "Agricola 1551", "weight": 1}
+{"name": "Rongoteus", "type": "deity", "morphemes": ["rongoteus"], "source": "Agricola 1551", "weight": 1}
+{"name": "Pellonpekko", "type": "deity", "morphemes": ["pelto", "pekko"], "source": "Agricola 1551", "weight": 1}
+{"name": "Virankannos", "type": "deity", "morphemes": ["virankannos"], "source": "Agricola 1551", "weight": 1}
+{"name": "Äkräs", "type": "deity", "morphemes": ["akras"], "source": "Agricola 1551", "weight": 1}
+{"name": "Köndös", "type": "deity", "morphemes": ["kondos"], "source": "Agricola 1551", "weight": 1}
+{"name": "Kekri", "type": "deity", "morphemes": ["kekri"], "source": "Agricola 1551", "weight": 1}
+{"name": "Vedenemä", "type": "deity", "morphemes": ["vesi", "ema"], "source": "Agricola 1551", "weight": 1}
+{"name": "Hittavainen", "type": "deity", "morphemes": ["hittavainen"], "source": "Agricola 1551", "weight": 1}
+{"name": "Pohjolan emäntä", "type": "title", "morphemes": ["pohja", "emanta"], "source": "Kalevala", "weight": 1}
+{"name": "Pohjolan isäntä", "type": "title", "morphemes": ["pohja", "isanta"], "source": "Kalevala", "weight": 1}
+{"name": "Pohjan akka", "type": "title", "morphemes": ["pohja", "akka"], "source": "Kalevala", "weight": 1}
+{"name": "Pohjan ukko", "type": "title", "morphemes": ["pohja", "ukko"], "source": "Kanteletar", "weight": 1}
+{"name": "Pohjan neiti", "type": "title", "morphemes": ["pohja", "neiti"], "source": "Kalevala", "weight": 1}
+{"name": "Saaren kukka", "type": "title", "morphemes": ["saari", "kukka"], "source": "Kalevala", "weight": 1}
+{"name": "Metsän kuningas", "type": "title", "morphemes": ["metsa", "kuningas"], "source": "Kalevala", "weight": 1}
+{"name": "Metsän emäntä", "type": "title", "morphemes": ["metsa", "emanta"], "source": "Kalevala", "weight": 1}
+{"name": "Aaltojen kuningas", "type": "title", "morphemes": ["aalto", "kuningas"], "source": "Kalevala", "weight": 1}
+{"name": "Veden emo", "type": "title", "morphemes": ["vesi", "emo"], "source": "Kalevala", "weight": 1}
+{"name": "Ilman impi", "type": "title", "morphemes": ["ilma", "impi"], "source": "Kalevala", "weight": 1}
+{"name": "Manalan neiti", "type": "title", "morphemes": ["manala", "neiti"], "source": "Kalevala", "weight": 1}
+{"name": "Ylijumala", "type": "title", "morphemes": ["uli", "jumala"], "source": "Kalevala", "weight": 1}
+{"name": "Kalevalan neiti", "type": "title", "morphemes": ["kaleva", "neiti"], "source": "Kanteletar", "weight": 1}
+{"name": "Kalevan kansa", "type": "group", "morphemes": ["kaleva", "kansa"], "source": "Kalevala", "weight": 1}
+{"name": "Tapion kansa", "type": "group", "morphemes": ["tapio", "kansa"], "source": "Kalevala", "weight": 1}
+{"name": "Pohjan kansa", "type": "group", "morphemes": ["pohja", "kansa"], "source": "Kalevala", "weight": 1}
+{"name": "Suomen kansa", "type": "group", "morphemes": ["suomi", "kansa"], "source": "Kalevala", "weight": 1}
+{"name": "Lemmon kansa", "type": "group", "morphemes": ["lempo", "kansa"], "source": "Kalevala", "weight": 1}
+{"name": "Venäjän väki", "type": "group", "morphemes": ["venaja", "vaki"], "source": "Kanteletar", "weight": 1}
+{"name": "Menninkäiset", "type": "group", "morphemes": ["menninkainen"], "source": "Agricola 1551", "weight": 1}
+{"name": "Kurki", "type": "lineage", "morphemes": ["kurki"], "source": "Kanteletar", "weight": 1}
+{"name": "Kärkkäinen", "type": "lineage", "morphemes": ["karkka"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Rantonen", "type": "lineage", "morphemes": ["ranta"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Kortelainen", "type": "lineage", "morphemes": ["korte"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Haapalainen", "type": "lineage", "morphemes": ["haapa"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Vahvelainen", "type": "lineage", "morphemes": ["vahviala"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Koikkalainen", "type": "lineage", "morphemes": ["koikkala"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Pääkkönen", "type": "lineage", "morphemes": ["paakko"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Partanen", "type": "lineage", "morphemes": ["parta"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Korhonen", "type": "lineage", "morphemes": ["korho"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Laitinen", "type": "lineage", "morphemes": ["laiti"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Happonen", "type": "lineage", "morphemes": ["happo"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Julkunen", "type": "lineage", "morphemes": ["julku"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Romppainen", "type": "lineage", "morphemes": ["romppa"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Rutanen", "type": "lineage", "morphemes": ["ruta"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Puumalainen", "type": "lineage", "morphemes": ["puumala"], "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)", "weight": 1}
+{"name": "Tapiomäki", "type": "hill", "morphemes": ["tapio", "maki"], "source": "Kalevala", "weight": 1}
+{"name": "Kipumäki", "type": "hill", "morphemes": ["kipu", "maki"], "source": "Kalevala", "weight": 1}
+{"name": "Kipuvuori", "type": "hill", "morphemes": ["kipu", "vuori"], "source": "Kalevala", "weight": 1}
+{"name": "Tuomivaara", "type": "hill", "morphemes": ["tuomi", "vaara"], "source": "Kalevala", "weight": 1}
+{"name": "Pisa", "type": "hill", "morphemes": ["pisa"], "source": "Kalevala", "weight": 1}
+{"name": "Tapiovaara", "type": "hill", "morphemes": ["tapio", "vaara"], "source": "Kanteletar", "weight": 1}
+{"name": "Pätsivuori", "type": "hill", "morphemes": ["patsi", "vuori"], "source": "Kanteletar", "weight": 1}
+{"name": "Kutumäki", "type": "hill", "morphemes": ["kutu", "maki"], "source": "Kanteletar", "weight": 1}
+{"name": "Takavaara", "type": "hill", "morphemes": ["taka", "vaara"], "source": "Kanteletar", "weight": 1}
+{"name": "Lylyvaara", "type": "hill", "morphemes": ["lulu", "vaara"], "source": "Kanteletar", "weight": 1}
+{"name": "Lehtovaara", "type": "hill", "morphemes": ["lehto", "vaara"], "source": "Kanteletar", "weight": 1}
+{"name": "Kultavuori", "type": "hill", "morphemes": ["kulta", "vuori"], "source": "Kanteletar", "weight": 1}
+{"name": "Koiravuori", "type": "hill", "morphemes": ["koira", "vuori"], "source": "Kanteletar", "weight": 1}
+{"name": "Kirvesvaara", "type": "hill", "morphemes": ["kirves", "vaara"], "source": "Kanteletar", "weight": 1}
+{"name": "Vaskivaara", "type": "hill", "morphemes": ["vaski", "vaara"], "source": "Kanteletar", "weight": 1}
+{"name": "Pohjantähti", "type": "celestial", "morphemes": ["pohja", "tahti"], "source": "Kanteletar", "weight": 1}
+{"name": "Vuoksi", "type": "river", "morphemes": ["vuoksi"], "source": "Kalevala", "weight": 1}
+{"name": "Kemijoki", "type": "river", "morphemes": ["kemi", "joki"], "source": "Kalevala", "weight": 1}
+{"name": "Neva", "type": "river", "morphemes": ["neva"], "source": "Kalevala", "weight": 1}
+{"name": "Saraoja", "type": "river", "morphemes": ["sara", "oja"], "source": "Kalevala", "weight": 1}
+{"name": "Tuonelan joki", "type": "river", "morphemes": ["tuoni", "joki"], "source": "Kalevala", "weight": 1}
+{"name": "Imatra", "type": "river", "morphemes": ["imatra"], "source": "Kalevala", "weight": 1}
+{"name": "Kaatrakoski", "type": "river", "morphemes": ["kaatra", "koski"], "source": "Kalevala", "weight": 1}
+{"name": "Tyrjä", "type": "river", "morphemes": ["turja"], "source": "Kalevala", "weight": 1}
+{"name": "Rutja", "type": "river", "morphemes": ["rutja"], "source": "Kalevala", "weight": 1}
+{"name": "Kiikakoski", "type": "river", "morphemes": ["kiikka", "koski"], "source": "Kanteletar", "weight": 1}
+{"name": "Sampo", "type": "other", "morphemes": ["sampo"], "source": "Kalevala", "weight": 1}
+{"name": "Alue", "type": "other", "morphemes": ["alue"], "source": "Kalevala", "weight": 1}
+{"name": "Saimaa", "type": "other", "morphemes": ["saimaa"], "source": "Kanteletar", "weight": 1}
+{"name": "Pielinen", "type": "other", "morphemes": ["pielinen"], "source": "Kanteletar", "weight": 1}
+{"name": "Kuittijärvi", "type": "other", "morphemes": ["kuitti", "jarvi"], "source": "Kanteletar", "weight": 1}
+{"name": "Kalevan kaivo", "type": "other", "morphemes": ["kaleva", "kaivo"], "source": "Kalevala", "weight": 1}
+{"name": "Hiiden hirvi", "type": "other", "morphemes": ["hiisi", "hirvi"], "source": "Kalevala", "weight": 1}
+{"name": "Hiiden ruuna", "type": "other", "morphemes": ["hiisi", "ruuna"], "source": "Kalevala", "weight": 1}
+{"name": "Otso", "type": "other", "morphemes": ["otso"], "source": "Kalevala", "weight": 1}
+{"name": "Mesikämmen", "type": "other", "morphemes": ["mesi", "kammen"], "source": "Kanteletar", "weight": 1}
+{"name": "Musti", "type": "other", "morphemes": ["musta"], "source": "Kalevala", "weight": 1}
+{"name": "Halli", "type": "other", "morphemes": ["halli"], "source": "Kalevala", "weight": 1}
+{"name": "Penu", "type": "other", "morphemes": ["penu"], "source": "Kanteletar", "weight": 1}
+{"name": "Kyyttö", "type": "other", "morphemes": ["kuutto"], "source": "Kanteletar", "weight": 1}
+{"name": "Syötikki", "type": "other", "morphemes": ["suottaa"], "source": "Kalevala", "weight": 1}
+{"name": "Juotikki", "type": "other", "morphemes": ["juottaa"], "source": "Kalevala", "weight": 1}
+{"name": "Hermikki", "type": "other", "morphemes": ["hermikki"], "source": "Kalevala", "weight": 1}
+{"name": "Tuorikki", "type": "other", "morphemes": ["tuorikki"], "source": "Kalevala", "weight": 1}
+{"name": "Mairikki", "type": "other", "morphemes": ["mairikki"], "source": "Kalevala", "weight": 1}
+{"name": "Omena", "type": "other", "morphemes": ["omena"], "source": "Kalevala", "weight": 1}
+{"name": "Muurikki", "type": "other", "morphemes": ["muurikki"], "source": "Kalevala", "weight": 1}
+{"name": "Mansikki", "type": "other", "morphemes": ["mansikka"], "source": "Kalevala", "weight": 1}
+{"name": "Ukon vakka", "type": "other", "morphemes": ["ukko", "vakka"], "source": "Agricola 1551", "weight": 1}
+{"name": "Ukon malja", "type": "other", "morphemes": ["ukko", "malja"], "source": "Agricola 1551", "weight": 1}
+{"name": "Sinetär", "type": "deity", "morphemes": ["sini"], "source": "Kanteletar", "weight": 1}
+{"name": "Kankahatar", "type": "deity", "morphemes": ["kangas"], "source": "Kanteletar", "weight": 1}
+{"name": "Kivi-Kimmo", "type": "deity", "morphemes": ["kivi", "kimmo"], "source": "Kalevala", "weight": 1}
+{"name": "Synervä", "type": "other", "morphemes": ["sunerva"], "source": "Kanteletar", "weight": 1}
+{"name": "Kallavesi", "type": "other", "morphemes": ["kalla", "vesi"], "source": "Kanteletar", "weight": 1}
+{"name": "Puruvesi", "type": "other", "morphemes": ["puru", "vesi"], "source": "Kanteletar", "weight": 1}
+{"name": "Koitere", "type": "other", "morphemes": ["koitere"], "source": "Kanteletar", "weight": 1}
+{"name": "Kuvetjärvi", "type": "other", "morphemes": ["kuvet", "jarvi"], "source": "Kanteletar", "weight": 1}
+{"name": "Köyliöjärvi", "type": "other", "morphemes": ["koulio", "jarvi"], "source": "Kanteletar (Lönnrot's notes)", "weight": 1}
+{"name": "Kiikasilta", "type": "other", "morphemes": ["kiikka", "silta"], "source": "Kanteletar", "weight": 1}
+{"name": "Lyttimäinen", "type": "other", "morphemes": ["luttimainen"], "source": "Kanteletar", "weight": 1}

@@ -1,0 +1,20 @@
+{
+ "lang": "hawaiian",
+ "names": "names.jsonl",
+ "parts": "parts.jsonl",
+ "words": "words.json",
+ "number_words": {
+  "1": "ekahi",
+  "2": "elua",
+  "3": "ekolu",
+  "4": "ehā",
+  "5": "elima",
+  "6": "eono",
+  "7": "ehiku",
+  "12": "umikūmālua"
+ },
+ "punmax": 0.5,
+ "weights": "once",
+ "drop_parts": [],
+ "loan_category": "none"
+}

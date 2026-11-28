@@ -1,0 +1,886 @@
+{
+ "002": {
+  "two": [
+   "phuta",
+   "phutacu"
+  ],
+  "pair": [],
+  "strokes": [],
+  "tally": []
+ },
+ "060": {
+  "hook": [
+   "ci",
+   "hari"
+  ],
+  "stroke": [],
+  "mark": [
+   "śiruśi"
+  ],
+  "line": []
+ },
+ "061": {
+  "tongs": [],
+  "fork": [
+   "mata"
+  ],
+  "forked stick": [
+   "mata"
+  ],
+  "split": [
+   "saku"
+  ]
+ },
+ "070": {
+  "arrow": [
+   "ya"
+  ],
+  "spear": [
+   "hoko"
+  ],
+  "barb": [],
+  "point": [
+   "saki"
+  ]
+ },
+ "090": {
+  "man": [
+   "otoko",
+   "onoko"
+  ],
+  "person": [
+   "hito"
+  ],
+  "stand": [
+   "tacu"
+  ],
+  "body": [
+   "mi"
+  ]
+ },
+ "100": {
+  "heads": [
+   "kaśira"
+  ],
+  "crowd": [
+   "mure"
+  ],
+  "man": [
+   "otoko",
+   "onoko"
+  ],
+  "three": [
+   "mi",
+   "micu"
+  ]
+ },
+ "125": {
+  "archer": [],
+  "hunter": [
+   "sacuo"
+  ],
+  "shoot": [
+   "me"
+  ],
+  "bow": [
+   "yumi"
+  ]
+ },
+ "140": {
+  "woman": [
+   "omina",
+   "me"
+  ],
+  "mother": [
+   "haha",
+   "omo"
+  ],
+  "breasts": [
+   "ci"
+  ],
+  "raise": [
+   "agu"
+  ]
+ },
+ "142": {
+  "staff": [
+   "cue"
+  ],
+  "man": [
+   "otoko",
+   "onoko"
+  ],
+  "walker": [],
+  "stick": [
+   "cue",
+   "śimoto"
+  ]
+ },
+ "151": {
+  "carrier": [],
+  "load": [
+   "ni"
+  ],
+  "carry": [
+   "ou",
+   "mocu"
+  ],
+  "yoke": []
+ },
+ "154": {
+  "carrier": [],
+  "load": [
+   "ni"
+  ],
+  "jar": [
+   "mika"
+  ],
+  "carry": [
+   "ou",
+   "mocu"
+  ]
+ },
+ "156": {
+  "carrier": [],
+  "load": [
+   "ni"
+  ],
+  "fan": [],
+  "carry": [
+   "ou",
+   "mocu"
+  ]
+ },
+ "176": {
+  "sit": [
+   "iru"
+  ],
+  "kneel": [],
+  "worker": [],
+  "rake": []
+ },
+ "220": {
+  "fish": [
+   "uo",
+   "na"
+  ],
+  "fishing": [
+   "curi",
+   "isari"
+  ],
+  "fin": [
+   "hata",
+   "hire"
+  ],
+  "scale": [
+   "uroko",
+   "iroko"
+  ]
+ },
+ "226": {
+  "fish": [
+   "uo",
+   "na"
+  ],
+  "fish trap": [
+   "yana"
+  ],
+  "pond": [
+   "ike"
+  ],
+  "catch": [
+   "toru"
+  ]
+ },
+ "231": {
+  "fish": [
+   "uo",
+   "na"
+  ],
+  "spot": [],
+  "dot": [],
+  "mark": [
+   "śiruśi"
+  ]
+ },
+ "233": {
+  "fish": [
+   "uo",
+   "na"
+  ],
+  "cut fish": [
+   "namasu"
+  ],
+  "dried fish": [],
+  "band": [
+   "obi"
+  ]
+ },
+ "235": {
+  "fish": [
+   "uo",
+   "na"
+  ],
+  "roof": [],
+  "cover": [
+   "ōu"
+  ],
+  "lid": [
+   "phuta"
+  ]
+ },
+ "236": {
+  "fish": [
+   "uo",
+   "na"
+  ],
+  "roof": [],
+  "trap": [],
+  "house": [
+   "ie",
+   "ya"
+  ]
+ },
+ "240": {
+  "catfish": [],
+  "fish": [
+   "uo",
+   "na"
+  ],
+  "whiskers": [
+   "hige"
+  ],
+  "barbel": [
+   "hige"
+  ]
+ },
+ "255": {
+  "fish": [
+   "uo",
+   "na"
+  ],
+  "fin": [
+   "hata",
+   "hire"
+  ],
+  "lizard": [],
+  "scale": [
+   "uroko",
+   "iroko"
+  ]
+ },
+ "350": {
+  "roots": [
+   "ne"
+  ],
+  "plant": [
+   "kusa"
+  ],
+  "sprout": [
+   "me"
+  ],
+  "tuft": []
+ },
+ "368": {
+  "flag": [
+   "hata"
+  ],
+  "banner": [
+   "hata"
+  ],
+  "pennant": [
+   "hata"
+  ],
+  "pole": [
+   "sao",
+   "haśira"
+  ]
+ },
+ "388": {
+  "grain": [
+   "ine",
+   "ho"
+  ],
+  "ear": [
+   "mimi"
+  ],
+  "sheaf": [
+   "cuka"
+  ],
+  "bunch": []
+ },
+ "390": {
+  "tree": [
+   "ki"
+  ],
+  "branch": [
+   "e",
+   "eda"
+  ],
+  "twig": [
+   "śimoto",
+   "e"
+  ],
+  "fork": [
+   "mata"
+  ]
+ },
+ "400": {
+  "comb": [
+   "kuśi"
+  ],
+  "teeth": [
+   "ha"
+  ],
+  "rake": [],
+  "ladder": [
+   "haśi"
+  ]
+ },
+ "405": {
+  "branch": [
+   "e",
+   "eda"
+  ],
+  "tree": [
+   "ki"
+  ],
+  "twig": [
+   "śimoto",
+   "e"
+  ],
+  "sprout": [
+   "me"
+  ]
+ },
+ "407": {
+  "branch": [
+   "e",
+   "eda"
+  ],
+  "twig": [
+   "śimoto",
+   "e"
+  ],
+  "tree": [
+   "ki"
+  ],
+  "shoot": [
+   "me"
+  ]
+ },
+ "415": {
+  "lamp": [
+   "tomośibi"
+  ],
+  "rake": [],
+  "trident": [],
+  "fork": [
+   "mata"
+  ]
+ },
+ "416": {
+  "lamp": [
+   "tomośibi"
+  ],
+  "rake": [],
+  "stand": [
+   "tacu"
+  ],
+  "tier": []
+ },
+ "435": {
+  "zigzag": [],
+  "lightning": [
+   "ikajuci"
+  ],
+  "snake": [
+   "hemi",
+   "oroci"
+  ],
+  "turn": [
+   "meguru"
+  ]
+ },
+ "440": {
+  "doorway": [
+   "kado",
+   "to"
+  ],
+  "door": [
+   "to"
+  ],
+  "frame": [],
+  "gate": [
+   "kado"
+  ]
+ },
+ "455": {
+  "hearth": [
+   "kamado"
+  ],
+  "triangles": [],
+  "stones": [
+   "iśi"
+  ],
+  "fire": [
+   "hi"
+  ]
+ },
+ "460": {
+  "peaks": [
+   "mine",
+   "take"
+  ],
+  "mountains": [
+   "yama"
+  ],
+  "hills": [
+   "oka"
+  ],
+  "spikes": []
+ },
+ "503": {
+  "hill": [
+   "oka"
+  ],
+  "heap": [
+   "cuka"
+  ],
+  "stack": [],
+  "pile": [
+   "cuka"
+  ]
+ },
+ "520": {
+  "spear": [
+   "hoko"
+  ],
+  "arrow": [
+   "ya"
+  ],
+  "lance": [
+   "hoko"
+  ],
+  "point": [
+   "saki"
+  ]
+ },
+ "527": {
+  "box": [
+   "hako"
+  ],
+  "basket": [
+   "ko"
+  ],
+  "stool": [
+   "agura"
+  ],
+  "chest": [
+   "mune",
+   "hicu"
+  ]
+ },
+ "550": {
+  "drum": [
+   "cujumi"
+  ],
+  "pincers": [],
+  "tongs": [],
+  "claw": [
+   "cume"
+  ]
+ },
+ "555": {
+  "pincers": [],
+  "drum": [
+   "cujumi"
+  ],
+  "claw": [
+   "cume"
+  ],
+  "tongs": []
+ },
+ "575": {
+  "building": [
+   "ya",
+   "tono"
+  ],
+  "stand": [
+   "tacu"
+  ],
+  "shrine": [
+   "yaśiro",
+   "miya"
+  ],
+  "pedestal": []
+ },
+ "585": {
+  "tent": [],
+  "hearth": [
+   "kamado"
+  ],
+  "hut": [
+   "io"
+  ],
+  "stand": [
+   "tacu"
+  ]
+ },
+ "590": {
+  "box": [
+   "hako"
+  ],
+  "pole": [
+   "sao",
+   "haśira"
+  ],
+  "flag": [
+   "hata"
+  ],
+  "standard": [
+   "hata"
+  ]
+ },
+ "595": {
+  "box": [
+   "hako"
+  ],
+  "pole": [
+   "sao",
+   "haśira"
+  ],
+  "basket": [
+   "ko"
+  ],
+  "standard": [
+   "hata"
+  ]
+ },
+ "615": {
+  "grid": [],
+  "field": [
+   "no",
+   "ta"
+  ],
+  "net": [
+   "ami"
+  ],
+  "wall": [
+   "kaki"
+  ]
+ },
+ "617": {
+  "grid": [],
+  "fields": [
+   "no",
+   "ta"
+  ],
+  "nets": [
+   "ami"
+  ],
+  "walls": [
+   "kaki"
+  ]
+ },
+ "621": {
+  "door": [
+   "to"
+  ],
+  "box": [
+   "hako"
+  ],
+  "frame": [],
+  "cabinet": []
+ },
+ "690": {
+  "cross": [],
+  "crossroads": [
+   "cimata"
+  ],
+  "junction": [
+   "cimata"
+  ],
+  "meet": [
+   "au"
+  ]
+ },
+ "692": {
+  "cross": [],
+  "crossroads": [
+   "cimata"
+  ],
+  "junction": [
+   "cimata"
+  ],
+  "band": [
+   "obi"
+  ]
+ },
+ "705": {
+  "churn": [],
+  "pot": [
+   "nabe"
+  ],
+  "stick": [
+   "cue",
+   "śimoto"
+  ],
+  "stir": [
+   "kaku"
+  ]
+ },
+ "706": {
+  "churn": [],
+  "drop": [
+   "śijuku"
+  ],
+  "pot": [
+   "nabe"
+  ],
+  "stir": [
+   "kaku"
+  ]
+ },
+ "717": {
+  "paw": [
+   "aśi"
+  ],
+  "hand": [
+   "te"
+  ],
+  "bundle": [
+   "cuka"
+  ],
+  "rake": []
+ },
+ "740": {
+  "jar": [
+   "mika"
+  ],
+  "pot": [
+   "nabe"
+  ],
+  "vessel": [
+   "ke"
+  ],
+  "handle": [
+   "e",
+   "cuka"
+  ]
+ },
+ "741": {
+  "jar": [
+   "mika"
+  ],
+  "pot": [
+   "nabe"
+  ],
+  "vessel": [
+   "ke"
+  ],
+  "fill": [
+   "micu"
+  ]
+ },
+ "742": {
+  "jar": [
+   "mika"
+  ],
+  "pot": [
+   "nabe"
+  ],
+  "vessel": [
+   "ke"
+  ],
+  "fill": [
+   "micu"
+  ]
+ },
+ "760": {
+  "pot": [
+   "nabe"
+  ],
+  "sprout": [
+   "me"
+  ],
+  "plant": [
+   "kusa"
+  ],
+  "horns": [
+   "cuno"
+  ]
+ },
+ "790": {
+  "leaf": [
+   "ha"
+  ],
+  "seed": [
+   "tane"
+  ],
+  "eye": [
+   "me"
+  ],
+  "diamond": []
+ },
+ "798": {
+  "crab": [
+   "kani"
+  ],
+  "claw": [
+   "cume"
+  ],
+  "pincer": [],
+  "shell": [
+   "kai"
+  ]
+ },
+ "803": {
+  "leaf": [
+   "ha"
+  ],
+  "tree": [
+   "ki"
+  ],
+  "vein": [],
+  "pipal": []
+ },
+ "806": {
+  "leaf": [
+   "ha"
+  ],
+  "seed": [
+   "tane"
+  ],
+  "sprout": [
+   "me"
+  ],
+  "vein": []
+ },
+ "817": {
+  "leaf": [
+   "ha"
+  ],
+  "bud": [
+   "me"
+  ],
+  "seed": [
+   "tane"
+  ],
+  "point": [
+   "saki"
+  ]
+ },
+ "820": {
+  "wheel": [
+   "kuruma"
+  ],
+  "spokes": [],
+  "sun": [
+   "hi"
+  ],
+  "star": [
+   "hośi"
+  ]
+ },
+ "832": {
+  "eye": [
+   "me"
+  ],
+  "seed": [
+   "tane"
+  ],
+  "almond": [],
+  "pupil": []
+ },
+ "840": {
+  "leaves": [
+   "ha"
+  ],
+  "eyes": [
+   "me"
+  ],
+  "pair": [],
+  "seeds": [
+   "tane"
+  ]
+ },
+ "861": {
+  "diamond": [],
+  "bud": [
+   "me"
+  ],
+  "leaf": [
+   "ha"
+  ],
+  "point": [
+   "saki"
+  ]
+ },
+ "892": {
+  "bow": [
+   "yumi"
+  ],
+  "arrow": [
+   "ya"
+  ],
+  "shoot": [
+   "me"
+  ],
+  "archer": []
+ },
+ "900": {
+  "crescent": [
+   "mikajuki"
+  ],
+  "moon": [
+   "cuki"
+  ],
+  "curve": [
+   "kuma"
+  ],
+  "bow": [
+   "yumi"
+  ]
+ },
+ "904": {
+  "crescents": [
+   "mikajuki"
+  ],
+  "moons": [
+   "cuki"
+  ],
+  "curves": [
+   "kuma"
+  ],
+  "waves": [
+   "nami"
+  ]
+ },
+ "920": {
+  "crescent": [
+   "mikajuki"
+  ],
+  "moon": [
+   "cuki"
+  ],
+  "leaf": [
+   "ha"
+  ],
+  "bud": [
+   "me"
+  ]
+ },
+ "923": {
+  "boomerang": [],
+  "crescent": [
+   "mikajuki"
+  ],
+  "moon": [
+   "cuki"
+  ],
+  "bend": [
+   "kuma"
+  ]
+ }
+}

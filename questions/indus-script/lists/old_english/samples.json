@@ -1,0 +1,692 @@
+{
+ "A_names": [
+  {
+   "name": "Hæðcyn",
+   "type": "person",
+   "morphemes": [
+    "hæþcyn"
+   ],
+   "gloss": "name",
+   "source": "Beowulf"
+  },
+  {
+   "name": "Exanmūþa",
+   "type": "place",
+   "morphemes": [
+    "exe",
+    "mūþ"
+   ],
+   "gloss": "Exe + mouth",
+   "source": "ASC"
+  },
+  {
+   "name": "Cynebil",
+   "type": "person",
+   "morphemes": [
+    "cyne",
+    "bill"
+   ],
+   "gloss": "royal + sword",
+   "source": "Bede"
+  },
+  {
+   "name": "Burgrēd",
+   "type": "person",
+   "morphemes": [
+    "burg",
+    "rǣd"
+   ],
+   "gloss": "fortress + counsel",
+   "source": "ASC"
+  },
+  {
+   "name": "Crēcaland",
+   "type": "place",
+   "morphemes": [
+    "crēcas",
+    "land"
+   ],
+   "gloss": "Greeks + land",
+   "source": "OE Orosius"
+  },
+  {
+   "name": "Cwichelm",
+   "type": "person",
+   "morphemes": [
+    "cwic",
+    "helm"
+   ],
+   "gloss": "living + helmet",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Æþelstān",
+   "type": "person",
+   "morphemes": [
+    "æþel",
+    "stān"
+   ],
+   "gloss": "noble + stone",
+   "source": "ASC; Brunanburh"
+  },
+  {
+   "name": "Ingwald",
+   "type": "person",
+   "morphemes": [
+    "ing",
+    "weald"
+   ],
+   "gloss": "Ing + power",
+   "source": "Bede"
+  },
+  {
+   "name": "Hǣstingas",
+   "type": "group",
+   "morphemes": [
+    "hǣsta"
+   ],
+   "gloss": "name",
+   "source": "ASC"
+  },
+  {
+   "name": "Ēanfrið",
+   "type": "person",
+   "morphemes": [
+    "ēan",
+    "friþ"
+   ],
+   "gloss": "name + peace",
+   "source": "Bede"
+  },
+  {
+   "name": "Billfrið",
+   "type": "person",
+   "morphemes": [
+    "bill",
+    "friþ"
+   ],
+   "gloss": "sword + peace",
+   "source": "Lindisfarne Gospels colophon"
+  },
+  {
+   "name": "Heaþorīc",
+   "type": "person",
+   "morphemes": [
+    "heaþu",
+    "rīc"
+   ],
+   "gloss": "strife + ruler",
+   "source": "Widsith"
+  },
+  {
+   "name": "Ealhswīð",
+   "type": "person",
+   "morphemes": [
+    "ealh",
+    "swīþ"
+   ],
+   "gloss": "temple + strong",
+   "source": "ASC"
+  },
+  {
+   "name": "Eoforwīc",
+   "type": "place",
+   "morphemes": [
+    "eofor",
+    "wīc"
+   ],
+   "gloss": "boar + settlement",
+   "source": "ASC"
+  },
+  {
+   "name": "Hǣreð",
+   "type": "person",
+   "morphemes": [
+    "hǣreþ"
+   ],
+   "gloss": "name",
+   "source": "Beowulf"
+  },
+  {
+   "name": "Æþelflǣd",
+   "type": "person",
+   "morphemes": [
+    "æþel",
+    "flǣd"
+   ],
+   "gloss": "noble + beauty",
+   "source": "ASC"
+  },
+  {
+   "name": "Ūhtrēd",
+   "type": "person",
+   "morphemes": [
+    "ūht",
+    "rǣd"
+   ],
+   "gloss": "dawn + counsel",
+   "source": "ASC"
+  },
+  {
+   "name": "Onela",
+   "type": "person",
+   "morphemes": [
+    "onela"
+   ],
+   "gloss": "name",
+   "source": "Beowulf"
+  },
+  {
+   "name": "Cyningestūn",
+   "type": "place",
+   "morphemes": [
+    "cyning",
+    "tūn"
+   ],
+   "gloss": "king + farmstead",
+   "source": "ASC"
+  },
+  {
+   "name": "Cymenesōra",
+   "type": "place",
+   "morphemes": [
+    "cymen",
+    "ōra"
+   ],
+   "gloss": "name + shore",
+   "source": "ASC"
+  },
+  {
+   "name": "Æscwine",
+   "type": "person",
+   "morphemes": [
+    "æsc",
+    "wine"
+   ],
+   "gloss": "ash + friend",
+   "source": "ASC"
+  },
+  {
+   "name": "Hildeburh",
+   "type": "person",
+   "morphemes": [
+    "hild",
+    "burg"
+   ],
+   "gloss": "battle + fortress",
+   "source": "Beowulf"
+  },
+  {
+   "name": "Bēanstān",
+   "type": "person",
+   "morphemes": [
+    "bēan",
+    "stān"
+   ],
+   "gloss": "bean + stone",
+   "source": "Beowulf"
+  },
+  {
+   "name": "Lyge",
+   "type": "river",
+   "morphemes": [
+    "lyge"
+   ],
+   "gloss": "Lea",
+   "source": "ASC"
+  },
+  {
+   "name": "Apuldre",
+   "type": "place",
+   "morphemes": [
+    "apuldor"
+   ],
+   "gloss": "apple tree",
+   "source": "ASC"
+  },
+  {
+   "name": "Bearwe",
+   "type": "place",
+   "morphemes": [
+    "bearu"
+   ],
+   "gloss": "grove",
+   "source": "OE Bede"
+  },
+  {
+   "name": "Englaland",
+   "type": "place",
+   "morphemes": [
+    "engle",
+    "land"
+   ],
+   "gloss": "Angles + land",
+   "source": "ASC"
+  },
+  {
+   "name": "Peada",
+   "type": "person",
+   "morphemes": [
+    "peada"
+   ],
+   "gloss": "name",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Baþanceaster",
+   "type": "place",
+   "morphemes": [
+    "bæþ",
+    "ceaster"
+   ],
+   "gloss": "bath + Roman town",
+   "source": "ASC"
+  },
+  {
+   "name": "Hrēðel",
+   "type": "person",
+   "morphemes": [
+    "hrēþel"
+   ],
+   "gloss": "name",
+   "source": "Beowulf"
+  },
+  {
+   "name": "Ēlig",
+   "type": "place",
+   "morphemes": [
+    "ēlig"
+   ],
+   "gloss": "name",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Ōslāf",
+   "type": "person",
+   "morphemes": [
+    "ōs",
+    "lāf"
+   ],
+   "gloss": "god + remnant",
+   "source": "Beowulf"
+  },
+  {
+   "name": "Grantaceaster",
+   "type": "place",
+   "morphemes": [
+    "granta",
+    "ceaster"
+   ],
+   "gloss": "Granta + Roman town",
+   "source": "OE Bede"
+  },
+  {
+   "name": "Ealdfrið",
+   "type": "person",
+   "morphemes": [
+    "eald",
+    "friþ"
+   ],
+   "gloss": "old + peace",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Æþelingaēg",
+   "type": "place",
+   "morphemes": [
+    "æþeling",
+    "ēg"
+   ],
+   "gloss": "prince + island",
+   "source": "ASC"
+  },
+  {
+   "name": "Ēadwig",
+   "type": "person",
+   "morphemes": [
+    "ēad",
+    "wīg"
+   ],
+   "gloss": "prosperity + fight",
+   "source": "ASC"
+  },
+  {
+   "name": "Westseaxe",
+   "type": "group",
+   "morphemes": [
+    "west",
+    "seaxe"
+   ],
+   "gloss": "west + Saxons",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Æþelþrȳð",
+   "type": "person",
+   "morphemes": [
+    "æþel",
+    "þrȳþ"
+   ],
+   "gloss": "noble + strength",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Æþelbald",
+   "type": "person",
+   "morphemes": [
+    "æþel",
+    "beald"
+   ],
+   "gloss": "noble + bold",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Ōsþrȳð",
+   "type": "person",
+   "morphemes": [
+    "ōs",
+    "þrȳþ"
+   ],
+   "gloss": "god + strength",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Grendel",
+   "type": "deity",
+   "morphemes": [
+    "grendel"
+   ],
+   "gloss": "name",
+   "source": "Beowulf"
+  },
+  {
+   "name": "Ēanflǣd",
+   "type": "person",
+   "morphemes": [
+    "ēan",
+    "flǣd"
+   ],
+   "gloss": "name + beauty",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Wīsle",
+   "type": "river",
+   "morphemes": [
+    "wīsle"
+   ],
+   "gloss": "Vistula",
+   "source": "OE Orosius"
+  },
+  {
+   "name": "Winterfylleþ",
+   "type": "other",
+   "morphemes": [
+    "winter",
+    "fylleþ"
+   ],
+   "gloss": "winter + full moon",
+   "source": "Bede; OE Martyrology; Menologium"
+  },
+  {
+   "name": "Æþelfrið",
+   "type": "person",
+   "morphemes": [
+    "æþel",
+    "friþ"
+   ],
+   "gloss": "noble + peace",
+   "source": "Bede; ASC"
+  },
+  {
+   "name": "Wealhstōd",
+   "type": "person",
+   "morphemes": [
+    "wealhstōd"
+   ],
+   "gloss": "interpreter",
+   "source": "Bede"
+  },
+  {
+   "name": "Meretūn",
+   "type": "place",
+   "morphemes": [
+    "mere",
+    "tūn"
+   ],
+   "gloss": "lake + farmstead",
+   "source": "ASC"
+  },
+  {
+   "name": "Brūnanburh",
+   "type": "place",
+   "morphemes": [
+    "brūna",
+    "burg"
+   ],
+   "gloss": "name + fortress",
+   "source": "Brunanburh; ASC"
+  },
+  {
+   "name": "Lēofsunu",
+   "type": "person",
+   "morphemes": [
+    "lēof",
+    "sunu"
+   ],
+   "gloss": "dear + son",
+   "source": "Maldon"
+  },
+  {
+   "name": "Acca",
+   "type": "person",
+   "morphemes": [
+    "acca"
+   ],
+   "gloss": "name",
+   "source": "Bede; ASC"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "carrier",
+   "word": "berend"
+  },
+  {
+   "english": "woman",
+   "word": "wīf"
+  },
+  {
+   "english": "cover",
+   "word": "wrigels"
+  },
+  {
+   "english": "hill",
+   "word": "hyll"
+  },
+  {
+   "english": "staff",
+   "word": "sāgol"
+  },
+  {
+   "english": "bunch",
+   "word": "clyster"
+  },
+  {
+   "english": "peaks",
+   "word": "copp"
+  },
+  {
+   "english": "curves",
+   "word": "byge"
+  },
+  {
+   "english": "scale",
+   "word": "scealu"
+  },
+  {
+   "english": "bundle",
+   "word": "byrþen"
+  },
+  {
+   "english": "building",
+   "word": "bold"
+  },
+  {
+   "english": "basket",
+   "word": "mand"
+  },
+  {
+   "english": "stack",
+   "word": "hēap"
+  },
+  {
+   "english": "shoot",
+   "word": "cīþ"
+  },
+  {
+   "english": "stick",
+   "word": "sticca"
+  },
+  {
+   "english": "body",
+   "word": "līchama"
+  },
+  {
+   "english": "heads",
+   "word": "hēafod"
+  },
+  {
+   "english": "fields",
+   "word": "æcer"
+  },
+  {
+   "english": "hand",
+   "word": "folm"
+  },
+  {
+   "english": "hook",
+   "word": "hōc"
+  },
+  {
+   "english": "mark",
+   "word": "tācn"
+  },
+  {
+   "english": "snake",
+   "word": "wyrm"
+  },
+  {
+   "english": "fishing",
+   "word": "fiscaþ"
+  },
+  {
+   "english": "fish trap",
+   "word": "lēap"
+  },
+  {
+   "english": "band",
+   "word": "bend"
+  },
+  {
+   "english": "cabinet",
+   "word": "cofa"
+  },
+  {
+   "english": "shrine",
+   "word": "hearg"
+  },
+  {
+   "english": "worker",
+   "word": "wyrhta"
+  },
+  {
+   "english": "catch",
+   "word": "fōn"
+  },
+  {
+   "english": "waves",
+   "word": "ȳþ"
+  },
+  {
+   "english": "teeth",
+   "word": "tōþ"
+  },
+  {
+   "english": "pond",
+   "word": "pōl"
+  },
+  {
+   "english": "point",
+   "word": "ord"
+  },
+  {
+   "english": "net",
+   "word": "nett"
+  },
+  {
+   "english": "star",
+   "word": "tungol"
+  },
+  {
+   "english": "twig",
+   "word": "telga"
+  },
+  {
+   "english": "door",
+   "word": "dor"
+  },
+  {
+   "english": "load",
+   "word": "hlæst"
+  },
+  {
+   "english": "fin",
+   "word": "finn"
+  },
+  {
+   "english": "fishing",
+   "word": "fiscnoþ"
+  },
+  {
+   "english": "carrier",
+   "word": "bǣrmann"
+  },
+  {
+   "english": "stones",
+   "word": "stān"
+  },
+  {
+   "english": "hook",
+   "word": "angel"
+  },
+  {
+   "english": "twig",
+   "word": "twig"
+  },
+  {
+   "english": "star",
+   "word": "steorra"
+  },
+  {
+   "english": "shrine",
+   "word": "wēoh"
+  },
+  {
+   "english": "handle",
+   "word": "helfe"
+  },
+  {
+   "english": "stick",
+   "word": "stæf"
+  },
+  {
+   "english": "shell",
+   "word": "scealu"
+  },
+  {
+   "english": "building",
+   "word": "getimbre"
+  }
+ ]
+}
