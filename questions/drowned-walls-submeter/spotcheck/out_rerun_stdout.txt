@@ -1,0 +1,25 @@
+analysis/run_submeter_scan.py:263: RuntimeWarning: invalid value encountered in cast
+  zf = np.where(valid_mask, z.astype(np.float64), 0.0)
+=== ARM 1: LAKE HURON ALPENA-AMBERLEY RIDGE & THUNDER BAY ===
+Loaded 57 NOAA enc_general cultural features (57 vertices)
+Fetching 87 Lake Huron BAG tiles (0.50 m / 1.00 m / 2.00 m)...
+Fetched all 87 Lake Huron tiles in 14.0s
+Running Arm 1 Lake Huron synthetic calibration (12 walls + 12 seams)...
+Arm 1 Calibration: controls=2/3 | synth_walls=11/12 | synth_seams_rejected=11/12
+
+=== ARM 2: GERMAN WESTERN BALTIC (0.25 m TEST AREAS & 0.50 m 2024∩2025 FEHMARN) ===
+Loaded 484 PANGAEA.988426 German Baltic WWII munition piles
+  BALTIC_Test1: 1039x1498 @ 0.25m | untrawled=0.0678 km2 | unmasked=0, rings=0 | synth_wall=PASS
+  BALTIC_Test2: 1693x2724 @ 0.25m | untrawled=0.2219 km2 | unmasked=2, rings=0 | synth_wall=PASS
+  BALTIC_Test3: 1390x2169 @ 0.25m | untrawled=0.1677 km2 | unmasked=0, rings=0 | synth_wall=PASS
+  BALTIC_Test4: 1105x1617 @ 0.25m | untrawled=0.0718 km2 | unmasked=2, rings=0 | synth_wall=PASS
+  BALTIC_Test5: 571x837 @ 0.25m | untrawled=0.0137 km2 | unmasked=0, rings=0 | synth_wall=PASS
+Co-registering Fehmarn Belt 2024 & 2025 (0.50 m/px) for temporal-persistence scan...
+  Aligned overlap shape=(7588, 4608) (shift dr=402, dc=-91) | shared valid=4.948 km2
+Running Arm 2B Fehmarn Belt synthetic persistent-wall (5) + transient-trawl (10) calibration...
+Arm 2 Calibration: persistent_synth_walls=8/10 | transient_trawl_rejected=10/10
+
+================ DONE ================
+Elapsed: 19.4s | ALL 4 CALIBRATION GATES PASSED: True
+ARM 1 (Lake Huron): 16.485 km2 valid | 43 unmasked linear | 1 unmasked rings | 0 corners | 1 V-funnels
+ARM 2 (Western Baltic): 5.491 km2 valid | 71 unmasked persistent linear | 1 rings | 0 corners | 1 V-funnels

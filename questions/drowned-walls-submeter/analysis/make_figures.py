@@ -37,25 +37,27 @@ def make_tiles(s: dict) -> None:
     h = s["arm1_huron"]
     b = s["arm2_baltic"]
     total_km2 = h["valid_km2"] + b["total_valid_km2"]
+    # Tiles 2 and 3 are spot-check numbers (spotcheck/out_controls_seams.json, out_sens_huron.json,
+    # out_sens_baltic.json), not fields of scan_summary.json.
     items = [
         (
-            f"{total_km2:.2f} km²",
-            f"sub-meter to 2 m sonar seafloor audited: {h['valid_km2']:.2f} km² in Lake Huron (0.5–2 m NOAA BAG) + {b['total_valid_km2']:.2f} km² in Western Baltic (0.25–0.5 m BSH)",
+            f"{total_km2:.1f} km²",
+            f"of lake and sea floor searched: {h['valid_km2']:.1f} km² of NOAA grids in western Lake Huron and {b['total_valid_km2']:.1f} km² of Baltic slope grids (the finest are 1 m surveys)",
             False,
         ),
         (
-            "4 / 4 gates",
-            f"pre-registered calibration passed: {cal['arm1_synth_walls_recovered']}/12 Huron walls, {cal['arm1_synth_seams_rejected']}/12 seams, {cal['arm2_synth_walls_recovered']}/10 Baltic walls, {cal['arm2_transient_trawl_rejected']}/10 transient trawls rejected",
+            "9 of 12",
+            "planted false steps rejected by the filter the plan names, where it required 11. By the plan's own rule the result is inconclusive",
             False,
         ),
         (
-            "0 prehistoric",
-            "unmapped Stone Age stone walls, caribou drive-lanes, or hunting blinds confirmed after 100% visual hillshade audit of Lake Huron hits & Baltic anomaly inspection",
+            "1 in 569",
+            "rows of stones like the Blinkerwall found when planted at random in the Lake Huron grids (none of 120 in the Baltic). A smooth bank half a metre high is found most of the time",
             False,
         ),
         (
-            "Null",
-            "Lake Huron hits resolve to Devonian limestone scarps/karst (31), glacial moraines (8), and swath edges (4); Baltic shows multi-year trawl scars + 1 Kiel Bay wreck/scour anomaly",
+            "Inconclusive",
+            "no unexplained continuous bank of stone in these grids; the method cannot see a row of separate stones, and no known structure lies in the area searched",
             True,
         ),
     ]
@@ -68,41 +70,43 @@ def make_tiles(s: dict) -> None:
 
 
 def make_sonar_gallery() -> None:
+    # Slides 2 and 5 use pictures made by no committed code (first run only); the published
+    # sonar_gallery.html was patched by hand on 2026-11-27 with the texts below.
     slides = [
         {
-            "btn": "1. Huron 50 cm Wreck (Control)",
-            "title": "Lake Huron 0.50 m/px Positive Control: Thunder Bay Shipwreck (H13652, 45.1055° N, −83.2184° W)",
-            "note": "Real 50 cm NOAA multibeam on a glassy-flat lakebed (background σ = 5.3 cm): wooden vessel framing and keel stand out cleanly (+1.26 m BPI) and link 5.9 m to NOAA ENC Wreck_pt (red mask).",
+            "btn": "1. A charted wreck",
+            "title": "Lake Huron, Thunder Bay: a charted shipwreck in survey H13652 (45.1055° N, 83.2184° W)",
+            "note": "A charted wreck in a 0.5 m NOAA grid. It stands about 1.3 m above its surroundings, and the detector marks it and links it to the chart (red). The 5.9 m in the first report is the distance from the centre of the tile, which was placed on the charted position, not from the wreck.",
             "img": encode_preview_jpeg(PREV / "CTRL_HURON_WRECK_H13652.png"),
         },
         {
-            "btn": "2. Planted 0.50 m Drive-Lane (Calib)",
-            "title": "Sensitivity Gate: Synthetic 60 m × 2.5 m × 0.50 m Caribou Drive-Lane on Real 50 cm Lake Huron Noise",
-            "note": "At 50 cm resolution, a 50 cm tall Stone Age boulder wall stands out unmistakably on both hillshade and BPI; the detector recovers 11/12 (91.7%) planted walls and rejects 11/12 (91.7%) step seams.",
+            "btn": "2. Planted smooth wall",
+            "title": "A smooth synthetic wall, 60 m × 2.5 m × 0.5 m, added to a real 0.5 m tile",
+            "note": "An unbroken ridge, unlike any real structure: the real ones are rows of separate stones. The detector found 11 of 12 such walls on the quietest tiles. Rows of stones of the real sizes, planted in these grids, were found once in about 570 tries. This picture was made by code that is not in the repository.",
             "img": encode_preview_jpeg(PREV / "CALIB_HURON_PLANTED_50CM.png"),
         },
         {
-            "btn": "3. Huron Alpena–Amberley Scarp",
-            "title": "Mid-Lake Alpena–Amberley Ridge (W00499, H3_RIDGE_11 & H3_RIDGE_17, −53 m to −78 m depth)",
-            "note": "Dry land during the 9,000-year-old Lake Stanley lowstand: 2 m sonar resolves dramatic semicircular Devonian limestone paleo-mesas and Six Fathom Scarp cliffs (red-masked as natural escarpments), with zero unmapped stone walls.",
+            "btn": "3. Mid-lake Huron, 2 m grid",
+            "title": "Mid-lake Lake Huron, survey W00499 (tiles H3_RIDGE_11 and H3_RIDGE_17, 53 to 78 m deep)",
+            "note": "Ground that was dry land about 9,000 years ago, in a 2 m grid. The first report read the curved benches as limestone ledges; that reading was not checked against a geological map. Red marks ridges removed by filters, not ridges shown to be natural. At this grid size the detector finds only half of the plan's own planted walls.",
             "img": encode_preview_jpeg(PREV / "HURON_H3_RIDGE_17.png"),
         },
         {
-            "btn": "4. Huron 1 m Karst & Scarp",
-            "title": "Lake Huron Nearshore Shelf (H2_H12964_08, 1.0 m/px, 45.1342° N, −83.1881° W, −9.9 m depth)",
-            "note": "Rank #1 unmasked Lake Huron ridge (88.1 m): direct shaded-relief inspection resolves it cleanly to a scalloped Devonian Traverse Group limestone escarpment (cuesta ledge), not a constructed boulder wall.",
+            "btn": "4. Huron: the top-ranked ridge",
+            "title": "Lake Huron, near shore (tile H2_H12964_08, 1 m grid, 45.1342° N, 83.1881° W, 9.9 m deep)",
+            "note": "The highest-scoring ridge the filters kept (88 m long). The first report read it as a limestone ledge; that is a reading of this picture, not checked against a map.",
             "img": encode_preview_jpeg(PREV / "HURON_H2_H12964_08.png"),
         },
         {
-            "btn": "5. Kiel Bay 25 cm Scour Anomaly",
-            "title": "Western Baltic 0.25 m/px (BALTIC_Test4, Kiel Bay, 54.5531° N, 10.2373° E)",
-            "note": "Untrawled seafloor anomaly: a sharp 54 m curved obstruction (14.6° slope) with a flared hydrodynamic comet-mark sediment wake and ~16 m × 5 m hull-like debris at its SE flank, avoided by surrounding bottom-trawl lanes (black mask)—consistent with a modern small wreck/obstruction.",
+            "btn": "5. Kiel Bay: a charted wreck",
+            "title": "Kiel Bay, Baltic (Test4, 54.5531° N, 10.2373° E): a 1 m survey interpolated to 0.25 m",
+            "note": "A 54 m ridge with a broad tail of disturbed seabed. Chart data (read through OpenStreetMap) show a submerged wreck 69 m away and foul ground 59 m away; the study checked no chart. Black areas are trawl marks masked out. This picture was made by code that is not in the repository.",
             "img": encode_preview_jpeg(PREV / "BALTIC_2A_BALTIC_Test4_01.png"),
         },
         {
-            "btn": "6. Fehmarn 2024 vs 2025 Trawls",
-            "title": "Western Baltic 0.50 m/px Temporal Persistence (Fehmarn Belt, 54.5666° N, 10.7743° E)",
-            "note": "Left: 2024 slope; Center: 2025 slope; Right: 2024∩2025 persistence minimum. While single-year trawl scars vanish (10/10 synthetic rejected), heavy beaded otter-board trawl grooves persist > 1 year in cohesive Fehmarn mud and explain the persistent linear hits.",
+            "btn": "6. Fehmarn: two years of trawl marks",
+            "title": "Fehmarn Belt, Baltic, in 2024 and 2025 (54.5666° N, 10.7743° E)",
+            "note": "Left 2024, centre 2025, right the smaller of the two. Trawl marks cover the sea floor and many last more than a year, so comparing the years does not clear them. The 67 lines kept here were all labelled trawl marks; 7 were looked at. The planted one-year marks vanish by construction, so that check tests nothing.",
             "img": encode_preview_jpeg(PREV / "BALTIC_2B_01_Fehmarn.png"),
         },
     ]
@@ -161,19 +165,21 @@ def make_sonar_gallery() -> None:
 def make_calibration_summary(s: dict, va: dict) -> None:
     cal = s["calibration"]
     rows = [
-        ("Lake Huron: Real Shipwreck Controls (70 m center gate)", cal["arm1_wreck_controls_passed"], cal["arm1_wreck_controls_total"], 66.7, "#0ea5e9"),
-        ("Lake Huron: Planted 0.50 m Caribou Drive-Lanes", cal["arm1_synth_walls_recovered"], cal["arm1_synth_walls_total"], 83.3, "#10b981"),
-        ("Lake Huron: Planted 0.50 m Step Seams Rejected", cal["arm1_synth_seams_rejected"], cal["arm1_synth_seams_total"], 91.7, "#6366f1"),
-        ("Western Baltic: Planted Blinkerwall-Scale Walls", cal["arm2_synth_walls_recovered"], cal["arm2_synth_walls_total"], 80.0, "#10b981"),
-        ("Western Baltic: Transient Single-Year Trawls Rejected", cal["arm2_transient_trawl_rejected"], cal["arm2_transient_trawl_total"], 90.0, "#6366f1"),
+        ("Lake Huron: charted wrecks (program's own test)", cal["arm1_wreck_controls_passed"], cal["arm1_wreck_controls_total"], 66.7, "#0ea5e9"),
+        ("Lake Huron: planted smooth walls, quietest tiles", cal["arm1_synth_walls_recovered"], cal["arm1_synth_walls_total"], 83.3, "#10b981"),
+        ("Lake Huron: planted false steps not passed", cal["arm1_synth_seams_rejected"], cal["arm1_synth_seams_total"], 91.7, "#6366f1"),
+        # as the plan words the check ("via SEAM_STEP"): spotcheck/out_controls_seams.json
+        ("Lake Huron: false steps, as the plan words it", 9, 12, 91.7, "#dc2626"),
+        ("Baltic: planted slope bumps (no height)", cal["arm2_synth_walls_recovered"], cal["arm2_synth_walls_total"], 80.0, "#10b981"),
+        ("Baltic: one-year trawl marks (cannot fail)", cal["arm2_transient_trawl_rejected"], cal["arm2_transient_trawl_total"], 90.0, "#6366f1"),
     ]
-    w_svg, h_svg = 760, 265
-    bar_x0, bar_w = 345, 330
+    w_svg, h_svg = 760, 300
+    bar_x0, bar_w = 345, 312
     parts = [
         f'<svg viewBox="0 0 {w_svg} {h_svg}" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;height:auto;display:block;margin:1rem 0;font-family:system-ui,-apple-system,sans-serif;">',
-        '<rect width="760" height="265" rx="8" fill="#ffffff" stroke="#e2e8f0"/>',
-        '<text x="18" y="28" font-size="14" font-weight="700" fill="#0f172a">Pre-Registered Calibration Gates (4/4 Passed, Zero Amendments)</text>',
-        '<text x="18" y="45" font-size="11.5" fill="#475569">Dashed tick marks show the locked pass threshold for each arm; all four gates passed on real sonar noise.</text>',
+        '<rect width="760" height="300" rx="8" fill="#ffffff" stroke="#e2e8f0"/>',
+        '<text x="18" y="28" font-size="14" font-weight="700" fill="#0f172a">The plan&#39;s checks on the method: one fails as worded</text>',
+        '<text x="18" y="45" font-size="11.5" fill="#475569">Dashed marks show the plan&#39;s pass line. As the plan words the false-step check, 9 of 12 fails.</text>',
     ]
     for idx, (lbl, num, den, gate_pct, col) in enumerate(rows):
         y = 72 + idx * 36
