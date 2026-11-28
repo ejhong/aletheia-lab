@@ -1,0 +1,58 @@
+analysis/run_submeter_scan.py:263: RuntimeWarning: invalid value encountered in cast
+  zf = np.where(valid_mask, z.astype(np.float64), 0.0)
+seed 0 done 91s
+seed 1 done 185s
+seed 2 done 273s
+blinkerwall_upper_bound|0.5 217 0 0.0 0.0
+blinkerwall_upper_bound|1.0 230 0 0.0 0.0
+blinkerwall_upper_bound|2.0 120 0 0.0 0.0
+blinkerwall_volume_matched_single_file|0.5 216 0 0.0 0.005
+blinkerwall_volume_matched_single_file|1.0 232 0 0.0 0.0
+blinkerwall_volume_matched_single_file|2.0 120 0 0.0 0.0
+blinkerwall_volume_matched|0.5 218 0 0.0 0.0
+blinkerwall_volume_matched|1.0 231 1 0.004 0.0
+blinkerwall_volume_matched|2.0 120 0 0.0 0.0
+boulder_line_d0.4-0.8_h0.7d_every1.5m|0.5 217 0 0.0 0.0
+boulder_line_d0.4-0.8_h0.7d_every1.5m|1.0 230 0 0.0 0.0
+boulder_line_d0.4-0.8_h0.7d_every1.5m|2.0 120 0 0.0 0.0
+boulder_line_d1.0-1.4_h0.9m_every2m|0.5 217 1 0.005 0.0
+boulder_line_d1.0-1.4_h0.9m_every2m|1.0 233 0 0.0 0.009
+boulder_line_d1.0-1.4_h0.9m_every2m|2.0 120 0 0.0 0.0
+ridge_1m_x_0.5m|0.5 219 211 0.963 0.877
+ridge_1m_x_0.5m|1.0 229 191 0.834 0.594
+ridge_1m_x_0.5m|2.0 120 0 0.0 0.0
+ridge_2m_x_0.3m|0.5 217 96 0.442 0.217
+ridge_2m_x_0.3m|1.0 229 22 0.096 0.057
+ridge_2m_x_0.3m|2.0 120 0 0.0 0.0
+study_wall_random_place|0.5 228 203 0.89 0.89
+study_wall_random_place|1.0 239 212 0.887 0.891
+study_wall_random_place|2.0 120 60 0.5 0.467
+study_wall_random_place|0.5|max_gridded_relief_m [0.496, 0.496]
+ridge_2m_x_0.3m|0.5|max_gridded_relief_m [0.296, 0.296]
+ridge_1m_x_0.5m|0.5|max_gridded_relief_m [0.474, 0.474]
+boulder_line_d0.4-0.8_h0.7d_every1.5m {'n_stones': 100, 'mean_d': 0.5910946008072601, 'max_h': 0.5579251582302167, 'mean_h': 0.41376622056508205, 'volume_m3': 8.494634959787028}
+boulder_line_d0.4-0.8_h0.7d_every1.5m|0.5|max_gridded_relief_m [0.458, 0.497]
+boulder_line_d1.0-1.4_h0.9m_every2m {'n_stones': 75, 'mean_d': 1.2115598616285024, 'max_h': 1.0499547837296241, 'mean_h': 0.9086698962213768, 'volume_m3': 53.90360555488891}
+boulder_line_d1.0-1.4_h0.9m_every2m|0.5|max_gridded_relief_m [0.985, 1.006]
+blinkerwall_volume_matched {'n_stones': 258, 'mean_d': 0.3834089822015121, 'max_h': 0.7365122758445487, 'mean_h': 0.23004538932090723, 'volume_m3': 8.134787806335922}
+blinkerwall_volume_matched|0.5|max_gridded_relief_m [0.647, 1.129]
+blinkerwall_volume_matched_single_file {'n_stones': 258, 'mean_d': 0.38564784199075025, 'max_h': 0.7167447579129917, 'mean_h': 0.23138870519445018, 'volume_m3': 8.134787806335925}
+blinkerwall_volume_matched_single_file|0.5|max_gridded_relief_m [0.631, 1.161]
+blinkerwall_upper_bound {'n_stones': 150, 'mean_d': 0.8967855537404942, 'max_h': 0.8385289225553548, 'mean_h': 0.6277498876183458, 'volume_m3': 43.99865007001655}
+blinkerwall_upper_bound|0.5|max_gridded_relief_m [0.773, 0.797]
+study_wall_random_place|1.0|max_gridded_relief_m [0.482, 0.482]
+ridge_2m_x_0.3m|1.0|max_gridded_relief_m [0.284, 0.284]
+ridge_1m_x_0.5m|1.0|max_gridded_relief_m [0.408, 0.411]
+boulder_line_d0.4-0.8_h0.7d_every1.5m|1.0|max_gridded_relief_m [0.234, 0.32]
+boulder_line_d1.0-1.4_h0.9m_every2m|1.0|max_gridded_relief_m [0.813, 0.919]
+blinkerwall_volume_matched|1.0|max_gridded_relief_m [0.354, 1.048]
+blinkerwall_volume_matched_single_file|1.0|max_gridded_relief_m [0.376, 1.088]
+blinkerwall_upper_bound|1.0|max_gridded_relief_m [0.603, 0.701]
+study_wall_random_place|2.0|max_gridded_relief_m [0.52, 0.52]
+ridge_2m_x_0.3m|2.0|max_gridded_relief_m [0.245, 0.246]
+ridge_1m_x_0.5m|2.0|max_gridded_relief_m [0.274, 0.286]
+boulder_line_d0.4-0.8_h0.7d_every1.5m|2.0|max_gridded_relief_m [0.089, 0.151]
+boulder_line_d1.0-1.4_h0.9m_every2m|2.0|max_gridded_relief_m [0.419, 0.55]
+blinkerwall_volume_matched|2.0|max_gridded_relief_m [0.125, 0.409]
+blinkerwall_volume_matched_single_file|2.0|max_gridded_relief_m [0.133, 0.354]
+blinkerwall_upper_bound|2.0|max_gridded_relief_m [0.308, 0.432]
