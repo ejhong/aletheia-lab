@@ -13,3 +13,13 @@ decided what the plan should test.
 
 To rerun: unpack the preprint's `tests_archive.zip` and fetch `inscriptions.csv` (see `MANIFEST.md`), then for
 example `python3 -I explore/where_score_comes_from.py <unpacked>/REP-1_tamil_vs_sanskrit <inscriptions.csv> out.json`.
+
+# Exploration after the results
+
+Also **exploratory**. Run on 27 November 2026 after the locked results existed. None of it is the plan's answer.
+
+| File | What it is |
+|---|---|
+| `with_dropped_lists.py`, `.json` | `analysis/run_all.py` unchanged, with the three lists the plan dropped (Finnish, Old Tamil A and B) put back. |
+| `tamil_first_translators.py`, `.json` | The two fresh Tamil name lists with their first translators' picture words. One of the four translators offered *kuṭam* for "pot". |
+| `jar_sign_when_shuffled.py`, `.json` | What the jar sign is read as in the preprint's Tamil list when the pictures are shuffled. |

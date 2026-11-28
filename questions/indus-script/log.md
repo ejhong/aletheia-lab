@@ -80,3 +80,18 @@ Dated entries, newest last: what was tried, what happened, what next.
 - So the locked run has seven controls and no fresh Tamil list. By the plan's rules its overall reading will be
   "Incomplete". The three dropped lists will be run separately, as labelled exploration.
 - No contest has been run on any new list up to this point.
+
+## 2026-11-27, results
+
+- Locked run (`analysis/run_all.py`): seven controls and the preprint's three lists. Overall "Incomplete" by the
+  plan's rule. Sumerian +112.7 (99 of 100) and Nahuatl +49.1 (84 of 100) pass; the pass floor is 46.9. Sumerian's
+  score is the jar sign read *dug* (pot, and "good" at the end of 14 names); without that sign it is −6.2.
+- Google's program run on the seven control lists: all 700 list-rounds agree with ours to two decimals.
+- Exploration after the results (`explore/`): the three dropped lists through the same program (Tamil A +7.7,
+  Tamil B −0.1, Finnish −16.8); the two Tamil name lists with their first translators' words (Tamil A +166.9
+  with *kuṭam* on offer, Tamil B −26.0 without); the jar sign's readings when the pictures are shuffled.
+- Against my priors: I gave 45% to "Tamil does not stand out", 35% mixed, 20% stands out. The locked run could
+  not say. The exploration points to "does not stand out", and for a reason sharper than I expected: one word.
+  I did not foresee that the study would fail on its own check.
+- Wrote `RESULTS.md`, the figures (`analysis/make_figures.py`), the site page, and the Deep memory topic entry.
+- Spending in all: $1.39 (Google's model: two review rounds, one replication program).

@@ -96,7 +96,7 @@ def carried():
     title = "What carries each list's score"
     o = [f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(title)}" xmlns="http://www.w3.org/2000/svg">']
     for j, (_, label, cls) in enumerate(series):
-        x = left + 150 * j
+        x = (left - 150) + (0, 160, 370)[j]
         o.append(f'<circle class="{cls}" style="opacity:1" cx="{x}" cy="14" r="5"/>')
         o.append(f'<text class="c-label-sm" x="{x + 10}" y="18">{esc(label)}</text>')
     for t in range(x_lo, x_hi + 1, step):

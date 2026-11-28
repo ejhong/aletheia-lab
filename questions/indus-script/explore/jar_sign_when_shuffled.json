@@ -1,0 +1,112 @@
+{
+ "note": "EXPLORATORY: the preprint's Tamil list, pictures shuffled; reading given to the jar sign",
+ "runs": 200,
+ "readings_for_jar_sign": [
+  {
+   "reading": "(unread)",
+   "runs": 84,
+   "names_it_is_in": 0,
+   "names_it_ends": 0
+  },
+  {
+   "reading": "kuṭi",
+   "runs": 30,
+   "names_it_is_in": 10,
+   "names_it_ends": 9
+  },
+  {
+   "reading": "mīṉ",
+   "runs": 20,
+   "names_it_is_in": 8,
+   "names_it_ends": 7
+  },
+  {
+   "reading": "makaḷ",
+   "runs": 19,
+   "names_it_is_in": 9,
+   "names_it_ends": 8
+  },
+  {
+   "reading": "il",
+   "runs": 18,
+   "names_it_is_in": 11,
+   "names_it_ends": 10
+  },
+  {
+   "reading": "var",
+   "runs": 8,
+   "names_it_is_in": 11,
+   "names_it_ends": 11
+  },
+  {
+   "reading": "pāmpu",
+   "runs": 6,
+   "names_it_is_in": 2,
+   "names_it_ends": 0
+  },
+  {
+   "reading": "vēḷ",
+   "runs": 6,
+   "names_it_is_in": 18,
+   "names_it_ends": 4
+  },
+  {
+   "reading": "mukam",
+   "runs": 2,
+   "names_it_is_in": 2,
+   "names_it_ends": 2
+  },
+  {
+   "reading": "tiṅkaḷ",
+   "runs": 2,
+   "names_it_is_in": 2,
+   "names_it_ends": 0
+  },
+  {
+   "reading": "kaṇi",
+   "runs": 2,
+   "names_it_is_in": 2,
+   "names_it_ends": 1
+  },
+  {
+   "reading": "māl",
+   "runs": 1,
+   "names_it_is_in": 6,
+   "names_it_ends": 1
+  }
+ ],
+ "commonest_name_endings_in_the_list": [
+  [
+   "ār",
+   104
+  ],
+  [
+   "ūr",
+   76
+  ],
+  [
+   "aṉ",
+   27
+  ],
+  [
+   "ar",
+   20
+  ],
+  [
+   "kiḻār",
+   19
+  ],
+  [
+   "ātaṉ",
+   13
+  ],
+  [
+   "kō",
+   13
+  ],
+  [
+   "nāṭu",
+   13
+  ]
+ ]
+}

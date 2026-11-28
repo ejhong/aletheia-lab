@@ -81,6 +81,8 @@ In all three, one common text-final sign meets one name-final word.
 
 The author's reply to the rebuttal says Tamil still leads when each sign is given another sign's picture words. For his own list that reproduces: +182 shuffled against +188 unshuffled, far above every control. It shows that the score does not depend on what the signs depict. Old English, which fails the contest proper, scores +55 with the pictures shuffled and beats its control in 157 of 200 runs.
 
+One thing here is not worked out. With the pictures in place, one sign carries the Tamil list's score. With them shuffled the list keeps the score, yet the jar sign is then left unread in 84 of the 200 runs, and in the rest is mostly given some other word that ends names (*il*, house; *makaḷ*, daughter; *mīṉ*, fish or star) (`explore/jar_sign_when_shuffled.json`, exploratory). Which signs carry the score in that case was not traced.
+
 ## The lists, and why three were dropped
 
 Ten lists were built after the lock by fresh sessions that were told nothing of the purpose. The record of each is in `lists/README.md`.

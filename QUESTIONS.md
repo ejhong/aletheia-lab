@@ -67,4 +67,4 @@ Each has an issue. Eugene marks the ones to work on `status:active`; nothing els
 | [#127](https://github.com/ejhong/aletheia-lab/issues/127) | Did the raw data in the two retracted 2025 PLOS One Younger Dryas papers warrant retraction? | data | `yd-retracted-plos-audit` |
 | [#143](https://github.com/ejhong/aletheia-lab/issues/143) | Sub-meter sonar hunt for submerged prehistoric stone structures: Lake Huron Alpena–Amberley Ridge and Western Baltic | data | `drowned-walls-submeter` |
 | [#145](https://github.com/ejhong/aletheia-lab/issues/145) | Is the Indus script cracked? | data | `indus-script` |
-| [#146](https://github.com/ejhong/aletheia-lab/issues/146) | Can the lab read anything in an unread script? | data | (to be named with the target) |
+| [#146](https://github.com/ejhong/aletheia-lab/issues/146) | Can the lab read anything in an unread script? | data | `script-attempt` |
