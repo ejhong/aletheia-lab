@@ -1,0 +1,16 @@
+You are compiling a list of ancient proper names for a study of how names are built. Work carefully; the list will be checked against dictionaries.
+
+Task: compile about 650 distinct proper names of {LANGUAGE} (between 600 and 750), of every kind: people (rulers, heroes, poets, patrons, enemies and ordinary people), groups and tribes, lineages and families, gods and other divine or demonic beings, places, rivers, mountains.
+
+Aim for this mix, as nearly as the sources allow: about 300 people, 140 places (towns, villages, regions), 55 gods or other divine beings, 50 groups or tribes, 20 lineages or families, 20 hills or mountains, 15 stars or other heavenly bodies, 10 rivers, and about 40 of other kinds. People must be between 35% and 60% of the list.
+
+Sources: names attested in {CORPUS}. You may use the web to consult {REFERENCE}. Include only names you are confident are real and attested there. Do not invent names and do not pad the list. If you cannot reach 600 confident names, stop where you are and say so.
+
+For each name give:
+- "name": the name in Roman letters, in {ROMANISATION}.
+- "type": one of person, group, lineage, deity, place, river, hill, celestial, title, other.
+- "morphemes": the name split into its meaningful members, each in dictionary (stem) form, lowercase, in the same spelling. A compound name gives its members in order (a name built from the words for "all" and "friend" gives those two members). A simple name gives one member. Give the same member the same spelling every time it occurs. Drop markers of descent ("son of", "daughter of", patronymic endings) and give the base name; if the base name is already in the list as its own entry, leave the patronymic form out. Do not split a name whose analysis is unknown or disputed; give it whole.
+- "gloss": a few English words for the meaning of each member, in order, separated by " + " (for example "all + friend"). Use "name" for a member with no known meaning.
+- "source": a short label for the text or text group in which the name is attested.
+
+Output: write the list to the file {OUTDIR}/names.jsonl, one JSON object per line with exactly those five keys. No duplicates. Then reply with a short note: the number of names by source and by type, how you worked, every source you consulted (titles, and web addresses if you used the web), and any doubts.

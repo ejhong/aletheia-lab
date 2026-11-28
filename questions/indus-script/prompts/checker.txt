@@ -1,0 +1,9 @@
+You are checking two samples of dictionary work for accuracy. The file {OUTDIR}/samples.json holds two lists of 50 items each.
+
+A_names: entries from a list of {LANGUAGE} proper names. Each has "name", "type", "morphemes" (the name split into its members, dictionary form), "gloss" (meaning of each member, "name" = no known meaning) and "source" (where the name is said to be attested). An entry is WRONG if: the name is not a real attested name of {LANGUAGE} in {CORPUS}; or the split into members is clearly wrong; or a member's gloss is clearly wrong. A debatable but defensible etymology is not wrong.
+
+B_words: pairs of an English word and a {LANGUAGE} word offered as a native {LANGUAGE} word for that thing. A pair is WRONG if: the word is not a real word of {LANGUAGE}; or it does not mean the English word (a close near-synonym or a broader word that normally covers the thing is acceptable); or it is a known loan from another language family; or it is not attested in early {LANGUAGE} at all, only later.
+
+Check every item against standard dictionaries and reference works: {REFERENCE}. You may use the web to consult them. Judge each item on its own. Use the verdicts "ok", "wrong" or "cannot verify" (use the last only when you truly could not check).
+
+Output: write {OUTDIR}/verdicts.json: an object with keys A and B, each a list of 50 objects {"item": <the name or the word>, "verdict": ..., "reason": <one short sentence, required for wrong and cannot verify>}. Then reply with a short note giving, for each list, the count of ok, wrong and cannot verify, the wrong items with reasons, and every source you consulted.

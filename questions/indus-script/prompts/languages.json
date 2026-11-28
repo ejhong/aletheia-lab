@@ -1,0 +1,412 @@
+{
+ "tamil_fresh_a": {
+  "role": "the preprint's language, first list built afresh by the lab's prompts",
+  "LANGUAGE": "Old Tamil",
+  "CORPUS": "the Sangam poems and the Tamil-Brahmi inscriptions",
+  "REFERENCE": "the Tamil Lexicon (University of Madras), the Dravidian Etymological Dictionary and indexes of names in the Sangam poems and the Tamil-Brahmi inscriptions",
+  "LOANS": "no Sanskrit or Prakrit loans",
+  "ROMANISATION": "the transliteration of the Tamil Lexicon and the Dravidian Etymological Dictionary (ā ī ū ē ō, ṅ ñ ṇ ṉ, ṭ ṟ, ḷ ḻ)",
+  "spelling_map": []
+ },
+ "tamil_fresh_b": {
+  "role": "the preprint's language, second list built afresh, by other sessions",
+  "LANGUAGE": "Old Tamil",
+  "CORPUS": "the Sangam poems and the Tamil-Brahmi inscriptions",
+  "REFERENCE": "the Tamil Lexicon (University of Madras), the Dravidian Etymological Dictionary and indexes of names in the Sangam poems and the Tamil-Brahmi inscriptions",
+  "LOANS": "no Sanskrit or Prakrit loans",
+  "ROMANISATION": "the transliteration of the Tamil Lexicon and the Dravidian Etymological Dictionary (ā ī ū ē ō, ṅ ñ ṇ ṉ, ṭ ṟ, ḷ ḻ)",
+  "spelling_map": []
+ },
+ "japanese": {
+  "role": "control; the language of the public rebuttal",
+  "LANGUAGE": "Old Japanese",
+  "CORPUS": "the Kojiki, the Nihon shoki and the Man'yōshū",
+  "REFERENCE": "indexes of names in the Kojiki, Nihon shoki and Man'yōshū and dictionaries of Old Japanese (for example the Jidaibetsu kokugo daijiten and the Oxford-NINJAL Corpus of Old Japanese)",
+  "LOANS": "no Chinese (Sino-Japanese) loans",
+  "ROMANISATION": "modified Hepburn romanisation of the traditional reading, with long vowels marked by a macron (ō ū), without the special vowel distinctions of reconstructed Old Japanese",
+  "spelling_map": [
+   [
+    "sh",
+    "ś"
+   ],
+   [
+    "ch",
+    "c"
+   ],
+   [
+    "ts",
+    "c"
+   ],
+   [
+    "f",
+    "ph"
+   ],
+   [
+    "w",
+    "v"
+   ],
+   [
+    "z",
+    "j"
+   ]
+  ]
+ },
+ "greek": {
+  "role": "control",
+  "LANGUAGE": "Ancient Greek (the Greek of Homer and Hesiod)",
+  "CORPUS": "the Iliad, the Odyssey, and Hesiod's Theogony and Works and Days",
+  "REFERENCE": "Liddell-Scott-Jones, the Lexicon of Greek Personal Names, and indexes of names in Homer and Hesiod",
+  "LOANS": "no words known to be borrowed from non-Greek languages",
+  "ROMANISATION": "scholarly transliteration without accents: ē and ō for eta and omega, ph th kh for the aspirates, y for upsilon, h for the rough breathing",
+  "spelling_map": [
+   [
+    "rh",
+    "r"
+   ],
+   [
+    "y",
+    "u"
+   ],
+   [
+    "ȳ",
+    "ū"
+   ],
+   [
+    "x",
+    "ks"
+   ],
+   [
+    "z",
+    "j"
+   ],
+   [
+    "w",
+    "v"
+   ]
+  ]
+ },
+ "old_english": {
+  "role": "control",
+  "LANGUAGE": "Old English",
+  "CORPUS": "texts written before 1100: Beowulf and the other Old English poems, the Anglo-Saxon Chronicle, Bede, and the Anglo-Saxon charters",
+  "REFERENCE": "Bosworth-Toller, the Dictionary of Old English, the Prosopography of Anglo-Saxon England and Searle's Onomasticon Anglo-Saxonicum",
+  "LOANS": "no Latin, Celtic or Norse loans",
+  "ROMANISATION": "the normal edited spelling (æ, þ, ð kept), with long vowels marked by a macron",
+  "spelling_map": [
+   [
+    "ǣ",
+    "ē"
+   ],
+   [
+    "æ",
+    "e"
+   ],
+   [
+    "þ",
+    "th"
+   ],
+   [
+    "ð",
+    "th"
+   ],
+   [
+    "sc",
+    "ś"
+   ],
+   [
+    "cg",
+    "j"
+   ],
+   [
+    "ȳ",
+    "ū"
+   ],
+   [
+    "y",
+    "u"
+   ],
+   [
+    "ƿ",
+    "v"
+   ],
+   [
+    "w",
+    "v"
+   ],
+   [
+    "x",
+    "ks"
+   ],
+   [
+    "f",
+    "ph"
+   ],
+   [
+    "z",
+    "j"
+   ],
+   [
+    "q",
+    "k"
+   ]
+  ]
+ },
+ "hebrew": {
+  "role": "control",
+  "LANGUAGE": "Biblical Hebrew",
+  "CORPUS": "the Hebrew Bible",
+  "REFERENCE": "Brown-Driver-Briggs, HALOT and standard dictionaries of biblical names",
+  "LOANS": "no Egyptian, Akkadian, Persian or other non-Semitic loans",
+  "ROMANISATION": "a plain scholarly transliteration: š for shin, ś for sin, ṣ for tsade, ṭ for tet, ḥ for chet, q for qof, ʾ and ʿ for aleph and ayin, long vowels with a macron, no marks for soft b g d k p t",
+  "spelling_map": [
+   [
+    "š",
+    "ś"
+   ],
+   [
+    "ḥ",
+    "h"
+   ],
+   [
+    "q",
+    "k"
+   ],
+   [
+    "w",
+    "v"
+   ],
+   [
+    "z",
+    "j"
+   ],
+   [
+    "ʾ",
+    ""
+   ],
+   [
+    "ʿ",
+    ""
+   ],
+   [
+    "f",
+    "ph"
+   ],
+   [
+    "ê",
+    "ē"
+   ],
+   [
+    "î",
+    "ī"
+   ],
+   [
+    "ô",
+    "ō"
+   ],
+   [
+    "û",
+    "ū"
+   ],
+   [
+    "â",
+    "ā"
+   ],
+   [
+    "ĕ",
+    "e"
+   ],
+   [
+    "ă",
+    "a"
+   ],
+   [
+    "ŏ",
+    "o"
+   ],
+   [
+    "ə",
+    "e"
+   ]
+  ]
+ },
+ "nahuatl": {
+  "role": "control",
+  "LANGUAGE": "Classical Nahuatl",
+  "CORPUS": "sixteenth-century sources: the Florentine Codex, the Codex Mendoza and the early annals and histories",
+  "REFERENCE": "Molina's Vocabulario, Karttunen's Analytical Dictionary of Nahuatl, and studies of Nahuatl personal and place names",
+  "LOANS": "no Spanish loans",
+  "ROMANISATION": "the standard classical spelling (c, qu, hu, tl, tz, ch, x, z), with long vowels marked by a macron where known and the saltillo written h",
+  "spelling_map": [
+   [
+    "tz",
+    "ts"
+   ],
+   [
+    "qu",
+    "k"
+   ],
+   [
+    "cu",
+    "kv"
+   ],
+   [
+    "uc",
+    "kv"
+   ],
+   [
+    "hu",
+    "v"
+   ],
+   [
+    "uh",
+    "v"
+   ],
+   [
+    "ce",
+    "se"
+   ],
+   [
+    "ci",
+    "si"
+   ],
+   [
+    "cē",
+    "sē"
+   ],
+   [
+    "cī",
+    "sī"
+   ],
+   [
+    "ch",
+    "ç"
+   ],
+   [
+    "c",
+    "k"
+   ],
+   [
+    "ç",
+    "c"
+   ],
+   [
+    "x",
+    "ś"
+   ],
+   [
+    "z",
+    "s"
+   ],
+   [
+    "w",
+    "v"
+   ],
+   [
+    "f",
+    "ph"
+   ]
+  ]
+ },
+ "sumerian": {
+  "role": "control",
+  "LANGUAGE": "Sumerian",
+  "CORPUS": "texts of the third millennium BCE (Early Dynastic, Old Akkadian and Ur III periods)",
+  "REFERENCE": "the Electronic Pennsylvania Sumerian Dictionary, the Cuneiform Digital Library and standard studies of Sumerian personal names",
+  "LOANS": "no Akkadian loans",
+  "ROMANISATION": "normalised transliteration as running words, without sign index numbers, hyphens or dots (š, ḫ and ĝ kept)",
+  "spelling_map": [
+   [
+    "š",
+    "ś"
+   ],
+   [
+    "ḫ",
+    "h"
+   ],
+   [
+    "ĝ",
+    "ṅ"
+   ],
+   [
+    "z",
+    "j"
+   ],
+   [
+    "w",
+    "v"
+   ],
+   [
+    "q",
+    "k"
+   ],
+   [
+    "ʾ",
+    ""
+   ]
+  ]
+ },
+ "hawaiian": {
+  "role": "control",
+  "LANGUAGE": "Hawaiian",
+  "CORPUS": "traditional sources recorded in the nineteenth century: the Kumulipo, the chiefly genealogies, the traditions collected by Fornander, Kamakau and Malo, and traditional place names",
+  "REFERENCE": "the Hawaiian Dictionary of Pukui and Elbert and Place Names of Hawaii by Pukui, Elbert and Mookini",
+  "LOANS": "no English or other introduced loans",
+  "ROMANISATION": "modern Hawaiian spelling, with the ʻokina (ʻ) and long vowels marked by a macron",
+  "spelling_map": [
+   [
+    "ʻ",
+    ""
+   ],
+   [
+    "w",
+    "v"
+   ]
+  ]
+ },
+ "finnish": {
+  "role": "control; also run by both parties to the dispute",
+  "LANGUAGE": "Finnish (old native Finnish)",
+  "CORPUS": "the Kalevala and the Kanteletar, and old native Finnish personal and place names recorded in medieval and early modern documents",
+  "REFERENCE": "the Suomen sanojen alkuperä etymological dictionary, the Kalevala and its name indexes, and standard studies of old Finnish personal names and place names",
+  "LOANS": "no Swedish, Germanic, Baltic, Slavic or other borrowed words where the borrowing is well established and later than Proto-Finnic",
+  "ROMANISATION": "standard Finnish spelling",
+  "spelling_map": [
+   [
+    "ä",
+    "a"
+   ],
+   [
+    "ö",
+    "o"
+   ],
+   [
+    "å",
+    "o"
+   ],
+   [
+    "y",
+    "u"
+   ],
+   [
+    "w",
+    "v"
+   ],
+   [
+    "f",
+    "ph"
+   ],
+   [
+    "z",
+    "s"
+   ],
+   [
+    "x",
+    "ks"
+   ],
+   [
+    "q",
+    "k"
+   ]
+  ]
+ }
+}
