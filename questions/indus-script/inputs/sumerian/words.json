@@ -1,0 +1,785 @@
+{
+ "002": {
+  "two": [
+   "min"
+  ],
+  "pair": [
+   "tab"
+  ],
+  "strokes": [],
+  "tally": []
+ },
+ "060": {
+  "hook": [],
+  "stroke": [],
+  "mark": [],
+  "line": []
+ },
+ "061": {
+  "tongs": [],
+  "fork": [],
+  "forked stick": [],
+  "split": [
+   "dar"
+  ]
+ },
+ "070": {
+  "arrow": [
+   "ti"
+  ],
+  "spear": [
+   "śukur"
+  ],
+  "barb": [],
+  "point": []
+ },
+ "090": {
+  "man": [
+   "lu",
+   "nita"
+  ],
+  "person": [
+   "lu"
+  ],
+  "stand": [
+   "gub"
+  ],
+  "body": [
+   "su"
+  ]
+ },
+ "100": {
+  "heads": [
+   "saṅ"
+  ],
+  "crowd": [
+   "uṅ"
+  ],
+  "man": [
+   "lu",
+   "nita"
+  ],
+  "three": [
+   "eś"
+  ]
+ },
+ "125": {
+  "archer": [],
+  "hunter": [],
+  "shoot": [],
+  "bow": [
+   "pan"
+  ]
+ },
+ "140": {
+  "woman": [
+   "munus"
+  ],
+  "mother": [
+   "ama"
+  ],
+  "breasts": [
+   "ubur"
+  ],
+  "raise": [
+   "il"
+  ]
+ },
+ "142": {
+  "staff": [
+   "ṅidru"
+  ],
+  "man": [
+   "lu",
+   "nita"
+  ],
+  "walker": [],
+  "stick": [
+   "ṅeś"
+  ]
+ },
+ "151": {
+  "carrier": [],
+  "load": [
+   "gun"
+  ],
+  "carry": [
+   "il"
+  ],
+  "yoke": [
+   "śudul"
+  ]
+ },
+ "154": {
+  "carrier": [],
+  "load": [
+   "gun"
+  ],
+  "jar": [
+   "dug"
+  ],
+  "carry": [
+   "il"
+  ]
+ },
+ "156": {
+  "carrier": [],
+  "load": [
+   "gun"
+  ],
+  "fan": [],
+  "carry": [
+   "il"
+  ]
+ },
+ "176": {
+  "sit": [
+   "tuś"
+  ],
+  "kneel": [
+   "gam"
+  ],
+  "worker": [
+   "ṅuruś",
+   "eren"
+  ],
+  "rake": []
+ },
+ "220": {
+  "fish": [
+   "ku"
+  ],
+  "fishing": [],
+  "fin": [],
+  "scale": []
+ },
+ "226": {
+  "fish": [
+   "ku"
+  ],
+  "fish trap": [],
+  "pond": [
+   "pu"
+  ],
+  "catch": [
+   "dab"
+  ]
+ },
+ "231": {
+  "fish": [
+   "ku"
+  ],
+  "spot": [],
+  "dot": [],
+  "mark": []
+ },
+ "233": {
+  "fish": [
+   "ku"
+  ],
+  "cut fish": [],
+  "dried fish": [],
+  "band": [
+   "dur"
+  ]
+ },
+ "235": {
+  "fish": [
+   "ku"
+  ],
+  "roof": [
+   "ur"
+  ],
+  "cover": [
+   "dul"
+  ],
+  "lid": []
+ },
+ "236": {
+  "fish": [
+   "ku"
+  ],
+  "roof": [
+   "ur"
+  ],
+  "trap": [
+   "sa"
+  ],
+  "house": [
+   "e"
+  ]
+ },
+ "240": {
+  "catfish": [],
+  "fish": [
+   "ku"
+  ],
+  "whiskers": [],
+  "barbel": []
+ },
+ "255": {
+  "fish": [
+   "ku"
+  ],
+  "fin": [],
+  "lizard": [
+   "emeśid"
+  ],
+  "scale": []
+ },
+ "350": {
+  "roots": [
+   "suhuś"
+  ],
+  "plant": [
+   "u"
+  ],
+  "sprout": [],
+  "tuft": []
+ },
+ "368": {
+  "flag": [
+   "śunir"
+  ],
+  "banner": [
+   "śunir"
+  ],
+  "pennant": [
+   "śunir"
+  ],
+  "pole": [
+   "dim"
+  ]
+ },
+ "388": {
+  "grain": [
+   "śe"
+  ],
+  "ear": [
+   "ṅeśtug"
+  ],
+  "sheaf": [],
+  "bunch": []
+ },
+ "390": {
+  "tree": [
+   "ṅeś"
+  ],
+  "branch": [
+   "pa"
+  ],
+  "twig": [
+   "pa"
+  ],
+  "fork": []
+ },
+ "400": {
+  "comb": [
+   "garig"
+  ],
+  "teeth": [
+   "ju"
+  ],
+  "rake": [],
+  "ladder": [
+   "kun"
+  ]
+ },
+ "405": {
+  "branch": [
+   "pa"
+  ],
+  "tree": [
+   "ṅeś"
+  ],
+  "twig": [
+   "pa"
+  ],
+  "sprout": []
+ },
+ "407": {
+  "branch": [
+   "pa"
+  ],
+  "twig": [
+   "pa"
+  ],
+  "tree": [
+   "ṅeś"
+  ],
+  "shoot": []
+ },
+ "415": {
+  "lamp": [],
+  "rake": [],
+  "trident": [],
+  "fork": []
+ },
+ "416": {
+  "lamp": [],
+  "rake": [],
+  "stand": [
+   "gub"
+  ],
+  "tier": []
+ },
+ "435": {
+  "zigzag": [],
+  "lightning": [
+   "nimgir"
+  ],
+  "snake": [
+   "muś"
+  ],
+  "turn": [
+   "bala"
+  ]
+ },
+ "440": {
+  "doorway": [
+   "ka"
+  ],
+  "door": [
+   "ig"
+  ],
+  "frame": [],
+  "gate": [
+   "ka"
+  ]
+ },
+ "455": {
+  "hearth": [
+   "kine"
+  ],
+  "triangles": [],
+  "stones": [
+   "na"
+  ],
+  "fire": [
+   "iji"
+  ]
+ },
+ "460": {
+  "peaks": [],
+  "mountains": [
+   "kur",
+   "hursaṅ"
+  ],
+  "hills": [
+   "du"
+  ],
+  "spikes": []
+ },
+ "503": {
+  "hill": [
+   "du"
+  ],
+  "heap": [
+   "guru"
+  ],
+  "stack": [],
+  "pile": [
+   "guru"
+  ]
+ },
+ "520": {
+  "spear": [
+   "śukur"
+  ],
+  "arrow": [
+   "ti"
+  ],
+  "lance": [
+   "śukur"
+  ],
+  "point": []
+ },
+ "527": {
+  "box": [
+   "pisaṅ"
+  ],
+  "basket": [
+   "pisaṅ",
+   "dusu"
+  ],
+  "stool": [
+   "guja"
+  ],
+  "chest": [
+   "gaba"
+  ]
+ },
+ "550": {
+  "drum": [
+   "śem",
+   "ub"
+  ],
+  "pincers": [],
+  "tongs": [],
+  "claw": [
+   "umbin"
+  ]
+ },
+ "555": {
+  "pincers": [],
+  "drum": [
+   "śem",
+   "ub"
+  ],
+  "claw": [
+   "umbin"
+  ],
+  "tongs": []
+ },
+ "575": {
+  "building": [
+   "e"
+  ],
+  "stand": [
+   "gub"
+  ],
+  "shrine": [
+   "eś"
+  ],
+  "pedestal": [
+   "barag"
+  ]
+ },
+ "585": {
+  "tent": [
+   "jalamṅar"
+  ],
+  "hearth": [
+   "kine"
+  ],
+  "hut": [],
+  "stand": [
+   "gub"
+  ]
+ },
+ "590": {
+  "box": [
+   "pisaṅ"
+  ],
+  "pole": [
+   "dim"
+  ],
+  "flag": [
+   "śunir"
+  ],
+  "standard": [
+   "śunir"
+  ]
+ },
+ "595": {
+  "box": [
+   "pisaṅ"
+  ],
+  "pole": [
+   "dim"
+  ],
+  "basket": [
+   "pisaṅ",
+   "dusu"
+  ],
+  "standard": [
+   "śunir"
+  ]
+ },
+ "615": {
+  "grid": [],
+  "field": [
+   "aśa",
+   "gana"
+  ],
+  "net": [
+   "sa"
+  ],
+  "wall": [
+   "bad"
+  ]
+ },
+ "617": {
+  "grid": [],
+  "fields": [
+   "aśa",
+   "gana"
+  ],
+  "nets": [
+   "sa"
+  ],
+  "walls": [
+   "bad"
+  ]
+ },
+ "621": {
+  "door": [
+   "ig"
+  ],
+  "box": [
+   "pisaṅ"
+  ],
+  "frame": [],
+  "cabinet": []
+ },
+ "690": {
+  "cross": [],
+  "crossroads": [],
+  "junction": [],
+  "meet": []
+ },
+ "692": {
+  "cross": [],
+  "crossroads": [],
+  "junction": [],
+  "band": [
+   "dur"
+  ]
+ },
+ "705": {
+  "churn": [
+   "śakir"
+  ],
+  "pot": [
+   "dug"
+  ],
+  "stick": [
+   "ṅeś"
+  ],
+  "stir": [
+   "hi"
+  ]
+ },
+ "706": {
+  "churn": [
+   "śakir"
+  ],
+  "drop": [],
+  "pot": [
+   "dug"
+  ],
+  "stir": [
+   "hi"
+  ]
+ },
+ "717": {
+  "paw": [],
+  "hand": [
+   "śu"
+  ],
+  "bundle": [
+   "sa"
+  ],
+  "rake": []
+ },
+ "740": {
+  "jar": [
+   "dug"
+  ],
+  "pot": [
+   "dug"
+  ],
+  "vessel": [
+   "dug"
+  ],
+  "handle": []
+ },
+ "741": {
+  "jar": [
+   "dug"
+  ],
+  "pot": [
+   "dug"
+  ],
+  "vessel": [
+   "dug"
+  ],
+  "fill": [
+   "si"
+  ]
+ },
+ "742": {
+  "jar": [
+   "dug"
+  ],
+  "pot": [
+   "dug"
+  ],
+  "vessel": [
+   "dug"
+  ],
+  "fill": [
+   "si"
+  ]
+ },
+ "760": {
+  "pot": [
+   "dug"
+  ],
+  "sprout": [],
+  "plant": [
+   "u"
+  ],
+  "horns": [
+   "si"
+  ]
+ },
+ "790": {
+  "leaf": [
+   "pa"
+  ],
+  "seed": [
+   "numun"
+  ],
+  "eye": [
+   "igi"
+  ],
+  "diamond": []
+ },
+ "798": {
+  "crab": [],
+  "claw": [
+   "umbin"
+  ],
+  "pincer": [],
+  "shell": []
+ },
+ "803": {
+  "leaf": [
+   "pa"
+  ],
+  "tree": [
+   "ṅeś"
+  ],
+  "vein": [
+   "sa"
+  ],
+  "pipal": []
+ },
+ "806": {
+  "leaf": [
+   "pa"
+  ],
+  "seed": [
+   "numun"
+  ],
+  "sprout": [],
+  "vein": [
+   "sa"
+  ]
+ },
+ "817": {
+  "leaf": [
+   "pa"
+  ],
+  "bud": [],
+  "seed": [
+   "numun"
+  ],
+  "point": []
+ },
+ "820": {
+  "wheel": [
+   "umbin"
+  ],
+  "spokes": [],
+  "sun": [
+   "utu"
+  ],
+  "star": [
+   "mul"
+  ]
+ },
+ "832": {
+  "eye": [
+   "igi"
+  ],
+  "seed": [
+   "numun"
+  ],
+  "almond": [
+   "lam"
+  ],
+  "pupil": []
+ },
+ "840": {
+  "leaves": [
+   "pa"
+  ],
+  "eyes": [
+   "igi"
+  ],
+  "pair": [
+   "tab"
+  ],
+  "seeds": [
+   "numun"
+  ]
+ },
+ "861": {
+  "diamond": [],
+  "bud": [],
+  "leaf": [
+   "pa"
+  ],
+  "point": []
+ },
+ "892": {
+  "bow": [
+   "pan"
+  ],
+  "arrow": [
+   "ti"
+  ],
+  "shoot": [],
+  "archer": []
+ },
+ "900": {
+  "crescent": [
+   "usakar"
+  ],
+  "moon": [
+   "itud"
+  ],
+  "curve": [],
+  "bow": [
+   "pan"
+  ]
+ },
+ "904": {
+  "crescents": [
+   "usakar"
+  ],
+  "moons": [
+   "itud"
+  ],
+  "curves": [],
+  "waves": []
+ },
+ "920": {
+  "crescent": [
+   "usakar"
+  ],
+  "moon": [
+   "itud"
+  ],
+  "leaf": [
+   "pa"
+  ],
+  "bud": []
+ },
+ "923": {
+  "boomerang": [
+   "illuru"
+  ],
+  "crescent": [
+   "usakar"
+  ],
+  "moon": [
+   "itud"
+  ],
+  "bend": [
+   "gam"
+  ]
+ }
+}

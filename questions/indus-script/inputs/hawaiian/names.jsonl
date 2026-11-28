@@ -1,0 +1,600 @@
+{"name": "Hawaiʻi", "type": "place", "morphemes": ["havaii"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Maui", "type": "place", "morphemes": ["maui"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Oʻahu", "type": "place", "morphemes": ["oahu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kauaʻi", "type": "place", "morphemes": ["kauai"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Molokaʻi", "type": "place", "morphemes": ["molokai"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Lānaʻi", "type": "place", "morphemes": ["lānai"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Niʻihau", "type": "place", "morphemes": ["niihau"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kahoʻolawe", "type": "place", "morphemes": ["ka", "hoolave"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaʻula", "type": "place", "morphemes": ["kaula"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nihoa", "type": "place", "morphemes": ["nihoa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Molokini", "type": "place", "morphemes": ["molo", "kini"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kona", "type": "place", "morphemes": ["kona"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kohala", "type": "place", "morphemes": ["kohala"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hilo", "type": "place", "morphemes": ["hilo"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaʻū", "type": "place", "morphemes": ["kaū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hāmākua", "type": "place", "morphemes": ["hāmākua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waimea", "type": "place", "morphemes": ["vai", "mea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kailua", "type": "place", "morphemes": ["kai", "lua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kawaihae", "type": "place", "morphemes": ["ka", "vai", "hae"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hōnaunau", "type": "place", "morphemes": ["hōnaunau"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kealakekua", "type": "place", "morphemes": ["ke", "ala", "ke", "akua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaʻawaloa", "type": "place", "morphemes": ["ka", "ava", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nāpōʻopoʻo", "type": "place", "morphemes": ["nā", "pōopoo"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hōlualoa", "type": "place", "morphemes": ["hōlua", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Keauhou", "type": "place", "morphemes": ["ke", "au", "hou"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kahaluʻu", "type": "place", "morphemes": ["kaha", "luu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waipiʻo", "type": "place", "morphemes": ["vai", "pio"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waimanu", "type": "place", "morphemes": ["vai", "manu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kapaʻau", "type": "place", "morphemes": ["kapaau"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kīholo", "type": "place", "morphemes": ["kīholo"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalapana", "type": "place", "morphemes": ["kalapana"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaimū", "type": "place", "morphemes": ["kai", "mū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kapoho", "type": "place", "morphemes": ["ka", "poho"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiākea", "type": "place", "morphemes": ["vai", "ākea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Honomū", "type": "place", "morphemes": ["hono", "mū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Laupāhoehoe", "type": "place", "morphemes": ["lau", "pāhoehoe"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kukuihaele", "type": "place", "morphemes": ["kukui", "haele"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Honokaʻa", "type": "place", "morphemes": ["hono", "kaa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pāhala", "type": "place", "morphemes": ["pāhala"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Punaluʻu", "type": "place", "morphemes": ["puna", "luu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nīnole", "type": "place", "morphemes": ["nīnole"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiʻōhinu", "type": "place", "morphemes": ["vai", "ōhinu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nāʻālehu", "type": "place", "morphemes": ["nā", "ā", "lehu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kahuku", "type": "place", "morphemes": ["ka", "huku"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaʻūpūlehu", "type": "place", "morphemes": ["ka", "ulu", "pūlehu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaloko", "type": "place", "morphemes": ["ka", "loko"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kokoiki", "type": "place", "morphemes": ["koko", "iki"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "ʻAnaehoʻomalu", "type": "place", "morphemes": ["anae", "hoomalu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waikoloa", "type": "place", "morphemes": ["vai", "koloa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hoʻokena", "type": "place", "morphemes": ["hookena"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Miloliʻi", "type": "place", "morphemes": ["milo", "lii"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Humuʻula", "type": "place", "morphemes": ["humuula"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pōhakuloa", "type": "place", "morphemes": ["pōhaku", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaʻohe", "type": "place", "morphemes": ["ka", "ohe"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kēōkea", "type": "place", "morphemes": ["ke", "one", "kea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Māhukona", "type": "place", "morphemes": ["māhu", "kona"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalāhuipuaʻa", "type": "place", "morphemes": ["ka", "lāhui", "puaa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Honuʻapo", "type": "place", "morphemes": ["honu", "apo"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kumukahi", "type": "place", "morphemes": ["kumu", "kahi"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mokuola", "type": "place", "morphemes": ["moku", "ola"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Panaʻewa", "type": "place", "morphemes": ["panaeva"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waikīkī", "type": "place", "morphemes": ["vai", "kīkī"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Honolulu", "type": "place", "morphemes": ["hono", "lulu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mānoa", "type": "place", "morphemes": ["mānoa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nuʻuanu", "type": "place", "morphemes": ["nuu", "anu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kapālama", "type": "place", "morphemes": ["ka", "pā", "lama"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalihi", "type": "place", "morphemes": ["ka", "lihi"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Moanalua", "type": "place", "morphemes": ["moana", "lua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "ʻAiea", "type": "place", "morphemes": ["aiea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiawa", "type": "place", "morphemes": ["vai", "ava"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waikele", "type": "place", "morphemes": ["vai", "kele"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Honouliuli", "type": "place", "morphemes": ["hono", "uliuli"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nānākuli", "type": "place", "morphemes": ["nānā", "kuli"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiʻanae", "type": "place", "morphemes": ["vai", "anae"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mākaha", "type": "place", "morphemes": ["mākaha"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mākua", "type": "place", "morphemes": ["mākua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaʻena", "type": "place", "morphemes": ["ka", "ena"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mokulēʻia", "type": "place", "morphemes": ["moku", "lēia"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waialua", "type": "place", "morphemes": ["vaialua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kawailoa", "type": "place", "morphemes": ["ka", "vai", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pūpūkea", "type": "place", "morphemes": ["pūpū", "kea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hauʻula", "type": "place", "morphemes": ["hau", "ula"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaʻaʻawa", "type": "place", "morphemes": ["ka", "aava"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kahana", "type": "place", "morphemes": ["kahana"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kualoa", "type": "place", "morphemes": ["kua", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kāneʻohe", "type": "place", "morphemes": ["kāne", "ohe"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waimānalo", "type": "place", "morphemes": ["vai", "mānalo"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Maunalua", "type": "place", "morphemes": ["mauna", "lua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Wailupe", "type": "place", "morphemes": ["vai", "lupe"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiʻalae", "type": "place", "morphemes": ["vai", "alae"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaimukī", "type": "place", "morphemes": ["ka", "imu", "kī"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kapahulu", "type": "place", "morphemes": ["ka", "pahulu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pālolo", "type": "place", "morphemes": ["pālolo"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Makiki", "type": "place", "morphemes": ["makiki"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kewalo", "type": "place", "morphemes": ["ke", "valo"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kou", "type": "place", "morphemes": ["kou"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mōʻiliʻili", "type": "place", "morphemes": ["moo", "iliili"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Heʻeia", "type": "place", "morphemes": ["heeia"], "source": "Hawaiʻi Place Names (Clark)", "weight": 1}
+{"name": "Waiāhole", "type": "place", "morphemes": ["vai", "āhole"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waikāne", "type": "place", "morphemes": ["vai", "kāne"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hakipuʻu", "type": "place", "morphemes": ["haki", "puu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kawainui", "type": "place", "morphemes": ["ka", "vai", "nui"], "source": "Hawaiʻi Place Names (Clark)", "weight": 1}
+{"name": "Puʻuloa", "type": "place", "morphemes": ["puu", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waipahu", "type": "place", "morphemes": ["vai", "pahū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Wahiawā", "type": "place", "morphemes": ["vahi", "a", "vā"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Helemano", "type": "place", "morphemes": ["hele", "mano"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Halemano", "type": "place", "morphemes": ["hale", "mano"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "ʻEwa", "type": "place", "morphemes": ["eva"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Koʻolauloa", "type": "place", "morphemes": ["koolau", "loa"], "source": "Kamakau", "weight": 1}
+{"name": "Koʻolaupoko", "type": "place", "morphemes": ["koolau", "poko"], "source": "Kamakau", "weight": 1}
+{"name": "Kāhala", "type": "place", "morphemes": ["kāhala"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Makapuʻu", "type": "place", "morphemes": ["maka", "puu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mōkapu", "type": "place", "morphemes": ["moku", "kapu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mokoliʻi", "type": "place", "morphemes": ["moko", "lii"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hāna", "type": "place", "morphemes": ["hāna"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaupō", "type": "place", "morphemes": ["kau", "pō"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kahikinui", "type": "place", "morphemes": ["kahiki", "nui"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Honuaʻula", "type": "place", "morphemes": ["honua", "ula"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kula", "type": "place", "morphemes": ["kula"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Lahaina", "type": "place", "morphemes": ["lahaina"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kāʻanapali", "type": "place", "morphemes": ["kāana", "pali"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Koʻolau", "type": "place", "morphemes": ["koolau"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kīpahulu", "type": "place", "morphemes": ["kii", "pahulu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Keʻanae", "type": "place", "morphemes": ["ke", "anae"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Haʻikū", "type": "place", "morphemes": ["haikū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Makawao", "type": "place", "morphemes": ["maka", "vao"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pāʻia", "type": "place", "morphemes": ["pāia"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mākena", "type": "place", "morphemes": ["mākena"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiakoa", "type": "place", "morphemes": ["vai", "a", "koa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiheʻe", "type": "place", "morphemes": ["vai", "hee"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiehu", "type": "place", "morphemes": ["vai", "ehu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kahakuloa", "type": "place", "morphemes": ["ka", "haku", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Honokōhau", "type": "place", "morphemes": ["hono", "kō", "hau"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Olowalu", "type": "place", "morphemes": ["olo", "valu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Ukumehame", "type": "place", "morphemes": ["uku", "mehame"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Wailuku", "type": "place", "morphemes": ["vai", "luku"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waikapū", "type": "place", "morphemes": ["vai", "ka", "pū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Honolua", "type": "place", "morphemes": ["hono", "lua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kapalua", "type": "place", "morphemes": ["kapa", "lua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nāpili", "type": "place", "morphemes": ["nā", "pili"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Wailea", "type": "place", "morphemes": ["vai", "lea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "ʻUlupalakua", "type": "place", "morphemes": ["ulu", "pala", "kua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "ʻĪao", "type": "place", "morphemes": ["ī", "ao"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaunakakai", "type": "place", "morphemes": ["kaunakakai"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalaupapa", "type": "place", "morphemes": ["ka", "laupapa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pelekunu", "type": "place", "morphemes": ["pelekunu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Wailau", "type": "place", "morphemes": ["vai", "lau"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kamalō", "type": "place", "morphemes": ["ka", "maloo"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaluakoʻi", "type": "place", "morphemes": ["ka", "lua", "koi"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalawao", "type": "place", "morphemes": ["kala", "vao"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pālāʻau", "type": "place", "morphemes": ["pā", "lāau"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "ʻUalapuʻe", "type": "place", "morphemes": ["uala", "pue"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waikolu", "type": "place", "morphemes": ["vai", "kolu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalamaʻula", "type": "place", "morphemes": ["ka", "lama", "ula"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaumalapau", "type": "place", "morphemes": ["kau", "māla", "pau"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mānele", "type": "place", "morphemes": ["mānele"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaunolū", "type": "place", "morphemes": ["kaunolū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kealaikahiki", "type": "place", "morphemes": ["ke", "ala", "i", "kahiki"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hāʻena", "type": "place", "morphemes": ["hāena"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hanalei", "type": "place", "morphemes": ["hana", "lei"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalihiwai", "type": "place", "morphemes": ["ka", "lihi", "vai"], "source": "Hawaiʻi Place Names (Clark)", "weight": 1}
+{"name": "Anahola", "type": "place", "morphemes": ["anahola"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kapaʻa", "type": "place", "morphemes": ["ka", "paa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Līhuʻe", "type": "place", "morphemes": ["līhue"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kōloa", "type": "place", "morphemes": ["kōloa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hanapēpē", "type": "place", "morphemes": ["hana", "pēpē"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mānā", "type": "place", "morphemes": ["mānā"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Polihale", "type": "place", "morphemes": ["poli", "hale"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nāpali", "type": "place", "morphemes": ["nā", "pali"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalalau", "type": "place", "morphemes": ["ka", "lalau"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hanakāpiʻai", "type": "place", "morphemes": ["hana", "kāpī", "ai"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Haleleʻa", "type": "place", "morphemes": ["hale", "lea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kekaha", "type": "place", "morphemes": ["ke", "kaha"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Poʻipū", "type": "place", "morphemes": ["poipū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Māhāʻulepū", "type": "place", "morphemes": ["mā", "hāule", "pū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hanamāʻulu", "type": "place", "morphemes": ["hana", "māulu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nāwiliwili", "type": "place", "morphemes": ["nā", "vilivili"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Moloaʻa", "type": "place", "morphemes": ["molo", "aa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kōkeʻe", "type": "place", "morphemes": ["kōkee"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Paliuli", "type": "place", "morphemes": ["pali", "uli"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kahiki", "type": "place", "morphemes": ["kahiki"], "source": "Malo", "weight": 1}
+{"name": "Kuaihelani", "type": "place", "morphemes": ["kuaihelani"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Wainiha", "type": "river", "morphemes": ["vai", "niha"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Wailua", "type": "river", "morphemes": ["vai", "lua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Makaweli", "type": "river", "morphemes": ["maka", "veli"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Lumahaʻi", "type": "river", "morphemes": ["lumahai"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiʻoli", "type": "river", "morphemes": ["vai", "oli"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hulēʻia", "type": "river", "morphemes": ["hulēia"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Honoliʻi", "type": "river", "morphemes": ["hono", "lii"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaukonahua", "type": "river", "morphemes": ["kaukonahua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Anahulu", "type": "river", "morphemes": ["anahulu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Wailoa", "type": "river", "morphemes": ["vai", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mauna Kea", "type": "hill", "morphemes": ["mauna", "kea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mauna Loa", "type": "hill", "morphemes": ["mauna", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Haleakalā", "type": "hill", "morphemes": ["hale", "a", "ka", "lā"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaʻala", "type": "hill", "morphemes": ["kaala"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiʻaleʻale", "type": "hill", "morphemes": ["vai", "aleale"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kawaikini", "type": "hill", "morphemes": ["ka", "vai", "kini"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kamakou", "type": "hill", "morphemes": ["kamakou"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Lānaʻihale", "type": "hill", "morphemes": ["lānai", "hale"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Lēʻahi", "type": "hill", "morphemes": ["lēahi"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Puʻuwaʻawaʻa", "type": "hill", "morphemes": ["puu", "vaavaa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kōnāhuanui", "type": "hill", "morphemes": ["kōnāhua", "nui"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Olomana", "type": "hill", "morphemes": ["olo", "mana"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "ʻUalakaʻa", "type": "hill", "morphemes": ["uala", "kaa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pūowaina", "type": "hill", "morphemes": ["pūovaina"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mokuʻāweoweo", "type": "hill", "morphemes": ["moku", "āveoveo"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hāʻupu", "type": "hill", "morphemes": ["hāupu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Nounou", "type": "hill", "morphemes": ["nounou"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Lanihuli", "type": "hill", "morphemes": ["lani", "huli"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kohelepelepe", "type": "hill", "morphemes": ["kohe", "lepelepe"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kilohana", "type": "hill", "morphemes": ["kilohana"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalalea", "type": "hill", "morphemes": ["kalalea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kapolei", "type": "hill", "morphemes": ["kapo", "lei"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kīlauea", "type": "hill", "morphemes": ["kīlauea"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kaʻuiki", "type": "hill", "morphemes": ["ka", "uiki"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Puʻuʻōhiʻa", "type": "hill", "morphemes": ["puu", "ōhia"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Puʻuohoku", "type": "hill", "morphemes": ["puu", "o", "hoku"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Lehua", "type": "place", "morphemes": ["lehua"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kū", "type": "deity", "morphemes": ["kū"], "source": "Malo", "weight": 1}
+{"name": "Lono", "type": "deity", "morphemes": ["lono"], "source": "Malo", "weight": 1}
+{"name": "Kanaloa", "type": "deity", "morphemes": ["kanaloa"], "source": "Malo", "weight": 1}
+{"name": "Kāneikawaiola", "type": "deity", "morphemes": ["kāne", "i", "ka", "vai", "ola"], "source": "Fornander", "weight": 1}
+{"name": "Kāneʻapua", "type": "deity", "morphemes": ["kāne", "apua"], "source": "Fornander", "weight": 1}
+{"name": "Kānehekili", "type": "deity", "morphemes": ["kāne", "hekili"], "source": "Fornander", "weight": 1}
+{"name": "Kānehoalani", "type": "deity", "morphemes": ["kāne", "hoa", "lani"], "source": "Fornander", "weight": 1}
+{"name": "Kūkāʻilimoku", "type": "deity", "morphemes": ["kū", "kāili", "moku"], "source": "Kamakau", "weight": 1}
+{"name": "Kūʻula", "type": "deity", "morphemes": ["kū", "ula"], "source": "Malo", "weight": 1}
+{"name": "Kūʻulakai", "type": "deity", "morphemes": ["kū", "ula", "kai"], "source": "Kamakau", "weight": 1}
+{"name": "Kūkaʻōhiʻalaka", "type": "deity", "morphemes": ["kū", "ka", "ōhia", "laka"], "source": "Malo", "weight": 1}
+{"name": "Kūmokuhāliʻi", "type": "deity", "morphemes": ["kū", "moku", "hālii"], "source": "Malo", "weight": 1}
+{"name": "Kūpulupulu", "type": "deity", "morphemes": ["kū", "pulupulu"], "source": "Malo", "weight": 1}
+{"name": "Kūʻālanawao", "type": "deity", "morphemes": ["kū", "ālana", "vao"], "source": "Malo", "weight": 1}
+{"name": "Kūpāʻaikeʻe", "type": "deity", "morphemes": ["kūpāaikee"], "source": "Malo", "weight": 1}
+{"name": "Kūhoʻoneʻenuʻu", "type": "deity", "morphemes": ["kū", "hoonee", "nuu"], "source": "Kamakau", "weight": 1}
+{"name": "Kūnuiākea", "type": "deity", "morphemes": ["kū", "nui", "ākea"], "source": "Kamakau", "weight": 1}
+{"name": "Kūkaʻōʻō", "type": "deity", "morphemes": ["kū", "ka", "ōō"], "source": "Kamakau", "weight": 1}
+{"name": "Lea", "type": "deity", "morphemes": ["lea"], "source": "Malo", "weight": 1}
+{"name": "Lonomakua", "type": "deity", "morphemes": ["lono", "makua"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Maʻiola", "type": "deity", "morphemes": ["mai", "ola"], "source": "Malo", "weight": 1}
+{"name": "Pele", "type": "deity", "morphemes": ["pele"], "source": "Pele-Hiʻiaka tradition", "weight": 1}
+{"name": "Hiʻiaka", "type": "deity", "morphemes": ["hiiaka"], "source": "Pele-Hiʻiaka tradition", "weight": 1}
+{"name": "Hiʻiakaikapoliopele", "type": "deity", "morphemes": ["hiiaka", "i", "ka", "poli", "o", "pele"], "source": "Pele-Hiʻiaka tradition", "weight": 1}
+{"name": "Kapōʻulakīnaʻu", "type": "deity", "morphemes": ["kapōulakīnau"], "source": "Pele-Hiʻiaka tradition", "weight": 1}
+{"name": "Kapo", "type": "deity", "morphemes": ["kapo"], "source": "Pele-Hiʻiaka tradition", "weight": 1}
+{"name": "Poliʻahu", "type": "deity", "morphemes": ["poli", "ahu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Lilinoe", "type": "deity", "morphemes": ["lilinoe"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Waiau", "type": "deity", "morphemes": ["vai", "au"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kamohoaliʻi", "type": "deity", "morphemes": ["ka", "moho", "alii"], "source": "Pele-Hiʻiaka tradition", "weight": 1}
+{"name": "Kahoʻāliʻi", "type": "deity", "morphemes": ["kahoālii"], "source": "Malo", "weight": 1}
+{"name": "Haumea", "type": "deity", "morphemes": ["haumea"], "source": "Kumulipo", "weight": 1}
+{"name": "Kamehaʻikana", "type": "deity", "morphemes": ["kamehaikana"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Papa", "type": "deity", "morphemes": ["papa"], "source": "Kumulipo", "weight": 1}
+{"name": "Papahānaumoku", "type": "deity", "morphemes": ["papa", "hānau", "moku"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Wākea", "type": "deity", "morphemes": ["vākea"], "source": "Kumulipo", "weight": 1}
+{"name": "Hoʻohōkūkalani", "type": "deity", "morphemes": ["hoohōkū", "ka", "lani"], "source": "Kumulipo", "weight": 1}
+{"name": "Hina", "type": "deity", "morphemes": ["hina"], "source": "Fornander", "weight": 1}
+{"name": "Hinaʻaimalama", "type": "deity", "morphemes": ["hina", "ai", "malama"], "source": "Fornander", "weight": 1}
+{"name": "Hinapukuiʻa", "type": "deity", "morphemes": ["hina", "puku", "ia"], "source": "Kamakau", "weight": 1}
+{"name": "Hinaʻuluʻōhiʻa", "type": "deity", "morphemes": ["hina", "ulu", "ōhia"], "source": "Malo", "weight": 1}
+{"name": "Kamapuaʻa", "type": "deity", "morphemes": ["kama", "puaa"], "source": "Fornander", "weight": 1}
+{"name": "Kihawahine", "type": "deity", "morphemes": ["kiha", "vahine"], "source": "Kamakau", "weight": 1}
+{"name": "Moʻoinanea", "type": "deity", "morphemes": ["mooinanea"], "source": "Kamakau", "weight": 1}
+{"name": "Kālaipāhoa", "type": "deity", "morphemes": ["kālai", "pāhoa"], "source": "Kamakau", "weight": 1}
+{"name": "Kaʻahupāhau", "type": "deity", "morphemes": ["kaahupāhau"], "source": "Kamakau", "weight": 1}
+{"name": "Kahiʻukā", "type": "deity", "morphemes": ["kahiukā"], "source": "Kamakau", "weight": 1}
+{"name": "Kūhaimoana", "type": "deity", "morphemes": ["kūhaimoana"], "source": "Kamakau", "weight": 1}
+{"name": "Milu", "type": "deity", "morphemes": ["milu"], "source": "Kamakau", "weight": 1}
+{"name": "Uli", "type": "deity", "morphemes": ["uli"], "source": "Kamakau", "weight": 1}
+{"name": "Laʻamaomao", "type": "deity", "morphemes": ["laamaomao"], "source": "Fornander", "weight": 1}
+{"name": "ʻAiʻai", "type": "deity", "morphemes": ["aiai"], "source": "Kamakau", "weight": 1}
+{"name": "Kalamainuʻu", "type": "deity", "morphemes": ["kalamainuu"], "source": "Fornander", "weight": 1}
+{"name": "Kihanuilūlūmoku", "type": "deity", "morphemes": ["kiha", "nui", "lūlū", "moku"], "source": "Haleʻole, Lāʻieikawai", "weight": 1}
+{"name": "Nuʻakea", "type": "deity", "morphemes": ["nua", "kea"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kāneikaulanaʻula", "type": "deity", "morphemes": ["kāneikaulanaula"], "source": "Kamakau", "weight": 1}
+{"name": "Kahuilaokalani", "type": "deity", "morphemes": ["kahuilaokalani"], "source": "Kamakau", "weight": 1}
+{"name": "Kumulipo", "type": "deity", "morphemes": ["kumu", "lipo"], "source": "Kumulipo", "weight": 1}
+{"name": "Pōʻele", "type": "deity", "morphemes": ["pō", "ele"], "source": "Kumulipo", "weight": 1}
+{"name": "Pōuliuli", "type": "deity", "morphemes": ["pō", "uliuli"], "source": "Kumulipo", "weight": 1}
+{"name": "Pōwehiwehi", "type": "deity", "morphemes": ["pō", "vehivehi"], "source": "Kumulipo", "weight": 1}
+{"name": "Pōʻeleʻele", "type": "deity", "morphemes": ["pō", "eleele"], "source": "Kumulipo", "weight": 1}
+{"name": "Pōpanopano", "type": "deity", "morphemes": ["pō", "panopano"], "source": "Kumulipo", "weight": 1}
+{"name": "Kaʻōnohiokalā", "type": "deity", "morphemes": ["ka", "ōnohi", "o", "ka", "lā"], "source": "Haleʻole, Lāʻieikawai", "weight": 1}
+{"name": "Hōkūleʻa", "type": "celestial", "morphemes": ["hōkū", "lea"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Hōkūpaʻa", "type": "celestial", "morphemes": ["hōkū", "paa"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Makaliʻi", "type": "celestial", "morphemes": ["makalii"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Hōkūloa", "type": "celestial", "morphemes": ["hōkū", "loa"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Hōkūao", "type": "celestial", "morphemes": ["hōkū", "ao"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kaʻāwela", "type": "celestial", "morphemes": ["kaāvela"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Hōkūʻula", "type": "celestial", "morphemes": ["hōkū", "ula"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Hikianalia", "type": "celestial", "morphemes": ["hikianalia"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Hānaiakamalama", "type": "celestial", "morphemes": ["hānai", "a", "ka", "malama"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Holoholopinaʻau", "type": "celestial", "morphemes": ["holoholopinaau"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Hōkūhoʻokelewaʻa", "type": "celestial", "morphemes": ["hōkū", "hookele", "vaa"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Lehuakona", "type": "celestial", "morphemes": ["lehua", "kona"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Hōkūkauʻōpae", "type": "celestial", "morphemes": ["hōkūkauōpae"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Nāhiku", "type": "celestial", "morphemes": ["nā", "hiku"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "ʻIao", "type": "celestial", "morphemes": ["iao"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kaʻiliʻula", "type": "celestial", "morphemes": ["ka", "ili", "ula"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Hiʻilei", "type": "celestial", "morphemes": ["hii", "lei"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kanukuokapuahi", "type": "celestial", "morphemes": ["ka", "nuku", "o", "ka", "puahi"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Mākohilani", "type": "celestial", "morphemes": ["mākohilani"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kaulua", "type": "celestial", "morphemes": ["kaulua"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kāʻelo", "type": "other", "morphemes": ["kāelo"], "source": "Malo", "weight": 1}
+{"name": "ʻIkuā", "type": "other", "morphemes": ["ikuā"], "source": "Malo", "weight": 1}
+{"name": "Welehu", "type": "other", "morphemes": ["velehu"], "source": "Malo", "weight": 1}
+{"name": "Nana", "type": "other", "morphemes": ["nana"], "source": "Malo", "weight": 1}
+{"name": "Ikiiki", "type": "other", "morphemes": ["ikiiki"], "source": "Malo", "weight": 1}
+{"name": "Kaʻaona", "type": "other", "morphemes": ["kaaona"], "source": "Malo", "weight": 1}
+{"name": "Māhoe", "type": "other", "morphemes": ["māhoe"], "source": "Malo", "weight": 1}
+{"name": "Hinaiaʻeleʻele", "type": "other", "morphemes": ["hinaiaeleele"], "source": "Malo", "weight": 1}
+{"name": "Hoaka", "type": "other", "morphemes": ["hoaka"], "source": "Malo", "weight": 1}
+{"name": "Huna", "type": "other", "morphemes": ["huna"], "source": "Malo", "weight": 1}
+{"name": "Mōhalu", "type": "other", "morphemes": ["mōhalu"], "source": "Malo", "weight": 1}
+{"name": "Hoku", "type": "other", "morphemes": ["hoku"], "source": "Malo", "weight": 1}
+{"name": "Māhealani", "type": "other", "morphemes": ["māhealani"], "source": "Malo", "weight": 1}
+{"name": "Mauli", "type": "other", "morphemes": ["mauli"], "source": "Malo", "weight": 1}
+{"name": "Muku", "type": "other", "morphemes": ["muku"], "source": "Malo", "weight": 1}
+{"name": "Moaʻe", "type": "other", "morphemes": ["moae"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kēhau", "type": "other", "morphemes": ["kēhau"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "ʻĀpaʻapaʻa", "type": "other", "morphemes": ["āpaapaa"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Nāulu", "type": "other", "morphemes": ["nāulu"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kanilehua", "type": "other", "morphemes": ["kanilehua"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kuahine", "type": "other", "morphemes": ["kuahine"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kīpuʻupuʻu", "type": "other", "morphemes": ["kīpuupuu"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Waʻahila", "type": "other", "morphemes": ["vaahila"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "ʻUlalena", "type": "other", "morphemes": ["ula", "lena"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kūkalahale", "type": "other", "morphemes": ["kūkala", "hale"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Pōʻaihale", "type": "other", "morphemes": ["pōai", "hale"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kauaʻula", "type": "other", "morphemes": ["ka", "ua", "ula"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Puʻukoholā", "type": "other", "morphemes": ["puu", "koholā"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Moʻokini", "type": "other", "morphemes": ["moo", "kini"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hikiau", "type": "other", "morphemes": ["hiki", "au"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Ulupō", "type": "other", "morphemes": ["ulu", "pō"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pākākā", "type": "other", "morphemes": ["pākākā"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Wahaʻula", "type": "other", "morphemes": ["vaha", "ula"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Holoholokū", "type": "other", "morphemes": ["holoholo", "kū"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kāneʻaki", "type": "other", "morphemes": ["kāne", "aki"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Piʻilanihale", "type": "other", "morphemes": ["pii", "lani", "hale"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hāpaialiʻi", "type": "other", "morphemes": ["hāpai", "alii"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kūʻīlioloa", "type": "other", "morphemes": ["kū", "īlio", "loa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Halekiʻi", "type": "other", "morphemes": ["hale", "kii"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Pihana", "type": "other", "morphemes": ["pihana"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kamakahonu", "type": "other", "morphemes": ["ka", "maka", "honu"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kepaniwai", "type": "other", "morphemes": ["ke", "pani", "vai"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mokuʻohai", "type": "other", "morphemes": ["moku", "ōhai"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kalehuawehe", "type": "other", "morphemes": ["ka", "lehua", "vehe"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kapuni", "type": "other", "morphemes": ["ka", "puni"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Haleokeawe", "type": "other", "morphemes": ["hale", "o", "keave"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Mailekini", "type": "other", "morphemes": ["maile", "kini"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Hikinaakalā", "type": "other", "morphemes": ["hikina", "a", "ka", "lā"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "ʻIliʻiliʻōpae", "type": "other", "morphemes": ["iliiliōpae"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Kauleonānāhoa", "type": "other", "morphemes": ["ka", "ule", "o", "nānāhoa"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Māmala", "type": "place", "morphemes": ["māmala"], "source": "Place Names of Hawaii", "weight": 1}
+{"name": "Menehune", "type": "group", "morphemes": ["menehune"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Mū", "type": "group", "morphemes": ["mū"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Nāwao", "type": "group", "morphemes": ["nāvao"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "ʻEʻepa", "type": "group", "morphemes": ["eepa"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Makaʻāinana", "type": "group", "morphemes": ["makaāinana"], "source": "Malo", "weight": 1}
+{"name": "Kauwā", "type": "group", "morphemes": ["kauvā"], "source": "Malo", "weight": 1}
+{"name": "Kaukaualiʻi", "type": "group", "morphemes": ["kaukaualii"], "source": "Malo", "weight": 1}
+{"name": "ʻĀlapa", "type": "group", "morphemes": ["ālapa"], "source": "Kamakau", "weight": 1}
+{"name": "Piʻipiʻi", "type": "group", "morphemes": ["piipii"], "source": "Kamakau", "weight": 1}
+{"name": "Kanaka maoli", "type": "group", "morphemes": ["kanaka", "maoli"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Haole", "type": "group", "morphemes": ["haole"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kupua", "type": "group", "morphemes": ["kupua"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Moʻo", "type": "group", "morphemes": ["moo"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Kini akua", "type": "group", "morphemes": ["kini", "akua"], "source": "Pukui-Elbert", "weight": 1}
+{"name": "Palikū", "type": "lineage", "morphemes": ["pali", "kū"], "source": "Malo", "weight": 1}
+{"name": "ʻĪ", "type": "lineage", "morphemes": ["ī"], "source": "Kamakau", "weight": 1}
+{"name": "Mahi", "type": "lineage", "morphemes": ["mahi"], "source": "Kamakau", "weight": 1}
+{"name": "Nīʻaupiʻo", "type": "title", "morphemes": ["nīau", "pio"], "source": "Malo", "weight": 1}
+{"name": "Kālaimoku", "type": "title", "morphemes": ["kālai", "moku"], "source": "Malo", "weight": 1}
+{"name": "Konohiki", "type": "title", "morphemes": ["konohiki"], "source": "Malo", "weight": 1}
+{"name": "Kuhina nui", "type": "title", "morphemes": ["kuhina", "nui"], "source": "Kamakau", "weight": 1}
+{"name": "Kiaʻāina", "type": "title", "morphemes": ["kia", "āina"], "source": "Kamakau", "weight": 1}
+{"name": "Hāloa", "type": "person", "morphemes": ["hā", "loa"], "source": "Kumulipo", "weight": 1}
+{"name": "Waia", "type": "person", "morphemes": ["vaia"], "source": "Kumulipo", "weight": 1}
+{"name": "Hinanalo", "type": "person", "morphemes": ["hinanalo"], "source": "Kumulipo", "weight": 1}
+{"name": "Nanakehili", "type": "person", "morphemes": ["nanakehili"], "source": "Kumulipo", "weight": 1}
+{"name": "Kio", "type": "person", "morphemes": ["kio"], "source": "Kumulipo", "weight": 1}
+{"name": "Ole", "type": "person", "morphemes": ["ole"], "source": "Kumulipo", "weight": 1}
+{"name": "Pupue", "type": "person", "morphemes": ["pupue"], "source": "Kumulipo", "weight": 1}
+{"name": "Kahiko", "type": "person", "morphemes": ["kahiko"], "source": "Malo", "weight": 1}
+{"name": "Luanuʻu", "type": "person", "morphemes": ["luanuu"], "source": "Kumulipo", "weight": 1}
+{"name": "Kiʻi", "type": "person", "morphemes": ["kii"], "source": "Kumulipo", "weight": 1}
+{"name": "ʻUlu", "type": "person", "morphemes": ["ulu"], "source": "Kumulipo", "weight": 1}
+{"name": "Nanaʻulu", "type": "person", "morphemes": ["nanaulu"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Nanaʻie", "type": "person", "morphemes": ["nanaie"], "source": "Kumulipo", "weight": 1}
+{"name": "Nanailani", "type": "person", "morphemes": ["nanailani"], "source": "Kumulipo", "weight": 1}
+{"name": "Akalana", "type": "person", "morphemes": ["akalana"], "source": "Kumulipo", "weight": 1}
+{"name": "Māui", "type": "person", "morphemes": ["māui"], "source": "Kumulipo", "weight": 1}
+{"name": "Hawaiʻiloa", "type": "person", "morphemes": ["havaii", "loa"], "source": "Fornander", "weight": 1}
+{"name": "Kumuhonua", "type": "person", "morphemes": ["kumu", "honua"], "source": "Malo", "weight": 1}
+{"name": "Nanamaoa", "type": "person", "morphemes": ["nanamaoa"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Nanakaoko", "type": "person", "morphemes": ["nanakaoko"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Heleipawa", "type": "person", "morphemes": ["heleipava"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "ʻAikanaka", "type": "person", "morphemes": ["ai", "kanaka"], "source": "Fornander", "weight": 1}
+{"name": "Hema", "type": "person", "morphemes": ["hema"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kahaʻi", "type": "person", "morphemes": ["kahai"], "source": "Fornander", "weight": 1}
+{"name": "Wahieloa", "type": "person", "morphemes": ["vahie", "loa"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Laka", "type": "person", "morphemes": ["laka"], "source": "Fornander", "weight": 1}
+{"name": "Paumakua", "type": "person", "morphemes": ["paumakua"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Haho", "type": "person", "morphemes": ["haho"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Palena", "type": "person", "morphemes": ["palena"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Hanalaʻanui", "type": "person", "morphemes": ["hanalaa", "nui"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Hanalaʻaiki", "type": "person", "morphemes": ["hanalaa", "iki"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Lanakawai", "type": "person", "morphemes": ["lanakavai"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Pili", "type": "person", "morphemes": ["pili"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Pāʻao", "type": "person", "morphemes": ["pāao"], "source": "Fornander", "weight": 1}
+{"name": "Makuakaʻūmana", "type": "person", "morphemes": ["makuakaūmana"], "source": "Fornander", "weight": 1}
+{"name": "Kapawa", "type": "person", "morphemes": ["ka", "pava"], "source": "Fornander", "weight": 1}
+{"name": "Koa", "type": "person", "morphemes": ["koa"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kūkohou", "type": "person", "morphemes": ["kūkohou"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kaniuhi", "type": "person", "morphemes": ["kaniuhi"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kanipahu", "type": "person", "morphemes": ["kanipahu"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kamaiole", "type": "person", "morphemes": ["kamaiole"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kahaimoelea", "type": "person", "morphemes": ["kahaimoelea"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kalaunuiohua", "type": "person", "morphemes": ["kalaunuiohua"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kūaiwa", "type": "person", "morphemes": ["kūaiva"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kahoukapu", "type": "person", "morphemes": ["kahoukapu"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kauholanuimahu", "type": "person", "morphemes": ["kauholanuimahu"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kiha", "type": "person", "morphemes": ["kiha"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Līloa", "type": "person", "morphemes": ["līloa"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Hākau", "type": "person", "morphemes": ["hākau"], "source": "Kamakau", "weight": 1}
+{"name": "ʻUmi", "type": "person", "morphemes": ["umi"], "source": "Kamakau", "weight": 1}
+{"name": "Piʻikea", "type": "person", "morphemes": ["pii", "kea"], "source": "Kamakau", "weight": 1}
+{"name": "Kapukini", "type": "person", "morphemes": ["kapu", "kini"], "source": "Kamakau", "weight": 1}
+{"name": "ʻŌmaokamaʻu", "type": "person", "morphemes": ["ōmaokamau"], "source": "Kamakau", "weight": 1}
+{"name": "Piʻimaiwaʻa", "type": "person", "morphemes": ["piimaivaa"], "source": "Kamakau", "weight": 1}
+{"name": "Keliʻiokaloa", "type": "person", "morphemes": ["keliiokaloa"], "source": "Kamakau", "weight": 1}
+{"name": "Keawenuiaʻumi", "type": "person", "morphemes": ["keave", "nui"], "source": "Kamakau", "weight": 1}
+{"name": "Lonoikamakahiki", "type": "person", "morphemes": ["lono", "i", "ka", "makahiki"], "source": "Fornander", "weight": 1}
+{"name": "Kaikilani", "type": "person", "morphemes": ["kaikilani"], "source": "Fornander", "weight": 1}
+{"name": "Kapaʻihiahilina", "type": "person", "morphemes": ["kapaihi"], "source": "Fornander", "weight": 1}
+{"name": "Kanaloakuaʻana", "type": "person", "morphemes": ["kanaloa", "kuaana"], "source": "Fornander", "weight": 1}
+{"name": "Keākealanikāne", "type": "person", "morphemes": ["ke", "ākea", "lani", "kāne"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Keakamahana", "type": "person", "morphemes": ["keakamahana"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Keākealaniwahine", "type": "person", "morphemes": ["ke", "ākea", "lani", "vahine"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Keawe", "type": "person", "morphemes": ["keave"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kalanikauleleiaiwi", "type": "person", "morphemes": ["kalanikauleleiaivi"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Lonomaʻaikanaka", "type": "person", "morphemes": ["lonomaaikanaka"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kalaninuiʻīamamao", "type": "person", "morphemes": ["kalaninuiīamamao"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Alapaʻinui", "type": "person", "morphemes": ["alapai", "nui"], "source": "Kamakau", "weight": 1}
+{"name": "Keaweʻōpala", "type": "person", "morphemes": ["keave", "ōpala"], "source": "Kamakau", "weight": 1}
+{"name": "Kalaniʻōpuʻu", "type": "person", "morphemes": ["ka", "lani", "ōpuu"], "source": "Kamakau", "weight": 1}
+{"name": "Keōua", "type": "person", "morphemes": ["keōua"], "source": "Kamakau", "weight": 1}
+{"name": "Kekuʻiapoiwa", "type": "person", "morphemes": ["kekuiapoiva"], "source": "Kamakau", "weight": 1}
+{"name": "Kamakaʻīmoku", "type": "person", "morphemes": ["kamakaīmoku"], "source": "Kamakau", "weight": 1}
+{"name": "Kamehameha", "type": "person", "morphemes": ["ka", "mehameha"], "source": "Kamakau", "weight": 1}
+{"name": "Kīwalaʻō", "type": "person", "morphemes": ["kīvalaō"], "source": "Kamakau", "weight": 1}
+{"name": "Keōuakūʻahuʻula", "type": "person", "morphemes": ["keōua", "kū", "ahu", "ula"], "source": "Kamakau", "weight": 1}
+{"name": "Keawemauhili", "type": "person", "morphemes": ["keave", "mauhili"], "source": "Kamakau", "weight": 1}
+{"name": "Kalaimamahū", "type": "person", "morphemes": ["kalaimamahū"], "source": "Kamakau", "weight": 1}
+{"name": "Keliʻimaikaʻi", "type": "person", "morphemes": ["ke", "alii", "maikai"], "source": "Kamakau", "weight": 1}
+{"name": "Kekuaokalani", "type": "person", "morphemes": ["kekuaokalani"], "source": "Kamakau", "weight": 1}
+{"name": "Manono", "type": "person", "morphemes": ["manono"], "source": "Kamakau", "weight": 1}
+{"name": "Kameʻeiamoku", "type": "person", "morphemes": ["kameeiamoku"], "source": "Kamakau", "weight": 1}
+{"name": "Kamanawa", "type": "person", "morphemes": ["kamanava"], "source": "Kamakau", "weight": 1}
+{"name": "Keawepoepoe", "type": "person", "morphemes": ["keave", "poepoe"], "source": "Kamakau", "weight": 1}
+{"name": "Keʻeaumoku", "type": "person", "morphemes": ["keeaumoku"], "source": "Kamakau", "weight": 1}
+{"name": "Kekūhaupiʻo", "type": "person", "morphemes": ["ke", "kū", "hau", "pio"], "source": "Kamakau", "weight": 1}
+{"name": "Kaʻiana", "type": "person", "morphemes": ["kaiana"], "source": "Kamakau", "weight": 1}
+{"name": "Kaʻahumanu", "type": "person", "morphemes": ["ka", "ahu", "manu"], "source": "Kamakau", "weight": 1}
+{"name": "Keōpūolani", "type": "person", "morphemes": ["keōpūolani"], "source": "Kamakau", "weight": 1}
+{"name": "Kalanimoku", "type": "person", "morphemes": ["kalanimoku"], "source": "Kamakau", "weight": 1}
+{"name": "Kuakini", "type": "person", "morphemes": ["kua", "kini"], "source": "Kamakau", "weight": 1}
+{"name": "Kaheiheimālie", "type": "person", "morphemes": ["kaheiheimālie"], "source": "Kamakau", "weight": 1}
+{"name": "Nāmāhana", "type": "person", "morphemes": ["nā", "māhana"], "source": "Kamakau", "weight": 1}
+{"name": "Peleuli", "type": "person", "morphemes": ["peleuli"], "source": "Kamakau", "weight": 1}
+{"name": "Kānekapōlei", "type": "person", "morphemes": ["kānekapōlei"], "source": "Kamakau", "weight": 1}
+{"name": "Kalola", "type": "person", "morphemes": ["kalola"], "source": "Kamakau", "weight": 1}
+{"name": "Liliha", "type": "person", "morphemes": ["liliha"], "source": "Kamakau", "weight": 1}
+{"name": "Kīnaʻu", "type": "person", "morphemes": ["kīnau"], "source": "Kamakau", "weight": 1}
+{"name": "Kekāuluohi", "type": "person", "morphemes": ["kekāuluohi"], "source": "Kamakau", "weight": 1}
+{"name": "Kauikeaouli", "type": "person", "morphemes": ["kau", "i", "ke", "ao", "uli"], "source": "Kamakau", "weight": 1}
+{"name": "Liholiho", "type": "person", "morphemes": ["liholiho"], "source": "Kamakau", "weight": 1}
+{"name": "Nāhiʻenaʻena", "type": "person", "morphemes": ["nā", "ahi", "enaena"], "source": "Kamakau", "weight": 1}
+{"name": "Kekūanaōʻa", "type": "person", "morphemes": ["ke", "kū", "anaōa"], "source": "Kamakau", "weight": 1}
+{"name": "Kalākaua", "type": "person", "morphemes": ["ka", "lā", "kaua"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Liliʻuokalani", "type": "person", "morphemes": ["liliu", "o", "ka", "lani"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kapiʻolani", "type": "person", "morphemes": ["ka", "pio", "lani"], "source": "Kamakau", "weight": 1}
+{"name": "Lunalilo", "type": "person", "morphemes": ["luna", "lilo"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kalama", "type": "person", "morphemes": ["ka", "lama"], "source": "Kamakau", "weight": 1}
+{"name": "Pākī", "type": "person", "morphemes": ["pākī"], "source": "Kamakau", "weight": 1}
+{"name": "Konia", "type": "person", "morphemes": ["konia"], "source": "Kamakau", "weight": 1}
+{"name": "Pauahi", "type": "person", "morphemes": ["pau", "ahi"], "source": "Kamakau", "weight": 1}
+{"name": "Keʻelikōlani", "type": "person", "morphemes": ["keelikōlani"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kanaʻina", "type": "person", "morphemes": ["ka", "naina"], "source": "Kamakau", "weight": 1}
+{"name": "Kamāmalu", "type": "person", "morphemes": ["ka", "māmalu"], "source": "Kamakau", "weight": 1}
+{"name": "Kaumualiʻi", "type": "person", "morphemes": ["kaumualii"], "source": "Kamakau", "weight": 1}
+{"name": "Kapule", "type": "person", "morphemes": ["kapule"], "source": "Kamakau", "weight": 1}
+{"name": "Kamakahelei", "type": "person", "morphemes": ["kamakahelei"], "source": "Kamakau", "weight": 1}
+{"name": "Kaʻeokūlani", "type": "person", "morphemes": ["kaeokūlani"], "source": "Kamakau", "weight": 1}
+{"name": "Kāneoneo", "type": "person", "morphemes": ["kāneoneo"], "source": "Kamakau", "weight": 1}
+{"name": "Kahahana", "type": "person", "morphemes": ["kahahana"], "source": "Kamakau", "weight": 1}
+{"name": "Kalanikūpule", "type": "person", "morphemes": ["kalanikūpule"], "source": "Kamakau", "weight": 1}
+{"name": "Kahekili", "type": "person", "morphemes": ["ka", "hekili"], "source": "Kamakau", "weight": 1}
+{"name": "Kamehamehanui", "type": "person", "morphemes": ["ka", "mehameha", "nui"], "source": "Kamakau", "weight": 1}
+{"name": "Kekaulike", "type": "person", "morphemes": ["ke", "kaulike"], "source": "Kamakau", "weight": 1}
+{"name": "Kaʻōpulupulu", "type": "person", "morphemes": ["kaōpulupulu"], "source": "Kamakau", "weight": 1}
+{"name": "Kahulupue", "type": "person", "morphemes": ["kahulupue"], "source": "Kamakau", "weight": 1}
+{"name": "Hewahewa", "type": "person", "morphemes": ["hevaheva"], "source": "Kamakau", "weight": 1}
+{"name": "Holoʻae", "type": "person", "morphemes": ["holoae"], "source": "Kamakau", "weight": 1}
+{"name": "Hoapili", "type": "person", "morphemes": ["hoa", "pili"], "source": "Kamakau", "weight": 1}
+{"name": "Humehume", "type": "person", "morphemes": ["humehume"], "source": "Kamakau", "weight": 1}
+{"name": "Kaʻōleiokū", "type": "person", "morphemes": ["kaōleiokū"], "source": "Kamakau", "weight": 1}
+{"name": "Kaikioʻewa", "type": "person", "morphemes": ["kaikioeva"], "source": "Kamakau", "weight": 1}
+{"name": "Nāihe", "type": "person", "morphemes": ["nāihe"], "source": "Kamakau", "weight": 1}
+{"name": "Kekauʻōnohi", "type": "person", "morphemes": ["kekauōnohi"], "source": "Kamakau", "weight": 1}
+{"name": "Haʻalilio", "type": "person", "morphemes": ["haalilio"], "source": "Kamakau", "weight": 1}
+{"name": "Kekūāiwa", "type": "person", "morphemes": ["kekūāiva"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kapuāiwa", "type": "person", "morphemes": ["kapu", "āiva"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kaleleonālani", "type": "person", "morphemes": ["ka", "lele", "o", "nā", "lani"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Likelike", "type": "person", "morphemes": ["likelike"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Leleiōhoku", "type": "person", "morphemes": ["leleiōhoku"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kaʻiulani", "type": "person", "morphemes": ["ka", "iu", "lani"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Nāmakehā", "type": "person", "morphemes": ["nāmakehā"], "source": "Kamakau", "weight": 1}
+{"name": "Koalaukani", "type": "person", "morphemes": ["koalaukani"], "source": "Kamakau", "weight": 1}
+{"name": "Kaomi", "type": "person", "morphemes": ["kaomi"], "source": "Kamakau", "weight": 1}
+{"name": "Huaʻā", "type": "person", "morphemes": ["huaā"], "source": "Kamakau", "weight": 1}
+{"name": "ʻĪmaikalani", "type": "person", "morphemes": ["īmaikalani"], "source": "Kamakau", "weight": 1}
+{"name": "Wahilani", "type": "person", "morphemes": ["vahilani"], "source": "Kamakau", "weight": 1}
+{"name": "Kulukulua", "type": "person", "morphemes": ["kulukulua"], "source": "Kamakau", "weight": 1}
+{"name": "Luahoʻomoe", "type": "person", "morphemes": ["luahoomoe"], "source": "Kamakau", "weight": 1}
+{"name": "Keaulumoku", "type": "person", "morphemes": ["keaulumoku"], "source": "Kamakau", "weight": 1}
+{"name": "Haʻae", "type": "person", "morphemes": ["haae"], "source": "Kamakau", "weight": 1}
+{"name": "Māʻilikūkahi", "type": "person", "morphemes": ["māilikūkahi"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kalonaiki", "type": "person", "morphemes": ["ka", "lona", "iki"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kalonanui", "type": "person", "morphemes": ["ka", "lona", "nui"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Piliwale", "type": "person", "morphemes": ["pili", "vale"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kūkaniloko", "type": "person", "morphemes": ["kūkaniloko"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kalanimanuia", "type": "person", "morphemes": ["kalanimanuia"], "source": "Fornander", "weight": 1}
+{"name": "Kaʻihikapu", "type": "person", "morphemes": ["ka", "ihi", "kapu"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kākuhihewa", "type": "person", "morphemes": ["kākuhiheva"], "source": "Fornander", "weight": 1}
+{"name": "Kānekapu", "type": "person", "morphemes": ["kāne", "kapu"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kahoʻowaha", "type": "person", "morphemes": ["kahoovaha"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kūaliʻi", "type": "person", "morphemes": ["kūalii"], "source": "Fornander", "weight": 1}
+{"name": "Kapiʻiohokalani", "type": "person", "morphemes": ["kapiiohokalani"], "source": "Kamakau", "weight": 1}
+{"name": "Peleiōhōlani", "type": "person", "morphemes": ["peleiōhōlani"], "source": "Kamakau", "weight": 1}
+{"name": "Kūmahana", "type": "person", "morphemes": ["kūmahana"], "source": "Kamakau", "weight": 1}
+{"name": "Haka", "type": "person", "morphemes": ["haka"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Laʻakona", "type": "person", "morphemes": ["laakona"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Māweke", "type": "person", "morphemes": ["māveke"], "source": "Fornander", "weight": 1}
+{"name": "Olopana", "type": "person", "morphemes": ["olopana"], "source": "Fornander", "weight": 1}
+{"name": "Mōʻīkeha", "type": "person", "morphemes": ["mōīkeha"], "source": "Fornander", "weight": 1}
+{"name": "Kila", "type": "person", "morphemes": ["kila"], "source": "Fornander", "weight": 1}
+{"name": "Laʻamaikahiki", "type": "person", "morphemes": ["laa", "mai", "kahiki"], "source": "Fornander", "weight": 1}
+{"name": "Hoʻokamaliʻi", "type": "person", "morphemes": ["hookamalii"], "source": "Fornander", "weight": 1}
+{"name": "Luʻukia", "type": "person", "morphemes": ["luukia"], "source": "Fornander", "weight": 1}
+{"name": "Kukona", "type": "person", "morphemes": ["kukona"], "source": "Fornander", "weight": 1}
+{"name": "Manokalanipō", "type": "person", "morphemes": ["manokalanipō"], "source": "Fornander", "weight": 1}
+{"name": "Kawelo", "type": "person", "morphemes": ["kavelo"], "source": "Fornander", "weight": 1}
+{"name": "Kauahoa", "type": "person", "morphemes": ["kauahoa"], "source": "Fornander", "weight": 1}
+{"name": "Kamalama", "type": "person", "morphemes": ["kamalama"], "source": "Fornander", "weight": 1}
+{"name": "Kamaluohua", "type": "person", "morphemes": ["kamaluohua"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kākaʻalaneo", "type": "person", "morphemes": ["kākaalaneo"], "source": "Fornander", "weight": 1}
+{"name": "Kaululāʻau", "type": "person", "morphemes": ["ka", "ulu", "lāau"], "source": "Fornander", "weight": 1}
+{"name": "Kawaokaohele", "type": "person", "morphemes": ["kavaokaohele"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Piʻilani", "type": "person", "morphemes": ["pii", "lani"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kamalālāwalu", "type": "person", "morphemes": ["kamalālāvalu"], "source": "Fornander", "weight": 1}
+{"name": "Kalanikaumakaowakea", "type": "person", "morphemes": ["kalanikaumakaovakea"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Lonohonuakini", "type": "person", "morphemes": ["lonohonuakini"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Kamauaua", "type": "person", "morphemes": ["kamauaua"], "source": "Chiefly genealogies", "weight": 1}
+{"name": "Keoloʻewa", "type": "person", "morphemes": ["ke", "olo", "eva"], "source": "Fornander", "weight": 1}
+{"name": "Kaupeʻepeʻe", "type": "person", "morphemes": ["kaupeepee"], "source": "Fornander", "weight": 1}
+{"name": "Lanikāula", "type": "person", "morphemes": ["lani", "kāula"], "source": "Fornander", "weight": 1}
+{"name": "Kana", "type": "person", "morphemes": ["kana"], "source": "Fornander", "weight": 1}
+{"name": "Niheu", "type": "person", "morphemes": ["niheu"], "source": "Fornander", "weight": 1}
+{"name": "Hakalanileo", "type": "person", "morphemes": ["hakalanileo"], "source": "Fornander", "weight": 1}
+{"name": "Kaulu", "type": "person", "morphemes": ["kaulu"], "source": "Fornander", "weight": 1}
+{"name": "Palila", "type": "person", "morphemes": ["palila"], "source": "Fornander", "weight": 1}
+{"name": "Pākaʻa", "type": "person", "morphemes": ["pākaa"], "source": "Fornander", "weight": 1}
+{"name": "Kūanuʻuanu", "type": "person", "morphemes": ["kūanuuanu"], "source": "Fornander", "weight": 1}
+{"name": "Pīkoiakaʻalalā", "type": "person", "morphemes": ["pīkoi"], "source": "Fornander", "weight": 1}
+{"name": "Kalelealuakā", "type": "person", "morphemes": ["kalelealuakā"], "source": "Fornander", "weight": 1}
+{"name": "Pāmano", "type": "person", "morphemes": ["pāmano"], "source": "Fornander", "weight": 1}
+{"name": "Kepakaʻiliʻula", "type": "person", "morphemes": ["kepakailiula"], "source": "Fornander", "weight": 1}
+{"name": "Hiku", "type": "person", "morphemes": ["hiku"], "source": "Fornander", "weight": 1}
+{"name": "Kawelu", "type": "person", "morphemes": ["kavelu"], "source": "Fornander", "weight": 1}
+{"name": "Kahalaopuna", "type": "person", "morphemes": ["ka", "hala", "o", "puna"], "source": "Fornander", "weight": 1}
+{"name": "Kauhi", "type": "person", "morphemes": ["kauhi"], "source": "Fornander", "weight": 1}
+{"name": "ʻAukelenuiaiku", "type": "person", "morphemes": ["aukele", "nui"], "source": "Fornander", "weight": 1}
+{"name": "Kamaunuaniho", "type": "person", "morphemes": ["kamaunuaniho"], "source": "Fornander", "weight": 1}
+{"name": "Kalaepuni", "type": "person", "morphemes": ["kalaepuni"], "source": "Fornander", "weight": 1}
+{"name": "Kapunohu", "type": "person", "morphemes": ["kapunohu"], "source": "Fornander", "weight": 1}
+{"name": "Punia", "type": "person", "morphemes": ["punia"], "source": "Fornander", "weight": 1}
+{"name": "Kaipalaoa", "type": "person", "morphemes": ["kai", "palaoa"], "source": "Fornander", "weight": 1}
+{"name": "Lepeamoa", "type": "person", "morphemes": ["lepe", "a", "moa"], "source": "Fornander", "weight": 1}
+{"name": "Kauilani", "type": "person", "morphemes": ["kauilani"], "source": "Fornander", "weight": 1}
+{"name": "Kahikiʻula", "type": "person", "morphemes": ["kahiki", "ula"], "source": "Fornander", "weight": 1}
+{"name": "Lāʻieikawai", "type": "person", "morphemes": ["lāie", "i", "ka", "vai"], "source": "Haleʻole, Lāʻieikawai", "weight": 1}
+{"name": "Lāʻielohelohe", "type": "person", "morphemes": ["lāielohelohe"], "source": "Haleʻole, Lāʻieikawai", "weight": 1}
+{"name": "Waka", "type": "person", "morphemes": ["vaka"], "source": "Haleʻole, Lāʻieikawai", "weight": 1}
+{"name": "ʻAiwohikupua", "type": "person", "morphemes": ["aivohikupua"], "source": "Haleʻole, Lāʻieikawai", "weight": 1}
+{"name": "Hauaʻiliki", "type": "person", "morphemes": ["hauailiki"], "source": "Haleʻole, Lāʻieikawai", "weight": 1}
+{"name": "Kahalaomāpuana", "type": "person", "morphemes": ["ka", "hala", "o", "māpuana"], "source": "Haleʻole, Lāʻieikawai", "weight": 1}
+{"name": "Lohiʻau", "type": "person", "morphemes": ["lohiau"], "source": "Pele-Hiʻiaka tradition", "weight": 1}
+{"name": "Hōpoe", "type": "person", "morphemes": ["hōpoe"], "source": "Pele-Hiʻiaka tradition", "weight": 1}
+{"name": "Paoa", "type": "person", "morphemes": ["paoa"], "source": "Pele-Hiʻiaka tradition", "weight": 1}

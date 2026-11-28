@@ -1,0 +1,417 @@
+{
+ "A": [
+  {
+   "item": "Utiyañcēralātaṉ",
+   "verdict": "ok"
+  },
+  {
+   "item": "Vaḻuti",
+   "verdict": "ok"
+  },
+  {
+   "item": "Poṉmaṇiyār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Iḷaṅkīrantaiyār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kuṭavar",
+   "verdict": "ok"
+  },
+  {
+   "item": "Nakkaṇṇaiyār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Neṭuveṇṇilaviṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Mutukaṇṇaṉ Cāttaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ciṟaikkuṭi",
+   "verdict": "ok"
+  },
+  {
+   "item": "Īḻattup Pūtaṉtēvaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kācipaṉ Kīraṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Cītai",
+   "verdict": "ok"
+  },
+  {
+   "item": "Irumpiṭarttalaiyār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Vāṭṭāṟu",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kaṇaikkāl Irumpoṟai",
+   "verdict": "ok"
+  },
+  {
+   "item": "Viṭṭakutiraiyār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Uruttiraṅkaṇṇaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Iḷaṅkuṭṭuvaṉ",
+   "verdict": "ok"
+  },
+  {
+   "item": "Irumpoṟai",
+   "verdict": "ok"
+  },
+  {
+   "item": "Paraṅkuṉṟu",
+   "verdict": "ok"
+  },
+  {
+   "item": "Aṇilāṭumuṉṟilār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Nārmuṭiccēral",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kumaṇaṉ",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kumuḻūr",
+   "verdict": "ok"
+  },
+  {
+   "item": "Neṭuvēḷ",
+   "verdict": "ok"
+  },
+  {
+   "item": "Cēral",
+   "verdict": "ok"
+  },
+  {
+   "item": "Maḻavar",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kēcavaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kāppiyāṟu",
+   "verdict": "ok"
+  },
+  {
+   "item": "Māntarañcēral Irumpoṟai",
+   "verdict": "ok"
+  },
+  {
+   "item": "Paḻaiyōḷ",
+   "verdict": "ok"
+  },
+  {
+   "item": "Peruñcēral Irumpoṟai",
+   "verdict": "ok"
+  },
+  {
+   "item": "Āvaṭutuṟai",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kavuṇiyaṉ Pūtattaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Varuṭai",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kaṇṇaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Peruṅkuṉṟūr",
+   "verdict": "ok"
+  },
+  {
+   "item": "Veṇṇākaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Mīṉeṟitūṇṭilār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Piramaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Vēmpaṟṟūr",
+   "verdict": "ok"
+  },
+  {
+   "item": "Muṭamōciyār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Neytalaṅkāṉal",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kāntāram",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kuṟuṅkuṭi Marutaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ciṟukantaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kaṭaikkuḷam",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kāmaṉ",
+   "verdict": "ok"
+  },
+  {
+   "item": "Māmūlaṉār",
+   "verdict": "ok"
+  },
+  {
+   "item": "Maḷḷaṉār",
+   "verdict": "ok"
+  }
+ ],
+ "B": [
+  {
+   "item": "maṉai",
+   "verdict": "ok"
+  },
+  {
+   "item": "kuṟaṭu",
+   "verdict": "wrong",
+   "reason": "In Sangam texts kuṟaṭu means a wooden block, stump or wheel hub (Puṟam 290, Kuṟun. 198, Ciṟupāṇ.); the sense 'tongs' is first cited from Nālaṭiyār 208 (TL; DEDR 1843 is a separate entry)."
+  },
+  {
+   "item": "vāḷai",
+   "verdict": "ok"
+  },
+  {
+   "item": "kaṭai",
+   "verdict": "ok"
+  },
+  {
+   "item": "ari",
+   "verdict": "ok"
+  },
+  {
+   "item": "koṅkai",
+   "verdict": "ok"
+  },
+  {
+   "item": "ōnti",
+   "verdict": "wrong",
+   "reason": "The Sangam form for the bloodsucker lizard is ōti (Kuṟuntokai 140); the variant ōnti is absent from the Sangam corpus and first cited from the Tivākaram nighaṇṭu (TL), so it is later."
+  },
+  {
+   "item": "pōrvai",
+   "verdict": "ok"
+  },
+  {
+   "item": "āḷ",
+   "verdict": "ok"
+  },
+  {
+   "item": "mulai",
+   "verdict": "ok"
+  },
+  {
+   "item": "kiḷai",
+   "verdict": "ok"
+  },
+  {
+   "item": "muḷ",
+   "verdict": "ok"
+  },
+  {
+   "item": "kaṇṇi",
+   "verdict": "wrong",
+   "reason": "In the Sangam corpus kaṇṇi (over 200 hits) means a chaplet or garland; the sense 'snare, trap' is first cited from Tāyumāṉavar (TL), so it is later."
+  },
+  {
+   "item": "virai",
+   "verdict": "wrong",
+   "reason": "Sangam virai means fragrance (with viraintu 'hastening', viraii 'mixed'); the sense 'seed' (DEDR 5418) is first cited from a late Bhāgavatam (TL); the Sangam word for seed is vittu or vitai."
+  },
+  {
+   "item": "kuṟi",
+   "verdict": "ok"
+  },
+  {
+   "item": "ceṭi",
+   "verdict": "wrong",
+   "reason": "Not found anywhere in the Sangam corpus; TL's earliest citation for ceṭi 'shrub' is Tiruvācakam (9th c.), so it is later."
+  },
+  {
+   "item": "kōyil",
+   "verdict": "ok"
+  },
+  {
+   "item": "vaḷaivu",
+   "verdict": "wrong",
+   "reason": "Not found in the Sangam corpus (only the verb vaḷai and compounds like vaḷai-vāy) and TL gives no literary citation, so it is later."
+  },
+  {
+   "item": "kōṭu",
+   "verdict": "ok"
+  },
+  {
+   "item": "paṟi",
+   "verdict": "ok"
+  },
+  {
+   "item": "uṇaṅkal",
+   "verdict": "ok"
+  },
+  {
+   "item": "niṟai",
+   "verdict": "ok"
+  },
+  {
+   "item": "kai",
+   "verdict": "ok"
+  },
+  {
+   "item": "vēl",
+   "verdict": "ok"
+  },
+  {
+   "item": "kuḷam",
+   "verdict": "ok"
+  },
+  {
+   "item": "kaṇ",
+   "verdict": "ok"
+  },
+  {
+   "item": "kātu",
+   "verdict": "ok"
+  },
+  {
+   "item": "kaṇai",
+   "verdict": "ok"
+  },
+  {
+   "item": "mukai",
+   "verdict": "ok"
+  },
+  {
+   "item": "muṉai",
+   "verdict": "wrong",
+   "reason": "In Sangam texts muṉai (over 100 hits) means battle-front or hostile land; 'point, tip' is first cited from Cīvakacintāmaṇi and Tivākaram (TL); the Sangam word for tip is nuṉai."
+  },
+  {
+   "item": "peṇ",
+   "verdict": "ok"
+  },
+  {
+   "item": "kaṭṭu",
+   "verdict": "ok"
+  },
+  {
+   "item": "pōr",
+   "verdict": "ok"
+  },
+  {
+   "item": "nil",
+   "verdict": "ok"
+  },
+  {
+   "item": "āḻi",
+   "verdict": "ok"
+  },
+  {
+   "item": "kuruttu",
+   "verdict": "ok"
+  },
+  {
+   "item": "koṭi",
+   "verdict": "ok"
+  },
+  {
+   "item": "yāy",
+   "verdict": "ok"
+  },
+  {
+   "item": "nilā",
+   "verdict": "wrong",
+   "reason": "In Sangam texts nilā always means moonlight (the moon is tiṅkaḷ, mati or matiyam); the sense 'moon' is first cited from Tiruvācakam (TL)."
+  },
+  {
+   "item": "miṉṉal",
+   "verdict": "wrong",
+   "reason": "Not found in the Sangam corpus, where lightning is miṉ; TL cites miṉṉal only from Cūṭāmaṇi nighaṇṭu and a late tūtu, so it is later."
+  },
+  {
+   "item": "kalakku",
+   "verdict": "ok"
+  },
+  {
+   "item": "taḷir",
+   "verdict": "ok"
+  },
+  {
+   "item": "cuḻal",
+   "verdict": "ok"
+  },
+  {
+   "item": "alavaṉ",
+   "verdict": "ok"
+  },
+  {
+   "item": "ēṇi",
+   "verdict": "ok"
+  },
+  {
+   "item": "tuḷi",
+   "verdict": "ok"
+  },
+  {
+   "item": "viciṟi",
+   "verdict": "wrong",
+   "reason": "Not found in the Sangam corpus; TL's earliest citation for viciṟi 'fan' is the Tivākaram nighaṇṭu, so it is later."
+  },
+  {
+   "item": "māṭam",
+   "verdict": "ok"
+  },
+  {
+   "item": "ñāyiṟu",
+   "verdict": "ok"
+  },
+  {
+   "item": "maṇi",
+   "verdict": "wrong",
+   "reason": "maṇi is treated as a loan from Indo-Aryan maṇi 'jewel, bead' (TL marks it Skt.; DEDR excludes it and links it to Skt. maṇi-); the 'grain' sense is secondary and has no early citation."
+  }
+ ]
+}

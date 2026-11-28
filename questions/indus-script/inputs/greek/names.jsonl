@@ -1,0 +1,600 @@
+{"name": "Adamas", "type": "person", "morphemes": ["a", "damajō"], "source": "Iliad", "weight": 1}
+{"name": "Agamemnōn", "type": "person", "morphemes": ["agamemnōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Agelaos", "type": "person", "morphemes": ["agō", "laos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Agēnōr", "type": "person", "morphemes": ["aga", "anēr"], "source": "Iliad", "weight": 1}
+{"name": "Agrios", "type": "person", "morphemes": ["agrios"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Aias", "type": "person", "morphemes": ["aias"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Aigisthos", "type": "person", "morphemes": ["aigisthos"], "source": "Odyssey", "weight": 1}
+{"name": "Aineias", "type": "person", "morphemes": ["aineias"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Aiolos", "type": "person", "morphemes": ["aiolos"], "source": "Odyssey", "weight": 1}
+{"name": "Aisyētēs", "type": "person", "morphemes": ["aisuētēs"], "source": "Iliad", "weight": 1}
+{"name": "Aiētēs", "type": "person", "morphemes": ["aiētēs"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Akamas", "type": "person", "morphemes": ["a", "kamnō"], "source": "Iliad", "weight": 1}
+{"name": "Aktōr", "type": "person", "morphemes": ["agō"], "source": "Iliad", "weight": 1}
+{"name": "Alastōr", "type": "person", "morphemes": ["alastōr"], "source": "Iliad", "weight": 1}
+{"name": "Alexandros", "type": "person", "morphemes": ["aleksō", "anēr"], "source": "Iliad", "weight": 1}
+{"name": "Alkathoos", "type": "person", "morphemes": ["alkē", "thoos"], "source": "Iliad", "weight": 1}
+{"name": "Alkimedōn", "type": "person", "morphemes": ["alkimos", "medō"], "source": "Iliad", "weight": 1}
+{"name": "Alkimos", "type": "person", "morphemes": ["alkimos"], "source": "Iliad", "weight": 1}
+{"name": "Alkinoos", "type": "person", "morphemes": ["alkē", "noos"], "source": "Odyssey", "weight": 1}
+{"name": "Alkmēnē", "type": "person", "morphemes": ["alkmēnē"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Alkēstis", "type": "person", "morphemes": ["alkēstis"], "source": "Iliad", "weight": 1}
+{"name": "Altēs", "type": "person", "morphemes": ["altēs"], "source": "Iliad", "weight": 1}
+{"name": "Amphidamas", "type": "person", "morphemes": ["amphi", "damajō"], "source": "Iliad, Works and Days", "weight": 1}
+{"name": "Amphimakhos", "type": "person", "morphemes": ["amphi", "makhē"], "source": "Iliad", "weight": 1}
+{"name": "Amphimedōn", "type": "person", "morphemes": ["amphi", "medō"], "source": "Odyssey", "weight": 1}
+{"name": "Amphinomos", "type": "person", "morphemes": ["amphi", "nemō"], "source": "Odyssey", "weight": 1}
+{"name": "Amphitryōn", "type": "person", "morphemes": ["amphitruōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Amphiōn", "type": "person", "morphemes": ["amphiōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Andraimōn", "type": "person", "morphemes": ["andraimōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Andromakhē", "type": "person", "morphemes": ["anēr", "makhē"], "source": "Iliad", "weight": 1}
+{"name": "Ankhialos", "type": "person", "morphemes": ["ankhi", "hals"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Ankhisēs", "type": "person", "morphemes": ["ankhisēs"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Antikleia", "type": "person", "morphemes": ["anti", "kleos"], "source": "Odyssey", "weight": 1}
+{"name": "Antilokhos", "type": "person", "morphemes": ["anti", "lokhos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Antimakhos", "type": "person", "morphemes": ["anti", "makhē"], "source": "Iliad", "weight": 1}
+{"name": "Antinoos", "type": "person", "morphemes": ["anti", "noos"], "source": "Odyssey", "weight": 1}
+{"name": "Antiopē", "type": "person", "morphemes": ["antiopē"], "source": "Odyssey", "weight": 1}
+{"name": "Antiphatēs", "type": "person", "morphemes": ["antiphatēs"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Antiphos", "type": "person", "morphemes": ["antiphos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Antēnōr", "type": "person", "morphemes": ["anti", "anēr"], "source": "Iliad", "weight": 1}
+{"name": "Aphareus", "type": "person", "morphemes": ["aphareus"], "source": "Iliad", "weight": 1}
+{"name": "Apisaōn", "type": "person", "morphemes": ["apisaōn"], "source": "Iliad", "weight": 1}
+{"name": "Arkhelokhos", "type": "person", "morphemes": ["arkhō", "lokhos"], "source": "Iliad", "weight": 1}
+{"name": "Arkeisios", "type": "person", "morphemes": ["arkeisios"], "source": "Odyssey", "weight": 1}
+{"name": "Arētos", "type": "person", "morphemes": ["arētos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Arētē", "type": "person", "morphemes": ["arētē"], "source": "Odyssey", "weight": 1}
+{"name": "Ariadnē", "type": "person", "morphemes": ["ariadnē"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Asios", "type": "person", "morphemes": ["asios"], "source": "Iliad", "weight": 1}
+{"name": "Askalaphos", "type": "person", "morphemes": ["askalaphos"], "source": "Iliad", "weight": 1}
+{"name": "Asklēpios", "type": "person", "morphemes": ["asklēpios"], "source": "Iliad", "weight": 1}
+{"name": "Assarakos", "type": "person", "morphemes": ["assarakos"], "source": "Iliad", "weight": 1}
+{"name": "Asteropaios", "type": "person", "morphemes": ["asteropē"], "source": "Iliad", "weight": 1}
+{"name": "Astyanax", "type": "person", "morphemes": ["astu", "anaks"], "source": "Iliad", "weight": 1}
+{"name": "Atreus", "type": "person", "morphemes": ["atreus"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Augeias", "type": "person", "morphemes": ["augeias"], "source": "Iliad", "weight": 1}
+{"name": "Autolykos", "type": "person", "morphemes": ["autos", "lukos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Automedōn", "type": "person", "morphemes": ["autos", "medō"], "source": "Iliad", "weight": 1}
+{"name": "Bellerophontēs", "type": "person", "morphemes": ["bellerophontēs"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Bias", "type": "person", "morphemes": ["bias"], "source": "Iliad", "weight": 1}
+{"name": "Brisēis", "type": "person", "morphemes": ["brisēis"], "source": "Iliad", "weight": 1}
+{"name": "Dardanos", "type": "person", "morphemes": ["dardanos"], "source": "Iliad", "weight": 1}
+{"name": "Deukaliōn", "type": "person", "morphemes": ["deukaliōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Dioklēs", "type": "person", "morphemes": ["jeus", "kleos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Diomēdēs", "type": "person", "morphemes": ["jeus", "mēdos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Diōrēs", "type": "person", "morphemes": ["diōrēs"], "source": "Iliad", "weight": 1}
+{"name": "Dolios", "type": "person", "morphemes": ["dolos"], "source": "Odyssey", "weight": 1}
+{"name": "Dolops", "type": "person", "morphemes": ["dolops"], "source": "Iliad", "weight": 1}
+{"name": "Dēiphobos", "type": "person", "morphemes": ["dēios", "phobos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Dēipyros", "type": "person", "morphemes": ["dēios", "pur"], "source": "Iliad", "weight": 1}
+{"name": "Dēmodokos", "type": "person", "morphemes": ["dēmos", "dekhomai"], "source": "Odyssey", "weight": 1}
+{"name": "Ekhetos", "type": "person", "morphemes": ["ekhetos"], "source": "Odyssey", "weight": 1}
+{"name": "Ekhios", "type": "person", "morphemes": ["ekhios"], "source": "Iliad", "weight": 1}
+{"name": "Elephēnōr", "type": "person", "morphemes": ["elephēnōr"], "source": "Iliad", "weight": 1}
+{"name": "Elpēnōr", "type": "person", "morphemes": ["elpis", "anēr"], "source": "Odyssey", "weight": 1}
+{"name": "Ennomos", "type": "person", "morphemes": ["ennomos"], "source": "Iliad", "weight": 1}
+{"name": "Epeios", "type": "person", "morphemes": ["epeios"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Ephialtēs", "type": "person", "morphemes": ["ephialtēs"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Epikastē", "type": "person", "morphemes": ["epikastē"], "source": "Odyssey", "weight": 1}
+{"name": "Epistrophos", "type": "person", "morphemes": ["epi", "strephō"], "source": "Iliad", "weight": 1}
+{"name": "Erekhtheus", "type": "person", "morphemes": ["erekhtheus"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Ereuthaliōn", "type": "person", "morphemes": ["ereuthaliōn"], "source": "Iliad", "weight": 1}
+{"name": "Erikhthonios", "type": "person", "morphemes": ["eri", "khthōn"], "source": "Iliad", "weight": 1}
+{"name": "Eteōneus", "type": "person", "morphemes": ["eteōneus"], "source": "Odyssey", "weight": 1}
+{"name": "Euaimōn", "type": "person", "morphemes": ["euaimōn"], "source": "Iliad", "weight": 1}
+{"name": "Eumaios", "type": "person", "morphemes": ["eumaios"], "source": "Odyssey", "weight": 1}
+{"name": "Eumēdēs", "type": "person", "morphemes": ["eu", "mēdos"], "source": "Iliad", "weight": 1}
+{"name": "Eupeithēs", "type": "person", "morphemes": ["eu", "peithō"], "source": "Odyssey", "weight": 1}
+{"name": "Euphorbos", "type": "person", "morphemes": ["eu", "pherbō"], "source": "Iliad", "weight": 1}
+{"name": "Euryalos", "type": "person", "morphemes": ["eurualos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Eurybatēs", "type": "person", "morphemes": ["eurus", "bainō"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Eurydamas", "type": "person", "morphemes": ["eurus", "damajō"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Eurydikē", "type": "person", "morphemes": ["eurus", "dikē"], "source": "Odyssey", "weight": 1}
+{"name": "Eurykleia", "type": "person", "morphemes": ["eurus", "kleos"], "source": "Odyssey", "weight": 1}
+{"name": "Eurylokhos", "type": "person", "morphemes": ["eurus", "lokhos"], "source": "Odyssey", "weight": 1}
+{"name": "Eurymakhos", "type": "person", "morphemes": ["eurus", "makhē"], "source": "Odyssey", "weight": 1}
+{"name": "Eurymedōn", "type": "person", "morphemes": ["eurus", "medō"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Eurypylos", "type": "person", "morphemes": ["eurus", "pulē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Eurystheus", "type": "person", "morphemes": ["eurus", "sthenos"], "source": "Iliad", "weight": 1}
+{"name": "Eurytiōn", "type": "person", "morphemes": ["eurutiōn"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Eurytos", "type": "person", "morphemes": ["eurutos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Ganymēdēs", "type": "person", "morphemes": ["ganumēdēs"], "source": "Iliad", "weight": 1}
+{"name": "Glaukos", "type": "person", "morphemes": ["glaukos"], "source": "Iliad", "weight": 1}
+{"name": "Halios", "type": "person", "morphemes": ["hals"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Halithersēs", "type": "person", "morphemes": ["hals", "tharsos"], "source": "Odyssey", "weight": 1}
+{"name": "Hekabē", "type": "person", "morphemes": ["hekabē"], "source": "Iliad", "weight": 1}
+{"name": "Hekamēdē", "type": "person", "morphemes": ["hekamēdē"], "source": "Iliad", "weight": 1}
+{"name": "Hektōr", "type": "person", "morphemes": ["ekhō"], "source": "Iliad", "weight": 1}
+{"name": "Helenē", "type": "person", "morphemes": ["helenē"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Helenos", "type": "person", "morphemes": ["helenos"], "source": "Iliad", "weight": 1}
+{"name": "Hiketaōn", "type": "person", "morphemes": ["hiketaōn"], "source": "Iliad", "weight": 1}
+{"name": "Hippodameia", "type": "person", "morphemes": ["hippos", "damajō"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Hippolokhos", "type": "person", "morphemes": ["hippos", "lokhos"], "source": "Iliad", "weight": 1}
+{"name": "Hippothoos", "type": "person", "morphemes": ["hippos", "thoos"], "source": "Iliad", "weight": 1}
+{"name": "Hēraklēs", "type": "person", "morphemes": ["hērē", "kleos"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Hēsiodos", "type": "person", "morphemes": ["hēsiodos"], "source": "Theogony", "weight": 1}
+{"name": "Iasiōn", "type": "person", "morphemes": ["iasiōn"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Idaios", "type": "person", "morphemes": ["idē"], "source": "Iliad", "weight": 1}
+{"name": "Idomeneus", "type": "person", "morphemes": ["idomeneus"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Ikarios", "type": "person", "morphemes": ["ikarios"], "source": "Odyssey", "weight": 1}
+{"name": "Ilioneus", "type": "person", "morphemes": ["ilios"], "source": "Iliad", "weight": 1}
+{"name": "Ilos", "type": "person", "morphemes": ["ilos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Imbrios", "type": "person", "morphemes": ["imbros"], "source": "Iliad", "weight": 1}
+{"name": "Inō", "type": "person", "morphemes": ["inō"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Iolaos", "type": "person", "morphemes": ["iolaos"], "source": "Theogony", "weight": 1}
+{"name": "Iphianassa", "type": "person", "morphemes": ["iphi", "anassa"], "source": "Iliad", "weight": 1}
+{"name": "Iphidamas", "type": "person", "morphemes": ["iphi", "damajō"], "source": "Iliad", "weight": 1}
+{"name": "Iphiklos", "type": "person", "morphemes": ["iphi", "kleos"], "source": "Iliad", "weight": 1}
+{"name": "Iphitos", "type": "person", "morphemes": ["iphitos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Iros", "type": "person", "morphemes": ["iros"], "source": "Odyssey", "weight": 1}
+{"name": "Iēsōn", "type": "person", "morphemes": ["iēsōn"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Kadmos", "type": "person", "morphemes": ["kadmos"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Kalkhas", "type": "person", "morphemes": ["kalkhas"], "source": "Iliad", "weight": 1}
+{"name": "Kapaneus", "type": "person", "morphemes": ["kapaneus"], "source": "Iliad", "weight": 1}
+{"name": "Kassandrē", "type": "person", "morphemes": ["kassandrē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Kastōr", "type": "person", "morphemes": ["kastōr"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Kebrionēs", "type": "person", "morphemes": ["kebrionēs"], "source": "Iliad", "weight": 1}
+{"name": "Kephalos", "type": "person", "morphemes": ["kephalē"], "source": "Theogony", "weight": 1}
+{"name": "Khromios", "type": "person", "morphemes": ["khromios"], "source": "Iliad", "weight": 1}
+{"name": "Khrysothemis", "type": "person", "morphemes": ["khrusos", "themis"], "source": "Iliad", "weight": 1}
+{"name": "Khrysēs", "type": "person", "morphemes": ["khrusos"], "source": "Iliad", "weight": 1}
+{"name": "Kleitos", "type": "person", "morphemes": ["kleitos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Klymenē", "type": "person", "morphemes": ["kluō"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Klytaimnēstrē", "type": "person", "morphemes": ["klutaimnēstrē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Klytios", "type": "person", "morphemes": ["klutos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Koiranos", "type": "person", "morphemes": ["koiranos"], "source": "Iliad", "weight": 1}
+{"name": "Koōn", "type": "person", "morphemes": ["koōn"], "source": "Iliad", "weight": 1}
+{"name": "Kreiōn", "type": "person", "morphemes": ["kreiōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Krētheus", "type": "person", "morphemes": ["krētheus"], "source": "Odyssey", "weight": 1}
+{"name": "Ktēsios", "type": "person", "morphemes": ["ktaomai"], "source": "Odyssey", "weight": 1}
+{"name": "Ktēsippos", "type": "person", "morphemes": ["ktaomai", "hippos"], "source": "Odyssey", "weight": 1}
+{"name": "Laerkēs", "type": "person", "morphemes": ["laerkēs"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Laertēs", "type": "person", "morphemes": ["laertēs"], "source": "Odyssey", "weight": 1}
+{"name": "Lampos", "type": "person", "morphemes": ["lampō"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Laodamas", "type": "person", "morphemes": ["laos", "damajō"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Laodikē", "type": "person", "morphemes": ["laos", "dikē"], "source": "Iliad", "weight": 1}
+{"name": "Latinos", "type": "person", "morphemes": ["latinos"], "source": "Theogony", "weight": 1}
+{"name": "Leiōkritos", "type": "person", "morphemes": ["laos", "kritos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Leonteus", "type": "person", "morphemes": ["leōn"], "source": "Iliad", "weight": 1}
+{"name": "Lykaōn", "type": "person", "morphemes": ["lukaōn"], "source": "Iliad", "weight": 1}
+{"name": "Lykomēdēs", "type": "person", "morphemes": ["lukos", "mēdos"], "source": "Iliad", "weight": 1}
+{"name": "Lykourgos", "type": "person", "morphemes": ["lukos", "ergon"], "source": "Iliad", "weight": 1}
+{"name": "Lēdē", "type": "person", "morphemes": ["lēdē"], "source": "Odyssey", "weight": 1}
+{"name": "Lēitos", "type": "person", "morphemes": ["lēitos"], "source": "Iliad", "weight": 1}
+{"name": "Makhaōn", "type": "person", "morphemes": ["makhaōn"], "source": "Iliad", "weight": 1}
+{"name": "Medōn", "type": "person", "morphemes": ["medō"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Megapenthēs", "type": "person", "morphemes": ["megas", "penthos"], "source": "Odyssey", "weight": 1}
+{"name": "Megēs", "type": "person", "morphemes": ["megēs"], "source": "Iliad", "weight": 1}
+{"name": "Melanippos", "type": "person", "morphemes": ["melas", "hippos"], "source": "Iliad", "weight": 1}
+{"name": "Melanthios", "type": "person", "morphemes": ["melas", "anthos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Meleagros", "type": "person", "morphemes": ["meleagros"], "source": "Iliad", "weight": 1}
+{"name": "Memnōn", "type": "person", "morphemes": ["memnōn"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Menelaos", "type": "person", "morphemes": ["menos", "laos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Menestheus", "type": "person", "morphemes": ["menos", "sthenos"], "source": "Iliad", "weight": 1}
+{"name": "Menoitios", "type": "person", "morphemes": ["menoitios"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Mentōr", "type": "person", "morphemes": ["mentōr"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Mesaulios", "type": "person", "morphemes": ["mesos", "aulē"], "source": "Odyssey", "weight": 1}
+{"name": "Minōs", "type": "person", "morphemes": ["minōs"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Moulios", "type": "person", "morphemes": ["moulios"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Mēdeia", "type": "person", "morphemes": ["mēdos"], "source": "Theogony", "weight": 1}
+{"name": "Mēkisteus", "type": "person", "morphemes": ["mēkistos"], "source": "Iliad", "weight": 1}
+{"name": "Mērionēs", "type": "person", "morphemes": ["mērionēs"], "source": "Iliad", "weight": 1}
+{"name": "Nastēs", "type": "person", "morphemes": ["nastēs"], "source": "Iliad", "weight": 1}
+{"name": "Nausikaa", "type": "person", "morphemes": ["nausikaa"], "source": "Odyssey", "weight": 1}
+{"name": "Nausithoos", "type": "person", "morphemes": ["naus", "thoos"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Neoptolemos", "type": "person", "morphemes": ["neos", "polemos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Nestōr", "type": "person", "morphemes": ["nestōr"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Niobē", "type": "person", "morphemes": ["niobē"], "source": "Iliad", "weight": 1}
+{"name": "Nireus", "type": "person", "morphemes": ["nireus"], "source": "Iliad", "weight": 1}
+{"name": "Nisos", "type": "person", "morphemes": ["nisos"], "source": "Odyssey", "weight": 1}
+{"name": "Noēmōn", "type": "person", "morphemes": ["noēmōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Odios", "type": "person", "morphemes": ["odios"], "source": "Iliad", "weight": 1}
+{"name": "Odysseus", "type": "person", "morphemes": ["odusseus"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Oidipodēs", "type": "person", "morphemes": ["oidipodēs"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Oileus", "type": "person", "morphemes": ["oileus"], "source": "Iliad", "weight": 1}
+{"name": "Oineus", "type": "person", "morphemes": ["oinos"], "source": "Iliad", "weight": 1}
+{"name": "Oinomaos", "type": "person", "morphemes": ["oinomaos"], "source": "Iliad", "weight": 1}
+{"name": "Orestēs", "type": "person", "morphemes": ["oros"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Orsilokhos", "type": "person", "morphemes": ["ornumi", "lokhos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Othryoneus", "type": "person", "morphemes": ["othruoneus"], "source": "Iliad", "weight": 1}
+{"name": "Pandaros", "type": "person", "morphemes": ["pandaros"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Pandōrē", "type": "person", "morphemes": ["pas", "dōron"], "source": "Works and Days", "weight": 1}
+{"name": "Panthoos", "type": "person", "morphemes": ["pas", "thoos"], "source": "Iliad", "weight": 1}
+{"name": "Paris", "type": "person", "morphemes": ["paris"], "source": "Iliad", "weight": 1}
+{"name": "Patroklos", "type": "person", "morphemes": ["patēr", "kleos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Peirithoos", "type": "person", "morphemes": ["peri", "thoos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Peirōs", "type": "person", "morphemes": ["peirōs"], "source": "Iliad", "weight": 1}
+{"name": "Peisistratos", "type": "person", "morphemes": ["peithō", "stratos"], "source": "Odyssey", "weight": 1}
+{"name": "Pelops", "type": "person", "morphemes": ["pelops"], "source": "Iliad", "weight": 1}
+{"name": "Perimēdēs", "type": "person", "morphemes": ["peri", "mēdos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Periphas", "type": "person", "morphemes": ["periphas"], "source": "Iliad", "weight": 1}
+{"name": "Perseus", "type": "person", "morphemes": ["perseus"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Persēs", "type": "person", "morphemes": ["persēs"], "source": "Works and Days", "weight": 1}
+{"name": "Phaidimos", "type": "person", "morphemes": ["phaidimos"], "source": "Odyssey", "weight": 1}
+{"name": "Phainops", "type": "person", "morphemes": ["phainō", "ōps"], "source": "Iliad", "weight": 1}
+{"name": "Pheidōn", "type": "person", "morphemes": ["pheidomai"], "source": "Odyssey", "weight": 1}
+{"name": "Philoitios", "type": "person", "morphemes": ["philoitios"], "source": "Odyssey", "weight": 1}
+{"name": "Philoktētēs", "type": "person", "morphemes": ["philos", "ktaomai"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Phoinix", "type": "person", "morphemes": ["phoiniks"], "source": "Iliad", "weight": 1}
+{"name": "Phyleus", "type": "person", "morphemes": ["phuleus"], "source": "Iliad", "weight": 1}
+{"name": "Phylō", "type": "person", "morphemes": ["phulō"], "source": "Odyssey", "weight": 1}
+{"name": "Phēmios", "type": "person", "morphemes": ["phēmē"], "source": "Odyssey", "weight": 1}
+{"name": "Podaleirios", "type": "person", "morphemes": ["podaleirios"], "source": "Iliad", "weight": 1}
+{"name": "Politēs", "type": "person", "morphemes": ["politēs"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Polybos", "type": "person", "morphemes": ["polubos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Polydeukēs", "type": "person", "morphemes": ["poludeukēs"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Polydōros", "type": "person", "morphemes": ["polus", "dōron"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Polyneikēs", "type": "person", "morphemes": ["polus", "neikos"], "source": "Iliad", "weight": 1}
+{"name": "Polyphēmos", "type": "person", "morphemes": ["polus", "phēmē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Polypoitēs", "type": "person", "morphemes": ["polupoitēs"], "source": "Iliad", "weight": 1}
+{"name": "Poulydamas", "type": "person", "morphemes": ["polus", "damajō"], "source": "Iliad", "weight": 1}
+{"name": "Priamos", "type": "person", "morphemes": ["priamos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Proitos", "type": "person", "morphemes": ["proitos"], "source": "Iliad", "weight": 1}
+{"name": "Promakhos", "type": "person", "morphemes": ["pro", "makhē"], "source": "Iliad", "weight": 1}
+{"name": "Prothoēnōr", "type": "person", "morphemes": ["prothoēnōr"], "source": "Iliad", "weight": 1}
+{"name": "Prōtesilaos", "type": "person", "morphemes": ["prōtos", "laos"], "source": "Iliad", "weight": 1}
+{"name": "Pylaimenēs", "type": "person", "morphemes": ["pulē", "menō"], "source": "Iliad", "weight": 1}
+{"name": "Pēlegōn", "type": "person", "morphemes": ["pēlegōn"], "source": "Iliad", "weight": 1}
+{"name": "Pēleus", "type": "person", "morphemes": ["pēleus"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Peliēs", "type": "person", "morphemes": ["peliēs"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Pēneleōs", "type": "person", "morphemes": ["pēneleōs"], "source": "Iliad", "weight": 1}
+{"name": "Pēnelopeia", "type": "person", "morphemes": ["pēnelopeia"], "source": "Odyssey", "weight": 1}
+{"name": "Rhadamanthys", "type": "person", "morphemes": ["radamanthus"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Rhēsos", "type": "person", "morphemes": ["rēsos"], "source": "Iliad", "weight": 1}
+{"name": "Salmōneus", "type": "person", "morphemes": ["salmōneus"], "source": "Odyssey", "weight": 1}
+{"name": "Sarpēdōn", "type": "person", "morphemes": ["sarpēdōn"], "source": "Iliad", "weight": 1}
+{"name": "Semelē", "type": "person", "morphemes": ["semelē"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Sisyphos", "type": "person", "morphemes": ["sisuphos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Skamandrios", "type": "person", "morphemes": ["skamandros"], "source": "Iliad", "weight": 1}
+{"name": "Skhedios", "type": "person", "morphemes": ["skhedios"], "source": "Iliad", "weight": 1}
+{"name": "Stentōr", "type": "person", "morphemes": ["stenō"], "source": "Iliad", "weight": 1}
+{"name": "Sthenelos", "type": "person", "morphemes": ["sthenos"], "source": "Iliad", "weight": 1}
+{"name": "Stikhios", "type": "person", "morphemes": ["stikhios"], "source": "Iliad", "weight": 1}
+{"name": "Talthybios", "type": "person", "morphemes": ["talthubios"], "source": "Iliad", "weight": 1}
+{"name": "Tantalos", "type": "person", "morphemes": ["tantalos"], "source": "Odyssey", "weight": 1}
+{"name": "Teiresiēs", "type": "person", "morphemes": ["teiresiēs"], "source": "Odyssey", "weight": 1}
+{"name": "Telamōn", "type": "person", "morphemes": ["telamōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Theanō", "type": "person", "morphemes": ["theanō"], "source": "Iliad", "weight": 1}
+{"name": "Theoklymenos", "type": "person", "morphemes": ["theos", "kluō"], "source": "Odyssey", "weight": 1}
+{"name": "Thersitēs", "type": "person", "morphemes": ["tharsos"], "source": "Iliad", "weight": 1}
+{"name": "Thoas", "type": "person", "morphemes": ["thoos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Thrasymēdēs", "type": "person", "morphemes": ["thrasus", "mēdos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Thyestēs", "type": "person", "morphemes": ["thuestēs"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Thēseus", "type": "person", "morphemes": ["thēseus"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Tithōnos", "type": "person", "morphemes": ["tithōnos"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Tityos", "type": "person", "morphemes": ["tituos"], "source": "Odyssey", "weight": 1}
+{"name": "Tlēpolemos", "type": "person", "morphemes": ["tlaō", "polemos"], "source": "Iliad", "weight": 1}
+{"name": "Trōilos", "type": "person", "morphemes": ["trōilos"], "source": "Iliad", "weight": 1}
+{"name": "Tydeus", "type": "person", "morphemes": ["tudeus"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Tykhios", "type": "person", "morphemes": ["tukhios"], "source": "Iliad", "weight": 1}
+{"name": "Tyndareos", "type": "person", "morphemes": ["tundareos"], "source": "Odyssey", "weight": 1}
+{"name": "Tyrō", "type": "person", "morphemes": ["turō"], "source": "Odyssey", "weight": 1}
+{"name": "Tēlegonos", "type": "person", "morphemes": ["tēle", "gonos"], "source": "Theogony", "weight": 1}
+{"name": "Tēlemakhos", "type": "person", "morphemes": ["tēle", "makhē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Zēthos", "type": "person", "morphemes": ["jēthos"], "source": "Odyssey", "weight": 1}
+{"name": "Ēetiōn", "type": "person", "morphemes": ["ēetiōn"], "source": "Iliad", "weight": 1}
+{"name": "Ēmathiōn", "type": "person", "morphemes": ["ēmathiōn"], "source": "Theogony", "weight": 1}
+{"name": "Ēnops", "type": "person", "morphemes": ["ēnops"], "source": "Iliad", "weight": 1}
+{"name": "Ōtos", "type": "person", "morphemes": ["ōtos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Zeus", "type": "deity", "morphemes": ["jeus"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Hērē", "type": "deity", "morphemes": ["hērē"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Athēnē", "type": "deity", "morphemes": ["athēnē"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Apollōn", "type": "deity", "morphemes": ["apollōn"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Artemis", "type": "deity", "morphemes": ["artemis"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Aphroditē", "type": "deity", "morphemes": ["aphroditē"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Arēs", "type": "deity", "morphemes": ["arēs"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Hermēs", "type": "deity", "morphemes": ["hermēs"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Hēphaistos", "type": "deity", "morphemes": ["hēphaistos"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Poseidaōn", "type": "deity", "morphemes": ["poseidaōn"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Dēmētēr", "type": "deity", "morphemes": ["dēmētēr"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Dionysos", "type": "deity", "morphemes": ["dionusos"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Histiē", "type": "deity", "morphemes": ["hestia"], "source": "Theogony", "weight": 1}
+{"name": "Aidēs", "type": "deity", "morphemes": ["aidēs"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Aidōneus", "type": "title", "morphemes": ["aidōneus"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Persephoneia", "type": "deity", "morphemes": ["persephoneia"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Lētō", "type": "deity", "morphemes": ["lētō"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Themis", "type": "deity", "morphemes": ["themis"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Thetis", "type": "deity", "morphemes": ["thetis"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Eurynomē", "type": "deity", "morphemes": ["eurus", "nemō"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Kronos", "type": "deity", "morphemes": ["kronos"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Rheiē", "type": "deity", "morphemes": ["reiē"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Ouranos", "type": "deity", "morphemes": ["ouranos"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Gaia", "type": "deity", "morphemes": ["gaia"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Ōkeanos", "type": "deity", "morphemes": ["ōkeanos"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Tēthys", "type": "deity", "morphemes": ["tēthus"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Iapetos", "type": "deity", "morphemes": ["iapetos"], "source": "Iliad, Theogony, Works and Days", "weight": 1}
+{"name": "Hyperiōn", "type": "deity", "morphemes": ["huperiōn"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Mnēmosynē", "type": "deity", "morphemes": ["mnēmosunē"], "source": "Theogony", "weight": 1}
+{"name": "Promētheus", "type": "deity", "morphemes": ["pro", "mētis"], "source": "Theogony, Works and Days", "weight": 1}
+{"name": "Atlas", "type": "deity", "morphemes": ["atlas"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Nēreus", "type": "deity", "morphemes": ["nēreus"], "source": "Theogony", "weight": 1}
+{"name": "Phorkys", "type": "deity", "morphemes": ["phorkus"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Iris", "type": "deity", "morphemes": ["iris"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Hēbē", "type": "deity", "morphemes": ["hēbē"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Eileithyia", "type": "deity", "morphemes": ["eileithuia"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Erebos", "type": "deity", "morphemes": ["erebos"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Khaos", "type": "deity", "morphemes": ["khaos"], "source": "Theogony", "weight": 1}
+{"name": "Eros", "type": "deity", "morphemes": ["erōs"], "source": "Theogony", "weight": 1}
+{"name": "Hypnos", "type": "deity", "morphemes": ["hupnos"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Thanatos", "type": "deity", "morphemes": ["thanatos"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Eris", "type": "deity", "morphemes": ["eris"], "source": "Iliad, Theogony, Works and Days", "weight": 1}
+{"name": "Atē", "type": "deity", "morphemes": ["atē"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Phobos", "type": "deity", "morphemes": ["phobos"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Harmonia", "type": "deity", "morphemes": ["harmonia"], "source": "Theogony", "weight": 1}
+{"name": "Mētis", "type": "deity", "morphemes": ["mētis"], "source": "Theogony", "weight": 1}
+{"name": "Ēōs", "type": "deity", "morphemes": ["ēōs"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Boreas", "type": "deity", "morphemes": ["boreas"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Zephyros", "type": "deity", "morphemes": ["jephuros"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Notos", "type": "deity", "morphemes": ["notos"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Prōteus", "type": "deity", "morphemes": ["prōtos"], "source": "Odyssey", "weight": 1}
+{"name": "Kirkē", "type": "deity", "morphemes": ["kirkē"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Kalypsō", "type": "deity", "morphemes": ["kaluptō"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Amphitritē", "type": "deity", "morphemes": ["amphitritē"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Paiēōn", "type": "deity", "morphemes": ["paiēōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Typhōeus", "type": "deity", "morphemes": ["tuphōeus"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Kharybdis", "type": "deity", "morphemes": ["kharubdis"], "source": "Odyssey", "weight": 1}
+{"name": "Mousai", "type": "group", "morphemes": ["mousa"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Kharites", "type": "group", "morphemes": ["kharis"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Moirai", "type": "group", "morphemes": ["moira"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Erinyes", "type": "group", "morphemes": ["erinus"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Harpyiai", "type": "group", "morphemes": ["harpajō"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Gorgones", "type": "group", "morphemes": ["gorgos"], "source": "Theogony", "weight": 1}
+{"name": "Titēnes", "type": "group", "morphemes": ["titēn"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Kyklōpes", "type": "group", "morphemes": ["kuklos", "ōps"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Seirēnes", "type": "group", "morphemes": ["seirēn"], "source": "Odyssey", "weight": 1}
+{"name": "Akhaioi", "type": "group", "morphemes": ["akhaios"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Danaoi", "type": "group", "morphemes": ["danaos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Argeioi", "type": "group", "morphemes": ["argos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Panakhaioi", "type": "group", "morphemes": ["pas", "akhaios"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Hellēnes", "type": "group", "morphemes": ["hellēn"], "source": "Iliad", "weight": 1}
+{"name": "Trōes", "type": "group", "morphemes": ["trōs"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Lykioi", "type": "group", "morphemes": ["lukios"], "source": "Iliad", "weight": 1}
+{"name": "Phaiēkes", "type": "group", "morphemes": ["phaiaks"], "source": "Odyssey", "weight": 1}
+{"name": "Kikones", "type": "group", "morphemes": ["kikōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Lōtophagoi", "type": "group", "morphemes": ["lōtos", "phagein"], "source": "Odyssey", "weight": 1}
+{"name": "Laistrygones", "type": "group", "morphemes": ["laistrugōn"], "source": "Odyssey", "weight": 1}
+{"name": "Kimmerioi", "type": "group", "morphemes": ["kimmerios"], "source": "Odyssey", "weight": 1}
+{"name": "Aithiopes", "type": "group", "morphemes": ["aithō", "ōps"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Pelasgoi", "type": "group", "morphemes": ["pelasgos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Lapithai", "type": "group", "morphemes": ["lapithēs"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Kentauroi", "type": "group", "morphemes": ["kentauros"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Kaukōnes", "type": "group", "morphemes": ["kaukōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Leleges", "type": "group", "morphemes": ["leleks"], "source": "Iliad", "weight": 1}
+{"name": "Paiones", "type": "group", "morphemes": ["paiōn"], "source": "Iliad", "weight": 1}
+{"name": "Kares", "type": "group", "morphemes": ["kar"], "source": "Iliad", "weight": 1}
+{"name": "Mysoi", "type": "group", "morphemes": ["musos"], "source": "Iliad", "weight": 1}
+{"name": "Phryges", "type": "group", "morphemes": ["phruks"], "source": "Iliad", "weight": 1}
+{"name": "Thrēikes", "type": "group", "morphemes": ["thrēiks"], "source": "Iliad", "weight": 1}
+{"name": "Paphlagones", "type": "group", "morphemes": ["paphlagōn"], "source": "Iliad", "weight": 1}
+{"name": "Solymoi", "type": "group", "morphemes": ["solumos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Amazones", "type": "group", "morphemes": ["amajōn"], "source": "Iliad", "weight": 1}
+{"name": "Kourētes", "type": "group", "morphemes": ["kouros"], "source": "Iliad", "weight": 1}
+{"name": "Aitōloi", "type": "group", "morphemes": ["aitōlos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Lokroi", "type": "group", "morphemes": ["lokros"], "source": "Iliad", "weight": 1}
+{"name": "Boiōtoi", "type": "group", "morphemes": ["boiōtos"], "source": "Iliad", "weight": 1}
+{"name": "Abantes", "type": "group", "morphemes": ["abas"], "source": "Iliad", "weight": 1}
+{"name": "Kephallēnes", "type": "group", "morphemes": ["kephallēn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Krētes", "type": "group", "morphemes": ["krēs"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Eteokrētes", "type": "group", "morphemes": ["eteos", "krēs"], "source": "Odyssey", "weight": 1}
+{"name": "Thesprōtoi", "type": "group", "morphemes": ["thesprōtos"], "source": "Odyssey", "weight": 1}
+{"name": "Taphioi", "type": "group", "morphemes": ["taphos"], "source": "Odyssey", "weight": 1}
+{"name": "Sikeloi", "type": "group", "morphemes": ["sikelos"], "source": "Odyssey", "weight": 1}
+{"name": "Aigeidēs", "type": "lineage", "morphemes": ["aigeus"], "source": "Iliad", "weight": 1}
+{"name": "Alegēnoridēs", "type": "lineage", "morphemes": ["alegō", "anēr"], "source": "Iliad", "weight": 1}
+{"name": "Azeidēs", "type": "lineage", "morphemes": ["ajeus"], "source": "Iliad", "weight": 1}
+{"name": "Boēthoidēs", "type": "lineage", "morphemes": ["boē", "thoos"], "source": "Odyssey", "weight": 1}
+{"name": "Boukolidēs", "type": "lineage", "morphemes": ["boukolos"], "source": "Iliad", "weight": 1}
+{"name": "Dexiadēs", "type": "lineage", "morphemes": ["deksios"], "source": "Iliad", "weight": 1}
+{"name": "Euēnoridēs", "type": "lineage", "morphemes": ["eu", "anēr"], "source": "Odyssey", "weight": 1}
+{"name": "Hippotadēs", "type": "lineage", "morphemes": ["hippotēs"], "source": "Odyssey", "weight": 1}
+{"name": "Khalkōdontiadēs", "type": "lineage", "morphemes": ["khalkos", "odous"], "source": "Iliad", "weight": 1}
+{"name": "Naubolidēs", "type": "lineage", "morphemes": ["naus", "ballō"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Phradmonidēs", "type": "lineage", "morphemes": ["phradmōn"], "source": "Iliad", "weight": 1}
+{"name": "Polyaimonidēs", "type": "lineage", "morphemes": ["polus", "haima"], "source": "Iliad", "weight": 1}
+{"name": "Polypēmonidēs", "type": "lineage", "morphemes": ["polus", "pēma"], "source": "Odyssey", "weight": 1}
+{"name": "Polytherseidēs", "type": "lineage", "morphemes": ["polus", "tharsos"], "source": "Odyssey", "weight": 1}
+{"name": "Tektonidēs", "type": "lineage", "morphemes": ["tektōn"], "source": "Odyssey", "weight": 1}
+{"name": "Terpiadēs", "type": "lineage", "morphemes": ["terpō"], "source": "Odyssey", "weight": 1}
+{"name": "Philyridēs", "type": "lineage", "morphemes": ["philura"], "source": "Theogony", "weight": 1}
+{"name": "Molione", "type": "lineage", "morphemes": ["molionē"], "source": "Iliad", "weight": 1}
+{"name": "Troiē", "type": "place", "morphemes": ["troiē"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Pergamos", "type": "place", "morphemes": ["pergamos"], "source": "Iliad", "weight": 1}
+{"name": "Zeleia", "type": "place", "morphemes": ["jeleia"], "source": "Iliad", "weight": 1}
+{"name": "Adrēsteia", "type": "place", "morphemes": ["adrēsteia"], "source": "Iliad", "weight": 1}
+{"name": "Apaisos", "type": "place", "morphemes": ["apaisos"], "source": "Iliad", "weight": 1}
+{"name": "Pityeia", "type": "place", "morphemes": ["pitus"], "source": "Iliad", "weight": 1}
+{"name": "Perkōtē", "type": "place", "morphemes": ["perkōtē"], "source": "Iliad", "weight": 1}
+{"name": "Sēstos", "type": "place", "morphemes": ["sēstos"], "source": "Iliad", "weight": 1}
+{"name": "Abydos", "type": "place", "morphemes": ["abudos"], "source": "Iliad", "weight": 1}
+{"name": "Arisbē", "type": "place", "morphemes": ["arisbē"], "source": "Iliad", "weight": 1}
+{"name": "Larisa", "type": "place", "morphemes": ["larisa"], "source": "Iliad", "weight": 1}
+{"name": "Thēbē", "type": "place", "morphemes": ["thēbē"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Hypothēbai", "type": "place", "morphemes": ["hupo", "thēbē"], "source": "Iliad", "weight": 1}
+{"name": "Lyrnēssos", "type": "place", "morphemes": ["lurnēssos"], "source": "Iliad", "weight": 1}
+{"name": "Pēdasos", "type": "place", "morphemes": ["pēdasos"], "source": "Iliad", "weight": 1}
+{"name": "Tenedos", "type": "place", "morphemes": ["tenedos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Lesbos", "type": "place", "morphemes": ["lesbos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Lēmnos", "type": "place", "morphemes": ["lēmnos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Phrygiē", "type": "place", "morphemes": ["phrugiē"], "source": "Iliad", "weight": 1}
+{"name": "Mēioniē", "type": "place", "morphemes": ["mēioniē"], "source": "Iliad", "weight": 1}
+{"name": "Paioniē", "type": "place", "morphemes": ["paioniē"], "source": "Iliad", "weight": 1}
+{"name": "Milētos", "type": "place", "morphemes": ["milētos"], "source": "Iliad", "weight": 1}
+{"name": "Aigyptos", "type": "place", "morphemes": ["aiguptos"], "source": "Odyssey", "weight": 1}
+{"name": "Sidōn", "type": "place", "morphemes": ["sidōn"], "source": "Odyssey", "weight": 1}
+{"name": "Kypros", "type": "place", "morphemes": ["kupros"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Paphos", "type": "place", "morphemes": ["paphos"], "source": "Odyssey", "weight": 1}
+{"name": "Libyē", "type": "place", "morphemes": ["libuē"], "source": "Odyssey", "weight": 1}
+{"name": "Ōgygiē", "type": "place", "morphemes": ["ōgugiē"], "source": "Odyssey", "weight": 1}
+{"name": "Aiaiē", "type": "place", "morphemes": ["aiaiē"], "source": "Odyssey", "weight": 1}
+{"name": "Skheriē", "type": "place", "morphemes": ["skheriē"], "source": "Odyssey", "weight": 1}
+{"name": "Ortygiē", "type": "place", "morphemes": ["ortuks"], "source": "Odyssey", "weight": 1}
+{"name": "Hypereia", "type": "place", "morphemes": ["hupereia"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Tēlepylos", "type": "place", "morphemes": ["tēle", "pulē"], "source": "Odyssey", "weight": 1}
+{"name": "Dēlos", "type": "place", "morphemes": ["dēlos"], "source": "Odyssey", "weight": 1}
+{"name": "Khios", "type": "place", "morphemes": ["khios"], "source": "Odyssey", "weight": 1}
+{"name": "Geraistos", "type": "place", "morphemes": ["geraistos"], "source": "Odyssey", "weight": 1}
+{"name": "Sounion", "type": "place", "morphemes": ["sounion"], "source": "Odyssey", "weight": 1}
+{"name": "Maleia", "type": "place", "morphemes": ["maleia"], "source": "Odyssey", "weight": 1}
+{"name": "Kythēra", "type": "place", "morphemes": ["kuthēra"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Pharos", "type": "place", "morphemes": ["pharos"], "source": "Odyssey", "weight": 1}
+{"name": "Samos", "type": "place", "morphemes": ["samos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Samē", "type": "place", "morphemes": ["samē"], "source": "Odyssey", "weight": 1}
+{"name": "Ismaros", "type": "place", "morphemes": ["ismaros"], "source": "Odyssey", "weight": 1}
+{"name": "Marathōn", "type": "place", "morphemes": ["marathon"], "source": "Odyssey", "weight": 1}
+{"name": "Askrē", "type": "place", "morphemes": ["askrē"], "source": "Works and Days", "weight": 1}
+{"name": "Kymē", "type": "place", "morphemes": ["kumē"], "source": "Works and Days", "weight": 1}
+{"name": "Pieriē", "type": "place", "morphemes": ["pieriē"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Ēmathiē", "type": "place", "morphemes": ["ēmathiē"], "source": "Iliad", "weight": 1}
+{"name": "Mēkōnē", "type": "place", "morphemes": ["mēkōn"], "source": "Theogony", "weight": 1}
+{"name": "Erytheia", "type": "place", "morphemes": ["eruthros"], "source": "Theogony", "weight": 1}
+{"name": "Nemeiē", "type": "place", "morphemes": ["nemeiē"], "source": "Theogony", "weight": 1}
+{"name": "Ithakē", "type": "place", "morphemes": ["ithakē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Doulikhion", "type": "place", "morphemes": ["doulikhion"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Zakynthos", "type": "place", "morphemes": ["jakunthos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Pylos", "type": "place", "morphemes": ["pulos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Ēlis", "type": "place", "morphemes": ["ēlis"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Bouprasion", "type": "place", "morphemes": ["bouprasion"], "source": "Iliad", "weight": 1}
+{"name": "Alēsion", "type": "place", "morphemes": ["alēsion"], "source": "Iliad", "weight": 1}
+{"name": "Arēnē", "type": "place", "morphemes": ["arēnē"], "source": "Iliad", "weight": 1}
+{"name": "Aipy", "type": "place", "morphemes": ["aipus"], "source": "Iliad", "weight": 1}
+{"name": "Kyparissēeis", "type": "place", "morphemes": ["kuparissos"], "source": "Iliad", "weight": 1}
+{"name": "Pteleos", "type": "place", "morphemes": ["ptelea"], "source": "Iliad", "weight": 1}
+{"name": "Helos", "type": "place", "morphemes": ["helos"], "source": "Iliad", "weight": 1}
+{"name": "Lakedaimōn", "type": "place", "morphemes": ["lakedaimōn"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Spartē", "type": "place", "morphemes": ["spartē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Amyklai", "type": "place", "morphemes": ["amuklai"], "source": "Iliad", "weight": 1}
+{"name": "Messēnē", "type": "place", "morphemes": ["messēnē"], "source": "Odyssey", "weight": 1}
+{"name": "Phērai", "type": "place", "morphemes": ["phērai"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Kardamylē", "type": "place", "morphemes": ["kardamulē"], "source": "Iliad", "weight": 1}
+{"name": "Enopē", "type": "place", "morphemes": ["enopē"], "source": "Iliad", "weight": 1}
+{"name": "Arkadiē", "type": "place", "morphemes": ["arkadiē"], "source": "Iliad", "weight": 1}
+{"name": "Orkhomenos", "type": "place", "morphemes": ["orkhomenos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Tegeē", "type": "place", "morphemes": ["tegeē"], "source": "Iliad", "weight": 1}
+{"name": "Tiryns", "type": "place", "morphemes": ["tiruns"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Hermionē", "type": "place", "morphemes": ["hermionē"], "source": "Iliad", "weight": 1}
+{"name": "Asinē", "type": "place", "morphemes": ["asinē"], "source": "Iliad", "weight": 1}
+{"name": "Troizēn", "type": "place", "morphemes": ["troijēn"], "source": "Iliad", "weight": 1}
+{"name": "Epidauros", "type": "place", "morphemes": ["epidauros"], "source": "Iliad", "weight": 1}
+{"name": "Aigina", "type": "place", "morphemes": ["aigina"], "source": "Iliad", "weight": 1}
+{"name": "Mykēnē", "type": "place", "morphemes": ["mukēnē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Korinthos", "type": "place", "morphemes": ["korinthos"], "source": "Iliad", "weight": 1}
+{"name": "Sikyōn", "type": "place", "morphemes": ["sikuōn"], "source": "Iliad", "weight": 1}
+{"name": "Hyperēsiē", "type": "place", "morphemes": ["huperēsiē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Aigialos", "type": "place", "morphemes": ["aigialos"], "source": "Iliad", "weight": 1}
+{"name": "Helikē", "type": "place", "morphemes": ["helikē"], "source": "Iliad", "weight": 1}
+{"name": "Athēnai", "type": "place", "morphemes": ["athēnai"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Salamis", "type": "place", "morphemes": ["salamis"], "source": "Iliad", "weight": 1}
+{"name": "Euboia", "type": "place", "morphemes": ["eu", "bous"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Khalkis", "type": "place", "morphemes": ["khalkis"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Eiretria", "type": "place", "morphemes": ["eiretria"], "source": "Iliad", "weight": 1}
+{"name": "Aulis", "type": "place", "morphemes": ["aulis"], "source": "Iliad, Works and Days", "weight": 1}
+{"name": "Skhoinos", "type": "place", "morphemes": ["skhoinos"], "source": "Iliad", "weight": 1}
+{"name": "Hylē", "type": "place", "morphemes": ["hulē"], "source": "Iliad", "weight": 1}
+{"name": "Arnē", "type": "place", "morphemes": ["arnē"], "source": "Iliad", "weight": 1}
+{"name": "Haliartos", "type": "place", "morphemes": ["haliartos"], "source": "Iliad", "weight": 1}
+{"name": "Plataia", "type": "place", "morphemes": ["plataia"], "source": "Iliad", "weight": 1}
+{"name": "Thisbē", "type": "place", "morphemes": ["thisbē"], "source": "Iliad", "weight": 1}
+{"name": "Pythō", "type": "place", "morphemes": ["puthō"], "source": "Odyssey", "weight": 1}
+{"name": "Daulis", "type": "place", "morphemes": ["daulis"], "source": "Iliad", "weight": 1}
+{"name": "Panopeus", "type": "place", "morphemes": ["panopeus"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Opoeis", "type": "place", "morphemes": ["opoeis"], "source": "Iliad", "weight": 1}
+{"name": "Pleurōn", "type": "place", "morphemes": ["pleurōn"], "source": "Iliad", "weight": 1}
+{"name": "Kalydōn", "type": "place", "morphemes": ["kaludōn"], "source": "Iliad", "weight": 1}
+{"name": "Krētē", "type": "place", "morphemes": ["krētē"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Knōsos", "type": "place", "morphemes": ["knōsos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Gortys", "type": "place", "morphemes": ["gortus"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Lyktos", "type": "place", "morphemes": ["luktos"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Phaistos", "type": "place", "morphemes": ["phaistos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Amnisos", "type": "place", "morphemes": ["amnisos"], "source": "Odyssey", "weight": 1}
+{"name": "Rhodos", "type": "place", "morphemes": ["rodos"], "source": "Iliad", "weight": 1}
+{"name": "Lindos", "type": "place", "morphemes": ["lindos"], "source": "Iliad", "weight": 1}
+{"name": "Iēlysos", "type": "place", "morphemes": ["iēlusos"], "source": "Iliad", "weight": 1}
+{"name": "Kameiros", "type": "place", "morphemes": ["kameiros"], "source": "Iliad", "weight": 1}
+{"name": "Kōs", "type": "place", "morphemes": ["kōs"], "source": "Iliad", "weight": 1}
+{"name": "Hellas", "type": "place", "morphemes": ["hellas"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Phylakē", "type": "place", "morphemes": ["phulakē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Iaōlkos", "type": "place", "morphemes": ["iaōlkos"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Trikkē", "type": "place", "morphemes": ["trikkē"], "source": "Iliad", "weight": 1}
+{"name": "Oikhaliē", "type": "place", "morphemes": ["oikhaliē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Asterion", "type": "place", "morphemes": ["astēr"], "source": "Iliad", "weight": 1}
+{"name": "Dōdōnē", "type": "place", "morphemes": ["dōdōnē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Ephyrē", "type": "place", "morphemes": ["ephurē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Aigai", "type": "place", "morphemes": ["aigai"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Olympos", "type": "hill", "morphemes": ["olumpos"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Ossa", "type": "hill", "morphemes": ["ossa"], "source": "Odyssey", "weight": 1}
+{"name": "Pēlion", "type": "hill", "morphemes": ["pēlion"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Othrys", "type": "hill", "morphemes": ["othrus"], "source": "Theogony", "weight": 1}
+{"name": "Helikōn", "type": "hill", "morphemes": ["helikōn"], "source": "Theogony, Works and Days", "weight": 1}
+{"name": "Parnēsos", "type": "hill", "morphemes": ["parnēsos"], "source": "Odyssey, Theogony", "weight": 1}
+{"name": "Gargaron", "type": "hill", "morphemes": ["gargaron"], "source": "Iliad", "weight": 1}
+{"name": "Athōs", "type": "hill", "morphemes": ["athōs"], "source": "Iliad", "weight": 1}
+{"name": "Mimas", "type": "hill", "morphemes": ["mimas"], "source": "Odyssey", "weight": 1}
+{"name": "Tmōlos", "type": "hill", "morphemes": ["tmōlos"], "source": "Iliad", "weight": 1}
+{"name": "Sipylos", "type": "hill", "morphemes": ["sipulos"], "source": "Iliad", "weight": 1}
+{"name": "Tēygeton", "type": "hill", "morphemes": ["tēugeton"], "source": "Odyssey", "weight": 1}
+{"name": "Erymanthos", "type": "hill", "morphemes": ["erumanthos"], "source": "Odyssey", "weight": 1}
+{"name": "Kyllēnē", "type": "hill", "morphemes": ["kullēnē"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Nēriton", "type": "hill", "morphemes": ["nēriton"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Mykalē", "type": "hill", "morphemes": ["mukalē"], "source": "Iliad", "weight": 1}
+{"name": "Plakos", "type": "hill", "morphemes": ["plakos"], "source": "Iliad", "weight": 1}
+{"name": "Kallikolōnē", "type": "hill", "morphemes": ["kalos", "kolōnē"], "source": "Iliad", "weight": 1}
+{"name": "Batieia", "type": "hill", "morphemes": ["batos"], "source": "Iliad", "weight": 1}
+{"name": "Xanthos", "type": "river", "morphemes": ["ksanthos"], "source": "Iliad", "weight": 1}
+{"name": "Simoeis", "type": "river", "morphemes": ["simoeis"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Axios", "type": "river", "morphemes": ["aksios"], "source": "Iliad", "weight": 1}
+{"name": "Alpheios", "type": "river", "morphemes": ["alpheios"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Akhelōios", "type": "river", "morphemes": ["akhelōios"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Pēneios", "type": "river", "morphemes": ["pēneios"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Sperkheios", "type": "river", "morphemes": ["sperkhō"], "source": "Iliad", "weight": 1}
+{"name": "Styx", "type": "river", "morphemes": ["stuks"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Kōkytos", "type": "river", "morphemes": ["kōkuō"], "source": "Odyssey", "weight": 1}
+{"name": "Akherōn", "type": "river", "morphemes": ["akherōn"], "source": "Odyssey", "weight": 1}
+{"name": "Pyriphlegethōn", "type": "river", "morphemes": ["pur", "phlegethō"], "source": "Odyssey", "weight": 1}
+{"name": "Plēiades", "type": "celestial", "morphemes": ["plēias"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Hyades", "type": "celestial", "morphemes": ["huas"], "source": "Iliad, Works and Days", "weight": 1}
+{"name": "Ōriōn", "type": "celestial", "morphemes": ["ōriōn"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Arktos", "type": "celestial", "morphemes": ["arktos"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Amaxa", "type": "celestial", "morphemes": ["hamaksa"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Boōtēs", "type": "celestial", "morphemes": ["boōtēs"], "source": "Odyssey", "weight": 1}
+{"name": "Seirios", "type": "celestial", "morphemes": ["seirios"], "source": "Works and Days", "weight": 1}
+{"name": "Arktouros", "type": "celestial", "morphemes": ["arktos", "ouros"], "source": "Works and Days", "weight": 1}
+{"name": "Hesperos", "type": "celestial", "morphemes": ["hesperos"], "source": "Iliad", "weight": 1}
+{"name": "Heōsphoros", "type": "celestial", "morphemes": ["ēōs", "pherō"], "source": "Iliad, Theogony", "weight": 1}
+{"name": "Hēlios", "type": "celestial", "morphemes": ["hēlios"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Selēnē", "type": "celestial", "morphemes": ["selēnē"], "source": "Theogony", "weight": 1}
+{"name": "Argeiphontēs", "type": "title", "morphemes": ["argeiphontēs"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Enosikhthōn", "type": "title", "morphemes": ["enosis", "khthōn"], "source": "Iliad, Odyssey, Works and Days", "weight": 1}
+{"name": "Ennosigaios", "type": "title", "morphemes": ["enosis", "gaia"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Gaiēokhos", "type": "title", "morphemes": ["gaia", "ekhō"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Kyanokhaitēs", "type": "title", "morphemes": ["kuaneos", "khaitē"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Atrytōnē", "type": "title", "morphemes": ["a", "truō"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Tritogeneia", "type": "title", "morphemes": ["tritogeneia"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Phoibos", "type": "title", "morphemes": ["phoibos"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Pallas", "type": "title", "morphemes": ["pallas"], "source": "Iliad, Odyssey, Theogony, Works and Days", "weight": 1}
+{"name": "Gerēnios", "type": "title", "morphemes": ["gerēnios"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Kyllopodiōn", "type": "title", "morphemes": ["kullos", "pous"], "source": "Iliad", "weight": 1}
+{"name": "Philommeidēs", "type": "title", "morphemes": ["philos", "meidiaō"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Ērigeneia", "type": "title", "morphemes": ["ēri", "gignomai"], "source": "Iliad, Odyssey, Theogony", "weight": 1}
+{"name": "Enyalios", "type": "title", "morphemes": ["enualios"], "source": "Iliad", "weight": 1}
+{"name": "Eriounios", "type": "title", "morphemes": ["eriounios"], "source": "Iliad, Odyssey", "weight": 1}
+{"name": "Balios", "type": "other", "morphemes": ["balios"], "source": "Iliad", "weight": 1}
+{"name": "Podargos", "type": "other", "morphemes": ["pous", "argos"], "source": "Iliad", "weight": 1}
+{"name": "Aithē", "type": "other", "morphemes": ["aithō"], "source": "Iliad", "weight": 1}
+{"name": "Ariōn", "type": "other", "morphemes": ["ariōn"], "source": "Iliad", "weight": 1}
+{"name": "Pēgasos", "type": "other", "morphemes": ["pēgē"], "source": "Theogony", "weight": 1}
+{"name": "Argō", "type": "other", "morphemes": ["argō"], "source": "Odyssey", "weight": 1}
+{"name": "Skaiai", "type": "other", "morphemes": ["skaios"], "source": "Iliad", "weight": 1}
+{"name": "Gygaiē", "type": "other", "morphemes": ["gugaiē"], "source": "Iliad", "weight": 1}
+{"name": "Boibēis", "type": "other", "morphemes": ["boibē"], "source": "Iliad", "weight": 1}
+{"name": "Kēphisis", "type": "other", "morphemes": ["kēphisos"], "source": "Iliad", "weight": 1}
+{"name": "Planktai", "type": "other", "morphemes": ["plajō"], "source": "Odyssey", "weight": 1}
+{"name": "Gyrai", "type": "other", "morphemes": ["gurai"], "source": "Odyssey", "weight": 1}
+{"name": "Leukas", "type": "other", "morphemes": ["leukos"], "source": "Odyssey", "weight": 1}
+{"name": "Korax", "type": "other", "morphemes": ["koraks"], "source": "Odyssey", "weight": 1}
+{"name": "Arethousa", "type": "other", "morphemes": ["arethousa"], "source": "Odyssey", "weight": 1}
+{"name": "Artakiē", "type": "other", "morphemes": ["artakiē"], "source": "Odyssey", "weight": 1}
+{"name": "Ēlysion", "type": "other", "morphemes": ["ēlusion"], "source": "Odyssey", "weight": 1}
+{"name": "Alēion", "type": "other", "morphemes": ["alē"], "source": "Iliad", "weight": 1}
+{"name": "Lēnaiōn", "type": "other", "morphemes": ["lēnos"], "source": "Works and Days", "weight": 1}
+{"name": "Outis", "type": "other", "morphemes": ["ou", "tis"], "source": "Odyssey", "weight": 1}
+{"name": "Hellēspontos", "type": "other", "morphemes": ["hellē", "pontos"], "source": "Iliad, Odyssey", "weight": 1}

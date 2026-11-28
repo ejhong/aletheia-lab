@@ -1,0 +1,668 @@
+{
+ "A_names": [
+  {
+   "name": "Lokka",
+   "type": "person",
+   "morphemes": [
+    "lokka"
+   ],
+   "gloss": "name",
+   "source": "Kalevala"
+  },
+  {
+   "name": "Toivara",
+   "type": "person",
+   "morphemes": [
+    "toivo"
+   ],
+   "gloss": "hope",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Lappalaiset",
+   "type": "group",
+   "morphemes": [
+    "lappi"
+   ],
+   "gloss": "name",
+   "source": "Kalevala, Kanteletar"
+  },
+  {
+   "name": "Vammatar",
+   "type": "deity",
+   "morphemes": [
+    "vamma"
+   ],
+   "gloss": "injury",
+   "source": "Kalevala"
+  },
+  {
+   "name": "Mesikämmen",
+   "type": "other",
+   "morphemes": [
+    "mesi",
+    "kämmen"
+   ],
+   "gloss": "honey + palm",
+   "source": "Kalevala"
+  },
+  {
+   "name": "Vilja",
+   "type": "person",
+   "morphemes": [
+    "vilja"
+   ],
+   "gloss": "grain, plenty",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Tuntia",
+   "type": "person",
+   "morphemes": [
+    "tuntea"
+   ],
+   "gloss": "to know, feel",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Altti",
+   "type": "deity",
+   "morphemes": [
+    "altti"
+   ],
+   "gloss": "name",
+   "source": "Kanteletar"
+  },
+  {
+   "name": "Kostamus",
+   "type": "place",
+   "morphemes": [
+    "kostamus"
+   ],
+   "gloss": "name",
+   "source": "Kanteletar"
+  },
+  {
+   "name": "Pohjolan emäntä",
+   "type": "title",
+   "morphemes": [
+    "pohja",
+    "emäntä"
+   ],
+   "gloss": "north, bottom + mistress",
+   "source": "Kalevala"
+  },
+  {
+   "name": "Hiitolaiset",
+   "type": "group",
+   "morphemes": [
+    "hiisi"
+   ],
+   "gloss": "sacred grove, demon",
+   "source": "Kanteletar"
+  },
+  {
+   "name": "Utujoutsi",
+   "type": "person",
+   "morphemes": [
+    "utu",
+    "joutsi"
+   ],
+   "gloss": "mist + bow",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Armo",
+   "type": "person",
+   "morphemes": [
+    "armo"
+   ],
+   "gloss": "grace",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Pirkkala",
+   "type": "place",
+   "morphemes": [
+    "pirkkala"
+   ],
+   "gloss": "name",
+   "source": "medieval and early modern parish names"
+  },
+  {
+   "name": "Kapo",
+   "type": "person",
+   "morphemes": [
+    "kapo"
+   ],
+   "gloss": "name",
+   "source": "Kalevala"
+  },
+  {
+   "name": "Terve",
+   "type": "person",
+   "morphemes": [
+    "terve"
+   ],
+   "gloss": "healthy",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Tervo",
+   "type": "person",
+   "morphemes": [
+    "tervo"
+   ],
+   "gloss": "resinous pine",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Tuiretuinen",
+   "type": "person",
+   "morphemes": [
+    "tuiretuinen"
+   ],
+   "gloss": "name",
+   "source": "Kanteletar"
+  },
+  {
+   "name": "Ariteno",
+   "type": "person",
+   "morphemes": [
+    "ari",
+    "teno"
+   ],
+   "gloss": "name + name",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Sakkola",
+   "type": "place",
+   "morphemes": [
+    "sakkola"
+   ],
+   "gloss": "name",
+   "source": "medieval and early modern parish names"
+  },
+  {
+   "name": "Viljari",
+   "type": "person",
+   "morphemes": [
+    "vilja"
+   ],
+   "gloss": "grain, plenty",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Kauppi",
+   "type": "person",
+   "morphemes": [
+    "kauppi"
+   ],
+   "gloss": "name",
+   "source": "Kalevala, Kanteletar"
+  },
+  {
+   "name": "Akapäivä",
+   "type": "person",
+   "morphemes": [
+    "aka",
+    "päivä"
+   ],
+   "gloss": "name + day, sun",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Lammi",
+   "type": "place",
+   "morphemes": [
+    "lammi"
+   ],
+   "gloss": "name",
+   "source": "medieval and early modern parish names"
+  },
+  {
+   "name": "Kymijoki",
+   "type": "river",
+   "morphemes": [
+    "kymi",
+    "joki"
+   ],
+   "gloss": "name + river",
+   "source": "early modern records"
+  },
+  {
+   "name": "Heino",
+   "type": "person",
+   "morphemes": [
+    "heinä"
+   ],
+   "gloss": "hay, grass",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Halli",
+   "type": "other",
+   "morphemes": [
+    "halli"
+   ],
+   "gloss": "grey",
+   "source": "Kanteletar"
+  },
+  {
+   "name": "Akka",
+   "type": "deity",
+   "morphemes": [
+    "akka"
+   ],
+   "gloss": "old woman",
+   "source": "Kalevala"
+  },
+  {
+   "name": "Kurikka",
+   "type": "place",
+   "morphemes": [
+    "kurikka"
+   ],
+   "gloss": "name",
+   "source": "medieval and early modern parish names"
+  },
+  {
+   "name": "Kalevatar",
+   "type": "person",
+   "morphemes": [
+    "kaleva"
+   ],
+   "gloss": "name",
+   "source": "Kalevala"
+  },
+  {
+   "name": "Pohjantähti",
+   "type": "celestial",
+   "morphemes": [
+    "pohja",
+    "tähti"
+   ],
+   "gloss": "north, bottom + star",
+   "source": "Kanteletar"
+  },
+  {
+   "name": "Osmo",
+   "type": "person",
+   "morphemes": [
+    "osmo"
+   ],
+   "gloss": "name",
+   "source": "Kalevala"
+  },
+  {
+   "name": "Asikkala",
+   "type": "place",
+   "morphemes": [
+    "asikka"
+   ],
+   "gloss": "name",
+   "source": "medieval and early modern parish names"
+  },
+  {
+   "name": "Linnanvanhin",
+   "type": "title",
+   "morphemes": [
+    "linna",
+    "vanhin"
+   ],
+   "gloss": "castle + elder",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Takavaara",
+   "type": "hill",
+   "morphemes": [
+    "taka",
+    "vaara"
+   ],
+   "gloss": "back + wooded hill",
+   "source": "Kanteletar"
+  },
+  {
+   "name": "Sankari",
+   "type": "person",
+   "morphemes": [
+    "sankari"
+   ],
+   "gloss": "hero",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Sarajala",
+   "type": "place",
+   "morphemes": [
+    "sarajala"
+   ],
+   "gloss": "name",
+   "source": "Kanteletar"
+  },
+  {
+   "name": "Laitinen",
+   "type": "lineage",
+   "morphemes": [
+    "laitinen"
+   ],
+   "gloss": "name",
+   "source": "16th-17th-c. records"
+  },
+  {
+   "name": "Viti",
+   "type": "person",
+   "morphemes": [
+    "viti"
+   ],
+   "gloss": "fresh snow",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Rauni",
+   "type": "deity",
+   "morphemes": [
+    "rauni"
+   ],
+   "gloss": "name",
+   "source": "Agricola 1551"
+  },
+  {
+   "name": "Salo",
+   "type": "place",
+   "morphemes": [
+    "salo"
+   ],
+   "gloss": "wooded island",
+   "source": "medieval and early modern parish names"
+  },
+  {
+   "name": "Toivo",
+   "type": "person",
+   "morphemes": [
+    "toivo"
+   ],
+   "gloss": "hope",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Vanaja",
+   "type": "place",
+   "morphemes": [
+    "vanaja"
+   ],
+   "gloss": "name",
+   "source": "medieval and early modern parish names"
+  },
+  {
+   "name": "Laso",
+   "type": "person",
+   "morphemes": [
+    "laso"
+   ],
+   "gloss": "name",
+   "source": "Sääksmäki letter 1340"
+  },
+  {
+   "name": "Aallotar",
+   "type": "deity",
+   "morphemes": [
+    "aalto"
+   ],
+   "gloss": "wave",
+   "source": "Kalevala"
+  },
+  {
+   "name": "Koiravuori",
+   "type": "hill",
+   "morphemes": [
+    "koira",
+    "vuori"
+   ],
+   "gloss": "dog + mountain",
+   "source": "Kanteletar"
+  },
+  {
+   "name": "Seitsentähti",
+   "type": "celestial",
+   "morphemes": [
+    "seitsemän",
+    "tähti"
+   ],
+   "gloss": "seven + star",
+   "source": "Kalevala, Kanteletar"
+  },
+  {
+   "name": "Auvo",
+   "type": "person",
+   "morphemes": [
+    "auvo"
+   ],
+   "gloss": "joy, honour",
+   "source": "medieval and 16th-c. records"
+  },
+  {
+   "name": "Hämäläiset",
+   "type": "group",
+   "morphemes": [
+    "häme"
+   ],
+   "gloss": "name",
+   "source": "Agricola 1551"
+  },
+  {
+   "name": "Rapareisi",
+   "type": "person",
+   "morphemes": [
+    "rapa",
+    "reisi"
+   ],
+   "gloss": "mud + thigh",
+   "source": "medieval and 16th-c. records"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "cover",
+   "word": "peite"
+  },
+  {
+   "english": "hearth",
+   "word": "kiuas"
+  },
+  {
+   "english": "stick",
+   "word": "kalikka"
+  },
+  {
+   "english": "building",
+   "word": "huone"
+  },
+  {
+   "english": "peaks",
+   "word": "laki"
+  },
+  {
+   "english": "curves",
+   "word": "kaari"
+  },
+  {
+   "english": "scale",
+   "word": "suomu"
+  },
+  {
+   "english": "bunch",
+   "word": "kimppu"
+  },
+  {
+   "english": "bud",
+   "word": "nuppu"
+  },
+  {
+   "english": "basket",
+   "word": "kontti"
+  },
+  {
+   "english": "standard",
+   "word": "lippu"
+  },
+  {
+   "english": "shell",
+   "word": "kuori"
+  },
+  {
+   "english": "stroke",
+   "word": "viiva"
+  },
+  {
+   "english": "body",
+   "word": "ruumis"
+  },
+  {
+   "english": "handle",
+   "word": "kahva"
+  },
+  {
+   "english": "fields",
+   "word": "pelto"
+  },
+  {
+   "english": "gate",
+   "word": "veräjä"
+  },
+  {
+   "english": "hills",
+   "word": "kumpu"
+  },
+  {
+   "english": "moons",
+   "word": "kuu"
+  },
+  {
+   "english": "snake",
+   "word": "käärme"
+  },
+  {
+   "english": "fishing",
+   "word": "kalastaa"
+  },
+  {
+   "english": "fish",
+   "word": "kala"
+  },
+  {
+   "english": "band",
+   "word": "vyö"
+  },
+  {
+   "english": "bundle",
+   "word": "kimppu"
+  },
+  {
+   "english": "shoot",
+   "word": "vesa"
+  },
+  {
+   "english": "worker",
+   "word": "tekijä"
+  },
+  {
+   "english": "catch",
+   "word": "saalis"
+  },
+  {
+   "english": "whiskers",
+   "word": "viiksi"
+  },
+  {
+   "english": "pole",
+   "word": "salko"
+  },
+  {
+   "english": "pincers",
+   "word": "hohtimet"
+  },
+  {
+   "english": "nets",
+   "word": "verkko"
+  },
+  {
+   "english": "stroke",
+   "word": "veto"
+  },
+  {
+   "english": "vessel",
+   "word": "astia"
+  },
+  {
+   "english": "curves",
+   "word": "mutka"
+  },
+  {
+   "english": "mark",
+   "word": "jälki"
+  },
+  {
+   "english": "fill",
+   "word": "täyttää"
+  },
+  {
+   "english": "fishing",
+   "word": "onkia"
+  },
+  {
+   "english": "carrier",
+   "word": "kantaja"
+  },
+  {
+   "english": "strokes",
+   "word": "viiva"
+  },
+  {
+   "english": "hill",
+   "word": "mäki"
+  },
+  {
+   "english": "walker",
+   "word": "kulkija"
+  },
+  {
+   "english": "stool",
+   "word": "rahi"
+  },
+  {
+   "english": "shrine",
+   "word": "hiisi"
+  },
+  {
+   "english": "grain",
+   "word": "vilja"
+  },
+  {
+   "english": "teeth",
+   "word": "pii"
+  },
+  {
+   "english": "seeds",
+   "word": "siemen"
+  },
+  {
+   "english": "bud",
+   "word": "silmu"
+  },
+  {
+   "english": "doorway",
+   "word": "ovi"
+  },
+  {
+   "english": "stack",
+   "word": "pino"
+  },
+  {
+   "english": "branch",
+   "word": "haara"
+  }
+ ]
+}

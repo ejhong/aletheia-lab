@@ -247,9 +247,9 @@ def minds():
 
 def deep_memory():
     tiles("topic-deep-memory", [
-        ("12", "studies of the deep past: travellers, star maps, flood stories, lost industries and walls, a secret gospel, an unread script and knotted cords", False),
+        ("13", "studies of the deep past: travellers, star maps, flood stories, lost industries and walls, a secret gospel, two unread scripts and knotted cords", False),
         ("12,977", "ancient people searched for anyone buried on the wrong side of an ocean; none unexplained", False),
-        ("6 of 12", "could not decide, because the method could not have seen the thing even if it were there", False),
+        ("7 of 13", "could not decide; in six of them the method could not have seen the thing even if it were there", False),
         ("Still open", "the stories and images themselves, which the atlas weighs, and stories of particular drowned places", True)])
     scorecard("topic-deep-memory", "scorecard", "What each study tested and found",
               ["The trace", "The claim", "What the record shows"], [
@@ -286,6 +286,9 @@ def deep_memory():
         (12, "linear-a", "Linear A read as Semitic", "Read with the proposed sound values, the words of Minoan Crete are Semitic.",
          "They match Semitic roots as often as Greek words do, and so do Hebrew words. The test cannot tell a Semitic language from Greek, and the proposal's main evidence was not tested.",
          "Could not tell", "The test cannot decide", "open"),
+        (145, "indus-script", "The Indus script", "The seals write an early relative of Tamil, and a contest between name lists of different languages shows it.",
+         "The contest's numbers reproduce. But Sumerian and Nahuatl pass it too, Sumerian for the same reason as Tamil: its word for a pot sounds like a common name ending. The study's own main test came out incomplete; explored afterwards, Tamil passed or failed with the translator's word for \"pot\".",
+         "Incomplete", "The test does not single out Tamil", "open"),
         (13, "khipu", "Copies among the khipus", "Some Inca knotted-cord records are copies of others, and a search of the published measurements can find them.",
          "Five pairs share runs of numbers not found in the literature searched; one, in Paris and Lima, matches over about 174 cords. Of eight first reported, two were published in 2005 and one is a single khipu catalogued twice. The search missed a known copy.",
          "Partly", "Real copies, to be confirmed on the objects", "partly")])

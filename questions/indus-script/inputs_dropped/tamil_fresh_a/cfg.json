@@ -1,0 +1,20 @@
+{
+ "lang": "tamil_fresh_a",
+ "names": "names.jsonl",
+ "parts": "parts.jsonl",
+ "words": "words.json",
+ "number_words": {
+  "1": "oṉṟu",
+  "2": "iraṇṭu",
+  "3": "mūṉṟu",
+  "4": "nāṉku",
+  "5": "aintu",
+  "6": "āṟu",
+  "7": "ēḻu",
+  "12": "paṉṉiraṇṭu"
+ },
+ "punmax": 0.5,
+ "weights": "once",
+ "drop_parts": [],
+ "loan_category": "none"
+}

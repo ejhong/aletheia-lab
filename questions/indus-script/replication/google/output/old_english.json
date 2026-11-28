@@ -1,0 +1,1618 @@
+{
+  "lang": "old_english",
+  "runs": [
+    {
+      "seed": 0,
+      "real": -4.4,
+      "null": 2.06,
+      "difference": -6.46,
+      "signs_read": 9,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "595": "vilig",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 1,
+      "real": -13.47,
+      "null": 40.63,
+      "difference": -54.1,
+      "signs_read": 7,
+      "readings": {
+        "220": "phinn",
+        "255": "phinnas",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 2,
+      "real": 3.84,
+      "null": -77.55,
+      "difference": 81.39,
+      "signs_read": 6,
+      "readings": {
+        "142": "vēr",
+        "220": "phinn",
+        "226": "mere",
+        "520": "gār",
+        "840": "sēte",
+        "861": "ord"
+      }
+    },
+    {
+      "seed": 3,
+      "real": 25.16,
+      "null": 14.31,
+      "difference": 10.85,
+      "signs_read": 6,
+      "readings": {
+        "070": "ord",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "832": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 4,
+      "real": -10.2,
+      "null": 1.53,
+      "difference": -11.73,
+      "signs_read": 6,
+      "readings": {
+        "220": "phinn",
+        "455": "stān",
+        "520": "gār",
+        "840": "sēte",
+        "861": "ord",
+        "904": "vēg"
+      }
+    },
+    {
+      "seed": 5,
+      "real": 28.98,
+      "null": 23.31,
+      "difference": 5.67,
+      "signs_read": 6,
+      "readings": {
+        "142": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "832": "sēte",
+        "861": "ord",
+        "923": "mōna"
+      }
+    },
+    {
+      "seed": 6,
+      "real": -45.75,
+      "null": -49.94,
+      "difference": 4.19,
+      "signs_read": 8,
+      "readings": {
+        "226": "mere",
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 7,
+      "real": -18.5,
+      "null": -9.85,
+      "difference": -8.65,
+      "signs_read": 6,
+      "readings": {
+        "070": "gār",
+        "255": "phinn",
+        "617": "pheld",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 8,
+      "real": 7.63,
+      "null": 34.64,
+      "difference": -27.01,
+      "signs_read": 7,
+      "readings": {
+        "090": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "817": "ord",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 9,
+      "real": 11.28,
+      "null": -23.81,
+      "difference": 35.09,
+      "signs_read": 8,
+      "readings": {
+        "090": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "595": "vilig",
+        "617": "pheld",
+        "820": "sunne",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 10,
+      "real": -73.87,
+      "null": 18.9,
+      "difference": -92.77,
+      "signs_read": 4,
+      "readings": {
+        "070": "gār",
+        "220": "phinn",
+        "520": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 11,
+      "real": -21.75,
+      "null": 13.29,
+      "difference": -35.04,
+      "signs_read": 6,
+      "readings": {
+        "090": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "817": "ord",
+        "820": "sunne",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 12,
+      "real": -10.99,
+      "null": 0.65,
+      "difference": -11.64,
+      "signs_read": 9,
+      "readings": {
+        "090": "vēr",
+        "226": "mere",
+        "255": "phinnas",
+        "520": "gār",
+        "817": "ord",
+        "820": "sunne",
+        "832": "sēte",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 13,
+      "real": -81.0,
+      "null": -20.71,
+      "difference": -60.29,
+      "signs_read": 8,
+      "readings": {
+        "070": "gār",
+        "226": "mere",
+        "255": "phinn",
+        "520": "ord",
+        "617": "pheld",
+        "840": "sēte",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 14,
+      "real": -20.55,
+      "null": 65.94,
+      "difference": -86.49,
+      "signs_read": 8,
+      "readings": {
+        "220": "phinn",
+        "455": "stān",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 15,
+      "real": 5.92,
+      "null": -33.0,
+      "difference": 38.92,
+      "signs_read": 7,
+      "readings": {
+        "100": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "790": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 16,
+      "real": -3.67,
+      "null": 24.06,
+      "difference": -27.73,
+      "signs_read": 9,
+      "readings": {
+        "070": "gār",
+        "142": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "817": "ord",
+        "820": "sunne",
+        "840": "sēte",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 17,
+      "real": -25.21,
+      "null": -9.15,
+      "difference": -16.06,
+      "signs_read": 6,
+      "readings": {
+        "100": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 18,
+      "real": -1.34,
+      "null": 33.69,
+      "difference": -35.03,
+      "signs_read": 8,
+      "readings": {
+        "070": "gār",
+        "255": "phinn",
+        "460": "beorg",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 19,
+      "real": -5.55,
+      "null": 45.53,
+      "difference": -51.08,
+      "signs_read": 7,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 20,
+      "real": 5.24,
+      "null": -1.54,
+      "difference": 6.78,
+      "signs_read": 8,
+      "readings": {
+        "090": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 21,
+      "real": -3.52,
+      "null": 42.49,
+      "difference": -46.01,
+      "signs_read": 5,
+      "readings": {
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "840": "sēte",
+        "861": "ord"
+      }
+    },
+    {
+      "seed": 22,
+      "real": 27.7,
+      "null": 73.76,
+      "difference": -46.06,
+      "signs_read": 8,
+      "readings": {
+        "100": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 23,
+      "real": 19.26,
+      "null": -40.3,
+      "difference": 59.56,
+      "signs_read": 6,
+      "readings": {
+        "090": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "790": "sēte",
+        "817": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 24,
+      "real": -2.8,
+      "null": 49.86,
+      "difference": -52.66,
+      "signs_read": 8,
+      "readings": {
+        "100": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 25,
+      "real": -1.96,
+      "null": -8.92,
+      "difference": 6.96,
+      "signs_read": 8,
+      "readings": {
+        "255": "phinnas",
+        "520": "gār",
+        "595": "vilig",
+        "617": "pheld",
+        "817": "ord",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 26,
+      "real": -20.6,
+      "null": -27.74,
+      "difference": 7.14,
+      "signs_read": 8,
+      "readings": {
+        "060": "mearc",
+        "070": "gār",
+        "226": "mere",
+        "255": "phinnas",
+        "617": "pheld",
+        "817": "ord",
+        "840": "sēte",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 27,
+      "real": 47.83,
+      "null": 61.41,
+      "difference": -13.58,
+      "signs_read": 7,
+      "readings": {
+        "070": "ord",
+        "142": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "832": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 28,
+      "real": 30.84,
+      "null": -5.06,
+      "difference": 35.9,
+      "signs_read": 7,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 29,
+      "real": 23.56,
+      "null": 60.25,
+      "difference": -36.69,
+      "signs_read": 4,
+      "readings": {
+        "255": "phinnas",
+        "520": "gār",
+        "832": "sēte",
+        "861": "ord"
+      }
+    },
+    {
+      "seed": 30,
+      "real": -5.72,
+      "null": -54.65,
+      "difference": 48.93,
+      "signs_read": 7,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "790": "sēte",
+        "817": "ord",
+        "820": "sunne",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 31,
+      "real": 6.88,
+      "null": 22.9,
+      "difference": -16.02,
+      "signs_read": 8,
+      "readings": {
+        "090": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 32,
+      "real": -13.26,
+      "null": -35.95,
+      "difference": 22.69,
+      "signs_read": 7,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 33,
+      "real": 15.02,
+      "null": -0.3,
+      "difference": 15.32,
+      "signs_read": 5,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "595": "vilig",
+        "817": "ord",
+        "832": "sēte"
+      }
+    },
+    {
+      "seed": 34,
+      "real": -94.21,
+      "null": 31.66,
+      "difference": -125.87,
+      "signs_read": 8,
+      "readings": {
+        "220": "phinnas",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "790": "sēte",
+        "820": "sunne",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 35,
+      "real": 14.56,
+      "null": -23.15,
+      "difference": 37.71,
+      "signs_read": 8,
+      "readings": {
+        "090": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 36,
+      "real": 35.75,
+      "null": -1.18,
+      "difference": 36.93,
+      "signs_read": 6,
+      "readings": {
+        "220": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 37,
+      "real": -86.94,
+      "null": -13.34,
+      "difference": -73.6,
+      "signs_read": 7,
+      "readings": {
+        "070": "gār",
+        "090": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "520": "ord",
+        "617": "pheld",
+        "832": "sēte"
+      }
+    },
+    {
+      "seed": 38,
+      "real": -21.21,
+      "null": 55.5,
+      "difference": -76.71,
+      "signs_read": 5,
+      "readings": {
+        "090": "vēr",
+        "460": "beorg",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 39,
+      "real": -18.87,
+      "null": 1.76,
+      "difference": -20.63,
+      "signs_read": 8,
+      "readings": {
+        "226": "mere",
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 40,
+      "real": -41.67,
+      "null": -23.66,
+      "difference": -18.01,
+      "signs_read": 8,
+      "readings": {
+        "090": "vēr",
+        "220": "phinn",
+        "255": "phinnas",
+        "520": "ord",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 41,
+      "real": -5.94,
+      "null": 4.37,
+      "difference": -10.31,
+      "signs_read": 8,
+      "readings": {
+        "142": "vēr",
+        "226": "mere",
+        "255": "phinnas",
+        "520": "gār",
+        "840": "sēte",
+        "861": "ord",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 42,
+      "real": -3.16,
+      "null": 6.95,
+      "difference": -10.11,
+      "signs_read": 9,
+      "readings": {
+        "090": "vēr",
+        "220": "phinnas",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "817": "ord",
+        "820": "sunne",
+        "832": "sēte",
+        "904": "vēg"
+      }
+    },
+    {
+      "seed": 43,
+      "real": -8.73,
+      "null": 6.53,
+      "difference": -15.26,
+      "signs_read": 9,
+      "readings": {
+        "142": "vēr",
+        "220": "phinn",
+        "255": "phinnas",
+        "455": "stān",
+        "520": "gār",
+        "820": "sunne",
+        "861": "ord",
+        "900": "mōna",
+        "904": "vēg"
+      }
+    },
+    {
+      "seed": 44,
+      "real": -22.93,
+      "null": 35.76,
+      "difference": -58.69,
+      "signs_read": 9,
+      "readings": {
+        "090": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "455": "stān",
+        "520": "gār",
+        "617": "pheld",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 45,
+      "real": -2.56,
+      "null": -38.18,
+      "difference": 35.62,
+      "signs_read": 6,
+      "readings": {
+        "100": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord"
+      }
+    },
+    {
+      "seed": 46,
+      "real": -5.83,
+      "null": -4.01,
+      "difference": -1.82,
+      "signs_read": 6,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "790": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 47,
+      "real": 24.65,
+      "null": -45.64,
+      "difference": 70.29,
+      "signs_read": 6,
+      "readings": {
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "832": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 48,
+      "real": 0.23,
+      "null": -21.41,
+      "difference": 21.64,
+      "signs_read": 6,
+      "readings": {
+        "100": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "817": "ord",
+        "840": "sēte",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 49,
+      "real": 6.03,
+      "null": 11.69,
+      "difference": -5.66,
+      "signs_read": 7,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 50,
+      "real": 16.29,
+      "null": 41.92,
+      "difference": -25.63,
+      "signs_read": 8,
+      "readings": {
+        "220": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "820": "sunne",
+        "840": "sēte",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 51,
+      "real": -34.76,
+      "null": 11.82,
+      "difference": -46.58,
+      "signs_read": 6,
+      "readings": {
+        "220": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 52,
+      "real": -0.46,
+      "null": -39.26,
+      "difference": 38.8,
+      "signs_read": 5,
+      "readings": {
+        "142": "vēr",
+        "255": "phinn",
+        "840": "sēte",
+        "861": "ord",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 53,
+      "real": -9.27,
+      "null": 30.85,
+      "difference": -40.12,
+      "signs_read": 6,
+      "readings": {
+        "100": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 54,
+      "real": 0.26,
+      "null": 16.29,
+      "difference": -16.03,
+      "signs_read": 8,
+      "readings": {
+        "142": "vēr",
+        "255": "phinnas",
+        "460": "beorg",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 55,
+      "real": 36.62,
+      "null": 32.33,
+      "difference": 4.29,
+      "signs_read": 9,
+      "readings": {
+        "100": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 56,
+      "real": 2.28,
+      "null": -42.57,
+      "difference": 44.85,
+      "signs_read": 5,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 57,
+      "real": 0.3,
+      "null": 14.14,
+      "difference": -13.84,
+      "signs_read": 8,
+      "readings": {
+        "220": "phinn",
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "904": "vēg"
+      }
+    },
+    {
+      "seed": 58,
+      "real": -26.09,
+      "null": 10.51,
+      "difference": -36.6,
+      "signs_read": 8,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "790": "sēte",
+        "820": "sunne",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 59,
+      "real": 4.56,
+      "null": -98.24,
+      "difference": 102.8,
+      "signs_read": 6,
+      "readings": {
+        "220": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "820": "sunne",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 60,
+      "real": 22.96,
+      "null": 44.03,
+      "difference": -21.07,
+      "signs_read": 6,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 61,
+      "real": 11.7,
+      "null": -37.08,
+      "difference": 48.78,
+      "signs_read": 5,
+      "readings": {
+        "220": "phinn",
+        "520": "gār",
+        "861": "ord",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 62,
+      "real": 9.17,
+      "null": -62.0,
+      "difference": 71.17,
+      "signs_read": 7,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 63,
+      "real": 4.08,
+      "null": 3.37,
+      "difference": 0.71,
+      "signs_read": 7,
+      "readings": {
+        "142": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 64,
+      "real": -26.64,
+      "null": 40.21,
+      "difference": -66.85,
+      "signs_read": 7,
+      "readings": {
+        "090": "vēr",
+        "220": "phinn",
+        "226": "mere",
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "832": "sēte"
+      }
+    },
+    {
+      "seed": 65,
+      "real": 3.07,
+      "null": -6.29,
+      "difference": 9.36,
+      "signs_read": 7,
+      "readings": {
+        "142": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "817": "ord",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 66,
+      "real": 12.23,
+      "null": -62.84,
+      "difference": 75.07,
+      "signs_read": 7,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "806": "sēte",
+        "820": "sunne",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 67,
+      "real": -24.02,
+      "null": -12.87,
+      "difference": -11.15,
+      "signs_read": 6,
+      "readings": {
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 68,
+      "real": 54.61,
+      "null": 25.16,
+      "difference": 29.45,
+      "signs_read": 7,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 69,
+      "real": -27.03,
+      "null": 17.29,
+      "difference": -44.32,
+      "signs_read": 7,
+      "readings": {
+        "100": "vēr",
+        "255": "phinnas",
+        "520": "gār",
+        "806": "sēte",
+        "820": "sunne",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 70,
+      "real": -94.05,
+      "null": 16.58,
+      "difference": -110.63,
+      "signs_read": 8,
+      "readings": {
+        "070": "gār",
+        "142": "vēr",
+        "220": "phinn",
+        "455": "stān",
+        "520": "ord",
+        "820": "sunne",
+        "832": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 71,
+      "real": 8.01,
+      "null": 3.95,
+      "difference": 4.06,
+      "signs_read": 7,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "820": "sunne",
+        "832": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 72,
+      "real": -63.06,
+      "null": 12.8,
+      "difference": -75.86,
+      "signs_read": 7,
+      "readings": {
+        "070": "gār",
+        "220": "phinn",
+        "520": "ord",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 73,
+      "real": -2.66,
+      "null": 37.18,
+      "difference": -39.84,
+      "signs_read": 8,
+      "readings": {
+        "090": "vēr",
+        "220": "phinnas",
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "904": "vēg"
+      }
+    },
+    {
+      "seed": 74,
+      "real": -12.26,
+      "null": 21.46,
+      "difference": -33.72,
+      "signs_read": 6,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "820": "sunne",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 75,
+      "real": 11.39,
+      "null": -40.53,
+      "difference": 51.92,
+      "signs_read": 6,
+      "readings": {
+        "090": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 76,
+      "real": 30.15,
+      "null": -40.59,
+      "difference": 70.74,
+      "signs_read": 5,
+      "readings": {
+        "142": "vēr",
+        "255": "phinn",
+        "520": "gār",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 77,
+      "real": -23.1,
+      "null": -24.99,
+      "difference": 1.89,
+      "signs_read": 7,
+      "readings": {
+        "090": "vēr",
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "790": "sēte",
+        "861": "ord",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 78,
+      "real": 11.59,
+      "null": 15.37,
+      "difference": -3.78,
+      "signs_read": 10,
+      "readings": {
+        "090": "vēr",
+        "220": "phinn",
+        "226": "mere",
+        "455": "stān",
+        "520": "gār",
+        "617": "pheld",
+        "790": "sēte",
+        "820": "sunne",
+        "861": "ord",
+        "904": "vēg"
+      }
+    },
+    {
+      "seed": 79,
+      "real": 17.15,
+      "null": 12.24,
+      "difference": 4.91,
+      "signs_read": 7,
+      "readings": {
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "790": "sēte",
+        "820": "sunne",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 80,
+      "real": -20.03,
+      "null": -31.41,
+      "difference": 11.38,
+      "signs_read": 8,
+      "readings": {
+        "070": "ord",
+        "090": "vēr",
+        "220": "phinn",
+        "255": "phinnas",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 81,
+      "real": 21.4,
+      "null": 20.58,
+      "difference": 0.82,
+      "signs_read": 7,
+      "readings": {
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 82,
+      "real": 5.54,
+      "null": 34.44,
+      "difference": -28.9,
+      "signs_read": 8,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "595": "vilig",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 83,
+      "real": 41.7,
+      "null": -20.77,
+      "difference": 62.47,
+      "signs_read": 8,
+      "readings": {
+        "142": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "840": "sēte",
+        "861": "ord",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 84,
+      "real": -13.21,
+      "null": -29.16,
+      "difference": 15.95,
+      "signs_read": 7,
+      "readings": {
+        "070": "ord",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 85,
+      "real": 11.01,
+      "null": -48.45,
+      "difference": 59.46,
+      "signs_read": 7,
+      "readings": {
+        "060": "mearc",
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "790": "sēte",
+        "861": "ord",
+        "923": "mōna"
+      }
+    },
+    {
+      "seed": 86,
+      "real": 7.34,
+      "null": 54.23,
+      "difference": -46.89,
+      "signs_read": 8,
+      "readings": {
+        "220": "phinn",
+        "226": "mere",
+        "455": "stān",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 87,
+      "real": -42.1,
+      "null": 19.08,
+      "difference": -61.18,
+      "signs_read": 7,
+      "readings": {
+        "220": "phinn",
+        "226": "mere",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 88,
+      "real": -32.29,
+      "null": 34.63,
+      "difference": -66.92,
+      "signs_read": 7,
+      "readings": {
+        "070": "gār",
+        "226": "mere",
+        "255": "phinn",
+        "617": "pheld",
+        "840": "sēte",
+        "861": "ord",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 89,
+      "real": -29.39,
+      "null": -2.73,
+      "difference": -26.66,
+      "signs_read": 7,
+      "readings": {
+        "090": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 90,
+      "real": -22.6,
+      "null": 5.62,
+      "difference": -28.22,
+      "signs_read": 10,
+      "readings": {
+        "220": "phinnas",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "904": "vēg",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 91,
+      "real": -4.16,
+      "null": -67.29,
+      "difference": 63.13,
+      "signs_read": 7,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "832": "sēte",
+        "923": "mōna"
+      }
+    },
+    {
+      "seed": 92,
+      "real": -29.13,
+      "null": 7.93,
+      "difference": -37.06,
+      "signs_read": 10,
+      "readings": {
+        "090": "vēr",
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "595": "vilig",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "900": "mōna"
+      }
+    },
+    {
+      "seed": 93,
+      "real": -4.67,
+      "null": 71.76,
+      "difference": -76.43,
+      "signs_read": 6,
+      "readings": {
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord"
+      }
+    },
+    {
+      "seed": 94,
+      "real": -9.4,
+      "null": -28.25,
+      "difference": 18.85,
+      "signs_read": 11,
+      "readings": {
+        "070": "ord",
+        "142": "vēr",
+        "220": "phinnas",
+        "226": "mere",
+        "255": "phinn",
+        "455": "stān",
+        "520": "gār",
+        "820": "sunne",
+        "840": "sēte",
+        "900": "mōna",
+        "904": "vēg"
+      }
+    },
+    {
+      "seed": 95,
+      "real": -33.45,
+      "null": -51.31,
+      "difference": 17.86,
+      "signs_read": 8,
+      "readings": {
+        "090": "vēr",
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "832": "sēte",
+        "861": "ord",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 96,
+      "real": 7.02,
+      "null": 10.1,
+      "difference": -3.08,
+      "signs_read": 6,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "790": "sēte",
+        "817": "ord",
+        "820": "sunne"
+      }
+    },
+    {
+      "seed": 97,
+      "real": 6.56,
+      "null": 66.02,
+      "difference": -59.46,
+      "signs_read": 8,
+      "readings": {
+        "226": "mere",
+        "255": "phinn",
+        "520": "gār",
+        "617": "pheld",
+        "820": "sunne",
+        "840": "sēte",
+        "861": "ord",
+        "904": "vēg"
+      }
+    },
+    {
+      "seed": 98,
+      "real": -67.79,
+      "null": 13.84,
+      "difference": -81.63,
+      "signs_read": 5,
+      "readings": {
+        "220": "phinn",
+        "520": "ord",
+        "820": "sunne",
+        "840": "sēte",
+        "920": "mōna"
+      }
+    },
+    {
+      "seed": 99,
+      "real": -14.36,
+      "null": 19.31,
+      "difference": -33.67,
+      "signs_read": 7,
+      "readings": {
+        "090": "vēr",
+        "226": "mere",
+        "255": "phinnas",
+        "520": "gār",
+        "617": "pheld",
+        "817": "ord",
+        "840": "sēte"
+      }
+    }
+  ],
+  "mean_difference": -8.98,
+  "seeds_above_zero": 42
+}

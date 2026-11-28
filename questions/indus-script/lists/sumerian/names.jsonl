@@ -1,0 +1,632 @@
+{"name": "Urbaba", "type": "person", "morphemes": ["ur", "baba"], "gloss": "servant + Baba (goddess)", "source": "Ur III administrative texts"}
+{"name": "Urniĝar", "type": "person", "morphemes": ["ur", "niĝar"], "gloss": "servant + cult chamber", "source": "Ur III administrative texts"}
+{"name": "Amarsuen", "type": "person", "morphemes": ["amar", "suen"], "gloss": "calf (young) + Suen (moon god)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ludiĝira", "type": "person", "morphemes": ["lu", "diĝir"], "gloss": "man + god", "source": "Ur III administrative texts"}
+{"name": "Šeškala", "type": "person", "morphemes": ["šeš", "kal"], "gloss": "brother + precious", "source": "Ur III administrative texts"}
+{"name": "Urmes", "type": "person", "morphemes": ["ur", "mes"], "gloss": "servant + hero (young man)", "source": "Ur III administrative texts"}
+{"name": "Abbasaga", "type": "person", "morphemes": ["abba", "sag"], "gloss": "father + good", "source": "Ur III administrative texts"}
+{"name": "Lukala", "type": "person", "morphemes": ["lu", "kal"], "gloss": "man + precious", "source": "Ur III administrative texts"}
+{"name": "Uršulpae", "type": "person", "morphemes": ["ur", "šulpae"], "gloss": "servant + Šulpae (god)", "source": "Ur III administrative texts"}
+{"name": "Urgigir", "type": "person", "morphemes": ["ur", "gigir"], "gloss": "servant + chariot", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Urlamma", "type": "person", "morphemes": ["ur", "lamma"], "gloss": "servant + Lamma (protective goddess)", "source": "Ur III administrative texts"}
+{"name": "Dada", "type": "person", "morphemes": ["dada"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Luninšubur", "type": "person", "morphemes": ["lu", "ninšubur"], "gloss": "man + Ninšubur (deity)", "source": "Ur III administrative texts"}
+{"name": "Uršara", "type": "person", "morphemes": ["ur", "šara"], "gloss": "servant + Šara (god)", "source": "Ur III administrative texts"}
+{"name": "Ursuen", "type": "person", "morphemes": ["ur", "suen"], "gloss": "servant + Suen (moon god)", "source": "Ur III administrative texts"}
+{"name": "Ursaga", "type": "person", "morphemes": ["ur", "sag"], "gloss": "servant + good", "source": "Ur III administrative texts"}
+{"name": "Lušara", "type": "person", "morphemes": ["lu", "šara"], "gloss": "man + Šara (god)", "source": "Ur III administrative texts"}
+{"name": "Aradĝu", "type": "person", "morphemes": ["arad", "ĝu"], "gloss": "slave + my", "source": "Ur III administrative texts"}
+{"name": "Lugalemaḫe", "type": "person", "morphemes": ["lugal", "emaḫ"], "gloss": "king + Emaḫ (temple)", "source": "Ur III administrative texts"}
+{"name": "Šulgi", "type": "person", "morphemes": ["šulgi"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Luninĝirsu", "type": "person", "morphemes": ["lu", "ninĝirsu"], "gloss": "man + Ninĝirsu (god)", "source": "Ur III administrative texts"}
+{"name": "Urnanše", "type": "person", "morphemes": ["ur", "nanše"], "gloss": "servant + Nanše (goddess)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Lugalezem", "type": "person", "morphemes": ["lugal", "ezem"], "gloss": "king + festival", "source": "Ur III administrative texts"}
+{"name": "Luduga", "type": "person", "morphemes": ["lu", "dug"], "gloss": "man + good", "source": "Ur III administrative texts"}
+{"name": "Urigalim", "type": "person", "morphemes": ["ur", "igalim"], "gloss": "servant + Igalim (god)", "source": "Ur III administrative texts"}
+{"name": "Lugalkugzu", "type": "person", "morphemes": ["lugal", "kug", "zu"], "gloss": "king + pure (silver) + know", "source": "Ur III administrative texts"}
+{"name": "Inimšara", "type": "person", "morphemes": ["inim", "šara"], "gloss": "word + Šara (god)", "source": "Ur III administrative texts"}
+{"name": "Lubaba", "type": "person", "morphemes": ["lu", "baba"], "gloss": "man + Baba (goddess)", "source": "Ur III administrative texts"}
+{"name": "Urnungal", "type": "person", "morphemes": ["ur", "nungal"], "gloss": "servant + Nungal (goddess)", "source": "Ur III administrative texts"}
+{"name": "Lunanna", "type": "person", "morphemes": ["lu", "nanna"], "gloss": "man + Nanna (moon god)", "source": "Ur III administrative texts"}
+{"name": "Luutu", "type": "person", "morphemes": ["lu", "utu"], "gloss": "man + sun (Utu)", "source": "Ur III administrative texts"}
+{"name": "Urlisin", "type": "person", "morphemes": ["ur", "lisin"], "gloss": "servant + Lisin (goddess)", "source": "Ur III administrative texts"}
+{"name": "Lusaga", "type": "person", "morphemes": ["lu", "sag"], "gloss": "man + good", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Urenlila", "type": "person", "morphemes": ["ur", "enlil"], "gloss": "servant + Enlil (god)", "source": "Ur III administrative texts"}
+{"name": "Lugalmagure", "type": "person", "morphemes": ["lugal", "magur"], "gloss": "king + barge", "source": "Ur III administrative texts"}
+{"name": "Šulgiiriĝu", "type": "person", "morphemes": ["šulgi", "iri", "ĝu"], "gloss": "Šulgi (deified king) + city + my", "source": "Ur III administrative texts"}
+{"name": "Gudea", "type": "person", "morphemes": ["gu", "de"], "gloss": "voice + pour", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Lugirizal", "type": "person", "morphemes": ["lu", "girizal"], "gloss": "man + joy", "source": "Ur III administrative texts"}
+{"name": "Urištaran", "type": "person", "morphemes": ["ur", "ištaran"], "gloss": "servant + Ištaran (god)", "source": "Ur III administrative texts"}
+{"name": "Lugina", "type": "person", "morphemes": ["lu", "gin"], "gloss": "man + firm (true)", "source": "Ur III administrative texts"}
+{"name": "Urninĝešzida", "type": "person", "morphemes": ["ur", "ninĝešzida"], "gloss": "servant + Ninĝešzida (god)", "source": "Ur III administrative texts"}
+{"name": "Lugalazida", "type": "person", "morphemes": ["lugal", "a", "zid"], "gloss": "king + arm + true (right)", "source": "Ur III administrative texts"}
+{"name": "Lugalituda", "type": "person", "morphemes": ["lugal", "itud"], "gloss": "king + moon (month)", "source": "Ur III administrative texts"}
+{"name": "Lugalkugani", "type": "person", "morphemes": ["lugal", "kug", "ani"], "gloss": "king + pure (silver) + his/her", "source": "Ur III administrative texts"}
+{"name": "Abbagina", "type": "person", "morphemes": ["abba", "gin"], "gloss": "father + firm (true)", "source": "Ur III administrative texts"}
+{"name": "Abba", "type": "person", "morphemes": ["abba"], "gloss": "father", "source": "Ur III administrative texts"}
+{"name": "Urutu", "type": "person", "morphemes": ["ur", "utu"], "gloss": "servant + sun (Utu)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Lugalḫeĝal", "type": "person", "morphemes": ["lugal", "ḫeĝal"], "gloss": "king + abundance", "source": "Ur III administrative texts"}
+{"name": "Lugalinimgina", "type": "person", "morphemes": ["lugal", "inim", "gin"], "gloss": "king + word + firm (true)", "source": "Ur III administrative texts"}
+{"name": "Šešani", "type": "person", "morphemes": ["šeš", "ani"], "gloss": "brother + his/her", "source": "Ur III administrative texts"}
+{"name": "Urlugal", "type": "person", "morphemes": ["ur", "lugal"], "gloss": "servant + king", "source": "Ur III administrative texts"}
+{"name": "Urdamu", "type": "person", "morphemes": ["ur", "damu"], "gloss": "servant + Damu (god)", "source": "Ur III administrative texts"}
+{"name": "Aradnanna", "type": "person", "morphemes": ["arad", "nanna"], "gloss": "slave + Nanna (moon god)", "source": "Ur III administrative texts"}
+{"name": "Lusuen", "type": "person", "morphemes": ["lu", "suen"], "gloss": "man + Suen (moon god)", "source": "Ur III administrative texts"}
+{"name": "Eniggal", "type": "person", "morphemes": ["eniggal"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Uriškur", "type": "person", "morphemes": ["ur", "iškur"], "gloss": "servant + Iškur (god)", "source": "Ur III administrative texts"}
+{"name": "Kugani", "type": "person", "morphemes": ["kug", "ani"], "gloss": "pure (silver) + his/her", "source": "Ur III administrative texts"}
+{"name": "Šagkuge", "type": "person", "morphemes": ["šag", "kug"], "gloss": "heart + pure (silver)", "source": "Ur III administrative texts"}
+{"name": "Lugalsaga", "type": "person", "morphemes": ["lugal", "sag"], "gloss": "king + good", "source": "Ur III administrative texts"}
+{"name": "Urdumuzida", "type": "person", "morphemes": ["ur", "dumuzid"], "gloss": "servant + Dumuzid (god)", "source": "Ur III administrative texts"}
+{"name": "Uršugalama", "type": "person", "morphemes": ["ur", "šugalam"], "gloss": "servant + Šugalam (gate)", "source": "Ur III administrative texts"}
+{"name": "Šulgiayaĝu", "type": "person", "morphemes": ["šulgi", "aya", "ĝu"], "gloss": "Šulgi (deified king) + father + my", "source": "Ur III administrative texts"}
+{"name": "Abbakala", "type": "person", "morphemes": ["abba", "kal"], "gloss": "father + precious", "source": "Ur III administrative texts"}
+{"name": "Abbaĝu", "type": "person", "morphemes": ["abba", "ĝu"], "gloss": "father + my", "source": "Ur III administrative texts"}
+{"name": "Ursukkal", "type": "person", "morphemes": ["ur", "sukkal"], "gloss": "servant + minister", "source": "Ur III administrative texts"}
+{"name": "Luibgal", "type": "person", "morphemes": ["lu", "ibgal"], "gloss": "man + Ibgal (temple)", "source": "Ur III administrative texts"}
+{"name": "Urĝipar", "type": "person", "morphemes": ["ur", "ĝipar"], "gloss": "servant + cloister", "source": "Ur III administrative texts"}
+{"name": "Luinana", "type": "person", "morphemes": ["lu", "inana"], "gloss": "man + Inana (goddess)", "source": "Ur III administrative texts"}
+{"name": "Ureana", "type": "person", "morphemes": ["ur", "eana"], "gloss": "servant + Eana (temple)", "source": "Ur III administrative texts"}
+{"name": "Lubalasaga", "type": "person", "morphemes": ["lu", "bala", "sag"], "gloss": "man + reign (term of office) + good", "source": "Ur III administrative texts"}
+{"name": "Niĝbaba", "type": "person", "morphemes": ["niĝ", "baba"], "gloss": "thing + Baba (goddess)", "source": "Ur III administrative texts"}
+{"name": "Urenki", "type": "person", "morphemes": ["ur", "enki"], "gloss": "servant + Enki (god)", "source": "Ur III administrative texts"}
+{"name": "Ĝirineisag", "type": "person", "morphemes": ["ĝiri", "ani", "sag"], "gloss": "foot + his/her + good", "source": "Ur III administrative texts"}
+{"name": "Ureninnu", "type": "person", "morphemes": ["ur", "eninnu"], "gloss": "servant + Eninnu (temple)", "source": "Ur III administrative texts"}
+{"name": "Nammaḫ", "type": "person", "morphemes": ["nam", "maḫ"], "gloss": "-ship (abstract) + great (lofty)", "source": "Ur III administrative texts"}
+{"name": "Ludumuzid", "type": "person", "morphemes": ["lu", "dumuzid"], "gloss": "man + Dumuzid (god)", "source": "Ur III administrative texts"}
+{"name": "Urbagara", "type": "person", "morphemes": ["ur", "bagara"], "gloss": "servant + Bagara (temple)", "source": "Ur III administrative texts"}
+{"name": "Lumelim", "type": "person", "morphemes": ["lu", "melim"], "gloss": "man + radiance", "source": "Ur III administrative texts"}
+{"name": "Lubanda", "type": "person", "morphemes": ["lu", "banda"], "gloss": "man + junior (young)", "source": "Ur III administrative texts"}
+{"name": "Urtur", "type": "person", "morphemes": ["ur", "tur"], "gloss": "servant + small", "source": "Ur III administrative texts"}
+{"name": "Uršulgira", "type": "person", "morphemes": ["ur", "šulgi"], "gloss": "servant + Šulgi (deified king)", "source": "Ur III administrative texts"}
+{"name": "Nannamaba", "type": "person", "morphemes": ["nanna", "ba"], "gloss": "Nanna (moon god) + give", "source": "Ur III administrative texts"}
+{"name": "Irikagina", "type": "person", "morphemes": ["irikagina"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Lugalpae", "type": "person", "morphemes": ["lugal", "pae"], "gloss": "king + resplendent", "source": "Ur III administrative texts"}
+{"name": "Urḫendursaĝ", "type": "person", "morphemes": ["ur", "ḫendursaĝ"], "gloss": "servant + Ḫendursaĝ (god)", "source": "Ur III administrative texts"}
+{"name": "Luigisagsag", "type": "person", "morphemes": ["lu", "igi", "sag"], "gloss": "man + eye + good", "source": "Ur III administrative texts"}
+{"name": "Lušulgira", "type": "person", "morphemes": ["lu", "šulgi"], "gloss": "man + Šulgi (deified king)", "source": "Ur III administrative texts"}
+{"name": "Addakala", "type": "person", "morphemes": ["adda", "kal"], "gloss": "father + precious", "source": "Ur III administrative texts"}
+{"name": "Adda", "type": "person", "morphemes": ["adda"], "gloss": "father", "source": "Ur III administrative texts"}
+{"name": "Urninĝirsu", "type": "person", "morphemes": ["ur", "ninĝirsu"], "gloss": "servant + Ninĝirsu (god)", "source": "Ur III administrative texts"}
+{"name": "Luenlila", "type": "person", "morphemes": ["lu", "enlil"], "gloss": "man + Enlil (god)", "source": "Ur III administrative texts"}
+{"name": "Luurub", "type": "person", "morphemes": ["lu", "urub"], "gloss": "man + Urub (city)", "source": "Ur III administrative texts"}
+{"name": "Endiĝirĝu", "type": "person", "morphemes": ["en", "diĝir", "ĝu"], "gloss": "lord + god + my", "source": "Ur III administrative texts"}
+{"name": "Lugalmelim", "type": "person", "morphemes": ["lugal", "melim"], "gloss": "king + radiance", "source": "Ur III administrative texts"}
+{"name": "Kugnanna", "type": "person", "morphemes": ["kug", "nanna"], "gloss": "pure (silver) + Nanna (moon god)", "source": "Ur III administrative texts"}
+{"name": "Urninmarki", "type": "person", "morphemes": ["ur", "ninmarki"], "gloss": "servant + Ninmarki (goddess)", "source": "Ur III administrative texts"}
+{"name": "Lugula", "type": "person", "morphemes": ["lu", "gula"], "gloss": "man + great", "source": "Ur III administrative texts"}
+{"name": "Lugalamarkug", "type": "person", "morphemes": ["lugal", "amar", "kug"], "gloss": "king + calf (young) + pure (silver)", "source": "Ur III administrative texts"}
+{"name": "Inimmanizid", "type": "person", "morphemes": ["inim", "ani", "zid"], "gloss": "word + his/her + true (right)", "source": "Ur III administrative texts"}
+{"name": "Urnumušda", "type": "person", "morphemes": ["ur", "numušda"], "gloss": "servant + Numušda (god)", "source": "Ur III administrative texts"}
+{"name": "Urinana", "type": "person", "morphemes": ["ur", "inana"], "gloss": "servant + Inana (goddess)", "source": "Old Akkadian administrative texts"}
+{"name": "Nesaĝ", "type": "person", "morphemes": ["nesaĝ"], "gloss": "first-fruits offering", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Azida", "type": "person", "morphemes": ["a", "zid"], "gloss": "arm + true (right)", "source": "Ur III administrative texts"}
+{"name": "Lunanše", "type": "person", "morphemes": ["lu", "nanše"], "gloss": "man + Nanše (goddess)", "source": "Ur III administrative texts"}
+{"name": "Šešdada", "type": "person", "morphemes": ["šeš", "dada"], "gloss": "brother + name", "source": "Ur III administrative texts"}
+{"name": "Urgula", "type": "person", "morphemes": ["ur", "gula"], "gloss": "servant + great", "source": "Ur III administrative texts"}
+{"name": "Baranamtara", "type": "person", "morphemes": ["barag", "namtar"], "gloss": "dais (sanctuary) + fate", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Luninura", "type": "person", "morphemes": ["lu", "ninura"], "gloss": "man + Ninura (goddess)", "source": "Ur III administrative texts"}
+{"name": "Urbilgames", "type": "person", "morphemes": ["ur", "bilgames"], "gloss": "servant + Bilgames (hero-god)", "source": "Ur III administrative texts"}
+{"name": "Lugalištaran", "type": "person", "morphemes": ["lugal", "ištaran"], "gloss": "king + Ištaran (god)", "source": "Ur III administrative texts"}
+{"name": "Urḫaya", "type": "person", "morphemes": ["ur", "ḫaya"], "gloss": "servant + Ḫaya (god)", "source": "Ur III administrative texts"}
+{"name": "Urguedena", "type": "person", "morphemes": ["ur", "guedena"], "gloss": "servant + Gu'edena (field)", "source": "Ur III administrative texts"}
+{"name": "Lugalunkene", "type": "person", "morphemes": ["lugal", "unken"], "gloss": "king + assembly", "source": "Ur III administrative texts"}
+{"name": "Lugalimrua", "type": "person", "morphemes": ["lugal", "imru"], "gloss": "king + clan", "source": "Ur III administrative texts"}
+{"name": "Urdam", "type": "person", "morphemes": ["ur", "dam"], "gloss": "servant + spouse", "source": "Ur III administrative texts"}
+{"name": "Iniminana", "type": "person", "morphemes": ["inim", "inana"], "gloss": "word + Inana (goddess)", "source": "Ur III administrative texts"}
+{"name": "Lugaligiḫuš", "type": "person", "morphemes": ["lugal", "igi", "ḫuš"], "gloss": "king + eye + fierce (red)", "source": "Ur III administrative texts"}
+{"name": "Urnamma", "type": "person", "morphemes": ["ur", "namma"], "gloss": "servant + Namma (goddess)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Luenki", "type": "person", "morphemes": ["lu", "enki"], "gloss": "man + Enki (god)", "source": "Ur III administrative texts"}
+{"name": "Lugalnirĝal", "type": "person", "morphemes": ["lugal", "nirĝal"], "gloss": "king + trusted (authoritative)", "source": "Ur III administrative texts"}
+{"name": "Lugalušumgal", "type": "person", "morphemes": ["lugal", "ušumgal"], "gloss": "king + dragon", "source": "Ur III administrative texts"}
+{"name": "Gemelamma", "type": "person", "morphemes": ["geme", "lamma"], "gloss": "maid + Lamma (protective goddess)", "source": "Ur III administrative texts"}
+{"name": "Urnisaba", "type": "person", "morphemes": ["ur", "nisaba"], "gloss": "servant + Nisaba (goddess)", "source": "Ur III administrative texts"}
+{"name": "Ninkala", "type": "person", "morphemes": ["nin", "kal"], "gloss": "lady (lord) + precious", "source": "Ur III administrative texts"}
+{"name": "Urninazu", "type": "person", "morphemes": ["ur", "ninazu"], "gloss": "servant + Ninazu (god)", "source": "Ur III administrative texts"}
+{"name": "Luniĝir", "type": "person", "morphemes": ["lu", "niĝir"], "gloss": "man + herald", "source": "Ur III administrative texts"}
+{"name": "Urašnan", "type": "person", "morphemes": ["ur", "ašnan"], "gloss": "servant + Ašnan (grain goddess)", "source": "Ur III administrative texts"}
+{"name": "Lugalzagesi", "type": "person", "morphemes": ["lugal", "zag", "si"], "gloss": "king + sanctuary (side) + fill", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Luḫeĝal", "type": "person", "morphemes": ["lu", "ḫeĝal"], "gloss": "man + abundance", "source": "Ur III administrative texts"}
+{"name": "Uramana", "type": "person", "morphemes": ["ur", "ama"], "gloss": "servant + mother", "source": "Ur III administrative texts"}
+{"name": "Urninmug", "type": "person", "morphemes": ["ur", "ninmug"], "gloss": "servant + Ninmug (goddess)", "source": "Ur III administrative texts"}
+{"name": "Šaramutum", "type": "person", "morphemes": ["šara", "tum"], "gloss": "Šara (god) + bring", "source": "Ur III administrative texts"}
+{"name": "Šarabazige", "type": "person", "morphemes": ["šara", "zig"], "gloss": "Šara (god) + rise", "source": "Ur III administrative texts"}
+{"name": "Lugalmassu", "type": "person", "morphemes": ["lugal", "massu"], "gloss": "king + leader", "source": "Ur III administrative texts"}
+{"name": "Lugalbad", "type": "person", "morphemes": ["lugal", "bad"], "gloss": "king + wall", "source": "Ur III administrative texts"}
+{"name": "Ureškuga", "type": "person", "morphemes": ["ur", "eš", "kug"], "gloss": "servant + shrine + pure (silver)", "source": "Ur III administrative texts"}
+{"name": "Šaraḫeĝal", "type": "person", "morphemes": ["šara", "ḫeĝal"], "gloss": "Šara (god) + abundance", "source": "Ur III administrative texts"}
+{"name": "Abaenlilgin", "type": "person", "morphemes": ["aba", "enlil", "gin"], "gloss": "who + Enlil (god) + like", "source": "Ur III administrative texts"}
+{"name": "Ludamu", "type": "person", "morphemes": ["lu", "damu"], "gloss": "man + Damu (god)", "source": "Ur III administrative texts"}
+{"name": "Diutu", "type": "person", "morphemes": ["di", "utu"], "gloss": "lawsuit (judgement) + sun (Utu)", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Lumagan", "type": "person", "morphemes": ["lu", "magan"], "gloss": "man + Magan (land)", "source": "Ur III administrative texts"}
+{"name": "Enlilzišaĝal", "type": "person", "morphemes": ["enlil", "zi", "šag", "ĝal"], "gloss": "Enlil (god) + life + heart + be (exist)", "source": "Ur III administrative texts"}
+{"name": "Kugninura", "type": "person", "morphemes": ["kug", "ninura"], "gloss": "pure (silver) + Ninura (goddess)", "source": "Ur III administrative texts"}
+{"name": "Urnanna", "type": "person", "morphemes": ["ur", "nanna"], "gloss": "servant + Nanna (moon god)", "source": "Ur III administrative texts"}
+{"name": "Uregal", "type": "person", "morphemes": ["ur", "egal"], "gloss": "servant + palace", "source": "Ur III administrative texts"}
+{"name": "Ursagaĝu", "type": "person", "morphemes": ["ur", "sag", "ĝu"], "gloss": "servant + good + my", "source": "Ur III administrative texts"}
+{"name": "Gemebaba", "type": "person", "morphemes": ["geme", "baba"], "gloss": "maid + Baba (goddess)", "source": "Ur III administrative texts"}
+{"name": "Amakala", "type": "person", "morphemes": ["ama", "kal"], "gloss": "mother + precious", "source": "Ur III administrative texts"}
+{"name": "Urningublaga", "type": "person", "morphemes": ["ur", "ningublaga"], "gloss": "servant + Ningublaga (god)", "source": "Ur III administrative texts"}
+{"name": "Urlugalbanda", "type": "person", "morphemes": ["ur", "lugalbanda"], "gloss": "servant + Lugalbanda (hero-god)", "source": "Ur III administrative texts"}
+{"name": "Šagninĝa", "type": "person", "morphemes": ["šag", "nin", "ĝu"], "gloss": "heart + lady (lord) + my", "source": "Ur III administrative texts"}
+{"name": "Luniĝin", "type": "person", "morphemes": ["lu", "niĝin"], "gloss": "man + Niĝin (city)", "source": "Ur III administrative texts"}
+{"name": "Urninsumun", "type": "person", "morphemes": ["ur", "ninsumun"], "gloss": "servant + Ninsumun (goddess)", "source": "Ur III administrative texts"}
+{"name": "Šešsaga", "type": "person", "morphemes": ["šeš", "sag"], "gloss": "brother + good", "source": "Ur III administrative texts"}
+{"name": "Nammaḫbaba", "type": "person", "morphemes": ["nam", "maḫ", "baba"], "gloss": "-ship (abstract) + great (lofty) + Baba (goddess)", "source": "Ur III administrative texts"}
+{"name": "Urninpiriĝ", "type": "person", "morphemes": ["ur", "ninpiriĝ"], "gloss": "servant + Ninpiriĝ (god)", "source": "Ur III administrative texts"}
+{"name": "Nannakiaĝa", "type": "person", "morphemes": ["nanna", "kiaĝ"], "gloss": "Nanna (moon god) + beloved", "source": "Ur III administrative texts"}
+{"name": "Lugalengar", "type": "person", "morphemes": ["lugal", "engar"], "gloss": "king + farmer", "source": "Ur III administrative texts"}
+{"name": "Šeštur", "type": "person", "morphemes": ["šeš", "tur"], "gloss": "brother + small", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lugalnesaĝe", "type": "person", "morphemes": ["lugal", "nesaĝ"], "gloss": "king + first-fruits offering", "source": "Ur III administrative texts"}
+{"name": "Igišara", "type": "person", "morphemes": ["igi", "šara"], "gloss": "eye + Šara (god)", "source": "Ur III administrative texts"}
+{"name": "Nannadalla", "type": "person", "morphemes": ["nanna", "dalla"], "gloss": "Nanna (moon god) + bright", "source": "Ur III administrative texts"}
+{"name": "Nammaḫni", "type": "person", "morphemes": ["nam", "maḫ", "ani"], "gloss": "-ship (abstract) + great (lofty) + his/her", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Lugalanatum", "type": "person", "morphemes": ["lugal", "an", "tum"], "gloss": "king + heaven (An) + worthy (fitting)", "source": "Ur III administrative texts"}
+{"name": "Luninĝa", "type": "person", "morphemes": ["lu", "nin", "ĝu"], "gloss": "man + lady (lord) + my", "source": "Ur III administrative texts"}
+{"name": "Urtummal", "type": "person", "morphemes": ["ur", "tummal"], "gloss": "servant + Tummal (cult centre)", "source": "Ur III administrative texts"}
+{"name": "Urzabalam", "type": "person", "morphemes": ["ur", "zabalam"], "gloss": "servant + Zabalam (city)", "source": "Ur III administrative texts"}
+{"name": "Nininimgina", "type": "person", "morphemes": ["nin", "inim", "gin"], "gloss": "lady (lord) + word + firm (true)", "source": "Ur III administrative texts"}
+{"name": "Ayaĝu", "type": "person", "morphemes": ["aya", "ĝu"], "gloss": "father + my", "source": "Ur III administrative texts"}
+{"name": "Ninkugzu", "type": "person", "morphemes": ["nin", "kug", "zu"], "gloss": "lady (lord) + pure (silver) + know", "source": "Ur III administrative texts"}
+{"name": "Kiaĝ", "type": "person", "morphemes": ["kiaĝ"], "gloss": "beloved", "source": "Ur III administrative texts"}
+{"name": "Urkisal", "type": "person", "morphemes": ["ur", "kisal"], "gloss": "servant + courtyard", "source": "Ur III administrative texts"}
+{"name": "Luigalim", "type": "person", "morphemes": ["lu", "igalim"], "gloss": "man + Igalim (god)", "source": "Ur III administrative texts"}
+{"name": "Urninurta", "type": "person", "morphemes": ["ur", "ninurta"], "gloss": "servant + Ninurta (god)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ninḫeĝal", "type": "person", "morphemes": ["nin", "ḫeĝal"], "gloss": "lady (lord) + abundance", "source": "Ur III administrative texts"}
+{"name": "Nannasisa", "type": "person", "morphemes": ["nanna", "sisa"], "gloss": "Nanna (moon god) + just (straight)", "source": "Ur III administrative texts"}
+{"name": "Lugaldalla", "type": "person", "morphemes": ["lugal", "dalla"], "gloss": "king + bright", "source": "Ur III administrative texts"}
+{"name": "Igianakezu", "type": "person", "morphemes": ["igi", "an", "zu"], "gloss": "eye + heaven (An) + know", "source": "Ur III administrative texts"}
+{"name": "Urningal", "type": "person", "morphemes": ["ur", "ningal"], "gloss": "servant + Ningal (goddess)", "source": "Ur III administrative texts"}
+{"name": "Lugigir", "type": "person", "morphemes": ["lu", "gigir"], "gloss": "man + chariot", "source": "Ur III administrative texts"}
+{"name": "Lugalšag", "type": "person", "morphemes": ["lugal", "šag"], "gloss": "king + heart", "source": "Old Akkadian administrative texts"}
+{"name": "Kugšara", "type": "person", "morphemes": ["kug", "šara"], "gloss": "pure (silver) + Šara (god)", "source": "Ur III administrative texts"}
+{"name": "Urabzu", "type": "person", "morphemes": ["ur", "abzu"], "gloss": "servant + cosmic fresh waters (Abzu)", "source": "Ur III administrative texts"}
+{"name": "Urebabbar", "type": "person", "morphemes": ["ur", "ebabbar"], "gloss": "servant + Ebabbar (temple)", "source": "Ur III administrative texts"}
+{"name": "Enanatum", "type": "person", "morphemes": ["en", "an", "tum"], "gloss": "lord + heaven (An) + worthy (fitting)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Šešludu", "type": "person", "morphemes": ["šeš", "lu", "dug"], "gloss": "brother + man + good", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lugalsipad", "type": "person", "morphemes": ["lugal", "sipad"], "gloss": "king + shepherd", "source": "Ur III administrative texts"}
+{"name": "Eurbidu", "type": "person", "morphemes": ["e", "ur", "bi", "dug"], "gloss": "house + base (root) + its + good", "source": "Ur III administrative texts"}
+{"name": "Urnuska", "type": "person", "morphemes": ["ur", "nuska"], "gloss": "servant + Nuska (god)", "source": "Ur III administrative texts"}
+{"name": "Lugalkigala", "type": "person", "morphemes": ["lugal", "kigal"], "gloss": "king + great place (netherworld)", "source": "Ur III administrative texts"}
+{"name": "Lugalengardug", "type": "person", "morphemes": ["lugal", "engar", "dug"], "gloss": "king + farmer + good", "source": "Ur III administrative texts"}
+{"name": "Luabu", "type": "person", "morphemes": ["lu", "abu"], "gloss": "man + Abu (god)", "source": "Ur III administrative texts"}
+{"name": "Igisagsag", "type": "person", "morphemes": ["igi", "sag"], "gloss": "eye + good", "source": "Ur III administrative texts"}
+{"name": "Gemesuen", "type": "person", "morphemes": ["geme", "suen"], "gloss": "maid + Suen (moon god)", "source": "Ur III administrative texts"}
+{"name": "Amarezem", "type": "person", "morphemes": ["amar", "ezem"], "gloss": "calf (young) + festival", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Ninazida", "type": "person", "morphemes": ["nin", "a", "zid"], "gloss": "lady (lord) + arm + true (right)", "source": "Ur III administrative texts"}
+{"name": "Luiškur", "type": "person", "morphemes": ["lu", "iškur"], "gloss": "man + Iškur (god)", "source": "Ur III administrative texts"}
+{"name": "Eanatum", "type": "person", "morphemes": ["eana", "tum"], "gloss": "Eana (temple) + worthy (fitting)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Nannakugzu", "type": "person", "morphemes": ["nanna", "kug", "zu"], "gloss": "Nanna (moon god) + pure (silver) + know", "source": "Ur III administrative texts"}
+{"name": "Igizi", "type": "person", "morphemes": ["igi", "zid"], "gloss": "eye + true (right)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lunindara", "type": "person", "morphemes": ["lu", "nindara"], "gloss": "man + Nindara (god)", "source": "Ur III administrative texts"}
+{"name": "Urninšubur", "type": "person", "morphemes": ["ur", "ninšubur"], "gloss": "servant + Ninšubur (deity)", "source": "Ur III administrative texts"}
+{"name": "Nannaisag", "type": "person", "morphemes": ["nanna", "sag"], "gloss": "Nanna (moon god) + good", "source": "Ur III administrative texts"}
+{"name": "Luninsumun", "type": "person", "morphemes": ["lu", "ninsumun"], "gloss": "man + Ninsumun (goddess)", "source": "Ur III administrative texts"}
+{"name": "Lueridug", "type": "person", "morphemes": ["lu", "eridug"], "gloss": "man + Eridug (city)", "source": "Ur III administrative texts"}
+{"name": "Gemešulpae", "type": "person", "morphemes": ["geme", "šulpae"], "gloss": "maid + Šulpae (god)", "source": "Ur III administrative texts"}
+{"name": "Enkug", "type": "person", "morphemes": ["en", "kug"], "gloss": "lord + pure (silver)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lugalḫili", "type": "person", "morphemes": ["lugal", "ḫili"], "gloss": "king + charm", "source": "Ur III administrative texts"}
+{"name": "Lugalĝeškimzid", "type": "person", "morphemes": ["lugal", "ĝeškim", "zid"], "gloss": "king + omen (sign) + true (right)", "source": "Ur III administrative texts"}
+{"name": "Niĝirinimgina", "type": "person", "morphemes": ["niĝir", "inim", "gin"], "gloss": "herald + word + firm (true)", "source": "Ur III administrative texts"}
+{"name": "Lugalkiaĝa", "type": "person", "morphemes": ["lugal", "kiaĝ"], "gloss": "king + beloved", "source": "Ur III administrative texts"}
+{"name": "Gemenanše", "type": "person", "morphemes": ["geme", "nanše"], "gloss": "maid + Nanše (goddess)", "source": "Ur III administrative texts"}
+{"name": "Nitazid", "type": "person", "morphemes": ["nita", "zid"], "gloss": "male + true (right)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Enmetena", "type": "person", "morphemes": ["enmetena"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Urkug", "type": "person", "morphemes": ["ur", "kug"], "gloss": "servant + pure (silver)", "source": "Ur III administrative texts"}
+{"name": "Saga", "type": "person", "morphemes": ["sag"], "gloss": "good", "source": "Ur III administrative texts"}
+{"name": "Lugaligi", "type": "person", "morphemes": ["lugal", "igi"], "gloss": "king + eye", "source": "Ur III administrative texts"}
+{"name": "Lugalandul", "type": "person", "morphemes": ["lugal", "andul"], "gloss": "king + shade (protection)", "source": "Ur III administrative texts"}
+{"name": "Lugalduga", "type": "person", "morphemes": ["lugal", "dug"], "gloss": "king + good", "source": "Ur III administrative texts"}
+{"name": "Gemeenlila", "type": "person", "morphemes": ["geme", "enlil"], "gloss": "maid + Enlil (god)", "source": "Ur III administrative texts"}
+{"name": "Gemenanna", "type": "person", "morphemes": ["geme", "nanna"], "gloss": "maid + Nanna (moon god)", "source": "Ur III administrative texts"}
+{"name": "Inimnanna", "type": "person", "morphemes": ["inim", "nanna"], "gloss": "word + Nanna (moon god)", "source": "Ur III administrative texts"}
+{"name": "Emelamsu", "type": "person", "morphemes": ["e", "melim", "sud"], "gloss": "house + radiance + distant (long)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Eḫili", "type": "person", "morphemes": ["e", "ḫili"], "gloss": "house + charm", "source": "Ur III administrative texts"}
+{"name": "Diĝiršešĝu", "type": "person", "morphemes": ["diĝir", "šeš", "ĝu"], "gloss": "god + brother + my", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Engardug", "type": "person", "morphemes": ["engar", "dug"], "gloss": "farmer + good", "source": "Ur III administrative texts"}
+{"name": "Enentarzid", "type": "person", "morphemes": ["enentarzid"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Urgibil", "type": "person", "morphemes": ["ur", "gibil"], "gloss": "servant + Gibil (fire god)", "source": "Ur III administrative texts"}
+{"name": "Šulgiziĝu", "type": "person", "morphemes": ["šulgi", "zi", "ĝu"], "gloss": "Šulgi (deified king) + life + my", "source": "Ur III administrative texts"}
+{"name": "Šešziĝu", "type": "person", "morphemes": ["šeš", "zi", "ĝu"], "gloss": "brother + life + my", "source": "Ur III administrative texts"}
+{"name": "Aradbaba", "type": "person", "morphemes": ["arad", "baba"], "gloss": "slave + Baba (goddess)", "source": "Ur III administrative texts"}
+{"name": "Lusukkal", "type": "person", "morphemes": ["lu", "sukkal"], "gloss": "man + minister", "source": "Ur III administrative texts"}
+{"name": "Lugudea", "type": "person", "morphemes": ["lu", "gudea"], "gloss": "man + Gudea (ruler)", "source": "Ur III administrative texts"}
+{"name": "Lugalziĝu", "type": "person", "morphemes": ["lugal", "zi", "ĝu"], "gloss": "king + life + my", "source": "Ur III administrative texts"}
+{"name": "Enšagkuge", "type": "person", "morphemes": ["en", "šag", "kug"], "gloss": "lord + heart + pure (silver)", "source": "Ur III administrative texts"}
+{"name": "Ureš", "type": "person", "morphemes": ["ur", "eš"], "gloss": "servant + shrine", "source": "Old Akkadian administrative texts"}
+{"name": "Inimgina", "type": "person", "morphemes": ["inim", "gin"], "gloss": "word + firm (true)", "source": "Ur III administrative texts"}
+{"name": "Gemedumuzid", "type": "person", "morphemes": ["geme", "dumuzid"], "gloss": "maid + Dumuzid (god)", "source": "Ur III administrative texts"}
+{"name": "Urnindara", "type": "person", "morphemes": ["ur", "nindara"], "gloss": "servant + Nindara (god)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Urdamgalnuna", "type": "person", "morphemes": ["ur", "damgalnun"], "gloss": "servant + Damgalnun (goddess)", "source": "Ur III administrative texts"}
+{"name": "Enkisalsi", "type": "person", "morphemes": ["en", "kisal", "si"], "gloss": "lord + courtyard + fill", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lumagure", "type": "person", "morphemes": ["lu", "magur"], "gloss": "man + barge", "source": "Ur III administrative texts"}
+{"name": "Ninbaradari", "type": "person", "morphemes": ["nin", "barag", "dari"], "gloss": "lady (lord) + dais (sanctuary) + eternal", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Ayakala", "type": "person", "morphemes": ["aya", "kal"], "gloss": "father + precious", "source": "Ur III administrative texts"}
+{"name": "Duga", "type": "person", "morphemes": ["dug"], "gloss": "good", "source": "Ur III administrative texts"}
+{"name": "Kuli", "type": "person", "morphemes": ["kuli"], "gloss": "friend", "source": "Ur III administrative texts"}
+{"name": "Maštur", "type": "person", "morphemes": ["maš", "tur"], "gloss": "kid (young goat) + small", "source": "Ur III administrative texts"}
+{"name": "Uršerda", "type": "person", "morphemes": ["ur", "šerda"], "gloss": "servant + Šerda (goddess)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Sasa", "type": "person", "morphemes": ["sag", "sag"], "gloss": "good + good", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Mašgula", "type": "person", "morphemes": ["maš", "gula"], "gloss": "kid (young goat) + great", "source": "Ur III administrative texts"}
+{"name": "Luzabalam", "type": "person", "morphemes": ["lu", "zabalam"], "gloss": "man + Zabalam (city)", "source": "Ur III administrative texts"}
+{"name": "Addatur", "type": "person", "morphemes": ["adda", "tur"], "gloss": "father + small", "source": "Ur III administrative texts"}
+{"name": "Niĝenlila", "type": "person", "morphemes": ["niĝ", "enlil"], "gloss": "thing + Enlil (god)", "source": "Ur III administrative texts"}
+{"name": "Lugalutu", "type": "person", "morphemes": ["lugal", "utu"], "gloss": "king + sun (Utu)", "source": "Ur III administrative texts"}
+{"name": "Enlilaisag", "type": "person", "morphemes": ["enlil", "sag"], "gloss": "Enlil (god) + good", "source": "Ur III administrative texts"}
+{"name": "Engarzid", "type": "person", "morphemes": ["engar", "zid"], "gloss": "farmer + true (right)", "source": "Ur III administrative texts"}
+{"name": "Uršakkan", "type": "person", "morphemes": ["ur", "šakkan"], "gloss": "servant + Šakkan (god)", "source": "Ur III administrative texts"}
+{"name": "Ninĝirsuluĝu", "type": "person", "morphemes": ["ninĝirsu", "lu", "ĝu"], "gloss": "Ninĝirsu (god) + man + my", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Diĝirsukkal", "type": "person", "morphemes": ["diĝir", "sukkal"], "gloss": "god + minister", "source": "Ur III administrative texts"}
+{"name": "Lugalnamtare", "type": "person", "morphemes": ["lugal", "namtar"], "gloss": "king + fate", "source": "Ur III administrative texts"}
+{"name": "Abbagula", "type": "person", "morphemes": ["abba", "gula"], "gloss": "father + great", "source": "Ur III administrative texts"}
+{"name": "Luašnan", "type": "person", "morphemes": ["lu", "ašnan"], "gloss": "man + Ašnan (grain goddess)", "source": "Ur III administrative texts"}
+{"name": "Ursaĝ", "type": "person", "morphemes": ["ursaĝ"], "gloss": "hero", "source": "Old Akkadian administrative texts"}
+{"name": "Lugalaĝu", "type": "person", "morphemes": ["lugal", "a", "ĝu"], "gloss": "king + arm + my", "source": "Ur III administrative texts"}
+{"name": "Inimsag", "type": "person", "morphemes": ["inim", "sag"], "gloss": "word + good", "source": "Ur III administrative texts"}
+{"name": "Uremuš", "type": "person", "morphemes": ["ur", "emuš"], "gloss": "servant + Emuš (temple)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lugalursaĝ", "type": "person", "morphemes": ["lugal", "ursaĝ"], "gloss": "king + hero", "source": "Ur III administrative texts"}
+{"name": "Lugalsisa", "type": "person", "morphemes": ["lugal", "sisa"], "gloss": "king + just (straight)", "source": "Ur III administrative texts"}
+{"name": "Urešdam", "type": "person", "morphemes": ["ur", "ešdam"], "gloss": "servant + tavern", "source": "Ur III administrative texts"}
+{"name": "Kugningal", "type": "person", "morphemes": ["kug", "ningal"], "gloss": "pure (silver) + Ningal (goddess)", "source": "Ur III administrative texts"}
+{"name": "Lugaltiraš", "type": "person", "morphemes": ["lugal", "tiraš"], "gloss": "king + Tiraš (cult centre)", "source": "Ur III administrative texts"}
+{"name": "Lulu", "type": "person", "morphemes": ["lulu"], "gloss": "name", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Ayadiĝir", "type": "person", "morphemes": ["aya", "diĝir"], "gloss": "father + god", "source": "Ur III administrative texts"}
+{"name": "Lugalĝu", "type": "person", "morphemes": ["lugal", "ĝu"], "gloss": "king + my", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Munussaga", "type": "person", "morphemes": ["munus", "sag"], "gloss": "woman + good", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Akurgal", "type": "person", "morphemes": ["akurgal"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Urluma", "type": "person", "morphemes": ["ur", "luma"], "gloss": "servant + Lumma (personal name)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Il", "type": "person", "morphemes": ["il"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ayaanepada", "type": "person", "morphemes": ["aya", "an", "pad"], "gloss": "father + heaven (An) + choose", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Lugalkisalsi", "type": "person", "morphemes": ["lugal", "kisal", "si"], "gloss": "king + courtyard + fill", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Mesilim", "type": "person", "morphemes": ["mesilim"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Mesanepada", "type": "person", "morphemes": ["mes", "an", "pad"], "gloss": "hero (young man) + heaven (An) + choose", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Utuḫeĝal", "type": "person", "morphemes": ["utu", "ḫeĝal"], "gloss": "sun (Utu) + abundance", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Meskigala", "type": "person", "morphemes": ["mes", "kigal"], "gloss": "hero (young man) + great place (netherworld)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Meskalamdug", "type": "person", "morphemes": ["mes", "kalam", "dug"], "gloss": "hero (young man) + land + good", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Piriĝme", "type": "person", "morphemes": ["piriĝ", "me"], "gloss": "lion + battle", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Enḫeduana", "type": "person", "morphemes": ["en", "ḫedu", "an"], "gloss": "lord + ornament + heaven (An)", "source": "Old Akkadian administrative texts"}
+{"name": "Urzababa", "type": "person", "morphemes": ["ur", "zababa"], "gloss": "servant + Zababa (god)", "source": "Ur III administrative texts"}
+{"name": "Enšakušana", "type": "person", "morphemes": ["enšakušana"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Urezida", "type": "person", "morphemes": ["ur", "ezida"], "gloss": "servant + Ezida (temple)", "source": "Ur III administrative texts"}
+{"name": "Ninamaĝu", "type": "person", "morphemes": ["nin", "ama", "ĝu"], "gloss": "lady (lord) + mother + my", "source": "Ur III administrative texts"}
+{"name": "Namzid", "type": "person", "morphemes": ["nam", "zid"], "gloss": "-ship (abstract) + true (right)", "source": "Old Akkadian administrative texts"}
+{"name": "Urimkidug", "type": "person", "morphemes": ["urim", "ki", "dug"], "gloss": "Urim (Ur, city) + place (earth) + good", "source": "Ur III administrative texts"}
+{"name": "Niĝsaga", "type": "person", "morphemes": ["niĝ", "sag"], "gloss": "thing + good", "source": "Ur III administrative texts"}
+{"name": "Babaziĝu", "type": "person", "morphemes": ["baba", "zi", "ĝu"], "gloss": "Baba (goddess) + life + my", "source": "Ur III administrative texts"}
+{"name": "Nisabaandul", "type": "person", "morphemes": ["nisaba", "andul"], "gloss": "Nisaba (goddess) + shade (protection)", "source": "Ur III administrative texts"}
+{"name": "Lugaldiĝirĝu", "type": "person", "morphemes": ["lugal", "diĝir", "ĝu"], "gloss": "king + god + my", "source": "Ur III administrative texts"}
+{"name": "Kugsaga", "type": "person", "morphemes": ["kug", "sag"], "gloss": "pure (silver) + good", "source": "Ur III administrative texts"}
+{"name": "Lugalšeš", "type": "person", "morphemes": ["lugal", "šeš"], "gloss": "king + brother", "source": "Ur III administrative texts"}
+{"name": "Nannasaga", "type": "person", "morphemes": ["nanna", "sag"], "gloss": "Nanna (moon god) + good", "source": "Ur III administrative texts"}
+{"name": "Lukinunir", "type": "person", "morphemes": ["lu", "kinunir"], "gloss": "man + Kinunir (city)", "source": "Ur III administrative texts"}
+{"name": "Lugalpiriĝ", "type": "person", "morphemes": ["lugal", "piriĝ"], "gloss": "king + lion", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Amarabzu", "type": "person", "morphemes": ["amar", "abzu"], "gloss": "calf (young) + cosmic fresh waters (Abzu)", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Anezu", "type": "person", "morphemes": ["an", "zu"], "gloss": "heaven (An) + know", "source": "Ur III administrative texts"}
+{"name": "Niĝirabzu", "type": "person", "morphemes": ["niĝir", "abzu"], "gloss": "herald + cosmic fresh waters (Abzu)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lukarzida", "type": "person", "morphemes": ["lu", "karzida"], "gloss": "man + Karzida (quay sanctuary)", "source": "Ur III administrative texts"}
+{"name": "Gemeezida", "type": "person", "morphemes": ["geme", "ezida"], "gloss": "maid + Ezida (temple)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Ennanšekiaĝa", "type": "person", "morphemes": ["en", "nanše", "kiaĝ"], "gloss": "lord + Nanše (goddess) + beloved", "source": "Ur III administrative texts"}
+{"name": "Urbara", "type": "person", "morphemes": ["ur", "barag"], "gloss": "servant + dais (sanctuary)", "source": "Ur III administrative texts"}
+{"name": "Lugaliri", "type": "person", "morphemes": ["lugal", "iri"], "gloss": "king + city", "source": "Old Akkadian administrative texts"}
+{"name": "Lugalinimdug", "type": "person", "morphemes": ["lugal", "inim", "dug"], "gloss": "king + word + good", "source": "Lagaš II administrative texts"}
+{"name": "Mesezida", "type": "person", "morphemes": ["mes", "ezida"], "gloss": "hero (young man) + Ezida (temple)", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Amarašnan", "type": "person", "morphemes": ["amar", "ašnan"], "gloss": "calf (young) + Ašnan (grain goddess)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Ninḫilisud", "type": "person", "morphemes": ["nin", "ḫili", "sud"], "gloss": "lady (lord) + charm + distant (long)", "source": "Ur III administrative texts"}
+{"name": "Amartur", "type": "person", "morphemes": ["amar", "tur"], "gloss": "calf (young) + small", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Urasarluḫi", "type": "person", "morphemes": ["ur", "asarluḫi"], "gloss": "servant + Asarluḫi (god)", "source": "Ur III administrative texts"}
+{"name": "Nannazišaĝal", "type": "person", "morphemes": ["nanna", "zi", "šag", "ĝal"], "gloss": "Nanna (moon god) + life + heart + be (exist)", "source": "Ur III administrative texts"}
+{"name": "Gemeganun", "type": "person", "morphemes": ["geme", "ganun"], "gloss": "maid + storehouse", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Amariškur", "type": "person", "morphemes": ["amar", "iškur"], "gloss": "calf (young) + Iškur (god)", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Ninĝirsukaisag", "type": "person", "morphemes": ["ninĝirsu", "sag"], "gloss": "Ninĝirsu (god) + good", "source": "Ur III administrative texts"}
+{"name": "Lugalbarag", "type": "person", "morphemes": ["lugal", "barag"], "gloss": "king + dais (sanctuary)", "source": "Old Akkadian administrative texts"}
+{"name": "Inanaursaĝ", "type": "person", "morphemes": ["inana", "ursaĝ"], "gloss": "Inana (goddess) + hero", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Amardamu", "type": "person", "morphemes": ["amar", "damu"], "gloss": "calf (young) + Damu (god)", "source": "Ur III administrative texts"}
+{"name": "Ninḫedu", "type": "person", "morphemes": ["nin", "ḫedu"], "gloss": "lady (lord) + ornament", "source": "Ur III administrative texts"}
+{"name": "Igibaba", "type": "person", "morphemes": ["igi", "baba"], "gloss": "eye + Baba (goddess)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Gemeninlila", "type": "person", "morphemes": ["geme", "ninlil"], "gloss": "maid + Ninlil (goddess)", "source": "Ur III administrative texts"}
+{"name": "Lugalkeš", "type": "person", "morphemes": ["lugal", "keš"], "gloss": "king + Keš (city)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Namlugalidug", "type": "person", "morphemes": ["nam", "lugal", "dug"], "gloss": "-ship (abstract) + king + good", "source": "Ur III administrative texts"}
+{"name": "Eĝissubidug", "type": "person", "morphemes": ["e", "ĝissu", "bi", "dug"], "gloss": "house + shade + its + good", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lugalkur", "type": "person", "morphemes": ["lugal", "kur"], "gloss": "king + mountain (foreign land)", "source": "Old Akkadian administrative texts"}
+{"name": "Ḫiliabzu", "type": "person", "morphemes": ["ḫili", "abzu"], "gloss": "charm + cosmic fresh waters (Abzu)", "source": "Ur III administrative texts"}
+{"name": "Edenekiaĝa", "type": "person", "morphemes": ["eden", "kiaĝ"], "gloss": "steppe + beloved", "source": "Ur III administrative texts"}
+{"name": "Urpabilsaĝ", "type": "person", "morphemes": ["ur", "pabilsaĝ"], "gloss": "servant + Pabilsaĝ (god)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lugalmegalgal", "type": "person", "morphemes": ["lugal", "me", "gal"], "gloss": "king + divine powers + big (great)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Lugallagaš", "type": "person", "morphemes": ["lugal", "lagaš"], "gloss": "king + Lagaš (city)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Guzidea", "type": "person", "morphemes": ["gu", "zid", "de"], "gloss": "voice + true (right) + pour", "source": "Ur III administrative texts"}
+{"name": "Ĝirsukidug", "type": "person", "morphemes": ["ĝirsu", "ki", "dug"], "gloss": "Ĝirsu (city) + place (earth) + good", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Inana", "type": "deity", "morphemes": ["inana"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Enlil", "type": "deity", "morphemes": ["enlil"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Nanna", "type": "deity", "morphemes": ["nanna"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šara", "type": "deity", "morphemes": ["šara"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ninlil", "type": "deity", "morphemes": ["ninlil"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Enki", "type": "deity", "morphemes": ["en", "ki"], "gloss": "lord + place (earth)", "source": "Ur III administrative texts"}
+{"name": "Ninĝirsu", "type": "deity", "morphemes": ["nin", "ĝirsu"], "gloss": "lady (lord) + Ĝirsu (city)", "source": "Ur III administrative texts"}
+{"name": "Nanše", "type": "deity", "morphemes": ["nanše"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Baba", "type": "deity", "morphemes": ["baba"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ninura", "type": "deity", "morphemes": ["ninura"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ninḫursaĝ", "type": "deity", "morphemes": ["nin", "ḫursaĝ"], "gloss": "lady (lord) + mountain", "source": "Ur III administrative texts"}
+{"name": "Dumuzid", "type": "deity", "morphemes": ["dumu", "zid"], "gloss": "child + true (right)", "source": "Ur III administrative texts"}
+{"name": "Utu", "type": "deity", "morphemes": ["utu"], "gloss": "sun (Utu)", "source": "Ur III administrative texts"}
+{"name": "Gula", "type": "deity", "morphemes": ["gula"], "gloss": "great", "source": "Ur III administrative texts"}
+{"name": "Ninmarki", "type": "deity", "morphemes": ["ninmarki"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ninsumun", "type": "deity", "morphemes": ["nin", "sumun"], "gloss": "lady (lord) + wild cow", "source": "Ur III administrative texts"}
+{"name": "Ninurta", "type": "deity", "morphemes": ["ninurta"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šulpae", "type": "deity", "morphemes": ["šul", "pae"], "gloss": "youth + resplendent", "source": "Ur III administrative texts"}
+{"name": "Ninĝešzida", "type": "deity", "morphemes": ["nin", "ĝeš", "zid"], "gloss": "lady (lord) + tree + true (right)", "source": "Ur III administrative texts"}
+{"name": "Ĝatumdug", "type": "deity", "morphemes": ["ĝatumdug"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Nindara", "type": "deity", "morphemes": ["nindara"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Suen", "type": "deity", "morphemes": ["suen"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Iškur", "type": "deity", "morphemes": ["iškur"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ninšubur", "type": "deity", "morphemes": ["ninšubur"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Nintinuga", "type": "deity", "morphemes": ["nin", "til", "ug"], "gloss": "lady (lord) + live + die (dead)", "source": "Ur III administrative texts"}
+{"name": "Nanaya", "type": "deity", "morphemes": ["nanaya"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Igalim", "type": "deity", "morphemes": ["igalim"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Nuska", "type": "deity", "morphemes": ["nuska"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ninegal", "type": "deity", "morphemes": ["nin", "egal"], "gloss": "lady (lord) + palace", "source": "Ur III administrative texts"}
+{"name": "Ningal", "type": "deity", "morphemes": ["nin", "gal"], "gloss": "lady (lord) + big (great)", "source": "Ur III administrative texts"}
+{"name": "An", "type": "deity", "morphemes": ["an"], "gloss": "heaven (An)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Nergal", "type": "deity", "morphemes": ["nergal"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ĝeštinana", "type": "deity", "morphemes": ["ĝeštin", "an"], "gloss": "vine + heaven (An)", "source": "Ur III administrative texts"}
+{"name": "Nungal", "type": "deity", "morphemes": ["nun", "gal"], "gloss": "prince + big (great)", "source": "Ur III administrative texts"}
+{"name": "Ḫendursaĝ", "type": "deity", "morphemes": ["ḫendursaĝ"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Lugalbanda", "type": "deity", "morphemes": ["lugal", "banda"], "gloss": "king + junior (young)", "source": "Ur III administrative texts"}
+{"name": "Ezina", "type": "deity", "morphemes": ["ezina"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Meslamtaea", "type": "deity", "morphemes": ["meslam", "e"], "gloss": "Meslam (temple) + go out", "source": "Ur III administrative texts"}
+{"name": "Nisaba", "type": "deity", "morphemes": ["nisaba"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ninisina", "type": "deity", "morphemes": ["nin", "isin"], "gloss": "lady (lord) + Isin (city)", "source": "Ur III administrative texts"}
+{"name": "Ninazu", "type": "deity", "morphemes": ["nin", "azu"], "gloss": "lady (lord) + physician", "source": "Ur III administrative texts"}
+{"name": "Ištaran", "type": "deity", "morphemes": ["ištaran"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šulšagana", "type": "deity", "morphemes": ["šul", "šag", "ani"], "gloss": "youth + heart + his/her", "source": "Ur III administrative texts"}
+{"name": "Damgalnun", "type": "deity", "morphemes": ["dam", "gal", "nun"], "gloss": "spouse + big (great) + prince", "source": "Ur III administrative texts"}
+{"name": "Ašgi", "type": "deity", "morphemes": ["ašgi"], "gloss": "name", "source": "Old Akkadian administrative texts"}
+{"name": "Gibil", "type": "deity", "morphemes": ["gibil"], "gloss": "name", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Narua", "type": "deity", "morphemes": ["narua"], "gloss": "stele", "source": "Ur III administrative texts"}
+{"name": "Ningublaga", "type": "deity", "morphemes": ["ningublaga"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Nintur", "type": "deity", "morphemes": ["nin", "tur"], "gloss": "lady (lord) + birth-hut (pen)", "source": "Ur III administrative texts"}
+{"name": "Lugalurub", "type": "deity", "morphemes": ["lugal", "urub"], "gloss": "king + Urub (city)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ḫaya", "type": "deity", "morphemes": ["ḫaya"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Pabilsaĝ", "type": "deity", "morphemes": ["pabilsaĝ"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Lisin", "type": "deity", "morphemes": ["lisin"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šakkan", "type": "deity", "morphemes": ["šakkan"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ninmug", "type": "deity", "morphemes": ["ninmug"], "gloss": "name", "source": "Old Akkadian administrative texts"}
+{"name": "Numušda", "type": "deity", "morphemes": ["numušda"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Uraš", "type": "deity", "morphemes": ["uraš"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Bilgames", "type": "deity", "morphemes": ["bilgames"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Dagan", "type": "deity", "morphemes": ["dagan"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Anuna", "type": "deity", "morphemes": ["a", "nun"], "gloss": "seed (offspring) + prince", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Diĝirmaḫ", "type": "deity", "morphemes": ["diĝir", "maḫ"], "gloss": "god + great (lofty)", "source": "Ur III administrative texts"}
+{"name": "Šuziana", "type": "deity", "morphemes": ["šu", "zid", "an"], "gloss": "hand + true (right) + heaven (An)", "source": "Ur III administrative texts"}
+{"name": "Damu", "type": "deity", "morphemes": ["damu"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Dumuzidabzu", "type": "deity", "morphemes": ["dumu", "zid", "abzu"], "gloss": "child + true (right) + cosmic fresh waters (Abzu)", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Ninšagepada", "type": "deity", "morphemes": ["nin", "šag", "pad"], "gloss": "lady (lord) + heart + choose", "source": "Ur III administrative texts"}
+{"name": "Sud", "type": "deity", "morphemes": ["sud"], "gloss": "name", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Aya", "type": "deity", "morphemes": ["aya"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Lugalemuš", "type": "deity", "morphemes": ["lugal", "emuš"], "gloss": "king + Emuš (temple)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Anzud", "type": "deity", "morphemes": ["anzud"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ninkasi", "type": "deity", "morphemes": ["ninkasi"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Asarluḫi", "type": "deity", "morphemes": ["asarluḫi"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ninmaḫ", "type": "deity", "morphemes": ["nin", "maḫ"], "gloss": "lady (lord) + great (lofty)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Urim", "type": "place", "morphemes": ["urim"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Unug", "type": "place", "morphemes": ["unug"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Lagaš", "type": "place", "morphemes": ["lagaš"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Ĝirsu", "type": "place", "morphemes": ["ĝirsu"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Niĝin", "type": "place", "morphemes": ["niĝin"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Nibru", "type": "place", "morphemes": ["nibru"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Umma", "type": "place", "morphemes": ["umma"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Eridug", "type": "place", "morphemes": ["eridug"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kiš", "type": "place", "morphemes": ["kiš"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Adab", "type": "place", "morphemes": ["adab"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Isin", "type": "place", "morphemes": ["isin"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Larsam", "type": "place", "morphemes": ["larsam"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Šuruppag", "type": "place", "morphemes": ["šuruppag"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Zabalam", "type": "place", "morphemes": ["zabalam"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Akšak", "type": "place", "morphemes": ["akšak"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Keš", "type": "place", "morphemes": ["keš"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Gudua", "type": "place", "morphemes": ["gudua"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Marad", "type": "place", "morphemes": ["marad"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kazallu", "type": "place", "morphemes": ["kazallu"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Agade", "type": "place", "morphemes": ["agade"], "gloss": "name", "source": "Old Akkadian administrative texts"}
+{"name": "Ešnuna", "type": "place", "morphemes": ["ešnuna"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Der", "type": "place", "morphemes": ["der"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šušin", "type": "place", "morphemes": ["šušin"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Anšan", "type": "place", "morphemes": ["anšan"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Awan", "type": "place", "morphemes": ["awan"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Marḫaši", "type": "place", "morphemes": ["marḫaši"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Zabšali", "type": "place", "morphemes": ["zabšali"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Simurrum", "type": "place", "morphemes": ["simurrum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Karḫar", "type": "place", "morphemes": ["karḫar"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Urbilum", "type": "place", "morphemes": ["urbilum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šašrum", "type": "place", "morphemes": ["šašrum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ḫarši", "type": "place", "morphemes": ["ḫarši"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kimaš", "type": "place", "morphemes": ["kimaš"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ḫurti", "type": "place", "morphemes": ["ḫurti"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ḫuḫnuri", "type": "place", "morphemes": ["ḫuḫnuri"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Simanum", "type": "place", "morphemes": ["simanum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Mari", "type": "place", "morphemes": ["mari"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ebla", "type": "place", "morphemes": ["ebla"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Tuttul", "type": "place", "morphemes": ["tuttul"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Urgiš", "type": "place", "morphemes": ["urgiš"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ninua", "type": "place", "morphemes": ["ninua"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Aššur", "type": "place", "morphemes": ["aššur"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Mardaman", "type": "place", "morphemes": ["mardaman"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Nawar", "type": "place", "morphemes": ["nawar"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Talmuš", "type": "place", "morphemes": ["talmuš"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Mukiš", "type": "place", "morphemes": ["mukiš"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Tikitinḫum", "type": "place", "morphemes": ["tikitinḫum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Abarnum", "type": "place", "morphemes": ["abarnum"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ḫabura", "type": "place", "morphemes": ["ḫabura"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kakmi", "type": "place", "morphemes": ["kakmi"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šigrišum", "type": "place", "morphemes": ["šigrišum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Zidanum", "type": "place", "morphemes": ["zidanum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ebal", "type": "place", "morphemes": ["ebal"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Dašil", "type": "place", "morphemes": ["dašil"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Mišime", "type": "place", "morphemes": ["mišime"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Dilmun", "type": "place", "morphemes": ["dilmun"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Magan", "type": "place", "morphemes": ["magan"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Meluḫḫa", "type": "place", "morphemes": ["meluḫḫa"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Aratta", "type": "place", "morphemes": ["aratta"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Gubin", "type": "place", "morphemes": ["gubin"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ursu", "type": "place", "morphemes": ["ursu"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Elam", "type": "place", "morphemes": ["elam"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Kengir", "type": "place", "morphemes": ["kengir"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Kiuri", "type": "place", "morphemes": ["kiuri"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ḫamazi", "type": "place", "morphemes": ["ḫamazi"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Apisal", "type": "place", "morphemes": ["apisal"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Gaeš", "type": "place", "morphemes": ["gaeš"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Tummal", "type": "place", "morphemes": ["tummal"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ambar", "type": "place", "morphemes": ["ambar"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Babilim", "type": "place", "morphemes": ["babilim"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Karkar", "type": "place", "morphemes": ["karkar"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Zaul", "type": "place", "morphemes": ["zaul"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Pus", "type": "place", "morphemes": ["pus"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Zimbir", "type": "place", "morphemes": ["zimbir"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Kiesa", "type": "place", "morphemes": ["kiesa"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Naĝsu", "type": "place", "morphemes": ["naĝsu"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kulaba", "type": "place", "morphemes": ["kulaba"], "gloss": "name", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Irisaĝrig", "type": "place", "morphemes": ["irisaĝrig"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kisura", "type": "place", "morphemes": ["kisura"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Iriaz", "type": "place", "morphemes": ["iriaz"], "gloss": "name", "source": "Old Akkadian administrative texts"}
+{"name": "Babaz", "type": "place", "morphemes": ["babaz"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kismar", "type": "place", "morphemes": ["kismar"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Tutub", "type": "place", "morphemes": ["tutub"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Tiraš", "type": "place", "morphemes": ["tiraš"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Kisiga", "type": "place", "morphemes": ["kisiga"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Badtibira", "type": "place", "morphemes": ["badtibira"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Guaba", "type": "place", "morphemes": ["gu", "ab"], "gloss": "bank (shore) + sea", "source": "Ur III administrative texts"}
+{"name": "Guedena", "type": "place", "morphemes": ["gu", "eden"], "gloss": "bank (shore) + steppe", "source": "Ur III administrative texts"}
+{"name": "Kinunir", "type": "place", "morphemes": ["kinunir"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Sirara", "type": "place", "morphemes": ["sirara"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Urub", "type": "place", "morphemes": ["urub"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Urua", "type": "place", "morphemes": ["urua"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Irikug", "type": "place", "morphemes": ["iri", "kug"], "gloss": "city + pure (silver)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ĝirnun", "type": "place", "morphemes": ["ĝirnun"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Karzida", "type": "place", "morphemes": ["kar", "zid"], "gloss": "quay + true (right)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ḫursaĝkalama", "type": "place", "morphemes": ["ḫursaĝ", "kalam"], "gloss": "mountain + land", "source": "Ur III administrative texts"}
+{"name": "Ereš", "type": "place", "morphemes": ["ereš"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kuara", "type": "place", "morphemes": ["kuara"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Urum", "type": "place", "morphemes": ["urum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Apiak", "type": "place", "morphemes": ["apiak"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Adamšaḫ", "type": "place", "morphemes": ["adamšaḫ"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Bašime", "type": "place", "morphemes": ["bašime"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Sabum", "type": "place", "morphemes": ["sabum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Girĝeš", "type": "place", "morphemes": ["girĝeš"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Maškan", "type": "place", "morphemes": ["maškan"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Garšana", "type": "place", "morphemes": ["garšana"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Girtab", "type": "place", "morphemes": ["girtab"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Emarza", "type": "place", "morphemes": ["emarza"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Zidaḫri", "type": "place", "morphemes": ["zidaḫri"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Maḫili", "type": "place", "morphemes": ["maḫili"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Tiran", "type": "place", "morphemes": ["tiran"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Tablala", "type": "place", "morphemes": ["tablala"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Buli", "type": "place", "morphemes": ["buli"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šuruḫum", "type": "place", "morphemes": ["šuruḫum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šetirša", "type": "place", "morphemes": ["šetirša"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Gumaraši", "type": "place", "morphemes": ["gumaraši"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Egamgam", "type": "place", "morphemes": ["egamgam"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Dabrum", "type": "place", "morphemes": ["dabrum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Balue", "type": "place", "morphemes": ["balue"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Arman", "type": "place", "morphemes": ["arman"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Agar", "type": "place", "morphemes": ["agar"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ḫibilatum", "type": "place", "morphemes": ["ḫibilatum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Abibana", "type": "place", "morphemes": ["abibana"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ugiga", "type": "place", "morphemes": ["ugiga"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Dugru", "type": "place", "morphemes": ["dugru"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Aḫuti", "type": "place", "morphemes": ["aḫuti"], "gloss": "name", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Unken", "type": "place", "morphemes": ["unken"], "gloss": "assembly", "source": "ED IIIa administrative texts (Fara period)"}
+{"name": "Saĝub", "type": "place", "morphemes": ["saĝub"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Gangiri", "type": "place", "morphemes": ["gangiri"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Amargirid", "type": "place", "morphemes": ["amargirid"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Tirkugesi", "type": "place", "morphemes": ["tirkugesi"], "gloss": "name", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Anzagar", "type": "place", "morphemes": ["anzagar"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kian", "type": "place", "morphemes": ["kian"], "gloss": "name", "source": "Old Akkadian administrative texts"}
+{"name": "Arua", "type": "place", "morphemes": ["arua"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Karda", "type": "place", "morphemes": ["karda"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Awal", "type": "place", "morphemes": ["awal"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Simudar", "type": "place", "morphemes": ["simudar"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Kiritab", "type": "place", "morphemes": ["kiritab"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Martu", "type": "group", "morphemes": ["martu"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Tidnum", "type": "group", "morphemes": ["tidnum"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Šimaški", "type": "group", "morphemes": ["šimaški"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Gutium", "type": "group", "morphemes": ["gutium"], "gloss": "name", "source": "Old Akkadian administrative texts"}
+{"name": "Lulubum", "type": "group", "morphemes": ["lulubum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Subir", "type": "group", "morphemes": ["subir"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Iamadium", "type": "group", "morphemes": ["iamadium"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Sutium", "type": "group", "morphemes": ["sutium"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ebiḫ", "type": "hill", "morphemes": ["ebiḫ"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Amanum", "type": "hill", "morphemes": ["amanum"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Umanum", "type": "hill", "morphemes": ["umanum"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Menua", "type": "hill", "morphemes": ["menua"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Basalla", "type": "hill", "morphemes": ["basalla"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Barme", "type": "hill", "morphemes": ["barme"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Uringiriaz", "type": "hill", "morphemes": ["uringiriaz"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Madga", "type": "hill", "morphemes": ["madga"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ḫaḫum", "type": "hill", "morphemes": ["ḫaḫum"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Dukug", "type": "hill", "morphemes": ["du", "kug"], "gloss": "mound + pure (silver)", "source": "Ur III administrative texts"}
+{"name": "Dukugsig", "type": "hill", "morphemes": ["du", "kugsig"], "gloss": "mound + gold", "source": "Ur III administrative texts"}
+{"name": "Dušara", "type": "hill", "morphemes": ["du", "šara"], "gloss": "mound + Šara (god)", "source": "Ur III administrative texts"}
+{"name": "Duĝeši", "type": "hill", "morphemes": ["du", "ĝeši"], "gloss": "mound + sesame", "source": "Ur III administrative texts"}
+{"name": "Duĝi", "type": "hill", "morphemes": ["du", "ĝi"], "gloss": "mound + black (night)", "source": "Ur III administrative texts"}
+{"name": "Dueš", "type": "hill", "morphemes": ["du", "eš"], "gloss": "mound + shrine", "source": "Ur III administrative texts"}
+{"name": "Dukiši", "type": "hill", "morphemes": ["du", "kiši"], "gloss": "mound + thorn plant", "source": "Ur III administrative texts"}
+{"name": "Duana", "type": "hill", "morphemes": ["du", "an"], "gloss": "mound + heaven (An)", "source": "Ur III administrative texts"}
+{"name": "Dušuba", "type": "hill", "morphemes": ["du", "šuba"], "gloss": "mound + šuba stone", "source": "Ur III administrative texts"}
+{"name": "Duninḫursaĝ", "type": "hill", "morphemes": ["du", "ninḫursaĝ"], "gloss": "mound + Ninḫursaĝ (goddess)", "source": "Ur III administrative texts"}
+{"name": "Idigna", "type": "river", "morphemes": ["idigna"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Buranun", "type": "river", "morphemes": ["buranun"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Irnina", "type": "river", "morphemes": ["irnina"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Abgal", "type": "river", "morphemes": ["abgal"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Zubi", "type": "river", "morphemes": ["zubi"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Idnun", "type": "river", "morphemes": ["id", "nun"], "gloss": "canal (river) + prince", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Idgibil", "type": "river", "morphemes": ["id", "gibil"], "gloss": "canal (river) + new", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Lumagindug", "type": "river", "morphemes": ["luma", "gin", "dug"], "gloss": "Lumma (personal name) + like + good", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Asuḫur", "type": "river", "morphemes": ["asuḫur"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Idniĝindua", "type": "river", "morphemes": ["id", "niĝin", "du"], "gloss": "canal (river) + Niĝin (city) + go", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ninĝirsukepada", "type": "river", "morphemes": ["ninĝirsu", "pad"], "gloss": "Ninĝirsu (god) + choose", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Edinmaḫ", "type": "river", "morphemes": ["eden", "maḫ"], "gloss": "steppe + great (lofty)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Nannaguĝal", "type": "river", "morphemes": ["nanna", "gugal"], "gloss": "Nanna (moon god) + canal inspector", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Piriĝgindu", "type": "river", "morphemes": ["piriĝ", "gin", "du"], "gloss": "lion + like + go", "source": "Ur III administrative texts"}
+{"name": "Ninsiana", "type": "celestial", "morphemes": ["ninsiana"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Uzud", "type": "celestial", "morphemes": ["uzud"], "gloss": "she-goat", "source": "Ur III admin. (Drehem, AS 8: siskur₂ mul ud₅)"}
+{"name": "Eninnu", "type": "other", "morphemes": ["e", "ninnu"], "gloss": "house + fifty", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Eana", "type": "other", "morphemes": ["e", "an"], "gloss": "house + heaven (An)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ekur", "type": "other", "morphemes": ["e", "kur"], "gloss": "house + mountain (foreign land)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ebabbar", "type": "other", "morphemes": ["e", "babbar"], "gloss": "house + white", "source": "Ur III administrative texts"}
+{"name": "Ekišnuĝal", "type": "other", "morphemes": ["e", "kišnuĝal"], "gloss": "house + alabaster", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ibgal", "type": "other", "morphemes": ["ib", "gal"], "gloss": "oval + big (great)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Bagara", "type": "other", "morphemes": ["bagara"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Esirara", "type": "other", "morphemes": ["e", "sirara"], "gloss": "house + Sirara (cult centre)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Etemenniguru", "type": "other", "morphemes": ["e", "temen", "ni", "guru"], "gloss": "house + foundation + awe (fear) + bear (carry)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Emaḫ", "type": "other", "morphemes": ["e", "maḫ"], "gloss": "house + great (lofty)", "source": "Old Akkadian administrative texts"}
+{"name": "Abzu", "type": "other", "morphemes": ["abzu"], "gloss": "cosmic fresh waters (Abzu)", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Eabzu", "type": "other", "morphemes": ["e", "abzu"], "gloss": "house + cosmic fresh waters (Abzu)", "source": "Ur III administrative texts"}
+{"name": "Eengura", "type": "other", "morphemes": ["e", "engur"], "gloss": "house + underground waters", "source": "ED IIIb administrative texts (mainly Ĝirsu/Lagaš)"}
+{"name": "Antasura", "type": "other", "morphemes": ["antasura"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Eḫursaĝ", "type": "other", "morphemes": ["e", "ḫursaĝ"], "gloss": "house + mountain", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Egalmaḫ", "type": "other", "morphemes": ["egal", "maḫ"], "gloss": "palace + great (lofty)", "source": "Old Akkadian administrative texts"}
+{"name": "Ezikalama", "type": "other", "morphemes": ["e", "zi", "kalam"], "gloss": "house + life + land", "source": "Ur III administrative texts"}
+{"name": "Esikil", "type": "other", "morphemes": ["e", "sikil"], "gloss": "house + pure (clean)", "source": "Ur III administrative texts"}
+{"name": "Ešagepada", "type": "other", "morphemes": ["e", "šag", "pad"], "gloss": "house + heart + choose", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Eĝidru", "type": "other", "morphemes": ["e", "ĝidru"], "gloss": "house + sceptre", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Eḫuš", "type": "other", "morphemes": ["e", "ḫuš"], "gloss": "house + fierce (red)", "source": "Ur III administrative texts"}
+{"name": "Eigara", "type": "other", "morphemes": ["e", "igara"], "gloss": "house + cream", "source": "Ur III administrative texts"}
+{"name": "Emuš", "type": "other", "morphemes": ["emuš"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Etarsirsir", "type": "other", "morphemes": ["etarsirsir"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Ezemšulgi", "type": "other", "morphemes": ["ezem", "šulgi"], "gloss": "festival + Šulgi (deified king)", "source": "Ur III administrative texts"}
+{"name": "Ezemmaḫ", "type": "other", "morphemes": ["ezem", "maḫ"], "gloss": "festival + great (lofty)", "source": "Ur III administrative texts"}
+{"name": "Akiti", "type": "other", "morphemes": ["akiti"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Ezemana", "type": "other", "morphemes": ["ezem", "an"], "gloss": "festival + heaven (An)", "source": "Ur III administrative texts"}
+{"name": "Ezemninazu", "type": "other", "morphemes": ["ezem", "ninazu"], "gloss": "festival + Ninazu (god)", "source": "Ur III administrative texts"}
+{"name": "Ezemlisina", "type": "other", "morphemes": ["ezem", "lisin"], "gloss": "festival + Lisin (goddess)", "source": "Ur III administrative texts"}
+{"name": "Ezembaba", "type": "other", "morphemes": ["ezem", "baba"], "gloss": "festival + Baba (goddess)", "source": "Ur III administrative texts"}
+{"name": "Ezemdumuzida", "type": "other", "morphemes": ["ezem", "dumuzid"], "gloss": "festival + Dumuzid (god)", "source": "Ur III administrative texts"}
+{"name": "Ezemmunugu", "type": "other", "morphemes": ["ezem", "munu", "gu"], "gloss": "festival + malt + eat", "source": "Ur III administrative texts"}
+{"name": "Ezemšeila", "type": "other", "morphemes": ["ezem", "še", "il"], "gloss": "festival + barley + carry (raise)", "source": "Ur III administrative texts"}
+{"name": "Sigušubaĝar", "type": "other", "morphemes": ["sig", "ušub", "ĝar"], "gloss": "brick + brick mould + place (set)", "source": "Ur III administrative texts"}
+{"name": "Ĝaudura", "type": "other", "morphemes": ["ĝa", "udu", "ur"], "gloss": "house + sheep + shear", "source": "Old Akkadian administrative texts"}
+{"name": "Baragzaĝĝar", "type": "other", "morphemes": ["barag", "zag", "ĝar"], "gloss": "dais (sanctuary) + sanctuary (side) + place (set)", "source": "Ur III administrative texts"}
+{"name": "Šueša", "type": "other", "morphemes": ["šueša"], "gloss": "name", "source": "Ur III administrative texts"}
+{"name": "Šarur", "type": "other", "morphemes": ["šarur"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Šugalam", "type": "other", "morphemes": ["šugalam"], "gloss": "name", "source": "Royal inscriptions, ED–Ur III (RIME)"}
+{"name": "Madaraabzu", "type": "other", "morphemes": ["ma", "daraḫ", "abzu"], "gloss": "boat + ibex + cosmic fresh waters (Abzu)", "source": "Ur III administrative texts"}
+{"name": "Magurmaḫ", "type": "other", "morphemes": ["magur", "maḫ"], "gloss": "barge + great (lofty)", "source": "Ur III administrative texts"}

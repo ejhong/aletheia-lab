@@ -4,7 +4,7 @@
 # "atlas:" names the case in the Aletheia atlas that this topic bears on. The lab links to it and does not judge it.
 title: Deep memory
 summary: The lab's tests of claims about the deep past. Lost travellers, star maps older than history, flood stories as memory, a civilisation before the Ice Age ended, a disputed gospel, an unread script. Each test asks what trace the claim would have left that does not depend on reading a story the right way.
-questions: 31, 41, 85, 92, 44, 82, 88, 84, 143, 15, 12, 13, 32, 7, 86, 45, 83, 91
+questions: 31, 41, 85, 92, 44, 82, 88, 84, 143, 15, 12, 145, 13, 32, 7, 86, 45, 83, 91
 order: 3
 updated: 2026-11-27
 image: ancient-crossings
@@ -89,13 +89,15 @@ Read more: [smelting before the Bronze Age](../../questions/lost-metallurgy/), [
 
 **Linear A.** The script of Minoan Crete has never been read. A 2026 proposal reads it as a Semitic language. The test matched Linear A words to Semitic roots and found them no better than Greek words. But Hebrew words are no better than Greek on that test either, so it cannot decide, and the proposal's author had already said this kind of matching is not evidence. His main evidence was not tested.
 
+**The Indus script.** The seals of the Indus cities have never been read. A 2026 preprint, written with an AI model, reads them as an early relative of Tamil, and rests its choice of language on a contest: Tamil names fit the seal texts and Sanskrit and Akkadian names do not. The contest's numbers reproduce exactly. But when it was given seven languages nobody proposes for the seals, Sumerian and Nahuatl passed too. Sumerian passes for the same reason Tamil does: the commonest sign looks like a jar, and the word for a pot sounds like a word that names often end in. The study's own main test needed a Tamil list built like the others and came out incomplete, because both such lists failed a check that had been set too strictly. Explored afterwards, Tamil passed or failed according to which word for "pot" its translator chose.
+
 **Khipus.** The Incas kept accounts on knotted cords. A search of the 619 that have been measured and published found pairs carrying the same numbers in the same order: copies. Five pairs were not in the literature we could search, and one, split between Paris and Lima, matches over about 174 cords. They are leads for someone who can examine the objects. The first report called them eight discoveries with no chance of error; two had been published in 2005, one was a single khipu catalogued twice, and the search missed a known copy.
 
-Read more: [Secret Mark](../../questions/secret-mark/), [is Linear A cracked?](../../questions/linear-a/) and [the khipu search](../../questions/khipu/).
+Read more: [Secret Mark](../../questions/secret-mark/), [is Linear A cracked?](../../questions/linear-a/), [the Indus script](../../questions/indus-script/) and [the khipu search](../../questions/khipu/).
 
 ## What the studies add up to
 
-Twelve studies so far. Four found no trace where a shared past should have left one: the DNA shows no travellers, the one star clock read so far shows the date of the people known to have set it, and flood stories are no commoner where the Ice Age sea took the most land. Six could not decide, because the tool was not up to the question: the carved pillar at Göbekli Tepe, the smoke, the crops, the walls and Linear A. Two found something: the passages quoted from the Secret Gospel are an unusually close echo of Mark, and some Inca khipus are copies of others, a few of which seem not to have been noticed.
+Thirteen studies so far. Four found no trace where a shared past should have left one: the DNA shows no travellers, the one star clock read so far shows the date of the people known to have set it, and flood stories are no commoner where the Ice Age sea took the most land. Seven could not decide. In six the tool was not up to the question: the carved pillar at Göbekli Tepe, the smoke, the crops, the walls twice and Linear A. In the seventh, the Indus script, the fault was in the study's own check, though it showed along the way that the test it was examining passes Sumerian as readily as Tamil. Two found something: the passages quoted from the Secret Gospel are an unusually close echo of Mark, and some Inca khipus are copies of others, a few of which seem not to have been noticed.
 
 That is not the same as showing the resemblances are coincidence. Every one of these tests has blind spots, set out below and on its own page. None of them touches the stories and images themselves, and the flood test says nothing about stories of particular drowned bays and islands, such as those collected around Australia.
 

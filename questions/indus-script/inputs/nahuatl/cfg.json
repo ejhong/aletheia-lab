@@ -1,0 +1,20 @@
+{
+ "lang": "nahuatl",
+ "names": "names.jsonl",
+ "parts": "parts.jsonl",
+ "words": "words.json",
+ "number_words": {
+  "1": "sē",
+  "2": "ōme",
+  "3": "ēyi",
+  "4": "nāvi",
+  "5": "mākvīlli",
+  "6": "cikvasē",
+  "7": "cikōme",
+  "12": "mahtlāktli omōme"
+ },
+ "punmax": 0.5,
+ "weights": "once",
+ "drop_parts": [],
+ "loan_category": "none"
+}

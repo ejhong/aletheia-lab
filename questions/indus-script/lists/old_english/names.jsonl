@@ -1,0 +1,650 @@
+{"name": "Bēowulf", "type": "person", "morphemes": ["bēowulf"], "gloss": "name", "source": "Beowulf"}
+{"name": "Hrōðgār", "type": "person", "morphemes": ["hrōþ", "gār"], "gloss": "fame + spear", "source": "Beowulf; Widsith"}
+{"name": "Wealhþēow", "type": "person", "morphemes": ["wealh", "þēow"], "gloss": "foreigner + servant", "source": "Beowulf"}
+{"name": "Hygelāc", "type": "person", "morphemes": ["hyge", "lāc"], "gloss": "mind + sport", "source": "Beowulf"}
+{"name": "Hygd", "type": "person", "morphemes": ["hygd"], "gloss": "thought", "source": "Beowulf"}
+{"name": "Ecgþēow", "type": "person", "morphemes": ["ecg", "þēow"], "gloss": "edge + servant", "source": "Beowulf"}
+{"name": "Wīglāf", "type": "person", "morphemes": ["wīg", "lāf"], "gloss": "fight + remnant", "source": "Beowulf; ASC"}
+{"name": "Wēohstān", "type": "person", "morphemes": ["wēoh", "stān"], "gloss": "idol + stone", "source": "Beowulf"}
+{"name": "Unferð", "type": "person", "morphemes": ["unferþ"], "gloss": "name", "source": "Beowulf"}
+{"name": "Ecglāf", "type": "person", "morphemes": ["ecg", "lāf"], "gloss": "edge + remnant", "source": "Beowulf; Maldon"}
+{"name": "Healfdene", "type": "person", "morphemes": ["healf", "dene"], "gloss": "half + Danes", "source": "Beowulf"}
+{"name": "Heorogār", "type": "person", "morphemes": ["heoru", "gār"], "gloss": "sword + spear", "source": "Beowulf"}
+{"name": "Hālga", "type": "person", "morphemes": ["hālig"], "gloss": "holy", "source": "Beowulf"}
+{"name": "Hrōðulf", "type": "person", "morphemes": ["hrōþ", "wulf"], "gloss": "fame + wolf", "source": "Beowulf; Widsith"}
+{"name": "Hrēðrīc", "type": "person", "morphemes": ["hrēþ", "rīc"], "gloss": "glory + ruler", "source": "Beowulf"}
+{"name": "Hrōðmund", "type": "person", "morphemes": ["hrōþ", "mund"], "gloss": "fame + protection", "source": "Beowulf"}
+{"name": "Frēawaru", "type": "person", "morphemes": ["frēa", "waru"], "gloss": "lord + care", "source": "Beowulf"}
+{"name": "Ingeld", "type": "person", "morphemes": ["ingeld"], "gloss": "name", "source": "Beowulf; Widsith"}
+{"name": "Frōda", "type": "person", "morphemes": ["frōd"], "gloss": "wise", "source": "Beowulf"}
+{"name": "Heoroweard", "type": "person", "morphemes": ["heoru", "weard"], "gloss": "sword + guardian", "source": "Beowulf"}
+{"name": "Æschere", "type": "person", "morphemes": ["æsc", "here"], "gloss": "ash + army", "source": "Beowulf"}
+{"name": "Yrmenlāf", "type": "person", "morphemes": ["eormen", "lāf"], "gloss": "immense + remnant", "source": "Beowulf"}
+{"name": "Wulfgār", "type": "person", "morphemes": ["wulf", "gār"], "gloss": "wolf + spear", "source": "Beowulf"}
+{"name": "Heremōd", "type": "person", "morphemes": ["here", "mōd"], "gloss": "army + spirit", "source": "Beowulf; ASC"}
+{"name": "Sigemund", "type": "person", "morphemes": ["sige", "mund"], "gloss": "victory + protection", "source": "Beowulf"}
+{"name": "Wæls", "type": "person", "morphemes": ["wæls"], "gloss": "name", "source": "Beowulf"}
+{"name": "Fitela", "type": "person", "morphemes": ["fitela"], "gloss": "name", "source": "Beowulf"}
+{"name": "Finn", "type": "person", "morphemes": ["finn"], "gloss": "name", "source": "Beowulf; Finnsburh; ASC"}
+{"name": "Hildeburh", "type": "person", "morphemes": ["hild", "burg"], "gloss": "battle + fortress", "source": "Beowulf"}
+{"name": "Hnæf", "type": "person", "morphemes": ["hnæf"], "gloss": "name", "source": "Beowulf; Finnsburh; Widsith"}
+{"name": "Hengest", "type": "person", "morphemes": ["hengest"], "gloss": "stallion", "source": "Beowulf; Finnsburh; ASC"}
+{"name": "Gūðlāf", "type": "person", "morphemes": ["gūþ", "lāf"], "gloss": "war + remnant", "source": "Beowulf; Finnsburh"}
+{"name": "Ōslāf", "type": "person", "morphemes": ["ōs", "lāf"], "gloss": "god + remnant", "source": "Beowulf"}
+{"name": "Folcwalda", "type": "person", "morphemes": ["folc", "wealda"], "gloss": "folk + ruler", "source": "Beowulf"}
+{"name": "Hǣreð", "type": "person", "morphemes": ["hǣreþ"], "gloss": "name", "source": "Beowulf"}
+{"name": "Hrēðel", "type": "person", "morphemes": ["hrēþel"], "gloss": "name", "source": "Beowulf"}
+{"name": "Herebeald", "type": "person", "morphemes": ["here", "beald"], "gloss": "army + bold", "source": "Beowulf; Bede"}
+{"name": "Hæðcyn", "type": "person", "morphemes": ["hæþcyn"], "gloss": "name", "source": "Beowulf"}
+{"name": "Heardrēd", "type": "person", "morphemes": ["heard", "rǣd"], "gloss": "hard + counsel", "source": "Beowulf"}
+{"name": "Ongenþēow", "type": "person", "morphemes": ["ongen", "þēow"], "gloss": "name + servant", "source": "Beowulf; Widsith"}
+{"name": "Ōhthere", "type": "person", "morphemes": ["ōht", "here"], "gloss": "terror + army", "source": "Beowulf; OE Orosius"}
+{"name": "Onela", "type": "person", "morphemes": ["onela"], "gloss": "name", "source": "Beowulf"}
+{"name": "Ēadgils", "type": "person", "morphemes": ["ēad", "gīsl"], "gloss": "prosperity + hostage", "source": "Beowulf; Widsith"}
+{"name": "Ēanmund", "type": "person", "morphemes": ["ēan", "mund"], "gloss": "name + protection", "source": "Beowulf"}
+{"name": "Wonrēd", "type": "person", "morphemes": ["wann", "rǣd"], "gloss": "dark + counsel", "source": "Beowulf"}
+{"name": "Wulf", "type": "person", "morphemes": ["wulf"], "gloss": "wolf", "source": "Beowulf; Wulf and Eadwacer"}
+{"name": "Eofor", "type": "person", "morphemes": ["eofor"], "gloss": "boar", "source": "Beowulf"}
+{"name": "Wēland", "type": "person", "morphemes": ["wēland"], "gloss": "name", "source": "Beowulf; Deor; Waldere"}
+{"name": "Hāma", "type": "person", "morphemes": ["hāma"], "gloss": "name", "source": "Beowulf; Widsith"}
+{"name": "Eormenrīc", "type": "person", "morphemes": ["eormen", "rīc"], "gloss": "immense + ruler", "source": "Beowulf; Widsith; Deor; Bede"}
+{"name": "Offa", "type": "person", "morphemes": ["offa"], "gloss": "name", "source": "Beowulf; Widsith; ASC"}
+{"name": "Ēomǣr", "type": "person", "morphemes": ["ēoh", "mǣr"], "gloss": "horse + famous", "source": "ASC; Bede"}
+{"name": "Gārmund", "type": "person", "morphemes": ["gār", "mund"], "gloss": "spear + protection", "source": "Beowulf"}
+{"name": "Dæghrefn", "type": "person", "morphemes": ["dæg", "hræfn"], "gloss": "day + raven", "source": "Beowulf"}
+{"name": "Breca", "type": "person", "morphemes": ["breca"], "gloss": "name", "source": "Beowulf; Widsith"}
+{"name": "Bēanstān", "type": "person", "morphemes": ["bēan", "stān"], "gloss": "bean + stone", "source": "Beowulf"}
+{"name": "Hereric", "type": "person", "morphemes": ["here", "rīc"], "gloss": "army + ruler", "source": "Beowulf; Bede"}
+{"name": "Hondsciō", "type": "person", "morphemes": ["hand", "scōh"], "gloss": "hand + shoe", "source": "Beowulf"}
+{"name": "Ælfhere", "type": "person", "morphemes": ["ælf", "here"], "gloss": "elf + army", "source": "Beowulf; Waldere; ASC"}
+{"name": "Heaþolāf", "type": "person", "morphemes": ["heaþu", "lāf"], "gloss": "strife + remnant", "source": "Beowulf"}
+{"name": "Sigeferð", "type": "person", "morphemes": ["sige", "friþ"], "gloss": "victory + peace", "source": "Finnsburh"}
+{"name": "Ordlāf", "type": "person", "morphemes": ["ord", "lāf"], "gloss": "point + remnant", "source": "Finnsburh"}
+{"name": "Gārulf", "type": "person", "morphemes": ["gār", "wulf"], "gloss": "spear + wolf", "source": "Finnsburh"}
+{"name": "Gūðhere", "type": "person", "morphemes": ["gūþ", "here"], "gloss": "war + army", "source": "Widsith; Waldere; Finnsburh"}
+{"name": "Waldere", "type": "person", "morphemes": ["weald", "here"], "gloss": "power + army", "source": "Waldere"}
+{"name": "Nīðhād", "type": "person", "morphemes": ["nīþ", "hād"], "gloss": "enmity + rank", "source": "Deor; Waldere"}
+{"name": "Dēor", "type": "person", "morphemes": ["dēor"], "gloss": "animal", "source": "Deor"}
+{"name": "Beadohild", "type": "person", "morphemes": ["beadu", "hild"], "gloss": "combat + battle", "source": "Deor"}
+{"name": "Mǣðhild", "type": "person", "morphemes": ["mǣþ", "hild"], "gloss": "honour + battle", "source": "Deor"}
+{"name": "Heorrenda", "type": "person", "morphemes": ["heorrenda"], "gloss": "name", "source": "Deor"}
+{"name": "Ēadwacer", "type": "person", "morphemes": ["ēad", "wacor"], "gloss": "prosperity + watchful", "source": "Wulf and Eadwacer"}
+{"name": "Wīdsīð", "type": "person", "morphemes": ["wīd", "sīþ"], "gloss": "wide + journey", "source": "Widsith"}
+{"name": "Ealhhild", "type": "person", "morphemes": ["ealh", "hild"], "gloss": "temple + battle", "source": "Widsith"}
+{"name": "Ætla", "type": "person", "morphemes": ["ætla"], "gloss": "name", "source": "Widsith; Waldere; Bede"}
+{"name": "Cāsere", "type": "person", "morphemes": ["cāsere"], "gloss": "emperor", "source": "Widsith"}
+{"name": "Hagena", "type": "person", "morphemes": ["hagena"], "gloss": "name", "source": "Widsith; Waldere"}
+{"name": "Witta", "type": "person", "morphemes": ["witta"], "gloss": "name", "source": "Widsith; Bede; ASC"}
+{"name": "Wada", "type": "person", "morphemes": ["wada"], "gloss": "name", "source": "Widsith"}
+{"name": "Þēodrīc", "type": "person", "morphemes": ["þēod", "rīc"], "gloss": "nation + ruler", "source": "Widsith; Deor; Waldere"}
+{"name": "Ōswine", "type": "person", "morphemes": ["ōs", "wine"], "gloss": "god + friend", "source": "Widsith; Bede"}
+{"name": "Sigehere", "type": "person", "morphemes": ["sige", "here"], "gloss": "victory + army", "source": "Widsith; Bede"}
+{"name": "Wald", "type": "person", "morphemes": ["weald"], "gloss": "power", "source": "Widsith"}
+{"name": "Sǣferð", "type": "person", "morphemes": ["sǣ", "friþ"], "gloss": "sea + peace", "source": "Widsith"}
+{"name": "Sceafthere", "type": "person", "morphemes": ["sceaft", "here"], "gloss": "shaft + army", "source": "Widsith"}
+{"name": "Holen", "type": "person", "morphemes": ["holen"], "gloss": "holly", "source": "Widsith"}
+{"name": "Hringweald", "type": "person", "morphemes": ["hring", "weald"], "gloss": "ring + power", "source": "Widsith"}
+{"name": "Ælfwine", "type": "person", "morphemes": ["ælf", "wine"], "gloss": "elf + friend", "source": "Widsith; Bede; Maldon"}
+{"name": "Ēadwine", "type": "person", "morphemes": ["ēad", "wine"], "gloss": "prosperity + friend", "source": "Widsith; Bede; ASC"}
+{"name": "Heaþorīc", "type": "person", "morphemes": ["heaþu", "rīc"], "gloss": "strife + ruler", "source": "Widsith"}
+{"name": "Ægelmund", "type": "person", "morphemes": ["ægel", "mund"], "gloss": "name + protection", "source": "Widsith"}
+{"name": "Hungār", "type": "person", "morphemes": ["hūn", "gār"], "gloss": "name + spear", "source": "Widsith"}
+{"name": "Wulfhere", "type": "person", "morphemes": ["wulf", "here"], "gloss": "wolf + army", "source": "Widsith; Bede; ASC"}
+{"name": "Wyrmhere", "type": "person", "morphemes": ["wyrm", "here"], "gloss": "serpent + army", "source": "Widsith"}
+{"name": "Rǣdhere", "type": "person", "morphemes": ["rǣd", "here"], "gloss": "counsel + army", "source": "Widsith"}
+{"name": "Rondhere", "type": "person", "morphemes": ["rand", "here"], "gloss": "shield-boss + army", "source": "Widsith"}
+{"name": "Gīslhere", "type": "person", "morphemes": ["gīsl", "here"], "gloss": "hostage + army", "source": "Widsith"}
+{"name": "Freoþerīc", "type": "person", "morphemes": ["frēoþu", "rīc"], "gloss": "safety + ruler", "source": "Widsith"}
+{"name": "Wudga", "type": "person", "morphemes": ["wudga"], "gloss": "name", "source": "Widsith"}
+{"name": "Cynewulf", "type": "person", "morphemes": ["cyne", "wulf"], "gloss": "royal + wolf", "source": "Cynewulf's signed poems; ASC"}
+{"name": "Cǣdmon", "type": "person", "morphemes": ["cǣdmon"], "gloss": "name", "source": "Bede"}
+{"name": "Byrhtnōð", "type": "person", "morphemes": ["beorht", "nōþ"], "gloss": "bright + boldness", "source": "Maldon; ASC"}
+{"name": "Ælfrīc", "type": "person", "morphemes": ["ælf", "rīc"], "gloss": "elf + ruler", "source": "Maldon; ASC; Ælfric"}
+{"name": "Wulfmǣr", "type": "person", "morphemes": ["wulf", "mǣr"], "gloss": "wolf + famous", "source": "Maldon"}
+{"name": "Ēadweard", "type": "person", "morphemes": ["ēad", "weard"], "gloss": "prosperity + guardian", "source": "Maldon; ASC"}
+{"name": "Ēadrīc", "type": "person", "morphemes": ["ēad", "rīc"], "gloss": "prosperity + ruler", "source": "Maldon; ASC"}
+{"name": "Wulfstān", "type": "person", "morphemes": ["wulf", "stān"], "gloss": "wolf + stone", "source": "Maldon; ASC"}
+{"name": "Godrīc", "type": "person", "morphemes": ["god", "rīc"], "gloss": "God + ruler", "source": "Maldon"}
+{"name": "Godwine", "type": "person", "morphemes": ["god", "wine"], "gloss": "God + friend", "source": "Maldon; ASC"}
+{"name": "Odda", "type": "person", "morphemes": ["odda"], "gloss": "name", "source": "Maldon"}
+{"name": "Lēofsunu", "type": "person", "morphemes": ["lēof", "sunu"], "gloss": "dear + son", "source": "Maldon"}
+{"name": "Dunnere", "type": "person", "morphemes": ["dunn", "here"], "gloss": "dun + army", "source": "Maldon"}
+{"name": "Æscferð", "type": "person", "morphemes": ["æsc", "friþ"], "gloss": "ash + peace", "source": "Maldon"}
+{"name": "Wīstān", "type": "person", "morphemes": ["wīg", "stān"], "gloss": "fight + stone", "source": "Maldon"}
+{"name": "Ōswald", "type": "person", "morphemes": ["ōs", "weald"], "gloss": "god + power", "source": "Bede; ASC; Maldon"}
+{"name": "Byrhtwold", "type": "person", "morphemes": ["beorht", "weald"], "gloss": "bright + power", "source": "Maldon"}
+{"name": "Æþelgār", "type": "person", "morphemes": ["æþel", "gār"], "gloss": "noble + spear", "source": "Maldon; ASC"}
+{"name": "Sigeberht", "type": "person", "morphemes": ["sige", "beorht"], "gloss": "victory + bright", "source": "Bede; ASC; Maldon"}
+{"name": "Byrhthelm", "type": "person", "morphemes": ["beorht", "helm"], "gloss": "bright + helmet", "source": "Maldon; ASC"}
+{"name": "Ælfgār", "type": "person", "morphemes": ["ælf", "gār"], "gloss": "elf + spear", "source": "ASC"}
+{"name": "Horsa", "type": "person", "morphemes": ["hors"], "gloss": "horse", "source": "Bede; ASC"}
+{"name": "Æsc", "type": "person", "morphemes": ["æsc"], "gloss": "ash", "source": "ASC"}
+{"name": "Æþelberht", "type": "person", "morphemes": ["æþel", "beorht"], "gloss": "noble + bright", "source": "Bede; ASC"}
+{"name": "Ēadbald", "type": "person", "morphemes": ["ēad", "beald"], "gloss": "prosperity + bold", "source": "Bede; ASC"}
+{"name": "Eorcenberht", "type": "person", "morphemes": ["eorcen", "beorht"], "gloss": "precious + bright", "source": "Bede; ASC"}
+{"name": "Ecgberht", "type": "person", "morphemes": ["ecg", "beorht"], "gloss": "edge + bright", "source": "Bede; ASC"}
+{"name": "Hlōþhere", "type": "person", "morphemes": ["hlōþ", "here"], "gloss": "troop + army", "source": "Bede; ASC"}
+{"name": "Wihtrēd", "type": "person", "morphemes": ["wiht", "rǣd"], "gloss": "being + counsel", "source": "Bede; ASC"}
+{"name": "Ēadberht", "type": "person", "morphemes": ["ēad", "beorht"], "gloss": "prosperity + bright", "source": "Bede; ASC"}
+{"name": "Ealhmund", "type": "person", "morphemes": ["ealh", "mund"], "gloss": "temple + protection", "source": "ASC"}
+{"name": "Cūþrēd", "type": "person", "morphemes": ["cūþ", "rǣd"], "gloss": "known + counsel", "source": "ASC"}
+{"name": "Bealdrēd", "type": "person", "morphemes": ["beald", "rǣd"], "gloss": "bold + counsel", "source": "ASC"}
+{"name": "Æþelburh", "type": "person", "morphemes": ["æþel", "burg"], "gloss": "noble + fortress", "source": "Bede; ASC"}
+{"name": "Ēanswīþ", "type": "person", "morphemes": ["ēan", "swīþ"], "gloss": "name + strong", "source": "Kentish royal legend"}
+{"name": "Seaxburh", "type": "person", "morphemes": ["seax", "burg"], "gloss": "knife + fortress", "source": "Bede; ASC"}
+{"name": "Eormenhild", "type": "person", "morphemes": ["eormen", "hild"], "gloss": "immense + battle", "source": "Kentish royal legend"}
+{"name": "Eormenburg", "type": "person", "morphemes": ["eormen", "burg"], "gloss": "immense + fortress", "source": "Bede; Kentish royal legend"}
+{"name": "Mildþrȳð", "type": "person", "morphemes": ["mild", "þrȳþ"], "gloss": "mild + strength", "source": "Kentish royal legend"}
+{"name": "Mildburh", "type": "person", "morphemes": ["mild", "burg"], "gloss": "mild + fortress", "source": "Kentish royal legend"}
+{"name": "Mildgȳð", "type": "person", "morphemes": ["mild", "gūþ"], "gloss": "mild + war", "source": "Kentish royal legend"}
+{"name": "Eorcengota", "type": "person", "morphemes": ["eorcen", "gotan"], "gloss": "precious + Goths", "source": "Bede"}
+{"name": "Ēanflǣd", "type": "person", "morphemes": ["ēan", "flǣd"], "gloss": "name + beauty", "source": "Bede; ASC"}
+{"name": "Wihtgils", "type": "person", "morphemes": ["wiht", "gīsl"], "gloss": "being + hostage", "source": "Bede; ASC"}
+{"name": "Cerdic", "type": "person", "morphemes": ["cerdic"], "gloss": "name", "source": "ASC"}
+{"name": "Cynrīc", "type": "person", "morphemes": ["cyne", "rīc"], "gloss": "royal + ruler", "source": "ASC"}
+{"name": "Ceawlin", "type": "person", "morphemes": ["ceawlin"], "gloss": "name", "source": "ASC; Bede"}
+{"name": "Cūþa", "type": "person", "morphemes": ["cūþ"], "gloss": "known", "source": "ASC"}
+{"name": "Cūþwulf", "type": "person", "morphemes": ["cūþ", "wulf"], "gloss": "known + wolf", "source": "ASC"}
+{"name": "Cūþwine", "type": "person", "morphemes": ["cūþ", "wine"], "gloss": "known + friend", "source": "ASC"}
+{"name": "Cēolwulf", "type": "person", "morphemes": ["cēol", "wulf"], "gloss": "ship + wolf", "source": "Bede; ASC"}
+{"name": "Cynegils", "type": "person", "morphemes": ["cyne", "gīsl"], "gloss": "royal + hostage", "source": "Bede; ASC"}
+{"name": "Cwichelm", "type": "person", "morphemes": ["cwic", "helm"], "gloss": "living + helmet", "source": "Bede; ASC"}
+{"name": "Cēnwealh", "type": "person", "morphemes": ["cēne", "wealh"], "gloss": "keen + foreigner", "source": "Bede; ASC"}
+{"name": "Cēnwulf", "type": "person", "morphemes": ["cēne", "wulf"], "gloss": "keen + wolf", "source": "ASC"}
+{"name": "Cēnrēd", "type": "person", "morphemes": ["cēne", "rǣd"], "gloss": "keen + counsel", "source": "Bede; ASC"}
+{"name": "Æscwine", "type": "person", "morphemes": ["æsc", "wine"], "gloss": "ash + friend", "source": "ASC"}
+{"name": "Cǣdwealla", "type": "person", "morphemes": ["cǣdwealla"], "gloss": "name", "source": "Bede; ASC"}
+{"name": "Ine", "type": "person", "morphemes": ["ine"], "gloss": "name", "source": "Bede; ASC"}
+{"name": "Æþelheard", "type": "person", "morphemes": ["æþel", "heard"], "gloss": "noble + hard", "source": "ASC"}
+{"name": "Æþelbald", "type": "person", "morphemes": ["æþel", "beald"], "gloss": "noble + bold", "source": "Bede; ASC"}
+{"name": "Cyneheard", "type": "person", "morphemes": ["cyne", "heard"], "gloss": "royal + hard", "source": "ASC"}
+{"name": "Beorhtrīc", "type": "person", "morphemes": ["beorht", "rīc"], "gloss": "bright + ruler", "source": "ASC"}
+{"name": "Ēadburh", "type": "person", "morphemes": ["ēad", "burg"], "gloss": "prosperity + fortress", "source": "ASC"}
+{"name": "Æþelwulf", "type": "person", "morphemes": ["æþel", "wulf"], "gloss": "noble + wolf", "source": "ASC"}
+{"name": "Æþelrēd", "type": "person", "morphemes": ["æþel", "rǣd"], "gloss": "noble + counsel", "source": "ASC"}
+{"name": "Ælfrēd", "type": "person", "morphemes": ["ælf", "rǣd"], "gloss": "elf + counsel", "source": "ASC"}
+{"name": "Ealhswīð", "type": "person", "morphemes": ["ealh", "swīþ"], "gloss": "temple + strong", "source": "ASC"}
+{"name": "Æþelweard", "type": "person", "morphemes": ["æþel", "weard"], "gloss": "noble + guardian", "source": "ASC"}
+{"name": "Æþelflǣd", "type": "person", "morphemes": ["æþel", "flǣd"], "gloss": "noble + beauty", "source": "ASC"}
+{"name": "Æþelgifu", "type": "person", "morphemes": ["æþel", "gifu"], "gloss": "noble + gift", "source": "Charters"}
+{"name": "Ælfþrȳð", "type": "person", "morphemes": ["ælf", "þrȳþ"], "gloss": "elf + strength", "source": "ASC"}
+{"name": "Æþelstān", "type": "person", "morphemes": ["æþel", "stān"], "gloss": "noble + stone", "source": "ASC; Brunanburh"}
+{"name": "Ēadmund", "type": "person", "morphemes": ["ēad", "mund"], "gloss": "prosperity + protection", "source": "ASC; Brunanburh"}
+{"name": "Ēadrēd", "type": "person", "morphemes": ["ēad", "rǣd"], "gloss": "prosperity + counsel", "source": "ASC"}
+{"name": "Ēadwig", "type": "person", "morphemes": ["ēad", "wīg"], "gloss": "prosperity + fight", "source": "ASC"}
+{"name": "Ēadgār", "type": "person", "morphemes": ["ēad", "gār"], "gloss": "prosperity + spear", "source": "ASC"}
+{"name": "Ēadgifu", "type": "person", "morphemes": ["ēad", "gifu"], "gloss": "prosperity + gift", "source": "Charters"}
+{"name": "Ælfgifu", "type": "person", "morphemes": ["ælf", "gifu"], "gloss": "elf + gift", "source": "ASC"}
+{"name": "Ēadgȳð", "type": "person", "morphemes": ["ēad", "gūþ"], "gloss": "prosperity + war", "source": "ASC"}
+{"name": "Æþelwald", "type": "person", "morphemes": ["æþel", "weald"], "gloss": "noble + power", "source": "Bede; ASC"}
+{"name": "Ælfhēah", "type": "person", "morphemes": ["ælf", "hēah"], "gloss": "elf + high", "source": "ASC"}
+{"name": "Dūnstān", "type": "person", "morphemes": ["dūn", "stān"], "gloss": "hill + stone", "source": "ASC"}
+{"name": "Ealdhelm", "type": "person", "morphemes": ["eald", "helm"], "gloss": "old + helmet", "source": "Bede; ASC"}
+{"name": "Swīþhūn", "type": "person", "morphemes": ["swīþ", "hūn"], "gloss": "strong + name", "source": "Ælfric"}
+{"name": "Ealhstān", "type": "person", "morphemes": ["ealh", "stān"], "gloss": "temple + stone", "source": "ASC"}
+{"name": "Wǣrferð", "type": "person", "morphemes": ["wǣr", "friþ"], "gloss": "pledge + peace", "source": "Pastoral Care preface"}
+{"name": "Plegmund", "type": "person", "morphemes": ["plega", "mund"], "gloss": "play + protection", "source": "ASC"}
+{"name": "Wulfhelm", "type": "person", "morphemes": ["wulf", "helm"], "gloss": "wolf + helmet", "source": "ASC"}
+{"name": "Ælfsige", "type": "person", "morphemes": ["ælf", "sige"], "gloss": "elf + victory", "source": "ASC"}
+{"name": "Sigerīc", "type": "person", "morphemes": ["sige", "rīc"], "gloss": "victory + ruler", "source": "ASC"}
+{"name": "Æþelnōð", "type": "person", "morphemes": ["æþel", "nōþ"], "gloss": "noble + boldness", "source": "ASC"}
+{"name": "Ēadsige", "type": "person", "morphemes": ["ēad", "sige"], "gloss": "prosperity + victory", "source": "ASC"}
+{"name": "Ēadwulf", "type": "person", "morphemes": ["ēad", "wulf"], "gloss": "prosperity + wolf", "source": "ASC"}
+{"name": "Lēofrīc", "type": "person", "morphemes": ["lēof", "rīc"], "gloss": "dear + ruler", "source": "ASC"}
+{"name": "Godgifu", "type": "person", "morphemes": ["god", "gifu"], "gloss": "God + gift", "source": "Charters"}
+{"name": "Wulfrūn", "type": "person", "morphemes": ["wulf", "rūn"], "gloss": "wolf + secret", "source": "ASC"}
+{"name": "Byrhtferð", "type": "person", "morphemes": ["beorht", "friþ"], "gloss": "bright + peace", "source": "Byrhtferth's Enchiridion"}
+{"name": "Wulfheard", "type": "person", "morphemes": ["wulf", "heard"], "gloss": "wolf + hard", "source": "ASC"}
+{"name": "Ealhhere", "type": "person", "morphemes": ["ealh", "here"], "gloss": "temple + army", "source": "ASC"}
+{"name": "Ceorl", "type": "person", "morphemes": ["ceorl"], "gloss": "freeman", "source": "ASC"}
+{"name": "Ēanwulf", "type": "person", "morphemes": ["ēan", "wulf"], "gloss": "name + wolf", "source": "ASC"}
+{"name": "Ælfweard", "type": "person", "morphemes": ["ælf", "weard"], "gloss": "elf + guardian", "source": "ASC"}
+{"name": "Ordgār", "type": "person", "morphemes": ["ord", "gār"], "gloss": "point + spear", "source": "ASC"}
+{"name": "Ælfstān", "type": "person", "morphemes": ["ælf", "stān"], "gloss": "elf + stone", "source": "ASC"}
+{"name": "Wulfrīc", "type": "person", "morphemes": ["wulf", "rīc"], "gloss": "wolf + ruler", "source": "Charters"}
+{"name": "Æþelwine", "type": "person", "morphemes": ["æþel", "wine"], "gloss": "noble + friend", "source": "Bede; ASC"}
+{"name": "Ealdgȳð", "type": "person", "morphemes": ["eald", "gūþ"], "gloss": "old + war", "source": "ASC"}
+{"name": "Lēofwine", "type": "person", "morphemes": ["lēof", "wine"], "gloss": "dear + friend", "source": "ASC"}
+{"name": "Wulfnōð", "type": "person", "morphemes": ["wulf", "nōþ"], "gloss": "wolf + boldness", "source": "ASC"}
+{"name": "Ūhtrēd", "type": "person", "morphemes": ["ūht", "rǣd"], "gloss": "dawn + counsel", "source": "ASC"}
+{"name": "Ælfhelm", "type": "person", "morphemes": ["ælf", "helm"], "gloss": "elf + helmet", "source": "ASC"}
+{"name": "Wulfwaru", "type": "person", "morphemes": ["wulf", "waru"], "gloss": "wolf + care", "source": "Charters"}
+{"name": "Wynflǣd", "type": "person", "morphemes": ["wynn", "flǣd"], "gloss": "joy + beauty", "source": "Charters"}
+{"name": "Port", "type": "person", "morphemes": ["port"], "gloss": "harbour", "source": "ASC"}
+{"name": "Wihtgār", "type": "person", "morphemes": ["wiht", "gār"], "gloss": "being + spear", "source": "ASC"}
+{"name": "Wipped", "type": "person", "morphemes": ["wipped"], "gloss": "name", "source": "ASC"}
+{"name": "Wīg", "type": "person", "morphemes": ["wīg"], "gloss": "fight", "source": "ASC"}
+{"name": "Frēawine", "type": "person", "morphemes": ["frēa", "wine"], "gloss": "lord + friend", "source": "ASC"}
+{"name": "Frēoþogār", "type": "person", "morphemes": ["frēoþu", "gār"], "gloss": "safety + spear", "source": "ASC"}
+{"name": "Friþuwald", "type": "person", "morphemes": ["friþ", "weald"], "gloss": "peace + power", "source": "ASC"}
+{"name": "Friþuwulf", "type": "person", "morphemes": ["friþ", "wulf"], "gloss": "peace + wolf", "source": "ASC"}
+{"name": "Godwulf", "type": "person", "morphemes": ["god", "wulf"], "gloss": "God + wolf", "source": "ASC"}
+{"name": "Scēaf", "type": "person", "morphemes": ["scēaf"], "gloss": "sheaf", "source": "ASC"}
+{"name": "Wilgils", "type": "person", "morphemes": ["wil", "gīsl"], "gloss": "desire + hostage", "source": "ASC"}
+{"name": "Westerfalca", "type": "person", "morphemes": ["wester", "falca"], "gloss": "west + falcon", "source": "ASC"}
+{"name": "Sǣfugl", "type": "person", "morphemes": ["sǣ", "fugol"], "gloss": "sea + bird", "source": "ASC"}
+{"name": "Sǣbald", "type": "person", "morphemes": ["sǣ", "beald"], "gloss": "sea + bold", "source": "ASC"}
+{"name": "Sigegēat", "type": "person", "morphemes": ["sige", "gēat"], "gloss": "victory + Geat", "source": "ASC"}
+{"name": "Swæfdæg", "type": "person", "morphemes": ["swǣfe", "dæg"], "gloss": "Swabians + day", "source": "ASC"}
+{"name": "Sigegār", "type": "person", "morphemes": ["sige", "gār"], "gloss": "victory + spear", "source": "ASC"}
+{"name": "Wægdæg", "type": "person", "morphemes": ["wǣg", "dæg"], "gloss": "wave + day", "source": "ASC"}
+{"name": "Wilhelm", "type": "person", "morphemes": ["wil", "helm"], "gloss": "desire + helmet", "source": "Anglian genealogies"}
+{"name": "Ōsmōd", "type": "person", "morphemes": ["ōs", "mōd"], "gloss": "god + spirit", "source": "ASC"}
+{"name": "Þingfrið", "type": "person", "morphemes": ["þing", "friþ"], "gloss": "assembly + peace", "source": "ASC"}
+{"name": "Cynewald", "type": "person", "morphemes": ["cyne", "weald"], "gloss": "royal + power", "source": "ASC"}
+{"name": "Icel", "type": "person", "morphemes": ["icel"], "gloss": "name", "source": "ASC"}
+{"name": "Angelþēow", "type": "person", "morphemes": ["angel", "þēow"], "gloss": "Angeln + servant", "source": "ASC"}
+{"name": "Wǣrmund", "type": "person", "morphemes": ["wǣr", "mund"], "gloss": "pledge + protection", "source": "ASC"}
+{"name": "Crēoda", "type": "person", "morphemes": ["crēoda"], "gloss": "name", "source": "ASC"}
+{"name": "Pybba", "type": "person", "morphemes": ["pybba"], "gloss": "name", "source": "ASC"}
+{"name": "Ida", "type": "person", "morphemes": ["ida"], "gloss": "name", "source": "ASC; Bede"}
+{"name": "Ælle", "type": "person", "morphemes": ["ælle"], "gloss": "name", "source": "ASC; Bede"}
+{"name": "Æþelfrið", "type": "person", "morphemes": ["æþel", "friþ"], "gloss": "noble + peace", "source": "Bede; ASC"}
+{"name": "Ēanfrið", "type": "person", "morphemes": ["ēan", "friþ"], "gloss": "name + peace", "source": "Bede"}
+{"name": "Ōsrīc", "type": "person", "morphemes": ["ōs", "rīc"], "gloss": "god + ruler", "source": "Bede; ASC"}
+{"name": "Ōswīu", "type": "person", "morphemes": ["ōs", "wīg"], "gloss": "god + fight", "source": "Bede; ASC"}
+{"name": "Ecgfrið", "type": "person", "morphemes": ["ecg", "friþ"], "gloss": "edge + peace", "source": "Bede; ASC"}
+{"name": "Ealdfrið", "type": "person", "morphemes": ["eald", "friþ"], "gloss": "old + peace", "source": "Bede; ASC"}
+{"name": "Ealhfrið", "type": "person", "morphemes": ["ealh", "friþ"], "gloss": "temple + peace", "source": "Bede"}
+{"name": "Ōsrēd", "type": "person", "morphemes": ["ōs", "rǣd"], "gloss": "god + counsel", "source": "Bede; ASC"}
+{"name": "Ōswulf", "type": "person", "morphemes": ["ōs", "wulf"], "gloss": "god + wolf", "source": "ASC"}
+{"name": "Ealhrēd", "type": "person", "morphemes": ["ealh", "rǣd"], "gloss": "temple + counsel", "source": "ASC"}
+{"name": "Ælfwald", "type": "person", "morphemes": ["ælf", "weald"], "gloss": "elf + power", "source": "ASC"}
+{"name": "Eardwulf", "type": "person", "morphemes": ["eard", "wulf"], "gloss": "homeland + wolf", "source": "ASC"}
+{"name": "Ōsberht", "type": "person", "morphemes": ["ōs", "beorht"], "gloss": "god + bright", "source": "ASC"}
+{"name": "Ælfflǣd", "type": "person", "morphemes": ["ælf", "flǣd"], "gloss": "elf + beauty", "source": "Bede"}
+{"name": "Hild", "type": "person", "morphemes": ["hild"], "gloss": "battle", "source": "Bede; ASC"}
+{"name": "Hereswīþ", "type": "person", "morphemes": ["here", "swīþ"], "gloss": "army + strong", "source": "Bede"}
+{"name": "Bregoswīþ", "type": "person", "morphemes": ["bregu", "swīþ"], "gloss": "prince + strong", "source": "Bede"}
+{"name": "Æþelþrȳð", "type": "person", "morphemes": ["æþel", "þrȳþ"], "gloss": "noble + strength", "source": "Bede; ASC"}
+{"name": "Cūþburh", "type": "person", "morphemes": ["cūþ", "burg"], "gloss": "known + fortress", "source": "ASC"}
+{"name": "Cwēnburh", "type": "person", "morphemes": ["cwēn", "burg"], "gloss": "queen + fortress", "source": "Bede; ASC"}
+{"name": "Cūþberht", "type": "person", "morphemes": ["cūþ", "beorht"], "gloss": "known + bright", "source": "Bede; ASC"}
+{"name": "Bēda", "type": "person", "morphemes": ["bēda"], "gloss": "name", "source": "Bede; ASC"}
+{"name": "Wilfrið", "type": "person", "morphemes": ["wil", "friþ"], "gloss": "desire + peace", "source": "Bede; ASC"}
+{"name": "Ēata", "type": "person", "morphemes": ["ēata"], "gloss": "name", "source": "Bede"}
+{"name": "Ceadda", "type": "person", "morphemes": ["ceadda"], "gloss": "name", "source": "Bede"}
+{"name": "Cedd", "type": "person", "morphemes": ["cedd"], "gloss": "name", "source": "Bede"}
+{"name": "Cynebil", "type": "person", "morphemes": ["cyne", "bill"], "gloss": "royal + sword", "source": "Bede"}
+{"name": "Bōsa", "type": "person", "morphemes": ["bōsa"], "gloss": "name", "source": "Bede"}
+{"name": "Ceolfrið", "type": "person", "morphemes": ["cēol", "friþ"], "gloss": "ship + peace", "source": "Bede"}
+{"name": "Ēosterwine", "type": "person", "morphemes": ["ēaster", "wine"], "gloss": "Easter + friend", "source": "Bede"}
+{"name": "Hwætberht", "type": "person", "morphemes": ["hwæt", "beorht"], "gloss": "active + bright", "source": "Bede"}
+{"name": "Acca", "type": "person", "morphemes": ["acca"], "gloss": "name", "source": "Bede; ASC"}
+{"name": "Ēadfrið", "type": "person", "morphemes": ["ēad", "friþ"], "gloss": "prosperity + peace", "source": "Bede; Lindisfarne Gospels colophon"}
+{"name": "Billfrið", "type": "person", "morphemes": ["bill", "friþ"], "gloss": "sword + peace", "source": "Lindisfarne Gospels colophon"}
+{"name": "Ealdrēd", "type": "person", "morphemes": ["eald", "rǣd"], "gloss": "old + counsel", "source": "Lindisfarne Gospels colophon; ASC"}
+{"name": "Trumwine", "type": "person", "morphemes": ["trum", "wine"], "gloss": "firm + friend", "source": "Bede"}
+{"name": "Trumhere", "type": "person", "morphemes": ["trum", "here"], "gloss": "firm + army", "source": "Bede"}
+{"name": "Lilla", "type": "person", "morphemes": ["lilla"], "gloss": "name", "source": "Bede"}
+{"name": "Penda", "type": "person", "morphemes": ["penda"], "gloss": "name", "source": "Bede; ASC"}
+{"name": "Peada", "type": "person", "morphemes": ["peada"], "gloss": "name", "source": "Bede; ASC"}
+{"name": "Ōsþrȳð", "type": "person", "morphemes": ["ōs", "þrȳþ"], "gloss": "god + strength", "source": "Bede; ASC"}
+{"name": "Ēanbald", "type": "person", "morphemes": ["ēan", "beald"], "gloss": "name + bold", "source": "ASC"}
+{"name": "Hygebald", "type": "person", "morphemes": ["hyge", "beald"], "gloss": "mind + bold", "source": "ASC"}
+{"name": "Hereberht", "type": "person", "morphemes": ["here", "beorht"], "gloss": "army + bright", "source": "Bede"}
+{"name": "Dryhthelm", "type": "person", "morphemes": ["dryht", "helm"], "gloss": "host + helmet", "source": "Bede"}
+{"name": "Imma", "type": "person", "morphemes": ["imma"], "gloss": "name", "source": "Bede"}
+{"name": "Swīþberht", "type": "person", "morphemes": ["swīþ", "beorht"], "gloss": "strong + bright", "source": "Bede"}
+{"name": "Wilbrord", "type": "person", "morphemes": ["wil", "brord"], "gloss": "desire + spike", "source": "Bede"}
+{"name": "Wealhstōd", "type": "person", "morphemes": ["wealhstōd"], "gloss": "interpreter", "source": "Bede"}
+{"name": "Ingwald", "type": "person", "morphemes": ["ing", "weald"], "gloss": "Ing + power", "source": "Bede"}
+{"name": "Pehthelm", "type": "person", "morphemes": ["peohtas", "helm"], "gloss": "Picts + helmet", "source": "Bede"}
+{"name": "Cyneberht", "type": "person", "morphemes": ["cyne", "beorht"], "gloss": "royal + bright", "source": "Bede"}
+{"name": "Ealdwulf", "type": "person", "morphemes": ["eald", "wulf"], "gloss": "old + wolf", "source": "Bede"}
+{"name": "Tātwine", "type": "person", "morphemes": ["tāt", "wine"], "gloss": "cheerful + friend", "source": "Bede; ASC"}
+{"name": "Wine", "type": "person", "morphemes": ["wine"], "gloss": "friend", "source": "Bede"}
+{"name": "Berhtwald", "type": "person", "morphemes": ["beorht", "weald"], "gloss": "bright + power", "source": "Bede; ASC"}
+{"name": "Nōþhelm", "type": "person", "morphemes": ["nōþ", "helm"], "gloss": "boldness + helmet", "source": "Bede; ASC"}
+{"name": "Bregowine", "type": "person", "morphemes": ["bregu", "wine"], "gloss": "prince + friend", "source": "ASC"}
+{"name": "Wulfrēd", "type": "person", "morphemes": ["wulf", "rǣd"], "gloss": "wolf + counsel", "source": "ASC"}
+{"name": "Cēolnōð", "type": "person", "morphemes": ["cēol", "nōþ"], "gloss": "ship + boldness", "source": "ASC"}
+{"name": "Æþelhelm", "type": "person", "morphemes": ["æþel", "helm"], "gloss": "noble + helmet", "source": "ASC"}
+{"name": "Wulfsige", "type": "person", "morphemes": ["wulf", "sige"], "gloss": "wolf + victory", "source": "ASC"}
+{"name": "Cynesige", "type": "person", "morphemes": ["cyne", "sige"], "gloss": "royal + victory", "source": "ASC"}
+{"name": "Wynfrið", "type": "person", "morphemes": ["wynn", "friþ"], "gloss": "joy + peace", "source": "Bede"}
+{"name": "Ceolrēd", "type": "person", "morphemes": ["cēol", "rǣd"], "gloss": "ship + counsel", "source": "Bede; ASC"}
+{"name": "Beornrēd", "type": "person", "morphemes": ["beorn", "rǣd"], "gloss": "warrior + counsel", "source": "ASC"}
+{"name": "Beornwulf", "type": "person", "morphemes": ["beorn", "wulf"], "gloss": "warrior + wolf", "source": "ASC"}
+{"name": "Beorhtwulf", "type": "person", "morphemes": ["beorht", "wulf"], "gloss": "bright + wolf", "source": "ASC"}
+{"name": "Burgrēd", "type": "person", "morphemes": ["burg", "rǣd"], "gloss": "fortress + counsel", "source": "ASC"}
+{"name": "Æþelswīþ", "type": "person", "morphemes": ["æþel", "swīþ"], "gloss": "noble + strong", "source": "ASC"}
+{"name": "Ælfwynn", "type": "person", "morphemes": ["ælf", "wynn"], "gloss": "elf + joy", "source": "ASC"}
+{"name": "Cyneþrȳð", "type": "person", "morphemes": ["cyne", "þrȳþ"], "gloss": "royal + strength", "source": "Charters"}
+{"name": "Cyneburh", "type": "person", "morphemes": ["cyne", "burg"], "gloss": "royal + fortress", "source": "Bede; ASC"}
+{"name": "Cyneswīþ", "type": "person", "morphemes": ["cyne", "swīþ"], "gloss": "royal + strong", "source": "ASC"}
+{"name": "Gūðlāc", "type": "person", "morphemes": ["gūþ", "lāc"], "gloss": "war + sport", "source": "ASC; Guthlac A"}
+{"name": "Seaxwulf", "type": "person", "morphemes": ["seax", "wulf"], "gloss": "knife + wolf", "source": "Bede; ASC"}
+{"name": "Wealdhere", "type": "person", "morphemes": ["weald", "here"], "gloss": "power + army", "source": "Bede"}
+{"name": "Æþelmund", "type": "person", "morphemes": ["æþel", "mund"], "gloss": "noble + protection", "source": "ASC"}
+{"name": "Ēanhere", "type": "person", "morphemes": ["ēan", "here"], "gloss": "name + army", "source": "Bede"}
+{"name": "Rǣdwald", "type": "person", "morphemes": ["rǣd", "weald"], "gloss": "counsel + power", "source": "Bede; ASC"}
+{"name": "Eorpwald", "type": "person", "morphemes": ["eorp", "weald"], "gloss": "swarthy + power", "source": "Bede"}
+{"name": "Ecgrīc", "type": "person", "morphemes": ["ecg", "rīc"], "gloss": "edge + ruler", "source": "Bede"}
+{"name": "Anna", "type": "person", "morphemes": ["anna"], "gloss": "name", "source": "Bede; ASC"}
+{"name": "Æþelhere", "type": "person", "morphemes": ["æþel", "here"], "gloss": "noble + army", "source": "Bede"}
+{"name": "Rǣgenhere", "type": "person", "morphemes": ["regn", "here"], "gloss": "might + army", "source": "Bede"}
+{"name": "Sǣþrȳð", "type": "person", "morphemes": ["sǣ", "þrȳþ"], "gloss": "sea + strength", "source": "Bede"}
+{"name": "Sǣberht", "type": "person", "morphemes": ["sǣ", "beorht"], "gloss": "sea + bright", "source": "Bede; ASC"}
+{"name": "Seaxrēd", "type": "person", "morphemes": ["seax", "rǣd"], "gloss": "knife + counsel", "source": "Bede"}
+{"name": "Sǣweard", "type": "person", "morphemes": ["sǣ", "weard"], "gloss": "sea + guardian", "source": "Bede"}
+{"name": "Swīþhelm", "type": "person", "morphemes": ["swīþ", "helm"], "gloss": "strong + helmet", "source": "Bede"}
+{"name": "Sigeheard", "type": "person", "morphemes": ["sige", "heard"], "gloss": "victory + hard", "source": "Bede"}
+{"name": "Swǣfrēd", "type": "person", "morphemes": ["swǣfe", "rǣd"], "gloss": "Swabians + counsel", "source": "Bede"}
+{"name": "Swǣfberht", "type": "person", "morphemes": ["swǣfe", "beorht"], "gloss": "Swabians + bright", "source": "ASC"}
+{"name": "Selerēd", "type": "person", "morphemes": ["sele", "rǣd"], "gloss": "hall + counsel", "source": "ASC"}
+{"name": "Eorcenwald", "type": "person", "morphemes": ["eorcen", "weald"], "gloss": "precious + power", "source": "Bede"}
+{"name": "Cissa", "type": "person", "morphemes": ["cissa"], "gloss": "name", "source": "ASC"}
+{"name": "Cymen", "type": "person", "morphemes": ["cymen"], "gloss": "name", "source": "ASC"}
+{"name": "Æþelwalh", "type": "person", "morphemes": ["æþel", "wealh"], "gloss": "noble + foreigner", "source": "Bede"}
+{"name": "Berhthūn", "type": "person", "morphemes": ["beorht", "hūn"], "gloss": "bright + name", "source": "Bede"}
+{"name": "Scyldingas", "type": "lineage", "morphemes": ["scyld"], "gloss": "shield", "source": "Beowulf"}
+{"name": "Herescyldingas", "type": "lineage", "morphemes": ["here", "scyld"], "gloss": "army + shield", "source": "Beowulf"}
+{"name": "Sigescyldingas", "type": "lineage", "morphemes": ["sige", "scyld"], "gloss": "victory + shield", "source": "Beowulf"}
+{"name": "Þēodscyldingas", "type": "lineage", "morphemes": ["þēod", "scyld"], "gloss": "nation + shield", "source": "Beowulf"}
+{"name": "Scylfingas", "type": "lineage", "morphemes": ["scylf"], "gloss": "name", "source": "Beowulf"}
+{"name": "Heaþoscilfingas", "type": "lineage", "morphemes": ["heaþu", "scylf"], "gloss": "strife + name", "source": "Beowulf"}
+{"name": "Gūðscilfingas", "type": "lineage", "morphemes": ["gūþ", "scylf"], "gloss": "war + name", "source": "Beowulf"}
+{"name": "Wǣgmundingas", "type": "lineage", "morphemes": ["wǣg", "mund"], "gloss": "wave + protection", "source": "Beowulf"}
+{"name": "Helmingas", "type": "lineage", "morphemes": ["helm"], "gloss": "helmet", "source": "Beowulf"}
+{"name": "Hōcingas", "type": "lineage", "morphemes": ["hōc"], "gloss": "name", "source": "Widsith"}
+{"name": "Brondingas", "type": "lineage", "morphemes": ["brand"], "gloss": "sword", "source": "Beowulf; Widsith"}
+{"name": "Merewīoingas", "type": "lineage", "morphemes": ["merewīo"], "gloss": "name", "source": "Beowulf"}
+{"name": "Wuffingas", "type": "lineage", "morphemes": ["wuffa"], "gloss": "name", "source": "Bede"}
+{"name": "Ōiscingas", "type": "lineage", "morphemes": ["ōisc"], "gloss": "name", "source": "Bede"}
+{"name": "Engle", "type": "group", "morphemes": ["engle"], "gloss": "Angles", "source": "Bede; ASC"}
+{"name": "Seaxe", "type": "group", "morphemes": ["seaxe"], "gloss": "Saxons", "source": "Bede; ASC"}
+{"name": "Ȳte", "type": "group", "morphemes": ["ȳte"], "gloss": "Jutes", "source": "Widsith; ASC"}
+{"name": "Dene", "type": "group", "morphemes": ["dene"], "gloss": "Danes", "source": "Beowulf; ASC"}
+{"name": "Gēatas", "type": "group", "morphemes": ["gēatas"], "gloss": "Geats", "source": "Beowulf; Widsith"}
+{"name": "Swēon", "type": "group", "morphemes": ["swēon"], "gloss": "Swedes", "source": "Beowulf; Widsith; OE Orosius"}
+{"name": "Frēsan", "type": "group", "morphemes": ["frēsan"], "gloss": "Frisians", "source": "Beowulf; Widsith; ASC"}
+{"name": "Francan", "type": "group", "morphemes": ["francan"], "gloss": "Franks", "source": "Beowulf; Widsith; ASC"}
+{"name": "Hūgas", "type": "group", "morphemes": ["hūgas"], "gloss": "name", "source": "Beowulf"}
+{"name": "Heaþobeardan", "type": "group", "morphemes": ["heaþu", "beard"], "gloss": "strife + beard", "source": "Beowulf; Widsith"}
+{"name": "Longbeardan", "type": "group", "morphemes": ["lang", "beard"], "gloss": "long + beard", "source": "Widsith"}
+{"name": "Ēotenas", "type": "group", "morphemes": ["ēotenas"], "gloss": "name", "source": "Beowulf"}
+{"name": "Wederas", "type": "group", "morphemes": ["weder"], "gloss": "name", "source": "Beowulf"}
+{"name": "Gārdene", "type": "group", "morphemes": ["gār", "dene"], "gloss": "spear + Danes", "source": "Beowulf"}
+{"name": "Hringdene", "type": "group", "morphemes": ["hring", "dene"], "gloss": "ring + Danes", "source": "Beowulf"}
+{"name": "Ēastdene", "type": "group", "morphemes": ["ēast", "dene"], "gloss": "east + Danes", "source": "Beowulf; Rune Poem"}
+{"name": "Sūþdene", "type": "group", "morphemes": ["sūþ", "dene"], "gloss": "south + Danes", "source": "Beowulf; Widsith"}
+{"name": "Sǣgēatas", "type": "group", "morphemes": ["sǣ", "gēatas"], "gloss": "sea + Geats", "source": "Beowulf"}
+{"name": "Ingwine", "type": "group", "morphemes": ["ing", "wine"], "gloss": "Ing + friend", "source": "Beowulf"}
+{"name": "Hrēðgotan", "type": "group", "morphemes": ["hrēþ", "gotan"], "gloss": "glory + Goths", "source": "Widsith; Elene"}
+{"name": "Gotan", "type": "group", "morphemes": ["gotan"], "gloss": "Goths", "source": "Widsith; OE Orosius"}
+{"name": "Ēastgotan", "type": "group", "morphemes": ["ēast", "gotan"], "gloss": "east + Goths", "source": "Widsith"}
+{"name": "Finnas", "type": "group", "morphemes": ["finnas"], "gloss": "Finns", "source": "Widsith; OE Orosius"}
+{"name": "Swǣfe", "type": "group", "morphemes": ["swǣfe"], "gloss": "Swabians", "source": "Widsith"}
+{"name": "Sweordweras", "type": "group", "morphemes": ["sweord", "wer"], "gloss": "sword + man", "source": "Widsith"}
+{"name": "Scrīdefinnas", "type": "group", "morphemes": ["scrīþan", "finnas"], "gloss": "glide + Finns", "source": "Widsith"}
+{"name": "Hundingas", "type": "group", "morphemes": ["hund"], "gloss": "dog", "source": "Widsith"}
+{"name": "Peohtas", "type": "group", "morphemes": ["peohtas"], "gloss": "Picts", "source": "Bede; ASC"}
+{"name": "Scottas", "type": "group", "morphemes": ["scottas"], "gloss": "Scots", "source": "Bede; ASC"}
+{"name": "Brettas", "type": "group", "morphemes": ["brettas"], "gloss": "Britons", "source": "Bede; ASC"}
+{"name": "Wēalas", "type": "group", "morphemes": ["wealh"], "gloss": "foreigner", "source": "ASC"}
+{"name": "Cornwealas", "type": "group", "morphemes": ["corn", "wealh"], "gloss": "name + foreigner", "source": "ASC"}
+{"name": "Westwalas", "type": "group", "morphemes": ["west", "wealh"], "gloss": "west + foreigner", "source": "ASC"}
+{"name": "Rūmwalas", "type": "group", "morphemes": ["rōm", "wealh"], "gloss": "Rome + foreigner", "source": "Widsith"}
+{"name": "Mierce", "type": "group", "morphemes": ["mierce"], "gloss": "border-dwellers", "source": "Bede; ASC"}
+{"name": "Norþhymbre", "type": "group", "morphemes": ["norþ", "humbre"], "gloss": "north + Humber", "source": "Bede; ASC"}
+{"name": "Ēastengle", "type": "group", "morphemes": ["ēast", "engle"], "gloss": "east + Angles", "source": "Bede; ASC"}
+{"name": "Middelengle", "type": "group", "morphemes": ["middel", "engle"], "gloss": "middle + Angles", "source": "Bede; ASC"}
+{"name": "Ēastseaxe", "type": "group", "morphemes": ["ēast", "seaxe"], "gloss": "east + Saxons", "source": "Bede; ASC"}
+{"name": "Westseaxe", "type": "group", "morphemes": ["west", "seaxe"], "gloss": "west + Saxons", "source": "Bede; ASC"}
+{"name": "Sūþseaxe", "type": "group", "morphemes": ["sūþ", "seaxe"], "gloss": "south + Saxons", "source": "Bede; ASC"}
+{"name": "Cantware", "type": "group", "morphemes": ["cent", "ware"], "gloss": "Kent + dwellers", "source": "Bede; ASC"}
+{"name": "Wihtware", "type": "group", "morphemes": ["wiht", "ware"], "gloss": "Wight + dwellers", "source": "Bede; ASC"}
+{"name": "Hwiccas", "type": "group", "morphemes": ["hwiccas"], "gloss": "name", "source": "Bede; Charters"}
+{"name": "Wreocensǣte", "type": "group", "morphemes": ["wrēocen", "sǣte"], "gloss": "name + settlers", "source": "Charters; Tribal Hidage"}
+{"name": "Pēcsǣte", "type": "group", "morphemes": ["pēac", "sǣte"], "gloss": "peak + settlers", "source": "Tribal Hidage"}
+{"name": "Wilsǣte", "type": "group", "morphemes": ["wilig", "sǣte"], "gloss": "Wylye + settlers", "source": "ASC"}
+{"name": "Sumorsǣte", "type": "group", "morphemes": ["sumor", "sǣte"], "gloss": "summer + settlers", "source": "ASC"}
+{"name": "Gyrwe", "type": "group", "morphemes": ["gyrwe"], "gloss": "name", "source": "Bede; Tribal Hidage"}
+{"name": "Hǣstingas", "type": "group", "morphemes": ["hǣsta"], "gloss": "name", "source": "ASC"}
+{"name": "Norþmenn", "type": "group", "morphemes": ["norþ", "mann"], "gloss": "north + man", "source": "ASC"}
+{"name": "Winedas", "type": "group", "morphemes": ["winedas"], "gloss": "Wends", "source": "Widsith; OE Orosius"}
+{"name": "Cwēnas", "type": "group", "morphemes": ["cwēnas"], "gloss": "Kvens", "source": "OE Orosius"}
+{"name": "Ēste", "type": "group", "morphemes": ["ēste"], "gloss": "Ests", "source": "OE Orosius"}
+{"name": "Wōden", "type": "deity", "morphemes": ["wōden"], "gloss": "Woden", "source": "ASC; Maxims I; Nine Herbs Charm"}
+{"name": "Þunor", "type": "deity", "morphemes": ["þunor"], "gloss": "thunder", "source": "Glosses; Ælfric"}
+{"name": "Tīw", "type": "deity", "morphemes": ["tīw"], "gloss": "Tiw", "source": "Glosses"}
+{"name": "Frīg", "type": "deity", "morphemes": ["frīg"], "gloss": "Frig", "source": "Ælfric"}
+{"name": "Ēostre", "type": "deity", "morphemes": ["ēostre"], "gloss": "dawn", "source": "Bede"}
+{"name": "Hrēþe", "type": "deity", "morphemes": ["hrēþe"], "gloss": "Hrethe", "source": "Bede"}
+{"name": "Ing", "type": "deity", "morphemes": ["ing"], "gloss": "Ing", "source": "Rune Poem"}
+{"name": "Seaxnēat", "type": "deity", "morphemes": ["seax", "nēat"], "gloss": "knife + companion", "source": "East Saxon genealogy"}
+{"name": "Gēat", "type": "deity", "morphemes": ["gēat"], "gloss": "Geat", "source": "ASC"}
+{"name": "Erce", "type": "deity", "morphemes": ["erce"], "gloss": "name", "source": "Æcerbot charm"}
+{"name": "Grendel", "type": "deity", "morphemes": ["grendel"], "gloss": "name", "source": "Beowulf"}
+{"name": "Crist", "type": "deity", "morphemes": ["crist"], "gloss": "anointed", "source": "OE poems and homilies"}
+{"name": "Hǣlend", "type": "deity", "morphemes": ["hǣlend"], "gloss": "saviour", "source": "OE gospels and homilies"}
+{"name": "Sātān", "type": "deity", "morphemes": ["sātān"], "gloss": "adversary", "source": "Christ and Satan; Genesis B"}
+{"name": "Lūcifer", "type": "deity", "morphemes": ["lūcifer"], "gloss": "light-bearer", "source": "Ælfric"}
+{"name": "Lēohtberend", "type": "deity", "morphemes": ["lēoht", "berend"], "gloss": "light + bearer", "source": "Ælfric"}
+{"name": "Brytenwalda", "type": "title", "morphemes": ["bryten", "wealda"], "gloss": "Britain + ruler", "source": "ASC"}
+{"name": "Metod", "type": "title", "morphemes": ["metod"], "gloss": "measurer", "source": "Beowulf; Cædmon's Hymn"}
+{"name": "Dryhten", "type": "title", "morphemes": ["dryhten"], "gloss": "lord", "source": "OE poems"}
+{"name": "Wealdend", "type": "title", "morphemes": ["wealdend"], "gloss": "ruler", "source": "OE poems"}
+{"name": "Nergend", "type": "title", "morphemes": ["nergend"], "gloss": "saviour", "source": "OE poems"}
+{"name": "Scieppend", "type": "title", "morphemes": ["scieppend"], "gloss": "creator", "source": "OE poems"}
+{"name": "Æscesdūn", "type": "hill", "morphemes": ["æsc", "dūn"], "gloss": "ash + hill", "source": "ASC"}
+{"name": "Ellendūn", "type": "hill", "morphemes": ["ellen", "dūn"], "gloss": "name + hill", "source": "ASC"}
+{"name": "Bēandūn", "type": "hill", "morphemes": ["bēan", "dūn"], "gloss": "bean + hill", "source": "ASC"}
+{"name": "Wōdnesbeorg", "type": "hill", "morphemes": ["wōden", "beorg"], "gloss": "Woden + hill", "source": "ASC"}
+{"name": "Cwichelmeshlǣw", "type": "hill", "morphemes": ["cwic", "helm", "hlǣw"], "gloss": "living + helmet + mound", "source": "ASC"}
+{"name": "Hrēosnabeorh", "type": "hill", "morphemes": ["hrēosna", "beorg"], "gloss": "name + hill", "source": "Beowulf"}
+{"name": "Assandūn", "type": "hill", "morphemes": ["assa", "dūn"], "gloss": "name + hill", "source": "ASC"}
+{"name": "Brēodūn", "type": "hill", "morphemes": ["brēo", "dūn"], "gloss": "name + hill", "source": "Charters"}
+{"name": "Muntgiop", "type": "hill", "morphemes": ["munt", "giop"], "gloss": "mountain + name", "source": "Metres of Boethius; Wulfstan"}
+{"name": "Wibbandūn", "type": "hill", "morphemes": ["wibba", "dūn"], "gloss": "name + hill", "source": "ASC"}
+{"name": "Ēarendel", "type": "celestial", "morphemes": ["ēarendel"], "gloss": "ray of light", "source": "Christ I"}
+{"name": "Carles wǣn", "type": "celestial", "morphemes": ["carl", "wǣn"], "gloss": "churl + wagon", "source": "Ælfric (De temporibus anni)"}
+{"name": "Eburþring", "type": "celestial", "morphemes": ["eofor", "þring"], "gloss": "boar + throng", "source": "Glosses (Corpus Glossary)"}
+{"name": "Swānsteorra", "type": "celestial", "morphemes": ["swān", "steorra"], "gloss": "herdsman + star", "source": "Glosses"}
+{"name": "Scipsteorra", "type": "celestial", "morphemes": ["scip", "steorra"], "gloss": "ship + star", "source": "Ælfric (De temporibus anni)"}
+{"name": "Ǣfensteorra", "type": "celestial", "morphemes": ["ǣfen", "steorra"], "gloss": "evening + star", "source": "Ælfric (De temporibus anni); Glosses"}
+{"name": "Morgensteorra", "type": "celestial", "morphemes": ["morgen", "steorra"], "gloss": "morning + star", "source": "OE Boethius; Metres of Boethius"}
+{"name": "Dægsteorra", "type": "celestial", "morphemes": ["dæg", "steorra"], "gloss": "day + star", "source": "Ælfric; Psalter glosses"}
+{"name": "Sunne", "type": "celestial", "morphemes": ["sunne"], "gloss": "sun", "source": "OE poems and prose"}
+{"name": "Mōna", "type": "celestial", "morphemes": ["mōna"], "gloss": "moon", "source": "OE poems and prose"}
+{"name": "Īringes weg", "type": "celestial", "morphemes": ["īring", "weg"], "gloss": "name + way", "source": "Glosses"}
+{"name": "Temes", "type": "river", "morphemes": ["temes"], "gloss": "Thames", "source": "ASC"}
+{"name": "Sǣfern", "type": "river", "morphemes": ["sǣfern"], "gloss": "Severn", "source": "ASC"}
+{"name": "Humbre", "type": "river", "morphemes": ["humbre"], "gloss": "Humber", "source": "Bede; ASC"}
+{"name": "Trēonte", "type": "river", "morphemes": ["trēonte"], "gloss": "Trent", "source": "ASC"}
+{"name": "Tīne", "type": "river", "morphemes": ["tīne"], "gloss": "Tyne", "source": "ASC; Bede"}
+{"name": "Wīr", "type": "river", "morphemes": ["wīr"], "gloss": "Wear", "source": "OE Bede"}
+{"name": "Lyge", "type": "river", "morphemes": ["lyge"], "gloss": "Lea", "source": "ASC"}
+{"name": "Medwǣg", "type": "river", "morphemes": ["medwǣg"], "gloss": "Medway", "source": "ASC"}
+{"name": "Ūse", "type": "river", "morphemes": ["ūse"], "gloss": "Ouse", "source": "ASC"}
+{"name": "Pedrede", "type": "river", "morphemes": ["pedrede"], "gloss": "Parrett", "source": "ASC"}
+{"name": "Stūr", "type": "river", "morphemes": ["stūr"], "gloss": "Stour", "source": "ASC"}
+{"name": "Idle", "type": "river", "morphemes": ["īdel"], "gloss": "idle", "source": "Bede; ASC"}
+{"name": "Wīnwǣd", "type": "river", "morphemes": ["wīnwǣd"], "gloss": "name", "source": "Bede"}
+{"name": "Exe", "type": "river", "morphemes": ["exe"], "gloss": "Exe", "source": "ASC"}
+{"name": "Colne", "type": "river", "morphemes": ["colne"], "gloss": "Colne", "source": "ASC"}
+{"name": "Pante", "type": "river", "morphemes": ["pante"], "gloss": "name", "source": "Maldon"}
+{"name": "Fīfeldor", "type": "river", "morphemes": ["fīfel", "dor"], "gloss": "monster + gate", "source": "Widsith"}
+{"name": "Wīsle", "type": "river", "morphemes": ["wīsle"], "gloss": "Vistula", "source": "OE Orosius"}
+{"name": "Rīn", "type": "river", "morphemes": ["rīn"], "gloss": "Rhine", "source": "OE Orosius"}
+{"name": "Cantwaraburg", "type": "place", "morphemes": ["cent", "ware", "burg"], "gloss": "Kent + dwellers + fortress", "source": "ASC"}
+{"name": "Hrofesceaster", "type": "place", "morphemes": ["hrof", "ceaster"], "gloss": "name + Roman town", "source": "Bede; ASC"}
+{"name": "Lundenburg", "type": "place", "morphemes": ["lunden", "burg"], "gloss": "London + fortress", "source": "ASC"}
+{"name": "Lundenwīc", "type": "place", "morphemes": ["lunden", "wīc"], "gloss": "London + settlement", "source": "ASC"}
+{"name": "Wintanceaster", "type": "place", "morphemes": ["winta", "ceaster"], "gloss": "name + Roman town", "source": "ASC"}
+{"name": "Eoforwīc", "type": "place", "morphemes": ["eofor", "wīc"], "gloss": "boar + settlement", "source": "ASC"}
+{"name": "Bebbanburg", "type": "place", "morphemes": ["bebbe", "burg"], "gloss": "name + fortress", "source": "ASC"}
+{"name": "Lindisfarnēa", "type": "place", "morphemes": ["lindisfarnēa"], "gloss": "name", "source": "ASC"}
+{"name": "Hagustaldesēa", "type": "place", "morphemes": ["hagosteald", "ēa"], "gloss": "young warrior + river", "source": "ASC; OE Bede"}
+{"name": "Wiremūþa", "type": "place", "morphemes": ["wīr", "mūþ"], "gloss": "Wear + mouth", "source": "OE Bede"}
+{"name": "Derawudu", "type": "place", "morphemes": ["dere", "wudu"], "gloss": "Deirans + wood", "source": "OE Bede"}
+{"name": "Legaceaster", "type": "place", "morphemes": ["lega", "ceaster"], "gloss": "name + Roman town", "source": "ASC"}
+{"name": "Bancornaburg", "type": "place", "morphemes": ["bancor", "burg"], "gloss": "name + fortress", "source": "OE Bede"}
+{"name": "Glēawceaster", "type": "place", "morphemes": ["glēaw", "ceaster"], "gloss": "name + Roman town", "source": "ASC"}
+{"name": "Cirenceaster", "type": "place", "morphemes": ["ciren", "ceaster"], "gloss": "name + Roman town", "source": "ASC"}
+{"name": "Baþanceaster", "type": "place", "morphemes": ["bæþ", "ceaster"], "gloss": "bath + Roman town", "source": "ASC"}
+{"name": "Exanceaster", "type": "place", "morphemes": ["exe", "ceaster"], "gloss": "Exe + Roman town", "source": "ASC"}
+{"name": "Grantaceaster", "type": "place", "morphemes": ["granta", "ceaster"], "gloss": "Granta + Roman town", "source": "OE Bede"}
+{"name": "Colneceaster", "type": "place", "morphemes": ["colne", "ceaster"], "gloss": "Colne + Roman town", "source": "ASC"}
+{"name": "Ligoraceaster", "type": "place", "morphemes": ["ligore", "ceaster"], "gloss": "name + Roman town", "source": "ASC"}
+{"name": "Andredesceaster", "type": "place", "morphemes": ["andred", "ceaster"], "gloss": "name + Roman town", "source": "ASC"}
+{"name": "Cīsseceaster", "type": "place", "morphemes": ["cissa", "ceaster"], "gloss": "name + Roman town", "source": "ASC"}
+{"name": "Mameceaster", "type": "place", "morphemes": ["mame", "ceaster"], "gloss": "name + Roman town", "source": "ASC"}
+{"name": "Wæclingaceaster", "type": "place", "morphemes": ["wæcla", "ceaster"], "gloss": "name + Roman town", "source": "OE Bede"}
+{"name": "Searobyrg", "type": "place", "morphemes": ["searo", "burg"], "gloss": "name + fortress", "source": "ASC"}
+{"name": "Ægelesburg", "type": "place", "morphemes": ["ægel", "burg"], "gloss": "name + fortress", "source": "ASC"}
+{"name": "Deorhām", "type": "place", "morphemes": ["dēor", "hām"], "gloss": "animal + homestead", "source": "ASC"}
+{"name": "Bradanford", "type": "place", "morphemes": ["brād", "ford"], "gloss": "broad + ford", "source": "ASC"}
+{"name": "Cerdicesōra", "type": "place", "morphemes": ["cerdic", "ōra"], "gloss": "name + shore", "source": "ASC"}
+{"name": "Cerdicesford", "type": "place", "morphemes": ["cerdic", "ford"], "gloss": "name + ford", "source": "ASC"}
+{"name": "Cerdicesleag", "type": "place", "morphemes": ["cerdic", "lēah"], "gloss": "name + clearing", "source": "ASC"}
+{"name": "Cymenesōra", "type": "place", "morphemes": ["cymen", "ōra"], "gloss": "name + shore", "source": "ASC"}
+{"name": "Portesmūþa", "type": "place", "morphemes": ["port", "mūþ"], "gloss": "harbour + mouth", "source": "ASC"}
+{"name": "Ypwinesflēot", "type": "place", "morphemes": ["ypwine", "flēot"], "gloss": "name + estuary", "source": "ASC"}
+{"name": "Crecganford", "type": "place", "morphemes": ["crecga", "ford"], "gloss": "name + ford", "source": "ASC"}
+{"name": "Wippedesflēot", "type": "place", "morphemes": ["wipped", "flēot"], "gloss": "name + estuary", "source": "ASC"}
+{"name": "Wiht", "type": "place", "morphemes": ["wiht"], "gloss": "Wight", "source": "ASC; Bede"}
+{"name": "Medeshamstede", "type": "place", "morphemes": ["mēde", "hām", "stede"], "gloss": "name + homestead + site", "source": "ASC"}
+{"name": "Tamaweorþig", "type": "place", "morphemes": ["tame", "worþig"], "gloss": "name + enclosure", "source": "ASC"}
+{"name": "Hrēopedūn", "type": "place", "morphemes": ["hrēope", "dūn"], "gloss": "name + hill", "source": "ASC"}
+{"name": "Snotingahām", "type": "place", "morphemes": ["snot", "hām"], "gloss": "name + homestead", "source": "ASC"}
+{"name": "Stānford", "type": "place", "morphemes": ["stān", "ford"], "gloss": "stone + ford", "source": "ASC"}
+{"name": "Brycgstōw", "type": "place", "morphemes": ["brycg", "stōw"], "gloss": "bridge + place", "source": "ASC"}
+{"name": "Oxnaford", "type": "place", "morphemes": ["oxa", "ford"], "gloss": "ox + ford", "source": "ASC"}
+{"name": "Heorotford", "type": "place", "morphemes": ["heorot", "ford"], "gloss": "hart + ford", "source": "Bede; ASC"}
+{"name": "Hǣþfeld", "type": "place", "morphemes": ["hǣþ", "feld"], "gloss": "heath + open land", "source": "Bede; ASC"}
+{"name": "Hwīterne", "type": "place", "morphemes": ["hwīt", "ærn"], "gloss": "white + house", "source": "ASC; OE Bede"}
+{"name": "Cnobheresburg", "type": "place", "morphemes": ["cnobhere", "burg"], "gloss": "name + fortress", "source": "Bede"}
+{"name": "Wiltūn", "type": "place", "morphemes": ["wilig", "tūn"], "gloss": "Wylye + farmstead", "source": "ASC"}
+{"name": "Hamtūn", "type": "place", "morphemes": ["hamm", "tūn"], "gloss": "river meadow + farmstead", "source": "ASC"}
+{"name": "Englafeld", "type": "place", "morphemes": ["engle", "feld"], "gloss": "Angles + open land", "source": "ASC"}
+{"name": "Meretūn", "type": "place", "morphemes": ["mere", "tūn"], "gloss": "lake + farmstead", "source": "ASC"}
+{"name": "Cippanhamm", "type": "place", "morphemes": ["cippa", "hamm"], "gloss": "name + river meadow", "source": "ASC"}
+{"name": "Æþelingaēg", "type": "place", "morphemes": ["æþeling", "ēg"], "gloss": "prince + island", "source": "ASC"}
+{"name": "Alor", "type": "place", "morphemes": ["alor"], "gloss": "alder", "source": "ASC"}
+{"name": "Fullanhamm", "type": "place", "morphemes": ["fula", "hamm"], "gloss": "name + river meadow", "source": "ASC"}
+{"name": "Bēamflēot", "type": "place", "morphemes": ["bēam", "flēot"], "gloss": "tree + estuary", "source": "ASC"}
+{"name": "Fearnhamm", "type": "place", "morphemes": ["fearn", "hamm"], "gloss": "fern + river meadow", "source": "ASC"}
+{"name": "Middeltūn", "type": "place", "morphemes": ["middel", "tūn"], "gloss": "middle + farmstead", "source": "ASC"}
+{"name": "Apuldre", "type": "place", "morphemes": ["apuldor"], "gloss": "apple tree", "source": "ASC"}
+{"name": "Huntandūn", "type": "place", "morphemes": ["hunta", "dūn"], "gloss": "hunter + hill", "source": "ASC"}
+{"name": "Bedanford", "type": "place", "morphemes": ["bēda", "ford"], "gloss": "name + ford", "source": "ASC"}
+{"name": "Mǣldūn", "type": "place", "morphemes": ["mǣl", "dūn"], "gloss": "cross + hill", "source": "ASC; Maldon"}
+{"name": "Bearrocscīr", "type": "place", "morphemes": ["bearroc", "scīr"], "gloss": "name + shire", "source": "ASC"}
+{"name": "Sūþrīge", "type": "place", "morphemes": ["sūþ", "gē"], "gloss": "south + district", "source": "ASC"}
+{"name": "Hamtūnscīr", "type": "place", "morphemes": ["hamm", "tūn", "scīr"], "gloss": "river meadow + farmstead + shire", "source": "ASC"}
+{"name": "Wiltūnscīr", "type": "place", "morphemes": ["wilig", "tūn", "scīr"], "gloss": "Wylye + farmstead + shire", "source": "ASC"}
+{"name": "Cent", "type": "place", "morphemes": ["cent"], "gloss": "Kent", "source": "Bede; ASC"}
+{"name": "Ēlig", "type": "place", "morphemes": ["ēlig"], "gloss": "name", "source": "Bede; ASC"}
+{"name": "Brūnanburh", "type": "place", "morphemes": ["brūna", "burg"], "gloss": "name + fortress", "source": "Brunanburh; ASC"}
+{"name": "Ēamōt", "type": "place", "morphemes": ["ēa", "gemōt"], "gloss": "river + meeting", "source": "ASC"}
+{"name": "Fearndūn", "type": "place", "morphemes": ["fearn", "dūn"], "gloss": "fern + hill", "source": "ASC"}
+{"name": "Andredeslēah", "type": "place", "morphemes": ["andred", "lēah"], "gloss": "name + clearing", "source": "ASC"}
+{"name": "Sealwudu", "type": "place", "morphemes": ["sealh", "wudu"], "gloss": "willow + wood", "source": "ASC"}
+{"name": "Hrefnesholt", "type": "place", "morphemes": ["hræfn", "holt"], "gloss": "raven + copse", "source": "Beowulf"}
+{"name": "Hrefnawudu", "type": "place", "morphemes": ["hræfn", "wudu"], "gloss": "raven + wood", "source": "Beowulf"}
+{"name": "Finnsburh", "type": "place", "morphemes": ["finn", "burg"], "gloss": "name + fortress", "source": "Finnsburh"}
+{"name": "Frēsland", "type": "place", "morphemes": ["frēsan", "land"], "gloss": "Frisians + land", "source": "Beowulf"}
+{"name": "Swīorīce", "type": "place", "morphemes": ["swēon", "rīce"], "gloss": "Swedes + kingdom", "source": "Beowulf"}
+{"name": "Scedenig", "type": "place", "morphemes": ["scedenig"], "gloss": "name", "source": "Beowulf"}
+{"name": "Scedeland", "type": "place", "morphemes": ["scede", "land"], "gloss": "name + land", "source": "Beowulf"}
+{"name": "Wedermearc", "type": "place", "morphemes": ["weder", "mearc"], "gloss": "name + borderland", "source": "Beowulf"}
+{"name": "Wīstlawudu", "type": "place", "morphemes": ["wīsle", "wudu"], "gloss": "Vistula + wood", "source": "Widsith"}
+{"name": "Rōmeburg", "type": "place", "morphemes": ["rōm", "burg"], "gloss": "Rome + fortress", "source": "ASC"}
+{"name": "Crēcaland", "type": "place", "morphemes": ["crēcas", "land"], "gloss": "Greeks + land", "source": "OE Orosius"}
+{"name": "Īrland", "type": "place", "morphemes": ["īras", "land"], "gloss": "Irish + land", "source": "ASC"}
+{"name": "Scotland", "type": "place", "morphemes": ["scottas", "land"], "gloss": "Scots + land", "source": "ASC"}
+{"name": "Breoton", "type": "place", "morphemes": ["bryten"], "gloss": "Britain", "source": "ASC"}
+{"name": "Englaland", "type": "place", "morphemes": ["engle", "land"], "gloss": "Angles + land", "source": "ASC"}
+{"name": "Francland", "type": "place", "morphemes": ["francan", "land"], "gloss": "Franks + land", "source": "ASC"}
+{"name": "Gotland", "type": "place", "morphemes": ["gotan", "land"], "gloss": "Goths + land", "source": "OE Orosius"}
+{"name": "Swēoland", "type": "place", "morphemes": ["swēon", "land"], "gloss": "Swedes + land", "source": "OE Orosius"}
+{"name": "Denamearc", "type": "place", "morphemes": ["dene", "mearc"], "gloss": "Danes + borderland", "source": "OE Orosius"}
+{"name": "Cwēnaland", "type": "place", "morphemes": ["cwēnas", "land"], "gloss": "Kvens + land", "source": "OE Orosius"}
+{"name": "Sciringesheal", "type": "place", "morphemes": ["sciring", "healh"], "gloss": "name + nook", "source": "OE Orosius"}
+{"name": "Hǣþum", "type": "place", "morphemes": ["hǣþ"], "gloss": "heath", "source": "OE Orosius"}
+{"name": "Trūsō", "type": "place", "morphemes": ["trūsō"], "gloss": "name", "source": "OE Orosius"}
+{"name": "Weonodland", "type": "place", "morphemes": ["winedas", "land"], "gloss": "Wends + land", "source": "OE Orosius"}
+{"name": "Burgendaland", "type": "place", "morphemes": ["burgendan", "land"], "gloss": "Burgundians + land", "source": "OE Orosius"}
+{"name": "Langaland", "type": "place", "morphemes": ["lang", "land"], "gloss": "long + land", "source": "OE Orosius"}
+{"name": "Ēstland", "type": "place", "morphemes": ["ēste", "land"], "gloss": "Ests + land", "source": "OE Orosius"}
+{"name": "Norþweg", "type": "place", "morphemes": ["norþ", "weg"], "gloss": "north + way", "source": "OE Orosius"}
+{"name": "Angel", "type": "place", "morphemes": ["angel"], "gloss": "Angeln", "source": "OE Orosius; Widsith"}
+{"name": "Mǣgþa land", "type": "place", "morphemes": ["mǣgþ", "land"], "gloss": "maiden + land", "source": "OE Orosius"}
+{"name": "Æbbandūn", "type": "place", "morphemes": ["æbba", "dūn"], "gloss": "name + hill", "source": "ASC"}
+{"name": "Buccingahamm", "type": "place", "morphemes": ["bucca", "hamm"], "gloss": "name + river meadow", "source": "ASC"}
+{"name": "Norþwīc", "type": "place", "morphemes": ["norþ", "wīc"], "gloss": "north + settlement", "source": "ASC"}
+{"name": "Gipeswīc", "type": "place", "morphemes": ["gip", "wīc"], "gloss": "name + settlement", "source": "ASC"}
+{"name": "Sandwīc", "type": "place", "morphemes": ["sand", "wīc"], "gloss": "sand + settlement", "source": "ASC"}
+{"name": "Tenet", "type": "place", "morphemes": ["tenet"], "gloss": "name", "source": "ASC"}
+{"name": "Scēapīg", "type": "place", "morphemes": ["scēap", "ēg"], "gloss": "sheep + island", "source": "ASC"}
+{"name": "Meresīg", "type": "place", "morphemes": ["mere", "ēg"], "gloss": "lake + island", "source": "ASC"}
+{"name": "Folcanstān", "type": "place", "morphemes": ["folca", "stān"], "gloss": "name + stone", "source": "ASC"}
+{"name": "Seolesīg", "type": "place", "morphemes": ["seolh", "ēg"], "gloss": "seal + island", "source": "OE Bede"}
+{"name": "Bōsanhamm", "type": "place", "morphemes": ["bōsa", "hamm"], "gloss": "name + river meadow", "source": "Bede"}
+{"name": "Rendlæsham", "type": "place", "morphemes": ["rendel", "hām"], "gloss": "name + homestead", "source": "Bede"}
+{"name": "Twīfyrde", "type": "place", "morphemes": ["twī", "ford"], "gloss": "two + ford", "source": "Bede"}
+{"name": "Beardanēg", "type": "place", "morphemes": ["bearda", "ēg"], "gloss": "name + island", "source": "Bede; ASC"}
+{"name": "Hefenfeld", "type": "place", "morphemes": ["heofon", "feld"], "gloss": "heaven + open land", "source": "Bede"}
+{"name": "Maserfeld", "type": "place", "morphemes": ["maser", "feld"], "gloss": "name + open land", "source": "Bede"}
+{"name": "Bearwe", "type": "place", "morphemes": ["bearu"], "gloss": "grove", "source": "OE Bede"}
+{"name": "Strēonæshealh", "type": "place", "morphemes": ["strēon", "healh"], "gloss": "name + nook", "source": "Bede"}
+{"name": "Clofeshōh", "type": "place", "morphemes": ["clof", "hōh"], "gloss": "name + spur", "source": "Bede; Charters"}
+{"name": "Cealchȳþ", "type": "place", "morphemes": ["cealc", "hȳþ"], "gloss": "chalk + landing place", "source": "ASC"}
+{"name": "Āclēa", "type": "place", "morphemes": ["āc", "lēah"], "gloss": "oak + clearing", "source": "ASC"}
+{"name": "Ottanford", "type": "place", "morphemes": ["otta", "ford"], "gloss": "name + ford", "source": "ASC"}
+{"name": "Þēodford", "type": "place", "morphemes": ["þēod", "ford"], "gloss": "nation + ford", "source": "ASC"}
+{"name": "Grantabrycg", "type": "place", "morphemes": ["granta", "brycg"], "gloss": "Granta + bridge", "source": "ASC"}
+{"name": "Cyningestūn", "type": "place", "morphemes": ["cyning", "tūn"], "gloss": "king + farmstead", "source": "ASC"}
+{"name": "Stæfford", "type": "place", "morphemes": ["stæþ", "ford"], "gloss": "bank + ford", "source": "ASC"}
+{"name": "Ciricbyrig", "type": "place", "morphemes": ["cirice", "burg"], "gloss": "church + fortress", "source": "ASC"}
+{"name": "Rūmcofa", "type": "place", "morphemes": ["rūm", "cofa"], "gloss": "roomy + cove", "source": "ASC"}
+{"name": "Temesford", "type": "place", "morphemes": ["temes", "ford"], "gloss": "Thames + ford", "source": "ASC"}
+{"name": "Badecanwiella", "type": "place", "morphemes": ["badeca", "wiella"], "gloss": "name + spring", "source": "ASC"}
+{"name": "Þelwæl", "type": "place", "morphemes": ["þel", "wæl"], "gloss": "plank + pool", "source": "ASC"}
+{"name": "Brægentford", "type": "place", "morphemes": ["bregent", "ford"], "gloss": "name + ford", "source": "ASC"}
+{"name": "Exanmūþa", "type": "place", "morphemes": ["exe", "mūþ"], "gloss": "Exe + mouth", "source": "ASC"}
+{"name": "Portland", "type": "place", "morphemes": ["port", "land"], "gloss": "harbour + land", "source": "ASC"}
+{"name": "Sūþhamtūn", "type": "place", "morphemes": ["sūþ", "hamm", "tūn"], "gloss": "south + river meadow + farmstead", "source": "ASC"}
+{"name": "Hereford", "type": "place", "morphemes": ["here", "ford"], "gloss": "army + ford", "source": "ASC"}
+{"name": "Hēorot", "type": "other", "morphemes": ["heorot"], "gloss": "hart", "source": "Beowulf"}
+{"name": "Hrunting", "type": "other", "morphemes": ["hrunting"], "gloss": "name", "source": "Beowulf"}
+{"name": "Nægling", "type": "other", "morphemes": ["nægl"], "gloss": "nail", "source": "Beowulf"}
+{"name": "Mimming", "type": "other", "morphemes": ["mimming"], "gloss": "name", "source": "Waldere"}
+{"name": "Brōsinga mene", "type": "other", "morphemes": ["brōsing", "mene"], "gloss": "name + necklace", "source": "Beowulf"}
+{"name": "Wætlinga strǣt", "type": "other", "morphemes": ["wætla", "strǣt"], "gloss": "name + road", "source": "ASC; Charters"}
+{"name": "Icenhilde strǣt", "type": "other", "morphemes": ["icenhild", "strǣt"], "gloss": "name + road", "source": "Charters"}
+{"name": "Wōdnes dīc", "type": "other", "morphemes": ["wōden", "dīc"], "gloss": "Woden + dyke", "source": "Charters"}
+{"name": "Grīmes dīc", "type": "other", "morphemes": ["grīm", "dīc"], "gloss": "name + dyke", "source": "Charters"}
+{"name": "Ecgbryhtesstān", "type": "other", "morphemes": ["ecg", "beorht", "stān"], "gloss": "edge + bright + stone", "source": "ASC"}
+{"name": "Æþelingadene", "type": "other", "morphemes": ["æþeling", "denu"], "gloss": "prince + dale", "source": "ASC"}
+{"name": "Ringmere", "type": "other", "morphemes": ["hring", "mere"], "gloss": "ring + lake", "source": "ASC"}
+{"name": "Middangeard", "type": "other", "morphemes": ["midd", "geard"], "gloss": "middle + yard", "source": "Cædmon's Hymn; Beowulf"}
+{"name": "Neorxnawang", "type": "other", "morphemes": ["neorxna", "wang"], "gloss": "name + plain", "source": "Genesis A; Christ and Satan"}
+{"name": "Earnanæs", "type": "other", "morphemes": ["earn", "næs"], "gloss": "eagle + headland", "source": "Beowulf"}
+{"name": "Hrōnesnæs", "type": "other", "morphemes": ["hrān", "næs"], "gloss": "whale + headland", "source": "Beowulf"}
+{"name": "Wendelsǣ", "type": "other", "morphemes": ["wendel", "sǣ"], "gloss": "name + sea", "source": "OE Orosius"}
+{"name": "Cwēnsǣ", "type": "other", "morphemes": ["cwēnas", "sǣ"], "gloss": "Kvens + sea", "source": "OE Orosius"}
+{"name": "Ēstmere", "type": "other", "morphemes": ["ēste", "mere"], "gloss": "Ests + lake", "source": "OE Orosius"}
+{"name": "Mōdraniht", "type": "other", "morphemes": ["mōdor", "niht"], "gloss": "mother + night", "source": "Bede"}
+{"name": "Gēol", "type": "other", "morphemes": ["gēol"], "gloss": "Yule", "source": "Bede; Menologium"}
+{"name": "Ēastron", "type": "other", "morphemes": ["ēaster"], "gloss": "Easter", "source": "ASC"}
+{"name": "Hlāfmæsse", "type": "other", "morphemes": ["hlāf", "mæsse"], "gloss": "loaf + mass", "source": "ASC"}
+{"name": "Candelmæsse", "type": "other", "morphemes": ["candel", "mæsse"], "gloss": "candle + mass", "source": "ASC"}
+{"name": "Solmōnaþ", "type": "other", "morphemes": ["sol", "mōnaþ"], "gloss": "name + month", "source": "Bede; OE Martyrology; Menologium"}
+{"name": "Hrēþmōnaþ", "type": "other", "morphemes": ["hrēþe", "mōnaþ"], "gloss": "Hrethe + month", "source": "Bede; OE Martyrology; Menologium"}
+{"name": "Ēastermōnaþ", "type": "other", "morphemes": ["ēaster", "mōnaþ"], "gloss": "Easter + month", "source": "Bede; OE Martyrology; Menologium"}
+{"name": "Þrimilce", "type": "other", "morphemes": ["þrī", "meolc"], "gloss": "three + milk", "source": "Bede; OE Martyrology; Menologium"}
+{"name": "Līþa", "type": "other", "morphemes": ["līþa"], "gloss": "mild", "source": "Bede; OE Martyrology; Menologium"}
+{"name": "Wēodmōnaþ", "type": "other", "morphemes": ["wēod", "mōnaþ"], "gloss": "weed + month", "source": "Bede; OE Martyrology; Menologium"}
+{"name": "Hāligmōnaþ", "type": "other", "morphemes": ["hālig", "mōnaþ"], "gloss": "holy + month", "source": "Bede; OE Martyrology; Menologium"}
+{"name": "Winterfylleþ", "type": "other", "morphemes": ["winter", "fylleþ"], "gloss": "winter + full moon", "source": "Bede; OE Martyrology; Menologium"}
+{"name": "Blōtmōnaþ", "type": "other", "morphemes": ["blōt", "mōnaþ"], "gloss": "sacrifice + month", "source": "Bede; OE Martyrology; Menologium"}
+{"name": "Sunnandæg", "type": "other", "morphemes": ["sunne", "dæg"], "gloss": "sun + day", "source": "OE prose"}
+{"name": "Mōnandæg", "type": "other", "morphemes": ["mōna", "dæg"], "gloss": "moon + day", "source": "OE prose"}
+{"name": "Tīwesdæg", "type": "other", "morphemes": ["tīw", "dæg"], "gloss": "Tiw + day", "source": "OE prose"}
+{"name": "Wōdnesdæg", "type": "other", "morphemes": ["wōden", "dæg"], "gloss": "Woden + day", "source": "OE prose"}
+{"name": "Þunresdæg", "type": "other", "morphemes": ["þunor", "dæg"], "gloss": "thunder + day", "source": "OE prose"}
+{"name": "Frīgedæg", "type": "other", "morphemes": ["frīg", "dæg"], "gloss": "Frig + day", "source": "OE prose"}
+{"name": "Sæterndæg", "type": "other", "morphemes": ["sætern", "dæg"], "gloss": "Saturn + day", "source": "OE prose"}

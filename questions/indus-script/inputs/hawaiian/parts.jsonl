@@ -1,0 +1,573 @@
+{"m": "a", "category": "grammar_suffix", "stability": 3, "gloss": "of", "in_names": 6}
+{"m": "ahi", "category": "landscape", "stability": 3, "gloss": "fire", "in_names": 2}
+{"m": "akalana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "akua", "category": "deity", "stability": 1, "gloss": "god", "in_names": 2}
+{"m": "ala", "category": "landscape", "stability": 3, "gloss": "path", "in_names": 2}
+{"m": "alapai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "alii", "category": "title_rank", "stability": 3, "gloss": "chief", "in_names": 3}
+{"m": "anahola", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "anahulu", "category": "other", "stability": 1, "gloss": "ten days", "in_names": 1}
+{"m": "anaōa", "category": "other", "stability": 1, "gloss": "projections", "in_names": 1}
+{"m": "anu", "category": "quality_size", "stability": 2, "gloss": "cool", "in_names": 1}
+{"m": "ao", "category": "landscape", "stability": 3, "gloss": "cloud", "in_names": 3}
+{"m": "au", "category": "other", "stability": 1, "gloss": "era, current", "in_names": 3}
+{"m": "ava", "category": "animal", "stability": 2, "gloss": "milkfish", "in_names": 1}
+{"m": "aa", "category": "plant", "stability": 2, "gloss": "roots", "in_names": 1}
+{"m": "ehu", "category": "landscape", "stability": 3, "gloss": "spray", "in_names": 1}
+{"m": "hae", "category": "other", "stability": 1, "gloss": "wrath", "in_names": 1}
+{"m": "haele", "category": "verb_deed", "stability": 2, "gloss": "travel", "in_names": 1}
+{"m": "haho", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "haka", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hakalanileo", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "haki", "category": "verb_deed", "stability": 2, "gloss": "broken", "in_names": 1}
+{"m": "haku", "category": "title_rank", "stability": 3, "gloss": "lord", "in_names": 1}
+{"m": "hala", "category": "plant", "stability": 2, "gloss": "pandanus", "in_names": 2}
+{"m": "hale", "category": "place_word", "stability": 3, "gloss": "house", "in_names": 10}
+{"m": "hana", "category": "landscape", "stability": 3, "gloss": "bay", "in_names": 4}
+{"m": "hanalaa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "haole", "category": "other", "stability": 1, "gloss": "foreigner", "in_names": 1}
+{"m": "hau", "category": "plant", "stability": 2, "gloss": "hau tree", "in_names": 3}
+{"m": "hauailiki", "category": "quality_size", "stability": 2, "gloss": "bitter cold", "in_names": 1}
+{"m": "haumea", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "havaii", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "haae", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "haalilio", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "haikū", "category": "verb_deed", "stability": 2, "gloss": "speak abruptly or sharp break", "in_names": 1}
+{"m": "hekili", "category": "landscape", "stability": 3, "gloss": "thunder", "in_names": 2}
+{"m": "hele", "category": "verb_deed", "stability": 2, "gloss": "going, snared", "in_names": 1}
+{"m": "heleipava", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hema", "category": "direction", "stability": 3, "gloss": "south, left", "in_names": 1}
+{"m": "hevaheva", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hee", "category": "animal", "stability": 2, "gloss": "squid", "in_names": 1}
+{"m": "heeia", "category": "verb_deed", "stability": 2, "gloss": "surfed, washed out", "in_names": 1}
+{"m": "hiki", "category": "verb_deed", "stability": 2, "gloss": "moving", "in_names": 1}
+{"m": "hikianalia", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hikina", "category": "verb_deed", "stability": 2, "gloss": "rising", "in_names": 1}
+{"m": "hiku", "category": "number", "stability": 3, "gloss": "seven", "in_names": 2}
+{"m": "hilo", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hina", "category": "deity", "stability": 1, "gloss": "Hina", "in_names": 4}
+{"m": "hinaiaeleele", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hinanalo", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hii", "category": "verb_deed", "stability": 2, "gloss": "carry", "in_names": 1}
+{"m": "hiiaka", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "hoa", "category": "other", "stability": 1, "gloss": "companion", "in_names": 2}
+{"m": "hoaka", "category": "celestial", "stability": 1, "gloss": "crescent", "in_names": 1}
+{"m": "hoku", "category": "celestial", "stability": 1, "gloss": "Hoku (full-moon night)", "in_names": 2}
+{"m": "holoholo", "category": "verb_deed", "stability": 2, "gloss": "run", "in_names": 1}
+{"m": "holoholopinaau", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "holoae", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hono", "category": "landscape", "stability": 3, "gloss": "bay", "in_names": 7}
+{"m": "honu", "category": "animal", "stability": 2, "gloss": "turtle", "in_names": 2}
+{"m": "honua", "category": "landscape", "stability": 3, "gloss": "land", "in_names": 2}
+{"m": "hou", "category": "quality_size", "stability": 2, "gloss": "new", "in_names": 1}
+{"m": "hoohōkū", "category": "verb_deed", "stability": 2, "gloss": "make stars", "in_names": 1}
+{"m": "hookamalii", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hookele", "category": "verb_deed", "stability": 2, "gloss": "steer", "in_names": 1}
+{"m": "hookena", "category": "verb_deed", "stability": 2, "gloss": "satisfy thirst", "in_names": 1}
+{"m": "hoolave", "category": "verb_deed", "stability": 2, "gloss": "carrying away", "in_names": 1}
+{"m": "hoomalu", "category": "verb_deed", "stability": 2, "gloss": "restricted", "in_names": 1}
+{"m": "hoonee", "category": "verb_deed", "stability": 2, "gloss": "move", "in_names": 1}
+{"m": "huaā", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "huku", "category": "other", "stability": 1, "gloss": "projection", "in_names": 1}
+{"m": "huli", "category": "verb_deed", "stability": 2, "gloss": "turning", "in_names": 1}
+{"m": "hulēia", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "humehume", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "humuula", "category": "landscape", "stability": 3, "gloss": "jasper stone", "in_names": 1}
+{"m": "huna", "category": "quality_size", "stability": 2, "gloss": "tiny particle", "in_names": 1}
+{"m": "hā", "category": "plant", "stability": 2, "gloss": "stalk, breath", "in_names": 1}
+{"m": "hākau", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hālii", "category": "verb_deed", "stability": 2, "gloss": "spread over", "in_names": 1}
+{"m": "hāmākua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hāna", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hānai", "category": "kinship", "stability": 3, "gloss": "foster child", "in_names": 1}
+{"m": "hānau", "category": "verb_deed", "stability": 2, "gloss": "give birth", "in_names": 1}
+{"m": "hāpai", "category": "verb_deed", "stability": 2, "gloss": "elevate", "in_names": 1}
+{"m": "hāena", "category": "quality_size", "stability": 2, "gloss": "red hot", "in_names": 1}
+{"m": "hāule", "category": "verb_deed", "stability": 2, "gloss": "fall", "in_names": 1}
+{"m": "hāupu", "category": "verb_deed", "stability": 2, "gloss": "recollection", "in_names": 1}
+{"m": "hōkū", "category": "celestial", "stability": 1, "gloss": "star", "in_names": 6}
+{"m": "hōkūkauōpae", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hōlua", "category": "artefact", "stability": 2, "gloss": "sled course", "in_names": 1}
+{"m": "hōnaunau", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "hōpoe", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "i", "category": "grammar_suffix", "stability": 3, "gloss": "in", "in_names": 6}
+{"m": "iki", "category": "quality_size", "stability": 2, "gloss": "small", "in_names": 3}
+{"m": "ikiiki", "category": "quality_size", "stability": 2, "gloss": "stifling heat", "in_names": 1}
+{"m": "imu", "category": "artefact", "stability": 2, "gloss": "oven", "in_names": 1}
+{"m": "ia", "category": "animal", "stability": 2, "gloss": "fish", "in_names": 1}
+{"m": "ka", "category": "grammar_suffix", "stability": 3, "gloss": "the", "in_names": 67}
+{"m": "kaha", "category": "place_word", "stability": 3, "gloss": "place", "in_names": 2}
+{"m": "kahahana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kahaimoelea", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kahana", "category": "verb_deed", "stability": 2, "gloss": "cutting, turning point", "in_names": 1}
+{"m": "kahai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaheiheimālie", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kahi", "category": "number", "stability": 3, "gloss": "first", "in_names": 1}
+{"m": "kahiki", "category": "place_name", "stability": 2, "gloss": "Kahiki (Tahiti)", "in_names": 5}
+{"m": "kahiko", "category": "quality_size", "stability": 2, "gloss": "ancient", "in_names": 1}
+{"m": "kahiukā", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kahoukapu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kahoovaha", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kahoālii", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kahuilaokalani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kahulupue", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kai", "category": "landscape", "stability": 3, "gloss": "sea", "in_names": 4}
+{"m": "kaikilani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaikioeva", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kala", "category": "verb_deed", "stability": 2, "gloss": "proclaim", "in_names": 1}
+{"m": "kalaepuni", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalaimamahū", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalalea", "category": "quality_size", "stability": 2, "gloss": "prominent", "in_names": 1}
+{"m": "kalamainuu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalanikauleleiaivi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalanikaumakaovakea", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalanikūpule", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalanimanuia", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalanimoku", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalaninuiīamamao", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalapana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalaunuiohua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalelealuakā", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kalola", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kama", "category": "kinship", "stability": 3, "gloss": "child", "in_names": 1}
+{"m": "kamaiole", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kamakahelei", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kamakaīmoku", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kamakou", "category": "plant", "stability": 2, "gloss": "Peucedanum herb", "in_names": 1}
+{"m": "kamalama", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kamaluohua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kamalālāvalu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kamanava", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kamauaua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kamaunuaniho", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kamehaikana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kameeiamoku", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kanaka", "category": "other", "stability": 1, "gloss": "person", "in_names": 2}
+{"m": "kanaloa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "kanilehua", "category": "landscape", "stability": 3, "gloss": "rain that lehua flowers drink", "in_names": 1}
+{"m": "kanipahu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaniuhi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaomi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kapa", "category": "direction", "stability": 3, "gloss": "border", "in_names": 1}
+{"m": "kapaau", "category": "place_word", "stability": 3, "gloss": "raised place in a heiau", "in_names": 1}
+{"m": "kapaihi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kapiiohokalani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kapo", "category": "deity", "stability": 1, "gloss": "Kapo (goddess)", "in_names": 2}
+{"m": "kapu", "category": "other", "stability": 1, "gloss": "taboo", "in_names": 5}
+{"m": "kapule", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kapunohu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kapōulakīnau", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kau", "category": "place_word", "stability": 3, "gloss": "place", "in_names": 3}
+{"m": "kaua", "category": "verb_deed", "stability": 2, "gloss": "battle", "in_names": 1}
+{"m": "kauahoa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kauai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kauhi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kauholanuimahu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kauilani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaukaualii", "category": "title_rank", "stability": 3, "gloss": "lesser chief", "in_names": 1}
+{"m": "kaukonahua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaulike", "category": "quality_size", "stability": 2, "gloss": "equality", "in_names": 1}
+{"m": "kaulu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaulua", "category": "artefact", "stability": 2, "gloss": "double canoe", "in_names": 1}
+{"m": "kaumualii", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaunakakai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaunolū", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaupeepee", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kauvā", "category": "occupation_group", "stability": 2, "gloss": "outcast", "in_names": 1}
+{"m": "kavaokaohele", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kavelo", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kavelu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaa", "category": "verb_deed", "stability": 2, "gloss": "rolling", "in_names": 2}
+{"m": "kaahupāhau", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaala", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaaona", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaeokūlani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaiana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaula", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaāvela", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaōleiokū", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaōpulupulu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaū", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ke", "category": "grammar_suffix", "stability": 3, "gloss": "the", "in_names": 16}
+{"m": "kea", "category": "colour", "stability": 2, "gloss": "white", "in_names": 5}
+{"m": "keakamahana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "keaulumoku", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "keave", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 6}
+{"m": "kekauōnohi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kekuaokalani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kekuiapoiva", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kekāuluohi", "category": "plant", "stability": 2, "gloss": "the vine growing with shoots", "in_names": 1}
+{"m": "kekūāiva", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kele", "category": "quality_size", "stability": 2, "gloss": "muddy", "in_names": 1}
+{"m": "keliiokaloa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kepakailiula", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "keōpūolani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "keōua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "keeaumoku", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "keelikōlani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kia", "category": "artefact", "stability": 2, "gloss": "prop", "in_names": 1}
+{"m": "kiha", "category": "deity", "stability": 1, "gloss": "supernatural lizard", "in_names": 3}
+{"m": "kila", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kilohana", "category": "landscape", "stability": 3, "gloss": "lookout point", "in_names": 1}
+{"m": "kini", "category": "quality_size", "stability": 2, "gloss": "many", "in_names": 7}
+{"m": "kio", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kii", "category": "artefact", "stability": 2, "gloss": "image", "in_names": 3}
+{"m": "koa", "category": "occupation_group", "stability": 2, "gloss": "warrior", "in_names": 2}
+{"m": "koalaukani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kohala", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kohe", "category": "body_part", "stability": 2, "gloss": "vagina", "in_names": 1}
+{"m": "koholā", "category": "animal", "stability": 2, "gloss": "whale", "in_names": 1}
+{"m": "koko", "category": "body_part", "stability": 2, "gloss": "blood", "in_names": 1}
+{"m": "koloa", "category": "animal", "stability": 2, "gloss": "duck", "in_names": 1}
+{"m": "kolu", "category": "number", "stability": 3, "gloss": "three", "in_names": 1}
+{"m": "kona", "category": "direction", "stability": 3, "gloss": "leeward", "in_names": 3}
+{"m": "konia", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "konohiki", "category": "title_rank", "stability": 3, "gloss": "land overseer", "in_names": 1}
+{"m": "kou", "category": "plant", "stability": 2, "gloss": "kou tree", "in_names": 1}
+{"m": "koi", "category": "artefact", "stability": 2, "gloss": "adze", "in_names": 1}
+{"m": "koolau", "category": "direction", "stability": 3, "gloss": "windward", "in_names": 3}
+{"m": "kua", "category": "body_part", "stability": 2, "gloss": "back", "in_names": 3}
+{"m": "kuahine", "category": "kinship", "stability": 3, "gloss": "sister (of a male)", "in_names": 1}
+{"m": "kuaihelani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kuaana", "category": "kinship", "stability": 3, "gloss": "elder sibling", "in_names": 1}
+{"m": "kuhina", "category": "title_rank", "stability": 3, "gloss": "minister", "in_names": 1}
+{"m": "kukona", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kukui", "category": "celestial", "stability": 1, "gloss": "light", "in_names": 1}
+{"m": "kula", "category": "landscape", "stability": 3, "gloss": "plain", "in_names": 1}
+{"m": "kuli", "category": "body_part", "stability": 2, "gloss": "knee", "in_names": 1}
+{"m": "kulukulua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kumu", "category": "other", "stability": 1, "gloss": "beginning", "in_names": 3}
+{"m": "kupua", "category": "deity", "stability": 1, "gloss": "demigod", "in_names": 1}
+{"m": "kāhala", "category": "animal", "stability": 2, "gloss": "amberjack fish", "in_names": 1}
+{"m": "kākaalaneo", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kākuhiheva", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kālai", "category": "verb_deed", "stability": 2, "gloss": "carve", "in_names": 2}
+{"m": "kāne", "category": "deity", "stability": 1, "gloss": "Kāne", "in_names": 9}
+{"m": "kāneikaulanaula", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kānekapōlei", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kāneoneo", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kāpī", "category": "verb_deed", "stability": 2, "gloss": "sprinkle", "in_names": 1}
+{"m": "kāula", "category": "occupation_group", "stability": 2, "gloss": "prophet", "in_names": 1}
+{"m": "kāana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kāelo", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kāili", "category": "verb_deed", "stability": 2, "gloss": "snatch", "in_names": 1}
+{"m": "kēhau", "category": "landscape", "stability": 3, "gloss": "dew", "in_names": 1}
+{"m": "kī", "category": "plant", "stability": 2, "gloss": "ti plant", "in_names": 1}
+{"m": "kīholo", "category": "artefact", "stability": 2, "gloss": "fishhook", "in_names": 1}
+{"m": "kīkī", "category": "verb_deed", "stability": 2, "gloss": "spouting", "in_names": 1}
+{"m": "kīlauea", "category": "verb_deed", "stability": 2, "gloss": "spewing, much spreading", "in_names": 1}
+{"m": "kīnau", "category": "quality_size", "stability": 2, "gloss": "flaw", "in_names": 1}
+{"m": "kīpuupuu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kīvalaō", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kō", "category": "verb_deed", "stability": 2, "gloss": "draw", "in_names": 1}
+{"m": "kōkee", "category": "verb_deed", "stability": 2, "gloss": "bend, wind", "in_names": 1}
+{"m": "kōloa", "category": "plant", "stability": 2, "gloss": "long cane", "in_names": 1}
+{"m": "kōnāhua", "category": "body_part", "stability": 2, "gloss": "fat innards", "in_names": 1}
+{"m": "kū", "category": "deity", "stability": 1, "gloss": "Kū", "in_names": 17}
+{"m": "kūaiva", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kūalii", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kūanuuanu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kūhaimoana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kūkala", "category": "verb_deed", "stability": 2, "gloss": "proclaim", "in_names": 1}
+{"m": "kūkaniloko", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kūkohou", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kūmahana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kūpāaikee", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lahaina", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "laka", "category": "deity", "stability": 1, "gloss": "Laka", "in_names": 2}
+{"m": "lalau", "category": "verb_deed", "stability": 2, "gloss": "straying", "in_names": 1}
+{"m": "lama", "category": "artefact", "stability": 2, "gloss": "torch", "in_names": 3}
+{"m": "lanakavai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lani", "category": "landscape", "stability": 3, "gloss": "heaven", "in_names": 13}
+{"m": "lau", "category": "plant", "stability": 2, "gloss": "leaf", "in_names": 2}
+{"m": "laupapa", "category": "landscape", "stability": 3, "gloss": "flat plain", "in_names": 1}
+{"m": "laa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "laakona", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "laamaomao", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lea", "category": "deity", "stability": 1, "gloss": "Lea (goddess)", "in_names": 2}
+{"m": "lehu", "category": "landscape", "stability": 3, "gloss": "ash", "in_names": 1}
+{"m": "lehua", "category": "plant", "stability": 2, "gloss": "lehua flower", "in_names": 3}
+{"m": "lei", "category": "artefact", "stability": 2, "gloss": "lei", "in_names": 3}
+{"m": "lele", "category": "verb_deed", "stability": 2, "gloss": "flight", "in_names": 1}
+{"m": "leleiōhoku", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lena", "category": "colour", "stability": 2, "gloss": "yellow", "in_names": 1}
+{"m": "lepe", "category": "body_part", "stability": 2, "gloss": "comb", "in_names": 1}
+{"m": "lepelepe", "category": "body_part", "stability": 2, "gloss": "labia minora", "in_names": 1}
+{"m": "lihi", "category": "direction", "stability": 3, "gloss": "edge", "in_names": 2}
+{"m": "liholiho", "category": "quality_size", "stability": 2, "gloss": "glowing", "in_names": 1}
+{"m": "likelike", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "liliha", "category": "quality_size", "stability": 2, "gloss": "rich, oily", "in_names": 1}
+{"m": "lilinoe", "category": "landscape", "stability": 3, "gloss": "fine mist", "in_names": 1}
+{"m": "liliu", "category": "quality_size", "stability": 2, "gloss": "smarting", "in_names": 1}
+{"m": "lilo", "category": "verb_deed", "stability": 2, "gloss": "lost (to sight)", "in_names": 1}
+{"m": "lipo", "category": "other", "stability": 1, "gloss": "deep darkness", "in_names": 1}
+{"m": "lii", "category": "quality_size", "stability": 2, "gloss": "little", "in_names": 3}
+{"m": "loa", "category": "quality_size", "stability": 2, "gloss": "long", "in_names": 15}
+{"m": "lohiau", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "loko", "category": "landscape", "stability": 3, "gloss": "pond", "in_names": 1}
+{"m": "lona", "category": "artefact", "stability": 2, "gloss": "canoe block", "in_names": 2}
+{"m": "lono", "category": "deity", "stability": 1, "gloss": "Lono", "in_names": 3}
+{"m": "lonohonuakini", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lonomaaikanaka", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lua", "category": "number", "stability": 3, "gloss": "two", "in_names": 7}
+{"m": "luahoomoe", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "luanuu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "luku", "category": "verb_deed", "stability": 2, "gloss": "destruction", "in_names": 1}
+{"m": "lulu", "category": "quality_size", "stability": 2, "gloss": "sheltered", "in_names": 1}
+{"m": "lumahai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "luna", "category": "direction", "stability": 3, "gloss": "high", "in_names": 1}
+{"m": "lupe", "category": "artefact", "stability": 2, "gloss": "kite", "in_names": 1}
+{"m": "luu", "category": "verb_deed", "stability": 2, "gloss": "dive", "in_names": 2}
+{"m": "luukia", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lā", "category": "celestial", "stability": 1, "gloss": "sun", "in_names": 4}
+{"m": "lāhui", "category": "kinship", "stability": 3, "gloss": "family", "in_names": 1}
+{"m": "lānai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "lāau", "category": "plant", "stability": 2, "gloss": "wood", "in_names": 2}
+{"m": "lāie", "category": "plant", "stability": 2, "gloss": "ʻie vine leaf", "in_names": 1}
+{"m": "lāielohelohe", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lēahi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lēia", "category": "quality_size", "stability": 2, "gloss": "abundance", "in_names": 1}
+{"m": "līhue", "category": "quality_size", "stability": 2, "gloss": "cold chill", "in_names": 1}
+{"m": "līloa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "lūlū", "category": "verb_deed", "stability": 2, "gloss": "shake", "in_names": 1}
+{"m": "mahi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mai", "category": "grammar_suffix", "stability": 3, "gloss": "from", "in_names": 1}
+{"m": "maikai", "category": "quality_size", "stability": 2, "gloss": "good", "in_names": 1}
+{"m": "maile", "category": "plant", "stability": 2, "gloss": "maile vine", "in_names": 1}
+{"m": "maka", "category": "body_part", "stability": 2, "gloss": "eye", "in_names": 4}
+{"m": "makahiki", "category": "other", "stability": 1, "gloss": "year", "in_names": 1}
+{"m": "makalii", "category": "quality_size", "stability": 2, "gloss": "tiny", "in_names": 1}
+{"m": "makaāinana", "category": "occupation_group", "stability": 2, "gloss": "commoner", "in_names": 1}
+{"m": "makiki", "category": "artefact", "stability": 2, "gloss": "weight stone", "in_names": 1}
+{"m": "makua", "category": "kinship", "stability": 3, "gloss": "parent", "in_names": 1}
+{"m": "makuakaūmana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "malama", "category": "celestial", "stability": 1, "gloss": "moon", "in_names": 2}
+{"m": "maloo", "category": "quality_size", "stability": 2, "gloss": "dry", "in_names": 1}
+{"m": "mana", "category": "quality_size", "stability": 2, "gloss": "forked", "in_names": 1}
+{"m": "mano", "category": "quality_size", "stability": 2, "gloss": "many", "in_names": 2}
+{"m": "manokalanipō", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "manono", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "manu", "category": "animal", "stability": 2, "gloss": "bird", "in_names": 2}
+{"m": "maoli", "category": "quality_size", "stability": 2, "gloss": "true", "in_names": 1}
+{"m": "mauhili", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "maui", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mauli", "category": "other", "stability": 1, "gloss": "life", "in_names": 1}
+{"m": "mauna", "category": "landscape", "stability": 3, "gloss": "mountain", "in_names": 3}
+{"m": "mea", "category": "colour", "stability": 2, "gloss": "reddish", "in_names": 1}
+{"m": "mehame", "category": "plant", "stability": 2, "gloss": "mehame wood", "in_names": 1}
+{"m": "mehameha", "category": "quality_size", "stability": 2, "gloss": "lonely", "in_names": 2}
+{"m": "menehune", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "milo", "category": "verb_deed", "stability": 2, "gloss": "twist", "in_names": 1}
+{"m": "milu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "moa", "category": "animal", "stability": 2, "gloss": "chicken", "in_names": 1}
+{"m": "moana", "category": "place_word", "stability": 3, "gloss": "campground", "in_names": 1}
+{"m": "moae", "category": "landscape", "stability": 3, "gloss": "trade wind", "in_names": 1}
+{"m": "moho", "category": "other", "stability": 1, "gloss": "chosen one", "in_names": 1}
+{"m": "moko", "category": "animal", "stability": 2, "gloss": "lizard", "in_names": 1}
+{"m": "moku", "category": "landscape", "stability": 3, "gloss": "island", "in_names": 10}
+{"m": "molo", "category": "verb_deed", "stability": 2, "gloss": "tie", "in_names": 2}
+{"m": "molokai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "moo", "category": "animal", "stability": 2, "gloss": "lizard", "in_names": 3}
+{"m": "mooinanea", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "muku", "category": "verb_deed", "stability": 2, "gloss": "cut short", "in_names": 1}
+{"m": "mā", "category": "grammar_suffix", "stability": 3, "gloss": "and", "in_names": 1}
+{"m": "māhana", "category": "kinship", "stability": 3, "gloss": "twin", "in_names": 1}
+{"m": "māhealani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "māhoe", "category": "kinship", "stability": 3, "gloss": "twins", "in_names": 1}
+{"m": "māhu", "category": "landscape", "stability": 3, "gloss": "steam", "in_names": 1}
+{"m": "mākaha", "category": "quality_size", "stability": 2, "gloss": "fierce", "in_names": 1}
+{"m": "mākena", "category": "quality_size", "stability": 2, "gloss": "abundance", "in_names": 1}
+{"m": "mākohilani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mākua", "category": "kinship", "stability": 3, "gloss": "parents", "in_names": 1}
+{"m": "māla", "category": "place_word", "stability": 3, "gloss": "garden", "in_names": 1}
+{"m": "māmala", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "māmalu", "category": "verb_deed", "stability": 2, "gloss": "protector", "in_names": 1}
+{"m": "mānalo", "category": "quality_size", "stability": 2, "gloss": "potable", "in_names": 1}
+{"m": "mānele", "category": "artefact", "stability": 2, "gloss": "sedan chair", "in_names": 1}
+{"m": "mānoa", "category": "quality_size", "stability": 2, "gloss": "vast", "in_names": 1}
+{"m": "mānā", "category": "quality_size", "stability": 2, "gloss": "arid", "in_names": 1}
+{"m": "māpuana", "category": "quality_size", "stability": 2, "gloss": "fragrance", "in_names": 1}
+{"m": "māui", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "māveke", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "māilikūkahi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "māulu", "category": "quality_size", "stability": 2, "gloss": "tired", "in_names": 1}
+{"m": "mōhalu", "category": "quality_size", "stability": 2, "gloss": "loose, at ease", "in_names": 1}
+{"m": "mōīkeha", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mū", "category": "verb_deed", "stability": 2, "gloss": "gathering", "in_names": 3}
+{"m": "nana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nanailani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nanakaoko", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nanakehili", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nanamaoa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nanaie", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nanaulu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "naina", "category": "verb_deed", "stability": 2, "gloss": "conquering", "in_names": 1}
+{"m": "niha", "category": "quality_size", "stability": 2, "gloss": "unfriendly", "in_names": 1}
+{"m": "niheu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nihoa", "category": "quality_size", "stability": 2, "gloss": "firmly set", "in_names": 1}
+{"m": "niihau", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nounou", "category": "verb_deed", "stability": 2, "gloss": "throwing", "in_names": 1}
+{"m": "nui", "category": "quality_size", "stability": 2, "gloss": "great", "in_names": 12}
+{"m": "nuku", "category": "other", "stability": 1, "gloss": "opening", "in_names": 1}
+{"m": "nua", "category": "quality_size", "stability": 2, "gloss": "heaped", "in_names": 1}
+{"m": "nuu", "category": "quality_size", "stability": 2, "gloss": "height", "in_names": 2}
+{"m": "nā", "category": "grammar_suffix", "stability": 3, "gloss": "the (pl.)", "in_names": 9}
+{"m": "nāihe", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nāmakehā", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nānā", "category": "verb_deed", "stability": 2, "gloss": "look at", "in_names": 1}
+{"m": "nānāhoa", "category": "deity", "stability": 1, "gloss": "Nānāhoa", "in_names": 1}
+{"m": "nāulu", "category": "landscape", "stability": 3, "gloss": "shower clouds", "in_names": 1}
+{"m": "nāvao", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nīnole", "category": "verb_deed", "stability": 2, "gloss": "bending", "in_names": 1}
+{"m": "nīau", "category": "plant", "stability": 2, "gloss": "coconut midrib", "in_names": 1}
+{"m": "o", "category": "grammar_suffix", "stability": 3, "gloss": "of", "in_names": 10}
+{"m": "ola", "category": "other", "stability": 1, "gloss": "life", "in_names": 3}
+{"m": "ole", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "olo", "category": "landscape", "stability": 3, "gloss": "hill", "in_names": 3}
+{"m": "olopana", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "one", "category": "landscape", "stability": 3, "gloss": "sand", "in_names": 1}
+{"m": "oahu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pahulu", "category": "landscape", "stability": 3, "gloss": "worn-out soil", "in_names": 2}
+{"m": "pahū", "category": "verb_deed", "stability": 2, "gloss": "burst", "in_names": 1}
+{"m": "pala", "category": "quality_size", "stability": 2, "gloss": "ripe", "in_names": 1}
+{"m": "palaoa", "category": "animal", "stability": 2, "gloss": "whale", "in_names": 1}
+{"m": "palena", "category": "direction", "stability": 3, "gloss": "boundary", "in_names": 1}
+{"m": "pali", "category": "landscape", "stability": 3, "gloss": "cliff", "in_names": 4}
+{"m": "palila", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "panaeva", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pani", "category": "artefact", "stability": 2, "gloss": "dam", "in_names": 1}
+{"m": "panopano", "category": "other", "stability": 1, "gloss": "dense darkness", "in_names": 1}
+{"m": "paoa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "papa", "category": "landscape", "stability": 3, "gloss": "stratum, foundation", "in_names": 2}
+{"m": "pau", "category": "verb_deed", "stability": 2, "gloss": "destroyed", "in_names": 1}
+{"m": "paumakua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pava", "category": "celestial", "stability": 1, "gloss": "predawn", "in_names": 1}
+{"m": "paa", "category": "quality_size", "stability": 2, "gloss": "solid", "in_names": 2}
+{"m": "pele", "category": "landscape", "stability": 3, "gloss": "lava", "in_names": 2}
+{"m": "peleiōhōlani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pelekunu", "category": "quality_size", "stability": 2, "gloss": "smelly", "in_names": 1}
+{"m": "peleuli", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pihana", "category": "quality_size", "stability": 2, "gloss": "fullness", "in_names": 1}
+{"m": "pili", "category": "verb_deed", "stability": 2, "gloss": "joining", "in_names": 4}
+{"m": "pii", "category": "verb_deed", "stability": 2, "gloss": "ascend", "in_names": 3}
+{"m": "piimaivaa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "piipii", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pio", "category": "quality_size", "stability": 2, "gloss": "curved", "in_names": 4}
+{"m": "poepoe", "category": "quality_size", "stability": 2, "gloss": "round", "in_names": 1}
+{"m": "poho", "category": "landscape", "stability": 3, "gloss": "depression", "in_names": 1}
+{"m": "poko", "category": "quality_size", "stability": 2, "gloss": "short", "in_names": 1}
+{"m": "poli", "category": "body_part", "stability": 2, "gloss": "bosom", "in_names": 3}
+{"m": "poipū", "category": "verb_deed", "stability": 2, "gloss": "crashing (as waves)", "in_names": 1}
+{"m": "puahi", "category": "artefact", "stability": 2, "gloss": "fireplace", "in_names": 1}
+{"m": "puaa", "category": "animal", "stability": 2, "gloss": "pig", "in_names": 2}
+{"m": "puku", "category": "verb_deed", "stability": 2, "gloss": "gather", "in_names": 1}
+{"m": "pulupulu", "category": "plant", "stability": 2, "gloss": "kindling", "in_names": 1}
+{"m": "puna", "category": "personal_name", "stability": 1, "gloss": "spring", "in_names": 2}
+{"m": "puni", "category": "verb_deed", "stability": 2, "gloss": "surrounding", "in_names": 1}
+{"m": "punia", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pupue", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pue", "category": "verb_deed", "stability": 2, "gloss": "hilled", "in_names": 1}
+{"m": "puu", "category": "landscape", "stability": 3, "gloss": "hill", "in_names": 7}
+{"m": "pā", "category": "place_word", "stability": 3, "gloss": "enclosure", "in_names": 2}
+{"m": "pāhala", "category": "verb_deed", "stability": 2, "gloss": "cultivation by burning mulch", "in_names": 1}
+{"m": "pāhoa", "category": "artefact", "stability": 2, "gloss": "dagger", "in_names": 1}
+{"m": "pāhoehoe", "category": "landscape", "stability": 3, "gloss": "smooth lava", "in_names": 1}
+{"m": "pākaa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pākākā", "category": "verb_deed", "stability": 2, "gloss": "to skim", "in_names": 1}
+{"m": "pākī", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pālolo", "category": "landscape", "stability": 3, "gloss": "clay", "in_names": 1}
+{"m": "pāmano", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pāao", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pāia", "category": "quality_size", "stability": 2, "gloss": "noisy", "in_names": 1}
+{"m": "pēpē", "category": "verb_deed", "stability": 2, "gloss": "crushed", "in_names": 1}
+{"m": "pīkoi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pō", "category": "celestial", "stability": 1, "gloss": "night", "in_names": 7}
+{"m": "pōhaku", "category": "landscape", "stability": 3, "gloss": "stone", "in_names": 1}
+{"m": "pōai", "category": "verb_deed", "stability": 2, "gloss": "surround", "in_names": 1}
+{"m": "pōopoo", "category": "landscape", "stability": 3, "gloss": "hole", "in_names": 1}
+{"m": "pū", "category": "animal", "stability": 2, "gloss": "conch", "in_names": 2}
+{"m": "pūlehu", "category": "verb_deed", "stability": 2, "gloss": "roasted", "in_names": 1}
+{"m": "pūovaina", "category": "landscape", "stability": 3, "gloss": "hill of placing (sacrifices)", "in_names": 1}
+{"m": "pūpū", "category": "animal", "stability": 2, "gloss": "shell", "in_names": 1}
+{"m": "ua", "category": "landscape", "stability": 3, "gloss": "rain", "in_names": 1}
+{"m": "uku", "category": "verb_deed", "stability": 2, "gloss": "paid", "in_names": 1}
+{"m": "ule", "category": "body_part", "stability": 2, "gloss": "penis", "in_names": 1}
+{"m": "uli", "category": "colour", "stability": 2, "gloss": "green", "in_names": 3}
+{"m": "uliuli", "category": "colour", "stability": 2, "gloss": "dark", "in_names": 2}
+{"m": "ulu", "category": "other", "stability": 1, "gloss": "inspiration", "in_names": 2}
+{"m": "vaha", "category": "body_part", "stability": 2, "gloss": "mouth", "in_names": 1}
+{"m": "vahi", "category": "place_word", "stability": 3, "gloss": "place", "in_names": 1}
+{"m": "vahie", "category": "plant", "stability": 2, "gloss": "firewood", "in_names": 1}
+{"m": "vahilani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "vahine", "category": "other", "stability": 1, "gloss": "woman", "in_names": 2}
+{"m": "vai", "category": "landscape", "stability": 3, "gloss": "water", "in_names": 38}
+{"m": "vaia", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "vaialua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "vaka", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "vale", "category": "grammar_suffix", "stability": 3, "gloss": "needlessly", "in_names": 1}
+{"m": "valo", "category": "verb_deed", "stability": 2, "gloss": "calling", "in_names": 1}
+{"m": "valu", "category": "quality_size", "stability": 2, "gloss": "many", "in_names": 1}
+{"m": "vao", "category": "landscape", "stability": 3, "gloss": "forest", "in_names": 3}
+{"m": "vaa", "category": "artefact", "stability": 2, "gloss": "canoe", "in_names": 1}
+{"m": "vaahila", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "vaavaa", "category": "quality_size", "stability": 2, "gloss": "furrowed", "in_names": 1}
+{"m": "vehe", "category": "verb_deed", "stability": 2, "gloss": "removed", "in_names": 1}
+{"m": "vehivehi", "category": "quality_size", "stability": 2, "gloss": "adorned", "in_names": 1}
+{"m": "velehu", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "veli", "category": "quality_size", "stability": 2, "gloss": "fearful", "in_names": 1}
+{"m": "vilivili", "category": "plant", "stability": 2, "gloss": "wiliwili tree", "in_names": 1}
+{"m": "vā", "category": "other", "stability": 1, "gloss": "noise", "in_names": 1}
+{"m": "vākea", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "āhole", "category": "animal", "stability": 2, "gloss": "mature āhole fish", "in_names": 1}
+{"m": "āiva", "category": "quality_size", "stability": 2, "gloss": "mysterious", "in_names": 1}
+{"m": "ākea", "category": "quality_size", "stability": 2, "gloss": "breadth", "in_names": 4}
+{"m": "ahu", "category": "artefact", "stability": 2, "gloss": "garment", "in_names": 3}
+{"m": "ai", "category": "verb_deed", "stability": 2, "gloss": "eat", "in_names": 3}
+{"m": "aiea", "category": "plant", "stability": 2, "gloss": "Nothocestrum tree", "in_names": 1}
+{"m": "aivohikupua", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "aiai", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "aki", "category": "artefact", "stability": 2, "gloss": "hair switch", "in_names": 1}
+{"m": "alae", "category": "animal", "stability": 2, "gloss": "mudhen", "in_names": 1}
+{"m": "aleale", "category": "verb_deed", "stability": 2, "gloss": "rippling", "in_names": 1}
+{"m": "anae", "category": "animal", "stability": 2, "gloss": "mullet", "in_names": 3}
+{"m": "apo", "category": "verb_deed", "stability": 2, "gloss": "caught", "in_names": 1}
+{"m": "apua", "category": "artefact", "stability": 2, "gloss": "fish trap", "in_names": 1}
+{"m": "aukele", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "aava", "category": "animal", "stability": 2, "gloss": "wrasse fish", "in_names": 1}
+{"m": "ele", "category": "colour", "stability": 2, "gloss": "black", "in_names": 1}
+{"m": "eleele", "category": "colour", "stability": 2, "gloss": "black", "in_names": 1}
+{"m": "ena", "category": "quality_size", "stability": 2, "gloss": "heat", "in_names": 1}
+{"m": "enaena", "category": "quality_size", "stability": 2, "gloss": "red-hot", "in_names": 1}
+{"m": "eva", "category": "quality_size", "stability": 2, "gloss": "crooked", "in_names": 2}
+{"m": "eepa", "category": "quality_size", "stability": 2, "gloss": "extraordinary", "in_names": 1}
+{"m": "iao", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ihi", "category": "quality_size", "stability": 2, "gloss": "sacredness", "in_names": 1}
+{"m": "ikuā", "category": "quality_size", "stability": 2, "gloss": "noisy", "in_names": 1}
+{"m": "ili", "category": "body_part", "stability": 2, "gloss": "skin", "in_names": 1}
+{"m": "iliili", "category": "landscape", "stability": 3, "gloss": "pebbles", "in_names": 1}
+{"m": "iliiliōpae", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "iu", "category": "quality_size", "stability": 2, "gloss": "sacred height", "in_names": 1}
+{"m": "ohe", "category": "plant", "stability": 2, "gloss": "bamboo", "in_names": 2}
+{"m": "oli", "category": "quality_size", "stability": 2, "gloss": "joyful", "in_names": 1}
+{"m": "uala", "category": "plant", "stability": 2, "gloss": "sweet potato", "in_names": 2}
+{"m": "uiki", "category": "quality_size", "stability": 2, "gloss": "glimmer", "in_names": 1}
+{"m": "ula", "category": "colour", "stability": 2, "gloss": "red", "in_names": 12}
+{"m": "umi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ā", "category": "landscape", "stability": 3, "gloss": "burning lava", "in_names": 1}
+{"m": "āina", "category": "landscape", "stability": 3, "gloss": "land", "in_names": 1}
+{"m": "ālana", "category": "verb_deed", "stability": 2, "gloss": "offering", "in_names": 1}
+{"m": "ālapa", "category": "quality_size", "stability": 2, "gloss": "athletic", "in_names": 1}
+{"m": "āpaapaa", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "āveoveo", "category": "animal", "stability": 2, "gloss": "ʻāweoweo fish", "in_names": 1}
+{"m": "ī", "category": "quality_size", "stability": 2, "gloss": "supreme", "in_names": 2}
+{"m": "īlio", "category": "animal", "stability": 2, "gloss": "dog", "in_names": 1}
+{"m": "īmaikalani", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ōhai", "category": "plant", "stability": 2, "gloss": "ʻōhai tree", "in_names": 1}
+{"m": "ōhinu", "category": "quality_size", "stability": 2, "gloss": "shiny", "in_names": 1}
+{"m": "ōhia", "category": "plant", "stability": 2, "gloss": "ʻōhiʻa tree", "in_names": 3}
+{"m": "ōmaokamau", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ōnohi", "category": "body_part", "stability": 2, "gloss": "eyeball", "in_names": 1}
+{"m": "ōpala", "category": "other", "stability": 1, "gloss": "rubbish", "in_names": 1}
+{"m": "ōpuu", "category": "plant", "stability": 2, "gloss": "bud", "in_names": 1}
+{"m": "ōō", "category": "artefact", "stability": 2, "gloss": "digging stick", "in_names": 1}

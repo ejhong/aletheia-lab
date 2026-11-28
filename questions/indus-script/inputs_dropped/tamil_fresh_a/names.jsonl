@@ -1,0 +1,600 @@
+{"name": "Karikāl Peruvaḷattāṉ", "type": "person", "morphemes": ["kari", "kāl", "peru", "vaḷam"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Nalaṅkiḷḷi", "type": "person", "morphemes": ["nalam", "kiḷḷi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Neṭuṅkiḷḷi", "type": "person", "morphemes": ["neṭu", "kiḷḷi"], "source": "Puṟanāṉūṟu; Tamil-Brahmi (Teriruveli)", "weight": 1}
+{"name": "Perunaṟkiḷḷi", "type": "person", "morphemes": ["peru", "nal", "kiḷḷi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Peruviṟaṟkiḷḷi", "type": "person", "morphemes": ["peru", "viṟal", "kiḷḷi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Kōpperuñcōḻaṉ", "type": "person", "morphemes": ["kō", "peru", "cōḻaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Peruntirumāvaḷavaṉ", "type": "person", "morphemes": ["peru", "tiru", "mā", "vaḷavaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Māvaḷattāṉ", "type": "person", "morphemes": ["mā", "vaḷam"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Iḷañcēṭceṉṉi", "type": "person", "morphemes": ["iḷam", "cēy", "ceṉṉi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Nalluruttiraṉ", "type": "person", "morphemes": ["nal", "uruttiraṉ"], "source": "Puṟanāṉūṟu; Kalittokai (colophon)", "weight": 1}
+{"name": "Tittaṉ", "type": "person", "morphemes": ["tittaṉ"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Tittaṉ Veḷiyaṉ", "type": "person", "morphemes": ["tittaṉ", "veḷiyaṉ"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Neṭuñceḻiyaṉ", "type": "person", "morphemes": ["neṭu", "ceḻiyaṉ"], "source": "Puṟanāṉūṟu; Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Nampi Neṭuñceḻiyaṉ", "type": "person", "morphemes": ["nampi", "neṭu", "ceḻiyaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Mutukuṭumipperuvaḻuti", "type": "person", "morphemes": ["mutu", "kuṭumi", "peru", "vaḻuti"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Ukkirapperuvaḻuti", "type": "person", "morphemes": ["ukkiram", "peru", "vaḻuti"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Iḷamperuvaḻuti", "type": "person", "morphemes": ["iḷam", "peru", "vaḻuti"], "source": "Puṟanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Peruvaḻuti", "type": "person", "morphemes": ["peru", "vaḻuti"], "source": "Puṟanāṉūṟu; Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Māṟaṉ Vaḻuti", "type": "person", "morphemes": ["māṟaṉ", "vaḻuti"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Naṉmāṟaṉ", "type": "person", "morphemes": ["nal", "māṟaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Aṟivuṭainampi", "type": "person", "morphemes": ["aṟivu", "uṭai", "nampi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Pūtappāṇṭiyaṉ", "type": "person", "morphemes": ["pūtam", "pāṇṭiyaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Perumpeyarvaḻuti", "type": "person", "morphemes": ["peru", "peyar", "vaḻuti"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Kīrañcāttaṉ", "type": "person", "morphemes": ["kīraṉ", "cāttaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Kuṟuvaḻuti", "type": "person", "morphemes": ["kuṟu", "vaḻuti"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Neṭuñcēralātaṉ", "type": "person", "morphemes": ["neṭu", "cēral", "ātaṉ"], "source": "Patiṟṟuppattu; Puṟanāṉūṟu", "weight": 1}
+{"name": "Utiyañcēral", "type": "person", "morphemes": ["utiyaṉ", "cēral"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Peruñcēralātaṉ", "type": "person", "morphemes": ["peru", "cēral", "ātaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Ceṅkuṭṭuvaṉ", "type": "person", "morphemes": ["cem", "kuṭṭuvaṉ"], "source": "Patiṟṟuppattu", "weight": 1}
+{"name": "Iḷaṅkuṭṭuvaṉ", "type": "person", "morphemes": ["iḷam", "kuṭṭuvaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nārmuṭiccēral", "type": "person", "morphemes": ["nār", "muṭi", "cēral"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Āṭukōṭpāṭṭuccēralātaṉ", "type": "person", "morphemes": ["āṭukōṭpāṭṭu", "cēral", "ātaṉ"], "source": "Patiṟṟuppattu", "weight": 1}
+{"name": "Celvakkaṭuṅkō Vāḻiyātaṉ", "type": "person", "morphemes": ["celvam", "kaṭu", "kō", "vāḻi", "ātaṉ"], "source": "Patiṟṟuppattu; Puṟanāṉūṟu", "weight": 1}
+{"name": "Peruñcēral Irumpoṟai", "type": "person", "morphemes": ["peru", "cēral", "iru", "poṟai"], "source": "Patiṟṟuppattu; Puṟanāṉūṟu", "weight": 1}
+{"name": "Iḷañcēral Irumpoṟai", "type": "person", "morphemes": ["iḷam", "cēral", "iru", "poṟai"], "source": "Patiṟṟuppattu", "weight": 1}
+{"name": "Kaṇaikkāl Irumpoṟai", "type": "person", "morphemes": ["kaṇaikkāl", "iru", "poṟai"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Māntarañcēral Irumpoṟai", "type": "person", "morphemes": ["māntaram", "cēral", "iru", "poṟai"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Antuvañceḷḷai", "type": "person", "morphemes": ["antuvaṉ", "ceḷḷai"], "source": "Patiṟṟuppattu (patikam)", "weight": 1}
+{"name": "Kuṭṭuvaṉ Kōtai", "type": "person", "morphemes": ["kuṭṭuvaṉ", "kōtai"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Kōkkōtai Mārpaṉ", "type": "person", "morphemes": ["kō", "kōtai", "mārpaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Mākkōtai", "type": "person", "morphemes": ["mā", "kōtai"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Vañcaṉ", "type": "person", "morphemes": ["vañcaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Velkeḻukuṭṭuvaṉ", "type": "person", "morphemes": ["vel", "keḻu", "kuṭṭuvaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Māri Veṇkō", "type": "person", "morphemes": ["māri", "veḷ", "kō"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Peruṅkaṭuṅkō", "type": "person", "morphemes": ["peru", "kaṭu", "kō"], "source": "Puṟanāṉūṟu; Kuṟuntokai (colophon); Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Iḷaṅkaṭuṅkō", "type": "person", "morphemes": ["iḷam", "kaṭu", "kō"], "source": "Akanāṉūṟu (colophon); Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Kō Ātaṉ Cellirumpoṟai", "type": "person", "morphemes": ["kō", "ātaṉ", "cel", "iru", "poṟai"], "source": "Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Pāri", "type": "person", "morphemes": ["pāri"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Ōri", "type": "person", "morphemes": ["ōri"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Kāri", "type": "person", "morphemes": ["kāri"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Tirumuṭikkāri", "type": "person", "morphemes": ["tiru", "muṭi", "kāri"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Pēkaṉ", "type": "person", "morphemes": ["pēkaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Āy", "type": "person", "morphemes": ["āy"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Āy Aṇṭiraṉ", "type": "person", "morphemes": ["āy", "aṇṭiraṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Neṭumāṉ Añci", "type": "person", "morphemes": ["neṭu", "māṉ", "añci"], "source": "Puṟanāṉūṟu; Tamil-Brahmi (Jambai)", "weight": 1}
+{"name": "Eḻiṉi", "type": "person", "morphemes": ["eḻiṉi"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Pokuṭṭeḻiṉi", "type": "person", "morphemes": ["pokuṭṭeḻiṉi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Naḷḷi", "type": "person", "morphemes": ["naḷḷi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Perunaḷḷi", "type": "person", "morphemes": ["peru", "naḷḷi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Kumaṇaṉ", "type": "person", "morphemes": ["kumaṇaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Naṉṉaṉ", "type": "person", "morphemes": ["naṉṉaṉ"], "source": "Akanāṉūṟu; Malaipaṭukaṭām", "weight": 1}
+{"name": "Naṉṉaṉ Vēṇmāṉ", "type": "person", "morphemes": ["naṉṉaṉ", "vēḷ", "māṉ"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Evvi", "type": "person", "morphemes": ["evvi"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Aṉṉi", "type": "person", "morphemes": ["aṉṉi"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Miñili", "type": "person", "morphemes": ["miñili"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Kaṭṭi", "type": "person", "morphemes": ["kaṭṭi"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Pāṇaṉ", "type": "person", "morphemes": ["pāṇaṉ"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Kaṇaiyaṉ", "type": "person", "morphemes": ["kaṇaiyaṉ"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Kaḻuvuḷ", "type": "person", "morphemes": ["kaḻuvuḷ"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Matti", "type": "person", "morphemes": ["matti"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Aḵtai", "type": "person", "morphemes": ["aḥtai"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Paḻaiyaṉ", "type": "person", "morphemes": ["paḻaiyaṉ"], "source": "Akanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Vāṇaṉ", "type": "person", "morphemes": ["vāṇaṉ"], "source": "Akanāṉūṟu; Maturaikkāñci", "weight": 1}
+{"name": "Kaṅkaṉ", "type": "person", "morphemes": ["kaṅkaṉ"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Aṟukai", "type": "person", "morphemes": ["aṟukai"], "source": "Akanāṉūṟu; Patiṟṟuppattu", "weight": 1}
+{"name": "Iḷantiraiyaṉ", "type": "person", "morphemes": ["iḷam", "tiraiyaṉ"], "source": "Puṟanāṉūṟu; Perumpāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Pulli", "type": "person", "morphemes": ["pulli"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Akutai", "type": "person", "morphemes": ["akutai"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Taḻumpaṉ", "type": "person", "morphemes": ["taḻumpaṉ"], "source": "Akanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Aḻici", "type": "person", "morphemes": ["aḻici"], "source": "Naṟṟiṇai; Kuṟuntokai", "weight": 1}
+{"name": "Cēntaṉ", "type": "person", "morphemes": ["cēntaṉ"], "source": "Naṟṟiṇai; Kuṟuntokai", "weight": 1}
+{"name": "Ātimanti", "type": "person", "morphemes": ["ātimanti"], "source": "Akanāṉūṟu; Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kaṇṇaki", "type": "person", "morphemes": ["kaṇṇaki"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Tirumāvuṇṇi", "type": "person", "morphemes": ["tiru", "mā", "uṇṇi"], "source": "Naṟṟiṇai", "weight": 1}
+{"name": "Malaiyaṉ", "type": "person", "morphemes": ["malaiyaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Tōṉṟikkōṉ", "type": "person", "morphemes": ["tōṉṟi", "kōṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Paṇṇaṉ", "type": "person", "morphemes": ["paṇṇaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Aruvantai", "type": "person", "morphemes": ["aruvantai"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Antuvaṉ Kīraṉ", "type": "person", "morphemes": ["antuvaṉ", "kīraṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Ātaṉuṅkaṉ", "type": "person", "morphemes": ["ātaṉuṅkaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Ēṟaikkōṉ", "type": "person", "morphemes": ["ēṟaikkōṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Veḷimāṉ", "type": "person", "morphemes": ["veḷimāṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Iḷaveḷimāṉ", "type": "person", "morphemes": ["iḷam", "veḷimāṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Iḷaviccikkō", "type": "person", "morphemes": ["iḷam", "vicci", "kō"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Tōyaṉ Māṟaṉ", "type": "person", "morphemes": ["tōyaṉ", "māṟaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Iruṅkōvēḷ", "type": "person", "morphemes": ["iru", "kō", "vēḷ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Neṭuvēṭṭuvaṉ", "type": "person", "morphemes": ["neṭu", "vēṭṭuvaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Tirukkaṇṇaṉ", "type": "person", "morphemes": ["tiru", "kaṇṇaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kāriyāti", "type": "person", "morphemes": ["kāriyāti"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Mūvaṉ", "type": "person", "morphemes": ["mūvaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Nākaṉ", "type": "person", "morphemes": ["nākaṉ"], "source": "Puṟanāṉūṟu (colophon); Tamil-Brahmi", "weight": 1}
+{"name": "Nāñcil Vaḷḷuvaṉ", "type": "person", "morphemes": ["nāñcil", "vaḷḷuvaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Nalliyakkōṭaṉ", "type": "person", "morphemes": ["nalliyakkōṭaṉ"], "source": "Ciṟupāṇāṟṟuppaṭai; Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Villiyātaṉ", "type": "person", "morphemes": ["villi", "ātaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Piṭṭaṅkoṟṟaṉ", "type": "person", "morphemes": ["piṭṭaṉ", "koṟṟaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Eḻiṉiyātaṉ", "type": "person", "morphemes": ["eḻiṉi", "ātaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Viṇṇantāyaṉ", "type": "person", "morphemes": ["viṇṇantāyaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Tirukkuṭṭuvaṉ", "type": "person", "morphemes": ["tiru", "kuṭṭuvaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Peruñcāttaṉ", "type": "person", "morphemes": ["peru", "cāttaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Peruṅkōppeṇṭu", "type": "person", "morphemes": ["peru", "kō", "peṇṭu"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Irāmaṉ", "type": "person", "morphemes": ["irāmaṉ"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Cītai", "type": "person", "morphemes": ["cītai"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Akalikai", "type": "person", "morphemes": ["akalikai"], "source": "Paripāṭal", "weight": 1}
+{"name": "Kaṭalaṉ Vaḻuti", "type": "person", "morphemes": ["kaṭalaṉ", "vaḻuti"], "source": "Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Caṭikaṉ", "type": "person", "morphemes": ["caṭikaṉ"], "source": "Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Iḷañcaṭikaṉ", "type": "person", "morphemes": ["iḷam", "caṭikaṉ"], "source": "Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Nantasiri Kuvaṉ", "type": "person", "morphemes": ["nanta", "siri", "kuvaṉ"], "source": "Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Cantaritaṉ", "type": "person", "morphemes": ["cantaritaṉ"], "source": "Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Antai Asutaṉ", "type": "person", "morphemes": ["antai", "asutaṉ"], "source": "Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Antai Visuvaṉ", "type": "person", "morphemes": ["antai", "visuvaṉ"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Antai Iravataṉ", "type": "person", "morphemes": ["antai", "iravataṉ"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Antai Cēntaṉ", "type": "person", "morphemes": ["antai", "cēntaṉ"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Ceṅkāyapaṉ", "type": "person", "morphemes": ["cem", "kāyapaṉ"], "source": "Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Kāyipaṉ", "type": "person", "morphemes": ["kāyipaṉ"], "source": "Tamil-Brahmi (Āṉaimalai)", "weight": 1}
+{"name": "Iḷaṅkāyipaṉ", "type": "person", "morphemes": ["iḷam", "kāyipaṉ"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Veṇkāsipaṉ", "type": "person", "morphemes": ["veḷ", "kāsipaṉ"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Koṟṟantai Iḷavaṉ", "type": "person", "morphemes": ["koṟṟantai", "iḷavaṉ"], "source": "Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Kīraṉ Koṟṟi", "type": "person", "morphemes": ["kīraṉ", "koṟṟi"], "source": "Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Natti", "type": "person", "morphemes": ["natti"], "source": "Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Peruṅkīraṉ", "type": "person", "morphemes": ["peru", "kīraṉ"], "source": "Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Atiṉaṉ Veḷiyaṉ", "type": "person", "morphemes": ["atiṉaṉ", "veḷiyaṉ"], "source": "Tamil-Brahmi (Arittāpaṭṭi)", "weight": 1}
+{"name": "Polālaiyaṉ", "type": "person", "morphemes": ["polālaiyaṉ"], "source": "Tamil-Brahmi (Tirupparaṅkuṉṟam)", "weight": 1}
+{"name": "Neṭumallaṉ", "type": "person", "morphemes": ["neṭu", "mallaṉ"], "source": "Tamil-Brahmi (Aḻakarmalai)", "weight": 1}
+{"name": "Tiyaṉ Cantaṉ", "type": "person", "morphemes": ["tiyaṉ", "cantaṉ"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Kuviraṉ", "type": "person", "morphemes": ["kuviraṉ"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Tēvaṉ Cāttaṉ", "type": "person", "morphemes": ["tēvaṉ", "cāttaṉ"], "source": "Tamil-Brahmi (Aṟaccalūr)", "weight": 1}
+{"name": "Attiraṉ", "type": "person", "morphemes": ["attiraṉ"], "source": "Tamil-Brahmi (Mēṭṭuppaṭṭi)", "weight": 1}
+{"name": "Āritaṉ", "type": "person", "morphemes": ["āritaṉ"], "source": "Tamil-Brahmi (Āṉaimalai)", "weight": 1}
+{"name": "Peruṅkūṟṟaṉ", "type": "person", "morphemes": ["peru", "kūṟṟaṉ"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Cēkkanti", "type": "person", "morphemes": ["cē", "kanti"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Kapilar", "type": "person", "morphemes": ["kapilar"], "source": "Aiṅkuṟunūṟu (colophon)", "weight": 1}
+{"name": "Paraṇar", "type": "person", "morphemes": ["paraṇar"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Auvaiyār", "type": "person", "morphemes": ["auvai"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nakkīrar", "type": "person", "morphemes": ["nal", "kīraṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Māmūlaṉār", "type": "person", "morphemes": ["mā", "mūlaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kallāṭaṉār", "type": "person", "morphemes": ["kallāṭaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Ammūvaṉār", "type": "person", "morphemes": ["ammūvaṉ"], "source": "Aiṅkuṟunūṟu (colophon)", "weight": 1}
+{"name": "Ōrampōkiyār", "type": "person", "morphemes": ["ōrampōki"], "source": "Aiṅkuṟunūṟu (colophon)", "weight": 1}
+{"name": "Pēyaṉār", "type": "person", "morphemes": ["pēyaṉ"], "source": "Aiṅkuṟunūṟu (colophon)", "weight": 1}
+{"name": "Ōtalāntaiyār", "type": "person", "morphemes": ["ōtalāntai"], "source": "Aiṅkuṟunūṟu (colophon)", "weight": 1}
+{"name": "Picirāntaiyār", "type": "person", "morphemes": ["picirāntai"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kayamaṉār", "type": "person", "morphemes": ["kayamaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Iḷaṅkīraṉār", "type": "person", "morphemes": ["iḷam", "kīraṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Iḷampūtaṉār", "type": "person", "morphemes": ["iḷam", "pūtaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Iḷanākaṉār", "type": "person", "morphemes": ["iḷam", "nākaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Iḷantēvaṉār", "type": "person", "morphemes": ["iḷam", "tēvaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Iḷavēṭṭaṉār", "type": "person", "morphemes": ["iḷam", "vēṭṭaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Iḷaṅkaṇṇaṉār", "type": "person", "morphemes": ["iḷam", "kaṇṇaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Iḷaṅkaucikaṉār", "type": "person", "morphemes": ["iḷam", "kaucikaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Iḷampōtiyār", "type": "person", "morphemes": ["iḷam", "pōti"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Iḷaveyiṉi", "type": "person", "morphemes": ["iḷam", "eyiṉi"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kuṉṟiyaṉār", "type": "person", "morphemes": ["kuṉṟiyaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Mōcikīraṉār", "type": "person", "morphemes": ["mōci", "kīraṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Peruñcittiraṉār", "type": "person", "morphemes": ["peru", "cittiraṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Perumpatumaṉār", "type": "person", "morphemes": ["peru", "patumaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Patumaṉār", "type": "person", "morphemes": ["patumaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Peruntēvaṉār", "type": "person", "morphemes": ["peru", "tēvaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Peruṅkaṇṇaṉār", "type": "person", "morphemes": ["peru", "kaṇṇaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Peruṅkaucikaṉār", "type": "person", "morphemes": ["peru", "kaucikaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Perumpūtaṉār", "type": "person", "morphemes": ["peru", "pūtaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Peruṅkoṟṟaṉār", "type": "person", "morphemes": ["peru", "koṟṟaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Peruntalaic Cāttaṉār", "type": "person", "morphemes": ["peru", "talai", "cāttaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Peruntōṭ Kuṟuñcāttaṉār", "type": "person", "morphemes": ["peru", "tōḷ", "kuṟu", "cāttaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Pērālavāyar", "type": "person", "morphemes": ["pēr", "ālavāy"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Pēreyil Muṟuvalār", "type": "person", "morphemes": ["pēr", "eyil", "muṟuval"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Ceṅkaṇṇaṉār", "type": "person", "morphemes": ["cem", "kaṇṇaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Veṇkaṇṇaṉār", "type": "person", "morphemes": ["veḷ", "kaṇṇaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Mutukaṇṇaṉ Cāttaṉār", "type": "person", "morphemes": ["mutu", "kaṇṇaṉ", "cāttaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Mutukūttaṉār", "type": "person", "morphemes": ["mutu", "kūttaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Mutukoṟṟaṉār", "type": "person", "morphemes": ["mutu", "koṟṟaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Mutuveṅkaṇṇaṉār", "type": "person", "morphemes": ["mutu", "veḷ", "kaṇṇaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Pūṅkaṇṇaṉār", "type": "person", "morphemes": ["pū", "kaṇṇaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kārikkaṇṇaṉār", "type": "person", "morphemes": ["kāri", "kaṇṇaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Nakkaṇṇaiyār", "type": "person", "morphemes": ["nal", "kaṇṇai"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Pullaṅkaṇṇaṉār", "type": "person", "morphemes": ["pullaṉ", "kaṇṇaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Cēntaṅkaṇṇaṉār", "type": "person", "morphemes": ["cēntaṉ", "kaṇṇaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kīraṅkaṇṇaṉār", "type": "person", "morphemes": ["kīraṉ", "kaṇṇaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Tattaṅkaṇṇaṉār", "type": "person", "morphemes": ["tattaṉ", "kaṇṇaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Uruttiraṅkaṇṇaṉār", "type": "person", "morphemes": ["uruttiraṉ", "kaṇṇaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Pāṇṭaraṅkaṇṇaṉār", "type": "person", "morphemes": ["pāṇṭaram", "kaṇṇaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kollikkaṇṇaṉār", "type": "person", "morphemes": ["kolli", "kaṇṇaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kaṇṇaṉār", "type": "person", "morphemes": ["kaṇṇaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kaṇṇaṅkoṟṟaṉār", "type": "person", "morphemes": ["kaṇṇaṉ", "koṟṟaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Kaṇṇampullaṉār", "type": "person", "morphemes": ["kaṇṇaṉ", "pullaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kaṇṇaṉ Kūttaṉār", "type": "person", "morphemes": ["kaṇṇaṉ", "kūttaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Tāyaṅkaṇṇaṉār", "type": "person", "morphemes": ["tāyaṅkaṇṇaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nalveḷḷiyār", "type": "person", "morphemes": ["nal", "veḷḷi"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nalveḷḷaiyār", "type": "person", "morphemes": ["nal", "veḷḷai"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Veḷḷivītiyār", "type": "person", "morphemes": ["veḷḷi", "vīti"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Veṇpūtiyār", "type": "person", "morphemes": ["veḷ", "pūti"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Veṇpūtaṉār", "type": "person", "morphemes": ["veḷ", "pūtaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Veṇṇākaṉār", "type": "person", "morphemes": ["veḷ", "nākaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Veḷḷaimāṟaṉār", "type": "person", "morphemes": ["veḷḷai", "māṟaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Naṉṉākaiyār", "type": "person", "morphemes": ["nal", "nākai"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Poṉṉākaṉār", "type": "person", "morphemes": ["poṉ", "nākaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Muṭinākaṉār", "type": "person", "morphemes": ["muṭi", "nākaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Marutaṉ Iḷanākaṉār", "type": "person", "morphemes": ["marutaṉ", "iḷam", "nākaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Pūtaṉ Iḷanākaṉār", "type": "person", "morphemes": ["pūtaṉ", "iḷam", "nākaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Marutaṉār", "type": "person", "morphemes": ["marutaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Perumarutaṉār", "type": "person", "morphemes": ["peru", "marutaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Nallantuvaṉār", "type": "person", "morphemes": ["nal", "antuvaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nalvēṭṭaṉār", "type": "person", "morphemes": ["nal", "vēṭṭaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Iṟaiyaṉār", "type": "person", "morphemes": ["iṟaiyaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Nalliṟaiyaṉār", "type": "person", "morphemes": ["nal", "iṟaiyaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nallaccutaṉār", "type": "person", "morphemes": ["nal", "accutaṉ"], "source": "Paripāṭal (colophon)", "weight": 1}
+{"name": "Nallaḻiciyār", "type": "person", "morphemes": ["nal", "aḻici"], "source": "Paripāṭal (colophon)", "weight": 1}
+{"name": "Nappacalaiyār", "type": "person", "morphemes": ["nal", "pacalai"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nappaṇṇaṉār", "type": "person", "morphemes": ["nal", "paṇṇaṉ"], "source": "Paripāṭal (colophon)", "weight": 1}
+{"name": "Nappūtaṉār", "type": "person", "morphemes": ["nal", "pūtaṉ"], "source": "Mullaippāṭṭu (colophon)", "weight": 1}
+{"name": "Naṟcēntaṉār", "type": "person", "morphemes": ["nal", "cēntaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nattattaṉār", "type": "person", "morphemes": ["nattattaṉ"], "source": "Ciṟupāṇāṟṟuppaṭai (colophon)", "weight": 1}
+{"name": "Nacceḷḷaiyār", "type": "person", "morphemes": ["nal", "ceḷḷai"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kākkaipāṭiṉiyār", "type": "person", "morphemes": ["kākkai", "pāṭiṉi"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Neṭuveṇṇilaviṉār", "type": "person", "morphemes": ["neṭu", "veḷ", "nilavu"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Vaṉparaṇar", "type": "person", "morphemes": ["val", "paraṇar"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Tolkapilar", "type": "person", "morphemes": ["tol", "kapilar"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Neṭṭimaiyār", "type": "person", "morphemes": ["neṭṭimai"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Naraimuṭi Neṭṭaiyār", "type": "person", "morphemes": ["narai", "muṭi", "neṭṭai"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kaṭuvaṉ Maḷḷaṉār", "type": "person", "morphemes": ["kaṭuvaṉ", "maḷḷaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Tamiḻkkūttaṉār", "type": "person", "morphemes": ["tamiḻ", "kūttaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Cāttaṉār", "type": "person", "morphemes": ["cāttaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Cīttalaic Cāttaṉār", "type": "person", "morphemes": ["cīttalai", "cāttaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Mācāttaṉār", "type": "person", "morphemes": ["mā", "cāttaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Pūtañcāttaṉār", "type": "person", "morphemes": ["pūtaṉ", "cāttaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Pūtaṉār", "type": "person", "morphemes": ["pūtaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Pūtaṉtēvaṉār", "type": "person", "morphemes": ["pūtaṉ", "tēvaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Pūtampullaṉār", "type": "person", "morphemes": ["pūtaṉ", "pullaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Cēntaṉ Kīraṉār", "type": "person", "morphemes": ["cēntaṉ", "kīraṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Cēntaṉ Kūttaṉār", "type": "person", "morphemes": ["cēntaṉ", "kūttaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Cēntaṉ Koṟṟaṉār", "type": "person", "morphemes": ["cēntaṉ", "koṟṟaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Cēntaṉ Pūtaṉār", "type": "person", "morphemes": ["cēntaṉ", "pūtaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Cēntaṉ Kumaraṉār", "type": "person", "morphemes": ["cēntaṉ", "kumaraṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Kumaraṉār", "type": "person", "morphemes": ["kumaraṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nākaṉ Kumaraṉār", "type": "person", "morphemes": ["nākaṉ", "kumaraṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Calliyaṅkumaraṉār", "type": "person", "morphemes": ["calliyaṉ", "kumaraṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Kūṟṟaṅkumaraṉār", "type": "person", "morphemes": ["kūṟṟaṉ", "kumaraṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Koṟṟaṉār", "type": "person", "morphemes": ["koṟṟaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Koṟṟaṅkoṟṟaṉār", "type": "person", "morphemes": ["koṟṟaṉ", "koṟṟaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Mūlaṅkīraṉār", "type": "person", "morphemes": ["mūlaṉ", "kīraṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Neṭuṅkīraṉār", "type": "person", "morphemes": ["neṭu", "kīraṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kīraṅkīraṉār", "type": "person", "morphemes": ["kīraṉ", "kīraṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Kuṭṭuvaṉ Kīraṉār", "type": "person", "morphemes": ["kuṭṭuvaṉ", "kīraṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kuṭṭuvaṉ Kaṇṇaṉār", "type": "person", "morphemes": ["kuṭṭuvaṉ", "kaṇṇaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Tumpicēr Kīraṉār", "type": "person", "morphemes": ["tumpi", "cēr", "kīraṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kācipaṉ Kīraṉār", "type": "person", "morphemes": ["kācipaṉ", "kīraṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Mālaimāṟaṉār", "type": "person", "morphemes": ["mālai", "māṟaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Muṭavaṉār", "type": "person", "morphemes": ["muṭavaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Naṉmullaiyār", "type": "person", "morphemes": ["nal", "mullai"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Vaṅkaṉār", "type": "person", "morphemes": ["vaṅkaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Iṭaikkāṭaṉār", "type": "person", "morphemes": ["iṭai", "kāṭaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Mārkkaṇṭēyaṉār", "type": "person", "morphemes": ["mārkkaṇṭēyaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Vāṉmīkiyār", "type": "person", "morphemes": ["vāṉmīki"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kōtamaṉār", "type": "person", "morphemes": ["kōtamaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Tāmōtaraṉār", "type": "person", "morphemes": ["tāmōtaraṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kēcavaṉār", "type": "person", "morphemes": ["kēcavaṉ"], "source": "Paripāṭal (colophon)", "weight": 1}
+{"name": "Piramaṉār", "type": "person", "morphemes": ["piramaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Uruttiraṉār", "type": "person", "morphemes": ["uruttiraṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Cāṇṭiliyaṉār", "type": "person", "morphemes": ["cāṇṭiliyaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Cātēvaṉār", "type": "person", "morphemes": ["cātēvaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Āttiraiyaṉār", "type": "person", "morphemes": ["āttiraiyaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Ōrēruḻavar", "type": "person", "morphemes": ["ōr", "ēr", "uḻavaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Cempulappeyaṉīrār", "type": "person", "morphemes": ["cem", "pulam", "peyal", "nīr"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Aṇilāṭumuṉṟilār", "type": "person", "morphemes": ["aṇil", "āṭu", "muṉṟil"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kalporuciṟunuraiyār", "type": "person", "morphemes": ["kal", "poru", "ciṟu", "nurai"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kuppaikkōḻiyār", "type": "person", "morphemes": ["kuppai", "kōḻi"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kūkaikkōḻiyār", "type": "person", "morphemes": ["kūkai", "kōḻi"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Mīṉeṟitūṇṭilār", "type": "person", "morphemes": ["mīṉ", "eṟi", "tūṇṭil"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kaṅkulveḷḷattār", "type": "person", "morphemes": ["kaṅkul", "veḷḷam"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Nariverūuttalaiyār", "type": "person", "morphemes": ["nari", "verūu", "talai"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kaḻāttalaiyār", "type": "person", "morphemes": ["kaḻā", "talai"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Tēypurippaḻaṅkayiṟṟiṉār", "type": "person", "morphemes": ["tēy", "puri", "paḻa", "kayiṟu"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Viṭṭakutiraiyār", "type": "person", "morphemes": ["viṭu", "kutirai"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kaḻaitiṉyāṉaiyār", "type": "person", "morphemes": ["kaḻai", "tiṉ", "yāṉai"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kāvaṟpeṇṭu", "type": "person", "morphemes": ["kāval", "peṇṭu"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Muṭattāmakkaṇṇiyār", "type": "person", "morphemes": ["muṭattāmakkaṇṇi"], "source": "Poruṇarāṟṟuppaṭai (colophon)", "weight": 1}
+{"name": "Muṭamōciyār", "type": "person", "morphemes": ["muṭam", "mōci"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Pottiyār", "type": "person", "morphemes": ["potti"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Poykaiyār", "type": "person", "morphemes": ["poykai"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Ulōccaṉār", "type": "person", "morphemes": ["ulōccaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kōvūr Kiḻār", "type": "person", "morphemes": ["kō", "ūr", "kiḻār"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kūṭalūr Kiḻār", "type": "person", "morphemes": ["kūṭal", "ūr", "kiḻār"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Peruṅkuṉṟūr Kiḻār", "type": "person", "morphemes": ["peru", "kuṉṟu", "ūr", "kiḻār"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Iṭaikkuṉṟūr Kiḻār", "type": "person", "morphemes": ["iṭai", "kuṉṟu", "ūr", "kiḻār"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Ālattūr Kiḻār", "type": "person", "morphemes": ["ālam", "ūr", "kiḻār"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kārikiḻār", "type": "person", "morphemes": ["kāri", "kiḻār"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kollaṉ Aḻiciyār", "type": "person", "morphemes": ["kollaṉ", "aḻici"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kaṇṇakaṉār", "type": "person", "morphemes": ["kaṇṇakaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Iḷampōttaṉār", "type": "person", "morphemes": ["iḷam", "pōttaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Kaṭalaṉār", "type": "person", "morphemes": ["kaṭalaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Erumai Veḷiyaṉār", "type": "person", "morphemes": ["erumai", "veḷiyaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kāmakkaṇṇiyār", "type": "person", "morphemes": ["kāmakkaṇṇi"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kuṟiyeyiṉiyār", "type": "person", "morphemes": ["kuṟiyeyiṉi"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Eyiṟṟiyaṉār", "type": "person", "morphemes": ["eyiṟṟiyaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Tiruttāmaṉār", "type": "person", "morphemes": ["tiruttāmaṉ"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Māmalāṭaṉār", "type": "person", "morphemes": ["mā", "malāṭaṉ"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Nalviḷakkaṉār", "type": "person", "morphemes": ["nal", "viḷakkaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Iṉicantanākaṉār", "type": "person", "morphemes": ["iṉicantanākaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Kōcikaṉ Kaṇṇaṉār", "type": "person", "morphemes": ["kōcikaṉ", "kaṇṇaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kantarattaṉār", "type": "person", "morphemes": ["kantarattaṉ"], "source": "Naṟṟiṇai (colophon)", "weight": 1}
+{"name": "Kaṇṇattaṉār", "type": "person", "morphemes": ["kaṇṇattaṉ"], "source": "Akanāṉūṟu (colophon)", "weight": 1}
+{"name": "Maturai", "type": "place", "morphemes": ["maturai"], "source": "Maturaikkāñci; Sangam colophons", "weight": 1}
+{"name": "Kūṭal", "type": "place", "morphemes": ["kūṭal"], "source": "Paripāṭal; Akanāṉūṟu", "weight": 1}
+{"name": "Uṟantai", "type": "place", "morphemes": ["uṟantai"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Uṟaiyūr", "type": "place", "morphemes": ["uṟai", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Pukār", "type": "place", "morphemes": ["pukār"], "source": "Paṭṭiṉappālai", "weight": 1}
+{"name": "Kāvirippūmpaṭṭiṉam", "type": "place", "morphemes": ["kāviri", "pū", "paṭṭiṉam"], "source": "Sangam colophons", "weight": 1}
+{"name": "Vañci", "type": "place", "morphemes": ["vañci"], "source": "Puṟanāṉūṟu; Patiṟṟuppattu", "weight": 1}
+{"name": "Karuvūr", "type": "place", "morphemes": ["karuvūr"], "source": "Sangam colophons; Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Koṟkai", "type": "place", "morphemes": ["koṟkai"], "source": "Akanāṉūṟu; Maturaikkāñci", "weight": 1}
+{"name": "Muciṟi", "type": "place", "morphemes": ["muciṟi"], "source": "Akanāṉūṟu; Puṟanāṉūṟu", "weight": 1}
+{"name": "Toṇṭi", "type": "place", "morphemes": ["toṇṭi"], "source": "Aiṅkuṟunūṟu; Akanāṉūṟu; Tamil-Brahmi", "weight": 1}
+{"name": "Takaṭūr", "type": "place", "morphemes": ["takaṭūr"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Āmūr", "type": "place", "morphemes": ["āmūr"], "source": "Ciṟupāṇāṟṟuppaṭai; Akanāṉūṟu", "weight": 1}
+{"name": "Aḻuntūr", "type": "place", "morphemes": ["aḻuntūr"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Kuṭantai", "type": "place", "morphemes": ["kuṭantai"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Kuṭavāyil", "type": "place", "morphemes": ["kuṭa", "vāyil"], "source": "Akanāṉūṟu; Sangam colophons", "weight": 1}
+{"name": "Veṇṇi", "type": "place", "morphemes": ["veṇṇi"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Talaiyālaṅkāṉam", "type": "place", "morphemes": ["talai", "ālam", "kāṉam"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Pāḻi", "type": "place", "morphemes": ["pāḻi"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Mōkūr", "type": "place", "morphemes": ["mōkūr"], "source": "Maturaikkāñci; Akanāṉūṟu; Patiṟṟuppattu", "weight": 1}
+{"name": "Kaḻumalam", "type": "place", "morphemes": ["kaḻumalam"], "source": "Akanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Kāṉappēr", "type": "place", "morphemes": ["kāṉappēr"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Ārkkāṭu", "type": "place", "morphemes": ["ār", "kāṭu"], "source": "Naṟṟiṇai; Kuṟuntokai; Sangam colophons", "weight": 1}
+{"name": "Neytalaṅkāṉal", "type": "place", "morphemes": ["neytal", "am", "kāṉal"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Koṭumaṇam", "type": "place", "morphemes": ["koṭumaṇam"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Pantar", "type": "place", "morphemes": ["pantar"], "source": "Patiṟṟuppattu", "weight": 1}
+{"name": "Vākai", "type": "place", "morphemes": ["vākai"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Kaḻār", "type": "place", "morphemes": ["kaḻār"], "source": "Akanāṉūṟu; Sangam colophons", "weight": 1}
+{"name": "Īḻam", "type": "place", "morphemes": ["īḻam"], "source": "Paṭṭiṉappālai; Sangam colophons", "weight": 1}
+{"name": "Kāḻakam", "type": "place", "morphemes": ["kāḻakam"], "source": "Paṭṭiṉappālai", "weight": 1}
+{"name": "Koṅku", "type": "place", "morphemes": ["koṅku"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Kuṭanāṭu", "type": "place", "morphemes": ["kuṭa", "nāṭu"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Ōymāṉāṭu", "type": "place", "morphemes": ["ōymāṉ", "nāṭu"], "source": "Ciṟupāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Cōṇāṭu", "type": "place", "morphemes": ["cōḻaṉ", "nāṭu"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kumari", "type": "place", "morphemes": ["kumari"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Āviṉaṉkuṭi", "type": "place", "morphemes": ["āviṉaṉ", "kuṭi"], "source": "Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Cīralaivāy", "type": "place", "morphemes": ["cīr", "alai", "vāy"], "source": "Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Paḻamutircōlai", "type": "place", "morphemes": ["paḻam", "utir", "cōlai"], "source": "Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Vēlūr", "type": "place", "morphemes": ["vēl", "ūr"], "source": "Ciṟupāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Kiṭaṅkil", "type": "place", "morphemes": ["kiṭaṅkil"], "source": "Ciṟupāṇāṟṟuppaṭai; Sangam colophons", "weight": 1}
+{"name": "Ilaṅkai", "type": "place", "morphemes": ["ilaṅkai"], "source": "Puṟanāṉūṟu; Ciṟupāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Ūṇūr", "type": "place", "morphemes": ["ūṇ", "ūr"], "source": "Akanāṉūṟu; Puṟanāṉūṟu", "weight": 1}
+{"name": "Kuṟukkai", "type": "place", "morphemes": ["kuṟukkai"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Tēṉūr", "type": "place", "morphemes": ["tēṉ", "ūr"], "source": "Aiṅkuṟunūṟu; Tamil-Brahmi", "weight": 1}
+{"name": "Kōvalūr", "type": "place", "morphemes": ["kōval", "ūr"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Cikkaṟpaḷḷi", "type": "place", "morphemes": ["cikkal", "paḷḷi"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kurāppaḷḷi", "type": "place", "morphemes": ["kurā", "paḷḷi"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Ilavantikaippaḷḷi", "type": "place", "morphemes": ["ilavantikai", "paḷḷi"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Pāmuḷūr", "type": "place", "morphemes": ["pāmuḷūr"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Āvūr", "type": "place", "morphemes": ["ā", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Aiyūr", "type": "place", "morphemes": ["aiyūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Ālaṅkuṭi", "type": "place", "morphemes": ["ālam", "kuṭi"], "source": "Sangam colophons", "weight": 1}
+{"name": "Ālattūr", "type": "place", "morphemes": ["ālam", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Āvaṭutuṟai", "type": "place", "morphemes": ["āvaṭutuṟai"], "source": "Sangam colophons", "weight": 1}
+{"name": "Iṭaikkuṉṟūr", "type": "place", "morphemes": ["iṭai", "kuṉṟu", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Iruntaiyūr", "type": "place", "morphemes": ["iruntaiyūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kaccippēṭu", "type": "place", "morphemes": ["kacci", "pēṭu"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kaṭampaṉūr", "type": "place", "morphemes": ["kaṭampaṉūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kaṭiyalūr", "type": "place", "morphemes": ["kaṭiyalūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kaḷḷikkuṭi", "type": "place", "morphemes": ["kaḷḷi", "kuṭi"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kāṭṭūr", "type": "place", "morphemes": ["kāṭu", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kiḷḷimaṅkalam", "type": "place", "morphemes": ["kiḷḷi", "maṅkalam"], "source": "Sangam colophons", "weight": 1}
+{"name": "Koṭiyūr", "type": "place", "morphemes": ["koṭi", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kōḷiyūr", "type": "place", "morphemes": ["kōḷi", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Eṟiccalūr", "type": "place", "morphemes": ["eṟiccalūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Koṭimaṅkalam", "type": "place", "morphemes": ["koṭi", "maṅkalam"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kūṭalūr", "type": "place", "morphemes": ["kūṭal", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kōṭṭiyūr", "type": "place", "morphemes": ["kōṭṭiyūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kōvūr", "type": "place", "morphemes": ["kō", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kumaṭṭūr", "type": "place", "morphemes": ["kumaṭṭūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kuṉṟūr", "type": "place", "morphemes": ["kuṉṟu", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kuṟuṅkuṭi", "type": "place", "morphemes": ["kuṟu", "kuṭi"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kuṟuṅkōḻiyūr", "type": "place", "morphemes": ["kuṟu", "kōḻi", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Māṭalūr", "type": "place", "morphemes": ["māṭalūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Māṅkuṭi", "type": "place", "morphemes": ["māṅkuṭi"], "source": "Sangam colophons", "weight": 1}
+{"name": "Māṟōkkam", "type": "place", "morphemes": ["māṟōkkam"], "source": "Sangam colophons", "weight": 1}
+{"name": "Maruṅkūr", "type": "place", "morphemes": ["maruṅkūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Māṟṟūr", "type": "place", "morphemes": ["māṟṟūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Miḷai", "type": "place", "morphemes": ["miḷai"], "source": "Sangam colophons", "weight": 1}
+{"name": "Mukaiyalūr", "type": "place", "morphemes": ["mukaiyalūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Murañciyūr", "type": "place", "morphemes": ["murañciyūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Muḷḷiyūr", "type": "place", "morphemes": ["muḷḷi", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Nallāvūr", "type": "place", "morphemes": ["nal", "ā", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Nallūr", "type": "place", "morphemes": ["nal", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Iṭaikkaḻināṭu", "type": "place", "morphemes": ["iṭai", "kaḻi", "nāṭu"], "source": "Sangam colophons", "weight": 1}
+{"name": "Okkūr", "type": "place", "morphemes": ["okkūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Ollaiyūr", "type": "place", "morphemes": ["ollaiyūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Peruṅkuṉṟūr", "type": "place", "morphemes": ["peru", "kuṉṟu", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Potumpil", "type": "place", "morphemes": ["potumpil"], "source": "Sangam colophons", "weight": 1}
+{"name": "Puṟanāṭu", "type": "place", "morphemes": ["puṟam", "nāṭu"], "source": "Sangam colophons", "weight": 1}
+{"name": "Ceyalūr", "type": "place", "morphemes": ["ceyalūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Ciṟaikkuṭi", "type": "place", "morphemes": ["ciṟaikkuṭi"], "source": "Sangam colophons", "weight": 1}
+{"name": "Taṅkāl", "type": "place", "morphemes": ["taṅkāl"], "source": "Sangam colophons", "weight": 1}
+{"name": "Tuṟaiyūr", "type": "place", "morphemes": ["tuṟai", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Ukāykkuṭi", "type": "place", "morphemes": ["ukāy", "kuṭi"], "source": "Sangam colophons", "weight": 1}
+{"name": "Umaṭṭūr", "type": "place", "morphemes": ["umaṭṭūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Umpaṟkāṭu", "type": "place", "morphemes": ["umpal", "kāṭu"], "source": "Sangam colophons", "weight": 1}
+{"name": "Vīrai", "type": "place", "morphemes": ["vīrai"], "source": "Sangam colophons", "weight": 1}
+{"name": "Veḷḷaikkuṭi", "type": "place", "morphemes": ["veḷḷai", "kuṭi"], "source": "Sangam colophons", "weight": 1}
+{"name": "Vēmpaṟṟūr", "type": "place", "morphemes": ["vēmpaṟṟūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Viriyūr", "type": "place", "morphemes": ["viriyūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Viricciyūr", "type": "place", "morphemes": ["viricciyūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Erukkāṭṭūr", "type": "place", "morphemes": ["erukku", "kāṭu", "ūr"], "source": "Sangam colophons; Tamil-Brahmi (Tirupparaṅkuṉṟam)", "weight": 1}
+{"name": "Iḷampullūr", "type": "place", "morphemes": ["iḷam", "pul", "ūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Ālampēri", "type": "place", "morphemes": ["ālampēri"], "source": "Sangam colophons", "weight": 1}
+{"name": "Kayattūr", "type": "place", "morphemes": ["kayattūr"], "source": "Sangam colophons", "weight": 1}
+{"name": "Iraṇiyamuṭṭam", "type": "place", "morphemes": ["iraṇiyamuṭṭam"], "source": "Sangam colophons", "weight": 1}
+{"name": "Piṭavūr", "type": "place", "morphemes": ["piṭavu", "ūr"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Īrntūr", "type": "place", "morphemes": ["īrntūr"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Ciṟukuṭi", "type": "place", "morphemes": ["ciṟu", "kuṭi"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Ampar", "type": "place", "morphemes": ["ampar"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Vallār", "type": "place", "morphemes": ["vallār"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Karumpaṉūr", "type": "place", "morphemes": ["karumpaṉūr"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Nālai", "type": "place", "morphemes": ["nālai"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Koṇkāṉam", "type": "place", "morphemes": ["koṇkāṉam"], "source": "Puṟanāṉūṟu (colophon); Naṟṟiṇai", "weight": 1}
+{"name": "Vāṭṭāṟu", "type": "place", "morphemes": ["vāṭṭāṟu"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Paṭumaram", "type": "place", "morphemes": ["paṭumaram"], "source": "Kuṟuntokai (colophon)", "weight": 1}
+{"name": "Veḷḷaṟai", "type": "place", "morphemes": ["veḷ", "aṟai"], "source": "Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Yāṟṟūr", "type": "place", "morphemes": ["yāṟu", "ūr"], "source": "Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Nalliyūr", "type": "place", "morphemes": ["nalliyūr"], "source": "Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Erumināṭu", "type": "place", "morphemes": ["erumai", "nāṭu"], "source": "Tamil-Brahmi (Cittaṉṉavācal)", "weight": 1}
+{"name": "Kumuḻūr", "type": "place", "morphemes": ["kumuḻūr"], "source": "Tamil-Brahmi (Cittaṉṉavācal)", "weight": 1}
+{"name": "Teṉkuciṟupōcil", "type": "place", "morphemes": ["teṉku", "ciṟu", "pōcil"], "source": "Tamil-Brahmi (Cittaṉṉavācal)", "weight": 1}
+{"name": "Pākaṉūr", "type": "place", "morphemes": ["pākaṉūr"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Veṇpaḷḷi", "type": "place", "morphemes": ["veḷ", "paḷḷi"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Patiṉūr", "type": "place", "morphemes": ["patiṉūr"], "source": "Tamil-Brahmi", "weight": 1}
+{"name": "Ēri", "type": "place", "morphemes": ["ēri"], "source": "Tamil-Brahmi (Āṉaimalai)", "weight": 1}
+{"name": "Potiyil", "type": "hill", "morphemes": ["potiyil"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Kolli", "type": "hill", "morphemes": ["kolli"], "source": "Akanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Paṟampu", "type": "hill", "morphemes": ["paṟampu"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Vēṅkaṭam", "type": "hill", "morphemes": ["vēṅkaṭam"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Imayam", "type": "hill", "morphemes": ["imayam"], "source": "Puṟanāṉūṟu; Patiṟṟuppattu", "weight": 1}
+{"name": "Naṉṟā", "type": "hill", "morphemes": ["naṉṟā"], "source": "Aiṅkuṟunūṟu; Patiṟṟuppattu", "weight": 1}
+{"name": "Ayirai", "type": "hill", "morphemes": ["ayirai"], "source": "Patiṟṟuppattu; Kuṟuntokai", "weight": 1}
+{"name": "Tōṭṭi", "type": "hill", "morphemes": ["tōṭṭi"], "source": "Puṟanāṉūṟu; Patiṟṟuppattu", "weight": 1}
+{"name": "Mutiram", "type": "hill", "morphemes": ["mutiram"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Muḷḷūr", "type": "hill", "morphemes": ["muḷḷūr"], "source": "Puṟanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Ēḻil", "type": "hill", "morphemes": ["ēḻil"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Nāñcil", "type": "hill", "morphemes": ["nāñcil"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Vicci", "type": "hill", "morphemes": ["vicci"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Mēru", "type": "hill", "morphemes": ["mēru"], "source": "Paripāṭal", "weight": 1}
+{"name": "Vaṭavarai", "type": "hill", "morphemes": ["vaṭa", "varai"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Paraṅkuṉṟu", "type": "hill", "morphemes": ["paraṅkuṉṟu"], "source": "Paripāṭal; Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Ērakam", "type": "hill", "morphemes": ["ērakam"], "source": "Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Kuṭamalai", "type": "hill", "morphemes": ["kuṭa", "malai"], "source": "Paṭṭiṉappālai; Naṟṟiṇai", "weight": 1}
+{"name": "Kāviri", "type": "river", "morphemes": ["kāviri"], "source": "Puṟanāṉūṟu; Akanāṉūṟu; Paṭṭiṉappālai", "weight": 1}
+{"name": "Vaiyai", "type": "river", "morphemes": ["vaiyai"], "source": "Paripāṭal; Maturaikkāñci", "weight": 1}
+{"name": "Porunai", "type": "river", "morphemes": ["porunai"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Toḻunai", "type": "river", "morphemes": ["toḻunai"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Pēriyāṟu", "type": "river", "morphemes": ["pēr", "yāṟu"], "source": "Akanāṉūṟu; Maturaikkāñci", "weight": 1}
+{"name": "Vāṉi", "type": "river", "morphemes": ["vāṉi"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Cēyāṟu", "type": "river", "morphemes": ["cēy", "āṟu"], "source": "Malaipaṭukaṭām; Kuṟuntokai", "weight": 1}
+{"name": "Kāriyāṟu", "type": "river", "morphemes": ["kāri", "āṟu"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Cuḷḷi", "type": "river", "morphemes": ["cuḷḷi"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Tuḷunāṭu", "type": "place", "morphemes": ["tuḷu", "nāṭu"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Murukaṉ", "type": "deity", "morphemes": ["murukaṉ"], "source": "Tirumurukāṟṟuppaṭai; Paripāṭal; Akanāṉūṟu", "weight": 1}
+{"name": "Cēy", "type": "deity", "morphemes": ["cēy"], "source": "Paripāṭal; Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Neṭuvēḷ", "type": "deity", "morphemes": ["neṭu", "vēḷ"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Cevvēḷ", "type": "deity", "morphemes": ["cem", "vēḷ"], "source": "Paripāṭal; Paṭṭiṉappālai", "weight": 1}
+{"name": "Māyōṉ", "type": "deity", "morphemes": ["māyōṉ"], "source": "Maturaikkāñci; Paripāṭal", "weight": 1}
+{"name": "Tirumāl", "type": "deity", "morphemes": ["tiru", "māl"], "source": "Paripāṭal; Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Neṭiyōṉ", "type": "deity", "morphemes": ["neṭiyōṉ"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Koṟṟavai", "type": "deity", "morphemes": ["koṟṟavai"], "source": "Tirumurukāṟṟuppaṭai; Paripāṭal", "weight": 1}
+{"name": "Paḻaiyōḷ", "type": "deity", "morphemes": ["paḻaiyōḷ"], "source": "Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Kāṉamarcelvi", "type": "deity", "morphemes": ["kāṉam", "amar", "celvi"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Umai", "type": "deity", "morphemes": ["umai"], "source": "Akanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Ālamarkaṭavuḷ", "type": "deity", "morphemes": ["ālam", "amar", "kaṭavuḷ"], "source": "Puṟanāṉūṟu; Ciṟupāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Ātiraimutalvaṉ", "type": "deity", "morphemes": ["ātirai", "mutalvaṉ"], "source": "Paripāṭal", "weight": 1}
+{"name": "Intiraṉ", "type": "deity", "morphemes": ["intiraṉ"], "source": "Paripāṭal", "weight": 1}
+{"name": "Kāmaṉ", "type": "deity", "morphemes": ["kāmaṉ"], "source": "Paripāṭal; Kalittokai", "weight": 1}
+{"name": "Ñamaṉ", "type": "deity", "morphemes": ["ñamaṉ"], "source": "Puṟanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Aṇaṅku", "type": "deity", "morphemes": ["aṇaṅku"], "source": "Akanāṉūṟu; Kalittokai", "weight": 1}
+{"name": "Cūr", "type": "deity", "morphemes": ["cūr"], "source": "Akanāṉūṟu; Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Cūrmakaḷ", "type": "deity", "morphemes": ["cūr", "makaḷ"], "source": "Akanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Pēy", "type": "deity", "morphemes": ["pēy"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Avuṇar", "type": "deity", "morphemes": ["avuṇar"], "source": "Maturaikkāñci; Paripāṭal", "weight": 1}
+{"name": "Arakkar", "type": "deity", "morphemes": ["arakkar"], "source": "Aiṅkuṟunūṟu; Kalittokai", "weight": 1}
+{"name": "Amarar", "type": "deity", "morphemes": ["amarar"], "source": "Paripāṭal; Puṟanāṉūṟu", "weight": 1}
+{"name": "Vāṉōr", "type": "deity", "morphemes": ["vāṉōr"], "source": "Puṟanāṉūṟu; Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Aṉalaṉ", "type": "deity", "morphemes": ["aṉalaṉ"], "source": "Paripāṭal", "weight": 1}
+{"name": "Vāliyōṉ", "type": "deity", "morphemes": ["vāliyōṉ"], "source": "Naṟṟiṇai", "weight": 1}
+{"name": "Nāṉmuka Oruvaṉ", "type": "deity", "morphemes": ["nāṉku", "mukam", "oruvaṉ"], "source": "Tirumurukāṟṟuppaṭai; Perumpāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Kūḷi", "type": "deity", "morphemes": ["kūḷi"], "source": "Puṟanāṉūṟu; Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Kantaruvar", "type": "deity", "morphemes": ["kantaruvar"], "source": "Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Nākar", "type": "deity", "morphemes": ["nākar"], "source": "Paripāṭal; Puṟanāṉūṟu", "weight": 1}
+{"name": "Vāṉaramakaḷir", "type": "deity", "morphemes": ["vāṉaramakaḷir"], "source": "Tirumurukāṟṟuppaṭai; Aiṅkuṟunūṟu", "weight": 1}
+{"name": "Pūtar", "type": "deity", "morphemes": ["pūtam"], "source": "Patiṟṟuppattu (patikam)", "weight": 1}
+{"name": "Kollippāvai", "type": "deity", "morphemes": ["kolli", "pāvai"], "source": "Kuṟuntokai", "weight": 1}
+{"name": "Vētamutalvaṉ", "type": "deity", "morphemes": ["vētam", "mutalvaṉ"], "source": "Naṟṟiṇai", "weight": 1}
+{"name": "Kāmavēḷ", "type": "deity", "morphemes": ["kāmam", "vēḷ"], "source": "Paripāṭal; Kalittokai", "weight": 1}
+{"name": "Iraṇiyaṉ", "type": "deity", "morphemes": ["iraṇiyaṉ"], "source": "Paripāṭal", "weight": 1}
+{"name": "Kōcar", "type": "group", "morphemes": ["kōcar"], "source": "Akanāṉūṟu; Puṟanāṉūṟu; Maturaikkāñci", "weight": 1}
+{"name": "Mōriyar", "type": "group", "morphemes": ["mōriyar"], "source": "Akanāṉūṟu; Puṟanāṉūṟu", "weight": 1}
+{"name": "Yavaṉar", "type": "group", "morphemes": ["yavaṉar"], "source": "Puṟanāṉūṟu; Akanāṉūṟu; Patiṟṟuppattu", "weight": 1}
+{"name": "Vaṭukar", "type": "group", "morphemes": ["vaṭukar"], "source": "Akanāṉūṟu; Kuṟuntokai", "weight": 1}
+{"name": "Āriyar", "type": "group", "morphemes": ["āriyar"], "source": "Akanāṉūṟu; Kuṟuntokai", "weight": 1}
+{"name": "Kuṭavar", "type": "group", "morphemes": ["kuṭavar"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Vaṭavar", "type": "group", "morphemes": ["vaṭavar"], "source": "Akanāṉūṟu; Neṭunalvāṭai", "weight": 1}
+{"name": "Oḷiyar", "type": "group", "morphemes": ["oḷiyar"], "source": "Paṭṭiṉappālai", "weight": 1}
+{"name": "Maḻavar", "type": "group", "morphemes": ["maḻavar"], "source": "Akanāṉūṟu; Patiṟṟuppattu", "weight": 1}
+{"name": "Paratavar", "type": "group", "morphemes": ["paratavar"], "source": "Akanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Eyiṉar", "type": "group", "morphemes": ["eyiṉar"], "source": "Akanāṉūṟu; Aiṅkuṟunūṟu", "weight": 1}
+{"name": "Kuṟavar", "type": "group", "morphemes": ["kuṟavar"], "source": "Naṟṟiṇai; Akanāṉūṟu", "weight": 1}
+{"name": "Kāṉavar", "type": "group", "morphemes": ["kāṉavar"], "source": "Malaipaṭukaṭām; Naṟṟiṇai", "weight": 1}
+{"name": "Āyar", "type": "group", "morphemes": ["āyar"], "source": "Kalittokai", "weight": 1}
+{"name": "Kōvalar", "type": "group", "morphemes": ["kōvalar"], "source": "Akanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Umaṇar", "type": "group", "morphemes": ["umaṇar"], "source": "Akanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Koṅkar", "type": "group", "morphemes": ["koṅkar"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Kaḷvar", "type": "group", "morphemes": ["kaḷvar"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Maṟavar", "type": "group", "morphemes": ["maṟavar"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Aṇṭar", "type": "group", "morphemes": ["aṇṭar"], "source": "Kuṟuntokai; Puṟanāṉūṟu", "weight": 1}
+{"name": "Iṭaiyar", "type": "group", "morphemes": ["iṭaiyar"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Muṉivar", "type": "group", "morphemes": ["muṉivar"], "source": "Puṟanāṉūṟu; Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Pāṇar", "type": "group", "morphemes": ["pāṇar"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Tuṭiyar", "type": "group", "morphemes": ["tuṭiyar"], "source": "Puṟanāṉūṟu; Aiṅkuṟunūṟu", "weight": 1}
+{"name": "Vēṭṭuvar", "type": "group", "morphemes": ["vēṭṭuvar"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Kaḷamar", "type": "group", "morphemes": ["kaḷamar"], "source": "Puṟanāṉūṟu; Maturaikkāñci", "weight": 1}
+{"name": "Antaṇar", "type": "group", "morphemes": ["antaṇar"], "source": "Paripāṭal; Puṟanāṉūṟu", "weight": 1}
+{"name": "Uḻavar", "type": "group", "morphemes": ["uḻavar"], "source": "Akanāṉūṟu; Puṟanāṉūṟu", "weight": 1}
+{"name": "Kūttar", "type": "group", "morphemes": ["kūttar"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Iḷayar", "type": "group", "morphemes": ["iḷayar"], "source": "Tamil-Brahmi (Cittaṉṉavācal)", "weight": 1}
+{"name": "Viṟaliyar", "type": "group", "morphemes": ["viṟali"], "source": "Patiṟṟuppattu; Puṟanāṉūṟu; Malaipaṭukaṭām", "weight": 1}
+{"name": "Mūvar", "type": "group", "morphemes": ["mūvar"], "source": "Puṟanāṉūṟu; Tirumurukāṟṟuppaṭai", "weight": 1}
+{"name": "Pārppār", "type": "group", "morphemes": ["pārppār"], "source": "Patiṟṟuppattu; Puṟanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Aivar", "type": "group", "morphemes": ["aivar"], "source": "Kalittokai", "weight": 1}
+{"name": "Nūṟṟuvar", "type": "group", "morphemes": ["nūṟṟuvar"], "source": "Kalittokai", "weight": 1}
+{"name": "Porunar", "type": "group", "morphemes": ["porunar"], "source": "Puṟanāṉūṟu; Poruṇarāṟṟuppaṭai", "weight": 1}
+{"name": "Akavunar", "type": "group", "morphemes": ["akavunar"], "source": "Akanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Vayiriyar", "type": "group", "morphemes": ["vayiriyar"], "source": "Puṟanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Kōṭiyar", "type": "group", "morphemes": ["kōṭiyar"], "source": "Patiṟṟuppattu", "weight": 1}
+{"name": "Valaiñar", "type": "group", "morphemes": ["valaiñar"], "source": "Puṟanāṉūṟu; Perumpāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Vaṇikar", "type": "group", "morphemes": ["vaṇikar"], "source": "Paripāṭal", "weight": 1}
+{"name": "Pulaiyar", "type": "group", "morphemes": ["pulaiyar"], "source": "Kalittokai", "weight": 1}
+{"name": "Vēḷir", "type": "lineage", "morphemes": ["vēḷ"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Atiyar", "type": "lineage", "morphemes": ["atiyar"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Kavuriyar", "type": "lineage", "morphemes": ["kavuriyar"], "source": "Puṟanāṉūṟu; Akanāṉūṟu", "weight": 1}
+{"name": "Cempiyar", "type": "lineage", "morphemes": ["cempiyar"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Pañcavar", "type": "lineage", "morphemes": ["pañcavar"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Teṉṉar", "type": "lineage", "morphemes": ["teṉṉar"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Āviyar", "type": "lineage", "morphemes": ["āviyar"], "source": "Puṟanāṉūṟu; Ciṟupāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Ōviyar", "type": "lineage", "morphemes": ["ōviyar"], "source": "Ciṟupāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Nantar", "type": "lineage", "morphemes": ["nantar"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Toṇṭaiyar", "type": "lineage", "morphemes": ["toṇṭaiyar"], "source": "Akanāṉūṟu; Kuṟuntokai", "weight": 1}
+{"name": "Irumpoṟai", "type": "lineage", "morphemes": ["iru", "poṟai"], "source": "Patiṟṟuppattu; Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Ceṉṉi", "type": "lineage", "morphemes": ["ceṉṉi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Vaḻuti", "type": "lineage", "morphemes": ["vaḻuti"], "source": "Puṟanāṉūṟu; Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Cēralar", "type": "lineage", "morphemes": ["cēral"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Cōḻar", "type": "lineage", "morphemes": ["cōḻaṉ"], "source": "Akanāṉūṟu; Naṟṟiṇai", "weight": 1}
+{"name": "Pāṇṭiyar", "type": "lineage", "morphemes": ["pāṇṭiyaṉ"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Ñāyiṟu", "type": "celestial", "morphemes": ["ñāyiṟu"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Tiṅkaḷ", "type": "celestial", "morphemes": ["tiṅkaḷ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Veḷḷi", "type": "celestial", "morphemes": ["veḷḷi"], "source": "Puṟanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Vaṭamīṉ", "type": "celestial", "morphemes": ["vaṭa", "mīṉ"], "source": "Puṟanāṉūṟu; Perumpāṇāṟṟuppaṭai", "weight": 1}
+{"name": "Aṟumīṉ", "type": "celestial", "morphemes": ["aṟu", "mīṉ"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Aruntati", "type": "celestial", "morphemes": ["aruntati"], "source": "Aiṅkuṟunūṟu", "weight": 1}
+{"name": "Kārttikai", "type": "celestial", "morphemes": ["kārttikai"], "source": "Paripāṭal", "weight": 1}
+{"name": "Mituṉam", "type": "celestial", "morphemes": ["mituṉam"], "source": "Paripāṭal", "weight": 1}
+{"name": "Makaram", "type": "celestial", "morphemes": ["makaram"], "source": "Paripāṭal", "weight": 1}
+{"name": "Varuṭai", "type": "celestial", "morphemes": ["varuṭai"], "source": "Paripāṭal", "weight": 1}
+{"name": "Ōṇam", "type": "celestial", "morphemes": ["ōṇam"], "source": "Maturaikkāñci", "weight": 1}
+{"name": "Urōkiṇi", "type": "celestial", "morphemes": ["urōkiṇi"], "source": "Neṭunalvāṭai", "weight": 1}
+{"name": "Teṉṉavaṉ", "type": "title", "morphemes": ["teṉṉavaṉ"], "source": "Akanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Pañcavaṉ", "type": "title", "morphemes": ["pañcavaṉ"], "source": "Paripāṭal", "weight": 1}
+{"name": "Cempiyaṉ", "type": "title", "morphemes": ["cempiyaṉ"], "source": "Naṟṟiṇai; Maturaikkāñci", "weight": 1}
+{"name": "Vaḷavaṉ", "type": "title", "morphemes": ["vaḷavaṉ"], "source": "Puṟanāṉūṟu; Paṭṭiṉappālai", "weight": 1}
+{"name": "Kuṭṭuvaṉ", "type": "title", "morphemes": ["kuṭṭuvaṉ"], "source": "Patiṟṟuppattu; Akanāṉūṟu", "weight": 1}
+{"name": "Vāṉavaṉ", "type": "title", "morphemes": ["vāṉavaṉ"], "source": "Akanāṉūṟu; Puṟanāṉūṟu", "weight": 1}
+{"name": "Imayavarampaṉ", "type": "title", "morphemes": ["imayam", "varampaṉ"], "source": "Patiṟṟuppattu", "weight": 1}
+{"name": "Vāṉavarampaṉ", "type": "title", "morphemes": ["vāṉam", "varampaṉ"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Kāviti", "type": "title", "morphemes": ["kāviti"], "source": "Naṟṟiṇai; Maturaikkāñci; Tamil-Brahmi (Māṅkuḷam)", "weight": 1}
+{"name": "Ēṉāti", "type": "title", "morphemes": ["ēṉāti"], "source": "Puṟanāṉūṟu; Kuṟuntokai", "weight": 1}
+{"name": "Etti", "type": "title", "morphemes": ["etti"], "source": "Puṟanāṉūṟu; Kalittokai", "weight": 1}
+{"name": "Iḷaṅkō", "type": "title", "morphemes": ["iḷam", "kō"], "source": "Tamil-Brahmi (Pukaḷūr)", "weight": 1}
+{"name": "Tamiḻ", "type": "other", "morphemes": ["tamiḻ"], "source": "Puṟanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Vaṭamoḻi", "type": "other", "morphemes": ["vaṭa", "moḻi"], "source": "Kalittokai", "weight": 1}
+{"name": "Nāṉmaṟai", "type": "other", "morphemes": ["nāṉku", "maṟai"], "source": "Puṟanāṉūṟu; Paripāṭal", "weight": 1}
+{"name": "Pāratam", "type": "other", "morphemes": ["pāratam"], "source": "Naṟṟiṇai; Kuṟuntokai", "weight": 1}
+{"name": "Irācacūyam", "type": "other", "morphemes": ["irācacūyam"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Palyākacālai", "type": "other", "morphemes": ["pal", "yākam", "cālai"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Cittiramāṭam", "type": "other", "morphemes": ["cittiram", "māṭam"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kūṭakāram", "type": "other", "morphemes": ["kūṭakāram"], "source": "Puṟanāṉūṟu (colophon)", "weight": 1}
+{"name": "Kōṭṭampalam", "type": "other", "morphemes": ["kōṭṭam", "ampalam"], "source": "Puṟanāṉūṟu (colophon); Naṟṟiṇai", "weight": 1}
+{"name": "Pāṟkaṭal", "type": "other", "morphemes": ["pāl", "kaṭal"], "source": "Paripāṭal", "weight": 1}
+{"name": "Kuṇakaṭal", "type": "other", "morphemes": ["kuṇa", "kaṭal"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Kuṭakaṭal", "type": "other", "morphemes": ["kuṭa", "kaṭal"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Teṉkaṭal", "type": "other", "morphemes": ["teṉ", "kaṭal"], "source": "Paṭṭiṉappālai", "weight": 1}
+{"name": "Uḷḷiviḻavu", "type": "other", "morphemes": ["uḷḷi", "viḻavu"], "source": "Akanāṉūṟu", "weight": 1}
+{"name": "Intiraviḻavu", "type": "other", "morphemes": ["intiraṉ", "viḻavu"], "source": "Aiṅkuṟunūṟu", "weight": 1}
+{"name": "Paṅkuṉi", "type": "other", "morphemes": ["paṅkuṉi"], "source": "Puṟanāṉūṟu", "weight": 1}
+{"name": "Tai", "type": "other", "morphemes": ["tai"], "source": "Paripāṭal", "weight": 1}

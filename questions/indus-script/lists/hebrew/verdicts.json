@@ -1,0 +1,423 @@
+{
+ "A": [
+  {
+   "item": "Rešep",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾAdōnīrām",
+   "verdict": "ok"
+  },
+  {
+   "item": "Penūʾēl",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʿĒden",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾAbīšag",
+   "verdict": "ok",
+   "reason": "First member ʾāb is clear but the second is obscure (BDB 'my father is a wanderer?'), so leaving it unanalysed is defensible."
+  },
+  {
+   "item": "Ḥārim",
+   "verdict": "ok",
+   "reason": "BDB glosses the name 'consecrated'."
+  },
+  {
+   "item": "Tartān",
+   "verdict": "wrong",
+   "reason": "Not a proper name but the Assyrian title 'commander-in-chief' (loan from Akkadian tartānu/turtānu, BDB), so the gloss 'no known meaning' is wrong."
+  },
+  {
+   "item": "Galʿēd",
+   "verdict": "ok"
+  },
+  {
+   "item": "Malkī-ṣedeq",
+   "verdict": "ok"
+  },
+  {
+   "item": "Miṣrayim",
+   "verdict": "ok"
+  },
+  {
+   "item": "Lūz",
+   "verdict": "ok"
+  },
+  {
+   "item": "Mōriyyāh",
+   "verdict": "ok"
+  },
+  {
+   "item": "Rēkāb",
+   "verdict": "ok",
+   "reason": "BDB suggests 'band of riders?'; link to rekeb 'chariot' (same root rkb) is debatable but defensible."
+  },
+  {
+   "item": "ʿEglōn",
+   "verdict": "ok"
+  },
+  {
+   "item": "Tartāq",
+   "verdict": "ok"
+  },
+  {
+   "item": "Matrī",
+   "verdict": "ok",
+   "reason": "Attested as hammaṭrī, 1 Sam 10:21; correct transliteration is Maṭrī (ṭet)."
+  },
+  {
+   "item": "Šilōaḥ",
+   "verdict": "ok",
+   "reason": "BDB calls the link to šālaḥ 'not certain', but it is the standard etymology."
+  },
+  {
+   "item": "Liwyātān",
+   "verdict": "ok",
+   "reason": "BDB treats it as a noun 'serpent, dragon' formed from lwh 'twist'; 'deity' is a loose type label but the name and gloss are defensible."
+  },
+  {
+   "item": "Gēḥazī",
+   "verdict": "ok"
+  },
+  {
+   "item": "Hadassāh",
+   "verdict": "ok"
+  },
+  {
+   "item": "Bōʿaz",
+   "verdict": "ok"
+  },
+  {
+   "item": "Maʿazyāh",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾAdrammelek",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʿĀš",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾElīʾāb",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʿAśāhʾēl",
+   "verdict": "ok"
+  },
+  {
+   "item": "Baʿšāʾ",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ṭōbiyyāh",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾAbiyyāh",
+   "verdict": "ok"
+  },
+  {
+   "item": "Mārāh",
+   "verdict": "ok"
+  },
+  {
+   "item": "Yōʾāš",
+   "verdict": "ok",
+   "reason": "Short form of Yehōʾāš; second element uncertain, so leaving it unanalysed is defensible."
+  },
+  {
+   "item": "Menī",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾŪriyyāh",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾAšīmāʾ",
+   "verdict": "ok"
+  },
+  {
+   "item": "Zeʾēb",
+   "verdict": "ok"
+  },
+  {
+   "item": "Mōʾāb",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾAbīgayil",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ṣebāʾōt",
+   "verdict": "ok"
+  },
+  {
+   "item": "Dīnāh",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ṣebōyīm",
+   "verdict": "ok"
+  },
+  {
+   "item": "Zattūʾ",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾĒlīm",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾAharōn",
+   "verdict": "ok"
+  },
+  {
+   "item": "Yeṭūr",
+   "verdict": "ok"
+  },
+  {
+   "item": "Rāḥāb",
+   "verdict": "ok"
+  },
+  {
+   "item": "Daryāweš",
+   "verdict": "ok"
+  },
+  {
+   "item": "Kenaʿan",
+   "verdict": "ok"
+  },
+  {
+   "item": "Gilʿād",
+   "verdict": "ok"
+  },
+  {
+   "item": "Golyāt",
+   "verdict": "ok"
+  },
+  {
+   "item": "Nātān",
+   "verdict": "ok"
+  }
+ ],
+ "B": [
+  {
+   "item": "ʾaguddā",
+   "verdict": "ok"
+  },
+  {
+   "item": "yōneqet",
+   "verdict": "ok"
+  },
+  {
+   "item": "śēk",
+   "verdict": "ok",
+   "reason": "BDB 'thorn', only plural śikkîm Num 33:55; 'barb/spike' is a close near-synonym."
+  },
+  {
+   "item": "ḥōmā",
+   "verdict": "ok"
+  },
+  {
+   "item": "bāmā",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾēš",
+   "verdict": "ok"
+  },
+  {
+   "item": "binyān",
+   "verdict": "wrong",
+   "reason": "Occurs only in Ezekiel 40-42 (exilic) and Biblical Aramaic/Mishnaic Hebrew; BDB records it as an Aramaic loan-word, so it is not attested in early Biblical Hebrew."
+  },
+  {
+   "item": "kəlī",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾarōn",
+   "verdict": "ok"
+  },
+  {
+   "item": "dāgān",
+   "verdict": "ok"
+  },
+  {
+   "item": "miqdāš",
+   "verdict": "ok"
+  },
+  {
+   "item": "dad",
+   "verdict": "ok",
+   "reason": "BDB 'breast, teat' (Prov 5:19; Ezek 23); some emend these passages."
+  },
+  {
+   "item": "pāgaʿ",
+   "verdict": "ok"
+  },
+  {
+   "item": "tāw",
+   "verdict": "ok",
+   "reason": "BDB 'mark' (Ezek 9:4,6; Job 31:35), a cross-shaped mark in the old script; denominative verb already in 1 Sam 21:14."
+  },
+  {
+   "item": "melqāḥayim",
+   "verdict": "ok"
+  },
+  {
+   "item": "šad",
+   "verdict": "ok"
+  },
+  {
+   "item": "śōkā",
+   "verdict": "ok"
+  },
+  {
+   "item": "ḥagōrā",
+   "verdict": "ok",
+   "reason": "BDB 'girdle, belt'; a belt is a band."
+  },
+  {
+   "item": "ḥōṭer",
+   "verdict": "ok"
+  },
+  {
+   "item": "gədil",
+   "verdict": "ok",
+   "reason": "BDB 'twisted threads, tassels' (Deut 22:12); tassel is close to tuft."
+  },
+  {
+   "item": "bad",
+   "verdict": "ok"
+  },
+  {
+   "item": "masmēr",
+   "verdict": "ok",
+   "reason": "Borderline: earliest attestations are Jer 10:4 and Isa 41:7 (late pre-exilic/exilic), then Chronicles and Qohelet; BDB 'nail'."
+  },
+  {
+   "item": "dūd",
+   "verdict": "ok"
+  },
+  {
+   "item": "mōqēš",
+   "verdict": "ok"
+  },
+  {
+   "item": "nēs",
+   "verdict": "ok"
+  },
+  {
+   "item": "tōp",
+   "verdict": "ok"
+  },
+  {
+   "item": "dāgā",
+   "verdict": "ok"
+  },
+  {
+   "item": "yād",
+   "verdict": "ok"
+  },
+  {
+   "item": "bārāq",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾīšōn",
+   "verdict": "ok"
+  },
+  {
+   "item": "śādeh",
+   "verdict": "ok"
+  },
+  {
+   "item": "śādeh",
+   "verdict": "ok"
+  },
+  {
+   "item": "qaššāt",
+   "verdict": "ok",
+   "reason": "BDB 'bowman' (Gen 21:20), with a note that the reading is doubted."
+  },
+  {
+   "item": "ṣīṣ",
+   "verdict": "ok"
+  },
+  {
+   "item": "bərēkā",
+   "verdict": "ok"
+  },
+  {
+   "item": "gal",
+   "verdict": "ok"
+  },
+  {
+   "item": "ṣərōr",
+   "verdict": "ok"
+  },
+  {
+   "item": "maqqēl",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʿūr",
+   "verdict": "ok"
+  },
+  {
+   "item": "ḥōmā",
+   "verdict": "ok"
+  },
+  {
+   "item": "degel",
+   "verdict": "ok"
+  },
+  {
+   "item": "kap",
+   "verdict": "ok"
+  },
+  {
+   "item": "rešet",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʾīš",
+   "verdict": "ok"
+  },
+  {
+   "item": "ḥanīt",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʿēṣ",
+   "verdict": "ok"
+  },
+  {
+   "item": "pereq",
+   "verdict": "ok",
+   "reason": "BDB 'parting of ways' (Obad 14); the word itself is also in Nah 3:1."
+  },
+  {
+   "item": "rōmaḥ",
+   "verdict": "ok"
+  },
+  {
+   "item": "ʿayin",
+   "verdict": "ok"
+  },
+  {
+   "item": "ḥelqā",
+   "verdict": "ok"
+  }
+ ]
+}

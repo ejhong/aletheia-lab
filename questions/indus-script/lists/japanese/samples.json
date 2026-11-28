@@ -1,0 +1,717 @@
+{
+ "A_names": [
+  {
+   "name": "Takara",
+   "type": "person",
+   "morphemes": [
+    "takara"
+   ],
+   "gloss": "treasure",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Takamanohara",
+   "type": "place",
+   "morphemes": [
+    "taka",
+    "ame",
+    "hara"
+   ],
+   "gloss": "high + heaven + plain",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Maro",
+   "type": "person",
+   "morphemes": [
+    "maro"
+   ],
+   "gloss": "maro (male name ending)",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Umashiashikabihikoji",
+   "type": "deity",
+   "morphemes": [
+    "umashi",
+    "ashi",
+    "kabi",
+    "hiko",
+    "ji"
+   ],
+   "gloss": "fine + reed + shoot + prince + man (honorific)",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Iki",
+   "type": "place",
+   "morphemes": [
+    "iki"
+   ],
+   "gloss": "name",
+   "source": "Kojiki; Nihon shoki; Man'yōshū"
+  },
+  {
+   "name": "Akaiko",
+   "type": "person",
+   "morphemes": [
+    "aka",
+    "i",
+    "ko"
+   ],
+   "gloss": "red + boar + child",
+   "source": "Kojiki"
+  },
+  {
+   "name": "Kuzuko",
+   "type": "person",
+   "morphemes": [
+    "kuzu",
+    "ko"
+   ],
+   "gloss": "arrowroot + child",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Akimochi",
+   "type": "person",
+   "morphemes": [
+    "aki",
+    "motsu"
+   ],
+   "gloss": "autumn + hold",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Sakimori",
+   "type": "group",
+   "morphemes": [
+    "saki",
+    "moru"
+   ],
+   "gloss": "cape + guard",
+   "source": "Nihon shoki; Man'yōshū"
+  },
+  {
+   "name": "Sakanoue no Iratsume",
+   "type": "person",
+   "morphemes": [
+    "saka",
+    "ue",
+    "iratsume"
+   ],
+   "gloss": "slope + upper + young lady",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Moroe",
+   "type": "person",
+   "morphemes": [
+    "moro",
+    "e"
+   ],
+   "gloss": "all + elder brother",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Inishiki Irihiko",
+   "type": "person",
+   "morphemes": [
+    "inishiki",
+    "iri",
+    "hiko"
+   ],
+   "gloss": "name + enter + prince",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Shibi",
+   "type": "person",
+   "morphemes": [
+    "shibi"
+   ],
+   "gloss": "tuna",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Hinaburi",
+   "type": "other",
+   "morphemes": [
+    "hina",
+    "furi"
+   ],
+   "gloss": "countryside + style",
+   "source": "Kojiki"
+  },
+  {
+   "name": "Okinaga Tarashi Hihironuka",
+   "type": "person",
+   "morphemes": [
+    "iki",
+    "naga",
+    "tarashi",
+    "hi",
+    "hiro",
+    "nuka"
+   ],
+   "gloss": "breath + long + tarashi (title) + sun + wide + forehead",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Matori",
+   "type": "person",
+   "morphemes": [
+    "ma",
+    "tori"
+   ],
+   "gloss": "true + bird",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Konoshiro",
+   "type": "person",
+   "morphemes": [
+    "konoshiro"
+   ],
+   "gloss": "gizzard shad",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Naka no Ōe",
+   "type": "person",
+   "morphemes": [
+    "naka",
+    "ō",
+    "e"
+   ],
+   "gloss": "middle + great + elder brother",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Hashirimizu",
+   "type": "place",
+   "morphemes": [
+    "hashiru",
+    "mizu"
+   ],
+   "gloss": "run + water",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Miminashi",
+   "type": "hill",
+   "morphemes": [
+    "mimi",
+    "nashi"
+   ],
+   "gloss": "ear + without",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Tasa",
+   "type": "person",
+   "morphemes": [
+    "tasa"
+   ],
+   "gloss": "name",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Amekuni Oshiharuki Hironiwa",
+   "type": "person",
+   "morphemes": [
+    "ame",
+    "kuni",
+    "osu",
+    "haruki",
+    "hiro",
+    "niwa"
+   ],
+   "gloss": "heaven + land + press + name + wide + court",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Isuzuyorihime",
+   "type": "person",
+   "morphemes": [
+    "i",
+    "suzu",
+    "yoru",
+    "hime"
+   ],
+   "gloss": "fifty + bell + approach + princess",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Ame no Murakumo no Tsurugi",
+   "type": "other",
+   "morphemes": [
+    "ame",
+    "mura",
+    "kumo",
+    "tsurugi"
+   ],
+   "gloss": "heaven + cluster + cloud + sword",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Kawachi",
+   "type": "place",
+   "morphemes": [
+    "kawa",
+    "uchi"
+   ],
+   "gloss": "river + inside",
+   "source": "Kojiki; Nihon shoki; Man'yōshū"
+  },
+  {
+   "name": "Toyura",
+   "type": "place",
+   "morphemes": [
+    "toyo",
+    "ura"
+   ],
+   "gloss": "abundant + bay",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Wakasa",
+   "type": "place",
+   "morphemes": [
+    "wakasa"
+   ],
+   "gloss": "name",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Tarihito",
+   "type": "person",
+   "morphemes": [
+    "taru",
+    "hito"
+   ],
+   "gloss": "suffice + person",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Sasaraeotoko",
+   "type": "celestial",
+   "morphemes": [
+    "sasarae",
+    "otoko"
+   ],
+   "gloss": "name + man",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Tamura",
+   "type": "person",
+   "morphemes": [
+    "ta",
+    "mura"
+   ],
+   "gloss": "field + village",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Sanuki",
+   "type": "place",
+   "morphemes": [
+    "sanuki"
+   ],
+   "gloss": "name",
+   "source": "Kojiki; Nihon shoki; Man'yōshū"
+  },
+  {
+   "name": "Toyomike Kashikiyahime",
+   "type": "person",
+   "morphemes": [
+    "toyo",
+    "mi",
+    "ke",
+    "kashiku",
+    "ya",
+    "hime"
+   ],
+   "gloss": "abundant + honorific + food + cook + house + princess",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Amatsumikahoshi",
+   "type": "celestial",
+   "morphemes": [
+    "ame",
+    "mika",
+    "hoshi"
+   ],
+   "gloss": "heaven + name + star",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Unai Otome",
+   "type": "person",
+   "morphemes": [
+    "unai",
+    "otome"
+   ],
+   "gloss": "name + maiden",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Kibi",
+   "type": "place",
+   "morphemes": [
+    "kibi"
+   ],
+   "gloss": "name",
+   "source": "Kojiki; Nihon shoki; Man'yōshū"
+  },
+  {
+   "name": "Arakabi",
+   "type": "person",
+   "morphemes": [
+    "arakabi"
+   ],
+   "gloss": "name",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Inukaibe",
+   "type": "group",
+   "morphemes": [
+    "inu",
+    "kau",
+    "be"
+   ],
+   "gloss": "dog + keep + corporation",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Tanushi",
+   "type": "person",
+   "morphemes": [
+    "ta",
+    "nushi"
+   ],
+   "gloss": "field + master",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Muroya",
+   "type": "person",
+   "morphemes": [
+    "muro",
+    "ya"
+   ],
+   "gloss": "chamber + house",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Hironiwa",
+   "type": "person",
+   "morphemes": [
+    "hiro",
+    "niwa"
+   ],
+   "gloss": "wide + court",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Soga",
+   "type": "lineage",
+   "morphemes": [
+    "soga"
+   ],
+   "gloss": "name",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Yuzuki",
+   "type": "person",
+   "morphemes": [
+    "yumi",
+    "tsuki"
+   ],
+   "gloss": "bow + moon",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Ame no Iwafune",
+   "type": "other",
+   "morphemes": [
+    "ame",
+    "iwa",
+    "fune"
+   ],
+   "gloss": "heaven + rock + boat",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Chinu",
+   "type": "place",
+   "morphemes": [
+    "chinu"
+   ],
+   "gloss": "name",
+   "source": "Kojiki; Nihon shoki; Man'yōshū"
+  },
+  {
+   "name": "Yakamochi",
+   "type": "person",
+   "morphemes": [
+    "yakamochi"
+   ],
+   "gloss": "name",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Hirotari",
+   "type": "person",
+   "morphemes": [
+    "hiro",
+    "taru"
+   ],
+   "gloss": "wide + suffice",
+   "source": "Man'yōshū"
+  },
+  {
+   "name": "Tsukushi",
+   "type": "place",
+   "morphemes": [
+    "tsukushi"
+   ],
+   "gloss": "name",
+   "source": "Kojiki; Nihon shoki; Man'yōshū"
+  },
+  {
+   "name": "Toyo",
+   "type": "place",
+   "morphemes": [
+    "toyo"
+   ],
+   "gloss": "abundant",
+   "source": "Kojiki; Nihon shoki"
+  },
+  {
+   "name": "Atsukaya",
+   "type": "person",
+   "morphemes": [
+    "atsukaya"
+   ],
+   "gloss": "name",
+   "source": "Nihon shoki"
+  },
+  {
+   "name": "Nagate",
+   "type": "person",
+   "morphemes": [
+    "naga",
+    "te"
+   ],
+   "gloss": "long + hand",
+   "source": "Man'yōshū"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "crab",
+   "word": "kani"
+  },
+  {
+   "english": "drop",
+   "word": "shizuku"
+  },
+  {
+   "english": "leaves",
+   "word": "ha"
+  },
+  {
+   "english": "chest",
+   "word": "mune"
+  },
+  {
+   "english": "staff",
+   "word": "tsue"
+  },
+  {
+   "english": "fields",
+   "word": "ta"
+  },
+  {
+   "english": "claw",
+   "word": "tsume"
+  },
+  {
+   "english": "catch",
+   "word": "toru"
+  },
+  {
+   "english": "body",
+   "word": "mi"
+  },
+  {
+   "english": "branch",
+   "word": "eda"
+  },
+  {
+   "english": "junction",
+   "word": "chimata"
+  },
+  {
+   "english": "gate",
+   "word": "kado"
+  },
+  {
+   "english": "house",
+   "word": "ya"
+  },
+  {
+   "english": "man",
+   "word": "onoko"
+  },
+  {
+   "english": "sheaf",
+   "word": "tsuka"
+  },
+  {
+   "english": "hearth",
+   "word": "kamado"
+  },
+  {
+   "english": "heads",
+   "word": "kashira"
+  },
+  {
+   "english": "barbel",
+   "word": "hige"
+  },
+  {
+   "english": "cover",
+   "word": "ōu"
+  },
+  {
+   "english": "whiskers",
+   "word": "hige"
+  },
+  {
+   "english": "crowd",
+   "word": "mure"
+  },
+  {
+   "english": "waves",
+   "word": "nami"
+  },
+  {
+   "english": "snake",
+   "word": "orochi"
+  },
+  {
+   "english": "twig",
+   "word": "shimoto"
+  },
+  {
+   "english": "comb",
+   "word": "kushi"
+  },
+  {
+   "english": "fork",
+   "word": "mata"
+  },
+  {
+   "english": "curve",
+   "word": "kuma"
+  },
+  {
+   "english": "seeds",
+   "word": "tane"
+  },
+  {
+   "english": "scale",
+   "word": "uroko"
+  },
+  {
+   "english": "door",
+   "word": "to"
+  },
+  {
+   "english": "bud",
+   "word": "me"
+  },
+  {
+   "english": "stick",
+   "word": "shimoto"
+  },
+  {
+   "english": "field",
+   "word": "ta"
+  },
+  {
+   "english": "bend",
+   "word": "kuma"
+  },
+  {
+   "english": "shrine",
+   "word": "miya"
+  },
+  {
+   "english": "moon",
+   "word": "tsuki"
+  },
+  {
+   "english": "mother",
+   "word": "omo"
+  },
+  {
+   "english": "lance",
+   "word": "hoko"
+  },
+  {
+   "english": "drum",
+   "word": "tsuzumi"
+  },
+  {
+   "english": "shrine",
+   "word": "yashiro"
+  },
+  {
+   "english": "star",
+   "word": "hoshi"
+  },
+  {
+   "english": "branch",
+   "word": "e"
+  },
+  {
+   "english": "stool",
+   "word": "agura"
+  },
+  {
+   "english": "tree",
+   "word": "ki"
+  },
+  {
+   "english": "bow",
+   "word": "yumi"
+  },
+  {
+   "english": "nets",
+   "word": "ami"
+  },
+  {
+   "english": "turn",
+   "word": "meguru"
+  },
+  {
+   "english": "stir",
+   "word": "kaku"
+  },
+  {
+   "english": "hut",
+   "word": "io"
+  },
+  {
+   "english": "scale",
+   "word": "iroko"
+  }
+ ]
+}

@@ -1,0 +1,1029 @@
+{
+  "lang": "greek",
+  "runs": [
+    {
+      "seed": 0,
+      "real": -25.61,
+      "null": 18.11,
+      "difference": -43.72,
+      "signs_read": 2,
+      "readings": {
+        "142": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 1,
+      "real": -4.38,
+      "null": -8.71,
+      "difference": 4.33,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 2,
+      "real": 33.6,
+      "null": 47.06,
+      "difference": -13.46,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 3,
+      "real": 6.97,
+      "null": -5.36,
+      "difference": 12.33,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 4,
+      "real": 17.88,
+      "null": -7.22,
+      "difference": 25.1,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 5,
+      "real": 8.5,
+      "null": -9.62,
+      "difference": 18.12,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 6,
+      "real": 12.3,
+      "null": -47.27,
+      "difference": 59.57,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 7,
+      "real": -11.27,
+      "null": 3.1,
+      "difference": -14.37,
+      "signs_read": 3,
+      "readings": {
+        "100": "anēr",
+        "455": "pur",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 8,
+      "real": -13.99,
+      "null": 0.19,
+      "difference": -14.18,
+      "signs_read": 1,
+      "readings": {
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 9,
+      "real": -23.93,
+      "null": 1.62,
+      "difference": -25.55,
+      "signs_read": 2,
+      "readings": {
+        "100": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 10,
+      "real": 1.8,
+      "null": 2.5,
+      "difference": -0.7,
+      "signs_read": 4,
+      "readings": {
+        "090": "anēr",
+        "440": "pulē",
+        "455": "pur",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 11,
+      "real": 3.35,
+      "null": -10.05,
+      "difference": 13.4,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 12,
+      "real": -5.49,
+      "null": -10.74,
+      "difference": 5.25,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 13,
+      "real": -7.17,
+      "null": -10.14,
+      "difference": 2.97,
+      "signs_read": 2,
+      "readings": {
+        "440": "pulē",
+        "455": "pur"
+      }
+    },
+    {
+      "seed": 14,
+      "real": 8.74,
+      "null": 16.06,
+      "difference": -7.32,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 15,
+      "real": -18.08,
+      "null": 2.78,
+      "difference": -20.86,
+      "signs_read": 1,
+      "readings": {
+        "455": "pur"
+      }
+    },
+    {
+      "seed": 16,
+      "real": -30.29,
+      "null": -13.83,
+      "difference": -16.46,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 17,
+      "real": -32.19,
+      "null": -10.25,
+      "difference": -21.94,
+      "signs_read": 3,
+      "readings": {
+        "090": "anēr",
+        "440": "pulē",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 18,
+      "real": 0.57,
+      "null": 12.21,
+      "difference": -11.64,
+      "signs_read": 3,
+      "readings": {
+        "090": "anēr",
+        "455": "pur",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 19,
+      "real": 11.22,
+      "null": -7.87,
+      "difference": 19.09,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 20,
+      "real": -2.17,
+      "null": -5.49,
+      "difference": 3.32,
+      "signs_read": 2,
+      "readings": {
+        "142": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 21,
+      "real": -36.25,
+      "null": -7.62,
+      "difference": -28.63,
+      "signs_read": 2,
+      "readings": {
+        "100": "anēr",
+        "455": "pur"
+      }
+    },
+    {
+      "seed": 22,
+      "real": -1.57,
+      "null": 11.88,
+      "difference": -13.45,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 23,
+      "real": -1.25,
+      "null": -2.46,
+      "difference": 1.21,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 24,
+      "real": -14.58,
+      "null": 8.03,
+      "difference": -22.61,
+      "signs_read": 3,
+      "readings": {
+        "090": "anēr",
+        "440": "pulē",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 25,
+      "real": -8.06,
+      "null": 10.62,
+      "difference": -18.68,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 26,
+      "real": 14.57,
+      "null": -9.49,
+      "difference": 24.06,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 27,
+      "real": 15.89,
+      "null": 2.11,
+      "difference": 13.78,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 28,
+      "real": -0.82,
+      "null": 4.16,
+      "difference": -4.98,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 29,
+      "real": 19.07,
+      "null": -9.3,
+      "difference": 28.37,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 30,
+      "real": 24.17,
+      "null": -5.87,
+      "difference": 30.04,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "440": "pulē"
+      }
+    },
+    {
+      "seed": 31,
+      "real": 6.45,
+      "null": -0.61,
+      "difference": 7.06,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 32,
+      "real": 23.93,
+      "null": -5.29,
+      "difference": 29.22,
+      "signs_read": 1,
+      "readings": {
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 33,
+      "real": 16.86,
+      "null": 11.41,
+      "difference": 5.45,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 34,
+      "real": -23.22,
+      "null": 14.57,
+      "difference": -37.79,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 35,
+      "real": 8.37,
+      "null": -8.13,
+      "difference": 16.5,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 36,
+      "real": 4.44,
+      "null": -3.77,
+      "difference": 8.21,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 37,
+      "real": -32.83,
+      "null": -11.42,
+      "difference": -21.41,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 38,
+      "real": -5.69,
+      "null": 3.31,
+      "difference": -9.0,
+      "signs_read": 1,
+      "readings": {
+        "142": "anēr"
+      }
+    },
+    {
+      "seed": 39,
+      "real": -24.96,
+      "null": 3.78,
+      "difference": -28.74,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 40,
+      "real": -25.37,
+      "null": 21.11,
+      "difference": -46.48,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 41,
+      "real": 4.86,
+      "null": 7.18,
+      "difference": -2.32,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 42,
+      "real": 4.68,
+      "null": 7.84,
+      "difference": -3.16,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 43,
+      "real": -21.07,
+      "null": -67.76,
+      "difference": 46.69,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 44,
+      "real": 3.17,
+      "null": 18.1,
+      "difference": -14.93,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 45,
+      "real": -7.55,
+      "null": -1.59,
+      "difference": -5.96,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 46,
+      "real": 1.78,
+      "null": 8.62,
+      "difference": -6.84,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 47,
+      "real": 6.34,
+      "null": -9.01,
+      "difference": 15.35,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "440": "pulē"
+      }
+    },
+    {
+      "seed": 48,
+      "real": -3.37,
+      "null": -12.65,
+      "difference": 9.28,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 49,
+      "real": 18.01,
+      "null": -11.91,
+      "difference": 29.92,
+      "signs_read": 1,
+      "readings": {
+        "455": "pur"
+      }
+    },
+    {
+      "seed": 50,
+      "real": -36.38,
+      "null": 3.37,
+      "difference": -39.75,
+      "signs_read": 3,
+      "readings": {
+        "142": "anēr",
+        "455": "pur",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 51,
+      "real": -10.25,
+      "null": 36.95,
+      "difference": -47.2,
+      "signs_read": 2,
+      "readings": {
+        "440": "pulē",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 52,
+      "real": 7.53,
+      "null": 2.74,
+      "difference": 4.79,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 53,
+      "real": 27.42,
+      "null": 4.08,
+      "difference": 23.34,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 54,
+      "real": 22.84,
+      "null": -7.5,
+      "difference": 30.34,
+      "signs_read": 1,
+      "readings": {
+        "440": "pulē"
+      }
+    },
+    {
+      "seed": 55,
+      "real": -9.87,
+      "null": 0.9,
+      "difference": -10.77,
+      "signs_read": 1,
+      "readings": {
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 56,
+      "real": 5.27,
+      "null": 5.89,
+      "difference": -0.62,
+      "signs_read": 2,
+      "readings": {
+        "100": "anēr",
+        "440": "pulē"
+      }
+    },
+    {
+      "seed": 57,
+      "real": -10.51,
+      "null": -8.86,
+      "difference": -1.65,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "455": "pur"
+      }
+    },
+    {
+      "seed": 58,
+      "real": 8.36,
+      "null": -27.71,
+      "difference": 36.07,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 59,
+      "real": -23.64,
+      "null": 3.36,
+      "difference": -27.0,
+      "signs_read": 2,
+      "readings": {
+        "455": "pur",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 60,
+      "real": -22.54,
+      "null": 10.14,
+      "difference": -32.68,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 61,
+      "real": 4.35,
+      "null": 4.68,
+      "difference": -0.33,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 62,
+      "real": 5.17,
+      "null": -9.11,
+      "difference": 14.28,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 63,
+      "real": 1.4,
+      "null": 7.96,
+      "difference": -6.56,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 64,
+      "real": -9.37,
+      "null": -8.44,
+      "difference": -0.93,
+      "signs_read": 1,
+      "readings": {
+        "440": "pulē"
+      }
+    },
+    {
+      "seed": 65,
+      "real": 16.61,
+      "null": -13.7,
+      "difference": 30.31,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 66,
+      "real": -10.02,
+      "null": -3.33,
+      "difference": -6.69,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 67,
+      "real": 4.36,
+      "null": -4.77,
+      "difference": 9.13,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 68,
+      "real": -1.54,
+      "null": -6.6,
+      "difference": 5.06,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 69,
+      "real": 4.55,
+      "null": 2.68,
+      "difference": 1.87,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 70,
+      "real": 1.33,
+      "null": 3.87,
+      "difference": -2.54,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 71,
+      "real": -1.72,
+      "null": 7.1,
+      "difference": -8.82,
+      "signs_read": 3,
+      "readings": {
+        "100": "anēr",
+        "455": "pur",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 72,
+      "real": -24.13,
+      "null": 5.31,
+      "difference": -29.44,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 73,
+      "real": 3.31,
+      "null": 0.48,
+      "difference": 2.83,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 74,
+      "real": 2.27,
+      "null": 2.95,
+      "difference": -0.68,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 75,
+      "real": -1.95,
+      "null": 4.54,
+      "difference": -6.49,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "455": "pur"
+      }
+    },
+    {
+      "seed": 76,
+      "real": 16.56,
+      "null": 3.24,
+      "difference": 13.32,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 77,
+      "real": -0.04,
+      "null": -1.56,
+      "difference": 1.52,
+      "signs_read": 3,
+      "readings": {
+        "090": "anēr",
+        "440": "pulē",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 78,
+      "real": 14.79,
+      "null": 7.51,
+      "difference": 7.28,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 79,
+      "real": 11.01,
+      "null": -8.58,
+      "difference": 19.59,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 80,
+      "real": -2.97,
+      "null": -37.39,
+      "difference": 34.42,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 81,
+      "real": 4.37,
+      "null": -23.34,
+      "difference": 27.71,
+      "signs_read": 2,
+      "readings": {
+        "100": "anēr",
+        "455": "pur"
+      }
+    },
+    {
+      "seed": 82,
+      "real": 12.85,
+      "null": 3.21,
+      "difference": 9.64,
+      "signs_read": 2,
+      "readings": {
+        "090": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 83,
+      "real": -21.12,
+      "null": 10.35,
+      "difference": -31.47,
+      "signs_read": 2,
+      "readings": {
+        "100": "anēr",
+        "455": "pur"
+      }
+    },
+    {
+      "seed": 84,
+      "real": 13.05,
+      "null": 3.29,
+      "difference": 9.76,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 85,
+      "real": 10.09,
+      "null": 1.51,
+      "difference": 8.58,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 86,
+      "real": -26.42,
+      "null": 2.82,
+      "difference": -29.24,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 87,
+      "real": -14.03,
+      "null": 8.83,
+      "difference": -22.86,
+      "signs_read": 0,
+      "readings": {}
+    },
+    {
+      "seed": 88,
+      "real": 8.44,
+      "null": -1.94,
+      "difference": 10.38,
+      "signs_read": 3,
+      "readings": {
+        "090": "anēr",
+        "455": "pur",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 89,
+      "real": 4.06,
+      "null": 15.22,
+      "difference": -11.16,
+      "signs_read": 1,
+      "readings": {
+        "100": "anēr"
+      }
+    },
+    {
+      "seed": 90,
+      "real": 4.65,
+      "null": -1.9,
+      "difference": 6.55,
+      "signs_read": 1,
+      "readings": {
+        "090": "anēr"
+      }
+    },
+    {
+      "seed": 91,
+      "real": 18.63,
+      "null": 9.39,
+      "difference": 9.24,
+      "signs_read": 2,
+      "readings": {
+        "440": "pulē",
+        "455": "pur"
+      }
+    },
+    {
+      "seed": 92,
+      "real": -1.13,
+      "null": -21.08,
+      "difference": 19.95,
+      "signs_read": 2,
+      "readings": {
+        "100": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 93,
+      "real": -6.55,
+      "null": 14.22,
+      "difference": -20.77,
+      "signs_read": 2,
+      "readings": {
+        "142": "anēr",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 94,
+      "real": -13.58,
+      "null": -17.47,
+      "difference": 3.89,
+      "signs_read": 3,
+      "readings": {
+        "090": "anēr",
+        "440": "pulē",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 95,
+      "real": -4.84,
+      "null": -3.55,
+      "difference": -1.29,
+      "signs_read": 1,
+      "readings": {
+        "440": "pulē"
+      }
+    },
+    {
+      "seed": 96,
+      "real": -48.52,
+      "null": 27.35,
+      "difference": -75.87,
+      "signs_read": 3,
+      "readings": {
+        "100": "anēr",
+        "440": "pulē",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 97,
+      "real": 16.09,
+      "null": -0.5,
+      "difference": 16.59,
+      "signs_read": 2,
+      "readings": {
+        "440": "pulē",
+        "717": "pous"
+      }
+    },
+    {
+      "seed": 98,
+      "real": -13.57,
+      "null": -5.56,
+      "difference": -8.01,
+      "signs_read": 1,
+      "readings": {
+        "142": "anēr"
+      }
+    },
+    {
+      "seed": 99,
+      "real": 10.57,
+      "null": 14.69,
+      "difference": -4.12,
+      "signs_read": 3,
+      "readings": {
+        "090": "anēr",
+        "440": "pulē",
+        "717": "pous"
+      }
+    }
+  ],
+  "mean_difference": -0.97,
+  "seeds_above_zero": 49
+}

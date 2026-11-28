@@ -1,0 +1,448 @@
+{
+ "answers": {
+  "floor": 46.9,
+  "controls_run": [],
+  "fresh_tamil_run": [],
+  "preprint_tamil_above_control_in_80_rounds": true,
+  "passes": {},
+  "overall": "INCOMPLETE: fewer than six control languages, or no fresh Tamil list, could be run"
+ },
+ "lists": {
+  "tamil_preprint": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": 44.3,
+    "median": 35.0,
+    "sd": 61.3,
+    "quartiles": [
+     -3.2,
+     97.2
+    ],
+    "runs_above_control": 73,
+    "real_mean": 48.6,
+    "null_mean": 4.2,
+    "signs_read_mean": 20.3,
+    "options_per_sign": 1.74,
+    "signs_with_options": 54,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 210
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": 88.2,
+    "median": 97.0,
+    "sd": 141.4,
+    "quartiles": [
+     19.8,
+     188.3
+    ],
+    "runs_above_control": 79,
+    "real_mean": 89.3,
+    "null_mean": 1.1,
+    "signs_read_mean": 17.2,
+    "options_per_sign": 1.77,
+    "signs_with_options": 55,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 210
+   },
+   "main": {
+    "runs": 100,
+    "mean": 187.7,
+    "median": 198.6,
+    "sd": 176.7,
+    "quartiles": [
+     73.1,
+     301.9
+    ],
+    "runs_above_control": 89,
+    "real_mean": 194.9,
+    "null_mean": 7.2,
+    "signs_read_mean": 20.0,
+    "options_per_sign": 1.77,
+    "signs_with_options": 55,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 210
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 182.4,
+    "median": 192.7,
+    "sd": 154.5,
+    "quartiles": [
+     82.2,
+     288.2
+    ],
+    "runs_above_control": 177,
+    "real_mean": 195.8,
+    "null_mean": 13.4,
+    "signs_read_mean": 19.9,
+    "options_per_sign": 1.77,
+    "signs_with_options": 55,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 210
+   },
+   "whole list, rounds 0 to 9": {
+    "runs": 10,
+    "mean": 223.0,
+    "median": 191.5,
+    "sd": 103.0,
+    "quartiles": [
+     171.5,
+     247.1
+    ],
+    "runs_above_control": 10,
+    "real_mean": 214.1,
+    "null_mean": -9.0,
+    "signs_read_mean": 27.4,
+    "options_per_sign": 2.52,
+    "signs_with_options": 56,
+    "names_per_run": 1125,
+    "name_parts_in_two_or_more_names": 350
+   },
+   "readings_chosen_for_jar_sign": {
+    "kuṭi": 87,
+    "kal": 10,
+    "kāl": 2
+   },
+   "one_sign_left_unread_rounds_0_to_9": {
+    "mean_with_every_sign": 131.4,
+    "largest_falls": [
+     {
+      "sign": "740",
+      "mean_without_it": 1.4,
+      "change": -130.0,
+      "rounds_above_control_of_10": 6,
+      "readings_chosen_for_it": {
+       "kuṭi": 87,
+       "kal": 10,
+       "kāl": 2
+      }
+     },
+     {
+      "sign": "002",
+      "mean_without_it": 120.8,
+      "change": -10.6,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {}
+     },
+     {
+      "sign": "176",
+      "mean_without_it": 125.1,
+      "change": -6.3,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {}
+     },
+     {
+      "sign": "060",
+      "mean_without_it": 128.1,
+      "change": -3.3,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {
+       "var": 64,
+       "varai": 9,
+       "kuṟu": 5,
+       "kuṟi": 1,
+       "koṭi": 1,
+       "koṭu": 1
+      }
+     },
+     {
+      "sign": "861",
+      "mean_without_it": 128.6,
+      "change": -2.8,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {
+       "il": 1
+      }
+     }
+    ]
+   }
+  },
+  "sanskrit_preprint": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -23.8,
+    "median": -24.7,
+    "sd": 40.1,
+    "quartiles": [
+     -52.2,
+     -3.5
+    ],
+    "runs_above_control": 24,
+    "real_mean": -21.4,
+    "null_mean": 2.4,
+    "signs_read_mean": 6.4,
+    "options_per_sign": 0.29,
+    "signs_with_options": 19,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 104
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -12.7,
+    "median": -10.9,
+    "sd": 32.6,
+    "quartiles": [
+     -35.1,
+     10.5
+    ],
+    "runs_above_control": 34,
+    "real_mean": -12.8,
+    "null_mean": -0.1,
+    "signs_read_mean": 4.4,
+    "options_per_sign": 0.29,
+    "signs_with_options": 19,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 104
+   },
+   "main": {
+    "runs": 100,
+    "mean": -23.4,
+    "median": -28.5,
+    "sd": 45.6,
+    "quartiles": [
+     -53.8,
+     7.5
+    ],
+    "runs_above_control": 30,
+    "real_mean": -20.9,
+    "null_mean": 2.5,
+    "signs_read_mean": 6.4,
+    "options_per_sign": 0.29,
+    "signs_with_options": 19,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 104
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": -2.8,
+    "median": -7.5,
+    "sd": 69.3,
+    "quartiles": [
+     -46.7,
+     21.4
+    ],
+    "runs_above_control": 85,
+    "real_mean": -5.7,
+    "null_mean": -3.0,
+    "signs_read_mean": 5.8,
+    "options_per_sign": 0.29,
+    "signs_with_options": 19,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 104
+   },
+   "whole list, rounds 0 to 9": {
+    "runs": 10,
+    "mean": -13.3,
+    "median": -9.7,
+    "sd": 44.7,
+    "quartiles": [
+     -61.4,
+     31.0
+    ],
+    "runs_above_control": 4,
+    "real_mean": -16.5,
+    "null_mean": -3.2,
+    "signs_read_mean": 17.8,
+    "options_per_sign": 1.06,
+    "signs_with_options": 40,
+    "names_per_run": 1367,
+    "name_parts_in_two_or_more_names": 269
+   },
+   "readings_chosen_for_jar_sign": {}
+  },
+  "akkadian_preprint": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -26.6,
+    "median": -26.0,
+    "sd": 25.8,
+    "quartiles": [
+     -44.6,
+     -6.1
+    ],
+    "runs_above_control": 18,
+    "real_mean": -24.9,
+    "null_mean": 1.6,
+    "signs_read_mean": 5.7,
+    "options_per_sign": 0.35,
+    "signs_with_options": 20,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -3.0,
+    "median": -3.7,
+    "sd": 16.4,
+    "quartiles": [
+     -11.8,
+     6.8
+    ],
+    "runs_above_control": 42,
+    "real_mean": -4.4,
+    "null_mean": -1.5,
+    "signs_read_mean": 5,
+    "options_per_sign": 0.35,
+    "signs_with_options": 20,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "main": {
+    "runs": 100,
+    "mean": -31.9,
+    "median": -30.9,
+    "sd": 32.7,
+    "quartiles": [
+     -57.3,
+     -4.7
+    ],
+    "runs_above_control": 20,
+    "real_mean": -31.9,
+    "null_mean": 0.0,
+    "signs_read_mean": 5.7,
+    "options_per_sign": 0.35,
+    "signs_with_options": 20,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 21.8,
+    "median": 4.6,
+    "sd": 75.3,
+    "quartiles": [
+     -17.9,
+     43.3
+    ],
+    "runs_above_control": 111,
+    "real_mean": 28.0,
+    "null_mean": 6.2,
+    "signs_read_mean": 5.3,
+    "options_per_sign": 0.35,
+    "signs_with_options": 20,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "whole list, rounds 0 to 9": {
+    "runs": 10,
+    "mean": 13.0,
+    "median": 10.3,
+    "sd": 28.1,
+    "quartiles": [
+     -9.5,
+     40.7
+    ],
+    "runs_above_control": 7,
+    "real_mean": -4.4,
+    "null_mean": -17.4,
+    "signs_read_mean": 8.5,
+    "options_per_sign": 0.52,
+    "signs_with_options": 30,
+    "names_per_run": 1207,
+    "name_parts_in_two_or_more_names": 258
+   },
+   "readings_chosen_for_jar_sign": {}
+  },
+  "akkadian_preprint_respelled": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -26.5,
+    "median": -24.3,
+    "sd": 23.8,
+    "quartiles": [
+     -44.1,
+     -6.3
+    ],
+    "runs_above_control": 13,
+    "real_mean": -23.9,
+    "null_mean": 2.6,
+    "signs_read_mean": 4.9,
+    "options_per_sign": 0.28,
+    "signs_with_options": 16,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -2.5,
+    "median": -3.5,
+    "sd": 14.4,
+    "quartiles": [
+     -11.2,
+     7.9
+    ],
+    "runs_above_control": 44,
+    "real_mean": -2.9,
+    "null_mean": -0.5,
+    "signs_read_mean": 4.7,
+    "options_per_sign": 0.28,
+    "signs_with_options": 16,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "main": {
+    "runs": 100,
+    "mean": -32.9,
+    "median": -34.1,
+    "sd": 28.8,
+    "quartiles": [
+     -55.5,
+     -12.7
+    ],
+    "runs_above_control": 15,
+    "real_mean": -30.8,
+    "null_mean": 2.1,
+    "signs_read_mean": 5.0,
+    "options_per_sign": 0.28,
+    "signs_with_options": 16,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 10.7,
+    "median": -2.5,
+    "sd": 68.0,
+    "quartiles": [
+     -19.1,
+     29.6
+    ],
+    "runs_above_control": 97,
+    "real_mean": 9.1,
+    "null_mean": -1.6,
+    "signs_read_mean": 4.0,
+    "options_per_sign": 0.28,
+    "signs_with_options": 16,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "whole list, rounds 0 to 9": {
+    "runs": 10,
+    "mean": 11.8,
+    "median": 16.3,
+    "sd": 26.0,
+    "quartiles": [
+     -6.0,
+     29.8
+    ],
+    "runs_above_control": 7,
+    "real_mean": -6.4,
+    "null_mean": -18.2,
+    "signs_read_mean": 7.3,
+    "options_per_sign": 0.45,
+    "signs_with_options": 26,
+    "names_per_run": 1207,
+    "name_parts_in_two_or_more_names": 258
+   },
+   "readings_chosen_for_jar_sign": {}
+  }
+ },
+ "settings": {
+  "rounds": 100,
+  "names_per_round_for_preprint_lists": 600,
+  "pass_rule": "above its scrambled control in at least 80 of 100 rounds, and a mean of at least a quarter of the preprint's Tamil list's mean",
+  "shuffled_pictures": "20 shuffles, each over rounds 0 to 9"
+ },
+ "note": "EXPLORATORY dry run of analysis/run_all.py before the lock, on the preprint's archived lists only; no control language existed yet"
+}

@@ -1,0 +1,697 @@
+{
+ "A_names": [
+  {
+   "name": "Kaṇaikkāl Irumpoṟai",
+   "type": "person",
+   "morphemes": [
+    "kaṇaikkāl",
+    "iru",
+    "poṟai"
+   ],
+   "gloss": "shin + great + name",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Makaram",
+   "type": "celestial",
+   "morphemes": [
+    "makaram"
+   ],
+   "gloss": "Capricorn (Skt.)",
+   "source": "Paripāṭal"
+  },
+  {
+   "name": "Tumpicēr Kīraṉār",
+   "type": "person",
+   "morphemes": [
+    "tumpi",
+    "cēr",
+    "kīraṉ"
+   ],
+   "gloss": "bee + joining + name",
+   "source": "Kuṟuntokai (colophon)"
+  },
+  {
+   "name": "Kollaṉ Aḻiciyār",
+   "type": "person",
+   "morphemes": [
+    "kollaṉ",
+    "aḻici"
+   ],
+   "gloss": "smith + name",
+   "source": "Kuṟuntokai (colophon)"
+  },
+  {
+   "name": "Aṇṭar",
+   "type": "group",
+   "morphemes": [
+    "aṇṭar"
+   ],
+   "gloss": "herdsmen",
+   "source": "Kuṟuntokai; Puṟanāṉūṟu"
+  },
+  {
+   "name": "Kallāṭaṉār",
+   "type": "person",
+   "morphemes": [
+    "kallāṭaṉ"
+   ],
+   "gloss": "name",
+   "source": "Akanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Peruñcittiraṉār",
+   "type": "person",
+   "morphemes": [
+    "peru",
+    "cittiraṉ"
+   ],
+   "gloss": "great + bright (Skt.)",
+   "source": "Puṟanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Mīṉeṟitūṇṭilār",
+   "type": "person",
+   "morphemes": [
+    "mīṉ",
+    "eṟi",
+    "tūṇṭil"
+   ],
+   "gloss": "fish or star + cast + fishing hook",
+   "source": "Kuṟuntokai (colophon)"
+  },
+  {
+   "name": "Kuṟuṅkōḻiyūr",
+   "type": "place",
+   "morphemes": [
+    "kuṟu",
+    "kōḻi",
+    "ūr"
+   ],
+   "gloss": "short + fowl + town",
+   "source": "Sangam colophons"
+  },
+  {
+   "name": "Cīttalaic Cāttaṉār",
+   "type": "person",
+   "morphemes": [
+    "cīttalai",
+    "cāttaṉ"
+   ],
+   "gloss": "festering head + name",
+   "source": "Akanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Mārkkaṇṭēyaṉār",
+   "type": "person",
+   "morphemes": [
+    "mārkkaṇṭēyaṉ"
+   ],
+   "gloss": "Mārkaṇḍeya (Skt.)",
+   "source": "Puṟanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Tōṉṟikkōṉ",
+   "type": "person",
+   "morphemes": [
+    "tōṉṟi",
+    "kōṉ"
+   ],
+   "gloss": "name + king",
+   "source": "Puṟanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Iḷampōtiyār",
+   "type": "person",
+   "morphemes": [
+    "iḷam",
+    "pōti"
+   ],
+   "gloss": "young + enlightenment (Skt.)",
+   "source": "Naṟṟiṇai (colophon)"
+  },
+  {
+   "name": "Nāñcil",
+   "type": "hill",
+   "morphemes": [
+    "nāñcil"
+   ],
+   "gloss": "plough",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Celvakkaṭuṅkō Vāḻiyātaṉ",
+   "type": "person",
+   "morphemes": [
+    "celvam",
+    "kaṭu",
+    "kō",
+    "vāḻi",
+    "ātaṉ"
+   ],
+   "gloss": "wealth + fierce + king + long live + name",
+   "source": "Patiṟṟuppattu; Puṟanāṉūṟu"
+  },
+  {
+   "name": "Iḷaveyiṉi",
+   "type": "person",
+   "morphemes": [
+    "iḷam",
+    "eyiṉi"
+   ],
+   "gloss": "young + hunter woman",
+   "source": "Puṟanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Veṇpūtaṉār",
+   "type": "person",
+   "morphemes": [
+    "veḷ",
+    "pūtaṉ"
+   ],
+   "gloss": "white + spirit (Skt.)",
+   "source": "Kuṟuntokai (colophon)"
+  },
+  {
+   "name": "Kōkkōtai Mārpaṉ",
+   "type": "person",
+   "morphemes": [
+    "kō",
+    "kōtai",
+    "mārpaṉ"
+   ],
+   "gloss": "king + garland + broad-chested one",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Mati",
+   "type": "celestial",
+   "morphemes": [
+    "mati"
+   ],
+   "gloss": "moon",
+   "source": "Paripāṭal; Akanāṉūṟu"
+  },
+  {
+   "name": "Neṭiyōṉ",
+   "type": "deity",
+   "morphemes": [
+    "neṭiyōṉ"
+   ],
+   "gloss": "tall one",
+   "source": "Puṟanāṉūṟu; Akanāṉūṟu"
+  },
+  {
+   "name": "Ōtalāntaiyār",
+   "type": "person",
+   "morphemes": [
+    "ōtalāntai"
+   ],
+   "gloss": "name",
+   "source": "Aiṅkuṟunūṟu (colophon)"
+  },
+  {
+   "name": "Utiyañcēral",
+   "type": "person",
+   "morphemes": [
+    "utiyaṉ",
+    "cēral"
+   ],
+   "gloss": "name + Cēra",
+   "source": "Patiṟṟuppattu; Akanāṉūṟu"
+  },
+  {
+   "name": "Āy Aṇṭiraṉ",
+   "type": "person",
+   "morphemes": [
+    "āy",
+    "aṇṭiraṉ"
+   ],
+   "gloss": "name + name",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Kumuḻūr",
+   "type": "place",
+   "morphemes": [
+    "kumuḻūr"
+   ],
+   "gloss": "name",
+   "source": "Tamil-Brahmi (Cittaṉṉavācal)"
+  },
+  {
+   "name": "Vāṉaramakaḷir",
+   "type": "deity",
+   "morphemes": [
+    "vāṉaramakaḷir"
+   ],
+   "gloss": "name",
+   "source": "Tirumurukāṟṟuppaṭai; Aiṅkuṟunūṟu"
+  },
+  {
+   "name": "Kiḷḷi",
+   "type": "lineage",
+   "morphemes": [
+    "kiḷḷi"
+   ],
+   "gloss": "name",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Tuṭiyar",
+   "type": "group",
+   "morphemes": [
+    "tuṭiyar"
+   ],
+   "gloss": "drummers",
+   "source": "Puṟanāṉūṟu; Aiṅkuṟunūṟu"
+  },
+  {
+   "name": "Uruttiraṉār",
+   "type": "person",
+   "morphemes": [
+    "uruttiraṉ"
+   ],
+   "gloss": "Rudra (Skt.)",
+   "source": "Kuṟuntokai (colophon)"
+  },
+  {
+   "name": "Porunai",
+   "type": "river",
+   "morphemes": [
+    "porunai"
+   ],
+   "gloss": "name",
+   "source": "Puṟanāṉūṟu"
+  },
+  {
+   "name": "Peruñcēral Irumpoṟai",
+   "type": "person",
+   "morphemes": [
+    "peru",
+    "cēral",
+    "iru",
+    "poṟai"
+   ],
+   "gloss": "great + Cēra + great + name",
+   "source": "Patiṟṟuppattu; Puṟanāṉūṟu"
+  },
+  {
+   "name": "Vaṭukar",
+   "type": "group",
+   "morphemes": [
+    "vaṭukar"
+   ],
+   "gloss": "Vaṭuka people",
+   "source": "Akanāṉūṟu; Kuṟuntokai"
+  },
+  {
+   "name": "Nārmuṭiccēral",
+   "type": "person",
+   "morphemes": [
+    "nār",
+    "muṭi",
+    "cēral"
+   ],
+   "gloss": "fibre + crown, tuft of hair + Cēra",
+   "source": "Patiṟṟuppattu; Akanāṉūṟu"
+  },
+  {
+   "name": "Toḻunai",
+   "type": "river",
+   "morphemes": [
+    "toḻunai"
+   ],
+   "gloss": "name",
+   "source": "Akanāṉūṟu"
+  },
+  {
+   "name": "Pūtaṉār",
+   "type": "person",
+   "morphemes": [
+    "pūtaṉ"
+   ],
+   "gloss": "spirit (Skt.)",
+   "source": "Kuṟuntokai (colophon)"
+  },
+  {
+   "name": "Nāṉmuka Oruvaṉ",
+   "type": "deity",
+   "morphemes": [
+    "nāṉku",
+    "mukam",
+    "oruvaṉ"
+   ],
+   "gloss": "four + face + one (man)",
+   "source": "Tirumurukāṟṟuppaṭai; Perumpāṇāṟṟuppaṭai"
+  },
+  {
+   "name": "Peruntēvaṉār",
+   "type": "person",
+   "morphemes": [
+    "peru",
+    "tēvaṉ"
+   ],
+   "gloss": "great + god",
+   "source": "Kuṟuntokai (colophon)"
+  },
+  {
+   "name": "Kōḷiyūr",
+   "type": "place",
+   "morphemes": [
+    "kōḷi",
+    "ūr"
+   ],
+   "gloss": "fig tree + town",
+   "source": "Sangam colophons"
+  },
+  {
+   "name": "Kūṟṟaṅkumaraṉār",
+   "type": "person",
+   "morphemes": [
+    "kūṟṟaṉ",
+    "kumaraṉ"
+   ],
+   "gloss": "name + youth",
+   "source": "Naṟṟiṇai (colophon)"
+  },
+  {
+   "name": "Iḷampūtaṉār",
+   "type": "person",
+   "morphemes": [
+    "iḷam",
+    "pūtaṉ"
+   ],
+   "gloss": "young + spirit (Skt.)",
+   "source": "Kuṟuntokai (colophon)"
+  },
+  {
+   "name": "Cāṇṭiliyaṉār",
+   "type": "person",
+   "morphemes": [
+    "cāṇṭiliyaṉ"
+   ],
+   "gloss": "Śāṇḍilya (Skt.)",
+   "source": "Kuṟuntokai (colophon)"
+  },
+  {
+   "name": "Peruṅkuṉṟūr",
+   "type": "place",
+   "morphemes": [
+    "peru",
+    "kuṉṟu",
+    "ūr"
+   ],
+   "gloss": "great + hill + town",
+   "source": "Sangam colophons"
+  },
+  {
+   "name": "Tēvaṉ Cāttaṉ",
+   "type": "person",
+   "morphemes": [
+    "tēvaṉ",
+    "cāttaṉ"
+   ],
+   "gloss": "god + name",
+   "source": "Tamil-Brahmi (Aṟaccalūr)"
+  },
+  {
+   "name": "Imayam",
+   "type": "hill",
+   "morphemes": [
+    "imayam"
+   ],
+   "gloss": "Himalaya",
+   "source": "Puṟanāṉūṟu; Patiṟṟuppattu"
+  },
+  {
+   "name": "Cāttaṉār",
+   "type": "person",
+   "morphemes": [
+    "cāttaṉ"
+   ],
+   "gloss": "name",
+   "source": "Akanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Kūkaikkōḻiyār",
+   "type": "person",
+   "morphemes": [
+    "kūkai",
+    "kōḻi"
+   ],
+   "gloss": "owl + fowl",
+   "source": "Puṟanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Aṉalaṉ",
+   "type": "deity",
+   "morphemes": [
+    "aṉalaṉ"
+   ],
+   "gloss": "fire (Agni)",
+   "source": "Paripāṭal"
+  },
+  {
+   "name": "Āriyar",
+   "type": "group",
+   "morphemes": [
+    "āriyar"
+   ],
+   "gloss": "northerners (Āryas)",
+   "source": "Akanāṉūṟu; Kuṟuntokai"
+  },
+  {
+   "name": "Eḻiṉiyātaṉ",
+   "type": "person",
+   "morphemes": [
+    "eḻiṉi",
+    "ātaṉ"
+   ],
+   "gloss": "name + name",
+   "source": "Puṟanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Vaṅkaṉār",
+   "type": "person",
+   "morphemes": [
+    "vaṅkaṉ"
+   ],
+   "gloss": "name",
+   "source": "Akanāṉūṟu (colophon)"
+  },
+  {
+   "name": "Iruṅkōvēḷ",
+   "type": "person",
+   "morphemes": [
+    "iru",
+    "kō",
+    "vēḷ"
+   ],
+   "gloss": "great + king + chief",
+   "source": "Puṟanāṉūṟu"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "tier",
+   "word": "aṭukku"
+  },
+  {
+   "english": "chest",
+   "word": "neñcu"
+  },
+  {
+   "english": "forked stick",
+   "word": "kavai"
+  },
+  {
+   "english": "seed",
+   "word": "virai"
+  },
+  {
+   "english": "breasts",
+   "word": "mulai"
+  },
+  {
+   "english": "line",
+   "word": "vari"
+  },
+  {
+   "english": "crab",
+   "word": "ñaṇṭu"
+  },
+  {
+   "english": "peaks",
+   "word": "kōṭu"
+  },
+  {
+   "english": "bud",
+   "word": "arumpu"
+  },
+  {
+   "english": "branch",
+   "word": "kiḷai"
+  },
+  {
+   "english": "barb",
+   "word": "muḷ"
+  },
+  {
+   "english": "tier",
+   "word": "nilai"
+  },
+  {
+   "english": "scale",
+   "word": "cetiḷ"
+  },
+  {
+   "english": "strokes",
+   "word": "vari"
+  },
+  {
+   "english": "pincer",
+   "word": "kuṟaṭu"
+  },
+  {
+   "english": "shell",
+   "word": "ōṭu"
+  },
+  {
+   "english": "bend",
+   "word": "kōṭṭam"
+  },
+  {
+   "english": "stool",
+   "word": "maṇai"
+  },
+  {
+   "english": "fire",
+   "word": "tī"
+  },
+  {
+   "english": "dot",
+   "word": "puḷḷi"
+  },
+  {
+   "english": "fields",
+   "word": "vayal"
+  },
+  {
+   "english": "grain",
+   "word": "kūlam"
+  },
+  {
+   "english": "lamp",
+   "word": "viḷakku"
+  },
+  {
+   "english": "point",
+   "word": "nuṉi"
+  },
+  {
+   "english": "eye",
+   "word": "viḻi"
+  },
+  {
+   "english": "ear",
+   "word": "kātu"
+  },
+  {
+   "english": "arrow",
+   "word": "kaṇai"
+  },
+  {
+   "english": "building",
+   "word": "maṉai"
+  },
+  {
+   "english": "pipal",
+   "word": "aracu"
+  },
+  {
+   "english": "worker",
+   "word": "viṉaiñar"
+  },
+  {
+   "english": "carry",
+   "word": "cumai"
+  },
+  {
+   "english": "sprout",
+   "word": "taḷir"
+  },
+  {
+   "english": "stack",
+   "word": "pōr"
+  },
+  {
+   "english": "whiskers",
+   "word": "mīcai"
+  },
+  {
+   "english": "spot",
+   "word": "poṟi"
+  },
+  {
+   "english": "staff",
+   "word": "kaḻi"
+  },
+  {
+   "english": "moon",
+   "word": "tiṅkaḷ"
+  },
+  {
+   "english": "mark",
+   "word": "kuṟi"
+  },
+  {
+   "english": "lid",
+   "word": "mūṭi"
+  },
+  {
+   "english": "star",
+   "word": "mīṉ"
+  },
+  {
+   "english": "shell",
+   "word": "vaḷai"
+  },
+  {
+   "english": "twig",
+   "word": "cuḷḷi"
+  },
+  {
+   "english": "crescent",
+   "word": "piṟai"
+  },
+  {
+   "english": "junction",
+   "word": "kavalai"
+  },
+  {
+   "english": "drop",
+   "word": "tuḷi"
+  },
+  {
+   "english": "eyes",
+   "word": "kaṇ"
+  },
+  {
+   "english": "bunch",
+   "word": "kulai"
+  },
+  {
+   "english": "standard",
+   "word": "koṭi"
+  },
+  {
+   "english": "gate",
+   "word": "vāyil"
+  },
+  {
+   "english": "two",
+   "word": "iraṇṭu"
+  }
+ ]
+}

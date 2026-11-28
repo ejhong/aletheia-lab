@@ -1,0 +1,600 @@
+{"name": "Kamuyamato Iwarebiko", "type": "person", "morphemes": ["kami", "yamato", "ivare", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Shikitsuhiko Tamatemi", "type": "person", "morphemes": ["śiki", "hiko", "tamatemi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Mimatsuhiko Kaeshine", "type": "person", "morphemes": ["mi", "ma", "hiko", "kaeśine"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōyamato Tarashihiko Kunioshihito", "type": "person", "morphemes": ["ō", "yamato", "taraśi", "hiko", "kuni", "osu", "hito"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōyamato Nekohiko Kunikuru", "type": "person", "morphemes": ["ō", "yamato", "ne", "ko", "hiko", "kunikuru"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Wakayamato Nekohiko Ōbibi", "type": "person", "morphemes": ["vaka", "yamato", "ne", "ko", "hiko", "ō", "bibi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Mimaki Iribiko Inie", "type": "person", "morphemes": ["mimaki", "iri", "hiko", "inie"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ikume Iribiko Isachi", "type": "person", "morphemes": ["ikume", "iri", "hiko", "isaci"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōtarashihiko Oshirowake", "type": "person", "morphemes": ["ō", "taraśi", "hiko", "ośiro", "vake"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Wakatarashihiko", "type": "person", "morphemes": ["vaka", "taraśi", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Okinagatarashihime", "type": "person", "morphemes": ["iki", "naga", "taraśi", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Homudawake", "type": "person", "morphemes": ["homuda", "vake"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōsazaki", "type": "person", "morphemes": ["ō", "sajaki"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Izahowake", "type": "person", "morphemes": ["ijaho", "vake"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Mizuhawake", "type": "person", "morphemes": ["miju", "ha", "vake"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Oasazuma Wakugo no Sukune", "type": "person", "morphemes": ["o", "asajuma", "vaku", "ko", "sukune"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Anaho", "type": "person", "morphemes": ["ana", "ho"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōhatsuse Wakatakeru", "type": "person", "morphemes": ["ō", "hacuse", "vaka", "takeru"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Shiraka no Ōyamato Nekohiko", "type": "person", "morphemes": ["śiraka", "ō", "yamato", "ne", "ko", "hiko"], "source": "Kojiki", "weight": 1}
+{"name": "Oke", "type": "person", "morphemes": ["oke"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ohatsuse Wakasazaki", "type": "person", "morphemes": ["o", "hacuse", "vaka", "sajaki"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ohodo", "type": "person", "morphemes": ["ohodo"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hirokuni Oshitake Kanahi", "type": "person", "morphemes": ["hiro", "kuni", "osu", "take", "kane", "hi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Takeohirokuni Oshitate", "type": "person", "morphemes": ["take", "o", "hiro", "kuni", "osu", "tate"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Amekuni Oshiharuki Hironiwa", "type": "person", "morphemes": ["ame", "kuni", "osu", "haruki", "hiro", "niva"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Nunakura Futotamashiki", "type": "person", "morphemes": ["nunakura", "phuto", "tama", "śiku"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Tachibana no Toyohi", "type": "person", "morphemes": ["tacibana", "toyo", "hi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hatsusebe", "type": "person", "morphemes": ["hacuse", "be"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Toyomike Kashikiyahime", "type": "person", "morphemes": ["toyo", "mi", "ke", "kaśiku", "ya", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Nukatabe", "type": "person", "morphemes": ["nuka", "ta", "be"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Okinaga Tarashi Hihironuka", "type": "person", "morphemes": ["iki", "naga", "taraśi", "hi", "hiro", "nuka"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tamura", "type": "person", "morphemes": ["ta", "mura"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ame Toyotakara Ikashihi Tarashihime", "type": "person", "morphemes": ["ame", "toyo", "takara", "ikaśi", "hi", "taraśi", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Takara", "type": "person", "morphemes": ["takara"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ame Yorozu Toyohi", "type": "person", "morphemes": ["ame", "yoroju", "toyo", "hi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Karu", "type": "person", "morphemes": ["karu"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Amemikoto Hirakasuwake", "type": "person", "morphemes": ["ame", "mikoto", "hiraku", "vake"], "source": "Nihon shoki", "weight": 1}
+{"name": "Naka no Ōe", "type": "person", "morphemes": ["naka", "ō", "e"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ama no Nunahara Oki no Mahito", "type": "person", "morphemes": ["ame", "nunahara", "oki", "ma", "hito"], "source": "Nihon shoki", "weight": 1}
+{"name": "Takamanohara Hironohime", "type": "person", "morphemes": ["taka", "ame", "hara", "hiro", "nu", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Unonosarara", "type": "person", "morphemes": ["u", "nu", "sarara"], "source": "Nihon shoki", "weight": 1}
+{"name": "Itsuse", "type": "person", "morphemes": ["icu", "se"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Inahi", "type": "person", "morphemes": ["inahi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Tagishimimi", "type": "person", "morphemes": ["tagiśi", "mimi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kisumimi", "type": "person", "morphemes": ["kisu", "mimi"], "source": "Kojiki", "weight": 1}
+{"name": "Ahiratsuhime", "type": "person", "morphemes": ["ahira", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hototatara Isusukihime", "type": "person", "morphemes": ["hoto", "tatara", "isusuku", "hime"], "source": "Kojiki", "weight": 1}
+{"name": "Kamuyaimimi", "type": "person", "morphemes": ["kami", "ya", "i", "mimi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hikoyai", "type": "person", "morphemes": ["hiko", "ya", "i"], "source": "Kojiki", "weight": 1}
+{"name": "Isuzuyorihime", "type": "person", "morphemes": ["i", "suju", "yoru", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hinoomi", "type": "person", "morphemes": ["hi", "omi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Michinoomi", "type": "person", "morphemes": ["mici", "omi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ōkume", "type": "person", "morphemes": ["ō", "kume"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Uzuhiko", "type": "person", "morphemes": ["uju", "hiko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Eshiki", "type": "person", "morphemes": ["e", "śiki"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Otoshiki", "type": "person", "morphemes": ["oto", "śiki"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Eukashi", "type": "person", "morphemes": ["e", "ukaśi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Otoukashi", "type": "person", "morphemes": ["oto", "ukaśi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Nagasunebiko", "type": "person", "morphemes": ["naga", "sune", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Tomibiko", "type": "person", "morphemes": ["tomi", "hiko"], "source": "Kojiki", "weight": 1}
+{"name": "Umashimade", "type": "person", "morphemes": ["umaśi", "ma", "te"], "source": "Nihon shoki", "weight": 1}
+{"name": "Takakuraji", "type": "person", "morphemes": ["takakuraji"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Niikitobe", "type": "person", "morphemes": ["nii", "ki", "tobe"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ōtataneko", "type": "person", "morphemes": ["ō", "tataneko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ikutamayoribime", "type": "person", "morphemes": ["iku", "tama", "yoru", "hime"], "source": "Kojiki", "weight": 1}
+{"name": "Mimakihime", "type": "person", "morphemes": ["mimaki", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Toyosukiirihime", "type": "person", "morphemes": ["toyo", "suki", "iri", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Nunakiirihime", "type": "person", "morphemes": ["nunaki", "iri", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Yamato Totohi Momosobime", "type": "person", "morphemes": ["yamato", "totohi", "momoso", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Takehaniyasuhiko", "type": "person", "morphemes": ["take", "hani", "yasu", "hiko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Atahime", "type": "person", "morphemes": ["ata", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ōbiko", "type": "person", "morphemes": ["ō", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kibitsuhiko", "type": "person", "morphemes": ["kibi", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Michinoushi", "type": "person", "morphemes": ["mici", "uśi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hikoimasu", "type": "person", "morphemes": ["hiko", "imasu"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Sahohiko", "type": "person", "morphemes": ["saho", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Sahohime", "type": "person", "morphemes": ["saho", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Homutsuwake", "type": "person", "morphemes": ["homucu", "vake"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hibasuhime", "type": "person", "morphemes": ["hibasu", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Inishiki Irihiko", "type": "person", "morphemes": ["iniśiki", "iri", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yamatohime", "type": "person", "morphemes": ["yamato", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Nomi no Sukune", "type": "person", "morphemes": ["nomi", "sukune"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kehaya", "type": "person", "morphemes": ["keru", "haya"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tajimamori", "type": "person", "morphemes": ["tajima", "moru"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Hiboko", "type": "person", "morphemes": ["ame", "hi", "hoko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Tsunuga Arashito", "type": "person", "morphemes": ["cunuga", "araśito"], "source": "Nihon shoki", "weight": 1}
+{"name": "Yasakairibime", "type": "person", "morphemes": ["ya", "saka", "iri", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kamukushi", "type": "person", "morphemes": ["kami", "kuśi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Iokiiribiko", "type": "person", "morphemes": ["io", "ki", "iri", "hiko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Iwakamutsukari", "type": "person", "morphemes": ["iva", "ka", "mucu", "kari"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kamunatsusohime", "type": "person", "morphemes": ["kami", "nacu", "iso", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hayatsuhime", "type": "person", "morphemes": ["haya", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hanatari", "type": "person", "morphemes": ["hana", "taru"], "source": "Nihon shoki", "weight": 1}
+{"name": "Mimitari", "type": "person", "morphemes": ["mimi", "taru"], "source": "Nihon shoki", "weight": 1}
+{"name": "Asahagi", "type": "person", "morphemes": ["asa", "hagu"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tsuchiori Iori", "type": "person", "morphemes": ["cuci", "oru", "i", "oru"], "source": "Nihon shoki", "weight": 1}
+{"name": "Uchisaru", "type": "person", "morphemes": ["ucu", "saru"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kunimaro", "type": "person", "morphemes": ["kuni", "maro"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ichifukaya", "type": "person", "morphemes": ["iciphukaya"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ichikaya", "type": "person", "morphemes": ["icikaya"], "source": "Nihon shoki", "weight": 1}
+{"name": "Atsukaya", "type": "person", "morphemes": ["acukaya"], "source": "Nihon shoki", "weight": 1}
+{"name": "Yamato Takeru", "type": "person", "morphemes": ["yamato", "takeru"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ousu", "type": "person", "morphemes": ["o", "usu"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōusu", "type": "person", "morphemes": ["ō", "usu"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yamato Oguna", "type": "person", "morphemes": ["yamato", "oguna"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kumaso Takeru", "type": "person", "morphemes": ["kumaso", "takeru"], "source": "Kojiki", "weight": 1}
+{"name": "Kawakami no Takeru", "type": "person", "morphemes": ["kava", "kami", "takeru"], "source": "Nihon shoki", "weight": 1}
+{"name": "Izumo Takeru", "type": "person", "morphemes": ["ijumo", "takeru"], "source": "Kojiki", "weight": 1}
+{"name": "Miyazuhime", "type": "person", "morphemes": ["miyaju", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Takehiko", "type": "person", "morphemes": ["take", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Takehi", "type": "person", "morphemes": ["take", "hi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kagosaka", "type": "person", "morphemes": ["kago", "saka"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Oshikuma", "type": "person", "morphemes": ["osu", "kuma"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Takefurukuma", "type": "person", "morphemes": ["take", "phuru", "kuma"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Takenouchi no Sukune", "type": "person", "morphemes": ["take", "uci", "sukune"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Uji no Wakiiratsuko", "type": "person", "morphemes": ["uji", "vaka", "iracuko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yata no Wakiiratsume", "type": "person", "morphemes": ["ya", "ta", "vaka", "iracume"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Medori", "type": "person", "morphemes": ["me", "tori"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kurohime", "type": "person", "morphemes": ["kuro", "hime"], "source": "Kojiki", "weight": 1}
+{"name": "Kuchiko", "type": "person", "morphemes": ["kuci", "ko"], "source": "Kojiki", "weight": 1}
+{"name": "Kuchihime", "type": "person", "morphemes": ["kuci", "hime"], "source": "Kojiki", "weight": 1}
+{"name": "Kaminagahime", "type": "person", "morphemes": ["kami", "naga", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Nakatsuhime", "type": "person", "morphemes": ["naka", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Achi", "type": "person", "morphemes": ["aci"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Achiki", "type": "person", "morphemes": ["aciki"], "source": "Nihon shoki", "weight": 1}
+{"name": "Wanikishi", "type": "person", "morphemes": ["vani", "kiśi"], "source": "Kojiki", "weight": 1}
+{"name": "Susukori", "type": "person", "morphemes": ["susukori"], "source": "Kojiki", "weight": 1}
+{"name": "Yuzuki", "type": "person", "morphemes": ["yumi", "cuki"], "source": "Nihon shoki", "weight": 1}
+{"name": "Sobakari", "type": "person", "morphemes": ["sobakari"], "source": "Kojiki", "weight": 1}
+{"name": "Osaka no Ōnakatsuhime", "type": "person", "morphemes": ["osaka", "ō", "naka", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Sotōrihime", "type": "person", "morphemes": ["so", "tōru", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Mayowa", "type": "person", "morphemes": ["me", "yova"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōkusaka", "type": "person", "morphemes": ["ō", "kusaka"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Wakakusakabe", "type": "person", "morphemes": ["vaka", "kusaka", "be"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ichinobe no Oshiwa", "type": "person", "morphemes": ["ici", "he", "osu", "iva"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tsubura", "type": "person", "morphemes": ["cubura"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Karahime", "type": "person", "morphemes": ["kara", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Akaiko", "type": "person", "morphemes": ["aka", "i", "ko"], "source": "Kojiki", "weight": 1}
+{"name": "Takuhatahime", "type": "person", "morphemes": ["taku", "hata", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hoshikawa", "type": "person", "morphemes": ["hośi", "kava"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tasa", "type": "person", "morphemes": ["tasa"], "source": "Nihon shoki", "weight": 1}
+{"name": "Oyumi", "type": "person", "morphemes": ["o", "yumi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ōiwa", "type": "person", "morphemes": ["ō", "iva"], "source": "Nihon shoki", "weight": 1}
+{"name": "Karako", "type": "person", "morphemes": ["kara", "ko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Muroya", "type": "person", "morphemes": ["muro", "ya"], "source": "Nihon shoki", "weight": 1}
+{"name": "Odate", "type": "person", "morphemes": ["o", "tate"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Okime", "type": "person", "morphemes": ["oku", "me"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōuo", "type": "person", "morphemes": ["ō", "uo"], "source": "Kojiki", "weight": 1}
+{"name": "Karabukuro", "type": "person", "morphemes": ["kara", "phukuro"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Shibi", "type": "person", "morphemes": ["śibi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kagehime", "type": "person", "morphemes": ["kage", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Matori", "type": "person", "morphemes": ["ma", "tori"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tashiraka", "type": "person", "morphemes": ["taśiraka"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Iwai", "type": "person", "morphemes": ["iva", "i"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kuzuko", "type": "person", "morphemes": ["kuju", "ko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kenu", "type": "person", "morphemes": ["kenu"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kanamura", "type": "person", "morphemes": ["kane", "mura"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Arakabi", "type": "person", "morphemes": ["arakabi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Sadehiko", "type": "person", "morphemes": ["sa", "te", "hiko"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Sayohime", "type": "person", "morphemes": ["sayo", "hime"], "source": "Man'yōshū", "weight": 1}
+{"name": "Okoshi", "type": "person", "morphemes": ["okośi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Iname", "type": "person", "morphemes": ["ine", "me"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kamako", "type": "person", "morphemes": ["kama", "ko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kitashihime", "type": "person", "morphemes": ["kitaśi", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Oanegimi", "type": "person", "morphemes": ["o", "ane", "kimi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ishihime", "type": "person", "morphemes": ["iśi", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hirohime", "type": "person", "morphemes": ["hiro", "hime"], "source": "Nihon shoki", "weight": 1}
+{"name": "Umako", "type": "person", "morphemes": ["uma", "ko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Moriya", "type": "person", "morphemes": ["moru", "ya"], "source": "Nihon shoki", "weight": 1}
+{"name": "Katsumi", "type": "person", "morphemes": ["kacu", "umi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Anahobe", "type": "person", "morphemes": ["ana", "ho", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hashihito", "type": "person", "morphemes": ["haśi", "hito"], "source": "Nihon shoki", "weight": 1}
+{"name": "Umayado", "type": "person", "morphemes": ["umaya", "to"], "source": "Nihon shoki", "weight": 1}
+{"name": "Toyotomimi", "type": "person", "morphemes": ["toyo", "to", "mimi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kamitsumiya", "type": "person", "morphemes": ["kami", "miya"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hikohito no Ōe", "type": "person", "morphemes": ["hiko", "hito", "ō", "e"], "source": "Nihon shoki", "weight": 1}
+{"name": "Takeda", "type": "person", "morphemes": ["take", "ta"], "source": "Nihon shoki", "weight": 1}
+{"name": "Imoko", "type": "person", "morphemes": ["imo", "ko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tori", "type": "person", "morphemes": ["tori"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kawakatsu", "type": "person", "morphemes": ["kava", "kacu"], "source": "Nihon shoki", "weight": 1}
+{"name": "Yamashiro no Ōe", "type": "person", "morphemes": ["yamaśiro", "ō", "e"], "source": "Nihon shoki", "weight": 1}
+{"name": "Iruka", "type": "person", "morphemes": ["iruka"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kuratsukuri", "type": "person", "morphemes": ["kura", "cukuru"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kamatari", "type": "person", "morphemes": ["kama", "taru"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ishikawamaro", "type": "person", "morphemes": ["iśi", "kava", "maro"], "source": "Nihon shoki", "weight": 1}
+{"name": "Komaro", "type": "person", "morphemes": ["ko", "maro"], "source": "Nihon shoki", "weight": 1}
+{"name": "Amita", "type": "person", "morphemes": ["ami", "ta"], "source": "Nihon shoki", "weight": 1}
+{"name": "Furuhito no Ōe", "type": "person", "morphemes": ["phuru", "hito", "ō", "e"], "source": "Nihon shoki", "weight": 1}
+{"name": "Uchimaro", "type": "person", "morphemes": ["uci", "maro"], "source": "Nihon shoki", "weight": 1}
+{"name": "Arima", "type": "person", "morphemes": ["arima"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Akae", "type": "person", "morphemes": ["aka", "e"], "source": "Nihon shoki", "weight": 1}
+{"name": "Konoshiro", "type": "person", "morphemes": ["konośiro"], "source": "Nihon shoki", "weight": 1}
+{"name": "Takeru", "type": "person", "morphemes": ["takeru"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ōta", "type": "person", "morphemes": ["ō", "ta"], "source": "Nihon shoki", "weight": 1}
+{"name": "Niitabe", "type": "person", "morphemes": ["nii", "ta", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Minabe", "type": "person", "morphemes": ["minabe"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kawashima", "type": "person", "morphemes": ["kava", "śima"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ōku", "type": "person", "morphemes": ["ōku"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ōtsu", "type": "person", "morphemes": ["ō", "cu"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kusakabe", "type": "person", "morphemes": ["kusaka", "be"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Takechi", "type": "person", "morphemes": ["taka", "ici"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Osakabe", "type": "person", "morphemes": ["osaka", "be"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Naga", "type": "person", "morphemes": ["naga"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Yuge", "type": "person", "morphemes": ["yumi", "kejuru"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Toneri", "type": "person", "morphemes": ["toneri"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Hozumi", "type": "person", "morphemes": ["ho", "cumu"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tōchi", "type": "person", "morphemes": ["tō", "ici"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Nukata", "type": "person", "morphemes": ["nuka", "ta"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kagami", "type": "person", "morphemes": ["kagami"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Takechimaro", "type": "person", "morphemes": ["taka", "ici", "maro"], "source": "Nihon shoki", "weight": 1}
+{"name": "Oyori", "type": "person", "morphemes": ["oyori"], "source": "Nihon shoki", "weight": 1}
+{"name": "Fukei", "type": "person", "morphemes": ["phukei"], "source": "Nihon shoki", "weight": 1}
+{"name": "Makuta", "type": "person", "morphemes": ["makuta"], "source": "Nihon shoki", "weight": 1}
+{"name": "Miyuki", "type": "person", "morphemes": ["mi", "yuku"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Hakatoko", "type": "person", "morphemes": ["hakatoko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Fuhito", "type": "person", "morphemes": ["phuhito"], "source": "Nihon shoki", "weight": 1}
+{"name": "Yasumaro", "type": "person", "morphemes": ["yasu", "maro"], "source": "Kojiki; Man'yōshū", "weight": 1}
+{"name": "Are", "type": "person", "morphemes": ["are"], "source": "Kojiki", "weight": 1}
+{"name": "Hitomaro", "type": "person", "morphemes": ["hito", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kurohito", "type": "person", "morphemes": ["kuro", "hito"], "source": "Man'yōshū", "weight": 1}
+{"name": "Akahito", "type": "person", "morphemes": ["aka", "hito"], "source": "Man'yōshū", "weight": 1}
+{"name": "Okura", "type": "person", "morphemes": ["okura"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tabito", "type": "person", "morphemes": ["tabi", "hito"], "source": "Man'yōshū", "weight": 1}
+{"name": "Yakamochi", "type": "person", "morphemes": ["yakamoci"], "source": "Man'yōshū", "weight": 1}
+{"name": "Sakanoue no Iratsume", "type": "person", "morphemes": ["saka", "ue", "iracume"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kasa no Iratsume", "type": "person", "morphemes": ["kasa", "iracume"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ishikawa no Iratsume", "type": "person", "morphemes": ["iśi", "kava", "iracume"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tegona", "type": "person", "morphemes": ["tegona"], "source": "Man'yōshū", "weight": 1}
+{"name": "Unai Otome", "type": "person", "morphemes": ["unai", "otome"], "source": "Man'yōshū", "weight": 1}
+{"name": "Unai Otoko", "type": "person", "morphemes": ["unai", "otoko"], "source": "Man'yōshū", "weight": 1}
+{"name": "Sakurako", "type": "person", "morphemes": ["sakura", "ko"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kazurako", "type": "person", "morphemes": ["kajura", "ko"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tamana", "type": "person", "morphemes": ["tamana"], "source": "Man'yōshū", "weight": 1}
+{"name": "Mushimaro", "type": "person", "morphemes": ["muśi", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Sakimaro", "type": "person", "morphemes": ["saki", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ikenushi", "type": "person", "morphemes": ["ike", "nuśi"], "source": "Man'yōshū", "weight": 1}
+{"name": "Surugamaro", "type": "person", "morphemes": ["suruga", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Momoyo", "type": "person", "morphemes": ["momo", "yo"], "source": "Man'yōshū", "weight": 1}
+{"name": "Fumimochi", "type": "person", "morphemes": ["phumi", "mocu"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tanushi", "type": "person", "morphemes": ["ta", "nuśi"], "source": "Man'yōshū", "weight": 1}
+{"name": "Sukunamaro", "type": "person", "morphemes": ["sukuna", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kuromaro", "type": "person", "morphemes": ["kuro", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Inakimi", "type": "person", "morphemes": ["ine", "kimi"], "source": "Man'yōshū", "weight": 1}
+{"name": "Azumahito", "type": "person", "morphemes": ["ajuma", "hito"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kiyotsugu", "type": "person", "morphemes": ["kiyo", "cugu"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kiyotsuna", "type": "person", "morphemes": ["kiyo", "cuna"], "source": "Man'yōshū", "weight": 1}
+{"name": "Murakami", "type": "person", "morphemes": ["mura", "kami"], "source": "Man'yōshū", "weight": 1}
+{"name": "Umakai", "type": "person", "morphemes": ["uma", "kau"], "source": "Man'yōshū", "weight": 1}
+{"name": "Maro", "type": "person", "morphemes": ["maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Hirotsugu", "type": "person", "morphemes": ["hiro", "cugu"], "source": "Man'yōshū", "weight": 1}
+{"name": "Nakamaro", "type": "person", "morphemes": ["naka", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Yatsuka", "type": "person", "morphemes": ["ya", "cuka"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kiyokawa", "type": "person", "morphemes": ["kiyo", "kava"], "source": "Man'yōshū", "weight": 1}
+{"name": "Nagate", "type": "person", "morphemes": ["naga", "te"], "source": "Man'yōshū", "weight": 1}
+{"name": "Moroe", "type": "person", "morphemes": ["moro", "e"], "source": "Man'yōshū", "weight": 1}
+{"name": "Naramaro", "type": "person", "morphemes": ["nara", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Otomaro", "type": "person", "morphemes": ["oto", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Katsuo", "type": "person", "morphemes": ["kacu", "o"], "source": "Man'yōshū", "weight": 1}
+{"name": "Hironari", "type": "person", "morphemes": ["hiro", "naru"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tarihito", "type": "person", "morphemes": ["taru", "hito"], "source": "Man'yōshū", "weight": 1}
+{"name": "Hironiwa", "type": "person", "morphemes": ["hiro", "niva"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tsugimaro", "type": "person", "morphemes": ["cugu", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Michiyo", "type": "person", "morphemes": ["mi", "ci", "yo"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kiyohito", "type": "person", "morphemes": ["kiyo", "hito"], "source": "Man'yōshū", "weight": 1}
+{"name": "Oyu", "type": "person", "morphemes": ["oyu"], "source": "Man'yōshū", "weight": 1}
+{"name": "Akamaro", "type": "person", "morphemes": ["aka", "maro"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kunihito", "type": "person", "morphemes": ["kuni", "hito"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ikusa", "type": "person", "morphemes": ["ikusa"], "source": "Man'yōshū", "weight": 1}
+{"name": "Hirotari", "type": "person", "morphemes": ["hiro", "taru"], "source": "Man'yōshū", "weight": 1}
+{"name": "Akimochi", "type": "person", "morphemes": ["aki", "mocu"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tarikuni", "type": "person", "morphemes": ["taru", "kuni"], "source": "Man'yōshū", "weight": 1}
+{"name": "Hirome", "type": "person", "morphemes": ["hiro", "me"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ushikai", "type": "person", "morphemes": ["uśi", "kau"], "source": "Man'yōshū", "weight": 1}
+{"name": "Morohito", "type": "person", "morphemes": ["moro", "hito"], "source": "Man'yōshū", "weight": 1}
+{"name": "Masuhito", "type": "person", "morphemes": ["masu", "hito"], "source": "Man'yōshū", "weight": 1}
+{"name": "Yachishima", "type": "person", "morphemes": ["ya", "ci", "śima"], "source": "Man'yōshū", "weight": 1}
+{"name": "Michiyoshi", "type": "person", "morphemes": ["mici", "yośi"], "source": "Man'yōshū", "weight": 1}
+{"name": "Chitose", "type": "person", "morphemes": ["ci", "tose"], "source": "Man'yōshū", "weight": 1}
+{"name": "Umaosa", "type": "person", "morphemes": ["uma", "osa"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kunioshi", "type": "person", "morphemes": ["kuni", "osu"], "source": "Man'yōshū", "weight": 1}
+{"name": "Akiniwa", "type": "person", "morphemes": ["aki", "niva"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kimitari", "type": "person", "morphemes": ["kimi", "taru"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ame no Minakanushi", "type": "deity", "morphemes": ["ame", "mi", "naka", "nuśi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Takamimusuhi", "type": "deity", "morphemes": ["taka", "mi", "musu", "hi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kamimusuhi", "type": "deity", "morphemes": ["kami", "musu", "hi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Umashiashikabihikoji", "type": "deity", "morphemes": ["umaśi", "aśi", "kabi", "hiko", "ji"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kuni no Tokotachi", "type": "deity", "morphemes": ["kuni", "toko", "tacu"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Izanami", "type": "deity", "morphemes": ["ijanami"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hiruko", "type": "deity", "morphemes": ["hiru", "ko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Amaterasu", "type": "deity", "morphemes": ["ame", "terasu"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ōhirume no Muchi", "type": "deity", "morphemes": ["ō", "hi", "me", "muci"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tsukuyomi", "type": "deity", "morphemes": ["cuki", "yomu"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Susanoo", "type": "deity", "morphemes": ["susa", "o"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōkuninushi", "type": "deity", "morphemes": ["ō", "kuni", "nuśi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōnamuchi", "type": "deity", "morphemes": ["ō", "namuci"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Yachihoko", "type": "deity", "morphemes": ["ya", "ci", "hoko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Sukunabikona", "type": "deity", "morphemes": ["sukuna", "hiko", "na"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kotoshironushi", "type": "deity", "morphemes": ["koto", "śiru", "nuśi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Takeminakata", "type": "deity", "morphemes": ["take", "minakata"], "source": "Kojiki", "weight": 1}
+{"name": "Takemikazuchi", "type": "deity", "morphemes": ["take", "mikajuci"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Futsunushi", "type": "deity", "morphemes": ["phucu", "nuśi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ame no Uzume", "type": "deity", "morphemes": ["ame", "uju", "me"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Koyane", "type": "deity", "morphemes": ["ame", "koyane"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Futotama", "type": "deity", "morphemes": ["phuto", "tama"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Omoikane", "type": "deity", "morphemes": ["omou", "kanu"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Tajikarao", "type": "deity", "morphemes": ["ame", "te", "cikara", "o"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ishikoridome", "type": "deity", "morphemes": ["iśi", "koru", "tome"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ninigi", "type": "deity", "morphemes": ["ninigi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Konohana no Sakuyabime", "type": "deity", "morphemes": ["ki", "hana", "saku", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Iwanagahime", "type": "deity", "morphemes": ["iva", "naga", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōyamatsumi", "type": "deity", "morphemes": ["ō", "yama", "mi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Watatsumi", "type": "deity", "morphemes": ["vata", "mi"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Toyotamabime", "type": "deity", "morphemes": ["toyo", "tama", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Tamayoribime", "type": "deity", "morphemes": ["tama", "yoru", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hoderi", "type": "deity", "morphemes": ["hi", "teru"], "source": "Kojiki", "weight": 1}
+{"name": "Hoori", "type": "deity", "morphemes": ["hoori"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ugayafukiaezu", "type": "deity", "morphemes": ["u", "kaya", "phuku", "au", "ju"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Sarutahiko", "type": "deity", "morphemes": ["saruta", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yatagarasu", "type": "deity", "morphemes": ["ya", "ata", "karasu"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kagutsuchi", "type": "deity", "morphemes": ["kagu", "ci"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōgetsuhime", "type": "deity", "morphemes": ["ō", "ke", "hime"], "source": "Kojiki", "weight": 1}
+{"name": "Ukemochi", "type": "deity", "morphemes": ["uke", "mocu"], "source": "Nihon shoki", "weight": 1}
+{"name": "Toyoukebime", "type": "deity", "morphemes": ["toyo", "uke", "hime"], "source": "Kojiki", "weight": 1}
+{"name": "Ōikazuchi", "type": "deity", "morphemes": ["ō", "ikajuci"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kuebiko", "type": "deity", "morphemes": ["kuyu", "hiko"], "source": "Kojiki", "weight": 1}
+{"name": "Ame no Wakahiko", "type": "deity", "morphemes": ["ame", "vaka", "hiko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ajisukitakahikone", "type": "deity", "morphemes": ["aji", "suki", "taka", "hiko", "ne"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Oshihomimi", "type": "deity", "morphemes": ["ame", "osu", "ho", "mimi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Nigihayahi", "type": "deity", "morphemes": ["nigi", "haya", "hi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ashinazuchi", "type": "deity", "morphemes": ["aśi", "naju", "ci"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kushinadahime", "type": "deity", "morphemes": ["kuśi", "ine", "ta", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yamata no Orochi", "type": "deity", "morphemes": ["ya", "mata", "oroci"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hitokotonushi", "type": "deity", "morphemes": ["hito", "koto", "nuśi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Suseribime", "type": "deity", "morphemes": ["suseri", "hime"], "source": "Kojiki", "weight": 1}
+{"name": "Ichikishimahime", "type": "deity", "morphemes": ["icuku", "śima", "hime"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Inaba no Shirousagi", "type": "deity", "morphemes": ["inaba", "śiro", "usagi"], "source": "Kojiki", "weight": 1}
+{"name": "Kumaso", "type": "group", "morphemes": ["kumaso"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hayato", "type": "group", "morphemes": ["haya", "hito"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Emishi", "type": "group", "morphemes": ["emiśi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tsuchigumo", "type": "group", "morphemes": ["cuci", "kumo"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kuzu", "type": "group", "morphemes": ["kuju"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Mishihase", "type": "group", "morphemes": ["miśihase"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ama", "type": "group", "morphemes": ["ama"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kume", "type": "group", "morphemes": ["kume"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yasotakeru", "type": "group", "morphemes": ["yaso", "takeru"], "source": "Nihon shoki", "weight": 1}
+{"name": "Yasogami", "type": "group", "morphemes": ["yaso", "kami"], "source": "Kojiki", "weight": 1}
+{"name": "Amatsukami", "type": "group", "morphemes": ["ame", "kami"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kunitsukami", "type": "group", "morphemes": ["kuni", "kami"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kotoamatsukami", "type": "group", "morphemes": ["koto", "ame", "kami"], "source": "Kojiki", "weight": 1}
+{"name": "Kamiyonanayo", "type": "group", "morphemes": ["kami", "yo", "nana", "yo"], "source": "Kojiki", "weight": 1}
+{"name": "Itsutomonoo", "type": "group", "morphemes": ["icu", "tomo", "o"], "source": "Kojiki", "weight": 1}
+{"name": "Yomotsushikome", "type": "group", "morphemes": ["yomi", "śiko", "me"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yomotsuikusa", "type": "group", "morphemes": ["yomi", "ikusa"], "source": "Kojiki", "weight": 1}
+{"name": "Mihashira no Uzunomiko", "type": "group", "morphemes": ["mi", "haśira", "uju", "mi", "ko"], "source": "Kojiki", "weight": 1}
+{"name": "Ayahito", "type": "group", "morphemes": ["aya", "hito"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tabe", "type": "group", "morphemes": ["ta", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Suebe", "type": "group", "morphemes": ["sue", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kuratsukuribe", "type": "group", "morphemes": ["kura", "cukuru", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hatoribe", "type": "group", "morphemes": ["hata", "oru", "be"], "source": "Man'yōshū", "weight": 1}
+{"name": "Urabe", "type": "group", "morphemes": ["ura", "be"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ukai", "type": "group", "morphemes": ["u", "kau"], "source": "Kojiki", "weight": 1}
+{"name": "Inukaibe", "type": "group", "morphemes": ["inu", "kau", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Totoribe", "type": "group", "morphemes": ["tori", "toru", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Homutsube", "type": "group", "morphemes": ["homucu", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tatebe", "type": "group", "morphemes": ["tate", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Shitoribe", "type": "group", "morphemes": ["śitori", "be"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Yahagibe", "type": "group", "morphemes": ["ya", "hagu", "be"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tamatsukuribe", "type": "group", "morphemes": ["tama", "cukuru", "be"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tachihakibe", "type": "group", "morphemes": ["taci", "haku", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Shirakabe", "type": "group", "morphemes": ["śiraka", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Yugei", "type": "group", "morphemes": ["yuki", "ou"], "source": "Nihon shoki", "weight": 1}
+{"name": "Sakimori", "type": "group", "morphemes": ["saki", "moru"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Amabe", "type": "group", "morphemes": ["ama", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Mibube", "type": "group", "morphemes": ["mibu", "be"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Hasetsukabe", "type": "group", "morphemes": ["hasecuka", "be"], "source": "Man'yōshū", "weight": 1}
+{"name": "Wakatoneribe", "type": "group", "morphemes": ["vaka", "toneri", "be"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ōtoneribe", "type": "group", "morphemes": ["ō", "toneri", "be"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ikutamabe", "type": "group", "morphemes": ["iku", "tama", "be"], "source": "Man'yōshū", "weight": 1}
+{"name": "Sazakibe", "type": "group", "morphemes": ["sajaki", "be"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kisakibe", "type": "group", "morphemes": ["kisaki", "be"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Wakasakurabe", "type": "group", "morphemes": ["vaka", "sakura", "be"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ōtomo", "type": "lineage", "morphemes": ["ō", "tomo"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Mononobe", "type": "lineage", "morphemes": ["mono", "be"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Soga", "type": "lineage", "morphemes": ["soga"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Fujiwara", "type": "lineage", "morphemes": ["phuji", "hara"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kakinomoto", "type": "lineage", "morphemes": ["kaki", "moto"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ki", "type": "lineage", "morphemes": ["ki"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kose", "type": "lineage", "morphemes": ["kose"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Heguri", "type": "lineage", "morphemes": ["heguri"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Wani", "type": "lineage", "morphemes": ["vani"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Abe", "type": "lineage", "morphemes": ["abe"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Imibe", "type": "lineage", "morphemes": ["imi", "be"], "source": "Nihon shoki", "weight": 1}
+{"name": "Haji", "type": "lineage", "morphemes": ["haji"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hata", "type": "lineage", "morphemes": ["hata"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Aya", "type": "lineage", "morphemes": ["aya"], "source": "Nihon shoki", "weight": 1}
+{"name": "Saeki", "type": "lineage", "morphemes": ["saeki"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tajihi", "type": "lineage", "morphemes": ["tajihi"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ishikawa", "type": "lineage", "morphemes": ["iśi", "kava"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Isonokami", "type": "lineage", "morphemes": ["iso", "kami"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ōmiwa", "type": "lineage", "morphemes": ["ō", "miva"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ōkimi", "type": "title", "morphemes": ["ō", "kimi"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Sumeramikoto", "type": "title", "morphemes": ["sumera", "mikoto"], "source": "Nihon shoki", "weight": 1}
+{"name": "Mikoto", "type": "title", "morphemes": ["mikoto"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Miko", "type": "title", "morphemes": ["mi", "ko"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Himemiko", "type": "title", "morphemes": ["hime", "mi", "ko"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ōe", "type": "title", "morphemes": ["ō", "e"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ōomi", "type": "title", "morphemes": ["ō", "omi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōmuraji", "type": "title", "morphemes": ["ō", "muraji"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Muraji", "type": "title", "morphemes": ["muraji"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kimi", "type": "title", "morphemes": ["kimi"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Agatanushi", "type": "title", "morphemes": ["agata", "nuśi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Sukune", "type": "title", "morphemes": ["sukune"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Uneme", "type": "title", "morphemes": ["uneme"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Mikotomochi", "type": "title", "morphemes": ["mikoto", "mocu"], "source": "Nihon shoki", "weight": 1}
+{"name": "Iratsume", "type": "title", "morphemes": ["iracume"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Mikado", "type": "title", "morphemes": ["mi", "kado"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kusanagi no Tsurugi", "type": "other", "morphemes": ["kusa", "nagu", "curugi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Murakumo no Tsurugi", "type": "other", "morphemes": ["ame", "mura", "kumo", "curugi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Totsuka no Tsurugi", "type": "other", "morphemes": ["tō", "cuka", "curugi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Futsu no Mitama", "type": "other", "morphemes": ["phucu", "mi", "tama"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yata no Kagami", "type": "other", "morphemes": ["ya", "ata", "kagami"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yasakani no Magatama", "type": "other", "morphemes": ["yasakani", "maga", "tama"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Shiomitsutama", "type": "other", "morphemes": ["śio", "micu", "tama"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Shiohirutama", "type": "other", "morphemes": ["śio", "hiru", "tama"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Nuboko", "type": "other", "morphemes": ["ame", "nu", "hoko"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Ukihashi", "type": "other", "morphemes": ["ame", "uku", "haśi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Mihashira", "type": "other", "morphemes": ["ame", "mi", "haśira"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Torifune", "type": "other", "morphemes": ["ame", "tori", "phune"], "source": "Kojiki", "weight": 1}
+{"name": "Ame no Iwafune", "type": "other", "morphemes": ["ame", "iva", "phune"], "source": "Nihon shoki", "weight": 1}
+{"name": "Karano", "type": "other", "morphemes": ["karu", "nu"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ame no Norigoto", "type": "other", "morphemes": ["ame", "noru", "koto"], "source": "Kojiki", "weight": 1}
+{"name": "Ikutachi", "type": "other", "morphemes": ["iku", "taci"], "source": "Kojiki", "weight": 1}
+{"name": "Ikuyumiya", "type": "other", "morphemes": ["iku", "yumi", "ya"], "source": "Kojiki", "weight": 1}
+{"name": "Yahirodono", "type": "other", "morphemes": ["ya", "hiro", "tono"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hinaburi", "type": "other", "morphemes": ["hina", "phuri"], "source": "Kojiki", "weight": 1}
+{"name": "Kunishinobiuta", "type": "other", "morphemes": ["kuni", "śinobu", "uta"], "source": "Kojiki", "weight": 1}
+{"name": "Katauta", "type": "other", "morphemes": ["kata", "uta"], "source": "Kojiki", "weight": 1}
+{"name": "Amagatariuta", "type": "other", "morphemes": ["ame", "kataru", "uta"], "source": "Kojiki", "weight": 1}
+{"name": "Yūzutsu", "type": "celestial", "morphemes": ["yūjucu"], "source": "Man'yōshū", "weight": 1}
+{"name": "Akaboshi", "type": "celestial", "morphemes": ["aka", "hośi"], "source": "Man'yōshū", "weight": 1}
+{"name": "Hikohoshi", "type": "celestial", "morphemes": ["hiko", "hośi"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tanabatatsume", "type": "celestial", "morphemes": ["tana", "hata", "me"], "source": "Man'yōshū", "weight": 1}
+{"name": "Amanogawa", "type": "celestial", "morphemes": ["ame", "kava"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tsukihitootoko", "type": "celestial", "morphemes": ["cuki", "hito", "otoko"], "source": "Man'yōshū", "weight": 1}
+{"name": "Sasaraeotoko", "type": "celestial", "morphemes": ["sasarae", "otoko"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tsukuyomiotoko", "type": "celestial", "morphemes": ["cuki", "yomu", "otoko"], "source": "Man'yōshū", "weight": 1}
+{"name": "Amatsumikahoshi", "type": "celestial", "morphemes": ["ame", "mika", "hośi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Ame no Kagaseo", "type": "celestial", "morphemes": ["ame", "kagase", "o"], "source": "Nihon shoki", "weight": 1}
+{"name": "Hi no Kawa", "type": "river", "morphemes": ["hi", "kava"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yoshinogawa", "type": "river", "morphemes": ["yośi", "nu", "kava"], "source": "Man'yōshū", "weight": 1}
+{"name": "Asukagawa", "type": "river", "morphemes": ["asuka", "kava"], "source": "Man'yōshū", "weight": 1}
+{"name": "Hatsusegawa", "type": "river", "morphemes": ["hacuse", "kava"], "source": "Man'yōshū", "weight": 1}
+{"name": "Sahogawa", "type": "river", "morphemes": ["saho", "kava"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ujigawa", "type": "river", "morphemes": ["uji", "kava"], "source": "Kojiki; Man'yōshū", "weight": 1}
+{"name": "Tonegawa", "type": "river", "morphemes": ["tone", "kava"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tamagawa", "type": "river", "morphemes": ["tama", "kava"], "source": "Man'yōshū", "weight": 1}
+{"name": "Kaguyama", "type": "hill", "morphemes": ["kagu", "yama"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Unebi", "type": "hill", "morphemes": ["unebi"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Miminashi", "type": "hill", "morphemes": ["mimi", "naśi"], "source": "Man'yōshū", "weight": 1}
+{"name": "Miwa", "type": "hill", "morphemes": ["miva"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Mimoro", "type": "hill", "morphemes": ["mimoro"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tsukuba", "type": "hill", "morphemes": ["cukuba"], "source": "Kojiki; Man'yōshū", "weight": 1}
+{"name": "Kujifuru", "type": "hill", "morphemes": ["kujiphuru"], "source": "Kojiki", "weight": 1}
+{"name": "Ikoma", "type": "hill", "morphemes": ["ikoma"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tatsuta", "type": "hill", "morphemes": ["tacuta"], "source": "Man'yōshū", "weight": 1}
+{"name": "Mikasa", "type": "hill", "morphemes": ["mi", "kasa"], "source": "Man'yōshū", "weight": 1}
+{"name": "Takamado", "type": "hill", "morphemes": ["taka", "mado"], "source": "Man'yōshū", "weight": 1}
+{"name": "Ibuki", "type": "hill", "morphemes": ["ibuki"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ashigara", "type": "hill", "morphemes": ["aśigara"], "source": "Kojiki; Man'yōshū", "weight": 1}
+{"name": "Mifune", "type": "hill", "morphemes": ["mi", "phune"], "source": "Man'yōshū", "weight": 1}
+{"name": "Hira", "type": "hill", "morphemes": ["hira"], "source": "Man'yōshū", "weight": 1}
+{"name": "Hirefuri", "type": "hill", "morphemes": ["hire", "phuru"], "source": "Man'yōshū", "weight": 1}
+{"name": "Izumo", "type": "place", "morphemes": ["ijumo"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tsukushi", "type": "place", "morphemes": ["cukuśi"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Himuka", "type": "place", "morphemes": ["hi", "muku"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kibi", "type": "place", "morphemes": ["kibi"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Koshi", "type": "place", "morphemes": ["kośi"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Owari", "type": "place", "morphemes": ["ovari"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Mino", "type": "place", "morphemes": ["mino"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ise", "type": "place", "morphemes": ["ise"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ki no Kuni", "type": "place", "morphemes": ["ki", "kuni"], "source": "Kojiki", "weight": 1}
+{"name": "Kawachi", "type": "place", "morphemes": ["kava", "uci"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Naniwa", "type": "place", "morphemes": ["naniva"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ōmi", "type": "place", "morphemes": ["ōmi"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Yamashiro", "type": "place", "morphemes": ["yamaśiro"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Iyo", "type": "place", "morphemes": ["iyo"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tosa", "type": "place", "morphemes": ["tosa"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Awa", "type": "place", "morphemes": ["ava"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Awaji", "type": "place", "morphemes": ["ava", "ci"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Sanuki", "type": "place", "morphemes": ["sanuki"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Toyo", "type": "place", "morphemes": ["toyo"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hitachi", "type": "place", "morphemes": ["hitaci"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Musashi", "type": "place", "morphemes": ["musaśi"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Sagami", "type": "place", "morphemes": ["sagami"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tōtōmi", "type": "place", "morphemes": ["tō", "ōmi"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Mikawa", "type": "place", "morphemes": ["mikava"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Shinano", "type": "place", "morphemes": ["śinano"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kamitsukeno", "type": "place", "morphemes": ["kami", "ke", "nu"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Shimotsukeno", "type": "place", "morphemes": ["śimo", "ke", "nu"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Michinoku", "type": "place", "morphemes": ["mici", "oku"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Azuma", "type": "place", "morphemes": ["ajuma"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Sado", "type": "place", "morphemes": ["sado"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Oki", "type": "place", "morphemes": ["oki"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Tsushima", "type": "place", "morphemes": ["cu", "śima"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Iki", "type": "place", "morphemes": ["iki"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Inaba", "type": "place", "morphemes": ["inaba"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tajima", "type": "place", "morphemes": ["tajima"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Wakasa", "type": "place", "morphemes": ["vakasa"], "source": "Nihon shoki", "weight": 1}
+{"name": "Noto", "type": "place", "morphemes": ["noto"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Nagato", "type": "place", "morphemes": ["naga", "to"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Anato", "type": "place", "morphemes": ["ana", "to"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Aki", "type": "place", "morphemes": ["aki"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōsumi", "type": "place", "morphemes": ["ō", "sumi"], "source": "Nihon shoki", "weight": 1}
+{"name": "Satsuma", "type": "place", "morphemes": ["sacuma"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ata", "type": "place", "morphemes": ["ata"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Matsura", "type": "place", "morphemes": ["macura"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kashii", "type": "place", "morphemes": ["kaśii"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Shikanoshima", "type": "place", "morphemes": ["śika", "śima"], "source": "Man'yōshū", "weight": 1}
+{"name": "Mizuki", "type": "place", "morphemes": ["miju", "ki"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Tsunuga", "type": "place", "morphemes": ["cunuga"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kehi", "type": "place", "morphemes": ["kehi"], "source": "Kojiki", "weight": 1}
+{"name": "Sasanami", "type": "place", "morphemes": ["sasanami"], "source": "Man'yōshū", "weight": 1}
+{"name": "Shiga", "type": "place", "morphemes": ["śiga"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Karasaki", "type": "place", "morphemes": ["kara", "saki"], "source": "Man'yōshū", "weight": 1}
+{"name": "Uji", "type": "place", "morphemes": ["uji"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Nara", "type": "place", "morphemes": ["nara"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kasuga", "type": "place", "morphemes": ["kasuga"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Saho", "type": "place", "morphemes": ["saho"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Hatsuse", "type": "place", "morphemes": ["hacuse"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Makimuku", "type": "place", "morphemes": ["makimuku"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Shiki", "type": "place", "morphemes": ["śiki"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Iware", "type": "place", "morphemes": ["ivare"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Asuka", "type": "place", "morphemes": ["asuka"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Okamoto", "type": "place", "morphemes": ["oka", "moto"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ikaruga", "type": "place", "morphemes": ["ikaruga"], "source": "Nihon shoki", "weight": 1}
+{"name": "Oharida", "type": "place", "morphemes": ["oharida"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kiyomihara", "type": "place", "morphemes": ["kiyo", "mi", "hara"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Toyura", "type": "place", "morphemes": ["toyo", "ura"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kashihara", "type": "place", "morphemes": ["kaśi", "hara"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Uda", "type": "place", "morphemes": ["uda"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Yoshino", "type": "place", "morphemes": ["yośi", "nu"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kumano", "type": "place", "morphemes": ["kumano"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Watarai", "type": "place", "morphemes": ["vatarai"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Atsuta", "type": "place", "morphemes": ["acu", "ta"], "source": "Nihon shoki", "weight": 1}
+{"name": "Yaizu", "type": "place", "morphemes": ["yaku", "cu"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hashirimizu", "type": "place", "morphemes": ["haśiru", "miju"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Niibari", "type": "place", "morphemes": ["nii", "haru"], "source": "Kojiki", "weight": 1}
+{"name": "Katsushika", "type": "place", "morphemes": ["kacuśika"], "source": "Man'yōshū", "weight": 1}
+{"name": "Mama", "type": "place", "morphemes": ["mama"], "source": "Man'yōshū", "weight": 1}
+{"name": "Sakaori", "type": "place", "morphemes": ["sakaori"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Izu", "type": "place", "morphemes": ["iju"], "source": "Nihon shoki", "weight": 1}
+{"name": "Iga", "type": "place", "morphemes": ["iga"], "source": "Nihon shoki", "weight": 1}
+{"name": "Takamanohara", "type": "place", "morphemes": ["taka", "ame", "hara"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ashihara no Nakatsukuni", "type": "place", "morphemes": ["aśi", "hara", "naka", "kuni"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Toyoashihara no Mizuho no Kuni", "type": "place", "morphemes": ["toyo", "aśi", "hara", "miju", "ho", "kuni"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Yomi", "type": "place", "morphemes": ["yomi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Tokoyo", "type": "place", "morphemes": ["toko", "yo"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Onogoroshima", "type": "place", "morphemes": ["ono", "koru", "śima"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōyashima", "type": "place", "morphemes": ["ō", "ya", "śima"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Akitsushima", "type": "place", "morphemes": ["akicu", "śima"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Yomotsu Hirasaka", "type": "place", "morphemes": ["yomi", "hira", "saka"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ahakihara", "type": "place", "morphemes": ["ahaki", "hara"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ama no Iwayado", "type": "place", "morphemes": ["ame", "iva", "ya", "to"], "source": "Kojiki", "weight": 1}
+{"name": "Inasa", "type": "place", "morphemes": ["inasa"], "source": "Kojiki", "weight": 1}
+{"name": "Miho", "type": "place", "morphemes": ["miho"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kasasa", "type": "place", "morphemes": ["kasasa"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Suga", "type": "place", "morphemes": ["suga"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Okinoshima", "type": "place", "morphemes": ["oki", "śima"], "source": "Kojiki", "weight": 1}
+{"name": "Takashima", "type": "place", "morphemes": ["taka", "śima"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Hayasuinoto", "type": "place", "morphemes": ["haya", "suu", "to"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Nagusa", "type": "place", "morphemes": ["nagusa"], "source": "Nihon shoki", "weight": 1}
+{"name": "Tomi", "type": "place", "morphemes": ["tomi"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Osaka", "type": "place", "morphemes": ["osaka"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kara", "type": "place", "morphemes": ["kara"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Kudara", "type": "place", "morphemes": ["kudara"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Shiragi", "type": "place", "morphemes": ["śiragi"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Koma", "type": "place", "morphemes": ["koma"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Mimana", "type": "place", "morphemes": ["mimana"], "source": "Nihon shoki", "weight": 1}
+{"name": "Kure", "type": "place", "morphemes": ["kure"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Awashima", "type": "place", "morphemes": ["ava", "śima"], "source": "Kojiki", "weight": 1}
+{"name": "Himejima", "type": "place", "morphemes": ["hime", "śima"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Kojima", "type": "place", "morphemes": ["ko", "śima"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Suminoe", "type": "place", "morphemes": ["suminoe"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Mitsu", "type": "place", "morphemes": ["mi", "cu"], "source": "Man'yōshū", "weight": 1}
+{"name": "Chinu", "type": "place", "morphemes": ["cinu"], "source": "Kojiki; Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Ashiya", "type": "place", "morphemes": ["aśi", "ya"], "source": "Man'yōshū", "weight": 1}
+{"name": "Unai", "type": "place", "morphemes": ["unai"], "source": "Man'yōshū", "weight": 1}
+{"name": "Suma", "type": "place", "morphemes": ["suma"], "source": "Man'yōshū", "weight": 1}
+{"name": "Akashi", "type": "place", "morphemes": ["akaśi"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Muro", "type": "place", "morphemes": ["muro"], "source": "Nihon shoki", "weight": 1}
+{"name": "Iwashiro", "type": "place", "morphemes": ["ivaśiro"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Wakanoura", "type": "place", "morphemes": ["vaka", "ura"], "source": "Man'yōshū", "weight": 1}
+{"name": "Tagonoura", "type": "place", "morphemes": ["tago", "ura"], "source": "Man'yōshū", "weight": 1}
+{"name": "Iwami", "type": "place", "morphemes": ["ivami"], "source": "Man'yōshū", "weight": 1}
+{"name": "Nabari", "type": "place", "morphemes": ["nabari"], "source": "Nihon shoki; Man'yōshū", "weight": 1}
+{"name": "Mie", "type": "place", "morphemes": ["mi", "e"], "source": "Kojiki", "weight": 1}
+{"name": "Tsuetsukizaka", "type": "place", "morphemes": ["cue", "cuku", "saka"], "source": "Kojiki", "weight": 1}
+{"name": "Nobono", "type": "place", "morphemes": ["nobono"], "source": "Kojiki; Nihon shoki", "weight": 1}
+{"name": "Ōhara", "type": "place", "morphemes": ["ō", "hara"], "source": "Man'yōshū", "weight": 1}
+{"name": "Izushi", "type": "place", "morphemes": ["ijuśi"], "source": "Kojiki; Nihon shoki", "weight": 1}

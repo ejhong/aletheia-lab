@@ -1,0 +1,506 @@
+{
+ "A": [
+  {
+   "item": "Antilokhos",
+   "verdict": "ok",
+   "reason": "Il. passim, Od. 3.112 etc.; anti + lokhos is the usual reading."
+  },
+  {
+   "item": "Ōriōn",
+   "verdict": "ok",
+   "reason": "Il. 18.486, Od. 5.121; in Works and Days as the variant Ōariōn (Op. 598, 609, 615, 619)."
+  },
+  {
+   "item": "Stentōr",
+   "verdict": "ok",
+   "reason": "Il. 5.785; LSJ stenō 'moan, groan', also of the sea roaring; defensible."
+  },
+  {
+   "item": "Poseidaōn",
+   "verdict": "ok",
+   "reason": "Il., Od., Th. (Poseidaōna), Op. 667."
+  },
+  {
+   "item": "Lyktos",
+   "verdict": "ok",
+   "reason": "Il. 2.647, 17.611; Th. 477, 482."
+  },
+  {
+   "item": "Kleitos",
+   "verdict": "ok",
+   "reason": "Il. 15.445 (son of Peisenor); Od. 15.249-250; kleitos 'renowned'."
+  },
+  {
+   "item": "Lykaōn",
+   "verdict": "ok",
+   "reason": "Il. passim (son of Priam; father of Pandaros)."
+  },
+  {
+   "item": "Tykhios",
+   "verdict": "ok",
+   "reason": "Il. 7.220, maker of Ajax's shield."
+  },
+  {
+   "item": "Boiōtoi",
+   "verdict": "ok",
+   "reason": "Il. 2.494 etc."
+  },
+  {
+   "item": "Polydeukēs",
+   "verdict": "ok",
+   "reason": "Il. 3.237, Od. 11.300."
+  },
+  {
+   "item": "Telamōn",
+   "verdict": "ok",
+   "reason": "Il. passim, Od. 11.553; LSJ telamōn 'strap, baldric'."
+  },
+  {
+   "item": "Erikhthonios",
+   "verdict": "ok",
+   "reason": "Il. 20.219-230; eri- intensive + khthōn."
+  },
+  {
+   "item": "Laodikē",
+   "verdict": "ok",
+   "reason": "Il. 3.124, 6.252, 9.145."
+  },
+  {
+   "item": "Tēlepylos",
+   "verdict": "ok",
+   "reason": "Od. 10.82, 23.318."
+  },
+  {
+   "item": "Ankhialos",
+   "verdict": "ok",
+   "reason": "Il. 5.609; Od. 1.180, 8.112."
+  },
+  {
+   "item": "Latinos",
+   "verdict": "ok",
+   "reason": "Th. 1013."
+  },
+  {
+   "item": "Oileus",
+   "verdict": "ok",
+   "reason": "Il. 2.527 etc."
+  },
+  {
+   "item": "Antiphatēs",
+   "verdict": "ok",
+   "reason": "Il. 12.191; Od. 10.106ff."
+  },
+  {
+   "item": "Pēneios",
+   "verdict": "ok",
+   "reason": "Il. 2.752, 2.757; Th. 343."
+  },
+  {
+   "item": "Alēsion",
+   "verdict": "ok",
+   "reason": "Il. 2.617, 11.757."
+  },
+  {
+   "item": "Koiranos",
+   "verdict": "ok",
+   "reason": "Il. 5.677, 17.611; LSJ koiranos 'ruler'."
+  },
+  {
+   "item": "Amphimedōn",
+   "verdict": "ok",
+   "reason": "Od. 22.242, 24.103; -medōn from medō 'rule'."
+  },
+  {
+   "item": "Asteropaios",
+   "verdict": "ok",
+   "reason": "Il. 12.102, 21.140ff."
+  },
+  {
+   "item": "Mēioniē",
+   "verdict": "ok",
+   "reason": "Il. 3.401, 18.291."
+  },
+  {
+   "item": "Aigialos",
+   "verdict": "ok",
+   "reason": "Il. 2.575, 2.855; LSJ aigialos 'sea-shore'."
+  },
+  {
+   "item": "Kallikolōnē",
+   "verdict": "ok",
+   "reason": "Il. 20.53, 20.151."
+  },
+  {
+   "item": "Lindos",
+   "verdict": "ok",
+   "reason": "Il. 2.656."
+  },
+  {
+   "item": "Thoas",
+   "verdict": "ok",
+   "reason": "Il. 2.638 etc.; Od. 14.499; thoos 'swift'."
+  },
+  {
+   "item": "Taphos",
+   "verdict": "ok",
+   "reason": "Od. 1.417."
+  },
+  {
+   "item": "Ankhisēs",
+   "verdict": "ok",
+   "reason": "Il. 2.819 etc.; Th. 1009."
+  },
+  {
+   "item": "Erythrai",
+   "verdict": "ok",
+   "reason": "Il. 2.499."
+  },
+  {
+   "item": "Andraimōn",
+   "verdict": "ok",
+   "reason": "Il. 2.638; Od. 14.499."
+  },
+  {
+   "item": "Marathōn",
+   "verdict": "ok",
+   "reason": "Od. 7.80; LSJ marathon 'fennel'."
+  },
+  {
+   "item": "Polypoitēs",
+   "verdict": "ok",
+   "reason": "Il. 2.740 etc."
+  },
+  {
+   "item": "Epidauros",
+   "verdict": "ok",
+   "reason": "Il. 2.561."
+  },
+  {
+   "item": "Lēdē",
+   "verdict": "ok",
+   "reason": "Od. 11.298."
+  },
+  {
+   "item": "Kares",
+   "verdict": "ok",
+   "reason": "Il. 2.867."
+  },
+  {
+   "item": "Pēnelopeia",
+   "verdict": "ok",
+   "reason": "Od. passim."
+  },
+  {
+   "item": "Ktēsios",
+   "verdict": "ok",
+   "reason": "Od. 15.414; ktēsios 'of property', from ktaomai; defensible."
+  },
+  {
+   "item": "Thoōn",
+   "verdict": "ok",
+   "reason": "Il. 5.152 etc.; Od. 8.113."
+  },
+  {
+   "item": "Dexiadēs",
+   "verdict": "ok",
+   "reason": "Il. 7.15; 'skilful' is a real (post-Homeric) sense of dexios beside 'right-hand'; defensible."
+  },
+  {
+   "item": "Kapaneus",
+   "verdict": "ok",
+   "reason": "Il. 2.564 etc."
+  },
+  {
+   "item": "Ōgygiē",
+   "verdict": "ok",
+   "reason": "Od. 1.85 etc."
+  },
+  {
+   "item": "Gygaiē",
+   "verdict": "ok",
+   "reason": "Il. 2.865, 20.391 (the Gygaean lake)."
+  },
+  {
+   "item": "Polybos",
+   "verdict": "ok",
+   "reason": "Il. 11.59; Od. 1.399 etc."
+  },
+  {
+   "item": "Tydeus",
+   "verdict": "ok",
+   "reason": "Il. passim; Od. 3.167."
+  },
+  {
+   "item": "Asinē",
+   "verdict": "ok",
+   "reason": "Il. 2.560."
+  },
+  {
+   "item": "Hylē",
+   "verdict": "ok",
+   "reason": "Il. 2.500, 7.221; hylē 'wood'."
+  },
+  {
+   "item": "Glaukos",
+   "verdict": "ok",
+   "reason": "Il. 2.876 etc.; glaukos 'gleaming'."
+  },
+  {
+   "item": "Tantalos",
+   "verdict": "ok",
+   "reason": "Od. 11.582."
+  }
+ ],
+ "B": [
+  {
+   "item": "pherō",
+   "verdict": "ok",
+   "reason": "Homeric passim."
+  },
+  {
+   "item": "homilos",
+   "verdict": "ok",
+   "reason": "LSJ 'crowd, throng', Il. 18.603, Od. 1.225."
+  },
+  {
+   "item": "amphiphoreus",
+   "verdict": "ok",
+   "reason": "LSJ 'two-handled jar', Il. 23.92, Od. 2.290."
+  },
+  {
+   "item": "lophos",
+   "verdict": "ok",
+   "reason": "LSJ 'crest of a helmet' (horsehair plume), Il. 16.138; close near-synonym."
+  },
+  {
+   "item": "domos",
+   "verdict": "ok",
+   "reason": "Homeric 'house, building'."
+  },
+  {
+   "item": "kontos",
+   "verdict": "ok",
+   "reason": "LSJ 'pole, punting-pole', Od. 9.487."
+  },
+  {
+   "item": "omma",
+   "verdict": "ok",
+   "reason": "Il. 1.225 etc."
+  },
+  {
+   "item": "skolops",
+   "verdict": "ok",
+   "reason": "LSJ 'anything pointed, stake', Il. 7.441, 18.177."
+  },
+  {
+   "item": "dōma",
+   "verdict": "ok",
+   "reason": "Homeric 'house'."
+  },
+  {
+   "item": "stēthos",
+   "verdict": "ok",
+   "reason": "'breast, chest', Homeric passim."
+  },
+  {
+   "item": "talaros",
+   "verdict": "ok",
+   "reason": "LSJ 'basket', Il. 18.568, Od. 4.125."
+  },
+  {
+   "item": "drys",
+   "verdict": "ok",
+   "reason": "LSJ 'originally, tree', commonly 'oak'; Il. 12.132."
+  },
+  {
+   "item": "skēptron",
+   "verdict": "ok",
+   "reason": "Homeric 'staff, sceptre'."
+  },
+  {
+   "item": "dyo",
+   "verdict": "ok",
+   "reason": "Homeric dyo/dyō."
+  },
+  {
+   "item": "kalaurops",
+   "verdict": "wrong",
+   "reason": "LSJ: a shepherd's staff or crook thrown to turn cattle back (Il. 23.845), not a boomerang."
+  },
+  {
+   "item": "domos",
+   "verdict": "ok",
+   "reason": "Homeric 'house'."
+  },
+  {
+   "item": "ikhthyaō",
+   "verdict": "ok",
+   "reason": "LSJ 'to fish', Od. 4.368, 12.95."
+  },
+  {
+   "item": "kolōnē",
+   "verdict": "ok",
+   "reason": "LSJ 'hill, mound', Il. 2.811."
+  },
+  {
+   "item": "lykhnos",
+   "verdict": "ok",
+   "reason": "LSJ 'lamp', Od. 19.34."
+  },
+  {
+   "item": "akris",
+   "verdict": "ok",
+   "reason": "LSJ 'hill-top, mountain peak', Od. 9.400."
+  },
+  {
+   "item": "kykaō",
+   "verdict": "ok",
+   "reason": "LSJ 'stir, mix', Il. 5.903, Od. 10.235."
+  },
+  {
+   "item": "kephalē",
+   "verdict": "ok",
+   "reason": "Homeric passim."
+  },
+  {
+   "item": "kōpē",
+   "verdict": "ok",
+   "reason": "LSJ 'handle' (hilt, oar-handle), Il. 1.219, Od. 21.7."
+  },
+  {
+   "item": "desmos",
+   "verdict": "ok",
+   "reason": "'band, bond', Homeric."
+  },
+  {
+   "item": "phoreus",
+   "verdict": "ok",
+   "reason": "LSJ 'bearer, carrier', Il. 18.566."
+  },
+  {
+   "item": "astron",
+   "verdict": "ok",
+   "reason": "Il. 8.555, Od. 12.312."
+  },
+  {
+   "item": "erithos",
+   "verdict": "ok",
+   "reason": "LSJ 'day-labourer', Il. 18.550; Op. 603."
+  },
+  {
+   "item": "khēlos",
+   "verdict": "ok",
+   "reason": "LSJ 'large chest, coffer', Il. 16.221 (chest = box)."
+  },
+  {
+   "item": "kyklos",
+   "verdict": "ok",
+   "reason": "'circle, wheel', Il. 5.722 (kykla)."
+  },
+  {
+   "item": "dragma",
+   "verdict": "ok",
+   "reason": "LSJ 'handful, truss of corn', later 'sheaf'; Il. 18.552."
+  },
+  {
+   "item": "orophē",
+   "verdict": "ok",
+   "reason": "LSJ 'roof', Od. 22.298."
+  },
+  {
+   "item": "ernos",
+   "verdict": "ok",
+   "reason": "LSJ 'young sprout, shoot', 'like a young plant', Il. 18.56."
+  },
+  {
+   "item": "rhōps",
+   "verdict": "ok",
+   "reason": "LSJ 'brushwood, underwood', Od. 10.166; close near-synonym."
+  },
+  {
+   "item": "ophthalmos",
+   "verdict": "ok",
+   "reason": "Homeric passim."
+  },
+  {
+   "item": "diktyon",
+   "verdict": "ok",
+   "reason": "LSJ 'net', Od. 22.386."
+  },
+  {
+   "item": "pyros",
+   "verdict": "ok",
+   "reason": "LSJ 'wheat', also 'a grain of wheat'; Il. 8.188; wheat is the chief grain."
+  },
+  {
+   "item": "this",
+   "verdict": "ok",
+   "reason": "LSJ 'heap', Od. 12.45 (usually 'beach' in Homer)."
+  },
+  {
+   "item": "phoreō",
+   "verdict": "ok",
+   "reason": "Homeric 'carry, wear'."
+  },
+  {
+   "item": "astēr",
+   "verdict": "ok",
+   "reason": "Homeric passim."
+  },
+  {
+   "item": "lamptēr",
+   "verdict": "ok",
+   "reason": "LSJ: Homeric stand for burning wood to light a room (Od. 18.307), later 'lantern'; close."
+  },
+  {
+   "item": "phleps",
+   "verdict": "ok",
+   "reason": "LSJ 'blood-vessel, vein', Il. 13.546."
+  },
+  {
+   "item": "ankistron",
+   "verdict": "ok",
+   "reason": "LSJ 'fish-hook', Od. 4.369."
+  },
+  {
+   "item": "angos",
+   "verdict": "ok",
+   "reason": "LSJ 'vessel', Il. 16.643, Od. 16.13, Op. 613."
+  },
+  {
+   "item": "kalyx",
+   "verdict": "ok",
+   "reason": "LSJ 'rosebud', h.Cer. 427; word in Il. 18.401 (bud-shaped ornaments)."
+  },
+  {
+   "item": "osse",
+   "verdict": "ok",
+   "reason": "LSJ 'the two eyes', Homeric dual."
+  },
+  {
+   "item": "larnax",
+   "verdict": "ok",
+   "reason": "LSJ 'coffer, box, chest', Il. 18.413."
+  },
+  {
+   "item": "hēmai",
+   "verdict": "ok",
+   "reason": "Homeric 'sit'."
+  },
+  {
+   "item": "orpēx",
+   "verdict": "ok",
+   "reason": "LSJ 'sapling, young shoot', Il. 21.38."
+  },
+  {
+   "item": "knēmē",
+   "verdict": "ok",
+   "reason": "LSJ II 'spoke of a wheel' (Pollux); the sense is Homeric in oktaknēmos 'eight-spoked', Il. 5.723."
+  },
+  {
+   "item": "histiē",
+   "verdict": "ok",
+   "reason": "LSJ: Ionic form of hestia 'hearth', always so in Homer; Od. 14.159, Op. 734."
+  }
+ ]
+}

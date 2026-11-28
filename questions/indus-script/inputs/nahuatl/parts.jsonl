@@ -1,0 +1,401 @@
+{"m": "acitometl", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "akolman", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "akvekveśatl", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "akśotekah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "avelitok", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "avilisapan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "amakemekan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "apanekatl", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "akiac", "category": "title_rank", "stability": 3, "gloss": "name", "in_names": 1}
+{"m": "akiavtsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "atotostli", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "atoyak", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "ayokvan", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ayohtli", "category": "plant", "stability": 2, "gloss": "squash", "in_names": 1}
+{"m": "astlan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kakavatl", "category": "plant", "stability": 2, "gloss": "cacao", "in_names": 1}
+{"m": "kakalōtl", "category": "animal", "stability": 2, "gloss": "crow", "in_names": 1}
+{"m": "kakamatsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kaktli", "category": "artefact", "stability": 2, "gloss": "sandal", "in_names": 1}
+{"m": "kalli", "category": "place_word", "stability": 3, "gloss": "house", "in_names": 4}
+{"m": "kalki", "category": "grammar_suffix", "stability": 3, "gloss": "dweller", "in_names": 1}
+{"m": "kamacalli", "category": "body_part", "stability": 2, "gloss": "jaw", "in_names": 1}
+{"m": "kamaśtli", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "katl", "category": "grammar_suffix", "stability": 3, "gloss": "dweller of", "in_names": 21}
+{"m": "se", "category": "number", "stability": 3, "gloss": "one", "in_names": 3}
+{"m": "sempōvalli", "category": "number", "stability": 3, "gloss": "twenty", "in_names": 1}
+{"m": "sentsontli", "category": "number", "stability": 3, "gloss": "four hundred", "in_names": 2}
+{"m": "cacalakatl", "category": "animal", "stability": 2, "gloss": "chachalaca bird", "in_names": 1}
+{"m": "calmekah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "cantiko", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "capolin", "category": "animal", "stability": 2, "gloss": "grasshopper", "in_names": 2}
+{"m": "cicikvepon", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "cikōme", "category": "number", "stability": 3, "gloss": "seven", "in_names": 4}
+{"m": "cimalaśoc", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "cimalman", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "cināmitl", "category": "place_word", "stability": 3, "gloss": "enclosure", "in_names": 2}
+{"m": "cikvnāvi", "category": "number", "stability": 3, "gloss": "nine", "in_names": 1}
+{"m": "ciyān", "category": "plant", "stability": 2, "gloss": "chia", "in_names": 1}
+{"m": "colollan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "cololtekah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "cālcivitl", "category": "other", "stability": 1, "gloss": "jade", "in_names": 5}
+{"m": "cālko", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "cāntli", "category": "place_word", "stability": 3, "gloss": "home", "in_names": 2}
+{"m": "cīcīmēkah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "cīcīmēkatl", "category": "dynasty_clan", "stability": 2, "gloss": "Chichimec", "in_names": 2}
+{"m": "cīva", "category": "verb_deed", "stability": 2, "gloss": "make", "in_names": 1}
+{"m": "cīlli", "category": "plant", "stability": 2, "gloss": "chili", "in_names": 1}
+{"m": "cīmalli", "category": "artefact", "stability": 2, "gloss": "shield", "in_names": 3}
+{"m": "sihtli", "category": "kinship", "stability": 3, "gloss": "grandmother", "in_names": 1}
+{"m": "sivātl", "category": "other", "stability": 1, "gloss": "woman", "in_names": 12}
+{"m": "sintli", "category": "plant", "stability": 2, "gloss": "dried maize ear", "in_names": 1}
+{"m": "sipaktli", "category": "animal", "stability": 2, "gloss": "caiman", "in_names": 3}
+{"m": "sitli", "category": "animal", "stability": 2, "gloss": "hare", "in_names": 1}
+{"m": "sitlālin", "category": "celestial", "stability": 1, "gloss": "star", "in_names": 13}
+{"m": "ko", "category": "grammar_suffix", "stability": 3, "gloss": "in", "in_names": 60}
+{"m": "koatsakvalko", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kolvahkeh", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kolivi", "category": "verb_deed", "stability": 2, "gloss": "be bent", "in_names": 1}
+{"m": "koliman", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kolōtl", "category": "animal", "stability": 2, "gloss": "scorpion", "in_names": 1}
+{"m": "kopil", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kouiśkah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kośkośtli", "category": "animal", "stability": 2, "gloss": "pheasant", "in_names": 1}
+{"m": "koyōlli", "category": "artefact", "stability": 2, "gloss": "bell", "in_names": 3}
+{"m": "koyōtl", "category": "animal", "stability": 2, "gloss": "coyote", "in_names": 8}
+{"m": "kva", "category": "verb_deed", "stability": 2, "gloss": "eat", "in_names": 1}
+{"m": "kvakvatah", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kvakvavtsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kvavitl", "category": "plant", "stability": 2, "gloss": "tree", "in_names": 5}
+{"m": "kvatlavise", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kvetlactli", "category": "animal", "stability": 2, "gloss": "wolf", "in_names": 1}
+{"m": "kvetlaśtli", "category": "artefact", "stability": 2, "gloss": "tanned hide", "in_names": 1}
+{"m": "kvetspalin", "category": "animal", "stability": 2, "gloss": "lizard", "in_names": 1}
+{"m": "kveśtekah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kveskomatl", "category": "place_word", "stability": 3, "gloss": "granary", "in_names": 1}
+{"m": "kvilton", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kvitlalpitok", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kvitlapilli", "category": "body_part", "stability": 2, "gloss": "tail", "in_names": 1}
+{"m": "kvitlāvak", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kvitlāvakah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "kvākvavitl", "category": "body_part", "stability": 2, "gloss": "horn", "in_names": 2}
+{"m": "kvāvtli", "category": "animal", "stability": 2, "gloss": "eagle", "in_names": 17}
+{"m": "kvēitl", "category": "artefact", "stability": 2, "gloss": "skirt", "in_names": 6}
+{"m": "kvīkatl", "category": "verb_deed", "stability": 2, "gloss": "song", "in_names": 1}
+{"m": "kāva", "category": "verb_deed", "stability": 2, "gloss": "leave", "in_names": 1}
+{"m": "kān", "category": "grammar_suffix", "stability": 3, "gloss": "place of", "in_names": 9}
+{"m": "kōsavki", "category": "colour", "stability": 2, "gloss": "yellow", "in_names": 2}
+{"m": "kōskakvāvtli", "category": "animal", "stability": 2, "gloss": "vulture", "in_names": 2}
+{"m": "kōskatl", "category": "artefact", "stability": 2, "gloss": "necklace", "in_names": 2}
+{"m": "kōātl", "category": "animal", "stability": 2, "gloss": "snake", "in_names": 27}
+{"m": "eh", "category": "grammar_suffix", "stability": 3, "gloss": "possessor of", "in_names": 2}
+{"m": "ehko", "category": "verb_deed", "stability": 2, "gloss": "arrive", "in_names": 1}
+{"m": "ehēkatl", "category": "landscape", "stability": 3, "gloss": "wind", "in_names": 8}
+{"m": "elōtl", "category": "plant", "stability": 2, "gloss": "green maize ear", "in_names": 1}
+{"m": "etsalli", "category": "artefact", "stability": 2, "gloss": "maize-and-bean dish", "in_names": 1}
+{"m": "esvavakatl", "category": "title_rank", "stability": 3, "gloss": "name", "in_names": 1}
+{"m": "vah", "category": "grammar_suffix", "stability": 3, "gloss": "owner of", "in_names": 7}
+{"m": "vanitsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "vetsi", "category": "verb_deed", "stability": 2, "gloss": "fall", "in_names": 1}
+{"m": "vetsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "veśōlōtl", "category": "animal", "stability": 2, "gloss": "turkey cock", "in_names": 1}
+{"m": "vitsilin", "category": "animal", "stability": 2, "gloss": "hummingbird", "in_names": 6}
+{"m": "vitstli", "category": "plant", "stability": 2, "gloss": "thorn", "in_names": 3}
+{"m": "viśtotin", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "vāktli", "category": "animal", "stability": 2, "gloss": "night heron", "in_names": 1}
+{"m": "vāśin", "category": "plant", "stability": 2, "gloss": "guaje tree", "in_names": 2}
+{"m": "vēveh", "category": "other", "stability": 1, "gloss": "old man", "in_names": 4}
+{"m": "vēśōtl", "category": "plant", "stability": 2, "gloss": "willow", "in_names": 2}
+{"m": "vēyi", "category": "quality_size", "stability": 2, "gloss": "great", "in_names": 4}
+{"m": "vīśacin", "category": "plant", "stability": 2, "gloss": "acacia", "in_names": 1}
+{"m": "ickatl", "category": "plant", "stability": 2, "gloss": "cotton", "in_names": 1}
+{"m": "icpōctli", "category": "other", "stability": 1, "gloss": "maiden", "in_names": 1}
+{"m": "iknōtl", "category": "other", "stability": 1, "gloss": "orphan", "in_names": 1}
+{"m": "ihvitl", "category": "body_part", "stability": 2, "gloss": "feather", "in_names": 3}
+{"m": "ivitimal", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "ilamah", "category": "other", "stability": 1, "gloss": "old woman", "in_names": 2}
+{"m": "ilvikatl", "category": "landscape", "stability": 3, "gloss": "sky", "in_names": 1}
+{"m": "ilvitl", "category": "other", "stability": 1, "gloss": "feast day", "in_names": 3}
+{"m": "itskvintli", "category": "animal", "stability": 2, "gloss": "dog", "in_names": 3}
+{"m": "iśkvina", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "iskalia", "category": "verb_deed", "stability": 2, "gloss": "revive", "in_names": 1}
+{"m": "iskitl", "category": "plant", "stability": 2, "gloss": "toasted maize", "in_names": 1}
+{"m": "istatl", "category": "other", "stability": 1, "gloss": "salt", "in_names": 2}
+{"m": "istāk", "category": "colour", "stability": 2, "gloss": "white", "in_names": 7}
+{"m": "maka", "category": "verb_deed", "stability": 2, "gloss": "give", "in_names": 1}
+{"m": "mahtlaktli", "category": "number", "stability": 3, "gloss": "ten", "in_names": 1}
+{"m": "malin", "category": "personal_name", "stability": 1, "gloss": "Marina", "in_names": 1}
+{"m": "malpantlakah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "maśiśkatsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mayavel", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "masātl", "category": "animal", "stability": 2, "gloss": "deer", "in_names": 5}
+{"m": "mekatl", "category": "artefact", "stability": 2, "gloss": "rope", "in_names": 1}
+{"m": "metl", "category": "plant", "stability": 2, "gloss": "maguey", "in_names": 2}
+{"m": "meśi", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "micin", "category": "animal", "stability": 2, "gloss": "fish", "in_names": 3}
+{"m": "mimic", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "miki", "category": "verb_deed", "stability": 2, "gloss": "die", "in_names": 3}
+{"m": "mikistli", "category": "verb_deed", "stability": 2, "gloss": "death", "in_names": 1}
+{"m": "mitl", "category": "artefact", "stability": 2, "gloss": "arrow", "in_names": 9}
+{"m": "miśkoatlailotlak", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "miśtli", "category": "landscape", "stability": 3, "gloss": "cloud", "in_names": 5}
+{"m": "miyāvatl", "category": "plant", "stability": 2, "gloss": "maize tassel", "in_names": 2}
+{"m": "miskitl", "category": "plant", "stability": 2, "gloss": "mesquite", "in_names": 3}
+{"m": "mistli", "category": "animal", "stability": 2, "gloss": "puma", "in_names": 1}
+{"m": "mo", "category": "grammar_suffix", "stability": 3, "gloss": "himself", "in_names": 2}
+{"m": "mokiviś", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "motelciv", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "mākveśtli", "category": "artefact", "stability": 2, "gloss": "bracelet", "in_names": 1}
+{"m": "mākvīlli", "category": "number", "stability": 3, "gloss": "five", "in_names": 7}
+{"m": "māsēvalli", "category": "occupation_group", "stability": 2, "gloss": "commoner", "in_names": 2}
+{"m": "māitl", "category": "body_part", "stability": 2, "gloss": "hand", "in_names": 1}
+{"m": "mālīnalli", "category": "plant", "stability": 2, "gloss": "twisted grass", "in_names": 4}
+{"m": "māpictli", "category": "quality_size", "stability": 2, "gloss": "handful", "in_names": 1}
+{"m": "mātlalli", "category": "colour", "stability": 2, "gloss": "blue-green", "in_names": 3}
+{"m": "mātlatl", "category": "artefact", "stability": 2, "gloss": "net", "in_names": 1}
+{"m": "māśtlatl", "category": "artefact", "stability": 2, "gloss": "loincloth", "in_names": 1}
+{"m": "mētstli", "category": "celestial", "stability": 1, "gloss": "moon", "in_names": 1}
+{"m": "mēśihkah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "mēśihko", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "mīlli", "category": "landscape", "stability": 3, "gloss": "field", "in_names": 2}
+{"m": "mīna", "category": "verb_deed", "stability": 2, "gloss": "shoot arrows", "in_names": 2}
+{"m": "nakoctli", "category": "artefact", "stability": 2, "gloss": "ear ornament", "in_names": 1}
+{"m": "nanakatl", "category": "plant", "stability": 2, "gloss": "mushroom", "in_names": 1}
+{"m": "nanāvatl", "category": "other", "stability": 1, "gloss": "pustule", "in_names": 1}
+{"m": "navyotl", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nekvhtli", "category": "other", "stability": 1, "gloss": "honey", "in_names": 1}
+{"m": "nemontemi", "category": "other", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "nesavalli", "category": "verb_deed", "stability": 2, "gloss": "fast", "in_names": 5}
+{"m": "nonovalkah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "nāvak", "category": "direction", "stability": 3, "gloss": "near", "in_names": 6}
+{"m": "nāvalli", "category": "other", "stability": 1, "gloss": "disguise", "in_names": 2}
+{"m": "nāvatl", "category": "quality_size", "stability": 2, "gloss": "clear-sounding", "in_names": 1}
+{"m": "nāvi", "category": "number", "stability": 3, "gloss": "four", "in_names": 4}
+{"m": "nāntli", "category": "kinship", "stability": 3, "gloss": "mother", "in_names": 3}
+{"m": "nāppa", "category": "number", "stability": 3, "gloss": "four times", "in_names": 1}
+{"m": "nēn", "category": "grammar_suffix", "stability": 3, "gloss": "in vain", "in_names": 2}
+{"m": "nōctli", "category": "plant", "stability": 2, "gloss": "prickly pear fruit", "in_names": 5}
+{"m": "nōpalli", "category": "plant", "stability": 2, "gloss": "prickly pear cactus", "in_names": 1}
+{"m": "ocpāna", "category": "verb_deed", "stability": 2, "gloss": "sweep", "in_names": 1}
+{"m": "okvilin", "category": "animal", "stability": 2, "gloss": "worm", "in_names": 3}
+{"m": "osēlōtl", "category": "animal", "stability": 2, "gloss": "jaguar", "in_names": 3}
+{"m": "okōtl", "category": "plant", "stability": 2, "gloss": "pine", "in_names": 3}
+{"m": "ollin", "category": "verb_deed", "stability": 2, "gloss": "movement", "in_names": 3}
+{"m": "otomih", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "otomitl", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "ośitipan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "ośomoko", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "oyovalli", "category": "artefact", "stability": 2, "gloss": "bell pendant", "in_names": 1}
+{"m": "ostōmēkatl", "category": "occupation_group", "stability": 2, "gloss": "vanguard merchant", "in_names": 1}
+{"m": "painal", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "pan", "category": "grammar_suffix", "stability": 3, "gloss": "on", "in_names": 19}
+{"m": "pantitlan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "pantli", "category": "artefact", "stability": 2, "gloss": "banner", "in_names": 2}
+{"m": "petlatl", "category": "artefact", "stability": 2, "gloss": "mat", "in_names": 4}
+{"m": "pilli", "category": "title_rank", "stability": 3, "gloss": "prince", "in_names": 6}
+{"m": "pinomeh", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "pinotl", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "pitsāvak", "category": "quality_size", "stability": 2, "gloss": "thin", "in_names": 1}
+{"m": "popolokah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "popōka", "category": "verb_deed", "stability": 2, "gloss": "smoke", "in_names": 10}
+{"m": "poyavtekatl", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "pāka", "category": "verb_deed", "stability": 2, "gloss": "wash", "in_names": 1}
+{"m": "pāpālōtl", "category": "animal", "stability": 2, "gloss": "butterfly", "in_names": 6}
+{"m": "pōl", "category": "quality_size", "stability": 2, "gloss": "great", "in_names": 2}
+{"m": "pōtsalli", "category": "landscape", "stability": 3, "gloss": "mound", "in_names": 2}
+{"m": "kecolli", "category": "animal", "stability": 2, "gloss": "spoonbill", "in_names": 3}
+{"m": "ketsa", "category": "verb_deed", "stability": 2, "gloss": "raise", "in_names": 2}
+{"m": "ketsalli", "category": "body_part", "stability": 2, "gloss": "quetzal plume", "in_names": 10}
+{"m": "ketsalteveyak", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "kiyavitl", "category": "landscape", "stability": 3, "gloss": "rain", "in_names": 5}
+{"m": "kēmitl", "category": "artefact", "stability": 2, "gloss": "garment", "in_names": 2}
+{"m": "tamasōlin", "category": "animal", "stability": 2, "gloss": "toad", "in_names": 1}
+{"m": "tamimeh", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tamoancan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tata", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tayav", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tekayevatsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tecotlalatsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tekokol", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tekolōtl", "category": "animal", "stability": 2, "gloss": "owl", "in_names": 4}
+{"m": "tekonal", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tekpan", "category": "place_word", "stability": 3, "gloss": "palace", "in_names": 3}
+{"m": "tekpatl", "category": "other", "stability": 1, "gloss": "flint", "in_names": 1}
+{"m": "tevetskititsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "teloloapan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "telpōctli", "category": "other", "stability": 1, "gloss": "youth", "in_names": 1}
+{"m": "temaskalli", "category": "place_word", "stability": 3, "gloss": "sweat bath", "in_names": 2}
+{"m": "temilotsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "temō", "category": "verb_deed", "stability": 2, "gloss": "descend", "in_names": 7}
+{"m": "tentlil", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tenāmitl", "category": "place_word", "stability": 3, "gloss": "wall", "in_names": 5}
+{"m": "teosinyokatl", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "teotliśkah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tepanēkah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tepekvakvilko", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tepetlatl", "category": "landscape", "stability": 3, "gloss": "tepetate stone", "in_names": 1}
+{"m": "tepostli", "category": "other", "stability": 1, "gloss": "copper", "in_names": 3}
+{"m": "tepētl", "category": "landscape", "stability": 3, "gloss": "mountain", "in_names": 26}
+{"m": "tekitl", "category": "verb_deed", "stability": 2, "gloss": "work", "in_names": 1}
+{"m": "tekiśkitl", "category": "other", "stability": 1, "gloss": "saltpetre", "in_names": 2}
+{"m": "tetl", "category": "landscape", "stability": 3, "gloss": "stone", "in_names": 4}
+{"m": "tetlepanketsal", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tetskoko", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tetskotsinko", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tetsāvitl", "category": "other", "stability": 1, "gloss": "omen", "in_names": 2}
+{"m": "teskatl", "category": "artefact", "stability": 2, "gloss": "mirror", "in_names": 5}
+{"m": "teskatsonkatl", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tesosomok", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "teōkalli", "category": "place_word", "stability": 3, "gloss": "temple", "in_names": 1}
+{"m": "teōkvitlatl", "category": "other", "stability": 1, "gloss": "gold", "in_names": 1}
+{"m": "teōtivahkān", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "teōtl", "category": "deity", "stability": 1, "gloss": "god", "in_names": 16}
+{"m": "tititl", "category": "other", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "titlakavan", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tiyakapan", "category": "kinship", "stability": 3, "gloss": "firstborn", "in_names": 1}
+{"m": "tisok", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tisosiavakatl", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tiānkistli", "category": "place_word", "stability": 3, "gloss": "market", "in_names": 1}
+{"m": "tlakaelel", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tlakavepan", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tlakatekkatl", "category": "title_rank", "stability": 3, "gloss": "name", "in_names": 1}
+{"m": "tlacinolli", "category": "landscape", "stability": 3, "gloss": "burnt field", "in_names": 2}
+{"m": "tlactli", "category": "place_word", "stability": 3, "gloss": "ballcourt", "in_names": 4}
+{"m": "tlakoctli", "category": "artefact", "stability": 2, "gloss": "dart", "in_names": 2}
+{"m": "tlakotl", "category": "artefact", "stability": 2, "gloss": "rod", "in_names": 2}
+{"m": "tlakvilōlli", "category": "artefact", "stability": 2, "gloss": "painting", "in_names": 1}
+{"m": "tlah", "category": "grammar_suffix", "stability": 3, "gloss": "abundance of", "in_names": 2}
+{"m": "tlahko", "category": "direction", "stability": 3, "gloss": "middle", "in_names": 1}
+{"m": "tlahkvilo", "category": "occupation_group", "stability": 2, "gloss": "painter", "in_names": 1}
+{"m": "tlahtoa", "category": "verb_deed", "stability": 2, "gloss": "speak", "in_names": 2}
+{"m": "tlahtōlli", "category": "verb_deed", "stability": 2, "gloss": "word", "in_names": 1}
+{"m": "tlavitōlli", "category": "artefact", "stability": 2, "gloss": "bow", "in_names": 1}
+{"m": "tlailotlakah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tlalciac", "category": "title_rank", "stability": 3, "gloss": "name", "in_names": 1}
+{"m": "tlaltekatsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tlaltetekvin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tlan", "category": "grammar_suffix", "stability": 3, "gloss": "place of", "in_names": 38}
+{"m": "tlapalli", "category": "colour", "stability": 2, "gloss": "red", "in_names": 3}
+{"m": "tlappanekah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tlatelolkah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tlatelolko", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tlatlāvki", "category": "colour", "stability": 2, "gloss": "red", "in_names": 1}
+{"m": "tlaśkalli", "category": "artefact", "stability": 2, "gloss": "tortilla", "in_names": 2}
+{"m": "tlasōlli", "category": "other", "stability": 1, "gloss": "filth", "in_names": 1}
+{"m": "tlekvilli", "category": "artefact", "stability": 2, "gloss": "hearth", "in_names": 1}
+{"m": "tletl", "category": "other", "stability": 1, "gloss": "fire", "in_names": 7}
+{"m": "tlilpotonki", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tlotsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tlākatl", "category": "other", "stability": 1, "gloss": "person", "in_names": 8}
+{"m": "tlāviskalli", "category": "celestial", "stability": 1, "gloss": "dawn", "in_names": 2}
+{"m": "tlālvikah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tlālli", "category": "landscape", "stability": 3, "gloss": "earth", "in_names": 5}
+{"m": "tlālok", "category": "deity", "stability": 1, "gloss": "name", "in_names": 2}
+{"m": "tlālokeh", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tlīlli", "category": "colour", "stability": 2, "gloss": "black", "in_names": 9}
+{"m": "tocivitsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tokviltekatl", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "toveyomeh", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tolokan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tonakatekvtli", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "topan", "category": "direction", "stability": 3, "gloss": "above us", "in_names": 1}
+{"m": "totepev", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "totomivahkeh", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "totomoctli", "category": "plant", "stability": 2, "gloss": "dry maize husk", "in_names": 1}
+{"m": "totonakah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "totokivastli", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "totōnki", "category": "quality_size", "stability": 2, "gloss": "hot", "in_names": 1}
+{"m": "tośkatl", "category": "other", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tospanśoc", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tsakvalkatl", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tsapotl", "category": "plant", "stability": 2, "gloss": "sapote", "in_names": 5}
+{"m": "tsavktekah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "tsivaktli", "category": "plant", "stability": 2, "gloss": "tzihuac cactus", "in_names": 2}
+{"m": "tsilakatsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "tsin", "category": "honorific", "stability": 3, "gloss": "revered, little", "in_names": 25}
+{"m": "tsinākan", "category": "animal", "stability": 2, "gloss": "bat", "in_names": 1}
+{"m": "tsontekomatl", "category": "body_part", "stability": 2, "gloss": "head", "in_names": 1}
+{"m": "tē", "category": "grammar_suffix", "stability": 3, "gloss": "someone's", "in_names": 1}
+{"m": "tēkatl", "category": "grammar_suffix", "stability": 3, "gloss": "dweller of", "in_names": 11}
+{"m": "tēksistli", "category": "animal", "stability": 2, "gloss": "conch", "in_names": 2}
+{"m": "tēkvāni", "category": "animal", "stability": 2, "gloss": "wild beast", "in_names": 3}
+{"m": "tēntli", "category": "direction", "stability": 3, "gloss": "edge", "in_names": 3}
+{"m": "tēkvtli", "category": "title_rank", "stability": 3, "gloss": "lord", "in_names": 19}
+{"m": "tō", "category": "grammar_suffix", "stability": 3, "gloss": "our", "in_names": 5}
+{"m": "tōkatl", "category": "animal", "stability": 2, "gloss": "spider", "in_names": 2}
+{"m": "tōctli", "category": "animal", "stability": 2, "gloss": "rabbit", "in_names": 9}
+{"m": "tōllin", "category": "plant", "stability": 2, "gloss": "rush", "in_names": 5}
+{"m": "tōlīnia", "category": "verb_deed", "stability": 2, "gloss": "be poor", "in_names": 1}
+{"m": "tōn", "category": "quality_size", "stability": 2, "gloss": "little", "in_names": 4}
+{"m": "tōna", "category": "verb_deed", "stability": 2, "gloss": "shine", "in_names": 1}
+{"m": "tōnalli", "category": "other", "stability": 1, "gloss": "day sign", "in_names": 4}
+{"m": "tōnativ", "category": "celestial", "stability": 1, "gloss": "sun", "in_names": 3}
+{"m": "tōtolin", "category": "animal", "stability": 2, "gloss": "turkey", "in_names": 1}
+{"m": "tōtōtl", "category": "animal", "stability": 2, "gloss": "bird", "in_names": 9}
+{"m": "tōstli", "category": "animal", "stability": 2, "gloss": "yellow parrot", "in_names": 2}
+{"m": "tōsōstli", "category": "verb_deed", "stability": 2, "gloss": "vigil", "in_names": 2}
+{"m": "śayakamac", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "śelva", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "śikalankatl", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "śivitl", "category": "other", "stability": 1, "gloss": "turquoise", "in_names": 7}
+{"m": "śilonen", "category": "deity", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "śikipilli", "category": "artefact", "stability": 2, "gloss": "bag", "in_names": 1}
+{"m": "śivnel", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "śocikavaka", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "śokotl", "category": "plant", "stability": 2, "gloss": "fruit", "in_names": 3}
+{"m": "śāva", "category": "verb_deed", "stability": 2, "gloss": "paint the face", "in_names": 1}
+{"m": "śālli", "category": "landscape", "stability": 3, "gloss": "sand", "in_names": 3}
+{"m": "śāyakatl", "category": "body_part", "stability": 2, "gloss": "face", "in_names": 1}
+{"m": "śīkalli", "category": "artefact", "stability": 2, "gloss": "gourd bowl", "in_names": 1}
+{"m": "śīkohtli", "category": "animal", "stability": 2, "gloss": "bumblebee", "in_names": 2}
+{"m": "śīlōtl", "category": "plant", "stability": 2, "gloss": "tender maize ear", "in_names": 2}
+{"m": "śīma", "category": "verb_deed", "stability": 2, "gloss": "shave", "in_names": 1}
+{"m": "śīpēva", "category": "verb_deed", "stability": 2, "gloss": "flay", "in_names": 2}
+{"m": "śōcitl", "category": "plant", "stability": 2, "gloss": "flower", "in_names": 32}
+{"m": "śōkoyōlli", "category": "plant", "stability": 2, "gloss": "wood sorrel", "in_names": 1}
+{"m": "śōkoyōtl", "category": "kinship", "stability": 3, "gloss": "youngest child", "in_names": 1}
+{"m": "śōlōtl", "category": "occupation_group", "stability": 2, "gloss": "page", "in_names": 1}
+{"m": "śōnekvilli", "category": "artefact", "stability": 2, "gloss": "S-shaped staff", "in_names": 1}
+{"m": "śōtl", "category": "body_part", "stability": 2, "gloss": "foot", "in_names": 1}
+{"m": "yakapictlan", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "yakatl", "category": "body_part", "stability": 2, "gloss": "nose", "in_names": 4}
+{"m": "yavtli", "category": "plant", "stability": 2, "gloss": "marigold", "in_names": 2}
+{"m": "yoh", "category": "grammar_suffix", "stability": 3, "gloss": "full of", "in_names": 2}
+{"m": "yovalli", "category": "celestial", "stability": 1, "gloss": "night", "in_names": 6}
+{"m": "yopikah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "yopiko", "category": "place_name", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "yopimeh", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "yoyontsin", "category": "personal_name", "stability": 1, "gloss": "name", "in_names": 1}
+{"m": "yān", "category": "grammar_suffix", "stability": 3, "gloss": "place where", "in_names": 2}
+{"m": "yāōtl", "category": "occupation_group", "stability": 2, "gloss": "enemy", "in_names": 6}
+{"m": "yōtl", "category": "grammar_suffix", "stability": 3, "gloss": "-ness", "in_names": 1}
+{"m": "sakatl", "category": "plant", "stability": 2, "gloss": "grass", "in_names": 4}
+{"m": "sōlin", "category": "animal", "stability": 2, "gloss": "quail", "in_names": 2}
+{"m": "sōma", "category": "verb_deed", "stability": 2, "gloss": "frown", "in_names": 1}
+{"m": "ākalli", "category": "artefact", "stability": 2, "gloss": "boat", "in_names": 1}
+{"m": "ākatl", "category": "plant", "stability": 2, "gloss": "reed", "in_names": 7}
+{"m": "ākolcīcīmēkah", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "ākolvahkeh", "category": "dynasty_clan", "stability": 2, "gloss": "name", "in_names": 1}
+{"m": "ākolli", "category": "body_part", "stability": 2, "gloss": "shoulder", "in_names": 1}
+{"m": "āvakatl", "category": "plant", "stability": 2, "gloss": "avocado", "in_names": 1}
+{"m": "āvitsotl", "category": "animal", "stability": 2, "gloss": "water beast", "in_names": 1}
+{"m": "āvēśōtl", "category": "plant", "stability": 2, "gloss": "willow", "in_names": 1}
+{"m": "āmatl", "category": "artefact", "stability": 2, "gloss": "paper", "in_names": 2}
+{"m": "āmeyalli", "category": "landscape", "stability": 3, "gloss": "spring", "in_names": 1}
+{"m": "ātl", "category": "landscape", "stability": 3, "gloss": "water", "in_names": 21}
+{"m": "āśōlōtl", "category": "animal", "stability": 2, "gloss": "axolotl", "in_names": 1}
+{"m": "āyavitl", "category": "landscape", "stability": 3, "gloss": "mist", "in_names": 1}
+{"m": "āyōtl", "category": "animal", "stability": 2, "gloss": "turtle", "in_names": 2}
+{"m": "āskatl", "category": "animal", "stability": 2, "gloss": "ant", "in_names": 4}
+{"m": "āstatl", "category": "animal", "stability": 2, "gloss": "heron", "in_names": 2}
+{"m": "ī", "category": "grammar_suffix", "stability": 3, "gloss": "his/her", "in_names": 5}
+{"m": "īkpak", "category": "direction", "stability": 3, "gloss": "on top of", "in_names": 2}
+{"m": "īkśitl", "category": "body_part", "stability": 2, "gloss": "foot", "in_names": 1}
+{"m": "īn", "category": "grammar_suffix", "stability": 3, "gloss": "their", "in_names": 1}
+{"m": "ītstli", "category": "other", "stability": 1, "gloss": "obsidian", "in_names": 6}
+{"m": "īśtli", "category": "body_part", "stability": 2, "gloss": "face", "in_names": 3}
+{"m": "īśtlāvatl", "category": "landscape", "stability": 3, "gloss": "plain", "in_names": 1}
+{"m": "ōlli", "category": "other", "stability": 1, "gloss": "rubber", "in_names": 2}
+{"m": "ōme", "category": "number", "stability": 3, "gloss": "two", "in_names": 5}
+{"m": "ōpōctli", "category": "direction", "stability": 3, "gloss": "left hand", "in_names": 3}
+{"m": "ōstōtl", "category": "landscape", "stability": 3, "gloss": "cave", "in_names": 3}

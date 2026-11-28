@@ -1,0 +1,2406 @@
+{
+ "answers": {
+  "floor": 46.9,
+  "controls_run": [
+   "japanese",
+   "greek",
+   "old_english",
+   "hebrew",
+   "nahuatl",
+   "sumerian",
+   "hawaiian"
+  ],
+  "fresh_tamil_run": [],
+  "preprint_tamil_above_control_in_80_rounds": true,
+  "passes": {
+   "japanese": false,
+   "greek": false,
+   "old_english": false,
+   "hebrew": false,
+   "nahuatl": true,
+   "sumerian": true,
+   "hawaiian": false
+  },
+  "overall": "INCOMPLETE: fewer than six control languages, or no fresh Tamil list, could be run"
+ },
+ "lists": {
+  "tamil_preprint": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": 44.3,
+    "median": 35.0,
+    "sd": 61.3,
+    "quartiles": [
+     -3.2,
+     97.2
+    ],
+    "runs_above_control": 73,
+    "real_mean": 48.6,
+    "null_mean": 4.2,
+    "signs_read_mean": 20.3,
+    "options_per_sign": 1.74,
+    "signs_with_options": 54,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 210
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": 88.2,
+    "median": 97.0,
+    "sd": 141.4,
+    "quartiles": [
+     19.8,
+     188.3
+    ],
+    "runs_above_control": 79,
+    "real_mean": 89.3,
+    "null_mean": 1.1,
+    "signs_read_mean": 17.2,
+    "options_per_sign": 1.77,
+    "signs_with_options": 55,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 210
+   },
+   "main": {
+    "runs": 100,
+    "mean": 187.7,
+    "median": 198.6,
+    "sd": 176.7,
+    "quartiles": [
+     73.1,
+     301.9
+    ],
+    "runs_above_control": 89,
+    "real_mean": 194.9,
+    "null_mean": 7.2,
+    "signs_read_mean": 20.0,
+    "options_per_sign": 1.77,
+    "signs_with_options": 55,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 210
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 182.4,
+    "median": 192.7,
+    "sd": 154.5,
+    "quartiles": [
+     82.2,
+     288.2
+    ],
+    "runs_above_control": 177,
+    "real_mean": 195.8,
+    "null_mean": 13.4,
+    "signs_read_mean": 19.9,
+    "options_per_sign": 1.77,
+    "signs_with_options": 55,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 210
+   },
+   "whole list, rounds 0 to 9": {
+    "runs": 10,
+    "mean": 223.0,
+    "median": 191.5,
+    "sd": 103.0,
+    "quartiles": [
+     171.5,
+     247.1
+    ],
+    "runs_above_control": 10,
+    "real_mean": 214.1,
+    "null_mean": -9.0,
+    "signs_read_mean": 27.4,
+    "options_per_sign": 2.52,
+    "signs_with_options": 56,
+    "names_per_run": 1125,
+    "name_parts_in_two_or_more_names": 350
+   },
+   "readings_chosen": {
+    "060": {
+     "var": 64,
+     "varai": 9,
+     "kuṟu": 5,
+     "kuṟi": 1,
+     "koṭi": 1,
+     "koṭu": 1
+    },
+    "070": {
+     "kaṇ": 34,
+     "kaṇai": 7,
+     "vēl": 33,
+     "vēḷ": 1,
+     "kaṇi": 1
+    },
+    "090": {
+     "āṉ": 80
+    },
+    "125": {
+     "vil": 29
+    },
+    "140": {
+     "tāyam": 24,
+     "makaḷ": 2,
+     "aṉṉi": 11
+    },
+    "154": {
+     "kāl": 10,
+     "kal": 2
+    },
+    "220": {
+     "mīṉ": 58
+    },
+    "226": {
+     "kuḷam": 75,
+     "kūḷi": 10,
+     "mīṉ": 1
+    },
+    "233": {
+     "varai": 33,
+     "var": 1,
+     "mīṉ": 3
+    },
+    "236": {
+     "māṉ": 56,
+     "maṇam": 6,
+     "maṇi": 4,
+     "il": 10
+    },
+    "440": {
+     "kāṭu": 47,
+     "vāyil": 28,
+     "kaṭai": 14,
+     "kaṭu": 2
+    },
+    "503": {
+     "malai": 16,
+     "poru": 16,
+     "māl": 51,
+     "kuṉṟam": 5,
+     "kuṉṟu": 8
+    },
+    "575": {
+     "kōṭṭam": 18,
+     "kōṭṭi": 22,
+     "maṇam": 2,
+     "maṇi": 12
+    },
+    "615": {
+     "val": 18,
+     "valai": 18
+    },
+    "690": {
+     "kūṭal": 29,
+     "kuṭa": 8
+    },
+    "705": {
+     "kal": 20,
+     "kuṭa": 15,
+     "kāl": 6,
+     "kuṭi": 1
+    },
+    "740": {
+     "kuṭi": 87,
+     "kal": 10,
+     "kāl": 2
+    },
+    "741": {
+     "kuṭa": 40,
+     "kal": 17,
+     "kāl": 8,
+     "kuṭi": 1
+    },
+    "790": {
+     "il": 20,
+     "kaṇ": 15,
+     "kaṇai": 3
+    },
+    "904": {
+     "tirai": 37,
+     "koṭi": 4
+    },
+    "235": {
+     "muṭam": 53,
+     "muṭi": 23
+    },
+    "400": {
+     "pālai": 7
+    },
+    "455": {
+     "kaḷ": 46,
+     "eṟi": 16,
+     "kal": 2,
+     "kāl": 1
+    },
+    "460": {
+     "kuṉṟu": 23,
+     "varai": 5,
+     "var": 6,
+     "kuṉṟam": 13,
+     "māl": 11,
+     "malai": 19,
+     "koṭu": 1,
+     "koṭi": 6
+    },
+    "692": {
+     "kūṭal": 62
+    },
+    "717": {
+     "potu": 16
+    },
+    "760": {
+     "kal": 30,
+     "koṭi": 8,
+     "kuṭa": 27,
+     "kāl": 1,
+     "kuṭi": 3,
+     "koṭu": 3
+    },
+    "840": {
+     "il": 54,
+     "kaṇ": 12,
+     "kaṇai": 7,
+     "kaṇi": 1
+    },
+    "900": {
+     "vil": 51,
+     "koṭi": 8,
+     "koṭu": 1,
+     "tiṅkaḷ": 2
+    },
+    "920": {
+     "tiṅkaḷ": 27,
+     "mukam": 4
+    },
+    "240": {
+     "mīṉ": 24,
+     "micai": 13
+    },
+    "520": {
+     "vēḷ": 43,
+     "kaṇi": 9,
+     "kaṇ": 1
+    },
+    "832": {
+     "kaṇi": 4,
+     "pāvai": 20,
+     "kaṇ": 1
+    },
+    "100": {
+     "talai": 2
+    },
+    "435": {
+     "pāmpu": 23,
+     "mīṉ": 4,
+     "tirai": 4
+    },
+    "590": {
+     "koṭi": 13,
+     "kuṭi": 2
+    },
+    "817": {
+     "il": 1
+    },
+    "820": {
+     "mīṉ": 7
+    },
+    "892": {
+     "kaṇi": 6,
+     "kaṇai": 3,
+     "kaṇ": 2
+    },
+    "231": {
+     "kuṟu": 17,
+     "kuṟi": 18
+    },
+    "923": {
+     "koṭi": 10,
+     "koṭu": 5
+    },
+    "706": {
+     "kāl": 5,
+     "kal": 1
+    },
+    "368": {
+     "kuṭi": 6
+    },
+    "742": {
+     "kāl": 3,
+     "kuṭa": 7,
+     "kal": 4
+    },
+    "388": {
+     "maṇam": 3,
+     "maṇi": 4
+    },
+    "255": {
+     "mīṉ": 1
+    },
+    "803": {
+     "il": 5
+    },
+    "595": {
+     "koṭi": 1,
+     "koṭu": 1
+    },
+    "142": {
+     "āṉ": 1
+    },
+    "861": {
+     "il": 1
+    },
+    "390": {
+     "koṭi": 2
+    }
+   },
+   "readings_chosen_for_jar_sign": {
+    "kuṭi": 87,
+    "kal": 10,
+    "kāl": 2
+   },
+   "one_sign_left_unread_rounds_0_to_9": {
+    "mean_with_every_sign": 131.4,
+    "largest_falls": [
+     {
+      "sign": "740",
+      "mean_without_it": 1.4,
+      "change": -130.0,
+      "rounds_above_control_of_10": 6,
+      "readings_chosen_for_it": {
+       "kuṭi": 87,
+       "kal": 10,
+       "kāl": 2
+      }
+     },
+     {
+      "sign": "002",
+      "mean_without_it": 120.8,
+      "change": -10.6,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {}
+     },
+     {
+      "sign": "176",
+      "mean_without_it": 125.1,
+      "change": -6.3,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {}
+     },
+     {
+      "sign": "060",
+      "mean_without_it": 128.1,
+      "change": -3.3,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {
+       "var": 64,
+       "varai": 9,
+       "kuṟu": 5,
+       "kuṟi": 1,
+       "koṭi": 1,
+       "koṭu": 1
+      }
+     },
+     {
+      "sign": "861",
+      "mean_without_it": 128.6,
+      "change": -2.8,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {
+       "il": 1
+      }
+     }
+    ]
+   }
+  },
+  "sanskrit_preprint": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -23.8,
+    "median": -24.7,
+    "sd": 40.1,
+    "quartiles": [
+     -52.2,
+     -3.5
+    ],
+    "runs_above_control": 24,
+    "real_mean": -21.4,
+    "null_mean": 2.4,
+    "signs_read_mean": 6.4,
+    "options_per_sign": 0.29,
+    "signs_with_options": 19,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 104
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -12.7,
+    "median": -10.9,
+    "sd": 32.6,
+    "quartiles": [
+     -35.1,
+     10.5
+    ],
+    "runs_above_control": 34,
+    "real_mean": -12.8,
+    "null_mean": -0.1,
+    "signs_read_mean": 4.4,
+    "options_per_sign": 0.29,
+    "signs_with_options": 19,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 104
+   },
+   "main": {
+    "runs": 100,
+    "mean": -23.4,
+    "median": -28.5,
+    "sd": 45.6,
+    "quartiles": [
+     -53.8,
+     7.5
+    ],
+    "runs_above_control": 30,
+    "real_mean": -20.9,
+    "null_mean": 2.5,
+    "signs_read_mean": 6.4,
+    "options_per_sign": 0.29,
+    "signs_with_options": 19,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 104
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": -2.8,
+    "median": -7.5,
+    "sd": 69.3,
+    "quartiles": [
+     -46.7,
+     21.4
+    ],
+    "runs_above_control": 85,
+    "real_mean": -5.7,
+    "null_mean": -3.0,
+    "signs_read_mean": 5.8,
+    "options_per_sign": 0.29,
+    "signs_with_options": 19,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 104
+   },
+   "whole list, rounds 0 to 9": {
+    "runs": 10,
+    "mean": -13.3,
+    "median": -9.7,
+    "sd": 44.7,
+    "quartiles": [
+     -61.4,
+     31.0
+    ],
+    "runs_above_control": 4,
+    "real_mean": -16.5,
+    "null_mean": -3.2,
+    "signs_read_mean": 17.8,
+    "options_per_sign": 1.06,
+    "signs_with_options": 40,
+    "names_per_run": 1367,
+    "name_parts_in_two_or_more_names": 269
+   },
+   "readings_chosen": {
+    "460": {
+     "giri": 14
+    },
+    "520": {
+     "śara": 27,
+     "iṣu": 17
+    },
+    "820": {
+     "cakra": 16,
+     "sūrya": 24
+    },
+    "832": {
+     "akṣa": 14
+    },
+    "900": {
+     "māṣa": 4,
+     "dhanvan": 18
+    },
+    "100": {
+     "gaṇa": 16,
+     "nṛ": 4,
+     "na": 4,
+     "puruṣa": 1
+    },
+    "176": {
+     "sadā": 25
+    },
+    "388": {
+     "karṇa": 22,
+     "yava": 2
+    },
+    "455": {
+     "agni": 56
+    },
+    "861": {
+     "parṇa": 6
+    },
+    "070": {
+     "śara": 11,
+     "iṣu": 4
+    },
+    "142": {
+     "na": 9,
+     "nṛ": 17
+    },
+    "717": {
+     "pad": 14,
+     "hasta": 5,
+     "pati": 5
+    },
+    "090": {
+     "tanū": 4,
+     "nṛ": 1,
+     "puruṣa": 11,
+     "jana": 6,
+     "janam": 1
+    },
+    "390": {
+     "vana": 20,
+     "śāka": 3,
+     "vāyu": 14
+    },
+    "400": {
+     "dant": 13
+    },
+    "503": {
+     "giri": 19
+    },
+    "407": {
+     "vana": 1,
+     "vāyu": 1
+    },
+    "840": {
+     "akṣa": 11,
+     "parṇa": 31
+    },
+    "368": {
+     "yūpa": 15,
+     "ketu": 14
+    },
+    "595": {
+     "ketu": 6,
+     "yūpa": 2
+    },
+    "892": {
+     "dhanvan": 4,
+     "iṣu": 1
+    },
+    "236": {
+     "pāśa": 6,
+     "dama": 15
+    },
+    "405": {
+     "vana": 3,
+     "śāka": 1,
+     "vāyu": 1
+    },
+    "151": {
+     "yoga": 29
+    },
+    "617": {
+     "kṣetra": 9
+    },
+    "140": {
+     "nara": 5
+    },
+    "817": {
+     "parṇa": 3
+    },
+    "590": {
+     "ketu": 11,
+     "yūpa": 3
+    },
+    "435": {
+     "ahi": 6
+    },
+    "125": {
+     "dhanvan": 5
+    },
+    "585": {
+     "śālā": 9
+    },
+    "760": {
+     "śṛṅga": 9
+    },
+    "790": {
+     "parṇa": 3,
+     "akṣa": 2
+    },
+    "904": {
+     "māṣa": 2
+    },
+    "615": {
+     "kṣetra": 4
+    },
+    "803": {
+     "parṇa": 3
+    }
+   },
+   "readings_chosen_for_jar_sign": {}
+  },
+  "akkadian_preprint": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -26.6,
+    "median": -26.0,
+    "sd": 25.8,
+    "quartiles": [
+     -44.6,
+     -6.1
+    ],
+    "runs_above_control": 18,
+    "real_mean": -24.9,
+    "null_mean": 1.6,
+    "signs_read_mean": 5.7,
+    "options_per_sign": 0.35,
+    "signs_with_options": 20,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -3.0,
+    "median": -3.7,
+    "sd": 16.4,
+    "quartiles": [
+     -11.8,
+     6.8
+    ],
+    "runs_above_control": 42,
+    "real_mean": -4.4,
+    "null_mean": -1.5,
+    "signs_read_mean": 5,
+    "options_per_sign": 0.35,
+    "signs_with_options": 20,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "main": {
+    "runs": 100,
+    "mean": -31.9,
+    "median": -30.9,
+    "sd": 32.7,
+    "quartiles": [
+     -57.3,
+     -4.7
+    ],
+    "runs_above_control": 20,
+    "real_mean": -31.9,
+    "null_mean": 0.0,
+    "signs_read_mean": 5.7,
+    "options_per_sign": 0.35,
+    "signs_with_options": 20,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 21.8,
+    "median": 4.6,
+    "sd": 75.3,
+    "quartiles": [
+     -17.9,
+     43.3
+    ],
+    "runs_above_control": 111,
+    "real_mean": 28.0,
+    "null_mean": 6.2,
+    "signs_read_mean": 5.3,
+    "options_per_sign": 0.35,
+    "signs_with_options": 20,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "whole list, rounds 0 to 9": {
+    "runs": 10,
+    "mean": 13.0,
+    "median": 10.3,
+    "sd": 28.1,
+    "quartiles": [
+     -9.5,
+     40.7
+    ],
+    "runs_above_control": 7,
+    "real_mean": -4.4,
+    "null_mean": -17.4,
+    "signs_read_mean": 8.5,
+    "options_per_sign": 0.52,
+    "signs_with_options": 30,
+    "names_per_run": 1207,
+    "name_parts_in_two_or_more_names": 258
+   },
+   "readings_chosen": {
+    "125": {
+     "pirḫu": 43
+    },
+    "415": {
+     "nūru": 76
+    },
+    "820": {
+     "šamuḫ": 11,
+     "šamšu": 44
+    },
+    "832": {
+     "īnu": 8,
+     "zēru": 38
+    },
+    "100": {
+     "awīlu": 17,
+     "rēʾû": 8
+    },
+    "140": {
+     "ummu": 38
+    },
+    "142": {
+     "awīlu": 73
+    },
+    "817": {
+     "zēru": 12
+    },
+    "460": {
+     "šadû": 19
+    },
+    "090": {
+     "awīlu": 5
+    },
+    "407": {
+     "pirḫu": 12
+    },
+    "920": {
+     "waqru": 17
+    },
+    "220": {
+     "nunu": 17
+    },
+    "236": {
+     "bītu": 27
+    },
+    "923": {
+     "waqru": 1
+    },
+    "900": {
+     "waqru": 44
+    },
+    "440": {
+     "baba": 3
+    },
+    "840": {
+     "īnu": 18,
+     "zēru": 4
+    },
+    "790": {
+     "zēru": 20,
+     "īnu": 4
+    },
+    "416": {
+     "nūru": 6
+    },
+    "892": {
+     "pirḫu": 5
+    },
+    "240": {
+     "nunu": 3
+    }
+   },
+   "readings_chosen_for_jar_sign": {}
+  },
+  "japanese": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -13.6,
+    "median": -7.6,
+    "sd": 65.1,
+    "quartiles": [
+     -54.6,
+     22.7
+    ],
+    "runs_above_control": 45,
+    "real_mean": -17.0,
+    "null_mean": -3.4,
+    "signs_read_mean": 31.6,
+    "options_per_sign": 2.5,
+    "signs_with_options": 59,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 179
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -62.9,
+    "median": -73.0,
+    "sd": 166.6,
+    "quartiles": [
+     -177.9,
+     38.4
+    ],
+    "runs_above_control": 34,
+    "real_mean": -64.8,
+    "null_mean": -1.9,
+    "signs_read_mean": 24.9,
+    "options_per_sign": 2.54,
+    "signs_with_options": 60,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 179
+   },
+   "main": {
+    "runs": 100,
+    "mean": -110.8,
+    "median": -95.8,
+    "sd": 255.0,
+    "quartiles": [
+     -287.3,
+     103.7
+    ],
+    "runs_above_control": 33,
+    "real_mean": -108.9,
+    "null_mean": 1.8,
+    "signs_read_mean": 31.3,
+    "options_per_sign": 2.54,
+    "signs_with_options": 60,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 179
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 8.5,
+    "median": 7.2,
+    "sd": 167.8,
+    "quartiles": [
+     -81.5,
+     109.4
+    ],
+    "runs_above_control": 104,
+    "real_mean": -3.4,
+    "null_mean": -11.9,
+    "signs_read_mean": 30.8,
+    "options_per_sign": 2.54,
+    "signs_with_options": 60,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 179
+   },
+   "readings_chosen": {
+    "002": {
+     "phuto": 59
+    },
+    "060": {
+     "ci": 47,
+     "hara": 50
+    },
+    "090": {
+     "otoko": 53,
+     "taci": 29,
+     "me": 7
+    },
+    "100": {
+     "mici": 48,
+     "miju": 16,
+     "me": 5,
+     "otoko": 20,
+     "muro": 1,
+     "mura": 4
+    },
+    "125": {
+     "yumi": 1,
+     "yomi": 47
+    },
+    "151": {
+     "mocu": 90,
+     "ne": 2
+    },
+    "220": {
+     "hiro": 53,
+     "hata": 3,
+     "hiru": 33,
+     "hira": 2
+    },
+    "226": {
+     "tori": 62,
+     "iki": 33
+    },
+    "255": {
+     "hira": 15,
+     "hata": 37,
+     "hiru": 18,
+     "hiro": 18
+    },
+    "388": {
+     "ho": 16,
+     "ine": 46,
+     "cugu": 2,
+     "cuka": 6,
+     "cuki": 7,
+     "mimi": 2
+    },
+    "455": {
+     "iśi": 27,
+     "hi": 42,
+     "ici": 14
+    },
+    "460": {
+     "take": 46,
+     "yama": 25,
+     "taka": 20
+    },
+    "503": {
+     "cuki": 29,
+     "cuka": 6,
+     "cugu": 4
+    },
+    "520": {
+     "hoko": 89,
+     "saka": 4,
+     "saki": 6
+    },
+    "527": {
+     "kau": 34,
+     "ko": 52,
+     "hagu": 14
+    },
+    "575": {
+     "ya": 63,
+     "taci": 32
+    },
+    "585": {
+     "taci": 15
+    },
+    "590": {
+     "hata": 15,
+     "haśira": 9,
+     "hagu": 30,
+     "saho": 16
+    },
+    "595": {
+     "saho": 17,
+     "kau": 25,
+     "haśira": 7,
+     "hagu": 24,
+     "ko": 8,
+     "hata": 3
+    },
+    "615": {
+     "ame": 46,
+     "kagu": 25,
+     "ta": 6,
+     "nu": 1
+    },
+    "617": {
+     "nu": 25,
+     "ta": 15,
+     "kagu": 1
+    },
+    "621": {
+     "to": 34,
+     "hagu": 13
+    },
+    "717": {
+     "te": 33,
+     "cuki": 3,
+     "cugu": 9,
+     "aśi": 28,
+     "cuka": 1
+    },
+    "740": {
+     "cugu": 46,
+     "ki": 14,
+     "cuki": 19,
+     "cuka": 12,
+     "ke": 2
+    },
+    "741": {
+     "miju": 56,
+     "ke": 9,
+     "mici": 15,
+     "ki": 14
+    },
+    "760": {
+     "kuśi": 42,
+     "me": 25
+    },
+    "798": {
+     "kane": 70,
+     "ke": 2
+    },
+    "803": {
+     "ki": 30,
+     "ke": 8
+    },
+    "817": {
+     "saka": 11,
+     "saki": 27,
+     "me": 6
+    },
+    "840": {
+     "me": 5
+    },
+    "861": {
+     "saki": 40,
+     "me": 16,
+     "saka": 4
+    },
+    "900": {
+     "kuma": 6,
+     "cuka": 10,
+     "yumi": 65,
+     "kume": 8,
+     "kumo": 3,
+     "yomi": 1,
+     "cugu": 3,
+     "cuki": 2
+    },
+    "904": {
+     "kumo": 16,
+     "kume": 15,
+     "cugu": 5,
+     "kuma": 27,
+     "cuki": 1,
+     "cuka": 1
+    },
+    "061": {
+     "saki": 17,
+     "saka": 39
+    },
+    "142": {
+     "otoko": 8
+    },
+    "350": {
+     "kuśi": 7,
+     "ne": 12
+    },
+    "742": {
+     "mici": 10,
+     "miju": 15,
+     "ke": 5,
+     "ki": 7
+    },
+    "820": {
+     "hośi": 36,
+     "hi": 7
+    },
+    "920": {
+     "cugu": 19,
+     "cuki": 33,
+     "cuka": 20,
+     "me": 2
+    },
+    "923": {
+     "kume": 11,
+     "kuma": 19,
+     "cuka": 6,
+     "cuki": 2,
+     "kumo": 19,
+     "cugu": 1
+    },
+    "235": {
+     "phuto": 32
+    },
+    "368": {
+     "haśira": 32,
+     "saho": 9,
+     "hata": 3
+    },
+    "390": {
+     "ki": 25,
+     "ke": 42
+    },
+    "440": {
+     "to": 42,
+     "tō": 35
+    },
+    "070": {
+     "ya": 23,
+     "saka": 8,
+     "hoko": 1,
+     "saki": 2
+    },
+    "156": {
+     "mocu": 8,
+     "ne": 3
+    },
+    "892": {
+     "yomi": 20,
+     "ya": 4,
+     "yumi": 2
+    },
+    "400": {
+     "kuśi": 37,
+     "haśi": 21,
+     "kuci": 2
+    },
+    "405": {
+     "ke": 4,
+     "me": 13,
+     "ki": 1
+    },
+    "416": {
+     "taci": 19
+    },
+    "706": {
+     "kagu": 9
+    },
+    "140": {
+     "me": 3,
+     "ci": 18
+    },
+    "407": {
+     "ke": 1,
+     "me": 7,
+     "ki": 2
+    },
+    "806": {
+     "me": 10
+    },
+    "705": {
+     "kagu": 12
+    },
+    "154": {
+     "ne": 2,
+     "mocu": 1
+    },
+    "790": {
+     "me": 1
+    },
+    "236": {
+     "ya": 1
+    }
+   },
+   "readings_chosen_for_jar_sign": {
+    "cugu": 46,
+    "ki": 14,
+    "cuki": 19,
+    "cuka": 12,
+    "ke": 2
+   }
+  },
+  "greek": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -0.3,
+    "median": 0.4,
+    "sd": 17.6,
+    "quartiles": [
+     -10.9,
+     10.1
+    ],
+    "runs_above_control": 52,
+    "real_mean": -0.9,
+    "null_mean": -0.6,
+    "signs_read_mean": 1.4,
+    "options_per_sign": 0.13,
+    "signs_with_options": 9,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 64
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -0.9,
+    "median": -1.0,
+    "sd": 4.9,
+    "quartiles": [
+     -4.0,
+     0.8
+    ],
+    "runs_above_control": 33,
+    "real_mean": -1.1,
+    "null_mean": -0.2,
+    "signs_read_mean": 0.8,
+    "options_per_sign": 0.13,
+    "signs_with_options": 9,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 64
+   },
+   "main": {
+    "runs": 100,
+    "mean": -1.0,
+    "median": -0.5,
+    "sd": 21.9,
+    "quartiles": [
+     -14.0,
+     13.1
+    ],
+    "runs_above_control": 49,
+    "real_mean": -1.6,
+    "null_mean": -0.6,
+    "signs_read_mean": 1.4,
+    "options_per_sign": 0.13,
+    "signs_with_options": 9,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 64
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 1.9,
+    "median": 3.4,
+    "sd": 28.1,
+    "quartiles": [
+     -13.5,
+     19.5
+    ],
+    "runs_above_control": 109,
+    "real_mean": 1.3,
+    "null_mean": -0.6,
+    "signs_read_mean": 1.9,
+    "options_per_sign": 0.13,
+    "signs_with_options": 9,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 64
+   },
+   "readings_chosen": {
+    "142": {
+     "anēr": 6
+    },
+    "717": {
+     "pous": 32
+    },
+    "090": {
+     "anēr": 47
+    },
+    "100": {
+     "anēr": 19
+    },
+    "455": {
+     "pur": 16
+    },
+    "440": {
+     "pulē": 17
+    }
+   },
+   "readings_chosen_for_jar_sign": {}
+  },
+  "old_english": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -3.8,
+    "median": -1.6,
+    "sd": 36.4,
+    "quartiles": [
+     -24.6,
+     21.6
+    ],
+    "runs_above_control": 49,
+    "real_mean": -2.2,
+    "null_mean": 1.6,
+    "signs_read_mean": 7.3,
+    "options_per_sign": 0.53,
+    "signs_with_options": 28,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 159
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": 18.9,
+    "median": 18.7,
+    "sd": 24.5,
+    "quartiles": [
+     0.9,
+     36.2
+    ],
+    "runs_above_control": 79,
+    "real_mean": 20.4,
+    "null_mean": 1.5,
+    "signs_read_mean": 9.3,
+    "options_per_sign": 0.52,
+    "signs_with_options": 28,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 159
+   },
+   "main": {
+    "runs": 100,
+    "mean": -9.0,
+    "median": -10.7,
+    "sd": 45.3,
+    "quartiles": [
+     -39.1,
+     18.6
+    ],
+    "runs_above_control": 42,
+    "real_mean": -6.6,
+    "null_mean": 2.3,
+    "signs_read_mean": 7.1,
+    "options_per_sign": 0.52,
+    "signs_with_options": 28,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 159
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 54.9,
+    "median": 36.7,
+    "sd": 87.3,
+    "quartiles": [
+     2.9,
+     92.7
+    ],
+    "runs_above_control": 157,
+    "real_mean": 54.6,
+    "null_mean": -0.3,
+    "signs_read_mean": 8.6,
+    "options_per_sign": 0.52,
+    "signs_with_options": 28,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 159
+   },
+   "readings_chosen": {
+    "226": {
+     "mere": 39
+    },
+    "255": {
+     "phinn": 60,
+     "phinnas": 24
+    },
+    "520": {
+     "gār": 85,
+     "ord": 7
+    },
+    "595": {
+     "vilig": 6
+    },
+    "617": {
+     "pheld": 51
+    },
+    "820": {
+     "sunne": 62
+    },
+    "840": {
+     "sēte": 49
+    },
+    "861": {
+     "ord": 60
+    },
+    "920": {
+     "mōna": 69
+    },
+    "220": {
+     "phinn": 21,
+     "phinnas": 5
+    },
+    "142": {
+     "vēr": 14
+    },
+    "070": {
+     "ord": 5,
+     "gār": 10
+    },
+    "832": {
+     "sēte": 30
+    },
+    "455": {
+     "stān": 8
+    },
+    "904": {
+     "vēg": 18
+    },
+    "923": {
+     "mōna": 3
+    },
+    "817": {
+     "ord": 23
+    },
+    "090": {
+     "vēr": 23
+    },
+    "900": {
+     "mōna": 12
+    },
+    "100": {
+     "vēr": 9
+    },
+    "790": {
+     "sēte": 11
+    },
+    "460": {
+     "beorg": 3
+    },
+    "060": {
+     "mearc": 2
+    },
+    "806": {
+     "sēte": 2
+    }
+   },
+   "readings_chosen_for_jar_sign": {}
+  },
+  "hebrew": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -14.6,
+    "median": -15.6,
+    "sd": 16.2,
+    "quartiles": [
+     -25.0,
+     -5.5
+    ],
+    "runs_above_control": 17,
+    "real_mean": -16.4,
+    "null_mean": -1.8,
+    "signs_read_mean": 3.5,
+    "options_per_sign": 0.19,
+    "signs_with_options": 13,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 82
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -10.1,
+    "median": -12.8,
+    "sd": 56.0,
+    "quartiles": [
+     -36.5,
+     8.5
+    ],
+    "runs_above_control": 31,
+    "real_mean": -16.3,
+    "null_mean": -6.1,
+    "signs_read_mean": 3.0,
+    "options_per_sign": 0.2,
+    "signs_with_options": 14,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 82
+   },
+   "main": {
+    "runs": 100,
+    "mean": -26.6,
+    "median": -29.2,
+    "sd": 63.8,
+    "quartiles": [
+     -50.8,
+     -5.3
+    ],
+    "runs_above_control": 23,
+    "real_mean": -32.5,
+    "null_mean": -5.9,
+    "signs_read_mean": 3.3,
+    "options_per_sign": 0.2,
+    "signs_with_options": 14,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 82
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": -8.9,
+    "median": -13.6,
+    "sd": 52.8,
+    "quartiles": [
+     -23.4,
+     2.8
+    ],
+    "runs_above_control": 53,
+    "real_mean": -13.6,
+    "null_mean": -4.6,
+    "signs_read_mean": 4.1,
+    "options_per_sign": 0.2,
+    "signs_with_options": 14,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 82
+   },
+   "readings_chosen": {
+    "740": {
+     "yāda": 47
+    },
+    "892": {
+     "mōreh": 11
+    },
+    "125": {
+     "mōreh": 33
+    },
+    "415": {
+     "nēr": 44
+    },
+    "840": {
+     "ayin": 49
+    },
+    "255": {
+     "ṣābā": 31
+    },
+    "585": {
+     "ōhel": 41
+    },
+    "820": {
+     "śemeś": 61
+    },
+    "236": {
+     "bayit": 1
+    },
+    "416": {
+     "nēr": 2
+    },
+    "717": {
+     "yāda": 3
+    },
+    "832": {
+     "ayin": 3
+    },
+    "790": {
+     "ayin": 8
+    }
+   },
+   "readings_chosen_for_jar_sign": {
+    "yāda": 47
+   }
+  },
+  "nahuatl": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": 44.0,
+    "median": 40.6,
+    "sd": 46.5,
+    "quartiles": [
+     15.2,
+     74.8
+    ],
+    "runs_above_control": 83,
+    "real_mean": 42.6,
+    "null_mean": -1.3,
+    "signs_read_mean": 11.9,
+    "options_per_sign": 0.99,
+    "signs_with_options": 40,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 149
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": 31.6,
+    "median": 29.6,
+    "sd": 34.9,
+    "quartiles": [
+     12.3,
+     53.7
+    ],
+    "runs_above_control": 83,
+    "real_mean": 31.2,
+    "null_mean": -0.4,
+    "signs_read_mean": 12.3,
+    "options_per_sign": 0.97,
+    "signs_with_options": 40,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 149
+   },
+   "main": {
+    "runs": 100,
+    "mean": 49.1,
+    "median": 49.6,
+    "sd": 50.4,
+    "quartiles": [
+     21.0,
+     84.1
+    ],
+    "runs_above_control": 84,
+    "real_mean": 47.8,
+    "null_mean": -1.4,
+    "signs_read_mean": 11.8,
+    "options_per_sign": 0.97,
+    "signs_with_options": 40,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 149
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 17.6,
+    "median": 19.2,
+    "sd": 143.3,
+    "quartiles": [
+     -35.5,
+     63.5
+    ],
+    "runs_above_control": 125,
+    "real_mean": 22.7,
+    "null_mean": 5.1,
+    "signs_read_mean": 12.4,
+    "options_per_sign": 0.97,
+    "signs_with_options": 40,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 149
+   },
+   "readings_chosen": {
+    "090": {
+     "tlākatl": 12
+    },
+    "140": {
+     "sivātl": 37,
+     "nāntli": 8,
+     "ketsa": 4
+    },
+    "142": {
+     "tlakotl": 72,
+     "tlākatl": 14,
+     "kvavitl": 3
+    },
+    "220": {
+     "micin": 75
+    },
+    "435": {
+     "kōātl": 81
+    },
+    "455": {
+     "tletl": 63,
+     "tetl": 32
+    },
+    "520": {
+     "mitl": 98
+    },
+    "590": {
+     "pantli": 5,
+     "kvavitl": 61
+    },
+    "615": {
+     "tenāmitl": 55,
+     "mīlli": 5
+    },
+    "798": {
+     "tēksistli": 86
+    },
+    "803": {
+     "kvavitl": 27
+    },
+    "817": {
+     "vitstli": 28,
+     "yakatl": 21
+    },
+    "820": {
+     "sitlālin": 47,
+     "tōnativ": 52
+    },
+    "861": {
+     "yakatl": 20,
+     "vitstli": 57
+    },
+    "892": {
+     "tlakoctli": 14
+    },
+    "070": {
+     "tlakoctli": 9,
+     "yakatl": 27,
+     "vitstli": 12
+    },
+    "368": {
+     "pantli": 40
+    },
+    "405": {
+     "tlakotl": 11
+    },
+    "460": {
+     "tepētl": 10,
+     "vitstli": 1
+    },
+    "060": {
+     "pantli": 19
+    },
+    "705": {
+     "kvavitl": 3
+    },
+    "236": {
+     "kalli": 1
+    },
+    "240": {
+     "micin": 19
+    },
+    "390": {
+     "tlakotl": 7,
+     "kvavitl": 2
+    },
+    "790": {
+     "īśtli": 7
+    },
+    "595": {
+     "pantli": 6
+    },
+    "235": {
+     "micin": 6
+    },
+    "350": {
+     "śivitl": 7
+    },
+    "840": {
+     "īśtli": 4
+    },
+    "100": {
+     "tlākatl": 9
+    },
+    "760": {
+     "kvākvavitl": 2,
+     "śivitl": 2
+    },
+    "575": {
+     "kalli": 1
+    }
+   },
+   "readings_chosen_for_jar_sign": {},
+   "one_sign_left_unread_rounds_0_to_9": {
+    "mean_with_every_sign": 47.1,
+    "largest_falls": [
+     {
+      "sign": "520",
+      "mean_without_it": 5.3,
+      "change": -41.8,
+      "rounds_above_control_of_10": 5,
+      "readings_chosen_for_it": {
+       "mitl": 98
+      }
+     },
+     {
+      "sign": "820",
+      "mean_without_it": 32.9,
+      "change": -14.2,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {
+       "sitlālin": 47,
+       "tōnativ": 52
+      }
+     },
+     {
+      "sign": "920",
+      "mean_without_it": 33.9,
+      "change": -13.1,
+      "rounds_above_control_of_10": 5,
+      "readings_chosen_for_it": {}
+     },
+     {
+      "sign": "416",
+      "mean_without_it": 34.3,
+      "change": -12.7,
+      "rounds_above_control_of_10": 6,
+      "readings_chosen_for_it": {}
+     },
+     {
+      "sign": "220",
+      "mean_without_it": 34.5,
+      "change": -12.6,
+      "rounds_above_control_of_10": 7,
+      "readings_chosen_for_it": {
+       "micin": 75
+      }
+     }
+    ]
+   }
+  },
+  "sumerian": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -6.2,
+    "median": -3.6,
+    "sd": 28.1,
+    "quartiles": [
+     -26.1,
+     11.4
+    ],
+    "runs_above_control": 43,
+    "real_mean": -5.7,
+    "null_mean": 0.6,
+    "signs_read_mean": 7.0,
+    "options_per_sign": 0.35,
+    "signs_with_options": 20,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 142
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": 78.2,
+    "median": 74.9,
+    "sd": 40.2,
+    "quartiles": [
+     50.1,
+     94.9
+    ],
+    "runs_above_control": 99,
+    "real_mean": 78.0,
+    "null_mean": -0.2,
+    "signs_read_mean": 6.0,
+    "options_per_sign": 0.36,
+    "signs_with_options": 21,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 142
+   },
+   "main": {
+    "runs": 100,
+    "mean": 112.7,
+    "median": 110.5,
+    "sd": 54.4,
+    "quartiles": [
+     80.8,
+     139.1
+    ],
+    "runs_above_control": 99,
+    "real_mean": 112.3,
+    "null_mean": -0.3,
+    "signs_read_mean": 7.1,
+    "options_per_sign": 0.36,
+    "signs_with_options": 21,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 142
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 19.6,
+    "median": 4.7,
+    "sd": 73.3,
+    "quartiles": [
+     -20.7,
+     35.0
+    ],
+    "runs_above_control": 110,
+    "real_mean": 21.2,
+    "null_mean": 1.5,
+    "signs_read_mean": 6.2,
+    "options_per_sign": 0.36,
+    "signs_with_options": 21,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 142
+   },
+   "readings_chosen": {
+    "100": {
+     "lu": 84
+    },
+    "235": {
+     "ur": 97
+    },
+    "400": {
+     "ju": 100
+    },
+    "460": {
+     "du": 10,
+     "hursaṅ": 60
+    },
+    "575": {
+     "barag": 47
+    },
+    "740": {
+     "dug": 100
+    },
+    "760": {
+     "si": 21
+    },
+    "820": {
+     "utu": 30
+    },
+    "142": {
+     "lu": 12
+    },
+    "503": {
+     "du": 64
+    },
+    "790": {
+     "igi": 33
+    },
+    "140": {
+     "ama": 36
+    },
+    "840": {
+     "igi": 8
+    },
+    "742": {
+     "si": 7
+    },
+    "741": {
+     "si": 3
+    },
+    "832": {
+     "igi": 1
+    }
+   },
+   "readings_chosen_for_jar_sign": {
+    "dug": 100
+   },
+   "one_sign_left_unread_rounds_0_to_9": {
+    "mean_with_every_sign": 105.3,
+    "largest_falls": [
+     {
+      "sign": "740",
+      "mean_without_it": -16.2,
+      "change": -121.5,
+      "rounds_above_control_of_10": 2,
+      "readings_chosen_for_it": {
+       "dug": 100
+      }
+     },
+     {
+      "sign": "100",
+      "mean_without_it": 79.9,
+      "change": -25.4,
+      "rounds_above_control_of_10": 9,
+      "readings_chosen_for_it": {
+       "lu": 84
+      }
+     },
+     {
+      "sign": "233",
+      "mean_without_it": 85.5,
+      "change": -19.8,
+      "rounds_above_control_of_10": 9,
+      "readings_chosen_for_it": {}
+     },
+     {
+      "sign": "920",
+      "mean_without_it": 86.6,
+      "change": -18.7,
+      "rounds_above_control_of_10": 10,
+      "readings_chosen_for_it": {}
+     },
+     {
+      "sign": "590",
+      "mean_without_it": 87.9,
+      "change": -17.5,
+      "rounds_above_control_of_10": 9,
+      "readings_chosen_for_it": {}
+     }
+    ]
+   }
+  },
+  "hawaiian": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -19.8,
+    "median": -18.0,
+    "sd": 71.3,
+    "quartiles": [
+     -71.5,
+     31.5
+    ],
+    "runs_above_control": 42,
+    "real_mean": -21.4,
+    "null_mean": -1.6,
+    "signs_read_mean": 23.1,
+    "options_per_sign": 1.85,
+    "signs_with_options": 55,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 113
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -16.9,
+    "median": -14.1,
+    "sd": 98.7,
+    "quartiles": [
+     -85.2,
+     29.7
+    ],
+    "runs_above_control": 46,
+    "real_mean": -20.4,
+    "null_mean": -3.5,
+    "signs_read_mean": 19.6,
+    "options_per_sign": 1.84,
+    "signs_with_options": 56,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 113
+   },
+   "main": {
+    "runs": 100,
+    "mean": -19.9,
+    "median": -17.5,
+    "sd": 140.5,
+    "quartiles": [
+     -99.2,
+     82.4
+    ],
+    "runs_above_control": 46,
+    "real_mean": -27.1,
+    "null_mean": -7.1,
+    "signs_read_mean": 22.5,
+    "options_per_sign": 1.84,
+    "signs_with_options": 56,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 113
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 5.8,
+    "median": -3.8,
+    "sd": 143.3,
+    "quartiles": [
+     -73.0,
+     88.4
+    ],
+    "runs_above_control": 97,
+    "real_mean": -1.2,
+    "null_mean": -7.0,
+    "signs_read_mean": 23.1,
+    "options_per_sign": 1.84,
+    "signs_with_options": 56,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 113
+   },
+   "readings_chosen": {
+    "002": {
+     "lua": 9,
+     "kaa": 57,
+     "loa": 34
+    },
+    "060": {
+     "ao": 41,
+     "luu": 49,
+     "kaa": 8,
+     "kaha": 1
+    },
+    "090": {
+     "kini": 72,
+     "kanaka": 27
+    },
+    "100": {
+     "kāne": 77
+    },
+    "140": {
+     "vai": 78,
+     "vahine": 5
+    },
+    "350": {
+     "molo": 79,
+     "lā": 1,
+     "lāau": 1
+    },
+    "368": {
+     "kea": 18,
+     "kiha": 34,
+     "puu": 12
+    },
+    "390": {
+     "lā": 26,
+     "mano": 35,
+     "lāau": 33,
+     "manu": 4,
+     "kumu": 2
+    },
+    "405": {
+     "lāau": 26,
+     "lā": 1,
+     "kumu": 2
+    },
+    "415": {
+     "mauna": 40,
+     "manu": 23,
+     "mano": 4
+    },
+    "455": {
+     "ahi": 52
+    },
+    "503": {
+     "puu": 36,
+     "ahu": 5
+    },
+    "520": {
+     "puaa": 79
+    },
+    "575": {
+     "koa": 28,
+     "kū": 54,
+     "kua": 3,
+     "hale": 1
+    },
+    "585": {
+     "kū": 11,
+     "hala": 7,
+     "hale": 3
+    },
+    "617": {
+     "paa": 79,
+     "pā": 3
+    },
+    "740": {
+     "au": 74
+    },
+    "790": {
+     "lau": 8,
+     "maka": 23,
+     "hoa": 4
+    },
+    "798": {
+     "papa": 87
+    },
+    "803": {
+     "kumu": 69,
+     "lāau": 4,
+     "lā": 6,
+     "lau": 5
+    },
+    "817": {
+     "hoa": 38,
+     "lau": 9
+    },
+    "061": {
+     "mauna": 51,
+     "mano": 5,
+     "manu": 3
+    },
+    "255": {
+     "hale": 13,
+     "moo": 20,
+     "hala": 1
+    },
+    "400": {
+     "kaha": 28
+    },
+    "595": {
+     "kea": 51,
+     "hina": 16,
+     "kiha": 3
+    },
+    "820": {
+     "hōkū": 70,
+     "hoku": 23,
+     "lā": 1,
+     "lāau": 2
+    },
+    "861": {
+     "lau": 40
+    },
+    "900": {
+     "pio": 37
+    },
+    "142": {
+     "kāne": 7,
+     "lāau": 6
+    },
+    "407": {
+     "lāau": 15,
+     "lā": 10,
+     "kumu": 2
+    },
+    "460": {
+     "mauna": 7,
+     "puu": 6
+    },
+    "590": {
+     "puu": 40,
+     "kiha": 32
+    },
+    "220": {
+     "hala": 48
+    },
+    "231": {
+     "kaha": 13,
+     "kaa": 5
+    },
+    "233": {
+     "kaa": 4,
+     "kaha": 17
+    },
+    "388": {
+     "hoa": 3
+    },
+    "920": {
+     "lau": 4
+    },
+    "832": {
+     "hoa": 3
+    },
+    "226": {
+     "hina": 4
+    },
+    "416": {
+     "papa": 5,
+     "kū": 20
+    },
+    "705": {
+     "lā": 33
+    },
+    "904": {
+     "pio": 9
+    },
+    "236": {
+     "hale": 17,
+     "hala": 1
+    },
+    "615": {
+     "pā": 9,
+     "paa": 1
+    },
+    "840": {
+     "hoa": 14,
+     "lau": 9,
+     "maka": 2
+    },
+    "151": {
+     "hale": 9,
+     "hala": 1
+    },
+    "806": {
+     "hoa": 9,
+     "lau": 3
+    },
+    "070": {
+     "puaa": 4
+    },
+    "527": {
+     "hina": 7
+    },
+    "923": {
+     "pio": 6
+    },
+    "760": {
+     "lā": 7,
+     "lāau": 10
+    },
+    "156": {
+     "hale": 1
+    }
+   },
+   "readings_chosen_for_jar_sign": {
+    "au": 74
+   }
+  },
+  "akkadian_preprint_respelled": {
+   "jar sign left unread": {
+    "runs": 100,
+    "mean": -26.5,
+    "median": -24.3,
+    "sd": 23.8,
+    "quartiles": [
+     -44.1,
+     -6.3
+    ],
+    "runs_above_control": 13,
+    "real_mean": -23.9,
+    "null_mean": 2.6,
+    "signs_read_mean": 4.9,
+    "options_per_sign": 0.28,
+    "signs_with_options": 16,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "labels flattened": {
+    "runs": 100,
+    "mean": -2.5,
+    "median": -3.5,
+    "sd": 14.4,
+    "quartiles": [
+     -11.2,
+     7.9
+    ],
+    "runs_above_control": 44,
+    "real_mean": -2.9,
+    "null_mean": -0.5,
+    "signs_read_mean": 4.7,
+    "options_per_sign": 0.28,
+    "signs_with_options": 16,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "main": {
+    "runs": 100,
+    "mean": -32.9,
+    "median": -34.1,
+    "sd": 28.8,
+    "quartiles": [
+     -55.5,
+     -12.7
+    ],
+    "runs_above_control": 15,
+    "real_mean": -30.8,
+    "null_mean": 2.1,
+    "signs_read_mean": 5.0,
+    "options_per_sign": 0.28,
+    "signs_with_options": 16,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "pictures shuffled": {
+    "runs": 200,
+    "mean": 10.7,
+    "median": -2.5,
+    "sd": 68.0,
+    "quartiles": [
+     -19.1,
+     29.6
+    ],
+    "runs_above_control": 97,
+    "real_mean": 9.1,
+    "null_mean": -1.6,
+    "signs_read_mean": 4.0,
+    "options_per_sign": 0.28,
+    "signs_with_options": 16,
+    "names_per_run": 600,
+    "name_parts_in_two_or_more_names": 168
+   },
+   "whole list, rounds 0 to 9": {
+    "runs": 10,
+    "mean": 11.8,
+    "median": 16.3,
+    "sd": 26.0,
+    "quartiles": [
+     -6.0,
+     29.8
+    ],
+    "runs_above_control": 7,
+    "real_mean": -6.4,
+    "null_mean": -18.2,
+    "signs_read_mean": 7.3,
+    "options_per_sign": 0.45,
+    "signs_with_options": 26,
+    "names_per_run": 1207,
+    "name_parts_in_two_or_more_names": 258
+   },
+   "readings_chosen": {
+    "125": {
+     "pirhu": 44
+    },
+    "415": {
+     "nūru": 76
+    },
+    "820": {
+     "śamśu": 47
+    },
+    "832": {
+     "īnu": 7,
+     "jēru": 40
+    },
+    "100": {
+     "avīlu": 17,
+     "rēṣu": 7
+    },
+    "140": {
+     "ummu": 36
+    },
+    "142": {
+     "avīlu": 73
+    },
+    "817": {
+     "jēru": 12
+    },
+    "460": {
+     "śadū": 19
+    },
+    "090": {
+     "avīlu": 5
+    },
+    "407": {
+     "pirhu": 12
+    },
+    "220": {
+     "nunu": 17
+    },
+    "236": {
+     "bītu": 27
+    },
+    "440": {
+     "baba": 3
+    },
+    "840": {
+     "īnu": 18,
+     "jēru": 4
+    },
+    "790": {
+     "jēru": 16,
+     "īnu": 5
+    },
+    "416": {
+     "nūru": 5
+    },
+    "240": {
+     "nunu": 3
+    },
+    "892": {
+     "pirhu": 4
+    }
+   },
+   "readings_chosen_for_jar_sign": {}
+  }
+ },
+ "settings": {
+  "rounds": 100,
+  "names_per_round_for_preprint_lists": 600,
+  "pass_rule": "above its scrambled control in at least 80 of 100 rounds, and a mean of at least a quarter of the preprint's Tamil list's mean",
+  "shuffled_pictures": "20 shuffles, each over rounds 0 to 9"
+ }
+}

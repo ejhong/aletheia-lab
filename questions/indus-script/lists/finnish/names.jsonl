@@ -1,0 +1,603 @@
+{"name": "Väinämöinen", "type": "person", "morphemes": ["väinä"], "gloss": "broad slow river", "source": "Kalevala"}
+{"name": "Ilmarinen", "type": "person", "morphemes": ["ilma"], "gloss": "air", "source": "Kalevala"}
+{"name": "Lemminkäinen", "type": "person", "morphemes": ["lemminkäinen"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kaukomieli", "type": "person", "morphemes": ["kauko", "mieli"], "gloss": "far + mind", "source": "Kalevala"}
+{"name": "Kauko", "type": "person", "morphemes": ["kauko"], "gloss": "far", "source": "Kalevala"}
+{"name": "Ahti", "type": "person", "morphemes": ["ahti"], "gloss": "name", "source": "Kalevala"}
+{"name": "Saarelainen", "type": "person", "morphemes": ["saari"], "gloss": "island", "source": "Kalevala"}
+{"name": "Seppo", "type": "person", "morphemes": ["seppä"], "gloss": "smith", "source": "Kalevala"}
+{"name": "Joukahainen", "type": "person", "morphemes": ["joukahainen"], "gloss": "name", "source": "Kalevala"}
+{"name": "Aino", "type": "person", "morphemes": ["aino"], "gloss": "only one", "source": "Kalevala"}
+{"name": "Louhi", "type": "person", "morphemes": ["louhi"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kullervo", "type": "person", "morphemes": ["kullervo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kalervo", "type": "person", "morphemes": ["kalervo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Untamo", "type": "person", "morphemes": ["untamo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Unto", "type": "person", "morphemes": ["unto"], "gloss": "name", "source": "Kalevala"}
+{"name": "Marjatta", "type": "person", "morphemes": ["marjatta"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kyllikki", "type": "person", "morphemes": ["kyllä"], "gloss": "plenty", "source": "Kalevala"}
+{"name": "Annikki", "type": "person", "morphemes": ["annikki"], "gloss": "name", "source": "Kalevala"}
+{"name": "Ainikki", "type": "person", "morphemes": ["ainikki"], "gloss": "name", "source": "Kalevala"}
+{"name": "Tiera", "type": "person", "morphemes": ["tiera"], "gloss": "name", "source": "Kalevala"}
+{"name": "Vipunen", "type": "person", "morphemes": ["vipunen"], "gloss": "name", "source": "Kalevala"}
+{"name": "Osmo", "type": "person", "morphemes": ["osmo"], "gloss": "young man", "source": "Kalevala"}
+{"name": "Kaleva", "type": "person", "morphemes": ["kaleva"], "gloss": "name", "source": "Kalevala"}
+{"name": "Märkähattu", "type": "person", "morphemes": ["märkä", "hattu"], "gloss": "wet + hat", "source": "Kalevala"}
+{"name": "Piltti", "type": "person", "morphemes": ["piltti"], "gloss": "name", "source": "Kalevala"}
+{"name": "Ruotus", "type": "person", "morphemes": ["ruotus"], "gloss": "name", "source": "Kalevala"}
+{"name": "Virokannas", "type": "person", "morphemes": ["virokannas"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kauppi", "type": "person", "morphemes": ["kauppi"], "gloss": "name", "source": "Kalevala"}
+{"name": "Lyylikki", "type": "person", "morphemes": ["lyylikki"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kapo", "type": "person", "morphemes": ["kapo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Pohjolainen", "type": "person", "morphemes": ["pohja"], "gloss": "north, bottom", "source": "Kalevala"}
+{"name": "Tuuri", "type": "person", "morphemes": ["tuuri"], "gloss": "name", "source": "Kalevala"}
+{"name": "Palvoinen", "type": "person", "morphemes": ["palvoinen"], "gloss": "name", "source": "Kalevala"}
+{"name": "Lokka", "type": "person", "morphemes": ["lokka"], "gloss": "name", "source": "Kalevala"}
+{"name": "Ilpotar", "type": "person", "morphemes": ["ilpotar"], "gloss": "name", "source": "Kalevala"}
+{"name": "Remunen", "type": "person", "morphemes": ["remunen"], "gloss": "name", "source": "Kalevala"}
+{"name": "Osmotar", "type": "person", "morphemes": ["osmo"], "gloss": "young man", "source": "Kalevala"}
+{"name": "Kalevatar", "type": "person", "morphemes": ["kaleva"], "gloss": "name", "source": "Kalevala"}
+{"name": "Tuiretuinen", "type": "person", "morphemes": ["tuiretuinen"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Keiretyinen", "type": "person", "morphemes": ["keiretyinen"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Juuttahainen", "type": "person", "morphemes": ["juuttahainen"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kojo", "type": "person", "morphemes": ["kojo"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Lalli", "type": "person", "morphemes": ["lalli"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kauro", "type": "person", "morphemes": ["kauro"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kommi", "type": "person", "morphemes": ["kommi"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kolkko", "type": "person", "morphemes": ["kolkko"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Tolvanen", "type": "person", "morphemes": ["tolva"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Joukonen", "type": "person", "morphemes": ["jouko"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Nerkko", "type": "person", "morphemes": ["nerkko"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kaitaparta", "type": "person", "morphemes": ["kaita", "parta"], "gloss": "narrow + beard", "source": "Kanteletar"}
+{"name": "Paalikkainen", "type": "person", "morphemes": ["paalikkainen"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Suometar", "type": "person", "morphemes": ["suomi"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Sorsatar", "type": "person", "morphemes": ["sorsa"], "gloss": "duck", "source": "Kanteletar"}
+{"name": "Riio", "type": "person", "morphemes": ["riio"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Konnu", "type": "person", "morphemes": ["konnu"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kuura", "type": "person", "morphemes": ["kuura"], "gloss": "name", "source": "Kalevala"}
+{"name": "Aikamieli", "type": "person", "morphemes": ["aika", "mieli"], "gloss": "time + mind", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Aikio", "type": "person", "morphemes": ["aikio"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ano", "type": "person", "morphemes": ["ano"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Arijoutsi", "type": "person", "morphemes": ["ari", "joutsi"], "gloss": "name + bow", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Arpia", "type": "person", "morphemes": ["arpa"], "gloss": "lot (divination)", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Auvo", "type": "person", "morphemes": ["auvo"], "gloss": "bliss", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Himottu", "type": "person", "morphemes": ["himo"], "gloss": "desire", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Hirvi", "type": "person", "morphemes": ["hirvi"], "gloss": "elk", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Hyvätty", "type": "person", "morphemes": ["hyvä"], "gloss": "good", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ihalempi", "type": "person", "morphemes": ["iha", "lempi"], "gloss": "lovely + love", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ihamuoto", "type": "person", "morphemes": ["iha", "muoto"], "gloss": "lovely + form", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ikitiera", "type": "person", "morphemes": ["iki", "tiera"], "gloss": "ever + name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ikopäivä", "type": "person", "morphemes": ["ikä", "päivä"], "gloss": "lifetime + sun, day", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ikäheimo", "type": "person", "morphemes": ["ikä", "heimo"], "gloss": "lifetime + kin", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ikävalko", "type": "person", "morphemes": ["ikä", "valko"], "gloss": "lifetime + white", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ilakka", "type": "person", "morphemes": ["ilakka"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ilma", "type": "person", "morphemes": ["ilma"], "gloss": "air", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ilmatoivia", "type": "person", "morphemes": ["ilma", "toivo"], "gloss": "air + hope", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Jurva", "type": "person", "morphemes": ["jurva"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kaivattu", "type": "person", "morphemes": ["kaivata"], "gloss": "long for", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kaipia", "type": "person", "morphemes": ["kaipia"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kaukovalta", "type": "person", "morphemes": ["kauko", "valta"], "gloss": "far + power", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Keiho", "type": "person", "morphemes": ["keiho"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kekko", "type": "person", "morphemes": ["kekko"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kokko", "type": "person", "morphemes": ["kokko"], "gloss": "eagle", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kontio", "type": "person", "morphemes": ["kontio"], "gloss": "bear", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kostia", "type": "person", "morphemes": ["kostia"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kotarikko", "type": "person", "morphemes": ["kotarikko"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kultamies", "type": "person", "morphemes": ["kulta", "mies"], "gloss": "gold + man", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kultimo", "type": "person", "morphemes": ["kulta"], "gloss": "gold", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kukurtaja", "type": "person", "morphemes": ["kukurtaja"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Kylli", "type": "person", "morphemes": ["kyllä"], "gloss": "plenty", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Leino", "type": "person", "morphemes": ["leino"], "gloss": "mournful", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Lemmäs", "type": "person", "morphemes": ["lempi"], "gloss": "love", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Lempiä", "type": "person", "morphemes": ["lempi"], "gloss": "love", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Maanavilja", "type": "person", "morphemes": ["maanavilja"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Meripäivä", "type": "person", "morphemes": ["meri", "päivä"], "gloss": "sea + sun, day", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Mielo", "type": "person", "morphemes": ["mieli"], "gloss": "mind", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Montaja", "type": "person", "morphemes": ["montaja"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Nousia", "type": "person", "morphemes": ["nousta"], "gloss": "rise", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Osma", "type": "person", "morphemes": ["osma"], "gloss": "wolverine", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Päivälapsi", "type": "person", "morphemes": ["päivä", "lapsi"], "gloss": "sun, day + child", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Päiviä", "type": "person", "morphemes": ["päivä"], "gloss": "sun, day", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Rautia", "type": "person", "morphemes": ["rauta"], "gloss": "iron", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Sarijoutsi", "type": "person", "morphemes": ["sari", "joutsi"], "gloss": "name + bow", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Sotijalo", "type": "person", "morphemes": ["sota", "jalo"], "gloss": "war + noble", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Talvikki", "type": "person", "morphemes": ["talvi"], "gloss": "winter", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Tapatora", "type": "person", "morphemes": ["tapatora"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Tapo", "type": "person", "morphemes": ["tapo"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Toiva", "type": "person", "morphemes": ["toivo"], "gloss": "hope", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Toivelempi", "type": "person", "morphemes": ["toivo", "lempi"], "gloss": "hope + love", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Toivikki", "type": "person", "morphemes": ["toivo"], "gloss": "hope", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Toivottu", "type": "person", "morphemes": ["toivo"], "gloss": "hope", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Torio", "type": "person", "morphemes": ["torio"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Tornia", "type": "person", "morphemes": ["tornia"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Unaja", "type": "person", "morphemes": ["unaja"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Unti", "type": "person", "morphemes": ["unto"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Utujoutsi", "type": "person", "morphemes": ["utu", "joutsi"], "gloss": "mist + bow", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Valta", "type": "person", "morphemes": ["valta"], "gloss": "power", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Valtari", "type": "person", "morphemes": ["valta"], "gloss": "power", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Vihas", "type": "person", "morphemes": ["viha"], "gloss": "anger", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Vihavaino", "type": "person", "morphemes": ["viha", "vaino"], "gloss": "anger + feud", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Vilja", "type": "person", "morphemes": ["vilja"], "gloss": "grain, plenty", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Viljakka", "type": "person", "morphemes": ["vilja"], "gloss": "grain, plenty", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Viljari", "type": "person", "morphemes": ["vilja"], "gloss": "grain, plenty", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Viti", "type": "person", "morphemes": ["viti"], "gloss": "name", "source": "medieval records (Vilkuna 1976)"}
+{"name": "Ampuja", "type": "person", "morphemes": ["ampua"], "gloss": "shoot", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Hellikki", "type": "person", "morphemes": ["hellä"], "gloss": "tender", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Hopea", "type": "person", "morphemes": ["hopea"], "gloss": "silver", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Janakka", "type": "person", "morphemes": ["janakka"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Joutsi", "type": "person", "morphemes": ["joutsi"], "gloss": "bow", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Joutsimies", "type": "person", "morphemes": ["joutsi", "mies"], "gloss": "bow + man", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Kainu", "type": "person", "morphemes": ["kainu"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Kaivas", "type": "person", "morphemes": ["kaivas"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Kalamies", "type": "person", "morphemes": ["kala", "mies"], "gloss": "fish + man", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Kalpio", "type": "person", "morphemes": ["kalpio"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Koira", "type": "person", "morphemes": ["koira"], "gloss": "dog", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Koveri", "type": "person", "morphemes": ["kova"], "gloss": "hard", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Kulta", "type": "person", "morphemes": ["kulta"], "gloss": "gold", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Kupias", "type": "person", "morphemes": ["kupias"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Kurikka", "type": "person", "morphemes": ["kurikka"], "gloss": "club, cudgel", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Kuutamo", "type": "person", "morphemes": ["kuu"], "gloss": "moon", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Laulaja", "type": "person", "morphemes": ["laulaa"], "gloss": "sing", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Lemmikki", "type": "person", "morphemes": ["lempi"], "gloss": "love", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Mieho", "type": "person", "morphemes": ["mies"], "gloss": "man", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Miela", "type": "person", "morphemes": ["mieli"], "gloss": "mind", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Mielipäivä", "type": "person", "morphemes": ["mieli", "päivä"], "gloss": "mind + sun, day", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Miekka", "type": "person", "morphemes": ["miekka"], "gloss": "sword", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Mietti", "type": "person", "morphemes": ["mietti"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Neuvo", "type": "person", "morphemes": ["neuvo"], "gloss": "counsel", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Ora", "type": "person", "morphemes": ["ora"], "gloss": "awl", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Otra", "type": "person", "morphemes": ["otra"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Paasia", "type": "person", "morphemes": ["paasia"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Paaso", "type": "person", "morphemes": ["paaso"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Puukko", "type": "person", "morphemes": ["puukko"], "gloss": "knife", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Päivö", "type": "person", "morphemes": ["päivä"], "gloss": "sun, day", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Rahikka", "type": "person", "morphemes": ["rahikka"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Raita", "type": "person", "morphemes": ["raita"], "gloss": "goat willow", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Rasantaja", "type": "person", "morphemes": ["rasantaja"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Repo", "type": "person", "morphemes": ["repo"], "gloss": "fox", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Salme", "type": "person", "morphemes": ["salme"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Susi", "type": "person", "morphemes": ["susi"], "gloss": "wolf", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Säisä", "type": "person", "morphemes": ["säisä"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Tammi", "type": "person", "morphemes": ["tammi"], "gloss": "oak", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Tapavaino", "type": "person", "morphemes": ["tapavaino"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Tietävä", "type": "person", "morphemes": ["tietää"], "gloss": "know", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Toivas", "type": "person", "morphemes": ["toivo"], "gloss": "hope", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Toivettu", "type": "person", "morphemes": ["toivo"], "gloss": "hope", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Toivio", "type": "person", "morphemes": ["toivo"], "gloss": "hope", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Tulo", "type": "person", "morphemes": ["tuli"], "gloss": "fire", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Tuntia", "type": "person", "morphemes": ["tuntea"], "gloss": "know, feel", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Tuomikki", "type": "person", "morphemes": ["tuomi"], "gloss": "bird cherry", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Tuuli", "type": "person", "morphemes": ["tuuli"], "gloss": "wind", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Uro", "type": "person", "morphemes": ["uro"], "gloss": "hero", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Vaania", "type": "person", "morphemes": ["vaania"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Vaino", "type": "person", "morphemes": ["vaino"], "gloss": "feud", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Vaito", "type": "person", "morphemes": ["vaito"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Vartia", "type": "person", "morphemes": ["vartia"], "gloss": "guard", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Vasara", "type": "person", "morphemes": ["vasara"], "gloss": "hammer", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Venemies", "type": "person", "morphemes": ["vene", "mies"], "gloss": "boat + man", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Vesi", "type": "person", "morphemes": ["vesi"], "gloss": "water", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Vesivalo", "type": "person", "morphemes": ["vesi", "valo"], "gloss": "water + light", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Viljo", "type": "person", "morphemes": ["viljo"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Väinä", "type": "person", "morphemes": ["väinä"], "gloss": "broad slow river", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Äiniö", "type": "person", "morphemes": ["äiniö"], "gloss": "name", "source": "medieval records (Maliniemi 1933)"}
+{"name": "Asikka", "type": "person", "morphemes": ["asikka"], "gloss": "name", "source": "Sääksmäki letter 1340"}
+{"name": "Kallas", "type": "person", "morphemes": ["kallas"], "gloss": "name", "source": "Sääksmäki letter 1340"}
+{"name": "Kuningas", "type": "person", "morphemes": ["kuningas"], "gloss": "king", "source": "Sääksmäki letter 1340"}
+{"name": "Laso", "type": "person", "morphemes": ["laso"], "gloss": "name", "source": "Sääksmäki letter 1340"}
+{"name": "Meurakas", "type": "person", "morphemes": ["meurakas"], "gloss": "name", "source": "Sääksmäki letter 1340"}
+{"name": "Mielenpito", "type": "person", "morphemes": ["mieli", "pito"], "gloss": "mind + keeping", "source": "Sääksmäki letter 1340"}
+{"name": "Mielitty", "type": "person", "morphemes": ["mieli"], "gloss": "mind", "source": "Sääksmäki letter 1340"}
+{"name": "Miemo", "type": "person", "morphemes": ["miemo"], "gloss": "name", "source": "Sääksmäki letter 1340"}
+{"name": "Satatieto", "type": "person", "morphemes": ["sata", "tieto"], "gloss": "hundred + knowledge", "source": "Sääksmäki letter 1340"}
+{"name": "Hyvälempi", "type": "person", "morphemes": ["hyvä", "lempi"], "gloss": "good + love", "source": "nobility letters 14th c."}
+{"name": "Mielivalta", "type": "person", "morphemes": ["mieli", "valta"], "gloss": "mind + power", "source": "nobility letters 14th c."}
+{"name": "Kuuluva", "type": "person", "morphemes": ["kuulua"], "gloss": "be heard", "source": "old personal names (Kiviniemi 1982)"}
+{"name": "Anottu", "type": "person", "morphemes": ["anoa"], "gloss": "ask for", "source": "old personal names (Kiviniemi 1982)"}
+{"name": "Ihamieli", "type": "person", "morphemes": ["iha", "mieli"], "gloss": "lovely + mind", "source": "old personal names (Kiviniemi 1982)"}
+{"name": "Lempivalta", "type": "person", "morphemes": ["lempi", "valta"], "gloss": "love + power", "source": "old personal names (Kiviniemi 1982)"}
+{"name": "Valtalempi", "type": "person", "morphemes": ["valta", "lempi"], "gloss": "power + love", "source": "old personal names (Kiviniemi 1982)"}
+{"name": "Hyväri", "type": "person", "morphemes": ["hyvä"], "gloss": "good", "source": "old personal names (Kiviniemi 1982)"}
+{"name": "Mielikkä", "type": "person", "morphemes": ["mieli"], "gloss": "mind", "source": "old personal names (Kiviniemi 1982)"}
+{"name": "Satajalka", "type": "person", "morphemes": ["sata", "jalka"], "gloss": "hundred + foot", "source": "old bynames (Kiviniemi 1982)"}
+{"name": "Rautakopra", "type": "person", "morphemes": ["rauta", "kopra"], "gloss": "iron + paw", "source": "old bynames (Kiviniemi 1982)"}
+{"name": "Kirjoparta", "type": "person", "morphemes": ["kirjo", "parta"], "gloss": "many-coloured + beard", "source": "old bynames (Kiviniemi 1982)"}
+{"name": "Tervahartia", "type": "person", "morphemes": ["terva", "hartia"], "gloss": "tar + shoulder", "source": "old bynames (Kiviniemi 1982)"}
+{"name": "Kaukolempi", "type": "person", "morphemes": ["kauko", "lempi"], "gloss": "far + love", "source": "medieval records (Raunamaa 2021)"}
+{"name": "Lemmitty", "type": "person", "morphemes": ["lempi"], "gloss": "love", "source": "medieval records (Raunamaa 2021)"}
+{"name": "Toivo", "type": "person", "morphemes": ["toivo"], "gloss": "hope", "source": "medieval records (Raunamaa 2021)"}
+{"name": "Lempoi", "type": "person", "morphemes": ["lempi"], "gloss": "love", "source": "medieval records (Raunamaa 2021)"}
+{"name": "Ihakka", "type": "person", "morphemes": ["iha"], "gloss": "lovely", "source": "medieval records (Raunamaa 2021)"}
+{"name": "Iha", "type": "person", "morphemes": ["iha"], "gloss": "lovely", "source": "medieval records (Stoebke 1964, via Raunamaa)"}
+{"name": "Mieli", "type": "person", "morphemes": ["mieli"], "gloss": "mind", "source": "medieval records (Stoebke 1964, via Raunamaa)"}
+{"name": "Lempi", "type": "person", "morphemes": ["lempi"], "gloss": "love", "source": "medieval records (Raunamaa 2021)"}
+{"name": "Viljamieli", "type": "person", "morphemes": ["vilja", "mieli"], "gloss": "grain, plenty + mind", "source": "medieval records (Stoebke 1964, via Raunamaa)"}
+{"name": "Mielivilja", "type": "person", "morphemes": ["mieli", "vilja"], "gloss": "mind + grain, plenty", "source": "medieval records (Stoebke 1964, via Raunamaa)"}
+{"name": "Uska", "type": "person", "morphemes": ["uska"], "gloss": "name", "source": "medieval records (Raunamaa 2021)"}
+{"name": "Vihto", "type": "person", "morphemes": ["vihto"], "gloss": "name", "source": "medieval records (Raunamaa 2021)"}
+{"name": "Vihattu", "type": "person", "morphemes": ["viha"], "gloss": "anger", "source": "medieval records (Raunamaa 2019)"}
+{"name": "Ihari", "type": "person", "morphemes": ["iha"], "gloss": "lovely", "source": "medieval records (Rintala 2008, via Raunamaa 2019)"}
+{"name": "Pohjola", "type": "place", "morphemes": ["pohja"], "gloss": "north, bottom", "source": "Kalevala"}
+{"name": "Sariola", "type": "place", "morphemes": ["sariola"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kalevala", "type": "place", "morphemes": ["kaleva"], "gloss": "name", "source": "Kalevala"}
+{"name": "Väinölä", "type": "place", "morphemes": ["väinä"], "gloss": "broad slow river", "source": "Kalevala"}
+{"name": "Tuonela", "type": "place", "morphemes": ["tuoni"], "gloss": "death", "source": "Kalevala"}
+{"name": "Manala", "type": "place", "morphemes": ["manala"], "gloss": "underworld", "source": "Kalevala"}
+{"name": "Metsola", "type": "place", "morphemes": ["metsä"], "gloss": "forest", "source": "Kalevala"}
+{"name": "Tapiola", "type": "place", "morphemes": ["tapio"], "gloss": "name", "source": "Kalevala"}
+{"name": "Ahtola", "type": "place", "morphemes": ["ahti"], "gloss": "name", "source": "Kalevala"}
+{"name": "Untamola", "type": "place", "morphemes": ["untamo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Osmola", "type": "place", "morphemes": ["osmo"], "gloss": "young man", "source": "Kalevala"}
+{"name": "Pimentola", "type": "place", "morphemes": ["pimeä"], "gloss": "dark", "source": "Kalevala"}
+{"name": "Hiitola", "type": "place", "morphemes": ["hiisi"], "gloss": "sacred grove", "source": "Kalevala"}
+{"name": "Joukola", "type": "place", "morphemes": ["jouko"], "gloss": "name", "source": "Kalevala"}
+{"name": "Luotola", "type": "place", "morphemes": ["luotola"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kuutola", "type": "place", "morphemes": ["kuu"], "gloss": "moon", "source": "Kalevala"}
+{"name": "Tähtelä", "type": "place", "morphemes": ["tähti"], "gloss": "star", "source": "Kalevala"}
+{"name": "Suvantola", "type": "place", "morphemes": ["suvanto"], "gloss": "still water", "source": "Kalevala"}
+{"name": "Untola", "type": "place", "morphemes": ["unto"], "gloss": "name", "source": "Kalevala"}
+{"name": "Suomela", "type": "place", "morphemes": ["suomi"], "gloss": "name", "source": "Kalevala"}
+{"name": "Lemmenlahti", "type": "place", "morphemes": ["lempi", "lahti"], "gloss": "love + bay", "source": "Kalevala"}
+{"name": "Kaukoniemi", "type": "place", "morphemes": ["kauko", "niemi"], "gloss": "far + cape", "source": "Kalevala"}
+{"name": "Simasalo", "type": "place", "morphemes": ["sima", "salo"], "gloss": "mead + wooded island", "source": "Kalevala"}
+{"name": "Nälkäniemi", "type": "place", "morphemes": ["nälkä", "niemi"], "gloss": "hunger + cape", "source": "Kalevala"}
+{"name": "Suolasalmi", "type": "place", "morphemes": ["suola", "salmi"], "gloss": "salt + strait", "source": "Kalevala"}
+{"name": "Horna", "type": "place", "morphemes": ["horna"], "gloss": "abyss, hell", "source": "Kalevala"}
+{"name": "Saari", "type": "place", "morphemes": ["saari"], "gloss": "island", "source": "Kalevala"}
+{"name": "Suomi", "type": "place", "morphemes": ["suomi"], "gloss": "name", "source": "Kalevala"}
+{"name": "Karjala", "type": "place", "morphemes": ["karjala"], "gloss": "name", "source": "Kalevala"}
+{"name": "Häme", "type": "place", "morphemes": ["häme"], "gloss": "name", "source": "Kalevala"}
+{"name": "Savo", "type": "place", "morphemes": ["savo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Lappi", "type": "place", "morphemes": ["lappi"], "gloss": "name", "source": "Kalevala"}
+{"name": "Turja", "type": "place", "morphemes": ["turja"], "gloss": "name", "source": "Kalevala"}
+{"name": "Pohja", "type": "place", "morphemes": ["pohja"], "gloss": "north, bottom", "source": "Kalevala"}
+{"name": "Viro", "type": "place", "morphemes": ["viro"], "gloss": "name", "source": "Kalevala"}
+{"name": "Inkeri", "type": "place", "morphemes": ["inkeri"], "gloss": "name", "source": "Kalevala"}
+{"name": "Venäjä", "type": "place", "morphemes": ["venäjä"], "gloss": "name", "source": "Kalevala"}
+{"name": "Ruotsi", "type": "place", "morphemes": ["ruotsi"], "gloss": "name", "source": "Kalevala"}
+{"name": "Saksa", "type": "place", "morphemes": ["saksa"], "gloss": "name", "source": "Kalevala"}
+{"name": "Viena", "type": "place", "morphemes": ["viena"], "gloss": "name", "source": "Kalevala"}
+{"name": "Aunus", "type": "place", "morphemes": ["aunus"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kainuu", "type": "place", "morphemes": ["kainuu"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Satakunta", "type": "place", "morphemes": ["sata", "kunta"], "gloss": "hundred + community", "source": "Kanteletar"}
+{"name": "Uusimaa", "type": "place", "morphemes": ["uusi", "maa"], "gloss": "new + land", "source": "Kanteletar"}
+{"name": "Pohjanmaa", "type": "place", "morphemes": ["pohja", "maa"], "gloss": "north, bottom + land", "source": "Kanteletar"}
+{"name": "Päivölä", "type": "place", "morphemes": ["päivä"], "gloss": "sun, day", "source": "Kanteletar"}
+{"name": "Hymylä", "type": "place", "morphemes": ["hymy"], "gloss": "smile", "source": "Kanteletar"}
+{"name": "Kultala", "type": "place", "morphemes": ["kulta"], "gloss": "gold", "source": "Kanteletar"}
+{"name": "Neitola", "type": "place", "morphemes": ["neiti"], "gloss": "maiden", "source": "Kanteletar"}
+{"name": "Toivola", "type": "place", "morphemes": ["toivo"], "gloss": "hope", "source": "Kanteletar"}
+{"name": "Ilmala", "type": "place", "morphemes": ["ilma"], "gloss": "air", "source": "Kanteletar"}
+{"name": "Valtala", "type": "place", "morphemes": ["valta"], "gloss": "power", "source": "Kanteletar"}
+{"name": "Riikola", "type": "place", "morphemes": ["riikola"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Suurula", "type": "place", "morphemes": ["suuri"], "gloss": "big", "source": "Kanteletar"}
+{"name": "Päivilä", "type": "place", "morphemes": ["päivä"], "gloss": "sun, day", "source": "Kanteletar"}
+{"name": "Sarajala", "type": "place", "morphemes": ["saraja"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Ritvala", "type": "place", "morphemes": ["ritvala"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Laukko", "type": "place", "morphemes": ["laukko"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kangasniemi", "type": "place", "morphemes": ["kangas", "niemi"], "gloss": "heath + cape", "source": "Kanteletar"}
+{"name": "Kiikka", "type": "place", "morphemes": ["kiikka"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kotalahti", "type": "place", "morphemes": ["kota", "lahti"], "gloss": "hut + bay", "source": "Kanteletar"}
+{"name": "Niemelä", "type": "place", "morphemes": ["niemi"], "gloss": "cape", "source": "Kanteletar"}
+{"name": "Korpela", "type": "place", "morphemes": ["korpi"], "gloss": "wild forest", "source": "Kanteletar"}
+{"name": "Turku", "type": "place", "morphemes": ["turku"], "gloss": "market", "source": "Kanteletar"}
+{"name": "Kemi", "type": "place", "morphemes": ["kemi"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Tornio", "type": "place", "morphemes": ["tornio"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Oulu", "type": "place", "morphemes": ["oulu"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kuopio", "type": "place", "morphemes": ["kuopio"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kostamus", "type": "place", "morphemes": ["kostamus"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Tohmajärvi", "type": "place", "morphemes": ["tohma", "järvi"], "gloss": "name + lake", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Kitee", "type": "place", "morphemes": ["kitee"], "gloss": "name", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Sortavala", "type": "place", "morphemes": ["sortavala"], "gloss": "name", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Kurkijoki", "type": "place", "morphemes": ["kurki", "joki"], "gloss": "crane + river", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Vuokkiniemi", "type": "place", "morphemes": ["vuokki", "niemi"], "gloss": "name + cape", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Paanajärvi", "type": "place", "morphemes": ["paana", "järvi"], "gloss": "name + lake", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Repola", "type": "place", "morphemes": ["repo"], "gloss": "fox", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Lieksa", "type": "place", "morphemes": ["lieksa"], "gloss": "name", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Sotkamo", "type": "place", "morphemes": ["sotkamo"], "gloss": "name", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Halikko", "type": "place", "morphemes": ["halikko"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Kalanti", "type": "place", "morphemes": ["kalanti"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Kisko", "type": "place", "morphemes": ["kisko"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Koroinen", "type": "place", "morphemes": ["koroinen"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Laitila", "type": "place", "morphemes": ["laitila"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Lemu", "type": "place", "morphemes": ["lemu"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Lieto", "type": "place", "morphemes": ["lieto"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Masku", "type": "place", "morphemes": ["masku"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Mynämäki", "type": "place", "morphemes": ["mynä", "mäki"], "gloss": "name + hill", "source": "medieval parishes"}
+{"name": "Nousiainen", "type": "place", "morphemes": ["nousta"], "gloss": "rise", "source": "medieval parishes"}
+{"name": "Perniö", "type": "place", "morphemes": ["perniö"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Piikkiö", "type": "place", "morphemes": ["piikkiö"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Pöytyä", "type": "place", "morphemes": ["pöytyä"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Raisio", "type": "place", "morphemes": ["raisio"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Rusko", "type": "place", "morphemes": ["rusko"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Rymättylä", "type": "place", "morphemes": ["rymättylä"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Sauvo", "type": "place", "morphemes": ["sauvo"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Uskela", "type": "place", "morphemes": ["uskela"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Taivassalo", "type": "place", "morphemes": ["taivassalo"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Vehmaa", "type": "place", "morphemes": ["vehmaa"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Vehkalahti", "type": "place", "morphemes": ["vehka", "lahti"], "gloss": "calla + bay", "source": "medieval parishes"}
+{"name": "Virolahti", "type": "place", "morphemes": ["viro", "lahti"], "gloss": "name + bay", "source": "medieval parishes"}
+{"name": "Kyrö", "type": "place", "morphemes": ["kyrö"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Mustasaari", "type": "place", "morphemes": ["musta", "saari"], "gloss": "black + island", "source": "medieval parishes"}
+{"name": "Rauma", "type": "place", "morphemes": ["rauma"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Huittinen", "type": "place", "morphemes": ["huittinen"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Kokemäki", "type": "place", "morphemes": ["kokemäki"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Köyliö", "type": "place", "morphemes": ["köyliö"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Lempäälä", "type": "place", "morphemes": ["lempi"], "gloss": "love", "source": "medieval parishes"}
+{"name": "Loimaa", "type": "place", "morphemes": ["loimaa"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Messukylä", "type": "place", "morphemes": ["messu", "kylä"], "gloss": "mass + village", "source": "medieval parishes"}
+{"name": "Nokia", "type": "place", "morphemes": ["nokia"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Karkku", "type": "place", "morphemes": ["karkku"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Sastamala", "type": "place", "morphemes": ["sastamala"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Tyrvää", "type": "place", "morphemes": ["tyrvää"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Vesilahti", "type": "place", "morphemes": ["vesi", "lahti"], "gloss": "water + bay", "source": "medieval parishes"}
+{"name": "Savilahti", "type": "place", "morphemes": ["savi", "lahti"], "gloss": "clay + bay", "source": "medieval parishes"}
+{"name": "Akaa", "type": "place", "morphemes": ["akaa"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Hauho", "type": "place", "morphemes": ["hauho"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Hollola", "type": "place", "morphemes": ["hollola"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Hattula", "type": "place", "morphemes": ["hattula"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Janakkala", "type": "place", "morphemes": ["janakka"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Kalvola", "type": "place", "morphemes": ["kalvola"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Lammi", "type": "place", "morphemes": ["lampi"], "gloss": "pond", "source": "medieval parishes"}
+{"name": "Padasjoki", "type": "place", "morphemes": ["padas", "joki"], "gloss": "name + river", "source": "medieval parishes"}
+{"name": "Renko", "type": "place", "morphemes": ["renko"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Somero", "type": "place", "morphemes": ["somero"], "gloss": "gravel", "source": "medieval parishes"}
+{"name": "Pälkäne", "type": "place", "morphemes": ["pälkäne"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Sysmä", "type": "place", "morphemes": ["sysmä"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Sääksmäki", "type": "place", "morphemes": ["sääksi", "mäki"], "gloss": "osprey + hill", "source": "medieval parishes"}
+{"name": "Tammela", "type": "place", "morphemes": ["tammi"], "gloss": "oak", "source": "medieval parishes"}
+{"name": "Tuulos", "type": "place", "morphemes": ["tuulos"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Tyrväntö", "type": "place", "morphemes": ["tyrväntö"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Urjala", "type": "place", "morphemes": ["urjala"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Vanaja", "type": "place", "morphemes": ["vanaja"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Lohja", "type": "place", "morphemes": ["lohja"], "gloss": "name", "source": "medieval parishes"}
+{"name": "Auvainen", "type": "place", "morphemes": ["auvo"], "gloss": "bliss", "source": "village names 1560s (SA)"}
+{"name": "Auvaismäki", "type": "place", "morphemes": ["auvo", "mäki"], "gloss": "bliss + hill", "source": "village names 1560s (SA)"}
+{"name": "Auvola", "type": "place", "morphemes": ["auvo"], "gloss": "bliss", "source": "village names 1560s (SA)"}
+{"name": "Heimola", "type": "place", "morphemes": ["heimo"], "gloss": "kin", "source": "village names 1560s (SA)"}
+{"name": "Hyvälempelä", "type": "place", "morphemes": ["hyvä", "lempi"], "gloss": "good + love", "source": "village names 1560s (SA)"}
+{"name": "Hyväneula", "type": "place", "morphemes": ["hyvä", "neuvo"], "gloss": "good + counsel", "source": "village names 1560s (SA)"}
+{"name": "Hyvärilä", "type": "place", "morphemes": ["hyvä"], "gloss": "good", "source": "village names 1560s (SA)"}
+{"name": "Hyvättylä", "type": "place", "morphemes": ["hyvä"], "gloss": "good", "source": "village names 1560s (SA)"}
+{"name": "Hyvinkää", "type": "place", "morphemes": ["hyvä"], "gloss": "good", "source": "village names 1560s (SA)"}
+{"name": "Ihala", "type": "place", "morphemes": ["iha"], "gloss": "lovely", "source": "village names 1560s (SA)"}
+{"name": "Ihalempiälä", "type": "place", "morphemes": ["iha", "lempi"], "gloss": "lovely + love", "source": "village names 1560s (SA)"}
+{"name": "Ihalempinen", "type": "place", "morphemes": ["iha", "lempi"], "gloss": "lovely + love", "source": "village names 1560s (SA)"}
+{"name": "Ihamuotila", "type": "place", "morphemes": ["iha", "muoto"], "gloss": "lovely + form", "source": "village names 1560s (SA)"}
+{"name": "Ikaalinen", "type": "place", "morphemes": ["ikä"], "gloss": "lifetime", "source": "village names 1560s (SA)"}
+{"name": "Ikoinniemi", "type": "place", "morphemes": ["ikä", "niemi"], "gloss": "lifetime + cape", "source": "village names 1560s (SA)"}
+{"name": "Ilmatoivola", "type": "place", "morphemes": ["ilma", "toivo"], "gloss": "air + hope", "source": "village names 1560s (SA)"}
+{"name": "Ilmola", "type": "place", "morphemes": ["ilma"], "gloss": "air", "source": "village names 1560s (SA)"}
+{"name": "Kaukola", "type": "place", "morphemes": ["kauko"], "gloss": "far", "source": "village names 1560s (SA)"}
+{"name": "Kaukolempiälä", "type": "place", "morphemes": ["kauko", "lempi"], "gloss": "far + love", "source": "village names 1560s (SA)"}
+{"name": "Kaukonpieli", "type": "place", "morphemes": ["kauko", "pieli"], "gloss": "far + post", "source": "village names 1560s (SA)"}
+{"name": "Kaukkala", "type": "place", "morphemes": ["kauko"], "gloss": "far", "source": "village names 1560s (SA)"}
+{"name": "Kaukoinen", "type": "place", "morphemes": ["kauko"], "gloss": "far", "source": "village names 1560s (SA)"}
+{"name": "Kirjala", "type": "place", "morphemes": ["kirja"], "gloss": "ornament, pattern", "source": "village names 1560s (SA)"}
+{"name": "Kirjavala", "type": "place", "morphemes": ["kirja"], "gloss": "ornament, pattern", "source": "village names 1560s (SA)"}
+{"name": "Yläkirjola", "type": "place", "morphemes": ["ylä", "kirja"], "gloss": "upper + ornament, pattern", "source": "village names 1560s (SA)"}
+{"name": "Kylliälä", "type": "place", "morphemes": ["kyllä"], "gloss": "plenty", "source": "village names 1560s (SA)"}
+{"name": "Lemmettylä", "type": "place", "morphemes": ["lempi"], "gloss": "love", "source": "village names 1560s (SA)"}
+{"name": "Lempiälä", "type": "place", "morphemes": ["lempi"], "gloss": "love", "source": "village names 1560s (SA)"}
+{"name": "Lempiäniemi", "type": "place", "morphemes": ["lempi", "niemi"], "gloss": "love + cape", "source": "village names 1560s (SA)"}
+{"name": "Lempoinen", "type": "place", "morphemes": ["lempi"], "gloss": "love", "source": "village names 1560s (SA)"}
+{"name": "Lempiskallio", "type": "place", "morphemes": ["lempi", "kallio"], "gloss": "love + rock", "source": "village names 1560s (SA)"}
+{"name": "Mielismäki", "type": "place", "morphemes": ["mieli", "mäki"], "gloss": "mind + hill", "source": "village names 1560s (SA)"}
+{"name": "Mielaanniemi", "type": "place", "morphemes": ["mieli", "niemi"], "gloss": "mind + cape", "source": "village names 1560s (SA)"}
+{"name": "Neuvola", "type": "place", "morphemes": ["neuvo"], "gloss": "counsel", "source": "village names 1560s (SA)"}
+{"name": "Päivälä", "type": "place", "morphemes": ["päivä"], "gloss": "sun, day", "source": "village names 1560s (SA)"}
+{"name": "Toivala", "type": "place", "morphemes": ["toivo"], "gloss": "hope", "source": "village names 1560s (SA)"}
+{"name": "Toivottula", "type": "place", "morphemes": ["toivo"], "gloss": "hope", "source": "village names 1560s (SA)"}
+{"name": "Unajala", "type": "place", "morphemes": ["unaja"], "gloss": "name", "source": "village names 1560s (SA)"}
+{"name": "Untamala", "type": "place", "morphemes": ["untamo"], "gloss": "name", "source": "village names 1560s (SA)"}
+{"name": "Untila", "type": "place", "morphemes": ["unto"], "gloss": "name", "source": "village names 1560s (SA)"}
+{"name": "Valtola", "type": "place", "morphemes": ["valta"], "gloss": "power", "source": "village names 1560s (SA)"}
+{"name": "Valto", "type": "place", "morphemes": ["valta"], "gloss": "power", "source": "village names 1560s (SA)"}
+{"name": "Vihattula", "type": "place", "morphemes": ["viha"], "gloss": "anger", "source": "village names 1560s (SA)"}
+{"name": "Vihtiälä", "type": "place", "morphemes": ["vihta"], "gloss": "name", "source": "village names 1560s (SA)"}
+{"name": "Viljakkala", "type": "place", "morphemes": ["vilja"], "gloss": "grain, plenty", "source": "village names 1560s (SA)"}
+{"name": "Viljattula", "type": "place", "morphemes": ["vilja"], "gloss": "grain, plenty", "source": "village names 1560s (SA)"}
+{"name": "Auvi", "type": "place", "morphemes": ["auvo"], "gloss": "bliss", "source": "village names 1560s (SA)"}
+{"name": "Kaukka", "type": "place", "morphemes": ["kauko"], "gloss": "far", "source": "village names 1560s (SA)"}
+{"name": "Heimala", "type": "place", "morphemes": ["heimo"], "gloss": "kin", "source": "village names 1560s (SA)"}
+{"name": "Ikola", "type": "place", "morphemes": ["ikä"], "gloss": "lifetime", "source": "village names 1560s (SA)"}
+{"name": "Toivila", "type": "place", "morphemes": ["toivo"], "gloss": "hope", "source": "village names 1560s (SA)"}
+{"name": "Viljala", "type": "place", "morphemes": ["vilja"], "gloss": "grain, plenty", "source": "village names 1560s (SA)"}
+{"name": "Neuvoinen", "type": "place", "morphemes": ["neuvo"], "gloss": "counsel", "source": "village names 1560s (SA)"}
+{"name": "Lempola", "type": "place", "morphemes": ["lempi"], "gloss": "love", "source": "village names 1560s (SA)"}
+{"name": "Ihaksela", "type": "place", "morphemes": ["iha"], "gloss": "lovely", "source": "village names 1560s (SA)"}
+{"name": "Kyllölä", "type": "place", "morphemes": ["kyllä"], "gloss": "plenty", "source": "village names 1560s (SA)"}
+{"name": "Vihola", "type": "place", "morphemes": ["viha"], "gloss": "anger", "source": "village names 1560s (SA)"}
+{"name": "Kiviniemi", "type": "place", "morphemes": ["kivi", "niemi"], "gloss": "stone + cape", "source": "Kanteletar"}
+{"name": "Tokrajärvi", "type": "place", "morphemes": ["tokra", "järvi"], "gloss": "name + lake", "source": "Kanteletar"}
+{"name": "Laitasaari", "type": "place", "morphemes": ["laita", "saari"], "gloss": "edge + island", "source": "Kanteletar"}
+{"name": "Pajulahti", "type": "place", "morphemes": ["paju", "lahti"], "gloss": "willow + bay", "source": "Kanteletar"}
+{"name": "Kololahti", "type": "place", "morphemes": ["kolo", "lahti"], "gloss": "hollow + bay", "source": "Kanteletar"}
+{"name": "Kotilahti", "type": "place", "morphemes": ["koti", "lahti"], "gloss": "home + bay", "source": "Kanteletar"}
+{"name": "Kolmikylä", "type": "place", "morphemes": ["kolme", "kylä"], "gloss": "three + village", "source": "village names (Raunamaa 2019)"}
+{"name": "Vaistenkylä", "type": "place", "morphemes": ["vaivainen", "kylä"], "gloss": "crippled one + village", "source": "village names (Raunamaa 2019)"}
+{"name": "Liikola", "type": "place", "morphemes": ["liikola"], "gloss": "name", "source": "village names (Raunamaa 2019)"}
+{"name": "Voipiala", "type": "place", "morphemes": ["voipiala"], "gloss": "name", "source": "village names (Raunamaa 2019)"}
+{"name": "Sikuri", "type": "place", "morphemes": ["sikuri"], "gloss": "name", "source": "village names (Raunamaa 2019)"}
+{"name": "Auvila", "type": "place", "morphemes": ["auvo"], "gloss": "bliss", "source": "village names 1560s (SA)"}
+{"name": "Ihanttula", "type": "place", "morphemes": ["iha"], "gloss": "lovely", "source": "village names 1560s (SA)"}
+{"name": "Ikaala", "type": "place", "morphemes": ["ikä"], "gloss": "lifetime", "source": "village names 1560s (SA)"}
+{"name": "Kirjakkala", "type": "place", "morphemes": ["kirja"], "gloss": "ornament, pattern", "source": "village names 1560s (SA)"}
+{"name": "Lemmetyinen", "type": "place", "morphemes": ["lempi"], "gloss": "love", "source": "village names 1560s (SA)"}
+{"name": "Lemmittylä", "type": "place", "morphemes": ["lempi"], "gloss": "love", "source": "village names 1560s (SA)"}
+{"name": "Lempiö", "type": "place", "morphemes": ["lempi"], "gloss": "love", "source": "village names 1560s (SA)"}
+{"name": "Toivarila", "type": "place", "morphemes": ["toivo"], "gloss": "hope", "source": "village names 1560s (SA)"}
+{"name": "Vallainen", "type": "place", "morphemes": ["valta"], "gloss": "power", "source": "village names 1560s (SA)"}
+{"name": "Vihainen", "type": "place", "morphemes": ["viha"], "gloss": "anger", "source": "village names 1560s (SA)"}
+{"name": "Viljainen", "type": "place", "morphemes": ["vilja"], "gloss": "grain, plenty", "source": "village names 1560s (SA)"}
+{"name": "Ukko", "type": "deity", "morphemes": ["ukko"], "gloss": "old man", "source": "Kalevala"}
+{"name": "Rauni", "type": "deity", "morphemes": ["rauni"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Tapio", "type": "deity", "morphemes": ["tapio"], "gloss": "name", "source": "Kalevala"}
+{"name": "Mielikki", "type": "deity", "morphemes": ["mieli"], "gloss": "mind", "source": "Kalevala"}
+{"name": "Tellervo", "type": "deity", "morphemes": ["tellervo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Tuulikki", "type": "deity", "morphemes": ["tuuli"], "gloss": "wind", "source": "Kalevala"}
+{"name": "Tuometar", "type": "deity", "morphemes": ["tuomi"], "gloss": "bird cherry", "source": "Kalevala"}
+{"name": "Nyyrikki", "type": "deity", "morphemes": ["nyyrikki"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kuippana", "type": "deity", "morphemes": ["kuippana"], "gloss": "name", "source": "Kalevala"}
+{"name": "Mimerkki", "type": "deity", "morphemes": ["mimerkki"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kuurikki", "type": "deity", "morphemes": ["kuurikki"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Ahto", "type": "deity", "morphemes": ["ahto"], "gloss": "name", "source": "Kalevala"}
+{"name": "Vellamo", "type": "deity", "morphemes": ["vellamo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Tuoni", "type": "deity", "morphemes": ["tuoni"], "gloss": "death", "source": "Kalevala"}
+{"name": "Tuonetar", "type": "deity", "morphemes": ["tuoni"], "gloss": "death", "source": "Kalevala"}
+{"name": "Mana", "type": "deity", "morphemes": ["mana"], "gloss": "underworld", "source": "Kalevala"}
+{"name": "Manalatar", "type": "deity", "morphemes": ["manala"], "gloss": "underworld", "source": "Kalevala"}
+{"name": "Kalma", "type": "deity", "morphemes": ["kalma"], "gloss": "death, corpse", "source": "Kalevala"}
+{"name": "Lempo", "type": "deity", "morphemes": ["lempo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Hiisi", "type": "deity", "morphemes": ["hiisi"], "gloss": "sacred grove", "source": "Kalevala"}
+{"name": "Piru", "type": "deity", "morphemes": ["piru"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Kammo", "type": "deity", "morphemes": ["kammo"], "gloss": "dread", "source": "Kalevala"}
+{"name": "Surma", "type": "deity", "morphemes": ["surma"], "gloss": "violent death", "source": "Kalevala"}
+{"name": "Kivutar", "type": "deity", "morphemes": ["kipu"], "gloss": "pain", "source": "Kalevala"}
+{"name": "Vammatar", "type": "deity", "morphemes": ["vamma"], "gloss": "injury", "source": "Kalevala"}
+{"name": "Kiputyttö", "type": "deity", "morphemes": ["kipu", "tyttö"], "gloss": "pain + girl", "source": "Kalevala"}
+{"name": "Loviatar", "type": "deity", "morphemes": ["loviatar"], "gloss": "name", "source": "Kalevala"}
+{"name": "Syöjätär", "type": "deity", "morphemes": ["syödä"], "gloss": "eat", "source": "Kalevala"}
+{"name": "Ilmatar", "type": "deity", "morphemes": ["ilma"], "gloss": "air", "source": "Kalevala"}
+{"name": "Kuutar", "type": "deity", "morphemes": ["kuu"], "gloss": "moon", "source": "Kalevala"}
+{"name": "Päivätär", "type": "deity", "morphemes": ["päivä"], "gloss": "sun, day", "source": "Kalevala"}
+{"name": "Otavatar", "type": "deity", "morphemes": ["otava"], "gloss": "Great Bear", "source": "Kalevala"}
+{"name": "Tähetär", "type": "deity", "morphemes": ["tähti"], "gloss": "star", "source": "Kalevala"}
+{"name": "Etelätär", "type": "deity", "morphemes": ["etelä"], "gloss": "south", "source": "Kalevala"}
+{"name": "Suvetar", "type": "deity", "morphemes": ["suvi"], "gloss": "summer", "source": "Kalevala"}
+{"name": "Hongatar", "type": "deity", "morphemes": ["honka"], "gloss": "pine", "source": "Kalevala"}
+{"name": "Katajatar", "type": "deity", "morphemes": ["kataja"], "gloss": "juniper", "source": "Kalevala"}
+{"name": "Pihlajatar", "type": "deity", "morphemes": ["pihlaja"], "gloss": "rowan", "source": "Kalevala"}
+{"name": "Melatar", "type": "deity", "morphemes": ["mela"], "gloss": "steering oar", "source": "Kalevala"}
+{"name": "Terhenetär", "type": "deity", "morphemes": ["terhen"], "gloss": "mist", "source": "Kalevala"}
+{"name": "Ututyttö", "type": "deity", "morphemes": ["utu", "tyttö"], "gloss": "mist + girl", "source": "Kalevala"}
+{"name": "Suonetar", "type": "deity", "morphemes": ["suoni"], "gloss": "vein, sinew", "source": "Kalevala"}
+{"name": "Vetehinen", "type": "deity", "morphemes": ["vesi"], "gloss": "water", "source": "Kalevala"}
+{"name": "Iku-Turso", "type": "deity", "morphemes": ["iku", "turso"], "gloss": "eternal + name", "source": "Kalevala"}
+{"name": "Äijö", "type": "deity", "morphemes": ["äijä"], "gloss": "old man", "source": "Kalevala"}
+{"name": "Pakkanen", "type": "deity", "morphemes": ["pakkanen"], "gloss": "frost", "source": "Kalevala"}
+{"name": "Puhuri", "type": "deity", "morphemes": ["puhuri"], "gloss": "north wind", "source": "Kalevala"}
+{"name": "Pellervoinen", "type": "deity", "morphemes": ["pelto"], "gloss": "field", "source": "Kalevala"}
+{"name": "Kave", "type": "deity", "morphemes": ["kave"], "gloss": "name", "source": "Kalevala"}
+{"name": "Jumala", "type": "deity", "morphemes": ["jumala"], "gloss": "god", "source": "Kalevala"}
+{"name": "Rahko", "type": "deity", "morphemes": ["rahko"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Liekkiö", "type": "deity", "morphemes": ["liekki"], "gloss": "flame", "source": "Agricola 1551"}
+{"name": "Kratti", "type": "deity", "morphemes": ["kratti"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Tonttu", "type": "deity", "morphemes": ["tonttu"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Kapeet", "type": "deity", "morphemes": ["kapeet"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Rongoteus", "type": "deity", "morphemes": ["rongoteus"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Pellonpekko", "type": "deity", "morphemes": ["pelto", "pekko"], "gloss": "field + name", "source": "Agricola 1551"}
+{"name": "Virankannos", "type": "deity", "morphemes": ["virankannos"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Äkräs", "type": "deity", "morphemes": ["äkräs"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Köndös", "type": "deity", "morphemes": ["köndös"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Kekri", "type": "deity", "morphemes": ["kekri"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Vedenemä", "type": "deity", "morphemes": ["vesi", "emä"], "gloss": "water + mother", "source": "Agricola 1551"}
+{"name": "Hittavainen", "type": "deity", "morphemes": ["hittavainen"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Pohjolan emäntä", "type": "title", "morphemes": ["pohja", "emäntä"], "gloss": "north, bottom + mistress", "source": "Kalevala"}
+{"name": "Pohjolan isäntä", "type": "title", "morphemes": ["pohja", "isäntä"], "gloss": "north, bottom + master", "source": "Kalevala"}
+{"name": "Pohjan akka", "type": "title", "morphemes": ["pohja", "akka"], "gloss": "north, bottom + old woman", "source": "Kalevala"}
+{"name": "Pohjan ukko", "type": "title", "morphemes": ["pohja", "ukko"], "gloss": "north, bottom + old man", "source": "Kanteletar"}
+{"name": "Pohjan neiti", "type": "title", "morphemes": ["pohja", "neiti"], "gloss": "north, bottom + maiden", "source": "Kalevala"}
+{"name": "Saaren kukka", "type": "title", "morphemes": ["saari", "kukka"], "gloss": "island + flower", "source": "Kalevala"}
+{"name": "Metsän kuningas", "type": "title", "morphemes": ["metsä", "kuningas"], "gloss": "forest + king", "source": "Kalevala"}
+{"name": "Metsän emäntä", "type": "title", "morphemes": ["metsä", "emäntä"], "gloss": "forest + mistress", "source": "Kalevala"}
+{"name": "Aaltojen kuningas", "type": "title", "morphemes": ["aalto", "kuningas"], "gloss": "wave + king", "source": "Kalevala"}
+{"name": "Veden emo", "type": "title", "morphemes": ["vesi", "emo"], "gloss": "water + mother", "source": "Kalevala"}
+{"name": "Ilman impi", "type": "title", "morphemes": ["ilma", "impi"], "gloss": "air + maiden", "source": "Kalevala"}
+{"name": "Manalan neiti", "type": "title", "morphemes": ["manala", "neiti"], "gloss": "underworld + maiden", "source": "Kalevala"}
+{"name": "Ylijumala", "type": "title", "morphemes": ["yli", "jumala"], "gloss": "over + god", "source": "Kalevala"}
+{"name": "Kalevalan neiti", "type": "title", "morphemes": ["kaleva", "neiti"], "gloss": "name + maiden", "source": "Kanteletar"}
+{"name": "Kalevan kansa", "type": "group", "morphemes": ["kaleva", "kansa"], "gloss": "name + people", "source": "Kalevala"}
+{"name": "Tapion kansa", "type": "group", "morphemes": ["tapio", "kansa"], "gloss": "name + people", "source": "Kalevala"}
+{"name": "Pohjan kansa", "type": "group", "morphemes": ["pohja", "kansa"], "gloss": "north, bottom + people", "source": "Kalevala"}
+{"name": "Suomen kansa", "type": "group", "morphemes": ["suomi", "kansa"], "gloss": "name + people", "source": "Kalevala"}
+{"name": "Lemmon kansa", "type": "group", "morphemes": ["lempo", "kansa"], "gloss": "name + people", "source": "Kalevala"}
+{"name": "Venäjän väki", "type": "group", "morphemes": ["venäjä", "väki"], "gloss": "name + folk", "source": "Kanteletar"}
+{"name": "Karjalaiset", "type": "group", "morphemes": ["karjala"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Hämäläiset", "type": "group", "morphemes": ["häme"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Lappalaiset", "type": "group", "morphemes": ["lappi"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Venäläiset", "type": "group", "morphemes": ["venäjä"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Hiitolaiset", "type": "group", "morphemes": ["hiisi"], "gloss": "sacred grove", "source": "Kanteletar"}
+{"name": "Suomalaiset", "type": "group", "morphemes": ["suomi"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Menninkäiset", "type": "group", "morphemes": ["menninkäinen"], "gloss": "name", "source": "Agricola 1551"}
+{"name": "Kurki", "type": "lineage", "morphemes": ["kurki"], "gloss": "crane", "source": "Kanteletar"}
+{"name": "Kärkkäinen", "type": "lineage", "morphemes": ["kärkkä"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Rantonen", "type": "lineage", "morphemes": ["ranta"], "gloss": "shore", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Kortelainen", "type": "lineage", "morphemes": ["korte"], "gloss": "horsetail", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Haapalainen", "type": "lineage", "morphemes": ["haapa"], "gloss": "aspen", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Vahvelainen", "type": "lineage", "morphemes": ["vahviala"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Koikkalainen", "type": "lineage", "morphemes": ["koikkala"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Pääkkönen", "type": "lineage", "morphemes": ["pääkkö"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Kirjavainen", "type": "lineage", "morphemes": ["kirja"], "gloss": "ornament, pattern", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Partanen", "type": "lineage", "morphemes": ["parta"], "gloss": "beard", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Korhonen", "type": "lineage", "morphemes": ["korho"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Laitinen", "type": "lineage", "morphemes": ["laiti"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Happonen", "type": "lineage", "morphemes": ["happo"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Julkunen", "type": "lineage", "morphemes": ["julku"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Romppainen", "type": "lineage", "morphemes": ["romppa"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Rutanen", "type": "lineage", "morphemes": ["ruta"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Puumalainen", "type": "lineage", "morphemes": ["puumala"], "gloss": "name", "source": "eastern family names, 16th-17th c. (Paikkala; Mikkonen & Paikkala)"}
+{"name": "Tapiomäki", "type": "hill", "morphemes": ["tapio", "mäki"], "gloss": "name + hill", "source": "Kalevala"}
+{"name": "Kipumäki", "type": "hill", "morphemes": ["kipu", "mäki"], "gloss": "pain + hill", "source": "Kalevala"}
+{"name": "Kipuvuori", "type": "hill", "morphemes": ["kipu", "vuori"], "gloss": "pain + mountain", "source": "Kalevala"}
+{"name": "Tuomivaara", "type": "hill", "morphemes": ["tuomi", "vaara"], "gloss": "bird cherry + fell", "source": "Kalevala"}
+{"name": "Pisa", "type": "hill", "morphemes": ["pisa"], "gloss": "name", "source": "Kalevala"}
+{"name": "Tapiovaara", "type": "hill", "morphemes": ["tapio", "vaara"], "gloss": "name + fell", "source": "Kanteletar"}
+{"name": "Pätsivuori", "type": "hill", "morphemes": ["pätsi", "vuori"], "gloss": "furnace + mountain", "source": "Kanteletar"}
+{"name": "Kutumäki", "type": "hill", "morphemes": ["kutu", "mäki"], "gloss": "spawning + hill", "source": "Kanteletar"}
+{"name": "Takavaara", "type": "hill", "morphemes": ["taka", "vaara"], "gloss": "back + fell", "source": "Kanteletar"}
+{"name": "Lylyvaara", "type": "hill", "morphemes": ["lyly", "vaara"], "gloss": "ski + fell", "source": "Kanteletar"}
+{"name": "Lehtovaara", "type": "hill", "morphemes": ["lehto", "vaara"], "gloss": "grove + fell", "source": "Kanteletar"}
+{"name": "Kultavuori", "type": "hill", "morphemes": ["kulta", "vuori"], "gloss": "gold + mountain", "source": "Kanteletar"}
+{"name": "Koiravuori", "type": "hill", "morphemes": ["koira", "vuori"], "gloss": "dog + mountain", "source": "Kanteletar"}
+{"name": "Kirvesvaara", "type": "hill", "morphemes": ["kirves", "vaara"], "gloss": "axe + fell", "source": "Kanteletar"}
+{"name": "Vaskivaara", "type": "hill", "morphemes": ["vaski", "vaara"], "gloss": "copper + fell", "source": "Kanteletar"}
+{"name": "Otava", "type": "celestial", "morphemes": ["otava"], "gloss": "Great Bear", "source": "Kalevala"}
+{"name": "Pohjantähti", "type": "celestial", "morphemes": ["pohja", "tähti"], "gloss": "north, bottom + star", "source": "Kanteletar"}
+{"name": "Kuu", "type": "celestial", "morphemes": ["kuu"], "gloss": "moon", "source": "Kalevala"}
+{"name": "Päivä", "type": "celestial", "morphemes": ["päivä"], "gloss": "sun, day", "source": "Kalevala"}
+{"name": "Tähti", "type": "celestial", "morphemes": ["tähti"], "gloss": "star", "source": "Kalevala"}
+{"name": "Vuoksi", "type": "river", "morphemes": ["vuoksi"], "gloss": "flow, current", "source": "Kalevala"}
+{"name": "Kemijoki", "type": "river", "morphemes": ["kemi", "joki"], "gloss": "name + river", "source": "Kalevala"}
+{"name": "Neva", "type": "river", "morphemes": ["neva"], "gloss": "bog", "source": "Kalevala"}
+{"name": "Saraja", "type": "river", "morphemes": ["saraja"], "gloss": "name", "source": "Kalevala"}
+{"name": "Saraoja", "type": "river", "morphemes": ["sara", "oja"], "gloss": "sedge + brook", "source": "Kalevala"}
+{"name": "Tuonelan joki", "type": "river", "morphemes": ["tuoni", "joki"], "gloss": "death + river", "source": "Kalevala"}
+{"name": "Imatra", "type": "river", "morphemes": ["imatra"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kaatrakoski", "type": "river", "morphemes": ["kaatra", "koski"], "gloss": "name + rapids", "source": "Kalevala"}
+{"name": "Tyrjä", "type": "river", "morphemes": ["tyrjä"], "gloss": "name", "source": "Kalevala"}
+{"name": "Rutja", "type": "river", "morphemes": ["rutja"], "gloss": "name", "source": "Kalevala"}
+{"name": "Kiikakoski", "type": "river", "morphemes": ["kiikka", "koski"], "gloss": "name + rapids", "source": "Kanteletar"}
+{"name": "Sampo", "type": "other", "morphemes": ["sampo"], "gloss": "name", "source": "Kalevala"}
+{"name": "Alue", "type": "other", "morphemes": ["alue"], "gloss": "name", "source": "Kalevala"}
+{"name": "Saimaa", "type": "other", "morphemes": ["saimaa"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Pielinen", "type": "other", "morphemes": ["pielinen"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kuittijärvi", "type": "other", "morphemes": ["kuitti", "järvi"], "gloss": "name + lake", "source": "Kanteletar"}
+{"name": "Kalevan kaivo", "type": "other", "morphemes": ["kaleva", "kaivo"], "gloss": "name + well", "source": "Kalevala"}
+{"name": "Hiiden hirvi", "type": "other", "morphemes": ["hiisi", "hirvi"], "gloss": "sacred grove + elk", "source": "Kalevala"}
+{"name": "Hiiden ruuna", "type": "other", "morphemes": ["hiisi", "ruuna"], "gloss": "sacred grove + gelding", "source": "Kalevala"}
+{"name": "Otso", "type": "other", "morphemes": ["otso"], "gloss": "bear", "source": "Kalevala"}
+{"name": "Mesikämmen", "type": "other", "morphemes": ["mesi", "kämmen"], "gloss": "honey + palm", "source": "Kanteletar"}
+{"name": "Musti", "type": "other", "morphemes": ["musta"], "gloss": "black", "source": "Kalevala"}
+{"name": "Halli", "type": "other", "morphemes": ["halli"], "gloss": "grey", "source": "Kalevala"}
+{"name": "Penu", "type": "other", "morphemes": ["penu"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kyyttö", "type": "other", "morphemes": ["kyyttö"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Syötikki", "type": "other", "morphemes": ["syöttää"], "gloss": "feed", "source": "Kalevala"}
+{"name": "Juotikki", "type": "other", "morphemes": ["juottaa"], "gloss": "give drink", "source": "Kalevala"}
+{"name": "Hermikki", "type": "other", "morphemes": ["hermikki"], "gloss": "name", "source": "Kalevala"}
+{"name": "Tuorikki", "type": "other", "morphemes": ["tuorikki"], "gloss": "name", "source": "Kalevala"}
+{"name": "Mairikki", "type": "other", "morphemes": ["mairikki"], "gloss": "name", "source": "Kalevala"}
+{"name": "Omena", "type": "other", "morphemes": ["omena"], "gloss": "apple", "source": "Kalevala"}
+{"name": "Muurikki", "type": "other", "morphemes": ["muurikki"], "gloss": "name", "source": "Kalevala"}
+{"name": "Mansikki", "type": "other", "morphemes": ["mansikka"], "gloss": "strawberry", "source": "Kalevala"}
+{"name": "Ukon vakka", "type": "other", "morphemes": ["ukko", "vakka"], "gloss": "old man + wooden box", "source": "Agricola 1551"}
+{"name": "Ukon malja", "type": "other", "morphemes": ["ukko", "malja"], "gloss": "old man + cup", "source": "Agricola 1551"}
+{"name": "Sinetär", "type": "deity", "morphemes": ["sini"], "gloss": "blue", "source": "Kanteletar"}
+{"name": "Kankahatar", "type": "deity", "morphemes": ["kangas"], "gloss": "woven cloth", "source": "Kanteletar"}
+{"name": "Kivi-Kimmo", "type": "deity", "morphemes": ["kivi", "kimmo"], "gloss": "stone + name", "source": "Kalevala"}
+{"name": "Synervä", "type": "other", "morphemes": ["synervä"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kallavesi", "type": "other", "morphemes": ["kalla", "vesi"], "gloss": "name + water", "source": "Kanteletar"}
+{"name": "Puruvesi", "type": "other", "morphemes": ["puru", "vesi"], "gloss": "name + water", "source": "Kanteletar"}
+{"name": "Koitere", "type": "other", "morphemes": ["koitere"], "gloss": "name", "source": "Kanteletar"}
+{"name": "Kuvetjärvi", "type": "other", "morphemes": ["kuvet", "järvi"], "gloss": "name + lake", "source": "Kanteletar"}
+{"name": "Köyliöjärvi", "type": "other", "morphemes": ["köyliö", "järvi"], "gloss": "name + lake", "source": "Kanteletar (Lönnrot's notes)"}
+{"name": "Kiikasilta", "type": "other", "morphemes": ["kiikka", "silta"], "gloss": "name + bridge", "source": "Kanteletar"}
+{"name": "Lyttimäinen", "type": "other", "morphemes": ["lyttimäinen"], "gloss": "name", "source": "Kanteletar"}

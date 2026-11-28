@@ -1,0 +1,20 @@
+{
+ "lang": "sumerian",
+ "names": "names.jsonl",
+ "parts": "parts.jsonl",
+ "words": "words.json",
+ "number_words": {
+  "1": "diś",
+  "2": "min",
+  "3": "eś",
+  "4": "limmu",
+  "5": "ia",
+  "6": "aś",
+  "7": "imin",
+  "12": "umin"
+ },
+ "punmax": 0.5,
+ "weights": "once",
+ "drop_parts": [],
+ "loan_category": "none"
+}

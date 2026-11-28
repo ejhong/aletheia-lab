@@ -1,0 +1,57 @@
+{
+ "note": "EXPLORATORY, before the lock; the preprint's archived lists sampled to 600 names, rounds 0 to 99",
+ "tamil (preprint's list)": {
+  "mean": 187.7,
+  "sd": 176.7,
+  "standard_error": 17.7,
+  "rounds_above_control": 89,
+  "rounds": 100,
+  "first_ten_rounds_above_control": 7,
+  "signs_read_mean": 20.0
+ },
+ "tamil (preprint's list) with sign 740 left unread": {
+  "mean": 44.3,
+  "sd": 61.3,
+  "standard_error": 6.1,
+  "rounds_above_control": 73,
+  "rounds": 100,
+  "first_ten_rounds_above_control": 6,
+  "signs_read_mean": 20.3
+ },
+ "sanskrit (preprint's list)": {
+  "mean": -23.4,
+  "sd": 45.6,
+  "standard_error": 4.6,
+  "rounds_above_control": 30,
+  "rounds": 100,
+  "first_ten_rounds_above_control": 4,
+  "signs_read_mean": 6.4
+ },
+ "sanskrit (preprint's list) with sign 740 left unread": {
+  "mean": -23.8,
+  "sd": 40.1,
+  "standard_error": 4.0,
+  "rounds_above_control": 24,
+  "rounds": 100,
+  "first_ten_rounds_above_control": 3,
+  "signs_read_mean": 6.4
+ },
+ "akkadian (preprint's list)": {
+  "mean": -31.9,
+  "sd": 32.7,
+  "standard_error": 3.3,
+  "rounds_above_control": 20,
+  "rounds": 100,
+  "first_ten_rounds_above_control": 3,
+  "signs_read_mean": 5.7
+ },
+ "akkadian (preprint's list) with sign 740 left unread": {
+  "mean": -26.6,
+  "sd": 25.8,
+  "standard_error": 2.6,
+  "rounds_above_control": 18,
+  "rounds": 100,
+  "first_ten_rounds_above_control": 4,
+  "signs_read_mean": 5.7
+ }
+}

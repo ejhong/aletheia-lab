@@ -1,0 +1,73 @@
+{
+ "note": "EXPLORATORY: fresh Tamil name lists with their first translators' picture words. Not the plan's answer.",
+ "tamil_fresh_a": {
+  "words_for_the_jar_sign": {
+   "jar": [
+    "tāḻi",
+    "cāṭi"
+   ],
+   "pot": [
+    "kuṭam",
+    "kalam"
+   ],
+   "vessel": [
+    "kalam"
+   ],
+   "handle": [
+    "kāmpu",
+    "piṭi"
+   ]
+  },
+  "main": {
+   "mean": 166.9,
+   "median": 155.2,
+   "runs_above_control": 96,
+   "runs": 100,
+   "readings_for_jar_sign": {
+    "kuṭi": 100
+   }
+  },
+  "jar sign left unread": {
+   "mean": 18.2,
+   "median": 21.3,
+   "runs_above_control": 66,
+   "runs": 100,
+   "readings_for_jar_sign": {}
+  }
+ },
+ "tamil_fresh_b": {
+  "words_for_the_jar_sign": {
+   "jar": [
+    "tāḻi",
+    "cāṭi"
+   ],
+   "pot": [
+    "kalam",
+    "tāḻi"
+   ],
+   "vessel": [
+    "kalam"
+   ],
+   "handle": [
+    "kāmpu",
+    "piṭi"
+   ]
+  },
+  "main": {
+   "mean": -26.0,
+   "median": -28.7,
+   "runs_above_control": 40,
+   "runs": 100,
+   "readings_for_jar_sign": {
+    "kal": 65
+   }
+  },
+  "jar sign left unread": {
+   "mean": -24.2,
+   "median": -19.4,
+   "runs_above_control": 32,
+   "runs": 100,
+   "readings_for_jar_sign": {}
+  }
+ }
+}

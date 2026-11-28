@@ -1,0 +1,217 @@
+{
+ "note": "EXPLORATORY, run before the plan was locked; the preprint's archived Tamil lists only",
+ "baseline": {
+  "mean": 223.0,
+  "seeds_above_control": 10,
+  "change_from_baseline": 0.0
+ },
+ "variants": {
+  "labels flattened (every part 'other')": {
+   "mean": 62.4,
+   "seeds_above_control": 8,
+   "change_from_baseline": -160.6
+  },
+  "suffix and honorific parts removed from names": {
+   "mean": 182.9,
+   "seeds_above_control": 9,
+   "change_from_baseline": -40.1
+  },
+  "names left whole (not split into parts)": {
+   "mean": 0.0,
+   "seeds_above_control": 0,
+   "change_from_baseline": -223.0
+  }
+ },
+ "largest_falls_when_one_sign_is_left_unread": [
+  {
+   "sign": "740",
+   "occurrences_in_seal_texts": 654,
+   "mean": 87.0,
+   "seeds_above_control": 10,
+   "change_from_baseline": -136.0,
+   "readings_chosen_in_baseline": {
+    "kuṭi": 9,
+    "kal": 1
+   }
+  },
+  {
+   "sign": "002",
+   "occurrences_in_seal_texts": 429,
+   "mean": 189.3,
+   "seeds_above_control": 10,
+   "change_from_baseline": -33.7,
+   "readings_chosen_in_baseline": {}
+  },
+  {
+   "sign": "220",
+   "occurrences_in_seal_texts": 172,
+   "mean": 196.0,
+   "seeds_above_control": 10,
+   "change_from_baseline": -27.0,
+   "readings_chosen_in_baseline": {
+    "mīṉ": 7
+   }
+  },
+  {
+   "sign": "920",
+   "occurrences_in_seal_texts": 78,
+   "mean": 205.7,
+   "seeds_above_control": 10,
+   "change_from_baseline": -17.3,
+   "readings_chosen_in_baseline": {
+    "tiṅkaḷ": 10
+   }
+  },
+  {
+   "sign": "060",
+   "occurrences_in_seal_texts": 134,
+   "mean": 209.0,
+   "seeds_above_control": 10,
+   "change_from_baseline": -14.0,
+   "readings_chosen_in_baseline": {
+    "var": 9,
+    "varai": 1
+   }
+  },
+  {
+   "sign": "617",
+   "occurrences_in_seal_texts": 30,
+   "mean": 211.8,
+   "seeds_above_control": 10,
+   "change_from_baseline": -11.3,
+   "readings_chosen_in_baseline": {}
+  },
+  {
+   "sign": "142",
+   "occurrences_in_seal_texts": 26,
+   "mean": 214.9,
+   "seeds_above_control": 10,
+   "change_from_baseline": -8.1,
+   "readings_chosen_in_baseline": {
+    "āṉ": 1
+   }
+  },
+  {
+   "sign": "235",
+   "occurrences_in_seal_texts": 112,
+   "mean": 215.2,
+   "seeds_above_control": 10,
+   "change_from_baseline": -7.8,
+   "readings_chosen_in_baseline": {
+    "muṭi": 4,
+    "muṭam": 3
+   }
+  },
+  {
+   "sign": "840",
+   "occurrences_in_seal_texts": 40,
+   "mean": 215.6,
+   "seeds_above_control": 10,
+   "change_from_baseline": -7.5,
+   "readings_chosen_in_baseline": {
+    "il": 6,
+    "kaṇi": 1,
+    "kaṇai": 1
+   }
+  },
+  {
+   "sign": "717",
+   "occurrences_in_seal_texts": 27,
+   "mean": 217.7,
+   "seeds_above_control": 10,
+   "change_from_baseline": -5.3,
+   "readings_chosen_in_baseline": {
+    "potu": 5
+   }
+  },
+  {
+   "sign": "861",
+   "occurrences_in_seal_texts": 132,
+   "mean": 219.2,
+   "seeds_above_control": 10,
+   "change_from_baseline": -3.8,
+   "readings_chosen_in_baseline": {
+    "mukam": 1
+   }
+  },
+  {
+   "sign": "692",
+   "occurrences_in_seal_texts": 32,
+   "mean": 220.2,
+   "seeds_above_control": 10,
+   "change_from_baseline": -2.8,
+   "readings_chosen_in_baseline": {
+    "kūṭal": 6
+   }
+  },
+  {
+   "sign": "368",
+   "occurrences_in_seal_texts": 60,
+   "mean": 220.3,
+   "seeds_above_control": 10,
+   "change_from_baseline": -2.7,
+   "readings_chosen_in_baseline": {
+    "kuṭi": 1
+   }
+  },
+  {
+   "sign": "621",
+   "occurrences_in_seal_texts": 15,
+   "mean": 220.3,
+   "seeds_above_control": 10,
+   "change_from_baseline": -2.7,
+   "readings_chosen_in_baseline": {}
+  },
+  {
+   "sign": "503",
+   "occurrences_in_seal_texts": 30,
+   "mean": 220.5,
+   "seeds_above_control": 10,
+   "change_from_baseline": -2.5,
+   "readings_chosen_in_baseline": {
+    "malai": 4,
+    "māl": 4,
+    "kuṉṟu": 1,
+    "poru": 1
+   }
+  }
+ ],
+ "largest_rises": [
+  {
+   "sign": "595",
+   "mean": 237.8,
+   "seeds_above_control": 10,
+   "change_from_baseline": 14.7
+  },
+  {
+   "sign": "140",
+   "mean": 242.1,
+   "seeds_above_control": 10,
+   "change_from_baseline": 19.1
+  },
+  {
+   "sign": "154",
+   "mean": 243.3,
+   "seeds_above_control": 10,
+   "change_from_baseline": 20.3
+  },
+  {
+   "sign": "400",
+   "mean": 244.9,
+   "seeds_above_control": 10,
+   "change_from_baseline": 21.9
+  },
+  {
+   "sign": "806",
+   "mean": 247.8,
+   "seeds_above_control": 10,
+   "change_from_baseline": 24.8
+  }
+ ],
+ "signs_with_picture_words": 69,
+ "example_run": {
+  "seals": 951,
+  "signs": 69,
+  "read": 30
+ }
+}

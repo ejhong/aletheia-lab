@@ -1,0 +1,360 @@
+{
+ "runs": [
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 0,
+   "ours": 217.05,
+   "archive": 217.05,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 1,
+   "ours": 210.52,
+   "archive": 210.52,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 2,
+   "ours": 192.07,
+   "archive": 192.07,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 3,
+   "ours": 222.71,
+   "archive": 222.71,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 4,
+   "ours": 243.05,
+   "archive": 243.05,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 5,
+   "ours": 120.85,
+   "archive": 120.85,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 6,
+   "ours": 258.76,
+   "archive": 258.76,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 7,
+   "ours": 308.94,
+   "archive": 308.94,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 8,
+   "ours": 221.26,
+   "archive": 221.26,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "real",
+   "seed": 9,
+   "ours": 145.41,
+   "archive": 145.41,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 0,
+   "ours": 113.22,
+   "archive": 113.22,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 1,
+   "ours": -27.0,
+   "archive": -27.0,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 2,
+   "ours": 33.88,
+   "archive": 33.88,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 3,
+   "ours": -32.31,
+   "archive": -32.31,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 4,
+   "ours": 50.66,
+   "archive": 50.66,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 5,
+   "ours": -123.59,
+   "archive": -123.59,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 6,
+   "ours": 73.43,
+   "archive": 73.43,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 7,
+   "ours": 133.05,
+   "archive": 133.05,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 8,
+   "ours": -265.69,
+   "archive": -265.69,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "tamil",
+   "mode": "null",
+   "seed": 9,
+   "ours": -45.18,
+   "archive": -45.18,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 0,
+   "ours": -27.96,
+   "archive": -27.96,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 1,
+   "ours": -79.46,
+   "archive": -79.46,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 2,
+   "ours": 13.17,
+   "archive": 13.17,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 3,
+   "ours": -44.79,
+   "archive": -44.79,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 4,
+   "ours": 21.15,
+   "archive": 21.15,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 5,
+   "ours": 19.68,
+   "archive": 19.68,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 6,
+   "ours": 14.61,
+   "archive": 14.61,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 7,
+   "ours": -35.45,
+   "archive": -35.45,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 8,
+   "ours": -8.07,
+   "archive": -8.07,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "real",
+   "seed": 9,
+   "ours": -37.95,
+   "archive": -37.95,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 0,
+   "ours": -21.55,
+   "archive": -21.55,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 1,
+   "ours": -33.9,
+   "archive": -33.9,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 2,
+   "ours": -13.39,
+   "archive": -13.39,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 3,
+   "ours": 21.29,
+   "archive": 21.29,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 4,
+   "ours": 34.12,
+   "archive": 34.12,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 5,
+   "ours": -24.79,
+   "archive": -24.79,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 6,
+   "ours": -31.18,
+   "archive": -31.18,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 7,
+   "ours": 24.39,
+   "archive": 24.39,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 8,
+   "ours": 60.2,
+   "archive": 60.2,
+   "fields_that_differ": []
+  },
+  {
+   "lang": "sanskrit",
+   "mode": "null",
+   "seed": 9,
+   "ours": -47.07,
+   "archive": -47.07,
+   "fields_that_differ": []
+  }
+ ],
+ "summary": {
+  "tamil": {
+   "real_minus_null_by_seed": [
+    103.83,
+    237.52,
+    158.19,
+    255.02,
+    192.39,
+    244.44,
+    185.33,
+    175.89,
+    486.95,
+    190.59
+   ],
+   "mean": 223.0,
+   "seeds_above_control": 10
+  },
+  "sanskrit": {
+   "real_minus_null_by_seed": [
+    -6.41,
+    -45.56,
+    26.56,
+    -66.08,
+    -12.97,
+    44.47,
+    45.79,
+    -59.84,
+    -68.27,
+    9.12
+   ],
+   "mean": -13.3,
+   "seeds_above_control": 4
+  }
+ },
+ "identical": 40,
+ "total": 40
+}

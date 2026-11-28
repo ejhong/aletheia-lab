@@ -1,0 +1,659 @@
+{"name": "Kamuyamato Iwarebiko", "type": "person", "morphemes": ["kami", "yamato", "iware", "hiko"], "gloss": "god + name + name + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Kamununakawamimi", "type": "person", "morphemes": ["kami", "nu", "kawa", "mimi"], "gloss": "god + jewel + river + mimi (title)", "source": "Kojiki; Nihon shoki"}
+{"name": "Shikitsuhiko Tamatemi", "type": "person", "morphemes": ["shiki", "hiko", "tamatemi"], "gloss": "name + prince + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōyamato Hikosukitomo", "type": "person", "morphemes": ["ō", "yamato", "hiko", "sukitomo"], "gloss": "great + name + prince + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Mimatsuhiko Kaeshine", "type": "person", "morphemes": ["mi", "ma", "hiko", "kaeshine"], "gloss": "honorific + true + prince + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōyamato Tarashihiko Kunioshihito", "type": "person", "morphemes": ["ō", "yamato", "tarashi", "hiko", "kuni", "osu", "hito"], "gloss": "great + name + tarashi (title) + prince + land + press + person", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōyamato Nekohiko Futoni", "type": "person", "morphemes": ["ō", "yamato", "ne", "ko", "hiko", "futoni"], "gloss": "great + name + root + child + prince + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōyamato Nekohiko Kunikuru", "type": "person", "morphemes": ["ō", "yamato", "ne", "ko", "hiko", "kunikuru"], "gloss": "great + name + root + child + prince + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Wakayamato Nekohiko Ōbibi", "type": "person", "morphemes": ["waka", "yamato", "ne", "ko", "hiko", "ō", "bibi"], "gloss": "young + name + root + child + prince + great + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Mimaki Iribiko Inie", "type": "person", "morphemes": ["mimaki", "iri", "hiko", "inie"], "gloss": "name + enter + prince + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ikume Iribiko Isachi", "type": "person", "morphemes": ["ikume", "iri", "hiko", "isachi"], "gloss": "name + enter + prince + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōtarashihiko Oshirowake", "type": "person", "morphemes": ["ō", "tarashi", "hiko", "oshiro", "wake"], "gloss": "great + tarashi (title) + prince + name + lord", "source": "Kojiki; Nihon shoki"}
+{"name": "Wakatarashihiko", "type": "person", "morphemes": ["waka", "tarashi", "hiko"], "gloss": "young + tarashi (title) + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Tarashinakatsuhiko", "type": "person", "morphemes": ["tarashi", "naka", "hiko"], "gloss": "tarashi (title) + middle + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Okinagatarashihime", "type": "person", "morphemes": ["iki", "naga", "tarashi", "hime"], "gloss": "breath + long + tarashi (title) + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Homudawake", "type": "person", "morphemes": ["homuda", "wake"], "gloss": "armguard + lord", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōsazaki", "type": "person", "morphemes": ["ō", "sazaki"], "gloss": "great + wren", "source": "Kojiki; Nihon shoki"}
+{"name": "Izahowake", "type": "person", "morphemes": ["izaho", "wake"], "gloss": "name + lord", "source": "Kojiki; Nihon shoki"}
+{"name": "Mizuhawake", "type": "person", "morphemes": ["mizu", "ha", "wake"], "gloss": "fresh + tooth + lord", "source": "Kojiki; Nihon shoki"}
+{"name": "Oasazuma Wakugo no Sukune", "type": "person", "morphemes": ["o", "asazuma", "waku", "ko", "sukune"], "gloss": "man + name + young + child + sukune (title)", "source": "Kojiki; Nihon shoki"}
+{"name": "Anaho", "type": "person", "morphemes": ["ana", "ho"], "gloss": "hole + ear of grain", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōhatsuse Wakatakeru", "type": "person", "morphemes": ["ō", "hatsuse", "waka", "takeru"], "gloss": "great + name + young + brave one", "source": "Kojiki; Nihon shoki"}
+{"name": "Shiraka no Ōyamato Nekohiko", "type": "person", "morphemes": ["shiraka", "ō", "yamato", "ne", "ko", "hiko"], "gloss": "white hair + great + name + root + child + prince", "source": "Kojiki"}
+{"name": "Oke", "type": "person", "morphemes": ["oke"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ohatsuse Wakasazaki", "type": "person", "morphemes": ["o", "hatsuse", "waka", "sazaki"], "gloss": "small + name + young + wren", "source": "Kojiki; Nihon shoki"}
+{"name": "Ohodo", "type": "person", "morphemes": ["ohodo"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Hirokuni Oshitake Kanahi", "type": "person", "morphemes": ["hiro", "kuni", "osu", "take", "kane", "hi"], "gloss": "wide + land + press + brave + metal + sun", "source": "Kojiki; Nihon shoki"}
+{"name": "Takeohirokuni Oshitate", "type": "person", "morphemes": ["take", "o", "hiro", "kuni", "osu", "tate"], "gloss": "brave + small + wide + land + press + shield", "source": "Kojiki; Nihon shoki"}
+{"name": "Amekuni Oshiharuki Hironiwa", "type": "person", "morphemes": ["ame", "kuni", "osu", "haruki", "hiro", "niwa"], "gloss": "heaven + land + press + name + wide + court", "source": "Kojiki; Nihon shoki"}
+{"name": "Nunakura Futotamashiki", "type": "person", "morphemes": ["nunakura", "futo", "tama", "shiku"], "gloss": "name + thick + jewel + spread", "source": "Kojiki; Nihon shoki"}
+{"name": "Tachibana no Toyohi", "type": "person", "morphemes": ["tachibana", "toyo", "hi"], "gloss": "mandarin orange + abundant + sun", "source": "Kojiki; Nihon shoki"}
+{"name": "Hatsusebe", "type": "person", "morphemes": ["hatsuse", "be"], "gloss": "name + corporation", "source": "Kojiki; Nihon shoki"}
+{"name": "Toyomike Kashikiyahime", "type": "person", "morphemes": ["toyo", "mi", "ke", "kashiku", "ya", "hime"], "gloss": "abundant + honorific + food + cook + house + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Nukatabe", "type": "person", "morphemes": ["nuka", "ta", "be"], "gloss": "forehead + field + corporation", "source": "Kojiki; Nihon shoki"}
+{"name": "Okinaga Tarashi Hihironuka", "type": "person", "morphemes": ["iki", "naga", "tarashi", "hi", "hiro", "nuka"], "gloss": "breath + long + tarashi (title) + sun + wide + forehead", "source": "Nihon shoki"}
+{"name": "Tamura", "type": "person", "morphemes": ["ta", "mura"], "gloss": "field + village", "source": "Nihon shoki"}
+{"name": "Ame Toyotakara Ikashihi Tarashihime", "type": "person", "morphemes": ["ame", "toyo", "takara", "ikashi", "hi", "tarashi", "hime"], "gloss": "heaven + abundant + treasure + luxuriant + sun + tarashi (title) + princess", "source": "Nihon shoki"}
+{"name": "Takara", "type": "person", "morphemes": ["takara"], "gloss": "treasure", "source": "Nihon shoki"}
+{"name": "Ame Yorozu Toyohi", "type": "person", "morphemes": ["ame", "yorozu", "toyo", "hi"], "gloss": "heaven + myriad + abundant + sun", "source": "Nihon shoki"}
+{"name": "Karu", "type": "person", "morphemes": ["karu"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Amemikoto Hirakasuwake", "type": "person", "morphemes": ["ame", "mikoto", "hiraku", "wake"], "gloss": "heaven + august word + open + lord", "source": "Nihon shoki"}
+{"name": "Naka no Ōe", "type": "person", "morphemes": ["naka", "ō", "e"], "gloss": "middle + great + elder brother", "source": "Nihon shoki"}
+{"name": "Ama no Nunahara Oki no Mahito", "type": "person", "morphemes": ["ame", "nunahara", "oki", "ma", "hito"], "gloss": "heaven + name + offshore + true + person", "source": "Nihon shoki"}
+{"name": "Ōama", "type": "person", "morphemes": ["ō", "ama"], "gloss": "great + fisherman", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Takamanohara Hironohime", "type": "person", "morphemes": ["taka", "ame", "hara", "hiro", "nu", "hime"], "gloss": "high + heaven + plain + wide + moor + princess", "source": "Nihon shoki"}
+{"name": "Unonosarara", "type": "person", "morphemes": ["u", "nu", "sarara"], "gloss": "cormorant + moor + name", "source": "Nihon shoki"}
+{"name": "Itsuse", "type": "person", "morphemes": ["itsu", "se"], "gloss": "five + rapids", "source": "Kojiki; Nihon shoki"}
+{"name": "Inahi", "type": "person", "morphemes": ["inahi"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Tagishimimi", "type": "person", "morphemes": ["tagishi", "mimi"], "gloss": "name + mimi (title)", "source": "Kojiki; Nihon shoki"}
+{"name": "Kisumimi", "type": "person", "morphemes": ["kisu", "mimi"], "gloss": "name + mimi (title)", "source": "Kojiki"}
+{"name": "Ahiratsuhime", "type": "person", "morphemes": ["ahira", "hime"], "gloss": "name + princess", "source": "Nihon shoki"}
+{"name": "Himetatara Isuzuhime", "type": "person", "morphemes": ["hime", "tatara", "i", "suzu", "hime"], "gloss": "princess + bellows + fifty + bell + princess", "source": "Nihon shoki"}
+{"name": "Hototatara Isusukihime", "type": "person", "morphemes": ["hoto", "tatara", "isusuku", "hime"], "gloss": "genitals + bellows + be startled + princess", "source": "Kojiki"}
+{"name": "Kamuyaimimi", "type": "person", "morphemes": ["kami", "ya", "i", "mimi"], "gloss": "god + eight + well + mimi (title)", "source": "Kojiki; Nihon shoki"}
+{"name": "Hikoyai", "type": "person", "morphemes": ["hiko", "ya", "i"], "gloss": "prince + eight + well", "source": "Kojiki"}
+{"name": "Isuzuyorihime", "type": "person", "morphemes": ["i", "suzu", "yoru", "hime"], "gloss": "fifty + bell + approach + princess", "source": "Nihon shoki"}
+{"name": "Hinoomi", "type": "person", "morphemes": ["hi", "omi"], "gloss": "sun + minister", "source": "Nihon shoki"}
+{"name": "Michinoomi", "type": "person", "morphemes": ["michi", "omi"], "gloss": "road + minister", "source": "Nihon shoki"}
+{"name": "Ōkume", "type": "person", "morphemes": ["ō", "kume"], "gloss": "great + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Shiinetsuhiko", "type": "person", "morphemes": ["shii", "ne", "hiko"], "gloss": "pasania oak + root + prince", "source": "Nihon shoki"}
+{"name": "Uzuhiko", "type": "person", "morphemes": ["uzu", "hiko"], "gloss": "precious + prince", "source": "Nihon shoki"}
+{"name": "Eshiki", "type": "person", "morphemes": ["e", "shiki"], "gloss": "elder brother + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Otoshiki", "type": "person", "morphemes": ["oto", "shiki"], "gloss": "younger + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Eukashi", "type": "person", "morphemes": ["e", "ukashi"], "gloss": "elder brother + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Otoukashi", "type": "person", "morphemes": ["oto", "ukashi"], "gloss": "younger + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Nagasunebiko", "type": "person", "morphemes": ["naga", "sune", "hiko"], "gloss": "long + shin + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Tomibiko", "type": "person", "morphemes": ["tomi", "hiko"], "gloss": "name + prince", "source": "Kojiki"}
+{"name": "Umashimade", "type": "person", "morphemes": ["umashi", "ma", "te"], "gloss": "fine + true + hand", "source": "Nihon shoki"}
+{"name": "Takakuraji", "type": "person", "morphemes": ["takakuraji"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Niikitobe", "type": "person", "morphemes": ["nii", "ki", "tobe"], "gloss": "new + fort + female chief", "source": "Nihon shoki"}
+{"name": "Nagusatobe", "type": "person", "morphemes": ["nagusa", "tobe"], "gloss": "name + female chief", "source": "Nihon shoki"}
+{"name": "Ōtataneko", "type": "person", "morphemes": ["ō", "tataneko"], "gloss": "great + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ikutamayoribime", "type": "person", "morphemes": ["iku", "tama", "yoru", "hime"], "gloss": "living + spirit + approach + princess", "source": "Kojiki"}
+{"name": "Mimakihime", "type": "person", "morphemes": ["mimaki", "hime"], "gloss": "name + princess", "source": "Nihon shoki"}
+{"name": "Toyosukiirihime", "type": "person", "morphemes": ["toyo", "suki", "iri", "hime"], "gloss": "abundant + spade + enter + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Nunakiirihime", "type": "person", "morphemes": ["nunaki", "iri", "hime"], "gloss": "name + enter + princess", "source": "Nihon shoki"}
+{"name": "Yamato Totohi Momosobime", "type": "person", "morphemes": ["yamato", "totohi", "momoso", "hime"], "gloss": "name + name + name + princess", "source": "Nihon shoki"}
+{"name": "Takehaniyasuhiko", "type": "person", "morphemes": ["take", "hani", "yasu", "hiko"], "gloss": "brave + clay + peaceful + prince", "source": "Nihon shoki"}
+{"name": "Atahime", "type": "person", "morphemes": ["ata", "hime"], "gloss": "name + princess", "source": "Nihon shoki"}
+{"name": "Ōbiko", "type": "person", "morphemes": ["ō", "hiko"], "gloss": "great + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Takenunakawawake", "type": "person", "morphemes": ["take", "nu", "kawa", "wake"], "gloss": "brave + jewel + river + lord", "source": "Kojiki; Nihon shoki"}
+{"name": "Kibitsuhiko", "type": "person", "morphemes": ["kibi", "hiko"], "gloss": "name + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Michinoushi", "type": "person", "morphemes": ["michi", "ushi"], "gloss": "road + master", "source": "Kojiki; Nihon shoki"}
+{"name": "Hikoimasu", "type": "person", "morphemes": ["hiko", "imasu"], "gloss": "prince + be (honorific)", "source": "Kojiki; Nihon shoki"}
+{"name": "Sahohiko", "type": "person", "morphemes": ["saho", "hiko"], "gloss": "name + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Sahohime", "type": "person", "morphemes": ["saho", "hime"], "gloss": "name + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Homutsuwake", "type": "person", "morphemes": ["homutsu", "wake"], "gloss": "name + lord", "source": "Nihon shoki"}
+{"name": "Hibasuhime", "type": "person", "morphemes": ["hibasu", "hime"], "gloss": "name + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Inishiki Irihiko", "type": "person", "morphemes": ["inishiki", "iri", "hiko"], "gloss": "name + enter + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Yamatohime", "type": "person", "morphemes": ["yamato", "hime"], "gloss": "name + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Nomi no Sukune", "type": "person", "morphemes": ["nomi", "sukune"], "gloss": "name + sukune (title)", "source": "Nihon shoki"}
+{"name": "Kehaya", "type": "person", "morphemes": ["keru", "haya"], "gloss": "kick + swift", "source": "Nihon shoki"}
+{"name": "Tajimamori", "type": "person", "morphemes": ["tajima", "moru"], "gloss": "name + guard", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Hiboko", "type": "person", "morphemes": ["ame", "hi", "hoko"], "gloss": "heaven + sun + spear", "source": "Kojiki; Nihon shoki"}
+{"name": "Tsunuga Arashito", "type": "person", "morphemes": ["tsunuga", "arashito"], "gloss": "name + name", "source": "Nihon shoki"}
+{"name": "Yasakairibime", "type": "person", "morphemes": ["ya", "saka", "iri", "hime"], "gloss": "eight + slope + enter + princess", "source": "Nihon shoki"}
+{"name": "Kamukushi", "type": "person", "morphemes": ["kami", "kushi"], "gloss": "god + comb", "source": "Nihon shoki"}
+{"name": "Iokiiribiko", "type": "person", "morphemes": ["io", "ki", "iri", "hiko"], "gloss": "five hundred + fort + enter + prince", "source": "Nihon shoki"}
+{"name": "Iwakamutsukari", "type": "person", "morphemes": ["iwa", "ka", "mutsu", "kari"], "gloss": "rock + deer + six + wild goose", "source": "Nihon shoki"}
+{"name": "Kamunatsusohime", "type": "person", "morphemes": ["kami", "natsu", "iso", "hime"], "gloss": "god + summer + shore + princess", "source": "Nihon shoki"}
+{"name": "Hayatsuhime", "type": "person", "morphemes": ["haya", "hime"], "gloss": "swift + princess", "source": "Nihon shoki"}
+{"name": "Hanatari", "type": "person", "morphemes": ["hana", "taru"], "gloss": "nose + hang", "source": "Nihon shoki"}
+{"name": "Mimitari", "type": "person", "morphemes": ["mimi", "taru"], "gloss": "ear + hang", "source": "Nihon shoki"}
+{"name": "Asahagi", "type": "person", "morphemes": ["asa", "hagu"], "gloss": "hemp + peel", "source": "Nihon shoki"}
+{"name": "Tsuchiori Iori", "type": "person", "morphemes": ["tsuchi", "oru", "i", "oru"], "gloss": "earth + break + boar + break", "source": "Nihon shoki"}
+{"name": "Uchisaru", "type": "person", "morphemes": ["utsu", "saru"], "gloss": "strike + monkey", "source": "Nihon shoki"}
+{"name": "Kunimaro", "type": "person", "morphemes": ["kuni", "maro"], "gloss": "land + maro (male name ending)", "source": "Nihon shoki"}
+{"name": "Ichifukaya", "type": "person", "morphemes": ["ichifukaya"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Ichikaya", "type": "person", "morphemes": ["ichikaya"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Atsukaya", "type": "person", "morphemes": ["atsukaya"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Yamato Takeru", "type": "person", "morphemes": ["yamato", "takeru"], "gloss": "name + brave one", "source": "Kojiki; Nihon shoki"}
+{"name": "Ousu", "type": "person", "morphemes": ["o", "usu"], "gloss": "small + mortar", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōusu", "type": "person", "morphemes": ["ō", "usu"], "gloss": "great + mortar", "source": "Kojiki; Nihon shoki"}
+{"name": "Yamato Oguna", "type": "person", "morphemes": ["yamato", "oguna"], "gloss": "name + boy", "source": "Kojiki; Nihon shoki"}
+{"name": "Kumaso Takeru", "type": "person", "morphemes": ["kumaso", "takeru"], "gloss": "name + brave one", "source": "Kojiki"}
+{"name": "Kawakami no Takeru", "type": "person", "morphemes": ["kawa", "kami", "takeru"], "gloss": "river + upper + brave one", "source": "Nihon shoki"}
+{"name": "Izumo Takeru", "type": "person", "morphemes": ["izumo", "takeru"], "gloss": "name + brave one", "source": "Kojiki"}
+{"name": "Ototachibanahime", "type": "person", "morphemes": ["oto", "tachibana", "hime"], "gloss": "younger + mandarin orange + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Miyazuhime", "type": "person", "morphemes": ["miyazu", "hime"], "gloss": "name + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Takehiko", "type": "person", "morphemes": ["take", "hiko"], "gloss": "brave + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Takehi", "type": "person", "morphemes": ["take", "hi"], "gloss": "brave + sun", "source": "Nihon shoki"}
+{"name": "Kagosaka", "type": "person", "morphemes": ["kago", "saka"], "gloss": "fawn + slope", "source": "Kojiki; Nihon shoki"}
+{"name": "Oshikuma", "type": "person", "morphemes": ["osu", "kuma"], "gloss": "press + bear", "source": "Kojiki; Nihon shoki"}
+{"name": "Takefurukuma", "type": "person", "morphemes": ["take", "furu", "kuma"], "gloss": "brave + wave + bear", "source": "Kojiki; Nihon shoki"}
+{"name": "Takenouchi no Sukune", "type": "person", "morphemes": ["take", "uchi", "sukune"], "gloss": "brave + inside + sukune (title)", "source": "Kojiki; Nihon shoki"}
+{"name": "Uji no Wakiiratsuko", "type": "person", "morphemes": ["uji", "waka", "iratsuko"], "gloss": "name + young + young man", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōyamamori", "type": "person", "morphemes": ["ō", "yama", "moru"], "gloss": "great + mountain + guard", "source": "Kojiki; Nihon shoki"}
+{"name": "Yata no Wakiiratsume", "type": "person", "morphemes": ["ya", "ta", "waka", "iratsume"], "gloss": "eight + field + young + young lady", "source": "Kojiki; Nihon shoki"}
+{"name": "Medori", "type": "person", "morphemes": ["me", "tori"], "gloss": "woman + bird", "source": "Kojiki; Nihon shoki"}
+{"name": "Hayabusawake", "type": "person", "morphemes": ["hayabusa", "wake"], "gloss": "falcon + lord", "source": "Kojiki; Nihon shoki"}
+{"name": "Iwanohime", "type": "person", "morphemes": ["iwa", "hime"], "gloss": "rock + princess", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Kurohime", "type": "person", "morphemes": ["kuro", "hime"], "gloss": "black + princess", "source": "Kojiki"}
+{"name": "Kuchiko", "type": "person", "morphemes": ["kuchi", "ko"], "gloss": "mouth + child", "source": "Kojiki"}
+{"name": "Kuchihime", "type": "person", "morphemes": ["kuchi", "hime"], "gloss": "mouth + princess", "source": "Kojiki"}
+{"name": "Kaminagahime", "type": "person", "morphemes": ["kami", "naga", "hime"], "gloss": "hair + long + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Nakatsuhime", "type": "person", "morphemes": ["naka", "hime"], "gloss": "middle + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Achi", "type": "person", "morphemes": ["achi"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Achiki", "type": "person", "morphemes": ["achiki"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Wanikishi", "type": "person", "morphemes": ["wani", "kishi"], "gloss": "name + kishi (title)", "source": "Kojiki"}
+{"name": "Susukori", "type": "person", "morphemes": ["susukori"], "gloss": "name", "source": "Kojiki"}
+{"name": "Yuzuki", "type": "person", "morphemes": ["yumi", "tsuki"], "gloss": "bow + moon", "source": "Nihon shoki"}
+{"name": "Sobakari", "type": "person", "morphemes": ["sobakari"], "gloss": "name", "source": "Kojiki"}
+{"name": "Osaka no Ōnakatsuhime", "type": "person", "morphemes": ["osaka", "ō", "naka", "hime"], "gloss": "name + great + middle + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Sotōrihime", "type": "person", "morphemes": ["so", "tōru", "hime"], "gloss": "garment + pass through + princess", "source": "Nihon shoki"}
+{"name": "Mayowa", "type": "person", "morphemes": ["me", "yowa"], "gloss": "eye + weak", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōkusaka", "type": "person", "morphemes": ["ō", "kusaka"], "gloss": "great + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Wakakusakabe", "type": "person", "morphemes": ["waka", "kusaka", "be"], "gloss": "young + name + corporation", "source": "Kojiki; Nihon shoki"}
+{"name": "Ichinobe no Oshiwa", "type": "person", "morphemes": ["ichi", "he", "osu", "iwa"], "gloss": "market + side + press + rock", "source": "Nihon shoki"}
+{"name": "Tsubura", "type": "person", "morphemes": ["tsubura"], "gloss": "round", "source": "Kojiki; Nihon shoki"}
+{"name": "Karahime", "type": "person", "morphemes": ["kara", "hime"], "gloss": "name + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Akaiko", "type": "person", "morphemes": ["aka", "i", "ko"], "gloss": "red + boar + child", "source": "Kojiki"}
+{"name": "Takuhatahime", "type": "person", "morphemes": ["taku", "hata", "hime"], "gloss": "paper mulberry + loom + princess", "source": "Nihon shoki"}
+{"name": "Hoshikawa", "type": "person", "morphemes": ["hoshi", "kawa"], "gloss": "star + river", "source": "Nihon shoki"}
+{"name": "Wakahime", "type": "person", "morphemes": ["waka", "hime"], "gloss": "young + princess", "source": "Nihon shoki"}
+{"name": "Tasa", "type": "person", "morphemes": ["tasa"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Oyumi", "type": "person", "morphemes": ["o", "yumi"], "gloss": "small + bow", "source": "Nihon shoki"}
+{"name": "Ōiwa", "type": "person", "morphemes": ["ō", "iwa"], "gloss": "great + rock", "source": "Nihon shoki"}
+{"name": "Karako", "type": "person", "morphemes": ["kara", "ko"], "gloss": "name + child", "source": "Nihon shoki"}
+{"name": "Muroya", "type": "person", "morphemes": ["muro", "ya"], "gloss": "chamber + house", "source": "Nihon shoki"}
+{"name": "Urashimako", "type": "person", "morphemes": ["ura", "shima", "ko"], "gloss": "bay + island + child", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Iitoyo", "type": "person", "morphemes": ["ii", "toyo"], "gloss": "cooked rice + abundant", "source": "Kojiki; Nihon shoki"}
+{"name": "Odate", "type": "person", "morphemes": ["o", "tate"], "gloss": "small + shield", "source": "Kojiki; Nihon shoki"}
+{"name": "Okime", "type": "person", "morphemes": ["oku", "me"], "gloss": "put + eye", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōuo", "type": "person", "morphemes": ["ō", "uo"], "gloss": "great + fish", "source": "Kojiki"}
+{"name": "Karabukuro", "type": "person", "morphemes": ["kara", "fukuro"], "gloss": "name + bag", "source": "Kojiki; Nihon shoki"}
+{"name": "Shibi", "type": "person", "morphemes": ["shibi"], "gloss": "tuna", "source": "Kojiki; Nihon shoki"}
+{"name": "Kagehime", "type": "person", "morphemes": ["kage", "hime"], "gloss": "shadow + princess", "source": "Nihon shoki"}
+{"name": "Matori", "type": "person", "morphemes": ["ma", "tori"], "gloss": "true + bird", "source": "Nihon shoki"}
+{"name": "Tashiraka", "type": "person", "morphemes": ["tashiraka"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Iwai", "type": "person", "morphemes": ["iwa", "i"], "gloss": "rock + well", "source": "Kojiki; Nihon shoki"}
+{"name": "Kuzuko", "type": "person", "morphemes": ["kuzu", "ko"], "gloss": "arrowroot + child", "source": "Nihon shoki"}
+{"name": "Kenu", "type": "person", "morphemes": ["kenu"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Kanamura", "type": "person", "morphemes": ["kane", "mura"], "gloss": "metal + village", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Arakabi", "type": "person", "morphemes": ["arakabi"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Sadehiko", "type": "person", "morphemes": ["sa", "te", "hiko"], "gloss": "narrow + hand + prince", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Sayohime", "type": "person", "morphemes": ["sayo", "hime"], "gloss": "name + princess", "source": "Man'yōshū"}
+{"name": "Okoshi", "type": "person", "morphemes": ["okoshi"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Iname", "type": "person", "morphemes": ["ine", "me"], "gloss": "rice + eye", "source": "Nihon shoki"}
+{"name": "Kamako", "type": "person", "morphemes": ["kama", "ko"], "gloss": "sickle + child", "source": "Nihon shoki"}
+{"name": "Kitashihime", "type": "person", "morphemes": ["kitashi", "hime"], "gloss": "crude salt + princess", "source": "Nihon shoki"}
+{"name": "Oanegimi", "type": "person", "morphemes": ["o", "ane", "kimi"], "gloss": "small + elder sister + lord", "source": "Nihon shoki"}
+{"name": "Ishihime", "type": "person", "morphemes": ["ishi", "hime"], "gloss": "stone + princess", "source": "Nihon shoki"}
+{"name": "Hirohime", "type": "person", "morphemes": ["hiro", "hime"], "gloss": "wide + princess", "source": "Nihon shoki"}
+{"name": "Umako", "type": "person", "morphemes": ["uma", "ko"], "gloss": "horse + child", "source": "Nihon shoki"}
+{"name": "Moriya", "type": "person", "morphemes": ["moru", "ya"], "gloss": "guard + house", "source": "Nihon shoki"}
+{"name": "Katsumi", "type": "person", "morphemes": ["katsu", "umi"], "gloss": "win + sea", "source": "Nihon shoki"}
+{"name": "Anahobe", "type": "person", "morphemes": ["ana", "ho", "be"], "gloss": "hole + ear of grain + corporation", "source": "Nihon shoki"}
+{"name": "Hashihito", "type": "person", "morphemes": ["hashi", "hito"], "gloss": "between + person", "source": "Nihon shoki"}
+{"name": "Umayado", "type": "person", "morphemes": ["umaya", "to"], "gloss": "stable + door", "source": "Nihon shoki"}
+{"name": "Toyotomimi", "type": "person", "morphemes": ["toyo", "to", "mimi"], "gloss": "abundant + sharp + ear", "source": "Nihon shoki"}
+{"name": "Kamitsumiya", "type": "person", "morphemes": ["kami", "miya"], "gloss": "upper + palace", "source": "Nihon shoki"}
+{"name": "Hikohito no Ōe", "type": "person", "morphemes": ["hiko", "hito", "ō", "e"], "gloss": "prince + person + great + elder brother", "source": "Nihon shoki"}
+{"name": "Takeda", "type": "person", "morphemes": ["take", "ta"], "gloss": "bamboo + field", "source": "Nihon shoki"}
+{"name": "Imoko", "type": "person", "morphemes": ["imo", "ko"], "gloss": "beloved + child", "source": "Nihon shoki"}
+{"name": "Tori", "type": "person", "morphemes": ["tori"], "gloss": "bird", "source": "Nihon shoki"}
+{"name": "Kawakatsu", "type": "person", "morphemes": ["kawa", "katsu"], "gloss": "river + win", "source": "Nihon shoki"}
+{"name": "Marise", "type": "person", "morphemes": ["marise"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Yamashiro no Ōe", "type": "person", "morphemes": ["yamashiro", "ō", "e"], "gloss": "name + great + elder brother", "source": "Nihon shoki"}
+{"name": "Iruka", "type": "person", "morphemes": ["iruka"], "gloss": "dolphin", "source": "Nihon shoki"}
+{"name": "Kuratsukuri", "type": "person", "morphemes": ["kura", "tsukuru"], "gloss": "saddle + make", "source": "Nihon shoki"}
+{"name": "Kamatari", "type": "person", "morphemes": ["kama", "taru"], "gloss": "sickle + suffice", "source": "Nihon shoki"}
+{"name": "Ishikawamaro", "type": "person", "morphemes": ["ishi", "kawa", "maro"], "gloss": "stone + river + maro (male name ending)", "source": "Nihon shoki"}
+{"name": "Komaro", "type": "person", "morphemes": ["ko", "maro"], "gloss": "child + maro (male name ending)", "source": "Nihon shoki"}
+{"name": "Amita", "type": "person", "morphemes": ["ami", "ta"], "gloss": "net + field", "source": "Nihon shoki"}
+{"name": "Furuhito no Ōe", "type": "person", "morphemes": ["furu", "hito", "ō", "e"], "gloss": "old + person + great + elder brother", "source": "Nihon shoki"}
+{"name": "Uchimaro", "type": "person", "morphemes": ["uchi", "maro"], "gloss": "inside + maro (male name ending)", "source": "Nihon shoki"}
+{"name": "Arima", "type": "person", "morphemes": ["arima"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Akae", "type": "person", "morphemes": ["aka", "e"], "gloss": "red + elder brother", "source": "Nihon shoki"}
+{"name": "Konoshiro", "type": "person", "morphemes": ["konoshiro"], "gloss": "gizzard shad", "source": "Nihon shoki"}
+{"name": "Hirafu", "type": "person", "morphemes": ["hirafu"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Takeru", "type": "person", "morphemes": ["takeru"], "gloss": "brave one", "source": "Nihon shoki"}
+{"name": "Ōta", "type": "person", "morphemes": ["ō", "ta"], "gloss": "great + field", "source": "Nihon shoki"}
+{"name": "Niitabe", "type": "person", "morphemes": ["nii", "ta", "be"], "gloss": "new + field + corporation", "source": "Nihon shoki"}
+{"name": "Minabe", "type": "person", "morphemes": ["minabe"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Kawashima", "type": "person", "morphemes": ["kawa", "shima"], "gloss": "river + island", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ōku", "type": "person", "morphemes": ["ōku"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ōtsu", "type": "person", "morphemes": ["ō", "tsu"], "gloss": "great + harbor", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Kusakabe", "type": "person", "morphemes": ["kusaka", "be"], "gloss": "name + corporation", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Takechi", "type": "person", "morphemes": ["taka", "ichi"], "gloss": "high + market", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Osakabe", "type": "person", "morphemes": ["osaka", "be"], "gloss": "name + corporation", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Naga", "type": "person", "morphemes": ["naga"], "gloss": "long", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Yuge", "type": "person", "morphemes": ["yumi", "kezuru"], "gloss": "bow + shave", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Toneri", "type": "person", "morphemes": ["toneri"], "gloss": "attendant", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Hozumi", "type": "person", "morphemes": ["ho", "tsumu"], "gloss": "ear of grain + pile up", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Tōchi", "type": "person", "morphemes": ["tō", "ichi"], "gloss": "ten + market", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Nukata", "type": "person", "morphemes": ["nuka", "ta"], "gloss": "forehead + field", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Kagami", "type": "person", "morphemes": ["kagami"], "gloss": "mirror", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Takechimaro", "type": "person", "morphemes": ["taka", "ichi", "maro"], "gloss": "high + market + maro (male name ending)", "source": "Nihon shoki"}
+{"name": "Oyori", "type": "person", "morphemes": ["oyori"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Fukei", "type": "person", "morphemes": ["fukei"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Makuta", "type": "person", "morphemes": ["makuta"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Miyuki", "type": "person", "morphemes": ["mi", "yuku"], "gloss": "honorific + go", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Hakatoko", "type": "person", "morphemes": ["hakatoko"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Fuhito", "type": "person", "morphemes": ["fuhito"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Yasumaro", "type": "person", "morphemes": ["yasu", "maro"], "gloss": "peaceful + maro (male name ending)", "source": "Kojiki; Man'yōshū"}
+{"name": "Are", "type": "person", "morphemes": ["are"], "gloss": "name", "source": "Kojiki"}
+{"name": "Hitomaro", "type": "person", "morphemes": ["hito", "maro"], "gloss": "person + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Kurohito", "type": "person", "morphemes": ["kuro", "hito"], "gloss": "black + person", "source": "Man'yōshū"}
+{"name": "Akahito", "type": "person", "morphemes": ["aka", "hito"], "gloss": "red + person", "source": "Man'yōshū"}
+{"name": "Okura", "type": "person", "morphemes": ["okura"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Tabito", "type": "person", "morphemes": ["tabi", "hito"], "gloss": "journey + person", "source": "Man'yōshū"}
+{"name": "Yakamochi", "type": "person", "morphemes": ["yakamochi"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Sakanoue no Iratsume", "type": "person", "morphemes": ["saka", "ue", "iratsume"], "gloss": "slope + upper + young lady", "source": "Man'yōshū"}
+{"name": "Kasa no Iratsume", "type": "person", "morphemes": ["kasa", "iratsume"], "gloss": "hat + young lady", "source": "Man'yōshū"}
+{"name": "Ishikawa no Iratsume", "type": "person", "morphemes": ["ishi", "kawa", "iratsume"], "gloss": "stone + river + young lady", "source": "Man'yōshū"}
+{"name": "Tegona", "type": "person", "morphemes": ["tegona"], "gloss": "maiden", "source": "Man'yōshū"}
+{"name": "Unai Otome", "type": "person", "morphemes": ["unai", "otome"], "gloss": "name + maiden", "source": "Man'yōshū"}
+{"name": "Chinu Otoko", "type": "person", "morphemes": ["chinu", "otoko"], "gloss": "name + man", "source": "Man'yōshū"}
+{"name": "Unai Otoko", "type": "person", "morphemes": ["unai", "otoko"], "gloss": "name + man", "source": "Man'yōshū"}
+{"name": "Sakurako", "type": "person", "morphemes": ["sakura", "ko"], "gloss": "cherry + child", "source": "Man'yōshū"}
+{"name": "Kazurako", "type": "person", "morphemes": ["kazura", "ko"], "gloss": "vine wreath + child", "source": "Man'yōshū"}
+{"name": "Tamana", "type": "person", "morphemes": ["tamana"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Mushimaro", "type": "person", "morphemes": ["mushi", "maro"], "gloss": "insect + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Sakimaro", "type": "person", "morphemes": ["saki", "maro"], "gloss": "fortune + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Ikenushi", "type": "person", "morphemes": ["ike", "nushi"], "gloss": "pond + master", "source": "Man'yōshū"}
+{"name": "Surugamaro", "type": "person", "morphemes": ["suruga", "maro"], "gloss": "name + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Momoyo", "type": "person", "morphemes": ["momo", "yo"], "gloss": "hundred + age", "source": "Man'yōshū"}
+{"name": "Fumimochi", "type": "person", "morphemes": ["fumi", "motsu"], "gloss": "writing + hold", "source": "Man'yōshū"}
+{"name": "Tanushi", "type": "person", "morphemes": ["ta", "nushi"], "gloss": "field + master", "source": "Man'yōshū"}
+{"name": "Sukunamaro", "type": "person", "morphemes": ["sukuna", "maro"], "gloss": "few + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Kuromaro", "type": "person", "morphemes": ["kuro", "maro"], "gloss": "black + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Inakimi", "type": "person", "morphemes": ["ine", "kimi"], "gloss": "rice + lord", "source": "Man'yōshū"}
+{"name": "Azumahito", "type": "person", "morphemes": ["azuma", "hito"], "gloss": "east + person", "source": "Man'yōshū"}
+{"name": "Kiyotsugu", "type": "person", "morphemes": ["kiyo", "tsugu"], "gloss": "pure + succeed", "source": "Man'yōshū"}
+{"name": "Kiyotsuna", "type": "person", "morphemes": ["kiyo", "tsuna"], "gloss": "pure + rope", "source": "Man'yōshū"}
+{"name": "Murakami", "type": "person", "morphemes": ["mura", "kami"], "gloss": "village + upper", "source": "Man'yōshū"}
+{"name": "Umakai", "type": "person", "morphemes": ["uma", "kau"], "gloss": "horse + keep", "source": "Man'yōshū"}
+{"name": "Maro", "type": "person", "morphemes": ["maro"], "gloss": "maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Hirotsugu", "type": "person", "morphemes": ["hiro", "tsugu"], "gloss": "wide + succeed", "source": "Man'yōshū"}
+{"name": "Nakamaro", "type": "person", "morphemes": ["naka", "maro"], "gloss": "middle + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Yatsuka", "type": "person", "morphemes": ["ya", "tsuka"], "gloss": "eight + hand-breadth", "source": "Man'yōshū"}
+{"name": "Kiyokawa", "type": "person", "morphemes": ["kiyo", "kawa"], "gloss": "pure + river", "source": "Man'yōshū"}
+{"name": "Nagate", "type": "person", "morphemes": ["naga", "te"], "gloss": "long + hand", "source": "Man'yōshū"}
+{"name": "Toriyumi", "type": "person", "morphemes": ["toru", "yumi"], "gloss": "take + bow", "source": "Man'yōshū"}
+{"name": "Moroe", "type": "person", "morphemes": ["moro", "e"], "gloss": "all + elder brother", "source": "Man'yōshū"}
+{"name": "Naramaro", "type": "person", "morphemes": ["nara", "maro"], "gloss": "name + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Otomaro", "type": "person", "morphemes": ["oto", "maro"], "gloss": "younger + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Katsuo", "type": "person", "morphemes": ["katsu", "o"], "gloss": "win + man", "source": "Man'yōshū"}
+{"name": "Toshitari", "type": "person", "morphemes": ["toshi", "taru"], "gloss": "year + suffice", "source": "Man'yōshū"}
+{"name": "Hironari", "type": "person", "morphemes": ["hiro", "naru"], "gloss": "wide + become", "source": "Man'yōshū"}
+{"name": "Tarihito", "type": "person", "morphemes": ["taru", "hito"], "gloss": "suffice + person", "source": "Man'yōshū"}
+{"name": "Hironiwa", "type": "person", "morphemes": ["hiro", "niwa"], "gloss": "wide + court", "source": "Man'yōshū"}
+{"name": "Tsugimaro", "type": "person", "morphemes": ["tsugu", "maro"], "gloss": "succeed + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Michiyo", "type": "person", "morphemes": ["mi", "chi", "yo"], "gloss": "three + thousand + age", "source": "Man'yōshū"}
+{"name": "Kiyohito", "type": "person", "morphemes": ["kiyo", "hito"], "gloss": "pure + person", "source": "Man'yōshū"}
+{"name": "Oyu", "type": "person", "morphemes": ["oyu"], "gloss": "grow old", "source": "Man'yōshū"}
+{"name": "Akamaro", "type": "person", "morphemes": ["aka", "maro"], "gloss": "red + maro (male name ending)", "source": "Man'yōshū"}
+{"name": "Kunihito", "type": "person", "morphemes": ["kuni", "hito"], "gloss": "land + person", "source": "Man'yōshū"}
+{"name": "Ikusa", "type": "person", "morphemes": ["ikusa"], "gloss": "army", "source": "Man'yōshū"}
+{"name": "Hirotari", "type": "person", "morphemes": ["hiro", "taru"], "gloss": "wide + suffice", "source": "Man'yōshū"}
+{"name": "Akimochi", "type": "person", "morphemes": ["aki", "motsu"], "gloss": "autumn + hold", "source": "Man'yōshū"}
+{"name": "Tarikuni", "type": "person", "morphemes": ["taru", "kuni"], "gloss": "suffice + land", "source": "Man'yōshū"}
+{"name": "Hirome", "type": "person", "morphemes": ["hiro", "me"], "gloss": "wide + woman", "source": "Man'yōshū"}
+{"name": "Ushikai", "type": "person", "morphemes": ["ushi", "kau"], "gloss": "cow + keep", "source": "Man'yōshū"}
+{"name": "Morohito", "type": "person", "morphemes": ["moro", "hito"], "gloss": "all + person", "source": "Man'yōshū"}
+{"name": "Masuhito", "type": "person", "morphemes": ["masu", "hito"], "gloss": "increase + person", "source": "Man'yōshū"}
+{"name": "Yachishima", "type": "person", "morphemes": ["ya", "chi", "shima"], "gloss": "eight + thousand + island", "source": "Man'yōshū"}
+{"name": "Michiyoshi", "type": "person", "morphemes": ["michi", "yoshi"], "gloss": "road + good", "source": "Man'yōshū"}
+{"name": "Chitose", "type": "person", "morphemes": ["chi", "tose"], "gloss": "thousand + years", "source": "Man'yōshū"}
+{"name": "Kohitsuji", "type": "person", "morphemes": ["ko", "hitsuji"], "gloss": "child + sheep", "source": "Man'yōshū"}
+{"name": "Hiromimi", "type": "person", "morphemes": ["hiro", "mimi"], "gloss": "wide + ear", "source": "Man'yōshū"}
+{"name": "Umaosa", "type": "person", "morphemes": ["uma", "osa"], "gloss": "horse + chief", "source": "Man'yōshū"}
+{"name": "Furuhito", "type": "person", "morphemes": ["furu", "hito"], "gloss": "old + person", "source": "Man'yōshū"}
+{"name": "Kunioshi", "type": "person", "morphemes": ["kuni", "osu"], "gloss": "land + press", "source": "Man'yōshū"}
+{"name": "Akiniwa", "type": "person", "morphemes": ["aki", "niwa"], "gloss": "autumn + court", "source": "Man'yōshū"}
+{"name": "Kimitari", "type": "person", "morphemes": ["kimi", "taru"], "gloss": "lord + suffice", "source": "Man'yōshū"}
+{"name": "Ame no Minakanushi", "type": "deity", "morphemes": ["ame", "mi", "naka", "nushi"], "gloss": "heaven + honorific + middle + master", "source": "Kojiki; Nihon shoki"}
+{"name": "Takamimusuhi", "type": "deity", "morphemes": ["taka", "mi", "musu", "hi"], "gloss": "high + honorific + grow + spirit", "source": "Kojiki; Nihon shoki"}
+{"name": "Kamimusuhi", "type": "deity", "morphemes": ["kami", "musu", "hi"], "gloss": "god + grow + spirit", "source": "Kojiki; Nihon shoki"}
+{"name": "Umashiashikabihikoji", "type": "deity", "morphemes": ["umashi", "ashi", "kabi", "hiko", "ji"], "gloss": "fine + reed + shoot + prince + man (honorific)", "source": "Kojiki; Nihon shoki"}
+{"name": "Kuni no Tokotachi", "type": "deity", "morphemes": ["kuni", "toko", "tatsu"], "gloss": "land + eternal + stand", "source": "Kojiki; Nihon shoki"}
+{"name": "Izanagi", "type": "deity", "morphemes": ["izanagi"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Izanami", "type": "deity", "morphemes": ["izanami"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Hiruko", "type": "deity", "morphemes": ["hiru", "ko"], "gloss": "leech + child", "source": "Kojiki; Nihon shoki"}
+{"name": "Amaterasu", "type": "deity", "morphemes": ["ame", "terasu"], "gloss": "heaven + shine", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Ōhirume no Muchi", "type": "deity", "morphemes": ["ō", "hi", "me", "muchi"], "gloss": "great + sun + woman + noble one", "source": "Nihon shoki"}
+{"name": "Tsukuyomi", "type": "deity", "morphemes": ["tsuki", "yomu"], "gloss": "moon + count", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Susanoo", "type": "deity", "morphemes": ["susa", "o"], "gloss": "name + man", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōkuninushi", "type": "deity", "morphemes": ["ō", "kuni", "nushi"], "gloss": "great + land + master", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōnamuchi", "type": "deity", "morphemes": ["ō", "namuchi"], "gloss": "great + name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Yachihoko", "type": "deity", "morphemes": ["ya", "chi", "hoko"], "gloss": "eight + thousand + spear", "source": "Kojiki; Nihon shoki"}
+{"name": "Sukunabikona", "type": "deity", "morphemes": ["sukuna", "hiko", "na"], "gloss": "few + prince + name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Kotoshironushi", "type": "deity", "morphemes": ["koto", "shiru", "nushi"], "gloss": "word + rule + master", "source": "Kojiki; Nihon shoki"}
+{"name": "Takeminakata", "type": "deity", "morphemes": ["take", "minakata"], "gloss": "brave + name", "source": "Kojiki"}
+{"name": "Takemikazuchi", "type": "deity", "morphemes": ["take", "mikazuchi"], "gloss": "brave + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Futsunushi", "type": "deity", "morphemes": ["futsu", "nushi"], "gloss": "name + master", "source": "Nihon shoki"}
+{"name": "Ame no Uzume", "type": "deity", "morphemes": ["ame", "uzu", "me"], "gloss": "heaven + headdress + woman", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Koyane", "type": "deity", "morphemes": ["ame", "koyane"], "gloss": "heaven + name", "source": "Kojiki; Nihon shoki"}
+{"name": "Futotama", "type": "deity", "morphemes": ["futo", "tama"], "gloss": "thick + jewel", "source": "Kojiki; Nihon shoki"}
+{"name": "Omoikane", "type": "deity", "morphemes": ["omou", "kanu"], "gloss": "think + combine", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Tajikarao", "type": "deity", "morphemes": ["ame", "te", "chikara", "o"], "gloss": "heaven + hand + strength + man", "source": "Kojiki; Nihon shoki"}
+{"name": "Ishikoridome", "type": "deity", "morphemes": ["ishi", "koru", "tome"], "gloss": "stone + cut + old woman", "source": "Kojiki; Nihon shoki"}
+{"name": "Ninigi", "type": "deity", "morphemes": ["ninigi"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Konohana no Sakuyabime", "type": "deity", "morphemes": ["ki", "hana", "saku", "hime"], "gloss": "tree + flower + bloom + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Iwanagahime", "type": "deity", "morphemes": ["iwa", "naga", "hime"], "gloss": "rock + long + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōyamatsumi", "type": "deity", "morphemes": ["ō", "yama", "mi"], "gloss": "great + mountain + spirit", "source": "Kojiki; Nihon shoki"}
+{"name": "Watatsumi", "type": "deity", "morphemes": ["wata", "mi"], "gloss": "sea + spirit", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Toyotamabime", "type": "deity", "morphemes": ["toyo", "tama", "hime"], "gloss": "abundant + jewel + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Tamayoribime", "type": "deity", "morphemes": ["tama", "yoru", "hime"], "gloss": "spirit + approach + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Hoderi", "type": "deity", "morphemes": ["hi", "teru"], "gloss": "fire + shine", "source": "Kojiki"}
+{"name": "Hoori", "type": "deity", "morphemes": ["hoori"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ugayafukiaezu", "type": "deity", "morphemes": ["u", "kaya", "fuku", "au", "zu"], "gloss": "cormorant + thatch grass + thatch + finish + not", "source": "Kojiki; Nihon shoki"}
+{"name": "Sarutahiko", "type": "deity", "morphemes": ["saruta", "hiko"], "gloss": "name + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Yatagarasu", "type": "deity", "morphemes": ["ya", "ata", "karasu"], "gloss": "eight + hand-span + crow", "source": "Kojiki; Nihon shoki"}
+{"name": "Kagutsuchi", "type": "deity", "morphemes": ["kagu", "chi"], "gloss": "shine + spirit", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōgetsuhime", "type": "deity", "morphemes": ["ō", "ke", "hime"], "gloss": "great + food + princess", "source": "Kojiki"}
+{"name": "Ukemochi", "type": "deity", "morphemes": ["uke", "motsu"], "gloss": "food + hold", "source": "Nihon shoki"}
+{"name": "Toyoukebime", "type": "deity", "morphemes": ["toyo", "uke", "hime"], "gloss": "abundant + food + princess", "source": "Kojiki"}
+{"name": "Nakisawame", "type": "deity", "morphemes": ["naku", "sawa", "me"], "gloss": "cry + marsh + woman", "source": "Kojiki; Nihon shoki"}
+{"name": "Shinatsuhiko", "type": "deity", "morphemes": ["shina", "hiko"], "gloss": "wind + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōikazuchi", "type": "deity", "morphemes": ["ō", "ikazuchi"], "gloss": "great + thunder", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōmononushi", "type": "deity", "morphemes": ["ō", "mono", "nushi"], "gloss": "great + thing + master", "source": "Kojiki; Nihon shoki"}
+{"name": "Ukanomitama", "type": "deity", "morphemes": ["uka", "mi", "tama"], "gloss": "food + honorific + spirit", "source": "Kojiki; Nihon shoki"}
+{"name": "Kuebiko", "type": "deity", "morphemes": ["kuyu", "hiko"], "gloss": "crumble + prince", "source": "Kojiki"}
+{"name": "Ame no Wakahiko", "type": "deity", "morphemes": ["ame", "waka", "hiko"], "gloss": "heaven + young + prince", "source": "Kojiki; Nihon shoki"}
+{"name": "Shitateruhime", "type": "deity", "morphemes": ["shita", "teru", "hime"], "gloss": "below + shine + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Ajisukitakahikone", "type": "deity", "morphemes": ["aji", "suki", "taka", "hiko", "ne"], "gloss": "name + spade + high + prince + root", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Oshihomimi", "type": "deity", "morphemes": ["ame", "osu", "ho", "mimi"], "gloss": "heaven + press + ear of grain + mimi (title)", "source": "Kojiki; Nihon shoki"}
+{"name": "Nigihayahi", "type": "deity", "morphemes": ["nigi", "haya", "hi"], "gloss": "gentle + swift + sun", "source": "Kojiki; Nihon shoki"}
+{"name": "Ashinazuchi", "type": "deity", "morphemes": ["ashi", "nazu", "chi"], "gloss": "foot + stroke + spirit", "source": "Kojiki; Nihon shoki"}
+{"name": "Kushinadahime", "type": "deity", "morphemes": ["kushi", "ine", "ta", "hime"], "gloss": "wondrous + rice + field + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Yamata no Orochi", "type": "deity", "morphemes": ["ya", "mata", "orochi"], "gloss": "eight + fork + serpent", "source": "Kojiki; Nihon shoki"}
+{"name": "Hitokotonushi", "type": "deity", "morphemes": ["hito", "koto", "nushi"], "gloss": "one + word + master", "source": "Kojiki; Nihon shoki"}
+{"name": "Suseribime", "type": "deity", "morphemes": ["suseri", "hime"], "gloss": "name + princess", "source": "Kojiki"}
+{"name": "Ichikishimahime", "type": "deity", "morphemes": ["itsuku", "shima", "hime"], "gloss": "worship + island + princess", "source": "Kojiki; Nihon shoki"}
+{"name": "Inaba no Shirousagi", "type": "deity", "morphemes": ["inaba", "shiro", "usagi"], "gloss": "name + white + hare", "source": "Kojiki"}
+{"name": "Kumaso", "type": "group", "morphemes": ["kumaso"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Hayato", "type": "group", "morphemes": ["haya", "hito"], "gloss": "swift + person", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Emishi", "type": "group", "morphemes": ["emishi"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Tsuchigumo", "type": "group", "morphemes": ["tsuchi", "kumo"], "gloss": "earth + spider", "source": "Kojiki; Nihon shoki"}
+{"name": "Kuzu", "type": "group", "morphemes": ["kuzu"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Mishihase", "type": "group", "morphemes": ["mishihase"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Ama", "type": "group", "morphemes": ["ama"], "gloss": "fisherman", "source": "Nihon shoki"}
+{"name": "Kume", "type": "group", "morphemes": ["kume"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Yasotakeru", "type": "group", "morphemes": ["yaso", "takeru"], "gloss": "eighty + brave one", "source": "Nihon shoki"}
+{"name": "Yasogami", "type": "group", "morphemes": ["yaso", "kami"], "gloss": "eighty + god", "source": "Kojiki"}
+{"name": "Amatsukami", "type": "group", "morphemes": ["ame", "kami"], "gloss": "heaven + god", "source": "Kojiki; Nihon shoki"}
+{"name": "Kunitsukami", "type": "group", "morphemes": ["kuni", "kami"], "gloss": "land + god", "source": "Kojiki; Nihon shoki"}
+{"name": "Yaoyorozu no Kami", "type": "group", "morphemes": ["ya", "o", "yorozu", "kami"], "gloss": "eight + hundred + myriad + god", "source": "Kojiki; Nihon shoki"}
+{"name": "Kotoamatsukami", "type": "group", "morphemes": ["koto", "ame", "kami"], "gloss": "separate + heaven + god", "source": "Kojiki"}
+{"name": "Kamiyonanayo", "type": "group", "morphemes": ["kami", "yo", "nana", "yo"], "gloss": "god + age + seven + age", "source": "Kojiki"}
+{"name": "Itsutomonoo", "type": "group", "morphemes": ["itsu", "tomo", "o"], "gloss": "five + companion + cord", "source": "Kojiki"}
+{"name": "Yomotsushikome", "type": "group", "morphemes": ["yomi", "shiko", "me"], "gloss": "name + ugly + woman", "source": "Kojiki; Nihon shoki"}
+{"name": "Yomotsuikusa", "type": "group", "morphemes": ["yomi", "ikusa"], "gloss": "name + army", "source": "Kojiki"}
+{"name": "Mihashira no Uzunomiko", "type": "group", "morphemes": ["mi", "hashira", "uzu", "mi", "ko"], "gloss": "three + pillar + precious + honorific + child", "source": "Kojiki"}
+{"name": "Ayahito", "type": "group", "morphemes": ["aya", "hito"], "gloss": "name + person", "source": "Nihon shoki"}
+{"name": "Karahito", "type": "group", "morphemes": ["kara", "hito"], "gloss": "name + person", "source": "Nihon shoki"}
+{"name": "Tabe", "type": "group", "morphemes": ["ta", "be"], "gloss": "field + corporation", "source": "Nihon shoki"}
+{"name": "Suebe", "type": "group", "morphemes": ["sue", "be"], "gloss": "pottery + corporation", "source": "Nihon shoki"}
+{"name": "Kuratsukuribe", "type": "group", "morphemes": ["kura", "tsukuru", "be"], "gloss": "saddle + make + corporation", "source": "Nihon shoki"}
+{"name": "Hatoribe", "type": "group", "morphemes": ["hata", "oru", "be"], "gloss": "loom + weave + corporation", "source": "Man'yōshū"}
+{"name": "Urabe", "type": "group", "morphemes": ["ura", "be"], "gloss": "divination + corporation", "source": "Man'yōshū"}
+{"name": "Ukai", "type": "group", "morphemes": ["u", "kau"], "gloss": "cormorant + keep", "source": "Kojiki"}
+{"name": "Inukaibe", "type": "group", "morphemes": ["inu", "kau", "be"], "gloss": "dog + keep + corporation", "source": "Nihon shoki"}
+{"name": "Totoribe", "type": "group", "morphemes": ["tori", "toru", "be"], "gloss": "bird + take + corporation", "source": "Nihon shoki"}
+{"name": "Homutsube", "type": "group", "morphemes": ["homutsu", "be"], "gloss": "name + corporation", "source": "Nihon shoki"}
+{"name": "Tatebe", "type": "group", "morphemes": ["tate", "be"], "gloss": "shield + corporation", "source": "Nihon shoki"}
+{"name": "Shitoribe", "type": "group", "morphemes": ["shitori", "be"], "gloss": "striped cloth + corporation", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Yahagibe", "type": "group", "morphemes": ["ya", "hagu", "be"], "gloss": "arrow + fletch + corporation", "source": "Man'yōshū"}
+{"name": "Tamatsukuribe", "type": "group", "morphemes": ["tama", "tsukuru", "be"], "gloss": "jewel + make + corporation", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Tachihakibe", "type": "group", "morphemes": ["tachi", "haku", "be"], "gloss": "sword + wear + corporation", "source": "Nihon shoki"}
+{"name": "Shirakabe", "type": "group", "morphemes": ["shiraka", "be"], "gloss": "white hair + corporation", "source": "Nihon shoki"}
+{"name": "Yugei", "type": "group", "morphemes": ["yuki", "ou"], "gloss": "quiver + carry", "source": "Nihon shoki"}
+{"name": "Sakimori", "type": "group", "morphemes": ["saki", "moru"], "gloss": "cape + guard", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Amabe", "type": "group", "morphemes": ["ama", "be"], "gloss": "fisherman + corporation", "source": "Nihon shoki"}
+{"name": "Yamamoribe", "type": "group", "morphemes": ["yama", "moru", "be"], "gloss": "mountain + guard + corporation", "source": "Nihon shoki"}
+{"name": "Mibube", "type": "group", "morphemes": ["mibu", "be"], "gloss": "name + corporation", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Hasetsukabe", "type": "group", "morphemes": ["hasetsuka", "be"], "gloss": "name + corporation", "source": "Man'yōshū"}
+{"name": "Ōtomobe", "type": "group", "morphemes": ["ō", "tomo", "be"], "gloss": "great + companion + corporation", "source": "Man'yōshū"}
+{"name": "Wakatoneribe", "type": "group", "morphemes": ["waka", "toneri", "be"], "gloss": "young + attendant + corporation", "source": "Man'yōshū"}
+{"name": "Ōtoneribe", "type": "group", "morphemes": ["ō", "toneri", "be"], "gloss": "great + attendant + corporation", "source": "Man'yōshū"}
+{"name": "Ikutamabe", "type": "group", "morphemes": ["iku", "tama", "be"], "gloss": "living + jewel + corporation", "source": "Man'yōshū"}
+{"name": "Imamatsuribe", "type": "group", "morphemes": ["ima", "matsuru", "be"], "gloss": "now + worship + corporation", "source": "Man'yōshū"}
+{"name": "Sazakibe", "type": "group", "morphemes": ["sazaki", "be"], "gloss": "wren + corporation", "source": "Man'yōshū"}
+{"name": "Kisakibe", "type": "group", "morphemes": ["kisaki", "be"], "gloss": "queen + corporation", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Wakasakurabe", "type": "group", "morphemes": ["waka", "sakura", "be"], "gloss": "young + cherry + corporation", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ōtomo", "type": "lineage", "morphemes": ["ō", "tomo"], "gloss": "great + companion", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Mononobe", "type": "lineage", "morphemes": ["mono", "be"], "gloss": "thing + corporation", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Soga", "type": "lineage", "morphemes": ["soga"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Nakatomi", "type": "lineage", "morphemes": ["naka", "omi"], "gloss": "middle + minister", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Fujiwara", "type": "lineage", "morphemes": ["fuji", "hara"], "gloss": "wisteria + plain", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Kakinomoto", "type": "lineage", "morphemes": ["kaki", "moto"], "gloss": "persimmon + base", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ki", "type": "lineage", "morphemes": ["ki"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Kose", "type": "lineage", "morphemes": ["kose"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Heguri", "type": "lineage", "morphemes": ["heguri"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Katsuragi", "type": "lineage", "morphemes": ["katsuragi"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Wani", "type": "lineage", "morphemes": ["wani"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Abe", "type": "lineage", "morphemes": ["abe"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Imibe", "type": "lineage", "morphemes": ["imi", "be"], "gloss": "taboo + corporation", "source": "Nihon shoki"}
+{"name": "Haji", "type": "lineage", "morphemes": ["haji"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Hata", "type": "lineage", "morphemes": ["hata"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Aya", "type": "lineage", "morphemes": ["aya"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Saeki", "type": "lineage", "morphemes": ["saeki"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Tajihi", "type": "lineage", "morphemes": ["tajihi"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ishikawa", "type": "lineage", "morphemes": ["ishi", "kawa"], "gloss": "stone + river", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Isonokami", "type": "lineage", "morphemes": ["iso", "kami"], "gloss": "shore + upper", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ōmiwa", "type": "lineage", "morphemes": ["ō", "miwa"], "gloss": "great + name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ōkimi", "type": "title", "morphemes": ["ō", "kimi"], "gloss": "great + lord", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Sumeramikoto", "type": "title", "morphemes": ["sumera", "mikoto"], "gloss": "sovereign + august word", "source": "Nihon shoki"}
+{"name": "Mikoto", "type": "title", "morphemes": ["mikoto"], "gloss": "august word", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Miko", "type": "title", "morphemes": ["mi", "ko"], "gloss": "honorific + child", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Himemiko", "type": "title", "morphemes": ["hime", "mi", "ko"], "gloss": "princess + honorific + child", "source": "Nihon shoki"}
+{"name": "Ōe", "type": "title", "morphemes": ["ō", "e"], "gloss": "great + elder brother", "source": "Nihon shoki"}
+{"name": "Ōomi", "type": "title", "morphemes": ["ō", "omi"], "gloss": "great + minister", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōmuraji", "type": "title", "morphemes": ["ō", "muraji"], "gloss": "great + muraji (rank title)", "source": "Kojiki; Nihon shoki"}
+{"name": "Omi", "type": "title", "morphemes": ["omi"], "gloss": "minister", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Muraji", "type": "title", "morphemes": ["muraji"], "gloss": "muraji (rank title)", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Kimi", "type": "title", "morphemes": ["kimi"], "gloss": "lord", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Kuni no Miyatsuko", "type": "title", "morphemes": ["kuni", "mi", "yatsuko"], "gloss": "land + honorific + servant", "source": "Kojiki; Nihon shoki"}
+{"name": "Agatanushi", "type": "title", "morphemes": ["agata", "nushi"], "gloss": "district + master", "source": "Kojiki; Nihon shoki"}
+{"name": "Sukune", "type": "title", "morphemes": ["sukune"], "gloss": "sukune (title)", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Uneme", "type": "title", "morphemes": ["uneme"], "gloss": "palace woman", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Mikotomochi", "type": "title", "morphemes": ["mikoto", "motsu"], "gloss": "august word + hold", "source": "Nihon shoki"}
+{"name": "Maetsukimi", "type": "title", "morphemes": ["mae", "kimi"], "gloss": "front + lord", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Iratsume", "type": "title", "morphemes": ["iratsume"], "gloss": "young lady", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Mikado", "type": "title", "morphemes": ["mi", "kado"], "gloss": "honorific + gate", "source": "Man'yōshū"}
+{"name": "Kusanagi no Tsurugi", "type": "other", "morphemes": ["kusa", "nagu", "tsurugi"], "gloss": "grass + mow + sword", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Murakumo no Tsurugi", "type": "other", "morphemes": ["ame", "mura", "kumo", "tsurugi"], "gloss": "heaven + cluster + cloud + sword", "source": "Nihon shoki"}
+{"name": "Totsuka no Tsurugi", "type": "other", "morphemes": ["tō", "tsuka", "tsurugi"], "gloss": "ten + hand-breadth + sword", "source": "Kojiki; Nihon shoki"}
+{"name": "Futsu no Mitama", "type": "other", "morphemes": ["futsu", "mi", "tama"], "gloss": "name + honorific + spirit", "source": "Kojiki; Nihon shoki"}
+{"name": "Yata no Kagami", "type": "other", "morphemes": ["ya", "ata", "kagami"], "gloss": "eight + hand-span + mirror", "source": "Kojiki; Nihon shoki"}
+{"name": "Yasakani no Magatama", "type": "other", "morphemes": ["yasakani", "maga", "tama"], "gloss": "name + evil + jewel", "source": "Kojiki; Nihon shoki"}
+{"name": "Shiomitsutama", "type": "other", "morphemes": ["shio", "mitsu", "tama"], "gloss": "tide + fill + jewel", "source": "Kojiki; Nihon shoki"}
+{"name": "Shiohirutama", "type": "other", "morphemes": ["shio", "hiru", "tama"], "gloss": "tide + ebb + jewel", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Nuboko", "type": "other", "morphemes": ["ame", "nu", "hoko"], "gloss": "heaven + jewel + spear", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Ukihashi", "type": "other", "morphemes": ["ame", "uku", "hashi"], "gloss": "heaven + float + bridge", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Mihashira", "type": "other", "morphemes": ["ame", "mi", "hashira"], "gloss": "heaven + honorific + pillar", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Torifune", "type": "other", "morphemes": ["ame", "tori", "fune"], "gloss": "heaven + bird + boat", "source": "Kojiki"}
+{"name": "Ame no Iwafune", "type": "other", "morphemes": ["ame", "iwa", "fune"], "gloss": "heaven + rock + boat", "source": "Nihon shoki"}
+{"name": "Karano", "type": "other", "morphemes": ["karu", "nu"], "gloss": "wither + moor", "source": "Kojiki; Nihon shoki"}
+{"name": "Ame no Norigoto", "type": "other", "morphemes": ["ame", "noru", "koto"], "gloss": "heaven + declare + harp", "source": "Kojiki"}
+{"name": "Ikutachi", "type": "other", "morphemes": ["iku", "tachi"], "gloss": "living + sword", "source": "Kojiki"}
+{"name": "Ikuyumiya", "type": "other", "morphemes": ["iku", "yumi", "ya"], "gloss": "living + bow + arrow", "source": "Kojiki"}
+{"name": "Yahirodono", "type": "other", "morphemes": ["ya", "hiro", "tono"], "gloss": "eight + fathom + hall", "source": "Kojiki; Nihon shoki"}
+{"name": "Kumeuta", "type": "other", "morphemes": ["kume", "uta"], "gloss": "name + song", "source": "Kojiki; Nihon shoki"}
+{"name": "Hinaburi", "type": "other", "morphemes": ["hina", "furi"], "gloss": "countryside + style", "source": "Kojiki"}
+{"name": "Kunishinobiuta", "type": "other", "morphemes": ["kuni", "shinobu", "uta"], "gloss": "land + long for + song", "source": "Kojiki"}
+{"name": "Katauta", "type": "other", "morphemes": ["kata", "uta"], "gloss": "half + song", "source": "Kojiki"}
+{"name": "Amagatariuta", "type": "other", "morphemes": ["ame", "kataru", "uta"], "gloss": "heaven + tell + song", "source": "Kojiki"}
+{"name": "Yūzutsu", "type": "celestial", "morphemes": ["yūzutsu"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Akaboshi", "type": "celestial", "morphemes": ["aka", "hoshi"], "gloss": "red + star", "source": "Man'yōshū"}
+{"name": "Hikohoshi", "type": "celestial", "morphemes": ["hiko", "hoshi"], "gloss": "prince + star", "source": "Man'yōshū"}
+{"name": "Tanabatatsume", "type": "celestial", "morphemes": ["tana", "hata", "me"], "gloss": "shelf + loom + woman", "source": "Man'yōshū"}
+{"name": "Amanogawa", "type": "celestial", "morphemes": ["ame", "kawa"], "gloss": "heaven + river", "source": "Man'yōshū"}
+{"name": "Tsukihitootoko", "type": "celestial", "morphemes": ["tsuki", "hito", "otoko"], "gloss": "moon + person + man", "source": "Man'yōshū"}
+{"name": "Sasaraeotoko", "type": "celestial", "morphemes": ["sasarae", "otoko"], "gloss": "name + man", "source": "Man'yōshū"}
+{"name": "Tsukuyomiotoko", "type": "celestial", "morphemes": ["tsuki", "yomu", "otoko"], "gloss": "moon + count + man", "source": "Man'yōshū"}
+{"name": "Amatsumikahoshi", "type": "celestial", "morphemes": ["ame", "mika", "hoshi"], "gloss": "heaven + name + star", "source": "Nihon shoki"}
+{"name": "Ame no Kagaseo", "type": "celestial", "morphemes": ["ame", "kagase", "o"], "gloss": "heaven + name + man", "source": "Nihon shoki"}
+{"name": "Hi no Kawa", "type": "river", "morphemes": ["hi", "kawa"], "gloss": "name + river", "source": "Kojiki; Nihon shoki"}
+{"name": "Isuzugawa", "type": "river", "morphemes": ["i", "suzu", "kawa"], "gloss": "fifty + bell + river", "source": "Nihon shoki"}
+{"name": "Ame no Yasukawa", "type": "river", "morphemes": ["ame", "yasu", "kawa"], "gloss": "heaven + peaceful + river", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Yoshinogawa", "type": "river", "morphemes": ["yoshi", "nu", "kawa"], "gloss": "good + moor + river", "source": "Man'yōshū"}
+{"name": "Asukagawa", "type": "river", "morphemes": ["asuka", "kawa"], "gloss": "name + river", "source": "Man'yōshū"}
+{"name": "Hatsusegawa", "type": "river", "morphemes": ["hatsuse", "kawa"], "gloss": "name + river", "source": "Man'yōshū"}
+{"name": "Sahogawa", "type": "river", "morphemes": ["saho", "kawa"], "gloss": "name + river", "source": "Man'yōshū"}
+{"name": "Ujigawa", "type": "river", "morphemes": ["uji", "kawa"], "gloss": "name + river", "source": "Kojiki; Man'yōshū"}
+{"name": "Tonegawa", "type": "river", "morphemes": ["tone", "kawa"], "gloss": "name + river", "source": "Man'yōshū"}
+{"name": "Tamagawa", "type": "river", "morphemes": ["tama", "kawa"], "gloss": "name + river", "source": "Man'yōshū"}
+{"name": "Kaguyama", "type": "hill", "morphemes": ["kagu", "yama"], "gloss": "shine + mountain", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Unebi", "type": "hill", "morphemes": ["unebi"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Miminashi", "type": "hill", "morphemes": ["mimi", "nashi"], "gloss": "ear + without", "source": "Man'yōshū"}
+{"name": "Miwa", "type": "hill", "morphemes": ["miwa"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Mimoro", "type": "hill", "morphemes": ["mimoro"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Tsukuba", "type": "hill", "morphemes": ["tsukuba"], "gloss": "name", "source": "Kojiki; Man'yōshū"}
+{"name": "Fuji", "type": "hill", "morphemes": ["fuji"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Takachiho", "type": "hill", "morphemes": ["taka", "chi", "ho"], "gloss": "high + thousand + ear of grain", "source": "Kojiki; Nihon shoki"}
+{"name": "Kujifuru", "type": "hill", "morphemes": ["kujifuru"], "gloss": "name", "source": "Kojiki"}
+{"name": "Ikoma", "type": "hill", "morphemes": ["ikoma"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Tatsuta", "type": "hill", "morphemes": ["tatsuta"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Futakami", "type": "hill", "morphemes": ["futa", "kami"], "gloss": "two + upper", "source": "Man'yōshū"}
+{"name": "Mikasa", "type": "hill", "morphemes": ["mi", "kasa"], "gloss": "honorific + hat", "source": "Man'yōshū"}
+{"name": "Takamado", "type": "hill", "morphemes": ["taka", "mado"], "gloss": "high + window", "source": "Man'yōshū"}
+{"name": "Ibuki", "type": "hill", "morphemes": ["ibuki"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ashigara", "type": "hill", "morphemes": ["ashigara"], "gloss": "name", "source": "Kojiki; Man'yōshū"}
+{"name": "Mifune", "type": "hill", "morphemes": ["mi", "fune"], "gloss": "honorific + boat", "source": "Man'yōshū"}
+{"name": "Hira", "type": "hill", "morphemes": ["hira"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Tachiyama", "type": "hill", "morphemes": ["tatsu", "yama"], "gloss": "stand + mountain", "source": "Man'yōshū"}
+{"name": "Hirefuri", "type": "hill", "morphemes": ["hire", "furu"], "gloss": "scarf + wave", "source": "Man'yōshū"}
+{"name": "Yamato", "type": "place", "morphemes": ["yamato"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Izumo", "type": "place", "morphemes": ["izumo"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Tsukushi", "type": "place", "morphemes": ["tsukushi"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Himuka", "type": "place", "morphemes": ["hi", "muku"], "gloss": "sun + face", "source": "Kojiki; Nihon shoki"}
+{"name": "Kibi", "type": "place", "morphemes": ["kibi"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Koshi", "type": "place", "morphemes": ["koshi"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Owari", "type": "place", "morphemes": ["owari"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Mino", "type": "place", "morphemes": ["mino"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Ise", "type": "place", "morphemes": ["ise"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Ki no Kuni", "type": "place", "morphemes": ["ki", "kuni"], "gloss": "tree + land", "source": "Kojiki"}
+{"name": "Kawachi", "type": "place", "morphemes": ["kawa", "uchi"], "gloss": "river + inside", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Naniwa", "type": "place", "morphemes": ["naniwa"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Ōmi", "type": "place", "morphemes": ["ōmi"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Yamashiro", "type": "place", "morphemes": ["yamashiro"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Harima", "type": "place", "morphemes": ["harima"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Iyo", "type": "place", "morphemes": ["iyo"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Tosa", "type": "place", "morphemes": ["tosa"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Awa", "type": "place", "morphemes": ["awa"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Awaji", "type": "place", "morphemes": ["awa", "chi"], "gloss": "name + road", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Sanuki", "type": "place", "morphemes": ["sanuki"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Toyo", "type": "place", "morphemes": ["toyo"], "gloss": "abundant", "source": "Kojiki; Nihon shoki"}
+{"name": "Hitachi", "type": "place", "morphemes": ["hitachi"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Musashi", "type": "place", "morphemes": ["musashi"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Sagami", "type": "place", "morphemes": ["sagami"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Suruga", "type": "place", "morphemes": ["suruga"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Tōtōmi", "type": "place", "morphemes": ["tō", "ōmi"], "gloss": "far + name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Mikawa", "type": "place", "morphemes": ["mikawa"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Shinano", "type": "place", "morphemes": ["shinano"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Kamitsukeno", "type": "place", "morphemes": ["kami", "ke", "nu"], "gloss": "upper + name + moor", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Shimotsukeno", "type": "place", "morphemes": ["shimo", "ke", "nu"], "gloss": "lower + name + moor", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Michinoku", "type": "place", "morphemes": ["michi", "oku"], "gloss": "road + interior", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Azuma", "type": "place", "morphemes": ["azuma"], "gloss": "east", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Sado", "type": "place", "morphemes": ["sado"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Oki", "type": "place", "morphemes": ["oki"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Tsushima", "type": "place", "morphemes": ["tsu", "shima"], "gloss": "harbor + island", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Iki", "type": "place", "morphemes": ["iki"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Inaba", "type": "place", "morphemes": ["inaba"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Tajima", "type": "place", "morphemes": ["tajima"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Tanba", "type": "place", "morphemes": ["tanba"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Wakasa", "type": "place", "morphemes": ["wakasa"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Noto", "type": "place", "morphemes": ["noto"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Nagato", "type": "place", "morphemes": ["naga", "to"], "gloss": "long + door", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Anato", "type": "place", "morphemes": ["ana", "to"], "gloss": "hole + door", "source": "Kojiki; Nihon shoki"}
+{"name": "Aki", "type": "place", "morphemes": ["aki"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōsumi", "type": "place", "morphemes": ["ō", "sumi"], "gloss": "great + corner", "source": "Nihon shoki"}
+{"name": "Satsuma", "type": "place", "morphemes": ["satsuma"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ata", "type": "place", "morphemes": ["ata"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Matsura", "type": "place", "morphemes": ["matsura"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Kashii", "type": "place", "morphemes": ["kashii"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Shikanoshima", "type": "place", "morphemes": ["shika", "shima"], "gloss": "name + island", "source": "Man'yōshū"}
+{"name": "Mizuki", "type": "place", "morphemes": ["mizu", "ki"], "gloss": "water + fort", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ōno", "type": "place", "morphemes": ["ō", "nu"], "gloss": "great + moor", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Usa", "type": "place", "morphemes": ["usa"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Tsunuga", "type": "place", "morphemes": ["tsunuga"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Kehi", "type": "place", "morphemes": ["kehi"], "gloss": "name", "source": "Kojiki"}
+{"name": "Sasanami", "type": "place", "morphemes": ["sasanami"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Shiga", "type": "place", "morphemes": ["shiga"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Karasaki", "type": "place", "morphemes": ["kara", "saki"], "gloss": "name + cape", "source": "Man'yōshū"}
+{"name": "Uji", "type": "place", "morphemes": ["uji"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Nara", "type": "place", "morphemes": ["nara"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Kasuga", "type": "place", "morphemes": ["kasuga"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Saho", "type": "place", "morphemes": ["saho"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Hatsuse", "type": "place", "morphemes": ["hatsuse"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Makimuku", "type": "place", "morphemes": ["makimuku"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Shiki", "type": "place", "morphemes": ["shiki"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Iware", "type": "place", "morphemes": ["iware"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Asuka", "type": "place", "morphemes": ["asuka"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Okamoto", "type": "place", "morphemes": ["oka", "moto"], "gloss": "hill + base", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Ikaruga", "type": "place", "morphemes": ["ikaruga"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Oharida", "type": "place", "morphemes": ["oharida"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Kiyomihara", "type": "place", "morphemes": ["kiyo", "mi", "hara"], "gloss": "pure + honorific + plain", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Toyura", "type": "place", "morphemes": ["toyo", "ura"], "gloss": "abundant + bay", "source": "Kojiki; Nihon shoki"}
+{"name": "Kashihara", "type": "place", "morphemes": ["kashi", "hara"], "gloss": "oak + plain", "source": "Kojiki; Nihon shoki"}
+{"name": "Uda", "type": "place", "morphemes": ["uda"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Yoshino", "type": "place", "morphemes": ["yoshi", "nu"], "gloss": "good + moor", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Kumano", "type": "place", "morphemes": ["kumano"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Watarai", "type": "place", "morphemes": ["watarai"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Atsuta", "type": "place", "morphemes": ["atsu", "ta"], "gloss": "hot + field", "source": "Nihon shoki"}
+{"name": "Yaizu", "type": "place", "morphemes": ["yaku", "tsu"], "gloss": "burn + harbor", "source": "Kojiki; Nihon shoki"}
+{"name": "Hashirimizu", "type": "place", "morphemes": ["hashiru", "mizu"], "gloss": "run + water", "source": "Kojiki; Nihon shoki"}
+{"name": "Niibari", "type": "place", "morphemes": ["nii", "haru"], "gloss": "new + clear", "source": "Kojiki"}
+{"name": "Katsushika", "type": "place", "morphemes": ["katsushika"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Mama", "type": "place", "morphemes": ["mama"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Sakaori", "type": "place", "morphemes": ["sakaori"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Kai", "type": "place", "morphemes": ["kai"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Izu", "type": "place", "morphemes": ["izu"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Iga", "type": "place", "morphemes": ["iga"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Takamanohara", "type": "place", "morphemes": ["taka", "ame", "hara"], "gloss": "high + heaven + plain", "source": "Kojiki; Nihon shoki"}
+{"name": "Ashihara no Nakatsukuni", "type": "place", "morphemes": ["ashi", "hara", "naka", "kuni"], "gloss": "reed + plain + middle + land", "source": "Kojiki; Nihon shoki"}
+{"name": "Toyoashihara no Mizuho no Kuni", "type": "place", "morphemes": ["toyo", "ashi", "hara", "mizu", "ho", "kuni"], "gloss": "abundant + reed + plain + fresh + ear of grain + land", "source": "Kojiki; Nihon shoki"}
+{"name": "Yomi", "type": "place", "morphemes": ["yomi"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Ne no Kuni", "type": "place", "morphemes": ["ne", "kuni"], "gloss": "root + land", "source": "Kojiki; Nihon shoki"}
+{"name": "Tokoyo", "type": "place", "morphemes": ["toko", "yo"], "gloss": "eternal + age", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Onogoroshima", "type": "place", "morphemes": ["ono", "koru", "shima"], "gloss": "self + congeal + island", "source": "Kojiki; Nihon shoki"}
+{"name": "Ōyashima", "type": "place", "morphemes": ["ō", "ya", "shima"], "gloss": "great + eight + island", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Akitsushima", "type": "place", "morphemes": ["akitsu", "shima"], "gloss": "name + island", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Yomotsu Hirasaka", "type": "place", "morphemes": ["yomi", "hira", "saka"], "gloss": "name + flat + slope", "source": "Kojiki; Nihon shoki"}
+{"name": "Ahakihara", "type": "place", "morphemes": ["ahaki", "hara"], "gloss": "name + plain", "source": "Kojiki; Nihon shoki"}
+{"name": "Ama no Iwayado", "type": "place", "morphemes": ["ame", "iwa", "ya", "to"], "gloss": "heaven + rock + house + door", "source": "Kojiki"}
+{"name": "Inasa", "type": "place", "morphemes": ["inasa"], "gloss": "name", "source": "Kojiki"}
+{"name": "Miho", "type": "place", "morphemes": ["miho"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Kasasa", "type": "place", "morphemes": ["kasasa"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Suga", "type": "place", "morphemes": ["suga"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Okinoshima", "type": "place", "morphemes": ["oki", "shima"], "gloss": "offshore + island", "source": "Kojiki"}
+{"name": "Takashima", "type": "place", "morphemes": ["taka", "shima"], "gloss": "high + island", "source": "Kojiki; Nihon shoki"}
+{"name": "Hayasuinoto", "type": "place", "morphemes": ["haya", "suu", "to"], "gloss": "swift + suck + door", "source": "Kojiki; Nihon shoki"}
+{"name": "Shirakata", "type": "place", "morphemes": ["shiro", "kata"], "gloss": "white + shoulder", "source": "Kojiki"}
+{"name": "Kusaka", "type": "place", "morphemes": ["kusaka"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Nagusa", "type": "place", "morphemes": ["nagusa"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Tomi", "type": "place", "morphemes": ["tomi"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Osaka", "type": "place", "morphemes": ["osaka"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Kara", "type": "place", "morphemes": ["kara"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Kudara", "type": "place", "morphemes": ["kudara"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Shiragi", "type": "place", "morphemes": ["shiragi"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Koma", "type": "place", "morphemes": ["koma"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Mimana", "type": "place", "morphemes": ["mimana"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Kure", "type": "place", "morphemes": ["kure"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Awashima", "type": "place", "morphemes": ["awa", "shima"], "gloss": "foam + island", "source": "Kojiki"}
+{"name": "Himejima", "type": "place", "morphemes": ["hime", "shima"], "gloss": "princess + island", "source": "Kojiki; Nihon shoki"}
+{"name": "Kojima", "type": "place", "morphemes": ["ko", "shima"], "gloss": "child + island", "source": "Kojiki; Nihon shoki"}
+{"name": "Suminoe", "type": "place", "morphemes": ["suminoe"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Mitsu", "type": "place", "morphemes": ["mi", "tsu"], "gloss": "honorific + harbor", "source": "Man'yōshū"}
+{"name": "Chinu", "type": "place", "morphemes": ["chinu"], "gloss": "name", "source": "Kojiki; Nihon shoki; Man'yōshū"}
+{"name": "Ashiya", "type": "place", "morphemes": ["ashi", "ya"], "gloss": "reed + house", "source": "Man'yōshū"}
+{"name": "Unai", "type": "place", "morphemes": ["unai"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Suma", "type": "place", "morphemes": ["suma"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Akashi", "type": "place", "morphemes": ["akashi"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Muro", "type": "place", "morphemes": ["muro"], "gloss": "name", "source": "Nihon shoki"}
+{"name": "Iwashiro", "type": "place", "morphemes": ["iwashiro"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Wakanoura", "type": "place", "morphemes": ["waka", "ura"], "gloss": "name + bay", "source": "Man'yōshū"}
+{"name": "Tagonoura", "type": "place", "morphemes": ["tago", "ura"], "gloss": "name + bay", "source": "Man'yōshū"}
+{"name": "Iwami", "type": "place", "morphemes": ["iwami"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Nabari", "type": "place", "morphemes": ["nabari"], "gloss": "name", "source": "Nihon shoki; Man'yōshū"}
+{"name": "Mie", "type": "place", "morphemes": ["mi", "e"], "gloss": "three + fold", "source": "Kojiki"}
+{"name": "Tsuetsukizaka", "type": "place", "morphemes": ["tsue", "tsuku", "saka"], "gloss": "staff + lean on + slope", "source": "Kojiki"}
+{"name": "Nobono", "type": "place", "morphemes": ["nobono"], "gloss": "name", "source": "Kojiki; Nihon shoki"}
+{"name": "Furu", "type": "place", "morphemes": ["furu"], "gloss": "name", "source": "Man'yōshū"}
+{"name": "Yamanobe", "type": "place", "morphemes": ["yama", "he"], "gloss": "mountain + side", "source": "Kojiki"}
+{"name": "Ōhara", "type": "place", "morphemes": ["ō", "hara"], "gloss": "great + plain", "source": "Man'yōshū"}
+{"name": "Izushi", "type": "place", "morphemes": ["izushi"], "gloss": "name", "source": "Kojiki; Nihon shoki"}

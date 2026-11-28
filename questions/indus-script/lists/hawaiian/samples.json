@@ -1,0 +1,696 @@
+{
+ "A_names": [
+  {
+   "name": "Kukuihaele",
+   "type": "place",
+   "morphemes": [
+    "kukui",
+    "haele"
+   ],
+   "gloss": "light + travel",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Lāʻielohelohe",
+   "type": "person",
+   "morphemes": [
+    "lāʻielohelohe"
+   ],
+   "gloss": "name",
+   "source": "Haleʻole, Lāʻieikawai"
+  },
+  {
+   "name": "Hinapukuiʻa",
+   "type": "deity",
+   "morphemes": [
+    "hina",
+    "puku",
+    "iʻa"
+   ],
+   "gloss": "Hina + gather + fish",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Hiʻilei",
+   "type": "celestial",
+   "morphemes": [
+    "hiʻi",
+    "lei"
+   ],
+   "gloss": "carry + beloved child",
+   "source": "Pukui-Elbert"
+  },
+  {
+   "name": "Kūmahana",
+   "type": "person",
+   "morphemes": [
+    "kūmahana"
+   ],
+   "gloss": "name",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Wailau",
+   "type": "place",
+   "morphemes": [
+    "wai",
+    "lau"
+   ],
+   "gloss": "water + many",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Hanapēpē",
+   "type": "place",
+   "morphemes": [
+    "hana",
+    "pēpē"
+   ],
+   "gloss": "bay + crushed",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Pōpanopano",
+   "type": "deity",
+   "morphemes": [
+    "pō",
+    "panopano"
+   ],
+   "gloss": "night + dense darkness",
+   "source": "Kumulipo"
+  },
+  {
+   "name": "Māui",
+   "type": "person",
+   "morphemes": [
+    "māui"
+   ],
+   "gloss": "name",
+   "source": "Kumulipo"
+  },
+  {
+   "name": "Kūhoʻoneʻenuʻu",
+   "type": "deity",
+   "morphemes": [
+    "kū",
+    "hoʻoneʻe",
+    "nuʻu"
+   ],
+   "gloss": "Kū + move + height",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Kahiʻukā",
+   "type": "deity",
+   "morphemes": [
+    "kahiʻukā"
+   ],
+   "gloss": "name",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Kāneʻohe",
+   "type": "place",
+   "morphemes": [
+    "kāne",
+    "ʻohe"
+   ],
+   "gloss": "husband + bamboo",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Kalihiwai",
+   "type": "place",
+   "morphemes": [
+    "ka",
+    "lihi",
+    "wai"
+   ],
+   "gloss": "the + edge + stream",
+   "source": "Hawaiʻi Place Names (Clark)"
+  },
+  {
+   "name": "Kekūhaupiʻo",
+   "type": "person",
+   "morphemes": [
+    "ke",
+    "kū",
+    "hau",
+    "piʻo"
+   ],
+   "gloss": "the + stand + hau tree + arched",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Waiākea",
+   "type": "place",
+   "morphemes": [
+    "wai",
+    "ākea"
+   ],
+   "gloss": "water + broad",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Kapaʻa",
+   "type": "place",
+   "morphemes": [
+    "ka",
+    "paʻa"
+   ],
+   "gloss": "the + solid",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Kōnāhuanui",
+   "type": "hill",
+   "morphemes": [
+    "kōnāhua",
+    "nui"
+   ],
+   "gloss": "fat innards + large",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Nīnole",
+   "type": "place",
+   "morphemes": [
+    "nīnole"
+   ],
+   "gloss": "bending",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Kalaepuni",
+   "type": "person",
+   "morphemes": [
+    "kalaepuni"
+   ],
+   "gloss": "name",
+   "source": "Fornander"
+  },
+  {
+   "name": "Keʻelikōlani",
+   "type": "person",
+   "morphemes": [
+    "keʻelikōlani"
+   ],
+   "gloss": "name",
+   "source": "Chiefly genealogies"
+  },
+  {
+   "name": "Pālāʻau",
+   "type": "place",
+   "morphemes": [
+    "pā",
+    "lāʻau"
+   ],
+   "gloss": "enclosure + wood",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Waimanu",
+   "type": "place",
+   "morphemes": [
+    "wai",
+    "manu"
+   ],
+   "gloss": "water + bird",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Kēōkea",
+   "type": "place",
+   "morphemes": [
+    "ke",
+    "one",
+    "kea"
+   ],
+   "gloss": "the + sand + white",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Alapaʻinui",
+   "type": "person",
+   "morphemes": [
+    "alapaʻi",
+    "nui"
+   ],
+   "gloss": "name + great",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Leleiōhoku",
+   "type": "person",
+   "morphemes": [
+    "leleiōhoku"
+   ],
+   "gloss": "name",
+   "source": "Chiefly genealogies"
+  },
+  {
+   "name": "Pāmano",
+   "type": "person",
+   "morphemes": [
+    "pāmano"
+   ],
+   "gloss": "name",
+   "source": "Fornander"
+  },
+  {
+   "name": "Olopana",
+   "type": "person",
+   "morphemes": [
+    "olopana"
+   ],
+   "gloss": "name",
+   "source": "Fornander"
+  },
+  {
+   "name": "Kalamainuʻu",
+   "type": "deity",
+   "morphemes": [
+    "kalamainuʻu"
+   ],
+   "gloss": "name",
+   "source": "Fornander"
+  },
+  {
+   "name": "Kalola",
+   "type": "person",
+   "morphemes": [
+    "kalola"
+   ],
+   "gloss": "name",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Honomū",
+   "type": "place",
+   "morphemes": [
+    "hono",
+    "mū"
+   ],
+   "gloss": "bay + silent",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Luahoʻomoe",
+   "type": "person",
+   "morphemes": [
+    "luahoʻomoe"
+   ],
+   "gloss": "name",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Kaimū",
+   "type": "place",
+   "morphemes": [
+    "kai",
+    "mū"
+   ],
+   "gloss": "sea + gathering",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Kīnaʻu",
+   "type": "person",
+   "morphemes": [
+    "kīnaʻu"
+   ],
+   "gloss": "flaw",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Lonomakua",
+   "type": "deity",
+   "morphemes": [
+    "lono",
+    "makua"
+   ],
+   "gloss": "Lono + parent",
+   "source": "Pukui-Elbert"
+  },
+  {
+   "name": "Kekauʻōnohi",
+   "type": "person",
+   "morphemes": [
+    "kekauʻōnohi"
+   ],
+   "gloss": "name",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Nāpali",
+   "type": "place",
+   "morphemes": [
+    "nā",
+    "pali"
+   ],
+   "gloss": "the (pl.) + cliff",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Ole",
+   "type": "person",
+   "morphemes": [
+    "ole"
+   ],
+   "gloss": "name",
+   "source": "Kumulipo"
+  },
+  {
+   "name": "Kahoʻāliʻi",
+   "type": "deity",
+   "morphemes": [
+    "kahoʻāliʻi"
+   ],
+   "gloss": "name",
+   "source": "Malo"
+  },
+  {
+   "name": "Kaumalapau",
+   "type": "place",
+   "morphemes": [
+    "kau",
+    "māla",
+    "paʻu"
+   ],
+   "gloss": "place + garden + soot",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Kihanuilūlūmoku",
+   "type": "deity",
+   "morphemes": [
+    "kiha",
+    "nui",
+    "lūlū",
+    "moku"
+   ],
+   "gloss": "supernatural lizard + great + shake + island",
+   "source": "Haleʻole, Lāʻieikawai"
+  },
+  {
+   "name": "Hanalaʻanui",
+   "type": "person",
+   "morphemes": [
+    "hanalaʻa",
+    "nui"
+   ],
+   "gloss": "name + great",
+   "source": "Chiefly genealogies"
+  },
+  {
+   "name": "Waikapū",
+   "type": "place",
+   "morphemes": [
+    "wai",
+    "ka",
+    "pū"
+   ],
+   "gloss": "water + the + conch",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Keliʻimaikaʻi",
+   "type": "person",
+   "morphemes": [
+    "ke",
+    "aliʻi",
+    "maikaʻi"
+   ],
+   "gloss": "the + chief + good",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Kūpāʻaikeʻe",
+   "type": "deity",
+   "morphemes": [
+    "kūpāʻaikeʻe"
+   ],
+   "gloss": "name",
+   "source": "Malo"
+  },
+  {
+   "name": "Pōʻeleʻele",
+   "type": "deity",
+   "morphemes": [
+    "pō",
+    "ʻeleʻele"
+   ],
+   "gloss": "night + black",
+   "source": "Kumulipo"
+  },
+  {
+   "name": "Kaikioʻewa",
+   "type": "person",
+   "morphemes": [
+    "kaikioʻewa"
+   ],
+   "gloss": "name",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Keaulumoku",
+   "type": "person",
+   "morphemes": [
+    "keaulumoku"
+   ],
+   "gloss": "name",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Halemano",
+   "type": "place",
+   "morphemes": [
+    "hale",
+    "mano"
+   ],
+   "gloss": "house + many",
+   "source": "Place Names of Hawaii"
+  },
+  {
+   "name": "Kālaipāhoa",
+   "type": "deity",
+   "morphemes": [
+    "kālai",
+    "pāhoa"
+   ],
+   "gloss": "carve + dagger",
+   "source": "Kamakau"
+  },
+  {
+   "name": "Kou",
+   "type": "place",
+   "morphemes": [
+    "kou"
+   ],
+   "gloss": "kou tree",
+   "source": "Place Names of Hawaii"
+  }
+ ],
+ "B_words": [
+  {
+   "english": "crab",
+   "word": "pāpaʻi"
+  },
+  {
+   "english": "handle",
+   "word": "kākai"
+  },
+  {
+   "english": "split",
+   "word": "māhae"
+  },
+  {
+   "english": "bunch",
+   "word": "ʻāhui"
+  },
+  {
+   "english": "mountains",
+   "word": "mauna"
+  },
+  {
+   "english": "curve",
+   "word": "piʻo"
+  },
+  {
+   "english": "pond",
+   "word": "kiowai"
+  },
+  {
+   "english": "bundle",
+   "word": "pūʻolo"
+  },
+  {
+   "english": "building",
+   "word": "hale"
+  },
+  {
+   "english": "basket",
+   "word": "hīnaʻi"
+  },
+  {
+   "english": "spikes",
+   "word": "kukū"
+  },
+  {
+   "english": "rake",
+   "word": "kope"
+  },
+  {
+   "english": "staff",
+   "word": "kōʻokoʻo"
+  },
+  {
+   "english": "body",
+   "word": "kino"
+  },
+  {
+   "english": "forked stick",
+   "word": "ʻāmana"
+  },
+  {
+   "english": "eye",
+   "word": "onohi"
+  },
+  {
+   "english": "flag",
+   "word": "hae"
+  },
+  {
+   "english": "heap",
+   "word": "puʻu"
+  },
+  {
+   "english": "load",
+   "word": "hāʻawe"
+  },
+  {
+   "english": "seed",
+   "word": "ʻanoʻano"
+  },
+  {
+   "english": "fill",
+   "word": "piha"
+  },
+  {
+   "english": "fields",
+   "word": "māla"
+  },
+  {
+   "english": "banner",
+   "word": "lepa"
+  },
+  {
+   "english": "carrier",
+   "word": "kōkō"
+  },
+  {
+   "english": "roots",
+   "word": "aʻa"
+  },
+  {
+   "english": "yoke",
+   "word": "ʻauamo"
+  },
+  {
+   "english": "catch",
+   "word": "ʻapo"
+  },
+  {
+   "english": "woman",
+   "word": "wahine"
+  },
+  {
+   "english": "pile",
+   "word": "ahu"
+  },
+  {
+   "english": "peaks",
+   "word": "wēkiu"
+  },
+  {
+   "english": "moon",
+   "word": "mahina"
+  },
+  {
+   "english": "stack",
+   "word": "ahu"
+  },
+  {
+   "english": "vein",
+   "word": "aʻa"
+  },
+  {
+   "english": "curves",
+   "word": "piʻo"
+  },
+  {
+   "english": "lightning",
+   "word": "uila"
+  },
+  {
+   "english": "fan",
+   "word": "pēʻahi"
+  },
+  {
+   "english": "fin",
+   "word": "halo"
+  },
+  {
+   "english": "carry",
+   "word": "amo"
+  },
+  {
+   "english": "stand",
+   "word": "kū"
+  },
+  {
+   "english": "heap",
+   "word": "ahu"
+  },
+  {
+   "english": "vessel",
+   "word": "ipu"
+  },
+  {
+   "english": "roots",
+   "word": "mole"
+  },
+  {
+   "english": "fork",
+   "word": "mana"
+  },
+  {
+   "english": "sprout",
+   "word": "ʻōmuʻo"
+  },
+  {
+   "english": "pupil",
+   "word": "onohi"
+  },
+  {
+   "english": "bunch",
+   "word": "huhui"
+  },
+  {
+   "english": "door",
+   "word": "puka"
+  },
+  {
+   "english": "sit",
+   "word": "noho"
+  },
+  {
+   "english": "breasts",
+   "word": "waiū"
+  },
+  {
+   "english": "plant",
+   "word": "lāʻau"
+  }
+ ]
+}

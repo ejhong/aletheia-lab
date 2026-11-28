@@ -1,0 +1,959 @@
+{
+ "002": {
+  "two": [
+   "duo"
+  ],
+  "pair": [
+   "jeugos"
+  ],
+  "strokes": [],
+  "tally": []
+ },
+ "060": {
+  "hook": [
+   "ankistron"
+  ],
+  "stroke": [],
+  "mark": [
+   "sēma"
+  ],
+  "line": [
+   "linon",
+   "stiks"
+  ]
+ },
+ "061": {
+  "tongs": [
+   "puragrē"
+  ],
+  "fork": [],
+  "forked stick": [],
+  "split": [
+   "skhijō",
+   "keajō"
+  ]
+ },
+ "070": {
+  "arrow": [
+   "oistos",
+   "ios"
+  ],
+  "spear": [
+   "doru",
+   "enkhos"
+  ],
+  "barb": [
+   "onkos"
+  ],
+  "point": [
+   "akōkē",
+   "aikhmē"
+  ]
+ },
+ "090": {
+  "man": [
+   "anēr",
+   "phōs"
+  ],
+  "person": [
+   "anthrōpos",
+   "brotos"
+  ],
+  "stand": [
+   "histēmi"
+  ],
+  "body": [
+   "demas",
+   "khrōs"
+  ]
+ },
+ "100": {
+  "heads": [
+   "kephalē",
+   "karē"
+  ],
+  "crowd": [
+   "homilos",
+   "plēthus"
+  ],
+  "man": [
+   "anēr",
+   "phōs"
+  ],
+  "three": [
+   "treis"
+  ]
+ },
+ "125": {
+  "archer": [
+   "toksotēs"
+  ],
+  "hunter": [
+   "thērētēr",
+   "epaktēr"
+  ],
+  "shoot": [
+   "ernos",
+   "thallos"
+  ],
+  "bow": [
+   "tokson",
+   "bios"
+  ]
+ },
+ "140": {
+  "woman": [
+   "gunē"
+  ],
+  "mother": [
+   "mētēr"
+  ],
+  "breasts": [
+   "majos",
+   "stēthos"
+  ],
+  "raise": [
+   "aeirō"
+  ]
+ },
+ "142": {
+  "staff": [
+   "skēptron",
+   "rabdos"
+  ],
+  "man": [
+   "anēr",
+   "phōs"
+  ],
+  "walker": [
+   "hoditēs"
+  ],
+  "stick": [
+   "rabdos",
+   "ksulon"
+  ]
+ },
+ "151": {
+  "carrier": [
+   "phoreus"
+  ],
+  "load": [
+   "akhthos",
+   "phortos"
+  ],
+  "carry": [
+   "pherō",
+   "phoreō"
+  ],
+  "yoke": [
+   "jugon"
+  ]
+ },
+ "154": {
+  "carrier": [
+   "phoreus"
+  ],
+  "load": [
+   "akhthos",
+   "phortos"
+  ],
+  "jar": [
+   "pithos",
+   "amphiphoreus"
+  ],
+  "carry": [
+   "pherō",
+   "phoreō"
+  ]
+ },
+ "156": {
+  "carrier": [
+   "phoreus"
+  ],
+  "load": [
+   "akhthos",
+   "phortos"
+  ],
+  "fan": [
+   "ptuon"
+  ],
+  "carry": [
+   "pherō",
+   "phoreō"
+  ]
+ },
+ "176": {
+  "sit": [
+   "hejomai",
+   "hēmai"
+  ],
+  "kneel": [],
+  "worker": [
+   "erithos",
+   "thēs"
+  ],
+  "rake": []
+ },
+ "220": {
+  "fish": [
+   "ikhthus"
+  ],
+  "fishing": [
+   "ikhthuaō"
+  ],
+  "fin": [],
+  "scale": [
+   "talanton"
+  ]
+ },
+ "226": {
+  "fish": [
+   "ikhthus"
+  ],
+  "fish trap": [],
+  "pond": [
+   "limnē"
+  ],
+  "catch": [
+   "agrē",
+   "haireō"
+  ]
+ },
+ "231": {
+  "fish": [
+   "ikhthus"
+  ],
+  "spot": [],
+  "dot": [],
+  "mark": [
+   "sēma"
+  ]
+ },
+ "233": {
+  "fish": [
+   "ikhthus"
+  ],
+  "cut fish": [],
+  "dried fish": [],
+  "band": [
+   "desmos",
+   "jōnē"
+  ]
+ },
+ "235": {
+  "fish": [
+   "ikhthus"
+  ],
+  "roof": [
+   "orophē"
+  ],
+  "cover": [
+   "pōma",
+   "kalumma"
+  ],
+  "lid": [
+   "pōma"
+  ]
+ },
+ "236": {
+  "fish": [
+   "ikhthus"
+  ],
+  "roof": [
+   "orophē"
+  ],
+  "trap": [
+   "dolos"
+  ],
+  "house": [
+   "oikos",
+   "domos"
+  ]
+ },
+ "240": {
+  "catfish": [],
+  "fish": [
+   "ikhthus"
+  ],
+  "whiskers": [],
+  "barbel": []
+ },
+ "255": {
+  "fish": [
+   "ikhthus"
+  ],
+  "fin": [],
+  "lizard": [],
+  "scale": [
+   "talanton"
+  ]
+ },
+ "350": {
+  "roots": [
+   "rija"
+  ],
+  "plant": [
+   "phuton",
+   "ernos"
+  ],
+  "sprout": [
+   "ernos"
+  ],
+  "tuft": [
+   "lophos",
+   "thusanos"
+  ]
+ },
+ "368": {
+  "flag": [],
+  "banner": [],
+  "pennant": [],
+  "pole": [
+   "kontos",
+   "stauros"
+  ]
+ },
+ "388": {
+  "grain": [
+   "sitos",
+   "puros"
+  ],
+  "ear": [
+   "ous"
+  ],
+  "sheaf": [
+   "dragma"
+  ],
+  "bunch": [
+   "botrus"
+  ]
+ },
+ "390": {
+  "tree": [
+   "dendreon",
+   "drus"
+  ],
+  "branch": [
+   "ojos",
+   "orpēks"
+  ],
+  "twig": [
+   "rōps",
+   "orpēks"
+  ],
+  "fork": []
+ },
+ "400": {
+  "comb": [],
+  "teeth": [
+   "odous"
+  ],
+  "rake": [],
+  "ladder": [
+   "klimaks"
+  ]
+ },
+ "405": {
+  "branch": [
+   "ojos",
+   "orpēks"
+  ],
+  "tree": [
+   "dendreon",
+   "drus"
+  ],
+  "twig": [
+   "rōps",
+   "orpēks"
+  ],
+  "sprout": [
+   "ernos"
+  ]
+ },
+ "407": {
+  "branch": [
+   "ojos",
+   "orpēks"
+  ],
+  "twig": [
+   "rōps",
+   "orpēks"
+  ],
+  "tree": [
+   "dendreon",
+   "drus"
+  ],
+  "shoot": [
+   "ernos",
+   "thallos"
+  ]
+ },
+ "415": {
+  "lamp": [
+   "lukhnos",
+   "lamptēr"
+  ],
+  "rake": [],
+  "trident": [
+   "triaina"
+  ],
+  "fork": []
+ },
+ "416": {
+  "lamp": [
+   "lukhnos",
+   "lamptēr"
+  ],
+  "rake": [],
+  "stand": [
+   "histēmi"
+  ],
+  "tier": []
+ },
+ "435": {
+  "zigzag": [],
+  "lightning": [
+   "keraunos",
+   "steropē"
+  ],
+  "snake": [
+   "ophis",
+   "drakōn"
+  ],
+  "turn": [
+   "trepō",
+   "strephō"
+  ]
+ },
+ "440": {
+  "doorway": [
+   "prothuron",
+   "oudos"
+  ],
+  "door": [
+   "thurē",
+   "sanis"
+  ],
+  "frame": [],
+  "gate": [
+   "pulē"
+  ]
+ },
+ "455": {
+  "hearth": [
+   "eskharē",
+   "histiē"
+  ],
+  "triangles": [],
+  "stones": [
+   "lithos",
+   "laas"
+  ],
+  "fire": [
+   "pur",
+   "phloks"
+  ]
+ },
+ "460": {
+  "peaks": [
+   "koruphē",
+   "akris"
+  ],
+  "mountains": [
+   "oros"
+  ],
+  "hills": [
+   "kolōnē",
+   "lophos"
+  ],
+  "spikes": [
+   "skolops"
+  ]
+ },
+ "503": {
+  "hill": [
+   "kolōnē",
+   "lophos"
+  ],
+  "heap": [
+   "thēmōn",
+   "this"
+  ],
+  "stack": [],
+  "pile": [
+   "thēmōn"
+  ]
+ },
+ "520": {
+  "spear": [
+   "doru",
+   "enkhos"
+  ],
+  "arrow": [
+   "oistos",
+   "ios"
+  ],
+  "lance": [
+   "enkhos",
+   "aikhmē"
+  ],
+  "point": [
+   "akōkē",
+   "aikhmē"
+  ]
+ },
+ "527": {
+  "box": [
+   "khēlos",
+   "larnaks"
+  ],
+  "basket": [
+   "talaros"
+  ],
+  "stool": [
+   "diphros",
+   "thrēnus"
+  ],
+  "chest": [
+   "stēthos",
+   "khēlos"
+  ]
+ },
+ "550": {
+  "drum": [],
+  "pincers": [
+   "puragrē"
+  ],
+  "tongs": [
+   "puragrē"
+  ],
+  "claw": [
+   "onuks"
+  ]
+ },
+ "555": {
+  "pincers": [
+   "puragrē"
+  ],
+  "drum": [],
+  "claw": [
+   "onuks"
+  ],
+  "tongs": [
+   "puragrē"
+  ]
+ },
+ "575": {
+  "building": [
+   "domos",
+   "dōma"
+  ],
+  "stand": [
+   "histēmi"
+  ],
+  "shrine": [
+   "nēos",
+   "temenos"
+  ],
+  "pedestal": []
+ },
+ "585": {
+  "tent": [
+   "klisiē"
+  ],
+  "hearth": [
+   "eskharē",
+   "histiē"
+  ],
+  "hut": [
+   "klisiē"
+  ],
+  "stand": [
+   "histēmi"
+  ]
+ },
+ "590": {
+  "box": [
+   "khēlos",
+   "larnaks"
+  ],
+  "pole": [
+   "kontos",
+   "stauros"
+  ],
+  "flag": [],
+  "standard": []
+ },
+ "595": {
+  "box": [
+   "khēlos",
+   "larnaks"
+  ],
+  "pole": [
+   "kontos",
+   "stauros"
+  ],
+  "basket": [
+   "talaros"
+  ],
+  "standard": []
+ },
+ "615": {
+  "grid": [],
+  "field": [
+   "agros",
+   "aroura"
+  ],
+  "net": [
+   "diktuon",
+   "linon"
+  ],
+  "wall": [
+   "teikhos",
+   "toikhos"
+  ]
+ },
+ "617": {
+  "grid": [],
+  "fields": [
+   "agros",
+   "aroura"
+  ],
+  "nets": [
+   "diktuon",
+   "linon"
+  ],
+  "walls": [
+   "teikhos",
+   "toikhos"
+  ]
+ },
+ "621": {
+  "door": [
+   "thurē",
+   "sanis"
+  ],
+  "box": [
+   "khēlos",
+   "larnaks"
+  ],
+  "frame": [],
+  "cabinet": []
+ },
+ "690": {
+  "cross": [],
+  "crossroads": [],
+  "junction": [],
+  "meet": [
+   "antiaō",
+   "antomai"
+  ]
+ },
+ "692": {
+  "cross": [],
+  "crossroads": [],
+  "junction": [],
+  "band": [
+   "desmos",
+   "jōnē"
+  ]
+ },
+ "705": {
+  "churn": [],
+  "pot": [
+   "lebēs",
+   "keramos"
+  ],
+  "stick": [
+   "rabdos",
+   "ksulon"
+  ],
+  "stir": [
+   "kukaō"
+  ]
+ },
+ "706": {
+  "churn": [],
+  "drop": [
+   "psias"
+  ],
+  "pot": [
+   "lebēs",
+   "keramos"
+  ],
+  "stir": [
+   "kukaō"
+  ]
+ },
+ "717": {
+  "paw": [
+   "pous"
+  ],
+  "hand": [
+   "kheir",
+   "palamē"
+  ],
+  "bundle": [],
+  "rake": []
+ },
+ "740": {
+  "jar": [
+   "pithos",
+   "amphiphoreus"
+  ],
+  "pot": [
+   "lebēs",
+   "keramos"
+  ],
+  "vessel": [
+   "angos"
+  ],
+  "handle": [
+   "kōpē"
+  ]
+ },
+ "741": {
+  "jar": [
+   "pithos",
+   "amphiphoreus"
+  ],
+  "pot": [
+   "lebēs",
+   "keramos"
+  ],
+  "vessel": [
+   "angos"
+  ],
+  "fill": [
+   "pimplēmi"
+  ]
+ },
+ "742": {
+  "jar": [
+   "pithos",
+   "amphiphoreus"
+  ],
+  "pot": [
+   "lebēs",
+   "keramos"
+  ],
+  "vessel": [
+   "angos"
+  ],
+  "fill": [
+   "pimplēmi"
+  ]
+ },
+ "760": {
+  "pot": [
+   "lebēs",
+   "keramos"
+  ],
+  "sprout": [
+   "ernos"
+  ],
+  "plant": [
+   "phuton",
+   "ernos"
+  ],
+  "horns": [
+   "keras"
+  ]
+ },
+ "790": {
+  "leaf": [
+   "phullon"
+  ],
+  "seed": [
+   "sperma"
+  ],
+  "eye": [
+   "ophthalmos",
+   "omma"
+  ],
+  "diamond": []
+ },
+ "798": {
+  "crab": [],
+  "claw": [
+   "onuks"
+  ],
+  "pincer": [
+   "puragrē"
+  ],
+  "shell": []
+ },
+ "803": {
+  "leaf": [
+   "phullon"
+  ],
+  "tree": [
+   "dendreon",
+   "drus"
+  ],
+  "vein": [
+   "phleps"
+  ],
+  "pipal": []
+ },
+ "806": {
+  "leaf": [
+   "phullon"
+  ],
+  "seed": [
+   "sperma"
+  ],
+  "sprout": [
+   "ernos"
+  ],
+  "vein": [
+   "phleps"
+  ]
+ },
+ "817": {
+  "leaf": [
+   "phullon"
+  ],
+  "bud": [
+   "kaluks"
+  ],
+  "seed": [
+   "sperma"
+  ],
+  "point": [
+   "akōkē",
+   "aikhmē"
+  ]
+ },
+ "820": {
+  "wheel": [
+   "kuklos",
+   "trokhos"
+  ],
+  "spokes": [
+   "knēmē"
+  ],
+  "sun": [
+   "ēelios"
+  ],
+  "star": [
+   "astēr",
+   "astron"
+  ]
+ },
+ "832": {
+  "eye": [
+   "ophthalmos",
+   "omma"
+  ],
+  "seed": [
+   "sperma"
+  ],
+  "almond": [],
+  "pupil": [
+   "glēnē"
+  ]
+ },
+ "840": {
+  "leaves": [
+   "phullon"
+  ],
+  "eyes": [
+   "ophthalmos",
+   "osse"
+  ],
+  "pair": [
+   "jeugos"
+  ],
+  "seeds": [
+   "sperma"
+  ]
+ },
+ "861": {
+  "diamond": [],
+  "bud": [
+   "kaluks"
+  ],
+  "leaf": [
+   "phullon"
+  ],
+  "point": [
+   "akōkē",
+   "aikhmē"
+  ]
+ },
+ "892": {
+  "bow": [
+   "tokson",
+   "bios"
+  ],
+  "arrow": [
+   "oistos",
+   "ios"
+  ],
+  "shoot": [
+   "ernos",
+   "thallos"
+  ],
+  "archer": [
+   "toksotēs"
+  ]
+ },
+ "900": {
+  "crescent": [
+   "mēnē"
+  ],
+  "moon": [
+   "selēnē",
+   "mēnē"
+  ],
+  "curve": [],
+  "bow": [
+   "tokson",
+   "bios"
+  ]
+ },
+ "904": {
+  "crescents": [
+   "mēnē"
+  ],
+  "moons": [
+   "selēnē",
+   "mēnē"
+  ],
+  "curves": [],
+  "waves": [
+   "kuma"
+  ]
+ },
+ "920": {
+  "crescent": [
+   "mēnē"
+  ],
+  "moon": [
+   "selēnē",
+   "mēnē"
+  ],
+  "leaf": [
+   "phullon"
+  ],
+  "bud": [
+   "kaluks"
+  ]
+ },
+ "923": {
+  "boomerang": [
+   "kalaurops"
+  ],
+  "crescent": [
+   "mēnē"
+  ],
+  "moon": [
+   "selēnē",
+   "mēnē"
+  ],
+  "bend": [
+   "ankōn"
+  ]
+ }
+}

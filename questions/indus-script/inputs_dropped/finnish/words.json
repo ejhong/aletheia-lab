@@ -1,0 +1,1037 @@
+{
+ "002": {
+  "two": [
+   "kaksi"
+  ],
+  "pair": [],
+  "strokes": [
+   "veto"
+  ],
+  "tally": [
+   "pirkka",
+   "lovi"
+  ]
+ },
+ "060": {
+  "hook": [
+   "koukku",
+   "onki"
+  ],
+  "stroke": [
+   "veto"
+  ],
+  "mark": [
+   "jalki",
+   "lovi"
+  ],
+  "line": [
+   "juova",
+   "jono"
+  ]
+ },
+ "061": {
+  "tongs": [
+   "pihdit",
+   "hohtimet"
+  ],
+  "fork": [
+   "hanko",
+   "haara"
+  ],
+  "forked stick": [
+   "hanko",
+   "haara"
+  ],
+  "split": [
+   "halkaista"
+  ]
+ },
+ "070": {
+  "arrow": [
+   "nuoli"
+  ],
+  "spear": [
+   "keihas",
+   "atrain"
+  ],
+  "barb": [
+   "vaka"
+  ],
+  "point": [
+   "karki"
+  ]
+ },
+ "090": {
+  "man": [
+   "mies",
+   "uros"
+  ],
+  "person": [
+   "ihminen"
+  ],
+  "stand": [
+   "seista",
+   "jalusta"
+  ],
+  "body": [
+   "ruumis"
+  ]
+ },
+ "100": {
+  "heads": [
+   "paa"
+  ],
+  "crowd": [
+   "joukko",
+   "parvi"
+  ],
+  "man": [
+   "mies",
+   "uros"
+  ],
+  "three": [
+   "kolme"
+  ]
+ },
+ "125": {
+  "archer": [
+   "ampuja"
+  ],
+  "hunter": [
+   "metsastaja",
+   "metsamies"
+  ],
+  "shoot": [
+   "vesa",
+   "verso"
+  ],
+  "bow": [
+   "jousi"
+  ]
+ },
+ "140": {
+  "woman": [
+   "nainen",
+   "vaimo"
+  ],
+  "mother": [
+   "aiti",
+   "emo"
+  ],
+  "breasts": [
+   "rinta",
+   "nisa"
+  ],
+  "raise": [
+   "nostaa"
+  ]
+ },
+ "142": {
+  "staff": [
+   "sauva"
+  ],
+  "man": [
+   "mies",
+   "uros"
+  ],
+  "walker": [
+   "kulkija",
+   "kavija"
+  ],
+  "stick": [
+   "kalikka",
+   "puikko"
+  ]
+ },
+ "151": {
+  "carrier": [
+   "kantaja"
+  ],
+  "load": [
+   "kuorma"
+  ],
+  "carry": [
+   "kantaa"
+  ],
+  "yoke": [
+   "ies"
+  ]
+ },
+ "154": {
+  "carrier": [
+   "kantaja"
+  ],
+  "load": [
+   "kuorma"
+  ],
+  "jar": [
+   "astia"
+  ],
+  "carry": [
+   "kantaa"
+  ]
+ },
+ "156": {
+  "carrier": [
+   "kantaja"
+  ],
+  "load": [
+   "kuorma"
+  ],
+  "fan": [],
+  "carry": [
+   "kantaa"
+  ]
+ },
+ "176": {
+  "sit": [
+   "istua"
+  ],
+  "kneel": [
+   "polvistua"
+  ],
+  "worker": [
+   "tekija"
+  ],
+  "rake": [
+   "harava"
+  ]
+ },
+ "220": {
+  "fish": [
+   "kala"
+  ],
+  "fishing": [
+   "kalastaa",
+   "onkia"
+  ],
+  "fin": [
+   "eva"
+  ],
+  "scale": [
+   "suomu",
+   "vaaka"
+  ]
+ },
+ "226": {
+  "fish": [
+   "kala"
+  ],
+  "fish trap": [
+   "merta"
+  ],
+  "pond": [
+   "lampi"
+  ],
+  "catch": [
+   "saalis",
+   "puutaa"
+  ]
+ },
+ "231": {
+  "fish": [
+   "kala"
+  ],
+  "spot": [
+   "tapla",
+   "pilkku"
+  ],
+  "dot": [
+   "pilkku",
+   "piste"
+  ],
+  "mark": [
+   "jalki",
+   "lovi"
+  ]
+ },
+ "233": {
+  "fish": [
+   "kala"
+  ],
+  "cut fish": [],
+  "dried fish": [],
+  "band": [
+   "nauha",
+   "side"
+  ]
+ },
+ "235": {
+  "fish": [
+   "kala"
+  ],
+  "roof": [
+   "katto"
+  ],
+  "cover": [
+   "kansi",
+   "peite"
+  ],
+  "lid": [
+   "kansi"
+  ]
+ },
+ "236": {
+  "fish": [
+   "kala"
+  ],
+  "roof": [
+   "katto"
+  ],
+  "trap": [
+   "ansa",
+   "loukku"
+  ],
+  "house": [
+   "talo",
+   "huone"
+  ]
+ },
+ "240": {
+  "catfish": [
+   "monni"
+  ],
+  "fish": [
+   "kala"
+  ],
+  "whiskers": [
+   "viiksi",
+   "haiven"
+  ],
+  "barbel": [
+   "viiksi"
+  ]
+ },
+ "255": {
+  "fish": [
+   "kala"
+  ],
+  "fin": [
+   "eva"
+  ],
+  "lizard": [
+   "sisilisko"
+  ],
+  "scale": [
+   "suomu",
+   "vaaka"
+  ]
+ },
+ "350": {
+  "roots": [
+   "juuri"
+  ],
+  "plant": [
+   "taimi",
+   "ruoho"
+  ],
+  "sprout": [
+   "itu",
+   "oras"
+  ],
+  "tuft": [
+   "tupsu",
+   "touhto"
+  ]
+ },
+ "368": {
+  "flag": [
+   "lippu"
+  ],
+  "banner": [
+   "lippu"
+  ],
+  "pennant": [
+   "lippu"
+  ],
+  "pole": [
+   "seivas",
+   "salko"
+  ]
+ },
+ "388": {
+  "grain": [
+   "juva",
+   "vilja"
+  ],
+  "ear": [
+   "korva"
+  ],
+  "sheaf": [
+   "luhde"
+  ],
+  "bunch": [
+   "terttu",
+   "kimppu"
+  ]
+ },
+ "390": {
+  "tree": [
+   "puu"
+  ],
+  "branch": [
+   "oksa",
+   "haara"
+  ],
+  "twig": [
+   "varpu",
+   "risu"
+  ],
+  "fork": [
+   "hanko",
+   "haara"
+  ]
+ },
+ "400": {
+  "comb": [
+   "suka"
+  ],
+  "teeth": [
+   "hammas"
+  ],
+  "rake": [
+   "harava"
+  ],
+  "ladder": [
+   "tikkaat",
+   "porras"
+  ]
+ },
+ "405": {
+  "branch": [
+   "oksa",
+   "haara"
+  ],
+  "tree": [
+   "puu"
+  ],
+  "twig": [
+   "varpu",
+   "risu"
+  ],
+  "sprout": [
+   "itu",
+   "oras"
+  ]
+ },
+ "407": {
+  "branch": [
+   "oksa",
+   "haara"
+  ],
+  "twig": [
+   "varpu",
+   "risu"
+  ],
+  "tree": [
+   "puu"
+  ],
+  "shoot": [
+   "vesa",
+   "verso"
+  ]
+ },
+ "415": {
+  "lamp": [],
+  "rake": [
+   "harava"
+  ],
+  "trident": [
+   "atrain"
+  ],
+  "fork": [
+   "hanko",
+   "haara"
+  ]
+ },
+ "416": {
+  "lamp": [],
+  "rake": [
+   "harava"
+  ],
+  "stand": [
+   "seista",
+   "jalusta"
+  ],
+  "tier": [
+   "kerros"
+  ]
+ },
+ "435": {
+  "zigzag": [],
+  "lightning": [
+   "salama"
+  ],
+  "snake": [
+   "kaarme",
+   "kuu"
+  ],
+  "turn": [
+   "kaantaa"
+  ]
+ },
+ "440": {
+  "doorway": [
+   "uksi",
+   "ovi"
+  ],
+  "door": [
+   "ovi",
+   "uksi"
+  ],
+  "frame": [
+   "keha"
+  ],
+  "gate": [
+   "veraja"
+  ]
+ },
+ "455": {
+  "hearth": [
+   "liesi",
+   "kolde"
+  ],
+  "triangles": [],
+  "stones": [
+   "kivi"
+  ],
+  "fire": [
+   "tuli",
+   "valkea"
+  ]
+ },
+ "460": {
+  "peaks": [
+   "huippu",
+   "laki"
+  ],
+  "mountains": [
+   "vuori"
+  ],
+  "hills": [
+   "maki",
+   "kumpu"
+  ],
+  "spikes": [
+   "okas",
+   "tutkain"
+  ]
+ },
+ "503": {
+  "hill": [
+   "maki",
+   "kumpu"
+  ],
+  "heap": [
+   "kasa",
+   "laja"
+  ],
+  "stack": [
+   "pino",
+   "keko"
+  ],
+  "pile": [
+   "kasa",
+   "keko"
+  ]
+ },
+ "520": {
+  "spear": [
+   "keihas",
+   "atrain"
+  ],
+  "arrow": [
+   "nuoli"
+  ],
+  "lance": [
+   "keihas"
+  ],
+  "point": [
+   "karki"
+  ]
+ },
+ "527": {
+  "box": [
+   "vakka",
+   "lipas"
+  ],
+  "basket": [
+   "vakka",
+   "vasu"
+  ],
+  "stool": [
+   "rahi"
+  ],
+  "chest": [
+   "rinta",
+   "lipas"
+  ]
+ },
+ "550": {
+  "drum": [],
+  "pincers": [
+   "pihdit",
+   "hohtimet"
+  ],
+  "tongs": [
+   "pihdit",
+   "hohtimet"
+  ],
+  "claw": [
+   "kunsi"
+  ]
+ },
+ "555": {
+  "pincers": [
+   "pihdit",
+   "hohtimet"
+  ],
+  "drum": [],
+  "claw": [
+   "kunsi"
+  ],
+  "tongs": [
+   "pihdit",
+   "hohtimet"
+  ]
+ },
+ "575": {
+  "building": [
+   "huone"
+  ],
+  "stand": [
+   "seista",
+   "jalusta"
+  ],
+  "shrine": [
+   "hiisi"
+  ],
+  "pedestal": [
+   "jalusta"
+  ]
+ },
+ "585": {
+  "tent": [
+   "kota"
+  ],
+  "hearth": [
+   "liesi",
+   "kolde"
+  ],
+  "hut": [
+   "kota",
+   "maja"
+  ],
+  "stand": [
+   "seista",
+   "jalusta"
+  ]
+ },
+ "590": {
+  "box": [
+   "vakka",
+   "lipas"
+  ],
+  "pole": [
+   "seivas",
+   "salko"
+  ],
+  "flag": [
+   "lippu"
+  ],
+  "standard": [
+   "lippu"
+  ]
+ },
+ "595": {
+  "box": [
+   "vakka",
+   "lipas"
+  ],
+  "pole": [
+   "seivas",
+   "salko"
+  ],
+  "basket": [
+   "vakka",
+   "vasu"
+  ],
+  "standard": [
+   "lippu"
+  ]
+ },
+ "615": {
+  "grid": [],
+  "field": [
+   "vainio",
+   "pelto"
+  ],
+  "net": [
+   "verkko",
+   "nuotta"
+  ],
+  "wall": [
+   "seina"
+  ]
+ },
+ "617": {
+  "grid": [],
+  "fields": [
+   "vainio",
+   "pelto"
+  ],
+  "nets": [
+   "verkko",
+   "nuotta"
+  ],
+  "walls": [
+   "seina"
+  ]
+ },
+ "621": {
+  "door": [
+   "ovi",
+   "uksi"
+  ],
+  "box": [
+   "vakka",
+   "lipas"
+  ],
+  "frame": [
+   "keha"
+  ],
+  "cabinet": []
+ },
+ "690": {
+  "cross": [],
+  "crossroads": [
+   "tienhaara"
+  ],
+  "junction": [
+   "haara",
+   "tienhaara"
+  ],
+  "meet": [
+   "kohdata"
+  ]
+ },
+ "692": {
+  "cross": [],
+  "crossroads": [
+   "tienhaara"
+  ],
+  "junction": [
+   "haara",
+   "tienhaara"
+  ],
+  "band": [
+   "nauha",
+   "side"
+  ]
+ },
+ "705": {
+  "churn": [
+   "kirnu"
+  ],
+  "pot": [
+   "pata"
+  ],
+  "stick": [
+   "kalikka",
+   "puikko"
+  ],
+  "stir": [
+   "hammentaa"
+  ]
+ },
+ "706": {
+  "churn": [
+   "kirnu"
+  ],
+  "drop": [
+   "pisara",
+   "tippa"
+  ],
+  "pot": [
+   "pata"
+  ],
+  "stir": [
+   "hammentaa"
+  ]
+ },
+ "717": {
+  "paw": [
+   "kapala",
+   "tassu"
+  ],
+  "hand": [
+   "kasi"
+  ],
+  "bundle": [
+   "nippu",
+   "kimppu"
+  ],
+  "rake": [
+   "harava"
+  ]
+ },
+ "740": {
+  "jar": [
+   "astia"
+  ],
+  "pot": [
+   "pata"
+  ],
+  "vessel": [
+   "astia",
+   "alus"
+  ],
+  "handle": [
+   "varsi",
+   "kahva"
+  ]
+ },
+ "741": {
+  "jar": [
+   "astia"
+  ],
+  "pot": [
+   "pata"
+  ],
+  "vessel": [
+   "astia",
+   "alus"
+  ],
+  "fill": [
+   "tauttaa"
+  ]
+ },
+ "742": {
+  "jar": [
+   "astia"
+  ],
+  "pot": [
+   "pata"
+  ],
+  "vessel": [
+   "astia",
+   "alus"
+  ],
+  "fill": [
+   "tauttaa"
+  ]
+ },
+ "760": {
+  "pot": [
+   "pata"
+  ],
+  "sprout": [
+   "itu",
+   "oras"
+  ],
+  "plant": [
+   "taimi",
+   "ruoho"
+  ],
+  "horns": [
+   "sarvi"
+  ]
+ },
+ "790": {
+  "leaf": [
+   "lehti"
+  ],
+  "seed": [
+   "siemen"
+  ],
+  "eye": [
+   "silma"
+  ],
+  "diamond": []
+ },
+ "798": {
+  "crab": [
+   "rapu"
+  ],
+  "claw": [
+   "kunsi"
+  ],
+  "pincer": [
+   "pihdit",
+   "hohtimet"
+  ],
+  "shell": [
+   "kuori",
+   "kotilo"
+  ]
+ },
+ "803": {
+  "leaf": [
+   "lehti"
+  ],
+  "tree": [
+   "puu"
+  ],
+  "vein": [
+   "suoni"
+  ],
+  "pipal": []
+ },
+ "806": {
+  "leaf": [
+   "lehti"
+  ],
+  "seed": [
+   "siemen"
+  ],
+  "sprout": [
+   "itu",
+   "oras"
+  ],
+  "vein": [
+   "suoni"
+  ]
+ },
+ "817": {
+  "leaf": [
+   "lehti"
+  ],
+  "bud": [
+   "silmu",
+   "nuppu"
+  ],
+  "seed": [
+   "siemen"
+  ],
+  "point": [
+   "karki"
+  ]
+ },
+ "820": {
+  "wheel": [
+   "puora",
+   "ratas"
+  ],
+  "spokes": [
+   "puola"
+  ],
+  "sun": [
+   "aurinko",
+   "paiva"
+  ],
+  "star": [
+   "tahti"
+  ]
+ },
+ "832": {
+  "eye": [
+   "silma"
+  ],
+  "seed": [
+   "siemen"
+  ],
+  "almond": [],
+  "pupil": [
+   "tera"
+  ]
+ },
+ "840": {
+  "leaves": [
+   "lehti"
+  ],
+  "eyes": [
+   "silma"
+  ],
+  "pair": [],
+  "seeds": [
+   "siemen"
+  ]
+ },
+ "861": {
+  "diamond": [],
+  "bud": [
+   "silmu",
+   "nuppu"
+  ],
+  "leaf": [
+   "lehti"
+  ],
+  "point": [
+   "karki"
+  ]
+ },
+ "892": {
+  "bow": [
+   "jousi"
+  ],
+  "arrow": [
+   "nuoli"
+  ],
+  "shoot": [
+   "vesa",
+   "verso"
+  ],
+  "archer": [
+   "ampuja"
+  ]
+ },
+ "900": {
+  "crescent": [
+   "kuu"
+  ],
+  "moon": [
+   "kuu"
+  ],
+  "curve": [
+   "kaari",
+   "mutka"
+  ],
+  "bow": [
+   "jousi"
+  ]
+ },
+ "904": {
+  "crescents": [
+   "kuu"
+  ],
+  "moons": [
+   "kuu"
+  ],
+  "curves": [
+   "kaari",
+   "mutka"
+  ],
+  "waves": [
+   "aalto",
+   "laine"
+  ]
+ },
+ "920": {
+  "crescent": [
+   "kuu"
+  ],
+  "moon": [
+   "kuu"
+  ],
+  "leaf": [
+   "lehti"
+  ],
+  "bud": [
+   "silmu",
+   "nuppu"
+  ]
+ },
+ "923": {
+  "boomerang": [],
+  "crescent": [
+   "kuu"
+  ],
+  "moon": [
+   "kuu"
+  ],
+  "bend": [
+   "mutka",
+   "polvi"
+  ]
+ }
+}

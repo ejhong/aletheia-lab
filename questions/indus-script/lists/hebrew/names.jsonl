@@ -1,0 +1,683 @@
+{"name": "Yahweh", "type": "deity", "morphemes": "yahweh", "gloss": "name", "source": "Exodus"}
+{"name": "Yāh", "type": "deity", "morphemes": "yāh", "gloss": "Yahweh", "source": "Exodus"}
+{"name": "ʾĒl", "type": "deity", "morphemes": "ʾēl", "gloss": "god", "source": "Genesis"}
+{"name": "ʾElōhīm", "type": "deity", "morphemes": "ʾelōhīm", "gloss": "god", "source": "Genesis"}
+{"name": "ʾElōah", "type": "deity", "morphemes": "ʾelōah", "gloss": "god", "source": "Job"}
+{"name": "ʿElyōn", "type": "deity", "morphemes": "ʿelyōn", "gloss": "most high", "source": "Genesis"}
+{"name": "Šadday", "type": "deity", "morphemes": "šadday", "gloss": "almighty", "source": "Genesis"}
+{"name": "ʾĒl ʿŌlām", "type": "deity", "morphemes": "ʾēl + ʿōlām", "gloss": "god + eternity", "source": "Genesis"}
+{"name": "ʾĒl Rōʾī", "type": "deity", "morphemes": "ʾēl + rāʾāh", "gloss": "god + see", "source": "Genesis"}
+{"name": "ʾĒl Berīt", "type": "deity", "morphemes": "ʾēl + berīt", "gloss": "god + covenant", "source": "Judges"}
+{"name": "ʾĒl Šadday", "type": "deity", "morphemes": "ʾēl + šadday", "gloss": "god + almighty", "source": "Genesis"}
+{"name": "ʾĒl ʿElyōn", "type": "deity", "morphemes": "ʾēl + ʿelyōn", "gloss": "god + most high", "source": "Genesis"}
+{"name": "Baʿal", "type": "deity", "morphemes": "baʿal", "gloss": "lord", "source": "Judges"}
+{"name": "Baʿal Berīt", "type": "deity", "morphemes": "baʿal + berīt", "gloss": "lord + covenant", "source": "Judges"}
+{"name": "Baʿal Zebūb", "type": "deity", "morphemes": "baʿal + zebūb", "gloss": "lord + fly", "source": "Kings"}
+{"name": "Baʿal Peʿōr", "type": "deity", "morphemes": "baʿal + peʿōr", "gloss": "lord + name", "source": "Numbers"}
+{"name": "ʾAšērāh", "type": "deity", "morphemes": "ʾašērāh", "gloss": "name", "source": "Kings"}
+{"name": "ʿAštōret", "type": "deity", "morphemes": "ʿaštōret", "gloss": "name", "source": "Kings"}
+{"name": "Mōlek", "type": "deity", "morphemes": "mōlek", "gloss": "name", "source": "Leviticus"}
+{"name": "Milkōm", "type": "deity", "morphemes": "milkōm", "gloss": "name", "source": "Kings"}
+{"name": "Kemōš", "type": "deity", "morphemes": "kemōš", "gloss": "name", "source": "Numbers"}
+{"name": "Dāgōn", "type": "deity", "morphemes": "dāgōn", "gloss": "name", "source": "Judges"}
+{"name": "Bēl", "type": "deity", "morphemes": "bēl", "gloss": "lord", "source": "Isaiah"}
+{"name": "Nebō", "type": "deity", "morphemes": "nebō", "gloss": "name", "source": "Isaiah"}
+{"name": "Merōdak", "type": "deity", "morphemes": "merōdak", "gloss": "name", "source": "Jeremiah"}
+{"name": "Tammūz", "type": "deity", "morphemes": "tammūz", "gloss": "name", "source": "Ezekiel"}
+{"name": "Rimmōn", "type": "deity", "morphemes": "rimmōn", "gloss": "pomegranate", "source": "Kings"}
+{"name": "Nisrōk", "type": "deity", "morphemes": "nisrōk", "gloss": "name", "source": "Kings"}
+{"name": "ʾAdrammelek", "type": "deity", "morphemes": "ʾadrammelek", "gloss": "name", "source": "Kings"}
+{"name": "ʿAnammelek", "type": "deity", "morphemes": "ʿanammelek", "gloss": "name", "source": "Kings"}
+{"name": "Sukkōt-benōt", "type": "deity", "morphemes": "sukkōt-benōt", "gloss": "name", "source": "Kings"}
+{"name": "Nērgal", "type": "deity", "morphemes": "nērgal", "gloss": "name", "source": "Kings"}
+{"name": "ʾAšīmāʾ", "type": "deity", "morphemes": "ʾašīmāʾ", "gloss": "name", "source": "Kings"}
+{"name": "Nibḥaz", "type": "deity", "morphemes": "nibḥaz", "gloss": "name", "source": "Kings"}
+{"name": "Tartāq", "type": "deity", "morphemes": "tartāq", "gloss": "name", "source": "Kings"}
+{"name": "Menī", "type": "deity", "morphemes": "menī", "gloss": "fate", "source": "Isaiah"}
+{"name": "Meleket haššāmayim", "type": "deity", "morphemes": "malkāh + šāmayim", "gloss": "queen + heaven", "source": "Jeremiah"}
+{"name": "Rešep", "type": "deity", "morphemes": "rešep", "gloss": "flame", "source": "Twelve Prophets"}
+{"name": "Līlīt", "type": "deity", "morphemes": "līlīt", "gloss": "name", "source": "Isaiah"}
+{"name": "ʿAzāʾzēl", "type": "deity", "morphemes": "ʿazāʾzēl", "gloss": "name", "source": "Leviticus"}
+{"name": "Śāṭān", "type": "deity", "morphemes": "śāṭān", "gloss": "adversary", "source": "Job"}
+{"name": "Liwyātān", "type": "deity", "morphemes": "liwyātān", "gloss": "coiled one", "source": "Job"}
+{"name": "Rahab", "type": "deity", "morphemes": "rahab", "gloss": "arrogance", "source": "Job"}
+{"name": "Behēmōt", "type": "deity", "morphemes": "behēmāh", "gloss": "beast", "source": "Job"}
+{"name": "Tannīn", "type": "deity", "morphemes": "tannīn", "gloss": "sea monster", "source": "Isaiah"}
+{"name": "Śeʿīrīm", "type": "deity", "morphemes": "śāʿīr", "gloss": "goat", "source": "Leviticus"}
+{"name": "Šēdīm", "type": "deity", "morphemes": "šēd", "gloss": "demon", "source": "Deuteronomy"}
+{"name": "Kerūbīm", "type": "deity", "morphemes": "kerūb", "gloss": "cherub", "source": "Genesis"}
+{"name": "Śerāpīm", "type": "deity", "morphemes": "śārāp", "gloss": "burning one", "source": "Isaiah"}
+{"name": "Terāpīm", "type": "deity", "morphemes": "terāpīm", "gloss": "name", "source": "Genesis"}
+{"name": "Mīkāʾēl", "type": "deity", "morphemes": "mī + ke + ʾēl", "gloss": "who + like + god", "source": "Daniel"}
+{"name": "Gabrīʾēl", "type": "deity", "morphemes": "geber + ʾēl", "gloss": "man + god", "source": "Daniel"}
+{"name": "Hadad-rimmōn", "type": "deity", "morphemes": "hadad + rimmōn", "gloss": "name + pomegranate", "source": "Twelve Prophets"}
+{"name": "Kesīl", "type": "celestial", "morphemes": "kesīl", "gloss": "fool", "source": "Job"}
+{"name": "Kīmāh", "type": "celestial", "morphemes": "kīmāh", "gloss": "cluster", "source": "Job"}
+{"name": "ʿĀš", "type": "celestial", "morphemes": "ʿāš", "gloss": "name", "source": "Job"}
+{"name": "Mazzārōt", "type": "celestial", "morphemes": "mazzārōt", "gloss": "name", "source": "Job"}
+{"name": "Mazzālōt", "type": "celestial", "morphemes": "mazzāl", "gloss": "constellation", "source": "Kings"}
+{"name": "Hēlēl", "type": "celestial", "morphemes": "hēlēl", "gloss": "shining one", "source": "Isaiah"}
+{"name": "Šaḥar", "type": "celestial", "morphemes": "šaḥar", "gloss": "dawn", "source": "Isaiah"}
+{"name": "Kiyyūn", "type": "celestial", "morphemes": "kiyyūn", "gloss": "Saturn", "source": "Twelve Prophets"}
+{"name": "Sikkūt", "type": "celestial", "morphemes": "sikkūt", "gloss": "name", "source": "Twelve Prophets"}
+{"name": "Šemeš", "type": "celestial", "morphemes": "šemeš", "gloss": "sun", "source": "Deuteronomy"}
+{"name": "Yārēaḥ", "type": "celestial", "morphemes": "yārēaḥ", "gloss": "moon", "source": "Deuteronomy"}
+{"name": "Lebānāh", "type": "celestial", "morphemes": "lābān", "gloss": "white", "source": "Isaiah"}
+{"name": "Ḥammāh", "type": "celestial", "morphemes": "ḥammāh", "gloss": "heat", "source": "Isaiah"}
+{"name": "Ḥadrē Tēmān", "type": "celestial", "morphemes": "ḥeder + tēmān", "gloss": "chamber + south", "source": "Job"}
+{"name": "Ṣebāʾ haššāmayim", "type": "celestial", "morphemes": "ṣābāʾ + šāmayim", "gloss": "host + heaven", "source": "Deuteronomy"}
+{"name": "Yardēn", "type": "river", "morphemes": "yardēn", "gloss": "name", "source": "Genesis"}
+{"name": "Perāt", "type": "river", "morphemes": "perāt", "gloss": "name", "source": "Genesis"}
+{"name": "Ḥiddeqel", "type": "river", "morphemes": "ḥiddeqel", "gloss": "name", "source": "Genesis"}
+{"name": "Pīšōn", "type": "river", "morphemes": "pīšōn", "gloss": "name", "source": "Genesis"}
+{"name": "Gīḥōn", "type": "river", "morphemes": "gīḥōn", "gloss": "gushing", "source": "Genesis"}
+{"name": "Šīḥōr", "type": "river", "morphemes": "šīḥōr", "gloss": "name", "source": "Joshua"}
+{"name": "ʾArnōn", "type": "river", "morphemes": "ʾarnōn", "gloss": "name", "source": "Numbers"}
+{"name": "Yabbōq", "type": "river", "morphemes": "yabbōq", "gloss": "name", "source": "Genesis"}
+{"name": "Qīšōn", "type": "river", "morphemes": "qīšōn", "gloss": "name", "source": "Judges"}
+{"name": "Kebār", "type": "river", "morphemes": "kebār", "gloss": "name", "source": "Ezekiel"}
+{"name": "Ṣiyyōn", "type": "hill", "morphemes": "ṣiyyōn", "gloss": "name", "source": "Samuel"}
+{"name": "Sīnay", "type": "hill", "morphemes": "sīnay", "gloss": "name", "source": "Exodus"}
+{"name": "Ḥōrēb", "type": "hill", "morphemes": "ḥōrēb", "gloss": "dryness", "source": "Exodus"}
+{"name": "Karmel", "type": "hill", "morphemes": "karmel", "gloss": "orchard", "source": "Kings"}
+{"name": "Tābōr", "type": "hill", "morphemes": "tābōr", "gloss": "name", "source": "Judges"}
+{"name": "Gilbōaʿ", "type": "hill", "morphemes": "gilbōaʿ", "gloss": "name", "source": "Samuel"}
+{"name": "Ḥermōn", "type": "hill", "morphemes": "ḥermōn", "gloss": "name", "source": "Deuteronomy"}
+{"name": "Pisgāh", "type": "hill", "morphemes": "pisgāh", "gloss": "name", "source": "Numbers"}
+{"name": "Gerizzīm", "type": "hill", "morphemes": "gerizzīm", "gloss": "name", "source": "Deuteronomy"}
+{"name": "ʿĒbāl", "type": "hill", "morphemes": "ʿēbāl", "gloss": "name", "source": "Deuteronomy"}
+{"name": "Mōriyyāh", "type": "hill", "morphemes": "mōriyyāh", "gloss": "name", "source": "Genesis"}
+{"name": "Hōr", "type": "hill", "morphemes": "hōr", "gloss": "name", "source": "Numbers"}
+{"name": "Śēʿīr", "type": "hill", "morphemes": "śēʿīr", "gloss": "hairy", "source": "Genesis"}
+{"name": "Śiryōn", "type": "hill", "morphemes": "śiryōn", "gloss": "name", "source": "Deuteronomy"}
+{"name": "Śenīr", "type": "hill", "morphemes": "śenīr", "gloss": "name", "source": "Deuteronomy"}
+{"name": "ʿAbārīm", "type": "hill", "morphemes": "ʿēber", "gloss": "region beyond", "source": "Numbers"}
+{"name": "Mōreh", "type": "hill", "morphemes": "mōreh", "gloss": "teacher", "source": "Judges"}
+{"name": "Ṣalmōn", "type": "hill", "morphemes": "ṣalmōn", "gloss": "name", "source": "Judges"}
+{"name": "Peʿōr", "type": "hill", "morphemes": "peʿōr", "gloss": "name", "source": "Numbers"}
+{"name": "Baʿal Ḥermōn", "type": "hill", "morphemes": "baʿal + ḥermōn", "gloss": "lord + name", "source": "Judges"}
+{"name": "Yiśrāʾēl", "type": "group", "morphemes": "śārāh + ʾēl", "gloss": "strive + god", "source": "Genesis"}
+{"name": "Dān", "type": "group", "morphemes": "dīn", "gloss": "judge", "source": "Genesis"}
+{"name": "Naptālī", "type": "group", "morphemes": "pātal", "gloss": "wrestle", "source": "Genesis"}
+{"name": "Gād", "type": "group", "morphemes": "gad", "gloss": "fortune", "source": "Genesis"}
+{"name": "ʾĀšēr", "type": "group", "morphemes": "ʾāšar", "gloss": "happy", "source": "Genesis"}
+{"name": "Yiśśākār", "type": "group", "morphemes": "yiśśākār", "gloss": "hire", "source": "Genesis"}
+{"name": "Zebūlun", "type": "group", "morphemes": "zebūl", "gloss": "lofty abode", "source": "Genesis"}
+{"name": "ʾEprayim", "type": "group", "morphemes": "ʾeprayim", "gloss": "fruitful", "source": "Genesis"}
+{"name": "Menaššeh", "type": "group", "morphemes": "nāšāh", "gloss": "forget", "source": "Genesis"}
+{"name": "ʿAmmōn", "type": "group", "morphemes": "ʿammōn", "gloss": "name", "source": "Genesis"}
+{"name": "ʿAmālēq", "type": "group", "morphemes": "ʿamālēq", "gloss": "name", "source": "Exodus"}
+{"name": "Midyān", "type": "group", "morphemes": "midyān", "gloss": "name", "source": "Numbers"}
+{"name": "Pelištīm", "type": "group", "morphemes": "pelešet", "gloss": "name", "source": "Judges"}
+{"name": "Ḥittī", "type": "group", "morphemes": "ḥēt", "gloss": "name", "source": "Genesis"}
+{"name": "ʾEmōrī", "type": "group", "morphemes": "ʾemōrī", "gloss": "name", "source": "Genesis"}
+{"name": "Yebūsī", "type": "group", "morphemes": "yebūs", "gloss": "name", "source": "Genesis"}
+{"name": "Ḥiwwī", "type": "group", "morphemes": "ḥiwwī", "gloss": "name", "source": "Genesis"}
+{"name": "Perizzī", "type": "group", "morphemes": "perizzī", "gloss": "name", "source": "Genesis"}
+{"name": "Girgāšī", "type": "group", "morphemes": "girgāšī", "gloss": "name", "source": "Genesis"}
+{"name": "Qadmōnī", "type": "group", "morphemes": "qadmōnī", "gloss": "eastern", "source": "Genesis"}
+{"name": "Kerētī", "type": "group", "morphemes": "kerētī", "gloss": "name", "source": "Samuel"}
+{"name": "Pelētī", "type": "group", "morphemes": "pelētī", "gloss": "name", "source": "Samuel"}
+{"name": "Ḥōrī", "type": "group", "morphemes": "ḥōrī", "gloss": "name", "source": "Genesis"}
+{"name": "Repāʾīm", "type": "group", "morphemes": "repāʾīm", "gloss": "shades", "source": "Genesis"}
+{"name": "ʿAnāqīm", "type": "group", "morphemes": "ʿanāq", "gloss": "necklace", "source": "Deuteronomy"}
+{"name": "ʾĒmīm", "type": "group", "morphemes": "ʾēmāh", "gloss": "terror", "source": "Deuteronomy"}
+{"name": "Zamzummīm", "type": "group", "morphemes": "zamzummīm", "gloss": "name", "source": "Deuteronomy"}
+{"name": "Zūzīm", "type": "group", "morphemes": "zūzīm", "gloss": "name", "source": "Genesis"}
+{"name": "Kaśdīm", "type": "group", "morphemes": "kesed", "gloss": "name", "source": "Genesis"}
+{"name": "Kittīm", "type": "group", "morphemes": "kittīm", "gloss": "name", "source": "Genesis"}
+{"name": "Kaptōrīm", "type": "group", "morphemes": "kaptōr", "gloss": "name", "source": "Genesis"}
+{"name": "Lūdīm", "type": "group", "morphemes": "lūd", "gloss": "name", "source": "Genesis"}
+{"name": "ʿAnāmīm", "type": "group", "morphemes": "ʿanāmīm", "gloss": "name", "source": "Genesis"}
+{"name": "Lehābīm", "type": "group", "morphemes": "lehābīm", "gloss": "name", "source": "Genesis"}
+{"name": "Naptuḥīm", "type": "group", "morphemes": "naptuḥīm", "gloss": "name", "source": "Genesis"}
+{"name": "Patrusīm", "type": "group", "morphemes": "patrōs", "gloss": "name", "source": "Genesis"}
+{"name": "Kasluḥīm", "type": "group", "morphemes": "kasluḥīm", "gloss": "name", "source": "Genesis"}
+{"name": "Dōdānīm", "type": "group", "morphemes": "dōdānīm", "gloss": "name", "source": "Genesis"}
+{"name": "ʿAwwīm", "type": "group", "morphemes": "ʿawwīm", "gloss": "name", "source": "Deuteronomy"}
+{"name": "Meʿūnīm", "type": "group", "morphemes": "meʿūnīm", "gloss": "name", "source": "Chronicles"}
+{"name": "Qēdār", "type": "group", "morphemes": "qēdār", "gloss": "dark", "source": "Genesis"}
+{"name": "Nebāyōt", "type": "group", "morphemes": "nebāyōt", "gloss": "name", "source": "Genesis"}
+{"name": "Yeṭūr", "type": "group", "morphemes": "yeṭūr", "gloss": "name", "source": "Genesis"}
+{"name": "Nāpīš", "type": "group", "morphemes": "nāpīš", "gloss": "name", "source": "Genesis"}
+{"name": "Gōyim", "type": "group", "morphemes": "gōy", "gloss": "nation", "source": "Genesis"}
+{"name": "ʿArqī", "type": "group", "morphemes": "ʿarqī", "gloss": "name", "source": "Genesis"}
+{"name": "Ṣemārī", "type": "group", "morphemes": "ṣemārī", "gloss": "name", "source": "Genesis"}
+{"name": "Sukkiyyīm", "type": "group", "morphemes": "sukkiyyīm", "gloss": "name", "source": "Chronicles"}
+{"name": "Lūbīm", "type": "group", "morphemes": "lūbīm", "gloss": "name", "source": "Chronicles"}
+{"name": "Leʾummīm", "type": "group", "morphemes": "leʾōm", "gloss": "people", "source": "Genesis"}
+{"name": "Yehōyārīb", "type": "lineage", "morphemes": "yāh + rīb", "gloss": "Yahweh + contend", "source": "Chronicles"}
+{"name": "Yedaʿyāh", "type": "lineage", "morphemes": "yādaʿ + yāh", "gloss": "know + Yahweh", "source": "Chronicles"}
+{"name": "Ḥārim", "type": "lineage", "morphemes": "ḥārim", "gloss": "consecrated", "source": "Chronicles"}
+{"name": "Śeʿōrīm", "type": "lineage", "morphemes": "śeʿōrāh", "gloss": "barley", "source": "Chronicles"}
+{"name": "Miyyāmin", "type": "lineage", "morphemes": "min + yāmīn", "gloss": "from + right hand", "source": "Chronicles"}
+{"name": "Haqqōṣ", "type": "lineage", "morphemes": "qōṣ", "gloss": "thorn", "source": "Chronicles"}
+{"name": "Maʿazyāh", "type": "lineage", "morphemes": "māʿōz + yāh", "gloss": "refuge + Yahweh", "source": "Chronicles"}
+{"name": "Delāyāh", "type": "lineage", "morphemes": "dālāh + yāh", "gloss": "draw up + Yahweh", "source": "Chronicles"}
+{"name": "Parʿōš", "type": "lineage", "morphemes": "parʿōš", "gloss": "flea", "source": "Ezra-Nehemiah"}
+{"name": "Paḥat-mōʾāb", "type": "lineage", "morphemes": "paḥāh + mōʾāb", "gloss": "governor + name", "source": "Ezra-Nehemiah"}
+{"name": "Zattūʾ", "type": "lineage", "morphemes": "zattūʾ", "gloss": "name", "source": "Ezra-Nehemiah"}
+{"name": "Zakkay", "type": "lineage", "morphemes": "zākāh", "gloss": "be pure", "source": "Ezra-Nehemiah"}
+{"name": "Bēbay", "type": "lineage", "morphemes": "bēbay", "gloss": "name", "source": "Ezra-Nehemiah"}
+{"name": "ʿAzgād", "type": "lineage", "morphemes": "ʿōz + gad", "gloss": "strength + fortune", "source": "Ezra-Nehemiah"}
+{"name": "ʾAdōnīqām", "type": "lineage", "morphemes": "ʾādōn + qūm", "gloss": "lord + arise", "source": "Ezra-Nehemiah"}
+{"name": "ʿĀdīn", "type": "lineage", "morphemes": "ʿēden", "gloss": "delight", "source": "Ezra-Nehemiah"}
+{"name": "Ṭabbāʿōt", "type": "lineage", "morphemes": "ṭabbaʿat", "gloss": "signet ring", "source": "Ezra-Nehemiah"}
+{"name": "Rēkāb", "type": "lineage", "morphemes": "rekeb", "gloss": "chariot", "source": "Jeremiah"}
+{"name": "Yeraḥmeʾēl", "type": "lineage", "morphemes": "rāḥam + ʾēl", "gloss": "have compassion + god", "source": "Samuel"}
+{"name": "Matrī", "type": "lineage", "morphemes": "matrī", "gloss": "name", "source": "Samuel"}
+{"name": "Parʿōh", "type": "title", "morphemes": "parʿōh", "gloss": "great house", "source": "Genesis"}
+{"name": "Rab-šāqēh", "type": "title", "morphemes": "rab + šāqāh", "gloss": "chief + cupbearer", "source": "Kings"}
+{"name": "Tartān", "type": "title", "morphemes": "tartān", "gloss": "name", "source": "Kings"}
+{"name": "Rab-sārīs", "type": "title", "morphemes": "rab + sārīs", "gloss": "chief + eunuch", "source": "Kings"}
+{"name": "ʾAdōnāy", "type": "title", "morphemes": "ʾādōn", "gloss": "lord", "source": "Psalms"}
+{"name": "Ṣebāʾōt", "type": "title", "morphemes": "ṣābāʾ", "gloss": "host", "source": "Samuel"}
+{"name": "Qedōš Yiśrāʾēl", "type": "title", "morphemes": "qādōš + śārāh + ʾēl", "gloss": "holy + strive + god", "source": "Isaiah"}
+{"name": "ʾAbīr Yaʿaqōb", "type": "title", "morphemes": "ʾābīr + ʿāqab", "gloss": "mighty one + heel", "source": "Genesis"}
+{"name": "Paḥad Yiṣḥāq", "type": "title", "morphemes": "paḥad + ṣāḥaq", "gloss": "fear + laugh", "source": "Genesis"}
+{"name": "ʿAttīq Yōmīn", "type": "title", "morphemes": "ʿattīq + yōm", "gloss": "ancient + day", "source": "Daniel"}
+{"name": "Yahweh Ṣidqēnū", "type": "title", "morphemes": "yahweh + ṣedeq", "gloss": "name + righteousness", "source": "Jeremiah"}
+{"name": "Qōhelet", "type": "title", "morphemes": "qāhal", "gloss": "assemble", "source": "Ecclesiastes"}
+{"name": "Neḥuštān", "type": "other", "morphemes": "neḥōšet", "gloss": "bronze", "source": "Kings"}
+{"name": "ʾŪrīm", "type": "other", "morphemes": "ʾūrīm", "gloss": "name", "source": "Exodus"}
+{"name": "Tummīm", "type": "other", "morphemes": "tummīm", "gloss": "name", "source": "Exodus"}
+{"name": "Yākīn", "type": "other", "morphemes": "kūn", "gloss": "establish", "source": "Kings"}
+{"name": "ʾĀbīb", "type": "other", "morphemes": "ʾābīb", "gloss": "ear of grain", "source": "Exodus"}
+{"name": "Zīw", "type": "other", "morphemes": "zīw", "gloss": "splendour", "source": "Kings"}
+{"name": "ʾĒtānīm", "type": "other", "morphemes": "ʾētān", "gloss": "perennial", "source": "Kings"}
+{"name": "Būl", "type": "other", "morphemes": "būl", "gloss": "name", "source": "Kings"}
+{"name": "Nīsān", "type": "other", "morphemes": "nīsān", "gloss": "name", "source": "Esther"}
+{"name": "ʾAdār", "type": "other", "morphemes": "ʾadār", "gloss": "name", "source": "Esther"}
+{"name": "Kislēw", "type": "other", "morphemes": "kislēw", "gloss": "name", "source": "Ezra-Nehemiah"}
+{"name": "Ṭēbēt", "type": "other", "morphemes": "ṭēbēt", "gloss": "name", "source": "Esther"}
+{"name": "Šebāṭ", "type": "other", "morphemes": "šebāṭ", "gloss": "name", "source": "Twelve Prophets"}
+{"name": "ʾElūl", "type": "other", "morphemes": "ʾelūl", "gloss": "name", "source": "Ezra-Nehemiah"}
+{"name": "Sīwān", "type": "other", "morphemes": "sīwān", "gloss": "name", "source": "Esther"}
+{"name": "Pūrīm", "type": "other", "morphemes": "pūr", "gloss": "lot", "source": "Esther"}
+{"name": "Yahweh Nissī", "type": "other", "morphemes": "yahweh + nēs", "gloss": "name + banner", "source": "Exodus"}
+{"name": "Yahweh Šālōm", "type": "other", "morphemes": "yahweh + šālōm", "gloss": "name + peace", "source": "Judges"}
+{"name": "ʿĒd", "type": "other", "morphemes": "ʿēd", "gloss": "witness", "source": "Joshua"}
+{"name": "ʾĒl ʾElōhē Yiśrāʾēl", "type": "other", "morphemes": "ʾēl + ʾelōhīm + śārāh + ʾēl", "gloss": "god + god + strive + god", "source": "Genesis"}
+{"name": "ʿĒśeq", "type": "other", "morphemes": "ʿēśeq", "gloss": "contention", "source": "Genesis"}
+{"name": "Śiṭnāh", "type": "other", "morphemes": "śiṭnāh", "gloss": "enmity", "source": "Genesis"}
+{"name": "Nōʿam", "type": "other", "morphemes": "nōʿam", "gloss": "pleasantness", "source": "Twelve Prophets"}
+{"name": "ʾOholāh", "type": "other", "morphemes": "ʾōhel", "gloss": "tent", "source": "Ezekiel"}
+{"name": "ʾOholībāh", "type": "other", "morphemes": "ʾōhel + bāh", "gloss": "tent + in her", "source": "Ezekiel"}
+{"name": "Beʿūlāh", "type": "other", "morphemes": "bāʿal", "gloss": "marry", "source": "Isaiah"}
+{"name": "Yahweh Šāmmāh", "type": "other", "morphemes": "yahweh + šām", "gloss": "name + there", "source": "Ezekiel"}
+{"name": "Ḥananʾēl", "type": "other", "morphemes": "ḥānan + ʾēl", "gloss": "be gracious + god", "source": "Jeremiah"}
+{"name": "Šilōaḥ", "type": "other", "morphemes": "šālaḥ", "gloss": "send", "source": "Isaiah"}
+{"name": "Sēper hayyāšār", "type": "other", "morphemes": "sēper + yāšār", "gloss": "book + upright", "source": "Joshua"}
+{"name": "ʾAbaddōn", "type": "other", "morphemes": "ʾābad", "gloss": "perish", "source": "Job"}
+{"name": "Šeʾōl", "type": "other", "morphemes": "šeʾōl", "gloss": "name", "source": "Genesis"}
+{"name": "Yerūšālaim", "type": "place", "morphemes": "yerūšālaim", "gloss": "name", "source": "Joshua"}
+{"name": "Šālēm", "type": "place", "morphemes": "šālēm", "gloss": "complete", "source": "Genesis"}
+{"name": "Bēt-ʾēl", "type": "place", "morphemes": "bayit + ʾēl", "gloss": "house + god", "source": "Genesis"}
+{"name": "Bēt-leḥem", "type": "place", "morphemes": "bayit + leḥem", "gloss": "house + bread", "source": "Genesis"}
+{"name": "Ḥebrōn", "type": "place", "morphemes": "ḥābar", "gloss": "associate", "source": "Genesis"}
+{"name": "Beʾēr-šebaʿ", "type": "place", "morphemes": "beʾēr + šebaʿ", "gloss": "well + oath", "source": "Genesis"}
+{"name": "Šekem", "type": "place", "morphemes": "šekem", "gloss": "shoulder", "source": "Genesis"}
+{"name": "Šīlōh", "type": "place", "morphemes": "šīlōh", "gloss": "name", "source": "Joshua"}
+{"name": "Yerīḥō", "type": "place", "morphemes": "yerīḥō", "gloss": "name", "source": "Numbers"}
+{"name": "ʿAy", "type": "place", "morphemes": "ʿay", "gloss": "ruin", "source": "Genesis"}
+{"name": "Gibʿōn", "type": "place", "morphemes": "gibʿāh", "gloss": "hill", "source": "Joshua"}
+{"name": "Gibʿāh", "type": "place", "morphemes": "gibʿāh", "gloss": "hill", "source": "Judges"}
+{"name": "Rāmāh", "type": "place", "morphemes": "rāmāh", "gloss": "height", "source": "Joshua"}
+{"name": "Miṣpāh", "type": "place", "morphemes": "miṣpāh", "gloss": "watchtower", "source": "Genesis"}
+{"name": "Gilgāl", "type": "place", "morphemes": "gilgāl", "gloss": "circle", "source": "Joshua"}
+{"name": "ʿAnātōt", "type": "place", "morphemes": "ʿanāt", "gloss": "name", "source": "Joshua"}
+{"name": "Gat", "type": "place", "morphemes": "gat", "gloss": "winepress", "source": "Joshua"}
+{"name": "ʿAzzāh", "type": "place", "morphemes": "ʿōz", "gloss": "strength", "source": "Genesis"}
+{"name": "ʾAšdōd", "type": "place", "morphemes": "ʾašdōd", "gloss": "name", "source": "Joshua"}
+{"name": "ʾAšqelōn", "type": "place", "morphemes": "ʾašqelōn", "gloss": "name", "source": "Judges"}
+{"name": "ʿEqrōn", "type": "place", "morphemes": "ʿeqrōn", "gloss": "name", "source": "Joshua"}
+{"name": "Ṣōr", "type": "place", "morphemes": "ṣōr", "gloss": "rock", "source": "Joshua"}
+{"name": "Ṣīdōn", "type": "place", "morphemes": "ṣīdōn", "gloss": "fishery", "source": "Genesis"}
+{"name": "Dammeśeq", "type": "place", "morphemes": "dammeśeq", "gloss": "name", "source": "Genesis"}
+{"name": "Ḥamāt", "type": "place", "morphemes": "ḥamāt", "gloss": "name", "source": "Numbers"}
+{"name": "Nīnewēh", "type": "place", "morphemes": "nīnewēh", "gloss": "name", "source": "Genesis"}
+{"name": "Bābel", "type": "place", "morphemes": "bābel", "gloss": "name", "source": "Genesis"}
+{"name": "ʾŪr Kaśdīm", "type": "place", "morphemes": "ʾūr + kesed", "gloss": "name + name", "source": "Genesis"}
+{"name": "Ḥārān", "type": "place", "morphemes": "ḥārān", "gloss": "road", "source": "Genesis"}
+{"name": "Kenaʿan", "type": "place", "morphemes": "kenaʿan", "gloss": "name", "source": "Genesis"}
+{"name": "Miṣrayim", "type": "place", "morphemes": "miṣrayim", "gloss": "name", "source": "Genesis"}
+{"name": "ʾAššūr", "type": "place", "morphemes": "ʾaššūr", "gloss": "name", "source": "Genesis"}
+{"name": "ʾArām", "type": "place", "morphemes": "ʾarām", "gloss": "name", "source": "Numbers"}
+{"name": "ʾEdōm", "type": "place", "morphemes": "ʾādōm", "gloss": "red", "source": "Genesis"}
+{"name": "Mōʾāb", "type": "place", "morphemes": "mōʾāb", "gloss": "name", "source": "Numbers"}
+{"name": "Kūš", "type": "place", "morphemes": "kūš", "gloss": "name", "source": "Genesis"}
+{"name": "Pūṭ", "type": "place", "morphemes": "pūṭ", "gloss": "name", "source": "Genesis"}
+{"name": "Yāwān", "type": "place", "morphemes": "yāwān", "gloss": "name", "source": "Genesis"}
+{"name": "Mādai", "type": "place", "morphemes": "mādai", "gloss": "name", "source": "Genesis"}
+{"name": "Pāras", "type": "place", "morphemes": "pāras", "gloss": "name", "source": "Esther"}
+{"name": "ʿĒlām", "type": "place", "morphemes": "ʿēlām", "gloss": "name", "source": "Genesis"}
+{"name": "Šinʿār", "type": "place", "morphemes": "šinʿār", "gloss": "name", "source": "Genesis"}
+{"name": "ʾAkkad", "type": "place", "morphemes": "ʾakkad", "gloss": "name", "source": "Genesis"}
+{"name": "ʾErek", "type": "place", "morphemes": "ʾerek", "gloss": "name", "source": "Genesis"}
+{"name": "Sedōm", "type": "place", "morphemes": "sedōm", "gloss": "name", "source": "Genesis"}
+{"name": "ʿAmōrāh", "type": "place", "morphemes": "ʿamōrāh", "gloss": "name", "source": "Genesis"}
+{"name": "Ṣebōyīm", "type": "place", "morphemes": "ṣebī", "gloss": "gazelle", "source": "Genesis"}
+{"name": "Ṣōʿar", "type": "place", "morphemes": "ṣōʿar", "gloss": "smallness", "source": "Genesis"}
+{"name": "Bēt-šemeš", "type": "place", "morphemes": "bayit + šemeš", "gloss": "house + sun", "source": "Joshua"}
+{"name": "ʿĒn-gedī", "type": "place", "morphemes": "ʿayin + gedī", "gloss": "spring + kid", "source": "Joshua"}
+{"name": "ʿĒn-dōr", "type": "place", "morphemes": "ʿayin + dōr", "gloss": "spring + dwelling", "source": "Joshua"}
+{"name": "ʿĒn-rōgēl", "type": "place", "morphemes": "ʿayin + rōgēl", "gloss": "spring + fuller", "source": "Joshua"}
+{"name": "Qādēš", "type": "place", "morphemes": "qādōš", "gloss": "holy", "source": "Genesis"}
+{"name": "Qādēš-barnēaʿ", "type": "place", "morphemes": "qādōš + barnēaʿ", "gloss": "holy + name", "source": "Numbers"}
+{"name": "Beʾēr-laḥay-rōʾī", "type": "place", "morphemes": "beʾēr + ḥay + rāʾāh", "gloss": "well + living + see", "source": "Genesis"}
+{"name": "Penūʾēl", "type": "place", "morphemes": "pānīm + ʾēl", "gloss": "face + god", "source": "Genesis"}
+{"name": "Maḥanayim", "type": "place", "morphemes": "maḥaneh", "gloss": "camp", "source": "Genesis"}
+{"name": "Sukkōt", "type": "place", "morphemes": "sukkāh", "gloss": "booth", "source": "Genesis"}
+{"name": "Mamrēʾ", "type": "place", "morphemes": "mamrēʾ", "gloss": "name", "source": "Genesis"}
+{"name": "Makpēlāh", "type": "place", "morphemes": "makpēlāh", "gloss": "doubling", "source": "Genesis"}
+{"name": "Gerār", "type": "place", "morphemes": "gerār", "gloss": "name", "source": "Genesis"}
+{"name": "Reḥōbōt", "type": "place", "morphemes": "reḥōb", "gloss": "broad place", "source": "Genesis"}
+{"name": "Lūz", "type": "place", "morphemes": "lūz", "gloss": "almond tree", "source": "Genesis"}
+{"name": "ʾĀbēl-miṣrayim", "type": "place", "morphemes": "ʾābēl + miṣrayim", "gloss": "meadow + name", "source": "Genesis"}
+{"name": "Gōšen", "type": "place", "morphemes": "gōšen", "gloss": "name", "source": "Genesis"}
+{"name": "Raʿamsēs", "type": "place", "morphemes": "raʿamsēs", "gloss": "name", "source": "Genesis"}
+{"name": "Pitōm", "type": "place", "morphemes": "pitōm", "gloss": "name", "source": "Exodus"}
+{"name": "Yam Sūp", "type": "place", "morphemes": "yām + sūp", "gloss": "sea + reeds", "source": "Exodus"}
+{"name": "Mārāh", "type": "place", "morphemes": "mar", "gloss": "bitter", "source": "Exodus"}
+{"name": "ʾĒlīm", "type": "place", "morphemes": "ʾēlāh", "gloss": "terebinth", "source": "Exodus"}
+{"name": "Massāh", "type": "place", "morphemes": "massāh", "gloss": "testing", "source": "Exodus"}
+{"name": "Merībāh", "type": "place", "morphemes": "merībāh", "gloss": "strife", "source": "Exodus"}
+{"name": "Qibrōt hattaʾawāh", "type": "place", "morphemes": "qeber + taʾawāh", "gloss": "grave + craving", "source": "Numbers"}
+{"name": "Pārān", "type": "place", "morphemes": "pārān", "gloss": "name", "source": "Genesis"}
+{"name": "Ḥešbōn", "type": "place", "morphemes": "ḥešbōn", "gloss": "reckoning", "source": "Numbers"}
+{"name": "Šiṭṭīm", "type": "place", "morphemes": "šiṭṭāh", "gloss": "acacia", "source": "Numbers"}
+{"name": "Bāšān", "type": "place", "morphemes": "bāšān", "gloss": "name", "source": "Numbers"}
+{"name": "Gilʿād", "type": "place", "morphemes": "gilʿād", "gloss": "name", "source": "Genesis"}
+{"name": "Galʿēd", "type": "place", "morphemes": "gal + ʿēd", "gloss": "heap + witness", "source": "Genesis"}
+{"name": "Rāmōt-gilʿād", "type": "place", "morphemes": "rāmāh + gilʿād", "gloss": "height + name", "source": "Kings"}
+{"name": "Yābēš-gilʿād", "type": "place", "morphemes": "yābēš + gilʿād", "gloss": "dry + name", "source": "Judges"}
+{"name": "Yizreʿeʾl", "type": "place", "morphemes": "zāraʿ + ʾēl", "gloss": "sow + god", "source": "Joshua"}
+{"name": "Megiddō", "type": "place", "morphemes": "megiddō", "gloss": "name", "source": "Joshua"}
+{"name": "Bēt-šeʾān", "type": "place", "morphemes": "bayit + šeʾān", "gloss": "house + name", "source": "Joshua"}
+{"name": "Ḥāṣōr", "type": "place", "morphemes": "ḥāṣēr", "gloss": "settlement", "source": "Joshua"}
+{"name": "Lākīš", "type": "place", "morphemes": "lākīš", "gloss": "name", "source": "Joshua"}
+{"name": "Bēt-ḥōrōn", "type": "place", "morphemes": "bayit + ḥōrōn", "gloss": "house + name", "source": "Joshua"}
+{"name": "Qiryat-ʾarbaʿ", "type": "place", "morphemes": "qiryāh + ʾarbaʿ", "gloss": "town + four", "source": "Genesis"}
+{"name": "Qiryat-yeʿārīm", "type": "place", "morphemes": "qiryāh + yaʿar", "gloss": "town + forest", "source": "Joshua"}
+{"name": "Qiryat-sēper", "type": "place", "morphemes": "qiryāh + sēper", "gloss": "town + book", "source": "Joshua"}
+{"name": "ʿEṣyōn-geber", "type": "place", "morphemes": "ʿeṣyōn + geber", "gloss": "name + man", "source": "Numbers"}
+{"name": "Taršīš", "type": "place", "morphemes": "taršīš", "gloss": "name", "source": "Twelve Prophets"}
+{"name": "ʾŌpīr", "type": "place", "morphemes": "ʾōpīr", "gloss": "name", "source": "Kings"}
+{"name": "Šebāʾ", "type": "place", "morphemes": "šebāʾ", "gloss": "name", "source": "Kings"}
+{"name": "Dedān", "type": "place", "morphemes": "dedān", "gloss": "name", "source": "Genesis"}
+{"name": "Tēmāʾ", "type": "place", "morphemes": "tēmāʾ", "gloss": "name", "source": "Isaiah"}
+{"name": "Ḥawīlāh", "type": "place", "morphemes": "ḥawīlāh", "gloss": "name", "source": "Genesis"}
+{"name": "ʿĒden", "type": "place", "morphemes": "ʿēden", "gloss": "delight", "source": "Genesis"}
+{"name": "Nōd", "type": "place", "morphemes": "nūd", "gloss": "wander", "source": "Genesis"}
+{"name": "ʿŪṣ", "type": "place", "morphemes": "ʿūṣ", "gloss": "name", "source": "Job"}
+{"name": "Māgōg", "type": "place", "morphemes": "māgōg", "gloss": "name", "source": "Genesis"}
+{"name": "Lebānōn", "type": "place", "morphemes": "lābān", "gloss": "white", "source": "Deuteronomy"}
+{"name": "ʾArārāṭ", "type": "place", "morphemes": "ʾarārāṭ", "gloss": "name", "source": "Genesis"}
+{"name": "Ṣōʿan", "type": "place", "morphemes": "ṣōʿan", "gloss": "name", "source": "Numbers"}
+{"name": "Nōp", "type": "place", "morphemes": "nōp", "gloss": "name", "source": "Isaiah"}
+{"name": "Nōʾ", "type": "place", "morphemes": "nōʾ", "gloss": "name", "source": "Jeremiah"}
+{"name": "ʾŌn", "type": "place", "morphemes": "ʾōn", "gloss": "name", "source": "Genesis"}
+{"name": "Baʿal-ṣepōn", "type": "place", "morphemes": "baʿal + ṣāpōn", "gloss": "lord + north", "source": "Exodus"}
+{"name": "Šūšan", "type": "place", "morphemes": "šūšan", "gloss": "name", "source": "Esther"}
+{"name": "Karkemīš", "type": "place", "morphemes": "karkemīš", "gloss": "name", "source": "Jeremiah"}
+{"name": "Šōmerōn", "type": "place", "morphemes": "šāmar", "gloss": "watch", "source": "Kings"}
+{"name": "ʿĀkōr", "type": "place", "morphemes": "ʿākar", "gloss": "trouble", "source": "Joshua"}
+{"name": "Ṣiqlag", "type": "place", "morphemes": "ṣiqlag", "gloss": "name", "source": "Samuel"}
+{"name": "Nōb", "type": "place", "morphemes": "nōb", "gloss": "name", "source": "Samuel"}
+{"name": "ʿAdullām", "type": "place", "morphemes": "ʿadullām", "gloss": "name", "source": "Joshua"}
+{"name": "Teqōaʿ", "type": "place", "morphemes": "tāqaʿ", "gloss": "blow trumpet", "source": "Samuel"}
+{"name": "Bēt-ʿanāt", "type": "place", "morphemes": "bayit + ʿanāt", "gloss": "house + name", "source": "Joshua"}
+{"name": "ʿĒn-rimmōn", "type": "place", "morphemes": "ʿayin + rimmōn", "gloss": "spring + pomegranate", "source": "Ezra-Nehemiah"}
+{"name": "Kinneret", "type": "place", "morphemes": "kinneret", "gloss": "name", "source": "Numbers"}
+{"name": "Yam hammelaḥ", "type": "place", "morphemes": "yām + melaḥ", "gloss": "sea + salt", "source": "Genesis"}
+{"name": "Negeb", "type": "place", "morphemes": "negeb", "gloss": "dry land", "source": "Genesis"}
+{"name": "Šārōn", "type": "place", "morphemes": "šārōn", "gloss": "plain", "source": "Joshua"}
+{"name": "Gēʾ-hinnōm", "type": "place", "morphemes": "gayʾ + hinnōm", "gloss": "valley + name", "source": "Joshua"}
+{"name": "Tōpet", "type": "place", "morphemes": "tōpet", "gloss": "name", "source": "Kings"}
+{"name": "ʾĒlōn-mōreh", "type": "place", "morphemes": "ʾēlōn + mōreh", "gloss": "oak + teacher", "source": "Genesis"}
+{"name": "ʾAllōn-bākūt", "type": "place", "morphemes": "ʾallōn + bākāh", "gloss": "oak + weep", "source": "Genesis"}
+{"name": "ʾEben-hāʿēzer", "type": "place", "morphemes": "ʾeben + ʿāzar", "gloss": "stone + help", "source": "Samuel"}
+{"name": "Migdal-ʿēder", "type": "place", "morphemes": "migdāl + ʿēder", "gloss": "tower + flock", "source": "Genesis"}
+{"name": "Yahweh Yirʾeh", "type": "place", "morphemes": "yahweh + rāʾāh", "gloss": "name + see", "source": "Genesis"}
+{"name": "Bōkīm", "type": "place", "morphemes": "bākāh", "gloss": "weep", "source": "Judges"}
+{"name": "Pereṣ-ʿuzzāʾ", "type": "place", "morphemes": "pereṣ + ʿōz", "gloss": "breach + strength", "source": "Samuel"}
+{"name": "Baʿal-perāṣīm", "type": "place", "morphemes": "baʿal + pereṣ", "gloss": "lord + breach", "source": "Samuel"}
+{"name": "Baʿal-gād", "type": "place", "morphemes": "baʿal + gad", "gloss": "lord + fortune", "source": "Joshua"}
+{"name": "Baʿal-tāmār", "type": "place", "morphemes": "baʿal + tāmār", "gloss": "lord + palm", "source": "Judges"}
+{"name": "Baʿal-hāmōn", "type": "place", "morphemes": "baʿal + hāmōn", "gloss": "lord + multitude", "source": "Song of Songs"}
+{"name": "Šūnēm", "type": "place", "morphemes": "šūnēm", "gloss": "name", "source": "Joshua"}
+{"name": "Ṣārepat", "type": "place", "morphemes": "ṣārap", "gloss": "refine", "source": "Kings"}
+{"name": "ʾĀbēl-meḥōlāh", "type": "place", "morphemes": "ʾābēl + meḥōlāh", "gloss": "meadow + dance", "source": "Judges"}
+{"name": "Lō-debār", "type": "place", "morphemes": "lōʾ + dābār", "gloss": "not + thing", "source": "Samuel"}
+{"name": "Bēt-ʾāwen", "type": "place", "morphemes": "bayit + ʾāwen", "gloss": "house + wickedness", "source": "Joshua"}
+{"name": "ʾĀdām", "type": "person", "morphemes": "ʾādām", "gloss": "man", "source": "Genesis"}
+{"name": "Ḥawwāh", "type": "person", "morphemes": "ḥawwāh", "gloss": "life", "source": "Genesis"}
+{"name": "Qayin", "type": "person", "morphemes": "qayin", "gloss": "smith", "source": "Genesis"}
+{"name": "Hebel", "type": "person", "morphemes": "hebel", "gloss": "breath", "source": "Genesis"}
+{"name": "Šēt", "type": "person", "morphemes": "šīt", "gloss": "appoint", "source": "Genesis"}
+{"name": "ʾEnōš", "type": "person", "morphemes": "ʾenōš", "gloss": "man", "source": "Genesis"}
+{"name": "Mahalalʾēl", "type": "person", "morphemes": "mahalāl + ʾēl", "gloss": "praise + god", "source": "Genesis"}
+{"name": "Ḥanōk", "type": "person", "morphemes": "ḥānak", "gloss": "dedicate", "source": "Genesis"}
+{"name": "Metūšelaḥ", "type": "person", "morphemes": "metūšelaḥ", "gloss": "name", "source": "Genesis"}
+{"name": "Lemek", "type": "person", "morphemes": "lemek", "gloss": "name", "source": "Genesis"}
+{"name": "Nōaḥ", "type": "person", "morphemes": "nūaḥ", "gloss": "rest", "source": "Genesis"}
+{"name": "Šēm", "type": "person", "morphemes": "šēm", "gloss": "name", "source": "Genesis"}
+{"name": "Ḥām", "type": "person", "morphemes": "ḥām", "gloss": "name", "source": "Genesis"}
+{"name": "Yepet", "type": "person", "morphemes": "yepet", "gloss": "name", "source": "Genesis"}
+{"name": "Nimrōd", "type": "person", "morphemes": "nimrōd", "gloss": "name", "source": "Genesis"}
+{"name": "ʿĒber", "type": "person", "morphemes": "ʿēber", "gloss": "region beyond", "source": "Genesis"}
+{"name": "Nāḥōr", "type": "person", "morphemes": "nāḥōr", "gloss": "name", "source": "Genesis"}
+{"name": "Teraḥ", "type": "person", "morphemes": "teraḥ", "gloss": "name", "source": "Genesis"}
+{"name": "ʾAbrām", "type": "person", "morphemes": "ʾāb + rūm", "gloss": "father + be high", "source": "Genesis"}
+{"name": "ʾAbrāhām", "type": "person", "morphemes": "ʾabrāhām", "gloss": "name", "source": "Genesis"}
+{"name": "Śāray", "type": "person", "morphemes": "śar", "gloss": "prince", "source": "Genesis"}
+{"name": "Śārāh", "type": "person", "morphemes": "śar", "gloss": "prince", "source": "Genesis"}
+{"name": "Lōṭ", "type": "person", "morphemes": "lōṭ", "gloss": "name", "source": "Genesis"}
+{"name": "Hārān", "type": "person", "morphemes": "hārān", "gloss": "name", "source": "Genesis"}
+{"name": "Milkāh", "type": "person", "morphemes": "malkāh", "gloss": "queen", "source": "Genesis"}
+{"name": "Hāgār", "type": "person", "morphemes": "hāgār", "gloss": "name", "source": "Genesis"}
+{"name": "Yišmāʿēʾl", "type": "person", "morphemes": "šāmaʿ + ʾēl", "gloss": "hear + god", "source": "Genesis"}
+{"name": "Yiṣḥāq", "type": "person", "morphemes": "ṣāḥaq", "gloss": "laugh", "source": "Genesis"}
+{"name": "Ribqāh", "type": "person", "morphemes": "ribqāh", "gloss": "name", "source": "Genesis"}
+{"name": "Betūʾēl", "type": "person", "morphemes": "betūʾēl", "gloss": "name", "source": "Genesis"}
+{"name": "Lābān", "type": "person", "morphemes": "lābān", "gloss": "white", "source": "Genesis"}
+{"name": "ʿĒśāw", "type": "person", "morphemes": "ʿēśāw", "gloss": "name", "source": "Genesis"}
+{"name": "Yaʿaqōb", "type": "person", "morphemes": "ʿāqab", "gloss": "heel", "source": "Genesis"}
+{"name": "Lēʾāh", "type": "person", "morphemes": "lēʾāh", "gloss": "name", "source": "Genesis"}
+{"name": "Rāḥēl", "type": "person", "morphemes": "rāḥēl", "gloss": "ewe", "source": "Genesis"}
+{"name": "Bilhāh", "type": "person", "morphemes": "bilhāh", "gloss": "name", "source": "Genesis"}
+{"name": "Zilpāh", "type": "person", "morphemes": "zilpāh", "gloss": "name", "source": "Genesis"}
+{"name": "Reʾūbēn", "type": "person", "morphemes": "rāʾāh + bēn", "gloss": "see + son", "source": "Genesis"}
+{"name": "Šimʿōn", "type": "person", "morphemes": "šāmaʿ", "gloss": "hear", "source": "Genesis"}
+{"name": "Lēwī", "type": "person", "morphemes": "lāwāh", "gloss": "join", "source": "Genesis"}
+{"name": "Yehūdāh", "type": "person", "morphemes": "yādāh", "gloss": "praise", "source": "Genesis"}
+{"name": "Dīnāh", "type": "person", "morphemes": "dīn", "gloss": "judge", "source": "Genesis"}
+{"name": "Yōsēp", "type": "person", "morphemes": "yāsap", "gloss": "add", "source": "Genesis"}
+{"name": "Binyāmīn", "type": "person", "morphemes": "bēn + yāmīn", "gloss": "son + right hand", "source": "Genesis"}
+{"name": "Tāmār", "type": "person", "morphemes": "tāmār", "gloss": "palm", "source": "Genesis"}
+{"name": "Pereṣ", "type": "person", "morphemes": "pereṣ", "gloss": "breach", "source": "Genesis"}
+{"name": "Zeraḥ", "type": "person", "morphemes": "zāraḥ", "gloss": "shine", "source": "Genesis"}
+{"name": "Pōṭīpar", "type": "person", "morphemes": "pōṭīpar", "gloss": "name", "source": "Genesis"}
+{"name": "ʾĀsenat", "type": "person", "morphemes": "ʾāsenat", "gloss": "name", "source": "Genesis"}
+{"name": "Ṣāpenat-paʿnēaḥ", "type": "person", "morphemes": "ṣāpenat-paʿnēaḥ", "gloss": "name", "source": "Genesis"}
+{"name": "Qeṭūrāh", "type": "person", "morphemes": "qeṭōret", "gloss": "incense", "source": "Genesis"}
+{"name": "Malkī-ṣedeq", "type": "person", "morphemes": "melek + ṣedeq", "gloss": "king + righteousness", "source": "Genesis"}
+{"name": "Kedorlāʿōmer", "type": "person", "morphemes": "kedorlāʿōmer", "gloss": "name", "source": "Genesis"}
+{"name": "ʾAbīmelek", "type": "person", "morphemes": "ʾāb + melek", "gloss": "father + king", "source": "Genesis"}
+{"name": "Debōrāh", "type": "person", "morphemes": "debōrāh", "gloss": "bee", "source": "Judges"}
+{"name": "ʾElīʿezer", "type": "person", "morphemes": "ʾēl + ʿāzar", "gloss": "god + help", "source": "Genesis"}
+{"name": "ʾElīpaz", "type": "person", "morphemes": "ʾēl + paz", "gloss": "god + fine gold", "source": "Genesis"}
+{"name": "ʾOholībāmāh", "type": "person", "morphemes": "ʾōhel + bāmāh", "gloss": "tent + high place", "source": "Genesis"}
+{"name": "Hadad", "type": "person", "morphemes": "hadad", "gloss": "name", "source": "Genesis"}
+{"name": "Baʿal-ḥānān", "type": "person", "morphemes": "baʿal + ḥānan", "gloss": "lord + be gracious", "source": "Genesis"}
+{"name": "Qōraḥ", "type": "person", "morphemes": "qāraḥ", "gloss": "bald", "source": "Numbers"}
+{"name": "ʾAbīdāʿ", "type": "person", "morphemes": "ʾāb + yādaʿ", "gloss": "father + know", "source": "Genesis"}
+{"name": "ʾEldāʿāh", "type": "person", "morphemes": "ʾēl + yādaʿ", "gloss": "god + know", "source": "Genesis"}
+{"name": "Gōmer", "type": "person", "morphemes": "gōmer", "gloss": "name", "source": "Genesis"}
+{"name": "ʾArpakšad", "type": "person", "morphemes": "ʾarpakšad", "gloss": "name", "source": "Genesis"}
+{"name": "Mōšeh", "type": "person", "morphemes": "mōšeh", "gloss": "name", "source": "Exodus"}
+{"name": "ʾAharōn", "type": "person", "morphemes": "ʾaharōn", "gloss": "name", "source": "Exodus"}
+{"name": "Miryām", "type": "person", "morphemes": "miryām", "gloss": "name", "source": "Exodus"}
+{"name": "ʿAmrām", "type": "person", "morphemes": "ʿam + rūm", "gloss": "people + be high", "source": "Exodus"}
+{"name": "Yōkebed", "type": "person", "morphemes": "yāh + kābōd", "gloss": "Yahweh + glory", "source": "Exodus"}
+{"name": "Ṣippōrāh", "type": "person", "morphemes": "ṣippōr", "gloss": "bird", "source": "Exodus"}
+{"name": "Yitrō", "type": "person", "morphemes": "yeter", "gloss": "abundance", "source": "Exodus"}
+{"name": "Reʿūʾēl", "type": "person", "morphemes": "rēaʿ + ʾēl", "gloss": "friend + god", "source": "Exodus"}
+{"name": "Gēršōm", "type": "person", "morphemes": "gēr + šām", "gloss": "sojourner + there", "source": "Exodus"}
+{"name": "Gēršōn", "type": "person", "morphemes": "gēršōn", "gloss": "name", "source": "Exodus"}
+{"name": "Qehāt", "type": "person", "morphemes": "qehāt", "gloss": "name", "source": "Exodus"}
+{"name": "Merārī", "type": "person", "morphemes": "mar", "gloss": "bitter", "source": "Exodus"}
+{"name": "ʿUzzīʾēl", "type": "person", "morphemes": "ʿōz + ʾēl", "gloss": "strength + god", "source": "Exodus"}
+{"name": "Nādāb", "type": "person", "morphemes": "nādab", "gloss": "willing", "source": "Exodus"}
+{"name": "ʾAbīhūʾ", "type": "person", "morphemes": "ʾāb + hūʾ", "gloss": "father + he", "source": "Exodus"}
+{"name": "ʾElʿāzār", "type": "person", "morphemes": "ʾēl + ʿāzar", "gloss": "god + help", "source": "Exodus"}
+{"name": "ʾĪtāmār", "type": "person", "morphemes": "ʾītāmār", "gloss": "name", "source": "Exodus"}
+{"name": "Pīnḥās", "type": "person", "morphemes": "pīnḥās", "gloss": "name", "source": "Exodus"}
+{"name": "ʾElīšebaʿ", "type": "person", "morphemes": "ʾēl + šebaʿ", "gloss": "god + oath", "source": "Exodus"}
+{"name": "Naḥšōn", "type": "person", "morphemes": "nāḥāš", "gloss": "serpent", "source": "Exodus"}
+{"name": "ʿAmmīnādāb", "type": "person", "morphemes": "ʿam + nādab", "gloss": "people + willing", "source": "Exodus"}
+{"name": "Kālēb", "type": "person", "morphemes": "keleb", "gloss": "dog", "source": "Numbers"}
+{"name": "Yehōšūaʿ", "type": "person", "morphemes": "yāh + yāšaʿ", "gloss": "Yahweh + save", "source": "Exodus"}
+{"name": "Hōšēaʿ", "type": "person", "morphemes": "yāšaʿ", "gloss": "save", "source": "Numbers"}
+{"name": "Nūn", "type": "person", "morphemes": "nūn", "gloss": "fish", "source": "Exodus"}
+{"name": "Beṣalʾēl", "type": "person", "morphemes": "be + ṣēl + ʾēl", "gloss": "in + shadow + god", "source": "Exodus"}
+{"name": "ʾOholīʾāb", "type": "person", "morphemes": "ʾōhel + ʾāb", "gloss": "tent + father", "source": "Exodus"}
+{"name": "Dātān", "type": "person", "morphemes": "dātān", "gloss": "name", "source": "Numbers"}
+{"name": "ʾAbīrām", "type": "person", "morphemes": "ʾāb + rūm", "gloss": "father + be high", "source": "Numbers"}
+{"name": "Balʿām", "type": "person", "morphemes": "balʿām", "gloss": "name", "source": "Numbers"}
+{"name": "Bālāq", "type": "person", "morphemes": "bālaq", "gloss": "devastate", "source": "Numbers"}
+{"name": "Sīḥōn", "type": "person", "morphemes": "sīḥōn", "gloss": "name", "source": "Numbers"}
+{"name": "ʿŌg", "type": "person", "morphemes": "ʿōg", "gloss": "name", "source": "Numbers"}
+{"name": "Zimrī", "type": "person", "morphemes": "zāmar", "gloss": "sing", "source": "Numbers"}
+{"name": "ʾEldād", "type": "person", "morphemes": "ʾēl + dōd", "gloss": "god + beloved", "source": "Numbers"}
+{"name": "ʾElīšāmāʿ", "type": "person", "morphemes": "ʾēl + šāmaʿ", "gloss": "god + hear", "source": "Numbers"}
+{"name": "ʾElīṣūr", "type": "person", "morphemes": "ʾēl + ṣūr", "gloss": "god + rock", "source": "Numbers"}
+{"name": "Šelumīʾēl", "type": "person", "morphemes": "šālōm + ʾēl", "gloss": "peace + god", "source": "Numbers"}
+{"name": "Ṣūrīšadday", "type": "person", "morphemes": "ṣūr + šadday", "gloss": "rock + almighty", "source": "Numbers"}
+{"name": "Netanʾēl", "type": "person", "morphemes": "nātan + ʾēl", "gloss": "give + god", "source": "Numbers"}
+{"name": "ʾElīʾāb", "type": "person", "morphemes": "ʾēl + ʾāb", "gloss": "god + father", "source": "Numbers"}
+{"name": "Gamlīʾēl", "type": "person", "morphemes": "gāmal + ʾēl", "gloss": "reward + god", "source": "Numbers"}
+{"name": "Pedāhṣūr", "type": "person", "morphemes": "pādāh + ṣūr", "gloss": "redeem + rock", "source": "Numbers"}
+{"name": "ʾAbīdān", "type": "person", "morphemes": "ʾāb + dīn", "gloss": "father + judge", "source": "Numbers"}
+{"name": "ʾAḥīʿezer", "type": "person", "morphemes": "ʾāḥ + ʿāzar", "gloss": "brother + help", "source": "Numbers"}
+{"name": "ʿAmmīšadday", "type": "person", "morphemes": "ʿam + šadday", "gloss": "people + almighty", "source": "Numbers"}
+{"name": "Pagʿīʾēl", "type": "person", "morphemes": "pāgaʿ + ʾēl", "gloss": "meet + god", "source": "Numbers"}
+{"name": "ʾElyāsāp", "type": "person", "morphemes": "ʾēl + yāsap", "gloss": "god + add", "source": "Numbers"}
+{"name": "ʿAmmīhūd", "type": "person", "morphemes": "ʿam + hōd", "gloss": "people + splendour", "source": "Numbers"}
+{"name": "Šemīdāʿ", "type": "person", "morphemes": "šēm + yādaʿ", "gloss": "name + know", "source": "Numbers"}
+{"name": "ʾAbīʿezer", "type": "person", "morphemes": "ʾāb + ʿāzar", "gloss": "father + help", "source": "Joshua"}
+{"name": "Rāḥāb", "type": "person", "morphemes": "rāḥab", "gloss": "be wide", "source": "Joshua"}
+{"name": "ʿĀkān", "type": "person", "morphemes": "ʿākān", "gloss": "name", "source": "Joshua"}
+{"name": "ʾAdōnī-ṣedeq", "type": "person", "morphemes": "ʾādōn + ṣedeq", "gloss": "lord + righteousness", "source": "Joshua"}
+{"name": "ʿOtnīʾēl", "type": "person", "morphemes": "ʿotnīʾēl", "gloss": "name", "source": "Joshua"}
+{"name": "ʾAdōnī-bezeq", "type": "person", "morphemes": "ʾādōn + bezeq", "gloss": "lord + name", "source": "Judges"}
+{"name": "Kūšan-rišʿātayim", "type": "person", "morphemes": "kūšan + rišʿāh", "gloss": "name + wickedness", "source": "Judges"}
+{"name": "ʾĒhūd", "type": "person", "morphemes": "ʾēhūd", "gloss": "name", "source": "Judges"}
+{"name": "ʿEglōn", "type": "person", "morphemes": "ʿēgel", "gloss": "calf", "source": "Judges"}
+{"name": "Šamgar", "type": "person", "morphemes": "šamgar", "gloss": "name", "source": "Judges"}
+{"name": "Bārāq", "type": "person", "morphemes": "bārāq", "gloss": "lightning", "source": "Judges"}
+{"name": "ʾAbīnōʿam", "type": "person", "morphemes": "ʾāb + nōʿam", "gloss": "father + pleasantness", "source": "Judges"}
+{"name": "Yābīn", "type": "person", "morphemes": "bīn", "gloss": "understand", "source": "Judges"}
+{"name": "Sīserāʾ", "type": "person", "morphemes": "sīserāʾ", "gloss": "name", "source": "Judges"}
+{"name": "Yāʿēl", "type": "person", "morphemes": "yāʿēl", "gloss": "ibex", "source": "Judges"}
+{"name": "Ḥeber", "type": "person", "morphemes": "ḥābar", "gloss": "associate", "source": "Judges"}
+{"name": "Gidʿōn", "type": "person", "morphemes": "gādaʿ", "gloss": "hew", "source": "Judges"}
+{"name": "Yerubbaʿal", "type": "person", "morphemes": "rīb + baʿal", "gloss": "contend + lord", "source": "Judges"}
+{"name": "Yōʾāš", "type": "person", "morphemes": "yōʾāš", "gloss": "name", "source": "Judges"}
+{"name": "ʿŌrēb", "type": "person", "morphemes": "ʿōrēb", "gloss": "raven", "source": "Judges"}
+{"name": "Zeʾēb", "type": "person", "morphemes": "zeʾēb", "gloss": "wolf", "source": "Judges"}
+{"name": "Yōtām", "type": "person", "morphemes": "yāh + tām", "gloss": "Yahweh + perfect", "source": "Judges"}
+{"name": "Yāʾīr", "type": "person", "morphemes": "ʾōr", "gloss": "light", "source": "Judges"}
+{"name": "Yiptāḥ", "type": "person", "morphemes": "pātaḥ", "gloss": "open", "source": "Judges"}
+{"name": "Šimšōn", "type": "person", "morphemes": "šemeš", "gloss": "sun", "source": "Judges"}
+{"name": "Mānōaḥ", "type": "person", "morphemes": "nūaḥ", "gloss": "rest", "source": "Judges"}
+{"name": "Delīlāh", "type": "person", "morphemes": "delīlāh", "gloss": "name", "source": "Judges"}
+{"name": "Mīkāh", "type": "person", "morphemes": "mī + ke", "gloss": "who + like", "source": "Judges"}
+{"name": "ʾElīmelek", "type": "person", "morphemes": "ʾēl + melek", "gloss": "god + king", "source": "Ruth"}
+{"name": "Noʿomī", "type": "person", "morphemes": "nōʿam", "gloss": "pleasantness", "source": "Ruth"}
+{"name": "Maḥlōn", "type": "person", "morphemes": "maḥlōn", "gloss": "name", "source": "Ruth"}
+{"name": "Kilyōn", "type": "person", "morphemes": "kilyōn", "gloss": "name", "source": "Ruth"}
+{"name": "ʿOrpāh", "type": "person", "morphemes": "ʿōrep", "gloss": "neck", "source": "Ruth"}
+{"name": "Rūt", "type": "person", "morphemes": "rūt", "gloss": "name", "source": "Ruth"}
+{"name": "Bōʿaz", "type": "person", "morphemes": "bōʿaz", "gloss": "name", "source": "Ruth"}
+{"name": "ʿŌbēd", "type": "person", "morphemes": "ʿābad", "gloss": "serve", "source": "Ruth"}
+{"name": "Yišay", "type": "person", "morphemes": "yišay", "gloss": "name", "source": "Ruth"}
+{"name": "Śalmōn", "type": "person", "morphemes": "śalmāh", "gloss": "garment", "source": "Ruth"}
+{"name": "ʿĒlī", "type": "person", "morphemes": "ʿālāh", "gloss": "go up", "source": "Samuel"}
+{"name": "Šemūʾēl", "type": "person", "morphemes": "šēm + ʾēl", "gloss": "name + god", "source": "Samuel"}
+{"name": "ʾElqānāh", "type": "person", "morphemes": "ʾēl + qānāh", "gloss": "god + acquire", "source": "Samuel"}
+{"name": "Ḥannāh", "type": "person", "morphemes": "ḥānan", "gloss": "be gracious", "source": "Samuel"}
+{"name": "Peninnāh", "type": "person", "morphemes": "penīnāh", "gloss": "coral", "source": "Samuel"}
+{"name": "ʾĪ-kābōd", "type": "person", "morphemes": "ʾī + kābōd", "gloss": "no + glory", "source": "Samuel"}
+{"name": "Šāʾūl", "type": "person", "morphemes": "šāʾal", "gloss": "ask", "source": "Samuel"}
+{"name": "Qīš", "type": "person", "morphemes": "qīš", "gloss": "name", "source": "Samuel"}
+{"name": "ʾAbnēr", "type": "person", "morphemes": "ʾāb + nēr", "gloss": "father + lamp", "source": "Samuel"}
+{"name": "Yehōnātān", "type": "person", "morphemes": "yāh + nātan", "gloss": "Yahweh + give", "source": "Samuel"}
+{"name": "Mīkal", "type": "person", "morphemes": "mīkal", "gloss": "name", "source": "Samuel"}
+{"name": "ʾAḥīnōʿam", "type": "person", "morphemes": "ʾāḥ + nōʿam", "gloss": "brother + pleasantness", "source": "Samuel"}
+{"name": "ʾĪš-bōšet", "type": "person", "morphemes": "ʾīš + bōšet", "gloss": "man + shame", "source": "Samuel"}
+{"name": "Mepībōšet", "type": "person", "morphemes": "mepībōšet", "gloss": "name", "source": "Samuel"}
+{"name": "ʾAgag", "type": "person", "morphemes": "ʾagag", "gloss": "name", "source": "Samuel"}
+{"name": "Dāwīd", "type": "person", "morphemes": "dāwīd", "gloss": "beloved", "source": "Samuel"}
+{"name": "Golyāt", "type": "person", "morphemes": "golyāt", "gloss": "name", "source": "Samuel"}
+{"name": "ʾAbīnādāb", "type": "person", "morphemes": "ʾāb + nādab", "gloss": "father + willing", "source": "Samuel"}
+{"name": "ʾAbīgayil", "type": "person", "morphemes": "ʾāb + gīl", "gloss": "father + rejoice", "source": "Samuel"}
+{"name": "Nābāl", "type": "person", "morphemes": "nābāl", "gloss": "fool", "source": "Samuel"}
+{"name": "ʾAḥīmelek", "type": "person", "morphemes": "ʾāḥ + melek", "gloss": "brother + king", "source": "Samuel"}
+{"name": "ʾEbyātār", "type": "person", "morphemes": "ʾāb + yeter", "gloss": "father + abundance", "source": "Samuel"}
+{"name": "Yōʾāb", "type": "person", "morphemes": "yāh + ʾāb", "gloss": "Yahweh + father", "source": "Samuel"}
+{"name": "ʾAbīšay", "type": "person", "morphemes": "ʾabīšay", "gloss": "name", "source": "Samuel"}
+{"name": "ʿAśāhʾēl", "type": "person", "morphemes": "ʿāśāh + ʾēl", "gloss": "make + god", "source": "Samuel"}
+{"name": "Ṣerūyāh", "type": "person", "morphemes": "ṣerūyāh", "gloss": "name", "source": "Samuel"}
+{"name": "ʾAmnōn", "type": "person", "morphemes": "ʾāman", "gloss": "be faithful", "source": "Samuel"}
+{"name": "ʾAbšālōm", "type": "person", "morphemes": "ʾāb + šālōm", "gloss": "father + peace", "source": "Samuel"}
+{"name": "ʾAdōniyyāh", "type": "person", "morphemes": "ʾādōn + yāh", "gloss": "lord + Yahweh", "source": "Samuel"}
+{"name": "Šepaṭyāh", "type": "person", "morphemes": "šāpaṭ + yāh", "gloss": "judge + Yahweh", "source": "Samuel"}
+{"name": "ʾAbīṭal", "type": "person", "morphemes": "ʾāb + ṭal", "gloss": "father + dew", "source": "Samuel"}
+{"name": "Maʿakāh", "type": "person", "morphemes": "maʿakāh", "gloss": "name", "source": "Samuel"}
+{"name": "Bat-šebaʿ", "type": "person", "morphemes": "bat + šebaʿ", "gloss": "daughter + oath", "source": "Samuel"}
+{"name": "ʾŪriyyāh", "type": "person", "morphemes": "ʾōr + yāh", "gloss": "light + Yahweh", "source": "Samuel"}
+{"name": "Nātān", "type": "person", "morphemes": "nātan", "gloss": "give", "source": "Samuel"}
+{"name": "Ṣādōq", "type": "person", "morphemes": "ṣedeq", "gloss": "righteousness", "source": "Samuel"}
+{"name": "Benāyāh", "type": "person", "morphemes": "bānāh + yāh", "gloss": "build + Yahweh", "source": "Samuel"}
+{"name": "Yehōyādāʿ", "type": "person", "morphemes": "yāh + yādaʿ", "gloss": "Yahweh + know", "source": "Samuel"}
+{"name": "ʾAḥītōpel", "type": "person", "morphemes": "ʾaḥītōpel", "gloss": "name", "source": "Samuel"}
+{"name": "Šimʿī", "type": "person", "morphemes": "šāmaʿ", "gloss": "hear", "source": "Samuel"}
+{"name": "Barzillay", "type": "person", "morphemes": "barzel", "gloss": "iron", "source": "Samuel"}
+{"name": "Šebaʿ", "type": "person", "morphemes": "šebaʿ", "gloss": "oath", "source": "Samuel"}
+{"name": "Ḥīrām", "type": "person", "morphemes": "ḥīrām", "gloss": "name", "source": "Samuel"}
+{"name": "Šelōmōh", "type": "person", "morphemes": "šālōm", "gloss": "peace", "source": "Samuel"}
+{"name": "Yedīdyāh", "type": "person", "morphemes": "yādīd + yāh", "gloss": "beloved + Yahweh", "source": "Samuel"}
+{"name": "Paltīʾēl", "type": "person", "morphemes": "pālaṭ + ʾēl", "gloss": "deliver + god", "source": "Samuel"}
+{"name": "Nāḥāš", "type": "person", "morphemes": "nāḥāš", "gloss": "serpent", "source": "Samuel"}
+{"name": "ʿUzzāʾ", "type": "person", "morphemes": "ʿōz", "gloss": "strength", "source": "Samuel"}
+{"name": "ʿŌbēd-ʾedōm", "type": "person", "morphemes": "ʿābad + ʾādōm", "gloss": "serve + red", "source": "Samuel"}
+{"name": "ʾAbīšag", "type": "person", "morphemes": "ʾabīšag", "gloss": "name", "source": "Kings"}
+{"name": "Reḥabʿām", "type": "person", "morphemes": "rāḥab + ʿam", "gloss": "be wide + people", "source": "Kings"}
+{"name": "Yārobʿām", "type": "person", "morphemes": "yārobʿām", "gloss": "name", "source": "Kings"}
+{"name": "ʾAḥiyyāh", "type": "person", "morphemes": "ʾāḥ + yāh", "gloss": "brother + Yahweh", "source": "Kings"}
+{"name": "ʾAbiyyāh", "type": "person", "morphemes": "ʾāb + yāh", "gloss": "father + Yahweh", "source": "Kings"}
+{"name": "ʾĀsāʾ", "type": "person", "morphemes": "ʾāsāʾ", "gloss": "name", "source": "Kings"}
+{"name": "Yehōšāpāṭ", "type": "person", "morphemes": "yāh + šāpaṭ", "gloss": "Yahweh + judge", "source": "Kings"}
+{"name": "Yehōrām", "type": "person", "morphemes": "yāh + rūm", "gloss": "Yahweh + be high", "source": "Kings"}
+{"name": "ʾAḥazyāh", "type": "person", "morphemes": "ʾāḥaz + yāh", "gloss": "seize + Yahweh", "source": "Kings"}
+{"name": "ʿAtalyāh", "type": "person", "morphemes": "ʿatalyāh", "gloss": "name", "source": "Kings"}
+{"name": "Yehōʾāš", "type": "person", "morphemes": "yehōʾāš", "gloss": "name", "source": "Kings"}
+{"name": "ʾAmaṣyāh", "type": "person", "morphemes": "ʾāmaṣ + yāh", "gloss": "be firm + Yahweh", "source": "Kings"}
+{"name": "ʿUzziyyāh", "type": "person", "morphemes": "ʿōz + yāh", "gloss": "strength + Yahweh", "source": "Kings"}
+{"name": "ʿAzaryāh", "type": "person", "morphemes": "ʿāzar + yāh", "gloss": "help + Yahweh", "source": "Kings"}
+{"name": "ʾĀḥāz", "type": "person", "morphemes": "ʾāḥaz", "gloss": "seize", "source": "Kings"}
+{"name": "Ḥizqiyyāh", "type": "person", "morphemes": "ḥāzaq + yāh", "gloss": "be strong + Yahweh", "source": "Kings"}
+{"name": "ʾĀmōn", "type": "person", "morphemes": "ʾāmōn", "gloss": "name", "source": "Kings"}
+{"name": "Yōʾšiyyāh", "type": "person", "morphemes": "yōʾšiyyāh", "gloss": "name", "source": "Kings"}
+{"name": "Yehōʾāḥāz", "type": "person", "morphemes": "yāh + ʾāḥaz", "gloss": "Yahweh + seize", "source": "Kings"}
+{"name": "Yehōyāqīm", "type": "person", "morphemes": "yāh + qūm", "gloss": "Yahweh + arise", "source": "Kings"}
+{"name": "Yehōyākīn", "type": "person", "morphemes": "yāh + kūn", "gloss": "Yahweh + establish", "source": "Kings"}
+{"name": "Ṣidqiyyāh", "type": "person", "morphemes": "ṣedeq + yāh", "gloss": "righteousness + Yahweh", "source": "Kings"}
+{"name": "Mattanyāh", "type": "person", "morphemes": "nātan + yāh", "gloss": "give + Yahweh", "source": "Kings"}
+{"name": "Gedalyāh", "type": "person", "morphemes": "gādal + yāh", "gloss": "be great + Yahweh", "source": "Kings"}
+{"name": "Nebūkadneʾṣṣar", "type": "person", "morphemes": "nebūkadneʾṣṣar", "gloss": "name", "source": "Kings"}
+{"name": "Nebūzarʾadān", "type": "person", "morphemes": "nebūzarʾadān", "gloss": "name", "source": "Kings"}
+{"name": "Sanḥērīb", "type": "person", "morphemes": "sanḥērīb", "gloss": "name", "source": "Kings"}
+{"name": "Tiglat-pilʾeser", "type": "person", "morphemes": "tiglat-pilʾeser", "gloss": "name", "source": "Kings"}
+{"name": "Šalmaneʾser", "type": "person", "morphemes": "šalmaneʾser", "gloss": "name", "source": "Kings"}
+{"name": "Sargōn", "type": "person", "morphemes": "sargōn", "gloss": "name", "source": "Isaiah"}
+{"name": "ʾEsar-ḥaddōn", "type": "person", "morphemes": "ʾesar-ḥaddōn", "gloss": "name", "source": "Kings"}
+{"name": "Merōdak-baladān", "type": "person", "morphemes": "merōdak + baladān", "gloss": "name + name", "source": "Isaiah"}
+{"name": "Reṣīn", "type": "person", "morphemes": "reṣīn", "gloss": "name", "source": "Kings"}
+{"name": "Peqaḥ", "type": "person", "morphemes": "pāqaḥ", "gloss": "open eyes", "source": "Kings"}
+{"name": "Menaḥēm", "type": "person", "morphemes": "nāḥam", "gloss": "comfort", "source": "Kings"}
+{"name": "Zekaryāh", "type": "person", "morphemes": "zākar + yāh", "gloss": "remember + Yahweh", "source": "Kings"}
+{"name": "Baʿšāʾ", "type": "person", "morphemes": "baʿšāʾ", "gloss": "name", "source": "Kings"}
+{"name": "ʿOmrī", "type": "person", "morphemes": "ʿomrī", "gloss": "name", "source": "Kings"}
+{"name": "ʾAḥʾāb", "type": "person", "morphemes": "ʾāḥ + ʾāb", "gloss": "brother + father", "source": "Kings"}
+{"name": "ʾĪzebel", "type": "person", "morphemes": "ʾīzebel", "gloss": "name", "source": "Kings"}
+{"name": "ʾEtbaʿal", "type": "person", "morphemes": "ʾēt + baʿal", "gloss": "with + lord", "source": "Kings"}
+{"name": "Yēhūʾ", "type": "person", "morphemes": "yāh + hūʾ", "gloss": "Yahweh + he", "source": "Kings"}
+{"name": "ʾĒliyyāh", "type": "person", "morphemes": "ʾēl + yāh", "gloss": "god + Yahweh", "source": "Kings"}
+{"name": "ʾElīšāʿ", "type": "person", "morphemes": "ʾēl + yāšaʿ", "gloss": "god + save", "source": "Kings"}
+{"name": "Gēḥazī", "type": "person", "morphemes": "gēḥazī", "gloss": "name", "source": "Kings"}
+{"name": "Naʿamān", "type": "person", "morphemes": "nōʿam", "gloss": "pleasantness", "source": "Kings"}
+{"name": "Ḥazāʾēl", "type": "person", "morphemes": "ḥāzāh + ʾēl", "gloss": "behold + god", "source": "Kings"}
+{"name": "Mēšaʿ", "type": "person", "morphemes": "yāšaʿ", "gloss": "save", "source": "Kings"}
+{"name": "Nābōt", "type": "person", "morphemes": "nābōt", "gloss": "name", "source": "Kings"}
+{"name": "ʿŌbadyāh", "type": "person", "morphemes": "ʿābad + yāh", "gloss": "serve + Yahweh", "source": "Kings"}
+{"name": "Mīkāyāh", "type": "person", "morphemes": "mī + ke + yāh", "gloss": "who + like + Yahweh", "source": "Kings"}
+{"name": "Yehōnādāb", "type": "person", "morphemes": "yāh + nādab", "gloss": "Yahweh + willing", "source": "Kings"}
+{"name": "ʾAdōnīrām", "type": "person", "morphemes": "ʾādōn + rūm", "gloss": "lord + be high", "source": "Kings"}
+{"name": "ʾElyāqīm", "type": "person", "morphemes": "ʾēl + qūm", "gloss": "god + arise", "source": "Kings"}
+{"name": "Ḥilqiyyāh", "type": "person", "morphemes": "ḥēleq + yāh", "gloss": "portion + Yahweh", "source": "Kings"}
+{"name": "Ḥuldāh", "type": "person", "morphemes": "ḥōled", "gloss": "weasel", "source": "Kings"}
+{"name": "ʾAḥīqām", "type": "person", "morphemes": "ʾāḥ + qūm", "gloss": "brother + arise", "source": "Kings"}
+{"name": "Yehōšebaʿ", "type": "person", "morphemes": "yāh + šebaʿ", "gloss": "Yahweh + oath", "source": "Kings"}
+{"name": "Yōnāh", "type": "person", "morphemes": "yōnāh", "gloss": "dove", "source": "Kings"}
+{"name": "Šīšaq", "type": "person", "morphemes": "šīšaq", "gloss": "name", "source": "Kings"}
+{"name": "Yōḥānān", "type": "person", "morphemes": "yāh + ḥānan", "gloss": "Yahweh + be gracious", "source": "Kings"}
+{"name": "Serāyāh", "type": "person", "morphemes": "śārāh + yāh", "gloss": "strive + Yahweh", "source": "Kings"}
+{"name": "Ḥepṣī-bāh", "type": "person", "morphemes": "ḥēpeṣ + bāh", "gloss": "delight + in her", "source": "Kings"}
+{"name": "Yešaʿyāh", "type": "person", "morphemes": "yāšaʿ + yāh", "gloss": "save + Yahweh", "source": "Isaiah"}
+{"name": "ʾĀmōṣ", "type": "person", "morphemes": "ʾāmaṣ", "gloss": "be firm", "source": "Isaiah"}
+{"name": "ʿImmānūʾēl", "type": "person", "morphemes": "ʿim + ʾēl", "gloss": "with + god", "source": "Isaiah"}
+{"name": "Šeʾār-yāšūb", "type": "person", "morphemes": "šeʾār + šūb", "gloss": "remnant + return", "source": "Isaiah"}
+{"name": "Mahēr-šālāl-ḥāš-baz", "type": "person", "morphemes": "māhar + šālāl + ḥūš + baz", "gloss": "hasten + spoil + hurry + plunder", "source": "Isaiah"}
+{"name": "Yirmeyāh", "type": "person", "morphemes": "yirmeyāh", "gloss": "name", "source": "Jeremiah"}
+{"name": "Bārūk", "type": "person", "morphemes": "bārak", "gloss": "bless", "source": "Jeremiah"}
+{"name": "Nēriyyāh", "type": "person", "morphemes": "nēr + yāh", "gloss": "lamp + Yahweh", "source": "Jeremiah"}
+{"name": "Ḥananyāh", "type": "person", "morphemes": "ḥānan + yāh", "gloss": "be gracious + Yahweh", "source": "Jeremiah"}
+{"name": "Šemaʿyāh", "type": "person", "morphemes": "šāmaʿ + yāh", "gloss": "hear + Yahweh", "source": "Jeremiah"}
+{"name": "ʿEbed-melek", "type": "person", "morphemes": "ʿābad + melek", "gloss": "serve + king", "source": "Jeremiah"}
+{"name": "Gemaryāh", "type": "person", "morphemes": "gāmar + yāh", "gloss": "finish + Yahweh", "source": "Jeremiah"}
+{"name": "ʾElnātān", "type": "person", "morphemes": "ʾēl + nātan", "gloss": "god + give", "source": "Jeremiah"}
+{"name": "Yaʾazanyāh", "type": "person", "morphemes": "ʾāzan + yāh", "gloss": "give ear + Yahweh", "source": "Jeremiah"}
+{"name": "Yeḥezqēʾl", "type": "person", "morphemes": "ḥāzaq + ʾēl", "gloss": "be strong + god", "source": "Ezekiel"}
+{"name": "Pelaṭyāh", "type": "person", "morphemes": "pālaṭ + yāh", "gloss": "deliver + Yahweh", "source": "Ezekiel"}
+{"name": "Gōg", "type": "person", "morphemes": "gōg", "gloss": "name", "source": "Ezekiel"}
+{"name": "Dāniyyēʾl", "type": "person", "morphemes": "dīn + ʾēl", "gloss": "judge + god", "source": "Daniel"}
+{"name": "Mīšāʾēl", "type": "person", "morphemes": "mīšāʾēl", "gloss": "name", "source": "Daniel"}
+{"name": "Bēlṭešaʾṣṣar", "type": "person", "morphemes": "bēlṭešaʾṣṣar", "gloss": "name", "source": "Daniel"}
+{"name": "Šadrak", "type": "person", "morphemes": "šadrak", "gloss": "name", "source": "Daniel"}
+{"name": "Mēšak", "type": "person", "morphemes": "mēšak", "gloss": "name", "source": "Daniel"}
+{"name": "ʿAbēd-negō", "type": "person", "morphemes": "ʿabēd-negō", "gloss": "name", "source": "Daniel"}
+{"name": "Bēlšaʾṣṣar", "type": "person", "morphemes": "bēlšaʾṣṣar", "gloss": "name", "source": "Daniel"}
+{"name": "Daryāweš", "type": "person", "morphemes": "daryāweš", "gloss": "name", "source": "Daniel"}
+{"name": "Kōreš", "type": "person", "morphemes": "kōreš", "gloss": "name", "source": "Isaiah"}
+{"name": "ʾAḥašwērōš", "type": "person", "morphemes": "ʾaḥašwērōš", "gloss": "name", "source": "Esther"}
+{"name": "ʾArtaḥšastāʾ", "type": "person", "morphemes": "ʾartaḥšastāʾ", "gloss": "name", "source": "Ezra-Nehemiah"}
+{"name": "Lōʾ-ruḥāmāh", "type": "person", "morphemes": "lōʾ + rāḥam", "gloss": "not + have compassion", "source": "Twelve Prophets"}
+{"name": "Lōʾ-ʿammī", "type": "person", "morphemes": "lōʾ + ʿam", "gloss": "not + people", "source": "Twelve Prophets"}
+{"name": "Yōʾēl", "type": "person", "morphemes": "yāh + ʾēl", "gloss": "Yahweh + god", "source": "Twelve Prophets"}
+{"name": "ʿĀmōs", "type": "person", "morphemes": "ʿāmas", "gloss": "carry", "source": "Twelve Prophets"}
+{"name": "Naḥūm", "type": "person", "morphemes": "nāḥam", "gloss": "comfort", "source": "Twelve Prophets"}
+{"name": "Ḥabaqqūq", "type": "person", "morphemes": "ḥabaqqūq", "gloss": "name", "source": "Twelve Prophets"}
+{"name": "Ṣepanyāh", "type": "person", "morphemes": "ṣāpan + yāh", "gloss": "hide + Yahweh", "source": "Twelve Prophets"}
+{"name": "Ḥaggay", "type": "person", "morphemes": "ḥag", "gloss": "festival", "source": "Twelve Prophets"}
+{"name": "Zerubbābel", "type": "person", "morphemes": "zerubbābel", "gloss": "name", "source": "Twelve Prophets"}
+{"name": "Šealtīʾēl", "type": "person", "morphemes": "šāʾal + ʾēl", "gloss": "ask + god", "source": "Twelve Prophets"}
+{"name": "Yehōṣādāq", "type": "person", "morphemes": "yāh + ṣedeq", "gloss": "Yahweh + righteousness", "source": "Twelve Prophets"}
+{"name": "Malʾākī", "type": "person", "morphemes": "malʾāk", "gloss": "messenger", "source": "Twelve Prophets"}
+{"name": "Yēšūaʿ", "type": "person", "morphemes": "yāh + yāšaʿ", "gloss": "Yahweh + save", "source": "Ezra-Nehemiah"}
+{"name": "ʿEzrāʾ", "type": "person", "morphemes": "ʿāzar", "gloss": "help", "source": "Ezra-Nehemiah"}
+{"name": "Neḥemyāh", "type": "person", "morphemes": "nāḥam + yāh", "gloss": "comfort + Yahweh", "source": "Ezra-Nehemiah"}
+{"name": "Sanballaṭ", "type": "person", "morphemes": "sanballaṭ", "gloss": "name", "source": "Ezra-Nehemiah"}
+{"name": "Ṭōbiyyāh", "type": "person", "morphemes": "ṭōb + yāh", "gloss": "good + Yahweh", "source": "Ezra-Nehemiah"}
+{"name": "ʾElyāšīb", "type": "person", "morphemes": "ʾēl + šūb", "gloss": "god + return", "source": "Ezra-Nehemiah"}
+{"name": "ʾEstēr", "type": "person", "morphemes": "ʾestēr", "gloss": "name", "source": "Esther"}
+{"name": "Hadassāh", "type": "person", "morphemes": "hadas", "gloss": "myrtle", "source": "Esther"}
+{"name": "Mordekay", "type": "person", "morphemes": "mordekay", "gloss": "name", "source": "Esther"}
+{"name": "Hāmān", "type": "person", "morphemes": "hāmān", "gloss": "name", "source": "Esther"}
+{"name": "Waštī", "type": "person", "morphemes": "waštī", "gloss": "name", "source": "Esther"}
+{"name": "ʾAbīḥayil", "type": "person", "morphemes": "ʾāb + ḥayil", "gloss": "father + strength", "source": "Esther"}
+{"name": "ʾIyyōb", "type": "person", "morphemes": "ʾiyyōb", "gloss": "name", "source": "Job"}
+{"name": "Bildad", "type": "person", "morphemes": "bildad", "gloss": "name", "source": "Job"}
+{"name": "Ṣōpar", "type": "person", "morphemes": "ṣōpar", "gloss": "name", "source": "Job"}
+{"name": "ʾElīhūʾ", "type": "person", "morphemes": "ʾēl + hūʾ", "gloss": "god + he", "source": "Job"}
+{"name": "Yemīmāh", "type": "person", "morphemes": "yemīmāh", "gloss": "dove", "source": "Job"}
+{"name": "Qeṣīʿāh", "type": "person", "morphemes": "qeṣīʿāh", "gloss": "cassia", "source": "Job"}
+{"name": "Qeren-happūk", "type": "person", "morphemes": "qeren + pūk", "gloss": "horn + eye paint", "source": "Job"}
+{"name": "ʾĀsāp", "type": "person", "morphemes": "ʾāsap", "gloss": "gather", "source": "Psalms"}
+{"name": "Hēmān", "type": "person", "morphemes": "ʾāman", "gloss": "be faithful", "source": "Psalms"}
+{"name": "ʾĒtān", "type": "person", "morphemes": "ʾētān", "gloss": "perennial", "source": "Psalms"}
+{"name": "Yedūtūn", "type": "person", "morphemes": "yedūtūn", "gloss": "name", "source": "Psalms"}
+{"name": "ʾAgūr", "type": "person", "morphemes": "ʾāgar", "gloss": "collect", "source": "Proverbs"}
+{"name": "Lemūʾēl", "type": "person", "morphemes": "lemō + ʾēl", "gloss": "to + god", "source": "Proverbs"}
+{"name": "Yaʿbēṣ", "type": "person", "morphemes": "ʿōṣeb", "gloss": "pain", "source": "Chronicles"}

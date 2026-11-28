@@ -1,0 +1,418 @@
+{
+ "A": [
+  {
+   "item": "Hæðcyn",
+   "verdict": "ok"
+  },
+  {
+   "item": "Exanmūþa",
+   "verdict": "ok"
+  },
+  {
+   "item": "Cynebil",
+   "verdict": "ok"
+  },
+  {
+   "item": "Burgrēd",
+   "verdict": "ok"
+  },
+  {
+   "item": "Crēcaland",
+   "verdict": "ok",
+   "reason": "Attested in the Old English Orosius (c. 900, 'Creca land'), a pre-1100 OE text though outside the four corpora named in the task."
+  },
+  {
+   "item": "Cwichelm",
+   "verdict": "ok"
+  },
+  {
+   "item": "Æþelstān",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ingwald",
+   "verdict": "ok"
+  },
+  {
+   "item": "Hǣstingas",
+   "verdict": "ok",
+   "reason": "Split leaves out the -ingas suffix but is not clearly wrong."
+  },
+  {
+   "item": "Ēanfrið",
+   "verdict": "ok"
+  },
+  {
+   "item": "Billfrið",
+   "verdict": "ok",
+   "reason": "Attested in Aldred's 10th-century Old English colophon to the Lindisfarne Gospels, a pre-1100 OE text though outside the four corpora named in the task."
+  },
+  {
+   "item": "Heaþorīc",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ealhswīð",
+   "verdict": "ok"
+  },
+  {
+   "item": "Eoforwīc",
+   "verdict": "ok",
+   "reason": "OE folk-etymological reshaping of Latin Eboracum; the split matches the OE form."
+  },
+  {
+   "item": "Hǣreð",
+   "verdict": "ok"
+  },
+  {
+   "item": "Æþelflǣd",
+   "verdict": "ok",
+   "reason": "Meaning of flǣd is uncertain; 'beauty' is a common, defensible reading."
+  },
+  {
+   "item": "Ūhtrēd",
+   "verdict": "ok"
+  },
+  {
+   "item": "Onela",
+   "verdict": "ok"
+  },
+  {
+   "item": "Cyningestūn",
+   "verdict": "ok"
+  },
+  {
+   "item": "Cymenesōra",
+   "verdict": "ok"
+  },
+  {
+   "item": "Æscwine",
+   "verdict": "ok"
+  },
+  {
+   "item": "Hildeburh",
+   "verdict": "ok"
+  },
+  {
+   "item": "Bēanstān",
+   "verdict": "ok",
+   "reason": "Etymology of Bēan- is obscure; the literal reading is defensible."
+  },
+  {
+   "item": "Lyge",
+   "verdict": "ok"
+  },
+  {
+   "item": "Apuldre",
+   "verdict": "ok"
+  },
+  {
+   "item": "Bearwe",
+   "verdict": "ok"
+  },
+  {
+   "item": "Englaland",
+   "verdict": "ok"
+  },
+  {
+   "item": "Peada",
+   "verdict": "ok"
+  },
+  {
+   "item": "Baþanceaster",
+   "verdict": "ok"
+  },
+  {
+   "item": "Hrēðel",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ēlig",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ōslāf",
+   "verdict": "ok"
+  },
+  {
+   "item": "Grantaceaster",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ealdfrið",
+   "verdict": "ok"
+  },
+  {
+   "item": "Æþelingaēg",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ēadwig",
+   "verdict": "ok"
+  },
+  {
+   "item": "Westseaxe",
+   "verdict": "ok"
+  },
+  {
+   "item": "Æþelþrȳð",
+   "verdict": "ok"
+  },
+  {
+   "item": "Æþelbald",
+   "verdict": "ok"
+  },
+  {
+   "item": "Ōsþrȳð",
+   "verdict": "ok"
+  },
+  {
+   "item": "Grendel",
+   "verdict": "ok",
+   "reason": "Name, split and gloss are fine; the type label 'deity' is inaccurate (Grendel is a monster), but type is not one of the wrong criteria."
+  },
+  {
+   "item": "Ēanflǣd",
+   "verdict": "ok"
+  },
+  {
+   "item": "Wīsle",
+   "verdict": "ok",
+   "reason": "Attested in the Old English Orosius (Wulfstan's voyage); pre-1100 OE text outside the four named corpora (the river also appears as Wistla- in Widsith 121)."
+  },
+  {
+   "item": "Winterfylleþ",
+   "verdict": "ok"
+  },
+  {
+   "item": "Æþelfrið",
+   "verdict": "ok"
+  },
+  {
+   "item": "Wealhstōd",
+   "verdict": "ok"
+  },
+  {
+   "item": "Meretūn",
+   "verdict": "ok"
+  },
+  {
+   "item": "Brūnanburh",
+   "verdict": "ok"
+  },
+  {
+   "item": "Lēofsunu",
+   "verdict": "ok"
+  },
+  {
+   "item": "Acca",
+   "verdict": "ok"
+  }
+ ],
+ "B": [
+  {
+   "item": "berend",
+   "verdict": "ok"
+  },
+  {
+   "item": "wīf",
+   "verdict": "ok"
+  },
+  {
+   "item": "wrigels",
+   "verdict": "ok"
+  },
+  {
+   "item": "hyll",
+   "verdict": "ok"
+  },
+  {
+   "item": "sāgol",
+   "verdict": "ok"
+  },
+  {
+   "item": "clyster",
+   "verdict": "ok"
+  },
+  {
+   "item": "copp",
+   "verdict": "ok",
+   "reason": "B-T: 'top, summit'; relation to Latin cuppa is uncertain, not a known loan."
+  },
+  {
+   "item": "byge",
+   "verdict": "ok"
+  },
+  {
+   "item": "scealu",
+   "verdict": "ok"
+  },
+  {
+   "item": "byrþen",
+   "verdict": "ok",
+   "reason": "B-T explicitly glosses byrþen as 'burthen, load, weight, bundle'."
+  },
+  {
+   "item": "bold",
+   "verdict": "ok"
+  },
+  {
+   "item": "mand",
+   "verdict": "ok"
+  },
+  {
+   "item": "hēap",
+   "verdict": "ok"
+  },
+  {
+   "item": "cīþ",
+   "verdict": "ok"
+  },
+  {
+   "item": "sticca",
+   "verdict": "ok"
+  },
+  {
+   "item": "līchama",
+   "verdict": "ok"
+  },
+  {
+   "item": "hēafod",
+   "verdict": "ok"
+  },
+  {
+   "item": "æcer",
+   "verdict": "ok"
+  },
+  {
+   "item": "folm",
+   "verdict": "ok"
+  },
+  {
+   "item": "hōc",
+   "verdict": "ok"
+  },
+  {
+   "item": "tācn",
+   "verdict": "ok"
+  },
+  {
+   "item": "wyrm",
+   "verdict": "ok"
+  },
+  {
+   "item": "fiscaþ",
+   "verdict": "ok"
+  },
+  {
+   "item": "lēap",
+   "verdict": "ok"
+  },
+  {
+   "item": "bend",
+   "verdict": "ok"
+  },
+  {
+   "item": "cofa",
+   "verdict": "ok",
+   "reason": "Borderline: B-T glosses cofa as chamber, closet, inner room, repository, not a piece of furniture; acceptable only via the older sense of cabinet as a small private room or closet."
+  },
+  {
+   "item": "hearg",
+   "verdict": "ok"
+  },
+  {
+   "item": "wyrhta",
+   "verdict": "ok"
+  },
+  {
+   "item": "fōn",
+   "verdict": "ok"
+  },
+  {
+   "item": "ȳþ",
+   "verdict": "ok"
+  },
+  {
+   "item": "tōþ",
+   "verdict": "ok"
+  },
+  {
+   "item": "pōl",
+   "verdict": "ok"
+  },
+  {
+   "item": "ord",
+   "verdict": "ok"
+  },
+  {
+   "item": "nett",
+   "verdict": "ok"
+  },
+  {
+   "item": "tungol",
+   "verdict": "ok"
+  },
+  {
+   "item": "telga",
+   "verdict": "ok"
+  },
+  {
+   "item": "dor",
+   "verdict": "ok"
+  },
+  {
+   "item": "hlæst",
+   "verdict": "ok"
+  },
+  {
+   "item": "finn",
+   "verdict": "ok"
+  },
+  {
+   "item": "fiscnoþ",
+   "verdict": "ok"
+  },
+  {
+   "item": "bǣrmann",
+   "verdict": "ok"
+  },
+  {
+   "item": "stān",
+   "verdict": "ok"
+  },
+  {
+   "item": "angel",
+   "verdict": "ok"
+  },
+  {
+   "item": "twig",
+   "verdict": "ok"
+  },
+  {
+   "item": "steorra",
+   "verdict": "ok"
+  },
+  {
+   "item": "wēoh",
+   "verdict": "ok",
+   "reason": "B-T glosses wēoh/wīh as 'idol'; the English Place-Name Society reads it as 'idol, probably also temple' (shrine), so acceptable but not exact."
+  },
+  {
+   "item": "helfe",
+   "verdict": "ok"
+  },
+  {
+   "item": "stæf",
+   "verdict": "ok"
+  },
+  {
+   "item": "scealu",
+   "verdict": "ok"
+  },
+  {
+   "item": "getimbre",
+   "verdict": "ok"
+  }
+ ]
+}

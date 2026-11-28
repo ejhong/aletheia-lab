@@ -1,0 +1,29 @@
+You are labeling word-parts for a study of how names are built. The file {OUTDIR}/parts.jsonl has one JSON object per line: "part" (a {LANGUAGE} word or name element in Roman letters), "gloss" (short English meaning; "name" means it is a name with no known meaning), "in_names" (how many names contain it).
+
+Give every part exactly one category from this fixed list. Choose by the meaning of the part:
+- animal: an animal (horse, cow, wolf)
+- plant: a plant, tree, grain, flower
+- body_part: a part of the body
+- artefact: a made thing (chariot, bow, cup, cloth)
+- landscape: a natural feature as a common noun (hill, river, forest, water, sky, earth)
+- celestial: sun, moon, star, light of heaven, dawn
+- colour: a color word
+- number: a number word
+- direction: a direction or position word (east, upper, front)
+- kinship: a family relation (father, son, wife)
+- title_rank: a title or rank (king, lord, chief, priest as an office)
+- honorific: a respectful address element or honorific ending
+- occupation_group: an occupation or a class of people by what they do (herdsman, singer, warrior)
+- dynasty_clan: the name of a tribe, clan, family or lineage
+- deity: the name of a god, demon or other divine being
+- personal_name: a personal name element with no known meaning, or used only as a person's name
+- place_name: the name of a particular place, river or mountain
+- place_word: a common word for a kind of settlement or dwelling (village, fort, house)
+- quality_size: a quality, size, amount or evaluative word (good, great, many, bright, strong, true, all)
+- verb_deed: an action or deed, a verbal root or an agent or action noun from one (giving, conquering, praise, protector)
+- grammar_suffix: a grammatical prefix, suffix or particle (negation, plural and gender endings, case endings)
+- other: none of the above
+
+Rules: one category per part; use only the part and its gloss; do not look for any context, there is none you need. Do not change the spelling of any part and do not skip any.
+
+Output: write the file {OUTDIR}/labels.jsonl, one JSON object per line with exactly two keys, "part" (exactly as given) and "category". Every part in the input must appear once. Then reply with a short note: the count per category and any parts you were unsure about.
