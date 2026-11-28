@@ -32,15 +32,17 @@ def figure(name, title, svg, caption):
 
 
 def tiles():
-    passing = A.get("controls_passing", [])
-    rank = A.get("ranking_by_mean", [])
-    fresh_rank = ", ".join(str(rank.index(k) + 1) for k in FRESH if k in rank)
-    word = {"SUPPORTS": "Tamil stands out", "DOES NOT": "Tamil does not stand out", "MIXED": "Mixed"}
-    overall = next((v for k, v in word.items() if A.get("overall", "").startswith(k)), "Incomplete")
+    passes = A.get("passes", {})
+    passing = [k for k in CONTROLS if passes.get(k)]
+    top = max(passing, key=lambda k: L[k]["main"]["mean"]) if passing else None
     t = [("80 of 80", "of the preprint's archived runs reproduced exactly by a program written afresh from its method", False),
-         (f"{len(passing)} of {len(CONTROLS)}", "languages with no claim on the Indus seals that pass the preprint's own contest", False),
-         (fresh_rank or "none", f"where the two fresh Old Tamil lists rank among the {len(FRESH) + len(CONTROLS)} lists built the same way", False),
-         (overall, "when Tamil's list is built like the others'", True)]
+         (f"{len(passing)} of {len(CONTROLS)}", "languages with no claim on the Indus seals that pass the preprint's own contest: "
+          + " and ".join(NAMES[k] for k in sorted(passing, key=lambda k: -L[k]["main"]["mean"])), False)]
+    if top:
+        t.append((f"{num(L[top]['main']['mean'])} → {num(L[top]['jar sign left unread']['mean'])}",
+                  f"{NAMES[top]}'s score with the commonest sign read, and with that one sign left unread", False))
+    word = "Incomplete" if A.get("overall", "").startswith("INCOMPLETE") else A.get("overall", "").split(":")[0].capitalize()
+    t.append((word, "by the plan's own rule: no fresh Tamil list passed its check, so the main question was not answered as planned", True))
     (OUT / "tiles.html").write_text('<div class="tiles">\n' + "\n".join(
         f'<div class="tile"><p class="tile-value{" is-word" if w else ""}">{esc(v)}</p><p class="tile-label">{esc(l)}</p></div>'
         for v, l, w in t) + "\n</div>\n", encoding="utf-8")
@@ -120,9 +122,10 @@ def main():
     tiles()
     bars("contest", "main", "The contest: real names against scrambled names, list by list",
          "Score: real names minus the same names scrambled (mean of 100 rounds)",
-         "Every list through the preprint's contest. Copper: Old Tamil (the preprint's own list, sampled to 600 names, and the two "
-         "lists built afresh). Grey: the other languages. After each bar: the mean score, and the number of the 100 rounds in which "
-         "real names beat scrambled ones. A list passes at 80 rounds and a score right of the pass line.",
+         "Every list in the locked run through the preprint's contest. Copper: the preprint's own Old Tamil list, sampled to 600 "
+         "names. Grey: the preprint's Sanskrit and Akkadian lists and the seven control languages built for this study. After each "
+         "bar: the mean score, and the number of the 100 rounds in which real names beat scrambled ones. A list passes at 80 rounds "
+         "and a score right of the pass line.",
          "of 100")
     bars("shuffled", "pictures shuffled", "The same contest with the pictures on the wrong signs",
          "Score with each sign given another sign's picture words (mean of 200 runs)",

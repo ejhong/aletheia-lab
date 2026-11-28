@@ -1,0 +1,1620 @@
+{
+  "lang": "sumerian",
+  "runs": [
+    {
+      "seed": 0,
+      "real": 146.13,
+      "null": 30.52,
+      "difference": 115.61,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "575": "barag",
+        "740": "dug",
+        "760": "si"
+      }
+    },
+    {
+      "seed": 1,
+      "real": 133.92,
+      "null": -99.42,
+      "difference": 233.34,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 2,
+      "real": 144.05,
+      "null": 68.58,
+      "difference": 75.47,
+      "signs_read": 6,
+      "readings": {
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 3,
+      "real": 112.37,
+      "null": 18.27,
+      "difference": 94.1,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 4,
+      "real": 116.96,
+      "null": -5.45,
+      "difference": 122.41,
+      "signs_read": 9,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "760": "si",
+        "840": "igi"
+      }
+    },
+    {
+      "seed": 5,
+      "real": 54.84,
+      "null": 70.4,
+      "difference": -15.56,
+      "signs_read": 9,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 6,
+      "real": 89.35,
+      "null": 2.77,
+      "difference": 86.58,
+      "signs_read": 9,
+      "readings": {
+        "140": "ama",
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "575": "barag",
+        "740": "dug",
+        "760": "si",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 7,
+      "real": 169.91,
+      "null": 37.75,
+      "difference": 132.16,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 8,
+      "real": 80.23,
+      "null": -48.48,
+      "difference": 128.71,
+      "signs_read": 8,
+      "readings": {
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "742": "si",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 9,
+      "real": 104.7,
+      "null": 24.2,
+      "difference": 80.5,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 10,
+      "real": 125.28,
+      "null": 20.24,
+      "difference": 105.04,
+      "signs_read": 7,
+      "readings": {
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 11,
+      "real": 102.72,
+      "null": 3.45,
+      "difference": 99.27,
+      "signs_read": 9,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "742": "si",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 12,
+      "real": 132.72,
+      "null": 23.2,
+      "difference": 109.52,
+      "signs_read": 5,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 13,
+      "real": 83.23,
+      "null": 32.37,
+      "difference": 50.86,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 14,
+      "real": 144.7,
+      "null": -33.13,
+      "difference": 177.83,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 15,
+      "real": 96.87,
+      "null": 28.09,
+      "difference": 68.78,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 16,
+      "real": 184.65,
+      "null": -25.01,
+      "difference": 209.66,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 17,
+      "real": 78.49,
+      "null": 13.74,
+      "difference": 64.75,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 18,
+      "real": 134.93,
+      "null": 3.88,
+      "difference": 131.05,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 19,
+      "real": 80.75,
+      "null": -5.9,
+      "difference": 86.65,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 20,
+      "real": 146.78,
+      "null": -37.46,
+      "difference": 184.24,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 21,
+      "real": 127.93,
+      "null": 25.31,
+      "difference": 102.62,
+      "signs_read": 5,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 22,
+      "real": 121.12,
+      "null": 71.7,
+      "difference": 49.42,
+      "signs_read": 5,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "740": "dug",
+        "760": "si"
+      }
+    },
+    {
+      "seed": 23,
+      "real": 38.54,
+      "null": 19.02,
+      "difference": 19.52,
+      "signs_read": 9,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 24,
+      "real": 95.51,
+      "null": 17.26,
+      "difference": 78.25,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "575": "barag",
+        "740": "dug",
+        "760": "si"
+      }
+    },
+    {
+      "seed": 25,
+      "real": 94.04,
+      "null": 63.88,
+      "difference": 30.16,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "741": "si"
+      }
+    },
+    {
+      "seed": 26,
+      "real": 102.17,
+      "null": 44.81,
+      "difference": 57.36,
+      "signs_read": 6,
+      "readings": {
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 27,
+      "real": 92.49,
+      "null": 15.55,
+      "difference": 76.94,
+      "signs_read": 7,
+      "readings": {
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 28,
+      "real": 128.0,
+      "null": 12.83,
+      "difference": 115.17,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 29,
+      "real": 87.56,
+      "null": -50.9,
+      "difference": 138.46,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 30,
+      "real": 40.26,
+      "null": -0.75,
+      "difference": 41.01,
+      "signs_read": 9,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 31,
+      "real": 117.86,
+      "null": 8.05,
+      "difference": 109.81,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "575": "barag",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 32,
+      "real": 92.92,
+      "null": 3.36,
+      "difference": 89.56,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "575": "barag",
+        "740": "dug",
+        "760": "si"
+      }
+    },
+    {
+      "seed": 33,
+      "real": 111.08,
+      "null": -50.0,
+      "difference": 161.08,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 34,
+      "real": 155.41,
+      "null": 12.77,
+      "difference": 142.64,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "575": "barag",
+        "740": "dug",
+        "742": "si"
+      }
+    },
+    {
+      "seed": 35,
+      "real": 132.31,
+      "null": -2.8,
+      "difference": 135.11,
+      "signs_read": 5,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 36,
+      "real": 84.91,
+      "null": -11.83,
+      "difference": 96.74,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug",
+        "741": "si",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 37,
+      "real": 136.55,
+      "null": 32.89,
+      "difference": 103.66,
+      "signs_read": 7,
+      "readings": {
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 38,
+      "real": 95.08,
+      "null": 19.14,
+      "difference": 75.94,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 39,
+      "real": 147.51,
+      "null": 114.98,
+      "difference": 32.53,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "840": "igi"
+      }
+    },
+    {
+      "seed": 40,
+      "real": 146.5,
+      "null": 15.79,
+      "difference": 130.71,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "575": "barag",
+        "740": "dug",
+        "742": "si"
+      }
+    },
+    {
+      "seed": 41,
+      "real": 151.16,
+      "null": 40.03,
+      "difference": 111.13,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 42,
+      "real": 58.55,
+      "null": 9.78,
+      "difference": 48.77,
+      "signs_read": 10,
+      "readings": {
+        "140": "ama",
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 43,
+      "real": 118.79,
+      "null": 11.9,
+      "difference": 106.89,
+      "signs_read": 7,
+      "readings": {
+        "140": "ama",
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 44,
+      "real": 126.91,
+      "null": 33.83,
+      "difference": 93.08,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "760": "si",
+        "840": "igi"
+      }
+    },
+    {
+      "seed": 45,
+      "real": 94.77,
+      "null": -26.29,
+      "difference": 121.06,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 46,
+      "real": 144.5,
+      "null": -1.41,
+      "difference": 145.91,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 47,
+      "real": 118.1,
+      "null": 28.3,
+      "difference": 89.8,
+      "signs_read": 5,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 48,
+      "real": 115.87,
+      "null": -23.46,
+      "difference": 139.33,
+      "signs_read": 5,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 49,
+      "real": 121.68,
+      "null": 46.06,
+      "difference": 75.62,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug",
+        "760": "si"
+      }
+    },
+    {
+      "seed": 50,
+      "real": 156.66,
+      "null": -206.58,
+      "difference": 363.24,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "742": "si"
+      }
+    },
+    {
+      "seed": 51,
+      "real": 139.06,
+      "null": -15.09,
+      "difference": 154.15,
+      "signs_read": 5,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 52,
+      "real": 163.15,
+      "null": -4.06,
+      "difference": 167.21,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 53,
+      "real": 44.73,
+      "null": 28.58,
+      "difference": 16.15,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 54,
+      "real": 137.47,
+      "null": 21.42,
+      "difference": 116.05,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 55,
+      "real": 105.12,
+      "null": 23.41,
+      "difference": 81.71,
+      "signs_read": 9,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 56,
+      "real": 114.17,
+      "null": 21.38,
+      "difference": 92.79,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug",
+        "760": "si"
+      }
+    },
+    {
+      "seed": 57,
+      "real": 134.86,
+      "null": 15.22,
+      "difference": 119.64,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 58,
+      "real": 93.54,
+      "null": 54.84,
+      "difference": 38.7,
+      "signs_read": 7,
+      "readings": {
+        "140": "ama",
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "740": "dug",
+        "760": "si"
+      }
+    },
+    {
+      "seed": 59,
+      "real": 138.33,
+      "null": -5.01,
+      "difference": 143.34,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 60,
+      "real": 145.97,
+      "null": -28.55,
+      "difference": 174.52,
+      "signs_read": 4,
+      "readings": {
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 61,
+      "real": 156.02,
+      "null": 39.76,
+      "difference": 116.26,
+      "signs_read": 9,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 62,
+      "real": 137.44,
+      "null": -42.91,
+      "difference": 180.35,
+      "signs_read": 10,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "742": "si",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 63,
+      "real": 122.77,
+      "null": 11.38,
+      "difference": 111.39,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 64,
+      "real": 103.45,
+      "null": -54.25,
+      "difference": 157.7,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "575": "barag",
+        "740": "dug",
+        "760": "si",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 65,
+      "real": 91.14,
+      "null": 21.53,
+      "difference": 69.61,
+      "signs_read": 6,
+      "readings": {
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 66,
+      "real": 133.93,
+      "null": 75.43,
+      "difference": 58.5,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "832": "igi"
+      }
+    },
+    {
+      "seed": 67,
+      "real": 113.95,
+      "null": -11.68,
+      "difference": 125.63,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 68,
+      "real": 126.1,
+      "null": 30.98,
+      "difference": 95.12,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "575": "barag",
+        "740": "dug",
+        "760": "si"
+      }
+    },
+    {
+      "seed": 69,
+      "real": 81.41,
+      "null": 8.31,
+      "difference": 73.1,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "760": "si",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 70,
+      "real": 111.14,
+      "null": -78.63,
+      "difference": 189.77,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 71,
+      "real": 112.28,
+      "null": 3.73,
+      "difference": 108.55,
+      "signs_read": 5,
+      "readings": {
+        "100": "lu",
+        "400": "ju",
+        "503": "du",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 72,
+      "real": 147.49,
+      "null": -46.35,
+      "difference": 193.84,
+      "signs_read": 6,
+      "readings": {
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 73,
+      "real": 107.19,
+      "null": -13.07,
+      "difference": 120.26,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "760": "si",
+        "840": "igi"
+      }
+    },
+    {
+      "seed": 74,
+      "real": 72.74,
+      "null": -10.25,
+      "difference": 82.99,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 75,
+      "real": 135.27,
+      "null": -0.79,
+      "difference": 136.06,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 76,
+      "real": 85.74,
+      "null": -73.11,
+      "difference": 158.85,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 77,
+      "real": 45.34,
+      "null": -77.96,
+      "difference": 123.3,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 78,
+      "real": 159.88,
+      "null": 15.76,
+      "difference": 144.12,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "575": "barag",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 79,
+      "real": 51.64,
+      "null": -77.52,
+      "difference": 129.16,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug",
+        "760": "si",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 80,
+      "real": 95.36,
+      "null": -2.62,
+      "difference": 97.98,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "840": "igi"
+      }
+    },
+    {
+      "seed": 81,
+      "real": 98.51,
+      "null": -9.54,
+      "difference": 108.05,
+      "signs_read": 9,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "742": "si"
+      }
+    },
+    {
+      "seed": 82,
+      "real": 102.85,
+      "null": -15.04,
+      "difference": 117.89,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "740": "dug",
+        "760": "si",
+        "820": "utu",
+        "840": "igi"
+      }
+    },
+    {
+      "seed": 83,
+      "real": 74.34,
+      "null": -89.4,
+      "difference": 163.74,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 84,
+      "real": 127.96,
+      "null": -16.64,
+      "difference": 144.6,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "740": "dug",
+        "760": "si",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 85,
+      "real": 158.38,
+      "null": -26.38,
+      "difference": 184.76,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "503": "du",
+        "740": "dug",
+        "741": "si",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 86,
+      "real": 125.89,
+      "null": 1.79,
+      "difference": 124.1,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 87,
+      "real": 107.43,
+      "null": 23.83,
+      "difference": 83.6,
+      "signs_read": 5,
+      "readings": {
+        "140": "ama",
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 88,
+      "real": 116.67,
+      "null": -52.7,
+      "difference": 169.37,
+      "signs_read": 5,
+      "readings": {
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 89,
+      "real": 35.96,
+      "null": 25.32,
+      "difference": 10.64,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "575": "barag",
+        "740": "dug",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 90,
+      "real": 68.41,
+      "null": 40.69,
+      "difference": 27.72,
+      "signs_read": 10,
+      "readings": {
+        "142": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "760": "si",
+        "820": "utu",
+        "840": "igi"
+      }
+    },
+    {
+      "seed": 91,
+      "real": 60.57,
+      "null": -27.8,
+      "difference": 88.37,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 92,
+      "real": 99.29,
+      "null": 1.6,
+      "difference": 97.69,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "740": "dug",
+        "760": "si",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 93,
+      "real": 157.37,
+      "null": -99.83,
+      "difference": 257.2,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 94,
+      "real": 98.3,
+      "null": -65.55,
+      "difference": 163.85,
+      "signs_read": 6,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "575": "barag",
+        "740": "dug"
+      }
+    },
+    {
+      "seed": 95,
+      "real": 93.62,
+      "null": 27.12,
+      "difference": 66.5,
+      "signs_read": 9,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "575": "barag",
+        "740": "dug",
+        "790": "igi",
+        "820": "utu"
+      }
+    },
+    {
+      "seed": 96,
+      "real": 120.99,
+      "null": 5.34,
+      "difference": 115.65,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "du",
+        "575": "barag",
+        "740": "dug",
+        "760": "si",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 97,
+      "real": 131.38,
+      "null": 10.15,
+      "difference": 121.23,
+      "signs_read": 5,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "740": "dug",
+        "790": "igi"
+      }
+    },
+    {
+      "seed": 98,
+      "real": 99.13,
+      "null": 7.93,
+      "difference": 91.2,
+      "signs_read": 8,
+      "readings": {
+        "100": "lu",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug",
+        "760": "si",
+        "840": "igi"
+      }
+    },
+    {
+      "seed": 99,
+      "real": 130.81,
+      "null": 0.06,
+      "difference": 130.75,
+      "signs_read": 7,
+      "readings": {
+        "100": "lu",
+        "140": "ama",
+        "235": "ur",
+        "400": "ju",
+        "460": "hursaṅ",
+        "503": "du",
+        "740": "dug"
+      }
+    }
+  ],
+  "mean_difference": 112.66,
+  "seeds_above_zero": 99
+}
